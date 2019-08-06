@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url(../../../fonts/Gotham-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Gotham-Black";
+  src: url(../../../fonts/Gotham-Black.ttf);
+}
+
+@font-face {
+  font-family: "Gotham-Book";
+  src: url(../../../fonts/Gotham-Book.ttf);
+}
+
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url(../../../fonts/Gotham-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Gotham-Light";
+  src: url(../../../fonts/Gotham-Light.ttf);
+}
+
+@font-face {
+  font-family: "Gotham-BoldItalic";
+  src: url(../../../fonts/Gotham-BoldItalic.ttf);
+}
+
+/* Tamaño de textos */
+$fontSize: 12px;
+$fontSizeTitle: 18px;
+$fontSizeSub: 12px;
+$displayTextOne: 48px;
+$titleSection: 24px;
+$displayTextThree: 17.5px;
+$fontSizeTv: 14px;
+$posterTitleResponsive: 8px;
+$sizeProgramming: 10px;
+
+/*Tipografías*/
+
+$gothamBlack: "Gotham-Black";
+$gothamMedium: "Gotham-Medium";
+$gothamLight: "Gotham-Light";

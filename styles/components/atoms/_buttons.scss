@@ -1,0 +1,29 @@
+@import "../base/colors";
+@import "../base/config";
+
+/* Estructura Básica de los botones */
+%button-basic {
+  color: $textWhite;
+  font-size: $fontSizeSub;
+  padding: $paddingBtn;
+  border-radius: $borderRadiusBtn;
+  border: none;
+  outline: none !important;
+}
+
+@mixin more-button($background) {
+  @extend %button-basic;
+  background: $background;
+}
+
+.btn-red {
+  @include more-button($redBtn);
+}
+
+.btn-blue {
+  @include more-button($blueSky);
+}
+
+.btn-pink {
+  @include more-button($pinkBtn);
+}
