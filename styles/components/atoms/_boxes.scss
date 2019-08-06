@@ -25,3 +25,7 @@
 .a-concert-rectangle {
   @include poster-rectangle($concertRectangle);
 }
+
+.a-claro-rectangle {
+  @include poster-rectangle($claroRectangle);
+}
