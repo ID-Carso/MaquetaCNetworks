@@ -146,6 +146,21 @@ h6 {
   src: url(../../../fonts/Gotham-BoldItalic.ttf);
 }
 
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url(../../../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(../../../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url(../../../fonts/Montserrat-SemiBold.ttf);
+}
+
 /* Tamaño de textos */
 /*Tipografías*/
 .a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-claro-channel-subtitle-bold, .a-claro-channel-subtitle {
@@ -205,6 +220,26 @@ h6 {
   margin: 0;
 }
 
+.name_paises {
+  font-family: "Montserrat-Light";
+  font-size: 18px;
+  color: #606060;
+}
+
+.pie_paises {
+  font-family: "Montserrat-Regular";
+  font-size: 10px;
+  text-align: center;
+  color: #666464;
+}
+
+.select_paises {
+  font-family: "Montserrat-SemiBold";
+  font-size: 14px;
+  text-align: center;
+  color: #666464;
+}
+
 /* Estructura Básica de los botones */
 .btn-red, .btn-blue, .btn-pink {
   color: #ffffff;
@@ -262,6 +297,18 @@ h6 {
 
 .poster-image {
   width: 100%;
+}
+
+.paises-image {
+  width: 10%;
+}
+
+.Icon_paises {
+  margin-right: 14px;
+}
+
+.espacio {
+  margin-bottom: 20px;
 }
 
 .m-first-poster {
