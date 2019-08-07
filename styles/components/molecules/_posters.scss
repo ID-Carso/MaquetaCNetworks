@@ -1,4 +1,5 @@
 %poster-basic {
+  display: flex;
 }
 
 .m-first-poster {
@@ -7,12 +8,10 @@
 }
 
 .m-second-poster {
-  @extend %poster-basic;
   grid-area: secondPoster;
 }
 
 .m-third-poster {
-  @extend %poster-basic;
   grid-area: thirdPoster;
 }
 
@@ -20,6 +19,7 @@
   width: 100%;
   margin: auto;
   display: grid;
+  display: -moz-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }

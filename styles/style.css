@@ -3,7 +3,7 @@
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   border: none !important;
-  background: #fff;
+  margin-bottom: 50px !important;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
@@ -72,16 +72,11 @@ h6 {
 
 /* Tamaño de textos */
 /*Tipografías*/
-.a-our-vision-title,
-.a-claro-channel-title,
-.a-concert-channel-title,
-.a-claro-channel-subtitle-bold,
-.a-claro-channel-subtitle {
+.a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-claro-channel-subtitle-bold, .a-claro-channel-subtitle {
   text-align: center;
 }
 
-.a-sports-text-poster,
-.a-concert-text {
+.a-sports-text-poster, .a-concert-text {
   font-family: "Gotham-Medium";
 }
 
@@ -135,13 +130,11 @@ h6 {
 }
 
 /* Estructura Básica de los botones */
-.btn-red,
-.btn-blue,
-.btn-pink {
+.btn-red, .btn-blue, .btn-pink {
   color: #ffffff;
   font-size: 12px;
-  padding: 8px 20px;
-  border-radius: 19px;
+  padding: 3% 8%;
+  border-radius: 50px;
   border: none;
   outline: none !important;
 }
@@ -158,19 +151,17 @@ h6 {
   background: #ff00d2;
 }
 
-.a-cinema-rectangle,
-.a-sports-rectangle,
-.a-concert-rectangle {
+.a-cinema-rectangle, .a-sports-rectangle, .a-concert-rectangle, .a-claro-rectangle {
   height: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .a-cinema-rectangle {
@@ -188,14 +179,19 @@ h6 {
   width: 100%;
 }
 
+.a-claro-rectangle {
+  background: #e1261c;
+  width: 100%;
+}
+
 .poster-image {
   width: 100%;
 }
 
-.m-first-poster,
-.m-second-poster,
-.m-third-poster {
+.m-first-poster {
   display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .m-first-poster {
@@ -218,26 +214,26 @@ h6 {
   grid-area: thirdPoster;
 }
 
-.m-claro-poster-section,
-.m-concert-poster-section {
+.m-claro-poster-section, .m-concert-poster-section {
   width: 100%;
   margin: auto;
   display: -ms-grid;
   display: grid;
+  display: -moz-grid;
   -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
 }
 
 .m-claro-poster-section {
-  grid-template-areas: "firstPoster secondPoster" "firstPoster thirdPoster";
+      grid-template-areas: "firstPoster secondPoster" "firstPoster thirdPoster";
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
 
 .m-concert-poster-section {
-  grid-template-areas: "firstPoster secondPoster" "firstPoster secondPoster";
+      grid-template-areas: "firstPoster secondPoster" "firstPoster secondPoster";
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
@@ -250,10 +246,10 @@ h6 {
   padding-bottom: 3%;
 }
 
-.m-first-poster,
-.m-second-poster,
-.m-third-poster {
+.m-first-poster {
   display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .m-first-poster {
@@ -276,31 +272,31 @@ h6 {
   grid-area: thirdPoster;
 }
 
-.m-claro-poster-section,
-.m-concert-poster-section {
+.m-claro-poster-section, .m-concert-poster-section {
   width: 100%;
   margin: auto;
   display: -ms-grid;
   display: grid;
+  display: -moz-grid;
   -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
 }
 
 .m-claro-poster-section {
-  grid-template-areas: "firstPoster secondPoster" "firstPoster thirdPoster";
+      grid-template-areas: "firstPoster secondPoster" "firstPoster thirdPoster";
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
 
 .m-concert-poster-section {
-  grid-template-areas: "firstPoster secondPoster" "firstPoster secondPoster";
+      grid-template-areas: "firstPoster secondPoster" "firstPoster secondPoster";
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
 
 .o-home-section {
-  margin-top: 4%;
+  margin-top: 8%;
 }
 /*# sourceMappingURL=style.css.map */
