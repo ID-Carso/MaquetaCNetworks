@@ -162,6 +162,8 @@ h6 {
   font-size: 14px;
   text-align: center;
   color: #666464;
+  text-align: center;
+  margin: 26px auto 50px auto;
 }
 
 /* Estructura Básica de los botones */
@@ -224,15 +226,35 @@ h6 {
 }
 
 .paises-image {
-  width: 10%;
+  width: 60px;
+  height: 36px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  margin: 24px auto 38px auto;
 }
 
 .Icon_paises {
   margin-right: 14px;
+  vertical-align: middle;
 }
 
 .espacio {
   margin-bottom: 20px;
+}
+
+.color {
+  background: #2c3e50;
+}
+
+.color2 {
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 95%;
+  height: 100%;
+  display: block;
+  padding: 30px;
+  border-radius: 8px;
+  margin: auto;
 }
 
 .m-first-poster {
