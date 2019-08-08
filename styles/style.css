@@ -4,6 +4,10 @@
   box-shadow: none !important;
   border: none !important;
   margin-bottom: 50px !important;
+  max-width: 500px !important;
+  width: 100% !important;
+  min-width: 290px !important;
+  margin: 0px auto !important;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
@@ -421,7 +425,7 @@ h6 {
 
 .o-home-section {
   margin-top: 8%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 /*# sourceMappingURL=style.css.map */
