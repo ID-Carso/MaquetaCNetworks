@@ -59,21 +59,28 @@
   @include poster-text($textWhite, $posterTitleResponsive);
   margin: 0;
 }
-.name_paises{
+.name_paises {
   font-family: $montserratLight;
   font-size: $fontSizeTitle;
   color: $lightgray;
-
 }
-.pie_paises{
+.pie_paises {
   font-family: $montserratRegular;
   font-size: $sizeProgramming;
   text-align: center;
-  color:$gray;
+  color: $gray;
 }
-.select_paises{
+.select_paises {
   font-family: $montserratSemiBold;
   font-size: $fontSizeTv;
   text-align: center;
-  color:$gray;
+  color: $gray;
+}
+
+.a-claro-cinema-title {
+  @include title-section($cinemaTitle, $titleSection);
+}
+
+.a-claro-cinema-title span {
+  color: $cinemaTitleGreen;
 }

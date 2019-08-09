@@ -4,7 +4,7 @@
   box-shadow: none !important;
   border: none !important;
   margin-bottom: 50px !important;
-  max-width: 500px !important;
+  max-width: 700px !important;
   width: 100% !important;
   min-width: 290px !important;
   margin: 0px auto !important;
@@ -120,6 +120,22 @@ h6 {
   padding-left: 15px;
 }
 
+.columnGap {
+  padding-right: 12px !important;
+}
+
+.poster-pad-b {
+  padding-bottom: 6px;
+}
+
+.poster-pad-t {
+  padding-top: 6px;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
 @font-face {
   font-family: "Gotham-Medium";
   src: url(../../../fonts/Gotham-Medium.ttf);
@@ -167,7 +183,7 @@ h6 {
 
 /* Tamaño de textos */
 /*Tipografías*/
-.a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-claro-channel-subtitle-bold, .a-claro-channel-subtitle {
+.a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-claro-channel-subtitle-bold, .a-claro-channel-subtitle, .a-claro-cinema-title {
   text-align: center;
 }
 
@@ -244,6 +260,16 @@ h6 {
   color: #666464;
 }
 
+.a-claro-cinema-title {
+  font-size: 24px;
+  color: #5b5a5a;
+  font-family: "Gotham-Black";
+}
+
+.a-claro-cinema-title span {
+  color: #22c6cb;
+}
+
 /* Estructura Básica de los botones */
 .btn-red, .btn-blue, .btn-pink {
   color: #ffffff;
@@ -267,7 +293,6 @@ h6 {
 }
 
 .a-cinema-rectangle, .a-sports-rectangle, .a-concert-rectangle, .a-claro-rectangle {
-  height: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,21 +307,25 @@ h6 {
 .a-cinema-rectangle {
   background: #01cad5;
   width: 100%;
+  height: 20%;
 }
 
 .a-sports-rectangle {
   background: #f3e626;
   width: 100%;
+  height: 20%;
 }
 
 .a-concert-rectangle {
   background: #0068ff;
   width: 100%;
+  height: 20%;
 }
 
 .a-claro-rectangle {
   background: #e1261c;
   width: 100%;
+  height: 9%;
 }
 
 .poster-image {
@@ -313,6 +342,14 @@ h6 {
 
 .espacio {
   margin-bottom: 20px;
+}
+
+.image-first-column {
+  height: 100%;
+}
+
+.image-second-column {
+  height: 80%;
 }
 
 .m-first-poster {
@@ -363,6 +400,18 @@ h6 {
       grid-template-areas: "firstPoster secondPoster" "firstPoster secondPoster";
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+}
+
+.height-second-poster {
+  height: 50%;
+}
+
+.slider-column {
+  height: 100%;
+}
+
+.second-column-image {
+  height: 91%;
 }
 
 .m-see-more {
@@ -421,6 +470,18 @@ h6 {
       grid-template-areas: "firstPoster secondPoster" "firstPoster secondPoster";
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+}
+
+.height-second-poster {
+  height: 50%;
+}
+
+.slider-column {
+  height: 100%;
+}
+
+.second-column-image {
+  height: 91%;
 }
 
 .o-home-section {

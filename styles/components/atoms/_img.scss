@@ -1,12 +1,21 @@
+@import "../base/config";
+
 .poster-image {
   width: 100%;
 }
-.paises-image{
-  width:10%;
+.paises-image {
+  width: 10%;
 }
-.Icon_paises{
+.Icon_paises {
   margin-right: 14px;
 }
-.espacio{
+.espacio {
   margin-bottom: 20px;
+}
+.image-first-column {
+  height: $heightFirstColumnPoster;
+}
+
+.image-second-column {
+  height: $heightImagePoster;
 }
