@@ -2,16 +2,16 @@
 @import "../base/config";
 
 %rectangle-basic {
-  height: $rectangleHeight;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-@mixin poster-rectangle($background, $width: 100%) {
+@mixin poster-rectangle($background, $width: 100%, $heightRectangle: 20%) {
   @extend %rectangle-basic;
   background: $background;
   width: $width;
+  height: $heightRectangle;
 }
 
 .a-cinema-rectangle {
@@ -27,5 +27,5 @@
 }
 
 .a-claro-rectangle {
-  @include poster-rectangle($claroRectangle);
+  @include poster-rectangle($claroRectangle, 100%, 9%);
 }

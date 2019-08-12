@@ -1,3 +1,17 @@
-.rowGap {
-  margin-bottom: 10px;
+@import "../base/config";
+
+.columnGap {
+  padding-right: $rowGap !important;
+}
+
+.poster-pad-b {
+  padding-bottom: $posterPadBottom;
+}
+
+.poster-pad-t {
+  padding-top: $posterPadTop;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
 }

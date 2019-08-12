@@ -4,6 +4,8 @@
     "sources": [
         "style.scss",
         "components/base/_reset.scss",
+        "components/atoms/_spacings.scss",
+        "components/base/_config.scss",
         "components/atoms/_texts.scss",
         "components/base/_colors.scss",
         "components/base/_config.scss",
@@ -15,6 +17,7 @@
         "components/base/_colors.scss",
         "components/base/_config.scss",
         "components/atoms/_img.scss",
+        "components/base/_config.scss",
         "components/molecules/_posters.scss",
         "components/molecules/_see-more.scss",
         "components/molecules/_titles-section.scss",

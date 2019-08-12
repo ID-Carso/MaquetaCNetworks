@@ -1,6 +1,9 @@
+@import "../base/config";
+
 .poster-image {
   width: 100%;
 }
+<<<<<<< HEAD
 .paises-image{
   width: 60px;
   height: 36px;
@@ -9,14 +12,19 @@
   margin: 24px auto 38px auto;
 
 
+=======
+.paises-image {
+  width: 10%;
+>>>>>>> 8e1539989660fa4f01d50cff05213e23ba98a0bf
 }
-.Icon_paises{
+.Icon_paises {
   margin-right: 14px;
   vertical-align: middle;
 }
-.espacio{
+.espacio {
   margin-bottom: 20px;
 }
+<<<<<<< HEAD
 .color{
   background:#2c3e50;
 }
@@ -33,3 +41,12 @@
 padding-left: 120px;
 
 }
+=======
+.image-first-column {
+  height: $heightFirstColumnPoster;
+}
+
+.image-second-column {
+  height: $heightImagePoster;
+}
+>>>>>>> 8e1539989660fa4f01d50cff05213e23ba98a0bf
