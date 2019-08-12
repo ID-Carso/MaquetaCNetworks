@@ -19,3 +19,25 @@
 .image-second-column {
   height: $heightImagePoster;
 }
+
+.logo {
+  width: $logoWidth;
+  display: block;
+  margin: auto;
+}
+.menu-responsive {
+  width: $navItemWidth;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.login {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.login-item {
+  width: $navItemWidth;
+}
