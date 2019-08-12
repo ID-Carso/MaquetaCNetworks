@@ -136,6 +136,10 @@ h6 {
   margin-top: 50px;
 }
 
+.paisescentrar {
+  padding-left: 120px;
+}
+
 @font-face {
   font-family: "Gotham-Medium";
   src: url(../../../fonts/Gotham-Medium.ttf);
@@ -183,7 +187,7 @@ h6 {
 
 /* Tamaño de textos */
 /*Tipografías*/
-.a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-claro-channel-subtitle-bold, .a-claro-channel-subtitle, .a-claro-cinema-title {
+.a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-claro-channel-subtitle-bold, .a-claro-channel-subtitle {
   text-align: center;
 }
 
@@ -262,14 +266,16 @@ h6 {
   margin: 26px auto 50px auto;
 }
 
-.a-claro-cinema-title {
-  font-size: 24px;
-  color: #5b5a5a;
-  font-family: "Gotham-Black";
+@media screen and (min-width: 768px) and (max-width: 1920px) {
+  .select_paises {
+    font-size: 20px;
+  }
 }
 
-.a-claro-cinema-title span {
-  color: #22c6cb;
+@media screen and (min-width: 768px) and (max-width: 1920px) {
+  .pie_paises {
+    font-size: 12px;
+  }
 }
 
 /* Estructura Básica de los botones */
@@ -335,8 +341,11 @@ h6 {
 }
 
 .paises-image {
-  width: 60px;
-  height: 36px;
+  width: 100%;
+  max-width: 125px;
+  min-width: 60px;
+  max-height: 75px;
+  min-height: 36px;
   -o-object-fit: contain;
      object-fit: contain;
   display: block;
@@ -352,11 +361,11 @@ h6 {
   margin-bottom: 20px;
 }
 
-.color {
+.fondo {
   background: #2c3e50;
 }
 
-.color2 {
+.fondopaises {
   background-color: rgba(255, 255, 255, 0.85);
   width: 95%;
   height: 100%;
@@ -366,8 +375,32 @@ h6 {
   margin: auto;
 }
 
-.paisescentrar {
-  padding-left: 120px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .paises-image {
+    width: 16%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .paises-image {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+  .paises-image {
+    width: 25%;
+  }
+}
+
+hr {
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  hr {
+    display: block;
+  }
 }
 
 .logo {
@@ -544,6 +577,7 @@ h6 {
   padding-right: 5%;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .header {
   width: 100%;
@@ -575,3 +609,6 @@ hr{
   }
 }
 >>>>>>> 70d0975f17aef7f109cf564f484afef9aeb77fe4
+=======
+/*# sourceMappingURL=style.css.map */
+>>>>>>> 870e741785f265f3c17dd25b83dde5918162e923

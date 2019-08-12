@@ -1,11 +1,15 @@
 @import "../base/config";
+@import "../base/colors";
 
 .poster-image {
   width: 100%;
 }
 .paises-image{
-  width: 60px;
-  height: 36px;
+  width: 100%;
+  max-width:125px;
+  min-width: 60px;
+  max-height: 75px;
+  min-height: 36px;
   object-fit: contain;
   display: block;	
   margin: 24px auto 38px auto;
@@ -19,12 +23,11 @@
 .espacio {
   margin-bottom: 20px;
 }
-<<<<<<< HEAD
-.color{
-  background:#2c3e50;
+.fondo{
+  background:$bluefond;
 }
-.color2{
-  background-color: rgba(255, 255, 255, 0.85);
+.fondopaises{
+  background-color:$ligth;
   width:95%;
 	height: 100%;
 	display: block;
@@ -32,18 +35,22 @@
 	border-radius:8px;
 	margin: auto;
 }
-.paisescentrar{
-padding-left: 120px;
-
+@media screen and (min-width:320px) and (max-width:767px){
+  .paises-image{
+    width: 16%;
+  }
 }
-=======
-.image-first-column {
-  height: $heightFirstColumnPoster;
+@media screen and (min-width:768px) and (max-width:1440px){
+  .paises-image{
+    width: 20%;
+  }
 }
-
-.image-second-column {
-  height: $heightImagePoster;
+@media screen and (min-width:1441px) and (max-width:1920px){
+  .paises-image{
+    width: 25%;
+  }
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 .logo {
@@ -70,3 +77,6 @@ padding-left: 120px;
 =======
 >>>>>>> 8e1539989660fa4f01d50cff05213e23ba98a0bf
 >>>>>>> 70d0975f17aef7f109cf564f484afef9aeb77fe4
+=======
+
+>>>>>>> 870e741785f265f3c17dd25b83dde5918162e923
