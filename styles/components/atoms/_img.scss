@@ -3,15 +3,45 @@
 .poster-image {
   width: 100%;
 }
+<<<<<<< HEAD
+.paises-image{
+  width: 60px;
+  height: 36px;
+  object-fit: contain;
+  display: block;	
+  margin: 24px auto 38px auto;
+
+
+=======
 .paises-image {
   width: 10%;
+>>>>>>> 8e1539989660fa4f01d50cff05213e23ba98a0bf
 }
 .Icon_paises {
   margin-right: 14px;
+  vertical-align: middle;
 }
 .espacio {
   margin-bottom: 20px;
 }
+<<<<<<< HEAD
+.color{
+  background:#2c3e50;
+}
+.color2{
+  background-color: rgba(255, 255, 255, 0.85);
+  width:95%;
+	height: 100%;
+	display: block;
+	padding: 30px;
+	border-radius:8px;
+	margin: auto;
+}
+.paisescentrar{
+padding-left: 120px;
+
+}
+=======
 .image-first-column {
   height: $heightFirstColumnPoster;
 }
@@ -19,6 +49,7 @@
 .image-second-column {
   height: $heightImagePoster;
 }
+<<<<<<< HEAD
 
 .logo {
   width: $logoWidth;
@@ -41,3 +72,6 @@
 .login-item {
   width: $navItemWidth;
 }
+=======
+>>>>>>> 8e1539989660fa4f01d50cff05213e23ba98a0bf
+>>>>>>> 70d0975f17aef7f109cf564f484afef9aeb77fe4
