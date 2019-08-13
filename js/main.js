@@ -14,4 +14,22 @@ $(document).ready(function() {
       console.log("hola");
     }
   });
+
+  //Hola :)
+
+  const navbar = document.querySelector(".menu");
+  console.log(navbar);
+  //var nav_offset = navbar.offset();
+  const body = document.querySelector("body");
+  window.addEventListener("scroll", function() {
+    var top = this.scrollY;
+    var left = this.scrollX;
+    console.log(top);
+    if (top > 1) {
+      navbar.style.background = "black";
+    } else {
+      navbar.style.background =
+        "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+    }
+  });
 });

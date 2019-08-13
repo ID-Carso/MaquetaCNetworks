@@ -4,17 +4,15 @@
 .poster-image {
   width: 100%;
 }
-.paises-image{
+.paises-image {
   width: 100%;
-  max-width:125px;
+  max-width: 125px;
   min-width: 60px;
   max-height: 75px;
   min-height: 36px;
   object-fit: contain;
-  display: block;	
+  display: block;
   margin: 24px auto 38px auto;
-
-
 }
 .Icon_paises {
   margin-right: 14px;
@@ -23,35 +21,33 @@
 .espacio {
   margin-bottom: 20px;
 }
-.fondo{
-  background:$bluefond;
+.fondo {
+  background: $bluefond;
 }
-.fondopaises{
-  background-color:$ligth;
-  width:95%;
-	height: 100%;
-	display: block;
-	padding: 30px;
-	border-radius:8px;
-	margin: auto;
+.fondopaises {
+  background-color: $ligth;
+  width: 95%;
+  height: 100%;
+  display: block;
+  padding: 30px;
+  border-radius: 8px;
+  margin: auto;
 }
-@media screen and (min-width:320px) and (max-width:767px){
-  .paises-image{
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .paises-image {
     width: 16%;
   }
 }
-@media screen and (min-width:768px) and (max-width:1440px){
-  .paises-image{
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .paises-image {
     width: 20%;
   }
 }
-@media screen and (min-width:1441px) and (max-width:1920px){
-  .paises-image{
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+  .paises-image {
     width: 25%;
   }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 .logo {
   width: $logoWidth;
@@ -73,4 +69,16 @@
 
 .login-item {
   width: $navItemWidth;
+}
+
+.poster-image-left {
+  height: $posterImageLeft;
+}
+
+.poster-image-right {
+  height: $posterImageRight;
+}
+
+.poster-image-small {
+  height: $posterSmallImage;
 }

@@ -3,9 +3,11 @@
   position: fixed;
   width: 100%;
   z-index: 1;
+  max-height: 63px;
+  transition: all 0.5s ease 0s;
 }
 
 .nav-content {
-  margin: 3%;
+  margin: 4%;
   position: relative;
 }
