@@ -1,0 +1,9 @@
+.hamburguer-menu {
+  position: fixed;
+  width: 80%;
+  height: 100%;
+  background: #520da0;
+  z-index: 2;
+  transform: translate(-100%);
+  transition: all 0.3s ease-out;
+}
