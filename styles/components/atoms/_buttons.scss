@@ -27,3 +27,18 @@
 .btn-pink {
   @include more-button($pinkBtn);
 }
+
+.invisible-button {
+  position: fixed;
+  left: 0%;
+  top: 0;
+  bottom: 0;
+  width: 0px;
+  z-index: 20;
+  cursor: pointer;
+  background: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  outline: none !important;
+}
