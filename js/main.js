@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(".home-slider").bxSlider({
+  var home_slider = $(".home-slider").bxSlider({
     controls: false
   });
 
@@ -20,8 +20,6 @@ $(document).ready(function() {
     invisible_button.style.left = "100%";
   });
 
-  //Hola :)
-
   const navbar = document.querySelector(".menu");
   console.log(navbar);
   //var nav_offset = navbar.offset();
@@ -35,6 +33,22 @@ $(document).ready(function() {
     } else {
       navbar.style.background =
         "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+    }
+  });
+
+  /***  Slider "Ahora en TV"  ****/
+  $(".tv-content").hide();
+  //$(".tv-content:first").show();
+
+  $("ul.tv-list li").click(function() {
+    $("ul.tv-list li").removeClass("active");
+    $(this).addClass("active");
+    $(".tv-content").hide();
+    var activeNav = $(this).attr("rel");
+    $("#" + activeNav).fadeIn();
+
+    if (activeNav == "claro-canal") {
+      home_slider.reloadSlider();
     }
   });
 });

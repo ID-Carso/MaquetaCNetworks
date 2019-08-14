@@ -74,23 +74,34 @@
   font-family: $montserratSemiBold;
   font-size: $fontSizeTv;
   text-align: center;
-  color:$gray;
-  text-align: center; 
-  margin:26px auto 50px auto;
+  color: $gray;
+  text-align: center;
+  margin: 26px auto 50px auto;
 }
 
-@media screen and (min-width:768px) and (max-width:1920px){
-  .select_paises{
+.header-h1 {
+  font-size: $headerFontSize;
+  color: $textWhite;
+}
+
+.header-span {
+  color: $subtitleTV;
+}
+
+.title-tv {
+  font-size: $fontSizeTv;
+  font-family: $gothamBlack;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1920px) {
+  .select_paises {
     font-size: $fontlg;
   }
- 
 }
 
-@media screen and (min-width:768px) and (max-width:1920px){
-  .pie_paises{
+@media screen and (min-width: 768px) and (max-width: 1920px) {
+  .pie_paises {
     font-size: $fontSize;
   }
- 
 }
-
-
