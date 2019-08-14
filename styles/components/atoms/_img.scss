@@ -4,19 +4,16 @@
 .poster-image {
   width: 100%;
 }
-.paises-image{
+.paises-image {
   width: 0%;
-  max-width:125px;
+  max-width: 125px;
   min-width: 60px;
   max-height: 75px;
   min-height: 36px;
   object-fit: contain;
-  display: block;	
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  
-
-
 }
 .Icon_paises {
   margin-right: 14px;
@@ -25,64 +22,61 @@
 .espacio {
   margin-bottom: 20px;
 }
-.fondo{
-  background:$bluefond;
+.fondo {
+  background: $bluefond;
 }
-.fondopaises{
-  background-color:$ligth;
-  width:98%;
-	height: 100%;
-	display: block;
-	padding: 30px;
-	border-radius:8px;
-	margin: auto;
+.fondopaises {
+  background-color: $ligth;
+  width: 98%;
+  height: 100%;
+  display: block;
+  padding: 30px;
+  border-radius: 8px;
+  margin: auto;
 }
-@media screen and (min-width:320px) and (max-width:767px){
-  .paises-image{
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .paises-image {
     width: 16%;
     margin-top: 24px;
     margin-bottom: 38px;
   }
-  .pie_paises{
+  .pie_paises {
     margin-top: 23px;
   }
 }
-@media screen and (min-width:768px) and (max-width:1023px){
-  .paises-image{
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .paises-image {
     width: 10%;
     margin-top: 79px;
     margin-bottom: 90px;
   }
-  .pie_paises{
+  .pie_paises {
     margin-top: 23px;
     margin-bottom: 20px;
   }
- 
 }
-@media screen and (min-width:1024px) and (max-width:1439px){
-  .paises-image{
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .paises-image {
     width: 10%;
     margin-top: 72px;
     margin-bottom: 84px;
   }
-  .pie_paises{
+  .pie_paises {
     margin-top: 24px;
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width:1440px) and (max-width:1920px){
-  .paises-image{
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  .paises-image {
     width: 25%;
     margin-top: 65px;
     margin-bottom: 84px;
   }
-  .pie_paises{
+  .pie_paises {
     margin-top: 25px;
     margin-bottom: 22px;
   }
 }
-
-
 
 .logo {
   width: $logoWidth;
@@ -93,7 +87,8 @@
   width: $navItemWidth;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
 }
 
 .login {
@@ -104,4 +99,16 @@
 
 .login-item {
   width: $navItemWidth;
+}
+
+.poster-image-left {
+  height: $posterImageLeft;
+}
+
+.poster-image-right {
+  height: $posterImageRight;
+}
+
+.poster-image-small {
+  height: $posterSmallImage;
 }
