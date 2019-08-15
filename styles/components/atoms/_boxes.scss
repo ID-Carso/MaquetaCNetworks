@@ -29,3 +29,11 @@
 .a-claro-rectangle {
   @include poster-rectangle($claroRectangle, 100%, 9%);
 }
+
+.a-vision-rectangle {
+  @include poster-rectangle($pinkColor);
+}
+
+.a-sports-rectangle {
+  @include poster-rectangle($rectangleYellow);
+}

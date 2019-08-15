@@ -38,11 +38,11 @@ $(document).ready(function() {
 
   /***  Slider "Ahora en TV"  ****/
   $(".tv-content").hide();
-  //$(".tv-content:first").show();
+  $(".tv-content:first").show();
 
   $("ul.tv-list li").click(function() {
-    $("ul.tv-list li").removeClass("active");
-    $(this).addClass("active");
+    $("ul.tv-list li").removeClass("active-navItem");
+    $(this).addClass("active-navItem");
     $(".tv-content").hide();
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();

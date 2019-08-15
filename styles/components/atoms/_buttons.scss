@@ -9,6 +9,8 @@
   border-radius: $borderRadiusBtn;
   border: none;
   outline: none !important;
+  font-size: 12px;
+  font-family: $montserratSemiBold;
 }
 
 @mixin more-button($background) {
