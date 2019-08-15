@@ -248,8 +248,13 @@ h6 {
 }
 
 .name_paises {
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
   font-family: "Montserrat-Light";
-  font-size: 18px;
+  font-size: 16px;
   color: #606060;
 }
 
@@ -261,12 +266,18 @@ h6 {
 }
 
 .select_paises {
+  height: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
   font-family: "Montserrat-SemiBold";
   font-size: 14px;
   text-align: center;
   color: #666464;
   text-align: center;
-  margin: 26px auto 50px auto;
+  margin: 12px auto 40px auto;
 }
 
 .header-h1 {
@@ -287,12 +298,13 @@ h6 {
 @media screen and (min-width: 768px) and (max-width: 1920px) {
   .select_paises {
     font-size: 20px;
+    margin: px auto 74px auto;
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1920px) {
   .pie_paises {
     font-size: 12px;
+  }
+  .name_paises {
+    font-size: 18px;
   }
 }
 
@@ -397,7 +409,7 @@ h6 {
 }
 
 .fondo {
-  background: #2c3e50;
+  background: url(../../../images/paises/haryypotter.png);
 }
 
 .fondopaises {
@@ -447,7 +459,7 @@ h6 {
 
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
   .paises-image {
-    width: 25%;
+    width: 12%;
     margin-top: 65px;
     margin-bottom: 84px;
   }
