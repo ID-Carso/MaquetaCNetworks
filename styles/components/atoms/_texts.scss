@@ -4,6 +4,7 @@
 
 %title-basic {
   text-align: center;
+  text-transform: uppercase;
 }
 
 %poster-title-basic {
@@ -29,6 +30,7 @@
 
 .a-sports-text-poster {
   @include poster-text($pureBlack, $posterTitleResponsive);
+  margin: 0;
 }
 
 .a-programming-text {
@@ -51,14 +53,57 @@
   @include title-section($blackColor, $fontSize);
 }
 
-.a-claro-channel-subtitle {
+.a-subtitle {
   @include title-section($blackColor, $fontSize, $gothamLight);
+}
+.a-claro-cinema-title {
+  @include title-section($cinemaTitle, $titleSection);
+}
+.a-claro-cinema-title span {
+  color: $cinemaTitleGreen;
+}
+
+.a-subtitle-bold {
+  font-family: $gothamMedium;
 }
 
 .a-concert-text {
   @include poster-text($textWhite, $posterTitleResponsive);
   margin: 0;
 }
+
+.a-sports-text {
+  @include poster-text($pureBlack, $posterTitleResponsive);
+  margin: 0;
+}
+
+.advertising-title {
+  @include title-section($pinkColor, $displayTextOne);
+}
+
+.advertising-subtitle {
+  @include title-section($blueSky, $displayTextTwo);
+}
+
+.advertising-text {
+  text-align: justify;
+  margin: 0;
+  line-height: normal;
+  font-size: $sizeProgramming;
+}
+
+.a-our-vision-title {
+  @include title-section($pinkColor, $titleSection);
+}
+
+.a-claro-sports-title {
+  @include title-section($cinemaTitleColor, $titleSection);
+}
+
+.a-claro-sports-title span {
+  color: $blackColor;
+}
+
 .name_paises {
   font-weight: 300;
   font-style: normal;
@@ -74,7 +119,6 @@
   font-size: $sizeProgramming;
   text-align: center;
   color: $gray;
-  
 }
 .select_paises {
   

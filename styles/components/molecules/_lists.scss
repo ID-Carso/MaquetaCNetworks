@@ -3,4 +3,20 @@
   display: flex;
   justify-content: space-between;
   padding: 0;
+  margin-bottom: 9%;
+}
+
+.active-navItem {
+  position: relative;
+}
+
+.active-navItem::after {
+  content: "";
+  border-width: 8px;
+  border-style: solid;
+  border-color: #ff0007 transparent transparent transparent;
+  position: absolute;
+  left: 50%;
+  top: 120%;
+  transform: translate(-50%, 0);
 }
