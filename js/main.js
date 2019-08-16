@@ -6,24 +6,29 @@ $(document).ready(function() {
   //menu responsive
   const invisible_button = document.querySelector(".invisible-button");
   const menu = document.querySelector(".menu-responsive");
-  console.log(menu);
   const hamburguer = document.querySelector(".hamburguer-menu");
-  console.log(hamburguer);
+  const body = document.querySelector("body");
+  const sidebar_content = document.querySelector(".sidebar-content");
   menu.addEventListener("click", function(e) {
     hamburguer.style.transform = "translate(0%)";
     invisible_button.style.width = "500px";
+    invisible_button.style.left = "100%";
+    body.style.overflowY = "hidden";
+    sidebar_content.style.overflow = "auto";
+    sidebar_content.style.height = "100%";
   });
 
   invisible_button.addEventListener("click", function() {
     hamburguer.style.transform = "translate(-100%)";
     invisible_button.style.width = "0px";
-    invisible_button.style.left = "100%";
+    invisible_button.style.left = "0%";
+    body.style.overflow = "auto";
+    sidebar_content.style.overflow = "hidden";
+    sidebar_content.style.height = "0%";
   });
 
   const navbar = document.querySelector(".menu");
-  console.log(navbar);
-  //var nav_offset = navbar.offset();
-  const body = document.querySelector("body");
+
   window.addEventListener("scroll", function() {
     var top = this.scrollY;
     var left = this.scrollX;
@@ -51,4 +56,6 @@ $(document).ready(function() {
       home_slider.reloadSlider();
     }
   });
+
+  /*** Fin Slider "Ahora en TV"  ***/
 });
