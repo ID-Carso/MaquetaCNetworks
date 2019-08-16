@@ -3,7 +3,7 @@ $(document).ready(function() {
     controls: false
   });
 
-  //menu responsive
+  /*menu responsive*/
   const invisible_button = document.querySelector(".invisible-button");
   const menu = document.querySelector(".menu-responsive");
   const hamburguer = document.querySelector(".hamburguer-menu");
@@ -32,7 +32,6 @@ $(document).ready(function() {
   window.addEventListener("scroll", function() {
     var top = this.scrollY;
     var left = this.scrollX;
-    console.log(top);
     if (top > 1) {
       navbar.style.background = "black";
     } else {
@@ -58,4 +57,11 @@ $(document).ready(function() {
   });
 
   /*** Fin Slider "Ahora en TV"  ***/
+
+  lockOrientation =
+    screen.lockOrientation ||
+    screen.mozLockOrientation ||
+    screen.msLockOrientation ||
+    screen.orientation.lock;
+  lockOrientation("landscape");
 });

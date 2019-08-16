@@ -31,6 +31,8 @@
 }
 
 .invisible-button {
+  background: black;
+  opacity: 0.2;
   position: fixed;
   left: 0%;
   top: 0;
@@ -43,6 +45,4 @@
   box-shadow: none;
   border-radius: 0;
   outline: none !important;
-  background: black;
-  opacity: 0.2;
 }

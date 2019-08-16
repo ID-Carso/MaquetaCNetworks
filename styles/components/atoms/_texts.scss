@@ -121,7 +121,6 @@
   color: $gray;
 }
 .select_paises {
-  
   height: 18px;
   font-weight: 600;
   font-style: normal;
@@ -145,6 +144,10 @@
   color: $subtitleTV;
 }
 
+.header-point {
+  color: $redBtn;
+}
+
 .title-tv {
   font-size: $fontSizeTv;
   font-family: $gothamBlack;
@@ -154,16 +157,12 @@
 @media screen and (min-width: 768px) and (max-width: 1920px) {
   .select_paises {
     font-size: $fontlg;
-    margin: px auto 74px auto; 
+    margin: px auto 74px auto;
   }
   .pie_paises {
     font-size: $fontSize;
   }
-  .name_paises{
+  .name_paises {
     font-size: $fontSizeTitle;
   }
-
 }
-
-
-
