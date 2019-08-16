@@ -1,7 +1,7 @@
 @import "../base/config";
 
 .columnGap {
-  padding-right: $rowGap !important;
+  padding-right: $columnGap !important;
 }
 
 .poster-pad-b {
@@ -29,4 +29,8 @@
 
 .adv-headline-mb {
   margin-bottom: 13px;
+}
+
+.slider-page-gap {
+  margin-right: $columnGap;
 }

@@ -1,6 +1,7 @@
 $(document).ready(function() {
   var home_slider = $(".home-slider").bxSlider({
-    controls: false
+    controls: false,
+    captions: true
   });
 
   /*menu responsive*/
@@ -13,6 +14,7 @@ $(document).ready(function() {
     hamburguer.style.transform = "translate(0%)";
     invisible_button.style.width = "500px";
     invisible_button.style.left = "100%";
+    invisible_button.style.background = "black";
     body.style.overflowY = "hidden";
     sidebar_content.style.overflow = "auto";
     sidebar_content.style.height = "100%";
@@ -22,6 +24,7 @@ $(document).ready(function() {
     hamburguer.style.transform = "translate(-100%)";
     invisible_button.style.width = "0px";
     invisible_button.style.left = "0%";
+    invisible_button.style.background = "black";
     body.style.overflow = "auto";
     sidebar_content.style.overflow = "hidden";
     sidebar_content.style.height = "0%";
@@ -57,11 +60,4 @@ $(document).ready(function() {
   });
 
   /*** Fin Slider "Ahora en TV"  ***/
-
-  lockOrientation =
-    screen.lockOrientation ||
-    screen.mozLockOrientation ||
-    screen.msLockOrientation ||
-    screen.orientation.lock;
-  lockOrientation("landscape");
 });

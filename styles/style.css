@@ -153,6 +153,10 @@ h6 {
   margin-bottom: 13px;
 }
 
+.slider-page-gap {
+  margin-right: 12px;
+}
+
 /*Tamaño de textos*/
 /*Tipografías*/
 @font-face {
@@ -356,6 +360,10 @@ h6 {
   color: #0fd7f2;
 }
 
+.header-point {
+  color: #ff0007;
+}
+
 .title-tv {
   font-size: 14px;
   font-family: "Gotham-Black";
@@ -402,6 +410,7 @@ h6 {
 }
 
 .invisible-button {
+  opacity: 0.2;
   position: fixed;
   left: 0%;
   top: 0;
@@ -415,8 +424,6 @@ h6 {
           box-shadow: none;
   border-radius: 0;
   outline: none !important;
-  background: black;
-  opacity: 0.2;
 }
 
 /*Tamaño de textos*/
@@ -722,7 +729,7 @@ hr {
 /*Tamaño de textos*/
 /*Tipografías*/
 .m-home-titles {
-  padding-bottom: 3%;
+  padding-bottom: 29px;
 }
 
 .header-details {
@@ -827,7 +834,7 @@ hr {
   width: 350px;
   max-width: calc(100vw - 50px);
   height: 100%;
-  background: #520da0;
+  background: #5c1864;
   z-index: 2;
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
