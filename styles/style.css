@@ -415,6 +415,8 @@ h6 {
           box-shadow: none;
   border-radius: 0;
   outline: none !important;
+  background: black;
+  opacity: 0.2;
 }
 
 /*Tamaño de textos*/
@@ -507,6 +509,7 @@ h6 {
   padding: 30px;
   border-radius: 8px;
   margin: auto;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -695,6 +698,9 @@ hr {
           justify-content: space-between;
   padding: 0;
   margin-bottom: 9%;
+  max-width: calc(100vw - 35px);
+  margin: 0 auto 9% auto;
+  width: 350px;
 }
 
 .active-navItem {
@@ -818,7 +824,8 @@ hr {
 
 .hamburguer-menu {
   position: fixed;
-  width: 80%;
+  width: 350px;
+  max-width: calc(100vw - 50px);
   height: 100%;
   background: #520da0;
   z-index: 2;
