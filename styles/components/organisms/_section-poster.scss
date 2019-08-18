@@ -1,13 +1,15 @@
 @import "../molecules/posters";
 
 .o-home-section {
-  margin-top: 24px;
   padding-left: 5%;
   padding-right: 5%;
+  max-width: 600px;
+  margin: 24px auto 0px auto;
 }
 
 .o-advertising-section {
-  margin: 50px 0px;
+  margin: 50px auto 55px auto;
   padding-left: 5%;
   padding-right: 5%;
+  max-width: 600px;
 }

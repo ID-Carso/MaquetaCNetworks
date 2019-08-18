@@ -24,7 +24,6 @@
 }
 .fondo {
   background: url(../../../images/paises/haryypotter.png);
-  
 }
 .fondopaises {
   background-color: $ligth;
@@ -113,4 +112,15 @@
 
 .poster-image-small {
   height: $posterSmallImage;
+}
+
+.advertising-image {
+  width: 100%;
+  display: block;
+  margin: 30px auto;
+}
+
+.social-icon {
+  width: 45px;
+  // margin-right: 27px;
 }

@@ -60,4 +60,24 @@ $(document).ready(function() {
   });
 
   /*** Fin Slider "Ahora en TV"  ***/
+
+  /*** Dropdwon del menú ***/
+  const dropdown = document.getElementsByClassName("sidebar-dropdown");
+  console.log(dropdown);
+
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("dropdown-active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.animation = "hide-dropdown 0.5s";
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+        dropdownContent.style.animation = "active-dropdown 0.5s";
+      }
+    });
+  }
 });
