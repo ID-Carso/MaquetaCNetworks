@@ -13,3 +13,19 @@
 @import "./components/organisms/section-poster";
 @import "./components/organisms/header";
 @import "./components/organisms/menu";
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    max-height: 63px;
+    transition: all 0.5s ease 0s;
+  }
+
+  .nav-content {
+    margin: 16px;
+    position: relative;
+  }
+}

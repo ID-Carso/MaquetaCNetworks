@@ -650,6 +650,30 @@ h6 {
   text-align: center;
 }
 
+.circulo {
+  width: 90%;
+  height: 336px;
+  margin: auto;
+  background: lightblue;
+  -webkit-clip-path: circle(50% at 80% 37%);
+          clip-path: circle(50% at 80% 37%);
+  position: absolute;
+  right: 0%;
+  top: 0%;
+}
+
+.home-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.footer-img {
+  width: 40px;
+}
+
 hr {
   display: none;
 }
@@ -945,5 +969,21 @@ hr {
           transform: translate(-100%);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    max-height: 63px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+  }
+  .nav-content {
+    margin: 16px;
+    position: relative;
+  }
 }
 /*# sourceMappingURL=style.css.map */

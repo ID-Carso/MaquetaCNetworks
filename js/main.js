@@ -32,16 +32,18 @@ $(document).ready(function() {
 
   const navbar = document.querySelector(".menu");
 
-  window.addEventListener("scroll", function() {
-    var top = this.scrollY;
-    var left = this.scrollX;
-    if (top > 1) {
-      navbar.style.background = "black";
-    } else {
-      navbar.style.background =
-        "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-    }
-  });
+  if (window.matchMedia("(max-width: 767px)").matches) {
+    window.addEventListener("scroll", function() {
+      var top = this.scrollY;
+      var left = this.scrollX;
+      if (top > 1) {
+        navbar.style.background = "black";
+      } else {
+        navbar.style.background =
+          "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+      }
+    });
+  }
 
   /***  Slider "Ahora en TV"  ****/
   $(".tv-content").hide();
