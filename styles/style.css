@@ -157,6 +157,10 @@ h6 {
   margin-right: 12px;
 }
 
+.margin-bottom-footer {
+  margin-bottom: 13px;
+}
+
 /*Tamaño de textos*/
 /*Tipografías*/
 @font-face {
@@ -695,6 +699,7 @@ h6 {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .login-logo {
   width: 71px;
   height: 42px;
@@ -709,6 +714,30 @@ h6 {
   height: 26px;
   -o-object-fit: contain;
      object-fit: contain;
+=======
+.circulo {
+  width: 90%;
+  height: 336px;
+  margin: auto;
+  background: lightblue;
+  -webkit-clip-path: circle(50% at 80% 37%);
+          clip-path: circle(50% at 80% 37%);
+  position: absolute;
+  right: 0%;
+  top: 0%;
+}
+
+.home-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.footer-img {
+  width: 40px;
+>>>>>>> 749d4dc050c8d3eaeb01c6e273232e5502be7f41
 }
 
 hr {
@@ -1025,5 +1054,21 @@ hr {
           transform: translate(-100%);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    max-height: 63px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+  }
+  .nav-content {
+    margin: 16px;
+    position: relative;
+  }
 }
 /*# sourceMappingURL=style.css.map */

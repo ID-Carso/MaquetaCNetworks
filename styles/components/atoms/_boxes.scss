@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  //max-height: 32px;
 }
 
 @mixin poster-rectangle($background, $width: 100%, $heightRectangle: 20%) {

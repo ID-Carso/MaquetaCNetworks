@@ -130,16 +130,25 @@
   text-align: center;
 }
 
-.login-logo{
-  width: 71px;
-  height: 42px;
-  object-fit: contain;
-  margin-left: 50px;
-  margin-right: 99.5px;
+.circulo {
+  width: 90%;
+  height: 336px;
+  margin: auto;
+  background: lightblue;
+  clip-path: circle(50% at 80% 37%);
+  position: absolute;
+  right: 0%;
+  top: 0%;
 }
-.puntos{
-  width: 28px;
-  height: 26px;
-  object-fit: contain;
-  
+
+.home-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.footer-img {
+  width: 40px;
 }

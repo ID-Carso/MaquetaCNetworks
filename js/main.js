@@ -12,7 +12,7 @@ $(document).ready(function() {
   const sidebar_content = document.querySelector(".sidebar-content");
   menu.addEventListener("click", function(e) {
     hamburguer.style.transform = "translate(0%)";
-    invisible_button.style.width = "500px";
+    invisible_button.style.width = "2000px";
     invisible_button.style.left = "100%";
     invisible_button.style.background = "black";
     body.style.overflowY = "hidden";
@@ -32,16 +32,18 @@ $(document).ready(function() {
 
   const navbar = document.querySelector(".menu");
 
-  window.addEventListener("scroll", function() {
-    var top = this.scrollY;
-    var left = this.scrollX;
-    if (top > 1) {
-      navbar.style.background = "black";
-    } else {
-      navbar.style.background =
-        "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-    }
-  });
+  if (window.matchMedia("(max-width: 767px)").matches) {
+    window.addEventListener("scroll", function() {
+      var top = this.scrollY;
+      var left = this.scrollX;
+      if (top > 1) {
+        navbar.style.background = "black";
+      } else {
+        navbar.style.background =
+          "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+      }
+    });
+  }
 
   /***  Slider "Ahora en TV"  ****/
   $(".tv-content").hide();

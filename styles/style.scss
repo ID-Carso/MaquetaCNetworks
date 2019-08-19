@@ -15,3 +15,21 @@
 @import "./components/organisms/header";
 @import "./components/organisms/menu";
 
+<<<<<<< HEAD
+=======
+@media only screen and (min-width: 768px) {
+  .menu {
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    max-height: 63px;
+    transition: all 0.5s ease 0s;
+  }
+
+  .nav-content {
+    margin: 16px;
+    position: relative;
+  }
+}
+>>>>>>> 749d4dc050c8d3eaeb01c6e273232e5502be7f41
