@@ -1,0 +1,20 @@
+@import "../base/colors";
+@import "../base/config";
+
+.insert-data{
+    width: 288px;
+    height: 44px;
+    border-radius: 21.5px;
+    background-color:$textWhite;
+    padding: 15px;
+    font-family: $montserratRegular;
+    color: $bordergray;
+    font-size: $fontSizeTv;
+    border: solid 1px $bordergray;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    
+  }
