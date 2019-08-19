@@ -12,7 +12,7 @@ $(document).ready(function() {
   const sidebar_content = document.querySelector(".sidebar-content");
   menu.addEventListener("click", function(e) {
     hamburguer.style.transform = "translate(0%)";
-    invisible_button.style.width = "500px";
+    invisible_button.style.width = "2000px";
     invisible_button.style.left = "100%";
     invisible_button.style.background = "black";
     body.style.overflowY = "hidden";
