@@ -31,8 +31,18 @@ $(document).ready(function() {
   });
 
   const navbar = document.querySelector(".menu");
+  const video_home = document.querySelector(".circulo");
+  console.log(video_home);
 
   if (window.matchMedia("(max-width: 767px)").matches) {
+    /*Base*/
+
+    /*Atoms*/
+    video_home.style.display = "none";
+
+    /*End Atoms */
+
+    /* Molecules */
     window.addEventListener("scroll", function() {
       var top = this.scrollY;
       var left = this.scrollX;
@@ -43,6 +53,25 @@ $(document).ready(function() {
           "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
       }
     });
+
+    /*Organismos */
+  } else if (
+    window.matchMedia("(min-width: 768px) and (max-width: 1023px)").matches
+  ) {
+    /*Atoms*/
+    const logo = document.querySelector(".logo");
+    const menu_responsive = document.querySelector(".menu-responsive");
+
+    logo.setAttribute("src", "./images/home/claro-networks-black.svg");
+
+    menu_responsive.setAttribute(
+      "src",
+      "./images/home/menu-responsive-black.svg"
+    );
+
+    /*End Atoms */
+
+    /* Molecules */
   }
 
   /***  Slider "Ahora en TV"  ****/

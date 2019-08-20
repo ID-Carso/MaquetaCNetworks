@@ -662,12 +662,6 @@ h6 {
           transform: translate(0%, -50%);
 }
 
-.login {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
 .login-item {
   width: 25px;
 }
@@ -866,6 +860,13 @@ hr {
           transform: translate(-50%, 0);
 }
 
+.login {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
 .sidebar-dropdown {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1041,18 +1042,53 @@ hr {
 }
 
 @media only screen and (min-width: 768px) {
+  /*Base*/
+  /*Atoms*/
+  .header-h1 {
+    color: #000000;
+  }
+  .menu-responsive {
+    width: 25px;
+    position: inherit;
+    left: 0;
+    top: 0%;
+    -webkit-transform: inherit;
+            transform: inherit;
+  }
+  .logo {
+    width: 85px;
+    display: initial;
+    margin-left: 20px;
+  }
+  /*Molecules*/
+  .nav-content {
+    margin: 0px;
+    position: relative;
+  }
+  /*Organisms*/
   .menu {
     background: transparent;
-    position: fixed;
+    position: inherit;
     width: 100%;
     z-index: 1;
     max-height: 63px;
     -webkit-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
   }
-  .nav-content {
-    margin: 16px;
-    position: relative;
+  .header {
+    background: transparent;
+    padding: 30px;
+    height: auto;
+  }
+  .header-details {
+    display: inherit;
+    text-align: left;
+  }
+  .o-home-section {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 600px;
+    margin: 24px auto 0px auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
