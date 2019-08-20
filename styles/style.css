@@ -415,6 +415,32 @@ h6 {
   }
 }
 
+.contra {
+  font-family: "Montserrat-SemiBold";
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #05b4dd;
+  margin-top: 39px;
+}
+
+.nocuenta {
+  font-family: "Montserrat-SemiBold";
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #717272;
+  margin-bottom: 29px;
+}
+
 /*Tamaño de textos*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -494,17 +520,6 @@ h6 {
 
 .centro {
   text-align: center;
-}
-
-.texto-rc {
-  font-family: "Montserrat-Regular";
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #9fa0a0;
 }
 
 /*Tamaño de textos*/
@@ -699,22 +714,6 @@ h6 {
   text-align: center;
 }
 
-<<<<<<< HEAD
-.login-logo {
-  width: 71px;
-  height: 42px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin-left: 50px;
-  margin-right: 99.5px;
-}
-
-.puntos {
-  width: 28px;
-  height: 26px;
-  -o-object-fit: contain;
-     object-fit: contain;
-=======
 .circulo {
   width: 90%;
   height: 336px;
@@ -737,7 +736,11 @@ h6 {
 
 .footer-img {
   width: 40px;
->>>>>>> 749d4dc050c8d3eaeb01c6e273232e5502be7f41
+}
+
+.login-logo {
+  margin-left: 50px;
+  margin-right: 99px;
 }
 
 hr {
@@ -748,6 +751,13 @@ hr {
   hr {
     display: block;
   }
+}
+
+.log {
+  width: 307px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  border: solid 1px #0fd7f2;
 }
 
 /*Tamaño de textos*/
@@ -767,6 +777,49 @@ hr {
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
+  outline: none !important;
+}
+
+label {
+  font-family: "Montserrat-Regular";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #9fa0a0;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label {
+  cursor: pointer;
+}
+
+label:before {
+  content: '';
+  background: transparent;
+  border: 2px solid #0fd7f2;
+  border-radius: 5px;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-right: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+input[type=checkbox]:checked + label::before {
+  content: '✓';
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Montserrat-Regular";
+  color: #ffffff;
+  background: #0fd7f2;
 }
 
 .m-first-poster {

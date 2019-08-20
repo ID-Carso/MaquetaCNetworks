@@ -192,3 +192,28 @@
     font-size: $fontSizeTitle;
   }
 }
+
+.contra{
+  font-family: $montserratSemiBold;
+  font-size: $fontpaises;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $password;
+  margin-top: 39px;
+}
+.nocuenta{
+  font-family: $montserratSemiBold;
+  font-size: $fontpaises;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $textgray;
+  margin-bottom: 29px;
+}
