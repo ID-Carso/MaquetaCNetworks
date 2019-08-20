@@ -61,12 +61,15 @@
       <div class="header">
         <nav class="menu">
           <div class="nav-content">
-            <img
-              class="menu-responsive"
-              src="./images/home/responsive-menu.svg"
-              alt=""
-            />
-            <img class="logo" src="./images/home/claro-logo.png" alt="" />
+            <div class="claro-logo">
+                <img
+                class="menu-responsive"
+                src="./images/home/responsive-menu.svg"
+                alt=""
+              />
+              <img class="logo" src="./images/home/claro-logo.png" alt="" /> 
+            </div>
+
             <div class="login">
               <img
                 class="login-item nav-item-margin"
@@ -77,12 +80,15 @@
             </div>
           </div>
         </nav>
-        <div class="header-details">
-          <h1 class="header-h1">
-            Re <span class="header-span">Descubre</span>
-          </h1>
-          <h1 class="header-h1"><span class="header-span">Claro </span>tv</h1>
-        </div>
+        
+          <div class="header-details header-detail-margin col-md-6">
+              <h1 class="header-h1">
+                Re <span class="header-span">Descubre</span>
+              </h1>
+              <h1 class="header-h1"><span class="header-span">Claro </span>tv</h1>
+            </div>
+        
+
       </div>
     </header>
 
@@ -91,23 +97,37 @@
     </section>
     <section class="o-home-section margin-bottom-slider">
       <div>
-        <ul class="tv-list">
-          <li rel="claro-canal" class="active-navItem">
-            <img src="./images/home/tv-1.svg" alt="" />
-          </li>
-          <li rel="concert-channel">
-            <img src="./images/home/tv-2.svg" alt="" />
-          </li>
-          <li rel="claro-cinema">
-            <img src="./images/home/tv-3.svg" alt="" />
-          </li>
-          <li rel="nuestra-vision">
-            <img src="./images/home/tv-4.svg" alt="" />
-          </li>
-          <li rel="claro-sports">
-            <img src="./images/home/tv-5.svg" alt="" />
-          </li>
-        </ul>
+        <div class="row no-gutters">
+            <ul class="tv-list col-md-11">
+                <div class="col">
+                    <li rel="claro-canal" class="active-navItem nav-li">
+                        <img class="nav-image" src="./images/home/tv-1.svg" alt="" />
+                      </li>
+                </div>
+                <div class="col">
+                    <li rel="concert-channel" class="nav-li">
+                        <img class="nav-image" src="./images/home/tv-2.svg" alt="" />
+                      </li>
+                </div>
+                <div class="col">
+                    <li rel="claro-cinema" class="nav-li">
+                        <img class="nav-image" src="./images/home/tv-3.svg" alt="" />
+                      </li>
+                </div>
+                <div class="col">
+                    <li rel="nuestra-vision" class="nav-li">
+                        <img class="nav-image" src="./images/home/tv-4.svg" alt="" />
+                      </li>
+                </div>
+                <div class="col">
+                    <li rel="claro-sports" class="nav-li">
+                        <img class="nav-image" src="./images/home/tv-5.svg" alt="" />
+                      </li>
+                </div>
+      
+              </ul>
+        </div>
+
 
         <div id="claro-canal" class="tv-content">
           <div class="home-slider">

@@ -24,6 +24,13 @@
   transform: translate(-50%, 0);
 }
 
+.login {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
 .sidebar-dropdown {
   display: flex;
   align-items: center;

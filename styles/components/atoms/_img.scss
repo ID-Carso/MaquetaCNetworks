@@ -92,12 +92,6 @@
   transform: translate(0%, -50%);
 }
 
-.login {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
 .login-item {
   width: $navItemWidth;
 }
@@ -128,25 +122,6 @@
 .logo-footer {
   margin-bottom: 16px;
   text-align: center;
-}
-
-.circulo {
-  width: 90%;
-  height: 336px;
-  margin: auto;
-  background: lightblue;
-  clip-path: circle(50% at 80% 37%);
-  position: absolute;
-  right: 0%;
-  top: 0%;
-}
-
-.home-video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
 }
 
 .footer-img {
