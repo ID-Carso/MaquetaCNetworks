@@ -701,6 +701,10 @@ hr {
   display: none;
 }
 
+.border-right {
+  border-right: 1px solid black !important;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   hr {
     display: block;
@@ -1073,7 +1077,7 @@ hr {
     font-size: 30px;
   }
   .nav-image {
-    width: 40%;
+    height: 72px;
   }
   .nav-li {
     text-align: center;

@@ -1,9 +1,13 @@
-hr{
-    display: none;
+hr {
+  display: none;
+}
+
+.border-right {
+  border-right: 1px solid black !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  hr {
+    display: block;
   }
-  
-  @media screen and (min-width:320px) and (max-width:767px){
-    hr{
-      display: block;
-    }
-  }
+}
