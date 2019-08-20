@@ -92,12 +92,6 @@
   transform: translate(0%, -50%);
 }
 
-.login {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
 .login-item {
   width: $navItemWidth;
 }
@@ -139,6 +133,7 @@
   position: absolute;
   right: 0%;
   top: 0%;
+  z-index: 1;
 }
 
 .home-video {
