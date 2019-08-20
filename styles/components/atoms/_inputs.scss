@@ -16,5 +16,47 @@
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
+    outline: none !important;
     
+  }
+  label{
+ 
+    font-family: $montserratRegular;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #9fa0a0;
+     
+  }
+
+  input[type=checkbox]{
+    display: none;    
+  }
+  input[type=checkbox] + label{
+    cursor: pointer;
+  }
+  label:before {
+    content: '';
+    background: transparent;
+    border: 2px solid $subtitleTV;
+    border-radius: 5px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-right: 12px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  input[type=checkbox]:checked + label::before {
+    content: '✓';
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: $montserratRegular;
+    color: $textWhite;
+    background: $subtitleTV;
   }
