@@ -699,22 +699,6 @@ h6 {
   text-align: center;
 }
 
-<<<<<<< HEAD
-.login-logo {
-  width: 71px;
-  height: 42px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin-left: 50px;
-  margin-right: 99.5px;
-}
-
-.puntos {
-  width: 28px;
-  height: 26px;
-  -o-object-fit: contain;
-     object-fit: contain;
-=======
 .circulo {
   width: 90%;
   height: 336px;
@@ -725,6 +709,7 @@ h6 {
   position: absolute;
   right: 0%;
   top: 0%;
+  z-index: 1;
 }
 
 .home-video {
@@ -737,7 +722,6 @@ h6 {
 
 .footer-img {
   width: 40px;
->>>>>>> 749d4dc050c8d3eaeb01c6e273232e5502be7f41
 }
 
 hr {
