@@ -6,6 +6,7 @@
 @import "./components/atoms/img";
 @import "./components/atoms/separator";
 @import "./components/atoms/inputs";
+@import "./components/atoms/video";
 @import "./components/molecules/posters";
 @import "./components/molecules/see-more";
 @import "./components/molecules/nav";
@@ -15,13 +16,14 @@
 @import "./components/organisms/header";
 @import "./components/organisms/menu";
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   /*Base*/
 
   /*Atoms*/
 
   .header-h1 {
     color: $pureBlack;
+    font-size: 50px;
   }
 
   .menu-responsive {
@@ -38,10 +40,37 @@
     margin-left: 20px;
   }
 
+  .header-detail-margin {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .title-tv {
+    font-size: 30px;
+  }
+  .nav-image {
+    width: 40%;
+  }
+
+  .nav-li {
+    text-align: center;
+  }
+
   /*Molecules*/
   .nav-content {
     margin: 0px;
     position: relative;
+  }
+
+  .tv-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 100%;
+    margin: 0 auto 37px auto;
+    width: 100%;
+    align-items: center;
   }
 
   /*Organisms*/
@@ -68,7 +97,7 @@
   .o-home-section {
     padding-left: 30px;
     padding-right: 30px;
-    max-width: 600px;
+    max-width: 100%;
     margin: 24px auto 0px auto;
   }
 }
