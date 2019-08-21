@@ -4,6 +4,24 @@ $(document).ready(function() {
     captions: true
   });
 
+  $(".bx-slider").bxSlider({
+    controls: false,
+    captions: true,
+    minSlides: 2,
+    maxSlides: 2
+  });
+
+  $(".slick-slider").slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000
+  });
+
+  var slider_height = $(".slick-track").height();
+  var slick_slider = $(".slick-slider");
+  console.log(slider_height);
+
   /*menu responsive*/
   const invisible_button = document.querySelector(".invisible-button");
   const menu = document.querySelector(".menu-responsive");

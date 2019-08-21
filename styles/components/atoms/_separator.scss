@@ -10,12 +10,12 @@ hr {
   hr {
     display: block;
   }
-
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    hr {
-      display: block;
-    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  hr {
+    display: block;
   }
+
   .log {
     width: 307px;
     margin-bottom: 30px;
