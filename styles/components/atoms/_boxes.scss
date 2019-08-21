@@ -32,7 +32,7 @@
 }
 
 .a-vision-rectangle {
-  @include poster-rectangle($pinkColor);
+  @include poster-rectangle($pinkColor, 100%, 9%);
 }
 
 .a-sports-rectangle {
