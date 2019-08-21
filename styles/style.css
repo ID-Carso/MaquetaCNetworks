@@ -572,6 +572,14 @@ h6 {
   height: 20%;
 }
 
+.no-gutters {
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 .poster-image {
@@ -717,6 +725,21 @@ h6 {
   margin-right: 99px;
 }
 
+.puntos {
+  margin-left: -29px;
+}
+
+.ubicacion {
+  position: absolute;
+  top: 500px;
+}
+
+.ubicacion2 {
+  position: absolute;
+  top: 175px;
+  right: 11px;
+}
+
 hr {
   display: none;
 }
@@ -791,8 +814,8 @@ label:before {
   border: 2px solid #0fd7f2;
   border-radius: 5px;
   display: inline-block;
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
   margin-right: 12px;
   text-align: center;
   vertical-align: middle;
@@ -803,7 +826,7 @@ input[type=checkbox]:checked + label::before {
   font-size: 18px;
   text-align: center;
   vertical-align: middle;
-  font-family: "Montserrat-Regular";
+  font-family: "Times New Roman";
   color: #ffffff;
   background: #0fd7f2;
 }

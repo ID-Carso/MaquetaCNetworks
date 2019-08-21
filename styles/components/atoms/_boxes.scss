@@ -38,3 +38,11 @@
 .a-sports-rectangle {
   @include poster-rectangle($rectangleYellow);
 }
+.no-gutters {
+ 
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
