@@ -740,6 +740,12 @@ h6 {
   right: 11px;
 }
 
+.ubicacion3 {
+  position: absolute;
+  top: 219px;
+  right: 60px;
+}
+
 hr {
   display: none;
 }
