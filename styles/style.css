@@ -649,30 +649,16 @@ h6 {
   width: 40px;
 }
 
-.login-logo {
-  margin-left: 50px;
-  margin-right: 99px;
-}
-
-.puntos {
-  margin-left: -29px;
-}
-
 .ubicacion {
   position: absolute;
-  top: 83%;
+  top: 44%;
+  right: 10%;
 }
 
-.ubicacion2 {
+.ubicacion1 {
   position: absolute;
-  top: 29%;
-  right: 4%;
-}
-
-.ubicacion3 {
-  position: absolute;
-  top: 219px;
-  right: 60px;
+  left: 44%;
+  top: 36%;
 }
 
 hr {
