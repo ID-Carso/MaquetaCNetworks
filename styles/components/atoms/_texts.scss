@@ -51,11 +51,11 @@
 }
 
 .a-claro-channel-subtitle-bold {
-  @include title-section($blackColor, $fontSize);
+  @include title-section($blackColor, $posterTitleResponsive);
 }
 
 .a-subtitle {
-  @include title-section($blackColor, $fontSize, $gothamLight);
+  @include title-section($blackColor, $posterTitleResponsive, $gothamLight);
 }
 .a-claro-cinema-title {
   @include title-section($cinemaTitle, $titleSection);
@@ -66,6 +66,7 @@
 
 .a-subtitle-bold {
   font-family: $gothamMedium;
+  font-size: $posterTitleResponsive;
 }
 
 .a-poster-text-white {
