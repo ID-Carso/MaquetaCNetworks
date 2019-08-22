@@ -5,14 +5,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  //max-height: 32px;
+  height: 52px;
 }
 
-@mixin poster-rectangle($background, $width: 100%, $heightRectangle: 20%) {
+@mixin poster-rectangle($background, $width: 100%) {
   @extend %rectangle-basic;
   background: $background;
   width: $width;
-  height: $heightRectangle;
 }
 
 .a-cinema-rectangle {
@@ -28,21 +27,20 @@
 }
 
 .a-claro-rectangle {
-  @include poster-rectangle($claroRectangle, 100%, 9%);
+  @include poster-rectangle($claroRectangle);
 }
 
 .a-vision-rectangle {
-  @include poster-rectangle($pinkColor, 100%, 9%);
+  @include poster-rectangle($pinkColor);
 }
 
 .a-sports-rectangle {
   @include poster-rectangle($rectangleYellow);
 }
 .no-gutters {
- 
-    padding-right: 0;
-    padding-left: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}

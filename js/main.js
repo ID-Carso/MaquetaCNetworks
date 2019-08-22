@@ -4,18 +4,33 @@ $(document).ready(function() {
     captions: true
   });
 
-  $(".bx-slider").bxSlider({
+  /*$(".bx-slider").bxSlider({
     controls: false,
     captions: true,
     minSlides: 2,
     maxSlides: 2
-  });
+  });*/
 
   $(".slick-slider").slick({
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    autoplaySpeed: 2000
+    autoplaySpeed: 2000,
+    centerMode: true,
+    infinite: false,
+    arrows: false,
+    dots: true
+  });
+
+  $(".prueba-slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    centerMode: true,
+    infinite: false,
+    arrows: false,
+    dots: true
   });
 
   var slider_height = $(".slick-track").height();

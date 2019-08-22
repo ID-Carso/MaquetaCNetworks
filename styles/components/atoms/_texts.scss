@@ -9,6 +9,7 @@
 
 %poster-title-basic {
   font-family: $gothamMedium;
+  padding: 6px;
 }
 
 @mixin title-section($colorText, $fontSize, $fontFamily: $gothamBlack) {
@@ -67,12 +68,12 @@
   font-family: $gothamMedium;
 }
 
-.a-concert-text {
+.a-poster-text-white {
   @include poster-text($textWhite, $posterTitleResponsive);
   margin: 0;
 }
 
-.a-sports-text {
+.a-poster-text-black {
   @include poster-text($pureBlack, $posterTitleResponsive);
   margin: 0;
 }
@@ -193,7 +194,7 @@
   }
 }
 
-.contra{
+.contra {
   font-family: $montserratSemiBold;
   font-size: $fontpaises;
   font-weight: 600;
@@ -205,7 +206,7 @@
   color: $password;
   margin-top: 39px;
 }
-.nocuenta{
+.nocuenta {
   font-family: $montserratSemiBold;
   font-size: $fontpaises;
   font-weight: 600;
