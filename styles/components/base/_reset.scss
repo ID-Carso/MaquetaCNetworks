@@ -45,3 +45,24 @@ h6 {
   font-weight: 500;
   line-height: 1.2;
 }
+
+.slick-slider .slick-list {
+  //padding: 0px 0px !important;
+  padding: 0px 50px 0px 50px !important;
+}
+
+.slick-slider {
+  width: 105%;
+}
+
+.slick-track {
+  padding-bottom: 26px !important;
+}
+
+.prueba-slider {
+  width: 100%;
+}
+
+.prueba-slider .slick-list {
+  padding: 0 5% 0 %5 !important;
+}
