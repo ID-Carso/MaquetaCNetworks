@@ -741,7 +741,7 @@ hr {
   background-color: #ffffff;
   padding: 15px;
   font-family: "Montserrat-Regular";
-  color: #a1a0a0;
+  color: #717272;
   font-size: 14px;
   border: solid 1px #a1a0a0;
   font-weight: 500;
@@ -750,6 +750,8 @@ hr {
   line-height: normal;
   letter-spacing: normal;
   outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 label {
@@ -789,9 +791,19 @@ input[type=checkbox]:checked + label::before {
   font-size: 18px;
   text-align: center;
   vertical-align: middle;
-  font-family: "Times New Roman";
+  font-family: 'Courier New', Courier, monospace;
   color: #ffffff;
   background: #0fd7f2;
+}
+
+.shadow {
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  border-radius: 5px;
+}
+
+.login-form {
+  vertical-align: middle;
 }
 
 .home-video {
