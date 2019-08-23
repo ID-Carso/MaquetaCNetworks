@@ -48,7 +48,7 @@ h6 {
 
 .slick-slider .slick-list {
   //padding: 0px 0px !important;
-  padding: 0px 50px 0px 50px !important;
+  padding: 0px 5% 0px 5% !important;
 }
 
 .slick-slider {
@@ -57,6 +57,7 @@ h6 {
 
 .slick-track {
   padding-bottom: 26px !important;
+  //transform: translate3d(0px, 0px, 0px) !important;
 }
 
 .prueba-slider {
@@ -64,5 +65,5 @@ h6 {
 }
 
 .prueba-slider .slick-list {
-  padding: 0 5% 0 %5 !important;
+  //padding: 0 50px 0 0px !important;
 }

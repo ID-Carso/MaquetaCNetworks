@@ -3,6 +3,8 @@
 
 .poster-image {
   width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 .paises-image {
   width: 0%;
@@ -128,30 +130,28 @@
   width: 40px;
 }
 
-
 .ubicacion {
   position: absolute;
   top: 44%;
   right: 10%;
-
 }
 
-.ubicacion1{
+.ubicacion1 {
   position: absolute;
   left: 44%;
-  top:36%;
+  top: 36%;
 }
-.ubicacion2{
+.ubicacion2 {
   position: absolute;
   bottom: -21%;
   left: 3%;
 }
-.ubicacion3{
+.ubicacion3 {
   position: absolute;
   right: 9%;
   top: 96%;
 }
-.ubicacion4{
+.ubicacion4 {
   position: absolute;
   right: 18%;
   top: 31%;
