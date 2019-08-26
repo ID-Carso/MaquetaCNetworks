@@ -622,6 +622,12 @@ h6 {
     margin-top: 23px;
     margin-bottom: 20px;
   }
+  .shadow1 {
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border-radius: 5px;
+    margin-top: 20%;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
@@ -634,6 +640,12 @@ h6 {
     margin-top: 24px;
     margin-bottom: 20px;
   }
+  .shadow1 {
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border-radius: 5px;
+    margin-top: 5%;
+  }
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
@@ -645,6 +657,11 @@ h6 {
   .pie_paises {
     margin-top: 25px;
     margin-bottom: 22px;
+  }
+  .shadow1 {
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border-radius: 5px;
   }
 }
 
@@ -741,7 +758,7 @@ h6 {
   background: #5e98ec;
 }
 
-hr {
+.hr1 {
   display: none;
 }
 
@@ -750,21 +767,22 @@ hr {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  hr {
+  .hr1 {
     display: block;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  hr {
+  .hr1 {
     display: block;
   }
-  .log {
-    width: 90%;
-    margin-bottom: 30px;
-    margin-top: 40px;
-    border: solid 1px #0fd7f2;
-  }
+}
+
+.log {
+  width: 90%;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  border: solid 1px #0fd7f2;
 }
 
 /*Tamaño de textos - responsive*/
@@ -838,12 +856,6 @@ input[type=checkbox]:checked + label::before {
   font-family: 'Courier New', Courier, monospace;
   color: #ffffff;
   background: #0fd7f2;
-}
-
-.shadow {
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-  box-shadow: 3px 3px 5px 6px #ccc;
-  border-radius: 5px;
 }
 
 .login-form {
