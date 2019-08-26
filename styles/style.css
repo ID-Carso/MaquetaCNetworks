@@ -823,6 +823,9 @@ h6 {
 }
 
 label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: "Montserrat-Regular";
   font-size: 16px;
   font-weight: normal;
@@ -859,6 +862,16 @@ label:before {
       -ms-flex-align: center;
           align-items: center;
   vertical-align: middle;
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "✓";
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Courier New", Courier, monospace;
+  color: #ffffff;
+  background: #0fd7f2;
 }
 
 input[type="checkbox"]:checked + label::before {
