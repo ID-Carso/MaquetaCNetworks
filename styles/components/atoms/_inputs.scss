@@ -52,6 +52,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    display: inline-block;
+    vertical-align: middle;
     
   }
   
@@ -63,17 +65,11 @@
     font-family: 'Courier New', Courier, monospace;
     color: $textWhite;
     background: $subtitleTV;
-  }
-
-  .shadow {
-    -moz-box-shadow:    3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow:         3px 3px 5px 6px #ccc;
-    border-radius: 5px;
     
   }
+
   .login-form{
-   margin-top: 10%;
+   margin-top: 0%;
   }
   .tamaño{
     width:288px ;
