@@ -30,9 +30,6 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-
-
-  
 }
 .fondopaises {
   background-color: $ligth;
@@ -114,6 +111,8 @@
 }
 
 .poster-image-small {
+  width: 100%;
+  object-fit: cover;
   height: $posterSmallImage;
 }
 
@@ -176,4 +175,12 @@
 
 .concert-poster-color {
   background: #5e98ec;
+}
+
+.claro-poster-color {
+  background: #e66159;
+}
+
+.sport-poster-color {
+  background: #f3ea6d;
 }

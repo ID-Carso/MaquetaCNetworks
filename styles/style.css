@@ -59,6 +59,10 @@ h6 {
   height: 472px;
 }
 
+.small-poster .slick-list {
+  height: 272px;
+}
+
 .slick-track {
   margin-bottom: 26px !important;
   height: 100%;
@@ -676,7 +680,10 @@ h6 {
 }
 
 .poster-image-small {
-  height: 80%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 220px;
 }
 
 .advertising-image {
@@ -739,6 +746,14 @@ h6 {
 
 .concert-poster-color {
   background: #5e98ec;
+}
+
+.claro-poster-color {
+  background: #e66159;
+}
+
+.sport-poster-color {
+  background: #f3ea6d;
 }
 
 hr {
@@ -1147,7 +1162,7 @@ input[type=checkbox]:checked + label::before {
   padding-left: 5%;
   padding-right: 5%;
   max-width: 600px;
-  margin: 24px auto 40px auto;
+  margin: 24px auto 17px auto;
 }
 
 .o-advertising-section {
