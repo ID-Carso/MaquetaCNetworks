@@ -575,6 +575,10 @@ h6 {
 
 .fondo {
   background: url(../../../images/paises/haryypotter.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .fondopaises {
@@ -705,13 +709,13 @@ h6 {
 
 .ubicacion3 {
   position: absolute;
-  right: 9%;
-  top: 96%;
+  right: -3%;
+  top: 66%;
 }
 
 .ubicacion4 {
   position: absolute;
-  right: 18%;
+  right: 6%;
   top: 31%;
 }
 
@@ -734,7 +738,7 @@ hr {
     display: block;
   }
   .log {
-    width: 307px;
+    width: 90%;
     margin-bottom: 30px;
     margin-top: 40px;
     border: solid 1px #0fd7f2;
@@ -791,8 +795,15 @@ label:before {
   height: 20px;
   width: 20px;
   margin-right: 12px;
-  text-align: center;
-  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 input[type=checkbox]:checked + label::before {
@@ -812,7 +823,22 @@ input[type=checkbox]:checked + label::before {
 }
 
 .login-form {
-  vertical-align: middle;
+  margin-top: 10%;
+}
+
+.tamaño {
+  width: 288px;
+  height: 44px;
+  margin: auto;
+  position: relative;
+  margin-top: 2%;
+}
+
+.tamaño2 {
+  width: 307px;
+  height: 64px;
+  margin: auto;
+  position: relative;
 }
 
 .home-video {

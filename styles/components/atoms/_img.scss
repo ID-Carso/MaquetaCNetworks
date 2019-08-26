@@ -26,6 +26,13 @@
 }
 .fondo {
   background: url(../../../images/paises/haryypotter.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  
 }
 .fondopaises {
   background-color: $ligth;
@@ -148,11 +155,11 @@
 }
 .ubicacion3 {
   position: absolute;
-  right: 9%;
-  top: 96%;
+  right: -3%;
+  top: 66%;
 }
 .ubicacion4 {
   position: absolute;
-  right: 18%;
+  right: 6%;
   top: 31%;
 }
