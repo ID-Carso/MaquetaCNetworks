@@ -4,7 +4,7 @@
 .poster-image {
   width: 100%;
   object-fit: cover;
-  height: 100%;
+  height: 420px;
 }
 .paises-image {
   width: 0%;
@@ -162,4 +162,18 @@
   position: absolute;
   right: 6%;
   top: 31%;
+}
+
+/*Colores de prueba para posters*/
+
+.pink-color {
+  background: #e289af;
+}
+
+.cinema-poster-color {
+  background: #83e3e8;
+}
+
+.concert-poster-color {
+  background: #5e98ec;
 }
