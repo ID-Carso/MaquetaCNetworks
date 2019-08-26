@@ -4,14 +4,7 @@ $(document).ready(function() {
     captions: true
   });
 
-  /*$(".bx-slider").bxSlider({
-    controls: false,
-    captions: true,
-    minSlides: 2,
-    maxSlides: 2
-  });*/
-
-  $(".slick-slider").slick({
+  var slick_slider = $(".slick-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
@@ -32,10 +25,6 @@ $(document).ready(function() {
     arrows: false,
     dots: true
   });
-
-  var slider_height = $(".slick-track").height();
-  var slick_slider = $(".slick-slider");
-  console.log(slider_height);
 
   /*menu responsive*/
   const invisible_button = document.querySelector(".invisible-button");
@@ -108,6 +97,11 @@ $(document).ready(function() {
   }
 
   /***  Slider "Ahora en TV"  ****/
+  const tvClaroSlider = $("#tv-claro-slider");
+  const tvConcertSlider = $("#tv-concert-slider");
+  const tvCinemaSlider = $("#tv-cinema-slider");
+  const tvVisionSlider = $("#tv-vision-slider");
+  const tvSportsSlider = $("#tv-sports-slider");
   $(".tv-content").hide();
   $(".tv-content:first").show();
 
@@ -118,8 +112,16 @@ $(document).ready(function() {
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();
 
-    if (activeNav == "claro-canal") {
-      home_slider.reloadSlider();
+    if (activeNav == "concert-channel") {
+      tvConcertSlider.slick("refresh");
+    } else if (activeNav == "claro-canal") {
+      tvClaroSlider.slick("refresh");
+    } else if (activeNav == "claro-cinema") {
+      tvCinemaSlider.slick("refresh");
+    } else if (activeNav == "nuestra-vision") {
+      tvVisionSlider.slick("refresh");
+    } else if (activeNav == "claro-sports") {
+      tvSportsSlider.slick("refresh");
     }
   });
 
