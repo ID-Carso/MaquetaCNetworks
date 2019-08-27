@@ -52,13 +52,16 @@
 
 .a-claro-channel-subtitle-bold {
   @include title-section($blackColor, $posterTitleResponsive);
+  padding-bottom: $titlesPadding;
 }
 
 .a-subtitle {
   @include title-section($blackColor, $posterTitleResponsive, $gothamLight);
+  padding-bottom: $titlesPadding;
 }
 .a-claro-cinema-title {
   @include title-section($cinemaTitle, $titleSection);
+  padding-bottom: $titlesPadding;
 }
 .a-claro-cinema-title span {
   color: $cinemaTitleGreen;
@@ -67,6 +70,7 @@
 .a-subtitle-bold {
   font-family: $gothamMedium;
   font-size: $posterTitleResponsive;
+  padding-bottom: $titlesPadding;
 }
 
 .a-poster-text-white {
@@ -96,10 +100,12 @@
 
 .a-our-vision-title {
   @include title-section($pinkColor, $titleSection);
+  padding-bottom: $titlesPadding;
 }
 
 .a-claro-sports-title {
   @include title-section($cinemaTitleColor, $titleSection);
+  padding-bottom: $titlesPadding;
 }
 
 .a-claro-sports-title span {
@@ -155,7 +161,7 @@
 }
 
 .title-tv {
-  font-size: $fontSizeTv;
+  font-size: $fontlg;
   font-family: $gothamBlack;
   text-align: center;
 }
