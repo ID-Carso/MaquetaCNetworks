@@ -926,7 +926,8 @@ input[type="checkbox"]:checked + label::before {
     min-height: 100%;*/
 }
 
-.circulo {
+.circle-video {
+  display: none;
   width: 65%;
   height: 336px;
   margin: auto;
@@ -1236,6 +1237,12 @@ input[type="checkbox"]:checked + label::before {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /*Base*/
   /*Atoms*/
+  .margin-ahora-tv {
+    margin-bottom: 21px;
+  }
+  .circle-video {
+    display: block;
+  }
   .header-h1 {
     color: #000000;
     font-size: 50px;
@@ -1313,7 +1320,8 @@ input[type="checkbox"]:checked + label::before {
     padding-left: 30px;
     padding-right: 30px;
     max-width: 100%;
-    margin: 24px auto 0px auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

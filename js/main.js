@@ -31,6 +31,7 @@ $(document).ready(function() {
   const menu = document.querySelector(".menu-responsive");
   const hamburguer = document.querySelector(".hamburguer-menu");
   const body = $("body");
+  const html = $("html");
   const sidebar_content = document.querySelector(".sidebar-content");
   menu.addEventListener("click", function(e) {
     hamburguer.style.transform = "translate(0%)";
@@ -38,8 +39,8 @@ $(document).ready(function() {
     invisible_button.style.left = "100%";
     invisible_button.style.background = "black";
     body.css({
-      "overflow-y": "hidden",
-      "-webkit-overflow-scrolling": "hidden"
+      position: "relative",
+      overflow: "hidden"
     });
     sidebar_content.style.overflow = "auto";
     sidebar_content.style.height = "100%";
@@ -59,14 +60,14 @@ $(document).ready(function() {
   });
 
   const navbar = document.querySelector(".menu");
-  const video_home = document.querySelector(".circulo");
+  const video_home = document.querySelector(".circle-video");
   console.log(video_home);
 
   if (window.matchMedia("(max-width: 767px)").matches) {
     /*Base*/
 
     /*Atoms*/
-    video_home.style.display = "none";
+    //video_home.style.display = "none";
 
     /*End Atoms */
 
@@ -84,7 +85,7 @@ $(document).ready(function() {
 
     /*Organismos */
   } else if (
-    window.matchMedia("(min-width: 768px) and (max-width: 1023px)").matches
+    window.matchMedia("(min-width: 768px) and (max-width: 991px)").matches
   ) {
     /*Atoms*/
     const logo = document.querySelector(".logo");
