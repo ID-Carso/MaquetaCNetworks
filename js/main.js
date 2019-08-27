@@ -30,14 +30,17 @@ $(document).ready(function() {
   const invisible_button = document.querySelector(".invisible-button");
   const menu = document.querySelector(".menu-responsive");
   const hamburguer = document.querySelector(".hamburguer-menu");
-  const body = document.querySelector("body");
+  const body = $("body");
   const sidebar_content = document.querySelector(".sidebar-content");
   menu.addEventListener("click", function(e) {
     hamburguer.style.transform = "translate(0%)";
     invisible_button.style.width = "2000px";
     invisible_button.style.left = "100%";
     invisible_button.style.background = "black";
-    body.style.overflowY = "hidden";
+    body.css({
+      "overflow-y": "hidden",
+      "-webkit-overflow-scrolling": "hidden"
+    });
     sidebar_content.style.overflow = "auto";
     sidebar_content.style.height = "100%";
   });
@@ -47,7 +50,10 @@ $(document).ready(function() {
     invisible_button.style.width = "0px";
     invisible_button.style.left = "0%";
     invisible_button.style.background = "black";
-    body.style.overflow = "auto";
+    body.css({
+      "overflow-y": "auto",
+      "-webkit-overflow-scrolling": "auto"
+    });
     sidebar_content.style.overflow = "hidden";
     sidebar_content.style.height = "0%";
   });
@@ -68,7 +74,7 @@ $(document).ready(function() {
     window.addEventListener("scroll", function() {
       var top = this.scrollY;
       var left = this.scrollX;
-      if (top > 1) {
+      if (top > 5) {
         navbar.style.background = "black";
       } else {
         navbar.style.background =

@@ -129,6 +129,11 @@ h6 {
   margin-bottom: 2%;
 }
 
+.margin-ahora-tv {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 @font-face {
@@ -222,18 +227,21 @@ h6 {
   font-size: 14px;
   color: #262626;
   font-family: "Gotham-Black";
+  padding-bottom: 2%;
 }
 
 .a-subtitle {
   font-size: 14px;
   color: #262626;
   font-family: "Gotham-Light";
+  padding-bottom: 2%;
 }
 
 .a-claro-cinema-title {
   font-size: 24px;
   color: #5b5a5a;
   font-family: "Gotham-Black";
+  padding-bottom: 2%;
 }
 
 .a-claro-cinema-title span {
@@ -243,6 +251,7 @@ h6 {
 .a-subtitle-bold {
   font-family: "Gotham-Medium";
   font-size: 14px;
+  padding-bottom: 2%;
 }
 
 .a-poster-text-white {
@@ -280,12 +289,14 @@ h6 {
   font-size: 24px;
   color: #eb0d6c;
   font-family: "Gotham-Black";
+  padding-bottom: 2%;
 }
 
 .a-claro-sports-title {
   font-size: 24px;
   color: #f90b0b;
   font-family: "Gotham-Black";
+  padding-bottom: 2%;
 }
 
 .a-claro-sports-title span {
@@ -345,7 +356,7 @@ h6 {
 }
 
 .title-tv {
-  font-size: 14px;
+  font-size: 20px;
   font-family: "Gotham-Black";
   text-align: center;
 }
@@ -989,6 +1000,7 @@ input[type="checkbox"]:checked + label::before {
 
 .m-see-more {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .menu {
@@ -1005,6 +1017,10 @@ input[type="checkbox"]:checked + label::before {
 .nav-content {
   margin: 16px;
   position: relative;
+}
+
+.sidebar-content {
+  margin-top: 58px;
 }
 
 .tv-list {
@@ -1104,7 +1120,7 @@ input[type="checkbox"]:checked + label::before {
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 .m-home-titles {
-  padding-bottom: 29px;
+  padding-bottom: 2%;
 }
 
 .header-details {
@@ -1187,7 +1203,8 @@ input[type="checkbox"]:checked + label::before {
   padding-left: 5%;
   padding-right: 5%;
   max-width: 600px;
-  margin: 24px auto 17px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .o-advertising-section {
