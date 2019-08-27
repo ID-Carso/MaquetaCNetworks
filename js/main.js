@@ -38,9 +38,15 @@ $(document).ready(function() {
     invisible_button.style.width = "2000px";
     invisible_button.style.left = "100%";
     invisible_button.style.background = "black";
+    html.css({
+      position: "relative",
+      overflowY: "hidden",
+      height: "100%"
+    });
     body.css({
       position: "relative",
-      overflow: "hidden"
+      overflowY: "hidden",
+      height: "100%"
     });
     sidebar_content.style.overflow = "auto";
     sidebar_content.style.height = "100%";
@@ -51,9 +57,15 @@ $(document).ready(function() {
     invisible_button.style.width = "0px";
     invisible_button.style.left = "0%";
     invisible_button.style.background = "black";
+    html.css({
+      position: "initial",
+      overflowY: "hidden",
+      height: "auto"
+    });
     body.css({
       "overflow-y": "auto",
-      "-webkit-overflow-scrolling": "auto"
+      "-webkit-overflow-scrolling": "auto",
+      height: "auto"
     });
     sidebar_content.style.overflow = "hidden";
     sidebar_content.style.height = "0%";
