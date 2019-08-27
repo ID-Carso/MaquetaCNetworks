@@ -666,6 +666,7 @@ h6 {
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;
     box-shadow: 3px 3px 5px 6px #ccc;
     border-radius: 5px;
+    margin-top: 6%;
   }
 }
 
@@ -771,6 +772,10 @@ h6 {
 
 .sport-poster-color {
   background: #f3ea6d;
+}
+
+.fondolog {
+  background: #ffffff;
 }
 
 .hr1 {
