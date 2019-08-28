@@ -754,7 +754,7 @@ h6 {
 
 .ubicacion3 {
   position: absolute;
-  right: -3%;
+  right: -7%;
   top: 66%;
 }
 
@@ -819,23 +819,27 @@ h6 {
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 .insert-data {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background-clip: padding-box;
   width: 288px;
   height: 44px;
-  border-radius: 21.5px;
   background-color: #ffffff;
   padding: 15px;
   font-family: "Montserrat-Regular";
-  color: #717272;
+  color: #000000;
   font-size: 14px;
-  border: solid 1px #a1a0a0;
+  border: none;
+  border-bottom: solid 1px #a1a0a0;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
   outline: none !important;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 label {
@@ -885,7 +889,7 @@ input[type="checkbox"]:checked + label::before {
   font-size: 18px;
   text-align: center;
   vertical-align: middle;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   background: #0fd7f2;
 }
@@ -895,7 +899,7 @@ input[type="checkbox"]:checked + label::before {
   font-size: 18px;
   text-align: center;
   vertical-align: middle;
-  font-family: "Courier New", Courier, monospace;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #ffffff;
   background: #0fd7f2;
 }
