@@ -12,7 +12,32 @@ $(document).ready(function() {
     centerMode: true,
     infinite: false,
     arrows: false,
-    dots: true
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
   $(".prueba-slider").slick({
@@ -94,6 +119,17 @@ $(document).ready(function() {
         navbar.style.background =
           "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
       }
+    });
+
+    var slick_slider = $(".slick-slider").slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      centerMode: false,
+      infinite: false,
+      arrows: false,
+      dots: true
     });
 
     /*Organismos */

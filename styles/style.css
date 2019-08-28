@@ -1295,6 +1295,9 @@ input[type="checkbox"]:checked + label::before {
   .border-right {
     border-right: 1px solid black !important;
   }
+  .login-item {
+    width: 36px;
+  }
   /*Molecules*/
   .nav-content {
     margin: 0px;
