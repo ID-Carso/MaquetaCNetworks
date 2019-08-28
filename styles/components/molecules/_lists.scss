@@ -9,8 +9,13 @@
   width: 350px;
 }
 
+.nav-li {
+  filter: grayscale(100%);
+}
+
 .active-navItem {
   position: relative;
+  filter: none;
 }
 
 .active-navItem::after {
@@ -36,7 +41,6 @@
   align-items: center;
   justify-content: center;
   height: 10%;
-  border-bottom: solid 0.5px $dropdowncolor;
   width: 95%;
   margin: auto;
 }
