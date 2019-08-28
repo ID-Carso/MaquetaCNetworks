@@ -1,8 +1,12 @@
 @import "../molecules/posters";
 
+%section-basic {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .o-home-section {
-  padding-left: 5%;
-  padding-right: 5%;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;

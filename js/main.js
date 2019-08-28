@@ -5,36 +5,31 @@ $(document).ready(function() {
   });
 
   var slick_slider = $(".slick-slider").slick({
-    slidesToShow: 1,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: false,
+    dots: true,
+    centerMode: false,
+    /*slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
     centerMode: true,
     infinite: false,
     arrows: false,
-    dots: true,
+    dots: true,*/
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          centerMode: true,
+          infinite: false,
+          arrows: false,
+          dots: true
         }
       }
     ]
@@ -71,7 +66,8 @@ $(document).ready(function() {
     body.css({
       position: "fixed",
       overflow: "hidden",
-      height: "100%"
+      height: "100%",
+      width: "100%"
     });
     sidebar_content.style.overflow = "auto";
     sidebar_content.style.height = "100%";
@@ -91,7 +87,8 @@ $(document).ready(function() {
       position: "initial",
       overflow: "auto",
       "-webkit-overflow-scrolling": "auto",
-      height: "auto"
+      height: "auto",
+      width: "auto"
     });
     sidebar_content.style.overflow = "hidden";
     sidebar_content.style.height = "0%";
@@ -119,17 +116,6 @@ $(document).ready(function() {
         navbar.style.background =
           "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
       }
-    });
-
-    var slick_slider = $(".slick-slider").slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: false,
-      autoplaySpeed: 2000,
-      centerMode: false,
-      infinite: false,
-      arrows: false,
-      dots: true
     });
 
     /*Organismos */

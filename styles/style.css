@@ -100,7 +100,7 @@ h6 {
 }
 
 .margin-bottom-slider {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .adv-headline-mb {
@@ -1223,9 +1223,13 @@ input[type="checkbox"]:checked + label::before {
   height: 91%;
 }
 
+.m-claro-poster-section, .m-concert-poster-section {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .o-home-section {
-  padding-left: 5%;
-  padding-right: 5%;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -1301,6 +1305,9 @@ input[type="checkbox"]:checked + label::before {
   }
   .login-item {
     width: 36px;
+  }
+  .slick-slider .slick-list {
+    padding: 0px 0px 0px 0px !important;
   }
   /*Molecules*/
   .nav-content {
