@@ -12,7 +12,32 @@ $(document).ready(function() {
     centerMode: true,
     infinite: false,
     arrows: false,
-    dots: true
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
   $(".prueba-slider").slick({
@@ -38,9 +63,15 @@ $(document).ready(function() {
     invisible_button.style.width = "2000px";
     invisible_button.style.left = "100%";
     invisible_button.style.background = "black";
-    body.css({
+    html.css({
       position: "relative",
-      overflow: "hidden"
+      overflow: "hidden",
+      height: "100%"
+    });
+    body.css({
+      position: "fixed",
+      overflow: "hidden",
+      height: "100%"
     });
     sidebar_content.style.overflow = "auto";
     sidebar_content.style.height = "100%";
@@ -51,9 +82,16 @@ $(document).ready(function() {
     invisible_button.style.width = "0px";
     invisible_button.style.left = "0%";
     invisible_button.style.background = "black";
+    html.css({
+      position: "initial",
+      overflow: "auto",
+      height: "auto"
+    });
     body.css({
-      "overflow-y": "auto",
-      "-webkit-overflow-scrolling": "auto"
+      position: "initial",
+      overflow: "auto",
+      "-webkit-overflow-scrolling": "auto",
+      height: "auto"
     });
     sidebar_content.style.overflow = "hidden";
     sidebar_content.style.height = "0%";
@@ -81,6 +119,17 @@ $(document).ready(function() {
         navbar.style.background =
           "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
       }
+    });
+
+    var slick_slider = $(".slick-slider").slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      centerMode: false,
+      infinite: false,
+      arrows: false,
+      dots: true
     });
 
     /*Organismos */
@@ -134,7 +183,7 @@ $(document).ready(function() {
 
   /*** Fin Slider "Ahora en TV"  ***/
 
-  /*** Dropdwon del menú ***/
+  /*** Dropdown del menú ***/
   const dropdown = document.getElementsByClassName("sidebar-dropdown");
   console.log(dropdown);
 
@@ -153,4 +202,6 @@ $(document).ready(function() {
       }
     });
   }
+
+  /*** Fin Dropdown del menú ***/
 });

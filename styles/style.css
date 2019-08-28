@@ -44,7 +44,7 @@ h6 {
 }
 
 .slick-slider .slick-list {
-  padding: 0px 5% 0px 5% !important;
+  padding: 0px 15px 0px 15px !important;
 }
 
 .slick-slider {
@@ -797,6 +797,14 @@ h6 {
   border: none !important;
 }
 
+.sidebar-border-bottom {
+  border-bottom: solid 0.5px #aa2ab9;
+}
+
+.sidebar-border-top {
+  border-top: solid 0.5px #aa2ab9;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .hr1 {
     display: block;
@@ -1048,8 +1056,15 @@ input[type="checkbox"]:checked + label::before {
   width: 350px;
 }
 
+.nav-li {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
 .active-navItem {
   position: relative;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .active-navItem::after {
@@ -1082,7 +1097,6 @@ input[type="checkbox"]:checked + label::before {
       -ms-flex-pack: center;
           justify-content: center;
   height: 10%;
-  border-bottom: solid 0.5px #aa2ab9;
   width: 95%;
   margin: auto;
 }
@@ -1284,6 +1298,9 @@ input[type="checkbox"]:checked + label::before {
   }
   .border-right {
     border-right: 1px solid black !important;
+  }
+  .login-item {
+    width: 36px;
   }
   /*Molecules*/
   .nav-content {
