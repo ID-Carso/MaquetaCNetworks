@@ -1,8 +1,5 @@
 $(document).ready(function() {
-  var home_slider = $(".home-slider").bxSlider({
-    controls: false,
-    captions: true
-  });
+
 
   var slick_slider = $(".slick-slider").slick({
     slidesToShow: 3,
@@ -190,4 +187,24 @@ $(document).ready(function() {
   }
 
   /*** Fin Dropdown del menú ***/
+
+  const ojazo = $("#show-hide-passwd");
+  console.log("poinpoinh");
+
+  ojazo.on('click', function(e) {
+    e.preventDefault();
+
+    var current = $(this).attr('action');
+
+    if (current == 'hide'){
+        $(this).prev().attr('type','text');
+    }
+    if (current == 'hide'){
+      $(this).prev().attr('type','password');
+  }
+  });
 });
+
+
+
+
