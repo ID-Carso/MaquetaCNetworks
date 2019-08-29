@@ -1074,8 +1074,8 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .nav-li {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  -webkit-filter: grayscale(60%);
+          filter: grayscale(60%);
 }
 
 .active-navItem {
@@ -1318,13 +1318,34 @@ input[type="checkbox"]:checked + label::before {
     text-align: center;
   }
   .border-right {
-    border-right: 1px solid black !important;
+    border-right: 1px solid #a1a0a0 !important;
+    padding-right: 5px;
   }
   .login-item {
     width: 36px;
   }
   .slick-slider .slick-list {
     padding: 0px 0px 0px 0px !important;
+  }
+  .a-cinema-rectangle {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+  }
+  .a-sports-rectangle {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    margin: 0px;
+  }
+  .poster-title-margin {
+    margin: 2px 0px 0px 0px;
   }
   /*Molecules*/
   .nav-content {

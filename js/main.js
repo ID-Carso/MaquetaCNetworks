@@ -102,21 +102,52 @@ $(document).ready(function() {
     /*Base*/
 
     /*Atoms*/
-    //video_home.style.display = "none";
 
     /*End Atoms */
 
     /* Molecules */
-    window.addEventListener("scroll", function() {
+    /*window.addEventListener("scroll", function() {
       var top = this.scrollY;
+      console.log(top);
       var left = this.scrollX;
-      if (top > 5) {
+      if (top > 80) {
         navbar.style.background = "black";
       } else {
         navbar.style.background =
           "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
       }
-    });
+    });*/
+
+    var prevScrollpos = window.pageYOffset;
+
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+
+      if (currentScrollPos > 0) {
+        navbar.style.background = "black";
+      } else {
+        navbar.style.background =
+          "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+
+    document.addEventListener(
+      "touchmove",
+      function(e) {
+        e.preventDefault();
+        console.log(e);
+        var currentScrollPos = window.pageYOffset;
+        console.log(currentScrollPos);
+        if (currentScrollPos > 0) {
+          navbar.style.background = "black";
+        } else {
+          navbar.style.background =
+            "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+        }
+      },
+      true
+    );
 
     /*Organismos */
   } else if (
@@ -144,6 +175,7 @@ $(document).ready(function() {
   const tvCinemaSlider = $("#tv-cinema-slider");
   const tvVisionSlider = $("#tv-vision-slider");
   const tvSportsSlider = $("#tv-sports-slider");
+
   $(".tv-content").hide();
   $(".tv-content:first").show();
 
