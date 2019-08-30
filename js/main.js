@@ -1,6 +1,4 @@
 $(document).ready(function() {
-
-
   var slick_slider = $(".slick-slider").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -130,12 +128,46 @@ $(document).ready(function() {
     };
 
     document.addEventListener(
+      "touchend",
+      function(e) {
+        //var curY = event.touches[0].pageY;
+        //console.log(curY);
+        var currentScrollPos = window.pageYOffset;
+        //console.log(currentScrollPos);
+        if (currentScrollPos > 0) {
+          navbar.style.background = "black";
+        } else {
+          navbar.style.background =
+            "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+        }
+      },
+      true
+    );
+
+    document.addEventListener(
       "touchmove",
       function(e) {
-        e.preventDefault();
-        console.log(e);
+        var curY = event.touches[0].pageY;
+        console.log(curY);
         var currentScrollPos = window.pageYOffset;
-        console.log(currentScrollPos);
+        //console.log(currentScrollPos);
+        if (currentScrollPos > 0) {
+          navbar.style.background = "black";
+        } else {
+          navbar.style.background =
+            "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+        }
+      },
+      true
+    );
+
+    document.addEventListener(
+      "touchstart",
+      function(e) {
+        var curY = event.touches[0].pageY;
+        console.log(curY);
+        var currentScrollPos = window.pageYOffset;
+        //console.log(currentScrollPos);
         if (currentScrollPos > 0) {
           navbar.style.background = "black";
         } else {
@@ -223,20 +255,20 @@ $(document).ready(function() {
   const ojazo = $("#show-hide-passwd");
   console.log("poinpoinh");
 
-  ojazo.on('click', function(e) {
+  ojazo.on("click", function(e) {
     e.preventDefault();
 
-    var current = $(this).attr('action');
+    var current = $(this).attr("action");
 
-    if (current == 'hide'){
-        $(this).prev().attr('type','text');
+    if (current == "hide") {
+      $(this)
+        .prev()
+        .attr("type", "text");
     }
-    if (current == 'hide'){
-      $(this).prev().attr('type','password');
-  }
+    if (current == "hide") {
+      $(this)
+        .prev()
+        .attr("type", "password");
+    }
   });
 });
-
-
-
-
