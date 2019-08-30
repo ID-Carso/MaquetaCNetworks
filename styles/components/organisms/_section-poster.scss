@@ -6,6 +6,15 @@
   margin-right: auto;
 }
 
+@mixin section($background: null) {
+  @extend %section-basic;
+  background-color: $background;
+}
+
+.o-concert-section {
+  @include section($backgroundConcertChannel);
+}
+
 .o-home-section {
   max-width: 600px;
   margin-left: auto;

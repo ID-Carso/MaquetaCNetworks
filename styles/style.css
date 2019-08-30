@@ -970,65 +970,67 @@ input[type="checkbox"]:checked + label::before {
   z-index: 1;
 }
 
-.m-first-poster {
-  display: -webkit-box;
-  display: -ms-flexbox;
+/*%poster-basic {
   display: flex;
 }
 
 .m-first-poster {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
+  @extend %poster-basic;
   grid-area: firstPoster;
 }
 
 .m-second-poster {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
   grid-area: secondPoster;
 }
 
 .m-third-poster {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: thirdPoster;
 }
 
-.m-claro-poster-section, .m-concert-poster-section {
+%section-basic {
   width: 100%;
   margin: auto;
-  display: -ms-grid;
   display: grid;
   display: -moz-grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+@mixin poster-section($firstRow, $secondRow, $columnGap: null, $rowGap: null) {
+  @extend %section-basic;
+  grid-template-areas:
+    $firstRow
+    $secondRow;
+  grid-column-gap: $columnGap;
+  grid-row-gap: $rowGap;
 }
 
 .m-claro-poster-section {
-      grid-template-areas: "firstPoster secondPoster" "firstPoster thirdPoster";
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  @include poster-section(
+    "firstPoster secondPoster",
+    "firstPoster thirdPoster",
+    10px,
+    10px
+  );
 }
 
 .m-concert-poster-section {
-      grid-template-areas: "firstPoster secondPoster" "firstPoster secondPoster";
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  @include poster-section(
+    "firstPoster secondPoster",
+    "firstPoster secondPoster",
+    10px,
+    10px
+  );
 }
 
 .small-poster {
-  height: 272px;
+  height: $heightSecondColumnPoster;
   position: relative;
 }
 
 .second-column-image {
   height: 91%;
-}
-
+}*/
 .m-see-more {
   text-align: center;
   margin-bottom: 30px;
@@ -1177,69 +1179,75 @@ input[type="checkbox"]:checked + label::before {
   font-family: "Gotham-Black";
 }
 
-.m-first-poster {
-  display: -webkit-box;
-  display: -ms-flexbox;
+/*%poster-basic {
   display: flex;
 }
 
 .m-first-poster {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
+  @extend %poster-basic;
   grid-area: firstPoster;
 }
 
 .m-second-poster {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
   grid-area: secondPoster;
 }
 
 .m-third-poster {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: thirdPoster;
 }
 
-.m-claro-poster-section, .m-concert-poster-section {
+%section-basic {
   width: 100%;
   margin: auto;
-  display: -ms-grid;
   display: grid;
   display: -moz-grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+@mixin poster-section($firstRow, $secondRow, $columnGap: null, $rowGap: null) {
+  @extend %section-basic;
+  grid-template-areas:
+    $firstRow
+    $secondRow;
+  grid-column-gap: $columnGap;
+  grid-row-gap: $rowGap;
 }
 
 .m-claro-poster-section {
-      grid-template-areas: "firstPoster secondPoster" "firstPoster thirdPoster";
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  @include poster-section(
+    "firstPoster secondPoster",
+    "firstPoster thirdPoster",
+    10px,
+    10px
+  );
 }
 
 .m-concert-poster-section {
-      grid-template-areas: "firstPoster secondPoster" "firstPoster secondPoster";
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  @include poster-section(
+    "firstPoster secondPoster",
+    "firstPoster secondPoster",
+    10px,
+    10px
+  );
 }
 
 .small-poster {
-  height: 272px;
+  height: $heightSecondColumnPoster;
   position: relative;
 }
 
 .second-column-image {
   height: 91%;
-}
-
-.m-claro-poster-section, .m-concert-poster-section {
+}*/
+.o-concert-section {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.o-concert-section {
+  background-color: #3e0a43;
 }
 
 .o-home-section {
@@ -1323,25 +1331,54 @@ input[type="checkbox"]:checked + label::before {
   .slick-slider .slick-list {
     padding: 0px 0px 0px 0px !important;
   }
-  .a-cinema-rectangle {
+  .a-cinema-rectangle,
+  .a-sports-rectangle,
+  .a-concert-rectangle,
+  .a-claro-rectangle,
+  .a-vision-rectangle {
     display: -webkit-box;
-    -webkit-box-orient: vertical;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /*-webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 2;*/
+    height: 36px;
   }
-  .a-sports-rectangle {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    -webkit-line-clamp: 2;
-    margin: 0px;
+  .small-poster .slick-list {
+    height: 144px;
+  }
+  .slick-list {
+    height: 320px;
   }
   .poster-title-margin {
-    margin: 2px 0px 0px 0px;
+    margin: 0px;
+  }
+  .poster-image {
+    height: 284px;
+  }
+  .small-poster {
+    height: 144px;
+    position: relative;
+  }
+  .poster-image-small {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 108px;
+  }
+  .a-sports-text-poster,
+  .a-poster-text-white,
+  .a-poster-text-black {
+    padding: 0px;
+    font-size: 12px;
   }
   /*Molecules*/
   .nav-content {
@@ -1389,6 +1426,9 @@ input[type="checkbox"]:checked + label::before {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .o-concert-section {
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

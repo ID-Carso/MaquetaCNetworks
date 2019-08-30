@@ -130,8 +130,6 @@ $(document).ready(function() {
     document.addEventListener(
       "touchend",
       function(e) {
-        //var curY = event.touches[0].pageY;
-        //console.log(curY);
         var currentScrollPos = window.pageYOffset;
         //console.log(currentScrollPos);
         if (currentScrollPos > 0) {

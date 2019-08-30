@@ -77,27 +77,61 @@
     padding: 0px 0px 0px 0px !important;
   }
 
-  .a-cinema-rectangle {
+  .a-cinema-rectangle,
+  .a-sports-rectangle,
+  .a-concert-rectangle,
+  .a-claro-rectangle,
+  .a-vision-rectangle {
     display: -webkit-box;
-    -webkit-box-orient: vertical;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /*-webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 2;*/
+    height: 36px;
   }
 
-  .a-sports-rectangle {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    -webkit-line-clamp: 2;
-    margin: 0px;
+  .small-poster .slick-list {
+    height: 144px;
+  }
+
+  .slick-list {
+    height: 320px;
   }
 
   .poster-title-margin {
-    margin: 2px 0px 0px 0px;
+    margin: 0px;
+  }
+
+  .poster-image {
+    height: 284px;
+  }
+
+  .small-poster {
+    height: 144px;
+    position: relative;
+  }
+
+  .poster-image-small {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 108px;
+  }
+
+  .a-sports-text-poster,
+  .a-poster-text-white,
+  .a-poster-text-black {
+    padding: 0px;
+    font-size: $fontSizeSub;
   }
 
   /*Molecules*/
@@ -144,5 +178,9 @@
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .o-concert-section {
+    max-width: 100%;
   }
 }
