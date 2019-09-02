@@ -87,6 +87,14 @@ h6 {
   padding-top: 6px;
 }
 
+.poster-pad-l {
+  padding-left: 6px;
+}
+
+.poster-pad-r {
+  padding-right: 6px;
+}
+
 .margin-top-50 {
   margin-top: 50px;
 }
@@ -105,10 +113,6 @@ h6 {
 
 .adv-headline-mb {
   margin-bottom: 13px;
-}
-
-.slider-page-gap {
-  margin-right: 6px;
 }
 
 .margin-bottom-footer {
@@ -578,7 +582,6 @@ h6 {
   padding-right: 0;
   padding-left: 0;
   width: 100%;
-  height: 100%;
   position: relative;
 }
 
@@ -1282,6 +1285,11 @@ input[type="checkbox"]:checked + label::before {
   transition: all 0.3s ease-out;
 }
 
+.section-home-footer {
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /*Base*/
   /*Atoms*/
@@ -1380,6 +1388,24 @@ input[type="checkbox"]:checked + label::before {
     padding: 0px;
     font-size: 12px;
   }
+  .a-concert-channel-title {
+    font-size: 32px;
+    color: #ffffff;
+    padding-bottom: 0%;
+    text-align: left;
+  }
+  .concert-footer-img {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+    width: 72px;
+  }
+  .a-concert-subtitle {
+    color: #ffffff;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-family: "Montserrat-SemiBold";
+  }
   /*Molecules*/
   .nav-content {
     margin: 0px;
@@ -1400,6 +1426,13 @@ input[type="checkbox"]:checked + label::before {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .m-home-titles {
+    padding-top: 39px;
+    padding-bottom: 20px;
+  }
+  .m-see-more {
+    text-align: right;
   }
   /*Organisms*/
   .menu {
@@ -1429,6 +1462,8 @@ input[type="checkbox"]:checked + label::before {
   }
   .o-concert-section {
     max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

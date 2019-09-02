@@ -13,6 +13,14 @@
   padding-top: $posterPadTop;
 }
 
+.poster-pad-l {
+  padding-left: $posterPadLeft;
+}
+
+.poster-pad-r {
+  padding-right: $posterPadRight;
+}
+
 .margin-top-50 {
   margin-top: 50px;
 }
@@ -30,10 +38,6 @@
 
 .adv-headline-mb {
   margin-bottom: 13px;
-}
-
-.slider-page-gap {
-  margin-right: $columnGap;
 }
 
 .margin-bottom-footer {
@@ -57,7 +61,6 @@
   margin-top: 14px;
   margin-bottom: 14px;
 }
-.ma-no{
-margin-right: 0px !important;
-
+.ma-no {
+  margin-right: 0px !important;
 }
