@@ -445,7 +445,7 @@ h6 {
   line-height: normal;
   letter-spacing: normal;
   color: #717272;
-  margin-left: 13%;
+  margin-left: 3%;
 }
 
 /*Tamaño de textos - responsive*/
@@ -654,8 +654,8 @@ h6 {
     margin-bottom: 20px;
   }
   .shadow1 {
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
+    box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 5px;
     margin-top: 20%;
   }
@@ -672,8 +672,8 @@ h6 {
     margin-bottom: 20px;
   }
   .shadow1 {
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
+    box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 5px;
     margin-top: 5%;
   }
@@ -690,8 +690,8 @@ h6 {
     margin-bottom: 22px;
   }
   .shadow1 {
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
+    box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 5px;
     margin-top: 6%;
   }
@@ -758,7 +758,7 @@ h6 {
 
 .ubicacion1 {
   position: absolute;
-  left: 44%;
+  left: 41%;
   top: 36%;
 }
 
@@ -778,6 +778,11 @@ h6 {
   position: absolute;
   right: 6%;
   top: 31%;
+}
+
+.ubicacion5 {
+  position: absolute;
+  top: 86%;
 }
 
 /*Colores de prueba para posters*/
@@ -942,6 +947,10 @@ input[type="checkbox"]:checked + label::before {
   height: 64px;
   margin: auto;
   position: relative;
+}
+
+.pa-img {
+  padding-bottom: 40px;
 }
 
 .home-video {

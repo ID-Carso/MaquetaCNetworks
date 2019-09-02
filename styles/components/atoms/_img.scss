@@ -50,6 +50,7 @@
   .pie_paises {
     margin-top: 23px;
   }
+
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .paises-image {
@@ -62,9 +63,9 @@
     margin-bottom: 20px;
   }
   .shadow1 {
-    -moz-box-shadow: 3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow: 3px 3px 5px 6px #ccc;
+    -moz-box-shadow: 3px 3px 5px 6px #5c1864;
+    -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
+    box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 5px;
     margin-top: 20%;
   }
@@ -80,9 +81,9 @@
     margin-bottom: 20px;
   }
   .shadow1 {
-    -moz-box-shadow: 3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow: 3px 3px 5px 6px #ccc;
+    -moz-box-shadow: 3px 3px 5px 6px #5c1864;
+    -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
+    box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 5px;
     margin-top: 5%;
   }
@@ -98,9 +99,9 @@
     margin-bottom: 22px;
   }
   .shadow1 {
-    -moz-box-shadow: 3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow: 3px 3px 5px 6px #ccc;
+    -moz-box-shadow: 3px 3px 5px 6px #5c1864;
+    -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
+    box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 5px;
     margin-top: 6%;
   }
@@ -165,7 +166,7 @@
 
 .ubicacion1 {
   position: absolute;
-  left: 44%;
+  left: 41%;
   top: 36%;
 }
 .ubicacion2 {
@@ -182,6 +183,10 @@
   position: absolute;
   right: 6%;
   top: 31%;
+}
+.ubicacion5 {
+  position: absolute;
+  top: 86%;
 }
 
 /*Colores de prueba para posters*/
