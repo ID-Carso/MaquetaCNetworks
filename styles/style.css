@@ -142,6 +142,14 @@ h6 {
   margin-right: 0px !important;
 }
 
+.margin-bottom-75 {
+  margin-bottom: 75px;
+}
+
+.margin-bottom-60 {
+  margin-bottom: 60px;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 @font-face {
@@ -455,7 +463,7 @@ h6 {
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
-.btn-red, .btn-blue, .btn-pink {
+.btn-red, .btn-blue, .btn-pink, .btn-purple {
   color: #ffffff;
   font-size: 12px;
   padding: 10px 38px;
@@ -476,6 +484,10 @@ h6 {
 
 .btn-pink {
   background: #ff00d2;
+}
+
+.btn-purple {
+  background: #6031ad;
 }
 
 .invisible-button {
@@ -789,6 +801,10 @@ h6 {
 }
 
 /*Colores de prueba para posters*/
+.poster-grey {
+  background: #959292;
+}
+
 .pink-color {
   background: #e289af;
 }
@@ -1252,14 +1268,10 @@ input[type="checkbox"]:checked + label::before {
 .second-column-image {
   height: 91%;
 }*/
-.o-concert-section {
+.o-concert-section, .o-cinema-section, .o-vision-section, .o-claro-section {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.o-concert-section {
-  background-color: #3e0a43;
 }
 
 .o-home-section {
@@ -1415,6 +1427,18 @@ input[type="checkbox"]:checked + label::before {
     font-size: 13px;
     font-family: "Montserrat-SemiBold";
   }
+  .a-claro-cinema-title,
+  .a-our-vision-title,
+  .a-claro-channel-title {
+    font-size: 32px;
+    padding-bottom: 7px;
+    text-align: left;
+  }
+  .a-subtitle {
+    text-align: left;
+    font-size: 13px;
+    padding-bottom: 0%;
+  }
   /*Molecules*/
   .nav-content {
     margin: 0px;
@@ -1443,6 +1467,12 @@ input[type="checkbox"]:checked + label::before {
   .m-see-more {
     text-align: right;
   }
+  .slick-dots {
+    bottom: -50px !important;
+  }
+  .slick-dots li button:before {
+    font-size: 9px !important;
+  }
   /*Organisms*/
   .menu {
     background: transparent;
@@ -1469,10 +1499,22 @@ input[type="checkbox"]:checked + label::before {
     margin-left: auto;
     margin-right: auto;
   }
-  .o-concert-section {
+  .o-concert-section,
+  .o-cinema-section,
+  .o-vision-section,
+  .o-claro-section {
     max-width: 100%;
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .o-concert-section {
+    background-color: #3e0a43;
+  }
+  .o-cinema-section {
+    background-color: #83e3e8;
+  }
+  .o-vision-section {
+    background-color: #d8d8d8;
   }
 }
 /*# sourceMappingURL=style.css.map */

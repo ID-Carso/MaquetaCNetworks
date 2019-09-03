@@ -153,6 +153,20 @@
     font-family: $montserratSemiBold;
   }
 
+  .a-claro-cinema-title,
+  .a-our-vision-title,
+  .a-claro-channel-title {
+    font-size: 32px;
+    padding-bottom: 7px;
+    text-align: left;
+  }
+
+  .a-subtitle {
+    text-align: left;
+    font-size: 13px;
+    padding-bottom: 0%;
+  }
+
   /*Molecules*/
   .nav-content {
     margin: 0px;
@@ -177,6 +191,13 @@
 
   .m-see-more {
     text-align: right;
+  }
+  .slick-dots {
+    bottom: -50px !important;
+  }
+
+  .slick-dots li button:before {
+    font-size: 9px !important;
   }
 
   /*Organisms*/
@@ -208,9 +229,23 @@
     margin-right: auto;
   }
 
-  .o-concert-section {
+  .o-concert-section,
+  .o-cinema-section,
+  .o-vision-section,
+  .o-claro-section {
     max-width: 100%;
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .o-concert-section {
+    background-color: $backgroundConcertChannel;
+  }
+
+  .o-cinema-section {
+    background-color: #83e3e8;
+  }
+
+  .o-vision-section {
+    background-color: $backgroundGray;
   }
 }

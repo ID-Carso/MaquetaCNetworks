@@ -30,6 +30,10 @@
   @include more-button($pinkBtn);
 }
 
+.btn-purple {
+  @include more-button($purpleColor);
+}
+
 .invisible-button {
   opacity: 0.2;
   position: fixed;
@@ -46,7 +50,7 @@
   outline: none !important;
 }
 
-.login-button{
+.login-button {
   width: 288px;
   height: 44px;
   border-radius: 21.5px;
@@ -62,7 +66,7 @@
   line-height: normal;
   letter-spacing: normal;
 }
-.singup-button{
+.singup-button {
   width: 288px;
   height: 44px;
   border-radius: 21.5px;
@@ -76,9 +80,8 @@
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: normal; 
-  
+  letter-spacing: normal;
 }
-.centro{
+.centro {
   text-align: center;
 }
