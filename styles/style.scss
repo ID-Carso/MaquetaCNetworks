@@ -153,6 +153,50 @@
     font-family: $montserratSemiBold;
   }
 
+  .a-claro-cinema-title,
+  .a-our-vision-title,
+  .a-claro-channel-title,
+  .a-claro-sports-title {
+    font-size: 32px;
+    padding-bottom: 7px;
+    text-align: left;
+  }
+  .poster-title-sport {
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .a-subtitle {
+    text-align: left;
+    font-size: 16px;
+    padding-bottom: 0%;
+  }
+
+  .advertising-image {
+    width: 90%;
+    display: block;
+    margin: 0px auto;
+  }
+
+  .advertising-title,
+  .advertising-subtitle {
+    text-align: left;
+  }
+
+  .advertising-title {
+    font-size: 50px;
+  }
+
+  .advertising-text {
+    font-size: 12px;
+  }
+
+  .advertising-subtitle {
+    font-size: 18px;
+    color: #00caf5;
+    font-family: "Gotham-Black";
+  }
+
   /*Molecules*/
   .nav-content {
     margin: 0px;
@@ -177,6 +221,14 @@
 
   .m-see-more {
     text-align: right;
+    margin-bottom: 0px;
+  }
+  .slick-dots {
+    bottom: -50px !important;
+  }
+
+  .slick-dots li button:before {
+    font-size: 9px !important;
   }
 
   /*Organisms*/
@@ -208,9 +260,38 @@
     margin-right: auto;
   }
 
-  .o-concert-section {
+  .o-concert-section,
+  .o-cinema-section,
+  .o-vision-section,
+  .o-claro-section,
+  .o-sports-section,
+  .o-advertising-section {
     max-width: 100%;
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .o-concert-section {
+    background-color: $backgroundConcertChannel;
+  }
+
+  .o-cinema-section {
+    background-image: url(../images/home/claro-cinema-background.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-origin: content-box;
+  }
+
+  .o-vision-section {
+    background-color: $backgroundGray;
+  }
+
+  .o-claro-section {
+    background: #c35353;
+  }
+
+  .o-sports-section {
+    background-image: url(../images/home/claro-sports-background.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
   }
 }

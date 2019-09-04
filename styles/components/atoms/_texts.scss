@@ -112,6 +112,14 @@
   color: $blackColor;
 }
 
+.poster-title-sport {
+  @include title-section($cinemaTitleColor, $titleSection);
+}
+
+.poster-title-sport span {
+  color: $blackColor;
+}
+
 .footer-title {
   @include title-section($purpleColor, $titleSection);
 }
@@ -235,7 +243,7 @@
   left: 4%;
   top: 4%;
 }
-.registro{
+.registro {
   font-family: $montserratSemiBold;
   font-size: $titleSection;
   font-weight: 600;
@@ -244,8 +252,7 @@
   line-height: normal;
   letter-spacing: normal;
   color: $textgray;
-  margin-left:3%; 
-
+  margin-left: 3%;
 }
 
 .contra:hover{

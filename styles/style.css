@@ -143,6 +143,18 @@ h6 {
   margin-left: 0px !important;
 }
 
+.margin-bottom-75 {
+  margin-bottom: 75px;
+}
+
+.margin-bottom-60 {
+  margin-bottom: 60px;
+}
+
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 @font-face {
@@ -190,7 +202,7 @@ h6 {
   src: url(../../../fonts/Montserrat-SemiBold.ttf);
 }
 
-.a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-claro-channel-subtitle-bold, .a-subtitle, .a-claro-cinema-title, .advertising-title, .advertising-subtitle, .a-claro-sports-title, .footer-title {
+.a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-claro-channel-subtitle-bold, .a-subtitle, .a-claro-cinema-title, .advertising-title, .advertising-subtitle, .a-claro-sports-title, .poster-title-sport, .footer-title {
   text-align: center;
   text-transform: uppercase;
 }
@@ -309,6 +321,16 @@ h6 {
 }
 
 .a-claro-sports-title span {
+  color: #262626;
+}
+
+.poster-title-sport {
+  font-size: 24px;
+  color: #f90b0b;
+  font-family: "Gotham-Black";
+}
+
+.poster-title-sport span {
   color: #262626;
 }
 
@@ -460,7 +482,7 @@ h6 {
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
-.btn-red, .btn-blue, .btn-pink {
+.btn-red, .btn-blue, .btn-pink, .btn-purple {
   color: #ffffff;
   font-size: 12px;
   padding: 10px 38px;
@@ -481,6 +503,10 @@ h6 {
 
 .btn-pink {
   background: #ff00d2;
+}
+
+.btn-purple {
+  background: #6031ad;
 }
 
 .invisible-button {
@@ -809,6 +835,10 @@ h6 {
 }
 
 /*Colores de prueba para posters*/
+.poster-grey {
+  background: #959292;
+}
+
 .pink-color {
   background: #e289af;
 }
@@ -1280,14 +1310,10 @@ input[type="checkbox"]:checked + label::before {
 .second-column-image {
   height: 91%;
 }*/
-.o-concert-section {
+.o-concert-section, .o-cinema-section, .o-vision-section, .o-claro-section, .o-sports-section {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.o-concert-section {
-  background-color: #3e0a43;
 }
 
 .o-home-section {
@@ -1443,6 +1469,43 @@ input[type="checkbox"]:checked + label::before {
     font-size: 13px;
     font-family: "Montserrat-SemiBold";
   }
+  .a-claro-cinema-title,
+  .a-our-vision-title,
+  .a-claro-channel-title,
+  .a-claro-sports-title {
+    font-size: 32px;
+    padding-bottom: 7px;
+    text-align: left;
+  }
+  .poster-title-sport {
+    font-size: 30px;
+    text-align: left;
+  }
+  .a-subtitle {
+    text-align: left;
+    font-size: 16px;
+    padding-bottom: 0%;
+  }
+  .advertising-image {
+    width: 90%;
+    display: block;
+    margin: 0px auto;
+  }
+  .advertising-title,
+  .advertising-subtitle {
+    text-align: left;
+  }
+  .advertising-title {
+    font-size: 50px;
+  }
+  .advertising-text {
+    font-size: 12px;
+  }
+  .advertising-subtitle {
+    font-size: 18px;
+    color: #00caf5;
+    font-family: "Gotham-Black";
+  }
   /*Molecules*/
   .nav-content {
     margin: 0px;
@@ -1470,6 +1533,13 @@ input[type="checkbox"]:checked + label::before {
   }
   .m-see-more {
     text-align: right;
+    margin-bottom: 0px;
+  }
+  .slick-dots {
+    bottom: -50px !important;
+  }
+  .slick-dots li button:before {
+    font-size: 9px !important;
   }
   /*Organisms*/
   .menu {
@@ -1497,10 +1567,35 @@ input[type="checkbox"]:checked + label::before {
     margin-left: auto;
     margin-right: auto;
   }
-  .o-concert-section {
+  .o-concert-section,
+  .o-cinema-section,
+  .o-vision-section,
+  .o-claro-section,
+  .o-sports-section,
+  .o-advertising-section {
     max-width: 100%;
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .o-concert-section {
+    background-color: #3e0a43;
+  }
+  .o-cinema-section {
+    background-image: url(../images/home/claro-cinema-background.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-origin: content-box;
+  }
+  .o-vision-section {
+    background-color: #d8d8d8;
+  }
+  .o-claro-section {
+    background: #c35353;
+  }
+  .o-sports-section {
+    background-image: url(../images/home/claro-sports-background.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
   }
 }
 /*# sourceMappingURL=style.css.map */
