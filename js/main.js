@@ -7,19 +7,8 @@ $(document).ready(function() {
     /*End Atoms */
 
     /* Molecules */
-    /*window.addEventListener("scroll", function() {
-      var top = this.scrollY;
-      console.log(top);
-      var left = this.scrollX;
-      if (top > 80) {
-        navbar.style.background = "black";
-      } else {
-        navbar.style.background =
-          "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-      }
-    });*/
 
-    var prevScrollpos = window.pageYOffset;
+    /*var prevScrollpos = window.pageYOffset;
 
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
@@ -31,56 +20,18 @@ $(document).ready(function() {
           "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
       }
       prevScrollpos = currentScrollPos;
-    };
+    };*/
 
-    document.addEventListener(
-      "touchend",
-      function(e) {
-        var currentScrollPos = window.pageYOffset;
-        //console.log(currentScrollPos);
-        if (currentScrollPos > 0) {
-          navbar.style.background = "black";
-        } else {
-          navbar.style.background =
-            "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-        }
-      },
-      true
-    );
-
-    document.addEventListener(
-      "touchmove",
-      function(e) {
-        var curY = event.touches[0].pageY;
-        console.log(curY);
-        var currentScrollPos = window.pageYOffset;
-        //console.log(currentScrollPos);
-        if (currentScrollPos > 0) {
-          navbar.style.background = "black";
-        } else {
-          navbar.style.background =
-            "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-        }
-      },
-      true
-    );
-
-    document.addEventListener(
-      "touchstart",
-      function(e) {
-        var curY = event.touches[0].pageY;
-        console.log(curY);
-        var currentScrollPos = window.pageYOffset;
-        //console.log(currentScrollPos);
-        if (currentScrollPos > 0) {
-          navbar.style.background = "black";
-        } else {
-          navbar.style.background =
-            "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-        }
-      },
-      true
-    );
+    $(window).scroll(function() {
+      if ($(this).scrollTop() <= 0) {
+        navbar.style.background =
+          "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+        console.log("scrollTop -> " + $(this).scrollTop());
+      } else {
+        navbar.style.background = "black";
+        console.log("scrollTop -> " + $(this).scrollTop());
+      }
+    });
 
     /*Organismos */
   } else if (
@@ -104,11 +55,13 @@ $(document).ready(function() {
     /*Organismos*/
 
     var concertResponsiveHome = `
-    <div class="m-home-titles">
-      <h1 class="a-concert-channel-title">CONCERT CHANNEL</h1>
-    </div>
-    <div class="m-see-more">
-      <button class="btn-pink">VER +</button>
+    <div class="d-flex justify-content-between align-items-center margin-bottom-75">
+      <div class="m-home-titles">
+        <h1 class="a-concert-channel-title">CONCERT CHANNEL</h1>
+      </div>
+      <div class="m-see-more">
+        <button class="btn-pink">VER +</button>
+      </div>
     </div>
     <div class="row no-gutters">
       <div class="col-md-4">
@@ -172,15 +125,15 @@ $(document).ready(function() {
     $(".o-concert-section").html(concertResponsiveHome);
 
     var cinemaResponsiveHome = `
-    <div class="o-cinema-section">
-    <div class="d-flex justify-content-between margin-bottom-75">
+   
+    <div class="d-flex justify-content-between align-items-center margin-bottom-75">
       <div class="m-home-titles">
         <h1 class="a-claro-cinema-title">CLARO <span>CINEMA</span></h1>
         <h2 class="a-subtitle">
           Las mejores <span class="a-subtitle-bold">Películas Mexicanas</span>
         </h2>
       </div>
-      <div class="m-see-more margin-top-50">
+      <div class="m-see-more">
         <button class="btn-red">VER +</button>
       </div>
     </div>
@@ -239,20 +192,19 @@ $(document).ready(function() {
       <div>
         <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
       </div>
-    </div>
-  </div>`;
+    </div>`;
     $(".o-cinema-section").html(cinemaResponsiveHome);
 
     var visionResponsiveHome = `
     <div class="o-vision-section">
-    <div class="d-flex justify-content-between margin-bottom-60">
+    <div class="d-flex justify-content-between align-items-center margin-bottom-60">
       <div class="m-home-titles">
         <h1 class="a-our-vision-title">NUESTRA VISIÓN</h1>
         <h2 class="a-subtitle">
           SIÉNTETE <span class="a-subtitle-bold">COMO EN CASA</span>
         </h2>
       </div>
-        <div class="m-see-more margin-top-50">
+        <div class="m-see-more">
         <button class="btn-purple">VER +</button>
       </div>
     </div>
@@ -264,7 +216,7 @@ $(document).ready(function() {
             <div class="col columnGap h-100">
                 <div class="height-second-poster h-100">
                     <div class="poster-image pink-color">
-                      </div>
+                    </div>
                   <div class="a-vision-rectangle">
                       <div class="poster-title-margin">
                           <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
@@ -322,6 +274,163 @@ $(document).ready(function() {
     `;
 
     $(".o-vision-section").html(visionResponsiveHome);
+
+    var claroResponsiveHome = `
+    
+    <div class="d-flex justify-content-between align-items-center margin-bottom-60">
+    <div class="m-home-titles">
+      <h1 class="a-claro-channel-title">CANAL CLARO</h1>
+      <h2 class="a-subtitle">
+        LO MEJOR EN SERIES Y <span class="a-claro-channel-subtitle-bold">PELÍCULAS INTERNACIONALES</span>
+      </h2>
+    </div>
+    <div class="m-see-more">
+      <button class="btn-red">VER +</button>
+    </div>
+   </div>
+   <div class="slick-slider">
+      <div class="row no-gutters">
+          <div class="col columnGap h-100">
+              <div class="height-second-poster h-100">
+                  <div class="poster-image pink-color">
+                    </div>
+                <div class="a-vision-rectangle">
+                    <div class="poster-title-margin">
+                        <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      <div class="row no-gutters">
+        <div class="col columnGap h-100">
+            <div class="height-second-poster h-100">
+              <div class="poster-image pink-color"></div>
+              <div class="image"></div>
+              <div class="a-vision-rectangle">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="row no-gutters">
+          <div class="col columnGap h-100">
+              <div class="height-second-poster h-100">
+                  <div class="poster-image pink-color">
+                    </div>
+                <div class="a-vision-rectangle">
+                    <div class="poster-title-margin">
+                        <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col columnGap h-100">
+            <div class="height-second-poster h-100">
+              <div class="poster-image pink-color">
+              </div>
+              <div class="a-vision-rectangle">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-between section-home-footer">
+      <div>
+        <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
+      </div>
+      <div>
+        <p class="a-poster-text-white">
+          Horario sujetos a cambios
+        </p>
+      </div>
+  </div>`;
+    $(".o-claro-section").html(claroResponsiveHome);
+
+    var sportsResponsiveHome = `          
+    <div class="d-flex justify-content-between align-items-center margin-bottom-50">
+    <div class="m-home-titles">
+      <h1 class="a-claro-sports-title">claro <span>sports</span></h1>
+      <h2 class="a-subtitle">
+        Las mejor en deportes <span class="a-subtitle-bold">al instante</span>
+      </h2>
+    </div>
+    <div class="m-see-more">
+      <button class="btn-red">VER +</button>
+    </div>
+  </div>
+  <div class="row no-gutters d-flex align-items-center">
+      <div class="col-md-4">
+        <h1 class="poster-title-sport">
+          <span>Vive la </span>intensidad <span>del deporte</span>
+        </h1>
+      </div>
+      <div class="col-md-8">
+        <div class="row poster-pad-b">
+          <div class="col poster-pad-r">
+            <div class="poster-image poster-grey"></div>
+            <div class="a-sports-rectangle">
+                <div class="poster-title-margin">
+                    <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                </div>
+            </div>
+              
+            </div>
+            <div class="col poster-pad-l">
+                <div class="height-second-poster">
+                  <div class="poster-image poster-grey"></div>
+                  <div class="a-sports-rectangle">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+      </div>
+      </div>
+    </div>
+      <div class="d-flex align-items-center justify-content-between section-home-footer">
+        <div>
+          <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
+        </div>
+        <div>
+          <p class="a-poster-text-white">
+            Horario sujetos a cambios
+          </p>
+        </div>
+      </div>`;
+    $(".o-sports-section").html(sportsResponsiveHome);
+
+    var advertisingSection = `
+    
+    <div class="row">
+      <div class="col-5 m-auto">
+        <div class="adv-headline-mb">
+          <h1 class="advertising-title">Disfruta</h1>
+          <h2 class="advertising-subtitle">La mejor programación</h2>
+        </div>
+        <div>
+          <p class="advertising-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tellus
+            tellus, rutrum sit amet purus in, interdum auctor nunc. Nulla
+            facilisis mauris vel elit finibus, sit amet ornare massa suscipit.
+          </p>
+        </div> 
+      </div>
+      <div class="col-7 no-gutters">
+        <img src="./images/home/planes-copy.png" class="advertising-image"/>
+      </div>
+    </div>
+    `;
+
+    $(".o-advertising-section").html(advertisingSection);
   }
   var slick_slider = $(".slick-slider").slick({
     slidesToShow: 3,
