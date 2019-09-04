@@ -120,8 +120,8 @@ h6 {
 }
 
 .no-gap {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 .poster-title-margin {
@@ -140,6 +140,7 @@ h6 {
 
 .ma-no {
   margin-right: 0px !important;
+  margin-left: 0px !important;
 }
 
 /*Tamaño de textos - responsive*/
@@ -452,6 +453,10 @@ h6 {
   margin-left: 3%;
 }
 
+.contra:hover {
+  color: #11707d;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -531,6 +536,17 @@ h6 {
 
 .centro {
   text-align: center;
+}
+
+.login-button:hover {
+  background-color: #069cb0;
+  border: solid 1px #069cb0;
+}
+
+.singup-button:hover {
+  background-color: #069cb0;
+  color: #ffffff;
+  border: solid 1px #069cb0;
 }
 
 /*Tamaño de textos - responsive*/
@@ -767,13 +783,12 @@ h6 {
 
 .ubicacion2 {
   position: absolute;
-  bottom: -21%;
-  left: 3%;
+  bottom: 12%;
 }
 
 .ubicacion3 {
   position: absolute;
-  right: -4%;
+  right: 1%;
   top: 66%;
 }
 
@@ -785,7 +800,12 @@ h6 {
 
 .ubicacion5 {
   position: absolute;
-  top: 86%;
+  bottom: 11%;
+}
+
+.ubicacion6 {
+  position: absolute;
+  bottom: 8%;
 }
 
 /*Colores de prueba para posters*/
@@ -811,6 +831,7 @@ h6 {
 
 .fondolog {
   background: #ffffff;
+  height: 703.19px;
 }
 
 .hr1 {
@@ -857,11 +878,11 @@ h6 {
   -moz-appearance: none;
        appearance: none;
   background-clip: padding-box;
-  width: 288px;
+  width: 85%;
   height: 44px;
   background-color: #ffffff;
   padding: 1px;
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-SemiBold";
   color: #000000;
   font-size: 14px;
   border: none;
@@ -869,6 +890,12 @@ h6 {
   border-bottom: solid 1px #a1a0a0;
   font-weight: bold;
   outline: none !important;
+  text-transform: lowercase;
+}
+
+.insert-data:focus {
+  color: #14bef2;
+  border-bottom: solid 2px #14bef2;
 }
 
 label {
@@ -935,6 +962,7 @@ input[type="checkbox"]:checked + label::before {
 
 .login-form {
   margin-top: 0%;
+  height: 100%;
 }
 
 .tamaño {

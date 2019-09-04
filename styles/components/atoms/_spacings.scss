@@ -45,8 +45,8 @@
 }
 
 .no-gap {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 .poster-title-margin {
@@ -63,4 +63,6 @@
 }
 .ma-no {
   margin-right: 0px !important;
+  margin-left: 0px !important;
 }
+

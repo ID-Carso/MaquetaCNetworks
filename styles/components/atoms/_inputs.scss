@@ -6,20 +6,26 @@
   -webkit-appearance: none;
   appearance: none;
   background-clip: padding-box;
-  width: 288px;
+  width: 85%;
   height: 44px;
   background-color: $textWhite;
   padding: 1px;
-  font-family: $montserratRegular;
+  font-family: $montserratSemiBold;
   color: $pureBlack;
   font-size: $fontSizeTv;
   border: none;
   border-radius: 0px;
   border-bottom: solid 1px $bordergray;
   font-weight: bold;
- 
   outline: none !important;
+  text-transform: lowercase;
+  
  
+}
+.insert-data:focus{
+  color: $bluetxt;
+  border-bottom: solid 2px $bluetxt;
+
 }
 label {
   display: flex;
@@ -77,6 +83,7 @@ input[type="checkbox"]:checked + label::before {
 
 .login-form {
   margin-top: 0%;
+  height:100%;
 }
 .tamaño {
   width: 288px;
