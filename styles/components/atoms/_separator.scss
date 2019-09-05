@@ -6,6 +6,11 @@
   border: none !important;
 }
 
+.aviso-border {
+  border-bottom: 2px solid $borderAvisoColor;
+  margin-bottom: 22px;
+}
+
 .sidebar-border-bottom {
   border-bottom: solid 0.5px $dropdowncolor;
 }

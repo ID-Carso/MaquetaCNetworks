@@ -21,6 +21,14 @@
   padding-right: $posterPadRight;
 }
 
+.poster-margin-r {
+  margin-right: $posterMargin;
+}
+
+.poster-margin-l {
+  margin-left: $posterMargin;
+}
+
 .margin-top-50 {
   margin-top: 50px;
 }
@@ -66,8 +74,6 @@
   margin-left: 0px !important;
 }
 
-<<<<<<< HEAD
-=======
 .margin-bottom-75 {
   margin-bottom: 75px;
 }
@@ -79,4 +85,7 @@
 .margin-bottom-50 {
   margin-bottom: 50px;
 }
->>>>>>> a77291228a9686111aa954adf338594061d2ba98
+
+.margin-left-11 {
+  margin-left: 11px;
+}

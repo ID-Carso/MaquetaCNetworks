@@ -197,6 +197,36 @@
     font-family: "Gotham-Black";
   }
 
+  .footer-title {
+    font-size: 30px;
+  }
+
+  .social-icon {
+    width: 58px;
+  }
+
+  .claro-grey-img {
+    width: 86px;
+  }
+
+  .text-footer-regular {
+    font-size: 15px;
+    margin-bottom: 29px;
+  }
+
+  .text-footer-bold {
+    font-size: 15px;
+  }
+
+  .transmission-text {
+    position: absolute;
+    left: 4%;
+    top: 10%;
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-family: $montserratSemiBold;
+  }
+
   /*Molecules*/
   .nav-content {
     margin: 0px;
@@ -229,6 +259,10 @@
 
   .slick-dots li button:before {
     font-size: 9px !important;
+  }
+
+  .social-media {
+    margin: 46px auto 65px auto;
   }
 
   /*Organisms*/
