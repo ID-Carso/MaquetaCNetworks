@@ -258,3 +258,35 @@
 .contra:hover{
   color: $rollovertxt;
 }
+
+.enviamos{
+  font-family: $montserratRegular;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $txtmodal;
+}
+
+.confirma{
+  font-family: $montserratBold;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $txtmodal;
+}
+
+.txtcontenido{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+

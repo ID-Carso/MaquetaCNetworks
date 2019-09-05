@@ -25,6 +25,7 @@
 .insert-data:focus{
   color: $bluetxt;
   border-bottom: solid 2px $bluetxt;
+  font-family: $montserratBold;
 
 }
 label {
@@ -100,4 +101,10 @@ input[type="checkbox"]:checked + label::before {
 }
 .pa-img{
   padding-bottom:40px; 
+}
+.modal-estilo {
+  height: 199px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: none !important; 
 }

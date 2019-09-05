@@ -202,6 +202,11 @@ h6 {
   src: url(../../../fonts/Montserrat-SemiBold.ttf);
 }
 
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(../../../fonts/Montserrat-Bold.ttf);
+}
+
 .a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-claro-channel-subtitle-bold, .a-subtitle, .a-claro-cinema-title, .advertising-title, .advertising-subtitle, .a-claro-sports-title, .poster-title-sport, .footer-title {
   text-align: center;
   text-transform: uppercase;
@@ -477,6 +482,46 @@ h6 {
 
 .contra:hover {
   color: #11707d;
+}
+
+.enviamos {
+  font-family: "Montserrat-Regular";
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #373737;
+}
+
+.confirma {
+  font-family: "Montserrat-Bold";
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #373737;
+}
+
+.txtcontenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /*Tamaño de textos - responsive*/
@@ -822,6 +867,7 @@ h6 {
   position: absolute;
   right: 6%;
   top: 31%;
+  opacity: 0.3;
 }
 
 .ubicacion5 {
@@ -862,6 +908,10 @@ h6 {
 .fondolog {
   background: #ffffff;
   height: 703.19px;
+}
+
+.ubicacion4:hover {
+  opacity: 1;
 }
 
 .hr1 {
@@ -926,6 +976,7 @@ h6 {
 .insert-data:focus {
   color: #14bef2;
   border-bottom: solid 2px #14bef2;
+  font-family: "Montserrat-Bold";
 }
 
 label {
@@ -1012,6 +1063,13 @@ input[type="checkbox"]:checked + label::before {
 
 .pa-img {
   padding-bottom: 40px;
+}
+
+.modal-estilo {
+  height: 199px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: none !important;
 }
 
 .home-video {
