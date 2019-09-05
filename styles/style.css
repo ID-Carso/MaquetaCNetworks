@@ -95,6 +95,14 @@ h6 {
   padding-right: 6px;
 }
 
+.poster-margin-r {
+  margin-right: 6px;
+}
+
+.poster-margin-l {
+  margin-left: 6px;
+}
+
 .margin-top-50 {
   margin-top: 50px;
 }
@@ -153,6 +161,10 @@ h6 {
 
 .margin-bottom-50 {
   margin-bottom: 50px;
+}
+
+.margin-left-11 {
+  margin-left: 11px;
 }
 
 /*Tamaño de textos - responsive*/
@@ -672,6 +684,32 @@ h6 {
   position: relative;
 }
 
+.transmission-panel {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  opacity: 0.65;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+}
+
+.transmission-add {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  right: 0;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 .poster-image {
@@ -922,6 +960,11 @@ h6 {
   border: none !important;
 }
 
+.aviso-border {
+  border-bottom: 2px solid #a3a3a3;
+  margin-bottom: 22px;
+}
+
 .sidebar-border-bottom {
   border-bottom: solid 0.5px #aa2ab9;
 }
@@ -1098,6 +1141,10 @@ input[type="checkbox"]:checked + label::before {
   z-index: 1;
 }
 
+.large-poster-width {
+  width: 50%;
+}
+
 /*%poster-basic {
   display: flex;
 }
@@ -1261,11 +1308,6 @@ input[type="checkbox"]:checked + label::before {
           justify-content: center;
 }
 
-.aviso {
-  border-bottom: 1px solid #a3a3a3;
-  margin-bottom: 22px;
-}
-
 @-webkit-keyframes active-dropdown {
   0% {
     margin-left: -130%;
@@ -1305,6 +1347,10 @@ input[type="checkbox"]:checked + label::before {
   height: 100%;
   text-align: center;
   font-family: "Gotham-Black";
+}
+
+.large-poster-width {
+  width: 50%;
 }
 
 /*%poster-basic {
@@ -1564,6 +1610,30 @@ input[type="checkbox"]:checked + label::before {
     color: #00caf5;
     font-family: "Gotham-Black";
   }
+  .footer-title {
+    font-size: 30px;
+  }
+  .social-icon {
+    width: 58px;
+  }
+  .claro-grey-img {
+    width: 86px;
+  }
+  .text-footer-regular {
+    font-size: 15px;
+    margin-bottom: 29px;
+  }
+  .text-footer-bold {
+    font-size: 15px;
+  }
+  .transmission-text {
+    position: absolute;
+    left: 4%;
+    top: 10%;
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-family: "Montserrat-SemiBold";
+  }
   /*Molecules*/
   .nav-content {
     margin: 0px;
@@ -1598,6 +1668,9 @@ input[type="checkbox"]:checked + label::before {
   }
   .slick-dots li button:before {
     font-size: 9px !important;
+  }
+  .social-media {
+    margin: 46px auto 65px auto;
   }
   /*Organisms*/
   .menu {

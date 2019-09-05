@@ -24,7 +24,7 @@ $(document).ready(function() {
     };*/
 
     $(window).scroll(function() {
-      if ($(this).scrollTop() <= 0) {
+      if ($(this).scrollTop() <= 80) {
         navbar.style.background =
           "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
         console.log("scrollTop -> " + $(this).scrollTop());
@@ -32,6 +32,12 @@ $(document).ready(function() {
         navbar.style.background = "black";
         console.log("scrollTop -> " + $(this).scrollTop());
       }
+    });
+
+    window.addEventListener("load", function() {
+      this.setTimeout(function() {
+        window.scrollTo(0, 1);
+      }, 0);
     });
 
     /*Organismos */
@@ -73,7 +79,8 @@ $(document).ready(function() {
         <div class="row poster-pad-b">
           <div class="col poster-pad-r">
               <div class="height-second-poster ">
-                <div class="poster-image-small concert-poster-color"></div>
+                <div class="poster-image-small concert-poster-color">
+                </div>
                 <div class="a-concert-rectangle">
                     <div class="poster-title-margin">
                         <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
@@ -197,7 +204,7 @@ $(document).ready(function() {
     $(".o-cinema-section").html(cinemaResponsiveHome);
 
     var visionResponsiveHome = `
-    <div class="o-vision-section">
+    
     <div class="d-flex justify-content-between align-items-center margin-bottom-60">
       <div class="m-home-titles">
         <h1 class="a-our-vision-title">NUESTRA VISIÓN</h1>
@@ -270,9 +277,7 @@ $(document).ready(function() {
               <div>
                 <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
               </div>
-          </div>
-        </div>
-    `;
+          </div>`;
 
     $(".o-vision-section").html(visionResponsiveHome);
 
@@ -317,8 +322,8 @@ $(document).ready(function() {
           </div>
       </div>
       <div class="row no-gutters">
-          <div class="col columnGap h-100">
-              <div class="height-second-poster h-100">
+          <div class="col columnGap">
+              <div class="height-second-poster">
                   <div class="poster-image pink-color">
                     </div>
                 <div class="a-vision-rectangle">
@@ -330,8 +335,8 @@ $(document).ready(function() {
             </div>
         </div>
         <div class="row no-gutters">
-          <div class="col columnGap h-100">
-            <div class="height-second-poster h-100">
+          <div class="col columnGap">
+            <div class="height-second-poster">
               <div class="poster-image pink-color">
               </div>
               <div class="a-vision-rectangle">
@@ -374,19 +379,34 @@ $(document).ready(function() {
         </h1>
       </div>
       <div class="col-md-8">
-        <div class="row poster-pad-b">
-          <div class="col poster-pad-r">
-            <div class="poster-image poster-grey"></div>
-            <div class="a-sports-rectangle">
-                <div class="poster-title-margin">
-                    <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                </div>
+        <div class="row no-gutters poster-pad-b">
+          <div class="col margin-left-11 poster-margin-r">
+
+          <div class=" poster-image poster-grey">
+            <div class="transmission-panel">
+              <p class="transmission-text text-white">14:50 - 16:50</p>
+              <div class="transmission-add">
+                <span class="text-white">+</span>
+              </div>
             </div>
-              
-            </div>
-            <div class="col poster-pad-l">
+          </div>
+          <div class="a-sports-rectangle">
+              <div class="poster-title-margin">
+                  <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+              </div>
+          </div>          
+        </div>
+            <div class="col poster-margin-l">
                 <div class="height-second-poster">
-                  <div class="poster-image poster-grey"></div>
+                  <div class="poster-image poster-grey">
+                  <div class="transmission-panel">
+                  <p class="transmission-text text-white">14:50 - 16:50</p>
+                  <div class="transmission-add">
+                    <span class="text-white">+</span>
+                  </div>
+                </div>
+                  </div>
+
                   <div class="a-sports-rectangle">
                       <div class="poster-title-margin">
                           <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
@@ -528,6 +548,8 @@ $(document).ready(function() {
   const video_home = document.querySelector(".circle-video");
   console.log(video_home);
 
+  $("body").index(navbar);
+
   /***  Slider "Ahora en TV"  ****/
   const tvClaroSlider = $("#tv-claro-slider");
   const tvConcertSlider = $("#tv-concert-slider");
@@ -581,25 +603,5 @@ $(document).ready(function() {
   }
 
   /*** Fin Dropdown del menú ***/
-
-  const ojazo = $("#show-hide-passwd");
-  console.log("poinpoinh");
-
-  ojazo.on("click", function(e) {
-    e.preventDefault();
-
-    var current = $(this).attr("action");
-
-    if (current == "hide") {
-      $(this)
-        .prev()
-        .attr("type", "text");
-    }
-    if (current == "hide") {
-      $(this)
-        .prev()
-        .attr("type", "password");
-    }
-  });
 });
 
