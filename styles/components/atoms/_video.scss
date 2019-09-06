@@ -1,13 +1,17 @@
 .home-video {
-  position: fixed;
+  /*position: fixed;
   right: 0;
   top: 0;
-  width: 720px;
+  width: 720px;*/
   /*position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;*/
+  right: 0;
+  top: 0;
+  width: 720px;
+  overflow: hidden;
 }
 
 .circle-video {

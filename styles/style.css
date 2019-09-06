@@ -567,7 +567,7 @@ h6 {
 }
 
 .invisible-button {
-  opacity: 0.2;
+  opacity: 0.4;
   position: fixed;
   left: 0%;
   top: 0;
@@ -952,6 +952,11 @@ h6 {
   opacity: 1;
 }
 
+.logo-sidebar {
+  margin-top: 87px;
+  margin-bottom: 44px;
+}
+
 .hr1 {
   display: none;
 }
@@ -1116,15 +1121,19 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .home-video {
-  position: fixed;
+  /*position: fixed;
   right: 0;
   top: 0;
-  width: 720px;
+  width: 720px;*/
   /*position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;*/
+  right: 0;
+  top: 0;
+  width: 720px;
+  overflow: hidden;
 }
 
 .circle-video {
@@ -1227,10 +1236,6 @@ input[type="checkbox"]:checked + label::before {
   position: relative;
 }
 
-.sidebar-content {
-  margin-top: 58px;
-}
-
 .tv-list {
   list-style: none;
   display: -webkit-box;
@@ -1276,7 +1281,7 @@ input[type="checkbox"]:checked + label::before {
   z-index: 1;
 }
 
-.sidebar-dropdown {
+.sidebar-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1287,7 +1292,7 @@ input[type="checkbox"]:checked + label::before {
       -ms-flex-pack: center;
           justify-content: center;
   height: 10%;
-  width: 95%;
+  width: 80%;
   margin: auto;
 }
 

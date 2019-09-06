@@ -171,7 +171,6 @@
 .ubicacion2 {
   position: absolute;
   bottom: 12%;
-
 }
 .ubicacion3 {
   position: absolute;
@@ -188,11 +187,10 @@
   position: absolute;
   bottom: 11%;
 }
-.ubicacion6{
+.ubicacion6 {
   position: absolute;
   bottom: 8%;
 }
-
 
 /*Colores de prueba para posters*/
 
@@ -222,9 +220,12 @@
 .fondolog {
   background: $textWhite;
   height: 703.19px;
-  
 }
-.ubicacion4:hover{
+.ubicacion4:hover {
   opacity: 1;
+}
 
+.logo-sidebar {
+  margin-top: 87px;
+  margin-bottom: 44px;
 }

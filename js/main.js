@@ -1,5 +1,4 @@
 $(document).ready(function() {
-       
   if (window.matchMedia("(max-width: 767px)").matches) {
     /*Base*/
 
@@ -23,14 +22,34 @@ $(document).ready(function() {
       prevScrollpos = currentScrollPos;
     };*/
 
-    $(window).scroll(function() {
-      if ($(this).scrollTop() <= 80) {
+    /*$(window).scroll(function() {
+      if ($(this).scrollTop() >= 0 && $(this).scrollTop() <= 150) {
         navbar.style.background =
           "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
         console.log("scrollTop -> " + $(this).scrollTop());
       } else {
         navbar.style.background = "black";
         console.log("scrollTop -> " + $(this).scrollTop());
+      }
+    });*/
+
+    $(window).scroll(function() {
+      if ($.browser.mobile) {
+        if ($.browser.safari) {
+          if ($(this).scrollTop() >= 0 && $(this).scrollTop() <= 172) {
+            navbar.style.background =
+              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+          } else {
+            navbar.style.background = "black";
+          }
+        } else {
+          if ($(this).scrollTop() <= 0) {
+            navbar.style.background =
+              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+          } else {
+            navbar.style.background = "black";
+          }
+        }
       }
     });
 
@@ -583,7 +602,7 @@ $(document).ready(function() {
   /*** Fin Slider "Ahora en TV"  ***/
 
   /*** Dropdown del menú ***/
-  const dropdown = document.getElementsByClassName("sidebar-dropdown");
+  /*const dropdown = document.getElementsByClassName("sidebar-dropdown");
   console.log(dropdown);
 
   var i;
@@ -600,8 +619,7 @@ $(document).ready(function() {
         dropdownContent.style.animation = "active-dropdown 0.5s";
       }
     });
-  }
+  }*/
 
   /*** Fin Dropdown del menú ***/
 });
-
