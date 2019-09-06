@@ -15,6 +15,16 @@
 </head>
 
 <body class="fondo">
+                <script>
+                                function mostrarContrasena(){
+                                    var tipo = document.getElementById("password");
+                                    if(tipo.type == "password"){
+                                        tipo.type = "text";
+                                    }else{
+                                        tipo.type = "password";
+                                    }
+                                }
+                              </script>
 <div class="login-form">
     <div class="col-sm-12 no-gutters col-md-8 offset-md-2 no-gutters col-lg-4 offset-lg-4 shadow1 fondolog">
         <img src="images/registro/group-10.svg"class="ubicacion6"> 
@@ -56,7 +66,8 @@
         <div class="row ma-no centro">
                 <div class=" col-sm-12 no-gap">
                         <div class="tamaño2 centro">
-                        <input class="insert-data" " type="password" placeholder="Contraseña" >
+                        <input class="insert-data" " type="password" id="password" placeholder="Contraseña" >
+                        <img src="images/registro/eye.svg" onclick="mostrarContrasena()" class="ubicacion4" />
                         
                         </div>
                 </div>
@@ -75,12 +86,22 @@
                 <div class="modal fade " id="mensaje" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content modal-estilo">
+                                                <div class="modal-header" style="border-bottom: none !important; ">
+                                                                
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="outline: none !important;">
+                                                                  <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                        </div>
                                 
                                 <div class="modal-body txtcontenido">
                                         <span class="enviamos">Te hemos enviado un correo </span>
                                         
                                         <span class="confirma">confirma tu registro</span>
                                 </div>
+                                <div class="modal-footer" style="border-top:none !important;">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                
+                                              </div>
                    
                                  </div>
                         </div>
