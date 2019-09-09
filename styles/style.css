@@ -420,6 +420,12 @@ h6 {
   color: #ffffff;
 }
 
+.active-sidebar-item::before {
+  content: "• ";
+  color: #ffa700;
+  /* or whatever color you prefer */
+}
+
 .text-footer-regular {
   color: #838484;
   font-family: "Montserrat-Regular";
@@ -635,7 +641,7 @@ h6 {
 }
 
 .invisible-button {
-  opacity: 0.2;
+  opacity: 0.4;
   position: fixed;
   left: 0%;
   top: 0;
@@ -1020,6 +1026,11 @@ h6 {
   opacity: 1;
 }
 
+.logo-sidebar {
+  margin-top: 87px;
+  margin-bottom: 44px;
+}
+
 .hr1 {
   display: none;
 }
@@ -1034,11 +1045,11 @@ h6 {
 }
 
 .sidebar-border-bottom {
-  border-bottom: solid 0.5px #aa2ab9;
+  border-bottom: solid 1px #aa2ab9;
 }
 
 .sidebar-border-top {
-  border-top: solid 0.5px #aa2ab9;
+  border-top: solid 1px #aa2ab9;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -1183,15 +1194,19 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .home-video {
-  position: fixed;
+  /*position: fixed;
   right: 0;
   top: 0;
-  width: 720px;
+  width: 720px;*/
   /*position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;*/
+  right: 0;
+  top: 0;
+  width: 720px;
+  overflow: hidden;
 }
 
 .circle-video {
@@ -1199,13 +1214,13 @@ input[type="checkbox"]:checked + label::before {
   width: 65%;
   height: 336px;
   margin: auto;
-  background: lightblue;
   -webkit-clip-path: circle(50% at 80% 37%);
           clip-path: circle(50% at 80% 37%);
   position: absolute;
   right: 0%;
   top: 0%;
   z-index: 1;
+  overflow: hidden;
 }
 
 .large-poster-width {
@@ -1294,10 +1309,6 @@ input[type="checkbox"]:checked + label::before {
   position: relative;
 }
 
-.sidebar-content {
-  margin-top: 58px;
-}
-
 .tv-list {
   list-style: none;
   display: -webkit-box;
@@ -1314,14 +1325,16 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .nav-li {
-  -webkit-filter: grayscale(60%);
-          filter: grayscale(60%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  opacity: 0.75;
 }
 
 .active-navItem {
   position: relative;
   -webkit-filter: none;
           filter: none;
+  opacity: 1;
 }
 
 .active-navItem::after {
@@ -1343,18 +1356,15 @@ input[type="checkbox"]:checked + label::before {
   z-index: 1;
 }
 
-.sidebar-dropdown {
+.sidebar-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 10%;
-  width: 95%;
+  width: 80%;
   margin: auto;
 }
 
@@ -1532,6 +1542,7 @@ input[type="checkbox"]:checked + label::before {
   }
   .circle-video {
     display: block;
+    width: 52%;
   }
   .header-h1 {
     color: #000000;
