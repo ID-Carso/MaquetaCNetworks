@@ -219,6 +219,11 @@ h6 {
   src: url(../../../fonts/Montserrat-Bold.ttf);
 }
 
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url(../../../fonts/Montserrat-Black.ttf);
+}
+
 .a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-claro-channel-subtitle-bold, .a-subtitle, .a-claro-cinema-title, .advertising-title, .advertising-subtitle, .a-claro-sports-title, .poster-title-sport, .footer-title {
   text-align: center;
   text-transform: uppercase;
@@ -536,6 +541,69 @@ h6 {
           flex-direction: column;
 }
 
+.hola {
+  font-family: "Montserrat-Black";
+  font-size: 25px;
+  font-weight: 900;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0fd7f2;
+}
+
+.usuario {
+  font-family: "Montserrat-Black";
+  font-size: 25px;
+  font-weight: 900;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.mensaje {
+  font-family: "Montserrat-Regular";
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #717272;
+}
+
+.aviso-priv {
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #6f6e6e;
+}
+
+.aviso-priv-bold {
+  font-family: "Montserrat-SemiBold";
+  font-size: 14px;
+  font-weight: 700;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #6f6e6e;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -785,7 +853,7 @@ h6 {
     -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
     box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 5px;
-    margin-top: 20%;
+    margin-top: 15%;
   }
 }
 
@@ -803,7 +871,7 @@ h6 {
     -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
     box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 5px;
-    margin-top: 5%;
+    margin-top: 4%;
   }
 }
 
@@ -821,7 +889,7 @@ h6 {
     -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
     box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 5px;
-    margin-top: 6%;
+    margin-top: 4%;
   }
 }
 
@@ -1109,7 +1177,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .modal-estilo {
-  height: 199px;
   border-radius: 8px;
   background-color: #ffffff;
   border: none !important;

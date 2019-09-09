@@ -289,4 +289,64 @@
   justify-content: center;
   flex-direction: column;
 }
+.hola{
+  font-family: $montserratBlack;
+  font-size: 25px;
+  font-weight: 900;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $subtitleTV;
+}
+.usuario{
+  font-family: $montserratBlack;
+  font-size: 25px;
+  font-weight: 900;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $pureBlack;
 
+}
+.mensaje{
+  font-family: $montserratRegular;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $textgray;
+}
+
+.aviso-priv{
+  font-family: $montserratRegular;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $txtaviso;
+
+}
+.aviso-priv-bold{
+  font-family: $montserratSemiBold;
+  font-size: 14px;
+  font-weight: 700;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $txtaviso;
+}
