@@ -38,13 +38,13 @@ $(document).ready(function() {
     $(window).scroll(function() {
       if ($.browser.mobile) {
         if ($.browser.safari) {
-          if ($(window).scrollTop() <= 250) {
+          if ($(window).scrollTop() >= 250 || $(document).scrollTop() >= 250) {
+            console.log($(this).scrollTop());
+            navbar.style.background = "black";
+          } else {
             console.log("Degradado");
             navbar.style.background =
               "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-          } else {
-            console.log($(this).scrollTop());
-            navbar.style.background = "black";
           }
         } else {
           if ($(window).scrollTop() <= 1) {
