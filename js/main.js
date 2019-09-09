@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  const homeVideo = document.querySelector(".home-video");
+  homeVideo.play();
   if (window.matchMedia("(max-width: 767px)").matches) {
     /*Base*/
 
@@ -36,14 +38,16 @@ $(document).ready(function() {
     $(window).scroll(function() {
       if ($.browser.mobile) {
         if ($.browser.safari) {
-          if ($(this).scrollTop() >= 0 && $(this).scrollTop() <= 172) {
+          if ($(window).scrollTop() <= 250) {
+            console.log("Degradado");
             navbar.style.background =
               "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
           } else {
+            console.log($(this).scrollTop());
             navbar.style.background = "black";
           }
         } else {
-          if ($(this).scrollTop() <= 0) {
+          if ($(window).scrollTop() <= 1) {
             navbar.style.background =
               "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
           } else {
@@ -53,11 +57,11 @@ $(document).ready(function() {
       }
     });
 
-    window.addEventListener("load", function() {
+    /*window.addEventListener("load", function() {
       this.setTimeout(function() {
         window.scrollTo(0, 1);
       }, 0);
-    });
+    });*/
 
     /*Organismos */
   } else if (

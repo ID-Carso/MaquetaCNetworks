@@ -180,6 +180,11 @@
   color: $textWhite;
 }
 
+.active-sidebar-item::before {
+  content: "• ";
+  color: #ffa700; /* or whatever color you prefer */
+}
+
 .text-footer-regular {
   color: $greyFooter;
   font-family: $montserratRegular;
@@ -255,11 +260,11 @@
   margin-left: 3%;
 }
 
-.contra:hover{
+.contra:hover {
   color: $rollovertxt;
 }
 
-.enviamos{
+.enviamos {
   font-family: $montserratRegular;
   font-size: 17px;
   font-weight: normal;
@@ -271,7 +276,7 @@
   color: $txtmodal;
 }
 
-.confirma{
+.confirma {
   font-family: $montserratBold;
   font-size: 17px;
   font-weight: normal;
@@ -283,10 +288,9 @@
   color: $txtmodal;
 }
 
-.txtcontenido{
+.txtcontenido {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-
