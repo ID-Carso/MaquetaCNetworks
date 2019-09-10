@@ -18,7 +18,7 @@
 @import "./components/organisms/menu";
 @import "./components/organisms/footer";
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 2000px) {
   /*Base*/
 
   /*Atoms*/
@@ -29,7 +29,7 @@
 
   .circle-video {
     display: block;
-    width: 52%;
+    width: 70%;
   }
 
   .header-h1 {
@@ -144,9 +144,13 @@
     text-align: left;
   }
   .concert-footer-img {
-    filter: invert(1);
     width: 72px;
   }
+
+  .concert-img-white {
+    filter: invert(1);
+  }
+
   .a-concert-subtitle {
     color: $colorWhite;
     padding-bottom: 0;
@@ -256,7 +260,7 @@
     margin-bottom: 0px;
   }
   .slick-dots {
-    bottom: -50px !important;
+    bottom: -55px !important;
   }
 
   .slick-dots li button:before {
@@ -329,5 +333,21 @@
     background-image: url(../images/home/claro-sports-background.png);
     background-repeat: no-repeat;
     background-origin: content-box;
+  }
+
+  .margin-bottom-slider {
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 2000px) {
+  .header-detail-margin {
+    margin-top: 60px;
+    margin-bottom: 66px;
+  }
+
+  .circle-video {
+    display: block;
+    width: 55%;
   }
 }

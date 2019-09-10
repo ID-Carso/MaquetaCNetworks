@@ -34,6 +34,58 @@ $(document).ready(function() {
         console.log("scrollTop -> " + $(this).scrollTop());
       }
     });*/
+    window.onload = function() {
+      if ($.browser.mobile == true) {
+        if ($.browser.safari) {
+          var posicionYscroll = window.pageYOffset;
+          var largoDisponibleAvailHeight = screen.availHeight;
+          var largoDos = document.body.offsetHeight;
+          alert(
+            "availHeight: " +
+              largoDisponibleAvailHeight +
+              "  ||  offsetHeight: " +
+              largoDos
+          );
+        } else {
+          var posicionYscroll = window.pageYOffset;
+          var largoDisponibleAvailHeight = screen.availHeight;
+          alert("Largo disponible de trabajo: " + largoDisponibleAvailHeight);
+        }
+      }
+    };
+
+    window.onscroll = function() {
+      if ($.browser.mobile == true) {
+        if ($.browser.safari) {
+          var posicionYscroll = window.pageYOffset;
+          var largoDisponible = screen.availHeight;
+          var largoPantalla = screen.height;
+          var barraNavegacion = largoPantalla - largoDisponible;
+          console.log(barraNavegacion);
+          if (posicionYscroll >= 108) {
+            navbar.style.background = "black";
+          } else {
+            navbar.style.background =
+              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+          }
+        } else {
+          if (posicionYscroll > 0) {
+            navbar.style.background = "black";
+          } else {
+            navbar.style.background =
+              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+          }
+        }
+      }
+    };
+
+    /*window.onload = function() {
+      var posicionYscroll = window.pageYOffset;
+      var largoDisponibleAvailHeight = screen.availHeight;
+      $(".prueba-text").html(
+        "Largo disponible de trabajo: " + largoDisponibleAvailHeight
+      );
+    };
 
     $(window).scroll(function() {
       if ($.browser.mobile) {
@@ -55,17 +107,17 @@ $(document).ready(function() {
           }
         }
       }
-    });
-
-    /*window.addEventListener("load", function() {
-      this.setTimeout(function() {
-        window.scrollTo(0, 1);
-      }, 0);
     });*/
+
+    window.addEventListener("load", function() {
+      this.setTimeout(function() {
+        window.scrollTo(0, 0);
+      }, 0);
+    });
 
     /*Organismos */
   } else if (
-    window.matchMedia("(min-width: 768px) and (max-width: 991px)").matches
+    window.matchMedia("(min-width: 768px) and (max-width: 2000px)").matches
   ) {
     /*Atoms*/
     const logo = document.querySelector(".logo");
@@ -144,7 +196,7 @@ $(document).ready(function() {
     </div>
     <div class="d-flex align-items-center justify-content-between section-home-footer">
       <div>
-        <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
+        <img class="concert-footer-img concert-img-white" src="./images/home/tv-2.svg" alt="">
       </div>
       <div>
         <p class="a-poster-text-white">
@@ -220,10 +272,15 @@ $(document).ready(function() {
      </div>
     </div>
     <div class="d-flex align-items-center justify-content-between section-home-footer">
-      <div>
-        <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
-      </div>
-    </div>`;
+    <div>
+      <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
+    </div>
+    <div>
+      <p class="a-poster-text-black">
+        Horario sujetos a cambios
+      </p>
+    </div>
+  </div>`;
     $(".o-cinema-section").html(cinemaResponsiveHome);
 
     var visionResponsiveHome = `
@@ -296,10 +353,15 @@ $(document).ready(function() {
                 </div>
             </div>
           </div>
-          <div class="section-home-footer">
-              <div>
-                <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
-              </div>
+          <div class="d-flex align-items-center justify-content-between section-home-footer">
+            <div>
+              <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
+            </div>
+            <div>
+              <p class="a-poster-text-black">
+                Horario sujetos a cambios
+              </p>
+            </div>
           </div>`;
 
     $(".o-vision-section").html(visionResponsiveHome);
@@ -373,7 +435,7 @@ $(document).ready(function() {
     </div>
     <div class="d-flex align-items-center justify-content-between section-home-footer">
       <div>
-        <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
+        <img class="concert-footer-img concert-img-white" src="./images/home/tv-2.svg" alt="">
       </div>
       <div>
         <p class="a-poster-text-white">
@@ -445,7 +507,7 @@ $(document).ready(function() {
           <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
         </div>
         <div>
-          <p class="a-poster-text-white">
+          <p class="a-poster-text-black">
             Horario sujetos a cambios
           </p>
         </div>

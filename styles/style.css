@@ -1212,10 +1212,9 @@ input[type="checkbox"]:checked + label::before {
 .circle-video {
   display: none;
   width: 65%;
-  height: 336px;
   margin: auto;
-  -webkit-clip-path: circle(50% at 80% 37%);
-          clip-path: circle(50% at 80% 37%);
+  -webkit-clip-path: circle(50% at 80% 21%);
+          clip-path: circle(50% at 80% 21%);
   position: absolute;
   right: 0%;
   top: 0%;
@@ -1534,7 +1533,7 @@ input[type="checkbox"]:checked + label::before {
   padding-bottom: 40px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 2000px) {
   /*Base*/
   /*Atoms*/
   .margin-ahora-tv {
@@ -1542,7 +1541,7 @@ input[type="checkbox"]:checked + label::before {
   }
   .circle-video {
     display: block;
-    width: 52%;
+    width: 70%;
   }
   .header-h1 {
     color: #000000;
@@ -1640,9 +1639,11 @@ input[type="checkbox"]:checked + label::before {
     text-align: left;
   }
   .concert-footer-img {
+    width: 72px;
+  }
+  .concert-img-white {
     -webkit-filter: invert(1);
             filter: invert(1);
-    width: 72px;
   }
   .a-concert-subtitle {
     color: #ffffff;
@@ -1742,7 +1743,7 @@ input[type="checkbox"]:checked + label::before {
     margin-bottom: 0px;
   }
   .slick-dots {
-    bottom: -50px !important;
+    bottom: -55px !important;
   }
   .slick-dots li button:before {
     font-size: 9px !important;
@@ -1805,6 +1806,20 @@ input[type="checkbox"]:checked + label::before {
     background-image: url(../images/home/claro-sports-background.png);
     background-repeat: no-repeat;
     background-origin: content-box;
+  }
+  .margin-bottom-slider {
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 2000px) {
+  .header-detail-margin {
+    margin-top: 60px;
+    margin-bottom: 66px;
+  }
+  .circle-video {
+    display: block;
+    width: 55%;
   }
 }
 /*# sourceMappingURL=style.css.map */
