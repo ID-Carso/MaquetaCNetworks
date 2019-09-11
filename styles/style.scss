@@ -8,6 +8,7 @@
 @import "./components/atoms/inputs";
 @import "./components/atoms/video";
 @import "./components/atoms/list-item";
+@import "./components/atoms/links";
 @import "./components/molecules/posters";
 @import "./components/molecules/see-more";
 @import "./components/molecules/nav";
@@ -52,8 +53,6 @@
   }
 
   .header-detail-margin {
-    margin-top: 60px;
-    margin-bottom: 40px;
   }
 
   .title-tv {
@@ -155,8 +154,9 @@
     color: $colorWhite;
     padding-bottom: 0;
     margin-bottom: 0;
-    font-size: 13px;
+    font-size: 16px;
     font-family: $montserratSemiBold;
+    text-transform: uppercase;
   }
 
   .a-claro-cinema-title,
@@ -288,14 +288,16 @@
   }
 
   .header-details {
+    margin-top: 60px;
+    margin-bottom: 40px;
     display: inherit;
     text-align: left;
   }
 
-  .o-home-section {
+  .o-tv-section {
     padding-left: 30px;
     padding-right: 30px;
-    max-width: 100%;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -340,14 +342,99 @@
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 2000px) {
-  .header-detail-margin {
-    margin-top: 60px;
-    margin-bottom: 66px;
+@media only screen and (min-width: 1024px) and (max-width: 2000px) {
+  .header-details {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    display: inherit;
+    text-align: left;
+  }
+
+  .menu-responsive {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 0;
   }
 
   .circle-video {
     display: block;
     width: 55%;
+  }
+
+  .poster-image {
+    height: 355px;
+  }
+
+  .poster-image-small {
+    height: 135px;
+  }
+
+  .a-cinema-rectangle,
+  .a-sports-rectangle,
+  .a-concert-rectangle,
+  .a-claro-rectangle,
+  .a-vision-rectangle {
+    height: 45px;
+  }
+
+  .slick-list {
+    height: 400px;
+  }
+
+  .small-poster .slick-list {
+    height: 180px;
+  }
+
+  .slick-dots {
+    bottom: -73px !important;
+  }
+
+  .margin-bottom-slider {
+    margin-bottom: 90px;
+  }
+
+  .o-concert-section,
+  .o-cinema-section,
+  .o-vision-section,
+  .o-claro-section,
+  .o-sports-section,
+  .o-advertising-section {
+    max-width: 100%;
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+
+  .a-concert-subtitle {
+    font-size: 25px;
+  }
+
+  .a-claro-cinema-title,
+  .a-our-vision-title,
+  .a-claro-channel-title,
+  .a-claro-sports-title,
+  .a-concert-channel-title {
+    font-size: 46px;
+  }
+
+  .header-h1 {
+    font-size: 72px;
+  }
+
+  .advertising-title {
+    font-size: 68px;
+  }
+
+  .advertising-subtitle {
+    font-size: 25px;
+  }
+
+  .advertising-text {
+    font-size: 14px;
+  }
+
+  .poster-title-sport {
+    font-size: 40px;
   }
 }

@@ -15,10 +15,8 @@
   @include section();
 }
 
-.o-home-section {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+.o-tv-section {
+  @include section();
 }
 
 .o-cinema-section {
