@@ -181,8 +181,13 @@
 }
 
 .active-sidebar-item::before {
-  content: "• ";
-  color: #ffa700; /* or whatever color you prefer */
+  content: "";
+  background: #ffa700;
+  width: 12px;
+  display: inline-block;
+  height: 12px;
+  margin-right: 10px;
+  border-radius: 50%;
 }
 
 .text-footer-regular {

@@ -24,56 +24,67 @@ $(document).ready(function() {
       prevScrollpos = currentScrollPos;
     };*/
 
-    /*$(window).scroll(function() {
-      if ($(this).scrollTop() >= 0 && $(this).scrollTop() <= 150) {
-        navbar.style.background =
-          "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-        console.log("scrollTop -> " + $(this).scrollTop());
-      } else {
-        navbar.style.background = "black";
-        console.log("scrollTop -> " + $(this).scrollTop());
-      }
-    });*/
-    window.onload = function() {
-      if ($.browser.mobile == true) {
+    $(window).scroll(function() {
+      if ($.browser.mobile) {
         if ($.browser.safari) {
-          var posicionYscroll = window.pageYOffset;
-          var largoDisponibleAvailHeight = screen.availHeight;
-          var largoDos = document.body.offsetHeight;
-          alert(
-            "availHeight: " +
-              largoDisponibleAvailHeight +
-              "  ||  offsetHeight: " +
-              largoDos
-          );
+          if ($(window).scrollTop() >= 0 && $(window).scrollTop() <= 172) {
+            navbar.style.background =
+              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+          } else {
+            navbar.style.background = "black";
+          }
         } else {
-          var posicionYscroll = window.pageYOffset;
-          var largoDisponibleAvailHeight = screen.availHeight;
-          alert("Largo disponible de trabajo: " + largoDisponibleAvailHeight);
+          if ($(window).scrollTop() <= 0) {
+            navbar.style.background =
+              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+          } else {
+            navbar.style.background = "black";
+          }
         }
       }
-    };
+    });
 
-    window.onscroll = function() {
-      if ($.browser.mobile == true) {
+    $(window).scroll(function() {
+      if ($.browser.mobile) {
         if ($.browser.safari) {
-          var posicionYscroll = window.pageYOffset;
-          var largoDisponible = screen.availHeight;
-          var largoPantalla = screen.height;
-          var barraNavegacion = largoPantalla - largoDisponible;
-          console.log(barraNavegacion);
-          if (posicionYscroll >= 108) {
+          if ($(window).scrollTop() >= 244) {
             navbar.style.background = "black";
+          } else if ($(window).scrollTop() <= 0) {
+            this.setTimeout(function() {
+              window.scrollTo(0, 1);
+            }, 0);
+            navbar.style.background =
+              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
           } else {
             navbar.style.background =
               "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
           }
         } else {
-          if (posicionYscroll > 0) {
+          if ($(window).scrollTop() > 0) {
             navbar.style.background = "black";
           } else {
             navbar.style.background =
               "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+          }
+        }
+      }
+    });
+
+    window.onresize = function() {
+      var posicionYscroll = window.scrollTop();
+      if ($.browser.mobile) {
+        if ($.browser.safari) {
+          if (posicionYscroll <= 244) {
+            navbar.style.background =
+              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+          } else if ($(window).scrollTop() <= 0) {
+            this.setTimeout(function() {
+              window.scrollTo(0, 1);
+            }, 0);
+            navbar.style.background =
+              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+          } else {
+            navbar.style.background = "black";
           }
         }
       }
@@ -147,8 +158,8 @@ $(document).ready(function() {
     </div>
     <div class="row no-gutters">
       <div class="col-md-4">
-        <p class="a-concert-subtitle font-weight-bold">Conciertos</p>
-        <p class="a-concert-subtitle">Entrevistas y mucho más</p>
+        <p class="a-concert-subtitle concert-first-subtitle">Conciertos</p>
+        <p class="a-concert-subtitle concert-second-subtitle">Entrevistas y mucho más</p>
       </div>
       <div class="col-md-8">
         <div class="row poster-pad-b">
@@ -196,7 +207,7 @@ $(document).ready(function() {
     </div>
     <div class="d-flex align-items-center justify-content-between section-home-footer">
       <div>
-        <img class="concert-footer-img concert-img-white" src="./images/home/tv-2.svg" alt="">
+        <img class="concert-footer-img" src="./images/home/concert-home-img.svg" alt="">
       </div>
       <div>
         <p class="horario-text text-white">
@@ -249,7 +260,7 @@ $(document).ready(function() {
       </div>
       <div class="row poster-pad-t">
         <div class="col poster-pad-r">
-            <div class="height-second-poster h-100">
+            <div class="height-second-poster">
               <div class="poster-image-small poster-grey"></div>
               <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
@@ -259,7 +270,7 @@ $(document).ready(function() {
             </div>
           </div>
           <div class="col poster-pad-l">
-              <div class="height-second-poster h-100">
+              <div class="height-second-poster">
                 <div class="poster-image-small poster-grey"></div>
                 <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
@@ -273,7 +284,7 @@ $(document).ready(function() {
     </div>
     <div class="d-flex align-items-center justify-content-between section-home-footer">
     <div>
-      <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
+      <img class="concert-footer-img" src="./images/home/cinema-home-img.svg" alt="">
     </div>
     <div>
       <p class="horario-text text-dark">
@@ -355,7 +366,7 @@ $(document).ready(function() {
           </div>
           <div class="d-flex align-items-center justify-content-between section-home-footer">
             <div>
-              <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
+              <img class="concert-footer-img" src="./images/home/vision-home-img.svg" alt="">
             </div>
             <div>
               <p class="horario-text text-dark">
@@ -435,7 +446,7 @@ $(document).ready(function() {
     </div>
     <div class="d-flex align-items-center justify-content-between section-home-footer">
       <div>
-        <img class="concert-footer-img concert-img-white" src="./images/home/tv-2.svg" alt="">
+        <img class="concert-footer-img" src="./images/home/claro-home-img.svg" alt="">
       </div>
       <div>
         <p class="horario-text text-white">
@@ -504,7 +515,7 @@ $(document).ready(function() {
     </div>
       <div class="d-flex align-items-center justify-content-between section-home-footer">
         <div>
-          <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
+          <img class="concert-footer-img" src="./images/home/sports-home-img.svg" alt="">
         </div>
         <div>
           <p class="horario-text text-dark">
@@ -622,7 +633,8 @@ $(document).ready(function() {
     });
     body.css({
       position: "initial",
-      overflow: "auto",
+      overflowX: "hidden",
+      overflowY: "auto",
       "-webkit-overflow-scrolling": "auto",
       height: "auto",
       width: "auto"

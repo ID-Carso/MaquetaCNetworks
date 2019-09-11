@@ -1,4 +1,9 @@
 @charset "UTF-8";
+body {
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
 .bx-wrapper {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
@@ -421,9 +426,13 @@ h6 {
 }
 
 .active-sidebar-item::before {
-  content: "• ";
-  color: #ffa700;
-  /* or whatever color you prefer */
+  content: "";
+  background: #ffa700;
+  width: 12px;
+  display: inline-block;
+  height: 12px;
+  margin-right: 10px;
+  border-radius: 50%;
 }
 
 .text-footer-regular {
@@ -1333,6 +1342,7 @@ a:active {
 }
 
 .claro-navbar {
+  display: none;
   margin-top: 25px;
   background: white;
   z-index: 3;
@@ -1396,6 +1406,11 @@ a:active {
   height: 10%;
   width: 80%;
   margin: auto;
+  padding: 30px 0px;
+}
+
+.sidebar-content {
+  -webkit-overflow-scrolling: touch;
 }
 
 .dropdown-content {
@@ -1674,6 +1689,12 @@ a:active {
     font-family: "Montserrat-SemiBold";
     text-transform: uppercase;
   }
+  .concert-first-subtitle {
+    font-size: 16px;
+  }
+  .concert-second-subtitle {
+    font-size: 16px;
+  }
   .a-claro-cinema-title,
   .a-our-vision-title,
   .a-claro-channel-title,
@@ -1912,6 +1933,17 @@ a:active {
   }
   .poster-title-sport {
     font-size: 40px;
+  }
+  .claro-navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .concert-first-subtitle {
+    font-size: 25px;
+  }
+  .concert-second-subtitle {
+    font-size: 19px;
   }
 }
 /*# sourceMappingURL=style.css.map */

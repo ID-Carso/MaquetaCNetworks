@@ -159,6 +159,14 @@
     text-transform: uppercase;
   }
 
+  .concert-first-subtitle {
+    font-size: 16px;
+  }
+
+  .concert-second-subtitle {
+    font-size: 16px;
+  }
+
   .a-claro-cinema-title,
   .a-our-vision-title,
   .a-claro-channel-title,
@@ -436,5 +444,17 @@
 
   .poster-title-sport {
     font-size: 40px;
+  }
+
+  .claro-navbar {
+    display: flex;
+  }
+
+  .concert-first-subtitle {
+    font-size: 25px;
+  }
+
+  .concert-second-subtitle {
+    font-size: 19px;
   }
 }
