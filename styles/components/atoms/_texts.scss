@@ -294,7 +294,7 @@
   justify-content: center;
   flex-direction: column;
 }
-.hola{
+.hola {
   font-family: $montserratBlack;
   font-size: 25px;
   font-weight: 900;
@@ -306,7 +306,7 @@
   text-align: center;
   color: $subtitleTV;
 }
-.usuario{
+.usuario {
   font-family: $montserratBlack;
   font-size: 25px;
   font-weight: 900;
@@ -317,9 +317,8 @@
   letter-spacing: normal;
   text-align: center;
   color: $pureBlack;
-
 }
-.mensaje{
+.mensaje {
   font-family: $montserratRegular;
   font-size: 17px;
   font-weight: normal;
@@ -331,7 +330,7 @@
   color: $textgray;
 }
 
-.aviso-priv{
+.aviso-priv {
   font-family: $montserratRegular;
   font-size: 14px;
   font-weight: normal;
@@ -341,7 +340,6 @@
   letter-spacing: normal;
   text-align: center;
   color: $txtaviso;
-
 }
 .aviso-priv-blue{
   font-family: $montserratRegular;
@@ -370,4 +368,17 @@
   text-align: left;
   margin-left: 7%;
   margin-top: 3%;
+}
+.horario-text {
+  font-size: 14px;
+  font-family: $montserratSemiBold;
+  text-transform: uppercase;
+}
+
+.navbar-item {
+  margin-bottom: 0;
+  font-family: $montserratSemiBold;
+  font-size: 14px;
+  text-decoration: none;
+  margin-right: 20px;
 }

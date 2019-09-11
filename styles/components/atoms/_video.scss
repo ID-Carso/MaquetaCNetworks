@@ -10,16 +10,15 @@
     min-height: 100%;*/
   right: 0;
   top: 0;
-  width: 720px;
+  width: 100%;
   overflow: hidden;
 }
 
 .circle-video {
   display: none;
   width: 65%;
-  height: 336px;
   margin: auto;
-  clip-path: circle(50% at 80% 37%);
+  clip-path: circle(50% at 80% 21%);
   position: absolute;
   right: 0%;
   top: 0%;

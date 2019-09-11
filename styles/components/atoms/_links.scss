@@ -1,3 +1,10 @@
+@import "../base/colors";
+@import "../base/config";
+
 a:active {
   background-color: yellow;
+}
+
+.navbar-link {
+  color: $navbarItemColor;
 }

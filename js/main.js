@@ -34,6 +34,58 @@ $(document).ready(function() {
         console.log("scrollTop -> " + $(this).scrollTop());
       }
     });*/
+    window.onload = function() {
+      if ($.browser.mobile == true) {
+        if ($.browser.safari) {
+          var posicionYscroll = window.pageYOffset;
+          var largoDisponibleAvailHeight = screen.availHeight;
+          var largoDos = document.body.offsetHeight;
+          alert(
+            "availHeight: " +
+              largoDisponibleAvailHeight +
+              "  ||  offsetHeight: " +
+              largoDos
+          );
+        } else {
+          var posicionYscroll = window.pageYOffset;
+          var largoDisponibleAvailHeight = screen.availHeight;
+          alert("Largo disponible de trabajo: " + largoDisponibleAvailHeight);
+        }
+      }
+    };
+
+    window.onscroll = function() {
+      if ($.browser.mobile == true) {
+        if ($.browser.safari) {
+          var posicionYscroll = window.pageYOffset;
+          var largoDisponible = screen.availHeight;
+          var largoPantalla = screen.height;
+          var barraNavegacion = largoPantalla - largoDisponible;
+          console.log(barraNavegacion);
+          if (posicionYscroll >= 108) {
+            navbar.style.background = "black";
+          } else {
+            navbar.style.background =
+              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+          }
+        } else {
+          if (posicionYscroll > 0) {
+            navbar.style.background = "black";
+          } else {
+            navbar.style.background =
+              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+          }
+        }
+      }
+    };
+
+    /*window.onload = function() {
+      var posicionYscroll = window.pageYOffset;
+      var largoDisponibleAvailHeight = screen.availHeight;
+      $(".prueba-text").html(
+        "Largo disponible de trabajo: " + largoDisponibleAvailHeight
+      );
+    };
 
     $(window).scroll(function() {
       if ($.browser.mobile) {
@@ -55,17 +107,17 @@ $(document).ready(function() {
           }
         }
       }
-    });
-
-    /*window.addEventListener("load", function() {
-      this.setTimeout(function() {
-        window.scrollTo(0, 1);
-      }, 0);
     });*/
+
+    window.addEventListener("load", function() {
+      this.setTimeout(function() {
+        window.scrollTo(0, 0);
+      }, 0);
+    });
 
     /*Organismos */
   } else if (
-    window.matchMedia("(min-width: 768px) and (max-width: 991px)").matches
+    window.matchMedia("(min-width: 768px) and (max-width: 2000px)").matches
   ) {
     /*Atoms*/
     const logo = document.querySelector(".logo");
@@ -95,7 +147,7 @@ $(document).ready(function() {
     </div>
     <div class="row no-gutters">
       <div class="col-md-4">
-        <p class="a-concert-subtitle">Conciertos</p>
+        <p class="a-concert-subtitle font-weight-bold">Conciertos</p>
         <p class="a-concert-subtitle">Entrevistas y mucho más</p>
       </div>
       <div class="col-md-8">
@@ -144,10 +196,10 @@ $(document).ready(function() {
     </div>
     <div class="d-flex align-items-center justify-content-between section-home-footer">
       <div>
-        <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
+        <img class="concert-footer-img concert-img-white" src="./images/home/tv-2.svg" alt="">
       </div>
       <div>
-        <p class="a-poster-text-white">
+        <p class="horario-text text-white">
           Horario sujetos a cambios
         </p>
       </div>
@@ -220,10 +272,15 @@ $(document).ready(function() {
      </div>
     </div>
     <div class="d-flex align-items-center justify-content-between section-home-footer">
-      <div>
-        <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
-      </div>
-    </div>`;
+    <div>
+      <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
+    </div>
+    <div>
+      <p class="horario-text text-dark">
+        Horario sujetos a cambios
+      </p>
+    </div>
+  </div>`;
     $(".o-cinema-section").html(cinemaResponsiveHome);
 
     var visionResponsiveHome = `
@@ -244,8 +301,8 @@ $(document).ready(function() {
       <div class="slick-slider">
 
         <div class="row no-gutters">
-            <div class="col columnGap h-100">
-                <div class="height-second-poster h-100">
+            <div class="col columnGap">
+                <div class="height-second-poster">
                     <div class="poster-image pink-color">
                     </div>
                   <div class="a-vision-rectangle">
@@ -257,8 +314,8 @@ $(document).ready(function() {
               </div>
           </div>
         <div class="row no-gutters">
-          <div class="col columnGap h-100">
-              <div class="height-second-poster h-100">
+          <div class="col columnGap">
+              <div class="height-second-poster">
                 <div class="poster-image pink-color"></div>
                 <div class="image"></div>
                 <div class="a-vision-rectangle">
@@ -296,10 +353,15 @@ $(document).ready(function() {
                 </div>
             </div>
           </div>
-          <div class="section-home-footer">
-              <div>
-                <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
-              </div>
+          <div class="d-flex align-items-center justify-content-between section-home-footer">
+            <div>
+              <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
+            </div>
+            <div>
+              <p class="horario-text text-dark">
+                Horario sujetos a cambios
+              </p>
+            </div>
           </div>`;
 
     $(".o-vision-section").html(visionResponsiveHome);
@@ -373,10 +435,10 @@ $(document).ready(function() {
     </div>
     <div class="d-flex align-items-center justify-content-between section-home-footer">
       <div>
-        <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
+        <img class="concert-footer-img concert-img-white" src="./images/home/tv-2.svg" alt="">
       </div>
       <div>
-        <p class="a-poster-text-white">
+        <p class="horario-text text-white">
           Horario sujetos a cambios
         </p>
       </div>
@@ -445,7 +507,7 @@ $(document).ready(function() {
           <img class="concert-footer-img" src="./images/home/tv-2.svg" alt="">
         </div>
         <div>
-          <p class="a-poster-text-white">
+          <p class="horario-text text-dark">
             Horario sujetos a cambios
           </p>
         </div>
@@ -454,22 +516,24 @@ $(document).ready(function() {
 
     var advertisingSection = `
     
-    <div class="row">
-      <div class="col-5 m-auto">
-        <div class="adv-headline-mb">
-          <h1 class="advertising-title">Disfruta</h1>
-          <h2 class="advertising-subtitle">La mejor programación</h2>
+    <div class="col-lg-10 m-auto">
+      <div class="row">
+        <div class="col-5 m-auto">
+          <div class="adv-headline-mb">
+            <h1 class="advertising-title">Disfruta</h1>
+            <h2 class="advertising-subtitle">La mejor programación</h2>
+          </div>
+          <div>
+            <p class="advertising-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tellus
+              tellus, rutrum sit amet purus in, interdum auctor nunc. Nulla
+              facilisis mauris vel elit finibus, sit amet ornare massa suscipit.
+            </p>
+          </div> 
         </div>
-        <div>
-          <p class="advertising-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tellus
-            tellus, rutrum sit amet purus in, interdum auctor nunc. Nulla
-            facilisis mauris vel elit finibus, sit amet ornare massa suscipit.
-          </p>
-        </div> 
-      </div>
-      <div class="col-7 no-gutters">
-        <img src="./images/home/planes-copy.png" class="advertising-image"/>
+        <div class="col-7 no-gutters">
+          <img src="./images/home/planes-copy.png" class="advertising-image"/>
+        </div>
       </div>
     </div>
     `;
