@@ -167,6 +167,10 @@ h6 {
   margin-left: 11px;
 }
 
+.espacio-bottom {
+  margin-bottom: 0px;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 @font-face {
@@ -597,7 +601,20 @@ h6 {
   color: #6f6e6e;
 }
 
-.aviso-priv-bold {
+.aviso-priv-blue {
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  font-weight: 700;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1375ce;
+}
+
+.caracteres-min {
   font-family: "Montserrat-SemiBold";
   font-size: 14px;
   font-weight: 700;
@@ -607,7 +624,10 @@ h6 {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #6f6e6e;
+  color: #666262;
+  text-align: left;
+  margin-left: 7%;
+  margin-top: 3%;
 }
 
 /*Tamaño de textos - responsive*/
