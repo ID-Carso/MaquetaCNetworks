@@ -1065,6 +1065,10 @@ h6 {
   margin-bottom: 44px;
 }
 
+.listo {
+  display: none;
+}
+
 .hr1 {
   display: none;
 }
@@ -1260,10 +1264,6 @@ input[type="checkbox"]:checked + label::before {
 /*Tipografías*/
 a:active {
   background-color: yellow;
-}
-
-.navbar-link {
-  color: #525050;
 }
 
 .large-poster-width {

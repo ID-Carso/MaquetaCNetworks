@@ -1,4 +1,40 @@
 $(document).ready(function() {
+  $(".ubicacion4").click(function(){
+    var tipo = document.getElementById("password");
+    if(tipo.type == "password"){
+        tipo.type = "text";
+    }else{
+        tipo.type = "password";
+    }
+
+  }); 
+  
+    
+  $(".singup-button").click(function(){
+    var usuario, correo, password, expresion ;
+
+    usuario = document.getElementById("usuario").value;
+    correo = document.getElementById("correo").value;
+    password = document.getElementById("password").value;
+    expresion = /\w+@\w+\.+[a-z]/;
+
+    if(usuario === "" || correo === "" || password === "" ){
+      alert ("todos los campos estan vacios");
+      return false;
+    }
+    else if(!expresion.test(correo)){
+      alert ("el correo no es valido");
+      return false;
+    }
+    else if(password.length<8) {
+      alert ("minimo 8 caracteres en contraseña");
+    return false;
+    }
+    
+  });
+
+  
+
   const homeVideo = document.querySelector(".home-video");
   homeVideo.play();
   if (window.matchMedia("(max-width: 767px)").matches) {
@@ -34,6 +70,7 @@ $(document).ready(function() {
         console.log("scrollTop -> " + $(this).scrollTop());
       }
     });*/
+
     window.onload = function() {
       if ($.browser.mobile == true) {
         if ($.browser.safari) {

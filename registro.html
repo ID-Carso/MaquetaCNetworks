@@ -15,16 +15,7 @@
 </head>
 
 <body class="fondo">
-                <script>
-                                function mostrarContrasena(){
-                                    var tipo = document.getElementById("password");
-                                    if(tipo.type == "password"){
-                                        tipo.type = "text";
-                                    }else{
-                                        tipo.type = "password";
-                                    }
-                                }
-                              </script>
+               
 <div class="login-form">
     <div class="col-sm-12 no-gutters col-md-8 offset-md-2 no-gutters col-lg-4 offset-lg-4 shadow1 fondolog">
         <img src="images/registro/group-10.svg"class="ubicacion6"> 
@@ -47,10 +38,11 @@
                 </div>     
         </div>
         <br>
+<form  method="POST">
         <div class="row ma-no centro">
             <div class="col-sm-12 no-gap">
                     <div class="tamaño2 centro">
-                    <input class="insert-data"  type="text" placeholder="Nombre de usuario">
+                    <input class="insert-data"  type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" >
                     </div>
             </div>
         </div>
@@ -58,7 +50,7 @@
         <div class="row ma-no centro">
                 <div class="col-sm-12 no-gap">
                         <div class="tamaño2 centro">
-                        <input class="insert-data"  type="text" placeholder="Correo electronico">
+                        <input class="insert-data"  type="email" id="correo" name="correo" placeholder="Correo electronico" >
                         </div>
                 </div>
         </div>
@@ -66,10 +58,10 @@
         <div class="row ma-no centro">
                 <div class=" col-sm-12 no-gap">
                         <div class="tamaño2 centro">
-                        <input class="insert-data" " type="password" id="password" placeholder="Contraseña" >
-                        <img src="images/registro/eye.svg" onclick="mostrarContrasena()" class="ubicacion4" />
+                        <input class="insert-data" " type="password" id="password" name="password" placeholder="Contraseña"  >
+                        <img src="images/registro/eye.svg"  class="ubicacion4" />
                         
-                                <p class="caracteres-min">8 caractéres mínimo <img src="images/registro/listo.svg"> </p>
+                                <p class="caracteres-min">8 caractéres mínimo <img src="images/registro/listo.svg" class="listo" > </p>
                         
                         </div>
                 </div>
@@ -89,16 +81,16 @@
                         <button type="button" class="singup-button" data-toggle="modal" data-target="#mensaje">SIGUIENTE</button>     
                 </div>
         </div>
-        
+</form>
         <br>
         <!-- Modal -->
                 <div class="modal fade " id="mensaje" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content modal-estilo">
                                                 <div class="modal-header" style="border-bottom: none !important; justify-content: center; ">
-                                                        <span class="hola">HOLA, </span>
+                                                        <p class="hola">HOLA, <span class="usuario">EDUARDO</span> </p>
                                         
-                                                        <span class="usuario">EDUARDO</span>
+                                                        
                                                                
                                                         </div>
                                                         
@@ -115,14 +107,13 @@
                                         <span class="mensaje">comenzamos! </span>
                                 </div>
                                 <div class="modal-footer" style="border-top:none !important; justify-content: center;">
-                                                <button type="button" class="login-button" data-dismiss="modal">Entendido</button>
+                                                <button type="button" class="login-button" data-dismiss="modal">ENTENDIDO</button>
                                                 
                                               </div>
                    
                                  </div>
                         </div>
                 </div>
-                
              
     
     </div>
