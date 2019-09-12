@@ -181,8 +181,13 @@
 }
 
 .active-sidebar-item::before {
-  content: "• ";
-  color: #ffa700; /* or whatever color you prefer */
+  content: "";
+  background: #ffa700;
+  width: 12px;
+  display: inline-block;
+  height: 12px;
+  margin-right: 10px;
+  border-radius: 50%;
 }
 
 .text-footer-regular {
@@ -341,7 +346,7 @@
   text-align: center;
   color: $txtaviso;
 }
-.aviso-priv-blue{
+.aviso-priv-blue {
   font-family: $montserratRegular;
   font-size: 14px;
   font-weight: 700;
@@ -354,7 +359,7 @@
   color: $txtblue;
 }
 
-.caracteres-min{
+.caracteres-min {
   font-family: $montserratSemiBold;
   font-size: 14px;
   font-weight: 700;
@@ -381,4 +386,5 @@
   font-size: 14px;
   text-decoration: none;
   margin-right: 20px;
+  color: $navbarItemColor;
 }

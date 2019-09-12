@@ -44,6 +44,11 @@
   height: 10%;
   width: 80%;
   margin: auto;
+  padding: 30px 0px;
+}
+
+.sidebar-content {
+  -webkit-overflow-scrolling: touch;
 }
 
 .dropdown-content {
