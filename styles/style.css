@@ -1798,6 +1798,18 @@ a:active {
     width: 65px;
     height: 60px;
   }
+  .login {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    z-index: 1;
+    background: rgba(97, 109, 113, 0.7);
+    padding: 8px;
+    border-radius: 30px;
+  }
+  .navbar-item {
+    font-size: 16px;
+  }
   /*Molecules*/
   .nav-content {
     margin: 0px;
@@ -1812,7 +1824,7 @@ a:active {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 0;
-    max-width: 100%;
+    max-width: 900px;
     margin: 0 auto 37px auto;
     width: 100%;
     -webkit-box-align: center;
@@ -2008,6 +2020,18 @@ a:active {
     width: 60px;
     height: 72px;
   }
+  .login {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    z-index: 1;
+    background: rgba(97, 109, 113, 0.7);
+    padding: 8px;
+    border-radius: 30px;
+  }
+  .navbar-item {
+    font-size: 16px;
+  }
   /***  MOLECULES  ***/
   .nav-content {
     margin: 0px;
@@ -2022,7 +2046,7 @@ a:active {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 0;
-    max-width: 100%;
+    max-width: 900px;
     margin: 0 auto 37px auto;
     width: 100%;
     -webkit-box-align: center;
@@ -2107,8 +2131,8 @@ a:active {
   .circle-video {
     display: block;
     width: 65%;
-    -webkit-clip-path: circle(50% at 70% 21%);
-            clip-path: circle(50% at 70% 21%);
+    -webkit-clip-path: circle(50% at 70% 17%);
+            clip-path: circle(50% at 70% 17%);
   }
   .poster-image {
     height: 355px;
