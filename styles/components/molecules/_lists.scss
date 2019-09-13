@@ -33,9 +33,12 @@
 
 .login {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -5px;
+  top: -5px;
   z-index: 1;
+  background: rgba(97, 109, 113, 0.7);
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .sidebar-item {

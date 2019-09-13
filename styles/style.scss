@@ -304,20 +304,13 @@
     text-align: left;
   }
 
-  .o-tv-section {
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .o-concert-section,
   .o-cinema-section,
   .o-vision-section,
   .o-claro-section,
   .o-sports-section,
-  .o-advertising-section {
+  .o-advertising-section,
+  .o-tv-section {
     max-width: 100%;
     padding-left: 30px;
     padding-right: 30px;
@@ -541,14 +534,6 @@
     height: auto;
   }
 
-  .o-tv-section {
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .o-concert-section {
     background-color: $backgroundConcertChannel;
   }
@@ -580,7 +565,8 @@
   .o-claro-section,
   .o-sports-section,
   .o-advertising-section,
-  .o-footer-section {
+  .o-footer-section,
+  .o-tv-section {
     max-width: 100%;
     padding-left: 57px;
     padding-right: 57px;
@@ -600,11 +586,13 @@
 
   .logo {
     margin-left: 0;
+    width: 85px;
   }
 
   .circle-video {
     display: block;
-    width: 55%;
+    width: 65%;
+    clip-path: circle(50% at 70% 21%);
   }
 
   .poster-image {
@@ -685,6 +673,7 @@
   .claro-navbar {
     display: flex;
     background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
   }
 
   .concert-first-subtitle {

@@ -3,6 +3,15 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+.nuevo_body {
+  height: 100%;
+  overflow: auto;
+}
+.nuevo-html {
+  height: 100%;
+  overflow: hidden;
+}
+
 .bx-wrapper {
   -moz-box-shadow: none !important;
   -webkit-box-shadow: none !important;

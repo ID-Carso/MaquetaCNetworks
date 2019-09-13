@@ -1,39 +1,32 @@
 $(document).ready(function() {
-  $(".ubicacion4").click(function(){
+  $(".ubicacion4").click(function() {
     var tipo = document.getElementById("password");
-    if(tipo.type == "password"){
-        tipo.type = "text";
-    }else{
-        tipo.type = "password";
+    if (tipo.type == "password") {
+      tipo.type = "text";
+    } else {
+      tipo.type = "password";
     }
+  });
 
-  }); 
-  
-    
-  $(".singup-button").click(function(){
-    var usuario, correo, password, expresion ;
+  $(".singup-button").click(function() {
+    var usuario, correo, password, expresion;
 
     usuario = document.getElementById("usuario").value;
     correo = document.getElementById("correo").value;
     password = document.getElementById("password").value;
     expresion = /\w+@\w+\.+[a-z]/;
 
-    if(usuario === "" || correo === "" || password === "" ){
-      alert ("todos los campos estan vacios");
+    if (usuario === "" || correo === "" || password === "") {
+      alert("todos los campos estan vacios");
+      return false;
+    } else if (!expresion.test(correo)) {
+      alert("el correo no es valido");
+      return false;
+    } else if (password.length < 8) {
+      alert("minimo 8 caracteres en contraseña");
       return false;
     }
-    else if(!expresion.test(correo)){
-      alert ("el correo no es valido");
-      return false;
-    }
-    else if(password.length<8) {
-      alert ("minimo 8 caracteres en contraseña");
-    return false;
-    }
-    
   });
-
-  
 
   const homeVideo = document.querySelector(".home-video");
   homeVideo.play();
@@ -81,26 +74,32 @@ $(document).ready(function() {
     });*/
 
     window.addEventListener("load", function() {
-      this.setTimeout(function() {
-        window.scrollTo(0, 1);
-      }, 0);
+      window.scrollTo(0, 1);
     });
 
-    $(window).scroll(function() {
-      console.log($(window).scrollTop());
+    window.onscroll = function() {
+      var posicionScroll =
+        document.documentElement.scrollTop || document.body.scrollTop;
+      console.log("Scroll: " + posicionScroll);
       if ($.browser.mobile) {
         if ($.browser.safari) {
-          if ($(window).scrollTop() >= 125) {
+          $("html").addClass("nuevo_html");
+          $("body").addClass("nuevo_body");
+          if (posicionScroll < 0) {
+            posicionScroll =
+              document.documentElement.scrollTop || document.body.scrollTop;
+            navbar.style.background =
+              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+          } else if (posicionScroll >= 0 && posicionScroll <= 2) {
+            posicionScroll =
+              document.documentElement.scrollTop || document.body.scrollTop;
+            navbar.style.background =
+              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+          } else {
             navbar.style.background = "black";
-          } else if ($(window).scrollTop() <= 1) {
-            this.setTimeout(function() {
-              navbar.style.background =
-                "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-              window.scrollTo(0, 1);
-            }, 100);
           }
         } else {
-          if ($(window).scrollTop() > 1) {
+          if (posicionScroll > 1) {
             navbar.style.background = "black";
           } else {
             navbar.style.background =
@@ -108,21 +107,21 @@ $(document).ready(function() {
           }
         }
       }
-    });
+    };
 
     window.onresize = function() {
-      var posicionYscroll = window.scrollTop();
+      var posicionScroll =
+        document.documentElement.scrollTo || document.body.scrollTop;
       if ($.browser.mobile) {
         if ($.browser.safari) {
-          if (posicionYscroll <= 125) {
+          if (posicionScroll < 0) {
+            posicionScroll =
+              document.documentElement.scrollTo || document.body.scrollTop;
             navbar.style.background =
               "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-          } else if ($(window).scrollTop() <= 0) {
-            this.setTimeout(function() {
-              navbar.style.background =
-                "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-              window.scrollTo(0, 1);
-            }, 100);
+          } else if (posicionScroll >= 0 && posicionScroll <= 110) {
+            navbar.style.background =
+              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
           } else {
             navbar.style.background = "black";
           }
@@ -159,12 +158,6 @@ $(document).ready(function() {
         }
       }
     });*/
-
-    window.addEventListener("load", function() {
-      this.setTimeout(function() {
-        window.scrollTo(0, 0);
-      }, 0);
-    });
 
     /*Organismos */
   } else if (
@@ -1048,6 +1041,24 @@ $(document).ready(function() {
     dots: true,
     centerMode: false,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          centerMode: true,
+          infinite: false,
+          arrows: false,
+          dots: true
+        }
+      }
+    ]
+  });
+
+  var tv_slider = $(".tv-slider").slick({
     /*slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
@@ -1068,6 +1079,39 @@ $(document).ready(function() {
           infinite: false,
           arrows: false,
           dots: true
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: true,
+          centerMode: false,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: true,
+          centerMode: false,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 2000,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: true,
+          centerMode: false,
+          arrows: false
         }
       }
     ]
