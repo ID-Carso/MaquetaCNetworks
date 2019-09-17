@@ -22,11 +22,12 @@
   
  
 }
+
 .insert-data:focus{
   color: $bluetxt;
   border-bottom: solid 2px $bluetxt;
   font-family: $montserratBold;
-
+ 
 }
 label {
   display: flex;
