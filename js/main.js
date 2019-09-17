@@ -28,136 +28,34 @@ $(document).ready(function() {
     }
   });
 
+  $(window).resize(function(event) {
+    console.log(window.innerWidth);
+    if (window.innerWidth >= 768 && window.innerWidth <= 991) {
+    }
+  });
+
   const homeVideo = document.querySelector(".home-video");
   homeVideo.play();
   if (window.matchMedia("(max-width: 767px)").matches) {
-    /*Base*/
-
-    /*Atoms*/
-
-    /*End Atoms */
-
-    /* Molecules */
-
-    /*var prevScrollpos = window.pageYOffset;
+    const header = document.querySelector(".header");
 
     window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-
-      if (currentScrollPos > 0) {
-        navbar.style.background = "black";
-      } else {
+      var posicionScroll = window.scrollY;
+      let coordenadasHeader = header.getBoundingClientRect();
+      if (posicionScroll < coordenadasHeader.top) {
         navbar.style.background =
           "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-      }
-      prevScrollpos = currentScrollPos;
-    };*/
-
-    /*$(window).scroll(function() {
-      if ($.browser.mobile) {
-        if ($.browser.safari) {
-          if ($(window).scrollTop() >= 0 && $(window).scrollTop() <= 172) {
-            navbar.style.background =
-              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-          } else {
-            navbar.style.background = "black";
-          }
-        } else {
-          if ($(window).scrollTop() <= 0) {
-            navbar.style.background =
-              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-          } else {
-            navbar.style.background = "black";
-          }
-        }
-      }
-    });*/
-
-    window.addEventListener("load", function() {
-      window.scrollTo(0, 1);
-    });
-
-    window.onscroll = function() {
-      var posicionScroll =
-        document.documentElement.scrollTop || document.body.scrollTop;
-      console.log("Scroll: " + posicionScroll);
-      if ($.browser.mobile) {
-        if ($.browser.safari) {
-          $("html").addClass("nuevo_html");
-          $("body").addClass("nuevo_body");
-          if (posicionScroll < 0) {
-            posicionScroll =
-              document.documentElement.scrollTop || document.body.scrollTop;
-            navbar.style.background =
-              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-          } else if (posicionScroll >= 0 && posicionScroll <= 2) {
-            posicionScroll =
-              document.documentElement.scrollTop || document.body.scrollTop;
-            navbar.style.background =
-              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-          } else {
-            navbar.style.background = "black";
-          }
-        } else {
-          if (posicionScroll > 1) {
-            navbar.style.background = "black";
-          } else {
-            navbar.style.background =
-              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-          }
-        }
+        //window.scrollTo(0, 0);
+      } else if (
+        posicionScroll >= coordenadasHeader.top &&
+        posicionScroll <= coordenadasHeader.bottom
+      ) {
+        navbar.style.background =
+          "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+      } else {
+        navbar.style.background = "black";
       }
     };
-
-    window.onresize = function() {
-      var posicionScroll =
-        document.documentElement.scrollTo || document.body.scrollTop;
-      if ($.browser.mobile) {
-        if ($.browser.safari) {
-          if (posicionScroll < 0) {
-            posicionScroll =
-              document.documentElement.scrollTo || document.body.scrollTop;
-            navbar.style.background =
-              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-          } else if (posicionScroll >= 0 && posicionScroll <= 110) {
-            navbar.style.background =
-              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-          } else {
-            navbar.style.background = "black";
-          }
-        }
-      }
-    };
-
-    /*window.onload = function() {
-      var posicionYscroll = window.pageYOffset;
-      var largoDisponibleAvailHeight = screen.availHeight;
-      $(".prueba-text").html(
-        "Largo disponible de trabajo: " + largoDisponibleAvailHeight
-      );
-    };
-
-    $(window).scroll(function() {
-      if ($.browser.mobile) {
-        if ($.browser.safari) {
-          if ($(window).scrollTop() >= 250 || $(document).scrollTop() >= 250) {
-            console.log($(this).scrollTop());
-            navbar.style.background = "black";
-          } else {
-            console.log("Degradado");
-            navbar.style.background =
-              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-          }
-        } else {
-          if ($(window).scrollTop() <= 1) {
-            navbar.style.background =
-              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-          } else {
-            navbar.style.background = "black";
-          }
-        }
-      }
-    });*/
 
     /*Organismos */
   } else if (
@@ -619,8 +517,8 @@ $(document).ready(function() {
           </div>
           <div class="col-md-8">
             <div class="row poster-pad-b">
-              <div class="col poster-pad-r">
-                  <div class="height-second-poster ">
+              <div class="col poster-pad-r poster-section">
+                  <div class="poster">
                     <div class="poster-image-small concert-poster-color">
                     </div>
                     <div class="a-concert-rectangle">
@@ -631,7 +529,7 @@ $(document).ready(function() {
                   </div>
                 </div>
                 <div class="col poster-pad-l">
-                    <div class="height-second-poster">
+                    <div class="poster">
                       <div class="poster-image-small concert-poster-color"></div>
                       <div class="a-concert-rectangle">
                           <div class="poster-title-margin">
@@ -643,7 +541,7 @@ $(document).ready(function() {
           </div>
           <div class="row poster-pad-t">
             <div class="col poster-pad-r">
-                <div class="height-second-poster h-100">
+                <div class="poster">
                   <div class="poster-image-small concert-poster-color"></div>
                   <div class="a-concert-rectangle ">
                     <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
@@ -651,7 +549,7 @@ $(document).ready(function() {
                 </div>
               </div>
               <div class="col poster-pad-l">
-                  <div class="height-second-poster h-100">
+                  <div class="poster">
                     <div class="poster-image-small concert-poster-color"></div>
                     <div class="a-concert-rectangle ">
                       <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>

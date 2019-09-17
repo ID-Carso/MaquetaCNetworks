@@ -127,7 +127,7 @@ h6 {
 }
 
 .nav-item-margin {
-  margin-right: 24px;
+  margin-right: 15px;
 }
 
 .margin-bottom-slider {
@@ -968,10 +968,9 @@ h6 {
           transform: translate(0%, -50%);
 }
 
-.login-item {
-  width: 25px;
-}
-
+/*.login-item {
+  width: $navItemWidth;
+}*/
 .poster-image-left {
   height: 100%;
 }
@@ -1290,6 +1289,10 @@ a:active {
   background-color: yellow;
 }
 
+.login-item:first-child {
+  margin-right: 10px;
+}
+
 .large-poster-width {
   width: 50%;
 }
@@ -1426,12 +1429,9 @@ a:active {
 
 .login {
   position: absolute;
-  right: -5px;
-  top: -5px;
+  right: 0;
+  top: 0;
   z-index: 1;
-  background: rgba(97, 109, 113, 0.7);
-  padding: 5px;
-  border-radius: 10px;
 }
 
 .sidebar-item {
@@ -2017,7 +2017,7 @@ a:active {
   }
   /*Footer*/
   .footer-img {
-    width: 60px;
+    width: 80px;
     height: 72px;
   }
   .login {
