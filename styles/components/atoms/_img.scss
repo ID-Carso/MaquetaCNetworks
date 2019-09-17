@@ -67,7 +67,6 @@
     box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 5px;
     margin-top: 15%;
-    
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
@@ -104,7 +103,6 @@
     box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 5px;
     margin-top: 4%;
-  
   }
 }
 
@@ -121,9 +119,9 @@
   transform: translate(0%, -50%);
 }
 
-.login-item {
+/*.login-item {
   width: $navItemWidth;
-}
+}*/
 
 .poster-image-left {
   height: $posterImageLeft;
@@ -231,6 +229,6 @@
   margin-top: 87px;
   margin-bottom: 44px;
 }
- .listo{
-   display: none; 
- }
+.listo {
+  display: none;
+}
