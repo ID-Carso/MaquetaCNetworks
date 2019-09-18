@@ -28,34 +28,64 @@ $(document).ready(function() {
     }
   });
 
+  const inputPassword = $("#password");
+  const caracteresMin = $(".caracteres-min");
+  inputPassword.keyup(function() {
+    console.log(inputPassword.val());
+    if (inputPassword.val().length < 8 && inputPassword.val().length >= 1) {
+      caracteresMin.css("color", "red");
+    } else if (inputPassword.val().length == 0) {
+      caracteresMin.css("color", "#666262");
+    } else {
+      caracteresMin.css("color", "green");
+    }
+  });
+
   $(window).resize(function(event) {
     console.log(window.innerWidth);
     if (window.innerWidth >= 768 && window.innerWidth <= 991) {
     }
   });
 
-  const homeVideo = document.querySelector(".home-video");
-  homeVideo.play();
   if (window.matchMedia("(max-width: 767px)").matches) {
-    const header = document.querySelector(".header");
+    /*const header = document.querySelector(".header");
 
     window.onscroll = function() {
       var posicionScroll = window.scrollY;
       let coordenadasHeader = header.getBoundingClientRect();
-      if (posicionScroll < coordenadasHeader.top) {
-        navbar.style.background =
-          "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-        //window.scrollTo(0, 0);
-      } else if (
-        posicionScroll >= coordenadasHeader.top &&
-        posicionScroll <= coordenadasHeader.bottom
-      ) {
-        navbar.style.background =
-          "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-      } else {
-        navbar.style.background = "black";
+      if ($.browser.mobile) {
+        if ($.browser.safari) {
+          if (posicionScroll < coordenadasHeader.top) {
+            navbar.style.background =
+              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+            window.scrollTo(0, 0);
+          } else if (
+            posicionScroll >= coordenadasHeader.top &&
+            posicionScroll <= coordenadasHeader.bottom
+          ) {
+            navbar.style.background =
+              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+          } else {
+            navbar.style.background = "black";
+          }
+        }
       }
-    };
+    };*/
+    $(document).on("scroll ontouchmove ontouchstart ontouchend", function() {
+      var posicionScroll = $(document).scrollTop();
+      if (posicionScroll < 0) {
+        navbar.style.background =
+          "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+        navbar.style.position = "absolute";
+      } else if (posicionScroll > 0 && posicionScroll <= 100) {
+        navbar.style.background =
+          "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+        navbar.style.position = "fixed";
+      } else if (posicionScroll >= 101) {
+        navbar.style.background = "black";
+        navbar.style.position = "fixed";
+      }
+    });
 
     /*Organismos */
   } else if (
@@ -164,9 +194,9 @@ $(document).ready(function() {
     </div>
 
     <div class="row no-gutters">
-      <div class="col-md-4">
+      <div class="col-md-4 col-xl-6">
       </div>
-      <div class="col-md-8">
+      <div class="col-md-8 col-xl-6">
         <div class="row poster-pad-b">
           <div class="col poster-pad-r">
               <div class="height-second-poster ">
@@ -511,11 +541,11 @@ $(document).ready(function() {
           </div>
         </div>
         <div class="row no-gutters">
-          <div class="col-md-4">
+          <div class="col-md-4 col-xl-6">
             <p class="a-concert-subtitle concert-first-subtitle">Conciertos</p>
             <p class="a-concert-subtitle concert-second-subtitle">Entrevistas y mucho más</p>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 col-xl-6">
             <div class="row poster-pad-b">
               <div class="col poster-pad-r poster-section">
                   <div class="poster">
@@ -587,9 +617,9 @@ $(document).ready(function() {
         </div>
     
         <div class="row no-gutters">
-          <div class="col-md-4">
+          <div class="col-md-4 col-xl-6">
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 col-xl-6">
             <div class="row poster-pad-b">
               <div class="col poster-pad-r">
                   <div class="height-second-poster ">
@@ -661,54 +691,14 @@ $(document).ready(function() {
             <button class="btn-purple">VER +</button>
           </div>
         </div>
-    
-        
+        <div class="row">
+        <div class="m-auto col-xl-10">
           <div class="slick-slider">
-    
-            <div class="row no-gutters">
-                <div class="col columnGap">
-                    <div class="height-second-poster">
-                        <div class="poster-image pink-color">
-                        </div>
-                      <div class="a-vision-rectangle">
-                          <div class="poster-title-margin">
-                              <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            <div class="row no-gutters">
-              <div class="col columnGap">
-                  <div class="height-second-poster">
-                    <div class="poster-image pink-color"></div>
-                    <div class="image"></div>
-                    <div class="a-vision-rectangle">
-                        <div class="poster-title-margin">
-                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="row no-gutters">
-                <div class="col columnGap h-100">
-                    <div class="height-second-poster h-100">
-                        <div class="poster-image pink-color">
-                          </div>
-                      <div class="a-vision-rectangle">
-                          <div class="poster-title-margin">
-                              <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
               <div class="row no-gutters">
-                  <div class="col columnGap h-100">
-                      <div class="height-second-poster h-100">
-                        <div class="poster-image pink-color">
-                        </div>
+                  <div class="col columnGap">
+                      <div class="height-second-poster">
+                          <div class="poster-image pink-color">
+                          </div>
                         <div class="a-vision-rectangle">
                             <div class="poster-title-margin">
                                 <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
@@ -716,6 +706,47 @@ $(document).ready(function() {
                         </div>
                       </div>
                     </div>
+                </div>
+                <div class="row no-gutters">
+                  <div class="col columnGap">
+                      <div class="height-second-poster">
+                        <div class="poster-image pink-color"></div>
+                        <div class="image"></div>
+                        <div class="a-vision-rectangle">
+                            <div class="poster-title-margin">
+                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col columnGap h-100">
+                        <div class="height-second-poster h-100">
+                            <div class="poster-image pink-color">
+                              </div>
+                          <div class="a-vision-rectangle">
+                              <div class="poster-title-margin">
+                                  <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="row no-gutters">
+                      <div class="col columnGap h-100">
+                          <div class="height-second-poster h-100">
+                            <div class="poster-image pink-color">
+                            </div>
+                            <div class="a-vision-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="d-flex align-items-center justify-content-between section-home-footer">
@@ -744,59 +775,63 @@ $(document).ready(function() {
           <button class="btn-red">VER +</button>
         </div>
        </div>
-       <div class="slick-slider">
-          <div class="row no-gutters">
-              <div class="col columnGap h-100">
-                  <div class="height-second-poster h-100">
+       <div class="row">
+        <div class="m-auto col-xl-10">
+          <div class="slick-slider">
+              <div class="row no-gutters">
+                  <div class="col columnGap h-100">
+                      <div class="height-second-poster h-100">
+                          <div class="poster-image pink-color">
+                            </div>
+                        <div class="a-vision-rectangle">
+                            <div class="poster-title-margin">
+                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              <div class="row no-gutters">
+                <div class="col columnGap h-100">
+                    <div class="height-second-poster h-100">
+                      <div class="poster-image pink-color"></div>
+                      <div class="image"></div>
+                      <div class="a-vision-rectangle">
+                          <div class="poster-title-margin">
+                              <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row no-gutters">
+                  <div class="col columnGap">
+                      <div class="height-second-poster">
+                          <div class="poster-image pink-color">
+                            </div>
+                        <div class="a-vision-rectangle">
+                            <div class="poster-title-margin">
+                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                  <div class="col columnGap">
+                    <div class="height-second-poster">
                       <div class="poster-image pink-color">
-                        </div>
-                    <div class="a-vision-rectangle">
-                        <div class="poster-title-margin">
-                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
-                        </div>
+                      </div>
+                      <div class="a-vision-rectangle">
+                          <div class="poster-title-margin">
+                              <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                          </div>
+                      </div>
                     </div>
                   </div>
                 </div>
             </div>
-          <div class="row no-gutters">
-            <div class="col columnGap h-100">
-                <div class="height-second-poster h-100">
-                  <div class="poster-image pink-color"></div>
-                  <div class="image"></div>
-                  <div class="a-vision-rectangle">
-                      <div class="poster-title-margin">
-                          <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
-                      </div>
-                  </div>
-                </div>
-              </div>
           </div>
-          <div class="row no-gutters">
-              <div class="col columnGap">
-                  <div class="height-second-poster">
-                      <div class="poster-image pink-color">
-                        </div>
-                    <div class="a-vision-rectangle">
-                        <div class="poster-title-margin">
-                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col columnGap">
-                <div class="height-second-poster">
-                  <div class="poster-image pink-color">
-                  </div>
-                  <div class="a-vision-rectangle">
-                      <div class="poster-title-margin">
-                          <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </div>
         </div>
         <div class="d-flex align-items-center justify-content-between section-home-footer">
           <div>
@@ -823,12 +858,12 @@ $(document).ready(function() {
         </div>
       </div>
       <div class="row no-gutters d-flex align-items-center">
-          <div class="col-md-4">
+          <div class="col-md-4 col-xl-6">
             <h1 class="poster-title-sport">
               <span>Vive la </span>intensidad <span>del deporte</span>
             </h1>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 col-xl-6">
             <div class="row no-gutters poster-pad-b">
               <div class="col margin-left-11 poster-margin-r">
     
@@ -906,7 +941,7 @@ $(document).ready(function() {
     $(".o-advertising-section").html(advertisingSection);
 
     var footerCompanies = `
-    <div class="d-flex margin-bottom-footer col-lg-10 col-xl-10 m-auto justify-content-between align-items-center">
+    <div class="d-flex margin-bottom-footer col-lg-12 col-xl-10 m-auto justify-content-between align-items-center">
     <div class="col footer-border-right">
       <img class="d-block m-auto footer-img" src="./images/home/sanborns-icon.svg" alt="">
     </div>
@@ -926,7 +961,7 @@ $(document).ready(function() {
     <div class="col footer-border-right">
         <img class="d-block m-auto footer-img" src="./images/home/claro-shop-icon.svg" alt="">
     </div>
-    <div class="col footer-border-right">
+    <div class="col">
         <img class="d-block m-auto footer-img" src="./images/home/fundacion-icon.svg" alt="">
     </div>
   </div>`;

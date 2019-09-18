@@ -243,6 +243,10 @@
     height: 60px;
   }
 
+  .small-footer-img {
+    height: 60px;
+  }
+
   .login {
     position: absolute;
     right: -8px;
@@ -359,7 +363,7 @@
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 2000px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   /*Base*/
 
   /***  ATOMS  ****/
@@ -497,6 +501,10 @@
     height: 72px;
   }
 
+  .small-footer-img {
+    height: 60px;
+  }
+
   .login {
     position: absolute;
     right: -8px;
@@ -621,6 +629,372 @@
     display: block;
     width: 65%;
     clip-path: circle(50% at 70% 17%);
+  }
+
+  .poster-image {
+    height: 355px;
+  }
+
+  .poster-image-small {
+    height: 135px;
+  }
+
+  .a-cinema-rectangle,
+  .a-sports-rectangle,
+  .a-concert-rectangle,
+  .a-claro-rectangle,
+  .a-vision-rectangle {
+    height: 45px;
+  }
+
+  .slick-list {
+    height: 400px;
+  }
+
+  .small-poster .slick-list {
+    height: 180px;
+  }
+
+  .slick-dots {
+    bottom: -73px !important;
+  }
+
+  .margin-bottom-slider {
+    margin-bottom: 90px;
+  }
+
+  .a-concert-subtitle {
+    color: $colorWhite;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: $montserratSemiBold;
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+
+  .a-claro-cinema-title,
+  .a-our-vision-title,
+  .a-claro-channel-title,
+  .a-claro-sports-title,
+  .a-concert-channel-title {
+    font-size: 46px;
+    padding-bottom: 7px;
+    text-align: left;
+  }
+
+  .header-h1 {
+    color: $pureBlack;
+    font-size: 72px;
+  }
+
+  .advertising-title {
+    font-size: 68px;
+  }
+
+  .advertising-subtitle {
+    font-size: 25px;
+    color: #00caf5;
+    font-family: "Gotham-Black";
+  }
+
+  .advertising-text {
+    font-size: 14px;
+  }
+
+  .poster-title-sport {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .claro-navbar {
+    display: flex;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+  }
+
+  .concert-first-subtitle {
+    font-size: 25px;
+  }
+
+  .concert-second-subtitle {
+    font-size: 19px;
+  }
+
+  .footer-companies {
+    margin: 60px 0;
+  }
+
+  .aviso-border {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 2000px) {
+  /*Base*/
+
+  /***  ATOMS  ****/
+
+  .margin-ahora-tv {
+    margin-bottom: 21px;
+  }
+
+  .title-tv {
+    font-size: 30px;
+  }
+  .nav-image {
+    height: 72px;
+  }
+
+  .nav-li {
+    text-align: center;
+  }
+
+  .border-right {
+    border-right: 1px solid $bordergray !important;
+    padding-right: 5px;
+  }
+
+  .login-item {
+    width: 36px;
+  }
+
+  .slick-slider .slick-list {
+    padding: 0px 0px 0px 0px !important;
+  }
+
+  .a-cinema-rectangle,
+  .a-sports-rectangle,
+  .a-concert-rectangle,
+  .a-claro-rectangle,
+  .a-vision-rectangle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /*-webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;*/
+    height: 36px;
+  }
+
+  .poster-title-margin {
+    margin: 0px;
+  }
+
+  .small-poster {
+    height: 144px;
+    position: relative;
+  }
+
+  .a-sports-text-poster,
+  .a-poster-text-white,
+  .a-poster-text-black {
+    padding: 0px;
+    font-size: $fontSizeSub;
+  }
+
+  .a-concert-channel-title {
+    font-size: 32px;
+    color: $colorWhite;
+    padding-bottom: 0%;
+    text-align: left;
+  }
+  .concert-footer-img {
+    width: 72px;
+  }
+
+  .concert-img-white {
+    filter: invert(1);
+  }
+
+  .a-subtitle {
+    text-align: left;
+    font-size: 16px;
+    padding-bottom: 0%;
+  }
+
+  .advertising-image {
+    width: 90%;
+    display: block;
+    margin: 0px auto;
+  }
+
+  .advertising-title,
+  .advertising-subtitle {
+    text-align: left;
+  }
+
+  .footer-title {
+    font-size: 30px;
+  }
+
+  .social-icon {
+    width: 58px;
+  }
+
+  .claro-grey-img {
+    width: 86px;
+  }
+
+  .text-footer-regular {
+    font-size: 15px;
+    margin-bottom: 29px;
+  }
+
+  .text-footer-bold {
+    font-size: 15px;
+  }
+
+  .transmission-text {
+    position: absolute;
+    left: 4%;
+    top: 10%;
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-family: $montserratSemiBold;
+  }
+
+  /*Footer*/
+  .footer-img {
+    width: 80px;
+    height: 72px;
+  }
+
+  .small-footer-img {
+    height: 60px;
+  }
+
+  .login {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    z-index: 1;
+    background: rgba(97, 109, 113, 0.7);
+    padding: 8px;
+    border-radius: 30px;
+  }
+
+  .navbar-item {
+    font-size: 16px;
+  }
+
+  /***  MOLECULES  ***/
+  .nav-content {
+    margin: 0px;
+    position: relative;
+  }
+
+  .tv-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 900px;
+    margin: 0 auto 37px auto;
+    width: 100%;
+    align-items: center;
+  }
+
+  .m-home-titles {
+    padding-top: 39px;
+    padding-bottom: 20px;
+  }
+
+  .m-see-more {
+    text-align: right;
+    margin-bottom: 0px;
+  }
+
+  .slick-dots li button:before {
+    font-size: 9px !important;
+  }
+
+  .social-media {
+    margin: 46px auto 65px auto;
+  }
+
+  /*Organisms*/
+  .menu {
+    background: transparent;
+    position: inherit;
+    width: 100%;
+    z-index: 1;
+    max-height: 63px;
+    transition: all 0.5s ease 0s;
+  }
+
+  .header {
+    background: transparent;
+    padding: 30px;
+    height: auto;
+  }
+
+  .o-concert-section {
+    background-color: $backgroundConcertChannel;
+  }
+
+  .o-cinema-section {
+    background-image: url(../images/home/claro-cinema-background.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-origin: content-box;
+  }
+
+  .o-vision-section {
+    background-color: $backgroundGray;
+  }
+
+  .o-claro-section {
+    background: #c35353;
+  }
+
+  .o-sports-section {
+    background-image: url(../images/home/claro-sports-background.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+
+  .o-concert-section,
+  .o-cinema-section,
+  .o-vision-section,
+  .o-claro-section,
+  .o-sports-section,
+  .o-advertising-section,
+  .o-footer-section,
+  .o-tv-section {
+    max-width: 100%;
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+
+  /*-------------------*/
+  .header-details {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    display: inherit;
+    text-align: left;
+  }
+
+  .menu-responsive {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 0;
+    width: 85px;
+  }
+
+  .circle-video {
+    display: block;
+    width: 65%;
+    clip-path: circle(50% at 70% 10%);
   }
 
   .poster-image {
