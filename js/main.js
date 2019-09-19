@@ -31,7 +31,6 @@ $(document).ready(function() {
   const inputPassword = $("#password");
   const caracteresMin = $(".caracteres-min");
   inputPassword.keyup(function() {
-    console.log(inputPassword.val());
     if (inputPassword.val().length < 8 && inputPassword.val().length >= 1) {
       caracteresMin.css("color", "red");
     } else if (inputPassword.val().length == 0) {
@@ -41,39 +40,13 @@ $(document).ready(function() {
     }
   });
 
-  $(window).resize(function(event) {
-    console.log(window.innerWidth);
-    if (window.innerWidth >= 768 && window.innerWidth <= 991) {
-    }
-  });
+  var bandera = 0;
 
   if (window.matchMedia("(max-width: 767px)").matches) {
-    /*const header = document.querySelector(".header");
-
-    window.onscroll = function() {
-      var posicionScroll = window.scrollY;
-      let coordenadasHeader = header.getBoundingClientRect();
-      if ($.browser.mobile) {
-        if ($.browser.safari) {
-          if (posicionScroll < coordenadasHeader.top) {
-            navbar.style.background =
-              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-            window.scrollTo(0, 0);
-          } else if (
-            posicionScroll >= coordenadasHeader.top &&
-            posicionScroll <= coordenadasHeader.bottom
-          ) {
-            navbar.style.background =
-              "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-          } else {
-            navbar.style.background = "black";
-          }
-        }
-      }
-    };*/
+    /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
     $(document).on("scroll ontouchmove ontouchstart ontouchend", function() {
       var posicionScroll = $(document).scrollTop();
-      if (posicionScroll < 0) {
+      if (posicionScroll <= 0) {
         navbar.style.background =
           "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
         navbar.style.position = "absolute";
@@ -91,6 +64,7 @@ $(document).ready(function() {
   } else if (
     window.matchMedia("(min-width: 768px) and (max-width: 991px)").matches
   ) {
+    //location.reload();
     /*Atoms*/
     const logo = document.querySelector(".logo");
     const menu_responsive = document.querySelector(".menu-responsive");

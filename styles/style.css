@@ -1002,12 +1002,14 @@ h6 {
 }
 
 .footer-img {
-  width: 40px;
+  width: 80%;
+  max-width: 50px;
 }
 
 .small-footer-img {
-  width: 90px;
+  width: 100%;
   height: 60px;
+  max-width: 80px;
 }
 
 .ubicacion {
@@ -1804,6 +1806,7 @@ a:active {
     height: 60px;
   }
   .small-footer-img {
+    width: 90px;
     height: 60px;
   }
   .login {
@@ -2029,6 +2032,7 @@ a:active {
     height: 72px;
   }
   .small-footer-img {
+    width: 90px;
     height: 60px;
   }
   .login {
@@ -2343,6 +2347,7 @@ a:active {
     height: 72px;
   }
   .small-footer-img {
+    width: 90px;
     height: 60px;
   }
   .login {
@@ -2442,7 +2447,7 @@ a:active {
   /*-------------------*/
   .header-details {
     margin-top: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 10%;
     display: inherit;
     text-align: left;
   }
