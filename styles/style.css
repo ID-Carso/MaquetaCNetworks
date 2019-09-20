@@ -449,20 +449,33 @@ h6 {
   border-radius: 50%;
 }
 
-.text-footer-regular {
+.text-footer-basic {
   color: #838484;
-  font-family: "Montserrat-Regular";
-  text-align: center;
   font-size: 10px;
+}
+
+.text-footer-regular {
   margin-bottom: 9px;
 }
 
 .text-footer-bold {
   color: #838484;
-  font-size: 10px;
   font-family: "Montserrat-SemiBold";
-  text-align: center;
   margin-bottom: 22px;
+}
+
+.other-text-regular,
+.text-footer-regular {
+  font-family: "Montserrat-Regular";
+}
+
+.other-text-regular,
+.aviso-priv-blue {
+  margin-bottom: 41px;
+}
+
+.terms-conditions-desktop .aviso-priv-blue:nth-child(1) {
+  margin-right: 50px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1920px) {
@@ -1002,12 +1015,14 @@ h6 {
 }
 
 .footer-img {
-  width: 40px;
+  width: 80%;
+  max-width: 50px;
 }
 
 .small-footer-img {
-  width: 90px;
+  width: 100%;
   height: 60px;
+  max-width: 80px;
 }
 
 .ubicacion {
@@ -1290,10 +1305,6 @@ input[type="checkbox"]:checked + label::before {
 
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
-a:active {
-  background-color: yellow;
-}
-
 .login-item:first-child {
   margin-right: 10px;
 }
@@ -1804,6 +1815,7 @@ a:active {
     height: 60px;
   }
   .small-footer-img {
+    width: 90px;
     height: 60px;
   }
   .login {
@@ -2008,12 +2020,12 @@ a:active {
   .claro-grey-img {
     width: 86px;
   }
-  .text-footer-regular {
+  .text-footer-basic {
     font-size: 15px;
-    margin-bottom: 29px;
   }
-  .text-footer-bold {
-    font-size: 15px;
+  .text-footer-regular {
+    margin-bottom: 8px;
+    text-align: left;
   }
   .transmission-text {
     position: absolute;
@@ -2029,6 +2041,7 @@ a:active {
     height: 72px;
   }
   .small-footer-img {
+    width: 90px;
     height: 60px;
   }
   .login {
@@ -2043,7 +2056,14 @@ a:active {
   .navbar-item {
     font-size: 16px;
   }
+  .logo-footer {
+    margin-bottom: 13px;
+    text-align: left;
+  }
   /***  MOLECULES  ***/
+  .terms-conditions-mobile {
+    display: none;
+  }
   .nav-content {
     margin: 0px;
     position: relative;
@@ -2219,8 +2239,14 @@ a:active {
   .concert-second-subtitle {
     font-size: 19px;
   }
-  .footer-companies {
+  .footer-companies-desktop {
     margin: 60px 0;
+  }
+  .footer-companies {
+    display: none;
+  }
+  .footer-companies-desktop {
+    display: block;
   }
   .aviso-border {
     margin-bottom: 0px;
@@ -2322,12 +2348,13 @@ a:active {
   .claro-grey-img {
     width: 86px;
   }
+  .text-footer-basic {
+    font-size: 15px;
+  }
   .text-footer-regular {
     font-size: 15px;
-    margin-bottom: 29px;
-  }
-  .text-footer-bold {
-    font-size: 15px;
+    margin-bottom: 8px;
+    text-align: left;
   }
   .transmission-text {
     position: absolute;
@@ -2343,6 +2370,7 @@ a:active {
     height: 72px;
   }
   .small-footer-img {
+    width: 90px;
     height: 60px;
   }
   .login {
@@ -2357,7 +2385,14 @@ a:active {
   .navbar-item {
     font-size: 16px;
   }
+  .logo-footer {
+    margin-bottom: 13px;
+    text-align: left;
+  }
   /***  MOLECULES  ***/
+  .terms-conditions-mobile {
+    display: none;
+  }
   .nav-content {
     margin: 0px;
     position: relative;
@@ -2442,7 +2477,7 @@ a:active {
   /*-------------------*/
   .header-details {
     margin-top: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 10%;
     display: inherit;
     text-align: left;
   }
@@ -2533,8 +2568,14 @@ a:active {
   .concert-second-subtitle {
     font-size: 19px;
   }
-  .footer-companies {
+  .footer-companies-desktop {
     margin: 60px 0;
+  }
+  .footer-companies {
+    display: none;
+  }
+  .footer-companies-desktop {
+    display: block;
   }
   .aviso-border {
     margin-bottom: 0px;
