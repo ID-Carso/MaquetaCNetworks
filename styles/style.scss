@@ -478,13 +478,13 @@
     width: 86px;
   }
 
-  .text-footer-regular {
+  .text-footer-basic {
     font-size: 15px;
-    margin-bottom: 29px;
   }
 
-  .text-footer-bold {
-    font-size: 15px;
+  .text-footer-regular {
+    margin-bottom: 8px;
+    text-align: left;
   }
 
   .transmission-text {
@@ -521,7 +521,17 @@
     font-size: 16px;
   }
 
+  .logo-footer {
+    margin-bottom: 13px;
+    text-align: left;
+  }
+
   /***  MOLECULES  ***/
+
+  .terms-conditions-mobile {
+    display: none;
+  }
+
   .nav-content {
     margin: 0px;
     position: relative;
@@ -853,13 +863,14 @@
     width: 86px;
   }
 
-  .text-footer-regular {
+  .text-footer-basic {
     font-size: 15px;
-    margin-bottom: 29px;
   }
 
-  .text-footer-bold {
+  .text-footer-regular {
     font-size: 15px;
+    margin-bottom: 8px;
+    text-align: left;
   }
 
   .transmission-text {
@@ -896,7 +907,17 @@
     font-size: 16px;
   }
 
+  .logo-footer {
+    margin-bottom: 13px;
+    text-align: left;
+  }
+
   /***  MOLECULES  ***/
+
+  .terms-conditions-mobile {
+    display: none;
+  }
+
   .nav-content {
     margin: 0px;
     position: relative;

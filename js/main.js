@@ -9,22 +9,28 @@ $(document).ready(function() {
   });
 
   $(".singup-button").click(function() {
-    var usuario, correo, password, expresion;
+    var usuario, correo, password, expresion, mensaje, error;
 
     usuario = document.getElementById("usuario").value;
     correo = document.getElementById("correo").value;
     password = document.getElementById("password").value;
+    const tituloModal = $(".hola");
     expresion = /\w+@\w+\.+[a-z]/;
-
-    if (usuario === "" || correo === "" || password === "") {
-      alert("todos los campos estan vacios");
-      return false;
+    const modalBody = $(".modal-body");
+    const modal = $("#mensaje");
+    if (usuario === "" && correo === "" && password === "") {
+      tituloModal.text("Error");
+      mensaje = `<p>Todos los campos están vacios</p>`;
+      modalBody.html(mensaje);
+      modal.modal("show");
     } else if (!expresion.test(correo)) {
-      alert("el correo no es valido");
-      return false;
+      mensaje = `<p>El correo no es válido</p>`;
+      modalBody.html(mensaje);
+      modal.modal("show");
     } else if (password.length < 8) {
-      alert("minimo 8 caracteres en contraseña");
-      return false;
+      mensaje = `<p>La contraseña debe tener al menos 8 caractéres</p>`;
+      modalBody.html(mensaje);
+      modal.modal("show");
     }
   });
 

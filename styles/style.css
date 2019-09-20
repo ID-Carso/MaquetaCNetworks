@@ -449,20 +449,33 @@ h6 {
   border-radius: 50%;
 }
 
-.text-footer-regular {
+.text-footer-basic {
   color: #838484;
-  font-family: "Montserrat-Regular";
-  text-align: center;
   font-size: 10px;
+}
+
+.text-footer-regular {
   margin-bottom: 9px;
 }
 
 .text-footer-bold {
   color: #838484;
-  font-size: 10px;
   font-family: "Montserrat-SemiBold";
-  text-align: center;
   margin-bottom: 22px;
+}
+
+.other-text-regular,
+.text-footer-regular {
+  font-family: "Montserrat-Regular";
+}
+
+.other-text-regular,
+.aviso-priv-blue {
+  margin-bottom: 41px;
+}
+
+.terms-conditions-desktop .aviso-priv-blue:nth-child(1) {
+  margin-right: 50px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1920px) {
@@ -2007,12 +2020,12 @@ input[type="checkbox"]:checked + label::before {
   .claro-grey-img {
     width: 86px;
   }
-  .text-footer-regular {
+  .text-footer-basic {
     font-size: 15px;
-    margin-bottom: 29px;
   }
-  .text-footer-bold {
-    font-size: 15px;
+  .text-footer-regular {
+    margin-bottom: 8px;
+    text-align: left;
   }
   .transmission-text {
     position: absolute;
@@ -2043,7 +2056,14 @@ input[type="checkbox"]:checked + label::before {
   .navbar-item {
     font-size: 16px;
   }
+  .logo-footer {
+    margin-bottom: 13px;
+    text-align: left;
+  }
   /***  MOLECULES  ***/
+  .terms-conditions-mobile {
+    display: none;
+  }
   .nav-content {
     margin: 0px;
     position: relative;
@@ -2328,12 +2348,13 @@ input[type="checkbox"]:checked + label::before {
   .claro-grey-img {
     width: 86px;
   }
+  .text-footer-basic {
+    font-size: 15px;
+  }
   .text-footer-regular {
     font-size: 15px;
-    margin-bottom: 29px;
-  }
-  .text-footer-bold {
-    font-size: 15px;
+    margin-bottom: 8px;
+    text-align: left;
   }
   .transmission-text {
     position: absolute;
@@ -2364,7 +2385,14 @@ input[type="checkbox"]:checked + label::before {
   .navbar-item {
     font-size: 16px;
   }
+  .logo-footer {
+    margin-bottom: 13px;
+    text-align: left;
+  }
   /***  MOLECULES  ***/
+  .terms-conditions-mobile {
+    display: none;
+  }
   .nav-content {
     margin: 0px;
     position: relative;
