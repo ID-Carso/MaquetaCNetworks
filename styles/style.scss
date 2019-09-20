@@ -722,8 +722,16 @@
     font-size: 19px;
   }
 
-  .footer-companies {
+  .footer-companies-desktop {
     margin: 60px 0;
+  }
+
+  .footer-companies {
+    display: none;
+  }
+
+  .footer-companies-desktop {
+    display: block;
   }
 
   .aviso-border {
@@ -1089,8 +1097,16 @@
     font-size: 19px;
   }
 
-  .footer-companies {
+  .footer-companies-desktop {
     margin: 60px 0;
+  }
+
+  .footer-companies {
+    display: none;
+  }
+
+  .footer-companies-desktop {
+    display: block;
   }
 
   .aviso-border {

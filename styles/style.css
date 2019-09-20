@@ -1292,10 +1292,6 @@ input[type="checkbox"]:checked + label::before {
 
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
-a:active {
-  background-color: yellow;
-}
-
 .login-item:first-child {
   margin-right: 10px;
 }
@@ -2223,8 +2219,14 @@ a:active {
   .concert-second-subtitle {
     font-size: 19px;
   }
-  .footer-companies {
+  .footer-companies-desktop {
     margin: 60px 0;
+  }
+  .footer-companies {
+    display: none;
+  }
+  .footer-companies-desktop {
+    display: block;
   }
   .aviso-border {
     margin-bottom: 0px;
@@ -2538,8 +2540,14 @@ a:active {
   .concert-second-subtitle {
     font-size: 19px;
   }
-  .footer-companies {
+  .footer-companies-desktop {
     margin: 60px 0;
+  }
+  .footer-companies {
+    display: none;
+  }
+  .footer-companies-desktop {
+    display: block;
   }
   .aviso-border {
     margin-bottom: 0px;
