@@ -1,117 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <title>Login</title>
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="slick-master/slick/slick.js"></script>
-    <script src="./js/main.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
 
-  <body class="fondo">
-      
-    <script>
-      function mostrarContrasena() {
-        var tipo = document.getElementById("password");
-        if (tipo.type == "password") {
-          tipo.type = "text";
-        } else {
-          tipo.type = "password";
-        }
+  <title>Login</title>
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="slick-master/slick/slick.js"></script>
+  <script src="./js/main.js"></script>
+</head>
+
+<body class="fondo">
+
+  <script>
+    function mostrarContrasena() {
+      var tipo = document.getElementById("password");
+      if (tipo.type == "password") {
+        tipo.type = "text";
+      } else {
+        tipo.type = "password";
       }
-    </script>
-    <div class="login-form">
-      <div
-        class="col-sm-12 no-gutters col-md-8 offset-md-2 no-gutters col-lg-4 offset-lg-4 shadow1 fondolog"
-      >
-        <img src="images/registro/group-10.svg" class="ubicacion5" />
-        <div class="row ma-no ">
-          <div class="col-sm-12 col-md-12 col-lg-12 no-gutters ">
-            <img src="images/registro/group-3.svg" />
-            <a href="index.html">
-              <img src="images/registro/group-24.svg" class="ubicacion1"
-            /></a>
-            <img src="images/registro/group-37.svg" class="ubicacion" />
-          </div>
+    }
+  </script>
+  <div class="login-form">
+    <div class="col-sm-12 no-gutters col-md-8 offset-md-2 no-gutters col-lg-4 offset-lg-4 shadow1 fondolog">
+      <img src="images/registro/group-10.svg" class="ubicacion5" />
+      <div class="row ma-no ">
+        <div class="col-sm-12 col-md-12 col-lg-12 no-gutters ">
+          <img src="images/registro/group-3.svg" />
+          <a href="index.html">
+            <img src="images/registro/group-24.svg" class="ubicacion1" /></a>
+          <img src="images/registro/group-37.svg" class="ubicacion" />
         </div>
-        <br />
-        <br />
-        <div class="row ma-no centro">
-          <div class="col-sm-12 no-gap">
-            <div class="tamaño2">
-              <input
-                class="insert-data"
-                type="text"
-                placeholder="Correo electronico"
-              />
-              <img src="images/registro/group-12.svg" class="ubicacion3" />
-            </div>
-          </div>
-        </div>
-
-        <div class="row ma-no centro">
-          <div class=" col-sm-12 no-gap">
-            <div class="tamaño2 centro">
-              <input
-                class="insert-data"
-                type="password"
-                id="password"
-                placeholder="Contraseña"
-              />
-              <img
-                src="images/registro/eye.svg"
-                onclick="mostrarContrasena()"
-                class="ubicacion4"
-              />
-              <p class="caracteres-min">8 caractéres mínimo <img src="images/registro/listo.svg" class="listo" > </p>
-            </div>
-          </div>
-        </div>
-        <br />
-        <div class="row ma-no centro margin-top-por">
-          <div
-            class="col-sm-12 d-flex  justify-content-center align-items-center"
-          >
-            <input type="checkbox" id="cuenta" />
-            <label for="cuenta">Recordar cuenta</label>
-          </div>
-        </div>
-        <br />
-        <div class="row ma-no centro">
-          <div class="col-sm-12">
-            <button class="login-button">INGRESAR</button>
-          </div>
-        </div>
-        <br />
-        <div class="row ma-no centro">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <p class="contra">¿Olvidaste la contraseña?</p>
-            <hr class="log" />
-            <p class="nocuenta">¿No tienes cuenta?</p>
-          </div>
-        </div>
-        <br />
-        <div class="row ma-no centro">
-          <div class="col-sm-12">
-            <a href="registro.html"
-              ><button class="singup-button">REGÍSTRATE</button></a
-            >
-          </div>
-        </div>
-        <br />
       </div>
+      <br />
+      <br />
+      <div class="row ma-no centro">
+        <div class="col-sm-12 no-gap">
+          <div class="tamaño2">
+            <input class="insert-data" type="text" placeholder="Correo electrónico" />
+            <img src="images/registro/group-12.svg" class="ubicacion3" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row ma-no centro">
+        <div class=" col-sm-12 no-gap">
+          <div class="tamaño2 centro">
+            <input class="insert-data" type="password" id="password" placeholder="Contraseña" />
+            <img src="images/registro/eye.svg" onclick="mostrarContrasena()" class="ubicacion4" />
+            <p class="caracteres-min">8 caractéres mínimo <img src="images/registro/listo.svg" class="listo"> </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row ma-no centro margin-top-por">
+        <div class="col-sm-12 d-flex  justify-content-center align-items-center">
+          <input type="checkbox" id="cuenta" />
+          <label for="cuenta">Recordar cuenta</label>
+        </div>
+      </div>
+      <br />
+      <div class="row ma-no centro">
+        <div class="col-sm-12">
+          <button class="login-button">INGRESAR</button>
+        </div>
+      </div>
+      <br />
+      <div class="row ma-no centro">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <p class="contra">¿Olvidaste la contraseña?</p>
+          <hr class="log" />
+          <p class="nocuenta">¿No tienes cuenta?</p>
+        </div>
+      </div>
+      <br />
+      <div class="row ma-no centro">
+        <div class="col-sm-12">
+          <a href="registro.html"><button class="singup-button">REGÍSTRATE</button></a>
+        </div>
+      </div>
+      <br />
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
