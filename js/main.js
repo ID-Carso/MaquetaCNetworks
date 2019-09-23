@@ -18,19 +18,24 @@ $(document).ready(function() {
     expresion = /\w+@\w+\.+[a-z]/;
     const modalBody = $(".modal-body");
     const modal = $("#mensaje");
+
     if (usuario === "" && correo === "" && password === "") {
-      tituloModal.text("Error");
-      mensaje = `<p>Todos los campos están vacios</p>`;
+      tituloModal.text("AVISO");
+      tituloModal.css("color", "black");
+      mensaje = `<p class="regular">Aún no has ingresado datos.</p> <p class="bold">Verifícalo e inténtalo de nuevo.</p>`;
       modalBody.html(mensaje);
       modal.modal("show");
     } else if (!expresion.test(correo)) {
-      tituloModal.text("Error");
-      mensaje = `<p>El correo no es válido</p>`;
+      tituloModal.text("AVISO");
+      tituloModal.css("color", "black");
+      mensaje = `<p class="regular">El correo electrónico no es correcto.</p> <p class="bold">Verifícalo e inténtalo de
+      nuevo</p>`;
       modalBody.html(mensaje);
       modal.modal("show");
     } else if (password.length < 8) {
-      tituloModal.text("Error");
-      mensaje = `<p>La contraseña debe tener al menos 8 caractéres</p>`;
+      tituloModal.text("AVISO");
+      tituloModal.css("color", "black");
+      mensaje = `<p class="regular1">Tu contraseña tiene menos de 8 caracteres.</p> <p class="bold1">Verifícalo e inténtalo de nuevo.</p>`;
       modalBody.html(mensaje);
       modal.modal("show");
     }
@@ -38,36 +43,38 @@ $(document).ready(function() {
 
   const inputPassword = $("#password");
   const caracteresMin = $(".caracteres-min");
+  const listo = $(".listo");
   inputPassword.keyup(function() {
     if (inputPassword.val().length < 8 && inputPassword.val().length >= 1) {
       caracteresMin.css("color", "red");
+      listo.css("display", "none");
     } else if (inputPassword.val().length == 0) {
       caracteresMin.css("color", "#666262");
+      listo.css("display", "none");
     } else {
       caracteresMin.css("color", "green");
+      listo.css("display", "inline-block");
     }
   });
 
-  var bandera = 0;
+  /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
+  $(document).on("scroll ontouchmove ontouchstart ontouchend", function() {
+    var posicionScroll = $(document).scrollTop();
+    if (posicionScroll <= 0) {
+      navbar.style.background =
+        "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+      navbar.style.position = "absolute";
+    } else if (posicionScroll > 0 && posicionScroll <= 100) {
+      navbar.style.background =
+        "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+      navbar.style.position = "fixed";
+    } else if (posicionScroll >= 101) {
+      navbar.style.background = "black";
+      navbar.style.position = "fixed";
+    }
+  });
 
   if (window.matchMedia("(max-width: 767px)").matches) {
-    /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
-    $(document).on("scroll ontouchmove ontouchstart ontouchend", function() {
-      var posicionScroll = $(document).scrollTop();
-      if (posicionScroll <= 0) {
-        navbar.style.background =
-          "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-        navbar.style.position = "absolute";
-      } else if (posicionScroll > 0 && posicionScroll <= 100) {
-        navbar.style.background =
-          "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-        navbar.style.position = "fixed";
-      } else if (posicionScroll >= 101) {
-        navbar.style.background = "black";
-        navbar.style.position = "fixed";
-      }
-    });
-
     /*Organismos */
   } else if (
     window.matchMedia("(min-width: 768px) and (max-width: 991px)").matches
@@ -638,10 +645,31 @@ $(document).ready(function() {
   const body = $("body");
   const html = $("html");
   const sidebar_content = document.querySelector(".sidebar-content");
-
+  const menuTablet = $(".menu-tablet");
   $(window).resize(function() {
     console.log(menu);
   });
+
+  menuTablet.click(function() {
+    hamburguer.style.transform = "translate(0%)";
+    invisible_button.style.width = "2000px";
+    invisible_button.style.left = "100%";
+    invisible_button.style.background = "black";
+    html.css({
+      position: "relative",
+      overflow: "hidden",
+      height: "100%"
+    });
+    body.css({
+      position: "fixed",
+      overflow: "hidden",
+      height: "100%",
+      width: "100%"
+    });
+    sidebar_content.style.overflow = "auto";
+    sidebar_content.style.height = "100%";
+  });
+
   menu.addEventListener("click", function(e) {
     hamburguer.style.transform = "translate(0%)";
     invisible_button.style.width = "2000px";
