@@ -735,6 +735,54 @@ h6 {
   font-family: "Montserrat-Black";
 }
 
+.bold {
+  width: 210px;
+  font-family: "Montserrat-Bold";
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #373737;
+}
+
+.regular {
+  width: 210px;
+  font-family: "Montserrat-Regular";
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #717272;
+}
+
+.bold1 {
+  width: 288px;
+  font-family: "Montserrat-Bold";
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #373737;
+}
+
+.regular1 {
+  width: 288px;
+  font-family: "Montserrat-Regular";
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #717272;
+}
+
 /*End Claro Canal*/
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
