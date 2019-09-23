@@ -1,4 +1,5 @@
 @import "../molecules/posters";
+@import "../base/colors";
 
 %section-basic {
   max-width: 600px;
@@ -15,6 +16,10 @@
   @include section();
 }
 
+.concert-channel-tablet {
+  display: none;
+}
+
 .o-tv-section {
   @include section();
 }
@@ -23,16 +28,32 @@
   @include section();
 }
 
+.cinema-claro-tablet {
+  display: none;
+}
+
 .o-vision-section {
   @include section();
+}
+
+.nuestra-vision-tablet {
+  display: none;
 }
 
 .o-claro-section {
   @include section();
 }
 
+.claro-canal-tablet {
+  display: none;
+}
+
 .o-sports-section {
   @include section();
+}
+
+.claro-sports-tablet {
+  display: none;
 }
 
 .o-footer-section {
@@ -46,5 +67,19 @@
   max-width: 600px;
 }
 
-.terms-conditions-desktop {
+.advertising-section-tablet {
+  display: none;
+}
+
+/*Canal Claro*/
+.today-canal-claro {
+  padding-bottom: 28px;
+}
+
+.next-week-claro {
+  background: $claroRectangle;
+}
+
+.dont-lose-claro {
+  background: $dontLoseSection;
 }

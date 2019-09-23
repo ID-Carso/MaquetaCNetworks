@@ -1,0 +1,51 @@
+#next-week-slider {
+  padding-bottom: 58px;
+  margin-bottom: 32px;
+}
+
+.slick-slider .slick-list {
+  padding: 0px 15px 0px 15px !important;
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-dotted.slick-slider {
+  //margin-bottom: 26px !important;
+}
+
+.slick-list {
+  //height: 472px;
+}
+
+.small-poster .slick-list {
+  //height: 272px;
+}
+
+.slick-track {
+  margin-bottom: 16px !important;
+  height: 100%;
+}
+
+.today .slick-dots {
+  bottom: inherit;
+  //margin: 26px 0 0 0;
+}
+
+#dontLose-claro-slider {
+  padding-bottom: 58px;
+  margin-bottom: 52px;
+}
+
+#dontLose-claro-slider .slick-dots li.slick-active button:before,
+#next-week-slider .slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 1;
+}
+
+#dontLose-claro-slider .slick-dots li button:before,
+#next-week-slider .slick-dots li button:before {
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+}

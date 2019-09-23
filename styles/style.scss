@@ -14,6 +14,8 @@
 @import "./components/molecules/nav";
 @import "./components/molecules/lists";
 @import "./components/molecules/titles-section";
+@import "./components/molecules/cards";
+@import "./components/molecules/sliders";
 @import "./components/organisms/sections";
 @import "./components/organisms/header";
 @import "./components/organisms/menu";
@@ -44,6 +46,10 @@
     left: 0;
     top: 0%;
     transform: inherit;
+  }
+
+  .menu-responsive-tablet {
+    width: 25px;
   }
 
   .logo {
@@ -263,6 +269,14 @@
   }
 
   /*Molecules*/
+  .menu-tablet {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
   .nav-content {
     margin: 0px;
     position: relative;
@@ -338,6 +352,14 @@
     background-color: $backgroundConcertChannel;
   }
 
+  .concert-channel-mobile {
+    display: none;
+  }
+
+  .concert-channel-tablet {
+    display: block;
+  }
+
   .o-cinema-section {
     background-image: url(../images/home/claro-cinema-background.png);
     background-repeat: no-repeat;
@@ -345,18 +367,58 @@
     background-origin: content-box;
   }
 
+  .cinema-claro-mobile {
+    display: none;
+  }
+
+  .cinema-claro-tablet {
+    display: block;
+  }
+
   .o-vision-section {
     background-color: $backgroundGray;
+  }
+
+  .nuestra-vision-tablet {
+    display: block;
+  }
+
+  .nuestra-vision-mobile {
+    display: none;
   }
 
   .o-claro-section {
     background: #c35353;
   }
 
+  .claro-canal-tablet {
+    display: block;
+  }
+
+  .claro-canal-mobile {
+    display: none;
+  }
+
   .o-sports-section {
     background-image: url(../images/home/claro-sports-background.png);
     background-repeat: no-repeat;
     background-origin: content-box;
+  }
+
+  .claro-sports-tablet {
+    display: block;
+  }
+
+  .claro-sports-mobile {
+    display: none;
+  }
+
+  .advertising-section-tablet {
+    display: block;
+  }
+
+  .advertising-section-mobile {
+    display: none;
   }
 
   .margin-bottom-slider {
@@ -528,6 +590,10 @@
 
   /***  MOLECULES  ***/
 
+  .menu {
+    display: none;
+  }
+
   .terms-conditions-mobile {
     display: none;
   }
@@ -586,6 +652,10 @@
     background-color: $backgroundConcertChannel;
   }
 
+  .concert-channel-mobile {
+    display: none;
+  }
+
   .o-cinema-section {
     background-image: url(../images/home/claro-cinema-background.png);
     background-repeat: no-repeat;
@@ -593,18 +663,38 @@
     background-origin: content-box;
   }
 
+  .cinema-claro-mobile {
+    display: none;
+  }
+
   .o-vision-section {
     background-color: $backgroundGray;
+  }
+
+  .nuestra-vision-mobile {
+    display: none;
   }
 
   .o-claro-section {
     background: #c35353;
   }
 
+  .claro-canal-mobile {
+    display: none;
+  }
+
   .o-sports-section {
     background-image: url(../images/home/claro-sports-background.png);
     background-repeat: no-repeat;
     background-origin: content-box;
+  }
+
+  .claro-sports-mobile {
+    display: none;
+  }
+
+  .advertising-section-mobile {
+    display: none;
   }
 
   .o-concert-section,
@@ -914,8 +1004,20 @@
 
   /***  MOLECULES  ***/
 
+  .menu {
+    display: none;
+  }
+
   .terms-conditions-mobile {
     display: none;
+  }
+
+  .terms-conditions-desktop {
+    display: block;
+  }
+
+  .footer-companies-desktop {
+    display: block;
   }
 
   .nav-content {
@@ -972,6 +1074,10 @@
     background-color: $backgroundConcertChannel;
   }
 
+  .concert-channel-mobile {
+    display: none;
+  }
+
   .o-cinema-section {
     background-image: url(../images/home/claro-cinema-background.png);
     background-repeat: no-repeat;
@@ -979,18 +1085,37 @@
     background-origin: content-box;
   }
 
+  .cinema-claro-mobile {
+    display: none;
+  }
+
   .o-vision-section {
     background-color: $backgroundGray;
+  }
+
+  .nuestra-vision-mobile {
+    display: none;
   }
 
   .o-claro-section {
     background: #c35353;
   }
 
+  .claro-canal-mobile {
+    display: none;
+  }
   .o-sports-section {
     background-image: url(../images/home/claro-sports-background.png);
     background-repeat: no-repeat;
     background-origin: content-box;
+  }
+
+  .claro-sports-mobile {
+    display: none;
+  }
+
+  .advertising-section-mobile {
+    display: none;
   }
 
   .o-concert-section,

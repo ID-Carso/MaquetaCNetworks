@@ -58,35 +58,6 @@ h6 {
   line-height: 1.2;
 }
 
-.slick-slider .slick-list {
-  padding: 0px 15px 0px 15px !important;
-}
-
-.slick-slider {
-  width: 100%;
-}
-
-.prueba-slider {
-  width: 100%;
-}
-
-.slick-list {
-  height: 472px;
-}
-
-.small-poster .slick-list {
-  height: 272px;
-}
-
-.slick-track {
-  margin-bottom: 26px !important;
-  height: 100%;
-}
-
-.slick-slide > div:first-child {
-  height: 100%;
-}
-
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 .columnGap {
@@ -243,7 +214,7 @@ h6 {
   src: url(../../../fonts/Montserrat-Black.ttf);
 }
 
-.a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-claro-channel-subtitle-bold, .a-subtitle, .a-claro-cinema-title, .advertising-title, .advertising-subtitle, .a-claro-sports-title, .poster-title-sport, .footer-title {
+.a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-claro-channel-subtitle-bold, .a-subtitle, .a-claro-cinema-title, .advertising-title, .advertising-subtitle, .a-claro-sports-title, .poster-title-sport, .footer-title, .footer-title-claro, .a-today-claro-title, .a-next-claro-title, .a-next-claro-subtitle, .a-dontLose-claro-subtitle, .a-dontLose-claro-title {
   text-align: center;
   text-transform: uppercase;
 }
@@ -256,7 +227,7 @@ h6 {
 .a-our-vision-title {
   font-size: 24px;
   color: #eb0d6c;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
 }
 
 .a-sports-text-poster {
@@ -268,27 +239,28 @@ h6 {
 .a-programming-text {
   color: #ffffff;
   font-family: "Gotham-Medium";
-  font-size: 10px;
+  font-size: 16px;
+  margin: 10px;
 }
 
 .a-claro-channel-title {
   font-size: 24px;
   color: #262626;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
   padding-bottom: 2%;
 }
 
 .a-concert-channel-title {
   font-size: 24px;
   color: #0068ff;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
   padding-bottom: 2%;
 }
 
 .a-claro-channel-subtitle-bold {
   font-size: 14px;
   color: #262626;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
   padding-bottom: 2%;
 }
 
@@ -302,7 +274,7 @@ h6 {
 .a-claro-cinema-title {
   font-size: 24px;
   color: #5b5a5a;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
   padding-bottom: 2%;
 }
 
@@ -331,33 +303,33 @@ h6 {
 .advertising-title {
   font-size: 48px;
   color: #eb0d6c;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
 }
 
 .advertising-subtitle {
   font-size: 17.5px;
   color: #00caf5;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
 }
 
 .advertising-text {
   text-align: justify;
   margin: 0;
   line-height: normal;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .a-our-vision-title {
   font-size: 24px;
   color: #eb0d6c;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
   padding-bottom: 2%;
 }
 
 .a-claro-sports-title {
   font-size: 24px;
   color: #f90b0b;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
   padding-bottom: 2%;
 }
 
@@ -368,7 +340,7 @@ h6 {
 .poster-title-sport {
   font-size: 24px;
   color: #f90b0b;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
 }
 
 .poster-title-sport span {
@@ -378,7 +350,13 @@ h6 {
 .footer-title {
   font-size: 24px;
   color: #6031ad;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
+}
+
+.footer-title-claro {
+  font-size: 24px;
+  color: #e1261c;
+  font-family: "Montserrat-Black";
 }
 
 .name_paises {
@@ -394,7 +372,7 @@ h6 {
 
 .pie_paises {
   font-family: "Montserrat-Regular";
-  font-size: 10px;
+  font-size: 16px;
   text-align: center;
   color: #666464;
 }
@@ -451,7 +429,7 @@ h6 {
 
 .text-footer-basic {
   color: #838484;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .text-footer-regular {
@@ -469,9 +447,20 @@ h6 {
   font-family: "Montserrat-Regular";
 }
 
-.footer-companies-desktop .other-text-regular,
-.footer-companies-desktop .aviso-priv-blue {
+.other-text-regular,
+.text-footer-regular,
+.text-footer-bold {
+  text-align: center;
+  font-size: 10px;
+}
+
+.other-text-regular,
+.o-footer-section .aviso-priv-blue {
   margin-bottom: 41px;
+}
+
+.terms-conditions-mobile .aviso-priv-blue {
+  font-size: 10px;
 }
 
 .terms-conditions-desktop .aviso-priv-blue:nth-child(1) {
@@ -677,6 +666,87 @@ h6 {
   color: #525050;
 }
 
+/*Claro Canal*/
+.a-header-card-text {
+  font-family: "Montserrat-Light";
+}
+
+.a-header-card-text,
+.a-header-card-title,
+.a-header-card-subtitle {
+  font-size: 10px;
+  color: #000000;
+}
+
+.a-header-card-title {
+  text-transform: uppercase;
+  font-family: "Montserrat-Bold";
+}
+
+.a-header-card-subtitle {
+  text-transform: uppercase;
+  font-family: "Montserrat-SemiBold";
+}
+
+.a-today-claro-title {
+  font-size: 24px;
+  color: #262626;
+  font-family: "Montserrat-Black";
+  padding: 24px 0px;
+  text-transform: uppercase;
+}
+
+.a-today-claro-title span {
+  color: #e1261c;
+}
+
+.a-next-claro-title,
+.a-dontLose-claro-title,
+.a-next-claro-subtitle,
+.a-dontLose-claro-subtitle {
+  text-transform: uppercase;
+}
+
+.a-next-claro-title,
+.a-dontLose-claro-title {
+  padding: 14px 0px 6px 0px;
+}
+
+.a-next-claro-subtitle,
+.a-dontLose-claro-subtitle {
+  padding-bottom: 20px;
+}
+
+.a-next-claro-title {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Montserrat-Black";
+}
+
+.a-next-claro-subtitle {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Montserrat-Light";
+}
+
+.a-dontLose-claro-subtitle {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Montserrat-Light";
+}
+
+.a-dontLose-claro-subtitle span,
+.a-next-claro-subtitle span {
+  font-family: "Montserrat-SemiBold";
+}
+
+.a-dontLose-claro-title {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Montserrat-Black";
+}
+
+/*End Claro Canal*/
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -849,6 +919,38 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+/*Canal claro*/
+.a-next-week-rectangle {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0));
+  height: 84px;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.rectangle-content {
+  width: 100%;
+  text-align: center;
+}
+
+.horario-container {
+  position: absolute;
+  height: 68px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+  width: 100%;
 }
 
 /*Tamaño de textos - responsive*/
@@ -1100,12 +1202,38 @@ h6 {
 }
 
 .logo-sidebar {
-  margin-top: 87px;
-  margin-bottom: 44px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .listo {
   display: none;
+}
+
+/*Canal Claro*/
+.claro-thumbnail {
+  background: #797979;
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  width: 100%;
+}
+
+.claro-thumbnail img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+.next-week-thumb {
+  background: #797979;
+  overflow: hidden;
+  padding-bottom: 65%;
+  position: relative;
+  width: 100%;
 }
 
 .hr1 {
@@ -1117,7 +1245,7 @@ h6 {
 }
 
 .aviso-border {
-  border-bottom: 2px solid #a3a3a3;
+  border-bottom: 1px solid #a3a3a3;
   margin-bottom: 22px;
 }
 
@@ -1390,6 +1518,10 @@ input[type="checkbox"]:checked + label::before {
   transition: all 0.5s ease 0s;
 }
 
+.menu-tablet {
+  display: none;
+}
+
 .nav-content {
   margin: 16px;
   position: relative;
@@ -1525,6 +1657,45 @@ input[type="checkbox"]:checked + label::before {
   font-family: "Gotham-Black";
 }
 
+#next-week-slider {
+  padding-bottom: 58px;
+  margin-bottom: 32px;
+}
+
+.slick-slider .slick-list {
+  padding: 0px 15px 0px 15px !important;
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-track {
+  margin-bottom: 16px !important;
+  height: 100%;
+}
+
+.today .slick-dots {
+  bottom: inherit;
+}
+
+#dontLose-claro-slider {
+  padding-bottom: 58px;
+  margin-bottom: 52px;
+}
+
+#dontLose-claro-slider .slick-dots li.slick-active button:before,
+#next-week-slider .slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 1;
+}
+
+#dontLose-claro-slider .slick-dots li button:before,
+#next-week-slider .slick-dots li button:before {
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+}
+
 .large-poster-width {
   width: 50%;
 }
@@ -1596,6 +1767,26 @@ input[type="checkbox"]:checked + label::before {
   margin-right: auto;
 }
 
+.concert-channel-tablet {
+  display: none;
+}
+
+.cinema-claro-tablet {
+  display: none;
+}
+
+.nuestra-vision-tablet {
+  display: none;
+}
+
+.claro-canal-tablet {
+  display: none;
+}
+
+.claro-sports-tablet {
+  display: none;
+}
+
 .o-advertising-section {
   margin: 50px auto 55px auto;
   padding-left: 5%;
@@ -1603,10 +1794,42 @@ input[type="checkbox"]:checked + label::before {
   max-width: 600px;
 }
 
+.advertising-section-tablet {
+  display: none;
+}
+
+/*Canal Claro*/
+.today-canal-claro {
+  padding-bottom: 28px;
+}
+
+.next-week-claro {
+  background: #e1261c;
+}
+
+.dont-lose-claro {
+  background: #262626;
+}
+
 .header {
   width: 100%;
   height: 205px;
   background: #6031ad;
+}
+
+.claro-canal-header .header {
+  position: relative;
+  background: #512a14;
+}
+
+.claro-canal-header .header::after {
+  content: "";
+  background: white;
+  width: 100%;
+  height: 30px;
+  border-radius: 26% 69% 0% 10% / 23% 100% 0% 0%;
+  position: absolute;
+  top: 87%;
 }
 
 .hamburguer-menu {
@@ -1625,6 +1848,14 @@ input[type="checkbox"]:checked + label::before {
 .section-home-footer {
   padding-top: 25px;
   padding-bottom: 40px;
+}
+
+.footer-companies-desktop {
+  display: none;
+}
+
+.terms-conditions-desktop {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1648,6 +1879,9 @@ input[type="checkbox"]:checked + label::before {
     top: 0%;
     -webkit-transform: inherit;
             transform: inherit;
+  }
+  .menu-responsive-tablet {
+    width: 25px;
   }
   .logo {
     width: 85px;
@@ -1831,6 +2065,12 @@ input[type="checkbox"]:checked + label::before {
     font-size: 16px;
   }
   /*Molecules*/
+  .menu-tablet {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
   .nav-content {
     margin: 0px;
     position: relative;
@@ -1903,22 +2143,58 @@ input[type="checkbox"]:checked + label::before {
   .o-concert-section {
     background-color: #3e0a43;
   }
+  .concert-channel-mobile {
+    display: none;
+  }
+  .concert-channel-tablet {
+    display: block;
+  }
   .o-cinema-section {
     background-image: url(../images/home/claro-cinema-background.png);
     background-repeat: no-repeat;
     background-position: left;
     background-origin: content-box;
   }
+  .cinema-claro-mobile {
+    display: none;
+  }
+  .cinema-claro-tablet {
+    display: block;
+  }
   .o-vision-section {
     background-color: #d8d8d8;
   }
+  .nuestra-vision-tablet {
+    display: block;
+  }
+  .nuestra-vision-mobile {
+    display: none;
+  }
   .o-claro-section {
     background: #c35353;
+  }
+  .claro-canal-tablet {
+    display: block;
+  }
+  .claro-canal-mobile {
+    display: none;
   }
   .o-sports-section {
     background-image: url(../images/home/claro-sports-background.png);
     background-repeat: no-repeat;
     background-origin: content-box;
+  }
+  .claro-sports-tablet {
+    display: block;
+  }
+  .claro-sports-mobile {
+    display: none;
+  }
+  .advertising-section-tablet {
+    display: block;
+  }
+  .advertising-section-mobile {
+    display: none;
   }
   .margin-bottom-slider {
     margin-bottom: 80px;
@@ -2061,6 +2337,9 @@ input[type="checkbox"]:checked + label::before {
     text-align: left;
   }
   /***  MOLECULES  ***/
+  .menu {
+    display: none;
+  }
   .terms-conditions-mobile {
     display: none;
   }
@@ -2116,22 +2395,40 @@ input[type="checkbox"]:checked + label::before {
   .o-concert-section {
     background-color: #3e0a43;
   }
+  .concert-channel-mobile {
+    display: none;
+  }
   .o-cinema-section {
     background-image: url(../images/home/claro-cinema-background.png);
     background-repeat: no-repeat;
     background-position: left;
     background-origin: content-box;
   }
+  .cinema-claro-mobile {
+    display: none;
+  }
   .o-vision-section {
     background-color: #d8d8d8;
   }
+  .nuestra-vision-mobile {
+    display: none;
+  }
   .o-claro-section {
     background: #c35353;
+  }
+  .claro-canal-mobile {
+    display: none;
   }
   .o-sports-section {
     background-image: url(../images/home/claro-sports-background.png);
     background-repeat: no-repeat;
     background-origin: content-box;
+  }
+  .claro-sports-mobile {
+    display: none;
+  }
+  .advertising-section-mobile {
+    display: none;
   }
   .o-concert-section,
   .o-cinema-section,
@@ -2390,8 +2687,17 @@ input[type="checkbox"]:checked + label::before {
     text-align: left;
   }
   /***  MOLECULES  ***/
+  .menu {
+    display: none;
+  }
   .terms-conditions-mobile {
     display: none;
+  }
+  .terms-conditions-desktop {
+    display: block;
+  }
+  .footer-companies-desktop {
+    display: block;
   }
   .nav-content {
     margin: 0px;
@@ -2445,22 +2751,40 @@ input[type="checkbox"]:checked + label::before {
   .o-concert-section {
     background-color: #3e0a43;
   }
+  .concert-channel-mobile {
+    display: none;
+  }
   .o-cinema-section {
     background-image: url(../images/home/claro-cinema-background.png);
     background-repeat: no-repeat;
     background-position: left;
     background-origin: content-box;
   }
+  .cinema-claro-mobile {
+    display: none;
+  }
   .o-vision-section {
     background-color: #d8d8d8;
   }
+  .nuestra-vision-mobile {
+    display: none;
+  }
   .o-claro-section {
     background: #c35353;
+  }
+  .claro-canal-mobile {
+    display: none;
   }
   .o-sports-section {
     background-image: url(../images/home/claro-sports-background.png);
     background-repeat: no-repeat;
     background-origin: content-box;
+  }
+  .claro-sports-mobile {
+    display: none;
+  }
+  .advertising-section-mobile {
+    display: none;
   }
   .o-concert-section,
   .o-cinema-section,
