@@ -3,3 +3,18 @@
   height: 205px;
   background: #6031ad;
 }
+
+.claro-canal-header .header {
+  position: relative;
+  background: #512a14;
+}
+
+.claro-canal-header .header::after {
+  content: "";
+  background: white;
+  width: 100%;
+  height: 30px;
+  border-radius: 26% 69% 0% 10% / 23% 100% 0% 0%;
+  position: absolute;
+  top: 87%;
+}

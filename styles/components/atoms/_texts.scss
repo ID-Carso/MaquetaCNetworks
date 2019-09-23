@@ -12,7 +12,7 @@
   padding: 6px;
 }
 
-@mixin title-section($colorText, $fontSize, $fontFamily: $gothamBlack) {
+@mixin title-section($colorText, $fontSize, $fontFamily: $montserratBlack) {
   @extend %title-basic;
   font-size: $fontSize;
   color: $colorText;
@@ -38,6 +38,7 @@
   color: $textWhite;
   font-family: $gothamMedium;
   font-size: $sizeProgramming;
+  margin: 10px;
 }
 
 .a-claro-channel-title {
@@ -211,7 +212,13 @@
 }
 
 .other-text-regular,
-.aviso-priv-blue {
+.text-footer-regular,
+.text-footer-bold {
+  text-align: center;
+}
+
+.other-text-regular,
+.o-footer-section .aviso-priv-blue {
   margin-bottom: 41px;
 }
 
@@ -401,3 +408,74 @@
   margin-right: 20px;
   color: $navbarItemColor;
 }
+
+/*Claro Canal*/
+.a-header-card-text {
+  font-family: $montserratLight;
+}
+
+.a-header-card-text,
+.a-header-card-title,
+.a-header-card-subtitle {
+  font-size: 10px;
+  color: $pureBlack;
+}
+
+.a-header-card-title {
+  text-transform: uppercase;
+  font-family: $montserratBold;
+}
+
+.a-header-card-subtitle {
+  text-transform: uppercase;
+  font-family: $montserratSemiBold;
+}
+
+.a-today-claro-title {
+  @include title-section($blackColor, $titleSection);
+  padding: 24px 0px;
+  text-transform: uppercase;
+}
+
+.a-today-claro-title span {
+  color: $btnBackRed;
+}
+
+.a-next-claro-title,
+.a-dontLose-claro-title,
+.a-next-claro-subtitle,
+.a-dontLose-claro-subtitle {
+  text-transform: uppercase;
+}
+
+.a-next-claro-title,
+.a-dontLose-claro-title {
+  padding: 14px 0px 6px 0px;
+}
+
+.a-next-claro-subtitle,
+.a-dontLose-claro-subtitle {
+  padding-bottom: 20px;
+}
+
+.a-next-claro-title {
+  @include title-section($colorWhite, $titleSection);
+}
+
+.a-next-claro-subtitle {
+  @include title-section($colorWhite, $posterTitleResponsive, $montserratLight);
+}
+
+.a-dontLose-claro-subtitle {
+  @include title-section($colorWhite, $posterTitleResponsive, $montserratLight);
+}
+
+.a-dontLose-claro-subtitle span,
+.a-next-claro-subtitle span {
+  font-family: $montserratSemiBold;
+}
+
+.a-dontLose-claro-title {
+  @include title-section($colorWhite, $titleSection);
+}
+/*End Claro Canal*/

@@ -58,35 +58,6 @@ h6 {
   line-height: 1.2;
 }
 
-.slick-slider .slick-list {
-  padding: 0px 15px 0px 15px !important;
-}
-
-.slick-slider {
-  width: 100%;
-}
-
-.prueba-slider {
-  width: 100%;
-}
-
-.slick-list {
-  height: 472px;
-}
-
-.small-poster .slick-list {
-  height: 272px;
-}
-
-.slick-track {
-  margin-bottom: 26px !important;
-  height: 100%;
-}
-
-.slick-slide > div:first-child {
-  height: 100%;
-}
-
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 .columnGap {
@@ -243,7 +214,7 @@ h6 {
   src: url(../../../fonts/Montserrat-Black.ttf);
 }
 
-.a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-claro-channel-subtitle-bold, .a-subtitle, .a-claro-cinema-title, .advertising-title, .advertising-subtitle, .a-claro-sports-title, .poster-title-sport, .footer-title {
+.a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-claro-channel-subtitle-bold, .a-subtitle, .a-claro-cinema-title, .advertising-title, .advertising-subtitle, .a-claro-sports-title, .poster-title-sport, .footer-title, .a-today-claro-title, .a-next-claro-title, .a-next-claro-subtitle, .a-dontLose-claro-subtitle, .a-dontLose-claro-title {
   text-align: center;
   text-transform: uppercase;
 }
@@ -256,7 +227,7 @@ h6 {
 .a-our-vision-title {
   font-size: 24px;
   color: #eb0d6c;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
 }
 
 .a-sports-text-poster {
@@ -268,27 +239,28 @@ h6 {
 .a-programming-text {
   color: #ffffff;
   font-family: "Gotham-Medium";
-  font-size: 10px;
+  font-size: 16px;
+  margin: 10px;
 }
 
 .a-claro-channel-title {
   font-size: 24px;
   color: #262626;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
   padding-bottom: 2%;
 }
 
 .a-concert-channel-title {
   font-size: 24px;
   color: #0068ff;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
   padding-bottom: 2%;
 }
 
 .a-claro-channel-subtitle-bold {
   font-size: 14px;
   color: #262626;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
   padding-bottom: 2%;
 }
 
@@ -302,7 +274,7 @@ h6 {
 .a-claro-cinema-title {
   font-size: 24px;
   color: #5b5a5a;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
   padding-bottom: 2%;
 }
 
@@ -331,33 +303,33 @@ h6 {
 .advertising-title {
   font-size: 48px;
   color: #eb0d6c;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
 }
 
 .advertising-subtitle {
   font-size: 17.5px;
   color: #00caf5;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
 }
 
 .advertising-text {
   text-align: justify;
   margin: 0;
   line-height: normal;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .a-our-vision-title {
   font-size: 24px;
   color: #eb0d6c;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
   padding-bottom: 2%;
 }
 
 .a-claro-sports-title {
   font-size: 24px;
   color: #f90b0b;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
   padding-bottom: 2%;
 }
 
@@ -368,7 +340,7 @@ h6 {
 .poster-title-sport {
   font-size: 24px;
   color: #f90b0b;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
 }
 
 .poster-title-sport span {
@@ -378,7 +350,7 @@ h6 {
 .footer-title {
   font-size: 24px;
   color: #6031ad;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
 }
 
 .name_paises {
@@ -394,7 +366,7 @@ h6 {
 
 .pie_paises {
   font-family: "Montserrat-Regular";
-  font-size: 10px;
+  font-size: 16px;
   text-align: center;
   color: #666464;
 }
@@ -451,7 +423,7 @@ h6 {
 
 .text-footer-basic {
   color: #838484;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .text-footer-regular {
@@ -470,7 +442,13 @@ h6 {
 }
 
 .other-text-regular,
-.aviso-priv-blue {
+.text-footer-regular,
+.text-footer-bold {
+  text-align: center;
+}
+
+.other-text-regular,
+.o-footer-section .aviso-priv-blue {
   margin-bottom: 41px;
 }
 
@@ -677,6 +655,87 @@ h6 {
   color: #525050;
 }
 
+/*Claro Canal*/
+.a-header-card-text {
+  font-family: "Montserrat-Light";
+}
+
+.a-header-card-text,
+.a-header-card-title,
+.a-header-card-subtitle {
+  font-size: 10px;
+  color: #000000;
+}
+
+.a-header-card-title {
+  text-transform: uppercase;
+  font-family: "Montserrat-Bold";
+}
+
+.a-header-card-subtitle {
+  text-transform: uppercase;
+  font-family: "Montserrat-SemiBold";
+}
+
+.a-today-claro-title {
+  font-size: 24px;
+  color: #262626;
+  font-family: "Montserrat-Black";
+  padding: 24px 0px;
+  text-transform: uppercase;
+}
+
+.a-today-claro-title span {
+  color: #e1261c;
+}
+
+.a-next-claro-title,
+.a-dontLose-claro-title,
+.a-next-claro-subtitle,
+.a-dontLose-claro-subtitle {
+  text-transform: uppercase;
+}
+
+.a-next-claro-title,
+.a-dontLose-claro-title {
+  padding: 14px 0px 6px 0px;
+}
+
+.a-next-claro-subtitle,
+.a-dontLose-claro-subtitle {
+  padding-bottom: 20px;
+}
+
+.a-next-claro-title {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Montserrat-Black";
+}
+
+.a-next-claro-subtitle {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Montserrat-Light";
+}
+
+.a-dontLose-claro-subtitle {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Montserrat-Light";
+}
+
+.a-dontLose-claro-subtitle span,
+.a-next-claro-subtitle span {
+  font-family: "Montserrat-SemiBold";
+}
+
+.a-dontLose-claro-title {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Montserrat-Black";
+}
+
+/*End Claro Canal*/
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -849,6 +908,38 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+/*Canal claro*/
+.a-next-week-rectangle {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0));
+  height: 84px;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.rectangle-content {
+  width: 100%;
+  text-align: center;
+}
+
+.horario-container {
+  position: absolute;
+  height: 68px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+  width: 100%;
 }
 
 /*Tamaño de textos - responsive*/
@@ -1106,6 +1197,32 @@ h6 {
 
 .listo {
   display: none;
+}
+
+/*Canal Claro*/
+.claro-thumbnail {
+  background: #797979;
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  width: 100%;
+}
+
+.claro-thumbnail img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+.next-week-thumb {
+  background: #797979;
+  overflow: hidden;
+  padding-bottom: 65%;
+  position: relative;
+  width: 100%;
 }
 
 .hr1 {
@@ -1525,6 +1642,33 @@ input[type="checkbox"]:checked + label::before {
   font-family: "Gotham-Black";
 }
 
+#next-week-slider {
+  padding-bottom: 58px;
+  margin-bottom: 32px;
+}
+
+.slick-slider .slick-list {
+  padding: 0px 15px 0px 15px !important;
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-track {
+  margin-bottom: 16px !important;
+  height: 100%;
+}
+
+.today .slick-dots {
+  bottom: inherit;
+}
+
+#dontLose-claro-slider {
+  padding-bottom: 58px;
+  margin-bottom: 52px;
+}
+
 .large-poster-width {
   width: 50%;
 }
@@ -1603,10 +1747,46 @@ input[type="checkbox"]:checked + label::before {
   max-width: 600px;
 }
 
+.terms-conditions-desktop {
+  display: none;
+}
+
+.footer-companies-desktop {
+  display: none;
+}
+
+/*Canal Claro*/
+.today-canal-claro {
+  padding-bottom: 28px;
+}
+
+.next-week-claro {
+  background: #e1261c;
+}
+
+.dont-lose-claro {
+  background: #262626;
+}
+
 .header {
   width: 100%;
   height: 205px;
   background: #6031ad;
+}
+
+.claro-canal-header .header {
+  position: relative;
+  background: #512a14;
+}
+
+.claro-canal-header .header::after {
+  content: "";
+  background: white;
+  width: 100%;
+  height: 30px;
+  border-radius: 26% 69% 0% 10% / 23% 100% 0% 0%;
+  position: absolute;
+  top: 87%;
 }
 
 .hamburguer-menu {

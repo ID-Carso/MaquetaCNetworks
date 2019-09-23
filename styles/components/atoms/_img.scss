@@ -239,3 +239,29 @@
 .listo {
   display: none;
 }
+
+/*Canal Claro*/
+
+.claro-thumbnail {
+  background: #797979;
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  width: 100%;
+}
+
+.claro-thumbnail img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+.next-week-thumb {
+  background: #797979;
+  overflow: hidden;
+  padding-bottom: 65%;
+  position: relative;
+  width: 100%;
+}

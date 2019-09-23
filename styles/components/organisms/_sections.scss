@@ -1,4 +1,5 @@
 @import "../molecules/posters";
+@import "../base/colors";
 
 %section-basic {
   max-width: 600px;
@@ -47,4 +48,22 @@
 }
 
 .terms-conditions-desktop {
+  display: none;
+}
+
+.footer-companies-desktop {
+  display: none;
+}
+
+/*Canal Claro*/
+.today-canal-claro {
+  padding-bottom: 28px;
+}
+
+.next-week-claro {
+  background: $claroRectangle;
+}
+
+.dont-lose-claro {
+  background: $dontLoseSection;
 }
