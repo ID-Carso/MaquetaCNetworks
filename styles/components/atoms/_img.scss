@@ -2,6 +2,7 @@
 @import "../base/colors";
 
 .poster-image {
+  position: relative;
   width: 100%;
   object-fit: cover;
   height: 420px;
@@ -140,6 +141,19 @@
   width: $navItemWidth;
 }*/
 
+.showtime-clock {
+  width: 20px;
+  filter: invert(1);
+}
+
+.a-cinema-rectangle .showtime-clock {
+  filter: invert(0);
+}
+
+.a-sports-rectangle .showtime-clock {
+  filter: invert(0);
+}
+
 .poster-image-left {
   height: $posterImageLeft;
 }
@@ -149,6 +163,7 @@
 }
 
 .poster-image-small {
+  position: relative;
   width: 100%;
   object-fit: cover;
   height: $posterSmallImage;
@@ -270,7 +285,7 @@
 .claro-thumbnail {
   background: #797979;
   overflow: hidden;
-  padding-bottom: 50%;
+  padding-bottom: 41%;
   position: relative;
   width: 100%;
 }

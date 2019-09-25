@@ -79,6 +79,8 @@
 .a-poster-text-white {
   @include poster-text($textWhite, $posterTitleResponsive);
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .a-poster-text-black {

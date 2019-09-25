@@ -11,6 +11,8 @@
   outline: none !important;
   font-size: 12px;
   font-family: $montserratSemiBold;
+  display: flex;
+  align-items: center;
 }
 
 @mixin more-button($background) {
@@ -28,6 +30,13 @@
 
 .btn-pink {
   @include more-button($pinkBtn);
+}
+
+.btn-pink::after {
+  content: "+";
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
 }
 
 .btn-purple {

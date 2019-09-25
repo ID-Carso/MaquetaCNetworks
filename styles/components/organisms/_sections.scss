@@ -20,6 +20,9 @@
   display: none;
 }
 
+.concert-channel-desktop {
+  display: none;
+}
 .o-tv-section {
   @include section();
 }
@@ -32,11 +35,19 @@
   display: none;
 }
 
+.cinema-claro-desktop {
+  display: none;
+}
+
 .o-vision-section {
   @include section();
 }
 
 .nuestra-vision-tablet {
+  display: none;
+}
+
+.nuestra-vision-desktop {
   display: none;
 }
 
@@ -48,11 +59,19 @@
   display: none;
 }
 
+.claro-canal-desktop {
+  display: none;
+}
+
 .o-sports-section {
   @include section();
 }
 
 .claro-sports-tablet {
+  display: none;
+}
+
+.claro-sports-desktop {
   display: none;
 }
 
@@ -68,6 +87,10 @@
 }
 
 .advertising-section-tablet {
+  display: none;
+}
+
+.advertising-section-desktop {
   display: none;
 }
 

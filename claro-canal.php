@@ -162,7 +162,7 @@
           <div class="row no-gutters">
             <div class="col columnGap">
               <div class="claro-thumbnail">
-                <div class="horario-container">
+                <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
                 </div>
               </div>
@@ -178,7 +178,7 @@
           <div class="row no-gutters">
             <div class="col columnGap">
               <div class="claro-thumbnail">
-                <div class="horario-container">
+                <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
                 </div>
               </div>
@@ -194,7 +194,7 @@
           <div class="row no-gutters">
             <div class="col columnGap">
               <div class="claro-thumbnail">
-                <div class="horario-container">
+                <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
                 </div>
               </div>
@@ -270,7 +270,7 @@
           <div class="row no-gutters">
             <div class="col columnGap">
               <div class="claro-thumbnail">
-                <div class="horario-container">
+                <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
                 </div>
               </div>
@@ -286,7 +286,7 @@
           <div class="row no-gutters">
             <div class="col columnGap">
               <div class="claro-thumbnail">
-                <div class="horario-container">
+                <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
                 </div>
               </div>
@@ -302,7 +302,7 @@
           <div class="row no-gutters">
             <div class="col columnGap">
               <div class="claro-thumbnail">
-                <div class="horario-container">
+                <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
                 </div>
               </div>
