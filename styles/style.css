@@ -797,21 +797,6 @@ h6 {
   color: #717272;
 }
 
-.alert {
-  font-family: "Montserrat-Regular";
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  margin-left: 0%;
-  margin-top: -4%;
-  color: #ff0007;
-  display: none;
-}
-
 /*End Claro Canal*/
 /*Concert channel*/
 .today-concert-title {
