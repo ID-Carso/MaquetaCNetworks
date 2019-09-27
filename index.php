@@ -1067,7 +1067,7 @@
                 </div>
             </div>
             <div class="m-see-more margin-top-50">
-               <a href="canal-claro.php"> <button class="btn-red">VER +</button></a>
+               <a href="claro-canal.php"> <button class="btn-red">VER +</button></a>
             </div>
         </div>
         <!--End Sección Canal Claro mobile-->
@@ -1082,7 +1082,7 @@
                     </h2>
                 </div>
                 <div class="m-see-more">
-                    <a href="canal-claro.php"><button class="btn-red">VER +</button></a>
+                    <a href="claro-canal.php"><button class="btn-red">VER +</button></a>
                 </div>
             </div>
             <div class="slick-slider">
@@ -1162,7 +1162,7 @@
                     </h2>
                 </div>
                 <div class="m-see-more">
-                   <a href="canal-claro.php"> <button class="btn-red">VER +</button></a>
+                   <a href="claro-canal.php"> <button class="btn-red">VER +</button></a>
                 </div>
             </div>
             <div class="row">
@@ -1380,7 +1380,7 @@
                 </div>
             </div>
             <div class="m-see-more margin-top-50">
-                <a href="concert-channel"><button class="btn-pink">VER +</button></a>
+                <a href="concert-channel.php"><button class="btn-pink">VER +</button></a>
             </div>
         </div>
 
