@@ -57,6 +57,31 @@ $(document).ready(function() {
     }
   });
 
+  const insertData = document.querySelectorAll(".insert-data");
+
+  var warningUser = document.getElementsByClassName(".warning-user");
+  const signupButton = document.getElementsByClassName("singup-button");
+
+  insertData.forEach(input => {
+    input.addEventListener("keyup", () => {
+      const usuario = document.getElementById("usuario").value.length;
+      if (validaUsuario(warningUser, usuario) == false) {
+        signupButton.disabled = true;
+      } else {
+        signupButton.disabled = false;
+      }
+      console.log(usuario);
+    });
+  });
+
+  function validaUsuario(warning, usuario) {
+    if (usuario.value.length == 0) {
+      let message = "Aún no se han ingresado datos";
+      warning.innerHTML = message;
+      return false;
+    }
+  }
+
   /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
   $(document).on("scroll ontouchmove ontouchstart ontouchend", function() {
     var posicionScroll = $(document).scrollTop();
@@ -107,6 +132,15 @@ $(document).ready(function() {
         }
       }
     ]
+  });
+
+  var header_slider = $(".concert-header-slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: false,
+    dots: true,
+    centerMode: false,
+    arrows: false
   });
 
   var tv_slider = $(".tv-slider").slick({
@@ -279,14 +313,6 @@ $(document).ready(function() {
   });
 
   var myTag = document.querySelectorAll(".a-poster-text-white");
-  console.log(myTag);
-  var arreglo = [];
-  arreglo.push(myTag);
-  console.log(arreglo.length);
-  if (myTag.length > 15) {
-    var truncated = myTag.trim().substring(0, 100) + "…";
-    //$(".a-poster-text-white").text(truncated);
-  }
 
   /*** Fin Slider "Ahora en TV"  ***/
 

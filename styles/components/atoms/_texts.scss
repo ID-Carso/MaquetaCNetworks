@@ -552,3 +552,37 @@
 }
 
 /*End Claro Canal*/
+
+/*Concert channel*/
+
+.today-concert-title {
+  @include title-section($colorWhite, $titleSection);
+  padding: 20px 0px;
+}
+
+.today-concert-title span {
+  color: $concertColorTitle;
+}
+
+.concert-title {
+  @include title-section($concertColorTitle, $titleSection);
+  padding-bottom: 6px;
+}
+
+.concert-subtitle {
+  @include title-section($colorWhite, $posterTitleResponsive, $montserratLight);
+  padding-bottom: 20px;
+}
+
+.concert-subtitle span {
+  font-family: $montserratSemiBold;
+}
+
+.concert-container .advertising-text {
+  color: white;
+}
+
+.concert-container .footer-title {
+  color: white;
+  text-align: center;
+}

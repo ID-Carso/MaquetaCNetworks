@@ -1,127 +1,167 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
 
-    <title>Paises</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Paises</title>
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css">
 	<link rel="stylesheet" href="./styles/style.css" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	
-    <script src="slick-master/slick/slick.js"></script>
-    <script src="./js/main.js"></script>
+
+	<script src="slick-master/slick/slick.js"></script>
+	<script src="./js/main.js"></script>
 	<link rel="stylesheet" href="./styles/css.css" type="text/css">
-    <script>
-      $(window).load(function(){
-        $('#page-loader').fadeOut(500);
-          });
-    </script>
+	<script>
+		$(window).load(function () {
+			$('#page-loader').fadeOut(500);
+		});
+	</script>
 </head>
 
 <body class="fondo">
-		<div id="page-loader"><span class="preloader-interior"></span></div>
-    <header class="estilo"><img src="images/paises/claro-networks-logo.svg" class="paises-image"></header>
+	<div id="page-loader"><span class="preloader-interior"></span></div>
+	<header class="estilo"><img src="images/paises/claro-networks-logo.svg" class="paises-image"></header>
 
-    <div class="container">
-        <div class="paises col-md-12 fondopaises ">
-            <p class="select_paises">Selecciona tu país</p><!-- main countries -->
+	<div class="container">
+		<div class="paises col-md-12 fondopaises ">
+			<p class="select_paises">Selecciona tu país</p><!-- main countries -->
 
-            <div class="row">
-                <!-- col 1 -->
+			<div class="row">
+				<!-- col 1 -->
 
-                <div class="col-sm-3 offset-3 col-md-4 offset-md-0 col-lg-4 offset-lg-1">
-                  <a href="index.html"> <div class="name_paises espacio">
-                        <img src="images/paises/usa.svg" class="Icon_paises">USA
-                    </div></a> 
+				<div class="col-sm-3 offset-3 col-md-4 offset-md-0 col-lg-4 offset-lg-1">
+					<a href="index.php">
+						<div class="name_paises espacio">
+							<img src="images/paises/usa.svg" class="Icon_paises">USA
+						</div>
+					</a>
 
-                    <a href="index.html"><div class="name_paises espacio">
-                        <img src="images/paises/argentina.svg" class="Icon_paises">Argentina
-                    </div></a>
-                    
-                    <a href="index.html"><div class="name_paises espacio">
-			            <img src="images/paises/brazil.svg" class="Icon_paises">Brazil
-			        </div></a>
-			        
-			        <a href="index.html"><div class="name_paises espacio">
-			            <img src="images/paises/chile.svg" class="Icon_paises">Chile
-			        </div></a>
-			        
-			        <a href="index.html"><div class="name_paises espacio">
-			            <img src="images/paises/colombia.svg" class="Icon_paises">Colombia
-			        </div></a>
-			        
-			        <a href="index.html"><div class="name_paises espacio">
-			            <img src="images/paises/costa-rica.svg" class="Icon_paises">Costa Rica
-					</div></a>
-					
+					<a href="index.html">
+						<div class="name_paises espacio">
+							<img src="images/paises/argentina.svg" class="Icon_paises">Argentina
+						</div>
+					</a>
+
+					<a href="index.html">
+						<div class="name_paises espacio">
+							<img src="images/paises/brazil.svg" class="Icon_paises">Brazil
+						</div>
+					</a>
+
+					<a href="index.html">
+						<div class="name_paises espacio">
+							<img src="images/paises/chile.svg" class="Icon_paises">Chile
+						</div>
+					</a>
+
+					<a href="index.html">
+						<div class="name_paises espacio">
+							<img src="images/paises/colombia.svg" class="Icon_paises">Colombia
+						</div>
+					</a>
+
+					<a href="index.html">
+						<div class="name_paises espacio">
+							<img src="images/paises/costa-rica.svg" class="Icon_paises">Costa Rica
+						</div>
+					</a>
+
 				</div>
-                
-                <!-- col 2 -->
-                <div class="col-sm-3 offset-3 col-md-4 offset-md-0 col-lg-4 offset-lg-0">
-	                <a href="index.html"><div class="name_paises espacio">
-			            <img src="images/paises/ecuador.svg" class="Icon_paises">Ecuador
-					</div></a>
-					
-			        <a href="index.html"><div class="name_paises espacio">
-			            <img src="images/paises/el-salvador.svg" class="Icon_paises">El Salvador
-			        </div></a>
-			
-			       <a href="index.html"><div class="name_paises espacio">
-			            <img src="images/paises/guatemala.svg" class="Icon_paises">Guatemala
-			        </div></a>
-			        
-			        <a href="index.html"><div class="name_paises espacio">
-			            <img src="images/paises/honduras.svg" class="Icon_paises">Honduras
-			        </div></a>
-			
-			        <a href="index.html"><div class="name_paises espacio">
-			            <img src="images/paises/nicaragua.svg" class="Icon_paises">Nicaragua
-			        </div></a>
-			
-			        <a href="index.html"><div class="name_paises espacio">
-			            <img src="images/paises/panama.svg" class="Icon_paises">Panama
-					</div></a>
-					
-                </div>
-                
-                <!-- col 3 -->
-                <div class="col-sm-3 offset-3 col-md-4 offset-md-0 col-lg-3 offset-lg-0">
-	                <a href="index.html"><div class="name_paises espacio">
-			            <img src="images/paises/paragay.svg" class="Icon_paises">Paraguay
-			        </div></a>
-			
-			        <a href="index.html"><div class="name_paises espacio">
-			            <img src="images/paises/peru.svg" class="Icon_paises">Peru
-			        </div></a>
-			
-			        <a href="index.html"><div class="name_paises espacio">
-			            <img src="images/paises/puerto-rico.svg" class="Icon_paises">Puerto Rico
-			        </div></a>
-			        
-			        <a href="index.html"><div class="name_paises espacio">
-			            <!-- Prueba Rogelio , los estilos directos aplicarlos a tus hojas de estilo indicada. -->
-			
-			            <div class="row">
-			                <div class="col align-middle" style="display: flex; width: 20%; max-width: 29px; min-width: 29px;padding: 0;  margin-left: 16px;"><img src="images/paises/dominican-republic.svg" class="Icon_paises"></div>
-			
-			                <div class="col" style="width: 50%; margin: 0 20px 0 14px; padding: 0;">
-			                    Dominican Republic
-			                </div>
-			            </div><!-- Prueba Rogelio , los estilos directos aplicarlos a tus hojas de estilo indicada. -->
-			        </div></a>
-			
-			        <a href="index.html"><div class="name_paises espacio">
-			            <img src="images/paises/uruguay.svg" class="Icon_paises">Uruguay
-			        </div></a>
-                </div>
-            </div>
 
-            <hr class="hr1">
+				<!-- col 2 -->
+				<div class="col-sm-3 offset-3 col-md-4 offset-md-0 col-lg-4 offset-lg-0">
+					<a href="index.html">
+						<div class="name_paises espacio">
+							<img src="images/paises/ecuador.svg" class="Icon_paises">Ecuador
+						</div>
+					</a>
 
-            <footer class="pie_paises">©2019 Claro Networks Todos los derechos reservados</footer>
-        </div>
-    </div>
+					<a href="index.html">
+						<div class="name_paises espacio">
+							<img src="images/paises/el-salvador.svg" class="Icon_paises">El Salvador
+						</div>
+					</a>
+
+					<a href="index.html">
+						<div class="name_paises espacio">
+							<img src="images/paises/guatemala.svg" class="Icon_paises">Guatemala
+						</div>
+					</a>
+
+					<a href="index.html">
+						<div class="name_paises espacio">
+							<img src="images/paises/honduras.svg" class="Icon_paises">Honduras
+						</div>
+					</a>
+
+					<a href="index.html">
+						<div class="name_paises espacio">
+							<img src="images/paises/nicaragua.svg" class="Icon_paises">Nicaragua
+						</div>
+					</a>
+
+					<a href="index.html">
+						<div class="name_paises espacio">
+							<img src="images/paises/panama.svg" class="Icon_paises">Panama
+						</div>
+					</a>
+
+				</div>
+
+				<!-- col 3 -->
+				<div class="col-sm-3 offset-3 col-md-4 offset-md-0 col-lg-3 offset-lg-0">
+					<a href="index.html">
+						<div class="name_paises espacio">
+							<img src="images/paises/paragay.svg" class="Icon_paises">Paraguay
+						</div>
+					</a>
+
+					<a href="index.html">
+						<div class="name_paises espacio">
+							<img src="images/paises/peru.svg" class="Icon_paises">Peru
+						</div>
+					</a>
+
+					<a href="index.html">
+						<div class="name_paises espacio">
+							<img src="images/paises/puerto-rico.svg" class="Icon_paises">Puerto Rico
+						</div>
+					</a>
+
+					<a href="index.html">
+						<div class="name_paises espacio">
+							<!-- Prueba Rogelio , los estilos directos aplicarlos a tus hojas de estilo indicada. -->
+
+							<div class="row">
+								<div class="col align-middle"
+									style="display: flex; width: 20%; max-width: 29px; min-width: 29px;padding: 0;  margin-left: 16px;">
+									<img src="images/paises/dominican-republic.svg" class="Icon_paises"></div>
+
+								<div class="col" style="width: 50%; margin: 0 20px 0 14px; padding: 0;">
+									Dominican Republic
+								</div>
+							</div>
+							<!-- Prueba Rogelio , los estilos directos aplicarlos a tus hojas de estilo indicada. -->
+						</div>
+					</a>
+
+					<a href="index.html">
+						<div class="name_paises espacio">
+							<img src="images/paises/uruguay.svg" class="Icon_paises">Uruguay
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<hr class="hr1">
+
+			<footer class="pie_paises">©2019 Claro Networks Todos los derechos reservados</footer>
+		</div>
+	</div>
 </body>
+
 </html>

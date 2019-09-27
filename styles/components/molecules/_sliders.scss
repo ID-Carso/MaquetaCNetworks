@@ -3,6 +3,14 @@
   margin-bottom: 32px;
 }
 
+.concert-slider {
+  padding-bottom: 50px;
+}
+
+.concert-container .slick-dotted.slick-slider {
+  margin-bottom: 0px !important;
+}
+
 .slick-slider .slick-list {
   padding: 0px 15px 0px 15px !important;
 }
@@ -48,4 +56,72 @@
 #next-week-slider .slick-dots li button:before {
   color: rgba(255, 255, 255, 0.6);
   opacity: 1;
+}
+
+.concert-header-slider .slick-list {
+  padding: 0px !important;
+}
+
+.concert-slide {
+  height: 205px;
+  background: #0d1aa0;
+}
+
+.concert-header-slider .slick-dots {
+  bottom: 40px;
+}
+
+.concert-header-slider .slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 0.75;
+}
+
+.concert-header-slider .slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.concert-container .slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 0.75;
+}
+
+.concert-container .slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.concert-container .slick-dots {
+  position: absolute;
+  bottom: inherit;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
