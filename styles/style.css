@@ -120,6 +120,7 @@ h6 {
 
 .poster-title-margin {
   margin: 8px 0px 8px 16px;
+  overflow: hidden;
 }
 
 .margin-top-por {
@@ -214,7 +215,7 @@ h6 {
   src: url(../../../fonts/Montserrat-Black.ttf);
 }
 
-.a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-claro-channel-subtitle-bold, .a-subtitle, .a-claro-cinema-title, .advertising-title, .advertising-subtitle, .a-claro-sports-title, .poster-title-sport, .footer-title, .a-today-claro-title, .a-next-claro-title, .a-next-claro-subtitle, .a-dontLose-claro-subtitle, .a-dontLose-claro-title {
+.a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-claro-channel-subtitle-bold, .a-subtitle, .a-claro-cinema-title, .advertising-title, .advertising-subtitle, .a-claro-sports-title, .poster-title-sport, .footer-title, .footer-title-claro, .a-today-claro-title, .a-next-claro-title, .a-next-claro-subtitle, .a-dontLose-claro-subtitle, .a-dontLose-claro-title, .today-concert-title, .concert-title, .concert-subtitle {
   text-align: center;
   text-transform: uppercase;
 }
@@ -292,6 +293,8 @@ h6 {
   font-size: 14px;
   color: #ffffff;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .a-poster-text-black {
@@ -350,6 +353,12 @@ h6 {
 .footer-title {
   font-size: 24px;
   color: #6031ad;
+  font-family: "Montserrat-Black";
+}
+
+.footer-title-claro {
+  font-size: 24px;
+  color: #e1261c;
   font-family: "Montserrat-Black";
 }
 
@@ -445,11 +454,16 @@ h6 {
 .text-footer-regular,
 .text-footer-bold {
   text-align: center;
+  font-size: 10px;
 }
 
 .other-text-regular,
 .o-footer-section .aviso-priv-blue {
   margin-bottom: 41px;
+}
+
+.terms-conditions-mobile .aviso-priv-blue {
+  font-size: 10px;
 }
 
 .terms-conditions-desktop .aviso-priv-blue:nth-child(1) {
@@ -799,6 +813,45 @@ h6 {
 }
 
 /*End Claro Canal*/
+/*Concert channel*/
+.today-concert-title {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Montserrat-Black";
+  padding: 20px 0px;
+}
+
+.today-concert-title span {
+  color: #3cc1ff;
+}
+
+.concert-title {
+  font-size: 24px;
+  color: #3cc1ff;
+  font-family: "Montserrat-Black";
+  padding-bottom: 6px;
+}
+
+.concert-subtitle {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Montserrat-Light";
+  padding-bottom: 20px;
+}
+
+.concert-subtitle span {
+  font-family: "Montserrat-SemiBold";
+}
+
+.concert-container .advertising-text {
+  color: white;
+}
+
+.concert-container .footer-title {
+  color: white;
+  text-align: center;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -811,6 +864,12 @@ h6 {
   outline: none !important;
   font-size: 12px;
   font-family: "Montserrat-SemiBold";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .btn-red {
@@ -823,6 +882,13 @@ h6 {
 
 .btn-pink {
   background: #ff00d2;
+}
+
+.btn-pink::after {
+  content: "+";
+  color: white;
+  font-size: 17px;
+  margin-left: 5px;
 }
 
 .btn-purple {
@@ -912,32 +978,37 @@ h6 {
 
 .a-cinema-rectangle {
   background: #01cad5;
-  width: 100%;
 }
 
 .a-sports-rectangle {
   background: #f3e626;
-  width: 100%;
 }
 
 .a-concert-rectangle {
   background: #0068ff;
-  width: 100%;
+}
+
+.thumbnail-info-image {
+  float: left;
+  width: 15%;
+}
+
+.thumbnail-info-title {
+  float: left;
+  width: 84%;
+  margin-right: 1%;
 }
 
 .a-claro-rectangle {
   background: #e1261c;
-  width: 100%;
 }
 
 .a-vision-rectangle {
   background: #eb0d6c;
-  width: 100%;
 }
 
 .a-sports-rectangle {
   background: #f3e626;
-  width: 100%;
 }
 
 .no-gutters {
@@ -997,7 +1068,7 @@ h6 {
   text-align: center;
 }
 
-.horario-container {
+.showtime-container {
   position: absolute;
   height: 68px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0)));
@@ -1008,6 +1079,7 @@ h6 {
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 .poster-image {
+  position: relative;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1138,6 +1210,22 @@ h6 {
 /*.login-item {
   width: $navItemWidth;
 }*/
+.showtime-clock {
+  width: 20px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.a-cinema-rectangle .showtime-clock {
+  -webkit-filter: invert(0);
+          filter: invert(0);
+}
+
+.a-sports-rectangle .showtime-clock {
+  -webkit-filter: invert(0);
+          filter: invert(0);
+}
+
 .poster-image-left {
   height: 100%;
 }
@@ -1147,6 +1235,7 @@ h6 {
 }
 
 .poster-image-small {
+  position: relative;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1254,8 +1343,8 @@ h6 {
 }
 
 .logo-sidebar {
-  margin-top: 87px;
-  margin-bottom: 44px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .listo {
@@ -1266,7 +1355,7 @@ h6 {
 .claro-thumbnail {
   background: #797979;
   overflow: hidden;
-  padding-bottom: 50%;
+  padding-bottom: 41%;
   position: relative;
   width: 100%;
 }
@@ -1288,6 +1377,15 @@ h6 {
   width: 100%;
 }
 
+/*Concert channel*/
+.thumbnail {
+  background: #797979;
+  overflow: hidden;
+  padding-bottom: 41%;
+  position: relative;
+  width: 100%;
+}
+
 .hr1 {
   display: none;
 }
@@ -1297,7 +1395,7 @@ h6 {
 }
 
 .aviso-border {
-  border-bottom: 2px solid #a3a3a3;
+  border-bottom: 1px solid #a3a3a3;
   margin-bottom: 22px;
 }
 
@@ -1570,6 +1668,10 @@ input[type="checkbox"]:checked + label::before {
   transition: all 0.5s ease 0s;
 }
 
+.menu-tablet {
+  display: none;
+}
+
 .nav-content {
   margin: 16px;
   position: relative;
@@ -1710,6 +1812,14 @@ input[type="checkbox"]:checked + label::before {
   margin-bottom: 32px;
 }
 
+.concert-slider {
+  padding-bottom: 50px;
+}
+
+.concert-container .slick-dotted.slick-slider {
+  margin-bottom: 0px !important;
+}
+
 .slick-slider .slick-list {
   padding: 0px 15px 0px 15px !important;
 }
@@ -1730,6 +1840,86 @@ input[type="checkbox"]:checked + label::before {
 #dontLose-claro-slider {
   padding-bottom: 58px;
   margin-bottom: 52px;
+}
+
+#dontLose-claro-slider .slick-dots li.slick-active button:before,
+#next-week-slider .slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 1;
+}
+
+#dontLose-claro-slider .slick-dots li button:before,
+#next-week-slider .slick-dots li button:before {
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+}
+
+.concert-header-slider .slick-list {
+  padding: 0px !important;
+}
+
+.concert-slide {
+  height: 205px;
+  background: #0d1aa0;
+}
+
+.concert-header-slider .slick-dots {
+  bottom: 40px;
+}
+
+.concert-header-slider .slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 0.75;
+}
+
+.concert-header-slider .slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.concert-container .slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 0.75;
+}
+
+.concert-container .slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.concert-container .slick-dots {
+  position: absolute;
+  bottom: inherit;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .large-poster-width {
@@ -1803,6 +1993,46 @@ input[type="checkbox"]:checked + label::before {
   margin-right: auto;
 }
 
+.concert-channel-tablet {
+  display: none;
+}
+
+.concert-channel-desktop {
+  display: none;
+}
+
+.cinema-claro-tablet {
+  display: none;
+}
+
+.cinema-claro-desktop {
+  display: none;
+}
+
+.nuestra-vision-tablet {
+  display: none;
+}
+
+.nuestra-vision-desktop {
+  display: none;
+}
+
+.claro-canal-tablet {
+  display: none;
+}
+
+.claro-canal-desktop {
+  display: none;
+}
+
+.claro-sports-tablet {
+  display: none;
+}
+
+.claro-sports-desktop {
+  display: none;
+}
+
 .o-advertising-section {
   margin: 50px auto 55px auto;
   padding-left: 5%;
@@ -1810,11 +2040,11 @@ input[type="checkbox"]:checked + label::before {
   max-width: 600px;
 }
 
-.terms-conditions-desktop {
+.advertising-section-tablet {
   display: none;
 }
 
-.footer-companies-desktop {
+.advertising-section-desktop {
   display: none;
 }
 
@@ -1829,6 +2059,10 @@ input[type="checkbox"]:checked + label::before {
 
 .dont-lose-claro {
   background: #262626;
+}
+
+.concert-container {
+  background: #1f2887;
 }
 
 .header {
@@ -1852,6 +2086,10 @@ input[type="checkbox"]:checked + label::before {
   top: 87%;
 }
 
+.concert-channel-header .header {
+  background: transparent;
+}
+
 .hamburguer-menu {
   position: fixed;
   width: 350px;
@@ -1868,6 +2106,14 @@ input[type="checkbox"]:checked + label::before {
 .section-home-footer {
   padding-top: 25px;
   padding-bottom: 40px;
+}
+
+.footer-companies-desktop {
+  display: none;
+}
+
+.terms-conditions-desktop {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1891,6 +2137,9 @@ input[type="checkbox"]:checked + label::before {
     top: 0%;
     -webkit-transform: inherit;
             transform: inherit;
+  }
+  .menu-responsive-tablet {
+    width: 25px;
   }
   .logo {
     width: 85px;
@@ -2074,6 +2323,12 @@ input[type="checkbox"]:checked + label::before {
     font-size: 16px;
   }
   /*Molecules*/
+  .menu-tablet {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
   .nav-content {
     margin: 0px;
     position: relative;
@@ -2146,22 +2401,58 @@ input[type="checkbox"]:checked + label::before {
   .o-concert-section {
     background-color: #3e0a43;
   }
+  .concert-channel-mobile {
+    display: none;
+  }
+  .concert-channel-tablet {
+    display: block;
+  }
   .o-cinema-section {
     background-image: url(../images/home/claro-cinema-background.png);
     background-repeat: no-repeat;
     background-position: left;
     background-origin: content-box;
   }
+  .cinema-claro-mobile {
+    display: none;
+  }
+  .cinema-claro-tablet {
+    display: block;
+  }
   .o-vision-section {
     background-color: #d8d8d8;
   }
+  .nuestra-vision-tablet {
+    display: block;
+  }
+  .nuestra-vision-mobile {
+    display: none;
+  }
   .o-claro-section {
     background: #c35353;
+  }
+  .claro-canal-tablet {
+    display: block;
+  }
+  .claro-canal-mobile {
+    display: none;
   }
   .o-sports-section {
     background-image: url(../images/home/claro-sports-background.png);
     background-repeat: no-repeat;
     background-origin: content-box;
+  }
+  .claro-sports-tablet {
+    display: block;
+  }
+  .claro-sports-mobile {
+    display: none;
+  }
+  .advertising-section-tablet {
+    display: block;
+  }
+  .advertising-section-mobile {
+    display: none;
   }
   .margin-bottom-slider {
     margin-bottom: 80px;
@@ -2278,6 +2569,9 @@ input[type="checkbox"]:checked + label::before {
     font-size: 15px;
     font-family: "Montserrat-SemiBold";
   }
+  .menu-responsive-tablet {
+    display: none;
+  }
   /*Footer*/
   .footer-img {
     width: 80px;
@@ -2304,6 +2598,12 @@ input[type="checkbox"]:checked + label::before {
     text-align: left;
   }
   /***  MOLECULES  ***/
+  .menu {
+    display: none;
+  }
+  .menu-tablet {
+    display: block;
+  }
   .terms-conditions-mobile {
     display: none;
   }
@@ -2359,22 +2659,58 @@ input[type="checkbox"]:checked + label::before {
   .o-concert-section {
     background-color: #3e0a43;
   }
+  .concert-channel-mobile {
+    display: none;
+  }
+  .concert-channel-desktop {
+    display: block;
+  }
   .o-cinema-section {
     background-image: url(../images/home/claro-cinema-background.png);
     background-repeat: no-repeat;
     background-position: left;
     background-origin: content-box;
   }
+  .cinema-claro-mobile {
+    display: none;
+  }
+  .cinema-claro-desktop {
+    display: block;
+  }
   .o-vision-section {
     background-color: #d8d8d8;
   }
+  .nuestra-vision-mobile {
+    display: none;
+  }
+  .nuestra-vision-desktop {
+    display: block;
+  }
   .o-claro-section {
     background: #c35353;
+  }
+  .claro-canal-mobile {
+    display: none;
+  }
+  .claro-canal-desktop {
+    display: block;
   }
   .o-sports-section {
     background-image: url(../images/home/claro-sports-background.png);
     background-repeat: no-repeat;
     background-origin: content-box;
+  }
+  .claro-sports-mobile {
+    display: none;
+  }
+  .claro-sports-desktop {
+    display: block;
+  }
+  .advertising-section-mobile {
+    display: none;
+  }
+  .advertising-section-desktop {
+    display: block;
   }
   .o-concert-section,
   .o-cinema-section,
@@ -2387,6 +2723,9 @@ input[type="checkbox"]:checked + label::before {
     max-width: 100%;
     padding-left: 57px;
     padding-right: 57px;
+  }
+  .terms-conditions-desktop {
+    display: block;
   }
   /*-------------------*/
   .header-details {
@@ -2543,7 +2882,7 @@ input[type="checkbox"]:checked + label::before {
     height: 36px;
   }
   .poster-title-margin {
-    margin: 0px;
+    margin: 10px;
   }
   .small-poster {
     height: 144px;
@@ -2562,7 +2901,7 @@ input[type="checkbox"]:checked + label::before {
     text-align: left;
   }
   .concert-footer-img {
-    width: 72px;
+    width: 120px;
   }
   .concert-img-white {
     -webkit-filter: invert(1);
@@ -2607,6 +2946,9 @@ input[type="checkbox"]:checked + label::before {
     font-size: 15px;
     font-family: "Montserrat-SemiBold";
   }
+  .menu-responsive-tablet {
+    display: none;
+  }
   /*Footer*/
   .footer-img {
     width: 80px;
@@ -2633,8 +2975,20 @@ input[type="checkbox"]:checked + label::before {
     text-align: left;
   }
   /***  MOLECULES  ***/
+  .menu {
+    display: none;
+  }
+  .menu-tablet {
+    display: block;
+  }
   .terms-conditions-mobile {
     display: none;
+  }
+  .terms-conditions-desktop {
+    display: block;
+  }
+  .footer-companies-desktop {
+    display: block;
   }
   .nav-content {
     margin: 0px;
@@ -2688,22 +3042,58 @@ input[type="checkbox"]:checked + label::before {
   .o-concert-section {
     background-color: #3e0a43;
   }
+  .concert-channel-mobile {
+    display: none;
+  }
+  .concert-channel-desktop {
+    display: block;
+  }
   .o-cinema-section {
     background-image: url(../images/home/claro-cinema-background.png);
     background-repeat: no-repeat;
     background-position: left;
     background-origin: content-box;
   }
+  .cinema-claro-mobile {
+    display: none;
+  }
+  .cinema-claro-desktop {
+    display: block;
+  }
   .o-vision-section {
     background-color: #d8d8d8;
   }
+  .nuestra-vision-mobile {
+    display: none;
+  }
+  .nuestra-vision-desktop {
+    display: block;
+  }
   .o-claro-section {
     background: #c35353;
+  }
+  .claro-canal-mobile {
+    display: none;
+  }
+  .claro-canal-desktop {
+    display: block;
   }
   .o-sports-section {
     background-image: url(../images/home/claro-sports-background.png);
     background-repeat: no-repeat;
     background-origin: content-box;
+  }
+  .claro-sports-mobile {
+    display: none;
+  }
+  .claro-sports-desktop {
+    display: block;
+  }
+  .advertising-section-mobile {
+    display: none;
+  }
+  .advertising-section-desktop {
+    display: block;
   }
   .o-concert-section,
   .o-cinema-section,

@@ -25,16 +25,16 @@
     <header class="claro-canal-header">
       <div class="hamburguer-menu">
         <div class="text-center">
-          <img
+          <a href="index.php"><img
             src="./images/menu/claro-networks-sidebar.svg"
             alt=""
             class="logo-sidebar"
-          />
+          /></a>
         </div>
         <div class="sidebar-content">
           <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
             <a herf="#" class="sidebar-link"
-              ><span class="dropdown-p">Canal Claro</span></a
+              ><span class="dropdown-p active-sidebar-item">Canal Claro</span></a
             >
           </div>
           <!--<div class="dropdown-content">
@@ -43,8 +43,8 @@
               <p class="dropdown-p">ebñrkjg</p>
             </div>-->
           <div class="sidebar-item sidebar-border-bottom">
-            <a class="sidebar-link" href="#"
-              ><span class="dropdown-p active-sidebar-item"
+            <a class="sidebar-link" href="concert-channel.php"
+              ><span class="dropdown-p"
                 >Concert Channel</span
               ></a
             >
@@ -154,12 +154,15 @@
     </header>
     <main class="today">
       <section class="today-canal-claro">
-        <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
+        <div class="col-12">
+          <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
+        </div>
+        
         <div class="slick-slider small-poster" id="today-claro-slider">
           <div class="row no-gutters">
             <div class="col columnGap">
               <div class="claro-thumbnail">
-                <div class="horario-container">
+                <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
                 </div>
               </div>
@@ -175,7 +178,7 @@
           <div class="row no-gutters">
             <div class="col columnGap">
               <div class="claro-thumbnail">
-                <div class="horario-container">
+                <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
                 </div>
               </div>
@@ -191,7 +194,7 @@
           <div class="row no-gutters">
             <div class="col columnGap">
               <div class="claro-thumbnail">
-                <div class="horario-container">
+                <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
                 </div>
               </div>
@@ -207,10 +210,13 @@
         </div>
       </section>
       <section class="next-week-claro">
-        <h1 class="a-next-claro-title">próxima semana</h1>
-        <h2 class="a-next-claro-subtitle">
-          Ve un <span>adelanto</span> de la programación de DFGHDFHG
-        </h2>
+        <div class="col-12">
+          <h1 class="a-next-claro-title">próxima semana</h1>
+          <h2 class="a-next-claro-subtitle">
+            Ve un <span>adelanto</span> de la programación de DFGHDFHG
+          </h2>
+        </div>
+
         <div class="slick-slider small-poster" id="next-week-slider">
           <div class="row no-gutters">
             <div class="col columnGap">
@@ -254,15 +260,17 @@
         </div>
       </section>
       <section class="dont-lose-claro">
-        <h1 class="a-dontLose-claro-title">no te pierdas</h1>
-        <h2 class="a-dontLose-claro-subtitle">
-          ve un <span>adelanto</span> de la programación
-        </h2>
+        <div class="col-12">
+          <h1 class="a-dontLose-claro-title">no te pierdas</h1>
+          <h2 class="a-dontLose-claro-subtitle">
+            ve un <span>adelanto</span> de la programación
+          </h2>
+        </div>
         <div class="slick-slider small-poster" id="dontLose-claro-slider">
           <div class="row no-gutters">
             <div class="col columnGap">
               <div class="claro-thumbnail">
-                <div class="horario-container">
+                <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
                 </div>
               </div>
@@ -278,7 +286,7 @@
           <div class="row no-gutters">
             <div class="col columnGap">
               <div class="claro-thumbnail">
-                <div class="horario-container">
+                <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
                 </div>
               </div>
@@ -294,7 +302,7 @@
           <div class="row no-gutters">
             <div class="col columnGap">
               <div class="claro-thumbnail">
-                <div class="horario-container">
+                <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
                 </div>
               </div>
@@ -316,34 +324,34 @@
         <div class="">
           <div class="row no-gutters">
             <div class="col-12">
-              <h1 class="footer-title">¡síguenos!</h1>
+              <h1 class="footer-title-claro">¡síguenos!</h1>
             </div>
             <div class="social-media">
               <div class="col ">
                 <img
                   class="social-icon"
-                  src="./images/home/faceboook-icon.svg"
+                  src="./images/redes/facebook-icon-red.svg"
                   alt=""
                 />
               </div>
               <div class="col">
                 <img
                   class="social-icon"
-                  src="./images/home/instagram-icon.svg"
+                  src="./images/redes/insta-icon-red.svg"
                   alt=""
                 />
               </div>
               <div class="col">
                 <img
                   class="social-icon"
-                  src="./images/home/twitter-icon.svg"
+                  src="./images/redes/twitter-icon-red.svg"
                   alt=""
                 />
               </div>
               <div class="col">
                 <img
                   class="social-icon"
-                  src="./images/home/youtube-icon.svg"
+                  src="./images/redes/youtube-icon-red.svg"
                   alt=""
                 />
               </div>

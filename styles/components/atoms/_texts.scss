@@ -79,6 +79,8 @@
 .a-poster-text-white {
   @include poster-text($textWhite, $posterTitleResponsive);
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .a-poster-text-black {
@@ -125,6 +127,10 @@
 
 .footer-title {
   @include title-section($purpleColor, $titleSection);
+}
+
+.footer-title-claro {
+  @include title-section($claroRectangle, $titleSection);
 }
 
 .name_paises {
@@ -219,11 +225,16 @@
 .text-footer-regular,
 .text-footer-bold {
   text-align: center;
+  font-size: 10px;
 }
 
 .other-text-regular,
 .o-footer-section .aviso-priv-blue {
   margin-bottom: 41px;
+}
+
+.terms-conditions-mobile .aviso-priv-blue {
+  font-size: 10px;
 }
 
 .terms-conditions-desktop .aviso-priv-blue:nth-child(1) {
@@ -540,6 +551,7 @@
   color: #717272;
 }
 
+<<<<<<< HEAD
 .alert {
   font-family: $montserratRegular;
   font-size: 14px;
@@ -558,3 +570,40 @@
 }
 
 /*End Claro Canal*/
+=======
+/*End Claro Canal*/
+
+/*Concert channel*/
+
+.today-concert-title {
+  @include title-section($colorWhite, $titleSection);
+  padding: 20px 0px;
+}
+
+.today-concert-title span {
+  color: $concertColorTitle;
+}
+
+.concert-title {
+  @include title-section($concertColorTitle, $titleSection);
+  padding-bottom: 6px;
+}
+
+.concert-subtitle {
+  @include title-section($colorWhite, $posterTitleResponsive, $montserratLight);
+  padding-bottom: 20px;
+}
+
+.concert-subtitle span {
+  font-family: $montserratSemiBold;
+}
+
+.concert-container .advertising-text {
+  color: white;
+}
+
+.concert-container .footer-title {
+  color: white;
+  text-align: center;
+}
+>>>>>>> 0a84cdcd28b20e03580a6e48d65a5153d13f24c0

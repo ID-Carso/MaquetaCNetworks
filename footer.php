@@ -9,45 +9,52 @@
                         <p class="text-footer-regular">@2019 Claro tv. Todos los derechos reservados</p>
                         <div class="d-flex justify-content-between">
                             <div>
-                                <p class="text-footer-bold">Términos y condiciones</p>
+                                <a href="#">
+                                    <p class="aviso-priv-blue">Términos y condiciones</p>
+                                </a>          
                             </div>
                             <div>
-                                <p class="text-footer-bold">Aviso de privacidad</p>
+                                <a href="#">
+                                    <p class="aviso-priv-blue">Aviso de privacidad</p> 
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!--Términos y condiciones para desktop-->
-            <div class="row aviso-border terms-conditions-desktop align-items-end">
-                <div class="col-12 col-md-10 col-lg-6 col-xl-6">
-                    <div class="logo-footer">
-                        <img src="./images/home/claro-grey.svg" alt="" class="claro-grey-img" />
-                    </div>
-                    <p class="text-footer-regular text-footer-basic">
-                        @2019 Claro tv. Todos los derechos reservados
-                    </p>
-                    <div class="d-flex">
-                        <div>
-                            <a href="#">
-                                <p class="aviso-priv-blue">Términos y condiciones</p>
-                            </a>
+            <div class="terms-conditions-desktop">
+                <div class="row aviso-border d-flex align-items-end">
+                    <div class="col-12 col-md-10 col-lg-6 col-xl-6">
+                        <div class="logo-footer">
+                            <img src="./images/home/claro-grey.svg" alt="" class="claro-grey-img" />
                         </div>
-                        <div>
-                            <a href="#">
-                                <p class="aviso-priv-blue">Aviso de privacidad</p>
-                            </a>
+                        <p class="text-footer-regular text-footer-basic">
+                            @2019 Claro tv. Todos los derechos reservados
+                        </p>
+                        <div class="d-flex">
+                            <div>
+                                <a href="#">
+                                    <p class="aviso-priv-blue">Términos y condiciones</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <p class="aviso-priv-blue">Aviso de privacidad</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-xl-6">
-                    <p class="other-text-regular text-right text-footer-basic">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    </p>
+                    <div class="col-lg-6 col-xl-6">
+                        <p class="other-text-regular text-right text-footer-basic">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        </p>
+                    </div>
                 </div>
             </div>
+
             <!--Div logos de compañías-->
-            <div class="footer-companies">
+            <div class="footer-companies col-12">
                 <div class="d-flex margin-bottom-footer">
                     <div class="col">
                         <img class="d-block m-auto footer-img" src="./images/home/fast-icon.svg" alt="">

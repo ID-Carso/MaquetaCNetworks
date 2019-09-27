@@ -48,6 +48,10 @@
     transform: inherit;
   }
 
+  .menu-responsive-tablet {
+    width: 25px;
+  }
+
   .logo {
     width: 85px;
     display: initial;
@@ -265,6 +269,14 @@
   }
 
   /*Molecules*/
+  .menu-tablet {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
   .nav-content {
     margin: 0px;
     position: relative;
@@ -340,6 +352,14 @@
     background-color: $backgroundConcertChannel;
   }
 
+  .concert-channel-mobile {
+    display: none;
+  }
+
+  .concert-channel-tablet {
+    display: block;
+  }
+
   .o-cinema-section {
     background-image: url(../images/home/claro-cinema-background.png);
     background-repeat: no-repeat;
@@ -347,18 +367,58 @@
     background-origin: content-box;
   }
 
+  .cinema-claro-mobile {
+    display: none;
+  }
+
+  .cinema-claro-tablet {
+    display: block;
+  }
+
   .o-vision-section {
     background-color: $backgroundGray;
+  }
+
+  .nuestra-vision-tablet {
+    display: block;
+  }
+
+  .nuestra-vision-mobile {
+    display: none;
   }
 
   .o-claro-section {
     background: #c35353;
   }
 
+  .claro-canal-tablet {
+    display: block;
+  }
+
+  .claro-canal-mobile {
+    display: none;
+  }
+
   .o-sports-section {
     background-image: url(../images/home/claro-sports-background.png);
     background-repeat: no-repeat;
     background-origin: content-box;
+  }
+
+  .claro-sports-tablet {
+    display: block;
+  }
+
+  .claro-sports-mobile {
+    display: none;
+  }
+
+  .advertising-section-tablet {
+    display: block;
+  }
+
+  .advertising-section-mobile {
+    display: none;
   }
 
   .margin-bottom-slider {
@@ -498,6 +558,10 @@
     font-family: $montserratSemiBold;
   }
 
+  .menu-responsive-tablet {
+    display: none;
+  }
+
   /*Footer*/
   .footer-img {
     width: 80px;
@@ -529,6 +593,14 @@
   }
 
   /***  MOLECULES  ***/
+
+  .menu {
+    display: none;
+  }
+
+  .menu-tablet {
+    display: block;
+  }
 
   .terms-conditions-mobile {
     display: none;
@@ -588,6 +660,14 @@
     background-color: $backgroundConcertChannel;
   }
 
+  .concert-channel-mobile {
+    display: none;
+  }
+
+  .concert-channel-desktop {
+    display: block;
+  }
+
   .o-cinema-section {
     background-image: url(../images/home/claro-cinema-background.png);
     background-repeat: no-repeat;
@@ -595,18 +675,58 @@
     background-origin: content-box;
   }
 
+  .cinema-claro-mobile {
+    display: none;
+  }
+
+  .cinema-claro-desktop {
+    display: block;
+  }
+
   .o-vision-section {
     background-color: $backgroundGray;
+  }
+
+  .nuestra-vision-mobile {
+    display: none;
+  }
+
+  .nuestra-vision-desktop {
+    display: block;
   }
 
   .o-claro-section {
     background: #c35353;
   }
 
+  .claro-canal-mobile {
+    display: none;
+  }
+
+  .claro-canal-desktop {
+    display: block;
+  }
+
   .o-sports-section {
     background-image: url(../images/home/claro-sports-background.png);
     background-repeat: no-repeat;
     background-origin: content-box;
+  }
+
+  .claro-sports-mobile {
+    display: none;
+  }
+
+  .claro-sports-desktop {
+    display: block;
+  }
+
+  .advertising-section-mobile {
+    display: none;
+  }
+
+  .advertising-section-desktop {
+    display: block;
   }
 
   .o-concert-section,
@@ -620,6 +740,10 @@
     max-width: 100%;
     padding-left: 57px;
     padding-right: 57px;
+  }
+
+  .terms-conditions-desktop {
+    display: block;
   }
 
   /*-------------------*/
@@ -807,7 +931,7 @@
   }
 
   .poster-title-margin {
-    margin: 0px;
+    margin: 10px;
   }
 
   .small-poster {
@@ -829,7 +953,7 @@
     text-align: left;
   }
   .concert-footer-img {
-    width: 72px;
+    width: 120px;
   }
 
   .concert-img-white {
@@ -884,6 +1008,10 @@
     font-family: $montserratSemiBold;
   }
 
+  .menu-responsive-tablet {
+    display: none;
+  }
+
   /*Footer*/
   .footer-img {
     width: 80px;
@@ -916,8 +1044,24 @@
 
   /***  MOLECULES  ***/
 
+  .menu {
+    display: none;
+  }
+
+  .menu-tablet {
+    display: block;
+  }
+
   .terms-conditions-mobile {
     display: none;
+  }
+
+  .terms-conditions-desktop {
+    display: block;
+  }
+
+  .footer-companies-desktop {
+    display: block;
   }
 
   .nav-content {
@@ -974,6 +1118,14 @@
     background-color: $backgroundConcertChannel;
   }
 
+  .concert-channel-mobile {
+    display: none;
+  }
+
+  .concert-channel-desktop {
+    display: block;
+  }
+
   .o-cinema-section {
     background-image: url(../images/home/claro-cinema-background.png);
     background-repeat: no-repeat;
@@ -981,18 +1133,58 @@
     background-origin: content-box;
   }
 
+  .cinema-claro-mobile {
+    display: none;
+  }
+
+  .cinema-claro-desktop {
+    display: block;
+  }
+
   .o-vision-section {
     background-color: $backgroundGray;
+  }
+
+  .nuestra-vision-mobile {
+    display: none;
+  }
+
+  .nuestra-vision-desktop {
+    display: block;
   }
 
   .o-claro-section {
     background: #c35353;
   }
 
+  .claro-canal-mobile {
+    display: none;
+  }
+
+  .claro-canal-desktop {
+    display: block;
+  }
+
   .o-sports-section {
     background-image: url(../images/home/claro-sports-background.png);
     background-repeat: no-repeat;
     background-origin: content-box;
+  }
+
+  .claro-sports-mobile {
+    display: none;
+  }
+
+  .claro-sports-desktop {
+    display: block;
+  }
+
+  .advertising-section-mobile {
+    display: none;
+  }
+
+  .advertising-section-desktop {
+    display: block;
   }
 
   .o-concert-section,

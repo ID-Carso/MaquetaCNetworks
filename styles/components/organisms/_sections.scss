@@ -16,6 +16,13 @@
   @include section();
 }
 
+.concert-channel-tablet {
+  display: none;
+}
+
+.concert-channel-desktop {
+  display: none;
+}
 .o-tv-section {
   @include section();
 }
@@ -24,16 +31,48 @@
   @include section();
 }
 
+.cinema-claro-tablet {
+  display: none;
+}
+
+.cinema-claro-desktop {
+  display: none;
+}
+
 .o-vision-section {
   @include section();
+}
+
+.nuestra-vision-tablet {
+  display: none;
+}
+
+.nuestra-vision-desktop {
+  display: none;
 }
 
 .o-claro-section {
   @include section();
 }
 
+.claro-canal-tablet {
+  display: none;
+}
+
+.claro-canal-desktop {
+  display: none;
+}
+
 .o-sports-section {
   @include section();
+}
+
+.claro-sports-tablet {
+  display: none;
+}
+
+.claro-sports-desktop {
+  display: none;
 }
 
 .o-footer-section {
@@ -47,11 +86,11 @@
   max-width: 600px;
 }
 
-.terms-conditions-desktop {
+.advertising-section-tablet {
   display: none;
 }
 
-.footer-companies-desktop {
+.advertising-section-desktop {
   display: none;
 }
 
@@ -66,4 +105,8 @@
 
 .dont-lose-claro {
   background: $dontLoseSection;
+}
+
+.concert-container {
+  background: #1f2887;
 }

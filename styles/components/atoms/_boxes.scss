@@ -8,10 +8,9 @@
   height: 52px;
 }
 
-@mixin poster-rectangle($background, $width: 100%) {
+@mixin poster-rectangle($background) {
   @extend %rectangle-basic;
   background: $background;
-  width: $width;
 }
 
 .a-cinema-rectangle {
@@ -24,6 +23,17 @@
 
 .a-concert-rectangle {
   @include poster-rectangle($concertRectangle);
+}
+
+.thumbnail-info-image {
+  float: left;
+  width: 15%;
+}
+
+.thumbnail-info-title {
+  float: left;
+  width: 84%;
+  margin-right: 1%;
 }
 
 .a-claro-rectangle {
@@ -81,7 +91,7 @@
   text-align: center;
 }
 
-.horario-container {
+.showtime-container {
   position: absolute;
   height: 68px;
   background-image: linear-gradient(
