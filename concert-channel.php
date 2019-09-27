@@ -79,7 +79,7 @@
                 </div>
             </nav>
             <div class="concert-header-slider">
-                <div class="concert-slide"></div>
+                <div class="concert-slide1"></div>
                 <div class="concert-slide"></div>
                 <div class="concert-slide"></div>
             </div>
@@ -199,7 +199,7 @@
         </section>
         <section class="today-concert-channel">
             <div class="col-12">
-                <h1 class="concert-title">próxima semana</h1>
+                <h1 class="concert-title">conciertos</h1>
                 <h2 class="concert-subtitle">ve un <span>adelanto</span> de la programación</h2>
             </div>
             <div class="slick-slider concert-slider small-poster">
@@ -255,7 +255,7 @@
         </section>
         <section class="today-concert-channel">
             <div class="col-12">
-                <h1 class="concert-title">próxima semana</h1>
+                <h1 class="concert-title">entrevistas</h1>
                 <h2 class="concert-subtitle">ve un <span>adelanto</span> de la programación</h2>
             </div>
             <div class="slick-slider concert-slider small-poster">

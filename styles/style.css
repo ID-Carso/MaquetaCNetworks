@@ -837,6 +837,10 @@ h6 {
   text-align: center;
 }
 
+.concert-container .text-footer-regular {
+  color: #838484;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -1892,6 +1896,12 @@ input[type="checkbox"]:checked + label::before {
   padding: 0;
   margin: 0;
   width: 100%;
+}
+
+.concert-slide1 {
+  background: url("../../../images/concert-channel/header-image.jpeg");
+  background-size: cover;
+  height: 205px;
 }
 
 .large-poster-width {
