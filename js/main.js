@@ -1,5 +1,5 @@
-$(document).ready(function() {
-  $(".ubicacion4").click(function() {
+$(document).ready(function () {
+  $(".ubicacion4").click(function () {
     var tipo = document.getElementById("password");
     if (tipo.type == "password") {
       tipo.type = "text";
@@ -8,7 +8,7 @@ $(document).ready(function() {
     }
   });
 
-  $(".singup-button").click(function() {
+  $(".singup-button").click(function () {
     var usuario, correo, password, expresion, mensaje, error;
 
     usuario = document.getElementById("usuario").value;
@@ -44,7 +44,7 @@ $(document).ready(function() {
   const inputPassword = $("#password");
   const caracteresMin = $(".caracteres-min");
   const listo = $(".listo");
-  inputPassword.keyup(function() {
+  inputPassword.keyup(function () {
     if (inputPassword.val().length < 8 && inputPassword.val().length >= 1) {
       caracteresMin.css("color", "red");
       listo.css("display", "none");
@@ -61,7 +61,7 @@ $(document).ready(function() {
 
   if (window.matchMedia("(max-width: 767px)").matches) {
     /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
-    $(document).on("scroll ontouchmove ontouchstart ontouchend", function() {
+    $(document).on("scroll ontouchmove ontouchstart ontouchend", function () {
       var posicionScroll = $(document).scrollTop();
       if (posicionScroll <= 0) {
         navbar.style.background =
@@ -965,21 +965,19 @@ $(document).ready(function() {
     dots: true,
     centerMode: false,
     arrows: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: false,
-          autoplaySpeed: 2000,
-          centerMode: true,
-          infinite: false,
-          arrows: false,
-          dots: true
-        }
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        centerMode: true,
+        infinite: false,
+        arrows: false,
+        dots: true
       }
-    ]
+    }]
   });
 
   var tv_slider = $(".tv-slider").slick({
@@ -991,8 +989,7 @@ $(document).ready(function() {
     infinite: false,
     arrows: false,
     dots: true,*/
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -1059,7 +1056,7 @@ $(document).ready(function() {
   const body = $("body");
   const html = $("html");
   const sidebar_content = document.querySelector(".sidebar-content");
-  menu.addEventListener("click", function(e) {
+  menu.addEventListener("click", function (e) {
     hamburguer.style.transform = "translate(0%)";
     invisible_button.style.width = "2000px";
     invisible_button.style.left = "100%";
@@ -1079,7 +1076,7 @@ $(document).ready(function() {
     sidebar_content.style.height = "100%";
   });
 
-  invisible_button.addEventListener("click", function() {
+  invisible_button.addEventListener("click", function () {
     hamburguer.style.transform = "translate(-100%)";
     invisible_button.style.width = "0px";
     invisible_button.style.left = "0%";
@@ -1117,7 +1114,7 @@ $(document).ready(function() {
   $(".tv-content").hide();
   $(".tv-content:first").show();
 
-  $("ul.tv-list li").click(function() {
+  $("ul.tv-list li").click(function () {
     $("ul.tv-list li").removeClass("active-navItem");
     $(this).addClass("active-navItem");
     $(".tv-content").hide();

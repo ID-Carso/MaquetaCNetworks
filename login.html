@@ -17,16 +17,7 @@
 
 <body class="fondo">
 
-  <script>
-    function mostrarContrasena() {
-      var tipo = document.getElementById("password");
-      if (tipo.type == "password") {
-        tipo.type = "text";
-      } else {
-        tipo.type = "password";
-      }
-    }
-  </script>
+
   <div class="login-form">
     <div class="col-sm-12 no-gutters col-md-8 offset-md-2 no-gutters col-lg-4 offset-lg-4 shadow1 fondolog">
       <img src="images/registro/group-10.svg" class="ubicacion5" />
@@ -43,8 +34,9 @@
       <div class="row ma-no centro">
         <div class="col-sm-12 no-gap">
           <div class="tamaño2">
-            <input class="insert-data" type="text" placeholder="Correo electrónico" />
+            <input class="insert-data" type="text" placeholder="Correo electrónico" id="correo" />
             <img src="images/registro/group-12.svg" class="ubicacion3" />
+
           </div>
         </div>
       </div>
@@ -71,7 +63,7 @@
       <br />
       <div class="row ma-no centro">
         <div class="col-sm-12">
-          <button class="login-button">INGRESAR</button>
+          <button type="button" class="login-button">INGRESAR</button>
         </div>
       </div>
       <br />
@@ -85,12 +77,13 @@
       <br />
       <div class="row ma-no centro">
         <div class="col-sm-12">
-          <a href="registro.html"><button class="singup-button">REGÍSTRATE</button></a>
+          <a href="registro.html"><button type="button" class="singup-button">REGÍSTRATE</button></a>
         </div>
       </div>
       <br />
     </div>
   </div>
+
 </body>
 
 </html>
