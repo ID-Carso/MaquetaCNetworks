@@ -69,7 +69,7 @@
                     <div class="claro-logo">
                         <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
 
-                        <img class="logo" src="./images/home/claro-logo.png" alt="" />
+                        <a href="index.php"><img class="logo" src="./images/home/claro-logo.png" alt="" /></a>
                     </div>
 
                     <div class="login">
