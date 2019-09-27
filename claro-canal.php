@@ -25,11 +25,11 @@
     <header class="claro-canal-header">
       <div class="hamburguer-menu">
         <div class="text-center">
-          <img
+          <a href="index.php"><img
             src="./images/menu/claro-networks-sidebar.svg"
             alt=""
             class="logo-sidebar"
-          />
+          /></a>
         </div>
         <div class="sidebar-content">
           <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
@@ -43,7 +43,7 @@
               <p class="dropdown-p">ebñrkjg</p>
             </div>-->
           <div class="sidebar-item sidebar-border-bottom">
-            <a class="sidebar-link" href="#"
+            <a class="sidebar-link" href="concert-channel.php"
               ><span class="dropdown-p"
                 >Concert Channel</span
               ></a

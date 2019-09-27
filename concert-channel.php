@@ -20,6 +20,49 @@
 
 <body>
     <header class="concert-channel-header">
+    <div class="hamburguer-menu">
+            <div class="text-center">
+                <a href="index.php"><img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar"></a>
+            </div>
+            <div class="sidebar-content">
+                <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
+                    <a href="claro-canal.php" class="sidebar-link"><span class="dropdown-p">Canal Claro</span></a>
+                </div>
+                <!--<div class="dropdown-content">
+              <p class="dropdown-p">ebñrkjg</p>
+              <p class="dropdown-p">ebñrkjg</p>
+              <p class="dropdown-p">ebñrkjg</p>
+            </div>-->
+                <div class="sidebar-item sidebar-border-bottom">
+                    <a class="sidebar-link" href="#"><span class="dropdown-p active-sidebar-item">Concert
+                            Channel</span></a>
+                </div>
+                <!--<div class="dropdown-content">
+              <p class="dropdown-p">ebñrkjg</p>
+              <p class="dropdown-p">ebñrkjg</p>
+              <p class="dropdown-p">ebñrkjg</p>
+            </div>-->
+                <div class="sidebar-item sidebar-border-bottom">
+                    <a class="sidebar-link" href="index.html"><span class="dropdown-p">Claro Cinema</span></a>
+                </div>
+                <!--<div class="dropdown-content">
+              <p class="dropdown-p">ebñrkjg</p>
+              <p class="dropdown-p">ebñrkjg</p>
+              <p class="dropdown-p">ebñrkjg</p>
+            </div>-->
+                <div class="sidebar-item sidebar-border-bottom">
+                    <a class="sidebar-link" href="#"><span class="dropdown-p">Nuestra Visión</span></a>
+                </div>
+                <div class="sidebar-item sidebar-border-bottom">
+                    <a class="sidebar-link" href="#"><span class="dropdown-p">Claro Sports</span></a>
+                </div>
+                <div class="sidebar-item sidebar-border-bottom">
+                    <a class="sidebar-link" href="#"><span class="dropdown-p">Programación</span></a>
+                </div>
+                <!--prueba sidebar-->
+            </div>
+            <button class="invisible-button"></button>
+        </div>
         <div class="header">
             <nav class="menu">
                 <div class="nav-content">
