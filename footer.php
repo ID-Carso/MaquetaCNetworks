@@ -55,7 +55,7 @@
 
             <!--Div logos de compañías-->
             <div class="footer-companies col-12">
-                <div class="d-flex margin-bottom-footer">
+                <div class="d-flex padding-bottom-footer">
                     <div class="col">
                         <img class="d-block m-auto footer-img" src="./images/home/fast-icon.svg" alt="">
                     </div>
@@ -69,7 +69,7 @@
                         <img class="d-block m-auto footer-img" src="./images/home/claro-musica-icon.svg" alt="">
                     </div>
                 </div>
-                <div class="d-flex margin-bottom-footer">
+                <div class="d-flex padding-bottom-footer">
                     <div class="col">
                         <img class="d-block m-auto small-footer-img" src="./images/home/sanborns-icon.svg" alt="">
                     </div>
@@ -87,7 +87,7 @@
             <!--Versión desktop de divs de logos de las compañías-->
             <div class="footer-companies-desktop">
                 <div
-                    class="d-flex margin-bottom-footer col-lg-12 col-xl-12 m-auto justify-content-between align-items-center">
+                    class="d-flex padding-bottom-footer col-lg-12 col-xl-12 m-auto justify-content-between align-items-center">
                     <div class="col footer-border-right">
                         <img class="d-block m-auto small-footer-img" src="./images/home/sanborns-icon.svg" alt="" />
                     </div>
