@@ -47,7 +47,7 @@
               <p class="dropdown-p">ebñrkjg</p>
             </div>-->
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="#"><span class="dropdown-p">Claro Cinema</span></a>
+                    <a class="sidebar-link" href="claro-cinema.php"><span class="dropdown-p">Claro Cinema</span></a>
                 </div>
                 <!--<div class="dropdown-content">
               <p class="dropdown-p">ebñrkjg</p>
@@ -172,7 +172,6 @@
 
                 </ul>
             </div>
-
 
             <div id="claro-canal" class="tv-content">
                 <div class="tv-slider small-poster" id="tv-claro-slider">
@@ -324,7 +323,8 @@
                                 </div>
                                 <div class="a-concert-rectangle thumbnail-info-title">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">¡WTF, EL NUEVO GANCHO DE BLITZCRANK LLEGA A CASA DE TU PRIMA Y LA ONE SHOTEA! *BUFF Q*</p>
+                                        <p class="a-poster-text-white">¡WTF, EL NUEVO GANCHO DE BLITZCRANK LLEGA A CASA
+                                            DE TU PRIMA Y LA ONE SHOTEA! *BUFF Q*</p>
                                     </div>
                                 </div>
                                 <div class="a-concert-rectangle thumbnail-info-image">
@@ -1067,7 +1067,7 @@
                 </div>
             </div>
             <div class="m-see-more margin-top-50">
-               <a href="claro-canal.php"> <button class="btn-red">VER +</button></a>
+                <a href="claro-canal.php"> <button class="btn-red">VER +</button></a>
             </div>
         </div>
         <!--End Sección Canal Claro mobile-->
@@ -1162,7 +1162,7 @@
                     </h2>
                 </div>
                 <div class="m-see-more">
-                   <a href="claro-canal.php"> <button class="btn-red">VER +</button></a>
+                    <a href="claro-canal.php"> <button class="btn-red">VER +</button></a>
                 </div>
             </div>
             <div class="row">

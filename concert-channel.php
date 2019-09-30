@@ -34,8 +34,8 @@
               <p class="dropdown-p">ebñrkjg</p>
             </div>-->
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="#"><span class="dropdown-p active-sidebar-item">Concert
-                            Channel</span></a>
+                    <span class="dropdown-p active-sidebar-item">Concert
+                            Channel</span>
                 </div>
                 <!--<div class="dropdown-content">
               <p class="dropdown-p">ebñrkjg</p>
@@ -43,7 +43,7 @@
               <p class="dropdown-p">ebñrkjg</p>
             </div>-->
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="index.html"><span class="dropdown-p">Claro Cinema</span></a>
+                    <a class="sidebar-link" href="claro-cinema.php"><span class="dropdown-p">Claro Cinema</span></a>
                 </div>
                 <!--<div class="dropdown-content">
               <p class="dropdown-p">ebñrkjg</p>
