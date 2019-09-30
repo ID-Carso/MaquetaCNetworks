@@ -1571,8 +1571,8 @@
             </div>
             <div class="slick-slider">
                 <div class="row no-gutters">
-                    <div class="col columnGap h-100">
-                        <div class="height-second-poster h-100">
+                    <div class="col columnGap">
+                        <div class="height-second-poster">
                             <div class="poster-image cinema-poster-color"></div>
                             <div class="a-cinema-rectangle">
                                 <div class="poster-title-margin">

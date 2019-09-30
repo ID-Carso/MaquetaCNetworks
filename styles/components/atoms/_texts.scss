@@ -456,12 +456,22 @@
 }
 
 .a-today-claro-title {
-  @include title-section($blackColor, $titleSection);
   padding: 24px 0px;
+}
+
+.a-today-claro-title,
+.a-today-cinema-title {
+  @include title-section($blackColor, $titleSection);
   text-transform: uppercase;
 }
 
-.a-today-claro-title span {
+.a-today-cinema-title {
+  padding-top: 14px;
+  padding-bottom: 15px;
+}
+
+.a-today-claro-title span,
+.a-today-cinema-title span {
   color: $btnBackRed;
 }
 
@@ -590,3 +600,29 @@
 .concert-container .text-footer-regular {
   color: #838484;
 }
+
+/*Claro cinema*/
+.a-cinema-title {
+  @include title-section($colorWhite, $titleSection);
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.a-cinema-title span {
+  color: $cinemaColorTitle;
+}
+
+.a-cinema-subtitle {
+  @include title-section($colorWhite, $posterTitleResponsive, $montserratLight);
+  padding-bottom: 7px;
+}
+
+.a-cinema-subtitle span {
+  font-family: $montserratSemiBold;
+}
+
+.header-title-section {
+  background: black;
+  margin-bottom: 10px;
+}
+/*end claro cinema*/

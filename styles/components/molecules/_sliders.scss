@@ -115,7 +115,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.concert-container .slick-dots {
+.concert-container .slick-dots,
+.cinema-slider .slick-dots {
   position: absolute;
   bottom: inherit;
   list-style: none;
@@ -130,4 +131,9 @@
   background: url("../../../images/concert-channel/header-image.jpeg");
   background-size: cover;
   height: 205px;
+}
+
+.cinema-slider {
+  padding-bottom: 50px;
+  margin-bottom: 0px !important;
 }
