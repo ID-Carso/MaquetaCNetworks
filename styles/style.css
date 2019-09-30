@@ -882,6 +882,34 @@ h6 {
 }
 
 /*end claro cinema*/
+.nodatos {
+  display: none;
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ff0007;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.nocorreo {
+  display: none;
+  text-align: left;
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ff0007;
+  margin-left: 7%;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
