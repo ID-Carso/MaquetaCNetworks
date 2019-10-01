@@ -7,11 +7,13 @@ $(document).ready(function () {
       tipo.type = "password";
     }
   });
-
+  /*REGISTRO*/
   $(".singup-button").click(function () {
     var usuario, correo, password, expresion;
     const nodatos1 = $(".nodatos");
     const nocorreo1 = $(".nocorreo");
+    const nousuario1 = $(".nousuario");
+    const borde1 = $("#correo");
 
     usuario = document.getElementById("usuario").value;
     correo = document.getElementById("correo").value;
@@ -22,27 +24,46 @@ $(document).ready(function () {
     if (usuario === "" && correo === "" && password === "") {
       nodatos1.css("display", "block");
       return false;
-    } else if (usuario != "" && correo != "" && password != "") {
-      nodatos1.css("display", "none");
-
     } else if (!expresion.test(correo)) {
+      borde1.css("border-bottom", "solid 2px #ff0007");
       nocorreo1.css("display", "block");
       return false;
 
     } else if (expresion.test(correo)) {
+      borde1.css("border-bottom", "solid 1px #a1a0a0");
+      nodatos1.css("display", "none");
       nocorreo1.css("display", "none");
 
     } else if (password.length < 8) {
-      alert("el campo esta vacio");
+
       return false;
     }
   });
+  const inputPassword1 = $("#password1");
+  const caracteresMin1 = $(".caracteres-min");
+  const listo1 = $(".listo");
+  inputPassword1.keyup(function () {
+    if (inputPassword1.val().length < 8 && inputPassword1.val().length >= 1) {
+      caracteresMin1.css("color", "red");
+      listo1.css("display", "none");
+    } else if (inputPassword1.val().length == 0) {
+      caracteresMin1.css("color", "#666262");
+      listo1.css("display", "none");
+    } else {
+      caracteresMin1.css("color", "green");
+      nodatos1.css("display", "none");
+      listo1.css("display", "inline-block");
+    }
+  });
+
+  /*LOGIN*/
 
   $(".login-button").click(function () {
     var correo1, password1, expresion1;
     const nodatos = $(".nodatos");
     const nocorreo = $(".nocorreo");
     const borde = $("#correo1");
+
     correo1 = document.getElementById("correo1").value;
     password1 = document.getElementById("password1").value;
     expresion1 = /\w+@\w+\.+[a-z]/;
@@ -50,9 +71,6 @@ $(document).ready(function () {
     if (correo1 === "" && password1 === "") {
       nodatos.css("display", "block");
       return false;
-    } else if (correo1 != "" && password1 != "") {
-      nodatos.css("display", "none");
-
     } else if (!expresion1.test(correo1)) {
       nocorreo.css("display", "block");
       borde.css("border-bottom", "solid 2px #ff0007");
@@ -60,10 +78,10 @@ $(document).ready(function () {
 
     } else if (expresion1.test(correo1)) {
       nocorreo.css("display", "none");
+      nodatos.css("display", "none");
       borde.css("border-bottom", "solid 1px #a1a0a0");
 
     } else if (password1.length < 8) {
-      alert("el campo esta vacio");
       return false;
     }
   });
@@ -80,35 +98,11 @@ $(document).ready(function () {
     } else {
       caracteresMin.css("color", "green");
       listo.css("display", "inline-block");
+      nodatos.css("display", "none");
     }
 
-    /*login*/
-  });
-  const inputPassword1 = $("#password1");
-  const caracteresMin1 = $(".caracteres-min");
-  const listo1 = $(".listo");
-  inputPassword1.keyup(function () {
-    if (inputPassword1.val().length < 8 && inputPassword1.val().length >= 1) {
-      caracteresMin1.css("color", "red");
-      listo1.css("display", "none");
-    } else if (inputPassword1.val().length == 0) {
-      caracteresMin1.css("color", "#666262");
-      listo1.css("display", "none");
-    } else {
-      caracteresMin1.css("color", "green");
-      listo1.css("display", "inline-block");
-    }
   });
 
-
-
-  function validaUsuario(warning, usuario) {
-    if (usuario.value.length == 0) {
-      let message = "Aún no se han ingresado datos";
-      warning.innerHTML = message;
-      return false;
-    }
-  }
 
   /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
   $(document).on("scroll ontouchmove ontouchstart ontouchend", function () {
