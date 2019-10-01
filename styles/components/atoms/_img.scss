@@ -314,3 +314,18 @@
   position: relative;
   width: 100%;
 }
+
+.thumbnail-large {
+  background: #797979;
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.thumbnail-large img {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}

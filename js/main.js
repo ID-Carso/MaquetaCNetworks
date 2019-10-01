@@ -1,5 +1,5 @@
-$(document).ready(function () {
-  $(".ubicacion4").click(function () {
+$(document).ready(function() {
+  $(".ubicacion4").click(function() {
     var tipo = document.getElementById("password");
     if (tipo.type == "password") {
       tipo.type = "text";
@@ -8,7 +8,7 @@ $(document).ready(function () {
     }
   });
 
-  $(".singup-button").click(function () {
+  $(".singup-button").click(function() {
     var usuario, correo, password, expresion;
     const nodatos1 = $(".nodatos");
     const nocorreo1 = $(".nocorreo");
@@ -18,27 +18,23 @@ $(document).ready(function () {
     password = document.getElementById("password").value;
     expresion = /\w+@\w+\.+[a-z]/;
 
-
     if (usuario === "" && correo === "" && password === "") {
       nodatos1.css("display", "block");
       return false;
     } else if (usuario != "" && correo != "" && password != "") {
       nodatos1.css("display", "none");
-
     } else if (!expresion.test(correo)) {
       nocorreo1.css("display", "block");
       return false;
-
     } else if (expresion.test(correo)) {
       nocorreo1.css("display", "none");
-
     } else if (password.length < 8) {
       alert("el campo esta vacio");
       return false;
     }
   });
 
-  $(".login-button").click(function () {
+  $(".login-button").click(function() {
     var correo1, password1, expresion1;
     const nodatos = $(".nodatos");
     const nocorreo = $(".nocorreo");
@@ -52,16 +48,13 @@ $(document).ready(function () {
       return false;
     } else if (correo1 != "" && password1 != "") {
       nodatos.css("display", "none");
-
     } else if (!expresion1.test(correo1)) {
       nocorreo.css("display", "block");
       borde.css("border-bottom", "solid 2px #ff0007");
       return false;
-
     } else if (expresion1.test(correo1)) {
       nocorreo.css("display", "none");
       borde.css("border-bottom", "solid 1px #a1a0a0");
-
     } else if (password1.length < 8) {
       alert("el campo esta vacio");
       return false;
@@ -70,7 +63,7 @@ $(document).ready(function () {
   const inputPassword = $("#password");
   const caracteresMin = $(".caracteres-min");
   const listo = $(".listo");
-  inputPassword.keyup(function () {
+  inputPassword.keyup(function() {
     if (inputPassword.val().length < 8 && inputPassword.val().length >= 1) {
       caracteresMin.css("color", "red");
       listo.css("display", "none");
@@ -87,7 +80,7 @@ $(document).ready(function () {
   const inputPassword1 = $("#password1");
   const caracteresMin1 = $(".caracteres-min");
   const listo1 = $(".listo");
-  inputPassword1.keyup(function () {
+  inputPassword1.keyup(function() {
     if (inputPassword1.val().length < 8 && inputPassword1.val().length >= 1) {
       caracteresMin1.css("color", "red");
       listo1.css("display", "none");
@@ -100,18 +93,8 @@ $(document).ready(function () {
     }
   });
 
-
-
-  function validaUsuario(warning, usuario) {
-    if (usuario.value.length == 0) {
-      let message = "Aún no se han ingresado datos";
-      warning.innerHTML = message;
-      return false;
-    }
-  }
-
   /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
-  $(document).on("scroll ontouchmove ontouchstart ontouchend", function () {
+  $(document).on("scroll ontouchmove ontouchstart ontouchend", function() {
     var posicionScroll = $(document).scrollTop();
     if (posicionScroll <= 0) {
       navbar.style.background =
@@ -130,11 +113,12 @@ $(document).ready(function () {
   var slick_slider = $(".slick-slider").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    infinite: false,
+    infinite: true,
     dots: true,
     centerMode: false,
     arrows: false,
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -142,7 +126,7 @@ $(document).ready(function () {
           autoplay: false,
           autoplaySpeed: 2000,
           centerMode: true,
-          infinite: false,
+          infinite: true,
           arrows: false,
           dots: true
         }
@@ -152,7 +136,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
-          infinite: false,
+          infinite: true,
           dots: true,
           centerMode: false,
           arrows: false
@@ -171,15 +155,8 @@ $(document).ready(function () {
   });
 
   var tv_slider = $(".tv-slider").slick({
-    /*slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    centerMode: true,
-    infinite: false,
-    arrows: false,
-    dots: true,*/
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -236,11 +213,11 @@ $(document).ready(function () {
   const html = $("html");
   const sidebar_content = document.querySelector(".sidebar-content");
   const menuTablet = $(".menu-tablet");
-  $(window).resize(function () {
+  $(window).resize(function() {
     console.log(menu);
   });
 
-  menuTablet.click(function () {
+  menuTablet.click(function() {
     hamburguer.style.transform = "translate(0%)";
     invisible_button.style.width = "2000px";
     invisible_button.style.left = "100%";
@@ -260,7 +237,7 @@ $(document).ready(function () {
     sidebar_content.style.height = "100%";
   });
 
-  menu.addEventListener("click", function (e) {
+  menu.addEventListener("click", function(e) {
     hamburguer.style.transform = "translate(0%)";
     invisible_button.style.width = "2000px";
     invisible_button.style.left = "100%";
@@ -280,7 +257,7 @@ $(document).ready(function () {
     sidebar_content.style.height = "100%";
   });
 
-  invisible_button.addEventListener("click", function () {
+  invisible_button.addEventListener("click", function() {
     hamburguer.style.transform = "translate(-100%)";
     invisible_button.style.width = "0px";
     invisible_button.style.left = "0%";
@@ -318,7 +295,7 @@ $(document).ready(function () {
   $(".tv-content").hide();
   $(".tv-content:first").show();
 
-  $("ul.tv-list li").click(function () {
+  $("ul.tv-list li").click(function() {
     $("ul.tv-list li").removeClass("active-navItem");
     $(this).addClass("active-navItem");
     $(".tv-content").hide();
