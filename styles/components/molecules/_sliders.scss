@@ -12,7 +12,7 @@
 }
 
 .slick-slider .slick-list {
-  padding: 0px 15px 0px 15px !important;
+  padding: 0px 30px 0px 30px !important;
 }
 
 .slick-slider {
@@ -136,4 +136,12 @@
 .cinema-slider {
   padding-bottom: 50px;
   margin-bottom: 0px !important;
+}
+
+.slick-list {
+  margin: 0 -6px !important;
+}
+
+.slick-initialized .slick-slide {
+  margin: 0 6px !important;
 }

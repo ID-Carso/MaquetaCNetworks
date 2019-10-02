@@ -1426,15 +1426,23 @@ h6 {
 .thumbnail {
   background: #797979;
   overflow: hidden;
-  padding-bottom: 41%;
+  padding-bottom: 47%;
   position: relative;
+  width: 100%;
+}
+
+.thumbnail img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
   width: 100%;
 }
 
 .thumbnail-large {
   background: #797979;
   overflow: hidden;
-  padding-bottom: 100%;
+  padding-bottom: 134%;
   position: relative;
   width: 100%;
 }
@@ -1445,6 +1453,33 @@ h6 {
      object-fit: cover;
   position: absolute;
   width: 100%;
+}
+
+.arrow-prev {
+  width: 32px;
+  left: 0;
+}
+
+.arrow-next {
+  width: 32px;
+  right: 0;
+}
+
+.arrow-next,
+.arrow-prev {
+  opacity: 0.6;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  z-index: 1;
+}
+
+.arrow-prev:hover,
+.arrow-next:hover {
+  opacity: 1;
 }
 
 .hr1 {
@@ -1882,7 +1917,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .slick-slider .slick-list {
-  padding: 0px 15px 0px 15px !important;
+  padding: 0px 30px 0px 30px !important;
 }
 
 .slick-slider {
@@ -1993,6 +2028,14 @@ input[type="checkbox"]:checked + label::before {
 .cinema-slider {
   padding-bottom: 50px;
   margin-bottom: 0px !important;
+}
+
+.slick-list {
+  margin: 0 -6px !important;
+}
+
+.slick-initialized .slick-slide {
+  margin: 0 6px !important;
 }
 
 .large-poster-width {

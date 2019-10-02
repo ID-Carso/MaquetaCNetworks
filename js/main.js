@@ -116,7 +116,7 @@ $(document).ready(function() {
     infinite: true,
     dots: true,
     centerMode: false,
-    arrows: false,
+
     responsive: [
       {
         breakpoint: 768,
@@ -139,7 +139,11 @@ $(document).ready(function() {
           infinite: true,
           dots: true,
           centerMode: false,
-          arrows: false
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
         }
       }
     ]
@@ -164,7 +168,7 @@ $(document).ready(function() {
           autoplay: false,
           autoplaySpeed: 2000,
           centerMode: true,
-          infinite: false,
+          infinite: true,
           arrows: false,
           dots: true
         }
@@ -174,7 +178,7 @@ $(document).ready(function() {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: false,
+          infinite: true,
           dots: true,
           centerMode: false,
           arrows: false
@@ -196,7 +200,7 @@ $(document).ready(function() {
         settings: {
           slidesToShow: 5,
           slidesToScroll: 1,
-          infinite: false,
+          infinite: true,
           dots: true,
           centerMode: false,
           arrows: false
