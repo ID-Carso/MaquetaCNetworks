@@ -61,6 +61,10 @@
   padding-bottom: $titlesPadding;
 }
 
+.a-subtitle span {
+  font-family: $gothamMedium;
+}
+
 .a-claro-cinema-title {
   @include title-section($cinemaTitle, $titleSection);
   padding-bottom: $titlesPadding;
@@ -640,7 +644,6 @@
   color: #ff0007;
   margin-top: 3%;
   text-align: center;
-
 }
 
 .nocorreo {
@@ -655,6 +658,26 @@
   letter-spacing: normal;
   color: #ff0007;
   margin-left: 7%;
+}
 
+.day-text,
+.day-number {
+  color: $pureBlack;
+  margin-bottom: 0;
+  text-align: center;
+}
 
+.day-text {
+  font-family: $montserratLight;
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+.day-number {
+  font-size: 18px;
+  font-family: $montserratSemiBold;
+}
+
+.calendar-active .day-text,
+.calendar-active .day-number {
+  color: white;
 }

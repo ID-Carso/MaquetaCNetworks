@@ -24,6 +24,9 @@
       <div class="text-center">
         <a href="index.php"><img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar" /></a>
       </div>
+      <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
+          <a href="index.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
+        </div>
       <div class="sidebar-content">
         <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
           <a href="claro-canal.php" class="sidebar-link"><span class="dropdown-p">Canal Claro</span></a>

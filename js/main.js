@@ -132,6 +132,17 @@ $(document).ready(function() {
         }
       },
       {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: false
+        }
+      },
+      {
         breakpoint: 2000,
         settings: {
           slidesToShow: 4,
@@ -189,7 +200,7 @@ $(document).ready(function() {
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
-          infinite: false,
+          infinite: true,
           dots: true,
           centerMode: false,
           arrows: false
@@ -201,6 +212,57 @@ $(document).ready(function() {
           slidesToShow: 5,
           slidesToScroll: 1,
           infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: false
+        }
+      }
+    ]
+  });
+
+  var programacion_slider = $(".programacion-slider").slick({
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 7,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          centerMode: false,
+          infinite: false,
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: true,
+          centerMode: false,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 8,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 2000,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          infinite: false,
           dots: true,
           centerMode: false,
           arrows: false
@@ -303,6 +365,29 @@ $(document).ready(function() {
     $("ul.tv-list li").removeClass("active-navItem");
     $(this).addClass("active-navItem");
     $(".tv-content").hide();
+    var activeNav = $(this).attr("rel");
+    $("#" + activeNav).fadeIn();
+
+    if (activeNav == "concert-channel") {
+      tvConcertSlider.slick("refresh");
+    } else if (activeNav == "claro-canal") {
+      tvClaroSlider.slick("refresh");
+    } else if (activeNav == "claro-cinema") {
+      tvCinemaSlider.slick("refresh");
+    } else if (activeNav == "nuestra-vision") {
+      tvVisionSlider.slick("refresh");
+    } else if (activeNav == "claro-sports") {
+      tvSportsSlider.slick("refresh");
+    }
+  });
+
+  $(".calendar-content").hide();
+  $(".calendar-content:first").show();
+
+  $("ul.calendar li").click(function() {
+    $("ul.calendar li").removeClass("calendar-active");
+    $(this).addClass("calendar-active");
+    $(".calendar-content").hide();
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();
 

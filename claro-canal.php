@@ -32,7 +32,10 @@
           /></a>
         </div>
         <div class="sidebar-content">
-          <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
+        <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
+              <a href="index.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
+          </div>
+          <div class="sidebar-item sidebar-border-bottom">
              <span class="dropdown-p active-sidebar-item">Canal Claro</span>  
           </div>
           <!--<div class="dropdown-content">

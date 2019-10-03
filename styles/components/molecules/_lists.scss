@@ -1,3 +1,5 @@
+@import "../base/colors";
+
 .tv-list {
   list-style: none;
   display: flex;
@@ -71,4 +73,20 @@
   100% {
     margin-left: 0%;
   }
+}
+
+.programacion .tv-list {
+  margin: 41px auto;
+}
+
+.calendar {
+  padding-left: 0;
+}
+
+.calendar-item {
+  padding: 5px;
+}
+
+.calendar-active {
+  background: $calendarActiveItem;
 }

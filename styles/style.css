@@ -273,6 +273,10 @@ h6 {
   padding-bottom: 2%;
 }
 
+.a-subtitle span {
+  font-family: "Gotham-Medium";
+}
+
 .a-claro-cinema-title {
   font-size: 24px;
   color: #5b5a5a;
@@ -910,6 +914,29 @@ h6 {
   margin-left: 7%;
 }
 
+.day-text,
+.day-number {
+  color: #000000;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.day-text {
+  font-family: "Montserrat-Light";
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+.day-number {
+  font-size: 18px;
+  font-family: "Montserrat-SemiBold";
+}
+
+.calendar-active .day-text,
+.calendar-active .day-number {
+  color: white;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -1475,6 +1502,7 @@ h6 {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   z-index: 1;
+  cursor: pointer;
 }
 
 .arrow-prev:hover,
@@ -1880,6 +1908,22 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+.programacion .tv-list {
+  margin: 41px auto;
+}
+
+.calendar {
+  padding-left: 0;
+}
+
+.calendar-item {
+  padding: 5px;
+}
+
+.calendar-active {
+  background: #bd2c2c;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 .m-home-titles {
@@ -2036,6 +2080,10 @@ input[type="checkbox"]:checked + label::before {
 
 .slick-initialized .slick-slide {
   margin: 0 6px !important;
+}
+
+.calendar .slick-slider .slick-list {
+  padding: 0px 20px 0px 20px !important;
 }
 
 .large-poster-width {
