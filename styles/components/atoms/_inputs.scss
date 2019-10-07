@@ -19,15 +19,12 @@
   font-weight: bold;
   outline: none !important;
   text-transform: lowercase;
-  
- 
 }
 
-.insert-data:focus{
+.insert-data:focus {
   color: $bluetxt;
   border-bottom: solid 2px $bluetxt;
   font-family: $montserratBold;
- 
 }
 label {
   display: flex;
@@ -78,14 +75,15 @@ input[type="checkbox"]:checked + label::before {
   font-size: 18px;
   text-align: center;
   vertical-align: middle;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: $textWhite;
   background: $subtitleTV;
 }
 
 .login-form {
   margin-top: 0%;
-  height:100%;
+  height: 100%;
 }
 .tamaño {
   width: 288px;
@@ -100,12 +98,77 @@ input[type="checkbox"]:checked + label::before {
   margin: auto;
   position: relative;
 }
-.pa-img{
-  padding-bottom:40px; 
+.pa-img {
+  padding-bottom: 40px;
 }
 .modal-estilo {
-  
   border-radius: 8px;
   background-color: #ffffff;
-  border: none !important; 
+  border: none !important;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch::before {
+  display: none;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

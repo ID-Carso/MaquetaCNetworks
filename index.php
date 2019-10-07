@@ -60,13 +60,13 @@
               <p class="dropdown-p">ebñrkjg</p>
             </div>-->
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="#"><span class="dropdown-p">Nuestra Visión</span></a>
+                    <a class="sidebar-link" href="index.php"><span class="dropdown-p">Nuestra Visión</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="#"><span class="dropdown-p">Claro Sports</span></a>
+                    <a class="sidebar-link" href="ibndex.php"><span class="dropdown-p">Claro Sports</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="#"><span class="dropdown-p">Programación</span></a>
+                    <a class="sidebar-link" href="programacion.html"><span class="dropdown-p">Programación</span></a>
                 </div>
                 <!--prueba sidebar-->
             </div>
@@ -894,63 +894,52 @@
                 </h2>
             </div>
             <div class="slick-slider">
-                <div class="row no-gutters">
-                    <div class="col poster">
-                        <div class="height-second-poster">
-                            <div class="thumbnail-large">
-                                <img src="../images/posters/bates-motel.jpeg" alt="">
-                            </div>
-                            <div class="a-claro-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">BATES MOTEL</p>
-                                </div>
+                <div class="poster">
+                    <div class="thumbnail-large">
+                        <img src="../images/posters/bates-motel.jpeg" alt="">
+                    </div>
+                    <div class="a-claro-rectangle">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">BATES MOTEL</p>
+                        </div>
 
-                            </div>
+                    </div>
+                </div>
+
+
+                <div class="poster">
+                    <div class="thumbnail-large">
+                        <img src="../images/posters/breaking-bad.jpeg" alt="">
+                    </div>
+                    <div class="a-claro-rectangle">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">BREAKING BAD</p>
                         </div>
                     </div>
                 </div>
-                <div class="row no-gutters">
-                    <div class="col poster">
-                        <div class="height-second-poster">
-                            <div class="thumbnail-large">
-                                <img src="../images/posters/breaking-bad.jpeg" alt="">
-                            </div>
-                            <div class="a-claro-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">BREAKING BAD</p>
-                                </div>
-                            </div>
+
+
+                <div class="poster">
+                    <div class="thumbnail-large">
+                        <img src="../images/posters/good-doctor.jpeg" alt="">
+                    </div>
+                    <div class="a-claro-rectangle">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">THE GOOD DOCTOR</p>
                         </div>
                     </div>
                 </div>
-                <div class="row no-gutters">
-                    <div class="col poster">
-                        <div class="height-second-poster">
-                            <div class="thumbnail-large">
-                                <img src="../images/posters/good-doctor.jpeg" alt="">
-                            </div>
-                            <div class="a-claro-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">THE GOOD DOCTOR</p>
-                                </div>
-                            </div>
+                <div class="poster">
+                    <div class="thumbnail-large">
+                        <img src="../images/posters/harry-potter.jpeg" alt="">
+                    </div>
+                    <div class="a-claro-rectangle">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">HARRY POTTER: LA ORDEN DEL FENIX</p>
                         </div>
                     </div>
                 </div>
-                <div class="row no-gutters">
-                    <div class="col poster">
-                        <div class="height-second-poster">
-                            <div class="thumbnail-large">
-                                <img src="../images/posters/harry-potter.jpeg" alt="">
-                            </div>
-                            <div class="a-claro-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">HARRY POTTER: LA ORDEN DEL FENIX</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
             <div class="m-see-more margin-top-50">
                 <a href="claro-canal.php"> <button class="btn-red">VER +</button></a>
@@ -972,77 +961,64 @@
                 </div>
             </div>
             <div class="slick-slider">
-                <div class="row no-gutters">
-                    <div class="col">
-                        <div class="height-second-poster ">
-                            <div class="thumbnail-large">
-                                <img src="./images/posters/bates-motel.jpeg" alt="">
-                            </div>
-                            <div class="a-vision-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">BATES MOTEL</p>
-                                </div>
-                            </div>
+
+                <div class="poster">
+                    <div class="thumbnail-large">
+                        <img src="./images/posters/bates-motel.jpeg" alt="">
+                    </div>
+                    <div class="a-vision-rectangle">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">BATES MOTEL</p>
                         </div>
                     </div>
                 </div>
-                <div class="row no-gutters">
-                    <div class="col">
-                        <div class="height-second-poster">
-                            <div class="thumbnail-large">
-                                <img src="../images/posters/breaking-bad.jpeg" alt="">
-                            </div>
-                            <div class="image"></div>
-                            <div class="a-vision-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">BREAKING BAD</p>
-                                </div>
-                            </div>
+
+
+                <div class="poster">
+                    <div class="thumbnail-large">
+                        <img src="../images/posters/breaking-bad.jpeg" alt="">
+                    </div>
+                    <div class="image"></div>
+                    <div class="a-vision-rectangle">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">BREAKING BAD</p>
                         </div>
                     </div>
                 </div>
-                <div class="row no-gutters">
-                    <div class="col">
-                        <div class="height-second-poster">
-                            <div class="thumbnail-large">
-                                <img src="../images/posters/good-doctor.jpeg" alt="">
-                            </div>
-                            <div class="a-vision-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">THE GOOD DOCTOR</p>
-                                </div>
-                            </div>
+
+
+                <div class="poster">
+                    <div class="thumbnail-large">
+                        <img src="../images/posters/good-doctor.jpeg" alt="">
+                    </div>
+                    <div class="a-vision-rectangle">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">THE GOOD DOCTOR</p>
                         </div>
                     </div>
                 </div>
-                <div class="row no-gutters">
-                    <div class="col">
-                        <div class="height-second-poster">
-                            <div class="thumbnail-large">
-                                <img src="./images/posters/harry-potter.jpeg" alt="">
-                            </div>
-                            <div class="a-vision-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">HARRY POTTER: LA ORDEN DEL FÉNIX</p>
-                                </div>
-                            </div>
+                <div class="poster">
+                    <div class="thumbnail-large">
+                        <img src="./images/posters/harry-potter.jpeg" alt="">
+                    </div>
+                    <div class="a-vision-rectangle">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">HARRY POTTER: LA ORDEN DEL FÉNIX</p>
                         </div>
                     </div>
                 </div>
-                <div class="row no-gutters">
-                    <div class="col">
-                        <div class="height-second-poster">
-                            <div class="thumbnail-large">
-                                <img src="../images/posters/good-doctor.jpeg" alt="">
-                            </div>
-                            <div class="a-vision-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">THE GOOD DOCTOR</p>
-                                </div>
-                            </div>
+
+                <div class="poster">
+                    <div class="thumbnail-large">
+                        <img src="../images/posters/good-doctor.jpeg" alt="">
+                    </div>
+                    <div class="a-vision-rectangle">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">THE GOOD DOCTOR</p>
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="d-flex align-items-center justify-content-between section-home-footer">
                 <div>
@@ -1246,20 +1222,18 @@
                 </h2>
             </div>
             <div class="slick-slider small-poster">
-                <div class="row no-gutters">
-                    <div class="col">
-                        <div class="height-second-poster">
-                            <div class="thumbnail">
-                                <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                            </div>
-                            <div class="a-concert-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams Tour</p>
-                                </div>
-                            </div>
+
+                <div class="poster">
+                    <div class="thumbnail">
+                        <img src="./images/posters/coldplay-tour.jpeg" alt="">
+                    </div>
+                    <div class="a-concert-rectangle">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams Tour</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="row no-gutters">
                     <div class="col">
                         <div class="height-second-poster">

@@ -139,9 +139,13 @@
 }
 
 .slick-initialized .slick-slide {
-  margin: 0 6px !important;
+  margin: 0 6px;
 }
 
 .calendar .slick-slider .slick-list {
-  padding: 0px 20px 0px 20px !important;
+  padding: 0px !important;
+}
+
+.calendar .slick-initialized .slick-slide {
+  margin: 0 2px;
 }

@@ -384,8 +384,8 @@ $(document).ready(function() {
   $(".calendar-content").hide();
   $(".calendar-content:first").show();
 
-  $("ul.calendar li").click(function() {
-    $("ul.calendar li").removeClass("calendar-active");
+  $("ul.calendar .calendar-item").click(function() {
+    $("ul.calendar .calendar-item").removeClass("calendar-active");
     $(this).addClass("calendar-active");
     $(".calendar-content").hide();
     var activeNav = $(this).attr("rel");

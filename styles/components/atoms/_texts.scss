@@ -669,7 +669,7 @@
 
 .day-text {
   font-family: $montserratLight;
-  font-size: 14px;
+  font-size: 13px;
   padding-bottom: 4px;
 }
 .day-number {
@@ -680,4 +680,29 @@
 .calendar-active .day-text,
 .calendar-active .day-number {
   color: white;
+}
+
+.schedule {
+  color: $scheduleHourColor;
+}
+
+.schedule-days,
+.rating,
+.rating-alert {
+  color: $scheduleDayColor;
+}
+
+.schedule,
+.schedule-days,
+.rating-alert,
+.rating {
+  font-family: $montserratSemiBold;
+  font-size: 14px;
+}
+
+.rating,
+.rating-alert,
+.schedule,
+.schedule-days {
+  margin-bottom: 0px;
 }
