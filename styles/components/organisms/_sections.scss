@@ -16,6 +16,10 @@
   @include section();
 }
 
+.concert-channel-mobile {
+  background: $backgroundConcertChannel;
+}
+
 .concert-channel-tablet {
   display: none;
 }

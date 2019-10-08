@@ -32,7 +32,10 @@
           /></a>
         </div>
         <div class="sidebar-content">
-          <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
+        <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
+              <a href="index.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
+          </div>
+          <div class="sidebar-item sidebar-border-bottom">
              <span class="dropdown-p active-sidebar-item">Canal Claro</span>  
           </div>
           <!--<div class="dropdown-content">
@@ -63,17 +66,17 @@
               <p class="dropdown-p">ebñrkjg</p>
             </div>-->
           <div class="sidebar-item sidebar-border-bottom">
-            <a class="sidebar-link" href="#"
+            <a class="sidebar-link" href="index.php"
               ><span class="dropdown-p">Nuestra Visión</span></a
             >
           </div>
           <div class="sidebar-item sidebar-border-bottom">
-            <a class="sidebar-link" href="#"
+            <a class="sidebar-link" href="index.php"
               ><span class="dropdown-p">Claro Sports</span></a
             >
           </div>
           <div class="sidebar-item sidebar-border-bottom">
-            <a class="sidebar-link" href="#"
+            <a class="sidebar-link" href="programacion.html"
               ><span class="dropdown-p">Programación</span></a
             >
           </div>

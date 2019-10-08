@@ -12,23 +12,71 @@
 }
 
 .slick-slider .slick-list {
-  padding: 0px 15px 0px 15px !important;
+  padding: 0px 30px 0px 30px !important;
 }
 
 .slick-slider {
   width: 100%;
+  padding-bottom: 64px;
+}
+
+.slick-slider {
+  .slick-dots li button:before {
+    font-size: 8px;
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 27px;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    left: 0;
+    /* top: 50%; */
+  }
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+}
+.concert-home-slider {
+  .slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "•";
+    width: 20px;
+    height: 20px;
+    font-family: "slick";
+    font-size: 8px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    opacity: 0.25;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: white;
+    opacity: 0.75;
+  }
 }
 
 .slick-dotted.slick-slider {
-  //margin-bottom: 26px !important;
+  margin-bottom: 0px !important;
 }
 
-.slick-list {
-  //height: 472px;
-}
-
-.small-poster .slick-list {
-  //height: 272px;
+.concert-home-slider {
+  padding-bottom: 63px;
 }
 
 .slick-track {
@@ -38,7 +86,6 @@
 
 .today .slick-dots {
   bottom: inherit;
-  //margin: 26px 0 0 0;
 }
 
 #dontLose-claro-slider {
@@ -136,4 +183,27 @@
 .cinema-slider {
   padding-bottom: 50px;
   margin-bottom: 0px !important;
+}
+
+.slick-initialized .slick-slide {
+  margin: 0 6px;
+}
+
+.calendar .slick-slider .slick-list {
+  padding: 0px !important;
+}
+
+.calendar .slick-initialized .slick-slide {
+  margin: 0 2px;
+}
+
+.calendar {
+  .slick-slider {
+    padding-bottom: 0;
+    margin-bottom: 52px !important;
+  }
+
+  .slick-slider .slick-dots {
+    bottom: -26px;
+  }
 }
