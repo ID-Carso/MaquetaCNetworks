@@ -209,12 +209,16 @@ $(document).ready(function() {
       {
         breakpoint: 2000,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
           centerMode: false,
-          arrows: false
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-tv-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-tv-next" />'
         }
       }
     ]
@@ -278,7 +282,7 @@ $(document).ready(function() {
   const body = $("body");
   const html = $("html");
   const sidebar_content = document.querySelector(".sidebar-content");
-  const menuTablet = $(".menu-tablet");
+  const menuTablet = $(".menu-responsive-tablet");
   $(window).resize(function() {
     console.log(menu);
   });
@@ -357,6 +361,8 @@ $(document).ready(function() {
   const tvCinemaSlider = $("#tv-cinema-slider");
   const tvVisionSlider = $("#tv-vision-slider");
   const tvSportsSlider = $("#tv-sports-slider");
+  const programacionSlider = $(".programacion-slider");
+  console.log(programacionSlider);
 
   $(".tv-content").hide();
   $(".tv-content:first").show();
@@ -369,6 +375,7 @@ $(document).ready(function() {
     $("#" + activeNav).fadeIn();
 
     if (activeNav == "concert-channel") {
+      console.log("h9la");
       tvConcertSlider.slick("refresh");
     } else if (activeNav == "claro-canal") {
       tvClaroSlider.slick("refresh");
@@ -392,15 +399,15 @@ $(document).ready(function() {
     $("#" + activeNav).fadeIn();
 
     if (activeNav == "concert-channel") {
-      tvConcertSlider.slick("refresh");
+      programacionSlider.slick("refresh");
     } else if (activeNav == "claro-canal") {
-      tvClaroSlider.slick("refresh");
+      programacionSlider.slick("refresh");
     } else if (activeNav == "claro-cinema") {
-      tvCinemaSlider.slick("refresh");
+      programacionSlider.slick("refresh");
     } else if (activeNav == "nuestra-vision") {
-      tvVisionSlider.slick("refresh");
+      programacionSlider.slick("refresh");
     } else if (activeNav == "claro-sports") {
-      tvSportsSlider.slick("refresh");
+      programacionSlider.slick("refresh");
     }
   });
 

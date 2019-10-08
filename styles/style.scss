@@ -179,6 +179,13 @@
     padding-bottom: 7px;
     text-align: left;
   }
+
+  .a-claro-cinema-title,
+  .a-our-vision-title,
+  .a-claro-sports-title {
+    padding-top: 40px;
+  }
+
   .poster-title-sport {
     font-size: 30px;
     text-align: left;
@@ -269,6 +276,10 @@
     font-size: 16px;
   }
 
+  .slick-slider {
+    padding-bottom: 0px;
+  }
+
   /*Molecules*/
   .menu-tablet {
     display: block;
@@ -295,7 +306,6 @@
   }
 
   .m-home-titles {
-    padding-top: 39px;
     padding-bottom: 20px;
   }
 
@@ -304,7 +314,7 @@
     margin-bottom: 0px;
   }
   .slick-dots {
-    bottom: -55px !important;
+    bottom: -40px !important;
   }
 
   .slick-dots li button:before {
@@ -313,6 +323,12 @@
 
   .social-media {
     margin: 46px auto 65px auto;
+  }
+
+  .o-tv-section {
+    .slick-dotted.slick-slider {
+      margin-bottom: 80px !important;
+    }
   }
 
   /*Organisms*/
@@ -386,10 +402,6 @@
 
   .nuestra-vision-mobile {
     display: none;
-  }
-
-  .o-claro-section {
-    background: #c35353;
   }
 
   .claro-canal-tablet {
@@ -559,6 +571,22 @@
     font-family: $montserratSemiBold;
   }
 
+  .a-claro-cinema-title,
+  .a-our-vision-title,
+  .a-claro-channel-title,
+  .a-claro-sports-title,
+  .a-concert-channel-title {
+    font-size: 46px;
+    padding-bottom: 7px;
+    text-align: left;
+  }
+
+  .a-claro-cinema-title,
+  .a-our-vision-title,
+  .a-claro-sports-title {
+    padding-top: 50px;
+  }
+
   .menu-responsive-tablet {
     display: none;
   }
@@ -593,6 +621,11 @@
     text-align: left;
   }
 
+  .slick-slider {
+    width: 100%;
+    padding-bottom: 0px;
+  }
+
   /***  MOLECULES  ***/
 
   .menu {
@@ -624,7 +657,6 @@
   }
 
   .m-home-titles {
-    padding-top: 39px;
     padding-bottom: 20px;
   }
 
@@ -639,6 +671,12 @@
 
   .social-media {
     margin: 46px auto 65px auto;
+  }
+
+  .o-tv-section {
+    .slick-dotted.slick-slider {
+      margin-bottom: 100px !important;
+    }
   }
 
   /*Organisms*/
@@ -694,10 +732,6 @@
 
   .nuestra-vision-desktop {
     display: block;
-  }
-
-  .o-claro-section {
-    background: #c35353;
   }
 
   .claro-canal-mobile {
@@ -795,7 +829,7 @@
   }*/
 
   .slick-dots {
-    bottom: -73px !important;
+    bottom: -50px !important;
   }
 
   .margin-bottom-slider {
@@ -809,16 +843,6 @@
     font-family: $montserratSemiBold;
     text-transform: uppercase;
     font-size: 25px;
-  }
-
-  .a-claro-cinema-title,
-  .a-our-vision-title,
-  .a-claro-channel-title,
-  .a-claro-sports-title,
-  .a-concert-channel-title {
-    font-size: 46px;
-    padding-bottom: 7px;
-    text-align: left;
   }
 
   .header-h1 {
@@ -1043,6 +1067,16 @@
     text-align: left;
   }
 
+  .slick-slider {
+    padding-bottom: 0px;
+  }
+
+  .a-claro-cinema-title,
+  .a-our-vision-title,
+  .a-claro-sports-title {
+    padding-top: 50px;
+  }
+
   /***  MOLECULES  ***/
 
   .menu {
@@ -1082,7 +1116,6 @@
   }
 
   .m-home-titles {
-    padding-top: 39px;
     padding-bottom: 20px;
   }
 
@@ -1097,6 +1130,12 @@
 
   .social-media {
     margin: 46px auto 65px auto;
+  }
+
+  .o-tv-section {
+    .slick-dotted.slick-slider {
+      margin-bottom: 100px !important;
+    }
   }
 
   /*Organisms*/
@@ -1152,10 +1191,6 @@
 
   .nuestra-vision-desktop {
     display: block;
-  }
-
-  .o-claro-section {
-    background: #c35353;
   }
 
   .claro-canal-mobile {
@@ -1249,7 +1284,7 @@
   }*/
 
   .slick-dots {
-    bottom: -60px !important;
+    bottom: -50px !important;
   }
 
   .margin-bottom-slider {

@@ -4,12 +4,11 @@
 /* Estructura Básica de los botones */
 %button-basic {
   color: $textWhite;
-  font-size: $fontSizeSub;
   padding: $paddingBtn;
   border-radius: $borderRadiusBtn;
   border: none;
   outline: none !important;
-  font-size: 12px;
+  font-size: 14px;
   font-family: $montserratSemiBold;
 }
 
@@ -32,6 +31,11 @@
 
 .btn-purple {
   @include more-button($purpleColor);
+}
+
+.btn-red,
+.btn-pink {
+  margin-bottom: 18px;
 }
 
 .invisible-button {

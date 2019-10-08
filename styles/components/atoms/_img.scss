@@ -336,28 +336,43 @@
   position: absolute;
   width: 100%;
 }
-.arrow-prev {
+.arrow-prev,
+.arrow-tv-prev {
   width: 32px;
   left: 6px;
 }
 
-.arrow-next {
+.arrow-next,
+.arrow-tv-next {
   width: 32px;
   right: 5px;
 }
 
+.arrow-tv-next,
+.arrow-tv-prev {
+  top: 25%;
+}
+
 .arrow-next,
 .arrow-prev {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.arrow-next,
+.arrow-prev,
+.arrow-tv-next,
+.arrow-tv-prev {
   opacity: 0.6;
   transition: 1s ease;
   position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
   z-index: 1;
   cursor: pointer;
 }
 
 .arrow-prev:hover,
-.arrow-next:hover {
+.arrow-next:hover,
+.arrow-tv-next:hover,
+.arrow-tv-prev:hover {
   opacity: 1;
 }

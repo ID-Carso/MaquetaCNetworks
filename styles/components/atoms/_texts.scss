@@ -47,13 +47,27 @@
 }
 
 .a-concert-channel-title {
-  @include title-section($concertRectangle, $titleSection);
-  padding-bottom: $titlesPadding;
+  @include title-section($colorWhite, $titleSection);
+  padding-bottom: 5px;
+  padding-top: 27px;
+}
+
+.a-concert-channel-subtitle {
+  @include title-section(
+    $colorWhite,
+    $posterTitleResponsive,
+    $fontFamily: $montserratSemiBold
+  );
+  padding-bottom: 14px;
+}
+
+.a-concert-channel-subtitle span {
+  font-family: $montserratRegular;
 }
 
 .a-claro-channel-subtitle-bold {
   @include title-section($blackColor, $posterTitleResponsive);
-  padding-bottom: $titlesPadding;
+  padding-bottom: 14px;
 }
 
 .a-subtitle {
@@ -68,6 +82,7 @@
 .a-claro-cinema-title {
   @include title-section($cinemaTitle, $titleSection);
   padding-bottom: $titlesPadding;
+  padding-top: 27px;
 }
 
 .a-claro-cinema-title span {
@@ -119,6 +134,21 @@
 
 .a-claro-sports-title span {
   color: $blackColor;
+}
+
+.a-claro-channel-subtitle,
+.a-claro-cinema-subtitle,
+.a-our-vision-subtitle,
+.a-claro-sports-subtitle {
+  @include title-section($blackColor, $posterTitleResponsive, $gothamLight);
+  padding-bottom: 30px;
+}
+
+.a-our-vision-subtitle span,
+.a-claro-cinema-subtitle span,
+.a-claro-channel-subtitle span,
+.a-claro-sports-subtitle span {
+  font-family: $montserratSemiBold;
 }
 
 .poster-title-sport {
@@ -705,4 +735,12 @@
 .schedule,
 .schedule-days {
   margin-bottom: 0px;
+}
+
+.month {
+  margin-bottom: 26px;
+  font-family: $montserratSemiBold;
+  font-size: 14px;
+  color: $month;
+  text-transform: uppercase;
 }
