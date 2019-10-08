@@ -7,63 +7,37 @@ $(document).ready(function () {
       tipo.type = "password";
     }
   });
-  /*REGISTRO*/
+
   $(".singup-button").click(function () {
     var usuario, correo, password, expresion;
     const nodatos1 = $(".nodatos");
     const nocorreo1 = $(".nocorreo");
-    const nousuario1 = $(".nousuario");
-    const borde1 = $("#correo");
 
     usuario = document.getElementById("usuario").value;
     correo = document.getElementById("correo").value;
     password = document.getElementById("password").value;
     expresion = /\w+@\w+\.+[a-z]/;
 
-
     if (usuario === "" && correo === "" && password === "") {
       nodatos1.css("display", "block");
       return false;
     } else if (!expresion.test(correo)) {
-      borde1.css("border-bottom", "solid 2px #ff0007");
       nocorreo1.css("display", "block");
       return false;
-
     } else if (expresion.test(correo)) {
-      borde1.css("border-bottom", "solid 1px #a1a0a0");
-      nodatos1.css("display", "none");
       nocorreo1.css("display", "none");
 
     } else if (password.length < 8) {
-
+      alert("el campo esta vacio");
       return false;
     }
   });
-  const inputPassword1 = $("#password1");
-  const caracteresMin1 = $(".caracteres-min");
-  const listo1 = $(".listo");
-  inputPassword1.keyup(function () {
-    if (inputPassword1.val().length < 8 && inputPassword1.val().length >= 1) {
-      caracteresMin1.css("color", "red");
-      listo1.css("display", "none");
-    } else if (inputPassword1.val().length == 0) {
-      caracteresMin1.css("color", "#666262");
-      listo1.css("display", "none");
-    } else {
-      caracteresMin1.css("color", "green");
-      nodatos1.css("display", "none");
-      listo1.css("display", "inline-block");
-    }
-  });
-
-  /*LOGIN*/
 
   $(".login-button").click(function () {
     var correo1, password1, expresion1;
     const nodatos = $(".nodatos");
     const nocorreo = $(".nocorreo");
     const borde = $("#correo1");
-
     correo1 = document.getElementById("correo1").value;
     password1 = document.getElementById("password1").value;
     expresion1 = /\w+@\w+\.+[a-z]/;
@@ -75,13 +49,11 @@ $(document).ready(function () {
       nocorreo.css("display", "block");
       borde.css("border-bottom", "solid 2px #ff0007");
       return false;
-
     } else if (expresion1.test(correo1)) {
       nocorreo.css("display", "none");
-      nodatos.css("display", "none");
       borde.css("border-bottom", "solid 1px #a1a0a0");
-
     } else if (password1.length < 8) {
+      alert("el campo esta vacio");
       return false;
     }
   });
@@ -98,11 +70,25 @@ $(document).ready(function () {
     } else {
       caracteresMin.css("color", "green");
       listo.css("display", "inline-block");
-      nodatos.css("display", "none");
     }
 
+    /*login*/
   });
-
+  const inputPassword1 = $("#password1");
+  const caracteresMin1 = $(".caracteres-min");
+  const listo1 = $(".listo");
+  inputPassword1.keyup(function () {
+    if (inputPassword1.val().length < 8 && inputPassword1.val().length >= 1) {
+      caracteresMin1.css("color", "red");
+      listo1.css("display", "none");
+    } else if (inputPassword1.val().length == 0) {
+      caracteresMin1.css("color", "#666262");
+      listo1.css("display", "none");
+    } else {
+      caracteresMin1.css("color", "green");
+      listo1.css("display", "inline-block");
+    }
+  });
 
   /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
   $(document).on("scroll ontouchmove ontouchstart ontouchend", function () {
@@ -124,7 +110,7 @@ $(document).ready(function () {
   var slick_slider = $(".slick-slider").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    infinite: false,
+    infinite: true,
     dots: true,
     centerMode: false,
     arrows: false,
@@ -136,7 +122,7 @@ $(document).ready(function () {
           autoplay: false,
           autoplaySpeed: 2000,
           centerMode: true,
-          infinite: false,
+          infinite: true,
           arrows: false,
           dots: true
         }
@@ -146,7 +132,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
-          infinite: false,
+          infinite: true,
           dots: true,
           centerMode: false,
           arrows: false
@@ -165,14 +151,6 @@ $(document).ready(function () {
   });
 
   var tv_slider = $(".tv-slider").slick({
-    /*slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    centerMode: true,
-    infinite: false,
-    arrows: false,
-    dots: true,*/
     responsive: [{
         breakpoint: 768,
         settings: {

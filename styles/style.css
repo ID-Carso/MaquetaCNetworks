@@ -910,20 +910,6 @@ h6 {
   margin-left: 7%;
 }
 
-.nousuario {
-  display: none;
-  font-family: "Montserrat-Regular";
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ff0007;
-  margin-top: 3%;
-  text-align: center;
-}
-
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -1442,6 +1428,22 @@ h6 {
   overflow: hidden;
   padding-bottom: 41%;
   position: relative;
+  width: 100%;
+}
+
+.thumbnail-large {
+  background: #797979;
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.thumbnail-large img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
   width: 100%;
 }
 
@@ -2274,12 +2276,13 @@ input[type="checkbox"]:checked + label::before {
     -webkit-line-clamp: 2;*/
     height: 36px;
   }
-  .small-poster .slick-list {
+  /*.small-poster .slick-list {
     height: 144px;
   }
+
   .slick-list {
     height: 320px;
-  }
+  }*/
   .poster-title-margin {
     margin: 0px;
   }
@@ -2848,12 +2851,13 @@ input[type="checkbox"]:checked + label::before {
   .a-vision-rectangle {
     height: 45px;
   }
-  .slick-list {
+  /*.slick-list {
     height: 400px;
   }
+
   .small-poster .slick-list {
     height: 180px;
-  }
+  }*/
   .slick-dots {
     bottom: -73px !important;
   }
@@ -3228,12 +3232,12 @@ input[type="checkbox"]:checked + label::before {
   .a-vision-rectangle {
     height: 45px;
   }
-  .slick-list {
+  /*.slick-list {
     height: 400px;
-  }
-  .small-poster .slick-list {
+  }*/
+  /*.small-poster .slick-list {
     height: 180px;
-  }
+  }*/
   .slick-dots {
     bottom: -73px !important;
   }
