@@ -53,11 +53,9 @@
 }
 
 .a-concert-channel-subtitle {
-  @include title-section(
-    $colorWhite,
+  @include title-section($colorWhite,
     $posterTitleResponsive,
-    $fontFamily: $montserratSemiBold
-  );
+    $fontFamily: $montserratSemiBold);
   padding-bottom: 14px;
 }
 
@@ -452,6 +450,23 @@
   margin-top: 3%;
 }
 
+.correo-valido {
+  font-family: $montserratSemiBold;
+  font-size: 14px;
+  font-weight: 700;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $txtcontramin;
+  text-align: left;
+  margin-left: 7%;
+  margin-top: 3%;
+
+}
+
 .horario-text {
   font-size: 14px;
   font-family: $montserratSemiBold;
@@ -702,6 +717,7 @@
   font-size: 13px;
   padding-bottom: 4px;
 }
+
 .day-number {
   font-size: 18px;
   font-family: $montserratSemiBold;

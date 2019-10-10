@@ -24,8 +24,9 @@
 .insert-data:focus {
   color: $bluetxt;
   border-bottom: solid 2px $bluetxt;
-  font-family: $montserratBold;
+  font-family: $montserratRegular;
 }
+
 label {
   display: flex;
   font-family: $montserratRegular;
@@ -41,9 +42,11 @@ label {
 input[type="checkbox"] {
   display: none;
 }
-input[type="checkbox"] + label {
+
+input[type="checkbox"]+label {
   cursor: pointer;
 }
+
 label:before {
   content: "";
   background: transparent;
@@ -60,7 +63,7 @@ label:before {
   vertical-align: middle;
 }
 
-input[type="checkbox"]:checked + label::before {
+input[type="checkbox"]:checked+label::before {
   content: "✓";
   font-size: 18px;
   text-align: center;
@@ -70,7 +73,7 @@ input[type="checkbox"]:checked + label::before {
   background: $subtitleTV;
 }
 
-input[type="checkbox"]:checked + label::before {
+input[type="checkbox"]:checked+label::before {
   content: "✓";
   font-size: 18px;
   text-align: center;
@@ -85,6 +88,7 @@ input[type="checkbox"]:checked + label::before {
   margin-top: 0%;
   height: 100%;
 }
+
 .tamaño {
   width: 288px;
   height: 44px;
@@ -92,15 +96,18 @@ input[type="checkbox"]:checked + label::before {
   position: relative;
   margin-top: 2%;
 }
+
 .tamaño2 {
   width: 307px;
   height: 64px;
   margin: auto;
   position: relative;
 }
+
 .pa-img {
   padding-bottom: 40px;
 }
+
 .modal-estilo {
   border-radius: 8px;
   background-color: #ffffff;
@@ -150,15 +157,15 @@ input[type="checkbox"]:checked + label::before {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #2196f3;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #2196f3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);

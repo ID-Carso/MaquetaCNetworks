@@ -1,5 +1,5 @@
-$(document).ready(function() {
-  $(".ubicacion4").click(function() {
+$(document).ready(function () {
+  $(".ubicacion4").click(function () {
     var tipo = document.getElementById("password");
     if (tipo.type == "password") {
       tipo.type = "text";
@@ -8,7 +8,7 @@ $(document).ready(function() {
     }
   });
 
-  $(".singup-button").click(function() {
+  $(".singup-button").click(function () {
     var usuario, correo, password, expresion;
     const nodatos1 = $(".nodatos");
     const nocorreo1 = $(".nocorreo");
@@ -32,7 +32,7 @@ $(document).ready(function() {
     }
   });
 
-  $(".login-button").click(function() {
+  $(".login-button").click(function () {
     var correo1, password1, expresion1;
     const nodatos = $(".nodatos");
     const nocorreo = $(".nocorreo");
@@ -59,7 +59,7 @@ $(document).ready(function() {
   const inputPassword = $("#password");
   const caracteresMin = $(".caracteres-min");
   const listo = $(".listo");
-  inputPassword.keyup(function() {
+  inputPassword.keyup(function () {
     if (inputPassword.val().length < 8 && inputPassword.val().length >= 1) {
       caracteresMin.css("color", "red");
       listo.css("display", "none");
@@ -70,27 +70,52 @@ $(document).ready(function() {
       caracteresMin.css("color", "green");
       listo.css("display", "inline-block");
     }
-
-    /*login*/
   });
+  /*login*/
   const inputPassword1 = $("#password1");
   const caracteresMin1 = $(".caracteres-min");
   const listo1 = $(".listo");
-  inputPassword1.keyup(function() {
+  inputPassword1.keyup(function () {
     if (inputPassword1.val().length < 8 && inputPassword1.val().length >= 1) {
       caracteresMin1.css("color", "red");
-      listo1.css("display", "none");
+      listo1.css("display", "inline-block");
+      listo1.attr("src", "images/registro/alerta.svg");
     } else if (inputPassword1.val().length == 0) {
       caracteresMin1.css("color", "#666262");
       listo1.css("display", "none");
     } else {
       caracteresMin1.css("color", "green");
       listo1.css("display", "inline-block");
+      listo1.attr("src", "images/registro/listo.svg");
+    }
+  });
+  const inputCorreo = $("#correo1");
+  inputCorreo.keyup(function () {
+    const CorreoValido = $(".correo-valido");
+    const ImagenError = $(".error");
+    var email = $("#correo1").val();
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if (!filter.test(email)) {
+
+      CorreoValido.css("color", "red");
+      ImagenError.css("display", "inline-block");
+      ImagenError.attr("src", "images/registro/alerta.svg");
+
+
+    } else if (filter.test(email)) {
+      CorreoValido.css("color", "green");
+      ImagenError.css("display", "inline-block");
+      ImagenError.attr("src", "images/registro/listo.svg");
+
+    } else {
+      ImagenError.css("display", "none");
+      CorreoValido.css("color", "#666262");
+
     }
   });
 
   /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
-  $(document).on("scroll ontouchmove ontouchstart ontouchend", function() {
+  $(document).on("scroll ontouchmove ontouchstart ontouchend", function () {
     var posicionScroll = $(document).scrollTop();
     if (posicionScroll <= 0) {
       navbar.style.background =
@@ -113,8 +138,7 @@ $(document).ready(function() {
     dots: true,
     centerMode: false,
 
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -147,10 +171,8 @@ $(document).ready(function() {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />'
         }
       }
     ]
@@ -166,8 +188,7 @@ $(document).ready(function() {
   });
 
   var tv_slider = $(".tv-slider").slick({
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -211,18 +232,15 @@ $(document).ready(function() {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-tv-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-tv-next" />'
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-tv-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-tv-next" />'
         }
       }
     ]
   });
 
   var programacion_slider = $(".programacion-slider").slick({
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 768,
         settings: {
           slidesToShow: 7,
@@ -279,11 +297,11 @@ $(document).ready(function() {
   const html = $("html");
   const sidebar_content = document.querySelector(".sidebar-content");
   const menuTablet = $(".menu-responsive-tablet");
-  $(window).resize(function() {
+  $(window).resize(function () {
     console.log(menu);
   });
 
-  menuTablet.click(function() {
+  menuTablet.click(function () {
     hamburguer.style.transform = "translate(0%)";
     invisible_button.style.width = "2000px";
     invisible_button.style.left = "100%";
@@ -303,7 +321,7 @@ $(document).ready(function() {
     sidebar_content.style.height = "100%";
   });
 
-  menu.addEventListener("click", function(e) {
+  menu.addEventListener("click", function (e) {
     hamburguer.style.transform = "translate(0%)";
     invisible_button.style.width = "2000px";
     invisible_button.style.left = "100%";
@@ -323,7 +341,7 @@ $(document).ready(function() {
     sidebar_content.style.height = "100%";
   });
 
-  invisible_button.addEventListener("click", function() {
+  invisible_button.addEventListener("click", function () {
     hamburguer.style.transform = "translate(-100%)";
     invisible_button.style.width = "0px";
     invisible_button.style.left = "0%";
@@ -363,7 +381,7 @@ $(document).ready(function() {
   $(".tv-content").hide();
   $(".tv-content:first").show();
 
-  $("ul.tv-list li").click(function() {
+  $("ul.tv-list li").click(function () {
     $("ul.tv-list li").removeClass("active-navItem");
     $(this).addClass("active-navItem");
     $(".tv-content").hide();
@@ -387,7 +405,7 @@ $(document).ready(function() {
   $(".calendar-content").hide();
   $(".calendar-content:first").show();
 
-  $("ul.calendar .calendar-item").click(function() {
+  $("ul.calendar .calendar-item").click(function () {
     $("ul.calendar .calendar-item").removeClass("calendar-active");
     $(this).addClass("calendar-active");
     $(".calendar-content").hide();

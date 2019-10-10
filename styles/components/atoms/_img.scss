@@ -280,6 +280,10 @@
   display: none;
 }
 
+.error {
+  display: none;
+}
+
 /*Canal Claro*/
 
 .claro-thumbnail {
@@ -336,6 +340,7 @@
   position: absolute;
   width: 100%;
 }
+
 .arrow-prev,
 .arrow-tv-prev {
   width: 32px;

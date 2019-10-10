@@ -688,6 +688,22 @@ h6 {
   margin-top: 3%;
 }
 
+.correo-valido {
+  font-family: "Montserrat-SemiBold";
+  font-size: 14px;
+  font-weight: 700;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #666262;
+  text-align: left;
+  margin-left: 7%;
+  margin-top: 3%;
+}
+
 .horario-text {
   font-size: 14px;
   font-family: "Montserrat-SemiBold";
@@ -1504,6 +1520,10 @@ h6 {
   display: none;
 }
 
+.error {
+  display: none;
+}
+
 /*Canal Claro*/
 .claro-thumbnail {
   background: #797979;
@@ -1677,7 +1697,7 @@ h6 {
 .insert-data:focus {
   color: #14bef2;
   border-bottom: solid 2px #14bef2;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Regular";
 }
 
 label {
