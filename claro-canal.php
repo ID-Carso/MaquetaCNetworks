@@ -66,17 +66,17 @@
               <p class="dropdown-p">ebñrkjg</p>
             </div>-->
           <div class="sidebar-item sidebar-border-bottom">
-            <a class="sidebar-link" href="index.php"
+            <a class="sidebar-link" href="https://nuestravision.tv/"
               ><span class="dropdown-p">Nuestra Visión</span></a
             >
           </div>
           <div class="sidebar-item sidebar-border-bottom">
-            <a class="sidebar-link" href="index.php"
+            <a class="sidebar-link" href="https://www.marca.com/claro-mx/"
               ><span class="dropdown-p">Claro Sports</span></a
             >
           </div>
           <div class="sidebar-item sidebar-border-bottom">
-            <a class="sidebar-link" href="programacion.html"
+            <a class="sidebar-link" href="programacion.php"
               ><span class="dropdown-p">Programación</span></a
             >
           </div>

@@ -70,7 +70,7 @@
 
 .a-subtitle {
   @include title-section($blackColor, $posterTitleResponsive, $gothamLight);
-  padding-bottom: $titlesPadding;
+  padding-bottom: 14px;
 }
 
 .a-subtitle span {
@@ -139,7 +139,7 @@
 .a-our-vision-subtitle,
 .a-claro-sports-subtitle {
   @include title-section($blackColor, $posterTitleResponsive, $gothamLight);
-  padding-bottom: 30px;
+  padding-bottom: 14px;
 }
 
 .a-our-vision-subtitle span,
@@ -723,9 +723,39 @@
   font-family: $montserratSemiBold;
 }
 
-.calendar-active .day-text,
-.calendar-active .day-number {
-  color: white;
+.claro-active {
+  .day-text,
+  .day-number {
+    color: white;
+  }
+}
+
+.concert-active {
+  .day-text,
+  .day-number {
+    color: white;
+  }
+}
+
+.cinema-active {
+  .day-text,
+  .day-number {
+    color: white;
+  }
+}
+
+.vision-active {
+  .day-text,
+  .day-number {
+    color: white;
+  }
+}
+
+.sports-active {
+  .day-text,
+  .day-number {
+    color: white;
+  }
 }
 
 .schedule {
