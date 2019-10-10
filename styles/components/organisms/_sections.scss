@@ -83,8 +83,12 @@
   @include section();
 }
 
+.pro-container .o-advertising-section {
+  margin: 60px auto 60px auto;
+}
+
 .o-advertising-section {
-  margin: 50px auto 55px auto;
+  margin: 0px auto 60px auto;
   padding-left: 5%;
   padding-right: 5%;
   max-width: 600px;
@@ -99,9 +103,6 @@
 }
 
 /*Canal Claro*/
-.today-canal-claro {
-  padding-bottom: 28px;
-}
 
 .next-week-claro {
   background: $claroRectangle;
@@ -109,6 +110,7 @@
 
 .dont-lose-claro {
   background: $dontLoseSection;
+  margin-bottom: 60px;
 }
 
 .concert-container {

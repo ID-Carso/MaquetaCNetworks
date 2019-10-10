@@ -281,7 +281,7 @@ h6 {
   font-size: 14px;
   color: #262626;
   font-family: "Gotham-Light";
-  padding-bottom: 2%;
+  padding-bottom: 14px;
 }
 
 .a-subtitle span {
@@ -364,7 +364,7 @@ h6 {
   font-size: 14px;
   color: #262626;
   font-family: "Gotham-Light";
-  padding-bottom: 30px;
+  padding-bottom: 14px;
 }
 
 .a-our-vision-subtitle span,
@@ -961,8 +961,28 @@ h6 {
   font-family: "Montserrat-SemiBold";
 }
 
-.calendar-active .day-text,
-.calendar-active .day-number {
+.claro-active .day-text,
+.claro-active .day-number {
+  color: white;
+}
+
+.concert-active .day-text,
+.concert-active .day-number {
+  color: white;
+}
+
+.cinema-active .day-text,
+.cinema-active .day-number {
+  color: white;
+}
+
+.vision-active .day-text,
+.vision-active .day-number {
+  color: white;
+}
+
+.sports-active .day-text,
+.sports-active .day-number {
   color: white;
 }
 
@@ -2027,10 +2047,9 @@ input:checked + .slider:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10%;
   width: 80%;
   margin: auto;
-  padding: 30px 0px;
+  padding: 15px 0px;
 }
 
 .sidebar-content {
@@ -2076,21 +2095,27 @@ input:checked + .slider:before {
   margin: 41px auto;
 }
 
-.calendar {
+.calendar,
+.claro-calendar,
+.concert-calendar,
+.cinema-calendar,
+.vision-calendar,
+.sports-calendar {
   padding-left: 0;
   margin-bottom: 0;
 }
 
-.calendar-active {
+.calendar-active,
+.claro-active,
+.concert-active,
+.cinema-active,
+.vision-active,
+.sports-active {
   background: #bd2c2c;
 }
 
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
-.m-home-titles {
-  padding-bottom: 2%;
-}
-
 .header-details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2127,7 +2152,7 @@ input:checked + .slider:before {
 
 .slick-slider {
   width: 100%;
-  padding-bottom: 64px;
+  padding-bottom: 60px;
 }
 
 .slick-slider .slick-dots li button:before {
@@ -2136,7 +2161,7 @@ input:checked + .slider:before {
 
 .slick-slider .slick-dots {
   position: absolute;
-  bottom: 27px;
+  bottom: 40px;
   list-style: none;
   display: block;
   text-align: center;
@@ -2192,10 +2217,6 @@ input:checked + .slider:before {
   height: 100%;
 }
 
-.today .slick-dots {
-  bottom: inherit;
-}
-
 #dontLose-claro-slider {
   padding-bottom: 58px;
   margin-bottom: 52px;
@@ -2223,7 +2244,7 @@ input:checked + .slider:before {
 }
 
 .concert-header-slider .slick-dots {
-  bottom: 40px;
+  bottom: 90px;
 }
 
 .concert-header-slider .slick-dots li.slick-active button:before {
@@ -2261,25 +2282,13 @@ input:checked + .slider:before {
   width: 20px;
   height: 20px;
   font-family: "slick";
-  font-size: 6px;
+  font-size: 8px;
   line-height: 20px;
   text-align: center;
   color: white;
   opacity: 0.25;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.concert-container .slick-dots,
-.cinema-slider .slick-dots {
-  position: absolute;
-  bottom: inherit;
-  list-style: none;
-  display: block;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  width: 100%;
 }
 
 .concert-slide1 {
@@ -2312,6 +2321,19 @@ input:checked + .slider:before {
 
 .calendar .slick-slider .slick-dots {
   bottom: -26px;
+}
+
+.programacion-slider .slick-slide {
+  width: 8.74% !important;
+  margin: 0 2px;
+}
+
+.programacion-slider .slick-track {
+  width: 150% !important;
+}
+
+.programacion-slider .slick-list {
+  padding: 0px !important;
 }
 
 .schedule-container {
@@ -2446,8 +2468,12 @@ input:checked + .slider:before {
   display: none;
 }
 
+.pro-container .o-advertising-section {
+  margin: 60px auto 60px auto;
+}
+
 .o-advertising-section {
-  margin: 50px auto 55px auto;
+  margin: 0px auto 60px auto;
   padding-left: 5%;
   padding-right: 5%;
   max-width: 600px;
@@ -2462,16 +2488,13 @@ input:checked + .slider:before {
 }
 
 /*Canal Claro*/
-.today-canal-claro {
-  padding-bottom: 28px;
-}
-
 .next-week-claro {
   background: #e1261c;
 }
 
 .dont-lose-claro {
   background: #262626;
+  margin-bottom: 60px;
 }
 
 .concert-container {

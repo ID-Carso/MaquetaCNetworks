@@ -54,19 +54,20 @@
                 <div class="sidebar-item sidebar-border-bottom">
                     <a class="sidebar-link" href="claro-cinema.php"><span class="dropdown-p">Claro Cinema</span></a>
                 </div>
+                
                 <!--<div class="dropdown-content">
               <p class="dropdown-p">ebñrkjg</p>
               <p class="dropdown-p">ebñrkjg</p>
               <p class="dropdown-p">ebñrkjg</p>
             </div>-->
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="index.php"><span class="dropdown-p">Nuestra Visión</span></a>
+                    <a class="sidebar-link" href="https://www.nuestravision.com.mx/"><span class="dropdown-p">Nuestra Visión</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="ibndex.php"><span class="dropdown-p">Claro Sports</span></a>
+                    <a class="sidebar-link" href="https://www.marca.com/claro-mx/"><span class="dropdown-p">Claro Sports</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="programacion.html"><span class="dropdown-p">Programación</span></a>
+                    <a class="sidebar-link" href="programacion.php"><span class="dropdown-p">Programación</span></a>
                 </div>
                 <!--prueba sidebar-->
             </div>
