@@ -179,3 +179,29 @@ input:checked+.slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+.date-data {
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-clip: padding-box;
+  width: 17%;
+  height: 44px;
+  background-color: $textWhite;
+  padding: 1px;
+  font-family: $montserratRegular;
+  color: $pureBlack;
+  font-size: $fontSizeTv;
+  border: none;
+  border-radius: 0px;
+  border-bottom: solid 1px $bordergray;
+  font-weight: bold;
+  outline: none !important;
+  text-align: center
+}
+
+.date-data:focus {
+  color: $bluetxt;
+  border-bottom: solid 2px $bluetxt;
+  font-family: $montserratRegular;
+}

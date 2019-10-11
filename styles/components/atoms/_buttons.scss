@@ -70,6 +70,7 @@
   line-height: normal;
   letter-spacing: normal;
 }
+
 .singup-button {
   width: 288px;
   height: 44px;
@@ -86,13 +87,16 @@
   line-height: normal;
   letter-spacing: normal;
 }
+
 .centro {
   text-align: center;
 }
+
 .login-button:hover {
   background-color: $rollover;
   border: solid 1px $rollover;
 }
+
 .singup-button:hover {
   background-color: $rollover;
   color: $textWhite;
@@ -112,4 +116,27 @@
 
 .schedule-add span {
   margin-left: 20px;
+}
+
+.save-button {
+  width: 288px;
+  height: 44px;
+  border-radius: 21.5px;
+  outline: none !important;
+  background-color: $textWhite;
+  font-family: $montserratSemiBold;
+  color: $textgray;
+  font-size: $fontSizeTv;
+  border: solid 1px $subtitleTV;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.save-button:hover {
+  background-color: $rollover;
+  color: $textWhite;
+  border: solid 1px $rollover;
 }

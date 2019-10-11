@@ -1150,6 +1150,29 @@ h6 {
   margin-left: 20px;
 }
 
+.save-button {
+  width: 288px;
+  height: 44px;
+  border-radius: 21.5px;
+  outline: none !important;
+  background-color: #ffffff;
+  font-family: "Montserrat-SemiBold";
+  color: #717272;
+  font-size: 14px;
+  border: solid 1px #0fd7f2;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.save-button:hover {
+  background-color: #069cb0;
+  color: #ffffff;
+  border: solid 1px #069cb0;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 .a-cinema-rectangle, .a-sports-rectangle, .a-concert-rectangle, .a-claro-rectangle, .a-vision-rectangle {
@@ -1876,6 +1899,34 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.date-data {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background-clip: padding-box;
+  width: 17%;
+  height: 44px;
+  background-color: #ffffff;
+  padding: 1px;
+  font-family: "Montserrat-Regular";
+  color: #000000;
+  font-size: 14px;
+  border: none;
+  border-radius: 0px;
+  border-bottom: solid 1px #a1a0a0;
+  font-weight: bold;
+  outline: none !important;
+  text-align: center;
+}
+
+.date-data:focus {
+  color: #14bef2;
+  border-bottom: solid 2px #14bef2;
+  font-family: "Montserrat-Regular";
 }
 
 .home-video {
