@@ -1,0 +1,14 @@
+@import "../base/colors";
+@import "../base/typography";
+@import "../base/config";
+
+.dropdownCountry {
+  max-width: 500px;
+  margin-bottom: 90px;
+}
+
+.dropdownCountry-content {
+  color: white;
+  font-family: $montserratLight;
+  border-bottom: 1px solid $dropdownCountryBorder;
+}

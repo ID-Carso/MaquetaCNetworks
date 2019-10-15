@@ -2,8 +2,6 @@
   width: 100%;
   height: 205px;
   background-image: url("../../../images/home/american-horror.jpeg");
-  background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -17,7 +15,7 @@
   background: white;
 }
 
-.claro-canal-header .header::after,
+/*.claro-canal-header .header::after,
 .claro-cinema-header .header::after {
   content: "";
 
@@ -26,7 +24,7 @@
   border-radius: 26% 69% 0% 10% / 23% 100% 0% 0%;
   position: absolute;
   top: 87%;
-}
+}*/
 
 .claro-cinema-header .header::after {
   background: #f5dd15;

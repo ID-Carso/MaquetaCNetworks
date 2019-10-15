@@ -336,7 +336,7 @@ h6 {
   text-align: justify;
   margin: 0;
   line-height: normal;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .a-our-vision-title {
@@ -485,10 +485,22 @@ h6 {
 }
 
 .other-text-regular,
-.text-footer-regular,
 .text-footer-bold {
   text-align: center;
   font-size: 10px;
+}
+
+.text-footer-regular {
+  text-align: center;
+  font-size: 14px;
+}
+
+.synopsis-content .text-footer-regular {
+  color: #838484;
+}
+
+.synopsis-content .advertising-text {
+  color: #ffffff;
 }
 
 .other-text-regular,
@@ -497,7 +509,7 @@ h6 {
 }
 
 .terms-conditions-mobile .aviso-priv-blue {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .terms-conditions-desktop .aviso-priv-blue:nth-child(1) {
@@ -1035,6 +1047,73 @@ h6 {
   text-transform: uppercase;
 }
 
+.synopsis-section-title {
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Montserrat-Black";
+  padding-bottom: 24px;
+}
+
+.synopsis-schedule-text {
+  padding-right: 6px;
+}
+
+.synopsis-title {
+  font-size: 16px;
+  font-family: "Montserrat-Light";
+  color: white;
+  text-align: center;
+}
+
+.synopsis-text {
+  color: white;
+  font-size: 14px;
+  font-family: "Montserrat-Regular";
+  margin-bottom: 1rem;
+}
+
+.synopsis-schedule-title {
+  margin-bottom: 36px !important;
+  color: white;
+  text-align: center;
+  font-family: "Montserrat-Black";
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.synopsis-content .footer-title {
+  color: #e1261c;
+}
+
+.dropdownCountry-text {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.dropdownCountry-schedule {
+  font-size: 16px;
+  color: #71e2fa;
+  text-align: center;
+}
+
+.dropdownCountry-arrow::after {
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  content: "";
+  height: 8px;
+  pointer-events: none;
+  -webkit-transform-origin: 66% 66%;
+          transform-origin: 66% 66%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  width: 8px;
+  margin-bottom: 3px;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -1171,6 +1250,48 @@ h6 {
   background-color: #069cb0;
   color: #ffffff;
   border: solid 1px #069cb0;
+}
+
+.synopsis-button {
+  border-radius: 20px;
+  border: 2px solid white;
+  font-family: "Montserrat-SemiBold";
+  font-size: 14px;
+  padding: 7px 17px;
+  text-transform: uppercase;
+  background: transparent;
+  color: white;
+}
+
+.synopsis-button img {
+  width: 15px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.synopsis-add {
+  margin-right: 38px;
+}
+
+.synopsis-add-text {
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-right: 40px;
+}
+
+.synopsis-add-text::after {
+  content: "+";
+  font-family: "Montserrat-SemiBold";
+  color: white;
+  font-size: 27px;
+  position: absolute;
+  right: 0;
 }
 
 /*Tamaño de textos - responsive*/
@@ -1667,6 +1788,10 @@ h6 {
 .arrow-tv-next:hover,
 .arrow-tv-prev:hover {
   opacity: 1;
+}
+
+.synopsis-image {
+  width: 100%;
 }
 
 .hr1 {
@@ -2407,6 +2532,74 @@ input:checked + .slider:before {
   padding: 0px !important;
 }
 
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url(../../../fonts/Gotham-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Gotham-Black";
+  src: url(../../../fonts/Gotham-Black.ttf);
+}
+
+@font-face {
+  font-family: "Gotham-Book";
+  src: url(../../../fonts/Gotham-Book.ttf);
+}
+
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url(../../../fonts/Gotham-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Gotham-Light";
+  src: url(../../../fonts/Gotham-Light.ttf);
+}
+
+@font-face {
+  font-family: "Gotham-BoldItalic";
+  src: url(../../../fonts/Gotham-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url(../../../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(../../../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url(../../../fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(../../../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url(../../../fonts/Montserrat-Black.ttf);
+}
+
+/*Tamaño de textos - responsive*/
+/*Tipografías*/
+.dropdownCountry {
+  max-width: 500px;
+  margin-bottom: 90px;
+}
+
+.dropdownCountry-content {
+  color: white;
+  font-family: "Montserrat-Light";
+  border-bottom: 1px solid #464444;
+}
+
 .schedule-container {
   margin-top: 26px;
   border-bottom: 2px solid #979797;
@@ -2422,6 +2615,10 @@ input:checked + .slider:before {
 
 .rating-container {
   margin: 30px 0px;
+}
+
+.synopsis-details-container {
+  margin-bottom: 36px;
 }
 
 .large-poster-width {
@@ -2576,12 +2773,14 @@ input:checked + .slider:before {
   background: #f5dd15;
 }
 
+.synopsis-content {
+  background: #000000;
+}
+
 .header {
   width: 100%;
   height: 205px;
   background-image: url("../../../images/home/american-horror.jpeg");
-  background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2595,16 +2794,16 @@ input:checked + .slider:before {
   background: white;
 }
 
-.claro-canal-header .header::after,
+/*.claro-canal-header .header::after,
 .claro-cinema-header .header::after {
   content: "";
+
   width: 100%;
   height: 30px;
   border-radius: 26% 69% 0% 10% / 23% 100% 0% 0%;
   position: absolute;
   top: 87%;
-}
-
+}*/
 .claro-cinema-header .header::after {
   background: #f5dd15;
 }
@@ -2812,6 +3011,9 @@ input:checked + .slider:before {
     color: #00caf5;
     font-family: "Gotham-Black";
   }
+  .a-today-claro-title {
+    font-size: 30px;
+  }
   .footer-title {
     font-size: 30px;
   }
@@ -2919,6 +3121,11 @@ input:checked + .slider:before {
     background: transparent;
     padding: 30px;
     height: auto;
+  }
+  .claro-canal-header .header {
+    position: relative;
+    background: #512a14;
+    padding-bottom: 23%;
   }
   .header-details {
     margin-top: 60px;
@@ -3120,7 +3327,7 @@ input:checked + .slider:before {
     padding-top: 50px;
   }
   .menu-responsive-tablet {
-    display: none;
+    width: 25px;
   }
   /*Footer*/
   .footer-img {
@@ -3151,12 +3358,21 @@ input:checked + .slider:before {
     width: 100%;
     padding-bottom: 0px;
   }
+  .synopsis-section-title {
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Montserrat-Black";
+    padding-top: 45px;
+    padding-bottom: 60px;
+  }
   /***  MOLECULES  ***/
   .menu {
     display: none;
   }
   .menu-tablet {
     display: block;
+    padding: 30px;
   }
   .terms-conditions-mobile {
     display: none;
@@ -3208,8 +3424,7 @@ input:checked + .slider:before {
     transition: all 0.5s ease 0s;
   }
   .header {
-    background: transparent;
-    padding: 30px;
+    padding-bottom: 38%;
     height: auto;
   }
   .o-concert-section {
@@ -3280,6 +3495,9 @@ input:checked + .slider:before {
   .terms-conditions-desktop {
     display: block;
   }
+  .synopsis-body-container {
+    margin-bottom: 110px;
+  }
   /*-------------------*/
   .header-details {
     margin-top: 100px;
@@ -3291,8 +3509,9 @@ input:checked + .slider:before {
     display: none;
   }
   .logo {
-    margin-left: 0;
     width: 85px;
+    display: initial;
+    margin-left: 20px;
   }
   .circle-video {
     display: block;
@@ -3354,11 +3573,7 @@ input:checked + .slider:before {
     text-align: left;
   }
   .claro-navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
+    display: none;
   }
   .concert-first-subtitle {
     font-size: 25px;
@@ -3367,7 +3582,7 @@ input:checked + .slider:before {
     font-size: 19px;
   }
   .footer-companies-desktop {
-    margin: 60px 0;
+    padding: 60px 0;
   }
   .footer-companies {
     display: none;
@@ -3754,7 +3969,7 @@ input:checked + .slider:before {
     font-size: 19px;
   }
   .footer-companies-desktop {
-    margin: 60px 0;
+    padding: 60px 0;
   }
   .footer-companies {
     display: none;

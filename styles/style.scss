@@ -16,6 +16,7 @@
 @import "./components/molecules/titles-section";
 @import "./components/molecules/cards";
 @import "./components/molecules/sliders";
+@import "./components/molecules/dropdown";
 @import "./components/organisms/container";
 @import "./components/organisms/sections";
 @import "./components/organisms/header";
@@ -222,6 +223,10 @@
     font-family: "Gotham-Black";
   }
 
+  .a-today-claro-title {
+    font-size: 30px;
+  }
+
   .footer-title {
     font-size: 30px;
   }
@@ -345,6 +350,12 @@
     background: transparent;
     padding: 30px;
     height: auto;
+  }
+
+  .claro-canal-header .header {
+    position: relative;
+    background: #512a14;
+    padding-bottom: 23%;
   }
 
   .header-details {
@@ -588,7 +599,7 @@
   }
 
   .menu-responsive-tablet {
-    display: none;
+    width: 25px;
   }
 
   /*Footer*/
@@ -626,6 +637,15 @@
     padding-bottom: 0px;
   }
 
+  .synopsis-section-title {
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-family: $montserratBlack;
+    padding-top: 45px;
+    padding-bottom: 60px;
+  }
+
   /***  MOLECULES  ***/
 
   .menu {
@@ -634,6 +654,7 @@
 
   .menu-tablet {
     display: block;
+    padding: 30px;
   }
 
   .terms-conditions-mobile {
@@ -690,8 +711,7 @@
   }
 
   .header {
-    background: transparent;
-    padding: 30px;
+    padding-bottom: 38%;
     height: auto;
   }
 
@@ -781,6 +801,10 @@
     display: block;
   }
 
+  .synopsis-body-container {
+    margin-bottom: 110px;
+  }
+
   /*-------------------*/
   .header-details {
     margin-top: 100px;
@@ -794,8 +818,9 @@
   }
 
   .logo {
-    margin-left: 0;
     width: 85px;
+    display: initial;
+    margin-left: 20px;
   }
 
   .circle-video {
@@ -870,9 +895,7 @@
   }
 
   .claro-navbar {
-    display: flex;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
+    display: none;
   }
 
   .concert-first-subtitle {
@@ -884,7 +907,7 @@
   }
 
   .footer-companies-desktop {
-    margin: 60px 0;
+    padding: 60px 0;
   }
 
   .footer-companies {
@@ -1349,7 +1372,7 @@
   }
 
   .footer-companies-desktop {
-    margin: 60px 0;
+    padding: 60px 0;
   }
 
   .footer-companies {

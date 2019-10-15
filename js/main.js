@@ -1,5 +1,5 @@
-$(document).ready(function () {
-  $(".ubicacion4").click(function () {
+$(document).ready(function() {
+  $(".ubicacion4").click(function() {
     var tipo = document.getElementById("password");
     if (tipo.type == "password") {
       tipo.type = "text";
@@ -8,7 +8,7 @@ $(document).ready(function () {
     }
   });
 
-  $(".singup-button").click(function () {
+  $(".singup-button").click(function() {
     var usuario, correo, password, expresion;
     const nodatos1 = $(".nodatos");
     const nocorreo1 = $(".nocorreo");
@@ -32,7 +32,7 @@ $(document).ready(function () {
     }
   });
 
-  $(".login-button").click(function () {
+  $(".login-button").click(function() {
     var correo1, password1, expresion1;
     const nodatos = $(".nodatos");
     const nocorreo = $(".nocorreo");
@@ -59,7 +59,7 @@ $(document).ready(function () {
   const inputPassword = $("#password");
   const caracteresMin = $(".caracteres-min");
   const listo = $(".listo");
-  inputPassword.keyup(function () {
+  inputPassword.keyup(function() {
     if (inputPassword.val().length < 8 && inputPassword.val().length >= 1) {
       caracteresMin.css("color", "red");
       listo.css("display", "none");
@@ -75,7 +75,7 @@ $(document).ready(function () {
   const inputPassword1 = $("#password1");
   const caracteresMin1 = $(".caracteres-min");
   const listo1 = $(".listo");
-  inputPassword1.keyup(function () {
+  inputPassword1.keyup(function() {
     if (inputPassword1.val().length < 8 && inputPassword1.val().length >= 1) {
       caracteresMin1.css("color", "red");
       listo1.css("display", "inline-block");
@@ -90,33 +90,28 @@ $(document).ready(function () {
     }
   });
   const inputCorreo = $("#correo1");
-  inputCorreo.keyup(function () {
+  inputCorreo.keyup(function() {
     const CorreoValido = $(".correo-valido");
     const ImagenError = $(".error");
     var email = $("#correo1").val();
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
     if (!filter.test(email)) {
-
       CorreoValido.css("color", "red");
       ImagenError.css("display", "inline-block");
       ImagenError.attr("src", "images/registro/alerta.svg");
-
-
     } else if (filter.test(email)) {
       CorreoValido.css("color", "green");
       ImagenError.css("display", "inline-block");
       ImagenError.attr("src", "images/registro/listo.svg");
-
     } else if (inputCorreo.val().length == 0) {
       ImagenError.css("display", "none");
       CorreoValido.css("color", "#666262");
-
     }
   });
 
   /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
-  $(document).on("scroll ontouchmove ontouchstart ontouchend", function () {
+  $(document).on("scroll ontouchmove ontouchstart ontouchend", function() {
     var posicionScroll = $(document).scrollTop();
     if (posicionScroll <= 0) {
       navbar.style.background =
@@ -139,57 +134,8 @@ $(document).ready(function () {
     dots: true,
     centerMode: false,
 
-    responsive: [{
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: false,
-          autoplaySpeed: 2000,
-          centerMode: true,
-          infinite: true,
-          arrows: false,
-          dots: true
-        }
-      },
+    responsive: [
       {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: false
-        }
-      },
-      {
-        breakpoint: 2000,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
-      }
-    ]
-  });
-
-  var header_slider = $(".concert-header-slider").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: false,
-    dots: true,
-    centerMode: false,
-    arrows: false
-  });
-
-  var tv_slider = $(".tv-slider").slick({
-    responsive: [{
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -216,7 +162,76 @@ $(document).ready(function () {
       {
         breakpoint: 1200,
         settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
+        }
+      },
+
+      {
+        breakpoint: 2000,
+        settings: {
           slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
+        }
+      }
+    ]
+  });
+
+  var header_slider = $(".concert-header-slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: false,
+    dots: true,
+    centerMode: false,
+    arrows: false
+  });
+
+  var tv_slider = $(".tv-slider").slick({
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          centerMode: true,
+          infinite: true,
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -233,15 +248,18 @@ $(document).ready(function () {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-tv-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-tv-next" />'
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-tv-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-tv-next" />'
         }
       }
     ]
   });
 
   var programacion_slider = $(".programacion-slider").slick({
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 7,
@@ -251,7 +269,7 @@ $(document).ready(function () {
           centerMode: false,
           infinite: false,
           arrows: false,
-          dots: true
+          dots: false
         }
       },
       {
@@ -298,11 +316,11 @@ $(document).ready(function () {
   const html = $("html");
   const sidebar_content = document.querySelector(".sidebar-content");
   const menuTablet = $(".menu-responsive-tablet");
-  $(window).resize(function () {
+  $(window).resize(function() {
     console.log(menu);
   });
 
-  menuTablet.click(function () {
+  menuTablet.click(function() {
     hamburguer.style.transform = "translate(0%)";
     invisible_button.style.width = "2000px";
     invisible_button.style.left = "100%";
@@ -322,7 +340,7 @@ $(document).ready(function () {
     sidebar_content.style.height = "100%";
   });
 
-  menu.addEventListener("click", function (e) {
+  menu.addEventListener("click", function(e) {
     hamburguer.style.transform = "translate(0%)";
     invisible_button.style.width = "2000px";
     invisible_button.style.left = "100%";
@@ -342,7 +360,7 @@ $(document).ready(function () {
     sidebar_content.style.height = "100%";
   });
 
-  invisible_button.addEventListener("click", function () {
+  invisible_button.addEventListener("click", function() {
     hamburguer.style.transform = "translate(-100%)";
     invisible_button.style.width = "0px";
     invisible_button.style.left = "0%";
@@ -382,7 +400,7 @@ $(document).ready(function () {
   $(".tv-content").hide();
   $(".tv-content:first").show();
 
-  $("ul.tv-list li").click(function () {
+  $("ul.tv-list li").click(function() {
     $("ul.tv-list li").removeClass("active-navItem");
     $(this).addClass("active-navItem");
     $(".tv-content").hide();
@@ -405,8 +423,7 @@ $(document).ready(function () {
   $(".pro-content").hide();
   $(".pro-content:first").show();
 
-
-  $("ul.pro-list li").on("click", function () {
+  $("ul.pro-list li").on("click", function() {
     $("ul.pro-list li").removeClass("active-proItem");
     $(this).addClass("active-proItem");
     $(".pro-content").hide();
@@ -414,7 +431,8 @@ $(document).ready(function () {
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();
 
-    if (activeNav == "pro-concert-channel") {} else if (activeNav == "pro-claro-canal") {
+    if (activeNav == "pro-concert-channel") {
+    } else if (activeNav == "pro-claro-canal") {
       //proClaroSlider.slick("refresh");
     } else if (activeNav == "pro-claro-cinema") {
       //programacionSlider.slick("refresh");
@@ -428,7 +446,7 @@ $(document).ready(function () {
   $(".claro-content").hide();
   $(".claro-content:first").show();
 
-  $("ul.claro-calendar .claro-item").click(function () {
+  $("ul.claro-calendar .claro-item").click(function() {
     $("ul.claro-calendar .claro-item").removeClass("claro-active");
     $(this).addClass("claro-active");
     $(".claro-content").hide();
@@ -439,7 +457,7 @@ $(document).ready(function () {
   $(".concert-content").hide();
   $(".concert-content:first").show();
 
-  $("ul.concert-calendar .concert-item").click(function () {
+  $("ul.concert-calendar .concert-item").click(function() {
     $("ul.concert-calendar .concert-item").removeClass("concert-active");
     $(this).addClass("concert-active");
     $(".concert-content").hide();
@@ -450,7 +468,7 @@ $(document).ready(function () {
   $(".cinema-content").hide();
   $(".cinema-content:first").show();
 
-  $("ul.cinema-calendar .cinema-item").click(function () {
+  $("ul.cinema-calendar .cinema-item").click(function() {
     $("ul.cinema-calendar .cinema-item").removeClass("cinema-active");
     $(this).addClass("cinema-active");
     $(".cinema-content").hide();
@@ -461,7 +479,7 @@ $(document).ready(function () {
   $(".vision-content").hide();
   $(".vision-content:first").show();
 
-  $("ul.vision-calendar .vision-item").click(function () {
+  $("ul.vision-calendar .vision-item").click(function() {
     $("ul.vision-calendar .vision-item").removeClass("vision-active");
     $(this).addClass("vision-active");
     $(".vision-content").hide();
@@ -472,7 +490,7 @@ $(document).ready(function () {
   $(".sports-content").hide();
   $(".sports-content:first").show();
 
-  $("ul.sports-calendar .sports-item").click(function () {
+  $("ul.sports-calendar .sports-item").click(function() {
     $("ul.sports-calendar .sports-item").removeClass("sports-active");
     $(this).addClass("sports-active");
     $(".sports-content").hide();
@@ -483,6 +501,10 @@ $(document).ready(function () {
   var myTag = document.querySelectorAll(".a-poster-text-white");
 
   /*** Fin Slider "Ahora en TV"  ***/
+
+  const dropdownCountryItem = document.getElementsByClassName(
+    "sidebar-dropdown"
+  );
 
   /*** Dropdown del menú ***/
   /*const dropdown = document.getElementsByClassName("sidebar-dropdown");

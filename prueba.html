@@ -7,75 +7,51 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Document</title>
 </head>
+<style>
+  .container {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .parallax-container {
+    perspective: 1px;
+  }
+
+  .parallax-child {
+    position: -webkit-sticky;
+    top: 0px;
+    transform: translate(-2px) scale(3);
+    background-image: url('./images/home/american-horror.jpeg');
+    height: 200px;
+  }
+</style>
 
 <body>
-  <div class="d-flex justify-content-between align-items-center margin-bottom-75">
-    <div class="m-home-titles">
-      <h1 class="a-concert-channel-title">CONCERT CHANNEL</h1>
-    </div>
-    <div class="m-see-more">
-      <button class="btn-pink">VER +</button>
+  <div class="container">
+    <div class="parallax-container">
+      <div class="parallax-child"></div>
     </div>
   </div>
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <p class="a-concert-subtitle concert-first-subtitle">Conciertos</p>
-      <p class="a-concert-subtitle concert-second-subtitle">Entrevistas y mucho más</p>
-    </div>
-    <div class="col-md-8">
-      <div class="row poster-pad-b">
-        <div class="col poster-pad-r">
-          <div class="height-second-poster ">
-            <div class="poster-image-small concert-poster-color">
-            </div>
-            <div class="a-concert-rectangle">
-              <div class="poster-title-margin">
-                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col poster-pad-l">
-          <div class="height-second-poster">
-            <div class="poster-image-small concert-poster-color"></div>
-            <div class="a-concert-rectangle">
-              <div class="poster-title-margin">
-                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row poster-pad-t">
-        <div class="col poster-pad-r">
-          <div class="height-second-poster h-100">
-            <div class="poster-image-small concert-poster-color"></div>
-            <div class="a-concert-rectangle ">
-              <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
-            </div>
-          </div>
-        </div>
-        <div class="col poster-pad-l">
-          <div class="height-second-poster h-100">
-            <div class="poster-image-small concert-poster-color"></div>
-            <div class="a-concert-rectangle ">
-              <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="d-flex align-items-center justify-content-between section-home-footer">
-    <div>
-      <img class="concert-footer-img" src="./images/home/concert-home-img.svg" alt="">
-    </div>
-    <div>
-      <p class="horario-text text-white">
-        Horario sujetos a cambios
-      </p>
-    </div>
-  </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit fringilla laoreet. Quisque accumsan risus
+    venenatis dui suscipit, non luctus odio faucibus. Duis vitae facilisis quam. Integer gravida nisi ut felis
+    tincidunt, a aliquam mi sollicitudin. Suspendisse ipsum sem, rutrum sit amet viverra id, laoreet elementum leo. Duis
+    finibus diam vel diam interdum ullamcorper. Donec arcu tellus, rhoncus nec purus in, tempus varius risus. Quisque
+    eget scelerisque ex. Pellentesque aliquet ullamcorper est eget ultrices. Pellentesque ultrices lacus a eros
+    sollicitudin gravida. Cras dignissim libero at elementum laoreet. Sed mattis urna in dictum lacinia. Vivamus a neque
+    sit amet nulla tincidunt facilisis. In convallis viverra gravida. Lorem ipsum dolor sit amet, consectetur adipiscing
+    elit. Nulla facilisi.
+
+    Curabitur id lorem felis. In venenatis dui quis turpis euismod laoreet. Maecenas ut justo non lorem scelerisque
+    vestibulum sit amet ut mi. Cras non congue ante. Phasellus iaculis dui urna, sit amet elementum urna placerat a.
+    Donec eu metus odio. Nulla quis dictum nunc. Aenean euismod imperdiet sagittis.
+
+    Nam a metus ac purus cursus condimentum et at nunc. Sed et pharetra leo. Morbi ac ipsum non nulla molestie
+    facilisis. Aenean cursus, ligula ac egestas aliquet, lorem est ultrices elit, vel porttitor est lectus sit amet
+    quam. Donec varius vulputate arcu, sed maximus ipsum porttitor vel. Maecenas eu dignissim lorem. Maecenas sed
+    egestas turpis, ac sagittis orci. Nunc mattis rutrum dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing
+    elit. Aliquam erat volutpat. Sed a velit ornare, pulvinar ligula vel, egestas nisi. Nulla congue ipsum purus, eget
+    faucibus velit sagittis sit amet.</p>
+
 </body>
 
 </html>
