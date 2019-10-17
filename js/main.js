@@ -111,19 +111,30 @@ $(document).ready(function() {
   });
 
   /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
+  const navbarTablet = document.querySelector(
+    ".claro-canal-header .menu-tablet, .synopsis-header .menu-tablet"
+  );
   $(document).on("scroll ontouchmove ontouchstart ontouchend", function() {
     var posicionScroll = $(document).scrollTop();
     if (posicionScroll <= 0) {
       navbar.style.background =
         "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
       navbar.style.position = "absolute";
+      navbarTablet.style.background =
+        "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+      navbarTablet.style.position = "absolute";
     } else if (posicionScroll > 0 && posicionScroll <= 100) {
       navbar.style.background =
         "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
       navbar.style.position = "fixed";
+      navbarTablet.style.background =
+        "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+      navbarTablet.style.position = "fixed";
     } else if (posicionScroll >= 101) {
       navbar.style.background = "black";
       navbar.style.position = "fixed";
+      navbarTablet.style.background = "white";
+      navbarTablet.style.position = "fixed";
     }
   });
 
@@ -236,7 +247,11 @@ $(document).ready(function() {
           infinite: true,
           dots: true,
           centerMode: false,
-          arrows: false
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-tv-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-tv-next" />'
         }
       },
       {

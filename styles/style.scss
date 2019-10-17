@@ -103,7 +103,7 @@
     text-overflow: ellipsis;
     white-space: normal;
     -webkit-line-clamp: 2;*/
-    height: 36px;
+    height: 48px;
   }
 
   /*.small-poster .slick-list {
@@ -137,7 +137,7 @@
   .a-sports-text-poster,
   .a-poster-text-white,
   .a-poster-text-black {
-    padding: 0px;
+    padding: 10px;
     font-size: $fontSizeSub;
   }
 
@@ -283,6 +283,14 @@
 
   .slick-slider {
     padding-bottom: 0px;
+  }
+
+  .thumbnail-info-image {
+    display: none;
+  }
+
+  .thumbnail-info-title {
+    width: 100%;
   }
 
   /*Molecules*/
@@ -455,6 +463,10 @@
 
   /***  ATOMS  ****/
 
+  .header-curve {
+    bottom: -100px;
+  }
+
   .margin-ahora-tv {
     margin-bottom: 21px;
   }
@@ -496,13 +508,17 @@
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: flex-start;
     /*-webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
     -webkit-line-clamp: 2;*/
-    height: 36px;
+    height: 52px;
+  }
+
+  .a-next-week-rectangle {
+    align-items: center;
   }
 
   .poster-title-margin {
@@ -517,8 +533,9 @@
   .a-sports-text-poster,
   .a-poster-text-white,
   .a-poster-text-black {
-    padding: 0px;
+    padding: 15px;
     font-size: $fontSizeSub;
+    text-align: left;
   }
 
   .a-concert-channel-title {
@@ -602,7 +619,6 @@
     width: 25px;
   }
 
-  /*Footer*/
   .footer-img {
     width: 80px;
     height: 72px;
@@ -615,8 +631,8 @@
 
   .login {
     position: absolute;
-    right: -8px;
-    top: -8px;
+    right: 0px;
+    top: 0px;
     z-index: 1;
     background: rgba(97, 109, 113, 0.7);
     padding: 8px;
@@ -646,6 +662,51 @@
     padding-bottom: 60px;
   }
 
+  .a-today-claro-title {
+    font-size: 30px;
+    padding: 30px 0px 58px 0px;
+  }
+
+  .menu-responsive {
+    display: none;
+  }
+
+  .logo {
+    width: 85px;
+    display: initial;
+    margin-left: 20px;
+  }
+
+  .a-next-claro-title,
+  .a-dontLose-claro-title {
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 13px;
+  }
+
+  .a-next-claro-subtitle,
+  .a-dontLose-claro-subtitle {
+    font-size: 20px;
+    padding-bottom: 30px;
+    text-align: left;
+  }
+
+  .footer-title-claro {
+    font-size: 40px;
+  }
+
+  .header-curve {
+    display: block;
+  }
+
+  .thumbnail-info-image {
+    display: none;
+  }
+
+  .thumbnail-info-title {
+    width: 100%;
+  }
+
   /***  MOLECULES  ***/
 
   .menu {
@@ -654,7 +715,7 @@
 
   .menu-tablet {
     display: block;
-    padding: 30px;
+    padding: 0px;
   }
 
   .terms-conditions-mobile {
@@ -700,7 +761,33 @@
     }
   }
 
+  #next-week-slider {
+    display: none;
+  }
+
+  .next-videos-tablet {
+    display: block;
+  }
+
+  .dontLose-slider-tablet {
+    display: block;
+    margin-top: 100px;
+  }
+
   /*Organisms*/
+
+  .today {
+    padding: 0 30px;
+  }
+
+  .dont-lose-claro {
+    border-radius: 20px;
+  }
+
+  .next-week-claro {
+    border-radius: 20px;
+  }
+
   .menu {
     background: transparent;
     position: inherit;
@@ -711,8 +798,25 @@
   }
 
   .header {
-    padding-bottom: 38%;
+    background: transparent;
+    padding: 30px;
     height: auto;
+  }
+
+  .claro-canal-header .header,
+  .synopsis-header .header {
+    position: relative;
+    background-image: url("../images/home/american-horror.jpeg");
+    padding: 0px 0px 42% 0px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .claro-canal-header .menu-tablet,
+  .synopsis-header .menu-tablet {
+    background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+    padding: 30px;
   }
 
   .o-concert-section {
@@ -723,7 +827,7 @@
     display: none;
   }
 
-  .concert-channel-desktop {
+  .concert-channel-tablet {
     display: block;
   }
 
@@ -738,7 +842,7 @@
     display: none;
   }
 
-  .cinema-claro-desktop {
+  .cinema-claro-tablet {
     display: block;
   }
 
@@ -805,22 +909,24 @@
     margin-bottom: 110px;
   }
 
+  .next-week-container {
+    padding: 30px 20px 90px 20px;
+  }
+
+  .today-container {
+    padding: 0 50px 95px 50px;
+  }
+
+  .dont-lose-container {
+    padding: 30px 20px 90px 20px;
+  }
+
   /*-------------------*/
   .header-details {
     margin-top: 100px;
     margin-bottom: 40px;
     display: inherit;
     text-align: left;
-  }
-
-  .menu-responsive {
-    display: none;
-  }
-
-  .logo {
-    width: 85px;
-    display: initial;
-    margin-left: 20px;
   }
 
   .circle-video {
@@ -837,14 +943,6 @@
     height: 135px;
   }
 
-  .a-cinema-rectangle,
-  .a-sports-rectangle,
-  .a-concert-rectangle,
-  .a-claro-rectangle,
-  .a-vision-rectangle {
-    height: 45px;
-  }
-
   /*.slick-list {
     height: 400px;
   }
@@ -854,7 +952,7 @@
   }*/
 
   .slick-dots {
-    bottom: -50px !important;
+    bottom: -35px !important;
   }
 
   .margin-bottom-slider {
@@ -1098,6 +1196,16 @@
   .a-our-vision-title,
   .a-claro-sports-title {
     padding-top: 50px;
+  }
+
+  .thumbnail-info-image {
+    display: flex;
+  }
+
+  .thumbnail-info-title {
+    float: left;
+    width: 84%;
+    margin-right: 1%;
   }
 
   /***  MOLECULES  ***/

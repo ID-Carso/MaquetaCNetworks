@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="synopsis-header">
         <div class="hamburguer-menu">
             <div class="text-center">
                 <img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar">
@@ -69,6 +69,7 @@
         </div>
 
         <div class="header">
+            <img src="./images/header/black-curve.png" alt="" class="header-curve">
             <nav class="menu">
                 <div class="nav-content">
                     <div class="claro-logo">
@@ -133,7 +134,7 @@
     </header>
     <main>
         <div class="synopsis-content">
-            <div class="d-lg-none d-flex justify-content-center pt-5 pb-4">
+            <div class="d-lg-none d-flex justify-content-center align-items-center pt-5 pb-4">
                 <button class="synopsis-button synopsis-add">
                     <p class="mb-0 synopsis-add-text">Añadir</p>
                 </button>
@@ -164,7 +165,7 @@
                             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                             deserunt
                             mollit anim id est laborum.</p>
-                        <div class="d-sm-none d-lg-flex justify-content-lg-end">
+                        <div class="d-sm-none d-lg-flex justify-content-lg-end align-items-center">
                             <button class="synopsis-button synopsis-add">
                                 <p class="mb-0 synopsis-add-text">Añadir</p>
                             </button>

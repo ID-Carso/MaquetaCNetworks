@@ -174,7 +174,8 @@
   font-family: $montserratSemiBold;
   color: white;
   font-size: 27px;
-
   position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
   right: 0;
 }

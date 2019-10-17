@@ -1539,8 +1539,50 @@
                     <a href="claro-cinema.php"><button class="btn-red">VER +</button></a>
                 </div>
             </div>
+            <div class="slick-slider">>
+                <div class="poster">
+                    <div class="thumbnail">
+                        <img src="./images/posters/flor-silvestre-peli.jpeg" alt="">
+                    </div>
+                    <div class="a-cinema-rectangle">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-black">ALLÁ EN EL RANCHO GRANDE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster">
+                    <div class="thumbnail">
+                        <img src="./images/posters/maria-candelaria-peli.jpeg" alt="">
+                    </div>
+                    <div class="a-cinema-rectangle">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-black">MARÍA CANDELARIA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster">
+                    <div class="thumbnail">
+                        <img src="./images/posters/flor-silvestre-peli.jpeg" alt="">
+                    </div>
+                    <div class="a-cinema-rectangle">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-black">FLOR SILVESTRE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster">
+                    <div class="thumbnail">
+                        <img src="./images/posters/macario-peli.jpeg" alt="">
+                    </div>
+                    <div class="a-cinema-rectangle">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-black">MACARIO</p>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="row no-gutters">
+            </div>
+            <!--<div class="row no-gutters">
                 <div class="col-md-4 col-xl-6">
                 </div>
                 <div class="col-md-8 col-xl-6">
@@ -1597,7 +1639,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <div class="d-flex align-items-center justify-content-between section-home-footer">
                 <div>
                     <img class="concert-footer-img" src="./images/home/cinema-home-img.svg" alt="">

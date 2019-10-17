@@ -1291,6 +1291,9 @@ h6 {
   color: white;
   font-size: 27px;
   position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   right: 0;
 }
 
@@ -1322,14 +1325,13 @@ h6 {
 }
 
 .thumbnail-info-image {
+  display: none;
   float: left;
   width: 15%;
 }
 
 .thumbnail-info-title {
-  float: left;
-  width: 84%;
-  margin-right: 1%;
+  width: 100%;
 }
 
 .a-claro-rectangle {
@@ -1547,6 +1549,7 @@ h6 {
   width: 20px;
   -webkit-filter: invert(1);
           filter: invert(1);
+  margin: auto;
 }
 
 .a-cinema-rectangle .showtime-clock {
@@ -1792,6 +1795,14 @@ h6 {
 
 .synopsis-image {
   width: 100%;
+}
+
+.header-curve {
+  display: none;
+  position: absolute;
+  bottom: -14%;
+  width: 100%;
+  left: 0;
 }
 
 .hr1 {
@@ -2400,6 +2411,28 @@ input:checked + .slider:before {
   opacity: 0.75;
 }
 
+.concert-channel-tablet .slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 8px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.concert-channel-tablet .slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 0.75;
+}
+
 .slick-dotted.slick-slider {
   margin-bottom: 0px !important;
 }
@@ -2413,18 +2446,17 @@ input:checked + .slider:before {
   height: 100%;
 }
 
-#dontLose-claro-slider {
-  padding-bottom: 58px;
-  margin-bottom: 52px;
+.dontLose-claro-slider {
+  margin-bottom: 100px;
 }
 
-#dontLose-claro-slider .slick-dots li.slick-active button:before,
+.dontLose-claro-slider .slick-dots li.slick-active button:before,
 #next-week-slider .slick-dots li.slick-active button:before {
   color: white;
   opacity: 1;
 }
 
-#dontLose-claro-slider .slick-dots li button:before,
+.dontLose-claro-slider .slick-dots li button:before,
 #next-week-slider .slick-dots li button:before {
   color: rgba(255, 255, 255, 0.6);
   opacity: 1;
@@ -2532,6 +2564,14 @@ input:checked + .slider:before {
   padding: 0px !important;
 }
 
+.dontLose-slider-tablet {
+  display: none;
+}
+
+.concert-header-slider .slick-slide {
+  margin: 0;
+}
+
 @font-face {
   font-family: "Gotham-Medium";
   src: url(../../../fonts/Gotham-Medium.ttf);
@@ -2619,6 +2659,10 @@ input:checked + .slider:before {
 
 .synopsis-details-container {
   margin-bottom: 36px;
+}
+
+.next-videos-tablet {
+  display: none;
 }
 
 .large-poster-width {
@@ -2758,6 +2802,7 @@ input:checked + .slider:before {
 /*Canal Claro*/
 .next-week-claro {
   background: #e1261c;
+  margin-bottom: 30px;
 }
 
 .dont-lose-claro {
@@ -2823,11 +2868,19 @@ input:checked + .slider:before {
   max-width: calc(100vw - 50px);
   height: 100%;
   background: #5c1864;
-  z-index: 2;
+  z-index: 16;
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+
+.claro-canal-header .menu-tablet,
+.synopsis-header .menu-tablet {
+  width: 100%;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  z-index: 10;
 }
 
 .section-home-footer {
@@ -2911,7 +2964,7 @@ input:checked + .slider:before {
     text-overflow: ellipsis;
     white-space: normal;
     -webkit-line-clamp: 2;*/
-    height: 36px;
+    height: 48px;
   }
   /*.small-poster .slick-list {
     height: 144px;
@@ -2939,7 +2992,7 @@ input:checked + .slider:before {
   .a-sports-text-poster,
   .a-poster-text-white,
   .a-poster-text-black {
-    padding: 0px;
+    padding: 10px;
     font-size: 12px;
   }
   .a-concert-channel-title {
@@ -3060,6 +3113,12 @@ input:checked + .slider:before {
   }
   .slick-slider {
     padding-bottom: 0px;
+  }
+  .thumbnail-info-image {
+    display: none;
+  }
+  .thumbnail-info-title {
+    width: 100%;
   }
   /*Molecules*/
   .menu-tablet {
@@ -3205,6 +3264,9 @@ input:checked + .slider:before {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /*Base*/
   /***  ATOMS  ****/
+  .header-curve {
+    bottom: -100px;
+  }
   .margin-ahora-tv {
     margin-bottom: 21px;
   }
@@ -3240,13 +3302,18 @@ input:checked + .slider:before {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: flex-start;
     /*-webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
     -webkit-line-clamp: 2;*/
-    height: 36px;
+    height: 52px;
+  }
+  .a-next-week-rectangle {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .poster-title-margin {
     margin: 0px;
@@ -3258,8 +3325,9 @@ input:checked + .slider:before {
   .a-sports-text-poster,
   .a-poster-text-white,
   .a-poster-text-black {
-    padding: 0px;
+    padding: 15px;
     font-size: 12px;
+    text-align: left;
   }
   .a-concert-channel-title {
     font-size: 32px;
@@ -3329,7 +3397,6 @@ input:checked + .slider:before {
   .menu-responsive-tablet {
     width: 25px;
   }
-  /*Footer*/
   .footer-img {
     width: 80px;
     height: 72px;
@@ -3340,8 +3407,8 @@ input:checked + .slider:before {
   }
   .login {
     position: absolute;
-    right: -8px;
-    top: -8px;
+    right: 0px;
+    top: 0px;
     z-index: 1;
     background: rgba(97, 109, 113, 0.7);
     padding: 8px;
@@ -3366,13 +3433,49 @@ input:checked + .slider:before {
     padding-top: 45px;
     padding-bottom: 60px;
   }
+  .a-today-claro-title {
+    font-size: 30px;
+    padding: 30px 0px 58px 0px;
+  }
+  .menu-responsive {
+    display: none;
+  }
+  .logo {
+    width: 85px;
+    display: initial;
+    margin-left: 20px;
+  }
+  .a-next-claro-title,
+  .a-dontLose-claro-title {
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 13px;
+  }
+  .a-next-claro-subtitle,
+  .a-dontLose-claro-subtitle {
+    font-size: 20px;
+    padding-bottom: 30px;
+    text-align: left;
+  }
+  .footer-title-claro {
+    font-size: 40px;
+  }
+  .header-curve {
+    display: block;
+  }
+  .thumbnail-info-image {
+    display: none;
+  }
+  .thumbnail-info-title {
+    width: 100%;
+  }
   /***  MOLECULES  ***/
   .menu {
     display: none;
   }
   .menu-tablet {
     display: block;
-    padding: 30px;
+    padding: 0px;
   }
   .terms-conditions-mobile {
     display: none;
@@ -3413,7 +3516,26 @@ input:checked + .slider:before {
   .o-tv-section .slick-dotted.slick-slider {
     margin-bottom: 100px !important;
   }
+  #next-week-slider {
+    display: none;
+  }
+  .next-videos-tablet {
+    display: block;
+  }
+  .dontLose-slider-tablet {
+    display: block;
+    margin-top: 100px;
+  }
   /*Organisms*/
+  .today {
+    padding: 0 30px;
+  }
+  .dont-lose-claro {
+    border-radius: 20px;
+  }
+  .next-week-claro {
+    border-radius: 20px;
+  }
   .menu {
     background: transparent;
     position: inherit;
@@ -3424,8 +3546,24 @@ input:checked + .slider:before {
     transition: all 0.5s ease 0s;
   }
   .header {
-    padding-bottom: 38%;
+    background: transparent;
+    padding: 30px;
     height: auto;
+  }
+  .claro-canal-header .header,
+  .synopsis-header .header {
+    position: relative;
+    background-image: url("../images/home/american-horror.jpeg");
+    padding: 0px 0px 42% 0px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .claro-canal-header .menu-tablet,
+  .synopsis-header .menu-tablet {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
+    background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+    padding: 30px;
   }
   .o-concert-section {
     background-color: #3e0a43;
@@ -3433,7 +3571,7 @@ input:checked + .slider:before {
   .concert-channel-mobile {
     display: none;
   }
-  .concert-channel-desktop {
+  .concert-channel-tablet {
     display: block;
   }
   .o-cinema-section {
@@ -3445,7 +3583,7 @@ input:checked + .slider:before {
   .cinema-claro-mobile {
     display: none;
   }
-  .cinema-claro-desktop {
+  .cinema-claro-tablet {
     display: block;
   }
   .o-vision-section {
@@ -3498,20 +3636,21 @@ input:checked + .slider:before {
   .synopsis-body-container {
     margin-bottom: 110px;
   }
+  .next-week-container {
+    padding: 30px 20px 90px 20px;
+  }
+  .today-container {
+    padding: 0 50px 95px 50px;
+  }
+  .dont-lose-container {
+    padding: 30px 20px 90px 20px;
+  }
   /*-------------------*/
   .header-details {
     margin-top: 100px;
     margin-bottom: 40px;
     display: inherit;
     text-align: left;
-  }
-  .menu-responsive {
-    display: none;
-  }
-  .logo {
-    width: 85px;
-    display: initial;
-    margin-left: 20px;
   }
   .circle-video {
     display: block;
@@ -3525,13 +3664,6 @@ input:checked + .slider:before {
   .poster-image-small {
     height: 135px;
   }
-  .a-cinema-rectangle,
-  .a-sports-rectangle,
-  .a-concert-rectangle,
-  .a-claro-rectangle,
-  .a-vision-rectangle {
-    height: 45px;
-  }
   /*.slick-list {
     height: 400px;
   }
@@ -3540,7 +3672,7 @@ input:checked + .slider:before {
     height: 180px;
   }*/
   .slick-dots {
-    bottom: -50px !important;
+    bottom: -35px !important;
   }
   .margin-bottom-slider {
     margin-bottom: 90px;
@@ -3741,6 +3873,16 @@ input:checked + .slider:before {
   .a-our-vision-title,
   .a-claro-sports-title {
     padding-top: 50px;
+  }
+  .thumbnail-info-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .thumbnail-info-title {
+    float: left;
+    width: 84%;
+    margin-right: 1%;
   }
   /***  MOLECULES  ***/
   .menu {
