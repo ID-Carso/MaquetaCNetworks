@@ -11,9 +11,15 @@
   transition: all 0.3s ease-out;
 }
 
-.claro-canal-header .menu-tablet,
-.synopsis-header .menu-tablet {
+.menu-tablet {
   width: 100%;
   transition: all 0.5s ease 0s;
   z-index: 10;
+  position: absolute;
+}
+
+.concert-channel-header {
+  .menu-tablet {
+    padding: 30px;
+  }
 }

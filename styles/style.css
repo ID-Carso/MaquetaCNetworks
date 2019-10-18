@@ -2462,17 +2462,22 @@ input:checked + .slider:before {
   opacity: 1;
 }
 
+.concert-header-slider .slick-track {
+  margin-bottom: 0px !important;
+  height: 100%;
+}
+
 .concert-header-slider .slick-list {
   padding: 0px !important;
+}
+
+.concert-header-slider .slick-dots {
+  bottom: 90px;
 }
 
 .concert-slide {
   height: 205px;
   background: #0d1aa0;
-}
-
-.concert-header-slider .slick-dots {
-  bottom: 90px;
 }
 
 .concert-header-slider .slick-dots li.slick-active button:before {
@@ -2519,13 +2524,8 @@ input:checked + .slider:before {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.concert-slide1 {
-  background: url("../../../images/concert-channel/header-image.jpeg");
-  background-size: cover;
-  height: 205px;
-}
-
 .cinema-slider {
+  padding-top: 30px;
   padding-bottom: 50px;
   margin-bottom: 0px !important;
 }
@@ -2662,6 +2662,14 @@ input:checked + .slider:before {
 }
 
 .next-videos-tablet {
+  display: none;
+}
+
+.imperdibles-videos-tablet {
+  display: none;
+}
+
+.week-videos-tablet {
   display: none;
 }
 
@@ -2822,6 +2830,24 @@ input:checked + .slider:before {
   background: #000000;
 }
 
+.imperdibles,
+.fuera-ley,
+.recordar,
+.next-week-concert,
+.concerts,
+.concert-interviews {
+  margin-top: 100px;
+}
+
+.fuera-ley,
+.concert-interviews {
+  margin-bottom: 100px;
+}
+
+.imperdibles-videos-tablet {
+  padding-top: 30px;
+}
+
 .header {
   width: 100%;
   height: 205px;
@@ -2833,10 +2859,6 @@ input:checked + .slider:before {
 .claro-canal-header .header {
   position: relative;
   background: #512a14;
-}
-
-.claro-canal-header .header::after {
-  background: white;
 }
 
 /*.claro-canal-header .header::after,
@@ -2875,12 +2897,16 @@ input:checked + .slider:before {
   transition: all 0.3s ease-out;
 }
 
-.claro-canal-header .menu-tablet,
-.synopsis-header .menu-tablet {
+.menu-tablet {
   width: 100%;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   z-index: 10;
+  position: absolute;
+}
+
+.concert-channel-header .menu-tablet {
+  padding: 30px;
 }
 
 .section-home-footer {
@@ -3433,9 +3459,27 @@ input:checked + .slider:before {
     padding-top: 45px;
     padding-bottom: 60px;
   }
-  .a-today-claro-title {
+  .a-today-claro-title,
+  .a-today-cinema-title,
+  .today-concert-title {
     font-size: 30px;
     padding: 30px 0px 58px 0px;
+  }
+  .a-cinema-title,
+  .concert-title {
+    font-size: 40px;
+    text-align: left;
+  }
+  .a-cinema-subtitle,
+  .concert-subtitle {
+    font-size: 20px;
+    text-align: left;
+  }
+  .concert-title {
+    padding-bottom: 13px;
+  }
+  .concert-subtitle {
+    padding-bottom: 52px;
   }
   .menu-responsive {
     display: none;
@@ -3467,6 +3511,23 @@ input:checked + .slider:before {
     display: none;
   }
   .thumbnail-info-title {
+    width: 100%;
+  }
+  .concert-slide {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    height: auto;
+    padding-bottom: 41%;
+  }
+  .concert-slide img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
     width: 100%;
   }
   /***  MOLECULES  ***/
@@ -3550,17 +3611,25 @@ input:checked + .slider:before {
     padding: 30px;
     height: auto;
   }
+  .concert-channel-header .header {
+    padding: 0;
+  }
   .claro-canal-header .header,
-  .synopsis-header .header {
+  .synopsis-header .header,
+  .claro-cinema-header .header {
     position: relative;
-    background-image: url("../images/home/american-horror.jpeg");
     padding: 0px 0px 42% 0px;
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .claro-canal-header .header,
+  .synopsis-header .header {
+    background-image: url("../images/home/american-horror.jpeg");
+  }
   .claro-canal-header .menu-tablet,
-  .synopsis-header .menu-tablet {
+  .synopsis-header .menu-tablet,
+  .claro-cinema-header .menu-tablet {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
     background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
     padding: 30px;
@@ -3645,6 +3714,18 @@ input:checked + .slider:before {
   .dont-lose-container {
     padding: 30px 20px 90px 20px;
   }
+  .imperdibles-videos-mobile {
+    display: none;
+  }
+  .imperdibles-videos-tablet {
+    display: block;
+  }
+  .week-videos-mobile {
+    display: none;
+  }
+  .week-videos-tablet {
+    display: block;
+  }
   /*-------------------*/
   .header-details {
     margin-top: 100px;
@@ -3671,6 +3752,9 @@ input:checked + .slider:before {
   .small-poster .slick-list {
     height: 180px;
   }*/
+  .concert-channel-header .slick-dots {
+    bottom: 35px !important;
+  }
   .slick-dots {
     bottom: -35px !important;
   }

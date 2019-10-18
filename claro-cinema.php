@@ -25,8 +25,8 @@
         <a href="index.php"><img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar" /></a>
       </div>
       <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
-          <a href="index.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
-        </div>
+        <a href="index.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
+      </div>
       <div class="sidebar-content">
         <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
           <a href="claro-canal.php" class="sidebar-link"><span class="dropdown-p">Canal Claro</span></a>
@@ -53,10 +53,12 @@
                 <p class="dropdown-p">ebñrkjg</p>
               </div>-->
         <div class="sidebar-item sidebar-border-bottom">
-          <a class="sidebar-link" href="https://www.nuestravision.com.mx/"><span class="dropdown-p">Nuestra Visión</span></a>
+          <a class="sidebar-link" href="https://www.nuestravision.com.mx/"><span class="dropdown-p">Nuestra
+              Visión</span></a>
         </div>
         <div class="sidebar-item sidebar-border-bottom">
-          <a class="sidebar-link" href="https://www.marca.com/claro-mx/"><span class="dropdown-p">Claro Sports</span></a>
+          <a class="sidebar-link" href="https://www.marca.com/claro-mx/"><span class="dropdown-p">Claro
+              Sports</span></a>
         </div>
         <div class="sidebar-item sidebar-border-bottom">
           <a class="sidebar-link" href="programacion.php"><span class="dropdown-p">Programación</span></a>
@@ -73,6 +75,20 @@
             <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
 
             <a href="index.php"><img class="logo" src="./images/home/claro-logo.png" alt="" /></a>
+          </div>
+
+          <div class="login">
+            <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
+            <a href="paises.html" class="login-item"><img src="./images/home/pais.svg" alt="" /></a>
+          </div>
+        </div>
+      </nav>
+      <nav class="menu-tablet">
+        <div class="nav-content">
+          <div class="claro-logo">
+            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
+
+            <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
           </div>
 
           <div class="login">
@@ -130,9 +146,10 @@
     <div class="">
       <section class="today-claro-cinema">
         <h1 class="a-today-cinema-title">hoy en <span>claro cinema</span></h1>
-        <div class="slick-slider cinema-slider small-poster">
-          <div class="row no-gutters">
-            <div class="col columnGap">
+        <div class="col-lg-11 mx-auto">
+          <div class="slick-slider cinema-slider">
+
+            <div class="poster">
               <div class="thumbnail">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
@@ -146,9 +163,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col columnGap">
+
+            <div class="poster">
               <div class="thumbnail">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
@@ -162,9 +178,35 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col columnGap">
+            <div class="poster">
+              <div class="thumbnail">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                </div>
+              </div>
+              <div class="a-cinema-rectangle">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-black">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="poster">
+              <div class="thumbnail">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                </div>
+              </div>
+              <div class="a-cinema-rectangle">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-black">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="poster">
               <div class="thumbnail">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
@@ -180,70 +222,159 @@
             </div>
           </div>
         </div>
+
       </section>
       <section class="imperdibles">
         <div class="header-title-section">
-          <div class="col-10 mx-auto">
+          <div class="col-lg-11 mx-auto">
             <h1 class="a-cinema-title">las <span>imperdibles</span></h1>
             <h2 class="a-cinema-subtitle">
               ve un <span>adelanto</span> de la programación
             </h2>
           </div>
         </div>
-        <div class="slick-slider cinema-slider small-poster">
-          <div class="row no-gutters">
-            <div class="col columnGap">
-              <div class="thumbnail">
-                <div class="showtime-container">
-                  <p class="a-programming-text">14:30 - 16:30</p>
+        <div class="col-lg-11 mx-auto">
+          <div class="imperdibles-videos-mobile">
+            <div class="slick-slider cinema-slider">
+              <div class="poster">
+                <div class="thumbnail">
+                  <div class="showtime-container">
+                    <p class="a-programming-text">14:30 - 16:30</p>
+                  </div>
+                </div>
+                <div class="a-cinema-rectangle">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-black">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="a-cinema-rectangle">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-black">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
+              <div class="poster">
+                <div class="thumbnail">
+                  <div class="showtime-container">
+                    <p class="a-programming-text">14:30 - 16:30</p>
+                  </div>
+                </div>
+                <div class="a-cinema-rectangle">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-black">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="poster">
+                <div class="thumbnail">
+                  <div class="showtime-container">
+                    <p class="a-programming-text">14:30 - 16:30</p>
+                  </div>
+                </div>
+                <div class="a-cinema-rectangle">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-black">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="poster">
+                <div class="thumbnail">
+                  <div class="showtime-container">
+                    <p class="a-programming-text">14:30 - 16:30</p>
+                  </div>
+                </div>
+                <div class="a-cinema-rectangle">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-black">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row no-gutters">
-            <div class="col columnGap">
-              <div class="thumbnail">
-                <div class="showtime-container">
-                  <p class="a-programming-text">14:30 - 16:30</p>
+
+
+          <!--Imperdibles: videos para tablet-->
+          <div class="imperdibles-videos-tablet">
+            <div class="row poster-pad-b">
+              <div class="col poster-pad-r poster-section">
+                <div class="poster">
+                  <div class="thumbnail">
+                    <div class="showtime-container">
+                      <p class="a-programming-text">14:30 - 16:30</p>
+                    </div>
+                  </div>
+                  <div class="a-cinema-rectangle">
+                    <div class="poster-title-margin">
+                      <p class="a-poster-text-black">
+                        ¿QUÉ TE HA DADO ESA MUJER?
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="a-cinema-rectangle">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-black">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
+              <div class="col poster-pad-l">
+                <div class="poster">
+                  <div class="thumbnail">
+                    <div class="showtime-container">
+                      <p class="a-programming-text">14:30 - 16:30</p>
+                    </div>
+                  </div>
+                  <div class="a-cinema-rectangle">
+                    <div class="poster-title-margin">
+                      <p class="a-poster-text-black">
+                        ¿QUÉ TE HA DADO ESA MUJER?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row poster-pad-t">
+              <div class="col poster-pad-r">
+                <div class="poster">
+                  <div class="thumbnail">
+                    <div class="showtime-container">
+                      <p class="a-programming-text">14:30 - 16:30</p>
+                    </div>
+                  </div>
+                  <div class="a-cinema-rectangle">
+                    <div class="poster-title-margin">
+                      <p class="a-poster-text-black">
+                        ¿QUÉ TE HA DADO ESA MUJER?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col poster-pad-l">
+                <div class="poster">
+                  <div class="thumbnail">
+                    <div class="showtime-container">
+                      <p class="a-programming-text">14:30 - 16:30</p>
+                    </div>
+                  </div>
+                  <div class="a-cinema-rectangle">
+                    <div class="poster-title-margin">
+                      <p class="a-poster-text-black">
+                        ¿QUÉ TE HA DADO ESA MUJER?
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row no-gutters">
-            <div class="col columnGap">
-              <div class="thumbnail">
-                <div class="showtime-container">
-                  <p class="a-programming-text">14:30 - 16:30</p>
-                </div>
-              </div>
-              <div class="a-cinema-rectangle">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-black">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+
+
         </div>
+
       </section>
-      <section class="imperdibles">
+      <section class="recordar">
         <div class="header-title-section">
-          <div class="col-10 mx-auto">
+          <div class="col-lg-11 mx-auto">
             <h1 class="a-cinema-title">
               <span>recordar es volver</span> a vivir
             </h1>
@@ -252,9 +383,9 @@
             </h2>
           </div>
         </div>
-        <div class="slick-slider cinema-slider small-poster">
-          <div class="row no-gutters">
-            <div class="col columnGap">
+        <div class="col-lg-11 mx-auto">
+          <div class="slick-slider cinema-slider">
+            <div class="poster">
               <div class="thumbnail">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
@@ -268,9 +399,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col columnGap">
+            <div class="poster">
               <div class="thumbnail">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
@@ -284,9 +413,21 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col columnGap">
+            <div class="poster">
+              <div class="thumbnail">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                </div>
+              </div>
+              <div class="a-cinema-rectangle">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-black">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="poster">
               <div class="thumbnail">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
@@ -302,19 +443,20 @@
             </div>
           </div>
         </div>
+
       </section>
-      <section class="imperdibles">
+      <section class="fuera-ley">
         <div class="header-title-section">
-          <div class="col-10 mx-auto">
+          <div class="col-lg-11 mx-auto">
             <h1 class="a-cinema-title"><span>fuera</span> de la ley</h1>
             <h2 class="a-cinema-subtitle">
               ve un <span>adelanto</span> de la programación
             </h2>
           </div>
         </div>
-        <div class="slick-slider cinema-slider small-poster">
-          <div class="row no-gutters">
-            <div class="col columnGap">
+        <div class="col-lg-11 mx-auto">
+          <div class="slick-slider cinema-slider">
+            <div class="poster">
               <div class="thumbnail">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
@@ -328,9 +470,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col columnGap">
+            <div class="poster">
               <div class="thumbnail">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
@@ -344,9 +484,21 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col columnGap">
+            <div class="poster">
+              <div class="thumbnail">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                </div>
+              </div>
+              <div class="a-cinema-rectangle">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-black">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="poster">
               <div class="thumbnail">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
@@ -362,6 +514,7 @@
             </div>
           </div>
         </div>
+
       </section>
       <section>
         <?php 
@@ -389,13 +542,15 @@
           </div>
         </div>
       </section>
+      <footer>
+        <?php 
+                    include 'footer.php';
+                ?>
+      </footer>
     </div>
+
   </main>
-  <footer>
-    <?php 
-            include 'footer.php';
-        ?>
-  </footer>
+
 </body>
 
 </html>
