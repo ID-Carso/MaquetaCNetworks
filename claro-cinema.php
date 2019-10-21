@@ -69,6 +69,7 @@
     </div>
 
     <div class="header">
+    <img src="./images/header/yellow-curve.png" alt="" class="header-curve">
       <nav class="menu">
         <div class="nav-content">
           <div class="claro-logo">

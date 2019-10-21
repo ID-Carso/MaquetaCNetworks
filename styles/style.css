@@ -1,4 +1,9 @@
 @charset "UTF-8";
+html,
+body {
+  height: 100%;
+}
+
 body {
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
@@ -1112,6 +1117,19 @@ h6 {
   transition: all 0.15s ease-in-out;
   width: 8px;
   margin-bottom: 3px;
+}
+
+.dropdownCountry-icon {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-bottom: 0;
+}
+
+.arrow-up {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 /*Tamaño de textos - responsive*/
@@ -2634,10 +2652,56 @@ input:checked + .slider:before {
   margin-bottom: 90px;
 }
 
-.dropdownCountry-content {
+.dropdownCountry-content,
+.dropdownCountries-content {
   color: white;
   font-family: "Montserrat-Light";
+}
+
+.dropdownCountry-content {
   border-bottom: 1px solid #464444;
+}
+
+.dropdownCountries {
+  display: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.dropdownCountries-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 16px;
+}
+
+.dropdownCountries-content:last-child {
+  padding-bottom: 0px;
+}
+
+@-webkit-keyframes down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
 }
 
 .schedule-container {
@@ -2671,6 +2735,16 @@ input:checked + .slider:before {
 
 .week-videos-tablet {
   display: none;
+}
+
+.marca-container {
+  height: 100%;
+}
+
+.marca-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 .large-poster-width {
@@ -2884,6 +2958,11 @@ input:checked + .slider:before {
   background: #2dcaab;
 }
 
+.marca-header .header {
+  height: auto;
+  background: transparent;
+}
+
 .hamburguer-menu {
   position: fixed;
   width: 350px;
@@ -2905,8 +2984,23 @@ input:checked + .slider:before {
   position: absolute;
 }
 
+.home-header .menu-tablet {
+  position: initial;
+}
+
 .concert-channel-header .menu-tablet {
   padding: 30px;
+}
+
+.marca-header .menu {
+  position: initial;
+  padding: 16px;
+  background: black;
+}
+
+.marca-header .nav-content {
+  margin: 0px;
+  position: relative;
 }
 
 .section-home-footer {

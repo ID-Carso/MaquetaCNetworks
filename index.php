@@ -25,7 +25,7 @@
             <source src="./video/demo.mp4" type="video/mp4" />
         </video>
     </div>
-    <header>
+    <header class="home-header">
         <div class="hamburguer-menu">
             <div class="text-center">
                 <img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar">
@@ -65,7 +65,7 @@
                             Visión</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="https://www.marca.com/claro-mx/"><span class="dropdown-p">Claro
+                    <a class="sidebar-link" href="claro-sports.html"><span class="dropdown-p">Claro
                             Sports</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
@@ -87,7 +87,7 @@
 
                     <div class="login">
                         <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-                        <a href="paises.html" class="login-item"><img src="./images/home/pais.svg" alt="" /></a>
+                        <a href="paises.html" class="login-item"><img class="login-country" src="" alt="" /></a>
                     </div>
                 </div>
             </nav>
@@ -101,7 +101,7 @@
 
                     <div class="login">
                         <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-                        <a href="paises.html" class="login-item"><img src="./images/home/pais.svg" alt="" /></a>
+                        <a href="paises.html" class="login-item"><img class="login-country" src="" alt="" /></a>
                     </div>
                 </div>
             </nav>

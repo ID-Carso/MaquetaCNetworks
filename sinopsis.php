@@ -205,8 +205,7 @@
                 </div>
                 <div class="no-gutters">
                     <div class="col-11 mx-auto dropdownCountry">
-
-                        <div class="dropdownCountry-content d-flex  align-items-center pb-2 mb-3 no-gutters">
+                        <div class="dropdownCountry-content d-flex  align-items-center pb-3 mb-3 no-gutters">
                             <div class="col-2">
                                 <img src="./images/paises/colombia.svg" alt="">
                             </div>
@@ -216,13 +215,38 @@
                             <div class="col-4">
                                 <p class="dropdownCountry-text dropdownCountry-schedule">18:00 hrs</p>
                             </div>
-                            <div class="col-1">
+                            <div class="col-1 text-center dropdownCountry-icon">
                                 <span class="dropdownCountry-arrow"></span>
                             </div>
 
                         </div>
+                        <div class="dropdownCountries pb-2 mb-3 ">
+                            <div class="dropdownCountries-content no-gutters">
+                                <div class="col-2">
+                                    <img src="./images/paises/dominican-republic.svg" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <p class="dropdownCountry-text">República Dominicana</p>
+                                </div>
+                            </div>
+                            <div class="dropdownCountries-content no-gutters">
+                                <div class="col-2">
+                                    <img src="./images/paises/dominican-republic.svg" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <p class="dropdownCountry-text">República Dominicana</p>
+                                </div>
+                            </div>
+                            <div class="dropdownCountries-content no-gutters">
+                                <div class="col-2">
+                                    <img src="./images/paises/dominican-republic.svg" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <p class="dropdownCountry-text">República Dominicana</p>
+                                </div>
+                            </div>
 
-
+                        </div>
                         <div class="dropdownCountry-content d-flex  align-items-center pb-2 mb-3 no-gutters">
                             <div class="col-2">
                                 <img src="./images/paises/costa-rica.svg" alt="">
@@ -234,12 +258,38 @@
                             <div class="col-4">
                                 <p class="dropdownCountry-text dropdownCountry-schedule">18:00 hrs</p>
                             </div>
-                            <div class="1">
+                            <div class="col-1 text-center dropdownCountry-icon">
                                 <span class="dropdownCountry-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="dropdownCountries pb-3 mb-3 ">
+                            <div class="dropdownCountries-content no-gutters">
+                                <div class="col-2">
+                                    <img src="./images/paises/dominican-republic.svg" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <p class="dropdownCountry-text">República Dominicana</p>
+                                </div>
+                            </div>
+                            <div class="dropdownCountries-content no-gutters">
+                                <div class="col-2">
+                                    <img src="./images/paises/dominican-republic.svg" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <p class="dropdownCountry-text">República Dominicana</p>
+                                </div>
+                            </div>
+                            <div class="dropdownCountries-content no-gutters">
+                                <div class="col-2">
+                                    <img src="./images/paises/dominican-republic.svg" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <p class="dropdownCountry-text">República Dominicana</p>
+                                </div>
                             </div>
 
                         </div>
-                        <div class="dropdownCountry-content d-flex align-items-center pb-2 mb-3 no-gutters">
+                        <div class="dropdownCountry-content d-flex align-items-center pb-3 mb-3 no-gutters">
                             <div class="col-2">
                                 <img src="./images/paises/dominican-republic.svg" alt="">
                             </div>
@@ -249,12 +299,37 @@
                             <div class="col-4">
                                 <p class="dropdownCountry-text dropdownCountry-schedule">18:00 hrs</p>
                             </div>
-                            <div class="col-1">
+                            <div class="col-1 text-center dropdownCountry-icon">
                                 <span class="dropdownCountry-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="dropdownCountries pb-3 mb-3 ">
+                            <div class="dropdownCountries-content no-gutters">
+                                <div class="col-2">
+                                    <img src="./images/paises/dominican-republic.svg" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <p class="dropdownCountry-text">República Dominicana</p>
+                                </div>
+                            </div>
+                            <div class="dropdownCountries-content no-gutters">
+                                <div class="col-2">
+                                    <img src="./images/paises/dominican-republic.svg" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <p class="dropdownCountry-text">República Dominicana</p>
+                                </div>
+                            </div>
+                            <div class="dropdownCountries-content no-gutters">
+                                <div class="col-2">
+                                    <img src="./images/paises/dominican-republic.svg" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <p class="dropdownCountry-text">República Dominicana</p>
+                                </div>
                             </div>
 
                         </div>
-
                     </div>
                 </div>
 

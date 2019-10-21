@@ -8,6 +8,27 @@ $(document).ready(function() {
     }
   });
 
+  const numPaises = document.getElementsByClassName("name_paises").length;
+  const paises = document.getElementsByClassName("name_paises");
+  var contador;
+  for (contador = 0; contador < numPaises; contador++) {
+    paises[contador].addEventListener("click", function() {
+      if (typeof Storage !== "undefined") {
+        var imageSrc = $(this)
+          .children(".Icon_paises")
+          .attr("src");
+
+        sessionStorage.setItem("src", imageSrc);
+      }
+    });
+  }
+  var sessionSrc = sessionStorage.getItem("src");
+  var loginCountry = $(".login-country");
+  if (sessionSrc) {
+    loginCountry.attr("src", sessionSrc);
+    console.log(sessionSrc);
+  }
+
   $(".singup-button").click(function() {
     var usuario, correo, password, expresion;
     const nodatos1 = $(".nodatos");
@@ -383,14 +404,14 @@ $(document).ready(function() {
     html.css({
       position: "initial",
       overflow: "auto",
-      height: "auto"
+      height: "100%"
     });
     body.css({
       position: "initial",
       overflowX: "hidden",
       overflowY: "auto",
       "-webkit-overflow-scrolling": "auto",
-      height: "auto",
+      height: "100%",
       width: "auto"
     });
     sidebar_content.style.overflow = "hidden";
@@ -517,9 +538,32 @@ $(document).ready(function() {
 
   /*** Fin Slider "Ahora en TV"  ***/
 
-  const dropdownCountryItem = document.getElementsByClassName(
-    "sidebar-dropdown"
+  /*Dropdown de la página sinópsis.php */
+  const dropdownCountry = document.getElementsByClassName(
+    "dropdownCountry-content"
   );
+  const dropdownArrow = $(".dropdownCountry-arrow");
+  console.log(dropdownArrow);
+  var i;
+  for (i = 0; i < dropdownCountry.length; i++) {
+    dropdownCountry[i].addEventListener("click", function() {
+      this.classList.toggle("dropdown-active");
+      var dropdownContent = this.nextElementSibling;
+      console.log(dropdownArrow);
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+        $(this)
+          .children(".dropdownCountry-icon")
+          .removeClass("arrow-up");
+      } else {
+        dropdownContent.style.display = "block";
+        dropdownContent.style.animation = "down 0.5s";
+        $(this)
+          .children(".dropdownCountry-icon")
+          .addClass("arrow-up");
+      }
+    });
+  }
 
   /*** Dropdown del menú ***/
   /*const dropdown = document.getElementsByClassName("sidebar-dropdown");
@@ -542,44 +586,4 @@ $(document).ready(function() {
   }*/
 
   /*** Fin Dropdown del menú ***/
-
-  /*inputs.keyup(function(){
-    if(validaUsuario(input-usuario) && validaPassword(input-password) && validaEmail(input-email)){
-        flecha.css("display", "block");
-    }
-  });
-
-  signup-botton.click(function(){
-
-    if(!validaUsuario()){
-      modal.html("oihgiohiohoihoih");
-    }else if(!validaPassword()){
-
-    }
-
-  });
-
-  function validaUsuario(inputUsuario) {
-    if (usuario.length > 10) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  function validaPassword() {
-    if (true) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  function validaEmail() {
-    if (true) {
-      return true;
-    } else {
-      return false;
-    }
-  }*/
 });

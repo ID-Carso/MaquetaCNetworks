@@ -18,8 +18,27 @@
   position: absolute;
 }
 
+.home-header {
+  .menu-tablet {
+    position: initial;
+  }
+}
+
 .concert-channel-header {
   .menu-tablet {
     padding: 30px;
+  }
+}
+
+.marca-header {
+  .menu {
+    position: initial;
+    padding: 16px;
+    background: black;
+  }
+
+  .nav-content {
+    margin: 0px;
+    position: relative;
   }
 }

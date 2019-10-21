@@ -7,8 +7,38 @@
   margin-bottom: 90px;
 }
 
-.dropdownCountry-content {
+.dropdownCountry-content,
+.dropdownCountries-content {
   color: white;
   font-family: $montserratLight;
+}
+
+.dropdownCountry-content {
   border-bottom: 1px solid $dropdownCountryBorder;
+}
+
+.dropdownCountries {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.dropdownCountries-content {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.dropdownCountries-content:last-child {
+  padding-bottom: 0px;
+}
+
+@keyframes down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
 }
