@@ -133,10 +133,20 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
+  margin-top: 56px;
 }
 
 .save-button:hover {
   background-color: $rollover;
   color: $textWhite;
   border: solid 1px $rollover;
+  z-index: 1;
+}
+
+.sexo {
+  width: 302px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  display: flex;
 }

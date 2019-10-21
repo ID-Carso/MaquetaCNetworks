@@ -9,6 +9,7 @@
 @import "./components/atoms/video";
 @import "./components/atoms/list-item";
 @import "./components/atoms/links";
+@import "./components/atoms/dropdown";
 @import "./components/molecules/posters";
 @import "./components/molecules/see-more";
 @import "./components/molecules/nav";
@@ -62,6 +63,7 @@
   .title-tv {
     font-size: 30px;
   }
+
   .nav-image {
     height: 72px;
   }
@@ -146,6 +148,7 @@
     padding-bottom: 0%;
     text-align: left;
   }
+
   .concert-footer-img {
     width: 72px;
   }
@@ -313,6 +316,7 @@
     text-align: right;
     margin-bottom: 0px;
   }
+
   .slick-dots {
     bottom: -40px !important;
   }
@@ -365,6 +369,7 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
   .o-concert-section {
     background-color: $backgroundConcertChannel;
   }
@@ -451,6 +456,7 @@
   .title-tv {
     font-size: 30px;
   }
+
   .nav-image {
     height: 72px;
   }
@@ -516,6 +522,7 @@
     padding-bottom: 0%;
     text-align: left;
   }
+
   .concert-footer-img {
     width: 72px;
   }
@@ -912,6 +919,7 @@
   .title-tv {
     font-size: 30px;
   }
+
   .nav-image {
     height: 72px;
   }
@@ -977,6 +985,7 @@
     padding-bottom: 0%;
     text-align: left;
   }
+
   .concert-footer-img {
     width: 120px;
   }

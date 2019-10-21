@@ -8,6 +8,8 @@ $(document).ready(function () {
     }
   });
 
+
+
   $(".singup-button").click(function () {
     var usuario, correo, password, expresion;
     const nodatos1 = $(".nodatos");

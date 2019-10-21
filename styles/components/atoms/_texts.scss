@@ -724,6 +724,7 @@
 }
 
 .claro-active {
+
   .day-text,
   .day-number {
     color: white;
@@ -731,6 +732,7 @@
 }
 
 .concert-active {
+
   .day-text,
   .day-number {
     color: white;
@@ -738,6 +740,7 @@
 }
 
 .cinema-active {
+
   .day-text,
   .day-number {
     color: white;
@@ -745,6 +748,7 @@
 }
 
 .vision-active {
+
   .day-text,
   .day-number {
     color: white;
@@ -752,6 +756,7 @@
 }
 
 .sports-active {
+
   .day-text,
   .day-number {
     color: white;
@@ -789,4 +794,46 @@
   font-size: 14px;
   color: $month;
   text-transform: uppercase;
+}
+
+.titulo-seleccion-pais {
+  font-family: $montserratSemiBold;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+  text-align: initial;
+  margin-bottom: 0px;
+  margin-top: 35px;
+}
+
+.titulo-seleccion-fecha {
+  font-family: $montserratSemiBold;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+  text-align: initial;
+  margin-bottom: 14px;
+  margin-top: 62px;
+}
+
+.titulo-seleccion-sexo {
+  font-family: $montserratSemiBold;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+  text-align: initial;
+  margin-bottom: 14px;
+
 }
