@@ -106,6 +106,7 @@
 
 .next-week-claro {
   background: $claroRectangle;
+  margin-bottom: 30px;
 }
 
 .dont-lose-claro {
@@ -119,4 +120,26 @@
 
 .claro-cinema-content {
   background: #f5dd15;
+}
+
+.synopsis-content {
+  background: $pureBlack;
+}
+
+.imperdibles,
+.fuera-ley,
+.recordar,
+.next-week-concert,
+.concerts,
+.concert-interviews {
+  margin-top: 100px;
+}
+
+.fuera-ley,
+.concert-interviews {
+  margin-bottom: 100px;
+}
+
+.imperdibles-videos-tablet {
+  padding-top: 30px;
 }

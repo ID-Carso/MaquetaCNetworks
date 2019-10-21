@@ -17,6 +17,7 @@
 @import "./components/molecules/titles-section";
 @import "./components/molecules/cards";
 @import "./components/molecules/sliders";
+@import "./components/molecules/dropdown";
 @import "./components/organisms/container";
 @import "./components/organisms/sections";
 @import "./components/organisms/header";
@@ -104,7 +105,7 @@
     text-overflow: ellipsis;
     white-space: normal;
     -webkit-line-clamp: 2;*/
-    height: 36px;
+    height: 48px;
   }
 
   /*.small-poster .slick-list {
@@ -138,7 +139,7 @@
   .a-sports-text-poster,
   .a-poster-text-white,
   .a-poster-text-black {
-    padding: 0px;
+    padding: 10px;
     font-size: $fontSizeSub;
   }
 
@@ -225,6 +226,10 @@
     font-family: "Gotham-Black";
   }
 
+  .a-today-claro-title {
+    font-size: 30px;
+  }
+
   .footer-title {
     font-size: 30px;
   }
@@ -281,6 +286,14 @@
 
   .slick-slider {
     padding-bottom: 0px;
+  }
+
+  .thumbnail-info-image {
+    display: none;
+  }
+
+  .thumbnail-info-title {
+    width: 100%;
   }
 
   /*Molecules*/
@@ -349,6 +362,12 @@
     background: transparent;
     padding: 30px;
     height: auto;
+  }
+
+  .claro-canal-header .header {
+    position: relative;
+    background: #512a14;
+    padding-bottom: 23%;
   }
 
   .header-details {
@@ -449,6 +468,10 @@
 
   /***  ATOMS  ****/
 
+  .header-curve {
+    bottom: -100px;
+  }
+
   .margin-ahora-tv {
     margin-bottom: 21px;
   }
@@ -491,13 +514,17 @@
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: flex-start;
     /*-webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
     -webkit-line-clamp: 2;*/
-    height: 36px;
+    height: 52px;
+  }
+
+  .a-next-week-rectangle {
+    align-items: center;
   }
 
   .poster-title-margin {
@@ -512,8 +539,9 @@
   .a-sports-text-poster,
   .a-poster-text-white,
   .a-poster-text-black {
-    padding: 0px;
+    padding: 15px;
     font-size: $fontSizeSub;
+    text-align: left;
   }
 
   .a-concert-channel-title {
@@ -595,10 +623,9 @@
   }
 
   .menu-responsive-tablet {
-    display: none;
+    width: 25px;
   }
 
-  /*Footer*/
   .footer-img {
     width: 80px;
     height: 72px;
@@ -611,8 +638,8 @@
 
   .login {
     position: absolute;
-    right: -8px;
-    top: -8px;
+    right: 0px;
+    top: 0px;
     z-index: 1;
     background: rgba(97, 109, 113, 0.7);
     padding: 8px;
@@ -633,6 +660,99 @@
     padding-bottom: 0px;
   }
 
+  .synopsis-section-title {
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-family: $montserratBlack;
+    padding-top: 45px;
+    padding-bottom: 60px;
+  }
+
+  .a-today-claro-title,
+  .a-today-cinema-title,
+  .today-concert-title {
+    font-size: 30px;
+    padding: 30px 0px 58px 0px;
+  }
+
+  .a-cinema-title,
+  .concert-title {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .a-cinema-subtitle,
+  .concert-subtitle {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .concert-title {
+    padding-bottom: 13px;
+  }
+
+  .concert-subtitle {
+    padding-bottom: 52px;
+  }
+
+  .menu-responsive {
+    display: none;
+  }
+
+  .logo {
+    width: 85px;
+    display: initial;
+    margin-left: 20px;
+  }
+
+  .a-next-claro-title,
+  .a-dontLose-claro-title {
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 13px;
+  }
+
+  .a-next-claro-subtitle,
+  .a-dontLose-claro-subtitle {
+    font-size: 20px;
+    padding-bottom: 30px;
+    text-align: left;
+  }
+
+  .footer-title-claro {
+    font-size: 40px;
+  }
+
+  .header-curve {
+    display: block;
+  }
+
+  .thumbnail-info-image {
+    display: none;
+  }
+
+  .thumbnail-info-title {
+    width: 100%;
+  }
+
+  .concert-slide {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex !important;
+    height: auto;
+    padding-bottom: 41%;
+  }
+
+  .concert-slide img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+  }
+
   /***  MOLECULES  ***/
 
   .menu {
@@ -641,6 +761,7 @@
 
   .menu-tablet {
     display: block;
+    padding: 0px;
   }
 
   .terms-conditions-mobile {
@@ -686,7 +807,33 @@
     }
   }
 
+  #next-week-slider {
+    display: none;
+  }
+
+  .next-videos-tablet {
+    display: block;
+  }
+
+  .dontLose-slider-tablet {
+    display: block;
+    margin-top: 100px;
+  }
+
   /*Organisms*/
+
+  .today {
+    padding: 0 30px;
+  }
+
+  .dont-lose-claro {
+    border-radius: 20px;
+  }
+
+  .next-week-claro {
+    border-radius: 20px;
+  }
+
   .menu {
     background: transparent;
     position: inherit;
@@ -702,6 +849,35 @@
     height: auto;
   }
 
+  .concert-channel-header .header {
+    padding: 0;
+  }
+
+  .claro-cinema-header .header {
+  }
+
+  .claro-canal-header .header,
+  .synopsis-header .header,
+  .claro-cinema-header .header {
+    position: relative;
+    padding: 0px 0px 42% 0px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .claro-canal-header .header,
+  .synopsis-header .header {
+    background-image: url("../images/home/american-horror.jpeg");
+  }
+
+  .claro-canal-header .menu-tablet,
+  .synopsis-header .menu-tablet,
+  .claro-cinema-header .menu-tablet {
+    background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+    padding: 30px;
+  }
+
   .o-concert-section {
     background-color: $backgroundConcertChannel;
   }
@@ -710,7 +886,7 @@
     display: none;
   }
 
-  .concert-channel-desktop {
+  .concert-channel-tablet {
     display: block;
   }
 
@@ -725,7 +901,7 @@
     display: none;
   }
 
-  .cinema-claro-desktop {
+  .cinema-claro-tablet {
     display: block;
   }
 
@@ -788,21 +964,44 @@
     display: block;
   }
 
+  .synopsis-body-container {
+    margin-bottom: 110px;
+  }
+
+  .next-week-container {
+    padding: 30px 20px 90px 20px;
+  }
+
+  .today-container {
+    padding: 0 50px 95px 50px;
+  }
+
+  .dont-lose-container {
+    padding: 30px 20px 90px 20px;
+  }
+
+  .imperdibles-videos-mobile {
+    display: none;
+  }
+
+  .imperdibles-videos-tablet {
+    display: block;
+  }
+
+  .week-videos-mobile {
+    display: none;
+  }
+
+  .week-videos-tablet {
+    display: block;
+  }
+
   /*-------------------*/
   .header-details {
     margin-top: 100px;
     margin-bottom: 40px;
     display: inherit;
     text-align: left;
-  }
-
-  .menu-responsive {
-    display: none;
-  }
-
-  .logo {
-    margin-left: 0;
-    width: 85px;
   }
 
   .circle-video {
@@ -819,14 +1018,6 @@
     height: 135px;
   }
 
-  .a-cinema-rectangle,
-  .a-sports-rectangle,
-  .a-concert-rectangle,
-  .a-claro-rectangle,
-  .a-vision-rectangle {
-    height: 45px;
-  }
-
   /*.slick-list {
     height: 400px;
   }
@@ -834,9 +1025,14 @@
   .small-poster .slick-list {
     height: 180px;
   }*/
+  .concert-channel-header {
+    .slick-dots {
+      bottom: 35px !important;
+    }
+  }
 
   .slick-dots {
-    bottom: -50px !important;
+    bottom: -35px !important;
   }
 
   .margin-bottom-slider {
@@ -877,9 +1073,7 @@
   }
 
   .claro-navbar {
-    display: flex;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
+    display: none;
   }
 
   .concert-first-subtitle {
@@ -891,7 +1085,7 @@
   }
 
   .footer-companies-desktop {
-    margin: 60px 0;
+    padding: 60px 0;
   }
 
   .footer-companies {
@@ -1084,6 +1278,16 @@
   .a-our-vision-title,
   .a-claro-sports-title {
     padding-top: 50px;
+  }
+
+  .thumbnail-info-image {
+    display: flex;
+  }
+
+  .thumbnail-info-title {
+    float: left;
+    width: 84%;
+    margin-right: 1%;
   }
 
   /***  MOLECULES  ***/
@@ -1358,7 +1562,7 @@
   }
 
   .footer-companies-desktop {
-    margin: 60px 0;
+    padding: 60px 0;
   }
 
   .footer-companies {

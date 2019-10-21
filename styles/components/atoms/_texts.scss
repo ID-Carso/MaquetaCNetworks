@@ -117,7 +117,7 @@
   text-align: justify;
   margin: 0;
   line-height: normal;
-  font-size: $sizeProgramming;
+  font-size: 14px;
 }
 
 .a-our-vision-title {
@@ -254,10 +254,22 @@
 }
 
 .other-text-regular,
-.text-footer-regular,
 .text-footer-bold {
   text-align: center;
   font-size: 10px;
+}
+
+.text-footer-regular {
+  text-align: center;
+  font-size: 14px;
+}
+
+.synopsis-content .text-footer-regular {
+  color: $greyFooter;
+}
+
+.synopsis-content .advertising-text {
+  color: $colorWhite;
 }
 
 .other-text-regular,
@@ -266,7 +278,7 @@
 }
 
 .terms-conditions-mobile .aviso-priv-blue {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .terms-conditions-desktop .aviso-priv-blue:nth-child(1) {
@@ -464,7 +476,6 @@
   text-align: left;
   margin-left: 7%;
   margin-top: 3%;
-
 }
 
 .horario-text {
@@ -836,4 +847,78 @@
   text-align: initial;
   margin-bottom: 14px;
 
+}
+
+.synopsis-section-title {
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  font-family: $montserratBlack;
+  padding-bottom: 24px;
+}
+
+.synopsis-schedule-text {
+  padding-right: 6px;
+}
+
+.synopsis-title {
+  font-size: 16px;
+  font-family: $montserratLight;
+  color: white;
+  text-align: center;
+}
+
+.synopsis-text {
+  color: white;
+  font-size: 14px;
+  font-family: $montserratRegular;
+  margin-bottom: 1rem;
+}
+
+.synopsis-schedule-title {
+  margin-bottom: 36px !important;
+  color: white;
+  text-align: center;
+  font-family: $montserratBlack;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.synopsis-content .footer-title {
+  color: $btnBackRed;
+}
+
+.dropdownCountry-text {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.dropdownCountry-schedule {
+  font-size: 16px;
+  color: $dropdownCountrySchedule;
+  text-align: center;
+}
+
+.dropdownCountry-arrow::after {
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  content: "";
+  height: 8px;
+  pointer-events: none;
+  transform-origin: 66% 66%;
+  transform: rotate(45deg);
+  transition: all 0.15s ease-in-out;
+  width: 8px;
+  margin-bottom: 3px;
+}
+
+.dropdownCountry-icon {
+  transform: rotate(0deg);
+  transition: all 0.5s ease;
+  margin-bottom: 0;
+}
+
+.arrow-up {
+  transform: rotate(-180deg);
 }

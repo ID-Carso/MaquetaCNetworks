@@ -25,7 +25,7 @@
             <source src="./video/demo.mp4" type="video/mp4" />
         </video>
     </div>
-    <header>
+    <header class="home-header">
         <div class="hamburguer-menu">
             <div class="text-center">
                 <img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar">
@@ -54,17 +54,19 @@
                 <div class="sidebar-item sidebar-border-bottom">
                     <a class="sidebar-link" href="claro-cinema.php"><span class="dropdown-p">Claro Cinema</span></a>
                 </div>
-                
+
                 <!--<div class="dropdown-content">
               <p class="dropdown-p">ebñrkjg</p>
               <p class="dropdown-p">ebñrkjg</p>
               <p class="dropdown-p">ebñrkjg</p>
             </div>-->
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="https://www.nuestravision.com.mx/"><span class="dropdown-p">Nuestra Visión</span></a>
+                    <a class="sidebar-link" href="https://www.nuestravision.com.mx/"><span class="dropdown-p">Nuestra
+                            Visión</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="https://www.marca.com/claro-mx/"><span class="dropdown-p">Claro Sports</span></a>
+                    <a class="sidebar-link" href="claro-sports.html"><span class="dropdown-p">Claro
+                            Sports</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
                     <a class="sidebar-link" href="programacion.php"><span class="dropdown-p">Programación</span></a>
@@ -85,7 +87,7 @@
 
                     <div class="login">
                         <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-                        <a href="paises.html" class="login-item"><img src="./images/home/pais.svg" alt="" /></a>
+                        <a href="paises.html" class="login-item"><img class="login-country" src="" alt="" /></a>
                     </div>
                 </div>
             </nav>
@@ -99,7 +101,7 @@
 
                     <div class="login">
                         <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-                        <a href="paises.html" class="login-item"><img src="./images/home/pais.svg" alt="" /></a>
+                        <a href="paises.html" class="login-item"><img class="login-country" src="" alt="" /></a>
                     </div>
                 </div>
             </nav>
@@ -895,51 +897,60 @@
                 <a href="claro-canal.php"> <button class="btn-red">VER +</button></a>
             </div>
             <div class="slick-slider">
-                <div class="poster">
-                    <div class="thumbnail-large">
-                        <img src="../images/posters/bates-motel.jpeg" alt="">
-                    </div>
-                    <div class="a-claro-rectangle">
-                        <div class="poster-title-margin">
-                            <p class="a-poster-text-white">BATES MOTEL</p>
+                <a href="sinopsis.php">
+                    <div class="poster">
+                        <div class="thumbnail-large">
+                            <img src="../images/posters/bates-motel.jpeg" alt="">
                         </div>
+                        <div class="a-claro-rectangle">
+                            <div class="poster-title-margin">
+                                <p class="a-poster-text-white">BATES MOTEL</p>
+                            </div>
 
-                    </div>
-                </div>
-
-
-                <div class="poster">
-                    <div class="thumbnail-large">
-                        <img src="../images/posters/breaking-bad.jpeg" alt="">
-                    </div>
-                    <div class="a-claro-rectangle">
-                        <div class="poster-title-margin">
-                            <p class="a-poster-text-white">BREAKING BAD</p>
                         </div>
                     </div>
-                </div>
+                </a>
 
-
-                <div class="poster">
-                    <div class="thumbnail-large">
-                        <img src="../images/posters/good-doctor.jpeg" alt="">
-                    </div>
-                    <div class="a-claro-rectangle">
-                        <div class="poster-title-margin">
-                            <p class="a-poster-text-white">THE GOOD DOCTOR</p>
+                <a href="sinopsis.php">
+                    <div class="poster">
+                        <div class="thumbnail-large">
+                            <img src="../images/posters/breaking-bad.jpeg" alt="">
+                        </div>
+                        <div class="a-claro-rectangle">
+                            <div class="poster-title-margin">
+                                <p class="a-poster-text-white">BREAKING BAD</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="poster">
-                    <div class="thumbnail-large">
-                        <img src="../images/posters/harry-potter.jpeg" alt="">
-                    </div>
-                    <div class="a-claro-rectangle">
-                        <div class="poster-title-margin">
-                            <p class="a-poster-text-white">HARRY POTTER: LA ORDEN DEL FENIX</p>
+                </a>
+
+
+                <a class="sinopsis.php">
+                    <div class="poster">
+                        <div class="thumbnail-large">
+                            <img src="../images/posters/good-doctor.jpeg" alt="">
+                        </div>
+                        <div class="a-claro-rectangle">
+                            <div class="poster-title-margin">
+                                <p class="a-poster-text-white">THE GOOD DOCTOR</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
+
+                <a href="sinopsis.php">
+                    <div class="poster">
+                        <div class="thumbnail-large">
+                            <img src="../images/posters/harry-potter.jpeg" alt="">
+                        </div>
+                        <div class="a-claro-rectangle">
+                            <div class="poster-title-margin">
+                                <p class="a-poster-text-white">HARRY POTTER: LA ORDEN DEL FENIX</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
 
             </div>
 
@@ -1286,7 +1297,7 @@
                     <p class="a-concert-subtitle concert-second-subtitle">Entrevistas y mucho más</p>
                 </div>
                 <div class="m-see-more">
-                    <button class="btn-pink">VER +</button>
+                    <a href="concert-channel.php"><button class="btn-pink">VER +</button></a>
                 </div>
             </div>
             <div class="slick-slider">>
@@ -1351,9 +1362,9 @@
                     <h1 class="a-concert-channel-title">CONCERT CHANNEL</h1>
                 </div>
                 <div class="m-see-more">
-                    <button class="btn-pink">
-                        <span>VER</span>
-                    </button>
+                    <a href="concert-channel.php"><button class="btn-pink">
+                            <span>VER</span>
+                        </button></a>
                 </div>
             </div>
             <div class="row no-gutters">
@@ -1461,7 +1472,7 @@
                 </h2>
             </div>
             <div class="text-center">
-                <button class="btn-red">VER +</button>
+                <a href="claro-cinema.php"><button class="btn-red">VER +</button></a>
             </div>
             <div class="slick-slider">
                 <div class="poster">
@@ -1525,11 +1536,53 @@
                     </h2>
                 </div>
                 <div class="m-see-more">
-                    <button class="btn-red">VER +</button>
+                    <a href="claro-cinema.php"><button class="btn-red">VER +</button></a>
                 </div>
             </div>
+            <div class="slick-slider">>
+                <div class="poster">
+                    <div class="thumbnail">
+                        <img src="./images/posters/flor-silvestre-peli.jpeg" alt="">
+                    </div>
+                    <div class="a-cinema-rectangle">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-black">ALLÁ EN EL RANCHO GRANDE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster">
+                    <div class="thumbnail">
+                        <img src="./images/posters/maria-candelaria-peli.jpeg" alt="">
+                    </div>
+                    <div class="a-cinema-rectangle">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-black">MARÍA CANDELARIA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster">
+                    <div class="thumbnail">
+                        <img src="./images/posters/flor-silvestre-peli.jpeg" alt="">
+                    </div>
+                    <div class="a-cinema-rectangle">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-black">FLOR SILVESTRE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster">
+                    <div class="thumbnail">
+                        <img src="./images/posters/macario-peli.jpeg" alt="">
+                    </div>
+                    <div class="a-cinema-rectangle">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-black">MACARIO</p>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="row no-gutters">
+            </div>
+            <!--<div class="row no-gutters">
                 <div class="col-md-4 col-xl-6">
                 </div>
                 <div class="col-md-8 col-xl-6">
@@ -1586,7 +1639,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <div class="d-flex align-items-center justify-content-between section-home-footer">
                 <div>
                     <img class="concert-footer-img" src="./images/home/cinema-home-img.svg" alt="">
@@ -1609,7 +1662,7 @@
                     </h2>
                 </div>
                 <div class="m-see-more">
-                    <button class="btn-red">VER +</button>
+                    <a href="claro-cinema.php"><button class="btn-red">VER +</button></a>
                 </div>
             </div>
 
@@ -1720,7 +1773,7 @@
                 </h2>
             </div>
             <div class="text-center">
-                <button class="btn-red">VER +</button>
+                <a href="https://www.nuestravision.com.mx"><button class="btn-red">VER +</button></a>
             </div>
             <div class="slick-slider">
                 <div class="poster">
@@ -1775,7 +1828,7 @@
                     </h2>
                 </div>
                 <div class="m-see-more">
-                    <button class="btn-purple">VER +</button>
+                    <a href="https://www.nuestravision.com.mx"><button class="btn-purple">VER +</button></a>
                 </div>
             </div>
             <div class="slick-slider">
@@ -1841,7 +1894,7 @@
                     </h2>
                 </div>
                 <div class="m-see-more">
-                    <button class="btn-purple">VER +</button>
+                    <a href="https://www.nuestravision.com.mx"><button class="btn-purple">VER +</button></a>
                 </div>
             </div>
             <div class="row">
@@ -1974,7 +2027,7 @@
                 </h2>
             </div>
             <div class="text-center">
-                <button class="btn-red">VER +</button>
+                <a href="https://www.marca.com/claro-mx/"><button class="btn-red">VER +</button></a>
             </div>
             <div class="slick-slider">
                 <div class="poster">
@@ -2028,7 +2081,7 @@
                     </h2>
                 </div>
                 <div class="m-see-more">
-                    <button class="btn-red">VER +</button>
+                    <a href="https://www.marca.com/claro-mx/"><button class="btn-red">VER +</button></a>
                 </div>
             </div>
             <div class="row no-gutters d-flex align-items-center">
@@ -2092,7 +2145,7 @@
                     </h2>
                 </div>
                 <div class="m-see-more">
-                    <button class="btn-red">VER +</button>
+                    <a href="https://www.marca.com/claro-mx/"><button class="btn-red">VER +</button></a>
                 </div>
             </div>
             <div class="row no-gutters d-flex align-items-center">

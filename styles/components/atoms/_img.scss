@@ -144,6 +144,7 @@
 .showtime-clock {
   width: 20px;
   filter: invert(1);
+  margin: auto;
 }
 
 .a-cinema-rectangle .showtime-clock {
@@ -393,4 +394,16 @@
   width: 25px;
   height: 25px;
   margin-left: -43%;
+}
+
+.synopsis-image {
+  width: 100%;
+}
+
+.header-curve {
+  display: none;
+  position: absolute;
+  bottom: -14%;
+  width: 100%;
+  left: 0;
 }

@@ -8,7 +8,26 @@ $(document).ready(function () {
     }
   });
 
+  const numPaises = document.getElementsByClassName("name_paises").length;
+  const paises = document.getElementsByClassName("name_paises");
+  var contador;
+  for (contador = 0; contador < numPaises; contador++) {
+    paises[contador].addEventListener("click", function () {
+      if (typeof Storage !== "undefined") {
+        var imageSrc = $(this)
+          .children(".Icon_paises")
+          .attr("src");
 
+        sessionStorage.setItem("src", imageSrc);
+      }
+    });
+  }
+  var sessionSrc = sessionStorage.getItem("src");
+  var loginCountry = $(".login-country");
+  if (sessionSrc) {
+    loginCountry.attr("src", sessionSrc);
+    console.log(sessionSrc);
+  }
 
   $(".singup-button").click(function () {
     var usuario, correo, password, expresion;
@@ -99,38 +118,44 @@ $(document).ready(function () {
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
     if (!filter.test(email)) {
-
       CorreoValido.css("color", "red");
       ImagenError.css("display", "inline-block");
       ImagenError.attr("src", "images/registro/alerta.svg");
-
-
     } else if (filter.test(email)) {
       CorreoValido.css("color", "green");
       ImagenError.css("display", "inline-block");
       ImagenError.attr("src", "images/registro/listo.svg");
-
     } else if (inputCorreo.val().length == 0) {
       ImagenError.css("display", "none");
       CorreoValido.css("color", "#666262");
-
     }
   });
 
   /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
+  const navbarTablet = document.querySelector(
+    ".claro-canal-header .menu-tablet, .synopsis-header .menu-tablet, .claro-cinema-header .menu-tablet, .concert-channel-header .menu-tablet"
+  );
   $(document).on("scroll ontouchmove ontouchstart ontouchend", function () {
     var posicionScroll = $(document).scrollTop();
     if (posicionScroll <= 0) {
       navbar.style.background =
         "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
       navbar.style.position = "absolute";
+      navbarTablet.style.background =
+        "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+      navbarTablet.style.position = "absolute";
     } else if (posicionScroll > 0 && posicionScroll <= 100) {
       navbar.style.background =
         "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
       navbar.style.position = "fixed";
+      navbarTablet.style.background =
+        "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+      navbarTablet.style.position = "fixed";
     } else if (posicionScroll >= 101) {
       navbar.style.background = "black";
       navbar.style.position = "fixed";
+      navbarTablet.style.background = "white";
+      navbarTablet.style.position = "fixed";
     }
   });
 
@@ -165,6 +190,20 @@ $(document).ready(function () {
           arrows: false
         }
       },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />'
+        }
+      },
+
       {
         breakpoint: 2000,
         settings: {
@@ -218,12 +257,14 @@ $(document).ready(function () {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
           centerMode: false,
-          arrows: false
+          arrows: true,
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-tv-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-tv-next" />'
         }
       },
       {
@@ -253,7 +294,7 @@ $(document).ready(function () {
           centerMode: false,
           infinite: false,
           arrows: false,
-          dots: true
+          dots: false
         }
       },
       {
@@ -352,14 +393,14 @@ $(document).ready(function () {
     html.css({
       position: "initial",
       overflow: "auto",
-      height: "auto"
+      height: "100%"
     });
     body.css({
       position: "initial",
       overflowX: "hidden",
       overflowY: "auto",
       "-webkit-overflow-scrolling": "auto",
-      height: "auto",
+      height: "100%",
       width: "auto"
     });
     sidebar_content.style.overflow = "hidden";
@@ -406,7 +447,6 @@ $(document).ready(function () {
 
   $(".pro-content").hide();
   $(".pro-content:first").show();
-
 
   $("ul.pro-list li").on("click", function () {
     $("ul.pro-list li").removeClass("active-proItem");
@@ -486,6 +526,33 @@ $(document).ready(function () {
 
   /*** Fin Slider "Ahora en TV"  ***/
 
+  /*Dropdown de la página sinópsis.php */
+  const dropdownCountry = document.getElementsByClassName(
+    "dropdownCountry-content"
+  );
+  const dropdownArrow = $(".dropdownCountry-arrow");
+  console.log(dropdownArrow);
+  var i;
+  for (i = 0; i < dropdownCountry.length; i++) {
+    dropdownCountry[i].addEventListener("click", function () {
+      this.classList.toggle("dropdown-active");
+      var dropdownContent = this.nextElementSibling;
+      console.log(dropdownArrow);
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+        $(this)
+          .children(".dropdownCountry-icon")
+          .removeClass("arrow-up");
+      } else {
+        dropdownContent.style.display = "block";
+        dropdownContent.style.animation = "down 0.5s";
+        $(this)
+          .children(".dropdownCountry-icon")
+          .addClass("arrow-up");
+      }
+    });
+  }
+
   /*** Dropdown del menú ***/
   /*const dropdown = document.getElementsByClassName("sidebar-dropdown");
   console.log(dropdown);
@@ -507,44 +574,4 @@ $(document).ready(function () {
   }*/
 
   /*** Fin Dropdown del menú ***/
-
-  /*inputs.keyup(function(){
-    if(validaUsuario(input-usuario) && validaPassword(input-password) && validaEmail(input-email)){
-        flecha.css("display", "block");
-    }
-  });
-
-  signup-botton.click(function(){
-
-    if(!validaUsuario()){
-      modal.html("oihgiohiohoihoih");
-    }else if(!validaPassword()){
-
-    }
-
-  });
-
-  function validaUsuario(inputUsuario) {
-    if (usuario.length > 10) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  function validaPassword() {
-    if (true) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  function validaEmail() {
-    if (true) {
-      return true;
-    } else {
-      return false;
-    }
-  }*/
 });

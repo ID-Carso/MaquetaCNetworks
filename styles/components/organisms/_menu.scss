@@ -6,7 +6,39 @@
   max-width: calc(100vw - 50px);
   height: 100%;
   background: $sidebarColor;
-  z-index: 2;
+  z-index: 16;
   transform: translate(-100%);
   transition: all 0.3s ease-out;
+}
+
+.menu-tablet {
+  width: 100%;
+  transition: all 0.5s ease 0s;
+  z-index: 10;
+  position: absolute;
+}
+
+.home-header {
+  .menu-tablet {
+    position: initial;
+  }
+}
+
+.concert-channel-header {
+  .menu-tablet {
+    padding: 30px;
+  }
+}
+
+.marca-header {
+  .menu {
+    position: initial;
+    padding: 16px;
+    background: black;
+  }
+
+  .nav-content {
+    margin: 0px;
+    position: relative;
+  }
 }
