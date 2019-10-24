@@ -42,3 +42,11 @@
     -webkit-transform: translateY(0);
   }
 }
+
+.dropdownCountry-content:checked {
+  background: red;
+}
+
+.dropdown-active {
+  display: block;
+}

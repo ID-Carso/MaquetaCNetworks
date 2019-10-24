@@ -387,7 +387,6 @@
   width: 25px;
   height: 25px;
   margin-left: 4%;
-
 }
 
 .women {
@@ -401,9 +400,10 @@
 }
 
 .header-curve {
-  display: none;
+  display: block;
   position: absolute;
   bottom: -14%;
-  width: 100%;
+  width: 101%;
   left: 0;
+  z-index: 1;
 }

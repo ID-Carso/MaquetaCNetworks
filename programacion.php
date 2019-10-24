@@ -23,7 +23,7 @@
     <header>
         <div class="hamburguer-menu">
             <div class="text-center">
-                <img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar">
+                <a href="index.php"><img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar"></a>
             </div>
             <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
                 <a href="index.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
@@ -59,7 +59,7 @@
                             Visión</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="https://www.marca.com/claro-mx/"><span class="dropdown-p">Claro
+                    <a class="sidebar-link" href="claro-sports.html"><span class="dropdown-p">Claro
                             Sports</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
@@ -76,7 +76,7 @@
                     <div class="claro-logo">
                         <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
 
-                        <img class="logo" src="./images/home/claro-logo.png" alt="" />
+                        <a href="index.php"><img class="logo" src="./images/home/claro-logo.png" alt="" /></a>
                     </div>
 
                     <div class="login">

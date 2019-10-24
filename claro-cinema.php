@@ -69,7 +69,7 @@
     </div>
 
     <div class="header">
-    <img src="./images/header/yellow-curve.png" alt="" class="header-curve">
+      <img src="./images/header/yellow-curve.png" alt="" class="header-curve">
       <nav class="menu">
         <div class="nav-content">
           <div class="claro-logo">
@@ -120,7 +120,7 @@
           </a>
         </div>
         <div>
-          <a href="#" class="navbar-link text-decoration-none">
+          <a href="claro-sports.html" class="navbar-link text-decoration-none">
             <p class="navbar-item">Claro Sports</p>
           </a>
         </div>
@@ -142,87 +142,91 @@
             <img src="./images/claro-canal/claro-canal-logo.svg" alt="" />
           </div>-->
     </div>
+
   </header>
   <main>
     <div class="">
       <section class="today-claro-cinema">
         <h1 class="a-today-cinema-title">hoy en <span>claro cinema</span></h1>
-        <div class="col-lg-11 mx-auto">
-          <div class="slick-slider cinema-slider">
+        <div class="no-gutters">
+          <div class="col-lg-11 mx-auto">
+            <div class="section-slider cinema-slider">
 
-            <div class="poster">
-              <div class="thumbnail">
-                <div class="showtime-container">
-                  <p class="a-programming-text">14:30 - 16:30</p>
+              <div class="poster">
+                <div class="thumbnail">
+                  <div class="showtime-container">
+                    <p class="a-programming-text">14:30 - 16:30</p>
+                  </div>
+                </div>
+                <div class="a-cinema-rectangle">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-black">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="a-cinema-rectangle">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-black">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
-                </div>
-              </div>
-            </div>
 
-            <div class="poster">
-              <div class="thumbnail">
-                <div class="showtime-container">
-                  <p class="a-programming-text">14:30 - 16:30</p>
+              <div class="poster">
+                <div class="thumbnail">
+                  <div class="showtime-container">
+                    <p class="a-programming-text">14:30 - 16:30</p>
+                  </div>
+                </div>
+                <div class="a-cinema-rectangle">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-black">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="a-cinema-rectangle">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-black">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
+              <div class="poster">
+                <div class="thumbnail">
+                  <div class="showtime-container">
+                    <p class="a-programming-text">14:30 - 16:30</p>
+                  </div>
+                </div>
+                <div class="a-cinema-rectangle">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-black">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="poster">
-              <div class="thumbnail">
-                <div class="showtime-container">
-                  <p class="a-programming-text">14:30 - 16:30</p>
+              <div class="poster">
+                <div class="thumbnail">
+                  <div class="showtime-container">
+                    <p class="a-programming-text">14:30 - 16:30</p>
+                  </div>
+                </div>
+                <div class="a-cinema-rectangle">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-black">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="a-cinema-rectangle">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-black">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
+              <div class="poster">
+                <div class="thumbnail">
+                  <div class="showtime-container">
+                    <p class="a-programming-text">14:30 - 16:30</p>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="poster">
-              <div class="thumbnail">
-                <div class="showtime-container">
-                  <p class="a-programming-text">14:30 - 16:30</p>
-                </div>
-              </div>
-              <div class="a-cinema-rectangle">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-black">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="poster">
-              <div class="thumbnail">
-                <div class="showtime-container">
-                  <p class="a-programming-text">14:30 - 16:30</p>
-                </div>
-              </div>
-              <div class="a-cinema-rectangle">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-black">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
+                <div class="a-cinema-rectangle">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-black">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
 
       </section>
       <section class="imperdibles">
@@ -236,7 +240,7 @@
         </div>
         <div class="col-lg-11 mx-auto">
           <div class="imperdibles-videos-mobile">
-            <div class="slick-slider cinema-slider">
+            <div class="section-slider cinema-slider">
               <div class="poster">
                 <div class="thumbnail">
                   <div class="showtime-container">
@@ -385,7 +389,7 @@
           </div>
         </div>
         <div class="col-lg-11 mx-auto">
-          <div class="slick-slider cinema-slider">
+          <div class="section-slider cinema-slider">
             <div class="poster">
               <div class="thumbnail">
                 <div class="showtime-container">
@@ -456,7 +460,7 @@
           </div>
         </div>
         <div class="col-lg-11 mx-auto">
-          <div class="slick-slider cinema-slider">
+          <div class="section-slider cinema-slider">
             <div class="poster">
               <div class="thumbnail">
                 <div class="showtime-container">
