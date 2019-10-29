@@ -49,7 +49,6 @@
 .a-concert-channel-title {
   @include title-section($colorWhite, $titleSection);
   padding-bottom: 5px;
-  padding-top: 27px;
 }
 
 .a-concert-channel-subtitle {
@@ -493,6 +492,17 @@
   color: $navbarItemColor;
 }
 
+.our-channels {
+  display: none;
+  background: $ourChannelColor;
+  margin: 70px 0px 30px 0px;
+}
+
+.our-channels-title {
+  @include title-section($colorWhite, $titleSection);
+  padding: 18px 0;
+}
+
 /*Claro Canal*/
 .a-header-card-text {
   font-family: $montserratLight;
@@ -846,7 +856,6 @@
   color: #666262;
   text-align: initial;
   margin-bottom: 14px;
-
 }
 
 .synopsis-section-title {
@@ -994,4 +1003,8 @@
   letter-spacing: normal;
   color: #666262;
   text-align: initial;
+}
+
+.recordar-title {
+  color: $cinemaTitleGreen !important;
 }

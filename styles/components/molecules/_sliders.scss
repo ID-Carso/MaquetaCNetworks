@@ -138,30 +138,44 @@
 }
 
 .concert-slide {
-  height: 205px;
-  background: #0d1aa0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex !important;
+  height: auto;
+  padding-bottom: 64%;
 }
 
-.concert-header-slider .slick-dots li.slick-active button:before {
-  color: white;
-  opacity: 0.75;
-}
-
-.concert-header-slider .slick-dots li button:before {
+.concert-slide img {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
   position: absolute;
-  top: 0;
-  left: 0;
-  content: "•";
-  width: 20px;
-  height: 20px;
-  font-family: "slick";
-  font-size: 6px;
-  line-height: 20px;
-  text-align: center;
-  color: white;
-  opacity: 0.25;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+}
+
+.concert-header-slider {
+  .slick-dots li.slick-active button:before {
+    color: white;
+    opacity: 0.75;
+  }
+
+  .slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "•";
+    width: 20px;
+    height: 20px;
+    font-family: "slick";
+    font-size: 6px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    opacity: 0.25;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
 .concert-container .slick-dots li.slick-active button:before {
@@ -237,5 +251,65 @@
 .concert-header-slider {
   .slick-slide {
     margin: 0;
+  }
+}
+
+.claro-header-slider {
+  .slick-track {
+    margin-bottom: 0px !important;
+    height: 100%;
+  }
+  .slick-list {
+    padding: 0px !important;
+  }
+
+  .slick-dots {
+    bottom: 40px;
+  }
+
+  .slick-slide {
+    margin: 0 !important;
+  }
+}
+
+.claro-slide img {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+.claro-slide {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex !important;
+  height: auto;
+  padding-bottom: 51%;
+}
+
+.claro-header-slider .slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 1;
+}
+
+.claro-header-slider .slick-dots li button:before {
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+}
+
+.claro-canal-header {
+  .slick-slider {
+    padding-bottom: 0;
+  }
+}
+
+.concert-channel-header {
+  .slick-slider {
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  .slick-dots {
+    bottom: 40px;
   }
 }

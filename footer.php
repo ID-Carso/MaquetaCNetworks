@@ -45,12 +45,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-6">
-                        <p class="other-text-regular text-right text-footer-basic">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        </p>
-                    </div>
-                </div>
+
             </div>
 
             <!--Div logos de compañías-->

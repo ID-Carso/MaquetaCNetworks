@@ -387,7 +387,6 @@
   width: 25px;
   height: 25px;
   margin-left: 4%;
-
 }
 
 .women {
@@ -401,11 +400,12 @@
 }
 
 .header-curve {
-  display: none;
+  display: block;
   position: absolute;
   bottom: -14%;
-  width: 100%;
+  width: 101%;
   left: 0;
+<<<<<<< HEAD
 }
 
 .avatar-usuario {
@@ -452,3 +452,7 @@
   max-width: calc(100vw - 35px);
   margin: 0 auto 9% auto;
 }
+=======
+  z-index: 1;
+}
+>>>>>>> 990d397c9789c62876ba85a0b533b337fe2b0665

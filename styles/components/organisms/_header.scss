@@ -4,11 +4,13 @@
   background-image: url("../../../images/home/american-horror.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .claro-canal-header .header {
   position: relative;
-  background: #512a14;
+  background: transparent;
+  height: auto;
 }
 
 /*.claro-canal-header .header::after,
@@ -28,6 +30,7 @@
 
 .concert-channel-header .header {
   background: transparent;
+  height: auto;
 }
 
 .claro-cinema-header .header {

@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="./slick-master/slick/slick.css" />
     <link rel="stylesheet" href="./slick-master/slick/slick-theme.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="slick-master/slick/slick.js"></script>
     <script src="./js/jquery.browser.js"></script>
     <script src="./js/main.js"></script>
@@ -21,7 +24,7 @@
     <header class="synopsis-header">
         <div class="hamburguer-menu">
             <div class="text-center">
-                <img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar">
+                <a href="index.php"><img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar"></a>
             </div>
             <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
                 <a href="index.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
@@ -57,11 +60,11 @@
                             Visión</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="https://www.marca.com/claro-mx/"><span class="dropdown-p">Claro
+                    <a class="sidebar-link" href="claro-sports.html"><span class="dropdown-p">Claro
                             Sports</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
-                    <span class="dropdown-p">Programación</span>
+                    <a href="programacion.php"><span class="dropdown-p">Programación</span></a>
                 </div>
                 <!--prueba sidebar-->
             </div>
@@ -75,7 +78,7 @@
                     <div class="claro-logo">
                         <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
 
-                        <img class="logo" src="./images/home/claro-logo.png" alt="" />
+                        <a href="index.php"><img class="logo" src="./images/home/claro-logo.png" alt="" /></a>
                     </div>
 
                     <div class="login">
@@ -204,10 +207,12 @@
                     <h1 class="synopsis-schedule-title">Horario por regiones</h1>
                 </div>
                 <div class="no-gutters">
+
                     <div class="col-11 mx-auto dropdownCountry">
-                        <div class="dropdownCountry-content d-flex  align-items-center pb-3 mb-3 no-gutters">
+
+                        <div class="dropdownCountry-content d-flex  align-items-center pb-3 mb-3 no-gutters ">
                             <div class="col-2">
-                                <img src="./images/paises/colombia.svg" alt="">
+                               <img src="./images/paises/colombia.svg" alt="">
                             </div>
                             <div class="col-5">
                                 <p class="dropdownCountry-text">Colombia</p>
@@ -220,7 +225,7 @@
                             </div>
 
                         </div>
-                        <div class="dropdownCountries pb-2 mb-3 ">
+                        <div class="dropdownCountries pb-3 mb-3">
                             <div class="dropdownCountries-content no-gutters">
                                 <div class="col-2">
                                     <img src="./images/paises/dominican-republic.svg" alt="">
@@ -245,6 +250,8 @@
                                     <p class="dropdownCountry-text">República Dominicana</p>
                                 </div>
                             </div>
+
+
 
                         </div>
                         <div class="dropdownCountry-content d-flex  align-items-center pb-2 mb-3 no-gutters">

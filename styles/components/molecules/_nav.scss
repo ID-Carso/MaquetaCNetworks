@@ -16,10 +16,16 @@
   position: relative;
 }
 
+.home-header .claro-navbar {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 9px;
+  margin-left: -9px;
+  border-radius: 20px;
+}
+
 .claro-navbar {
   display: none;
   margin-top: 25px;
-  background: white;
   z-index: 3;
   position: absolute;
 }
