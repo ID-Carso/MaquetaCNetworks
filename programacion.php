@@ -399,9 +399,9 @@
                                             </div>
                                             <div class="col-6 d-flex align-items-center justify-content-between">
                                                 <p class="rating-alert">ALERTAS</p>
-                                                <label class="switch">
+                                                <label class="switch-alert">
                                                     <input type="checkbox">
-                                                    <span class="slider round"></span>
+                                                    <span class="slideralert roundalert"></span>
                                                 </label>
                                             </div>
 
@@ -439,9 +439,9 @@
                                             </div>
                                             <div class="col-6 d-flex align-items-center justify-content-between">
                                                 <p class="rating-alert">ALERTAS</p>
-                                                <label class="switch">
+                                                <label class="switch-alert">
                                                     <input type="checkbox">
-                                                    <span class="slider round"></span>
+                                                    <span class="slideralert roundalert"></span>
                                                 </label>
                                             </div>
 
@@ -479,9 +479,9 @@
                                             </div>
                                             <div class="col-6 d-flex align-items-center justify-content-between">
                                                 <p class="rating-alert">ALERTAS</p>
-                                                <label class="switch">
+                                                <label class="switch-alert">
                                                     <input type="checkbox">
-                                                    <span class="slider round"></span>
+                                                    <span class="slideralert roundalert"></span>
                                                 </label>
                                             </div>
 
@@ -519,9 +519,9 @@
                                             </div>
                                             <div class="col-6 d-flex align-items-center justify-content-between">
                                                 <p class="rating-alert">ALERTAS</p>
-                                                <label class="switch">
+                                                <label class="switch-alert">
                                                     <input type="checkbox">
-                                                    <span class="slider round"></span>
+                                                    <span class="slideralert roundalert"></span>
                                                 </label>
                                             </div>
 
@@ -565,9 +565,9 @@
                                             </div>
                                             <div class="col-6 d-flex align-items-center justify-content-between">
                                                 <p class="rating-alert">ALERTAS</p>
-                                                <label class="switch">
+                                                <label class="switch-alert">
                                                     <input type="checkbox">
-                                                    <span class="slider round"></span>
+                                                    <span class="slideralert roundalert"></span>
                                                 </label>
                                             </div>
 
@@ -605,9 +605,9 @@
                                             </div>
                                             <div class="col-6 d-flex align-items-center justify-content-between">
                                                 <p class="rating-alert">ALERTAS</p>
-                                                <label class="switch">
+                                                <label class="switch-alert">
                                                     <input type="checkbox">
-                                                    <span class="slider round"></span>
+                                                    <span class="slideralert roundalert"></span>
                                                 </label>
                                             </div>
 
@@ -645,9 +645,9 @@
                                             </div>
                                             <div class="col-6 d-flex align-items-center justify-content-between">
                                                 <p class="rating-alert">ALERTAS</p>
-                                                <label class="switch">
+                                                <label class="switch-alert">
                                                     <input type="checkbox">
-                                                    <span class="slider round"></span>
+                                                    <span class="slideralert roundalert"></span>
                                                 </label>
                                             </div>
 
@@ -685,9 +685,9 @@
                                             </div>
                                             <div class="col-6 d-flex align-items-center justify-content-between">
                                                 <p class="rating-alert">ALERTAS</p>
-                                                <label class="switch">
+                                                <label class="switch-alert">
                                                     <input type="checkbox">
-                                                    <span class="slider round"></span>
+                                                    <span class="slideralert roundalert"></span>
                                                 </label>
                                             </div>
                                         </div>

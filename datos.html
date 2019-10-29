@@ -1,300 +1,683 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <title>Datos</title>
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      type="text/css"
-    />
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+<head>
+  <title>Datos</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon/claro-fav.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./slick-master/slick/slick.css" />
+  <link rel="stylesheet" href="./slick-master/slick/slick-theme.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="slick-master/slick/slick.js"></script>
+  <script src="./js/jquery.browser.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="js/chosen.jquery.js"></script>
+  <script src="js/ImageSelect.jquery.js"></script>
+</head>
 
-    <script src="./js/main.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/chosen.jquery.js"></script>
-    <script src="js/ImageSelect.jquery.js"></script>
-  </head>
+<body class="fondo">
+  <div class="login-form">
+    <div class="col-sm-12 no-gutters col-md-8 offset-md-2 no-gutters col-lg-4 offset-lg-4 shadow1 fondolog">
+      <img src="images/registro/group-10.svg" class="ubicacion5" />
+      <div class="row ma-no ">
+        <div class="col-sm-12 col-md-12 col-lg-12 no-gutters ">
+          <div class="hamburguer-menu">
+            <div class="text-center">
+              <img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar">
+            </div>
+            <div class="sidebar-content">
+              <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
+                <a href="index.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
+              </div>
+              <div class="sidebar-item sidebar-border-bottom">
+                <a href="claro-canal.php" class="sidebar-link"><span class="dropdown-p">Canal
+                    Claro</span></a>
+              </div>
 
-  <body class="fondo">
-    <div class="login-form">
-      <div
-        class="col-sm-12 no-gutters col-md-8 offset-md-2 no-gutters col-lg-4 offset-lg-4 shadow1 fondolog"
-      >
-        <img src="images/registro/group-10.svg" class="ubicacion5" />
-        <div class="row ma-no ">
-          <div class="col-sm-12 col-md-12 col-lg-12 no-gutters ">
-            <img src="images/registro/group-3.svg" />
-            <a href="index.php">
-              <img src="images/registro/group-24.svg" class="ubicacion1"
-            /></a>
-            <img src="images/registro/group-37.svg" class="ubicacion" />
+              <div class="sidebar-item sidebar-border-bottom">
+                <a class="sidebar-link" href="concert-channel.php"><span class="dropdown-p">Concert
+                    Channel</span></a>
+              </div>
+
+              <div class="sidebar-item sidebar-border-bottom">
+                <a class="sidebar-link" href="claro-cinema.php"><span class="dropdown-p">Claro
+                    Cinema</span></a>
+              </div>
+
+              <div class="sidebar-item sidebar-border-bottom">
+                <a class="sidebar-link" href="https://www.nuestravision.com.mx/"><span class="dropdown-p">Nuestra
+                    Visión</span></a>
+              </div>
+              <div class="sidebar-item sidebar-border-bottom">
+                <a class="sidebar-link" href="claro-sports.html"><span class="dropdown-p">Claro
+                    Sports</span></a>
+              </div>
+              <div class="sidebar-item sidebar-border-bottom">
+                <a class="sidebar-link" href="programacion.php"><span class="dropdown-p">Programación</span></a>
+              </div>
+
+            </div>
+            <button class="invisible-button"></button>
           </div>
-        </div>
-        <br />
-        <br />
-        <div class="row ma-no centro">
-          <div class="col-sm-12 no-gap">
-            <div class="tamaño2 centro">
-              <p class="titulo-seleccion-sexo">Sexo</p>
-              <form
-                action=""
-                name="formilariosexo"
-                id="formulariosexo"
-                class="formulario"
-              >
-                <div class="sexo">
-                  <input type="radio" name="sexo" id="mujer" checked />
-                  <label for="mujer" id="mujerestado" class="mujer-estilo">
-                    <img
-                      id="women"
-                      src="images/datos-adicionales/femenino-activo.svg"
-                      class="women"
-                    />
-                    Femenino</label
-                  >
-                  <input type="radio" name="sexo" id="hombre" />
-                  <label for="hombre" id="hombreestado" class="hombre-estilo">
-                    Masculino
-                    <img
-                      id="men"
-                      src="images/datos-adicionales/masculino-inactivo.svg"
-                      class="men"
-                  /></label>
+
+          <div>
+            <nav class="menu-perfil">
+              <div class="nav-content">
+                <div class="claro-logo">
+                  <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
+
+                  <a href="index.php"> <img class="logo" src="./images/alertas/claro-networks.svg" alt="" /></a>
                 </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="row ma-no centro">
-          <div class="col-sm-12 no-gap">
-            <div class="tamaño2 centro">
-              <p class="titulo-seleccion-fecha">Fecha de nacimiento</p>
-              <select class="date-data" name="day" id="day">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-              </select>
-              <select class="date-data" name="month" id="month">
-                <option value="Enero">Ene</option>
-                <option value="Febrero">Febr</option>
-                <option value="Marzo">Mzo</option>
-                <option value="Abril">Abr</option>
-                <option value="Mayo">May</option>
-                <option value="Junio">Jun</option>
-                <option value="Julio">Jul</option>
-                <option value="Agosto">Ago</option>
-                <option value="Septiembre">Sep</option>
-                <option value="Octubre">Oct</option>
-                <option value="Noviembre">Nov</option>
-                <option value="Diciembre">Dic</option>
-              </select>
-              <select class="date-data" name="year" id="year">
-                <option value="">
-                  
-                </option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <br />
-        <div class="row ma-no centro">
-          <div class="col-sm-12 no-gap">
-            <div class="tamaño2 centro">
-              <p class="titulo-seleccion-pais">País de residencia</p>
-              <input type="checkbox" id="select" />
-              <label for="select" id="select-lb">
-                <p><img src="" />Selecciona tu país</p>
-                <ul>
-                  <li class="option" id-select="select-lb" value="USA">
-                    <img src="images/paises/usa.svg" class="Icon_paises" />USA
-                  </li>
-                  <li class="option" id-select="select-lb" value="Argentina">
-                    <img
-                      src="images/paises/argentina.svg"
-                      class="Icon_paises"
-                    />Argentina
-                  </li>
-                  <li class="option" id-select="select-lb" value="Brazil">
-                    <img
-                      src="images/paises/brazil.svg"
-                      class="Icon_paises"
-                    />Brazil
-                  </li>
-                  <li class="option" id-select="select-lb" value="Chile">
-                    <img
-                      src="images/paises/chile.svg"
-                      class="Icon_paises"
-                    />Chile
-                  </li>
-                  <li class="option" id-select="select-lb" value="Colombia">
-                    <img
-                      src="images/paises/colombia.svg"
-                      class="Icon_paises"
-                    />Colombia
-                  </li>
-                  <li class="option" id-select="select-lb" value="Costa Rica">
-                    <img
-                      src="images/paises/costa-rica.svg"
-                      class="Icon_paises"
-                    />Costa Rica
-                  </li>
-                  <li class="option" id-select="select-lb" value="Ecuador">
-                    <img
-                      src="images/paises/ecuador.svg"
-                      class="Icon_paises"
-                    />Ecuador
-                  </li>
-                  <li class="option" id-select="select-lb" value="El salvador">
-                    <img
-                      src="images/paises/el-salvador.svg"
-                      class="Icon_paises"
-                    />El Salvador
-                  </li>
-                  <li class="option" id-select="select-lb" value="Guatemala">
-                    <img
-                      src="images/paises/guatemala.svg"
-                      class="Icon_paises"
-                    />Guatemala
-                  </li>
-                  <li class="option" id-select="select-lb" value="Honduras">
-                    <img
-                      src="images/paises/honduras.svg"
-                      class="Icon_paises"
-                    />Honduras
-                  </li>
-                  <li class="option" id-select="select-lb" value="Nicaragua">
-                    <img
-                      src="images/paises/nicaragua.svg"
-                      class="Icon_paises"
-                    />Nicaragua
-                  </li>
-                  <li class="option" id-select="select-lb" value="Panamá">
-                    <img
-                      src="images/paises/panama.svg"
-                      class="Icon_paises"
-                    />Panamá
-                  </li>
-                  <li class="option" id-select="select-lb" value="Paraguay">
-                    <img
-                      src="images/paises/paragay.svg"
-                      class="Icon_paises"
-                    />Paraguay
-                  </li>
-                  <li class="option" id-select="select-lb" value="Perú">
-                    <img src="images/paises/peru.svg" class="Icon_paises" />Perú
-                  </li>
-                  <li class="option" id-select="select-lb" value="Puerto Rico">
-                    <img
-                      src="images/paises/puerto-rico.svg"
-                      class="Icon_paises"
-                    />Puerto Rico
-                  </li>
-                  <li
-                    class="option"
-                    id-select="select-lb"
-                    value="Dominican Republic"
-                  >
-                    <img
-                      src="images/paises/dominican-republic.svg"
-                      class="Icon_paises"
-                    />Dominican Republic
-                  </li>
-                  <li class="option" id-select="select-lb" value="Uruguay">
-                    <img
-                      src="images/paises/uruguay.svg"
-                      class="Icon_paises"
-                    />Uruguay
-                  </li>
-                  <script>
-                    $(".option").click(function() {
-                      var value = $(this).attr("value");
-                      var select = $(this).attr("id-select");
 
-                      $("#" + select + " > p").text(value);
-                    });
-
-                    $("#mujer").click(function() {
-                      if ($('input[id="mujer"]').is(":checked")) {
-                        $("#women").attr(
-                          "src",
-                          "images/datos-adicionales/femenino-activo.svg"
-                        );
-                        $("#men").attr(
-                          "src",
-                          "images/datos-adicionales/masculino-inactivo.svg"
-                        );
-                      }
-                    });
-
-                    $("#hombre").click(function() {
-                      if ($('input[id="hombre"]').is(":checked")) {
-                        $("#women").attr(
-                          "src",
-                          "images/datos-adicionales/femenino-inactivo.svg"
-                        );
-                        $("#men").attr(
-                          "src",
-                          "images/datos-adicionales/masculino-activo.svg"
-                        );
-                      }
-                    });
-                  </script>
-                </ul>
-              </label>
-            </div>
-          </div>
-        </div>
-        <br />
-        <div class="row ma-no centro">
-          <div class="col-sm-12">
-            <a href="registro.html"
-              ><button type="button" class="save-button">
-                GUARDAR
-              </button></a
-            >
+                <div class="login">
+                  <a href="index.php" class="login-item"><img src="./images/alertas/btn-home.svg" alt="" /></a>
+                  <a href="paises.html" class="login-item"><img class="login-country" src="" alt="" /></a>
+                </div>
+              </div>
+            </nav>
           </div>
         </div>
       </div>
+      <br /><br /><br /><br />
+      <div class="row ma-no centro">
+        <div class="col-sm-12 no-gap">
+          <div class="tamaño2 centro">
+            <p class="titulos-configuraciones">Datos adicionales</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row ma-no centro">
+        <div class="col-sm-12 no-gap">
+          <div class="tamaño2 centro">
+            <p class="titulo-seleccion-sexo">Sexo</p>
+            <form action="" name="formilariosexo" id="formulariosexo" class="formulario">
+              <div class="sexo">
+                <input type="radio" name="sexo" id="mujer" checked />
+                <label for="mujer" id="mujerestado" class="mujer-estilo">
+                  <img id="women" src="images/datos-adicionales/femenino-activo.svg" class="women" />
+                  Femenino</label>
+                <input type="radio" name="sexo" id="hombre" />
+                <label for="hombre" id="hombreestado" class="hombre-estilo">
+                  Masculino
+                  <img id="men" src="images/datos-adicionales/masculino-inactivo.svg" class="men" /></label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row ma-no centro">
+        <div class="col-sm-12 no-gap">
+          <div class="tamaño2 centro">
+            <p class="titulo-seleccion-fecha">Fecha de nacimiento</p>
+            <div class="cuadro-fecha">
+              <div class="cuadro-dia">
+                <input type="checkbox" id="selectDay" />
+                <label for="selectDay" id="select-Dia">
+                  <p class="SeleccionDiaLista">Día</p>
+                  <ul class="ListaDesplegableDias">
+                    <li class="Dias" id-select="select-Dia" value="1">
+                      1
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="2">
+                      2
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="3">
+                      3
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="4">
+                      4
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="5">
+                      5
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="6">
+                      6
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="7">
+                      7
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="8">
+                      8
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="9">
+                      9
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="10">
+                      10
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="11">
+                      11
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="12">
+                      12
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="13">
+                      13
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="14">
+                      14
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="15">
+                      15
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="16">
+                      16
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="17">
+                      17
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="18">
+                      18
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="19">
+                      19
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="20">
+                      20
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="21">
+                      21
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="22">
+                      22
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="23">
+                      23
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="24">
+                      24
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="25">
+                      25
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="26">
+                      26
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="27">
+                      27
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="28">
+                      28
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="29">
+                      29
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="30">
+                      30
+                    </li>
+                    <li class="Dias" id-select="select-Dia" value="31">
+                      31
+                    </li>
+                  </ul>
+                </label>
+              </div>
+              <div class="cuadro-dia">
+                <input type="checkbox" id="selectMonth" />
+                <label for="selectMonth" id="select-Mes">
+                  <p class="SeleccionMesLista">Mes</p>
+                  <ul class="ListaDesplegableMeses">
+                    <li class="Meses" id-select="select-Mes" value="Ene">
+                      Ene
+                    </li>
+                    <li class="Meses" id-select="select-Mes" value="Feb">
+                      Feb
+                    </li>
+                    <li class="Meses" id-select="select-Mes" value="Mzo">
+                      Mzo
+                    </li>
+                    <li class="Meses" id-select="select-Mes" value="Abr">
+                      Abr
+                    </li>
+                    <li class="Meses" id-select="select-Mes" value="May">
+                      May
+                    </li>
+                    <li class="Meses" id-select="select-Mes" value="Jun">
+                      Jun
+                    </li>
+                    <li class="Meses" id-select="select-Mes" value="Jul">
+                      Jul
+                    </li>
+                    <li class="Meses" id-select="select-Mes" value="Ago">
+                      Ago
+                    </li>
+                    <li class="Meses" id-select="select-Mes" value="Sep">
+                      Sep
+                    </li>
+                    <li class="Meses" id-select="select-Mes" value="Oct">
+                      Oct
+                    </li>
+                    <li class="Meses" id-select="select-Mes" value="Nov">
+                      Nov
+                    </li>
+                    <li class="Meses" id-select="select-Mes" value="Dic">
+                      Dic
+                    </li>
+                  </ul>
+                </label>
+              </div>
+              <div class="cuadro-dia">
+                <input type="checkbox" id="selectYear" />
+                <label for="selectYear" id="select-Año">
+                  <p class="SeleccionAñoLista">Año</p>
+                  <ul class="ListaDesplegableAños">
+                    <li class="Años" id-select="select-Año" value="2019">
+                      2019
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2018">
+                      2018
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2017">
+                      2017
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2016">
+                      2016
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2015">
+                      2015
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2014">
+                      2014
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2013">
+                      2013
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2012">
+                      2012
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2011">
+                      2011
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2010">
+                      2010
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2009">
+                      2009
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2008">
+                      2008
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2007">
+                      2007
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2006">
+                      2006
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2005">
+                      2005
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2004">
+                      2004
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2003">
+                      2003
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2002">
+                      2002
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2001">
+                      2001
+                    </li>
+                    <li class="Años" id-select="select-Año" value="2000">
+                      2000
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1999">
+                      1999
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1998">
+                      1998
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1997">
+                      1997
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1996">
+                      1996
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1995">
+                      1995
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1994">
+                      1994
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1993">
+                      1993
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1992">
+                      1992
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1991">
+                      1991
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1990">
+                      1990
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1989">
+                      1989
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1988">
+                      1988
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1987">
+                      1987
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1986">
+                      1986
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1985">
+                      1985
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1984">
+                      1984
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1983">
+                      1983
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1982">
+                      1982
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1981">
+                      1981
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1980">
+                      1980
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1979">
+                      1979
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1978">
+                      1978
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1977">
+                      1977
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1976">
+                      1976
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1975">
+                      1975
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1974">
+                      1974
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1973">
+                      1973
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1972">
+                      1972
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1971">
+                      1971
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1970">
+                      1970
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1969">
+                      1969
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1968">
+                      1968
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1967">
+                      1967
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1966">
+                      1966
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1965">
+                      1965
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1964">
+                      1964
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1963">
+                      1963
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1962">
+                      1962
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1961">
+                      1961
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1960">
+                      1960
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1959">
+                      1959
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1958">
+                      1958
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1957">
+                      1957
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1956">
+                      1956
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1955">
+                      1955
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1954">
+                      1954
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1953">
+                      1953
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1952">
+                      1952
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1951">
+                      1951
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1950">
+                      1950
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1949">
+                      1949
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1948">
+                      1948
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1947">
+                      1947
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1946">
+                      1946
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1945">
+                      1945
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1944">
+                      1944
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1943">
+                      1943
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1942">
+                      1942
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1941">
+                      1941
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1940">
+                      1940
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1939">
+                      1939
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1938">
+                      1938
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1937">
+                      1937
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1936">
+                      1936
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1935">
+                      1935
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1934">
+                      1934
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1933">
+                      1933
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1932">
+                      1932
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1931">
+                      1931
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1930">
+                      1930
+                    </li>
+                    <li class="Años" id-select="select-Año" value="1929">
+                      1929
+                    </li>
+                  </ul>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row ma-no centro">
+        <div class="col-sm-12 no-gap">
+          <div class="tamaño2 centro">
+            <p class="titulo-seleccion-pais">País de residencia</p>
+            <input type="checkbox" id="selectPais" />
+            <label for="selectPais" id="select-Pais">
+              <p class="SeleccionPaisLista">
+                <img src="" />Selecciona tu país
+              </p>
+              <ul class="ListaDesplegablePaises">
+                <li class="option" id-select="select-Pais" value="USA">
+                  <img src="images/paises/usa.svg" class="Icon_paises" />USA
+                </li>
+                <li class="option" id-select="select-Pais" value="Argentina">
+                  <img src="images/paises/argentina.svg" class="Icon_paises" />Argentina
+                </li>
+                <li class="option" id-select="select-Pais" value="Brazil">
+                  <img src="images/paises/brazil.svg" class="Icon_paises" />Brazil
+                </li>
+                <li class="option" id-select="select-Pais" value="Chile">
+                  <img src="images/paises/chile.svg" class="Icon_paises" />Chile
+                </li>
+                <li class="option" id-select="select-Pais" value="Colombia">
+                  <img src="images/paises/colombia.svg" class="Icon_paises" />Colombia
+                </li>
+                <li class="option" id-select="select-Pais" value="Costa Rica">
+                  <img src="images/paises/costa-rica.svg" class="Icon_paises" />Costa Rica
+                </li>
+                <li class="option" id-select="select-Pais" value="Ecuador">
+                  <img src="images/paises/ecuador.svg" class="Icon_paises" />Ecuador
+                </li>
+                <li class="option" id-select="select-Pais" value="El salvador">
+                  <img src="images/paises/el-salvador.svg" class="Icon_paises" />El Salvador
+                </li>
+                <li class="option" id-select="select-Pais" value="Guatemala">
+                  <img src="images/paises/guatemala.svg" class="Icon_paises" />Guatemala
+                </li>
+                <li class="option" id-select="select-Pais" value="Honduras">
+                  <img src="images/paises/honduras.svg" class="Icon_paises" />Honduras
+                </li>
+                <li class="option" id-select="select-Pais" value="Nicaragua">
+                  <img src="images/paises/nicaragua.svg" class="Icon_paises" />Nicaragua
+                </li>
+                <li class="option" id-select="select-Pais" value="Panamá">
+                  <img src="images/paises/panama.svg" class="Icon_paises" />Panamá
+                </li>
+                <li class="option" id-select="select-Pais" value="Paraguay">
+                  <img src="images/paises/paragay.svg" class="Icon_paises" />Paraguay
+                </li>
+                <li class="option" id-select="select-Pais" value="Perú">
+                  <img src="images/paises/peru.svg" class="Icon_paises" />Perú
+                </li>
+                <li class="option" id-select="select-Pais" value="Puerto Rico">
+                  <img src="images/paises/puerto-rico.svg" class="Icon_paises" />Puerto Rico
+                </li>
+                <li class="option" id-select="select-Pais" value="Dominican Republic">
+                  <img src="images/paises/dominican-republic.svg" class="Icon_paises" />Dominican Republic
+                </li>
+                <li class="option" id-select="select-Pais" value="Uruguay">
+                  <img src="images/paises/uruguay.svg" class="Icon_paises" />Uruguay
+                </li>
+                <script>
+                  $(".option").click(function () {
+                    var value = $(this).attr("value");
+                    var select = $(this).attr("id-select");
+
+                    $("#" + select + " > p").text(value);
+                  });
+                  $(".Dias").click(function () {
+                    var value = $(this).attr("value");
+                    var select = $(this).attr("id-select");
+
+                    $("#" + select + " > p").text(value);
+                  });
+                  $(".Meses").click(function () {
+                    var value = $(this).attr("value");
+                    var select = $(this).attr("id-select");
+
+                    $("#" + select + " > p").text(value);
+                  });
+                  $(".Años").click(function () {
+                    var value = $(this).attr("value");
+                    var select = $(this).attr("id-select");
+
+                    $("#" + select + " > p").text(value);
+                  });
+
+                  $("#mujer").click(function () {
+                    if ($('input[id="mujer"]').is(":checked")) {
+                      $("#women").attr(
+                        "src",
+                        "images/datos-adicionales/femenino-activo.svg"
+                      );
+                      $("#men").attr(
+                        "src",
+                        "images/datos-adicionales/masculino-inactivo.svg"
+                      );
+                    }
+                  });
+
+                  $("#hombre").click(function () {
+                    if ($('input[id="hombre"]').is(":checked")) {
+                      $("#women").attr(
+                        "src",
+                        "images/datos-adicionales/femenino-inactivo.svg"
+                      );
+                      $("#men").attr(
+                        "src",
+                        "images/datos-adicionales/masculino-activo.svg"
+                      );
+                    }
+                  });
+
+                  $
+                </script>
+              </ul>
+            </label>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row ma-no centro">
+        <div class="col-sm-12">
+          <a href="registro.html"><button type="button" class="save-button">
+              GUARDAR
+            </button></a>
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

@@ -190,3 +190,71 @@
   transform: translate(0, -50%);
   right: 0;
 }
+
+.tiempo {
+  width: 302px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  display: flex;
+}
+
+.close-button {
+  width: 288px;
+  height: 44px;
+  border-radius: 21.5px;
+  outline: none !important;
+  background-color: $textWhite;
+  font-family: $montserratSemiBold;
+  color: $textgray;
+  font-size: $fontSizeTv;
+  border: solid 1px $subtitleTV;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.close-button:hover {
+  background-color: $rollover;
+  color: $textWhite;
+  border: solid 1px $rollover;
+}
+
+.acept-button {
+  width: 288px;
+  height: 44px;
+  border-radius: 21.5px;
+  background-color: $subtitleTV;
+  font-family: $montserratSemiBold;
+  color: $textWhite;
+  font-size: $fontSizeTv;
+  border: none;
+  outline: none !important;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.acept-button:hover {
+  background-color: $rollover;
+  border: solid 1px $rollover;
+}
+
+.schedule-remove {
+  font-size: 14px;
+  background: $colorWhite;
+  font-family: $montserratSemiBold;
+  text-transform: uppercase;
+  color: $scheduleButton;
+  border-radius: 50px;
+  border: 2px solid $scheduleButton;
+  padding: 7px 17px 7px 17px;
+}
+
+.schedule-remove span {
+  margin-left: 20px;
+}

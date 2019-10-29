@@ -445,6 +445,26 @@ $(document).ready(function () {
     }
   });
 
+  $("ul.lista-avatar li").click(function () {
+    $("ul.lista-avatar li").removeClass("active-navAvatar");
+    $(this).addClass("active-navAvatar");
+    $(".tv-content").hide();
+    var activeNav = $(this).attr("rel");
+    $("#" + activeNav).fadeIn();
+
+    if (activeNav == "concert-channel") {
+      tvConcertSlider.slick("refresh");
+    } else if (activeNav == "claro-canal") {
+      tvClaroSlider.slick("refresh");
+    } else if (activeNav == "claro-cinema") {
+      tvCinemaSlider.slick("refresh");
+    } else if (activeNav == "nuestra-vision") {
+      tvVisionSlider.slick("refresh");
+    } else if (activeNav == "claro-sports") {
+      tvSportsSlider.slick("refresh");
+    }
+  });
+
   $(".pro-content").hide();
   $(".pro-content:first").show();
 

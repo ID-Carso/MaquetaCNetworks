@@ -407,3 +407,48 @@
   width: 100%;
   left: 0;
 }
+
+.avatar-usuario {
+  margin-bottom: 15px;
+}
+
+.flechalink-alertas {
+  margin-left: 220px;
+}
+
+.flechalink-avatar {
+  margin-left: 145px;
+}
+
+.flechalink-datos {
+  margin-left: 125px;
+}
+
+.flechalink-lista {
+  margin-left: 226px;
+}
+
+.flechalink-config {
+  margin-left: 160px;
+}
+
+.ubicacionpuntos {
+  position: absolute;
+  top: 83%;
+  left: 88%;
+
+}
+
+.lista-avatar {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 9%;
+  max-width: calc(100vw - 35px);
+  margin: 0 auto 9% auto;
+}

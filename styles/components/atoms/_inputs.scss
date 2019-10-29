@@ -104,6 +104,13 @@ input[type="checkbox"]:checked+label::before {
   position: relative;
 }
 
+.tamaño3 {
+  width: 307px;
+  height: 41px;
+  margin: auto;
+  position: relative;
+}
+
 .pa-img {
   padding-bottom: 40px;
 }
@@ -122,6 +129,17 @@ input[type="checkbox"]:checked+label::before {
 }
 
 .switch::before {
+  display: none;
+}
+
+.switch-alert {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 20px;
+}
+
+.switch-alert::before {
   display: none;
 }
 
@@ -180,6 +198,55 @@ input:checked+.slider:before {
   border-radius: 50%;
 }
 
+
+/* The slider alert */
+.slideralert {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slideralert:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked+.slideralert {
+  background-color: #2196f3;
+}
+
+input:focus+.slideralert {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked+.slideralert:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders alert */
+.slideralert.roundalert {
+  border-radius: 34px;
+}
+
+.slideralert.roundalert:before {
+  border-radius: 50%;
+}
+
 .date-data {
   box-shadow: none;
   -webkit-appearance: none;
@@ -204,4 +271,17 @@ input:checked+.slider:before {
   color: $bluetxt;
   border-bottom: solid 2px $bluetxt;
   font-family: $montserratRegular;
+}
+
+.cuadro-dia {
+  width: 102px;
+  height: 50px;
+  margin: none;
+}
+
+.cuadro-fecha {
+  width: 307px;
+  height: 64px;
+  margin: auto;
+  display: flex;
 }

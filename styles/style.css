@@ -1173,6 +1173,77 @@ h6 {
           transform: rotate(-180deg);
 }
 
+.texto-alert {
+  font-family: "Montserrat-Regular";
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+  text-align: initial;
+}
+
+.titulos-configuraciones {
+  font-family: "Montserrat-SemiBold";
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #717272;
+  margin-top: 23px;
+}
+
+.texto-config {
+  font-family: "Montserrat-Regular";
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+  text-align: initial;
+}
+
+.texto-usuario-miperfil {
+  font-family: "Montserrat-Regular";
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+}
+
+.texto-sub-avatar {
+  font-family: "Montserrat-Regular";
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+}
+
+.texto-categorias {
+  font-family: "Montserrat-SemiBold";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+  text-align: initial;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -1366,6 +1437,76 @@ h6 {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   right: 0;
+}
+
+.tiempo {
+  width: 302px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.close-button {
+  width: 288px;
+  height: 44px;
+  border-radius: 21.5px;
+  outline: none !important;
+  background-color: #ffffff;
+  font-family: "Montserrat-SemiBold";
+  color: #717272;
+  font-size: 14px;
+  border: solid 1px #0fd7f2;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.close-button:hover {
+  background-color: #069cb0;
+  color: #ffffff;
+  border: solid 1px #069cb0;
+}
+
+.acept-button {
+  width: 288px;
+  height: 44px;
+  border-radius: 21.5px;
+  background-color: #0fd7f2;
+  font-family: "Montserrat-SemiBold";
+  color: #ffffff;
+  font-size: 14px;
+  border: none;
+  outline: none !important;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.acept-button:hover {
+  background-color: #069cb0;
+  border: solid 1px #069cb0;
+}
+
+.schedule-remove {
+  font-size: 14px;
+  background: #ffffff;
+  font-family: "Montserrat-SemiBold";
+  text-transform: uppercase;
+  color: #7b7979;
+  border-radius: 50px;
+  border: 2px solid #7b7979;
+  padding: 7px 17px 7px 17px;
+}
+
+.schedule-remove span {
+  margin-left: 20px;
 }
 
 /*Tamaño de textos - responsive*/
@@ -1888,6 +2029,50 @@ h6 {
   left: 0;
 }
 
+.avatar-usuario {
+  margin-bottom: 15px;
+}
+
+.flechalink-alertas {
+  margin-left: 220px;
+}
+
+.flechalink-avatar {
+  margin-left: 145px;
+}
+
+.flechalink-datos {
+  margin-left: 125px;
+}
+
+.flechalink-lista {
+  margin-left: 226px;
+}
+
+.flechalink-config {
+  margin-left: 160px;
+}
+
+.ubicacionpuntos {
+  position: absolute;
+  top: 83%;
+  left: 88%;
+}
+
+.lista-avatar {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 9%;
+  max-width: calc(100vw - 35px);
+  margin: 0 auto 9% auto;
+}
+
 .hr1 {
   display: none;
 }
@@ -2044,6 +2229,13 @@ input[type="checkbox"]:checked + label::before {
   position: relative;
 }
 
+.tamaño3 {
+  width: 307px;
+  height: 41px;
+  margin: auto;
+  position: relative;
+}
+
 .pa-img {
   padding-bottom: 40px;
 }
@@ -2062,6 +2254,17 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .switch::before {
+  display: none;
+}
+
+.switch-alert {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 20px;
+}
+
+.switch-alert::before {
   display: none;
 }
 
@@ -2120,6 +2323,54 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+/* The slider alert */
+.slideralert {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slideralert:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slideralert {
+  background-color: #2196f3;
+}
+
+input:focus + .slideralert {
+  -webkit-box-shadow: 0 0 1px #2196f3;
+          box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slideralert:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders alert */
+.slideralert.roundalert {
+  border-radius: 34px;
+}
+
+.slideralert.roundalert:before {
+  border-radius: 50%;
+}
+
 .date-data {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -2146,6 +2397,21 @@ input:checked + .slider:before {
   color: #14bef2;
   border-bottom: solid 2px #14bef2;
   font-family: "Montserrat-Regular";
+}
+
+.cuadro-dia {
+  width: 102px;
+  height: 50px;
+  margin: none;
+}
+
+.cuadro-fecha {
+  width: 307px;
+  height: 64px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .home-video {
@@ -2698,13 +2964,8 @@ This file is generated by `grunt build`, do not edit it by hand.
 }
 
 /* @end */
-.cuerpo {
-  margin: 0;
-  width: 100%;
-  background: #fff;
-}
-
-#select-lb {
+/*Lista desplegable de paises*/
+#select-Pais {
   width: 302px;
   height: 50px;
   border-radius: 25px;
@@ -2721,7 +2982,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   color: #666464;
 }
 
-#select-lb p {
+#select-Pais .SeleccionPaisLista {
   padding: 8px 10px;
   position: absolute;
   width: 100%;
@@ -2733,7 +2994,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   margin: 0;
 }
 
-#select-lb p:after {
+#select-Pais .SeleccionPaisLista:after {
   content: url(./../../../images/datos-adicionales/flechita.svg);
   position: absolute;
   width: 11.4px;
@@ -2754,7 +3015,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   margin-top: 5%;
 }
 
-ul {
+.ListaDesplegablePaises {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -2771,23 +3032,23 @@ ul {
   z-index: 2;
 }
 
-ul li {
+.ListaDesplegablePaises .option {
   padding: 5px 10px;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-ul li:hover {
+.ListaDesplegablePaises .option:hover {
   color: #666464;
   background: #eaeaea;
   border-radius: 12px;
 }
 
-#select:checked ~ #select-lb {
+#selectPais:checked ~ #select-Pais {
   overflow: visible;
 }
 
-#select:checked ~ #select-lb ul {
+#selectPais:checked ~ #select-Pais .ListaDesplegablePaises {
   height: 200px;
 }
 
@@ -2795,7 +3056,7 @@ label:before {
   display: none;
 }
 
-input[type=radio] {
+input[type="radio"] {
   display: none;
 }
 
@@ -2835,16 +3096,341 @@ input[type=radio] {
   display: inline-block;
 }
 
-input[type=radio]:checked + .hombre-estilo {
+input[type="radio"]:checked + .hombre-estilo {
   background: #03ad50;
   color: #fff;
   border: none;
 }
 
-input[type=radio]:checked + .mujer-estilo {
+input[type="radio"]:checked + .mujer-estilo {
   background: #03ad50;
   color: #fff;
   border: none;
+}
+
+.quince-estilo {
+  width: 151px;
+  height: 44px;
+  font-size: 16px;
+  font-family: "Montserrat-Regular";
+  color: #666464;
+  border-radius: 22px 0 0 21.5px;
+  border: solid 1px #666464;
+  border-right: #03ad50;
+  cursor: pointer;
+  overflow: hidden;
+  padding-top: 13px;
+  padding-left: 0px;
+  background: #fff;
+  outline: none !important;
+  display: inline-block;
+}
+
+.treinta-estilo {
+  width: 151px;
+  height: 44px;
+  font-size: 16px;
+  font-family: "Montserrat-Regular";
+  color: #666464;
+  border-radius: 0 22px 22px 0;
+  border: solid 1px #666464;
+  border-left: #03ad50;
+  cursor: pointer;
+  overflow: hidden;
+  padding-top: 13px;
+  padding-left: 0px;
+  background: #fff;
+  outline: none !important;
+  display: inline-block;
+}
+
+input[type="radio"]:checked + .treinta-estilo {
+  background: #03ad50;
+  color: #fff;
+  border: none;
+}
+
+input[type="radio"]:checked + .quince-estilo {
+  background: #03ad50;
+  color: #fff;
+  border: none;
+}
+
+input[type="radio"]:checked + .hombre-estilo {
+  background: #03ad50;
+  color: #fff;
+  border: none;
+}
+
+input[type="radio"]:checked + .mujer-estilo {
+  background: #03ad50;
+  color: #fff;
+  border: none;
+}
+
+/*Lista desplegable de dias*/
+#select-Dia {
+  width: 90px;
+  height: 50px;
+  border-radius: 25px;
+  border: solid 1px #ffffff;
+  background-color: #ffffff;
+  margin-top: 16px;
+  position: relative;
+  font-size: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  font-family: "Montserrat-Light";
+  font-size: 18px;
+  color: #666464;
+}
+
+#select-Dia .SeleccionDiaLista {
+  padding: 8px 10px;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  top: 10%;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+#select-Dia .SeleccionDiaLista:after {
+  content: url(./../../../images/datos-adicionales/flechita.svg);
+  position: absolute;
+  width: 11.4px;
+  height: 8px;
+  background: #fff;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5%;
+  margin-top: 15%;
+}
+
+.ListaDesplegableDias {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 200px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  list-style: none;
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin-top: 5%;
+  border: solid 1px #979797;
+  z-index: 2;
+}
+
+.ListaDesplegableDias .Dias {
+  padding: 5px 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.ListaDesplegableDias .Dias:hover {
+  color: #666464;
+  background: #eaeaea;
+  border-radius: 12px;
+}
+
+#selectDay:checked ~ #select-Dia {
+  overflow: visible;
+}
+
+#selectDay:checked ~ #select-Dia .ListaDesplegableDias {
+  height: 200px;
+}
+
+/*Lista desplegable de meses*/
+#select-Mes {
+  width: 90px;
+  height: 50px;
+  border-radius: 25px;
+  border: solid 1px #ffffff;
+  background-color: #ffffff;
+  margin-top: 16px;
+  position: relative;
+  font-size: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  font-family: "Montserrat-Light";
+  font-size: 18px;
+  color: #666464;
+}
+
+#select-Mes .SeleccionMesLista {
+  padding: 8px 10px;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  top: 10%;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+#select-Mes .SeleccionMesLista:after {
+  content: url(./../../../images/datos-adicionales/flechita.svg);
+  position: absolute;
+  width: 11.4px;
+  height: 8px;
+  background: #fff;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5%;
+  margin-top: 15%;
+}
+
+.ListaDesplegableMeses {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 200px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  list-style: none;
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin-top: 5%;
+  border: solid 1px #979797;
+  z-index: 2;
+}
+
+.ListaDesplegableMeses .Meses {
+  padding: 5px 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.ListaDesplegableMeses .Meses:hover {
+  color: #666464;
+  background: #eaeaea;
+  border-radius: 12px;
+}
+
+#selectMonth:checked ~ #select-Mes {
+  overflow: visible;
+}
+
+#selectMonth:checked ~ #select-Mes .ListaDesplegableMeses {
+  height: 200px;
+}
+
+/*Lista desplegable de años*/
+#select-Año {
+  width: 90px;
+  height: 50px;
+  border-radius: 25px;
+  border: solid 1px #ffffff;
+  background-color: #ffffff;
+  margin-top: 16px;
+  position: relative;
+  font-size: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  font-family: "Montserrat-Light";
+  font-size: 18px;
+  color: #666464;
+}
+
+#select-Año .SeleccionAñoLista {
+  padding: 8px 10px;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  top: 10%;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+#select-Año .SeleccionAñoLista:after {
+  content: url(./../../../images/datos-adicionales/flechita.svg);
+  position: absolute;
+  width: 11.4px;
+  height: 8px;
+  background: #fff;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5%;
+  margin-top: 15%;
+}
+
+.ListaDesplegableAños {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 200px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  list-style: none;
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin-top: 5%;
+  border: solid 1px #979797;
+  z-index: 2;
+}
+
+.ListaDesplegableAños .Años {
+  padding: 5px 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.ListaDesplegableAños .Años:hover {
+  color: #666464;
+  background: #eaeaea;
+  border-radius: 12px;
+}
+
+#selectYear:checked ~ #select-Año {
+  overflow: visible;
+}
+
+#selectYear:checked ~ #select-Año .ListaDesplegableAños {
+  height: 200px;
+}
+
+.border-config {
+  border-bottom: solid 1px #a6a8a8;
 }
 
 .large-poster-width {
@@ -3066,6 +3652,25 @@ input[type=radio]:checked + .mujer-estilo {
 .vision-active,
 .sports-active {
   background: #bd2c2c;
+}
+
+.active-navAvatar {
+  position: relative;
+  -webkit-filter: none;
+          filter: none;
+  opacity: 1;
+}
+
+.active-navAvatar::after {
+  content: "";
+  border-width: 8px;
+  border-style: solid;
+  border-color: #ff0007 transparent transparent transparent;
+  position: absolute;
+  left: 50%;
+  top: -17%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 /*Tamaño de textos - responsive*/
@@ -3730,6 +4335,16 @@ input[type=radio]:checked + .mujer-estilo {
 .marca-header .nav-content {
   margin: 0px;
   position: relative;
+}
+
+.menu-perfil {
+  background: #4dd0e1;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  max-height: 63px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .section-home-footer {

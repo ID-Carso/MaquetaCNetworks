@@ -70,6 +70,7 @@
   0% {
     margin-left: -130%;
   }
+
   100% {
     margin-left: 0%;
   }
@@ -96,4 +97,21 @@
 .vision-active,
 .sports-active {
   background: $calendarActiveItem;
+}
+
+.active-navAvatar {
+  position: relative;
+  filter: none;
+  opacity: 1;
+}
+
+.active-navAvatar::after {
+  content: "";
+  border-width: 8px;
+  border-style: solid;
+  border-color: #ff0007 transparent transparent transparent;
+  position: absolute;
+  left: 50%;
+  top: -17%;
+  transform: translate(-50%, 0);
 }

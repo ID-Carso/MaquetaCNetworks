@@ -922,3 +922,76 @@
 .arrow-up {
   transform: rotate(-180deg);
 }
+
+.texto-alert {
+  font-family: $montserratRegular;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+  text-align: initial;
+
+
+}
+
+.titulos-configuraciones {
+  font-family: $montserratSemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #717272;
+  margin-top: 23px;
+}
+
+.texto-config {
+  font-family: $montserratRegular;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+  text-align: initial;
+}
+
+.texto-usuario-miperfil {
+  font-family: $montserratRegular;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+}
+
+.texto-sub-avatar {
+  font-family: $montserratRegular;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+}
+
+.texto-categorias {
+  font-family: $montserratSemiBold;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+  text-align: initial;
+}
