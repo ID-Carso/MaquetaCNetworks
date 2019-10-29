@@ -241,11 +241,14 @@ $(document).ready(function() {
   });*/
 
   var section_slider = $(".section-slider").slick({
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     infinite: true,
     dots: true,
     centerMode: false,
+    arrows: true,
+    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
 
     responsive: [
       {
@@ -302,31 +305,19 @@ $(document).ready(function() {
           nextArrow:
             '<img src="../images/sliders/next.png" class="arrow-next" />'
         }
-      },
-      {
-        breakpoint: 2400,
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
       }
     ]
   });
 
   var sport_slider = $(".sports-slider").slick({
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     infinite: true,
     dots: true,
     centerMode: false,
+    arrows: true,
+    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
 
     responsive: [
       {
@@ -383,26 +374,11 @@ $(document).ready(function() {
           nextArrow:
             '<img src="../images/sliders/next.png" class="arrow-next" />'
         }
-      },
-      {
-        breakpoint: 2400,
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
       }
     ]
   });
 
-  var header_slider = $(".concert-header-slider").slick({
+  var header_slider = $(".header-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: false,
@@ -434,6 +410,14 @@ $(document).ready(function() {
   });
 
   var tv_slider = $(".tv-slider").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: true,
+    centerMode: false,
+    arrows: true,
+    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-tv-prev" />',
+    nextArrow: '<img src="../images/sliders/next.png" class="arrow-tv-next" />',
     responsive: [
       {
         breakpoint: 768,
@@ -478,21 +462,6 @@ $(document).ready(function() {
         breakpoint: 1900,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-tv-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-tv-next" />'
-        }
-      },
-      {
-        breakpoint: 2400,
-        settings: {
-          slidesToShow: 5,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -545,7 +514,7 @@ $(document).ready(function() {
         }
       },
       {
-        breakpoint: 2000,
+        breakpoint: 6000,
         settings: {
           slidesToShow: 5,
           slidesToScroll: 1,

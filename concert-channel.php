@@ -97,7 +97,53 @@
                     </div>
                 </div>
             </nav>
-            <div class="concert-header-slider">
+            <nav class="menu-desktop">
+                <div class="nav-content">
+                    <div class="claro-logo">
+                        <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
+
+                        <img class="logo" src="./images/home/claro-logo.png" alt="" />
+                    </div>
+
+                    <div class="login">
+                        <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
+                        <a href="paises.html" class="login-item"><img src="./images/home/pais.svg" alt="" /></a>
+                    </div>
+                </div>
+                <div class="claro-navbar">
+                    <div>
+                        <a href="claro-canal.php" class="navbar-link text-decoration-none">
+                            <p class="navbar-item">Canal Claro</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="navbar-link text-decoration-none">
+                            <p class="navbar-item">Concert Channel</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="navbar-link text-decoration-none">
+                            <p class="navbar-item">Claro Cinema</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="navbar-link text-decoration-none">
+                            <p class="navbar-item">Nuestra Visión</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="navbar-link text-decoration-none">
+                            <p class="navbar-item">Claro Sports</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="navbar-link text-decoration-none">
+                            <p class="navbar-item">Programación</p>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-slider">
                 <div class="concert-slide">
                     <img src="./images/concert-channel/header-image.jpeg" alt="">
                 </div>
@@ -113,9 +159,37 @@
             <div>
                 <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
             </div>
-            <div class="today-videos-container">
+            <div class="today-concert-videos-container">
                 <div class="section-slider concert-slider">
 
+                    <div class="poster">
+                        <div class="thumbnail">
+                            <div class="showtime-container">
+                                <p class="a-programming-text">14:30 - 16:30</p>
+                            </div>
+                        </div>
+                        <div class="a-concert-rectangle">
+                            <div class="poster-title-margin">
+                                <p class="a-poster-text-white">
+                                    ¿QUÉ TE HA DADO ESA MUJER?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <div class="thumbnail">
+                            <div class="showtime-container">
+                                <p class="a-programming-text">14:30 - 16:30</p>
+                            </div>
+                        </div>
+                        <div class="a-concert-rectangle">
+                            <div class="poster-title-margin">
+                                <p class="a-poster-text-white">
+                                    ¿QUÉ TE HA DADO ESA MUJER?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="poster">
                         <div class="thumbnail">
                             <div class="showtime-container">
@@ -184,6 +258,34 @@
             <div class="week-videos-container">
                 <div class="week-videos-mobile">
                     <div class="section-slider concert-slider">
+                        <div class="poster">
+                            <div class="thumbnail">
+                                <div class="showtime-container">
+                                    <p class="a-programming-text">14:30 - 16:30</p>
+                                </div>
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="poster">
+                            <div class="thumbnail">
+                                <div class="showtime-container">
+                                    <p class="a-programming-text">14:30 - 16:30</p>
+                                </div>
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="poster">
                             <div class="thumbnail">
                                 <div class="showtime-container">
@@ -380,6 +482,34 @@
                             </div>
                         </div>
                     </div>
+                    <div class="poster">
+                        <div class="thumbnail">
+                            <div class="showtime-container">
+                                <p class="a-programming-text">14:30 - 16:30</p>
+                            </div>
+                        </div>
+                        <div class="a-concert-rectangle">
+                            <div class="poster-title-margin">
+                                <p class="a-poster-text-white">
+                                    ¿QUÉ TE HA DADO ESA MUJER?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <div class="thumbnail">
+                            <div class="showtime-container">
+                                <p class="a-programming-text">14:30 - 16:30</p>
+                            </div>
+                        </div>
+                        <div class="a-concert-rectangle">
+                            <div class="poster-title-margin">
+                                <p class="a-poster-text-white">
+                                    ¿QUÉ TE HA DADO ESA MUJER?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -461,6 +591,34 @@
                             </div>
                         </div>
                     </div>
+                    <div class="poster">
+                        <div class="thumbnail">
+                            <div class="showtime-container">
+                                <p class="a-programming-text">14:30 - 16:30</p>
+                            </div>
+                        </div>
+                        <div class="a-concert-rectangle">
+                            <div class="poster-title-margin">
+                                <p class="a-poster-text-white">
+                                    ¿QUÉ TE HA DADO ESA MUJER?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <div class="thumbnail">
+                            <div class="showtime-container">
+                                <p class="a-programming-text">14:30 - 16:30</p>
+                            </div>
+                        </div>
+                        <div class="a-concert-rectangle">
+                            <div class="poster-title-margin">
+                                <p class="a-poster-text-white">
+                                    ¿QUÉ TE HA DADO ESA MUJER?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -471,7 +629,7 @@
         <div class="">
             <div class="row no-gutters">
                 <div class="col-10 mx-auto">
-                    <h1 class="footer-title">sígue a concert channel</h1>
+                    <h1 class="footer-title">¡sígue a <br>concert channel!</h1>
                 </div>
                 <div class="social-media">
                     <div class="col ">

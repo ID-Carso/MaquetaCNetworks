@@ -25,7 +25,7 @@
     <div class="advertising-section-tablet">
         <div class="col-lg-10 m-auto">
             <div class="row">
-                <div class="col-5 m-auto">
+                <div class="col-6 m-auto">
                     <div class="adv-headline-mb">
                         <h1 class="advertising-title">Disfruta</h1>
                         <h2 class="advertising-subtitle">La mejor programación</h2>
@@ -38,7 +38,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-7 no-gutters">
+                <div class="col-6 no-gutters">
                     <img src="./images/home/planes-copy.png" class="advertising-image" />
                 </div>
             </div>

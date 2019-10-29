@@ -155,7 +155,7 @@
           </div>
           <img src="./images/claro-canal/claro-canal-logo.svg" alt="" />
         </div>-->
-      <div class="claro-header-slider">
+      <div class="header-slider">
         <div class="claro-slide">
           <img src="./images/concert-channel/header-image.jpeg" alt="">
         </div>
@@ -171,113 +171,116 @@
     <section class="today-canal-claro">
       <div class="today-container">
         <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
-        <div class="section-slider" id="today-claro-slider">
-          <div class="poster">
-            <div class="claro-thumbnail">
-              <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
+        <div class="today-videos-container">
+          <div class="section-slider" id="today-claro-slider">
+            <div class="poster">
+              <div class="claro-thumbnail">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                </div>
+              </div>
+              <div class="a-claro-rectangle ">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-white">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="a-claro-rectangle ">
-              <div class="poster-title-margin">
-                <p class="a-poster-text-white">
-                  ¿QUÉ TE HA DADO ESA MUJER?
-                </p>
-              </div>
-            </div>
-          </div>
 
 
-          <div class="poster">
-            <div class="claro-thumbnail">
-              <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
+            <div class="poster">
+              <div class="claro-thumbnail">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                </div>
+              </div>
+              <div class="a-claro-rectangle ">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-white">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="a-claro-rectangle ">
-              <div class="poster-title-margin">
-                <p class="a-poster-text-white">
-                  ¿QUÉ TE HA DADO ESA MUJER?
-                </p>
+            <div class="poster">
+              <div class="claro-thumbnail">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                </div>
+              </div>
+              <div class="a-claro-rectangle ">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-white">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="poster">
-            <div class="claro-thumbnail">
-              <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
+            <div class="poster">
+              <div class="claro-thumbnail">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                </div>
+              </div>
+              <div class="a-claro-rectangle ">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-white">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="a-claro-rectangle ">
-              <div class="poster-title-margin">
-                <p class="a-poster-text-white">
-                  ¿QUÉ TE HA DADO ESA MUJER?
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="poster">
-            <div class="claro-thumbnail">
-              <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
-              </div>
-            </div>
-            <div class="a-claro-rectangle ">
-              <div class="poster-title-margin">
-                <p class="a-poster-text-white">
-                  ¿QUÉ TE HA DADO ESA MUJER?
-                </p>
-              </div>
-            </div>
-          </div>
 
 
-          <div class="poster">
-            <div class="claro-thumbnail">
-              <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
+            <div class="poster">
+              <div class="claro-thumbnail">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                </div>
+              </div>
+              <div class="a-claro-rectangle ">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-white">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="a-claro-rectangle ">
-              <div class="poster-title-margin">
-                <p class="a-poster-text-white">
-                  ¿QUÉ TE HA DADO ESA MUJER?
-                </p>
-              </div>
-            </div>
-          </div>
 
 
-          <div class="poster">
-            <div class="claro-thumbnail">
-              <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
+            <div class="poster">
+              <div class="claro-thumbnail">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                </div>
+              </div>
+              <div class="a-claro-rectangle ">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-white">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="a-claro-rectangle ">
-              <div class="poster-title-margin">
-                <p class="a-poster-text-white">
-                  ¿QUÉ TE HA DADO ESA MUJER?
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <div class="poster">
-            <div class="claro-thumbnail">
-              <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
+            <div class="poster">
+              <div class="claro-thumbnail">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                </div>
               </div>
-            </div>
-            <div class="a-claro-rectangle ">
-              <div class="poster-title-margin">
-                <p class="a-poster-text-white">
-                  ¿QUÉ TE HA DADO ESA MUJER?
-                </p>
+              <div class="a-claro-rectangle ">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-white">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
 
 
       </div>

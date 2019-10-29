@@ -78,6 +78,7 @@
         </div>
 
         <div class="header">
+
             <nav class="menu">
                 <div class="nav-content">
                     <div class="claro-logo">
@@ -105,44 +106,45 @@
                         <a href="paises.html" class="login-item"><img class="login-country" src="" alt="" /></a>
                     </div>
                 </div>
+                <div class="claro-navbar">
+                    <div>
+                        <a href="claro-canal.php" class="navbar-link text-decoration-none">
+                            <p class="navbar-item">Canal Claro</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="navbar-link text-decoration-none">
+                            <p class="navbar-item">Concert Channel</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="navbar-link text-decoration-none">
+                            <p class="navbar-item">Claro Cinema</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="navbar-link text-decoration-none">
+                            <p class="navbar-item">Nuestra Visión</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="navbar-link text-decoration-none">
+                            <p class="navbar-item">Claro Sports</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="navbar-link text-decoration-none">
+                            <p class="navbar-item">Programación</p>
+                        </a>
+                    </div>
+                </div>
             </nav>
-            <div class="claro-navbar">
-                <div>
-                    <a href="claro-canal.php" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Canal Claro</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Concert Channel</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Claro Cinema</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Nuestra Visión</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Claro Sports</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Programación</p>
-                    </a>
-                </div>
-            </div>
+
             <div class="header-details header-detail-margin col-md-6">
                 <h1 class="header-h1">
-                    Re <span class="header-span">Descubre</span>
+                    <span class="header-span">Descubre<br>Claro<br></span>Networks
                 </h1>
-                <h1 class="header-h1"><span class="header-span">Claro </span>tv</h1>
+
             </div>
         </div>
     </header>
@@ -1375,6 +1377,7 @@
             <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                 <div class="m-home-titles">
                     <h1 class="a-concert-channel-title">CONCERT CHANNEL</h1>
+                    <h2 class="text-white a-subtitle">Conciertos, entrevistas y mucho más</h2>
                 </div>
                 <div class="m-see-more">
                     <a href="concert-channel.php"><button class="btn-pink">
@@ -1383,11 +1386,8 @@
                 </div>
             </div>
             <div class="row no-gutters">
-                <div class="col-md-4 col-xl-6">
-                    <p class="a-concert-subtitle concert-first-subtitle">Conciertos</p>
-                    <p class="a-concert-subtitle concert-second-subtitle">Entrevistas y mucho más</p>
-                </div>
-                <div class="col-md-8 col-xl-6">
+
+                <div class="col-md-8 col-xl-6 ml-auto">
                     <div class="row poster-pad-b">
                         <div class="col poster-pad-r poster-section">
                             <div class="poster">
