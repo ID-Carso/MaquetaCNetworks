@@ -99,38 +99,9 @@
                     </div>
                 </div>
             </nav>
-            <div class="claro-navbar">
-                <div>
-                    <a href="claro-canal.php" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Canal Claro</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Concert Channel</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Claro Cinema</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Nuestra Visión</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Claro Sports</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Programación</p>
-                    </a>
-                </div>
-            </div>
+            <?php 
+                include 'menu-desktop.php';
+            ?>
         </div>
     </header>
     <div class="pro-container">
@@ -169,7 +140,7 @@
 
                 <div id="claro-canal" class="tv-content">
                     <div class="no-gutters">
-                        <div class="col-11 mx-auto">
+                        <div class="programacion-date-container">
                             <p class="month">Octubre 2019</p>
                             <ul class="claro-calendar">
                                 <div class="programacion-slider" id="pro-claro-slider">
@@ -367,174 +338,126 @@
 
                     <div id="claro-01" class="claro-content">
                         <div class="no-gutters">
-                            <div class="col-10 mx-auto">
-                                <div class="schedule-container">
+                            <div class="">
 
-                                    <div class="poster">
-                                        <div class="thumbnail">
-                                            <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                        </div>
-                                        <div class="a-concert-rectangle">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams Tour</p>
+                                <div class="schedule-container">
+                                    <p class="schedule-title">Coldplay</p>
+                                    <div class="schedule-item-body">
+                                        <div class="schedule-poster">
+                                            <div class="poster">
+                                                <div class="thumbnail-prog">
+                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="schedule-details">
-                                        <div class="d-flex info-schedule align-items-center justify-content-between">
+
+                                        <div class="schedule-details">
                                             <div>
                                                 <p class="schedule">10:00 - 10:30 pm</p>
-                                                <p class="schedule-days">Lunes a Viernes</p>
-                                            </div>
-                                            <div>
-                                                <button class="schedule-add" type="button">añadir <span>+</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
-
-                                            <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
                                             </div>
-                                            <div class="col-6 d-flex align-items-center justify-content-between">
-                                                <p class="rating-alert">ALERTAS</p>
-                                                <label class="switch-alert">
-                                                    <input type="checkbox">
-                                                    <span class="slideralert roundalert"></span>
-                                                </label>
+                                            <div>
+                                                <button class="schedule-add" type="button">
+                                                    <p class="schedule-add-text">añadir a mi lista</p> <img
+                                                        src="./images/programacion/plus.svg"
+                                                        class="schedule-add-icon" />
+                                                </button>
                                             </div>
-
 
                                         </div>
                                     </div>
+
                                 </div>
                                 <div class="schedule-container">
-                                    <div class="poster">
-                                        <div class="thumbnail">
-                                            <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                        </div>
-                                        <div class="a-concert-rectangle">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams Tour</p>
+                                    <p class="schedule-title">Coldplay</p>
+                                    <div class="schedule-item-body">
+                                        <div class="schedule-poster">
+                                            <div class="poster">
+                                                <div class="thumbnail-prog">
+                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="schedule-details">
-                                        <div class="d-flex info-schedule align-items-center justify-content-between">
+
+                                        <div class="schedule-details">
                                             <div>
                                                 <p class="schedule">10:00 - 10:30 pm</p>
-                                                <p class="schedule-days">Lunes a Viernes</p>
-                                            </div>
-                                            <div>
-                                                <button class="schedule-add" type="button">añadir <span>+</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
-
-                                            <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
                                             </div>
-                                            <div class="col-6 d-flex align-items-center justify-content-between">
-                                                <p class="rating-alert">ALERTAS</p>
-                                                <label class="switch-alert">
-                                                    <input type="checkbox">
-                                                    <span class="slideralert roundalert"></span>
-                                                </label>
+                                            <div>
+                                                <button class="schedule-add" type="button">
+                                                    <p class="schedule-add-text">añadir a mi lista</p> <img
+                                                        src="./images/programacion/plus.svg"
+                                                        class="schedule-add-icon" />
+                                                </button>
                                             </div>
-
 
                                         </div>
                                     </div>
+
                                 </div>
                                 <div class="schedule-container">
-                                    <div class="poster">
-                                        <div class="thumbnail">
-                                            <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                        </div>
-                                        <div class="a-concert-rectangle">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams Tour</p>
+                                    <p class="schedule-title">Coldplay</p>
+                                    <div class="schedule-item-body">
+                                        <div class="schedule-poster">
+                                            <div class="poster">
+                                                <div class="thumbnail-prog">
+                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="schedule-details">
-                                        <div class="d-flex info-schedule align-items-center justify-content-between">
+
+                                        <div class="schedule-details">
                                             <div>
                                                 <p class="schedule">10:00 - 10:30 pm</p>
-                                                <p class="schedule-days">Lunes a Viernes</p>
-                                            </div>
-                                            <div>
-                                                <button class="schedule-add" type="button">añadir <span>+</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
-
-                                            <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
                                             </div>
-                                            <div class="col-6 d-flex align-items-center justify-content-between">
-                                                <p class="rating-alert">ALERTAS</p>
-                                                <label class="switch-alert">
-                                                    <input type="checkbox">
-                                                    <span class="slideralert roundalert"></span>
-                                                </label>
+                                            <div>
+                                                <button class="schedule-add" type="button">
+                                                    <p class="schedule-add-text">añadir a mi lista</p> <img
+                                                        src="./images/programacion/plus.svg"
+                                                        class="schedule-add-icon" />
+                                                </button>
                                             </div>
-
 
                                         </div>
                                     </div>
+
                                 </div>
                                 <div class="schedule-container">
-                                    <div class="poster">
-                                        <div class="thumbnail">
-                                            <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                        </div>
-                                        <div class="a-concert-rectangle">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams Tour</p>
+                                    <p class="schedule-title">Coldplay</p>
+                                    <div class="schedule-item-body">
+                                        <div class="schedule-poster">
+                                            <div class="poster">
+                                                <div class="thumbnail-prog">
+                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="schedule-details">
-                                        <div class="d-flex info-schedule align-items-center justify-content-between">
+
+                                        <div class="schedule-details">
                                             <div>
                                                 <p class="schedule">10:00 - 10:30 pm</p>
-                                                <p class="schedule-days">Lunes a Viernes</p>
-                                            </div>
-                                            <div>
-                                                <button class="schedule-add" type="button">añadir <span>+</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
-
-                                            <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
                                             </div>
-                                            <div class="col-6 d-flex align-items-center justify-content-between">
-                                                <p class="rating-alert">ALERTAS</p>
-                                                <label class="switch-alert">
-                                                    <input type="checkbox">
-                                                    <span class="slideralert roundalert"></span>
-                                                </label>
+                                            <div>
+                                                <button class="schedule-add" type="button">
+                                                    <p class="schedule-add-text">añadir a mi lista</p> <img
+                                                        src="./images/programacion/plus.svg"
+                                                        class="schedule-add-icon" />
+                                                </button>
                                             </div>
-
 
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div id="claro-02" class="claro-content">
                         <div class="no-gutters">
-                            <div class="col-10 mx-auto">
+                            <div class="">
                                 <div class="schedule-container">
                                     <div class="poster">
                                         <div class="thumbnail">
@@ -699,9 +622,8 @@
                 </div>
 
                 <div id="concert-channel" class="tv-content">
-
                     <div class="no-gutters">
-                        <div class="col-11 mx-auto">
+                        <div class="">
                             <ul class="concert-calendar">
                                 <p class="month">Febrero 2019</p>
                                 <div class="programacion-slider" id="pro-concert-slider">
@@ -882,7 +804,7 @@
 
                     <div id="concert-01" class="concert-content">
                         <div class="no-gutters">
-                            <div class="col-10 mx-auto">
+                            <div class="">
                                 <div class="schedule-container">
                                     <div class="poster">
                                         <div class="thumbnail">
@@ -1048,7 +970,7 @@
                     </div>
                     <div id="concert-02" class="concert-content">
                         <div class="no-gutters">
-                            <div class="col-10 mx-auto">
+                            <div class="">
                                 <div class="schedule-container">
                                     <div class="poster">
                                         <div class="thumbnail">
@@ -1215,7 +1137,7 @@
                 <!--Claro cinema de "Ahora en tv"-->
                 <div id="claro-cinema" class="tv-content">
                     <div class="no-gutters">
-                        <div class="col-11 mx-auto">
+                        <div class="">
                             <ul class="cinema-calendar">
                                 <p class="month">Junio 2019</p>
                                 <div class="programacion-slider" id="pro-concert-slider">
@@ -1279,7 +1201,7 @@
                     </div>
                     <div id="cinema-01" class="cinema-content">
                         <div class="no-gutters">
-                            <div class="col-10 mx-auto">
+                            <div class="">
                                 <div class="schedule-container">
                                     <div class="poster">
                                         <div class="thumbnail">
@@ -1444,7 +1366,7 @@
 
                     <div id="cinema-02" class="cinema-content">
                         <div class="no-gutters">
-                            <div class="col-10 mx-auto">
+                            <div class="">
                                 <div class="schedule-container">
                                     <div class="poster">
                                         <div class="thumbnail">
@@ -1612,7 +1534,7 @@
                 <!--Nuestra visión de "Ahora en tv"-->
                 <div id="nuestra-vision" class="tv-content">
                     <div class="no-gutters">
-                        <div class="col-11 mx-auto">
+                        <div class="">
                             <ul class="vision-calendar">
                                 <p class="month">Junio 2019</p>
                                 <div class="programacion-slider" id="pro-concert-slider">
@@ -1676,7 +1598,7 @@
                     </div>
                     <div id="vision-01" class="vision-content">
                         <div class="no-gutters">
-                            <div class="col-10 mx-auto">
+                            <div class="">
                                 <div class="schedule-container">
                                     <div class="poster">
                                         <div class="thumbnail">
@@ -1840,7 +1762,7 @@
                     </div>
                     <div id="vision-02" class="vision-content">
                         <div class="no-gutters">
-                            <div class="col-10 mx-auto">
+                            <div class="">
                                 <div class="schedule-container">
                                     <div class="poster">
                                         <div class="thumbnail">
@@ -2007,7 +1929,7 @@
                 <!--Claro sports de "Ahora en tv"-->
                 <div id="claro-sports" class="tv-content">
                     <div class="no-gutters">
-                        <div class="col-11 mx-auto">
+                        <div class="">
                             <ul class="sports-calendar">
                                 <p class="month">Junio 2019</p>
                                 <div class="programacion-slider" id="pro-concert-slider">
@@ -2071,7 +1993,7 @@
                     </div>
                     <div id="sports-01" class="sports-content">
                         <div class="no-gutters">
-                            <div class="col-10 mx-auto">
+                            <div class="">
                                 <div class="schedule-container">
                                     <div class="poster">
                                         <div class="thumbnail">
@@ -2235,7 +2157,7 @@
                     </div>
                     <div id="sports-02" class="sports-content">
                         <div class="no-gutters">
-                            <div class="col-10 mx-auto">
+                            <div class="">
                                 <div class="schedule-container">
                                     <div class="poster">
                                         <div class="thumbnail">

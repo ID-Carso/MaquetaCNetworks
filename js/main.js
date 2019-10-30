@@ -384,20 +384,7 @@ $(document).ready(function() {
     infinite: false,
     dots: true,
     centerMode: false,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: false
-        }
-      }
-    ]
+    arrows: false
   });
 
   var claro_slider = $(".claro-header-slider").slick({
@@ -639,7 +626,7 @@ $(document).ready(function() {
     }
   });
 
-  $("ul.lista-avatar li").click(function () {
+  $("ul.lista-avatar li").click(function() {
     $("ul.lista-avatar li").removeClass("active-navAvatar");
     $(this).addClass("active-navAvatar");
     $(".tv-content").hide();

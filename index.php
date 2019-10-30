@@ -78,7 +78,6 @@
         </div>
 
         <div class="header">
-
             <nav class="menu">
                 <div class="nav-content">
                     <div class="claro-logo">
@@ -113,12 +112,12 @@
                         </a>
                     </div>
                     <div>
-                        <a href="#" class="navbar-link text-decoration-none">
+                        <a href="concert-channel.php" class="navbar-link text-decoration-none">
                             <p class="navbar-item">Concert Channel</p>
                         </a>
                     </div>
                     <div>
-                        <a href="#" class="navbar-link text-decoration-none">
+                        <a href="claro-cinema.php" class="navbar-link text-decoration-none">
                             <p class="navbar-item">Claro Cinema</p>
                         </a>
                     </div>
@@ -128,12 +127,12 @@
                         </a>
                     </div>
                     <div>
-                        <a href="#" class="navbar-link text-decoration-none">
+                        <a href="claro-sports.html" class="navbar-link text-decoration-none">
                             <p class="navbar-item">Claro Sports</p>
                         </a>
                     </div>
                     <div>
-                        <a href="#" class="navbar-link text-decoration-none">
+                        <a href="programacion.php" class="navbar-link text-decoration-none">
                             <p class="navbar-item">Programación</p>
                         </a>
                     </div>
@@ -1046,7 +1045,7 @@
 
             <div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
                 <div>
-                    <img class="concert-footer-img" src="./images/home/claro-home-img.svg" alt="">
+                    <img class="concert-footer-img" src="./images/home/tv-1.svg" alt="">
                 </div>
                 <div>
                     <p class="horario-text text-dark">

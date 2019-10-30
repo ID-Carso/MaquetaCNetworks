@@ -104,14 +104,16 @@
 }
 
 .schedule-add {
-  font-size: 14px;
+  font-size: 10px;
   background: $colorWhite;
   font-family: $montserratSemiBold;
   text-transform: uppercase;
   color: $scheduleButton;
   border-radius: 50px;
   border: 2px solid $scheduleButton;
-  padding: 7px 17px 7px 17px;
+  padding: 7px 11px;
+  display: flex;
+  align-items: center;
 }
 
 .schedule-add span {
@@ -150,7 +152,6 @@
   border: none;
   display: flex;
 }
-
 
 .synopsis-button {
   border-radius: 20px;

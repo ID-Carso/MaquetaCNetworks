@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 html,
 body {
   height: 100%;
@@ -80,11 +79,11 @@ h6 {
 }
 
 .poster-pad-l {
-  padding-left: 6px;
+  padding-left: 6px !important;
 }
 
 .poster-pad-r {
-  padding-right: 6px;
+  padding-right: 6px !important;
 }
 
 .poster-margin-r {
@@ -217,42 +216,16 @@ h6 {
   src: url(../../../fonts/Montserrat-Black.ttf);
 }
 
-.a-our-vision-title,
-.a-claro-channel-title,
-.a-concert-channel-title,
-.a-concert-channel-subtitle,
-.a-claro-channel-subtitle-bold,
-.a-subtitle,
-.a-claro-cinema-title,
-.advertising-title,
-.advertising-subtitle,
-.a-claro-sports-title,
-.a-claro-channel-subtitle,
+.a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-concert-channel-subtitle, .a-claro-channel-subtitle-bold, .a-subtitle, .a-claro-cinema-title, .advertising-title, .advertising-subtitle, .a-claro-sports-title, .a-claro-channel-subtitle,
 .a-claro-cinema-subtitle,
 .a-our-vision-subtitle,
-.a-claro-sports-subtitle,
-.poster-title-sport,
-.footer-title,
-.footer-title-claro,
-.our-channels-title,
-.a-today-claro-title,
-.a-today-cinema-title,
-.a-next-claro-title,
-.a-next-claro-subtitle,
-.a-dontLose-claro-subtitle,
-.a-dontLose-claro-title,
-.today-concert-title,
-.concert-title,
-.concert-subtitle,
-.a-cinema-title,
-.a-cinema-subtitle {
+.a-claro-sports-subtitle, .poster-title-sport, .footer-title, .footer-title-claro, .our-channels-title, .a-today-claro-title,
+.a-today-cinema-title, .a-next-claro-title, .a-next-claro-subtitle, .a-dontLose-claro-subtitle, .a-dontLose-claro-title, .today-concert-title, .concert-title, .concert-subtitle, .a-cinema-title, .a-cinema-subtitle {
   text-align: center;
   text-transform: uppercase;
 }
 
-.a-sports-text-poster,
-.a-poster-text-white,
-.a-poster-text-black {
+.a-sports-text-poster, .a-poster-text-white, .a-poster-text-black {
   font-family: "Gotham-Medium";
   padding: 6px;
 }
@@ -343,12 +316,16 @@ h6 {
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .a-poster-text-black {
   font-size: 14px;
   color: #000000;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .advertising-title {
@@ -552,11 +529,9 @@ h6 {
     font-size: 20px;
     margin: px auto 74px auto;
   }
-
   .pie_paises {
     font-size: 12px;
   }
-
   .name_paises {
     font-size: 18px;
   }
@@ -643,15 +618,15 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .hola {
@@ -1071,11 +1046,20 @@ h6 {
 }
 
 .schedule,
-.schedule-days,
-.rating-alert,
 .rating {
   font-family: "Montserrat-SemiBold";
-  font-size: 14px;
+}
+
+.schedule {
+  font-size: 12px;
+}
+
+.rating {
+  font-size: 10px;
+}
+
+.schedule-add-text {
+  margin-bottom: 0;
 }
 
 .rating,
@@ -1083,6 +1067,12 @@ h6 {
 .schedule,
 .schedule-days {
   margin-bottom: 0px;
+}
+
+.schedule-title {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-family: "Montserrat-Black";
 }
 
 .month {
@@ -1192,9 +1182,9 @@ h6 {
   height: 8px;
   pointer-events: none;
   -webkit-transform-origin: 66% 66%;
-  transform-origin: 66% 66%;
+          transform-origin: 66% 66%;
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+          transform: rotate(45deg);
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
   width: 8px;
@@ -1203,7 +1193,7 @@ h6 {
 
 .dropdownCountry-icon {
   -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
+          transform: rotate(0deg);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   margin-bottom: 0;
@@ -1211,7 +1201,7 @@ h6 {
 
 .arrow-up {
   -webkit-transform: rotate(-180deg);
-  transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .texto-alert {
@@ -1292,10 +1282,7 @@ h6 {
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
-.btn-red,
-.btn-blue,
-.btn-pink,
-.btn-purple {
+.btn-red, .btn-blue, .btn-pink, .btn-purple {
   color: #ffffff;
   padding: 10px 38px;
   border-radius: 50px;
@@ -1338,7 +1325,7 @@ h6 {
   background: none;
   border: none;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   border-radius: 0;
   outline: none !important;
 }
@@ -1393,14 +1380,20 @@ h6 {
 }
 
 .schedule-add {
-  font-size: 14px;
+  font-size: 10px;
   background: #ffffff;
   font-family: "Montserrat-SemiBold";
   text-transform: uppercase;
   color: #7b7979;
   border-radius: 50px;
   border: 2px solid #7b7979;
-  padding: 7px 17px 7px 17px;
+  padding: 7px 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .schedule-add span {
@@ -1456,7 +1449,7 @@ h6 {
 .synopsis-button img {
   width: 15px;
   -webkit-filter: invert(1);
-  filter: invert(1);
+          filter: invert(1);
 }
 
 .synopsis-add {
@@ -1469,8 +1462,8 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   padding-right: 40px;
 }
@@ -1483,7 +1476,7 @@ h6 {
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+          transform: translate(0, -50%);
   right: 0;
 }
 
@@ -1559,20 +1552,16 @@ h6 {
 
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
-.a-cinema-rectangle,
-.a-sports-rectangle,
-.a-concert-rectangle,
-.a-claro-rectangle,
-.a-vision-rectangle {
+.a-cinema-rectangle, .a-sports-rectangle, .a-concert-rectangle, .a-claro-rectangle, .a-vision-rectangle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 52px;
 }
 
@@ -1636,11 +1625,11 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*Canal claro*/
@@ -1649,7 +1638,7 @@ h6 {
   width: 100%;
   left: 50%;
   -webkit-transform: translate(-50%, 0px);
-  transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
   background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0));
   height: 84px;
@@ -1658,8 +1647,8 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .rectangle-content {
@@ -1681,7 +1670,7 @@ h6 {
   position: relative;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   height: 420px;
 }
 
@@ -1692,7 +1681,7 @@ h6 {
   max-height: 75px;
   min-height: 36px;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1732,7 +1721,6 @@ h6 {
     margin-top: 24px;
     margin-bottom: 38px;
   }
-
   .pie_paises {
     margin-top: 23px;
   }
@@ -1744,12 +1732,10 @@ h6 {
     margin-top: 79px;
     margin-bottom: 90px;
   }
-
   .pie_paises {
     margin-top: 23px;
     margin-bottom: 20px;
   }
-
   .shadow1 {
     -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
     box-shadow: 3px 3px 5px 6px #5c1864;
@@ -1764,12 +1750,10 @@ h6 {
     margin-top: 72px;
     margin-bottom: 84px;
   }
-
   .pie_paises {
     margin-top: 24px;
     margin-bottom: 20px;
   }
-
   .shadow1 {
     -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
     box-shadow: 3px 3px 5px 6px #5c1864;
@@ -1784,12 +1768,10 @@ h6 {
     margin-top: 65px;
     margin-bottom: 84px;
   }
-
   .pie_paises {
     margin-top: 25px;
     margin-bottom: 22px;
   }
-
   .shadow1 {
     -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
     box-shadow: 3px 3px 5px 6px #5c1864;
@@ -1810,7 +1792,7 @@ h6 {
   left: 0;
   top: 50%;
   -webkit-transform: translate(0%, -50%);
-  transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
 }
 
 /*.login-item {
@@ -1819,18 +1801,18 @@ h6 {
 .showtime-clock {
   width: 20px;
   -webkit-filter: invert(1);
-  filter: invert(1);
+          filter: invert(1);
   margin: auto;
 }
 
 .a-cinema-rectangle .showtime-clock {
   -webkit-filter: invert(0);
-  filter: invert(0);
+          filter: invert(0);
 }
 
 .a-sports-rectangle .showtime-clock {
   -webkit-filter: invert(0);
-  filter: invert(0);
+          filter: invert(0);
 }
 
 .poster-image-left {
@@ -1845,7 +1827,7 @@ h6 {
   position: relative;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   height: 220px;
 }
 
@@ -1975,7 +1957,7 @@ h6 {
   max-width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   position: absolute;
   width: 100%;
 }
@@ -1997,14 +1979,6 @@ h6 {
   width: 100%;
 }
 
-.thumbnail img {
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  position: absolute;
-  width: 100%;
-}
-
 .thumbnail-large {
   background: #797979;
   overflow: hidden;
@@ -2013,12 +1987,26 @@ h6 {
   width: 100%;
 }
 
-.thumbnail-large img {
+.thumbnail-prog {
+  background: #797979;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-bottom: 63%;
+}
+
+.thumbnail img,
+.thumbnail-large img,
+.thumbnail-prog img {
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   position: absolute;
   width: 100%;
+}
+
+.schedule-add-icon {
+  margin-left: 5px;
 }
 
 .arrow-prev,
@@ -2042,7 +2030,7 @@ h6 {
 .arrow-prev {
   top: 50%;
   -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .arrow-next,
@@ -2133,6 +2121,11 @@ h6 {
   margin: 0 auto 9% auto;
 }
 
+.nav-image {
+  width: 60%;
+  height: 50px;
+}
+
 .hr1 {
   display: none;
 }
@@ -2181,10 +2174,10 @@ h6 {
 /*Tipografías*/
 .insert-data {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+       appearance: none;
   background-clip: padding-box;
   width: 85%;
   height: 44px;
@@ -2225,7 +2218,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-input[type="checkbox"]+label {
+input[type="checkbox"] + label {
   cursor: pointer;
 }
 
@@ -2241,15 +2234,15 @@ label:before {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   vertical-align: middle;
 }
 
-input[type="checkbox"]:checked+label::before {
+input[type="checkbox"]:checked + label::before {
   content: "✓";
   font-size: 18px;
   text-align: center;
@@ -2259,7 +2252,7 @@ input[type="checkbox"]:checked+label::before {
   background: #0fd7f2;
 }
 
-input[type="checkbox"]:checked+label::before {
+input[type="checkbox"]:checked + label::before {
   content: "✓";
   font-size: 18px;
   text-align: center;
@@ -2360,16 +2353,16 @@ input[type="checkbox"]:checked+label::before {
   transition: 0.4s;
 }
 
-input:checked+.slider {
+input:checked + .slider {
   background-color: #2196f3;
 }
 
-input:focus+.slider {
+input:focus + .slider {
   -webkit-box-shadow: 0 0 1px #2196f3;
-  box-shadow: 0 0 1px #2196f3;
+          box-shadow: 0 0 1px #2196f3;
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   transform: translateX(26px);
 }
@@ -2408,16 +2401,16 @@ input:checked+.slider:before {
   transition: 0.4s;
 }
 
-input:checked+.slideralert {
+input:checked + .slideralert {
   background-color: #2196f3;
 }
 
-input:focus+.slideralert {
+input:focus + .slideralert {
   -webkit-box-shadow: 0 0 1px #2196f3;
-  box-shadow: 0 0 1px #2196f3;
+          box-shadow: 0 0 1px #2196f3;
 }
 
-input:checked+.slideralert:before {
+input:checked + .slideralert:before {
   -webkit-transform: translateX(26px);
   transform: translateX(26px);
 }
@@ -2433,10 +2426,10 @@ input:checked+.slideralert:before {
 
 .date-data {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+       appearance: none;
   background-clip: padding-box;
   width: 17%;
   height: 44px;
@@ -2495,7 +2488,7 @@ input:checked+.slideralert:before {
   width: 65%;
   margin: auto;
   -webkit-clip-path: circle(50% at 80% 21%);
-  clip-path: circle(50% at 80% 21%);
+          clip-path: circle(50% at 80% 21%);
   position: absolute;
   right: 0%;
   top: 0%;
@@ -2563,7 +2556,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+      user-select: none;
 }
 
 .chosen-container * {
@@ -2581,7 +2574,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   border-top: 0;
   background: #fff;
   -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
 }
 
 .chosen-container.chosen-with-drop .chosen-drop {
@@ -2607,7 +2600,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   background: linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
   background-clip: padding-box;
   -webkit-box-shadow: 0 0 3px white inset, 0 1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 3px white inset, 0 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 3px white inset, 0 1px 1px rgba(0, 0, 0, 0.1);
   color: #444;
   text-decoration: none;
   white-space: nowrap;
@@ -2797,7 +2790,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   border: 0 !important;
   background: transparent !important;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   color: #999;
   font-size: 100%;
   font-family: sans-serif;
@@ -2819,7 +2812,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   background-repeat: repeat-x;
   background-clip: padding-box;
   -webkit-box-shadow: 0 0 2px white inset, 0 1px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0 2px white inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 2px white inset, 0 1px 0 rgba(0, 0, 0, 0.05);
   color: #333;
   line-height: 13px;
   cursor: default;
@@ -2877,7 +2870,7 @@ This file is generated by `grunt build`, do not edit it by hand.
 .chosen-container-active .chosen-single {
   border: 1px solid #5897fb;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .chosen-container-active.chosen-with-drop .chosen-single {
@@ -2887,7 +2880,7 @@ This file is generated by `grunt build`, do not edit it by hand.
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #eeeeee), color-stop(80%, #ffffff));
   background-image: linear-gradient(#eeeeee 20%, #ffffff 80%);
   -webkit-box-shadow: 0 1px 0 #fff inset;
-  box-shadow: 0 1px 0 #fff inset;
+          box-shadow: 0 1px 0 #fff inset;
 }
 
 .chosen-container-active.chosen-with-drop .chosen-single div {
@@ -2902,7 +2895,7 @@ This file is generated by `grunt build`, do not edit it by hand.
 .chosen-container-active .chosen-choices {
   border: 1px solid #5897fb;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .chosen-container-active .chosen-choices li.search-field input[type="text"] {
@@ -3009,10 +3002,7 @@ This file is generated by `grunt build`, do not edit it by hand.
 
 /* @end */
 /* @group Retina compatibility */
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min-resolution: 144dpi) {
-
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
   .chosen-rtl .chosen-search input[type="text"],
   .chosen-container-single .chosen-single abbr,
   .chosen-container-single .chosen-single div b,
@@ -3053,7 +3043,7 @@ only screen and (min-resolution: 144dpi) {
   top: 10%;
   left: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
 }
 
@@ -3069,11 +3059,11 @@ only screen and (min-resolution: 144dpi) {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 5%;
   margin-top: 5%;
 }
@@ -3085,7 +3075,9 @@ only screen and (min-resolution: 144dpi) {
   height: 200px;
   overflow-y: scroll;
   position: absolute;
-  top: 40px;
+  width: 100%;
+  height: 40px;
+  top: 10%;
   left: 0;
   list-style: none;
   background-color: #ffffff;
@@ -3107,11 +3099,11 @@ only screen and (min-resolution: 144dpi) {
   border-radius: 12px;
 }
 
-#selectPais:checked~#select-Pais {
+#selectPais:checked ~ #select-Pais {
   overflow: visible;
 }
 
-#selectPais:checked~#select-Pais .ListaDesplegablePaises {
+#selectPais:checked ~ #select-Pais .ListaDesplegablePaises {
   height: 200px;
 }
 
@@ -3159,13 +3151,13 @@ input[type="radio"] {
   display: inline-block;
 }
 
-input[type="radio"]:checked+.hombre-estilo {
+input[type="radio"]:checked + .hombre-estilo {
   background: #03ad50;
   color: #fff;
   border: none;
 }
 
-input[type="radio"]:checked+.mujer-estilo {
+input[type="radio"]:checked + .mujer-estilo {
   background: #03ad50;
   color: #fff;
   border: none;
@@ -3207,25 +3199,25 @@ input[type="radio"]:checked+.mujer-estilo {
   display: inline-block;
 }
 
-input[type="radio"]:checked+.treinta-estilo {
+input[type="radio"]:checked + .treinta-estilo {
   background: #03ad50;
   color: #fff;
   border: none;
 }
 
-input[type="radio"]:checked+.quince-estilo {
+input[type="radio"]:checked + .quince-estilo {
   background: #03ad50;
   color: #fff;
   border: none;
 }
 
-input[type="radio"]:checked+.hombre-estilo {
+input[type="radio"]:checked + .hombre-estilo {
   background: #03ad50;
   color: #fff;
   border: none;
 }
 
-input[type="radio"]:checked+.mujer-estilo {
+input[type="radio"]:checked + .mujer-estilo {
   background: #03ad50;
   color: #fff;
   border: none;
@@ -3256,7 +3248,7 @@ input[type="radio"]:checked+.mujer-estilo {
   top: 10%;
   left: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
 }
 
@@ -3272,11 +3264,11 @@ input[type="radio"]:checked+.mujer-estilo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 5%;
   margin-top: 15%;
 }
@@ -3310,11 +3302,11 @@ input[type="radio"]:checked+.mujer-estilo {
   border-radius: 12px;
 }
 
-#selectDay:checked~#select-Dia {
+#selectDay:checked ~ #select-Dia {
   overflow: visible;
 }
 
-#selectDay:checked~#select-Dia .ListaDesplegableDias {
+#selectDay:checked ~ #select-Dia .ListaDesplegableDias {
   height: 200px;
 }
 
@@ -3343,7 +3335,7 @@ input[type="radio"]:checked+.mujer-estilo {
   top: 10%;
   left: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
 }
 
@@ -3359,11 +3351,11 @@ input[type="radio"]:checked+.mujer-estilo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 5%;
   margin-top: 15%;
 }
@@ -3397,11 +3389,11 @@ input[type="radio"]:checked+.mujer-estilo {
   border-radius: 12px;
 }
 
-#selectMonth:checked~#select-Mes {
+#selectMonth:checked ~ #select-Mes {
   overflow: visible;
 }
 
-#selectMonth:checked~#select-Mes .ListaDesplegableMeses {
+#selectMonth:checked ~ #select-Mes .ListaDesplegableMeses {
   height: 200px;
 }
 
@@ -3430,7 +3422,7 @@ input[type="radio"]:checked+.mujer-estilo {
   top: 10%;
   left: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
 }
 
@@ -3446,11 +3438,11 @@ input[type="radio"]:checked+.mujer-estilo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 5%;
   margin-top: 15%;
 }
@@ -3484,11 +3476,11 @@ input[type="radio"]:checked+.mujer-estilo {
   border-radius: 12px;
 }
 
-#selectYear:checked~#select-Año {
+#selectYear:checked ~ #select-Año {
   overflow: visible;
 }
 
-#selectYear:checked~#select-Año .ListaDesplegableAños {
+#selectYear:checked ~ #select-Año .ListaDesplegableAños {
   height: 200px;
 }
 
@@ -3496,71 +3488,11 @@ input[type="radio"]:checked+.mujer-estilo {
   border-bottom: solid 1px #a6a8a8;
 }
 
-.large-poster-width {
+.schedule-poster {
   width: 50%;
+  margin-right: 5%;
 }
 
-/*%poster-basic {
-  display: flex;
-}
-
-.m-first-poster {
-  @extend %poster-basic;
-  grid-area: firstPoster;
-}
-
-.m-second-poster {
-  grid-area: secondPoster;
-}
-
-.m-third-poster {
-  grid-area: thirdPoster;
-}
-
-%section-basic {
-  width: 100%;
-  margin: auto;
-  display: grid;
-  display: -moz-grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
-@mixin poster-section($firstRow, $secondRow, $columnGap: null, $rowGap: null) {
-  @extend %section-basic;
-  grid-template-areas:
-    $firstRow
-    $secondRow;
-  grid-column-gap: $columnGap;
-  grid-row-gap: $rowGap;
-}
-
-.m-claro-poster-section {
-  @include poster-section(
-    "firstPoster secondPoster",
-    "firstPoster thirdPoster",
-    10px,
-    10px
-  );
-}
-
-.m-concert-poster-section {
-  @include poster-section(
-    "firstPoster secondPoster",
-    "firstPoster secondPoster",
-    10px,
-    10px
-  );
-}
-
-.small-poster {
-  height: $heightSecondColumnPoster;
-  position: relative;
-}
-
-.second-column-image {
-  height: 91%;
-}*/
 .m-see-more {
   text-align: center;
   margin-bottom: 30px;
@@ -3606,8 +3538,8 @@ input[type="radio"]:checked+.mujer-estilo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0;
   margin-bottom: 9%;
   max-width: calc(100vw - 35px);
@@ -3617,7 +3549,7 @@ input[type="radio"]:checked+.mujer-estilo {
 
 .nav-li {
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+          filter: grayscale(100%);
   opacity: 0.75;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -3626,7 +3558,7 @@ input[type="radio"]:checked+.mujer-estilo {
 .active-navItem {
   position: relative;
   -webkit-filter: none;
-  filter: none;
+          filter: none;
   opacity: 1;
 }
 
@@ -3639,7 +3571,7 @@ input[type="radio"]:checked+.mujer-estilo {
   left: 50%;
   top: 120%;
   -webkit-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 .login {
@@ -3654,8 +3586,8 @@ input[type="radio"]:checked+.mujer-estilo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 80%;
   margin: auto;
   padding: 15px 0px;
@@ -3678,15 +3610,14 @@ input[type="radio"]:checked+.mujer-estilo {
   display: flex;
   margin: 46px auto 86px auto;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @-webkit-keyframes active-dropdown {
   0% {
     margin-left: -130%;
   }
-
   100% {
     margin-left: 0%;
   }
@@ -3696,7 +3627,6 @@ input[type="radio"]:checked+.mujer-estilo {
   0% {
     margin-left: -130%;
   }
-
   100% {
     margin-left: 0%;
   }
@@ -3728,7 +3658,7 @@ input[type="radio"]:checked+.mujer-estilo {
 .active-navAvatar {
   position: relative;
   -webkit-filter: none;
-  filter: none;
+          filter: none;
   opacity: 1;
 }
 
@@ -3741,7 +3671,7 @@ input[type="radio"]:checked+.mujer-estilo {
   left: 50%;
   top: -17%;
   -webkit-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 /*Tamaño de textos - responsive*/
@@ -3752,11 +3682,11 @@ input[type="radio"]:checked+.mujer-estilo {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-transform: uppercase;
   height: 100%;
   text-align: center;
@@ -3898,7 +3828,7 @@ input[type="radio"]:checked+.mujer-estilo {
   bottom: 90px;
 }
 
-.concert-slide {
+.header-slide {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -3909,7 +3839,7 @@ input[type="radio"]:checked+.mujer-estilo {
   padding-bottom: 64%;
 }
 
-.concert-slide img {
+.header-slide img {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -4029,7 +3959,7 @@ input[type="radio"]:checked+.mujer-estilo {
 .claro-slide img {
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   position: absolute;
   width: 100%;
 }
@@ -4066,6 +3996,28 @@ input[type="radio"]:checked+.mujer-estilo {
 
 .concert-channel-header .slick-dots {
   bottom: 40px;
+}
+
+.header-slider .slick-list {
+  padding: 0px !important;
+}
+
+.header-slider .slick-slide {
+  margin: 0px !important;
+}
+
+.header-slider .slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 0.75;
+}
+
+.header-slider .slick-dots li button:before {
+  color: white;
+  opacity: 0.25;
+}
+
+.header-slider .slick-track {
+  margin-bottom: 0px !important;
 }
 
 @font-face {
@@ -4151,8 +4103,8 @@ input[type="radio"]:checked+.mujer-estilo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 16px;
 }
 
@@ -4165,7 +4117,6 @@ input[type="radio"]:checked+.mujer-estilo {
     opacity: 0;
     -webkit-transform: translateY(-100%);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -4177,7 +4128,6 @@ input[type="radio"]:checked+.mujer-estilo {
     opacity: 0;
     -webkit-transform: translateY(-100%);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -4192,17 +4142,33 @@ input[type="radio"]:checked+.mujer-estilo {
   display: block;
 }
 
-.schedule-container {
-  margin-top: 26px;
+.schedule-item-body {
   border-bottom: 2px solid #979797;
+  padding-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.schedule-container:first-child {
+.schedule-item-body:first-child {
   margin-top: 0px;
 }
 
+.schedule-container {
+  margin-top: 26px;
+}
+
 .schedule-details {
-  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .rating-container {
@@ -4218,6 +4184,11 @@ input[type="radio"]:checked+.mujer-estilo {
 }
 
 .imperdibles-videos-tablet {
+  display: none;
+  padding-top: 30px;
+}
+
+.imperdibles-videos-desktop {
   display: none;
 }
 
@@ -4235,78 +4206,17 @@ input[type="radio"]:checked+.mujer-estilo {
   border: none;
 }
 
-.large-poster-width {
+.pro-container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.schedule-poster {
   width: 50%;
+  margin-right: 5%;
 }
 
-/*%poster-basic {
-  display: flex;
-}
-
-.m-first-poster {
-  @extend %poster-basic;
-  grid-area: firstPoster;
-}
-
-.m-second-poster {
-  grid-area: secondPoster;
-}
-
-.m-third-poster {
-  grid-area: thirdPoster;
-}
-
-%section-basic {
-  width: 100%;
-  margin: auto;
-  display: grid;
-  display: -moz-grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
-@mixin poster-section($firstRow, $secondRow, $columnGap: null, $rowGap: null) {
-  @extend %section-basic;
-  grid-template-areas:
-    $firstRow
-    $secondRow;
-  grid-column-gap: $columnGap;
-  grid-row-gap: $rowGap;
-}
-
-.m-claro-poster-section {
-  @include poster-section(
-    "firstPoster secondPoster",
-    "firstPoster thirdPoster",
-    10px,
-    10px
-  );
-}
-
-.m-concert-poster-section {
-  @include poster-section(
-    "firstPoster secondPoster",
-    "firstPoster secondPoster",
-    10px,
-    10px
-  );
-}
-
-.small-poster {
-  height: $heightSecondColumnPoster;
-  position: relative;
-}
-
-.second-column-image {
-  height: 91%;
-}*/
-.o-concert-section,
-.o-tv-section,
-.o-cinema-section,
-.o-vision-section,
-.o-claro-section,
-.o-sports-section,
-.o-footer-section {
+.o-concert-section, .o-tv-section, .o-cinema-section, .o-vision-section, .o-claro-section, .o-sports-section, .o-footer-section {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -4398,10 +4308,6 @@ input[type="radio"]:checked+.mujer-estilo {
   background: #000000;
 }
 
-.imperdibles-videos-tablet {
-  padding-top: 30px;
-}
-
 .header {
   width: 100%;
   height: 205px;
@@ -4454,7 +4360,7 @@ input[type="radio"]:checked+.mujer-estilo {
   background: #5c1864;
   z-index: 16;
   -webkit-transform: translate(-100%);
-  transform: translate(-100%);
+          transform: translate(-100%);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -4509,8 +4415,8 @@ input[type="radio"]:checked+.mujer-estilo {
   display: flex;
   z-index: 1;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section-home-footer {
@@ -4526,250 +4432,73 @@ input[type="radio"]:checked+.mujer-estilo {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
   /*Base*/
   /*1.- ATOMS*/
   /*============================*/
   /*1.1 - General - Átomos*/
-  /*End General - Átomos*/
-  /*============================*/
-  .margin-ahora-tv {
-    margin-bottom: 21px;
-  }
-
-  .circle-video {
-    display: block;
-    width: 70%;
-  }
-
-  .header-h1 {
-    color: #4f4f4f;
-    font-size: 50px;
-  }
-
   .menu-responsive {
     width: 25px;
     position: inherit;
     left: 0;
     top: 0%;
     -webkit-transform: inherit;
-    transform: inherit;
+            transform: inherit;
   }
-
   .menu-responsive-tablet {
     width: 25px;
   }
-
   .logo {
     width: 85px;
     display: initial;
     margin-left: 20px;
   }
-
-  .title-tv {
-    font-size: 30px;
-  }
-
-  .nav-image {
-    height: 72px;
-    width: 100%;
-  }
-
-  .nav-li {
-    text-align: center;
-  }
-
   .border-right {
     border-right: 1px solid #a1a0a0 !important;
     padding-right: 5px;
   }
-
   .login-item {
     width: 36px;
   }
-
   .header-slider .slick-list {
     padding: 0px 0px 0px 0px !important;
   }
-
-  .section-slider .slick-list,
-  .tv-slider .slick-list,
-  .sports-slider .slick-list {
-    padding: 0px 90px 0px 0px !important;
-  }
-
-  .a-cinema-rectangle,
-  .a-sports-rectangle,
-  .a-concert-rectangle,
-  .a-claro-rectangle,
-  .a-vision-rectangle {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    /*-webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    -webkit-line-clamp: 2;*/
-    height: 48px;
-  }
-
   .poster-title-margin {
     margin: 0px;
   }
-
-  .poster-image-small {
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    height: 108px;
-  }
-
   .a-sports-text-poster,
   .a-poster-text-white,
   .a-poster-text-black {
     padding: 10px;
     font-size: 12px;
   }
-
-  .a-concert-channel-title {
-    font-size: 32px;
-    color: #ffffff;
-    padding-bottom: 0%;
-    text-align: left;
-  }
-
-  .concert-footer-img {
-    width: 72px;
-  }
-
-  .concert-img-white {
-    -webkit-filter: invert(1);
-    filter: invert(1);
-  }
-
-  .a-concert-subtitle {
-    color: #ffffff;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    font-size: 16px;
-    font-family: "Montserrat-SemiBold";
-    text-transform: uppercase;
-  }
-
-  .concert-first-subtitle {
-    font-size: 16px;
-  }
-
-  .concert-second-subtitle {
-    font-size: 16px;
-  }
-
-  .a-claro-cinema-title,
-  .a-our-vision-title,
-  .a-claro-channel-title,
-  .a-claro-sports-title {
-    font-size: 32px;
-    padding-bottom: 7px;
-    text-align: left;
-  }
-
-  .a-claro-channel-title,
-  .a-concert-channel-title,
-  .a-claro-cinema-title,
-  .a-our-vision-title,
-  .a-claro-sports-title {
-    padding-top: 0px;
-  }
-
-  .poster-title-sport {
-    font-size: 30px;
-    text-align: left;
-  }
-
   .a-subtitle {
     text-align: left;
     font-size: 16px;
     padding-bottom: 0%;
   }
-
   .advertising-image {
     width: 90%;
     display: block;
     margin: 0px auto;
   }
-
   .advertising-title,
   .advertising-subtitle {
     text-align: left;
   }
-
   .advertising-title {
     font-size: 50px;
   }
-
   .advertising-text {
     font-size: 12px;
   }
-
-  .advertising-subtitle {
-    font-size: 18px;
-    color: #00caf5;
-    font-family: "Gotham-Black";
-  }
-
-  .a-today-claro-title {
-    font-size: 30px;
-    padding-bottom: 44px;
-    padding-top: 10px;
-  }
-
-  .footer-title {
-    font-size: 30px;
-  }
-
-  .social-icon {
-    width: 58px;
-  }
-
-  .claro-grey-img {
-    width: 86px;
-  }
-
-  .text-footer-regular {
-    font-size: 15px;
-    margin-bottom: 29px;
-  }
-
-  .text-footer-bold {
-    font-size: 15px;
-  }
-
-  .transmission-text {
-    position: absolute;
-    left: 4%;
-    top: 10%;
-    margin-bottom: 0px;
-    font-size: 15px;
-    font-family: "Montserrat-SemiBold";
-  }
-
   .footer-img {
     width: 65px;
     height: 60px;
   }
-
   .small-footer-img {
     width: 90px;
     height: 60px;
   }
-
   .login {
     position: absolute;
     right: -8px;
@@ -4779,58 +4508,148 @@ input[type="radio"]:checked+.mujer-estilo {
     padding: 8px;
     border-radius: 30px;
   }
-
-  .navbar-item {
-    font-size: 16px;
+  .advertising-subtitle {
+    font-size: 18px;
+    color: #00caf5;
+    font-family: "Gotham-Black";
   }
-
-  .slick-slider {
-    padding-bottom: 0px;
+  .footer-title {
+    font-size: 30px;
   }
-
+  .social-icon {
+    width: 58px;
+  }
   .thumbnail-info-image {
-    display: none;
+    display: none !important;
   }
-
   .thumbnail-info-title {
     width: 100%;
   }
-
+  .slick-dots li button:before {
+    font-size: 9px !important;
+  }
+  /*End General - Átomos*/
+  /*============================*/
+  /*============================*/
+  /*1.2 - Home - Átomos*/
+  .margin-ahora-tv {
+    margin-bottom: 21px;
+  }
+  .circle-video {
+    display: block;
+    width: 70%;
+  }
+  .header-h1 {
+    color: #4f4f4f;
+    font-size: 50px;
+  }
+  .title-tv {
+    font-size: 30px;
+  }
+  .nav-image {
+    height: 72px;
+    width: 80%;
+  }
+  .nav-li {
+    text-align: center;
+  }
+  .a-concert-channel-title {
+    font-size: 32px;
+    color: #ffffff;
+    padding-bottom: 0%;
+    text-align: left;
+  }
+  .concert-footer-img {
+    width: 72px;
+  }
+  .concert-img-white {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+  .a-concert-subtitle {
+    color: #ffffff;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-family: "Montserrat-SemiBold";
+    text-transform: uppercase;
+  }
+  .a-claro-cinema-title,
+  .a-our-vision-title,
+  .a-claro-channel-title,
+  .a-claro-sports-title {
+    font-size: 32px;
+    padding-bottom: 7px;
+    text-align: left;
+  }
+  .a-claro-channel-title,
+  .a-concert-channel-title,
+  .a-claro-cinema-title,
+  .a-our-vision-title,
+  .a-claro-sports-title {
+    padding-top: 0px;
+  }
+  .poster-title-sport {
+    font-size: 30px;
+    text-align: left;
+  }
+  .claro-grey-img {
+    width: 86px;
+  }
+  .text-footer-regular {
+    font-size: 15px;
+    margin-bottom: 29px;
+  }
+  .text-footer-bold {
+    font-size: 15px;
+  }
+  .navbar-item {
+    font-size: 16px;
+  }
   .our-channels {
     display: block;
   }
-
-  .claro-section-footer,
-  .vision-section-footer,
-  .sports-section-footer {
-    margin-top: 50px;
+  .header-details {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    display: inherit;
+    text-align: left;
   }
-
-  .concert-section-footer,
-  .cinema-section-footer {
-    margin-top: 130px;
+  /*End Home - Átomos*/
+  /*============================*/
+  /*============================*/
+  /*1.3 - Claro Canal - Átomos*/
+  .a-today-claro-title {
+    font-size: 30px;
+    padding-bottom: 44px;
+    padding-top: 10px;
   }
-
   .a-next-claro-title,
   .a-dontLose-claro-title {
     padding: 0 0 13px 0;
     text-align: left;
     font-size: 32px;
   }
-
   .a-next-claro-subtitle,
   .a-dontLose-claro-subtitle {
     padding-bottom: 50px;
     text-align: left;
     font-size: 20px;
   }
-
-  /*Concert Channel - Atoms*/
+  /*End Claro Canal - Átomos*/
+  /*============================*/
+  /*============================*/
+  /*1.4 - Concert Channel - Átomos*/
+  .concert-first-subtitle {
+    font-size: 16px;
+  }
+  .concert-second-subtitle {
+    font-size: 16px;
+  }
   .today-concert-title {
     font-size: 30px;
     padding: 40px 0px;
   }
-
   .concert-title {
     font-size: 40px;
     color: #3cc1ff;
@@ -4838,85 +4657,97 @@ input[type="radio"]:checked+.mujer-estilo {
     padding-bottom: 13px;
     text-align: left;
   }
-
   .concert-subtitle {
     text-align: left;
     font-size: 20px;
     padding-bottom: 50px;
   }
-
-  /*End Concert Channel - Atoms*/
-  /*MOLECULES*/
-  .menu-tablet {
-    display: block;
+  .concert-slide {
+    padding-bottom: 58%;
   }
-
-  .menu {
-    display: none;
+  /*End Concert Channel - Átomos*/
+  /*============================*/
+  /*============================*/
+  /*1.5 - Claro Cinema - Átomos*/
+  /*End Claro Cinema - Átomos*/
+  /*============================*/
+  /*2.- MOLECULES*/
+  /*============================*/
+  /*2.1 - General - Moleculas*/
+  .slick-slider {
+    padding-bottom: 0px;
   }
-
   .nav-content {
     margin: 0px;
     position: relative;
   }
-
+  .menu-tablet {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  .slick-dots {
+    bottom: -40px !important;
+  }
+  .social-media {
+    margin: 46px auto 65px auto;
+  }
+  /*End General - Moleculas*/
+  /*============================*/
+  /*============================*/
+  /*2.2 - Home - Moleculas*/
+  .section-slider .slick-list,
+  .tv-slider .slick-list,
+  .sports-slider .slick-list {
+    padding: 0px 90px 0px 0px !important;
+  }
   .tv-list {
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0;
     max-width: 900px;
     margin: 0 auto 37px auto;
     width: 100%;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   .m-home-titles {
     padding-bottom: 0px;
   }
-
   .m-see-more {
     text-align: right;
     margin-bottom: 0px;
   }
-
-  .slick-dots {
-    bottom: -40px !important;
-  }
-
-  .slick-dots li button:before {
-    font-size: 9px !important;
-  }
-
-  .social-media {
-    margin: 46px auto 65px auto;
-  }
-
   .o-tv-section .slick-dotted.slick-slider {
     margin-bottom: 80px !important;
   }
-
-  .concert-slide {
-    padding-bottom: 58%;
+  /*End Home - Moleculas*/
+  /*============================*/
+  /*============================*/
+  /*2.3 - Claro Canal - Moleculas*/
+  /*End Claro Canal - Moleculas*/
+  /*============================*/
+  /*============================*/
+  /*2.4 - Concert Channel - Moleculas*/
+  .concert-slider {
+    margin-left: -6px;
   }
-
-  /*Organisms*/
-  .home-header .header {
-    padding: 5%;
-  }
-
-  .header {
-    background: transparent;
-    padding: 0;
-    height: auto;
-  }
-
+  /*End Concert Channel - Moleculas*/
+  /*============================*/
+  /*============================*/
+  /*2.5 - Claro Cinema - Moleculas*/
+  /*End Claro Cinema - Moleculas*/
+  /*============================*/
+  /*3.- ORGANISMS*/
+  /*============================*/
+  /*3.1 - General - Organismos*/
   .menu {
     background: transparent;
     position: inherit;
@@ -4926,18 +4757,11 @@ input[type="radio"]:checked+.mujer-estilo {
     -webkit-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
   }
-
-  .concert-channel-header .header {
+  .header {
+    background: transparent;
     padding: 0;
+    height: auto;
   }
-
-  .header-details {
-    margin-top: 60px;
-    margin-bottom: 40px;
-    display: inherit;
-    text-align: left;
-  }
-
   .concert-channel-header .menu-tablet,
   .claro-canal-header .menu-tablet,
   .synopsis-header .menu-tablet,
@@ -4946,21 +4770,31 @@ input[type="radio"]:checked+.mujer-estilo {
     background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
     padding: 5%;
   }
-
-  /*Concert channel - moleculas*/
-  .concert-slider {
-    margin-left: -6px;
-  }
-
-  /*End concert channel - moleculas*/
-  /*General - Organismos*/
-  .synopsis-header .header,
-  .claro-cinema-header .header {
+  .synopsis-header .header {
     padding: 0px 0px 42% 0px;
   }
-
-  /*End general - Organismos*/
-  /*Home - Organismos*/
+  .advertising-section-tablet {
+    display: block;
+  }
+  .advertising-section-mobile {
+    display: none;
+  }
+  /*End General - Organismos*/
+  /*============================*/
+  /*============================*/
+  /*3.2 - Home - Organismos*/
+  .claro-section-footer,
+  .vision-section-footer,
+  .sports-section-footer {
+    margin-top: 50px;
+  }
+  .concert-section-footer,
+  .cinema-section-footer {
+    margin-top: 130px;
+  }
+  .home-header .header {
+    padding: 5%;
+  }
   .o-concert-section,
   .o-cinema-section,
   .o-vision-section,
@@ -4970,86 +4804,61 @@ input[type="radio"]:checked+.mujer-estilo {
   .o-tv-section {
     max-width: 100%;
   }
-
   .o-concert-section {
     background-color: #3e0a43;
   }
-
   .concert-channel-mobile {
     display: none;
   }
-
   .concert-channel-tablet {
     display: block;
   }
-
   .o-cinema-section {
     background-image: url(../images/home/claro-cinema-background.png);
     background-repeat: no-repeat;
     background-position: left;
     background-origin: content-box;
   }
-
   .cinema-claro-mobile {
     display: none;
   }
-
   .cinema-claro-tablet {
     display: block;
   }
-
   .o-vision-section {
     background-color: #d8d8d8;
   }
-
   .nuestra-vision-tablet {
     display: block;
   }
-
   .nuestra-vision-mobile {
     display: none;
   }
-
   .claro-canal-tablet {
     display: block;
   }
-
   .claro-canal-mobile {
     display: none;
   }
-
   .o-sports-section {
     background-image: url(../images/home/claro-sports-background.png);
     background-repeat: no-repeat;
     background-origin: content-box;
   }
-
   .claro-sports-tablet {
     display: block;
   }
-
   .claro-sports-mobile {
     display: none;
   }
-
-  .advertising-section-tablet {
-    display: block;
-  }
-
-  .advertising-section-mobile {
-    display: none;
-  }
-
   .home-section-header {
     padding-top: 40px;
   }
-
   .home-section-header,
   .section-home-footer {
     padding-left: 3%;
     padding-right: 3%;
   }
-
   .canal-videos-container,
   .tv-videos-container,
   .home-concert-videos-container,
@@ -5058,99 +4867,90 @@ input[type="radio"]:checked+.mujer-estilo {
   .today-videos-container {
     padding-left: calc(3% - 6px);
   }
-
-  .today-container {
-    margin-bottom: 100px;
-  }
-
-  .today {
-    margin: 0 calc(3% - 6px);
-  }
-
-  .next-week-container,
-  .dont-lose-container {
-    padding: 30px 20px 90px 20px;
-    margin-bottom: 85px;
-  }
-
-  .dont-lose-claro {
-    border-radius: 20px;
-  }
-
-  .next-week-claro {
-    border-radius: 20px;
-  }
-
-  #next-week-slider {
-    display: none;
-  }
-
-  .next-videos-tablet {
-    display: block;
-  }
-
-  .home-sports-videos-container {
-    padding-left: 3%;
-  }
-
   .claro-section-header,
   .vision-section-header,
   .sports-section-header {
     margin-bottom: 70px;
   }
-
+  .home-sports-videos-container {
+    padding-left: 3%;
+  }
   .concert-section-header,
   .cinema-section-header {
     margin-bottom: 150px;
   }
-
-  /*End home - organismos*/
-  .margin-bottom-slider {
-    margin-bottom: 80px;
+  /*End Home - Organismos*/
+  /*============================*/
+  /*============================*/
+  /*3.3 - Claro Canal - Organismos*/
+  .next-week-container,
+  .dont-lose-container {
+    padding: 30px 20px 90px 20px;
+    margin-bottom: 85px;
   }
-
-  /*Concert channel - organismos*/
+  .dont-lose-claro {
+    border-radius: 20px;
+  }
+  .next-week-claro {
+    border-radius: 20px;
+  }
+  .today-container {
+    margin-bottom: 100px;
+  }
+  .today {
+    margin: 0 calc(3% - 6px);
+  }
+  #next-week-slider {
+    display: none;
+  }
+  .next-videos-tablet {
+    display: block;
+  }
+  /*End Claro Canal - Organismos*/
+  /*============================*/
+  /*============================*/
+  /*3.4 - Concert Channel - Organismos*/
+  .concert-channel-header .header {
+    padding: 0;
+  }
   .concert-interviews {
     padding-bottom: 213px;
   }
-
   .concert-interviews,
   .today-concert-channel,
   .next-week-concert,
   .concerts {
     padding-left: 6%;
   }
-
   .today-concert-channel,
   .next-week-concert,
   .concerts {
     padding-bottom: 130px;
   }
-
-  /*End Concert channel*/
+  /*End Concert Channel - Organismos*/
+  /*============================*/
+  /*============================*/
+  /*3.5 - Claro Cinema - Organismos*/
+  /*End Claro Cinema - Organismos*/
+  /*============================*/
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
   /*Base*/
   /***  ATOMS  ****/
   /*1.1 - General - Átomos */
   .header-curve {
     bottom: -19%;
   }
-
   .login-item {
     width: 36px;
   }
-
   .slick-slider .slick-list {
     padding: 0px 0px 0px 0px !important;
   }
-
   .poster-title-margin {
     margin: 0px;
   }
-
   .a-sports-text-poster,
   .a-poster-text-white,
   .a-poster-text-black {
@@ -5158,60 +4958,48 @@ input[type="radio"]:checked+.mujer-estilo {
     font-size: 12px;
     text-align: left;
   }
-
   .a-concert-channel-title {
     font-size: 32px;
     color: #ffffff;
     padding-bottom: 0%;
     text-align: left;
   }
-
   .advertising-image {
     width: 90%;
     display: block;
     margin: 0px auto;
   }
-
   .advertising-title,
   .advertising-subtitle {
     text-align: left;
   }
-
   .footer-title {
     font-size: 30px;
   }
-
   .social-icon {
     width: 58px;
   }
-
   .claro-grey-img {
     width: 86px;
   }
-
   .text-footer-basic {
     font-size: 15px;
   }
-
   .text-footer-regular {
     margin-bottom: 8px;
     text-align: left;
   }
-
   .menu-responsive-tablet {
     width: 25px;
   }
-
   .footer-img {
     width: 80px;
     height: 72px;
   }
-
   .small-footer-img {
     width: 90px;
     height: 60px;
   }
-
   .login {
     position: absolute;
     right: 0px;
@@ -5221,28 +5009,23 @@ input[type="radio"]:checked+.mujer-estilo {
     padding: 8px;
     border-radius: 30px;
   }
-
   .navbar-item {
     font-size: 16px;
   }
-
   .logo-footer {
     margin-bottom: 13px;
     text-align: left;
   }
-
   .a-cinema-title,
   .concert-title {
     font-size: 40px;
     text-align: left;
   }
-
   .a-cinema-subtitle,
   .concert-subtitle {
     font-size: 20px;
     text-align: left;
   }
-
   .synopsis-section-title {
     font-size: 30px;
     color: white;
@@ -5251,70 +5034,55 @@ input[type="radio"]:checked+.mujer-estilo {
     padding-top: 45px;
     padding-bottom: 60px;
   }
-
   .a-today-claro-title,
   .a-today-cinema-title,
   .today-concert-title {
     font-size: 30px;
     padding-bottom: 60px;
   }
-
   .menu-responsive {
     display: none;
   }
-
   .logo {
     width: 85px;
     display: initial;
     margin-left: 20px;
   }
-
   .thumbnail {
     padding-bottom: 45%;
   }
-
   .thumbnail-info-image {
-    display: none;
+    display: none !important;
   }
-
   .thumbnail-info-title {
     width: 100%;
   }
-
   .aviso-border {
     margin-bottom: 0px;
   }
-
   .advertising-title {
     font-size: 68px;
   }
-
   .advertising-subtitle {
     font-size: 25px;
     color: #00caf5;
     font-family: "Gotham-Black";
   }
-
   .advertising-text {
     font-size: 14px;
   }
-
   .header-slider .slick-slide {
     margin: 0 !important;
   }
-
   .header-slider .slick-track {
     margin-bottom: 0 !important;
   }
-
   .slick-slider .slick-dots li {
     margin: 0 5px;
   }
-
   .slick-dots li button:before {
     font-size: 12px !important;
   }
-
   /*End Generales - átomos*/
   /*-----------------------------*/
   /*1.2 - Home - Átomos */
@@ -5322,33 +5090,26 @@ input[type="radio"]:checked+.mujer-estilo {
     color: #4f4f4f;
     font-size: 72px;
   }
-
   .our-channels {
     display: block;
   }
-
   .margin-ahora-tv {
     margin-bottom: 21px;
   }
-
   .title-tv {
     font-size: 30px;
   }
-
   .nav-image {
     height: 72px;
-    width: 100%;
+    width: 80%;
   }
-
   .nav-li {
     text-align: center;
   }
-
   .border-right {
     border-right: 1px solid #a1a0a0 !important;
     padding-right: 5px;
   }
-
   .a-cinema-rectangle,
   .a-sports-rectangle,
   .a-concert-rectangle,
@@ -5370,22 +5131,18 @@ input[type="radio"]:checked+.mujer-estilo {
     -webkit-line-clamp: 2;*/
     height: 52px;
   }
-
   .concert-footer-img {
     width: 72px;
   }
-
   .concert-img-white {
     -webkit-filter: invert(1);
-    filter: invert(1);
+            filter: invert(1);
   }
-
   .a-subtitle {
     text-align: left;
     font-size: 16px;
     padding-bottom: 0%;
   }
-
   .transmission-text {
     position: absolute;
     left: 4%;
@@ -5394,7 +5151,6 @@ input[type="radio"]:checked+.mujer-estilo {
     font-size: 15px;
     font-family: "Montserrat-SemiBold";
   }
-
   .a-claro-cinema-title,
   .a-our-vision-title,
   .a-claro-channel-title,
@@ -5404,60 +5160,51 @@ input[type="radio"]:checked+.mujer-estilo {
     padding-bottom: 7px;
     text-align: left;
   }
-
   .a-claro-cinema-title,
   .a-our-vision-title,
   .a-claro-sports-title {
     padding-top: 50px;
   }
-
   .circle-video {
     display: block;
     width: 65%;
     -webkit-clip-path: circle(50% at 70% 17%);
-    clip-path: circle(50% at 70% 17%);
+            clip-path: circle(50% at 70% 17%);
   }
-
   .poster-title-sport {
     font-size: 40px;
     text-align: left;
   }
-
   /*End Home - átomos*/
   /*-----------------------------*/
   /*1.3 - Claro Canal - Átomos */
   .a-next-week-rectangle {
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   .a-next-claro-title,
   .a-dontLose-claro-title {
     font-size: 40px;
     text-align: left;
     margin-bottom: 13px;
   }
-
   .a-next-claro-subtitle,
   .a-dontLose-claro-subtitle {
     font-size: 20px;
     padding-bottom: 30px;
     text-align: left;
   }
-
   .footer-title-claro {
     font-size: 40px;
   }
-
   .next-week-thumb {
     padding-bottom: 57%;
   }
-
   /*End Claro canal - átomos*/
   /*-----------------------------*/
   /*1.4 - Concert Channel - Átomos */
-  .concert-slide {
+  .header-slide {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -5467,31 +5214,25 @@ input[type="radio"]:checked+.mujer-estilo {
     height: auto;
     padding-bottom: 41%;
   }
-
-  .concert-slide img {
+  .header-slide img {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
     position: absolute;
     width: 100%;
   }
-
   .concert-first-subtitle {
     font-size: 25px;
   }
-
   .concert-second-subtitle {
     font-size: 19px;
   }
-
   .concert-title {
     padding-bottom: 13px;
   }
-
   .concert-subtitle {
     padding-bottom: 52px;
   }
-
   .a-concert-subtitle {
     color: #ffffff;
     padding-bottom: 0;
@@ -5500,18 +5241,15 @@ input[type="radio"]:checked+.mujer-estilo {
     text-transform: uppercase;
     font-size: 25px;
   }
-
   /*End Concert Channel - átomos*/
   /*-----------------------------*/
   /*1.5 - Claro Cinema - Átomos */
   .a-cinema-title {
     padding-top: 17px;
   }
-
   .a-cinema-subtitle {
     padding-bottom: 17px;
   }
-
   /*End Claro Cinema - átomos*/
   /*-----------------------------*/
   /***  2. MOLECULES  ***/
@@ -5521,59 +5259,46 @@ input[type="radio"]:checked+.mujer-estilo {
     width: 100%;
     padding-bottom: 0px;
   }
-
   .menu {
     display: none;
   }
-
   .menu-tablet {
     display: block;
     padding: 0px;
   }
-
   .nav-content {
     margin: 0px;
     position: relative;
   }
-
   .terms-conditions-mobile {
     display: none;
   }
-
   .social-media {
     margin: 46px auto 65px auto;
   }
-
   .o-tv-section .slick-dotted.slick-slider {
     margin-bottom: 100px !important;
   }
-
   .claro-navbar {
     display: none;
   }
-
   .header-slider .slick-dots {
     bottom: 75px !important;
   }
-
   .header-slider .slick-dots li.slick-active button:before {
     color: white;
     opacity: 0.75;
   }
-
   .header-slider .slick-dots li button:before {
     color: white;
     opacity: 0.25;
   }
-
   .slick-dots {
     bottom: -35px !important;
   }
-
   .cinema-slider {
     margin: 0 -6px;
   }
-
   /*End General - Moleculas*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -5584,33 +5309,28 @@ input[type="radio"]:checked+.mujer-estilo {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0;
     max-width: 900px;
     margin: 0 auto 37px auto;
     width: 100%;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   .m-home-titles {
     padding-bottom: 20px;
   }
-
   .m-see-more {
     text-align: right;
     margin-bottom: 0px;
   }
-
   .header-details {
     margin-top: 100px;
-    margin-bottom: 40px;
     display: inherit;
     text-align: left;
   }
-
   /*End Home - Moelculas*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -5618,16 +5338,13 @@ input[type="radio"]:checked+.mujer-estilo {
   #next-week-slider {
     display: none;
   }
-
   .next-videos-tablet {
     display: block;
   }
-
   .dontLose-slider-tablet {
     display: block;
     margin-top: 100px;
   }
-
   /*End Claro Canal - Moelculas*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -5635,7 +5352,6 @@ input[type="radio"]:checked+.mujer-estilo {
   .concert-channel-header .slick-dots {
     bottom: 35px !important;
   }
-
   /*End Concert Channel - Moelculas*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -5644,7 +5360,6 @@ input[type="radio"]:checked+.mujer-estilo {
     margin-bottom: 0px;
     padding-left: calc(5% + 7px);
   }
-
   /*End Claro Cinema - Moelculas*/
   /*-----------------------------*/
   /*3.- ORGANISMS*/
@@ -5659,7 +5374,6 @@ input[type="radio"]:checked+.mujer-estilo {
     -webkit-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
   }
-
   .synopsis-header .header,
   .claro-cinema-header .header {
     overflow: hidden;
@@ -5667,7 +5381,6 @@ input[type="radio"]:checked+.mujer-estilo {
     background-size: cover;
     position: relative;
   }
-
   .concert-channel-header .menu-tablet,
   .claro-canal-header .menu-tablet,
   .synopsis-header .menu-tablet,
@@ -5676,111 +5389,92 @@ input[type="radio"]:checked+.mujer-estilo {
     background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
     padding: calc(2% + 2px);
   }
-
   .terms-conditions-desktop {
     display: block;
   }
-
   .footer-companies-desktop {
     padding: 60px 0;
   }
-
   .footer-companies {
     display: none;
   }
-
   .footer-companies-desktop {
     display: block;
   }
-
   /*End Generales - organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
   /*3.2 - Home - Organismos*/
+  .home-header .header {
+    height: auto;
+    background: transparent;
+    padding: 3% 3% 12% 5%;
+  }
   .home-section-header {
     padding-top: 40px;
   }
-
   .claro-section-header,
   .vision-section-header,
   .sports-section-header {
     margin-bottom: 85px;
   }
-
   .concert-section-header,
   .cinema-section-header {
     margin-bottom: 175px;
   }
-
   .o-concert-section {
     background-color: #3e0a43;
   }
-
   .concert-channel-mobile {
     display: none;
   }
-
   .concert-channel-tablet {
     display: block;
   }
-
   .o-cinema-section {
     background-image: url(../images/home/claro-cinema-background.png);
     background-repeat: no-repeat;
     background-position: left;
     background-origin: content-box;
   }
-
   .cinema-claro-mobile {
     display: none;
   }
-
   .cinema-claro-tablet {
     display: block;
   }
-
   .o-vision-section {
     background-color: #d8d8d8;
   }
-
   .nuestra-vision-mobile {
     display: none;
   }
-
   .nuestra-vision-desktop {
     display: block;
   }
-
   .claro-canal-mobile {
     display: none;
   }
-
   .claro-canal-desktop {
     display: block;
   }
-
   .o-sports-section {
     background-image: url(../images/home/claro-sports-background.png);
     background-repeat: no-repeat;
     background-origin: content-box;
   }
-
   .claro-sports-mobile {
     display: none;
   }
-
   .claro-sports-desktop {
     display: block;
   }
-
   .advertising-section-mobile {
     display: none;
   }
-
   .advertising-section-desktop {
     display: block;
   }
-
   .o-concert-section,
   .o-cinema-section,
   .o-vision-section,
@@ -5793,11 +5487,9 @@ input[type="radio"]:checked+.mujer-estilo {
     padding-left: calc(5% + 6px);
     padding-right: calc(5% + 6px);
   }
-
   .section-home-footer {
     padding-top: 30px;
   }
-
   /*End Home - organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -5805,31 +5497,24 @@ input[type="radio"]:checked+.mujer-estilo {
   .today {
     padding: 0 3%;
   }
-
   .dont-lose-claro {
     border-radius: 20px;
   }
-
   .next-week-claro {
     border-radius: 20px;
   }
-
   .claro-canal-header .header {
     padding: 0;
   }
-
   .next-week-container {
     padding: 30px 20px 90px 20px;
   }
-
   .today-container {
     padding: 0 50px 95px 50px;
   }
-
   .dont-lose-container {
     padding: 30px 20px 90px 20px;
   }
-
   /*End Claro Canal - organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -5837,15 +5522,12 @@ input[type="radio"]:checked+.mujer-estilo {
   .concert-channel-header .header {
     padding: 0;
   }
-
   .week-videos-mobile {
     display: none;
   }
-
   .week-videos-tablet {
     display: block;
   }
-
   .concert-interviews,
   .today-concert-channel,
   .next-week-concert,
@@ -5853,17 +5535,14 @@ input[type="radio"]:checked+.mujer-estilo {
     padding-left: 6%;
     padding-right: 6%;
   }
-
   .today-concert-channel,
   .next-week-concert,
   .concerts {
     padding-bottom: 130px;
   }
-
   .concert-interviews {
     padding-bottom: 213px;
   }
-
   /*End Concert Channel - organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -5873,21 +5552,17 @@ input[type="radio"]:checked+.mujer-estilo {
     height: auto;
     position: relative;
   }
-
   .imperdibles-videos-mobile {
     display: none;
   }
-
   .imperdibles-videos-tablet {
     display: block;
   }
-
   .today-claro-cinema {
     padding-bottom: 100px;
     padding-left: calc(5% + 7px);
     padding-right: calc(5% + 7px);
   }
-
   .only-videos-container,
   .recordar-container-videos,
   .imperdibles-videos-tablet {
@@ -5895,11 +5570,9 @@ input[type="radio"]:checked+.mujer-estilo {
     padding-left: calc(5% + 7px);
     padding-right: calc(5% + 7px);
   }
-
   .cinema-slider {
     margin: 0 -6px;
   }
-
   /*End Claro Cinema - organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -5907,15 +5580,12 @@ input[type="radio"]:checked+.mujer-estilo {
   .synopsis-header .header {
     padding: 0px 0px 42% 0px;
   }
-
   .synopsis-header .header {
     background-image: url("../images/home/american-horror.jpeg");
   }
-
   .synopsis-body-container {
     margin-bottom: 110px;
   }
-
   /*End Sinópsis - organismos*/
   /*-----------------------------*/
   /*.imperdibles,
@@ -5934,7 +5604,6 @@ input[type="radio"]:checked+.mujer-estilo {
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
-
   /***  1.- ATOMS  ****/
   /*1.1.- Generales - átomos*/
   .a-cinema-subtitle,
@@ -5942,135 +5611,91 @@ input[type="radio"]:checked+.mujer-estilo {
     font-size: 20px;
     text-align: left;
   }
-
   .a-cinema-title,
   .concert-title {
     font-size: 40px;
     text-align: left;
   }
-
   .a-today-claro-title,
   .a-today-cinema-title,
   .today-concert-title {
     font-size: 30px;
     padding: 50px 0;
   }
-
   .border-right {
     border-right: 1px solid #a1a0a0 !important;
     padding-right: 5px;
   }
-
   .slick-slider .slick-dots {
     bottom: -35px;
   }
-
   .slick-slider .slick-list {
     padding: 0px 0px 0px 0px !important;
   }
-
-  .a-cinema-rectangle,
-  .a-sports-rectangle,
-  .a-concert-rectangle,
-  .a-claro-rectangle,
-  .a-vision-rectangle {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    /*-webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    -webkit-line-clamp: 2;*/
-    height: 36px;
-  }
-
   .poster-title-margin {
     margin: 10px;
   }
-
   .a-sports-text-poster,
   .a-poster-text-white,
   .a-poster-text-black {
     padding: 0px;
     font-size: 12px;
   }
-
   .advertising-image {
     width: 90%;
     display: block;
     margin: 0px auto;
   }
-
   .menu-responsive-tablet {
     display: none;
   }
-
   .navbar-item {
     font-size: 16px;
     color: white;
   }
-
   .social-icon {
     width: 58px;
   }
-
   .claro-grey-img {
     width: 86px;
   }
-
   .footer-img {
     width: 80px;
     height: 72px;
   }
-
   .small-footer-img {
     width: 90px;
     height: 60px;
   }
-
   .footer-title,
   .footer-title-claro {
     font-size: 40px;
   }
-
   .text-footer-basic {
     font-size: 15px;
   }
-
   .text-footer-regular {
     font-size: 15px;
     margin-bottom: 8px;
     text-align: left;
   }
-
   .thumbnail-info-image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-
   .thumbnail-info-title {
     float: left;
     width: 84%;
     margin-right: 1%;
   }
-
   .logo-footer {
     margin-bottom: 13px;
     text-align: left;
   }
-
   .header-curve {
-    bottom: -30%;
+    bottom: -22%;
   }
-
   .a-claro-channel-title,
   .a-claro-cinema-title,
   .a-our-vision-title,
@@ -6078,14 +5703,12 @@ input[type="radio"]:checked+.mujer-estilo {
   .a-concert-channel-title {
     padding-top: 50px;
   }
-
   .a-today-claro-title,
   .a-today-cinema-title,
   .today-concert-title {
     font-size: 30px;
     padding: 30px 0px 58px 0px;
   }
-
   .login {
     position: absolute;
     right: -8px;
@@ -6095,22 +5718,18 @@ input[type="radio"]:checked+.mujer-estilo {
     padding: 8px;
     border-radius: 30px;
   }
-
   .nav-image {
     height: 72px;
     width: 100%;
   }
-
   .nav-li {
     text-align: center;
   }
-
   .a-subtitle {
     text-align: left;
     font-size: 16px;
     padding-bottom: 0%;
   }
-
   .transmission-text {
     position: absolute;
     left: 4%;
@@ -6119,19 +5738,22 @@ input[type="radio"]:checked+.mujer-estilo {
     font-size: 15px;
     font-family: "Montserrat-SemiBold";
   }
-
   .slick-slider {
     padding-bottom: 0px;
   }
-
   .header-slider .slick-slide {
     margin: 0 !important;
   }
-
   .header-slider .slick-track {
     margin-bottom: 0 !important;
   }
-
+  .a-cinema-rectangle,
+  .a-sports-rectangle,
+  .a-concert-rectangle,
+  .a-claro-rectangle,
+  .a-vision-rectangle {
+    height: 52px;
+  }
   /*End Generales - átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -6139,95 +5761,89 @@ input[type="radio"]:checked+.mujer-estilo {
   .margin-ahora-tv {
     margin-bottom: 21px;
   }
-
   .title-tv {
     font-size: 30px;
   }
-
   .login-item {
     width: 36px;
   }
-
   .concert-footer-img {
     width: 120px;
   }
-
   .concert-img-white {
     -webkit-filter: invert(1);
-    filter: invert(1);
+            filter: invert(1);
   }
-
   .advertising-title,
   .advertising-subtitle {
     text-align: left;
   }
-
   .home-header .navbar-item {
     color: #525050;
   }
-
   .section-home-footer {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-
   .header-h1 {
     color: #4f4f4f;
     font-size: 85px;
   }
-
   /*End Home - Átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
-  /*Concert channel - átomos*/
+  /*1.3 - Concert channel - átomos*/
   .concert-subtitle {
     padding-bottom: 60px;
   }
-
   .a-concert-channel-title {
     font-size: 32px;
     color: #ffffff;
     padding-bottom: 0%;
     text-align: left;
   }
-
   /*End Concert channel - átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
-  /*Claro canal - átomos*/
+  /*1.4 - Claro canal - átomos*/
   .a-next-claro-subtitle,
   .a-dontLose-claro-subtitle {
     font-size: 20px;
     padding-bottom: 30px;
     text-align: left;
   }
-
   .a-next-claro-title,
   .a-dontLose-claro-title {
     font-size: 40px;
     text-align: left;
     padding-bottom: 13px;
   }
-
   .a-next-claro-title,
   .a-dontLose-claro-title {
     font-size: 40px;
     text-align: left;
     padding-bottom: 13px;
   }
-
   .a-next-claro-subtitle,
   .a-dontLose-claro-subtitle {
     font-size: 20px;
     padding-bottom: 30px;
     text-align: left;
   }
-
   .next-week-thumb {
     padding-bottom: 54%;
   }
-
   /*End Claro canal - átomos*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*1.5 - Claro Cinema - átomos*/
+  .a-cinema-title {
+    padding-top: 35px;
+  }
+  .a-cinema-subtitle {
+    padding-bottom: 35px;
+  }
+  /*End Claro Cinema - átomos*/
   /*-----------------------------*/
   /*END ATOMS*/
   /***  2.- MOLECULES  ***/
@@ -6235,79 +5851,67 @@ input[type="radio"]:checked+.mujer-estilo {
   .menu {
     display: none;
   }
-
   .menu-tablet {
     display: none;
   }
-
   .menu-tablet {
     display: none;
   }
-
   .menu-desktop {
     display: block;
   }
-
   .terms-conditions-mobile {
     display: none;
   }
-
   .terms-conditions-desktop {
     display: block;
   }
-
   .footer-companies-desktop {
     display: block;
   }
-
   .tv-list {
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0;
     max-width: 900px;
     margin: 0 auto 37px auto;
     width: 100%;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   .slick-dots li button:before {
     font-size: 12px !important;
   }
-
   .slick-slider .slick-dots li {
     margin: 0 12px;
   }
-
   .social-media {
     margin: 46px auto 65px auto;
   }
-
   .nav-content {
     margin: 0px;
     position: relative;
   }
-
   .header-slider .slick-dots {
     bottom: 75px !important;
   }
-
   .header-slider .slick-dots li.slick-active button:before {
     color: white;
     opacity: 0.75;
   }
-
   .header-slider .slick-dots li button:before {
     color: white;
     opacity: 0.25;
   }
-
+  .header-slide {
+    padding-bottom: 33%;
+  }
   /*End General - Moleculas*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -6315,52 +5919,48 @@ input[type="radio"]:checked+.mujer-estilo {
   .home-header .menu-tablet {
     display: block;
   }
-
   .m-home-titles {
     padding-bottom: 20px;
   }
-
   .m-see-more {
     text-align: right;
     margin-bottom: 0px;
   }
-
   .o-tv-section .slick-dotted.slick-slider {
     margin-bottom: 100px !important;
   }
-
   .header-details {
     margin-top: 100px;
-    margin-bottom: 10%;
     display: inherit;
     text-align: left;
     margin-left: -15px;
   }
-
   /*End Home - Moleculas*/
   /*-----------------------------*/
   /*-----------------------------*/
   /*2.3 - Claro Canal - Moleculas*/
-  .claro-slide {
-    padding-bottom: 33%;
-  }
-
   .claro-canal-header .slick-dots {
     bottom: 20% !important;
   }
-
   /*End Claro Canal - Moleculas*/
   /*-----------------------------*/
   /*-----------------------------*/
   /*2.4 - Concert channel - Moleculas*/
-  .concert-slide {
-    padding-bottom: 45%;
-  }
-
   /*End Concert channel - Moleculas*/
   /*-----------------------------*/
   /*-----------------------------*/
   /*2.5 - Claro cinema - Moleculas*/
+  .header-title-section {
+    margin-bottom: 0;
+    padding: 0 calc(8% - 3px);
+  }
+  .cinema-slider {
+    margin: 0 -6px;
+    padding-top: 0;
+  }
+  .cinema-slide {
+    padding-bottom: 33%;
+  }
   /*End Claro cinema - Moleculas*/
   /*-----------------------------*/
   /*3.- ORGANISMS*/
@@ -6370,7 +5970,6 @@ input[type="radio"]:checked+.mujer-estilo {
     background: transparent;
     height: auto;
   }
-
   .menu {
     background: transparent;
     position: inherit;
@@ -6380,37 +5979,30 @@ input[type="radio"]:checked+.mujer-estilo {
     -webkit-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
   }
-
   .advertising-section-mobile {
     display: none;
   }
-
   .advertising-section-desktop {
     display: block;
   }
-
   .o-footer-section {
     max-width: 100%;
     padding-left: 7%;
     padding-right: 7%;
   }
-
   .o-advertising-section {
     max-width: 100%;
     padding-left: 14%;
     padding-right: 14%;
     margin: 120px auto;
   }
-
   .menu-responsive {
     display: none;
   }
-
   .logo {
     margin-left: 0;
     width: 85px;
   }
-
   .a-claro-cinema-title,
   .a-our-vision-title,
   .a-claro-channel-title,
@@ -6420,44 +6012,29 @@ input[type="radio"]:checked+.mujer-estilo {
     padding-bottom: 7px;
     text-align: left;
   }
-
-  .a-cinema-rectangle,
-  .a-sports-rectangle,
-  .a-concert-rectangle,
-  .a-claro-rectangle,
-  .a-vision-rectangle {
-    height: 45px;
-  }
-
   .advertising-title {
     font-size: 68px;
   }
-
   .footer-companies {
     display: none;
   }
-
   .footer-companies-desktop {
     display: block;
     padding: 60px 0;
   }
-
   .advertising-subtitle {
     font-size: 25px;
     color: #00caf5;
     font-family: "Gotham-Black";
   }
-
   .advertising-text {
     font-size: 14px;
   }
-
   .claro-navbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-
   /*End General - Organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -6467,68 +6044,53 @@ input[type="radio"]:checked+.mujer-estilo {
     padding: calc(3% + 4px) calc(8% - 10px) 0px calc(8% - 10px);
     height: auto;
   }
-
   .o-concert-section {
     background-color: #3e0a43;
   }
-
   .concert-channel-mobile {
     display: none;
   }
-
   .concert-channel-desktop {
     display: block;
   }
-
   .o-cinema-section {
     background-image: url(../images/home/claro-cinema-background.png);
     background-repeat: no-repeat;
     background-position: left;
     background-origin: content-box;
   }
-
   .cinema-claro-mobile {
     display: none;
   }
-
   .cinema-claro-desktop {
     display: block;
   }
-
   .o-vision-section {
     background-color: #d8d8d8;
   }
-
   .nuestra-vision-mobile {
     display: none;
   }
-
   .nuestra-vision-desktop {
     display: block;
   }
-
   .claro-canal-mobile {
     display: none;
   }
-
   .claro-canal-desktop {
     display: block;
   }
-
   .o-sports-section {
     background-image: url(../images/home/claro-sports-background.png);
     background-repeat: no-repeat;
     background-origin: content-box;
   }
-
   .claro-sports-mobile {
     display: none;
   }
-
   .claro-sports-desktop {
     display: block;
   }
-
   .o-concert-section,
   .o-cinema-section,
   .o-vision-section,
@@ -6539,22 +6101,18 @@ input[type="radio"]:checked+.mujer-estilo {
     padding-left: 112px;
     padding-right: 112px;
   }
-
   .circle-video {
     display: block;
     width: 65%;
     -webkit-clip-path: circle(50% at 70% 10%);
-    clip-path: circle(50% at 70% 10%);
+            clip-path: circle(50% at 70% 10%);
   }
-
   .concert-first-subtitle {
     font-size: 25px;
   }
-
   .concert-second-subtitle {
     font-size: 19px;
   }
-
   .a-concert-subtitle {
     color: #ffffff;
     padding-bottom: 0;
@@ -6563,16 +6121,13 @@ input[type="radio"]:checked+.mujer-estilo {
     text-transform: uppercase;
     font-size: 25px;
   }
-
   .poster-title-sport {
     font-size: 40px;
     text-align: left;
   }
-
   .aviso-border {
     margin-bottom: 0px;
   }
-
   /*End Home - Organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -6580,43 +6135,34 @@ input[type="radio"]:checked+.mujer-estilo {
   .claro-canal-header .header {
     padding: 0;
   }
-
   .claro-canal-header .menu-tablet {
     display: none;
   }
-
   .claro-canal-header .menu-desktop {
     display: block;
   }
-
   .today-container {
     padding: 0 7% 5% 7%;
   }
-
   .next-week-claro,
   .dont-lose-claro {
     margin: 0 7% 5% 7%;
     border-radius: 20px;
   }
-
   .next-week-container,
   .dont-lose-container {
     padding: 30px 30px 90px 30px;
   }
-
   .next-videos-tablet {
     display: block;
   }
-
   #next-week-slider {
     display: none;
   }
-
   .dontLose-slider-tablet {
     display: block;
     margin-top: 100px;
   }
-
   /*End Claro Canal - Organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -6626,7 +6172,6 @@ input[type="radio"]:checked+.mujer-estilo {
   .concerts {
     padding-bottom: 100px;
   }
-
   .concert-interviews,
   .today-concert-channel,
   .next-week-concert,
@@ -6634,38 +6179,47 @@ input[type="radio"]:checked+.mujer-estilo {
     padding-left: 8%;
     padding-right: 8%;
   }
-
   .week-videos-mobile {
     display: none;
   }
-
   .week-videos-tablet {
     display: block;
   }
-
   /*End Concert Channel - Organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
   /*3.5 - Claro Cinema - Organismos*/
+  .today-claro-cinema {
+    padding: 0 calc(8% - 3px) 67px;
+  }
+  .imperdibles-videos-mobile {
+    display: none;
+  }
+  .imperdibles-videos-tablet {
+    display: block;
+  }
+  .imperdibles-videos-tablet,
+  .recordar-container-videos,
+  .only-videos-container {
+    padding: 0 calc(8% - 3px);
+    margin: 100px 0;
+  }
   /*End Claro Cinema - Organismos*/
   /*-----------------------------*/
 }
 
 @media only screen and (min-width: 1900px) {
-
   /***  1.- ATOMS  ****/
   /*-----------------------------*/
   /*1.1 General -  Átomos  */
   .margin-ahora-tv {
     margin-bottom: 21px;
   }
-
   .header {
     background: transparent;
     padding: 0px;
     height: auto;
   }
-
   .a-claro-cinema-title,
   .a-our-vision-title,
   .a-claro-channel-title,
@@ -6675,96 +6229,66 @@ input[type="radio"]:checked+.mujer-estilo {
     padding-bottom: 7px;
     text-align: left;
   }
-
   .login-item {
     width: 36px;
   }
-
   .slick-slider .slick-list {
     padding: 0px 0px 0px 0px !important;
   }
-
   .a-cinema-rectangle,
   .a-sports-rectangle,
   .a-concert-rectangle,
   .a-claro-rectangle,
   .a-vision-rectangle {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    /*-webkit-box-orient: vertical;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: normal;
-      -webkit-line-clamp: 2;*/
-    height: 36px;
+    height: 52px;
   }
-
   .a-sports-text-poster,
   .a-poster-text-white,
   .a-poster-text-black {
     padding: 0px;
     font-size: 12px;
   }
-
   .concert-footer-img {
     width: 120px;
   }
-
   .concert-img-white {
     -webkit-filter: invert(1);
-    filter: invert(1);
+            filter: invert(1);
   }
-
   .advertising-image {
     width: 90%;
     display: block;
     margin: 0px auto;
   }
-
   .advertising-title,
   .advertising-subtitle {
     text-align: left;
   }
-
   .poster-title-margin {
     margin: 10px;
   }
-
   .a-subtitle {
     text-align: left;
     font-size: 19px;
     padding-bottom: 0%;
   }
-
   .footer-title {
     font-size: 30px;
   }
-
   .social-icon {
     width: 58px;
   }
-
   .claro-grey-img {
     width: 86px;
   }
-
   .text-footer-basic {
     font-size: 15px;
   }
-
   .text-footer-regular {
     font-size: 15px;
     margin-bottom: 8px;
     text-align: left;
   }
-
   .transmission-text {
     position: absolute;
     left: 4%;
@@ -6773,28 +6297,23 @@ input[type="radio"]:checked+.mujer-estilo {
     font-size: 15px;
     font-family: "Montserrat-SemiBold";
   }
-
   .menu-responsive-tablet {
     display: none;
   }
-
   .footer-img {
     width: 80px;
     height: 72px;
   }
-
   .small-footer-img {
     width: 90px;
     height: 60px;
   }
-
   .a-today-claro-title,
   .a-today-cinema-title,
   .today-concert-title {
     font-size: 40px;
     padding: 80px 0px;
   }
-
   .login {
     position: absolute;
     right: -8px;
@@ -6804,28 +6323,23 @@ input[type="radio"]:checked+.mujer-estilo {
     padding: 8px;
     border-radius: 30px;
   }
-
   .logo-footer {
     margin-bottom: 13px;
     text-align: left;
   }
-
   .thumbnail-info-image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-
   .thumbnail-info-title {
     float: left;
     width: 84%;
     margin-right: 1%;
   }
-
   .header-curve {
     bottom: -30%;
   }
-
   .a-cinema-rectangle,
   .a-sports-rectangle,
   .a-concert-rectangle,
@@ -6833,28 +6347,34 @@ input[type="radio"]:checked+.mujer-estilo {
   .a-vision-rectangle {
     height: 45px;
   }
-
   .advertising-title {
     font-size: 68px;
   }
-
   .navbar-item {
     font-size: 16px;
     color: white;
   }
-
   .header-slider .slick-slide {
     margin: 0 !important;
   }
-
   .header-slider .slick-track {
     margin-bottom: 0 !important;
   }
-
   .next-week-thumb {
     padding-bottom: 55%;
   }
-
+  .poster-pad-b {
+    padding-bottom: 9px;
+  }
+  .poster-pad-t {
+    padding-top: 9px;
+  }
+  .poster-pad-l {
+    padding-left: 9px !important;
+  }
+  .poster-pad-r {
+    padding-right: 9px !important;
+  }
   /*End General - Átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -6864,43 +6384,34 @@ input[type="radio"]:checked+.mujer-estilo {
     border-width: 15px;
     top: 150%;
   }
-
   .title-tv {
     font-size: 40px;
     margin-bottom: 40px;
   }
-
   .nav-image {
     height: 72px;
     width: 60%;
   }
-
   .nav-li {
     text-align: center;
   }
-
   .border-right {
     border-right: 1px solid #a1a0a0 !important;
     padding-right: 5px;
   }
-
   .home-header .navbar-item {
     color: #525050;
   }
-
   .navbar-item {
     font-size: 16px;
   }
-
   .footer-title-claro {
     font-size: 40px;
   }
-
   .header-h1 {
     color: #4f4f4f;
     font-size: 105px;
   }
-
   /*End Home - Átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -6911,14 +6422,12 @@ input[type="radio"]:checked+.mujer-estilo {
     text-align: left;
     padding-bottom: 13px;
   }
-
   .a-next-claro-subtitle,
   .a-dontLose-claro-subtitle {
     font-size: 30px;
     padding-bottom: 57px;
     text-align: left;
   }
-
   /*End Claro Canal - Átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -6928,17 +6437,26 @@ input[type="radio"]:checked+.mujer-estilo {
     padding-bottom: 6px;
     text-align: left;
   }
-
   .concert-subtitle {
     font-size: 25px;
     padding-bottom: 60px;
     text-align: left;
   }
-
   /*End Concert Channel - Átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
   /*1.5 Claro Cinema -  Átomos  */
+  .a-cinema-title {
+    font-size: 60px;
+    padding-top: 20px;
+  }
+  .a-cinema-subtitle {
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+  .a-cinema-subtitle, .a-cinema-title {
+    text-align: left;
+  }
   /*End Claro Cinema - Átomos*/
   /*-----------------------------*/
   /***  2. - MOLECULES  ***/
@@ -6947,53 +6465,44 @@ input[type="radio"]:checked+.mujer-estilo {
   .menu {
     display: none;
   }
-
   .home-header .menu-tablet {
     display: block;
   }
-
   .terms-conditions-mobile {
     display: none;
   }
-
   .terms-conditions-desktop {
     display: block;
   }
-
   .footer-companies-desktop {
     display: block;
   }
-
   .slick-dots li button:before {
     font-size: 14px !important;
   }
-
   .social-media {
     margin: 46px auto 65px auto;
   }
-
   .slick-slider .slick-dots li {
     margin: 0 12px;
   }
-
   .slick-dots {
     bottom: -40px !important;
   }
-
   .header-slider .slick-dots {
     bottom: 75px !important;
   }
-
   .header-slider .slick-dots li.slick-active button:before {
     color: white;
     opacity: 0.75;
   }
-
   .header-slider .slick-dots li button:before {
     color: white;
     opacity: 0.25;
   }
-
+  .header-slide {
+    padding-bottom: 33%;
+  }
   /*End General - Moleculas*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -7002,37 +6511,32 @@ input[type="radio"]:checked+.mujer-estilo {
     margin: 0px;
     position: relative;
   }
-
   .tv-list {
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0;
     max-width: 900px;
     margin: 0 auto 37px auto;
     width: 100%;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   .m-home-titles {
     padding-bottom: 20px;
   }
-
   .m-see-more {
     text-align: right;
     margin-bottom: 0px;
   }
-
   .o-tv-section .slick-dotted.slick-slider {
     margin-bottom: 100px !important;
   }
-
   .header-details {
     margin-top: 100px;
     margin-bottom: 10%;
@@ -7040,7 +6544,6 @@ input[type="radio"]:checked+.mujer-estilo {
     text-align: left;
     margin-left: -15px;
   }
-
   /*End Home - Moleculas*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -7048,11 +6551,9 @@ input[type="radio"]:checked+.mujer-estilo {
   .claro-slide {
     padding-bottom: 33%;
   }
-
   .claro-canal-header .slick-dots {
     bottom: 20% !important;
   }
-
   /*End Claro Canal - Moleculas*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -7060,11 +6561,17 @@ input[type="radio"]:checked+.mujer-estilo {
   .concert-slide {
     padding-bottom: 45%;
   }
-
   /*End Concert Channel - Moleculas*/
   /*-----------------------------*/
   /*-----------------------------*/
   /*2.5 - Claro Cinema- Moleculas*/
+  .header-title-section {
+    padding-left: 10%;
+    margin-bottom: 0;
+  }
+  .cinema-slider {
+    padding-top: 0px;
+  }
   /*End Claro Cinema - Moleculas*/
   /*-----------------------------*/
   /*3.- ORGANISMS*/
@@ -7073,7 +6580,6 @@ input[type="radio"]:checked+.mujer-estilo {
   .slick-slider {
     padding-bottom: 0px;
   }
-
   .menu {
     background: transparent;
     position: inherit;
@@ -7083,86 +6589,68 @@ input[type="radio"]:checked+.mujer-estilo {
     -webkit-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
   }
-
   .advertising-section-mobile {
     display: none;
   }
-
   .advertising-section-desktop {
     display: block;
   }
-
   .o-footer-section {
     max-width: 100%;
     padding-left: 7%;
     padding-right: 7%;
   }
-
   .o-advertising-section {
     max-width: 100%;
     padding-left: 14%;
     padding-right: 14%;
   }
-
   .menu-responsive {
     display: none;
   }
-
   .logo {
     margin-left: 0;
     width: 85px;
   }
-
   .footer-companies-desktop {
     padding: 60px 0;
   }
-
   .footer-companies {
     display: none;
   }
-
   .footer-companies-desktop {
     display: block;
   }
-
   .aviso-border {
     margin-bottom: 0px;
   }
-
   .claro-navbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     background: transparent;
   }
-
   .advertising-subtitle {
     font-size: 25px;
     color: #00caf5;
     font-family: "Gotham-Black";
   }
-
   .advertising-text {
     font-size: 14px;
   }
-
   .poster-title-sport {
     font-size: 40px;
     text-align: left;
   }
-
   .header {
     padding: 0;
   }
-
   .menu-tablet {
     display: none;
   }
-
   .menu-desktop {
     display: block;
   }
-
   /*End General - Organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -7170,89 +6658,70 @@ input[type="radio"]:checked+.mujer-estilo {
   .tv-videos-container {
     margin-top: 60px;
   }
-
   .o-claro-section .home-section-header {
     padding-top: 25px;
     padding-bottom: 75px;
   }
-
   .home-section-header {
     padding-top: 100px;
     padding-bottom: 75px;
   }
-
   .section-home-footer {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-
   .home-header .header {
     background: transparent;
     padding: calc(3% + 4px) calc(8% - 10px) 0px calc(8% - 10px);
     height: auto;
   }
-
   .o-concert-section {
     background-color: #3e0a43;
   }
-
   .concert-channel-mobile {
     display: none;
   }
-
   .concert-channel-desktop {
     display: block;
   }
-
   .o-cinema-section {
     background-image: url(../images/home/claro-cinema-background.png);
     background-repeat: no-repeat;
     background-position: left;
     background-origin: content-box;
   }
-
   .cinema-claro-mobile {
     display: none;
   }
-
   .cinema-claro-desktop {
     display: block;
   }
-
   .o-vision-section {
     background-color: #d8d8d8;
   }
-
   .nuestra-vision-mobile {
     display: none;
   }
-
   .nuestra-vision-desktop {
     display: block;
   }
-
   .claro-canal-mobile {
     display: none;
   }
-
   .claro-canal-desktop {
     display: block;
   }
-
   .o-sports-section {
     background-image: url(../images/home/claro-sports-background.png);
     background-repeat: no-repeat;
     background-origin: content-box;
   }
-
   .claro-sports-mobile {
     display: none;
   }
-
   .claro-sports-desktop {
     display: block;
   }
-
   .o-concert-section,
   .o-cinema-section,
   .o-vision-section,
@@ -7263,22 +6732,18 @@ input[type="radio"]:checked+.mujer-estilo {
     padding-left: 10%;
     padding-right: 10%;
   }
-
   .circle-video {
     display: block;
     width: 65%;
     -webkit-clip-path: circle(50% at 70% 10%);
-    clip-path: circle(50% at 70% 10%);
+            clip-path: circle(50% at 70% 10%);
   }
-
   .concert-first-subtitle {
     font-size: 25px;
   }
-
   .concert-second-subtitle {
     font-size: 19px;
   }
-
   .a-concert-subtitle {
     color: #ffffff;
     padding-bottom: 0;
@@ -7287,7 +6752,6 @@ input[type="radio"]:checked+.mujer-estilo {
     text-transform: uppercase;
     font-size: 25px;
   }
-
   /*End Home - Organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -7298,39 +6762,31 @@ input[type="radio"]:checked+.mujer-estilo {
     margin-left: 10%;
     margin-right: 10%;
   }
-
   .next-week-claro,
   .dont-lose-claro {
     border-radius: 20px;
   }
-
   .next-week-claro,
   .today-container {
     margin-bottom: 80px;
   }
-
   .dont-lose-claro {
     margin-bottom: 115px;
   }
-
   .next-week-container,
   .dont-lose-container {
     padding: 30px 30px 90px 30px;
   }
-
   .next-videos-tablet {
     display: block;
   }
-
   #next-week-slider {
     display: none;
   }
-
   .dontLose-slider-tablet {
     display: block;
     margin-top: 120px;
   }
-
   /*End Claro Canal - Organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -7343,21 +6799,40 @@ input[type="radio"]:checked+.mujer-estilo {
     padding-right: 10%;
     padding-bottom: 115px;
   }
-
   .week-videos-mobile {
     display: none;
   }
-
   .week-videos-tablet {
     display: block;
   }
-
   /*End Concert Channel - Organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
   /*3.5 - Claro Cinema - Organismos*/
+  .today-claro-cinema,
+  .imperdibles-videos-desktop,
+  .recordar-container-videos,
+  .only-videos-container {
+    padding: 0 10%;
+  }
+  .imperdibles-videos-mobile {
+    display: none;
+  }
+  .imperdibles-videos-tablet {
+    display: none;
+  }
+  .imperdibles-videos-desktop {
+    display: block;
+  }
+  .today-claro-cinema {
+    margin-bottom: 120px;
+  }
+  .imperdibles-videos-desktop,
+  .recordar-container-videos,
+  .only-videos-container {
+    margin: 120px 0;
+  }
   /*End Claro Cinema - Organismos*/
   /*-----------------------------*/
 }
-
 /*# sourceMappingURL=style.css.map */

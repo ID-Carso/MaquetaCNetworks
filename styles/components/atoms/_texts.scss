@@ -52,9 +52,11 @@
 }
 
 .a-concert-channel-subtitle {
-  @include title-section($colorWhite,
+  @include title-section(
+    $colorWhite,
     $posterTitleResponsive,
-    $fontFamily: $montserratSemiBold);
+    $fontFamily: $montserratSemiBold
+  );
   padding-bottom: 14px;
 }
 
@@ -97,11 +99,15 @@
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .a-poster-text-black {
   @include poster-text($pureBlack, $posterTitleResponsive);
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .advertising-title {
@@ -745,7 +751,6 @@
 }
 
 .claro-active {
-
   .day-text,
   .day-number {
     color: white;
@@ -753,7 +758,6 @@
 }
 
 .concert-active {
-
   .day-text,
   .day-number {
     color: white;
@@ -761,7 +765,6 @@
 }
 
 .cinema-active {
-
   .day-text,
   .day-number {
     color: white;
@@ -769,7 +772,6 @@
 }
 
 .vision-active {
-
   .day-text,
   .day-number {
     color: white;
@@ -777,7 +779,6 @@
 }
 
 .sports-active {
-
   .day-text,
   .day-number {
     color: white;
@@ -795,11 +796,20 @@
 }
 
 .schedule,
-.schedule-days,
-.rating-alert,
 .rating {
   font-family: $montserratSemiBold;
-  font-size: 14px;
+}
+
+.schedule {
+  font-size: 12px;
+}
+
+.rating {
+  font-size: 10px;
+}
+
+.schedule-add-text {
+  margin-bottom: 0;
 }
 
 .rating,
@@ -807,6 +817,12 @@
 .schedule,
 .schedule-days {
   margin-bottom: 0px;
+}
+
+.schedule-title {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-family: $montserratBlack;
 }
 
 .month {
@@ -942,8 +958,6 @@
   letter-spacing: normal;
   color: #666262;
   text-align: initial;
-
-
 }
 
 .titulos-configuraciones {
