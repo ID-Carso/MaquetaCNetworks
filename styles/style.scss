@@ -124,7 +124,7 @@
   }
 
   .footer-title {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .social-icon {
@@ -140,7 +140,11 @@
   }
 
   .slick-dots li button:before {
-    font-size: 9px !important;
+    font-size: 12px !important;
+  }
+
+  .slick-slider .slick-dots li {
+    margin: 0 10px;
   }
   /*End General - Átomos*/
   /*============================*/
@@ -315,6 +319,54 @@
   /*End Claro Cinema - Átomos*/
   /*============================*/
 
+  /*============================*/
+  /*1.6 - Programación - Átomos*/
+  .month {
+    margin: 40px 0;
+    font-size: 30px;
+  }
+
+  .programacion-slider {
+    .arrow-prev {
+      left: -12%;
+    }
+
+    .arrow-next {
+      right: -12%;
+    }
+  }
+
+  .day-number {
+    font-size: 29px;
+  }
+
+  .day-text {
+    font-size: 19px;
+  }
+
+  .programacion-main-title {
+    font-size: 30px;
+  }
+
+  .schedule-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .schedule {
+    font-size: 30px;
+  }
+
+  .rating {
+    font-size: 18px;
+  }
+
+  .schedule-add {
+    font-size: 14px;
+  }
+  /*End Programación - Átomos*/
+  /*============================*/
+
   /*2.- MOLECULES*/
 
   /*============================*/
@@ -343,6 +395,17 @@
   .social-media {
     margin: 46px auto 65px auto;
   }
+
+  .programacion-slider {
+    margin-bottom: 150px;
+  }
+
+  .header-slider {
+    .slick-dots {
+      bottom: 50px !important;
+    }
+  }
+
   /*End General - Moleculas*/
   /*============================*/
 
@@ -401,6 +464,34 @@
   /*End Claro Cinema - Moleculas*/
   /*============================*/
 
+  /*============================*/
+  /*2.6 - Programación - Moleculas*/
+  .programacion-slider {
+    .slick-slide {
+      width: 1.185% !important;
+      margin: 0 2px;
+    }
+
+    .slick-dots {
+      bottom: -20px !important;
+    }
+  }
+
+  .programacion .tv-list {
+    margin: 0px auto;
+  }
+
+  .programacion .programacion-slider {
+    margin-bottom: 0 !important;
+  }
+
+  .header-slide {
+    padding-bottom: 53%;
+  }
+
+  /*End Programación - Moleculas*/
+  /*============================*/
+
   /*3.- ORGANISMS*/
 
   /*============================*/
@@ -423,7 +514,8 @@
   .concert-channel-header .menu-tablet,
   .claro-canal-header .menu-tablet,
   .synopsis-header .menu-tablet,
-  .claro-cinema-header .menu-tablet {
+  .claro-cinema-header .menu-tablet,
+  .programacion-header .menu-tablet {
     background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
     padding: 5%;
   }
@@ -632,6 +724,18 @@
   /*============================*/
   /*3.5 - Claro Cinema - Organismos*/
   /*End Claro Cinema - Organismos*/
+  /*============================*/
+
+  /*============================*/
+  /*3.6 - Programación - Organismos*/
+  .schedule-item-body {
+    padding-bottom: 60px;
+  }
+
+  .schedule-container {
+    margin-top: 60px;
+  }
+  /*End Programación - Organismos*/
   /*============================*/
 }
 
@@ -1016,6 +1120,60 @@
   /*End Claro Cinema - átomos*/
   /*-----------------------------*/
 
+  /*-----------------------------*/
+  /*1.5 - Programación - Átomos */
+  .month {
+    margin: 40px 0;
+    font-size: 30px;
+  }
+
+  .programacion-main-title {
+    font-size: 30px;
+  }
+
+  .programacion-slider {
+    padding-bottom: 0;
+
+    .arrow-next {
+      right: -9%;
+    }
+
+    .arrow-prev {
+      left: -9%;
+    }
+  }
+
+  .schedule-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .schedule-poster {
+    width: 42%;
+    margin-right: 5%;
+  }
+
+  .schedule-description {
+    display: block;
+  }
+
+  .schedule {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  .rating {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .schedule-add {
+    font-size: 14px;
+  }
+
+  /*End Programación - átomos*/
+  /*-----------------------------*/
+
   /***  2. MOLECULES  ***/
 
   /*-----------------------------*/
@@ -1151,6 +1309,30 @@
   /*End Claro Cinema - Moelculas*/
   /*-----------------------------*/
 
+  /*-----------------------------*/
+  /*2.5 - Programación - Moleculas*/
+  .programacion .tv-list {
+    margin: 0px auto;
+  }
+
+  .programacion-slider .slick-slide {
+    width: 0.858% !important;
+  }
+
+  .programacion .tv-list {
+    max-width: 600px;
+  }
+
+  .schedule-details {
+    width: 63%;
+  }
+
+  .schedule-details-header {
+    flex-direction: row;
+  }
+  /*End Programación - Moelculas*/
+  /*-----------------------------*/
+
   /*3.- ORGANISMS*/
   /*-----------------------------*/
   /*3.1 - Generales - Organismos*/
@@ -1175,7 +1357,8 @@
   .concert-channel-header .menu-tablet,
   .claro-canal-header .menu-tablet,
   .synopsis-header .menu-tablet,
-  .claro-cinema-header .menu-tablet {
+  .claro-cinema-header .menu-tablet,
+  .programacion-header .menu-tablet {
     background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
     padding: calc(2% + 2px);
   }
@@ -1427,6 +1610,27 @@
   /*End Sinópsis - organismos*/
   /*-----------------------------*/
 
+  /*-----------------------------*/
+  /*3.7 - Programación - Organismos*/
+  .pro-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .schedule-item-body {
+    padding-bottom: 53px;
+  }
+
+  .schedule-container {
+    margin-top: 53px;
+  }
+
+  .programacion-header .header {
+    height: auto;
+  }
+  /*End Programación - organismos*/
+  /*-----------------------------*/
+
   /*.imperdibles,
   .fuera-ley,
   .recordar,
@@ -1629,6 +1833,11 @@
     height: 52px;
   }
 
+  .nav-image {
+    height: 72px;
+    width: 80%;
+  }
+
   /*End Generales - átomos*/
   /*-----------------------------*/
 
@@ -1737,6 +1946,56 @@
     padding-bottom: 35px;
   }
   /*End Claro Cinema - átomos*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*1.6 - Programación - átomos*/
+  .programacion-main-title {
+    font-size: 30px;
+    padding-top: 25px;
+    padding-bottom: 80px;
+  }
+
+  .month {
+    margin: 35px 0;
+    font-size: 30px;
+  }
+
+  .programacion-slider .arrow-next {
+    right: -9%;
+  }
+  .programacion-slider .arrow-prev {
+    left: -9%;
+  }
+
+  .schedule-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .schedule-poster {
+    width: 42%;
+    margin-right: 5%;
+  }
+
+  .schedule {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  .schedule-description {
+    display: block;
+  }
+
+  .rating {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .schedule-add {
+    font-size: 14px;
+  }
+
+  /*End Programación - átomos*/
   /*-----------------------------*/
 
   /*END ATOMS*/
@@ -1888,6 +2147,26 @@
   /*End Claro cinema - Moleculas*/
   /*-----------------------------*/
 
+  /*-----------------------------*/
+  /*2.5 - Programación - Moleculas*/
+  .programacion .tv-list {
+    max-width: 800px;
+  }
+
+  .programacion-slider .slick-slide {
+    width: 0.858% !important;
+  }
+
+  .schedule-details {
+    width: 63%;
+  }
+
+  .schedule-details-header {
+    flex-direction: row;
+  }
+  /*End Programación - Moleculas*/
+  /*-----------------------------*/
+
   /*3.- ORGANISMS*/
 
   /*-----------------------------*/
@@ -1922,10 +2201,11 @@
   }
 
   .o-advertising-section {
-    max-width: 100%;
-    padding-left: 14%;
-    padding-right: 14%;
+    max-width: 1050px;
+    width: 100%;
     margin: 120px auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .menu-responsive {
@@ -2187,6 +2467,28 @@
   }
   /*End Claro Cinema - Organismos*/
   /*-----------------------------*/
+
+  /*-----------------------------*/
+  /*3.5 - Programación - Organismos*/
+  .programacion .o-tv-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .pro-container {
+    padding: 0 16%;
+  }
+
+  .schedule-container {
+    margin-top: 50px;
+  }
+
+  .schedule-item-body {
+    padding-bottom: 50px;
+  }
+
+  /*End Programación - Organismos*/
+  /*-----------------------------*/
 }
 
 @media only screen and (min-width: 1900px) {
@@ -2267,7 +2569,7 @@
   }
 
   .footer-title {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .social-icon {
@@ -2495,10 +2797,56 @@
     padding-bottom: 20px;
   }
 
-  .a-cinema-subtitle, .a-cinema-title{
+  .a-cinema-subtitle,
+  .a-cinema-title {
     text-align: left;
   }
   /*End Claro Cinema - Átomos*/
+  /*-----------------------------*/
+
+  /*-----------------------------*/
+  /*1.6 Programación -  Átomos  */
+  .programacion-main-title {
+    padding: 50px 0;
+    font-size: 60px;
+  }
+
+  .month {
+    margin: 35px 0;
+    font-size: 30px;
+  }
+
+  .schedule-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .schedule-description {
+    display: block;
+  }
+
+  .schedule {
+    font-size: 30px;
+  }
+
+  .rating {
+    font-size: 18px;
+  }
+
+  .schedule-add {
+    font-size: 14px;
+  }
+
+  .programacion {
+    .arrow-prev {
+      left: -10%;
+    }
+
+    .arrow-next {
+      right: -10%;
+    }
+  }
+  /*End Programación - Átomos*/
   /*-----------------------------*/
 
   /***  2. - MOLECULES  ***/
@@ -2559,7 +2907,7 @@
   }
 
   .header-slide {
-    padding-bottom: 33%;
+    padding-bottom: 30%;
   }
 
   /*End General - Moleculas*/
@@ -2639,6 +2987,33 @@
     padding-top: 0px;
   }
   /*End Claro Cinema - Moleculas*/
+  /*-----------------------------*/
+
+  /*-----------------------------*/
+  /*2.6 - Programación - Moleculas*/
+
+  .programacion {
+    .o-tv-section {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .tv-list {
+      max-width: 1200px;
+      margin: 0 auto 35xpx auto;
+    }
+  }
+
+  .schedule-details-header {
+    flex-direction: row;
+  }
+
+  .programacion-slider .slick-slide {
+    width: 0.553% !important;
+    margin: 0 2px;
+  }
+
+  /*End Programación - Moleculas*/
   /*-----------------------------*/
 
   /*3.- ORGANISMS*/
@@ -2965,5 +3340,23 @@
   }
 
   /*End Claro Cinema - Organismos*/
+  /*-----------------------------*/
+
+  /*-----------------------------*/
+  /*3.5 - Programación - Organismos*/
+  .pro-container {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .schedule-poster {
+    width: 42%;
+    margin-right: 5%;
+  }
+
+  .schedule-item-body {
+    padding-bottom: 50px;
+  }
+  /*End Programación - Organismos*/
   /*-----------------------------*/
 }

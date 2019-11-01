@@ -1279,6 +1279,23 @@ h6 {
   color: #22c6cb !important;
 }
 
+.programacion-main-title {
+  padding: 30px 0;
+  font-family: "Montserrat-Black";
+  color: #e1261c;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.schedule-description {
+  display: none;
+  font-family: "Montserrat-Regular";
+  margin-bottom: 0;
+  color: #7a7777;
+  font-size: 16px;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -2496,6 +2513,10 @@ input:checked + .slideralert:before {
   overflow: hidden;
 }
 
+.claro-item {
+  padding: 10px 0;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 .login-item:first-child {
@@ -3632,10 +3653,6 @@ input[type="radio"]:checked + .mujer-estilo {
   }
 }
 
-.programacion .tv-list {
-  margin: 41px auto;
-}
-
 .calendar,
 .claro-calendar,
 .concert-calendar,
@@ -4158,7 +4175,8 @@ input[type="radio"]:checked + .mujer-estilo {
   margin-top: 26px;
 }
 
-.schedule-details {
+.schedule-details,
+.schedule-details-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4169,6 +4187,10 @@ input[type="radio"]:checked + .mujer-estilo {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.schedule-details-header {
+  height: 100%;
 }
 
 .rating-container {
@@ -4266,12 +4288,8 @@ input[type="radio"]:checked + .mujer-estilo {
   display: none;
 }
 
-.pro-container .o-advertising-section {
-  margin: 60px auto 60px auto;
-}
-
 .o-advertising-section {
-  margin: 0px auto 60px auto;
+  margin: 100px auto 60px auto;
   padding-left: 5%;
   padding-right: 5%;
   max-width: 600px;
@@ -4427,6 +4445,9 @@ input[type="radio"]:checked + .mujer-estilo {
   display: none;
 }
 
+/*.pro-container .o-advertising-section {
+  margin: 60px auto 60px auto;
+}*/
 .terms-conditions-desktop {
   display: none;
 }
@@ -4514,7 +4535,7 @@ input[type="radio"]:checked + .mujer-estilo {
     font-family: "Gotham-Black";
   }
   .footer-title {
-    font-size: 30px;
+    font-size: 40px;
   }
   .social-icon {
     width: 58px;
@@ -4526,7 +4547,10 @@ input[type="radio"]:checked + .mujer-estilo {
     width: 100%;
   }
   .slick-dots li button:before {
-    font-size: 9px !important;
+    font-size: 12px !important;
+  }
+  .slick-slider .slick-dots li {
+    margin: 0 10px;
   }
   /*End General - Átomos*/
   /*============================*/
@@ -4671,6 +4695,42 @@ input[type="radio"]:checked + .mujer-estilo {
   /*1.5 - Claro Cinema - Átomos*/
   /*End Claro Cinema - Átomos*/
   /*============================*/
+  /*============================*/
+  /*1.6 - Programación - Átomos*/
+  .month {
+    margin: 40px 0;
+    font-size: 30px;
+  }
+  .programacion-slider .arrow-prev {
+    left: -12%;
+  }
+  .programacion-slider .arrow-next {
+    right: -12%;
+  }
+  .day-number {
+    font-size: 29px;
+  }
+  .day-text {
+    font-size: 19px;
+  }
+  .programacion-main-title {
+    font-size: 30px;
+  }
+  .schedule-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .schedule {
+    font-size: 30px;
+  }
+  .rating {
+    font-size: 18px;
+  }
+  .schedule-add {
+    font-size: 14px;
+  }
+  /*End Programación - Átomos*/
+  /*============================*/
   /*2.- MOLECULES*/
   /*============================*/
   /*2.1 - General - Moleculas*/
@@ -4692,6 +4752,12 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .social-media {
     margin: 46px auto 65px auto;
+  }
+  .programacion-slider {
+    margin-bottom: 150px;
+  }
+  .header-slider .slick-dots {
+    bottom: 50px !important;
   }
   /*End General - Moleculas*/
   /*============================*/
@@ -4745,6 +4811,26 @@ input[type="radio"]:checked + .mujer-estilo {
   /*2.5 - Claro Cinema - Moleculas*/
   /*End Claro Cinema - Moleculas*/
   /*============================*/
+  /*============================*/
+  /*2.6 - Programación - Moleculas*/
+  .programacion-slider .slick-slide {
+    width: 1.185% !important;
+    margin: 0 2px;
+  }
+  .programacion-slider .slick-dots {
+    bottom: -20px !important;
+  }
+  .programacion .tv-list {
+    margin: 0px auto;
+  }
+  .programacion .programacion-slider {
+    margin-bottom: 0 !important;
+  }
+  .header-slide {
+    padding-bottom: 53%;
+  }
+  /*End Programación - Moleculas*/
+  /*============================*/
   /*3.- ORGANISMS*/
   /*============================*/
   /*3.1 - General - Organismos*/
@@ -4765,7 +4851,8 @@ input[type="radio"]:checked + .mujer-estilo {
   .concert-channel-header .menu-tablet,
   .claro-canal-header .menu-tablet,
   .synopsis-header .menu-tablet,
-  .claro-cinema-header .menu-tablet {
+  .claro-cinema-header .menu-tablet,
+  .programacion-header .menu-tablet {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
     background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
     padding: 5%;
@@ -4932,6 +5019,16 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*3.5 - Claro Cinema - Organismos*/
   /*End Claro Cinema - Organismos*/
+  /*============================*/
+  /*============================*/
+  /*3.6 - Programación - Organismos*/
+  .schedule-item-body {
+    padding-bottom: 60px;
+  }
+  .schedule-container {
+    margin-top: 60px;
+  }
+  /*End Programación - Organismos*/
   /*============================*/
 }
 
@@ -5252,6 +5349,48 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   /*End Claro Cinema - átomos*/
   /*-----------------------------*/
+  /*-----------------------------*/
+  /*1.5 - Programación - Átomos */
+  .month {
+    margin: 40px 0;
+    font-size: 30px;
+  }
+  .programacion-main-title {
+    font-size: 30px;
+  }
+  .programacion-slider {
+    padding-bottom: 0;
+  }
+  .programacion-slider .arrow-next {
+    right: -9%;
+  }
+  .programacion-slider .arrow-prev {
+    left: -9%;
+  }
+  .schedule-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .schedule-poster {
+    width: 42%;
+    margin-right: 5%;
+  }
+  .schedule-description {
+    display: block;
+  }
+  .schedule {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .rating {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .schedule-add {
+    font-size: 14px;
+  }
+  /*End Programación - átomos*/
+  /*-----------------------------*/
   /***  2. MOLECULES  ***/
   /*-----------------------------*/
   /*2.1 - General - Moleculas*/
@@ -5362,6 +5501,28 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   /*End Claro Cinema - Moelculas*/
   /*-----------------------------*/
+  /*-----------------------------*/
+  /*2.5 - Programación - Moleculas*/
+  .programacion .tv-list {
+    margin: 0px auto;
+  }
+  .programacion-slider .slick-slide {
+    width: 0.858% !important;
+  }
+  .programacion .tv-list {
+    max-width: 600px;
+  }
+  .schedule-details {
+    width: 63%;
+  }
+  .schedule-details-header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  /*End Programación - Moelculas*/
+  /*-----------------------------*/
   /*3.- ORGANISMS*/
   /*-----------------------------*/
   /*3.1 - Generales - Organismos*/
@@ -5384,7 +5545,8 @@ input[type="radio"]:checked + .mujer-estilo {
   .concert-channel-header .menu-tablet,
   .claro-canal-header .menu-tablet,
   .synopsis-header .menu-tablet,
-  .claro-cinema-header .menu-tablet {
+  .claro-cinema-header .menu-tablet,
+  .programacion-header .menu-tablet {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
     background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
     padding: calc(2% + 2px);
@@ -5588,6 +5750,23 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   /*End Sinópsis - organismos*/
   /*-----------------------------*/
+  /*-----------------------------*/
+  /*3.7 - Programación - Organismos*/
+  .pro-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .schedule-item-body {
+    padding-bottom: 53px;
+  }
+  .schedule-container {
+    margin-top: 53px;
+  }
+  .programacion-header .header {
+    height: auto;
+  }
+  /*End Programación - organismos*/
+  /*-----------------------------*/
   /*.imperdibles,
   .fuera-ley,
   .recordar,
@@ -5754,6 +5933,10 @@ input[type="radio"]:checked + .mujer-estilo {
   .a-vision-rectangle {
     height: 52px;
   }
+  .nav-image {
+    height: 72px;
+    width: 80%;
+  }
   /*End Generales - átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -5844,6 +6027,47 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-bottom: 35px;
   }
   /*End Claro Cinema - átomos*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*1.6 - Programación - átomos*/
+  .programacion-main-title {
+    font-size: 30px;
+    padding-top: 25px;
+    padding-bottom: 80px;
+  }
+  .month {
+    margin: 35px 0;
+    font-size: 30px;
+  }
+  .programacion-slider .arrow-next {
+    right: -9%;
+  }
+  .programacion-slider .arrow-prev {
+    left: -9%;
+  }
+  .schedule-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .schedule-poster {
+    width: 42%;
+    margin-right: 5%;
+  }
+  .schedule {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .schedule-description {
+    display: block;
+  }
+  .rating {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .schedule-add {
+    font-size: 14px;
+  }
+  /*End Programación - átomos*/
   /*-----------------------------*/
   /*END ATOMS*/
   /***  2.- MOLECULES  ***/
@@ -5963,6 +6187,25 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   /*End Claro cinema - Moleculas*/
   /*-----------------------------*/
+  /*-----------------------------*/
+  /*2.5 - Programación - Moleculas*/
+  .programacion .tv-list {
+    max-width: 800px;
+  }
+  .programacion-slider .slick-slide {
+    width: 0.858% !important;
+  }
+  .schedule-details {
+    width: 63%;
+  }
+  .schedule-details-header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  /*End Programación - Moleculas*/
+  /*-----------------------------*/
   /*3.- ORGANISMS*/
   /*-----------------------------*/
   /*3.1 - General- Organismos*/
@@ -5991,10 +6234,11 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-right: 7%;
   }
   .o-advertising-section {
-    max-width: 100%;
-    padding-left: 14%;
-    padding-right: 14%;
+    max-width: 1050px;
+    width: 100%;
     margin: 120px auto;
+    padding-left: 0;
+    padding-right: 0;
   }
   .menu-responsive {
     display: none;
@@ -6206,6 +6450,23 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   /*End Claro Cinema - Organismos*/
   /*-----------------------------*/
+  /*-----------------------------*/
+  /*3.5 - Programación - Organismos*/
+  .programacion .o-tv-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .pro-container {
+    padding: 0 16%;
+  }
+  .schedule-container {
+    margin-top: 50px;
+  }
+  .schedule-item-body {
+    padding-bottom: 50px;
+  }
+  /*End Programación - Organismos*/
+  /*-----------------------------*/
 }
 
 @media only screen and (min-width: 1900px) {
@@ -6273,7 +6534,7 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-bottom: 0%;
   }
   .footer-title {
-    font-size: 30px;
+    font-size: 40px;
   }
   .social-icon {
     width: 58px;
@@ -6454,10 +6715,45 @@ input[type="radio"]:checked + .mujer-estilo {
     font-size: 25px;
     padding-bottom: 20px;
   }
-  .a-cinema-subtitle, .a-cinema-title {
+  .a-cinema-subtitle,
+  .a-cinema-title {
     text-align: left;
   }
   /*End Claro Cinema - Átomos*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*1.6 Programación -  Átomos  */
+  .programacion-main-title {
+    padding: 50px 0;
+    font-size: 60px;
+  }
+  .month {
+    margin: 35px 0;
+    font-size: 30px;
+  }
+  .schedule-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .schedule-description {
+    display: block;
+  }
+  .schedule {
+    font-size: 30px;
+  }
+  .rating {
+    font-size: 18px;
+  }
+  .schedule-add {
+    font-size: 14px;
+  }
+  .programacion .arrow-prev {
+    left: -10%;
+  }
+  .programacion .arrow-next {
+    right: -10%;
+  }
+  /*End Programación - Átomos*/
   /*-----------------------------*/
   /***  2. - MOLECULES  ***/
   /*-----------------------------*/
@@ -6501,7 +6797,7 @@ input[type="radio"]:checked + .mujer-estilo {
     opacity: 0.25;
   }
   .header-slide {
-    padding-bottom: 33%;
+    padding-bottom: 30%;
   }
   /*End General - Moleculas*/
   /*-----------------------------*/
@@ -6573,6 +6869,28 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-top: 0px;
   }
   /*End Claro Cinema - Moleculas*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*2.6 - Programación - Moleculas*/
+  .programacion .o-tv-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .programacion .tv-list {
+    max-width: 1200px;
+    margin: 0 auto 35xpx auto;
+  }
+  .schedule-details-header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .programacion-slider .slick-slide {
+    width: 0.553% !important;
+    margin: 0 2px;
+  }
+  /*End Programación - Moleculas*/
   /*-----------------------------*/
   /*3.- ORGANISMS*/
   /*-----------------------------*/
@@ -6833,6 +7151,21 @@ input[type="radio"]:checked + .mujer-estilo {
     margin: 120px 0;
   }
   /*End Claro Cinema - Organismos*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*3.5 - Programación - Organismos*/
+  .pro-container {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .schedule-poster {
+    width: 42%;
+    margin-right: 5%;
+  }
+  .schedule-item-body {
+    padding-bottom: 50px;
+  }
+  /*End Programación - Organismos*/
   /*-----------------------------*/
 }
 /*# sourceMappingURL=style.css.map */

@@ -89,12 +89,14 @@
           <div class="claro-logo">
             <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
 
-            <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
+            <a href="index.php">
+                        <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
+                        </a>
           </div>
 
           <div class="login">
             <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-            <a href="paises.html" class="login-item"><img src="./images/home/pais.svg" alt="" /></a>
+            <a href="paises.html" class="login-item"><img class="login-country" alt="" /></a>
           </div>
         </div>
       </nav>
@@ -131,7 +133,6 @@
         <div class="no-gutters">
           <div class="">
             <div class="section-slider cinema-slider">
-
               <div class="poster">
                 <div class="thumbnail">
                   <div class="showtime-container">

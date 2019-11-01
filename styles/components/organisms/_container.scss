@@ -12,10 +12,15 @@
   margin-top: 26px;
 }
 
-.schedule-details {
+.schedule-details,
+.schedule-details-header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.schedule-details-header {
+  height: 100%;
 }
 
 .rating-container {
