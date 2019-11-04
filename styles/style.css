@@ -4271,9 +4271,6 @@ input[type="radio"]:checked + .mujer-estilo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .schedule-poster {
@@ -4785,6 +4782,16 @@ input[type="radio"]:checked + .mujer-estilo {
   .synopsis-text {
     margin-bottom: 0;
   }
+  .synopsis-schedule-title {
+    font-size: 30px;
+  }
+  .synopsis-schedule-title {
+    margin-bottom: 95px !important;
+  }
+  .synopsis-section-title {
+    font-size: 30px;
+    padding: 50px 0;
+  }
   /*End Sinópsis - Átomos*/
   /*============================*/
   /*2.- MOLECULES*/
@@ -5085,6 +5092,10 @@ input[type="radio"]:checked + .mujer-estilo {
   .schedule-container {
     margin-top: 60px;
   }
+  .synopsis-details-container {
+    margin-top: 30px;
+    margin-bottom: 95px;
+  }
   /*End Programación - Organismos*/
   /*============================*/
   /*============================*/
@@ -5097,6 +5108,7 @@ input[type="radio"]:checked + .mujer-estilo {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 65px 0;
+    margin: 0 auto;
   }
   .synopsis-buttons-mobile-container {
     display: none;
@@ -5209,8 +5221,7 @@ input[type="radio"]:checked + .mujer-estilo {
     color: white;
     text-transform: uppercase;
     font-family: "Montserrat-Black";
-    padding-top: 45px;
-    padding-bottom: 60px;
+    padding: 65px 0;
   }
   .a-today-claro-title,
   .a-today-cinema-title,
@@ -5471,6 +5482,40 @@ input[type="radio"]:checked + .mujer-estilo {
     font-size: 14px;
   }
   /*End Programación - átomos*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*1.5 - Sinópsis - Átomos */
+  .synopsis-title {
+    font-size: 30px;
+    font-family: "Montserrat-SemiBold";
+    padding-bottom: 25px;
+    text-align: left;
+  }
+  .synopsis-text {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .synopsis-add {
+    margin-right: 40px;
+  }
+  .synopsis-image:nth-child(1),
+  .synopsis-image:nth-child(2) {
+    margin-right: 13px;
+  }
+  .synopsis-image:nth-child(2),
+  .synopsis-image:nth-child(3) {
+    display: block;
+  }
+  .synopsis-detail-text {
+    padding-bottom: 4px;
+  }
+  .synopsis-schedule-title {
+    font-size: 30px;
+    padding-bottom: 65px;
+    margin-bottom: 0;
+  }
+  /*End Sinópsis - átomos*/
   /*-----------------------------*/
   /***  2. MOLECULES  ***/
   /*-----------------------------*/
@@ -5825,6 +5870,35 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .synopsis-body-container {
     margin-bottom: 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .synopsis-buttons-mobile-container {
+    display: none;
+  }
+  .synopsis-description-container {
+    margin-left: 30px !important;
+  }
+  .synopsis-buttons-tablet-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-top: 16px;
+  }
+  .synopsis-images-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .synopsis-details-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   /*End Sinópsis - organismos*/
   /*-----------------------------*/
@@ -5842,6 +5916,9 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .programacion-header .header {
     height: auto;
+  }
+  .synopsis-details-container {
+    margin-bottom: 65px;
   }
   /*End Programación - organismos*/
   /*-----------------------------*/
@@ -6152,6 +6229,13 @@ input[type="radio"]:checked + .mujer-estilo {
   .synopsis-section-title {
     padding: 80px 0;
     margin-left: 10%;
+    text-align: left;
+    font-size: 30px;
+  }
+  .synopsis-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
   }
   /*End Sinópsis - átomos*/
   /*-----------------------------*/
@@ -6553,11 +6637,25 @@ input[type="radio"]:checked + .mujer-estilo {
   /*End Programación - Organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
-  /*3.5 - Programación - Organismos*/
+  /*3.5 - Sinópsis - Organismos*/
   .synopsis-body-container {
     margin-bottom: 90px;
   }
-  /*End Programación - Organismos*/
+  .synopsis-buttons-mobile-container {
+    display: none;
+  }
+  .synopsis-body-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .synopsis-description-container {
+    margin-left: 30px !important;
+  }
+  .synopsis-buttons-tablet-container {
+    display: block;
+  }
+  /*End Sinópsis - Organismos*/
   /*-----------------------------*/
 }
 
