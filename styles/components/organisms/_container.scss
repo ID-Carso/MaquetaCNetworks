@@ -28,7 +28,8 @@
 }
 
 .synopsis-details-container {
-  margin-bottom: 36px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .next-videos-tablet {
@@ -61,4 +62,20 @@
 .pro-container {
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.synopsis-buttons-mobile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.synopsis-buttons-tablet-container {
+  display: none;
+}
+
+.synopsis-details-container {
+  display: flex;
+  justify-content: space-between;
 }

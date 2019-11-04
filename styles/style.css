@@ -1129,7 +1129,8 @@ h6 {
   color: white;
   text-transform: uppercase;
   font-family: "Montserrat-Black";
-  padding-bottom: 24px;
+  padding: 25px 0;
+  text-align: center;
 }
 
 .synopsis-schedule-text {
@@ -1140,6 +1141,8 @@ h6 {
   font-size: 16px;
   font-family: "Montserrat-Light";
   color: white;
+  text-align: center;
+  padding-bottom: 17px;
   text-align: center;
 }
 
@@ -1467,10 +1470,6 @@ h6 {
   width: 15px;
   -webkit-filter: invert(1);
           filter: invert(1);
-}
-
-.synopsis-add {
-  margin-right: 38px;
 }
 
 .synopsis-add-text {
@@ -2141,6 +2140,19 @@ h6 {
 .nav-image {
   width: 60%;
   height: 50px;
+}
+
+.synopsis-image:nth-child(2),
+.synopsis-image:nth-child(3) {
+  display: none;
+}
+
+.synopsis-main-image {
+  margin-bottom: 25px;
+}
+
+.synopsis-image {
+  width: 100%;
 }
 
 .hr1 {
@@ -4198,7 +4210,8 @@ input[type="radio"]:checked + .mujer-estilo {
 }
 
 .synopsis-details-container {
-  margin-bottom: 36px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .next-videos-tablet {
@@ -4231,6 +4244,32 @@ input[type="radio"]:checked + .mujer-estilo {
 .pro-container {
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.synopsis-buttons-mobile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+}
+
+.synopsis-buttons-tablet-container {
+  display: none;
+}
+
+.synopsis-details-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .schedule-poster {
@@ -4731,6 +4770,19 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   /*End Programación - Átomos*/
   /*============================*/
+  /*============================*/
+  /*1.7 - Sinópsis - Átomos*/
+  .synopsis-image:nth-child(2) {
+    display: block;
+  }
+  .synopsis-image:nth-child(1) {
+    margin-right: 13px;
+  }
+  .synopsis-text {
+    margin-bottom: 0;
+  }
+  /*End Sinópsis - Átomos*/
+  /*============================*/
   /*2.- MOLECULES*/
   /*============================*/
   /*2.1 - General - Moleculas*/
@@ -4831,6 +4883,10 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   /*End Programación - Moleculas*/
   /*============================*/
+  /*============================*/
+  /*2.6 - Sinópsis - Moleculas*/
+  /*End Sinópsis - Moleculas*/
+  /*============================*/
   /*3.- ORGANISMS*/
   /*============================*/
   /*3.1 - General - Organismos*/
@@ -4856,9 +4912,6 @@ input[type="radio"]:checked + .mujer-estilo {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
     background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
     padding: 5%;
-  }
-  .synopsis-header .header {
-    padding: 0px 0px 42% 0px;
   }
   .advertising-section-tablet {
     display: block;
@@ -5029,6 +5082,30 @@ input[type="radio"]:checked + .mujer-estilo {
     margin-top: 60px;
   }
   /*End Programación - Organismos*/
+  /*============================*/
+  /*============================*/
+  /*3.6 - Sinópsis - Organismos*/
+  .synopsis-buttons-tablet-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 65px 0;
+  }
+  .synopsis-buttons-mobile-container {
+    display: none;
+  }
+  .synopsis-images-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /*End Sinópsis - Organismos*/
   /*============================*/
 }
 
@@ -5740,10 +5817,7 @@ input[type="radio"]:checked + .mujer-estilo {
   /*-----------------------------*/
   /*3.6 - Sinópsis - Organismos*/
   .synopsis-header .header {
-    padding: 0px 0px 42% 0px;
-  }
-  .synopsis-header .header {
-    background-image: url("../images/home/american-horror.jpeg");
+    height: auto;
   }
   .synopsis-body-container {
     margin-bottom: 110px;
@@ -6069,6 +6143,14 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   /*End Programación - átomos*/
   /*-----------------------------*/
+  /*-----------------------------*/
+  /*1.7 - Sinópsis - átomos*/
+  .synopsis-section-title {
+    padding: 80px 0;
+    margin-left: 10%;
+  }
+  /*End Sinópsis - átomos*/
+  /*-----------------------------*/
   /*END ATOMS*/
   /***  2.- MOLECULES  ***/
   /*2.1 - General - Moleculas*/
@@ -6154,10 +6236,9 @@ input[type="radio"]:checked + .mujer-estilo {
     margin-bottom: 100px !important;
   }
   .header-details {
-    margin-top: 100px;
+    margin: 100px 0 10% 15px;
     display: inherit;
     text-align: left;
-    margin-left: -15px;
   }
   /*End Home - Moleculas*/
   /*-----------------------------*/
@@ -6464,6 +6545,13 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .schedule-item-body {
     padding-bottom: 50px;
+  }
+  /*End Programación - Organismos*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*3.5 - Programación - Organismos*/
+  .synopsis-body-container {
+    margin-bottom: 90px;
   }
   /*End Programación - Organismos*/
   /*-----------------------------*/

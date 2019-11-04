@@ -1219,7 +1219,7 @@
             </div>
             <div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
                 <div>
-                    <img class="concert-footer-img" src="./images/home/claro-home-img.svg" alt="">
+                    <img class="concert-footer-img" src="./images/home/tv-1.svg" alt="">
                 </div>
                 <div>
                     <p class="horario-text text-dark">

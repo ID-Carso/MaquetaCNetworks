@@ -464,3 +464,16 @@
   width: 60%;
   height: 50px;
 }
+
+.synopsis-image:nth-child(2),
+.synopsis-image:nth-child(3) {
+  display: none;
+}
+
+.synopsis-main-image {
+  margin-bottom: 25px;
+}
+
+.synopsis-image {
+  width: 100%;
+}

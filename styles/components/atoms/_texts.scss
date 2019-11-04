@@ -879,7 +879,8 @@
   color: white;
   text-transform: uppercase;
   font-family: $montserratBlack;
-  padding-bottom: 24px;
+  padding: 25px 0;
+  text-align: center;
 }
 
 .synopsis-schedule-text {
@@ -890,6 +891,8 @@
   font-size: 16px;
   font-family: $montserratLight;
   color: white;
+  text-align: center;
+  padding-bottom: 17px;
   text-align: center;
 }
 
