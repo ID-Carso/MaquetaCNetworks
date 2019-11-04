@@ -89,47 +89,20 @@
           <div class="claro-logo">
             <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
 
-            <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
+            <a href="index.php">
+                        <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
+                        </a>
           </div>
 
           <div class="login">
             <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-            <a href="paises.html" class="login-item"><img src="./images/home/pais.svg" alt="" /></a>
+            <a href="paises.html" class="login-item"><img class="login-country" alt="" /></a>
           </div>
         </div>
       </nav>
-      <div class="claro-navbar">
-        <div>
-          <a href="#" class="navbar-link text-decoration-none">
-            <p class="navbar-item">Canal Claro</p>
-          </a>
-        </div>
-        <div>
-          <a href="#" class="navbar-link text-decoration-none">
-            <p class="navbar-item">Concert Channel</p>
-          </a>
-        </div>
-        <div>
-          <a href="#" class="navbar-link text-decoration-none">
-            <p class="navbar-item">Claro Cinema</p>
-          </a>
-        </div>
-        <div>
-          <a href="#" class="navbar-link text-decoration-none">
-            <p class="navbar-item">Nuestra Visión</p>
-          </a>
-        </div>
-        <div>
-          <a href="claro-sports.html" class="navbar-link text-decoration-none">
-            <p class="navbar-item">Claro Sports</p>
-          </a>
-        </div>
-        <div>
-          <a href="#" class="navbar-link text-decoration-none">
-            <p class="navbar-item">Programación</p>
-          </a>
-        </div>
-      </div>
+      <?php 
+        include 'menu-desktop.php';
+      ?>
       <!--<div class="header-details header-detail-margin col-md-6">
             <div class="m-header-card">
               <p class="a-header-card-title">Series</p>
@@ -142,13 +115,13 @@
             <img src="./images/claro-canal/claro-canal-logo.svg" alt="" />
           </div>-->
       <div class="header-slider">
-        <div class="concert-slide">
+        <div class="header-slide">
           <img src="./images/concert-channel/header-image.jpeg" alt="">
         </div>
-        <div class="concert-slide">
+        <div class="header-slide">
           <img src="./images/header/glastonbury.jpeg" alt="">
         </div>
-        <div class="concert-slide"></div>
+        <div class="header-slide"></div>
       </div>
     </div>
 
@@ -160,6 +133,35 @@
         <div class="no-gutters">
           <div class="">
             <div class="section-slider cinema-slider">
+              <div class="poster">
+                <div class="thumbnail">
+                  <div class="showtime-container">
+                    <p class="a-programming-text">14:30 - 16:30</p>
+                  </div>
+                </div>
+                <div class="a-cinema-rectangle">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-black">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="poster">
+                <div class="thumbnail">
+                  <div class="showtime-container">
+                    <p class="a-programming-text">14:30 - 16:30</p>
+                  </div>
+                </div>
+                <div class="a-cinema-rectangle">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-black">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
+                </div>
+              </div>
 
               <div class="poster">
                 <div class="thumbnail">
@@ -348,7 +350,76 @@
             </div>
           </div>
 
-
+          <div class="imperdibles-videos-desktop">
+            <div class="row">
+              <div class="col poster-pad-r poster-pad-b poster-section">
+                <div class="poster">
+                  <div class="thumbnail">
+                    <div class="showtime-container">
+                      <p class="a-programming-text">14:30 - 16:30</p>
+                    </div>
+                  </div>
+                  <div class="a-cinema-rectangle">
+                    <div class="poster-title-margin">
+                      <p class="a-poster-text-black">
+                        ¿QUÉ TE HA DADO ESA MUJER?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col poster-pad-l poster-pad-b">
+                <div class="poster">
+                  <div class="thumbnail">
+                    <div class="showtime-container">
+                      <p class="a-programming-text">14:30 - 16:30</p>
+                    </div>
+                  </div>
+                  <div class="a-cinema-rectangle">
+                    <div class="poster-title-margin">
+                      <p class="a-poster-text-black">
+                        ¿QUÉ TE HA DADO ESA MUJER?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col poster-pad-r poster-pad-t poster-section">
+                <div class="poster">
+                  <div class="thumbnail">
+                    <div class="showtime-container">
+                      <p class="a-programming-text">14:30 - 16:30</p>
+                    </div>
+                  </div>
+                  <div class="a-cinema-rectangle">
+                    <div class="poster-title-margin">
+                      <p class="a-poster-text-black">
+                        ¿QUÉ TE HA DADO ESA MUJER?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col poster-pad-l poster-pad-t">
+                <div class="poster">
+                  <div class="thumbnail">
+                    <div class="showtime-container">
+                      <p class="a-programming-text">14:30 - 16:30</p>
+                    </div>
+                  </div>
+                  <div class="a-cinema-rectangle">
+                    <div class="poster-title-margin">
+                      <p class="a-poster-text-black">
+                        ¿QUÉ TE HA DADO ESA MUJER?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </section>
@@ -365,6 +436,48 @@
         </div>
         <div class="recordar-container-videos">
           <div class="section-slider cinema-slider">
+            <div class="poster">
+              <div class="thumbnail">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                </div>
+              </div>
+              <div class="a-cinema-rectangle">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-black">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="poster">
+              <div class="thumbnail">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                </div>
+              </div>
+              <div class="a-cinema-rectangle">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-black">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="poster">
+              <div class="thumbnail">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                </div>
+              </div>
+              <div class="a-cinema-rectangle">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-black">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
+              </div>
+            </div>
             <div class="poster">
               <div class="thumbnail">
                 <div class="showtime-container">
@@ -492,6 +605,34 @@
                 </div>
               </div>
             </div>
+            <div class="poster">
+              <div class="thumbnail">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                </div>
+              </div>
+              <div class="a-cinema-rectangle">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-black">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="poster">
+              <div class="thumbnail">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                </div>
+              </div>
+              <div class="a-cinema-rectangle">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-black">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -503,7 +644,7 @@
         <div class="">
           <div class="row no-gutters">
             <div class="col-12">
-              <h1 class="footer-title-claro">sígue a claro cinema</h1>
+              <h1 class="footer-title-claro">¡síguenos!</h1>
             </div>
             <div class="social-media">
               <div class="col ">

@@ -312,18 +312,12 @@
 }
 
 /*Concert channel*/
+
 .thumbnail {
   background: #797979;
   overflow: hidden;
   padding-bottom: 47%;
   position: relative;
-  width: 100%;
-}
-
-.thumbnail img {
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
   width: 100%;
 }
 
@@ -335,11 +329,25 @@
   width: 100%;
 }
 
-.thumbnail-large img {
+.thumbnail-prog {
+  background: #797979;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-bottom: 63%;
+}
+
+.thumbnail img,
+.thumbnail-large img,
+.thumbnail-prog img {
   height: 100%;
   object-fit: cover;
   position: absolute;
   width: 100%;
+}
+
+.schedule-add-icon {
+  margin-left: 5px;
 }
 
 .arrow-prev,
@@ -435,7 +443,6 @@
   position: absolute;
   top: 83%;
   left: 88%;
-
 }
 
 .lista-avatar {
@@ -455,4 +462,22 @@
 .categorias-flecha {
   margin-left: 11px;
   margin-bottom: 3px;
+}
+
+.nav-image {
+  width: 60%;
+  height: 50px;
+}
+
+.synopsis-image:nth-child(2),
+.synopsis-image:nth-child(3) {
+  display: none;
+}
+
+.synopsis-main-image {
+  margin-bottom: 25px;
+}
+
+.synopsis-image {
+  width: 100%;
 }

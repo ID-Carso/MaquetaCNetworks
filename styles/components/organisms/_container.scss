@@ -1,14 +1,26 @@
-.schedule-container {
-  margin-top: 26px;
+.schedule-item-body {
   border-bottom: 2px solid #979797;
+  padding-bottom: 25px;
+  display: flex;
 }
 
-.schedule-container:first-child {
+.schedule-item-body:first-child {
   margin-top: 0px;
 }
 
-.schedule-details {
-  margin-top: 20px;
+.schedule-container {
+  margin-top: 26px;
+}
+
+.schedule-details,
+.schedule-details-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.schedule-details-header {
+  height: 100%;
 }
 
 .rating-container {
@@ -16,7 +28,8 @@
 }
 
 .synopsis-details-container {
-  margin-bottom: 36px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .next-videos-tablet {
@@ -24,6 +37,11 @@
 }
 
 .imperdibles-videos-tablet {
+  display: none;
+  padding-top: 30px;
+}
+
+.imperdibles-videos-desktop {
   display: none;
 }
 
@@ -39,4 +57,25 @@
   width: 100%;
   height: 100%;
   border: none;
+}
+
+.pro-container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.synopsis-buttons-mobile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.synopsis-buttons-tablet-container {
+  display: none;
+}
+
+.synopsis-details-container {
+  display: flex;
+  justify-content: space-between;
 }

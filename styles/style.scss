@@ -30,23 +30,6 @@
   /*1.- ATOMS*/
   /*============================*/
   /*1.1 - General - Átomos*/
-  /*End General - Átomos*/
-  /*============================*/
-
-  .margin-ahora-tv {
-    margin-bottom: 21px;
-  }
-
-  .circle-video {
-    display: block;
-    width: 70%;
-  }
-
-  .header-h1 {
-    color: $headerH1Color;
-    font-size: 50px;
-  }
-
   .menu-responsive {
     width: 25px;
     position: inherit;
@@ -65,19 +48,6 @@
     margin-left: 20px;
   }
 
-  .title-tv {
-    font-size: 30px;
-  }
-
-  .nav-image {
-    height: 72px;
-    width: 100%;
-  }
-
-  .nav-li {
-    text-align: center;
-  }
-
   .border-right {
     border-right: 1px solid $bordergray !important;
     padding-right: 5px;
@@ -91,43 +61,8 @@
     padding: 0px 0px 0px 0px !important;
   }
 
-  .section-slider .slick-list,
-  .tv-slider .slick-list,
-  .sports-slider .slick-list {
-    padding: 0px 90px 0px 0px !important;
-  }
-
-  .a-cinema-rectangle,
-  .a-sports-rectangle,
-  .a-concert-rectangle,
-  .a-claro-rectangle,
-  .a-vision-rectangle {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    /*-webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    -webkit-line-clamp: 2;*/
-    height: 48px;
-  }
-
   .poster-title-margin {
     margin: 0px;
-  }
-
-  .poster-image-small {
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    height: 108px;
   }
 
   .a-sports-text-poster,
@@ -135,60 +70,6 @@
   .a-poster-text-black {
     padding: 10px;
     font-size: $fontSizeSub;
-  }
-
-  .a-concert-channel-title {
-    font-size: 32px;
-    color: $colorWhite;
-    padding-bottom: 0%;
-    text-align: left;
-  }
-
-  .concert-footer-img {
-    width: 72px;
-  }
-
-  .concert-img-white {
-    filter: invert(1);
-  }
-
-  .a-concert-subtitle {
-    color: $colorWhite;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    font-size: 16px;
-    font-family: $montserratSemiBold;
-    text-transform: uppercase;
-  }
-
-  .concert-first-subtitle {
-    font-size: 16px;
-  }
-
-  .concert-second-subtitle {
-    font-size: 16px;
-  }
-
-  .a-claro-cinema-title,
-  .a-our-vision-title,
-  .a-claro-channel-title,
-  .a-claro-sports-title {
-    font-size: 32px;
-    padding-bottom: 7px;
-    text-align: left;
-  }
-
-  .a-claro-channel-title,
-  .a-concert-channel-title,
-  .a-claro-cinema-title,
-  .a-our-vision-title,
-  .a-claro-sports-title {
-    padding-top: 0px;
-  }
-
-  .poster-title-sport {
-    font-size: 30px;
-    text-align: left;
   }
 
   .a-subtitle {
@@ -216,48 +97,6 @@
     font-size: 12px;
   }
 
-  .advertising-subtitle {
-    font-size: 18px;
-    color: #00caf5;
-    font-family: "Gotham-Black";
-  }
-
-  .a-today-claro-title {
-    font-size: 30px;
-    padding-bottom: 44px;
-    padding-top: 10px;
-  }
-
-  .footer-title {
-    font-size: 30px;
-  }
-
-  .social-icon {
-    width: 58px;
-  }
-
-  .claro-grey-img {
-    width: 86px;
-  }
-
-  .text-footer-regular {
-    font-size: 15px;
-    margin-bottom: 29px;
-  }
-
-  .text-footer-bold {
-    font-size: 15px;
-  }
-
-  .transmission-text {
-    position: absolute;
-    left: 4%;
-    top: 10%;
-    margin-bottom: 0px;
-    font-size: 15px;
-    font-family: $montserratSemiBold;
-  }
-
   .footer-img {
     width: 65px;
     height: 60px;
@@ -278,35 +117,149 @@
     border-radius: 30px;
   }
 
-  .navbar-item {
-    font-size: 16px;
+  .advertising-subtitle {
+    font-size: 18px;
+    color: #00caf5;
+    font-family: "Gotham-Black";
   }
 
-  .slick-slider {
-    padding-bottom: 0px;
+  .footer-title {
+    font-size: 40px;
+  }
+
+  .social-icon {
+    width: 58px;
   }
 
   .thumbnail-info-image {
-    display: none;
+    display: none !important;
   }
 
   .thumbnail-info-title {
     width: 100%;
   }
 
+  .slick-dots li button:before {
+    font-size: 12px !important;
+  }
+
+  .slick-slider .slick-dots li {
+    margin: 0 10px;
+  }
+  /*End General - Átomos*/
+  /*============================*/
+
+  /*============================*/
+  /*1.2 - Home - Átomos*/
+  .margin-ahora-tv {
+    margin-bottom: 21px;
+  }
+
+  .circle-video {
+    display: block;
+    width: 70%;
+  }
+
+  .header-h1 {
+    color: $headerH1Color;
+    font-size: 50px;
+  }
+
+  .title-tv {
+    font-size: 30px;
+  }
+
+  .nav-image {
+    height: 72px;
+    width: 80%;
+  }
+
+  .nav-li {
+    text-align: center;
+  }
+
+  .a-concert-channel-title {
+    font-size: 32px;
+    color: $colorWhite;
+    padding-bottom: 0%;
+    text-align: left;
+  }
+
+  .concert-footer-img {
+    width: 72px;
+  }
+
+  .concert-img-white {
+    filter: invert(1);
+  }
+
+  .a-concert-subtitle {
+    color: $colorWhite;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-family: $montserratSemiBold;
+    text-transform: uppercase;
+  }
+
+  .a-claro-cinema-title,
+  .a-our-vision-title,
+  .a-claro-channel-title,
+  .a-claro-sports-title {
+    font-size: 32px;
+    padding-bottom: 7px;
+    text-align: left;
+  }
+
+  .a-claro-channel-title,
+  .a-concert-channel-title,
+  .a-claro-cinema-title,
+  .a-our-vision-title,
+  .a-claro-sports-title {
+    padding-top: 0px;
+  }
+
+  .poster-title-sport {
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .claro-grey-img {
+    width: 86px;
+  }
+
+  .text-footer-regular {
+    font-size: 15px;
+    margin-bottom: 29px;
+  }
+
+  .text-footer-bold {
+    font-size: 15px;
+  }
+
+  .navbar-item {
+    font-size: 16px;
+  }
+
   .our-channels {
     display: block;
   }
 
-  .claro-section-footer,
-  .vision-section-footer,
-  .sports-section-footer {
-    margin-top: 50px;
+  .header-details {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    display: inherit;
+    text-align: left;
   }
+  /*End Home - Átomos*/
+  /*============================*/
 
-  .concert-section-footer,
-  .cinema-section-footer {
-    margin-top: 130px;
+  /*============================*/
+  /*1.3 - Claro Canal - Átomos*/
+  .a-today-claro-title {
+    font-size: 30px;
+    padding-bottom: 44px;
+    padding-top: 10px;
   }
 
   .a-next-claro-title,
@@ -322,8 +275,19 @@
     text-align: left;
     font-size: 20px;
   }
+  /*End Claro Canal - Átomos*/
+  /*============================*/
 
-  /*Concert Channel - Atoms*/
+  /*============================*/
+  /*1.4 - Concert Channel - Átomos*/
+
+  .concert-first-subtitle {
+    font-size: 16px;
+  }
+
+  .concert-second-subtitle {
+    font-size: 16px;
+  }
 
   .today-concert-title {
     font-size: 30px;
@@ -344,9 +308,94 @@
     padding-bottom: 50px;
   }
 
-  /*End Concert Channel - Atoms*/
+  .concert-slide {
+    padding-bottom: 58%;
+  }
+  /*End Concert Channel - Átomos*/
+  /*============================*/
 
-  /*MOLECULES*/
+  /*============================*/
+  /*1.5 - Claro Cinema - Átomos*/
+  /*End Claro Cinema - Átomos*/
+  /*============================*/
+
+  /*============================*/
+  /*1.6 - Programación - Átomos*/
+  .month {
+    margin: 40px 0;
+    font-size: 30px;
+  }
+
+  .programacion-slider {
+    .arrow-prev {
+      left: -12%;
+    }
+
+    .arrow-next {
+      right: -12%;
+    }
+  }
+
+  .day-number {
+    font-size: 29px;
+  }
+
+  .day-text {
+    font-size: 19px;
+  }
+
+  .programacion-main-title {
+    font-size: 30px;
+  }
+
+  .schedule-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .schedule {
+    font-size: 30px;
+  }
+
+  .rating {
+    font-size: 18px;
+  }
+
+  .schedule-add {
+    font-size: 14px;
+  }
+  /*End Programación - Átomos*/
+  /*============================*/
+
+  /*============================*/
+  /*1.7 - Sinópsis - Átomos*/
+  .synopsis-image:nth-child(2) {
+    display: block;
+  }
+
+  .synopsis-image:nth-child(1) {
+    margin-right: 13px;
+  }
+
+  .synopsis-text {
+    margin-bottom: 0;
+  }
+  /*End Sinópsis - Átomos*/
+  /*============================*/
+
+  /*2.- MOLECULES*/
+
+  /*============================*/
+  /*2.1 - General - Moleculas*/
+  .slick-slider {
+    padding-bottom: 0px;
+  }
+
+  .nav-content {
+    margin: 0px;
+    position: relative;
+  }
+
   .menu-tablet {
     display: block;
   }
@@ -355,9 +404,33 @@
     display: none;
   }
 
-  .nav-content {
-    margin: 0px;
-    position: relative;
+  .slick-dots {
+    bottom: -40px !important;
+  }
+
+  .social-media {
+    margin: 46px auto 65px auto;
+  }
+
+  .programacion-slider {
+    margin-bottom: 150px;
+  }
+
+  .header-slider {
+    .slick-dots {
+      bottom: 50px !important;
+    }
+  }
+
+  /*End General - Moleculas*/
+  /*============================*/
+
+  /*============================*/
+  /*2.2 - Home - Moleculas*/
+  .section-slider .slick-list,
+  .tv-slider .slick-list,
+  .sports-slider .slick-list {
+    padding: 0px 90px 0px 0px !important;
   }
 
   .tv-list {
@@ -380,41 +453,71 @@
     margin-bottom: 0px;
   }
 
-  .slick-dots {
-    bottom: -40px !important;
-  }
-
-  .slick-dots li button:before {
-    font-size: 9px !important;
-  }
-
-  .social-media {
-    margin: 46px auto 65px auto;
-  }
-
   .o-tv-section {
     .slick-dotted.slick-slider {
       margin-bottom: 80px !important;
     }
   }
+  /*End Home - Moleculas*/
+  /*============================*/
 
-  .concert-slide {
-    padding-bottom: 58%;
+  /*============================*/
+  /*2.3 - Claro Canal - Moleculas*/
+  /*End Claro Canal - Moleculas*/
+  /*============================*/
+
+  /*============================*/
+  /*2.4 - Concert Channel - Moleculas*/
+
+  .concert-slider {
+    margin-left: -6px;
   }
+  /*End Concert Channel - Moleculas*/
+  /*============================*/
 
-  /*Organisms*/
+  /*============================*/
+  /*2.5 - Claro Cinema - Moleculas*/
+  /*End Claro Cinema - Moleculas*/
+  /*============================*/
 
-  .home-header {
-    .header {
-      padding: 5%;
+  /*============================*/
+  /*2.6 - Programación - Moleculas*/
+  .programacion-slider {
+    .slick-slide {
+      width: 1.185% !important;
+      margin: 0 2px;
+    }
+
+    .slick-dots {
+      bottom: -20px !important;
     }
   }
-  .header {
-    background: transparent;
-    padding: 0;
-    height: auto;
+
+  .programacion .tv-list {
+    margin: 0px auto;
   }
 
+  .programacion .programacion-slider {
+    margin-bottom: 0 !important;
+  }
+
+  .header-slide {
+    padding-bottom: 53%;
+  }
+
+  /*End Programación - Moleculas*/
+  /*============================*/
+
+  /*============================*/
+  /*2.6 - Sinópsis - Moleculas*/
+
+  /*End Sinópsis - Moleculas*/
+  /*============================*/
+
+  /*3.- ORGANISMS*/
+
+  /*============================*/
+  /*3.1 - General - Organismos*/
   .menu {
     background: transparent;
     position: inherit;
@@ -424,40 +527,49 @@
     transition: all 0.5s ease 0s;
   }
 
-  .concert-channel-header .header {
+  .header {
+    background: transparent;
     padding: 0;
-  }
-
-  .header-details {
-    margin-top: 60px;
-    margin-bottom: 40px;
-    display: inherit;
-    text-align: left;
+    height: auto;
   }
 
   .concert-channel-header .menu-tablet,
   .claro-canal-header .menu-tablet,
   .synopsis-header .menu-tablet,
-  .claro-cinema-header .menu-tablet {
+  .claro-cinema-header .menu-tablet,
+  .programacion-header .menu-tablet {
     background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
     padding: 5%;
   }
 
-  /*Concert channel - moleculas*/
-
-  .concert-slider {
-    margin-left: -6px;
+  .advertising-section-tablet {
+    display: block;
   }
-  /*End concert channel - moleculas*/
 
-  /*General - Organismos*/
-  .synopsis-header .header,
-  .claro-cinema-header .header {
-    padding: 0px 0px 42% 0px;
+  .advertising-section-mobile {
+    display: none;
   }
-  /*End general - Organismos*/
+  /*End General - Organismos*/
+  /*============================*/
 
-  /*Home - Organismos*/
+  /*============================*/
+  /*3.2 - Home - Organismos*/
+  .claro-section-footer,
+  .vision-section-footer,
+  .sports-section-footer {
+    margin-top: 50px;
+  }
+
+  .concert-section-footer,
+  .cinema-section-footer {
+    margin-top: 130px;
+  }
+
+  .home-header {
+    .header {
+      padding: 5%;
+    }
+  }
 
   .o-concert-section,
   .o-cinema-section,
@@ -530,14 +642,6 @@
     display: none;
   }
 
-  .advertising-section-tablet {
-    display: block;
-  }
-
-  .advertising-section-mobile {
-    display: none;
-  }
-
   .home-section-header {
     padding-top: 40px;
   }
@@ -557,14 +661,25 @@
     padding-left: calc(3% - 6px);
   }
 
-  .today-container {
-    margin-bottom: 100px;
+  .claro-section-header,
+  .vision-section-header,
+  .sports-section-header {
+    margin-bottom: 70px;
   }
 
-  .today {
-    margin: 0 calc(3% - 6px);
+  .home-sports-videos-container {
+    padding-left: 3%;
   }
 
+  .concert-section-header,
+  .cinema-section-header {
+    margin-bottom: 150px;
+  }
+  /*End Home - Organismos*/
+  /*============================*/
+
+  /*============================*/
+  /*3.3 - Claro Canal - Organismos*/
   .next-week-container,
   .dont-lose-container {
     padding: 30px 20px 90px 20px;
@@ -581,6 +696,14 @@
     border-radius: 20px;
   }
 
+  .today-container {
+    margin-bottom: 100px;
+  }
+
+  .today {
+    margin: 0 calc(3% - 6px);
+  }
+
   #next-week-slider {
     display: none;
   }
@@ -588,29 +711,15 @@
   .next-videos-tablet {
     display: block;
   }
+  /*End Claro Canal - Organismos*/
+  /*============================*/
 
-  .home-sports-videos-container {
-    padding-left: 3%;
+  /*============================*/
+  /*3.4 - Concert Channel - Organismos*/
+  .concert-channel-header .header {
+    padding: 0;
   }
 
-  .claro-section-header,
-  .vision-section-header,
-  .sports-section-header {
-    margin-bottom: 70px;
-  }
-
-  .concert-section-header,
-  .cinema-section-header {
-    margin-bottom: 150px;
-  }
-
-  /*End home - organismos*/
-
-  .margin-bottom-slider {
-    margin-bottom: 80px;
-  }
-
-  /*Concert channel - organismos*/
   .concert-interviews {
     padding-bottom: 213px;
   }
@@ -627,8 +736,44 @@
   .concerts {
     padding-bottom: 130px;
   }
+  /*End Concert Channel - Organismos*/
+  /*============================*/
 
-  /*End Concert channel*/
+  /*============================*/
+  /*3.5 - Claro Cinema - Organismos*/
+  /*End Claro Cinema - Organismos*/
+  /*============================*/
+
+  /*============================*/
+  /*3.6 - Programación - Organismos*/
+  .schedule-item-body {
+    padding-bottom: 60px;
+  }
+
+  .schedule-container {
+    margin-top: 60px;
+  }
+  /*End Programación - Organismos*/
+  /*============================*/
+
+  /*============================*/
+  /*3.6 - Sinópsis - Organismos*/
+  .synopsis-buttons-tablet-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 0;
+  }
+
+  .synopsis-buttons-mobile-container {
+    display: none;
+  }
+
+  .synopsis-images-container {
+    display: flex;
+    justify-content: center;
+  }
+  /*End Sinópsis - Organismos*/
+  /*============================*/
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -776,7 +921,7 @@
   }
 
   .thumbnail-info-image {
-    display: none;
+    display: none !important;
   }
 
   .thumbnail-info-title {
@@ -841,7 +986,7 @@
 
   .nav-image {
     height: 72px;
-    width: 100%;
+    width: 80%;
   }
 
   .nav-li {
@@ -957,7 +1102,7 @@
   /*-----------------------------*/
 
   /*1.4 - Concert Channel - Átomos */
-  .concert-slide {
+  .header-slide {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -966,7 +1111,7 @@
     padding-bottom: 41%;
   }
 
-  .concert-slide img {
+  .header-slide img {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
@@ -1010,6 +1155,60 @@
     padding-bottom: 17px;
   }
   /*End Claro Cinema - átomos*/
+  /*-----------------------------*/
+
+  /*-----------------------------*/
+  /*1.5 - Programación - Átomos */
+  .month {
+    margin: 40px 0;
+    font-size: 30px;
+  }
+
+  .programacion-main-title {
+    font-size: 30px;
+  }
+
+  .programacion-slider {
+    padding-bottom: 0;
+
+    .arrow-next {
+      right: -9%;
+    }
+
+    .arrow-prev {
+      left: -9%;
+    }
+  }
+
+  .schedule-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .schedule-poster {
+    width: 42%;
+    margin-right: 5%;
+  }
+
+  .schedule-description {
+    display: block;
+  }
+
+  .schedule {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  .rating {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .schedule-add {
+    font-size: 14px;
+  }
+
+  /*End Programación - átomos*/
   /*-----------------------------*/
 
   /***  2. MOLECULES  ***/
@@ -1073,7 +1272,7 @@
     bottom: -35px !important;
   }
 
-  .cinema-slider{
+  .cinema-slider {
     margin: 0 -6px;
   }
   /*End General - Moleculas*/
@@ -1103,7 +1302,6 @@
 
   .header-details {
     margin-top: 100px;
-    margin-bottom: 40px;
     display: inherit;
     text-align: left;
   }
@@ -1148,6 +1346,30 @@
   /*End Claro Cinema - Moelculas*/
   /*-----------------------------*/
 
+  /*-----------------------------*/
+  /*2.5 - Programación - Moleculas*/
+  .programacion .tv-list {
+    margin: 0px auto;
+  }
+
+  .programacion-slider .slick-slide {
+    width: 0.858% !important;
+  }
+
+  .programacion .tv-list {
+    max-width: 600px;
+  }
+
+  .schedule-details {
+    width: 63%;
+  }
+
+  .schedule-details-header {
+    flex-direction: row;
+  }
+  /*End Programación - Moelculas*/
+  /*-----------------------------*/
+
   /*3.- ORGANISMS*/
   /*-----------------------------*/
   /*3.1 - Generales - Organismos*/
@@ -1172,7 +1394,8 @@
   .concert-channel-header .menu-tablet,
   .claro-canal-header .menu-tablet,
   .synopsis-header .menu-tablet,
-  .claro-cinema-header .menu-tablet {
+  .claro-cinema-header .menu-tablet,
+  .programacion-header .menu-tablet {
     background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
     padding: calc(2% + 2px);
   }
@@ -1197,6 +1420,12 @@
 
   /*-----------------------------*/
   /*3.2 - Home - Organismos*/
+
+  .home-header .header {
+    height: auto;
+    background: transparent;
+    padding: 3% 3% 12% 5%;
+  }
 
   .home-section-header {
     padding-top: 40px;
@@ -1404,18 +1633,36 @@
 
   /*-----------------------------*/
   /*3.6 - Sinópsis - Organismos*/
-  .synopsis-header .header {
-    padding: 0px 0px 42% 0px;
-  }
 
   .synopsis-header .header {
-    background-image: url("../images/home/american-horror.jpeg");
+    height: auto;
   }
 
   .synopsis-body-container {
     margin-bottom: 110px;
   }
   /*End Sinópsis - organismos*/
+  /*-----------------------------*/
+
+  /*-----------------------------*/
+  /*3.7 - Programación - Organismos*/
+  .pro-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .schedule-item-body {
+    padding-bottom: 53px;
+  }
+
+  .schedule-container {
+    margin-top: 53px;
+  }
+
+  .programacion-header .header {
+    height: auto;
+  }
+  /*End Programación - organismos*/
   /*-----------------------------*/
 
   /*.imperdibles,
@@ -1470,28 +1717,6 @@
 
   .slick-slider .slick-list {
     padding: 0px 0px 0px 0px !important;
-  }
-
-  .a-cinema-rectangle,
-  .a-sports-rectangle,
-  .a-concert-rectangle,
-  .a-claro-rectangle,
-  .a-vision-rectangle {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    /*-webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    -webkit-line-clamp: 2;*/
-    height: 36px;
   }
 
   .poster-title-margin {
@@ -1569,7 +1794,7 @@
   }
 
   .header-curve {
-    bottom: -30%;
+    bottom: -22%;
   }
   .a-claro-channel-title,
   .a-claro-cinema-title,
@@ -1634,6 +1859,19 @@
     }
   }
 
+  .a-cinema-rectangle,
+  .a-sports-rectangle,
+  .a-concert-rectangle,
+  .a-claro-rectangle,
+  .a-vision-rectangle {
+    height: 52px;
+  }
+
+  .nav-image {
+    height: 72px;
+    width: 80%;
+  }
+
   /*End Generales - átomos*/
   /*-----------------------------*/
 
@@ -1682,7 +1920,7 @@
   /*-----------------------------*/
 
   /*-----------------------------*/
-  /*Concert channel - átomos*/
+  /*1.3 - Concert channel - átomos*/
   .concert-subtitle {
     padding-bottom: 60px;
   }
@@ -1697,7 +1935,7 @@
   /*-----------------------------*/
 
   /*-----------------------------*/
-  /*Claro canal - átomos*/
+  /*1.4 - Claro canal - átomos*/
   .a-next-claro-subtitle,
   .a-dontLose-claro-subtitle {
     font-size: 20px;
@@ -1730,6 +1968,77 @@
     padding-bottom: 54%;
   }
   /*End Claro canal - átomos*/
+  /*-----------------------------*/
+
+  /*-----------------------------*/
+  /*1.5 - Claro Cinema - átomos*/
+  .a-cinema-title {
+    padding-top: 35px;
+  }
+
+  .a-cinema-subtitle {
+    padding-bottom: 35px;
+  }
+  /*End Claro Cinema - átomos*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*1.6 - Programación - átomos*/
+  .programacion-main-title {
+    font-size: 30px;
+    padding-top: 25px;
+    padding-bottom: 80px;
+  }
+
+  .month {
+    margin: 35px 0;
+    font-size: 30px;
+  }
+
+  .programacion-slider .arrow-next {
+    right: -9%;
+  }
+  .programacion-slider .arrow-prev {
+    left: -9%;
+  }
+
+  .schedule-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .schedule-poster {
+    width: 42%;
+    margin-right: 5%;
+  }
+
+  .schedule {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  .schedule-description {
+    display: block;
+  }
+
+  .rating {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .schedule-add {
+    font-size: 14px;
+  }
+
+  /*End Programación - átomos*/
+  /*-----------------------------*/
+
+  /*-----------------------------*/
+  /*1.7 - Sinópsis - átomos*/
+  .synopsis-section-title {
+    padding: 80px 0;
+    margin-left: 10%;
+  }
+  /*End Sinópsis - átomos*/
   /*-----------------------------*/
 
   /*END ATOMS*/
@@ -1808,6 +2117,10 @@
       opacity: 0.25;
     }
   }
+
+  .header-slide {
+    padding-bottom: 33%;
+  }
   /*End General - Moleculas*/
   /*-----------------------------*/
 
@@ -1835,11 +2148,9 @@
   }
 
   .header-details {
-    margin-top: 100px;
-    margin-bottom: 10%;
+    margin: 100px 0 10% 15px;
     display: inherit;
     text-align: left;
-    margin-left: -15px;
   }
 
   /*End Home - Moleculas*/
@@ -1847,9 +2158,6 @@
 
   /*-----------------------------*/
   /*2.3 - Claro Canal - Moleculas*/
-  .claro-slide {
-    padding-bottom: 33%;
-  }
 
   .claro-canal-header .slick-dots {
     bottom: 20% !important;
@@ -1859,15 +2167,46 @@
 
   /*-----------------------------*/
   /*2.4 - Concert channel - Moleculas*/
-  .concert-slide {
-    padding-bottom: 45%;
-  }
+
   /*End Concert channel - Moleculas*/
   /*-----------------------------*/
 
   /*-----------------------------*/
   /*2.5 - Claro cinema - Moleculas*/
+  .header-title-section {
+    margin-bottom: 0;
+    padding: 0 calc(8% - 3px);
+  }
+
+  .cinema-slider {
+    margin: 0 -6px;
+    padding-top: 0;
+  }
+
+  .cinema-slide {
+    padding-bottom: 33%;
+  }
   /*End Claro cinema - Moleculas*/
+  /*-----------------------------*/
+
+  /*-----------------------------*/
+  /*2.5 - Programación - Moleculas*/
+  .programacion .tv-list {
+    max-width: 800px;
+  }
+
+  .programacion-slider .slick-slide {
+    width: 0.858% !important;
+  }
+
+  .schedule-details {
+    width: 63%;
+  }
+
+  .schedule-details-header {
+    flex-direction: row;
+  }
+  /*End Programación - Moleculas*/
   /*-----------------------------*/
 
   /*3.- ORGANISMS*/
@@ -1904,10 +2243,11 @@
   }
 
   .o-advertising-section {
-    max-width: 100%;
-    padding-left: 14%;
-    padding-right: 14%;
+    max-width: 1050px;
+    width: 100%;
     margin: 120px auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .menu-responsive {
@@ -1927,14 +2267,6 @@
     font-size: 46px;
     padding-bottom: 7px;
     text-align: left;
-  }
-
-  .a-cinema-rectangle,
-  .a-sports-rectangle,
-  .a-concert-rectangle,
-  .a-claro-rectangle,
-  .a-vision-rectangle {
-    height: 45px;
   }
 
   .advertising-title {
@@ -2157,7 +2489,55 @@
 
   /*-----------------------------*/
   /*3.5 - Claro Cinema - Organismos*/
+  .today-claro-cinema {
+    padding: 0 calc(8% - 3px) 67px;
+  }
+
+  .imperdibles-videos-mobile {
+    display: none;
+  }
+
+  .imperdibles-videos-tablet {
+    display: block;
+  }
+
+  .imperdibles-videos-tablet,
+  .recordar-container-videos,
+  .only-videos-container {
+    padding: 0 calc(8% - 3px);
+    margin: 100px 0;
+  }
   /*End Claro Cinema - Organismos*/
+  /*-----------------------------*/
+
+  /*-----------------------------*/
+  /*3.5 - Programación - Organismos*/
+  .programacion .o-tv-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .pro-container {
+    padding: 0 16%;
+  }
+
+  .schedule-container {
+    margin-top: 50px;
+  }
+
+  .schedule-item-body {
+    padding-bottom: 50px;
+  }
+
+  /*End Programación - Organismos*/
+  /*-----------------------------*/
+
+  /*-----------------------------*/
+  /*3.5 - Programación - Organismos*/
+  .synopsis-body-container {
+    margin-bottom: 90px;
+  }
+  /*End Programación - Organismos*/
   /*-----------------------------*/
 }
 
@@ -2199,21 +2579,7 @@
   .a-concert-rectangle,
   .a-claro-rectangle,
   .a-vision-rectangle {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    /*-webkit-box-orient: vertical;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: normal;
-      -webkit-line-clamp: 2;*/
-    height: 36px;
+    height: 52px;
   }
 
   .a-sports-text-poster,
@@ -2253,7 +2619,7 @@
   }
 
   .footer-title {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .social-icon {
@@ -2364,6 +2730,21 @@
     padding-bottom: 55%;
   }
 
+  .poster-pad-b {
+    padding-bottom: 9px;
+  }
+
+  .poster-pad-t {
+    padding-top: 9px;
+  }
+
+  .poster-pad-l {
+    padding-left: 9px !important;
+  }
+
+  .poster-pad-r {
+    padding-right: 9px !important;
+  }
   /*End General - Átomos*/
   /*-----------------------------*/
 
@@ -2434,6 +2815,7 @@
     padding-bottom: 57px;
     text-align: left;
   }
+
   /*End Claro Canal - Átomos*/
   /*-----------------------------*/
 
@@ -2455,7 +2837,66 @@
 
   /*-----------------------------*/
   /*1.5 Claro Cinema -  Átomos  */
+  .a-cinema-title {
+    font-size: 60px;
+    padding-top: 20px;
+  }
+
+  .a-cinema-subtitle {
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+
+  .a-cinema-subtitle,
+  .a-cinema-title {
+    text-align: left;
+  }
   /*End Claro Cinema - Átomos*/
+  /*-----------------------------*/
+
+  /*-----------------------------*/
+  /*1.6 Programación -  Átomos  */
+  .programacion-main-title {
+    padding: 50px 0;
+    font-size: 60px;
+  }
+
+  .month {
+    margin: 35px 0;
+    font-size: 30px;
+  }
+
+  .schedule-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .schedule-description {
+    display: block;
+  }
+
+  .schedule {
+    font-size: 30px;
+  }
+
+  .rating {
+    font-size: 18px;
+  }
+
+  .schedule-add {
+    font-size: 14px;
+  }
+
+  .programacion {
+    .arrow-prev {
+      left: -10%;
+    }
+
+    .arrow-next {
+      right: -10%;
+    }
+  }
+  /*End Programación - Átomos*/
   /*-----------------------------*/
 
   /***  2. - MOLECULES  ***/
@@ -2513,6 +2954,10 @@
       color: white;
       opacity: 0.25;
     }
+  }
+
+  .header-slide {
+    padding-bottom: 30%;
   }
 
   /*End General - Moleculas*/
@@ -2583,7 +3028,42 @@
 
   /*-----------------------------*/
   /*2.5 - Claro Cinema- Moleculas*/
+  .header-title-section {
+    padding-left: 10%;
+    margin-bottom: 0;
+  }
+
+  .cinema-slider {
+    padding-top: 0px;
+  }
   /*End Claro Cinema - Moleculas*/
+  /*-----------------------------*/
+
+  /*-----------------------------*/
+  /*2.6 - Programación - Moleculas*/
+
+  .programacion {
+    .o-tv-section {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .tv-list {
+      max-width: 1200px;
+      margin: 0 auto 35xpx auto;
+    }
+  }
+
+  .schedule-details-header {
+    flex-direction: row;
+  }
+
+  .programacion-slider .slick-slide {
+    width: 0.553% !important;
+    margin: 0 2px;
+  }
+
+  /*End Programación - Moleculas*/
   /*-----------------------------*/
 
   /*3.- ORGANISMS*/
@@ -2881,6 +3361,52 @@
 
   /*-----------------------------*/
   /*3.5 - Claro Cinema - Organismos*/
+  .today-claro-cinema,
+  .imperdibles-videos-desktop,
+  .recordar-container-videos,
+  .only-videos-container {
+    padding: 0 10%;
+  }
+
+  .imperdibles-videos-mobile {
+    display: none;
+  }
+
+  .imperdibles-videos-tablet {
+    display: none;
+  }
+
+  .imperdibles-videos-desktop {
+    display: block;
+  }
+
+  .today-claro-cinema {
+    margin-bottom: 120px;
+  }
+  .imperdibles-videos-desktop,
+  .recordar-container-videos,
+  .only-videos-container {
+    margin: 120px 0;
+  }
+
   /*End Claro Cinema - Organismos*/
+  /*-----------------------------*/
+
+  /*-----------------------------*/
+  /*3.5 - Programación - Organismos*/
+  .pro-container {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .schedule-poster {
+    width: 42%;
+    margin-right: 5%;
+  }
+
+  .schedule-item-body {
+    padding-bottom: 50px;
+  }
+  /*End Programación - Organismos*/
   /*-----------------------------*/
 }

@@ -133,7 +133,7 @@ $(document).ready(function() {
 
   /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
   const navbarTablet = document.querySelector(
-    ".claro-canal-header .menu-tablet, .synopsis-header .menu-tablet, .claro-cinema-header .menu-tablet, .concert-channel-header .menu-tablet"
+    ".claro-canal-header .menu-tablet, .synopsis-header .menu-tablet, .claro-cinema-header .menu-tablet, .concert-channel-header .menu-tablet, .programacion-header .menu-tablet"
   );
   $(document).on("scroll ontouchmove ontouchstart ontouchend", function() {
     var posicionScroll = $(document).scrollTop();
@@ -384,20 +384,7 @@ $(document).ready(function() {
     infinite: false,
     dots: true,
     centerMode: false,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: false
-        }
-      }
-    ]
+    arrows: false
   });
 
   var claro_slider = $(".claro-header-slider").slick({
@@ -477,51 +464,71 @@ $(document).ready(function() {
   });
 
   var programacion_slider = $(".programacion-slider").slick({
+    slidesToShow: 17,
+    slidesToScroll: 17,
+    infinite: true,
+    dots: true,
+    centerMode: false,
+    arrows: true,
+    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
     responsive: [
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 7,
-          slidesToScroll: 1,
+          slidesToScroll: 7,
           autoplay: false,
           autoplaySpeed: 2000,
           centerMode: false,
           infinite: false,
           arrows: false,
-          dots: false
+          dots: true
         }
       },
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 5,
-          slidesToScroll: 1,
+          slidesToShow: 8,
+          slidesToScroll: 8,
           infinite: false,
           dots: true,
           centerMode: false,
-          arrows: false
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
         }
       },
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 8,
-          slidesToScroll: 1,
+          slidesToShow: 11,
+          slidesToScroll: 11,
           infinite: true,
           dots: true,
           centerMode: false,
-          arrows: false
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
         }
       },
       {
-        breakpoint: 6000,
+        breakpoint: 1900,
         settings: {
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          infinite: false,
+          slidesToShow: 11,
+          slidesToScroll: 11,
+          infinite: true,
           dots: true,
           centerMode: false,
-          arrows: false
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
         }
       }
     ]
@@ -639,7 +646,7 @@ $(document).ready(function() {
     }
   });
 
-  $("ul.lista-avatar li").click(function () {
+  $("ul.lista-avatar li").click(function() {
     $("ul.lista-avatar li").removeClass("active-navAvatar");
     $(this).addClass("active-navAvatar");
     $(".tv-content").hide();

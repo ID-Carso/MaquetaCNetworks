@@ -83,12 +83,8 @@
   @include section();
 }
 
-.pro-container .o-advertising-section {
-  margin: 60px auto 60px auto;
-}
-
 .o-advertising-section {
-  margin: 0px auto 60px auto;
+  margin: 100px auto 60px auto;
   padding-left: 5%;
   padding-right: 5%;
   max-width: 600px;
@@ -124,8 +120,4 @@
 
 .synopsis-content {
   background: $pureBlack;
-}
-
-.imperdibles-videos-tablet {
-  padding-top: 30px;
 }
