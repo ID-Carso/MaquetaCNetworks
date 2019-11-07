@@ -21,11 +21,11 @@
   <header class="claro-canal-header">
     <div class="hamburguer-menu">
       <div class="text-center">
-        <a href="index.php"><img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar" /></a>
+        <a href="home.php"><img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar" /></a>
       </div>
       <div class="sidebar-content">
         <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
-          <a href="index.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
+          <a href="home.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
         </div>
         <div class="sidebar-item sidebar-border-bottom">
           <span class="dropdown-p active-sidebar-item">Canal Claro</span>
@@ -52,7 +52,7 @@
               <p class="dropdown-p">ebñrkjg</p>
             </div>-->
         <div class="sidebar-item sidebar-border-bottom">
-          <a class="sidebar-link" href="https://nuestravision.tv/"><span class="dropdown-p">Nuestra Visión</span></a>
+          <a class="sidebar-link" href="nuestra-vision.php"><span class="dropdown-p">Nuestra Visión</span></a>
         </div>
         <div class="sidebar-item sidebar-border-bottom">
           <a class="sidebar-link" href="claro-sports.html"><span class="dropdown-p">Claro
@@ -73,12 +73,12 @@
           <div class="claro-logo">
             <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
 
-            <a href="index.php"><img class="logo" src="./images/home/claro-logo.png" alt="" /></a>
+            <a href="home.php"><img class="logo" src="./images/home/claro-logo.png" alt="" /></a>
           </div>
 
           <div class="login">
             <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-            <a href="paises.html" class="login-item"><img class="login-country" alt="" /></a>
+            <a href="index.html" class="login-item"><img class="login-country" alt="" /></a>
           </div>
         </div>
       </nav>
@@ -86,7 +86,7 @@
         <div class="nav-content">
           <div class="claro-logo">
             <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
-          <a href="index.php">
+          <a href="home.php">
           <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
           </a>
             
@@ -94,7 +94,7 @@
 
           <div class="login">
             <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-            <a href="paises.html" class="login-item"><img class="login-country" /></a>
+            <a href="index.html" class="login-item"><img class="login-country" /></a>
           </div>
         </div>
       </nav>

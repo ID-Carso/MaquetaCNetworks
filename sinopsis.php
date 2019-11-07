@@ -24,10 +24,10 @@
     <header class="synopsis-header">
         <div class="hamburguer-menu">
             <div class="text-center">
-                <a href="index.php"><img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar"></a>
+                <a href="home.php"><img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar"></a>
             </div>
             <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
-                <a href="index.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
+                <a href="home.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
             </div>
             <div class="sidebar-content">
                 <div class="sidebar-item sidebar-border-bottom">
@@ -60,7 +60,7 @@
                             Visión</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="claro-sports.html"><span class="dropdown-p">Claro
+                    <a class="sidebar-link" href="claro-sports.php"><span class="dropdown-p">Claro
                             Sports</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
@@ -78,12 +78,12 @@
                     <div class="claro-logo">
                         <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
 
-                        <a href="index.php"><img class="logo" src="./images/home/claro-logo.png" alt="" /></a>
+                        <a href="home.php"><img class="logo" src="./images/home/claro-logo.png" alt="" /></a>
                     </div>
 
                     <div class="login">
                         <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-                        <a href="paises.html" class="login-item"><img class="login-country" alt="" /></a>
+                        <a href="index.html" class="login-item"><img class="login-country" alt="" /></a>
                     </div>
                 </div>
             </nav>
@@ -92,14 +92,14 @@
                     <div class="claro-logo">
                         <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
 
-                        <a href="index.php">
+                        <a href="home.php">
                             <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
                         </a>
                     </div>
 
                     <div class="login">
                         <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-                        <a href="paises.html" class="login-item"><img class="login-country" alt="" /></a>
+                        <a href="index.html" class="login-item"><img class="login-country" alt="" /></a>
                     </div>
                 </div>
             </nav>
@@ -145,25 +145,26 @@
                         </div>
                         <div class="col-md-7 col-lg-6 mx-sm-auto mx-md-auto synopsis-description-container">
                             <div>
-                            <h1 class="synopsis-title">Duis aute irure </h1>
-                            <p class="synopsis-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod
-                                tempor incididunt
-                                ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat.
-                                <br><br>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                deserunt
-                                mollit anim id est laborum.</p>
+                                <h1 class="synopsis-title">Duis aute irure </h1>
+                                <p class="synopsis-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod
+                                    tempor incididunt
+                                    ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                    <br><br>
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat
+                                    nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt
+                                    mollit anim id est laborum.</p>
                             </div>
 
                             <div class="no-gutters">
 
-                                <div class="synopsis-buttons-tablet-container col-md-10 ">
+                                <div class="synopsis-buttons-tablet-container col-md-10 col-xl-12">
                                     <button class="synopsis-button synopsis-add">
                                         <p class="mb-0 synopsis-add-text">Añadir</p>
                                     </button>
@@ -193,12 +194,12 @@
                             </div>
                             <div class="">
                                 <div class="synopsis-details-container">
-                                    <div class="">
+                                    <div class="synopsis-rating-container">
                                         <p class="synopsis-text synopsis-detail-text">Estados Unidos</p>
                                         <p class="synopsis-text synopsis-detail-text">2013</p>
                                         <p class="synopsis-text synopsis-detail-text">Clasificación C</p>
                                     </div>
-                                    <div>
+                                    <div class="synopsis-seasons-container">
                                         <p class="synopsis-text synopsis-detail-text">4 Temporadas</p>
                                         <p class="synopsis-text synopsis-detail-text">60 Minutos</p>
                                     </div>

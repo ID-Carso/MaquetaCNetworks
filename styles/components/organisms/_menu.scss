@@ -64,3 +64,14 @@
   z-index: 1;
   justify-content: space-between;
 }
+.marca-header .menu-tablet,
+.marca-header .menu-desktop {
+  position: initial;
+}
+.marca-header .menu-tablet {
+  padding: 30px;
+}
+
+.marca-header .menu-desktop {
+  padding: calc(3% + 4px) calc(8% - 10px) calc(3% + 4px) calc(8% - 10px);
+}
