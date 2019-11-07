@@ -4,7 +4,7 @@
       
         <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
       
-        <a href="index.php">
+        <a href="home.php">
           <img class="logo" src="./images/home/claro-logo.png" alt="" />
         </a>
     </div>
@@ -36,7 +36,7 @@
       </a>
     </div>
     <div>
-      <a href="claro-sports.html" class="navbar-link text-decoration-none">
+      <a href="claro-sports.php" class="navbar-link text-decoration-none">
         <p class="navbar-item">Claro Sports</p>
       </a>
     </div>

@@ -75,7 +75,24 @@
   display: none;
 }
 
-.synopsis-details-container {
+.synopsis-body-container {
+  display: initial;
+}
+
+.showtime-container {
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  height: 68px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0)
+  );
+  width: 100%;
+  z-index: 1;
+}
+
+.poster-body {
+  position: relative;
 }

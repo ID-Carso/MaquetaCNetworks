@@ -23,10 +23,10 @@
     <header class="programacion-header">
         <div class="hamburguer-menu">
             <div class="text-center">
-                <a href="index.php"><img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar"></a>
+                <a href="home.php"><img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar"></a>
             </div>
             <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
-                <a href="index.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
+                <a href="home.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
             </div>
             <div class="sidebar-content">
                 <div class="sidebar-item sidebar-border-bottom">
@@ -59,7 +59,7 @@
                             Visión</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="claro-sports.html"><span class="dropdown-p">Claro
+                    <a class="sidebar-link" href="claro-sports.php"><span class="dropdown-p">Claro
                             Sports</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
@@ -76,7 +76,7 @@
                     <div class="claro-logo">
                         <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
 
-                        <a href="index.php"><img class="logo" src="./images/home/claro-logo.png" alt="" /></a>
+                        <a href="home.php"><img class="logo" src="./images/home/claro-logo.png" alt="" /></a>
                     </div>
 
                     <div class="login">
@@ -90,7 +90,7 @@
                     <div class="claro-logo">
                         <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
 
-                        <a href="index.php">
+                        <a href="home.php">
                         <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
                         </a>
                     </div>

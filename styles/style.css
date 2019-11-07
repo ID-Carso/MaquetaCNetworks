@@ -1299,6 +1299,21 @@ h6 {
   font-size: 16px;
 }
 
+.marca-header .navbar-item {
+  color: #000000;
+}
+
+.poster-add::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 35px;
+  color: #ff8a00;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -1564,6 +1579,15 @@ h6 {
 
 .schedule-remove span {
   margin-left: 20px;
+}
+
+.poster-button {
+  position: relative;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 33px;
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
 }
 
 /*Tamaño de textos - responsive*/
@@ -2090,6 +2114,7 @@ h6 {
   bottom: -14%;
   width: 101%;
   left: 0;
+  z-index: 1;
 }
 
 .avatar-usuario {
@@ -2512,7 +2537,6 @@ input:checked + .slideralert:before {
     min-height: 100%;*/
   right: 0;
   top: 0;
-  width: 100%;
   overflow: hidden;
 }
 
@@ -2537,6 +2561,10 @@ input:checked + .slideralert:before {
 /*Tipografías*/
 .login-item:first-child {
   margin-right: 10px;
+}
+
+.home-title-link {
+  text-decoration: none !important;
 }
 
 /* Tag image */
@@ -3569,6 +3597,10 @@ input[type="radio"]:checked + .mujer-estilo {
   position: absolute;
 }
 
+.marca-header .claro-navbar {
+  position: initial;
+}
+
 .tv-list {
   list-style: none;
   display: -webkit-box;
@@ -4267,13 +4299,27 @@ input[type="radio"]:checked + .mujer-estilo {
   display: none;
 }
 
-.synopsis-details-container {
+.synopsis-body-container {
+  display: initial;
+}
+
+.showtime-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: absolute;
+  height: 68px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+  width: 100%;
+  z-index: 1;
+}
+
+.poster-body {
+  position: relative;
 }
 
 .schedule-poster {
@@ -4413,6 +4459,10 @@ input[type="radio"]:checked + .mujer-estilo {
   background: transparent;
 }
 
+.home-header {
+  position: relative;
+}
+
 .hamburguer-menu {
   position: fixed;
   width: 350px;
@@ -4478,6 +4528,19 @@ input[type="radio"]:checked + .mujer-estilo {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.marca-header .menu-tablet,
+.marca-header .menu-desktop {
+  position: initial;
+}
+
+.marca-header .menu-tablet {
+  padding: 30px;
+}
+
+.marca-header .menu-desktop {
+  padding: calc(3% + 4px) calc(8% - 10px) calc(3% + 4px) calc(8% - 10px);
 }
 
 .section-home-footer {
@@ -4605,6 +4668,8 @@ input[type="radio"]:checked + .mujer-estilo {
   .circle-video {
     display: block;
     width: 70%;
+    -webkit-clip-path: circle(50% at 88% 10%);
+            clip-path: circle(50% at 88% 10%);
   }
   .header-h1 {
     color: #4f4f4f;
@@ -4736,6 +4801,23 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*============================*/
   /*1.5 - Claro Cinema - Átomos*/
+  .a-today-cinema-title {
+    font-size: 30px;
+    padding: 15px 0;
+  }
+  .a-cinema-title {
+    font-size: 40px;
+    padding-top: 18px;
+  }
+  .a-cinema-subtitle {
+    font-size: 20px;
+    padding-bottom: 18px;
+  }
+  .a-cinema-title,
+  .a-cinema-subtitle {
+    text-align: left;
+    padding-left: 6%;
+  }
   /*End Claro Cinema - Átomos*/
   /*============================*/
   /*============================*/
@@ -4784,6 +4866,16 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .synopsis-text {
     margin-bottom: 0;
+  }
+  .synopsis-schedule-title {
+    font-size: 30px;
+  }
+  .synopsis-schedule-title {
+    margin-bottom: 95px !important;
+  }
+  .synopsis-section-title {
+    font-size: 30px;
+    padding: 50px 0;
   }
   /*End Sinópsis - Átomos*/
   /*============================*/
@@ -4865,6 +4957,9 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*============================*/
   /*2.5 - Claro Cinema - Moleculas*/
+  .cinema-slider {
+    margin: 0 -6px;
+  }
   /*End Claro Cinema - Moleculas*/
   /*============================*/
   /*============================*/
@@ -5075,6 +5170,18 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*============================*/
   /*3.5 - Claro Cinema - Organismos*/
+  .today-cinema-videos-container,
+  .imperdibles-videos-mobile,
+  .recordar-container-videos,
+  .only-videos-container {
+    padding-left: 6%;
+  }
+  .today-cinema-videos-container,
+  .imperdibles-videos-mobile,
+  .recordar-container-videos,
+  .only-videos-container {
+    padding-bottom: 100px;
+  }
   /*End Claro Cinema - Organismos*/
   /*============================*/
   /*============================*/
@@ -5084,6 +5191,10 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .schedule-container {
     margin-top: 60px;
+  }
+  .synopsis-details-container {
+    margin-top: 30px;
+    margin-bottom: 95px;
   }
   /*End Programación - Organismos*/
   /*============================*/
@@ -5097,6 +5208,7 @@ input[type="radio"]:checked + .mujer-estilo {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 65px 0;
+    margin: 0 auto;
   }
   .synopsis-buttons-mobile-container {
     display: none;
@@ -5209,8 +5321,7 @@ input[type="radio"]:checked + .mujer-estilo {
     color: white;
     text-transform: uppercase;
     font-family: "Montserrat-Black";
-    padding-top: 45px;
-    padding-bottom: 60px;
+    padding: 65px 0;
   }
   .a-today-claro-title,
   .a-today-cinema-title,
@@ -5471,6 +5582,40 @@ input[type="radio"]:checked + .mujer-estilo {
     font-size: 14px;
   }
   /*End Programación - átomos*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*1.5 - Sinópsis - Átomos */
+  .synopsis-title {
+    font-size: 30px;
+    font-family: "Montserrat-SemiBold";
+    padding-bottom: 25px;
+    text-align: left;
+  }
+  .synopsis-text {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .synopsis-add {
+    margin-right: 40px;
+  }
+  .synopsis-image:nth-child(1),
+  .synopsis-image:nth-child(2) {
+    margin-right: 13px;
+  }
+  .synopsis-image:nth-child(2),
+  .synopsis-image:nth-child(3) {
+    display: block;
+  }
+  .synopsis-detail-text {
+    padding-bottom: 4px;
+  }
+  .synopsis-schedule-title {
+    font-size: 30px;
+    padding-bottom: 65px;
+    margin-bottom: 0;
+  }
+  /*End Sinópsis - átomos*/
   /*-----------------------------*/
   /***  2. MOLECULES  ***/
   /*-----------------------------*/
@@ -5825,6 +5970,35 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .synopsis-body-container {
     margin-bottom: 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .synopsis-buttons-mobile-container {
+    display: none;
+  }
+  .synopsis-description-container {
+    margin-left: 30px !important;
+  }
+  .synopsis-buttons-tablet-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-top: 16px;
+  }
+  .synopsis-images-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .synopsis-details-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   /*End Sinópsis - organismos*/
   /*-----------------------------*/
@@ -5842,6 +6016,9 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .programacion-header .header {
     height: auto;
+  }
+  .synopsis-details-container {
+    margin-bottom: 65px;
   }
   /*End Programación - organismos*/
   /*-----------------------------*/
@@ -6015,6 +6192,12 @@ input[type="radio"]:checked + .mujer-estilo {
     height: 72px;
     width: 80%;
   }
+  .slick-dots li button:before {
+    font-size: 10px !important;
+  }
+  .slick-slider .slick-dots li {
+    margin: 0 3px;
+  }
   /*End Generales - átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -6152,6 +6335,38 @@ input[type="radio"]:checked + .mujer-estilo {
   .synopsis-section-title {
     padding: 80px 0;
     margin-left: 10%;
+    text-align: left;
+    font-size: 30px;
+  }
+  .synopsis-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .synopsis-add {
+    margin-right: 40px;
+  }
+  .synopsis-image:nth-child(2),
+  .synopsis-image:nth-child(3) {
+    display: block;
+  }
+  .synopsis-image:nth-child(1),
+  .synopsis-image:nth-child(2) {
+    margin-right: 13px;
+  }
+  .synopsis-seasons-container .synopsis-detail-text:nth-last-child(1) {
+    margin-left: 30px;
+  }
+  .synopsis-rating-container .synopsis-detail-text {
+    margin-left: 30px;
+  }
+  .synopsis-rating-container .synopsis-detail-text:nth-child(1) {
+    margin-left: 0;
+  }
+  .synopsis-schedule-title {
+    font-size: 30px;
+    padding-bottom: 65px;
+    margin-bottom: 0 !important;
   }
   /*End Sinópsis - átomos*/
   /*-----------------------------*/
@@ -6195,12 +6410,6 @@ input[type="radio"]:checked + .mujer-estilo {
         -ms-flex-align: center;
             align-items: center;
   }
-  .slick-dots li button:before {
-    font-size: 12px !important;
-  }
-  .slick-slider .slick-dots li {
-    margin: 0 12px;
-  }
   .social-media {
     margin: 46px auto 65px auto;
   }
@@ -6240,7 +6449,7 @@ input[type="radio"]:checked + .mujer-estilo {
     margin-bottom: 100px !important;
   }
   .header-details {
-    margin: 100px 0 10% 15px;
+    margin: 140px 0 calc(11% + 5px) -15px;
     display: inherit;
     text-align: left;
   }
@@ -6433,8 +6642,8 @@ input[type="radio"]:checked + .mujer-estilo {
   .circle-video {
     display: block;
     width: 65%;
-    -webkit-clip-path: circle(50% at 70% 10%);
-            clip-path: circle(50% at 70% 10%);
+    -webkit-clip-path: circle(56% at 78% 18%);
+            clip-path: circle(56% at 78% 18%);
   }
   .concert-first-subtitle {
     font-size: 25px;
@@ -6553,11 +6762,58 @@ input[type="radio"]:checked + .mujer-estilo {
   /*End Programación - Organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
-  /*3.5 - Programación - Organismos*/
+  /*3.5 - Sinópsis - Organismos*/
   .synopsis-body-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-bottom: 90px;
   }
-  /*End Programación - Organismos*/
+  .synopsis-buttons-mobile-container {
+    display: none;
+  }
+  .synopsis-description-container {
+    margin-left: 30px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .synopsis-buttons-tablet-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-top: 16px;
+  }
+  .synopsis-images-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .synopsis-details-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .synopsis-rating-container,
+  .synopsis-seasons-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .synopsis-details-container {
+    margin-bottom: 65px;
+  }
+  /*End Sinópsis - Organismos*/
   /*-----------------------------*/
 }
 
@@ -6846,6 +7102,38 @@ input[type="radio"]:checked + .mujer-estilo {
     right: -10%;
   }
   /*End Programación - Átomos*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*1.6 Sinópsis -  Átomos  */
+  .synopsis-section-title {
+    font-size: 60px;
+    padding: 85px 0;
+  }
+  .synopsis-add {
+    margin-right: 40px;
+  }
+  .synopsis-image:nth-child(2),
+  .synopsis-image:nth-child(3) {
+    display: block;
+  }
+  .synopsis-rating-container .synopsis-detail-text:nth-child(1) {
+    margin-left: 0;
+  }
+  .synopsis-rating-container .synopsis-detail-text {
+    margin-left: 30px;
+  }
+  .synopsis-seasons-container .synopsis-detail-text:nth-last-child(1) {
+    margin-left: 30px;
+  }
+  .synopsis-image:nth-child(1),
+  .synopsis-image:nth-child(2) {
+    margin-right: 13px;
+  }
+  .synopsis-schedule-title {
+    font-size: 60px;
+    margin: 120px 0 !important;
+  }
+  /*End Sinópsis - Átomos*/
   /*-----------------------------*/
   /***  2. - MOLECULES  ***/
   /*-----------------------------*/
@@ -7145,8 +7433,8 @@ input[type="radio"]:checked + .mujer-estilo {
   .circle-video {
     display: block;
     width: 65%;
-    -webkit-clip-path: circle(50% at 70% 10%);
-            clip-path: circle(50% at 70% 10%);
+    -webkit-clip-path: circle(50% at 80% 18%);
+            clip-path: circle(50% at 80% 18%);
   }
   .concert-first-subtitle {
     font-size: 25px;
@@ -7258,6 +7546,48 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-bottom: 50px;
   }
   /*End Programación - Organismos*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*3.6 - Sinópsis - Organismos*/
+  .synopsis-buttons-mobile-container {
+    display: none;
+  }
+  .synopsis-body-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 90px;
+  }
+  .synopsis-buttons-tablet-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-top: 12%;
+  }
+  .synopsis-description-container {
+    margin-left: 30px !important;
+  }
+  .synopsis-images-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .synopsis-details-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 0;
+  }
+  .synopsis-rating-container,
+  .synopsis-seasons-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /*End Sinópsis - Organismos*/
   /*-----------------------------*/
 }
 /*# sourceMappingURL=style.css.map */

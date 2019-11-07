@@ -159,6 +159,7 @@
   .circle-video {
     display: block;
     width: 70%;
+    clip-path: circle(50% at 88% 10%);
   }
 
   .header-h1 {
@@ -320,6 +321,26 @@
 
   /*============================*/
   /*1.5 - Claro Cinema - Átomos*/
+  .a-today-cinema-title {
+    font-size: 30px;
+    padding: 15px 0;
+  }
+
+  .a-cinema-title {
+    font-size: 40px;
+    padding-top: 18px;
+  }
+
+  .a-cinema-subtitle {
+    font-size: 20px;
+    padding-bottom: 18px;
+  }
+
+  .a-cinema-title,
+  .a-cinema-subtitle {
+    text-align: left;
+    padding-left: 6%;
+  }
   /*End Claro Cinema - Átomos*/
   /*============================*/
 
@@ -386,6 +407,21 @@
     margin-bottom: 0;
   }
 
+<<<<<<< HEAD
+=======
+  .synopsis-schedule-title {
+    font-size: 30px;
+  }
+
+  .synopsis-schedule-title {
+    margin-bottom: 95px !important;
+  }
+
+  .synopsis-section-title {
+    font-size: 30px;
+    padding: 50px 0;
+  }
+>>>>>>> be1531af6f4d03458b2c0934bc8352cbef423ec0
   /*End Sinópsis - Átomos*/
   /*============================*/
 
@@ -485,6 +521,9 @@
 
   /*============================*/
   /*2.5 - Claro Cinema - Moleculas*/
+  .cinema-slider {
+    margin: 0 -6px;
+  }
   /*End Claro Cinema - Moleculas*/
   /*============================*/
 
@@ -753,6 +792,19 @@
 
   /*============================*/
   /*3.5 - Claro Cinema - Organismos*/
+  .today-cinema-videos-container,
+  .imperdibles-videos-mobile,
+  .recordar-container-videos,
+  .only-videos-container {
+    padding-left: 6%;
+  }
+
+  .today-cinema-videos-container,
+  .imperdibles-videos-mobile,
+  .recordar-container-videos,
+  .only-videos-container {
+    padding-bottom: 100px;
+  }
   /*End Claro Cinema - Organismos*/
   /*============================*/
 
@@ -766,6 +818,14 @@
     margin-top: 60px;
   }
 
+<<<<<<< HEAD
+=======
+  .synopsis-details-container {
+    margin-top: 30px;
+    margin-bottom: 95px;
+  }
+
+>>>>>>> be1531af6f4d03458b2c0934bc8352cbef423ec0
   /*End Programación - Organismos*/
   /*============================*/
 
@@ -775,6 +835,7 @@
     display: flex;
     justify-content: space-between;
     padding: 65px 0;
+    margin: 0 auto;
   }
 
   .synopsis-buttons-mobile-container {
@@ -909,8 +970,7 @@
     color: white;
     text-transform: uppercase;
     font-family: $montserratBlack;
-    padding-top: 45px;
-    padding-bottom: 60px;
+    padding: 65px 0;
   }
 
   .a-today-claro-title,
@@ -1228,6 +1288,49 @@
   }
 
   /*End Programación - átomos*/
+  /*-----------------------------*/
+
+  /*-----------------------------*/
+  /*1.5 - Sinópsis - Átomos */
+
+  .synopsis-title {
+    font-size: 30px;
+    font-family: $montserratSemiBold;
+    padding-bottom: 25px;
+    text-align: left;
+  }
+
+  .synopsis-text {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .synopsis-add {
+    margin-right: 40px;
+  }
+
+  .synopsis-image:nth-child(1),
+  .synopsis-image:nth-child(2) {
+    margin-right: 13px;
+  }
+
+  .synopsis-image:nth-child(2),
+  .synopsis-image:nth-child(3) {
+    display: block;
+  }
+
+  .synopsis-detail-text {
+    padding-bottom: 4px;
+  }
+
+  .synopsis-schedule-title {
+    font-size: 30px;
+    padding-bottom: 65px;
+    margin-bottom: 0;
+  }
+
+  /*End Sinópsis - átomos*/
   /*-----------------------------*/
 
   /***  2. MOLECULES  ***/
@@ -1671,6 +1774,30 @@
 
   .synopsis-body-container {
     margin-bottom: 110px;
+    display: flex;
+  }
+
+  .synopsis-buttons-mobile-container {
+    display: none;
+  }
+
+  .synopsis-description-container {
+    margin-left: 30px !important;
+  }
+
+  .synopsis-buttons-tablet-container {
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+    padding-top: 16px;
+  }
+
+  .synopsis-images-container {
+    display: flex;
+  }
+
+  .synopsis-details-container {
+    justify-content: space-between;
   }
 
   /*End Sinópsis - organismos*/
@@ -1695,6 +1822,12 @@
     height: auto;
   }
 
+<<<<<<< HEAD
+=======
+  .synopsis-details-container {
+    margin-bottom: 65px;
+  }
+>>>>>>> be1531af6f4d03458b2c0934bc8352cbef423ec0
   /*End Programación - organismos*/
   /*-----------------------------*/
 
@@ -1906,6 +2039,14 @@
     width: 80%;
   }
 
+  .slick-dots li button:before {
+    font-size: 10px !important;
+  }
+
+  .slick-slider .slick-dots li {
+    margin: 0 3px;
+  }
+
   /*End Generales - átomos*/
   /*-----------------------------*/
 
@@ -2077,6 +2218,50 @@
   .synopsis-section-title {
     padding: 80px 0;
     margin-left: 10%;
+    text-align: left;
+    font-size: 30px;
+  }
+
+  .synopsis-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .synopsis-add {
+    margin-right: 40px;
+  }
+
+  .synopsis-image:nth-child(2),
+  .synopsis-image:nth-child(3) {
+    display: block;
+  }
+
+  .synopsis-image:nth-child(1),
+  .synopsis-image:nth-child(2) {
+    margin-right: 13px;
+  }
+
+  .synopsis-seasons-container {
+    .synopsis-detail-text:nth-last-child(1) {
+      margin-left: 30px;
+    }
+  }
+
+  .synopsis-rating-container {
+    .synopsis-detail-text {
+      margin-left: 30px;
+    }
+
+    .synopsis-detail-text:nth-child(1) {
+      margin-left: 0;
+    }
+  }
+
+  .synopsis-schedule-title {
+    font-size: 30px;
+    padding-bottom: 65px;
+    margin-bottom: 0 !important;
   }
 
   /*End Sinópsis - átomos*/
@@ -2124,14 +2309,6 @@
     margin: 0 auto 37px auto;
     width: 100%;
     align-items: center;
-  }
-
-  .slick-dots li button:before {
-    font-size: 12px !important;
-  }
-
-  .slick-slider .slick-dots li {
-    margin: 0 12px;
   }
 
   .social-media {
@@ -2190,7 +2367,7 @@
   }
 
   .header-details {
-    margin: 100px 0 10% 15px;
+    margin: 140px 0 calc(11% + 5px) -15px;
     display: inherit;
     text-align: left;
   }
@@ -2430,7 +2607,7 @@
   .circle-video {
     display: block;
     width: 65%;
-    clip-path: circle(50% at 70% 10%);
+    clip-path: circle(56% at 78% 18%);
   }
 
   .concert-first-subtitle {
@@ -2582,12 +2759,50 @@
   /*-----------------------------*/
 
   /*-----------------------------*/
-  /*3.5 - Programación - Organismos*/
+  /*3.5 - Sinópsis - Organismos*/
   .synopsis-body-container {
+    display: flex;
     margin-bottom: 90px;
   }
 
+<<<<<<< HEAD
   /*End Programación - Organismos*/
+=======
+  .synopsis-buttons-mobile-container {
+    display: none;
+  }
+
+  .synopsis-description-container {
+    margin-left: 30px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .synopsis-buttons-tablet-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+  }
+
+  .synopsis-images-container {
+    display: flex;
+  }
+
+  .synopsis-details-container {
+    justify-content: space-between;
+  }
+
+  .synopsis-rating-container,
+  .synopsis-seasons-container {
+    display: flex;
+  }
+
+  .synopsis-details-container {
+    margin-bottom: 65px;
+  }
+  /*End Sinópsis - Organismos*/
+>>>>>>> be1531af6f4d03458b2c0934bc8352cbef423ec0
   /*-----------------------------*/
 }
 
@@ -2951,6 +3166,46 @@
   }
 
   /*End Programación - Átomos*/
+  /*-----------------------------*/
+
+  /*-----------------------------*/
+  /*1.6 Sinópsis -  Átomos  */
+  .synopsis-section-title {
+    font-size: 60px;
+    padding: 85px 0;
+  }
+
+  .synopsis-add {
+    margin-right: 40px;
+  }
+
+  .synopsis-image:nth-child(2),
+  .synopsis-image:nth-child(3) {
+    display: block;
+  }
+
+  .synopsis-rating-container .synopsis-detail-text:nth-child(1) {
+    margin-left: 0;
+  }
+
+  .synopsis-rating-container .synopsis-detail-text {
+    margin-left: 30px;
+  }
+
+  .synopsis-seasons-container .synopsis-detail-text:nth-last-child(1) {
+    margin-left: 30px;
+  }
+
+  .synopsis-image:nth-child(1),
+  .synopsis-image:nth-child(2) {
+    margin-right: 13px;
+  }
+
+  .synopsis-schedule-title {
+    font-size: 60px;
+    margin: 120px 0 !important;
+  }
+  /*End Sinópsis - Átomos*/
   /*-----------------------------*/
 
   /***  2. - MOLECULES  ***/
@@ -3328,7 +3583,7 @@
   .circle-video {
     display: block;
     width: 65%;
-    clip-path: circle(50% at 70% 10%);
+    clip-path: circle(50% at 80% 18%);
   }
 
   .concert-first-subtitle {
@@ -3470,4 +3725,44 @@
 
   /*End Programación - Organismos*/
   /*-----------------------------*/
+<<<<<<< HEAD
 }
+=======
+  /*-----------------------------*/
+  /*3.6 - Sinópsis - Organismos*/
+  .synopsis-buttons-mobile-container {
+    display: none;
+  }
+
+  .synopsis-body-container {
+    display: flex;
+    margin-bottom: 90px;
+  }
+
+  .synopsis-buttons-tablet-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12%;
+  }
+
+  .synopsis-description-container {
+    margin-left: 30px !important;
+  }
+
+  .synopsis-images-container {
+    display: flex;
+  }
+
+  .synopsis-details-container {
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .synopsis-rating-container,
+  .synopsis-seasons-container {
+    display: flex;
+  }
+  /*End Sinópsis - Organismos*/
+  /*-----------------------------*/
+}
+>>>>>>> be1531af6f4d03458b2c0934bc8352cbef423ec0

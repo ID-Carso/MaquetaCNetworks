@@ -572,14 +572,14 @@ $(document).ready(function () {
     html.css({
       position: "initial",
       overflow: "auto",
-      height: "auto"
+      height: "100%"
     });
     body.css({
       position: "initial",
       overflowX: "hidden",
       overflowY: "auto",
       "-webkit-overflow-scrolling": "auto",
-      height: "auto",
+      height: "100%",
       width: "auto"
     });
     sidebar_content.style.overflow = "hidden";
