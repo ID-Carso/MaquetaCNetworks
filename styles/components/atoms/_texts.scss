@@ -1046,13 +1046,3 @@
 .marca-header .navbar-item {
   color: $pureBlack;
 }
-
-.poster-add::after {
-  content: "+";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 35px;
-  color: #ff8a00;
-}

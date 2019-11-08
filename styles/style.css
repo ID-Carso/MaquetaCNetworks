@@ -1303,17 +1303,6 @@ h6 {
   color: #000000;
 }
 
-.poster-add::after {
-  content: "+";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 35px;
-  color: #ff8a00;
-}
-
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -1583,11 +1572,17 @@ h6 {
 
 .poster-button {
   position: relative;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
   font-size: 33px;
   border: 1px solid black;
   width: 50px;
   height: 50px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.poster-button:hover {
+  background: black;
 }
 
 /*Tamaño de textos - responsive*/
@@ -1753,6 +1748,11 @@ h6 {
   border-radius: 8px;
   margin: auto;
   margin-bottom: 15px;
+}
+
+.poster-add {
+  margin: auto;
+  width: 65%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
