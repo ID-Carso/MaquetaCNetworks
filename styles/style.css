@@ -1574,14 +1574,15 @@ h6 {
   position: relative;
   background: rgba(0, 0, 0, 0.6);
   font-size: 33px;
-  border: 1px solid black;
+  border: none;
   width: 50px;
   height: 50px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.poster-button:hover {
+.poster-button:hover,
+.poster-button:focus {
   background: black;
 }
 
@@ -1753,6 +1754,7 @@ h6 {
 .poster-add {
   margin: auto;
   width: 65%;
+  display: block;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -2523,6 +2525,14 @@ input:checked + .slideralert:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+input::-webkit-contacts-auto-fill-button,
+input::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
 }
 
 .home-video {
@@ -5457,8 +5467,8 @@ input[type="radio"]:checked + .mujer-estilo {
   .circle-video {
     display: block;
     width: 65%;
-    -webkit-clip-path: circle(50% at 70% 17%);
-            clip-path: circle(50% at 70% 17%);
+    -webkit-clip-path: circle(50% at 78% 17%);
+            clip-path: circle(50% at 78% 17%);
   }
   .poster-title-sport {
     font-size: 40px;
