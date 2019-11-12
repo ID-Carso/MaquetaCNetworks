@@ -86,10 +86,10 @@
         <div class="nav-content">
           <div class="claro-logo">
             <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
-          <a href="home.php">
-          <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
-          </a>
-            
+            <a href="home.php">
+              <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
+            </a>
+
           </div>
 
           <div class="login">
@@ -98,8 +98,8 @@
           </div>
         </div>
       </nav>
-      <?php 
-        include 'menu-desktop.php';
+      <?php
+      include 'menu-desktop.php';
       ?>
 
 
@@ -133,107 +133,127 @@
         <div class="today-videos-container">
           <div class="section-slider" id="today-claro-slider">
             <div class="poster">
-              <div class="claro-thumbnail">
+              <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                 </div>
-              </div>
-              <div class="a-claro-rectangle ">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-white">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
+                <div class="claro-thumbnail">
                 </div>
-              </div>
-            </div>
-
-
-            <div class="poster">
-              <div class="claro-thumbnail">
-                <div class="showtime-container">
-                  <p class="a-programming-text">14:30 - 16:30</p>
-                </div>
-              </div>
-              <div class="a-claro-rectangle ">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-white">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="poster">
-              <div class="claro-thumbnail">
-                <div class="showtime-container">
-                  <p class="a-programming-text">14:30 - 16:30</p>
-                </div>
-              </div>
-              <div class="a-claro-rectangle ">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-white">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="poster">
-              <div class="claro-thumbnail">
-                <div class="showtime-container">
-                  <p class="a-programming-text">14:30 - 16:30</p>
-                </div>
-              </div>
-              <div class="a-claro-rectangle ">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-white">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="poster">
-              <div class="claro-thumbnail">
-                <div class="showtime-container">
-                  <p class="a-programming-text">14:30 - 16:30</p>
-                </div>
-              </div>
-              <div class="a-claro-rectangle ">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-white">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="poster">
-              <div class="claro-thumbnail">
-                <div class="showtime-container">
-                  <p class="a-programming-text">14:30 - 16:30</p>
-                </div>
-              </div>
-              <div class="a-claro-rectangle ">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-white">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
+                <div class="a-claro-rectangle ">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-white">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="poster">
-              <div class="claro-thumbnail">
+              <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
+                </div>
+                <div class="claro-thumbnail">
+                </div>
+                <div class="a-claro-rectangle ">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-white">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="a-claro-rectangle ">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-white">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
+            </div>
+
+            <div class="poster">
+              <div class="poster-body">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
+                </div>
+                <div class="claro-thumbnail">
+                </div>
+                <div class="a-claro-rectangle ">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-white">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="poster">
+              <div class="poster-body">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
+                </div>
+                <div class="claro-thumbnail">
+                </div>
+                <div class="a-claro-rectangle ">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-white">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="poster">
+              <div class="poster-body">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
+                </div>
+                <div class="claro-thumbnail">
+                </div>
+                <div class="a-claro-rectangle ">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-white">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="poster">
+              <div class="poster-body">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
+                </div>
+                <div class="claro-thumbnail">
+                </div>
+                <div class="a-claro-rectangle ">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-white">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="poster">
+              <div class="poster-body">
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
+                </div>
+                <div class="claro-thumbnail">
+                </div>
+                <div class="a-claro-rectangle ">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-white">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -360,100 +380,125 @@
 
         <div class="section-slider dontLose-claro-slider">
           <div class="poster">
-            <div class="claro-thumbnail">
+            <div class="poster-body">
               <div class="showtime-container">
                 <p class="a-programming-text">14:30 - 16:30</p>
+                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
               </div>
-            </div>
-            <div class="a-claro-rectangle ">
-              <div class="poster-title-margin">
-                <p class="a-poster-text-white">
-                  ¿QUÉ TE HA DADO ESA MUJER?
-                </p>
+              <div class="claro-thumbnail">
+              </div>
+              <div class="a-claro-rectangle ">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-white">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div class="poster">
-            <div class="claro-thumbnail">
+            <div class="poster-body">
               <div class="showtime-container">
                 <p class="a-programming-text">14:30 - 16:30</p>
+                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
               </div>
-            </div>
-            <div class="a-claro-rectangle ">
-              <div class="poster-title-margin">
-                <p class="a-poster-text-white">
-                  ¿QUÉ TE HA DADO ESA MUJER?
-                </p>
+              <div class="claro-thumbnail">
+              </div>
+              <div class="a-claro-rectangle ">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-white">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div class="poster">
-            <div class="claro-thumbnail">
+            <div class="poster-body">
               <div class="showtime-container">
                 <p class="a-programming-text">14:30 - 16:30</p>
+                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
               </div>
-            </div>
-            <div class="a-claro-rectangle ">
-              <div class="poster-title-margin">
-                <p class="a-poster-text-white">
-                  ¿QUÉ TE HA DADO ESA MUJER?
-                </p>
+              <div class="claro-thumbnail">
+              </div>
+              <div class="a-claro-rectangle ">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-white">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div class="poster">
-            <div class="claro-thumbnail">
+            <div class="poster-body">
               <div class="showtime-container">
                 <p class="a-programming-text">14:30 - 16:30</p>
+                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
               </div>
-            </div>
-            <div class="a-claro-rectangle ">
-              <div class="poster-title-margin">
-                <p class="a-poster-text-white">
-                  ¿QUÉ TE HA DADO ESA MUJER?
-                </p>
+              <div class="claro-thumbnail">
+              </div>
+              <div class="a-claro-rectangle ">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-white">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+
           <div class="poster">
-            <div class="claro-thumbnail">
+            <div class="poster-body">
               <div class="showtime-container">
                 <p class="a-programming-text">14:30 - 16:30</p>
+                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
               </div>
-            </div>
-            <div class="a-claro-rectangle ">
-              <div class="poster-title-margin">
-                <p class="a-poster-text-white">
-                  ¿QUÉ TE HA DADO ESA MUJER?
-                </p>
+              <div class="claro-thumbnail">
+              </div>
+              <div class="a-claro-rectangle ">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-white">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+
           <div class="poster">
-            <div class="claro-thumbnail">
+            <div class="poster-body">
               <div class="showtime-container">
                 <p class="a-programming-text">14:30 - 16:30</p>
+                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
               </div>
-            </div>
-            <div class="a-claro-rectangle ">
-              <div class="poster-title-margin">
-                <p class="a-poster-text-white">
-                  ¿QUÉ TE HA DADO ESA MUJER?
-                </p>
+              <div class="claro-thumbnail">
+              </div>
+              <div class="a-claro-rectangle ">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-white">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+
+
           <div class="poster">
-            <div class="claro-thumbnail">
+            <div class="poster-body">
               <div class="showtime-container">
                 <p class="a-programming-text">14:30 - 16:30</p>
+                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
               </div>
-            </div>
-            <div class="a-claro-rectangle ">
-              <div class="poster-title-margin">
-                <p class="a-poster-text-white">
-                  ¿QUÉ TE HA DADO ESA MUJER?
-                </p>
+              <div class="claro-thumbnail">
+              </div>
+              <div class="a-claro-rectangle ">
+                <div class="poster-title-margin">
+                  <p class="a-poster-text-white">
+                    ¿QUÉ TE HA DADO ESA MUJER?
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -470,102 +515,128 @@
 
           <div class="section-slider dontLose-claro-slider">
             <div class="poster">
-              <div class="claro-thumbnail">
+              <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                 </div>
-              </div>
-              <div class="a-claro-rectangle ">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-white">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
+                <div class="claro-thumbnail">
+                </div>
+                <div class="a-claro-rectangle ">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-white">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
 
             <div class="poster">
-              <div class="claro-thumbnail">
+              <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                 </div>
-              </div>
-              <div class="a-claro-rectangle ">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-white">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
+                <div class="claro-thumbnail">
+                </div>
+                <div class="a-claro-rectangle ">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-white">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="poster">
-              <div class="claro-thumbnail">
+              <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                 </div>
-              </div>
-              <div class="a-claro-rectangle ">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-white">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
+                <div class="claro-thumbnail">
+                </div>
+                <div class="a-claro-rectangle ">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-white">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="poster">
-              <div class="claro-thumbnail">
+              <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                 </div>
-              </div>
-              <div class="a-claro-rectangle ">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-white">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
+                <div class="claro-thumbnail">
+                </div>
+                <div class="a-claro-rectangle ">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-white">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="poster">
-              <div class="claro-thumbnail">
+              <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                 </div>
-              </div>
-              <div class="a-claro-rectangle ">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-white">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
+                <div class="claro-thumbnail">
+                </div>
+                <div class="a-claro-rectangle ">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-white">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="poster">
-              <div class="claro-thumbnail">
+              <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                 </div>
-              </div>
-              <div class="a-claro-rectangle ">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-white">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
+                <div class="claro-thumbnail">
+                </div>
+                <div class="a-claro-rectangle ">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-white">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="poster">
-              <div class="claro-thumbnail">
+              <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                 </div>
-              </div>
-              <div class="a-claro-rectangle ">
-                <div class="poster-title-margin">
-                  <p class="a-poster-text-white">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
+                <div class="claro-thumbnail">
+                </div>
+                <div class="a-claro-rectangle ">
+                  <div class="poster-title-margin">
+                    <p class="a-poster-text-white">
+                      ¿QUÉ TE HA DADO ESA MUJER?
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -576,9 +647,9 @@
 
 
     </section>
-    <?php 
-        include 'advertising-section.php'
-      ?>
+    <?php
+    include 'advertising-section.php'
+    ?>
     <section>
       <div class="">
         <div class="row no-gutters">
@@ -603,9 +674,9 @@
       </div>
     </section>
   </main>
-  <?php 
-        include 'footer.php'
-    ?>
+  <?php
+  include 'footer.php'
+  ?>
 </body>
 
 </html>

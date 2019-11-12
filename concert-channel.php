@@ -88,9 +88,9 @@
                     <div class="claro-logo">
                         <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
                         <a href="home.php">
-                        <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
+                            <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
                         </a>
-                        
+
                     </div>
 
                     <div class="login">
@@ -99,9 +99,9 @@
                     </div>
                 </div>
             </nav>
-    <?php 
-        include 'menu-desktop.php';
-    ?>
+            <?php
+            include 'menu-desktop.php';
+            ?>
             <div class="header-slider">
                 <div class="header-slide">
                     <img src="./images/concert-channel/header-image.jpeg" alt="">
@@ -122,86 +122,108 @@
                 <div class="section-slider concert-slider">
 
                     <div class="poster">
-                        <div class="thumbnail">
+                        <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
+                            </div>
+                            <div class="thumbnail">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                    </div>
+
+
+                    <div class="poster">
+                        <div class="poster-body">
+                            <div class="showtime-container">
+                                <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
+                            </div>
+                            <div class="thumbnail">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="poster">
-                        <div class="thumbnail">
+                        <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                             </div>
-                        </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                            <div class="thumbnail">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="poster">
-                        <div class="thumbnail">
+                        <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                             </div>
-                        </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                            <div class="thumbnail">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="poster">
-                        <div class="thumbnail">
+                        <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                             </div>
-                        </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                            <div class="thumbnail">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="poster">
-                        <div class="thumbnail">
+                        <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                             </div>
-                        </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                            <div class="thumbnail">
                             </div>
-                        </div>
-                    </div>
-                    <div class="poster">
-                        <div class="thumbnail">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                            </div>
-                        </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -218,86 +240,104 @@
                 <div class="week-videos-mobile">
                     <div class="section-slider concert-slider">
                         <div class="poster">
-                            <div class="thumbnail">
+                            <div class="poster-body">
                                 <div class="showtime-container">
                                     <p class="a-programming-text">14:30 - 16:30</p>
+                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                                 </div>
-                            </div>
-                            <div class="a-concert-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
-                                    </p>
+                                <div class="thumbnail">
+                                </div>
+                                <div class="a-concert-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">
+                                            ¿QUÉ TE HA DADO ESA MUJER?
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="poster">
-                            <div class="thumbnail">
+                            <div class="poster-body">
                                 <div class="showtime-container">
                                     <p class="a-programming-text">14:30 - 16:30</p>
+                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                                 </div>
-                            </div>
-                            <div class="a-concert-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
-                                    </p>
+                                <div class="thumbnail">
+                                </div>
+                                <div class="a-concert-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">
+                                            ¿QUÉ TE HA DADO ESA MUJER?
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="poster">
-                            <div class="thumbnail">
+                            <div class="poster-body">
                                 <div class="showtime-container">
                                     <p class="a-programming-text">14:30 - 16:30</p>
+                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                                 </div>
-                            </div>
-                            <div class="a-concert-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
-                                    </p>
+                                <div class="thumbnail">
+                                </div>
+                                <div class="a-concert-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">
+                                            ¿QUÉ TE HA DADO ESA MUJER?
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="poster">
-                            <div class="thumbnail">
+                            <div class="poster-body">
                                 <div class="showtime-container">
                                     <p class="a-programming-text">14:30 - 16:30</p>
+                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                                 </div>
-                            </div>
-                            <div class="a-concert-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
-                                    </p>
+                                <div class="thumbnail">
+                                </div>
+                                <div class="a-concert-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">
+                                            ¿QUÉ TE HA DADO ESA MUJER?
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="poster">
-                            <div class="thumbnail">
+                            <div class="poster-body">
                                 <div class="showtime-container">
                                     <p class="a-programming-text">14:30 - 16:30</p>
+                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                                 </div>
-                            </div>
-                            <div class="a-concert-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
-                                    </p>
+                                <div class="thumbnail">
+                                </div>
+                                <div class="a-concert-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">
+                                            ¿QUÉ TE HA DADO ESA MUJER?
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="poster">
-                            <div class="thumbnail">
+                            <div class="poster-body">
                                 <div class="showtime-container">
                                     <p class="a-programming-text">14:30 - 16:30</p>
+                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                                 </div>
-                            </div>
-                            <div class="a-concert-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
-                                    </p>
+                                <div class="thumbnail">
+                                </div>
+                                <div class="a-concert-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">
+                                            ¿QUÉ TE HA DADO ESA MUJER?
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -309,32 +349,38 @@
                     <div class="row poster-pad-b">
                         <div class="col poster-pad-r poster-section">
                             <div class="poster">
-                                <div class="thumbnail">
+                                <div class="poster-body">
                                     <div class="showtime-container">
                                         <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                                     </div>
-                                </div>
-                                <div class="a-concert-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">
-                                            ¿QUÉ TE HA DADO ESA MUJER?
-                                        </p>
+                                    <div class="thumbnail">
+                                    </div>
+                                    <div class="a-concert-rectangle">
+                                        <div class="poster-title-margin">
+                                            <p class="a-poster-text-white">
+                                                ¿QUÉ TE HA DADO ESA MUJER?
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col poster-pad-l">
                             <div class="poster">
-                                <div class="thumbnail">
+                                <div class="poster-body">
                                     <div class="showtime-container">
                                         <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                                     </div>
-                                </div>
-                                <div class="a-concert-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">
-                                            ¿QUÉ TE HA DADO ESA MUJER?
-                                        </p>
+                                    <div class="thumbnail">
+                                    </div>
+                                    <div class="a-concert-rectangle">
+                                        <div class="poster-title-margin">
+                                            <p class="a-poster-text-white">
+                                                ¿QUÉ TE HA DADO ESA MUJER?
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -343,32 +389,38 @@
                     <div class="row poster-pad-t">
                         <div class="col poster-pad-r">
                             <div class="poster">
-                                <div class="thumbnail">
+                                <div class="poster-body">
                                     <div class="showtime-container">
                                         <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                                     </div>
-                                </div>
-                                <div class="a-concert-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">
-                                            ¿QUÉ TE HA DADO ESA MUJER?
-                                        </p>
+                                    <div class="thumbnail">
+                                    </div>
+                                    <div class="a-concert-rectangle">
+                                        <div class="poster-title-margin">
+                                            <p class="a-poster-text-white">
+                                                ¿QUÉ TE HA DADO ESA MUJER?
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col poster-pad-l">
                             <div class="poster">
-                                <div class="thumbnail">
+                                <div class="poster-body">
                                     <div class="showtime-container">
                                         <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                                     </div>
-                                </div>
-                                <div class="a-concert-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">
-                                            ¿QUÉ TE HA DADO ESA MUJER?
-                                        </p>
+                                    <div class="thumbnail">
+                                    </div>
+                                    <div class="a-concert-rectangle">
+                                        <div class="poster-title-margin">
+                                            <p class="a-poster-text-white">
+                                                ¿QUÉ TE HA DADO ESA MUJER?
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -386,86 +438,104 @@
             <div class="concerts-videos-container">
                 <div class="section-slider concert-slider">
                     <div class="poster">
-                        <div class="thumbnail">
+                        <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                             </div>
-                        </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                            <div class="thumbnail">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="poster">
-                        <div class="thumbnail">
+                        <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                             </div>
-                        </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                            <div class="thumbnail">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="poster">
-                        <div class="thumbnail">
+                        <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                             </div>
-                        </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                            <div class="thumbnail">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="poster">
-                        <div class="thumbnail">
+                        <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                             </div>
-                        </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                            <div class="thumbnail">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="poster">
-                        <div class="thumbnail">
+                        <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                             </div>
-                        </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                            <div class="thumbnail">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="poster">
-                        <div class="thumbnail">
+                        <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                             </div>
-                        </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                            <div class="thumbnail">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -481,100 +551,121 @@
             <div class="interviews-videos-container">
                 <div class="section-slider concert-slider">
                     <div class="poster">
-                        <div class="thumbnail">
+                        <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                             </div>
-                        </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                            <div class="thumbnail">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="poster">
-                        <div class="thumbnail">
+                        <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                             </div>
-                        </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                            <div class="thumbnail">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="poster">
-                        <div class="thumbnail">
+                        <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                             </div>
-                        </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                            <div class="thumbnail">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="poster">
-                        <div class="thumbnail">
+                        <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                             </div>
-                        </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                            <div class="thumbnail">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="poster">
-                        <div class="thumbnail">
+                        <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                             </div>
-                        </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                            <div class="thumbnail">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="poster">
-                        <div class="thumbnail">
+                        <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                             </div>
-                        </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                            <div class="thumbnail">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="poster">
-                        <div class="thumbnail">
+                        <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
                             </div>
-                        </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
+                            <div class="thumbnail">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -582,8 +673,8 @@
             </div>
 
         </section>
-        <?php 
-            include 'advertising-section.php'
+        <?php
+        include 'advertising-section.php'
         ?>
         <div class="">
             <div class="row no-gutters">
@@ -608,9 +699,9 @@
             </div>
         </div>
         <footer>
-            <?php 
+            <?php
             include 'footer.php'
-         ?>
+            ?>
         </footer>
 
     </div>
