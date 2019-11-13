@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="./slick-master/slick/slick.css" />
     <link rel="stylesheet" href="./slick-master/slick/slick-theme.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="slick-master/slick/slick.js"></script>
     <script src="./js/jquery.browser.js"></script>
     <script src="./js/main.js"></script>
@@ -56,7 +54,7 @@
                       <p class="dropdown-p">ebñrkjg</p>
                     </div>-->
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="https://nuestravision.tv/"><span class="dropdown-p">Nuestra
+                    <a class="sidebar-link" href="nuestra-vision.php"><span class="dropdown-p">Nuestra
                             Visión</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
@@ -103,8 +101,8 @@
                     </div>
                 </div>
             </nav>
-            <?php 
-                include 'menu-desktop.php';
+            <?php
+            include 'menu-desktop.php';
             ?>
             <div class="header-slider">
                 <div class="header-slide">
@@ -127,8 +125,7 @@
                         </button>
                         <button class="synopsis-button">
                             <div class="d-flex align-items-center">
-                                <p class="synopsis-schedule-text mb-0">Horarios</p><img src="./images/home/clock.svg"
-                                    alt="">
+                                <p class="synopsis-schedule-text mb-0">Horarios</p><img src="./images/home/clock.svg" alt="">
                             </div>
                         </button>
                     </div>
@@ -170,8 +167,7 @@
                                     </button>
                                     <button class="synopsis-button">
                                         <div class="d-flex align-items-center">
-                                            <p class="synopsis-schedule-text mb-0">Horarios</p><img
-                                                src="./images/home/clock.svg" alt="">
+                                            <p class="synopsis-schedule-text mb-0">Horarios</p><img src="./images/home/clock.svg" alt="">
                                         </div>
                                     </button>
                                 </div>
@@ -186,10 +182,8 @@
                     <div class="no-gutters">
                         <div class="col-md-10 col-lg-12 mx-auto">
                             <div class="synopsis-images-container no-gutters">
-                                <img src="./images/sinopsis/images.jpeg" alt=""
-                                    class="col-md-6 col-lg-4 synopsis-image">
-                                <img src="./images/sinopsis/images.jpeg" alt=""
-                                    class="col-md-6 col-lg-4 synopsis-image">
+                                <img src="./images/sinopsis/images.jpeg" alt="" class="col-md-6 col-lg-4 synopsis-image">
+                                <img src="./images/sinopsis/images.jpeg" alt="" class="col-md-6 col-lg-4 synopsis-image">
                                 <img src="./images/sinopsis/images.jpeg" alt="" class="col-lg-4 synopsis-image">
                             </div>
                             <div class="">
@@ -351,8 +345,8 @@
                 </div>
             </div>
 
-            <?php 
-                include 'advertising-section.php'
+            <?php
+            include 'advertising-section.php'
             ?>
             <div class="">
                 <div class="row no-gutters">
@@ -376,8 +370,8 @@
                     </div>
                 </div>
             </div>
-            <?php 
-                include 'footer.php'
+            <?php
+            include 'footer.php'
             ?>
         </div>
         </div>

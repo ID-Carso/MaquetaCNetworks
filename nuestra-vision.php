@@ -37,8 +37,7 @@
               <p class="dropdown-p">ebñrkjg</p>
             </div>-->
         <div class="sidebar-item sidebar-border-bottom">
-          <span class="dropdown-p ">Concert
-            Channel</span>
+          <a class="sidebar-link" href="concert-channel.php"><span class="dropdown-p">Concert Channel</span></a>
         </div>
         <!--<div class="dropdown-content">
               <p class="dropdown-p">ebñrkjg</p>
