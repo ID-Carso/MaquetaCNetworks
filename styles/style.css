@@ -1781,7 +1781,7 @@ h6 {
   .shadow1 {
     -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
     box-shadow: 3px 3px 5px 6px #5c1864;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-top: 15%;
   }
 }
@@ -1799,7 +1799,7 @@ h6 {
   .shadow1 {
     -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
     box-shadow: 3px 3px 5px 6px #5c1864;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-top: 4%;
   }
 }
@@ -1817,7 +1817,7 @@ h6 {
   .shadow1 {
     -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
     box-shadow: 3px 3px 5px 6px #5c1864;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-top: 4%;
   }
 }
@@ -5233,6 +5233,52 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   /*End Sinópsis - Organismos*/
   /*============================*/
+  /*============================*/
+  /*3.6 - Sinópsis - Organismos*/
+  .avatar-header .menu-perfil {
+    display: none;
+  }
+  .avatar-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .alertas-header .menu-perfil {
+    display: none;
+  }
+  .alertas-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .datos-header .menu-perfil {
+    display: none;
+  }
+  .datos-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .perfil-header .menu-perfil {
+    display: none;
+  }
+  .perfil-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .configuracion-header .menu-perfil {
+    display: none;
+  }
+  .configuracion-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .lista-header .menu-perfil {
+    display: none;
+  }
+  .lista-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  /*End Sinópsis - Organismos*/
+  /*============================*/
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -6047,6 +6093,60 @@ input[type="radio"]:checked + .mujer-estilo {
   /*-------------------*/
 }
 
+.avatar-header .menu-perfil {
+  display: none;
+}
+
+.avatar-header .menu-tablet .login {
+  top: 0;
+  right: 0;
+}
+
+.alertas-header .menu-perfil {
+  display: none;
+}
+
+.alertas-header .menu-tablet .login {
+  top: 0;
+  right: 0;
+}
+
+.datos-header .menu-perfil {
+  display: none;
+}
+
+.datos-header .menu-tablet .login {
+  top: 0;
+  right: 0;
+}
+
+.perfil-header .menu-perfil {
+  display: none;
+}
+
+.perfil-header .menu-tablet .login {
+  top: 0;
+  right: 0;
+}
+
+.configuracion-header .menu-perfil {
+  display: none;
+}
+
+.configuracion-header .menu-tablet .login {
+  top: 0;
+  right: 0;
+}
+
+.lista-header .menu-perfil {
+  display: none;
+}
+
+.lista-header .menu-tablet .login {
+  top: 0;
+  right: 0;
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
   /***  1.- ATOMS  ****/
   /*1.1.- Generales - átomos*/
@@ -6389,8 +6489,23 @@ input[type="radio"]:checked + .mujer-estilo {
   .menu-tablet {
     display: none;
   }
-  .menu-tablet {
-    display: none;
+  .datos-header .menu-tablet {
+    display: block;
+  }
+  .avatar-header .menu-tablet {
+    display: block;
+  }
+  .alertas-header .menu-tablet {
+    display: block;
+  }
+  .perfil-header .menu-tablet {
+    display: block;
+  }
+  .configuracion-header .menu-tablet {
+    display: block;
+  }
+  .lista-header .menu-tablet {
+    display: block;
   }
   .menu-desktop {
     display: block;

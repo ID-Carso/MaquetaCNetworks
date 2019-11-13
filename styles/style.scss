@@ -341,6 +341,7 @@
     text-align: left;
     padding-left: 6%;
   }
+
   /*End Claro Cinema - Átomos*/
   /*============================*/
 
@@ -419,6 +420,7 @@
     font-size: 30px;
     padding: 50px 0;
   }
+
   /*End Sinópsis - Átomos*/
   /*============================*/
 
@@ -521,6 +523,7 @@
   .cinema-slider {
     margin: 0 -6px;
   }
+
   /*End Claro Cinema - Moleculas*/
   /*============================*/
 
@@ -802,6 +805,7 @@
   .only-videos-container {
     padding-bottom: 100px;
   }
+
   /*End Claro Cinema - Organismos*/
   /*============================*/
 
@@ -839,6 +843,78 @@
   .synopsis-images-container {
     display: flex;
     justify-content: center;
+  }
+
+  /*End Sinópsis - Organismos*/
+  /*============================*/
+
+  /*============================*/
+  /*3.6 - Sinópsis - Organismos*/
+
+  .avatar-header {
+    .menu-perfil {
+      display: none;
+    }
+  }
+
+  .avatar-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+
+  .alertas-header {
+    .menu-perfil {
+      display: none;
+    }
+  }
+
+  .alertas-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+
+  .datos-header {
+    .menu-perfil {
+      display: none;
+    }
+  }
+
+  .datos-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+
+  .perfil-header {
+    .menu-perfil {
+      display: none;
+    }
+  }
+
+  .perfil-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+
+  .configuracion-header {
+    .menu-perfil {
+      display: none;
+    }
+  }
+
+  .configuracion-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+
+  .lista-header {
+    .menu-perfil {
+      display: none;
+    }
+  }
+
+  .lista-header .menu-tablet .login {
+    top: 0;
+    right: 0;
   }
 
   /*End Sinópsis - Organismos*/
@@ -1819,6 +1895,7 @@
   .synopsis-details-container {
     margin-bottom: 65px;
   }
+
   /*End Programación - organismos*/
   /*-----------------------------*/
 
@@ -1838,6 +1915,73 @@
 
   /*-------------------*/
 }
+
+.avatar-header {
+  .menu-perfil {
+    display: none;
+  }
+}
+
+.avatar-header .menu-tablet .login {
+  top: 0;
+  right: 0;
+}
+
+.alertas-header {
+  .menu-perfil {
+    display: none;
+  }
+}
+
+.alertas-header .menu-tablet .login {
+  top: 0;
+  right: 0;
+}
+
+.datos-header {
+  .menu-perfil {
+    display: none;
+  }
+}
+
+.datos-header .menu-tablet .login {
+  top: 0;
+  right: 0;
+}
+
+.perfil-header {
+  .menu-perfil {
+    display: none;
+  }
+}
+
+.perfil-header .menu-tablet .login {
+  top: 0;
+  right: 0;
+}
+
+.configuracion-header {
+  .menu-perfil {
+    display: none;
+  }
+}
+
+.configuracion-header .menu-tablet .login {
+  top: 0;
+  right: 0;
+}
+
+.lista-header {
+  .menu-perfil {
+    display: none;
+  }
+}
+
+.lista-header .menu-tablet .login {
+  top: 0;
+  right: 0;
+}
+
 
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
   /***  1.- ATOMS  ****/
@@ -2271,9 +2415,42 @@
     display: none;
   }
 
-  .menu-tablet {
-    display: none;
+  .datos-header {
+    .menu-tablet {
+      display: block;
+    }
   }
+
+  .avatar-header {
+    .menu-tablet {
+      display: block;
+    }
+  }
+
+  .alertas-header {
+    .menu-tablet {
+      display: block;
+    }
+  }
+
+  .perfil-header {
+    .menu-tablet {
+      display: block;
+    }
+  }
+
+  .configuracion-header {
+    .menu-tablet {
+      display: block;
+    }
+  }
+
+  .lista-header {
+    .menu-tablet {
+      display: block;
+    }
+  }
+
 
   .menu-desktop {
     display: block;
@@ -2789,6 +2966,7 @@
   .synopsis-details-container {
     margin-bottom: 65px;
   }
+
   /*End Sinópsis - Organismos*/
   /*-----------------------------*/
 }
@@ -3192,6 +3370,7 @@
     font-size: 60px;
     margin: 120px 0 !important;
   }
+
   /*End Sinópsis - Átomos*/
   /*-----------------------------*/
 
@@ -3746,7 +3925,7 @@
   .synopsis-seasons-container {
     display: flex;
   }
+
   /*End Sinópsis - Organismos*/
   /*-----------------------------*/
 }
- 

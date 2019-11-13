@@ -133,7 +133,7 @@ $(document).ready(function () {
 
   /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
   const navbarTablet = document.querySelector(
-    ".claro-canal-header .menu-tablet, .synopsis-header .menu-tablet, .claro-cinema-header .menu-tablet, .concert-channel-header .menu-tablet, .programacion-header .menu-tablet"
+    ".claro-canal-header .menu-tablet, .synopsis-header .menu-tablet, .claro-cinema-header .menu-tablet, .concert-channel-header .menu-tablet, .programacion-header .menu-tablet, .avatar-header .menu-tablet, .alertas-header .menu-tablet, .datos-header .menu-tablet, .perfil-header .menu-tablet, .configuracion-header .menu-tablet, lista-header .menu-tablet"
   );
   $(document).on("scroll ontouchmove ontouchstart ontouchend", function () {
     var posicionScroll = $(document).scrollTop();
