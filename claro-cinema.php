@@ -53,11 +53,11 @@
                 <p class="dropdown-p">ebñrkjg</p>
               </div>-->
         <div class="sidebar-item sidebar-border-bottom">
-          <a class="sidebar-link" href="https://www.nuestravision.com.mx/"><span class="dropdown-p">Nuestra
+          <a class="sidebar-link" href="nuestra-vision.php"><span class="dropdown-p">Nuestra
               Visión</span></a>
         </div>
         <div class="sidebar-item sidebar-border-bottom">
-          <a class="sidebar-link" href="https://www.marca.com/claro-mx/"><span class="dropdown-p">Claro
+          <a class="sidebar-link" href="claro-sports.php"><span class="dropdown-p">Claro
               Sports</span></a>
         </div>
         <div class="sidebar-item sidebar-border-bottom">
@@ -272,7 +272,7 @@
             </h2>
           </div>
         </div>
-        <div class="">
+        <div class="imperdibles-video-container">
           <div class="imperdibles-videos-mobile">
             <div class="imperdibles-slider cinema-slider">
               <div class="poster">

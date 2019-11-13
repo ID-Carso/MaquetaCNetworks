@@ -238,7 +238,7 @@
             </div>
             <div class="week-videos-container">
                 <div class="week-videos-mobile">
-                    <div class="section-slider concert-slider">
+                    <div class="imperdibles-slider concert-slider">
                         <div class="poster">
                             <div class="poster-body">
                                 <div class="showtime-container">

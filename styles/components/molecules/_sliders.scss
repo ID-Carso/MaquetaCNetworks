@@ -16,6 +16,11 @@
   padding-bottom: 60px;
 }
 
+.header-slider {
+  width: 100%;
+  padding-bottom: 0px;
+}
+
 .slick-slider {
   .slick-dots li button:before {
     font-size: 8px;
@@ -300,7 +305,12 @@
   }
 }
 
-.concert-channel-header {
+.section-slider .slick-list,
+.imperdibles-slider .slick-list {
+  padding: 0px 55px 0px 0px !important;
+}
+
+.imperdibles-slider .concert-channel-header {
   .slick-slider {
     width: 100%;
     padding-bottom: 0px;

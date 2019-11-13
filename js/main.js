@@ -141,21 +141,16 @@ $(document).ready(function() {
       navbar.style.background =
         "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
       navbar.style.position = "absolute";
-      navbarTablet.style.background =
-        "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-      navbarTablet.style.position = "absolute";
+      //navbarTablet.style.position = "absolute";
     } else if (posicionScroll > 0 && posicionScroll <= 100) {
       navbar.style.background =
         "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
       navbar.style.position = "fixed";
-      navbarTablet.style.background =
-        "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-      navbarTablet.style.position = "fixed";
+      //navbarTablet.style.position = "fixed";
     } else if (posicionScroll >= 101) {
       navbar.style.background = "black";
       navbar.style.position = "fixed";
-      navbarTablet.style.background = "white";
-      navbarTablet.style.position = "fixed";
+      // navbarTablet.style.position = "fixed";
     }
   });
 

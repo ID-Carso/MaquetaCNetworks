@@ -585,7 +585,7 @@
   .synopsis-header .menu-tablet,
   .claro-cinema-header .menu-tablet,
   .programacion-header .menu-tablet {
-    background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+    background-color: white;
     padding: 5%;
   }
 
@@ -595,6 +595,20 @@
 
   .advertising-section-mobile {
     display: none;
+  }
+
+  .concerts-videos-container,
+  .interviews-videos-container,
+  .today-concert-videos-container,
+  .week-videos-container,
+  .today-cinema-videos-container,
+  .imperdibles-video-container,
+  .recordar-container-videos,
+  .only-videos-container,
+  .today-videos-container,
+  .week-claro-video-container,
+  .dontLose-video-container {
+    margin-left: 0;
   }
 
   /*End General - Organismos*/
@@ -785,6 +799,10 @@
   .next-week-concert,
   .concerts {
     padding-bottom: 130px;
+  }
+
+  .concert-container-header {
+    padding: 0;
   }
 
   /*End Concert Channel - Organismos*/
@@ -1521,7 +1539,7 @@
   .synopsis-header .menu-tablet,
   .claro-cinema-header .menu-tablet,
   .programacion-header .menu-tablet {
-    background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+    background-color: white;
     padding: calc(2% + 2px);
   }
 
@@ -1539,6 +1557,20 @@
 
   .footer-companies-desktop {
     display: block;
+  }
+
+  .concerts-videos-container,
+  .interviews-videos-container,
+  .today-concert-videos-container,
+  .week-videos-container,
+  .today-cinema-videos-container,
+  .imperdibles-video-container,
+  .recordar-container-videos,
+  .only-videos-container,
+  .today-videos-container,
+  .week-claro-video-container,
+  .dontLose-video-container {
+    margin-left: 0;
   }
 
   /*End Generales - organismos*/
@@ -1720,6 +1752,10 @@
 
   .concert-interviews {
     padding-bottom: 213px;
+  }
+
+  .concert-container-header {
+    padding: 0;
   }
 
   /*End Concert Channel - organismos*/
@@ -2268,10 +2304,6 @@
     display: none;
   }
 
-  .menu-tablet {
-    display: none;
-  }
-
   .menu-desktop {
     display: block;
   }
@@ -2506,6 +2538,20 @@
     display: flex;
   }
 
+  .concerts-videos-container,
+  .interviews-videos-container,
+  .today-concert-videos-container,
+  .week-videos-container,
+  .today-cinema-videos-container,
+  .imperdibles-video-container,
+  .recordar-container-videos,
+  .only-videos-container,
+  .today-videos-container,
+  .week-claro-video-container,
+  .dontLose-video-container {
+    margin-left: 0;
+  }
+
   /*End General - Organismos*/
   /*-----------------------------*/
 
@@ -2695,6 +2741,17 @@
 
   .week-videos-tablet {
     display: block;
+  }
+
+  .concert-container-header {
+    padding: 0;
+  }
+
+  .concerts-videos-container,
+  .interviews-videos-container,
+  .today-concert-videos-container,
+  .week-videos-container {
+    margin-left: 0;
   }
 
   /*End Concert Channel - Organismos*/
@@ -3451,6 +3508,20 @@
     display: block;
   }
 
+  .concerts-videos-container,
+  .interviews-videos-container,
+  .today-concert-videos-container,
+  .week-videos-container,
+  .today-cinema-videos-container,
+  .imperdibles-video-container,
+  .recordar-container-videos,
+  .only-videos-container,
+  .today-videos-container,
+  .week-claro-video-container,
+  .dontLose-video-container {
+    margin-left: 0;
+  }
+
   /*End General - Organismos*/
   /*-----------------------------*/
 
@@ -3646,6 +3717,10 @@
 
   .week-videos-tablet {
     display: block;
+  }
+
+  .concert-container-header {
+    padding: 0;
   }
 
   /*End Concert Channel - Organismos*/

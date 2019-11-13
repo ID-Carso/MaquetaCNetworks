@@ -643,7 +643,7 @@
 /*Concert channel*/
 
 .today-concert-title {
-  @include title-section($colorWhite, $titleSection);
+  @include title-section($colorWhite, 14px);
   padding: 20px 0px;
 }
 
@@ -652,12 +652,12 @@
 }
 
 .concert-title {
-  @include title-section($concertColorTitle, $titleSection);
+  @include title-section($concertColorTitle, 18px);
   padding-bottom: 6px;
 }
 
 .concert-subtitle {
-  @include title-section($colorWhite, $posterTitleResponsive, $montserratLight);
+  @include title-section($colorWhite, 14px, $montserratLight);
   padding-bottom: 20px;
 }
 
