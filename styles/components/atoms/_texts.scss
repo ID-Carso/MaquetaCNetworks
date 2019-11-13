@@ -538,7 +538,7 @@
 
 .a-today-claro-title,
 .a-today-cinema-title {
-  @include title-section($blackColor, $titleSection);
+  @include title-section($blackColor, $fontSizeTitle);
   text-transform: uppercase;
 }
 
@@ -570,7 +570,7 @@
 }
 
 .a-next-claro-title {
-  @include title-section($colorWhite, $titleSection);
+  @include title-section($colorWhite, $fontSizeTitle);
 }
 
 .a-next-claro-subtitle {
@@ -587,7 +587,7 @@
 }
 
 .a-dontLose-claro-title {
-  @include title-section($colorWhite, $titleSection);
+  @include title-section($colorWhite, $fontSizeTitle);
 }
 
 .bold {
@@ -643,7 +643,7 @@
 /*Concert channel*/
 
 .today-concert-title {
-  @include title-section($colorWhite, 14px);
+  @include title-section($colorWhite, $fontSizeTitle);
   padding: 20px 0px;
 }
 
@@ -652,12 +652,12 @@
 }
 
 .concert-title {
-  @include title-section($concertColorTitle, 18px);
+  @include title-section($concertColorTitle, $fontSizeTitle);
   padding-bottom: 6px;
 }
 
 .concert-subtitle {
-  @include title-section($colorWhite, 14px, $montserratLight);
+  @include title-section($colorWhite, $posterTitleResponsive, $montserratLight);
   padding-bottom: 20px;
 }
 
@@ -680,7 +680,7 @@
 
 /*Claro cinema*/
 .a-cinema-title {
-  @include title-section($colorWhite, $titleSection);
+  @include title-section($colorWhite, $fontSizeTitle);
   padding-top: 7px;
   padding-bottom: 7px;
 }

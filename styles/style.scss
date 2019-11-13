@@ -171,7 +171,8 @@
     font-size: 30px;
   }
 
-  .nav-image {
+  .nav-image,
+  .claro-nav-image {
     height: 72px;
     width: 80%;
   }
@@ -469,6 +470,12 @@
 
   .imperdibles-slider .slick-list {
     padding: 0px 250px 0px 0px !important;
+  }
+
+  .section-slider,
+  .imperdibles-slider,
+  .tv-slider {
+    margin-left: 0px;
   }
 
   /*End General - Moleculas*/
@@ -1074,7 +1081,8 @@
     font-size: 30px;
   }
 
-  .nav-image {
+  .nav-image,
+  .claro-nav-image {
     height: 72px;
     width: 80%;
   }
@@ -1414,6 +1422,17 @@
     margin: 0 -6px;
   }
 
+  .section-slider,
+  .imperdibles-slider {
+    margin-left: 6px;
+  }
+
+  .section-slider,
+  .imperdibles-slider,
+  .tv-slider {
+    margin-left: 0px;
+  }
+
   /*End General - Moleculas*/
   /*-----------------------------*/
 
@@ -1557,20 +1576,6 @@
 
   .footer-companies-desktop {
     display: block;
-  }
-
-  .concerts-videos-container,
-  .interviews-videos-container,
-  .today-concert-videos-container,
-  .week-videos-container,
-  .today-cinema-videos-container,
-  .imperdibles-video-container,
-  .recordar-container-videos,
-  .only-videos-container,
-  .today-videos-container,
-  .week-claro-video-container,
-  .dontLose-video-container {
-    margin-left: 0;
   }
 
   /*End Generales - organismos*/
@@ -2012,7 +2017,8 @@
     border-radius: 30px;
   }
 
-  .nav-image {
+  .nav-image,
+  .claro-nav-image {
     height: 72px;
     width: 100%;
   }
@@ -2058,7 +2064,8 @@
     height: 52px;
   }
 
-  .nav-image {
+  .nav-image,
+  .claro-nav-image {
     height: 72px;
     width: 80%;
   }
@@ -2358,6 +2365,12 @@
 
   .header-slide {
     padding-bottom: 33%;
+  }
+
+  .section-slider,
+  .imperdibles-slider,
+  .tv-slider {
+    margin-left: 0px;
   }
 
   /*End General - Moleculas*/
@@ -3065,7 +3078,8 @@
     margin-bottom: 40px;
   }
 
-  .nav-image {
+  .nav-image,
+  .claro-nav-image {
     height: 72px;
     width: 60%;
   }
@@ -3304,6 +3318,12 @@
     padding-bottom: 30%;
   }
 
+  .section-slider,
+  .imperdibles-slider,
+  .tv-slider {
+    margin-left: 0px;
+  }
+
   /*End General - Moleculas*/
   /*-----------------------------*/
 
@@ -3506,20 +3526,6 @@
 
   .menu-desktop {
     display: block;
-  }
-
-  .concerts-videos-container,
-  .interviews-videos-container,
-  .today-concert-videos-container,
-  .week-videos-container,
-  .today-cinema-videos-container,
-  .imperdibles-video-container,
-  .recordar-container-videos,
-  .only-videos-container,
-  .today-videos-container,
-  .week-claro-video-container,
-  .dontLose-video-container {
-    margin-left: 0;
   }
 
   /*End General - Organismos*/

@@ -471,9 +471,17 @@
   margin-bottom: 3px;
 }
 
+.claro-nav-image,
+.nav-image {
+  height: 50px;
+}
+
 .nav-image {
   width: 60%;
-  height: 50px;
+}
+
+.claro-nav-image {
+  width: 100%;
 }
 
 .synopsis-image:nth-child(2),

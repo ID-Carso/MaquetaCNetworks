@@ -160,7 +160,7 @@
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
                             <li rel="claro-canal" class="active-navItem nav-li">
-                                <img class="nav-image" src="./images/home/tv-1.svg" alt="" />
+                                <img class="claro-nav-image" src="./images/home/tv-1.svg" alt="" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">

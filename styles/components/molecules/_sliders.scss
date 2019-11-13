@@ -306,7 +306,8 @@
 }
 
 .section-slider .slick-list,
-.imperdibles-slider .slick-list {
+.imperdibles-slider .slick-list,
+.tv-slider .slick-list {
   padding: 0px 55px 0px 0px !important;
 }
 
@@ -342,4 +343,10 @@
   .slick-track {
     margin-bottom: 0px !important;
   }
+}
+
+.section-slider,
+.imperdibles-slider,
+.tv-slider {
+  margin-left: 6px;
 }
