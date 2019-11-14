@@ -37,8 +37,7 @@
               <p class="dropdown-p">ebñrkjg</p>
             </div>-->
         <div class="sidebar-item sidebar-border-bottom">
-          <span class="dropdown-p ">Concert
-            Channel</span>
+          <a class="sidebar-link" href="concert-channel.php"><span class="dropdown-p">Concert Channel</span></a>
         </div>
         <!--<div class="dropdown-content">
               <p class="dropdown-p">ebñrkjg</p>
@@ -54,12 +53,11 @@
               <p class="dropdown-p">ebñrkjg</p>
             </div>-->
         <div class="sidebar-item sidebar-border-bottom">
-          <a class="sidebar-link" href="nuestra-vision.php"><span class="dropdown-p">Nuestra
+          <a class="sidebar-link" href="nuestra-vision.php"><span class="dropdown-p active-sidebar-item">Nuestra
               Visión</span></a>
         </div>
         <div class="sidebar-item sidebar-border-bottom">
-          <a class="sidebar-link" href="https://www.marca.com/claro-mx/"><span
-              class="dropdown-p active-sidebar-item">Claro
+          <a class="sidebar-link" href="claro-sports.php"><span class="dropdown-p">Claro
               Sports</span></a>
         </div>
         <div class="sidebar-item sidebar-border-bottom">

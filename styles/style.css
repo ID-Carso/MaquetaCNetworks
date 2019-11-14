@@ -260,6 +260,7 @@ h6 {
   font-size: 24px;
   color: #ffffff;
   font-family: "Montserrat-Black";
+  padding-top: 27px;
   padding-bottom: 5px;
 }
 
@@ -780,7 +781,7 @@ h6 {
 
 .a-today-claro-title,
 .a-today-cinema-title {
-  font-size: 24px;
+  font-size: 18px;
   color: #262626;
   font-family: "Montserrat-Black";
   text-transform: uppercase;
@@ -814,7 +815,7 @@ h6 {
 }
 
 .a-next-claro-title {
-  font-size: 24px;
+  font-size: 18px;
   color: #ffffff;
   font-family: "Montserrat-Black";
 }
@@ -837,7 +838,7 @@ h6 {
 }
 
 .a-dontLose-claro-title {
-  font-size: 24px;
+  font-size: 18px;
   color: #ffffff;
   font-family: "Montserrat-Black";
 }
@@ -893,7 +894,7 @@ h6 {
 /*End Claro Canal*/
 /*Concert channel*/
 .today-concert-title {
-  font-size: 24px;
+  font-size: 18px;
   color: #ffffff;
   font-family: "Montserrat-Black";
   padding: 20px 0px;
@@ -904,7 +905,7 @@ h6 {
 }
 
 .concert-title {
-  font-size: 24px;
+  font-size: 18px;
   color: #3cc1ff;
   font-family: "Montserrat-Black";
   padding-bottom: 6px;
@@ -936,7 +937,7 @@ h6 {
 
 /*Claro cinema*/
 .a-cinema-title {
-  font-size: 24px;
+  font-size: 18px;
   color: #ffffff;
   font-family: "Montserrat-Black";
   padding-top: 7px;
@@ -2168,9 +2169,17 @@ h6 {
   margin-bottom: 3px;
 }
 
+.claro-nav-image,
+.nav-image {
+  height: 50px;
+}
+
 .nav-image {
   width: 60%;
-  height: 50px;
+}
+
+.claro-nav-image {
+  width: 100%;
 }
 
 .synopsis-image:nth-child(2),
@@ -3781,13 +3790,14 @@ input[type="radio"]:checked + .mujer-estilo {
   margin-bottom: 0px !important;
 }
 
-.slick-slider .slick-list {
-  padding: 0px 30px 0px 30px !important;
-}
-
 .slick-slider {
   width: 100%;
   padding-bottom: 60px;
+}
+
+.header-slider {
+  width: 100%;
+  padding-bottom: 0px;
 }
 
 .slick-slider .slick-dots li button:before {
@@ -4064,12 +4074,18 @@ input[type="radio"]:checked + .mujer-estilo {
   padding-bottom: 0;
 }
 
-.concert-channel-header .slick-slider {
+.section-slider .slick-list,
+.imperdibles-slider .slick-list,
+.tv-slider .slick-list {
+  padding: 0px 55px 0px 0px !important;
+}
+
+.imperdibles-slider .concert-channel-header .slick-slider {
   width: 100%;
   padding-bottom: 0px;
 }
 
-.concert-channel-header .slick-dots {
+.imperdibles-slider .concert-channel-header .slick-dots {
   bottom: 40px;
 }
 
@@ -4256,6 +4272,12 @@ input[type="radio"]:checked + .mujer-estilo {
 }
 
 .synopsis-details-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -4473,6 +4495,10 @@ input[type="radio"]:checked + .mujer-estilo {
   position: relative;
 }
 
+.concert-container-header {
+  padding: 0 10%;
+}
+
 .hamburguer-menu {
   position: fixed;
   width: 350px;
@@ -4491,7 +4517,7 @@ input[type="radio"]:checked + .mujer-estilo {
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   z-index: 10;
-  position: absolute;
+  position: initial;
 }
 
 .home-header .menu-tablet {
@@ -4688,7 +4714,8 @@ input[type="radio"]:checked + .mujer-estilo {
   .title-tv {
     font-size: 30px;
   }
-  .nav-image {
+  .nav-image,
+  .claro-nav-image {
     height: 72px;
     width: 80%;
   }
@@ -4917,15 +4944,23 @@ input[type="radio"]:checked + .mujer-estilo {
   .header-slider .slick-dots {
     bottom: 50px !important;
   }
-  /*End General - Moleculas*/
-  /*============================*/
-  /*============================*/
-  /*2.2 - Home - Moleculas*/
   .section-slider .slick-list,
   .tv-slider .slick-list,
   .sports-slider .slick-list {
     padding: 0px 90px 0px 0px !important;
   }
+  .imperdibles-slider .slick-list {
+    padding: 0px 250px 0px 0px !important;
+  }
+  .section-slider,
+  .imperdibles-slider,
+  .tv-slider {
+    margin-left: 0px;
+  }
+  /*End General - Moleculas*/
+  /*============================*/
+  /*============================*/
+  /*2.2 - Home - Moleculas*/
   .tv-list {
     list-style: none;
     display: -webkit-box;
@@ -5018,8 +5053,7 @@ input[type="radio"]:checked + .mujer-estilo {
   .synopsis-header .menu-tablet,
   .claro-cinema-header .menu-tablet,
   .programacion-header .menu-tablet {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
-    background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+    background-color: white;
     padding: 5%;
   }
   .advertising-section-tablet {
@@ -5027,6 +5061,19 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .advertising-section-mobile {
     display: none;
+  }
+  .concerts-videos-container,
+  .interviews-videos-container,
+  .today-concert-videos-container,
+  .week-videos-container,
+  .today-cinema-videos-container,
+  .imperdibles-video-container,
+  .recordar-container-videos,
+  .only-videos-container,
+  .today-videos-container,
+  .week-claro-video-container,
+  .dontLose-video-container {
+    margin-left: 0;
   }
   /*End General - Organismos*/
   /*============================*/
@@ -5175,6 +5222,9 @@ input[type="radio"]:checked + .mujer-estilo {
   .next-week-concert,
   .concerts {
     padding-bottom: 130px;
+  }
+  .concert-container-header {
+    padding: 0;
   }
   /*End Concert Channel - Organismos*/
   /*============================*/
@@ -5444,7 +5494,8 @@ input[type="radio"]:checked + .mujer-estilo {
   .title-tv {
     font-size: 30px;
   }
-  .nav-image {
+  .nav-image,
+  .claro-nav-image {
     height: 72px;
     width: 80%;
   }
@@ -5720,6 +5771,15 @@ input[type="radio"]:checked + .mujer-estilo {
   .cinema-slider {
     margin: 0 -6px;
   }
+  .section-slider,
+  .imperdibles-slider {
+    margin-left: 6px;
+  }
+  .section-slider,
+  .imperdibles-slider,
+  .tv-slider {
+    margin-left: 0px;
+  }
   /*End General - Moleculas*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -5829,8 +5889,7 @@ input[type="radio"]:checked + .mujer-estilo {
   .synopsis-header .menu-tablet,
   .claro-cinema-header .menu-tablet,
   .programacion-header .menu-tablet {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
-    background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+    background-color: white;
     padding: calc(2% + 2px);
   }
   .terms-conditions-desktop {
@@ -5987,6 +6046,9 @@ input[type="radio"]:checked + .mujer-estilo {
   .concert-interviews {
     padding-bottom: 213px;
   }
+  .concert-container-header {
+    padding: 0;
+  }
   /*End Concert Channel - organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -6091,60 +6153,48 @@ input[type="radio"]:checked + .mujer-estilo {
     margin-bottom: 100px;
   }*/
   /*-------------------*/
-}
-
-.avatar-header .menu-perfil {
-  display: none;
-}
-
-.avatar-header .menu-tablet .login {
-  top: 0;
-  right: 0;
-}
-
-.alertas-header .menu-perfil {
-  display: none;
-}
-
-.alertas-header .menu-tablet .login {
-  top: 0;
-  right: 0;
-}
-
-.datos-header .menu-perfil {
-  display: none;
-}
-
-.datos-header .menu-tablet .login {
-  top: 0;
-  right: 0;
-}
-
-.perfil-header .menu-perfil {
-  display: none;
-}
-
-.perfil-header .menu-tablet .login {
-  top: 0;
-  right: 0;
-}
-
-.configuracion-header .menu-perfil {
-  display: none;
-}
-
-.configuracion-header .menu-tablet .login {
-  top: 0;
-  right: 0;
-}
-
-.lista-header .menu-perfil {
-  display: none;
-}
-
-.lista-header .menu-tablet .login {
-  top: 0;
-  right: 0;
+  .avatar-header .menu-perfil {
+    display: none;
+  }
+  .avatar-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .alertas-header .menu-perfil {
+    display: none;
+  }
+  .alertas-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .datos-header .menu-perfil {
+    display: none;
+  }
+  .datos-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .perfil-header .menu-perfil {
+    display: none;
+  }
+  .perfil-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .configuracion-header .menu-perfil {
+    display: none;
+  }
+  .configuracion-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .lista-header .menu-perfil {
+    display: none;
+  }
+  .lista-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
@@ -6228,11 +6278,6 @@ input[type="radio"]:checked + .mujer-estilo {
     display: -ms-flexbox;
     display: flex;
   }
-  .thumbnail-info-title {
-    float: left;
-    width: 84%;
-    margin-right: 1%;
-  }
   .logo-footer {
     margin-bottom: 13px;
     text-align: left;
@@ -6262,7 +6307,8 @@ input[type="radio"]:checked + .mujer-estilo {
     padding: 8px;
     border-radius: 30px;
   }
-  .nav-image {
+  .nav-image,
+  .claro-nav-image {
     height: 72px;
     width: 100%;
   }
@@ -6298,7 +6344,8 @@ input[type="radio"]:checked + .mujer-estilo {
   .a-vision-rectangle {
     height: 52px;
   }
-  .nav-image {
+  .nav-image,
+  .claro-nav-image {
     height: 72px;
     width: 80%;
   }
@@ -6556,6 +6603,11 @@ input[type="radio"]:checked + .mujer-estilo {
   .header-slide {
     padding-bottom: 33%;
   }
+  .section-slider,
+  .imperdibles-slider,
+  .tv-slider {
+    margin-left: 0px;
+  }
   /*End General - Moleculas*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -6697,6 +6749,19 @@ input[type="radio"]:checked + .mujer-estilo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .concerts-videos-container,
+  .interviews-videos-container,
+  .today-concert-videos-container,
+  .week-videos-container,
+  .today-cinema-videos-container,
+  .imperdibles-video-container,
+  .recordar-container-videos,
+  .only-videos-container,
+  .today-videos-container,
+  .week-claro-video-container,
+  .dontLose-video-container {
+    margin-left: 0;
   }
   /*End General - Organismos*/
   /*-----------------------------*/
@@ -6848,6 +6913,15 @@ input[type="radio"]:checked + .mujer-estilo {
   .week-videos-tablet {
     display: block;
   }
+  .concert-container-header {
+    padding: 0;
+  }
+  .concerts-videos-container,
+  .interviews-videos-container,
+  .today-concert-videos-container,
+  .week-videos-container {
+    margin-left: 0;
+  }
   /*End Concert Channel - Organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -6940,6 +7014,48 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   /*End Sinópsis - Organismos*/
   /*-----------------------------*/
+  .avatar-header .menu-perfil {
+    display: none;
+  }
+  .avatar-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .alertas-header .menu-perfil {
+    display: none;
+  }
+  .alertas-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .datos-header .menu-perfil {
+    display: none;
+  }
+  .datos-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .perfil-header .menu-perfil {
+    display: none;
+  }
+  .perfil-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .configuracion-header .menu-perfil {
+    display: none;
+  }
+  .configuracion-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .lista-header .menu-perfil {
+    display: none;
+  }
+  .lista-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
 }
 
 @media only screen and (min-width: 1900px) {
@@ -7066,11 +7182,6 @@ input[type="radio"]:checked + .mujer-estilo {
     display: -ms-flexbox;
     display: flex;
   }
-  .thumbnail-info-title {
-    float: left;
-    width: 84%;
-    margin-right: 1%;
-  }
   .header-curve {
     bottom: -30%;
   }
@@ -7122,7 +7233,8 @@ input[type="radio"]:checked + .mujer-estilo {
     font-size: 40px;
     margin-bottom: 40px;
   }
-  .nav-image {
+  .nav-image,
+  .claro-nav-image {
     height: 72px;
     width: 60%;
   }
@@ -7303,6 +7415,11 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .header-slide {
     padding-bottom: 30%;
+  }
+  .section-slider,
+  .imperdibles-slider,
+  .tv-slider {
+    margin-left: 0px;
   }
   /*End General - Moleculas*/
   /*-----------------------------*/
@@ -7628,6 +7745,9 @@ input[type="radio"]:checked + .mujer-estilo {
   .week-videos-tablet {
     display: block;
   }
+  .concert-container-header {
+    padding: 0;
+  }
   /*End Concert Channel - Organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -7711,6 +7831,24 @@ input[type="radio"]:checked + .mujer-estilo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .datos-header .menu-tablet {
+    display: block;
+  }
+  .avatar-header .menu-tablet {
+    display: block;
+  }
+  .alertas-header .menu-tablet {
+    display: block;
+  }
+  .perfil-header .menu-tablet {
+    display: block;
+  }
+  .configuracion-header .menu-tablet {
+    display: block;
+  }
+  .lista-header .menu-tablet {
+    display: block;
   }
   /*End Sinópsis - Organismos*/
   /*-----------------------------*/

@@ -171,7 +171,8 @@
     font-size: 30px;
   }
 
-  .nav-image {
+  .nav-image,
+  .claro-nav-image {
     height: 72px;
     width: 80%;
   }
@@ -463,16 +464,27 @@
     }
   }
 
-  /*End General - Moleculas*/
-  /*============================*/
-
-  /*============================*/
-  /*2.2 - Home - Moleculas*/
   .section-slider .slick-list,
   .tv-slider .slick-list,
   .sports-slider .slick-list {
     padding: 0px 90px 0px 0px !important;
   }
+
+  .imperdibles-slider .slick-list {
+    padding: 0px 250px 0px 0px !important;
+  }
+
+  .section-slider,
+  .imperdibles-slider,
+  .tv-slider {
+    margin-left: 0px;
+  }
+
+  /*End General - Moleculas*/
+  /*============================*/
+
+  /*============================*/
+  /*2.2 - Home - Moleculas*/
 
   .tv-list {
     list-style: none;
@@ -585,7 +597,7 @@
   .synopsis-header .menu-tablet,
   .claro-cinema-header .menu-tablet,
   .programacion-header .menu-tablet {
-    background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+    background-color: white;
     padding: 5%;
   }
 
@@ -595,6 +607,20 @@
 
   .advertising-section-mobile {
     display: none;
+  }
+
+  .concerts-videos-container,
+  .interviews-videos-container,
+  .today-concert-videos-container,
+  .week-videos-container,
+  .today-cinema-videos-container,
+  .imperdibles-video-container,
+  .recordar-container-videos,
+  .only-videos-container,
+  .today-videos-container,
+  .week-claro-video-container,
+  .dontLose-video-container {
+    margin-left: 0;
   }
 
   /*End General - Organismos*/
@@ -785,6 +811,10 @@
   .next-week-concert,
   .concerts {
     padding-bottom: 130px;
+  }
+
+  .concert-container-header {
+    padding: 0;
   }
 
   /*End Concert Channel - Organismos*/
@@ -1129,7 +1159,8 @@
     font-size: 30px;
   }
 
-  .nav-image {
+  .nav-image,
+  .claro-nav-image {
     height: 72px;
     width: 80%;
   }
@@ -1469,6 +1500,17 @@
     margin: 0 -6px;
   }
 
+  .section-slider,
+  .imperdibles-slider {
+    margin-left: 6px;
+  }
+
+  .section-slider,
+  .imperdibles-slider,
+  .tv-slider {
+    margin-left: 0px;
+  }
+
   /*End General - Moleculas*/
   /*-----------------------------*/
 
@@ -1594,7 +1636,7 @@
   .synopsis-header .menu-tablet,
   .claro-cinema-header .menu-tablet,
   .programacion-header .menu-tablet {
-    background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+    background-color: white;
     padding: calc(2% + 2px);
   }
 
@@ -1795,6 +1837,10 @@
     padding-bottom: 213px;
   }
 
+  .concert-container-header {
+    padding: 0;
+  }
+
   /*End Concert Channel - organismos*/
   /*-----------------------------*/
 
@@ -1914,73 +1960,74 @@
   }*/
 
   /*-------------------*/
-}
-
-.avatar-header {
-  .menu-perfil {
-    display: none;
+  .avatar-header {
+    .menu-perfil {
+      display: none;
+    }
   }
-}
 
-.avatar-header .menu-tablet .login {
-  top: 0;
-  right: 0;
-}
-
-.alertas-header {
-  .menu-perfil {
-    display: none;
+  .avatar-header .menu-tablet .login {
+    top: 0;
+    right: 0;
   }
-}
 
-.alertas-header .menu-tablet .login {
-  top: 0;
-  right: 0;
-}
-
-.datos-header {
-  .menu-perfil {
-    display: none;
+  .alertas-header {
+    .menu-perfil {
+      display: none;
+    }
   }
-}
 
-.datos-header .menu-tablet .login {
-  top: 0;
-  right: 0;
-}
-
-.perfil-header {
-  .menu-perfil {
-    display: none;
+  .alertas-header .menu-tablet .login {
+    top: 0;
+    right: 0;
   }
-}
 
-.perfil-header .menu-tablet .login {
-  top: 0;
-  right: 0;
-}
-
-.configuracion-header {
-  .menu-perfil {
-    display: none;
+  .datos-header {
+    .menu-perfil {
+      display: none;
+    }
   }
-}
 
-.configuracion-header .menu-tablet .login {
-  top: 0;
-  right: 0;
-}
-
-.lista-header {
-  .menu-perfil {
-    display: none;
+  .datos-header .menu-tablet .login {
+    top: 0;
+    right: 0;
   }
+
+  .perfil-header {
+    .menu-perfil {
+      display: none;
+    }
+  }
+
+  .perfil-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+
+  .configuracion-header {
+    .menu-perfil {
+      display: none;
+    }
+  }
+
+  .configuracion-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+
+  .lista-header {
+    .menu-perfil {
+      display: none;
+    }
+  }
+
+  .lista-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+
 }
 
-.lista-header .menu-tablet .login {
-  top: 0;
-  right: 0;
-}
 
 
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
@@ -2083,12 +2130,6 @@
     display: flex;
   }
 
-  .thumbnail-info-title {
-    float: left;
-    width: 84%;
-    margin-right: 1%;
-  }
-
   .logo-footer {
     margin-bottom: 13px;
     text-align: left;
@@ -2123,7 +2164,8 @@
     border-radius: 30px;
   }
 
-  .nav-image {
+  .nav-image,
+  .claro-nav-image {
     height: 72px;
     width: 100%;
   }
@@ -2169,7 +2211,8 @@
     height: 52px;
   }
 
-  .nav-image {
+  .nav-image,
+  .claro-nav-image {
     height: 72px;
     width: 80%;
   }
@@ -2508,6 +2551,12 @@
     padding-bottom: 33%;
   }
 
+  .section-slider,
+  .imperdibles-slider,
+  .tv-slider {
+    margin-left: 0px;
+  }
+
   /*End General - Moleculas*/
   /*-----------------------------*/
 
@@ -2684,6 +2733,20 @@
 
   .claro-navbar {
     display: flex;
+  }
+
+  .concerts-videos-container,
+  .interviews-videos-container,
+  .today-concert-videos-container,
+  .week-videos-container,
+  .today-cinema-videos-container,
+  .imperdibles-video-container,
+  .recordar-container-videos,
+  .only-videos-container,
+  .today-videos-container,
+  .week-claro-video-container,
+  .dontLose-video-container {
+    margin-left: 0;
   }
 
   /*End General - Organismos*/
@@ -2877,6 +2940,17 @@
     display: block;
   }
 
+  .concert-container-header {
+    padding: 0;
+  }
+
+  .concerts-videos-container,
+  .interviews-videos-container,
+  .today-concert-videos-container,
+  .week-videos-container {
+    margin-left: 0;
+  }
+
   /*End Concert Channel - Organismos*/
   /*-----------------------------*/
 
@@ -2969,6 +3043,73 @@
 
   /*End Sinópsis - Organismos*/
   /*-----------------------------*/
+
+  .avatar-header {
+    .menu-perfil {
+      display: none;
+    }
+  }
+
+  .avatar-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+
+  .alertas-header {
+    .menu-perfil {
+      display: none;
+    }
+  }
+
+  .alertas-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+
+  .datos-header {
+    .menu-perfil {
+      display: none;
+    }
+  }
+
+  .datos-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+
+  .perfil-header {
+    .menu-perfil {
+      display: none;
+    }
+  }
+
+  .perfil-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+
+  .configuracion-header {
+    .menu-perfil {
+      display: none;
+    }
+  }
+
+  .configuracion-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+
+  .lista-header {
+    .menu-perfil {
+      display: none;
+    }
+  }
+
+  .lista-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+
 }
 
 @media only screen and (min-width: 1900px) {
@@ -3119,12 +3260,6 @@
     display: flex;
   }
 
-  .thumbnail-info-title {
-    float: left;
-    width: 84%;
-    margin-right: 1%;
-  }
-
   .header-curve {
     bottom: -30%;
   }
@@ -3195,7 +3330,8 @@
     margin-bottom: 40px;
   }
 
-  .nav-image {
+  .nav-image,
+  .claro-nav-image {
     height: 72px;
     width: 60%;
   }
@@ -3435,6 +3571,12 @@
     padding-bottom: 30%;
   }
 
+  .section-slider,
+  .imperdibles-slider,
+  .tv-slider {
+    margin-left: 0px;
+  }
+
   /*End General - Moleculas*/
   /*-----------------------------*/
 
@@ -3561,6 +3703,7 @@
     max-height: 63px;
     transition: all 0.5s ease 0s;
   }
+
 
   .advertising-section-mobile {
     display: none;
@@ -3836,6 +3979,10 @@
     display: block;
   }
 
+  .concert-container-header {
+    padding: 0;
+  }
+
   /*End Concert Channel - Organismos*/
   /*-----------------------------*/
 
@@ -3924,6 +4071,43 @@
   .synopsis-rating-container,
   .synopsis-seasons-container {
     display: flex;
+  }
+
+
+  .datos-header {
+    .menu-tablet {
+      display: block;
+    }
+  }
+
+  .avatar-header {
+    .menu-tablet {
+      display: block;
+    }
+  }
+
+  .alertas-header {
+    .menu-tablet {
+      display: block;
+    }
+  }
+
+  .perfil-header {
+    .menu-tablet {
+      display: block;
+    }
+  }
+
+  .configuracion-header {
+    .menu-tablet {
+      display: block;
+    }
+  }
+
+  .lista-header {
+    .menu-tablet {
+      display: block;
+    }
   }
 
   /*End Sinópsis - Organismos*/

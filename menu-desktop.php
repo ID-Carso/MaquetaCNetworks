@@ -1,12 +1,12 @@
 <nav class="menu-desktop">
   <div class="nav-content">
     <div class="claro-logo">
-      
-        <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
-      
-        <a href="home.php">
-          <img class="logo" src="./images/home/claro-logo.png" alt="" />
-        </a>
+
+      <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
+
+      <a href="home.php">
+        <img class="logo" src="./images/home/claro-logo.png" alt="" />
+      </a>
     </div>
 
     <div class="login">
@@ -31,7 +31,7 @@
       </a>
     </div>
     <div>
-      <a href="#" class="navbar-link text-decoration-none">
+      <a href="nuestra-vision.php" class="navbar-link text-decoration-none">
         <p class="navbar-item">Nuestra Visión</p>
       </a>
     </div>

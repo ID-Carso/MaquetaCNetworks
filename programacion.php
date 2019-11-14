@@ -91,7 +91,7 @@
                         <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
 
                         <a href="home.php">
-                        <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
+                            <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
                         </a>
                     </div>
 
@@ -101,8 +101,8 @@
                     </div>
                 </div>
             </nav>
-            <?php 
-                include 'menu-desktop.php';
+            <?php
+            include 'menu-desktop.php';
             ?>
             <div class="header-slider">
                 <div class="header-slide">
@@ -123,7 +123,7 @@
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
                             <li rel="claro-canal" class="active-navItem nav-li">
-                                <img class="nav-image" src="./images/home/tv-1.svg" alt="" />
+                                <img class="claro-nav-image" src="./images/home/tv-1.svg" alt="" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
@@ -379,9 +379,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -414,9 +412,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -449,9 +445,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -484,9 +478,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -525,9 +517,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -560,9 +550,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -595,9 +583,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -630,9 +616,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -854,9 +838,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -889,9 +871,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -924,9 +904,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -959,9 +937,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1000,9 +976,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1038,8 +1012,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -1075,9 +1048,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1110,9 +1081,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1218,9 +1187,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1253,9 +1220,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1291,8 +1256,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -1331,8 +1295,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -1376,8 +1339,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -1416,8 +1378,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -1456,8 +1417,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -1496,8 +1456,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -1608,8 +1567,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -1648,8 +1606,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -1688,8 +1645,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -1728,8 +1684,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -1772,8 +1727,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -1812,8 +1766,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -1852,8 +1805,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -1892,8 +1844,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -2003,8 +1954,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -2043,8 +1993,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -2083,8 +2032,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -2123,8 +2071,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -2167,8 +2114,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -2207,8 +2153,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -2247,8 +2192,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -2287,8 +2231,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div
-                                            class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
                                             <div class="col-6">
                                                 <p class="rating">Clasificación: A</p>
@@ -2310,9 +2253,9 @@
                 <!--End Claro sports de "Ahora en tv"-->
             </div>
         </main>
-        <?php 
-                        include 'advertising-section.php'
-                    ?>
+        <?php
+        include 'advertising-section.php'
+        ?>
         <div class="">
             <div class="row no-gutters">
                 <div class="col-12">
@@ -2337,8 +2280,8 @@
         </div>
 
     </div>
-    <?php 
-        include 'footer.php'
+    <?php
+    include 'footer.php'
     ?>
 </body>
 
