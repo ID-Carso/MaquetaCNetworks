@@ -193,7 +193,7 @@
                                 <div class="poster-body">
                                     <div class="showtime-container">
                                         <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/poster-add.svg" alt=""></button>
+                                        <button type="button" class="poster-button"><object class="poster-add" data="./images/posters/poster-add.svg" type="image/svg+xml"></object></button>
                                     </div>
                                     <div class="thumbnail">
                                     </div>

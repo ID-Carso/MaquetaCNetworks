@@ -637,181 +637,206 @@
 
                 <div id="concert-channel" class="tv-content">
                     <div class="no-gutters">
-                        <div class="">
-                            <ul class="concert-calendar">
-                                <p class="month">Febrero 2019</p>
-                                <div class="programacion-slider" id="pro-concert-slider">
-                                    <li rel="concert-01" class="concert-active concert-item">
-                                        <div class="day">
-                                            <p class="day-text">VIE</p>
-                                            <p class="day-number">01</p>
-                                        </div>
-                                    </li>
-                                    <li rel="concert-02" class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">SAB</p>
-                                            <p class="day-number">02</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">DOM</p>
-                                            <p class="day-number">03</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">LUN</p>
-                                            <p class="day-number">04</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">MAR</p>
-                                            <p class="day-number">05</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">MIER</p>
-                                            <p class="day-number">06</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">JUE</p>
-                                            <p class="day-number">07</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">VIE</p>
-                                            <p class="day-number">08</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">SAB</p>
-                                            <p class="day-number">09</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">DOM</p>
-                                            <p class="day-number">10</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">LUN</p>
-                                            <p class="day-number">11</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">MAR</p>
-                                            <p class="day-number">12</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">MIER</p>
-                                            <p class="day-number">13</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">JUE</p>
-                                            <p class="day-number">14</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">VIE</p>
-                                            <p class="day-number">15</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">SAB</p>
-                                            <p class="day-number">16</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">DOM</p>
-                                            <p class="day-number">17</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">LUN</p>
-                                            <p class="day-number">18</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">MAR</p>
-                                            <p class="day-number">19</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">MIER</p>
-                                            <p class="day-number">20</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">JUE</p>
-                                            <p class="day-number">21</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">VIE</p>
-                                            <p class="day-number">22</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">SAB</p>
-                                            <p class="day-number">23</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">DOM</p>
-                                            <p class="day-number">24</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">LUN</p>
-                                            <p class="day-number">25</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">MAR</p>
-                                            <p class="day-number">26</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">DOM</p>
-                                            <p class="day-number">27</p>
-                                        </div>
-                                    </li>
-                                    <li class="concert-item">
-                                        <div class="day">
-                                            <p class="day-text">LUN</p>
-                                            <p class="day-number">28</p>
-                                        </div>
-                                    </li>
-
+                        <div class="programacion-date-container">
+                            <div class="no-gutters">
+                                <div class="col-md-11 col-lg-12 mx-auto">
+                                    <p class="month">Octubre 2019</p>
                                 </div>
-                            </ul>
+                            </div>
+
+                            <div class="no-gutters">
+                                <ul class="concert-calendar col-md-10 mx-auto">
+                                    <div class="programacion-slider" id="pro-concert-slider">
+                                        <li rel="concert-01" class="concert-item concert-active">
+                                            <div class="day">
+                                                <p class="day-text">MAR</p>
+                                                <p class="day-number">01</p>
+                                            </div>
+                                        </li>
+                                        <li rel="concert-02" class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">MIER</p>
+                                                <p class="day-number">02</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">JUE</p>
+                                                <p class="day-number">03</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">VIE</p>
+                                                <p class="day-number">04</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">SAB</p>
+                                                <p class="day-number">05</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">DOM</p>
+                                                <p class="day-number">06</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">LUN</p>
+                                                <p class="day-number">07</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">MAR</p>
+                                                <p class="day-number">08</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">MIER</p>
+                                                <p class="day-number">09</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">JUE</p>
+                                                <p class="day-number">10</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">VIE</p>
+                                                <p class="day-number">11</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">MIER</p>
+                                                <p class="day-number">12</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">JUE</p>
+                                                <p class="day-number">13</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">VIE</p>
+                                                <p class="day-number">14</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">SAB</p>
+                                                <p class="day-number">15</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">DON</p>
+                                                <p class="day-number">16</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">LUN</p>
+                                                <p class="day-number">17</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">MAR</p>
+                                                <p class="day-number">18</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">MIER/p>
+                                                    <p class="day-number">19</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">JUE</p>
+                                                <p class="day-number">20</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">VIE</p>
+                                                <p class="day-number">21</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">SAB</p>
+                                                <p class="day-number">22</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">DOM</p>
+                                                <p class="day-number">23</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">LUN</p>
+                                                <p class="day-number">24</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">MAR</p>
+                                                <p class="day-number">25</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">MIER</p>
+                                                <p class="day-number">26</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">JUE</p>
+                                                <p class="day-number">27</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">VIE</p>
+                                                <p class="day-number">28</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">SAB</p>
+                                                <p class="day-number">29</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">DOM</p>
+                                                <p class="day-number">30</p>
+                                            </div>
+                                        </li>
+                                        <li class="concert-item">
+                                            <div class="day">
+                                                <p class="day-text">LUN</p>
+                                                <p class="day-number">31</p>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
 
@@ -991,43 +1016,37 @@
 
                                 </div>
                                 <div class="schedule-container">
-                                    <div class="poster">
-                                        <div class="thumbnail">
-                                            <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                        </div>
-                                        <div class="a-concert-rectangle">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams Tour</p>
+                                    <p class="schedule-title">Coldplay</p>
+                                    <div class="schedule-item-body">
+                                        <div class="schedule-poster">
+                                            <div class="poster">
+                                                <div class="thumbnail-prog">
+                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
+                                                </div>
                                             </div>
+                                        </div>
+
+                                        <div class="schedule-details">
+                                            <div class="schedule-details-header">
+                                                <div>
+                                                    <p class="schedule">10:00 - 10:30 pm</p>
+                                                    <p class="rating">Clasificación: A</p>
+                                                </div>
+                                                <div>
+                                                    <button class="schedule-add" type="button">
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
+                                                consectetur
+                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                                dolore magna aliqua.
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                         </div>
                                     </div>
-                                    <div class="schedule-details">
-                                        <div class="d-flex info-schedule align-items-center justify-content-between">
-                                            <div>
-                                                <p class="schedule">10:00 - 10:30 pm</p>
-                                                <p class="schedule-days">Lunes a Viernes</p>
-                                            </div>
-                                            <div>
-                                                <button class="schedule-add" type="button">añadir <span>+</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
-                                            <div class="col-6">
-                                                <p class="rating">Clasificación: A</p>
-                                            </div>
-                                            <div class="col-6 d-flex align-items-center justify-content-between">
-                                                <p class="rating-alert">ALERTAS</p>
-                                                <label class="switch">
-                                                    <input type="checkbox">
-                                                    <span class="slider round"></span>
-                                                </label>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="schedule-container">
                                     <p class="schedule-title">Coldplay</p>
@@ -1153,6 +1172,42 @@
                                         <div class="day">
                                             <p class="day-text">LUN</p>
                                             <p class="day-number">08</p>
+                                        </div>
+                                    </li>
+                                    <li class="cinema-item">
+                                        <div class="day">
+                                            <p class="day-text">MAR</p>
+                                            <p class="day-number">09</p>
+                                        </div>
+                                    </li>
+                                    <li class="cinema-item">
+                                        <div class="day">
+                                            <p class="day-text">MAR</p>
+                                            <p class="day-number">09</p>
+                                        </div>
+                                    </li>
+                                    <li class="cinema-item">
+                                        <div class="day">
+                                            <p class="day-text">MAR</p>
+                                            <p class="day-number">09</p>
+                                        </div>
+                                    </li>
+                                    <li class="cinema-item">
+                                        <div class="day">
+                                            <p class="day-text">MAR</p>
+                                            <p class="day-number">09</p>
+                                        </div>
+                                    </li>
+                                    <li class="cinema-item">
+                                        <div class="day">
+                                            <p class="day-text">MAR</p>
+                                            <p class="day-number">09</p>
+                                        </div>
+                                    </li>
+                                    <li class="cinema-item">
+                                        <div class="day">
+                                            <p class="day-text">MAR</p>
+                                            <p class="day-number">09</p>
                                         </div>
                                     </li>
                                     <li class="cinema-item">

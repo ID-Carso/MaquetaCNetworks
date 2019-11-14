@@ -658,18 +658,6 @@ $(document).ready(function() {
     $(".tv-content").hide();
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();
-
-    if (activeNav == "concert-channel") {
-      tvConcertSlider.slick("refresh");
-    } else if (activeNav == "claro-canal") {
-      tvClaroSlider.slick("refresh");
-    } else if (activeNav == "claro-cinema") {
-      tvCinemaSlider.slick("refresh");
-    } else if (activeNav == "nuestra-vision") {
-      tvVisionSlider.slick("refresh");
-    } else if (activeNav == "claro-sports") {
-      tvSportsSlider.slick("refresh");
-    }
   });
 
   $(".pro-content").hide();
@@ -682,17 +670,6 @@ $(document).ready(function() {
 
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();
-
-    if (activeNav == "pro-concert-channel") {
-    } else if (activeNav == "pro-claro-canal") {
-      //proClaroSlider.slick("refresh");
-    } else if (activeNav == "pro-claro-cinema") {
-      //programacionSlider.slick("refresh");
-    } else if (activeNav == "pro-nuestra-vision") {
-      //programacionSlider.slick("refresh");
-    } else if (activeNav == "pro-claro-sports") {
-      //programacionSlider.slick("refresh");
-    }
   });
 
   $(".claro-content").hide();
