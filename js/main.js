@@ -1,3 +1,5 @@
+var programacion_slider;
+var tvConcertSlider;
 $(document).ready(function() {
   $(".ubicacion4").click(function() {
     var tipo = document.getElementById("password");
@@ -133,7 +135,7 @@ $(document).ready(function() {
 
   /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
   const navbarTablet = document.querySelector(
-    ".claro-canal-header .menu-tablet, .synopsis-header .menu-tablet, .claro-cinema-header .menu-tablet, .concert-channel-header .menu-tablet, .programacion-header .menu-tablet"
+    ".claro-canal-header .menu-tablet, .synopsis-header .menu-tablet, .claro-cinema-header .menu-tablet, .concert-channel-header .menu-tablet, .programacion-header .menu-tablet, .avatar-header .menu-tablet, .alertas-header .menu-tablet, .datos-header .menu-tablet, .perfil-header .menu-tablet, .configuracion-header .menu-tablet, lista-header .menu-tablet"
   );
   $(document).on("scroll ontouchmove ontouchstart ontouchend", function() {
     var posicionScroll = $(document).scrollTop();
@@ -469,76 +471,7 @@ $(document).ready(function() {
     ]
   });
 
-  var programacion_slider = $(".programacion-slider").slick({
-    slidesToShow: 17,
-    slidesToScroll: 17,
-    infinite: true,
-    dots: true,
-    centerMode: false,
-    arrows: true,
-    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 7,
-          slidesToScroll: 7,
-          autoplay: false,
-          autoplaySpeed: 2000,
-          centerMode: false,
-          infinite: false,
-          arrows: false,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 8,
-          slidesToScroll: 8,
-          infinite: false,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 11,
-          slidesToScroll: 11,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
-      },
-      {
-        breakpoint: 1900,
-        settings: {
-          slidesToShow: 11,
-          slidesToScroll: 11,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
-      }
-    ]
-  });
+  createProgramacionSlider();
 
   /*menu responsive*/
   const invisible_button = document.querySelector(".invisible-button");
@@ -622,7 +555,7 @@ $(document).ready(function() {
 
   /***  Slider "Ahora en TV"  ****/
   const tvClaroSlider = $("#tv-claro-slider");
-  const tvConcertSlider = $("#tv-concert-slider");
+  tvConcertSlider = $("#tv-concert-slider");
   const tvCinemaSlider = $("#tv-cinema-slider");
   const tvVisionSlider = $("#tv-vision-slider");
   const tvSportsSlider = $("#tv-sports-slider");
@@ -633,6 +566,7 @@ $(document).ready(function() {
   $(".tv-content:first").show();
 
   $("ul.tv-list li").click(function() {
+    console.log("a");
     $("ul.tv-list li").removeClass("active-navItem");
     $(this).addClass("active-navItem");
     $(".tv-content").hide();
@@ -658,6 +592,20 @@ $(document).ready(function() {
     $(".tv-content").hide();
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();
+
+    if (activeNav == "concert-channel") {
+      tvConcertSlider.slick("refresh");
+    } else if (activeNav == "claro-canal") {
+      tvClaroSlider.slick("refresh");
+    } else if (activeNav == "claro-cinema") {
+      tvCinemaSlider.slick("refresh");
+    } else if (activeNav == "nuestra-vision") {
+      tvVisionSlider.slick("refresh");
+    } else if (activeNav == "claro-sports") {
+      tvSportsSlider.slick("refresh");
+    }
+    programacion_slider.slick("reinit");
+    recreateClaroItemCalendar();
   });
 
   $(".pro-content").hide();
@@ -670,62 +618,20 @@ $(document).ready(function() {
 
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();
+
+    if (activeNav == "pro-concert-channel") {
+    } else if (activeNav == "pro-claro-canal") {
+      //proClaroSlider.slick("refresh");
+    } else if (activeNav == "pro-claro-cinema") {
+      //programacionSlider.slick("refresh");
+    } else if (activeNav == "pro-nuestra-vision") {
+      //programacionSlider.slick("refresh");
+    } else if (activeNav == "pro-claro-sports") {
+      //programacionSlider.slick("refresh");
+    }
   });
 
-  $(".claro-content").hide();
-  $(".claro-content:first").show();
-
-  $("ul.claro-calendar .claro-item").click(function() {
-    $("ul.claro-calendar .claro-item").removeClass("claro-active");
-    $(this).addClass("claro-active");
-    $(".claro-content").hide();
-    var activeNav = $(this).attr("rel");
-    $("#" + activeNav).fadeIn();
-  });
-
-  $(".concert-content").hide();
-  $(".concert-content:first").show();
-
-  $("ul.concert-calendar .concert-item").click(function() {
-    $("ul.concert-calendar .concert-item").removeClass("concert-active");
-    $(this).addClass("concert-active");
-    $(".concert-content").hide();
-    var activeNav = $(this).attr("rel");
-    $("#" + activeNav).fadeIn();
-  });
-
-  $(".cinema-content").hide();
-  $(".cinema-content:first").show();
-
-  $("ul.cinema-calendar .cinema-item").click(function() {
-    $("ul.cinema-calendar .cinema-item").removeClass("cinema-active");
-    $(this).addClass("cinema-active");
-    $(".cinema-content").hide();
-    var activeNav = $(this).attr("rel");
-    $("#" + activeNav).fadeIn();
-  });
-
-  $(".vision-content").hide();
-  $(".vision-content:first").show();
-
-  $("ul.vision-calendar .vision-item").click(function() {
-    $("ul.vision-calendar .vision-item").removeClass("vision-active");
-    $(this).addClass("vision-active");
-    $(".vision-content").hide();
-    var activeNav = $(this).attr("rel");
-    $("#" + activeNav).fadeIn();
-  });
-
-  $(".sports-content").hide();
-  $(".sports-content:first").show();
-
-  $("ul.sports-calendar .sports-item").click(function() {
-    $("ul.sports-calendar .sports-item").removeClass("sports-active");
-    $(this).addClass("sports-active");
-    $(".sports-content").hide();
-    var activeNav = $(this).attr("rel");
-    $("#" + activeNav).fadeIn();
-  });
+  recreateClickCalendar();
 
   var myTag = document.querySelectorAll(".a-poster-text-white");
 
@@ -779,3 +685,147 @@ $(document).ready(function() {
 
   /*** Fin Dropdown del menú ***/
 });
+
+function createProgramacionSlider() {
+  programacion_slider = $(".programacion-slider").slick({
+    slidesToShow: 17,
+    slidesToScroll: 17,
+    infinite: true,
+    dots: true,
+    centerMode: false,
+    arrows: true,
+    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+    mobileFirst: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 7,
+          slidesToScroll: 7,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          centerMode: false,
+          infinite: false,
+          arrows: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 8,
+          slidesToScroll: 8,
+          infinite: false,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 11,
+          slidesToScroll: 11,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
+        }
+      },
+      {
+        breakpoint: 1900,
+        settings: {
+          slidesToShow: 11,
+          slidesToScroll: 11,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
+        }
+      }
+    ]
+  });
+}
+
+function recreateClickCalendar() {
+  $("ul.claro-calendar .claro-item").click(function() {
+    $("ul.claro-calendar .claro-item").removeClass("claro-active");
+    $(this).addClass("claro-active");
+    $(".claro-content").hide();
+    var activeNav = $(this).attr("rel");
+    $("#" + activeNav).fadeIn();
+  });
+  $(".claro-content").hide();
+  $(".claro-content:first").show();
+  $(".concert-content").hide();
+  $(".concert-content:first").show();
+
+  $("ul.concert-calendar .concert-item").click(function() {
+    $("ul.concert-calendar .concert-item").removeClass("concert-active");
+    $(this).addClass("concert-active");
+    $(".concert-content").hide();
+    var activeNav = $(this).attr("rel");
+    $("#" + activeNav).fadeIn();
+  });
+
+  $(".cinema-content").hide();
+  $(".cinema-content:first").show();
+
+  $("ul.cinema-calendar .cinema-item").click(function() {
+    $("ul.cinema-calendar .cinema-item").removeClass("cinema-active");
+    $(this).addClass("cinema-active");
+    $(".cinema-content").hide();
+    var activeNav = $(this).attr("rel");
+    $("#" + activeNav).fadeIn();
+  });
+
+  $(".vision-content").hide();
+  $(".vision-content:first").show();
+
+  $("ul.vision-calendar .vision-item").click(function() {
+    $("ul.vision-calendar .vision-item").removeClass("vision-active");
+    $(this).addClass("vision-active");
+    $(".vision-content").hide();
+    var activeNav = $(this).attr("rel");
+    $("#" + activeNav).fadeIn();
+  });
+
+  $(".sports-content").hide();
+  $(".sports-content:first").show();
+
+  $("ul.sports-calendar .sports-item").click(function() {
+    $("ul.sports-calendar .sports-item").removeClass("sports-active");
+    $(this).addClass("sports-active");
+    $(".sports-content").hide();
+    var activeNav = $(this).attr("rel");
+    $("#" + activeNav).fadeIn();
+  });
+}
+
+function resizedw() {
+  $(".programacion-slider#pro-claro-slider").slick("reinit");
+  $(".programacion-slider#pro-concert-slider").slick("reinit");
+  $(".programacion-slider#pro-cinema-slider").slick("reinit");
+  $(".programacion-slider#pro-vision-slider").slick("reinit");
+  $(".programacion-slider#pro-sports-slider").slick("reinit");
+  recreateClickCalendar();
+}
+
+var doit;
+window.onresize = function() {
+  clearTimeout(doit);
+  doit = setTimeout(resizedw, 100);
+};
