@@ -2544,6 +2544,12 @@ input::-webkit-credentials-auto-fill-button {
   right: 0;
 }
 
+.tamaño-aviso-terminos {
+  width: 84%;
+  height: 405px;
+  margin: auto;
+}
+
 .home-video {
   /*position: fixed;
   right: 0;
@@ -7849,6 +7855,48 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .lista-header .menu-tablet {
     display: block;
+  }
+  .avatar-header .menu-perfil {
+    display: none;
+  }
+  .avatar-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .alertas-header .menu-perfil {
+    display: none;
+  }
+  .alertas-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .datos-header .menu-perfil {
+    display: none;
+  }
+  .datos-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .perfil-header .menu-perfil {
+    display: none;
+  }
+  .perfil-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .configuracion-header .menu-perfil {
+    display: none;
+  }
+  .configuracion-header .menu-tablet .login {
+    top: 0;
+    right: 0;
+  }
+  .lista-header .menu-perfil {
+    display: none;
+  }
+  .lista-header .menu-tablet .login {
+    top: 0;
+    right: 0;
   }
   /*End Sinópsis - Organismos*/
   /*-----------------------------*/
