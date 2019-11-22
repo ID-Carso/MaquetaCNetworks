@@ -64,14 +64,33 @@
   z-index: 1;
   justify-content: space-between;
 }
+
 .marca-header .menu-tablet,
 .marca-header .menu-desktop {
   position: initial;
 }
+
 .marca-header .menu-tablet {
   padding: 30px;
 }
 
 .marca-header .menu-desktop {
   padding: calc(3% + 4px) calc(8% - 10px) calc(3% + 4px) calc(8% - 10px);
+}
+
+
+.categorias-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 16;
+  transform: translate(-100%);
+  transition: all 0.3s ease-out;
+}
+
+.tache_button {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
 }

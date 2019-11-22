@@ -1304,6 +1304,25 @@ h6 {
   color: #000000;
 }
 
+.titulo-terminos-aviso {
+  display: block;
+  height: 44px;
+  margin: 0px auto 0;
+  text-align: left;
+  margin-top: 60px;
+  width: 768px;
+  clear: both;
+  background-color: #fff;
+}
+
+.cuerpo-terminos-aviso {
+  margin: 0px auto 0;
+  display: table;
+  text-align: left;
+  width: 768px;
+  background-color: #fff;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -4583,6 +4602,25 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .marca-header .menu-desktop {
   padding: calc(3% + 4px) calc(8% - 10px) calc(3% + 4px) calc(8% - 10px);
+}
+
+.categorias-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 16;
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.tache_button {
+  width: 36px;
+  height: 36px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .section-home-footer {

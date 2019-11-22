@@ -53,11 +53,9 @@
 }
 
 .a-concert-channel-subtitle {
-  @include title-section(
-    $colorWhite,
+  @include title-section($colorWhite,
     $posterTitleResponsive,
-    $fontFamily: $montserratSemiBold
-  );
+    $fontFamily: $montserratSemiBold);
   padding-bottom: 14px;
 }
 
@@ -752,6 +750,7 @@
 }
 
 .claro-active {
+
   .day-text,
   .day-number {
     color: white;
@@ -759,6 +758,7 @@
 }
 
 .concert-active {
+
   .day-text,
   .day-number {
     color: white;
@@ -766,6 +766,7 @@
 }
 
 .cinema-active {
+
   .day-text,
   .day-number {
     color: white;
@@ -773,6 +774,7 @@
 }
 
 .vision-active {
+
   .day-text,
   .day-number {
     color: white;
@@ -780,6 +782,7 @@
 }
 
 .sports-active {
+
   .day-text,
   .day-number {
     color: white;
@@ -895,6 +898,7 @@
   text-align: center;
   padding-bottom: 17px;
   text-align: center;
+
 }
 
 .synopsis-text {
@@ -1046,4 +1050,24 @@
 
 .marca-header .navbar-item {
   color: $pureBlack;
+}
+
+.titulo-terminos-aviso {
+  display: block;
+  height: 44px;
+  margin: 0px auto 0;
+  text-align: left;
+  margin-top: 60px;
+  width: 768px;
+  clear: both;
+  background-color: #fff;
+
+}
+
+.cuerpo-terminos-aviso {
+  margin: 0px auto 0;
+  display: table;
+  text-align: left;
+  width: 768px;
+  background-color: #fff;
 }
