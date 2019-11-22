@@ -816,11 +816,11 @@ function recreateClickCalendar() {
 }
 
 function resizedw() {
-  $(".programacion-slider#pro-claro-slider").slick("reinit");
-  $(".programacion-slider#pro-concert-slider").slick("reinit");
-  $(".programacion-slider#pro-cinema-slider").slick("reinit");
-  $(".programacion-slider#pro-vision-slider").slick("reinit");
-  $(".programacion-slider#pro-sports-slider").slick("reinit");
+  $(".programacion-slider#pro-claro-slider").slick("refresh");
+  $(".programacion-slider#pro-concert-slider").slick("refresh");
+  $(".programacion-slider#pro-cinema-slider").slick("refresh");
+  $(".programacion-slider#pro-vision-slider").slick("refresh");
+  $(".programacion-slider#pro-sports-slider").slick("refresh");
   recreateClickCalendar();
 }
 
