@@ -1,7 +1,7 @@
 var programacion_slider;
 var tvConcertSlider;
-$(document).ready(function () {
-  $(".ubicacion4").click(function () {
+$(document).ready(function() {
+  $(".ubicacion4").click(function() {
     var tipo = document.getElementById("password");
     if (tipo.type == "password") {
       tipo.type = "text";
@@ -14,7 +14,7 @@ $(document).ready(function () {
   const paises = document.getElementsByClassName("name_paises");
   var contador;
   for (contador = 0; contador < numPaises; contador++) {
-    paises[contador].addEventListener("click", function () {
+    paises[contador].addEventListener("click", function() {
       if (typeof Storage !== "undefined") {
         var imageSrc = $(this)
           .children(".Icon_paises")
@@ -31,7 +31,7 @@ $(document).ready(function () {
     console.log(sessionSrc);
   }
 
-  $(".singup-button").click(function () {
+  $(".singup-button").click(function() {
     var usuario, correo, password, expresion;
     const nodatos1 = $(".nodatos");
     const nocorreo1 = $(".nocorreo");
@@ -55,7 +55,7 @@ $(document).ready(function () {
     }
   });
 
-  $(".login-button").click(function () {
+  $(".login-button").click(function() {
     var correo1, password1, expresion1;
     const nodatos = $(".nodatos");
     const nocorreo = $(".nocorreo");
@@ -82,7 +82,7 @@ $(document).ready(function () {
   const inputPassword = $("#password");
   const caracteresMin = $(".caracteres-min");
   const listo = $(".listo");
-  inputPassword.keyup(function () {
+  inputPassword.keyup(function() {
     if (inputPassword.val().length < 8 && inputPassword.val().length >= 1) {
       caracteresMin.css("color", "red");
       listo.css("display", "none");
@@ -98,7 +98,7 @@ $(document).ready(function () {
   const inputPassword1 = $("#password1");
   const caracteresMin1 = $(".caracteres-min");
   const listo1 = $(".listo");
-  inputPassword1.keyup(function () {
+  inputPassword1.keyup(function() {
     if (inputPassword1.val().length < 8 && inputPassword1.val().length >= 1) {
       caracteresMin1.css("color", "red");
       listo1.css("display", "inline-block");
@@ -113,7 +113,7 @@ $(document).ready(function () {
     }
   });
   const inputCorreo = $("#correo1");
-  inputCorreo.keyup(function () {
+  inputCorreo.keyup(function() {
     const CorreoValido = $(".correo-valido");
     const ImagenError = $(".error");
     var email = $("#correo1").val();
@@ -137,24 +137,28 @@ $(document).ready(function () {
   const navbarTablet = document.querySelector(
     ".claro-canal-header .menu-tablet, .synopsis-header .menu-tablet, .claro-cinema-header .menu-tablet, .concert-channel-header .menu-tablet, .programacion-header .menu-tablet, .avatar-header .menu-tablet, .alertas-header .menu-tablet, .datos-header .menu-tablet, .perfil-header .menu-tablet, .configuracion-header .menu-tablet, lista-header .menu-tablet"
   );
-  $(document).on("scroll ontouchmove ontouchstart ontouchend", function () {
-    var posicionScroll = $(document).scrollTop();
-    if (posicionScroll <= 0) {
-      navbar.style.background =
-        "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-      navbar.style.position = "absolute";
-      //navbarTablet.style.position = "absolute";
-    } else if (posicionScroll > 0 && posicionScroll <= 100) {
-      navbar.style.background =
-        "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-      navbar.style.position = "fixed";
-      //navbarTablet.style.position = "fixed";
-    } else if (posicionScroll >= 101) {
-      navbar.style.background = "black";
-      navbar.style.position = "fixed";
-      // navbarTablet.style.position = "fixed";
+  $(document, ".wrapper").on(
+    "scroll ontouchmove ontouchstart ontouchend",
+    function() {
+      var posicionScroll = $(document, ".wrapper").scrollTop();
+      console.log(posicionScroll);
+      if (posicionScroll <= 0) {
+        navbar.style.background =
+          "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+        navbar.style.position = "absolute";
+        //navbarTablet.style.position = "absolute";
+      } else if (posicionScroll > 0 && posicionScroll <= 100) {
+        navbar.style.background =
+          "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
+        navbar.style.position = "fixed";
+        //navbarTablet.style.position = "fixed";
+      } else if (posicionScroll >= 101) {
+        navbar.style.background = "black";
+        navbar.style.position = "fixed";
+        // navbarTablet.style.position = "fixed";
+      }
     }
-  });
+  );
 
   /*var slick_slider = $(".slick-slider").slick({
     slidesToShow: 3,
@@ -247,7 +251,8 @@ $(document).ready(function () {
     prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
     nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
 
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -280,8 +285,10 @@ $(document).ready(function () {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />'
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
         }
       },
 
@@ -294,8 +301,79 @@ $(document).ready(function () {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />'
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
+        }
+      }
+    ]
+  });
+
+  var vision_slider = $(".vision-slider").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: true,
+    centerMode: false,
+    arrows: true,
+    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          centerMode: false,
+          infinite: true,
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: true,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
+        }
+      },
+
+      {
+        breakpoint: 1900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
         }
       }
     ]
@@ -322,7 +400,8 @@ $(document).ready(function () {
     prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
     nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
 
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -355,8 +434,10 @@ $(document).ready(function () {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />'
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
         }
       },
 
@@ -369,8 +450,10 @@ $(document).ready(function () {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />'
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
         }
       }
     ]
@@ -403,7 +486,8 @@ $(document).ready(function () {
     arrows: true,
     prevArrow: '<img src="../images/sliders/prev.png" class="arrow-tv-prev" />',
     nextArrow: '<img src="../images/sliders/next.png" class="arrow-tv-next" />',
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -436,8 +520,10 @@ $(document).ready(function () {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-tv-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-tv-next" />'
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-tv-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-tv-next" />'
         }
       },
       {
@@ -449,8 +535,10 @@ $(document).ready(function () {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-tv-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-tv-next" />'
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-tv-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-tv-next" />'
         }
       }
     ]
@@ -460,7 +548,7 @@ $(document).ready(function () {
 
   /*menu responsive*/
   const invisible_button = document.querySelector(".invisible-button");
-  const tache_button = document.querySelector(".tache-button");
+  const tache_button = document.querySelector(".tache_button");
   const menu = document.querySelector(".menu-responsive");
   const menu_categorias = document.querySelector(".categorias-flecha");
   const hamburguer = document.querySelector(".hamburguer-menu");
@@ -470,11 +558,11 @@ $(document).ready(function () {
   const sidebar_content = document.querySelector(".sidebar-content");
   const menuTablet = $(".menu-responsive-tablet");
 
-  $(window).resize(function () {
+  $(window).resize(function() {
     console.log(menu);
   });
 
-  menuTablet.click(function () {
+  menuTablet.click(function() {
     hamburguer.style.transform = "translate(0%)";
     invisible_button.style.width = "2000px";
     invisible_button.style.left = "100%";
@@ -494,7 +582,7 @@ $(document).ready(function () {
     sidebar_content.style.height = "100%";
   });
 
-  menu.addEventListener("click", function (e) {
+  menu.addEventListener("click", function(e) {
     hamburguer.style.transform = "translate(0%)";
     invisible_button.style.width = "2000px";
     invisible_button.style.left = "100%";
@@ -514,24 +602,7 @@ $(document).ready(function () {
     sidebar_content.style.height = "100%";
   });
 
-  menu_categorias.addEventListener("click", function (e) {
-    categorias.style.transform = "translate(0%)";
-    html.css({
-      position: "relative",
-      overflow: "hidden",
-      height: "100%"
-    });
-    body.css({
-      position: "fixed",
-      overflow: "hidden",
-      height: "100%",
-      width: "100%"
-    });
-    sidebar_content.style.overflow = "auto";
-    sidebar_content.style.height = "100%";
-  });
-
-  invisible_button.addEventListener("click", function () {
+  invisible_button.addEventListener("click", function() {
     hamburguer.style.transform = "translate(-100%)";
     invisible_button.style.width = "0px";
     invisible_button.style.left = "0%";
@@ -552,25 +623,7 @@ $(document).ready(function () {
     sidebar_content.style.overflow = "hidden";
     sidebar_content.style.height = "0%";
   });
-
-  tache_button.addEventListener("click", function () {
-    categorias.style.transform = "translate(-100%)";
-    html.css({
-      position: "initial",
-      overflow: "auto",
-      height: "100%"
-    });
-    body.css({
-      position: "initial",
-      overflowX: "hidden",
-      overflowY: "auto",
-      "-webkit-overflow-scrolling": "auto",
-      height: "100%",
-      width: "auto"
-    });
-    sidebar_content.style.overflow = "hidden";
-    sidebar_content.style.height = "0%";
-  });
+  console.log(tache_button);
 
   const navbar = document.querySelector(".menu");
   const video_home = document.querySelector(".circle-video");
@@ -590,7 +643,7 @@ $(document).ready(function () {
   $(".tv-content").hide();
   $(".tv-content:first").show();
 
-  $("ul.tv-list li").click(function () {
+  $("ul.tv-list li").click(function() {
     console.log("a");
     $("ul.tv-list li").removeClass("active-navItem");
     $(this).addClass("active-navItem");
@@ -611,7 +664,7 @@ $(document).ready(function () {
     }
   });
 
-  $("ul.lista-avatar li").click(function () {
+  $("ul.lista-avatar li").click(function() {
     $("ul.lista-avatar li").removeClass("active-navAvatar");
     $(this).addClass("active-navAvatar");
     $(".tv-content").hide();
@@ -636,7 +689,7 @@ $(document).ready(function () {
   $(".pro-content").hide();
   $(".pro-content:first").show();
 
-  $("ul.pro-list li").on("click", function () {
+  $("ul.pro-list li").on("click", function() {
     $("ul.pro-list li").removeClass("active-proItem");
     $(this).addClass("active-proItem");
     $(".pro-content").hide();
@@ -644,7 +697,8 @@ $(document).ready(function () {
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();
 
-    if (activeNav == "pro-concert-channel") {} else if (activeNav == "pro-claro-canal") {
+    if (activeNav == "pro-concert-channel") {
+    } else if (activeNav == "pro-claro-canal") {
       //proClaroSlider.slick("refresh");
     } else if (activeNav == "pro-claro-cinema") {
       //programacionSlider.slick("refresh");
@@ -671,7 +725,7 @@ $(document).ready(function () {
     .length;
   var i;
   for (i = 0; i < numCountries; i++) {
-    dropdownCountry[i].addEventListener("click", function () {
+    dropdownCountry[i].addEventListener("click", function() {
       var dropdownContent = this.nextElementSibling;
       //dropdownContent.classList.toggle("dropdown-active");
       var currentArrow = $(this).children(".dropdownCountry-icon");
@@ -721,7 +775,8 @@ function createProgramacionSlider() {
     prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
     nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
     mobileFirst: true,
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 767,
         settings: {
           slidesToShow: 7,
@@ -743,8 +798,10 @@ function createProgramacionSlider() {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />'
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
         }
       },
       {
@@ -756,8 +813,10 @@ function createProgramacionSlider() {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />'
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
         }
       },
       {
@@ -769,8 +828,10 @@ function createProgramacionSlider() {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />'
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
         }
       }
     ]
@@ -778,7 +839,7 @@ function createProgramacionSlider() {
 }
 
 function recreateClickCalendar() {
-  $("ul.claro-calendar .claro-item").click(function () {
+  $("ul.claro-calendar .claro-item").click(function() {
     $("ul.claro-calendar .claro-item").removeClass("claro-active");
     $(this).addClass("claro-active");
     $(".claro-content").hide();
@@ -790,7 +851,7 @@ function recreateClickCalendar() {
   $(".concert-content").hide();
   $(".concert-content:first").show();
 
-  $("ul.concert-calendar .concert-item").click(function () {
+  $("ul.concert-calendar .concert-item").click(function() {
     $("ul.concert-calendar .concert-item").removeClass("concert-active");
     $(this).addClass("concert-active");
     $(".concert-content").hide();
@@ -801,7 +862,7 @@ function recreateClickCalendar() {
   $(".cinema-content").hide();
   $(".cinema-content:first").show();
 
-  $("ul.cinema-calendar .cinema-item").click(function () {
+  $("ul.cinema-calendar .cinema-item").click(function() {
     $("ul.cinema-calendar .cinema-item").removeClass("cinema-active");
     $(this).addClass("cinema-active");
     $(".cinema-content").hide();
@@ -812,7 +873,7 @@ function recreateClickCalendar() {
   $(".vision-content").hide();
   $(".vision-content:first").show();
 
-  $("ul.vision-calendar .vision-item").click(function () {
+  $("ul.vision-calendar .vision-item").click(function() {
     $("ul.vision-calendar .vision-item").removeClass("vision-active");
     $(this).addClass("vision-active");
     $(".vision-content").hide();
@@ -823,7 +884,7 @@ function recreateClickCalendar() {
   $(".sports-content").hide();
   $(".sports-content:first").show();
 
-  $("ul.sports-calendar .sports-item").click(function () {
+  $("ul.sports-calendar .sports-item").click(function() {
     $("ul.sports-calendar .sports-item").removeClass("sports-active");
     $(this).addClass("sports-active");
     $(".sports-content").hide();
@@ -842,7 +903,7 @@ function resizedw() {
 }
 
 var doit;
-window.onresize = function () {
+window.onresize = function() {
   clearTimeout(doit);
   doit = setTimeout(resizedw, 100);
 };

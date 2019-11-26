@@ -33,6 +33,7 @@
 
 .o-cinema-section {
   @include section();
+  position: relative;
 }
 
 .cinema-claro-tablet {
@@ -45,6 +46,7 @@
 
 .o-vision-section {
   @include section();
+  position: relative;
 }
 
 .nuestra-vision-tablet {

@@ -750,6 +750,24 @@
     margin-bottom: 150px;
   }
 
+  .o-concert-section {
+    background-image: url(../images/home/bg-concert-channel.jpg);
+    background-size: cover;
+  }
+
+  .o-cinema-section {
+    background-image: url(../images/home/circle-yellow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+  }
+
+  .o-vision-section {
+    background-image: url(../images/home/bg-nuestra-vision.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
   /*End Home - Organismos*/
   /*============================*/
 
@@ -1334,6 +1352,14 @@
     padding-bottom: 17px;
   }
 
+  .cinema-image {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 42%;
+  }
+
   /*End Claro Cinema - átomos*/
   /*-----------------------------*/
 
@@ -1680,7 +1706,7 @@
 
   .concert-section-header,
   .cinema-section-header {
-    margin-bottom: 175px;
+    margin-bottom: 309px;
   }
 
   .o-concert-section {
@@ -1693,13 +1719,6 @@
 
   .concert-channel-tablet {
     display: block;
-  }
-
-  .o-cinema-section {
-    background-image: url(../images/home/claro-cinema-background.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-origin: content-box;
   }
 
   .cinema-claro-mobile {
@@ -1767,6 +1786,28 @@
 
   .section-home-footer {
     padding-top: 30px;
+  }
+  .o-claro-section {
+    background-image: url(../images/home/bg-canal-claro@2x.jpg);
+    background-size: cover;
+  }
+
+  .o-concert-section {
+    background-image: url(../images/home/bg-concert-channel.jpg);
+    background-size: cover;
+  }
+
+  .o-cinema-section {
+    background-image: url(../images/home/circle-yellow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 85%;
+  }
+
+  .o-vision-section {
+    background-image: url(../images/home/bg-nuestra-vision.jpg);
+    background-size: cover;
+    background-position: center;
   }
 
   /*End Home - organismos*/
@@ -2025,10 +2066,7 @@
     top: 0;
     right: 0;
   }
-
 }
-
-
 
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
   /***  1.- ATOMS  ****/
@@ -2271,6 +2309,17 @@
     font-size: 85px;
   }
 
+  .black-line {
+    width: 100%;
+    height: 81px;
+    position: absolute;
+    top: 65%;
+    transform: translate(0px, -50%);
+    background: black;
+    left: 0;
+    z-index: 1;
+  }
+
   /*End Home - Átomos*/
   /*-----------------------------*/
 
@@ -2335,6 +2384,12 @@
 
   .a-cinema-subtitle {
     padding-bottom: 35px;
+  }
+
+  .cinema-image {
+    display: block;
+    width: 68%;
+    margin: -12% 0px 0px 25%;
   }
 
   /*End Claro Cinema - átomos*/
@@ -2494,7 +2549,6 @@
     }
   }
 
-
   .menu-desktop {
     display: block;
   }
@@ -2569,7 +2623,7 @@
   }
 
   .m-home-titles {
-    padding-bottom: 20px;
+    padding-bottom: 86px;
   }
 
   .m-see-more {
@@ -2763,8 +2817,19 @@
     }
   }
 
+  .o-claro-section {
+    background-image: url("../images/home/bg-canal-claro@2x.jpg");
+    background-size: cover;
+  }
+
   .o-concert-section {
-    background-color: $backgroundConcertChannel;
+    background-image: url("../images/home/bg-concert-channel.jpg");
+    background-size: cover;
+  }
+
+  .o-vision-section {
+    background-image: url("../images/home/bg-nuestra-vision.jpg");
+    background-size: cover;
   }
 
   .concert-channel-mobile {
@@ -2776,10 +2841,10 @@
   }
 
   .o-cinema-section {
-    background-image: url(../images/home/claro-cinema-background.png);
+    background-image: url(../images/home/circle-yellow.png);
     background-repeat: no-repeat;
-    background-position: left;
-    background-origin: content-box;
+    background-position: center;
+    background-size: 45%;
   }
 
   .cinema-claro-mobile {
@@ -3109,7 +3174,6 @@
     top: 0;
     right: 0;
   }
-
 }
 
 @media only screen and (min-width: 1900px) {
@@ -3362,6 +3426,12 @@
   .header-h1 {
     color: $headerH1Color;
     font-size: 105px;
+  }
+
+  .cinema-image {
+    display: block;
+    margin: auto;
+    width: 50%;
   }
 
   /*End Home - Átomos*/
@@ -3704,7 +3774,6 @@
     transition: all 0.5s ease 0s;
   }
 
-
   .advertising-section-mobile {
     display: none;
   }
@@ -3829,11 +3898,26 @@
     display: block;
   }
 
+  .o-claro-section {
+    background-image: url(../images/home/bg-canal-claro@2x.jpg);
+    background-size: cover;
+  }
+
+  .o-concert-section {
+    background-image: url(../images/home/bg-concert-channel.jpg);
+    background-size: cover;
+  }
+
   .o-cinema-section {
-    background-image: url(../images/home/claro-cinema-background.png);
+    background-image: url(../images/home/circle-yellow.png);
     background-repeat: no-repeat;
-    background-position: left;
-    background-origin: content-box;
+    background-position: center;
+    background-size: 50%;
+  }
+
+  .o-vision-section {
+    background-image: url(../images/home/bg-nuestra-vision.jpg);
+    background-size: cover;
   }
 
   .cinema-claro-mobile {
@@ -4072,7 +4156,6 @@
   .synopsis-seasons-container {
     display: flex;
   }
-
 
   .datos-header {
     .menu-tablet {

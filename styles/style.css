@@ -2214,6 +2214,14 @@ h6 {
   width: 100%;
 }
 
+.nuestra-vision-image {
+  position: absolute;
+  max-width: 500px;
+  top: 18%;
+  right: 0;
+  width: 30%;
+}
+
 .hr1 {
   display: none;
 }
@@ -4379,6 +4387,10 @@ input[type="radio"]:checked + .mujer-estilo {
   position: relative;
 }
 
+.cinema-home-videos-container {
+  z-index: 2;
+}
+
 .schedule-poster {
   width: 50%;
   margin-right: 5%;
@@ -4402,12 +4414,20 @@ input[type="radio"]:checked + .mujer-estilo {
   display: none;
 }
 
+.o-cinema-section {
+  position: relative;
+}
+
 .cinema-claro-tablet {
   display: none;
 }
 
 .cinema-claro-desktop {
   display: none;
+}
+
+.o-vision-section {
+  position: relative;
 }
 
 .nuestra-vision-tablet {
@@ -5219,6 +5239,21 @@ input[type="radio"]:checked + .mujer-estilo {
   .cinema-section-header {
     margin-bottom: 150px;
   }
+  .o-concert-section {
+    background-image: url(../images/home/bg-concert-channel.jpg);
+    background-size: cover;
+  }
+  .o-cinema-section {
+    background-image: url(../images/home/circle-yellow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+  }
+  .o-vision-section {
+    background-image: url(../images/home/bg-nuestra-vision.jpg);
+    background-size: cover;
+    background-position: center;
+  }
   /*End Home - Organismos*/
   /*============================*/
   /*============================*/
@@ -5690,6 +5725,14 @@ input[type="radio"]:checked + .mujer-estilo {
   .a-cinema-subtitle {
     padding-bottom: 17px;
   }
+  .cinema-image {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 42%;
+  }
   /*End Claro Cinema - átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -5967,7 +6010,7 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .concert-section-header,
   .cinema-section-header {
-    margin-bottom: 175px;
+    margin-bottom: 309px;
   }
   .o-concert-section {
     background-color: #3e0a43;
@@ -5977,12 +6020,6 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .concert-channel-tablet {
     display: block;
-  }
-  .o-cinema-section {
-    background-image: url(../images/home/claro-cinema-background.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-origin: content-box;
   }
   .cinema-claro-mobile {
     display: none;
@@ -6036,6 +6073,25 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .section-home-footer {
     padding-top: 30px;
+  }
+  .o-claro-section {
+    background-image: url(../images/home/bg-canal-claro@2x.jpg);
+    background-size: cover;
+  }
+  .o-concert-section {
+    background-image: url(../images/home/bg-concert-channel.jpg);
+    background-size: cover;
+  }
+  .o-cinema-section {
+    background-image: url(../images/home/circle-yellow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 85%;
+  }
+  .o-vision-section {
+    background-image: url(../images/home/bg-nuestra-vision.jpg);
+    background-size: cover;
+    background-position: center;
   }
   /*End Home - organismos*/
   /*-----------------------------*/
@@ -6434,6 +6490,17 @@ input[type="radio"]:checked + .mujer-estilo {
     color: #4f4f4f;
     font-size: 85px;
   }
+  .black-line {
+    width: 100%;
+    height: 81px;
+    position: absolute;
+    top: 65%;
+    -webkit-transform: translate(0px, -50%);
+            transform: translate(0px, -50%);
+    background: black;
+    left: 0;
+    z-index: 1;
+  }
   /*End Home - Átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -6487,6 +6554,11 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .a-cinema-subtitle {
     padding-bottom: 35px;
+  }
+  .cinema-image {
+    display: block;
+    width: 68%;
+    margin: -12% 0px 0px 25%;
   }
   /*End Claro Cinema - átomos*/
   /*-----------------------------*/
@@ -6660,7 +6732,7 @@ input[type="radio"]:checked + .mujer-estilo {
     display: block;
   }
   .m-home-titles {
-    padding-bottom: 20px;
+    padding-bottom: 86px;
   }
   .m-see-more {
     text-align: right;
@@ -6816,8 +6888,17 @@ input[type="radio"]:checked + .mujer-estilo {
     padding: calc(3% + 4px) calc(8% - 10px) 0px calc(8% - 10px);
     height: auto;
   }
+  .o-claro-section {
+    background-image: url("../images/home/bg-canal-claro@2x.jpg");
+    background-size: cover;
+  }
   .o-concert-section {
-    background-color: #3e0a43;
+    background-image: url("../images/home/bg-concert-channel.jpg");
+    background-size: cover;
+  }
+  .o-vision-section {
+    background-image: url("../images/home/bg-nuestra-vision.jpg");
+    background-size: cover;
   }
   .concert-channel-mobile {
     display: none;
@@ -6826,10 +6907,10 @@ input[type="radio"]:checked + .mujer-estilo {
     display: block;
   }
   .o-cinema-section {
-    background-image: url(../images/home/claro-cinema-background.png);
+    background-image: url(../images/home/circle-yellow.png);
     background-repeat: no-repeat;
-    background-position: left;
-    background-origin: content-box;
+    background-position: center;
+    background-size: 45%;
   }
   .cinema-claro-mobile {
     display: none;
@@ -7302,6 +7383,11 @@ input[type="radio"]:checked + .mujer-estilo {
     color: #4f4f4f;
     font-size: 105px;
   }
+  .cinema-image {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
   /*End Home - Átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -7668,11 +7754,23 @@ input[type="radio"]:checked + .mujer-estilo {
   .concert-channel-desktop {
     display: block;
   }
+  .o-claro-section {
+    background-image: url(../images/home/bg-canal-claro@2x.jpg);
+    background-size: cover;
+  }
+  .o-concert-section {
+    background-image: url(../images/home/bg-concert-channel.jpg);
+    background-size: cover;
+  }
   .o-cinema-section {
-    background-image: url(../images/home/claro-cinema-background.png);
+    background-image: url(../images/home/circle-yellow.png);
     background-repeat: no-repeat;
-    background-position: left;
-    background-origin: content-box;
+    background-position: center;
+    background-size: 50%;
+  }
+  .o-vision-section {
+    background-image: url(../images/home/bg-nuestra-vision.jpg);
+    background-size: cover;
   }
   .cinema-claro-mobile {
     display: none;
