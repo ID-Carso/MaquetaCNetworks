@@ -1,3 +1,4 @@
+import { gradientMenu } from "./scroll/scroll.js";
 var programacion_slider;
 var tvConcertSlider;
 $(document).ready(function() {
@@ -21,6 +22,8 @@ $(document).ready(function() {
           .attr("src");
 
         sessionStorage.setItem("src", imageSrc);
+      } else {
+        console.warn("Tu navegador no sporta Session Storage");
       }
     });
   }
@@ -134,112 +137,19 @@ $(document).ready(function() {
   });
 
   /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
-  const navbarTablet = document.querySelector(
-    ".claro-canal-header .menu-tablet, .synopsis-header .menu-tablet, .claro-cinema-header .menu-tablet, .concert-channel-header .menu-tablet, .programacion-header .menu-tablet, .avatar-header .menu-tablet, .alertas-header .menu-tablet, .datos-header .menu-tablet, .perfil-header .menu-tablet, .configuracion-header .menu-tablet, lista-header .menu-tablet"
-  );
-  $(document, ".wrapper").on(
-    "scroll ontouchmove ontouchstart ontouchend",
-    function() {
-      var posicionScroll = $(document, ".wrapper").scrollTop();
-      console.log(posicionScroll);
-      if (posicionScroll <= 0) {
-        navbar.style.background =
-          "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-        navbar.style.position = "absolute";
-        //navbarTablet.style.position = "absolute";
-      } else if (posicionScroll > 0 && posicionScroll <= 100) {
-        navbar.style.background =
-          "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";
-        navbar.style.position = "fixed";
-        //navbarTablet.style.position = "fixed";
-      } else if (posicionScroll >= 101) {
-        navbar.style.background = "black";
-        navbar.style.position = "fixed";
-        // navbarTablet.style.position = "fixed";
-      }
-    }
-  );
 
-  /*var slick_slider = $(".slick-slider").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite: true,
-    dots: true,
-    centerMode: false,
+  const documentHtml = $(document);
+  const navbar = document.querySelector(".menu");
+  const parallaxWrapper = $(".wrapper");
+  gradientMenu(navbar, documentHtml);
+  gradientMenu(navbar, parallaxWrapper);
 
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: false,
-          autoplaySpeed: 2000,
-          centerMode: false,
-          infinite: true,
-          arrows: false,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerMode: true,
-          arrows: false
-        }
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
-      },
+  var slides = $(".slick-slide");
+  console.log(slides);
 
-      {
-        breakpoint: 1900,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
-      },
-      {
-        breakpoint: 2400,
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
-      }
-    ]
-  });*/
+  /* END FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
+
+  var rellax = new Rellax();
 
   var section_slider = $(".section-slider").slick({
     slidesToShow: 5,
@@ -625,7 +535,6 @@ $(document).ready(function() {
   });
   console.log(tache_button);
 
-  const navbar = document.querySelector(".menu");
   const video_home = document.querySelector(".circle-video");
   console.log(video_home);
 
@@ -682,7 +591,7 @@ $(document).ready(function() {
     } else if (activeNav == "claro-sports") {
       tvSportsSlider.slick("refresh");
     }
-    programacion_slider.slick("reinit");
+    programacion_slider.slick("refresh");
     recreateClaroItemCalendar();
   });
 

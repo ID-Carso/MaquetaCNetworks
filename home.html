@@ -16,12 +16,27 @@
 
     <script src="slick-master/slick/slick.js"></script>
     <script src="./js/jquery.browser.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/lib/rellax.js"></script>
+    <script src="./js/main.js" type="module"></script>
 </head>
 
 <body>
+    <nav class="menu">
+        <div class="nav-content">
+            <div class="claro-logo">
+                <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
 
+                <img class="logo" src="./images/home/claro-logo.png" alt="" />
+            </div>
+
+            <div class="login">
+                <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
+                <a href="index.html" class="login-item"><img class="login-country" src="" alt="" /></a>
+            </div>
+        </div>
+    </nav>
     <main class="wrapper">
+
         <header class="home-header">
             <div class="circle-video">
                 <video preload="yes" playsinline autoplay muted loop class="home-video">
@@ -80,21 +95,7 @@
             </div>
 
             <div class="header parallax parallax-header">
-                <nav class="menu">
-                    <div class="nav-content">
-                        <div class="claro-logo">
-                            <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
 
-                            <img class="logo" src="./images/home/claro-logo.png" alt="" />
-                        </div>
-
-                        <div class="login">
-                            <a href="login.html" class="login-item"><img src="./images/home/user-login.svg"
-                                    alt="" /></a>
-                            <a href="index.html" class="login-item"><img class="login-country" src="" alt="" /></a>
-                        </div>
-                    </div>
-                </nav>
 
                 <nav class="menu-tablet">
                     <div class="nav-content">

@@ -1,10 +1,32 @@
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
 .header {
+  position: relative;
   width: 100%;
   height: 205px;
-  background-image: url("../../../images/home/american-horror.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
   overflow: hidden;
+  background: transparent;
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: -60%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.parallax-header::after {
+  background-image: url(../../../images/home/american-horror.jpeg);
 }
 
 .claro-canal-header .header {
@@ -36,6 +58,7 @@
 .claro-cinema-header .header {
   position: relative;
   background: #2dcaab;
+  height: auto;
 }
 
 .marca-header .header {

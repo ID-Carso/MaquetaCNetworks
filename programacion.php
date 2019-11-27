@@ -14,12 +14,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="slick-master/slick/slick.js"></script>
     <script src="./js/jquery.browser.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/lib/rellax.js"></script>
+    <script src="./js/main.js" type="module"></script>
 </head>
 
 <body>
-
-
     <header class="programacion-header">
         <div class="hamburguer-menu">
             <div class="text-center">
@@ -106,10 +105,10 @@
             ?>
             <div class="header-slider">
                 <div class="header-slide">
-                    <img src="./images/concert-channel/header-image.jpeg" alt="">
+                    <img src="./images/concert-channel/header-image.jpeg" class="rellax" data-rellax="10">
                 </div>
                 <div class="header-slide">
-                    <img src="./images/header/glastonbury.jpeg" alt="">
+                    <img src="./images/header/glastonbury.jpeg" class="rellax" data-rellax="10">
                 </div>
                 <div class="header-slide"></div>
             </div>
