@@ -4391,6 +4391,14 @@ input[type="radio"]:checked + .mujer-estilo {
   z-index: 2;
 }
 
+.claro-cinema-container {
+  background-image: url("../../../images/claro-cinema/circle.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: 50%;
+  background-position-y: 300px;
+}
+
 .schedule-poster {
   width: 50%;
   margin-right: 5%;
@@ -4416,6 +4424,11 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .o-cinema-section {
   position: relative;
+  background-image: url(../../../images/home/circle-yellow.png);
+  background-size: 86%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 80px;
 }
 
 .cinema-claro-tablet {
@@ -4848,6 +4861,15 @@ input[type="radio"]:checked + .mujer-estilo {
     display: inherit;
     text-align: left;
   }
+  .cinema-image {
+    display: none;
+  }
+  .cinema-texto-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45%;
+  }
   /*End Home - Átomos*/
   /*============================*/
   /*============================*/
@@ -5150,7 +5172,8 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .concert-section-footer,
   .cinema-section-footer {
-    margin-top: 130px;
+    margin-top: 84px;
+    padding-bottom: 84px;
   }
   .home-header .header {
     padding: 5%;
@@ -5172,12 +5195,6 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .concert-channel-tablet {
     display: block;
-  }
-  .o-cinema-section {
-    background-image: url(../images/home/claro-cinema-background.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-origin: content-box;
   }
   .cinema-claro-mobile {
     display: none;
@@ -5247,7 +5264,7 @@ input[type="radio"]:checked + .mujer-estilo {
     background-image: url(../images/home/circle-yellow.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
+    background-size: 65%;
   }
   .o-vision-section {
     background-image: url(../images/home/bg-nuestra-vision.jpg);
@@ -5320,6 +5337,9 @@ input[type="radio"]:checked + .mujer-estilo {
   .recordar-container-videos,
   .only-videos-container {
     padding-bottom: 100px;
+  }
+  .claro-cinema-container {
+    background: transparent;
   }
   /*End Claro Cinema - Organismos*/
   /*============================*/
@@ -5650,6 +5670,20 @@ input[type="radio"]:checked + .mujer-estilo {
     font-size: 40px;
     text-align: left;
   }
+  .cinema-image {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 42%;
+  }
+  .cinema-texto-image {
+    display: none;
+  }
+  .nuestra-vision-image {
+    display: none;
+  }
   /*End Home - átomos*/
   /*-----------------------------*/
   /*1.3 - Claro Canal - Átomos */
@@ -5724,14 +5758,6 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .a-cinema-subtitle {
     padding-bottom: 17px;
-  }
-  .cinema-image {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 42%;
   }
   /*End Claro Cinema - átomos*/
   /*-----------------------------*/
@@ -5899,7 +5925,7 @@ input[type="radio"]:checked + .mujer-estilo {
     display: inherit;
     text-align: left;
   }
-  /*End Home - Moelculas*/
+  /*End Home - Moleculas*/
   /*-----------------------------*/
   /*-----------------------------*/
   /*2.3 - Claro Canal - Moleculas*/
@@ -5913,7 +5939,7 @@ input[type="radio"]:checked + .mujer-estilo {
     display: block;
     margin-top: 100px;
   }
-  /*End Claro Canal - Moelculas*/
+  /*End Claro Canal - Moleculas*/
   /*-----------------------------*/
   /*-----------------------------*/
   /*2.4 - Concert Channel - Moleculas*/
@@ -6086,7 +6112,7 @@ input[type="radio"]:checked + .mujer-estilo {
     background-image: url(../images/home/circle-yellow.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 85%;
+    background-size: 75%;
   }
   .o-vision-section {
     background-image: url(../images/home/bg-nuestra-vision.jpg);
@@ -6178,6 +6204,9 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .cinema-slider {
     margin: 0 -6px;
+  }
+  .claro-cinema-container {
+    background: transparent;
   }
   /*End Claro Cinema - organismos*/
   /*-----------------------------*/
@@ -7066,6 +7095,9 @@ input[type="radio"]:checked + .mujer-estilo {
     padding: 0 calc(8% - 3px);
     margin: 100px 0;
   }
+  .claro-cinema-container {
+    background: transparent;
+  }
   /*End Claro Cinema - Organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -7916,6 +7948,9 @@ input[type="radio"]:checked + .mujer-estilo {
   .recordar-container-videos,
   .only-videos-container {
     margin: 120px 0;
+  }
+  .claro-cinema-container {
+    background: transparent;
   }
   /*End Claro Cinema - Organismos*/
   /*-----------------------------*/

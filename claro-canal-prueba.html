@@ -15,9 +15,10 @@
   <script src="slick-master/slick/slick.js"></script>
   <script src="./js/jquery.browser.js"></script>
   <script src="./js/main.js"></script>
+  
 </head>
 
-<style>
+<!--<style>
     .wrapper {
         height: 100vh;
         overflow-x: hidden;
@@ -41,7 +42,7 @@
         .parallax-header::after {
             background-image: url(../../../images/home/american-horror.jpeg);
         }
-    </style>
+    </style>-->
 
 <body>
     <div class="wrapper">
@@ -145,10 +146,10 @@
         </div>-->
       <div class="header-slider parallax">
         <div class="header-slide ">
-          <img src="./images/concert-channel/header-image.jpeg" alt="">
+          <img src="./images/concert-channel/header-image.jpeg" alt="" class="rellax" data-relax="10">
         </div>
         <div class="header-slide">
-          <img src="./images/header/glastonbury.jpeg" alt="">
+          <img src="./images/header/glastonbury.jpeg" alt="" class="rellax" data-relax="5">
         </div>
         <div class="header-slide"></div>
       </div>
@@ -710,6 +711,10 @@
   include 'footer.php'
   ?>
 </div>
+<script src="./js/rellax.js"></script>
+<script>
+    var rellax = new Rellax();
+</script>
 </body>
 
 </html>

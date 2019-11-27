@@ -34,6 +34,11 @@
 .o-cinema-section {
   @include section();
   position: relative;
+  background-image: url(../../../images/home/circle-yellow.png);
+  background-size: 86%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 80px;
 }
 
 .cinema-claro-tablet {

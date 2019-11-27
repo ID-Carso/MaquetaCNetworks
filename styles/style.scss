@@ -255,6 +255,17 @@
     text-align: left;
   }
 
+  .cinema-image {
+    display: none;
+  }
+
+  .cinema-texto-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45%;
+  }
+
   /*End Home - Átomos*/
   /*============================*/
 
@@ -636,7 +647,8 @@
 
   .concert-section-footer,
   .cinema-section-footer {
-    margin-top: 130px;
+    margin-top: 84px;
+    padding-bottom: 84px;
   }
 
   .home-header {
@@ -665,13 +677,6 @@
 
   .concert-channel-tablet {
     display: block;
-  }
-
-  .o-cinema-section {
-    background-image: url(../images/home/claro-cinema-background.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-origin: content-box;
   }
 
   .cinema-claro-mobile {
@@ -759,7 +764,7 @@
     background-image: url(../images/home/circle-yellow.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
+    background-size: 65%;
   }
 
   .o-vision-section {
@@ -853,6 +858,11 @@
   .only-videos-container {
     padding-bottom: 100px;
   }
+
+  .claro-cinema-container{
+    background: transparent;
+  }
+
 
   /*End Claro Cinema - Organismos*/
   /*============================*/
@@ -1264,6 +1274,22 @@
     text-align: left;
   }
 
+  .cinema-image {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 42%;
+  }
+
+  .cinema-texto-image {
+    display: none;
+  }
+
+  .nuestra-vision-image {
+    display: none;
+  }
+
   /*End Home - átomos*/
   /*-----------------------------*/
 
@@ -1350,14 +1376,6 @@
 
   .a-cinema-subtitle {
     padding-bottom: 17px;
-  }
-
-  .cinema-image {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 42%;
   }
 
   /*End Claro Cinema - átomos*/
@@ -1568,7 +1586,7 @@
     text-align: left;
   }
 
-  /*End Home - Moelculas*/
+  /*End Home - Moleculas*/
   /*-----------------------------*/
 
   /*-----------------------------*/
@@ -1586,7 +1604,7 @@
     margin-top: 100px;
   }
 
-  /*End Claro Canal - Moelculas*/
+  /*End Claro Canal - Moleculas*/
   /*-----------------------------*/
 
   /*-----------------------------*/
@@ -1801,7 +1819,7 @@
     background-image: url(../images/home/circle-yellow.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 85%;
+    background-size: 75%;
   }
 
   .o-vision-section {
@@ -1917,6 +1935,10 @@
 
   .cinema-slider {
     margin: 0 -6px;
+  }
+
+  .claro-cinema-container{
+    background: transparent;
   }
 
   /*End Claro Cinema - organismos*/
@@ -3040,6 +3062,11 @@
     margin: 100px 0;
   }
 
+  .claro-cinema-container{
+    background: transparent;
+  }
+
+
   /*End Claro Cinema - Organismos*/
   /*-----------------------------*/
 
@@ -4100,6 +4127,11 @@
   .only-videos-container {
     margin: 120px 0;
   }
+
+  .claro-cinema-container{
+    background: transparent;
+  }
+
 
   /*End Claro Cinema - Organismos*/
   /*-----------------------------*/
