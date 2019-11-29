@@ -144,12 +144,9 @@ $(document).ready(function() {
   gradientMenu(navbar, documentHtml);
   gradientMenu(navbar, parallaxWrapper);
 
-  var slides = $(".slick-slide");
-  console.log(slides);
-
   /* END FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
 
-  var rellax = new Rellax();
+  var rellax = new Rellax(".rellax");
 
   var section_slider = $(".section-slider").slick({
     slidesToShow: 5,
@@ -519,7 +516,7 @@ $(document).ready(function() {
     invisible_button.style.background = "black";
     html.css({
       position: "initial",
-      overflow: "auto",
+      overflow: "inherit",
       height: "100%"
     });
     body.css({
@@ -553,7 +550,6 @@ $(document).ready(function() {
   $(".tv-content:first").show();
 
   $("ul.tv-list li").click(function() {
-    console.log("a");
     $("ul.tv-list li").removeClass("active-navItem");
     $(this).addClass("active-navItem");
     $(".tv-content").hide();
@@ -562,14 +558,24 @@ $(document).ready(function() {
 
     if (activeNav == "concert-channel") {
       tvConcertSlider.slick("refresh");
+      programacionSlider.slick("refresh");
+      recreateClickCalendar();
     } else if (activeNav == "claro-canal") {
       tvClaroSlider.slick("refresh");
+      programacionSlider.slick("refresh");
+      recreateClickCalendar();
     } else if (activeNav == "claro-cinema") {
       tvCinemaSlider.slick("refresh");
+      programacionSlider.slick("refresh");
+      recreateClickCalendar();
     } else if (activeNav == "nuestra-vision") {
       tvVisionSlider.slick("refresh");
+      programacionSlider.slick("refresh");
+      recreateClickCalendar();
     } else if (activeNav == "claro-sports") {
       tvSportsSlider.slick("refresh");
+      programacionSlider.slick("refresh");
+      recreateClickCalendar();
     }
   });
 
@@ -592,7 +598,7 @@ $(document).ready(function() {
       tvSportsSlider.slick("refresh");
     }
     programacion_slider.slick("refresh");
-    recreateClaroItemCalendar();
+    recreateClickCalendar();
   });
 
   $(".pro-content").hide();
@@ -618,8 +624,8 @@ $(document).ready(function() {
     }
   });
 
-  recreateClickCalendar();
-
+  var slides = document.querySelectorAll("#claro-canal .slick-slide");
+  console.log(slides);
   var myTag = document.querySelectorAll(".a-poster-text-white");
 
   /*** Fin Slider "Ahora en TV"  ***/
@@ -675,15 +681,15 @@ $(document).ready(function() {
 
 function createProgramacionSlider() {
   programacion_slider = $(".programacion-slider").slick({
-    slidesToShow: 17,
+    /*slidesToShow: 17,
     slidesToScroll: 17,
-    infinite: true,
+    infinite: false,
     dots: true,
     centerMode: false,
     arrows: true,
     prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
     nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-    mobileFirst: true,
+    mobileFirst: true,*/
     responsive: [
       {
         breakpoint: 767,
@@ -691,9 +697,8 @@ function createProgramacionSlider() {
           slidesToShow: 7,
           slidesToScroll: 7,
           autoplay: false,
-          autoplaySpeed: 2000,
           centerMode: false,
-          infinite: false,
+          infinite: true,
           arrows: true,
           dots: true
         }
@@ -703,7 +708,7 @@ function createProgramacionSlider() {
         settings: {
           slidesToShow: 8,
           slidesToScroll: 8,
-          infinite: false,
+          infinite: true,
           dots: true,
           centerMode: false,
           arrows: true,
@@ -730,6 +735,21 @@ function createProgramacionSlider() {
       },
       {
         breakpoint: 1900,
+        settings: {
+          slidesToShow: 11,
+          slidesToScroll: 11,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
+        }
+      },
+      {
+        breakpoint: 10000,
         settings: {
           slidesToShow: 11,
           slidesToScroll: 11,

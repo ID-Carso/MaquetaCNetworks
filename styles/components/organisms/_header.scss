@@ -10,7 +10,6 @@
   width: 100%;
   height: 205px;
   overflow: hidden;
-  background: transparent;
 }
 
 .parallax::after {
@@ -27,6 +26,7 @@
 
 .parallax-header::after {
   background-image: url(../../../images/home/american-horror.jpeg);
+  background-size: cover;
 }
 
 .claro-canal-header .header {

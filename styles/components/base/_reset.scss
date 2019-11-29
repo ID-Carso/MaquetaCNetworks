@@ -3,18 +3,18 @@ body {
   height: 100%;
 }
 
-body {
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
+.html {
+  position: initial;
+  overflow: inherit;
+  height: 100%;
 }
 
-.nuevo_body {
+body {
+  position: initial;
+  overflow: hidden auto;
   height: 100%;
-  overflow: auto;
-}
-.nuevo-html {
-  height: 100%;
-  overflow: hidden;
+  width: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .bx-wrapper {
