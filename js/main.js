@@ -515,15 +515,13 @@ $(document).ready(function() {
     invisible_button.style.left = "0%";
     invisible_button.style.background = "black";
     html.css({
-      position: "initial",
-      overflow: "inherit",
+      position: "static",
+      overflow: "visible",
       height: "100%"
     });
     body.css({
-      position: "initial",
-      overflowX: "hidden",
-      overflowY: "auto",
-      "-webkit-overflow-scrolling": "auto",
+      position: "static",
+      overflow: "visible",
       height: "100%",
       width: "auto"
     });
