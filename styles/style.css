@@ -5223,9 +5223,6 @@ input[type="radio"]:checked + .mujer-estilo {
   .o-tv-section {
     max-width: 100%;
   }
-  .o-concert-section {
-    background-color: #3e0a43;
-  }
   .concert-channel-mobile {
     display: none;
   }

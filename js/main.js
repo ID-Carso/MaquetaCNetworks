@@ -1,38 +1,37 @@
 import { gradientMenu } from "./scroll/scroll.js";
+import { ShowHidePassword } from "./form/form.js";
+import { selectCountry } from "./session/session.js";
 var programacion_slider;
 var tvConcertSlider;
 $(document).ready(function() {
-  $(".ubicacion4").click(function() {
-    var tipo = document.getElementById("password");
-    if (tipo.type == "password") {
-      tipo.type = "text";
-    } else {
-      tipo.type = "password";
-    }
-  });
+  /*Mostrar u ocultar password de registro o login */
+  const iconPassword = document.getElementsByClassName("ubicacion4");
 
+  const numIcons = document.getElementsByClassName("ubicacion4").length;
+  /*iconPassword.click(function() {
+    ShowHidePassword($(this));
+  });*/
+
+  /*iconPassword.click(function() {
+    ShowHidePassword(loginPassword);
+    ShowHidePassword(singupPassword);
+  });*/
+  /*End función Mostrar u ocultar password de registro o login */
+
+  /*Función elegir un país y mostrar la bandera en navbar */
   const numPaises = document.getElementsByClassName("name_paises").length;
   const paises = document.getElementsByClassName("name_paises");
-  var contador;
-  for (contador = 0; contador < numPaises; contador++) {
+  for (let contador = 0; contador < numPaises; contador++) {
     paises[contador].addEventListener("click", function() {
-      if (typeof Storage !== "undefined") {
-        var imageSrc = $(this)
-          .children(".Icon_paises")
-          .attr("src");
-
-        sessionStorage.setItem("src", imageSrc);
-      } else {
-        console.warn("Tu navegador no sporta Session Storage");
-      }
+      selectCountry($(this));
     });
   }
   var sessionSrc = sessionStorage.getItem("src");
   var loginCountry = $(".login-country");
   if (sessionSrc) {
     loginCountry.attr("src", sessionSrc);
-    console.log(sessionSrc);
   }
+  /*End función elegir un país y mostrar la bandera en navbar */
 
   $(".singup-button").click(function() {
     var usuario, correo, password, expresion;
@@ -694,7 +693,7 @@ function createProgramacionSlider() {
           autoplay: false,
           centerMode: false,
           infinite: true,
-          arrows: true,
+          arrows: false,
           dots: true
         }
       },

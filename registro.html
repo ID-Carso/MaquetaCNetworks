@@ -10,9 +10,7 @@
                 content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
                 type="text/css">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
+        <script src="./js/lib/jquery-3.4.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
                 integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
                 crossorigin="anonymous"></script>
@@ -20,13 +18,15 @@
                 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
                 crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./styles/style.css" type="text/css">
-        <script src="./js/main.js"></script>
+        <script src="./js/lib/rellax.js"></script>
+        <script src="./js/main.js" type="module"></script>
 </head>
 
 <body class="fondo">
 
         <div class="login-form">
-                <div class="col-sm-12 no-gutters col-md-8 offset-md-2 no-gutters col-lg-4 offset-lg-4 col-xl-3 shadow1 fondolog">
+                <div
+                        class="col-sm-12 no-gutters col-md-8 offset-md-2 no-gutters col-lg-4 offset-lg-4 col-xl-3 shadow1 fondolog">
                         <img src="images/registro/group-10.svg" class="ubicacion6">
 
 
@@ -73,8 +73,8 @@
                                 <div class="row ma-no centro">
                                         <div class=" col-sm-12 no-gap">
                                                 <div class="tamaño2 centro">
-                                                        <input class="insert-data" type="password" id="password"
-                                                                name="password" placeholder="Contraseña">
+                                                        <input class="insert-data" type="password" id="signup-password"
+                                                                name="singup-password" placeholder="Contraseña">
                                                         <img src="images/registro/eye.svg" class="ubicacion4" />
 
                                                         <p class="caracteres-min">8 caractéres mínimo <img
