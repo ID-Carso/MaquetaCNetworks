@@ -48,8 +48,19 @@
     }
 
     .parallax-header::after {
-        background-image: url(../../../images/home/american-horror.jpeg);
+        background-image: transparent;
         background-repeat: no-repeat;
+    }
+
+    .background-home {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .button-image{
+        background: red;
     }
 </style>
 
@@ -71,8 +82,9 @@
         </nav>
 
 
-        <main class="wrapper">
+        <main>
             <header class="home-header">
+
                 <div class="circle-video">
                     <video preload="yes" playsinline autoplay muted loop class="home-video">
                         <source src="./video/demo.mp4" type="video/mp4" />
@@ -133,7 +145,7 @@
                 </div>
 
                 <div class="header parallax parallax-header">
-
+                    <img src="./images/home/american-horror.jpeg" class="background-home rellax" data-rellax="10">
                     <nav class="menu-tablet">
                         <div class="nav-content">
                             <div class="claro-logo">
@@ -2368,6 +2380,7 @@
                     </div>
                 </div>
             </div>
+            <button class="button-image"><img src="./images/listo.svg" alt=""></button>
             <!--Fin Redes sociales-->
             <?php 
         include 'footer.php'

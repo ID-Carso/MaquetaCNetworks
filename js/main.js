@@ -528,10 +528,8 @@ $(document).ready(function() {
     sidebar_content.style.overflow = "hidden";
     sidebar_content.style.height = "0%";
   });
-  console.log(tache_button);
 
   const video_home = document.querySelector(".circle-video");
-  console.log(video_home);
 
   $("body").index(navbar);
 
@@ -623,7 +621,6 @@ $(document).ready(function() {
   });
 
   var slides = document.querySelectorAll("#claro-canal .slick-slide");
-  console.log(slides);
   var myTag = document.querySelectorAll(".a-poster-text-white");
 
   /*** Fin Slider "Ahora en TV"  ***/

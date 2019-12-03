@@ -1590,9 +1590,7 @@ h6 {
 }
 
 .poster-button {
-  position: relative;
   background: rgba(0, 0, 0, 0.6);
-  font-size: 33px;
   border: none;
   width: 50px;
   height: 50px;
@@ -1771,9 +1769,9 @@ h6 {
 }
 
 .poster-add {
-  margin: auto;
-  width: 65%;
   display: block;
+  margin: auto;
+  width: 20px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -2219,6 +2217,14 @@ h6 {
   top: 18%;
   right: 0;
   width: 30%;
+}
+
+.background-home {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .hr1 {
@@ -4577,6 +4583,7 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .home-header {
   position: relative;
+  overflow-x: hidden;
 }
 
 .concert-container-header {
@@ -4895,6 +4902,9 @@ input[type="radio"]:checked + .mujer-estilo {
     bottom: 0;
     right: 0;
     width: 45%;
+  }
+  .background-home {
+    display: none;
   }
   /*End Home - Átomos*/
   /*============================*/
@@ -5319,6 +5329,9 @@ input[type="radio"]:checked + .mujer-estilo {
   .parallax-header::after {
     background-image: transparent;
   }
+  .home-header {
+    overflow: visible;
+  }
   /*End Home - Organismos*/
   /*============================*/
   /*============================*/
@@ -5730,6 +5743,9 @@ input[type="radio"]:checked + .mujer-estilo {
     display: none;
   }
   .nuestra-vision-image {
+    display: none;
+  }
+  .background-home {
     display: none;
   }
   /*End Home - átomos*/
@@ -6189,6 +6205,9 @@ input[type="radio"]:checked + .mujer-estilo {
   .parallax-header::after {
     background-image: transparent;
   }
+  .home-header {
+    overflow: visible;
+  }
   /*End Home - organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -6599,6 +6618,9 @@ input[type="radio"]:checked + .mujer-estilo {
     background: black;
     left: 0;
     z-index: 1;
+  }
+  .background-home {
+    display: none;
   }
   /*End Home - Átomos*/
   /*-----------------------------*/
@@ -7102,6 +7124,9 @@ input[type="radio"]:checked + .mujer-estilo {
   .parallax-header::after {
     background-image: transparent;
   }
+  .home-header {
+    overflow: visible;
+  }
   /*End Home - Organismos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -7511,6 +7536,9 @@ input[type="radio"]:checked + .mujer-estilo {
     display: block;
     margin: auto;
     width: 50%;
+  }
+  .background-home {
+    display: none;
   }
   /*End Home - Átomos*/
   /*-----------------------------*/
@@ -7979,6 +8007,9 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .parallax-header::after {
     background-image: transparent;
+  }
+  .home-header {
+    overflow: visible;
   }
   /*End Home - Organismos*/
   /*-----------------------------*/

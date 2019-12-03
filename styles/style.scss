@@ -266,6 +266,10 @@
     width: 45%;
   }
 
+  .background-home{
+    display: none;
+  }
+
   /*End Home - Átomos*/
   /*============================*/
 
@@ -797,6 +801,10 @@
     background-image: transparent;
   }
 
+  .home-header{
+    overflow: visible;
+  }
+
   /*End Home - Organismos*/
   /*============================*/
 
@@ -1311,6 +1319,10 @@
   }
 
   .nuestra-vision-image {
+    display: none;
+  }
+
+  .background-home{
     display: none;
   }
 
@@ -1876,6 +1888,10 @@
     background-image: transparent;
   }
 
+  .home-header{
+    overflow: visible;
+  }
+
   /*End Home - organismos*/
   /*-----------------------------*/
 
@@ -2388,6 +2404,10 @@
     background: black;
     left: 0;
     z-index: 1;
+  }
+
+  .background-home{
+    display: none;
   }
 
   /*End Home - Átomos*/
@@ -3026,6 +3046,9 @@
     background-image: transparent;
   }
 
+  .home-header{
+    overflow: visible;
+  }
   /*End Home - Organismos*/
   /*-----------------------------*/
 
@@ -3531,6 +3554,10 @@
     display: block;
     margin: auto;
     width: 50%;
+  }
+
+  .background-home{
+    display: none;
   }
 
   /*End Home - Átomos*/
@@ -4117,6 +4144,10 @@
   
   .parallax-header::after {
     background-image: transparent;
+  }
+
+  .home-header{
+    overflow: visible;
   }
 
   /*End Home - Organismos*/
