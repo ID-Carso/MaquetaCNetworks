@@ -5,17 +5,13 @@ var programacion_slider;
 var tvConcertSlider;
 $(document).ready(function() {
   /*Mostrar u ocultar password de registro o login */
-  const iconPassword = document.getElementsByClassName("ubicacion4");
+  const iconPassword = document.querySelector(".ubicacion4");
+  if (iconPassword !== null) {
+    iconPassword.addEventListener("click", function() {
+      ShowHidePassword(this);
+    });
+  }
 
-  const numIcons = document.getElementsByClassName("ubicacion4").length;
-  /*iconPassword.click(function() {
-    ShowHidePassword($(this));
-  });*/
-
-  /*iconPassword.click(function() {
-    ShowHidePassword(loginPassword);
-    ShowHidePassword(singupPassword);
-  });*/
   /*End función Mostrar u ocultar password de registro o login */
 
   /*Función elegir un país y mostrar la bandera en navbar */
@@ -26,6 +22,7 @@ $(document).ready(function() {
       selectCountry($(this));
     });
   }
+
   var sessionSrc = sessionStorage.getItem("src");
   var loginCountry = $(".login-country");
   if (sessionSrc) {
@@ -39,8 +36,9 @@ $(document).ready(function() {
     const nocorreo1 = $(".nocorreo");
 
     usuario = document.getElementById("usuario").value;
+    console.log(usuario);
     correo = document.getElementById("correo").value;
-    password = document.getElementById("password").value;
+    password = document.getElementById("signup-password").value;
     expresion = /\w+@\w+\.+[a-z]/;
 
     if (usuario === "" && correo === "" && password === "") {
@@ -553,25 +551,18 @@ $(document).ready(function() {
 
     if (activeNav == "concert-channel") {
       tvConcertSlider.slick("refresh");
-      programacionSlider.slick("refresh");
-      recreateClickCalendar();
     } else if (activeNav == "claro-canal") {
       tvClaroSlider.slick("refresh");
-      programacionSlider.slick("refresh");
-      recreateClickCalendar();
     } else if (activeNav == "claro-cinema") {
       tvCinemaSlider.slick("refresh");
-      programacionSlider.slick("refresh");
-      recreateClickCalendar();
     } else if (activeNav == "nuestra-vision") {
       tvVisionSlider.slick("refresh");
-      programacionSlider.slick("refresh");
-      recreateClickCalendar();
     } else if (activeNav == "claro-sports") {
       tvSportsSlider.slick("refresh");
-      programacionSlider.slick("refresh");
-      recreateClickCalendar();
     }
+
+    programacion_slider.slick("refresh");
+    recreateClickCalendar();
   });
 
   $("ul.lista-avatar li").click(function() {
@@ -609,13 +600,9 @@ $(document).ready(function() {
 
     if (activeNav == "pro-concert-channel") {
     } else if (activeNav == "pro-claro-canal") {
-      //proClaroSlider.slick("refresh");
     } else if (activeNav == "pro-claro-cinema") {
-      //programacionSlider.slick("refresh");
     } else if (activeNav == "pro-nuestra-vision") {
-      //programacionSlider.slick("refresh");
     } else if (activeNav == "pro-claro-sports") {
-      //programacionSlider.slick("refresh");
     }
   });
 
@@ -671,19 +658,12 @@ $(document).ready(function() {
   }*/
 
   /*** Fin Dropdown del menú ***/
+  recreateClickCalendar();
 });
 
 function createProgramacionSlider() {
   programacion_slider = $(".programacion-slider").slick({
-    /*slidesToShow: 17,
-    slidesToScroll: 17,
-    infinite: false,
-    dots: true,
-    centerMode: false,
-    arrows: true,
-    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-    mobileFirst: true,*/
+    /**/
     responsive: [
       {
         breakpoint: 767,
@@ -745,9 +725,9 @@ function createProgramacionSlider() {
       {
         breakpoint: 10000,
         settings: {
-          slidesToShow: 11,
-          slidesToScroll: 11,
-          infinite: true,
+          slidesToShow: 17,
+          slidesToScroll: 17,
+          infinite: false,
           dots: true,
           centerMode: false,
           arrows: true,

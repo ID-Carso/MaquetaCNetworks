@@ -19,21 +19,29 @@
     <script src="./js/main.js" type="module"></script>
     <script type="text/javascript">
         new easyXDM.Socket({
-            remote: "https://www.marca.com/claro-mx/",
-            container: document.getElementById("container"),
+            remote: "marca.php",
+            container: "marca-container",
             onMessage: function(message, origin) {
+                console.log(message);
+                this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
                 this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
+
+                //this.container.getElementsByTagName("iframe")[0].style.width = "800px";
             }
         });
     </script>
     <title>Document</title>
 </head>
 <style>
+    #marca-container {
+        height: 100%;
+    }
+
     iframe {
         width: 100%;
         height: 100%;
         border: none;
-        top: 0 !important;
+
     }
 </style>
 
@@ -134,19 +142,12 @@
         include 'menu-desktop.php';
         ?>
     </header>
-    <div class="marca-container">
-        <div id="container"></div>
+    <div id="marca-container">
+
     </div>
 
 
 
 </body>
-<script type="text/javascript">
-    var socket = new easyXDM.Socket({
-        onReady: function() {
-            socket.postMessage(document.body.scrollHeight)
-        }
-    });
-</script>
 
 </html>

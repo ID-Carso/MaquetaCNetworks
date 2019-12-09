@@ -15,7 +15,21 @@
   <script src="slick-master/slick/slick.js"></script>
   <script src="./js/jquery.browser.js"></script>
   <script src="./js/lib/rellax.js"></script>
+  <script src="./js/lib/easyXDM.min.js"></script>
   <script src="./js/main.js" type="module"></script>
+  <script type="text/javascript">
+    new easyXDM.Socket({
+      remote: "vision.php",
+      container: "vision-container",
+      onMessage: function(message, origin) {
+        console.log(message);
+        this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
+        this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
+
+        //this.container.getElementsByTagName("iframe")[0].style.width = "800px";
+      }
+    });
+  </script>
   <title>Document</title>
 </head>
 
@@ -120,9 +134,7 @@
       ?>
     </div>
   </header>
-  <div class="marca-container">
-    <iframe src="https://nuestravision.tv/" allowfullscreen>
-  </div>
+  <div id="vision-container"></div>
 
 
 

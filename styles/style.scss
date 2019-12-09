@@ -23,6 +23,7 @@
 @import "./components/organisms/header";
 @import "./components/organisms/menu";
 @import "./components/organisms/footer";
+@import "./components/organisms/form";
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /*Base*/
@@ -556,7 +557,7 @@
 
   /*============================*/
   /*2.6 - Programación - Moleculas*/
-  .programacion-slider {
+  /*.programacion-slider {
     .slick-slide {
       width: 1.185% !important;
       margin: 0 2px;
@@ -565,7 +566,7 @@
     .slick-dots {
       bottom: -20px !important;
     }
-  }
+  }*/
 
   .programacion .tv-list {
     margin: 0px auto;
@@ -1005,6 +1006,31 @@
   }
 
   /*End Sinópsis - Organismos*/
+  /*============================*/
+  /*3.7 - Claro Sports*/
+  .marca-header .header {
+    height: auto;
+    background: transparent;
+  }
+  /*End Claro Sports*/
+  /*============================*/
+
+
+  /*============================*/
+  /*3.8 - Form Signup - Organismos*/
+  .login-form {
+    height: 703.19px;
+  }
+  /*End Form Sign*/
+  /*============================*/
+
+    /*============================*/
+  /*3.9 - Index - Organismos*/
+  .logo-container{
+    padding-top: 79px;
+    padding-bottom: 90px;
+  }
+  /*End Index*/
   /*============================*/
 }
 
@@ -1649,7 +1675,7 @@
     }
   }
 
-  /*End Concert Channel - Moelculas*/
+  /*End Concert Channel - Moleculas*/
   /*-----------------------------*/
 
   /*-----------------------------*/
@@ -1668,9 +1694,9 @@
     margin: 0px auto;
   }
 
-  .programacion-slider .slick-slide {
+  /*.programacion-slider .slick-slide {
     width: 0.858% !important;
-  }
+  }*/
 
   .programacion .tv-list {
     max-width: 600px;
@@ -2149,6 +2175,34 @@
     top: 0;
     right: 0;
   }
+
+  /*=============================*/
+  /*3.8 - Claro Sports - Organismos*/
+  .marca-header .header {
+    height: auto;
+    background: transparent;
+  }
+  /*End Claro Sports - Organismos */
+  /*============================*/
+
+
+    /*============================*/
+  /*3.9 - Form Signup - Organismos*/
+  .login-form {
+    height: 703.19px;
+  }
+  /*End Form Signup*/
+  /*============================*/
+
+      /*============================*/
+  /*3.9 - Index - Organismos*/
+  .logo-container{
+    padding-top: 72px;
+    padding-bottom: 84px;
+  }
+    /*End Index*/
+  /*============================*/
+
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
@@ -2774,9 +2828,9 @@
     max-width: 800px;
   }
 
-  .programacion-slider .slick-slide {
+  /*.programacion-slider .slick-slide {
     width: 0.858% !important;
-  }
+  }*/
 
   .schedule-details {
     width: 63%;
@@ -3293,6 +3347,32 @@
     top: 0;
     right: 0;
   }
+
+    /*=============================*/
+  /*3.6 - Claro Sports - Organismos*/
+  .marca-header .header {
+    height: auto;
+    background: transparent;
+  }
+  /*End Claro Sports - Organismos */
+  /*============================*/
+
+    /*3.9 - Form Signup - Organismos*/
+    .login-form {
+      height: 703.19px;
+    }
+    /*End Form Sign*/
+    /*============================*/
+
+      /*4.0 - Index - Organismos*/
+  .logo-container{
+    padding-top: 72px;
+    padding-bottom: 84px;
+  }
+    /*End Index*/
+  /*============================*/
+
+  
 }
 
 @media only screen and (min-width: 1900px) {
@@ -3872,10 +3952,10 @@
     flex-direction: row;
   }
 
-  .programacion-slider .slick-slide {
+  /*.programacion-slider .slick-slide {
     width: 0.553% !important;
     margin: 0 2px;
-  }
+  }*/
 
   /*End Programación - Moleculas*/
   /*-----------------------------*/
@@ -4417,4 +4497,30 @@
 
   /*End Sinópsis - Organismos*/
   /*-----------------------------*/
+
+      /*=============================*/
+  /*3.7 - Claro Sports - Organismos*/
+  .marca-header .header {
+    height: auto;
+    background: transparent;
+  }
+  /*End Claro Sports - Organismos */
+  /*============================*/
+
+    /*3.8 - Form Signup - Organismos*/
+    .login-form {
+      height: 703.19px;
+    }
+    /*End Form Sign*/
+    /*============================*/
+
+      /*3.9 - Index - Organismos*/
+  .logo-container{
+    padding-top: 72px;
+    padding-bottom: 84px;
+  }
+    /*End Index*/
+  /*============================*/
+
+  
 }
