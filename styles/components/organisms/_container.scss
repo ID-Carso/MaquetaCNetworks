@@ -116,3 +116,22 @@
   justify-content: center;
   align-items: center;
 }
+
+.tamaño-aviso-terminos {
+  width: 84%;
+  height: 405px;
+  margin: auto;
+  overflow-y: hidden;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aviso-container {
+  display: flex;
+  justify-content: center;
+}

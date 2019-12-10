@@ -1220,13 +1220,10 @@ h6 {
   font-family: "Montserrat-SemiBold";
   font-size: 24px;
   font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
   color: #717272;
   margin-top: 23px;
+  text-align: left;
 }
 
 .texto-config {
@@ -1809,7 +1806,6 @@ h6 {
     -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
     box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 15px;
-    margin-top: 4%;
   }
 }
 
@@ -2354,7 +2350,7 @@ input[type="checkbox"]:checked + label::before {
   font-size: 18px;
   text-align: center;
   vertical-align: middle;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #ffffff;
   background: #0fd7f2;
 }
@@ -2565,12 +2561,6 @@ input::-webkit-credentials-auto-fill-button {
   pointer-events: none;
   position: absolute;
   right: 0;
-}
-
-.tamaño-aviso-terminos {
-  width: 84%;
-  height: 405px;
-  margin: auto;
 }
 
 .home-video {
@@ -3638,6 +3628,10 @@ input[type="radio"]:checked + .mujer-estilo {
   border-radius: 20px;
 }
 
+.avatar-header .claro-navbar {
+  position: inherit;
+}
+
 .claro-navbar {
   display: none;
   margin-top: 25px;
@@ -4409,6 +4403,36 @@ input[type="radio"]:checked + .mujer-estilo {
           align-items: center;
 }
 
+.tamaño-aviso-terminos {
+  width: 84%;
+  height: 405px;
+  margin: auto;
+  overflow-y: hidden;
+}
+
+.login-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aviso-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .schedule-poster {
   width: 50%;
   margin-right: 5%;
@@ -4597,6 +4621,11 @@ input[type="radio"]:checked + .mujer-estilo {
   padding: 0 10%;
 }
 
+.aviso-header {
+  width: 84%;
+  margin: 0 auto;
+}
+
 .hamburguer-menu {
   position: fixed;
   width: 350px;
@@ -4712,6 +4741,7 @@ input[type="radio"]:checked + .mujer-estilo {
 }
 
 .login-form {
+  width: 100%;
   height: 100%;
 }
 
@@ -5168,6 +5198,19 @@ input[type="radio"]:checked + .mujer-estilo {
   .header-slide {
     padding-bottom: 53%;
   }
+  .login-container {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   /*End Programación - Moleculas*/
   /*============================*/
   /*============================*/
@@ -5517,7 +5560,13 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*3.8 - Form Signup - Organismos*/
   .login-form {
-    height: 703.19px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
   }
   /*End Form Sign*/
   /*============================*/
@@ -5528,6 +5577,24 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-bottom: 90px;
   }
   /*End Index*/
+  /*============================*/
+  /*============================*/
+  /*4.0 - Aviso de Privacidad - Organismos*/
+  .tamaño-aviso-terminos {
+    width: 84%;
+    height: auto;
+    margin: auto;
+    overflow-y: visible;
+    padding-top: 30px;
+  }
+  /*End Aviso de Privacidad*/
+  /*============================*/
+  /*============================*/
+  /*4.1 - Login - Organismos*/
+  .login-container {
+    padding-top: 4%;
+  }
+  /*End Login*/
   /*============================*/
 }
 
@@ -6470,17 +6537,41 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*3.9 - Form Signup - Organismos*/
   .login-form {
-    height: 703.19px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
   }
   /*End Form Signup*/
   /*============================*/
   /*============================*/
-  /*3.9 - Index - Organismos*/
+  /*4.0 - Index - Organismos*/
   .logo-container {
     padding-top: 72px;
     padding-bottom: 84px;
   }
   /*End Index*/
+  /*============================*/
+  /*============================*/
+  /*4.1 - Aviso de Privacidad - Organismos*/
+  .tamaño-aviso-terminos {
+    width: 84%;
+    height: auto;
+    margin: auto;
+    overflow-y: visible;
+    padding-top: 30px;
+  }
+  /*End Aviso de Privacidad*/
+  /*============================*/
+  /*============================*/
+  /*4.2 - Login - Organismos*/
+  .login-container {
+    padding-top: 4%;
+  }
+  /*End Login*/
   /*============================*/
 }
 
@@ -6830,6 +6921,13 @@ input[type="radio"]:checked + .mujer-estilo {
     font-size: 30px;
     padding-bottom: 65px;
     margin-bottom: 0 !important;
+  }
+  /*End Sinópsis - átomos*/
+  /*-----------------------------*/
+  /*-----------------------------*/
+  /*1.8 - Aviso de Privacidad - átomos*/
+  .fondolog {
+    height: auto;
   }
   /*End Sinópsis - átomos*/
   /*-----------------------------*/
@@ -7409,7 +7507,13 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*3.9 - Form Signup - Organismos*/
   .login-form {
-    height: 703.19px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
   }
   /*End Form Sign*/
   /*============================*/
@@ -7419,6 +7523,25 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-bottom: 84px;
   }
   /*End Index*/
+  /*============================*/
+  /*============================*/
+  /*4.1 - Aviso de Privacidad - Organismos*/
+  .tamaño-aviso-terminos {
+    width: 84%;
+    height: auto;
+    margin: auto;
+    overflow-y: visible;
+    padding-top: 30px;
+  }
+  /*End Aviso de Privacidad*/
+  /*============================*/
+  /*============================*/
+  /*4.2 - Login - Organismos*/
+  .login-container {
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+  /*End Login*/
   /*============================*/
 }
 
@@ -8322,7 +8445,13 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*3.8 - Form Signup - Organismos*/
   .login-form {
-    height: 703.19px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
   }
   /*End Form Sign*/
   /*============================*/
@@ -8332,6 +8461,25 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-bottom: 84px;
   }
   /*End Index*/
+  /*============================*/
+  /*============================*/
+  /*4.0 - Aviso de Privacidad - Organismos*/
+  .tamaño-aviso-terminos {
+    width: 84%;
+    height: auto;
+    margin: auto;
+    overflow-y: visible;
+    padding-top: 30px;
+  }
+  /*End Aviso de Privacidad*/
+  /*============================*/
+  /*============================*/
+  /*4.1 - Login - Organismos*/
+  .login-container {
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+  /*End Login*/
   /*============================*/
 }
 /*# sourceMappingURL=style.css.map */

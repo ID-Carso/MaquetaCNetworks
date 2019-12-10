@@ -36,8 +36,8 @@ $(document).ready(function() {
     const nocorreo1 = $(".nocorreo");
 
     usuario = document.getElementById("usuario").value;
-    console.log(usuario);
-    correo = document.getElementById("correo").value;
+    correo = document.getElementById("signup-correo").value;
+
     password = document.getElementById("signup-password").value;
     expresion = /\w+@\w+\.+[a-z]/;
 
@@ -112,11 +112,12 @@ $(document).ready(function() {
       listo1.attr("src", "images/registro/listo.svg");
     }
   });
-  const inputCorreo = $("#correo1");
+  const inputCorreo = $("#login-email");
+
   inputCorreo.keyup(function() {
     const CorreoValido = $(".correo-valido");
     const ImagenError = $(".error");
-    var email = $("#correo1").val();
+    var email = $("#login-email").val();
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
     if (!filter.test(email)) {

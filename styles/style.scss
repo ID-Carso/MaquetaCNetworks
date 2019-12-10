@@ -267,7 +267,7 @@
     width: 45%;
   }
 
-  .background-home{
+  .background-home {
     display: none;
   }
 
@@ -441,13 +441,12 @@
   /*End Sinópsis - Átomos*/
   /*============================*/
 
-    /*============================*/
+  /*============================*/
   /*1.7 - Datos - Átomos*/
   .fondolog {
-
     height: auto;
   }
-  
+
   /*End Datos - Átomos*/
   /*============================*/
 
@@ -590,6 +589,13 @@
     padding-bottom: 53%;
   }
 
+  .login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   /*End Programación - Moleculas*/
   /*============================*/
 
@@ -681,7 +687,6 @@
   .o-tv-section {
     max-width: 100%;
   }
-
 
   .concert-channel-mobile {
     display: none;
@@ -791,8 +796,7 @@
     overflow-y: auto;
     perspective: none;
   }
-  
-  
+
   .parallax::after {
     content: " ";
     position: inherit;
@@ -804,12 +808,12 @@
     background-size: auto;
     z-index: 0;
   }
-  
+
   .parallax-header::after {
     background-image: transparent;
   }
 
-  .home-header{
+  .home-header {
     overflow: visible;
   }
 
@@ -899,10 +903,9 @@
     padding-bottom: 100px;
   }
 
-  .claro-cinema-container{
+  .claro-cinema-container {
     background: transparent;
   }
-
 
   /*End Claro Cinema - Organismos*/
   /*============================*/
@@ -1025,22 +1028,44 @@
   /*End Claro Sports*/
   /*============================*/
 
-
   /*============================*/
   /*3.8 - Form Signup - Organismos*/
   .login-form {
-    height: 703.19px;
+    display:flex;
+    justify-content: center;
+    height: auto;
+
   }
   /*End Form Sign*/
   /*============================*/
 
-    /*============================*/
+  /*============================*/
   /*3.9 - Index - Organismos*/
-  .logo-container{
+  .logo-container {
     padding-top: 79px;
     padding-bottom: 90px;
   }
   /*End Index*/
+  /*============================*/
+
+  /*============================*/
+  /*4.0 - Aviso de Privacidad - Organismos*/
+  .tamaño-aviso-terminos {
+    width: 84%;
+    height: auto;
+    margin: auto;
+    overflow-y: visible;
+    padding-top: 30px;
+  }
+  /*End Aviso de Privacidad*/
+  /*============================*/
+
+      /*============================*/
+  /*4.1 - Login - Organismos*/
+  .login-container{
+    padding-top: 4%;
+  }
+    /*End Login*/
   /*============================*/
 }
 
@@ -1355,7 +1380,7 @@
     display: none;
   }
 
-  .background-home{
+  .background-home {
     display: none;
   }
 
@@ -1547,13 +1572,12 @@
   /*End Sinópsis - átomos*/
   /*-----------------------------*/
 
-      /*============================*/
+  /*============================*/
   /*1.7 - Datos - Átomos*/
   .fondolog {
-
     height: auto;
   }
-  
+
   /*End Datos - Átomos*/
 
   /***  2. MOLECULES  ***/
@@ -1912,8 +1936,7 @@
     overflow-y: auto;
     perspective: none;
   }
-  
-  
+
   .parallax::after {
     content: " ";
     position: inherit;
@@ -1925,12 +1948,12 @@
     background-size: auto;
     z-index: 0;
   }
-  
+
   .parallax-header::after {
     background-image: transparent;
   }
 
-  .home-header{
+  .home-header {
     overflow: visible;
   }
 
@@ -2043,7 +2066,7 @@
     margin: 0 -6px;
   }
 
-  .claro-cinema-container{
+  .claro-cinema-container {
     background: transparent;
   }
 
@@ -2204,24 +2227,45 @@
   /*End Claro Sports - Organismos */
   /*============================*/
 
-
-    /*============================*/
+  /*============================*/
   /*3.9 - Form Signup - Organismos*/
   .login-form {
-    height: 703.19px;
+    display:flex;
+    justify-content: center;
+    height: auto;
+
   }
   /*End Form Signup*/
   /*============================*/
 
-      /*============================*/
-  /*3.9 - Index - Organismos*/
-  .logo-container{
+  /*============================*/
+  /*4.0 - Index - Organismos*/
+  .logo-container {
     padding-top: 72px;
     padding-bottom: 84px;
   }
-    /*End Index*/
+  /*End Index*/
   /*============================*/
 
+  /*============================*/
+  /*4.1 - Aviso de Privacidad - Organismos*/
+  .tamaño-aviso-terminos {
+    width: 84%;
+    height: auto;
+    margin: auto;
+    overflow-y: visible;
+    padding-top: 30px;
+  }
+  /*End Aviso de Privacidad*/
+  /*============================*/
+
+      /*============================*/
+  /*4.2 - Login - Organismos*/
+  .login-container{
+    padding-top: 4%;
+  }
+    /*End Login*/
+  /*============================*/
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
@@ -2476,7 +2520,7 @@
     z-index: 1;
   }
 
-  .background-home{
+  .background-home {
     display: none;
   }
 
@@ -2657,6 +2701,14 @@
     margin-bottom: 0 !important;
   }
 
+  /*End Sinópsis - átomos*/
+  /*-----------------------------*/
+
+  /*-----------------------------*/
+  /*1.8 - Aviso de Privacidad - átomos*/
+  .fondolog {
+    height: auto;
+  }
   /*End Sinópsis - átomos*/
   /*-----------------------------*/
 
@@ -3098,8 +3150,7 @@
     overflow-y: auto;
     perspective: none;
   }
-  
-  
+
   .parallax::after {
     content: " ";
     position: inherit;
@@ -3111,12 +3162,12 @@
     background-size: auto;
     z-index: 0;
   }
-  
+
   .parallax-header::after {
     background-image: transparent;
   }
 
-  .home-header{
+  .home-header {
     overflow: visible;
   }
   /*End Home - Organismos*/
@@ -3227,10 +3278,9 @@
     margin: 100px 0;
   }
 
-  .claro-cinema-container{
+  .claro-cinema-container {
     background: transparent;
   }
-
 
   /*End Claro Cinema - Organismos*/
   /*-----------------------------*/
@@ -3367,7 +3417,7 @@
     right: 0;
   }
 
-    /*=============================*/
+  /*=============================*/
   /*3.6 - Claro Sports - Organismos*/
   .marca-header .header {
     height: auto;
@@ -3376,22 +3426,43 @@
   /*End Claro Sports - Organismos */
   /*============================*/
 
-    /*3.9 - Form Signup - Organismos*/
-    .login-form {
-      height: 703.19px;
-    }
-    /*End Form Sign*/
-    /*============================*/
+  /*3.9 - Form Signup - Organismos*/
+  .login-form {
+    display:flex;
+    justify-content: center;
+    height: auto;
+  }
+  /*End Form Sign*/
+  /*============================*/
 
-      /*4.0 - Index - Organismos*/
-  .logo-container{
+  /*4.0 - Index - Organismos*/
+  .logo-container {
     padding-top: 72px;
     padding-bottom: 84px;
   }
-    /*End Index*/
+  /*End Index*/
   /*============================*/
 
-  
+  /*============================*/
+  /*4.1 - Aviso de Privacidad - Organismos*/
+  .tamaño-aviso-terminos {
+    width: 84%;
+    height: auto;
+    margin: auto;
+    overflow-y: visible;
+    padding-top: 30px;
+  }
+  /*End Aviso de Privacidad*/
+  /*============================*/
+
+      /*============================*/
+  /*4.2 - Login - Organismos*/
+  .login-container{
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+    /*End Login*/
+  /*============================*/
 }
 
 @media only screen and (min-width: 1900px) {
@@ -3652,7 +3723,7 @@
     width: 50%;
   }
 
-  .background-home{
+  .background-home {
     display: none;
   }
 
@@ -3802,13 +3873,12 @@
   /*End Sinópsis - Átomos*/
   /*-----------------------------*/
 
-      /*============================*/
+  /*============================*/
   /*1.7 - Datos - Átomos*/
   .fondolog {
-
     height: auto;
   }
-  
+
   /*End Datos - Átomos*/
 
   /***  2. - MOLECULES  ***/
@@ -4233,8 +4303,7 @@
     overflow-y: auto;
     perspective: none;
   }
-  
-  
+
   .parallax::after {
     content: " ";
     position: inherit;
@@ -4246,12 +4315,12 @@
     background-size: auto;
     z-index: 0;
   }
-  
+
   .parallax-header::after {
     background-image: transparent;
   }
 
-  .home-header{
+  .home-header {
     overflow: visible;
   }
 
@@ -4360,10 +4429,9 @@
     margin: 120px 0;
   }
 
-  .claro-cinema-container{
+  .claro-cinema-container {
     background: transparent;
   }
-
 
   /*End Claro Cinema - Organismos*/
   /*-----------------------------*/
@@ -4386,6 +4454,7 @@
 
   /*End Programación - Organismos*/
   /*-----------------------------*/
+
   /*-----------------------------*/
   /*3.6 - Sinópsis - Organismos*/
   .synopsis-buttons-mobile-container {
@@ -4526,7 +4595,7 @@
   /*End Sinópsis - Organismos*/
   /*-----------------------------*/
 
-      /*=============================*/
+  /*=============================*/
   /*3.7 - Claro Sports - Organismos*/
   .marca-header .header {
     height: auto;
@@ -4535,20 +4604,42 @@
   /*End Claro Sports - Organismos */
   /*============================*/
 
-    /*3.8 - Form Signup - Organismos*/
-    .login-form {
-      height: 703.19px;
-    }
-    /*End Form Sign*/
-    /*============================*/
+  /*3.8 - Form Signup - Organismos*/
+  .login-form {
+    display:flex;
+    justify-content: center;
+    height: auto;
+ 
+  }
+  /*End Form Sign*/
+  /*============================*/
 
-      /*3.9 - Index - Organismos*/
-  .logo-container{
+  /*3.9 - Index - Organismos*/
+  .logo-container {
     padding-top: 72px;
     padding-bottom: 84px;
   }
-    /*End Index*/
+  /*End Index*/
   /*============================*/
 
-  
+  /*============================*/
+  /*4.0 - Aviso de Privacidad - Organismos*/
+  .tamaño-aviso-terminos {
+    width: 84%;
+    height: auto;
+    margin: auto;
+    overflow-y: visible;
+    padding-top: 30px;
+  }
+  /*End Aviso de Privacidad*/
+  /*============================*/
+
+    /*============================*/
+  /*4.1 - Login - Organismos*/
+  .login-container{
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+    /*End Login*/
+  /*============================*/
 }
