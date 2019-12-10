@@ -79,7 +79,7 @@ $(document).ready(function() {
       return false;
     }
   });
-  const inputPassword = $("#password");
+  const inputPassword = $("#login-password");
   const caracteresMin = $(".caracteres-min");
   const listo = $(".listo");
   inputPassword.keyup(function() {
@@ -95,7 +95,7 @@ $(document).ready(function() {
     }
   });
   /*login*/
-  const inputPassword1 = $("#password1");
+  const inputPassword1 = $("#signup-password");
   const caracteresMin1 = $(".caracteres-min");
   const listo1 = $(".listo");
   inputPassword1.keyup(function() {
