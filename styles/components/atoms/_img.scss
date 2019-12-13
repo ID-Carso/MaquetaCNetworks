@@ -30,11 +30,7 @@
 }
 
 .fondo {
-  background: url(../../../images/paises/haryypotter.png);
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: transparent;
 }
 
 .fondopaises {
@@ -229,7 +225,7 @@
 
 .ubicacion5 {
   position: absolute;
-  bottom: 11%;
+  top: 100%;
 }
 
 .ubicacion6 {
@@ -265,7 +261,7 @@
 
 .fondolog {
   background: $textWhite;
-  height: 100vh;
+  height: 100%;
 }
 
 .ubicacion4:hover {
@@ -432,17 +428,16 @@
   margin-left: 125px;
 }
 
-.flechalink-lista {
-  margin-left: 226px;
-}
-
-.flechalink-config {
-  margin-left: 160px;
+.flechalink-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0px, -50%);
 }
 
 .ubicacionpuntos {
   position: absolute;
-  top: 83%;
+  top: 105%;
   left: 88%;
 }
 
@@ -508,4 +503,24 @@
 
 .form-image-blue {
   border-radius: 15px;
+}
+
+.tache_button {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.image-list-blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.image-list-points {
+  position: absolute;
+  top: calc(3% + 5px);
+  right: 5%;
+  z-index: 1;
 }

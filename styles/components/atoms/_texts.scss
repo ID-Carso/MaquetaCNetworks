@@ -329,7 +329,7 @@
   letter-spacing: normal;
   text-align: center;
   color: $textgray;
-  margin-bottom: 2%;
+  padding-bottom: 18px;
 }
 
 .poster-horario {
@@ -790,10 +790,37 @@
   color: $scheduleHourColor;
 }
 
-.schedule-days,
 .rating,
 .rating-alert {
   color: $scheduleDayColor;
+}
+
+.schedule-days,
+.rating-alert {
+  font-family: $montserratSemiBold;
+}
+
+.schedule-days {
+  color: $pureBlack;
+  font-size: 14px;
+}
+
+.rating-alert {
+  color: $month;
+  font-size: 13px;
+  padding-right: 10px;
+}
+
+.myList-details-container {
+  .schedule {
+    color: $month;
+  }
+}
+
+.myList-details-container {
+  .rating {
+    font-size: 14px;
+  }
 }
 
 .schedule,
@@ -970,8 +997,9 @@
   font-weight: 600;
   text-align: center;
   color: #717272;
-  margin-top: 23px;
+  margin-top: 0px;
   text-align: left;
+  margin-bottom: 0;
 }
 
 .texto-config {
@@ -984,6 +1012,8 @@
   letter-spacing: normal;
   color: #666262;
   text-align: initial;
+  padding: 20px;
+  margin-bottom: 0;
 }
 
 .texto-usuario-miperfil {
@@ -1062,4 +1092,41 @@
   text-align: left;
   width: 768px;
   background-color: #fff;
+}
+
+.my-list-title {
+  font-family: $montserratLight;
+  text-align: center;
+  color: #717272;
+  font-size: 24px;
+  margin-bottom: 0;
+  padding-bottom: 37px;
+}
+
+.name-category {
+  font-size: 14px;
+  font-family: $montserratSemiBold;
+  color: #1cc4e1;
+  text-transform: uppercase;
+}
+
+.claro-list-title,
+.cinema-list-title {
+  color: #262626;
+}
+
+.concert-list-title {
+  color: $concertRectangle;
+}
+
+.cinema-list-title span {
+  color: $cinemaTitleGreen;
+}
+
+.list-title-section {
+  font-family: "Montserrat-Black";
+  font-size: 16px;
+  text-align: center;
+  padding: 20px 0;
+  text-transform: uppercase;
 }

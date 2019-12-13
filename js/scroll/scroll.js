@@ -1,7 +1,7 @@
 function gradientMenu(navbar, elementTarget) {
   elementTarget.on("scroll ontouchmove ontouchstart ontouchend", function() {
     var posicionScroll = elementTarget.scrollTop();
-    if (navbar !== null && navbar !== undefined) {
+    if (navbar) {
       if (posicionScroll <= 0) {
         navbar.style.background =
           "linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0))";

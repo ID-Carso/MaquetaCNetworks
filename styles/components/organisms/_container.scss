@@ -121,7 +121,7 @@
   width: 84%;
   height: 405px;
   margin: auto;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 .login-container {
@@ -134,4 +134,33 @@
 .aviso-container {
   display: flex;
   justify-content: center;
+}
+
+.signup-button-container {
+  padding-bottom: 20px;
+}
+
+.perfil-container {
+  padding-top: 50px;
+}
+
+.mi-lista-container {
+  padding-top: 100px;
+}
+
+.category-container {
+  border-bottom: 1px solid black;
+}
+
+.section-list-container {
+  border-bottom: solid 1px #a6a8a8;
+  padding: 0 27px;
+}
+
+.myList-details-container {
+  padding: 25px 0;
+}
+
+.info-schedule {
+  padding-bottom: 35px;
 }

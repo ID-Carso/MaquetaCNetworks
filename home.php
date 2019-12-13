@@ -8,11 +8,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="shortcut icon" type="image/png" href="./images/favicon/claro-fav.png" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/bootstrap-4.4.1/bootstrap.min.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./slick-master/slick/slick.css" />
     <link rel="stylesheet" href="./slick-master/slick/slick-theme.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/lib/jquery-3.4.1.min.js"></script>
 
     <script src="slick-master/slick/slick.js"></script>
     <script src="./js/jquery.browser.js"></script>

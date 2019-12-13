@@ -140,7 +140,6 @@ $(document).ready(function() {
   const navbar = document.querySelector(".menu");
   const parallaxWrapper = $(".wrapper");
   gradientMenu(navbar, documentHtml);
-  gradientMenu(navbar, parallaxWrapper);
 
   /* END FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
 
@@ -463,10 +462,6 @@ $(document).ready(function() {
   const sidebar_content = document.querySelector(".sidebar-content");
   const menuTablet = $(".menu-responsive-tablet");
 
-  $(window).resize(function() {
-    console.log(menu);
-  });
-
   menuTablet.click(function() {
     hamburguer.style.transform = "translate(0%)";
     invisible_button.style.width = "2000px";
@@ -487,45 +482,86 @@ $(document).ready(function() {
     sidebar_content.style.height = "100%";
   });
 
-  menu.addEventListener("click", function(e) {
-    hamburguer.style.transform = "translate(0%)";
-    invisible_button.style.width = "2000px";
-    invisible_button.style.left = "100%";
-    invisible_button.style.background = "black";
-    html.css({
-      position: "relative",
-      overflow: "hidden",
-      height: "100%"
+  if (menu) {
+    menu.addEventListener("click", function(e) {
+      hamburguer.style.transform = "translate(0%)";
+      invisible_button.style.width = "2000px";
+      invisible_button.style.left = "100%";
+      invisible_button.style.background = "black";
+      html.css({
+        position: "relative",
+        overflow: "hidden",
+        height: "100%"
+      });
+      body.css({
+        position: "fixed",
+        overflow: "hidden",
+        height: "100%",
+        width: "100%"
+      });
+      sidebar_content.style.overflow = "auto";
+      sidebar_content.style.height = "100%";
     });
-    body.css({
-      position: "fixed",
-      overflow: "hidden",
-      height: "100%",
-      width: "100%"
-    });
-    sidebar_content.style.overflow = "auto";
-    sidebar_content.style.height = "100%";
-  });
+  }
 
-  invisible_button.addEventListener("click", function() {
-    hamburguer.style.transform = "translate(-100%)";
-    invisible_button.style.width = "0px";
-    invisible_button.style.left = "0%";
-    invisible_button.style.background = "black";
-    html.css({
-      position: "static",
-      overflow: "visible",
-      height: "100%"
+  if (invisible_button) {
+    invisible_button.addEventListener("click", function() {
+      hamburguer.style.transform = "translate(-100%)";
+      invisible_button.style.width = "0px";
+      invisible_button.style.left = "0%";
+      invisible_button.style.background = "black";
+      html.css({
+        position: "static",
+        overflow: "visible",
+        height: "100%"
+      });
+      body.css({
+        position: "static",
+        overflow: "visible",
+        height: "100%",
+        width: "auto"
+      });
+      sidebar_content.style.overflow = "hidden";
+      sidebar_content.style.height = "0%";
     });
-    body.css({
-      position: "static",
-      overflow: "visible",
-      height: "100%",
-      width: "auto"
+  }
+  if (menu_categorias) {
+    menu_categorias.addEventListener("click", function(e) {
+      categorias.style.transform = "translate(0%)";
+      html.css({
+        position: "relative",
+        overflow: "hidden",
+        height: "100%"
+      });
+      body.css({
+        position: "fixed",
+        overflow: "hidden",
+        height: "100%",
+        width: "100%"
+      });
+      sidebar_content.style.overflow = "auto";
+      sidebar_content.style.height = "100%";
     });
-    sidebar_content.style.overflow = "hidden";
-    sidebar_content.style.height = "0%";
-  });
+
+    tache_button.addEventListener("click", function() {
+      categorias.style.transform = "translate(-100%)";
+      html.css({
+        position: "initial",
+        overflow: "auto",
+        height: "100%"
+      });
+      body.css({
+        position: "initial",
+        overflowX: "hidden",
+        overflowY: "auto",
+        "-webkit-overflow-scrolling": "auto",
+        height: "100%",
+        width: "auto"
+      });
+      sidebar_content.style.overflow = "hidden";
+      sidebar_content.style.height = "0%";
+    });
+  }
 
   const video_home = document.querySelector(".circle-video");
 

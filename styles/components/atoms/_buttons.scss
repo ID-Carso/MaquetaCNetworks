@@ -71,7 +71,7 @@
   letter-spacing: normal;
 }
 
-.singup-button {
+.signup-button {
   width: 288px;
   height: 44px;
   border-radius: 21.5px;
@@ -111,7 +111,7 @@
   color: $scheduleButton;
   border-radius: 50px;
   border: 2px solid $scheduleButton;
-  padding: 7px 11px;
+  padding: 5px 11px;
   display: flex;
   align-items: center;
 }
@@ -197,7 +197,7 @@
 }
 
 .close-button {
-  width: 288px;
+  width: 100%;
   height: 44px;
   border-radius: 21.5px;
   outline: none !important;
@@ -211,6 +211,7 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
+  margin-top: 25%;
 }
 
 .close-button:hover {

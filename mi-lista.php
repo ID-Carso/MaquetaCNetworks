@@ -9,11 +9,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="shortcut icon" type="image/png" href="./images/favicon/claro-fav.png" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/bootstrap-4.4.1/bootstrap.min.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./slick-master/slick/slick.css" />
     <link rel="stylesheet" href="./slick-master/slick/slick-theme.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/lib/jquery-3.4.1.min.js"></script>
     <script src="slick-master/slick/slick.js"></script>
     <script src="./js/jquery.browser.js"></script>
     <script src="./js/lib/rellax.js"></script>
@@ -125,68 +125,41 @@
                     <a href="index.html" class="login-item"><img class="login-country" src="" alt="" /></a>
                 </div>
             </div>
-            <div class="claro-navbar">
-                <div>
-                    <a href="claro-canal.php" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Canal Claro</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="concert-channel.php" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Concert Channel</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="claro-cinema.php" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Claro Cinema</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="nuestra-vision.php" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Nuestra Visión</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="claro-sports.php" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Claro Sports</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="programacion.php" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Programación</p>
-                    </a>
-                </div>
-            </div>
         </nav>
-
+        <?php
+        include 'menu-desktop.php';
+        ?>
     </header>
 
-    <div style="padding-top: 3%">
-        <div class="col-sm-12 no-gutters col-md-8 offset-md-2 no-gutters col-lg-4 offset-lg-4 col-xl-3 shadow1 fondolog"
-            style="
-        overflow-y: scroll;
-    ">
-            <br /><br /><br />
-            <div class="row ma-no centro">
+    <div>
+
+        <div
+            class="mi-lista-container col-sm-12 no-gutters col-md-8 offset-md-2 no-gutters col-lg-4 offset-lg-4 col-xl-3 shadow1 fondolog">
+            <img src="images/registro/group-3.svg" class="image-list-blue">
+            <img src="images/registro/group-37.svg" class="image-list-points">
+            <div class=" row ma-no centro">
                 <div class="col-sm-12 no-gap">
-                    <div class="tamaño2 centro">
-                        <p class="titulos-configuraciones">Mi lista </p>
+                    <div class="centro">
+                        <p class="my-list-title">Mi lista </p>
                     </div>
                 </div>
             </div>
             <div class="row ma-no centro">
-                <div class="col-sm-12 no-gap">
-                    <div class="tamaño2 centro">
+                <div class="col-11 mx-auto no-gap border-config d-flex justify-content-between">
+                    <div class="centro ">
                         <p class="texto-categorias">CATEGORÍAS <img class="categorias-flecha"
                                 src="images/mi-lista/flecha-categorias.svg" alt=""> </p>
                     </div>
+                    <div>
+                        <p class="name-category">todos</p>
+                    </div>
                 </div>
             </div>
-            <div id="claro-01" class="claro-content">
-                <div class="no-gutters">
-                    <div class="col-10 mx-auto">
-                        <div class="schedule-container">
-
+            <div class="no-gutters">
+                <div class="col-11 mx-auto">
+                    <div class="claro-list section-list-container">
+                        <h1 class="claro-list-title list-title-section">Claro Canal</h1>
+                        <div class="list-item-container">
                             <div class="poster">
                                 <div class="thumbnail">
                                     <img src="./images/posters/coldplay-tour.jpeg" alt="">
@@ -197,11 +170,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="schedule-details">
-                                <div class="d-flex info-schedule align-items-center justify-content-between">
-                                    <div>
-                                        <p class="schedule">10:00 - 10:30 pm</p>
-                                        <p class="schedule-days">Lunes a Viernes</p>
+                            <div class="myList-details-container">
+                                <div class="d-flex info-schedule align-items-center justify-content-between no-gutters">
+
+                                    <div class="col-6">
+                                        <p class="rating">Clasificación: A</p>
                                     </div>
                                     <div>
                                         <button class="schedule-add" type="button">QUITAR <span><img
@@ -209,13 +182,14 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div
-                                    class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                <div class="no-gutters d-flex  align-items-center justify-content-between">
 
-                                    <div class="col-6">
-                                        <p class="rating">Clasificación: A</p>
+                                    <div>
+                                        <p class="schedule-days">Lunes a Viernes</p>
+                                        <p class="schedule">10:00 - 10:30 pm</p>
+
                                     </div>
-                                    <div class="col-6 d-flex align-items-center justify-content-between">
+                                    <div class="col-6 d-flex align-items-center justify-content-end">
                                         <p class="rating-alert">ALERTAS</p>
                                         <label class="switch-alert">
                                             <input type="checkbox">
@@ -226,7 +200,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="schedule-container">
+
+                        <div class="list-item-container">
                             <div class="poster">
                                 <div class="thumbnail">
                                     <img src="./images/posters/coldplay-tour.jpeg" alt="">
@@ -237,11 +212,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="schedule-details">
-                                <div class="d-flex info-schedule align-items-center justify-content-between">
-                                    <div>
-                                        <p class="schedule">10:00 - 10:30 pm</p>
-                                        <p class="schedule-days">Lunes a Viernes</p>
+                            <div class="myList-details-container">
+                                <div class="d-flex info-schedule align-items-center justify-content-between no-gutters">
+
+                                    <div class="col-6">
+                                        <p class="rating">Clasificación: A</p>
                                     </div>
                                     <div>
                                         <button class="schedule-add" type="button">QUITAR <span><img
@@ -249,95 +224,14 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div
-                                    class="no-gutters d-flex rating-container align-items-center justify-content-between">
+                                <div class="no-gutters d-flex  align-items-center justify-content-between">
 
-                                    <div class="col-6">
-                                        <p class="rating">Clasificación: A</p>
-                                    </div>
-                                    <div class="col-6 d-flex align-items-center justify-content-between">
-                                        <p class="rating-alert">ALERTAS</p>
-                                        <label class="switch-alert">
-                                            <input type="checkbox">
-                                            <span class="slideralert roundalert"></span>
-                                        </label>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="schedule-container">
-                            <div class="poster">
-                                <div class="thumbnail">
-                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                </div>
-                                <div class="a-concert-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams Tour</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="schedule-details">
-                                <div class="d-flex info-schedule align-items-center justify-content-between">
                                     <div>
-                                        <p class="schedule">10:00 - 10:30 pm</p>
                                         <p class="schedule-days">Lunes a Viernes</p>
-                                    </div>
-                                    <div>
-                                        <button class="schedule-add" type="button">QUITAR <span><img
-                                                    src="images/mi-lista/menos.svg"></span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div
-                                    class="no-gutters d-flex rating-container align-items-center justify-content-between">
-
-                                    <div class="col-6">
-                                        <p class="rating">Clasificación: A</p>
-                                    </div>
-                                    <div class="col-6 d-flex align-items-center justify-content-between">
-                                        <p class="rating-alert">ALERTAS</p>
-                                        <label class="switch-alert">
-                                            <input type="checkbox">
-                                            <span class="slideralert roundalert"></span>
-                                        </label>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="schedule-container">
-                            <div class="poster">
-                                <div class="thumbnail">
-                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                </div>
-                                <div class="a-concert-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams Tour</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="schedule-details">
-                                <div class="d-flex info-schedule align-items-center justify-content-between">
-                                    <div>
                                         <p class="schedule">10:00 - 10:30 pm</p>
-                                        <p class="schedule-days">Lunes a Viernes</p>
-                                    </div>
-                                    <div>
-                                        <button class="schedule-add" type="button">QUITAR <span><img
-                                                    src="images/mi-lista/menos.svg"></span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div
-                                    class="no-gutters d-flex rating-container align-items-center justify-content-between">
 
-                                    <div class="col-6">
-                                        <p class="rating">Clasificación: A</p>
                                     </div>
-                                    <div class="col-6 d-flex align-items-center justify-content-between">
+                                    <div class="col-6 d-flex align-items-center justify-content-end">
                                         <p class="rating-alert">ALERTAS</p>
                                         <label class="switch-alert">
                                             <input type="checkbox">
@@ -349,10 +243,186 @@
                             </div>
                         </div>
                     </div>
+                    <div class="cinema-list section-list-container">
+                        <h1 class="cinema-list-title list-title-section">Claro <span>Cinema</span></h1>
+                        <div class="list-item-container">
+                            <div class="poster">
+                                <div class="thumbnail">
+                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
+                                </div>
+                                <div class="a-concert-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams Tour</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="myList-details-container">
+                                <div class="d-flex info-schedule align-items-center justify-content-between no-gutters">
+
+                                    <div class="col-6">
+                                        <p class="rating">Clasificación: A</p>
+                                    </div>
+                                    <div>
+                                        <button class="schedule-add" type="button">QUITAR <span><img
+                                                    src="images/mi-lista/menos.svg"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="no-gutters d-flex  align-items-center justify-content-between">
+
+                                    <div>
+                                        <p class="schedule-days">Lunes a Viernes</p>
+                                        <p class="schedule">10:00 - 10:30 pm</p>
+
+                                    </div>
+                                    <div class="col-6 d-flex align-items-center justify-content-end">
+                                        <p class="rating-alert">ALERTAS</p>
+                                        <label class="switch-alert">
+                                            <input type="checkbox">
+                                            <span class="slideralert roundalert"></span>
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-item-container">
+                            <div class="poster">
+                                <div class="thumbnail">
+                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
+                                </div>
+                                <div class="a-concert-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams Tour</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="myList-details-container">
+                                <div class="d-flex info-schedule align-items-center justify-content-between no-gutters">
+
+                                    <div class="col-6">
+                                        <p class="rating">Clasificación: A</p>
+                                    </div>
+                                    <div>
+                                        <button class="schedule-add" type="button">QUITAR <span><img
+                                                    src="images/mi-lista/menos.svg"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="no-gutters d-flex  align-items-center justify-content-between">
+
+                                    <div>
+                                        <p class="schedule-days">Lunes a Viernes</p>
+                                        <p class="schedule">10:00 - 10:30 pm</p>
+
+                                    </div>
+                                    <div class="col-6 d-flex align-items-center justify-content-end">
+                                        <p class="rating-alert">ALERTAS</p>
+                                        <label class="switch-alert">
+                                            <input type="checkbox">
+                                            <span class="slideralert roundalert"></span>
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="concert-list section-list-container">
+                        <h1 class="concert-list-title list-title-section">Concert Channel</h1>
+                        <div class="list-item-container">
+                            <div class="poster">
+                                <div class="thumbnail">
+                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
+                                </div>
+                                <div class="a-concert-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams Tour</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="myList-details-container">
+                                <div class="d-flex info-schedule align-items-center justify-content-between no-gutters">
+
+                                    <div class="col-6">
+                                        <p class="rating">Clasificación: A</p>
+                                    </div>
+                                    <div>
+                                        <button class="schedule-add" type="button">QUITAR <span><img
+                                                    src="images/mi-lista/menos.svg"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="no-gutters d-flex  align-items-center justify-content-between">
+
+                                    <div>
+                                        <p class="schedule-days">Lunes a Viernes</p>
+                                        <p class="schedule">10:00 - 10:30 pm</p>
+
+                                    </div>
+                                    <div class="col-6 d-flex align-items-center justify-content-end">
+                                        <p class="rating-alert">ALERTAS</p>
+                                        <label class="switch-alert">
+                                            <input type="checkbox">
+                                            <span class="slideralert roundalert"></span>
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-item-container">
+                            <div class="poster">
+                                <div class="thumbnail">
+                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
+                                </div>
+                                <div class="a-concert-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams Tour</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="myList-details-container">
+                                <div class="d-flex info-schedule align-items-center justify-content-between no-gutters">
+
+                                    <div class="col-6">
+                                        <p class="rating">Clasificación: A</p>
+                                    </div>
+                                    <div>
+                                        <button class="schedule-add" type="button">QUITAR <span><img
+                                                    src="images/mi-lista/menos.svg"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="no-gutters d-flex  align-items-center justify-content-between">
+
+                                    <div>
+                                        <p class="schedule-days">Lunes a Viernes</p>
+                                        <p class="schedule">10:00 - 10:30 pm</p>
+
+                                    </div>
+                                    <div class="col-6 d-flex align-items-center justify-content-end">
+                                        <p class="rating-alert">ALERTAS</p>
+                                        <label class="switch-alert">
+                                            <input type="checkbox">
+                                            <span class="slideralert roundalert"></span>
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
+
         </div>
-    </div>
+
 
 
 </body>
