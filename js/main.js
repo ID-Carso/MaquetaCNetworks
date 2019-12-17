@@ -60,8 +60,8 @@ $(document).ready(function() {
     const nodatos = $(".nodatos");
     const nocorreo = $(".nocorreo");
     const borde = $("#correo1");
-    correo1 = document.getElementById("correo1").value;
-    password1 = document.getElementById("password1").value;
+    correo1 = document.getElementById("login-email").value;
+    password1 = document.getElementById("login-password").value;
     expresion1 = /\w+@\w+\.+[a-z]/;
 
     if (correo1 === "" && password1 === "") {

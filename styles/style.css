@@ -1848,9 +1848,9 @@ h6 {
     margin-bottom: 20px;
   }
   .shadow1 {
-    -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
-    box-shadow: 3px 3px 5px 6px #5c1864;
-    border-radius: 15px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0px;
   }
 }
 
@@ -1872,8 +1872,6 @@ h6 {
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
   .paises-image {
     width: 12%;
-    padding-top: 65px;
-    margin-bottom: 84px;
   }
   .pie_paises {
     margin-top: 25px;
@@ -2295,7 +2293,7 @@ h6 {
 
 .image-list-points {
   position: absolute;
-  top: calc(3% + 5px);
+  top: calc(10% + 5px);
   right: 5%;
   z-index: 1;
 }
@@ -4553,6 +4551,19 @@ input[type="radio"]:checked + .mujer-estilo {
   padding-bottom: 35px;
 }
 
+.lista-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.myList-details-tablet {
+  display: none;
+}
+
+.myList-details-desktop {
+  display: none;
+}
+
 .schedule-poster {
   width: 50%;
   margin-right: 5%;
@@ -4807,6 +4818,7 @@ input[type="radio"]:checked + .mujer-estilo {
   position: absolute;
   width: 100%;
   padding: calc(3% + 4px) calc(8% - 10px) 0px calc(8% - 10px);
+  z-index: 2;
 }
 
 .menu-desktop .nav-content {
@@ -4865,6 +4877,11 @@ input[type="radio"]:checked + .mujer-estilo {
           transform: translate(-100%);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+
+.lista-header .menu-tablet {
+  padding: calc(3% + 4px) calc(8% - 10px) calc(3% + 4px) calc(8% - 10px);
+  background: #4dd0e1;
 }
 
 .section-home-footer {
@@ -5256,9 +5273,21 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .image-list-blue {
     border-radius: 15px;
+    top: -1%;
   }
   .myList-details-container .schedule {
-    font-size: 14px;
+    font-size: 25px;
+  }
+  .list-item-container .poster {
+    width: 45%;
+    margin-right: 5%;
+  }
+  .list-title-section {
+    padding-top: 55px;
+  }
+  .my-list-title,
+  .list-title-section {
+    font-size: 30px;
   }
   /*End Mi Lista - Átomos*/
   /*============================*/
@@ -5392,6 +5421,10 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*2.6 - Sinópsis - Moleculas*/
   /*End Sinópsis - Moleculas*/
+  /*============================*/
+  /*============================*/
+  /*2.7 - Mi Lista - Moleculas*/
+  /*End Mi Lista - Moleculas*/
   /*============================*/
   /*3.- ORGANISMS*/
   /*============================*/
@@ -5684,7 +5717,7 @@ input[type="radio"]:checked + .mujer-estilo {
   /*End Sinópsis - Organismos*/
   /*============================*/
   /*============================*/
-  /*3.6 - Sinópsis - Organismos*/
+  /*3.6 - Mi perfil- Organismos*/
   .avatar-header .menu-perfil {
     display: none;
   }
@@ -5723,11 +5756,14 @@ input[type="radio"]:checked + .mujer-estilo {
   .lista-header .menu-perfil {
     display: none;
   }
+  .lista-header .login {
+    background: transparent;
+  }
   .lista-header .menu-tablet .login {
     top: 0;
     right: 0;
   }
-  /*End Sinópsis - Organismos*/
+  /*End Mi Perfil - Organismos*/
   /*============================*/
   /*3.7 - Claro Sports*/
   .marca-header .header {
@@ -5790,10 +5826,48 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*3.12 - Mi Lista - Organismos*/
   .mi-lista-container {
-    margin-top: 50px;
+    padding-top: 40px;
     margin-bottom: 50px;
   }
+  .list-item-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 75px 0;
+    border-bottom: solid 1px #a6a8a8;
+  }
+  .myList-details-container {
+    width: 50%;
+    padding: 0;
+  }
+  .section-list-container {
+    border-bottom: 0px;
+  }
+  .myList-details-mobile {
+    display: none;
+  }
+  .myList-details-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 50%;
+  }
+  .list-content .shadow1 {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0px;
+  }
   /*End Mi Lista*/
+  /*============================*/
+  /*============================*/
+  /*3.12 - Alertas - Organismos*/
+  .alertas-container {
+    padding-top: 50px;
+  }
+  /*End Alertas*/
   /*============================*/
 }
 
@@ -6243,7 +6317,39 @@ input[type="radio"]:checked + .mujer-estilo {
     border-radius: 15px;
   }
   .myList-details-container .schedule {
-    font-size: 14px;
+    font-size: 25px;
+  }
+  .myList-details-container .schedule-days {
+    font-size: 16px;
+  }
+  .myList-details-container .rating {
+    font-size: 18px;
+  }
+  .lista-content .shadow1 {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0px;
+  }
+  .list-item-container .poster {
+    width: 34%;
+    margin-right: 5%;
+  }
+  .myList-details-desktop .schedule-add {
+    margin-bottom: 25px;
+  }
+  .myList-details-desktop .schedule-description {
+    padding-top: 1rem;
+    margin-bottom: 0;
+  }
+  .list-title-section {
+    padding-top: 55px;
+  }
+  .my-list-title,
+  .list-title-section {
+    font-size: 30px;
+  }
+  .lista-header .login {
+    background: transparent;
   }
   /*End Mi Lista - Átomos*/
   /*============================*/
@@ -6824,10 +6930,37 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*3.14 - Mi Lista - Organismos*/
   .mi-lista-container {
-    margin-top: 50px;
+    padding-top: 40px;
     margin-bottom: 50px;
   }
+  .myList-details-mobile {
+    display: none;
+  }
+  .myList-details-tablet {
+    display: none;
+  }
+  .myList-details-desktop {
+    display: block;
+  }
+  .list-item-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 75px 0;
+    border-bottom: solid 1px #a6a8a8;
+  }
+  .myList-details-container {
+    width: 61%;
+    padding: 0;
+  }
   /*End Mi Lista*/
+  /*============================*/
+  /*============================*/
+  /*3.14 - Alertas - Organismos*/
+  .alertas-container {
+    padding-top: 50px;
+  }
+  /*End Alertas*/
   /*============================*/
 }
 
@@ -7219,6 +7352,41 @@ input[type="radio"]:checked + .mujer-estilo {
   .myList-details-container .schedule {
     font-size: 14px;
   }
+  .lista-content .shadow1 {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0px;
+  }
+  .list-item-container .poster {
+    width: 34%;
+    margin-right: 5%;
+  }
+  .lista-header .navbar-item {
+    color: #767373;
+  }
+  .lista-header .menu-desktop {
+    padding-bottom: 70px;
+  }
+  .myList-details-desktop .schedule-add {
+    margin-bottom: 25px;
+  }
+  .myList-details-desktop .schedule-description {
+    padding-top: 1rem;
+    margin-bottom: 0;
+  }
+  .my-list-title {
+    padding-top: 70px;
+  }
+  .my-list-title,
+  .list-title-section {
+    font-size: 30px;
+  }
+  .list-title-section {
+    padding-top: 55px;
+  }
+  .lista-header .login {
+    background: transparent;
+  }
   /*End Mi Lista - Átomos*/
   /*============================*/
   /*END ATOMS*/
@@ -7237,7 +7405,7 @@ input[type="radio"]:checked + .mujer-estilo {
     display: block;
   }
   .alertas-header .menu-tablet {
-    display: block;
+    display: none;
   }
   .perfil-header .menu-tablet {
     display: none;
@@ -7248,8 +7416,14 @@ input[type="radio"]:checked + .mujer-estilo {
   .configuracion-header .menu-tablet {
     display: block;
   }
+  .alertas-header .menu-desktop {
+    position: static;
+  }
+  .alertas-header .claro-navbar {
+    position: static;
+  }
   .lista-header .menu-tablet {
-    display: block;
+    display: none;
   }
   .menu-desktop {
     display: block;
@@ -7801,7 +7975,7 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   /*End Claro Sports - Organismos */
   /*============================*/
-  /*3.9 - Form Signup - Organismos*/
+  /*3.7 - Form Signup - Organismos*/
   .login-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7813,7 +7987,7 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   /*End Form Sign*/
   /*============================*/
-  /*4.0 - Index - Organismos*/
+  /*3.8 - Index - Organismos*/
   .logo-container {
     padding-top: 72px;
     padding-bottom: 84px;
@@ -7821,7 +7995,7 @@ input[type="radio"]:checked + .mujer-estilo {
   /*End Index*/
   /*============================*/
   /*============================*/
-  /*4.1 - Aviso de Privacidad - Organismos*/
+  /*3.9 - Aviso de Privacidad - Organismos*/
   .tamaño-aviso-terminos {
     width: 84%;
     height: auto;
@@ -7836,7 +8010,7 @@ input[type="radio"]:checked + .mujer-estilo {
   /*End Aviso de Privacidad*/
   /*============================*/
   /*============================*/
-  /*4.2 - Login - Organismos*/
+  /*3.10 - Login - Organismos*/
   .login-container {
     padding-top: 4%;
     padding-bottom: 4%;
@@ -7844,7 +8018,7 @@ input[type="radio"]:checked + .mujer-estilo {
   /*End Login*/
   /*============================*/
   /*============================*/
-  /*4.3 - Términos - Organismos*/
+  /*3.11 - Términos - Organismos*/
   .terminos-container {
     padding-top: 4%;
     padding-bottom: 4%;
@@ -7852,11 +8026,45 @@ input[type="radio"]:checked + .mujer-estilo {
   /*End Términos*/
   /*============================*/
   /*============================*/
-  /*4.4 - Mi perfil - Organismos*/
+  /*3.12 - Mi perfil - Organismos*/
   .perfil-container {
     padding-bottom: 50px;
   }
   /*End Mi perfil*/
+  /*============================*/
+  /*3.13 - Mi Lista - Organismos*/
+  .mi-lista-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .list-item-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 75px 0;
+    border-bottom: solid 1px #a6a8a8;
+  }
+  .myList-details-container {
+    width: 61%;
+    padding: 0;
+  }
+  .myList-details-mobile {
+    display: none;
+  }
+  .myList-details-tablet {
+    display: none;
+  }
+  .myList-details-desktop {
+    display: block;
+  }
+  /*End Mi Lista*/
+  /*============================*/
+  /*============================*/
+  /*3.14 - Alertas - Organismos*/
+  .alertas-container {
+    padding-top: 50px;
+  }
+  /*End Alertas*/
   /*============================*/
 }
 
@@ -8158,7 +8366,7 @@ input[type="radio"]:checked + .mujer-estilo {
   /*End Programación - Átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
-  /*1.67Sinópsis -  Átomos  */
+  /*1.7 Sinópsis -  Átomos  */
   .synopsis-section-title {
     font-size: 60px;
     padding: 85px 0;
@@ -8219,6 +8427,43 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .myList-details-container .schedule {
     font-size: 14px;
+  }
+  .lista-content .shadow1 {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0px;
+  }
+  .list-item-container .poster {
+    width: 34%;
+    margin-right: 5%;
+  }
+  .myList-details-container .rating {
+    font-size: 18px;
+  }
+  .myList-details-container .schedule-days {
+    font-size: 16px;
+  }
+  .myList-details-container .schedule {
+    font-size: 25px;
+  }
+  .myList-details-desktop .schedule-add {
+    margin-bottom: 25px;
+  }
+  .my-list-title {
+    padding-top: 100px;
+  }
+  .lista-header .navbar-item {
+    color: #767373;
+  }
+  .my-list-title,
+  .list-title-section {
+    font-size: 30px;
+  }
+  .list-title-section {
+    padding-top: 55px;
+  }
+  .lista-header .login {
+    background: transparent;
   }
   /*End Mi Lista - Átomos*/
   /*============================*/
@@ -8732,7 +8977,13 @@ input[type="radio"]:checked + .mujer-estilo {
     display: block;
   }
   .alertas-header .menu-tablet {
-    display: block;
+    display: none;
+  }
+  .alertas-header .menu-desktop {
+    position: static;
+  }
+  .alertas-header .claro-navbar {
+    position: static;
   }
   .perfil-header .menu-tablet {
     display: block;
@@ -8741,7 +8992,7 @@ input[type="radio"]:checked + .mujer-estilo {
     display: block;
   }
   .lista-header .menu-tablet {
-    display: block;
+    display: none;
   }
   .avatar-header .menu-perfil {
     display: none;
@@ -8855,10 +9106,34 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*3.14 - Mi Lista - Organismos*/
   .mi-lista-container {
-    margin-top: 50px;
+    padding-top: 40px;
     margin-bottom: 50px;
   }
+  .list-item-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 75px 0;
+    border-bottom: solid 1px #a6a8a8;
+  }
+  .myList-details-mobile {
+    display: none;
+  }
+  .myList-details-desktop {
+    display: block;
+  }
+  .myList-details-container {
+    width: 61%;
+    padding: 0;
+  }
   /*End Mi Lista*/
+  /*============================*/
+  /*============================*/
+  /*3.14 - Alertas - Organismos*/
+  .alertas-container {
+    padding-top: 50px;
+  }
+  /*End Alertas*/
   /*============================*/
 }
 /*# sourceMappingURL=style.css.map */

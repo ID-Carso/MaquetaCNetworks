@@ -73,10 +73,8 @@
   }
 
   .shadow1 {
-    -moz-box-shadow: 3px 3px 5px 6px #5c1864;
-    -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
-    box-shadow: 3px 3px 5px 6px #5c1864;
-    border-radius: 15px;
+    box-shadow: none;
+    border-radius: 0px;
   }
 }
 
@@ -101,8 +99,6 @@
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
   .paises-image {
     width: 12%;
-    padding-top: 65px;
-    margin-bottom: 84px;
   }
 
   .pie_paises {
@@ -520,7 +516,7 @@
 
 .image-list-points {
   position: absolute;
-  top: calc(3% + 5px);
+  top: calc(10% + 5px);
   right: 5%;
   z-index: 1;
 }

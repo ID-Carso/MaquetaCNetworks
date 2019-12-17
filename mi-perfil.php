@@ -118,7 +118,7 @@
                 <div class="row ma-no centro">
                     <div class="col-sm-12 no-gap">
                         <div class="centro ">
-                            <a href="mi-lista.html"> <label class="border-config">
+                            <a href="mi-lista.php"> <label class="border-config">
                                     <p class="texto-config"> Mi lista </p>
                                     <img class="flechalink-icon" src="images/config/flecha.svg" />
                                 </label>

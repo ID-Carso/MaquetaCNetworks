@@ -57,6 +57,7 @@
   position: absolute;
   width: 100%;
   padding: calc(3% + 4px) calc(8% - 10px) 0px calc(8% - 10px);
+  z-index: 2;
 }
 
 .menu-desktop .nav-content {
@@ -108,4 +109,11 @@
   z-index: 16;
   transform: translate(-100%);
   transition: all 0.3s ease-out;
+}
+
+.lista-header {
+  .menu-tablet {
+    padding: calc(3% + 4px) calc(8% - 10px) calc(3% + 4px) calc(8% - 10px);
+    background: #4dd0e1;
+  }
 }

@@ -149,7 +149,7 @@
     margin: 0 10px;
   }
 
-  .fondo{
+  .fondo {
     background: url(../../../images/paises/haryypotter.png);
     background-position: center;
     background-attachment: fixed;
@@ -456,14 +456,12 @@
     height: auto;
   }
 
-
-
   /*End Datos - Átomos*/
   /*============================*/
 
-    /*============================*/
+  /*============================*/
   /*1.8 - Mi perfil - Átomos*/
-  .perfil-container{
+  .perfil-container {
     .fondolog {
       padding-bottom: 10%;
       padding-top: 10%;
@@ -474,13 +472,13 @@
     top: 90%;
   }
 
-  .ubicacion5{
+  .ubicacion5 {
     top: 85%;
-  } 
+  }
   /*End Mi perfil - Átomos*/
   /*============================*/
 
-      /*============================*/
+  /*============================*/
   /*1.9 - Mi Lista - Átomos*/
   .image-list-points {
     top: 1%;
@@ -488,12 +486,27 @@
 
   .image-list-blue {
     border-radius: 15px;
+    top: -1%;
   }
 
   .myList-details-container .schedule {
-    font-size: 14px;
+    font-size: 25px;
   }
-    /*End Mi Lista - Átomos*/
+
+  .list-item-container .poster {
+    width: 45%;
+    margin-right: 5%;
+  }
+
+  .list-title-section {
+    padding-top: 55px;
+  }
+
+  .my-list-title,
+  .list-title-section {
+    font-size: 30px;
+  }
+  /*End Mi Lista - Átomos*/
   /*============================*/
 
   /*2.- MOLECULES*/
@@ -651,6 +664,12 @@
   /*End Sinópsis - Moleculas*/
   /*============================*/
 
+  /*============================*/
+  /*2.7 - Mi Lista - Moleculas*/
+
+  /*End Mi Lista - Moleculas*/
+  /*============================*/
+
   /*3.- ORGANISMS*/
 
   /*============================*/
@@ -701,7 +720,7 @@
     margin-left: 0;
   }
 
-  .aviso-header{
+  .aviso-header {
     padding: 0;
   }
 
@@ -879,12 +898,10 @@
   }
 
   .dont-lose-claro {
-  
     border-radius: 20px;
   }
 
   .next-week-claro {
-
     border-radius: 20px;
   }
 
@@ -1000,7 +1017,7 @@
   /*============================*/
 
   /*============================*/
-  /*3.6 - Sinópsis - Organismos*/
+  /*3.6 - Mi perfil- Organismos*/
 
   .avatar-header {
     .menu-perfil {
@@ -1061,6 +1078,10 @@
     .menu-perfil {
       display: none;
     }
+
+    .login {
+      background: transparent;
+    }
   }
 
   .lista-header .menu-tablet .login {
@@ -1068,7 +1089,7 @@
     right: 0;
   }
 
-  /*End Sinópsis - Organismos*/
+  /*End Mi Perfil - Organismos*/
   /*============================*/
   /*3.7 - Claro Sports*/
   .marca-header .header {
@@ -1081,10 +1102,9 @@
   /*============================*/
   /*3.8 - Form Signup - Organismos*/
   .login-form {
-    display:flex;
+    display: flex;
     justify-content: center;
     height: auto;
-
   }
   /*End Form Sign*/
   /*============================*/
@@ -1113,34 +1133,73 @@
     padding-bottom: 4%;
   }
 
- 
   /*End Aviso de Privacidad*/
   /*============================*/
 
-      /*============================*/
+  /*============================*/
   /*3.11 - Login - Organismos*/
-  .login-container{
+  .login-container {
     padding-top: 4%;
   }
-    /*End Login*/
+  /*End Login*/
   /*============================*/
 
-        /*============================*/
+  /*============================*/
   /*3.12 - Términos - Organismos*/
-  .terminos-container{
+  .terminos-container {
     padding-top: 4%;
     padding-bottom: 4%;
   }
-    /*End Términos*/
+  /*End Términos*/
   /*============================*/
 
   /*============================*/
   /*3.12 - Mi Lista - Organismos*/
-.mi-lista-container{
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
+  .mi-lista-container {
+    padding-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .list-item-container {
+    display: flex;
+    padding: 75px 0;
+    border-bottom: solid 1px #a6a8a8;
+  }
+
+  .myList-details-container {
+    width: 50%;
+    padding: 0;
+  }
+
+  .section-list-container {
+    border-bottom: 0px;
+  }
+
+  .myList-details-mobile {
+    display: none;
+  }
+
+  .myList-details-tablet {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+  }
+
+  .list-content {
+    .shadow1 {
+      box-shadow: none;
+      border-radius: 0px;
+    }
+  }
   /*End Mi Lista*/
+  /*============================*/
+
+  /*============================*/
+  /*3.12 - Alertas - Organismos*/
+  .alertas-container {
+    padding-top: 50px;
+  }
+  /*End Alertas*/
   /*============================*/
 }
 
@@ -1331,7 +1390,7 @@
     font-size: 12px !important;
   }
 
-  .fondo{
+  .fondo {
     background: url(../../../images/paises/haryypotter.png);
     background-position: center;
     background-attachment: fixed;
@@ -1663,9 +1722,9 @@
 
   /*End Datos - Átomos*/
 
-      /*============================*/
+  /*============================*/
   /*1.8 - Mi perfil - Átomos*/
-  .perfil-container{
+  .perfil-container {
     .fondolog {
       padding-bottom: 10%;
       padding-top: 10%;
@@ -1676,9 +1735,9 @@
     top: 90%;
   }
 
-  .ubicacion5{
+  .ubicacion5 {
     top: 85%;
-  } 
+  }
   /*End Mi perfil - Átomos*/
   /*============================*/
 
@@ -1692,10 +1751,57 @@
     border-radius: 15px;
   }
 
-  .myList-details-container .schedule {
-    font-size: 14px;
+  .myList-details-container {
+    .schedule {
+      font-size: 25px;
+    }
+
+    .schedule-days {
+      font-size: 16px;
+    }
+
+    .rating {
+      font-size: 18px;
+    }
   }
-    /*End Mi Lista - Átomos*/
+
+  .lista-content {
+    .shadow1 {
+      box-shadow: none;
+      border-radius: 0px;
+    }
+  }
+
+  .list-item-container .poster {
+    width: 34%;
+    margin-right: 5%;
+  }
+
+  .myList-details-desktop {
+    .schedule-add {
+      margin-bottom: 25px;
+    }
+
+    .schedule-description {
+      padding-top: 1rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .list-title-section {
+    padding-top: 55px;
+  }
+
+  .my-list-title,
+  .list-title-section {
+    font-size: 30px;
+  }
+
+  .lista-header .login {
+    background: transparent;
+  }
+
+  /*End Mi Lista - Átomos*/
   /*============================*/
 
   /***  2. MOLECULES  ***/
@@ -1920,7 +2026,7 @@
     display: block;
   }
 
-  .aviso-header{
+  .aviso-header {
     padding: 0;
   }
 
@@ -2352,10 +2458,9 @@
   /*============================*/
   /*3.9 - Form Signup - Organismos*/
   .login-form {
-    display:flex;
+    display: flex;
     justify-content: center;
     height: auto;
-
   }
   /*End Form Signup*/
   /*============================*/
@@ -2384,34 +2489,65 @@
     padding-bottom: 4%;
   }
 
-
   /*End Aviso de Privacidad*/
   /*============================*/
 
-      /*============================*/
+  /*============================*/
   /*3.12 - Login - Organismos*/
-  .login-container{
+  .login-container {
     padding-top: 0%;
   }
-    /*End Login*/
+  /*End Login*/
   /*============================*/
 
-        /*============================*/
+  /*============================*/
   /*3.13 - Términos - Organismos*/
-  .terminos-container{
+  .terminos-container {
     padding-top: 4%;
     padding-bottom: 4%;
   }
-    /*End Términos*/
+  /*End Términos*/
   /*============================*/
 
-    /*============================*/
+  /*============================*/
   /*3.14 - Mi Lista - Organismos*/
-.mi-lista-container{
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
+  .mi-lista-container {
+    padding-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .myList-details-mobile {
+    display: none;
+  }
+
+  .myList-details-tablet {
+    display: none;
+  }
+
+  .myList-details-desktop {
+    display: block;
+  }
+
+  .list-item-container {
+    display: flex;
+    padding: 75px 0;
+    border-bottom: solid 1px #a6a8a8;
+  }
+
+  .myList-details-container {
+    width: 61%;
+    padding: 0;
+  }
+
   /*End Mi Lista*/
+  /*============================*/
+
+  /*============================*/
+  /*3.14 - Alertas - Organismos*/
+  .alertas-container {
+    padding-top: 50px;
+  }
+  /*End Alertas*/
   /*============================*/
 }
 
@@ -2610,7 +2746,7 @@
     margin: 0 3px;
   }
 
-  .fondo{
+  .fondo {
     background: url(../../../images/paises/haryypotter.png);
     background-position: center;
     background-attachment: fixed;
@@ -2867,9 +3003,9 @@
   /*End Sinópsis - átomos*/
   /*-----------------------------*/
 
-      /*============================*/
+  /*============================*/
   /*1.9 - Mi perfil - Átomos*/
-  .perfil-container{
+  .perfil-container {
     .fondolog {
       padding-bottom: 5%;
       padding-top: 5%;
@@ -2880,9 +3016,9 @@
     top: 90%;
   }
 
-  .ubicacion5{
+  .ubicacion5 {
     top: 85%;
-  } 
+  }
   /*End Mi perfil - Átomos*/
   /*============================*/
 
@@ -2899,7 +3035,58 @@
   .myList-details-container .schedule {
     font-size: 14px;
   }
-    /*End Mi Lista - Átomos*/
+
+  .lista-content {
+    .shadow1 {
+      box-shadow: none;
+      border-radius: 0px;
+    }
+  }
+
+  .list-item-container {
+    .poster {
+      width: 34%;
+      margin-right: 5%;
+    }
+  }
+
+  .lista-header {
+    .navbar-item {
+      color: #767373;
+    }
+
+    .menu-desktop {
+      padding-bottom: 70px;
+    }
+  }
+
+  .myList-details-desktop {
+    .schedule-add {
+      margin-bottom: 25px;
+    }
+
+    .schedule-description {
+      padding-top: 1rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .my-list-title {
+    padding-top: 70px;
+  }
+
+  .my-list-title, .list-title-section {
+    font-size: 30px;
+  }
+
+  .list-title-section {
+    padding-top: 55px;
+  }
+
+  .lista-header .login {
+    background: transparent;
+}
+  /*End Mi Lista - Átomos*/
   /*============================*/
 
   /*END ATOMS*/
@@ -2929,18 +3116,18 @@
 
   .alertas-header {
     .menu-tablet {
-      display: block;
-    }
-  }
-
-  .perfil-header{
-    .menu-tablet{
       display: none;
     }
   }
 
-  .perfil-header{
-    .menu-desktop{
+  .perfil-header {
+    .menu-tablet {
+      display: none;
+    }
+  }
+
+  .perfil-header {
+    .menu-desktop {
       position: static;
     }
   }
@@ -2951,9 +3138,19 @@
     }
   }
 
+  .alertas-header {
+    .menu-desktop {
+      position: static;
+    }
+
+    .claro-navbar {
+      position: static;
+    }
+  }
+
   .lista-header {
     .menu-tablet {
-      display: block;
+      display: none;
     }
   }
 
@@ -3211,7 +3408,7 @@
     margin-left: 0;
   }
 
-  .aviso-header{
+  .aviso-header {
     padding: 0;
   }
 
@@ -3626,16 +3823,16 @@
   /*End Claro Sports - Organismos */
   /*============================*/
 
-  /*3.9 - Form Signup - Organismos*/
+  /*3.7 - Form Signup - Organismos*/
   .login-form {
-    display:flex;
+    display: flex;
     justify-content: center;
     height: auto;
   }
   /*End Form Sign*/
   /*============================*/
 
-  /*4.0 - Index - Organismos*/
+  /*3.8 - Index - Organismos*/
   .logo-container {
     padding-top: 72px;
     padding-bottom: 84px;
@@ -3644,7 +3841,7 @@
   /*============================*/
 
   /*============================*/
-  /*4.1 - Aviso de Privacidad - Organismos*/
+  /*3.9 - Aviso de Privacidad - Organismos*/
   .tamaño-aviso-terminos {
     width: 84%;
     height: auto;
@@ -3660,30 +3857,69 @@
   /*End Aviso de Privacidad*/
   /*============================*/
 
-      /*============================*/
-  /*4.2 - Login - Organismos*/
-  .login-container{
+  /*============================*/
+  /*3.10 - Login - Organismos*/
+  .login-container {
     padding-top: 4%;
     padding-bottom: 4%;
   }
-    /*End Login*/
+  /*End Login*/
   /*============================*/
 
   /*============================*/
-  /*4.3 - Términos - Organismos*/
-  .terminos-container{
+  /*3.11 - Términos - Organismos*/
+  .terminos-container {
     padding-top: 4%;
     padding-bottom: 4%;
   }
-    /*End Términos*/
+  /*End Términos*/
   /*============================*/
 
   /*============================*/
-  /*4.4 - Mi perfil - Organismos*/
-    .perfil-container{
-      padding-bottom: 50px;
-    }
+  /*3.12 - Mi perfil - Organismos*/
+  .perfil-container {
+    padding-bottom: 50px;
+  }
   /*End Mi perfil*/
+  /*============================*/
+
+  /*3.13 - Mi Lista - Organismos*/
+  .mi-lista-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .list-item-container {
+    display: flex;
+    padding: 75px 0;
+    border-bottom: solid 1px #a6a8a8;
+  }
+
+  .myList-details-container {
+    width: 61%;
+    padding: 0;
+  }
+
+  .myList-details-mobile {
+    display: none;
+  }
+
+  .myList-details-tablet {
+    display: none;
+  }
+
+  .myList-details-desktop {
+    display: block;
+  }
+  /*End Mi Lista*/
+  /*============================*/
+
+  /*============================*/
+  /*3.14 - Alertas - Organismos*/
+  .alertas-container {
+    padding-top: 50px;
+  }
+  /*End Alertas*/
   /*============================*/
 }
 
@@ -3886,7 +4122,7 @@
     padding-right: 9px !important;
   }
 
-  .fondo{
+  .fondo {
     background: url(../../../images/paises/haryypotter.png);
     background-position: center;
     background-attachment: fixed;
@@ -4063,7 +4299,7 @@
   /*-----------------------------*/
 
   /*-----------------------------*/
-  /*1.67Sinópsis -  Átomos  */
+  /*1.7 Sinópsis -  Átomos  */
   .synopsis-section-title {
     font-size: 60px;
     padding: 85px 0;
@@ -4113,7 +4349,7 @@
 
   /*============================*/
   /*1.9 - Mi perfil - Átomos*/
-  .perfil-container{
+  .perfil-container {
     .fondolog {
       padding-bottom: 5%;
       padding-top: 5%;
@@ -4124,9 +4360,11 @@
     top: 90%;
   }
 
-  .ubicacion5{
+  .ubicacion5 {
     top: 85%;
-  } 
+  }
+
+
   /*End Mi perfil - Átomos*/
   /*============================*/
 
@@ -4143,7 +4381,56 @@
   .myList-details-container .schedule {
     font-size: 14px;
   }
-    /*End Mi Lista - Átomos*/
+
+  .lista-content .shadow1 {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0px;
+  }
+
+  .list-item-container .poster {
+    width: 34%;
+    margin-right: 5%;
+  }
+
+  .myList-details-container .rating {
+    font-size: 18px;
+  }
+
+  .myList-details-container {
+    .schedule-days {
+      font-size: 16px;
+    }
+
+    .schedule {
+      font-size: 25px;
+    }
+  }
+
+  .myList-details-desktop .schedule-add {
+    margin-bottom: 25px;
+  }
+
+  .my-list-title {
+    padding-top: 100px;
+  }
+
+  .lista-header .navbar-item {
+    color: #767373;
+}
+
+  .my-list-title, .list-title-section {
+    font-size: 30px;
+  }
+
+  .list-title-section {
+    padding-top: 55px;
+  }
+
+  .lista-header .login {
+    background: transparent;
+  }
+  /*End Mi Lista - Átomos*/
   /*============================*/
 
   /***  2. - MOLECULES  ***/
@@ -4417,7 +4704,7 @@
     display: block;
   }
 
-  .aviso-header{
+  .aviso-header {
     padding: 0;
   }
 
@@ -4773,7 +5060,17 @@
 
   .alertas-header {
     .menu-tablet {
-      display: block;
+      display: none;
+    }
+  }
+
+  .alertas-header {
+    .menu-desktop {
+      position: static;
+    }
+
+    .claro-navbar {
+      position: static;
     }
   }
 
@@ -4791,7 +5088,7 @@
 
   .lista-header {
     .menu-tablet {
-      display: block;
+      display: none;
     }
   }
 
@@ -4875,10 +5172,9 @@
 
   /*3.8 - Form Signup - Organismos*/
   .login-form {
-    display:flex;
+    display: flex;
     justify-content: center;
     height: auto;
- 
   }
   /*End Form Sign*/
   /*============================*/
@@ -4908,38 +5204,67 @@
   /*End Aviso de Privacidad*/
   /*============================*/
 
-    /*============================*/
+  /*============================*/
   /*3.11 - Login - Organismos*/
-  .login-container{
+  .login-container {
     padding-top: 4%;
     padding-bottom: 4%;
   }
-    /*End Login*/
+  /*End Login*/
   /*============================*/
 
-      /*============================*/
+  /*============================*/
   /*3.12 - Términos - Organismos*/
-  .terminos-container{
+  .terminos-container {
     padding-top: 4%;
     padding-bottom: 4%;
   }
-    /*End Términos*/
+  /*End Términos*/
   /*============================*/
 
-    /*============================*/
+  /*============================*/
   /*3.13 - Mi perfil - Organismos*/
-  .perfil-container{
+  .perfil-container {
     padding-bottom: 50px;
   }
-/*End Mi perfil*/
-/*============================*/
+  /*End Mi perfil*/
+  /*============================*/
 
   /*============================*/
   /*3.14 - Mi Lista - Organismos*/
-  .mi-lista-container{
-    margin-top: 50px;
+  .mi-lista-container {
+    padding-top: 40px;
     margin-bottom: 50px;
   }
-    /*End Mi Lista*/
-    /*============================*/
+
+  .list-item-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 75px 0;
+    border-bottom: solid 1px #a6a8a8;
+  }
+
+  .myList-details-mobile {
+    display: none;
+  }
+
+  .myList-details-desktop {
+    display: block;
+  }
+
+  .myList-details-container {
+    width: 61%;
+    padding: 0;
+  }
+  /*End Mi Lista*/
+  /*============================*/
+
+  /*============================*/
+  /*3.14 - Alertas - Organismos*/
+  .alertas-container {
+    padding-top: 50px;
+  }
+  /*End Alertas*/
+  /*============================*/
 }
