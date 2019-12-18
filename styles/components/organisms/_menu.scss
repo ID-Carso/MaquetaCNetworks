@@ -80,13 +80,12 @@
 }
 
 .categorias-menu {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  z-index: 16;
-  transform: translate(-100%);
-  transition: all 0.3s ease-out;
+  .sidebar-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .tache_button {
@@ -106,8 +105,8 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.9);
-  z-index: 16;
-  transform: translate(-100%);
+  z-index: -1;
+  opacity: 0;
   transition: all 0.3s ease-out;
 }
 
@@ -115,5 +114,12 @@
   .menu-tablet {
     padding: calc(3% + 4px) calc(8% - 10px) calc(3% + 4px) calc(8% - 10px);
     background: #4dd0e1;
+  }
+}
+
+.configuracion-header {
+  .menu-perfil {
+    position: static;
+    padding: 1px;
   }
 }

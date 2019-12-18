@@ -42,9 +42,14 @@
   z-index: 1;
 }
 
+.categorias-menu {
+  .sidebar-item {
+    width: auto;
+    text-align: center;
+  }
+}
+
 .sidebar-item {
-  display: flex;
-  align-items: center;
   width: 80%;
   margin: auto;
   padding: 15px 0px;

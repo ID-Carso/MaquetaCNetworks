@@ -30,7 +30,7 @@ $(document).ready(function() {
   }
   /*End función elegir un país y mostrar la bandera en navbar */
 
-  $(".singup-button").click(function() {
+  $(".signup-button").click(function() {
     var usuario, correo, password, expresion;
     const nodatos1 = $(".nodatos");
     const nocorreo1 = $(".nocorreo");
@@ -456,7 +456,7 @@ $(document).ready(function() {
   const menu = document.querySelector(".menu-responsive");
   const menu_categorias = document.querySelector(".categorias-flecha");
   const hamburguer = document.querySelector(".hamburguer-menu");
-  const categorias = document.querySelector(".categorias-menu");
+  const categorias = $(".categorias-menu");
   const body = $("body");
   const html = $("html");
   const sidebar_content = document.querySelector(".sidebar-content");
@@ -527,7 +527,10 @@ $(document).ready(function() {
   }
   if (menu_categorias) {
     menu_categorias.addEventListener("click", function(e) {
-      categorias.style.transform = "translate(0%)";
+      categorias.css({
+        zIndex: "10",
+        opacity: "1"
+      });
       html.css({
         position: "relative",
         overflow: "hidden",
@@ -544,7 +547,10 @@ $(document).ready(function() {
     });
 
     tache_button.addEventListener("click", function() {
-      categorias.style.transform = "translate(-100%)";
+      categorias.css({
+        zIndex: "-1",
+        opacity: "0"
+      });
       html.css({
         position: "initial",
         overflow: "auto",

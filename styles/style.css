@@ -1246,7 +1246,6 @@ h6 {
   text-align: center;
   color: #717272;
   margin-top: 0px;
-  text-align: left;
   margin-bottom: 0;
 }
 
@@ -1848,9 +1847,9 @@ h6 {
     margin-bottom: 20px;
   }
   .shadow1 {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    border-radius: 0px;
+    -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
+            box-shadow: 3px 3px 5px 6px #5c1864;
+    border-radius: 15px;
   }
 }
 
@@ -3781,13 +3780,12 @@ input[type="radio"]:checked + .mujer-estilo {
   z-index: 1;
 }
 
+.categorias-menu .sidebar-item {
+  width: auto;
+  text-align: center;
+}
+
 .sidebar-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 80%;
   margin: auto;
   padding: 15px 0px;
@@ -4564,6 +4562,10 @@ input[type="radio"]:checked + .mujer-estilo {
   display: none;
 }
 
+.configuracion-container {
+  padding-top: 100px;
+}
+
 .schedule-poster {
   width: 50%;
   margin-right: 5%;
@@ -4844,16 +4846,12 @@ input[type="radio"]:checked + .mujer-estilo {
   padding: calc(3% + 4px) calc(8% - 10px) calc(3% + 4px) calc(8% - 10px);
 }
 
-.categorias-menu {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  z-index: 16;
-  -webkit-transform: translate(-100%);
-          transform: translate(-100%);
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+.categorias-menu .sidebar-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .tache_button {
@@ -4872,9 +4870,8 @@ input[type="radio"]:checked + .mujer-estilo {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.9);
-  z-index: 16;
-  -webkit-transform: translate(-100%);
-          transform: translate(-100%);
+  z-index: -1;
+  opacity: 0;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -4882,6 +4879,11 @@ input[type="radio"]:checked + .mujer-estilo {
 .lista-header .menu-tablet {
   padding: calc(3% + 4px) calc(8% - 10px) calc(3% + 4px) calc(8% - 10px);
   background: #4dd0e1;
+}
+
+.configuracion-header .menu-perfil {
+  position: static;
+  padding: 1px;
 }
 
 .section-home-footer {
@@ -5289,7 +5291,20 @@ input[type="radio"]:checked + .mujer-estilo {
   .list-title-section {
     font-size: 30px;
   }
+  .lista-content .shadow1 {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0px;
+  }
   /*End Mi Lista - Átomos*/
+  /*============================*/
+  /*============================*/
+  /*1.10 - Configuración - Átomos*/
+  .configuracion-container .fondolog {
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+  /*End Configuración - Átomos*/
   /*============================*/
   /*2.- MOLECULES*/
   /*============================*/
@@ -5692,7 +5707,7 @@ input[type="radio"]:checked + .mujer-estilo {
   /*End Programación - Organismos*/
   /*============================*/
   /*============================*/
-  /*3.6 - Sinópsis - Organismos*/
+  /*3.7 - Sinópsis - Organismos*/
   .synopsis-buttons-tablet-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5717,7 +5732,7 @@ input[type="radio"]:checked + .mujer-estilo {
   /*End Sinópsis - Organismos*/
   /*============================*/
   /*============================*/
-  /*3.6 - Mi perfil- Organismos*/
+  /*3.8 - Mi perfil- Organismos*/
   .avatar-header .menu-perfil {
     display: none;
   }
@@ -5765,7 +5780,7 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   /*End Mi Perfil - Organismos*/
   /*============================*/
-  /*3.7 - Claro Sports*/
+  /*3.9 - Claro Sports*/
   .marca-header .header {
     height: auto;
     background: transparent;
@@ -5773,7 +5788,7 @@ input[type="radio"]:checked + .mujer-estilo {
   /*End Claro Sports*/
   /*============================*/
   /*============================*/
-  /*3.8 - Form Signup - Organismos*/
+  /*3.10 - Form Signup - Organismos*/
   .login-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5786,7 +5801,7 @@ input[type="radio"]:checked + .mujer-estilo {
   /*End Form Sign*/
   /*============================*/
   /*============================*/
-  /*3.9 - Index - Organismos*/
+  /*3.11 - Index - Organismos*/
   .logo-container {
     padding-top: 79px;
     padding-bottom: 90px;
@@ -5810,9 +5825,6 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*============================*/
   /*3.11 - Login - Organismos*/
-  .login-container {
-    padding-top: 4%;
-  }
   /*End Login*/
   /*============================*/
   /*============================*/
@@ -5863,11 +5875,19 @@ input[type="radio"]:checked + .mujer-estilo {
   /*End Mi Lista*/
   /*============================*/
   /*============================*/
-  /*3.12 - Alertas - Organismos*/
+  /*3.13 - Alertas - Organismos*/
   .alertas-container {
     padding-top: 50px;
   }
   /*End Alertas*/
+  /*============================*/
+  /*============================*/
+  /*3.14 - Configuración - Organismos*/
+  .configuracion-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  /*End Configuración*/
   /*============================*/
 }
 
@@ -6213,7 +6233,7 @@ input[type="radio"]:checked + .mujer-estilo {
   /*End Claro Cinema - átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
-  /*1.5 - Programación - Átomos */
+  /*1.6 - Programación - Átomos */
   .month {
     margin: 40px 0;
     font-size: 30px;
@@ -6255,7 +6275,7 @@ input[type="radio"]:checked + .mujer-estilo {
   /*End Programación - átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
-  /*1.5 - Sinópsis - Átomos */
+  /*1.7 - Sinópsis - Átomos */
   .synopsis-title {
     font-size: 30px;
     font-family: "Montserrat-SemiBold";
@@ -6289,13 +6309,13 @@ input[type="radio"]:checked + .mujer-estilo {
   /*End Sinópsis - átomos*/
   /*-----------------------------*/
   /*============================*/
-  /*1.7 - Datos - Átomos*/
+  /*1.8 - Datos - Átomos*/
   .fondolog {
     height: auto;
   }
   /*End Datos - Átomos*/
   /*============================*/
-  /*1.8 - Mi perfil - Átomos*/
+  /*1.9 - Mi perfil - Átomos*/
   .perfil-container .fondolog {
     padding-bottom: 10%;
     padding-top: 10%;
@@ -6309,7 +6329,7 @@ input[type="radio"]:checked + .mujer-estilo {
   /*End Mi perfil - Átomos*/
   /*============================*/
   /*============================*/
-  /*1.9 - Mi Lista - Átomos*/
+  /*1.10 - Mi Lista - Átomos*/
   .image-list-points {
     top: 1%;
   }
@@ -6353,6 +6373,13 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   /*End Mi Lista - Átomos*/
   /*============================*/
+  /*============================*/
+  /*1.11 - Configuración - Átomos*/
+  .configuracion-container .fondolog {
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+  /*End Configuración - Átomos*/
   /***  2. MOLECULES  ***/
   /*-----------------------------*/
   /*2.1 - General - Moleculas*/
@@ -6962,6 +6989,14 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   /*End Alertas*/
   /*============================*/
+  /*============================*/
+  /*3.15 - Configuración - Organismos*/
+  .configuracion-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  /*End Configuración*/
+  /*============================*/
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
@@ -7388,6 +7423,14 @@ input[type="radio"]:checked + .mujer-estilo {
     background: transparent;
   }
   /*End Mi Lista - Átomos*/
+  /*============================*/
+  /*============================*/
+  /*1.11 - Configuración - Átomos*/
+  .configuracion-container .fondolog {
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+  /*End Configuración - Átomos*/
   /*============================*/
   /*END ATOMS*/
   /***  2.- MOLECULES  ***/
@@ -8066,6 +8109,23 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   /*End Alertas*/
   /*============================*/
+  /*============================*/
+  /*3.15 - Configuración - Organismos*/
+  .configuracion-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .configuracion-header .menu-tablet {
+    display: none;
+  }
+  .configuracion-header .menu-desktop {
+    position: static;
+  }
+  .configuracion-header .claro-navbar {
+    position: static;
+  }
+  /*End Configuración*/
+  /*============================*/
 }
 
 @media only screen and (min-width: 1900px) {
@@ -8236,6 +8296,12 @@ input[type="radio"]:checked + .mujer-estilo {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .shadow1 {
+    -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
+            box-shadow: 3px 3px 5px 6px #5c1864;
+    border-radius: 15px;
+    margin-top: 4%;
   }
   /*End General - Átomos*/
   /*-----------------------------*/
@@ -8466,6 +8532,14 @@ input[type="radio"]:checked + .mujer-estilo {
     background: transparent;
   }
   /*End Mi Lista - Átomos*/
+  /*============================*/
+  /*============================*/
+  /*1.11 - Configuración - Átomos*/
+  .configuracion-container .fondolog {
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+  /*End Configuración - Átomos*/
   /*============================*/
   /***  2. - MOLECULES  ***/
   /*-----------------------------*/
@@ -8986,7 +9060,7 @@ input[type="radio"]:checked + .mujer-estilo {
     position: static;
   }
   .perfil-header .menu-tablet {
-    display: block;
+    display: none;
   }
   .configuracion-header .menu-tablet {
     display: block;
@@ -9134,6 +9208,23 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-top: 50px;
   }
   /*End Alertas*/
+  /*============================*/
+  /*============================*/
+  /*3.15 - Configuración - Organismos*/
+  .configuracion-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .configuracion-header .menu-tablet {
+    display: none;
+  }
+  .configuracion-header .menu-desktop {
+    position: static;
+  }
+  .configuracion-header .claro-navbar {
+    position: static;
+  }
+  /*End Configuración*/
   /*============================*/
 }
 /*# sourceMappingURL=style.css.map */

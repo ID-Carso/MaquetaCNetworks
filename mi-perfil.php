@@ -101,7 +101,7 @@
     </header>
 
     <div class="perfil-container">
-        <div class="col-sm-12 no-gutters col-md-4 mx-auto no-gutters col-lg-4 col-xl-3 shadow1 fondolog">
+        <div class="col-sm-12 no-gutters col-md-6 mx-auto no-gutters col-lg-4 col-xl-4 shadow1 fondolog">
             <img src="images/registro/group-10.svg" class="ubicacion5" />
             <img src="images/config/puntos.svg" class="ubicacionpuntos">
 

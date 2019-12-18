@@ -506,7 +506,25 @@
   .list-title-section {
     font-size: 30px;
   }
+
+  .lista-content{
+    .shadow1{
+      box-shadow: none;
+      border-radius: 0px;
+    }
+  }
   /*End Mi Lista - Átomos*/
+  /*============================*/
+
+    /*============================*/
+  /*1.10 - Configuración - Átomos*/
+  .configuracion-container{
+    .fondolog{
+      padding-bottom: 10%;
+      padding-top: 10%;
+    } 
+  }
+    /*End Configuración - Átomos*/
   /*============================*/
 
   /*2.- MOLECULES*/
@@ -996,7 +1014,7 @@
   /*============================*/
 
   /*============================*/
-  /*3.6 - Sinópsis - Organismos*/
+  /*3.7 - Sinópsis - Organismos*/
   .synopsis-buttons-tablet-container {
     display: flex;
     justify-content: space-between;
@@ -1017,7 +1035,7 @@
   /*============================*/
 
   /*============================*/
-  /*3.6 - Mi perfil- Organismos*/
+  /*3.8 - Mi perfil- Organismos*/
 
   .avatar-header {
     .menu-perfil {
@@ -1091,7 +1109,7 @@
 
   /*End Mi Perfil - Organismos*/
   /*============================*/
-  /*3.7 - Claro Sports*/
+  /*3.9 - Claro Sports*/
   .marca-header .header {
     height: auto;
     background: transparent;
@@ -1100,7 +1118,7 @@
   /*============================*/
 
   /*============================*/
-  /*3.8 - Form Signup - Organismos*/
+  /*3.10 - Form Signup - Organismos*/
   .login-form {
     display: flex;
     justify-content: center;
@@ -1110,7 +1128,7 @@
   /*============================*/
 
   /*============================*/
-  /*3.9 - Index - Organismos*/
+  /*3.11 - Index - Organismos*/
   .logo-container {
     padding-top: 79px;
     padding-bottom: 90px;
@@ -1138,9 +1156,6 @@
 
   /*============================*/
   /*3.11 - Login - Organismos*/
-  .login-container {
-    padding-top: 4%;
-  }
   /*End Login*/
   /*============================*/
 
@@ -1195,11 +1210,20 @@
   /*============================*/
 
   /*============================*/
-  /*3.12 - Alertas - Organismos*/
+  /*3.13 - Alertas - Organismos*/
   .alertas-container {
     padding-top: 50px;
   }
   /*End Alertas*/
+  /*============================*/
+
+  /*============================*/
+  /*3.14 - Configuración - Organismos*/
+  .configuracion-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+    /*End Configuración*/
   /*============================*/
 }
 
@@ -1618,7 +1642,7 @@
   /*-----------------------------*/
 
   /*-----------------------------*/
-  /*1.5 - Programación - Átomos */
+  /*1.6 - Programación - Átomos */
   .month {
     margin: 40px 0;
     font-size: 30px;
@@ -1672,7 +1696,7 @@
   /*-----------------------------*/
 
   /*-----------------------------*/
-  /*1.5 - Sinópsis - Átomos */
+  /*1.7 - Sinópsis - Átomos */
 
   .synopsis-title {
     font-size: 30px;
@@ -1715,7 +1739,7 @@
   /*-----------------------------*/
 
   /*============================*/
-  /*1.7 - Datos - Átomos*/
+  /*1.8 - Datos - Átomos*/
   .fondolog {
     height: auto;
   }
@@ -1723,7 +1747,7 @@
   /*End Datos - Átomos*/
 
   /*============================*/
-  /*1.8 - Mi perfil - Átomos*/
+  /*1.9 - Mi perfil - Átomos*/
   .perfil-container {
     .fondolog {
       padding-bottom: 10%;
@@ -1742,7 +1766,7 @@
   /*============================*/
 
   /*============================*/
-  /*1.9 - Mi Lista - Átomos*/
+  /*1.10 - Mi Lista - Átomos*/
   .image-list-points {
     top: 1%;
   }
@@ -1803,6 +1827,16 @@
 
   /*End Mi Lista - Átomos*/
   /*============================*/
+
+      /*============================*/
+  /*1.11 - Configuración - Átomos*/
+  .configuracion-container{
+    .fondolog{
+      padding-bottom: 10%;
+      padding-top: 10%;
+    }
+  }
+    /*End Configuración - Átomos*/
 
   /***  2. MOLECULES  ***/
 
@@ -2549,6 +2583,15 @@
   }
   /*End Alertas*/
   /*============================*/
+
+    /*============================*/
+  /*3.15 - Configuración - Organismos*/
+  .configuracion-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+    /*End Configuración*/
+  /*============================*/
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
@@ -3087,6 +3130,17 @@
     background: transparent;
 }
   /*End Mi Lista - Átomos*/
+  /*============================*/
+
+      /*============================*/
+  /*1.11 - Configuración - Átomos*/
+  .configuracion-container{
+    .fondolog{
+      padding-bottom: 10%;
+      padding-top: 10%;
+    } 
+  }
+    /*End Configuración - Átomos*/
   /*============================*/
 
   /*END ATOMS*/
@@ -3921,6 +3975,30 @@
   }
   /*End Alertas*/
   /*============================*/
+
+    /*============================*/
+  /*3.15 - Configuración - Organismos*/
+  .configuracion-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .configuracion-header{
+    .menu-tablet{
+      display: none;
+    }
+
+    .menu-desktop{
+      position: static;
+    }
+
+    .claro-navbar{
+      position: static;
+    }
+  } 
+    /*End Configuración*/
+  /*============================*/
+ 
 }
 
 @media only screen and (min-width: 1900px) {
@@ -4128,6 +4206,12 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .shadow1 {
+    box-shadow: 3px 3px 5px 6px #5c1864;
+    border-radius: 15px;
+    margin-top: 4%;
   }
 
   /*End General - Átomos*/
@@ -4431,6 +4515,17 @@
     background: transparent;
   }
   /*End Mi Lista - Átomos*/
+  /*============================*/
+
+        /*============================*/
+  /*1.11 - Configuración - Átomos*/
+  .configuracion-container{
+    .fondolog{
+      padding-bottom: 10%;
+      padding-top: 10%;
+    } 
+  }
+    /*End Configuración - Átomos*/
   /*============================*/
 
   /***  2. - MOLECULES  ***/
@@ -5076,7 +5171,7 @@
 
   .perfil-header {
     .menu-tablet {
-      display: block;
+      display: none;
     }
   }
 
@@ -5266,5 +5361,28 @@
     padding-top: 50px;
   }
   /*End Alertas*/
+  /*============================*/
+
+    /*============================*/
+  /*3.15 - Configuración - Organismos*/
+  .configuracion-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .configuracion-header{
+    .menu-tablet{
+      display: none;
+    }
+
+    .menu-desktop{
+      position: static;
+    }
+
+    .claro-navbar{
+      position: static;
+    }
+  }
+    /*End Configuración*/
   /*============================*/
 }

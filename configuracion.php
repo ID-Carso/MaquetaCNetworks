@@ -16,7 +16,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="slick-master/slick/slick.js"></script>
   <script src="./js/jquery.browser.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="./js/lib/rellax.js"></script>
+  <script src="./js/main.js" type="module"></script>
 </head>
 
 <body class="fondo">
@@ -85,45 +86,16 @@
           <a href="index.html" class="login-item"><img class="login-country" src="" alt="" /></a>
         </div>
       </div>
-      <div class="claro-navbar">
-        <div>
-          <a href="claro-canal.php" class="navbar-link text-decoration-none">
-            <p class="navbar-item">Canal Claro</p>
-          </a>
-        </div>
-        <div>
-          <a href="concert-channel.php" class="navbar-link text-decoration-none">
-            <p class="navbar-item">Concert Channel</p>
-          </a>
-        </div>
-        <div>
-          <a href="claro-cinema.php" class="navbar-link text-decoration-none">
-            <p class="navbar-item">Claro Cinema</p>
-          </a>
-        </div>
-        <div>
-          <a href="nuestra-vision.php" class="navbar-link text-decoration-none">
-            <p class="navbar-item">Nuestra Visión</p>
-          </a>
-        </div>
-        <div>
-          <a href="claro-sports.php" class="navbar-link text-decoration-none">
-            <p class="navbar-item">Claro Sports</p>
-          </a>
-        </div>
-        <div>
-          <a href="programacion.php" class="navbar-link text-decoration-none">
-            <p class="navbar-item">Programación</p>
-          </a>
-        </div>
-      </div>
     </nav>
+    <?php
+    include 'menu-desktop.php';
+    ?>
   </header>
-  <div style="padding-top: 3%">
-    <div class="col-sm-12 no-gutters col-md-8 offset-md-2 no-gutters col-lg-4 offset-lg-4 col-xl-3 shadow1 fondolog">
+  <div class="configuracion-container">
+    <div class="col-sm-12 no-gutters col-md-6 mx-auto no-gutters col-lg-4 col-xl-4 shadow1 fondolog">
       <img src="images/registro/group-10.svg" class="ubicacion5" />
       <img src="images/config/puntos.svg" class="ubicacionpuntos" />
-      <br /><br /><br /><br /><br /><br />
+
       <div class="row ma-no centro">
         <div class="col-sm-12 no-gap">
           <div class="tamaño2 centro">
