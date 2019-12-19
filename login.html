@@ -20,7 +20,7 @@
 <body class="fondo">
   <div class="login-container">
     <div class="login-form">
-      <div class="col-sm-12 no-gutters col-md-8  no-gutters col-lg-4  col-xl-3 shadow1 fondolog">
+      <div class="col-sm-12 no-gutters col-md-6  no-gutters col-lg-4  col-xl-3 shadow1 fondolog">
         <img src="images/registro/group-10.svg" class="ubicacion5" />
 
         <div class="row ma-no ">
@@ -32,69 +32,73 @@
           </div>
         </div>
         <br />
-        <form method="POST">
-          <div class="row ma-no centro">
-            <div class="col-sm-12 no-gap">
-              <div class="tamaño2">
-                <input class="insert-data" type="text" placeholder="Correo electrónico" id="login-email" />
+        <div class="col-10 col-sm-8 col-md-8 col-lg-9 col-xl-9 mx-auto">
+          <form method="POST">
+            <div class="row ma-no centro">
+              <div class="col-sm-12 no-gap">
+                <div class="tamaño2">
+                  <input class="insert-data" type="text" placeholder="Correo electrónico" id="login-email" />
 
-                <img src="images/registro/group-12.svg" class="ubicacion3" />
-                <p class="correo-valido" id="error_email">
-                  Correo válido
-                  <img src="images/registro/alerta.svg" class="error" />
+                  <img src="images/registro/group-12.svg" class="ubicacion3" />
+                  <p class="correo-valido" id="error_email">
+                    Correo válido
+                    <img src="images/registro/alerta.svg" class="error" />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="row ma-no centro">
+              <div class=" col-sm-12 no-gap">
+                <div class="tamaño2 centro">
+                  <input class="insert-data" type="password" id="login-password" name="login-password"
+                    placeholder="Contraseña" autocomplete="off" />
+                  <img src="images/registro/eye.svg" class="ubicacion4" />
+
+                  <p class="caracteres-min">
+                    8 caractéres mínimo
+                    <img src="images/registro/listo.svg" class="listo" />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="row ma-no centro margin-top-por">
+              <div class="col-sm-12 d-flex  justify-content-center align-items-center">
+                <input type="checkbox" id="cuenta" />
+                <label for="cuenta">Recordar cuenta</label>
+              </div>
+            </div>
+
+            <div class="row ma-no centro">
+              <div class="col-sm-12">
+                <a href="mi-perfil.php"> <button type="button" class="login-button">INGRESAR</button></a>
+                <p class="nodatos">
+                  Aún no has ingresado
+                  datos <img src="images/registro/alerta.svg" />
                 </p>
               </div>
             </div>
-          </div>
+          </form>
           <br />
           <div class="row ma-no centro">
-            <div class=" col-sm-12 no-gap">
-              <div class="tamaño2 centro">
-                <input class="insert-data" type="password" id="login-password" name="login-password"
-                  placeholder="Contraseña" autocomplete="off" />
-                <img src="images/registro/eye.svg" class="ubicacion4" />
-
-                <p class="caracteres-min">
-                  8 caractéres mínimo
-                  <img src="images/registro/listo.svg" class="listo" />
-                </p>
-              </div>
-            </div>
-          </div>
-          <br />
-          <div class="row ma-no centro margin-top-por">
-            <div class="col-sm-12 d-flex  justify-content-center align-items-center">
-              <input type="checkbox" id="cuenta" />
-              <label for="cuenta">Recordar cuenta</label>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <p class="contra">¿Olvidaste la contraseña?</p>
+              <hr class="log" />
+              <p class="nocuenta">¿No tienes cuenta?</p>
             </div>
           </div>
 
           <div class="row ma-no centro">
-            <div class="col-sm-12">
-              <a href="mi-perfil.php"> <button type="button" class="login-button">INGRESAR</button></a>
-              <p class="nodatos">
-                Aún no has ingresado
-                datos <img src="images/registro/alerta.svg" />
-              </p>
+            <div class="col-sm-12 signup-button-container">
+              <a href="registro.html"><button type="button" class="signup-button">
+                  REGÍSTRATE
+                </button></a>
             </div>
-          </div>
-        </form>
-        <br />
-        <div class="row ma-no centro">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <p class="contra">¿Olvidaste la contraseña?</p>
-            <hr class="log" />
-            <p class="nocuenta">¿No tienes cuenta?</p>
           </div>
         </div>
 
-        <div class="row ma-no centro">
-          <div class="col-sm-12 signup-button-container">
-            <a href="registro.html"><button type="button" class="signup-button">
-                REGÍSTRATE
-              </button></a>
-          </div>
-        </div>
+
 
       </div>
     </div>

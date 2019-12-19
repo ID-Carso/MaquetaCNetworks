@@ -6,7 +6,7 @@
   -webkit-appearance: none;
   appearance: none;
   background-clip: padding-box;
-  width: 85%;
+  width: 100%;
   height: 44px;
   background-color: $textWhite;
   padding: 1px;
@@ -18,7 +18,6 @@
   border-bottom: solid 1px $bordergray;
   font-weight: bold;
   outline: none !important;
-  text-transform: lowercase;
 }
 
 .insert-data:focus {
@@ -93,7 +92,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .tamaño2 {
-  width: 307px;
   height: 64px;
   margin: auto;
   position: relative;

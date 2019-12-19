@@ -351,7 +351,7 @@
   line-height: normal;
   letter-spacing: normal;
   color: $textgray;
-  margin-left: 3%;
+  margin-bottom: 0;
 }
 
 .contra:hover {
@@ -464,7 +464,6 @@
   text-align: center;
   color: $txtcontramin;
   text-align: left;
-  margin-left: 7%;
   margin-top: 3%;
 }
 
@@ -480,7 +479,6 @@
   text-align: center;
   color: $txtcontramin;
   text-align: left;
-  margin-left: 7%;
   margin-top: 3%;
 }
 
@@ -730,7 +728,6 @@
   line-height: normal;
   letter-spacing: normal;
   color: #ff0007;
-  margin-left: 7%;
 }
 
 .day-text,
@@ -1128,4 +1125,20 @@
   text-align: center;
   padding: 20px 0;
   text-transform: uppercase;
+}
+
+.re-password-title {
+  color: $txtmodal;
+  font-size: $titleSection;
+  font-family: $montserratSemiBold;
+  text-align: center;
+  padding: 16% 0px 4%;
+}
+
+.re-password-text {
+  font-family: $montserratRegular;
+  text-align: center;
+  color: $txtmodal;
+  font-size: $displayTextTwo;
+  margin-bottom: 27%;
 }

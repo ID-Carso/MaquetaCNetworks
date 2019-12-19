@@ -332,7 +332,7 @@ h6 {
 }
 
 .advertising-subtitle {
-  font-size: 17.5px;
+  font-size: 17px;
   color: #00caf5;
   font-family: "Montserrat-Black";
 }
@@ -579,7 +579,7 @@ h6 {
   line-height: normal;
   letter-spacing: normal;
   color: #717272;
-  margin-left: 3%;
+  margin-bottom: 0;
 }
 
 .contra:hover {
@@ -701,7 +701,6 @@ h6 {
   text-align: center;
   color: #666262;
   text-align: left;
-  margin-left: 7%;
   margin-top: 3%;
 }
 
@@ -717,7 +716,6 @@ h6 {
   text-align: center;
   color: #666262;
   text-align: left;
-  margin-left: 7%;
   margin-top: 3%;
 }
 
@@ -986,7 +984,6 @@ h6 {
   line-height: normal;
   letter-spacing: normal;
   color: #ff0007;
-  margin-left: 7%;
 }
 
 .day-text,
@@ -1378,6 +1375,22 @@ h6 {
   text-transform: uppercase;
 }
 
+.re-password-title {
+  color: #373737;
+  font-size: 24px;
+  font-family: "Montserrat-SemiBold";
+  text-align: center;
+  padding: 16% 0px 4%;
+}
+
+.re-password-text {
+  font-family: "Montserrat-Regular";
+  text-align: center;
+  color: #373737;
+  font-size: 17px;
+  margin-bottom: 27%;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -1430,7 +1443,7 @@ h6 {
 }
 
 .login-button {
-  width: 288px;
+  width: 100%;
   height: 44px;
   border-radius: 21.5px;
   background-color: #0fd7f2;
@@ -1447,7 +1460,7 @@ h6 {
 }
 
 .signup-button {
-  width: 288px;
+  width: 100%;
   height: 44px;
   border-radius: 21.5px;
   outline: none !important;
@@ -1981,7 +1994,7 @@ h6 {
 .ubicacion3 {
   position: absolute;
   right: 1%;
-  top: 66%;
+  top: 80%;
 }
 
 .ubicacion4 {
@@ -2350,7 +2363,7 @@ h6 {
   -moz-appearance: none;
        appearance: none;
   background-clip: padding-box;
-  width: 85%;
+  width: 100%;
   height: 44px;
   background-color: #ffffff;
   padding: 1px;
@@ -2362,7 +2375,6 @@ h6 {
   border-bottom: solid 1px #a1a0a0;
   font-weight: bold;
   outline: none !important;
-  text-transform: lowercase;
 }
 
 .insert-data:focus {
@@ -2442,7 +2454,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .tamaño2 {
-  width: 307px;
   height: 64px;
   margin: auto;
   position: relative;

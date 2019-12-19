@@ -43,77 +43,87 @@
                                 <br>
 
                                 <br>
-
-                                <div class="row ma-no">
-                                        <div class="col-sm-12 col-md-4 offset-md-2">
-                                                <p class="registro">REGÍSTRATE</p>
+                                <div class="col-9 col-sm-10 col-md-8 col-lg-10 col-xl-9 mx-auto">
+                                        <div class="row ma-no">
+                                                <div class="">
+                                                        <p class="registro">REGÍSTRATE</p>
+                                                </div>
                                         </div>
+                                        <br>
+                                        <form method="POST">
+                                                <div class="row ma-no centro">
+                                                        <div class="col-sm-12 no-gap">
+                                                                <div class="tamaño2 centro">
+                                                                        <input class="insert-data" type="text"
+                                                                                id="usuario" name="usuario"
+                                                                                placeholder="Nombre de usuario">
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+                                                <div class="row ma-no centro">
+                                                        <div class="col-sm-12 no-gap">
+                                                                <div class="tamaño2 centro">
+                                                                        <input class="insert-data" type="email"
+                                                                                id="signup-correo" name="correo"
+                                                                                placeholder="Correo electrónico">
+                                                                        <p class="nocorreo"><img
+                                                                                        src="images/registro/alerta.svg">
+                                                                                El
+                                                                                correo no es correcto</p>
+
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+                                                <div class="row ma-no centro">
+                                                        <div class=" col-sm-12 no-gap">
+                                                                <div class="tamaño2 centro">
+                                                                        <input class="insert-data" type="password"
+                                                                                id="signup-password"
+                                                                                name="signup-password"
+                                                                                placeholder="Contraseña">
+                                                                        <img src="images/registro/eye.svg"
+                                                                                class="ubicacion4" />
+
+                                                                        <p class="caracteres-min">8 caractéres mínimo
+                                                                                <img src="images/registro/listo.svg"
+                                                                                        class="listo">
+                                                                        </p>
+
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <br>
+                                                <p class="nodatos"> Aún no has ingresado datos <img
+                                                                src="images/registro/alerta.svg">
+                                                </p>
+                                                <br>
+
+                                                <footer class="txtcontenido">
+
+                                                        <span class="aviso-priv">Al continuar aceptas los</span>
+                                                        <a href="terminos.html">
+                                                                <p class="aviso-priv-blue espacio-bottom">Términos y
+                                                                        condiciones
+                                                        </a> <span class="aviso-priv">asi como el </span> <a
+                                                                href="aviso.html">
+                                                                <span class=" aviso-priv-blue">Aviso de</span></p>
+
+                                                                <span class="aviso-priv-blue">privacidad</span> </a>
+                                                </footer>
+                                                <br>
+                                                <div>
+                                                        <div>
+                                                                <button type="button" class="signup-button"
+                                                                        data-toggle="modal"
+                                                                        data-target="#mensaje">SIGUIENTE</button>
+                                                        </div>
+                                                </div>
+                                        </form>
                                 </div>
-                                <br>
-                                <form method="POST">
-                                        <div class="row ma-no centro">
-                                                <div class="col-sm-12 no-gap">
-                                                        <div class="tamaño2 centro">
-                                                                <input class="insert-data" type="text" id="usuario"
-                                                                        name="usuario" placeholder="Nombre de usuario">
-                                                        </div>
-                                                </div>
-                                        </div>
 
-                                        <div class="row ma-no centro">
-                                                <div class="col-sm-12 no-gap">
-                                                        <div class="tamaño2 centro">
-                                                                <input class="insert-data" type="email"
-                                                                        id="signup-correo" name="correo"
-                                                                        placeholder="Correo electrónico">
-                                                                <p class="nocorreo"><img
-                                                                                src="images/registro/alerta.svg"> El
-                                                                        correo no es correcto</p>
 
-                                                        </div>
-                                                </div>
-                                        </div>
-
-                                        <div class="row ma-no centro">
-                                                <div class=" col-sm-12 no-gap">
-                                                        <div class="tamaño2 centro">
-                                                                <input class="insert-data" type="password"
-                                                                        id="signup-password" name="signup-password"
-                                                                        placeholder="Contraseña">
-                                                                <img src="images/registro/eye.svg" class="ubicacion4" />
-
-                                                                <p class="caracteres-min">8 caractéres mínimo <img
-                                                                                src="images/registro/listo.svg"
-                                                                                class="listo">
-                                                                </p>
-
-                                                        </div>
-                                                </div>
-                                        </div>
-                                        <br>
-                                        <p class="nodatos"> Aún no has ingresado datos <img
-                                                        src="images/registro/alerta.svg">
-                                        </p>
-                                        <br>
-
-                                        <footer class="txtcontenido">
-
-                                                <span class="aviso-priv">Al continuar aceptas los</span>
-                                                <a href="terminos.html">
-                                                        <p class="aviso-priv-blue espacio-bottom">Términos y condiciones
-                                                </a> <span class="aviso-priv">asi como el </span> <a href="aviso.html">
-                                                        <span class=" aviso-priv-blue">Aviso de</span></p>
-
-                                                        <span class="aviso-priv-blue">privacidad</span> </a>
-                                        </footer>
-                                        <br>
-                                        <div class="row ma-no centro">
-                                                <div class="col-sm-12 ">
-                                                        <button type="button" class="signup-button" data-toggle="modal"
-                                                                data-target="#mensaje">SIGUIENTE</button>
-                                                </div>
-                                        </div>
-                                </form>
                                 <br>
                                 <!-- Modal -->
                                 <div class="modal fade " id="mensaje" tabindex="-1" role="dialog"
