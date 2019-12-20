@@ -719,6 +719,14 @@ h6 {
   margin-top: 3%;
 }
 
+.invalid-email {
+  color: red !important;
+}
+
+.valid-email {
+  color: green !important;
+}
+
 .horario-text {
   font-size: 14px;
   font-family: "Montserrat-SemiBold";
@@ -1388,7 +1396,7 @@ h6 {
   text-align: center;
   color: #373737;
   font-size: 17px;
-  margin-bottom: 27%;
+  margin-bottom: 70px;
 }
 
 /*Tamaño de textos - responsive*/
@@ -1671,6 +1679,10 @@ h6 {
 .poster-button:hover,
 .poster-button:focus {
   background: black;
+}
+
+.re-password-button {
+  margin-top: 100px;
 }
 
 /*Tamaño de textos - responsive*/
@@ -2006,7 +2018,9 @@ h6 {
 
 .ubicacion5 {
   position: absolute;
-  top: 100%;
+  top: 90%;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
 }
 
 .ubicacion6 {

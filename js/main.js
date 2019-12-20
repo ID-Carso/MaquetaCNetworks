@@ -1,6 +1,7 @@
 import { gradientMenu } from "./scroll/scroll.js";
 import { ShowHidePassword } from "./form/form.js";
 import { selectCountry } from "./session/session.js";
+import { validateReEmail } from "./form/form.js";
 var programacion_slider;
 var tvConcertSlider;
 $(document).ready(function() {
@@ -132,6 +133,11 @@ $(document).ready(function() {
       ImagenError.css("display", "none");
       CorreoValido.css("color", "#666262");
     }
+  });
+  const searchEmailButton = $("#re-password-button");
+  const inputReEmail = $("#re-password-email");
+  searchEmailButton.click(function() {
+    validateReEmail(inputReEmail);
   });
 
   /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/

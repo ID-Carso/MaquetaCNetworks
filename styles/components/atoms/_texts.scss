@@ -482,6 +482,14 @@
   margin-top: 3%;
 }
 
+.invalid-email {
+  color: red !important;
+}
+
+.valid-email {
+  color: green !important;
+}
+
 .horario-text {
   font-size: 14px;
   font-family: $montserratSemiBold;
@@ -1140,5 +1148,5 @@
   text-align: center;
   color: $txtmodal;
   font-size: $displayTextTwo;
-  margin-bottom: 27%;
+  margin-bottom: 70px;
 }
