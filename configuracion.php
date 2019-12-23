@@ -91,63 +91,65 @@
     include 'menu-desktop.php';
     ?>
   </header>
-  <div class="configuracion-container">
+  <div class="configuracion-container py-5">
     <div class="col-sm-12 no-gutters col-md-6 mx-auto no-gutters col-lg-4 col-xl-4 shadow1 fondolog">
       <img src="images/registro/group-10.svg" class="ubicacion5" />
       <img src="images/config/puntos.svg" class="ubicacionpuntos" />
 
       <div class="row ma-no centro">
         <div class="col-sm-12 no-gap">
-          <div class="tamaño2 centro">
-            <p class="titulos-configuraciones">Configuración</p>
+          <div class="centro">
+            <p class="titulos-configuraciones py-5">Configuración</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 mx-auto col-sm-8 col-md-8 col-lg-8 col-xl-10">
+        <div class="row ma-no centro">
+          <div class="col-sm-12 no-gap">
+            <div class="tamaño2 centro ">
+              <a href="alertas.html">
+                <label class="border-config">
+                  <p class="texto-config">
+                    Alertas
+                    <img class="flechalink-icon" src="images/config/flecha.svg" />
+                  </p>
+                </label>
+              </a>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="row ma-no centro">
+          <div class="col-sm-12 no-gap">
+            <div class="tamaño2 centro ">
+              <a href="avatar.html">
+                <label class="border-config">
+                  <p class="texto-config">
+                    Cambiar avatar
+                    <img class="flechalink-icon" src="images/config/flecha.svg" />
+                  </p>
+                </label>
+              </a>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="row ma-no centro">
+          <div class="col-sm-12 no-gap pb-5">
+            <div class="tamaño2 centro ">
+              <a href="datos.html">
+                <label class="border-config">
+                  <p class="texto-config">
+                    Datos adicionales
+                    <img class="flechalink-icon" src="images/config/flecha.svg" />
+                  </p>
+                </label>
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="row ma-no centro">
-        <div class="col-sm-12 no-gap">
-          <div class="tamaño2 centro ">
-            <a href="alertas.html">
-              <label class="border-config">
-                <p class="texto-config">
-                  Alertas
-                  <img class="flechalink-icon" src="images/config/flecha.svg" />
-                </p>
-              </label>
-            </a>
-          </div>
-        </div>
-      </div>
-      <br />
-      <div class="row ma-no centro">
-        <div class="col-sm-12 no-gap">
-          <div class="tamaño2 centro ">
-            <a href="avatar.html">
-              <label class="border-config">
-                <p class="texto-config">
-                  Cambiar avatar
-                  <img class="flechalink-icon" src="images/config/flecha.svg" />
-                </p>
-              </label>
-            </a>
-          </div>
-        </div>
-      </div>
-      <br />
-      <div class="row ma-no centro">
-        <div class="col-sm-12 no-gap">
-          <div class="tamaño2 centro ">
-            <a href="datos.html">
-              <label class="border-config">
-                <p class="texto-config">
-                  Datos adicionales
-                  <img class="flechalink-icon" src="images/config/flecha.svg" />
-                </p>
-              </label>
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </body>

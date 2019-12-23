@@ -2,6 +2,7 @@ import { gradientMenu } from "./scroll/scroll.js";
 import { ShowHidePassword } from "./form/form.js";
 import { selectCountry } from "./session/session.js";
 import { validateReEmail } from "./form/form.js";
+import { validateNewPassword } from "./form/form.js";
 var programacion_slider;
 var tvConcertSlider;
 $(document).ready(function() {
@@ -140,6 +141,19 @@ $(document).ready(function() {
   const inputReEmail = $("#re-password-email");
   searchEmailButton.click(function() {
     if (validateReEmail(inputReEmail)) {
+      return true;
+    } else {
+      return false;
+    }
+  });
+
+  /*Validar nueva contraseña */
+  const inputNewPassword = $("#new-password");
+  const inputConfirmPassword = $("#new-confirm-password");
+  const newPasswordButton = $(".new-password-button");
+
+  newPasswordButton.click(function() {
+    if (validateNewPassword(inputNewPassword, inputConfirmPassword)) {
       return true;
     } else {
       return false;

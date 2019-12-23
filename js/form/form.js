@@ -29,4 +29,36 @@ function validateReEmail(inputEmail) {
   }
 }
 
-export { ShowHidePassword, validateReEmail };
+function validateNewPassword(inputPassword, inputPasswordConfirm) {
+  let password = inputPassword.val();
+  let passwordConfirm = inputPasswordConfirm.val();
+  let warningPassword = $("#error-new-password");
+  let warningPasswordConfirm = $("#error-password-confirm");
+  if (password.length == 0) {
+    warningPassword
+      .addClass("invalid-email")
+      .text("Debes ingresar una nueva contraseña");
+    return false;
+  } else if (password.length < 8) {
+    warningPassword
+      .addClass("invalid-email")
+      .text("La contraseña debe tener mínimo 8 caracteres");
+    return false;
+  } else if (passwordConfirm == 0) {
+    warningPasswordConfirm
+      .addClass("invalid-email")
+      .text("Debes ingresar de nuevo la contraseña");
+    return false;
+  } else if (password !== passwordConfirm) {
+    warningPasswordConfirm
+      .addClass("invalid-email")
+      .text("Las contraseñas deben de coincidir");
+    console.log("Sigo aquí");
+
+    return false;
+  } else {
+    return true;
+  }
+}
+
+export { ShowHidePassword, validateReEmail, validateNewPassword };

@@ -1388,7 +1388,6 @@ h6 {
   font-size: 24px;
   font-family: "Montserrat-SemiBold";
   text-align: center;
-  padding: 16% 0px 4%;
 }
 
 .re-password-text {
@@ -1396,7 +1395,6 @@ h6 {
   text-align: center;
   color: #373737;
   font-size: 17px;
-  margin-bottom: 70px;
 }
 
 .email-found-text {
@@ -1406,16 +1404,25 @@ h6 {
   text-align: center;
 }
 
-.data-found-container .re-password-text {
-  margin-bottom: 47px;
-}
-
 .data-found-container .email-found-text::nth-child(1) {
   margin-bottom: 32px;
 }
 
-.data-found-container .re-password-title {
-  padding: 18% 0px 15%;
+.success-title {
+  text-align: center;
+  font-family: "Montserrat-Black";
+  color: #000000;
+  font-size: 25px;
+}
+
+.success-text {
+  font-family: "Montserrat-Bold";
+  color: #373737;
+  font-size: 17px;
+}
+
+.re-password-text span {
+  font-family: "Montserrat-Bold";
 }
 
 /*Tamaño de textos - responsive*/
@@ -2024,8 +2031,9 @@ h6 {
 
 .ubicacion3 {
   position: absolute;
-  right: 1%;
-  top: 80%;
+  right: 3%;
+  top: 30%;
+  z-index: 1;
 }
 
 .ubicacion4 {
@@ -2473,7 +2481,7 @@ input[type="checkbox"]:checked + label::before {
   font-size: 18px;
   text-align: center;
   vertical-align: middle;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #ffffff;
   background: #0fd7f2;
 }
@@ -4606,10 +4614,6 @@ input[type="radio"]:checked + .mujer-estilo {
   display: none;
 }
 
-.configuracion-container {
-  padding-top: 100px;
-}
-
 .schedule-poster {
   width: 50%;
   margin-right: 5%;
@@ -5344,10 +5348,6 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*============================*/
   /*1.10 - Configuración - Átomos*/
-  .configuracion-container .fondolog {
-    padding-bottom: 10%;
-    padding-top: 10%;
-  }
   /*End Configuración - Átomos*/
   /*============================*/
   /*2.- MOLECULES*/
@@ -5927,10 +5927,6 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*============================*/
   /*3.14 - Configuración - Organismos*/
-  .configuracion-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
   /*End Configuración*/
   /*============================*/
 }
@@ -6419,10 +6415,6 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*============================*/
   /*1.11 - Configuración - Átomos*/
-  .configuracion-container .fondolog {
-    padding-bottom: 10%;
-    padding-top: 10%;
-  }
   /*End Configuración - Átomos*/
   /***  2. MOLECULES  ***/
   /*-----------------------------*/
@@ -7035,10 +7027,6 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*============================*/
   /*3.15 - Configuración - Organismos*/
-  .configuracion-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
   /*End Configuración*/
   /*============================*/
 }
@@ -7470,10 +7458,6 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*============================*/
   /*1.11 - Configuración - Átomos*/
-  .configuracion-container .fondolog {
-    padding-bottom: 10%;
-    padding-top: 10%;
-  }
   /*End Configuración - Átomos*/
   /*============================*/
   /*END ATOMS*/
@@ -8155,10 +8139,6 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*============================*/
   /*3.15 - Configuración - Organismos*/
-  .configuracion-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
   .configuracion-header .menu-tablet {
     display: none;
   }
@@ -8579,10 +8559,6 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*============================*/
   /*1.11 - Configuración - Átomos*/
-  .configuracion-container .fondolog {
-    padding-bottom: 10%;
-    padding-top: 10%;
-  }
   /*End Configuración - Átomos*/
   /*============================*/
   /***  2. - MOLECULES  ***/
@@ -9255,10 +9231,6 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*============================*/
   /*3.15 - Configuración - Organismos*/
-  .configuracion-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
   .configuracion-header .menu-tablet {
     display: none;
   }

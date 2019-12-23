@@ -1140,7 +1140,6 @@
   font-size: $titleSection;
   font-family: $montserratSemiBold;
   text-align: center;
-  padding: 16% 0px 4%;
 }
 
 .re-password-text {
@@ -1148,7 +1147,6 @@
   text-align: center;
   color: $txtmodal;
   font-size: $displayTextTwo;
-  margin-bottom: 70px;
 }
 
 .email-found-text {
@@ -1159,15 +1157,25 @@
 }
 
 .data-found-container {
-  .re-password-text {
-    margin-bottom: 47px;
-  }
-
   .email-found-text::nth-child(1) {
     margin-bottom: 32px;
   }
-
-  .re-password-title {
-    padding: 18% 0px 15%;
-  }
 }
+
+.success-title {
+  text-align: center;
+  font-family: $montserratBlack;
+  color: $pureBlack;
+  font-size: 25px;
+}
+
+.success-text {
+  font-family: $montserratBold;
+  color: $txtmodal;
+  font-size: $displayTextTwo;
+}
+
+.re-password-text span {
+  font-family: $montserratBold;
+}
+
