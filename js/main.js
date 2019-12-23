@@ -134,10 +134,16 @@ $(document).ready(function() {
       CorreoValido.css("color", "#666262");
     }
   });
-  const searchEmailButton = $("#re-password-button");
+
+  /* Validar email para reestablecer contraseña*/
+  const searchEmailButton = $(".re-password-button");
   const inputReEmail = $("#re-password-email");
   searchEmailButton.click(function() {
-    validateReEmail(inputReEmail);
+    if (validateReEmail(inputReEmail)) {
+      return true;
+    } else {
+      return false;
+    }
   });
 
   /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/

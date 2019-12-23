@@ -1399,6 +1399,25 @@ h6 {
   margin-bottom: 70px;
 }
 
+.email-found-text {
+  color: #373737;
+  font-size: 17px;
+  font-family: "Montserrat-SemiBold";
+  text-align: center;
+}
+
+.data-found-container .re-password-text {
+  margin-bottom: 47px;
+}
+
+.data-found-container .email-found-text::nth-child(1) {
+  margin-bottom: 32px;
+}
+
+.data-found-container .re-password-title {
+  padding: 18% 0px 15%;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -1448,40 +1467,6 @@ h6 {
           box-shadow: none;
   border-radius: 0;
   outline: none !important;
-}
-
-.login-button {
-  width: 100%;
-  height: 44px;
-  border-radius: 21.5px;
-  background-color: #0fd7f2;
-  font-family: "Montserrat-SemiBold";
-  color: #ffffff;
-  font-size: 14px;
-  border: none;
-  outline: none !important;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-}
-
-.signup-button {
-  width: 100%;
-  height: 44px;
-  border-radius: 21.5px;
-  outline: none !important;
-  background-color: #ffffff;
-  font-family: "Montserrat-SemiBold";
-  color: #717272;
-  font-size: 14px;
-  border: solid 1px #0fd7f2;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
 }
 
 .centro {
@@ -1683,6 +1668,40 @@ h6 {
 
 .re-password-button {
   margin-top: 100px;
+}
+
+.form-button-primary {
+  width: 100%;
+  height: 44px;
+  border-radius: 21.5px;
+  background-color: #0fd7f2;
+  font-family: "Montserrat-SemiBold";
+  color: #ffffff;
+  font-size: 14px;
+  border: none;
+  outline: none !important;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.form-button-outline {
+  width: 100%;
+  height: 44px;
+  border-radius: 21.5px;
+  outline: none !important;
+  background-color: #ffffff;
+  font-family: "Montserrat-SemiBold";
+  color: #717272;
+  font-size: 14px;
+  border: solid 1px #0fd7f2;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 /*Tamaño de textos - responsive*/
@@ -2454,7 +2473,7 @@ input[type="checkbox"]:checked + label::before {
   font-size: 18px;
   text-align: center;
   vertical-align: middle;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #ffffff;
   background: #0fd7f2;
 }

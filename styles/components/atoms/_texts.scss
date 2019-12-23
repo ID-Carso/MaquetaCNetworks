@@ -1150,3 +1150,24 @@
   font-size: $displayTextTwo;
   margin-bottom: 70px;
 }
+
+.email-found-text {
+  color: $txtmodal;
+  font-size: $displayTextTwo;
+  font-family: $montserratSemiBold;
+  text-align: center;
+}
+
+.data-found-container {
+  .re-password-text {
+    margin-bottom: 47px;
+  }
+
+  .email-found-text::nth-child(1) {
+    margin-bottom: 32px;
+  }
+
+  .re-password-title {
+    padding: 18% 0px 15%;
+  }
+}
