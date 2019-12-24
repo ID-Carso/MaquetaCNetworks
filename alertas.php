@@ -100,7 +100,7 @@
         </header>
 
         <div class="alertas-container">
-                <div class="col-sm-12 mx-auto no-gutters col-md-8 no-gutters col-lg-4 col-xl-3 shadow1 fondolog">
+                <div class="col-sm-12 mx-auto no-gutters col-md-6 no-gutters col-lg-4 col-xl-3 shadow1 fondolog">
                         <img src="images/registro/group-10.svg" class="ubicacion5" />
                         <img src="images/config/puntos.svg" class="ubicacionpuntos">
                         <br><br><br>
@@ -142,7 +142,7 @@
                         <br>
 
                         <div class="row ma-no centro">
-                                <div class="col-sm-12 no-gap">
+                                <div class="col-10 mx-auto no-gap">
                                         <div class="tamaño2 centro">
 
                                                 <form action="" name="formilariotiempo" id="formulariotiempo" class="formulario">
@@ -186,7 +186,7 @@
                                 </div>
                         </div>
                         <div class="row ma-no centro">
-                                <div class="col-sm-12 no-gap">
+                                <div class="col-sm-12 no-gap pb-5">
                                         <div class="tamaño3 centro d-flex justify-content-between">
                                                 <p class="texto-alert"> Web </p>
                                                 <label class="switch-alert">

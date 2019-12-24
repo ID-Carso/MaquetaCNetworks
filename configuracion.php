@@ -92,7 +92,7 @@
     ?>
   </header>
   <div class="configuracion-container py-5">
-    <div class="col-sm-12 no-gutters col-md-6 mx-auto no-gutters col-lg-4 col-xl-4 shadow1 fondolog">
+    <div class="col-sm-12 no-gutters col-md-6 mx-auto no-gutters col-lg-4 col-xl-3 shadow1 fondolog">
       <img src="images/registro/group-10.svg" class="ubicacion5" />
       <img src="images/config/puntos.svg" class="ubicacionpuntos" />
 
@@ -107,7 +107,7 @@
         <div class="row ma-no centro">
           <div class="col-sm-12 no-gap">
             <div class="tamaño2 centro ">
-              <a href="alertas.html">
+              <a href="alertas.php">
                 <label class="border-config">
                   <p class="texto-config">
                     Alertas
@@ -137,7 +137,7 @@
         <div class="row ma-no centro">
           <div class="col-sm-12 no-gap pb-5">
             <div class="tamaño2 centro ">
-              <a href="datos.html">
+              <a href="datos.php">
                 <label class="border-config">
                   <p class="texto-config">
                     Datos adicionales

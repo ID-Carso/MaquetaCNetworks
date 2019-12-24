@@ -507,8 +507,8 @@
     font-size: 30px;
   }
 
-  .lista-content{
-    .shadow1{
+  .lista-content {
+    .shadow1 {
       box-shadow: none;
       border-radius: 0px;
     }
@@ -516,10 +516,10 @@
   /*End Mi Lista - Átomos*/
   /*============================*/
 
-    /*============================*/
+  /*============================*/
   /*1.10 - Configuración - Átomos*/
 
-    /*End Configuración - Átomos*/
+  /*End Configuración - Átomos*/
   /*============================*/
 
   /*2.- MOLECULES*/
@@ -1214,7 +1214,7 @@
 
   /*============================*/
   /*3.14 - Configuración - Organismos*/
-    /*End Configuración*/
+  /*End Configuración*/
   /*============================*/
 }
 
@@ -1819,9 +1819,9 @@
   /*End Mi Lista - Átomos*/
   /*============================*/
 
-      /*============================*/
+  /*============================*/
   /*1.11 - Configuración - Átomos*/
-    /*End Configuración - Átomos*/
+  /*End Configuración - Átomos*/
 
   /***  2. MOLECULES  ***/
 
@@ -2569,10 +2569,10 @@
   /*End Alertas*/
   /*============================*/
 
-    /*============================*/
+  /*============================*/
   /*3.15 - Configuración - Organismos*/
 
-    /*End Configuración*/
+  /*End Configuración*/
   /*============================*/
 }
 
@@ -3100,7 +3100,8 @@
     padding-top: 70px;
   }
 
-  .my-list-title, .list-title-section {
+  .my-list-title,
+  .list-title-section {
     font-size: 30px;
   }
 
@@ -3110,13 +3111,13 @@
 
   .lista-header .login {
     background: transparent;
-}
+  }
   /*End Mi Lista - Átomos*/
   /*============================*/
 
-      /*============================*/
+  /*============================*/
   /*1.11 - Configuración - Átomos*/
-    /*End Configuración - Átomos*/
+  /*End Configuración - Átomos*/
   /*============================*/
 
   /*END ATOMS*/
@@ -3134,7 +3135,11 @@
 
   .datos-header {
     .menu-tablet {
-      display: block;
+      display: none;
+    }
+
+    .claro-navbar, .menu-desktop{
+      position: static;
     }
   }
 
@@ -3952,26 +3957,24 @@
   /*End Alertas*/
   /*============================*/
 
-    /*============================*/
+  /*============================*/
   /*3.15 - Configuración - Organismos*/
 
-
-  .configuracion-header{
-    .menu-tablet{
+  .configuracion-header {
+    .menu-tablet {
       display: none;
     }
 
-    .menu-desktop{
+    .menu-desktop {
       position: static;
     }
 
-    .claro-navbar{
+    .claro-navbar {
       position: static;
     }
-  } 
-    /*End Configuración*/
+  }
+  /*End Configuración*/
   /*============================*/
- 
 }
 
 @media only screen and (min-width: 1900px) {
@@ -4421,7 +4424,6 @@
     top: 85%;
   }
 
-
   /*End Mi perfil - Átomos*/
   /*============================*/
 
@@ -4474,9 +4476,10 @@
 
   .lista-header .navbar-item {
     color: #767373;
-}
+  }
 
-  .my-list-title, .list-title-section {
+  .my-list-title,
+  .list-title-section {
     font-size: 30px;
   }
 
@@ -4490,10 +4493,10 @@
   /*End Mi Lista - Átomos*/
   /*============================*/
 
-        /*============================*/
+  /*============================*/
   /*1.11 - Configuración - Átomos*/
 
-    /*End Configuración - Átomos*/
+  /*End Configuración - Átomos*/
   /*============================*/
 
   /***  2. - MOLECULES  ***/
@@ -5111,7 +5114,12 @@
 
   .datos-header {
     .menu-tablet {
-      display: block;
+      display: none;
+    }
+
+    .claro-navbar,
+    .menu-desktop {
+      position: static;
     }
   }
 
@@ -5331,22 +5339,22 @@
   /*End Alertas*/
   /*============================*/
 
-    /*============================*/
+  /*============================*/
   /*3.15 - Configuración - Organismos*/
 
-  .configuracion-header{
-    .menu-tablet{
+  .configuracion-header {
+    .menu-tablet {
       display: none;
     }
 
-    .menu-desktop{
+    .menu-desktop {
       position: static;
     }
 
-    .claro-navbar{
+    .claro-navbar {
       position: static;
     }
   }
-    /*End Configuración*/
+  /*End Configuración*/
   /*============================*/
 }

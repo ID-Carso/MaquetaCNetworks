@@ -112,7 +112,6 @@
 }
 
 .sexo {
-  width: 302px;
   height: 44px;
   border-radius: 22px;
   border: none;
@@ -155,7 +154,6 @@
 }
 
 .tiempo {
-  width: 302px;
   height: 44px;
   border-radius: 22px;
   border: none;
@@ -243,6 +241,7 @@
 
 .form-button-primary {
   width: 100%;
+  max-width: 288px;
   height: 44px;
   border-radius: 21.5px;
   background-color: $subtitleTV;
@@ -260,6 +259,7 @@
 
 .form-button-outline {
   width: 100%;
+  max-width: 288px;
   height: 44px;
   border-radius: 21.5px;
   outline: none !important;
