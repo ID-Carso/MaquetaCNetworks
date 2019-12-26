@@ -139,8 +139,8 @@
                 </div>
                 <div class="row ma-no centro">
                     <div class="col-sm-12 no-gap">
-                        <div class="centro ">
-                            <a href="registro.html"><button type="button" class="close-button">
+                        <div class="centro pt-5 pb-4 mt-5">
+                            <a href=" registro.html"><button type="button" class="form-button-outline">
                                     CERRAR SESIÓN
                                 </button></a>
                         </div>

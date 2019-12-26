@@ -104,99 +104,104 @@
                         <img src="images/registro/group-10.svg" class="ubicacion5" />
                         <img src="images/config/puntos.svg" class="ubicacionpuntos">
                         <br><br><br>
-                        <div class="row ma-no centro">
-                                <div class="col-sm-12 no-gap">
-                                        <div class="tamaño2 centro">
-                                                <p class="titulos-configuraciones"> Alertas </p>
+                        <div class="col-10 col-sm-8 col-md-8 col-lg-9 col-xl-9 mx-auto">
+                                <div class="row ma-no centro">
+                                        <div class="col-sm-12 no-gap">
+                                                <div class="centro">
+                                                        <p class="titulos-configuraciones"> Alertas </p>
+                                                </div>
+                                        </div>
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <div class="row ma-no centro">
+                                        <div class="col-sm-12 no-gap">
+                                                <div class="centro d-flex justify-content-between">
+                                                        <p class="texto-alert"> Desactivar todas las alertas </p>
+                                                        <label class="switch-alert">
+                                                                <input type="checkbox">
+                                                                <span class="slideralert roundalert"></span>
+
+                                                        </label>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="row ma-no centro">
+                                        <div class="col-sm-12 no-gap">
+                                                <div class="centro d-flex justify-content-between">
+                                                        <p class="texto-alert"> Alertar antes </p>
+                                                        <label class="switch-alert">
+                                                                <input type="checkbox">
+                                                                <span class="slideralert roundalert"></span>
+
+                                                        </label>
+                                                </div>
+                                        </div>
+                                </div>
+                                <br>
+
+                                <div class="row ma-no centro">
+                                        <div class="w-100">
+                                                <div class="centro">
+
+                                                        <form action="" name="formilariotiempo" id="formulariotiempo" class="formulario">
+                                                                <div class="tiempo">
+                                                                        <input type="radio" name="tiempo" id="quince" checked />
+                                                                        <label for="quince" id="quinceestado" class="quince-estilo">
+
+                                                                                15 min antes</label>
+                                                                        <input type="radio" name="tiempo" id="treinta" />
+                                                                        <label for="treinta" id="treintaestado" class="treinta-estilo">
+                                                                                30 min antes
+                                                                        </label>
+                                                                </div>
+                                                        </form>
+                                                </div>
+                                        </div>
+                                </div>
+                                <br>
+
+                                <div class="row ma-no centro">
+                                        <div class="col-sm-12 no-gap">
+                                                <div class="centro d-flex justify-content-between">
+                                                        <p class="texto-alert"> Alertar cuando inicie el contenido </p>
+                                                        <label class="switch-alert">
+                                                                <input type="checkbox">
+                                                                <span class="slideralert roundalert"></span>
+
+                                                        </label>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="row ma-no centro">
+                                        <div class="col-sm-12 no-gap">
+                                                <div class="centro d-flex justify-content-between">
+                                                        <p class="texto-alert"> Correo electrónico </p>
+                                                        <label class="switch-alert">
+                                                                <input type="checkbox">
+                                                                <span class="slideralert roundalert"></span>
+
+                                                        </label>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="row ma-no centro">
+                                        <div class="col-sm-12 no-gap pb-5">
+                                                <div class="centro d-flex justify-content-between">
+                                                        <p class="texto-alert"> Web </p>
+                                                        <label class="switch-alert">
+                                                                <input type="checkbox">
+                                                                <span class="slideralert roundalert"></span>
+
+                                                        </label>
+                                                </div>
                                         </div>
                                 </div>
                         </div>
-                        <br>
-                        <br>
-                        <br>
-                        <div class="row ma-no centro">
-                                <div class="col-sm-12 no-gap">
-                                        <div class="tamaño3 centro d-flex justify-content-between">
-                                                <p class="texto-alert"> Desactivar todas las alertas </p>
-                                                <label class="switch-alert">
-                                                        <input type="checkbox">
-                                                        <span class="slideralert roundalert"></span>
 
-                                                </label>
-                                        </div>
-                                </div>
-                        </div>
 
-                        <div class="row ma-no centro">
-                                <div class="col-sm-12 no-gap">
-                                        <div class="tamaño3 centro d-flex justify-content-between">
-                                                <p class="texto-alert"> Alertar antes </p>
-                                                <label class="switch-alert">
-                                                        <input type="checkbox">
-                                                        <span class="slideralert roundalert"></span>
 
-                                                </label>
-                                        </div>
-                                </div>
-                        </div>
-                        <br>
-
-                        <div class="row ma-no centro">
-                                <div class="col-10 mx-auto no-gap">
-                                        <div class="tamaño2 centro">
-
-                                                <form action="" name="formilariotiempo" id="formulariotiempo" class="formulario">
-                                                        <div class="tiempo">
-                                                                <input type="radio" name="tiempo" id="quince" checked />
-                                                                <label for="quince" id="quinceestado" class="quince-estilo">
-
-                                                                        15 min antes</label>
-                                                                <input type="radio" name="tiempo" id="treinta" />
-                                                                <label for="treinta" id="treintaestado" class="treinta-estilo">
-                                                                        30 min antes
-                                                                </label>
-                                                        </div>
-                                                </form>
-                                        </div>
-                                </div>
-                        </div>
-                        <br>
-                        <div class="row ma-no centro">
-                                <div class="col-sm-12 no-gap">
-                                        <div class="tamaño3 centro d-flex justify-content-between">
-                                                <p class="texto-alert"> Alertar cuando inicie el contenido </p>
-                                                <label class="switch-alert">
-                                                        <input type="checkbox">
-                                                        <span class="slideralert roundalert"></span>
-
-                                                </label>
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="row ma-no centro">
-                                <div class="col-sm-12 no-gap">
-                                        <div class="tamaño3 centro d-flex justify-content-between">
-                                                <p class="texto-alert"> Correo electrónico </p>
-                                                <label class="switch-alert">
-                                                        <input type="checkbox">
-                                                        <span class="slideralert roundalert"></span>
-
-                                                </label>
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="row ma-no centro">
-                                <div class="col-sm-12 no-gap pb-5">
-                                        <div class="tamaño3 centro d-flex justify-content-between">
-                                                <p class="texto-alert"> Web </p>
-                                                <label class="switch-alert">
-                                                        <input type="checkbox">
-                                                        <span class="slideralert roundalert"></span>
-
-                                                </label>
-                                        </div>
-                                </div>
-                        </div>
 
                 </div>
         </div>

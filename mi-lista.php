@@ -46,11 +46,11 @@
                 </div>
 
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="https://www.nuestravision.com.mx/"><span class="dropdown-p">Nuestra
+                    <a class="sidebar-link" href="nuestra-vision.php"><span class="dropdown-p">Nuestra
                             Visión</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="claro-sports.html"><span class="dropdown-p">Claro
+                    <a class="sidebar-link" href="claro-sports.php"><span class="dropdown-p">Claro
                             Sports</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
@@ -63,40 +63,40 @@
         <div class="categorias-menu">
             <div class="sidebar-content">
                 <div class="sidebar-item  ">
-                    <a href="home.php" class="sidebar-link">
+                    <a href="" class="sidebar-link">
                         <p class="dropdown-p">TODOS</p>
                     </a>
                 </div>
                 <div class="sidebar-item">
-                    <a href="claro-canal.php" class="sidebar-link">
+                    <a href="" class="sidebar-link">
                         <p class="dropdown-p">PELÍCULAS</p>
                     </a>
                 </div>
 
                 <div class="sidebar-item ">
-                    <a class="sidebar-link" href="concert-channel.php">
+                    <a class="sidebar-link" href="">
                         <p class="dropdown-p">SERIES</p>
                     </a>
                 </div>
 
                 <div class="sidebar-item ">
-                    <a class="sidebar-link" href="claro-cinema.php">
+                    <a class="sidebar-link" href="">
                         <p class="dropdown-p">DOCUMENTALES</p>
                     </a>
                 </div>
 
                 <div class="sidebar-item ">
-                    <a class="sidebar-link" href="https://www.nuestravision.com.mx/">
+                    <a class="sidebar-link" href="">
                         <p class="dropdown-p">CONCIERTOS</p>
                     </a>
                 </div>
                 <div class="sidebar-item ">
-                    <a class="sidebar-link" href="claro-sports.html">
+                    <a class="sidebar-link" href="">
                         <p class="dropdown-p">PROGRAMAS</p>
                     </a>
                 </div>
                 <div class="sidebar-item ">
-                    <a class="sidebar-link" href="programacion.php">
+                    <a class="sidebar-link" href="">
                         <p class="dropdown-p">DEPORTES</p>
                     </a>
                 </div>
