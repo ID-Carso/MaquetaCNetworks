@@ -1425,6 +1425,13 @@ h6 {
   font-family: "Montserrat-Bold";
 }
 
+.now-live-text {
+  position: absolute;
+  z-index: 1;
+  padding: 2px 30px;
+  background: red;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -1945,8 +1952,6 @@ h6 {
 
 .logo {
   width: 52px;
-  display: block;
-  margin: auto;
 }
 
 .menu-responsive {
@@ -2357,6 +2362,15 @@ h6 {
   top: 11%;
   right: 5%;
   z-index: 1;
+}
+
+.icon-eye {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  opacity: 0.3;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
 }
 
 .hr1 {

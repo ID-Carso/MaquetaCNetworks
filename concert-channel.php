@@ -80,20 +80,11 @@
             <button class="invisible-button"></button>
         </div>
         <div class="header">
-            <nav class="menu">
-                <div class="nav-content">
-                    <div class="claro-logo">
-                        <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
-
-                        <a href="home.php"><img class="logo" src="./images/home/claro-logo.png" alt="" /></a>
-                    </div>
-
-                    <div class="login">
-                        <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-                        <a href="index.html" class="login-item"><img class="login-country" alt="" /></a>
-                    </div>
-                </div>
-            </nav>
+            <!--Menú para móvil -->
+            <?php
+            include 'menu-mobile.php';
+            ?>
+            <!--End menú para móvil-->
             <nav class="menu-tablet">
                 <div class="nav-content">
                     <div class="claro-logo">
@@ -134,10 +125,7 @@
 
                     <div class="poster">
                         <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                            </div>
+                            <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                             <div class="thumbnail">
                             </div>
                             <div class="a-concert-rectangle">
@@ -361,10 +349,7 @@
                         <div class="col poster-pad-r poster-section">
                             <div class="poster">
                                 <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
+                                    <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <div class="thumbnail">
                                     </div>
                                     <div class="a-concert-rectangle">

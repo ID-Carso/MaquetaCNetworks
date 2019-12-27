@@ -1179,3 +1179,9 @@
   font-family: $montserratBold;
 }
 
+.now-live-text {
+  position: absolute;
+  z-index: 1;
+  padding: 2px 30px;
+  background: red;
+}

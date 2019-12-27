@@ -82,20 +82,11 @@
         </div>
 
         <div class="header">
-            <nav class="menu">
-                <div class="nav-content">
-                    <div class="claro-logo">
-                        <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
-
-                        <a href="home.php"><img class="logo" src="./images/home/claro-logo.png" alt="" /></a>
-                    </div>
-
-                    <div class="login">
-                        <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-                        <a href="paises.html" class="login-item"><img class="login-country" /></a>
-                    </div>
-                </div>
-            </nav>
+            <!--Menú para móvil -->
+            <?php
+            include 'menu-mobile.php';
+            ?>
+            <!--End menú para móvil-->
             <nav class="menu-tablet">
                 <div class="nav-content">
                     <div class="claro-logo">
@@ -390,9 +381,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -425,9 +414,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -460,9 +447,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -495,9 +480,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -536,9 +519,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -571,9 +552,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -606,9 +585,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -641,9 +618,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -890,9 +865,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -925,9 +898,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -960,9 +931,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -995,9 +964,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1036,9 +1003,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1071,9 +1036,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1106,9 +1069,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1141,9 +1102,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1389,9 +1348,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1424,9 +1381,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1459,9 +1414,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1494,9 +1447,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1536,9 +1487,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1571,9 +1520,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1606,9 +1553,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1641,9 +1586,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1890,9 +1833,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1925,9 +1866,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1960,9 +1899,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -1995,9 +1932,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -2036,9 +1971,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -2071,9 +2004,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -2106,9 +2037,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -2141,9 +2070,7 @@
                                                 </div>
                                                 <div>
                                                     <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                            src="./images/programacion/plus.svg"
-                                                            class="schedule-add-icon" />
+                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -2390,9 +2317,7 @@
                                                     </div>
                                                     <div>
                                                         <button class="schedule-add" type="button">
-                                                            <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                                src="./images/programacion/plus.svg"
-                                                                class="schedule-add-icon" />
+                                                            <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                         </button>
                                                     </div>
                                                 </div>
@@ -2425,9 +2350,7 @@
                                                     </div>
                                                     <div>
                                                         <button class="schedule-add" type="button">
-                                                            <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                                src="./images/programacion/plus.svg"
-                                                                class="schedule-add-icon" />
+                                                            <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                         </button>
                                                     </div>
                                                 </div>
@@ -2460,9 +2383,7 @@
                                                     </div>
                                                     <div>
                                                         <button class="schedule-add" type="button">
-                                                            <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                                src="./images/programacion/plus.svg"
-                                                                class="schedule-add-icon" />
+                                                            <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                         </button>
                                                     </div>
                                                 </div>
@@ -2495,9 +2416,7 @@
                                                     </div>
                                                     <div>
                                                         <button class="schedule-add" type="button">
-                                                            <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                                src="./images/programacion/plus.svg"
-                                                                class="schedule-add-icon" />
+                                                            <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                         </button>
                                                     </div>
                                                 </div>
@@ -2536,9 +2455,7 @@
                                                     </div>
                                                     <div>
                                                         <button class="schedule-add" type="button">
-                                                            <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                                src="./images/programacion/plus.svg"
-                                                                class="schedule-add-icon" />
+                                                            <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                         </button>
                                                     </div>
                                                 </div>
@@ -2571,9 +2488,7 @@
                                                     </div>
                                                     <div>
                                                         <button class="schedule-add" type="button">
-                                                            <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                                src="./images/programacion/plus.svg"
-                                                                class="schedule-add-icon" />
+                                                            <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                         </button>
                                                     </div>
                                                 </div>
@@ -2606,9 +2521,7 @@
                                                     </div>
                                                     <div>
                                                         <button class="schedule-add" type="button">
-                                                            <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                                src="./images/programacion/plus.svg"
-                                                                class="schedule-add-icon" />
+                                                            <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                         </button>
                                                     </div>
                                                 </div>
@@ -2641,9 +2554,7 @@
                                                     </div>
                                                     <div>
                                                         <button class="schedule-add" type="button">
-                                                            <p class="schedule-add-text">añadir a mi lista</p> <img
-                                                                src="./images/programacion/plus.svg"
-                                                                class="schedule-add-icon" />
+                                                            <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
                                                         </button>
                                                     </div>
                                                 </div>

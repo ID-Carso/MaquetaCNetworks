@@ -27,9 +27,18 @@ $(document).ready(function() {
 
   var sessionSrc = sessionStorage.getItem("src");
   var loginCountry = $(".login-country");
-  if (sessionSrc) {
+  if (
+    !sessionSrc &&
+    (window.location.pathname !== "/" ||
+      window.location.pathname !== "/index.html")
+  ) {
+    location.href = "/";
+    console.log("hola");
+  } else {
     loginCountry.attr("src", sessionSrc);
   }
+
+  console.log(window.location.pathname);
   /*End función elegir un país y mostrar la bandera en navbar */
 
   $(".signup-button").click(function() {

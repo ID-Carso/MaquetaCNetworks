@@ -21,20 +21,11 @@
 </head>
 
 <body>
-    <nav class="menu">
-        <div class="nav-content">
-            <div class="claro-logo">
-                <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
-
-                <img class="logo" src="./images/home/claro-logo.png" alt="" />
-            </div>
-
-            <div class="login">
-                <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-                <a href="index.html" class="login-item"><img class="login-country" src="" alt="" /></a>
-            </div>
-        </div>
-    </nav>
+    <!--Menú para móvil -->
+    <?php
+    include 'menu-mobile.php';
+    ?>
+    <!--End menú para móvil-->
     <div class="hamburguer-menu">
         <div class="text-center">
             <img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar">
@@ -982,10 +973,9 @@
 
                     <div class="poster">
                         <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img src="./images/posters/plus.png" class="poster-add" alt=""></button>
-                            </div>
+
+                            <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+
                             <a href="sinopsis.php">
                                 <div class="thumbnail-large">
                                     <img src="../images/posters/bates-motel.jpeg" alt="">
@@ -1099,10 +1089,7 @@
                     <div class="section-slider">
                         <div class="poster">
                             <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img src="./images/posters/plus.png" class="poster-add" alt=""></button>
-                                </div>
+                                <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail-large">
                                         <img src="../images/posters/bates-motel.jpeg" alt="">
@@ -1237,10 +1224,7 @@
                 <div class="section-slider">
                     <div class="poster">
                         <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img src="./images/posters/plus.png" class="poster-add" alt=""></button>
-                            </div>
+                            <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                             <a href="sinopsis.php">
                                 <div class="thumbnail-large">
                                     <img src="../images/posters/bates-motel.jpeg" alt="">
@@ -1508,10 +1492,7 @@
                     <div class="section-slider">>
                         <div class="poster">
                             <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                </div>
+                                <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                 <div class="thumbnail">
                                     <img src="./images/posters/coldplay-tour.jpeg" alt="">
                                 </div>
@@ -1618,10 +1599,7 @@
                             <div class="col poster-pad-r poster-section">
                                 <div class="poster">
                                     <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
+                                        <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                         <div class="thumbnail">
                                             <img src="./images/posters/coldplay-tour.jpeg" alt="">
                                         </div>

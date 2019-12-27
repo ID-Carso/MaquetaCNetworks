@@ -85,20 +85,11 @@
 
         <div class="header">
 
-            <nav class="menu">
-                <div class="nav-content">
-                    <div class="claro-logo">
-                        <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
-
-                        <a href="home.php"><img class="logo" src="./images/home/claro-logo.png" alt="" /></a>
-                    </div>
-
-                    <div class="login">
-                        <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-                        <a href="index.html" class="login-item"><img class="login-country" alt="" /></a>
-                    </div>
-                </div>
-            </nav>
+            <!--Menú para móvil -->
+            <?php
+            include 'menu-mobile.php';
+            ?>
+            <!--End menú para móvil-->
             <nav class="menu-tablet">
                 <div class="nav-content">
                     <div class="claro-logo">
