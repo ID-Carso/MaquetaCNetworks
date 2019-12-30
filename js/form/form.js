@@ -7,25 +7,39 @@ function ShowHidePassword(iconPassword) {
   }
 }
 
-function validateReEmail(inputEmail) {
+function validateEmail(inputEmail, messageError) {
   let email = inputEmail.val();
   let filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-  let warningEmail = $(".correo-valido");
-  let imageError = $(".error");
-
+  console.log(email);
   if (email.length == 0) {
-    warningEmail
+    messageError
       .addClass("invalid-email")
       .text("Debes ingresar un correo electrónico");
     return false;
   } else if (!filter.test(email)) {
-    warningEmail
+    messageError
       .addClass("invalid-email")
       .text("El correo electrónico no es correcto");
     console.log("error");
     return false;
   } else {
     return true;
+  }
+}
+
+function validateKeyUpEmail(inputEmail, filter, imageError, emailWarning) {
+  let email = inputEmail.val();
+  if (!filter.test(email)) {
+    emailWarning.css("color", "red");
+    imageError.css("display", "inline-block");
+    imageError.attr("src", "images/registro/alerta.svg");
+  } else if (filter.test(email)) {
+    emailWarning.css("color", "green");
+    imageError.css("display", "inline-block");
+    imageError.attr("src", "images/registro/listo.svg");
+  } else if (inputCorreo.val().length == 0) {
+    ImagenError.css("display", "none");
+    emailWarning.css("color", "#666262");
   }
 }
 
@@ -61,4 +75,9 @@ function validateNewPassword(inputPassword, inputPasswordConfirm) {
   }
 }
 
-export { ShowHidePassword, validateReEmail, validateNewPassword };
+export {
+  ShowHidePassword,
+  validateEmail,
+  validateNewPassword,
+  validateKeyUpEmail
+};

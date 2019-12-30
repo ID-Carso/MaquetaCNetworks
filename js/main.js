@@ -1,17 +1,22 @@
 import { gradientMenu } from "./scroll/scroll.js";
 import { ShowHidePassword } from "./form/form.js";
 import { selectCountry } from "./session/session.js";
-import { validateReEmail } from "./form/form.js";
+import { validateEmail } from "./form/form.js";
 import { validateNewPassword } from "./form/form.js";
+import { validateKeyUpEmail } from "./form/form.js";
 var programacion_slider;
 var tvConcertSlider;
 $(document).ready(function() {
   /*Mostrar u ocultar password de registro o login */
-  const iconPassword = document.querySelector(".ubicacion4");
+  var iconPassword = document.querySelectorAll(".icon-eye");
+  var iconLength = iconPassword.length;
+
   if (iconPassword !== null) {
-    iconPassword.addEventListener("click", function() {
-      ShowHidePassword(this);
-    });
+    for (let i = 0; i < iconLength; i++) {
+      iconPassword[i].addEventListener("click", function() {
+        ShowHidePassword(this);
+      });
+    }
   }
 
   /*End función Mostrar u ocultar password de registro o login */
@@ -27,11 +32,7 @@ $(document).ready(function() {
 
   var sessionSrc = sessionStorage.getItem("src");
   var loginCountry = $(".login-country");
-  if (
-    !sessionSrc &&
-    (window.location.pathname !== "/" ||
-      window.location.pathname !== "/index.html")
-  ) {
+  if (!sessionSrc && window.location.pathname !== "/") {
     location.href = "/";
     console.log("hola");
   } else {
@@ -69,12 +70,12 @@ $(document).ready(function() {
   $(".login-button").click(function() {
     var correo1, password1, expresion1;
     const nodatos = $(".nodatos");
-    const nocorreo = $(".nocorreo");
-    const borde = $("#correo1");
+    const nocorreo = $("#error_email");
+    const borde = $("#login-email");
     correo1 = document.getElementById("login-email").value;
     password1 = document.getElementById("login-password").value;
     expresion1 = /\w+@\w+\.+[a-z]/;
-
+    console.log(password1.length);
     if (correo1 === "" && password1 === "") {
       nodatos.css("display", "block");
       return false;
@@ -86,7 +87,6 @@ $(document).ready(function() {
       nocorreo.css("display", "none");
       borde.css("border-bottom", "solid 1px #a1a0a0");
     } else if (password1.length < 8) {
-      alert("el campo esta vacio");
       return false;
     }
   });
@@ -123,15 +123,17 @@ $(document).ready(function() {
       listo1.attr("src", "images/registro/listo.svg");
     }
   });
-  const inputCorreo = $("#login-email");
+
+  const inputCorreo = $(".input-email");
 
   inputCorreo.keyup(function() {
-    const CorreoValido = $(".correo-valido");
-    const ImagenError = $(".error");
-    var email = $("#login-email").val();
+    const correoValido = $(".correo-valido");
+    const imagenError = $(".error");
+    //var email = $("#login-email").val();
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
-    if (!filter.test(email)) {
+    validateKeyUpEmail(inputCorreo, filter, imagenError, correoValido);
+    /*if (!filter.test(email)) {
       CorreoValido.css("color", "red");
       ImagenError.css("display", "inline-block");
       ImagenError.attr("src", "images/registro/alerta.svg");
@@ -142,14 +144,15 @@ $(document).ready(function() {
     } else if (inputCorreo.val().length == 0) {
       ImagenError.css("display", "none");
       CorreoValido.css("color", "#666262");
-    }
+    }*/
   });
 
   /* Validar email para reestablecer contraseña*/
   const searchEmailButton = $(".re-password-button");
   const inputReEmail = $("#re-password-email");
+  const messageError = $(".correo-valido");
   searchEmailButton.click(function() {
-    if (validateReEmail(inputReEmail)) {
+    if (validateEmail(inputReEmail, messageError)) {
       return true;
     } else {
       return false;

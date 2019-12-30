@@ -201,13 +201,16 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-claro-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-claro-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
                                 </div>
 
                             </div>
@@ -218,13 +221,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-claro-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-claro-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -234,13 +239,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-claro-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-claro-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -250,13 +257,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-claro-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-claro-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -267,13 +276,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-claro-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-claro-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -283,13 +294,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-claro-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-claro-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -301,13 +314,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-claro-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-claro-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -324,15 +339,17 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-concert-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¡WTF, EL NUEVO GANCHO DE BLITZCRANK LLEGA A
-                                                CASA
-                                                DE TU PRIMA Y LA ONE SHOTEA! *BUFF Q*</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-concert-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¡WTF, EL NUEVO GANCHO DE BLITZCRANK LLEGA A
+                                                    CASA
+                                                    DE TU PRIMA Y LA ONE SHOTEA! *BUFF Q*</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -342,15 +359,17 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-concert-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¡WTF, EL NUEVO GANCHO DE BLITZCRANK LLEGA A
-                                                CASA
-                                                DE TU PRIMA Y LA ONE SHOTEA! *BUFF Q*</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-concert-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¡WTF, EL NUEVO GANCHO DE BLITZCRANK LLEGA A
+                                                    CASA
+                                                    DE TU PRIMA Y LA ONE SHOTEA! *BUFF Q*</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -361,13 +380,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-concert-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-concert-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -380,13 +401,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-concert-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-concert-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -396,13 +419,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-concert-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-concert-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -414,13 +439,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-concert-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-concert-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -430,13 +457,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-concert-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-concert-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -446,13 +475,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-concert-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-concert-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -469,13 +500,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-cinema-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -486,13 +519,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-cinema-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -502,13 +537,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-cinema-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -518,13 +555,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class=" thumbnail">
-                                    </div>
-                                    <div class="a-cinema-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -534,13 +573,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-cinema-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -550,13 +591,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-cinema-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -566,13 +609,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-cinema-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -582,13 +627,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-cinema-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -598,13 +645,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-cinema-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -621,13 +670,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-vision-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-vision-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -639,13 +690,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-vision-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-vision-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -656,13 +709,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class=" thumbnail">
-                                    </div>
-                                    <div class="a-vision-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-vision-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -674,13 +729,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-vision-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-vision-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -691,13 +748,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-vision-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-vision-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -707,13 +766,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-vision-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-vision-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -723,13 +784,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-vision-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-vision-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -739,30 +802,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-vision-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-vision-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                        <div class="a-vision-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -773,13 +821,34 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-vision-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
+                                        <div class="a-vision-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                        </div>
+                                        <div class="a-vision-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -796,13 +865,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-sports-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -813,13 +884,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-sports-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -830,13 +903,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-sports-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -847,13 +922,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-sports-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -864,13 +941,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-sports-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -881,13 +960,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-sports-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -898,13 +979,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-sports-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -915,13 +998,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-sports-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -932,13 +1017,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
                                         </div>
-                                    </div>
+                                        <div class="a-sports-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -1345,7 +1432,7 @@
                             </a>
                         </div>
                     </div>
-                    <img src="./images/posters/greys-anatomy.jpeg" alt="">
+                    <!--<img src="./images/posters/greys-anatomy.jpeg" alt="">-->
 
                     <div class="poster">
                         <div class="poster-body">
@@ -1409,31 +1496,35 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                             </div>
-                            <div class="thumbnail">
-                                <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                            </div>
-                            <div class="a-concert-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams Tour</p>
+                            <a href="sinopsis.php">
+                                <div class="thumbnail">
+                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
                                 </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                            </div>
-                            <div class="thumbnail">
-                                <img src="./images/posters/monkeys-concert.jpeg" alt="">
-                            </div>
-                            <div class="a-concert-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">Arctic Monkeys</p>
+                                <div class="a-concert-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams Tour</p>
+                                    </div>
                                 </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="poster">
+                        <div class="poster-body">
+                            <div class="showtime-container">
+                                <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                             </div>
+                            <a href="sinopsis.php">
+                                <div class="thumbnail">
+                                    <img src="./images/posters/monkeys-concert.jpeg" alt="">
+                                </div>
+                                <div class="a-concert-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">Arctic Monkeys</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
@@ -1444,12 +1535,14 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                             </div>
-                            <div class="thumbnail">
-                                <img src="./images/posters/boy-pablo-tour.jpeg" alt="">
-                            </div>
-                            <div class="a-concert-rectangle ">
-                                <p class="a-poster-text-white">Boy Pablo: Tour</p>
-                            </div>
+                            <a href="sinopsis.php">
+                                <div class="thumbnail">
+                                    <img src="./images/posters/boy-pablo-tour.jpeg" alt="">
+                                </div>
+                                <div class="a-concert-rectangle ">
+                                    <p class="a-poster-text-white">Boy Pablo: Tour</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
@@ -1460,12 +1553,14 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                             </div>
-                            <div class="thumbnail">
-                                <img src="./images/posters/rammstein-tour.jpeg" alt="">
-                            </div>
-                            <div class="a-concert-rectangle ">
-                                <p class="a-poster-text-white">Rammstein: Tour</p>
-                            </div>
+                            <a href="sinpsis.php">
+                                <div class="thumbnail">
+                                    <img src="./images/posters/rammstein-tour.jpeg" alt="">
+                                </div>
+                                <div class="a-concert-rectangle ">
+                                    <p class="a-poster-text-white">Rammstein: Tour</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
@@ -1493,12 +1588,14 @@
                         <div class="poster">
                             <div class="poster-body">
                                 <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                                <div class="thumbnail">
-                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                </div>
-                                <div class="a-concert-rectangle ">
-                                    <p class="a-poster-text-white">COLDPLAY: A Head Full Of Dreams Tour</p>
-                                </div>
+                                <a href="sinopsis.php">
+                                    <div class="thumbnail">
+                                        <img src="./images/posters/coldplay-tour.jpeg" alt="">
+                                    </div>
+                                    <div class="a-concert-rectangle ">
+                                        <p class="a-poster-text-white">COLDPLAY: A Head Full Of Dreams Tour</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="poster">
@@ -1507,12 +1604,14 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                 </div>
-                                <div class="thumbnail">
-                                    <img src="./images/posters/monkeys-concert.jpeg" alt="">
-                                </div>
-                                <div class="a-concert-rectangle ">
-                                    <p class="a-poster-text-white">Arctic Monkeys</p>
-                                </div>
+                                <a href="sinopsis.php">
+                                    <div class="thumbnail">
+                                        <img src="./images/posters/monkeys-concert.jpeg" alt="">
+                                    </div>
+                                    <div class="a-concert-rectangle ">
+                                        <p class="a-poster-text-white">Arctic Monkeys</p>
+                                    </div>
+                                </a>
                             </div>
 
                         </div>
@@ -1522,12 +1621,14 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                 </div>
-                                <div class="thumbnail">
-                                    <img src="./images/posters/boy-pablo-tour.jpeg" alt="">
-                                </div>
-                                <div class="a-concert-rectangle ">
-                                    <p class="a-poster-text-white">Boy Pablo: Tour</p>
-                                </div>
+                                <a href="sinopsis.php">
+                                    <div class="thumbnail">
+                                        <img src="./images/posters/boy-pablo-tour.jpeg" alt="">
+                                    </div>
+                                    <div class="a-concert-rectangle ">
+                                        <p class="a-poster-text-white">Boy Pablo: Tour</p>
+                                    </div>
+                                </a>
                             </div>
 
                         </div>
@@ -1537,12 +1638,14 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                 </div>
-                                <div class="thumbnail">
-                                    <img src="./images/posters/rammstein-tour.jpeg" alt="">
-                                </div>
-                                <div class="a-concert-rectangle ">
-                                    <p class="a-poster-text-white">Rammstein: Tour</p>
-                                </div>
+                                <a href="sinopsis.php">
+                                    <div class="thumbnail">
+                                        <img src="./images/posters/rammstein-tour.jpeg" alt="">
+                                    </div>
+                                    <div class="a-concert-rectangle ">
+                                        <p class="a-poster-text-white">Rammstein: Tour</p>
+                                    </div>
+                                </a>
                             </div>
 
                         </div>
@@ -1552,12 +1655,14 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                 </div>
-                                <div class="thumbnail">
-                                    <img src="./images/posters/the-weeknd.jpeg" alt="">
-                                </div>
-                                <div class="a-concert-rectangle ">
-                                    <p class="a-poster-text-white">The Weeknd: Starboy Tour</p>
-                                </div>
+                                <a href="sinopsis.php">
+                                    <div class="thumbnail">
+                                        <img src="./images/posters/the-weeknd.jpeg" alt="">
+                                    </div>
+                                    <div class="a-concert-rectangle ">
+                                        <p class="a-poster-text-white">The Weeknd: Starboy Tour</p>
+                                    </div>
+                                </a>
                             </div>
 
                         </div>
@@ -1600,16 +1705,18 @@
                                 <div class="poster">
                                     <div class="poster-body">
                                         <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                                        <div class="thumbnail">
-                                            <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                        </div>
-                                        <div class="a-concert-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams
-                                                    Tour
-                                                </p>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/posters/coldplay-tour.jpeg" alt="">
                                             </div>
-                                        </div>
+                                            <div class="a-concert-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams
+                                                        Tour
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
 
                                 </div>
@@ -1641,13 +1748,14 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
-                                        <div class="thumbnail">
-                                            <img src="./images/posters/boy-pablo-tour.jpeg" alt="">
-
-                                        </div>
-                                        <div class="a-concert-rectangle thumbnail-info-title">
-                                            <p class="a-poster-text-white">Boy Pablo: Tour</p>
-                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/posters/boy-pablo-tour.jpeg" alt="">
+                                            </div>
+                                            <div class="a-concert-rectangle thumbnail-info-title">
+                                                <p class="a-poster-text-white">Boy Pablo: Tour</p>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -1658,12 +1766,14 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
-                                        <div class="thumbnail">
-                                            <img src="./images/posters/rammstein-tour.jpeg" alt="">
-                                        </div>
-                                        <div class="a-concert-rectangle thumbnail-info-title">
-                                            <p class="a-poster-text-white">Rammstein: Tour</p>
-                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/posters/rammstein-tour.jpeg" alt="">
+                                            </div>
+                                            <div class="a-concert-rectangle thumbnail-info-title">
+                                                <p class="a-poster-text-white">Rammstein: Tour</p>
+                                            </div>
+                                        </a>
                                     </div>
 
                                 </div>
@@ -1708,14 +1818,16 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                             </div>
-                            <div class="thumbnail">
-                                <img src="./images/posters/alla-rancho-peli.jpeg" alt="">
-                            </div>
-                            <div class="a-cinema-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-black">ALLÁ EN EL RANCHO GRANDE</p>
+                            <a href="sinopsis.php">
+                                <div class="thumbnail">
+                                    <img src="./images/posters/alla-rancho-peli.jpeg" alt="">
                                 </div>
-                            </div>
+                                <div class="a-cinema-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-black">ALLÁ EN EL RANCHO GRANDE</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
@@ -1725,14 +1837,16 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                             </div>
-                            <div class="thumbnail">
-                                <img src="./images/posters/maria-candelaria-peli.jpeg" alt="">
-                            </div>
-                            <div class="a-cinema-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-black">MARÍA CANDELERIA</p>
+                            <a href="sinopsis.php">
+                                <div class="thumbnail">
+                                    <img src="./images/posters/maria-candelaria-peli.jpeg" alt="">
                                 </div>
-                            </div>
+                                <div class="a-cinema-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-black">MARÍA CANDELERIA</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
@@ -1743,14 +1857,16 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                             </div>
-                            <div class="thumbnail">
-                                <img src="./images/posters/flor-silvestre-peli.jpeg" alt="">
-                            </div>
-                            <div class="a-cinema-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-black">FLOR SILVESTRE</p>
+                            <a href="sinopsis.php">
+                                <div class="thumbnail">
+                                    <img src="./images/posters/flor-silvestre-peli.jpeg" alt="">
                                 </div>
-                            </div>
+                                <div class="a-cinema-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-black">FLOR SILVESTRE</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
@@ -1761,14 +1877,16 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                             </div>
-                            <div class="thumbnail">
-                                <img src="./images/posters/macario-peli.jpeg" alt="">
-                            </div>
-                            <div class="a-cinema-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-black">MACARIO</p>
+                            <a href="sinopsis.php">
+                                <div class="thumbnail">
+                                    <img src="./images/posters/macario-peli.jpeg" alt="">
                                 </div>
-                            </div>
+                                <div class="a-cinema-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-black">MACARIO</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
@@ -1800,14 +1918,16 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                 </div>
-                                <div class="thumbnail">
-                                    <img src="./images/posters/flor-silvestre-peli.jpeg" alt="">
-                                </div>
-                                <div class="a-cinema-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-black">ALLÁ EN EL RANCHO GRANDE</p>
+                                <a href="sinopsis.php">
+                                    <div class="thumbnail">
+                                        <img src="./images/posters/flor-silvestre-peli.jpeg" alt="">
                                     </div>
-                                </div>
+                                    <div class="a-cinema-rectangle">
+                                        <div class="poster-title-margin">
+                                            <p class="a-poster-text-black">ALLÁ EN EL RANCHO GRANDE</p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
 
                         </div>
@@ -1817,14 +1937,16 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                 </div>
-                                <div class="thumbnail">
-                                    <img src="./images/posters/maria-candelaria-peli.jpeg" alt="">
-                                </div>
-                                <div class="a-cinema-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-black">MARÍA CANDELARIA</p>
+                                <a href="sinopsis.php">
+                                    <div class="thumbnail">
+                                        <img src="./images/posters/maria-candelaria-peli.jpeg" alt="">
                                     </div>
-                                </div>
+                                    <div class="a-cinema-rectangle">
+                                        <div class="poster-title-margin">
+                                            <p class="a-poster-text-black">MARÍA CANDELARIA</p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
 
                         </div>
@@ -1834,14 +1956,16 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                 </div>
-                                <div class="thumbnail">
-                                    <img src="./images/posters/flor-silvestre-peli.jpeg" alt="">
-                                </div>
-                                <div class="a-cinema-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-black">FLOR SILVESTRE</p>
+                                <a href="sinopsis.php">
+                                    <div class="thumbnail">
+                                        <img src="./images/posters/flor-silvestre-peli.jpeg" alt="">
                                     </div>
-                                </div>
+                                    <div class="a-cinema-rectangle">
+                                        <div class="poster-title-margin">
+                                            <p class="a-poster-text-black">FLOR SILVESTRE</p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
 
                         </div>
@@ -1852,14 +1976,16 @@
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                 </div>
                             </div>
-                            <div class="thumbnail">
-                                <img src="./images/posters/macario-peli.jpeg" alt="">
-                            </div>
-                            <div class="a-cinema-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-black">MACARIO</p>
+                            <a href="sinopsis.php">
+                                <div class="thumbnail">
+                                    <img src="./images/posters/macario-peli.jpeg" alt="">
                                 </div>
-                            </div>
+                                <div class="a-cinema-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-black">MACARIO</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
@@ -1964,14 +2090,16 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                        <img src="./images/posters/alla-rancho-peli.jpeg" alt="">
-                                    </div>
-                                    <div class="a-cinema-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">ALLÁ EN EL RANCHO GRANDE</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/posters/alla-rancho-peli.jpeg" alt="">
                                         </div>
-                                    </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">ALLÁ EN EL RANCHO GRANDE</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col poster-pad-l">
@@ -1980,14 +2108,16 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                        <img src="./images/posters/maria-candelaria-peli.jpeg" alt="">
-                                    </div>
-                                    <div class="a-cinema-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">MARÍA CANDELARIA</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/posters/maria-candelaria-peli.jpeg" alt="">
                                         </div>
-                                    </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">MARÍA CANDELARIA</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -2014,14 +2144,16 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail">
-                                        <img src="./images/posters/macario-peli.jpeg" alt="">
-                                    </div>
-                                    <div class="a-cinema-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">MACARIO</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/posters/macario-peli.jpeg" alt="">
                                         </div>
-                                    </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">MACARIO</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -2064,14 +2196,15 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                             </div>
-
-                            <div class="thumbnail-large">
-                            </div>
-                            <div class="a-vision-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                            <a href="sinopsis.php">
+                                <div class="thumbnail-large">
                                 </div>
-                            </div>
+                                <div class="a-vision-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
@@ -2102,13 +2235,15 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                             </div>
-                            <div class="thumbnail-large">
-                            </div>
-                            <div class="a-vision-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                            <a href="sinopsis.php">
+                                <div class="thumbnail-large">
                                 </div>
-                            </div>
+                                <div class="a-vision-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
@@ -2118,13 +2253,15 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                             </div>
-                            <div class="thumbnail-large">
-                            </div>
-                            <div class="a-vision-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                            <a href="sinopsis.php">
+                                <div class="thumbnail-large">
                                 </div>
-                            </div>
+                                <div class="a-vision-rectangle">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
@@ -2156,13 +2293,15 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                 </div>
-                                <div class="thumbnail-large">
-                                </div>
-                                <div class="a-vision-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                <a href="sinopsis.php">
+                                    <div class="thumbnail-large">
                                     </div>
-                                </div>
+                                    <div class="a-vision-rectangle">
+                                        <div class="poster-title-margin">
+                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
 
                         </div>
@@ -2173,13 +2312,15 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                 </div>
-                                <div class="thumbnail-large"></div>
-                                <div class="image"></div>
-                                <div class="a-vision-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                <a href="sinopsis.php">
+                                    <div class="thumbnail-large"></div>
+
+                                    <div class="a-vision-rectangle">
+                                        <div class="poster-title-margin">
+                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
 
                         </div>
@@ -2189,13 +2330,15 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                 </div>
-                                <div class="thumbnail-large">
-                                </div>
-                                <div class="a-vision-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                <a href="sinopsis.php">
+                                    <div class="thumbnail-large">
                                     </div>
-                                </div>
+                                    <div class="a-vision-rectangle">
+                                        <div class="poster-title-margin">
+                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
 
                         </div>
@@ -2206,13 +2349,15 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                 </div>
-                                <div class="thumbnail-large">
-                                </div>
-                                <div class="a-vision-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                <a href="sinopsis.php">
+                                    <div class="thumbnail-large">
                                     </div>
-                                </div>
+                                    <div class="a-vision-rectangle">
+                                        <div class="poster-title-margin">
+                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
 
                         </div>
@@ -2260,13 +2405,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail-large">
-                                    </div>
-                                    <div class="a-vision-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail-large">
                                         </div>
-                                    </div>
+                                        <div class="a-vision-rectangle">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -2276,14 +2423,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail-large">
-                                    </div>
-
-                                    <div class="a-vision-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail-large">
                                         </div>
-                                    </div>
+                                        <div class="a-vision-rectangle">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -2293,51 +2441,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail-large">
-
-                                    </div>
-
-                                    <div class="a-vision-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail-large">
                                         </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <div class="thumbnail-large">
-                                    </div>
-
-                                    <div class="a-vision-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                        <div class="a-vision-rectangle">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <div class="thumbnail-large">
-                                    </div>
-                                    <div class="a-vision-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
-                                        </div>
-                                    </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -2348,13 +2460,54 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail-large">
-                                    </div>
-                                    <div class="a-vision-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail-large">
                                         </div>
+                                        <div class="a-vision-rectangle">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail-large">
+                                        </div>
+                                        <div class="a-vision-rectangle">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail-large">
+                                        </div>
+                                        <div class="a-vision-rectangle">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -2401,62 +2554,70 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                             </div>
+                            <a href="sinopsis.php">
+                                <div class="thumbnail-large"></div>
+                                <div class="a-sports-rectangle ">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="poster">
+                        <div class="poster-body">
+                            <div class="showtime-container">
+                                <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                            </div>
+                            <a href="sinopsis.php">
+                                <div class="thumbnail-large"></div>
+                                <div class="a-sports-rectangle ">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="poster">
+                        <div class="poster-body">
+                            <div class="showtime-container">
+                                <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                            </div>
+                            <a href="sinopsis.php">
+                                <div class="thumbnail-large"></div>
+                                <div class="a-sports-rectangle ">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="poster">
+                        <div class="poster-body">
+                            <div class="showtime-container">
+                                <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                            </div>
+                        </div>
+                        <a href="sinopsis.php">
                             <div class="thumbnail-large"></div>
                             <div class="a-sports-rectangle ">
                                 <div class="poster-title-margin">
                                     <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                            </div>
-                            <div class="thumbnail-large"></div>
-                            <div class="a-sports-rectangle ">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                            </div>
-                            <div class="thumbnail-large"></div>
-                            <div class="a-sports-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                            </div>
-                        </div>
-                        <div class="thumbnail-large"></div>
-                        <div class="a-sports-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                            </div>
-                        </div>
+                        </a>
 
                     </div>
 
@@ -2494,12 +2655,14 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
-                                        <div class="thumbnail-large"></div>
-                                        <div class="a-sports-rectangle ">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail-large"></div>
+                                            <div class="a-sports-rectangle ">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
 
                                 </div>
@@ -2511,12 +2674,14 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
-                                        <div class="thumbnail-large"></div>
-                                        <div class="a-sports-rectangle ">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail-large"></div>
+                                            <div class="a-sports-rectangle ">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
 
                                 </div>
@@ -2527,12 +2692,14 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
-                                        <div class="thumbnail-large"></div>
-                                        <div class="a-sports-rectangle ">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail-large"></div>
+                                            <div class="a-sports-rectangle ">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
 
                                 </div>
@@ -2542,12 +2709,14 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
-                                        <div class="thumbnail-large"></div>
-                                        <div class="a-sports-rectangle ">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail-large"></div>
+                                            <div class="a-sports-rectangle ">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
 
                                 </div>
@@ -2597,13 +2766,15 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
-                                    <div class="thumbnail-large">
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail-large">
                                         </div>
-                                    </div>
+                                        <div class="a-sports-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -2614,14 +2785,16 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
-                                        <div class="thumbnail-large">
-                                        </div>
-
-                                        <div class="a-sports-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail-large">
                                             </div>
-                                        </div>
+
+                                            <div class="a-sports-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
 
                                 </div>
