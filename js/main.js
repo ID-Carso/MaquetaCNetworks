@@ -34,12 +34,10 @@ $(document).ready(function() {
   var loginCountry = $(".login-country");
   if (!sessionSrc && window.location.pathname !== "/") {
     location.href = "/";
-    console.log("hola");
   } else {
     loginCountry.attr("src", sessionSrc);
   }
 
-  console.log(window.location.pathname);
   /*End función elegir un país y mostrar la bandera en navbar */
 
   $(".signup-button").click(function() {
@@ -75,7 +73,6 @@ $(document).ready(function() {
     correo1 = document.getElementById("login-email").value;
     password1 = document.getElementById("login-password").value;
     expresion1 = /\w+@\w+\.+[a-z]/;
-    console.log(password1.length);
     if (correo1 === "" && password1 === "") {
       nodatos.css("display", "block");
       return false;
@@ -90,6 +87,7 @@ $(document).ready(function() {
       return false;
     }
   });
+
   const inputPassword = $("#login-password");
   const caracteresMin = $(".caracteres-min");
   const listo = $(".listo");

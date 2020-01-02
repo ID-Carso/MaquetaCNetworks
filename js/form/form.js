@@ -10,7 +10,6 @@ function ShowHidePassword(iconPassword) {
 function validateEmail(inputEmail, messageError) {
   let email = inputEmail.val();
   let filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-  console.log(email);
   if (email.length == 0) {
     messageError
       .addClass("invalid-email")
