@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="col-12 no-gutters">
-                <img src="./images/home/planes-copy.png" class="advertising-image" />
+                <img src="../images/home/planes-copy.png" class="advertising-image" />
             </div>
         </div>
     </div>
@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="col-6 no-gutters">
-                    <img src="./images/home/planes-copy.png" class="advertising-image" />
+                    <img src="../images/home/planes-copy.png" class="advertising-image" />
                 </div>
             </div>
         </div>
@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div class="col-7 col-lg-6 no-gutters">
-                    <img src="./images/home/planes-copy.png" class="advertising-image" />
+                    <img src="../images/home/planes-copy.png" class="advertising-image" />
                 </div>
             </div>
         </div>
