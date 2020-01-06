@@ -18,7 +18,7 @@ function validateEmail(inputEmail, messageError) {
   } else if (!filter.test(email)) {
     messageError
       .addClass("invalid-email")
-      .text("El correo electrónico no es correcto");
+      .text("El correo electrónico no tiene un formato válido");
     console.log("error");
     return false;
   } else {

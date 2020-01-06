@@ -212,61 +212,6 @@ h6 {
 
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
-@font-face {
-  font-family: "Gotham-Medium";
-  src: url(../../../fonts/Gotham-Medium.ttf);
-}
-
-@font-face {
-  font-family: "Gotham-Black";
-  src: url(../../../fonts/Gotham-Black.ttf);
-}
-
-@font-face {
-  font-family: "Gotham-Book";
-  src: url(../../../fonts/Gotham-Book.ttf);
-}
-
-@font-face {
-  font-family: "Gotham-Bold";
-  src: url(../../../fonts/Gotham-Bold.ttf);
-}
-
-@font-face {
-  font-family: "Gotham-Light";
-  src: url(../../../fonts/Gotham-Light.ttf);
-}
-
-@font-face {
-  font-family: "Gotham-BoldItalic";
-  src: url(../../../fonts/Gotham-BoldItalic.ttf);
-}
-
-@font-face {
-  font-family: "Montserrat-Light";
-  src: url(../../../fonts/Montserrat-Light.ttf);
-}
-
-@font-face {
-  font-family: "Montserrat-Regular";
-  src: url(../../../fonts/Montserrat-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Montserrat-SemiBold";
-  src: url(../../../fonts/Montserrat-SemiBold.ttf);
-}
-
-@font-face {
-  font-family: "Montserrat-Bold";
-  src: url(../../../fonts/Montserrat-Bold.ttf);
-}
-
-@font-face {
-  font-family: "Montserrat-Black";
-  src: url(../../../fonts/Montserrat-Black.ttf);
-}
-
 .a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-concert-channel-subtitle, .a-claro-channel-subtitle-bold, .a-subtitle, .a-claro-cinema-title, .advertising-title, .advertising-subtitle, .a-claro-sports-title, .a-claro-channel-subtitle,
 .a-claro-cinema-subtitle,
 .a-our-vision-subtitle,
@@ -4348,61 +4293,6 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .header-slider .slick-track {
   margin-bottom: 0px !important;
-}
-
-@font-face {
-  font-family: "Gotham-Medium";
-  src: url(../../../fonts/Gotham-Medium.ttf);
-}
-
-@font-face {
-  font-family: "Gotham-Black";
-  src: url(../../../fonts/Gotham-Black.ttf);
-}
-
-@font-face {
-  font-family: "Gotham-Book";
-  src: url(../../../fonts/Gotham-Book.ttf);
-}
-
-@font-face {
-  font-family: "Gotham-Bold";
-  src: url(../../../fonts/Gotham-Bold.ttf);
-}
-
-@font-face {
-  font-family: "Gotham-Light";
-  src: url(../../../fonts/Gotham-Light.ttf);
-}
-
-@font-face {
-  font-family: "Gotham-BoldItalic";
-  src: url(../../../fonts/Gotham-BoldItalic.ttf);
-}
-
-@font-face {
-  font-family: "Montserrat-Light";
-  src: url(../../../fonts/Montserrat-Light.ttf);
-}
-
-@font-face {
-  font-family: "Montserrat-Regular";
-  src: url(../../../fonts/Montserrat-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Montserrat-SemiBold";
-  src: url(../../../fonts/Montserrat-SemiBold.ttf);
-}
-
-@font-face {
-  font-family: "Montserrat-Bold";
-  src: url(../../../fonts/Montserrat-Bold.ttf);
-}
-
-@font-face {
-  font-family: "Montserrat-Black";
-  src: url(../../../fonts/Montserrat-Black.ttf);
 }
 
 /*Tamaño de textos - responsive*/

@@ -1,0 +1,18 @@
+@import "../settings/color";
+@import "../settings/config";
+
+.a-text-black-bold {
+  color: $blackText;
+  font-family: $montserratBold;
+}
+
+.a-text-black-light {
+  color: $blackText;
+  font-family: $montserratLight;
+}
+
+.a-prev-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
