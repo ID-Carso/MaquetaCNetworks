@@ -8,7 +8,9 @@
     <title>Claro Networks - Backoffice</title>
     <link rel="stylesheet" href="../styles/bootstrap-4.4.1/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="../js/lib/jquery-3.4.1.min.js"></script>
     <script src="../js/lib/easyXDM.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
     <script type="text/javascript">
         new easyXDM.Socket({
             remote: "home.php",
@@ -26,19 +28,39 @@
 
 <body>
     <main>
-        <div class="col-11 mx-auto">
-            <div class="o-prev-options-container">
-                <p class="a-text-black-light a-prev-title">previsualizar</p>
+
+        <div class="col-11 mx-auto mb-5">
+
+            <div class="d-flex justify-content-between align-items-end">
                 <div>
-                    <img src="./images/mobile.png" class="a-prev-image" alt="mobile">
-                    <img src="./images/tablet.svg" class="a-prev-image" alt="tablet">
-                    <img src="./images/pc.svg" class="a-prev-image" alt="pc">
+                    <p class="a-text-black-bold a-edition-title">HOME</p>
+                </div>
+                <div class="">
+                    <p class="a-text-black-light a-prev-title">previsualizar</p>
+                    <div>
+                        <img src="./images/mobile.svg" class="a-prev-image" alt="mobile" id="prev-mobile">
+                        <img src="./images/tablet.svg" class="a-prev-image" alt="tablet" id="prev-tablet">
+                        <img src="./images/pc.svg" class="a-prev-image" alt="pc" id="prev-desktop">
+                    </div>
+
                 </div>
             </div>
+
             <div>
-                <p class="a-text-black-bold">HOME</p>
-                <button class="a-text-white a-button-basic a-button-blue">Guardar Edición</button>
+                <button class="a-text-white a-button-basic a-button-blue a-button-save">Guardar Edición</button>
             </div>
+
+            <div class="o-prev-options-container d-flex justify-content-between">
+                <div>
+                    <span class="a-text-black-bold">Última Edición: </span>
+                    <span class="a-text-black-light ml-4"> septiembre 17 2019 | 18:33:25</span>
+                </div>
+                <div>
+                    <span class="a-text-black-bold">Por: </span>
+                    <span class="a-text-black-light ml-4"> Juan Carlos | Usuario Limitado</span>
+                </div>
+            </div>
+
             <div class="o-home-office-container"></div>
         </div>
 
