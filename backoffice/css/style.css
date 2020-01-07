@@ -39,6 +39,25 @@
   margin-bottom: 0;
 }
 
+.a-text-white {
+  color: #ffffff;
+  font-family: "Montserrat-SemiBold";
+}
+
+.a-prev-image {
+  width: 100%;
+  max-width: 50px;
+}
+
+.a-button-basic {
+  padding: 12px 24px;
+  border-radius: 10px;
+}
+
+.a-button-blue {
+  background: #40c7e9;
+}
+
 iframe {
   position: static !important;
 }

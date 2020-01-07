@@ -26,12 +26,22 @@
 
 <body>
     <main>
-        <div class="o-prev-options-container">
-            <p class="a-text-black-light a-prev-title">previsualización</p>
+        <div class="col-11 mx-auto">
+            <div class="o-prev-options-container">
+                <p class="a-text-black-light a-prev-title">previsualizar</p>
+                <div>
+                    <img src="./images/mobile.png" class="a-prev-image" alt="mobile">
+                    <img src="./images/tablet.svg" class="a-prev-image" alt="tablet">
+                    <img src="./images/pc.svg" class="a-prev-image" alt="pc">
+                </div>
+            </div>
+            <div>
+                <p class="a-text-black-bold">HOME</p>
+                <button class="a-text-white a-button-basic a-button-blue">Guardar Edición</button>
+            </div>
+            <div class="o-home-office-container"></div>
         </div>
-        <div class="o-home-office-container">
 
-        </div>
     </main>
 
 </body>
