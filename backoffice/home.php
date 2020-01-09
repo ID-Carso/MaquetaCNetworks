@@ -2106,10 +2106,12 @@
                     </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
-                    <div>
+                    <div class="position-relative p-xl-3 border-t-gray border-l-gray border-b-gray border-r-gray">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                         <img class="concert-footer-img" src="../images/home/cinema-home-img.svg" alt="">
                     </div>
-                    <div>
+                    <div class="position-relative p-xl-3 border-t-gray border-l-gray border-b-gray border-r-gray">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                         <p class="horario-text text-dark">
                             Horario sujetos a cambios
                         </p>
