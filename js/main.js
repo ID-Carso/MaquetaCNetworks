@@ -424,8 +424,8 @@ $(document).ready(function() {
     dots: true,
     centerMode: false,
     arrows: true,
-    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-tv-prev" />',
-    nextArrow: '<img src="../images/sliders/next.png" class="arrow-tv-next" />',
+    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
     responsive: [
       {
         breakpoint: 768,
@@ -461,9 +461,9 @@ $(document).ready(function() {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-tv-prev" />',
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-tv-next" />'
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
         }
       },
       {
@@ -476,9 +476,9 @@ $(document).ready(function() {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-tv-prev" />',
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-tv-next" />'
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
         }
       }
     ]

@@ -10,6 +10,7 @@
     <link rel="shortcut icon" type="image/png" href="./images/favicon/claro-fav.png" />
     <link rel="stylesheet" href="../styles/bootstrap-4.4.1/bootstrap.min.css" />
     <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="../slick-master/slick/slick.css" />
     <link rel="stylesheet" href="../slick-master/slick/slick-theme.css" />
     <script src="../js/lib/jquery-3.4.1.min.js"></script>
@@ -26,49 +27,73 @@
 
         <header class="home-header">
             <div class="circle-video">
-                <video preload="yes" playsinline autoplay muted loop class="home-video">
+                <button class="a-text-white-regular a-button-black a-button-edition-video">Cambiar video</button>
+                <video preload="yes" playsinline autoplay muted loop class="home-video w-100">
                     <source src="../video/demo.mp4" type="video/mp4" />
                 </video>
             </div>
 
             <div class="header">
-                <div class="header-details header-detail-margin col-md-6">
+                <img src="../images/home/american-horror.jpeg" class="background-home rellax" data-rellax="10">
+                <div class="header-details header-detail-margin col-md-7">
                     <h1 class="header-h1">
-                        <span class="header-span">Descubre<br>Claro<br></span>Networks
+                        <div class="p-2 a-border-gray position-relative">
+                            <span class="header-span">Descubre Claro<br></span>
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+                        </div>
+                        <div class="p-2 a-border-gray position-relative">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+                            Networks
+                        </div>
+
                     </h1>
 
                 </div>
             </div>
         </header>
         <section class="o-tv-section margin-ahora-tv">
-            <h2 class="title-tv">AHORA <span class="header-span">AL AIRE </span><span class="header-point">•</span></h2>
+            <h2 class="title-tv">
+                <div class="d-inline p-2 a-border-gray position-relative">
+                    AHORA
+                    <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+                </div>
+                <div class="d-inline p-2 a-border-gray position-relative">
+                    <span class="header-span">AL AIRE </span><span class="header-point">•</span>
+                    <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+                </div>
+            </h2>
         </section>
         <section>
             <div class="o-tv-section">
 
                 <div class="row no-gutters">
                     <ul class="tv-list col-md-11">
-                        <div class="col-md text-center no-gap border-right">
+                        <div class="col-md text-center no-gap border-right position-relative">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
                             <li rel="claro-canal" class="active-navItem nav-li">
                                 <img class="claro-nav-image" src="../images/home/tv-1.svg" alt="" />
                             </li>
                         </div>
-                        <div class="col-md text-center no-gap border-right">
+                        <div class="col-md text-center no-gap border-right position-relative">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
                             <li rel="concert-channel" class="nav-li">
                                 <img class="nav-image" src="../images/home/tv-2.svg" alt="" />
                             </li>
                         </div>
-                        <div class="col-md text-center no-gap border-right">
+                        <div class="col-md text-center no-gap border-right position-relative">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
                             <li rel="claro-cinema" class="nav-li">
                                 <img class="nav-image" src="../images/home/tv-3.svg" alt="" />
                             </li>
                         </div>
-                        <div class="col-md text-center no-gap border-right">
+                        <div class="col-md text-center no-gap border-right position-relative">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
                             <li rel="nuestra-vision" class="nav-li">
                                 <img class="nav-image" src="../images/home/tv-4.svg" alt="" />
                             </li>
                         </div>
-                        <div class="col-md text-center no-gap">
+                        <div class="col-md text-center no-gap position-relative">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
                             <li rel="claro-sports" class="nav-li">
                                 <img class="nav-image" src="../images/home/tv-5.svg" alt="" />
                             </li>
@@ -77,8 +102,10 @@
                     </ul>
                 </div>
                 <div class="tv-videos-container">
-                    <div id="claro-canal" class="tv-content">
-                        <div class="tv-slider" id="tv-claro-slider">
+                    <div id="claro-canal" class="tv-content position-relative">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+                        <div class="tv-slider p-3 a-border-gray" id="tv-claro-slider">
+
                             <div class="poster">
                                 <div class="poster-body">
                                     <div class="showtime-container">
@@ -214,8 +241,9 @@
                         </div>
                     </div>
                     <!--Concert channel de "Ahora en tv"-->
-                    <div id="concert-channel" class="tv-content">
-                        <div class="tv-slider" id="tv-concert-slider">
+                    <div id="concert-channel" class="tv-content position-relative">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+                        <div class="tv-slider p-3 a-border-gray" id="tv-concert-slider">
 
                             <div class="poster">
                                 <div class="poster-body">
@@ -376,8 +404,9 @@
                     </div>
                     <!--End Concert channel de "Ahora en tv"-->
                     <!--Claro cinema de "Ahora en tv"-->
-                    <div id="claro-cinema" class="tv-content">
-                        <div class="tv-slider" id="tv-cinema-slider">
+                    <div id="claro-cinema" class="tv-content position-relative">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+                        <div class="tv-slider p-3 a-border-gray" id="tv-cinema-slider">
                             <div class="poster">
                                 <div class="poster-body">
                                     <div class="showtime-container">
@@ -545,8 +574,9 @@
                     </div>
                     <!--End Claro cinema de "Ahora en tv"-->
                     <!--Nuestra visión de "Ahora en tv"-->
-                    <div id="nuestra-vision" class="tv-content">
-                        <div class="tv-slider" id="tv-vision-slider">
+                    <div id="nuestra-vision" class="tv-content position-relative">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+                        <div class="tv-slider p-3 a-border-gray" id="tv-vision-slider">
 
                             <div class="poster">
                                 <div class="poster-body">
@@ -642,7 +672,6 @@
                                     </div>
 
                                 </div>
-
                             </div>
                             <div class="poster">
                                 <div class="poster-body">
@@ -740,9 +769,9 @@
                     </div>
                     <!--End Nuestra visión de "Ahora en tv"-->
                     <!--Claro sports de "Ahora en tv"-->
-                    <div id="claro-sports" class="tv-content">
-                        <div class="tv-slider" id="tv-sports-slider">
-
+                    <div id="claro-sports" class="tv-content position-relative">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+                        <div class="tv-slider p-3 a-border-gray" id="tv-sports-slider">
                             <div class="poster">
                                 <div class="poster-body">
                                     <div class="showtime-container">
@@ -920,11 +949,15 @@
 
             </div>
         </section>
-        <div class="our-channels">
-            <h1 class="our-channels-title">
-                Nuestros Canales
-            </h1>
+        <div class="p-2 a-border-gray o-channels-container position-relative">
+            <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+            <div class="our-channels">
+                <h1 class="our-channels-title">
+                    Nuestros Canales
+                </h1>
+            </div>
         </div>
+
         <!--Sección de Canal Claro-->
         <div class="o-claro-section">
             <!--Sección Canal Claro mobile-->

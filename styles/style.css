@@ -1,57 +1,32 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Gotham-Medium";
-  src: url(../../../fonts/Gotham-Medium.ttf);
-}
-
-@font-face {
-  font-family: "Gotham-Black";
-  src: url(../../../fonts/Gotham-Black.ttf);
-}
-
-@font-face {
-  font-family: "Gotham-Book";
-  src: url(../../../fonts/Gotham-Book.ttf);
-}
-
-@font-face {
-  font-family: "Gotham-Bold";
-  src: url(../../../fonts/Gotham-Bold.ttf);
-}
-
-@font-face {
-  font-family: "Gotham-Light";
-  src: url(../../../fonts/Gotham-Light.ttf);
-}
-
-@font-face {
-  font-family: "Gotham-BoldItalic";
-  src: url(../../../fonts/Gotham-BoldItalic.ttf);
-}
-
-@font-face {
   font-family: "Montserrat-Light";
   src: url(../../../fonts/Montserrat-Light.ttf);
+  font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Regular";
   src: url(../../../fonts/Montserrat-Regular.ttf);
+  font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-SemiBold";
   src: url(../../../fonts/Montserrat-SemiBold.ttf);
+  font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Bold";
   src: url(../../../fonts/Montserrat-Bold.ttf);
+  font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Black";
   src: url(../../../fonts/Montserrat-Black.ttf);
+  font-display: block;
 }
 
 /*html,
@@ -222,7 +197,7 @@ h6 {
 }
 
 .a-sports-text-poster, .a-poster-text-white, .a-poster-text-black {
-  font-family: "Gotham-Medium";
+  font-family: "Montserrat-SemiBold";
   padding: 6px;
 }
 
@@ -240,7 +215,7 @@ h6 {
 
 .a-programming-text {
   color: #ffffff;
-  font-family: "Gotham-Medium";
+  font-family: "Montserrat-SemiBold";
   font-size: 16px;
   margin: 10px;
 }
@@ -281,12 +256,12 @@ h6 {
 .a-subtitle {
   font-size: 14px;
   color: #262626;
-  font-family: "Gotham-Light";
+  font-family: "Montserrat-Regular";
   padding-bottom: 14px;
 }
 
 .a-subtitle span {
-  font-family: "Gotham-Medium";
+  font-family: "Montserrat-SemiBold";
 }
 
 .a-claro-cinema-title {
@@ -302,7 +277,7 @@ h6 {
 }
 
 .a-subtitle-bold {
-  font-family: "Gotham-Medium";
+  font-family: "Montserrat-SemiBold";
   font-size: 14px;
   padding-bottom: 2%;
 }
@@ -368,7 +343,7 @@ h6 {
 .a-claro-sports-subtitle {
   font-size: 14px;
   color: #262626;
-  font-family: "Gotham-Light";
+  font-family: "Montserrat-Regular";
   padding-bottom: 14px;
 }
 
@@ -449,7 +424,7 @@ h6 {
 
 .title-tv {
   font-size: 20px;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
   text-align: center;
 }
 
@@ -3956,7 +3931,7 @@ input[type="radio"]:checked + .mujer-estilo {
   text-transform: uppercase;
   height: 100%;
   text-align: center;
-  font-family: "Gotham-Black";
+  font-family: "Montserrat-Black";
 }
 
 #next-week-slider {
@@ -4998,7 +4973,6 @@ input[type="radio"]:checked + .mujer-estilo {
   .advertising-subtitle {
     font-size: 18px;
     color: #00caf5;
-    font-family: "Gotham-Black";
   }
   .footer-title {
     font-size: 40px;
@@ -6024,7 +5998,6 @@ input[type="radio"]:checked + .mujer-estilo {
   .advertising-subtitle {
     font-size: 25px;
     color: #00caf5;
-    font-family: "Gotham-Black";
   }
   .advertising-text {
     font-size: 14px;
@@ -7649,7 +7622,6 @@ input[type="radio"]:checked + .mujer-estilo {
   .advertising-subtitle {
     font-size: 25px;
     color: #00caf5;
-    font-family: "Gotham-Black";
   }
   .advertising-text {
     font-size: 14px;
@@ -8730,7 +8702,6 @@ input[type="radio"]:checked + .mujer-estilo {
   .advertising-subtitle {
     font-size: 25px;
     color: #00caf5;
-    font-family: "Gotham-Black";
   }
   .advertising-text {
     font-size: 14px;

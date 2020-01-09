@@ -14,10 +14,16 @@
   margin-bottom: 17px;
 }
 
-.opacity-100 {
-  opacity: 1;
+.a-button-black {
+  border-radius: 19px;
+  padding: 10px;
+  background: $blackText;
+  border-color: $blackText;
+  cursor: pointer;
 }
 
-.opacity-40 {
-  opacity: 0.4;
+.a-button-edition-video {
+  position: absolute;
+  right: 3%;
+  top: 3%;
 }

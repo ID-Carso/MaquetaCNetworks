@@ -7,7 +7,7 @@
 }
 
 %poster-title-basic {
-  font-family: $gothamMedium;
+  font-family: $montserratSemiBold;
   padding: 6px;
 }
 
@@ -35,7 +35,7 @@
 
 .a-programming-text {
   color: $textWhite;
-  font-family: $gothamMedium;
+  font-family: $montserratSemiBold;
   font-size: $sizeProgramming;
   margin: 10px;
 }
@@ -70,12 +70,16 @@
 }
 
 .a-subtitle {
-  @include title-section($blackColor, $posterTitleResponsive, $gothamLight);
+  @include title-section(
+    $blackColor,
+    $posterTitleResponsive,
+    $montserratRegular
+  );
   padding-bottom: 14px;
 }
 
 .a-subtitle span {
-  font-family: $gothamMedium;
+  font-family: $montserratSemiBold;
 }
 
 .a-claro-cinema-title {
@@ -89,7 +93,7 @@
 }
 
 .a-subtitle-bold {
-  font-family: $gothamMedium;
+  font-family: $montserratSemiBold;
   font-size: $posterTitleResponsive;
   padding-bottom: $titlesPadding;
 }
@@ -143,7 +147,11 @@
 .a-claro-cinema-subtitle,
 .a-our-vision-subtitle,
 .a-claro-sports-subtitle {
-  @include title-section($blackColor, $posterTitleResponsive, $gothamLight);
+  @include title-section(
+    $blackColor,
+    $posterTitleResponsive,
+    $montserratRegular
+  );
   padding-bottom: 14px;
 }
 
@@ -218,7 +226,7 @@
 
 .title-tv {
   font-size: $fontlg;
-  font-family: $gothamBlack;
+  font-family: $montserratBlack;
   text-align: center;
 }
 

@@ -33,6 +33,11 @@
   font-family: "Montserrat-Light";
 }
 
+.a-text-white-regular {
+  color: #ffffff;
+  font-family: "Montserrat-Regular";
+}
+
 .a-prev-title {
   font-size: 16px;
   text-transform: uppercase;
@@ -58,8 +63,8 @@
   border-right: 1px solid #d8d8d8;
   cursor: pointer;
   opacity: 0.4;
-  -webkit-transition: all 1.5s;
-  transition: all 1.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .a-prev-image:nth-child(3) {
@@ -68,6 +73,28 @@
 
 .a-prev-image:hover {
   opacity: 1;
+}
+
+.a-pencil-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.tv-slider .arrow-next {
+  -webkit-transform: translate(-16px, -50%);
+          transform: translate(-16px, -50%);
+  right: 6px;
+}
+
+.tv-slider .arrow-prev {
+  left: 6px;
+  -webkit-transform: translate(16px, -50%);
+          transform: translate(16px, -50%);
 }
 
 .a-button-basic {
@@ -84,12 +111,32 @@
   margin-bottom: 17px;
 }
 
-.opacity-100 {
-  opacity: 1;
+.a-button-black {
+  border-radius: 19px;
+  padding: 10px;
+  background: #161515;
+  border-color: #161515;
+  cursor: pointer;
 }
 
-.opacity-40 {
-  opacity: 0.4;
+.a-button-edition-video {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+}
+
+.a-border-gray {
+  border: solid 3px #817e7e;
+}
+
+.o-channels-container {
+  display: none;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.our-channels {
+  margin: 0;
 }
 
 iframe {
@@ -98,5 +145,11 @@ iframe {
   margin: auto;
   display: block;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .o-channels-container {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

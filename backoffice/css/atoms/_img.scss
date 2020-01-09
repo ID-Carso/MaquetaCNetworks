@@ -5,7 +5,7 @@
   border-right: 1px solid $borderLine;
   cursor: pointer;
   opacity: 0.4;
-  transition: all 1.5s;
+  transition: all 0.3s;
 }
 
 .a-prev-image:nth-child(3) {
@@ -14,4 +14,25 @@
 
 .a-prev-image:hover {
   opacity: 1;
+}
+
+.a-pencil-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.tv-slider {
+  .arrow-next {
+    transform: translate(-16px, -50%);
+    right: 6px;
+  }
+
+  .arrow-prev {
+    left: 6px;
+    transform: translate(16px, -50%);
+  }
 }

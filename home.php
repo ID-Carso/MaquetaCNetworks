@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="./slick-master/slick/slick.css" />
     <link rel="stylesheet" href="./slick-master/slick/slick-theme.css" />
     <script src="./js/lib/jquery-3.4.1.min.js"></script>
-
     <script src="slick-master/slick/slick.js"></script>
     <script src="./js/jquery.browser.js"></script>
     <script src="./js/lib/rellax.js"></script>
