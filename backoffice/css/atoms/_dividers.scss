@@ -1,3 +1,32 @@
-.a-border-gray {
-  border: solid 3px #817e7e;
+@import "../settings/color";
+.border-t-gray {
+  border-top: 3px solid $borderGray;
+}
+
+.border-b-gray {
+  border-bottom: 3px solid $borderGray;
+}
+
+.border-l-gray {
+  border-left: 3px solid $borderGray;
+}
+
+.border-r-gray {
+  border-right: 3px solid $borderGray;
+}
+
+.border-t-white {
+  border-top: 3px solid $white;
+}
+
+.border-b-white {
+  border-bottom: 3px solid $white;
+}
+
+.border-l-white {
+  border-left: 3px solid $white;
+}
+
+.border-r-white {
+  border-right: 3px solid $white;
 }

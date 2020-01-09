@@ -1,5 +1,17 @@
+@import "./settings/color";
+
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
   .o-channels-container {
     display: block;
   }
+}
+
+@media only screen and (min-width: 1200px) {
+  @import "./atoms/text";
+  @import "./atoms/img";
+  @import "./atoms/button";
+  @import "./atoms/dividers";
+  @import "./atoms/spacing";
+  @import "./organisms/container";
+  @import "./organisms/iframe";
 }

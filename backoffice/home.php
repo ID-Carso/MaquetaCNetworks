@@ -37,12 +37,12 @@
                 <img src="../images/home/american-horror.jpeg" class="background-home rellax" data-rellax="10">
                 <div class="header-details header-detail-margin col-md-7">
                     <h1 class="header-h1">
-                        <div class="p-2 a-border-gray position-relative">
+                        <div class="p-xl-2 border-t-gray border-l-gray border-r-gray border-b-gray position-relative">
                             <span class="header-span">Descubre Claro<br></span>
-                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                         </div>
-                        <div class="p-2 a-border-gray position-relative">
-                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+                        <div class="p-xl-2 border-l-gray border-r-gray border-b-gray position-relative">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                             Networks
                         </div>
 
@@ -53,13 +53,13 @@
         </header>
         <section class="o-tv-section margin-ahora-tv">
             <h2 class="title-tv">
-                <div class="d-inline p-2 a-border-gray position-relative">
+                <div class="d-inline p-xl-2 border-l-gray border-t-gray border-b-gray border-r-gray position-relative">
                     AHORA
-                    <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+                    <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                 </div>
-                <div class="d-inline p-2 a-border-gray position-relative">
+                <div class="d-inline p-xl-2 border-t-gray border-b-gray border-r-gray position-relative">
                     <span class="header-span">AL AIRE </span><span class="header-point">•</span>
-                    <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+                    <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                 </div>
             </h2>
         </section>
@@ -69,31 +69,31 @@
                 <div class="row no-gutters">
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right position-relative">
-                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                             <li rel="claro-canal" class="active-navItem nav-li">
                                 <img class="claro-nav-image" src="../images/home/tv-1.svg" alt="" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right position-relative">
-                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                             <li rel="concert-channel" class="nav-li">
                                 <img class="nav-image" src="../images/home/tv-2.svg" alt="" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right position-relative">
-                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                             <li rel="claro-cinema" class="nav-li">
                                 <img class="nav-image" src="../images/home/tv-3.svg" alt="" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right position-relative">
-                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                             <li rel="nuestra-vision" class="nav-li">
                                 <img class="nav-image" src="../images/home/tv-4.svg" alt="" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap position-relative">
-                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                             <li rel="claro-sports" class="nav-li">
                                 <img class="nav-image" src="../images/home/tv-5.svg" alt="" />
                             </li>
@@ -102,11 +102,12 @@
                     </ul>
                 </div>
                 <div class="tv-videos-container">
-                    <div id="claro-canal" class="tv-content position-relative">
-                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
-                        <div class="tv-slider p-3 a-border-gray" id="tv-claro-slider">
+                    <div id="claro-canal" class="tv-content">
 
-                            <div class="poster">
+                        <div class="tv-slider p-xl-3 border-t-gray border-b-gray border-l-gray border-r-gray" id="tv-claro-slider">
+
+                            <div class="poster position-relative">
+
                                 <div class="poster-body">
                                     <div class="showtime-container">
                                         <p class="a-programming-text">14:30 - 16:30</p>
@@ -242,8 +243,8 @@
                     </div>
                     <!--Concert channel de "Ahora en tv"-->
                     <div id="concert-channel" class="tv-content position-relative">
-                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
-                        <div class="tv-slider p-3 a-border-gray" id="tv-concert-slider">
+
+                        <div class="tv-slider p-xl-3 border-t-gray border-l-gray border-r-gray border-b-gray" id="tv-concert-slider">
 
                             <div class="poster">
                                 <div class="poster-body">
@@ -405,8 +406,8 @@
                     <!--End Concert channel de "Ahora en tv"-->
                     <!--Claro cinema de "Ahora en tv"-->
                     <div id="claro-cinema" class="tv-content position-relative">
-                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
-                        <div class="tv-slider p-3 a-border-gray" id="tv-cinema-slider">
+
+                        <div class="tv-slider p-xl-3 border-t-gray border-r-gray border-l-gray border-b-gray" id="tv-cinema-slider">
                             <div class="poster">
                                 <div class="poster-body">
                                     <div class="showtime-container">
@@ -575,8 +576,8 @@
                     <!--End Claro cinema de "Ahora en tv"-->
                     <!--Nuestra visión de "Ahora en tv"-->
                     <div id="nuestra-vision" class="tv-content position-relative">
-                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
-                        <div class="tv-slider p-3 a-border-gray" id="tv-vision-slider">
+
+                        <div class="tv-slider p-xl-3 border-t-gray border-r-gray border-l-gray border-b-gray" id="tv-vision-slider">
 
                             <div class="poster">
                                 <div class="poster-body">
@@ -770,8 +771,8 @@
                     <!--End Nuestra visión de "Ahora en tv"-->
                     <!--Claro sports de "Ahora en tv"-->
                     <div id="claro-sports" class="tv-content position-relative">
-                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
-                        <div class="tv-slider p-3 a-border-gray" id="tv-sports-slider">
+
+                        <div class="tv-slider p-xl-3 border-t-gray border-b-gray border-r-gray border-l-gray" id="tv-sports-slider">
                             <div class="poster">
                                 <div class="poster-body">
                                     <div class="showtime-container">
@@ -950,7 +951,6 @@
             </div>
         </section>
         <div class="p-2 a-border-gray o-channels-container position-relative">
-            <img src="./images/pencil.svg" alt="" class="a-pencil-icon">
             <div class="our-channels">
                 <h1 class="our-channels-title">
                     Nuestros Canales
@@ -1213,19 +1213,27 @@
             <div class="claro-canal-desktop">
                 <div class="d-flex justify-content-between align-items-center home-section-header claro-section-header">
                     <div class="m-home-titles">
+                        <div class="position-relative">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
+                            <h1 class="a-claro-channel-title p-xl-3 mb-xl-1 border-t-gray border-r-gray border-b-gray border-l-gray">CANAL CLARO</h1>
+                        </div>
 
-                        <h1 class="a-claro-channel-title">CANAL CLARO</h1>
 
-                        <h2 class="a-subtitle">
-                            LO MEJOR EN SERIES Y <span>PELÍCULAS
-                                INTERNACIONALES</span>
-                        </h2>
+                        <div class="position-relative">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
+                            <h2 class="a-subtitle p-xl-3 border-t-gray border-r-gray border-b-gray border-l-gray">
+                                LO MEJOR EN SERIES Y <span>PELÍCULAS
+                                    INTERNACIONALES</span>
+                            </h2>
+                        </div>
+
                     </div>
-                    <div class="m-see-more">
+                    <div class="m-see-more p-xl-3 border-t-gray border-r-gray border-b-gray border-l-gray position-relative">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                         <button class="btn-red">VER +</button>
                     </div>
                 </div>
-                <div class="section-slider">
+                <div class="section-slider p-xl-3 border-t-gray border-r-gray border-b-gray border-l-gray ">
                     <div class="poster">
                         <div class="poster-body">
                             <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
@@ -1373,10 +1381,12 @@
                 </div>
 
                 <div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
-                    <div>
+                    <div class="position-relative p-xl-3 border-t-gray border-r-gray border-b-gray border-l-gray ">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                         <img class="concert-footer-img" src="../images/home/tv-1.svg" alt="">
                     </div>
-                    <div>
+                    <div class="position-relative p-xl-3 border-t-gray border-b-gray border-l-gray border-r-gray">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                         <p class="horario-text text-dark">
                             Horario sujetos a cambios
                         </p>
@@ -1603,12 +1613,20 @@
             <div class="concert-channel-desktop">
                 <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
+                        <div class="mt-xl-6 position-relative p-xl-3 border-t-white border-l-white border-r-white border-b-white">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
+                            <h1 class="a-concert-channel-title">CONCERT CHANNEL</h1>
+                        </div>
 
-                        <h1 class="a-concert-channel-title">CONCERT CHANNEL</h1>
+                        <div class="position-relative p-xl-3 border-t-white border-l-white border-r-white border-b-white">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
 
-                        <h2 class="text-white a-subtitle">Conciertos, entrevistas y mucho más</h2>
+                            <h2 class="text-white a-subtitle">Conciertos, entrevistas y mucho más</h2>
+                        </div>
+
                     </div>
-                    <div class="m-see-more">
+                    <div class="m-see-more position-relative p-xl-3 border-t-white border-l-white border-r-white border-b-white">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                         <button class="btn-pink">
                             <span>VER +</span>
                         </button>
@@ -1616,7 +1634,7 @@
                 </div>
                 <div class="row no-gutters">
 
-                    <div class="col-md-8 col-xl-6 ml-auto">
+                    <div class="col-md-8 col-xl-6 ml-auto position-relative p-xl-3 border-t-white border-l-white border-r-white border-b-white">
                         <div class="row poster-pad-b">
                             <div class="col poster-pad-r poster-section">
                                 <div class="poster">
@@ -1699,10 +1717,12 @@
                     </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
-                    <div>
+                    <div class="p-xl-3 position-relative border-t-white border-r-white border-l-white border-b-white">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                         <img class="concert-footer-img" src="../images/home/concert-home-img.svg" alt="">
                     </div>
-                    <div>
+                    <div class="p-xl-3 position-relative border-t-white border-b-white border-l-white border-r-white">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                         <p class="horario-text text-white">
                             Horario sujetos a cambios
                         </p>
@@ -1982,15 +2002,23 @@
             <div class="cinema-claro-desktop">
                 <div class="black-line"></div>
                 <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
-                    <div class="m-home-titles">
+                    <div class="m-home-titles mt-xl-6">
 
-                        <h1 class="a-claro-cinema-title">CLARO <span>CINEMA</span></h1>
+                        <div class="position-relative mb-xl-1 border-t-gray border-b-gray border-r-gray border-l-gray">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
+                            <h1 class="a-claro-cinema-title">CLARO <span>CINEMA</span></h1>
+                        </div>
 
-                        <h2 class="a-subtitle">
-                            Las mejores <span>Películas Mexicanas</span>
-                        </h2>
+                        <div class="position-relative p-xl-3 border-t-gray border-b-gray border-r-gray border-l-gray">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
+                            <h2 class="a-subtitle">
+                                Las mejores <span>Películas Mexicanas</span>
+                            </h2>
+                        </div>
+
                     </div>
-                    <div class="m-see-more">
+                    <div class="position-relative m-see-more p-xl-3 border-t-gray border-r-gray border-l-gray border-b-gray">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                         <button class="btn-red">VER +</button>
                     </div>
                 </div>
@@ -1999,7 +2027,8 @@
                     <div class="col-md-4 col-xl-6">
                         <img src="../images/home/claro-cinema-background.png" alt="" class="cinema-image">
                     </div>
-                    <div class="col-md-8 col-xl-6 cinema-home-videos-container">
+                    <div class="col-md-8 col-xl-6 cinema-home-videos-container position-relative p-xl-3 border-t-gray border-l-gray border-b-gray border-r-gray">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                         <div class="row poster-pad-b">
                             <div class="col poster-pad-r">
                                 <div class="poster-body">

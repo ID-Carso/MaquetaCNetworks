@@ -17,6 +17,7 @@
 }
 
 .a-pencil-icon {
+  display: block;
   position: absolute;
   right: 0;
   top: 0;
@@ -25,14 +26,12 @@
   z-index: 1;
 }
 
-.tv-slider {
-  .arrow-next {
-    transform: translate(-16px, -50%);
-    right: 6px;
-  }
+.arrow-next {
+  transform: translate(-16px, -50%);
+  right: 6px;
+}
 
-  .arrow-prev {
-    left: 6px;
-    transform: translate(16px, -50%);
-  }
+.arrow-prev {
+  left: 6px;
+  transform: translate(16px, -50%);
 }
