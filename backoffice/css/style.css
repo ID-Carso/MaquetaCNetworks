@@ -27,6 +27,9 @@
   .o-channels-container {
     display: block;
   }
+  .a-button-black {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -75,6 +78,13 @@
     margin-top: 0px;
     padding: 0;
   }
+  .terms-conditions-desktop .aviso-priv-blue:nth-child(1) {
+    margin-right: 0px;
+  }
+  .other-text-regular,
+  .o-footer-section .aviso-priv-blue {
+    margin-bottom: 0px;
+  }
   .a-prev-image {
     height: 50px;
     padding-right: 20px;
@@ -117,7 +127,7 @@
   }
   .a-button-blue {
     background: #40c7e9;
-    border-color: #40c7e9;
+    border: #40c7e9;
   }
   .a-button-save {
     margin-bottom: 17px;
@@ -126,7 +136,7 @@
     border-radius: 19px;
     padding: 10px;
     background: #161515;
-    border-color: #161515;
+    border: #161515;
     cursor: pointer;
   }
   .a-button-edition-video {
@@ -179,6 +189,8 @@
     margin: auto;
     display: block;
     margin: 0 auto;
+    -webkit-box-shadow: 0px 6px 14px 1px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 6px 14px 1px rgba(0, 0, 0, 0.75);
   }
 }
 /*# sourceMappingURL=style.css.map */

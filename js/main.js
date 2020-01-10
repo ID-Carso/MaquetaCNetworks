@@ -32,11 +32,12 @@ $(document).ready(function() {
 
   var sessionSrc = sessionStorage.getItem("src");
   var loginCountry = $(".login-country");
-  if (!sessionSrc && window.location.pathname !== "/") {
+  loginCountry.attr("src", sessionSrc);
+  /*if (!sessionSrc && window.location.pathname !== "/") {
     location.href = "/";
   } else {
     loginCountry.attr("src", sessionSrc);
-  }
+  }*/
 
   /*End función elegir un país y mostrar la bandera en navbar */
 

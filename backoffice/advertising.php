@@ -49,7 +49,8 @@
     <div class="advertising-section-desktop">
         <div class="col-lg-12">
             <div class="row">
-                <div class="col-5 col-lg-6">
+                <div class="col-5 col-lg-6 p-xl-3 border-t-gray border-b-gray border-l-gray border-r-gray position-relative">
+                    <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                     <div class="adv-headline-mb">
                         <h1 class="advertising-title">Disfruta</h1>
                         <h2 class="advertising-subtitle">La mejor programación</h2>
@@ -62,7 +63,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-7 col-lg-6 no-gutters">
+                <div class="col-7 col-lg-6 no-gutters p-xl-3 border-t-gray border-b-gray border-r-gray position-relative">
+                    <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                     <img src="../images/home/planes-copy.png" class="advertising-image" />
                 </div>
             </div>

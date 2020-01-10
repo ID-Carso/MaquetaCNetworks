@@ -1613,7 +1613,7 @@
             <div class="concert-channel-desktop">
                 <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
-                        <div class="mt-xl-6 position-relative p-xl-3 border-t-white border-l-white border-r-white border-b-white">
+                        <div class="mt-xl-6 position-relative p-xl-3 border-t-white border-l-white border-r-white border-b-white mb-xl-1">
                             <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                             <h1 class="a-concert-channel-title">CONCERT CHANNEL</h1>
                         </div>
@@ -2127,7 +2127,10 @@
             <div class="nuestra-vision-mobile">
                 <div class="m-home-titles">
 
+
                     <h1 class="a-our-vision-title">NUESTRA VISIÓN</h1>
+
+
 
 
                     <h2 class="a-our-vision-subtitle">
@@ -2221,7 +2224,9 @@
             <div class="nuestra-vision-tablet">
                 <div class="d-flex justify-content-between align-items-center home-section-header vision-section-header">
                     <div class="m-home-titles">
+                        <div>
 
+                        </div>
                         <h1 class="a-our-vision-title">NUESTRA VISIÓN</h1>
 
                         <h2 class="a-subtitle">
@@ -2331,22 +2336,29 @@
                     <img src="../images/home/nuestra-vision.png" class="nuestra-vision-image">
                 </div>
                 <div class="d-flex justify-content-between align-items-center home-section-header vision-section-header">
-                    <div class="m-home-titles">
+                    <div class="m-home-titles mt-xl-6">
+                        <div class="p-xl-3 position-relative border-t-gray border-r-gray border-l-gray border-b-gray mb-xl-1">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
+                            <h1 class="a-our-vision-title">NUESTRA VISIÓN</h1>
+                        </div>
 
-                        <h1 class="a-our-vision-title">NUESTRA VISIÓN</h1>
+                        <div class="position-relative p-xl-3 border-t-gray border-b-gray border-r-gray border-l-gray">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
+                            <h2 class="a-subtitle">
+                                SIÉNTETE <span>COMO EN CASA</span>
+                            </h2>
+                        </div>
 
-                        <h2 class="a-subtitle">
-                            SIÉNTETE <span>COMO EN CASA</span>
-                        </h2>
                     </div>
-                    <div class="m-see-more">
+                    <div class="m-see-more position-relative p-xl-3 border-t-gray border-b-gray border-l-gray border-r-gray">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                         <button class="btn-purple">VER
                             +</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xl-9">
-                        <div class="vision-slider">
+                        <div class="vision-slider p-xl-3 postion-relative border-t-gray border-b-gray border-r-gray border-l-gray">
                             <div class="poster">
                                 <div class="poster-body">
                                     <div class="showtime-container">
@@ -2464,10 +2476,12 @@
                     </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between section-home-footer vision-section-footer">
-                    <div>
+                    <div class="position-relative p-xl-3 border-t-gray border-b-gray border-r-gray border-l-gray">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                         <img class="concert-footer-img" src="../images/home/vision-home-img.svg" alt="">
                     </div>
-                    <div>
+                    <div class="position-relative p-xl-3 border-t-gray border-b-gray border-r-gray border-l-gray">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                         <p class="horario-text text-dark">
                             Horario sujetos a cambios
                         </p>
@@ -2688,25 +2702,37 @@
             <!--Claro sports desktop-->
             <div class="claro-sports-desktop">
                 <div class="d-flex justify-content-between align-items-center home-section-header sports-section-header">
-                    <div class="m-home-titles">
+                    <div class="m-home-titles mt-xl-6">
+                        <div class="position-relative p-xl-3 border-t-gray border-b-gray border-r-gray border-l-gray mb-xl-1">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
+                            <h1 class="a-claro-sports-title">claro <span>sports</span></h1>
+                        </div>
 
-                        <h1 class="a-claro-sports-title">claro <span>sports</span></h1>
+                        <div class="position-relative p-xl-3 border-t-gray border-b-gray border-r-gray border-l-gray">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
+                            <h2 class="a-subtitle">
+                                Las mejor en deportes <span>al instante</span>
+                            </h2>
+                        </div>
 
-                        <h2 class="a-subtitle">
-                            Las mejor en deportes <span>al instante</span>
-                        </h2>
                     </div>
-                    <div class="m-see-more">
+                    <div class="m-see-more p-xl-3 border-t-gray border-b-gray border-r-gray border-l-gray position-relative">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                         <button class="btn-red">VER +</button>
                     </div>
                 </div>
                 <div class="row no-gutters d-flex align-items-center">
                     <div class="col-md-4 col-xl-6">
-                        <h1 class="poster-title-sport">
-                            <span>Vive la </span>intensidad <span>del deporte</span>
-                        </h1>
+                        <div class="p-xl-3 border-t-gray border-b-gray border-l-gray position-relative">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
+                            <h1 class="poster-title-sport">
+                                <span>Vive la </span>intensidad <span>del deporte</span>
+                            </h1>
+                        </div>
+
                     </div>
-                    <div class="col-md-8 col-xl-6">
+                    <div class="col-md-8 col-xl-6 position-relative p-xl-3 border-t-gray border-b-gray border-r-gray border-l-gray">
+
                         <div class="row no-gutters poster-pad-b">
                             <div class="col poster margin-left-11 poster-margin-r">
                                 <div class="poster-body">
@@ -2751,10 +2777,12 @@
                     </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between section-home-footer">
-                    <div>
+                    <div class="p-xl-3 position-relative border-t-gray border-b-gray border-l-gray border-r-gray">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                         <img class="concert-footer-img" src="../images/home/sports-home-img.svg" alt="">
                     </div>
-                    <div>
+                    <div class="p-xl-3 position-relative border-t-gray border-b-gray border-l-gray border-r-gray">
+                        <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
                         <p class="horario-text text-dark">
                             Horario sujetos a cambios
                         </p>
@@ -2773,22 +2801,42 @@
         <!--Fin sección de anuncio-->
         <!--Redes sociales-->
         <div class="">
+            <div class="col-12 text-center">
+
+                <span class="footer-title position-relative">
+                    ¡síguenos! <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
+                </span>
+            </div>
             <div class="row no-gutters">
-                <div class="col-12">
-                    <h1 class="footer-title">¡síguenos!</h1>
-                </div>
+
                 <div class="social-media">
                     <div class="col ">
-                        <img class="social-icon" src="../images/home/faceboook-icon.svg" alt="">
+                        <div class="position-relative">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
+                            <img class="social-icon" src="../images/home/faceboook-icon.svg" alt="">
+                        </div>
+
                     </div>
                     <div class="col">
-                        <img class="social-icon" src="../images/home/instagram-icon.svg" alt="">
+                        <div class="position-relative">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
+                            <img class="social-icon" src="../images/home/instagram-icon.svg" alt="">
+                        </div>
+
                     </div>
                     <div class="col">
-                        <img class="social-icon" src="../images/home/twitter-icon.svg" alt="">
+                        <div class="position-relative">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
+                            <img class="social-icon" src="../images/home/twitter-icon.svg" alt="">
+                        </div>
+
                     </div>
                     <div class="col">
-                        <img class="social-icon" src="../images/home/youtube-icon.svg" alt="">
+                        <div class="position-relative">
+                            <img src="./images/pencil.svg" alt="" class="a-pencil-icon d-none d-xl-block">
+                            <img class="social-icon" src="../images/home/youtube-icon.svg" alt="">
+                        </div>
+
                     </div>
 
                 </div>
