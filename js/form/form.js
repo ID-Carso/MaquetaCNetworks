@@ -74,9 +74,29 @@ function validateNewPassword(inputPassword, inputPasswordConfirm) {
   }
 }
 
+function validatePassword(inputPassword, messageError) {
+  let password = inputPassword.val();
+  if (password === "") {
+    messageError
+      .addClass("invalid-email")
+      .text("Debes ingresar una contraseña");
+    inputPassword.addClass("input-border-red");
+    return false;
+  } else if (password.length < 8) {
+    messageError
+      .addClass("invalid-email")
+      .text("La contraseña debe tener al menos 8 caractéres");
+    inputPassword.addClass("input-border-red");
+    return false;
+  } else {
+    return true;
+  }
+}
+
 export {
   ShowHidePassword,
   validateEmail,
   validateNewPassword,
-  validateKeyUpEmail
+  validateKeyUpEmail,
+  validatePassword
 };

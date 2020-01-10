@@ -283,3 +283,7 @@ input::-webkit-credentials-auto-fill-button {
   position: absolute;
   right: 0;
 }
+
+.input-border-red {
+  border-bottom: 2px solid rgb(255, 0, 7);
+}

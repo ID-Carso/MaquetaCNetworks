@@ -4,6 +4,7 @@ import { selectCountry } from "./session/session.js";
 import { validateEmail } from "./form/form.js";
 import { validateNewPassword } from "./form/form.js";
 import { validateKeyUpEmail } from "./form/form.js";
+import { validatePassword } from "./form/form.js";
 var programacion_slider;
 var tvConcertSlider;
 $(document).ready(function() {
@@ -67,27 +68,26 @@ $(document).ready(function() {
   });
 
   $(".login-button").click(function() {
-    var correo1, password1, expresion1;
-    const nodatos = $(".nodatos");
-    const nocorreo = $("#error_email");
-    const borde = $("#login-email");
-    correo1 = document.getElementById("login-email").value;
-    password1 = document.getElementById("login-password").value;
-    expresion1 = /\w+@\w+\.+[a-z]/;
-    if (correo1 === "" && password1 === "") {
-      nodatos.css("display", "block");
-      return false;
-    } else if (!expresion1.test(correo1)) {
-      nocorreo.css("display", "block");
-      borde.css("border-bottom", "solid 2px #ff0007");
-      return false;
-    } else if (expresion1.test(correo1)) {
-      nocorreo.css("display", "none");
-      borde.css("border-bottom", "solid 1px #a1a0a0");
-    } else if (password1.length < 8) {
+    let inputEmail = $(".input-email");
+    let inputPassword = $(".input-password");
+    let messageError = $("#error_email");
+    let messagePasswordError = $(".caracteres-min");
+
+    if (
+      validateEmail(inputEmail, messageError) &&
+      validatePassword(inputPassword, messagePasswordError)
+    ) {
+      sessionStorage.setItem("ingreso", 1);
+      return true;
+    } else {
       return false;
     }
   });
+
+  /*Mostrar menú una vez que el usuario ha ingresado */
+  let ingreso = sessionStorage.getItem("ingreso");
+  if (ingreso == 1) {
+  }
 
   const inputPassword = $("#login-password");
   const caracteresMin = $(".caracteres-min");
