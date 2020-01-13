@@ -83,19 +83,36 @@ $(document).ready(function() {
 
   /*Mostrar menú una vez que el usuario ha ingresado */
   let ingreso = sessionStorage.getItem("ingreso");
-  console.log(ingreso);
   const userOptions = $(".user-options");
+  const sidebarHeader = $(".sidebar-header");
   if (ingreso == "1") {
     let menuIngreso = `
     <div class="menu-ingreso">
       <a href="login.html" class="login-item"><img src="./images/menu/icon-white-user.svg" alt="" /></a>
-      <p class="name-user mr-2">Eduardo Pérez</p>
-      <a href="mi-lista.php"><img class="mr-2 options-item" src="./images/menu/mi-lista-icon.png" alt="" /></a>
-      <a href="configuracion.php"><img class="mr-2 options-item" src="./images/menu/configuracion-icon.png" alt="" /></a>
+      <p class="name-user mr-3">Eduardo Pérez</p>
+      <a href="mi-lista.php"><img class="mr-3 options-item" src="./images/menu/mi-lista-icon.png" alt="" /></a>
+      <a href="configuracion.php"><img class="mr-3 options-item" src="./images/menu/configuracion-icon.png" alt="" /></a>
       <a href="index.html" class="login-item options-item"><img class="login-country" src="" alt="" /></a>
     </div>
     `;
+
+    let sidebarHeaderOptions = `            
+    <img src="./images/menu/icon-white-user.svg" alt="" class="mr-3 sidebar-image-user">
+
+    <div>
+      <p class="name-user mb-2">eduardo</p>
+      <div class="d-flex">
+          <a href="mi-lista.php">
+            <img src="./images/menu/mi-lista-icon.png" class="mr-3 options-item">
+           </a>
+           <a href="configuracion.php"> 
+              <img src="./images/menu/configuracion-icon.png" class="options-item" alt="" srcset="">
+            </a>
+      </div>
+    </div>
+`;
     userOptions.html(menuIngreso);
+    sidebarHeader.html(sidebarHeaderOptions);
   } else {
     let menuBase = `
     <div class="login">
@@ -103,6 +120,12 @@ $(document).ready(function() {
       <a href="index.html" class="login-item"><img class="login-country" src="" alt="" /></a>
     </div>
     `;
+    let sidebarHeaderOptions = `            
+    <img src="./images/menu/icon-white-user.svg" alt="" class="mr-2">
+    <a href="login.html" class="sib">
+        <p class="name-user">ingresar</p>
+    </a>`;
+    sidebarHeader.html(sidebarHeaderOptions);
     userOptions.html(menuBase);
   }
 

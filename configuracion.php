@@ -23,8 +23,8 @@
 <body class="fondo">
   <header class="configuracion-header">
     <div class="hamburguer-menu">
-      <div class="text-center">
-        <img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar" />
+      <div class="text-center sidebar-header">
+
       </div>
       <div class="sidebar-content">
         <div class="sidebar-item sidebar-border-bottom sidebar-border-top">

@@ -28,11 +28,19 @@
     <div class="hamburguer-menu">
         <div class="text-center sidebar-header">
             <!--<img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar">-->
-            <img src="./images/menu/icon-white-user.svg" alt="" class="mr-2">
+            <div class="d-flex">
+                <img src="./images/menu/icon-white-user.svg" alt="" class="mr-2">
 
-            <a href="login.html" class="sib">
-                <p class="name-user">ingresar</p>
-            </a>
+
+                <p class="name-user mb-2">ingresar</p>
+                <div>
+                    <img src="./images/menu/mi-lista-icon.png" class="mr-2">
+                    <img src="./images/menu/configuracion-icon.png" alt="" srcset="">
+
+                </div>
+            </div>
+
+
         </div>
         <div class="sidebar-content">
             <a href="home.php" class="sidebar-link">

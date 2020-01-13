@@ -3258,8 +3258,14 @@
   /*2.2 - Home - Moleculas*/
   .home-header {
     .menu-tablet {
-      display: block;
+      display: none;
     }
+
+    .menu-desktop{
+      position: initial;
+      padding: 0;
+    }
+
   }
 
   .m-home-titles {
@@ -4509,7 +4515,12 @@
 
   .home-header {
     .menu-tablet {
-      display: block;
+      display: none;
+    }
+
+    .menu-desktop{
+      padding: 0;
+      position: initial;
     }
   }
 

@@ -25,7 +25,7 @@
 <body class="fondo">
   <header class="datos-header">
     <div class="hamburguer-menu">
-      <div class="text-center">
+      <div class="text-center sidebar-header">
         <img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar" />
       </div>
       <div class="sidebar-content">
@@ -566,137 +566,137 @@
               </div>
             </div>
           </div>
-          
-        <br />
-        <div class="row ma-no centro">
-          <div class="col-sm-12 no-gap">
-            <div class="tamaño2 centro">
-              <p class="titulo-seleccion-pais">País de residencia</p>
-              <input type="checkbox" id="selectPais" />
-              <label for="selectPais" id="select-Pais">
-                <p class="SeleccionPaisLista">
-                  <img src="" />Selecciona tu país
-                </p>
-                <ul class="ListaDesplegablePaises">
-                  <li class="option" id-select="select-Pais" value="USA">
-                    <img src="images/paises/usa.svg" class="Icon_paises" />USA
-                  </li>
-                  <li class="option" id-select="select-Pais" value="Argentina">
-                    <img src="images/paises/argentina.svg" class="Icon_paises" />Argentina
-                  </li>
-                  <li class="option" id-select="select-Pais" value="Brazil">
-                    <img src="images/paises/brazil.svg" class="Icon_paises" />Brazil
-                  </li>
-                  <li class="option" id-select="select-Pais" value="Chile">
-                    <img src="images/paises/chile.svg" class="Icon_paises" />Chile
-                  </li>
-                  <li class="option" id-select="select-Pais" value="Colombia">
-                    <img src="images/paises/colombia.svg" class="Icon_paises" />Colombia
-                  </li>
-                  <li class="option" id-select="select-Pais" value="Costa Rica">
-                    <img src="images/paises/costa-rica.svg" class="Icon_paises" />Costa Rica
-                  </li>
-                  <li class="option" id-select="select-Pais" value="Ecuador">
-                    <img src="images/paises/ecuador.svg" class="Icon_paises" />Ecuador
-                  </li>
-                  <li class="option" id-select="select-Pais" value="El salvador">
-                    <img src="images/paises/el-salvador.svg" class="Icon_paises" />El Salvador
-                  </li>
-                  <li class="option" id-select="select-Pais" value="Guatemala">
-                    <img src="images/paises/guatemala.svg" class="Icon_paises" />Guatemala
-                  </li>
-                  <li class="option" id-select="select-Pais" value="Honduras">
-                    <img src="images/paises/honduras.svg" class="Icon_paises" />Honduras
-                  </li>
-                  <li class="option" id-select="select-Pais" value="Nicaragua">
-                    <img src="images/paises/nicaragua.svg" class="Icon_paises" />Nicaragua
-                  </li>
-                  <li class="option" id-select="select-Pais" value="Panamá">
-                    <img src="images/paises/panama.svg" class="Icon_paises" />Panamá
-                  </li>
-                  <li class="option" id-select="select-Pais" value="Paraguay">
-                    <img src="images/paises/paragay.svg" class="Icon_paises" />Paraguay
-                  </li>
-                  <li class="option" id-select="select-Pais" value="Perú">
-                    <img src="images/paises/peru.svg" class="Icon_paises" />Perú
-                  </li>
-                  <li class="option" id-select="select-Pais" value="Puerto Rico">
-                    <img src="images/paises/puerto-rico.svg" class="Icon_paises" />Puerto Rico
-                  </li>
-                  <li class="option" id-select="select-Pais" value="Dominican Republic">
-                    <img src="images/paises/dominican-republic.svg" class="Icon_paises" />Dominican Republic
-                  </li>
-                  <li class="option" id-select="select-Pais" value="Uruguay">
-                    <img src="images/paises/uruguay.svg" class="Icon_paises" />Uruguay
-                  </li>
-                  <script>
-                    $(".option").click(function () {
-                      var value = $(this).attr("value");
-                      var select = $(this).attr("id-select");
 
-                      $("#" + select + " > p").text(value);
-                    });
-                    $(".Dias").click(function () {
-                      var value = $(this).attr("value");
-                      var select = $(this).attr("id-select");
+          <br />
+          <div class="row ma-no centro">
+            <div class="col-sm-12 no-gap">
+              <div class="tamaño2 centro">
+                <p class="titulo-seleccion-pais">País de residencia</p>
+                <input type="checkbox" id="selectPais" />
+                <label for="selectPais" id="select-Pais">
+                  <p class="SeleccionPaisLista">
+                    <img src="" />Selecciona tu país
+                  </p>
+                  <ul class="ListaDesplegablePaises">
+                    <li class="option" id-select="select-Pais" value="USA">
+                      <img src="images/paises/usa.svg" class="Icon_paises" />USA
+                    </li>
+                    <li class="option" id-select="select-Pais" value="Argentina">
+                      <img src="images/paises/argentina.svg" class="Icon_paises" />Argentina
+                    </li>
+                    <li class="option" id-select="select-Pais" value="Brazil">
+                      <img src="images/paises/brazil.svg" class="Icon_paises" />Brazil
+                    </li>
+                    <li class="option" id-select="select-Pais" value="Chile">
+                      <img src="images/paises/chile.svg" class="Icon_paises" />Chile
+                    </li>
+                    <li class="option" id-select="select-Pais" value="Colombia">
+                      <img src="images/paises/colombia.svg" class="Icon_paises" />Colombia
+                    </li>
+                    <li class="option" id-select="select-Pais" value="Costa Rica">
+                      <img src="images/paises/costa-rica.svg" class="Icon_paises" />Costa Rica
+                    </li>
+                    <li class="option" id-select="select-Pais" value="Ecuador">
+                      <img src="images/paises/ecuador.svg" class="Icon_paises" />Ecuador
+                    </li>
+                    <li class="option" id-select="select-Pais" value="El salvador">
+                      <img src="images/paises/el-salvador.svg" class="Icon_paises" />El Salvador
+                    </li>
+                    <li class="option" id-select="select-Pais" value="Guatemala">
+                      <img src="images/paises/guatemala.svg" class="Icon_paises" />Guatemala
+                    </li>
+                    <li class="option" id-select="select-Pais" value="Honduras">
+                      <img src="images/paises/honduras.svg" class="Icon_paises" />Honduras
+                    </li>
+                    <li class="option" id-select="select-Pais" value="Nicaragua">
+                      <img src="images/paises/nicaragua.svg" class="Icon_paises" />Nicaragua
+                    </li>
+                    <li class="option" id-select="select-Pais" value="Panamá">
+                      <img src="images/paises/panama.svg" class="Icon_paises" />Panamá
+                    </li>
+                    <li class="option" id-select="select-Pais" value="Paraguay">
+                      <img src="images/paises/paragay.svg" class="Icon_paises" />Paraguay
+                    </li>
+                    <li class="option" id-select="select-Pais" value="Perú">
+                      <img src="images/paises/peru.svg" class="Icon_paises" />Perú
+                    </li>
+                    <li class="option" id-select="select-Pais" value="Puerto Rico">
+                      <img src="images/paises/puerto-rico.svg" class="Icon_paises" />Puerto Rico
+                    </li>
+                    <li class="option" id-select="select-Pais" value="Dominican Republic">
+                      <img src="images/paises/dominican-republic.svg" class="Icon_paises" />Dominican Republic
+                    </li>
+                    <li class="option" id-select="select-Pais" value="Uruguay">
+                      <img src="images/paises/uruguay.svg" class="Icon_paises" />Uruguay
+                    </li>
+                    <script>
+                      $(".option").click(function() {
+                        var value = $(this).attr("value");
+                        var select = $(this).attr("id-select");
 
-                      $("#" + select + " > p").text(value);
-                    });
-                    $(".Meses").click(function () {
-                      var value = $(this).attr("value");
-                      var select = $(this).attr("id-select");
+                        $("#" + select + " > p").text(value);
+                      });
+                      $(".Dias").click(function() {
+                        var value = $(this).attr("value");
+                        var select = $(this).attr("id-select");
 
-                      $("#" + select + " > p").text(value);
-                    });
-                    $(".Años").click(function () {
-                      var value = $(this).attr("value");
-                      var select = $(this).attr("id-select");
+                        $("#" + select + " > p").text(value);
+                      });
+                      $(".Meses").click(function() {
+                        var value = $(this).attr("value");
+                        var select = $(this).attr("id-select");
 
-                      $("#" + select + " > p").text(value);
-                    });
+                        $("#" + select + " > p").text(value);
+                      });
+                      $(".Años").click(function() {
+                        var value = $(this).attr("value");
+                        var select = $(this).attr("id-select");
 
-                    $("#mujer").click(function () {
-                      if ($('input[id="mujer"]').is(":checked")) {
-                        $("#women").attr(
-                          "src",
-                          "images/datos-adicionales/femenino-activo.svg"
-                        );
-                        $("#men").attr(
-                          "src",
-                          "images/datos-adicionales/masculino-inactivo.svg"
-                        );
-                      }
-                    });
+                        $("#" + select + " > p").text(value);
+                      });
 
-                    $("#hombre").click(function () {
-                      if ($('input[id="hombre"]').is(":checked")) {
-                        $("#women").attr(
-                          "src",
-                          "images/datos-adicionales/femenino-inactivo.svg"
-                        );
-                        $("#men").attr(
-                          "src",
-                          "images/datos-adicionales/masculino-activo.svg"
-                        );
-                      }
-                    });
+                      $("#mujer").click(function() {
+                        if ($('input[id="mujer"]').is(":checked")) {
+                          $("#women").attr(
+                            "src",
+                            "images/datos-adicionales/femenino-activo.svg"
+                          );
+                          $("#men").attr(
+                            "src",
+                            "images/datos-adicionales/masculino-inactivo.svg"
+                          );
+                        }
+                      });
 
-                    $
-                  </script>
-                </ul>
-              </label>
+                      $("#hombre").click(function() {
+                        if ($('input[id="hombre"]').is(":checked")) {
+                          $("#women").attr(
+                            "src",
+                            "images/datos-adicionales/femenino-inactivo.svg"
+                          );
+                          $("#men").attr(
+                            "src",
+                            "images/datos-adicionales/masculino-activo.svg"
+                          );
+                        }
+                      });
+
+                      $
+                    </script>
+                  </ul>
+                </label>
+              </div>
             </div>
-          </div> 
-        </div>
-        <br />
-        <div class="row ma-no centro">
-          <div class="col-sm-12 pt-5 pb-4">
-            <a href="mi-perfil.php"><button type="button" class="form-button-outline">
-                GUARDAR
-              </button></a>
+          </div>
+          <br />
+          <div class="row ma-no centro">
+            <div class="col-sm-12 pt-5 pb-4">
+              <a href="mi-perfil.php"><button type="button" class="form-button-outline">
+                  GUARDAR
+                </button></a>
+            </div>
           </div>
         </div>
-      </div>
 
 
 

@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon/claro-fav.png" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./slick-master/slick/slick.css" />
@@ -22,8 +23,8 @@
 <body class="claro-cinema-content">
   <header class="claro-cinema-header">
     <div class="hamburguer-menu">
-      <div class="text-center">
-        <a href="home.php"><img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar" /></a>
+      <div class="text-center sidebar-header">
+
       </div>
       <a href="home.php" class="sidebar-link">
         <div class="sidebar-item sidebar-border-bottom sidebar-border-top">

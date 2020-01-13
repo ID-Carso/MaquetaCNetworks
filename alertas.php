@@ -24,7 +24,7 @@
 <body class="fondo">
         <header class="alertas-header">
                 <div class="hamburguer-menu">
-                        <div class="text-center">
+                        <div class="text-center sidebar-header">
                                 <img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar" />
                         </div>
                         <div class="sidebar-content">

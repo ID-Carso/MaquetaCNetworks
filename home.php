@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="./slick-master/slick/slick.css" />
     <link rel="stylesheet" href="./slick-master/slick/slick-theme.css" />
     <script src="./js/lib/jquery-3.4.1.min.js"></script>
-    <script src="slick-master/slick/slick.js"></script>
-    <script src="./js/jquery.browser.js"></script>
-    <script src="./js/lib/rellax.js"></script>
+    <script src="slick-master/slick/slick.js" defer></script>
+    <script src="./js/jquery.browser.js" defer></script>
+    <script src="./js/lib/rellax.js" defer></script>
     <script src="./js/main.js" type="module"></script>
 </head>
 
@@ -26,8 +26,7 @@
     ?>
     <!--End menú para móvil-->
     <div class="hamburguer-menu">
-        <div class="text-center">
-            <img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar">
+        <div class="text-center sidebar-header">
         </div>
         <div class="sidebar-content">
             <a href="home.php" class="sidebar-link">
@@ -106,6 +105,51 @@
                             <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
 
                             <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
+                        </div>
+
+                        <div class="login">
+                            <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
+                            <a href="index.html" class="login-item"><img class="login-country" src="" alt="" /></a>
+                        </div>
+                    </div>
+                </nav>
+                <!--<div class="claro-navbar">
+                        <div>
+                            <a href="claro-canal.php" class="navbar-link text-decoration-none">
+                                <p class="navbar-item">Canal Claro</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="concert-channel.php" class="navbar-link text-decoration-none">
+                                <p class="navbar-item">Concert Channel</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="claro-cinema.php" class="navbar-link text-decoration-none">
+                                <p class="navbar-item">Claro Cinema</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="nuestra-vision.php" class="navbar-link text-decoration-none">
+                                <p class="navbar-item">Nuestra Visión</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="claro-sports.php" class="navbar-link text-decoration-none">
+                                <p class="navbar-item">Claro Sports</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="programacion.php" class="navbar-link text-decoration-none">
+                                <p class="navbar-item">Programación</p>
+                            </a>
+                        </div>
+                    </div>-->
+                <nav class="menu-desktop">
+                    <div class="nav-content">
+                        <div class="claro-logo">
+
+                            <a href="home.php"><img class="logo" src="./images/home/claro-networks-black.svg" alt="" /></a>
                         </div>
 
                         <div class="user-options">
