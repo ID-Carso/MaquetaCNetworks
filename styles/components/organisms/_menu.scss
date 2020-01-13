@@ -123,3 +123,19 @@
     padding: 1px;
   }
 }
+
+.menu-ingreso {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  z-index: 1;
+  padding: 8px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.options-item {
+  cursor: pointer;
+}

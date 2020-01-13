@@ -31,9 +31,6 @@ $(document).ready(function() {
     });
   }
 
-  var sessionSrc = sessionStorage.getItem("src");
-  var loginCountry = $(".login-country");
-  loginCountry.attr("src", sessionSrc);
   /*if (!sessionSrc && window.location.pathname !== "/") {
     location.href = "/";
   } else {
@@ -86,8 +83,32 @@ $(document).ready(function() {
 
   /*Mostrar menú una vez que el usuario ha ingresado */
   let ingreso = sessionStorage.getItem("ingreso");
-  if (ingreso == 1) {
+  console.log(ingreso);
+  const userOptions = $(".user-options");
+  if (ingreso == "1") {
+    let menuIngreso = `
+    <div class="menu-ingreso">
+      <a href="login.html" class="login-item"><img src="./images/menu/icon-white-user.svg" alt="" /></a>
+      <p class="name-user mr-2">Eduardo Pérez</p>
+      <a href="mi-lista.php"><img class="mr-2 options-item" src="./images/menu/mi-lista-icon.png" alt="" /></a>
+      <a href="configuracion.php"><img class="mr-2 options-item" src="./images/menu/configuracion-icon.png" alt="" /></a>
+      <a href="index.html" class="login-item options-item"><img class="login-country" src="" alt="" /></a>
+    </div>
+    `;
+    userOptions.html(menuIngreso);
+  } else {
+    let menuBase = `
+    <div class="login">
+      <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
+      <a href="index.html" class="login-item"><img class="login-country" src="" alt="" /></a>
+    </div>
+    `;
+    userOptions.html(menuBase);
   }
+
+  var sessionSrc = sessionStorage.getItem("src");
+  var loginCountry = $(".login-country");
+  loginCountry.attr("src", sessionSrc);
 
   const inputPassword = $("#login-password");
   const caracteresMin = $(".caracteres-min");

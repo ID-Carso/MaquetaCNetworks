@@ -26,8 +26,13 @@
     ?>
     <!--End menú para móvil-->
     <div class="hamburguer-menu">
-        <div class="text-center">
-            <img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar">
+        <div class="text-center sidebar-header">
+            <!--<img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar">-->
+            <img src="./images/menu/icon-white-user.svg" alt="" class="mr-2">
+
+            <a href="login.html" class="sib">
+                <p class="name-user">ingresar</p>
+            </a>
         </div>
         <div class="sidebar-content">
             <a href="home.php" class="sidebar-link">
@@ -107,11 +112,21 @@
 
                             <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
                         </div>
-
-                        <div class="login">
+                        <div class="user-options">
+                            <!--<div class="login">
                             <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
                             <a href="index.html" class="login-item"><img class="login-country" src="" alt="" /></a>
                         </div>
+                            <div class="menu-ingreso">
+                                <a href="login.html" class="login-item"><img src="./images/menu/icon-white-user.svg" alt="" /></a>
+                                <p class="name-user mr-2">Eduardo Pérez</p>
+                                <a><img class="mr-2" src="./images/menu/mi-lista-icon.png" alt="" /></a>
+                                <a><img class="mr-2" src="./images/menu/configuracion-icon.png" alt="" /></a>
+                                <a href="index.html" class="login-item"><img class="login-country" src="" alt="" /></a>
+
+                            </div>-->
+                        </div>
+
                     </div>
                     <div class="claro-navbar">
                         <div>
