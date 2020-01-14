@@ -12,6 +12,7 @@
 @import "./components/atoms/links";
 @import "./components/atoms/dropdown";
 @import "./components/atoms/label";
+@import "./components/atoms/tooltip";
 @import "./components/molecules/posters";
 @import "./components/molecules/see-more";
 @import "./components/molecules/nav";
@@ -3053,6 +3054,12 @@
     right: 7%;
   }
 
+  .lista-content{
+    .image-list-points {
+      top: 15%;
+    }
+  } 
+
   .image-list-blue {
     border-radius: 15px;
   }
@@ -3186,6 +3193,10 @@
   .lista-header {
     .menu-tablet {
       display: none;
+    }
+
+    .menu-desktop{
+      position: static;
     }
   }
 
@@ -3926,8 +3937,13 @@
 
   /*3.13 - Mi Lista - Organismos*/
   .mi-lista-container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0;
+  }
+
+  .lista-content{
+    position: static;
   }
 
   .list-item-container {
@@ -4439,6 +4455,13 @@
     top: 4%;
     right: 7%;
   }
+  .lista-content{
+    .image-list-points {
+      top: 20%;
+
+    }
+  }
+
 
   .image-list-blue {
     border-radius: 15px;
@@ -5173,6 +5196,10 @@
     .menu-tablet {
       display: none;
     }
+
+    .menu-desktop{
+      position: static;
+    }
   }
 
   .avatar-header {
@@ -5316,8 +5343,12 @@
   /*============================*/
   /*3.14 - Mi Lista - Organismos*/
   .mi-lista-container {
-    padding-top: 40px;
-    margin-bottom: 50px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .lista-content{
+    position: static;
   }
 
   .list-item-container {

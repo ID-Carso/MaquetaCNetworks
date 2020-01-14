@@ -32,3 +32,17 @@
 .btn-pink {
   margin-bottom: 0px;
 }
+
+.a-button-gray {
+  background: $buttonGray;
+  padding: 15px 20px;
+  border-radius: 20px;
+  border: 1px solid $borderButtonGray;
+}
+
+.a-button-white {
+  background: $white;
+  padding: 15px 20px;
+  border-radius: 20px;
+  border: 1px solid $borderButtonGray;
+}

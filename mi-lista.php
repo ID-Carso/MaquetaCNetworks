@@ -110,7 +110,7 @@
         <div>
             <nav class="menu-perfil">
                 <div class="nav-content">
-                    <div class="claro-logo">
+                    <div class="claro-logo text-center">
                         <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
 
                         <img class="logo" src="./images/alertas/claro-networks.svg" alt="" />
@@ -149,9 +149,8 @@
                     </a>
                 </div>
 
-                <div class="login">
-                    <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-                    <a href="paises.html" class="login-item"><img class="login-country" alt="" /></a>
+                <div class="user-options">
+
                 </div>
             </div>
             <div class="claro-navbar">

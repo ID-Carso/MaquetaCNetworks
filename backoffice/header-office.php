@@ -1,56 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+function showHeader($nameButton, $nameSection, $variation)
 
-    <!-- Scripts -->
-    <script src="../js/lib/jquery-3.4.1.min.js"></script>
-    <script src="../js/lib/easyXDM.min.js"></script>
-    <script src="./js/main.js" type="module"></script>
+{
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="../styles/bootstrap-4.4.1/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    switch ($variation) {
+        case 1:
+            echo "<div class='no-gutters'>
+                    <div class='o-header-backoffice col-11 mx-auto'>
+                        <div class='d-flex align-items-center justify-content-between border-b-lightgray py-xl-4'>
+                            <div>
+                                <div class='name-circle'></div>
+                
+                                <p class='a-text-black-regular a-header-section-name d-flex align-items-center ml-xl-3'><span class='ml-xl-4'>" . $nameSection . "</span></p>
+                
+                            </div>
+                
+                            <div>
+                                <span class='a-text-black-light'>Claro Networks</span>
+                
+                                <span class='a-text-lightgray-light ml-3'>Administrador de Contenidos</span>
+                            </div>
+                
+                        </div>
+                
+                        <section id='user_information' class='o-user-info-container d-flex align-items-center justify-content-between pt-xl-4'>
+                
+                            <div>
+                                <span class='a-text-black-bold a-name-user'>Vanesa Pérez</span><br>
+                                <span class='a-role-text a-text-black-light'>Administrador</span>
+                            </div>
 
-    <!-- Styles -->
-    <title>Back Office CN Login</title>
+                            <div>
+                                <button class='a-button-gray a-text-black-light'>Cerrar Sesión</button>
+                            </div>
+                        </section>
+                    </div>
+                </div>";
+            break;
+        case 2:
+            echo "<div class='no-gutters'>
+                    <div class='o-header-backoffice col-11 mx-auto'>
+                        <div class='d-flex align-items-center justify-content-between border-b-lightgray py-xl-4'>
+                            <div>
+                                <div class='name-circle'></div>
+                
+                                <p class='a-text-black-regular a-header-section-name d-flex align-items-center ml-xl-3'><span class='ml-xl-4'>" . $nameSection . "</span></p>
+                
+                            </div>
+                
+                            <div>
+                                <span class='a-text-black-light'>Claro Networks</span>
+                
+                                <span class='a-text-lightgray-light ml-3'>Administrador de Contenidos</span>
+                            </div>
+                
+                        </div>
+                
+                        <section id='user_information' class='o-user-info-container d-flex align-items-center justify-content-between pt-xl-4'>
+                
+                            <div>
+                                <span class='a-text-black-bold a-name-user'>Vanesa Pérez</span><br>
+                                <span class='a-role-text a-text-black-light'>Administrador</span>
+                            </div>
 
-
-</head>
-
-
-<body>
-    <div class="row t-header-bo">
-        <div class="col-sm-3 d-flex align-items-center">
-            <div class="name-circle"></div>
-
-        </div>
-
-        <div class="col-sm-9 text-right ">
-            <span class="a-lb-general">Claro Networks</span>
-
-            <span class="a-lb-light">Administrador de Contenidos</span>
-        </div>
-
-    </div>
-    <hr class="hr-bo">
-    <section id="user_information" class="col-xl-12 t-user-info-container">
-        <div class="row">
-            <div class="col-sm-6">
-                <span class="a-lb-name">Vanesa Pérez</span><br>
-                <span class="a-lb-general">Administrador</span>
-            </div>
-            <div class="col-sm-6">
-                <div class="text-right align-btn-logout">
-                    <button class="m-btn-logout">Cerrar Sesión</button>
-                </div>
-            </div>
-        </div>
-
-    </section>
-</body>
-
-</html>
+                            <div>
+                                <button class='a-button-white a-text-black-light mr-4'>" . $nameButton . "</button>
+                                <button class='a-button-gray a-text-black-light'>Cerrar Sesión</button>
+                            </div>
+                        </section>
+                    </div>
+                </div>";
+            break;
+        default:
+            echo "<div class='no-gutters'>
+                    <div class='o-header-backoffice col-11 mx-auto'>
+                        <div class='d-flex align-items-center justify-content-between border-b-lightgray py-xl-4'>
+                            <div>
+                                <div class='name-circle'></div>
+                
+                                <p class='a-text-black-regular a-header-section-name d-flex align-items-center ml-xl-3'><span class='ml-xl-4'>" . $nameSection . "</span></p>
+                
+                            </div>
+                
+                            <div>    
+                                <span class='a-text-lightgray-light ml-3'>Administrador de Contenidos</span>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>";
+    }
+}

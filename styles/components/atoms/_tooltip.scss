@@ -1,0 +1,21 @@
+.tooltip-logout {
+  display: none;
+  background: red;
+  padding: 10px 30px;
+  border-radius: 10px;
+  width: 200px;
+  position: absolute;
+  top: 150%;
+  left: -60%;
+}
+
+.tooltip-logout::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 0%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent red transparent;
+  transform: translate(0px, -95%);
+}

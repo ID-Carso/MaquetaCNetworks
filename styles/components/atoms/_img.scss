@@ -516,6 +516,7 @@
 }
 
 .image-list-blue {
+  width: 90px;
   position: absolute;
   top: 0;
   left: 0;
@@ -539,4 +540,8 @@
 
 .sidebar-image-user {
   width: 70px;
+}
+
+.icon-user{
+  cursor: pointer;
 }

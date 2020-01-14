@@ -1415,6 +1415,13 @@ h6 {
   text-transform: uppercase;
 }
 
+.tooltip-text {
+  font-family: "Montserrat-Light";
+  color: #000000;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -2334,6 +2341,7 @@ h6 {
 }
 
 .image-list-blue {
+  width: 90px;
   position: absolute;
   top: 0;
   left: 0;
@@ -2358,6 +2366,10 @@ h6 {
 
 .sidebar-image-user {
   width: 70px;
+}
+
+.icon-user {
+  cursor: pointer;
 }
 
 .hr1 {
@@ -3737,6 +3749,29 @@ input[type="radio"]:checked + .mujer-estilo {
   display: inline-block;
 }
 
+.tooltip-logout {
+  display: none;
+  background: red;
+  padding: 10px 30px;
+  border-radius: 10px;
+  width: 200px;
+  position: absolute;
+  top: 150%;
+  left: -60%;
+}
+
+.tooltip-logout::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 0%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent red transparent;
+  -webkit-transform: translate(0px, -95%);
+          transform: translate(0px, -95%);
+}
+
 .schedule-poster {
   width: 50%;
   margin-right: 5%;
@@ -4843,7 +4878,7 @@ input[type="radio"]:checked + .mujer-estilo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 1;
+  z-index: 4;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -7401,6 +7436,9 @@ input[type="radio"]:checked + .mujer-estilo {
     top: 4%;
     right: 7%;
   }
+  .lista-content .image-list-points {
+    top: 15%;
+  }
   .image-list-blue {
     border-radius: 15px;
   }
@@ -7486,6 +7524,9 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .lista-header .menu-tablet {
     display: none;
+  }
+  .lista-header .menu-desktop {
+    position: static;
   }
   .menu-desktop {
     display: block;
@@ -8099,8 +8140,12 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*3.13 - Mi Lista - Organismos*/
   .mi-lista-container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0;
+  }
+  .lista-content {
+    position: static;
   }
   .list-item-container {
     display: -webkit-box;
@@ -8506,6 +8551,9 @@ input[type="radio"]:checked + .mujer-estilo {
   .image-list-points {
     top: 4%;
     right: 7%;
+  }
+  .lista-content .image-list-points {
+    top: 20%;
   }
   .image-list-blue {
     border-radius: 15px;
@@ -9089,6 +9137,9 @@ input[type="radio"]:checked + .mujer-estilo {
   .lista-header .menu-tablet {
     display: none;
   }
+  .lista-header .menu-desktop {
+    position: static;
+  }
   .avatar-header .menu-perfil {
     display: none;
   }
@@ -9201,8 +9252,11 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*3.14 - Mi Lista - Organismos*/
   .mi-lista-container {
-    padding-top: 40px;
-    margin-bottom: 50px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+  .lista-content {
+    position: static;
   }
   .list-item-container {
     display: -webkit-box;

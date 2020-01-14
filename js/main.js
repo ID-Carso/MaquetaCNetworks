@@ -88,7 +88,13 @@ $(document).ready(function() {
   if (ingreso == "1") {
     let menuIngreso = `
     <div class="menu-ingreso">
-      <a href="login.html" class="login-item"><img src="./images/menu/icon-white-user.svg" alt="" /></a>
+      <div class="icon-user position-relative mr-3">
+        <div class="tooltip-logout">
+          <p class="tooltip-text">Cerrar Sesión</p>
+        </div>
+        <img src="./images/menu/icon-white-user.svg"  />
+      </div>
+      
       <p class="name-user mr-3">Eduardo Pérez</p>
       <a href="mi-lista.php"><img class="mr-3 options-item" src="./images/menu/mi-lista-icon.png" alt="" /></a>
       <a href="configuracion.php"><img class="mr-3 options-item" src="./images/menu/configuracion-icon.png" alt="" /></a>
@@ -132,6 +138,22 @@ $(document).ready(function() {
   var sessionSrc = sessionStorage.getItem("src");
   var loginCountry = $(".login-country");
   loginCountry.attr("src", sessionSrc);
+
+  /* Hacer aparecer el tooltip */
+
+  $(".icon-user").click(function() {
+    let tooltipLogout = $(".tooltip-logout");
+    tooltipLogout.toggle();
+  });
+
+  $(document).on("click", function(e) {
+    let container = $(".icon-user");
+    let tooltipLogout = $(".tooltip-logout");
+
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      tooltipLogout.css("display", "none");
+    }
+  });
 
   const inputPassword = $("#login-password");
   const caracteresMin = $(".caracteres-min");
@@ -635,14 +657,14 @@ $(document).ready(function() {
       html.css({
         position: "initial",
         overflow: "auto",
-        height: "100%"
+        height: "auto"
       });
       body.css({
         position: "initial",
         overflowX: "hidden",
         overflowY: "auto",
         "-webkit-overflow-scrolling": "auto",
-        height: "100%",
+        height: "auto",
         width: "auto"
       });
       sidebar_content.style.overflow = "hidden";

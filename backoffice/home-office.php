@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Claro Networks - Backoffice</title>
+    <link rel="shortcut icon" type="image/png" href="../images/favicon/claro-fav.png" />
     <link rel="stylesheet" href="../styles/bootstrap-4.4.1/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="../js/lib/jquery-3.4.1.min.js"></script>
@@ -28,8 +29,14 @@
 
 <body>
     <main>
+        <?php
+        $nameButton = "Historial home";
+        $nameSection = "home";
+        include 'header-office.php';
 
-        <div class="col-11 mx-auto mb-5">
+        showHeader($nameButton, $nameSection, 2);
+        ?>
+        <div class="col-11 mx-auto mb-5 mt-5">
 
             <div class="d-flex justify-content-between align-items-end">
                 <div>
