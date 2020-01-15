@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <?php
@@ -19,21 +18,21 @@
         include 'header-office.php';
         showHeader($nameButton, $nameSection, 3);
         ?>
-        <div class="col-8 mx-auto">
-            <div class="m-form-login mx-auto">
-                <form>
-                    <div>
-                        <label>Usuario</label>
-                        <input type="email" name="usuario" id="">
-                    </div>
-                    <div>
-                        <label>Contraseña</label>
-                        <input type="email" name="usuario" id="">
-                    </div>
-                    <button>Ingresar</button>
-                </form>
-
-
+        <div class="col-8 mx-auto mt-5 mb-5">
+            <div class="m-form-login mx-auto no-gutters">
+                <div class="text-center col-5 mr-xl-6 mt-xl-6 mb-xl-6 ml-xl-6">
+                    <form>
+                        <div class="mb-xl-5">
+                            <label class="a-text-black-semibold a-login-label mb-xl-4">Usuario</label>
+                            <input type="email" name="usuario" id="" class="login-input">
+                        </div>
+                        <div class="mb-xl-6">
+                            <label class="a-text-black-semibold a-login-label mb-xl-4">Contraseña</label>
+                            <input type="email" name="usuario" id="" class="login-input">
+                        </div>
+                        <button class="a-button-black a-text-white-bold a-button-basic">Ingresar</button>
+                    </form>
+                </div>
             </div>
 
         </div>

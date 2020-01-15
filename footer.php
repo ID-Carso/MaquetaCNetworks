@@ -14,7 +14,7 @@
                                  </a>
                              </div>
                              <div>
-                                 <a href="#">
+                                 <a href="aviso.html">
                                      <p class="aviso-priv-blue">Aviso de privacidad</p>
                                  </a>
                              </div>
@@ -24,30 +24,30 @@
                  <div class="footer-companies col-12">
                      <div class="d-flex padding-bottom-footer">
                          <div class="col">
-                             <img class="d-block m-auto footer-img" src="./images/home/fast-icon.svg" alt="">
+                             <a href="https://fast-mag.com/" target="_blank"><img class="d-block m-auto footer-img" src="./images/home/fast-icon.svg" alt=""></a>
                          </div>
                          <div class="col">
-                             <img class="d-block m-auto footer-img" src="./images/home/claro-musica-icon.svg" alt="">
+                             <a href="https://www.claromusica.com/" target="_blank"><img class="d-block m-auto footer-img" src="./images/home/claro-musica-icon.svg" alt=""></a>
                          </div>
                          <div class="col">
-                             <img class="d-block m-auto footer-img" src="./images/home/claro-video-icon.svg" alt="">
+                             <a href="https://www.clarovideo.com/" target="_blank"><img class="d-block m-auto footer-img" src="./images/home/claro-video-icon.svg" alt=""></a>
                          </div>
                          <div class="col">
-                             <img class="d-block m-auto footer-img" src="./images/home/claro-musica-icon.svg" alt="">
+                             <a href="https://www.claromusica.com/" target="_blank"><img class="d-block m-auto footer-img" src="./images/home/claro-musica-icon.svg" alt=""></a>
                          </div>
                      </div>
                      <div class="d-flex padding-bottom-footer">
                          <div class="col">
-                             <img class="d-block m-auto small-footer-img" src="./images/home/sanborns-icon.svg" alt="">
+                             <a href="https://www.sanborns.com.mx/" target="_blank"><img class="d-block m-auto small-footer-img" src="./images/home/sanborns-icon.svg" alt=""></a>
                          </div>
                          <div class="col">
-                             <img class="d-block m-auto small-footer-img" src="./images/home/soumaya-icon.svg" alt="">
+                             <a href="http://www.museosoumaya.org/" target="_blank"><img class="d-block m-auto small-footer-img" src="./images/home/soumaya-icon.svg" alt=""></a>
                          </div>
                          <div class="col">
-                             <img class="d-block m-auto small-footer-img" src="./images/home/claro-shop-icon.svg" alt="">
+                             <a href="https://www.claroshop.com/" target="_blank"><img class="d-block m-auto small-footer-img" src="./images/home/claro-shop-icon.svg" alt=""></a>
                          </div>
                          <div class="col">
-                             <img class="d-block m-auto small-footer-img" src="./images/home/fundacion-icon.svg" alt="">
+                             <a href="https://fundacioncarlosslim.org/" target="_blank"><img class="d-block m-auto small-footer-img" src="./images/home/fundacion-icon.svg" alt=""></a>
                          </div>
                      </div>
                  </div>
@@ -69,7 +69,7 @@
                                  </a>
                              </div>
                              <div>
-                                 <a href="#">
+                                 <a href="aviso.html">
                                      <p class="aviso-priv-blue">Aviso de privacidad</p>
                                  </a>
                              </div>
@@ -84,26 +84,26 @@
                  <div class="footer-companies-desktop">
                      <div class="d-flex padding-bottom-footer col-lg-12 col-xl-12 m-auto justify-content-between align-items-center">
                          <div class="col footer-border-right">
-                             <img class="d-block m-auto small-footer-img" src="./images/home/sanborns-icon.svg" alt="" />
+                             <a href="https://www.sanborns.com.mx/" target="_blank"><img class="d-block m-auto small-footer-img" src="./images/home/sanborns-icon.svg" alt="" /></a>
                          </div>
                          <div class="col footer-border-right">
-                             <img class="d-block m-auto footer-img" src="./images/home/claro-musica-icon.svg" alt="" />
+                             <a href="https://www.claromusica.com/" target="_blank"><img class="d-block m-auto footer-img" src="./images/home/claro-musica-icon.svg" alt="" /></a>
                          </div>
                          <div class="col footer-border-right">
-                             <img class="d-block m-auto footer-img" src="./images/home/claro-video-icon.svg" alt="" />
+                             <a href="https://www.clarovideo.com/" target="_blank"><img class="d-block m-auto footer-img" src="./images/home/claro-video-icon.svg" alt="" /></a>
                          </div>
 
                          <div class="col footer-border-right">
-                             <img class="d-block m-auto footer-img" src="./images/home/fast-icon.svg" alt="" />
+                             <a href="https://fast-mag.com/" target="_blank"><img class="d-block m-auto footer-img" src="./images/home/fast-icon.svg" alt="" /></a>
                          </div>
                          <div class="col footer-border-right">
-                             <img class="d-block m-auto small-footer-img" src="./images/home/soumaya-icon.svg" alt="" />
+                             <a href="http://www.museosoumaya.org/" target="_blank"><img class="d-block m-auto small-footer-img" src="./images/home/soumaya-icon.svg" alt="" /></a>
                          </div>
                          <div class="col footer-border-right">
-                             <img class="d-block m-auto small-footer-img" src="./images/home/claro-shop-icon.svg" alt="" />
+                             <a href="https://www.claroshop.com/" target="_blank"><img class="d-block m-auto small-footer-img" src="./images/home/claro-shop-icon.svg" alt="" /></a>
                          </div>
                          <div class="col">
-                             <img class="d-block m-auto small-footer-img" src="./images/home/fundacion-icon.svg" alt="" />
+                             <a href="https://fundacioncarlosslim.org/" target="_blank"><img class="d-block m-auto small-footer-img" src="./images/home/fundacion-icon.svg" alt="" /></a>
                          </div>
                      </div>
                  </div>

@@ -1,8 +1,8 @@
 @import "../settings/color";
 
 .a-button-basic {
-  padding: 12px 24px;
-  border-radius: 10px;
+  padding: 15px 40px;
+  border-radius: 14px;
 }
 
 .a-button-blue {
@@ -10,27 +10,14 @@
   border: $coralBlue;
 }
 
-.a-button-save {
-  margin-bottom: 17px;
-}
-
 .a-button-black {
-  border-radius: 19px;
-  padding: 10px;
   background: $blackText;
   border: $blackText;
   cursor: pointer;
 }
 
-.a-button-edition-video {
-  position: absolute;
-  right: 3%;
-  top: 3%;
-}
-
-.btn-red,
-.btn-pink {
-  margin-bottom: 0px;
+.a-button-save {
+  margin-bottom: 17px;
 }
 
 .a-button-gray {
@@ -45,4 +32,17 @@
   padding: 15px 20px;
   border-radius: 20px;
   border: 1px solid $borderButtonGray;
+}
+
+.a-button-edition {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.btn-red,
+.btn-pink {
+  margin-bottom: 0px;
 }

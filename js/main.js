@@ -81,6 +81,10 @@ $(document).ready(function() {
     }
   });
 
+  $(".terms-conditions-button").click(function() {
+    window.history.back();
+  });
+
   /*Mostrar menú una vez que el usuario ha ingresado */
   let ingreso = sessionStorage.getItem("ingreso");
   const userOptions = $(".user-options");
@@ -90,7 +94,10 @@ $(document).ready(function() {
     <div class="menu-ingreso">
       <div class="icon-user position-relative mr-3">
         <div class="tooltip-logout">
-          <p class="tooltip-text">Cerrar Sesión</p>
+          <div class="d-flex">
+            <img src="./images/menu/logout.svg" />
+            <p class="tooltip-text ml-3">Cerrar Sesión</p>
+          </div>
         </div>
         <img src="./images/menu/icon-white-user.svg"  />
       </div>

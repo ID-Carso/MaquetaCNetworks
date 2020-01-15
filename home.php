@@ -243,6 +243,7 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
                                     </div>
+                                    <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
                                         </div>
@@ -1860,6 +1861,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                             </div>
+                            <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                             <a href="sinopsis.php">
                                 <div class="thumbnail">
                                     <img src="./images/posters/alla-rancho-peli.jpeg" alt="">
@@ -1960,6 +1962,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                 </div>
+                                <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail">
                                         <img src="./images/posters/flor-silvestre-peli.jpeg" alt="">
@@ -2032,65 +2035,6 @@
 
                     </div>
                 </div>
-
-                <!--<div class="row no-gutters">
-                <div class="col-md-4 col-xl-6">
-                </div>
-                <div class="col-md-8 col-xl-6">
-                    <div class="row poster-pad-b">
-                        <div class="col poster-pad-r">
-                            <div class="height-second-poster ">
-                                <div class="thumbnail">
-                                    <img src="./images/posters/alla-rancho-peli.jpeg" alt="">
-                                </div>
-                                <div class="a-cinema-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-black">ALLÁ EN EL RANCHO GRANDE</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col poster-pad-l">
-                            <div class="height-second-poster">
-                                <div class="thumbnail">
-                                    <img src="./images/posters/maria-candelaria-peli.jpeg" alt="">
-                                </div>
-                                <div class="a-cinema-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-black">MARÍA CANDELARIA</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row poster-pad-t">
-                        <div class="col poster-pad-r">
-                            <div class="height-second-poster">
-                                <div class="thumbnail">
-                                    <img src="./images/posters/flor-silvestre-peli.jpeg" alt="">
-                                </div>
-                                <div class="a-cinema-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-black">FLOR SILVESTRE</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col poster-pad-l">
-                            <div class="height-second-poster">
-                                <div class="thumbnail">
-                                    <img src="./images/posters/macario-peli.jpeg" alt="">
-                                </div>
-                                <div class="a-cinema-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-black">MACARIO</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
                 <div class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
                         <img class="concert-footer-img" src="./images/home/cinema-home-img.svg" alt="">

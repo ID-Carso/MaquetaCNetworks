@@ -280,7 +280,10 @@
             <div class="imperdibles-slider cinema-slider">
               <div class="poster">
                 <div class="poster-body">
-                  <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                  <div class="showtime-container">
+                    <p class="a-programming-text">14:30 - 16:30</p>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                  </div>
                   <div class="thumbnail">
                   </div>
                   <div class="a-cinema-rectangle">
@@ -357,7 +360,10 @@
               <div class="col poster-pad-r poster-section">
                 <div class="poster">
                   <div class="poster-body">
-                    <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                    <div class="showtime-container">
+                      <p class="a-programming-text">14:30 - 16:30</p>
+                      <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                    </div>
                     <div class="thumbnail">
                     </div>
                     <div class="a-cinema-rectangle">

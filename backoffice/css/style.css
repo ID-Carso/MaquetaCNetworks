@@ -37,6 +37,10 @@
     color: #161515;
     font-family: "Montserrat-Bold";
   }
+  .a-text-white-bold {
+    color: #ffffff;
+    font-family: "Montserrat-Bold";
+  }
   .a-text-black-light {
     color: #161515;
     font-family: "Montserrat-Light";
@@ -53,16 +57,20 @@
     color: #161515;
     font-family: "Montserrat-Regular";
   }
+  .a-text-white {
+    color: #ffffff;
+    font-family: "Montserrat-SemiBold";
+  }
+  .a-text-black-semibold {
+    color: #161515;
+    font-family: "Montserrat-SemiBold";
+  }
   .a-prev-title {
     font-size: 16px;
     text-transform: uppercase;
     margin-bottom: 0;
     padding-bottom: 24px;
     text-align: center;
-  }
-  .a-text-white {
-    color: #ffffff;
-    font-family: "Montserrat-SemiBold";
   }
   .a-edition-title {
     font-size: 24px;
@@ -147,31 +155,20 @@
             transform: translate(16px, -50%);
   }
   .a-button-basic {
-    padding: 12px 24px;
-    border-radius: 10px;
+    padding: 15px 40px;
+    border-radius: 14px;
   }
   .a-button-blue {
     background: #40c7e9;
     border: #40c7e9;
   }
-  .a-button-save {
-    margin-bottom: 17px;
-  }
   .a-button-black {
-    border-radius: 19px;
-    padding: 10px;
     background: #161515;
     border: #161515;
     cursor: pointer;
   }
-  .a-button-edition-video {
-    position: absolute;
-    right: 3%;
-    top: 3%;
-  }
-  .btn-red,
-  .btn-pink {
-    margin-bottom: 0px;
+  .a-button-save {
+    margin-bottom: 17px;
   }
   .a-button-gray {
     background: #eeeeee;
@@ -184,6 +181,17 @@
     padding: 15px 20px;
     border-radius: 20px;
     border: 1px solid #979797;
+  }
+  .a-button-edition {
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .btn-red,
+  .btn-pink {
+    margin-bottom: 0px;
   }
   .border-t-gray {
     border-top: 3px solid #817e7e;
@@ -215,10 +223,48 @@
   .mt-xl-6 {
     margin-top: 96px;
   }
+  .mb-xl-6 {
+    margin-bottom: 96px;
+  }
+  .mr-xl-6 {
+    margin-right: 96px;
+  }
+  .ml-xl-6 {
+    margin-left: 96px;
+  }
+  .pt-xl-6 {
+    padding-top: 96px;
+  }
+  .pr-xl-6 {
+    padding-right: 96px;
+  }
+  .pl-xl-6 {
+    padding-left: 96px;
+  }
+  .pb-xl-6 {
+    padding-bottom: 96px;
+  }
+  .a-login-label {
+    text-align: center;
+    font-size: 18px;
+    display: block;
+  }
+  .login-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 9px;
+    border: 1px solid #979797;
+  }
   .m-form-login {
     background: lightgray;
     border-radius: 20px;
     max-width: 580px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .o-channels-container {
     display: none;

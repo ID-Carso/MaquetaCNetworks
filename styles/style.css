@@ -3751,7 +3751,7 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .tooltip-logout {
   display: none;
-  background: red;
+  background: white;
   padding: 10px 30px;
   border-radius: 10px;
   width: 200px;
@@ -3767,7 +3767,7 @@ input[type="radio"]:checked + .mujer-estilo {
   top: 0%;
   border-width: 10px;
   border-style: solid;
-  border-color: transparent transparent red transparent;
+  border-color: transparent transparent white transparent;
   -webkit-transform: translate(0px, -95%);
           transform: translate(0px, -95%);
 }

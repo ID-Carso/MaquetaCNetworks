@@ -27,7 +27,7 @@
 
         <header class="home-header">
             <div class="circle-video">
-                <button class="a-text-white-regular a-button-black a-button-edition-video">Cambiar video</button>
+                <button class="a-text-white-regular a-button-black a-button-edition">Cambiar video</button>
                 <video preload="yes" playsinline autoplay muted loop class="home-video w-100">
                     <source src="../video/demo.mp4" type="video/mp4" />
                 </video>
