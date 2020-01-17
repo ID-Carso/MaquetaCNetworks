@@ -54,6 +54,8 @@
             </div>
 
             <div>
+                <button class="a-text-white a-button-basic a-button-green a-button-save mr-xl-2">Aprobar cambios</button>
+                <button class="a-text-white a-button-basic a-button-red a-button-save mr-xl-2">Rechazar cambios</button>
                 <button class="a-text-white a-button-basic a-button-blue a-button-save">Guardar Edición</button>
             </div>
 

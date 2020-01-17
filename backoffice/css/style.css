@@ -118,6 +118,14 @@
   .a-role-text {
     font-size: 18px;
   }
+  .a-admin-text-nav {
+    margin-bottom: 0;
+  }
+  .a-nav-notificacion-text {
+    padding: 10px 15px;
+    background: #fc281e;
+    border-radius: 50%;
+  }
   .a-prev-image {
     height: 50px;
     padding-right: 20px;
@@ -162,6 +170,14 @@
     background: #40c7e9;
     border: #40c7e9;
   }
+  .a-button-red {
+    background: #fc281e;
+    border: #fc281e;
+  }
+  .a-button-green {
+    background: #15b643;
+    border: #15b643;
+  }
   .a-button-black {
     background: #161515;
     border: #161515;
@@ -178,7 +194,6 @@
   }
   .a-button-white {
     background: #ffffff;
-    padding: 15px 20px;
     border-radius: 20px;
     border: 1px solid #979797;
   }
@@ -265,6 +280,28 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .m-admin-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .admin-item-nav {
+    background: #ffffff;
+    border: 1px solid #979797;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: "Montserrat-Light";
+    color: #161515;
+  }
+  .active-admin-nav {
+    background: #2e2c2c;
+    font-family: "Montserrat-Bold";
+    color: #ffffff;
+    border: 1px solid #2e2c2c;
   }
   .o-channels-container {
     display: none;

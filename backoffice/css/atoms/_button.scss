@@ -10,6 +10,16 @@
   border: $coralBlue;
 }
 
+.a-button-red {
+  background: $red;
+  border: $red;
+}
+
+.a-button-green {
+  background: $green;
+  border: $green;
+}
+
 .a-button-black {
   background: $blackText;
   border: $blackText;
@@ -29,7 +39,6 @@
 
 .a-button-white {
   background: $white;
-  padding: 15px 20px;
   border-radius: 20px;
   border: 1px solid $borderButtonGray;
 }

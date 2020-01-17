@@ -9,8 +9,8 @@
     <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="shortcut icon" type="image/png" href="./images/favicon/claro-fav.png" />
     <link rel="stylesheet" href="./styles/bootstrap-4.4.1/bootstrap.min.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./slick-master/slick/slick.css" />
+    <link rel="stylesheet" href="./styles/style.css?t=<?php echo time(); ?>" />
+    <link rel=" stylesheet" href="./slick-master/slick/slick.css" />
     <link rel="stylesheet" href="./slick-master/slick/slick-theme.css" />
     <script src="./js/lib/jquery-3.4.1.min.js"></script>
     <script src="slick-master/slick/slick.js" defer></script>
@@ -104,7 +104,7 @@
                         <div class="claro-logo">
                             <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
 
-                            <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
+                            <img class="logo" src="./images/home/claro-logo.svg" alt="" />
                         </div>
 
                         <div class="login">
@@ -149,7 +149,7 @@
                     <div class="nav-content">
                         <div class="claro-logo">
 
-                            <a href="home.php"><img class="logo" src="./images/home/claro-networks-black.svg" alt="" /></a>
+                            <a href="home.php"><img class="logo" src="./images/home/claro-logo.svg" alt="" /></a>
                         </div>
 
                         <div class="user-options">
