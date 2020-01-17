@@ -1207,3 +1207,28 @@
   font-size: 14px;
   margin-bottom: 0;
 }
+
+.a-text-black {
+  font-family: $montserratSemiBold;
+  color: $pureBlack;
+}
+
+.a-correo-title {
+  font-size: 27px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.a-text-black-regular {
+  font-family: $montserratRegular;
+  color: $pureBlack;
+}
+
+.a-text-white-bold {
+  font-family: $montserratBold;
+  color: $colorWhite;
+}
+
+.a-password-link {
+  color: $subtitleTV;
+}

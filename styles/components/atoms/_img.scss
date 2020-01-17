@@ -230,6 +230,7 @@
   position: absolute;
   top: 100%;
   transform: translate(0, -100%);
+  left: 0;
 }
 
 .ubicacion6 {
@@ -507,6 +508,8 @@
 
 .form-image-blue {
   border-radius: 15px;
+  left: 0;
+  top: 0;
 }
 
 .tache_button {
@@ -542,6 +545,11 @@
   width: 70px;
 }
 
-.icon-user{
+.icon-user {
   cursor: pointer;
+}
+
+.logo-mail {
+  width: 100%;
+  max-width: 150px;
 }

@@ -65,7 +65,7 @@
     <div>
       <nav class="menu-perfil">
         <div class="nav-content">
-          <div class="claro-logo">
+          <div class="claro-logo text-center">
             <img class="menu-responsive" src="./images/home/responsive-menu.svg" />
 
             <img class="logo" src="./images/alertas/claro-networks.svg" />
