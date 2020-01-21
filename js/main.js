@@ -5,8 +5,24 @@ import { validateEmail } from "./form/form.js";
 import { validateNewPassword } from "./form/form.js";
 import { validateKeyUpEmail } from "./form/form.js";
 import { validatePassword } from "./form/form.js";
+import { validateUser } from "./form/form.js";
+import { registerUser } from "./form/form.js";
+import { validateToken } from "./form/form.js";
+
 var programacion_slider;
 var tvConcertSlider;
+let url = location.href;
+let url2 =
+  "http://www.claronetworks.openofficedospuntocero.info/cuenta-confirmada.html";
+let arrayUrl = url.split("?");
+let data = {
+  token: arrayUrl[1]
+};
+
+if (arrayUrl[0] == url2) {
+  validateToken(data);
+}
+
 $(document).ready(function() {
   /*Mostrar u ocultar password de registro o login */
   var iconPassword = document.querySelectorAll(".icon-eye");
@@ -40,26 +56,22 @@ $(document).ready(function() {
   /*End función elegir un país y mostrar la bandera en navbar */
 
   $(".signup-button").click(function() {
-    var usuario, correo, password, expresion;
-    const nodatos1 = $(".nodatos");
-    const nocorreo1 = $(".nocorreo");
+    let messagePasswordError = $(".caracteres-min");
+    let messageErrorEmail = $(".nocorreo");
+    let messageErrorUser = $(".nouser");
 
-    usuario = document.getElementById("usuario").value;
-    correo = document.getElementById("signup-correo").value;
+    let inputUser = $("#usuario");
+    let inputEmail = $("#signup-correo");
+    let inputPassword = $("#signup-password");
 
-    password = document.getElementById("signup-password").value;
-    expresion = /\w+@\w+\.+[a-z]/;
-
-    if (usuario === "" && correo === "" && password === "") {
-      nodatos1.css("display", "block");
-      return false;
-    } else if (!expresion.test(correo)) {
-      nocorreo1.css("display", "block");
-      return false;
-    } else if (expresion.test(correo)) {
-      nocorreo1.css("display", "none");
-    } else if (password.length < 8) {
-      alert("el campo esta vacio");
+    if (
+      validateUser(inputUser, messageErrorUser) &&
+      validateEmail(inputEmail, messageErrorEmail) &&
+      validatePassword(inputPassword, messagePasswordError)
+    ) {
+      registerUser(inputUser, inputEmail, inputPassword);
+      return true;
+    } else {
       return false;
     }
   });

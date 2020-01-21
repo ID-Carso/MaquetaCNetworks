@@ -39,34 +39,65 @@
                     </div>
                 </nav>
                 <div id="admin-site" class="admin-content">
-                    <div class="col-5 mx-auto mt-xl-5 mb-xl-5">
+                    <div class="col-6 mx-auto mt-xl-5 mb-xl-5">
                         <div class="border-b-lightgray d-flex justify-content-between pb-xl-3 pr-xl-3 pl-xl-5 pt-xl-3">
                             <p class="a-text-black-regular mb-0 text-uppercase">Programación General</p>
-                            <img src="./images/arrow-grey.svg" alt="">
+                            <img src="./images/arrow-grey.svg" alt="" class="ml-3">
                         </div>
                         <div class="border-b-lightgray d-flex justify-content-between pb-xl-3 pr-xl-3 pl-xl-5 pt-xl-3">
                             <p class="a-text-black-regular mb-0 text-uppercase">Programación</p>
-                            <img src="./images/arrow-grey.svg" alt="">
+                            <div>
+                                <img src="./images/preview-icon.svg" alt="" class="ml-3">
+                                <img src="./images/pencil.svg" alt="" class="ml-3">
+                                <img src="./images/record.svg" alt="" class="ml-3">
+                                <img src="./images/arrow-grey.svg" alt="" class="ml-3">
+                            </div>
                         </div>
                         <div class="border-b-lightgray d-flex justify-content-between pb-xl-3 pr-xl-3 pl-xl-5 pt-xl-3">
                             <p class="a-text-black-regular mb-0 text-uppercase">Home</p>
-                            <img src="./images/arrow-grey.svg" alt="">
+                            <div>
+                                <img src="./images/preview-icon.svg" alt="" class="ml-3">
+                                <img src="./images/pencil.svg" alt="" class="ml-3">
+                                <img src="./images/record.svg" alt="" class="ml-3">
+                                <img src="./images/arrow-grey.svg" alt="" class="ml-3">
+                            </div>
                         </div>
                         <div class="border-b-lightgray d-flex justify-content-between pb-xl-3 pr-xl-3 pl-xl-5 pt-xl-3">
                             <p class="a-text-black-regular mb-0 text-uppercase">Canal Claro</p>
-                            <img src="./images/arrow-grey.svg" alt="">
+                            <div>
+                                <img src="./images/preview-icon.svg" alt="" class="ml-3">
+                                <img src="./images/pencil.svg" alt="" class="ml-3">
+                                <img src="./images/record.svg" alt="" class="ml-3">
+                                <img src="./images/arrow-grey.svg" alt="" class="ml-3">
+                            </div>
+
                         </div>
                         <div class="border-b-lightgray d-flex justify-content-between pb-xl-3 pr-xl-3 pl-xl-5 pt-xl-3">
                             <p class="a-text-black-regular mb-0 text-uppercase">Concert Channel</p>
-                            <img src="./images/arrow-grey.svg" alt="">
+                            <div>
+                                <img src="./images/preview-icon.svg" alt="" class="ml-3">
+                                <img src="./images/pencil.svg" alt="" class="ml-3">
+                                <img src="./images/record.svg" alt="" class="ml-3">
+                                <img src="./images/arrow-grey.svg" alt="" class="ml-3">
+                            </div>
                         </div>
                         <div class="border-b-lightgray d-flex justify-content-between pb-xl-3 pr-xl-3 pl-xl-5 pt-xl-3">
                             <p class="a-text-black-regular mb-0 text-uppercase">Claro Cinema</p>
-                            <img src="./images/arrow-grey.svg" alt="">
+                            <div>
+                                <img src="./images/preview-icon.svg" alt="" class="ml-3">
+                                <img src="./images/pencil.svg" alt="" class="ml-3">
+                                <img src="./images/record.svg" alt="" class="ml-3">
+                                <img src="./images/arrow-grey.svg" alt="" class="ml-3">
+                            </div>
                         </div>
                         <div class="border-b-lightgray d-flex justify-content-between pb-xl-3 pr-xl-3 pl-xl-5 pt-xl-3">
                             <p class="a-text-black-regular mb-0 text-uppercase">Footer</p>
-                            <img src="./images/arrow-grey.svg" alt="">
+                            <div>
+                                <img src="./images/preview-icon.svg" alt="" class="ml-3">
+                                <img src="./images/pencil.svg" alt="" class="ml-3">
+                                <img src="./images/record.svg" alt="" class="ml-3">
+                                <img src="./images/arrow-grey.svg" alt="" class="ml-3">
+                            </div>
                         </div>
                     </div>
                 </div>

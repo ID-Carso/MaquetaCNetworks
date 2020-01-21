@@ -12,12 +12,12 @@ function validateEmail(inputEmail, messageError) {
   let filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   if (email.length == 0) {
     messageError
-      .addClass("invalid-email")
+      .addClass("invalid-email d-block")
       .text("Debes ingresar un correo electrónico");
     return false;
   } else if (!filter.test(email)) {
     messageError
-      .addClass("invalid-email")
+      .addClass("invalid-email d-block")
       .text("El correo electrónico no tiene un formato válido");
     console.log("error");
     return false;
@@ -93,10 +93,65 @@ function validatePassword(inputPassword, messageError) {
   }
 }
 
+function validateUser(inputUser, messageError) {
+  let user = inputUser.val();
+  if (user.length == 0) {
+    let message = `
+    <img
+    src="images/registro/alerta.svg">
+    Debes ingresar un nombre
+    `;
+    messageError.addClass("invalid-email").html(message);
+    return false;
+  } else {
+    return true;
+  }
+}
+
+function registerUser(inputName, inputEmail, inputPassword) {
+  let name = inputName.val();
+  let email = inputEmail.val();
+  let password = inputPassword.val();
+
+  let user = {
+    name: name,
+    email: email,
+    password: password
+  };
+
+  $.ajax({
+    type: "POST",
+    data: user,
+    url:
+      "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user",
+    success: function(result) {
+      console.log("succes", result.token);
+    }
+  });
+}
+
+function validateToken(token) {
+  $.ajax({
+    type: "POST",
+    data: token,
+    url:
+      "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/verify",
+    success: function(result) {
+      console.log("succes", result);
+      if (result.data != null) {
+        console.log("chido :)");
+      }
+    }
+  });
+}
+
 export {
   ShowHidePassword,
   validateEmail,
   validateNewPassword,
   validateKeyUpEmail,
-  validatePassword
+  validatePassword,
+  validateUser,
+  registerUser,
+  validateToken
 };
