@@ -139,7 +139,9 @@ function validateToken(token) {
     success: function(result) {
       console.log("succes", result);
       if (result.data != null) {
-        console.log("chido :)");
+        let name = result.data.name;
+        let nameUser = $("#cuenta-confirmada-name-user");
+        nameUser.html(name);
       }
     }
   });

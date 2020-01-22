@@ -8,6 +8,7 @@ import { validatePassword } from "./form/form.js";
 import { validateUser } from "./form/form.js";
 import { registerUser } from "./form/form.js";
 import { validateToken } from "./form/form.js";
+import { sendUserEmail } from "./services/user/user.js";
 
 var programacion_slider;
 var tvConcertSlider;
@@ -63,6 +64,7 @@ $(document).ready(function() {
     let inputUser = $("#usuario");
     let inputEmail = $("#signup-correo");
     let inputPassword = $("#signup-password");
+    let modalUsername = $("#modal-username");
 
     if (
       validateUser(inputUser, messageErrorUser) &&
@@ -70,7 +72,9 @@ $(document).ready(function() {
       validatePassword(inputPassword, messagePasswordError)
     ) {
       registerUser(inputUser, inputEmail, inputPassword);
-      return true;
+      modalUsername.html(inputUser.val());
+      //www.claronetworks.openofficedospuntocero.info/
+      http: return true;
     } else {
       return false;
     }
@@ -232,11 +236,13 @@ $(document).ready(function() {
   });
 
   /* Validar email para reestablecer contraseña*/
-  const searchEmailButton = $(".re-password-button");
+
   const inputReEmail = $("#re-password-email");
   const messageError = $(".correo-valido");
-  searchEmailButton.click(function() {
+  $("#reset-email").click(function() {
     if (validateEmail(inputReEmail, messageError)) {
+      console.log("hola");
+      sendUserEmail(inputReEmail);
       return true;
     } else {
       return false;
