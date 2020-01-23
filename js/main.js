@@ -9,6 +9,9 @@ import { validateUser } from "./form/form.js";
 import { registerUser } from "./form/form.js";
 import { validateToken } from "./form/form.js";
 import { sendUserEmail } from "./services/user/user.js";
+import { sendNewPassword } from "./services/user/user.js";
+import { signIn } from "./services/user/user.js";
+import { signOut } from "./services/user/user.js";
 
 var programacion_slider;
 var tvConcertSlider;
@@ -48,12 +51,6 @@ $(document).ready(function() {
     });
   }
 
-  /*if (!sessionSrc && window.location.pathname !== "/") {
-    location.href = "/";
-  } else {
-    loginCountry.attr("src", sessionSrc);
-  }*/
-
   /*End función elegir un país y mostrar la bandera en navbar */
 
   $(".signup-button").click(function() {
@@ -74,13 +71,13 @@ $(document).ready(function() {
       registerUser(inputUser, inputEmail, inputPassword);
       modalUsername.html(inputUser.val());
       //www.claronetworks.openofficedospuntocero.info/
-      http: return true;
+      return true;
     } else {
       return false;
     }
   });
 
-  $(".login-button").click(function() {
+  $("#login-button").click(function() {
     let inputEmail = $(".input-email");
     let inputPassword = $(".input-password");
     let messageError = $("#error_email");
@@ -90,11 +87,60 @@ $(document).ready(function() {
       validateEmail(inputEmail, messageError) &&
       validatePassword(inputPassword, messagePasswordError)
     ) {
-      sessionStorage.setItem("ingreso", 1);
+      let email = inputEmail.val();
+      let password = inputPassword.val();
+      signIn(email, password);
+
       return true;
     } else {
       return false;
     }
+  });
+
+  let session = localStorage.getItem("session");
+
+  if (session == 1) {
+    let userOptions = $(".user-options");
+    let userName = localStorage.getItem("name");
+    let menuIngreso = `
+      <div class="menu-ingreso">
+      <div class="icon-user position-relative mr-3">
+        <div class="tooltip-logout">
+          <div class="d-flex">
+            <img src="./images/menu/logout.svg" />
+            <p class="tooltip-text ml-3">Cerrar Sesión</p>
+          </div>
+        </div>
+        <img src="./images/menu/icon-white-user.svg"  />
+      </div>
+
+      <p class="name-user mr-3">${userName}</p>
+      <a href="mi-lista.php"><img class="mr-3 options-item" src="./images/menu/mi-lista-icon.png" alt="" /></a>
+      <a href="configuracion.php"><img class="mr-3 options-item" src="./images/menu/configuracion-icon.png" alt="" /></a>
+      <a href="index.html" class="login-item options-item"><img class="login-country" src="" alt="" /></a>
+      </div>
+      `;
+    userOptions.html(menuIngreso);
+  } else {
+    let userOptions = $(".user-options");
+    let menuBase = `    
+    <div class="login">
+      <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
+      <a href="index.html" class="login-item"><img class="login-country" src="" alt="" /></a>
+    </div>`;
+    userOptions.html(menuBase);
+  }
+
+  var sessionSrc = sessionStorage.getItem("src");
+  var loginCountry = $(".login-country");
+  if (!sessionSrc && window.location.pathname !== "/") {
+    location.href = "/";
+  } else {
+    loginCountry.attr("src", sessionSrc);
+  }
+
+  $(".tooltip-logout").click(function() {
+    signOut();
   });
 
   $(".terms-conditions-button").click(function() {
@@ -102,7 +148,7 @@ $(document).ready(function() {
   });
 
   /*Mostrar menú una vez que el usuario ha ingresado */
-  let ingreso = sessionStorage.getItem("ingreso");
+  /*let ingreso = sessionStorage.getItem("ingreso");
   const userOptions = $(".user-options");
   const sidebarHeader = $(".sidebar-header");
   if (ingreso == "1") {
@@ -156,10 +202,8 @@ $(document).ready(function() {
     </a>`;
     sidebarHeader.html(sidebarHeaderOptions);
     userOptions.html(menuBase);
-  }
+  }*/
 
-  var sessionSrc = sessionStorage.getItem("src");
-  var loginCountry = $(".login-country");
   loginCountry.attr("src", sessionSrc);
 
   /* Hacer aparecer el tooltip */
@@ -217,22 +261,8 @@ $(document).ready(function() {
   inputCorreo.keyup(function() {
     const correoValido = $(".correo-valido");
     const imagenError = $(".error");
-    //var email = $("#login-email").val();
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-
     validateKeyUpEmail(inputCorreo, filter, imagenError, correoValido);
-    /*if (!filter.test(email)) {
-      CorreoValido.css("color", "red");
-      ImagenError.css("display", "inline-block");
-      ImagenError.attr("src", "images/registro/alerta.svg");
-    } else if (filter.test(email)) {
-      CorreoValido.css("color", "green");
-      ImagenError.css("display", "inline-block");
-      ImagenError.attr("src", "images/registro/listo.svg");
-    } else if (inputCorreo.val().length == 0) {
-      ImagenError.css("display", "none");
-      CorreoValido.css("color", "#666262");
-    }*/
   });
 
   /* Validar email para reestablecer contraseña*/
@@ -252,10 +282,11 @@ $(document).ready(function() {
   /*Validar nueva contraseña */
   const inputNewPassword = $("#new-password");
   const inputConfirmPassword = $("#new-confirm-password");
-  const newPasswordButton = $(".new-password-button");
+  const newPasswordButton = $("#send-password-button");
 
   newPasswordButton.click(function() {
     if (validateNewPassword(inputNewPassword, inputConfirmPassword)) {
+      sendNewPassword(inputNewPassword, inputConfirmPassword);
       return true;
     } else {
       return false;

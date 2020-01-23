@@ -6510,7 +6510,7 @@ input[type="radio"]:checked + .mujer-estilo {
     position: relative;
   }
   .terms-conditions-mobile {
-    display: none;
+    display: none !important;
   }
   .social-media {
     margin: 46px auto 65px auto;
@@ -7585,7 +7585,7 @@ input[type="radio"]:checked + .mujer-estilo {
     display: block;
   }
   .terms-conditions-mobile {
-    display: none;
+    display: none !important;
   }
   .terms-conditions-desktop {
     display: block;
@@ -8671,7 +8671,7 @@ input[type="radio"]:checked + .mujer-estilo {
     position: initial;
   }
   .terms-conditions-mobile {
-    display: none;
+    display: none !important;
   }
   .terms-conditions-desktop {
     display: block;

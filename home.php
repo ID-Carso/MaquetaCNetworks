@@ -10,7 +10,6 @@
     <link rel="shortcut icon" type="image/png" href="./images/favicon/claro-fav.png" />
     <link rel="stylesheet" href="./styles/style.css?t=<?php echo time(); ?>" />
     <link rel="stylesheet" href="./styles/bootstrap-4.4.1/bootstrap.min.css" />
-    
     <link rel=" stylesheet" href="./slick-master/slick/slick.css" />
     <link rel="stylesheet" href="./slick-master/slick/slick-theme.css" />
     <script src="./js/lib/jquery-3.4.1.min.js"></script>
@@ -154,7 +153,6 @@
                         </div>
 
                         <div class="user-options">
-
                         </div>
                     </div>
                     <div class="claro-navbar">
@@ -1104,17 +1102,20 @@
 
                     <div class="poster">
                         <div class="poster-body">
-
-                            <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                            <div class="showtime-container">
+                                <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                            </div>
+                            <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
 
                             <a href="sinopsis.php">
                                 <div class="thumbnail-large">
-                                    <img src="../images/posters/bates-motel.jpeg" alt="">
+                                    <img src="../images/claro-canal/bbc.jpg" alt="">
 
                                 </div>
                                 <div class="a-claro-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">BATES MOTEL</p>
+                                        <p class="a-poster-text-white">BBC</p>
 
                                     </div>
 
@@ -1134,12 +1135,12 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail-large">
-                                    <img src="../images/posters/breaking-bad.jpeg" alt="">
+                                    <img src="../images/claro-canal/caja-de-pandora.jpg" alt="">
 
                                 </div>
                                 <div class="a-claro-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">BREAKING BAD</p>
+                                        <p class="a-poster-text-white">LA CAJA DE PANDORA</p>
 
                                     </div>
                                 </div>
@@ -1159,12 +1160,12 @@
                             </div>
                             <a class="sinopsis.php">
                                 <div class="thumbnail-large">
-                                    <img src="../images/posters/good-doctor.jpeg" alt="">
+                                    <img src="../images/claro-canal/indestructibles.jpg" alt="">
 
                                 </div>
                                 <div class="a-claro-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">THE GOOD DOCTOR</p>
+                                        <p class="a-poster-text-white">LOS INDESTRUCTIBLES 2</p>
                                     </div>
                                 </div>
                             </a>
@@ -1182,12 +1183,12 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail-large">
-                                    <img src="../images/posters/harry-potter.jpeg" alt="">
+                                    <img src="../images/claro-canal/saint-seiya.jpg" alt="">
 
                                 </div>
                                 <div class="a-claro-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">HARRY POTTER: LA ORDEN DEL FENIX</p>
+                                        <p class="a-poster-text-white">LOS CABALLEROS DEL ZODIACO</p>
                                     </div>
                                 </div>
                             </a>
@@ -1220,15 +1221,19 @@
                     <div class="section-slider">
                         <div class="poster">
                             <div class="poster-body">
-                                <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                                <div class="showtime-container">
+                                    <p class="a-programming-text">14:30 - 16:30</p>
+                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                </div>
+                                <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
                                 <a href="sinopsis.php">
                                     <div class="thumbnail-large">
-                                        <img src="../images/posters/bates-motel.jpeg" alt="">
+                                        <img src="../images/claro-canal/bbc.jpg" alt="">
 
                                     </div>
                                     <div class="a-claro-rectangle">
                                         <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">BATES MOTEL</p>
+                                            <p class="a-poster-text-white">BBC</p>
 
                                         </div>
 
@@ -1247,12 +1252,12 @@
                                 </div>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail-large">
-                                        <img src="../images/posters/breaking-bad.jpeg" alt="">
+                                        <img src="../images/claro-canal/caja-de-pandora.jpg" alt="">
 
                                     </div>
                                     <div class="a-claro-rectangle">
                                         <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">BREAKING BAD</p>
+                                            <p class="a-poster-text-white">LA CAJA DE PANDORA</p>
 
                                         </div>
 
@@ -1271,12 +1276,12 @@
                                 </div>
                                 <a href=" sinopsis.php">
                                     <div class="thumbnail-large">
-                                        <img src="../images/posters/good-doctor.jpeg" alt="">
+                                        <img src="../images/claro-canal/indestructibles.jpg" alt="">
 
                                     </div>
                                     <div class="a-claro-rectangle">
                                         <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">THE GOOD DOCTOR</p>
+                                            <p class="a-poster-text-white">LOS INDESTRUCTIBLES 2</p>
                                         </div>
                                     </div>
                                 </a>
@@ -1290,12 +1295,12 @@
                                 </div>
                                 <a href=" sinopsis.php">
                                     <div class="thumbnail-large">
-                                        <img src="../images/posters/harry-potter.jpeg" alt="">
+                                        <img src="../images/claro-canal/saint-seiya.jpg" alt="">
 
                                     </div>
                                     <div class="a-claro-rectangle">
                                         <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">HARRY POTTER: LA ORDEN DEL FENIX</p>
+                                            <p class="a-poster-text-white">LOS CABALLEROS DEL ZODIACO</p>
                                         </div>
                                     </div>
                                 </a>
@@ -1355,15 +1360,19 @@
                 <div class="section-slider">
                     <div class="poster">
                         <div class="poster-body">
-                            <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                            <div class="showtime-container">
+                                <p class="a-programming-text">14:30 - 16:30</p>
+                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                            </div>
+                            <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
                             <a href="sinopsis.php">
                                 <div class="thumbnail-large">
-                                    <img src="../images/posters/bates-motel.jpeg" alt="">
+                                    <img src="../images/claro-canal/bbc.jpg" alt="">
 
                                 </div>
                                 <div class="a-claro-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">BATES MOTEL</p>
+                                        <p class="a-poster-text-white">BBC</p>
 
                                     </div>
 
@@ -1379,12 +1388,12 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail-large">
-                                    <img src="../images/posters/breaking-bad.jpeg" alt="">
+                                    <img src="../images/claro-canal/caja-de-pandora.jpg" alt="">
 
                                 </div>
                                 <div class="a-claro-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">BREAKING BAD</p>
+                                        <p class="a-poster-text-white">LA CAJA DE PANDORA</p>
 
                                     </div>
                                 </div>
@@ -1402,12 +1411,12 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail-large">
-                                    <img src="../images/posters/good-doctor.jpeg" alt="">
+                                    <img src="../images/claro-canal/indestructibles.jpg" alt="">
 
                                 </div>
                                 <div class="a-claro-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">THE GOOD DOCTOR</p>
+                                        <p class="a-poster-text-white">LOS INDESCTRUCTIBLES 2</p>
 
                                     </div>
                                 </div>
@@ -1423,12 +1432,12 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail-large">
-                                    <img src="../images/posters/harry-potter.jpeg" alt="">
+                                    <img src="../images/claro-canal/saint-seiya.jpg" alt="">
 
                                 </div>
                                 <div class="a-claro-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">HARRY POTTER: LA ORDEN DEL FENIX</p>
+                                        <p class="a-poster-text-white">LOS CABALLEROS DEL ZODIACO</p>
                                     </div>
                                 </div>
                             </a>
@@ -1542,11 +1551,11 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail">
-                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
+                                    <img src="./images/concert-channel/billie-eillish.jpg" alt="">
                                 </div>
                                 <div class="a-concert-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams Tour</p>
+                                        <p class="a-poster-text-white">BILLIE EILLISH</p>
                                     </div>
                                 </div>
                             </a>
@@ -1561,11 +1570,11 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail">
-                                    <img src="./images/posters/monkeys-concert.jpeg" alt="">
+                                    <img src="./images/concert-channel/chica-concert.jpg" alt="">
                                 </div>
                                 <div class="a-concert-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">Arctic Monkeys</p>
+                                        <p class="a-poster-text-white">CHICA</p>
                                     </div>
                                 </div>
                             </a>
@@ -1581,10 +1590,10 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail">
-                                    <img src="./images/posters/boy-pablo-tour.jpeg" alt="">
+                                    <img src="./images/concert-channel/ed-sheeran.jpg" alt="">
                                 </div>
                                 <div class="a-concert-rectangle ">
-                                    <p class="a-poster-text-white">Boy Pablo: Tour</p>
+                                    <p class="a-poster-text-white">ED SHEERAN</p>
                                 </div>
                             </a>
                         </div>
@@ -1599,10 +1608,10 @@
                             </div>
                             <a href="sinpsis.php">
                                 <div class="thumbnail">
-                                    <img src="./images/posters/rammstein-tour.jpeg" alt="">
+                                    <img src="./images/concert-channel/queen.jpg" alt="">
                                 </div>
                                 <div class="a-concert-rectangle ">
-                                    <p class="a-poster-text-white">Rammstein: Tour</p>
+                                    <p class="a-poster-text-white">QUEEN</p>
                                 </div>
                             </a>
                         </div>
@@ -1631,13 +1640,17 @@
                     <div class="section-slider">>
                         <div class="poster">
                             <div class="poster-body">
-                                <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                                <div class="showtime-container">
+                                    <p class="a-programming-text">14:30 - 16:30</p>
+                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                </div>
+                                <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
                                 <a href="sinopsis.php">
                                     <div class="thumbnail">
-                                        <img src="./images/posters/coldplay-tour.jpeg" alt="">
+                                        <img src="./images/concert-channel/billie-eillish.jpg" alt="">
                                     </div>
                                     <div class="a-concert-rectangle ">
-                                        <p class="a-poster-text-white">COLDPLAY: A Head Full Of Dreams Tour</p>
+                                        <p class="a-poster-text-white">BILLIE EILLISH</p>
                                     </div>
                                 </a>
                             </div>
@@ -1650,10 +1663,10 @@
                                 </div>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail">
-                                        <img src="./images/posters/monkeys-concert.jpeg" alt="">
+                                        <img src="./images/concert-channel/chica-concert.jpg" alt="">
                                     </div>
                                     <div class="a-concert-rectangle ">
-                                        <p class="a-poster-text-white">Arctic Monkeys</p>
+                                        <p class="a-poster-text-white">CHICA</p>
                                     </div>
                                 </a>
                             </div>
@@ -1667,10 +1680,10 @@
                                 </div>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail">
-                                        <img src="./images/posters/boy-pablo-tour.jpeg" alt="">
+                                        <img src="./images/concert-channel/ed-sheeran.jpg" alt="">
                                     </div>
                                     <div class="a-concert-rectangle ">
-                                        <p class="a-poster-text-white">Boy Pablo: Tour</p>
+                                        <p class="a-poster-text-white">ED SHEERAN</p>
                                     </div>
                                 </a>
                             </div>
@@ -1684,10 +1697,10 @@
                                 </div>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail">
-                                        <img src="./images/posters/rammstein-tour.jpeg" alt="">
+                                        <img src="./images/concert-channel/queen.jpg" alt="">
                                     </div>
                                     <div class="a-concert-rectangle ">
-                                        <p class="a-poster-text-white">Rammstein: Tour</p>
+                                        <p class="a-poster-text-white">QUEEN</p>
                                     </div>
                                 </a>
                             </div>
@@ -1748,15 +1761,18 @@
                             <div class="col poster-pad-r poster-section">
                                 <div class="poster">
                                     <div class="poster-body">
-                                        <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
                                         <a href="sinopsis.php">
                                             <div class="thumbnail">
-                                                <img src="./images/posters/coldplay-tour.jpeg" alt="">
+                                                <img src="./images/concert-channel/billie-eillish.jpg" alt="">
                                             </div>
                                             <div class="a-concert-rectangle thumbnail-info-title">
                                                 <div class="poster-title-margin">
-                                                    <p class="a-poster-text-white">Coldplay: A Head Full Of Dreams
-                                                        Tour
+                                                    <p class="a-poster-text-white">BILLIE EILLISH
                                                     </p>
                                                 </div>
                                             </div>
@@ -1773,11 +1789,11 @@
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
                                         <div class="thumbnail">
-                                            <img src="./images/posters/monkeys-concert.jpeg" alt="">
+                                            <img src="./images/concert-channel/chica-concert.jpg" alt="">
                                         </div>
                                         <div class="a-concert-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">Arctic Monkeys</p>
+                                                <p class="a-poster-text-white">CHICA</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1794,10 +1810,10 @@
                                         </div>
                                         <a href="sinopsis.php">
                                             <div class="thumbnail">
-                                                <img src="./images/posters/boy-pablo-tour.jpeg" alt="">
+                                                <img src="./images/concert-channel/ed-sheeran.jpg" alt="">
                                             </div>
                                             <div class="a-concert-rectangle thumbnail-info-title">
-                                                <p class="a-poster-text-white">Boy Pablo: Tour</p>
+                                                <p class="a-poster-text-white">ED SHEERAN</p>
                                             </div>
                                         </a>
                                     </div>
@@ -1812,10 +1828,10 @@
                                         </div>
                                         <a href="sinopsis.php">
                                             <div class="thumbnail">
-                                                <img src="./images/posters/rammstein-tour.jpeg" alt="">
+                                                <img src="./images/concert-channel/queen.jpg" alt="">
                                             </div>
                                             <div class="a-concert-rectangle thumbnail-info-title">
-                                                <p class="a-poster-text-white">Rammstein: Tour</p>
+                                                <p class="a-poster-text-white">QUEEN</p>
                                             </div>
                                         </a>
                                     </div>
@@ -1862,7 +1878,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                             </div>
-                            <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                            <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
                             <a href="sinopsis.php">
                                 <div class="thumbnail">
                                     <img src="./images/posters/alla-rancho-peli.jpeg" alt="">
