@@ -4,17 +4,7 @@
 <head>
   <meta charset="UTF-8" />
 
-  <title>Login</title>
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon/claro-fav.png" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
-  <link rel="stylesheet" href="./styles/style.css" type="text/css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="slick-master/slick/slick.js"></script>
-  <script src="./js/lib/rellax.js"></script>
-  <script src="./js/main.js" type="module"></script>
+  <?php include './views/partials/head.php' ?>
 </head>
 
 <body class="fondo">
@@ -42,8 +32,7 @@
               <div class="col-sm-12 no-gap">
                 <div>
                   <div class="position-relative">
-                    <input class="insert-data" type="password" placeholder="Escribe tu contraseña nueva *"
-                      id="new-password" />
+                    <input class="insert-data" type="password" placeholder="Escribe tu contraseña nueva *" id="new-password" />
                     <img src="images/registro/eye.svg" class="icon-eye" />
                   </div>
 
@@ -54,8 +43,7 @@
                 </div>
                 <div class="mb-5">
                   <div class="position-relative">
-                    <input class="insert-data" type="password" placeholder="Escribe tu contraseña de nuevo"
-                      id="new-confirm-password" />
+                    <input class="insert-data" type="password" placeholder="Escribe tu contraseña de nuevo" id="new-confirm-password" />
                     <img src="images/registro/eye.svg" class="icon-eye" />
                   </div>
 

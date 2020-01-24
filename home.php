@@ -2,21 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <link rel="shortcut icon" type="image/png" href="./images/favicon/claro-fav.png" />
-    <link rel="stylesheet" href="./styles/style.css?t=<?php echo time(); ?>" />
-    <link rel="stylesheet" href="./styles/bootstrap-4.4.1/bootstrap.min.css" />
-    <link rel=" stylesheet" href="./slick-master/slick/slick.css" />
-    <link rel="stylesheet" href="./slick-master/slick/slick-theme.css" />
-    <script src="./js/lib/jquery-3.4.1.min.js"></script>
-    <script src="slick-master/slick/slick.js" defer></script>
-    <script src="./js/jquery.browser.js" defer></script>
-    <script src="./js/lib/rellax.js" defer></script>
-    <script src="./js/main.js" type="module"></script>
+    <?php include './views/partials/head.php' ?>
 </head>
 
 <body>
@@ -113,38 +99,6 @@
                         </div>
                     </div>
                 </nav>
-                <!--<div class="claro-navbar">
-                        <div>
-                            <a href="claro-canal.php" class="navbar-link text-decoration-none">
-                                <p class="navbar-item">Canal Claro</p>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="concert-channel.php" class="navbar-link text-decoration-none">
-                                <p class="navbar-item">Concert Channel</p>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="claro-cinema.php" class="navbar-link text-decoration-none">
-                                <p class="navbar-item">Claro Cinema</p>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="nuestra-vision.php" class="navbar-link text-decoration-none">
-                                <p class="navbar-item">Nuestra Visión</p>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="claro-sports.php" class="navbar-link text-decoration-none">
-                                <p class="navbar-item">Claro Sports</p>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="programacion.php" class="navbar-link text-decoration-none">
-                                <p class="navbar-item">Programación</p>
-                            </a>
-                        </div>
-                    </div>-->
                 <nav class="menu-desktop">
                     <div class="nav-content">
                         <div class="claro-logo">
@@ -242,13 +196,14 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
                                     </div>
-                                    <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                                    <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/home/carrusel-ahora-en-vivo/01-saint-seiya.jpg" alt="">
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">LOS CABALLEROS DEL ZODIACO</p>
                                             </div>
                                         </div>
                                     </a>
@@ -265,10 +220,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/home/carrusel-ahora-en-vivo/02-conexion-claro.jpg" alt="">
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">CONEXIÓN CLARO</p>
                                             </div>
                                         </div>
                                     </a>
@@ -283,10 +239,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/home/carrusel-ahora-en-vivo/03-larry-king.jpg" alt="">
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">LARRY KING</p>
                                             </div>
                                         </div>
                                     </a>
@@ -301,10 +258,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/home/carrusel-ahora-en-vivo/04-club-teo.jpg" alt="">
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">EL CLUB DE TEO</p>
                                             </div>
                                         </div>
                                     </a>
@@ -320,10 +278,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/home/carrusel-ahora-en-vivo/05-fit-life.jpg" alt="">
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">FIT FOR LIFE</p>
                                             </div>
                                         </div>
                                     </a>
@@ -338,10 +297,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/home/carrusel-ahora-en-vivo/06-critical.jpg" alt="">
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">CRITICAL BBC</p>
                                             </div>
                                         </div>
                                     </a>
@@ -358,10 +318,30 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/home/carrusel-ahora-en-vivo/07-caja-pandora.jpg" alt="">
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">LA CAJA DE PANDORA</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/home/carrusel-ahora-en-vivo/08-dress-code.jpg" alt="">
+                                        </div>
+                                        <div class="a-claro-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">DRESS CODE</p>
                                             </div>
                                         </div>
                                     </a>

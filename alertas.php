@@ -8,6 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <?php include './views/partials/preload.php' ?>
+        <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="./fonts/Montserrat-Regular/Montserrat-Regular.woff2">
         <link rel="shortcut icon" type="image/png" href="./images/favicon/claro-fav.png" />
         <link rel="stylesheet" href="./styles/bootstrap-4.4.1/bootstrap.min.css" />
         <link rel="stylesheet" href="./styles/style.css" />
