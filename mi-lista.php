@@ -130,13 +130,11 @@
                     <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
 
                     <a href="home.php">
-                        <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
+                        <img class="logo" src="./images/home/claro-logo.svg" alt="" />
                     </a>
                 </div>
 
-                <div class="user-options">
-
-                </div>
+                <div class="user-options"></div>
             </div>
             <div class="claro-navbar">
                 <div>

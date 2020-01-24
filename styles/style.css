@@ -7325,6 +7325,9 @@ input[type="radio"]:checked + .mujer-estilo {
   .background-home {
     display: none;
   }
+  .our-channels {
+    display: block;
+  }
   /*End Home - Átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -7534,9 +7537,6 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .list-title-section {
     padding-top: 55px;
-  }
-  .lista-header .login {
-    background: transparent;
   }
   /*End Mi Lista - Átomos*/
   /*============================*/
@@ -8470,6 +8470,9 @@ input[type="radio"]:checked + .mujer-estilo {
   .background-home {
     display: none;
   }
+  .our-channels {
+    display: block;
+  }
   /*End Home - Átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -8652,9 +8655,6 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .list-title-section {
     padding-top: 55px;
-  }
-  .lista-header .login {
-    background: transparent;
   }
   /*End Mi Lista - Átomos*/
   /*============================*/

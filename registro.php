@@ -2,25 +2,7 @@
 <html lang="en">
 
 <head>
-        <meta charset="UTF-8" />
-
-
-        <title>Claro Networks</title>
-        <meta name="viewport"
-                content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" type="image/png" href="./images/favicon/claro-fav.png" />
-        <link rel="stylesheet" href="./styles/bootstrap-4.4.1/bootstrap.min.css" type="text/css">
-        <script src="./js/lib/jquery-3.4.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-                crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./styles/style.css" type="text/css">
-        <script src="slick-master/slick/slick.js"></script>
-        <script src="./js/lib/rellax.js"></script>
-        <script src="./js/main.js" type="module"></script>
+        <?php include './views/partials/head.php' ?>
 </head>
 
 <body class="fondo">
@@ -36,8 +18,7 @@
                                 <div class="row ma-no ">
                                         <div class="col-sm-12 col-md-12 col-lg-12 no-gutters ">
                                                 <img src="images/registro/group-3.svg" class="form-image-blue">
-                                                <a href="home.php"> <img src="images/registro/group-24.svg"
-                                                                class="ubicacion1" /></a>
+                                                <a href="home.php"> <img src="images/registro/group-24.svg" class="ubicacion1" /></a>
                                                 <img src="images/registro/group-37.svg" class="ubicacion">
                                         </div>
                                 </div>
@@ -52,9 +33,7 @@
                                                 <div class="row ma-no centro">
                                                         <div class="col-sm-12 no-gap">
                                                                 <div class="tamaño2 centro">
-                                                                        <input class="insert-data" type="text"
-                                                                                id="usuario" name="usuario"
-                                                                                placeholder="Nombre de usuario">
+                                                                        <input class="insert-data" type="text" id="usuario" name="usuario" placeholder="Nombre de usuario">
                                                                         <p class="nouser">
                                                                         </p>
                                                                 </div>
@@ -64,11 +43,8 @@
                                                 <div class="row ma-no centro">
                                                         <div class="col-sm-12 no-gap">
                                                                 <div class="tamaño2 centro">
-                                                                        <input class="insert-data" type="email"
-                                                                                id="signup-correo" name="correo"
-                                                                                placeholder="Correo electrónico">
-                                                                        <p class="nocorreo"><img
-                                                                                        src="images/registro/alerta.svg">
+                                                                        <input class="insert-data" type="email" id="signup-correo" name="correo" placeholder="Correo electrónico">
+                                                                        <p class="nocorreo"><img src="images/registro/alerta.svg">
                                                                                 El
                                                                                 correo no es correcto</p>
 
@@ -79,24 +55,18 @@
                                                 <div class="row ma-no centro">
                                                         <div class=" col-sm-12 no-gap">
                                                                 <div class="tamaño2 centro">
-                                                                        <input class="insert-data" type="password"
-                                                                                id="signup-password"
-                                                                                name="signup-password"
-                                                                                placeholder="Contraseña">
-                                                                        <img src="images/registro/eye.svg"
-                                                                                class="ubicacion4" />
+                                                                        <input class="insert-data" type="password" id="signup-password" name="signup-password" placeholder="Contraseña">
+                                                                        <img src="images/registro/eye.svg" class="ubicacion4" />
 
                                                                         <p class="caracteres-min">8 caractéres mínimo
-                                                                                <img src="images/registro/listo.svg"
-                                                                                        class="listo">
+                                                                                <img src="images/registro/listo.svg" class="listo">
                                                                         </p>
 
                                                                 </div>
                                                         </div>
                                                 </div>
                                                 <br>
-                                                <p class="nodatos"> Aún no has ingresado datos <img
-                                                                src="images/registro/alerta.svg">
+                                                <p class="nodatos"> Aún no has ingresado datos <img src="images/registro/alerta.svg">
                                                 </p>
                                                 <br>
 
@@ -106,8 +76,7 @@
                                                         <a href="terminos.html">
                                                                 <p class="aviso-priv-blue espacio-bottom">Términos y
                                                                         condiciones
-                                                        </a> <span class="aviso-priv">así como el </span> <a
-                                                                href="aviso.html">
+                                                        </a> <span class="aviso-priv">así como el </span> <a href="aviso.html">
                                                                 <span class=" aviso-priv-blue">Aviso de</span>
 
                                                                 <span class="aviso-priv-blue">privacidad</span> </a></p>
@@ -115,10 +84,7 @@
                                                 <br>
                                                 <div>
                                                         <div>
-                                                                <button type="button"
-                                                                        class="signup-button form-button-outline"
-                                                                        data-toggle="modal"
-                                                                        data-target="#mensaje">SIGUIENTE</button>
+                                                                <button type="button" class="signup-button form-button-outline" data-toggle="modal" data-target="#mensaje">SIGUIENTE</button>
                                                         </div>
                                                 </div>
                                         </form>
@@ -127,14 +93,11 @@
 
                                 <br>
                                 <!-- Modal -->
-                                <div class="modal fade " id="mensaje" tabindex="-1" role="dialog"
-                                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal fade " id="mensaje" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
                                                 <div class="modal-content modal-estilo">
-                                                        <div class="modal-header"
-                                                                style="border-bottom: none !important; justify-content: center; ">
-                                                                <p class="hola">HOLA, <span class="usuario"
-                                                                                id="modal-username">EDUARDO</span> </p>
+                                                        <div class="modal-header" style="border-bottom: none !important; justify-content: center; ">
+                                                                <p class="hola">HOLA, <span class="usuario" id="modal-username">EDUARDO</span> </p>
 
 
 
@@ -153,11 +116,9 @@
                                                                 <span class="mensaje">¡Revísalo, confirma y</span>
                                                                 <span class="mensaje">comenzamos! </span>
                                                         </div>
-                                                        <div class="modal-footer"
-                                                                style="border-top:none !important; justify-content: center;">
+                                                        <div class="modal-footer" style="border-top:none !important; justify-content: center;">
 
-                                                                <button type="button" class="form-button-primary"
-                                                                        data-dismiss="modal">ENTENDIDO</button>
+                                                                <button type="button" class="form-button-primary" data-dismiss="modal">ENTENDIDO</button>
 
 
                                                         </div>
