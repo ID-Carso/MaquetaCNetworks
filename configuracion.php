@@ -52,7 +52,7 @@
 
           <div class="login">
             <a href="home.php" class="login-item"><img src="./images/alertas/btn-home.svg" alt="" /></a>
-            <a href="index.html" class="login-item"><img class="login-country" src="" alt="" /></a>
+            <a href="index.php" class="login-item"><img class="login-country" src="" alt="" /></a>
           </div>
         </div>
       </nav>
@@ -67,8 +67,8 @@
         </div>
 
         <div class="login">
-          <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-          <a href="index.html" class="login-item"><img class="login-country" src="" alt="" /></a>
+          <a href="login.php" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
+          <a href="index.php" class="login-item"><img class="login-country" src="" alt="" /></a>
         </div>
       </div>
     </nav>
@@ -108,7 +108,7 @@
         <div class="row ma-no centro">
           <div class="col-sm-12 no-gap">
             <div class="tamaño2 centro ">
-              <a href="avatar.html">
+              <a href="avatar.php">
                 <label class="border-config">
                   <p class="texto-config">
                     Cambiar avatar

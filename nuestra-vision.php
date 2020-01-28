@@ -101,8 +101,8 @@
           </div>
 
           <div class="login">
-            <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-            <a href="index.html" class="login-item"><img src="" alt="" class="login-country" /></a>
+            <a href="login.php" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
+            <a href="index.php" class="login-item"><img src="" alt="" class="login-country" /></a>
           </div>
         </div>
       </nav>

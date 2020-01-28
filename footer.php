@@ -9,12 +9,12 @@
                          <p class="text-footer-regular">@2019 Claro tv. Todos los derechos reservados</p>
                          <div class="d-flex justify-content-between">
                              <div>
-                                 <a href="terminos.html">
+                                 <a href="terminos.php">
                                      <p class="aviso-priv-blue">Términos y condiciones</p>
                                  </a>
                              </div>
                              <div>
-                                 <a href="aviso.html">
+                                 <a href="aviso.php">
                                      <p class="aviso-priv-blue">Aviso de privacidad</p>
                                  </a>
                              </div>
@@ -64,12 +64,12 @@
                          </p>
                          <div class="d-flex">
                              <div>
-                                 <a href="terminos.html">
+                                 <a href="terminos.php">
                                      <p class="aviso-priv-blue">Términos y condiciones</p>
                                  </a>
                              </div>
                              <div>
-                                 <a href="aviso.html">
+                                 <a href="aviso.php">
                                      <p class="aviso-priv-blue">Aviso de privacidad</p>
                                  </a>
                              </div>

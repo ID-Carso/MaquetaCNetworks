@@ -25,8 +25,7 @@
             <div class="row ma-no centro">
               <div class="col-sm-12 no-gap">
                 <div class="tamaño2">
-                  <input class="insert-data input-email" type="text" placeholder="Correo electrónico"
-                    id="login-email" />
+                  <input class="insert-data input-email" type="text" placeholder="Correo electrónico" id="login-email" />
 
                   <img src="images/registro/group-12.svg" class="ubicacion3" />
                   <p class="correo-valido" id="error_email">
@@ -40,18 +39,20 @@
             <div class="row ma-no centro">
               <div class=" col-sm-12 no-gap">
                 <div class="tamaño2 centro">
-                  <input class="insert-data input-password" type="password" id="login-password" name="login-password"
-                    placeholder="Contraseña" autocomplete="off" />
+                  <input class="insert-data input-password" type="password" id="login-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
                   <img src="images/registro/eye.svg" class="icon-eye" />
 
                   <p class="caracteres-min">
                     8 caractéres mínimo
                     <img src="images/registro/listo.svg" class="listo" />
                   </p>
+
+
                 </div>
               </div>
             </div>
             <br />
+            <p class="data-incorrect"></p>
             <div class="row ma-no centro margin-top-por">
               <div class="col-sm-12 d-flex  justify-content-center align-items-center">
                 <input type="checkbox" id="cuenta" />
@@ -85,7 +86,7 @@
 
           <div class="row ma-no centro">
             <div class="col-sm-12 signup-button-container">
-              <a href="registro.html">
+              <a href="registro.php">
                 <button type="button" class="signup-button form-button-outline">
                   REGÍSTRATE
                 </button>

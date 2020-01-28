@@ -83,6 +83,12 @@ function signIn(email, password) {
           "http://www.claronetworks.openofficedospuntocero.info/home.php";
         localStorage.setItem("session", 1);
         localStorage.setItem("name", result.data.name);
+      } else {
+        $(".data-incorrect")
+          .text(
+            "Tu correo o contraseña no coinciden. Por favor verifica de nuevo"
+          )
+          .addClass("invalid-email");
       }
     }
   });

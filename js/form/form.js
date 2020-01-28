@@ -130,6 +130,17 @@ function registerUser(inputName, inputEmail, inputPassword) {
   });
 }
 
+/*$.ajax({
+  type: "POST",
+  data: user,
+  dataType: "JSON",
+
+  url: "../../adapters/user.php",
+  success: function(result) {
+    console.log(result);
+  }
+});*/
+
 function validateToken(token) {
   $.ajax({
     type: "POST",

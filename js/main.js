@@ -117,7 +117,7 @@ $(document).ready(function() {
       <p class="name-user mr-3">${userName}</p>
       <a href="mi-lista.php"><img class="mr-3 options-item" src="./images/menu/mi-lista-icon.png" alt="" /></a>
       <a href="configuracion.php"><img class="mr-3 options-item" src="./images/menu/configuracion-icon.png" alt="" /></a>
-      <a href="index.html" class="login-item options-item"><img class="login-country" src="" alt="" /></a>
+      <a href="index.php" class="login-item options-item"><img class="login-country" src="" alt="" /></a>
       </div>
       `;
     userOptions.html(menuIngreso);
@@ -125,8 +125,8 @@ $(document).ready(function() {
     let userOptions = $(".user-options");
     let menuBase = `    
     <div class="login">
-      <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-      <a href="index.html" class="login-item"><img class="login-country" src="" alt="" /></a>
+      <a href="login.php" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
+      <a href="index.php" class="login-item"><img class="login-country" src="" alt="" /></a>
     </div>`;
     userOptions.html(menuBase);
   }

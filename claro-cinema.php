@@ -86,8 +86,8 @@
           </div>
 
           <div class="login">
-            <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-            <a href="index.html" class="login-item"><img class="login-country" alt="" /></a>
+            <a href="login.php" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
+            <a href="index.php" class="login-item"><img class="login-country" alt="" /></a>
           </div>
         </div>
       </nav>
@@ -107,10 +107,10 @@
           </div>-->
       <div class="header-slider">
         <div class="header-slide">
-          <img src="./images/concert-channel/header-image.jpeg" class="rellax" data-rellax="10">
+          <!--<img src="./images/concert-channel/header-image.jpeg" class="rellax" data-rellax="10">-->
         </div>
         <div class="header-slide">
-          <img src="./images/header/glastonbury.jpeg" class="rellax" data-rellax="10">
+          <!--<img src="./images/header/glastonbury.jpeg" class="rellax" data-rellax="10">-->
         </div>
         <div class="header-slide"></div>
       </div>

@@ -94,8 +94,8 @@
                         </div>
 
                         <div class="login">
-                            <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-                            <a href="index.html" class="login-item"><img class="login-country" src="" alt="" /></a>
+                            <a href="login.php" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
+                            <a href="index.php" class="login-item"><img class="login-country" src="" alt="" /></a>
                         </div>
                     </div>
                 </nav>
@@ -667,10 +667,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/claro-cinema/01-encapuchados.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-black">ENCAPUCHADOS</p>
                                             </div>
                                         </div>
                                     </a>
@@ -686,10 +687,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/claro-cinema/02-muneca-reina.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-black">MUÑECA REINA</p>
                                             </div>
                                         </div>
                                     </a>
@@ -704,10 +706,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                        <img src="./images/claro-cinema/03-la-nina-de-mis-ojos.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-black">LA NIÑA DE MIS OJOS</p>
                                             </div>
                                         </div>
                                     </a>
@@ -722,10 +725,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/claro-cinema/04-chanoc.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-black">CHANOC</p>
                                             </div>
                                         </div>
                                     </a>
@@ -740,10 +744,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/claro-cinema/05-palabra-de-cine.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-black">PALABRA DE CINEA</p>
                                             </div>
                                         </div>
                                     </a>
@@ -758,10 +763,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/claro-cinema/06-culpa-hombre.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-black">LA CULPA DE LOS HOMBRES</p>
                                             </div>
                                         </div>
                                     </a>
@@ -776,10 +782,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/claro-cinema/07-cuando-se-quiere-se-quiere.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-black">CUANDO SE QUIERE, SE QUIERE</p>
                                             </div>
                                         </div>
                                     </a>
@@ -794,10 +801,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/claro-cinema/08-el-superflaco.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-black">EL SUPERFLACO</p>
                                             </div>
                                         </div>
                                     </a>
@@ -812,15 +820,15 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/claro-cinema/09-el-detective.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-black">EL DETECTIVE</p>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -1439,7 +1447,7 @@
                                 </div>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail-large">
-                                        <img src="../images/posters/good-doctor.jpeg" alt="">
+                                        <!--<img src="../images/posters/good-doctor.jpeg" alt="">-->
                                     </div>
                                     <div class="a-claro-rectangle">
                                         <div class="poster-title-margin">
@@ -1576,7 +1584,7 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail-large">
-                                    <img src="./images/posters/stranger-things.jpeg" alt="">
+                                    <!--<img src="./images/posters/stranger-things.jpeg" alt="">-->
 
                                 </div>
                                 <div class="a-claro-rectangle">
@@ -1597,7 +1605,7 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail-large">
-                                    <img src="./images/posters/american-horror.jpeg" alt="">
+                                    <!--<img src="./images/posters/american-horror.jpeg" alt="">-->
 
                                 </div>
                                 <div class="a-claro-rectangle">
@@ -1618,7 +1626,7 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail-large">
-                                    <img src="./images/posters/american-horror.jpeg" alt="">
+                                    <!--<img src="./images/posters/american-horror.jpeg" alt="">-->
 
                                 </div>
                                 <div class="a-claro-rectangle">
@@ -2001,10 +2009,10 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                             </div>
-                            <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
+                           
                             <a href="sinopsis.php">
                                 <div class="thumbnail">
-                                    <img src="./images/posters/alla-rancho-peli.jpeg" alt="">
+                                 
                                 </div>
                                 <div class="a-cinema-rectangle">
                                     <div class="poster-title-margin">
@@ -2023,7 +2031,7 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail">
-                                    <img src="./images/posters/maria-candelaria-peli.jpeg" alt="">
+                                
                                 </div>
                                 <div class="a-cinema-rectangle">
                                     <div class="poster-title-margin">
@@ -2043,7 +2051,7 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail">
-                                    <img src="./images/posters/flor-silvestre-peli.jpeg" alt="">
+                                    
                                 </div>
                                 <div class="a-cinema-rectangle">
                                     <div class="poster-title-margin">
@@ -2063,7 +2071,7 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail">
-                                    <img src="./images/posters/macario-peli.jpeg" alt="">
+                                   
                                 </div>
                                 <div class="a-cinema-rectangle">
                                     <div class="poster-title-margin">
@@ -2105,7 +2113,7 @@
                                 <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail">
-                                        <img src="./images/posters/flor-silvestre-peli.jpeg" alt="">
+                                        
                                     </div>
                                     <div class="a-cinema-rectangle">
                                         <div class="poster-title-margin">
@@ -2124,7 +2132,7 @@
                                 </div>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail">
-                                        <img src="./images/posters/maria-candelaria-peli.jpeg" alt="">
+                                        
                                     </div>
                                     <div class="a-cinema-rectangle">
                                         <div class="poster-title-margin">
@@ -2143,7 +2151,7 @@
                                 </div>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail">
-                                        <img src="./images/posters/flor-silvestre-peli.jpeg" alt="">
+                                   
                                     </div>
                                     <div class="a-cinema-rectangle">
                                         <div class="poster-title-margin">
@@ -2163,7 +2171,7 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail">
-                                    <img src="./images/posters/macario-peli.jpeg" alt="">
+                                   
                                 </div>
                                 <div class="a-cinema-rectangle">
                                     <div class="poster-title-margin">
@@ -2218,7 +2226,7 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/posters/alla-rancho-peli.jpeg" alt="">
+                                           
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -2236,7 +2244,7 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/posters/maria-candelaria-peli.jpeg" alt="">
+                                        
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -2255,7 +2263,7 @@
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
                                     <div class="thumbnail">
-                                        <img src="./images/posters/flor-silvestre-peli.jpeg" alt="">
+                                  
                                     </div>
                                     <div class="a-cinema-rectangle thumbnail-info-title">
                                         <div class="poster-title-margin">
@@ -2272,7 +2280,7 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/posters/macario-peli.jpeg" alt="">
+                                            
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">

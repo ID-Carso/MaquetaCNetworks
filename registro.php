@@ -73,10 +73,10 @@
                                                 <footer class="txtcontenido">
 
                                                         <span class="aviso-priv">Al continuar aceptas los</span>
-                                                        <a href="terminos.html">
+                                                        <a href="terminos.php">
                                                                 <p class="aviso-priv-blue espacio-bottom">Términos y
                                                                         condiciones
-                                                        </a> <span class="aviso-priv">así como el </span> <a href="aviso.html">
+                                                        </a> <span class="aviso-priv">así como el </span> <a href="aviso.php">
                                                                 <span class=" aviso-priv-blue">Aviso de</span>
 
                                                                 <span class="aviso-priv-blue">privacidad</span> </a></p>

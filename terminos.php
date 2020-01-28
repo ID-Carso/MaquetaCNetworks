@@ -55,7 +55,7 @@
 
                     <div class="login">
                         <a href="home.php" class="login-item"><img src="./images/alertas/btn-home.svg" /></a>
-                        <a href="index.html" class="login-item"><img class="login-country" src="" /></a>
+                        <a href="index.php" class="login-item"><img class="login-country" src="" /></a>
                     </div>
                 </div>
             </nav>
