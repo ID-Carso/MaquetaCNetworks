@@ -10,7 +10,7 @@
 <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="./fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff2">
 <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="./fonts/Montserrat-Regular/Montserrat-Regular.woff2">
 <link rel="shortcut icon" type="image/png" href="./images/favicon/claro-fav.png" />
-<link rel="stylesheet" href="./styles/style.min.css?t=<?php echo time(); ?>" />
+<link rel="stylesheet" href="./styles/style.css?t=<?php echo time(); ?>" />
 <link rel="stylesheet" href="./styles/bootstrap-4.4.1/bootstrap.min.css" />
 <link rel=" stylesheet" href="./slick-master/slick/slick.css" />
 <link rel="stylesheet" href="./slick-master/slick/slick-theme.css" />
@@ -18,4 +18,4 @@
 <script src="./slick-master/slick/slick.min.js" defer></script>
 <!--<script src=" ./js/jquery.browser.js" defer></script>-->
 <script src="./js/lib/rellax.min.js" defer></script>
-<script src="./js/main.min.js" type="module" defer></script>
+<script src="./js/main.js?t=<?php echo time(); ?>" type="module" defer></script>

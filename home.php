@@ -506,12 +506,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/01-one-direction.jpg" alt="">
                                         </div>
                                         <div class="a-concert-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¡WTF, EL NUEVO GANCHO DE BLITZCRANK LLEGA A
-                                                    CASA
-                                                    DE TU PRIMA Y LA ONE SHOTEA! *BUFF Q*</p>
+                                                <p class="a-poster-text-white">ONE DIRECTION</p>
                                             </div>
                                         </div>
                                     </a>
@@ -526,12 +525,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/02-concert-sessions.jpg" alt="">
                                         </div>
                                         <div class="a-concert-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¡WTF, EL NUEVO GANCHO DE BLITZCRANK LLEGA A
-                                                    CASA
-                                                    DE TU PRIMA Y LA ONE SHOTEA! *BUFF Q*</p>
+                                                <p class="a-poster-text-white">CONCERT CHANNEL SESSIONS: JUDY BUENDIA</p>
                                             </div>
                                         </div>
                                     </a>
@@ -547,10 +545,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/03-great-songwriters.jpg" alt="">
                                         </div>
                                         <div class="a-concert-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">GREAT SONGWRITERS</p>
                                             </div>
                                         </div>
                                     </a>
@@ -568,10 +567,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/04-afrobeta.jpg" alt="">
                                         </div>
                                         <div class="a-concert-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">AFROBETA</p>
                                             </div>
                                         </div>
                                     </a>
@@ -586,10 +586,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/05-live-from-abbey-killers.jpg" alt="">
                                         </div>
                                         <div class="a-concert-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">LIVE ROM ABBEY: THE KILLERS</p>
                                             </div>
                                         </div>
                                     </a>
@@ -606,10 +607,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/06-rakel.jpg" alt="">
                                         </div>
                                         <div class="a-concert-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">CONCERT CHANNEL SESSIONS: RAKEL</p>
                                             </div>
                                         </div>
                                     </a>
@@ -624,10 +626,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/07-liam-gallagher.jpg" alt="">
                                         </div>
                                         <div class="a-concert-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">LIAM GALLAGHER</p>
                                             </div>
                                         </div>
                                     </a>
@@ -642,10 +645,221 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/08-bang-data.jpg" alt="">
                                         </div>
                                         <div class="a-concert-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">BANG DATA</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/09-austin-city.jpg" alt="">
+                                        </div>
+                                        <div class="a-concert-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">AUSTIN CITY</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/10-van-der-graff.jpg" alt="">
+                                        </div>
+                                        <div class="a-concert-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">VAN DER GRAFF</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/11-live-from-abbey.jpg" alt="">
+                                        </div>
+                                        <div class="a-concert-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">LIVE FROM ABBEY</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/12-katy-perry.jpg" alt="">
+                                        </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">KATY PERRY</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/13-megadeth.jpg" alt="">
+                                        </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">MEGADETH</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/14-a-tiny-audience.jpg" alt="">
+                                        </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">A TINY AUDIENCE</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/15-yes-1970.jpg" alt="">
+                                        </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">YES</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/16-on-sessons-uma.jpg" alt="">
+                                        </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">ON SESSIONS UMA</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/14-a-tiny-audience.jpg" alt="">
+                                        </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">A TINY AUDIENCEI</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/17-red-hot-chili.jpg" alt="">
+                                        </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">RED HOT CHILI PEPPERS</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/concert-channel/carrousel/18-a-tiny-natti-nat.jpg" alt="">
+                                        </div>
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-black">A TINY NATTI NATASHA</p>
                                             </div>
                                         </div>
                                     </a>
@@ -667,7 +881,7 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/claro-cinema/01-encapuchados.jpg" alt="">
+                                            <img src="./images/claro-cinema/carrousel/01-encapuchados.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -687,7 +901,7 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/claro-cinema/02-muneca-reina.jpg" alt="">
+                                            <img src="./images/claro-cinema/carrousel/02-muneca-reina.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -706,7 +920,7 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                        <img src="./images/claro-cinema/03-la-nina-de-mis-ojos.jpg" alt="">
+                                            <img src="./images/claro-cinema/carrousel/03-la-nina-de-mis-ojos.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -725,7 +939,7 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/claro-cinema/04-chanoc.jpg" alt="">
+                                            <img src="./images/claro-cinema/carrousel/04-chanoc.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -744,7 +958,7 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/claro-cinema/05-palabra-de-cine.jpg" alt="">
+                                            <img src="./images/claro-cinema/carrousel/05-palabra-de-cine.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -763,7 +977,7 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/claro-cinema/06-culpa-hombre.jpg" alt="">
+                                            <img src="./images/claro-cinema/carrousel/06-culpa-hombres.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -782,7 +996,7 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/claro-cinema/07-cuando-se-quiere-se-quiere.jpg" alt="">
+                                            <img src="./images/claro-cinema/carrousel/07-cuando-se-quiere-se-quiere.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -801,7 +1015,7 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/claro-cinema/08-el-superflaco.jpg" alt="">
+                                            <img src="./images/claro-cinema/carrousel/08-el-superflaco.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -820,7 +1034,7 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/claro-cinema/09-el-detective.jpg" alt="">
+                                            <img src="./images/claro-cinema/carrousel/09-el-detective.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -1682,7 +1896,7 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail">
-                                    <img src="./images/concert-channel/billie-eillish.jpg" alt="">
+                                    <img src="./images/concert-channel/section-home/billie-eillish.jpg" alt="">
                                 </div>
                                 <div class="a-concert-rectangle">
                                     <div class="poster-title-margin">
@@ -1701,7 +1915,7 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail">
-                                    <img src="./images/concert-channel/chica-concert.jpg" alt="">
+                                    <img src="./images/concert-channel/section-home/chica-concert.jpg" alt="">
                                 </div>
                                 <div class="a-concert-rectangle">
                                     <div class="poster-title-margin">
@@ -1721,7 +1935,7 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail">
-                                    <img src="./images/concert-channel/ed-sheeran.jpg" alt="">
+                                    <img src="./images/concert-channel/section-home/ed-sheeran.jpg" alt="">
                                 </div>
                                 <div class="a-concert-rectangle ">
                                     <p class="a-poster-text-white">ED SHEERAN</p>
@@ -1739,7 +1953,7 @@
                             </div>
                             <a href="sinpsis.php">
                                 <div class="thumbnail">
-                                    <img src="./images/concert-channel/queen.jpg" alt="">
+                                    <img src="./images/concert-channel/section-home/queen.jpg" alt="">
                                 </div>
                                 <div class="a-concert-rectangle ">
                                     <p class="a-poster-text-white">QUEEN</p>
@@ -1778,7 +1992,7 @@
                                 <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
                                 <a href="sinopsis.php">
                                     <div class="thumbnail">
-                                        <img src="./images/concert-channel/billie-eillish.jpg" alt="">
+                                        <img src="./images/concert-channel/section-home/billie-eillish.jpg" alt="">
                                     </div>
                                     <div class="a-concert-rectangle ">
                                         <p class="a-poster-text-white">BILLIE EILLISH</p>
@@ -1794,7 +2008,7 @@
                                 </div>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail">
-                                        <img src="./images/concert-channel/chica-concert.jpg" alt="">
+                                        <img src="./images/concert-channel/section-home/chica-concert.jpg" alt="">
                                     </div>
                                     <div class="a-concert-rectangle ">
                                         <p class="a-poster-text-white">CHICA</p>
@@ -1811,7 +2025,7 @@
                                 </div>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail">
-                                        <img src="./images/concert-channel/ed-sheeran.jpg" alt="">
+                                        <img src="./images/concert-channel/section-home/ed-sheeran.jpg" alt="">
                                     </div>
                                     <div class="a-concert-rectangle ">
                                         <p class="a-poster-text-white">ED SHEERAN</p>
@@ -1828,7 +2042,7 @@
                                 </div>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail">
-                                        <img src="./images/concert-channel/queen.jpg" alt="">
+                                        <img src="./images/concert-channel/section-home/queen.jpg" alt="">
                                     </div>
                                     <div class="a-concert-rectangle ">
                                         <p class="a-poster-text-white">QUEEN</p>
@@ -1845,7 +2059,7 @@
                                 </div>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail">
-                                        <img src="./images/posters/the-weeknd.jpeg" alt="">
+                                        <!--<img src="./images/posters/the-weeknd.jpeg" alt="">-->
                                     </div>
                                     <div class="a-concert-rectangle ">
                                         <p class="a-poster-text-white">The Weeknd: Starboy Tour</p>
@@ -1899,7 +2113,7 @@
                                         <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
                                         <a href="sinopsis.php">
                                             <div class="thumbnail">
-                                                <img src="./images/concert-channel/billie-eillish.jpg" alt="">
+                                                <img src="./images/concert-channel/section-home/billie-eillish.jpg" alt="">
                                             </div>
                                             <div class="a-concert-rectangle thumbnail-info-title">
                                                 <div class="poster-title-margin">
@@ -1920,7 +2134,7 @@
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
                                         <div class="thumbnail">
-                                            <img src="./images/concert-channel/chica-concert.jpg" alt="">
+                                            <img src="./images/concert-channel/section-home/chica-concert.jpg" alt="">
                                         </div>
                                         <div class="a-concert-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -1941,7 +2155,7 @@
                                         </div>
                                         <a href="sinopsis.php">
                                             <div class="thumbnail">
-                                                <img src="./images/concert-channel/ed-sheeran.jpg" alt="">
+                                                <img src="./images/concert-channel/section-home/ed-sheeran.jpg" alt="">
                                             </div>
                                             <div class="a-concert-rectangle thumbnail-info-title">
                                                 <p class="a-poster-text-white">ED SHEERAN</p>
@@ -1959,7 +2173,7 @@
                                         </div>
                                         <a href="sinopsis.php">
                                             <div class="thumbnail">
-                                                <img src="./images/concert-channel/queen.jpg" alt="">
+                                                <img src="./images/concert-channel/section-home/queen.jpg" alt="">
                                             </div>
                                             <div class="a-concert-rectangle thumbnail-info-title">
                                                 <p class="a-poster-text-white">QUEEN</p>
@@ -2009,14 +2223,14 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                             </div>
-                           
+
                             <a href="sinopsis.php">
                                 <div class="thumbnail">
-                                 
+                                    <img src="./images/claro-cinema/section-home/01-las-imperdibles.jpg" alt="">
                                 </div>
                                 <div class="a-cinema-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-black">ALLÁ EN EL RANCHO GRANDE</p>
+                                        <p class="a-poster-text-black">LAS IMPERDIBLES</p>
                                     </div>
                                 </div>
                             </a>
@@ -2031,11 +2245,11 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail">
-                                
+                                    <img src="./images/claro-cinema/section-home/02-picardia-mexicana.jpg" alt="">
                                 </div>
                                 <div class="a-cinema-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-black">MARÍA CANDELERIA</p>
+                                        <p class="a-poster-text-black">PICARDÍA MEXICANA</p>
                                     </div>
                                 </div>
                             </a>
@@ -2051,11 +2265,11 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail">
-                                    
+                                    <img src="./images/claro-cinema/section-home/03-relincha-caballo-rojas.jpg" alt="">
                                 </div>
                                 <div class="a-cinema-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-black">FLOR SILVESTRE</p>
+                                        <p class="a-poster-text-black">RELINCHA CON EL CABALLO ROJAS</p>
                                     </div>
                                 </div>
                             </a>
@@ -2071,11 +2285,11 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail">
-                                   
+                                    <img src="./images/claro-cinema/section-home/04-sexy-romanticas.jpg" alt="">
                                 </div>
                                 <div class="a-cinema-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-black">MACARIO</p>
+                                        <p class="a-poster-text-black">SEXY ROMANTICAS</p>
                                     </div>
                                 </div>
                             </a>
@@ -2103,7 +2317,7 @@
                     </div>
                 </div>
                 <div class="home-cinema-videos-container">
-                    <div class="section-slider">>
+                    <div class="section-slider">
                         <div class="poster">
                             <div class="poster-body">
                                 <div class="showtime-container">
@@ -2113,11 +2327,11 @@
                                 <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail">
-                                        
+                                        <img src="./images/claro-cinema/section-home/01-las-imperdibles.jpg" alt="">
                                     </div>
                                     <div class="a-cinema-rectangle">
                                         <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">ALLÁ EN EL RANCHO GRANDE</p>
+                                            <p class="a-poster-text-black">LAS IMPERDIBLES</p>
                                         </div>
                                     </div>
                                 </a>
@@ -2132,11 +2346,11 @@
                                 </div>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail">
-                                        
+                                        <img src="./images/claro-cinema/section-home/02-picardia-mexicana.jpg" alt="">
                                     </div>
                                     <div class="a-cinema-rectangle">
                                         <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">MARÍA CANDELARIA</p>
+                                            <p class="a-poster-text-black">PICARDÍA MEXICANA</p>
                                         </div>
                                     </div>
                                 </a>
@@ -2151,11 +2365,11 @@
                                 </div>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail">
-                                   
+                                        <img src="./images/claro-cinema/section-home/03-relincha-caballo-rojas.jpg" alt="">
                                     </div>
                                     <div class="a-cinema-rectangle">
                                         <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">FLOR SILVESTRE</p>
+                                            <p class="a-poster-text-black">RELINCHA CON EL CABALLO ROJAS</p>
                                         </div>
                                     </div>
                                 </a>
@@ -2171,11 +2385,11 @@
                             </div>
                             <a href="sinopsis.php">
                                 <div class="thumbnail">
-                                   
+                                    <img src="./images/claro-cinema/section-home/04-sexy-romanticas.jpg" alt="">
                                 </div>
                                 <div class="a-cinema-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-black">MACARIO</p>
+                                        <p class="a-poster-text-black">SEXY ROMANTICAS</p>
                                     </div>
                                 </div>
                             </a>
@@ -2226,11 +2440,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                           
+                                            <img src="./images/claro-cinema/section-home/01-las-imperdibles.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">ALLÁ EN EL RANCHO GRANDE</p>
+                                                <p class="a-poster-text-black">LAS IMPERDIBLES</p>
                                             </div>
                                         </div>
                                     </a>
@@ -2244,11 +2458,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                        
+                                            <img src="./images/claro-cinema/section-home/02-picardia-mexicana.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">MARÍA CANDELARIA</p>
+                                                <p class="a-poster-text-black">PICARDÍA MEXICANA</p>
                                             </div>
                                         </div>
                                     </a>
@@ -2263,11 +2477,11 @@
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                     </div>
                                     <div class="thumbnail">
-                                  
+                                        <img src="./images/claro-cinema/section-home/03-relincha-caballo-rojas.jpg" alt="">
                                     </div>
                                     <div class="a-cinema-rectangle thumbnail-info-title">
                                         <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">FLOR SILVESTRE</p>
+                                            <p class="a-poster-text-black">RELINCHA CON EL CABALO ROJAS</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2280,11 +2494,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            
+                                            <img src="./images/claro-cinema/section-home/04-sexy-romanticas.jpg" alt="">
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">MACARIO</p>
+                                                <p class="a-poster-text-black">SEXY ROMANTICAS</p>
                                             </div>
                                         </div>
                                     </a>
@@ -2429,47 +2643,11 @@
                                 </div>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail-large">
+                                        <img src="./images/nuestra-vision/section-home/01-liga-femenil.jpg" alt="">
                                     </div>
                                     <div class="a-vision-rectangle">
                                         <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php">
-                                    <div class="thumbnail-large"></div>
-
-                                    <div class="a-vision-rectangle">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php">
-                                    <div class="thumbnail-large">
-                                    </div>
-                                    <div class="a-vision-rectangle">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            <p class="a-poster-text-white">LIGA FEMENIL</p>
                                         </div>
                                     </div>
                                 </a>
@@ -2485,10 +2663,51 @@
                                 </div>
                                 <a href="sinopsis.php">
                                     <div class="thumbnail-large">
+                                        <img src="./images/nuestra-vision/section-home/02-pedro-infante.jpg" alt="">
+                                    </div>
+
+                                    <div class="a-vision-rectangle">
+                                        <div class="poster-title-margin">
+                                            <p class="a-poster-text-white">PEDRO INFANTE</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="poster">
+                            <div class="poster-body">
+                                <div class="showtime-container">
+                                    <p class="a-programming-text">14:30 - 16:30</p>
+                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                </div>
+                                <a href="sinopsis.php">
+                                    <div class="thumbnail-large">
+                                        <img src="./images/nuestra-vision/section-home/03-el-club-de-teo.jpg" alt="">
                                     </div>
                                     <div class="a-vision-rectangle">
                                         <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            <p class="a-poster-text-white">EL CLUB DE TEO</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="poster">
+                            <div class="poster-body">
+                                <div class="showtime-container">
+                                    <p class="a-programming-text">14:30 - 16:30</p>
+                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                </div>
+                                <a href="sinopsis.php">
+                                    <div class="thumbnail-large">
+                                        <img src="./images/nuestra-vision/section-home/04-remasterizados.jpg" alt="">
+                                    </div>
+                                    <div class="a-vision-rectangle">
+                                        <div class="poster-title-margin">
+                                            <p class="a-poster-text-white">REMASTERIZADOS</p>
                                         </div>
                                     </div>
                                 </a>
@@ -2541,10 +2760,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail-large">
+                                            <img src="./images/nuestra-vision/section-home/01-liga-femenil.jpg" />
                                         </div>
                                         <div class="a-vision-rectangle">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">LIGA FEMENIL</p>
                                             </div>
                                         </div>
                                     </a>
@@ -2559,10 +2779,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail-large">
+                                            <img src="./images/nuestra-vision/section-home/02-pedro-infante.jpg" />
                                         </div>
                                         <div class="a-vision-rectangle">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">PEDRO INFANTE</p>
                                             </div>
                                         </div>
                                     </a>
@@ -2577,10 +2798,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail-large">
+                                            <img src="./images/nuestra-vision/section-home/03-el-club-de-teo.jpg" />
                                         </div>
                                         <div class="a-vision-rectangle">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">EL CLUB DE TEO</p>
                                             </div>
                                         </div>
                                     </a>
@@ -2596,10 +2818,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail-large">
+                                            <img src="./images/nuestra-vision/section-home/04-remasterizados.jpg" />
                                         </div>
                                         <div class="a-vision-rectangle">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">REMASTERIZADOS</p>
                                             </div>
                                         </div>
                                     </a>

@@ -10,7 +10,7 @@ function validateTokenPassword(tokenPassword) {
         let user_id = $("#user_id");
         user_id.attr("value", result.data.user_id);
         location.href =
-          "http://www.claronetworks.openofficedospuntocero.info/form-password.html";
+          "http://www.claronetworks.openofficedospuntocero.info/form-password.php";
       }
     }
   });
@@ -32,7 +32,7 @@ function sendUserEmail(inputEmail) {
       console.log("succes", result);
       if (result.data) {
         location.href =
-          "http://www.claronetworks.openofficedospuntocero.info/email-sent.html";
+          "http://www.claronetworks.openofficedospuntocero.info/email-sent.php";
       }
     }
   });
@@ -62,7 +62,7 @@ function sendNewPassword(inputPassword, secondInputPassword) {
       if (result.code == 200) {
         console.log("succes", result);
         location.href =
-          "http://www.claronetworks.openofficedospuntocero.info/success-password.html";
+          "http://www.claronetworks.openofficedospuntocero.info/success-password.php";
       }
     }
   });

@@ -114,18 +114,31 @@ function registerUser(inputName, inputEmail, inputPassword) {
   let password = inputPassword.val();
 
   let user = {
+    function: "registerUser",
     name: name,
     email: email,
     password: password
   };
 
-  $.ajax({
+  /*$.ajax({
     type: "POST",
     data: user,
     url:
       "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user",
     success: function(result) {
       console.log("succes", result.token);
+    }
+  });*/
+
+  $.ajax({
+    type: "POST",
+    data: user,
+
+    url: "../../adapters/user.php",
+    success: function(result) {
+      let json = JSON.parse(result);
+      console.log(json.data);
+      $("#mensaje").modal("show");
     }
   });
 }

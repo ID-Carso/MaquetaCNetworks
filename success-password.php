@@ -2,7 +2,20 @@
 <html lang="en">
 
 <head>
-  <?php include './views/partials/head.php' ?>
+  <meta charset="UTF-8" />
+
+  <title>Claro Netowrks</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="./fonts/Montserrat-Black/Montserrat-Black.woff2">
+  <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="./fonts/Montserrat-Bold/Montserrat-Bold.woff2">
+  <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="./fonts/Montserrat-Light/Montserrat-Light.woff2">
+  <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="./fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff2">
+  <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="./fonts/Montserrat-Regular/Montserrat-Regular.woff2">
+
+  <link rel="shortcut icon" type="image/png" href="./images/favicon/claro-fav.png" />
+  <link rel="stylesheet" href="./styles/bootstrap-4.4.1/bootstrap.min.css" />
+  <link rel="stylesheet" href="./styles/style.css" type="text/css" />
 </head>
 
 <body class="fondo">
@@ -30,7 +43,7 @@
           <form method="POST">
             <div class="row ma-no centro">
               <div class="col-sm-12 signup-button-container">
-                <a href="login.html"><button type="button" class="form-button-primary re-password-button">
+                <a href="login.php"><button type="button" class="form-button-primary re-password-button">
                     CONTINÚA
                   </button></a>
               </div>

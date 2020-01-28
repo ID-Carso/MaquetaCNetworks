@@ -126,17 +126,22 @@
             <div class="section-slider cinema-slider">
               <div class="poster">
                 <div class="poster-body">
-                  <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                  <div class="thumbnail">
+                  <div class="showtime-container">
+                    <p class="a-programming-text">14:30 - 16:30</p>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                   </div>
-                  <div class="a-cinema-rectangle">
-                    <div class="poster-title-margin">
-                      <p class="a-poster-text-black">
-                        ¿QUÉ TE HA DADO ESA MUJER?
-                      </p>
+                  <a href="sinopsis.php">
+                    <div class="thumbnail">
+                      <img src="./images/claro-cinema/carrousel/01-encapuchados.jpg" alt="">
                     </div>
-                  </div>
+                    <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                        <p class="a-poster-text-black">ENCAPUCHADOS</p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
+
               </div>
 
               <div class="poster">
@@ -145,104 +150,149 @@
                     <p class="a-programming-text">14:30 - 16:30</p>
                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                   </div>
-                  <div class="thumbnail">
-                  </div>
-                  <div class="a-cinema-rectangle">
-                    <div class="poster-title-margin">
-                      <p class="a-poster-text-black">
-                        ¿QUÉ TE HA DADO ESA MUJER?
-                      </p>
+                  <a href="sinopsis.php">
+                    <div class="thumbnail">
+                      <img src="./images/claro-cinema/carrousel/02-muneca-reina.jpg" alt="">
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="poster">
-                <div class="poster-body">
-                  <div class="showtime-container">
-                    <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                  </div>
-                  <div class="thumbnail">
-                  </div>
-                  <div class="a-cinema-rectangle">
-                    <div class="poster-title-margin">
-                      <p class="a-poster-text-black">
-                        ¿QUÉ TE HA DADO ESA MUJER?
-                      </p>
+                    <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                        <p class="a-poster-text-black">MUÑECA REINA</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
-              </div>
 
-              <div class="poster">
-                <div class="poster-body">
-                  <div class="showtime-container">
-                    <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                  </div>
-                  <div class="thumbnail">
-                  </div>
-                  <div class="a-cinema-rectangle">
-                    <div class="poster-title-margin">
-                      <p class="a-poster-text-black">
-                        ¿QUÉ TE HA DADO ESA MUJER?
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
-
               <div class="poster">
                 <div class="poster-body">
                   <div class="showtime-container">
                     <p class="a-programming-text">14:30 - 16:30</p>
                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                   </div>
-                  <div class="thumbnail">
-                  </div>
-                  <div class="a-cinema-rectangle">
-                    <div class="poster-title-margin">
-                      <p class="a-poster-text-black">
-                        ¿QUÉ TE HA DADO ESA MUJER?
-                      </p>
+                  <a href="sinopsis.php">
+                    <div class="thumbnail">
+                      <img src="./images/claro-cinema/carrousel/03-la-nina-de-mis-ojos.jpg" alt="">
                     </div>
-                  </div>
+                    <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                        <p class="a-poster-text-black">LA NIÑA DE MIS OJOS</p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </div>
 
+              </div>
               <div class="poster">
                 <div class="poster-body">
                   <div class="showtime-container">
                     <p class="a-programming-text">14:30 - 16:30</p>
                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                   </div>
-                  <div class="thumbnail">
-                  </div>
-                  <div class="a-cinema-rectangle">
-                    <div class="poster-title-margin">
-                      <p class="a-poster-text-black">
-                        ¿QUÉ TE HA DADO ESA MUJER?
-                      </p>
+                  <a href="sinopsis.php">
+                    <div class="thumbnail">
+                      <img src="./images/claro-cinema/carrousel/04-chanoc.jpg" alt="">
                     </div>
-                  </div>
+                    <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                        <p class="a-poster-text-black">CHANOC</p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </div>
 
+              </div>
               <div class="poster">
                 <div class="poster-body">
                   <div class="showtime-container">
                     <p class="a-programming-text">14:30 - 16:30</p>
                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                   </div>
-                  <div class="thumbnail">
-                  </div>
-                  <div class="a-cinema-rectangle">
-                    <div class="poster-title-margin">
-                      <p class="a-poster-text-black">
-                        ¿QUÉ TE HA DADO ESA MUJER?
-                      </p>
+                  <a href="sinopsis.php">
+                    <div class="thumbnail">
+                      <img src="./images/claro-cinema/carrousel/05-palabra-de-cine.jpg" alt="">
                     </div>
+                    <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                        <p class="a-poster-text-black">PALABRA DE CINEA</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+              <div class="poster">
+                <div class="poster-body">
+                  <div class="showtime-container">
+                    <p class="a-programming-text">14:30 - 16:30</p>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                   </div>
+                  <a href="sinopsis.php">
+                    <div class="thumbnail">
+                      <img src="./images/claro-cinema/carrousel/06-culpa-hombres.jpg" alt="">
+                    </div>
+                    <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                        <p class="a-poster-text-black">LA CULPA DE LOS HOMBRES</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+              <div class="poster">
+                <div class="poster-body">
+                  <div class="showtime-container">
+                    <p class="a-programming-text">14:30 - 16:30</p>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                  </div>
+                  <a href="sinopsis.php">
+                    <div class="thumbnail">
+                      <img src="./images/claro-cinema/carrousel/07-cuando-se-quiere-se-quiere.jpg" alt="">
+                    </div>
+                    <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                        <p class="a-poster-text-black">CUANDO SE QUIERE, SE QUIERE</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+              <div class="poster">
+                <div class="poster-body">
+                  <div class="showtime-container">
+                    <p class="a-programming-text">14:30 - 16:30</p>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                  </div>
+                  <a href="sinopsis.php">
+                    <div class="thumbnail">
+                      <img src="./images/claro-cinema/carrousel/08-el-superflaco.jpg" alt="">
+                    </div>
+                    <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                        <p class="a-poster-text-black">EL SUPERFLACO</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+              <div class="poster">
+                <div class="poster-body">
+                  <div class="showtime-container">
+                    <p class="a-programming-text">14:30 - 16:30</p>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                  </div>
+                  <a href="sinopsis.php">
+                    <div class="thumbnail">
+                      <img src="./images/claro-cinema/carrousel/09-el-detective.jpg" alt="">
+                    </div>
+                    <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                        <p class="a-poster-text-black">EL DETECTIVE</p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -388,7 +438,7 @@
               <div class="col poster-pad-r poster-pad-b poster-section">
                 <div class="poster">
                   <div class="poster-body">
-                    <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+
                     <div class="thumbnail">
                     </div>
                     <div class="a-cinema-rectangle">
@@ -480,7 +530,7 @@
           <div class="section-slider cinema-slider">
             <div class="poster">
               <div class="poster-body">
-                <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+
                 <div class="thumbnail">
                 </div>
                 <div class="a-cinema-rectangle">
@@ -611,7 +661,7 @@
           <div class="section-slider cinema-slider">
             <div class="poster">
               <div class="poster-body">
-                <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+
                 <div class="thumbnail">
                 </div>
                 <div class="a-cinema-rectangle">

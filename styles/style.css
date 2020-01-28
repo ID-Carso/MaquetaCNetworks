@@ -4182,6 +4182,7 @@ input[type="radio"]:checked + .mujer-estilo {
   display: flex !important;
   height: auto;
   padding-bottom: 64%;
+  background: #ababab;
 }
 
 .header-slide img {
@@ -4438,6 +4439,18 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .dropdown-active {
   display: block;
+}
+
+.open-modal {
+  opacity: 1 !important;
+  display: block !important;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.close-modal {
+  opacity: 0;
+  display: none;
+  background: transparent;
 }
 
 .schedule-item-body {

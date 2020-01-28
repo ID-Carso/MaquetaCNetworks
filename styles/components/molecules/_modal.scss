@@ -1,0 +1,11 @@
+.open-modal {
+  opacity: 1 !important;
+  display: block !important;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.close-modal {
+  opacity: 0;
+  display: none;
+  background: transparent;
+}

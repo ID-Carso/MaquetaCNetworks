@@ -3,6 +3,7 @@
 
 <head>
   <?php include './views/partials/head.php' ?>
+  <script src="./js/lib/easyXDM.min.js"></script>
   <script type="text/javascript">
     new easyXDM.Socket({
       remote: "vision.php",
