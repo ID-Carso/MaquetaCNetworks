@@ -70,7 +70,6 @@ $(document).ready(function() {
     ) {
       registerUser(inputUser, inputEmail, inputPassword);
       modalUsername.html(inputUser.val());
-      //www.claronetworks.openofficedospuntocero.info/
       return true;
     } else {
       return false;

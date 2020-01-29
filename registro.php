@@ -2,9 +2,6 @@
 <html lang="en">
 
 <head>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <?php include './views/partials/head.php' ?>
 
 </head>
@@ -12,15 +9,11 @@
 <body class="fondo">
 
         <div class="signup-container">
-                <div class="login-form">
-
-
-                        <div class="col-sm-12 no-gutters col-md-6 no-gutters col-lg-4 col-xl-3 shadow1 fondolog ">
+                <div class="login-form no-gutters">
+                        <div class="col-sm-12 no-gutters col-md-6 no-gutters col-lg-4 col-xl-3 shadow1 fondolog">
                                 <img src="images/registro/group-10.svg" class="ubicacion6">
-
-
-                                <div class="row ma-no ">
-                                        <div class="col-sm-12 col-md-12 col-lg-12 no-gutters ">
+                                <div class="row ma-no no-gutters">
+                                        <div class="col-sm-12 col-md-12 col-lg-12">
                                                 <img src="images/registro/group-3.svg" class="form-image-blue">
                                                 <a href="home.php"> <img src="images/registro/group-24.svg" class="ubicacion1" /></a>
                                                 <img src="images/registro/group-37.svg" class="ubicacion">

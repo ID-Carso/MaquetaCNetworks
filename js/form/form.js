@@ -137,8 +137,9 @@ function registerUser(inputName, inputEmail, inputPassword) {
     url: "../../adapters/user.php",
     success: function(result) {
       let json = JSON.parse(result);
+      let modal = $("#mensaje");
       console.log(json.data);
-      $("#mensaje").modal("show");
+      modal.modal("show");
     }
   });
 }
