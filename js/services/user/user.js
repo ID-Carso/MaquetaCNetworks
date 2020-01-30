@@ -77,12 +77,14 @@ function signIn(email, password) {
       "&" +
       password +
       "",
+
     success: function(result) {
       if (result.data) {
         location.href =
           "http://www.claronetworks.openofficedospuntocero.info/home.php";
         localStorage.setItem("session", 1);
         localStorage.setItem("name", result.data.name);
+        console.log(result);
       } else {
         $(".data-incorrect")
           .text(
@@ -98,6 +100,28 @@ function signOut() {
   location.reload();
   localStorage.removeItem("name");
   localStorage.setItem("session", 0);
+}
+
+function updateDataUser(gender, date, country) {
+  let dataUser = {
+    function: "updateDataUser",
+    gender: gender,
+    date: date,
+    country: country
+  };
+
+  $.ajax({
+    type: "POST",
+    data: dataUser,
+    url: "../../adapters/user.php",
+    success: function(result) {
+      location.reload();
+      let json = JSON.parse(result);
+      localStorage.setItem("gender", json.data.gender);
+      localStorage.setItem("date", json.data.date);
+      localStorage.setItem("country", json.data.country);
+    }
+  });
 }
 
 export {

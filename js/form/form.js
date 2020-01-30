@@ -133,13 +133,14 @@ function registerUser(inputName, inputEmail, inputPassword) {
   $.ajax({
     type: "POST",
     data: user,
-
     url: "../../adapters/user.php",
     success: function(result) {
       let json = JSON.parse(result);
       let modal = $("#mensaje");
       console.log(json.data);
       modal.modal("show");
+      localStorage.setItem("session", 1);
+      localStorage.setItem("name", json.data.name);
     }
   });
 }
@@ -156,6 +157,7 @@ function registerUser(inputName, inputEmail, inputPassword) {
 });*/
 
 function validateToken(token) {
+  console.log(token);
   $.ajax({
     type: "POST",
     data: token,

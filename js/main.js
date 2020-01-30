@@ -10,6 +10,7 @@ import { registerUser } from "./form/form.js";
 import { validateToken } from "./form/form.js";
 import { sendUserEmail } from "./services/user/user.js";
 import { sendNewPassword } from "./services/user/user.js";
+
 import { signIn } from "./services/user/user.js";
 import { signOut } from "./services/user/user.js";
 
@@ -17,7 +18,7 @@ var programacion_slider;
 var tvConcertSlider;
 let url = location.href;
 let url2 =
-  "http://www.claronetworks.openofficedospuntocero.info/cuenta-confirmada.html";
+  "http://www.claronetworks.openofficedospuntocero.info/cueta-confirmada.nhtml";
 let arrayUrl = url.split("?");
 let data = {
   token: arrayUrl[1]
@@ -28,6 +29,48 @@ if (arrayUrl[0] == url2) {
 }
 
 $(document).ready(function() {
+  /* Service - USER */
+
+  let saveDataButton = $("#save-data-user");
+
+  saveDataButton.click(function() {
+    let day = $(".SeleccionDiaLista").text();
+    let month = $(".SeleccionMesLista").text();
+    let year = $(".SeleccionAñoLista").text();
+    let date = year + "/" + month + "/" + day;
+    let genderMale = $("#hombre");
+    let genderFemale = $("#mujer");
+    var gender;
+    if (genderMale.is(":checked")) {
+      gender = "Male";
+    } else if (genderFemale.is(":checked")) {
+      console.log("I can shoot my cannonball");
+      gender = "Female";
+    }
+    let country = $(".SeleccionPaisLista").text();
+  });
+
+  $(".registro").click(function() {
+    let dataUser = {
+      function: "funcion1",
+      id: 1,
+      title: "foo",
+      body: "bar",
+      userId: 1
+    };
+
+    $.ajax({
+      type: "POST",
+      data: dataUser,
+      url: "../adapters/user.php",
+      success: function(result) {
+        console.log(result);
+      }
+    });
+  });
+
+  /* */
+
   /*Mostrar u ocultar password de registro o login */
   var iconPassword = document.querySelectorAll(".icon-eye");
   var iconLength = iconPassword.length;
@@ -96,7 +139,8 @@ $(document).ready(function() {
     }
   });
 
-  let session = localStorage.getItem("session");
+  var session = localStorage.getItem("session");
+  console.log(session);
 
   if (session == 1) {
     let userOptions = $(".user-options");
@@ -130,7 +174,7 @@ $(document).ready(function() {
     userOptions.html(menuBase);
   }
 
-  var sessionSrc = sessionStorage.getItem("src");
+  var sessionSrc = localStorage.getItem("src");
   var loginCountry = $(".login-country");
   if (!sessionSrc && window.location.pathname !== "/") {
     location.href = "/";
@@ -145,63 +189,6 @@ $(document).ready(function() {
   $(".terms-conditions-button").click(function() {
     window.history.back();
   });
-
-  /*Mostrar menú una vez que el usuario ha ingresado */
-  /*let ingreso = sessionStorage.getItem("ingreso");
-  const userOptions = $(".user-options");
-  const sidebarHeader = $(".sidebar-header");
-  if (ingreso == "1") {
-    let menuIngreso = `
-    <div class="menu-ingreso">
-      <div class="icon-user position-relative mr-3">
-        <div class="tooltip-logout">
-          <div class="d-flex">
-            <img src="./images/menu/logout.svg" />
-            <p class="tooltip-text ml-3">Cerrar Sesión</p>
-          </div>
-        </div>
-        <img src="./images/menu/icon-white-user.svg"  />
-      </div>
-      
-      <p class="name-user mr-3">Eduardo Pérez</p>
-      <a href="mi-lista.php"><img class="mr-3 options-item" src="./images/menu/mi-lista-icon.png" alt="" /></a>
-      <a href="configuracion.php"><img class="mr-3 options-item" src="./images/menu/configuracion-icon.png" alt="" /></a>
-      <a href="index.html" class="login-item options-item"><img class="login-country" src="" alt="" /></a>
-    </div>
-    `;
-
-    let sidebarHeaderOptions = `            
-    <img src="./images/menu/icon-white-user.svg" alt="" class="mr-3 sidebar-image-user">
-
-    <div>
-      <p class="name-user mb-2">eduardo</p>
-      <div class="d-flex">
-          <a href="mi-lista.php">
-            <img src="./images/menu/mi-lista-icon.png" class="mr-3 options-item">
-           </a>
-           <a href="configuracion.php"> 
-              <img src="./images/menu/configuracion-icon.png" class="options-item" alt="" srcset="">
-            </a>
-      </div>
-    </div>
-`;
-    userOptions.html(menuIngreso);
-    sidebarHeader.html(sidebarHeaderOptions);
-  } else {
-    let menuBase = `
-    <div class="login">
-      <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-      <a href="index.html" class="login-item"><img class="login-country" src="" alt="" /></a>
-    </div>
-    `;
-    let sidebarHeaderOptions = `            
-    <img src="./images/menu/icon-white-user.svg" alt="" class="mr-2">
-    <a href="login.html" class="sib">
-        <p class="name-user">ingresar</p>
-    </a>`;
-    sidebarHeader.html(sidebarHeaderOptions);
-    userOptions.html(menuBase);
-  }*/
 
   loginCountry.attr("src", sessionSrc);
 

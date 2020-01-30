@@ -1,7 +1,4 @@
 <?php
-
-
-
 class User
 {
     private static $instance = NULL;
@@ -18,24 +15,10 @@ class User
         return self::$instance;
     }
 
-    function getAllUsers()
+    function getAllUsers($json)
     {
-        $ch = curl_init();
-
-        // definimos la URL a la que hacemos la petición
-        curl_setopt($ch, CURLOPT_URL, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user");
-        // indicamos el tipo de petición: POST
-        //curl_setopt($ch, CURLOPT_POST, TRUE);
-        // definimos cada uno de los parámetros
-        //curl_setopt($ch, CURLOPT_POSTFIELDS, "postvar1=value1&postvar2=value2&postvar3=value3");
-
-        // recibimos la respuesta y la guardamos en una variable
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        $remote_server_output = curl_exec($ch);
-
-        // cerramos la sesión cURL
-        curl_close($ch);
-        echo json_encode($remote_server_output);
+        $url = "https://jsonplaceholder.typicode.com/posts/1";
+        callAPI("PUT", $url, $json);
     }
 
     function registerUser($name, $email, $password)
@@ -53,6 +36,46 @@ class User
         curl_close($ch);
         echo ($response);
     }
+
+    function updateDataUser($id, $data)
+    {
+        callAPI("PUT", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/" . $id . "", $data);
+    }
+}
+
+
+function callAPI($method, $url, $data)
+{
+    $curl = curl_init();
+    switch ($method) {
+        case "POST":
+            curl_setopt($curl, CURLOPT_POST, 1);
+            if ($data)
+                curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+            break;
+        case "PUT":
+            curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "PUT");
+            if ($data)
+                curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+            break;
+        default:
+            if ($data)
+                $url = sprintf("%s?%s", $url, http_build_query($data));
+    }
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, array(
+        'Content-Type: application/json',
+        'Accept: application/json'
+    ));
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+    // EXECUTE:
+    $result = curl_exec($curl);
+    if (!$result) {
+        die("Connection Failure");
+    }
+    curl_close($curl);
+    echo ($result);
 }
 
 
@@ -68,13 +91,23 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
                 $password = $_POST['password'];
                 $users = User::getUserInstance();
                 $users->registerUser($name, $email, $password);
+            } else {
+                return "No válido";
             }
 
 
 
             break;
-        case 'funcion2':
+        case 'updateDataUser':
             $b->accion2();
             break;
+
+        case 'funcion1':
+            $dataUser = array("id" => $_POST['id'], "title" => $_POST['title'], "body" => $_POST['body'], "userId" => $_POST['userId']);
+
+            $dataJson = json_encode($dataUser);
+
+            $users = User::getUserInstance();
+            $users->getAllUsers($dataJson);
     }
 }

@@ -676,9 +676,9 @@
           <br />
           <div class="row ma-no centro">
             <div class="col-sm-12 pt-5 pb-4">
-              <a href="mi-perfil.php"><button type="button" class="form-button-outline">
-                  GUARDAR
-                </button></a>
+              <button type="button" id="save-data-user" class="form-button-outline">
+                GUARDAR
+              </button>
             </div>
           </div>
         </div>

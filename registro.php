@@ -53,7 +53,7 @@
                                                         <div class=" col-sm-12 no-gap">
                                                                 <div class="tamaño2 centro">
                                                                         <input class="insert-data" type="password" id="signup-password" name="signup-password" placeholder="Contraseña">
-                                                                        <img src="images/registro/eye.svg" class="ubicacion4" />
+                                                                        <img src="images/registro/eye.svg" class="ubicacion4 icon-eye" />
 
                                                                         <p class="caracteres-min">8 caractéres mínimo
                                                                                 <img src="images/registro/listo.svg" class="listo">
