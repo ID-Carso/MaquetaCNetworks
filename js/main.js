@@ -13,6 +13,7 @@ import { sendNewPassword } from "./services/user/user.js";
 
 import { signIn } from "./services/user/user.js";
 import { signOut } from "./services/user/user.js";
+import { updateDataUser } from "./services/user/user.js";
 
 var programacion_slider;
 var tvConcertSlider;
@@ -28,6 +29,31 @@ if (arrayUrl[0] == url2) {
   validateToken(data);
 }
 
+let country = localStorage.getItem("country");
+let gender = localStorage.getItem("gender");
+
+if(country){
+  $('.SeleccionPaisLista').text(country);
+}
+
+if(gender){
+  let iconFemale = $('#women');
+  let iconMale = $('#men');
+  let genderMale = $('#hombre');
+  let genderFemale = $('#mujer');
+  if(gender == "F"){
+    genderFemale.attr("checked", true);
+    genderMale.attr("checked", false);
+    iconMale.attr("src", "images/datos-adicionales/masculino-inactivo.svg");
+    iconFemale.attr("src", "images/datos-adicionales/femenino-activo.svg");
+  }else{
+    genderFemale.attr("checked", false);
+    genderMale.attr("checked", true);
+    iconMale.attr("src", "images/datos-adicionales/masculino-activo.svg");
+    iconFemale.attr("src", "images/datos-adicionales/femenino-inactivo.svg");
+  }
+}
+
 $(document).ready(function() {
   /* Service - USER */
 
@@ -37,20 +63,24 @@ $(document).ready(function() {
     let day = $(".SeleccionDiaLista").text();
     let month = $(".SeleccionMesLista").text();
     let year = $(".SeleccionAñoLista").text();
-    let date = year + "/" + month + "/" + day;
+    let date = year + "-" + month + "-" + day;
     let genderMale = $("#hombre");
     let genderFemale = $("#mujer");
     var gender;
     if (genderMale.is(":checked")) {
-      gender = "Male";
+      gender = "M";
     } else if (genderFemale.is(":checked")) {
       console.log("I can shoot my cannonball");
-      gender = "Female";
+      gender = "F";
     }
+    let id = parseInt(localStorage.getItem("id"));
     let country = $(".SeleccionPaisLista").text();
+    updateDataUser(id, gender, date, country);
   });
 
-  $(".registro").click(function() {
+  /*$("#save-data-user").click(function() {
+    var session = localStorage.getItem("id");
+    var session = localStorage.getItem("session");
     let dataUser = {
       function: "funcion1",
       id: 1,
@@ -67,7 +97,7 @@ $(document).ready(function() {
         console.log(result);
       }
     });
-  });
+  });*/
 
   /* */
 
@@ -173,6 +203,8 @@ $(document).ready(function() {
     </div>`;
     userOptions.html(menuBase);
   }
+
+
 
   var sessionSrc = localStorage.getItem("src");
   var loginCountry = $(".login-country");

@@ -15,7 +15,7 @@
                                 <div class="row ma-no no-gutters">
                                         <div class="col-sm-12 col-md-12 col-lg-12">
                                                 <img src="images/registro/group-3.svg" class="form-image-blue">
-                                                <a href="home.php"> <img src="images/registro/group-24.svg" class="ubicacion1" /></a>
+                                                <a href="home.php"> <img src="./images/home/claro-logo.svg" class="ubicacion1" /></a>
                                                 <img src="images/registro/group-37.svg" class="ubicacion">
                                         </div>
                                 </div>
@@ -29,7 +29,7 @@
                                         <form method="POST">
                                                 <div class="row ma-no centro">
                                                         <div class="col-sm-12 no-gap">
-                                                                <div class="tamaño2 centro">
+                                                                <div>
                                                                         <input class="insert-data" type="text" id="usuario" name="usuario" placeholder="Nombre de usuario">
                                                                         <p class="nouser">
                                                                         </p>
@@ -39,11 +39,12 @@
 
                                                 <div class="row ma-no centro">
                                                         <div class="col-sm-12 no-gap">
-                                                                <div class="tamaño2 centro">
-                                                                        <input class="insert-data" type="email" id="signup-correo" name="correo" placeholder="Correo electrónico">
-                                                                        <p class="nocorreo"><img src="images/registro/alerta.svg">
-                                                                                El
-                                                                                correo no es correcto</p>
+                                                                <div class="centro">
+                                                                        <input class="insert-data input-email" type="email" id="signup-correo" name="correo" placeholder="Correo electrónico">
+                                                                        <p class="correo-valido" id="error_email">
+                    Correo válido
+                    <img src="images/registro/alerta.svg" class="error" />
+                  </p>
 
                                                                 </div>
                                                         </div>
@@ -51,9 +52,12 @@
 
                                                 <div class="row ma-no centro">
                                                         <div class=" col-sm-12 no-gap">
-                                                                <div class="tamaño2 centro">
+                                                                <div class="centro">
+                                                                        <div class="position-relative">
                                                                         <input class="insert-data" type="password" id="signup-password" name="signup-password" placeholder="Contraseña">
                                                                         <img src="images/registro/eye.svg" class="ubicacion4 icon-eye" />
+                                                                        </div>
+
 
                                                                         <p class="caracteres-min">8 caractéres mínimo
                                                                                 <img src="images/registro/listo.svg" class="listo">

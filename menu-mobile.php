@@ -6,7 +6,7 @@
 
             <div class="d-flex justify-content-center">
                 <a href="home.php">
-                    <img class="logo" src="./images/home/claro-logo.png" alt="" />
+                    <img class="logo" src="./images/logos/claro-networks-white.svg" alt="" />
                 </a>
             </div>
         </div>

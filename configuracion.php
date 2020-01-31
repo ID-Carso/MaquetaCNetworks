@@ -63,7 +63,7 @@
         <div class="claro-logo">
           <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
 
-          <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
+          <img class="logo" src="./images/home/claro-logo.svg" alt="" />
         </div>
 
         <div class="login">

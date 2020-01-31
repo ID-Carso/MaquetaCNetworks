@@ -15,7 +15,7 @@
           <div class="col-sm-12 col-md-12 col-lg-12 no-gutters ">
             <img src="images/registro/group-3.svg" class="form-image-blue" />
             <a href="home.php">
-              <img src="images/registro/group-24.svg" class="ubicacion1" /></a>
+              <img src="./images/home/claro-logo.svg" class="ubicacion1" /></a>
             <img src="images/registro/group-37.svg" class="ubicacion" />
           </div>
         </div>
@@ -54,10 +54,10 @@
             <br />
             <p class="data-incorrect"></p>
             <div class="row ma-no centro margin-top-por">
-              <div class="col-sm-12 d-flex  justify-content-center align-items-center">
+              <!--<div class="col-sm-12 d-flex  justify-content-center align-items-center">
                 <input type="checkbox" id="cuenta" />
                 <label for="cuenta">Recordar cuenta</label>
-              </div>
+              </div>-->
             </div>
 
             <div class="row ma-no centro">

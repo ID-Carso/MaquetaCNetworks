@@ -83,12 +83,13 @@ function signIn(email, password) {
         location.href =
           "http://www.claronetworks.openofficedospuntocero.info/home.php";
         localStorage.setItem("session", 1);
+        localStorage.setItem("id", result.data.id);
         localStorage.setItem("name", result.data.name);
         console.log(result);
       } else {
         $(".data-incorrect")
           .text(
-            "Tu correo o contraseña no coinciden. Por favor verifica de nuevo"
+            "Tu correo o contraseña no coinciden. Por favor, verifica de nuevo"
           )
           .addClass("invalid-email");
       }
@@ -102,24 +103,32 @@ function signOut() {
   localStorage.setItem("session", 0);
 }
 
-function updateDataUser(gender, date, country) {
+function updateDataUser(id, gender, date, country) {
+  
   let dataUser = {
     function: "updateDataUser",
+    id: id,
     gender: gender,
     date: date,
     country: country
   };
 
+  console.log(dataUser);
   $.ajax({
     type: "POST",
     data: dataUser,
     url: "../../adapters/user.php",
     success: function(result) {
-      location.reload();
+      
       let json = JSON.parse(result);
-      localStorage.setItem("gender", json.data.gender);
-      localStorage.setItem("date", json.data.date);
-      localStorage.setItem("country", json.data.country);
+      console.log(json);
+      let gender = localStorage.setItem("gender", json.data.gender);
+      let birthday = localStorage.setItem("date", json.data.birthday);
+      let country = localStorage.setItem("country", json.data.country);
+      let modal = $("#mensaje");
+      modal.modal("show");
+      
+      
     }
   });
 }
@@ -129,5 +138,6 @@ export {
   validateTokenPassword,
   sendNewPassword,
   signIn,
-  signOut
+  signOut,
+  updateDataUser
 };

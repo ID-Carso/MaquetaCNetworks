@@ -69,7 +69,7 @@
         <div class="claro-logo">
           <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" />
 
-          <img class="logo" src="./images/home/claro-networks-black.svg" />
+          <img class="logo" src="./images/home/claro-logo.svg" />
         </div>
 
         <div class="login">
@@ -127,31 +127,31 @@
                       <p class="SeleccionDiaLista">Día</p>
                       <ul class="ListaDesplegableDias">
                         <li class="Dias" id-select="select-Dia" value="1">
-                          1
+                          01
                         </li>
                         <li class="Dias" id-select="select-Dia" value="2">
-                          2
+                          02
                         </li>
                         <li class="Dias" id-select="select-Dia" value="3">
-                          3
+                          03
                         </li>
                         <li class="Dias" id-select="select-Dia" value="4">
-                          4
+                          04
                         </li>
                         <li class="Dias" id-select="select-Dia" value="5">
-                          5
+                          05
                         </li>
                         <li class="Dias" id-select="select-Dia" value="6">
-                          6
+                          06
                         </li>
                         <li class="Dias" id-select="select-Dia" value="7">
-                          7
+                          07
                         </li>
                         <li class="Dias" id-select="select-Dia" value="8">
-                          8
+                          08
                         </li>
                         <li class="Dias" id-select="select-Dia" value="9">
-                          9
+                          09
                         </li>
                         <li class="Dias" id-select="select-Dia" value="10">
                           10
@@ -691,6 +691,25 @@
     </div>
 
   </div>
+  <div class="modal fade " id="mensaje" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content modal-estilo">
+
+
+                                                        <div class="modal-body txtcontenido">
+                                                                <img src="./images/datos-adicionales/success.svg" />
+                                                                <span class="mensaje">Datos adicionales guardados exitosamente</span>
+                                                        </div>
+                                                        <div class="modal-footer" style="border-top:none !important; justify-content: center;">
+
+                                                                <button type="button" class="form-button-primary" id="modal-button" data-dismiss="modal">ENTENDIDO</button>
+
+
+                                                        </div>
+
+                                                </div>
+                                        </div>
+                                </div>
 </body>
 
 </html>

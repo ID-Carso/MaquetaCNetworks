@@ -37,9 +37,9 @@ class User
         echo ($response);
     }
 
-    function updateDataUser($id, $data)
+    function updateDataUser($data)
     {
-        callAPI("PUT", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/" . $id . "", $data);
+        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/update", $data);
     }
 }
 
@@ -99,7 +99,17 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
 
             break;
         case 'updateDataUser':
-            $b->accion2();
+
+        $data = array("id" =>$_POST['id'], "gender" => $_POST['gender'], "birthday" => $_POST['date'], "country" => $_POST['country']);
+        $dataJson = json_encode($data); 
+        
+        //$data = $_POST['dataUser'];
+        
+      
+            
+    
+        $user = User::getUserInstance();
+        echo($user->updateDataUser($dataJson));
             break;
 
         case 'funcion1':

@@ -139,8 +139,7 @@ function registerUser(inputName, inputEmail, inputPassword) {
       let modal = $("#mensaje");
       console.log(json.data);
       modal.modal("show");
-      localStorage.setItem("session", 1);
-      localStorage.setItem("name", json.data.name);
+
     }
   });
 }
@@ -166,6 +165,9 @@ function validateToken(token) {
     success: function(result) {
       console.log("succes", result);
       if (result.data != null) {
+        localStorage.setItem("session", 1);
+        localStorage.setItem("id", result.data.id);
+        localStorage.setItem("name", result.data.name);
         let name = result.data.name;
         let nameUser = $("#cuenta-confirmada-name-user");
         nameUser.html(name);

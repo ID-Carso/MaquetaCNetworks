@@ -5,7 +5,7 @@
       <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
 
       <a href="home.php">
-        <img class="logo" src="./images/home/claro-logo.png" alt="" />
+        <img class="logo" src="./images/logos/claro-networks-white.svg" alt="" />
       </a>
     </div>
 
