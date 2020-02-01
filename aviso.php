@@ -70,10 +70,7 @@
                     <a href="home.php"><img class="logo" src="./images/home/claro-logo.svg" /></a>
                 </div>
 
-                <div class="login">
-                    <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" /></a>
-                    <a href="index.html" class="login-item"><img class="login-country" src="" /></a>
-                </div>
+                <div class="user-options"></div>
             </div>
             <div class="claro-navbar">
                 <div>

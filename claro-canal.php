@@ -82,10 +82,7 @@
 
           </div>
 
-          <div class="login">
-            <a href="login.php" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
-            <a href="index.php" class="login-item"><img class="login-country" /></a>
-          </div>
+          <div class="user-options"></div>
         </div>
       </nav>
       <?php

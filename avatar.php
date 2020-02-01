@@ -2,23 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Avatar</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <?php include './views/partials/preload.php' ?>
-  <link rel="shortcut icon" type="image/png" href="./images/favicon/claro-fav.png" />
-  <link rel="stylesheet" href="./styles/bootstrap-4.4.1/bootstrap.min.css" />
-  <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="stylesheet" href="./slick-master/slick/slick.css" />
-  <link rel="stylesheet" href="./slick-master/slick/slick-theme.css" />
-  <script src="./js/lib/jquery-3.4.1.min.js"></script>
-  <script src="slick-master/slick/slick.js"></script>
-  <script src="./js/jquery.browser.js"></script>
-  <script src="./js/lib/rellax.js"></script>
-  <script src="./js/main.js" type="module"></script>
+  <?php include './views/partials/head.php' ?>
 </head>
 
 <body class="fondo">
@@ -81,10 +65,7 @@
           <img class="logo" src="./images/home/claro-logo.svg" />
         </div>
 
-        <div class="login">
-          <a href="login.html" class="login-item"><img src="./images/home/user-login.svg" /></a>
-          <a href="index.html" class="login-item"><img class="login-country" src="" /></a>
-        </div>
+        <div class="user-options"></div>
       </div>
       <div class="claro-navbar">
         <div>
@@ -191,11 +172,30 @@
       <div class="row ma-no centro">
         <div class="col-sm-12 no-gap">
           <div class="tamaño2 centro ">
-            <a href=""><button type="button" class="acept-button">
-                OK
-              </button></a>
+            <button type="button" class="acept-button" id="avatar-button">
+              OK
+            </button>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade " id="mensaje" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content modal-estilo">
+
+
+        <div class="modal-body txtcontenido">
+          <img src="./images/datos-adicionales/success.svg" />
+          <span class="mensaje">Nuevo avatar guardado exitosamente</span>
+        </div>
+        <div class="modal-footer" style="border-top:none !important; justify-content: center;">
+
+          <button type="button" class="form-button-primary" id="modal-button" data-dismiss="modal">ENTENDIDO</button>
+
+
+        </div>
+
       </div>
     </div>
   </div>

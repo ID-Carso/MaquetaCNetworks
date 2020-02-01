@@ -8,6 +8,9 @@ function validateTokenPassword(tokenPassword) {
       console.log("succes", result);
       if (result.data) {
         let user_id = $("#user_id");
+        let session = localStorage.setItem("session", 1);
+        let id = localStorage.setItem("id", result.data.id);
+        let name = localStorage.setItem("name", result.data.name);
         user_id.attr("value", result.data.user_id);
         location.href =
           "http://www.claronetworks.openofficedospuntocero.info/form-password.php";
@@ -104,7 +107,6 @@ function signOut() {
 }
 
 function updateDataUser(id, gender, date, country) {
-  
   let dataUser = {
     function: "updateDataUser",
     id: id,
@@ -119,16 +121,81 @@ function updateDataUser(id, gender, date, country) {
     data: dataUser,
     url: "../../adapters/user.php",
     success: function(result) {
-      
       let json = JSON.parse(result);
       console.log(json);
       let gender = localStorage.setItem("gender", json.data.gender);
+      let date = json.data.birthday.split("-");
+      let day = localStorage.setItem("day", date[2]);
+      let month = localStorage.setItem("month", date[1]);
+      let year = localStorage.setItem("year", date[0]);
       let birthday = localStorage.setItem("date", json.data.birthday);
       let country = localStorage.setItem("country", json.data.country);
+
       let modal = $("#mensaje");
       modal.modal("show");
-      
-      
+    }
+  });
+}
+
+function sendEmail(id) {
+  let dataUser = {
+    function: "sendEmail",
+    id: id
+  };
+
+  $.ajax({
+    type: "POST",
+    data: dataUser,
+    url: "../../adapters/user.php",
+    success: function(result) {
+      console.log(result);
+      console.log("email enviado");
+    }
+  });
+}
+
+function selectAvatar(id, src) {
+  let dataUser = {
+    function: "selectAvatar",
+    id: id,
+    avatar: src
+  };
+
+  $.ajax({
+    type: "POST",
+    data: dataUser,
+    url: "../../adapters/user.php",
+    success: function(result) {
+      let json = JSON.parse(result);
+      console.log(json);
+      let modal = $("#mensaje");
+      modal.modal("show");
+    }
+  });
+}
+
+function registerUser(inputName, inputEmail, inputPassword) {
+  let name = inputName.val();
+  let email = inputEmail.val();
+  let password = inputPassword.val();
+
+  let user = {
+    function: "registerUser",
+    name: name,
+    email: email,
+    password: password
+  };
+
+  $.ajax({
+    type: "POST",
+    data: user,
+    url: "../../adapters/user.php",
+    success: function(result) {
+      let json = JSON.parse(result);
+      let modal = $("#mensaje");
+      console.log(json.data.id);
+      modal.modal("show");
+      sendEmail(json.data.id);
     }
   });
 }
@@ -139,5 +206,7 @@ export {
   sendNewPassword,
   signIn,
   signOut,
-  updateDataUser
+  updateDataUser,
+  selectAvatar,
+  registerUser
 };

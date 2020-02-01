@@ -108,42 +108,6 @@ function validateUser(inputUser, messageError) {
   }
 }
 
-function registerUser(inputName, inputEmail, inputPassword) {
-  let name = inputName.val();
-  let email = inputEmail.val();
-  let password = inputPassword.val();
-
-  let user = {
-    function: "registerUser",
-    name: name,
-    email: email,
-    password: password
-  };
-
-  /*$.ajax({
-    type: "POST",
-    data: user,
-    url:
-      "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user",
-    success: function(result) {
-      console.log("succes", result.token);
-    }
-  });*/
-
-  $.ajax({
-    type: "POST",
-    data: user,
-    url: "../../adapters/user.php",
-    success: function(result) {
-      let json = JSON.parse(result);
-      let modal = $("#mensaje");
-      console.log(json.data);
-      modal.modal("show");
-
-    }
-  });
-}
-
 /*$.ajax({
   type: "POST",
   data: user,
@@ -183,6 +147,5 @@ export {
   validateKeyUpEmail,
   validatePassword,
   validateUser,
-  registerUser,
   validateToken
 };

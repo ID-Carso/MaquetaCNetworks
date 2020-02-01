@@ -41,6 +41,17 @@ class User
     {
         callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/update", $data);
     }
+
+
+    function selectAvatar($src)
+    {
+        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/update", $src);
+    }
+
+    function sendEmail($id)
+    {
+        callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/mail/" . $id . "", null);
+    }
 }
 
 
@@ -94,30 +105,33 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             } else {
                 return "No válido";
             }
-
-
-
             break;
         case 'updateDataUser':
 
-        $data = array("id" =>$_POST['id'], "gender" => $_POST['gender'], "birthday" => $_POST['date'], "country" => $_POST['country']);
-        $dataJson = json_encode($data); 
-        
-        //$data = $_POST['dataUser'];
-        
-      
-            
-    
-        $user = User::getUserInstance();
-        echo($user->updateDataUser($dataJson));
+            $data = array("id" => $_POST['id'], "gender" => $_POST['gender'], "birthday" => $_POST['date'], "country" => $_POST['country']);
+            $dataJson = json_encode($data);
+
+            //$data = $_POST['dataUser'];
+
+
+
+
+            $user = User::getUserInstance();
+            echo ($user->updateDataUser($dataJson));
             break;
 
-        case 'funcion1':
-            $dataUser = array("id" => $_POST['id'], "title" => $_POST['title'], "body" => $_POST['body'], "userId" => $_POST['userId']);
-
+        case 'selectAvatar':
+            $dataUser = array("id" => $_POST['id'], "avatar" => $_POST['avatar']);
             $dataJson = json_encode($dataUser);
-
             $users = User::getUserInstance();
-            $users->getAllUsers($dataJson);
+            echo ($users->selectAvatar($dataJson));
+            break;
+
+        case 'sendEmail':
+
+            $data = $_POST['id'];
+            echo ($data);
+            $user = User::getUserInstance();
+            echo ($user->sendEmail($data));
     }
 }

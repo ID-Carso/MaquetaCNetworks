@@ -2,7 +2,34 @@
 <html lang="en">
 
 <head>
+
   <?php include './views/partials/head.php' ?>
+  <script>
+    let country = localStorage.getItem("country");
+    let gender = localStorage.getItem("gender");
+
+    if (country) {
+      $('.SeleccionPaisLista').text(country);
+    }
+
+    if (gender) {
+      let iconFemale = $('#women');
+      let iconMale = $('#men');
+      let genderMale = $('#hombre');
+      let genderFemale = $('#mujer');
+      if (gender == "F") {
+        genderFemale.attr("checked", true);
+        genderMale.attr("checked", false);
+        iconMale.attr("src", "images/datos-adicionales/masculino-inactivo.svg");
+        iconFemale.attr("src", "images/datos-adicionales/femenino-activo.svg");
+      } else {
+        genderFemale.attr("checked", false);
+        genderMale.attr("checked", true);
+        iconMale.attr("src", "images/datos-adicionales/masculino-activo.svg");
+        iconFemale.attr("src", "images/datos-adicionales/femenino-inactivo.svg");
+      }
+    }
+  </script>
   <script src="js/chosen.jquery.js"></script>
   <script src="js/ImageSelect.jquery.js"></script>
 </head>
@@ -72,10 +99,7 @@
           <img class="logo" src="./images/home/claro-logo.svg" />
         </div>
 
-        <div class="login">
-          <a href="login.php" class="login-item"><img src="./images/home/user-login.svg" /></a>
-          <a href="index.php" class="login-item"><img class="login-country" src="" /></a>
-        </div>
+        <div class="user-options"></div>
       </div>
 
     </nav>
@@ -126,31 +150,31 @@
                     <label for="selectDay" id="select-Dia">
                       <p class="SeleccionDiaLista">Día</p>
                       <ul class="ListaDesplegableDias">
-                        <li class="Dias" id-select="select-Dia" value="1">
+                        <li class="Dias" id-select="select-Dia" value="01">
                           01
                         </li>
-                        <li class="Dias" id-select="select-Dia" value="2">
+                        <li class="Dias" id-select="select-Dia" value="02">
                           02
                         </li>
-                        <li class="Dias" id-select="select-Dia" value="3">
+                        <li class="Dias" id-select="select-Dia" value="03">
                           03
                         </li>
-                        <li class="Dias" id-select="select-Dia" value="4">
+                        <li class="Dias" id-select="select-Dia" value="04">
                           04
                         </li>
-                        <li class="Dias" id-select="select-Dia" value="5">
+                        <li class="Dias" id-select="select-Dia" value="05">
                           05
                         </li>
-                        <li class="Dias" id-select="select-Dia" value="6">
+                        <li class="Dias" id-select="select-Dia" value="06">
                           06
                         </li>
-                        <li class="Dias" id-select="select-Dia" value="7">
+                        <li class="Dias" id-select="select-Dia" value="07">
                           07
                         </li>
-                        <li class="Dias" id-select="select-Dia" value="8">
+                        <li class="Dias" id-select="select-Dia" value="08">
                           08
                         </li>
-                        <li class="Dias" id-select="select-Dia" value="9">
+                        <li class="Dias" id-select="select-Dia" value="09">
                           09
                         </li>
                         <li class="Dias" id-select="select-Dia" value="10">
@@ -692,24 +716,24 @@
 
   </div>
   <div class="modal fade " id="mensaje" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered" role="document">
-                                                <div class="modal-content modal-estilo">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content modal-estilo">
 
 
-                                                        <div class="modal-body txtcontenido">
-                                                                <img src="./images/datos-adicionales/success.svg" />
-                                                                <span class="mensaje">Datos adicionales guardados exitosamente</span>
-                                                        </div>
-                                                        <div class="modal-footer" style="border-top:none !important; justify-content: center;">
+        <div class="modal-body txtcontenido">
+          <img src="./images/datos-adicionales/success.svg" />
+          <span class="mensaje">Datos adicionales guardados exitosamente</span>
+        </div>
+        <div class="modal-footer" style="border-top:none !important; justify-content: center;">
 
-                                                                <button type="button" class="form-button-primary" id="modal-button" data-dismiss="modal">ENTENDIDO</button>
+          <button type="button" class="form-button-primary" id="modal-button" data-dismiss="modal">ENTENDIDO</button>
 
 
-                                                        </div>
+        </div>
 
-                                                </div>
-                                        </div>
-                                </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

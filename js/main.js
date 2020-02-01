@@ -6,20 +6,22 @@ import { validateNewPassword } from "./form/form.js";
 import { validateKeyUpEmail } from "./form/form.js";
 import { validatePassword } from "./form/form.js";
 import { validateUser } from "./form/form.js";
-import { registerUser } from "./form/form.js";
+import { registerUser } from "./services/user/user.js";
 import { validateToken } from "./form/form.js";
+
+/* User */
 import { sendUserEmail } from "./services/user/user.js";
 import { sendNewPassword } from "./services/user/user.js";
-
 import { signIn } from "./services/user/user.js";
 import { signOut } from "./services/user/user.js";
 import { updateDataUser } from "./services/user/user.js";
+import { selectAvatar } from "./services/user/user.js";
 
 var programacion_slider;
 var tvConcertSlider;
 let url = location.href;
 let url2 =
-  "http://www.claronetworks.openofficedospuntocero.info/cueta-confirmada.nhtml";
+  "http://www.claronetworks.openofficedospuntocero.info/cuenta-confirmada.html";
 let arrayUrl = url.split("?");
 let data = {
   token: arrayUrl[1]
@@ -32,26 +34,36 @@ if (arrayUrl[0] == url2) {
 let country = localStorage.getItem("country");
 let gender = localStorage.getItem("gender");
 
-if(country){
-  $('.SeleccionPaisLista').text(country);
+if (country) {
+  $(".SeleccionPaisLista").text(country);
 }
 
-if(gender){
-  let iconFemale = $('#women');
-  let iconMale = $('#men');
-  let genderMale = $('#hombre');
-  let genderFemale = $('#mujer');
-  if(gender == "F"){
+if (gender) {
+  let iconFemale = $("#women");
+  let iconMale = $("#men");
+  let genderMale = $("#hombre");
+  let genderFemale = $("#mujer");
+  if (gender == "F") {
     genderFemale.attr("checked", true);
     genderMale.attr("checked", false);
     iconMale.attr("src", "images/datos-adicionales/masculino-inactivo.svg");
     iconFemale.attr("src", "images/datos-adicionales/femenino-activo.svg");
-  }else{
+  } else {
     genderFemale.attr("checked", false);
     genderMale.attr("checked", true);
     iconMale.attr("src", "images/datos-adicionales/masculino-activo.svg");
     iconFemale.attr("src", "images/datos-adicionales/femenino-inactivo.svg");
   }
+}
+
+let day = localStorage.getItem("day");
+let month = localStorage.getItem("month");
+let year = localStorage.getItem("year");
+
+if (day && month && year) {
+  $(".SeleccionDiaLista").text(day);
+  $(".SeleccionMesLista").text(month);
+  $(".SeleccionAñoLista").text(year);
 }
 
 $(document).ready(function() {
@@ -78,28 +90,15 @@ $(document).ready(function() {
     updateDataUser(id, gender, date, country);
   });
 
-  /*$("#save-data-user").click(function() {
-    var session = localStorage.getItem("id");
-    var session = localStorage.getItem("session");
-    let dataUser = {
-      function: "funcion1",
-      id: 1,
-      title: "foo",
-      body: "bar",
-      userId: 1
-    };
+  $("#avatar-button").click(function() {
+    let id = localStorage.getItem("id");
+    let avatar = $(".active-navAvatar")
+      .children()
+      .attr("src");
+    selectAvatar(id, avatar);
+  });
 
-    $.ajax({
-      type: "POST",
-      data: dataUser,
-      url: "../adapters/user.php",
-      success: function(result) {
-        console.log(result);
-      }
-    });
-  });*/
-
-  /* */
+  /*End Serivce - USER */
 
   /*Mostrar u ocultar password de registro o login */
   var iconPassword = document.querySelectorAll(".icon-eye");
@@ -203,8 +202,6 @@ $(document).ready(function() {
     </div>`;
     userOptions.html(menuBase);
   }
-
-
 
   var sessionSrc = localStorage.getItem("src");
   var loginCountry = $(".login-country");
