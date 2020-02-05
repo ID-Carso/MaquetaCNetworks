@@ -98,6 +98,27 @@ $(document).ready(function() {
     selectAvatar(id, avatar);
   });
 
+  let alertsOff = $("#alerts-off");
+  let alertMinutesBefore = $("#alert-minutes-before");
+  let alertStart = $("#alert-start");
+  let alertEmail = $("#alert-email");
+  let alertWeb = $("#alert-web");
+  let alerts = [alertMinutesBefore, alertStart, alertEmail, alertWeb];
+  alertsOff.click(function() {
+    if (alertsOff.is(":checked")) {
+      let i = alerts.length;
+      for (i = 0; i < alerts.length; i++) {
+        alerts[i].prop("checked", false);
+      }
+    }
+  });
+
+  $("#alert-button").click(function() {
+    let alertBeforeVal = $("#alert-minutes-before:checked").val();
+
+    console.log(alertBeforeVal);
+  });
+
   /*End Serivce - USER */
 
   /*Mostrar u ocultar password de registro o login */
@@ -183,7 +204,9 @@ $(document).ready(function() {
             <p class="tooltip-text ml-3">Cerrar Sesión</p>
           </div>
         </div>
-        <img src="./images/menu/icon-white-user.svg"  />
+        <div id="image-user-container">
+          
+        </div>
       </div>
 
       <p class="name-user mr-3">${userName}</p>
@@ -220,6 +243,23 @@ $(document).ready(function() {
   });
 
   loginCountry.attr("src", sessionSrc);
+
+  let avatar = localStorage.getItem("avatar");
+  let imageUserContainer = $("#image-user-container");
+
+  if (avatar) {
+    imageUserContainer.html(`
+    <div class="image-user">
+      <img src="${avatar}" />
+    </div>
+    `);
+  } else {
+    imageUserContainer.html(`
+    <div class="image-user">
+      <img src="./images/menu/icon-white-user.svg" />
+    </div>
+    `);
+  }
 
   /* Hacer aparecer el tooltip */
 

@@ -43,10 +43,10 @@
     <div>
       <nav class="menu-perfil">
         <div class="nav-content">
-          <div class="claro-logo">
+          <div class="claro-logo text-center">
             <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
 
-            <img class="logo" src="./images/alertas/claro-networks.svg" />
+            <a href="home.php"><img class="logo" src="./images/alertas/claro-networks.svg" /></a>
           </div>
 
           <div class="login">
@@ -62,7 +62,7 @@
         <div class="claro-logo">
           <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
 
-          <img class="logo" src="./images/home/claro-logo.svg" />
+          <a href="index.php"><img class="logo" src="./images/home/claro-logo.svg" /></a>
         </div>
 
         <div class="user-options"></div>

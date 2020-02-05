@@ -2,24 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>Alertas</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <?php include './views/partials/preload.php' ?>
-        <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="./fonts/Montserrat-Regular/Montserrat-Regular.woff2">
-        <link rel="shortcut icon" type="image/png" href="./images/favicon/claro-fav.png" />
-        <link rel="stylesheet" href="./styles/bootstrap-4.4.1/bootstrap.min.css" />
-        <link rel="stylesheet" href="./styles/style.css" />
-        <link rel="stylesheet" href="./slick-master/slick/slick.css" />
-        <link rel="stylesheet" href="./slick-master/slick/slick-theme.css" />
-        <script src="./js/lib/jquery-3.4.1.min.js"></script>
-        <script src="slick-master/slick/slick.js"></script>
-        <script src="./js/jquery.browser.js"></script>
-        <script src="./js/lib/rellax.js"></script>
-        <script src="./js/main.js" type="module"></script>
+        <?php include './views/partials/head.php' ?>
 </head>
 
 
@@ -98,49 +81,55 @@
 
         </header>
 
-        <div class="alertas-container">
-                <div class="col-sm-12 mx-auto no-gutters col-md-6 no-gutters col-lg-4 col-xl-3 shadow1 fondolog">
+        <div class="alertas-container no-gutters">
+                <div class="col-sm-12 mx-auto no-gutters col-md-6 no-gutters col-lg-4 col-xl-4 alertas-content shadow1 fondolog">
                         <img src="images/registro/group-10.svg" class="ubicacion5" />
                         <img src="images/config/puntos.svg" class="ubicacionpuntos">
-                        <br><br><br>
-                        <div class="col-10 col-sm-8 col-md-8 col-lg-9 col-xl-9 mx-auto">
-                                <div class="row ma-no centro">
+
+                        <div class="col-10 col-sm-8 col-md-8 col-lg-9 col-xl-10 mx-auto pt-5">
+                                <div class="row ma-no centro pb-5">
                                         <div class="col-sm-12 no-gap">
                                                 <div class="centro">
                                                         <p class="titulos-configuraciones"> Alertas </p>
                                                 </div>
                                         </div>
                                 </div>
-                                <br>
-                                <br>
-                                <br>
-                                <div class="row ma-no centro">
+
+                                <div class="row ma-no centro pb-5">
                                         <div class="col-sm-12 no-gap">
                                                 <div class="centro d-flex justify-content-between">
-                                                        <p class="texto-alert"> Desactivar todas las alertas </p>
-                                                        <label class="switch-alert">
-                                                                <input type="checkbox">
-                                                                <span class="slideralert roundalert"></span>
+                                                        <p class="texto-alert alert-text"> Desactivar todas las alertas </p>
+                                                        <div class="d-flex align-items-center position-absolute alert-switch-container">
+                                                                <span class="texto-alert span-alert-left">No</span>
+                                                                <label class="switch-alert mr-2 ml-2">
+                                                                        <input type="checkbox" class="alert-checkbox" value="1" id="alerts-off">
+                                                                        <span class="slideralert roundalert"></span>
 
-                                                        </label>
+                                                                </label>
+                                                                <span class="texto-alert span-alert-right">Sí</span>
+                                                        </div>
                                                 </div>
                                         </div>
                                 </div>
-                                <div class="row ma-no centro">
+
+                                <div class="row ma-no centro pb-5">
                                         <div class="col-sm-12 no-gap">
                                                 <div class="centro d-flex justify-content-between">
-                                                        <p class="texto-alert"> Alertar antes </p>
-                                                        <label class="switch-alert">
-                                                                <input type="checkbox">
-                                                                <span class="slideralert roundalert"></span>
+                                                        <p class="texto-alert alert-text"> Alertar minutos antes </p>
+                                                        <div class="d-flex align-items-center position-absolute alert-switch-container">
+                                                                <span class="text-center texto-alert span-alert-left"> 15<br> min</span>
+                                                                <label class="switch-alert mr-2 ml-2">
+                                                                        <input type="checkbox" class="alert-checkbox" value="30" id="alert-minutes-before">
+                                                                        <span class="slideralert roundalert"></span>
 
-                                                        </label>
+                                                                </label>
+                                                                <span class="text-center texto-alert span-alert-right"> 30<br> min</span>
+                                                        </div>
+
                                                 </div>
                                         </div>
                                 </div>
-                                <br>
-
-                                <div class="row ma-no centro">
+                                <!--<div class="row ma-no centro">
                                         <div class="w-100">
                                                 <div class="centro">
 
@@ -158,45 +147,62 @@
                                                         </form>
                                                 </div>
                                         </div>
-                                </div>
-                                <br>
+                                </div>-->
 
-                                <div class="row ma-no centro">
+
+                                <div class="row ma-no centro pb-5">
                                         <div class="col-sm-12 no-gap">
                                                 <div class="centro d-flex justify-content-between">
-                                                        <p class="texto-alert"> Alertar cuando inicie el contenido </p>
-                                                        <label class="switch-alert">
-                                                                <input type="checkbox">
-                                                                <span class="slideralert roundalert"></span>
+                                                        <p class="texto-alert alert-text"> Alertar al iniciar </p>
+                                                        <div class="position-absolute d-flex align-items-center alert-switch-container">
+                                                                <span class="texto-alert span-alert-left">No</span>
+                                                                <label class="switch-alert mr-2 ml-2">
+                                                                        <input type="checkbox" class="alert-checkbox" value="1" id="alert-start">
+                                                                        <span class="slideralert roundalert"></span>
 
-                                                        </label>
+                                                                </label>
+                                                                <span class="texto-alert span-alert-right">Sí</span>
+                                                        </div>
+
                                                 </div>
                                         </div>
                                 </div>
-                                <div class="row ma-no centro">
+                                <div class="row ma-no centro pb-5">
                                         <div class="col-sm-12 no-gap">
                                                 <div class="centro d-flex justify-content-between">
-                                                        <p class="texto-alert"> Correo electrónico </p>
-                                                        <label class="switch-alert">
-                                                                <input type="checkbox">
-                                                                <span class="slideralert roundalert"></span>
+                                                        <p class="texto-alert alert-text"> Alertas por correo </p>
+                                                        <div class="position-absolute d-flex align-items-center alert-switch-container">
+                                                                <span class="texto-alert span-alert-left">No</span>
+                                                                <label class="switch-alert mr-2 ml-2">
+                                                                        <input type="checkbox" class="alert-checkbox" value="1" id="alert-email">
+                                                                        <span class="slideralert roundalert"></span>
 
-                                                        </label>
+                                                                </label>
+                                                                <span class="texto-alert span-alert-right">Sí</span>
+                                                        </div>
                                                 </div>
                                         </div>
                                 </div>
                                 <div class="row ma-no centro">
-                                        <div class="col-sm-12 no-gap pb-5">
+                                        <div class="col-sm-12 no-gap pb-5 mb-5">
                                                 <div class="centro d-flex justify-content-between">
-                                                        <p class="texto-alert"> Web </p>
-                                                        <label class="switch-alert">
-                                                                <input type="checkbox">
-                                                                <span class="slideralert roundalert"></span>
+                                                        <p class="texto-alert añert-text"> Alertas por web </p>
+                                                        <div class="position-absolute d-flex align-items-center alert-switch-container">
+                                                                <span class="texto-alert span-alert-left">No</span>
+                                                                <label class="switch-alert mr-3 ml-2">
+                                                                        <input type="checkbox" class="alert-checkbox" value="1" id="alert-web">
+                                                                        <span class="slideralert roundalert"></span>
 
-                                                        </label>
+                                                                </label>
+                                                                <span class="texto-alert span-alert-right">Sí</span>
+                                                        </div>
                                                 </div>
                                         </div>
                                 </div>
+                                <div class="text-center mt-5 pb-5">
+                                        <button type="button" class="form-button-primary" id="alert-button">GUARDAR</button>
+                                </div>
+
                         </div>
 
 

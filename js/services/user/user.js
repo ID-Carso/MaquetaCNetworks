@@ -161,13 +161,21 @@ function selectAvatar(id, src) {
     avatar: src
   };
 
+  console.log(src);
+
   $.ajax({
     type: "POST",
     data: dataUser,
     url: "../../adapters/user.php",
     success: function(result) {
       let json = JSON.parse(result);
-      console.log(json);
+      console.log(dataUser);
+      localStorage.setItem("avatar", json.data.avatar);
+      $("#image-user-container").html(`
+      <div class="image-user">
+        <img src="${json.data.avatar}" />
+      </div>
+      `);
       let modal = $("#mensaje");
       modal.modal("show");
     }
@@ -200,6 +208,8 @@ function registerUser(inputName, inputEmail, inputPassword) {
   });
 }
 
+function updateAlerts(configJson) {}
+
 export {
   sendUserEmail,
   validateTokenPassword,
@@ -208,5 +218,6 @@ export {
   signOut,
   updateDataUser,
   selectAvatar,
-  registerUser
+  registerUser,
+  updateAlerts
 };

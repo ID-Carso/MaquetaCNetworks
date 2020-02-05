@@ -79,7 +79,7 @@
         <header class="home-header">
             <div class="circle-video">
                 <video preload="yes" playsinline autoplay muted loop class="home-video">
-                    <source src="./video/demo.mp4" type="video/mp4" />
+                    <source src="./video/video.mp4" type="video/mp4" />
                 </video>
             </div>
 
@@ -1056,10 +1056,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/nuestra-vision/carousel/01-aprende.jpg" alt="">
                                         </div>
                                         <div class="a-vision-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">APRENDE</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1076,10 +1077,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/nuestra-vision/carousel/02-dress-code.jpg" alt="">
                                         </div>
                                         <div class="a-vision-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">DRESS CODE</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1095,10 +1097,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/nuestra-vision/carousel/03-barra-infantil.jpg" alt="">
                                         </div>
                                         <div class="a-vision-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">BARRA INFANTIL</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1115,10 +1118,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/nuestra-vision/carousel/04-pobre-nino.jpg" alt="">
                                         </div>
                                         <div class="a-vision-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">POBRE NIÑO RICO</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1134,10 +1138,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/nuestra-vision/carousel/05-caja-pandora.jpg" alt="">
                                         </div>
                                         <div class="a-vision-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">LA CAJA DE PANDORA: ALEX AGUINAGA</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1152,10 +1157,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/nuestra-vision/carousel/06-el-torito.jpg" alt="">
                                         </div>
                                         <div class="a-vision-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">EL TORITO</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1170,10 +1176,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/nuestra-vision/carousel/07-la-estatua.jpg" alt="">
                                         </div>
                                         <div class="a-vision-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">LA ESTATUA DE CARNE</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1188,29 +1195,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/nuestra-vision/carousel/08-los-leones-del-ring.jpg" alt="">
                                         </div>
                                         <div class="a-vision-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">LOS LEONES DEL RING</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1226,10 +1215,69 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+                                            <img src="./images/nuestra-vision/carousel/09-vidas-extraordinarias.jpg" alt="">
                                         </div>
                                         <div class="a-vision-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                <p class="a-poster-text-white">VIDAS EXTRAORDINARIAS</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/nuestra-vision/carousel/10-titanes-del-ring.jpg" alt="">
+                                        </div>
+                                        <div class="a-vision-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">TITANES DEL RING</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/nuestra-vision/carousel/12-deportes-en-claro.jpg" alt="">
+                                        </div>
+                                        <div class="a-vision-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">DEPORTES EN CLARO</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/nuestra-vision/carousel/13-santo.jpg" alt="">
+                                        </div>
+                                        <div class="a-vision-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">SANTO CONTRA LA MAFÍA DEL VICIO</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1251,6 +1299,7 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
+
                                         </div>
                                         <div class="a-sports-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">

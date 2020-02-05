@@ -182,3 +182,12 @@
   max-width: 550px;
   margin: auto;
 }
+
+.alertas-content {
+  max-width: 455px !important;
+}
+.alert-switch-container {
+  position: absolute;
+  left: 97%;
+  transform: translate(-97%, 0px);
+}

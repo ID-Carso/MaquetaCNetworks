@@ -377,7 +377,7 @@ h6 {
 
 .footer-title-claro {
   font-size: 24px;
-  color: #e1261c;
+  color: #da291c;
   font-family: "Montserrat-Black";
 }
 
@@ -777,7 +777,7 @@ h6 {
 
 .a-today-claro-title span,
 .a-today-cinema-title span {
-  color: #e1261c;
+  color: #da291c;
 }
 
 .a-next-claro-title,
@@ -1215,7 +1215,6 @@ h6 {
 
 .texto-alert {
   font-family: "Montserrat-Regular";
-  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -1223,6 +1222,21 @@ h6 {
   letter-spacing: normal;
   color: #666262;
   text-align: initial;
+  margin-bottom: 0;
+}
+
+.alert-text {
+  font-size: 19px;
+}
+
+.span-alert-right {
+  position: absolute;
+  left: 100%;
+}
+
+.span-alert-left {
+  position: absolute;
+  right: 100%;
 }
 
 .titulos-configuraciones {
@@ -1290,7 +1304,7 @@ h6 {
 .programacion-main-title {
   padding: 30px 0;
   font-family: "Montserrat-Black";
-  color: #e1261c;
+  color: #da291c;
   margin-bottom: 0;
   text-align: center;
   text-transform: uppercase;
@@ -1463,7 +1477,6 @@ h6 {
   letter-spacing: normal;
   color: #ff0007;
   margin-top: 3%;
-  text-align: center;
 }
 
 /*Tamaño de textos - responsive*/
@@ -1790,7 +1803,7 @@ h6 {
 }
 
 .a-claro-rectangle {
-  background: #e1261c;
+  background: #da291c;
 }
 
 .a-vision-rectangle {
@@ -2424,6 +2437,20 @@ h6 {
   max-width: 150px;
 }
 
+.image-user {
+  width: 35px;
+  height: 35px;
+}
+
+.image-user img {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  border-radius: 35px;
+}
+
 .hr1 {
   display: none;
 }
@@ -2780,6 +2807,7 @@ input::-webkit-credentials-auto-fill-button {
     min-height: 100%;*/
   right: 0;
   top: 0;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -2813,6 +2841,7 @@ input::-webkit-credentials-auto-fill-button {
 .border-config {
   border-bottom: solid 1px #a6a8a8;
   margin-bottom: 0;
+  width: 100%;
 }
 
 /* Tag image */
@@ -4663,6 +4692,17 @@ input[type="radio"]:checked + .mujer-estilo {
   margin: auto;
 }
 
+.alertas-content {
+  max-width: 455px !important;
+}
+
+.alert-switch-container {
+  position: absolute;
+  left: 97%;
+  -webkit-transform: translate(-97%, 0px);
+          transform: translate(-97%, 0px);
+}
+
 .schedule-poster {
   width: 50%;
   margin-right: 5%;
@@ -4748,7 +4788,7 @@ input[type="radio"]:checked + .mujer-estilo {
 
 /*Canal Claro*/
 .next-week-claro {
-  background: #e1261c;
+  background: #da291c;
   margin-bottom: 30px;
 }
 

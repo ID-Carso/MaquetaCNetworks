@@ -80,7 +80,7 @@
           <div class="claro-logo text-center">
             <img class="menu-responsive" src="./images/home/responsive-menu.svg" />
 
-            <img class="logo" src="./images/alertas/claro-networks.svg" />
+            <a href="home.php"><img class="logo" src="./images/alertas/claro-networks.svg" /></a>
           </div>
 
           <div class="login">
