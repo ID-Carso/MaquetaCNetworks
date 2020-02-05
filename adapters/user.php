@@ -1,4 +1,36 @@
 <?php
+
+class Console
+{
+    /**
+     * @param string $name Nombre único para poder ejecutar esto varias veces en el mismo documento
+     * @param mixed $var Una variable cadena, objeto, matriz o lo que sea
+     * @param string $type (debug|info|warn|error)
+     * @return html
+     */
+    public static function log($name, $var, $type = 'debug')
+    {
+        $name = preg_replace('/[^A-Z|0-9]/i', '_', $name);
+        $types = array('debug', 'info', 'warn', 'error');
+        if (!in_array($type, $types)) $type = 'debug';
+        $s = '<script>' . PHP_EOL;
+        if (is_object($var) or is_array($var)) {
+            $object = json_encode($var);
+            $object = str_replace("'", "\'", $object);
+            $s .= "var object$name = '$object';" . PHP_EOL;
+            $s .= "var val$name = eval('('+object$name+')');" . PHP_EOL;
+            $s .= "console.$type(val$name);" . PHP_EOL;
+        } else {
+            $var = str_replace('"', '\\"', $var);
+            $s .= "console.$type($var);" . PHP_EOL;
+        }
+        $s .= '</script>' . PHP_EOL;
+        return $s;
+    }
+}
+
+
+
 class User
 {
     private static $instance = NULL;
@@ -51,6 +83,11 @@ class User
     function sendEmail($id)
     {
         callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/mail/" . $id . "", null);
+    }
+
+    function updateAlerts($data)
+    {
+        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/config_notification", $data);
     }
 }
 
@@ -133,5 +170,14 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             echo ($data);
             $user = User::getUserInstance();
             echo ($user->sendEmail($data));
+
+        case 'updateAlerts':
+
+            $data = $_POST['data'];
+            json_decode($data, true);
+            $dataJson = json_encode($data);
+            echo Console::log('JSON: ', $data);
+            $user = User::getUserInstance();
+            echo ($user->updateAlerts($dataJson));
     }
 }

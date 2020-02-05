@@ -116,7 +116,7 @@
     right: -8px;
     top: -8px;
     z-index: 1;
-    background: rgba(97, 109, 113, 0.7);
+    //background: rgba(97, 109, 113, 0.7);
     padding: 8px;
     border-radius: 30px;
   }
@@ -1306,7 +1306,7 @@
     right: 0px;
     top: 0px;
     z-index: 1;
-    background: rgba(97, 109, 113, 0.7);
+   // background: rgba(97, 109, 113, 0.7);
     padding: 8px;
     border-radius: 30px;
   }
@@ -2705,7 +2705,7 @@
     right: -8px;
     top: -8px;
     z-index: 1;
-    background: rgba(97, 109, 113, 0.7);
+    //background: rgba(97, 109, 113, 0.7);
     padding: 8px;
     border-radius: 30px;
   }
@@ -2777,6 +2777,11 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .image-user {
+    width: 35px;
+    height: 35px;
   }
 
   /*End Generales - átomos*/
@@ -4134,7 +4139,7 @@
     right: -8px;
     top: -8px;
     z-index: 1;
-    background: rgba(97, 109, 113, 0.7);
+    //background: rgba(97, 109, 113, 0.7);
     padding: 8px;
     border-radius: 30px;
   }
@@ -4211,6 +4216,11 @@
     box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 15px;
     margin-top: 4%;
+  }
+
+  .image-user {
+    width: 35px;
+    height: 35px;
   }
 
   /*End General - Átomos*/

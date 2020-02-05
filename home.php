@@ -93,7 +93,9 @@
                             <img class="logo" src="./images/home/claro-logo.svg" alt="" />
                         </div>
 
-                        <div class="user-options"></div>
+                        <div class="login">
+                            <a href="index.php" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
+                        </div>
                     </div>
                 </nav>
                 <nav class="menu-desktop">

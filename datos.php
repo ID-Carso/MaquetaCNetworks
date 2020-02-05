@@ -36,43 +36,7 @@
 
 <body class="fondo">
   <header class="datos-header">
-    <div class="hamburguer-menu">
-      <div class="text-center sidebar-header">
-        <img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar" />
-      </div>
-      <div class="sidebar-content">
-        <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
-          <a href="home.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
-        </div>
-        <div class="sidebar-item sidebar-border-bottom">
-          <a href="claro-canal.php" class="sidebar-link"><span class="dropdown-p">Canal
-              Claro</span></a>
-        </div>
-
-        <div class="sidebar-item sidebar-border-bottom">
-          <a class="sidebar-link" href="concert-channel.php"><span class="dropdown-p">Concert
-              Channel</span></a>
-        </div>
-
-        <div class="sidebar-item sidebar-border-bottom">
-          <a class="sidebar-link" href="claro-cinema.php"><span class="dropdown-p">Claro
-              Cinema</span></a>
-        </div>
-
-        <div class="sidebar-item sidebar-border-bottom">
-          <a class="sidebar-link" href="https://www.nuestravision.com.mx/"><span class="dropdown-p">Nuestra
-              Visión</span></a>
-        </div>
-        <div class="sidebar-item sidebar-border-bottom">
-          <a class="sidebar-link" href="claro-sports.html"><span class="dropdown-p">Claro
-              Sports</span></a>
-        </div>
-        <div class="sidebar-item sidebar-border-bottom">
-          <a class="sidebar-link" href="programacion.php"><span class="dropdown-p">Programación</span></a>
-        </div>
-      </div>
-      <button class="invisible-button"></button>
-    </div>
+    <?php include('./views/partials/hamburguer-menu.php') ?>
 
     <div>
       <nav class="menu-perfil">
@@ -99,7 +63,9 @@
           <img class="logo" src="./images/home/claro-logo.svg" />
         </div>
 
-        <div class="user-options"></div>
+        <div class="login">
+          <a href="index.php" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
+        </div>
       </div>
 
     </nav>

@@ -539,6 +539,7 @@
   top: 50%;
   opacity: 0.3;
   transform: translate(0px, -50%);
+  width: 35px;
 }
 
 .sidebar-image-user {
@@ -555,15 +556,15 @@
 }
 
 .image-user {
-  width: 35px;
-  height: 35px;
+  width: 70px;
+  height: 70px;
 }
 
 .image-user img {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  position: absolute;
+
   width: 100%;
   border-radius: 35px;
 }

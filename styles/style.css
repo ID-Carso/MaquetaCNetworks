@@ -1479,6 +1479,12 @@ h6 {
   margin-top: 3%;
 }
 
+.login-text {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -2422,6 +2428,7 @@ h6 {
   opacity: 0.3;
   -webkit-transform: translate(0px, -50%);
           transform: translate(0px, -50%);
+  width: 35px;
 }
 
 .sidebar-image-user {
@@ -2438,15 +2445,14 @@ h6 {
 }
 
 .image-user {
-  width: 35px;
-  height: 35px;
+  width: 70px;
+  height: 70px;
 }
 
 .image-user img {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  position: absolute;
   width: 100%;
   border-radius: 35px;
 }
@@ -2830,10 +2836,6 @@ input::-webkit-credentials-auto-fill-button {
 
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
-.login-item:first-child {
-  margin-right: 10px;
-}
-
 .home-title-link {
   text-decoration: none !important;
 }
@@ -5151,7 +5153,6 @@ input[type="radio"]:checked + .mujer-estilo {
     right: -8px;
     top: -8px;
     z-index: 1;
-    background: rgba(97, 109, 113, 0.7);
     padding: 8px;
     border-radius: 30px;
   }
@@ -6123,7 +6124,6 @@ input[type="radio"]:checked + .mujer-estilo {
     right: 0px;
     top: 0px;
     z-index: 1;
-    background: rgba(97, 109, 113, 0.7);
     padding: 8px;
     border-radius: 30px;
   }
@@ -7258,7 +7258,6 @@ input[type="radio"]:checked + .mujer-estilo {
     right: -8px;
     top: -8px;
     z-index: 1;
-    background: rgba(97, 109, 113, 0.7);
     padding: 8px;
     border-radius: 30px;
   }
@@ -7316,6 +7315,10 @@ input[type="radio"]:checked + .mujer-estilo {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .image-user {
+    width: 35px;
+    height: 35px;
   }
   /*End Generales - átomos*/
   /*-----------------------------*/
@@ -8401,7 +8404,6 @@ input[type="radio"]:checked + .mujer-estilo {
     right: -8px;
     top: -8px;
     z-index: 1;
-    background: rgba(97, 109, 113, 0.7);
     padding: 8px;
     border-radius: 30px;
   }
@@ -8464,6 +8466,10 @@ input[type="radio"]:checked + .mujer-estilo {
             box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 15px;
     margin-top: 4%;
+  }
+  .image-user {
+    width: 35px;
+    height: 35px;
   }
   /*End General - Átomos*/
   /*-----------------------------*/

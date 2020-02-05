@@ -208,7 +208,23 @@ function registerUser(inputName, inputEmail, inputPassword) {
   });
 }
 
-function updateAlerts(configJson) {}
+function updateAlerts(configJson) {
+  let dataUser = {
+    function: "updateAlerts",
+    data: configJson
+  };
+
+  $.ajax({
+    type: "POST",
+    data: dataUser,
+    url: "../../adapters/user.php",
+    success: function(result) {
+      console.log(result);
+      let modal = $("#mensaje");
+      modal.modal("show");
+    }
+  });
+}
 
 export {
   sendUserEmail,

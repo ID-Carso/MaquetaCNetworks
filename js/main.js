@@ -16,6 +16,7 @@ import { signIn } from "./services/user/user.js";
 import { signOut } from "./services/user/user.js";
 import { updateDataUser } from "./services/user/user.js";
 import { selectAvatar } from "./services/user/user.js";
+import { updateAlerts } from "./services/user/user.js";
 
 var programacion_slider;
 var tvConcertSlider;
@@ -106,17 +107,56 @@ $(document).ready(function() {
   let alerts = [alertMinutesBefore, alertStart, alertEmail, alertWeb];
   alertsOff.click(function() {
     if (alertsOff.is(":checked")) {
-      let i = alerts.length;
-      for (i = 0; i < alerts.length; i++) {
-        alerts[i].prop("checked", false);
+      let alertsLength = alerts.length;
+      for (i = 0; i < alertsLength; i++) {
+        alerts[i].prop({ checked: false, disabled: true });
+      }
+    } else {
+      let alertsLength = alerts.length;
+      for (i = 0; i < alertsLength; i++) {
+        alerts[i].prop("disabled", false);
       }
     }
   });
 
   $("#alert-button").click(function() {
-    let alertBeforeVal = $("#alert-minutes-before:checked").val();
+    let alertsOffVal = $("#alerts-off:checked").val();
+    let alertMinutesBeforeVal = $("#alert-minutes-before:checked").val();
+    let alertStartVal = $("#alert-start:checked").val();
+    let alertEmailVal = $("#alert-email:checked").val();
+    let alertWebVal = $("#alert-web:checked").val();
 
-    console.log(alertBeforeVal);
+    if (!alertsOffVal) {
+      alertsOffVal = 0;
+    }
+
+    if (!alertMinutesBeforeVal) {
+      alertMinutesBeforeVal = 15;
+    }
+    if (!alertStartVal) {
+      alertStartVal = 0;
+    }
+
+    if (!alertEmailVal) {
+      alertEmailVal = 0;
+    }
+
+    if (!alertWebVal) {
+      alertWebVal = 0;
+    }
+
+    let userId = localStorage.getItem("id");
+
+    let configJson = {
+      user_id: userId,
+      desactivate: alertsOffVal,
+      minutes: alertMinutesBeforeVal,
+      beginning: alertStartVal,
+      email: alertEmailVal,
+      web: alertWebVal
+    };
+
+    updateAlerts(configJson);
   });
 
   /*End Serivce - USER */
@@ -194,7 +234,30 @@ $(document).ready(function() {
 
   if (session == 1) {
     let userOptions = $(".user-options");
+    let sidebarHeader = $(".sidebar-header");
     let userName = localStorage.getItem("name");
+    let avatar;
+
+    if (localStorage.getItem("avatar")) {
+      avatar = `<img src="${localStorage.getItem("avatar")}" />`;
+    } else {
+      avatar = `<img src="./images/menu/icon-white-user.svg" />`;
+    }
+
+    let menuMobile = `            
+      <div class="d-flex align-items-center">
+        <div class="image-user mr-3">
+            ${avatar}
+        </div>
+
+        <div class="d-flex flex-column justify-contet-between">
+            <p class="a-text-white-bold login-text">${userName}</p>
+            <div>
+                <a href="mi-lista.php"><img class="mr-3 options-item" src="./images/menu/mi-lista-icon.png" alt="" /></a>
+                <a href="configuracion.php"><img class="options-item" src="./images/menu/configuracion-icon.png" alt="" /></a>
+            </div>
+        </div>
+      </div>`;
     let menuIngreso = `
       <div class="menu-ingreso">
       <div class="icon-user position-relative mr-3">
@@ -205,7 +268,9 @@ $(document).ready(function() {
           </div>
         </div>
         <div id="image-user-container">
-          
+          <div class="image-user">
+          ${avatar}
+          </div>
         </div>
       </div>
 
@@ -215,15 +280,29 @@ $(document).ready(function() {
       <a href="index.php" class="login-item options-item"><img class="login-country" src="" alt="" /></a>
       </div>
       `;
+    sidebarHeader.html(menuMobile);
     userOptions.html(menuIngreso);
   } else {
-    let userOptions = $(".user-options");
     let menuBase = `    
     <div class="login">
       <a href="login.php" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
       <a href="index.php" class="login-item"><img class="login-country" src="" alt="" /></a>
     </div>`;
+    let userOptions = $(".user-options");
+    let sidebarHeader = $(".sidebar-header");
+    let menuBaseMobile = `            
+    <div class="d-flex alig-items-center">
+      <div class="image-user mr-3">
+          <a href="login.php"><img src="./images/menu/icon-white-user.svg" alt=""></a>
+      </div>
+
+      <div>
+          <p class="a-text-white-bold login-text">ingresar</p>
+      </div>
+    </div>`;
+
     userOptions.html(menuBase);
+    sidebarHeader.html(menuBaseMobile);
   }
 
   var sessionSrc = localStorage.getItem("src");
@@ -243,23 +322,6 @@ $(document).ready(function() {
   });
 
   loginCountry.attr("src", sessionSrc);
-
-  let avatar = localStorage.getItem("avatar");
-  let imageUserContainer = $("#image-user-container");
-
-  if (avatar) {
-    imageUserContainer.html(`
-    <div class="image-user">
-      <img src="${avatar}" />
-    </div>
-    `);
-  } else {
-    imageUserContainer.html(`
-    <div class="image-user">
-      <img src="./images/menu/icon-white-user.svg" />
-    </div>
-    `);
-  }
 
   /* Hacer aparecer el tooltip */
 

@@ -8,48 +8,12 @@
 
 <body class="fondo">
         <header class="alertas-header">
-                <div class="hamburguer-menu">
-                        <div class="text-center sidebar-header">
-                                <img src="./images/menu/claro-networks-sidebar.svg" alt="" class="logo-sidebar" />
-                        </div>
-                        <div class="sidebar-content">
-                                <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
-                                        <a href="home.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
-                                </div>
-                                <div class="sidebar-item sidebar-border-bottom">
-                                        <a href="claro-canal.php" class="sidebar-link"><span class="dropdown-p">Canal
-                                                        Claro</span></a>
-                                </div>
-
-                                <div class="sidebar-item sidebar-border-bottom">
-                                        <a class="sidebar-link" href="concert-channel.php"><span class="dropdown-p">Concert
-                                                        Channel</span></a>
-                                </div>
-
-                                <div class="sidebar-item sidebar-border-bottom">
-                                        <a class="sidebar-link" href="claro-cinema.php"><span class="dropdown-p">Claro
-                                                        Cinema</span></a>
-                                </div>
-
-                                <div class="sidebar-item sidebar-border-bottom">
-                                        <a class="sidebar-link" href="https://www.nuestravision.com.mx/"><span class="dropdown-p">Nuestra
-                                                        Visión</span></a>
-                                </div>
-                                <div class="sidebar-item sidebar-border-bottom">
-                                        <a class="sidebar-link" href="claro-sports.html"><span class="dropdown-p">Claro
-                                                        Sports</span></a>
-                                </div>
-                                <div class="sidebar-item sidebar-border-bottom">
-                                        <a class="sidebar-link" href="programacion.php"><span class="dropdown-p">Programación</span></a>
-                                </div>
-                        </div>
-                        <button class="invisible-button"></button>
-                </div>
+                <?php include('./views/partials/hamburguer-menu.php') ?>
 
                 <div>
                         <nav class="menu-perfil">
                                 <div class="nav-content">
-                                        <div class="claro-logo">
+                                        <div class="claro-logo text-center">
                                                 <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
 
                                                 <img class="logo" src="./images/alertas/claro-networks.svg" alt="" />
@@ -71,7 +35,9 @@
                                         <img class="logo" src="./images/home/claro-logo.svg" alt="" />
                                 </div>
 
-                                <div class="user-options"></div>
+                                <div class="login">
+                                        <a href="index.php" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
+                                </div>
                         </div>
 
                 </nav>
@@ -87,7 +53,7 @@
                         <img src="images/config/puntos.svg" class="ubicacionpuntos">
 
                         <div class="col-10 col-sm-8 col-md-8 col-lg-9 col-xl-10 mx-auto pt-5">
-                                <div class="row ma-no centro pb-5">
+                                <div class="row ma-no centro pb-5 pt-5 pt-md-0">
                                         <div class="col-sm-12 no-gap">
                                                 <div class="centro">
                                                         <p class="titulos-configuraciones"> Alertas </p>
@@ -186,7 +152,7 @@
                                 <div class="row ma-no centro">
                                         <div class="col-sm-12 no-gap pb-5 mb-5">
                                                 <div class="centro d-flex justify-content-between">
-                                                        <p class="texto-alert añert-text"> Alertas por web </p>
+                                                        <p class="texto-alert alert-text"> Alertas por web </p>
                                                         <div class="position-absolute d-flex align-items-center alert-switch-container">
                                                                 <span class="texto-alert span-alert-left">No</span>
                                                                 <label class="switch-alert mr-3 ml-2">
@@ -208,6 +174,26 @@
 
 
 
+                </div>
+        </div>
+        <div class="modal fade " id="mensaje" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content modal-estilo">
+
+
+                                <div class="modal-body txtcontenido">
+                                        <img src="./images/datos-adicionales/success.svg" />
+                                        <span class="mensaje">Alertas guardadas
+                                                exitosamente</span>
+                                </div>
+                                <div class="modal-footer" style="border-top:none !important; justify-content: center;">
+
+                                        <button type="button" class="form-button-primary" id="modal-button" data-dismiss="modal">ENTENDIDO</button>
+
+
+                                </div>
+
+                        </div>
                 </div>
         </div>
 

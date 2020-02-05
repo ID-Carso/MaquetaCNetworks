@@ -69,8 +69,9 @@
                     <a href="home.php"><img class="logo" src="./images/logos/claro-networks-white.svg" /></a>
                 </div>
 
-                <div class="user-options">
-                </div>
+                <div class="login">
+                            <a href="index.php" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
+                        </div>
             </div>
             <div class="claro-navbar">
                 <div>

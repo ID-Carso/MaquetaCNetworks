@@ -7,45 +7,51 @@
 
 <body>
   <header class="claro-canal-header">
-    <div class="hamburguer-menu">
+  <div class="hamburguer-menu">
       <div class="text-center sidebar-header">
 
       </div>
-      <div class="sidebar-content">
+      <a href="home.php" class="sidebar-link">
         <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
-          <a href="home.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
+          <span class="dropdown-p">Inicio</span>
         </div>
-        <div class="sidebar-item sidebar-border-bottom">
-          <span class="dropdown-p active-sidebar-item">Canal Claro</span>
-        </div>
+      </a>
+      <div class="sidebar-content">
+        
+          <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
+           <span class="dropdown-p active-sidebar-item">Canal Claro</span>
+          </div>
+
+     
         <!--<div class="dropdown-content">
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-            </div>-->
+                <p class="dropdown-p">ebñrkjg</p>
+                <p class="dropdown-p">ebñrkjg</p>
+                <p class="dropdown-p">ebñrkjg</p>
+              </div>-->
         <a class="sidebar-link" href="concert-channel.php">
           <div class="sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Concert Channel</span>
           </div>
         </a>
         <!--<div class="dropdown-content">
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-            </div>-->
-        <a class="sidebar-link" href="claro-cinema.php">
+                <p class="dropdown-p">ebñrkjg</p>
+                <p class="dropdown-p">ebñrkjg</p>
+                <p class="dropdown-p">ebñrkjg</p>
+              </div>-->
+              <a class="sidebar-link" href="claro-cinema.php">
           <div class="sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Claro Cinema</span>
           </div>
         </a>
         <!--<div class="dropdown-content">
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-            </div>-->
+                <p class="dropdown-p">ebñrkjg</p>
+                <p class="dropdown-p">ebñrkjg</p>
+                <p class="dropdown-p">ebñrkjg</p>
+              </div>-->
         <a class="sidebar-link" href="nuestra-vision.php">
           <div class="sidebar-item sidebar-border-bottom">
-            <span class="dropdown-p">Nuestra Visión</span>
+            <span class="dropdown-p">Nuestra
+              Visión</span>
           </div>
         </a>
         <a class="sidebar-link" href="claro-sports.php">
@@ -82,7 +88,9 @@
 
           </div>
 
-          <div class="user-options"></div>
+          <div class="login">
+                            <a href="index.php" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
+                        </div>
         </div>
       </nav>
       <?php
