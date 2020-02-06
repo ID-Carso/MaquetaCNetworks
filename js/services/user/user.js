@@ -82,6 +82,7 @@ function signIn(email, password) {
       "",
 
     success: function(result) {
+      console.log(result);
       if (result.data) {
         location.href =
           "http://www.claronetworks.openofficedospuntocero.info/home.php";

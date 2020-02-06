@@ -291,7 +291,7 @@ $(document).ready(function() {
   } else {
     let menuBase = `    
     <div class="login">
-      <a href="login.php" class="login-item"><img src="./images/home/user-login.svg" alt="" /></a>
+      <a href="login.php" class="login-item mr-2"><img src="./images/home/user-login.svg" alt="" /></a>
       <a href="index.php" class="login-item"><img class="login-country" src="" alt="" /></a>
     </div>`;
     let userOptions = $(".user-options");

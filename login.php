@@ -39,8 +39,11 @@
             <div class="row ma-no centro">
               <div class=" col-sm-12 no-gap">
                 <div class="tamaño2 centro">
-                  <input class="insert-data input-password" type="password" id="login-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
-                  <img src="images/registro/eye.svg" class="icon-eye" />
+                  <div class="position-relative">
+                    <input class="insert-data input-password" type="password" id="login-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
+                    <img src="images/registro/eye.svg" class="icon-eye" />
+                  </div>
+
 
                   <p class="caracteres-min">
                     8 caractéres mínimo
@@ -76,7 +79,7 @@
           <br />
           <div class="row ma-no centro">
             <div class="col-sm-12 col-md-12 col-lg-12">
-              <a href="re-password.html">
+              <a href="re-password.php">
                 <p class="contra">¿Olvidaste la contraseña?</p>
               </a>
               <hr class="log" />
