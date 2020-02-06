@@ -233,6 +233,11 @@ $(document).ready(function() {
   console.log(session);
 
   if (session == 1) {
+    var sidebarContent = $(".sidebar-content");
+    var sidebarItem = `                
+    <div class="sidebar-item sidebar-border-bottom" id="sidebar-logout">
+      <span class="dropdown-p" >Cerrar sesión</span>
+    </div>`;
     let userOptions = $(".user-options");
     let sidebarHeader = $(".sidebar-header");
     let userName = localStorage.getItem("name");
@@ -280,6 +285,7 @@ $(document).ready(function() {
       <a href="index.php" class="login-item options-item"><img class="login-country" src="" alt="" /></a>
       </div>
       `;
+    sidebarContent.append(sidebarItem);
     sidebarHeader.html(menuMobile);
     userOptions.html(menuIngreso);
   } else {
@@ -323,6 +329,12 @@ $(document).ready(function() {
 
   loginCountry.attr("src", sessionSrc);
 
+  /*if (sidebarItem) {
+    sidebarItem.click(function() {
+      console.log("Cerrando sesión");
+    });
+  }*/
+
   /* Hacer aparecer el tooltip */
 
   $(".icon-user").click(function() {
@@ -333,6 +345,13 @@ $(document).ready(function() {
   $(document).on("click", function(e) {
     let container = $(".icon-user");
     let tooltipLogout = $(".tooltip-logout");
+    let sidebarLogout = $("#sidebar-logout");
+
+    if (sidebarLogout) {
+      sidebarLogout.click(function() {
+        signOut();
+      });
+    }
 
     if (!container.is(e.target) && container.has(e.target).length === 0) {
       tooltipLogout.css("display", "none");

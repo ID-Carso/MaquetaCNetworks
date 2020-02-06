@@ -102,8 +102,7 @@ function signIn(email, password) {
 
 function signOut() {
   location.reload();
-  localStorage.removeItem("name");
-  localStorage.setItem("session", 0);
+  localStorage.clear();
 }
 
 function updateDataUser(id, gender, date, country) {
