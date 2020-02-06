@@ -116,7 +116,7 @@
     right: -8px;
     top: -8px;
     z-index: 1;
-    //background: rgba(97, 109, 113, 0.7);
+    background: rgba(97, 109, 113, 0.7);
     padding: 8px;
     border-radius: 30px;
   }
@@ -1306,7 +1306,7 @@
     right: 0px;
     top: 0px;
     z-index: 1;
-   // background: rgba(97, 109, 113, 0.7);
+   background: rgba(97, 109, 113, 0.7);
     padding: 8px;
     border-radius: 30px;
   }
@@ -2705,7 +2705,7 @@
     right: -8px;
     top: -8px;
     z-index: 1;
-    //background: rgba(97, 109, 113, 0.7);
+    background: rgba(97, 109, 113, 0.7);
     padding: 8px;
     border-radius: 30px;
   }
@@ -3158,7 +3158,12 @@
 
   .avatar-header {
     .menu-tablet {
+      display: none;
+    }
+
+    .menu-desktop{
       display: block;
+      position: static;
     }
   }
 
@@ -4139,7 +4144,7 @@
     right: -8px;
     top: -8px;
     z-index: 1;
-    //background: rgba(97, 109, 113, 0.7);
+    background: rgba(97, 109, 113, 0.7);
     padding: 8px;
     border-radius: 30px;
   }
@@ -5173,7 +5178,12 @@
 
   .avatar-header {
     .menu-tablet {
+      display: none;
+    }
+
+    .menu-desktop{
       display: block;
+      position: static;
     }
   }
 

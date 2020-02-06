@@ -10,38 +10,24 @@
     <?php include('./views/partials/hamburguer-menu.php') ?>
 
     <div>
-      <nav class="menu-perfil">
-        <div class="nav-content">
-          <div class="claro-logo text-center">
-            <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
+      <?php include('./views/partials/menu-perfil.php') ?>
 
-            <a href="home.php"><img class="logo" src="./images/alertas/claro-networks.svg" alt="" /></a>
+      <nav class="menu-tablet" style="    padding: calc(3% + 4px) calc(8% - 10px) 0px calc(8% - 10px);">
+        <div class="nav-content">
+          <div class="claro-logo">
+            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
+
+            <img class="logo" src="./images/home/claro-logo.svg" alt="" />
           </div>
 
           <div class="login">
-            <a href="home.php" class="login-item"><img src="./images/alertas/btn-home.svg" alt="" /></a>
-            <a href="index.php" class="login-item"><img class="login-country" src="" alt="" /></a>
+            <a href="index.php" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
           </div>
         </div>
       </nav>
-    </div>
-
-    <nav class="menu-tablet" style="    padding: calc(3% + 4px) calc(8% - 10px) 0px calc(8% - 10px);">
-      <div class="nav-content">
-        <div class="claro-logo">
-          <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
-
-          <img class="logo" src="./images/home/claro-logo.svg" alt="" />
-        </div>
-
-        <div class="login">
-          <a href="index.php" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
-        </div>
-      </div>
-    </nav>
-    <?php
-    include 'menu-desktop.php';
-    ?>
+      <?php
+      include 'menu-desktop.php';
+      ?>
   </header>
   <div class="configuracion-container py-5">
 

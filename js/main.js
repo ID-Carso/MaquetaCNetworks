@@ -297,7 +297,7 @@ $(document).ready(function() {
     let userOptions = $(".user-options");
     let sidebarHeader = $(".sidebar-header");
     let menuBaseMobile = `            
-    <div class="d-flex alig-items-center">
+    <div class="d-flex align-items-center">
       <div class="image-user mr-3">
           <a href="login.php"><img src="./images/menu/icon-white-user.svg" alt=""></a>
       </div>
@@ -337,9 +337,12 @@ $(document).ready(function() {
 
   /* Hacer aparecer el tooltip */
 
-  $(".icon-user").click(function() {
+  $("#image-user-container").hover(function() {});
+
+  $(".icon-user").hover(function() {
     let tooltipLogout = $(".tooltip-logout");
-    tooltipLogout.toggle();
+    /*tooltipLogout.toggle();*/
+    tooltipLogout.css("display", "block");
   });
 
   $(document).on("click", function(e) {
