@@ -135,7 +135,7 @@
                     </div>
                     <div class="a-cinema-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
-                        <p class="a-poster-text-black">ENCAPUCHADOS</p>
+                        <p class="a-poster-text-white">ENCAPUCHADOS</p>
                       </div>
                     </div>
                   </a>
@@ -155,7 +155,7 @@
                     </div>
                     <div class="a-cinema-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
-                        <p class="a-poster-text-black">MUÑECA REINA</p>
+                        <p class="a-poster-text-white">MUÑECA REINA</p>
                       </div>
                     </div>
                   </a>
@@ -174,7 +174,7 @@
                     </div>
                     <div class="a-cinema-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
-                        <p class="a-poster-text-black">LA NIÑA DE MIS OJOS</p>
+                        <p class="a-poster-text-white">LA NIÑA DE MIS OJOS</p>
                       </div>
                     </div>
                   </a>
@@ -193,7 +193,7 @@
                     </div>
                     <div class="a-cinema-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
-                        <p class="a-poster-text-black">CHANOC</p>
+                        <p class="a-poster-text-white">CHANOC</p>
                       </div>
                     </div>
                   </a>
@@ -212,7 +212,7 @@
                     </div>
                     <div class="a-cinema-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
-                        <p class="a-poster-text-black">PALABRA DE CINEA</p>
+                        <p class="a-poster-text-white">PALABRA DE CINEA</p>
                       </div>
                     </div>
                   </a>
@@ -231,7 +231,7 @@
                     </div>
                     <div class="a-cinema-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
-                        <p class="a-poster-text-black">LA CULPA DE LOS HOMBRES</p>
+                        <p class="a-poster-text-white">LA CULPA DE LOS HOMBRES</p>
                       </div>
                     </div>
                   </a>
@@ -250,7 +250,7 @@
                     </div>
                     <div class="a-cinema-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
-                        <p class="a-poster-text-black">CUANDO SE QUIERE, SE QUIERE</p>
+                        <p class="a-poster-text-white">CUANDO SE QUIERE, SE QUIERE</p>
                       </div>
                     </div>
                   </a>
@@ -269,7 +269,7 @@
                     </div>
                     <div class="a-cinema-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
-                        <p class="a-poster-text-black">EL SUPERFLACO</p>
+                        <p class="a-poster-text-white">EL SUPERFLACO</p>
                       </div>
                     </div>
                   </a>
@@ -288,7 +288,7 @@
                     </div>
                     <div class="a-cinema-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
-                        <p class="a-poster-text-black">EL DETECTIVE</p>
+                        <p class="a-poster-text-white">EL DETECTIVE</p>
                       </div>
                     </div>
                   </a>
@@ -322,7 +322,7 @@
                   </div>
                   <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
-                      <p class="a-poster-text-black">
+                      <p class="a-poster-text-white">
                         ¿QUÉ TE HA DADO ESA MUJER?
                       </p>
                     </div>
@@ -340,7 +340,7 @@
                   </div>
                   <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
-                      <p class="a-poster-text-black">
+                      <p class="a-poster-text-white">
                         ¿QUÉ TE HA DADO ESA MUJER?
                       </p>
                     </div>
@@ -358,7 +358,7 @@
                   </div>
                   <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
-                      <p class="a-poster-text-black">
+                      <p class="a-poster-text-white">
                         ¿QUÉ TE HA DADO ESA MUJER?
                       </p>
                     </div>
@@ -376,7 +376,7 @@
                   </div>
                   <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
-                      <p class="a-poster-text-black">
+                      <p class="a-poster-text-white">
                         ¿QUÉ TE HA DADO ESA MUJER?
                       </p>
                     </div>
@@ -402,7 +402,7 @@
                     </div>
                     <div class="a-cinema-rectangle">
                       <div class="poster-title-margin">
-                        <p class="a-poster-text-black">
+                        <p class="a-poster-text-white">
                           ¿QUÉ TE HA DADO ESA MUJER?
                         </p>
                       </div>
@@ -421,7 +421,7 @@
                     </div>
                     <div class="a-cinema-rectangle">
                       <div class="poster-title-margin">
-                        <p class="a-poster-text-black">
+                        <p class="a-poster-text-white">
                           ¿QUÉ TE HA DADO ESA MUJER?
                         </p>
                       </div>
@@ -442,7 +442,7 @@
                     </div>
                     <div class="a-cinema-rectangle">
                       <div class="poster-title-margin">
-                        <p class="a-poster-text-black">
+                        <p class="a-poster-text-white">
                           ¿QUÉ TE HA DADO ESA MUJER?
                         </p>
                       </div>
@@ -461,7 +461,7 @@
                     </div>
                     <div class="a-cinema-rectangle">
                       <div class="poster-title-margin">
-                        <p class="a-poster-text-black">
+                        <p class="a-poster-text-white">
                           ¿QUÉ TE HA DADO ESA MUJER?
                         </p>
                       </div>
@@ -482,7 +482,7 @@
                     </div>
                     <div class="a-cinema-rectangle">
                       <div class="poster-title-margin">
-                        <p class="a-poster-text-black">
+                        <p class="a-poster-text-white">
                           ¿QUÉ TE HA DADO ESA MUJER?
                         </p>
                       </div>
@@ -501,7 +501,7 @@
                     </div>
                     <div class="a-cinema-rectangle">
                       <div class="poster-title-margin">
-                        <p class="a-poster-text-black">
+                        <p class="a-poster-text-white">
                           ¿QUÉ TE HA DADO ESA MUJER?
                         </p>
                       </div>
@@ -529,12 +529,15 @@
           <div class="section-slider cinema-slider">
             <div class="poster">
               <div class="poster-body">
-
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                </div>
                 <div class="thumbnail">
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
-                    <p class="a-poster-text-black">
+                    <p class="a-poster-text-white">
                       ¿QUÉ TE HA DADO ESA MUJER?
                     </p>
                   </div>
@@ -551,7 +554,7 @@
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
-                    <p class="a-poster-text-black">
+                    <p class="a-poster-text-white">
                       ¿QUÉ TE HA DADO ESA MUJER?
                     </p>
                   </div>
@@ -568,7 +571,7 @@
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
-                    <p class="a-poster-text-black">
+                    <p class="a-poster-text-white">
                       ¿QUÉ TE HA DADO ESA MUJER?
                     </p>
                   </div>
@@ -585,7 +588,7 @@
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
-                    <p class="a-poster-text-black">
+                    <p class="a-poster-text-white">
                       ¿QUÉ TE HA DADO ESA MUJER?
                     </p>
                   </div>
@@ -602,7 +605,7 @@
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
-                    <p class="a-poster-text-black">
+                    <p class="a-poster-text-white">
                       ¿QUÉ TE HA DADO ESA MUJER?
                     </p>
                   </div>
@@ -619,7 +622,7 @@
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
-                    <p class="a-poster-text-black">
+                    <p class="a-poster-text-white">
                       ¿QUÉ TE HA DADO ESA MUJER?
                     </p>
                   </div>
@@ -636,7 +639,7 @@
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
-                    <p class="a-poster-text-black">
+                    <p class="a-poster-text-white">
                       ¿QUÉ TE HA DADO ESA MUJER?
                     </p>
                   </div>
@@ -660,12 +663,15 @@
           <div class="section-slider cinema-slider">
             <div class="poster">
               <div class="poster-body">
-
+                <div class="showtime-container">
+                  <p class="a-programming-text">14:30 - 16:30</p>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                </div>
                 <div class="thumbnail">
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
-                    <p class="a-poster-text-black">
+                    <p class="a-poster-text-white">
                       ¿QUÉ TE HA DADO ESA MUJER?
                     </p>
                   </div>
@@ -682,7 +688,7 @@
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
-                    <p class="a-poster-text-black">
+                    <p class="a-poster-text-white">
                       ¿QUÉ TE HA DADO ESA MUJER?
                     </p>
                   </div>
@@ -699,7 +705,7 @@
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
-                    <p class="a-poster-text-black">
+                    <p class="a-poster-text-white">
                       ¿QUÉ TE HA DADO ESA MUJER?
                     </p>
                   </div>
@@ -716,7 +722,7 @@
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
-                    <p class="a-poster-text-black">
+                    <p class="a-poster-text-white">
                       ¿QUÉ TE HA DADO ESA MUJER?
                     </p>
                   </div>
@@ -733,7 +739,7 @@
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
-                    <p class="a-poster-text-black">
+                    <p class="a-poster-text-white">
                       ¿QUÉ TE HA DADO ESA MUJER?
                     </p>
                   </div>
@@ -750,7 +756,7 @@
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
-                    <p class="a-poster-text-black">
+                    <p class="a-poster-text-white">
                       ¿QUÉ TE HA DADO ESA MUJER?
                     </p>
                   </div>

@@ -69,7 +69,7 @@
   </header>
 
   <div style="padding-top: 3%">
-    <div class="col-sm-12 no-gutters col-md-8 offset-md-2 no-gutters col-lg-4 offset-lg-4 col-xl-3 shadow1 fondolog">
+    <div class="col-sm-12 no-gutters col-md-8 mx-auto no-gutters col-lg-4 col-xl-3 shadow1 fondolog">
       <img src="images/registro/group-10.svg" class="ubicacion5" />
       <br /><br /><br />
       <div class="row ma-no centro">
@@ -139,7 +139,7 @@
         <div class="col-sm-12 no-gap">
           <div class="tamaño2 centro ">
             <button type="button" class="acept-button" id="avatar-button">
-              OK
+              GUARDAR
             </button>
           </div>
         </div>

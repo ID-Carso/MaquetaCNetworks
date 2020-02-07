@@ -2278,7 +2278,7 @@
                                 </div>
                                 <div class="a-cinema-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-black">LAS IMPERDIBLES</p>
+                                        <p class="a-poster-text-white">LAS IMPERDIBLES</p>
                                     </div>
                                 </div>
                             </a>
@@ -2297,7 +2297,7 @@
                                 </div>
                                 <div class="a-cinema-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-black">PICARDÍA MEXICANA</p>
+                                        <p class="a-poster-text-white">PICARDÍA MEXICANA</p>
                                     </div>
                                 </div>
                             </a>
@@ -2317,7 +2317,7 @@
                                 </div>
                                 <div class="a-cinema-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-black">RELINCHA CON EL CABALLO ROJAS</p>
+                                        <p class="a-poster-text-white">RELINCHA CON EL CABALLO ROJAS</p>
                                     </div>
                                 </div>
                             </a>
@@ -2337,7 +2337,7 @@
                                 </div>
                                 <div class="a-cinema-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-black">SEXY ROMANTICAS</p>
+                                        <p class="a-poster-text-white">SEXY ROMANTICAS</p>
                                     </div>
                                 </div>
                             </a>
@@ -2379,7 +2379,7 @@
                                     </div>
                                     <div class="a-cinema-rectangle">
                                         <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">LAS IMPERDIBLES</p>
+                                            <p class="a-poster-text-white">LAS IMPERDIBLES</p>
                                         </div>
                                     </div>
                                 </a>
@@ -2398,7 +2398,7 @@
                                     </div>
                                     <div class="a-cinema-rectangle">
                                         <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">PICARDÍA MEXICANA</p>
+                                            <p class="a-poster-text-white">PICARDÍA MEXICANA</p>
                                         </div>
                                     </div>
                                 </a>
@@ -2417,7 +2417,7 @@
                                     </div>
                                     <div class="a-cinema-rectangle">
                                         <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">RELINCHA CON EL CABALLO ROJAS</p>
+                                            <p class="a-poster-text-white">RELINCHA CON EL CABALLO ROJAS</p>
                                         </div>
                                     </div>
                                 </a>
@@ -2437,7 +2437,7 @@
                                 </div>
                                 <div class="a-cinema-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-black">SEXY ROMANTICAS</p>
+                                        <p class="a-poster-text-white">SEXY ROMANTICAS</p>
                                     </div>
                                 </div>
                             </a>
@@ -2492,7 +2492,7 @@
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">LAS IMPERDIBLES</p>
+                                                <p class="a-poster-text-white">LAS IMPERDIBLES</p>
                                             </div>
                                         </div>
                                     </a>
@@ -2510,7 +2510,7 @@
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">PICARDÍA MEXICANA</p>
+                                                <p class="a-poster-text-white">PICARDÍA MEXICANA</p>
                                             </div>
                                         </div>
                                     </a>
@@ -2529,7 +2529,7 @@
                                     </div>
                                     <div class="a-cinema-rectangle thumbnail-info-title">
                                         <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">RELINCHA CON EL CABALO ROJAS</p>
+                                            <p class="a-poster-text-white">RELINCHA CON EL CABALO ROJAS</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2546,7 +2546,7 @@
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">SEXY ROMANTICAS</p>
+                                                <p class="a-poster-text-white">SEXY ROMANTICAS</p>
                                             </div>
                                         </div>
                                     </a>

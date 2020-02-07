@@ -86,10 +86,17 @@ function signIn(email, password) {
       if (result.data) {
         location.href =
           "http://www.claronetworks.openofficedospuntocero.info/home.php";
+        let date = result.data.birthday.split("-");
+        localStorage.setItem("day", date[2]);
+        localStorage.setItem("month", date[1]);
+        localStorage.setItem("year", date[0]);
         localStorage.setItem("session", 1);
         localStorage.setItem("id", result.data.id);
         localStorage.setItem("name", result.data.name);
-        console.log(result);
+        localStorage.setItem("avatar", result.data.avatar);
+        localStorage.setItem("gender", result.data.avatar);
+        localStorage.setItem("birthday", result.data.avatar);
+        localStorage.setItem("src", result.data.country.image);
       } else {
         $(".data-incorrect")
           .text(
@@ -103,7 +110,18 @@ function signIn(email, password) {
 
 function signOut() {
   location.reload();
-  localStorage.clear();
+  location.href = "/home.php";
+  localStorage.removeItem("date");
+  localStorage.removeItem("day");
+  localStorage.removeItem("month");
+  localStorage.removeItem("gender");
+  localStorage.removeItem("session");
+  localStorage.removeItem("avatar");
+  localStorage.removeItem("id");
+  localStorage.removeItem("country");
+  localStorage.removeItem("name");
+  localStorage.removeItem("birthday");
+  localStorage.removeItem("year");
 }
 
 function updateDataUser(id, gender, date, country) {
@@ -129,10 +147,11 @@ function updateDataUser(id, gender, date, country) {
       let month = localStorage.setItem("month", date[1]);
       let year = localStorage.setItem("year", date[0]);
       let birthday = localStorage.setItem("date", json.data.birthday);
-      let country = localStorage.setItem("country", json.data.country);
-
+      let country = localStorage.setItem("country", json.data.country.name);
+      let src = localStorage.setItem("src", json.data.country.image);
       let modal = $("#mensaje");
       modal.modal("show");
+      $(".login-country").prop("src", json.data.country.image);
     }
   });
 }

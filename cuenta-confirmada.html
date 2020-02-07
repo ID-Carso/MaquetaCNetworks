@@ -1,79 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8" />
+    <title>Claro Networks</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      names="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link
+      rel="preload"
+      as="font"
+      crossorigin="crossorigin"
+      type="font/woff2"
+      href="./fonts/Montserrat-Black/Montserrat-Black.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      crossorigin="crossorigin"
+      type="font/woff2"
+      href="./fonts/Montserrat-Bold/Montserrat-Bold.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      crossorigin="crossorigin"
+      type="font/woff2"
+      href="./fonts/Montserrat-Light/Montserrat-Light.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      crossorigin="crossorigin"
+      type="font/woff2"
+      href="./fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      crossorigin="crossorigin"
+      type="font/woff2"
+      href="./fonts/Montserrat-Regular/Montserrat-Regular.woff2"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./images/favicon/claro-fav.png"
+    />
+    <link rel="stylesheet" href="./styles/style.css?t=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="./styles/bootstrap-4.4.1/bootstrap.min.css" />
+    <link rel=" stylesheet" href="./slick-master/slick/slick.css" />
+    <link rel="stylesheet" href="./slick-master/slick/slick-theme.css" />
+    <script src="./js/lib/jquery-3.4.1.min.js"></script>
+    <script src="./js/lib/bootstrap.min.js" defer></script>
+    <script src="./slick-master/slick/slick.min.js" defer></script>
+    <!--<script src=" ./js/jquery.browser.js" defer></script>-->
+    <script src="./js/lib/rellax.min.js" defer></script>
+    <script
+      src="./js/main.js?t=<?php echo time(); ?>"
+      type="module"
+      defer
+    ></script>
+  </head>
 
-  <title>Claro Networks</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2"
-    href="./fonts/Montserrat-Black/Montserrat-Black.woff2">
-  <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2"
-    href="./fonts/Montserrat-Bold/Montserrat-Bold.woff2">
-  <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2"
-    href="./fonts/Montserrat-Light/Montserrat-Light.woff2">
-  <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2"
-    href="./fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff2">
-  <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2"
-    href="./fonts/Montserrat-Regular/Montserrat-Regular.woff2">
-  <link rel="shortcut icon" type="image/png" href="./images/favicon/claro-fav.png" />
-  <link rel="stylesheet" href="./styles/style.css?t=<?php echo time(); ?>" />
-  <link rel="stylesheet" href="./styles/bootstrap-4.4.1/bootstrap.min.css" />
-  <link rel=" stylesheet" href="./slick-master/slick/slick.css" />
-  <link rel="stylesheet" href="./slick-master/slick/slick-theme.css" />
-  <script src="./js/lib/jquery-3.4.1.min.js"></script>
-  <script src="./js/lib/bootstrap.min.js" defer></script>
-  <script src="./slick-master/slick/slick.min.js" defer></script>
-  <!--<script src=" ./js/jquery.browser.js" defer></script>-->
-  <script src="./js/lib/rellax.min.js" defer></script>
-  <script src="./js/main.js?t=<?php echo time(); ?>" type="module" defer></script>
+  <body class="fondo">
+    <div class="login-container">
+      <div class="login-form no-gutters">
+        <div
+          class="col-sm-12 no-gutters col-md-6 no-gutters col-lg-4  col-xl-3 shadow1 fondolog"
+        >
+          <img src="images/registro/group-10.svg" class="ubicacion5" />
 
-</head>
-
-<body class="fondo">
-  <div class="login-container">
-    <div class="login-form">
-      <div class="col-sm-12 no-gutters col-md-6 no-gutters col-lg-4  col-xl-3 shadow1 fondolog">
-        <img src="images/registro/group-10.svg" class="ubicacion5" />
-
-        <div class="row ma-no ">
-          <div class="col-sm-12 col-md-12 col-lg-12 no-gutters ">
-            <img src="images/registro/group-3.svg" class="form-image-blue" />
-            <a href="home.php">
-              <img src="images/registro/group-24.svg" class="ubicacion1" /></a>
-            <img src="images/registro/group-37.svg" class="ubicacion" />
-          </div>
-        </div>
-        <div class="col-10 col-sm-8 col-md-8 col-lg-9 col-xl-9 mx-auto">
-          <div class="data-found-container">
-            <h1 class="success-title py-5">
-              HOLA, <span class="hola" id="cuenta-confirmada-name-user"></span>
-            </h1>
-            <p class="re-password-text pb-5 text-left">
-              Estamos felices de tenerte a bordo.
-              <span>Tu cuenta ha sido confirmada</span> y puedes
-              <span>ingresar</span> desde este momento.
-            </p>
-            <p class="success-text text-center">¡Seguimos en contacto!</p>
-          </div>
-
-          <form method="POST">
-            <div class="row ma-no centro">
-              <div class="col-sm-12 signup-button-container">
-                <a href="home.php"><button type="button" class="form-button-primary re-password-button">
-                    CONTINÚA
-                  </button></a>
-              </div>
+          <div class="row ma-no no-gutters">
+            <div class="col-sm-12 col-md-12 col-lg-12 no-gutters ">
+              <img src="images/registro/group-3.svg" class="form-image-blue" />
+              <a href="home.php">
+                <img src="images/registro/group-24.svg" class="ubicacion1"
+              /></a>
+              <img src="images/registro/group-37.svg" class="ubicacion" />
             </div>
-          </form>
+          </div>
+          <div class="col-10 col-sm-8 col-md-8 col-lg-9 col-xl-9 mx-auto">
+            <div class="data-found-container">
+              <h1 class="success-title py-5">
+                HOLA,
+                <span class="hola" id="cuenta-confirmada-name-user"></span>
+              </h1>
+              <p class="re-password-text pb-5 text-left">
+                Estamos felices de tenerte a bordo.
+                <span>Tu cuenta ha sido confirmada</span> y puedes
+                <span>ingresar</span> desde este momento.
+              </p>
+              <p class="success-text text-center">¡Seguimos en contacto!</p>
+            </div>
+
+            <form method="POST">
+              <div class="row ma-no centro">
+                <div class="col-sm-12 signup-button-container">
+                  <a href="home.php"
+                    ><button
+                      type="button"
+                      class="form-button-primary re-password-button"
+                    >
+                      CONTINÚA
+                    </button></a
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

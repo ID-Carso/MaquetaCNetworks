@@ -7,12 +7,12 @@
 
 <body class="fondo">
   <div class="login-container">
-    <div class="login-form">
+    <div class="login-form no-gutters">
       <div class="col-sm-12 no-gutters col-md-6 no-gutters col-lg-4  col-xl-3 shadow1 fondolog">
         <img src="images/registro/group-10.svg" class="ubicacion5" />
         <img src="images/registro/group-12.svg" class="ubicacion3" />
 
-        <div class="row ma-no ">
+        <div class="row ma-no no-gutters">
           <div class="col-sm-12 col-md-12 col-lg-12 no-gutters ">
             <img src="images/registro/group-3.svg" class="form-image-blue" />
             <a href="home.php">
@@ -31,8 +31,7 @@
             <div class="row ma-no centro">
               <div class="col-sm-12 no-gap">
                 <div class="tamaño2">
-                  <input class="input-email insert-data" type="email" placeholder="Correo electrónico"
-                    id="re-password-email" />
+                  <input class="input-email insert-data" type="email" placeholder="Correo electrónico" id="re-password-email" />
                   <p class="correo-valido" id="error_email">
                     Correo válido
                     <img src="images/registro/alerta.svg" class="error" />

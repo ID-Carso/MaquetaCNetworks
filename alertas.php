@@ -52,7 +52,7 @@
                                                         <div class="d-flex align-items-center position-absolute alert-switch-container">
                                                                 <span class="texto-alert span-alert-left">No</span>
                                                                 <label class="switch-alert mr-2 ml-2">
-                                                                        <input type="checkbox" class="alert-checkbox" value="1" id="alerts-off">
+                                                                        <input type="checkbox" class="alert-checkbox" value="1" id="alerts-off" checked>
                                                                         <span class="slideralert roundalert"></span>
 
                                                                 </label>
@@ -139,7 +139,7 @@
                                                         <p class="texto-alert alert-text"> Alertas por web </p>
                                                         <div class="position-absolute d-flex align-items-center alert-switch-container">
                                                                 <span class="texto-alert span-alert-left">No</span>
-                                                                <label class="switch-alert mr-3 ml-2">
+                                                                <label class="switch-alert mr-2 ml-2">
                                                                         <input type="checkbox" class="alert-checkbox" value="1" id="alert-web">
                                                                         <span class="slideralert roundalert"></span>
 

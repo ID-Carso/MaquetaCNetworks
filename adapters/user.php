@@ -82,7 +82,7 @@ class User
 
     function sendEmail($id)
     {
-        callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/mail/" . $id . "", null);
+        callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/mail/" . $id, null);
     }
 
     function updateAlerts($data)
@@ -170,6 +170,7 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             echo ($data);
             $user = User::getUserInstance();
             echo ($user->sendEmail($data));
+            break;
 
         case 'updateAlerts':
 
@@ -179,5 +180,6 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             echo Console::log('JSON: ', $data);
             $user = User::getUserInstance();
             echo ($user->updateAlerts($dataJson));
+            break;
     }
 }

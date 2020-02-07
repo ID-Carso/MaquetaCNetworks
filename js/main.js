@@ -69,6 +69,17 @@ if (day && month && year) {
 
 $(document).ready(function() {
   /* Service - USER */
+  setInterval(function() {
+    let date = new Date();
+    let day = date.getDate();
+    let month = date.getMonth();
+    let year = date.getFullYear();
+    let hour = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+    let currentDate = `${year}-${month +
+      1}-${day}: ${hour}:${minutes}:${seconds}`;
+  }, 1000);
 
   let saveDataButton = $("#save-data-user");
 

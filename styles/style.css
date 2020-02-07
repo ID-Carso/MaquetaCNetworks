@@ -278,7 +278,7 @@ h6 {
 }
 
 .a-claro-cinema-title span {
-  color: #22c6cb;
+  color: #0097a9;
 }
 
 .a-subtitle-bold {
@@ -377,7 +377,7 @@ h6 {
 
 .footer-title-claro {
   font-size: 24px;
-  color: #da291c;
+  color: #e1261c;
   font-family: "Montserrat-Black";
 }
 
@@ -777,7 +777,7 @@ h6 {
 
 .a-today-claro-title span,
 .a-today-cinema-title span {
-  color: #da291c;
+  color: #e1261c;
 }
 
 .a-next-claro-title,
@@ -1304,7 +1304,7 @@ h6 {
 .programacion-main-title {
   padding: 30px 0;
   font-family: "Montserrat-Black";
-  color: #da291c;
+  color: #e1261c;
   margin-bottom: 0;
   text-align: center;
   text-transform: uppercase;
@@ -1787,7 +1787,7 @@ h6 {
 }
 
 .a-cinema-rectangle {
-  background: #01cad5;
+  background: #0097a9;
 }
 
 .a-sports-rectangle {
@@ -1809,7 +1809,7 @@ h6 {
 }
 
 .a-claro-rectangle {
-  background: #da291c;
+  background: #e1261c;
 }
 
 .a-vision-rectangle {
@@ -4790,7 +4790,7 @@ input[type="radio"]:checked + .mujer-estilo {
 
 /*Canal Claro*/
 .next-week-claro {
-  background: #da291c;
+  background: #e1261c;
   margin-bottom: 30px;
 }
 

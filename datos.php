@@ -65,7 +65,7 @@
       <div class="col-sm-12 no-gutters col-md-6 no-gutters col-lg-4  col-xl-3 shadow1 fondolog">
         <img src="images/registro/group-10.svg" class="ubicacion5" />
         <br /><br /><br /><br />
-        <div class="col-10 col-sm-8 col-md-8 col-lg-10 col-xl-10 mx-auto">
+        <div class="col-10 col-sm-8 col-md-8 col-lg-10 col-xl-11 mx-auto">
           <div class="row ma-no centro">
             <div class="col-sm-12 no-gap">
               <div class="tamaño2 centro">
@@ -652,7 +652,7 @@
           <br />
           <div class="row ma-no centro">
             <div class="col-sm-12 pt-5 pb-4">
-              <button type="button" id="save-data-user" class="form-button-outline">
+              <button type="button" id="save-data-user" class="form-button-primary">
                 GUARDAR
               </button>
             </div>
