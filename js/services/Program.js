@@ -78,7 +78,7 @@ function getPrograms(date, time) {
     time
   };
 
-  let nowSliderCanalClaro = $("#tv-claro-slider");
+  let nowSliderCanalClaro = $(".today-claro-slider");
 
   $.ajax({
     type: "POST",

@@ -78,28 +78,13 @@ document.addEventListener("DOMContentLoaded", function() {
   let hour = date.getHours();
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
-  //let currentDate = `${year}-${month + 1}-${day}`;
   let currentDate = "2020-2-8";
   let currentTime = `${hour}:${minutes}`;
 
-  console.log(currentDate, currentTime);
   getPrograms(currentDate, currentTime);
 });
 
 $(document).ready(function() {
-  /*$(document).on("click", function(e) {
-    var container = $("#drop-paises");
-
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      $("#select-Pais").css("overflow", "hidden");
-    } else {
-      $("#select-Pais").css("overflow", "visible");
-      $(".ListaDesplegablePaises").css("height", "158px");
-    }
-  });*/
-  /* Service - USER */
-  setInterval(function() {}, 1000);
-
   let saveDataButton = $("#save-data-user");
 
   saveDataButton.click(function() {
@@ -262,7 +247,6 @@ $(document).ready(function() {
   });
 
   var session = localStorage.getItem("session");
-  console.log(session);
 
   if (session == 1) {
     var sidebarContent = $(".sidebar-content");
@@ -275,7 +259,7 @@ $(document).ready(function() {
     let userName = localStorage.getItem("name");
     let avatar;
     let localStorageAvatar = localStorage.getItem("avatar");
-    console.log(localStorage.getItem("avatar"));
+
     if (localStorageAvatar) {
       avatar = `<img src="${localStorage.getItem("avatar")}" />`;
     } else {
@@ -443,7 +427,6 @@ $(document).ready(function() {
   const messageError = $(".correo-valido");
   $("#reset-email").click(function() {
     if (validateEmail(inputReEmail, messageError)) {
-      console.log("hola");
       sendUserEmail(inputReEmail);
       return true;
     } else {
