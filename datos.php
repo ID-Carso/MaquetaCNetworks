@@ -98,8 +98,11 @@
                 <p class="titulo-seleccion-fecha">Fecha de nacimiento</p>
                 <div class="cuadro-fecha">
                   <div class="cuadro-dia">
+
                     <input type="checkbox" id="selectDay" />
                     <label for="selectDay" id="select-Dia">
+
+
                       <p class="SeleccionDiaLista">Día</p>
                       <ul class="ListaDesplegableDias">
                         <li class="Dias" id-select="select-Dia" value="01">
@@ -531,9 +534,10 @@
           <br />
           <div class="row ma-no centro">
             <div class="col-sm-12 no-gap">
-              <div class="tamaño2 centro">
+              <div class="centro" id="drop-paises">
                 <p class="titulo-seleccion-pais">País de residencia</p>
                 <input type="checkbox" id="selectPais" />
+
                 <label for="selectPais" id="select-Pais">
                   <p class="SeleccionPaisLista">
                     <img src="" />Selecciona tu país

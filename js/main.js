@@ -18,6 +18,9 @@ import { updateDataUser } from "./services/user/user.js";
 import { selectAvatar } from "./services/user/user.js";
 import { updateAlerts } from "./services/user/user.js";
 
+/* Program */
+import { getPrograms } from "./services/Program.js";
+
 var programacion_slider;
 var tvConcertSlider;
 let url = location.href;
@@ -67,19 +70,35 @@ if (day && month && year) {
   $(".SeleccionAñoLista").text(year);
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  let date = new Date();
+  let day = date.getDate();
+  let month = date.getMonth();
+  let year = date.getFullYear();
+  let hour = date.getHours();
+  let minutes = date.getMinutes();
+  let seconds = date.getSeconds();
+  //let currentDate = `${year}-${month + 1}-${day}`;
+  let currentDate = "2020-2-8";
+  let currentTime = `${hour}:${minutes}`;
+
+  console.log(currentDate, currentTime);
+  getPrograms(currentDate, currentTime);
+});
+
 $(document).ready(function() {
+  /*$(document).on("click", function(e) {
+    var container = $("#drop-paises");
+
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      $("#select-Pais").css("overflow", "hidden");
+    } else {
+      $("#select-Pais").css("overflow", "visible");
+      $(".ListaDesplegablePaises").css("height", "158px");
+    }
+  });*/
   /* Service - USER */
-  setInterval(function() {
-    let date = new Date();
-    let day = date.getDate();
-    let month = date.getMonth();
-    let year = date.getFullYear();
-    let hour = date.getHours();
-    let minutes = date.getMinutes();
-    let seconds = date.getSeconds();
-    let currentDate = `${year}-${month +
-      1}-${day}: ${hour}:${minutes}:${seconds}`;
-  }, 1000);
+  setInterval(function() {}, 1000);
 
   let saveDataButton = $("#save-data-user");
 
@@ -172,6 +191,8 @@ $(document).ready(function() {
 
   /*End Serivce - USER */
 
+  /*Service - Program */
+
   /*Mostrar u ocultar password de registro o login */
   var iconPassword = document.querySelectorAll(".icon-eye");
   var iconLength = iconPassword.length;
@@ -253,8 +274,9 @@ $(document).ready(function() {
     let sidebarHeader = $(".sidebar-header");
     let userName = localStorage.getItem("name");
     let avatar;
-
-    if (localStorage.getItem("avatar")) {
+    let localStorageAvatar = localStorage.getItem("avatar");
+    console.log(localStorage.getItem("avatar"));
+    if (localStorageAvatar) {
       avatar = `<img src="${localStorage.getItem("avatar")}" />`;
     } else {
       avatar = `<img src="./images/menu/icon-white-user.svg" />`;

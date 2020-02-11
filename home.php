@@ -189,7 +189,7 @@
                 <div class="tv-videos-container">
                     <div id="claro-canal" class="tv-content">
                         <div class="tv-slider" id="tv-claro-slider">
-                            <div class="poster">
+                            <!--<div class="poster">
                                 <div class="poster-body">
                                     <div class="showtime-container">
                                         <p class="a-programming-text">14:30 - 16:30</p>
@@ -228,7 +228,6 @@
                                         </div>
                                     </a>
                                 </div>
-
                             </div>
                             <div class="poster">
                                 <div class="poster-body">
@@ -489,7 +488,7 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
+                            </div>-->
 
                         </div>
                     </div>

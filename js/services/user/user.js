@@ -86,10 +86,7 @@ function signIn(email, password) {
       if (result.data) {
         location.href =
           "http://www.claronetworks.openofficedospuntocero.info/home.php";
-        let date = result.data.birthday.split("-");
-        localStorage.setItem("day", date[2]);
-        localStorage.setItem("month", date[1]);
-        localStorage.setItem("year", date[0]);
+
         localStorage.setItem("session", 1);
         localStorage.setItem("id", result.data.id);
         localStorage.setItem("name", result.data.name);
@@ -97,6 +94,10 @@ function signIn(email, password) {
         localStorage.setItem("gender", result.data.avatar);
         localStorage.setItem("birthday", result.data.avatar);
         localStorage.setItem("src", result.data.country.image);
+        let date = result.data.birthday.split("-");
+        localStorage.setItem("day", date[2]);
+        localStorage.setItem("month", date[1]);
+        localStorage.setItem("year", date[0]);
       } else {
         $(".data-incorrect")
           .text(
