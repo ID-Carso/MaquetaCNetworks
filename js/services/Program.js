@@ -1,3 +1,5 @@
+import { addFavorites } from "./user/user.js";
+
 function createTvSlider(container) {
   container.slick({
     slidesToShow: 5,
@@ -79,6 +81,7 @@ function getPrograms(date, time) {
   };
 
   let nowSliderCanalClaro = $(".today-claro-slider");
+  let nowSliderConcertChannel = $(".today-concert-channel-slider");
 
   $.ajax({
     type: "POST",
@@ -86,21 +89,25 @@ function getPrograms(date, time) {
     url: "../../adapters/program.php",
     success: function(result) {
       let json = JSON.parse(result);
+      console.log(json);
 
       /* SLIDER "AHORA EN VIVO CANAL CLARO*/
       let programingCanalClaro = json.data[0].programing[0].programs;
+      let programingConcertChannel = json.data[1].programing[0].programs;
+
       destroySlider(nowSliderCanalClaro);
+      destroySlider(nowSliderConcertChannel);
 
       programingCanalClaro.forEach((program, index) => {
         let programCanalClaro;
 
         if (index == 0) {
           programCanalClaro = `
-          <div class="poster" _id="${program.id_program}">
+          <div class="poster" >
             <div class="poster-body">
                 <div class="showtime-container">
                     <p class="a-programming-text">${program.time}</p>
-                    <button type="button" class="poster-button"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
+                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
                 </div>
                 <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                 <a href="sinopsis.php">
@@ -119,11 +126,11 @@ function getPrograms(date, time) {
           `;
         } else {
           programCanalClaro = `
-          <div class="poster" _id="${program.id_program}">
+          <div class="poster" >
             <div class="poster-body">
                 <div class="showtime-container">
                     <p class="a-programming-text">${program.time}</p>
-                    <button type="button" class="poster-button"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
+                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
                 </div>
                 
                 <a href="sinopsis.php">
@@ -141,10 +148,64 @@ function getPrograms(date, time) {
         </div>
           `;
         }
-
         nowSliderCanalClaro.append(programCanalClaro);
       });
+
+      let programConcertChannel;
+      programingConcertChannel.forEach((program, index) => {
+        if (index == 0) {
+          programConcertChannel = `
+          <div class="poster" >
+            <div class="poster-body">
+                <div class="showtime-container">
+                    <p class="a-programming-text">${program.time}</p>
+                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
+                </div>
+                <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                <a href="sinopsis.php">
+                    <div class="thumbnail">
+                        <img src="./images/concert-channel/carrousel/${program.image}" alt="">
+                    </div>
+                    <div class="a-concert-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">${program.title}</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+          `;
+        } else {
+          programConcertChannel = `
+          <div class="poster" >
+            <div class="poster-body">
+                <div class="showtime-container">
+                    <p class="a-programming-text">${program.time}</p>
+                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
+                </div>
+                
+                <a href="sinopsis.php">
+                    <div class="thumbnail">
+                        <img src="./images/concert-channel/carrousel/${program.image}" alt="">
+                    </div>
+                    <div class="a-concert-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">${program.title}</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+          `;
+        }
+        nowSliderConcertChannel.append(programConcertChannel);
+      });
+
       createTvSlider(nowSliderCanalClaro);
+      createTvSlider(nowSliderConcertChannel);
+      addFavorites();
       /* END SLIDER "AHORA EN VIVO CANAL CLARO*/
     }
   });

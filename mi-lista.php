@@ -177,7 +177,9 @@
                     </div>
                 </div>
             </div>
-            <div class="no-gutters">
+
+
+            <!--<div class="no-gutters">
                 <div class="col-11 mx-auto">
                     <div class="claro-list section-list-container">
                         <h1 class="claro-list-title list-title-section">Claro Canal</h1>
@@ -199,7 +201,7 @@
                                         <p class="rating">Clasificación: A</p>
                                     </div>
                                     <div>
-                                        <button class="schedule-add" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                                        <button class="schedule-add remove-program" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
                                         </button>
                                     </div>
                                 </div>
@@ -765,11 +767,11 @@
 
 
                 </div>
-            </div>
+            </div>-->
 
         </div>
 
-
+    </div>
 
 </body>
 

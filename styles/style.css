@@ -1447,12 +1447,6 @@ h6 {
   color: #000000;
 }
 
-.a-correo-title {
-  font-size: 27px;
-  text-align: center;
-  margin-bottom: 0;
-}
-
 .a-text-black-regular {
   font-family: "Montserrat-Regular";
   color: #000000;
@@ -1461,6 +1455,22 @@ h6 {
 .a-text-white-bold {
   font-family: "Montserrat-Bold";
   color: #ffffff;
+}
+
+.a-text-warm-grey-bold {
+  font-family: "Montserrat-Bold";
+  color: #969292;
+}
+
+.a-text-warm-grey-regular {
+  font-family: "Montserrat-Regular";
+  color: #969292;
+}
+
+.a-correo-title {
+  font-size: 27px;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .a-password-link {
@@ -1483,6 +1493,14 @@ h6 {
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 0px;
+}
+
+.no-favorites-title {
+  font-size: 16px;
+}
+
+.no-favorites-subtitle {
+  font-size: 15px;
 }
 
 /*Tamaño de textos - responsive*/
@@ -2455,6 +2473,10 @@ h6 {
   object-fit: cover;
   width: 100%;
   border-radius: 35px;
+}
+
+.no-favorites-img {
+  width: 115px;
 }
 
 .hr1 {
@@ -5468,6 +5490,15 @@ input[type="radio"]:checked + .mujer-estilo {
             box-shadow: none;
     border-radius: 0px;
   }
+  .no-favorites-title {
+    font-size: 30px;
+  }
+  .no-favorites-subtitle {
+    font-size: 29px;
+  }
+  .no-favorites-img {
+    width: 226px;
+  }
   /*End Mi Lista - Átomos*/
   /*============================*/
   /*============================*/
@@ -6534,6 +6565,15 @@ input[type="radio"]:checked + .mujer-estilo {
   .lista-header .login {
     background: transparent;
   }
+  .no-favorites-title {
+    font-size: 30px;
+  }
+  .no-favorites-subtitle {
+    font-size: 29px;
+  }
+  .no-favorites-img {
+    width: 226px;
+  }
   /*End Mi Lista - Átomos*/
   /*============================*/
   /*============================*/
@@ -7585,6 +7625,15 @@ input[type="radio"]:checked + .mujer-estilo {
   .list-title-section {
     padding-top: 55px;
   }
+  .no-favorites-title {
+    font-size: 60px;
+  }
+  .no-favorites-subtitle {
+    font-size: 51px;
+  }
+  .no-favorites-img {
+    width: 263px;
+  }
   /*End Mi Lista - Átomos*/
   /*============================*/
   /*============================*/
@@ -7603,7 +7652,8 @@ input[type="radio"]:checked + .mujer-estilo {
   .datos-header .menu-tablet {
     display: none;
   }
-  .datos-header .claro-navbar, .datos-header .menu-desktop {
+  .datos-header .claro-navbar,
+  .datos-header .menu-desktop {
     position: static;
   }
   .avatar-header .menu-tablet {
@@ -8711,6 +8761,15 @@ input[type="radio"]:checked + .mujer-estilo {
   .list-title-section {
     padding-top: 55px;
   }
+  .no-favorites-title {
+    font-size: 60px;
+  }
+  .no-favorites-subtitle {
+    font-size: 51px;
+  }
+  .no-favorites-img {
+    width: 263px;
+  }
   /*End Mi Lista - Átomos*/
   /*============================*/
   /*============================*/
@@ -9226,7 +9285,8 @@ input[type="radio"]:checked + .mujer-estilo {
   .datos-header .menu-tablet {
     display: none;
   }
-  .datos-header .claro-navbar, .datos-header .menu-desktop {
+  .datos-header .claro-navbar,
+  .datos-header .menu-desktop {
     position: static;
   }
   .avatar-header .menu-tablet {

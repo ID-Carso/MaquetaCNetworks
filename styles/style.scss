@@ -513,6 +513,18 @@
       border-radius: 0px;
     }
   }
+
+  .no-favorites-title {
+    font-size: 30px;
+  }
+
+  .no-favorites-subtitle {
+    font-size: 29px;
+  }
+
+  .no-favorites-img {
+    width: 226px;
+  }
   /*End Mi Lista - Átomos*/
   /*============================*/
 
@@ -1306,7 +1318,7 @@
     right: 0px;
     top: 0px;
     z-index: 1;
-   background: rgba(97, 109, 113, 0.7);
+    background: rgba(97, 109, 113, 0.7);
     padding: 8px;
     border-radius: 30px;
   }
@@ -1380,7 +1392,6 @@
   .advertising-subtitle {
     font-size: 25px;
     color: #00caf5;
-
   }
 
   .advertising-text {
@@ -1814,6 +1825,18 @@
 
   .lista-header .login {
     background: transparent;
+  }
+
+  .no-favorites-title {
+    font-size: 30px;
+  }
+
+  .no-favorites-subtitle {
+    font-size: 29px;
+  }
+
+  .no-favorites-img {
+    width: 226px;
   }
 
   /*End Mi Lista - Átomos*/
@@ -3063,11 +3086,11 @@
     right: 7%;
   }
 
-  .lista-content{
+  .lista-content {
     .image-list-points {
       top: 15%;
     }
-  } 
+  }
 
   .image-list-blue {
     border-radius: 15px;
@@ -3125,6 +3148,18 @@
     padding-top: 55px;
   }
 
+  .no-favorites-title {
+    font-size: 60px;
+  }
+
+  .no-favorites-subtitle {
+    font-size: 51px;
+  }
+
+  .no-favorites-img {
+    width: 263px;
+  }
+
   /*End Mi Lista - Átomos*/
   /*============================*/
 
@@ -3151,7 +3186,8 @@
       display: none;
     }
 
-    .claro-navbar, .menu-desktop{
+    .claro-navbar,
+    .menu-desktop {
       position: static;
     }
   }
@@ -3161,7 +3197,7 @@
       display: none;
     }
 
-    .menu-desktop{
+    .menu-desktop {
       display: block;
       position: static;
     }
@@ -3206,7 +3242,7 @@
       display: none;
     }
 
-    .menu-desktop{
+    .menu-desktop {
       position: static;
     }
   }
@@ -3283,11 +3319,10 @@
       display: none;
     }
 
-    .menu-desktop{
+    .menu-desktop {
       position: initial;
       padding: 0;
     }
-
   }
 
   .m-home-titles {
@@ -3446,7 +3481,6 @@
   .advertising-subtitle {
     font-size: 25px;
     color: #00caf5;
- 
   }
 
   .advertising-text {
@@ -3953,7 +3987,7 @@
     padding-top: 0;
   }
 
-  .lista-content{
+  .lista-content {
     position: static;
   }
 
@@ -4475,13 +4509,11 @@
     top: 4%;
     right: 7%;
   }
-  .lista-content{
+  .lista-content {
     .image-list-points {
       top: 20%;
-
     }
   }
-
 
   .image-list-blue {
     border-radius: 15px;
@@ -4537,6 +4569,17 @@
     padding-top: 55px;
   }
 
+  .no-favorites-title {
+    font-size: 60px;
+  }
+
+  .no-favorites-subtitle {
+    font-size: 51px;
+  }
+
+  .no-favorites-img {
+    width: 263px;
+  }
 
   /*End Mi Lista - Átomos*/
   /*============================*/
@@ -4559,7 +4602,7 @@
       display: none;
     }
 
-    .menu-desktop{
+    .menu-desktop {
       padding: 0;
       position: initial;
     }
@@ -4799,7 +4842,6 @@
   .advertising-subtitle {
     font-size: 25px;
     color: #00caf5;
- 
   }
 
   .advertising-text {
@@ -5181,7 +5223,7 @@
       display: none;
     }
 
-    .menu-desktop{
+    .menu-desktop {
       display: block;
       position: static;
     }
@@ -5220,7 +5262,7 @@
       display: none;
     }
 
-    .menu-desktop{
+    .menu-desktop {
       position: static;
     }
   }
@@ -5370,7 +5412,7 @@
     margin-bottom: 0px;
   }
 
-  .lista-content{
+  .lista-content {
     position: static;
   }
 

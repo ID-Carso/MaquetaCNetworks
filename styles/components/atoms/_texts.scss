@@ -1228,12 +1228,6 @@
   color: $pureBlack;
 }
 
-.a-correo-title {
-  font-size: 27px;
-  text-align: center;
-  margin-bottom: 0;
-}
-
 .a-text-black-regular {
   font-family: $montserratRegular;
   color: $pureBlack;
@@ -1242,6 +1236,22 @@
 .a-text-white-bold {
   font-family: $montserratBold;
   color: $colorWhite;
+}
+
+.a-text-warm-grey-bold {
+  font-family: $montserratBold;
+  color: $warmGray;
+}
+
+.a-text-warm-grey-regular {
+  font-family: $montserratRegular;
+  color: $warmGray;
+}
+
+.a-correo-title {
+  font-size: 27px;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .a-password-link {
@@ -1264,4 +1274,12 @@
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 0px;
+}
+
+.no-favorites-title {
+  font-size: 16px;
+}
+
+.no-favorites-subtitle {
+  font-size: 15px;
 }

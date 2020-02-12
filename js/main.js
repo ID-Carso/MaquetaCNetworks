@@ -17,6 +17,8 @@ import { signOut } from "./services/user/user.js";
 import { updateDataUser } from "./services/user/user.js";
 import { selectAvatar } from "./services/user/user.js";
 import { updateAlerts } from "./services/user/user.js";
+import { addFavorites } from "./services/user/user.js";
+import { removeFavorites } from "./services/user/user.js";
 
 /* Program */
 import { getPrograms } from "./services/Program.js";
@@ -85,6 +87,33 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 $(document).ready(function() {
+  /* Lista de favoritos del usuario*/
+
+  let favorites = localStorage.getItem("favorites");
+  let listFavorites = $(".mi-lista-container");
+  let myFavorites;
+  if (!favorites) {
+    myFavorites = `
+    <div class="no-gutters mt-4 mt-xl-5 pt-xl-5">
+      <div class="col-12">
+          <p class="a-text-warm-grey-bold mb-3 text-center no-favorites-title mb-xl-4">No tienes favoritos guardados todavía</p>
+          <p class="a-text-warm-grey-regular text-center no-favorites-subtitle">Explora y descubre más</p>
+      </div>
+    </div>
+    <div class="text-center mt-5 pt-md-4 mt-xl-5">
+        <img src="./images/mi-lista/favorites.svg" alt="" class="no-favorites-img">
+    </div>
+        `;
+    listFavorites.append(myFavorites);
+  }
+  $(".remove-program").click(function() {
+    let id = localStorage.getItem("id");
+    let programId = $(this).attr("_id");
+    removeFavorites(id, programId);
+  });
+
+  /* END LISTA DE FAVORITOS DEL USUARIO */
+
   let saveDataButton = $("#save-data-user");
 
   saveDataButton.click(function() {
@@ -259,9 +288,11 @@ $(document).ready(function() {
     let userName = localStorage.getItem("name");
     let avatar;
     let localStorageAvatar = localStorage.getItem("avatar");
+    console.log(typeof localStorageAvatar);
 
-    if (localStorageAvatar) {
+    if (localStorageAvatar !== "null") {
       avatar = `<img src="${localStorage.getItem("avatar")}" />`;
+      console.log(":(");
     } else {
       avatar = `<img src="./images/menu/icon-white-user.svg" />`;
     }
@@ -895,6 +926,7 @@ $(document).ready(function() {
   const tvSportsSlider = $("#tv-sports-slider");
   const programacionSlider = $(".programacion-slider");
   const proClaroSlider = $("#pro-claro-slider");
+  const tvSlider = $(".tv-slider");
 
   $(".tv-content").hide();
   $(".tv-content:first").show();
@@ -906,19 +938,9 @@ $(document).ready(function() {
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();
 
-    if (activeNav == "concert-channel") {
-      tvConcertSlider.slick("refresh");
-    } else if (activeNav == "claro-canal") {
-      tvClaroSlider.slick("refresh");
-    } else if (activeNav == "claro-cinema") {
-      tvCinemaSlider.slick("refresh");
-    } else if (activeNav == "nuestra-vision") {
-      tvVisionSlider.slick("refresh");
-    } else if (activeNav == "claro-sports") {
-      tvSportsSlider.slick("refresh");
-    }
-
+    tvSlider.slick("refresh");
     programacion_slider.slick("refresh");
+    addFavorites();
     recreateClickCalendar();
   });
 
@@ -941,6 +963,7 @@ $(document).ready(function() {
       tvSportsSlider.slick("refresh");
     }
     programacion_slider.slick("refresh");
+
     recreateClickCalendar();
   });
 
@@ -1159,7 +1182,9 @@ function resizedw() {
   $(".programacion-slider#pro-cinema-slider").slick("refresh");
   $(".programacion-slider#pro-vision-slider").slick("refresh");
   $(".programacion-slider#pro-sports-slider").slick("refresh");
+
   recreateClickCalendar();
+  addFavorites();
 }
 
 var doit;

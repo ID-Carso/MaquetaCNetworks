@@ -91,6 +91,16 @@ class User
     {
         callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/config_notification", $data);
     }
+
+    function addFavorites($data)
+    {
+        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/add_favorites", $data);
+    }
+
+    function removeFavorites($data)
+    {
+        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/remove_favorites", $data);
+    }
 }
 
 
@@ -150,6 +160,24 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             echo Console::log('JSON: ', $data);
             $user = User::getUserInstance();
             echo ($user->updateAlerts($dataJson));
+            break;
+
+        case 'addFavorites':
+            $userId = $_POST["user_id"];
+            $programId = $_POST["program_id"];
+            $data = array("user_id" => $userId, "program_id" => $programId);
+            $dataJson = json_encode($data);
+            $user = User::getUserInstance();
+            echo ($user->addFavorites($dataJson));
+            break;
+
+        case 'removeFavorites':
+            $userId = $_POST["user_id"];
+            $programId = $_POST["program_id"];
+            $data = array("user_id" => $userId, "program_id" => $programId);
+            $dataJson = json_encode($data);
+            $user = User::getUserInstance();
+            echo ($user->removeFavorites($dataJson));
             break;
     }
 }

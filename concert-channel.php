@@ -106,9 +106,9 @@
                 <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
             </div>
             <div class="today-concert-videos-container">
-                <div class="section-slider concert-slider">
+                <div class="section-slider concert-slider today-concert-channel-slider">
 
-                    <div class="poster">
+                    <!--<div class="poster">
                         <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
@@ -476,8 +476,8 @@
                         </div>
 
                     </div>
+                </div>-->
                 </div>
-            </div>
 
         </section>
         <section class="next-week-concert">

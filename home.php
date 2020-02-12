@@ -193,9 +193,9 @@
                     </div>
                     <!--Concert channel de "Ahora en tv"-->
                     <div id="concert-channel" class="tv-content">
-                        <div class="tv-slider" id="tv-concert-slider">
+                        <div class="tv-slider today-concert-channel-slider" id="tv-concert-slider">
 
-                            <div class="poster">
+                            <!--<div class="poster">
                                 <div class="poster-body">
                                     <div class="showtime-container">
                                         <p class="a-programming-text">14:30 - 16:30</p>
@@ -564,610 +564,610 @@
 
                             </div>
 
+                        </div>-->
                         </div>
-                    </div>
-                    <!--End Concert channel de "Ahora en tv"-->
-                    <!--Claro cinema de "Ahora en tv"-->
-                    <div id="claro-cinema" class="tv-content">
-                        <div class="tv-slider" id="tv-cinema-slider">
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/claro-cinema/carrousel/01-encapuchados.jpg" alt="">
+                        <!--End Concert channel de "Ahora en tv"-->
+                        <!--Claro cinema de "Ahora en tv"-->
+                        <div id="claro-cinema" class="tv-content">
+                            <div class="tv-slider" id="tv-cinema-slider">
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">ENCAPUCHADOS</p>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/claro-cinema/carrousel/01-encapuchados.jpg" alt="">
                                             </div>
-                                        </div>
-                                    </a>
+                                            <div class="a-cinema-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">ENCAPUCHADOS</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
                                 </div>
 
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/claro-cinema/carrousel/02-muneca-reina.jpg" alt="">
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">MUÑECA REINA</p>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/claro-cinema/carrousel/02-muneca-reina.jpg" alt="">
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/claro-cinema/carrousel/03-la-nina-de-mis-ojos.jpg" alt="">
-                                        </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">LA NIÑA DE MIS OJOS</p>
+                                            <div class="a-cinema-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">MUÑECA REINA</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </a>
                                     </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/claro-cinema/carrousel/04-chanoc.jpg" alt="">
-                                        </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">CHANOC</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
 
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                </div>
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/claro-cinema/carrousel/03-la-nina-de-mis-ojos.jpg" alt="">
+                                            </div>
+                                            <div class="a-cinema-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">LA NIÑA DE MIS OJOS</p>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/claro-cinema/carrousel/05-palabra-de-cine.jpg" alt="">
-                                        </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">PALABRA DE CINEA</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
 
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                </div>
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/claro-cinema/carrousel/04-chanoc.jpg" alt="">
+                                            </div>
+                                            <div class="a-cinema-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">CHANOC</p>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/claro-cinema/carrousel/06-culpa-hombres.jpg" alt="">
-                                        </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">LA CULPA DE LOS HOMBRES</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
 
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                </div>
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/claro-cinema/carrousel/05-palabra-de-cine.jpg" alt="">
+                                            </div>
+                                            <div class="a-cinema-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">PALABRA DE CINEA</p>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/claro-cinema/carrousel/07-cuando-se-quiere-se-quiere.jpg" alt="">
-                                        </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">CUANDO SE QUIERE, SE QUIERE</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
 
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                </div>
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/claro-cinema/carrousel/06-culpa-hombres.jpg" alt="">
+                                            </div>
+                                            <div class="a-cinema-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">LA CULPA DE LOS HOMBRES</p>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/claro-cinema/carrousel/08-el-superflaco.jpg" alt="">
-                                        </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">EL SUPERFLACO</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
 
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                </div>
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/claro-cinema/carrousel/07-cuando-se-quiere-se-quiere.jpg" alt="">
+                                            </div>
+                                            <div class="a-cinema-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">CUANDO SE QUIERE, SE QUIERE</p>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/claro-cinema/carrousel/09-el-detective.jpg" alt="">
-                                        </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">EL DETECTIVE</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Claro cinema de "Ahora en tv"-->
-                    <!--Nuestra visión de "Ahora en tv"-->
-                    <div id="nuestra-vision" class="tv-content">
-                        <div class="tv-slider" id="tv-vision-slider">
 
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                </div>
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/claro-cinema/carrousel/08-el-superflaco.jpg" alt="">
+                                            </div>
+                                            <div class="a-cinema-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">EL SUPERFLACO</p>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/01-aprende.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">APRENDE</p>
-                                            </div>
-                                        </div>
-                                    </a>
+
                                 </div>
-
-                            </div>
-
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/claro-cinema/carrousel/09-el-detective.jpg" alt="">
+                                            </div>
+                                            <div class="a-cinema-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">EL DETECTIVE</p>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/02-dress-code.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">DRESS CODE</p>
-                                            </div>
-                                        </div>
-                                    </a>
                                 </div>
-
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/03-barra-infantil.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">BARRA INFANTIL</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/04-pobre-nino.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">POBRE NIÑO RICO</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/05-caja-pandora.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">LA CAJA DE PANDORA: ALEX AGUINAGA</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/06-el-torito.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">EL TORITO</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/07-la-estatua.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">LA ESTATUA DE CARNE</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/08-los-leones-del-ring.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">LOS LEONES DEL RING</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/09-vidas-extraordinarias.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">VIDAS EXTRAORDINARIAS</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/10-titanes-del-ring.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">TITANES DEL RING</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/12-deportes-en-claro.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">DEPORTES EN CLARO</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/13-santo.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">SANTO CONTRA LA MAFÍA DEL VICIO</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
                             </div>
                         </div>
-                    </div>
-                    <!--End Nuestra visión de "Ahora en tv"-->
-                    <!--Claro sports de "Ahora en tv"-->
-                    <div id="claro-sports" class="tv-content">
-                        <div class="tv-slider" id="tv-sports-slider">
+                        <!--End Claro cinema de "Ahora en tv"-->
+                        <!--Nuestra visión de "Ahora en tv"-->
+                        <div id="nuestra-vision" class="tv-content">
+                            <div class="tv-slider" id="tv-vision-slider">
 
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
-                                        <div class="a-sports-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/nuestra-vision/carousel/01-aprende.jpg" alt="">
                                             </div>
-                                        </div>
-                                    </a>
+                                            <div class="a-vision-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-white">APRENDE</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
                                 </div>
 
-                            </div>
 
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
-                                        <div class="a-sports-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/nuestra-vision/carousel/02-dress-code.jpg" alt="">
                                             </div>
-                                        </div>
-                                    </a>
+                                            <div class="a-vision-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-white">DRESS CODE</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
                                 </div>
 
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
-                                        <div class="a-sports-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/nuestra-vision/carousel/03-barra-infantil.jpg" alt="">
                                             </div>
-                                        </div>
-                                    </a>
+                                            <div class="a-vision-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-white">BARRA INFANTIL</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
                                 </div>
 
-                            </div>
 
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
-                                        <div class="a-sports-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/nuestra-vision/carousel/04-pobre-nino.jpg" alt="">
                                             </div>
-                                        </div>
-                                    </a>
+                                            <div class="a-vision-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-white">POBRE NIÑO RICO</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
                                 </div>
 
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
-                                        <div class="a-sports-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/nuestra-vision/carousel/05-caja-pandora.jpg" alt="">
                                             </div>
+                                            <div class="a-vision-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-white">LA CAJA DE PANDORA: ALEX AGUINAGA</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
-                                    </a>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/nuestra-vision/carousel/06-el-torito.jpg" alt="">
+                                            </div>
+                                            <div class="a-vision-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-white">EL TORITO</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/nuestra-vision/carousel/07-la-estatua.jpg" alt="">
+                                            </div>
+                                            <div class="a-vision-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-white">LA ESTATUA DE CARNE</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/nuestra-vision/carousel/08-los-leones-del-ring.jpg" alt="">
+                                            </div>
+                                            <div class="a-vision-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-white">LOS LEONES DEL RING</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
                                 </div>
 
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
-                                        <div class="a-sports-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/nuestra-vision/carousel/09-vidas-extraordinarias.jpg" alt="">
                                             </div>
-                                        </div>
-                                    </a>
+                                            <div class="a-vision-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-white">VIDAS EXTRAORDINARIAS</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
                                 </div>
 
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
                                         </div>
-                                        <div class="a-sports-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/nuestra-vision/carousel/10-titanes-del-ring.jpg" alt="">
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                        </div>
-                                        <div class="a-sports-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                            <div class="a-vision-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-white">TITANES DEL RING</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </a>
                                     </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                        </div>
-                                        <div class="a-sports-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
 
+                                </div>
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/nuestra-vision/carousel/12-deportes-en-claro.jpg" alt="">
+                                            </div>
+                                            <div class="a-vision-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-white">DEPORTES EN CLARO</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                                <img src="./images/nuestra-vision/carousel/13-santo.jpg" alt="">
+                                            </div>
+                                            <div class="a-vision-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-white">SANTO CONTRA LA MAFÍA DEL VICIO</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
+                        <!--End Nuestra visión de "Ahora en tv"-->
+                        <!--Claro sports de "Ahora en tv"-->
+                        <div id="claro-sports" class="tv-content">
+                            <div class="tv-slider" id="tv-sports-slider">
+
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+
+                                            </div>
+                                            <div class="a-sports-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                            </div>
+                                            <div class="a-sports-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                            </div>
+                                            <div class="a-sports-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                            </div>
+                                            <div class="a-sports-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                            </div>
+                                            <div class="a-sports-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                            </div>
+                                            <div class="a-sports-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                            </div>
+                                            <div class="a-sports-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                            </div>
+                                            <div class="a-sports-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="poster">
+                                    <div class="poster-body">
+                                        <div class="showtime-container">
+                                            <p class="a-programming-text">14:30 - 16:30</p>
+                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                        </div>
+                                        <a href="sinopsis.php">
+                                            <div class="thumbnail">
+                                            </div>
+                                            <div class="a-sports-rectangle thumbnail-info-title">
+                                                <div class="poster-title-margin">
+                                                    <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Claro sports de "Ahora en tv"-->
                     </div>
-                    <!--End Claro sports de "Ahora en tv"-->
+
                 </div>
-
-            </div>
         </section>
         <div class="our-channels">
             <h1 class="our-channels-title">

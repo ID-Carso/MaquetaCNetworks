@@ -246,6 +246,43 @@ function updateAlerts(configJson) {
   });
 }
 
+function addFavorites() {
+  $(".poster-button").click(function() {
+    let id_program = $(this).attr("_id");
+    let id_user = localStorage.getItem("id");
+    let dataUser = {
+      function: "addFavorites",
+      user_id: id_user,
+      program_id: id_program
+    };
+
+    $.ajax({
+      type: "POST",
+      data: dataUser,
+      url: "../../adapters/user.php",
+      success: function(result) {
+        console.log(result);
+      }
+    });
+  });
+}
+
+function removeFavorites(user_id, program_id) {
+  let dataUser = {
+    function: "removeFavorites",
+    user_id: user_id,
+    program_id: program_id
+  };
+  $.ajax({
+    type: "POST",
+    data: dataUser,
+    url: "../../adapters/user.php",
+    success: function(result) {
+      console.log(result);
+    }
+  });
+}
+
 export {
   sendUserEmail,
   validateTokenPassword,
@@ -255,5 +292,7 @@ export {
   updateDataUser,
   selectAvatar,
   registerUser,
-  updateAlerts
+  updateAlerts,
+  addFavorites,
+  removeFavorites
 };
