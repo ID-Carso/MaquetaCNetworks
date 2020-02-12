@@ -122,8 +122,8 @@
         <h1 class="a-today-cinema-title">hoy en <span>claro cinema</span></h1>
         <div class="no-gutters">
           <div class="today-cinema-videos-container">
-            <div class="section-slider cinema-slider">
-              <div class="poster">
+            <div class="section-slider cinema-slider today-claro-cinema-slider">
+              <!--<div class="poster">
                 <div class="poster-body">
                   <div class="showtime-container">
                     <p class="a-programming-text">14:30 - 16:30</p>
@@ -293,7 +293,7 @@
                     </div>
                   </a>
                 </div>
-              </div>
+              </div>-->
             </div>
           </div>
         </div>

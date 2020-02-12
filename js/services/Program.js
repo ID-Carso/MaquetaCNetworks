@@ -82,6 +82,8 @@ function getPrograms(date, time) {
 
   let nowSliderCanalClaro = $(".today-claro-slider");
   let nowSliderConcertChannel = $(".today-concert-channel-slider");
+  let nowSliderClaroCinema = $(".today-claro-cinema-slider");
+  let nowSliderNuestraVision = $("#tv-vision-slider");
 
   $.ajax({
     type: "POST",
@@ -94,9 +96,13 @@ function getPrograms(date, time) {
       /* SLIDER "AHORA EN VIVO CANAL CLARO*/
       let programingCanalClaro = json.data[0].programing[0].programs;
       let programingConcertChannel = json.data[1].programing[0].programs;
+      let programingClaroCinema = json.data[2].programing[0].programs;
+      let programingNuestraVision = json.data[3].programing[0].programs;
 
       destroySlider(nowSliderCanalClaro);
       destroySlider(nowSliderConcertChannel);
+      destroySlider(nowSliderClaroCinema);
+      destroySlider(nowSliderNuestraVision);
 
       programingCanalClaro.forEach((program, index) => {
         let programCanalClaro;
@@ -203,8 +209,114 @@ function getPrograms(date, time) {
         nowSliderConcertChannel.append(programConcertChannel);
       });
 
+      let programClaroCinema;
+      programingClaroCinema.forEach((program, index) => {
+        if (index == 0) {
+          programClaroCinema = `
+          <div class="poster" >
+            <div class="poster-body">
+                <div class="showtime-container">
+                    <p class="a-programming-text">${program.time}</p>
+                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
+                </div>
+                <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                <a href="sinopsis.php">
+                    <div class="thumbnail">
+                        <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
+                    </div>
+                    <div class="a-cinema-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">${program.title}</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+          `;
+        } else {
+          programClaroCinema = `
+          <div class="poster" >
+            <div class="poster-body">
+                <div class="showtime-container">
+                    <p class="a-programming-text">${program.time}</p>
+                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
+                </div>
+                
+                <a href="sinopsis.php">
+                    <div class="thumbnail">
+                        <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
+                    </div>
+                    <div class="a-cinema-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">${program.title}</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+          `;
+        }
+        nowSliderClaroCinema.append(programClaroCinema);
+      });
+
+      let programNuestraVision;
+      programingNuestraVision.forEach((program, index) => {
+        if (index == 0) {
+          programNuestraVision = `
+          <div class="poster" >
+            <div class="poster-body">
+                <div class="showtime-container">
+                    <p class="a-programming-text">${program.time}</p>
+                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
+                </div>
+                <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                <a href="sinopsis.php">
+                    <div class="thumbnail">
+                        <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
+                    </div>
+                    <div class="a-vision-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">${program.title}</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+          `;
+        } else {
+          programNuestraVision = `
+          <div class="poster" >
+            <div class="poster-body">
+                <div class="showtime-container">
+                    <p class="a-programming-text">${program.time}</p>
+                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
+                </div>
+                
+                <a href="sinopsis.php">
+                    <div class="thumbnail">
+                        <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
+                    </div>
+                    <div class="a-vision-rectanglethumbnail-info-title">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">${program.title}</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+          `;
+        }
+        nowSliderNuestraVision.append(programNuestraVision);
+      });
+
       createTvSlider(nowSliderCanalClaro);
       createTvSlider(nowSliderConcertChannel);
+      createTvSlider(nowSliderClaroCinema);
+      createTvSlider(nowSliderNuestraVision);
       addFavorites();
       /* END SLIDER "AHORA EN VIVO CANAL CLARO*/
     }

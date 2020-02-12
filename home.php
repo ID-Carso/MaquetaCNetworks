@@ -194,6 +194,18 @@
                     <!--Concert channel de "Ahora en tv"-->
                     <div id="concert-channel" class="tv-content">
                         <div class="tv-slider today-concert-channel-slider" id="tv-concert-slider">
+                        </div>
+                    </div>
+                    <!--End Concert channel de "Ahora en tv"-->
+                    <!--Claro cinema de "Ahora en tv"-->
+                    <div id="claro-cinema" class="tv-content">
+                        <div class="tv-slider today-claro-cinema-slider" id="tv-cinema-slider">
+                        </div>
+                    </div>
+                    <!--End Claro cinema de "Ahora en tv"-->
+                    <!--Nuestra visión de "Ahora en tv"-->
+                    <div id="nuestra-vision" class="tv-content">
+                        <div class="tv-slider" id="tv-vision-slider">
 
                             <!--<div class="poster">
                                 <div class="poster-body">
@@ -203,91 +215,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/01-one-direction.jpg" alt="">
+                                            <img src="./images/nuestra-vision/carousel/01-aprende.jpg" alt="">
                                         </div>
-                                        <div class="a-concert-rectangle thumbnail-info-title">
+                                        <div class="a-vision-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">ONE DIRECTION</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/02-concert-sessions.jpg" alt="">
-                                        </div>
-                                        <div class="a-concert-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">CONCERT CHANNEL SESSIONS: JUDY BUENDIA</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/03-great-songwriters.jpg" alt="">
-                                        </div>
-                                        <div class="a-concert-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">GREAT SONGWRITERS</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/04-afrobeta.jpg" alt="">
-                                        </div>
-                                        <div class="a-concert-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">AFROBETA</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/05-live-from-abbey-killers.jpg" alt="">
-                                        </div>
-                                        <div class="a-concert-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">LIVE ROM ABBEY: THE KILLERS</p>
+                                                <p class="a-poster-text-white">APRENDE</p>
                                             </div>
                                         </div>
                                     </a>
@@ -304,125 +236,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/06-rakel.jpg" alt="">
+                                            <img src="./images/nuestra-vision/carousel/02-dress-code.jpg" alt="">
                                         </div>
-                                        <div class="a-concert-rectangle thumbnail-info-title">
+                                        <div class="a-vision-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">CONCERT CHANNEL SESSIONS: RAKEL</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/07-liam-gallagher.jpg" alt="">
-                                        </div>
-                                        <div class="a-concert-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">LIAM GALLAGHER</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/08-bang-data.jpg" alt="">
-                                        </div>
-                                        <div class="a-concert-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">BANG DATA</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/09-austin-city.jpg" alt="">
-                                        </div>
-                                        <div class="a-concert-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">AUSTIN CITY</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/10-van-der-graff.jpg" alt="">
-                                        </div>
-                                        <div class="a-concert-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">VAN DER GRAFF</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/11-live-from-abbey.jpg" alt="">
-                                        </div>
-                                        <div class="a-concert-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">LIVE FROM ABBEY</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/12-katy-perry.jpg" alt="">
-                                        </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">KATY PERRY</p>
+                                                <p class="a-poster-text-white">DRESS CODE</p>
                                             </div>
                                         </div>
                                     </a>
@@ -438,11 +256,52 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/13-megadeth.jpg" alt="">
+                                            <img src="./images/nuestra-vision/carousel/03-barra-infantil.jpg" alt="">
                                         </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                        <div class="a-vision-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">MEGADETH</p>
+                                                <p class="a-poster-text-white">BARRA INFANTIL</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/nuestra-vision/carousel/04-pobre-nino.jpg" alt="">
+                                        </div>
+                                        <div class="a-vision-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">POBRE NIÑO RICO</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/nuestra-vision/carousel/05-caja-pandora.jpg" alt="">
+                                        </div>
+                                        <div class="a-vision-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">LA CAJA DE PANDORA: ALEX AGUINAGA</p>
                                             </div>
                                         </div>
                                     </a>
@@ -457,11 +316,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/14-a-tiny-audience.jpg" alt="">
+                                            <img src="./images/nuestra-vision/carousel/06-el-torito.jpg" alt="">
                                         </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                        <div class="a-vision-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">A TINY AUDIENCE</p>
+                                                <p class="a-poster-text-white">EL TORITO</p>
                                             </div>
                                         </div>
                                     </a>
@@ -476,11 +335,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/15-yes-1970.jpg" alt="">
+                                            <img src="./images/nuestra-vision/carousel/07-la-estatua.jpg" alt="">
                                         </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                        <div class="a-vision-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">YES</p>
+                                                <p class="a-poster-text-white">LA ESTATUA DE CARNE</p>
                                             </div>
                                         </div>
                                     </a>
@@ -495,11 +354,51 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/16-on-sessons-uma.jpg" alt="">
+                                            <img src="./images/nuestra-vision/carousel/08-los-leones-del-ring.jpg" alt="">
                                         </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                        <div class="a-vision-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">ON SESSIONS UMA</p>
+                                                <p class="a-poster-text-white">LOS LEONES DEL RING</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/nuestra-vision/carousel/09-vidas-extraordinarias.jpg" alt="">
+                                        </div>
+                                        <div class="a-vision-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">VIDAS EXTRAORDINARIAS</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="poster">
+                                <div class="poster-body">
+                                    <div class="showtime-container">
+                                        <p class="a-programming-text">14:30 - 16:30</p>
+                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                                    </div>
+                                    <a href="sinopsis.php">
+                                        <div class="thumbnail">
+                                            <img src="./images/nuestra-vision/carousel/10-titanes-del-ring.jpg" alt="">
+                                        </div>
+                                        <div class="a-vision-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">TITANES DEL RING</p>
                                             </div>
                                         </div>
                                     </a>
@@ -514,11 +413,11 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/14-a-tiny-audience.jpg" alt="">
+                                            <img src="./images/nuestra-vision/carousel/12-deportes-en-claro.jpg" alt="">
                                         </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                        <div class="a-vision-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">A TINY AUDIENCEI</p>
+                                                <p class="a-poster-text-white">DEPORTES EN CLARO</p>
                                             </div>
                                         </div>
                                     </a>
@@ -533,458 +432,18 @@
                                     </div>
                                     <a href="sinopsis.php">
                                         <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/17-red-hot-chili.jpg" alt="">
+                                            <img src="./images/nuestra-vision/carousel/13-santo.jpg" alt="">
                                         </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
+                                        <div class="a-vision-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">RED HOT CHILI PEPPERS</p>
+                                                <p class="a-poster-text-white">SANTO CONTRA LA MAFÍA DEL VICIO</p>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
 
                             </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/concert-channel/carrousel/18-a-tiny-natti-nat.jpg" alt="">
-                                        </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-black">A TINY NATTI NATASHA</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
                         </div>-->
-                        </div>
-                        <!--End Concert channel de "Ahora en tv"-->
-                        <!--Claro cinema de "Ahora en tv"-->
-                        <div id="claro-cinema" class="tv-content">
-                            <div class="tv-slider" id="tv-cinema-slider">
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/claro-cinema/carrousel/01-encapuchados.jpg" alt="">
-                                            </div>
-                                            <div class="a-cinema-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-black">ENCAPUCHADOS</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/claro-cinema/carrousel/02-muneca-reina.jpg" alt="">
-                                            </div>
-                                            <div class="a-cinema-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-black">MUÑECA REINA</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/claro-cinema/carrousel/03-la-nina-de-mis-ojos.jpg" alt="">
-                                            </div>
-                                            <div class="a-cinema-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-black">LA NIÑA DE MIS OJOS</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/claro-cinema/carrousel/04-chanoc.jpg" alt="">
-                                            </div>
-                                            <div class="a-cinema-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-black">CHANOC</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/claro-cinema/carrousel/05-palabra-de-cine.jpg" alt="">
-                                            </div>
-                                            <div class="a-cinema-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-black">PALABRA DE CINEA</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/claro-cinema/carrousel/06-culpa-hombres.jpg" alt="">
-                                            </div>
-                                            <div class="a-cinema-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-black">LA CULPA DE LOS HOMBRES</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/claro-cinema/carrousel/07-cuando-se-quiere-se-quiere.jpg" alt="">
-                                            </div>
-                                            <div class="a-cinema-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-black">CUANDO SE QUIERE, SE QUIERE</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/claro-cinema/carrousel/08-el-superflaco.jpg" alt="">
-                                            </div>
-                                            <div class="a-cinema-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-black">EL SUPERFLACO</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/claro-cinema/carrousel/09-el-detective.jpg" alt="">
-                                            </div>
-                                            <div class="a-cinema-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-black">EL DETECTIVE</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End Claro cinema de "Ahora en tv"-->
-                        <!--Nuestra visión de "Ahora en tv"-->
-                        <div id="nuestra-vision" class="tv-content">
-                            <div class="tv-slider" id="tv-vision-slider">
-
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/nuestra-vision/carousel/01-aprende.jpg" alt="">
-                                            </div>
-                                            <div class="a-vision-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-white">APRENDE</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/nuestra-vision/carousel/02-dress-code.jpg" alt="">
-                                            </div>
-                                            <div class="a-vision-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-white">DRESS CODE</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/nuestra-vision/carousel/03-barra-infantil.jpg" alt="">
-                                            </div>
-                                            <div class="a-vision-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-white">BARRA INFANTIL</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/nuestra-vision/carousel/04-pobre-nino.jpg" alt="">
-                                            </div>
-                                            <div class="a-vision-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-white">POBRE NIÑO RICO</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/nuestra-vision/carousel/05-caja-pandora.jpg" alt="">
-                                            </div>
-                                            <div class="a-vision-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-white">LA CAJA DE PANDORA: ALEX AGUINAGA</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/nuestra-vision/carousel/06-el-torito.jpg" alt="">
-                                            </div>
-                                            <div class="a-vision-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-white">EL TORITO</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/nuestra-vision/carousel/07-la-estatua.jpg" alt="">
-                                            </div>
-                                            <div class="a-vision-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-white">LA ESTATUA DE CARNE</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/nuestra-vision/carousel/08-los-leones-del-ring.jpg" alt="">
-                                            </div>
-                                            <div class="a-vision-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-white">LOS LEONES DEL RING</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/nuestra-vision/carousel/09-vidas-extraordinarias.jpg" alt="">
-                                            </div>
-                                            <div class="a-vision-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-white">VIDAS EXTRAORDINARIAS</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/nuestra-vision/carousel/10-titanes-del-ring.jpg" alt="">
-                                            </div>
-                                            <div class="a-vision-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-white">TITANES DEL RING</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/nuestra-vision/carousel/12-deportes-en-claro.jpg" alt="">
-                                            </div>
-                                            <div class="a-vision-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-white">DEPORTES EN CLARO</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php">
-                                            <div class="thumbnail">
-                                                <img src="./images/nuestra-vision/carousel/13-santo.jpg" alt="">
-                                            </div>
-                                            <div class="a-vision-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-white">SANTO CONTRA LA MAFÍA DEL VICIO</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
                         </div>
                         <!--End Nuestra visión de "Ahora en tv"-->
                         <!--Claro sports de "Ahora en tv"-->
