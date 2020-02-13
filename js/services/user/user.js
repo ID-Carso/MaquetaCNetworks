@@ -261,13 +261,33 @@ function addFavorites() {
       data: dataUser,
       url: "../../adapters/user.php",
       success: function(result) {
-        console.log(result);
+        let json = JSON.parse(result);
+        let sections = json.data;
+
+        sections.forEach(section => {
+          if (section.id_section == 1) {
+            localStorage.setItem(
+              "favoritesCanalClaro",
+              JSON.stringify(section.programs)
+            );
+          } else if (section.id_section == 2) {
+            localStorage.setItem(
+              "favoritesConcertChannel",
+              JSON.stringify(section.programs)
+            );
+          } else if (section.id_section == 3) {
+            localStorage.setItem(
+              "favoritesClaroCinema",
+              JSON.stringify(section.programs)
+            );
+          }
+        });
       }
     });
   });
 }
 
-function removeFavorites(user_id, program_id) {
+function removeFavorites(user_id, program_id, itemList) {
   let dataUser = {
     function: "removeFavorites",
     user_id: user_id,
@@ -278,7 +298,29 @@ function removeFavorites(user_id, program_id) {
     data: dataUser,
     url: "../../adapters/user.php",
     success: function(result) {
+      let json = JSON.parse(result);
+      let sections = json.data;
+
+      sections.forEach(section => {
+        if (section.id_section == 1) {
+          localStorage.setItem(
+            "favoritesCanalClaro",
+            JSON.stringify(section.programs)
+          );
+        } else if (section.id_section == 2) {
+          localStorage.setItem(
+            "favoritesConcertChannel",
+            JSON.stringify(section.programs)
+          );
+        } else if (section.id_section == 3) {
+          localStorage.setItem(
+            "favoritesClaroCinema",
+            JSON.stringify(section.programs)
+          );
+        }
+      });
       console.log(result);
+      itemList.remove();
     }
   });
 }

@@ -261,6 +261,10 @@ function getPrograms(date, time) {
         nowSliderClaroCinema.append(programClaroCinema);
       });
 
+      /* 
+      
+      
+      */
       let programNuestraVision;
       programingNuestraVision.forEach((program, index) => {
         if (index == 0) {

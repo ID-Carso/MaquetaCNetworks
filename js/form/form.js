@@ -2,10 +2,10 @@ function ShowHidePassword(iconPassword) {
   let password = iconPassword.previousElementSibling;
   if (password.type == "password") {
     password.type = "text";
-    iconPassword.setAttribute("src", "images/registro/eye-none.svg");
+    iconPassword.setAttribute("src", "images/registro/eye.svg");
   } else {
     password.type = "password";
-    iconPassword.setAttribute("src", "images/registro/eye.svg");
+    iconPassword.setAttribute("src", "images/registro/eye-none.svg");
   }
 }
 

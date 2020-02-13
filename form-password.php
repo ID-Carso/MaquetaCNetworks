@@ -19,7 +19,7 @@
           <div class="col-sm-12 col-md-12 col-lg-12">
             <img src="images/registro/group-3.svg" class="form-image-blue" />
             <a href="home.php">
-              <img src="images/registro/group-24.svg" class="ubicacion1" /></a>
+              <img src="./images/home/claro-logo.svg" class="ubicacion1" /></a>
             <img src="images/registro/group-37.svg" class="ubicacion" />
           </div>
         </div>
@@ -33,7 +33,7 @@
                 <div>
                   <div class="position-relative">
                     <input class="insert-data" type="password" placeholder="Escribe tu contraseña nueva *" id="new-password" />
-                    <img src="images/registro/eye.svg" class="icon-eye" />
+                    <img src="images/registro/eye-none.svg" class="icon-eye" />
                   </div>
 
 
@@ -44,7 +44,7 @@
                 <div class="mb-5">
                   <div class="position-relative">
                     <input class="insert-data" type="password" placeholder="Escribe tu contraseña de nuevo" id="new-confirm-password" />
-                    <img src="images/registro/eye.svg" class="icon-eye" />
+                    <img src="images/registro/eye-none.svg" class="icon-eye" />
                   </div>
 
 

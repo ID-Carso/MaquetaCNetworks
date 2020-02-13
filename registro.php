@@ -42,9 +42,9 @@
                                                                 <div class="centro">
                                                                         <input class="insert-data input-email" type="email" id="signup-correo" name="correo" placeholder="Correo electrónico">
                                                                         <p class="correo-valido" id="error_email">
-                    Correo válido
-                    <img src="images/registro/alerta.svg" class="error" />
-                  </p>
+                                                                                Correo válido
+                                                                                <img src="images/registro/alerta.svg" class="error" />
+                                                                        </p>
 
                                                                 </div>
                                                         </div>
@@ -54,8 +54,8 @@
                                                         <div class=" col-sm-12 no-gap">
                                                                 <div class="centro">
                                                                         <div class="position-relative">
-                                                                        <input class="insert-data" type="password" id="signup-password" name="signup-password" placeholder="Contraseña">
-                                                                        <img src="images/registro/eye.svg" class="ubicacion4 icon-eye" />
+                                                                                <input class="insert-data" type="password" id="signup-password" name="signup-password" placeholder="Contraseña">
+                                                                                <img src="images/registro/eye-none.svg" class="ubicacion4 icon-eye" />
                                                                         </div>
 
 
@@ -85,7 +85,7 @@
                                                 <br>
                                                 <div>
                                                         <div>
-                                                                <button type="button" class="signup-button form-button-outline" data-target="#mensaje">SIGUIENTE</button>
+                                                                <button type="button" class="signup-button form-button-primary" data-target="#mensaje">SIGUIENTE</button>
                                                         </div>
                                                 </div>
                                         </form>

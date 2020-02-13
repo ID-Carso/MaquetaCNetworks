@@ -41,7 +41,7 @@
                 <div class="tamaño2 centro">
                   <div class="position-relative">
                     <input class="insert-data input-password" type="password" id="login-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
-                    <img src="images/registro/eye.svg" class="icon-eye" />
+                    <img src="images/registro/eye-none.svg" class="icon-eye" />
                   </div>
 
 
