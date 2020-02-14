@@ -743,7 +743,8 @@ input[type="radio"] {
 }
 
 .mujer-estilo {
-  width: 151px;
+  width: 100%;
+  max-width: 183px;
   height: 44px;
   font-size: 16px;
   font-family: $montserratRegular;
@@ -761,7 +762,8 @@ input[type="radio"] {
 }
 
 .hombre-estilo {
-  width: 151px;
+  width: 100%;
+  max-width: 183px;
   height: 44px;
   font-size: 16px;
   font-family: $montserratRegular;
@@ -816,7 +818,7 @@ input[type="radio"]:checked + .mujer-estilo {
 
 /*Lista desplegable de dias*/
 #select-Dia {
-  width: 90px;
+  width: 100%;
   height: 50px;
   border-radius: 25px;
   border: solid 1px #ffffff;
@@ -899,7 +901,7 @@ input[type="radio"]:checked + .mujer-estilo {
 
 /*Lista desplegable de meses*/
 #select-Mes {
-  width: 90px;
+  width: 100%;
   height: 50px;
   border-radius: 25px;
   border: solid 1px #ffffff;
@@ -982,7 +984,7 @@ input[type="radio"]:checked + .mujer-estilo {
 
 /*Lista desplegable de años*/
 #select-Año {
-  width: 90px;
+  width: 100%;
   height: 50px;
   border-radius: 25px;
   border: solid 1px #ffffff;

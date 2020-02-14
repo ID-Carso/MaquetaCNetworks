@@ -84,6 +84,9 @@ function getPrograms(date, time) {
   let nowSliderConcertChannel = $(".today-concert-channel-slider");
   let nowSliderClaroCinema = $(".today-claro-cinema-slider");
   let nowSliderNuestraVision = $("#tv-vision-slider");
+  let claroCotentProgramacionGeneral = $(".claro-content");
+  let concertContentProgramacionGeneral = $(".concert-content");
+  let cinemaContentProgramacionGeneral = $(".cinema-content");
 
   $.ajax({
     type: "POST",
@@ -155,6 +158,47 @@ function getPrograms(date, time) {
           `;
         }
         nowSliderCanalClaro.append(programCanalClaro);
+
+        /* PROGRAMACIÓN GENERAL*/
+        /* CANAL CLARO*/
+        programCanalClaro = `
+        <div class="schedule-container">
+        <p class="schedule-title">${program.title}</p>
+        <div class="schedule-item-body">
+            <div class="schedule-poster">
+                <div class="poster">
+                    <div class="thumbnail-prog">
+                        <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-details">
+                <div class="schedule-details-header">
+                    <div>
+                        <p class="schedule">${program.time}</p>
+                        <p class="rating">Clasificación: A</p>
+                    </div>
+                    <div>
+                        <button class="schedule-add" type="button" _id="${program.id_program}>
+                            <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
+                        </button>
+                    </div>
+                </div>
+                <p class="schedule-description">Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+        </div>
+
+    </div>
+        `;
+        claroCotentProgramacionGeneral.append(programCanalClaro);
+
+        /* END PROGRAMACIÓN GENERAL - CANAL CLARO*/
       });
 
       let programConcertChannel;
@@ -207,6 +251,46 @@ function getPrograms(date, time) {
           `;
         }
         nowSliderConcertChannel.append(programConcertChannel);
+
+        /* PROGRAMACIÓN GENERAL - CONCERT CHANNEL*/
+        programConcertChannel = `
+        <div class="schedule-container">
+        <p class="schedule-title">${program.title}</p>
+        <div class="schedule-item-body">
+            <div class="schedule-poster">
+                <div class="poster">
+                    <div class="thumbnail-prog">
+                        <img src="./images/concert-channel/carrousel/${program.image}" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-details">
+                <div class="schedule-details-header">
+                    <div>
+                        <p class="schedule">${program.time}</p>
+                        <p class="rating">Clasificación: A</p>
+                    </div>
+                    <div>
+                        <button class="schedule-add" type="button" _id="${program.id_program}>
+                            <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
+                        </button>
+                    </div>
+                </div>
+                <p class="schedule-description">Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+        </div>
+
+    </div>
+        `;
+        concertContentProgramacionGeneral.append(programConcertChannel);
+
+        /* END PROGRAMACIÓN GENERAL - CONCERT CHANNEL*/
       });
 
       let programClaroCinema;
@@ -259,12 +343,48 @@ function getPrograms(date, time) {
           `;
         }
         nowSliderClaroCinema.append(programClaroCinema);
+
+        /* PROGRAMACIÓN GENERAL - CLARO CINEMA*/
+        programClaroCinema = `
+        <div class="schedule-container">
+        <p class="schedule-title">${program.title}</p>
+        <div class="schedule-item-body">
+            <div class="schedule-poster">
+                <div class="poster">
+                    <div class="thumbnail-prog">
+                        <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-details">
+                <div class="schedule-details-header">
+                    <div>
+                        <p class="schedule">${program.time}</p>
+                        <p class="rating">Clasificación: A</p>
+                    </div>
+                    <div>
+                        <button class="schedule-add" type="button" _id="${program.id_program}>
+                            <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
+                        </button>
+                    </div>
+                </div>
+                <p class="schedule-description">Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+        </div>
+
+    </div>
+        `;
+
+        cinemaContentProgramacionGeneral.append(programClaroCinema);
+        /* END PROGRAMACIÓN GENERAL - CLARO CINEMA*/
       });
 
-      /* 
-      
-      
-      */
       let programNuestraVision;
       programingNuestraVision.forEach((program, index) => {
         if (index == 0) {
@@ -323,6 +443,10 @@ function getPrograms(date, time) {
       createTvSlider(nowSliderNuestraVision);
       addFavorites();
       /* END SLIDER "AHORA EN VIVO CANAL CLARO*/
+
+      /*  PROGRAMACIÓN GENERAL */
+
+      /* END PROGRMACIÓN GENERAL*/
     }
   });
 }

@@ -162,79 +162,79 @@
                                                 <p class="day-number">02</p>
                                             </div>
                                         </li>
-                                        <li class="claro-item">
+                                        <li rel="claro-03" class="claro-item">
                                             <div class="day">
                                                 <p class="day-text">JUE</p>
                                                 <p class="day-number">03</p>
                                             </div>
                                         </li>
-                                        <li class="claro-item">
+                                        <li rel="claro-04" class="claro-item">
                                             <div class="day">
                                                 <p class="day-text">VIE</p>
                                                 <p class="day-number">04</p>
                                             </div>
                                         </li>
-                                        <li class="claro-item">
+                                        <li rel="claro-05" class="claro-item">
                                             <div class="day">
                                                 <p class="day-text">SAB</p>
                                                 <p class="day-number">05</p>
                                             </div>
                                         </li>
-                                        <li class="claro-item">
+                                        <li rel="claro-06" class="claro-item">
                                             <div class="day">
                                                 <p class="day-text">DOM</p>
                                                 <p class="day-number">06</p>
                                             </div>
                                         </li>
-                                        <li class="claro-item">
+                                        <li rel="claro-07" class="claro-item">
                                             <div class="day">
                                                 <p class="day-text">LUN</p>
                                                 <p class="day-number">07</p>
                                             </div>
                                         </li>
-                                        <li class="claro-item">
+                                        <li rel="claro-08" class="claro-item">
                                             <div class="day">
                                                 <p class="day-text">MAR</p>
                                                 <p class="day-number">08</p>
                                             </div>
                                         </li>
-                                        <li class="claro-item">
+                                        <li rel="claro-09" class="claro-item">
                                             <div class="day">
                                                 <p class="day-text">MIER</p>
                                                 <p class="day-number">09</p>
                                             </div>
                                         </li>
-                                        <li class="claro-item">
+                                        <li rel="claro-10" class="claro-item">
                                             <div class="day">
                                                 <p class="day-text">JUE</p>
                                                 <p class="day-number">10</p>
                                             </div>
                                         </li>
-                                        <li class="claro-item">
+                                        <li rel="claro-11" class="claro-item">
                                             <div class="day">
                                                 <p class="day-text">VIE</p>
                                                 <p class="day-number">11</p>
                                             </div>
                                         </li>
-                                        <li class="claro-item">
+                                        <li rel="claro-12" class="claro-item">
                                             <div class="day">
                                                 <p class="day-text">MIER</p>
                                                 <p class="day-number">12</p>
                                             </div>
                                         </li>
-                                        <li class="claro-item">
+                                        <li rel="claro-13" class="claro-item">
                                             <div class="day">
                                                 <p class="day-text">JUE</p>
                                                 <p class="day-number">13</p>
                                             </div>
                                         </li>
-                                        <li class="claro-item">
+                                        <li rel="claro-14" class="claro-item">
                                             <div class="day">
                                                 <p class="day-text">VIE</p>
                                                 <p class="day-number">14</p>
                                             </div>
                                         </li>
-                                        <li class="claro-item">
+                                        <li rel="claro-15" class="claro-item">
                                             <div class="day">
                                                 <p class="day-text">SAB</p>
                                                 <p class="day-number">15</p>
@@ -344,283 +344,22 @@
                     </div>
 
 
-                    <div id="claro-01" class="claro-content">
-                        <div class="no-gutters">
-                            <div class="">
+                    <div id="claro-01" class="claro-content"></div>
+                    <div id="claro-02" class="claro-content"></div>
+                    <div id="claro-03" class="claro-content"></div>
+                    <div id="claro-04" class="claro-content"></div>
+                    <div id="claro-05" class="claro-content"></div>
+                    <div id="claro-06" class="claro-content"></div>
+                    <div id="claro-07" class="claro-content"></div>
+                    <div id="claro-08" class="claro-content"></div>
+                    <div id="claro-09" class="claro-content"></div>
+                    <div id="claro-10" class="claro-content"></div>
+                    <div id="claro-11" class="claro-content"></div>
+                    <div id="claro-12" class="claro-content"></div>
+                    <div id="claro-13" class="claro-content"></div>
+                    <div id="claro-14" class="claro-content"></div>
+                    <div id="claro-15" class="claro-content"></div>
 
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="claro-02" class="claro-content">
-                        <div class="no-gutters">
-                            <div class="">
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div id="concert-channel" class="tv-content">
@@ -647,79 +386,79 @@
                                                 <p class="day-number">02</p>
                                             </div>
                                         </li>
-                                        <li class="concert-item">
+                                        <li rel="concert-03" class="concert-item">
                                             <div class="day">
                                                 <p class="day-text">JUE</p>
                                                 <p class="day-number">03</p>
                                             </div>
                                         </li>
-                                        <li class="concert-item">
+                                        <li rel="concert-04" class="concert-item">
                                             <div class="day">
                                                 <p class="day-text">VIE</p>
                                                 <p class="day-number">04</p>
                                             </div>
                                         </li>
-                                        <li class="concert-item">
+                                        <li rel="concert-05" class="concert-item">
                                             <div class="day">
                                                 <p class="day-text">SAB</p>
                                                 <p class="day-number">05</p>
                                             </div>
                                         </li>
-                                        <li class="concert-item">
+                                        <li rel="concert-06" class="concert-item">
                                             <div class="day">
                                                 <p class="day-text">DOM</p>
                                                 <p class="day-number">06</p>
                                             </div>
                                         </li>
-                                        <li class="concert-item">
+                                        <li rel="concert-07" class="concert-item">
                                             <div class="day">
                                                 <p class="day-text">LUN</p>
                                                 <p class="day-number">07</p>
                                             </div>
                                         </li>
-                                        <li class="concert-item">
+                                        <li rel="concert-08" class="concert-item">
                                             <div class="day">
                                                 <p class="day-text">MAR</p>
                                                 <p class="day-number">08</p>
                                             </div>
                                         </li>
-                                        <li class="concert-item">
+                                        <li rel="concert-09" class="concert-item">
                                             <div class="day">
                                                 <p class="day-text">MIER</p>
                                                 <p class="day-number">09</p>
                                             </div>
                                         </li>
-                                        <li class="concert-item">
+                                        <li rel="concert-10" class="concert-item">
                                             <div class="day">
                                                 <p class="day-text">JUE</p>
                                                 <p class="day-number">10</p>
                                             </div>
                                         </li>
-                                        <li class="concert-item">
+                                        <li rel="concert-11" class="concert-item">
                                             <div class="day">
                                                 <p class="day-text">VIE</p>
                                                 <p class="day-number">11</p>
                                             </div>
                                         </li>
-                                        <li class="concert-item">
+                                        <li rel="concert-12" class="concert-item">
                                             <div class="day">
                                                 <p class="day-text">MIER</p>
                                                 <p class="day-number">12</p>
                                             </div>
                                         </li>
-                                        <li class="concert-item">
+                                        <li rel="concert-13" class="concert-item">
                                             <div class="day">
                                                 <p class="day-text">JUE</p>
                                                 <p class="day-number">13</p>
                                             </div>
                                         </li>
-                                        <li class="concert-item">
+                                        <li rel="concert-14" class="concert-item">
                                             <div class="day">
                                                 <p class="day-text">VIE</p>
                                                 <p class="day-number">14</p>
                                             </div>
                                         </li>
-                                        <li class="concert-item">
+                                        <li rel="concert-15" class="concert-item">
                                             <div class="day">
                                                 <p class="day-text">SAB</p>
                                                 <p class="day-number">15</p>
@@ -829,282 +568,21 @@
                     </div>
 
 
-                    <div id="concert-01" class="concert-content">
-                        <div class="no-gutters">
-                            <div class="">
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="concert-02" class="concert-content">
-                        <div class="no-gutters">
-                            <div class="">
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="concert-01" class="concert-content"></div>
+                    <div id="concert-02" class="concert-content"></div>
+                    <div id="concert-03" class="concert-content"></div>
+                    <div id="concert-04" class="concert-content"></div>
+                    <div id="concert-05" class="concert-content"></div>
+                    <div id="concert-06" class="concert-content"></div>
+                    <div id="concert-07" class="concert-content"></div>
+                    <div id="concert-08" class="concert-content"></div>
+                    <div id="concert-09" class="concert-content"></div>
+                    <div id="concert-10" class="concert-content"></div>
+                    <div id="concert-11" class="concert-content"></div>
+                    <div id="concert-12" class="concert-content"></div>
+                    <div id="concert-13" class="concert-content"></div>
+                    <div id="concert-14" class="concert-content"></div>
+                    <div id="concert-15" class="concert-content"></div>
                 </div>
                 <!--End Concert channel de "Ahora en tv"-->
                 <!--Claro cinema de "Ahora en tv"-->
@@ -1132,79 +610,79 @@
                                                 <p class="day-number">02</p>
                                             </div>
                                         </li>
-                                        <li class="cinema-item">
+                                        <li rel="cinema-03" class="cinema-item">
                                             <div class="day">
                                                 <p class="day-text">JUE</p>
                                                 <p class="day-number">03</p>
                                             </div>
                                         </li>
-                                        <li class="cinema-item">
+                                        <li rel="cinema-04" class="cinema-item">
                                             <div class="day">
                                                 <p class="day-text">VIE</p>
                                                 <p class="day-number">04</p>
                                             </div>
                                         </li>
-                                        <li class="cinema-item">
+                                        <li rel="cinema-05" class="cinema-item">
                                             <div class="day">
                                                 <p class="day-text">SAB</p>
                                                 <p class="day-number">05</p>
                                             </div>
                                         </li>
-                                        <li class="cinema-item">
+                                        <li rel="cinema-06" class="cinema-item">
                                             <div class="day">
                                                 <p class="day-text">DOM</p>
                                                 <p class="day-number">06</p>
                                             </div>
                                         </li>
-                                        <li class="cinema-item">
+                                        <li rel="cinema-07" class="cinema-item">
                                             <div class="day">
                                                 <p class="day-text">LUN</p>
                                                 <p class="day-number">07</p>
                                             </div>
                                         </li>
-                                        <li class="cinema-item">
+                                        <li rel="cinema-08" class="cinema-item">
                                             <div class="day">
                                                 <p class="day-text">MAR</p>
                                                 <p class="day-number">08</p>
                                             </div>
                                         </li>
-                                        <li class="cinema-item">
+                                        <li rel="cinema-09" class="cinema-item">
                                             <div class="day">
                                                 <p class="day-text">MIER</p>
                                                 <p class="day-number">09</p>
                                             </div>
                                         </li>
-                                        <li class="cinema-item">
+                                        <li rel="cinema-10" class="cinema-item">
                                             <div class="day">
                                                 <p class="day-text">JUE</p>
                                                 <p class="day-number">10</p>
                                             </div>
                                         </li>
-                                        <li class="cinema-item">
+                                        <li rel="cinema-11" class="cinema-item">
                                             <div class="day">
                                                 <p class="day-text">VIE</p>
                                                 <p class="day-number">11</p>
                                             </div>
                                         </li>
-                                        <li class="cinema-item">
+                                        <li rel="cinema-12" class="cinema-item">
                                             <div class="day">
                                                 <p class="day-text">MIER</p>
                                                 <p class="day-number">12</p>
                                             </div>
                                         </li>
-                                        <li class="cinema-item">
+                                        <li rel="cinema-13" class="cinema-item">
                                             <div class="day">
                                                 <p class="day-text">JUE</p>
                                                 <p class="day-number">13</p>
                                             </div>
                                         </li>
-                                        <li class="cinema-item">
+                                        <li rel="cinema-14" class="cinema-item">
                                             <div class="day">
                                                 <p class="day-text">VIE</p>
                                                 <p class="day-number">14</p>
                                             </div>
                                         </li>
-                                        <li class="cinema-item">
+                                        <li rel="cinema-15" class="cinema-item">
                                             <div class="day">
                                                 <p class="day-text">SAB</p>
                                                 <p class="day-number">15</p>
@@ -1312,283 +790,21 @@
 
                         </div>
                     </div>
-                    <div id="cinema-01" class="cinema-content">
-                        <div class="no-gutters">
-                            <div class="">
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="cinema-02" class="cinema-content">
-                        <div class="no-gutters">
-                            <div class="">
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="schedule-container">
-                                    <p class="schedule-title">Coldplay</p>
-                                    <div class="schedule-item-body">
-                                        <div class="schedule-poster">
-                                            <div class="poster">
-                                                <div class="thumbnail-prog">
-                                                    <img src="./images/posters/coldplay-tour.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="schedule-details">
-                                            <div class="schedule-details-header">
-                                                <div>
-                                                    <p class="schedule">10:00 - 10:30 pm</p>
-                                                    <p class="rating">Clasificación: A</p>
-                                                </div>
-                                                <div>
-                                                    <button class="schedule-add" type="button">
-                                                        <p class="schedule-add-text">añadir a mi lista</p> <img src="./images/programacion/plus.svg" class="schedule-add-icon" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p class="schedule-description">Lorem ipsum dolor sit amet,
-                                                consectetur
-                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="cinema-01" class="cinema-content"></div>
+                    <div id="cinema-02" class="cinema-content"></div>
+                    <div id="cinema-03" class="cinema-content"></div>
+                    <div id="cinema-04" class="cinema-content"></div>
+                    <div id="cinema-05" class="cinema-content"></div>
+                    <div id="cinema-06" class="cinema-content"></div>
+                    <div id="cinema-07" class="cinema-content"></div>
+                    <div id="cinema-08" class="cinema-content"></div>
+                    <div id="cinema-09" class="cinema-content"></div>
+                    <div id="cinema-10" class="cinema-content"></div>
+                    <div id="cinema-11" class="cinema-content"></div>
+                    <div id="cinema-12" class="cinema-content"></div>
+                    <div id="cinema-13" class="cinema-content"></div>
+                    <div id="cinema-14" class="cinema-content"></div>
+                    <div id="cinema-15" class="cinema-content"></div>
                 </div>
 
                 <!--End Claro cinema de "Ahora en tv"-->

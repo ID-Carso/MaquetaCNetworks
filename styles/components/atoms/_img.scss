@@ -572,3 +572,12 @@
 .no-favorites-img {
   width: 115px;
 }
+
+.arrow-back {
+  display: none;
+  width: 70px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-30%, -30%);
+}

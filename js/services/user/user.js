@@ -263,6 +263,7 @@ function addFavorites() {
       success: function(result) {
         let json = JSON.parse(result);
         let sections = json.data;
+        console.log(sections);
 
         sections.forEach(section => {
           if (section.id_section == 1) {
@@ -301,26 +302,68 @@ function removeFavorites(user_id, program_id, itemList) {
       let json = JSON.parse(result);
       let sections = json.data;
 
-      sections.forEach(section => {
-        if (section.id_section == 1) {
-          localStorage.setItem(
-            "favoritesCanalClaro",
-            JSON.stringify(section.programs)
-          );
-        } else if (section.id_section == 2) {
-          localStorage.setItem(
-            "favoritesConcertChannel",
-            JSON.stringify(section.programs)
-          );
-        } else if (section.id_section == 3) {
-          localStorage.setItem(
-            "favoritesClaroCinema",
-            JSON.stringify(section.programs)
-          );
-        }
-      });
+      if (sections !== null) {
+        sections.forEach(section => {
+          if (section.id_section == 1) {
+            localStorage.setItem(
+              "favoritesCanalClaro",
+              JSON.stringify(section.programs)
+            );
+          } else if (section.id_section == 2) {
+            localStorage.setItem(
+              "favoritesConcertChannel",
+              JSON.stringify(section.programs)
+            );
+          } else if (section.id_section == 3) {
+            localStorage.setItem(
+              "favoritesClaroCinema",
+              JSON.stringify(section.programs)
+            );
+          }
+        });
+      }
+
       console.log(result);
       itemList.remove();
+      let favoritesCanalClaro = JSON.parse(
+        localStorage.getItem("favoritesCanalClaro")
+      );
+      let favoritesConcertChannel = JSON.parse(
+        localStorage.getItem("favoritesConcertChannel")
+      );
+      let favoritesClaroCinema = JSON.parse(
+        localStorage.getItem("favoritesClaroCinema")
+      );
+
+      if (favoritesCanalClaro.length == 0) {
+        $(".claro-list").remove();
+      }
+      if (favoritesConcertChannel.length == 0) {
+        $(".concert-list ").remove();
+      }
+      if (favoritesClaroCinema.length == 0) {
+        $(".cinema-list").remove();
+      }
+
+      if (
+        favoritesClaroCinema.length == 0 &&
+        favoritesCanalClaro.length == 0 &&
+        favoritesConcertChannel.length == 0
+      ) {
+        let listFavorites = $(".mi-lista-container");
+        let myFavorites = `
+        <div class="no-gutters mt-4 mt-xl-5 pt-xl-5">
+          <div class="col-12">
+              <p class="a-text-warm-grey-bold mb-3 text-center no-favorites-title mb-xl-4">No tienes favoritos guardados todavía</p>
+              <p class="a-text-warm-grey-regular text-center no-favorites-subtitle">Explora y descubre más</p>
+          </div>
+        </div>
+        <div class="text-center mt-5 pt-md-4 mt-xl-5">
+            <img src="./images/mi-lista/favorites.svg" alt="" class="no-favorites-img">
+        </div>
+            `;
+        listFavorites.append(myFavorites);
+      }
     }
   });
 }

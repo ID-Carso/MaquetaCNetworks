@@ -1755,7 +1755,7 @@ h6 {
 
 .form-button-primary {
   width: 100%;
-  max-width: 288px;
+  max-width: 367px;
   height: 44px;
   border-radius: 21.5px;
   background-color: #069cb0;
@@ -1773,7 +1773,7 @@ h6 {
 
 .form-button-outline {
   width: 100%;
-  max-width: 288px;
+  max-width: 367px;
   height: 44px;
   border-radius: 21.5px;
   outline: none !important;
@@ -2479,6 +2479,16 @@ h6 {
   width: 115px;
 }
 
+.arrow-back {
+  display: none;
+  width: 70px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(-30%, -30%);
+          transform: translate(-30%, -30%);
+}
+
 .hr1 {
   display: none;
 }
@@ -2799,6 +2809,7 @@ input:checked + .slideralert:before {
 }
 
 .cuadro-dia {
+  width: 100%;
   height: 50px;
   margin: none;
 }
@@ -3482,7 +3493,8 @@ input[type="radio"] {
 }
 
 .mujer-estilo {
-  width: 151px;
+  width: 100%;
+  max-width: 183px;
   height: 44px;
   font-size: 16px;
   font-family: "Montserrat-Regular";
@@ -3500,7 +3512,8 @@ input[type="radio"] {
 }
 
 .hombre-estilo {
-  width: 151px;
+  width: 100%;
+  max-width: 183px;
   height: 44px;
   font-size: 16px;
   font-family: "Montserrat-Regular";
@@ -3555,7 +3568,7 @@ input[type="radio"]:checked + .mujer-estilo {
 
 /*Lista desplegable de dias*/
 #select-Dia {
-  width: 90px;
+  width: 100%;
   height: 50px;
   border-radius: 25px;
   border: solid 1px #ffffff;
@@ -3642,7 +3655,7 @@ input[type="radio"]:checked + .mujer-estilo {
 
 /*Lista desplegable de meses*/
 #select-Mes {
-  width: 90px;
+  width: 100%;
   height: 50px;
   border-radius: 25px;
   border: solid 1px #ffffff;
@@ -3729,7 +3742,7 @@ input[type="radio"]:checked + .mujer-estilo {
 
 /*Lista desplegable de años*/
 #select-Año {
-  width: 90px;
+  width: 100%;
   height: 50px;
   border-radius: 25px;
   border: solid 1px #ffffff;
@@ -7363,6 +7376,9 @@ input[type="radio"]:checked + .mujer-estilo {
     width: 35px;
     height: 35px;
   }
+  .arrow-back {
+    display: block;
+  }
   /*End Generales - átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -8528,6 +8544,9 @@ input[type="radio"]:checked + .mujer-estilo {
   .image-user {
     width: 35px;
     height: 35px;
+  }
+  .arrow-back {
+    display: block;
   }
   /*End General - Átomos*/
   /*-----------------------------*/
