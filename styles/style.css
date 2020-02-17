@@ -2487,6 +2487,7 @@ h6 {
   top: 0;
   -webkit-transform: translate(-30%, -30%);
           transform: translate(-30%, -30%);
+  cursor: pointer;
 }
 
 .hr1 {

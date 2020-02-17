@@ -32,7 +32,8 @@
         </header>
 
         <div class="alertas-container no-gutters">
-                <div class="col-sm-12 mx-auto no-gutters col-md-6 no-gutters col-lg-4 col-xl-4 alertas-content shadow1 fondolog">
+                <div class="col-sm-12 mx-auto no-gutters col-md-6 no-gutters col-lg-4 col-xl-4 alertas-content shadow1 fondolog position-relative">
+                        <a href="configuracion.php"> <img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back"></a>
                         <img src="images/registro/group-10.svg" class="ubicacion5" />
                         <img src="images/config/puntos.svg" class="ubicacionpuntos">
 
