@@ -19,6 +19,10 @@ function validateTokenPassword(tokenPassword) {
   });
 }
 
+function showNotification() {
+  let id = localStorage.getItem("id");
+}
+
 function sendUserEmail(inputEmail) {
   let email = inputEmail.val();
 
@@ -72,29 +76,34 @@ function sendNewPassword(inputPassword, secondInputPassword) {
 }
 
 function signIn(email, password) {
+  let dataUser = {
+    function: "signIn",
+    email: email,
+    password: password
+  };
+
   $.ajax({
-    type: "GET",
-    url:
-      "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/login/" +
-      email +
-      "&" +
-      password +
-      "",
+    type: "POST",
+    data: dataUser,
+    url: "../../adapters/user.php",
 
     success: function(result) {
       console.log(result);
-      if (result.data) {
+      let json = JSON.parse(result);
+      if (json.data) {
+        console.log("json", json);
         location.href =
           "http://www.claronetworks.openofficedospuntocero.info/home.php";
 
         localStorage.setItem("session", 1);
-        localStorage.setItem("id", result.data.id);
-        localStorage.setItem("name", result.data.name);
-        localStorage.setItem("avatar", result.data.avatar);
-        localStorage.setItem("gender", result.data.avatar);
-        localStorage.setItem("birthday", result.data.avatar);
-        localStorage.setItem("src", result.data.country.image);
-        let date = result.data.birthday.split("-");
+        console.log(localStorage.setItem("name", json.data.name));
+        localStorage.setItem("id", json.data.id);
+        localStorage.setItem("name", json.data.name);
+        localStorage.setItem("avatar", json.data.avatar);
+        localStorage.setItem("gender", json.data.avatar);
+        localStorage.setItem("birthday", json.data.avatar);
+        localStorage.setItem("src", json.data.country.image);
+        let date = json.data.birthday.split("-");
         localStorage.setItem("day", date[2]);
         localStorage.setItem("month", date[1]);
         localStorage.setItem("year", date[0]);

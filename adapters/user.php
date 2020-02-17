@@ -55,6 +55,11 @@ class User
         callAPI("PUT", $url, $json);
     }
 
+    function signIn($data)
+    {
+        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/login", $data);
+    }
+
     function registerUser($name, $email, $password)
     {
         $dataUser = array("name" => $name, "email" => $email, "password" => $password);
@@ -112,6 +117,18 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
 
 
     switch ($funcion) {
+
+        case 'signIn':
+            if (is_string($_POST['email']) && is_string($_POST['password'])) {
+                $email = $_POST['email'];
+                $password = $_POST['password'];
+                $data = array("email" => $email, "password" => $password);
+                $dataJson = json_encode($data);
+                $user = User::getUserInstance();
+                echo ($user->signIn($dataJson));
+            }
+            break;
+
         case 'registerUser':
             if (is_string($_POST['name']) && is_string($_POST['email']) && is_string($_POST['password'])) {
                 $name = $_POST['name'];
@@ -127,12 +144,6 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
 
             $data = array("id" => $_POST['id'], "gender" => $_POST['gender'], "birthday" => $_POST['date'], "country" => $_POST['country']);
             $dataJson = json_encode($data);
-
-            //$data = $_POST['dataUser'];
-
-
-
-
             $user = User::getUserInstance();
             echo ($user->updateDataUser($dataJson));
             break;

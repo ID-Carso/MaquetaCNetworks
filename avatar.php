@@ -70,7 +70,7 @@
 
   <div style="padding-top: 3%">
     <div class="col-sm-12 no-gutters col-md-8 mx-auto no-gutters col-lg-4 col-xl-3 shadow1 fondolog position-relative">
-      <a href="configuracion.php"> <img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back"></a>
+      <a href="configuracion.php"><img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back"></a>
       <img src="images/registro/group-10.svg" class="ubicacion5" />
       <br /><br /><br />
       <div class="row ma-no centro">

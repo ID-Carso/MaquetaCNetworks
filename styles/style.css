@@ -2724,6 +2724,10 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
+#switch-minutes-before {
+  background-color: #2196f3;
+}
+
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
@@ -2759,12 +2763,12 @@ input:checked + .slider:before {
 }
 
 input:checked + .slideralert {
-  background-color: #2196f3;
+  background-color: #03ad50;
 }
 
 input:focus + .slideralert {
-  -webkit-box-shadow: 0 0 1px #2196f3;
-          box-shadow: 0 0 1px #2196f3;
+  -webkit-box-shadow: 0 0 1px #03ad50;
+          box-shadow: 0 0 1px #03ad50;
 }
 
 input:checked + .slideralert:before {

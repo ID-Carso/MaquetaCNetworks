@@ -71,7 +71,7 @@
                                                                 <span class="text-center texto-alert span-alert-left"> 15<br> min</span>
                                                                 <label class="switch-alert mr-2 ml-2">
                                                                         <input type="checkbox" class="alert-checkbox" value="30" id="alert-minutes-before">
-                                                                        <span class="slideralert roundalert"></span>
+                                                                        <span class="slideralert roundalert" id="switch-minutes-before"></span>
 
                                                                 </label>
                                                                 <span class="text-center texto-alert span-alert-right"> 30<br> min</span>
