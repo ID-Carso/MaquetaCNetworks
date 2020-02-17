@@ -19,6 +19,8 @@ import { selectAvatar } from "./services/user/user.js";
 import { updateAlerts } from "./services/user/user.js";
 import { addFavorites } from "./services/user/user.js";
 import { removeFavorites } from "./services/user/user.js";
+import { showNotification } from "./services/user/user.js";
+import { hideNotification } from "./services/user/user.js";
 
 /* Program */
 import { getPrograms } from "./services/Program.js";
@@ -628,6 +630,10 @@ $(document).ready(function() {
   var session = localStorage.getItem("session");
 
   if (session == 1) {
+    setTimeout(function() {
+      showNotification();
+    }, 2000);
+
     var sidebarContent = $(".sidebar-content");
     var sidebarItem = `                
     <div class="sidebar-item sidebar-border-bottom" id="sidebar-logout">

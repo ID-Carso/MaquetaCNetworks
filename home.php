@@ -75,7 +75,6 @@
         <button class="invisible-button"></button>
     </div>
     <main>
-
         <header class="home-header">
             <div class="circle-video">
                 <video preload="yes" playsinline autoplay muted loop class="home-video">
@@ -84,6 +83,8 @@
             </div>
 
             <div class="header">
+                <div class="alert-user">
+                </div>
                 <img src="./images/home/american-horror.jpeg" class="background-home rellax" data-rellax="10">
                 <nav class="menu-tablet">
                     <div class="nav-content">

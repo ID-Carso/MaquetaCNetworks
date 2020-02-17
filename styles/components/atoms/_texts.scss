@@ -1248,6 +1248,32 @@
   color: $warmGray;
 }
 
+.text-regular {
+  font-family: $montserratRegular;
+}
+
+.text-bold {
+  font-family: $montserratBold;
+}
+
+.text-light {
+  font-family: $montserratLight;
+}
+
+.text-monblack {
+  font-family: $montserratBlack;
+}
+
+.text-semibold {
+  font-family: $montserratSemiBold;
+}
+
+.alert-user-text {
+  color: $txtcontramin;
+  font-family: 14px;
+  margin-bottom: 0;
+}
+
 .a-correo-title {
   font-size: 27px;
   text-align: center;

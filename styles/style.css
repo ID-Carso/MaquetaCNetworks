@@ -1467,6 +1467,32 @@ h6 {
   color: #969292;
 }
 
+.text-regular {
+  font-family: "Montserrat-Regular";
+}
+
+.text-bold {
+  font-family: "Montserrat-Bold";
+}
+
+.text-light {
+  font-family: "Montserrat-Light";
+}
+
+.text-monblack {
+  font-family: "Montserrat-Black";
+}
+
+.text-semibold {
+  font-family: "Montserrat-SemiBold";
+}
+
+.alert-user-text {
+  color: #666262;
+  font-family: 14px;
+  margin-bottom: 0;
+}
+
 .a-correo-title {
   font-size: 27px;
   text-align: center;
@@ -2488,6 +2514,11 @@ h6 {
   -webkit-transform: translate(-30%, -30%);
           transform: translate(-30%, -30%);
   cursor: pointer;
+}
+
+.alert-image {
+  width: 100%;
+  max-width: 102px;
 }
 
 .hr1 {
@@ -4743,6 +4774,55 @@ input[type="radio"]:checked + .mujer-estilo {
   left: 97%;
   -webkit-transform: translate(-97%, 0px);
           transform: translate(-97%, 0px);
+}
+
+.alert-user {
+  position: absolute;
+  width: 100%;
+  border-radius: 9px;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+  background-color: var(--white);
+  right: -100%;
+  top: 15%;
+  z-index: 4;
+  max-width: 400px;
+}
+
+@-webkit-keyframes showAlert {
+  0% {
+    right: -100%;
+  }
+  25% {
+    right: 2%;
+  }
+  50% {
+    right: 2%;
+  }
+  75% {
+    right: 2%;
+  }
+  100% {
+    right: -100%;
+  }
+}
+
+@keyframes showAlert {
+  0% {
+    right: -100%;
+  }
+  25% {
+    right: 2%;
+  }
+  50% {
+    right: 2%;
+  }
+  75% {
+    right: 2%;
+  }
+  100% {
+    right: -100%;
+  }
 }
 
 .schedule-poster {

@@ -21,6 +21,36 @@ function validateTokenPassword(tokenPassword) {
 
 function showNotification() {
   let id = localStorage.getItem("id");
+  let name = localStorage.getItem("name");
+  let alert = $(".alert-user");
+  let date = new Date();
+  let day = date.getDate();
+  let month = date.getMonth();
+  let year = date.getFullYear();
+  let hour = date.getHours();
+  let minutes = date.getMinutes();
+  let seconds = date.getSeconds();
+  let currentDate = "2020-2-8";
+  let currentTime = `${hour}:${minutes}`;
+  let alertProgram = `
+  <div class="p-3">
+    <div class="d-flex align-items-center">
+      <img class="alert-image" src="./images/home/carrusel-ahora-en-vivo/01_Caballeros.jpg" />
+      <p class="text-regular alert-user-text pl-3">
+        ${name}: <br />
+        Los <span class="text-semibold alert-user-text">Caballeros del Zodiaco</span> está por comenzar<br />
+        ¡No te lo pierdas!    
+      </p>
+    </div>
+  </div>`;
+
+  alert.html(alertProgram);
+  alert.css("animation", "showAlert 8s");
+}
+
+function hideNotification() {
+  let alert = $(".alert-user");
+  alert.css("animation", "hideAlert");
 }
 
 function sendUserEmail(inputEmail) {
@@ -388,5 +418,7 @@ export {
   registerUser,
   updateAlerts,
   addFavorites,
-  removeFavorites
+  removeFavorites,
+  showNotification,
+  hideNotification
 };
