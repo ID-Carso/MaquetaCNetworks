@@ -201,7 +201,31 @@
   right: -100%;
   top: 15%;
   z-index: 4;
-  max-width: 400px;
+  max-width: 300px;
+  transition: all 1s;
+  transform: translate(50%, 0%);
+}
+
+@keyframes showAlert {
+  0% {
+    right: -100%;
+  }
+
+  25% {
+    right: 2%;
+  }
+
+  50% {
+    right: 2%;
+  }
+
+  75% {
+    right: 2%;
+  }
+
+  100% {
+    right: -100%;
+  }
 }
 
 @keyframes showAlert {

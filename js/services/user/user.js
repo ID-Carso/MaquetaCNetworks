@@ -43,9 +43,22 @@ function showNotification() {
       </p>
     </div>
   </div>`;
-
+  console.log(screen.width);
   alert.html(alertProgram);
-  alert.css("animation", "showAlert 8s");
+
+  if (screen.width >= 320 && screen.width < 768) {
+    alert.css("right", "50%");
+  } else if (screen.width > 767) {
+    alert.css("right", "22%");
+  }
+
+  $(window).resize(function() {
+    if (screen.width <= 320) {
+      alert.css("right", "50%");
+    } else if (screen.width > 767) {
+      alert.css("right", "22%");
+    }
+  });
 }
 
 function hideNotification() {

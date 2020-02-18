@@ -20,7 +20,9 @@
 </head>
 
 <body>
-  <header class="marca-header">
+  <header class="marca-header position-relative">
+    <div class="alert-user">
+    </div>
     <div class="hamburguer-menu">
       <div class="text-center sidebar-header">
 
@@ -82,8 +84,7 @@
       <button class="invisible-button"></button>
     </div>
     <div class="header">
-      <div class="alert-user">
-      </div>
+
       <!--Menú para móvil -->
       <?php
       include 'menu-mobile.php';
@@ -154,6 +155,7 @@
     </nav>
   </header>
   <div id="marca-container">
+
   </div>
 
 
