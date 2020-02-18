@@ -69,6 +69,8 @@
         </div>
 
         <div class="header">
+            <div class="alert-user">
+            </div>
             <!--Menú para móvil -->
             <?php
             include 'menu-mobile.php';

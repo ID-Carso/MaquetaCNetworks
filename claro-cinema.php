@@ -69,6 +69,8 @@
     </div>
 
     <div class="header">
+      <div class="alert-user">
+      </div>
       <img src="./images/header/yellow-curve.png" alt="" class="header-curve">
       <!--Menú para móvil -->
       <?php

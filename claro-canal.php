@@ -71,6 +71,8 @@
     </div>
 
     <div class="header">
+      <div class="alert-user">
+      </div>
       <img src="./images/header/curva.svg" alt="" class="header-curve">
 
       <!--Menú para móvil -->
