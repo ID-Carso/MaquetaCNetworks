@@ -21,44 +21,88 @@ function validateTokenPassword(tokenPassword) {
 
 function showNotification() {
   let id = localStorage.getItem("id");
-  let name = localStorage.getItem("name");
   let alert = $(".alert-user");
-  let date = new Date();
-  let day = date.getDate();
-  let month = date.getMonth();
-  let year = date.getFullYear();
-  let hour = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-  let currentDate = "2020-2-8";
-  let currentTime = `${hour}:${minutes}`;
-  let alertProgram = `
-  <div class="p-3">
-    <div class="d-flex align-items-center">
-      <img class="alert-image" src="./images/home/carrusel-ahora-en-vivo/01_Caballeros.jpg" />
-      <p class="text-regular alert-user-text pl-3">
-        ${name}: <br />
-        Los <span class="text-semibold alert-user-text">Caballeros del Zodiaco</span> está por comenzar<br />
-        ¡No te lo pierdas!    
-      </p>
-    </div>
-  </div>`;
-  console.log(screen.width);
-  alert.html(alertProgram);
 
-  if (screen.width >= 320 && screen.width < 768) {
-    alert.css("right", "50%");
-  } else if (screen.width > 767) {
-    alert.css("right", "22%");
-  }
+  setInterval(function() {
+    let alert = $(".alert-user");
+    let date = new Date();
+    let day = date.getDate();
+    let month = date.getMonth();
+    let year = date.getFullYear();
+    let hour = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+    let currentTime = `${hour}:${minutes}`;
+    let currentDate = `${year}-${month}-${day}`;
+    console.log(currentDate, currentTime);
+    let dataUser = {
+      function: "showNotificaction",
+      id: id,
+      currentTime: currentTime,
+      currentDate: currentDate
+    };
 
-  $(window).resize(function() {
-    if (screen.width <= 320) {
-      alert.css("right", "50%");
-    } else if (screen.width > 767) {
-      alert.css("right", "22%");
+    if (minutes == 0 || minutes == 15 || minutes == 30 || minutes == 45) {
+      $.ajax({
+        type: "POST",
+        data: dataUser,
+        url: "../../adapters/user.php",
+        success: function(result) {
+          let json = JSON.parse(result);
+          console.log(json);
+          if (json.code == 200) {
+            let name = localStorage.getItem("name");
+            let length = json.data.length;
+            let alertProgram = "";
+            for (let i = 0; i < length; i++) {
+              alertProgram += `
+              <div class="p-3">
+              <img src="./images/notifications/close-notification.svg" class="close-notification"/>
+                <div class="d-flex align-items-center">
+                  <img class="alert-image" src="${json.data[i].image}" />
+                  <p class="text-regular alert-user-text pl-3">
+                    ${name}: <br />
+                    <span class="text-semibold alert-user-text">${json.data[i].title}</span> está por comenzar<br />
+                    ¡No te lo pierdas!    
+                  </p>
+                </div>
+              </div>`;
+            }
+            alert.html(alertProgram);
+            if (screen.width >= 320 && screen.width < 768) {
+              alert.css("animation", "showAlertMobile 8s");
+              setTimeout(function() {
+                alert.css("animation", "none");
+              }, 8000);
+            } else if (screen.width > 767) {
+              alert.css("animation", "showAlert 8s");
+              setTimeout(function() {
+                alert.css("animation", "none");
+              }, 8000);
+            }
+
+            $(window).resize(function() {
+              if (screen.width >= 320 && screen.width < 768) {
+                alert.css("animation", "showAlertMobile 8s");
+                setTimeout(function() {
+                  alert.css("animation", "none");
+                }, 8000);
+              } else if (screen.width > 767) {
+                alert.css("animation", "showAlert 8s");
+                setTimeout(function() {
+                  alert.css("animation", "none");
+                }, 8000);
+              }
+            });
+
+            $(".close-notification").click(function() {
+              alert.css("animation", "none");
+            });
+          }
+        }
+      });
     }
-  });
+  }, 60000);
 }
 
 function hideNotification() {
@@ -300,6 +344,7 @@ function updateAlerts(configJson) {
 
 function addFavorites() {
   $(".poster-button").click(function() {
+    let heartIcon = $(this).children(".poster-add");
     let id_program = $(this).attr("_id");
     let id_user = localStorage.getItem("id");
     let dataUser = {
@@ -316,7 +361,7 @@ function addFavorites() {
         let json = JSON.parse(result);
         let sections = json.data;
         console.log(sections);
-
+        heartIcon.attr("src", "./images/posters/heart-icon-white.svg");
         sections.forEach(section => {
           if (section.id_section == 1) {
             localStorage.setItem(

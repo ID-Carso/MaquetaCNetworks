@@ -106,6 +106,11 @@ class User
     {
         callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/remove_favorites", $data);
     }
+
+    function showNotification($id, $currentTime, $currentDate)
+    {
+        callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/notification/" . $id . "&" . $currentTime . "&" . $currentDate . "", null);
+    }
 }
 
 
@@ -117,6 +122,18 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
 
 
     switch ($funcion) {
+
+        case 'showNotificaction':
+            if ($_POST["id"] && $_POST["currentTime"] && $_POST["currentDate"]) {
+                $id = $_POST["id"];
+                $currentTime = $_POST["currentTime"];
+                $currentDate = $_POST["currentDate"];
+
+
+                $user = User::getUserInstance();
+                $user->showNotification($id, $currentTime, $currentDate);
+            }
+            break;
 
         case 'signIn':
             if (is_string($_POST['email']) && is_string($_POST['password'])) {

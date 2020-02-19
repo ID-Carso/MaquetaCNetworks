@@ -101,6 +101,15 @@ function getPrograms(date, time) {
       let programingConcertChannel = json.data[1].programing[0].programs;
       let programingClaroCinema = json.data[2].programing[0].programs;
       let programingNuestraVision = json.data[3].programing[0].programs;
+      let favoritesClaroCanal = JSON.parse(
+        localStorage.getItem("favoritesCanalClaro")
+      );
+      let favoritesClaroCinema = JSON.parse(
+        localStorage.getItem("favoritesClaroCinema")
+      );
+      let favoritesConcertChannel = JSON.parse(
+        localStorage.getItem("favoritesConcertChanneñ")
+      );
 
       destroySlider(nowSliderCanalClaro);
       destroySlider(nowSliderConcertChannel);
@@ -110,13 +119,19 @@ function getPrograms(date, time) {
       programingCanalClaro.forEach((program, index) => {
         let programCanalClaro;
 
+        /*favoritesClaroCanal.forEach(function(favorite, index) {
+          if (programin) {
+            console.log("Hola");
+          }
+        });*/
+
         if (index == 0) {
           programCanalClaro = `
           <div class="poster" >
             <div class="poster-body">
                 <div class="showtime-container">
                     <p class="a-programming-text">${program.time}</p>
-                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
+                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                 </div>
                 <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                 <a href="sinopsis.php">
@@ -129,7 +144,6 @@ function getPrograms(date, time) {
                         </div>
                     </div>
                 </a>
-
             </div>
         </div>
           `;
@@ -139,7 +153,7 @@ function getPrograms(date, time) {
             <div class="poster-body">
                 <div class="showtime-container">
                     <p class="a-programming-text">${program.time}</p>
-                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
+                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                 </div>
                 
                 <a href="sinopsis.php">
@@ -209,7 +223,7 @@ function getPrograms(date, time) {
             <div class="poster-body">
                 <div class="showtime-container">
                     <p class="a-programming-text">${program.time}</p>
-                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
+                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                 </div>
                 <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                 <a href="sinopsis.php">
@@ -232,7 +246,7 @@ function getPrograms(date, time) {
             <div class="poster-body">
                 <div class="showtime-container">
                     <p class="a-programming-text">${program.time}</p>
-                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
+                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                 </div>
                 
                 <a href="sinopsis.php">
@@ -301,7 +315,7 @@ function getPrograms(date, time) {
             <div class="poster-body">
                 <div class="showtime-container">
                     <p class="a-programming-text">${program.time}</p>
-                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
+                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                 </div>
                 <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                 <a href="sinopsis.php">
@@ -324,7 +338,7 @@ function getPrograms(date, time) {
             <div class="poster-body">
                 <div class="showtime-container">
                     <p class="a-programming-text">${program.time}</p>
-                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
+                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                 </div>
                 
                 <a href="sinopsis.php">

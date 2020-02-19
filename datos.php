@@ -65,11 +65,11 @@
       <div class="col-sm-12 no-gutters col-md-6 no-gutters col-lg-4  col-xl-4 shadow1 fondolog position-relative">
         <a href="configuracion.php"><img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back"></a>
         <img src="images/registro/group-10.svg" class="ubicacion5" />
-        <br /><br /><br /><br />
+
         <div class="col-10 col-sm-8 col-md-8 col-lg-10 col-xl-10 mx-auto">
           <div class="row ma-no centro">
             <div class="col-sm-12 no-gap">
-              <div class="tamaño2 centro">
+              <div class="centro">
                 <p class="titulos-configuraciones">Datos adicionales</p>
               </div>
             </div>

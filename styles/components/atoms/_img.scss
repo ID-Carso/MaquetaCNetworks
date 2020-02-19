@@ -587,3 +587,10 @@
   width: 100%;
   max-width: 102px;
 }
+
+.close-notification {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  transform: (translate(40%, -40%));
+}

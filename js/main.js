@@ -846,6 +846,38 @@ $(document).ready(function() {
 
   var rellax = new Rellax(".rellax");
 
+  $("#selectYear").click(function() {
+    if ($(this).is(":checked")) {
+      $("#selectPais").prop("checked", false);
+      $("#selectMonth").prop("checked", false);
+      $("#selectDay").prop("checked", false);
+    }
+  });
+
+  $("#selectPais").click(function() {
+    if ($(this).is(":checked")) {
+      $("#selectYear").prop("checked", false);
+      $("#selectMonth").prop("checked", false);
+      $("#selectDay").prop("checked", false);
+    }
+  });
+
+  $("#selectDay").click(function() {
+    if ($(this).is(":checked")) {
+      $("#selectPais").prop("checked", false);
+      $("#selectMonth").prop("checked", false);
+      $("#selectYear").prop("checked", false);
+    }
+  });
+
+  $("#selectMonth").click(function() {
+    if ($(this).is(":checked")) {
+      $("#selectPais").prop("checked", false);
+      $("#selectYear").prop("checked", false);
+      $("#selectDay").prop("checked", false);
+    }
+  });
+
   var section_slider = $(".section-slider").slick({
     slidesToShow: 5,
     slidesToScroll: 1,
