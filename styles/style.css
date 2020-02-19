@@ -5643,7 +5643,8 @@ input[type="radio"]:checked + .mujer-estilo {
     font-size: 29px;
   }
   .no-favorites-img {
-    width: 226px;
+    width: 100%;
+    max-width: 189px;
   }
   /*End Mi Lista - Átomos*/
   /*============================*/
@@ -6196,6 +6197,9 @@ input[type="radio"]:checked + .mujer-estilo {
     padding: 75px 0;
     border-bottom: solid 1px #a6a8a8;
   }
+  .list-item-container:last-child {
+    border-bottom: none;
+  }
   .myList-details-container {
     width: 50%;
     padding: 0;
@@ -6721,7 +6725,8 @@ input[type="radio"]:checked + .mujer-estilo {
     font-size: 29px;
   }
   .no-favorites-img {
-    width: 226px;
+    width: 100%;
+    max-width: 189px;
   }
   /*End Mi Lista - Átomos*/
   /*============================*/
@@ -7327,6 +7332,9 @@ input[type="radio"]:checked + .mujer-estilo {
     padding: 75px 0;
     border-bottom: solid 1px #a6a8a8;
   }
+  .list-item-container:last-child {
+    border-bottom: none;
+  }
   .myList-details-container {
     width: 61%;
     padding: 0;
@@ -7781,13 +7789,14 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-top: 55px;
   }
   .no-favorites-title {
-    font-size: 60px;
+    font-size: 41px;
   }
   .no-favorites-subtitle {
-    font-size: 51px;
+    font-size: 32px;
   }
   .no-favorites-img {
-    width: 263px;
+    width: 100%;
+    max-width: 189px;
   }
   /*End Mi Lista - Átomos*/
   /*============================*/
@@ -8471,6 +8480,9 @@ input[type="radio"]:checked + .mujer-estilo {
     padding: 75px 0;
     border-bottom: solid 1px #a6a8a8;
   }
+  .list-item-container:last-child {
+    border-bottom: none;
+  }
   .myList-details-container {
     width: 61%;
     padding: 0;
@@ -8923,13 +8935,14 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-top: 55px;
   }
   .no-favorites-title {
-    font-size: 60px;
+    font-size: 41px;
   }
   .no-favorites-subtitle {
-    font-size: 51px;
+    font-size: 32px;
   }
   .no-favorites-img {
-    width: 263px;
+    width: 100%;
+    max-width: 189px;
   }
   /*End Mi Lista - Átomos*/
   /*============================*/
@@ -9602,6 +9615,9 @@ input[type="radio"]:checked + .mujer-estilo {
     display: flex;
     padding: 75px 0;
     border-bottom: solid 1px #a6a8a8;
+  }
+  .list-item-container:last-child {
+    border-bottom: none;
   }
   .myList-details-mobile {
     display: none;

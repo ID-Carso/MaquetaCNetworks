@@ -101,15 +101,42 @@ function getPrograms(date, time) {
       let programingConcertChannel = json.data[1].programing[0].programs;
       let programingClaroCinema = json.data[2].programing[0].programs;
       let programingNuestraVision = json.data[3].programing[0].programs;
+
+      let arrayCanalClaro = [];
       let favoritesClaroCanal = JSON.parse(
         localStorage.getItem("favoritesCanalClaro")
       );
+      if (localStorage.getItem("favoritesCanalClaro")) {
+        let favoritesCanalClaroLength = favoritesClaroCanal.length;
+        for (let i = 0; i < favoritesCanalClaroLength; i++) {
+          let favoriteId = favoritesClaroCanal[i].id;
+          arrayCanalClaro.push(favoriteId);
+        }
+      }
+
+      let arrayConcertChannel = [];
+      let favoritesConcertChannel = JSON.parse(
+        localStorage.getItem("favoritesConcertChannel")
+      );
+      if (localStorage.getItem("favoritesConcertChannel")) {
+        let favoritesConcertChannelLength = favoritesConcertChannel.length;
+        for (let i = 0; i < favoritesConcertChannelLength; i++) {
+          let favoriteId = favoritesConcertChannel[i].id;
+          arrayConcertChannel.push(favoriteId);
+        }
+      }
+
+      let arrayClaroCinema = [];
       let favoritesClaroCinema = JSON.parse(
         localStorage.getItem("favoritesClaroCinema")
       );
-      let favoritesConcertChannel = JSON.parse(
-        localStorage.getItem("favoritesConcertChanneñ")
-      );
+      if (localStorage.getItem("favoritesClaroCinema")) {
+        let favoritesClaroCinemaLength = favoritesClaroCinema.length;
+        for (let i = 0; i < favoritesClaroCinemaLength; i++) {
+          let favoriteId = favoritesClaroCinema[i].id;
+          arrayClaroCinema.push(favoriteId);
+        }
+      }
 
       destroySlider(nowSliderCanalClaro);
       destroySlider(nowSliderConcertChannel);
@@ -118,58 +145,100 @@ function getPrograms(date, time) {
 
       programingCanalClaro.forEach((program, index) => {
         let programCanalClaro;
-
-        /*favoritesClaroCanal.forEach(function(favorite, index) {
-          if (programin) {
-            console.log("Hola");
-          }
-        });*/
-
         if (index == 0) {
-          programCanalClaro = `
-          <div class="poster" >
-            <div class="poster-body">
-                <div class="showtime-container">
-                    <p class="a-programming-text">${program.time}</p>
-                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
-                </div>
-                <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                <a href="sinopsis.php">
-                    <div class="thumbnail">
-                        <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
-                    </div>
-                    <div class="a-claro-rectangle thumbnail-info-title">
-                        <div class="poster-title-margin">
-                            <p class="a-poster-text-white">${program.title}</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-          `;
+          if (arrayCanalClaro.includes(program.id_program)) {
+            programCanalClaro = `
+                <div class="poster" >
+                  <div class="poster-body">
+                      <div class="showtime-container">
+                          <p class="a-programming-text">${program.time}</p>
+                          <button type="button" class="poster-button remove-program" _id="${program.id_program}"><img src="./images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
+                      </div>
+                      <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                      <a href="sinopsis.php">
+                          <div class="thumbnail">
+                              <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
+                          </div>
+                          <div class="a-claro-rectangle thumbnail-info-title">
+                              <div class="poster-title-margin">
+                                  <p class="a-poster-text-white">${program.title}</p>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+                `;
+          } else {
+            programCanalClaro = `
+                <div class="poster" >
+                  <div class="poster-body">
+                      <div class="showtime-container">
+                          <p class="a-programming-text">${program.time}</p>
+                          <button type="button" class="poster-button add-favorites" _id="${program.id_program}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
+                      </div>
+                      <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                      <a href="sinopsis.php">
+                          <div class="thumbnail">
+                              <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
+                          </div>
+                          <div class="a-claro-rectangle thumbnail-info-title">
+                              <div class="poster-title-margin">
+                                  <p class="a-poster-text-white">${program.title}</p>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+                `;
+          }
         } else {
-          programCanalClaro = `
-          <div class="poster" >
-            <div class="poster-body">
-                <div class="showtime-container">
-                    <p class="a-programming-text">${program.time}</p>
-                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
-                </div>
-                
-                <a href="sinopsis.php">
-                    <div class="thumbnail">
-                        <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
-                    </div>
-                    <div class="a-claro-rectangle thumbnail-info-title">
-                        <div class="poster-title-margin">
-                            <p class="a-poster-text-white">${program.title}</p>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-          `;
+          if (arrayCanalClaro.includes(program.id_program)) {
+            programCanalClaro = `
+                <div class="poster" >
+                  <div class="poster-body">
+                      <div class="showtime-container">
+                          <p class="a-programming-text">${program.time}</p>
+                          <button type="button" class="poster-button remove-program" _id="${program.id_program}"><img src="./images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
+                      </div>
+                      
+                      <a href="sinopsis.php">
+                          <div class="thumbnail">
+                              <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
+                          </div>
+                          <div class="a-claro-rectangle thumbnail-info-title">
+                              <div class="poster-title-margin">
+                                  <p class="a-poster-text-white">${program.title}</p>
+                              </div>
+                          </div>
+                      </a>
+      
+                  </div>
+              </div>
+                `;
+          } else {
+            programCanalClaro = `
+                <div class="poster" >
+                  <div class="poster-body">
+                      <div class="showtime-container">
+                          <p class="a-programming-text">${program.time}</p>
+                          <button type="button" class="poster-button add-favorites" _id="${program.id_program}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
+                      </div>
+                      
+                      <a href="sinopsis.php">
+                          <div class="thumbnail">
+                              <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
+                          </div>
+                          <div class="a-claro-rectangle thumbnail-info-title">
+                              <div class="poster-title-margin">
+                                  <p class="a-poster-text-white">${program.title}</p>
+                              </div>
+                          </div>
+                      </a>
+      
+                  </div>
+              </div>
+                `;
+          }
         }
         nowSliderCanalClaro.append(programCanalClaro);
 
@@ -218,12 +287,35 @@ function getPrograms(date, time) {
       let programConcertChannel;
       programingConcertChannel.forEach((program, index) => {
         if (index == 0) {
-          programConcertChannel = `
-          <div class="poster" >
+          if (arrayConcertChannel.includes(program.id_program)) {
+            programConcertChannel = `
+              <div class="poster" >
+              <div class="poster-body">
+                  <div class="showtime-container">
+                      <p class="a-programming-text">${program.time}</p>
+                      <button type="button" class="poster-button remove-program" _id="${program.id_program}"><img src="./images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
+                  </div>
+                  <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                  <a href="sinopsis.php">
+                      <div class="thumbnail">
+                          <img src="./images/concert-channel/carrousel/${program.image}" alt="">
+                      </div>
+                      <div class="a-concert-rectangle thumbnail-info-title">
+                          <div class="poster-title-margin">
+                              <p class="a-poster-text-white">${program.title}</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+              `;
+          } else {
+            programConcertChannel = `
+            <div class="poster" >
             <div class="poster-body">
                 <div class="showtime-container">
                     <p class="a-programming-text">${program.time}</p>
-                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
+                    <button type="button" class="poster-button add-favorites" _id="${program.id_program}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                 </div>
                 <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                 <a href="sinopsis.php">
@@ -236,17 +328,40 @@ function getPrograms(date, time) {
                         </div>
                     </div>
                 </a>
-
             </div>
         </div>
-          `;
+            `;
+          }
         } else {
-          programConcertChannel = `
-          <div class="poster" >
+          if (arrayConcertChannel.includes(program.id_program)) {
+            programConcertChannel = `
+                <div class="poster" >
+                <div class="poster-body">
+                    <div class="showtime-container">
+                        <p class="a-programming-text">${program.time}</p>
+                        <button type="button" class="poster-button remove-program" _id="${program.id_program}"><img src="./images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
+                    </div>
+                
+                    <a href="sinopsis.php">
+                        <div class="thumbnail">
+                            <img src="./images/concert-channel/carrousel/${program.image}" alt="">
+                        </div>
+                        <div class="a-concert-rectangle thumbnail-info-title">
+                            <div class="poster-title-margin">
+                                <p class="a-poster-text-white">${program.title}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+                `;
+          } else {
+            programConcertChannel = `
+            <div class="poster" >
             <div class="poster-body">
                 <div class="showtime-container">
                     <p class="a-programming-text">${program.time}</p>
-                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
+                    <button type="button" class="poster-button add-favorites" _id="${program.id_program}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                 </div>
                 
                 <a href="sinopsis.php">
@@ -259,10 +374,10 @@ function getPrograms(date, time) {
                         </div>
                     </div>
                 </a>
-
             </div>
         </div>
-          `;
+            `;
+          }
         }
         nowSliderConcertChannel.append(programConcertChannel);
 
@@ -310,51 +425,101 @@ function getPrograms(date, time) {
       let programClaroCinema;
       programingClaroCinema.forEach((program, index) => {
         if (index == 0) {
-          programClaroCinema = `
-          <div class="poster" >
-            <div class="poster-body">
-                <div class="showtime-container">
-                    <p class="a-programming-text">${program.time}</p>
-                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
-                </div>
-                <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                <a href="sinopsis.php">
-                    <div class="thumbnail">
-                        <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
-                    </div>
-                    <div class="a-cinema-rectangle thumbnail-info-title">
-                        <div class="poster-title-margin">
-                            <p class="a-poster-text-white">${program.title}</p>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-          `;
+          if (arrayClaroCinema.includes(program.id_program)) {
+            programClaroCinema = `
+                <div class="poster" >
+                  <div class="poster-body">
+                      <div class="showtime-container">
+                          <p class="a-programming-text">${program.time}</p>
+                          <button type="button" class="poster-button remove-program" _id="${program.id_program}"><img src="./images/posters/heart-white-icon.svg" alt="" class="poster-add"></button>
+                      </div>
+                      <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                      <a href="sinopsis.php">
+                          <div class="thumbnail">
+                              <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
+                          </div>
+                          <div class="a-cinema-rectangle thumbnail-info-title">
+                              <div class="poster-title-margin">
+                                  <p class="a-poster-text-white">${program.title}</p>
+                              </div>
+                          </div>
+                      </a>
+      
+                  </div>
+              </div>
+                `;
+          } else {
+            programClaroCinema = `
+                <div class="poster" >
+                  <div class="poster-body">
+                      <div class="showtime-container">
+                          <p class="a-programming-text">${program.time}</p>
+                          <button type="button" class="poster-button add-favorites" _id="${program.id_program}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
+                      </div>
+                      <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                      <a href="sinopsis.php">
+                          <div class="thumbnail">
+                              <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
+                          </div>
+                          <div class="a-cinema-rectangle thumbnail-info-title">
+                              <div class="poster-title-margin">
+                                  <p class="a-poster-text-white">${program.title}</p>
+                              </div>
+                          </div>
+                      </a>
+      
+                  </div>
+              </div>
+                `;
+          }
         } else {
-          programClaroCinema = `
-          <div class="poster" >
-            <div class="poster-body">
-                <div class="showtime-container">
-                    <p class="a-programming-text">${program.time}</p>
-                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
-                </div>
-                
-                <a href="sinopsis.php">
-                    <div class="thumbnail">
-                        <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
-                    </div>
-                    <div class="a-cinema-rectangle thumbnail-info-title">
-                        <div class="poster-title-margin">
-                            <p class="a-poster-text-white">${program.title}</p>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-          `;
+          if (arrayClaroCinema.includes(program.id_program)) {
+            programClaroCinema = `
+                <div class="poster" >
+                  <div class="poster-body">
+                      <div class="showtime-container">
+                          <p class="a-programming-text">${program.time}</p>
+                          <button type="button" class="poster-button remove-program" _id="${program.id_program}"><img src="./images/posters/heart-white-icon.svg" alt="" class="poster-add"></button>
+                      </div>
+                      
+                      <a href="sinopsis.php">
+                          <div class="thumbnail">
+                              <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
+                          </div>
+                          <div class="a-cinema-rectangle thumbnail-info-title">
+                              <div class="poster-title-margin">
+                                  <p class="a-poster-text-white">${program.title}</p>
+                              </div>
+                          </div>
+                      </a>
+      
+                  </div>
+              </div>
+                `;
+          } else {
+            programClaroCinema = `
+                <div class="poster" >
+                  <div class="poster-body">
+                      <div class="showtime-container">
+                          <p class="a-programming-text">${program.time}</p>
+                          <button type="button" class="poster-button add-favorites" _id="${program.id_program}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
+                      </div>
+                      
+                      <a href="sinopsis.php">
+                          <div class="thumbnail">
+                              <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
+                          </div>
+                          <div class="a-cinema-rectangle thumbnail-info-title">
+                              <div class="poster-title-margin">
+                                  <p class="a-poster-text-white">${program.title}</p>
+                              </div>
+                          </div>
+                      </a>
+      
+                  </div>
+              </div>
+                `;
+          }
         }
         nowSliderClaroCinema.append(programClaroCinema);
 
@@ -407,7 +572,7 @@ function getPrograms(date, time) {
             <div class="poster-body">
                 <div class="showtime-container">
                     <p class="a-programming-text">${program.time}</p>
-                    <button type="button" class="poster-button" _id="${program.id_program}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
+                    <button type="button" class="poster-button add-favorites" _id="${program.id_program}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
                 </div>
                 <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                 <a href="sinopsis.php">

@@ -181,12 +181,11 @@
 
             <div class="no-gutters">
                 <div class="col-11 mx-auto">
-                    <div class="claro-list section-list-container">
+                    <div id="claro-canal-favorites">
                     </div>
-                    <div class="concert-list section-list-container">
+                    <div id="concert-channel-favorites">
                     </div>
-                    <div class="cinema-list section-list-container">
-
+                    <div id="claro-cinema-favorites">
                     </div>
                 </div>
             </div>

@@ -112,15 +112,16 @@ $(document).ready(function() {
       favoritesClaroCinema.length == 0)
   ) {
     myFavorites = `
-    <div class="no-gutters mt-4 mt-xl-5 pt-xl-5">
+    <div class="text-center mt-5 pt-md-4 mt-xl-5">
+      <img src="./images/mi-lista/favorites.svg" alt="" class="no-favorites-img">
+    </div>
+    <div class="no-gutters mt-4 mt-xl-5 pt-xl-2">
       <div class="col-12">
           <p class="a-text-warm-grey-bold mb-3 text-center no-favorites-title mb-xl-4">No tienes favoritos guardados todavía</p>
           <p class="a-text-warm-grey-regular text-center no-favorites-subtitle">Explora y descubre más</p>
       </div>
     </div>
-    <div class="text-center mt-5 pt-md-4 mt-xl-5">
-        <img src="./images/mi-lista/favorites.svg" alt="" class="no-favorites-img">
-    </div>
+
         `;
     listFavorites.append(myFavorites);
   } else {
@@ -128,7 +129,7 @@ $(document).ready(function() {
       let programsCanalClaroList = "";
       favoritesCanalClaro.forEach(favorite => {
         programsCanalClaroList += `
-        <div class="list-item-container" _id="${favorite.id}">
+        <div class="list-item-container" >
         <div class="poster">
             <div class="thumbnail">
                 <img src="./images/home/carrusel-ahora-en-vivo/${favorite.image}" alt="">
@@ -146,7 +147,7 @@ $(document).ready(function() {
                     <p class="rating">Clasificación: A</p>
                 </div>
                 <div>
-                    <button class="schedule-add remove-program" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                    <button class="schedule-add remove-program" _id="${favorite.id}" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
                     </button>
                 </div>
             </div>
@@ -177,7 +178,7 @@ $(document).ready(function() {
   
             <div class="d-flex  align-items-center flex-column justify-content-between">
                 <div>
-                    <button class="schedule-add remove-program" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                    <button class="schedule-add remove-program" _id="${favorite.id}" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
                     </button>
                 </div>
                 <div class="d-flex align-items-center justify-content-end">
@@ -201,7 +202,7 @@ $(document).ready(function() {
                 </div>
                 <div>
                     <div>
-                        <button class="schedule-add remove-program" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                        <button class="schedule-add remove-program" _id="${favorite.id}" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
                         </button>
                     </div>
                     <div class="d-flex align-items-center justify-content-end">
@@ -226,10 +227,12 @@ $(document).ready(function() {
         `;
       });
       let programsCanalClaro = `
+      <div class="claro-list section-list-container">
             <h1 class="claro-list-title list-title-section">Claro Canal</h1>
               ${programsCanalClaroList}
+      </div>        
       `;
-      $(".claro-list").append(programsCanalClaro);
+      $("#claro-canal-favorites").append(programsCanalClaro);
     }
 
     if (!favoritesConcertChannel || !favoritesConcertChannel.length == 0) {
@@ -237,7 +240,7 @@ $(document).ready(function() {
       let programsConcertChannelList = "";
       favoritesConcertChannel.forEach(favorite => {
         programsConcertChannelList += `
-      <div class="list-item-container" _id="${favorite.id}">
+      <div class="list-item-container" >
       <div class="poster">
           <div class="thumbnail">
               <img src="./images/concert-channel/carrousel/${favorite.image}" alt="">
@@ -255,7 +258,7 @@ $(document).ready(function() {
                   <p class="rating">Clasificación: A</p>
               </div>
               <div>
-                  <button class="schedule-add remove-program"  type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                  <button class="schedule-add remove-program" _id="${favorite.id}"  type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
                   </button>
               </div>
           </div>
@@ -286,7 +289,7 @@ $(document).ready(function() {
 
           <div class="d-flex  align-items-center flex-column justify-content-between">
               <div>
-                  <button class="schedule-add remove-program"  type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                  <button class="schedule-add remove-program" _id="${favorite.id}"  type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
                   </button>
               </div>
               <div class="d-flex align-items-center justify-content-end">
@@ -310,7 +313,7 @@ $(document).ready(function() {
               </div>
               <div>
                   <div>
-                      <button class="schedule-add remove-program"  type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                      <button class="schedule-add remove-program" _id="${favorite.id}"  type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
                       </button>
                   </div>
                   <div class="d-flex align-items-center justify-content-end">
@@ -336,10 +339,12 @@ $(document).ready(function() {
       });
 
       let programsConcertChannel = `
-    <h1 class="concert-list-title list-title-section">Concert Channel</h1>
-      ${programsConcertChannelList}
+      <div class="concert-list section-list-container">
+        <h1 class="concert-list-title list-title-section">Concert Channel</h1>
+        ${programsConcertChannelList}
+      </div>
 `;
-      $(".concert-list").append(programsConcertChannel);
+      $("#concert-channel-favorites").append(programsConcertChannel);
     }
     if (!favoritesClaroCinema || !favoritesClaroCinema.length == 0) {
       /* CLARO CINEMA */
@@ -347,7 +352,7 @@ $(document).ready(function() {
       let programsClaroCinemaList = "";
       favoritesClaroCinema.forEach(favorite => {
         programsClaroCinemaList += `
-      <div class="list-item-container" _id="${favorite.id}">
+      <div class="list-item-container">
       <div class="poster">
           <div class="thumbnail">
               <img src="./images/claro-cinema/carrousel/${favorite.image}" alt="">
@@ -365,7 +370,7 @@ $(document).ready(function() {
                   <p class="rating">Clasificación: A</p>
               </div>
               <div>
-                  <button class="schedule-add remove-program" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                  <button class="schedule-add remove-program" _id="${favorite.id}" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
                   </button>
               </div>
           </div>
@@ -396,7 +401,7 @@ $(document).ready(function() {
 
           <div class="d-flex  align-items-center flex-column justify-content-between">
               <div>
-                  <button class="schedule-add remove-program"  type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                  <button class="schedule-add remove-program" _id="${favorite.id}"  type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
                   </button>
               </div>
               <div class="d-flex align-items-center justify-content-end">
@@ -420,7 +425,7 @@ $(document).ready(function() {
               </div>
               <div>
                   <div>
-                      <button class="schedule-add remove-program" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                      <button class="schedule-add remove-program" _id="${favorite.id}"  type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
                       </button>
                   </div>
                   <div class="d-flex align-items-center justify-content-end">
@@ -445,22 +450,27 @@ $(document).ready(function() {
       `;
       });
       let programsClaroCinema = `
-    <h1 class="cinema-list-title list-title-section">Claro <span>Cinema</span></h1>
-      ${programsClaroCinemaList}
+      <div class="cinema-list section-list-container">
+        <h1 class="cinema-list-title list-title-section">Claro <span>Cinema</span></h1>
+          ${programsClaroCinemaList}
+      </div>    
 `;
-      $(".cinema-list").append(programsClaroCinema);
+      $("#claro-cinema-favorites").append(programsClaroCinema);
     }
   }
 
-  let listItemContainer = $(".list-item-container");
+  let removeButtonProgram = $(".remove-program");
 
-  if (listItemContainer) {
-    listItemContainer.click(function(e) {
-      if (e.target.classList.contains("remove-program")) {
-        let id = localStorage.getItem("id");
-        let programId = $(this).attr("_id");
-        removeFavorites(id, programId, $(this));
-      }
+  if (removeButtonProgram) {
+    removeButtonProgram.click(function(e) {
+      let id = localStorage.getItem("id");
+      let programId = $(this).attr("_id");
+      let itemList = $(this).closest(".list-item-container");
+
+      removeFavorites(id, programId, $(this), itemList);
+      /*if (e.target.classList.contains("remove-program")) {
+
+      }*/
     });
   }
 
@@ -479,7 +489,6 @@ $(document).ready(function() {
     if (genderMale.is(":checked")) {
       gender = "M";
     } else if (genderFemale.is(":checked")) {
-      console.log("I can shoot my cannonball");
       gender = "F";
     }
     let id = parseInt(localStorage.getItem("id"));
@@ -644,11 +653,9 @@ $(document).ready(function() {
     let userName = localStorage.getItem("name");
     let avatar;
     let localStorageAvatar = localStorage.getItem("avatar");
-    console.log(typeof localStorageAvatar);
 
     if (localStorageAvatar !== "null" || !localStorageAvatar) {
       avatar = `<img src="${localStorage.getItem("avatar")}" />`;
-      console.log(":(");
     } else {
       avatar = `<img src="./images/menu/icon-white-user.svg" />`;
     }
