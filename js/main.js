@@ -640,6 +640,7 @@ $(document).ready(function() {
 
   if (session == 1) {
     setTimeout(function() {
+      console.log("hoihoih");
       showNotification();
     }, 2000);
 
