@@ -23,7 +23,6 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             $time = $_POST['time'];
             $program = new Program();
             echo ($program->getPrograms($date, $time));
-
             break;
     }
 }

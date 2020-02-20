@@ -171,6 +171,7 @@ function signIn(email, password) {
     url: "../../adapters/user.php",
 
     success: function(result) {
+      console.log(result);
       let json = JSON.parse(result);
       console.log(json);
       if (json.data) {
@@ -360,7 +361,9 @@ function addFavorites() {
         data: dataUser,
         url: "../../adapters/user.php",
         success: function(result) {
+          console.log(result);
           let json = JSON.parse(result);
+
           if (json.code == 200) {
             let sections = json.data;
             buttonFavorite.removeClass("add-favorites");

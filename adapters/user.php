@@ -57,7 +57,7 @@ class User
 
     function signIn($data)
     {
-        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/login", $data);
+        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/login", $data, null);
     }
 
     function registerUser($name, $email, $password)
@@ -128,8 +128,6 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
                 $id = $_POST["id"];
                 $currentTime = $_POST["currentTime"];
                 $currentDate = $_POST["currentDate"];
-
-
                 $user = User::getUserInstance();
                 $user->showNotification($id, $currentTime, $currentDate);
             }
@@ -191,13 +189,16 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             break;
 
         case 'addFavorites':
-            $userId = $_POST["user_id"];
-            $programId = $_POST["program_id"];
-            $data = array("user_id" => $userId, "program_id" => $programId);
-            $dataJson = json_encode($data);
-            $user = User::getUserInstance();
-            echo ($user->addFavorites($dataJson));
-            break;
+            if ($_POST["user_id"]) {
+                $userId = $_POST["user_id"];
+                $programId = $_POST["program_id"];
+                $data = array("user_id" => $userId, "program_id" => $programId);
+                $dataJson = json_encode($data);
+                $user = User::getUserInstance();
+                echo ($user->addFavorites($dataJson));
+                break;
+            }
+
 
         case 'removeFavorites':
             $userId = $_POST["user_id"];
