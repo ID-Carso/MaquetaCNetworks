@@ -181,9 +181,9 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
         case 'updateAlerts':
 
             $data = $_POST['data'];
-            json_decode($data, true);
+
             $dataJson = json_encode($data);
-            echo Console::log('JSON: ', $data);
+
             $user = User::getUserInstance();
             echo ($user->updateAlerts($dataJson));
             break;

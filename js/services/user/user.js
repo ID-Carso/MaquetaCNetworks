@@ -29,7 +29,8 @@ function showNotification() {
     let month = date.getMonth();
     let year = date.getFullYear();
     let hour = date.getHours();
-    let minutes = date.getMinutes();
+    //let minutes = date.getMinutes();
+    let minutes = 30;
     let seconds = date.getSeconds();
     let currentTime = `${hour}:${minutes}`;
     let currentDate = `${year}-${month}-${day}`;
@@ -101,7 +102,7 @@ function showNotification() {
         }
       });
     }
-  }, 60000);
+  }, 8000);
 }
 
 function hideNotification() {
@@ -173,7 +174,7 @@ function signIn(email, password) {
     success: function(result) {
       console.log(result);
       let json = JSON.parse(result);
-      console.log(json);
+      console.log(json.data);
       if (json.data) {
         location.href =
           "http://www.claronetworks.openofficedospuntocero.info/home.php";
