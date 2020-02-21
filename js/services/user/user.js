@@ -170,14 +170,22 @@ function signIn(email, password) {
     type: "POST",
     data: dataUser,
     url: "../../adapters/user.php",
-
+    beforeSend: function() {
+      const loader = `
+      <div class="loader">
+        <img src="./images/general/loader.gif" class="loader-img" alt="">
+      </div>
+      `;
+      let formContainer = $(".formContainer");
+      formContainer.prepend(loader);
+    },
     success: function(result) {
       console.log(result);
       let json = JSON.parse(result);
-      console.log(json.data);
+      console.log(json.data.config);
+      let sections = json.data.favorites;
       if (json.data) {
-        location.href =
-          "http://www.claronetworks.openofficedospuntocero.info/home.php";
+        location.href = "./home.php";
 
         localStorage.setItem("session", 1);
 
@@ -187,11 +195,38 @@ function signIn(email, password) {
         localStorage.setItem("gender", json.data.avatar);
         localStorage.setItem("birthday", json.data.avatar);
         localStorage.setItem("src", json.data.country.image);
-        let date = json.data.birthday.split("-");
-        localStorage.setItem("day", date[2]);
-        localStorage.setItem("month", date[1]);
-        localStorage.setItem("year", date[0]);
+        if (json.data.birthday) {
+          let date = json.data.birthday.split("-");
+          localStorage.setItem("day", date[2]);
+          localStorage.setItem("month", date[1]);
+          localStorage.setItem("year", date[0]);
+        }
+
+        localStorage.setItem("alertBeginning", json.data.config.beginning);
+        localStorage.setItem("alertMinutes", json.data.config.minutes);
+        localStorage.setItem("alertEmail", json.data.config.email);
+        localStorage.setItem("alertWeb", json.data.config.web);
+        sections.forEach(section => {
+          if (section.id_section == 1) {
+            localStorage.setItem(
+              "favoritesCanalClaro",
+              JSON.stringify(section.programs)
+            );
+          } else if (section.id_section == 2) {
+            localStorage.setItem(
+              "favoritesConcertChannel",
+              JSON.stringify(section.programs)
+            );
+          } else if (section.id_section == 3) {
+            localStorage.setItem(
+              "favoritesClaroCinema",
+              JSON.stringify(section.programs)
+            );
+          }
+        });
       } else {
+        let loader = $(".loader");
+        loader.remove();
         $(".data-incorrect")
           .text(
             "Tu correo o contraseña no coinciden. Por favor, verifica de nuevo"
@@ -311,10 +346,20 @@ function registerUser(inputName, inputEmail, inputPassword) {
     type: "POST",
     data: user,
     url: "../../adapters/user.php",
+    beforeSend: function() {
+      const loader = `
+      <div class="loader">
+        <img src="./images/general/loader.gif" class="loader-img" alt="">
+      </div>
+      `;
+      let formContainer = $(".formContainer");
+      formContainer.prepend(loader);
+    },
     success: function(result) {
       let json = JSON.parse(result);
+      let loader = $(".loader");
+      loader.remove();
       let modal = $("#mensaje");
-
       modal.modal("show");
       sendEmail(json.data.id);
     }

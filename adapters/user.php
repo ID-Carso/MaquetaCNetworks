@@ -57,7 +57,7 @@ class User
 
     function signIn($data)
     {
-        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/login", $data, null);
+        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/login", $data);
     }
 
     function registerUser($name, $email, $password)

@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
+  <link rel="preload" href="./images/general/loader.gif" as="image">
   <?php include './views/partials/head.php' ?>
 </head>
 
 <body class="fondo">
   <div class="login-container">
     <div class="login-form no-gutters">
-      <div class="col-sm-12 no-gutters col-md-6  no-gutters col-lg-4  col-xl-3 shadow1 fondolog">
+      <div class="col-sm-12 no-gutters col-md-6  no-gutters col-lg-4  col-xl-3 shadow1 fondolog formContainer">
         <img src="images/registro/group-10.svg" class="ubicacion5" />
-
         <div class="row ma-no no-gutters">
           <div class="col-sm-12 col-md-12 col-lg-12 no-gutters ">
             <img src="images/registro/group-3.svg" class="form-image-blue" />
@@ -43,8 +43,6 @@
                     <input class="insert-data input-password" type="password" id="login-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
                     <img src="images/registro/eye-none.svg" class="icon-eye" />
                   </div>
-
-
                   <p class="caracteres-min">
                     8 caractéres mínimo
                     <img src="images/registro/listo.svg" class="listo" />

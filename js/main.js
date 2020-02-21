@@ -101,6 +101,8 @@ $(document).ready(function() {
     localStorage.getItem("favoritesClaroCinema")
   );
 
+  console.log(favoritesClaroCinema);
+
   let listFavorites = $(".mi-lista-container");
   let myFavorites;
   if (
@@ -125,121 +127,125 @@ $(document).ready(function() {
         `;
     listFavorites.append(myFavorites);
   } else {
-    if (!favoritesCanalClaro || !favoritesCanalClaro.length == 0) {
-      let programsCanalClaroList = "";
-      favoritesCanalClaro.forEach(favorite => {
-        programsCanalClaroList += `
-        <div class="list-item-container" >
-        <div class="poster">
-            <div class="thumbnail">
-                <img src="./images/home/carrusel-ahora-en-vivo/${favorite.image}" alt="">
-            </div>
-            <div class="a-claro-rectangle">
-                <div class="poster-title-margin">
-                    <p class="a-poster-text-white">${favorite.title}</p>
-                </div>
-            </div>
-        </div>
-        <div class="myList-details-container myList-details-mobile">
-            <div class="d-flex info-schedule justify-content-between no-gutters">
-  
-                <div class="col-6">
-                    <p class="rating">Clasificación: A</p>
-                </div>
-                <div>
-                    <button class="schedule-add remove-program" _id="${favorite.id}" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
-                    </button>
-                </div>
-            </div>
-            <div class="no-gutters d-flex  align-items-center justify-content-between">
-                <div>
-                    <p class="schedule-days">Lunes a Viernes</p>
-                    <p class="schedule">10:00 - 10:30</p>
-  
-                </div>
-                <div class="col-6 d-flex align-items-center justify-content-end">
-                    <p class="rating-alert">ALERTAS</p>
-                    <label class="switch-alert">
-                        <input type="checkbox">
-                        <span class="slideralert roundalert"></span>
-                    </label>
-                </div>
-  
-            </div>
-        </div>
-        <div class="myList-details-container myList-details-tablet no-gutters">
-            <div>
-                <div>
-                    <p class="schedule-days">Lunes a Viernes</p>
-                    <p class="schedule">10:00 - 10:30</p>
-                    <p class="rating">Clasificación: A</p>
-                </div>
-            </div>
-  
-            <div class="d-flex  align-items-center flex-column justify-content-between">
-                <div>
-                    <button class="schedule-add remove-program" _id="${favorite.id}" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
-                    </button>
-                </div>
-                <div class="d-flex align-items-center justify-content-end">
-                    <p class="rating-alert">ALERTAS</p>
-                    <label class="switch-alert">
-                        <input type="checkbox">
-                        <span class="slideralert roundalert"></span>
-                    </label>
-                </div>
-  
-            </div>
-        </div>
-        <div class="myList-details-container myList-details-desktop">
-            <div class="d-flex justify-content-between">
-                <div>
-                    <p class="rating">Clasificación: A</p>
-                </div>
-                <div>
-                    <p class="schedule-days">Lunes a Viernes</p>
-                    <p class="schedule">10:00 - 10:30</p>
-                </div>
-                <div>
-                    <div>
-                        <button class="schedule-add remove-program" _id="${favorite.id}" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
-                        </button>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-end">
-                        <p class="rating-alert">ALERTAS</p>
-                        <label class="switch-alert">
-                            <input type="checkbox">
-                            <span class="slideralert roundalert"></span>
-                        </label>
-                    </div>
-  
-                </div>
-            </div>
-            <div>
-                <p class="schedule-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-            </div>
-        </div>
-  
-    </div>
+    if (favoritesCanalClaro != null) {
+      if (favoritesCanalClaro.length != 0) {
+        let programsCanalClaroList = "";
+        favoritesCanalClaro.forEach(favorite => {
+          programsCanalClaroList += `
+          <div class="list-item-container" >
+          <div class="poster">
+              <div class="thumbnail">
+                  <img src="./images/home/carrusel-ahora-en-vivo/${favorite.image}" alt="">
+              </div>
+              <div class="a-claro-rectangle">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-white">${favorite.title}</p>
+                  </div>
+              </div>
+          </div>
+          <div class="myList-details-container myList-details-mobile">
+              <div class="d-flex info-schedule justify-content-between no-gutters">
+    
+                  <div class="col-6">
+                      <p class="rating">Clasificación: A</p>
+                  </div>
+                  <div>
+                      <button class="schedule-add remove-program" _id="${favorite.id}" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                      </button>
+                  </div>
+              </div>
+              <div class="no-gutters d-flex  align-items-center justify-content-between">
+                  <div>
+                      <p class="schedule-days">Lunes a Viernes</p>
+                      <p class="schedule">10:00 - 10:30</p>
+    
+                  </div>
+                  <div class="col-6 d-flex align-items-center justify-content-end">
+                      <p class="rating-alert">ALERTAS</p>
+                      <label class="switch-alert">
+                          <input type="checkbox">
+                          <span class="slideralert roundalert"></span>
+                      </label>
+                  </div>
+    
+              </div>
+          </div>
+          <div class="myList-details-container myList-details-tablet no-gutters">
+              <div>
+                  <div>
+                      <p class="schedule-days">Lunes a Viernes</p>
+                      <p class="schedule">10:00 - 10:30</p>
+                      <p class="rating">Clasificación: A</p>
+                  </div>
+              </div>
+    
+              <div class="d-flex  align-items-center flex-column justify-content-between">
+                  <div>
+                      <button class="schedule-add remove-program" _id="${favorite.id}" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                      </button>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-end">
+                      <p class="rating-alert">ALERTAS</p>
+                      <label class="switch-alert">
+                          <input type="checkbox">
+                          <span class="slideralert roundalert"></span>
+                      </label>
+                  </div>
+    
+              </div>
+          </div>
+          <div class="myList-details-container myList-details-desktop">
+              <div class="d-flex justify-content-between">
+                  <div>
+                      <p class="rating">Clasificación: A</p>
+                  </div>
+                  <div>
+                      <p class="schedule-days">Lunes a Viernes</p>
+                      <p class="schedule">10:00 - 10:30</p>
+                  </div>
+                  <div>
+                      <div>
+                          <button class="schedule-add remove-program" _id="${favorite.id}" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                          </button>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-end">
+                          <p class="rating-alert">ALERTAS</p>
+                          <label class="switch-alert">
+                              <input type="checkbox">
+                              <span class="slideralert roundalert"></span>
+                          </label>
+                      </div>
+    
+                  </div>
+              </div>
+              <div>
+                  <p class="schedule-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+              </div>
+          </div>
+    
+      </div>
+          `;
+        });
+        let programsCanalClaro = `
+        <div class="claro-list section-list-container">
+              <h1 class="claro-list-title list-title-section">Claro Canal</h1>
+                ${programsCanalClaroList}
+        </div>        
         `;
-      });
-      let programsCanalClaro = `
-      <div class="claro-list section-list-container">
-            <h1 class="claro-list-title list-title-section">Claro Canal</h1>
-              ${programsCanalClaroList}
-      </div>        
-      `;
-      $("#claro-canal-favorites").append(programsCanalClaro);
+        $("#claro-canal-favorites").append(programsCanalClaro);
+      }
     }
 
-    if (!favoritesConcertChannel || !favoritesConcertChannel.length == 0) {
-      /* CONCERT CHANNEL */
-      let programsConcertChannelList = "";
-      favoritesConcertChannel.forEach(favorite => {
-        programsConcertChannelList += `
+    if (favoritesConcertChannel != null) {
+      if (favoritesConcertChannel.length != 0) {
+        /* CONCERT CHANNEL */
+        console.log(favoritesConcertChannel.length);
+        let programsConcertChannelList = "";
+        favoritesConcertChannel.forEach(favorite => {
+          programsConcertChannelList += `
       <div class="list-item-container" >
       <div class="poster">
           <div class="thumbnail">
@@ -336,126 +342,128 @@ $(document).ready(function() {
 
   </div>
       `;
-      });
+        });
 
-      let programsConcertChannel = `
+        let programsConcertChannel = `
       <div class="concert-list section-list-container">
         <h1 class="concert-list-title list-title-section">Concert Channel</h1>
         ${programsConcertChannelList}
       </div>
 `;
-      $("#concert-channel-favorites").append(programsConcertChannel);
+        $("#concert-channel-favorites").append(programsConcertChannel);
+      }
     }
-    if (!favoritesClaroCinema || !favoritesClaroCinema.length == 0) {
+    if (favoritesClaroCinema != null) {
       /* CLARO CINEMA */
-
-      let programsClaroCinemaList = "";
-      favoritesClaroCinema.forEach(favorite => {
-        programsClaroCinemaList += `
-      <div class="list-item-container">
-      <div class="poster">
-          <div class="thumbnail">
-              <img src="./images/claro-cinema/carrousel/${favorite.image}" alt="">
-          </div>
-          <div class="a-cinema-rectangle">
-              <div class="poster-title-margin">
-                  <p class="a-poster-text-white">${favorite.title}</p>
-              </div>
-          </div>
-      </div>
-      <div class="myList-details-container myList-details-mobile">
-          <div class="d-flex info-schedule justify-content-between no-gutters">
-
-              <div class="col-6">
-                  <p class="rating">Clasificación: A</p>
-              </div>
-              <div>
-                  <button class="schedule-add remove-program" _id="${favorite.id}" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
-                  </button>
-              </div>
-          </div>
-          <div class="no-gutters d-flex  align-items-center justify-content-between">
-              <div>
-                  <p class="schedule-days">Lunes a Viernes</p>
-                  <p class="schedule">10:00 - 10:30</p>
-
-              </div>
-              <div class="col-6 d-flex align-items-center justify-content-end">
-                  <p class="rating-alert">ALERTAS</p>
-                  <label class="switch-alert">
-                      <input type="checkbox">
-                      <span class="slideralert roundalert"></span>
-                  </label>
-              </div>
-
-          </div>
-      </div>
-      <div class="myList-details-container myList-details-tablet no-gutters">
-          <div>
-              <div>
-                  <p class="schedule-days">Lunes a Viernes</p>
-                  <p class="schedule">10:00 - 10:30</p>
-                  <p class="rating">Clasificación: A</p>
-              </div>
-          </div>
-
-          <div class="d-flex  align-items-center flex-column justify-content-between">
-              <div>
-                  <button class="schedule-add remove-program" _id="${favorite.id}"  type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
-                  </button>
-              </div>
-              <div class="d-flex align-items-center justify-content-end">
-                  <p class="rating-alert">ALERTAS</p>
-                  <label class="switch-alert">
-                      <input type="checkbox">
-                      <span class="slideralert roundalert"></span>
-                  </label>
-              </div>
-
-          </div>
-      </div>
-      <div class="myList-details-container myList-details-desktop">
-          <div class="d-flex justify-content-between">
-              <div>
-                  <p class="rating">Clasificación: A</p>
-              </div>
-              <div>
-                  <p class="schedule-days">Lunes a Viernes</p>
-                  <p class="schedule">10:00 - 10:30</p>
-              </div>
-              <div>
-                  <div>
-                      <button class="schedule-add remove-program" _id="${favorite.id}"  type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
-                      </button>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-end">
-                      <p class="rating-alert">ALERTAS</p>
-                      <label class="switch-alert">
-                          <input type="checkbox">
-                          <span class="slideralert roundalert"></span>
-                      </label>
-                  </div>
-
-              </div>
-          </div>
-          <div>
-              <p class="schedule-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-          </div>
-      </div>
-
-  </div>
-      `;
-      });
-      let programsClaroCinema = `
-      <div class="cinema-list section-list-container">
-        <h1 class="cinema-list-title list-title-section">Claro <span>Cinema</span></h1>
-          ${programsClaroCinemaList}
-      </div>    
-`;
-      $("#claro-cinema-favorites").append(programsClaroCinema);
+      if (favoritesClaroCinema.length != 0) {
+        let programsClaroCinemaList = "";
+        favoritesClaroCinema.forEach(favorite => {
+          programsClaroCinemaList += `
+        <div class="list-item-container">
+        <div class="poster">
+            <div class="thumbnail">
+                <img src="./images/claro-cinema/carrousel/${favorite.image}" alt="">
+            </div>
+            <div class="a-cinema-rectangle">
+                <div class="poster-title-margin">
+                    <p class="a-poster-text-white">${favorite.title}</p>
+                </div>
+            </div>
+        </div>
+        <div class="myList-details-container myList-details-mobile">
+            <div class="d-flex info-schedule justify-content-between no-gutters">
+  
+                <div class="col-6">
+                    <p class="rating">Clasificación: A</p>
+                </div>
+                <div>
+                    <button class="schedule-add remove-program" _id="${favorite.id}" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="no-gutters d-flex  align-items-center justify-content-between">
+                <div>
+                    <p class="schedule-days">Lunes a Viernes</p>
+                    <p class="schedule">10:00 - 10:30</p>
+  
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-end">
+                    <p class="rating-alert">ALERTAS</p>
+                    <label class="switch-alert">
+                        <input type="checkbox">
+                        <span class="slideralert roundalert"></span>
+                    </label>
+                </div>
+  
+            </div>
+        </div>
+        <div class="myList-details-container myList-details-tablet no-gutters">
+            <div>
+                <div>
+                    <p class="schedule-days">Lunes a Viernes</p>
+                    <p class="schedule">10:00 - 10:30</p>
+                    <p class="rating">Clasificación: A</p>
+                </div>
+            </div>
+  
+            <div class="d-flex  align-items-center flex-column justify-content-between">
+                <div>
+                    <button class="schedule-add remove-program" _id="${favorite.id}"  type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                    </button>
+                </div>
+                <div class="d-flex align-items-center justify-content-end">
+                    <p class="rating-alert">ALERTAS</p>
+                    <label class="switch-alert">
+                        <input type="checkbox">
+                        <span class="slideralert roundalert"></span>
+                    </label>
+                </div>
+  
+            </div>
+        </div>
+        <div class="myList-details-container myList-details-desktop">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <p class="rating">Clasificación: A</p>
+                </div>
+                <div>
+                    <p class="schedule-days">Lunes a Viernes</p>
+                    <p class="schedule">10:00 - 10:30</p>
+                </div>
+                <div>
+                    <div>
+                        <button class="schedule-add remove-program" _id="${favorite.id}"  type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                        </button>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end">
+                        <p class="rating-alert">ALERTAS</p>
+                        <label class="switch-alert">
+                            <input type="checkbox">
+                            <span class="slideralert roundalert"></span>
+                        </label>
+                    </div>
+  
+                </div>
+            </div>
+            <div>
+                <p class="schedule-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+  
+    </div>
+        `;
+        });
+        let programsClaroCinema = `
+        <div class="cinema-list section-list-container">
+          <h1 class="cinema-list-title list-title-section">Claro <span>Cinema</span></h1>
+            ${programsClaroCinemaList}
+        </div>    
+  `;
+        $("#claro-cinema-favorites").append(programsClaroCinema);
+      }
     }
   }
 
@@ -640,9 +648,49 @@ $(document).ready(function() {
 
   if (session == 1) {
     setTimeout(function() {
-      console.log("hoihoih");
       showNotification();
     }, 2000);
+
+    /*VERIFICAR ALERTAS EN SESIÓN*/
+    let alertBeginning = localStorage.getItem("alertBeginning");
+    let alertWeb = localStorage.getItem("alertWeb");
+    let alertEmail = localStorage.getItem("alertEmail");
+    let alertMinutes = localStorage.getItem("alertMinutes");
+
+    let inputAlertMinutes = $("#alert-minutes-before");
+    let inputAlertBeginning = $("#alert-start");
+    let inputAlertWeb = $("#alert-web");
+    let inputAlertEmail = $("#alert-email");
+    let inputAlertsOff = $("#alerts-off");
+
+    if (!alertMinutes && !alertBeginning && !alertWeb && !alertEmail) {
+      inputAlertsOff.prop("checked", true);
+    } else {
+      inputAlertsOff.prop("checked", false);
+      if (alertMinutes == 30) {
+        inputAlertMinutes.prop("checked", true);
+      } else {
+        inputAlertMinutes.prop("checked", false);
+      }
+
+      if (alertBeginning == 1) {
+        inputAlertBeginning.prop("checked", true);
+      } else {
+        inputAlertBeginning.prop("checked", false);
+      }
+
+      if (alertWeb == 1) {
+        inputAlertWeb.prop("checked", true);
+      } else {
+        inputAlertWeb.prop("checked", false);
+      }
+
+      if (alertEmail == 1) {
+        inputAlertEmail.prop("checked", true);
+      } else {
+        inputAlertEmail.prop("checked", false);
+      }
+    }
 
     var sidebarContent = $(".sidebar-content");
     var sidebarItem = `                

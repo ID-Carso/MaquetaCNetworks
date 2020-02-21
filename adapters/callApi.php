@@ -1,6 +1,6 @@
 <?php
 
-function callAPI($method, $url, $data)
+function callAPI($method, $url, $data, $jsonDecode = null)
 {
     $curl = curl_init();
     switch ($method) {
@@ -30,6 +30,13 @@ function callAPI($method, $url, $data)
     if (!$result) {
         die("Connection Failure");
     }
+
     curl_close($curl);
-    echo ($result);
+
+
+    if (!is_null($jsonDecode)) {
+        json_decode($result, true);
+    } else {
+        echo ($result);
+    }
 }
