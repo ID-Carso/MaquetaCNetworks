@@ -4,6 +4,7 @@
 <head>
 
   <?php include './views/partials/head.php' ?>
+  <?php include './views/partials/session.php' ?>
   <script>
     let country = localStorage.getItem("country");
     let gender = localStorage.getItem("gender");

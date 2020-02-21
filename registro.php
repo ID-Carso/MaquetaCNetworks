@@ -2,8 +2,9 @@
 <html lang="en">
 
 <head>
-        <link rel="preload" href="./images/general/loader.gif" as="image">
+        <link rel="preload" href="./images/General/loader.gif" as="image">
         <?php include './views/partials/head.php' ?>
+        <?php include './views/partials/session-start.php' ?>
 
 </head>
 
@@ -67,10 +68,11 @@
                                                                 </div>
                                                         </div>
                                                 </div>
-                                                <br>
+
                                                 <p class="nodatos"> Aún no has ingresado datos <img src="images/registro/alerta.svg">
                                                 </p>
-                                                <br>
+                                                <p class="data-incorrect"></p>
+
 
                                                 <footer class="txtcontenido">
 

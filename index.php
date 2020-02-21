@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-		<?php include './views/partials/head.php' ?>
+	<?php include './views/partials/head.php' ?>
 </head>
 
 <body class="fondo-index">
@@ -105,7 +105,7 @@
 					<div class="col-sm-3 offset-3 col-md-4 offset-md-0 col-lg-3 offset-lg-0">
 						<a href="home.php">
 							<div class="name_paises espacio">
-								<img src="images/paises/paragay.svg" class="Icon_paises">Paraguay
+								<img src="images/paises/paraguay.svg" class="Icon_paises">Paraguay
 							</div>
 						</a>
 
@@ -126,8 +126,7 @@
 								<!-- Prueba Rogelio , los estilos directos aplicarlos a tus hojas de estilo indicada. -->
 
 								<div class="row">
-									<div class="col align-middle"
-										style="display: flex; width: 20%; max-width: 29px; min-width: 29px;padding: 0;  margin-left: 16px;">
+									<div class="col align-middle" style="display: flex; width: 20%; max-width: 29px; min-width: 29px;padding: 0;  margin-left: 16px;">
 										<img src="images/paises/dominican-republic.svg" class="Icon_paises"></div>
 
 									<div class="col" style="width: 50%; margin: 0 20px 0 14px; padding: 0;">

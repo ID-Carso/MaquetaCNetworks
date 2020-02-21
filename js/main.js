@@ -663,7 +663,12 @@ $(document).ready(function() {
     let inputAlertEmail = $("#alert-email");
     let inputAlertsOff = $("#alerts-off");
 
-    if (!alertMinutes && !alertBeginning && !alertWeb && !alertEmail) {
+    if (
+      alertMinutes == 0 &&
+      alertBeginning == 0 &&
+      alertWeb == 0 &&
+      !alertEmail == 0
+    ) {
       inputAlertsOff.prop("checked", true);
     } else {
       inputAlertsOff.prop("checked", false);
@@ -700,13 +705,11 @@ $(document).ready(function() {
     let userOptions = $(".user-options");
     let sidebarHeader = $(".sidebar-header");
     let userName = localStorage.getItem("name");
-    let avatar;
+    let avatar = `<img src="./images/menu/icon-white-user.svg" />`;
     let localStorageAvatar = localStorage.getItem("avatar");
-
-    if (localStorageAvatar !== "null" || !localStorageAvatar) {
-      avatar = `<img src="${localStorage.getItem("avatar")}" />`;
-    } else {
-      avatar = `<img src="./images/menu/icon-white-user.svg" />`;
+    if (localStorageAvatar != null || localStorageAvatar != "null") {
+      console.log(typeof localStorageAvatar);
+      avatar = `<img src="${localStorageAvatar}" />`;
     }
 
     let menuMobile = `            

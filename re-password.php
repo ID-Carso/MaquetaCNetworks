@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
+  <link rel="preload" href="./images/general/loader.gif" as="image">
   <?php include './views/partials/head.php' ?>
 </head>
 
 <body class="fondo">
   <div class="login-container">
     <div class="login-form no-gutters">
-      <div class="col-sm-12 no-gutters col-md-6 no-gutters col-lg-4  col-xl-3 shadow1 fondolog">
+      <div class="col-sm-12 no-gutters col-md-6 no-gutters col-lg-4  col-xl-3 shadow1 fondolog formContainer">
         <img src="images/registro/group-10.svg" class="ubicacion5" />
         <img src="images/registro/group-12.svg" class="ubicacion3" />
 
@@ -42,7 +43,7 @@
 
             <div class="row ma-no centro">
               <div class="col-sm-12 signup-button-container">
-                <button type="button" class="form-button-outline re-password-button" id="reset-email">
+                <button type="button" class="form-button-primary re-password-button" id="reset-email">
                   RECUPERAR
                 </button>
               </div>

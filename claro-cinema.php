@@ -129,7 +129,7 @@
                 <div class="poster-body">
                   <div class="showtime-container">
                     <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                   </div>
                   <a href="sinopsis.php">
                     <div class="thumbnail">
@@ -149,7 +149,7 @@
                 <div class="poster-body">
                   <div class="showtime-container">
                     <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                   </div>
                   <a href="sinopsis.php">
                     <div class="thumbnail">
@@ -168,7 +168,7 @@
                 <div class="poster-body">
                   <div class="showtime-container">
                     <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                   </div>
                   <a href="sinopsis.php">
                     <div class="thumbnail">
@@ -187,7 +187,7 @@
                 <div class="poster-body">
                   <div class="showtime-container">
                     <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                   </div>
                   <a href="sinopsis.php">
                     <div class="thumbnail">
@@ -206,7 +206,7 @@
                 <div class="poster-body">
                   <div class="showtime-container">
                     <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                   </div>
                   <a href="sinopsis.php">
                     <div class="thumbnail">
@@ -225,7 +225,7 @@
                 <div class="poster-body">
                   <div class="showtime-container">
                     <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                   </div>
                   <a href="sinopsis.php">
                     <div class="thumbnail">
@@ -244,7 +244,7 @@
                 <div class="poster-body">
                   <div class="showtime-container">
                     <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                   </div>
                   <a href="sinopsis.php">
                     <div class="thumbnail">
@@ -263,7 +263,7 @@
                 <div class="poster-body">
                   <div class="showtime-container">
                     <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                   </div>
                   <a href="sinopsis.php">
                     <div class="thumbnail">
@@ -282,7 +282,7 @@
                 <div class="poster-body">
                   <div class="showtime-container">
                     <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                   </div>
                   <a href="sinopsis.php">
                     <div class="thumbnail">
@@ -318,7 +318,7 @@
                 <div class="poster-body">
                   <div class="showtime-container">
                     <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                   </div>
                   <div class="thumbnail">
                   </div>
@@ -336,7 +336,7 @@
                 <div class="poster-body">
                   <div class="showtime-container">
                     <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                   </div>
                   <div class="thumbnail">
                   </div>
@@ -354,7 +354,7 @@
                 <div class="poster-body">
                   <div class="showtime-container">
                     <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                   </div>
                   <div class="thumbnail">
                   </div>
@@ -372,7 +372,7 @@
                 <div class="poster-body">
                   <div class="showtime-container">
                     <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-icon-yellow.svg" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                   </div>
                   <div class="thumbnail">
                   </div>
@@ -398,7 +398,7 @@
                   <div class="poster-body">
                     <div class="showtime-container">
                       <p class="a-programming-text">14:30 - 16:30</p>
-                      <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                      <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                     </div>
                     <div class="thumbnail">
                     </div>
@@ -417,7 +417,7 @@
                   <div class="poster-body">
                     <div class="showtime-container">
                       <p class="a-programming-text">14:30 - 16:30</p>
-                      <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                      <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                     </div>
                     <div class="thumbnail">
                     </div>
@@ -457,7 +457,7 @@
                   <div class="poster-body">
                     <div class="showtime-container">
                       <p class="a-programming-text">14:30 - 16:30</p>
-                      <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-icon-yellow.svg" alt=""></button>
+                      <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                     </div>
                     <div class="thumbnail">
                     </div>
@@ -478,7 +478,7 @@
                   <div class="poster-body">
                     <div class="showtime-container">
                       <p class="a-programming-text">14:30 - 16:30</p>
-                      <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-icon-yellow.svg" alt=""></button>
+                      <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                     </div>
                     <div class="thumbnail">
                     </div>
@@ -497,7 +497,7 @@
                   <div class="poster-body">
                     <div class="showtime-container">
                       <p class="a-programming-text">14:30 - 16:30</p>
-                      <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-icon-yellow.svg" alt=""></button>
+                      <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                     </div>
                     <div class="thumbnail">
                     </div>
@@ -533,7 +533,7 @@
               <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/plus.png" alt=""></button>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
                 </div>
@@ -550,7 +550,7 @@
               <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-icon-yellow.svg" alt=""></button>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
                 </div>
@@ -567,7 +567,7 @@
               <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-icon-yellow.svg" alt=""></button>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
                 </div>
@@ -584,7 +584,7 @@
               <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-icon-yellow.svg" alt=""></button>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
                 </div>
@@ -601,7 +601,7 @@
               <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-icon-yellow.svg" alt=""></button>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
                 </div>
@@ -618,7 +618,7 @@
               <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-icon-yellow.svg" alt=""></button>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
                 </div>
@@ -635,7 +635,7 @@
               <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-icon-yellow.svg" alt=""></button>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
                 </div>
@@ -667,7 +667,7 @@
               <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-icon-yellow.svg" alt=""></button>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
                 </div>
@@ -684,7 +684,7 @@
               <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
                 </div>
@@ -701,7 +701,7 @@
               <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
                 </div>
@@ -718,7 +718,7 @@
               <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class=" thumbnail">
                 </div>
@@ -735,7 +735,7 @@
               <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
                 </div>
@@ -752,7 +752,7 @@
               <div class="poster-body">
                 <div class="showtime-container">
                   <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
                 </div>

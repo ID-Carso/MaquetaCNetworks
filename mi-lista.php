@@ -3,6 +3,7 @@
 
 <head>
     <?php include './views/partials/head.php' ?>
+    <?php include './views/partials/session.php' ?>
 </head>
 
 <body>

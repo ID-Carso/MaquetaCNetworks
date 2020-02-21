@@ -3,6 +3,7 @@
 
 <head>
         <?php include './views/partials/head.php' ?>
+        <?php include './views/partials/session.php' ?>
 </head>
 
 
@@ -37,8 +38,8 @@
                         <img src="images/registro/group-10.svg" class="ubicacion5" />
                         <img src="images/config/puntos.svg" class="ubicacionpuntos">
 
-                        <div class="col-10 col-sm-8 col-md-8 col-lg-9 col-xl-10 mx-auto pt-5">
-                                <div class="row ma-no centro pb-5 pt-5 pt-md-0">
+                        <div class="col-10 col-sm-8 col-md-8 col-lg-9 col-xl-10 mx-auto">
+                                <div class="row ma-no centro">
                                         <div class="col-sm-12 no-gap">
                                                 <div class="centro">
                                                         <p class="titulos-configuraciones"> Alertas </p>

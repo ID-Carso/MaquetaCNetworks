@@ -120,12 +120,20 @@ function sendUserEmail(inputEmail) {
   $.ajax({
     type: "POST",
     data: emailUser,
+    beforeSend: function() {
+      const loader = `
+      <div class="loader">
+        <img src="./images/General/loader.gif" class="loader-img" alt="">
+      </div>
+      `;
+      let formContainer = $(".formContainer");
+      formContainer.prepend(loader);
+    },
     url:
       "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_send",
     success: function(result) {
       if (result.data) {
-        location.href =
-          "http://www.claronetworks.openofficedospuntocero.info/email-sent.php";
+        location.href = "./email-sent.php";
       }
     }
   });
@@ -148,12 +156,21 @@ function sendNewPassword(inputPassword, secondInputPassword) {
   $.ajax({
     type: "POST",
     data: info_user,
+    beforeSend: function() {
+      const loader = `
+      <div class="loader">
+        <img src="./images/General/loader.gif" class="loader-img" alt="">
+      </div>
+      `;
+      let formContainer = $(".formContainer");
+      formContainer.prepend(loader);
+    },
     url:
       "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_password",
     success: function(result) {
+      console.log(result);
       if (result.code == 200) {
-        location.href =
-          "http://www.claronetworks.openofficedospuntocero.info/success-password.php";
+        location.href = "./success-password.php";
       }
     }
   });
@@ -173,7 +190,7 @@ function signIn(email, password) {
     beforeSend: function() {
       const loader = `
       <div class="loader">
-        <img src="./images/general/loader.gif" class="loader-img" alt="">
+        <img src="./images/General/loader.gif" class="loader-img" alt="">
       </div>
       `;
       let formContainer = $(".formContainer");
@@ -182,8 +199,7 @@ function signIn(email, password) {
     success: function(result) {
       console.log(result);
       let json = JSON.parse(result);
-      console.log(json.data.config);
-      let sections = json.data.favorites;
+
       if (json.data) {
         location.href = "./home.php";
 
@@ -206,6 +222,7 @@ function signIn(email, password) {
         localStorage.setItem("alertMinutes", json.data.config.minutes);
         localStorage.setItem("alertEmail", json.data.config.email);
         localStorage.setItem("alertWeb", json.data.config.web);
+        let sections = json.data.favorites;
         sections.forEach(section => {
           if (section.id_section == 1) {
             localStorage.setItem(
@@ -349,7 +366,7 @@ function registerUser(inputName, inputEmail, inputPassword) {
     beforeSend: function() {
       const loader = `
       <div class="loader">
-        <img src="./images/general/loader.gif" class="loader-img" alt="">
+        <img src="./images/General/loader.gif" class="loader-img" alt="">
       </div>
       `;
       let formContainer = $(".formContainer");
@@ -357,11 +374,22 @@ function registerUser(inputName, inputEmail, inputPassword) {
     },
     success: function(result) {
       let json = JSON.parse(result);
+      console.log(json);
       let loader = $(".loader");
-      loader.remove();
-      let modal = $("#mensaje");
-      modal.modal("show");
-      sendEmail(json.data.id);
+
+      if (json.code == 201) {
+        let modal = $("#mensaje");
+        modal.modal("show");
+        sendEmail(json.data.id);
+        loader.remove();
+      } else {
+        if (json.code == 422) {
+          $(".data-incorrect")
+            .text("El email que ingresaste ya está registrado")
+            .addClass("invalid-email");
+          loader.remove();
+        }
+      }
     }
   });
 }
@@ -377,66 +405,124 @@ function updateAlerts(configJson) {
     data: dataUser,
     url: "../../adapters/user.php",
     success: function(result) {
-      console.log(result);
-      let modal = $("#mensaje");
-      modal.modal("show");
+      let json = JSON.parse(result);
+      console.log(json);
+      if (json.code == 200) {
+        let modal = $("#mensaje");
+        modal.modal("show");
+        let alertBeginning = localStorage.setItem(
+          "alertBeginning",
+          json.data.beginning
+        );
+        let alertWeb = localStorage.setItem("alertWeb", json.data.web);
+        let alertEmail = localStorage.setItem("alertEmail", json.data.email);
+        let alertMinutes = localStorage.setItem(
+          "alertMinutes",
+          json.data.minutes
+        );
+
+        /*let inputAlertMinutes = $("#alert-minutes-before");
+        let inputAlertBeginning = $("#alert-start");
+        let inputAlertWeb = $("#alert-web");
+        let inputAlertEmail = $("#alert-email");
+        let inputAlertsOff = $("#alerts-off");
+
+        if (
+          json.data.minutes == 0 &&
+          json.data.beginning == 0 &&
+          json.data.web == 0 &&
+          json.data.email == 0
+        ) {
+          inputAlertsOff.prop("checked", true);
+        } else {
+          inputAlertsOff.prop("checked", false);
+          if (json.data.minutes == 30) {
+            inputAlertMinutes.prop("checked", true);
+          } else {
+            inputAlertMinutes.prop("checked", false);
+          }
+
+          if (json.data.beginning == 1) {
+            inputAlertBeginning.prop("checked", true);
+          } else {
+            inputAlertBeginning.prop("checked", false);
+          }
+
+          if (json.data.web == 1) {
+            inputAlertWeb.prop("checked", true);
+          } else {
+            inputAlertWeb.prop("checked", false);
+          }
+
+          if (json.data.email == 1) {
+            inputAlertEmail.prop("checked", true);
+          } else {
+            inputAlertEmail.prop("checked", false);
+          }
+        }*/
+      }
     }
   });
 }
 
 function addFavorites() {
   $(".poster-button").click(function() {
-    if ($(this).hasClass("remove-program")) {
-      let id = localStorage.getItem("id");
-      let programId = $(this).attr("_id");
-      removeFavorites(id, programId, $(this), null);
-      return true;
-    } else if ($(this).hasClass("add-favorites")) {
-      let heartIcon = $(this).children(".poster-add");
-      let buttonFavorite = $(this);
-      let id_program = $(this).attr("_id");
-      let id_user = localStorage.getItem("id");
-      let dataUser = {
-        function: "addFavorites",
-        user_id: id_user,
-        program_id: id_program
-      };
+    let session = localStorage.getItem("session");
+    if (session != 1) {
+      location.href = "login.php";
+    } else {
+      if ($(this).hasClass("remove-program")) {
+        let id = localStorage.getItem("id");
+        let programId = $(this).attr("_id");
+        removeFavorites(id, programId, $(this), null);
+        return true;
+      } else if ($(this).hasClass("add-favorites")) {
+        let heartIcon = $(this).children(".poster-add");
+        let buttonFavorite = $(this);
+        let id_program = $(this).attr("_id");
+        let id_user = localStorage.getItem("id");
+        let dataUser = {
+          function: "addFavorites",
+          user_id: id_user,
+          program_id: id_program
+        };
 
-      $.ajax({
-        type: "POST",
-        data: dataUser,
-        url: "../../adapters/user.php",
-        success: function(result) {
-          console.log(result);
-          let json = JSON.parse(result);
+        $.ajax({
+          type: "POST",
+          data: dataUser,
+          url: "../../adapters/user.php",
+          success: function(result) {
+            console.log(result);
+            let json = JSON.parse(result);
 
-          if (json.code == 200) {
-            let sections = json.data;
-            buttonFavorite.removeClass("add-favorites");
-            buttonFavorite.addClass("remove-program");
-            heartIcon.attr("src", "./images/posters/heart-icon-white.svg");
-            sections.forEach(section => {
-              if (section.id_section == 1) {
-                localStorage.setItem(
-                  "favoritesCanalClaro",
-                  JSON.stringify(section.programs)
-                );
-              } else if (section.id_section == 2) {
-                localStorage.setItem(
-                  "favoritesConcertChannel",
-                  JSON.stringify(section.programs)
-                );
-              } else if (section.id_section == 3) {
-                localStorage.setItem(
-                  "favoritesClaroCinema",
-                  JSON.stringify(section.programs)
-                );
-              }
-            });
+            if (json.code == 200) {
+              let sections = json.data;
+              buttonFavorite.removeClass("add-favorites");
+              buttonFavorite.addClass("remove-program");
+              heartIcon.attr("src", "./images/posters/heart-icon-white.svg");
+              sections.forEach(section => {
+                if (section.id_section == 1) {
+                  localStorage.setItem(
+                    "favoritesCanalClaro",
+                    JSON.stringify(section.programs)
+                  );
+                } else if (section.id_section == 2) {
+                  localStorage.setItem(
+                    "favoritesConcertChannel",
+                    JSON.stringify(section.programs)
+                  );
+                } else if (section.id_section == 3) {
+                  localStorage.setItem(
+                    "favoritesClaroCinema",
+                    JSON.stringify(section.programs)
+                  );
+                }
+              });
+            }
           }
-        }
-      });
-      return true;
+        });
+        return true;
+      }
     }
   });
 }

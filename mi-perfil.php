@@ -19,7 +19,12 @@
     <script src="./js/lib/rellax.js"></script>
     <script src="./js/main.js" type="module"></script>
 </head>
-
+<script>
+    let session = localStorage.getItem("session");
+    if (session != 1) {
+        location.href = "home.php"
+    }
+</script>
 
 <body class="fondo">
     <header class="perfil-header">

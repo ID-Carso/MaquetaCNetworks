@@ -94,7 +94,7 @@ function getPrograms(date, time) {
     url: "../../adapters/program.php",
     success: function(result) {
       let json = JSON.parse(result);
-
+      console.log(json);
       /* SLIDER "AHORA EN VIVO CANAL CLARO*/
       let programingCanalClaro = json.data[0].programing[0].programs;
       let programingConcertChannel = json.data[1].programing[0].programs;

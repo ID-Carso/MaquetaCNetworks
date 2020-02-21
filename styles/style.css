@@ -5269,6 +5269,7 @@ input[type="radio"]:checked + .mujer-estilo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 15px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
