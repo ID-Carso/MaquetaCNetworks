@@ -150,7 +150,7 @@ $(document).ready(function() {
                       <p class="rating">Clasificación: A</p>
                   </div>
                   <div>
-                      <button class="schedule-add remove-program" _id="${favorite.id}" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                      <button class="button-none remove-program" _id="${favorite.id}" type="button"><img src="./images/mi-lista/heart.svg">
                       </button>
                   </div>
               </div>
@@ -179,9 +179,9 @@ $(document).ready(function() {
                   </div>
               </div>
     
-              <div class="d-flex  align-items-center flex-column justify-content-between">
+              <div class="d-flex  align-items-end flex-column justify-content-between">
                   <div>
-                      <button class="schedule-add remove-program" _id="${favorite.id}" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                      <button class="button-none remove-program" _id="${favorite.id}" type="button"><img src="images/mi-lista/heart.svg">
                       </button>
                   </div>
                   <div class="d-flex align-items-center justify-content-end">
@@ -204,8 +204,8 @@ $(document).ready(function() {
                       <p class="schedule">10:00 - 10:30</p>
                   </div>
                   <div>
-                      <div>
-                          <button class="schedule-add remove-program" _id="${favorite.id}" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                      <div class="text-right mb-3">
+                          <button class="button-none remove-program" _id="${favorite.id}" type="button"><img src="images/mi-lista/heart.svg">
                           </button>
                       </div>
                       <div class="d-flex align-items-center justify-content-end">
@@ -264,7 +264,7 @@ $(document).ready(function() {
                   <p class="rating">Clasificación: A</p>
               </div>
               <div>
-                  <button class="schedule-add remove-program" _id="${favorite.id}"  type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                  <button class="button-none remove-program" _id="${favorite.id}"  type="button"><img src="images/mi-lista/heart.svg">
                   </button>
               </div>
           </div>
@@ -293,9 +293,9 @@ $(document).ready(function() {
               </div>
           </div>
 
-          <div class="d-flex  align-items-center flex-column justify-content-between">
+          <div class="d-flex  align-items-end flex-column justify-content-between">
               <div>
-                  <button class="schedule-add remove-program" _id="${favorite.id}"  type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                  <button class="button-none remove-program" _id="${favorite.id}"  type="button"><img src="images/mi-lista/heart.svg">
                   </button>
               </div>
               <div class="d-flex align-items-center justify-content-end">
@@ -318,8 +318,8 @@ $(document).ready(function() {
                   <p class="schedule">10:00 - 10:30</p>
               </div>
               <div>
-                  <div>
-                      <button class="schedule-add remove-program" _id="${favorite.id}"  type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                  <div class="text-right mb-3">
+                      <button class="button-none remove-program" _id="${favorite.id}"  type="button"><img src="images/mi-lista/heart.svg">
                       </button>
                   </div>
                   <div class="d-flex align-items-center justify-content-end">
@@ -377,7 +377,7 @@ $(document).ready(function() {
                     <p class="rating">Clasificación: A</p>
                 </div>
                 <div>
-                    <button class="schedule-add remove-program" _id="${favorite.id}" type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                    <button class="button-none remove-program" _id="${favorite.id}" type="button"><img src="images/mi-lista/heart.svg">
                     </button>
                 </div>
             </div>
@@ -406,9 +406,9 @@ $(document).ready(function() {
                 </div>
             </div>
   
-            <div class="d-flex  align-items-center flex-column justify-content-between">
+            <div class="d-flex align-items-end flex-column justify-content-between">
                 <div>
-                    <button class="schedule-add remove-program" _id="${favorite.id}"  type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                    <button class="button-none remove-program" _id="${favorite.id}"  type="button"><img src="images/mi-lista/heart.svg">
                     </button>
                 </div>
                 <div class="d-flex align-items-center justify-content-end">
@@ -431,8 +431,8 @@ $(document).ready(function() {
                     <p class="schedule">10:00 - 10:30</p>
                 </div>
                 <div>
-                    <div>
-                        <button class="schedule-add remove-program" _id="${favorite.id}"  type="button">QUITAR <span><img src="images/mi-lista/menos.svg"></span>
+                    <div class="text-right mb-3">
+                        <button class="button-none remove-program" _id="${favorite.id}"  type="button"><img src="./images/mi-lista/heart.svg">
                         </button>
                     </div>
                     <div class="d-flex align-items-center justify-content-end">
@@ -893,6 +893,8 @@ $(document).ready(function() {
       return false;
     }
   });
+
+  addFavorites();
 
   /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
 

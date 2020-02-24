@@ -466,7 +466,7 @@ function updateAlerts(configJson) {
 }
 
 function addFavorites() {
-  $(".poster-button").click(function() {
+  $(".poster-button, .programing-button").click(function() {
     let session = localStorage.getItem("session");
     if (session != 1) {
       location.href = "login.php";
@@ -478,6 +478,8 @@ function addFavorites() {
         return true;
       } else if ($(this).hasClass("add-favorites")) {
         let heartIcon = $(this).children(".poster-add");
+        let heartIconGray = $(this).find("path");
+        let addButton = $(this);
         let buttonFavorite = $(this);
         let id_program = $(this).attr("_id");
         let id_user = localStorage.getItem("id");
@@ -492,14 +494,22 @@ function addFavorites() {
           data: dataUser,
           url: "../../adapters/user.php",
           success: function(result) {
-            console.log(result);
             let json = JSON.parse(result);
-
+            console.log(json);
             if (json.code == 200) {
               let sections = json.data;
               buttonFavorite.removeClass("add-favorites");
               buttonFavorite.addClass("remove-program");
-              heartIcon.attr("src", "./images/posters/heart-icon-white.svg");
+              if (heartIcon) {
+                heartIcon.attr("src", "./images/posters/heart-icon-white.svg");
+              }
+
+              if (heartIconGray) {
+                addButton.prop("title", "Eliminar de mi lista");
+                heartIconGray.addClass("heart-gray-filled");
+                heartIconGray.removeClass("heart-gray");
+              }
+
               sections.forEach(section => {
                 if (section.id_section == 1) {
                   localStorage.setItem(
@@ -529,6 +539,7 @@ function addFavorites() {
 
 function removeFavorites(user_id, program_id, removeButton, itemList) {
   let heartIcon = removeButton.children(".poster-add");
+  let heartIconGray = removeButton.find("path");
   let dataUser = {
     function: "removeFavorites",
     user_id: user_id,
@@ -552,6 +563,11 @@ function removeFavorites(user_id, program_id, removeButton, itemList) {
         removeButton.addClass("add-favorites");
 
         heartIcon.attr("src", "./images/posters/heart-outline.svg");
+        if (heartIconGray) {
+          removeButton.attr("title", "Agregar a mi lista");
+          heartIconGray.removeClass("heart-gray-filled");
+          heartIconGray.addClass("heart-gray");
+        }
       }
 
       if (sections !== null) {
@@ -602,15 +618,16 @@ function removeFavorites(user_id, program_id, removeButton, itemList) {
       ) {
         let listFavorites = $(".mi-lista-container");
         let myFavorites = `
+        <div class="text-center mt-5 pt-md-4 mt-xl-5">
+         <img src="./images/mi-lista/favorites.svg" alt="" class="no-favorites-img">
+         </div>
         <div class="no-gutters mt-4 mt-xl-5 pt-xl-5">
           <div class="col-12">
               <p class="a-text-warm-grey-bold mb-3 text-center no-favorites-title mb-xl-4">No tienes favoritos guardados todavía</p>
               <p class="a-text-warm-grey-regular text-center no-favorites-subtitle">Explora y descubre más</p>
           </div>
         </div>
-        <div class="text-center mt-5 pt-md-4 mt-xl-5">
-            <img src="./images/mi-lista/favorites.svg" alt="" class="no-favorites-img">
-        </div>
+
             `;
         listFavorites.append(myFavorites);
       }
