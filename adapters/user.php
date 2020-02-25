@@ -111,6 +111,16 @@ class User
     {
         callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/notification/" . $id . "&" . $currentTime . "&" . $currentDate . "", null);
     }
+
+    function enableNotification($data)
+    {
+        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/activeNotification", $data);
+    }
+
+    function disableNotification($data)
+    {
+        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/deactiveNotification", $data);
+    }
 }
 
 
@@ -207,6 +217,24 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             $dataJson = json_encode($data);
             $user = User::getUserInstance();
             echo ($user->removeFavorites($dataJson));
+            break;
+
+        case 'enableNotification':
+            $userId = $_POST["user_id"];
+            $programId = $_POST["program_id"];
+            $data = array("user_id" => $userId, "program_id" => $programId);
+            $dataJson = json_encode($data);
+            $user = User::getUserInstance();
+            echo ($user->enableNotification($dataJson));
+            break;
+
+        case 'disableNotification':
+            $userId = $_POST["user_id"];
+            $programId = $_POST["program_id"];
+            $data = array("user_id" => $userId, "program_id" => $programId);
+            $dataJson = json_encode($data);
+            $user = User::getUserInstance();
+            echo ($user->disableNotification($dataJson));
             break;
     }
 }

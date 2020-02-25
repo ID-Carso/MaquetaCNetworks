@@ -6,10 +6,12 @@ function validateTokenPassword(tokenPassword) {
       "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_verify",
     success: function(result) {
       if (result.data) {
+        console.log(result.data);
         let user_id = $("#user_id");
-        let session = localStorage.setItem("session", 1);
-        let id = localStorage.setItem("id", result.data.id);
-        let name = localStorage.setItem("name", result.data.name);
+        localStorage.setItem("session", 1);
+        localStorage.setItem("id", result.data.id);
+        localStorage.setItem("name", result.data.name);
+        localStorage.setItem("avatar", result.data.avatar);
         user_id.attr("value", result.data.user_id);
         location.href =
           "http://www.claronetworks.openofficedospuntocero.info/form-password.php";
@@ -70,12 +72,16 @@ function showNotification() {
             }
             alert.html(alertProgram);
             if (screen.width >= 320 && screen.width < 768) {
-              alert.css("animation", "showAlertMobile 8s");
+              alert
+                .css("transform", "translate(50%, 0%)")
+                .css("animation", "showAlertMobile 8s");
+
               setTimeout(function() {
                 alert.css("animation", "none");
               }, 8000);
             } else if (screen.width > 767) {
               alert.css("animation", "showAlert 8s");
+
               setTimeout(function() {
                 alert.css("animation", "none");
               }, 8000);
@@ -83,7 +89,10 @@ function showNotification() {
 
             $(window).resize(function() {
               if (screen.width >= 320 && screen.width < 768) {
-                alert.css("animation", "showAlertMobile 8s");
+                alert
+                  .css("transform", "translate(50%, 0%)")
+                  .css("animation", "showAlertMobile 8s");
+
                 setTimeout(function() {
                   alert.css("animation", "none");
                 }, 8000);
@@ -197,9 +206,8 @@ function signIn(email, password) {
       formContainer.prepend(loader);
     },
     success: function(result) {
-      console.log(result);
       let json = JSON.parse(result);
-
+      console.log(json);
       if (json.data) {
         location.href = "./home.php";
 
@@ -343,7 +351,7 @@ function selectAvatar(id, src, idAvatar) {
           <img src="${json.data.avatar}" />
         </div>
         `);
-        let modal = $(".modal-favorites");
+        let modal = $("#mensaje");
         modal.modal("show");
       }
     }
@@ -640,6 +648,54 @@ function removeFavorites(user_id, program_id, removeButton, itemList) {
   return true;
 }
 
+function updateAlertProgram(user_id, program_id, active) {
+  let dataUser;
+  console.log(active);
+  if (active == true) {
+    dataUser = {
+      function: "enableNotification",
+      user_id: user_id,
+      program_id: program_id
+    };
+  } else {
+    dataUser = {
+      function: "disableNotification",
+      user_id: user_id,
+      program_id: program_id
+    };
+  }
+
+  $.ajax({
+    type: "POST",
+    data: dataUser,
+    url: "../../adapters/user.php",
+    success: function(result) {
+      let json = JSON.parse(result);
+      if (json.code == 200) {
+        let sections = json.data;
+        sections.forEach(section => {
+          if (section.id_section == 1) {
+            localStorage.setItem(
+              "favoritesCanalClaro",
+              JSON.stringify(section.programs)
+            );
+          } else if (section.id_section == 2) {
+            localStorage.setItem(
+              "favoritesConcertChannel",
+              JSON.stringify(section.programs)
+            );
+          } else if (section.id_section == 3) {
+            localStorage.setItem(
+              "favoritesClaroCinema",
+              JSON.stringify(section.programs)
+            );
+          }
+        });
+      }
+    }
+  });
+}
+
 export {
   sendUserEmail,
   validateTokenPassword,
@@ -653,5 +709,6 @@ export {
   addFavorites,
   removeFavorites,
   showNotification,
-  hideNotification
+  hideNotification,
+  updateAlertProgram
 };

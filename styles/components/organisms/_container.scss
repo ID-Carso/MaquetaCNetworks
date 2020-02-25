@@ -203,7 +203,6 @@
   z-index: 4;
   max-width: 300px;
   transition: all 1s;
-  transform: translate(50%, 0%);
 }
 
 @keyframes showAlert {
@@ -212,15 +211,15 @@
   }
 
   25% {
-    right: 22%;
+    right: 5%;
   }
 
   50% {
-    right: 22%;
+    right: 5%;
   }
 
   75% {
-    right: 22%;
+    right: 5%;
   }
 
   100% {

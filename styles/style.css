@@ -4628,7 +4628,7 @@ input[type="radio"]:checked + .mujer-estilo {
   border-radius: 25px !important;
 }
 
-.modal-footer {
+.modal-favorites-footer {
   padding: 0 !important;
 }
 
@@ -4878,8 +4878,6 @@ input[type="radio"]:checked + .mujer-estilo {
   max-width: 300px;
   -webkit-transition: all 1s;
   transition: all 1s;
-  -webkit-transform: translate(50%, 0%);
-          transform: translate(50%, 0%);
 }
 
 @-webkit-keyframes showAlert {
@@ -4887,13 +4885,13 @@ input[type="radio"]:checked + .mujer-estilo {
     right: -100%;
   }
   25% {
-    right: 22%;
+    right: 5%;
   }
   50% {
-    right: 22%;
+    right: 5%;
   }
   75% {
-    right: 22%;
+    right: 5%;
   }
   100% {
     right: -100%;
@@ -4905,13 +4903,13 @@ input[type="radio"]:checked + .mujer-estilo {
     right: -100%;
   }
   25% {
-    right: 22%;
+    right: 5%;
   }
   50% {
-    right: 22%;
+    right: 5%;
   }
   75% {
-    right: 22%;
+    right: 5%;
   }
   100% {
     right: -100%;
@@ -5811,7 +5809,7 @@ input[type="radio"]:checked + .mujer-estilo {
     min-width: 300px;
     border-radius: 25px !important;
   }
-  .modal-fotter {
+  .modal-favorites-footer {
     padding: 0.75rem !important;
   }
   /*End General - Moleculas*/
@@ -6925,7 +6923,7 @@ input[type="radio"]:checked + .mujer-estilo {
   .modal-favorites-content {
     padding: 70px 80px;
   }
-  .modal-fotter {
+  .modal-favorites-footer {
     padding: 0.75rem !important;
   }
   /*End General - Moleculas*/
@@ -8056,7 +8054,7 @@ input[type="radio"]:checked + .mujer-estilo {
   .modal-favorites-content {
     padding: 70px 80px;
   }
-  .modal-fotter {
+  .modal-favorites-footer {
     padding: 0.75rem !important;
   }
   /*End General - Moleculas*/
@@ -9169,7 +9167,7 @@ input[type="radio"]:checked + .mujer-estilo {
   .modal-favorites-content {
     padding: 70px 80px;
   }
-  .modal-fotter {
+  .modal-favorites-footer {
     padding: 0.75rem !important;
   }
   /*End General - Moleculas*/

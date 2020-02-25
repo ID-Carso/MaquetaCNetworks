@@ -134,6 +134,7 @@ function validateToken(token) {
         localStorage.setItem("session", 1);
         localStorage.setItem("id", result.data.id);
         localStorage.setItem("name", result.data.name);
+        localStorage.setItem("avatar", result.data.avatar);
         let name = result.data.name;
         let nameUser = $("#cuenta-confirmada-name-user");
         nameUser.html(name);
