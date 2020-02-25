@@ -33,12 +33,12 @@
         </header>
 
         <div class="alertas-container no-gutters">
-                <div class="col-sm-12 mx-auto no-gutters col-md-6 no-gutters col-lg-4 col-xl-4 alertas-content shadow1 fondolog position-relative">
+                <div class="col-sm-12 mx-auto no-gutters col-md-6 no-gutters col-lg-4 col-xl-4 card-white shadow1 fondolog position-relative">
                         <a href="configuracion.php"> <img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back"></a>
                         <img src="images/registro/group-10.svg" class="ubicacion5" />
                         <img src="images/config/puntos.svg" class="ubicacionpuntos">
 
-                        <div class="col-10 col-sm-8 col-md-8 col-lg-9 col-xl-10 mx-auto">
+                        <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
                                 <div class="row ma-no centro">
                                         <div class="col-sm-12 no-gap">
                                                 <div class="centro">

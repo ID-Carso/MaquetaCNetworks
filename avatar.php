@@ -28,10 +28,10 @@
       <div class="nav-content">
         <div class="claro-logo">
 
-          <a href="home.php"><img class="logo" src="./images/home/claro-logo.svg" alt="" /></a>
+          <a href="home.php"><img class="logo" src="./images/logos/claro-networks-white.svg" /></a>
         </div>
 
-        <div class="user-options">
+        <div class=" user-options">
         </div>
       </div>
       <div class="claro-navbar">
@@ -70,7 +70,7 @@
   </header>
 
   <div style="padding-top: 3%">
-    <div class="col-sm-12 no-gutters col-md-8 mx-auto no-gutters col-lg-4 col-xl-3 shadow1 fondolog position-relative">
+    <div class="col-sm-12 no-gutters col-md-8 mx-auto no-gutters col-lg-4 col-xl-3 shadow1 fondolog position-relative card-white">
       <a href="configuracion.php"><img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back"></a>
       <img src="images/registro/group-10.svg" class="ubicacion5" />
 
@@ -94,42 +94,42 @@
           <div class="tamaño2 centro">
             <ul class="lista-avatar  ">
               <div class="col-md text-center no-gap">
-                <li rel="claro-canal" class="active-navAvatar">
-                  <img src="./images/avatar/avatar-blue1.svg" />
+                <li rel="claro-canal" class="active-navAvatar avatar-item">
+                  <img _id="1" src="./images/avatar/avatar-blue1.svg" />
                 </li>
                 <br />
-                <li rel="claro-canal" class="">
-                  <img src="./images/avatar/avatar-gray.svg" />
+                <li rel="claro-canal" class="avatar-item">
+                  <img _id="2" src="./images/avatar/avatar-gray.svg" />
                 </li>
                 <br />
-                <li rel="claro-canal" class="">
-                  <img src="./images/avatar/avatar-blue3.svg" />
+                <li rel="claro-canal" class="avatar-item">
+                  <img _id="3" src="./images/avatar/avatar-blue3.svg" />
                 </li>
               </div>
               <div class="col-md text-center no-gap">
-                <li rel="concert-channel" class="">
-                  <img src="./images/avatar/avatar-yellow.svg" />
+                <li class="avatar-item">
+                  <img _id="4" src="./images/avatar/avatar-yellow.svg" />
                 </li>
                 <br />
-                <li rel="claro-canal" class="">
-                  <img src="./images/avatar/avatar-blue2.svg" />
+                <li class="avatar-item">
+                  <img _id="5" src="./images/avatar/avatar-blue2.svg" />
                 </li>
                 <br />
-                <li rel="claro-canal" class="">
-                  <img src="./images/avatar/avatar-gray2.svg" />
+                <li class="avatar-item">
+                  <img _id="6" src="./images/avatar/avatar-gray2.svg" />
                 </li>
               </div>
               <div class=" col-md text-center no-gap">
-                <li rel="claro-cinema" class="">
-                  <img src="./images/avatar/avatar-purple.svg" />
+                <li class="avatar-item">
+                  <img _id="7" src="./images/avatar/avatar-purple.svg" />
                 </li>
                 <br />
-                <li rel="claro-canal" class="">
-                  <img src="./images/avatar/avatar-red.svg" />
+                <li class="avatar-item">
+                  <img _id="8" src="./images/avatar/avatar-red.svg" />
                 </li>
                 <br />
-                <li rel="claro-canal" class="">
-                  <img src="./images/avatar/avatar-black.svg" />
+                <li class="avatar-item">
+                  <img _id="9" src="./images/avatar/avatar-black.svg" />
                 </li>
               </div>
             </ul>

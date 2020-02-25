@@ -2414,6 +2414,11 @@
         <?php
         include 'footer.php'
         ?>
+
+        <!-- Modal -->
+        <?php
+        include './views/partials/modal-favorites.php'
+        ?>
     </main>
 </body>
 

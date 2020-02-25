@@ -150,7 +150,7 @@ $(document).ready(function() {
                       <p class="rating">Clasificación: A</p>
                   </div>
                   <div>
-                      <button class="button-none remove-program" _id="${favorite.id}" type="button"><img src="./images/mi-lista/heart.svg">
+                      <button  class="button-none remove-program" _id="${favorite.id}" type="button"><img src="./images/mi-lista/heart.svg">
                       </button>
                   </div>
               </div>
@@ -163,7 +163,7 @@ $(document).ready(function() {
                   <div class="col-6 d-flex align-items-center justify-content-end">
                       <p class="rating-alert">ALERTAS</p>
                       <label class="switch-alert">
-                          <input type="checkbox">
+                          <input type="checkbox" checked>
                           <span class="slideralert roundalert"></span>
                       </label>
                   </div>
@@ -187,7 +187,7 @@ $(document).ready(function() {
                   <div class="d-flex align-items-center justify-content-end">
                       <p class="rating-alert">ALERTAS</p>
                       <label class="switch-alert">
-                          <input type="checkbox">
+                          <input type="checkbox" checked>
                           <span class="slideralert roundalert"></span>
                       </label>
                   </div>
@@ -205,13 +205,13 @@ $(document).ready(function() {
                   </div>
                   <div>
                       <div class="text-right mb-3">
-                          <button class="button-none remove-program" _id="${favorite.id}" type="button"><img src="images/mi-lista/heart.svg">
+                          <button title="Eliminar de mi lista" class="button-none remove-program" _id="${favorite.id}" type="button"><img src="images/mi-lista/heart.svg">
                           </button>
                       </div>
                       <div class="d-flex align-items-center justify-content-end">
                           <p class="rating-alert">ALERTAS</p>
                           <label class="switch-alert">
-                              <input type="checkbox">
+                              <input type="checkbox" checked>
                               <span class="slideralert roundalert"></span>
                           </label>
                       </div>
@@ -277,7 +277,7 @@ $(document).ready(function() {
               <div class="col-6 d-flex align-items-center justify-content-end">
                   <p class="rating-alert">ALERTAS</p>
                   <label class="switch-alert">
-                      <input type="checkbox">
+                      <input type="checkbox" checked>
                       <span class="slideralert roundalert"></span>
                   </label>
               </div>
@@ -301,7 +301,7 @@ $(document).ready(function() {
               <div class="d-flex align-items-center justify-content-end">
                   <p class="rating-alert">ALERTAS</p>
                   <label class="switch-alert">
-                      <input type="checkbox">
+                      <input type="checkbox" checked>
                       <span class="slideralert roundalert"></span>
                   </label>
               </div>
@@ -325,7 +325,7 @@ $(document).ready(function() {
                   <div class="d-flex align-items-center justify-content-end">
                       <p class="rating-alert">ALERTAS</p>
                       <label class="switch-alert">
-                          <input type="checkbox">
+                          <input type="checkbox" checked>
                           <span class="slideralert roundalert"></span>
                       </label>
                   </div>
@@ -390,7 +390,7 @@ $(document).ready(function() {
                 <div class="col-6 d-flex align-items-center justify-content-end">
                     <p class="rating-alert">ALERTAS</p>
                     <label class="switch-alert">
-                        <input type="checkbox">
+                        <input type="checkbox" checked>
                         <span class="slideralert roundalert"></span>
                     </label>
                 </div>
@@ -414,7 +414,7 @@ $(document).ready(function() {
                 <div class="d-flex align-items-center justify-content-end">
                     <p class="rating-alert">ALERTAS</p>
                     <label class="switch-alert">
-                        <input type="checkbox">
+                        <input type="checkbox" checked>
                         <span class="slideralert roundalert"></span>
                     </label>
                 </div>
@@ -438,7 +438,7 @@ $(document).ready(function() {
                     <div class="d-flex align-items-center justify-content-end">
                         <p class="rating-alert">ALERTAS</p>
                         <label class="switch-alert">
-                            <input type="checkbox">
+                            <input type="checkbox" checked>
                             <span class="slideralert roundalert"></span>
                         </label>
                     </div>
@@ -509,7 +509,10 @@ $(document).ready(function() {
     let avatar = $(".active-navAvatar")
       .children()
       .attr("src");
-    selectAvatar(id, avatar);
+    let idAvatar = $(".active-navAvatar")
+      .children()
+      .attr("_id");
+    selectAvatar(id, avatar, idAvatar);
   });
 
   let alertsOff = $("#alerts-off");
@@ -651,6 +654,27 @@ $(document).ready(function() {
       showNotification();
     }, 2000);
 
+    /* Señalar Avatar */
+    let idAvatarStorage = localStorage.getItem("idAvatar");
+    if (idAvatarStorage) {
+      let avatars = $(".avatar-item").children();
+
+      let length = avatars.length;
+      avatars.removeClass("active-navAvatar");
+      console.time();
+      avatars.each(function(index, avatar) {
+        let itemAvatar = $(this)
+          .closest(".avatar-item")
+          .addClass("active-navAvatar");
+        itemAvatar.removeClass("active-navAvatar");
+
+        if ($(this).attr("_id") == idAvatarStorage) {
+          itemAvatar.addClass("active-navAvatar");
+        }
+      });
+      console.timeEnd();
+    }
+
     /*VERIFICAR ALERTAS EN SESIÓN*/
     let alertBeginning = localStorage.getItem("alertBeginning");
     let alertWeb = localStorage.getItem("alertWeb");
@@ -705,16 +729,11 @@ $(document).ready(function() {
     let userOptions = $(".user-options");
     let sidebarHeader = $(".sidebar-header");
     let userName = localStorage.getItem("name");
-    let avatar = `<img src="./images/menu/icon-white-user.svg" />`;
-    let localStorageAvatar = localStorage.getItem("avatar");
-    if (localStorageAvatar != null || localStorageAvatar != "null") {
-      console.log(typeof localStorageAvatar);
-      avatar = `<img src="${localStorageAvatar}" />`;
-    }
+    let avatar = `<img src="${localStorage.getItem("avatar")}" />`;
 
     let menuMobile = `            
       <div class="d-flex align-items-center">
-        <div class="image-user mr-3">
+        <div class="image-user image-user-container mr-3">
             ${avatar}
         </div>
 
@@ -735,7 +754,7 @@ $(document).ready(function() {
             <p class="tooltip-text ml-3">Cerrar Sesión</p>
           </div>
         </div>
-        <div id="image-user-container">
+        <div class="image-user-container">
           <div class="image-user">
           ${avatar}
           </div>
@@ -800,7 +819,7 @@ $(document).ready(function() {
 
   /* Hacer aparecer el tooltip */
 
-  $("#image-user-container").hover(function() {});
+  $(".image-user-container").hover(function() {});
 
   $(".icon-user").hover(function() {
     let tooltipLogout = $(".tooltip-logout");
@@ -894,7 +913,12 @@ $(document).ready(function() {
     }
   });
 
-  addFavorites();
+  if (localStorage.getItem("session") == 1) {
+    addFavorites();
+  } else {
+    let modal = $("#mensaje");
+    modal.modal("show");
+  }
 
   /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
 

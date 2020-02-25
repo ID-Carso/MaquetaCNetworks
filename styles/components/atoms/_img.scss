@@ -607,3 +607,11 @@
 .heart-gray-filled {
   fill: #7a7777;
 }
+
+.close-modal {
+  width: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(15%, -30%);
+}

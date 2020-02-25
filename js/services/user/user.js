@@ -321,7 +321,7 @@ function sendEmail(id) {
   });
 }
 
-function selectAvatar(id, src) {
+function selectAvatar(id, src, idAvatar) {
   let dataUser = {
     function: "selectAvatar",
     id: id,
@@ -334,15 +334,18 @@ function selectAvatar(id, src) {
     url: "../../adapters/user.php",
     success: function(result) {
       let json = JSON.parse(result);
-
-      localStorage.setItem("avatar", json.data.avatar);
-      $("#image-user-container").html(`
-      <div class="image-user">
-        <img src="${json.data.avatar}" />
-      </div>
-      `);
-      let modal = $("#mensaje");
-      modal.modal("show");
+      if (json.code == 200) {
+        localStorage.setItem("idAvatar", idAvatar);
+        console.log(json);
+        localStorage.setItem("avatar", json.data.avatar);
+        $(".image-user-container").html(`
+        <div class="image-user">
+          <img src="${json.data.avatar}" />
+        </div>
+        `);
+        let modal = $(".modal-favorites");
+        modal.modal("show");
+      }
     }
   });
 }
@@ -469,7 +472,8 @@ function addFavorites() {
   $(".poster-button, .programing-button").click(function() {
     let session = localStorage.getItem("session");
     if (session != 1) {
-      location.href = "login.php";
+      let modal = $(".modal-favorites");
+      modal.modal("show");
     } else {
       if ($(this).hasClass("remove-program")) {
         let id = localStorage.getItem("id");

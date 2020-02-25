@@ -1530,6 +1530,11 @@ h6 {
   font-size: 15px;
 }
 
+.modal-favorites-text {
+  font-size: 16px;
+  color: #2d2926;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -1774,6 +1779,7 @@ h6 {
 .poster-button:hover,
 .poster-button:focus {
   background: black;
+  outline: none;
 }
 
 .re-password-button {
@@ -1824,6 +1830,30 @@ h6 {
 
 .button-none:focus {
   outline: none;
+}
+
+.modal-button-primary {
+  width: 100%;
+  max-width: 367px;
+  border-radius: 35px;
+  background-color: #069cb0;
+  font-family: "Montserrat-Regular";
+  color: #ffffff;
+  font-size: 14px;
+  border: solid 2px #069cb0;
+  outline: none !important;
+}
+
+.modal-button-outline {
+  width: 100%;
+  max-width: 367px;
+  border-radius: 35px;
+  outline: none !important;
+  background-color: #ffffff;
+  font-family: "Montserrat-Regular";
+  color: #717272;
+  font-size: 14px;
+  border: solid 2px #069cb0;
 }
 
 /*Tamaño de textos - responsive*/
@@ -2553,6 +2583,15 @@ h6 {
   fill: #7a7777;
 }
 
+.close-modal {
+  width: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(15%, -30%);
+          transform: translate(15%, -30%);
+}
+
 .hr1 {
   display: none;
 }
@@ -2683,7 +2722,7 @@ input[type="checkbox"]:checked + label::before {
   font-size: 18px;
   text-align: center;
   vertical-align: middle;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #ffffff;
   background: #069cb0;
 }
@@ -4170,6 +4209,10 @@ input[type="radio"]:checked + .mujer-estilo {
   font-family: "Montserrat-Black";
 }
 
+.card-white {
+  max-width: 450px !important;
+}
+
 #next-week-slider {
   padding-bottom: 58px;
   margin-bottom: 32px;
@@ -4572,6 +4615,21 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .dropdown-active {
   display: block;
+}
+
+.modal-dialog {
+  max-width: 750px !important;
+}
+
+.modal-favorites-content {
+  padding: 6% 0px;
+  width: 100%;
+  min-width: 300px;
+  border-radius: 25px !important;
+}
+
+.modal-footer {
+  padding: 0 !important;
 }
 
 .schedule-item-body {
@@ -5396,6 +5454,18 @@ input[type="radio"]:checked + .mujer-estilo {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .close-modal {
+    width: 50px;
+  }
+  .modal-favorites-text {
+    font-size: 25px;
+  }
+  .modal-button-primary {
+    font-size: 16px;
+  }
+  .modal-button-outline {
+    font-size: 16px;
+  }
   /*End General - Átomos*/
   /*============================*/
   /*============================*/
@@ -5734,6 +5804,15 @@ input[type="radio"]:checked + .mujer-estilo {
   .imperdibles-slider,
   .tv-slider {
     margin-left: 0px;
+  }
+  .modal-favorites-content {
+    padding: 50px 60px;
+    width: 100%;
+    min-width: 300px;
+    border-radius: 25px !important;
+  }
+  .modal-fotter {
+    padding: 0.75rem !important;
   }
   /*End General - Moleculas*/
   /*============================*/
@@ -6434,6 +6513,18 @@ input[type="radio"]:checked + .mujer-estilo {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .close-modal {
+    width: 50px;
+  }
+  .modal-favorites-text {
+    font-size: 25px;
+  }
+  .modal-button-primary {
+    font-size: 16px;
+  }
+  .modal-button-outline {
+    font-size: 16px;
+  }
   /*End Generales - átomos*/
   /*-----------------------------*/
   /*1.2 - Home - Átomos */
@@ -6830,6 +6921,12 @@ input[type="radio"]:checked + .mujer-estilo {
   .imperdibles-slider,
   .tv-slider {
     margin-left: 0px;
+  }
+  .modal-favorites-content {
+    padding: 70px 80px;
+  }
+  .modal-fotter {
+    padding: 0.75rem !important;
   }
   /*End General - Moleculas*/
   /*-----------------------------*/
@@ -7568,6 +7665,15 @@ input[type="radio"]:checked + .mujer-estilo {
   .arrow-back {
     display: block;
   }
+  .modal-favorites-text {
+    font-size: 28px;
+  }
+  .modal-button-primary {
+    font-size: 16px;
+  }
+  .modal-button-outline {
+    font-size: 16px;
+  }
   /*End Generales - átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -7946,6 +8052,12 @@ input[type="radio"]:checked + .mujer-estilo {
   .imperdibles-slider,
   .tv-slider {
     margin-left: 0px;
+  }
+  .modal-favorites-content {
+    padding: 70px 80px;
+  }
+  .modal-fotter {
+    padding: 0.75rem !important;
   }
   /*End General - Moleculas*/
   /*-----------------------------*/
@@ -8744,6 +8856,15 @@ input[type="radio"]:checked + .mujer-estilo {
   .arrow-back {
     display: block;
   }
+  .modal-favorites-text {
+    font-size: 28px;
+  }
+  .modal-button-primary {
+    font-size: 16px;
+  }
+  .modal-button-outline {
+    font-size: 16px;
+  }
   /*End General - Átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -9044,6 +9165,12 @@ input[type="radio"]:checked + .mujer-estilo {
   .imperdibles-slider,
   .tv-slider {
     margin-left: 0px;
+  }
+  .modal-favorites-content {
+    padding: 70px 80px;
+  }
+  .modal-fotter {
+    padding: 0.75rem !important;
   }
   /*End General - Moleculas*/
   /*-----------------------------*/

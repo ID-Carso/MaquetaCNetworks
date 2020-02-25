@@ -223,7 +223,6 @@
 
 .poster-button {
   background: rgba(0, 0, 0, 0.6);
-
   border: none;
   width: 50px;
   height: 50px;
@@ -233,6 +232,7 @@
 .poster-button:hover,
 .poster-button:focus {
   background: rgba(0, 0, 0, 1);
+  outline: none;
 }
 
 .re-password-button {
@@ -283,4 +283,28 @@
 
 .button-none:focus {
   outline: none;
+}
+
+.modal-button-primary {
+  width: 100%;
+  max-width: 367px;
+  border-radius: 35px;
+  background-color: $subtitleTV;
+  font-family: $montserratRegular;
+  color: $textWhite;
+  font-size: 14px;
+  border: solid 2px $subtitleTV;
+  outline: none !important;
+}
+
+.modal-button-outline {
+  width: 100%;
+  max-width: 367px;
+  border-radius: 35px;
+  outline: none !important;
+  background-color: #ffffff;
+  font-family: $montserratRegular;
+  color: #717272;
+  font-size: 14px;
+  border: solid 2px $subtitleTV;
 }
