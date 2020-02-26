@@ -4866,7 +4866,7 @@ input[type="radio"]:checked + .mujer-estilo {
 }
 
 .alert-user {
-  position: absolute;
+  position: fixed;
   width: 100%;
   border-radius: 9px;
   -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);

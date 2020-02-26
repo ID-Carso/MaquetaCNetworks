@@ -131,7 +131,6 @@ $(document).ready(function() {
       if (favoritesCanalClaro.length != 0) {
         let programsCanalClaroList = "";
         favoritesCanalClaro.forEach(favorite => {
-          console.log(favorite.title, favorite.active);
           if (favorite.active == 0) {
             programsCanalClaroList += `
             <div class="list-item-container" >

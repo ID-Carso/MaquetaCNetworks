@@ -73,7 +73,7 @@ function showNotification() {
             alert.html(alertProgram);
             if (screen.width >= 320 && screen.width < 768) {
               alert
-                .css("transform", "translate(50%, 0%)")
+                .css("transform", "translate(0%, 0%)")
                 .css("animation", "showAlertMobile 8s");
 
               setTimeout(function() {
@@ -90,7 +90,7 @@ function showNotification() {
             $(window).resize(function() {
               if (screen.width >= 320 && screen.width < 768) {
                 alert
-                  .css("transform", "translate(50%, 0%)")
+                  .css("transform", "translate(0%, 0%)")
                   .css("animation", "showAlertMobile 8s");
 
                 setTimeout(function() {
