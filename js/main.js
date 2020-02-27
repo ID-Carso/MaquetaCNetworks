@@ -25,6 +25,9 @@ import { updateAlertProgram } from "./services/user/user.js";
 /* Program */
 import { getPrograms } from "./services/Program.js";
 
+/* Date */
+import { getMonthAndYear, getDays, getDay, getDayName } from "./date/date.js";
+
 var programacion_slider;
 var tvConcertSlider;
 let url = location.href;
@@ -89,6 +92,10 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 $(document).ready(function() {
+  /*Programación general*/
+  $(".month").html(getMonthAndYear());
+  console.log(getDayName(getDay()));
+
   /* Lista de favoritos del usuario*/
 
   let favoritesCanalClaro = JSON.parse(
@@ -378,7 +385,7 @@ $(document).ready(function() {
                     <div class="col-6 d-flex align-items-center justify-content-end">
                         <p class="rating-alert">ALERTAS</p>
                         <label class="switch-alert">
-                            <input type="checkbox" class="myList-alert" checked>
+                            <input type="checkbox" class="myList-alert">
                             <span class="slideralert roundalert"></span>
                         </label>
                     </div>

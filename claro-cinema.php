@@ -803,7 +803,9 @@
     </div>
 
   </main>
-
+  <?php
+  include './views/partials/modal-favorites.php'
+  ?>
 </body>
 
 </html>

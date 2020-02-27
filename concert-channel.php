@@ -956,7 +956,9 @@
         </footer>
 
     </div>
-
+    <?php
+    include './views/partials/modal-favorites.php'
+    ?>
 
 </body>
 

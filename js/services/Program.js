@@ -249,11 +249,11 @@ function getPrograms(date, time) {
             <p class="schedule-title">${program.title}</p>
             <div class="schedule-item-body">
                 <div class="schedule-poster">
-                    <div class="poster">
+                    <a href="sinopsis.php"><div class="poster">
                         <div class="thumbnail-prog">
                             <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
                         </div>
-                    </div>
+                    </div></a>
                 </div>
     
                 <div class="schedule-details">
@@ -287,11 +287,11 @@ function getPrograms(date, time) {
             <p class="schedule-title">${program.title}</p>
             <div class="schedule-item-body">
                 <div class="schedule-poster">
-                    <div class="poster">
+                    <a href="sinopsis.php"><div class="poster">
                         <div class="thumbnail-prog">
                             <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
                         </div>
-                    </div>
+                    </div></a>
                 </div>
     
                 <div class="schedule-details">
@@ -430,11 +430,11 @@ function getPrograms(date, time) {
             <p class="schedule-title">${program.title}</p>
             <div class="schedule-item-body">
                 <div class="schedule-poster">
-                    <div class="poster">
+                    <a href="sinopsis.php"><div class="poster">
                         <div class="thumbnail-prog">
                             <img src="./images/concert-channel/carrousel/${program.image}" alt="">
                         </div>
-                    </div>
+                    </div></a>
                 </div>
     
                 <div class="schedule-details">
@@ -468,11 +468,11 @@ function getPrograms(date, time) {
             <p class="schedule-title">${program.title}</p>
             <div class="schedule-item-body">
                 <div class="schedule-poster">
-                    <div class="poster">
+                    <a href="sinopsis.php"><div class="poster">
                         <div class="thumbnail-prog">
                             <img src="./images/concert-channel/carrousel/${program.image}" alt="">
                         </div>
-                    </div>
+                    </div></a>
                 </div>
     
                 <div class="schedule-details">
@@ -615,11 +615,11 @@ function getPrograms(date, time) {
             <p class="schedule-title">${program.title}</p>
             <div class="schedule-item-body">
                 <div class="schedule-poster">
-                    <div class="poster">
+                    <a href="sinopsis.php"><div class="poster">
                         <div class="thumbnail-prog">
                             <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
                         </div>
-                    </div>
+                    </div></a>
                 </div>
     
                 <div class="schedule-details">
@@ -653,11 +653,11 @@ function getPrograms(date, time) {
             <p class="schedule-title">${program.title}</p>
             <div class="schedule-item-body">
                 <div class="schedule-poster">
-                    <div class="poster">
+                    <a href="sinopsis.php"><div class="poster">
                         <div class="thumbnail-prog">
                             <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
                         </div>
-                    </div>
+                    </div></a>
                 </div>
     
                 <div class="schedule-details">

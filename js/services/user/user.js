@@ -73,7 +73,7 @@ function showNotification() {
             alert.html(alertProgram);
             if (screen.width >= 320 && screen.width < 768) {
               alert
-                .css("transform", "translate(0%, 0%)")
+                .css("transform", "translate(50%, 0%)")
                 .css("animation", "showAlertMobile 8s");
 
               setTimeout(function() {
@@ -90,7 +90,7 @@ function showNotification() {
             $(window).resize(function() {
               if (screen.width >= 320 && screen.width < 768) {
                 alert
-                  .css("transform", "translate(0%, 0%)")
+                  .css("transform", "translate(50%, 0%)")
                   .css("animation", "showAlertMobile 8s");
 
                 setTimeout(function() {
@@ -671,6 +671,7 @@ function updateAlertProgram(user_id, program_id, active) {
     url: "../../adapters/user.php",
     success: function(result) {
       let json = JSON.parse(result);
+      console.log(json);
       if (json.code == 200) {
         let sections = json.data;
         sections.forEach(section => {

@@ -155,11 +155,11 @@
                                     <button class="synopsis-button synopsis-add">
                                         <p class="mb-0 synopsis-add-text">Añadir</p>
                                     </button>
-                                    <button class="synopsis-button">
-                                        <div class="d-flex align-items-center">
-                                            <p class="synopsis-schedule-text mb-0">Horarios</p><img src="./images/home/clock.svg" alt="">
-                                        </div>
-                                    </button>
+                                    <a href="sinopsis.php#dropdown-country"><button class="synopsis-button">
+                                            <div class="d-flex align-items-center">
+                                                <p class="synopsis-schedule-text mb-0">Horarios</p><img src="./images/home/clock.svg" alt="">
+                                            </div>
+                                        </button></a>
                                 </div>
 
                             </div>
@@ -195,7 +195,7 @@
 
 
 
-                    <div class="synopsis-schedule-container">
+                    <div class="synopsis-schedule-container" id="dropdown-country">
                         <h1 class="synopsis-schedule-title">Horario por regiones</h1>
                     </div>
                     <div class="no-gutters">

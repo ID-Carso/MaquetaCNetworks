@@ -548,5 +548,8 @@
   include 'footer.php'
   ?>
 </body>
+<?php
+include './views/partials/modal-favorites.php'
+?>
 
 </html>

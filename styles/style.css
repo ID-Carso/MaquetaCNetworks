@@ -1667,6 +1667,10 @@ h6 {
   color: white;
 }
 
+.synopsis-button:focus {
+  outline: none;
+}
+
 .synopsis-button img {
   width: 15px;
   -webkit-filter: invert(1);
@@ -4617,7 +4621,7 @@ input[type="radio"]:checked + .mujer-estilo {
   display: block;
 }
 
-.modal-dialog {
+.modal-dialog-favorites {
   max-width: 750px !important;
 }
 
@@ -4825,7 +4829,7 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .section-list-container {
   border-bottom: solid 1px #a6a8a8;
-  padding: 0 27px;
+  padding: 0 10px;
 }
 
 .myList-details-container {
@@ -5804,7 +5808,7 @@ input[type="radio"]:checked + .mujer-estilo {
     margin-left: 0px;
   }
   .modal-favorites-content {
-    padding: 50px 60px;
+    padding: 20px;
     width: 100%;
     min-width: 300px;
     border-radius: 25px !important;

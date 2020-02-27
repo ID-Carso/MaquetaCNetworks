@@ -816,7 +816,7 @@
                         <div class="programacion-date-container">
                             <div class="no-gutters">
                                 <div class="col-md-11 col-lg-12 mx-auto">
-                                    <p class="month">Octubre 2019</p>
+                                    <p class="month"></p>
                                 </div>
                             </div>
 
@@ -1808,6 +1808,9 @@
     </div>
     <?php
     include 'footer.php'
+    ?>
+    <?php
+    include './views/partials/modal-favorites.php'
     ?>
 </body>
 
