@@ -290,13 +290,15 @@ function updateDataUser(id, gender, date, country) {
     country: country
   };
 
+  console.log(dataUser);
+
   $.ajax({
     type: "POST",
     data: dataUser,
     url: "../../adapters/user.php",
     success: function(result) {
       let json = JSON.parse(result);
-
+      console.log(result);
       let gender = localStorage.setItem("gender", json.data.gender);
       let date = json.data.birthday.split("-");
       let day = localStorage.setItem("day", date[2]);
