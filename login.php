@@ -66,7 +66,7 @@
               <div class="col-sm-12">
 
                 <button type="button" class="login-button form-button-primary" id="login-button">
-                  INGRESAR
+                  INICIA SESIÓN
                 </button>
                 <p class="nodatos">
                   Aún no has ingresado datos

@@ -5,7 +5,7 @@
             <img src="./images/notifications/close-notification.svg" alt="" class="close-modal" data-dismiss="modal">
             <div class="modal-body modal-favorites-text">
                 <p class="text-bold mb-0">¡Hola! Para agregar a favoritos, debes
-                    ingresar a tu cuenta o registrarte.</p>
+                    iniciar sesión o registrarte.</p>
             </div>
             <div class="modal-footer modal-favorites-footer" style="border-top:none !important; justify-content: center;">
                 <div class="d-flex justify-content-between">

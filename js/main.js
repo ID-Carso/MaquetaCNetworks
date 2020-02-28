@@ -26,7 +26,10 @@ import { updateAlertProgram } from "./services/user/user.js";
 import { getPrograms } from "./services/Program.js";
 
 /* Date */
-import { getMonthAndYear, getDays, getDay, getDayName } from "./date/date.js";
+import { getMonthAndYear } from "./date/date.js";
+
+/* Slider */
+import Slider from "./UI/Slider.js";
 
 var programacion_slider;
 var tvConcertSlider;
@@ -77,25 +80,9 @@ if (day && month && year) {
   $(".SeleccionAñoLista").text(year);
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  let date = new Date();
-  let day = date.getDate();
-  let month = date.getMonth();
-  let year = date.getFullYear();
-  let hour = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-  let currentDate = "2020-2-8";
-  let currentTime = `${hour}:${minutes}`;
-
-  getPrograms(currentDate, currentTime);
-});
+document.addEventListener("DOMContentLoaded", function() {});
 
 $(document).ready(function() {
-  /*Programación general*/
-  $(".month").html(getMonthAndYear());
-  console.log(getDayName(getDay()));
-
   /* Lista de favoritos del usuario*/
 
   let favoritesCanalClaro = JSON.parse(
@@ -1590,8 +1577,39 @@ $(document).ready(function() {
     ]
   });
 
-  createProgramacionSlider();
+  /*Programación General Canal Claro */
+  let containerSlider = $("#claro-canal-programing");
+  let slider = new Slider();
+  slider.createDaysSlider("claro", containerSlider);
 
+  /*Programación Concert Channel */
+  let containerSliderConcert = $("#concert-channel-programing");
+  slider.createDaysSlider("concert", containerSliderConcert);
+
+  /*Programación Claro Cinema */
+  let containerSliderCinema = $("#claro-cinema-programing");
+  slider.createDaysSlider("cinema", containerSliderCinema);
+
+  /*Programación Nuestra Visión */
+  let containerSliderVision = $("#nuestra-vision-programing");
+  slider.createDaysSlider("vision", containerSliderVision);
+
+  /*Programación Claro Sports */
+  let containerSliderSports = $("#claro-sports-programing");
+  slider.createDaysSlider("sports", containerSliderSports);
+
+  createProgramacionSlider();
+  let date = new Date();
+  let day = date.getDate();
+  let month = date.getMonth();
+  let year = date.getFullYear();
+  let hour = date.getHours();
+  let minutes = date.getMinutes();
+  let seconds = date.getSeconds();
+  let currentDate = "2020-2-8";
+  let currentTime = `${hour}:${minutes}`;
+
+  getPrograms(currentDate, currentTime);
   /*menu responsive*/
   const invisible_button = document.querySelector(".invisible-button");
   const tache_button = document.querySelector(".tache_button");
@@ -1918,12 +1936,24 @@ function createProgramacionSlider() {
   });
 }
 
+$(".programing-item").click(function() {
+  var activeNav = $(this).attr("rel");
+  let stringLength = activeNav.length;
+  let month = activeNav.charAt(stringLength - 1);
+
+  $(".month").text(`${getMonthAndYear(month)}`);
+});
+
 function recreateClickCalendar() {
   $("ul.claro-calendar .claro-item").click(function() {
     $("ul.claro-calendar .claro-item").removeClass("claro-active");
     $(this).addClass("claro-active");
     $(".claro-content").hide();
     var activeNav = $(this).attr("rel");
+    let stringLength = activeNav.length;
+    let month = activeNav.charAt(stringLength - 1);
+
+    $(".month").text(`${getMonthAndYear(month)}`);
     $("#" + activeNav).fadeIn();
   });
   $(".claro-content").hide();
@@ -1937,6 +1967,10 @@ function recreateClickCalendar() {
     $(".concert-content").hide();
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();
+    let stringLength = activeNav.length;
+    let month = activeNav.charAt(stringLength - 1);
+
+    $(".month").text(`${getMonthAndYear(month)}`);
   });
 
   $(".cinema-content").hide();
@@ -1948,6 +1982,10 @@ function recreateClickCalendar() {
     $(".cinema-content").hide();
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();
+    let stringLength = activeNav.length;
+    let month = activeNav.charAt(stringLength - 1);
+
+    $(".month").text(`${getMonthAndYear(month)}`);
   });
 
   $(".vision-content").hide();
@@ -1959,6 +1997,10 @@ function recreateClickCalendar() {
     $(".vision-content").hide();
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();
+    let stringLength = activeNav.length;
+    let month = activeNav.charAt(stringLength - 1);
+
+    $(".month").text(`${getMonthAndYear(month)}`);
   });
 
   $(".sports-content").hide();
@@ -1970,6 +2012,10 @@ function recreateClickCalendar() {
     $(".sports-content").hide();
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();
+    let stringLength = activeNav.length;
+    let month = activeNav.charAt(stringLength - 1);
+
+    $(".month").text(`${getMonthAndYear(month)}`);
   });
 }
 

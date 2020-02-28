@@ -2975,7 +2975,11 @@ input::-webkit-credentials-auto-fill-button {
   max-width: 1000px;
 }
 
-.claro-item {
+.claro-item,
+.concert-item,
+.cinema-item,
+.vision-item,
+.sports-item {
   padding: 10px 0;
 }
 
@@ -4094,9 +4098,9 @@ input[type="radio"]:checked + .mujer-estilo {
   border-color: #ff0007 transparent transparent transparent;
   position: absolute;
   left: 50%;
-  top: 120%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  top: 100%;
+  -webkit-transform: translate(-50%, 100%);
+          transform: translate(-50%, 100%);
 }
 
 .login {
@@ -8874,7 +8878,7 @@ input[type="radio"]:checked + .mujer-estilo {
   .o-tv-section .active-navItem::after {
     content: "";
     border-width: 15px;
-    top: 150%;
+    top: 100%;
   }
   .title-tv {
     font-size: 40px;

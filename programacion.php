@@ -112,27 +112,27 @@
                 <div class="row no-gutters">
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="claro-canal" class="active-navItem nav-li">
+                            <li rel="claro-canal-programing" class="active-navItem nav-li">
                                 <img class="claro-nav-image" src="./images/home/tv-1.svg" alt="" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="concert-channel" class="nav-li">
+                            <li rel="concert-channel-programing" class="nav-li">
                                 <img class="nav-image" src="./images/home/tv-2.svg" alt="" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="claro-cinema" class="nav-li">
+                            <li rel="claro-cinema-programing" class="nav-li">
                                 <img class="nav-image" src="./images/home/tv-3.svg" alt="" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="nuestra-vision" class="nav-li">
+                            <li rel="nuestra-vision-programing" class="nav-li">
                                 <img class="nav-image" src="./images/home/tv-4.svg" alt="" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
-                            <li rel="claro-sports" class="nav-li">
+                            <li rel="claro-sports-programing" class="nav-li">
                                 <img class="nav-image" src="./images/home/tv-5.svg" alt="" />
                             </li>
                         </div>
@@ -140,19 +140,19 @@
                     </ul>
                 </div>
 
-                <div id="claro-canal" class="tv-content">
-                    <div class="no-gutters">
+                <div id="claro-canal-programing" class="tv-content">
+                    <div class="no-gutters" id="container-slider-claro">
                         <div class="programacion-date-container">
                             <div class="no-gutters">
                                 <div class="col-md-11 col-lg-12 mx-auto">
-                                    <p class="month">Octubre 2019</p>
+                                    <p class="month"></p>
                                 </div>
                             </div>
 
                             <div class="no-gutters">
                                 <ul class="claro-calendar col-md-10 mx-auto">
                                     <div class="programacion-slider" id="pro-claro-slider">
-                                        <li rel="claro-01" class="claro-item claro-active">
+                                        <!--<li rel="claro-01" class="claro-item claro-active">
                                             <div class="day">
                                                 <p class="day-text">MAR</p>
                                                 <p class="day-number">01</p>
@@ -337,7 +337,7 @@
                                                 <p class="day-text">LUN</p>
                                                 <p class="day-number">31</p>
                                             </div>
-                                        </li>
+                                        </li>-->
                                     </div>
                                 </ul>
                             </div>
@@ -346,7 +346,7 @@
                     </div>
 
 
-                    <div id="claro-01" class="claro-content"></div>
+                    <!--<div id="claro-01" class="claro-content"></div>
                     <div id="claro-02" class="claro-content"></div>
                     <div id="claro-03" class="claro-content"></div>
                     <div id="claro-04" class="claro-content"></div>
@@ -360,22 +360,22 @@
                     <div id="claro-12" class="claro-content"></div>
                     <div id="claro-13" class="claro-content"></div>
                     <div id="claro-14" class="claro-content"></div>
-                    <div id="claro-15" class="claro-content"></div>
+                    <div id="claro-15" class="claro-content"></div>-->
 
                 </div>
 
-                <div id="concert-channel" class="tv-content">
+                <div id="concert-channel-programing" class="tv-content">
                     <div class="no-gutters">
                         <div class="programacion-date-container">
                             <div class="no-gutters">
                                 <div class="col-md-11 col-lg-12 mx-auto">
-                                    <p class="month">Octubre 2019</p>
+                                    <p class="month"></p>
                                 </div>
                             </div>
 
                             <div class="no-gutters">
                                 <ul class="concert-calendar col-md-10 mx-auto">
-                                    <div class="programacion-slider" id="pro-claro-slider">
+                                    <div class="programacion-slider" id="pro-concert-slider">
                                         <li rel="concert-01" class="concert-item concert-active">
                                             <div class="day">
                                                 <p class="day-text">MAR</p>
@@ -588,19 +588,19 @@
                 </div>
                 <!--End Concert channel de "Ahora en tv"-->
                 <!--Claro cinema de "Ahora en tv"-->
-                <div id="claro-cinema" class="tv-content">
+                <div id="claro-cinema-programing" class="tv-content">
                     <div class="no-gutters">
                         <div class="programacion-date-container">
                             <div class="no-gutters">
                                 <div class="col-md-11 col-lg-12 mx-auto">
-                                    <p class="month">Octubre 2019</p>
+                                    <p class="month"></p>
                                 </div>
                             </div>
 
                             <div class="no-gutters">
                                 <ul class="cinema-calendar col-md-10 mx-auto">
                                     <div class="programacion-slider" id="pro-cinema-slider">
-                                        <li rel="cinema-01" class="cinema-item cinema-active">
+                                        <!--<li rel="cinema-01" class="cinema-item cinema-active">
                                             <div class="day">
                                                 <p class="day-text">MAR</p>
                                                 <p class="day-number">01</p>
@@ -786,7 +786,7 @@
                                                 <p class="day-number">31</p>
                                             </div>
                                         </li>
-                                    </div>
+                                    </div>-->
                                 </ul>
                             </div>
 
@@ -811,7 +811,7 @@
 
                 <!--End Claro cinema de "Ahora en tv"-->
                 <!--Nuestra visión de "Ahora en tv"-->
-                <div id="nuestra-vision" class="tv-content">
+                <div id="nuestra-vision-programing" class="tv-content">
                     <div class="no-gutters">
                         <div class="programacion-date-container">
                             <div class="no-gutters">
@@ -822,8 +822,8 @@
 
                             <div class="no-gutters">
                                 <ul class="vision-calendar col-md-10 mx-auto">
-                                    <div class="programacion-slider" id="pro-cinema-slider">
-                                        <li rel="vision-01" class="vision-item vision-active">
+                                    <div class="programacion-slider" id="pro-vision-slider">
+                                        <!--<li rel="vision-01" class="vision-item vision-active">
                                             <div class="day">
                                                 <p class="day-text">MAR</p>
                                                 <p class="day-number">01</p>
@@ -1008,14 +1008,14 @@
                                                 <p class="day-text">LUN</p>
                                                 <p class="day-number">31</p>
                                             </div>
-                                        </li>
+                                        </li>-->
                                     </div>
                                 </ul>
                             </div>
 
                         </div>
                     </div>
-                    <div id="vision-01" class="vision-content">
+                    <!--<div id="vision-01" class="vision-content">
                         <div class="no-gutters">
                             <div class="">
                                 <div class="schedule-container">
@@ -1152,8 +1152,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="vision-02" class="vision-content">
+                    </div>-->
+                    <!--<div id="vision-02" class="vision-content">
                         <div class="no-gutters">
                             <div class="">
                                 <div class="schedule-container">
@@ -1290,24 +1290,24 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
                 <!--End Nuestra visión de "Ahora en tv"-->
                 <!--Claro sports de "Ahora en tv"-->
-                <div id="claro-sports" class="tv-content">
+                <div id="claro-sports-programing" class="tv-content">
                     <div class="no-gutters">
                         <div class="no-gutters">
                             <div class="programacion-date-container">
                                 <div class="no-gutters">
                                     <div class="col-md-11 col-lg-12 mx-auto">
-                                        <p class="month">Octubre 2019</p>
+                                        <p class="month"></p>
                                     </div>
                                 </div>
 
                                 <div class="no-gutters">
                                     <ul class="sports-calendar col-md-10 mx-auto">
-                                        <div class="programacion-slider" id="pro-cinema-slider">
-                                            <li rel="sports-01" class="sports-item sports-active">
+                                        <div class="programacion-slider" id="pro-sports-slider">
+                                            <!--<li rel="sports-01" class="sports-item sports-active">
                                                 <div class="day">
                                                     <p class="day-text">MAR</p>
                                                     <p class="day-number">01</p>
@@ -1492,14 +1492,14 @@
                                                     <p class="day-text">LUN</p>
                                                     <p class="day-number">31</p>
                                                 </div>
-                                            </li>
+                                            </li>-->
                                         </div>
                                     </ul>
                                 </div>
 
                             </div>
                         </div>
-                        <div id="sports-01" class="sports-content">
+                        <!--<div id="sports-01" class="sports-content">
                             <div class="no-gutters">
                                 <div class="">
                                     <div class="schedule-container">
@@ -1636,8 +1636,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div id="sports-02" class="sports-content">
+                        </div>-->
+                        <!--<div id="sports-02" class="sports-content">
                             <div class="no-gutters">
                                 <div class="">
                                     <div class="schedule-container">
@@ -1774,7 +1774,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                     <!--End Claro sports de "Ahora en tv"-->
                 </div>
