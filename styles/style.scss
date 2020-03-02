@@ -175,6 +175,15 @@
     font-size: 16px;
   }
 
+  .titulos-configuraciones {
+    margin-top: 14%;
+    margin-bottom: 14%;
+  }
+
+  #alert-button {
+    margin-top: 14%;
+    margin-bottom: 14%;
+  }
   /*End General - Átomos*/
   /*============================*/
 
@@ -485,11 +494,9 @@
       padding-top: 10%;
     }
   }
-
   .ubicacionpuntos {
-    top: 90%;
+    top: 95%;
   }
-
   .ubicacion5 {
     top: 85%;
   }
@@ -1257,13 +1264,33 @@
   /*3.13 - Alertas - Organismos*/
   .alertas-container {
     padding-top: 50px;
+    padding-bottom: 44px;
   }
   /*End Alertas*/
   /*============================*/
 
   /*============================*/
   /*3.14 - Configuración - Organismos*/
+  .options-conf-container {
+    padding-bottom: 14%;
+  }
   /*End Configuración*/
+  /*============================*/
+
+  /*============================*/
+  /*3.15 - Avatar - Organismos*/
+  .avatar-container {
+    margin-bottom: 44px;
+  }
+  /*End Avatar*/
+  /*============================*/
+
+  /*============================*/
+  /*3.16 - Datos - Organismos*/
+  .data-user-container {
+    margin-bottom: 44px;
+  }
+  /*End Datos*/
   /*============================*/
 }
 
@@ -1475,6 +1502,16 @@
 
   .modal-button-outline {
     font-size: 16px;
+  }
+
+  .titulos-configuraciones {
+    margin-top: 14%;
+    margin-bottom: 14%;
+  }
+
+  #alert-button {
+    margin-top: 14%;
+    margin-bottom: 14%;
   }
 
   /*End Generales - átomos*/
@@ -1811,7 +1848,7 @@
   }
 
   .ubicacionpuntos {
-    top: 90%;
+    top: 95%;
   }
 
   .ubicacion5 {
@@ -1898,6 +1935,7 @@
 
   /*============================*/
   /*1.11 - Configuración - Átomos*/
+
   /*End Configuración - Átomos*/
 
   /***  2. MOLECULES  ***/
@@ -2657,14 +2695,33 @@
   /*3.14 - Alertas - Organismos*/
   .alertas-container {
     padding-top: 50px;
+    padding-bottom: 44px;
   }
   /*End Alertas*/
   /*============================*/
 
   /*============================*/
   /*3.15 - Configuración - Organismos*/
-
+  .options-conf-container {
+    padding-bottom: 14%;
+  }
   /*End Configuración*/
+  /*============================*/
+
+  /*============================*/
+  /*3.15 - Avatar - Organismos*/
+  .avatar-container {
+    margin-bottom: 44px;
+  }
+  /*End Avatar*/
+  /*============================*/
+
+  /*============================*/
+  /*3.16 - Datos - Organismos*/
+  .data-user-container {
+    margin-bottom: 44px;
+  }
+  /*End Datos*/
   /*============================*/
 }
 
@@ -2892,6 +2949,15 @@
     font-size: 16px;
   }
 
+  .titulos-configuraciones {
+    margin-top: 14%;
+    margin-bottom: 14%;
+  }
+
+  #alert-button {
+    margin-top: 14%;
+    margin-bottom: 14%;
+  }
   /*End Generales - átomos*/
   /*-----------------------------*/
 
@@ -3155,7 +3221,7 @@
   }
 
   .ubicacionpuntos {
-    top: 90%;
+    top: 95%;
   }
 
   .ubicacion5 {
@@ -3251,6 +3317,7 @@
 
   /*============================*/
   /*1.11 - Configuración - Átomos*/
+
   /*End Configuración - Átomos*/
   /*============================*/
 
@@ -4121,6 +4188,7 @@
   /*3.14 - Alertas - Organismos*/
   .alertas-container {
     padding-top: 50px;
+    padding-bottom: 44px;
   }
   /*End Alertas*/
   /*============================*/
@@ -4141,7 +4209,27 @@
       position: static;
     }
   }
+
+  .options-conf-container {
+    padding-bottom: 14%;
+  }
   /*End Configuración*/
+  /*============================*/
+
+  /*============================*/
+  /*3.15 - Avatar - Organismos*/
+  .avatar-container {
+    margin-bottom: 44px;
+  }
+  /*End Avatar*/
+  /*============================*/
+
+  /*============================*/
+  /*3.16 - Datos - Organismos*/
+  .data-user-container {
+    margin-bottom: 44px;
+  }
+  /*End Datos*/
   /*============================*/
 }
 
@@ -4379,6 +4467,15 @@
     font-size: 16px;
   }
 
+  .titulos-configuraciones {
+    margin-top: 14%;
+    margin-bottom: 14%;
+  }
+
+  #alert-button {
+    margin-top: 14%;
+    margin-bottom: 14%;
+  }
   /*End General - Átomos*/
   /*-----------------------------*/
 
@@ -4610,7 +4707,7 @@
   }
 
   .ubicacionpuntos {
-    top: 90%;
+    top: 95%;
   }
 
   .ubicacion5 {
@@ -4704,7 +4801,6 @@
 
   /*============================*/
   /*1.11 - Configuración - Átomos*/
-
   /*End Configuración - Átomos*/
   /*============================*/
 
@@ -5573,6 +5669,7 @@
   /*3.14 - Alertas - Organismos*/
   .alertas-container {
     padding-top: 50px;
+    padding-bottom: 44px;
   }
   /*End Alertas*/
   /*============================*/
@@ -5593,6 +5690,26 @@
       position: static;
     }
   }
+
+  .options-conf-container {
+    padding-bottom: 14%;
+  }
   /*End Configuración*/
+  /*============================*/
+
+  /*============================*/
+  /*3.15 - Avatar - Organismos*/
+  .avatar-container {
+    margin-bottom: 44px;
+  }
+  /*End Avatar*/
+  /*============================*/
+
+  /*============================*/
+  /*3.16 - Datos - Organismos*/
+  .data-user-container {
+    margin-bottom: 44px;
+  }
+  /*End Datos*/
   /*============================*/
 }

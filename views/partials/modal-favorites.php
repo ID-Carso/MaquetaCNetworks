@@ -10,7 +10,7 @@
             <div class="modal-footer modal-favorites-footer" style="border-top:none !important; justify-content: center;">
                 <div class="d-flex justify-content-between">
                     <a href="login.php" class="mr-2"><button type="button" class="py-2 px-3 modal-button-primary" id="modal-button">INICIAR SESIÓN</button></a>
-                    <a href="login.php" class="ml-2"><button type="button" class="modal-button-outline py-2 px-3" id="modal-button">REGÍSTRATE</button></a>
+                    <a href="registro.php" class="ml-2"><button type="button" class="modal-button-outline py-2 px-3" id="modal-button">REGÍSTRATE</button></a>
                 </div>
             </div>
         </div>

@@ -390,6 +390,7 @@ h6 {
   font-family: "Montserrat-Light";
   font-size: 16px;
   color: #606060;
+  cursor: pointer;
 }
 
 .pie_paises {
@@ -1245,9 +1246,8 @@ h6 {
   font-weight: 600;
   text-align: center;
   color: #717272;
-  margin-top: 0px;
-  margin-bottom: 0;
-  padding: 20% 0;
+  margin-top: calc(10% + 63px);
+  margin-bottom: 10%;
 }
 
 .texto-config {
@@ -1260,7 +1260,6 @@ h6 {
   letter-spacing: normal;
   color: #666262;
   text-align: initial;
-  padding: 20px;
   margin-bottom: 0;
 }
 
@@ -1533,6 +1532,14 @@ h6 {
 .modal-favorites-text {
   font-size: 16px;
   color: #2d2926;
+}
+
+.option-config:first-child {
+  padding: 0 20px 20px 20px;
+}
+
+.option-config {
+  padding: 20px;
 }
 
 /*Tamaño de textos - responsive*/
@@ -1858,6 +1865,11 @@ h6 {
   color: #717272;
   font-size: 14px;
   border: solid 2px #069cb0;
+}
+
+#alert-button {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /*Tamaño de textos - responsive*/
@@ -2417,8 +2429,10 @@ h6 {
 
 .ubicacionpuntos {
   position: absolute;
-  top: 75%;
-  left: 88%;
+  top: 95%;
+  left: 95%;
+  -webkit-transform: translate(-100%, -100%);
+          transform: translate(-100%, -100%);
 }
 
 .lista-avatar {
@@ -2559,6 +2573,7 @@ h6 {
   -webkit-transform: translate(-30%, -30%);
           transform: translate(-30%, -30%);
   cursor: pointer;
+  z-index: 2;
 }
 
 .alert-image {
@@ -4121,10 +4136,6 @@ input[type="radio"]:checked + .mujer-estilo {
   padding: 15px 0px;
 }
 
-.sidebar-content {
-  -webkit-overflow-scrolling: touch;
-}
-
 .dropdown-content {
   display: none;
   text-align: center;
@@ -4960,6 +4971,10 @@ input[type="radio"]:checked + .mujer-estilo {
   }
 }
 
+.paises-container {
+  padding-bottom: 72px;
+}
+
 .schedule-poster {
   width: 50%;
   margin-right: 5%;
@@ -5064,10 +5079,6 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .synopsis-content {
   background: #000000;
-}
-
-.paises-container {
-  padding-bottom: 20px;
 }
 
 .wrapper {
@@ -5288,11 +5299,6 @@ input[type="radio"]:checked + .mujer-estilo {
   background: #4dd0e1;
 }
 
-.configuracion-header .menu-perfil {
-  position: static;
-  padding: 1px;
-}
-
 .menu-ingreso {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5471,6 +5477,14 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .modal-button-outline {
     font-size: 16px;
+  }
+  .titulos-configuraciones {
+    margin-top: 14%;
+    margin-bottom: 14%;
+  }
+  #alert-button {
+    margin-top: 14%;
+    margin-bottom: 14%;
   }
   /*End General - Átomos*/
   /*============================*/
@@ -5720,7 +5734,7 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-top: 10%;
   }
   .ubicacionpuntos {
-    top: 90%;
+    top: 95%;
   }
   .ubicacion5 {
     top: 85%;
@@ -6357,12 +6371,30 @@ input[type="radio"]:checked + .mujer-estilo {
   /*3.13 - Alertas - Organismos*/
   .alertas-container {
     padding-top: 50px;
+    padding-bottom: 44px;
   }
   /*End Alertas*/
   /*============================*/
   /*============================*/
   /*3.14 - Configuración - Organismos*/
+  .options-conf-container {
+    padding-bottom: 14%;
+  }
   /*End Configuración*/
+  /*============================*/
+  /*============================*/
+  /*3.15 - Avatar - Organismos*/
+  .avatar-container {
+    margin-bottom: 44px;
+  }
+  /*End Avatar*/
+  /*============================*/
+  /*============================*/
+  /*3.16 - Datos - Organismos*/
+  .data-user-container {
+    margin-bottom: 44px;
+  }
+  /*End Datos*/
   /*============================*/
 }
 
@@ -6530,6 +6562,14 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .modal-button-outline {
     font-size: 16px;
+  }
+  .titulos-configuraciones {
+    margin-top: 14%;
+    margin-bottom: 14%;
+  }
+  #alert-button {
+    margin-top: 14%;
+    margin-bottom: 14%;
   }
   /*End Generales - átomos*/
   /*-----------------------------*/
@@ -6807,7 +6847,7 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-top: 10%;
   }
   .ubicacionpuntos {
-    top: 90%;
+    top: 95%;
   }
   .ubicacion5 {
     top: 85%;
@@ -7490,12 +7530,30 @@ input[type="radio"]:checked + .mujer-estilo {
   /*3.14 - Alertas - Organismos*/
   .alertas-container {
     padding-top: 50px;
+    padding-bottom: 44px;
   }
   /*End Alertas*/
   /*============================*/
   /*============================*/
   /*3.15 - Configuración - Organismos*/
+  .options-conf-container {
+    padding-bottom: 14%;
+  }
   /*End Configuración*/
+  /*============================*/
+  /*============================*/
+  /*3.15 - Avatar - Organismos*/
+  .avatar-container {
+    margin-bottom: 44px;
+  }
+  /*End Avatar*/
+  /*============================*/
+  /*============================*/
+  /*3.16 - Datos - Organismos*/
+  .data-user-container {
+    margin-bottom: 44px;
+  }
+  /*End Datos*/
   /*============================*/
 }
 
@@ -7679,6 +7737,14 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .modal-button-outline {
     font-size: 16px;
+  }
+  .titulos-configuraciones {
+    margin-top: 14%;
+    margin-bottom: 14%;
+  }
+  #alert-button {
+    margin-top: 14%;
+    margin-bottom: 14%;
   }
   /*End Generales - átomos*/
   /*-----------------------------*/
@@ -7888,7 +7954,7 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-top: 5%;
   }
   .ubicacionpuntos {
-    top: 90%;
+    top: 95%;
   }
   .ubicacion5 {
     top: 85%;
@@ -8662,6 +8728,7 @@ input[type="radio"]:checked + .mujer-estilo {
   /*3.14 - Alertas - Organismos*/
   .alertas-container {
     padding-top: 50px;
+    padding-bottom: 44px;
   }
   /*End Alertas*/
   /*============================*/
@@ -8676,7 +8743,24 @@ input[type="radio"]:checked + .mujer-estilo {
   .configuracion-header .claro-navbar {
     position: static;
   }
+  .options-conf-container {
+    padding-bottom: 14%;
+  }
   /*End Configuración*/
+  /*============================*/
+  /*============================*/
+  /*3.15 - Avatar - Organismos*/
+  .avatar-container {
+    margin-bottom: 44px;
+  }
+  /*End Avatar*/
+  /*============================*/
+  /*============================*/
+  /*3.16 - Datos - Organismos*/
+  .data-user-container {
+    margin-bottom: 44px;
+  }
+  /*End Datos*/
   /*============================*/
 }
 
@@ -8871,6 +8955,14 @@ input[type="radio"]:checked + .mujer-estilo {
   .modal-button-outline {
     font-size: 16px;
   }
+  .titulos-configuraciones {
+    margin-top: 14%;
+    margin-bottom: 14%;
+  }
+  #alert-button {
+    margin-top: 14%;
+    margin-bottom: 14%;
+  }
   /*End General - Átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -9047,7 +9139,7 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-top: 5%;
   }
   .ubicacionpuntos {
-    top: 90%;
+    top: 95%;
   }
   .ubicacion5 {
     top: 85%;
@@ -9810,6 +9902,7 @@ input[type="radio"]:checked + .mujer-estilo {
   /*3.14 - Alertas - Organismos*/
   .alertas-container {
     padding-top: 50px;
+    padding-bottom: 44px;
   }
   /*End Alertas*/
   /*============================*/
@@ -9824,7 +9917,24 @@ input[type="radio"]:checked + .mujer-estilo {
   .configuracion-header .claro-navbar {
     position: static;
   }
+  .options-conf-container {
+    padding-bottom: 14%;
+  }
   /*End Configuración*/
+  /*============================*/
+  /*============================*/
+  /*3.15 - Avatar - Organismos*/
+  .avatar-container {
+    margin-bottom: 44px;
+  }
+  /*End Avatar*/
+  /*============================*/
+  /*============================*/
+  /*3.16 - Datos - Organismos*/
+  .data-user-container {
+    margin-bottom: 44px;
+  }
+  /*End Datos*/
   /*============================*/
 }
 /*# sourceMappingURL=style.css.map */

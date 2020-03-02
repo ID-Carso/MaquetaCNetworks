@@ -8,6 +8,8 @@
 
 
 <body class="fondo">
+        <div class="alert-user">
+        </div>
         <header class="alertas-header">
                 <?php include('./views/partials/hamburguer-menu.php') ?>
                 <?php include('./views/partials/menu-perfil.php') ?>
@@ -17,7 +19,7 @@
                                 <div class="claro-logo">
                                         <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
 
-                                        <img class="logo" src="./images/home/claro-logo.svg" alt="" />
+                                        <a href="home.php"><img class="logo" src="./images/home/claro-logo.svg" alt="" /></a>
                                 </div>
 
                                 <div class="login">
@@ -34,7 +36,7 @@
 
         <div class="alertas-container no-gutters">
                 <div class="col-sm-12 mx-auto no-gutters col-md-6 no-gutters col-lg-4 col-xl-4 card-white shadow1 fondolog position-relative">
-                        <a href="configuracion.php"> <img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back"></a>
+                        <img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back">
                         <img src="images/registro/group-10.svg" class="ubicacion5" />
                         <img src="images/config/puntos.svg" class="ubicacionpuntos">
 
@@ -49,8 +51,8 @@
 
                                 <div class="row ma-no centro pb-5">
                                         <div class="col-sm-12 no-gap">
-                                                <div class="centro d-flex justify-content-between">
-                                                        <p class="texto-alert alert-text"> Desactivar todas las alertas </p>
+                                                <div class="no-gutters centro d-flex justify-content-between">
+                                                        <p class="texto-alert alert-text col-8"> Desactivar todas las alertas </p>
                                                         <div class="d-flex align-items-center position-absolute alert-switch-container">
                                                                 <span class="texto-alert span-alert-left">No</span>
                                                                 <label class="switch-alert mr-2 ml-2">
@@ -66,8 +68,8 @@
 
                                 <div class="row ma-no centro pb-5">
                                         <div class="col-sm-12 no-gap">
-                                                <div class="centro d-flex justify-content-between">
-                                                        <p class="texto-alert alert-text"> Alertar minutos antes </p>
+                                                <div class="no-gutters centro d-flex justify-content-between">
+                                                        <p class="col-8 texto-alert alert-text"> Alertar minutos antes </p>
                                                         <div class="d-flex align-items-center position-absolute alert-switch-container">
                                                                 <span class="text-center texto-alert span-alert-left"> 15<br> min</span>
                                                                 <label class="switch-alert mr-2 ml-2">
@@ -104,8 +106,8 @@
 
                                 <div class="row ma-no centro pb-5">
                                         <div class="col-sm-12 no-gap">
-                                                <div class="centro d-flex justify-content-between">
-                                                        <p class="texto-alert alert-text"> Alertar al iniciar </p>
+                                                <div class="no-gutters centro d-flex justify-content-between">
+                                                        <p class="col-8 texto-alert alert-text"> Alertar al iniciar </p>
                                                         <div class="position-absolute d-flex align-items-center alert-switch-container">
                                                                 <span class="texto-alert span-alert-left">No</span>
                                                                 <label class="switch-alert mr-2 ml-2">
@@ -121,8 +123,8 @@
                                 </div>
                                 <div class="row ma-no centro pb-5">
                                         <div class="col-sm-12 no-gap">
-                                                <div class="centro d-flex justify-content-between">
-                                                        <p class="texto-alert alert-text"> Alertas por correo </p>
+                                                <div class="no-gutters centro d-flex justify-content-between">
+                                                        <p class="col-8 texto-alert alert-text"> Alertas por correo </p>
                                                         <div class="position-absolute d-flex align-items-center alert-switch-container">
                                                                 <span class="texto-alert span-alert-left">No</span>
                                                                 <label class="switch-alert mr-2 ml-2">
@@ -136,9 +138,9 @@
                                         </div>
                                 </div>
                                 <div class="row ma-no centro">
-                                        <div class="col-sm-12 no-gap pb-5 mb-5">
-                                                <div class="centro d-flex justify-content-between">
-                                                        <p class="texto-alert alert-text"> Alertas por web </p>
+                                        <div class="col-sm-12 no-gap">
+                                                <div class="no-gutters centro d-flex justify-content-between">
+                                                        <p class="col-8 texto-alert alert-text"> Alertas por web </p>
                                                         <div class="position-absolute d-flex align-items-center alert-switch-container">
                                                                 <span class="texto-alert span-alert-left">No</span>
                                                                 <label class="switch-alert mr-2 ml-2">
@@ -151,7 +153,7 @@
                                                 </div>
                                         </div>
                                 </div>
-                                <div class="text-center mt-5 pb-5">
+                                <div class="text-center">
                                         <button type="button" class="form-button-primary" id="alert-button">GUARDAR</button>
                                 </div>
 

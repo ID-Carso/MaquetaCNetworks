@@ -70,8 +70,8 @@
   </header>
 
   <div style="padding-top: 3%">
-    <div class="col-sm-12 no-gutters col-md-8 mx-auto no-gutters col-lg-4 col-xl-3 shadow1 fondolog position-relative card-white">
-      <a href="configuracion.php"><img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back"></a>
+    <div class="col-sm-12 no-gutters col-md-8 mx-auto no-gutters col-lg-4 col-xl-3 shadow1 fondolog position-relative card-white avatar-container">
+      <img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back">
       <img src="images/registro/group-10.svg" class="ubicacion5" />
 
       <div class="row ma-no centro">

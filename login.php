@@ -11,6 +11,7 @@
   <div class="login-container">
     <div class="login-form no-gutters">
       <div class="col-sm-12 no-gutters col-md-6  no-gutters col-lg-4  col-xl-3 shadow1 fondolog formContainer">
+        <img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back">
         <img src="images/registro/group-10.svg" class="ubicacion5" />
         <div class="row ma-no no-gutters">
           <div class="col-sm-12 col-md-12 col-lg-12 no-gutters ">

@@ -7,6 +7,8 @@
 </head>
 
 <body class="fondo">
+  <div class="alert-user">
+  </div>
   <header class="configuracion-header">
     <?php include('./views/partials/hamburguer-menu.php') ?>
 
@@ -18,7 +20,7 @@
           <div class="claro-logo">
             <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
 
-            <img class="logo" src="./images/home/claro-logo.svg" alt="" />
+            <a href="home.php"><img class="logo" src="./images/home/claro-logo.svg" alt="" /></a>
           </div>
 
           <div class="login">
@@ -30,68 +32,45 @@
       include 'menu-desktop.php';
       ?>
   </header>
-  <div class="configuracion-container py-5">
+  <div class="configuracion-container py-md-5 py-lg-5 py-xl-5">
 
-    <div class="col-sm-12 no-gutters col-md-6 mx-auto no-gutters col-lg-4 col-xl-3 shadow1 fondolog">
-
+    <div class="col-sm-12 no-gutters col-md-6 mx-auto no-gutters col-lg-4 col-xl-3 shadow1 fondolog card-white">
+      <img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back">
       <img src="images/registro/group-10.svg" class="ubicacion5" />
       <img src="images/config/puntos.svg" class="ubicacionpuntos" />
       <div class="row ma-no centro">
         <div class="col-sm-12 no-gap">
           <div class="centro">
-            <p class="titulos-configuraciones py-5">Configuración</p>
+            <p class="titulos-configuraciones">Configuración</p>
           </div>
         </div>
       </div>
-      <div class="col-10 mx-auto col-sm-8 col-md-8 col-lg-8 col-xl-10">
-        <div class="row ma-no centro">
-          <div class="col-sm-12 no-gap">
-            <div class="tamaño2 centro ">
-              <a href="alertas.php">
-                <label class="border-config">
-                  <p class="texto-config">
-                    Alertas
-                    <img class="flechalink-icon" src="images/config/flecha.svg" />
-                  </p>
-                </label>
-              </a>
-            </div>
-          </div>
+      <div class="col-10 mx-auto col-sm-10 col-md-10 col-lg-10 col-xl-10 options-conf-container">
+        <div class="position-relative option-config border-config">
+          <a href="alertas.php">
+            <p class="texto-config">
+              Alertas
+              <img class="flechalink-icon" src="images/config/flecha.svg" />
+            </p>
+          </a>
         </div>
-        <br />
-        <div class="row ma-no centro">
-          <div class="col-sm-12 no-gap">
-            <div class="tamaño2 centro ">
-              <a href="avatar.php">
-                <label class="border-config">
-                  <p class="texto-config">
-                    Cambiar avatar
-                    <img class="flechalink-icon" src="images/config/flecha.svg" />
-                  </p>
-                </label>
-              </a>
-            </div>
-          </div>
+        <div class="position-relative option-config border-config">
+          <a href="avatar.php">
+            <p class="texto-config">
+              Cambiar avatar
+              <img class="flechalink-icon" src="images/config/flecha.svg" />
+            </p>
+          </a>
         </div>
-        <br />
-        <div class="row ma-no centro">
-          <div class="col-sm-12 no-gap pb-5">
-            <div class="tamaño2 centro ">
-              <a href="datos.php">
-                <label class="border-config">
-                  <p class="texto-config">
-                    Datos adicionales
-                    <img class="flechalink-icon" src="images/config/flecha.svg" />
-                  </p>
-                </label>
-              </a>
-            </div>
-          </div>
+        <div class="position-relative option-config border-config">
+          <a href="datos.php">
+            <p class="texto-config">
+              Datos adicionales
+              <img class="flechalink-icon" src="images/config/flecha.svg" />
+            </p>
+          </a>
         </div>
       </div>
-
-    </div>
-  </div>
 </body>
 
 </html>

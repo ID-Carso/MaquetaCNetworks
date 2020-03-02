@@ -95,8 +95,6 @@ $(document).ready(function() {
     localStorage.getItem("favoritesClaroCinema")
   );
 
-  console.log(favoritesClaroCinema);
-
   let listFavorites = $(".mi-lista-container");
   let myFavorites;
   if (
@@ -336,7 +334,7 @@ $(document).ready(function() {
     if (favoritesConcertChannel != null) {
       if (favoritesConcertChannel.length != 0) {
         /* CONCERT CHANNEL */
-        console.log(favoritesConcertChannel.length);
+
         let programsConcertChannelList = "";
         favoritesConcertChannel.forEach(favorite => {
           if (favorite.active == 0) {
@@ -777,7 +775,6 @@ $(document).ready(function() {
   }
 
   $(".myList-details-container").click(function(e) {
-    console.time;
     if (e.target.classList.contains("myList-alert")) {
       let alert = $(this)
         .find(".myList-alert")
@@ -790,7 +787,6 @@ $(document).ready(function() {
 
       updateAlertProgram(user_id, program_id, alert);
     }
-    console.timeEnd;
   });
 
   /* END LISTA DE FAVORITOS DEL USUARIO */
@@ -972,7 +968,7 @@ $(document).ready(function() {
 
       let length = avatars.length;
       avatars.removeClass("active-navAvatar");
-      console.time();
+
       avatars.each(function(index, avatar) {
         let itemAvatar = $(this)
           .closest(".avatar-item")
@@ -983,7 +979,6 @@ $(document).ready(function() {
           itemAvatar.addClass("active-navAvatar");
         }
       });
-      console.timeEnd();
     }
 
     /*VERIFICAR ALERTAS EN SESIÓN*/
@@ -1116,7 +1111,7 @@ $(document).ready(function() {
     signOut();
   });
 
-  $(".terms-conditions-button").click(function() {
+  $(".terms-conditions-button, .arrow-back, .name_paises").click(function() {
     window.history.back();
   });
 
@@ -1130,13 +1125,17 @@ $(document).ready(function() {
 
   /* Hacer aparecer el tooltip */
 
-  $(".image-user-container").hover(function() {});
-
-  $(".icon-user").hover(function() {
-    let tooltipLogout = $(".tooltip-logout");
-    /*tooltipLogout.toggle();*/
-    tooltipLogout.css("display", "block");
-  });
+  $(".icon-user").hover(
+    function() {
+      let tooltipLogout = $(".tooltip-logout");
+      /*tooltipLogout.toggle();*/
+      tooltipLogout.css("display", "block");
+    },
+    function() {
+      let tooltipLogout = $(".tooltip-logout");
+      tooltipLogout.css("display", "none");
+    }
+  );
 
   $(document).on("click", function(e) {
     let container = $(".icon-user");
@@ -1151,6 +1150,16 @@ $(document).ready(function() {
 
     if (!container.is(e.target) && container.has(e.target).length === 0) {
       tooltipLogout.css("display", "none");
+    }
+  });
+
+  $(document).on("click", function(e) {
+    let container = $("#drop-paises, .cuadro-fecha");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      $("#selectPais").prop("checked", false);
+      $("#selectDay").prop("checked", false);
+      $("#selectMonth").prop("checked", false);
+      $("#selectYear").prop("checked", false);
     }
   });
 
@@ -1599,6 +1608,7 @@ $(document).ready(function() {
   slider.createDaysSlider("sports", containerSliderSports);
 
   createProgramacionSlider();
+
   let date = new Date();
   let day = date.getDate();
   let month = date.getMonth();
@@ -1659,8 +1669,8 @@ $(document).ready(function() {
         height: "100%",
         width: "100%"
       });
-      sidebar_content.style.overflow = "auto";
-      sidebar_content.style.height = "100%";
+      sidebar_content.style.overflowY = "scroll";
+      sidebar_content.style.height = "70%";
     });
   }
 
@@ -1681,7 +1691,7 @@ $(document).ready(function() {
         height: "100%",
         width: "auto"
       });
-      sidebar_content.style.overflow = "hidden";
+      sidebar_content.style.overflowY = "hidden";
       sidebar_content.style.height = "0%";
     });
   }

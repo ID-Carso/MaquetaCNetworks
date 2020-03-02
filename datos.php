@@ -36,6 +36,8 @@
 </head>
 
 <body class="fondo">
+  <div class="alert-user">
+  </div>
   <header class="datos-header">
     <?php include('./views/partials/hamburguer-menu.php') ?>
 
@@ -47,7 +49,7 @@
           <div class="claro-logo">
             <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" />
 
-            <img class="logo" src="./images/home/claro-logo.svg" />
+            <a href="home.php"><img class="logo" src="./images/home/claro-logo.svg" /></a>
           </div>
 
           <div class="login">
@@ -63,8 +65,8 @@
   </header>
   <div style="padding-top: 3%">
     <div class="login-form">
-      <div class="col-sm-12 no-gutters col-md-6 col-lg-4 col-xl-4 shadow1 fondolog position-relative card-white">
-        <a href="configuracion.php"><img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back"></a>
+      <div class="col-sm-12 no-gutters col-md-6 col-lg-4 col-xl-4 shadow1 fondolog position-relative card-white data-user-container">
+        <img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back">
         <img src="images/registro/group-10.svg" class="ubicacion5" />
 
         <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
@@ -77,7 +79,7 @@
           </div>
           <div class="row ma-no centro">
             <div class="col-sm-12 no-gap">
-              <div class="tamaño2 centro">
+              <div class="centro">
                 <p class="titulo-seleccion-sexo">Sexo</p>
                 <form action="" name="formilariosexo" id="formulariosexo" class="formulario">
                   <div class="sexo">
@@ -96,7 +98,7 @@
           </div>
           <div class="row ma-no centro">
             <div class="col-sm-12 no-gap">
-              <div class="tamaño2 centro">
+              <div class="centro">
                 <p class="titulo-seleccion-fecha">Fecha de nacimiento</p>
                 <div class="cuadro-fecha">
                   <div class="cuadro-dia">
@@ -582,7 +584,7 @@
                       <img src="images/paises/panama.svg" class="Icon_paises" />Panamá
                     </li>
                     <li class="option" id-select="select-Pais" value="Paraguay">
-                      <img src="images/paises/paragay.svg" class="Icon_paises" />Paraguay
+                      <img src="images/paises/paraguay.svg" class="Icon_paises" />Paraguay
                     </li>
                     <li class="option" id-select="select-Pais" value="Perú">
                       <img src="images/paises/peru.svg" class="Icon_paises" />Perú

@@ -442,8 +442,9 @@
 
 .ubicacionpuntos {
   position: absolute;
-  top: 75%;
-  left: 88%;
+  top: 95%;
+  left: 95%;
+  transform: translate(-100%, -100%);
 }
 
 .lista-avatar {
@@ -581,6 +582,7 @@
   top: 0;
   transform: translate(-30%, -30%);
   cursor: pointer;
+  z-index: 2;
 }
 
 .alert-image {

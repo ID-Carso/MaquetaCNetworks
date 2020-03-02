@@ -51,7 +51,7 @@ function showNotification() {
         url: "../../adapters/user.php",
         success: function(result) {
           let json = JSON.parse(result);
-
+          console.log(json);
           if (json.code == 200) {
             let name = localStorage.getItem("name");
             let length = json.data.length;
