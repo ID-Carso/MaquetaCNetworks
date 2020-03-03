@@ -500,7 +500,7 @@ function addFavorites() {
         let dataUser = {
           function: "addFavorites",
           user_id: id_user,
-          program_id: id_program
+          chapter_id: id_program
         };
 
         $.ajax({
@@ -511,7 +511,8 @@ function addFavorites() {
             let json = JSON.parse(result);
             console.log(json);
             if (json.code == 200) {
-              let sections = json.data;
+              let sections = json.data["fav_list"];
+
               buttonFavorite.removeClass("add-favorites");
               buttonFavorite.addClass("remove-program");
               if (heartIcon) {
@@ -523,6 +524,13 @@ function addFavorites() {
                 heartIconGray.addClass("heart-gray-filled");
                 heartIconGray.removeClass("heart-gray");
               }
+
+              let nameUser = localStorage.getItem("name");
+              let nameProgram = `${json.data.last_added.program_title} -${json.data.last_added.chapter_title}`;
+              console.log(nameProgram);
+              $("#modal-username-program").text(`${nameUser}:`);
+
+              $(".modal-program").modal("show");
 
               sections.forEach(section => {
                 if (section.id_section == 1) {
@@ -557,7 +565,7 @@ function removeFavorites(user_id, program_id, removeButton, itemList) {
   let dataUser = {
     function: "removeFavorites",
     user_id: user_id,
-    program_id: program_id
+    chapter_id: program_id
   };
 
   $.ajax({
@@ -657,13 +665,13 @@ function updateAlertProgram(user_id, program_id, active) {
     dataUser = {
       function: "enableNotification",
       user_id: user_id,
-      program_id: program_id
+      chapter_id: program_id
     };
   } else {
     dataUser = {
       function: "disableNotification",
       user_id: user_id,
-      program_id: program_id
+      chapter_id: program_id
     };
   }
 

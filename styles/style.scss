@@ -184,6 +184,14 @@
     margin-top: 14%;
     margin-bottom: 14%;
   }
+
+  .modal-program-title {
+    font-size: 24px;
+  }
+
+  .modal-program-text {
+    font-size: 21px;
+  }
   /*End General - Átomos*/
   /*============================*/
 
@@ -787,6 +795,11 @@
 
   .alert-user {
     max-width: 400px;
+  }
+
+  .modal-program-content {
+    margin: auto;
+    max-width: 500px !important;
   }
 
   /*End General - Organismos*/
@@ -2173,6 +2186,11 @@
 
   .alert-user {
     max-width: 400px;
+  }
+
+  .modal-program-content {
+    margin: auto;
+    max-width: 500px !important;
   }
 
   /*End Generales - organismos*/

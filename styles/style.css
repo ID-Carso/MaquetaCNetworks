@@ -1542,6 +1542,16 @@ h6 {
   padding: 20px;
 }
 
+.modal-program-title {
+  font-size: 17px;
+  color: #0097a9;
+}
+
+.modal-program-text {
+  font-size: 14px;
+  color: #666262;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -5486,6 +5496,12 @@ input[type="radio"]:checked + .mujer-estilo {
     margin-top: 14%;
     margin-bottom: 14%;
   }
+  .modal-program-title {
+    font-size: 24px;
+  }
+  .modal-program-text {
+    font-size: 21px;
+  }
   /*End General - Átomos*/
   /*============================*/
   /*============================*/
@@ -5977,6 +5993,10 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .alert-user {
     max-width: 400px;
+  }
+  .modal-program-content {
+    margin: auto;
+    max-width: 500px !important;
   }
   /*End General - Organismos*/
   /*============================*/
@@ -7103,6 +7123,10 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .alert-user {
     max-width: 400px;
+  }
+  .modal-program-content {
+    margin: auto;
+    max-width: 500px !important;
   }
   /*End Generales - organismos*/
   /*-----------------------------*/

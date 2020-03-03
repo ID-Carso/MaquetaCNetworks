@@ -201,8 +201,8 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
         case 'addFavorites':
             if ($_POST["user_id"]) {
                 $userId = $_POST["user_id"];
-                $programId = $_POST["program_id"];
-                $data = array("user_id" => $userId, "program_id" => $programId);
+                $programId = $_POST["chapter_id"];
+                $data = array("user_id" => $userId, "chapter_id" => $programId);
                 $dataJson = json_encode($data);
                 $user = User::getUserInstance();
                 echo ($user->addFavorites($dataJson));
@@ -212,8 +212,8 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
 
         case 'removeFavorites':
             $userId = $_POST["user_id"];
-            $programId = $_POST["program_id"];
-            $data = array("user_id" => $userId, "program_id" => $programId);
+            $programId = $_POST["chapter_id"];
+            $data = array("user_id" => $userId, "chapter_id" => $programId);
             $dataJson = json_encode($data);
             $user = User::getUserInstance();
             echo ($user->removeFavorites($dataJson));
@@ -221,8 +221,8 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
 
         case 'enableNotification':
             $userId = $_POST["user_id"];
-            $programId = $_POST["program_id"];
-            $data = array("user_id" => $userId, "program_id" => $programId);
+            $programId = $_POST["chapter_id"];
+            $data = array("user_id" => $userId, "chapter_id" => $programId);
             $dataJson = json_encode($data);
             $user = User::getUserInstance();
             echo ($user->enableNotification($dataJson));
@@ -230,8 +230,8 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
 
         case 'disableNotification':
             $userId = $_POST["user_id"];
-            $programId = $_POST["program_id"];
-            $data = array("user_id" => $userId, "program_id" => $programId);
+            $programId = $_POST["chapter_id"];
+            $data = array("user_id" => $userId, "chapter_id" => $programId);
             $dataJson = json_encode($data);
             $user = User::getUserInstance();
             echo ($user->disableNotification($dataJson));

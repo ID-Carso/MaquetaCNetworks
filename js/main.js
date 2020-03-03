@@ -123,6 +123,7 @@ $(document).ready(function() {
       if (favoritesCanalClaro.length != 0) {
         let programsCanalClaroList = "";
         favoritesCanalClaro.forEach(favorite => {
+          console.log(favorite);
           if (favorite.active == 0) {
             programsCanalClaroList += `
             <div class="list-item-container" >
@@ -132,7 +133,7 @@ $(document).ready(function() {
                 </div>
                 <div class="a-claro-rectangle">
                     <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${favorite.title}</p>
+                        <p class="a-poster-text-white">${favorite.program_title}</p>
                     </div>
                 </div>
             </div>
@@ -143,7 +144,7 @@ $(document).ready(function() {
                         <p class="rating">Clasificación: A</p>
                     </div>
                     <div>
-                        <button  class="button-none remove-program" _id="${favorite.id}" type="button"><img src="./images/mi-lista/heart.svg">
+                        <button  class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="./images/mi-lista/heart.svg">
                         </button>
                     </div>
                 </div>
@@ -174,7 +175,7 @@ $(document).ready(function() {
       
                 <div class="d-flex  align-items-end flex-column justify-content-between">
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.id}" type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg">
                         </button>
                     </div>
                     <div class="d-flex align-items-center justify-content-end">
@@ -198,7 +199,7 @@ $(document).ready(function() {
                     </div>
                     <div>
                         <div class="text-right mb-3">
-                            <button title="Eliminar de mi lista" class="button-none remove-program" _id="${favorite.id}" type="button"><img src="images/mi-lista/heart.svg">
+                            <button title="Eliminar de mi lista" class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg">
                             </button>
                         </div>
                         <div class="d-flex align-items-center justify-content-end">
@@ -230,7 +231,7 @@ $(document).ready(function() {
                 </div>
                 <div class="a-claro-rectangle">
                     <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${favorite.title}</p>
+                        <p class="a-poster-text-white">${favorite.program_title}</p>
                     </div>
                 </div>
             </div>
@@ -241,7 +242,7 @@ $(document).ready(function() {
                         <p class="rating">Clasificación: A</p>
                     </div>
                     <div>
-                        <button  class="button-none remove-program" _id="${favorite.id}" type="button"><img src="./images/mi-lista/heart.svg">
+                        <button  class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="./images/mi-lista/heart.svg">
                         </button>
                     </div>
                 </div>
@@ -272,7 +273,7 @@ $(document).ready(function() {
       
                 <div class="d-flex  align-items-end flex-column justify-content-between">
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.id}" type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg">
                         </button>
                     </div>
                     <div class="d-flex align-items-center justify-content-end">
@@ -296,7 +297,7 @@ $(document).ready(function() {
                     </div>
                     <div>
                         <div class="text-right mb-3">
-                            <button title="Eliminar de mi lista" class="button-none remove-program" _id="${favorite.id}" type="button"><img src="images/mi-lista/heart.svg">
+                            <button title="Eliminar de mi lista" class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg">
                             </button>
                         </div>
                         <div class="d-flex align-items-center justify-content-end">
@@ -346,7 +347,7 @@ $(document).ready(function() {
                 </div>
                 <div class="a-concert-rectangle">
                     <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${favorite.title}</p>
+                        <p class="a-poster-text-white">${favorite.program_title}</p>
                     </div>
                 </div>
             </div>
@@ -357,7 +358,7 @@ $(document).ready(function() {
                         <p class="rating">Clasificación: A</p>
                     </div>
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.id}"  type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg">
                         </button>
                     </div>
                 </div>
@@ -388,7 +389,7 @@ $(document).ready(function() {
       
                 <div class="d-flex  align-items-end flex-column justify-content-between">
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.id}"  type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg">
                         </button>
                     </div>
                     <div class="d-flex align-items-center justify-content-end">
@@ -412,7 +413,7 @@ $(document).ready(function() {
                     </div>
                     <div>
                         <div class="text-right mb-3">
-                            <button class="button-none remove-program" _id="${favorite.id}"  type="button"><img src="images/mi-lista/heart.svg">
+                            <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg">
                             </button>
                         </div>
                         <div class="d-flex align-items-center justify-content-end">
@@ -444,7 +445,7 @@ $(document).ready(function() {
                 </div>
                 <div class="a-concert-rectangle">
                     <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${favorite.title}</p>
+                        <p class="a-poster-text-white">${favorite.program_title}</p>
                     </div>
                 </div>
             </div>
@@ -455,7 +456,7 @@ $(document).ready(function() {
                         <p class="rating">Clasificación: A</p>
                     </div>
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.id}"  type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg">
                         </button>
                     </div>
                 </div>
@@ -486,7 +487,7 @@ $(document).ready(function() {
       
                 <div class="d-flex  align-items-end flex-column justify-content-between">
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.id}"  type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg">
                         </button>
                     </div>
                     <div class="d-flex align-items-center justify-content-end">
@@ -510,7 +511,7 @@ $(document).ready(function() {
                     </div>
                     <div>
                         <div class="text-right mb-3">
-                            <button class="button-none remove-program" _id="${favorite.id}"  type="button"><img src="images/mi-lista/heart.svg">
+                            <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg">
                             </button>
                         </div>
                         <div class="d-flex align-items-center justify-content-end">
@@ -559,7 +560,7 @@ $(document).ready(function() {
                 </div>
                 <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${favorite.title}</p>
+                        <p class="a-poster-text-white">${favorite.program_title}</p>
                     </div>
                 </div>
             </div>
@@ -570,7 +571,7 @@ $(document).ready(function() {
                         <p class="rating">Clasificación: A</p>
                     </div>
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.id}" type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg">
                         </button>
                     </div>
                 </div>
@@ -601,7 +602,7 @@ $(document).ready(function() {
       
                 <div class="d-flex align-items-end flex-column justify-content-between">
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.id}"  type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg">
                         </button>
                     </div>
                     <div class="d-flex align-items-center justify-content-end">
@@ -625,7 +626,7 @@ $(document).ready(function() {
                     </div>
                     <div>
                         <div class="text-right mb-3">
-                            <button class="button-none remove-program" _id="${favorite.id}"  type="button"><img src="./images/mi-lista/heart.svg">
+                            <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="./images/mi-lista/heart.svg">
                             </button>
                         </div>
                         <div class="d-flex align-items-center justify-content-end">
@@ -657,7 +658,7 @@ $(document).ready(function() {
                 </div>
                 <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${favorite.title}</p>
+                        <p class="a-poster-text-white">${favorite.program_title}</p>
                     </div>
                 </div>
             </div>
@@ -668,7 +669,7 @@ $(document).ready(function() {
                         <p class="rating">Clasificación: A</p>
                     </div>
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.id}" type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg">
                         </button>
                     </div>
                 </div>
@@ -699,7 +700,7 @@ $(document).ready(function() {
       
                 <div class="d-flex align-items-end flex-column justify-content-between">
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.id}"  type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg">
                         </button>
                     </div>
                     <div class="d-flex align-items-center justify-content-end">
@@ -723,7 +724,7 @@ $(document).ready(function() {
                     </div>
                     <div>
                         <div class="text-right mb-3">
-                            <button class="button-none remove-program" _id="${favorite.id}"  type="button"><img src="./images/mi-lista/heart.svg">
+                            <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="./images/mi-lista/heart.svg">
                             </button>
                         </div>
                         <div class="d-flex align-items-center justify-content-end">
