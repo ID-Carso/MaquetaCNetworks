@@ -114,7 +114,7 @@
                 <img src="http://www.claronetworks.openofficedospuntocero.info/API_images/claro-logo.png" class="logo-mail">
             </div>
             <div class="pb-4">
-            <p class="a-correo-title a-text-black"><span class="text-blue">¡Hola, </span> {{$info['name']}}!</p>
+            <p class="a-correo-title text-blue"><span class="a-text-black">¡Hola, </span> {{$info['name']}}!</p>
                 <p class="a-correo-title a-text-black">Este es un recordatorio</p>
             </div>
 

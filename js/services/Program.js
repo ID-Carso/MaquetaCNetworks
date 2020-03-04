@@ -1,5 +1,14 @@
 import { addFavorites } from "./user/user.js";
 
+function createClickThumbnails() {
+  $(".poster").click(function() {
+    let posterButtonId = $(this)
+      .find(".poster-button")
+      .attr("_id");
+    showSynopsis(posterButtonId);
+  });
+}
+
 function createTvSlider(container) {
   container.slick({
     slidesToShow: 5,
@@ -84,6 +93,7 @@ function getPrograms(date, time) {
   let nowSliderConcertChannel = $(".today-concert-channel-slider");
   let nowSliderClaroCinema = $(".today-claro-cinema-slider");
   let nowSliderNuestraVision = $("#tv-vision-slider");
+  let nowSliderClaroSports = $("#tv-sports-slider");
   let claroCotentProgramacionGeneral = $(".claro-content");
   let concertContentProgramacionGeneral = $(".concert-content");
   let cinemaContentProgramacionGeneral = $(".cinema-content");
@@ -120,7 +130,7 @@ function getPrograms(date, time) {
       if (localStorage.getItem("favoritesConcertChannel")) {
         let favoritesConcertChannelLength = favoritesConcertChannel.length;
         for (let i = 0; i < favoritesConcertChannelLength; i++) {
-          let favoriteId = favoritesConcertChannel[i].id;
+          let favoriteId = favoritesConcertChannel[i].chapter_id;
           arrayConcertChannel.push(favoriteId);
         }
       }
@@ -132,7 +142,7 @@ function getPrograms(date, time) {
       if (localStorage.getItem("favoritesClaroCinema")) {
         let favoritesClaroCinemaLength = favoritesClaroCinema.length;
         for (let i = 0; i < favoritesClaroCinemaLength; i++) {
-          let favoriteId = favoritesClaroCinema[i].id;
+          let favoriteId = favoritesClaroCinema[i].chapter_id;
           arrayClaroCinema.push(favoriteId);
         }
       }
@@ -150,7 +160,7 @@ function getPrograms(date, time) {
                 <div class="poster">
                   <div class="poster-body">
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                      
+                      <a href="sinopsis.php" class="text-decoration-none">
                           <div class="thumbnail">
                               <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
                           </div>
@@ -159,7 +169,7 @@ function getPrograms(date, time) {
                                   <p class="a-poster-text-white">${program.program_title}</p>
                               </div>
                           </div>
-                     
+                     </a>
                   </div>
               </div>
                 `;
@@ -168,7 +178,7 @@ function getPrograms(date, time) {
                 <div class="poster" >
                   <div class="poster-body">
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                      
+                      <a href="sinopsis.php" class="text-decoration-none">
                           <div class="thumbnail">
                               <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
                           </div>
@@ -177,7 +187,7 @@ function getPrograms(date, time) {
                                   <p class="a-poster-text-white">${program.program_title}</p>
                               </div>
                           </div>
-                      
+                      </a>
                   </div>
               </div>
                 `;
@@ -192,7 +202,7 @@ function getPrograms(date, time) {
                           <button type="button" class="poster-button remove-program" _id="${program.chapter_id}"><img src="./images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
                       </div>
                       
-              
+                      <a href="sinopsis.php" class="text-decoration-none">
                           <div class="thumbnail">
                               <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
                           </div>
@@ -202,7 +212,7 @@ function getPrograms(date, time) {
                               </div>
                           </div>
                      
-      
+                    </a>
                   </div>
               </div>
                 `;
@@ -215,7 +225,7 @@ function getPrograms(date, time) {
                           <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                       </div>
                       
-                     
+                      <a href="sinopsis.php" class="text-decoration-none">
                           <div class="thumbnail">
                               <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
                           </div>
@@ -224,7 +234,7 @@ function getPrograms(date, time) {
                                   <p class="a-poster-text-white">${program.program_title}</p>
                               </div>
                           </div>
-                  
+                    </a>
       
                   </div>
               </div>
@@ -669,8 +679,245 @@ function getPrograms(date, time) {
         /* END PROGRAMACIÓN GENERAL - CLARO CINEMA*/
       });
 
-      let programNuestraVision;
-      programingNuestraVision.forEach((program, index) => {
+      let programNuestraVision = `
+      <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+                  <img src="./images/nuestra-vision/carousel/01-aprende.jpg" alt="">
+              </div>
+              <div class="a-vision-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-white">APRENDE</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+
+
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+                  <img src="./images/nuestra-vision/carousel/02-dress-code.jpg" alt="">
+              </div>
+              <div class="a-vision-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-white">DRESS CODE</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+                  <img src="./images/nuestra-vision/carousel/03-barra-infantil.jpg" alt="">
+              </div>
+              <div class="a-vision-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-white">BARRA INFANTIL</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+
+
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+                  <img src="./images/nuestra-vision/carousel/04-pobre-nino.jpg" alt="">
+              </div>
+              <div class="a-vision-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-white">POBRE NIÑO RICO</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+                  <img src="./images/nuestra-vision/carousel/05-caja-pandora.jpg" alt="">
+              </div>
+              <div class="a-vision-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-white">LA CAJA DE PANDORA: ALEX AGUINAGA</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+                  <img src="./images/nuestra-vision/carousel/06-el-torito.jpg" alt="">
+              </div>
+              <div class="a-vision-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-white">EL TORITO</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+                  <img src="./images/nuestra-vision/carousel/07-la-estatua.jpg" alt="">
+              </div>
+              <div class="a-vision-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-white">LA ESTATUA DE CARNE</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+                  <img src="./images/nuestra-vision/carousel/08-los-leones-del-ring.jpg" alt="">
+              </div>
+              <div class="a-vision-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-white">LOS LEONES DEL RING</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+                  <img src="./images/nuestra-vision/carousel/09-vidas-extraordinarias.jpg" alt="">
+              </div>
+              <div class="a-vision-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-white">VIDAS EXTRAORDINARIAS</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+                  <img src="./images/nuestra-vision/carousel/10-titanes-del-ring.jpg" alt="">
+              </div>
+              <div class="a-vision-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-white">TITANES DEL RING</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+                  <img src="./images/nuestra-vision/carousel/12-deportes-en-claro.jpg" alt="">
+              </div>
+              <div class="a-vision-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-white">DEPORTES EN CLARO</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+                  <img src="./images/nuestra-vision/carousel/13-santo.jpg" alt="">
+              </div>
+              <div class="a-vision-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-white">SANTO CONTRA LA MAFÍA DEL VICIO</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+      `;
+      /*programingNuestraVision.forEach((program, index) => {
         if (index == 0) {
           programNuestraVision = `
           <div class="poster" >
@@ -713,14 +960,188 @@ function getPrograms(date, time) {
                         </div>
                     </div>
                 </a>
-
             </div>
         </div>
           `;
         }
         nowSliderNuestraVision.append(programNuestraVision);
-      });
+      });*/
 
+      let programClaroSports = `
+      <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+
+              </div>
+              <div class="a-sports-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+              </div>
+              <div class="a-sports-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+              </div>
+              <div class="a-sports-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+              </div>
+              <div class="a-sports-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+              </div>
+              <div class="a-sports-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+              </div>
+              <div class="a-sports-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+              </div>
+              <div class="a-sports-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+              </div>
+              <div class="a-sports-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+
+  <div class="poster">
+      <div class="poster-body">
+          <div class="showtime-container">
+              <p class="a-programming-text">14:30 - 16:30</p>
+              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+          </div>
+          <a href="sinopsis.php">
+              <div class="thumbnail">
+              </div>
+              <div class="a-sports-rectangle thumbnail-info-title">
+                  <div class="poster-title-margin">
+                      <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+      `;
+      nowSliderClaroSports.append(programClaroSports);
+      nowSliderNuestraVision.append(programNuestraVision);
       createTvSlider(nowSliderCanalClaro);
       createTvSlider(nowSliderConcertChannel);
       createTvSlider(nowSliderClaroCinema);
@@ -731,15 +1152,13 @@ function getPrograms(date, time) {
       /*  PROGRAMACIÓN GENERAL */
 
       /* END PROGRMACIÓN GENERAL*/
+      $(".poster").click(function() {
+        let posterButtonId = $(this)
+          .find(".poster-button")
+          .attr("_id");
+        showSynopsis(posterButtonId);
+      });
     }
-  });
-
-  $(".poster").click(function() {
-    alert("oinhoihoi");
-    let posterButtonId = $(this)
-      .find(".poster-button")
-      .attr("_id");
-    console.log(posterButtonId);
   });
 }
 

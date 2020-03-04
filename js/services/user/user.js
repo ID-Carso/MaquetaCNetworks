@@ -44,6 +44,8 @@ function showNotification() {
       currentDate: currentDate
     };
 
+    console.log(dataUser);
+
     if (minutes == 0 || minutes == 15 || minutes == 30 || minutes == 45) {
       $.ajax({
         type: "POST",

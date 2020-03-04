@@ -209,242 +209,7 @@
                     <div id="nuestra-vision" class="tv-content">
                         <div class="tv-slider" id="tv-vision-slider">
 
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/01-aprende.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">APRENDE</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
 
-                            </div>
-
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/02-dress-code.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">DRESS CODE</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/03-barra-infantil.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">BARRA INFANTIL</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/04-pobre-nino.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">POBRE NIÑO RICO</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/05-caja-pandora.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">LA CAJA DE PANDORA: ALEX AGUINAGA</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/06-el-torito.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">EL TORITO</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/07-la-estatua.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">LA ESTATUA DE CARNE</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/08-los-leones-del-ring.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">LOS LEONES DEL RING</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/09-vidas-extraordinarias.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">VIDAS EXTRAORDINARIAS</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/10-titanes-del-ring.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">TITANES DEL RING</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/12-deportes-en-claro.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">DEPORTES EN CLARO</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="poster">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php">
-                                        <div class="thumbnail">
-                                            <img src="./images/nuestra-vision/carousel/13-santo.jpg" alt="">
-                                        </div>
-                                        <div class="a-vision-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">SANTO CONTRA LA MAFÍA DEL VICIO</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -453,13 +218,13 @@
                 <div id="claro-sports" class="tv-content">
                     <div class="tv-slider" id="tv-sports-slider">
 
-                        <div class="poster">
+                        <!--<div class="poster">
                             <div class="poster-body">
                                 <div class="showtime-container">
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail">
 
                                     </div>
@@ -479,7 +244,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail">
                                     </div>
                                     <div class="a-sports-rectangle thumbnail-info-title">
@@ -498,7 +263,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail">
                                     </div>
                                     <div class="a-sports-rectangle thumbnail-info-title">
@@ -517,7 +282,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail">
                                     </div>
                                     <div class="a-sports-rectangle thumbnail-info-title">
@@ -536,7 +301,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail">
                                     </div>
                                     <div class="a-sports-rectangle thumbnail-info-title">
@@ -555,7 +320,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail">
                                     </div>
                                     <div class="a-sports-rectangle thumbnail-info-title">
@@ -574,7 +339,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail">
                                     </div>
                                     <div class="a-sports-rectangle thumbnail-info-title">
@@ -593,7 +358,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail">
                                     </div>
                                     <div class="a-sports-rectangle thumbnail-info-title">
@@ -612,7 +377,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail">
                                     </div>
                                     <div class="a-sports-rectangle thumbnail-info-title">
@@ -623,7 +388,7 @@
                                 </a>
                             </div>
 
-                        </div>
+                        </div>-->
                     </div>
                 </div>
                 <!--End Claro sports de "Ahora en tv"-->
@@ -661,7 +426,7 @@
                             </div>
                             <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
 
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail-large">
                                     <img src="../images/claro-canal/bbc.jpg" alt="">
 
@@ -686,7 +451,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail-large">
                                     <img src="../images/claro-canal/caja-de-pandora.jpg" alt="">
 
@@ -734,7 +499,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail-large">
                                     <img src="../images/claro-canal/saint-seiya.jpg" alt="">
 
@@ -779,7 +544,7 @@
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
                                 <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail-large">
                                         <img src="../images/claro-canal/bbc.jpg" alt="">
 
@@ -803,7 +568,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img src="./images/posters/heart-outline.svg" class="poster-add" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail-large">
                                         <img src="../images/claro-canal/caja-de-pandora.jpg" alt="">
 
@@ -867,7 +632,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail-large">
                                         <!--<img src="../images/posters/good-doctor.jpeg" alt="">-->
                                     </div>
@@ -910,16 +675,16 @@
                         <a href="claro-canal.php"> <button class="btn-red">VER +</button></a>
                     </div>
                 </div>
-                <div class="section-slider">
+                <div class="section-slider claro-slider-home">
                     <div class="poster">
                         <div class="poster-body">
                             <div class="showtime-container">
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
 
-                            <div class="thumbnail-large">
+
+                            <div class="thumbnail-large" class="text-decoration-none">
                                 <img src="../images/claro-canal/bbc.jpg" alt="">
 
                             </div>
@@ -939,7 +704,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail-large">
                                     <img src="../images/claro-canal/caja-de-pandora.jpg" alt="">
 
@@ -962,7 +727,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail-large">
                                     <img src="../images/claro-canal/indestructibles.jpg" alt="">
 
@@ -983,7 +748,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail-large">
                                     <img src="../images/claro-canal/saint-seiya.jpg" alt="">
 
@@ -1004,14 +769,14 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail-large">
-                                    <!--<img src="./images/posters/stranger-things.jpeg" alt="">-->
+
 
                                 </div>
                                 <div class="a-claro-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">STRANGER THINGS</p>
+                                        <p class="a-poster-text-white">LOREM IPSUM</p>
                                     </div>
                                 </div>
                             </a>
@@ -1025,20 +790,19 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail-large">
-                                    <!--<img src="./images/posters/american-horror.jpeg" alt="">-->
+
 
                                 </div>
                                 <div class="a-claro-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">AMERICAN HORROR STORY</p>
+                                        <p class="a-poster-text-white">LOREM IPSUM</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <!--<img src="./images/posters/greys-anatomy.jpeg" alt="">-->
 
                     <div class="poster">
                         <div class="poster-body">
@@ -1046,14 +810,14 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail-large">
-                                    <!--<img src="./images/posters/american-horror.jpeg" alt="">-->
+
 
                                 </div>
                                 <div class="a-claro-rectangle">
                                     <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">GREY'S ANATOMY</p>
+                                        <p class="a-poster-text-white">LOREM IPSUM</p>
                                     </div>
                                 </div>
                             </a>
@@ -1102,7 +866,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail">
                                     <img src="./images/concert-channel/section-home/billie-eillish.jpg" alt="">
                                 </div>
@@ -1121,7 +885,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail">
                                     <img src="./images/concert-channel/section-home/chica-concert.jpg" alt="">
                                 </div>
@@ -1141,7 +905,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail">
                                     <img src="./images/concert-channel/section-home/ed-sheeran.jpg" alt="">
                                 </div>
@@ -1198,7 +962,7 @@
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
                                 <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail">
                                         <img src="./images/concert-channel/section-home/billie-eillish.jpg" alt="">
                                     </div>
@@ -1214,7 +978,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail">
                                         <img src="./images/concert-channel/section-home/chica-concert.jpg" alt="">
                                     </div>
@@ -1231,7 +995,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail">
                                         <img src="./images/concert-channel/section-home/ed-sheeran.jpg" alt="">
                                     </div>
@@ -1248,7 +1012,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail">
                                         <img src="./images/concert-channel/section-home/queen.jpg" alt="">
                                     </div>
@@ -1265,7 +1029,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail">
                                         <!--<img src="./images/posters/the-weeknd.jpeg" alt="">-->
                                     </div>
@@ -1319,7 +1083,7 @@
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                         </div>
                                         <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
-                                        <a href="sinopsis.php">
+                                        <a href="sinopsis.php" class="text-decoration-none">
                                             <div class="thumbnail">
                                                 <img src="./images/concert-channel/section-home/billie-eillish.jpg" alt="">
                                             </div>
@@ -1361,7 +1125,7 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                         </div>
-                                        <a href="sinopsis.php">
+                                        <a href="sinopsis.php" class="text-decoration-none">
                                             <div class="thumbnail">
                                                 <img src="./images/concert-channel/section-home/ed-sheeran.jpg" alt="">
                                             </div>
@@ -1379,7 +1143,7 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                         </div>
-                                        <a href="sinopsis.php">
+                                        <a href="sinopsis.php" class="text-decoration-none">
                                             <div class="thumbnail">
                                                 <img src="./images/concert-channel/section-home/queen.jpg" alt="">
                                             </div>
@@ -1432,7 +1196,7 @@
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
 
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail">
                                     <img src="./images/claro-cinema/section-home/01-las-imperdibles.jpg" alt="">
                                 </div>
@@ -1451,7 +1215,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail">
                                     <img src="./images/claro-cinema/section-home/02-picardia-mexicana.jpg" alt="">
                                 </div>
@@ -1471,7 +1235,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail">
                                     <img src="./images/claro-cinema/section-home/03-relincha-caballo-rojas.jpg" alt="">
                                 </div>
@@ -1491,7 +1255,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail">
                                     <img src="./images/claro-cinema/section-home/04-sexy-romanticas.jpg" alt="">
                                 </div>
@@ -1533,7 +1297,7 @@
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
                                 <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail">
                                         <img src="./images/claro-cinema/section-home/01-las-imperdibles.jpg" alt="">
                                     </div>
@@ -1552,7 +1316,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail">
                                         <img src="./images/claro-cinema/section-home/02-picardia-mexicana.jpg" alt="">
                                     </div>
@@ -1571,7 +1335,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail">
                                         <img src="./images/claro-cinema/section-home/03-relincha-caballo-rojas.jpg" alt="">
                                     </div>
@@ -1591,7 +1355,7 @@
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail">
                                     <img src="./images/claro-cinema/section-home/04-sexy-romanticas.jpg" alt="">
                                 </div>
@@ -1646,7 +1410,7 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
-                                    <a href="sinopsis.php">
+                                    <a href="sinopsis.php" class="text-decoration-none">
                                         <div class="thumbnail">
                                             <img src="./images/claro-cinema/section-home/01-las-imperdibles.jpg" alt="">
                                         </div>
@@ -1664,7 +1428,7 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
-                                    <a href="sinopsis.php">
+                                    <a href="sinopsis.php" class="text-decoration-none">
                                         <div class="thumbnail">
                                             <img src="./images/claro-cinema/section-home/02-picardia-mexicana.jpg" alt="">
                                         </div>
@@ -1700,7 +1464,7 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
-                                    <a href="sinopsis.php">
+                                    <a href="sinopsis.php" class="text-decoration-none">
                                         <div class="thumbnail">
                                             <img src="./images/claro-cinema/section-home/04-sexy-romanticas.jpg" alt="">
                                         </div>
@@ -1752,7 +1516,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail-large">
                                 </div>
                                 <div class="a-vision-rectangle">
@@ -1791,7 +1555,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail-large">
                                 </div>
                                 <div class="a-vision-rectangle">
@@ -1809,7 +1573,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail-large">
                                 </div>
                                 <div class="a-vision-rectangle">
@@ -1849,7 +1613,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail-large">
                                         <img src="./images/nuestra-vision/section-home/01-liga-femenil.jpg" alt="">
                                     </div>
@@ -1869,7 +1633,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail-large">
                                         <img src="./images/nuestra-vision/section-home/02-pedro-infante.jpg" alt="">
                                     </div>
@@ -1889,7 +1653,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail-large">
                                         <img src="./images/nuestra-vision/section-home/03-el-club-de-teo.jpg" alt="">
                                     </div>
@@ -1909,7 +1673,7 @@
                                     <p class="a-programming-text">14:30 - 16:30</p>
                                     <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
-                                <a href="sinopsis.php">
+                                <a href="sinopsis.php" class="text-decoration-none">
                                     <div class="thumbnail-large">
                                         <img src="./images/nuestra-vision/section-home/04-remasterizados.jpg" alt="">
                                     </div>
@@ -1966,7 +1730,7 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
-                                    <a href="sinopsis.php">
+                                    <a href="sinopsis.php" class="text-decoration-none">
                                         <div class="thumbnail-large">
                                             <img src="./images/nuestra-vision/section-home/01-liga-femenil.jpg" />
                                         </div>
@@ -1985,7 +1749,7 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
-                                    <a href="sinopsis.php">
+                                    <a href="sinopsis.php" class="text-decoration-none">
                                         <div class="thumbnail-large">
                                             <img src="./images/nuestra-vision/section-home/02-pedro-infante.jpg" />
                                         </div>
@@ -2004,7 +1768,7 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
-                                    <a href="sinopsis.php">
+                                    <a href="sinopsis.php" class="text-decoration-none">
                                         <div class="thumbnail-large">
                                             <img src="./images/nuestra-vision/section-home/03-el-club-de-teo.jpg" />
                                         </div>
@@ -2024,7 +1788,7 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
-                                    <a href="sinopsis.php">
+                                    <a href="sinopsis.php" class="text-decoration-none">
                                         <div class="thumbnail-large">
                                             <img src="./images/nuestra-vision/section-home/04-remasterizados.jpg" />
                                         </div>
@@ -2045,7 +1809,7 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
-                                    <a href="sinopsis.php">
+                                    <a href="sinopsis.php" class="text-decoration-none">
                                         <div class="thumbnail-large">
                                         </div>
                                         <div class="a-vision-rectangle">
@@ -2064,7 +1828,7 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
-                                    <a href="sinopsis.php">
+                                    <a href="sinopsis.php" class="text-decoration-none">
                                         <div class="thumbnail-large">
                                         </div>
                                         <div class="a-vision-rectangle">
@@ -2119,7 +1883,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail-large"></div>
                                 <div class="a-sports-rectangle ">
                                     <div class="poster-title-margin">
@@ -2138,7 +1902,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail-large"></div>
                                 <div class="a-sports-rectangle ">
                                     <div class="poster-title-margin">
@@ -2156,7 +1920,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php">
+                            <a href="sinopsis.php" class="text-decoration-none">
                                 <div class="thumbnail-large"></div>
                                 <div class="a-sports-rectangle ">
                                     <div class="poster-title-margin">
@@ -2175,7 +1939,7 @@
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
                         </div>
-                        <a href="sinopsis.php">
+                        <a href="sinopsis.php" class="text-decoration-none">
                             <div class="thumbnail-large"></div>
                             <div class="a-sports-rectangle ">
                                 <div class="poster-title-margin">
@@ -2220,7 +1984,7 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                         </div>
-                                        <a href="sinopsis.php">
+                                        <a href="sinopsis.php" class="text-decoration-none">
                                             <div class="thumbnail-large"></div>
                                             <div class="a-sports-rectangle ">
                                                 <div class="poster-title-margin">
@@ -2239,7 +2003,7 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                         </div>
-                                        <a href="sinopsis.php">
+                                        <a href="sinopsis.php" class="text-decoration-none">
                                             <div class="thumbnail-large"></div>
                                             <div class="a-sports-rectangle ">
                                                 <div class="poster-title-margin">
@@ -2257,7 +2021,7 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                         </div>
-                                        <a href="sinopsis.php">
+                                        <a href="sinopsis.php" class="text-decoration-none">
                                             <div class="thumbnail-large"></div>
                                             <div class="a-sports-rectangle ">
                                                 <div class="poster-title-margin">
@@ -2274,7 +2038,7 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                         </div>
-                                        <a href="sinopsis.php">
+                                        <a href="sinopsis.php" class="text-decoration-none">
                                             <div class="thumbnail-large"></div>
                                             <div class="a-sports-rectangle ">
                                                 <div class="poster-title-margin">
@@ -2331,7 +2095,7 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
-                                    <a href="sinopsis.php">
+                                    <a href="sinopsis.php" class="text-decoration-none">
                                         <div class="thumbnail-large">
                                         </div>
                                         <div class="a-sports-rectangle thumbnail-info-title">
@@ -2350,7 +2114,7 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                         </div>
-                                        <a href="sinopsis.php">
+                                        <a href="sinopsis.php" class="text-decoration-none">
                                             <div class="thumbnail-large">
                                             </div>
 

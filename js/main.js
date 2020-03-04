@@ -106,10 +106,10 @@ $(document).ready(function() {
       favoritesClaroCinema.length == 0)
   ) {
     myFavorites = `
-    <div class="text-center mt-5 pt-md-4 mt-xl-5">
+    <div class="text-center mt-4">
       <img src="./images/mi-lista/favorites.svg" alt="" class="no-favorites-img">
     </div>
-    <div class="no-gutters mt-4 mt-xl-5 pt-xl-2">
+    <div class="no-gutters mt-4">
       <div class="col-12">
           <p class="a-text-warm-grey-bold mb-3 text-center no-favorites-title mb-xl-4">No tienes favoritos guardados todavía</p>
           <p class="a-text-warm-grey-regular text-center no-favorites-subtitle">Explora y descubre más</p>
@@ -1764,6 +1764,7 @@ $(document).ready(function() {
     $("#" + activeNav).fadeIn();
 
     tvSlider.slick("refresh");
+
     programacion_slider.slick("refresh");
     addFavorites();
     recreateClickCalendar();
@@ -1953,6 +1954,75 @@ $(".programing-item").click(function() {
 
   $(".month").text(`${getMonthAndYear(month)}`);
 });
+
+function createTvSlider() {
+  var tv_slider = $(".tv-slider").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: true,
+    centerMode: false,
+    arrows: true,
+    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          centerMode: true,
+          infinite: true,
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
+        }
+      },
+      {
+        breakpoint: 1900,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
+        }
+      }
+    ]
+  });
+}
 
 function recreateClickCalendar() {
   $("ul.claro-calendar .claro-item").click(function() {

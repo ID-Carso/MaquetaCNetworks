@@ -155,7 +155,8 @@
             </div>
         </nav>
     </header>
-
+    <div class="alert-user">
+    </div>
     <div class="lista-content">
         <img src="images/registro/group-3.svg" class="image-list-blue">
         <img src="images/registro/group-37.svg" class="image-list-points">

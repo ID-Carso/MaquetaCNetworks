@@ -132,10 +132,10 @@ function validateToken(token) {
       console.log("succes", result);
       if (result.data != null) {
         localStorage.setItem("session", 1);
-        localStorage.setItem("id", result.data.id);
-        localStorage.setItem("name", result.data.name);
-        localStorage.setItem("avatar", result.data.avatar);
-        let name = result.data.name;
+        localStorage.setItem("id", result.data[0].id);
+        localStorage.setItem("name", result.data[0].name);
+        localStorage.setItem("avatar", result.data[0].avatar);
+        let name = result.data[0].name;
         let nameUser = $("#cuenta-confirmada-name-user");
         nameUser.html(name);
       }

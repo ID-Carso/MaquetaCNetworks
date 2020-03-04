@@ -123,7 +123,7 @@
                 <img src="http://www.claronetworks.openofficedospuntocero.info/API_images/claro-logo.png" class="logo-mail">
             </div>
             <div class="pb-4">
-            <p class="a-correo-title a-text-black"><span class="text-blue">¡Hola, </span> {{$info['name']}}!</p>
+            <p class="a-correo-title  text-blue"><span class="a-text-black">¡Hola, </span> {{$info['name']}}!</p>
                 <p class="a-correo-title a-text-black">Claro Networks te da la bienvenida</p>
             </div>
 
@@ -133,7 +133,6 @@
             </p>
             <p class="a-text-black-regular"> Tus datos de registro son los siguientes:</p>
             <p>Correo electrónico: <span class="a-text-black-regular">{{$info['email']}}</span></p>
-            
             <p>Nombre de usuario: <span class="a-text-black-regular">{{$info['name']}}</span></p>
 
             <p class="a-text-black-regular">Por favor, confirma tu cuenta de Claro Networks dando click en el siguiente

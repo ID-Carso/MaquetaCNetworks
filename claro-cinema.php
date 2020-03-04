@@ -806,6 +806,11 @@
   <?php
   include './views/partials/modal-favorites.php'
   ?>
+
+  <!--Modal de programa al añadir a favoritos-->
+  <?php
+  include './views/partials/modal-program.php'
+  ?>
 </body>
 
 </html>
