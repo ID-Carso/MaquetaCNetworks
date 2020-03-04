@@ -150,7 +150,7 @@ function getPrograms(date, time) {
                 <div class="poster">
                   <div class="poster-body">
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                      <a href="sinopsis.php" class="text-decoration-none">
+                      
                           <div class="thumbnail">
                               <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
                           </div>
@@ -159,7 +159,7 @@ function getPrograms(date, time) {
                                   <p class="a-poster-text-white">${program.program_title}</p>
                               </div>
                           </div>
-                      </a>
+                     
                   </div>
               </div>
                 `;
@@ -168,7 +168,7 @@ function getPrograms(date, time) {
                 <div class="poster" >
                   <div class="poster-body">
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                      <a href="sinopsis.php" class="text-decoration-none">
+                      
                           <div class="thumbnail">
                               <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
                           </div>
@@ -177,7 +177,7 @@ function getPrograms(date, time) {
                                   <p class="a-poster-text-white">${program.program_title}</p>
                               </div>
                           </div>
-                      </a>
+                      
                   </div>
               </div>
                 `;
@@ -192,7 +192,7 @@ function getPrograms(date, time) {
                           <button type="button" class="poster-button remove-program" _id="${program.chapter_id}"><img src="./images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
                       </div>
                       
-                      <a href="sinopsis.php" class="text-decoration-none">
+              
                           <div class="thumbnail">
                               <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
                           </div>
@@ -201,7 +201,7 @@ function getPrograms(date, time) {
                                   <p class="a-poster-text-white">${program.program_title}</p>
                               </div>
                           </div>
-                      </a>
+                     
       
                   </div>
               </div>
@@ -215,7 +215,7 @@ function getPrograms(date, time) {
                           <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                       </div>
                       
-                      <a href="sinopsis.php" class="text-decoration-none">
+                     
                           <div class="thumbnail">
                               <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
                           </div>
@@ -224,7 +224,7 @@ function getPrograms(date, time) {
                                   <p class="a-poster-text-white">${program.program_title}</p>
                               </div>
                           </div>
-                      </a>
+                  
       
                   </div>
               </div>
@@ -733,6 +733,26 @@ function getPrograms(date, time) {
       /* END PROGRMACIÓN GENERAL*/
     }
   });
+
+  $(".poster").click(function() {
+    alert("oinhoihoi");
+    let posterButtonId = $(this)
+      .find(".poster-button")
+      .attr("_id");
+    console.log(posterButtonId);
+  });
 }
 
-export { getPrograms };
+function showSynopsis(id) {
+  $.ajax({
+    type: "POST",
+    data: id,
+    url: "../../adapters/program.php",
+    success: function(result) {
+      let json = JSON.parse(result);
+      console.log(json);
+    }
+  });
+}
+
+export { getPrograms, showSynopsis };

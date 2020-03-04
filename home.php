@@ -918,19 +918,19 @@
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
                             <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
-                            <a href="sinopsis.php">
-                                <div class="thumbnail-large">
-                                    <img src="../images/claro-canal/bbc.jpg" alt="">
+
+                            <div class="thumbnail-large">
+                                <img src="../images/claro-canal/bbc.jpg" alt="">
+
+                            </div>
+                            <div class="a-claro-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">BBC</p>
 
                                 </div>
-                                <div class="a-claro-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">BBC</p>
 
-                                    </div>
+                            </div>
 
-                                </div>
-                            </a>
                         </div>
                     </div>
                     <div class="poster">

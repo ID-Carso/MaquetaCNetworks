@@ -23,7 +23,7 @@ import { showNotification } from "./services/user/user.js";
 import { updateAlertProgram } from "./services/user/user.js";
 
 /* Program */
-import { getPrograms } from "./services/Program.js";
+import { getPrograms, showSynopsis } from "./services/Program.js";
 
 /* Date */
 import { getMonthAndYear } from "./date/date.js";
@@ -80,9 +80,9 @@ if (day && month && year) {
   $(".SeleccionAñoLista").text(year);
 }
 
-document.addEventListener("DOMContentLoaded", function() {});
-
 $(document).ready(function() {
+  /* Sinópsis*/
+
   /* Lista de favoritos del usuario*/
 
   let favoritesCanalClaro = JSON.parse(
@@ -123,7 +123,6 @@ $(document).ready(function() {
       if (favoritesCanalClaro.length != 0) {
         let programsCanalClaroList = "";
         favoritesCanalClaro.forEach(favorite => {
-          console.log(favorite);
           if (favorite.active == 0) {
             programsCanalClaroList += `
             <div class="list-item-container" >

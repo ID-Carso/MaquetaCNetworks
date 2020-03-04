@@ -633,6 +633,10 @@
     padding: 0.75rem !important;
   }
 
+  .modal-body-program {
+    padding-bottom: 21px;
+  }
+
   /*End General - Moleculas*/
   /*============================*/
 
@@ -799,7 +803,7 @@
 
   .modal-program-content {
     margin: auto;
-    max-width: 500px !important;
+    max-width: 599px !important;
   }
 
   /*End General - Organismos*/
@@ -1527,6 +1531,14 @@
     margin-bottom: 14%;
   }
 
+  .modal-program-title {
+    font-size: 30px;
+  }
+
+  .modal-program-text {
+    font-size: 23px;
+  }
+
   /*End Generales - átomos*/
   /*-----------------------------*/
 
@@ -2190,7 +2202,7 @@
 
   .modal-program-content {
     margin: auto;
-    max-width: 500px !important;
+    max-width: 599px !important;
   }
 
   /*End Generales - organismos*/
@@ -2976,6 +2988,14 @@
     margin-top: 14%;
     margin-bottom: 14%;
   }
+
+  .modal-program-title {
+    font-size: 40px;
+  }
+
+  .modal-program-text {
+    font-size: 29px;
+  }
   /*End Generales - átomos*/
   /*-----------------------------*/
 
@@ -3488,6 +3508,11 @@
     padding: 0.75rem !important;
   }
 
+  .modal-program-content {
+    margin: auto;
+    max-width: 737px !important;
+  }
+
   /*End General - Moleculas*/
   /*-----------------------------*/
 
@@ -3690,6 +3715,11 @@
 
   .alert-user {
     max-width: 400px;
+  }
+
+  .modal-program-content {
+    margin: auto;
+    max-width: 599px !important;
   }
   /*End General - Organismos*/
   /*-----------------------------*/
@@ -4494,6 +4524,14 @@
     margin-top: 14%;
     margin-bottom: 14%;
   }
+
+  .modal-program-title {
+    font-size: 50px;
+  }
+
+  .modal-program-text {
+    font-size: 35px;
+  }
   /*End General - Átomos*/
   /*-----------------------------*/
 
@@ -4902,6 +4940,11 @@
     padding: 0.75rem !important;
   }
 
+  .modal-program-content {
+    margin: auto;
+    max-width: 928px !important;
+  }
+
   /*End General - Moleculas*/
   /*-----------------------------*/
 
@@ -5107,6 +5150,10 @@
 
   .aviso-header {
     padding: 0;
+  }
+  .modal-program-content {
+    margin: auto;
+    max-width: 599px !important;
   }
 
   /*End General - Organismos*/
