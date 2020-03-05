@@ -481,7 +481,7 @@ function updateAlerts(configJson) {
 }
 
 function addFavorites() {
-  $(".poster-button, .programing-button").click(function() {
+  $(".poster-button, .programing-button, .synopsis-add").click(function() {
     let session = localStorage.getItem("session");
     if (session != 1) {
       let modal = $(".modal-favorites");

@@ -1,11 +1,18 @@
 import { addFavorites } from "./user/user.js";
 
 function createClickThumbnails() {
-  $(".poster").click(function() {
+  $(".poster, .poster-live").click(function() {
+    console.log("POjpoj");
     let posterButtonId = $(this)
       .find(".poster-button")
       .attr("_id");
-    showSynopsis(posterButtonId);
+    let posterLiveId = $(this).attr("_id");
+    console.log(posterButtonId);
+    if (posterButtonId) {
+      showSynopsis(posterButtonId);
+    } else {
+      showSynopsis(posterLiveId);
+    }
   });
 }
 
@@ -157,7 +164,7 @@ function getPrograms(date, time) {
         if (index == 0) {
           if (arrayCanalClaro.includes(program.chapter_id)) {
             programCanalClaro = `
-                <div class="poster">
+                <div class="poster-live" _id="${program.chapter_id}">
                   <div class="poster-body">
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                       <a href="sinopsis.php" class="text-decoration-none">
@@ -175,7 +182,7 @@ function getPrograms(date, time) {
                 `;
           } else {
             programCanalClaro = `
-                <div class="poster" >
+                <div class="poster-live" _id="${program.chapter_id}" >
                   <div class="poster-body">
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                       <a href="sinopsis.php" class="text-decoration-none">
@@ -333,7 +340,7 @@ function getPrograms(date, time) {
         if (index == 0) {
           if (arrayConcertChannel.includes(program.chapter_id)) {
             programConcertChannel = `
-              <div class="poster" >
+              <div class="poster-live" _id="${program.chapter_id}">
               <div class="poster-body">
                   <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                   <a href="sinopsis.php" class="text-decoration-none">
@@ -351,7 +358,7 @@ function getPrograms(date, time) {
               `;
           } else {
             programConcertChannel = `
-            <div class="poster" >
+            <div class="poster-live" _id="${program.chapter_id}">
             <div class="poster-body">
                 <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                 <a href="sinopsis.php" class="text-decoration-none">
@@ -506,7 +513,7 @@ function getPrograms(date, time) {
         if (index == 0) {
           if (arrayClaroCinema.includes(program.chapter_id)) {
             programClaroCinema = `
-                <div class="poster" >
+                <div class="poster-live" _id="${program.chapter_id}">
                   <div class="poster-body">
 
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
@@ -526,7 +533,7 @@ function getPrograms(date, time) {
                 `;
           } else {
             programClaroCinema = `
-                <div class="poster" >
+                <div class="poster-live" _id="${program.chapter_id}">
                   <div class="poster-body">
 
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
@@ -1152,26 +1159,31 @@ function getPrograms(date, time) {
       /*  PROGRAMACIÓN GENERAL */
 
       /* END PROGRMACIÓN GENERAL*/
-      $(".poster").click(function() {
-        let posterButtonId = $(this)
-          .find(".poster-button")
-          .attr("_id");
-        showSynopsis(posterButtonId);
-      });
+      createClickThumbnails();
     }
   });
+  createClickThumbnails();
 }
 
 function showSynopsis(id) {
+  console.log(id);
+  let dataUser = {
+    function: "showSynopsis",
+    chapter_id: id
+  };
   $.ajax({
     type: "POST",
-    data: id,
+    data: dataUser,
     url: "../../adapters/program.php",
     success: function(result) {
+      console.log(result);
       let json = JSON.parse(result);
       console.log(json);
+      if (json.code == 200) {
+        localStorage.setItem("synopsis", JSON.stringify(json.data));
+      }
     }
   });
 }
 
-export { getPrograms, showSynopsis };
+export { getPrograms, createClickThumbnails };

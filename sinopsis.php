@@ -110,8 +110,8 @@
             <div class="no-gutters">
                 <div class="col-11 col-lg-10 mx-auto">
                     <div class="synopsis-buttons-mobile-container">
-                        <button class="synopsis-button synopsis-add">
-                            <p class="mb-0 synopsis-add-text">Añadir</p>
+                        <button class="button-none synopsis-add add-favorites">
+                            <img src="./images/posters/heart-outline.svg" alt="" class="synopsis-heart">
                         </button>
                         <a href="sinopsis.php#dropdown-country"> <button class="synopsis-button">
                                 <div class="d-flex align-items-center">

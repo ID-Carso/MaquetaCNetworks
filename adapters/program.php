@@ -12,7 +12,7 @@ class Program
 
     function showSynopsis($id)
     {
-        callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/program/actual_programing/" . $id, null);
+        callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/program/sinopsis/" . $id, null);
     }
 }
 
@@ -32,7 +32,7 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
 
         case 'showSynopsis':
 
-            $id = $_POST['program_id'];
+            $id = $_POST['chapter_id'];
             $program = new Program();
             echo ($program->showSynopsis($id));
             break;

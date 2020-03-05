@@ -23,7 +23,7 @@ import { showNotification } from "./services/user/user.js";
 import { updateAlertProgram } from "./services/user/user.js";
 
 /* Program */
-import { getPrograms, showSynopsis } from "./services/Program.js";
+import { getPrograms, createClickThumbnails } from "./services/Program.js";
 
 /* Date */
 import { getMonthAndYear } from "./date/date.js";
@@ -82,7 +82,14 @@ if (day && month && year) {
 
 $(document).ready(function() {
   /* Sinópsis*/
+  createClickThumbnails();
+  let programSynopsis = JSON.parse(localStorage.getItem("synopsis"));
+  if (programSynopsis) {
+    $(".synopsis-title").text(programSynopsis.title);
+    $(".synopsis-add").attr("_id", programSynopsis.chapter_id);
+  }
 
+  /*End Sinópsis */
   /* Lista de favoritos del usuario*/
 
   let favoritesCanalClaro = JSON.parse(
@@ -1768,6 +1775,7 @@ $(document).ready(function() {
     programacion_slider.slick("refresh");
     addFavorites();
     recreateClickCalendar();
+    createClickThumbnails();
   });
 
   $("ul.lista-avatar li").click(function() {
