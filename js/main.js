@@ -31,6 +31,9 @@ import { getMonthAndYear } from "./date/date.js";
 /* Slider */
 import Slider from "./UI/Slider.js";
 
+/* Section Metakeys*/
+import { getMetaKeys } from "./services/Section.js";
+
 var programacion_slider;
 var tvConcertSlider;
 let url = location.href;
@@ -81,7 +84,13 @@ if (day && month && year) {
 }
 
 $(document).ready(function() {
+  /* Metakeys */
+  getMetaKeys();
+
+  /*End Metakeys */
+
   /* Sinópsis*/
+
   createClickThumbnails();
   let programSynopsis = JSON.parse(localStorage.getItem("synopsis"));
   if (programSynopsis) {

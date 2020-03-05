@@ -6,7 +6,7 @@ class Section
 {
     function getMetakeys()
     {
-        callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/mail/", null);
+        callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/section/home", null);
     }
 }
 
@@ -20,7 +20,6 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
 
             $section = new Section();
             echo ($section->getMetakeys());
-
             break;
     }
 }
