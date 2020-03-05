@@ -134,7 +134,7 @@
                         </div>
                         <div class="col-md-7 col-lg-6 mx-sm-auto mx-md-auto synopsis-description-container">
                             <div>
-                                <h1 class="synopsis-title">Duis aute irure </h1>
+                                <h1 class="synopsis-title"></h1>
                                 <p class="synopsis-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                     eiusmod
                                     tempor incididunt
@@ -154,8 +154,8 @@
                             <div class="no-gutters">
 
                                 <div class="synopsis-buttons-tablet-container col-md-10 col-xl-12">
-                                    <button class="synopsis-button synopsis-add">
-                                        <p class="mb-0 synopsis-add-text">Añadir</p>
+                                    <button class="button-none synopsis-add add-favorites">
+                                        <img src="./images/posters/heart-outline.svg" alt="" class="synopsis-heart">
                                     </button>
                                     <a href="sinopsis.php#dropdown-country"><button class="synopsis-button">
                                             <div class="d-flex align-items-center">

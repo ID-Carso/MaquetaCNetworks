@@ -11,7 +11,7 @@
                     <img src="" alt="" class="modal-image-program mr-3">
                     <div>
                         <p class="text-regular modal-program-text mb-0"><span id="modal-username-program"></span></p>
-                        <p class="text-regular modal-program-text pb-0">Agragaste a tus favoritos<span class="text-semibold" id="modal-name-program"></span></p>
+                        <p class="text-regular modal-program-text pb-0">Agragaste a tus favoritos<br><span class="text-semibold" id="modal-name-program"></span></p>
                     </div>
 
                 </div>

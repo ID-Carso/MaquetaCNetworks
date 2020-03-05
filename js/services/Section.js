@@ -1,3 +1,5 @@
+import Section from "../UI/Section.js";
+
 function getMetaKeys() {
   let data = {
     function: "getMetakeys"
@@ -7,8 +9,10 @@ function getMetaKeys() {
     data: data,
     url: "../../adapters/section.php",
     success: function(result) {
-      console.log(result);
       let json = JSON.parse(result);
+
+      let sectionUI = new Section();
+      sectionUI.renderHome(json);
     }
   });
 }

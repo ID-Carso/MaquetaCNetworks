@@ -1,5 +1,11 @@
 export default class Section {
   renderHome(json) {
+    console.log(json);
+    /* Header Home*/
+    /*let titleHeader = `<span class="header-span">${json.data.block_1_title} </span>${json.data.block_1_subtitle}`;
+    $(".header-h1").html(titleHeader);*/
+    /* End Header */
+
     /*Slider Canal Claro Home */
     let programLarge = `
     <div class="poster">

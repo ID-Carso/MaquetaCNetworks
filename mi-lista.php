@@ -100,7 +100,7 @@
                 <div class="claro-logo">
                     <img class="menu-responsive-tablet" src="./images/home/responsive-menu.svg" alt="" />
 
-                    <img class="logo" src="./images/alertas/claro-networks.svg" alt="" />
+                    <a href="home.php"><img class="logo" src="./images/alertas/claro-networks.svg" alt="" /></a>
                 </div>
 
                 <div class="login">

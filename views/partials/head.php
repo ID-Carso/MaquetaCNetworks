@@ -4,6 +4,8 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="preload" href="./js/lib/jquery-3.4.1.min.js" as="script">
+<link rel="preload" href="./js/main.js" as="script">
 <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="./fonts/Montserrat-Black/Montserrat-Black.woff2">
 <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="./fonts/Montserrat-Bold/Montserrat-Bold.woff2">
 <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="./fonts/Montserrat-Light/Montserrat-Light.woff2">

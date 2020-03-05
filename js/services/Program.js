@@ -158,6 +158,7 @@ function getPrograms(date, time) {
       destroySlider(nowSliderConcertChannel);
       destroySlider(nowSliderClaroCinema);
       destroySlider(nowSliderNuestraVision);
+      destroySlider(nowSliderClaroSports);
 
       programingCanalClaro.forEach((program, index) => {
         let programCanalClaro;

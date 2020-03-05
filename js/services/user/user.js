@@ -44,8 +44,6 @@ function showNotification() {
       currentDate: currentDate
     };
 
-    console.log(dataUser);
-
     if (minutes == 0 || minutes == 15 || minutes == 30 || minutes == 45) {
       $.ajax({
         type: "POST",
@@ -53,7 +51,7 @@ function showNotification() {
         url: "../../adapters/user.php",
         success: function(result) {
           let json = JSON.parse(result);
-          console.log(json);
+
           if (json.code == 200) {
             let name = localStorage.getItem("name");
             let length = json.data.length;
@@ -531,7 +529,8 @@ function addFavorites() {
               let nameProgram = `${json.data.last_added.program_title} -${json.data.last_added.chapter_title}`;
               console.log(nameProgram);
               $("#modal-username-program").text(`${nameUser}:`);
-
+              $("#modal-name-program").text(nameProgram);
+              $(".modal-image-program").attr("src", json.data.last_added.image);
               $(".modal-program").modal("show");
 
               sections.forEach(section => {
@@ -662,7 +661,7 @@ function removeFavorites(user_id, program_id, removeButton, itemList) {
 
 function updateAlertProgram(user_id, program_id, active) {
   let dataUser;
-  console.log(active);
+
   if (active == true) {
     dataUser = {
       function: "enableNotification",
@@ -676,6 +675,8 @@ function updateAlertProgram(user_id, program_id, active) {
       chapter_id: program_id
     };
   }
+
+  console.log(dataUser);
 
   $.ajax({
     type: "POST",

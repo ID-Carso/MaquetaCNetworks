@@ -92,6 +92,11 @@
         .a-password-link {
   color: #069cb0;
 }
+
+.text-blue{
+        color: #0097a9;
+        font-weight: bold;
+    }
             </style>
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
@@ -121,7 +126,7 @@
                 <div class="m-btn">
                     <a href="http://www.claronetworks.openofficedospuntocero.info/verifyPassword.html?{{$info['token']}}"><button class="form-button-primary a-text-white-bold">Reestablecer Contraseña</button></a>
                 </div>
-            <p class="a-text-black-regular">Tu nombre de usuario es: {{$info['name']}}</p>
+            <p class="a-text-black-regular">Tu nombre de usuario es: <span class="a-text-black">{{$info['name']}}</span></p>
             
 
             <p class="a-text-black-regular">Si no solicitaste un restablecimiento de contraseña, puedes simplemente

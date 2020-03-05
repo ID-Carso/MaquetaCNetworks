@@ -2622,6 +2622,16 @@ h6 {
           transform: translate(15%, -30%);
 }
 
+.synopsis-heart {
+  width: 100%;
+  max-width: 40px;
+}
+
+.modal-image-program {
+  width: 100%;
+  max-width: 187px;
+}
+
 .hr1 {
   display: none;
 }
@@ -8180,10 +8190,6 @@ input[type="radio"]:checked + .mujer-estilo {
   .modal-favorites-footer {
     padding: 0.75rem !important;
   }
-  .modal-program-content {
-    margin: auto;
-    max-width: 737px !important;
-  }
   /*End General - Moleculas*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -8350,7 +8356,7 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .modal-program-content {
     margin: auto;
-    max-width: 599px !important;
+    max-width: 737px !important;
   }
   /*End General - Organismos*/
   /*-----------------------------*/

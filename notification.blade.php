@@ -93,6 +93,11 @@
     .m-btn{
         padding-left: 20%;
     }
+
+    .text-blue{
+        color: #0097a9;
+        font-weight: bold;
+    }
         </style>
     
         <meta name="viewport"

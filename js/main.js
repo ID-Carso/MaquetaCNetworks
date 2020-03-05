@@ -114,12 +114,9 @@ $(document).ready(function() {
   let listFavorites = $(".mi-lista-container");
   let myFavorites;
   if (
-    (!favoritesCanalClaro &&
-      !favoritesConcertChannel &&
-      !favoritesClaroCinema) ||
-    (favoritesCanalClaro.length == 0 &&
-      favoritesConcertChannel.length == 0 &&
-      favoritesClaroCinema.length == 0)
+    !favoritesCanalClaro &&
+    !favoritesConcertChannel &&
+    !favoritesClaroCinema
   ) {
     myFavorites = `
     <div class="text-center mt-4">
@@ -800,7 +797,6 @@ $(document).ready(function() {
         .find(".button-none")
         .attr("_id");
       let user_id = localStorage.getItem("id");
-
       updateAlertProgram(user_id, program_id, alert);
     }
   });
@@ -1127,7 +1123,7 @@ $(document).ready(function() {
     signOut();
   });
 
-  $(".terms-conditions-button, .arrow-back, .name_paises").click(function() {
+  $(".terms-conditions-button, .arrow-back").click(function() {
     window.history.back();
   });
 
