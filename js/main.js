@@ -93,11 +93,58 @@ $(document).ready(function() {
 
   createClickThumbnails();
   let programSynopsis = JSON.parse(localStorage.getItem("synopsis"));
+  let synopsisButtonFavorite = $(".synopsis-add");
+
+  let favoritesClaroCanalSynopsis = JSON.parse(
+    localStorage.getItem("favoritesCanalClaro")
+  );
+  let favoritesConcertChannelSynopsis = JSON.parse(
+    localStorage.getItem("favoritesConcertChannel")
+  );
+  let favoritesClaroCinemaSynopsis = JSON.parse(
+    localStorage.getItem("favoritesClaroCinema")
+  );
   if (programSynopsis) {
     $(".synopsis-title").text(programSynopsis.title);
-    $(".synopsis-add").attr("_id", programSynopsis.chapter_id);
+    synopsisButtonFavorite.attr("_id", programSynopsis.chapter_id);
   }
 
+  let synopsisIdChapter = $(".synopsis-add").attr("_id");
+
+  let arrayFavoritesId = [];
+  if (localStorage.getItem("favoritesCanalClaro")) {
+    let favoritesCanalClaroLength = favoritesClaroCanalSynopsis.length;
+    for (let i = 0; i < favoritesCanalClaroLength; i++) {
+      let favoriteId = favoritesClaroCanalSynopsis[i].chapter_id;
+      arrayFavoritesId.push(favoriteId);
+    }
+  }
+
+  if (localStorage.getItem("favoritesConcertChannel")) {
+    let favoritesCanalClaroLength = favoritesConcertChannelSynopsis.length;
+    for (let i = 0; i < favoritesCanalClaroLength; i++) {
+      let favoriteId = favoritesConcertChannelSynopsis[i].chapter_id;
+      arrayFavoritesId.push(favoriteId);
+    }
+  }
+
+  if (localStorage.getItem("favoritesClaroCinema")) {
+    let favoritesCanalClaroLength = favoritesClaroCinemaSynopsis.length;
+    for (let i = 0; i < favoritesCanalClaroLength; i++) {
+      let favoriteId = favoritesClaroCinemaSynopsis[i].chapter_id;
+      arrayFavoritesId.push(favoriteId);
+    }
+  }
+
+  if (arrayFavoritesId.includes(parseInt(synopsisIdChapter))) {
+    synopsisButtonFavorite
+      .children(".synopsis-heart")
+      .attr("src", "./images/posters/heart-icon-white.svg");
+  } else {
+    synopsisButtonFavorite
+      .children(".synopsis-heart")
+      .attr("src", "./images/posters/heart-outline.svg");
+  }
   /*End Sinópsis */
   /* Lista de favoritos del usuario*/
 

@@ -2623,13 +2623,12 @@ h6 {
 }
 
 .synopsis-heart {
-  width: 100%;
-  max-width: 40px;
+  width: 40px;
 }
 
 .modal-image-program {
   width: 100%;
-  max-width: 187px;
+  max-width: 90px;
 }
 
 .hr1 {
@@ -5521,6 +5520,10 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .modal-program-text {
     font-size: 21px;
+  }
+  .modal-image-program {
+    width: 100%;
+    max-width: 90px;
   }
   /*End General - Átomos*/
   /*============================*/

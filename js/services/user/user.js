@@ -492,6 +492,7 @@ function addFavorites() {
         return true;
       } else if ($(this).hasClass("add-favorites")) {
         let heartIcon = $(this).children(".poster-add");
+        let heartIconSynopsis = $(this).children(".synopsis-heart");
         let heartIconGray = $(this).find("path");
         let addButton = $(this);
         let buttonFavorite = $(this);
@@ -525,8 +526,15 @@ function addFavorites() {
                 heartIconGray.removeClass("heart-gray");
               }
 
+              if (heartIconSynopsis) {
+                heartIconSynopsis.attr(
+                  "src",
+                  "./images/posters/heart-icon-white.svg"
+                );
+              }
+
               let nameUser = localStorage.getItem("name");
-              let nameProgram = `${json.data.last_added.program_title} -${json.data.last_added.chapter_title}`;
+              let nameProgram = `${json.data.last_added.program_title}`;
               console.log(nameProgram);
               $("#modal-username-program").text(`${nameUser}:`);
               $("#modal-name-program").text(nameProgram);
@@ -577,6 +585,7 @@ function removeFavorites(user_id, program_id, removeButton, itemList) {
       let json = JSON.parse(result);
       console.log(json);
       let sections = json.data;
+
       if (itemList) {
         itemList.remove();
       }
@@ -676,8 +685,6 @@ function updateAlertProgram(user_id, program_id, active) {
     };
   }
 
-  console.log(dataUser);
-
   $.ajax({
     type: "POST",
     data: dataUser,
@@ -687,6 +694,7 @@ function updateAlertProgram(user_id, program_id, active) {
       console.log(json);
       if (json.code == 200) {
         let sections = json.data;
+
         sections.forEach(section => {
           if (section.id_section == 1) {
             localStorage.setItem(

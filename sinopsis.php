@@ -155,7 +155,7 @@
 
                                 <div class="synopsis-buttons-tablet-container col-md-10 col-xl-12">
                                     <button class="button-none synopsis-add add-favorites">
-                                        <img src="./images/posters/heart-outline.svg" alt="" class="synopsis-heart">
+                                        <img src="" alt="" class="synopsis-heart">
                                     </button>
                                     <a href="sinopsis.php#dropdown-country"><button class="synopsis-button">
                                             <div class="d-flex align-items-center">

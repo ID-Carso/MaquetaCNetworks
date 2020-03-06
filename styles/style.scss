@@ -192,6 +192,12 @@
   .modal-program-text {
     font-size: 21px;
   }
+
+  .modal-image-program {
+    width: 100%;
+    max-width: 90px;
+  }
+
   /*End General - Átomos*/
   /*============================*/
 
@@ -5146,6 +5152,7 @@
   .aviso-header {
     padding: 0;
   }
+
   .modal-program-content {
     margin: auto;
     max-width: 599px !important;
