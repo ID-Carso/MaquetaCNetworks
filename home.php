@@ -80,7 +80,7 @@
             </div>
             <div class="circle-video">
                 <video preload="yes" playsinline autoplay muted loop class="home-video">
-                    <source src="./video/video.mp4" type="video/mp4" />
+                    <source src="./video/video.mp4" type="video/mp4" class="source-video" />
                 </video>
             </div>
 
@@ -153,7 +153,7 @@
             </div>
         </header>
         <section class="o-tv-section margin-ahora-tv">
-            <h2 class="title-tv">AHORA <span class="header-span">AL AIRE </span><span class="header-point">•</span></h2>
+            <h2 class="title-tv"></h2>
         </section>
         <section>
             <div class="o-tv-section">
@@ -162,27 +162,27 @@
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
                             <li rel="claro-canal" class="active-navItem nav-li">
-                                <img class="claro-nav-image" src="./images/home/tv-1.svg" alt="" />
+                                <img class="claro-nav-image" src="" alt="" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
                             <li rel="concert-channel" class="nav-li">
-                                <img class="nav-image" src="./images/home/tv-2.svg" alt="" />
+                                <img class="nav-image concert-nav-image" src="" alt="" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
                             <li rel="claro-cinema" class="nav-li">
-                                <img class="nav-image" src="./images/home/tv-3.svg" alt="" />
+                                <img class="nav-image cinema-nav-image" src="" alt="" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
                             <li rel="nuestra-vision" class="nav-li">
-                                <img class="nav-image" src="./images/home/tv-4.svg" alt="" />
+                                <img class="nav-image nv-nav-image" src="" alt="" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
                             <li rel="claro-sports" class="nav-li">
-                                <img class="nav-image" src="./images/home/tv-5.svg" alt="" />
+                                <img class="nav-image sports-nav-image" src="" alt="" />
                             </li>
                         </div>
 
@@ -414,7 +414,7 @@
                     </h2>
                 </div>
                 <div class="text-center">
-                    <a href="claro-canal.php"> <button class="btn-red">VER +</button></a>
+                    <a href="claro-canal.php"> <button class="btn-red btn-canal-claro-home">VER +</button></a>
                 </div>
                 <div class="section-slider claro-slider-home">å
                 </div>
@@ -434,7 +434,7 @@
                         </h2>
                     </div>
                     <div class="m-see-more">
-                        <a href="claro-canal.php"><button class="btn-red">VER +</button></a>
+                        <a href="claro-canal.php"><button class="btn-red btn-canal-claro-home">VER +</button></a>
                     </div>
                 </div>
                 <div class="canal-videos-container">
@@ -467,7 +467,7 @@
                         </h2>
                     </div>
                     <div class="m-see-more">
-                        <a href="claro-canal.php"> <button class="btn-red">VER +</button></a>
+                        <a href="claro-canal.php"> <button class="btn-red btn-canal-claro-home"></button></a>
                     </div>
                 </div>
                 <div class="section-slider claro-slider-home">

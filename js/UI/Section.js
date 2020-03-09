@@ -7,10 +7,21 @@ export default class Section {
     /* Header Home*/
     let titleHeader = `<span class="header-span">${json.data.block_1_title} </span>${json.data.block_1_subtitle}`;
     $(".header-h1").html(titleHeader);
+
+    $(".source-video").attr("src", json.data.block_1_video_name);
+    let titleTv = `${json.data.block_2_title1} <span class="header-span">${json.data.block_2_title2}</span><span class="header-point">•</span>`;
+    $(".title-tv").html(titleTv);
+
+    $(".claro-nav-image").attr("src", json.data.block_2_channel1_icon);
+    $(".concert-nav-image").attr("src", json.data.block_2_channel2_icon);
+    $(".cinema-nav-image").attr("src", json.data.block_2_channel3_icon);
+    $(".nv-nav-image").attr("src", json.data.block_2_channel4_icon);
+    $(".sports-nav-image").attr("src", json.data.block_2_channel5_icon);
     /* End Header */
 
     /*Canal Claro Home */
     $(".a-claro-channel-title").text(json.data.block_3_title);
+    $(".btn-canal-claro-home").text(json.data.block_3_button1);
     /* Slider Canal Claro Home */
     let favoritesClaroCanalSynopsis = JSON.parse(
       localStorage.getItem("favoritesCanalClaro")
