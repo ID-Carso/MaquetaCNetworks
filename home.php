@@ -407,7 +407,7 @@
             <div class="claro-canal-mobile">
                 <div class="m-home-titles">
                     <a href="claro-canal.php" class="home-title-link">
-                        <h1 class="a-claro-channel-title">CANAL CLARO</h1>
+                        <h1 class="a-claro-channel-title"></h1>
                     </a>
                     <h2 class="a-subtitle">
                         LO MEJOR EN SERIES Y <br><span>PELÍCULAS INTERNACIONALES</span>
@@ -416,105 +416,7 @@
                 <div class="text-center">
                     <a href="claro-canal.php"> <button class="btn-red">VER +</button></a>
                 </div>
-                <div class="section-slider">
-
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-                            <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
-
-                            <a href="sinopsis.php" class="text-decoration-none">
-                                <div class="thumbnail-large">
-                                    <img src="../images/claro-canal/bbc.jpg" alt="">
-
-                                </div>
-                                <div class="a-claro-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">BBC</p>
-
-                                    </div>
-
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-                            <a href="sinopsis.php" class="text-decoration-none">
-                                <div class="thumbnail-large">
-                                    <img src="../images/claro-canal/caja-de-pandora.jpg" alt="">
-
-                                </div>
-                                <div class="a-claro-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">LA CAJA DE PANDORA</p>
-
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-
-
-
-
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-                            <a class="sinopsis.php">
-                                <div class="thumbnail-large">
-                                    <img src="../images/claro-canal/indestructibles.jpg" alt="">
-
-                                </div>
-                                <div class="a-claro-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">LOS INDESTRUCTIBLES 2</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-                            <a href="sinopsis.php" class="text-decoration-none">
-                                <div class="thumbnail-large">
-                                    <img src="../images/claro-canal/saint-seiya.jpg" alt="">
-
-                                </div>
-                                <div class="a-claro-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">LOS CABALLEROS DEL ZODIACO</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-
-
+                <div class="section-slider claro-slider-home">å
                 </div>
 
             </div>
@@ -524,7 +426,7 @@
                 <div class="d-flex justify-content-between align-items-center home-section-header claro-section-header">
                     <div class="m-home-titles">
                         <a href="claro-canal.php" class="home-title-link">
-                            <h1 class="a-claro-channel-title">CANAL CLARO</h1>
+                            <h1 class="a-claro-channel-title"></h1>
                         </a>
                         <h2 class="a-subtitle">
                             LO MEJOR EN SERIES Y <span class="a-claro-channel-subtitle-bold">PELÍCULAS
@@ -536,114 +438,7 @@
                     </div>
                 </div>
                 <div class="canal-videos-container">
-                    <div class="section-slider">
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail-large">
-                                        <img src="../images/claro-canal/bbc.jpg" alt="">
-
-                                    </div>
-                                    <div class="a-claro-rectangle">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">BBC</p>
-
-                                        </div>
-
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-
-
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img src="./images/posters/heart-outline.svg" class="poster-add" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail-large">
-                                        <img src="../images/claro-canal/caja-de-pandora.jpg" alt="">
-
-                                    </div>
-                                    <div class="a-claro-rectangle">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">LA CAJA DE PANDORA</p>
-
-                                        </div>
-
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-
-
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <a href=" sinopsis.php">
-                                    <div class="thumbnail-large">
-                                        <img src="../images/claro-canal/indestructibles.jpg" alt="">
-
-                                    </div>
-                                    <div class="a-claro-rectangle">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">LOS INDESTRUCTIBLES 2</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <a href=" sinopsis.php">
-                                    <div class="thumbnail-large">
-                                        <img src="../images/claro-canal/saint-seiya.jpg" alt="">
-
-                                    </div>
-                                    <div class="a-claro-rectangle">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">LOS CABALLEROS DEL ZODIACO</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail-large">
-                                        <!--<img src="../images/posters/good-doctor.jpeg" alt="">-->
-                                    </div>
-                                    <div class="a-claro-rectangle">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">THE GOOD DOCTOR</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="section-slider claro-slider-home">å
                     </div>
                     <div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
                         <div>
@@ -664,7 +459,7 @@
                 <div class="d-flex justify-content-between align-items-center home-section-header claro-section-header">
                     <div class="m-home-titles">
                         <a href="claro-canal.php" class="home-title-link">
-                            <h1 class="a-claro-channel-title">CANAL CLARO</h1>
+                            <h1 class="a-claro-channel-title"></h1>
                         </a>
                         <h2 class="a-subtitle">
                             LO MEJOR EN SERIES Y <span>PELÍCULAS
@@ -676,155 +471,7 @@
                     </div>
                 </div>
                 <div class="section-slider claro-slider-home">
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-
-
-                            <div class="thumbnail-large" class="text-decoration-none">
-                                <img src="../images/claro-canal/bbc.jpg" alt="">
-
-                            </div>
-                            <div class="a-claro-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">BBC</p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-                            <a href="sinopsis.php" class="text-decoration-none">
-                                <div class="thumbnail-large">
-                                    <img src="../images/claro-canal/caja-de-pandora.jpg" alt="">
-
-                                </div>
-                                <div class="a-claro-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">LA CAJA DE PANDORA</p>
-
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-
-
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-                            <a href="sinopsis.php" class="text-decoration-none">
-                                <div class="thumbnail-large">
-                                    <img src="../images/claro-canal/indestructibles.jpg" alt="">
-
-                                </div>
-                                <div class="a-claro-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">LOS INDESCTRUCTIBLES 2</p>
-
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-                            <a href="sinopsis.php" class="text-decoration-none">
-                                <div class="thumbnail-large">
-                                    <img src="../images/claro-canal/saint-seiya.jpg" alt="">
-
-                                </div>
-                                <div class="a-claro-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">LOS CABALLEROS DEL ZODIACO</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-                            <a href="sinopsis.php" class="text-decoration-none">
-                                <div class="thumbnail-large">
-
-
-                                </div>
-                                <div class="a-claro-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">LOREM IPSUM</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-                            <a href="sinopsis.php" class="text-decoration-none">
-                                <div class="thumbnail-large">
-
-
-                                </div>
-                                <div class="a-claro-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">LOREM IPSUM</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-                            <a href="sinopsis.php" class="text-decoration-none">
-                                <div class="thumbnail-large">
-
-
-                                </div>
-                                <div class="a-claro-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">LOREM IPSUM</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
                 </div>
-
                 <div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
                     <div>
                         <img class="concert-footer-img" src="./images/home/tv-1.svg" alt="">
@@ -954,92 +601,7 @@
                     </div>
                 </div>
                 <div class="home-concert-videos-container">
-                    <div class="section-slider">>
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail">
-                                        <img src="./images/concert-channel/section-home/billie-eillish.jpg" alt="">
-                                    </div>
-                                    <div class="a-concert-rectangle ">
-                                        <p class="a-poster-text-white">BILLIE EILLISH</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail">
-                                        <img src="./images/concert-channel/section-home/chica-concert.jpg" alt="">
-                                    </div>
-                                    <div class="a-concert-rectangle ">
-                                        <p class="a-poster-text-white">CHICA</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail">
-                                        <img src="./images/concert-channel/section-home/ed-sheeran.jpg" alt="">
-                                    </div>
-                                    <div class="a-concert-rectangle ">
-                                        <p class="a-poster-text-white">ED SHEERAN</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="poster">
-                            <div class="psoter-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail">
-                                        <img src="./images/concert-channel/section-home/queen.jpg" alt="">
-                                    </div>
-                                    <div class="a-concert-rectangle ">
-                                        <p class="a-poster-text-white">QUEEN</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail">
-                                        <!--<img src="./images/posters/the-weeknd.jpeg" alt="">-->
-                                    </div>
-                                    <div class="a-concert-rectangle ">
-                                        <p class="a-poster-text-white">The Weeknd: Starboy Tour</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
+                    <div class="section-slider concert-home-slider">
                     </div>
                 </div>
 
@@ -1073,89 +635,8 @@
                 </div>
                 <div class="row no-gutters">
 
-                    <div class="col-md-8 col-xl-6 ml-auto">
-                        <div class="row poster-pad-b">
-                            <div class="col poster-pad-r poster-section">
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                        </div>
-                                        <!--<p class="a-programming-text now-live-text">AHORA EN VIVO</p>-->
-                                        <a href="sinopsis.php" class="text-decoration-none">
-                                            <div class="thumbnail">
-                                                <img src="./images/concert-channel/section-home/billie-eillish.jpg" alt="">
-                                            </div>
-                                            <div class="a-concert-rectangle thumbnail-info-title">
-                                                <div class="poster-title-margin">
-                                                    <p class="a-poster-text-white">BILLIE EILLISH
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
+                    <div class="col-md-8 col-xl-6 ml-auto concertHome-videos-desktop">
 
-                                </div>
-                            </div>
-                            <div class="col poster-pad-l">
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                        </div>
-                                        <div class="thumbnail">
-                                            <img src="./images/concert-channel/section-home/chica-concert.jpg" alt="">
-                                        </div>
-                                        <div class="a-concert-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">CHICA</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row poster-pad-t">
-                            <div class="col poster-pad-r">
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php" class="text-decoration-none">
-                                            <div class="thumbnail">
-                                                <img src="./images/concert-channel/section-home/ed-sheeran.jpg" alt="">
-                                            </div>
-                                            <div class="a-concert-rectangle thumbnail-info-title">
-                                                <p class="a-poster-text-white">ED SHEERAN</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col poster-pad-l">
-                                <div class="poster">
-                                    <div class="poster-body">
-                                        <div class="showtime-container">
-                                            <p class="a-programming-text">14:30 - 16:30</p>
-                                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                        </div>
-                                        <a href="sinopsis.php" class="text-decoration-none">
-                                            <div class="thumbnail">
-                                                <img src="./images/concert-channel/section-home/queen.jpg" alt="">
-                                            </div>
-                                            <div class="a-concert-rectangle thumbnail-info-title">
-                                                <p class="a-poster-text-white">QUEEN</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
@@ -1188,86 +669,7 @@
                 <div class="text-center">
                     <a href="claro-cinema.php"><button class="btn-red">VER +</button></a>
                 </div>
-                <div class="section-slider">
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-
-                            <a href="sinopsis.php" class="text-decoration-none">
-                                <div class="thumbnail">
-                                    <img src="./images/claro-cinema/section-home/01-las-imperdibles.jpg" alt="">
-                                </div>
-                                <div class="a-cinema-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">LAS IMPERDIBLES</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-                            <a href="sinopsis.php" class="text-decoration-none">
-                                <div class="thumbnail">
-                                    <img src="./images/claro-cinema/section-home/02-picardia-mexicana.jpg" alt="">
-                                </div>
-                                <div class="a-cinema-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">PICARDÍA MEXICANA</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-                            <a href="sinopsis.php" class="text-decoration-none">
-                                <div class="thumbnail">
-                                    <img src="./images/claro-cinema/section-home/03-relincha-caballo-rojas.jpg" alt="">
-                                </div>
-                                <div class="a-cinema-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">RELINCHA CON EL CABALLO ROJAS</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-                            <a href="sinopsis.php" class="text-decoration-none">
-                                <div class="thumbnail">
-                                    <img src="./images/claro-cinema/section-home/04-sexy-romanticas.jpg" alt="">
-                                </div>
-                                <div class="a-cinema-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">SEXY ROMANTICAS</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
+                <div class="section-slider cinema-home-slider">
                 </div>
             </div>
             <!--End Cinema Claro mobile-->
@@ -1289,84 +691,7 @@
                     </div>
                 </div>
                 <div class="home-cinema-videos-container">
-                    <div class="section-slider">
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail">
-                                        <img src="./images/claro-cinema/section-home/01-las-imperdibles.jpg" alt="">
-                                    </div>
-                                    <div class="a-cinema-rectangle">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">LAS IMPERDIBLES</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail">
-                                        <img src="./images/claro-cinema/section-home/02-picardia-mexicana.jpg" alt="">
-                                    </div>
-                                    <div class="a-cinema-rectangle">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">PICARDÍA MEXICANA</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail">
-                                        <img src="./images/claro-cinema/section-home/03-relincha-caballo-rojas.jpg" alt="">
-                                    </div>
-                                    <div class="a-cinema-rectangle">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">RELINCHA CON EL CABALLO ROJAS</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                            </div>
-                            <a href="sinopsis.php" class="text-decoration-none">
-                                <div class="thumbnail">
-                                    <img src="./images/claro-cinema/section-home/04-sexy-romanticas.jpg" alt="">
-                                </div>
-                                <div class="a-cinema-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">SEXY ROMANTICAS</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
+                    <div class="section-slider cinema-home-slider">
                     </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
@@ -1403,80 +728,7 @@
                         <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
                     </div>
                     <div class="col-md-8 col-xl-6 cinema-home-videos-container">
-                        <div class="row poster-pad-b">
-                            <div class="col poster-pad-r">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php" class="text-decoration-none">
-                                        <div class="thumbnail">
-                                            <img src="./images/claro-cinema/section-home/01-las-imperdibles.jpg" alt="">
-                                        </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">LAS IMPERDIBLES</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col poster-pad-l">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php" class="text-decoration-none">
-                                        <div class="thumbnail">
-                                            <img src="./images/claro-cinema/section-home/02-picardia-mexicana.jpg" alt="">
-                                        </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">PICARDÍA MEXICANA</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row poster-pad-t">
-                            <div class="col poster-pad-r">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                    </div>
-                                    <div class="thumbnail">
-                                        <img src="./images/claro-cinema/section-home/03-relincha-caballo-rojas.jpg" alt="">
-                                    </div>
-                                    <div class="a-cinema-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-white">RELINCHA CON EL CABALO ROJAS</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col poster-pad-l">
-                                <div class="poster-body">
-                                    <div class="showtime-container">
-                                        <p class="a-programming-text">14:30 - 16:30</p>
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                    </div>
-                                    <a href="sinopsis.php" class="text-decoration-none">
-                                        <div class="thumbnail">
-                                            <img src="./images/claro-cinema/section-home/04-sexy-romanticas.jpg" alt="">
-                                        </div>
-                                        <div class="a-cinema-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">SEXY ROMANTICAS</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">

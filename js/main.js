@@ -84,11 +84,6 @@ if (day && month && year) {
 }
 
 $(document).ready(function() {
-  /* Metakeys */
-  getMetaKeys();
-
-  /*End Metakeys */
-
   /* Sinópsis*/
 
   createClickThumbnails();
@@ -1292,13 +1287,6 @@ $(document).ready(function() {
     }
   });
 
-  /*if (localStorage.getItem("session") == 1) {
-    addFavorites();
-  } else {
-    let modal = $(".modal-favorites");
-    modal.modal("show");
-  }*/
-
   /* FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
 
   const documentHtml = $(document);
@@ -1341,7 +1329,9 @@ $(document).ready(function() {
       $("#selectDay").prop("checked", false);
     }
   });
-
+  /* Metakeys */
+  getMetaKeys();
+  /*End Metakeys */
   var section_slider = $(".section-slider").slick({
     slidesToShow: 5,
     slidesToScroll: 1,
