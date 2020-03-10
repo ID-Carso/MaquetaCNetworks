@@ -1,9 +1,10 @@
+@import "../base/colors";
+
 .menu {
   background: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
   position: fixed;
   width: 100%;
   z-index: 2;
-  max-height: 63px;
   transition: all 0.5s ease 0s;
 }
 
@@ -45,4 +46,12 @@
   .claro-navbar {
     position: initial;
   }
+}
+
+.navbar-white {
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  transition: all 0.5s ease 0s;
 }

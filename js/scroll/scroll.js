@@ -18,4 +18,22 @@ function gradientMenu(navbar, elementTarget) {
   });
 }
 
-export { gradientMenu };
+function navbarWhite(navbar, elementTarget) {
+  elementTarget.on("scroll ontouchmove ontouchstart ontouchend", function() {
+    var posicionScroll = elementTarget.scrollTop();
+    if (navbar) {
+      if (posicionScroll <= 0) {
+        navbar.style.background = "transparent";
+        navbar.style.position = "absolute";
+      } else if (posicionScroll > 0 && posicionScroll <= 100) {
+        navbar.style.background = "transparent";
+        navbar.style.position = "fixed";
+      } else if (posicionScroll >= 101) {
+        navbar.style.background = "white";
+        navbar.style.position = "fixed";
+      }
+    }
+  });
+}
+
+export { gradientMenu, navbarWhite };

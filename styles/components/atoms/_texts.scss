@@ -1268,6 +1268,10 @@
   font-family: $montserratSemiBold;
 }
 
+.text-teal-blue {
+  color: $cinemaRectangle;
+}
+
 .alert-user-text {
   color: $txtcontramin;
   font-family: 14px;
@@ -1332,4 +1336,16 @@
 .modal-program-text {
   font-size: 14px;
   color: $txtcontramin;
+}
+
+.aboutus-title1 {
+  font-size: 49px;
+}
+
+.aboutus-title2 {
+  font-size: 68px;
+}
+
+.aboutus-subtitle {
+  font-size: 20px;
 }

@@ -1,4 +1,4 @@
-import { gradientMenu } from "./scroll/scroll.js";
+import { gradientMenu, navbarWhite } from "./scroll/scroll.js";
 import { ShowHidePassword } from "./form/form.js";
 import { selectCountry } from "./session/session.js";
 import { validateEmail } from "./form/form.js";
@@ -1291,8 +1291,10 @@ $(document).ready(function() {
 
   const documentHtml = $(document);
   const navbar = document.querySelector(".menu");
+  const navbarWhiteElement = document.querySelector(".navbar-white");
   const parallaxWrapper = $(".wrapper");
   gradientMenu(navbar, documentHtml);
+  navbarWhite(navbarWhiteElement, documentHtml);
 
   /* END FUNCION DEGRADADO - SOLIDO SCROLLBAR*/
 

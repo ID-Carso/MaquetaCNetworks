@@ -1487,6 +1487,10 @@ h6 {
   font-family: "Montserrat-SemiBold";
 }
 
+.text-teal-blue {
+  color: #0097a9;
+}
+
 .alert-user-text {
   color: #666262;
   font-family: 14px;
@@ -1551,6 +1555,18 @@ h6 {
 .modal-program-text {
   font-size: 14px;
   color: #666262;
+}
+
+.aboutus-title1 {
+  font-size: 49px;
+}
+
+.aboutus-title2 {
+  font-size: 68px;
+}
+
+.aboutus-subtitle {
+  font-size: 20px;
 }
 
 /*Tamaño de textos - responsive*/
@@ -2116,7 +2132,7 @@ h6 {
 }
 
 .logo {
-  width: 52px;
+  width: 74px;
 }
 
 .menu-responsive {
@@ -2631,6 +2647,24 @@ h6 {
 .modal-image-program {
   width: 100%;
   max-width: 90px;
+}
+
+.image-circle-blue {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.image-points-blue {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}
+
+.image-circle-pink {
+  position: absolute;
+  right: 10%;
+  top: 15%;
 }
 
 .hr1 {
@@ -4057,7 +4091,6 @@ input[type="radio"]:checked + .mujer-estilo {
   position: fixed;
   width: 100%;
   z-index: 2;
-  max-height: 63px;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
@@ -4096,6 +4129,15 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .perfil-header .claro-navbar {
   position: initial;
+}
+
+.navbar-white {
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .tv-list {
@@ -5005,6 +5047,24 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .paises-container {
   padding-bottom: 72px;
+}
+
+.aboutus-container {
+  background-image: url(../images/home/bg-canal-claro@2x.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.aboutus-content {
+  padding-top: 140px;
+}
+
+.aboutus-titles-container {
+  padding-bottom: 34px;
+}
+
+.aboutus-subtitle-container {
+  padding-bottom: 20px;
 }
 
 .schedule-poster {
