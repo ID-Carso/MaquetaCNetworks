@@ -53,13 +53,13 @@
           <p class="dropdown-p">ebñrkjg</p>
           <p class="dropdown-p">ebñrkjg</p>
         </div>-->
-            <a class="sidebar-link" href="nuestra-vision.php">
+            <a class="sidebar-link" href="https://nuestravision.tv">
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Nuestra
                         Visión</span>
                 </div>
             </a>
-            <a class="sidebar-link" href="claro-sports.php">
+            <a class="sidebar-link" href="https://www.marca.com/claro-mx/">
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Claro
                         Sports</span>
@@ -127,12 +127,12 @@
                             </a>
                         </div>
                         <div>
-                            <a href="nuestra-vision.php" class="navbar-link text-decoration-none">
+                            <a href="https://nuestravision.tv" class="navbar-link text-decoration-none">
                                 <p class="navbar-item">Nuestra Visión</p>
                             </a>
                         </div>
                         <div>
-                            <a href="claro-sports.php" class="navbar-link text-decoration-none">
+                            <a href="https://www.marca.com/claro-mx/" class="navbar-link text-decoration-none">
                                 <p class="navbar-item">Claro Sports</p>
                             </a>
                         </div>
@@ -438,7 +438,7 @@
                     </div>
                 </div>
                 <div class="canal-videos-container">
-                    <div class="section-slider claro-slider-home">å
+                    <div class="section-slider claro-slider-home">
                     </div>
                     <div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
                         <div>
@@ -750,7 +750,7 @@
             <!--Nuestra visión mobile-->
             <div class="nuestra-vision-mobile">
                 <div class="m-home-titles">
-                    <a href="nuestra-vision.php" class="home-title-link">
+                    <a href="https://nuestravision.tv" class="home-title-link">
                         <h1 class="a-our-vision-title">NUESTRA VISIÓN</h1>
                     </a>
 
@@ -759,7 +759,7 @@
                     </h2>
                 </div>
                 <div class="text-center">
-                    <a href="nuestra-vision.php"><button class="btn-red">VER +</button></a>
+                    <a href="https://nuestravision.tv"><button class="btn-red">VER +</button></a>
                 </div>
                 <div class="section-slider">
                     <div class="poster">
@@ -845,7 +845,7 @@
             <div class="nuestra-vision-tablet">
                 <div class="d-flex justify-content-between align-items-center home-section-header vision-section-header">
                     <div class="m-home-titles">
-                        <a href="nuestra-vision.php" class="home-title-link">
+                        <a href="https://nuestravision.tv" class="home-title-link">
                             <h1 class="a-our-vision-title">NUESTRA VISIÓN</h1>
                         </a>
                         <h2 class="a-subtitle">
@@ -853,7 +853,7 @@
                         </h2>
                     </div>
                     <div class="m-see-more">
-                        <a href="nuestra-vision.php"><button class="btn-purple">VER
+                        <a href="https://nuestravision.tv"><button class="btn-purple">VER
                                 +</button></a>
                     </div>
                 </div>
@@ -961,7 +961,7 @@
                 </div>
                 <div class="d-flex justify-content-between align-items-center home-section-header vision-section-header">
                     <div class="m-home-titles">
-                        <a href="nuestra-vision.php" class="home-title-link">
+                        <a href="https://nuestravision.tv" class="home-title-link">
                             <h1 class="a-our-vision-title">NUESTRA VISIÓN</h1>
                         </a>
                         <h2 class="a-subtitle">
@@ -969,7 +969,7 @@
                         </h2>
                     </div>
                     <div class="m-see-more">
-                        <a href="nuestra-vision.php"><button class="btn-purple">VER
+                        <a href="https://nuestravision.tv"><button class="btn-purple">VER
                                 +</button></a>
                     </div>
                 </div>
@@ -1117,7 +1117,7 @@
             <!--Claro sportis mobile-->
             <div class="claro-sports-mobile">
                 <div class="m-home-titles">
-                    <a href="claro-sports.php" class="home-title-link">
+                    <a href="https://www.marca.com/claro-mx/" class="home-title-link">
                         <h1 class="a-claro-sports-title">claro <span>sports</span></h1>
                     </a>
 
@@ -1135,7 +1135,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php" class="text-decoration-none">
+                            <a href="https://www.marca.com/claro-mx/" class="text-decoration-none">
                                 <div class="thumbnail-large"></div>
                                 <div class="a-sports-rectangle ">
                                     <div class="poster-title-margin">
@@ -1154,7 +1154,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php" class="text-decoration-none">
+                            <a href="https://www.marca.com/claro-mx/" class="text-decoration-none">
                                 <div class="thumbnail-large"></div>
                                 <div class="a-sports-rectangle ">
                                     <div class="poster-title-margin">
@@ -1172,7 +1172,7 @@
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
-                            <a href="sinopsis.php" class="text-decoration-none">
+                            <a href="https://www.marca.com/claro-mx/" class="text-decoration-none">
                                 <div class="thumbnail-large"></div>
                                 <div class="a-sports-rectangle ">
                                     <div class="poster-title-margin">
@@ -1191,7 +1191,7 @@
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
                         </div>
-                        <a href="sinopsis.php" class="text-decoration-none">
+                        <a href="https://www.marca.com/claro-mx/" class="text-decoration-none">
                             <div class="thumbnail-large"></div>
                             <div class="a-sports-rectangle ">
                                 <div class="poster-title-margin">
@@ -1210,7 +1210,7 @@
             <div class="claro-sports-tablet">
                 <div class="d-flex justify-content-between align-items-center home-section-header sports-section-header">
                     <div class="m-home-titles">
-                        <a href="claro-sports.php" class="home-title-link">
+                        <a href="https://www.marca.com/claro-mx/" class="home-title-link">
                             <h1 class="a-claro-sports-title">claro <span>sports</span></h1>
                         </a>
                         <h2 class="a-subtitle">
@@ -1236,7 +1236,7 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                         </div>
-                                        <a href="sinopsis.php" class="text-decoration-none">
+                                        <a href="https://www.marca.com/claro-mx/" class="text-decoration-none">
                                             <div class="thumbnail-large"></div>
                                             <div class="a-sports-rectangle ">
                                                 <div class="poster-title-margin">
@@ -1255,7 +1255,7 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                         </div>
-                                        <a href="sinopsis.php" class="text-decoration-none">
+                                        <a href="https://www.marca.com/claro-mx/" class="text-decoration-none">
                                             <div class="thumbnail-large"></div>
                                             <div class="a-sports-rectangle ">
                                                 <div class="poster-title-margin">
@@ -1273,7 +1273,7 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                         </div>
-                                        <a href="sinopsis.php" class="text-decoration-none">
+                                        <a href="https://www.marca.com/claro-mx/" class="text-decoration-none">
                                             <div class="thumbnail-large"></div>
                                             <div class="a-sports-rectangle ">
                                                 <div class="poster-title-margin">
@@ -1290,7 +1290,7 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                         </div>
-                                        <a href="sinopsis.php" class="text-decoration-none">
+                                        <a href="https://www.marca.com/claro-mx/" class="text-decoration-none">
                                             <div class="thumbnail-large"></div>
                                             <div class="a-sports-rectangle ">
                                                 <div class="poster-title-margin">
@@ -1322,7 +1322,7 @@
             <div class="claro-sports-desktop">
                 <div class="d-flex justify-content-between align-items-center home-section-header sports-section-header">
                     <div class="m-home-titles">
-                        <a href="claro-sports.php" class="home-title-link">
+                        <a href="https://www.marca.com/claro-mx/" class="home-title-link">
                             <h1 class="a-claro-sports-title">claro <span>sports</span></h1>
                         </a>
                         <h2 class="a-subtitle">
@@ -1330,7 +1330,7 @@
                         </h2>
                     </div>
                     <div class="m-see-more">
-                        <a href="claro-sports.php"><button class="btn-red">VER +</button></a>
+                        <a href="https://www.marca.com/claro-mx/"><button class="btn-red">VER +</button></a>
                     </div>
                 </div>
                 <div class="row no-gutters d-flex align-items-center">
@@ -1347,7 +1347,7 @@
                                         <p class="a-programming-text">14:30 - 16:30</p>
                                         <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
-                                    <a href="sinopsis.php" class="text-decoration-none">
+                                    <a href="https://www.marca.com/claro-mx/" class="text-decoration-none">
                                         <div class="thumbnail-large">
                                         </div>
                                         <div class="a-sports-rectangle thumbnail-info-title">
@@ -1366,7 +1366,7 @@
                                             <p class="a-programming-text">14:30 - 16:30</p>
                                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                                         </div>
-                                        <a href="sinopsis.php" class="text-decoration-none">
+                                        <a href="https://www.marca.com/claro-mx/" class="text-decoration-none">
                                             <div class="thumbnail-large">
                                             </div>
 
