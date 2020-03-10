@@ -7,9 +7,12 @@ include './views/partials/head.php';
 
 <body>
     <main>
-        <?php
-        include './views/partials/menu-white.php';
-        ?>
+        <div id="menu-white">
+            <?php
+            include './views/partials/menu-white.php';
+            ?>
+        </div>
+
         <div class="aboutus-container">
             <img src="./images/registro/group-3.svg" alt="" class="image-circle-blue">
             <img src="./images/registro/group-37.svg" alt="" class="image-points-blue">
