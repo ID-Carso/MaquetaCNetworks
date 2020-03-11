@@ -666,6 +666,18 @@
     align-items: baseline;
   }
 
+  .navbar-mobile-white {
+    display: none;
+  }
+
+  .navbar-tablet-white {
+    display: block;
+  }
+
+  .navbar-desktop-white {
+    display: none;
+  }
+
   /*End General - Moleculas*/
   /*============================*/
 
@@ -764,12 +776,6 @@
   /*2.6 - Sinópsis - Moleculas*/
 
   /*End Sinópsis - Moleculas*/
-  /*============================*/
-
-  /*============================*/
-  /*2.7 - Mi Lista - Moleculas*/
-
-  /*End Mi Lista - Moleculas*/
   /*============================*/
 
   /*3.- ORGANISMS*/
@@ -2110,6 +2116,18 @@
   .modal-favorites-footer {
     padding: 0.75rem !important;
   }
+
+  .navbar-mobile-white {
+    display: none;
+  }
+
+  .navbar-tablet-white {
+    display: block;
+  }
+
+  .navbar-desktop-white {
+    display: none;
+  }
   /*End General - Moleculas*/
   /*-----------------------------*/
 
@@ -2816,6 +2834,14 @@
   }
   /*End Datos*/
   /*============================*/
+
+  /*============================*/
+  /*3.16 - Datos - Organismos*/
+  .aboutus-content {
+    padding: 140px 36px 0px 36px;
+  }
+  /*End Datos*/
+  /*============================*/
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
@@ -3422,6 +3448,26 @@
   /*End Configuración - Átomos*/
   /*============================*/
 
+  /*============================*/
+  /*1.12 - About Us - Átomos*/
+  .aboutus-title1 {
+    font-size: 57px;
+  }
+
+  .aboutus-title2 {
+    font-size: 77px;
+  }
+
+  .aboutus-subtitle {
+    font-size: 29px;
+  }
+
+  .aboutus-text {
+    font-size: 29px;
+  }
+  /*End Abou Us - Átomos*/
+  /*============================*/
+
   /*END ATOMS*/
 
   /***  2.- MOLECULES  ***/
@@ -3569,6 +3615,18 @@
 
   .modal-favorites-footer {
     padding: 0.75rem !important;
+  }
+
+  .navbar-mobile-white {
+    display: none;
+  }
+
+  .navbar-tablet-white {
+    display: none;
+  }
+
+  .navbar-desktop-white {
+    display: block;
   }
 
   /*End General - Moleculas*/
@@ -4337,6 +4395,14 @@
   }
   /*End Datos*/
   /*============================*/
+
+  /*============================*/
+  /*3.16 - About Us - Organismos*/
+  .aboutus-content {
+    padding: 85px 100px 0px 100px;
+  }
+  /*End About Us*/
+  /*============================*/
 }
 
 @media only screen and (min-width: 1900px) {
@@ -4918,6 +4984,26 @@
   /*End Configuración - Átomos*/
   /*============================*/
 
+  /*============================*/
+  /*1.12 - About Us - Átomos*/
+  .aboutus-title1 {
+    font-size: 73px;
+  }
+
+  .aboutus-title2 {
+    font-size: 105px;
+  }
+
+  .aboutus-subtitle {
+    font-size: 39px;
+  }
+
+  .aboutus-text {
+    font-size: 32px;
+  }
+  /*End Abou Us - Átomos*/
+  /*============================*/
+
   /***  2. - MOLECULES  ***/
   /*-----------------------------*/
   /*2.1 - General- Moleculas*/
@@ -5001,6 +5087,18 @@
   .modal-program-content {
     margin: auto;
     max-width: 928px !important;
+  }
+
+  .navbar-mobile-white {
+    display: none;
+  }
+
+  .navbar-tablet-white {
+    display: none;
+  }
+
+  .navbar-desktop-white {
+    display: block;
   }
 
   /*End General - Moleculas*/
@@ -5204,6 +5302,7 @@
 
   .menu-desktop {
     display: block;
+    padding: 40px 120px;
   }
 
   .aviso-header {
@@ -5245,7 +5344,7 @@
   .home-header {
     .header {
       background: transparent;
-      padding: calc(3% + 4px) calc(8% - 10px) 0px calc(8% - 10px);
+      padding: 40px 120px;
       height: auto;
     }
   }
@@ -5833,6 +5932,13 @@
   /*3.16 - Datos - Organismos*/
   .data-user-container {
     margin-bottom: 44px;
+  }
+  /*End Datos*/
+  /*============================*/
+  /*============================*/
+  /*3.16 - Datos - Organismos*/
+  .aboutus-content {
+    padding: 85px 120px 0px 120px;
   }
   /*End Datos*/
   /*============================*/

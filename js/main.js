@@ -88,8 +88,8 @@ if (day && month && year) {
 $(document).ready(function() {
   /* Navbar */
 
-  let navbarWhiteInstance = new Navbar();
-  navbarWhiteInstance.renderMenuWhite();
+  /*let navbarWhiteInstance = new Navbar();
+  navbarWhiteInstance.renderMenuWhite();*/
   /* End Navbar */
 
   /* Sinópsis*/
