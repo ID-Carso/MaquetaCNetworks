@@ -34,6 +34,8 @@ import Slider from "./UI/Slider.js";
 /* Section Metakeys*/
 import { getMetaKeys } from "./services/Section.js";
 
+import Navbar from "./UI/Navbar.js";
+
 var programacion_slider;
 var tvConcertSlider;
 let url = location.href;
@@ -84,6 +86,12 @@ if (day && month && year) {
 }
 
 $(document).ready(function() {
+  /* Navbar */
+
+  let navbarWhiteInstance = new Navbar();
+  navbarWhiteInstance.renderMenuWhite();
+  /* End Navbar */
+
   /* Sinópsis*/
 
   createClickThumbnails();

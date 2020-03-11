@@ -8,9 +8,7 @@ include './views/partials/head.php';
 <body>
     <main>
         <div id="menu-white">
-            <?php
-            include './views/partials/menu-white.php';
-            ?>
+
         </div>
 
         <div class="aboutus-container">
@@ -28,7 +26,7 @@ include './views/partials/head.php';
                     </p>
                 </div>
                 <div>
-                    <p class="text-regular">
+                    <p class="text-regular about-us-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
