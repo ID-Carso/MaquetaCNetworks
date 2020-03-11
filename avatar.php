@@ -51,12 +51,12 @@
           </a>
         </div>
         <div>
-          <a href="https://nuestravision.tv" class="navbar-link text-decoration-none">
+          <a target="_blank" href="https://nuestravision.tv" class="navbar-link text-decoration-none">
             <p class="navbar-item">Nuestra Visión</p>
           </a>
         </div>
         <div>
-          <a href="https://www.marca.com/claro-mx/" class="navbar-link text-decoration-none">
+          <a target="_blank" href="https://www.marca.com/claro-mx/" class="navbar-link text-decoration-none">
             <p class="navbar-item">Claro Sports</p>
           </a>
         </div>

@@ -54,7 +54,7 @@
                         Visión</span>
                 </div>
             </a>
-            <a class="sidebar-link" href="https://www.marca.com/claro-mx/">
+            <a target="_blank" class="sidebar-link" href="https://www.marca.com/claro-mx/">
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Claro
                         Sports</span>
