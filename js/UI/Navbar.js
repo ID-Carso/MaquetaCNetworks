@@ -23,7 +23,7 @@ export default class Navbar {
     <nav class="navbar-white">
         <div class="nav-content">
             <div class="nav-logo">
-                <img class="menu-responsive" src="../images/aboutus/hamburger-about-us.svg" alt="" />
+                <img class="menu-responsive-tablet" src="../images/aboutus/hamburger-about-us.svg" alt="" />
                 <a href="home.php">
                     <img class="logo" src="../images/home/claro-logo.svg" alt="" />
                 </a>
@@ -89,7 +89,7 @@ export default class Navbar {
         <nav class="navbar-white">
             <div class="nav-content">
                 <div class="nav-logo">
-                    <img class="menu-responsive" src="../images/aboutus/hamburger-about-us.svg" alt="" />
+                    <img class="menu-responsive-tablet" src="../images/aboutus/hamburger-about-us.svg" alt="" />
                     <a href="home.php">
                         <img class="logo" src="../images/home/claro-logo.svg" alt="" />
                     </a>

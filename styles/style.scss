@@ -1478,7 +1478,7 @@
   }
 
   .logo {
-    width: 85px;
+    width: 114px;
     display: initial;
     margin-left: 20px;
   }
@@ -1572,6 +1572,20 @@
     font-size: 23px;
   }
 
+  .navbar-white {
+    padding: 20px;
+  }
+
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+  }
   /*End Generales - átomos*/
   /*-----------------------------*/
 
@@ -1993,6 +2007,22 @@
 
   /*============================*/
   /*1.11 - Configuración - Átomos*/
+
+  /*End Configuración - Átomos*/
+
+  /*============================*/
+  /*1.12 - About Us - Átomos*/
+  .aboutus-subtitle {
+    font-size: 25px;
+  }
+
+  .aboutus-text {
+    font-size: 18px;
+  }
+  /*End About Us - Átomos*/
+
+  /*============================*/
+  /*1.12 - Configuración - Átomos*/
 
   /*End Configuración - Átomos*/
 
