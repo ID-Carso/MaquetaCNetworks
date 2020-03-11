@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
 
 <?php
 include './views/partials/head.php';
 ?>
 
-<body class="h-100">
-    <main class="h-100">
+<body>
+    <main>
         <?php
         include './views/partials/hamburguer-menu.php';
         ?>
-        <div class="aboutus-container h-100">
+        <div class="aboutus-container">
             <?php
             include './views/partials/menu-mobile-white.php';
             ?>
@@ -20,7 +20,7 @@ include './views/partials/head.php';
             <?php
             include './views/partials/menu-desktop-white.php';
             ?>
-            <img src="./images/registro/group-3.svg" alt="" class="image-circle-blue">
+            <img src=" ./images/registro/group-3.svg" alt="" class="image-circle-blue">
             <img src="./images/registro/group-37.svg" alt="" class="image-points-blue">
             <img src="./images/registro/group-12.svg" alt="" class="image-circle-pink">
             <div class="aboutus-content">
