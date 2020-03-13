@@ -75,8 +75,8 @@ export default class Section {
         programLarge += `
         <div class="poster">
         <div class="poster-body">
-            <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
+            <div class="showtime-container justify-content-end">
+         
                 <button type="button" class="poster-button remove-program" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
             </div>    
             <div class="thumbnail-large">
@@ -94,8 +94,8 @@ export default class Section {
         programLarge += `
         <div class="poster">
         <div class="poster-body">
-            <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
+            <div class="showtime-container justify-content-end">
+        
                 <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
             </div>    
             <div class="thumbnail-large">
@@ -128,8 +128,8 @@ export default class Section {
         concertHomeVideosMobile += `
             <div class="poster">
                 <div class="poster-body">
-                    <div class="showtime-container">
-                        <p class="a-programming-text">14:30 - 16:30</p>
+                    <div class="showtime-container justify-content-end">
+                  
                         <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
                     </div>
                     <a href="sinopsis.php" class="text-decoration-none">
@@ -144,8 +144,8 @@ export default class Section {
         concertHomeVideosMobile += `
             <div class="poster">
                 <div class="poster-body">
-                    <div class="showtime-container">
-                        <p class="a-programming-text">14:30 - 16:30</p>
+                    <div class="showtime-container justify-content-end">
+                   
                         <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                     </div>
                     <a href="sinopsis.php" class="text-decoration-none">
@@ -371,8 +371,8 @@ export default class Section {
         cinemaHomeVideosMobile += `
               <div class="poster">
                   <div class="poster-body">
-                      <div class="showtime-container">
-                          <p class="a-programming-text">14:30 - 16:30</p>
+                      <div class="showtime-container justify-content-end">
+                        
                           <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
                       </div>
                       <a href="sinopsis.php" class="text-decoration-none">
@@ -390,8 +390,8 @@ export default class Section {
         cinemaHomeVideosMobile += `
               <div class="poster">
                   <div class="poster-body">
-                      <div class="showtime-container">
-                          <p class="a-programming-text">14:30 - 16:30</p>
+                      <div class="showtime-container justify-content-end">
+                 
                           <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                       </div>
                       <a href="sinopsis.php" class="text-decoration-none">
@@ -405,7 +405,7 @@ export default class Section {
       }
     }
 
-    $("#cinema-home-slider").append(cinemaHomeVideosMobile);
+    $(".cinema-home-slider").append(cinemaHomeVideosMobile);
 
     var cinemaVideoDesktop1 = "";
     var cinemaVideoDesktop2 = "";
@@ -598,7 +598,7 @@ export default class Section {
     ${cinemaVideoDesktop4}
 </div>
 </div>`;
-    $(".cinema-home-videos-container").append(cinemaVideosDesktop);
+    $(".cinema-home-videos-container").html(cinemaVideosDesktop);
     /* End Claro Cinema - Home*/
 
     /* Nuestra Visión - Home*/

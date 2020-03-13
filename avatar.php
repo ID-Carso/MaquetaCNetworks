@@ -60,11 +60,11 @@
             <p class="navbar-item">Claro Sports</p>
           </a>
         </div>
-        <div>
+        <!--<div>
           <a href="programacion.php" class="navbar-link text-decoration-none">
             <p class="navbar-item">Programación</p>
           </a>
-        </div>
+        </div>-->
       </div>
     </nav>
   </header>

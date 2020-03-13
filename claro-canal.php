@@ -60,11 +60,11 @@
               Sports</span>
           </div>
         </a>
-        <a class="sidebar-link" href="programacion.php">
+        <!--<a class="sidebar-link" href="programacion.php">
           <div class="sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Programación</span>
           </div>
-        </a>
+        </a>-->
         <!--prueba sidebar-->
       </div>
       <button class="invisible-button"></button>

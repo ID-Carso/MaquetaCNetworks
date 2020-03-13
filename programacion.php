@@ -60,9 +60,9 @@
                         Sports</span>
                 </div>
             </a>
-            <div class="sidebar-item sidebar-border-bottom">
+            <!--<div class="sidebar-item sidebar-border-bottom">
                 <span class="dropdown-p active-sidebar-item">Programación</span>
-            </div>
+            </div>-->
             <!--prueba sidebar-->
         </div>
         <button class="invisible-button"></button>

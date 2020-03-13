@@ -202,6 +202,10 @@
     width: 80px;
   }
 
+  .text-landing-footer {
+    font-size: 14px;
+  }
+
   /*End General - Átomos*/
   /*============================*/
 
@@ -688,6 +692,9 @@
   .navbar-desktop-white {
     display: none;
   }
+  .list-links-footer {
+    margin: 40px 0;
+  }
 
   /*End General - Moleculas*/
   /*============================*/
@@ -1058,6 +1065,11 @@
 
   /*============================*/
   /*3.4 - Concert Channel - Organismos*/
+
+  .concert-landing-header {
+    padding-right: 6%;
+  }
+
   .concert-channel-header .header {
     padding: 0;
   }
@@ -1603,10 +1615,27 @@
     display: flex;
     align-items: center;
   }
+
+  .text-landing-footer {
+    font-size: 14px;
+  }
   /*End Generales - átomos*/
   /*-----------------------------*/
 
   /*1.2 - Home - Átomos */
+
+  .concerthome-image-header {
+    width: 110px;
+  }
+  .cinemahome-image-header {
+    width: 100px;
+  }
+
+  .claro-image-header {
+    width: 350px;
+    margin-bottom: 10px;
+  }
+
   .header-h1 {
     color: $headerH1Color;
     font-size: 72px;
@@ -2048,6 +2077,10 @@
   /*-----------------------------*/
   /*2.1 - General - Moleculas*/
 
+  .list-links-footer {
+    margin: 30px 0;
+  }
+
   .slick-slider {
     width: 100%;
     padding-bottom: 0px;
@@ -2314,14 +2347,9 @@
   }
 
   .claro-section-header,
-  .vision-section-header,
-  .sports-section-header {
-    margin-bottom: 85px;
-  }
-
   .concert-section-header,
   .cinema-section-header {
-    margin-bottom: 309px;
+    margin-bottom: 40px;
   }
 
   .concert-channel-mobile {
@@ -2340,37 +2368,11 @@
     display: block;
   }
 
-  .o-vision-section {
-    background-color: $backgroundGray;
-  }
-
-  .nuestra-vision-mobile {
-    display: none;
-  }
-
-  .nuestra-vision-desktop {
-    display: block;
-  }
-
   .claro-canal-mobile {
     display: none;
   }
 
   .claro-canal-desktop {
-    display: block;
-  }
-
-  .o-sports-section {
-    background-image: url(../images/home/claro-sports-background.png);
-    background-repeat: no-repeat;
-    background-origin: content-box;
-  }
-
-  .claro-sports-mobile {
-    display: none;
-  }
-
-  .claro-sports-desktop {
     display: block;
   }
 
@@ -2384,9 +2386,7 @@
 
   .o-concert-section,
   .o-cinema-section,
-  .o-vision-section,
   .o-claro-section,
-  .o-sports-section,
   .o-advertising-section,
   .o-footer-section,
   .o-tv-section {
@@ -3092,11 +3092,34 @@
   .modal-program-text {
     font-size: 29px;
   }
+
+  .text-landing-footer {
+    font-size: 1rem;
+  }
   /*End Generales - átomos*/
   /*-----------------------------*/
 
   /*-----------------------------*/
   /*1.2 - Home - Átomos*/
+
+  .claro-image-header,
+  .concerthome-image-header,
+  .cinemahome-image-header {
+    margin-top: 30px;
+  }
+
+  .claro-image-header {
+    width: 350px;
+  }
+
+  .cinemahome-image-header {
+    width: 120px;
+  }
+
+  .concerthome-image-header {
+    width: 120px;
+  }
+
   .margin-ahora-tv {
     margin-bottom: 21px;
   }
@@ -3653,7 +3676,7 @@
   }
 
   .m-home-titles {
-    padding-bottom: 86px;
+    padding-bottom: 60px;
   }
 
   .m-see-more {
@@ -3853,7 +3876,7 @@
   .home-header {
     .header {
       background: transparent;
-      padding: calc(3% + 4px) calc(8% - 10px) 0px calc(8% - 10px);
+      padding: 30px 100px;
       height: auto;
     }
   }
@@ -4668,6 +4691,24 @@
 
   /*-----------------------------*/
   /*1.2 Home -  Átomos  */
+
+  .claro-image-header,
+  .concerthome-image-header,
+  .cinemahome-image-header {
+    margin-top: 0px;
+  }
+
+  .claro-image-header {
+    width: 350px;
+  }
+
+  .cinemahome-image-header {
+    width: 120px;
+  }
+
+  .concerthome-image-header {
+    width: 120px;
+  }
 
   .o-tv-section {
     .active-navItem::after {

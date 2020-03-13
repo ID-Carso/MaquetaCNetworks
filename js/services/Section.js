@@ -11,6 +11,7 @@ function getMetaKeys() {
     success: function(result) {
       let json = JSON.parse(result);
       let sectionUI = new Section();
+
       sectionUI.renderHome(json);
     }
   });

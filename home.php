@@ -136,11 +136,11 @@
                                 <p class="navbar-item">Claro Sports</p>
                             </a>
                         </div>
-                        <div>
+                        <!--<div>
                             <a href="programacion.php" class="navbar-link text-decoration-none">
                                 <p class="navbar-item">Programación</p>
                             </a>
-                        </div>
+                        </div>-->
                     </div>
                 </nav>
 
@@ -451,7 +451,16 @@
                         </div>
                     </div>-->
                 </div>
-
+                <div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
+                    <div>
+                        <img class="concert-footer-img" src="./images/home/tv-1.svg" alt="">
+                    </div>
+                    <div>
+                        <p class="horario-text text-dark">
+                            Horario sujetos a cambios
+                        </p>
+                    </div>
+                </div>
             </div>
             <!--End Sección Canal Claro tablet-->
             <!--Sección canal claro desktop-->
@@ -459,7 +468,7 @@
                 <div class="d-flex justify-content-between align-items-center home-section-header claro-section-header">
                     <div class="m-home-titles">
                         <a href="claro-canal.php" class="home-title-link">
-                            <h1 class="a-claro-channel-title"></h1>
+                            <img src="./images/home/tv-1.svg" class="claro-image-header">
                         </a>
                         <h2 class="a-subtitle">
                             LO MEJOR EN SERIES Y <span>PELÍCULAS
@@ -474,7 +483,7 @@
                 </div>
                 <div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
                     <div>
-                        <img class="concert-footer-img" src="./images/home/tv-1.svg" alt="">
+
                     </div>
                     <div>
                         <p class="horario-text text-dark">
@@ -484,8 +493,6 @@
                 </div>
             </div>
             <!--End seccción canal claro desktop-->
-
-
         </div>
         <!--Fin sección de Canal Claro-->
         <!--Sección de Concert Channel-->
@@ -494,7 +501,7 @@
             <div class="concert-channel-mobile">
                 <div class="m-home-titles text-center">
                     <a href="concert-channel.php" class="home-title-link">
-                        <img src="./images/home/concert-channel-icon.png" class="concerthome-image-header">
+                        <img src="./images/home/concert-home-img.svg" class="concerthome-image-header">
                     </a>
                     <h2 class="a-concert-channel-subtitle">
                         CONCIERTOS, ENTREVISTAS<br><span>Y MUCHO MÁS</span>
@@ -545,7 +552,7 @@
                 <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
                         <a href="concert-channel.php" class="home-title-link">
-                            <img class="concert-footer-img" src="./images/home/concert-home-img.svg" alt="">
+                            <img class="concerthome-image-header" src="./images/home/concert-home-img.svg" alt="">
                         </a>
                         <h2 class="text-white a-subtitle">Conciertos, entrevistas y mucho más</h2>
                     </div>
@@ -559,7 +566,7 @@
                 </div>
                 <div class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
                     <div>
-                        <img class="concert-footer-img" src="./images/home/concert-home-img.svg" alt="">
+
                     </div>
                     <div>
                         <p class="horario-text text-white">
@@ -607,7 +614,9 @@
                         <a href="claro-cinema.php"><button class="btn-red">VER +</button></a>
                     </div>
                 </div>
-                <div class="row no-gutters">
+                <div class="section-slider cinema-home-slider">
+                </div>
+                <!--<div class="row no-gutters">
                     <div class="col-5">
                         <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
                     </div>
@@ -617,8 +626,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
+                </div>-->
                 <div class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
 
@@ -633,11 +641,11 @@
             <!--End cinema claro tablet-->
             <!--Cinema claro desktop-->
             <div class="cinema-claro-desktop">
-                <div class="black-line"></div>
+                <!--<div class="black-line"></div>-->
                 <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
                     <div class="m-home-titles">
                         <a href="claro-cinema.php" class="home-title-link">
-                            <h1 class="a-claro-cinema-title">CLARO <span>CINEMA</span></h1>
+                            <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
                         </a>
                         <h2 class="a-subtitle">
                             Las mejores <span>Películas Mexicanas</span>
@@ -647,18 +655,18 @@
                         <a href="claro-cinema.php"><button class="btn-red">VER +</button></a>
                     </div>
                 </div>
-
-                <div class="row no-gutters">
+                <div class="section-slider cinema-home-slider">
+                </div>
+                <!--<div class="row no-gutters">
                     <div class="col-md-4 col-xl-6">
                         <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
                     </div>
                     <div class="col-md-8 col-xl-6 cinema-home-videos-container">
-
                     </div>
-                </div>
+                </div>-->
                 <div class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
-                        <img class="concert-footer-img" src="./images/home/cinema-home-img.svg" alt="">
+
                     </div>
                     <div>
                         <p class="horario-text text-dark">
@@ -675,7 +683,7 @@
         <?php
         include 'advertising-section.php'
         ?>
-        <div class="col-11 mx-auto">
+        <div class="col-11 mx-auto list-links-footer">
             <div class="row no-gutters">
                 <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
                     <a href="about-us.php" class="link-landing-footer">
@@ -686,7 +694,6 @@
                     <a href="claro-canal.php" class="link-landing-footer">
                         <p class="text-landing-footer text-semibold">Canal Claro</p>
                     </a>
-
                 </div>
                 <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
                     <a href="claro-cinema.php" class="link-landing-footer">
@@ -697,19 +704,16 @@
                     <a href="concert-channel.php" class="link-landing-footer">
                         <p class="text-landing-footer text-semibold">Concert Channel</p>
                     </a>
-
                 </div>
                 <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-                    <a href="https://www.marca.com/claro-mx/" class="link-landing-footer">
+                    <a href="https://www.marca.com/claro-mx/" target="_blank" class="link-landing-footer">
                         <p class="text-landing-footer text-semibold">Claro Sports</p>
                     </a>
-
                 </div>
                 <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-                    <a href="https://nuestravision.tv" class="link-landing-footer">
+                    <a href="https://nuestravision.tv" target="_blank" class="link-landing-footer">
                         <p class="text-landing-footer text-semibold">Nuestra Visión</p>
                     </a>
-
                 </div>
             </div>
         </div>

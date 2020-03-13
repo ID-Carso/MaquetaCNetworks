@@ -205,7 +205,7 @@ function getPrograms(date, time) {
             programCanalClaro = `
                 <div class="poster">
                   <div class="poster-body">
-                      <div class="showtime-container">
+                      <div class="showtime-container justify-content-between">
                           <p class="a-programming-text">${program.time}</p>
                           <button type="button" class="poster-button remove-program" _id="${program.chapter_id}"><img src="./images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
                       </div>
@@ -228,7 +228,7 @@ function getPrograms(date, time) {
             programCanalClaro = `
                 <div class="poster" >
                   <div class="poster-body">
-                      <div class="showtime-container">
+                      <div class="showtime-container justify-content-between">
                           <p class="a-programming-text">${program.time}</p>
                           <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                       </div>
@@ -381,7 +381,7 @@ function getPrograms(date, time) {
             programConcertChannel = `
                 <div class="poster" >
                 <div class="poster-body">
-                    <div class="showtime-container">
+                    <div class="showtime-container justify-content-between">
                         <p class="a-programming-text">${program.time}</p>
                         <button type="button" class="poster-button remove-program" _id="${program.chapter_id}"><img src="./images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
                     </div>
@@ -403,7 +403,7 @@ function getPrograms(date, time) {
             programConcertChannel = `
             <div class="poster" >
             <div class="poster-body">
-                <div class="showtime-container">
+                <div class="showtime-container justify-content-between">
                     <p class="a-programming-text">${program.time}</p>
                     <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                 </div>
@@ -557,7 +557,7 @@ function getPrograms(date, time) {
           if (arrayClaroCinema.includes(program.chapter_id)) {
             programClaroCinema = `
                 <div class="poster" >
-                  <div class="poster-body">
+                  <div class="poster-body justify-content-between">
                       <div class="showtime-container">
                           <p class="a-programming-text">${program.time}</p>
                           <button type="button" class="poster-button remove-program" _id="${program.chapter_id}"><img src="./images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
@@ -581,7 +581,7 @@ function getPrograms(date, time) {
             programClaroCinema = `
                 <div class="poster" >
                   <div class="poster-body">
-                      <div class="showtime-container">
+                      <div class="showtime-container justify-content-between">
                           <p class="a-programming-text">${program.time}</p>
                           <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                       </div>
@@ -711,7 +711,7 @@ function getPrograms(date, time) {
 
   <div class="poster">
       <div class="poster-body">
-          <div class="showtime-container">
+          <div class="showtime-container justify-content-between">
               <p class="a-programming-text">14:30 - 16:30</p>
               <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
           </div>
@@ -731,7 +731,7 @@ function getPrograms(date, time) {
 
   <div class="poster">
       <div class="poster-body">
-          <div class="showtime-container">
+          <div class="showtime-container justify-content-between">
               <p class="a-programming-text">14:30 - 16:30</p>
               <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
           </div>
@@ -752,7 +752,7 @@ function getPrograms(date, time) {
 
   <div class="poster">
       <div class="poster-body">
-          <div class="showtime-container">
+          <div class="showtime-container justify-content-between">
               <p class="a-programming-text">14:30 - 16:30</p>
               <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
           </div>
