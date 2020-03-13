@@ -1569,10 +1569,18 @@ h6 {
   font-size: 20px;
 }
 
+.aboutus-text {
+  padding-bottom: 20px;
+}
+
 .navbar-item-black {
   font-size: 16px;
   color: #525050;
   margin-right: 20px;
+}
+
+.text-landing-footer {
+  text-align: center;
 }
 
 /*Tamaño de textos - responsive*/
@@ -2341,7 +2349,7 @@ h6 {
 .thumbnail-large {
   background: #797979;
   overflow: hidden;
-  padding-bottom: 134%;
+  padding-bottom: 162%;
   position: relative;
   width: 100%;
 }
@@ -2671,6 +2679,32 @@ h6 {
   position: absolute;
   right: 10%;
   top: 15%;
+}
+
+.claro-image-header {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.concerthome-image-header {
+  width: 42px;
+  margin: 16px 0px 10px 0px;
+}
+
+.cinemahome-image-header {
+  margin-top: 27px;
+  margin-bottom: 10px;
+  width: 56px;
+}
+
+.nvhome-image-header {
+  width: 56px;
+  margin-bottom: 10px;
+}
+
+.sportshome-image-header {
+  width: 80px;
+  margin-bottom: 10px;
 }
 
 .hr1 {
@@ -3070,6 +3104,12 @@ input::-webkit-credentials-auto-fill-button {
   border-bottom: solid 1px #a6a8a8;
   margin-bottom: 0;
   width: 100%;
+}
+
+.link-landing-footer {
+  text-decoration: none;
+  color: #525050;
+  font-size: 9px;
 }
 
 /* Tag image */
@@ -5091,10 +5131,6 @@ input[type="radio"]:checked + .mujer-estilo {
   margin-right: auto;
 }
 
-.concert-channel-mobile {
-  background: #3e0a43;
-}
-
 .concert-channel-tablet {
   display: none;
 }
@@ -5149,7 +5185,7 @@ input[type="radio"]:checked + .mujer-estilo {
 }
 
 .o-advertising-section {
-  margin: 100px auto 60px auto;
+  margin: 0px auto 0px auto;
   padding-left: 5%;
   padding-right: 5%;
   max-width: 600px;
@@ -5184,6 +5220,11 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .synopsis-content {
   background: #000000;
+}
+
+.o-concert-section {
+  background-image: url(../images/home/bg-concert-channel.jpg);
+  background-size: cover;
 }
 
 .wrapper {
@@ -5605,6 +5646,9 @@ input[type="radio"]:checked + .mujer-estilo {
     width: 100%;
     max-width: 90px;
   }
+  .concerthome-image-header {
+    width: 80px;
+  }
   /*End General - Átomos*/
   /*============================*/
   /*============================*/
@@ -5656,11 +5700,13 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .a-claro-cinema-title,
   .a-our-vision-title,
-  .a-claro-channel-title,
   .a-claro-sports-title {
     font-size: 32px;
     padding-bottom: 7px;
     text-align: left;
+  }
+  .claro-image-header {
+    width: 250px;
   }
   .a-claro-channel-title,
   .a-concert-channel-title,
@@ -5706,6 +5752,9 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .background-home {
     display: none;
+  }
+  .cinemahome-image-header {
+    width: 80px;
   }
   /*End Home - Átomos*/
   /*============================*/
@@ -6231,7 +6280,7 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .concert-section-header,
   .cinema-section-header {
-    margin-bottom: 150px;
+    margin-bottom: 30px;
   }
   .o-concert-section {
     background-image: url(../images/home/bg-concert-channel.jpg);
@@ -7340,9 +7389,6 @@ input[type="radio"]:checked + .mujer-estilo {
   .concert-section-header,
   .cinema-section-header {
     margin-bottom: 309px;
-  }
-  .o-concert-section {
-    background-color: #3e0a43;
   }
   .concert-channel-mobile {
     display: none;
@@ -9770,9 +9816,6 @@ input[type="radio"]:checked + .mujer-estilo {
     background: transparent;
     padding: 40px 120px;
     height: auto;
-  }
-  .o-concert-section {
-    background-color: #3e0a43;
   }
   .concert-channel-mobile {
     display: none;

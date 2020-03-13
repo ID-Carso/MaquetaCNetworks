@@ -325,7 +325,7 @@
 .thumbnail-large {
   background: #797979;
   overflow: hidden;
-  padding-bottom: 134%;
+  padding-bottom: 162%;
   position: relative;
   width: 100%;
 }
@@ -645,4 +645,30 @@
   position: absolute;
   right: 10%;
   top: 15%;
+}
+
+.claro-image-header {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.concerthome-image-header {
+  width: 42px;
+  margin: 16px 0px 10px 0px;
+}
+
+.cinemahome-image-header {
+  margin-top: 27px;
+  margin-bottom: 10px;
+  width: 56px;
+}
+
+.nvhome-image-header {
+  width: 56px;
+  margin-bottom: 10px;
+}
+
+.sportshome-image-header {
+  width: 80px;
+  margin-bottom: 10px;
 }

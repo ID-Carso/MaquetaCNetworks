@@ -67,6 +67,7 @@ export default class Section {
     ];
 
     $(".section-slider").slick("unslick");
+
     let blockImage3Length = block3Image.length;
     let programLarge = "";
     for (let i = 0; i < blockImage3Length; i++) {
@@ -79,7 +80,7 @@ export default class Section {
                 <button type="button" class="poster-button remove-program" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
             </div>    
             <div class="thumbnail-large">
-                <img src="${block3Image[i].image_horizontal}" alt="">
+                <img src="${block3Image[i].image_vertical}" alt="">
             </div>
             <div class="a-claro-rectangle">
                 <div class="poster-title-margin">
@@ -98,12 +99,7 @@ export default class Section {
                 <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
             </div>    
             <div class="thumbnail-large">
-                <img src="${block3Image[i].image_horizontal}" alt="">
-            </div>
-            <div class="a-claro-rectangle">
-                <div class="poster-title-margin">
-                    <p class="a-poster-text-white">${block3Image[i].subtitle}</p> 
-                </div> 
+                <img src="${block3Image[i].image_vertical}" alt="">
             </div>
         </div>
     </div> 
@@ -137,11 +133,8 @@ export default class Section {
                         <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
                     </div>
                     <a href="sinopsis.php" class="text-decoration-none">
-                        <div class="thumbnail">
+                        <div class="thumbnail-large">
                             <img src="${block4Image[i].image_horizontal}" alt="">
-                        </div>
-                        <div class="a-concert-rectangle ">
-                            <p class="a-poster-text-white">${block4Image[i].subtitle}</p>
                         </div>
                     </a>
                 </div>
@@ -156,11 +149,8 @@ export default class Section {
                         <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                     </div>
                     <a href="sinopsis.php" class="text-decoration-none">
-                        <div class="thumbnail">
+                        <div class="thumbnail-large">
                             <img src="${block4Image[i].image_horizontal}" alt="">
-                        </div>
-                        <div class="a-concert-rectangle ">
-                            <p class="a-poster-text-white">${block4Image[i].subtitle}</p>
                         </div>
                     </a>
                 </div>
@@ -386,7 +376,7 @@ export default class Section {
                           <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
                       </div>
                       <a href="sinopsis.php" class="text-decoration-none">
-                          <div class="thumbnail">
+                          <div class="thumbnail-large">
                               <img src="${block5Image[i].image_horizontal}" alt="">
                           </div>
                           <div class="a-cinema-rectangle">
@@ -405,11 +395,8 @@ export default class Section {
                           <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                       </div>
                       <a href="sinopsis.php" class="text-decoration-none">
-                          <div class="thumbnail">
+                          <div class="thumbnail-large">
                               <img src="${block5Image[i].image_horizontal}" alt="">
-                          </div>
-                          <div class="a-cinema-rectangle">
-                              <p class="a-poster-text-white">${block5Image[i].subtitle}</p>
                           </div>
                       </a>
                   </div>
@@ -418,7 +405,8 @@ export default class Section {
       }
     }
 
-    $(".cinema-home-slider").append(cinemaHomeVideosMobile);
+    $("#cinema-home-slider").append(cinemaHomeVideosMobile);
+
     var cinemaVideoDesktop1 = "";
     var cinemaVideoDesktop2 = "";
     var cinemaVideoDesktop3 = "";

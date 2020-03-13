@@ -198,6 +198,10 @@
     max-width: 90px;
   }
 
+  .concerthome-image-header {
+    width: 80px;
+  }
+
   /*End General - Átomos*/
   /*============================*/
 
@@ -258,11 +262,14 @@
 
   .a-claro-cinema-title,
   .a-our-vision-title,
-  .a-claro-channel-title,
   .a-claro-sports-title {
     font-size: 32px;
     padding-bottom: 7px;
     text-align: left;
+  }
+
+  .claro-image-header {
+    width: 250px;
   }
 
   .a-claro-channel-title,
@@ -319,6 +326,10 @@
 
   .background-home {
     display: none;
+  }
+
+  .cinemahome-image-header {
+    width: 80px;
   }
 
   /*End Home - Átomos*/
@@ -959,7 +970,7 @@
 
   .concert-section-header,
   .cinema-section-header {
-    margin-bottom: 150px;
+    margin-bottom: 30px;
   }
 
   .o-concert-section {
@@ -2311,10 +2322,6 @@
   .concert-section-header,
   .cinema-section-header {
     margin-bottom: 309px;
-  }
-
-  .o-concert-section {
-    background-color: $backgroundConcertChannel;
   }
 
   .concert-channel-mobile {
@@ -5347,10 +5354,6 @@
       padding: 40px 120px;
       height: auto;
     }
-  }
-
-  .o-concert-section {
-    background-color: $backgroundConcertChannel;
   }
 
   .concert-channel-mobile {
