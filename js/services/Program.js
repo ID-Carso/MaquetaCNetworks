@@ -1182,6 +1182,17 @@ function showSynopsis(id) {
       console.log(json);
       if (json.code == 200) {
         localStorage.setItem("synopsis", JSON.stringify(json.data));
+      } else {
+        let noSynopsis = `
+            <div class="no-synopsis-container text-center">
+                <img src="./images/sinopsis/helmet.png" alt="" class="helmet-image">
+                <h3 class="no-synopsis-title a-text-white-monblack">SINÓPSIS EN <span>CONSTRUCCIÓN</span></h3>
+                <p class="no-synopsis-text a-text-white-semibold">La sinópsis de este programa no está disponible aún</p>
+            </div>
+          `;
+        $(".synopsis-content")
+          .addClass("col-12")
+          .html(noSynopsis);
       }
     }
   });

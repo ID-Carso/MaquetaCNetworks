@@ -376,7 +376,7 @@
   }
 
   .today-concert-title {
-    font-size: 30px;
+    font-size: 23px;
     padding: 40px 0px;
   }
 
@@ -501,6 +501,21 @@
   .synopsis-section-title {
     font-size: 30px;
     padding: 50px 0;
+  }
+
+  .no-synopsis-title {
+    font-size: 40px;
+  }
+
+  .no-synopsis-text {
+    font-size: 21px;
+  }
+
+  .helmet-image {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 80px;
+    margin-bottom: 50px;
   }
 
   /*End Sinópsis - Átomos*/
@@ -800,6 +815,11 @@
 
   /*============================*/
   /*3.1 - General - Organismos*/
+  .landing-header {
+    padding: 40px 30px 40px 30px;
+    align-items: center;
+  }
+
   .menu {
     background: transparent;
     position: inherit;
@@ -1066,8 +1086,8 @@
   /*============================*/
   /*3.4 - Concert Channel - Organismos*/
 
-  .concert-landing-header {
-    padding-right: 6%;
+  .week-videos-container {
+    margin-right: 30px;
   }
 
   .concert-channel-header .header {
@@ -1082,7 +1102,7 @@
   .today-concert-channel,
   .next-week-concert,
   .concerts {
-    padding-left: 6%;
+    padding-left: 30px;
   }
 
   .today-concert-channel,
@@ -1104,7 +1124,7 @@
   .imperdibles-videos-mobile,
   .recordar-container-videos,
   .only-videos-container {
-    padding-left: 6%;
+    padding-left: 30px;
   }
 
   .today-cinema-videos-container,
@@ -1116,6 +1136,10 @@
 
   .claro-cinema-container {
     background: transparent;
+  }
+
+  .imperdibles-video-container {
+    margin: 40px 30px;
   }
 
   /*End Claro Cinema - Organismos*/
@@ -1155,6 +1179,10 @@
   .synopsis-images-container {
     display: flex;
     justify-content: center;
+  }
+
+  .no-synopsis-container {
+    margin-bottom: 80px;
   }
 
   /*End Sinópsis - Organismos*/
@@ -1945,6 +1973,21 @@
     margin-bottom: 0;
   }
 
+  .no-synopsis-title {
+    font-size: 50px;
+  }
+
+  .no-synopsis-text {
+    font-size: 31px;
+  }
+
+  .helmet-image {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 110px;
+    margin-bottom: 50px;
+  }
+
   /*End Sinópsis - átomos*/
   /*-----------------------------*/
 
@@ -2275,6 +2318,11 @@
   /*-----------------------------*/
   /*3.1 - Generales - Organismos*/
 
+  .landing-header {
+    padding: 40px 0px;
+    align-items: center;
+  }
+
   .menu {
     background: transparent;
     position: inherit;
@@ -2520,6 +2568,10 @@
     padding: 0;
   }
 
+  .week-videos-container {
+    margin: 0;
+  }
+
   /*End Concert Channel - organismos*/
   /*-----------------------------*/
 
@@ -2546,13 +2598,15 @@
   }
 
   .only-videos-container,
-  .recordar-container-videos,
-  .imperdibles-videos-tablet {
+  .recordar-container-videos {
     padding-bottom: 100px;
-    padding-left: calc(5% + 7px);
-    padding-right: calc(5% + 7px);
+    padding-left: 6%;
+    padding-right: 6%;
   }
 
+  .imperdibles-video-container {
+    margin: 45px 6% 45px 6%;
+  }
   .cinema-slider {
     margin: 0 -6px;
   }
@@ -2597,6 +2651,10 @@
 
   .synopsis-details-container {
     justify-content: space-between;
+  }
+
+  .no-synopsis-container {
+    margin-bottom: 110px;
   }
 
   /*End Sinópsis - organismos*/
@@ -3357,6 +3415,20 @@
     margin-bottom: 0 !important;
   }
 
+  .no-synopsis-title {
+    font-size: 55px;
+  }
+
+  .no-synopsis-text {
+    font-size: 35px;
+  }
+
+  .helmet-image {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 130px;
+    margin-bottom: 70px;
+  }
   /*End Sinópsis - átomos*/
   /*-----------------------------*/
 
@@ -3760,6 +3832,11 @@
   /*-----------------------------*/
   /*3.1 - General- Organismos*/
 
+  .landing-header {
+    padding: 45px 0px;
+    align-items: center;
+  }
+
   .header {
     background: transparent;
     height: auto;
@@ -4106,6 +4183,10 @@
     margin-left: 0;
   }
 
+  .week-videos-container {
+    margin: 0;
+  }
+
   /*End Concert Channel - Organismos*/
   /*-----------------------------*/
 
@@ -4123,10 +4204,11 @@
     display: block;
   }
 
-  .imperdibles-videos-tablet,
+  .imperdibles-video-container,
   .recordar-container-videos,
   .only-videos-container {
-    padding: 0 calc(8% - 3px);
+    padding-left: 8%;
+    padding-right: 8%;
     margin: 100px 0;
   }
 
@@ -4198,6 +4280,10 @@
 
   .synopsis-details-container {
     margin-bottom: 65px;
+  }
+
+  .no-synopsis-container {
+    margin-bottom: 130px;
   }
 
   /*End Sinópsis - Organismos*/
@@ -4914,6 +5000,21 @@
     margin: 120px 0 !important;
   }
 
+  .no-synopsis-title {
+    font-size: 60px;
+  }
+
+  .no-synopsis-text {
+    font-size: 39px;
+  }
+
+  .helmet-image {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 150px;
+    margin-bottom: 80px;
+  }
+
   /*End Sinópsis - Átomos*/
   /*-----------------------------*/
 
@@ -5263,6 +5364,12 @@
 
   /*-----------------------------*/
   /*3.1 - General - Organismos*/
+
+  .landing-header {
+    padding: 45px 0px;
+    align-items: center;
+  }
+
   .slick-slider {
     padding-bottom: 0px;
   }
@@ -5580,6 +5687,11 @@
 
   /*-----------------------------*/
   /*3.4 - Concert Channel - Organismos*/
+
+  .week-videos-container {
+    margin: 0;
+  }
+
   .today-concert-channel,
   .next-week-concert,
   .concerts,
@@ -5607,7 +5719,7 @@
   /*-----------------------------*/
   /*3.5 - Claro Cinema - Organismos*/
   .today-claro-cinema,
-  .imperdibles-videos-desktop,
+  .imperdibles-video-container,
   .recordar-container-videos,
   .only-videos-container {
     padding: 0 10%;
@@ -5629,7 +5741,7 @@
     margin-bottom: 120px;
   }
 
-  .imperdibles-videos-desktop,
+  .imperdibles-video-container,
   .recordar-container-videos,
   .only-videos-container {
     margin: 120px 0;
@@ -5820,6 +5932,10 @@
   .lista-header .menu-tablet .login {
     top: 0;
     right: 0;
+  }
+
+  .no-synopsis-container {
+    margin-bottom: 150px;
   }
 
   /*End Sinópsis - Organismos*/

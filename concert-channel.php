@@ -102,10 +102,16 @@
     </header>
     <div class="concert-container">
         <section class="today-concert-channel">
-            <div class="concert-landing-header">
-                <img src="./images/home/concert-home-img.svg" alt="">
-                <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
-                <button class="btn-pink">VER PROGRAMACIÓN</button>
+            <div class="row no-gutters landing-header">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3 d-none d-md-block d-lg-block d-xl-block">
+                    <img src="./images/home/concert-home-img.svg" alt="">
+                </div>
+                <div class="col-12 col-md-5 col-lg-5 col-xl-5">
+                    <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-right">
+                    <button class="btn-magenta a-text-white-semibold btn-concert-channel">VER PROGRAMACIÓN</button>
+                </div>
             </div>
             <div class="today-concert-videos-container">
                 <div class="section-slider concert-slider today-concert-channel-slider">
@@ -126,13 +132,6 @@
                         </div>
                         <div class="thumbnail">
                         </div>
-                        <div class="a-concert-rectangle">
-                            <div class="poster-title-margin">
-                                <p class="a-poster-text-white">
-                                    ¿QUÉ TE HA DADO ESA MUJER?
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -140,6 +139,7 @@
         </section>
         <section class="concerts">
             <div class="concert-container-header">
+
                 <h1 class="concert-title">conciertos</h1>
                 <h2 class="concert-subtitle">ve un <span>adelanto</span> de la programación</h2>
             </div>
@@ -147,7 +147,7 @@
                 <div class="section-slider concert-slider">
                     <div class="poster">
                         <div class="poster-body">
-                            <div class="showtime-container">
+                            <div class="showtime-container justify-content-between">
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
@@ -164,7 +164,7 @@
                     </div>
                     <div class="poster">
                         <div class="poster-body">
-                            <div class="showtime-container">
+                            <div class="showtime-container justify-content-between">
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
@@ -181,7 +181,7 @@
                     </div>
                     <div class="poster">
                         <div class="poster-body">
-                            <div class="showtime-container">
+                            <div class="showtime-container justify-content-between">
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
@@ -198,7 +198,7 @@
                     </div>
                     <div class="poster">
                         <div class="poster-body">
-                            <div class="showtime-container">
+                            <div class="showtime-container justify-content-between">
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
@@ -215,7 +215,7 @@
                     </div>
                     <div class="poster">
                         <div class="poster-body">
-                            <div class="showtime-container">
+                            <div class="showtime-container justify-content-between">
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
@@ -232,7 +232,7 @@
                     </div>
                     <div class="poster">
                         <div class="poster-body">
-                            <div class="showtime-container">
+                            <div class="showtime-container justify-content-between">
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
@@ -260,7 +260,7 @@
                 <div class="section-slider concert-slider">
                     <div class="poster">
                         <div class="poster-body">
-                            <div class="showtime-container">
+                            <div class="showtime-container justify-content-between">
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
@@ -277,7 +277,7 @@
                     </div>
                     <div class="poster">
                         <div class="poster-body">
-                            <div class="showtime-container">
+                            <div class="showtime-container justify-content-between">
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
@@ -294,7 +294,7 @@
                     </div>
                     <div class="poster">
                         <div class="poster-body">
-                            <div class="showtime-container">
+                            <div class="showtime-container justify-content-between">
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
@@ -311,7 +311,7 @@
                     </div>
                     <div class="poster">
                         <div class="poster-body">
-                            <div class="showtime-container">
+                            <div class="showtime-container justify-content-between">
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
@@ -328,7 +328,7 @@
                     </div>
                     <div class="poster">
                         <div class="poster-body">
-                            <div class="showtime-container">
+                            <div class="showtime-container justify-content-between">
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
@@ -345,7 +345,7 @@
                     </div>
                     <div class="poster">
                         <div class="poster-body">
-                            <div class="showtime-container">
+                            <div class="showtime-container justify-content-between">
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
@@ -362,7 +362,7 @@
                     </div>
                     <div class="poster">
                         <div class="poster-body">
-                            <div class="showtime-container">
+                            <div class="showtime-container justify-content-between">
                                 <p class="a-programming-text">14:30 - 16:30</p>
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>

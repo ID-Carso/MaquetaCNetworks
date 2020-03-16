@@ -121,395 +121,39 @@
   <main>
     <div class="claro-cinema-container">
       <section class="today-claro-cinema">
-        <h1 class="a-today-cinema-title">hoy en <span>claro cinema</span></h1>
+        <div class="row no-gutters landing-header">
+          <div class="col-12 col-md-3 col-lg-3 col-xl-3 d-none d-md-block d-lg-block d-xl-block">
+            <img src="./images/home/cinema-home-img.svg" alt="">
+          </div>
+          <div class="col-12 col-md-5 col-lg-5 col-xl-5">
+            <h1 class="a-today-cinema-title">hoy en <span>claro cinema</span></h1>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ">
+            <button class="btn-teal-blue a-text-white-semibold btn-claro-cinema">VER PROGRAMACIÓN</button>
+          </div>
+        </div>
+
         <div class="no-gutters">
           <div class="today-cinema-videos-container">
             <div class="section-slider cinema-slider today-claro-cinema-slider">
-              <!--<div class="poster">
-                <div class="poster-body">
-                  <div class="showtime-container">
-                    <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                  </div>
-                  <a href="sinopsis.php">
-                    <div class="thumbnail">
-                      <img src="./images/claro-cinema/carrousel/01-encapuchados.jpg" alt="">
-                    </div>
-                    <div class="a-cinema-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                        <p class="a-poster-text-white">ENCAPUCHADOS</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-              </div>
-
-              <div class="poster">
-                <div class="poster-body">
-                  <div class="showtime-container">
-                    <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                  </div>
-                  <a href="sinopsis.php">
-                    <div class="thumbnail">
-                      <img src="./images/claro-cinema/carrousel/02-muneca-reina.jpg" alt="">
-                    </div>
-                    <div class="a-cinema-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                        <p class="a-poster-text-white">MUÑECA REINA</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-              </div>
-              <div class="poster">
-                <div class="poster-body">
-                  <div class="showtime-container">
-                    <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                  </div>
-                  <a href="sinopsis.php">
-                    <div class="thumbnail">
-                      <img src="./images/claro-cinema/carrousel/03-la-nina-de-mis-ojos.jpg" alt="">
-                    </div>
-                    <div class="a-cinema-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                        <p class="a-poster-text-white">LA NIÑA DE MIS OJOS</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-              </div>
-              <div class="poster">
-                <div class="poster-body">
-                  <div class="showtime-container">
-                    <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                  </div>
-                  <a href="sinopsis.php">
-                    <div class="thumbnail">
-                      <img src="./images/claro-cinema/carrousel/04-chanoc.jpg" alt="">
-                    </div>
-                    <div class="a-cinema-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                        <p class="a-poster-text-white">CHANOC</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-              </div>
-              <div class="poster">
-                <div class="poster-body">
-                  <div class="showtime-container">
-                    <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                  </div>
-                  <a href="sinopsis.php">
-                    <div class="thumbnail">
-                      <img src="./images/claro-cinema/carrousel/05-palabra-de-cine.jpg" alt="">
-                    </div>
-                    <div class="a-cinema-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                        <p class="a-poster-text-white">PALABRA DE CINEA</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-              </div>
-              <div class="poster">
-                <div class="poster-body">
-                  <div class="showtime-container">
-                    <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                  </div>
-                  <a href="sinopsis.php">
-                    <div class="thumbnail">
-                      <img src="./images/claro-cinema/carrousel/06-culpa-hombres.jpg" alt="">
-                    </div>
-                    <div class="a-cinema-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                        <p class="a-poster-text-white">LA CULPA DE LOS HOMBRES</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-              </div>
-              <div class="poster">
-                <div class="poster-body">
-                  <div class="showtime-container">
-                    <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                  </div>
-                  <a href="sinopsis.php">
-                    <div class="thumbnail">
-                      <img src="./images/claro-cinema/carrousel/07-cuando-se-quiere-se-quiere.jpg" alt="">
-                    </div>
-                    <div class="a-cinema-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                        <p class="a-poster-text-white">CUANDO SE QUIERE, SE QUIERE</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-              </div>
-              <div class="poster">
-                <div class="poster-body">
-                  <div class="showtime-container">
-                    <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                  </div>
-                  <a href="sinopsis.php">
-                    <div class="thumbnail">
-                      <img src="./images/claro-cinema/carrousel/08-el-superflaco.jpg" alt="">
-                    </div>
-                    <div class="a-cinema-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                        <p class="a-poster-text-white">EL SUPERFLACO</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-              </div>
-              <div class="poster">
-                <div class="poster-body">
-                  <div class="showtime-container">
-                    <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                  </div>
-                  <a href="sinopsis.php">
-                    <div class="thumbnail">
-                      <img src="./images/claro-cinema/carrousel/09-el-detective.jpg" alt="">
-                    </div>
-                    <div class="a-cinema-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                        <p class="a-poster-text-white">EL DETECTIVE</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>-->
             </div>
           </div>
         </div>
-
-
       </section>
       <section class="imperdibles">
         <div class="header-title-section">
-          <div class="">
-            <h1 class="a-cinema-title">las <span>imperdibles</span></h1>
-            <h2 class="a-cinema-subtitle">
-              ve un <span>adelanto</span> de la programación
-            </h2>
-          </div>
+          <h1 class="a-cinema-title">las <span>imperdibles</span></h1>
+          <h2 class="a-cinema-subtitle">
+            ve un <span>adelanto</span> de la programación
+          </h2>
         </div>
         <div class="imperdibles-video-container">
-          <div class="imperdibles-videos-mobile">
-            <div class="imperdibles-slider cinema-slider">
-              <div class="poster">
-                <div class="poster-body">
-                  <div class="showtime-container">
-                    <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                  </div>
-                  <div class="thumbnail">
-                  </div>
-                  <div class="a-cinema-rectangle">
-                    <div class="poster-title-margin">
-                      <p class="a-poster-text-white">
-                        ¿QUÉ TE HA DADO ESA MUJER?
-                      </p>
-                    </div>
-                  </div>
-                </div>
+          <div class="poster">
+            <div class="poster-body">
+              <div class="showtime-container justify-content-end">
+                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
               </div>
-
-              <div class="poster">
-                <div class="poster-body">
-                  <div class="showtime-container">
-                    <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                  </div>
-                  <div class="thumbnail">
-                  </div>
-                  <div class="a-cinema-rectangle">
-                    <div class="poster-title-margin">
-                      <p class="a-poster-text-white">
-                        ¿QUÉ TE HA DADO ESA MUJER?
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="poster">
-                <div class="poster-body">
-                  <div class="showtime-container">
-                    <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                  </div>
-                  <div class="thumbnail">
-                  </div>
-                  <div class="a-cinema-rectangle">
-                    <div class="poster-title-margin">
-                      <p class="a-poster-text-white">
-                        ¿QUÉ TE HA DADO ESA MUJER?
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="poster">
-                <div class="poster-body">
-                  <div class="showtime-container">
-                    <p class="a-programming-text">14:30 - 16:30</p>
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                  </div>
-                  <div class="thumbnail">
-                  </div>
-                  <div class="a-cinema-rectangle">
-                    <div class="poster-title-margin">
-                      <p class="a-poster-text-white">
-                        ¿QUÉ TE HA DADO ESA MUJER?
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-
-          <!--Imperdibles: videos para tablet-->
-          <div class="imperdibles-videos-tablet">
-            <div class="row">
-              <div class="col poster-pad-r poster-section">
-                <div class="poster">
-                  <div class="poster-body">
-                    <div class="showtime-container">
-                      <p class="a-programming-text">14:30 - 16:30</p>
-                      <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                    </div>
-                    <div class="thumbnail">
-                    </div>
-                    <div class="a-cinema-rectangle">
-                      <div class="poster-title-margin">
-                        <p class="a-poster-text-white">
-                          ¿QUÉ TE HA DADO ESA MUJER?
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col poster-pad-l">
-                <div class="poster">
-                  <div class="poster-body">
-                    <div class="showtime-container">
-                      <p class="a-programming-text">14:30 - 16:30</p>
-                      <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                    </div>
-                    <div class="thumbnail">
-                    </div>
-                    <div class="a-cinema-rectangle">
-                      <div class="poster-title-margin">
-                        <p class="a-poster-text-white">
-                          ¿QUÉ TE HA DADO ESA MUJER?
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="imperdibles-videos-desktop">
-            <div class="row">
-              <div class="col poster-pad-r poster-pad-b poster-section">
-                <div class="poster">
-                  <div class="poster-body">
-
-                    <div class="thumbnail">
-                    </div>
-                    <div class="a-cinema-rectangle">
-                      <div class="poster-title-margin">
-                        <p class="a-poster-text-white">
-                          ¿QUÉ TE HA DADO ESA MUJER?
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col poster-pad-l poster-pad-b">
-                <div class="poster">
-                  <div class="poster-body">
-                    <div class="showtime-container">
-                      <p class="a-programming-text">14:30 - 16:30</p>
-                      <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                    </div>
-                    <div class="thumbnail">
-                    </div>
-                    <div class="a-cinema-rectangle">
-                      <div class="poster-title-margin">
-                        <p class="a-poster-text-white">
-                          ¿QUÉ TE HA DADO ESA MUJER?
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col poster-pad-r poster-pad-t poster-section">
-                <div class="poster">
-                  <div class="poster-body">
-                    <div class="showtime-container">
-                      <p class="a-programming-text">14:30 - 16:30</p>
-                      <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                    </div>
-                    <div class="thumbnail">
-                    </div>
-                    <div class="a-cinema-rectangle">
-                      <div class="poster-title-margin">
-                        <p class="a-poster-text-white">
-                          ¿QUÉ TE HA DADO ESA MUJER?
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col poster-pad-l poster-pad-t">
-                <div class="poster">
-                  <div class="poster-body">
-                    <div class="showtime-container">
-                      <p class="a-programming-text">14:30 - 16:30</p>
-                      <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                    </div>
-                    <div class="thumbnail">
-                    </div>
-                    <div class="a-cinema-rectangle">
-                      <div class="poster-title-margin">
-                        <p class="a-poster-text-white">
-                          ¿QUÉ TE HA DADO ESA MUJER?
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="thumbnail">
               </div>
             </div>
           </div>
@@ -531,7 +175,7 @@
           <div class="section-slider cinema-slider">
             <div class="poster">
               <div class="poster-body">
-                <div class="showtime-container">
+                <div class="showtime-container justify-content-between">
                   <p class="a-programming-text">14:30 - 16:30</p>
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
@@ -548,7 +192,7 @@
             </div>
             <div class="poster">
               <div class="poster-body">
-                <div class="showtime-container">
+                <div class="showtime-container justify-content-between">
                   <p class="a-programming-text">14:30 - 16:30</p>
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
@@ -565,7 +209,7 @@
             </div>
             <div class="poster">
               <div class="poster-body">
-                <div class="showtime-container">
+                <div class="showtime-container justify-content-between">
                   <p class="a-programming-text">14:30 - 16:30</p>
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
@@ -582,7 +226,7 @@
             </div>
             <div class="poster">
               <div class="poster-body">
-                <div class="showtime-container">
+                <div class="showtime-container justify-content-between">
                   <p class="a-programming-text">14:30 - 16:30</p>
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
@@ -599,7 +243,7 @@
             </div>
             <div class="poster">
               <div class="poster-body">
-                <div class="showtime-container">
+                <div class="showtime-container justify-content-between">
                   <p class="a-programming-text">14:30 - 16:30</p>
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
@@ -616,7 +260,7 @@
             </div>
             <div class="poster">
               <div class="poster-body">
-                <div class="showtime-container">
+                <div class="showtime-container justify-content-between">
                   <p class="a-programming-text">14:30 - 16:30</p>
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
@@ -633,7 +277,7 @@
             </div>
             <div class="poster">
               <div class="poster-body">
-                <div class="showtime-container">
+                <div class="showtime-container justify-content-between">
                   <p class="a-programming-text">14:30 - 16:30</p>
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
@@ -665,7 +309,7 @@
           <div class="section-slider cinema-slider">
             <div class="poster">
               <div class="poster-body">
-                <div class="showtime-container">
+                <div class="showtime-container justify-content-between">
                   <p class="a-programming-text">14:30 - 16:30</p>
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
@@ -682,7 +326,7 @@
             </div>
             <div class="poster">
               <div class="poster-body">
-                <div class="showtime-container">
+                <div class="showtime-container justify-content-between">
                   <p class="a-programming-text">14:30 - 16:30</p>
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
@@ -699,7 +343,7 @@
             </div>
             <div class="poster">
               <div class="poster-body">
-                <div class="showtime-container">
+                <div class="showtime-container justify-content-between">
                   <p class="a-programming-text">14:30 - 16:30</p>
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
@@ -716,7 +360,7 @@
             </div>
             <div class="poster">
               <div class="poster-body">
-                <div class="showtime-container">
+                <div class="showtime-container justify-content-between">
                   <p class="a-programming-text">14:30 - 16:30</p>
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
@@ -733,7 +377,7 @@
             </div>
             <div class="poster">
               <div class="poster-body">
-                <div class="showtime-container">
+                <div class="showtime-container justify-content-between">
                   <p class="a-programming-text">14:30 - 16:30</p>
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
@@ -750,7 +394,7 @@
             </div>
             <div class="poster">
               <div class="poster-body">
-                <div class="showtime-container">
+                <div class="showtime-container justify-content-between">
                   <p class="a-programming-text">14:30 - 16:30</p>
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>

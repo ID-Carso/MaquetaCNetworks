@@ -317,3 +317,20 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+.btn-magenta {
+  background: $btnBackPink;
+  border: $btnBackPink;
+}
+
+.btn-teal-blue {
+  background: $cinemaRectangle;
+  border: $cinemaRectangle;
+}
+
+.btn-concert-channel,
+.btn-claro-cinema {
+  border-radius: 25px;
+  padding: 8px 12px;
+  outline: none;
+}

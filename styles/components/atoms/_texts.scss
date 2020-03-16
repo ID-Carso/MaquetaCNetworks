@@ -715,7 +715,6 @@
 
 .header-title-section {
   background: black;
-  margin-bottom: 10px;
 }
 
 /*end claro cinema*/
@@ -1238,6 +1237,16 @@
   color: $colorWhite;
 }
 
+.a-text-white-semibold {
+  font-family: $montserratSemiBold;
+  color: $colorWhite;
+}
+
+.a-text-white-monblack {
+  font-family: $montserratBlack;
+  color: $colorWhite;
+}
+
 .a-text-warm-grey-bold {
   font-family: $montserratBold;
   color: $warmGray;
@@ -1366,4 +1375,12 @@
 
 .text-landing-footer {
   margin-bottom: 3px;
+}
+
+.no-synopsis-title {
+  padding-bottom: 15px;
+}
+
+.no-synopsis-title span {
+  color: $sunflowerYellow;
 }
