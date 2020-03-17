@@ -76,23 +76,13 @@
             include 'menu-mobile.php';
             ?>
             <!--End menú para móvil-->
-            <nav class="menu-tablet">
-                <div class="nav-content">
-                    <div class="claro-logo">
-                        <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
-
-                        <a href="home.php">
-                            <img class="logo" src="./images/home/claro-logo.svg" alt="" />
-                        </a>
-                    </div>
-
-                    <div class="login">
-                        <a href="index.php" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
-                    </div>
-                </div>
-            </nav>
+            <div class="menu-tablet-container">
+                <?php
+                include './views/partials/menu-tablet-white.php';
+                ?>
+            </div>
             <?php
-            include 'menu-desktop.php';
+            include './views/partials/menu-desktop-white.php'
             ?>
             <div class="header-slider">
                 <div class="header-slide">
@@ -368,7 +358,10 @@
         </div>
         </div>
     </main>
-
+    <!--Modal de programa al añadir a favoritos-->
+    <?php
+    include './views/partials/modal-program.php'
+    ?>
 </body>
 
 </html>

@@ -42,22 +42,15 @@
     <?php include('./views/partials/hamburguer-menu.php') ?>
 
     <div>
-      <?php include('./views/partials/menu-perfil.php') ?>
+      <?php
+      include './views/partials/menu-mobile-white.php';
+      ?>
 
-      <nav class="menu-tablet " style="    padding: calc(3% + 4px) calc(8% - 10px) 0px calc(8% - 10px);">
-        <div class="nav-content">
-          <div class="claro-logo">
-            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" />
 
-            <a href="home.php"><img class="logo" src="./images/home/claro-logo.svg" /></a>
-          </div>
+      <?php
+      include './views/partials/menu-tablet-white.php';
+      ?>
 
-          <div class="login">
-            <a href="index.php" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
-          </div>
-        </div>
-
-      </nav>
       <?php
       include 'menu-desktop.php';
       ?>

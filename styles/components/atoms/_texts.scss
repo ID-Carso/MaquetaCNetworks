@@ -548,7 +548,7 @@
 }
 
 .a-today-claro-title {
-  padding: 24px 0px;
+  padding: 20px 0px;
 }
 
 .a-today-claro-title,
@@ -1367,14 +1367,37 @@
   font-size: 16px;
   color: $navbarItemColor;
   margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.home-list-links-footer {
+  .text-landing-footer {
+    color: $navbarItemColor;
+  }
+}
+
+.cclaro-list-links-footer {
+  .text-landing-footer {
+    color: $navbarItemColor;
+  }
+}
+
+.cconcert-list-links-footer {
+  .text-landing-footer {
+    color: $colorWhite;
+  }
+}
+
+.ccinema-list-links-footer {
+  .text-landing-footer {
+    color: $pureBlack;
+  }
 }
 
 .text-landing-footer {
   text-align: center;
-}
-
-.text-landing-footer {
   margin-bottom: 3px;
+  font-size: 9px;
 }
 
 .no-synopsis-title {

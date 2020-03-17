@@ -2,12 +2,11 @@ import { addFavorites } from "./user/user.js";
 
 function createClickThumbnails() {
   $(".poster, .poster-live").click(function() {
-    console.log("POjpoj");
     let posterButtonId = $(this)
       .find(".poster-button")
       .attr("_id");
     let posterLiveId = $(this).attr("_id");
-    console.log(posterButtonId);
+
     if (posterButtonId) {
       showSynopsis(posterButtonId);
     } else {
@@ -1167,7 +1166,6 @@ function getPrograms(date, time) {
 }
 
 function showSynopsis(id) {
-  console.log(id);
   let dataUser = {
     function: "showSynopsis",
     chapter_id: id

@@ -11,13 +11,13 @@
       <div class="text-center sidebar-header">
 
       </div>
-      <a href="home.php" class="sidebar-link">
-        <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
-          <span class="dropdown-p">Inicio</span>
-        </div>
-      </a>
-      <div class="sidebar-content">
 
+      <div class="sidebar-content">
+        <a href="home.php" class="sidebar-link">
+          <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
+            <span class="dropdown-p">Inicio</span>
+          </div>
+        </a>
         <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
           <span class="dropdown-p active-sidebar-item">Canal Claro</span>
         </div>
@@ -80,23 +80,14 @@
       include 'menu-mobile.php';
       ?>
       <!--End menú para móvil-->
-      <nav class="menu-tablet">
-        <div class="nav-content">
-          <div class="claro-logo">
-            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
-            <a href="home.php">
-              <img class="logo" src="./images/home/claro-logo.svg" alt="" />
-            </a>
+      <div class="menu-tablet-container">
+        <?php
+        include './views/partials/menu-tablet-white.php';
+        ?>
+      </div>
 
-          </div>
-
-          <div class="login">
-            <a href="index.php" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
-          </div>
-        </div>
-      </nav>
       <?php
-      include 'menu-desktop.php';
+      include './views/partials/menu-desktop-white.php'
       ?>
 
 
@@ -126,7 +117,18 @@
   <main class="today">
     <section class="today-canal-claro">
       <div class="today-container">
-        <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
+        <div class="row no-gutters landing-header">
+          <div class="col-12 col-md-3 col-lg-3 col-xl-3 d-none d-md-block d-lg-block d-xl-block">
+            <img src="./images/home/tv-1.svg" alt="" class="lading-header-image-claro">
+          </div>
+          <div class="col-12 col-md-5 col-lg-5 col-xl-5">
+            <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ">
+            <a href="programacion.php"><button class="btn-claro-canal a-text-white-semibold btn-tomato">VER PROGRAMACIÓN</button></a>
+          </div>
+        </div>
+
         <div class="today-videos-container">
           <div class="section-slider today-claro-slider">
           </div>
@@ -520,29 +522,11 @@
     <?php
     include 'advertising-section.php'
     ?>
-    <section>
-      <div class="">
-        <div class="row no-gutters">
-          <div class="col-12">
-            <h1 class="footer-title-claro">¡síguenos!</h1>
-          </div>
-          <div class="social-media">
-            <div class="col ">
-              <img class="social-icon" src="./images/redes/facebook-icon-red.svg" alt="" />
-            </div>
-            <div class="col">
-              <img class="social-icon" src="./images/redes/insta-icon-red.svg" alt="" />
-            </div>
-            <div class="col">
-              <img class="social-icon" src="./images/redes/twitter-icon-red.svg" alt="" />
-            </div>
-            <div class="col">
-              <img class="social-icon" src="./images/redes/youtube-icon-red.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="cclaro-list-links-footer">
+      <?php
+      include './views/partials/list-links-footer.php';
+      ?>
+    </div>
   </main>
   <?php
   include 'footer.php'

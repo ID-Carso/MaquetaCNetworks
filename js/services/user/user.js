@@ -569,6 +569,7 @@ function addFavorites() {
 }
 
 function removeFavorites(user_id, program_id, removeButton, itemList) {
+  console.log(user_id, program_id);
   let heartIcon = removeButton.children(".poster-add");
   let heartIconGray = removeButton.find("path");
   let dataUser = {
@@ -585,7 +586,6 @@ function removeFavorites(user_id, program_id, removeButton, itemList) {
       let json = JSON.parse(result);
       console.log(json);
       let sections = json.data;
-
       if (itemList) {
         itemList.remove();
       }

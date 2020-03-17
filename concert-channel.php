@@ -73,21 +73,13 @@
             include 'menu-mobile.php';
             ?>
             <!--End menú para móvil-->
-            <nav class="menu-tablet">
-                <div class="nav-content">
-                    <div class="claro-logo">
-                        <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
-                        <a href="home.php">
-                            <img class="logo" src="./images/home/claro-logo.svg" alt="" />
-                        </a>
-                    </div>
-                    <div class="login">
-                        <a href="index.php" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
-                    </div>
-                </div>
-            </nav>
+            <div class="menu-tablet-container">
+                <?php
+                include './views/partials/menu-tablet-white.php';
+                ?>
+            </div>
             <?php
-            include 'menu-desktop.php';
+            include './views/partials/menu-desktop-white.php'
             ?>
             <div class="header-slider">
                 <div class="header-slide">
@@ -110,7 +102,7 @@
                     <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
                 </div>
                 <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-right">
-                    <button class="btn-magenta a-text-white-semibold btn-concert-channel">VER PROGRAMACIÓN</button>
+                    <a href="programacion.php"><button class="btn-magenta a-text-white-semibold btn-concert-channel">VER PROGRAMACIÓN</button></a>
                 </div>
             </div>
             <div class="today-concert-videos-container">
@@ -384,27 +376,10 @@
         <?php
         include 'advertising-section.php'
         ?>
-        <div class="">
-            <div class="row no-gutters">
-                <div class="col-10 mx-auto">
-                    <h1 class="footer-title">¡sígue a <br>concert channel!</h1>
-                </div>
-                <div class="social-media">
-                    <div class="col ">
-                        <img class="social-icon" src="./images/redes/facebook-icon-green.svg" alt="">
-                    </div>
-                    <div class="col">
-                        <img class="social-icon" src="./images/redes/insta-icon-green.svg" alt="">
-                    </div>
-                    <div class="col">
-                        <img class="social-icon" src="./images/redes/twitter-icon-green.svg" alt="">
-                    </div>
-                    <div class="col">
-                        <img class="social-icon" src="./images/redes/youtube-icon-green.svg" alt="">
-                    </div>
-
-                </div>
-            </div>
+        <div class="cconcert-list-links-footer">
+            <?php
+            include './views/partials/list-links-footer.php';
+            ?>
         </div>
         <footer>
             <?php

@@ -760,7 +760,7 @@ h6 {
 }
 
 .a-today-claro-title {
-  padding: 24px 0px;
+  padding: 20px 0px;
 }
 
 .a-today-claro-title,
@@ -1586,14 +1586,29 @@ h6 {
   font-size: 16px;
   color: #525050;
   margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.home-list-links-footer .text-landing-footer {
+  color: #525050;
+}
+
+.cclaro-list-links-footer .text-landing-footer {
+  color: #525050;
+}
+
+.cconcert-list-links-footer .text-landing-footer {
+  color: #ffffff;
+}
+
+.ccinema-list-links-footer .text-landing-footer {
+  color: #000000;
 }
 
 .text-landing-footer {
   text-align: center;
-}
-
-.text-landing-footer {
   margin-bottom: 3px;
+  font-size: 9px;
 }
 
 .no-synopsis-title {
@@ -1944,8 +1959,14 @@ h6 {
   border: #0097a9;
 }
 
+.btn-tomato {
+  background: #da291c;
+  border: #da291c;
+}
+
 .btn-concert-channel,
-.btn-claro-cinema {
+.btn-claro-cinema,
+.btn-claro-canal {
   border-radius: 25px;
   padding: 8px 12px;
   outline: none;
@@ -2595,7 +2616,7 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: -1;
 }
 
 .image-list-points {
@@ -2886,7 +2907,7 @@ input[type="checkbox"]:checked + label::before {
   font-size: 18px;
   text-align: center;
   vertical-align: middle;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #ffffff;
   background: #069cb0;
 }
@@ -3157,8 +3178,6 @@ input::-webkit-credentials-auto-fill-button {
 
 .link-landing-footer {
   text-decoration: none;
-  color: #525050;
-  font-size: 9px;
 }
 
 /* Tag image */
@@ -5391,6 +5410,10 @@ input[type="radio"]:checked + .mujer-estilo {
   margin: auto;
 }
 
+.landing-header {
+  padding-bottom: 20px;
+}
+
 .hamburguer-menu {
   position: fixed;
   width: 350px;
@@ -5409,11 +5432,17 @@ input[type="radio"]:checked + .mujer-estilo {
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   z-index: 10;
-  position: initial;
+}
+
+.menu-tablet-container {
+  z-index: 10;
+  width: 100%;
+  position: absolute;
 }
 
 .home-header .menu-tablet {
   position: initial;
+  padding: 0%;
 }
 
 .concert-channel-header .menu-tablet {
@@ -5487,10 +5516,6 @@ input[type="radio"]:checked + .mujer-estilo {
      object-fit: contain;
 }
 
-.perfil-header .menu-tablet {
-  padding: calc(3% + 4px) calc(8% - 10px) 0px calc(8% - 10px);
-}
-
 .categorias-menu {
   position: fixed;
   width: 100%;
@@ -5500,11 +5525,6 @@ input[type="radio"]:checked + .mujer-estilo {
   opacity: 0;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-}
-
-.lista-header .menu-tablet {
-  padding: calc(3% + 4px) calc(8% - 10px) calc(3% + 4px) calc(8% - 10px);
-  background: #4dd0e1;
 }
 
 .menu-ingreso {
@@ -5577,6 +5597,10 @@ input[type="radio"]:checked + .mujer-estilo {
   /*1.- ATOMS*/
   /*============================*/
   /*1.1 - General - Átomos*/
+  .modal-image-program {
+    width: 100%;
+    max-width: 150px;
+  }
   .menu-responsive {
     width: 25px;
     position: inherit;
@@ -5642,8 +5666,8 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .login {
     position: absolute;
-    right: -8px;
-    top: -8px;
+    right: 0px;
+    top: 0px;
     z-index: 1;
     background: rgba(97, 109, 113, 0.7);
     padding: 8px;
@@ -5704,15 +5728,11 @@ input[type="radio"]:checked + .mujer-estilo {
   .modal-program-text {
     font-size: 21px;
   }
-  .modal-image-program {
-    width: 100%;
-    max-width: 90px;
-  }
   .concerthome-image-header {
     width: 80px;
   }
   .text-landing-footer {
-    font-size: 14px;
+    font-size: 12px;
   }
   /*End General - Átomos*/
   /*============================*/
@@ -5826,8 +5846,7 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*1.3 - Claro Canal - Átomos*/
   .a-today-claro-title {
-    font-size: 30px;
-    padding-bottom: 44px;
+    font-size: 23px;
     padding-top: 10px;
   }
   .a-next-claro-title,
@@ -5841,6 +5860,9 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-bottom: 50px;
     text-align: left;
     font-size: 20px;
+  }
+  .lading-header-image-claro {
+    width: 150px;
   }
   /*End Claro Canal - Átomos*/
   /*============================*/
@@ -6231,6 +6253,9 @@ input[type="radio"]:checked + .mujer-estilo {
     -webkit-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
   }
+  .menu-tablet {
+    padding: 5%;
+  }
   .header {
     background: transparent;
     padding: 0;
@@ -6241,8 +6266,8 @@ input[type="radio"]:checked + .mujer-estilo {
   .synopsis-header .menu-tablet,
   .claro-cinema-header .menu-tablet,
   .programacion-header .menu-tablet {
-    background-color: white;
-    padding: 5%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
   }
   .advertising-section-tablet {
     display: block;
@@ -6350,11 +6375,12 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .canal-videos-container,
   .tv-videos-container,
+  .cinema-home-slider,
   .home-concert-videos-container,
   .home-cinema-videos-container,
   .home-vision-videos-container,
   .today-videos-container {
-    padding-left: calc(3% - 6px);
+    padding-left: 16px;
   }
   .claro-section-header,
   .vision-section-header,
@@ -6709,6 +6735,10 @@ input[type="radio"]:checked + .mujer-estilo {
   /*Base*/
   /***  ATOMS  ****/
   /*1.1 - General - Átomos */
+  .modal-image-program {
+    width: 100%;
+    max-width: 150px;
+  }
   .header-curve {
     bottom: -19%;
   }
@@ -6807,7 +6837,6 @@ input[type="radio"]:checked + .mujer-estilo {
   .a-today-cinema-title,
   .today-concert-title {
     font-size: 30px;
-    padding-bottom: 60px;
   }
   .menu-responsive {
     display: none;
@@ -7055,6 +7084,9 @@ input[type="radio"]:checked + .mujer-estilo {
   .next-week-thumb {
     padding-bottom: 57%;
   }
+  .lading-header-image-claro {
+    width: 200px;
+  }
   /*End Claro canal - átomos*/
   /*-----------------------------*/
   /*1.4 - Concert Channel - Átomos */
@@ -7299,7 +7331,6 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .menu-tablet {
     display: block;
-    padding: 0px;
   }
   .nav-content {
     margin: 0px;
@@ -7461,6 +7492,9 @@ input[type="radio"]:checked + .mujer-estilo {
     -webkit-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
   }
+  .menu-tablet {
+    padding: 30px;
+  }
   .synopsis-header .header,
   .claro-cinema-header .header {
     overflow: hidden;
@@ -7473,8 +7507,8 @@ input[type="radio"]:checked + .mujer-estilo {
   .synopsis-header .menu-tablet,
   .claro-cinema-header .menu-tablet,
   .programacion-header .menu-tablet {
-    background-color: white;
-    padding: calc(2% + 2px);
+    background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
   }
   .terms-conditions-desktop {
     display: block;
@@ -7940,6 +7974,10 @@ input[type="radio"]:checked + .mujer-estilo {
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
   /***  1.- ATOMS  ****/
   /*1.1.- Generales - átomos*/
+  .modal-image-program {
+    width: 100%;
+    max-width: 200px;
+  }
   .a-cinema-subtitle,
   .concert-subtitle {
     font-size: 20px;
@@ -7954,7 +7992,6 @@ input[type="radio"]:checked + .mujer-estilo {
   .a-today-cinema-title,
   .today-concert-title {
     font-size: 30px;
-    padding: 50px 0;
   }
   .border-right {
     border-right: 1px solid #a1a0a0 !important;
@@ -8036,12 +8073,11 @@ input[type="radio"]:checked + .mujer-estilo {
   .a-today-cinema-title,
   .today-concert-title {
     font-size: 30px;
-    padding: 30px 0px 58px 0px;
   }
   .login {
     position: absolute;
-    right: -8px;
-    top: -8px;
+    right: 0px;
+    top: 0px;
     z-index: 1;
     background: rgba(97, 109, 113, 0.7);
     padding: 8px;
@@ -8173,9 +8209,6 @@ input[type="radio"]:checked + .mujer-estilo {
   .advertising-subtitle {
     text-align: left;
   }
-  .home-header .navbar-item {
-    color: #525050;
-  }
   .section-home-footer {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -8244,6 +8277,9 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .next-week-thumb {
     padding-bottom: 54%;
+  }
+  .lading-header-image-claro {
+    width: 250px;
   }
   /*End Claro canal - átomos*/
   /*-----------------------------*/
@@ -8399,9 +8435,6 @@ input[type="radio"]:checked + .mujer-estilo {
   .list-item-container .poster {
     width: 34%;
     margin-right: 5%;
-  }
-  .lista-header .navbar-item {
-    color: #767373;
   }
   .lista-header .menu-desktop {
     padding-bottom: 70px;
@@ -9232,6 +9265,10 @@ input[type="radio"]:checked + .mujer-estilo {
   /***  1.- ATOMS  ****/
   /*-----------------------------*/
   /*1.1 General -  Átomos  */
+  .modal-image-program {
+    width: 100%;
+    max-width: 250px;
+  }
   .margin-ahora-tv {
     margin-bottom: 21px;
   }
@@ -9332,7 +9369,6 @@ input[type="radio"]:checked + .mujer-estilo {
   .a-today-cinema-title,
   .today-concert-title {
     font-size: 40px;
-    padding: 80px 0px;
   }
   .login {
     position: absolute;
@@ -9472,9 +9508,6 @@ input[type="radio"]:checked + .mujer-estilo {
     border-right: 1px solid #a1a0a0 !important;
     padding-right: 5px;
   }
-  .home-header .navbar-item {
-    color: #525050;
-  }
   .navbar-item {
     font-size: 16px;
   }
@@ -9511,6 +9544,9 @@ input[type="radio"]:checked + .mujer-estilo {
     font-size: 30px;
     padding-bottom: 57px;
     text-align: left;
+  }
+  .lading-header-image-claro {
+    width: 250px;
   }
   /*End Claro Canal - Átomos*/
   /*-----------------------------*/
@@ -9680,9 +9716,6 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .my-list-title {
     padding-top: 100px;
-  }
-  .lista-header .navbar-item {
-    color: #767373;
   }
   .my-list-title,
   .list-title-section {

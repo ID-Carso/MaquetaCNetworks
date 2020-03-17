@@ -9,68 +9,17 @@
     <header class="avatar-header">
         <?php include('./views/partials/hamburguer-menu.php') ?>
 
-        <div>
-            <nav class="menu-perfil">
-                <div class="nav-content">
-                    <div class="claro-logo">
-                        <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
+        <?php
+        include './views/partials/menu-mobile-white.php';
+        ?>
 
-                        <img class="logo" src="./images/alertas/claro-networks.svg" />
-                    </div>
+        <?php
+        include './views/partials/menu-tablet-white.php';
+        ?>
 
-                    <div class="login">
-                        <a href="home.php" class="login-item"><img src="./images/alertas/btn-home.svg" /></a>
-                        <a href="index.html" class="login-item"><img class="login-country" src="" /></a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-        <nav class="menu-tablet" style="padding: calc(3% + 4px) calc(8% - 10px) 0px calc(8% - 10px);">
-            <div class="nav-content">
-                <div class="claro-logo">
-                    <img class="menu-responsive-tablet" src="./images/home/responsive-menu.svg" alt="" />
-
-                    <a href="home.php"><img class="logo" src="./images/home/claro-logo.svg" /></a>
-                </div>
-
-                <div class="login">
-                    <a href="index.php" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
-                </div>
-            </div>
-            <div class="claro-navbar">
-                <div>
-                    <a href="claro-canal.php" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Canal Claro</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="concert-channel.php" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Concert Channel</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="claro-cinema.php" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Claro Cinema</p>
-                    </a>
-                </div>
-                <div>
-                    <a target="_blank" href="https://nuestravision.tv" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Nuestra Visión</p>
-                    </a>
-                </div>
-                <div>
-                    <a target="_blank" href="https://www.marca.com/claro-mx/" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Claro Sports</p>
-                    </a>
-                </div>
-                <!--<div>
-                    <a href="programacion.php" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Programación</p>
-                    </a>
-                </div>-->
-            </div>
-        </nav>
+        <?php
+        include './views/partials/menu-desktop-white.php';
+        ?>
     </header>
 
     <div class="aviso-container">

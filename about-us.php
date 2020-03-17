@@ -14,11 +14,13 @@ include './views/partials/head.php';
             <?php
             include './views/partials/menu-mobile-white.php';
             ?>
+            <div class="menu-tablet-container">
+                <?php
+                include './views/partials/menu-tablet-black.php';
+                ?>
+            </div>
             <?php
-            include './views/partials/menu-tablet-white.php';
-            ?>
-            <?php
-            include './views/partials/menu-desktop-white.php';
+            include './views/partials/menu-desktop-black.php';
             ?>
             <img src=" ./images/registro/group-3.svg" alt="" class="image-circle-blue">
             <img src="./images/registro/group-37.svg" alt="" class="image-points-blue">

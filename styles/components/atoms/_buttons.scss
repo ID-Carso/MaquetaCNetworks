@@ -328,8 +328,14 @@
   border: $cinemaRectangle;
 }
 
+.btn-tomato {
+  background: $tomatoColor;
+  border: $tomatoColor;
+}
+
 .btn-concert-channel,
-.btn-claro-cinema {
+.btn-claro-cinema,
+.btn-claro-canal {
   border-radius: 25px;
   padding: 8px 12px;
   outline: none;

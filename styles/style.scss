@@ -35,6 +35,12 @@
   /*1.- ATOMS*/
   /*============================*/
   /*1.1 - General - Átomos*/
+
+  .modal-image-program {
+    width: 100%;
+    max-width: 150px;
+  }
+
   .menu-responsive {
     width: 25px;
     position: inherit;
@@ -114,8 +120,8 @@
 
   .login {
     position: absolute;
-    right: -8px;
-    top: -8px;
+    right: 0px;
+    top: 0px;
     z-index: 1;
     background: rgba(97, 109, 113, 0.7);
     padding: 8px;
@@ -193,17 +199,12 @@
     font-size: 21px;
   }
 
-  .modal-image-program {
-    width: 100%;
-    max-width: 90px;
-  }
-
   .concerthome-image-header {
     width: 80px;
   }
 
   .text-landing-footer {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   /*End General - Átomos*/
@@ -342,8 +343,8 @@
   /*============================*/
   /*1.3 - Claro Canal - Átomos*/
   .a-today-claro-title {
-    font-size: 30px;
-    padding-bottom: 44px;
+    font-size: 23px;
+
     padding-top: 10px;
   }
 
@@ -359,6 +360,10 @@
     padding-bottom: 50px;
     text-align: left;
     font-size: 20px;
+  }
+
+  .lading-header-image-claro {
+    width: 150px;
   }
 
   /*End Claro Canal - Átomos*/
@@ -829,6 +834,10 @@
     transition: all 0.5s ease 0s;
   }
 
+  .menu-tablet {
+    padding: 5%;
+  }
+
   .header {
     background: transparent;
     padding: 0;
@@ -840,8 +849,7 @@
   .synopsis-header .menu-tablet,
   .claro-cinema-header .menu-tablet,
   .programacion-header .menu-tablet {
-    background-color: white;
-    padding: 5%;
+    background: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
   }
 
   .advertising-section-tablet {
@@ -978,11 +986,12 @@
 
   .canal-videos-container,
   .tv-videos-container,
+  .cinema-home-slider,
   .home-concert-videos-container,
   .home-cinema-videos-container,
   .home-vision-videos-container,
   .today-videos-container {
-    padding-left: calc(3% - 6px);
+    padding-left: 16px;
   }
 
   .claro-section-header,
@@ -1407,6 +1416,12 @@
   /***  ATOMS  ****/
 
   /*1.1 - General - Átomos */
+
+  .modal-image-program {
+    width: 100%;
+    max-width: 150px;
+  }
+
   .header-curve {
     bottom: -19%;
   }
@@ -1527,7 +1542,6 @@
   .a-today-cinema-title,
   .today-concert-title {
     font-size: 30px;
-    padding-bottom: 60px;
   }
 
   .menu-responsive {
@@ -1816,6 +1830,10 @@
 
   .next-week-thumb {
     padding-bottom: 57%;
+  }
+
+  .lading-header-image-claro {
+    width: 200px;
   }
 
   /*End Claro canal - átomos*/
@@ -2135,7 +2153,6 @@
 
   .menu-tablet {
     display: block;
-    padding: 0px;
   }
 
   .nav-content {
@@ -2332,6 +2349,10 @@
     transition: all 0.5s ease 0s;
   }
 
+  .menu-tablet {
+    padding: 30px;
+  }
+
   .synopsis-header .header,
   .claro-cinema-header .header {
     overflow: hidden;
@@ -2345,8 +2366,7 @@
   .synopsis-header .menu-tablet,
   .claro-cinema-header .menu-tablet,
   .programacion-header .menu-tablet {
-    background-color: white;
-    padding: calc(2% + 2px);
+    background: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
   }
 
   .terms-conditions-desktop {
@@ -2914,6 +2934,11 @@
 
   /*1.1.- Generales - átomos*/
 
+  .modal-image-program {
+    width: 100%;
+    max-width: 200px;
+  }
+
   .a-cinema-subtitle,
   .concert-subtitle {
     font-size: 20px;
@@ -2930,7 +2955,6 @@
   .a-today-cinema-title,
   .today-concert-title {
     font-size: 30px;
-    padding: 50px 0;
   }
 
   .border-right {
@@ -3030,13 +3054,12 @@
   .a-today-cinema-title,
   .today-concert-title {
     font-size: 30px;
-    padding: 30px 0px 58px 0px;
   }
 
   .login {
     position: absolute;
-    right: -8px;
-    top: -8px;
+    right: 0px;
+    top: 0px;
     z-index: 1;
     background: rgba(97, 109, 113, 0.7);
     padding: 8px;
@@ -3203,12 +3226,6 @@
     text-align: left;
   }
 
-  .home-header {
-    .navbar-item {
-      color: $navbarItemColor;
-    }
-  }
-
   .section-home-footer {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -3289,6 +3306,10 @@
 
   .next-week-thumb {
     padding-bottom: 54%;
+  }
+
+  .lading-header-image-claro {
+    width: 250px;
   }
 
   /*End Claro canal - átomos*/
@@ -3495,10 +3516,6 @@
   }
 
   .lista-header {
-    .navbar-item {
-      color: #767373;
-    }
-
     .menu-desktop {
       padding-bottom: 70px;
     }
@@ -4526,6 +4543,12 @@
 
   /*-----------------------------*/
   /*1.1 General -  Átomos  */
+
+  .modal-image-program {
+    width: 100%;
+    max-width: 250px;
+  }
+
   .margin-ahora-tv {
     margin-bottom: 21px;
   }
@@ -4647,7 +4670,6 @@
   .a-today-cinema-title,
   .today-concert-title {
     font-size: 40px;
-    padding: 80px 0px;
   }
 
   .login {
@@ -4824,12 +4846,6 @@
     padding-right: 5px;
   }
 
-  .home-header {
-    .navbar-item {
-      color: $navbarItemColor;
-    }
-  }
-
   .navbar-item {
     font-size: 16px;
   }
@@ -4874,6 +4890,10 @@
     font-size: 30px;
     padding-bottom: 57px;
     text-align: left;
+  }
+
+  .lading-header-image-claro {
+    width: 250px;
   }
 
   /*End Claro Canal - Átomos*/
@@ -5097,10 +5117,6 @@
 
   .my-list-title {
     padding-top: 100px;
-  }
-
-  .lista-header .navbar-item {
-    color: #767373;
   }
 
   .my-list-title,

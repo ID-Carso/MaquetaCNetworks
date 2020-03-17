@@ -143,6 +143,8 @@ $(document).ready(function() {
     synopsisButtonFavorite
       .children(".synopsis-heart")
       .attr("src", "./images/posters/heart-icon-white.svg");
+    synopsisButtonFavorite.removeClass("add-favorites");
+    synopsisButtonFavorite.addClass("remove-program");
   } else {
     synopsisButtonFavorite
       .children(".synopsis-heart")
@@ -829,11 +831,7 @@ $(document).ready(function() {
       let id = localStorage.getItem("id");
       let programId = $(this).attr("_id");
       let itemList = $(this).closest(".list-item-container");
-
       removeFavorites(id, programId, $(this), itemList);
-      /*if (e.target.classList.contains("remove-program")) {
-
-      }*/
     });
   }
 

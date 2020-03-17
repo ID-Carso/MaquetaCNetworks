@@ -93,72 +93,22 @@
         </div>
 
 
-        <?php include('./views/partials/menu-perfil.php') ?>
+        <?php
+        include './views/partials/menu-mobile-white.php';
+        ?>
 
-        <nav class="menu-tablet">
-            <div class="nav-content">
-                <div class="claro-logo">
-                    <img class="menu-responsive-tablet" src="./images/home/responsive-menu.svg" alt="" />
-
-                    <a href="home.php"><img class="logo" src="./images/alertas/claro-networks.svg" alt="" /></a>
-                </div>
-
-                <div class="login">
-                    <a href="index.php" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
-                </div>
-            </div>
-        </nav>
-        <nav class="menu-desktop">
-            <div class="nav-content">
-                <div class="claro-logo">
-
-                    <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
-
-                    <a href="home.php">
-                        <img class="logo" src="./images/home/claro-logo.svg" alt="" />
-                    </a>
-                </div>
-
-                <div class="user-options"></div>
-            </div>
-            <div class="claro-navbar">
-                <div>
-                    <a href="claro-canal.php" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Canal Claro</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="concert-channel.php" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Concert Channel</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="claro-cinema.php" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Claro Cinema</p>
-                    </a>
-                </div>
-                <div>
-                    <a target="_blank" href="https://nuestravision.tv" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Nuestra Visión</p>
-                    </a>
-                </div>
-                <div>
-                    <a target="_blank" href="https://www.marca.com/claro-mx/" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Claro Sports</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="programacion.php" class="navbar-link text-decoration-none">
-                        <p class="navbar-item">Programación</p>
-                    </a>
-                </div>
-            </div>
-        </nav>
+        <?php
+        include './views/partials/menu-tablet-black.php';
+        ?>
+        <?php
+        include './views/partials/menu-desktop-black.php'
+        ?>
     </header>
     <div class="alert-user">
     </div>
+    <img src="images/registro/group-3.svg" class="image-list-blue">
     <div class="lista-content">
-        <img src="images/registro/group-3.svg" class="image-list-blue">
+
         <img src="images/registro/group-37.svg" class="image-list-points">
         <div class="mi-lista-container col-sm-12 no-gutters col-md-12 no-gutters col-lg-12 mx-auto col-xl-9 shadow1 fondolog">
 

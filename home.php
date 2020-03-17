@@ -65,11 +65,6 @@
                         Sports</span>
                 </div>
             </a>
-            <a class="sidebar-link" href="programacion.php">
-                <div class="sidebar-item sidebar-border-bottom">
-                    <span class="dropdown-p">Programación</span>
-                </div>
-            </a>
             <!--prueba sidebar-->
         </div>
         <button class="invisible-button"></button>
@@ -100,49 +95,9 @@
                         </div>
                     </div>
                 </nav>
-                <nav class="menu-desktop">
-                    <div class="nav-content">
-                        <div class="claro-logo">
-
-                            <a href="home.php"><img class="logo" src="./images/home/claro-logo.svg" alt="" /></a>
-                        </div>
-
-                        <div class="user-options">
-                        </div>
-                    </div>
-                    <div class="claro-navbar">
-                        <div>
-                            <a href="claro-canal.php" class="navbar-link text-decoration-none">
-                                <p class="navbar-item">Canal Claro</p>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="concert-channel.php" class="navbar-link text-decoration-none">
-                                <p class="navbar-item">Concert Channel</p>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="claro-cinema.php" class="navbar-link text-decoration-none">
-                                <p class="navbar-item">Claro Cinema</p>
-                            </a>
-                        </div>
-                        <div>
-                            <a target="_blank" href="https://nuestravision.tv" class="navbar-link text-decoration-none">
-                                <p class="navbar-item">Nuestra Visión</p>
-                            </a>
-                        </div>
-                        <div>
-                            <a target="_blank" href="https://www.marca.com/claro-mx/" class="navbar-link text-decoration-none">
-                                <p class="navbar-item">Claro Sports</p>
-                            </a>
-                        </div>
-                        <!--<div>
-                            <a href="programacion.php" class="navbar-link text-decoration-none">
-                                <p class="navbar-item">Programación</p>
-                            </a>
-                        </div>-->
-                    </div>
-                </nav>
+                <?php
+                include './views/partials/menu-desktop-black.php'
+                ?>
 
                 <div class="header-details header-detail-margin col-md-6">
                     <h1 class="header-h1">
@@ -683,40 +638,12 @@
         <?php
         include 'advertising-section.php'
         ?>
-        <div class="col-11 mx-auto list-links-footer">
-            <div class="row no-gutters">
-                <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-                    <a href="about-us.php" class="link-landing-footer">
-                        <p class="text-landing-footer text-semibold">¿Quiénes somos?</p>
-                    </a>
-                </div>
-                <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-                    <a href="claro-canal.php" class="link-landing-footer">
-                        <p class="text-landing-footer text-semibold">Canal Claro</p>
-                    </a>
-                </div>
-                <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-                    <a href="claro-cinema.php" class="link-landing-footer">
-                        <p class="text-landing-footer text-semibold">Claro Cinema</p>
-                    </a>
-                </div>
-                <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-                    <a href="concert-channel.php" class="link-landing-footer">
-                        <p class="text-landing-footer text-semibold">Concert Channel</p>
-                    </a>
-                </div>
-                <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-                    <a href="https://www.marca.com/claro-mx/" target="_blank" class="link-landing-footer">
-                        <p class="text-landing-footer text-semibold">Claro Sports</p>
-                    </a>
-                </div>
-                <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-                    <a href="https://nuestravision.tv" target="_blank" class="link-landing-footer">
-                        <p class="text-landing-footer text-semibold">Nuestra Visión</p>
-                    </a>
-                </div>
-            </div>
+        <div class="home-list-links-footer">
+            <?php
+            include './views/partials/list-links-footer.php';
+            ?>
         </div>
+
 
 
         <!--Fin sección de anuncio-->
