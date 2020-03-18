@@ -279,12 +279,9 @@ function getPrograms(date, time) {
                         </button>
                         </div>
                     </div>
-                    <p class="schedule-description">Lorem ipsum dolor sit amet,
-                        consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p class="schedule-description">
+                        ${program.sinopsis}
+                    </p>
                 </div>
             </div>
     
@@ -317,12 +314,9 @@ function getPrograms(date, time) {
                         </button>
                         </div>
                     </div>
-                    <p class="schedule-description">Lorem ipsum dolor sit amet,
-                        consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p class="schedule-description">
+                    ${program.sinopsis}
+                    </p>
                 </div>
             </div>
     
@@ -452,12 +446,9 @@ function getPrograms(date, time) {
                             </button>
                         </div>
                     </div>
-                    <p class="schedule-description">Lorem ipsum dolor sit amet,
-                        consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p class="schedule-description">
+                        ${program.sinopsis}
+                    </p>
                 </div>
             </div>
     
@@ -490,12 +481,9 @@ function getPrograms(date, time) {
                             </button>
                         </div>
                     </div>
-                    <p class="schedule-description">Lorem ipsum dolor sit amet,
-                        consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p class="schedule-description">
+                        ${program.sinopsis}
+                    </p>
                 </div>
             </div>
     
@@ -629,12 +617,9 @@ function getPrograms(date, time) {
                         </button>
                         </div>
                     </div>
-                    <p class="schedule-description">Lorem ipsum dolor sit amet,
-                        consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p class="schedule-description">
+                    ${program.sinopsis}
+                    </p>
                 </div>
             </div>
     
@@ -667,12 +652,9 @@ function getPrograms(date, time) {
                         </button>
                         </div>
                     </div>
-                    <p class="schedule-description">Lorem ipsum dolor sit amet,
-                        consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p class="schedule-description">
+                    ${program.sinopsis}
+                    </p>
                 </div>
             </div>
     

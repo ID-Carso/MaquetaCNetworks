@@ -3,8 +3,16 @@
     <div class="advertising-section-mobile">
         <div class="row">
             <div class="col-12 m-auto">
-                <div class="adv-headline-mb text-center">
-                    <img src="./images/General/advertising.png" alt="" class="adv-image-text">
+                <div class="adv-headline-mb">
+                    <h1 class="advertising-title ">Disfruta</h1>
+                    <h2 class="advertising-subtitle">La mejor programación</h2>
+                </div>
+                <div>
+                    <p class="advertising-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tellus
+                        tellus, rutrum sit aamet purus in, interdum auctor nunc. Nulla
+                        facilisis mauris vel elit finibus, sit amet ornare massa suscipit.
+                    </p>
                 </div>
             </div>
             <div class="col-12 no-gutters">
@@ -19,7 +27,15 @@
             <div class="row">
                 <div class="col-6 m-auto">
                     <div class="adv-headline-mb">
-                        <img src="./images/General/advertising.png" alt="" class="adv-image-text">
+                        <h1 class="advertising-title ">Disfruta</h1>
+                        <h2 class="advertising-subtitle">La mejor programación</h2>
+                    </div>
+                    <div>
+                        <p class="advertising-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tellus
+                            tellus, rutrum sit aamet purus in, interdum auctor nunc. Nulla
+                            facilisis mauris vel elit finibus, sit amet ornare massa suscipit.
+                        </p>
                     </div>
                 </div>
                 <div class="col-6 no-gutters">
@@ -34,7 +50,17 @@
         <div class="col-lg-12">
             <div class="row">
                 <div class="col-5 col-lg-6">
-                    <img src="./images/General/advertising.png" alt="" class="adv-image-text">
+                    <div class="adv-headline-mb">
+                        <h1 class="advertising-title ">Disfruta</h1>
+                        <h2 class="advertising-subtitle">La mejor programación</h2>
+                    </div>
+                    <div>
+                        <p class="advertising-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tellus
+                            tellus, rutrum sit aamet purus in, interdum auctor nunc. Nulla
+                            facilisis mauris vel elit finibus, sit amet ornare massa suscipit.
+                        </p>
+                    </div>
                 </div>
                 <div class="col-7 col-lg-6 no-gutters">
                     <img src="./images/home/planes-copy.png" class="advertising-image" />

@@ -1964,6 +1964,12 @@ h6 {
   border: #da291c;
 }
 
+.btn-tomato:focus,
+.btn-teal-blue:focus,
+.btn-magenta:focus {
+  outline: none;
+}
+
 .btn-concert-channel,
 .btn-claro-cinema,
 .btn-claro-canal {
