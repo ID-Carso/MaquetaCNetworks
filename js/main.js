@@ -110,6 +110,7 @@ $(document).ready(function() {
   if (programSynopsis) {
     $(".synopsis-title").text(programSynopsis.title);
     synopsisButtonFavorite.attr("_id", programSynopsis.chapter_id);
+    $(".synopsis-description").text(programSynopsis.sinopsis);
   }
 
   let synopsisIdChapter = $(".synopsis-add").attr("_id");
@@ -150,6 +151,7 @@ $(document).ready(function() {
       .children(".synopsis-heart")
       .attr("src", "./images/posters/heart-outline.svg");
   }
+
   /*End Sinópsis */
   /* Lista de favoritos del usuario*/
 
@@ -1161,7 +1163,7 @@ $(document).ready(function() {
 
   var sessionSrc = localStorage.getItem("src");
   var loginCountry = $(".login-country");
-  if (!sessionSrc && window.location.pathname !== "/") {
+  if (!sessionSrc && window.location.pathname !== "/v1.2/") {
     location.href = "/";
   } else {
     loginCountry.attr("src", sessionSrc);

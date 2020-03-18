@@ -653,7 +653,7 @@
 }
 
 .concerthome-image-header {
-  width: 42px;
+  width: 56px;
   margin: 16px 0px 10px 0px;
 }
 
@@ -682,4 +682,15 @@
   max-width: 150px;
   margin-top: 50px;
   margin-bottom: 30px;
+}
+
+.lading-header-image-claro {
+  width: 100%;
+  max-width: 120px;
+}
+
+.lading-header-image-cinema,
+.lading-header-image-concert {
+  width: 100%;
+  max-width: 56px;
 }

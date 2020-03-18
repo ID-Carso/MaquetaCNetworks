@@ -16,6 +16,7 @@
   filter: grayscale(100%);
   opacity: 0.75;
   transition: all 0.6s ease;
+  padding: 10px;
 }
 
 .active-navItem {
@@ -115,5 +116,5 @@
 }
 
 .list-links-footer {
-  margin-bottom: 30px;
+  margin: 30px 0;
 }

@@ -59,11 +59,6 @@
                             Sports</span>
                     </div>
                 </a>
-                <a href="programacion.php">
-                    <div class="sidebar-item sidebar-border-bottom">
-                        <span class="dropdown-p">Programación</span>
-                    </div>
-                </a>
                 <!--prueba sidebar-->
             </div>
             <button class="invisible-button"></button>
@@ -125,20 +120,7 @@
                         <div class="col-md-7 col-lg-6 mx-sm-auto mx-md-auto synopsis-description-container">
                             <div>
                                 <h1 class="synopsis-title"></h1>
-                                <p class="synopsis-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod
-                                    tempor incididunt
-                                    ut
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                    ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.
-                                    <br><br>
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat
-                                    nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                    deserunt
-                                    mollit anim id est laborum.</p>
+                                <p class="synopsis-text synopsis-description"></p>
                             </div>
 
                             <div class="no-gutters">

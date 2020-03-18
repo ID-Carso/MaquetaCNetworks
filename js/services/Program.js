@@ -167,7 +167,7 @@ function getPrograms(date, time) {
                 <div class="poster-live" _id="${program.chapter_id}">
                   <div class="poster-body">
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                      <a href="sinopsis.php" class="text-decoration-none">
+                      
                           <div class="thumbnail">
                               <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
                           </div>
@@ -176,7 +176,7 @@ function getPrograms(date, time) {
                                   <p class="a-poster-text-white">${program.program_title}</p>
                               </div>
                           </div>
-                     </a>
+                  
                   </div>
               </div>
                 `;
@@ -185,7 +185,7 @@ function getPrograms(date, time) {
                 <div class="poster-live" _id="${program.chapter_id}" >
                   <div class="poster-body">
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                      <a href="sinopsis.php" class="text-decoration-none">
+                      
                           <div class="thumbnail">
                               <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
                           </div>
@@ -194,7 +194,7 @@ function getPrograms(date, time) {
                                   <p class="a-poster-text-white">${program.program_title}</p>
                               </div>
                           </div>
-                      </a>
+                   
                   </div>
               </div>
                 `;
@@ -209,7 +209,7 @@ function getPrograms(date, time) {
                           <button type="button" class="poster-button remove-program" _id="${program.chapter_id}"><img src="./images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
                       </div>
                       
-                      <a href="sinopsis.php" class="text-decoration-none">
+                   
                           <div class="thumbnail">
                               <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
                           </div>
@@ -219,7 +219,7 @@ function getPrograms(date, time) {
                               </div>
                           </div>
                      
-                    </a>
+                  
                   </div>
               </div>
                 `;
@@ -232,7 +232,7 @@ function getPrograms(date, time) {
                           <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                       </div>
                       
-                      <a href="sinopsis.php" class="text-decoration-none">
+                      
                           <div class="thumbnail">
                               <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
                           </div>
@@ -241,7 +241,7 @@ function getPrograms(date, time) {
                                   <p class="a-poster-text-white">${program.program_title}</p>
                               </div>
                           </div>
-                    </a>
+                    
       
                   </div>
               </div>
@@ -343,7 +343,7 @@ function getPrograms(date, time) {
               <div class="poster-live" _id="${program.chapter_id}">
               <div class="poster-body">
                   <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                  <a href="sinopsis.php" class="text-decoration-none">
+                
                       <div class="thumbnail">
                           <img src="./images/concert-channel/carrousel/${program.image}" alt="">
                       </div>
@@ -352,7 +352,7 @@ function getPrograms(date, time) {
                               <p class="a-poster-text-white">${program.program_title}</p>
                           </div>
                       </div>
-                  </a>
+                  
               </div>
           </div>
               `;
@@ -361,7 +361,7 @@ function getPrograms(date, time) {
             <div class="poster-live" _id="${program.chapter_id}">
             <div class="poster-body">
                 <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                <a href="sinopsis.php" class="text-decoration-none">
+                
                     <div class="thumbnail">
                         <img src="./images/concert-channel/carrousel/${program.image}" alt="">
                     </div>
@@ -370,7 +370,7 @@ function getPrograms(date, time) {
                             <p class="a-poster-text-white">${program.program_title}</p>
                         </div>
                     </div>
-                </a>
+                
             </div>
         </div>
             `;
@@ -385,7 +385,7 @@ function getPrograms(date, time) {
                         <button type="button" class="poster-button remove-program" _id="${program.chapter_id}"><img src="./images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
                     </div>
                 
-                    <a href="sinopsis.php" class="text-decoration-none">
+           
                         <div class="thumbnail">
                             <img src="./images/concert-channel/carrousel/${program.image}" alt="">
                         </div>
@@ -394,7 +394,7 @@ function getPrograms(date, time) {
                                 <p class="a-poster-text-white">${program.program_title}</p>
                             </div>
                         </div>
-                    </a>
+                    
                 </div>
             </div>
                 `;
@@ -407,7 +407,7 @@ function getPrograms(date, time) {
                     <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                 </div>
                 
-                <a href="sinopsis.php" class="text-decoration-none">
+            
                     <div class="thumbnail">
                         <img src="./images/concert-channel/carrousel/${program.image}" alt="">
                     </div>
@@ -416,7 +416,7 @@ function getPrograms(date, time) {
                             <p class="a-poster-text-white">${program.program_title}</p>
                         </div>
                     </div>
-                </a>
+               
             </div>
         </div>
             `;
@@ -517,7 +517,7 @@ function getPrograms(date, time) {
                   <div class="poster-body">
 
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                      <a href="sinopsis.php" class="text-decoration-none">
+                      
                           <div class="thumbnail">
                               <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
                           </div>
@@ -526,7 +526,7 @@ function getPrograms(date, time) {
                                   <p class="a-poster-text-white">${program.program_title}</p>
                               </div>
                           </div>
-                      </a>
+                    
       
                   </div>
               </div>
@@ -537,7 +537,7 @@ function getPrograms(date, time) {
                   <div class="poster-body">
 
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                      <a href="sinopsis.php" class="text-decoration-none">
+                     
                           <div class="thumbnail">
                               <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
                           </div>
@@ -546,7 +546,7 @@ function getPrograms(date, time) {
                                   <p class="a-poster-text-white">${program.program_title}</p>
                               </div>
                           </div>
-                      </a>
+                     
       
                   </div>
               </div>
@@ -562,7 +562,7 @@ function getPrograms(date, time) {
                           <button type="button" class="poster-button remove-program" _id="${program.chapter_id}"><img src="./images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
                       </div>
                       
-                      <a href="sinopsis.php" class="text-decoration-none">
+                 
                           <div class="thumbnail">
                               <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
                           </div>
@@ -571,7 +571,7 @@ function getPrograms(date, time) {
                                   <p class="a-poster-text-white">${program.program_title}</p>
                               </div>
                           </div>
-                      </a>
+                
       
                   </div>
               </div>
@@ -585,7 +585,7 @@ function getPrograms(date, time) {
                           <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                       </div>
                       
-                      <a href="sinopsis.php" class="text-decoration-none">
+                      
                           <div class="thumbnail">
                               <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
                           </div>
@@ -594,8 +594,6 @@ function getPrograms(date, time) {
                                   <p class="a-poster-text-white">${program.program_title}</p>
                               </div>
                           </div>
-                      </a>
-      
                   </div>
               </div>
                 `;
@@ -610,11 +608,11 @@ function getPrograms(date, time) {
             <p class="schedule-title">${program.program_title}</p>
             <div class="schedule-item-body">
                 <div class="schedule-poster">
-                    <a href="sinopsis.php" class="text-decoration-none"><div class="poster">
+                    
                         <div class="thumbnail-prog">
                             <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
                         </div>
-                    </div></a>
+                    </div>
                 </div>
     
                 <div class="schedule-details">
@@ -974,7 +972,7 @@ function getPrograms(date, time) {
         nowSliderNuestraVision.append(programNuestraVision);
       });*/
 
-      let programClaroSports = `
+      /*let programClaroSports = `
       <div class="poster">
       <div class="poster-body">
           <div class="showtime-container">
@@ -1146,13 +1144,11 @@ function getPrograms(date, time) {
       </div>
 
   </div>
-      `;
-      nowSliderClaroSports.append(programClaroSports);
-      nowSliderNuestraVision.append(programNuestraVision);
+      `;*/
       createTvSlider(nowSliderCanalClaro);
       createTvSlider(nowSliderConcertChannel);
       createTvSlider(nowSliderClaroCinema);
-      createTvSlider(nowSliderNuestraVision);
+      //createTvSlider(nowSliderNuestraVision);
       addFavorites();
       /* END SLIDER "AHORA EN VIVO CANAL CLARO*/
 
@@ -1170,16 +1166,17 @@ function showSynopsis(id) {
     function: "showSynopsis",
     chapter_id: id
   };
+  console.log(dataUser.chapter_id);
   $.ajax({
     type: "POST",
     data: dataUser,
     url: "../../adapters/program.php",
     success: function(result) {
-      console.log(result);
       let json = JSON.parse(result);
       console.log(json);
       if (json.code == 200) {
         localStorage.setItem("synopsis", JSON.stringify(json.data));
+        location.href = "./sinopsis.php";
       } else {
         let noSynopsis = `
             <div class="no-synopsis-container text-center">

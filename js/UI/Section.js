@@ -78,15 +78,12 @@ export default class Section {
             <div class="showtime-container justify-content-end">
          
                 <button type="button" class="poster-button remove-program" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
-            </div>    
-            <div class="thumbnail-large">
-                <img src="${block3Image[i].image_vertical}" alt="">
             </div>
-            <div class="a-claro-rectangle">
-                <div class="poster-title-margin">
-                    <p class="a-poster-text-white">${block3Image[i].subtitle}</p> 
-                </div> 
-            </div>
+            
+                <div class="thumbnail-large">
+                    <img src="${block3Image[i].image_vertical}" alt="">
+                </div>
+            
         </div>
     </div> 
         `;
@@ -95,12 +92,13 @@ export default class Section {
         <div class="poster">
         <div class="poster-body">
             <div class="showtime-container justify-content-end">
-        
                 <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-            </div>    
-            <div class="thumbnail-large">
-                <img src="${block3Image[i].image_vertical}" alt="">
             </div>
+            
+                <div class="thumbnail-large">
+                    <img src="${block3Image[i].image_vertical}" alt="">
+                </div>
+            
         </div>
     </div> 
         `;
@@ -132,11 +130,11 @@ export default class Section {
                   
                         <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
                     </div>
-                    <a href="sinopsis.php" class="text-decoration-none">
+                  
                         <div class="thumbnail-large">
                             <img src="${block4Image[i].image_horizontal}" alt="">
                         </div>
-                    </a>
+                   
                 </div>
             </div>
             `;
@@ -148,11 +146,11 @@ export default class Section {
                    
                         <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                     </div>
-                    <a href="sinopsis.php" class="text-decoration-none">
+                   
                         <div class="thumbnail-large">
                             <img src="${block4Image[i].image_horizontal}" alt="">
                         </div>
-                    </a>
+                    
                 </div>
             </div>
             `;
@@ -375,14 +373,14 @@ export default class Section {
                         
                           <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
                       </div>
-                      <a href="sinopsis.php" class="text-decoration-none">
+                    
                           <div class="thumbnail-large">
                               <img src="${block5Image[i].image_horizontal}" alt="">
                           </div>
                           <div class="a-cinema-rectangle">
                               <p class="a-poster-text-white">${block5Image[i].subtitle}</p>
                           </div>
-                      </a>
+                    
                   </div>
               </div>
               `;
@@ -394,11 +392,11 @@ export default class Section {
                  
                           <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                       </div>
-                      <a href="sinopsis.php" class="text-decoration-none">
+                     
                           <div class="thumbnail-large">
                               <img src="${block5Image[i].image_horizontal}" alt="">
                           </div>
-                      </a>
+                    
                   </div>
               </div>
               `;

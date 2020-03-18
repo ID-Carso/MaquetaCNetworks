@@ -125,19 +125,9 @@
                                 <img class="nav-image concert-nav-image" src="" alt="" />
                             </li>
                         </div>
-                        <div class="col-md text-center no-gap border-right">
+                        <div class="col-md text-center no-gap">
                             <li rel="claro-cinema" class="nav-li">
                                 <img class="nav-image cinema-nav-image" src="" alt="" />
-                            </li>
-                        </div>
-                        <div class="col-md text-center no-gap border-right">
-                            <li rel="nuestra-vision" class="nav-li">
-                                <img class="nav-image nv-nav-image" src="" alt="" />
-                            </li>
-                        </div>
-                        <div class="col-md text-center no-gap">
-                            <li rel="claro-sports" class="nav-li">
-                                <img class="nav-image sports-nav-image" src="" alt="" />
                             </li>
                         </div>
 
@@ -159,194 +149,8 @@
                         <div class="tv-slider today-claro-cinema-slider" id="tv-cinema-slider">
                         </div>
                     </div>
-                    <!--End Claro cinema de "Ahora en tv"-->
-                    <!--Nuestra visión de "Ahora en tv"-->
-                    <div id="nuestra-vision" class="tv-content">
-                        <div class="tv-slider" id="tv-vision-slider">
 
-
-                        </div>
-                    </div>
                 </div>
-                <!--End Nuestra visión de "Ahora en tv"-->
-                <!--Claro sports de "Ahora en tv"-->
-                <div id="claro-sports" class="tv-content">
-                    <div class="tv-slider" id="tv-sports-slider">
-
-                        <!--<div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail">
-
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <div class="poster">
-                            <div class="poster-body">
-                                <div class="showtime-container">
-                                    <p class="a-programming-text">14:30 - 16:30</p>
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <a href="sinopsis.php" class="text-decoration-none">
-                                    <div class="thumbnail">
-                                    </div>
-                                    <div class="a-sports-rectangle thumbnail-info-title">
-                                        <div class="poster-title-margin">
-                                            <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>-->
-                    </div>
-                </div>
-                <!--End Claro sports de "Ahora en tv"-->
             </div>
 
             </div>
@@ -408,7 +212,7 @@
                 </div>
                 <div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
                     <div>
-                        <img class="concert-footer-img" src="./images/home/tv-1.svg" alt="">
+
                     </div>
                     <div>
                         <p class="horario-text text-dark">

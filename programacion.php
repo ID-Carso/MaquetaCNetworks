@@ -111,21 +111,12 @@
                                 <img class="nav-image" src="./images/home/tv-2.svg" alt="" />
                             </li>
                         </div>
-                        <div class="col-md text-center no-gap border-right">
+                        <div class="col-md text-center no-gap">
                             <li rel="claro-cinema-programing" class="nav-li">
                                 <img class="nav-image" src="./images/home/tv-3.svg" alt="" />
                             </li>
                         </div>
-                        <div class="col-md text-center no-gap border-right">
-                            <li rel="nuestra-vision-programing" class="nav-li">
-                                <img class="nav-image" src="./images/home/tv-4.svg" alt="" />
-                            </li>
-                        </div>
-                        <div class="col-md text-center no-gap">
-                            <li rel="claro-sports-programing" class="nav-li">
-                                <img class="nav-image" src="./images/home/tv-5.svg" alt="" />
-                            </li>
-                        </div>
+
 
                     </ul>
                 </div>

@@ -207,6 +207,12 @@
     font-size: 12px;
   }
 
+  .lading-header-image-cinema,
+  .lading-header-image-concert {
+    width: 100%;
+    max-width: 90px;
+  }
+
   /*End General - Átomos*/
   /*============================*/
 
@@ -364,6 +370,11 @@
 
   .lading-header-image-claro {
     width: 150px;
+  }
+
+  .lading-header-image-claro {
+    width: 100%;
+    max-width: 120px;
   }
 
   /*End Claro Canal - Átomos*/
@@ -1089,6 +1100,10 @@
     display: block;
   }
 
+  .week-claro-video-container {
+    padding: 0px;
+  }
+
   /*End Claro Canal - Organismos*/
   /*============================*/
 
@@ -1661,6 +1676,12 @@
   .text-landing-footer {
     font-size: 14px;
   }
+
+  .lading-header-image-cinema,
+  .lading-header-image-concert {
+    width: 100%;
+    max-width: 110px;
+  }
   /*End Generales - átomos*/
   /*-----------------------------*/
 
@@ -1834,6 +1855,15 @@
 
   .lading-header-image-claro {
     width: 200px;
+  }
+
+  .lading-header-image-claro {
+    width: 100%;
+    max-width: 140px;
+  }
+
+  .a-today-claro-title {
+    font-size: 27px;
   }
 
   /*End Claro canal - átomos*/
@@ -2549,6 +2579,10 @@
     padding: 30px 20px 90px 20px;
   }
 
+  .week-claro-video-container {
+    padding: 0px;
+  }
+
   /*End Claro Canal - organismos*/
   /*-----------------------------*/
 
@@ -3177,6 +3211,12 @@
   .text-landing-footer {
     font-size: 1rem;
   }
+
+  .lading-header-image-cinema,
+  .lading-header-image-concert {
+    width: 100%;
+    max-width: 110px;
+  }
   /*End Generales - átomos*/
   /*-----------------------------*/
 
@@ -3309,7 +3349,7 @@
   }
 
   .lading-header-image-claro {
-    width: 250px;
+    max-width: 220px;
   }
 
   /*End Claro canal - átomos*/
@@ -3795,6 +3835,10 @@
     bottom: 20% !important;
   }
 
+  .week-claro-video-container {
+    padding: 0px;
+  }
+
   /*End Claro Canal - Moleculas*/
   /*-----------------------------*/
 
@@ -3885,7 +3929,7 @@
   .o-advertising-section {
     max-width: 1050px;
     width: 100%;
-    margin: 120px auto;
+    margin: 120px auto 0px auto;
     padding-left: 0;
     padding-right: 0;
   }
@@ -4794,6 +4838,12 @@
   .modal-program-text {
     font-size: 35px;
   }
+
+  .lading-header-image-cinema,
+  .lading-header-image-concert {
+    width: 100%;
+    max-width: 110px;
+  }
   /*End General - Átomos*/
   /*-----------------------------*/
 
@@ -4893,7 +4943,7 @@
   }
 
   .lading-header-image-claro {
-    width: 250px;
+    max-width: 250px;
   }
 
   /*End Claro Canal - Átomos*/
@@ -5696,6 +5746,10 @@
   .dontLose-slider-tablet {
     display: block;
     margin-top: 120px;
+  }
+
+  .week-claro-video-container {
+    padding: 0px;
   }
 
   /*End Claro Canal - Organismos*/
