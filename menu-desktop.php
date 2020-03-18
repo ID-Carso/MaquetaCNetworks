@@ -30,12 +30,12 @@
       </a>
     </div>
     <div>
-      <a href="nuestra-vision.php" class="navbar-link text-decoration-none">
+      <a target="_blank" href="https://nuestravision.tv" class="navbar-link text-decoration-none">
         <p class="navbar-item">Nuestra Visión</p>
       </a>
     </div>
     <div>
-      <a href="claro-sports.php" class="navbar-link text-decoration-none">
+      <a href="https://www.marca.com/claro-mx/" target="_blank" class="navbar-link text-decoration-none">
         <p class="navbar-item">Claro Sports</p>
       </a>
     </div>

@@ -2472,10 +2472,12 @@ h6 {
 
 .nav-image {
   width: 60%;
+  cursor: pointer;
 }
 
 .claro-nav-image {
   width: 100%;
+  cursor: pointer;
 }
 
 .synopsis-image:nth-child(2),
@@ -4085,6 +4087,7 @@ input[type="radio"]:checked + .mujer-estilo {
   margin-top: 25px;
   z-index: 3;
   position: absolute;
+  padding: 9px 0px;
 }
 
 .marca-header .claro-navbar {
@@ -5406,7 +5409,7 @@ input[type="radio"]:checked + .mujer-estilo {
     width: 25px;
   }
   .logo {
-    width: 85px;
+    width: 120px;
     display: initial;
     margin-left: 20px;
   }
@@ -6552,7 +6555,7 @@ input[type="radio"]:checked + .mujer-estilo {
     display: none;
   }
   .logo {
-    width: 85px;
+    width: 148px;
     display: initial;
     margin-left: 20px;
   }
@@ -8305,7 +8308,7 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .logo {
     margin-left: 0;
-    width: 85px;
+    width: 160px;
   }
   .a-claro-cinema-title,
   .a-our-vision-title,
@@ -9475,7 +9478,7 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .logo {
     margin-left: 0;
-    width: 85px;
+    width: 160px;
   }
   .footer-companies-desktop {
     padding: 60px 0;

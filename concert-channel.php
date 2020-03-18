@@ -44,13 +44,13 @@
               <p class="dropdown-p">ebñrkjg</p>
               <p class="dropdown-p">ebñrkjg</p>
             </div>-->
-                <a class="sidebar-link" href="nuestra-vision.php">
+                <a class="sidebar-link" href="https://nuestravision.tv" target="_blank">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Nuestra
                             Visión</span>
                     </div>
                 </a>
-                <a class="sidebar-link" href="claro-sports.php">
+                <a class="sidebar-link" href="https://www.marca.com/claro-mx/" target="_blank">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Claro
                             Sports</span>

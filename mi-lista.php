@@ -31,11 +31,11 @@
                 </div>
 
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="nuestra-vision.php"><span class="dropdown-p">Nuestra
+                    <a target="_blank" class="sidebar-link" href="https://nuestravision.tv"><span class="dropdown-p">Nuestra
                             Visión</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a class="sidebar-link" href="claro-sports.php"><span class="dropdown-p">Claro
+                    <a target="_blank" class="sidebar-link" href="https://www.marca.com/claro-mx/"><span class="dropdown-p">Claro
                             Sports</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
@@ -138,12 +138,12 @@
                     </a>
                 </div>
                 <div>
-                    <a href="nuestra-vision.php" class="navbar-link text-decoration-none">
+                    <a target="_blank" href="https://nuestravision.tv" class="navbar-link text-decoration-none">
                         <p class="navbar-item">Nuestra Visión</p>
                     </a>
                 </div>
                 <div>
-                    <a href="claro-sports.php" class="navbar-link text-decoration-none">
+                    <a target="_blank" href="https://www.marca.com/claro-mx/" class="navbar-link text-decoration-none">
                         <p class="navbar-item">Claro Sports</p>
                     </a>
                 </div>
