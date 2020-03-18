@@ -26,7 +26,7 @@
 						<a href="home.php">
 							<div class="name_paises espacio">
 								<img src="images/paises/usa.svg" class="Icon_paises">USA
-							</div>å
+							</div>
 						</a>
 
 
