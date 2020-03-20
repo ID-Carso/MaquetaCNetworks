@@ -211,6 +211,90 @@
 
                             </p>
                         </div>
+                        <div class="mb-4">
+                            <strong>
+                                <p>
+                                    Opciones y medios para limitar el uso o divulgación de sus datos personales
+                                </p>
+                            </strong>
+                            <p>
+                                Usted podrá limitar el uso o divulgación de sus datos personales enviando su solicitud a nuestro Departamento de Protección de Datos Personales a la dirección protecciondatos@amco.mx Los requisitos para acreditar su identidad, así como el procedimiento para atender su solicitud se regirán por los mismos criterios señalados en el apartado anterior.
+                                En caso de que su solicitud resulte procedente, nuestro Departamento de Protección de Datos Personales lo registrará en el listado de exclusión propio de Claro Networks.
+                            </p>
+                        </div>
+                        <div class="mb-4">
+                            <strong>
+                                <p>
+                                    Opciones y medios para limitar el uso o divulgación de sus datos personales
+                                </p>
+                            </strong>
+                            <p>
+                                Te informamos que en la plataforma Claro Networks podemos hacer uso de cookies, web beacons y otras tecnologías de rastreo, propias y/o de terceros que nos permiten cumplir con las finalidades informadas en el presente Aviso de Privacidad.
+                            </p>
+                            <p>
+                                Los diferentes tipos de cookies que utilizamos son:
+                            </p>
+                            <p>
+                                Cookies esenciales: para permitirle un uso adecuado de nuestros sitios web, por lo que las mismas no pueden ser deshabilitadas.
+                            </p>
+                            <p>
+                                Cookies para recordar sus preferencias y experiencia: estas cookies nos permiten recordar sus preferencias, opciones de navegación y funciones personalizadas.
+                            </p>
+                            <p>
+                                Cookies para objetivos de rendimiento y análisis: podemos usar cookies propias y de terceros para identificar la forma en la cual usted utiliza nuestros Servicios con la finalidad de mejorar su rendimiento y futuros desarrollos.
+                            </p>
+                            <p>
+                                Cookies publicitarias propias y de terceros: podemos colocar cookies publicitarias propias y de terceros (como socios comerciales y Empresas del Grupo) para mostrarle publicidad que consideremos relevante para usted
+                            </p>
+                            <p>
+                                Otros datos: De la misma forma, como parte de nuestros procesos de mejora de nuestros productos y servicios, en ciertos casos podremos recabar respuestas anónimas a encuestas y requerimientos relacionados con el uso de nuestros productos y servicios. En determinados casos y cuando ello sea necesario podremos aplicar técnicas de anonimización de datos con la finalidad de realizar determinados estudios de carácter predictivo y estadístico a partir de la información generada con motivo del uso de nuestros Servicios. Usted puede deshabilitar las cookies, siguiendo el siguiente procedimiento de acuerdo con el tipo de software que emplees para navegar en nuestros sitios web.
+                            </p>
+                            <p>
+                                La mayoría de los navegadores están configurados inicialmente para aceptar cookies, pero si prefiere que no utilicemos cookies para los fines mencionados, elimine e inhabilite los cookies para cada navegador, en cada computadora que utiliza para navegar por la Web. No obstante, si inhabilita las cookies o se rehúsa a aceptar una solicitud para colocar un cookie, es posible que algunas partes de los Servicios y los anuncios que recibe cuando visita la plataforma Claro Networks no sean acorde a sus intereses.
+                            </p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        Internet Explorer: Herramientas -> Opciones de Internet -> Privacidad -> Configuración. Para más información, puede consultar el soporte de Microsoft o la Ayuda del navegador.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Firefox: Herramientas -> Opciones -> Privacidad -> Historial -> Configuración Personalizada. Para más información, puedes consultar el soporte de Mozilla o la Ayuda del navegador.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Chrome: Configuración -> Mostrar opciones avanzadas -> Privacidad -> Configuración de contenido. Para más información, puedes consultar el soporte de Google o la Ayuda del navegador.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Safari: Preferencias -> Seguridad. Para más información, puedes consultar el soporte de Apple o la Ayuda del navegador.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <strong>
+                                <p>
+                                    Autoridad de protección de datos personales
+                                </p>
+                            </strong>
+                            <p>
+                                En caso de considerarlo necesario, le informamos que tiene el derecho de acudir ante el Instituto Nacional de Transparencia Acceso a la Información y Protección de Datos Personales (INAI) para hacer valer cualquier inconformidad relacionada con su derecho a la protección de datos personales.
+                            </p>
+                        </div>
+                        <div class="mb-4">
+                            <strong>
+                                <p>
+                                    Cambios al Aviso de Privacidad
+                                </p>
+                            </strong>
+                            <p>
+                                Claro Networks se reserva el derecho, bajo su exclusiva discreción, de cambiar, modificar, agregar o eliminar partes del presente Aviso de Privacidad en cualquier momento. En tal caso, Claro Networks le informará de los cambios por el mismo medio que ha puesto a su disposición este Aviso de Privacidad.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
