@@ -98,7 +98,7 @@
     <div class="pro-container">
         <main class="programacion">
             <p class="programacion-main-title">Programación</p>
-            <div class="o-tv-section">
+            <div class="o-tv-section programming-container">
                 <div class="row no-gutters">
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
@@ -976,28 +976,13 @@
         <?php
         include 'advertising-section.php'
         ?>
-        <div class="">
-            <div class="row no-gutters">
-                <div class="col-12">
-                    <h1 class="footer-title">¡síguenos!</h1>
-                </div>
-                <div class="social-media">
-                    <div class="col ">
-                        <img class="social-icon" src="./images/home/faceboook-icon.svg" alt="">
-                    </div>
-                    <div class="col">
-                        <img class="social-icon" src="./images/home/instagram-icon.svg" alt="">
-                    </div>
-                    <div class="col">
-                        <img class="social-icon" src="./images/home/twitter-icon.svg" alt="">
-                    </div>
-                    <div class="col">
-                        <img class="social-icon" src="./images/home/youtube-icon.svg" alt="">
-                    </div>
 
-                </div>
-            </div>
-        </div>
+
+    </div>
+    <div class="programing-list-links-footer">
+        <?php
+        include './views/partials/list-links-footer.php';
+        ?>
 
     </div>
     <?php

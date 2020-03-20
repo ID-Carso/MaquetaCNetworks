@@ -1,7 +1,7 @@
 <nav class="navbar-white navbar-mobile-white">
     <div class="nav-content">
         <div class="claro-logo">
-            <img class="menu-responsive" src="../images/aboutus/hamburger-about-us.svg" alt="" />
+            <img class="menu-responsive" src="./images/aboutus/hamburger-about-us.svg" alt="" />
             <div class="d-flex justify-content-center">
                 <a href="home.php">
                     <img class="logo" src="../images/home/claro-logo.svg" alt="" />

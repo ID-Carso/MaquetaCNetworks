@@ -1370,16 +1370,10 @@
   margin-bottom: 0;
 }
 
-.home-list-links-footer {
-  .text-landing-footer {
-    color: $navbarItemColor;
-  }
-}
-
-.cclaro-list-links-footer {
-  .text-landing-footer {
-    color: $navbarItemColor;
-  }
+.home-list-links-footer .text-landing-footer,
+.cclaro-list-links-footer .text-landing-footer,
+.programing-list-links-footer .text-landing-footer {
+  color: $navbarItemColor;
 }
 
 .cconcert-list-links-footer {

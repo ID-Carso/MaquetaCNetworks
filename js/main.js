@@ -194,14 +194,16 @@ $(document).ready(function() {
             programsCanalClaroList += `
             <div class="list-item-container" >
             <div class="poster">
+             <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="./images/home/carrusel-ahora-en-vivo/${favorite.image}" alt="">
+                     <img src="./images/home/carrusel-ahora-en-vivo/${favorite.image}" alt="">
                 </div>
                 <div class="a-claro-rectangle">
                     <div class="poster-title-margin">
                         <p class="a-poster-text-white">${favorite.program_title}</p>
                     </div>
                 </div>
+              </div>
             </div>
             <div class="myList-details-container myList-details-mobile">
                 <div class="d-flex info-schedule justify-content-between no-gutters">
@@ -280,8 +282,7 @@ $(document).ready(function() {
                 </div>
                 <div>
                     <p class="schedule-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        ${favorite.sinopsis}
                     </p>
                 </div>
             </div>
@@ -292,6 +293,7 @@ $(document).ready(function() {
             programsCanalClaroList += `
             <div class="list-item-container" >
             <div class="poster">
+             <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
                     <img src="./images/home/carrusel-ahora-en-vivo/${favorite.image}" alt="">
                 </div>
@@ -300,6 +302,7 @@ $(document).ready(function() {
                         <p class="a-poster-text-white">${favorite.program_title}</p>
                     </div>
                 </div>
+              </div>
             </div>
             <div class="myList-details-container myList-details-mobile">
                 <div class="d-flex info-schedule justify-content-between no-gutters">
@@ -378,8 +381,7 @@ $(document).ready(function() {
                 </div>
                 <div>
                     <p class="schedule-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    ${favorite.sinopsis}
                     </p>
                 </div>
             </div>
@@ -408,6 +410,7 @@ $(document).ready(function() {
             programsConcertChannelList += `
             <div class="list-item-container" >
             <div class="poster">
+              <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
                     <img src="./images/concert-channel/carrousel/${favorite.image}" alt="">
                 </div>
@@ -416,6 +419,7 @@ $(document).ready(function() {
                         <p class="a-poster-text-white">${favorite.program_title}</p>
                     </div>
                 </div>
+              </div>
             </div>
             <div class="myList-details-container myList-details-mobile">
                 <div class="d-flex info-schedule justify-content-between no-gutters">
@@ -494,8 +498,7 @@ $(document).ready(function() {
                 </div>
                 <div>
                     <p class="schedule-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    ${favorite.sinopsis}
                     </p>
                 </div>
             </div>
@@ -506,6 +509,7 @@ $(document).ready(function() {
             programsConcertChannelList += `
             <div class="list-item-container" >
             <div class="poster">
+             <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
                     <img src="./images/concert-channel/carrousel/${favorite.image}" alt="">
                 </div>
@@ -514,6 +518,7 @@ $(document).ready(function() {
                         <p class="a-poster-text-white">${favorite.program_title}</p>
                     </div>
                 </div>
+              </div>
             </div>
             <div class="myList-details-container myList-details-mobile">
                 <div class="d-flex info-schedule justify-content-between no-gutters">
@@ -592,8 +597,7 @@ $(document).ready(function() {
                 </div>
                 <div>
                     <p class="schedule-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    ${favorite.sinopsis}
                     </p>
                 </div>
             </div>
@@ -621,6 +625,7 @@ $(document).ready(function() {
             programsClaroCinemaList += `
             <div class="list-item-container">
             <div class="poster">
+              <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
                     <img src="./images/claro-cinema/carrousel/${favorite.image}" alt="">
                 </div>
@@ -629,6 +634,7 @@ $(document).ready(function() {
                         <p class="a-poster-text-white">${favorite.program_title}</p>
                     </div>
                 </div>
+              </div>
             </div>
             <div class="myList-details-container myList-details-mobile">
                 <div class="d-flex info-schedule justify-content-between no-gutters">
@@ -707,8 +713,7 @@ $(document).ready(function() {
                 </div>
                 <div>
                     <p class="schedule-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    ${favorite.sinopsis}
                     </p>
                 </div>
             </div>
@@ -719,6 +724,7 @@ $(document).ready(function() {
             programsClaroCinemaList += `
             <div class="list-item-container">
             <div class="poster">
+             <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
                     <img src="./images/claro-cinema/carrousel/${favorite.image}" alt="">
                 </div>
@@ -727,6 +733,7 @@ $(document).ready(function() {
                         <p class="a-poster-text-white">${favorite.program_title}</p>
                     </div>
                 </div>
+              </div>
             </div>
             <div class="myList-details-container myList-details-mobile">
                 <div class="d-flex info-schedule justify-content-between no-gutters">
@@ -805,8 +812,7 @@ $(document).ready(function() {
                 </div>
                 <div>
                     <p class="schedule-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    ${favorite.sinopsis}
                     </p>
                 </div>
             </div>

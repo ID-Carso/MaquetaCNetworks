@@ -377,9 +377,7 @@ export default class Section {
                           <div class="thumbnail-large">
                               <img src="${block5Image[i].image_horizontal}" alt="">
                           </div>
-                          <div class="a-cinema-rectangle">
-                              <p class="a-poster-text-white">${block5Image[i].subtitle}</p>
-                          </div>
+
                     
                   </div>
               </div>
@@ -570,9 +568,6 @@ export default class Section {
             <a href="sinopsis.php" class="text-decoration-none">
                 <div class="thumbnail">
                     <img src="${json.data.block_5_image4.image_horizontal}" alt="">
-                </div>
-                <div class="a-cinema-rectangle thumbnail-info-title">
-                    <p class="a-poster-text-white">${json.data.block_5_image4.subtitle}</p>
                 </div>
             </a>
         </div>

@@ -1589,11 +1589,9 @@ h6 {
   margin-bottom: 0;
 }
 
-.home-list-links-footer .text-landing-footer {
-  color: #525050;
-}
-
-.cclaro-list-links-footer .text-landing-footer {
+.home-list-links-footer .text-landing-footer,
+.cclaro-list-links-footer .text-landing-footer,
+.programing-list-links-footer .text-landing-footer {
   color: #525050;
 }
 
@@ -7843,6 +7841,9 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .synopsis-details-container {
     margin-bottom: 65px;
+  }
+  .programming-container {
+    margin-bottom: 30px;
   }
   /*End Programación - organismos*/
   /*-----------------------------*/
