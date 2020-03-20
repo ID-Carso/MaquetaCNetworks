@@ -312,27 +312,10 @@
             <?php
             include 'advertising-section.php'
             ?>
-            <div class="">
-                <div class="row no-gutters">
-                    <div class="col-12">
-                        <h1 class="footer-title">¡síguenos!</h1>
-                    </div>
-                    <div class="social-media">
-                        <div class="col ">
-                            <img class="social-icon" src="./images/redes/facebook-icon-red.svg" alt="">
-                        </div>
-                        <div class="col">
-                            <img class="social-icon" src="./images/redes/insta-icon-red.svg" alt="">
-                        </div>
-                        <div class="col">
-                            <img class="social-icon" src="./images/redes/twitter-icon-red.svg" alt="">
-                        </div>
-                        <div class="col">
-                            <img class="social-icon" src="./images/redes/youtube-icon-red.svg" alt="">
-                        </div>
-
-                    </div>
-                </div>
+            <div class="cconcert-list-links-footer">
+                <?php
+                include './views/partials/list-links-footer.php';
+                ?>
             </div>
             <?php
             include 'footer.php'
