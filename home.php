@@ -373,8 +373,8 @@
                         <a href="claro-cinema.php"><button class="btn-red">VER +</button></a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-5 col-lg-4">
+                <div class="d-flex no-gutters">
+                    <div class="col-md-5 col-lg-4 d-flex align-items-center">
                         <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
                     </div>
                     <div class="col-md-7 col-lg-8">

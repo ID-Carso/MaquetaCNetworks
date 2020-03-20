@@ -111,7 +111,7 @@
 
             <div class="no-gutters">
                 <div class="col-11 col-md-12 col-lg-10 mx-auto">
-                    <h1 class="synopsis-section-title">sinópsis</h1>
+                    <h1 class="synopsis-section-title">sinopsis</h1>
 
                     <div class="synopsis-body-container no-gutters">
                         <div class="col-md-7 col-lg-6 mx-auto synopsis-main-image">

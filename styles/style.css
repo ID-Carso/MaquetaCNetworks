@@ -4416,6 +4416,10 @@ input[type="radio"]:checked + .mujer-estilo {
   margin: 30px 0;
 }
 
+.programing-item {
+  cursor: pointer;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 .header-details {
@@ -5234,10 +5238,16 @@ input[type="radio"]:checked + .mujer-estilo {
   margin-right: 5%;
 }
 
-.o-concert-section, .o-tv-section, .o-cinema-section, .o-vision-section, .o-claro-section, .o-sports-section, .o-footer-section {
+.o-concert-section, .o-tv-section, .o-vision-section, .o-claro-section, .o-sports-section, .o-footer-section {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.o-concert-section {
+  background-image: url("../images/home/background/mobile/concert-home-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .concert-channel-tablet {
@@ -5249,12 +5259,9 @@ input[type="radio"]:checked + .mujer-estilo {
 }
 
 .o-cinema-section {
-  position: relative;
-  background-image: url(../../../images/home/circle-yellow.png);
-  background-size: 86%;
+  background-image: url("../images/home/background/mobile/cinema-home-background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 80px;
 }
 
 .cinema-claro-tablet {
@@ -5275,6 +5282,12 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .nuestra-vision-desktop {
   display: none;
+}
+
+.o-claro-section {
+  background-image: url("../images/home/background/mobile/claro-home-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .claro-canal-tablet {
@@ -5329,11 +5342,6 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .synopsis-content {
   background: #000000;
-}
-
-.o-concert-section {
-  background-image: url(../images/home/bg-concert-channel.jpg);
-  background-size: cover;
 }
 
 .wrapper {
@@ -6348,6 +6356,18 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*============================*/
   /*3.2 - Home - Organismos*/
+  .o-claro-section {
+    background-image: url("../images/home/background/tablet/claro-home-background.jpg");
+    background-size: cover;
+  }
+  .o-concert-section {
+    background-image: url("../images/home/background/tablet/concert-home-background.jpg");
+    background-size: cover;
+  }
+  .o-cinema-section {
+    background-image: url("../images/home/background/tablet/cinema-home-background.jpg");
+    background-size: cover;
+  }
   .claro-section-footer,
   .vision-section-footer,
   .sports-section-footer {
@@ -6381,9 +6401,6 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .cinema-claro-tablet {
     display: block;
-  }
-  .o-vision-section {
-    background-color: #d8d8d8;
   }
   .nuestra-vision-tablet {
     display: block;
@@ -6436,16 +6453,6 @@ input[type="radio"]:checked + .mujer-estilo {
   .concert-section-header,
   .cinema-section-header {
     margin-bottom: 30px;
-  }
-  .o-concert-section {
-    background-image: url(../images/home/bg-concert-channel.jpg);
-    background-size: cover;
-  }
-  .o-cinema-section {
-    background-image: url(../images/home/circle-yellow.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 65%;
   }
   .o-vision-section {
     background-image: url(../images/home/bg-nuestra-vision.jpg);
@@ -7649,18 +7656,16 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-top: 30px;
   }
   .o-claro-section {
-    background-image: url(../images/home/bg-canal-claro@2x.jpg);
+    background-image: url("../images/home/background/tablet/claro-home-background.jpg");
     background-size: cover;
   }
   .o-concert-section {
-    background-image: url(../images/home/bg-concert-channel.jpg);
+    background-image: url("../images/home/background/tablet/concert-home-background.jpg");
     background-size: cover;
   }
   .o-cinema-section {
-    background-image: url(../images/home/circle-yellow.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 75%;
+    background-image: url("../images/home/background/tablet/cinema-home-background.jpg");
+    background-size: cover;
   }
   .o-vision-section {
     background-image: url(../images/home/bg-nuestra-vision.jpg);
@@ -8863,15 +8868,15 @@ input[type="radio"]:checked + .mujer-estilo {
     height: auto;
   }
   .o-claro-section {
-    background-image: url("../images/home/bg-canal-claro@2x.jpg");
+    background-image: url("../images/home/background/laptop/claro-home-background.jpg");
     background-size: cover;
   }
   .o-concert-section {
-    background-image: url("../images/home/bg-concert-channel.jpg");
+    background-image: url("../images/home/background/laptop/concert-home-background.jpg");
     background-size: cover;
   }
-  .o-vision-section {
-    background-image: url("../images/home/bg-nuestra-vision.jpg");
+  .o-cinema-section {
+    background-image: url("../images/home/background/laptop/cinema-home-background.jpg");
     background-size: cover;
   }
   .concert-channel-mobile {
@@ -8879,12 +8884,6 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .concert-channel-desktop {
     display: block;
-  }
-  .o-cinema-section {
-    background-image: url(../images/home/circle-yellow.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 45%;
   }
   .cinema-claro-mobile {
     display: none;
@@ -10122,18 +10121,16 @@ input[type="radio"]:checked + .mujer-estilo {
     display: block;
   }
   .o-claro-section {
-    background-image: url(../images/home/bg-canal-claro@2x.jpg);
+    background-image: url("../images/home/background/laptop/claro-home-background.jpg");
     background-size: cover;
   }
   .o-concert-section {
-    background-image: url(../images/home/bg-concert-channel.jpg);
+    background-image: url("../images/home/background/laptop/concert-home-background.jpg");
     background-size: cover;
   }
   .o-cinema-section {
-    background-image: url(../images/home/circle-yellow.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50%;
+    background-image: url("../images/home/background/laptop/cinema-home-background.jpg");
+    background-size: cover;
   }
   .o-vision-section {
     background-image: url(../images/home/bg-nuestra-vision.jpg);
