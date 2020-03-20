@@ -359,7 +359,7 @@
             <!--End Cinema Claro mobile-->
             <!--Cinema claro tablet-->
             <div class="cinema-claro-tablet">
-                <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
+
                 <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
                     <div class="m-home-titles">
                         <a href="claro-cinema.php" class="home-title-link">
@@ -373,7 +373,14 @@
                         <a href="claro-cinema.php"><button class="btn-red">VER +</button></a>
                     </div>
                 </div>
-                <div class="section-slider cinema-home-slider">
+                <div class="row">
+                    <div class="col-md-5 col-lg-4">
+                        <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
+                    </div>
+                    <div class="col-md-7 col-lg-8">
+                        <div class="cinema-home-slider">
+                        </div>
+                    </div>
                 </div>
                 <!--<div class="row no-gutters">
                     <div class="col-5">
@@ -414,8 +421,16 @@
                         <a href="claro-cinema.php"><button class="btn-red">VER +</button></a>
                     </div>
                 </div>
-                <div class="section-slider cinema-home-slider">
+                <div class="row no-gutters">
+                    <div class="col-md-4 col-xl-3">
+                        <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
+                    </div>
+                    <div class="col-md-8 col-xl-9">
+                        <div class="cinema-home-slider">
+                        </div>
+                    </div>
                 </div>
+
                 <!--<div class="row no-gutters">
                     <div class="col-md-4 col-xl-6">
                         <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">

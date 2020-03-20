@@ -1345,6 +1345,8 @@ $(document).ready(function() {
       $("#selectDay").prop("checked", false);
     }
   });
+
+  createCinemaHomeSlider();
   /* Metakeys */
   getMetaKeys();
   /*End Metakeys */
@@ -1864,80 +1866,79 @@ $(document).ready(function() {
   }*/
 
   /*** Fin Dropdown del menú ***/
+
   recreateClickCalendar();
 });
 
 function createCinemaHomeSlider() {
-  $("#cinema-home-slider")
-    .not(".slick-initialized")
-    .slick({
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      infinite: true,
-      dots: true,
-      centerMode: false,
-      arrows: true,
-      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+  $(".cinema-home-slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: true,
+    centerMode: false,
+    arrows: true,
+    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
 
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: false,
-            autoplaySpeed: 2000,
-            centerMode: false,
-            infinite: true,
-            arrows: false,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true,
-            centerMode: true,
-            arrows: false
-          }
-        },
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />'
-          }
-        },
-
-        {
-          breakpoint: 1900,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />'
-          }
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          centerMode: false,
+          infinite: true,
+          arrows: false,
+          dots: true
         }
-      ]
-    });
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: true,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
+        }
+      },
+
+      {
+        breakpoint: 1900,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />'
+        }
+      }
+    ]
+  });
 }
 
 function createProgramacionSlider() {

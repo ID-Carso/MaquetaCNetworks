@@ -324,10 +324,6 @@
     text-align: left;
   }
 
-  .cinema-image {
-    display: none;
-  }
-
   .cinema-texto-image {
     position: absolute;
     bottom: 0;
@@ -438,6 +434,12 @@
   .a-cinema-subtitle {
     text-align: left;
     padding-left: 6%;
+  }
+
+  .cinema-image {
+    display: block;
+    width: 90%;
+    margin-left: 15px;
   }
 
   /*End Claro Cinema - Átomos*/
@@ -781,6 +783,12 @@
   /*2.5 - Claro Cinema - Moleculas*/
   .cinema-slider {
     margin: 0 -6px;
+  }
+
+  .cinema-home-slider {
+    .slick-list {
+      padding: 0px 90px 0px 0px !important;
+    }
   }
 
   /*End Claro Cinema - Moleculas*/
@@ -1922,6 +1930,11 @@
 
   .a-cinema-subtitle {
     padding-bottom: 17px;
+  }
+
+  .cinema-image {
+    display: block;
+    width: 100%;
   }
 
   /*End Claro Cinema - átomos*/
@@ -3370,10 +3383,8 @@
 
   .cinema-image {
     display: block;
-    width: 68%;
-    margin: -12% 0px 0px 25%;
+    width: 100%;
   }
-
   /*End Claro Cinema - átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -4915,7 +4926,7 @@
   .cinema-image {
     display: block;
     margin: auto;
-    width: 50%;
+    width: 87%;
   }
 
   .background-home {
