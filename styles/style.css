@@ -229,7 +229,8 @@ h6 {
   font-size: 24px;
   color: #262626;
   font-family: "Montserrat-Black";
-  padding-bottom: 2%;
+  padding-top: 27px;
+  padding-bottom: 5px;
 }
 
 .a-concert-channel-title {
@@ -2747,6 +2748,7 @@ h6 {
 .claro-image-header {
   width: 150px;
   margin-bottom: 10px;
+  margin-top: 27px;
 }
 
 .concerthome-image-header {

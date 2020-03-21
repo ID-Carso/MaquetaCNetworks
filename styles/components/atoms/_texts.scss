@@ -42,7 +42,8 @@
 
 .a-claro-channel-title {
   @include title-section($blackColor, $titleSection);
-  padding-bottom: $titlesPadding;
+  padding-top: 27px;
+  padding-bottom: 5px;
 }
 
 .a-concert-channel-title {
