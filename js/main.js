@@ -86,6 +86,11 @@ if (day && month && year) {
 }
 
 $(document).ready(function() {
+  /* Banner*/
+  let sliderBanner = new Slider();
+  sliderBanner.showImageBanner();
+  /* End Banner */
+
   /* Navbar */
 
   /*let navbarWhiteInstance = new Navbar();
@@ -1169,8 +1174,9 @@ $(document).ready(function() {
 
   var sessionSrc = localStorage.getItem("src");
   var loginCountry = $(".login-country");
-  if (!sessionSrc && window.location.pathname !== "/v1.2/") {
-    location.href = "/";
+  //!sessionSrc && window.location.pathname !== "/v1.2/"
+  if (!sessionSrc && window.location.pathname !== "/MaquetaCNetworks/") {
+    location.href = "/MaquetaCNetworks/";
   } else {
     loginCountry.attr("src", sessionSrc);
   }

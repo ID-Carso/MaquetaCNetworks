@@ -14,9 +14,8 @@
 
 .o-concert-section {
   @include section();
-  background-image: url("../images/home/background/mobile/concert-home-background.jpg");
+  background-image: url("../images/home/bg-concert-channel.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .concert-channel-tablet {
@@ -31,9 +30,12 @@
 }
 
 .o-cinema-section {
-  background-image: url("../images/home/background/mobile/cinema-home-background.jpg");
-  background-size: cover;
+  position: relative;
+  background-image: url(../../../images/home/circle-yellow.png);
+  background-size: 86%;
   background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 80px;
 }
 
 .cinema-claro-tablet {
@@ -59,9 +61,8 @@
 
 .o-claro-section {
   @include section();
-  background-image: url("../images/home/background/mobile/claro-home-background.jpg");
+  background-image: url("../images/home/bg-canal-claro.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .claro-canal-tablet {

@@ -29,7 +29,7 @@
             <div class="row ma-no centro">
                 <div class="col-sm-12 no-gap">
                     <div class="aviso-header">
-                        <p class="titulos-configuraciones">Aviso de privacidad</p>
+                        <p class="title-aviso text-semibold">Aviso de privacidad</p>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@
                         </div>
                         <div class="mb-4">
                             <strong>
-                                <p class="text-uppercase">Base‌ ‌de‌ ‌legitimación‌</p>
+                                <p class="text-uppercase">Transferencias‌</p>
                             </strong>
                             <p>
                                 Claro‌ ‌Networks‌ ‌podrá‌ ‌transferir‌ ‌sus‌ ‌datos‌ ‌personales,‌ ‌tanto‌ ‌a‌ ‌entidades‌ ‌
@@ -213,7 +213,7 @@
                         </div>
                         <div class="mb-4">
                             <strong>
-                                <p>
+                                <p class="text-uppercase">
                                     Opciones y medios para limitar el uso o divulgación de sus datos personales
                                 </p>
                             </strong>
@@ -224,8 +224,8 @@
                         </div>
                         <div class="mb-4">
                             <strong>
-                                <p>
-                                    Opciones y medios para limitar el uso o divulgación de sus datos personales
+                                <p class="text-uppercase">
+                                    Uso de Cookies
                                 </p>
                             </strong>
                             <p>
@@ -277,7 +277,7 @@
                         </div>
                         <div class="mb-4">
                             <strong>
-                                <p>
+                                <p class="text-uppercase">
                                     Autoridad de protección de datos personales
                                 </p>
                             </strong>
@@ -287,7 +287,7 @@
                         </div>
                         <div class="mb-4">
                             <strong>
-                                <p>
+                                <p class="text-uppercase">
                                     Cambios al Aviso de Privacidad
                                 </p>
                             </strong>

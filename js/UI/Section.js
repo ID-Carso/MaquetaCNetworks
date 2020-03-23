@@ -84,6 +84,36 @@ export default class Section {
     console.log(json);
 
     /* Header Home*/
+    $("#slider-header-home").slick("unslick");
+    let imagesHeader = [
+      json.data.block_1_image_background_1,
+      json.data.block_1_image_background_2,
+      json.data.block_1_image_background_3,
+      json.data.block_1_image_background_4,
+      json.data.block_1_image_background_5
+    ];
+
+    let imagesHeaderLength = imagesHeader.length;
+    let divImageHeader = "";
+    for (let i = 0; i < imagesHeaderLength; i++) {
+      divImageHeader += `
+      <div class="header-slide">
+        <img src="${imagesHeader[i]}" class="rellax" data-rellax="10">
+      </div>`;
+    }
+
+    $("#slider-header-home").append(divImageHeader);
+    $("#slider-header-home")
+      .not(".slick-initialized")
+      .slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+        centerMode: false,
+        arrows: false
+      });
+
     let titleHeader = `<span class="header-span">${json.data.block_1_title} </span>${json.data.block_1_subtitle}`;
     $(".header-h1").html(titleHeader);
 

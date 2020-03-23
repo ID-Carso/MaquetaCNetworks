@@ -70,9 +70,20 @@
         <button class="invisible-button"></button>
     </div>
     <main>
-        <header class="home-header">
-            <div class="alert-user">
+        <div class="alert-user">
+        </div>
+        <header class="home-header-mobile">
+            <div class="header-details header-detail-margin">
+                <h1 class="header-h1">
+                    <span class="header-span"></span>
+                </h1>
             </div>
+            <div class="header-slider" id="slider-header-home">
+
+            </div>
+        </header>
+        <header class="home-header">
+
             <div class="circle-video">
                 <video preload="yes" playsinline autoplay muted loop class="home-video">
                     <source src="./video/video.mp4" type="video/mp4" class="source-video" />
@@ -103,7 +114,6 @@
                     <h1 class="header-h1">
                         <span class="header-span">Descubre<br>Claro<br></span>Networks
                     </h1>
-
                 </div>
             </div>
         </header>

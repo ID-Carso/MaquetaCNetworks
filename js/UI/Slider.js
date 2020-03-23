@@ -296,4 +296,71 @@ export default class Slider {
     });
     console.log();
   }
+
+  showImageBanner() {
+    if ($(window).width() < 768) {
+      $(".claro-image-banner-1").attr("src", "");
+      $(".concert-image-banner-1").attr("src", "");
+      $(".cinema-image-banner-1").attr("src", "");
+    } else if ($(window).width() >= 768 && $(window).width() < 1200) {
+      $(".claro-image-banner-1").attr(
+        "src",
+        "./images/claro-canal/banner/tablet/claro-home-background.jpg"
+      );
+      $(".concert-image-banner-1").attr(
+        "src",
+        "./images/concert-channel/banner/tablet/concert-home-background.jpg"
+      );
+      $(".cinema-image-banner-1").attr(
+        "src",
+        "./images/claro-cinema/banner/tablet/cinema-home-background.jpg"
+      );
+    } else if ($(window).width() >= 1200) {
+      $(".claro-image-banner-1").attr(
+        "src",
+        "./images/claro-canal/banner/pc/claro-home-background.jpg"
+      );
+      $(".concert-image-banner-1").attr(
+        "src",
+        "./images/concert-channel/banner/pc/concert-home-background.jpg"
+      );
+      $(".cinema-image-banner-1").attr(
+        "src",
+        "./images/claro-cinema/banner/pc/cinema-home-background.jpg"
+      );
+    }
+    $(window).resize(function() {
+      if ($(window).width() < 768) {
+        $(".claro-image-banner-1").attr("src", "");
+        $(".concert-image-banner-1").attr("src", "");
+        $(".cinema-image-banner-1").attr("src", "");
+      } else if ($(window).width() >= 768 && $(window).width() < 1200) {
+        $(".claro-image-banner-1").attr(
+          "src",
+          "./images/claro-canal/banner/tablet/claro-home-background.jpg"
+        );
+        $(".concert-image-banner-1").attr(
+          "src",
+          "./images/concert-channel/banner/tablet/concert-home-background.jpg"
+        );
+        $(".cinema-image-banner-1").attr(
+          "src",
+          "./images/claro-cinema/banner/tablet/cinema-home-background.jpg"
+        );
+      } else if ($(window).width() >= 1200) {
+        $(".claro-image-banner-1").attr(
+          "src",
+          "./images/claro-canal/banner/pc/claro-home-background.jpg"
+        );
+        $(".concert-image-banner-1").attr(
+          "src",
+          "./images/concert-channel/banner/pc/concert-home-background.jpg"
+        );
+        $(".cinema-image-banner-1").attr(
+          "src",
+          "./images/claro-cinema/banner/pc/cinema-home-background.jpg"
+        );
+      }
+    });
+  }
 }

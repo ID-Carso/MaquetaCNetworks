@@ -1618,6 +1618,12 @@ h6 {
   color: #ffd600;
 }
 
+.title-aviso {
+  margin: 30px 0;
+  font-size: 24px;
+  color: #717272;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -2748,7 +2754,6 @@ h6 {
 .claro-image-header {
   width: 150px;
   margin-bottom: 10px;
-  margin-top: 27px;
 }
 
 .concerthome-image-header {
@@ -4441,6 +4446,16 @@ input[type="radio"]:checked + .mujer-estilo {
   font-family: "Montserrat-Black";
 }
 
+.home-header-mobile .header-details {
+  position: absolute;
+  top: 50%;
+  height: auto;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
 .card-white {
   max-width: 450px !important;
 }
@@ -5247,9 +5262,8 @@ input[type="radio"]:checked + .mujer-estilo {
 }
 
 .o-concert-section {
-  background-image: url("../images/home/background/mobile/concert-home-background.jpg");
+  background-image: url("../images/home/bg-concert-channel.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .concert-channel-tablet {
@@ -5261,9 +5275,12 @@ input[type="radio"]:checked + .mujer-estilo {
 }
 
 .o-cinema-section {
-  background-image: url("../images/home/background/mobile/cinema-home-background.jpg");
-  background-size: cover;
+  position: relative;
+  background-image: url(../../../images/home/circle-yellow.png);
+  background-size: 86%;
   background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 80px;
 }
 
 .cinema-claro-tablet {
@@ -5287,9 +5304,8 @@ input[type="radio"]:checked + .mujer-estilo {
 }
 
 .o-claro-section {
-  background-image: url("../images/home/background/mobile/claro-home-background.jpg");
+  background-image: url("../images/home/bg-canal-claro.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .claro-canal-tablet {
@@ -5451,6 +5467,15 @@ input[type="radio"]:checked + .mujer-estilo {
 .landing-header {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.home-header-mobile {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.home-header {
+  display: none;
 }
 
 .hamburguer-menu {
@@ -5865,6 +5890,7 @@ input[type="radio"]:checked + .mujer-estilo {
     display: block;
   }
   .header-details {
+    position: static;
     margin-top: 60px;
     margin-bottom: 40px;
     display: inherit;
@@ -5961,7 +5987,7 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .cinema-image {
     display: block;
-    width: 90%;
+    width: 95%;
     margin-left: 15px;
   }
   /*End Claro Cinema - Átomos*/
@@ -6358,17 +6384,25 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*============================*/
   /*3.2 - Home - Organismos*/
+  .home-header {
+    display: block;
+  }
+  .home-header-mobile {
+    display: none;
+  }
   .o-claro-section {
-    background-image: url("../images/home/background/tablet/claro-home-background.jpg");
+    background-image: url("../images/home/bg-canal-claro.jpg");
     background-size: cover;
   }
   .o-concert-section {
-    background-image: url("../images/home/background/tablet/concert-home-background.jpg");
+    background-image: url("../images/home/bg-concert-channel.jpg");
     background-size: cover;
   }
   .o-cinema-section {
-    background-image: url("../images/home/background/tablet/cinema-home-background.jpg");
-    background-size: cover;
+    background-image: url("../images/home/circle-yellow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 85%;
   }
   .claro-section-footer,
   .vision-section-footer,
@@ -7658,16 +7692,18 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-top: 30px;
   }
   .o-claro-section {
-    background-image: url("../images/home/background/tablet/claro-home-background.jpg");
+    background-image: url("../images/home/bg-canal-claro.jpg");
     background-size: cover;
   }
   .o-concert-section {
-    background-image: url("../images/home/background/tablet/concert-home-background.jpg");
+    background-image: url("../images/home/bg-concert-channel.jpg");
     background-size: cover;
   }
   .o-cinema-section {
-    background-image: url("../images/home/background/tablet/cinema-home-background.jpg");
-    background-size: cover;
+    background-image: url("../images/home/circle-yellow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
   }
   .o-vision-section {
     background-image: url(../images/home/bg-nuestra-vision.jpg);
@@ -7726,6 +7762,12 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .week-claro-video-container {
     padding: 0px;
+  }
+  .home-header {
+    display: block;
+  }
+  .home-header-mobile {
+    display: none;
   }
   /*End Claro Canal - organismos*/
   /*-----------------------------*/
@@ -8870,16 +8912,18 @@ input[type="radio"]:checked + .mujer-estilo {
     height: auto;
   }
   .o-claro-section {
-    background-image: url("../images/home/background/laptop/claro-home-background.jpg");
+    background-image: url("../images/home/bg-canal-claro.jpg");
     background-size: cover;
   }
   .o-concert-section {
-    background-image: url("../images/home/background/laptop/concert-home-background.jpg");
+    background-image: url("../images/home/bg-concert-channel.jpg");
     background-size: cover;
   }
   .o-cinema-section {
-    background-image: url("../images/home/background/laptop/cinema-home-background.jpg");
-    background-size: cover;
+    background-image: url(../images/home/circle-yellow.png);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position-x: 20%;
   }
   .concert-channel-mobile {
     display: none;
@@ -8979,7 +9023,11 @@ input[type="radio"]:checked + .mujer-estilo {
     background-image: transparent;
   }
   .home-header {
+    display: block;
     overflow: visible;
+  }
+  .home-header-mobile {
+    display: none;
   }
   /*End Home - Organismos*/
   /*-----------------------------*/
@@ -10123,16 +10171,18 @@ input[type="radio"]:checked + .mujer-estilo {
     display: block;
   }
   .o-claro-section {
-    background-image: url("../images/home/background/laptop/claro-home-background.jpg");
+    background-image: url("../images/home/bg-canal-claro.jpg");
     background-size: cover;
   }
   .o-concert-section {
-    background-image: url("../images/home/background/laptop/concert-home-background.jpg");
+    background-image: url("../images/home/bg-concert-channel.jpg");
     background-size: cover;
   }
   .o-cinema-section {
-    background-image: url("../images/home/background/laptop/cinema-home-background.jpg");
-    background-size: cover;
+    background-image: url(../images/home/circle-yellow.png);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position-x: 20%;
   }
   .o-vision-section {
     background-image: url(../images/home/bg-nuestra-vision.jpg);
@@ -10224,6 +10274,10 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   .home-header {
     overflow: visible;
+    display: block;
+  }
+  .home-header-mobile {
+    display: none;
   }
   /*End Home - Organismos*/
   /*-----------------------------*/
