@@ -1027,18 +1027,20 @@
   }
 
   .o-claro-section {
-    background-image: url(../images/home/background/tablet/claro-home-background.jpg);
+    background-image: url(../images/home/bg-canal-claro@2x.jpg);
     background-size: cover;
   }
 
   .o-concert-section {
-    background-image: url("../images/home/background/tablet/concert-home-background.jpg");
+    background-image: url(../images/home/bg-concert-channel.jpg);
     background-size: cover;
   }
 
   .o-cinema-section {
-    background-image: url(../images/home/background/tablet/cinema-home-background.jpg);
-    background-size: cover;
+    background-image: url(../images/home/circle-yellow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65%;
   }
 
   .o-vision-section {
@@ -2523,19 +2525,22 @@
   .section-home-footer {
     padding-top: 30px;
   }
+
   .o-claro-section {
-    background-image: url(../images/home/background/tablet/claro-home-background.jpg);
+    background-image: url(../images/home/bg-canal-claro@2x.jpg);
     background-size: cover;
   }
 
   .o-concert-section {
-    background-image: url(../images/home/background/tablet/concert-home-background.jpg);
+    background-image: url(../images/home/bg-concert-channel.jpg);
     background-size: cover;
   }
 
   .o-cinema-section {
-    background-image: url(../images/home/background/tablet/cinema-home-background.jpg);
-    background-size: cover;
+    background-image: url(../images/home/circle-yellow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
   }
 
   .o-vision-section {
@@ -4078,18 +4083,20 @@
   }
 
   .o-claro-section {
-    background-image: url(../images/home/background/laptop/claro-home-background.jpg);
+    background-image: url(../images/home/bg-canal-claro@2x.jpg);
     background-size: cover;
   }
 
   .o-concert-section {
-    background-image: url(../images/home/background/laptop/concert-home-background.jpg);
+    background-image: url(../images/home/bg-concert-channel.jpg);
     background-size: cover;
   }
 
   .o-cinema-section {
-    background-image: url(../images/home/background/laptop/cinema-home-background.jpg);
-    background-size: cover;
+    background-image: url(../images/home/circle-yellow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45%;
   }
 
   .o-vision-section {
@@ -4905,6 +4912,10 @@
 
   /*-----------------------------*/
   /*1.2 Home -  Átomos  */
+
+  .home-header .navbar-item {
+    color: #525050;
+  }
 
   .claro-image-header,
   .concerthome-image-header,

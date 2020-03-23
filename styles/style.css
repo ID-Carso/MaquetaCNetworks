@@ -5012,20 +5012,29 @@ input[type="radio"]:checked + .mujer-estilo {
   margin-right: 5%;
 }
 
-.o-concert-section, .o-tv-section, .o-cinema-section, .o-vision-section, .o-claro-section, .o-sports-section, .o-footer-section {
+.o-claro-section, .o-concert-section, .o-cinema-section, .o-tv-section, .o-vision-section, .o-sports-section, .o-footer-section {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.o-concert-section {
-  background-image: url(../images/home/background/mobile/concert-home-background.jpg);
+.o-claro-section {
+  background-image: url(../images/home/bg-canal-claro@2x.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
-.concert-channel-mobile {
-  background: #3e0a43;
+.o-concert-section {
+  background-image: url(../images/home/bg-concert-channel.jpg);
+  background-size: cover;
+}
+
+.o-cinema-section {
+  position: relative;
+  background-image: url(../../../images/home/circle-yellow.png);
+  background-size: 86%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 80px;
 }
 
 .concert-channel-tablet {
@@ -5034,13 +5043,6 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .concert-channel-desktop {
   display: none;
-}
-
-.o-cinema-section {
-  position: relative;
-  background-image: url(../images/home/background/mobile/cinema-home-background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .cinema-claro-tablet {
@@ -5061,12 +5063,6 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .nuestra-vision-desktop {
   display: none;
-}
-
-.o-claro-section {
-  background-image: url(../images/home/background/mobile/claro-home-background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .claro-canal-tablet {
@@ -6217,16 +6213,18 @@ input[type="radio"]:checked + .mujer-estilo {
     margin-bottom: 150px;
   }
   .o-claro-section {
-    background-image: url(../images/home/background/tablet/claro-home-background.jpg);
+    background-image: url(../images/home/bg-canal-claro@2x.jpg);
     background-size: cover;
   }
   .o-concert-section {
-    background-image: url("../images/home/background/tablet/concert-home-background.jpg");
+    background-image: url(../images/home/bg-concert-channel.jpg);
     background-size: cover;
   }
   .o-cinema-section {
-    background-image: url(../images/home/background/tablet/cinema-home-background.jpg);
-    background-size: cover;
+    background-image: url(../images/home/circle-yellow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65%;
   }
   .o-vision-section {
     background-image: url(../images/home/bg-nuestra-vision.jpg);
@@ -7439,16 +7437,18 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-top: 30px;
   }
   .o-claro-section {
-    background-image: url(../images/home/background/tablet/claro-home-background.jpg);
+    background-image: url(../images/home/bg-canal-claro@2x.jpg);
     background-size: cover;
   }
   .o-concert-section {
-    background-image: url(../images/home/background/tablet/concert-home-background.jpg);
+    background-image: url(../images/home/bg-concert-channel.jpg);
     background-size: cover;
   }
   .o-cinema-section {
-    background-image: url(../images/home/background/tablet/cinema-home-background.jpg);
-    background-size: cover;
+    background-image: url(../images/home/circle-yellow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
   }
   .o-vision-section {
     background-image: url(../images/home/bg-nuestra-vision.jpg);
@@ -8678,16 +8678,18 @@ input[type="radio"]:checked + .mujer-estilo {
     height: auto;
   }
   .o-claro-section {
-    background-image: url(../images/home/background/laptop/claro-home-background.jpg);
+    background-image: url(../images/home/bg-canal-claro@2x.jpg);
     background-size: cover;
   }
   .o-concert-section {
-    background-image: url(../images/home/background/laptop/concert-home-background.jpg);
+    background-image: url(../images/home/bg-concert-channel.jpg);
     background-size: cover;
   }
   .o-cinema-section {
-    background-image: url(../images/home/background/laptop/cinema-home-background.jpg);
-    background-size: cover;
+    background-image: url(../images/home/circle-yellow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45%;
   }
   .o-vision-section {
     background-image: url("../images/home/bg-nuestra-vision.jpg");
@@ -9366,6 +9368,9 @@ input[type="radio"]:checked + .mujer-estilo {
   /*-----------------------------*/
   /*-----------------------------*/
   /*1.2 Home -  Átomos  */
+  .home-header .navbar-item {
+    color: #525050;
+  }
   .claro-image-header,
   .concerthome-image-header,
   .cinemahome-image-header {

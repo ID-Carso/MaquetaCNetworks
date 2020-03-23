@@ -79,7 +79,7 @@ export default class Section {
                 <button type="button" class="poster-button remove-program" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
             </div>    
             <div class="thumbnail-large">
-                <img src="${block3Image[i].image_horizontal}" alt="">
+                <img src="${block3Image[i].image_vertical}" alt="">
             </div>
             <div class="a-claro-rectangle">
                 <div class="poster-title-margin">
@@ -98,7 +98,7 @@ export default class Section {
                 <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
             </div>    
             <div class="thumbnail-large">
-                <img src="${block3Image[i].image_horizontal}" alt="">
+                <img src="${block3Image[i].image_vertical}" alt="">
             </div>
             <div class="a-claro-rectangle">
                 <div class="poster-title-margin">
