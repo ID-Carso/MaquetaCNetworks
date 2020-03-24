@@ -4240,10 +4240,10 @@ input[type="radio"]:checked + .mujer-estilo {
   position: relative;
 }
 
-.home-header .claro-navbar {
+.claro-navbar-black {
   background: rgba(255, 255, 255, 0.8);
-  padding: 9px;
-  margin-left: -9px;
+  padding: 9px 9px 9px 250px !important;
+  margin-left: -250px;
   border-radius: 20px;
 }
 
@@ -8200,11 +8200,6 @@ input[type="radio"]:checked + .mujer-estilo {
     padding: 8px;
     border-radius: 30px;
   }
-  .nav-image,
-  .claro-nav-image {
-    height: 72px;
-    width: 100%;
-  }
   .nav-li {
     text-align: center;
   }
@@ -8240,7 +8235,7 @@ input[type="radio"]:checked + .mujer-estilo {
   .nav-image,
   .claro-nav-image {
     height: 72px;
-    width: 80%;
+    width: 60%;
   }
   .slick-dots li button:before {
     font-size: 10px !important;

@@ -5,7 +5,7 @@
             <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
 
             <a href="home.php">
-                <img class="logo" src="./images/home/claro-logo.svg" alt="" />
+                <img class="logo logo-black" src="./images/home/claro-logo.svg" alt="" />
             </a>
         </div>
 
@@ -13,7 +13,7 @@
 
         </div>
     </div>
-    <div class="claro-navbar">
+    <div class="claro-navbar claro-navbar-black">
         <div>
             <a href="claro-canal.php" class="navbar-link text-decoration-none">
                 <p class="navbar-item-black text-semibold">Canal Claro</p>

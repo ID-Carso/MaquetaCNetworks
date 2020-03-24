@@ -84,7 +84,7 @@
       </div>
       <div>
         <?php
-        include './views/partials/menu-desktop-white.php'
+        include './views/partials/menu-desktop-black.php'
         ?>
       </div>
 
@@ -101,7 +101,7 @@
           </div>-->
       <div class="header-slider">
         <div class="header-slide">
-          <img src="" class="cinema-image-banner-1 rellax" data-rellax="10">
+          <img class="cinema-image-banner-1 rellax" data-rellax="10">
         </div>
         <div class="header-slide">
 

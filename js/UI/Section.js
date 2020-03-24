@@ -189,11 +189,11 @@ export default class Section {
          
                 <button type="button" class="poster-button remove-program" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
             </div>
-            
+              <div class="thumbnail-body" _id=${block3Image[i].chapter_id}>
                 <div class="thumbnail-large">
                     <img src="${block3Image[i].image_vertical}" alt="">
                 </div>
-            
+              </div>
         </div>
     </div> 
         `;
@@ -204,11 +204,11 @@ export default class Section {
             <div class="showtime-container justify-content-end">
                 <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
             </div>
-            
+            <div class="thumbnail-body" _id=${block3Image[i].chapter_id}>
                 <div class="thumbnail-large">
                     <img src="${block3Image[i].image_vertical}" alt="">
                 </div>
-            
+            </div>
         </div>
     </div> 
         `;
@@ -240,11 +240,11 @@ export default class Section {
                   
                         <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
                     </div>
-                  
+                    <div class="thumbnail-body" _id="${block4Image[i].chapter_id}>
                         <div class="thumbnail-large">
                             <img src="${block4Image[i].image_horizontal}" alt="">
                         </div>
-                   
+                    </div>
                 </div>
             </div>
             `;
@@ -252,15 +252,15 @@ export default class Section {
         concertHomeVideosMobile += `
             <div class="poster">
                 <div class="poster-body">
-                    <div class="showtime-container justify-content-end">
+                     <div class="showtime-container justify-content-end">
                    
                         <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                    </div>
-                   
+                      </div>
+                      <div class="thumbnail-body" _id="${block4Image[i].chapter_id}>
                         <div class="thumbnail-large">
                             <img src="${block4Image[i].image_horizontal}" alt="">
                         </div>
-                    
+                      </div>
                 </div>
             </div>
             `;
@@ -269,198 +269,6 @@ export default class Section {
 
     $(".concert-home-slider").append(concertHomeVideosMobile);
 
-    var concertVideoDesktop1 = "";
-    var concertVideoDesktop2 = "";
-    var concertVideoDesktop3 = "";
-    var concertVideoDesktop4 = "";
-    if (arrayFavoritesId.includes(json.data.block_4_image1.chapter_id)) {
-      concertVideoDesktop1 = `                                
-      <div class="poster">
-        <div class="poster-body">
-            <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
-                <button type="button" class="poster-button remove-program" _id="${json.data.block_4_image1.chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
-            </div>
-           
-            <a href="sinopsis.php" class="text-decoration-none">
-                <div class="thumbnail">
-                    <img src="${json.data.block_4_image1.image_horizontal}" alt="">
-                </div>
-                <div class="a-concert-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${json.data.block_4_image1.subtitle}
-                        </p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-    </div>`;
-    } else {
-      concertVideoDesktop1 = `                                
-        <div class="poster">
-          <div class="poster-body">
-              <div class="showtime-container">
-                  <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button add-favorites" _id="${json.data.block_4_image1.chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-              </div>
-             
-              <a href="sinopsis.php" class="text-decoration-none">
-                  <div class="thumbnail">
-                      <img src="${json.data.block_4_image1.image_horizontal}" alt="">
-                  </div>
-                  <div class="a-concert-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                          <p class="a-poster-text-white">${json.data.block_4_image1.subtitle}
-                          </p>
-                      </div>
-                  </div>
-              </a>
-          </div>
-  
-      </div>`;
-    }
-
-    if (arrayFavoritesId.includes(json.data.block_4_image2.chapter_id)) {
-      concertVideoDesktop2 = `                                
-        <div class="poster">
-          <div class="poster-body">
-              <div class="showtime-container">
-                  <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button remove-program" _id="${json.data.block_4_image2.chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
-              </div>
-             
-              <a href="sinopsis.php" class="text-decoration-none">
-                  <div class="thumbnail">
-                      <img src="${json.data.block_4_image2.image_horizontal}" alt="">
-                  </div>
-                  <div class="a-concert-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                          <p class="a-poster-text-white">${json.data.block_4_image2.subtitle}
-                          </p>
-                      </div>
-                  </div>
-              </a>
-          </div>
-  
-      </div>`;
-    } else {
-      concertVideoDesktop2 = `                                
-        <div class="poster">
-          <div class="poster-body">
-              <div class="showtime-container">
-                  <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button add-favorites" _id="${json.data.block_4_image2.chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-              </div>
-             
-              <a href="sinopsis.php" class="text-decoration-none">
-                  <div class="thumbnail">
-                      <img src="${json.data.block_4_image2.image_horizontal}" alt="">
-                  </div>
-                  <div class="a-concert-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                          <p class="a-poster-text-white">${json.data.block_4_image2.subtitle}
-                          </p>
-                      </div>
-                  </div>
-              </a>
-          </div>
-  
-      </div>`;
-    }
-
-    if (arrayFavoritesId.includes(json.data.block_4_image3.chapter_id)) {
-      concertVideoDesktop3 = `    <div class="poster">
-        <div class="poster-body">
-            <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
-                <button type="button" class="poster-button remove-program" _id="${json.data.block_4_image3.chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
-            </div>
-            <a href="sinopsis.php" class="text-decoration-none">
-                <div class="thumbnail">
-                    <img src="${json.data.block_4_image3.image_horizontal}" alt="">
-                </div>
-                <div class="a-concert-rectangle thumbnail-info-title">
-                    <p class="a-poster-text-white">${json.data.block_4_image3.subtitle}</p>
-                </div>
-            </a>
-        </div>
-    </div>`;
-    } else {
-      concertVideoDesktop3 = `    <div class="poster">
-        <div class="poster-body">
-            <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
-                <button type="button" class="poster-button add-favorites" _id="${json.data.block_4_image3.chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-            </div>
-            <a href="sinopsis.php" class="text-decoration-none">
-                <div class="thumbnail">
-                    <img src="${json.data.block_4_image3.image_horizontal}" alt="">
-                </div>
-                <div class="a-concert-rectangle thumbnail-info-title">
-                    <p class="a-poster-text-white">${json.data.block_4_image3.subtitle}</p>
-                </div>
-            </a>
-        </div>
-    </div>`;
-    }
-
-    if (arrayFavoritesId.includes(json.data.block_4_image4.chapter_id)) {
-      concertVideoDesktop4 = `    
-        <div class="poster">
-        <div class="poster-body">
-            <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
-                <button type="button" class="poster-button remove-program" _id="${json.data.block_4_image4.chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
-            </div>
-            <a href="sinopsis.php" class="text-decoration-none">
-                <div class="thumbnail">
-                    <img src="${json.data.block_4_image4.image_horizontal}" alt="">
-                </div>
-                <div class="a-concert-rectangle thumbnail-info-title">
-                    <p class="a-poster-text-white">${json.data.block_4_image4.subtitle}</p>
-                </div>
-            </a>
-        </div>
-    </div>`;
-    } else {
-      concertVideoDesktop4 = `    
-        <div class="poster">
-        <div class="poster-body">
-            <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
-                <button type="button" class="poster-button add-favorites" _id="${json.data.block_4_image4.chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-            </div>
-            <a href="sinopsis.php" class="text-decoration-none">
-                <div class="thumbnail">
-                    <img src="${json.data.block_4_image4.image_horizontal}" alt="">
-                </div>
-                <div class="a-concert-rectangle thumbnail-info-title">
-                    <p class="a-poster-text-white">${json.data.block_4_image4.subtitle}</p>
-                </div>
-            </a>
-        </div>
-    </div>`;
-    }
-
-    let concertVideosDesktop = `                       
-    <div class="row poster-pad-b">
-    <div class="col poster-pad-r poster-section">
-        ${concertVideoDesktop1}
-    </div>
-    <div class="col poster-pad-l">
-        ${concertVideoDesktop2}
-    </div>
-</div>
-<div class="row poster-pad-t">
-<div class="col poster-pad-r">
-    ${concertVideoDesktop3}
-</div>
-<div class="col poster-pad-l">
-    ${concertVideoDesktop4}
-</div>
-</div>`;
-    $(".concertHome-videos-desktop").html(concertVideosDesktop);
     /* End Concert Channel - Home*/
 
     /* Claro Cinema - Home*/
@@ -483,11 +291,11 @@ export default class Section {
                         
                           <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
                       </div>
-                    
+                      <div class="thumbnail-body" _id="${block5Image[i].chapter_id}>
                           <div class="thumbnail-large">
                               <img src="${block5Image[i].image_horizontal}" alt="">
                           </div>
-
+                      </div>
                     
                   </div>
               </div>
@@ -500,11 +308,11 @@ export default class Section {
                  
                           <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                       </div>
-                     
+                      <div class="thumbnail-body" _id="${block5Image[i].chapter_id}>
                           <div class="thumbnail-large">
                               <img src="${block5Image[i].image_horizontal}" alt="">
                           </div>
-                    
+                      </div>
                   </div>
               </div>
               `;
@@ -597,195 +405,6 @@ export default class Section {
       ]
     });
 
-    var cinemaVideoDesktop1 = "";
-    var cinemaVideoDesktop2 = "";
-    var cinemaVideoDesktop3 = "";
-    var cinemaVideoDesktop4 = "";
-    if (arrayFavoritesId.includes(json.data.block_5_image1.chapter_id)) {
-      cinemaVideoDesktop1 = `                                
-      <div class="poster">
-        <div class="poster-body">
-            <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
-                <button type="button" class="poster-button remove-program" _id="${json.data.block_5_image1.chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
-            </div>
-           
-            <a href="sinopsis.php" class="text-decoration-none">
-                <div class="thumbnail">
-                    <img src="${json.data.block_5_image1.image_horizontal}" alt="">
-                </div>
-                <div class="a-cinema-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${json.data.block_5_image1.subtitle}
-                        </p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-    </div>`;
-    } else {
-      cinemaVideoDesktop1 = `                                
-        <div class="poster">
-          <div class="poster-body">
-              <div class="showtime-container">
-                  <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button add-favorites" _id="${json.data.block_5_image1.chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-              </div>
-             
-              <a href="sinopsis.php" class="text-decoration-none">
-                  <div class="thumbnail">
-                      <img src="${json.data.block_5_image1.image_horizontal}" alt="">
-                  </div>
-                  <div class="a-cinema-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                          <p class="a-poster-text-white">${json.data.block_5_image1.subtitle}
-                          </p>
-                      </div>
-                  </div>
-              </a>
-          </div>
-  
-      </div>`;
-    }
-
-    if (arrayFavoritesId.includes(json.data.block_5_image2.chapter_id)) {
-      cinemaVideoDesktop2 = `                                
-      <div class="poster">
-      <div class="poster-body">
-          <div class="showtime-container">
-              <p class="a-programming-text">14:30 - 16:30</p>
-              <button type="button" class="poster-button remove-program" _id="${json.data.block_5_image2.chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
-          </div>
-         
-          <a href="sinopsis.php" class="text-decoration-none">
-              <div class="thumbnail">
-                  <img src="${json.data.block_5_image2.image_horizontal}" alt="">
-              </div>
-              <div class="a-cinema-rectangle thumbnail-info-title">
-                  <div class="poster-title-margin">
-                      <p class="a-poster-text-white">${json.data.block_5_image2.subtitle}
-                      </p>
-                  </div>
-              </div>
-          </a>
-      </div>
-
-  </div>`;
-    } else {
-      cinemaVideoDesktop2 = `                                
-      <div class="poster">
-      <div class="poster-body">
-          <div class="showtime-container">
-              <p class="a-programming-text">14:30 - 16:30</p>
-              <button type="button" class="poster-button add-favorites" _id="${json.data.block_5_image2.chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-          </div>
-         
-          <a href="sinopsis.php" class="text-decoration-none">
-              <div class="thumbnail">
-                  <img src="${json.data.block_5_image2.image_horizontal}" alt="">
-              </div>
-              <div class="a-cinema-rectangle thumbnail-info-title">
-                  <div class="poster-title-margin">
-                      <p class="a-poster-text-white">${json.data.block_5_image2.subtitle}
-                      </p>
-                  </div>
-              </div>
-          </a>
-      </div>
-
-  </div>`;
-    }
-
-    if (arrayFavoritesId.includes(json.data.block_5_image3.chapter_id)) {
-      cinemaVideoDesktop3 = `    <div class="poster">
-        <div class="poster-body">
-            <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
-                <button type="button" class="poster-button remove-program" _id="${json.data.block_5_image3.chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
-            </div>
-            <a href="sinopsis.php" class="text-decoration-none">
-                <div class="thumbnail">
-                    <img src="${json.data.block_45_image3.image_horizontal}" alt="">
-                </div>
-                <div class="a-cinema-rectangle thumbnail-info-title">
-                    <p class="a-poster-text-white">${json.data.block_5_image3.subtitle}</p>
-                </div>
-            </a>
-        </div>
-    </div>`;
-    } else {
-      cinemaVideoDesktop3 = `    <div class="poster">
-        <div class="poster-body">
-            <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
-                <button type="button" class="poster-button add-favorites" _id="${json.data.block_5_image3.chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-            </div>
-            <a href="sinopsis.php" class="text-decoration-none">
-                <div class="thumbnail">
-                    <img src="${json.data.block_5_image3.image_horizontal}" alt="">
-                </div>
-                <div class="a-cinema-rectangle thumbnail-info-title">
-                    <p class="a-poster-text-white">${json.data.block_5_image3.subtitle}</p>
-                </div>
-            </a>
-        </div>
-    </div>`;
-    }
-
-    if (arrayFavoritesId.includes(json.data.block_5_image4.chapter_id)) {
-      cinemaVideoDesktop4 = `    
-        <div class="poster">
-        <div class="poster-body">
-            <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
-                <button type="button" class="poster-button remove-program" _id="${json.data.block_5_image4.chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
-            </div>
-            <a href="sinopsis.php" class="text-decoration-none">
-                <div class="thumbnail">
-                    <img src="${json.data.block_5_image4.image_horizontal}" alt="">
-                </div>
-                <div class="a-cinema-rectangle thumbnail-info-title">
-                    <p class="a-poster-text-white">${json.data.block_4_image4.subtitle}</p>
-                </div>
-            </a>
-        </div>
-    </div>`;
-    } else {
-      cinemaVideoDesktop4 = `    
-        <div class="poster">
-        <div class="poster-body">
-            <div class="showtime-container">
-                <p class="a-programming-text">14:30 - 16:30</p>
-                <button type="button" class="poster-button add-favorites" _id="${json.data.block_5_image4.chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-            </div>
-            <a href="sinopsis.php" class="text-decoration-none">
-                <div class="thumbnail">
-                    <img src="${json.data.block_5_image4.image_horizontal}" alt="">
-                </div>
-            </a>
-        </div>
-    </div>`;
-    }
-
-    let cinemaVideosDesktop = `                       
-    <div class="row poster-pad-b">
-    <div class="col-6 poster-pad-r poster-section">
-        ${cinemaVideoDesktop1}
-    </div>
-    <div class="col-6 poster-pad-l">
-        ${cinemaVideoDesktop2}
-    </div>
-</div>
-<div class="row poster-pad-t">
-<div class="col-6 poster-pad-r">
-    ${cinemaVideoDesktop3}
-</div>
-<div class="col-6 poster-pad-l">
-    ${cinemaVideoDesktop4}
-</div>
-</div>`;
-    $(".cinema-home-videos-container").html(cinemaVideosDesktop);
     /* End Claro Cinema - Home*/
 
     /* Nuestra Visión - Home*/

@@ -87,9 +87,8 @@
       </div>
 
       <?php
-      include './views/partials/menu-desktop-white.php'
+      include './views/partials/menu-desktop-black.php'
       ?>
-
 
       <!--<div class="header-details header-detail-margin col-md-6">
           <div class="m-header-card">
@@ -104,7 +103,7 @@
         </div>-->
       <div class="header-slider">
         <div class="header-slide">
-          <img src="" class="claro-image-banner-1 rellax" data-rellax="10">
+          <img class="claro-image-banner-1 rellax" data-rellax="10">
         </div>
         <div class="header-slide">
           <!--<img src="./images/header/glastonbury.jpeg" class="rellax" data-rellax="10">-->
