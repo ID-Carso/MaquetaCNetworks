@@ -14,7 +14,7 @@
            
     </span>
     <hr class="bg-light mb-1 pt-0 ml-3 mr-3 mt-2 "/> 
-  <div class="login-container mb-4">
+  <div class="login-container ">
     <div class="login-form no-gutters mb-4">
       <div class="col-sm-12 no-gutters col-md-6  no-gutters col-lg-4  col-xl-3 shadow1 fondolog mb-4">
         <img src="../images/registro/group-10.svg" class="ubicacion5" />
@@ -51,7 +51,7 @@
                     <input class="insert-data input-password" type="password" id="login-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
                     <img src="../images/registro/eye-none.svg" class="icon-eye" />
                   </div>
-                  <p class="caracteres-min">
+                  <p class="caracteres-min" >
                     8 caractéres mínimo
                     <img src="../images/registro/listo.svg" class="listo" />
                                     
@@ -61,15 +61,15 @@
               </div>
             </div> 
            
-            <div class="col-xl-12 row ma-no centro margin-top-por contra pt-3 pb-2" >
-            <input type="checkbox" value="1" class=" mr-1 reco-chek" >
+          <!--  <div class="col-xl-12 row ma-no centro margin-top-por contra pt-3 pb-2" >
+            <input type="checkbox" value="1" class=" mr-1 reco-chek" style="display:block">
 <p class="pb-1">  Recordar contraseña</p>
-            </div>
+            </div>-->
 
             <div class="row ma-no centro">
-              <div class="col-sm-12">
+             
               <a href="Admin-BO.php">
-                <button type="button" class="login-button form-button-primary" >
+                <button type="button" class="login-button btn-ingresar-reco" >
                   INGRESAR
                 </button>
                 </a>
@@ -77,7 +77,7 @@
                   Aún no has ingresado datos
                   <img src="../images/registro/alerta.svg" />
                 </p>
-              </div>
+             
             </div>
           </form>
           <br />
@@ -86,7 +86,7 @@
               <a href="Recopassword.php">
                 <p class="contra">¿Olvidaste la contraseña?</p>
 </a>
-              <hr class="log" />
+              <hr class="line" />
              
               </div>
           </div>

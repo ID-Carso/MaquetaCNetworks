@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>     
+<head>
 <script src="./js/admin.js" defer></script>
 </head>
 <body>
 <div id="segunda">
   <div id="Adm-users-BO">
-    <div class="col-xl-9">
+    <div class="col-xl-10 position-btn-alta">
         <button class="btn-alta mb-4" id="btnAlta" onClick="muestraAlta()">+ Agregar nuevo usuario</button>  
     </div>
         <div class="sombras2">
@@ -22,54 +22,54 @@
               </aside>
         <div>Fernando Montes de Oca</div>
         <div>Usuario</div>
-        <div>
+        <div >
           
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus " id="visual" onClick="verusuarios()" ></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus " onClick="editarusuarios()"></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus " onClick="abrirBorrar()" ></input>
+            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus  images" id="visual" onClick="verusuarios()" ></input>
+            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editarusuarios()"></input>
+            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()" ></input>
         </div>
         <div>Fernando Montes de Oca</div>
         <div>Administrador</div>
         <div>
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus " id="visual" onClick="verusuarios()"  ></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus " onClick="editarusuarios()"></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus " onClick="abrirBorrar()" ></input>  
+            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus images" id="visual" onClick="verusuarios()"  ></input>
+            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editarusuarios()"></input>
+            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()" ></input>  
         </div>
         <div>Fernando Montes de Oca</div>
         <div>Usuario</div>
         <div >
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus " id="visual" onClick="verusuarios()"  ></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus "  onClick="editarusuarios()" ></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus " onClick="abrirBorrar()" onClick="editarusuarios()" ></input>          
+            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus images" id="visual" onClick="verusuarios()"  ></input>
+            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images"  onClick="editarusuarios()" ></input>
+            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()" onClick="editarusuarios()" ></input>          
         </div>
         <div>Fernando Montes de Oca</div>
         <div>Usuario</div>
         <div>
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus " id="visual" onClick="verusuarios()"  ></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus " onClick="editarusuarios()"></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus " onClick="abrirBorrar()" ></input>         
+            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus images" id="visual" onClick="verusuarios()"  ></input>
+            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editarusuarios()"></input>
+            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()" ></input>         
         </div>
         <div>Fernando Montes de Oca</div>
         <div>Usuario</div>
         <div>
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus " id="visual" onClick="verusuarios()" ></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus "  onClick="editarusuarios()"></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus " onClick="abrirBorrar()" ></input>
+            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus images" id="visual" onClick="verusuarios()" ></input>
+            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images"  onClick="editarusuarios()"></input>
+            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()" ></input>
                
         </div>
         <div>Fernando Montes de Oca</div>
         <div>Usuario</div>
         <div> 
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus " id="visual" onClick="verusuarios()"  ></input>         
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus "  onClick="editarusuarios()"></input>      
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus " onClick="abrirBorrar()" ></input> 
+            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus images" id="visual" onClick="verusuarios()"  ></input>         
+            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images"  onClick="editarusuarios()"></input>      
+            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()" ></input> 
         </div>
         <div>Fernando Montes de Oca</div>
         <div>Usuario</div>
         <div>
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus " id="visual" onClick="verusuarios()"  ></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus "  onClick="editarusuarios()" ></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus " onClick="abrirBorrar()" ></input>
+            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus images" id="visual" onClick="verusuarios()"  ></input>
+            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images"  onClick="editarusuarios()" ></input>
+            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()" ></input>
            
            </div>
            
@@ -79,7 +79,7 @@
 
    <!--Para funcionalidad-->     
    <div class="col-xl-1">
-              <div class="row descri">
+              <div class="row descri4">
             <input type="image"  src="./images/ver-muestra.svg" class="btn-focus ver tam "></input>
             <input type="image" src="./images/edita-muestra.svg"  class="btn-focus edi tam"></input>
             <input type="image" src="./images/borrar-muestra.svg"  class="btn-focus borrar tam"></input>                      
