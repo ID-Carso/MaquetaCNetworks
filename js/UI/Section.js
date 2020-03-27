@@ -189,7 +189,7 @@ export default class Section {
          
                 <button type="button" class="poster-button remove-program" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
             </div>
-              <div class="thumbnail-body" _id=${block3Image[i].chapter_id}>
+              <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
                 <div class="thumbnail-large">
                     <img src="${block3Image[i].image_vertical}" alt="">
                 </div>
@@ -204,7 +204,7 @@ export default class Section {
             <div class="showtime-container justify-content-end">
                 <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
             </div>
-            <div class="thumbnail-body" _id=${block3Image[i].chapter_id}>
+            <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
                 <div class="thumbnail-large">
                     <img src="${block3Image[i].image_vertical}" alt="">
                 </div>
@@ -237,10 +237,9 @@ export default class Section {
             <div class="poster">
                 <div class="poster-body">
                     <div class="showtime-container justify-content-end">
-                  
                         <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
                     </div>
-                    <div class="thumbnail-body" _id="${block4Image[i].chapter_id}>
+                    <div class="thumbnail-body" _id="${block4Image[i].chapter_id}">
                         <div class="thumbnail-large">
                             <img src="${block4Image[i].image_horizontal}" alt="">
                         </div>
@@ -253,10 +252,9 @@ export default class Section {
             <div class="poster">
                 <div class="poster-body">
                      <div class="showtime-container justify-content-end">
-                   
-                        <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                        <button type="button" class="poster-button add-favorites" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                       </div>
-                      <div class="thumbnail-body" _id="${block4Image[i].chapter_id}>
+                      <div class="thumbnail-body" _id="${block4Image[i].chapter_id}">
                         <div class="thumbnail-large">
                             <img src="${block4Image[i].image_horizontal}" alt="">
                         </div>
@@ -291,7 +289,7 @@ export default class Section {
                         
                           <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
                       </div>
-                      <div class="thumbnail-body" _id="${block5Image[i].chapter_id}>
+                      <div class="thumbnail-body" _id="${block5Image[i].chapter_id}">
                           <div class="thumbnail-large">
                               <img src="${block5Image[i].image_horizontal}" alt="">
                           </div>
@@ -306,9 +304,9 @@ export default class Section {
                   <div class="poster-body">
                       <div class="showtime-container justify-content-end">
                  
-                          <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                          <button type="button" class="poster-button add-favorites" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                       </div>
-                      <div class="thumbnail-body" _id="${block5Image[i].chapter_id}>
+                      <div class="thumbnail-body" _id="${block5Image[i].chapter_id}">
                           <div class="thumbnail-large">
                               <img src="${block5Image[i].image_horizontal}" alt="">
                           </div>
