@@ -12,21 +12,21 @@
                 </section>
                   <div>Karina Henandez Ramírez</div>
                        <div>
-                           <input type="image" src="./images/ojito-acti.svg" alt="" class="ml-3 btn-focus " onClick="verfront()"></input>
-                           <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus " onClick="editfront()"></input>
-                           <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus "onClick="abrirBorrar()" ></input>
+                           <input type="image" src="./images/ojito-acti.svg" alt="" class="ml-3 btn-focus images" onClick="verfront()"></input>
+                           <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images " onClick="editfront()"></input>
+                           <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images "onClick="abrirBorrar()" ></input>
                        </div>
                   <div>Juan González Gómez</div>
                          <div>
-                            <input type="image" src="./images/ojito-acti.svg" alt="" class="ml-3 btn-focus "onClick="verfront()" ></input>
-                            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus " onClick="editfront()"></input>
-                            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus " onClick="abrirBorrar()"></input>      
+                            <input type="image" src="./images/ojito-acti.svg" alt="" class="ml-3 btn-focus images "onClick="verfront()" ></input>
+                            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images " onClick="editfront()"></input>
+                            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()"></input>      
                           </div>
                     <div>Andrea Camacho Juárez</div>
                           <div>
-                            <input type="image" src="./images/ojito-acti.svg" alt="" class="ml-3 btn-focus " onClick="verfront()"></input>
-                            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus " onClick="editfront()" ></input>
-                            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus " onClick="abrirBorrar()"></input>    
+                            <input type="image" src="./images/ojito-acti.svg" alt="" class="ml-3 btn-focus images" onClick="verfront()"></input>
+                            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editfront()" ></input>
+                            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()"></input>    
                            </div>
        </div>                
      </div>
@@ -38,9 +38,9 @@
             <input type="image" src="./images/borrar-muestra.svg"  class="btn-focus borrar tam"></input>                      
        </div>
           <div class="descri3">
-              <div class="veri"><img src="./images/recuadro1-hover.svg"><span class="text-veri">Visualizar</span></div> 
-             <div class="edita"><img src="./images/recuadro1-hover.svg"><span class="text-edita">Editar</span></div> 
-             <div class="borra"><img src="./images/recuadro1-hover.svg"><span class="text-borra">Borrar</span></div> 
+              <div class="veri1"><img src="./images/recuadro1-hover.svg"><span class="text-veri">Visualizar</span></div> 
+             <div class="edita1"><img src="./images/recuadro1-hover.svg"><span class="text-edita">Editar</span></div> 
+             <div class="borra1"><img src="./images/recuadro1-hover.svg"><span class="text-borra">Borrar</span></div> 
           </div>
      </div>
 </div>

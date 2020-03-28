@@ -27,7 +27,7 @@ function showHeader($nameButton, $variation)
             </div>
             <div class='mr-5'>
            
-           <a href='login.php'> <button class='btn btn-info btn-cerrar a-text-black-light textcerrar'>Cerrar Sesión</button></a>
+           <a href='login.php'> <button class='btn btn-info btn-cerrar a-text-black-light textcerrar'>CERRAR SESIÓN</button></a>
             </div>
         </div>
         ";
