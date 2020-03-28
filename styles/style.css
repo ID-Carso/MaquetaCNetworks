@@ -2799,6 +2799,10 @@ h6 {
   max-width: 56px;
 }
 
+.social-item {
+  padding: 0 15px;
+}
+
 .hr1 {
   display: none;
 }
@@ -4357,7 +4361,7 @@ input[type="radio"]:checked + .mujer-estilo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 46px auto 86px auto;
+  margin: 40px auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -6152,9 +6156,6 @@ input[type="radio"]:checked + .mujer-estilo {
   .slick-dots {
     bottom: -40px !important;
   }
-  .social-media {
-    margin: 46px auto 65px auto;
-  }
   .programacion-slider {
     margin-bottom: 150px;
   }
@@ -7443,9 +7444,6 @@ input[type="radio"]:checked + .mujer-estilo {
   .terms-conditions-mobile {
     display: none !important;
   }
-  .social-media {
-    margin: 46px auto 65px auto;
-  }
   .o-tv-section .slick-dotted.slick-slider {
     margin-bottom: 100px !important;
   }
@@ -8678,9 +8676,6 @@ input[type="radio"]:checked + .mujer-estilo {
         -ms-flex-align: center;
             align-items: center;
   }
-  .social-media {
-    margin: 46px auto 65px auto;
-  }
   .nav-content {
     margin: 0px;
     position: relative;
@@ -9904,9 +9899,6 @@ input[type="radio"]:checked + .mujer-estilo {
   .slick-dots li button:before {
     font-size: 14px !important;
   }
-  .social-media {
-    margin: 46px auto 65px auto;
-  }
   .slick-slider .slick-dots li {
     margin: 0 12px;
   }
@@ -10104,7 +10096,6 @@ input[type="radio"]:checked + .mujer-estilo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: transparent;
   }
   .advertising-subtitle {
     font-size: 25px;

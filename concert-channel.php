@@ -376,6 +376,27 @@
         <?php
         include 'advertising-section.php'
         ?>
+        <div class="">
+            <div class="row no-gutters">
+                <div class="col-10 mx-auto">
+                    <h1 class="footer-title">¡sígue a <br>concert channel!</h1>
+                </div>
+            </div>
+            <div class="social-media">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="social-item">
+                        <a href="https://www.facebook.com/concertchannel/" target="_blank">
+                            <img class="social-icon" src="./images/redes/facebook-icon-green.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://twitter.com/Concert_Channel" target="_blank">
+                            <img class="social-icon" src="./images/redes/twitter-icon-green.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="cconcert-list-links-footer">
             <?php
             include './views/partials/list-links-footer.php';
