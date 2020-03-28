@@ -528,7 +528,7 @@ export default class Section {
             </div>
             <a href="sinopsis.php" class="text-decoration-none">
                 <div class="thumbnail">
-                    <img src="${json.data.block_45_image3.image_horizontal}" alt="">
+                    <img src="${json.data.block_5_image3.image_horizontal}" alt="">
                 </div>
                 <div class="a-cinema-rectangle thumbnail-info-title">
                     <p class="a-poster-text-white">${json.data.block_5_image3.subtitle}</p>
