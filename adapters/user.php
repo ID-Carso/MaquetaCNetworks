@@ -60,9 +60,9 @@ class User
         callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/login", $data);
     }
 
-    function registerUser($name, $email, $password)
+    function registerUser($name, $email, $password, $version)
     {
-        $dataUser = array("name" => $name, "email" => $email, "password" => $password);
+        $dataUser = array("name" => $name, "email" => $email, "password" => $password, "version" => $version);
         $dataUserJson = json_encode($dataUser);
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user");
@@ -73,7 +73,7 @@ class User
 
         $response = curl_exec($ch);
         curl_close($ch);
-        echo ($response);
+        return $response;
     }
 
     function updateDataUser($data)
@@ -159,8 +159,9 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
                 $name = $_POST['name'];
                 $email = $_POST['email'];
                 $password = $_POST['password'];
+                $version = $_POST['version'];
                 $users = User::getUserInstance();
-                $users->registerUser($name, $email, $password);
+                echo ($users->registerUser($name, $email, $password, $version));
             } else {
                 return "No válido";
             }
@@ -189,11 +190,8 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             break;
 
         case 'updateAlerts':
-
             $data = $_POST['data'];
-
             $dataJson = json_encode($data);
-
             $user = User::getUserInstance();
             echo ($user->updateAlerts($dataJson));
             break;

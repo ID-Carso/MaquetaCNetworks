@@ -40,12 +40,12 @@ var programacion_slider;
 var tvConcertSlider;
 let url = location.href;
 let url2 =
-  "http://www.claronetworks.openofficedospuntocero.info/cuenta-confirmada.html";
+  "http://www.claronetworks.openofficedospuntocero.info/v1.2/cuenta-confirmada.html";
 let arrayUrl = url.split("?");
 let data = {
   token: arrayUrl[1]
 };
-
+console.log(data);
 if (arrayUrl[0] == url2) {
   validateToken(data);
 }
@@ -1120,7 +1120,7 @@ $(document).ready(function() {
   var loginCountry = $(".login-country");
   //!sessionSrc && window.location.pathname !== "/v1.2/"
   if (!sessionSrc && window.location.pathname !== "/v1.2/") {
-    location.href = "/v1.2/";
+    location.href = "/";
   } else {
     loginCountry.attr("src", sessionSrc);
   }

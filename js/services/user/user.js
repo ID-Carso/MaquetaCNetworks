@@ -369,7 +369,8 @@ function registerUser(inputName, inputEmail, inputPassword) {
     function: "registerUser",
     name: name,
     email: email,
-    password: password
+    password: password,
+    version: "1.2"
   };
 
   $.ajax({
@@ -388,6 +389,7 @@ function registerUser(inputName, inputEmail, inputPassword) {
     success: function(result) {
       let json = JSON.parse(result);
       console.log(json);
+
       let loader = $(".loader");
 
       if (json.code == 201) {
