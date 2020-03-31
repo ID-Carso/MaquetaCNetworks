@@ -369,7 +369,8 @@ function registerUser(inputName, inputEmail, inputPassword) {
     function: "registerUser",
     name: name,
     email: email,
-    password: password
+    password: password,
+    version: "1"
   };
 
   $.ajax({
