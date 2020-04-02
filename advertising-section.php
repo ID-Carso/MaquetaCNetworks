@@ -50,6 +50,7 @@
         <div class="col-lg-12">
             <div class="row">
                 <div class="col-5 col-lg-6">
+
                     <div class="adv-headline-mb">
                         <h1 class="advertising-title ">Disfruta</h1>
                         <h2 class="advertising-subtitle">La mejor programación</h2>

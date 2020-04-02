@@ -174,6 +174,9 @@ export default class Slider {
     /* Número de días del mes actual */
     let currentMonthDays = getDays(1);
 
+    /* Número de mes actual*/
+    let currentMonth = date.getMonth();
+
     /* Mes Siguiente*/
     let nextMonth = getDays(2);
 
@@ -184,15 +187,13 @@ export default class Slider {
       son menores a 15, mostramos los días del siguiente mes
     */
 
-    var totalDaysSlider;
-
+    var totalDaysSlider = 0;
+    var containerItemSlider = "";
+    var daysSlider = "";
     if (numberLastDays <= 15) {
       /* Número de días por poner en el slider, considerando los días
         restantes del mes actual y los del siguiente mes
       */
-
-      var daysSlider = "";
-      var containerItemSlider = "";
       totalDaysSlider = getDays(2) + (getDays(1) - getDay());
       for (let i = getDay(); i <= getDays(1); i++) {
         if (i == getDay()) {
@@ -201,7 +202,7 @@ export default class Slider {
             0
           )}" class="${landing}-item programing-item ${landing}-active">
               <div class="day">
-                  <p class="day-text">${getDayName(1, i)}</p>
+                  <p class="day-text">${getDayName(currentMonth, i)}</p>
                   <p class="day-number">${i}</p>
               </div>
             </li>      
@@ -217,7 +218,7 @@ export default class Slider {
             0
           )}" class="${landing}-item programing-item">
           <div class="day">
-              <p class="day-text">${getDayName(1, i)}</p>
+              <p class="day-text">${getDayName(currentMonth, i)}</p>
               <p class="day-number">${i}</p>
           </div>
         </li>      
@@ -236,7 +237,7 @@ export default class Slider {
           1
         )}" class="${landing}-item programing-item">
         <div class="day">
-            <p class="day-text">${getDayName(2, i)}</p>
+            <p class="day-text">${getDayName(currentMonth + 1, i)}</p>
             <p class="day-number">${i}</p>
         </div>
       </li>      
@@ -258,7 +259,7 @@ export default class Slider {
             0
           )}" class="${landing}-item programing-item ${landing}-active">
               <div class="day">
-                  <p class="day-text">${getDayName(1, i)}</p>
+                  <p class="day-text">${getDayName(currentMonth, i)}</p>
                   <p class="day-number">${i}</p>
               </div>
             </li>      
@@ -274,7 +275,7 @@ export default class Slider {
             0
           )}" class="${landing}-item programing-item">
           <div class="day">
-              <p class="day-text">${getDayName(1, i)}</p>
+              <p class="day-text">${getDayName(currentMonth, i)}</p>
               <p class="day-number">${i}</p>
           </div>
         </li>      
@@ -290,11 +291,6 @@ export default class Slider {
       programmingContainerSlider.html(daysSlider);
       containerSlider.append(containerItemSlider);
     }
-
-    $(".claro-item").click(function() {
-      console.log(landing);
-    });
-    console.log();
   }
 
   showImageBanner() {

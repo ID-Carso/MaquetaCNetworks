@@ -162,9 +162,10 @@
     <section class="dont-lose-claro">
       <div class="dont-lose-container">
 
-        <h1 class="a-dontLose-claro-title">no te pierdas</h1>
+        <h1 class="a-dontLose-claro-title">TIENES QUE VERLO</h1>
         <h2 class="a-dontLose-claro-subtitle">
-          ve un <span>adelanto</span> de la programación
+          <!-- ve un <span>adelanto</span> de la programación -->
+          ¡No te lo puedes perder!
         </h2>
         <div class="dontLose-video-container">
           <div class="section-slider dontLose-claro-slider">
@@ -293,9 +294,10 @@
             </div>
           </div>
           <div class="dontLose-slider-tablet">
-            <h1 class="a-dontLose-claro-title">solo por canal claro</h1>
+            <h1 class="a-dontLose-claro-title">Contenido exclusivo</h1>
             <h2 class="a-dontLose-claro-subtitle">
-              ve un <span>adelanto</span> de la programación
+              <!-- ve un <span>adelanto</span> de la programación -->
+              Únete y disfruta nuestras producciones propias.
             </h2>
 
             <div class="section-slider dontLose-claro-slider">

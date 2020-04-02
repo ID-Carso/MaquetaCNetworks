@@ -86,6 +86,9 @@ if (day && month && year) {
 }
 
 $(document).ready(function() {
+  let dateUTC = new Date();
+  console.log(dateUTC.getUTCHours());
+
   /* Banner*/
   let sliderBanner = new Slider();
   sliderBanner.showImageBanner();

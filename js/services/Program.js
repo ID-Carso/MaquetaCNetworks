@@ -275,7 +275,7 @@ function getPrograms(date, time) {
                 <div class="schedule-details">
                     <div class="schedule-details-header">
                         <div>
-                            <p class="schedule">${program.time}</p>
+                            <p class="schedule">${program.time} hrs.</p>
                             <p class="rating">Clasificación: A</p>
                         </div>
                         <div>
@@ -310,7 +310,7 @@ function getPrograms(date, time) {
                 <div class="schedule-details">
                     <div class="schedule-details-header">
                         <div>
-                            <p class="schedule">${program.time}</p>
+                            <p class="schedule">${program.time} hrs.</p>
                             <p class="rating">Clasificación: A</p>
                         </div>
                         <div>
@@ -326,7 +326,6 @@ function getPrograms(date, time) {
                     </p>
                 </div>
             </div>
-    
         </div>
             `;
         }
@@ -442,7 +441,7 @@ function getPrograms(date, time) {
                 <div class="schedule-details">
                     <div class="schedule-details-header">
                         <div>
-                            <p class="schedule">${program.time}</p>
+                            <p class="schedule">${program.time} hrs.</p>
                             <p class="rating">Clasificación: A</p>
                         </div>
                         <div>
@@ -477,7 +476,7 @@ function getPrograms(date, time) {
                 <div class="schedule-details">
                     <div class="schedule-details-header">
                         <div>
-                            <p class="schedule">${program.time}</p>
+                            <p class="schedule">${program.time} hrs.</p>
                             <p class="rating">Clasificación: A</p>
                         </div>
                         <div>
@@ -550,26 +549,38 @@ function getPrograms(date, time) {
         } else {
           if (arrayClaroCinema.includes(program.chapter_id)) {
             programClaroCinema = `
-                <div class="poster" >
-                  <div class="poster-body ">
-                      <div class="showtime-container justify-content-between">
-                          <p class="a-programming-text">${program.time}</p>
-                          <button type="button" class="poster-button remove-program" _id="${program.chapter_id}"><img src="./images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
-                      </div>
-                      
-                      <div class="thumbnail-body" _id="${program.chapter_id}">
-                          <div class="thumbnail">
-                              <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
-                          </div>
-                          <div class="a-cinema-rectangle thumbnail-info-title">
-                              <div class="poster-title-margin">
-                                  <p class="a-poster-text-white">${program.program_title}</p>
-                              </div>
-                          </div>
-                
+            <div class="schedule-container">
+            <p class="schedule-title">${program.program_title}</p>
+            <div class="schedule-item-body">
+                <div class="schedule-poster">
+                    <div class="poster">
+                        <div class="thumbnail-prog" _id="${program.chapter_id}">
+                            <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
+                        </div>
                     </div>
-                  </div>
-              </div>
+                </div>
+    
+                <div class="schedule-details">
+                    <div class="schedule-details-header">
+                        <div>
+                            <p class="schedule">${program.time} hrs.</p>
+                            <p class="rating">Clasificación: A</p>
+                        </div>
+                        <div>
+                            <button title="Eliminar de mi lista" class="button-none remove-program programing-button" type="button" _id="${program.chapter_id}">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="48" height="44" viewBox="0 0 48 44">
+                                <path class="heart-gray-filled" fill="none" fill-rule="evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+                            </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="schedule-description">
+                        ${program.sinopsis}
+                    </p>
+                </div>
+            </div>
+    
+        </div>
                 `;
           } else {
             programClaroCinema = `
@@ -601,10 +612,9 @@ function getPrograms(date, time) {
         if (arrayClaroCinema.includes(program.chapter_id)) {
           programClaroCinema = `
             <div class="schedule-container">
-            <p class="schedule-title">${program.program_title}</p>
+                <p class="schedule-title">${program.program_title}</p>
             <div class="schedule-item-body">
                 <div class="schedule-poster">
-                    
                         <div class="thumbnail-prog" _id="${program.chapter_id}">
                             <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
                         </div>
@@ -614,7 +624,7 @@ function getPrograms(date, time) {
                 <div class="schedule-details">
                     <div class="schedule-details-header">
                         <div>
-                            <p class="schedule">${program.time}</p>
+                            <p class="schedule">${program.time} hrs.</p>
                             <p class="rating">Clasificación: A</p>
                         </div>
                         <div>
@@ -635,37 +645,38 @@ function getPrograms(date, time) {
             `;
         } else {
           programClaroCinema = `
-            <div class="schedule-container">
-            <p class="schedule-title">${program.program_title}</p>
-            <div class="schedule-item-body">
-                <div class="schedule-poster">
-                        <div class="thumbnail-prog" _id="${program.chapter_id}">
-                            <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="schedule-details">
-                    <div class="schedule-details-header">
-                        <div>
-                            <p class="schedule">${program.time}</p>
-                            <p class="rating">Clasificación: A</p>
-                        </div>
-                        <div>
-                        <button title="Agregar a mi lista" class="button-none programing-button add-favorites" type="button" _id="${program.chapter_id}">
-                        <svg  xmlns="http://www.w3.org/2000/svg" width="48" height="44" viewBox="0 0 48 44">
-                            <path class="heart-gray" fill="none" fill-rule="evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
-                        </svg>
-                        </button>
-                        </div>
-                    </div>
-                    <p class="schedule-description">
-                    ${program.sinopsis}
-                    </p>
-                </div>
-            </div>
-    
-        </div>
+          <div class="schedule-container">
+          <p class="schedule-title">${program.program_title}</p>
+          <div class="schedule-item-body">
+              <div class="schedule-poster">
+                  <div class="poster">
+                      <div class="thumbnail-prog" _id="${program.chapter_id}">
+                          <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="schedule-details">
+                  <div class="schedule-details-header">
+                      <div>
+                          <p class="schedule">${program.time} hrs.</p>
+                          <p class="rating">Clasificación: A</p>
+                      </div>
+                      <div>
+                          <button title="Agregar a mi lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
+                          <svg  xmlns="http://www.w3.org/2000/svg" width="48" height="44" viewBox="0 0 48 44">
+                              <path class="heart-gray" fill="none" fill-rule="evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+                          </svg>
+                          </button>
+                      </div>
+                  </div>
+                  <p class="schedule-description">
+                      ${program.sinopsis}
+                  </p>
+              </div>
+          </div>
+  
+      </div>
             `;
         }
 

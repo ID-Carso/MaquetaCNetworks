@@ -40,6 +40,7 @@ function getDayName(month, day) {
   let currentDay = new Date(date.getFullYear(), month, day).getUTCDay();
 
   let days = ["DOM", "LUN", "MAR", "MIER", "JUE", "VIE", "SAB"];
+
   return days[currentDay];
 }
 

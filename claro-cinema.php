@@ -161,7 +161,8 @@
               recordar es volver <span class="recordar-title">a vivir</span>
             </h1>
             <h2 class="a-cinema-subtitle">
-              ve un <span>adelanto</span> de la programación
+              <!-- ve un <span>adelanto</span> de la programación -->
+              ¿Cómo ligaban antes del Tinder? Revive una época fascinante
             </h2>
           </div>
         </div>
@@ -293,9 +294,10 @@
       <section class="only-claro-cinema">
         <div class="header-title-section">
           <div>
-            <h1 class="a-cinema-title"> solo por <span>claro cinema</span></h1>
+            <h1 class="a-cinema-title"> sexy <span>románticas</span></h1>
             <h2 class="a-cinema-subtitle">
-              ve un <span>adelanto</span> de la programación
+              <!-- ve un <span>adelanto</span> de la programación -->
+              Películas para subir la temperatura
             </h2>
           </div>
         </div>

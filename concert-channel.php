@@ -132,8 +132,8 @@
         <section class="concerts">
             <div class="concert-container-header">
 
-                <h1 class="concert-title">conciertos</h1>
-                <h2 class="concert-subtitle">ve un <span>adelanto</span> de la programación</h2>
+                <h1 class="concert-title">imprescindibles</h1>
+                <h2 class="concert-subtitle">Los artistas que sonarán esta semana</h2>
             </div>
             <div class="concerts-videos-container">
                 <div class="section-slider concert-slider">
@@ -245,8 +245,8 @@
         </section>
         <section class="concert-interviews">
             <div class="concert-container-header">
-                <h1 class="concert-title">entrevistas</h1>
-                <h2 class="concert-subtitle">ve un <span>adelanto</span> de la programación</h2>
+                <h1 class="concert-title">Por si te lo perdiste</h1>
+                <h2 class="concert-subtitle">Conoce algunas de nuestras leyendas</h2>
             </div>
             <div class="interviews-videos-container">
                 <div class="section-slider concert-slider">
