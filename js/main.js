@@ -1116,7 +1116,7 @@ $(document).ready(function () {
   var loginCountry = $(".login-country");
   //!sessionSrc && window.location.pathname !== "/v1.2/"
   if (!sessionSrc && window.location.pathname !== "/v1.2/") {
-    location.href = "/";
+    location.href = "/v1.2/";
   } else {
     loginCountry.attr("src", sessionSrc);
   }
