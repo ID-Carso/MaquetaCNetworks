@@ -419,6 +419,7 @@ h6 {
 .header-h1 {
   font-size: 20px;
   color: #ffffff;
+  display: none;
 }
 
 .header-span {
@@ -5822,6 +5823,7 @@ input[type="radio"]:checked + .mujer-estilo {
   .header-h1 {
     color: #4f4f4f;
     font-size: 50px;
+    display: block;
   }
   .title-tv {
     font-size: 30px;
@@ -7048,6 +7050,7 @@ input[type="radio"]:checked + .mujer-estilo {
   .header-h1 {
     color: #4f4f4f;
     font-size: 72px;
+    display: block;
   }
   .our-channels {
     display: block;
@@ -8330,6 +8333,7 @@ input[type="radio"]:checked + .mujer-estilo {
   .header-h1 {
     color: #4f4f4f;
     font-size: 85px;
+    display: block;
   }
   .black-line {
     width: 100%;
@@ -9635,6 +9639,7 @@ input[type="radio"]:checked + .mujer-estilo {
   .header-h1 {
     color: #4f4f4f;
     font-size: 105px;
+    display: block;
   }
   .cinema-image {
     display: block;

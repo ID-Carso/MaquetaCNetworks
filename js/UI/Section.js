@@ -455,4 +455,115 @@ export default class Section {
 
     sliderHome.createSectionSliderHome();
   }
+
+  renderCanalClaro() {
+    let slider = new Slider();
+    let dontLoseSlider = $("#dontLose-claro-slider");
+    let sectionSlider = $(".section-slider");
+    let exlusiveContentSlider = $("#exlusiveContentClaroSlider");
+    sectionSlider.slick("unslick");
+
+    let programsTienesQueVerlo = [
+      {
+        chapter_id: 1,
+        program_title: "JOBS",
+        genre: "Película",
+        image:
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/01-JOBS.jpg"
+      },
+      {
+        chapter_id: 2,
+        program_title: "DA VINCI",
+        genre: "Documental",
+        image:
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/02%20DAVINCI.jpg"
+      },
+      {
+        chapter_id: 3,
+        program_title: "EL DANDY",
+        genre: "Serie",
+        image:
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/03%20EL-DANDY.jpg"
+      },
+      {
+        chapter_id: 4,
+        program_title: "MARVEL",
+        genre: "Anime",
+        image:
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/04-MARVEL.jpg"
+      }
+    ];
+
+    let programsExlusiveContent = [
+      {
+        chapter_id: 1,
+        program_title: "DRESS CODE",
+        image:
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/05-DRESS-CODE.jpg"
+      },
+      {
+        chapter_id: 2,
+        program_title: "FIT 4 LIFE",
+        image:
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/06-FIT4LIFE.jpg"
+      },
+      {
+        chapter_id: 3,
+        program_title: "CONEXIÓN CLARO",
+        image:
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/07-CONEXION.jpg"
+      },
+      {
+        chapter_id: 4,
+        program_title: "LA CAJA DE PANDORA",
+        image:
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/08-CAJA-DE-PANDORA.jpg"
+      }
+    ];
+
+    let programTiensQueVerlo = "";
+    let programExlusiveContent = "";
+
+    programsTienesQueVerlo.forEach(program => {
+      programTiensQueVerlo += `
+      <div class="poster" >
+        <div class="poster-body">
+            <div class="thumbnail-body" _id="${program.chapter_id}">
+                <div class="thumbnail">
+                    <img src="${program.image}" alt="">
+                </div>
+                <div class="a-claro-rectangle thumbnail-info-title">
+                    <div class="poster-title-margin">
+                        <p class="a-poster-text-white">${program.genre}</p>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      `;
+    });
+
+    programsExlusiveContent.forEach(program => {
+      programExlusiveContent += `
+      <div class="poster" >
+        <div class="poster-body">
+            <div class="thumbnail-body" _id="${program.chapter_id}">
+                <div class="thumbnail">
+                    <img src="${program.image}" alt="">
+                </div>
+                <div class="a-claro-rectangle thumbnail-info-title">
+                    <div class="poster-title-margin">
+                        <p class="a-poster-text-white">${program.program_title}</p>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      `;
+    });
+
+    dontLoseSlider.append(programTiensQueVerlo);
+    exlusiveContentSlider.append(programExlusiveContent);
+    slider.createSectionSliderHome();
+  }
 }

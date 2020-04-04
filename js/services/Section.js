@@ -13,6 +13,7 @@ function getMetaKeys() {
       let sectionUI = new Section();
 
       sectionUI.renderHome(json);
+      sectionUI.renderCanalClaro();
     }
   });
 }
