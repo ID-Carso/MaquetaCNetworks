@@ -1,11 +1,9 @@
 import { addFavorites } from "./user/user.js";
 
 function createClickThumbnails() {
-  $(".poster, .poster-live").click(function() {
+  $(".poster, .poster-live").click(function () {
     console.log("POjpoj");
-    let posterButtonId = $(this)
-      .find(".poster-button")
-      .attr("_id");
+    let posterButtonId = $(this).find(".poster-button").attr("_id");
     let posterLiveId = $(this).attr("_id");
     console.log(posterButtonId);
     if (posterButtonId) {
@@ -37,8 +35,8 @@ function createTvSlider(container) {
           centerMode: true,
           infinite: true,
           arrows: false,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 992,
@@ -48,8 +46,8 @@ function createTvSlider(container) {
           infinite: true,
           dots: true,
           centerMode: false,
-          arrows: false
-        }
+          arrows: false,
+        },
       },
       {
         breakpoint: 1200,
@@ -63,8 +61,8 @@ function createTvSlider(container) {
           prevArrow:
             '<img src="../images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
+        },
       },
       {
         breakpoint: 1900,
@@ -78,10 +76,10 @@ function createTvSlider(container) {
           prevArrow:
             '<img src="../images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
-      }
-    ]
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
+        },
+      },
+    ],
   });
 }
 
@@ -89,11 +87,11 @@ function destroySlider(container) {
   container.slick("unslick");
 }
 
-function getPrograms(date, time) {
+function getPrograms(date, country) {
   let dataProgram = {
     function: "getPrograms",
     date,
-    time
+    country,
   };
 
   let nowSliderCanalClaro = $(".today-claro-slider");
@@ -109,7 +107,7 @@ function getPrograms(date, time) {
     type: "POST",
     data: dataProgram,
     url: "../../adapters/program.php",
-    success: function(result) {
+    success: function (result) {
       let json = JSON.parse(result);
       console.log(json);
       /* SLIDER "AHORA EN VIVO CANAL CLARO*/
@@ -1143,7 +1141,7 @@ function getPrograms(date, time) {
 
       /* END PROGRMACIÓN GENERAL*/
       createClickThumbnails();
-    }
+    },
   });
   createClickThumbnails();
 }
@@ -1152,20 +1150,20 @@ function showSynopsis(id) {
   console.log(id);
   let dataUser = {
     function: "showSynopsis",
-    chapter_id: id
+    chapter_id: id,
   };
   $.ajax({
     type: "POST",
     data: dataUser,
     url: "../../adapters/program.php",
-    success: function(result) {
+    success: function (result) {
       console.log(result);
       let json = JSON.parse(result);
       console.log(json);
       if (json.code == 200) {
         localStorage.setItem("synopsis", JSON.stringify(json.data));
       }
-    }
+    },
   });
 }
 

@@ -21,7 +21,7 @@ import { addFavorites } from "./services/user/user.js";
 import { removeFavorites } from "./services/user/user.js";
 import { showNotification } from "./services/user/user.js";
 import { updateAlertProgram } from "./services/user/user.js";
-
+import { getNameCountry } from "./country/country.js";
 /* Program */
 import { getPrograms, createClickThumbnails } from "./services/Program.js";
 
@@ -41,7 +41,7 @@ let url2 =
   "http://www.claronetworks.openofficedospuntocero.info/cuenta-confirmada.html";
 let arrayUrl = url.split("?");
 let data = {
-  token: arrayUrl[1]
+  token: arrayUrl[1],
 };
 
 if (arrayUrl[0] == url2) {
@@ -83,7 +83,7 @@ if (day && month && year) {
   $(".SeleccionAñoLista").text(year);
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
   /* Sinópsis*/
 
   createClickThumbnails();
@@ -177,7 +177,7 @@ $(document).ready(function() {
     if (favoritesCanalClaro != null) {
       if (favoritesCanalClaro.length != 0) {
         let programsCanalClaroList = "";
-        favoritesCanalClaro.forEach(favorite => {
+        favoritesCanalClaro.forEach((favorite) => {
           if (favorite.active == 0) {
             programsCanalClaroList += `
             <div class="list-item-container" >
@@ -389,7 +389,7 @@ $(document).ready(function() {
         /* CONCERT CHANNEL */
 
         let programsConcertChannelList = "";
-        favoritesConcertChannel.forEach(favorite => {
+        favoritesConcertChannel.forEach((favorite) => {
           if (favorite.active == 0) {
             programsConcertChannelList += `
             <div class="list-item-container" >
@@ -600,7 +600,7 @@ $(document).ready(function() {
       /* CLARO CINEMA */
       if (favoritesClaroCinema.length != 0) {
         let programsClaroCinemaList = "";
-        favoritesClaroCinema.forEach(favorite => {
+        favoritesClaroCinema.forEach((favorite) => {
           if (favorite.active == 0) {
             programsClaroCinemaList += `
             <div class="list-item-container">
@@ -811,7 +811,7 @@ $(document).ready(function() {
   let removeButtonProgram = $(".remove-program");
 
   if (removeButtonProgram) {
-    removeButtonProgram.click(function(e) {
+    removeButtonProgram.click(function (e) {
       let id = localStorage.getItem("id");
       let programId = $(this).attr("_id");
       let itemList = $(this).closest(".list-item-container");
@@ -823,15 +823,11 @@ $(document).ready(function() {
     });
   }
 
-  $(".myList-details-container").click(function(e) {
+  $(".myList-details-container").click(function (e) {
     if (e.target.classList.contains("myList-alert")) {
-      let alert = $(this)
-        .find(".myList-alert")
-        .is(":checked");
+      let alert = $(this).find(".myList-alert").is(":checked");
 
-      let program_id = $(this)
-        .find(".button-none")
-        .attr("_id");
+      let program_id = $(this).find(".button-none").attr("_id");
       let user_id = localStorage.getItem("id");
       updateAlertProgram(user_id, program_id, alert);
     }
@@ -841,7 +837,7 @@ $(document).ready(function() {
 
   let saveDataButton = $("#save-data-user");
 
-  saveDataButton.click(function() {
+  saveDataButton.click(function () {
     let day = $(".SeleccionDiaLista").text();
     let month = $(".SeleccionMesLista").text();
     let year = $(".SeleccionAñoLista").text();
@@ -859,14 +855,10 @@ $(document).ready(function() {
     updateDataUser(id, gender, date, country);
   });
 
-  $("#avatar-button").click(function() {
+  $("#avatar-button").click(function () {
     let id = localStorage.getItem("id");
-    let avatar = $(".active-navAvatar")
-      .children()
-      .attr("src");
-    let idAvatar = $(".active-navAvatar")
-      .children()
-      .attr("_id");
+    let avatar = $(".active-navAvatar").children().attr("src");
+    let idAvatar = $(".active-navAvatar").children().attr("_id");
     selectAvatar(id, avatar, idAvatar);
   });
 
@@ -876,7 +868,7 @@ $(document).ready(function() {
   let alertEmail = $("#alert-email");
   let alertWeb = $("#alert-web");
   let alerts = [alertMinutesBefore, alertStart, alertEmail, alertWeb];
-  alertsOff.click(function() {
+  alertsOff.click(function () {
     if (alertsOff.is(":checked")) {
       let alertsLength = alerts.length;
       for (i = 0; i < alertsLength; i++) {
@@ -890,7 +882,7 @@ $(document).ready(function() {
     }
   });
 
-  $("#alert-button").click(function() {
+  $("#alert-button").click(function () {
     let alertsOffVal = $("#alerts-off:checked").val();
     let alertMinutesBeforeVal = $("#alert-minutes-before:checked").val();
     let alertStartVal = $("#alert-start:checked").val();
@@ -924,7 +916,7 @@ $(document).ready(function() {
       minutes: alertMinutesBeforeVal,
       beginning: alertStartVal,
       email: alertEmailVal,
-      web: alertWebVal
+      web: alertWebVal,
     };
 
     updateAlerts(configJson);
@@ -940,7 +932,7 @@ $(document).ready(function() {
 
   if (iconPassword !== null) {
     for (let i = 0; i < iconLength; i++) {
-      iconPassword[i].addEventListener("click", function() {
+      iconPassword[i].addEventListener("click", function () {
         ShowHidePassword(this);
       });
     }
@@ -952,14 +944,14 @@ $(document).ready(function() {
   const numPaises = document.getElementsByClassName("name_paises").length;
   const paises = document.getElementsByClassName("name_paises");
   for (let contador = 0; contador < numPaises; contador++) {
-    paises[contador].addEventListener("click", function() {
+    paises[contador].addEventListener("click", function () {
       selectCountry($(this));
     });
   }
 
   /*End función elegir un país y mostrar la bandera en navbar */
 
-  $(".signup-button").click(function() {
+  $(".signup-button").click(function () {
     let messagePasswordError = $(".caracteres-min");
     let messageErrorEmail = $(".nocorreo");
     let messageErrorUser = $(".nouser");
@@ -982,7 +974,7 @@ $(document).ready(function() {
     }
   });
 
-  $("#login-button").click(function() {
+  $("#login-button").click(function () {
     let inputEmail = $(".input-email");
     let inputPassword = $(".input-password");
     let messageError = $("#error_email");
@@ -1005,7 +997,7 @@ $(document).ready(function() {
   var session = localStorage.getItem("session");
 
   if (session == 1) {
-    setTimeout(function() {
+    setTimeout(function () {
       showNotification();
     }, 2000);
 
@@ -1017,7 +1009,7 @@ $(document).ready(function() {
       let length = avatars.length;
       avatars.removeClass("active-navAvatar");
 
-      avatars.each(function(index, avatar) {
+      avatars.each(function (index, avatar) {
         let itemAvatar = $(this)
           .closest(".avatar-item")
           .addClass("active-navAvatar");
@@ -1155,11 +1147,11 @@ $(document).ready(function() {
     loginCountry.attr("src", sessionSrc);
   }
 
-  $(".tooltip-logout").click(function() {
+  $(".tooltip-logout").click(function () {
     signOut();
   });
 
-  $(".terms-conditions-button, .arrow-back").click(function() {
+  $(".terms-conditions-button, .arrow-back").click(function () {
     window.history.back();
   });
 
@@ -1174,24 +1166,24 @@ $(document).ready(function() {
   /* Hacer aparecer el tooltip */
 
   $(".icon-user").hover(
-    function() {
+    function () {
       let tooltipLogout = $(".tooltip-logout");
       /*tooltipLogout.toggle();*/
       tooltipLogout.css("display", "block");
     },
-    function() {
+    function () {
       let tooltipLogout = $(".tooltip-logout");
       tooltipLogout.css("display", "none");
     }
   );
 
-  $(document).on("click", function(e) {
+  $(document).on("click", function (e) {
     let container = $(".icon-user");
     let tooltipLogout = $(".tooltip-logout");
     let sidebarLogout = $("#sidebar-logout");
 
     if (sidebarLogout) {
-      sidebarLogout.click(function() {
+      sidebarLogout.click(function () {
         signOut();
       });
     }
@@ -1201,7 +1193,7 @@ $(document).ready(function() {
     }
   });
 
-  $(document).on("click", function(e) {
+  $(document).on("click", function (e) {
     let container = $("#drop-paises, .cuadro-fecha");
     if (!container.is(e.target) && container.has(e.target).length === 0) {
       $("#selectPais").prop("checked", false);
@@ -1214,7 +1206,7 @@ $(document).ready(function() {
   const inputPassword = $("#login-password");
   const caracteresMin = $(".caracteres-min");
   const listo = $(".listo");
-  inputPassword.keyup(function() {
+  inputPassword.keyup(function () {
     if (inputPassword.val().length < 8 && inputPassword.val().length >= 1) {
       caracteresMin.css("color", "red");
       listo.css("display", "none");
@@ -1230,7 +1222,7 @@ $(document).ready(function() {
   const inputPassword1 = $("#signup-password");
   const caracteresMin1 = $(".caracteres-min");
   const listo1 = $(".listo");
-  inputPassword1.keyup(function() {
+  inputPassword1.keyup(function () {
     if (inputPassword1.val().length < 8 && inputPassword1.val().length >= 1) {
       caracteresMin1.css("color", "red");
       listo1.css("display", "inline-block");
@@ -1247,7 +1239,7 @@ $(document).ready(function() {
 
   const inputCorreo = $(".input-email");
 
-  inputCorreo.keyup(function() {
+  inputCorreo.keyup(function () {
     const correoValido = $(".correo-valido");
     const imagenError = $(".error");
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -1258,7 +1250,7 @@ $(document).ready(function() {
 
   const inputReEmail = $("#re-password-email");
   const messageError = $(".correo-valido");
-  $("#reset-email").click(function() {
+  $("#reset-email").click(function () {
     if (validateEmail(inputReEmail, messageError)) {
       sendUserEmail(inputReEmail);
       return true;
@@ -1272,7 +1264,7 @@ $(document).ready(function() {
   const inputConfirmPassword = $("#new-confirm-password");
   const newPasswordButton = $("#send-password-button");
 
-  newPasswordButton.click(function() {
+  newPasswordButton.click(function () {
     if (validateNewPassword(inputNewPassword, inputConfirmPassword)) {
       sendNewPassword(inputNewPassword, inputConfirmPassword);
       return true;
@@ -1292,7 +1284,7 @@ $(document).ready(function() {
 
   var rellax = new Rellax(".rellax");
 
-  $("#selectYear").click(function() {
+  $("#selectYear").click(function () {
     if ($(this).is(":checked")) {
       $("#selectPais").prop("checked", false);
       $("#selectMonth").prop("checked", false);
@@ -1300,7 +1292,7 @@ $(document).ready(function() {
     }
   });
 
-  $("#selectPais").click(function() {
+  $("#selectPais").click(function () {
     if ($(this).is(":checked")) {
       $("#selectYear").prop("checked", false);
       $("#selectMonth").prop("checked", false);
@@ -1308,7 +1300,7 @@ $(document).ready(function() {
     }
   });
 
-  $("#selectDay").click(function() {
+  $("#selectDay").click(function () {
     if ($(this).is(":checked")) {
       $("#selectPais").prop("checked", false);
       $("#selectMonth").prop("checked", false);
@@ -1316,7 +1308,7 @@ $(document).ready(function() {
     }
   });
 
-  $("#selectMonth").click(function() {
+  $("#selectMonth").click(function () {
     if ($(this).is(":checked")) {
       $("#selectPais").prop("checked", false);
       $("#selectYear").prop("checked", false);
@@ -1347,8 +1339,8 @@ $(document).ready(function() {
           centerMode: false,
           infinite: true,
           arrows: false,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 992,
@@ -1358,8 +1350,8 @@ $(document).ready(function() {
           infinite: true,
           dots: true,
           centerMode: true,
-          arrows: false
-        }
+          arrows: false,
+        },
       },
       {
         breakpoint: 1200,
@@ -1373,8 +1365,8 @@ $(document).ready(function() {
           prevArrow:
             '<img src="../images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
+        },
       },
 
       {
@@ -1389,10 +1381,10 @@ $(document).ready(function() {
           prevArrow:
             '<img src="../images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
-      }
-    ]
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
+        },
+      },
+    ],
   });
 
   var vision_slider = $(".vision-slider").slick({
@@ -1416,8 +1408,8 @@ $(document).ready(function() {
           centerMode: false,
           infinite: true,
           arrows: false,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 992,
@@ -1427,8 +1419,8 @@ $(document).ready(function() {
           infinite: true,
           dots: true,
           centerMode: true,
-          arrows: false
-        }
+          arrows: false,
+        },
       },
       {
         breakpoint: 1200,
@@ -1442,8 +1434,8 @@ $(document).ready(function() {
           prevArrow:
             '<img src="../images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
+        },
       },
 
       {
@@ -1458,10 +1450,10 @@ $(document).ready(function() {
           prevArrow:
             '<img src="../images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
-      }
-    ]
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
+        },
+      },
+    ],
   });
 
   var imperdibles_slider = $(".imperdibles-slider").slick({
@@ -1472,7 +1464,7 @@ $(document).ready(function() {
     centerMode: false,
     infinite: true,
     arrows: false,
-    dots: true
+    dots: true,
   });
 
   var sport_slider = $(".sports-slider").slick({
@@ -1496,8 +1488,8 @@ $(document).ready(function() {
           centerMode: false,
           infinite: true,
           arrows: false,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 992,
@@ -1507,8 +1499,8 @@ $(document).ready(function() {
           infinite: true,
           dots: true,
           centerMode: true,
-          arrows: false
-        }
+          arrows: false,
+        },
       },
       {
         breakpoint: 1200,
@@ -1522,8 +1514,8 @@ $(document).ready(function() {
           prevArrow:
             '<img src="../images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
+        },
       },
 
       {
@@ -1538,10 +1530,10 @@ $(document).ready(function() {
           prevArrow:
             '<img src="../images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
-      }
-    ]
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
+        },
+      },
+    ],
   });
 
   var header_slider = $(".header-slider").slick({
@@ -1550,7 +1542,7 @@ $(document).ready(function() {
     infinite: false,
     dots: true,
     centerMode: false,
-    arrows: false
+    arrows: false,
   });
 
   var claro_slider = $(".claro-header-slider").slick({
@@ -1559,7 +1551,7 @@ $(document).ready(function() {
     infinite: false,
     dots: true,
     centerMode: false,
-    arrows: false
+    arrows: false,
   });
 
   var tv_slider = $(".tv-slider").slick({
@@ -1582,8 +1574,8 @@ $(document).ready(function() {
           centerMode: true,
           infinite: true,
           arrows: false,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 992,
@@ -1593,8 +1585,8 @@ $(document).ready(function() {
           infinite: true,
           dots: true,
           centerMode: false,
-          arrows: false
-        }
+          arrows: false,
+        },
       },
       {
         breakpoint: 1200,
@@ -1608,8 +1600,8 @@ $(document).ready(function() {
           prevArrow:
             '<img src="../images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
+        },
       },
       {
         breakpoint: 1900,
@@ -1623,10 +1615,10 @@ $(document).ready(function() {
           prevArrow:
             '<img src="../images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
-      }
-    ]
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
+        },
+      },
+    ],
   });
 
   /*Programación General Canal Claro */
@@ -1662,7 +1654,7 @@ $(document).ready(function() {
   let currentDate = "2020-2-8";
   let currentTime = `${hour}:${minutes}`;
 
-  getPrograms(currentDate, currentTime);
+  getPrograms(currentDate, getNameCountry(sessionSrc));
   /*menu responsive*/
   const invisible_button = document.querySelector(".invisible-button");
   const tache_button = document.querySelector(".tache_button");
@@ -1675,7 +1667,7 @@ $(document).ready(function() {
   const sidebar_content = document.querySelector(".sidebar-content");
   const menuTablet = $(".menu-responsive-tablet");
 
-  menuTablet.click(function() {
+  menuTablet.click(function () {
     hamburguer.style.transform = "translate(0%)";
     invisible_button.style.width = "2000px";
     invisible_button.style.left = "100%";
@@ -1683,20 +1675,20 @@ $(document).ready(function() {
     html.css({
       position: "relative",
       overflow: "hidden",
-      height: "100%"
+      height: "100%",
     });
     body.css({
       position: "fixed",
       overflow: "hidden",
       height: "100%",
-      width: "100%"
+      width: "100%",
     });
     sidebar_content.style.overflow = "auto";
     sidebar_content.style.height = "100%";
   });
 
   if (menu) {
-    menu.addEventListener("click", function(e) {
+    menu.addEventListener("click", function (e) {
       hamburguer.style.transform = "translate(0%)";
       invisible_button.style.width = "2000px";
       invisible_button.style.left = "100%";
@@ -1704,13 +1696,13 @@ $(document).ready(function() {
       html.css({
         position: "relative",
         overflow: "hidden",
-        height: "100%"
+        height: "100%",
       });
       body.css({
         position: "fixed",
         overflow: "hidden",
         height: "100%",
-        width: "100%"
+        width: "100%",
       });
       sidebar_content.style.overflowY = "scroll";
       sidebar_content.style.height = "70%";
@@ -1718,7 +1710,7 @@ $(document).ready(function() {
   }
 
   if (invisible_button) {
-    invisible_button.addEventListener("click", function() {
+    invisible_button.addEventListener("click", function () {
       hamburguer.style.transform = "translate(-100%)";
       invisible_button.style.width = "0px";
       invisible_button.style.left = "0%";
@@ -1726,48 +1718,48 @@ $(document).ready(function() {
       html.css({
         position: "static",
         overflow: "visible",
-        height: "100%"
+        height: "100%",
       });
       body.css({
         position: "static",
         overflow: "visible",
         height: "100%",
-        width: "auto"
+        width: "auto",
       });
       sidebar_content.style.overflowY = "hidden";
       sidebar_content.style.height = "0%";
     });
   }
   if (menu_categorias) {
-    menu_categorias.addEventListener("click", function(e) {
+    menu_categorias.addEventListener("click", function (e) {
       categorias.css({
         zIndex: "10",
-        opacity: "1"
+        opacity: "1",
       });
       html.css({
         position: "relative",
         overflow: "hidden",
-        height: "100%"
+        height: "100%",
       });
       body.css({
         position: "fixed",
         overflow: "hidden",
         height: "100%",
-        width: "100%"
+        width: "100%",
       });
       sidebar_content.style.overflow = "auto";
       sidebar_content.style.height = "100%";
     });
 
-    tache_button.addEventListener("click", function() {
+    tache_button.addEventListener("click", function () {
       categorias.css({
         zIndex: "-1",
-        opacity: "0"
+        opacity: "0",
       });
       html.css({
         position: "initial",
         overflow: "auto",
-        height: "auto"
+        height: "auto",
       });
       body.css({
         position: "initial",
@@ -1775,7 +1767,7 @@ $(document).ready(function() {
         overflowY: "auto",
         "-webkit-overflow-scrolling": "auto",
         height: "auto",
-        width: "auto"
+        width: "auto",
       });
       sidebar_content.style.overflow = "hidden";
       sidebar_content.style.height = "0%";
@@ -1799,7 +1791,7 @@ $(document).ready(function() {
   $(".tv-content").hide();
   $(".tv-content:first").show();
 
-  $("ul.tv-list li").click(function() {
+  $("ul.tv-list li").click(function () {
     $("ul.tv-list li").removeClass("active-navItem");
     $(this).addClass("active-navItem");
     $(".tv-content").hide();
@@ -1814,7 +1806,7 @@ $(document).ready(function() {
     createClickThumbnails();
   });
 
-  $("ul.lista-avatar li").click(function() {
+  $("ul.lista-avatar li").click(function () {
     $("ul.lista-avatar li").removeClass("active-navAvatar");
     $(this).addClass("active-navAvatar");
     $(".tv-content").hide();
@@ -1840,7 +1832,7 @@ $(document).ready(function() {
   $(".pro-content").hide();
   $(".pro-content:first").show();
 
-  $("ul.pro-list li").on("click", function() {
+  $("ul.pro-list li").on("click", function () {
     $("ul.pro-list li").removeClass("active-proItem");
     $(this).addClass("active-proItem");
     $(".pro-content").hide();
@@ -1871,7 +1863,7 @@ $(document).ready(function() {
     .length;
   var i;
   for (i = 0; i < numCountries; i++) {
-    dropdownCountry[i].addEventListener("click", function() {
+    dropdownCountry[i].addEventListener("click", function () {
       var dropdownContent = this.nextElementSibling;
       //dropdownContent.classList.toggle("dropdown-active");
       var currentArrow = $(this).children(".dropdownCountry-icon");
@@ -1924,8 +1916,8 @@ function createProgramacionSlider() {
           centerMode: false,
           infinite: true,
           arrows: false,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 992,
@@ -1939,8 +1931,8 @@ function createProgramacionSlider() {
           prevArrow:
             '<img src="../images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
+        },
       },
       {
         breakpoint: 1200,
@@ -1954,8 +1946,8 @@ function createProgramacionSlider() {
           prevArrow:
             '<img src="../images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
+        },
       },
       {
         breakpoint: 1900,
@@ -1969,8 +1961,8 @@ function createProgramacionSlider() {
           prevArrow:
             '<img src="../images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
+        },
       },
       {
         breakpoint: 10000,
@@ -1984,14 +1976,14 @@ function createProgramacionSlider() {
           prevArrow:
             '<img src="../images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
-      }
-    ]
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
+        },
+      },
+    ],
   });
 }
 
-$(".programing-item").click(function() {
+$(".programing-item").click(function () {
   var activeNav = $(this).attr("rel");
   let stringLength = activeNav.length;
   let month = activeNav.charAt(stringLength - 1);
@@ -2020,8 +2012,8 @@ function createTvSlider() {
           centerMode: true,
           infinite: true,
           arrows: false,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 992,
@@ -2031,8 +2023,8 @@ function createTvSlider() {
           infinite: true,
           dots: true,
           centerMode: false,
-          arrows: false
-        }
+          arrows: false,
+        },
       },
       {
         breakpoint: 1200,
@@ -2046,8 +2038,8 @@ function createTvSlider() {
           prevArrow:
             '<img src="../images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
+        },
       },
       {
         breakpoint: 1900,
@@ -2061,15 +2053,15 @@ function createTvSlider() {
           prevArrow:
             '<img src="../images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />'
-        }
-      }
-    ]
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
+        },
+      },
+    ],
   });
 }
 
 function recreateClickCalendar() {
-  $("ul.claro-calendar .claro-item").click(function() {
+  $("ul.claro-calendar .claro-item").click(function () {
     $("ul.claro-calendar .claro-item").removeClass("claro-active");
     $(this).addClass("claro-active");
     $(".claro-content").hide();
@@ -2085,7 +2077,7 @@ function recreateClickCalendar() {
   $(".concert-content").hide();
   $(".concert-content:first").show();
 
-  $("ul.concert-calendar .concert-item").click(function() {
+  $("ul.concert-calendar .concert-item").click(function () {
     $("ul.concert-calendar .concert-item").removeClass("concert-active");
     $(this).addClass("concert-active");
     $(".concert-content").hide();
@@ -2100,7 +2092,7 @@ function recreateClickCalendar() {
   $(".cinema-content").hide();
   $(".cinema-content:first").show();
 
-  $("ul.cinema-calendar .cinema-item").click(function() {
+  $("ul.cinema-calendar .cinema-item").click(function () {
     $("ul.cinema-calendar .cinema-item").removeClass("cinema-active");
     $(this).addClass("cinema-active");
     $(".cinema-content").hide();
@@ -2115,7 +2107,7 @@ function recreateClickCalendar() {
   $(".vision-content").hide();
   $(".vision-content:first").show();
 
-  $("ul.vision-calendar .vision-item").click(function() {
+  $("ul.vision-calendar .vision-item").click(function () {
     $("ul.vision-calendar .vision-item").removeClass("vision-active");
     $(this).addClass("vision-active");
     $(".vision-content").hide();
@@ -2130,7 +2122,7 @@ function recreateClickCalendar() {
   $(".sports-content").hide();
   $(".sports-content:first").show();
 
-  $("ul.sports-calendar .sports-item").click(function() {
+  $("ul.sports-calendar .sports-item").click(function () {
     $("ul.sports-calendar .sports-item").removeClass("sports-active");
     $(this).addClass("sports-active");
     $(".sports-content").hide();
@@ -2155,7 +2147,7 @@ function resizedw() {
 }
 
 var doit;
-window.onresize = function() {
+window.onresize = function () {
   clearTimeout(doit);
   doit = setTimeout(resizedw, 100);
 };
