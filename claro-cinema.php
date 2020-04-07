@@ -99,14 +99,7 @@
             </div>
             <img src="./images/claro-canal/claro-canal-logo.svg" alt="" />
           </div>-->
-      <div class="header-slider">
-        <div class="header-slide">
-          <img class="cinema-image-banner-1 rellax" data-rellax="10">
-        </div>
-        <div class="header-slide">
-
-        </div>
-        <div class="header-slide"></div>
+      <div class="header-slider" id="banner-claro-cinema">
       </div>
     </div>
 

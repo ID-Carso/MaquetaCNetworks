@@ -3,12 +3,23 @@ import {
   getDays,
   getDay,
   getDayName,
-  getMonth
+  getMonth,
 } from "../date/date.js";
 
 export default class Slider {
   deleteSlider(container) {
     container.slick("unslick");
+  }
+
+  createSliderBanner() {
+    $(".header-slider").not(".slick-initialized").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      dots: true,
+      centerMode: false,
+      arrows: false,
+    });
   }
 
   createSectionSliderHome() {
@@ -37,8 +48,8 @@ export default class Slider {
               centerMode: false,
               infinite: true,
               arrows: false,
-              dots: true
-            }
+              dots: true,
+            },
           },
           {
             breakpoint: 992,
@@ -48,8 +59,8 @@ export default class Slider {
               infinite: true,
               dots: true,
               centerMode: true,
-              arrows: false
-            }
+              arrows: false,
+            },
           },
           {
             breakpoint: 1200,
@@ -63,8 +74,8 @@ export default class Slider {
               prevArrow:
                 '<img src="../images/sliders/prev.png" class="arrow-prev" />',
               nextArrow:
-                '<img src="../images/sliders/next.png" class="arrow-next" />'
-            }
+                '<img src="../images/sliders/next.png" class="arrow-next" />',
+            },
           },
 
           {
@@ -79,10 +90,10 @@ export default class Slider {
               prevArrow:
                 '<img src="../images/sliders/prev.png" class="arrow-prev" />',
               nextArrow:
-                '<img src="../images/sliders/next.png" class="arrow-next" />'
-            }
-          }
-        ]
+                '<img src="../images/sliders/next.png" class="arrow-next" />',
+            },
+          },
+        ],
       });
   }
 
@@ -99,8 +110,8 @@ export default class Slider {
             centerMode: false,
             infinite: true,
             arrows: false,
-            dots: true
-          }
+            dots: true,
+          },
         },
         {
           breakpoint: 992,
@@ -114,8 +125,8 @@ export default class Slider {
             prevArrow:
               '<img src="../images/sliders/prev.png" class="arrow-prev" />',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />'
-          }
+              '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
         },
         {
           breakpoint: 1200,
@@ -129,8 +140,8 @@ export default class Slider {
             prevArrow:
               '<img src="../images/sliders/prev.png" class="arrow-prev" />',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />'
-          }
+              '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
         },
         {
           breakpoint: 1900,
@@ -144,8 +155,8 @@ export default class Slider {
             prevArrow:
               '<img src="../images/sliders/prev.png" class="arrow-prev" />',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />'
-          }
+              '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
         },
         {
           breakpoint: 10000,
@@ -159,10 +170,10 @@ export default class Slider {
             prevArrow:
               '<img src="../images/sliders/prev.png" class="arrow-prev" />',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />'
-          }
-        }
-      ]
+              '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
+        },
+      ],
     });
   }
 
@@ -294,68 +305,174 @@ export default class Slider {
   }
 
   showImageBanner() {
+    /* Banner Landing Canal Claro */
+
+    const imagesBannerClaroCanal = [
+      {
+        imageBannerPC:
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/pc/claro-home-background.jpg",
+        imageBannerTablet:
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/tablet/claro-home-background.jpg",
+      },
+      {
+        imageBannerPC:
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/pc/CANAL-CLARO-02-A.jpg",
+        imageBannerTablet:
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/tablet/CANAL-CLARO-02-B.jpg",
+      },
+      {
+        imageBannerPC:
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/pc/CANAL-CLARO-03-A.jpg",
+        imageBannerTablet:
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/tablet/CANAL-CLARO-03-B.jpg",
+      },
+    ];
+    const imagesBannerClaroCinema = [
+      {
+        imageBannerPC:
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/cinema-home-background.jpg",
+        imageBannerTablet:
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/tablet/cinema-home-background.jpg",
+      },
+      {
+        imageBannerPC:
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-02-A.jpg",
+        imageBannerTablet:
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/tablet/C-CINEMA-02-B.jpg",
+      },
+      {
+        imageBannerPC:
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-03-A.jpg",
+        imageBannerTablet:
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/tablet/C-CINEMA-03-B.jpg",
+      },
+    ];
+    const imagesBannerConcertChannel = [
+      {
+        imageBannerPC:
+          "http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/banner/pc/CONCERT-01-A.jpg",
+        imageBannerTablet:
+          "http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/banner/tablet/CONCERT-01-B.jpg",
+      },
+      {
+        imageBannerPC:
+          "http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/banner/pc/CONCERT-02-A.jpg",
+        imageBannerTablet:
+          "http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/banner/tablet/CONCERT-02-B.jpg",
+      },
+      {
+        imageBannerPC:
+          "http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/banner/pc/CONCERT-03-A.jpg",
+        imageBannerTablet:
+          "http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/banner/tablet/CONCERT-03-B.jpg",
+      },
+    ];
+
+    let slideBanner = "";
+    let slideBannerClaroCinema = "";
+    let slideBannerConcertChannel;
+    let bannerClaroCanal = $("#banner-claro-canal");
+    let bannerClaroCinema = $("#banner-claro-cinema");
+    let bannerConcertChannel = $("#banner-concert-channel");
     if ($(window).width() < 768) {
       $(".claro-image-banner-1").attr("src", "");
       $(".concert-image-banner-1").attr("src", "");
       $(".cinema-image-banner-1").attr("src", "");
     } else if ($(window).width() >= 768 && $(window).width() < 1200) {
-      $(".claro-image-banner-1").attr(
-        "src",
-        "./images/claro-canal/banner/tablet/claro-home-background.jpg"
-      );
-      $(".concert-image-banner-1").attr(
-        "src",
-        "./images/concert-channel/banner/tablet/concert-home-background.jpg"
-      );
-      $(".cinema-image-banner-1").attr(
-        "src",
-        "./images/claro-cinema/banner/tablet/cinema-home-background.jpg"
-      );
+      imagesBannerClaroCanal.forEach(function (image) {
+        slideBanner += `        
+        <div class="header-slide">
+          <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10">
+        </div>`;
+      });
+      imagesBannerClaroCinema.forEach(function (image) {
+        slideBannerClaroCinema += `        
+        <div class="header-slide">
+          <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10">
+        </div>`;
+      });
+      imagesBannerConcertChannel.forEach(function (image) {
+        slideBannerConcertChannel += `        
+        <div class="header-slide">
+          <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10">
+        </div>`;
+      });
+      bannerClaroCanal.html(slideBanner);
+      bannerClaroCinema.html(slideBannerClaroCinema);
+      bannerConcertChannel.html(slideBannerConcertChannel);
     } else if ($(window).width() >= 1200) {
-      $(".claro-image-banner-1").attr(
-        "src",
-        "./images/claro-canal/banner/pc/claro-home-background.jpg"
-      );
-      $(".concert-image-banner-1").attr(
-        "src",
-        "./images/concert-channel/banner/pc/concert-home-background.jpg"
-      );
-      $(".cinema-image-banner-1").attr(
-        "src",
-        "./images/claro-cinema/banner/pc/cinema-home-background.jpg"
-      );
+      imagesBannerClaroCanal.forEach(function (image) {
+        slideBanner += `        
+        <div class="header-slide">
+          <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
+        </div>`;
+      });
+      imagesBannerClaroCinema.forEach(function (image) {
+        slideBannerClaroCinema += `        
+        <div class="header-slide">
+          <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
+        </div>`;
+      });
+      imagesBannerConcertChannel.forEach(function (image) {
+        slideBannerConcertChannel += `        
+        <div class="header-slide">
+          <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
+        </div>`;
+      });
+      bannerClaroCanal.html(slideBanner);
+      bannerClaroCinema.html(slideBannerClaroCinema);
+      bannerConcertChannel.html(slideBannerConcertChannel);
     }
-    $(window).resize(function() {
+    $(window).resize(function () {
+      let bannerConcertChannel = $("#banner-concert-channel");
       if ($(window).width() < 768) {
         $(".claro-image-banner-1").attr("src", "");
         $(".concert-image-banner-1").attr("src", "");
         $(".cinema-image-banner-1").attr("src", "");
       } else if ($(window).width() >= 768 && $(window).width() < 1200) {
-        $(".claro-image-banner-1").attr(
-          "src",
-          "./images/claro-canal/banner/tablet/claro-home-background.jpg"
-        );
-        $(".concert-image-banner-1").attr(
-          "src",
-          "./images/concert-channel/banner/tablet/concert-home-background.jpg"
-        );
-        $(".cinema-image-banner-1").attr(
-          "src",
-          "./images/claro-cinema/banner/tablet/cinema-home-background.jpg"
-        );
+        imagesBannerClaroCanal.forEach(function (image) {
+          slideBanner += `        
+          <div class="header-slide">
+            <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10">
+          </div>`;
+        });
+        imagesBannerClaroCinema.forEach(function (image) {
+          slideBannerClaroCinema += `        
+          <div class="header-slide">
+            <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10">
+          </div>`;
+        });
+        imagesBannerConcertChannel.forEach(function (image) {
+          slideBannerConcertChannel += `        
+          <div class="header-slide">
+            <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10">
+          </div>`;
+        });
+        bannerClaroCanal.html(slideBanner);
+        bannerClaroCinema.html(slideBannerClaroCinema);
+        bannerConcertChannel.html(slideBannerConcertChannel);
       } else if ($(window).width() >= 1200) {
-        $(".claro-image-banner-1").attr(
-          "src",
-          "./images/claro-canal/banner/pc/claro-home-background.jpg"
-        );
-        $(".concert-image-banner-1").attr(
-          "src",
-          "./images/concert-channel/banner/pc/concert-home-background.jpg"
-        );
-        $(".cinema-image-banner-1").attr(
-          "src",
-          "./images/claro-cinema/banner/pc/cinema-home-background.jpg"
-        );
+        imagesBannerClaroCanal.forEach(function (image) {
+          slideBanner += `        
+          <div class="header-slide">
+            <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
+          </div>`;
+        });
+        imagesBannerClaroCinema.forEach(function (image) {
+          slideBannerClaroCinema += `        
+          <div class="header-slide">
+            <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
+          </div>`;
+        });
+        imagesBannerConcertChannel.forEach(function (image) {
+          slideBannerConcertChannel += `        
+          <div class="header-slide">
+            <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
+          </div>`;
+        });
+        bannerClaroCanal.html(slideBanner);
+        bannerClaroCinema.html(slideBannerClaroCinema);
+        bannerConcertChannel.html(slideBannerConcertChannel);
       }
     });
   }

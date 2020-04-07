@@ -101,14 +101,8 @@
           </div>
           <img src="./images/claro-canal/claro-canal-logo.svg" alt="" />
         </div>-->
-      <div class="header-slider">
-        <div class="header-slide">
-          <img class="claro-image-banner-1 rellax" data-rellax="10">
-        </div>
-        <div class="header-slide">
-          <!--<img src="./images/header/glastonbury.jpeg" class="rellax" data-rellax="10">-->
-        </div>
-        <div class="header-slide"></div>
+      <div class="header-slider" id="banner-claro-canal">
+
       </div>
     </div>
 
