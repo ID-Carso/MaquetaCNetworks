@@ -1,4 +1,4 @@
-
+//mostrar las acciones de los roles
  function cambiaracti($roles){
    switch($roles){
      case 1:
@@ -28,7 +28,8 @@
        break;
 
    }
- }
+ }//fin
+ //Remplazar vistas
 function muestra1(){
   $("#Admin-home-BO").replaceWith();
       $("#cambio").load('admin-home.php');
@@ -61,13 +62,28 @@ function editfront(){
   $("#edit-front").replaceWith();
       $("#cambio").load('Edit-front.php');
 }
+function cerrarequis(){
+  $("#segunda").replaceWith();
+  $("#cambio").load('Adm-users-BO.php');
+}
+//fin
+//modales
 function abrirModal(){
-  $("#myModal").modal('show');
+ 
+  $("#myModal").modal();
+}
+function Mostrarsave(){
+  $("#abrirsave").modal('show')
 }
 function abrirBorrar(){
   $("#abrirBorrar").modal('show');
 
 }
+function abrirlisto(){
+  $("#abrirListo").modal('show');
+
+}
+//fin
 function AbrirNav(){
   $("#navall").load("#Admin-BO.php");
 }
@@ -75,14 +91,10 @@ function verhisto(){
   $(".descri-overlay").show();
 
 }
-function abrirlisto(){
-  $("#abrirlisto").modal('show');
 
-}
 
-$(document).ready(function(){
-  
-  
+$(document).ready(function(){ 
+//resaltar boton de localidad-actual  
   $(".buttonall").click(function(){
     $("button[id=btn-nav]").removeClass("btn-nav-select");
     $(this).addClass("btn-nav");
@@ -104,7 +116,8 @@ $(".btn-rol-all-edit").click(function(){
   $(this).addClass("btn-rol-select-edit");
 
 });  
-
+//fin
+//descripción de acciones
 $(".histo").hover(function(){ 
   $('.histori').css('display', 'block'); 
 },function(){
@@ -134,8 +147,80 @@ $(".histo").hover(function(){
       $('.borra').css('display', 'block'); 
     },function(){
       $(".borra").css('display', 'none');
+
     })
+    $(".ver").hover(function(){ 
+      $('.veri1').css('display', 'block'); 
+    },function(){
+      $(".veri1").css('display', 'none');
+      })
+          $(".edi").hover(function(){ 
+            $('.edita1').css('display', 'block'); 
+          },function(){
+            $(".edita1").css('display', 'none');
+      })
+      $(".borrar").hover(function(){ 
+        $('.borra1').css('display', 'block'); 
+      },function(){
+        $(".borra1").css('display', 'none');
+        
+      })//fin
+      //seleccion de día,mes,año,bandera
+      $(".option").click(function() {
+        var value = $(this).attr("value");
+        var select = $(this).attr("id-select");
+        var img = $(this).attr("img");
+        $("#" + select + " > p").val(img).text(value);
+      });
      
+     
+    $(".Dias").click(function() {
+      var value = $(this).attr("value");
+      var select = $(this).attr("id-select");
+
+      $("#" + select + " > p").text(value);
+    });
+    $(".Meses").click(function() {
+      var value = $(this).attr("value");
+      var select = $(this).attr("id-select");
+
+      $("#" + select + " > p").text(value);
+    });
+    $(".Años").click(function() {
+      var value = $(this).attr("value");
+      var select = $(this).attr("id-select");
+
+      $("#" + select + " > p").text(value);
+    });
+//fin
+//switch entre h-m
+    $("#mujer").click(function() {
+      if ($('input[id="mujer"]').is(":checked")) {
+        $("#women").attr(
+          "src",
+          "../images/datos-adicionales/femenino-activo.svg"
+        );
+        $("#men").attr(
+          "src",
+          "../images/datos-adicionales/masculino-inactivo.svg"
+        );
+      }
+    });
+
+    $("#hombre").click(function() {
+      if ($('input[id="hombre"]').is(":checked")) {
+        $("#women").attr(
+          "src",
+          "../images/datos-adicionales/femenino-inactivo.svg"
+        );
+        $("#men").attr(
+          "src",
+          "../images/datos-adicionales/masculino-activo.svg"
+        );
+      }
+    });
+    //fin
+
 
 }); 
    
