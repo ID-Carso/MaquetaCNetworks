@@ -66,10 +66,10 @@
 <p class="pb-1">  Recordar contraseña</p>
             </div>-->
 
-            <div class="row ma-no centro">
+            <div class="centro">
              
               <a href="Admin-BO.php">
-                <button type="button" class="login-button btn-ingresar-reco" >
+                <button type="button" class=" btn-ingresar-reco" >
                   INGRESAR
                 </button>
                 </a>
@@ -86,7 +86,7 @@
               <a href="Recopassword.php">
                 <p class="contra">¿Olvidaste la contraseña?</p>
 </a>
-              <hr class="line" />
+              <hr class="line btn-margin" />
              
               </div>
           </div>

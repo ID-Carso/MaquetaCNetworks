@@ -1,8 +1,16 @@
-<head>     
-<script src="./js/admin.js" defer></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claro Networks</title>
+  <script src="./js/admin.js" defer></script>
 </head>
-<div id="Admin-home-BO" > 
-    <div class="sombras1 ">                
+<body>
+
+<div id="Admin-home-BO" > <!--Div de cambio-->
+    <div class="sombras1 ">  
+      <!--Titulos de la tabla-->              
         <div class="grid text-progra">          
             <header>
           <div class="text-title">Sección</div>
@@ -10,6 +18,8 @@
            <section>
         <div class="text-title" >Acciones</div>
         </section>
+        <!--Fin-->
+        <!--Contenido de la tabla-->
         <div >PROGRAMACIÓN GENERAL</div>
         <div>            
             <input type="image" src="./images/lapiz-acti.svg" alt="" class="ml-3 btn-focus"></input>                           
@@ -72,8 +82,7 @@
         </div>
       
         </div>
-        
-      
+             
         </div>  
           <!--Para funcionalidad-->     
    <div class="col-xl-1">
@@ -88,3 +97,5 @@
            <div class="noti"><img src="./images/recuadro1-hover.svg"><span class="text-noti">Notificaciones</span></div> 
           </div>
   </div>
+  </body>
+</html>

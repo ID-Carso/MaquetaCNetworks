@@ -20,7 +20,7 @@
     <div class="login-form no-gutters mb-4">
       <div class="col-sm-12 no-gutters col-md-6 no-gutters col-lg-4  col-xl-3 shadow1 fondolog-reco mb-4">
         <img src="../images/registro/group-10.svg" class="ubicacion5" />
-        <img src="../images/registro/group-12.svg" class="ubicacion3" />
+        <img src="../images/registro/group-12.svg" class="ubicacion3-1" />
 
         <div class="row ma-no no-gutters">
           <div class="col-sm-12 col-md-12 col-lg-12 no-gutters ">
@@ -52,7 +52,7 @@
               </div>
             </div>
 
-            <div class="row ma-no centro ">
+            <div class="row ma-no centro btn-margin">
              
                 <button type="button" class="btn-ingresar-reco1 "  id="reset-email" onClick="abrirModal()"> 
                   RECUPERAR
@@ -67,15 +67,15 @@
   
 </body>
 <!--modal-->
- <div class="modal" id="myModal" role="dialog" >
-    <div class= "modal-dialog  modal-defi">  
-      <div class="modal-content align-item-center centro text-modal pt-2">
+<div class="modal show centrados" id="myModal" role="dialog"style="padding-left: 69px;" >
+    <div class= "modal-dialog modal-lg modal-dialog-centered">  
+      <div class="modal-content align-item-center centro modal-contenido pt-2">
         <div class="modal-body ">
           <p>Te hemos enviado un correo <br> para reestrablecer tu contraseña.</p>
             <p>Si no ves el correo en tu bandeja de entrada, <br>revisa otros lugares, donde  podría estar,<br> como tus carpetas de correo <br> no deseado, sociales u otras.</p>
         </div>
         <div class="align-item-center centro ">
-        <button type="button" class="form-button-primary re-modal" id="modal-button" data-dismiss="modal">ENTENDIDO</button>
+        <button type="button" class="btn-entendido" id="modal-button" data-dismiss="modal">ENTENDIDO</button>
         </div>
     </div> 
   </div>

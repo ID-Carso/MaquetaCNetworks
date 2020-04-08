@@ -13,7 +13,7 @@ function showHeader($nameButton, $variation)
                 <img src='./images/blue.svg'class='image-blue'/>
                 <img src='../images/registro/group-12.svg' class='image-email'/>
             </div>
-        <div class='bg-light'>
+        <div class='bg-color'>
             <span class='d-flex align-items-center justify-content-between  py-xl-2'>
                 <span class='ml-5'>  <a href='Admin-BO.php'/a> <img src='../images/registro/group-24.svg'> </span>
                

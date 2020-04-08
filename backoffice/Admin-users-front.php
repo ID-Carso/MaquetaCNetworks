@@ -1,15 +1,24 @@
-<head>     
-<script src="./js/admin.js" defer></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claro Networks</title>
+  <script src="./js/admin.js" defer></script>
 </head>
-<div id="Admin-users-Front">
+<body>
+<div id="Admin-users-Front"> <!--Div para cambio-->
     <div class= "sombras1 ">   
      <div class="grid text-progra ">
+       <!--Titulos de la tabla-->
                 <header>
                     <div class="text-title">Usuario</div>
                 </header>
                 <section>
                   <div class="text-title">Acciones</div>
                 </section>
+                <!--Fin-->
+                <!--Contenido-->
                   <div>Karina Henandez Ramírez</div>
                        <div>
                            <input type="image" src="./images/ojito-acti.svg" alt="" class="ml-3 btn-focus images" onClick="verfront()"></input>
@@ -44,20 +53,24 @@
           </div>
      </div>
 </div>
+  
+</body>
+
 <!--modal borrar-->
-<div class="modal " id="abrirBorrar" role="dialog" >
-    <div class="modal-dialog modal-defi">  
-      <div class="modal-content align-item-center centro texto">
-        <div class="modal-body ">
+<div class="modal show " id="abrirBorrar" role="dialog" >
+    <div class="modal-dialog modal-lg modal-dialog-centered">  
+      <div class="modal-content centro modal-defi2">
+        <div class="modal-body  ">
           <img src= "./images/advertencia.svg"alt="" class=""><br>
-          <span class="texto">¿Desea eliminar este usuario?</span>
-          <p class="texto1">Karina Henandez Ramírez</p>
+          <span class="modal-text">¿Desea eliminar este usuario?</span>
+          <p class="modal-text1">Karina Henandez Ramírez</p>
         </div>
-        <div class="col-xl-12 align-item-center centro">
-        <button type="button" class=" btn-borrar-selec" id="modal-button" data-dismiss="modal">Si</button>
-        <button type="button" class="btn-borrar" id="modal-button" data-dismiss="modal">No</button>
+        <div class="pb-4 align-item-center centro">
+        <button type="button" class=" btn-no" id="modal-button" data-dismiss="modal">No</button>
+        <button type="button" class="btn-si" id="modal-button" data-dismiss="modal">Si</button>
   
       </div>
     </div> 
   </div>
  </div>
+ </html>

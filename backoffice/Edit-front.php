@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claro Networks</title>
 <script src="./js/admin.js" defer></script>
 </head>
 <body class="scroll">
-
-    <div id="edit-front">
-        <div class="col-xl-6 mx-auto centrar">
-            <div class="container shadow texto-general ">
+    <div id="edit-front"><!--Div para cambio-->
+        <div class="col-xl-6 mx-auto ">
+            <div class="container shadow texto-general tamaño " >
+            <img src="./images/equis.svg" alt="" class="equis1" onClick="muestra3()">
             <div class="bg-white ">
-                <div class=" ml-3 pt-3"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
-                <div class=" col-xl-12 mx-auto mt-xl-4 mb-xl-4 ">
+                <div class=" ml-3 pt-5 pl-2"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
+                <div class=" col-xl-12 mx-auto mt-xl-1 ">
                     <form>
                     <input class="insert-data  " type="text " value="" placeholder=" Fernando Montes de Oca" disabled></input>
-                    <input class="insert-data  input-email  mt-4 pt-2 pb-2 " type="text " value="" placeholder=" fer.moca@gmail.com"disabled></input>
+                    <input class="insert-data  input-email  pt-2 pb-2 " type="text " value="" placeholder=" fer.moca@gmail.com"disabled></input>
                     <input class="insert-data input-password" type="password" id="login-password" name="login-password" placeholder=" Contraseña" autocomplete="off" />
                     <!--<img src="../images/registro/eye-none.svg" class="icon-eye3" />-->
 
@@ -22,8 +25,8 @@
                    <!--<img src="../images/registro/eye-none.svg" class="icon-eye3" />-->
                   </div>
                   <div class=" navbar navbar-expand-sm  mx-auto mt-2 ">   
-                   <div class="col-xl-4">
-                   <p >Sexo</p>
+                   <div class="col-xl-4 margin-sex">
+                   <p class="margin-front">Sexo</p>
                    <form action="" name="formilariosexo" id="formulariosexo" class="formulario">
                   <div class="sexo">
                     <input type="radio" name="sexo" id="mujer" checked />
@@ -38,17 +41,17 @@
                 </form>
                       </div>
                
-                <div class= "col-xl-4" id="drop-paises">
-                   <p style="margin-left: 30px;">País de recidencia</p>
-                   <div class="pais">
+                <div class= "col-xl-4" id="drop-paises" >
+                   <p class="margin-front">País de recidencia</p>
+                  
                    <input type="checkbox" id="selectPais" />
                 <label for="selectPais" id="select-Pais">
                   <p class="SeleccionPaisLista">
-                  <img src="" />Selecciona tu país
+                  <img src="" class="Icon_paises" />Selecciona tu país
                   </p>
                   <ul class="ListaDesplegablePaises">
                     <li class="option" id-select="select-Pais" value="USA">
-                      <img src="../images/paises/usa.svg" class="Icon_paises" />USA
+                      <img src="../images/paises/usa.svg" class="Icon_paises"/>USA
                     </li>
                     <li class="option" id-select="select-Pais" value="Argentina">
                       <img src="../images/paises/argentina.svg" class="Icon_paises" />Argentina
@@ -101,9 +104,9 @@
                    </ul>
                   </label>                  
                    </div>
-                  </div>
-                  <div class="col-xl-4">
-                   <p>Fecha de nacimiento</p>
+                  
+                  <div class="col-xl-4 fecha-margi">
+                   <p class="margin-fecha">Fecha de nacimiento</p>
                    <div class="cuadro-fecha">
                   <div class="cuadro-dia">
 
@@ -538,13 +541,12 @@
                    </div>
                    </div>
               
-<br> 
-<div class="navbar navbar-expand-sm justify-content-center mx-auto texto ml-xl-2 pb-3  ">
-                <button type="button" class="btn btn-outline-info btn-action  ml-xl-2 px-xl-4 " >
-                 Guardar
-                </button>
-                <button type="button" class="btn btn-outline-info btn-action   ml-xl-2 px-xl-4" >
+<div class="navbar navbar-expand-sm justify-content-center mx-auto texto ml-xl-2 pb-4 ">
+                <button type="button" class=" btn-cancelar  ml-xl-2 " >
                  Cancelar
+                </button>
+                <button type="button" class="btn-guardar   ml-xl-2 " >
+                 Guardar
                 </button>
               </div>
 <div >
@@ -556,5 +558,5 @@
 </div>
 </div>
 </div>
-
+</body>
 </html>

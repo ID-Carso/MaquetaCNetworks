@@ -10,16 +10,17 @@
 <body class="scroll">
 
    <div id="usuarios">
-        <div class=" col-xl-6 mx-auto texto-general centrar" id="visual">
-            <div class="container shadow  ">
+        <div class=" col-xl-6 mx-auto texto-general " id="visual">
+            <div class="container shadow tamaño ">
+            <img src="./images/equis.svg" alt="" class="equis1" onClick="muestra2()">
             <div class="w3-card-4 bg-white ">
-                <div class="w3-container ml-3 pt-3"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
-                <div class=" col-xl-12 mx-auto mt-xl-3 mb-xl-2 ">
+                <div class="w3-container ml-3 pt-5 pl-4"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
+                <div class=" col-xl-12 mx-auto mt-xl-3 mb-xl-2 pl-5 pr-5 ">
                     <form>
                     <input class="insert-data pb-2 pt-2 " type="text " value="" placeholder=" Fernando Montes de Oca" disabled></input>
                     <input class="insert-data  input-email  mt-4 pt-2 pb-2" type="text " value="" placeholder=" fer.moca@gmail.com"disabled></input>
                     <input class="insert-data input-password mt-4 pt-2 pb-2" type="password" id="login-password" name="login-password" placeholder=" ***************" autocomplete="off">
-                    <img src="../images/registro/eye-none.svg" class="icon-eye" />
+                
                     </input>
                      
                     <p class="mt-4 ml-2">Rol de usuario</p> 
