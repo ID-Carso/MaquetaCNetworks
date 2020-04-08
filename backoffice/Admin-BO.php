@@ -15,12 +15,14 @@
 <body class="scroll">
 
     <main>
+      <!--header-->
         <?php
         $nameButton = "Cerrar sesión";
        // $nameSection = "Home";
         include 'header-office.php';
        showHeader($nameButton, 1);
         ?>
+        <!--Botones de navegación-->
          <nav class='navbar navbar-expand-sm mx-auto 'style ="display:flex; justify-content:space-around; margin-top:-10px">
             <ul class='navbar-nav'>
               <li class='nav-item'>
@@ -38,8 +40,8 @@
           </nav>
           <hr class=' mt-2 ml-3 mr-3'/>  
           <br>
-          <div id="cambio" >         
-          <?php include 'admin-home.php'?>  
+          <div id="cambio" >      <!--Div para el cambio-->   
+          <?php include 'admin-home.php'?>  <!--Carga de div's-->
 
 
 </div>
