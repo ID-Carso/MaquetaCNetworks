@@ -214,7 +214,7 @@ function getPrograms(date, country) {
                           <p class="a-programming-text">${program.time}</p>
                           <button type="button" class="poster-button remove-program" _id="${program.chapter_id}"><img src="./images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
                       </div>
-                      
+
                       <div class="thumbnail-body" _id="${program.chapter_id}">
                           <div class="thumbnail">
                               <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
@@ -225,7 +225,7 @@ function getPrograms(date, country) {
                               </div>
                           </div>
                      </div>
-                  
+
                   </div>
               </div>
                 `;
@@ -237,7 +237,7 @@ function getPrograms(date, country) {
                           <p class="a-programming-text">${program.time}</p>
                           <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                       </div>
-                      
+
                       <div class="thumbnail-body" _id="${program.chapter_id}">
                           <div class="thumbnail">
                               <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
@@ -248,7 +248,7 @@ function getPrograms(date, country) {
                               </div>
                           </div>
                         </div>
-      
+
                   </div>
               </div>
                 `;
@@ -270,7 +270,7 @@ function getPrograms(date, country) {
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="schedule-details">
                     <div class="schedule-details-header">
                         <div>
@@ -290,7 +290,7 @@ function getPrograms(date, country) {
                     </p>
                 </div>
             </div>
-    
+
         </div>
             `;
         } else {
@@ -305,7 +305,7 @@ function getPrograms(date, country) {
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="schedule-details">
                     <div class="schedule-details-header">
                         <div>
@@ -383,7 +383,7 @@ function getPrograms(date, country) {
                         <p class="a-programming-text">${program.time}</p>
                         <button type="button" class="poster-button remove-program" _id="${program.chapter_id}"><img src="./images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
                     </div>
-                
+
                     <div class="thumbnail-body" _id="${program.chapter_id}">
                         <div class="thumbnail">
                             <img src="./images/concert-channel/carrousel/${program.image}" alt="">
@@ -405,7 +405,7 @@ function getPrograms(date, country) {
                     <p class="a-programming-text">${program.time}</p>
                     <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                 </div>
-                
+
                 <div class="thumbnail-body" _id="${program.chapter_id}">
                     <div class="thumbnail">
                         <img src="./images/concert-channel/carrousel/${program.image}" alt="">
@@ -436,7 +436,7 @@ function getPrograms(date, country) {
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="schedule-details">
                     <div class="schedule-details-header">
                         <div>
@@ -456,7 +456,7 @@ function getPrograms(date, country) {
                     </p>
                 </div>
             </div>
-    
+
         </div>
             `;
         } else {
@@ -471,7 +471,7 @@ function getPrograms(date, country) {
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="schedule-details">
                     <div class="schedule-details-header">
                         <div>
@@ -491,7 +491,7 @@ function getPrograms(date, country) {
                     </p>
                 </div>
             </div>
-    
+
         </div>
             `;
         }
@@ -520,7 +520,7 @@ function getPrograms(date, country) {
                               </div>
                           </div>
                         </div>
-      
+
                   </div>
               </div>
                 `;
@@ -540,7 +540,7 @@ function getPrograms(date, country) {
                               </div>
                           </div>
                         </div>
-      
+
                   </div>
               </div>
                 `;
@@ -558,7 +558,7 @@ function getPrograms(date, country) {
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="schedule-details">
                     <div class="schedule-details-header">
                         <div>
@@ -578,7 +578,7 @@ function getPrograms(date, country) {
                     </p>
                 </div>
             </div>
-    
+
         </div>
                 `;
           } else {
@@ -589,7 +589,7 @@ function getPrograms(date, country) {
                           <p class="a-programming-text">${program.time}</p>
                           <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
                       </div>
-                      
+
                       <div class="thumbnail-body" _id="${program.chapter_id}">
                           <div class="thumbnail">
                               <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
@@ -619,7 +619,7 @@ function getPrograms(date, country) {
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="schedule-details">
                     <div class="schedule-details-header">
                         <div>
@@ -639,7 +639,7 @@ function getPrograms(date, country) {
                     </p>
                 </div>
             </div>
-    
+
         </div>
             `;
         } else {
@@ -654,7 +654,7 @@ function getPrograms(date, country) {
                       </div>
                   </div>
               </div>
-  
+
               <div class="schedule-details">
                   <div class="schedule-details-header">
                       <div>
@@ -674,7 +674,7 @@ function getPrograms(date, country) {
                   </p>
               </div>
           </div>
-  
+
       </div>
             `;
         }
@@ -703,7 +703,6 @@ function getPrograms(date, country) {
       </div>
 
   </div>
-
 
   <div class="poster">
       <div class="poster-body">
@@ -744,7 +743,6 @@ function getPrograms(date, country) {
       </div>
 
   </div>
-
 
   <div class="poster">
       <div class="poster-body">
@@ -953,7 +951,7 @@ function getPrograms(date, country) {
                     <p class="a-programming-text">${program.time}</p>
                     <button type="button" class="poster-button" _id="${program.chapter_id}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
                 </div>
-                
+
                 <a href="sinopsis.php" class="text-decoration-none">
                     <div class="thumbnail">
                         <img src="./images/claro-cinema/carrousel/${program.image}" alt="">

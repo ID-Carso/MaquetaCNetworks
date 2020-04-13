@@ -310,9 +310,9 @@ export default class Slider {
     const imagesBannerClaroCanal = [
       {
         imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/pc/claro-home-background.jpg",
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/pc/CANAL-CLARO-01-A.jpg",
         imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/tablet/claro-home-background.jpg",
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/pc/CANAL-CLARO-01-B.jpg",
       },
       {
         imageBannerPC:
@@ -330,9 +330,9 @@ export default class Slider {
     const imagesBannerClaroCinema = [
       {
         imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/cinema-home-background.jpg",
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-01-A.jpg",
         imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/tablet/cinema-home-background.jpg",
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-01-B.jpg",
       },
       {
         imageBannerPC:
@@ -370,15 +370,15 @@ export default class Slider {
 
     let slideBanner = "";
     let slideBannerClaroCinema = "";
-    let slideBannerConcertChannel;
+    let slideBannerConcertChannel = "";
     let bannerClaroCanal = $("#banner-claro-canal");
     let bannerClaroCinema = $("#banner-claro-cinema");
     let bannerConcertChannel = $("#banner-concert-channel");
-    if ($(window).width() < 768) {
+    if (screen.width < 768) {
       $(".claro-image-banner-1").attr("src", "");
       $(".concert-image-banner-1").attr("src", "");
       $(".cinema-image-banner-1").attr("src", "");
-    } else if ($(window).width() >= 768 && $(window).width() < 1200) {
+    } else if (screen.width >= 768 && screen.width < 1200) {
       imagesBannerClaroCanal.forEach(function (image) {
         slideBanner += `        
         <div class="header-slide">
@@ -400,7 +400,7 @@ export default class Slider {
       bannerClaroCanal.html(slideBanner);
       bannerClaroCinema.html(slideBannerClaroCinema);
       bannerConcertChannel.html(slideBannerConcertChannel);
-    } else if ($(window).width() >= 1200) {
+    } else if (screen.width >= 1200) {
       imagesBannerClaroCanal.forEach(function (image) {
         slideBanner += `        
         <div class="header-slide">
@@ -424,12 +424,11 @@ export default class Slider {
       bannerConcertChannel.html(slideBannerConcertChannel);
     }
     $(window).resize(function () {
-      let bannerConcertChannel = $("#banner-concert-channel");
-      if ($(window).width() < 768) {
+      if (screen.width < 768) {
         $(".claro-image-banner-1").attr("src", "");
         $(".concert-image-banner-1").attr("src", "");
         $(".cinema-image-banner-1").attr("src", "");
-      } else if ($(window).width() >= 768 && $(window).width() < 1200) {
+      } else if (screen.width >= 768 && screen.width < 1200) {
         imagesBannerClaroCanal.forEach(function (image) {
           slideBanner += `        
           <div class="header-slide">
@@ -451,7 +450,7 @@ export default class Slider {
         bannerClaroCanal.html(slideBanner);
         bannerClaroCinema.html(slideBannerClaroCinema);
         bannerConcertChannel.html(slideBannerConcertChannel);
-      } else if ($(window).width() >= 1200) {
+      } else if (screen.width >= 1200) {
         imagesBannerClaroCanal.forEach(function (image) {
           slideBanner += `        
           <div class="header-slide">

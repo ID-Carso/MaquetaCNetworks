@@ -14,8 +14,8 @@ export default class Section {
             centerMode: false,
             infinite: true,
             arrows: false,
-            dots: true
-          }
+            dots: true,
+          },
         },
         {
           breakpoint: 992,
@@ -29,8 +29,8 @@ export default class Section {
             prevArrow:
               '<img src="../images/sliders/prev.png" class="arrow-prev" />',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />'
-          }
+              '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
         },
         {
           breakpoint: 1200,
@@ -44,8 +44,8 @@ export default class Section {
             prevArrow:
               '<img src="../images/sliders/prev.png" class="arrow-prev" />',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />'
-          }
+              '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
         },
         {
           breakpoint: 1900,
@@ -59,8 +59,8 @@ export default class Section {
             prevArrow:
               '<img src="../images/sliders/prev.png" class="arrow-prev" />',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />'
-          }
+              '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
         },
         {
           breakpoint: 10000,
@@ -74,10 +74,10 @@ export default class Section {
             prevArrow:
               '<img src="../images/sliders/prev.png" class="arrow-prev" />',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />'
-          }
-        }
-      ]
+              '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
+        },
+      ],
     });
   }
   renderHome(json) {
@@ -90,7 +90,7 @@ export default class Section {
       json.data.block_1_image_background_2,
       json.data.block_1_image_background_3,
       json.data.block_1_image_background_4,
-      json.data.block_1_image_background_5
+      json.data.block_1_image_background_5,
     ];
 
     let imagesHeaderLength = imagesHeader.length;
@@ -103,16 +103,14 @@ export default class Section {
     }
 
     $("#slider-header-home").append(divImageHeader);
-    $("#slider-header-home")
-      .not(".slick-initialized")
-      .slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: true,
-        centerMode: false,
-        arrows: false
-      });
+    $("#slider-header-home").not(".slick-initialized").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      dots: true,
+      centerMode: false,
+      arrows: false,
+    });
 
     let titleHeader = `<span class="header-span">${json.data.block_1_title} </span>${json.data.block_1_subtitle}`;
     $(".header-h1").html(titleHeader);
@@ -172,7 +170,7 @@ export default class Section {
       json.data.block_3_image2,
       json.data.block_3_image3,
       json.data.block_3_image4,
-      json.data.block_3_image5
+      json.data.block_3_image5,
     ];
 
     $(".section-slider").slick("unslick");
@@ -225,7 +223,7 @@ export default class Section {
       json.data.block_4_image1,
       json.data.block_4_image2,
       json.data.block_4_image3,
-      json.data.block_4_image4
+      json.data.block_4_image4,
     ];
 
     let blockImage4Length = block4Image.length;
@@ -274,7 +272,7 @@ export default class Section {
       json.data.block_5_image1,
       json.data.block_5_image2,
       json.data.block_5_image3,
-      json.data.block_5_image4
+      json.data.block_5_image4,
     ];
 
     let blockImage5Length = block5Image.length;
@@ -339,8 +337,8 @@ export default class Section {
             centerMode: false,
             infinite: true,
             arrows: false,
-            dots: true
-          }
+            dots: true,
+          },
         },
         {
           breakpoint: 992,
@@ -350,8 +348,8 @@ export default class Section {
             infinite: true,
             dots: true,
             centerMode: true,
-            arrows: false
-          }
+            arrows: false,
+          },
         },
         {
           breakpoint: 1200,
@@ -365,8 +363,8 @@ export default class Section {
             prevArrow:
               '<img src="../images/sliders/prev.png" class="arrow-prev" />',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />'
-          }
+              '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
         },
 
         {
@@ -381,8 +379,8 @@ export default class Section {
             prevArrow:
               '<img src="../images/sliders/prev.png" class="arrow-prev" />',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />'
-          }
+              '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
         },
 
         {
@@ -397,10 +395,10 @@ export default class Section {
             prevArrow:
               '<img src="../images/sliders/prev.png" class="arrow-prev" />',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />'
-          }
-        }
-      ]
+              '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
+        },
+      ],
     });
 
     /* End Claro Cinema - Home*/
@@ -469,29 +467,29 @@ export default class Section {
         program_title: "JOBS",
         genre: "Película",
         image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/01-JOBS.jpg"
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/01-JOBS.jpg",
       },
       {
         chapter_id: 2,
         program_title: "DA VINCI",
         genre: "Documental",
         image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/02%20DAVINCI.jpg"
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/02%20DAVINCI.jpg",
       },
       {
         chapter_id: 3,
         program_title: "EL DANDY",
         genre: "Serie",
         image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/03%20EL-DANDY.jpg"
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/03%20EL-DANDY.jpg",
       },
       {
         chapter_id: 4,
         program_title: "MARVEL",
         genre: "Anime",
         image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/04-MARVEL.jpg"
-      }
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/04-MARVEL.jpg",
+      },
     ];
 
     let programsExlusiveContent = [
@@ -499,32 +497,32 @@ export default class Section {
         chapter_id: 1,
         program_title: "DRESS CODE",
         image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/05-DRESS-CODE.jpg"
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/05-DRESS-CODE.jpg",
       },
       {
         chapter_id: 2,
         program_title: "FIT 4 LIFE",
         image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/06-FIT4LIFE.jpg"
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/06-FIT4LIFE.jpg",
       },
       {
         chapter_id: 3,
         program_title: "CONEXIÓN CLARO",
         image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/07-CONEXION.jpg"
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/07-CONEXION.jpg",
       },
       {
         chapter_id: 4,
         program_title: "LA CAJA DE PANDORA",
         image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/08-CAJA-DE-PANDORA.jpg"
-      }
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/08-CAJA-DE-PANDORA.jpg",
+      },
     ];
 
     let programTiensQueVerlo = "";
     let programExlusiveContent = "";
 
-    programsTienesQueVerlo.forEach(program => {
+    programsTienesQueVerlo.forEach((program) => {
       programTiensQueVerlo += `
       <div class="poster" >
         <div class="poster-body">
@@ -543,7 +541,7 @@ export default class Section {
       `;
     });
 
-    programsExlusiveContent.forEach(program => {
+    programsExlusiveContent.forEach((program) => {
       programExlusiveContent += `
       <div class="poster" >
         <div class="poster-body">
