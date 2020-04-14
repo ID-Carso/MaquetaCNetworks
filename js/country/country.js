@@ -58,3 +58,5 @@ function getNameCountry(image) {
   }
   return nameCountry;
 }
+
+export { getNameCountry };
