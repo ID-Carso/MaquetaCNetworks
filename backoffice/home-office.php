@@ -21,7 +21,11 @@
                 this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
                 this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
 
+<<<<<<< HEAD
                 //this.container.getElementsByTagName("iframe")[0].style.width = "800px";
+=======
+
+>>>>>>> Backoffice
             }
         });
     </script>

@@ -1131,12 +1131,6 @@ $(document).ready(function () {
 
   loginCountry.attr("src", sessionSrc);
 
-  /*if (sidebarItem) {
-    sidebarItem.click(function() {
-      console.log("Cerrando sesión");
-    });
-  }*/
-
   /* Hacer aparecer el tooltip */
 
   $(".icon-user").hover(
