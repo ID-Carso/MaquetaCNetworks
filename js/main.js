@@ -21,7 +21,7 @@ import { addFavorites } from "./services/user/user.js";
 import { removeFavorites } from "./services/user/user.js";
 import { showNotification } from "./services/user/user.js";
 import { updateAlertProgram } from "./services/user/user.js";
-import { getNameCountry } from "./country/contry.js";
+import { getNameCountry } from "./country/country.js";
 
 /* Program */
 import { getPrograms, createClickThumbnails } from "./services/Program.js";
