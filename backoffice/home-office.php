@@ -21,7 +21,7 @@
                 this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
                 this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
 
-                //this.container.getElementsByTagName("iframe")[0].style.width = "800px";
+
             }
         });
     </script>
