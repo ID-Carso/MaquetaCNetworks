@@ -12,6 +12,7 @@ function ShowHidePassword(iconPassword) {
 function validateEmail(inputEmail, messageError) {
   let email = inputEmail.val();
   let filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
   if (email.length == 0) {
     messageError
       .addClass("invalid-email d-block")
@@ -128,7 +129,7 @@ function validateToken(token) {
     data: token,
     url:
       "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/verify",
-    success: function(result) {
+    success: function (result) {
       console.log("succes", result);
       if (result.data != null) {
         localStorage.setItem("session", 1);
@@ -139,7 +140,7 @@ function validateToken(token) {
         let nameUser = $("#cuenta-confirmada-name-user");
         nameUser.html(name);
       }
-    }
+    },
   });
 }
 
@@ -150,5 +151,5 @@ export {
   validateKeyUpEmail,
   validatePassword,
   validateUser,
-  validateToken
+  validateToken,
 };
