@@ -1,18 +1,23 @@
 import { previewPage } from "./preview/prev.js";
 import { showContentNav } from "./nav/nav.js";
-import { ShowHidePassword } from "./form/form.js";
-import { validateEmail } from "./form/form.js";
-import { validateNewPassword } from "./form/form.js";
-import { validateKeyUpEmail } from "./form/form.js";
-import { validatePassword } from "./form/form.js";
+
+import {
+  validateNewPassword,
+  validateKeyUpEmail,
+  validatePassword,
+  validateEmail,
+  ShowHidePassword,
+} from "./form/form.js";
+
 // import { validateUser } from "./form/form.js";
 // import { validateToken } from "./form/form.js";
 
 /* Service User */
-
-import { signIn, signOut } from "./services/user.js";
+import { signIn, signOut, registerUser } from "./services/user.js";
 
 $(document).ready(function () {
+  /* GET ALL USERS BACKOFFICE */
+
   /* LOGIN */
   $("#button-login").click(function () {
     let inputEmail = $(".input-email");
@@ -38,6 +43,16 @@ $(document).ready(function () {
   /* SIGNOUT */
   $("#signout-button").click(function () {
     signOut();
+  });
+
+  /*REGISTER NEW USER*/
+  $(".register-user-button").click(function () {
+    let rol = $(".btn-rol-select").attr("id_rol");
+    let email = $("#email-user-bo").val();
+    let username = $("#name-user-bo").val();
+    let password = $("#password-user-bo").val();
+    console.log(rol, email, username, password);
+    registerUser(username, email, password, rol);
   });
 
   /* Previsualizar contenido en diferentes tamaños */

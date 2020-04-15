@@ -193,28 +193,24 @@ function selectAvatar(id, src) {
   });
 }
 
-function registerUser(inputName, inputEmail, inputPassword) {
-  let name = inputName.val();
-  let email = inputEmail.val();
-  let password = inputPassword.val();
-
+function registerUser(name, email, password, rol) {
   let user = {
     function: "registerUser",
     name: name,
     email: email,
     password: password,
+    rol: rol,
   };
 
   $.ajax({
     type: "POST",
     data: user,
-    url: "../../adapters/user.php",
+    url: "http://localhost:4000/backoffice/adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
-      let modal = $("#mensaje");
-      console.log(json.data.id);
-      modal.modal("show");
-      sendEmail(json.data.id);
+      if (json.code == 200) {
+        $(".modal-newuser-bo").modal("show");
+      }
     },
   });
 }

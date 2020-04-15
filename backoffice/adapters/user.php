@@ -72,12 +72,12 @@ class User
         echo "200";
     }
 
-    function registerUser($name, $email, $password, $version)
+    function registerUser($name, $email, $password, $rol, $adminId)
     {
-        $dataUser = array("name" => $name, "email" => $email, "password" => $password, "version" => $version);
+        $dataUser = array("name" => $name, "email" => $email, "password" => $password, "rol_id" => $rol, "admin_user_id" => $adminId);
         $dataUserJson = json_encode($dataUser);
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user");
+        curl_setopt($ch, CURLOPT_URL, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/admin_user");
         curl_setopt($ch, CURLOPT_POST, TRUE);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $dataUserJson);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -115,16 +115,15 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             break;
 
         case 'registerUser':
-            if (is_string($_POST['name']) && is_string($_POST['email']) && is_string($_POST['password'])) {
-                $name = $_POST['name'];
-                $email = $_POST['email'];
-                $password = $_POST['password'];
-                $version = $_POST['version'];
-                $users = User::getUserInstance();
-                $users->registerUser($name, $email, $password, $version);
-            } else {
-                return "No válido";
-            }
+
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+            $rol = $_POST['rol'];
+            $adminId = $_SESSION['id'];
+            $users = User::getUserInstance();
+            $users->registerUser($name, $email, $password, $rol, $adminId);
+
             break;
         case 'updateDataUser':
 
