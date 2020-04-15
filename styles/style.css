@@ -4482,8 +4482,8 @@ input[type="radio"]:checked + .mujer-estilo {
   bottom: -26px;
 }
 
-.programacion-slider {
-  /*.slick-slide {
+/*.programacion-slider {
+  .slick-slide {
     width: 1.32% !important;
     margin: 0 2px;
   }
@@ -4494,9 +4494,8 @@ input[type="radio"]:checked + .mujer-estilo {
 
   .slick-list {
     padding: 0px !important;
-  }*/
-}
-
+  }
+}*/
 .dontLose-slider-tablet {
   display: none;
 }
