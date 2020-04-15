@@ -30,15 +30,81 @@ include './views/partials/head.php';
                     <h2 class="text-monblack aboutus-title1 text-teal-blue">QUIENES</h2>
                     <h2 class="text-monblack aboutus-title2">SOMOS</h2>
                 </div>
-                <div class="aboutus-subtitle-container">
-                    <p class="text-bold text-teal-blue aboutus-subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </p>
+                <div class="mb-4">
+                    <div class="aboutus-subtitle-container">
+                        <p class="text-bold text-teal-blue aboutus-subtitle mb-0">
+                            Claro Networks
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-regular aboutus-text mb-0">
+                            Claro Networks es la unidad de negocio de América Móvil, (la empresa de telecomunicaciones más grande del mundo), que produce, opera y transmite canales de televisión de paga para América Latina y TV abierta para el mercado hispano de los Estados Unidos de América. Se compone de cinco canales especializados y segmentados para llevar contenidos relevantes y entretenidos para toda la familia.
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <p class="text-regular aboutus-text mb-0">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                <div class="mb-4">
+                    <div class="aboutus-subtitle-container">
+                        <p class="text-bold text-teal-blue aboutus-subtitle mb-0">
+                            Canal Claro
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-regular aboutus-text mb-0">
+                            Entretenimiento por donde lo veas.
+                            En Canal Claro tenemos programación hecha para que disfruten desde los más pequeños hasta los más grandes. Las series que te hacen emocionarte, las películas con historias que te atraparán, los ánimes y los héroes que compartirán sus aventuras contigo. Y producciones propias que te informarán, te invitarán a ponerte en forma y te mostrarán todo lo que no conocías sobre las celebridades. Encender tu televisor a cualquier hora es garantía de entretenimiento con Canal Claro.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="aboutus-subtitle-container">
+                        <p class="text-bold text-teal-blue aboutus-subtitle mb-0">
+                            Claro Cinema
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-regular aboutus-text mb-0">
+                            México es un país fantástico, encantador, lleno de historias, leyendas, ocurrencias, y sucesos peculiares. Obviamente, su cine tenía que reflejar todo esto y más. En Claro Cinema te encontrarás con íconos que marcaron época: la trilogía de Ismael Rodríguez, el inigualable lenguaje de René Cardona; las inolvidables actuaciones de Pedro Infante, María Félix, Miroslava, entre otros; la peculiar galantería de Mauricio Garcés o la, todavía mayor, de Alfonso Zayas. Con una mirada única a las películas que hicieron época, descubrirás que el cine mexicano está más vivo que nunca.
+                        </p>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="aboutus-subtitle-container">
+                        <p class="text-bold text-teal-blue aboutus-subtitle mb-0">
+                            Concert Channel
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-regular aboutus-text mb-0">
+                            La música es el idioma universal, los conciertos se convierten en una hermandad de fanáticos, y Concert Channel te lleva a la primera fila de los mejores. En este canal podrás encontrar ejecuciones virtuosas, eventos emblemáticos, festivales que no te puedes perder e incluso, podrás descubrir a tus nuevos ídolos. Queen, Black Sabbath, Beyoncé, Billie Eilish, entre muchos otros.
+                            Súbele el volumen a la música para disfrutar los eventos como si estuvieras en vivo.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="aboutus-subtitle-container">
+                        <p class="text-bold text-teal-blue aboutus-subtitle mb-0">
+                            Nuestra Visión
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-regular aboutus-text mb-0">
+                            Nuestra Visión es el canal hecho para los mexicanos que están del otro lado de la frontera. Con una cobertura que día con día llega a más telehogares, Nuestra Visión ofrece una programación que va desde el cine de oro con ídolos como Pedro Infante, María Félix, Mauricio Garcés, y muchos más, hasta las noticias de actualidad, pasando por programas infantiles, deportes, entrevistas y un gran repertorio de entretenimiento. Eso sí, con el toque que caracteriza a los mexicanos. Por ello, Nuestra Visión es el canal que te acerca a México aunque estés muy lejos.
+                        </p>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="aboutus-subtitle-container">
+                        <p class="text-bold text-teal-blue aboutus-subtitle mb-0">
+                            Claro Sports
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-regular aboutus-text mb-0">
+                            Ser un fanático de los deportes es un trabajo de veinticuatro horas. En Claro Sports lo entendemos a la perfección. Con gran profesionalismo en el análisis, las narraciones y capacidad de transmisión llevamos a tu televisión los eventos más importantes de un sinnúmero de disciplinas deportivas. Somos el broadcaster oficial de los Juegos Olímpicos desde Río 2016, en donde creamos una experiencia única para el telespectador con transmisiones multipantallas y en cualquier dispositivo. Experiencia que se repetirá en las justas olímpicas de Tokio, París y Los Ángeles.
+                        </p>
+                    </div>
                 </div>
 
             </div>

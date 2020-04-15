@@ -4695,8 +4695,8 @@ input[type="radio"]:checked + .mujer-estilo {
   bottom: -26px;
 }
 
-.programacion-slider {
-  /*.slick-slide {
+/*.programacion-slider {
+  .slick-slide {
     width: 1.32% !important;
     margin: 0 2px;
   }
@@ -4707,9 +4707,8 @@ input[type="radio"]:checked + .mujer-estilo {
 
   .slick-list {
     padding: 0px !important;
-  }*/
-}
-
+  }
+}*/
 .dontLose-slider-tablet {
   display: none;
 }
@@ -5218,7 +5217,7 @@ input[type="radio"]:checked + .mujer-estilo {
 }
 
 .aboutus-container {
-  background-image: url(../images/home/bg-canal-claro@2x.jpg);
+  background-image: url(../images/home/bg-canal-claro.jpg);
   background-size: cover;
 }
 
