@@ -1,3 +1,12 @@
+<?php
+
+session_start();
+
+
+$_SESSION['login'] = 1;
+var_dump($_SESSION['login']);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

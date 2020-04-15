@@ -7,13 +7,32 @@ import { validateKeyUpEmail } from "./form/form.js";
 import { validatePassword } from "./form/form.js";
 import { validateUser } from "./form/form.js";
 import { validateToken } from "./form/form.js";
+
+/* Service User */
+
+import { signIn } from "./services/user.js";
+
 $(document).ready(function () {
   /* LOGIN */
   $("#button-login").click(function () {
-    validatePassword($(".input-email"), $(".caracteres-min"));
-    const email = $(".input-email").val();
-    const password = $(".input-password").val();
-    console.log(email, password);
+    let inputEmail = $(".input-email");
+    let inputPassword = $(".input-password");
+    let messageError = $("#error_email");
+    let messagePasswordError = $(".caracteres-min");
+
+    if (
+      validateEmail(inputEmail, messageError) &&
+      validatePassword(inputPassword, messagePasswordError)
+    ) {
+      let email = inputEmail.val();
+      let password = inputPassword.val();
+      signIn(email, password);
+
+      return true;
+    } else {
+      console.log("errro");
+      return false;
+    }
   });
 
   /* Previsualizar contenido en diferentes tamaños */
