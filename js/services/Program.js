@@ -112,8 +112,7 @@ function getPrograms(date, country) {
   $.ajax({
     type: "POST",
     data: dataProgram,
-    url:
-      "http://www.claronetworks.openofficedospuntocero.info/v1.2/adapters/program.php",
+    url: "../../adapters/program.php",
     success: function (result) {
       let json = JSON.parse(result);
       console.log(json);

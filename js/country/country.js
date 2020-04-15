@@ -1,55 +1,57 @@
 function getNameCountry(image) {
+  let url = image.split("/");
+  let imageCountry = url[url.length - 1];
   let nameCountry = "";
-  switch (image) {
-    case "images/paises/usa.svg":
+  switch (imageCountry) {
+    case "usa.svg":
       nameCountry = "usa";
       break;
-    case "images/paises/argentina.svg":
+    case "argentina.svg":
       nameCountry = "argentina";
       break;
-    case "images/paises/brazil.svg":
+    case "brazil.svg":
       nameCountry = "brazil";
       break;
-    case "images/paises/chile.svg":
+    case "chile.svg":
       nameCountry = "chile";
       break;
-    case "images/paises/colombia.svg":
+    case "colombia.svg":
       nameCountry = "colombia";
       break;
-    case "images/paises/costa-rica.svg":
+    case "costa-rica.svg":
       nameCountry = "costa-rica";
       break;
-    case "images/paises/ecuador.svg":
+    case "ecuador.svg":
       nameCountry = "ecuador";
       break;
-    case "images/paises/el-salvador.svg":
+    case "el-salvador.svg":
       nameCountry = "el-salvador";
       break;
-    case "images/paises/guatemala.svg":
+    case "guatemala.svg":
       nameCountry = "guatemala";
       break;
-    case "images/paises/honduras.svg":
+    case "honduras.svg":
       nameCountry = "honduras";
       break;
-    case "images/paises/nicaragua.svg":
+    case "nicaragua.svg":
       nameCountry = "nicaragua";
       break;
-    case "images/paises/panama.svg":
+    case "panama.svg":
       nameCountry = "panama";
       break;
-    case "images/paises/paraguay.svg":
+    case "paraguay.svg":
       nameCountry = "paraguay";
       break;
-    case "images/paises/puerto-rico.svg":
+    case "puerto-rico.svg":
       nameCountry = "puerto-rico";
       break;
-    case "images/paises/peru.svg":
+    case "peru.svg":
       nameCountry = "peru";
       break;
-    case "images/paises/dominican-republic.svg":
+    case "dominican-republic.svg":
       nameCountry = "dominican-republic";
       break;
-    case "images/paises/uruguay.svg":
+    case "uruguay.svg":
       nameCountry = "uruguay";
       break;
 

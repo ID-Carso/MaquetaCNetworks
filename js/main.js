@@ -1559,7 +1559,6 @@ $(document).ready(function () {
   let seconds = date.getSeconds();
   let currentDate = "2020-2-8";
   let currentTime = `${hour}:${minutes}`;
-
   getPrograms(currentDate, getNameCountry(sessionSrc));
   /*menu responsive*/
   const invisible_button = document.querySelector(".invisible-button");
