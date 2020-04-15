@@ -1,19 +1,30 @@
+<?php
+
+session_start();
+
+var_dump(getenv('HTTP_REFERER'));
+if (isset($_SESSION["session"])) {
+  header("Location:" . getenv('HTTP_REFERER'));
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <?php include 'styles.php';
-   include './views/partials/head.php'
-   ?>
+  include './views/partials/head.php'
+  ?>
 </head>
 
 <body class="fondo-BO">
-<span class="d-flex align-items-center justify-content-between  py-xl-2 texto">
-            <span class="  ml-5 "></span>
-            <span class="text-light  mr-5 pt-2">Administrador de contenido</span>     
-           
-    </span>
-    <hr class="bg-light mb-1 pt-0 ml-3 mr-3 mt-2 "/> 
+  <span class="d-flex align-items-center justify-content-between  py-xl-2 texto">
+    <span class="  ml-5 "></span>
+    <span class="text-light  mr-5 pt-2">Administrador de contenido</span>
+
+  </span>
+  <hr class="bg-light mb-1 pt-0 ml-3 mr-3 mt-2 " />
   <div class="login-container ">
     <div class="login-form no-gutters mb-4">
       <div class="col-sm-12 no-gutters col-md-6  no-gutters col-lg-4  col-xl-3 shadow1 fondolog mb-4">
@@ -24,7 +35,7 @@
             <img src="../images/registro/group-3.svg" class="form-image-blue" />
             <a href="home.php">
               <img src="../images/home/claro-logo.svg" class="ubicacion1" /></a>
-            
+
           </div>
         </div>
         <br />
@@ -51,33 +62,33 @@
                     <input class="insert-data input-password" type="password" id="login-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
                     <img src="../images/registro/eye-none.svg" class="icon-eye" />
                   </div>
-                  <p class="caracteres-min" >
+                  <p class="caracteres-min">
                     8 caractéres mínimo
                     <img src="../images/registro/listo.svg" class="listo" />
-                                    
+
                   </p>
 
                 </div>
               </div>
-            </div> 
-           
-          <!--  <div class="col-xl-12 row ma-no centro margin-top-por contra pt-3 pb-2" >
+            </div>
+
+            <!--  <div class="col-xl-12 row ma-no centro margin-top-por contra pt-3 pb-2" >
             <input type="checkbox" value="1" class=" mr-1 reco-chek" style="display:block">
 <p class="pb-1">  Recordar contraseña</p>
             </div>-->
 
             <div class="centro">
-             
-              <a href="Admin-BO.php">
-                <button type="button" class=" btn-ingresar-reco" >
-                  INGRESAR
-                </button>
-                </a>
-                <p class="nodatos">
-                  Aún no has ingresado datos
-                  <img src="../images/registro/alerta.svg" />
-                </p>
-             
+
+              <!-- <a href="Admin-BO.php"> -->
+              <button type="button" class="btn-ingresar-reco" id="button-login">
+                INGRESAR
+              </button>
+              <!-- </a> -->
+              <p class="nodatos">
+                Aún no has ingresado datos
+                <img src="../images/registro/alerta.svg" />
+              </p>
+
             </div>
           </form>
           <br />
@@ -85,10 +96,10 @@
             <div class="pb-4">
               <a href="Recopassword.php">
                 <p class="contra">¿Olvidaste la contraseña?</p>
-</a>
+              </a>
               <hr class="line btn-margin" />
-             
-              </div>
+
+            </div>
           </div>
         </div>
       </div>

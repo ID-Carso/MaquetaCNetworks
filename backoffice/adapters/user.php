@@ -1,0 +1,137 @@
+<?php
+session_start();
+
+class Console
+{
+    /**
+     * @param string $name Nombre único para poder ejecutar esto varias veces en el mismo documento
+     * @param mixed $var Una variable cadena, objeto, matriz o lo que sea
+     * @param string $type (debug|info|warn|error)
+     * @return html
+     */
+    public static function log($name, $var, $type = 'debug')
+    {
+        $name = preg_replace('/[^A-Z|0-9]/i', '_', $name);
+        $types = array('debug', 'info', 'warn', 'error');
+        if (!in_array($type, $types)) $type = 'debug';
+        $s = '<script>' . PHP_EOL;
+        if (is_object($var) or is_array($var)) {
+            $object = json_encode($var);
+            $object = str_replace("'", "\'", $object);
+            $s .= "var object$name = '$object';" . PHP_EOL;
+            $s .= "var val$name = eval('('+object$name+')');" . PHP_EOL;
+            $s .= "console.$type(val$name);" . PHP_EOL;
+        } else {
+            $var = str_replace('"', '\\"', $var);
+            $s .= "console.$type($var);" . PHP_EOL;
+        }
+        $s .= '</script>' . PHP_EOL;
+        return $s;
+    }
+}
+
+
+
+class User
+{
+    private static $instance = NULL;
+
+    public static function getUserInstance()
+    {
+        if (is_null(self::$instance)) {
+            self::$instance = new self();
+        }
+        return self::$instance;
+    }
+
+
+    function signIn($data)
+    {
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/admin_user/login");
+        curl_setopt($ch, CURLOPT_POST, TRUE);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json', 'Accept: application/json'));
+        $response = curl_exec($ch);
+        curl_close($ch);
+        $result = json_decode($response, true);
+
+        $_SESSION["session"] = 1;
+        $_SESSION["name_user"] = $result["data"]["name"];
+        $_SESSION["id"] = $result["data"]["id"];
+        $_SESSION["rol"] = $result["data"]["rol"]["name"];
+
+        echo ($response);
+    }
+
+    function signOut()
+    {
+        session_destroy();
+        echo "200";
+    }
+
+    function registerUser($name, $email, $password, $version)
+    {
+        $dataUser = array("name" => $name, "email" => $email, "password" => $password, "version" => $version);
+        $dataUserJson = json_encode($dataUser);
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user");
+        curl_setopt($ch, CURLOPT_POST, TRUE);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $dataUserJson);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json', 'Accept: application/json'));
+
+        $response = curl_exec($ch);
+        curl_close($ch);
+        echo ($response);
+    }
+}
+
+
+
+
+
+if (isset($_POST['function']) && !empty($_POST['function'])) {
+    $function = $_POST['function'];
+
+
+    switch ($function) {
+        case 'signIn':
+            if (is_string($_POST['email']) && is_string($_POST['password'])) {
+                $email = $_POST['email'];
+                $password = $_POST['password'];
+                $data = array("email" => $email, "password" => $password);
+                $dataJson = json_encode($data);
+                $user = User::getUserInstance();
+                echo ($user->signIn($dataJson));
+            }
+            break;
+
+        case 'signOut':
+            $user = User::getUserInstance();
+            echo ($user->signOut());
+            break;
+
+        case 'registerUser':
+            if (is_string($_POST['name']) && is_string($_POST['email']) && is_string($_POST['password'])) {
+                $name = $_POST['name'];
+                $email = $_POST['email'];
+                $password = $_POST['password'];
+                $version = $_POST['version'];
+                $users = User::getUserInstance();
+                $users->registerUser($name, $email, $password, $version);
+            } else {
+                return "No válido";
+            }
+            break;
+        case 'updateDataUser':
+
+            $data = array("id" => $_POST['id'], "gender" => $_POST['gender'], "birthday" => $_POST['date'], "country" => $_POST['country']);
+            $dataJson = json_encode($data);
+            $user = User::getUserInstance();
+            echo ($user->updateDataUser($dataJson));
+            break;
+    }
+}
