@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-var_dump($_SESSION['login']);
-if (!isset($_SESSION["usuario"])) {
-  //header('Location: http://localhost:4000/backoffice/login.php');
+
+if (!isset($_SESSION["session"])) {
+  header('Location: http://localhost:4000/backoffice/login.php');
 }
 ?>
 
@@ -31,7 +31,7 @@ if (!isset($_SESSION["usuario"])) {
     $nameButton = "Cerrar sesión";
     // $nameSection = "Home";
     include 'header-office.php';
-    showHeader($nameButton, 1);
+    showHeader($nameButton, 1, $_SESSION["name_user"], $_SESSION["rol"]);
     ?>
     <!--Botones de navegación-->
     <nav class='navbar navbar-expand-sm mx-auto ' style="display:flex; justify-content:space-around; margin-top:-10px">

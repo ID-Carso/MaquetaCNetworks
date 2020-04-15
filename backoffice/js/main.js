@@ -5,12 +5,12 @@ import { validateEmail } from "./form/form.js";
 import { validateNewPassword } from "./form/form.js";
 import { validateKeyUpEmail } from "./form/form.js";
 import { validatePassword } from "./form/form.js";
-import { validateUser } from "./form/form.js";
-import { validateToken } from "./form/form.js";
+// import { validateUser } from "./form/form.js";
+// import { validateToken } from "./form/form.js";
 
 /* Service User */
 
-import { signIn } from "./services/user.js";
+import { signIn, signOut } from "./services/user.js";
 
 $(document).ready(function () {
   /* LOGIN */
@@ -33,6 +33,11 @@ $(document).ready(function () {
       console.log("errro");
       return false;
     }
+  });
+
+  /* SIGNOUT */
+  $("#signout-button").click(function () {
+    signOut();
   });
 
   /* Previsualizar contenido en diferentes tamaños */

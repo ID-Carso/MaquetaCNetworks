@@ -84,22 +84,9 @@ function signIn(email, password) {
     url: "http://localhost:4000/backoffice/adapters/user.php",
     success: function (result) {
       console.log(result);
-      location.href = "Admin-BO.php";
       let json = JSON.parse(result);
-
-      if (json.data) {
+      if (json.code == 200) {
         location.href = "Admin-BO.php";
-        let date = result.data.birthday.split("-");
-        // localStorage.setItem("day", date[2]);
-        // localStorage.setItem("month", date[1]);
-        // localStorage.setItem("year", date[0]);
-        // localStorage.setItem("session", 1);
-        // localStorage.setItem("id", result.data.id);
-        // localStorage.setItem("name", result.data.name);
-        // localStorage.setItem("avatar", result.data.avatar);
-        // localStorage.setItem("gender", result.data.avatar);
-        // localStorage.setItem("birthday", result.data.avatar);
-        // localStorage.setItem("src", result.data.country.image);
       } else {
         $(".data-incorrect")
           .text(
@@ -112,19 +99,21 @@ function signIn(email, password) {
 }
 
 function signOut() {
-  location.reload();
-  location.href = "/home.php";
-  localStorage.removeItem("date");
-  localStorage.removeItem("day");
-  localStorage.removeItem("month");
-  localStorage.removeItem("gender");
-  localStorage.removeItem("session");
-  localStorage.removeItem("avatar");
-  localStorage.removeItem("id");
-  localStorage.removeItem("country");
-  localStorage.removeItem("name");
-  localStorage.removeItem("birthday");
-  localStorage.removeItem("year");
+  let dataUser = {
+    function: "signOut",
+  };
+
+  $.ajax({
+    type: "POST",
+    data: dataUser,
+    url: "http://localhost:4000/backoffice/adapters/user.php",
+    success: function (result) {
+      console.log(result);
+      if (result == 200) {
+        location.href = "login.php";
+      }
+    },
+  });
 }
 
 function updateDataUser(id, gender, date, country) {

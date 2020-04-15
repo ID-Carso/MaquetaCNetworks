@@ -2,9 +2,11 @@
 
 session_start();
 
+var_dump(getenv('HTTP_REFERER'));
+if (isset($_SESSION["session"])) {
+  header("Location:" . getenv('HTTP_REFERER'));
+}
 
-$_SESSION['login'] = 1;
-var_dump($_SESSION['login']);
 ?>
 
 <!DOCTYPE html>

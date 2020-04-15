@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 class Console
 {
@@ -44,11 +44,6 @@ class User
         return self::$instance;
     }
 
-    function getAllUsers($json)
-    {
-        $url = "https://jsonplaceholder.typicode.com/posts/1";
-        callAPI("PUT", $url, $json);
-    }
 
     function signIn($data)
     {
@@ -62,10 +57,19 @@ class User
         $response = curl_exec($ch);
         curl_close($ch);
         $result = json_decode($response, true);
-        //var_dump($result["data"]["name"]);
-        $_SESSION["usuario"] = $result["data"]["name"];
+
+        $_SESSION["session"] = 1;
+        $_SESSION["name_user"] = $result["data"]["name"];
+        $_SESSION["id"] = $result["data"]["id"];
+        $_SESSION["rol"] = $result["data"]["rol"]["name"];
 
         echo ($response);
+    }
+
+    function signOut()
+    {
+        session_destroy();
+        echo "200";
     }
 
     function registerUser($name, $email, $password, $version)
@@ -90,21 +94,10 @@ class User
 
 
 if (isset($_POST['function']) && !empty($_POST['function'])) {
-    $funcion = $_POST['function'];
+    $function = $_POST['function'];
 
 
-    switch ($funcion) {
-
-        case 'showNotificaction':
-            if ($_POST["id"] && $_POST["currentTime"] && $_POST["currentDate"]) {
-                $id = $_POST["id"];
-                $currentTime = $_POST["currentTime"];
-                $currentDate = $_POST["currentDate"];
-                $user = User::getUserInstance();
-                $user->showNotification($id, $currentTime, $currentDate);
-            }
-            break;
-
+    switch ($function) {
         case 'signIn':
             if (is_string($_POST['email']) && is_string($_POST['password'])) {
                 $email = $_POST['email'];
@@ -114,6 +107,11 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
                 $user = User::getUserInstance();
                 echo ($user->signIn($dataJson));
             }
+            break;
+
+        case 'signOut':
+            $user = User::getUserInstance();
+            echo ($user->signOut());
             break;
 
         case 'registerUser':
@@ -134,70 +132,6 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             $dataJson = json_encode($data);
             $user = User::getUserInstance();
             echo ($user->updateDataUser($dataJson));
-            break;
-
-        case 'selectAvatar':
-            $dataUser = array("id" => $_POST['id'], "avatar" => $_POST['avatar']);
-            $dataJson = json_encode($dataUser);
-            $users = User::getUserInstance();
-            echo ($users->selectAvatar($dataJson));
-            break;
-
-        case 'sendEmail':
-
-            $data = $_POST['id'];
-            echo ($data);
-            $user = User::getUserInstance();
-            echo ($user->sendEmail($data));
-            break;
-
-        case 'updateAlerts':
-
-            $data = $_POST['data'];
-
-            $dataJson = json_encode($data);
-
-            $user = User::getUserInstance();
-            echo ($user->updateAlerts($dataJson));
-            break;
-
-        case 'addFavorites':
-            if ($_POST["user_id"]) {
-                $userId = $_POST["user_id"];
-                $programId = $_POST["chapter_id"];
-                $data = array("user_id" => $userId, "chapter_id" => $programId);
-                $dataJson = json_encode($data);
-                $user = User::getUserInstance();
-                echo ($user->addFavorites($dataJson));
-                break;
-            }
-
-
-        case 'removeFavorites':
-            $userId = $_POST["user_id"];
-            $programId = $_POST["chapter_id"];
-            $data = array("user_id" => $userId, "chapter_id" => $programId);
-            $dataJson = json_encode($data);
-            $user = User::getUserInstance();
-            echo ($user->removeFavorites($dataJson));
-            break;
-
-        case 'enableNotification':
-            $userId = $_POST["user_id"];
-            $programId = $_POST["chapter_id"];
-            $data = array("user_id" => $userId, "chapter_id" => $programId);
-            $dataJson = json_encode($data);
-            $user = User::getUserInstance();
-            echo ($user->enableNotification($dataJson));
-            break;
-
-        case 'disableNotification':
-            $userId = $_POST["user_id"];
-            $programId = $_POST["chapter_id"];
-            $data = array("user_id" => $userId, "chapter_id" => $programId);
-            $dataJson = json_encode($data);
-            $user = User::getUserInstance();
-            echo ($user->disableNotification($dataJson));
             break;
     }
 }

@@ -111,17 +111,6 @@ function validateUser(inputUser, messageError) {
   }
 }
 
-/*$.ajax({
-  type: "POST",
-  data: user,
-  dataType: "JSON",
-
-  url: "../../adapters/user.php",
-  success: function(result) {
-    console.log(result);
-  }
-});*/
-
 function validateToken(token) {
   console.log(token);
   $.ajax({
