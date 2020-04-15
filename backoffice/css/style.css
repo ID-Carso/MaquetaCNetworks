@@ -118,11 +118,13 @@
   .o-footer-section .aviso-priv-blue {
     margin-bottom: 0px;
   }
+
   .a-header-section-name {
     font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 0;
   }
+
   .a-header-section-name::before {
     content: "";
     height: 10px;
@@ -131,10 +133,12 @@
     position: absolute;
     border-radius: 20px;
   }
+  
   .a-name-user,
   .a-role-text {
     font-size: 15px;
   }
+
   .a-prev-image {
     height: 50px;
     padding-right: 20px;
