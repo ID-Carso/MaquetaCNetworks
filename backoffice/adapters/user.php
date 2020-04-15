@@ -62,7 +62,7 @@ class User
         $_SESSION["name_user"] = $result["data"]["name"];
         $_SESSION["id"] = $result["data"]["id"];
         $_SESSION["rol"] = $result["data"]["rol"]["name"];
-
+        $_SESSION["rol_id"] = $result["data"]["rol"]["id"];
         echo ($response);
     }
 
