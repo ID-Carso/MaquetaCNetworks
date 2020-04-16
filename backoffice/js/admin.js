@@ -221,8 +221,22 @@ $(".histo").hover(function(){
     });
     //fin
 
+//slider, c/flecha
+$('.slider li').hide();
+$('.slider li:first').show(); 
+//para agregar una nueva fila
+$('#agregar').click(function(){
+  agregar();
+});
+
 
 }); 
+   
+function agregar(){
+  var fila=' <div class="contenedor-fila"><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div></div> '
+  $('#tb1').append(fila);
+}
+
    
 
 
