@@ -26,6 +26,7 @@
           </aside>
           <!--fin-->
           <!--Contenido de la tabla-->
+
           <div>Fernando Montes de Oca</div>
           <div>Usuario</div>
           <div>

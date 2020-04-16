@@ -2447,4 +2447,9 @@ option:checked + .roles {
   font-size: 19px;
 }
 
+.disabled-option {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 /*# sourceMappingURL=style.css.map */

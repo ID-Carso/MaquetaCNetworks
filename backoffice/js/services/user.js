@@ -233,6 +233,21 @@ function updateAlerts(configJson) {
   });
 }
 
+function getAllUsersBO() {
+  let dataUser = {
+    function: "getAllUsersBO",
+  };
+
+  $.ajax({
+    type: "POST",
+    data: dataUser,
+    url: "http://localhost:4000/backoffice/adapters/user.php",
+    success: function (result) {
+      console.log(result);
+    },
+  });
+}
+
 export {
   sendUserEmail,
   validateTokenPassword,

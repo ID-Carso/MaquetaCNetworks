@@ -87,6 +87,10 @@ class User
         curl_close($ch);
         echo ($response);
     }
+
+    function getAllUsersBO()
+    {
+    }
 }
 
 
@@ -125,6 +129,13 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             $users->registerUser($name, $email, $password, $rol, $adminId);
 
             break;
+
+        case 'getAllUsersBO':
+            $user = User::getUserInstance();
+            echo ($user->getAllUsersBo());
+            break;
+
+
         case 'updateDataUser':
 
             $data = array("id" => $_POST['id'], "gender" => $_POST['gender'], "birthday" => $_POST['date'], "country" => $_POST['country']);
