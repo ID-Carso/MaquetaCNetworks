@@ -90,6 +90,13 @@ class User
 
     function getAllUsersBO()
     {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, 'http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/admin_user');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $response = curl_exec($ch);
+        $result = json_decode($response, true);
+        curl_close($ch);
+        return $result;
     }
 }
 
@@ -132,7 +139,7 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
 
         case 'getAllUsersBO':
             $user = User::getUserInstance();
-            echo ($user->getAllUsersBo());
+            $result = $user->getAllUsersBo();
             break;
 
 

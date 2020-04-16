@@ -13,10 +13,16 @@ import {
 // import { validateToken } from "./form/form.js";
 
 /* Service User */
-import { signIn, signOut, registerUser } from "./services/user.js";
+import {
+  signIn,
+  signOut,
+  registerUser,
+  getAllUsersBO,
+} from "./services/user.js";
 
 $(document).ready(function () {
   /* GET ALL USERS BACKOFFICE */
+  getAllUsersBO();
 
   /* LOGIN */
   $("#button-login").click(function () {

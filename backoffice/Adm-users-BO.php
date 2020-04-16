@@ -1,3 +1,14 @@
+<?php
+
+
+include './adapters/user.php';
+$user = User::getUserInstance();
+$result = $user->getAllUsersBo();
+$users = $result["data"];
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,60 +37,40 @@
           </aside>
           <!--fin-->
           <!--Contenido de la tabla-->
+          <?php
+          foreach ($users as $user) {
+            $rol = "";
+            switch ($user["rol_id"]) {
+              case '1':
+                $rol = "Administrador";
+                break;
+              case '2':
+                $rol = "Aprobador";
+                break;
+              case '3':
+                $rol = "Editor";
+                break;
+              case '4':
+                $rol = "Visualizador";
+                break;
 
-          <div>Fernando Montes de Oca</div>
-          <div>Usuario</div>
-          <div>
-            <!--Acciones-->
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus  images" id="visual" onClick="verusuarios()"></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editarusuarios()"></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()"></input>
-          </div>
-          <div>Fernando Montes de Oca</div>
-          <div>Administrador</div>
-          <div>
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus images" id="visual" onClick="verusuarios()"></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editarusuarios()"></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()"></input>
-          </div>
-          <div>Fernando Montes de Oca</div>
-          <div>Usuario</div>
-          <div>
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus images" id="visual" onClick="verusuarios()"></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editarusuarios()"></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()" onClick="editarusuarios()"></input>
-          </div>
-          <div>Fernando Montes de Oca</div>
-          <div>Usuario</div>
-          <div>
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus images" id="visual" onClick="verusuarios()"></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editarusuarios()"></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()"></input>
-          </div>
-          <div>Fernando Montes de Oca</div>
-          <div>Usuario</div>
-          <div>
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus images" id="visual" onClick="verusuarios()"></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editarusuarios()"></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()"></input>
+              default:
+                # code...
+                break;
+            }
 
-          </div>
-          <div>Fernando Montes de Oca</div>
-          <div>Usuario</div>
-          <div>
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus images" id="visual" onClick="verusuarios()"></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editarusuarios()"></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()"></input>
-          </div>
-          <div>Fernando Montes de Oca</div>
-          <div>Usuario</div>
-          <div>
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus images" id="visual" onClick="verusuarios()"></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editarusuarios()"></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()"></input>
-
-          </div>
-
+            echo "
+            <div>" . $user["name"] . "</div>
+            <div>" . $rol . "</div>
+            <div>
+              <!--Acciones-->
+              <input type='image' src='./images/ver-acti.svg' class='ml-3 btn-focus  images' id='visual' onClick='verusuarios()'></input>
+              <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images' onClick='editarusuarios()'></input>
+              <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus images' onClick='abrirBorrar()'></input>
+            </div>
+            ";
+          }
+          ?>
         </div>
 
       </div>
