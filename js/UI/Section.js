@@ -239,7 +239,7 @@ export default class Section {
                     </div>
                     <div class="thumbnail-body" _id="${block4Image[i].chapter_id}">
                         <div class="thumbnail-large">
-                            <img src="${block4Image[i].image_horizontal}" alt="">
+                            <img src="${block4Image[i].image_vertical}" alt="">
                         </div>
                     </div>
                 </div>
