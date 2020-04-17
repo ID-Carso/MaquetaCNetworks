@@ -54,7 +54,7 @@
         <div class="justify-content-center">
            <input type="image" src="./images/lapiz-acti.svg" alt="" class="ml-3 btn-focus " ></input>
            <input type="image" src="./images/historial-inac.svg" alt="" class="ml-3 btn-focus " ></input>
-           <input type="image" src="./images/noti-inac.svg" alt="" class="ml-3 btn-focus " ></input></form>
+           <input type="image" src="./images/noti-inac.svg" alt="" class="ml-3 btn-focus " ></input>
         </div>
         <div class="pd-5">CLARO SPORT</div>
         <div class="justify-content-center">
