@@ -60,9 +60,9 @@ $users = $result["data"];
             }
 
             echo "
-            <div>" . $user["name"] . "</div>
-            <div>" . $rol . "</div>
-            <div>
+            <div class="pd-5">" . $user["name"] . "</div>
+            <div class="pd-10">" . $rol . "</div>
+            <div class="justify-content-center">
               <!--Acciones-->
               <input type='image' src='./images/ver-acti.svg' class='ml-3 btn-focus  images' id='visual' onClick='verusuarios()'></input>
               <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images' onClick='editarusuarios()'></input>

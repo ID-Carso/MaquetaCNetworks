@@ -19,20 +19,20 @@
                 </section>
                 <!--Fin-->
                 <!--Contenido-->
-                  <div>Karina Henandez Ramírez</div>
-                       <div>
+                  <div class="pd-5">Karina Henandez Ramírez</div>
+                       <div class="justify-content-center">
                            <input type="image" src="./images/ojito-acti.svg" alt="" class="ml-3 btn-focus images" onClick="verfront()"></input>
                            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images " onClick="editfront()"></input>
                            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images "onClick="abrirBorrar()" ></input>
                        </div>
-                  <div>Juan González Gómez</div>
-                         <div>
+                  <div class="pd-5">Juan González Gómez</div>
+                         <div class="justify-content-center">
                             <input type="image" src="./images/ojito-acti.svg" alt="" class="ml-3 btn-focus images "onClick="verfront()" ></input>
                             <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images " onClick="editfront()"></input>
                             <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()"></input>      
                           </div>
-                    <div>Andrea Camacho Juárez</div>
-                          <div>
+                    <div class="pd-5">Andrea Camacho Juárez</div>
+                          <div class="justify-content-center">
                             <input type="image" src="./images/ojito-acti.svg" alt="" class="ml-3 btn-focus images" onClick="verfront()"></input>
                             <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editfront()" ></input>
                             <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()"></input>    

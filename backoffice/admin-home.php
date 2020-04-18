@@ -20,62 +20,62 @@
         </section>
         <!--Fin-->
         <!--Contenido de la tabla-->
-        <div >PROGRAMACIÓN GENERAL</div>
-        <div>            
+        <div class="pd-5" >PROGRAMACIÓN GENERAL</div>
+        <div class="justify-content-center">            
             <input type="image" src="./images/lapiz-acti.svg" alt="" class="ml-3 btn-focus"></input>                           
             <input type="image" src="./images/historial-inac.svg" alt="" class="ml-3 btn-focus"></input>                        
             <input type="image" src="./images/noti-inac.svg" alt="" class="ml-3 btn-focus"></input>          
         </div>
-        <div>PROGRAMACIÓN</div>
-        <div>
+        <div class="pd-5">PROGRAMACIÓN</div>
+        <div class="justify-content-center">
             <input type="image" src="./images/lapiz-acti.svg" alt="" class="ml-3 btn-focus " ></input>
             <input type="image" src="./images/historial-inac.svg" alt="" class="ml-3 btn-focus " ></input>
             <input type="image" src="./images/noti-inac.svg" alt="" class="ml-3 btn-focus " ></input>
         </div>      
-        <div>HOME</div>
-        <div>
+        <div class="pd-5">HOME</div>
+        <div class="justify-content-center">
             <input type="image" src="./images/lapiz-acti.svg" alt="" class="ml-3 btn-focus " ></input>
             <input type="image" src="./images/historial-inac.svg" alt="" class="ml-3 btn-focus " ></input>
             <input type="image" src="./images/noti-inac.svg" alt="" class="ml-3 btn-focus " ></input>
          </div>       
-        <div>CANAL CLARO</div>
-          <div>
+        <div class="pd-5">CANAL CLARO</div>
+          <div class="justify-content-center">
            <input type="image" src="./images/lapiz-acti.svg" alt="" class="ml-3 btn-focus " ></input>
            <input type="image" src="./images/historial-inac.svg" alt="" class="ml-3 btn-focus " ></input>
            <input type="image" src="./images/noti-inac.svg" alt="" class="ml-3 btn-focus " ></input>
         </div>
-        <div>CONCERT CHANNEL</div>
-         <div>
+        <div class="pd-5">CONCERT CHANNEL</div>
+         <div class="justify-content-center">
             <input type="image" src="./images/lapiz-acti.svg" alt="" class="ml-3 btn-focus " ></input>
             <input type="image" src="./images/historial-inac.svg" alt="" class="ml-3 btn-focus " ></input>
             <input type="image" src="./images/noti-inac.svg" alt="" class="ml-3 btn-focus " ></input>
         </div>
-        <div>CLARO CINEMA</div>
-        <div>
+        <div class="pd-5">CLARO CINEMA</div>
+        <div class="justify-content-center">
            <input type="image" src="./images/lapiz-acti.svg" alt="" class="ml-3 btn-focus " ></input>
            <input type="image" src="./images/historial-inac.svg" alt="" class="ml-3 btn-focus " ></input>
-           <input type="image" src="./images/noti-inac.svg" alt="" class="ml-3 btn-focus " ></input></form>
+           <input type="image" src="./images/noti-inac.svg" alt="" class="ml-3 btn-focus " ></input>
         </div>
-        <div>CLARO SPORT</div>
-        <div>
+        <div class="pd-5">CLARO SPORT</div>
+        <div class="justify-content-center">
             <input type="image" src="./images/lapiz-no.svg" alt="" class="ml-3 btn-focus " ></input>
             <input type="image" src="./images/historial-no.svg" alt="" class="ml-3 btn-focus " ></input>
             <input type="image" src="./images/noti-no.svg" alt="" class="ml-3 btn-focus " ></input>
         </div>
-        <div>NUESTRA VISIÓN</div>
-        <div>
+        <div class="pd-5">NUESTRA VISIÓN</div>
+        <div class="justify-content-center">
            <input type="image" src="./images/lapiz-no.svg" alt="" class="ml-3 btn-focus " ></input>
            <input type="image" src="./images/historial-no.svg"alt="" class="ml-3 btn-focus " ></input>
            <input type="image" src="./images/noti-no.svg" alt="" class="ml-3 btn-focus " ></input>
         </div>
-        <div>FOOTER</div>
-        <div>
+        <div class="pd-5">FOOTER</div>
+        <div class="justify-content-center">
           <input type="image" src="./images/lapiz-acti.svg" alt="" class="ml-3 btn-focus " ></input>
           <input type="image" src="./images/historial-inac.svg" alt="" class="ml-3 btn-focus " ></input>
           <input type="image" src="./images/noti-inac.svg" alt="" class="ml-3 btn-focus " ></input>
         </div>
-        <div>SINÓPSIS</div> 
-        <div>
+        <div class="pd-5">SINÓPSIS</div> 
+        <div class="justify-content-center">
             <input type="image" src="./images/lapiz-acti.svg" alt="" class="ml-3 btn-focus " ></input>
             <input type="image" src="./images/historial-inac.svg" alt="" class="ml-3 btn-focus " ></input>
             <input type="image" src="./images/noti-inac.svg" alt="" class="ml-3 btn-focus " ></input>
