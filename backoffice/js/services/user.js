@@ -244,7 +244,6 @@ function getAllUsersBO() {
     url: "http://localhost:4000/backoffice/adapters/user.php",
     success: function (result) {
       console.log(result);
-      let json = JSON.parse(result);
     },
   });
 }
