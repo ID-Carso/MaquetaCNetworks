@@ -11,7 +11,7 @@ session_start();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="./js/main.js" type="module" defer></script>
-  <script src="./js/admin.js" defer></script>
+
 
   <title>Claro Networks</title>
 </head>

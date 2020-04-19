@@ -3,7 +3,7 @@ session_start();
 
 
 if (!isset($_SESSION["session"])) {
-  header('Location: http://localhost:4000/backoffice/login.php');
+  header('Location: login.php');
 }
 ?>
 
@@ -19,7 +19,7 @@ if (!isset($_SESSION["session"])) {
   include
     'styles.php';
   ?>
-  <script src="./js/admin.js" type="module" defer></script>
+
 
 </head>
 
@@ -43,7 +43,7 @@ if (!isset($_SESSION["session"])) {
         if ($_SESSION['rol_id'] == 1) {
           echo "        
             <li class='nav-item'>
-              <button class='  buttonall btn-nav ml-xl-4 pr-2 pl-2 ' type='button' id='btn-nav' rel='Adm-users-BO' onClick='muestra2()'>Administrar usuario BO</button>
+              <button class='admin-users-section  buttonall btn-nav ml-xl-4 pr-2 pl-2 ' type='button' id='btn-nav' rel='Adm-users-BO'>Administrar usuario BO</button>
             </li>
             <li class='nav-item'>
               <button class='  buttonall btn-nav ml-xl-4 pr-1 pl-1 ' type='button' id='btn-nav' rel='Admin-users-Front' onClick='muestra3()'>Administrar usuarios Front</button>

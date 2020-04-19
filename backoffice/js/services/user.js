@@ -1,3 +1,4 @@
+import { closeViewAdminBO } from "../UI/UI.js";
 function validateTokenPassword(tokenPassword) {
   $.ajax({
     type: "GET",
@@ -81,7 +82,7 @@ function signIn(email, password) {
   $.ajax({
     type: "POST",
     data: dataUser,
-    url: "http://localhost:4000/backoffice/adapters/user.php",
+    url: "./adapters/user.php",
     success: function (result) {
       console.log(result);
       let json = JSON.parse(result);
@@ -106,7 +107,7 @@ function signOut() {
   $.ajax({
     type: "POST",
     data: dataUser,
-    url: "http://localhost:4000/backoffice/adapters/user.php",
+    url: "./adapters/user.php",
     success: function (result) {
       console.log(result);
       if (result == 200) {
@@ -148,23 +149,6 @@ function updateDataUser(id, gender, date, country) {
   });
 }
 
-function sendEmail(id) {
-  let dataUser = {
-    function: "sendEmail",
-    id: id,
-  };
-
-  $.ajax({
-    type: "POST",
-    data: dataUser,
-    url: "../../adapters/user.php",
-    success: function (result) {
-      console.log(result);
-      console.log("email enviado");
-    },
-  });
-}
-
 function registerUser(name, email, password, rol) {
   let user = {
     function: "registerUser",
@@ -177,9 +161,10 @@ function registerUser(name, email, password, rol) {
   $.ajax({
     type: "POST",
     data: user,
-    url: "http://localhost:4000/backoffice/adapters/user.php",
+    url: "./adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
+      console.log(result);
       if (json.code == 200) {
         $(".modal-newuser-bo").modal("show");
       }
@@ -195,7 +180,7 @@ function getAllUsersBO() {
   $.ajax({
     type: "POST",
     data: dataUser,
-    url: "http://localhost:4000/backoffice/adapters/user.php",
+    url: "./adapters/user.php",
     success: function (result) {
       console.log(result);
     },
@@ -214,8 +199,11 @@ function getUser(id) {
     url: "./adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
+      console.log(json);
       if (json.code == 200) {
-        $("#cambio").load("Visual-front.php");
+        $("#cambio").load("VisualUser.php", function () {
+          closeViewAdminBO();
+        });
       }
     },
   });

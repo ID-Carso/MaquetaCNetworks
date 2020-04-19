@@ -1,6 +1,9 @@
 import { previewPage } from "./preview/prev.js";
 import { showContentNav } from "./nav/nav.js";
 
+//UI
+import { showPageUsersBO, showUserBO, showFormCreateUser } from "./UI/UI.js";
+
 import {
   validateNewPassword,
   validateKeyUpEmail,
@@ -25,11 +28,8 @@ $(document).ready(function () {
   /* GET ALL USERS BACKOFFICE */
   getAllUsersBO();
 
-  /* GET USER BACKOFFICE */
-  $(document).on("click", ".view-user-icon", function () {
-    let id = $(this).parent().attr("_id");
-    getUser(id);
-  });
+  //GET USER BACKOFFICE
+  showUserBO();
 
   /* LOGIN */
   $("#button-login").click(function () {
@@ -68,6 +68,15 @@ $(document).ready(function () {
     registerUser(username, email, password, rol);
   });
 
+  /* 2.- UI  */
+
+  /* Show the form to create a new user */
+  showFormCreateUser();
+
+  $(".admin-users-section").click(function () {
+    showPageUsersBO();
+  });
+
   /* Previsualizar contenido en diferentes tamaños */
   const prevImage = $(".a-prev-image");
 
@@ -88,6 +97,8 @@ $(document).ready(function () {
     showContentNav(adminContent, $(this), adminNavItem, activeClass);
   });
   /* End Navigation*/
+  /* END UI */
+
   /*login*/
   const inputPassword1 = $("#signup-password");
   const caracteresMin1 = $(".caracteres-min");

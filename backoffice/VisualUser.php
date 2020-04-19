@@ -4,9 +4,8 @@
 <head>
     <?php
     include 'styles.php';
-    include 'scripts.php';
     ?>
-    <script src="./js/admin.js" defer></script>
+
 </head>
 
 <body class="scroll">
@@ -14,7 +13,7 @@
     <div id="usuarios">
         <div class=" col-xl-6 mx-auto texto-general " id="visual">
             <div class="container shadow tamaño ">
-                <img src="./images/equis.svg" alt="" class="equis1" onClick="muestra2()">
+                <img src="./images/equis.svg" alt="" class="equis1 closeViewBO">
                 <div class="w3-card-4 bg-white ">
                     <div class="w3-container ml-3 pt-5 pl-4"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
                     <div class=" col-xl-12 mx-auto mt-xl-3 mb-xl-2 pl-5 pr-5 ">

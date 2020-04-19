@@ -1,4 +1,5 @@
 //mostrar las acciones de los roles
+
 function cambiaracti($roles) {
   switch ($roles) {
     case 1:
@@ -34,26 +35,17 @@ function muestra1() {
   $("#Admin-home-BO").replaceWith();
   $("#cambio").load("admin-home.php");
 }
-function muestra2() {
-  $("#segunda").replaceWith();
-  $("#cambio").load("Adm-users-BO.php", function () {});
-}
+
 function muestra3() {
   $("#Admin-users-Front").replaceWith();
   $("#cambio").load("Admin-users-front.php");
 }
-function muestraAlta() {
-  $("#general").replaceWith();
-  $("#cambio").load("Alta.php");
-}
+
 function verusuarios() {
   $("#usuarios").replaceWith();
   $("#cambio").load("VisualUser.php");
 }
-function editarusuarios() {
-  $("#editar").replaceWith();
-  $("#cambio").load("Editusers.php");
-}
+function editarusuarios() {}
 function verfront() {
   $("#visual-front").replaceWith();
   $("#cambio").load("Visual-front.php");

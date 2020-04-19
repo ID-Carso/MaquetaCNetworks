@@ -1,20 +1,18 @@
 <?php
 
-
 include './adapters/user.php';
 $user = User::getUserInstance();
 $result = $user->getAllUsersBo();
 $users = $result["data"];
 
-
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+<script src="./js/main.js" type="module"></script>
 
 <head>
-  <script src="./js/main.js" type="module" defer></script>
-  <script src="./js/admin.js" type="module" defer></script>
+
 </head>
 
 <body>
@@ -22,7 +20,7 @@ $users = $result["data"];
     <!--div para el cambio-->
     <div id="Adm-users-BO">
       <div class="col-xl-10 position-btn-alta">
-        <button class="btn-alta mb-4" id="btnAlta" onClick="muestraAlta()">Agregar nuevo usuario</button>
+        <button class="btn-alta mb-4" id="btnAlta">Agregar nuevo usuario</button>
       </div>
       <div class="sombras2">
         <!--titulos de la tabla-->
@@ -66,7 +64,7 @@ $users = $result["data"];
             <div class='justify-content-center' _id=" . $user["id"] . ">
               <!--Acciones-->
               <input type='image' src='./images/ver-acti.svg' class='ml-3 btn-focus view-user-icon images' id='visual'></input>
-              <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images' onClick='editarusuarios()'></input>
+              <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images edit-user-icon'></input>
               <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus images' onClick='abrirBorrar()'></input>
             </div>
             ";
