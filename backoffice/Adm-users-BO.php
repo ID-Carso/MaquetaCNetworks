@@ -13,7 +13,8 @@ $users = $result["data"];
 <html lang="en">
 
 <head>
-  <script src="./js/admin.js" defer></script>
+  <script src="./js/main.js" type="module" defer></script>
+  <script src="./js/admin.js" type="module" defer></script>
 </head>
 
 <body>
@@ -60,11 +61,11 @@ $users = $result["data"];
             }
 
             echo "
-            <div class="pd-5">" . $user["name"] . "</div>
-            <div class="pd-10">" . $rol . "</div>
-            <div class="justify-content-center">
+            <div class='pd-5'>" . $user["name"] . "</div>
+            <div class0'pd-10'>" . $rol . "</div>
+            <div class='justify-content-center' _id=" . $user["id"] . ">
               <!--Acciones-->
-              <input type='image' src='./images/ver-acti.svg' class='ml-3 btn-focus  images' id='visual' onClick='verusuarios()'></input>
+              <input type='image' src='./images/ver-acti.svg' class='ml-3 btn-focus view-user-icon images' id='visual'></input>
               <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images' onClick='editarusuarios()'></input>
               <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus images' onClick='abrirBorrar()'></input>
             </div>

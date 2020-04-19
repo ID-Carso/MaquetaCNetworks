@@ -19,7 +19,7 @@ if (!isset($_SESSION["session"])) {
   include
     'styles.php';
   ?>
-  <script src="./js/admin.js" defer></script>
+  <script src="./js/admin.js" type="module" defer></script>
 
 </head>
 

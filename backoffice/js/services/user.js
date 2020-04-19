@@ -165,34 +165,6 @@ function sendEmail(id) {
   });
 }
 
-function selectAvatar(id, src) {
-  let dataUser = {
-    function: "selectAvatar",
-    id: id,
-    avatar: src,
-  };
-
-  console.log(src);
-
-  $.ajax({
-    type: "POST",
-    data: dataUser,
-    url: "../../adapters/user.php",
-    success: function (result) {
-      let json = JSON.parse(result);
-      console.log(dataUser);
-      localStorage.setItem("avatar", json.data.avatar);
-      $("#image-user-container").html(`
-      <div class="image-user">
-        <img src="${json.data.avatar}" />
-      </div>
-      `);
-      let modal = $("#mensaje");
-      modal.modal("show");
-    },
-  });
-}
-
 function registerUser(name, email, password, rol) {
   let user = {
     function: "registerUser",
@@ -215,24 +187,6 @@ function registerUser(name, email, password, rol) {
   });
 }
 
-function updateAlerts(configJson) {
-  let dataUser = {
-    function: "updateAlerts",
-    data: configJson,
-  };
-
-  $.ajax({
-    type: "POST",
-    data: dataUser,
-    url: "../../adapters/user.php",
-    success: function (result) {
-      console.log(result);
-      let modal = $("#mensaje");
-      modal.modal("show");
-    },
-  });
-}
-
 function getAllUsersBO() {
   let dataUser = {
     function: "getAllUsersBO",
@@ -248,6 +202,25 @@ function getAllUsersBO() {
   });
 }
 
+function getUser(id) {
+  let data = {
+    function: "getUser",
+    id: id,
+  };
+
+  $.ajax({
+    type: "POST",
+    data: data,
+    url: "./adapters/user.php",
+    success: function (result) {
+      let json = JSON.parse(result);
+      if (json.code == 200) {
+        $("#cambio").load("Visual-front.php");
+      }
+    },
+  });
+}
+
 export {
   sendUserEmail,
   validateTokenPassword,
@@ -255,8 +228,7 @@ export {
   signIn,
   signOut,
   updateDataUser,
-  selectAvatar,
   registerUser,
-  updateAlerts,
   getAllUsersBO,
+  getUser,
 };

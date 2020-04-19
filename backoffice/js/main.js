@@ -18,11 +18,18 @@ import {
   signOut,
   registerUser,
   getAllUsersBO,
+  getUser,
 } from "./services/user.js";
 
 $(document).ready(function () {
   /* GET ALL USERS BACKOFFICE */
   getAllUsersBO();
+
+  /* GET USER BACKOFFICE */
+  $(document).on("click", ".view-user-icon", function () {
+    let id = $(this).parent().attr("_id");
+    getUser(id);
+  });
 
   /* LOGIN */
   $("#button-login").click(function () {
