@@ -19,10 +19,10 @@
                     <div class="w3-container ml-3 pt-5 pl-4"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
                     <div class=" col-xl-12 mx-auto mt-xl-3 mb-xl-2 pl-5 pr-5 ">
                         <form>
-                            <input class="insert-data pb-2 pt-2 " type="text " value="" placeholder=" Fernando Montes de Oca" disabled></input>
-                            <input class="insert-data  input-email  mt-4 pt-2 pb-2" type="text " value="" placeholder=" fer.moca@gmail.com" disabled></input>
-                            <input class="insert-data input-password mt-4 pt-2 pb-2" type="password" id="login-password" name="login-password" placeholder=" ***************" autocomplete="off">
-
+                         <div><p  class="insert-data pb-2 pt-2 ">Fernando Montes de Oca</p></div>
+                    <div><p class="insert-data  input-email  mt-4 pt-2 pb-2">fer.moca@gmail.com</p></div></input>
+                    <div><p class="insert-data input-password mt-4 pt-2 pb-2" type="password" id="login-password" name="login-password" autocomplete="off">***********</p></div>
+                    
                             </input>
 
                             <p class="mt-4 ml-2">Rol de usuario</p>
