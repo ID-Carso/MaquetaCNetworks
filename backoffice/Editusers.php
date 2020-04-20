@@ -37,11 +37,11 @@ session_start();
           </div>
           <div class=" justify-content-center mx-auto">
             <p class="p-4 mb-4 mt-4  border-rol">Rol
-              <div class="alineacion">
-                <button type="button" class=" btn-rol-all-edit  btn-rol-edit  enviamos ml-5 btn-rol-select-edit " id="btn-rol" rel='User-Raiz' onClick="cambiaracti(1)">Usuario Raíz </button>
-                <button type="button" class=" btn-rol-all-edit btn-rol-edit py-xl-2 ml-1 enviamos" rel='User-Edit' id="btn-rol" onClick="cambiaracti(2)">Usuario Editor</button>
-                <button type="button" class=" btn-rol-all-edit btn-rol-edit py-xl-2 ml-2 enviamos2" rel='User-Apro' id="btn-rol" onClick="cambiaracti(3)">Usuario Aprobador</button>
-                <button type="button" class=" btn-rol-all-edit  btn-rol-edit py-xl-2  ml-2 enviamos2" rel='User-Visua' id="btn-rol" onClick="cambiaracti(4)">Usuario Visualizador</button>
+              <div class="alineacion buttons-rol-container">
+                <button type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit enviamos ml-5 btn-rol-select-edit" id_button="1" rel='User-Raiz'>Usuario Raíz </button>
+                <button type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit py-xl-2 ml-1 enviamos" rel='User-Edit' id_button="3">Usuario Editor</button>
+                <button type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit py-xl-2 ml-2 enviamos2" rel='User-Apro' id_button="2">Usuario Aprobador</button>
+                <button type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit py-xl-2  ml-2 enviamos2" rel='User-Visua' id_button="4">Usuario Visualizador</button>
               </div>
             </p>
           </div>

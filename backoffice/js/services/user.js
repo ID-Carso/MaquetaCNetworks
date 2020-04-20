@@ -1,4 +1,4 @@
-import { closeViewAdminBO } from "../UI/UI.js";
+import { closeViewAdminBO, changeNameRol } from "../UI/UI.js";
 function validateTokenPassword(tokenPassword) {
   $.ajax({
     type: "GET",
@@ -202,6 +202,10 @@ function getUser(id) {
       console.log(json);
       if (json.code == 200) {
         $("#cambio").load("VisualUser.php", function () {
+          $(".show-username").text(json.data.name);
+          $(".show-email").text(json.data.email);
+          let rol = changeNameRol(json.data.rol.id);
+          $(".show-rol").text(rol);
           closeViewAdminBO();
         });
       }

@@ -21,7 +21,7 @@ session_start();
     <!--Div para cambio-->
     <div class="col-xl-6 mx-auto title-altauser tamaño-alta1">
       <!--Inicio para tarjeta-->
-      <img src="./images/equis.svg" alt="" class="equis" onClick="cerrarequis()" />
+      <img src="./images/equis.svg" alt="" class="equis closeViewBO" />
       <div class="pr-4 pl-4 pt-2 pb-2"><strong> DATOS DEL USUARIO</strong></div>
     </div>
     <div class="col-xl-6  shadow mx-auto tamaño-alta">
@@ -46,10 +46,10 @@ session_start();
             <p class="p-4 mb-4 mt-4  border-rol Correo-electrnico ">Rol
               <!--recuadro rol-->
               <div class="alineacion">
-                <button type="button" class="btn-rol-all  btn-rol px-xl-0 enviamos ml-5 btn-rol-select" rel='User-Raiz' onClick="cambiaracti(1)" id_rol="1">Usuario Raíz</button>
-                <button type="button" id_rol="2" class=" btn-rol-all btn-rol px-xl-1 enviamos" rel='User-Edit' onClick="cambiaracti(2)">Usuario Editor</button>
-                <button type="button" id_rol="3" class=" btn-rol-all btn-rol px-xl-0 enviamos" rel='User-Apro' onClick="cambiaracti(3)">Usuario Aprobador</button>
-                <button type="button" id_rol="4" class=" btn-rol-all  btn-rol px-xl-0 enviamos2" rel='User-Visua' onClick="cambiaracti(4)">Usuario Visualizador</button>
+                <button type="button" class="button-rol bt-rol-register btn-rol-all  btn-rol px-xl-0 enviamos ml-5 btn-rol-select" rel='User-Raiz' id_rol="1" id_button="1">Usuario Raíz</button>
+                <button type="button" id_rol="2" class="button-rol bt-rol-register btn-rol-all btn-rol px-xl-1 enviamos" rel='User-Edit' id_button="3">Usuario Editor</button>
+                <button type="button" id_rol="3" class="button-rol bt-rol-register btn-rol-all btn-rol px-xl-0 enviamos" rel='User-Apro' id_button="2">Usuario Aprobador</button>
+                <button type="button" id_rol="4" class="button-rol bt-rol-register btn-rol-all btn-rol px-xl-0 enviamos2" rel='User-Visua' id_button="4">Usuario Visualizador</button>
               </div>
             </p>
           </div>

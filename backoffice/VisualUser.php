@@ -19,10 +19,10 @@
                     <div class=" col-xl-12 mx-auto mt-xl-3 mb-xl-2 pl-5 pr-5 ">
                         <form>
                             <div>
-                                <p class="insert-data pb-2 pt-2 ">Fernando Montes de Oca</p>
+                                <p class="insert-data pb-2 pt-2 show-username"></p>
                             </div>
                             <div>
-                                <p class="insert-data  input-email  mt-4 pt-2 pb-2">fer.moca@gmail.com</p>
+                                <p class="insert-data  input-email  mt-4 pt-2 pb-2 show-email"></p>
                             </div></input>
                             <div>
                                 <p class="insert-data input-password mt-4 pt-2 pb-2" type="password" id="login-password" name="login-password" autocomplete="off">***********</p>
@@ -31,8 +31,7 @@
                             </input>
 
                             <p class="mt-4 ml-2">Rol de usuario</p>
-                            <button type="button" class=" btn-succes mb-4" id="login-button">
-                                Aprobador
+                            <button type="button" class=" btn-succes mb-4 show-rol" id="login-button">
                             </button>
                         </form>
                         <br>

@@ -1,34 +1,77 @@
 //mostrar las acciones de los roles
-
-function cambiaracti($roles) {
-  switch ($roles) {
-    case 1:
-      $("#User-Raiz").attr("hidden", false);
-      $("#User-Edit").attr("hidden", true);
-      $("#User-Apro").attr("hidden", true);
-      $("#User-Visua").attr("hidden", true);
-
-      break;
-    case 2:
-      $("#User-Raiz").attr("hidden", true);
-      $("#User-Edit").attr("hidden", false);
-      $("#User-Apro").attr("hidden", true);
-      $("#User-Visua").attr("hidden", true);
-      break;
-    case 3:
-      $("#User-Raiz").attr("hidden", true);
-      $("#User-Edit").attr("hidden", true);
-      $("#User-Apro").attr("hidden", false);
-      $("#User-Visua").attr("hidden", true);
-      break;
-    case 4:
-      $("#User-Raiz").attr("hidden", true);
-      $("#User-Edit").attr("hidden", true);
-      $("#User-Apro").attr("hidden", true);
-      $("#User-Visua").attr("hidden", false);
-      break;
+$(".histo").hover(
+  function () {
+    $(".histori").css("display", "block");
+  },
+  function () {
+    $(".histori").css("display", "none");
   }
-} //fin
+);
+$(".editar").hover(
+  function () {
+    $(".edit").css("display", "block");
+  },
+  function () {
+    $(".edit").css("display", "none");
+  }
+);
+$(".notify").hover(
+  function () {
+    $(".noti").css("display", "block");
+  },
+  function () {
+    $(".noti").css("display", "none");
+  }
+);
+$(".ver").hover(
+  function () {
+    $(".veri").css("display", "block");
+  },
+  function () {
+    $(".veri").css("display", "none");
+  }
+);
+$(".edi").hover(
+  function () {
+    $(".edita").css("display", "block");
+  },
+  function () {
+    $(".edita").css("display", "none");
+  }
+);
+$(".borrar").hover(
+  function () {
+    $(".borra").css("display", "block");
+  },
+  function () {
+    $(".borra").css("display", "none");
+  }
+);
+$(".ver").hover(
+  function () {
+    $(".veri1").css("display", "block");
+  },
+  function () {
+    $(".veri1").css("display", "none");
+  }
+);
+$(".edi").hover(
+  function () {
+    $(".edita1").css("display", "block");
+  },
+  function () {
+    $(".edita1").css("display", "none");
+  }
+);
+$(".borrar").hover(
+  function () {
+    $(".borra1").css("display", "block");
+  },
+  function () {
+    $(".borra1").css("display", "none");
+  }
+); //fin
+//fin
 //Remplazar vistas
 
 function muestra1() {
@@ -98,86 +141,10 @@ $(document).ready(function () {
     $("button[id=btn-rol]").removeClass("btn-rol");
     $(this).addClass("btn-rol-select");
   });
-  $(".btn-rol-all-edit").click(function () {
-    $("button[id=btn-rol]").removeClass("btn-rol-select-edit");
-    $(this).addClass("btn-rol-edit");
-    $("button[id=btn-rol]").removeClass("btn-rol-edit");
-    $(this).addClass("btn-rol-select-edit");
-  });
+
   //fin
   //descripción de acciones
-  $(".histo").hover(
-    function () {
-      $(".histori").css("display", "block");
-    },
-    function () {
-      $(".histori").css("display", "none");
-    }
-  );
-  $(".editar").hover(
-    function () {
-      $(".edit").css("display", "block");
-    },
-    function () {
-      $(".edit").css("display", "none");
-    }
-  );
-  $(".notify").hover(
-    function () {
-      $(".noti").css("display", "block");
-    },
-    function () {
-      $(".noti").css("display", "none");
-    }
-  );
-  $(".ver").hover(
-    function () {
-      $(".veri").css("display", "block");
-    },
-    function () {
-      $(".veri").css("display", "none");
-    }
-  );
-  $(".edi").hover(
-    function () {
-      $(".edita").css("display", "block");
-    },
-    function () {
-      $(".edita").css("display", "none");
-    }
-  );
-  $(".borrar").hover(
-    function () {
-      $(".borra").css("display", "block");
-    },
-    function () {
-      $(".borra").css("display", "none");
-    }
-  );
-  $(".ver").hover(
-    function () {
-      $(".veri1").css("display", "block");
-    },
-    function () {
-      $(".veri1").css("display", "none");
-    }
-  );
-  $(".edi").hover(
-    function () {
-      $(".edita1").css("display", "block");
-    },
-    function () {
-      $(".edita1").css("display", "none");
-    }
-  );
-  $(".borrar").hover(
-    function () {
-      $(".borra1").css("display", "block");
-    },
-    function () {
-      $(".borra1").css("display", "none");
-    }
-  ); //fin
+
   //seleccion de día,mes,año,bandera
   $(".option").click(function () {
     var value = $(this).attr("value");

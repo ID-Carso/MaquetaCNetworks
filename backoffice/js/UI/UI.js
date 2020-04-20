@@ -10,12 +10,62 @@ function closeViewAdminBO() {
   });
 }
 
+function cambiaracti(roles) {
+  switch (roles) {
+    case "1":
+      $("#User-Raiz").attr("hidden", false);
+      $("#User-Edit").attr("hidden", true);
+      $("#User-Apro").attr("hidden", true);
+      $("#User-Visua").attr("hidden", true);
+
+      break;
+    case "2":
+      $("#User-Raiz").attr("hidden", true);
+      $("#User-Edit").attr("hidden", false);
+      $("#User-Apro").attr("hidden", true);
+      $("#User-Visua").attr("hidden", true);
+      break;
+    case "3":
+      $("#User-Raiz").attr("hidden", true);
+      $("#User-Edit").attr("hidden", true);
+      $("#User-Apro").attr("hidden", false);
+      $("#User-Visua").attr("hidden", true);
+      break;
+    case "4":
+      $("#User-Raiz").attr("hidden", true);
+      $("#User-Edit").attr("hidden", true);
+      $("#User-Apro").attr("hidden", true);
+      $("#User-Visua").attr("hidden", false);
+      break;
+  }
+}
+
+function changeImagesRolPermissions() {
+  $(".button-rol").click(function () {
+    let idButton = $(this).attr("id_button");
+    console.log(idButton);
+    cambiaracti(idButton);
+  });
+}
+
 function showFormEditUserBO() {
   $(".edit-user-icon").click(function () {
     $("#editar").replaceWith();
     $("#cambio").load("Editusers.php", function () {
+      changeActiveRolGreenButton();
       closeViewAdminBO();
+      changeImagesRolPermissions();
     });
+  });
+}
+
+function changeActiveRolGreenButton() {
+  let buttonsRol = $(".btn-rol-edit");
+  $(".btn-rol-all-edit").click(function () {
+    buttonsRol.removeClass("btn-rol-select-edit");
+    $(this).addClass("btn-rol-edit");
+    buttonsRol.removeClass("btn-rol-edit");
+    $(this).addClass("btn-rol-select-edit");
   });
 }
 
@@ -38,12 +88,88 @@ function showUserBO() {
   });
 }
 
+function showDescriptions() {
+  $(".histo").hover(
+    function () {
+      $(".histori").css("display", "block");
+    },
+    function () {
+      $(".histori").css("display", "none");
+    }
+  );
+  $(".editar").hover(
+    function () {
+      $(".edit").css("display", "block");
+    },
+    function () {
+      $(".edit").css("display", "none");
+    }
+  );
+  $(".notify").hover(
+    function () {
+      $(".noti").css("display", "block");
+    },
+    function () {
+      $(".noti").css("display", "none");
+    }
+  );
+  $(".ver").hover(
+    function () {
+      $(".veri").css("display", "block");
+    },
+    function () {
+      $(".veri").css("display", "none");
+    }
+  );
+  $(".edi").hover(
+    function () {
+      $(".edita").css("display", "block");
+    },
+    function () {
+      $(".edita").css("display", "none");
+    }
+  );
+  $(".borrar").hover(
+    function () {
+      $(".borra").css("display", "block");
+    },
+    function () {
+      $(".borra").css("display", "none");
+    }
+  );
+  $(".ver").hover(
+    function () {
+      $(".veri1").css("display", "block");
+    },
+    function () {
+      $(".veri1").css("display", "none");
+    }
+  );
+  $(".edi").hover(
+    function () {
+      $(".edita1").css("display", "block");
+    },
+    function () {
+      $(".edita1").css("display", "none");
+    }
+  );
+  $(".borrar").hover(
+    function () {
+      $(".borra1").css("display", "block");
+    },
+    function () {
+      $(".borra1").css("display", "none");
+    }
+  ); //fin
+}
+
 function showPageUsersBO() {
   $("#segunda").replaceWith();
   $("#cambio").load("Adm-users-BO.php", function () {
     showUserBO();
     showFormCreateUser();
     showFormEditUserBO();
+    showDescriptions();
   });
 }
 
@@ -52,8 +178,49 @@ function showFormCreateUser() {
     $("#general").replaceWith();
     $("#cambio").load("Alta.php", function () {
       createClickButtonRegisterUser();
+      changeActiveBlackButton();
+      changeImagesRolPermissions();
+      closeViewAdminBO();
     });
   });
 }
 
-export { showPageUsersBO, showUserBO, showFormCreateUser, closeViewAdminBO };
+function changeActiveBlackButton() {
+  let buttonsRolRegister = $(".bt-rol-register");
+  $(".btn-rol-all").click(function () {
+    buttonsRolRegister.removeClass("btn-rol-select");
+    $(this).addClass("btn-rol");
+    buttonsRolRegister.removeClass("btn-rol");
+    $(this).addClass("btn-rol-select");
+  });
+}
+
+function changeNameRol(id) {
+  let rol = "";
+  switch (id) {
+    case 1:
+      rol = "Administrador";
+      break;
+    case 2:
+      rol = "Aprobador";
+      break;
+    case 3:
+      rol = "Editor";
+      break;
+    case 4:
+      rol = "Visualizador";
+      break;
+
+    default:
+      break;
+  }
+  return rol;
+}
+
+export {
+  showPageUsersBO,
+  showUserBO,
+  showFormCreateUser,
+  closeViewAdminBO,
+  changeNameRol,
+};
