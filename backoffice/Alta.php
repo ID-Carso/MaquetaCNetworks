@@ -47,8 +47,8 @@ session_start();
               <!--recuadro rol-->
               <div class="alineacion">
                 <button type="button" class="button-rol bt-rol-register btn-rol-all  btn-rol px-xl-0 enviamos ml-5 btn-rol-select" rel='User-Raiz' id_rol="1" id_button="1">Usuario Raíz</button>
-                <button type="button" id_rol="2" class="button-rol bt-rol-register btn-rol-all btn-rol px-xl-1 enviamos" rel='User-Edit' id_button="3">Usuario Editor</button>
-                <button type="button" id_rol="3" class="button-rol bt-rol-register btn-rol-all btn-rol px-xl-0 enviamos" rel='User-Apro' id_button="2">Usuario Aprobador</button>
+                <button type="button" id_rol="3" class="button-rol bt-rol-register btn-rol-all btn-rol px-xl-1 enviamos" rel='User-Edit' id_button="2">Usuario Editor</button>
+                <button type="button" id_rol="2" class="button-rol bt-rol-register btn-rol-all btn-rol px-xl-0 enviamos" rel='User-Apro' id_button="3">Usuario Aprobador</button>
                 <button type="button" id_rol="4" class="button-rol bt-rol-register btn-rol-all btn-rol px-xl-0 enviamos2" rel='User-Visua' id_button="4">Usuario Visualizador</button>
               </div>
             </p>
@@ -167,15 +167,14 @@ session_start();
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content modal-regis-listo ">
           <div class="modal-body ">
-            <span class="modal-regis-text">Felipe López</span>
+            <span class="modal-regis-text modal-register-username"></span>
             <p class="modal-regis-text1 pt-4">Se ha registrado con los siguientes privilegios:</p>
           </div>
-          <div class=" pb-4 align-item-center centro  text-rol">
-            <img src="./images/ojo-naranja.svg" alt="" class=" pl-3 mr-2">Visualizar cambios
-            <img src="./images/coment-naranja.svg" alt="" class="pl-3 mr-2">Hacer comentarios
+          <div class=" pb-4 align-item-center text-rol modal-privileges-container">
 
+          </div>
+          <div class="text-center">
             <button type="button" class="btn-aceptar mt-4" id="modal-button" data-dismiss="modal">ACEPTAR</button>
-
           </div>
         </div>
       </div>

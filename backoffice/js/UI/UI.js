@@ -1,4 +1,10 @@
-import { registerUser, getUser, getUserToUpdate } from "../services/user.js";
+import {
+  registerUser,
+  getUser,
+  getUserToUpdate,
+  deleteUserBO,
+  getAllUsersBO,
+} from "../services/user.js";
 
 /*
 We use this method when you click on close icon in some view of 
@@ -96,6 +102,20 @@ function showUserToUpdate() {
   });
 }
 
+function deleteUserUI(id) {
+  $(".modal-delete-button-confirm").click(function () {
+    deleteUserBO(id);
+  });
+}
+
+function showModalDeleteUserBO() {
+  $(".delete-userbo-icon").click(function () {
+    let id = $(this).parent().attr("_id");
+    $(".modal-delete-user").modal("show");
+    deleteUserUI(id);
+  });
+}
+
 function showDescriptions() {
   $(".histo").hover(
     function () {
@@ -178,6 +198,7 @@ function showPageUsersBO() {
     showFormCreateUser();
     showUserToUpdate();
     showDescriptions();
+    getAllUsersBO();
   });
 }
 
@@ -246,4 +267,7 @@ export {
   changeActiveRolGreenButton,
   changeImagesRolPermissions,
   cambiaracti,
+  deleteUserUI,
+  showUserToUpdate,
+  showModalDeleteUserBO,
 };

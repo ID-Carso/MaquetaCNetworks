@@ -83,17 +83,16 @@ class User
         curl_setopt($ch, CURLOPT_POSTFIELDS, $dataUserJson);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json', 'Accept: application/json'));
-
         $response = curl_exec($ch);
         curl_close($ch);
-        echo ($response);
+        return $response;
     }
 
     function updateDataUser($data)
     {
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/admin_user/editAdmin");
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");
+        curl_setopt($ch, CURLOPT_POST, TRUE);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json', 'Accept: application/json'));
@@ -109,9 +108,9 @@ class User
         curl_setopt($ch, CURLOPT_URL, 'http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/admin_user');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $response = curl_exec($ch);
-        $result = json_decode($response, true);
+
         curl_close($ch);
-        return $result;
+        return $response;
     }
 
     function getUser($id)
@@ -134,6 +133,19 @@ class User
         echo ($result["id"]);
         curl_close($ch);
         return $result;
+    }
+
+    function deleteUserBO($data)
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/admin_user/down");
+        curl_setopt($ch, CURLOPT_POST, TRUE);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json', 'Accept: application/json'));
+        $response = curl_exec($ch);
+        curl_close($ch);
+        return $response;
     }
 }
 
@@ -159,28 +171,25 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             break;
 
         case 'registerUser':
-
             $name = $_POST['name'];
             $email = $_POST['email'];
             $password = $_POST['password'];
             $rol = $_POST['rol'];
             $adminId = $_SESSION['id'];
             $users = User::getUserInstance();
-            $users->registerUser($name, $email, $password, $rol, $adminId);
-
+            echo ($users->registerUser($name, $email, $password, $rol, $adminId));
             break;
 
         case 'getAllUsersBO':
             $user = User::getUserInstance();
-            $result = $user->getAllUsersBo();
+            echo ($user->getAllUsersBO());
             break;
 
 
         case 'updateDataUser':
 
-            $data = array("id_root" => $_SESSION["id"], "id_admin_user" => $_POST['id_admin_user'], "name" => $_POST['name'], "email" => $_POST['email'], "password" => $_POST['password'], "password_confirm" => $_POST['password_confirm']);
+            $data = array("id_root" => $_SESSION["id"], "id_admin_user" => $_POST['id_admin_user'], "name" => $_POST['name'], "email" => $_POST['email'], "password" => $_POST['password'], "password_confirm" => $_POST['password_confirm'], "rol_id" => $_POST["rol_id"]);
             $dataJson = json_encode($data);
-            var_dump($dataJson);
             $user = User::getUserInstance();
             echo ($user->updateDataUser($dataJson));
             break;
@@ -199,6 +208,13 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
         case 'getUserToUpdate':
             $user = User::getUserInstance();
             echo ($user->getUser($_POST["id"]));
+            break;
+
+        case 'deleteUserBO':
+            $user = User::getUserInstance();
+            $data = array("id_root" => $_SESSION["id"], "id_admin_user" => $_POST["id_admin_user"]);
+            $dataJson = json_encode($data);
+            echo ($user->deleteUserBO($dataJson));
             break;
     }
 }

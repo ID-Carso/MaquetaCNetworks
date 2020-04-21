@@ -1,12 +1,3 @@
-<?php
-
-include './adapters/user.php';
-$user = User::getUserInstance();
-$result = $user->getAllUsersBo();
-$users = $result["data"];
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <script src="./js/main.js" type="module"></script>
@@ -24,7 +15,7 @@ $users = $result["data"];
       </div>
       <div class="sombras2">
         <!--titulos de la tabla-->
-        <div class="grid-users text-progra ">
+        <div class="grid-users text-progra users-backoffice-table">
           <header>
             <div class="text-title ">Usuario</div>
           </header>
@@ -36,40 +27,7 @@ $users = $result["data"];
           </aside>
           <!--fin-->
           <!--Contenido de la tabla-->
-          <?php
-          foreach ($users as $user) {
-            $rol = "";
-            switch ($user["rol_id"]) {
-              case '1':
-                $rol = "Administrador";
-                break;
-              case '2':
-                $rol = "Aprobador";
-                break;
-              case '3':
-                $rol = "Editor";
-                break;
-              case '4':
-                $rol = "Visualizador";
-                break;
 
-              default:
-                # code...
-                break;
-            }
-
-            echo "
-            <div class='pd-5'>" . $user["name"] . "</div>
-            <div class0'pd-10'>" . $rol . "</div>
-            <div class='justify-content-center' _id=" . $user["id"] . ">
-              <!--Acciones-->
-              <input type='image' src='./images/ver-acti.svg' class='ml-3 btn-focus view-user-icon images' id='visual'></input>
-              <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images edit-user-icon'></input>
-              <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus images' onClick='abrirBorrar()'></input>
-            </div>
-            ";
-          }
-          ?>
         </div>
 
       </div>
@@ -93,7 +51,7 @@ $users = $result["data"];
 </body>
 
 <!--modal borrar-->
-<div class="modal show " id="abrirBorrar" role="dialog">
+<div class="modal show modal-delete-user" id="abrirBorrar" role="dialog">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content align-item-center centro  modal-defi1 ">
       <div class="modal-body ">
@@ -103,7 +61,7 @@ $users = $result["data"];
       </div>
       <div class="pb-4 align-item-center centro">
         <button type="button" class=" btn-no" id="modal-button" data-dismiss="modal">No</button>
-        <button type="button" class="btn-si" id="modal-button" data-dismiss="modal">Si</button>
+        <button type="button" class="btn-si modal-delete-button-confirm" id="modal-button">Si</button>
 
       </div>
     </div>

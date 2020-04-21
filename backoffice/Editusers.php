@@ -162,19 +162,20 @@ session_start();
 
 
     <!--modal regis-->
-    <div class="modal show " id="abrirsave" role="dialog">
+    <div class="modal show modal-edit-user" id="abrirsave" role="dialog">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content modal-regis-listo ">
           <div class="modal-body ">
-            <span class="modal-regis-text">Felipe López</span>
+            <span class="modal-regis-text modal-edit-username"></span>
             <p class="modal-regis-text1 pt-4">Se ha registrado con los siguientes privilegios:</p>
           </div>
-          <div class=" pb-4 align-item-center centro  text-rol">
-            <img src="./images/ojo-naranja.svg" alt="" class=" pl-3 mr-2">Visualizar cambios
-            <img src="./images/coment-naranja.svg" alt="" class="pl-3 mr-2">Hacer comentarios
+          <div class=" pb-4 align-item-center centro text-rol modal-edit-privileges-container">
 
+
+
+          </div>
+          <div class="text-center">
             <button type="button" class="btn-aceptar mt-4" id="modal-button" data-dismiss="modal">ACEPTAR</button>
-
           </div>
         </div>
       </div>

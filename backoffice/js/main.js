@@ -2,7 +2,12 @@ import { previewPage } from "./preview/prev.js";
 import { showContentNav } from "./nav/nav.js";
 
 //UI
-import { showPageUsersBO, showUserBO, showFormCreateUser } from "./UI/UI.js";
+import {
+  showPageUsersBO,
+  showUserBO,
+  showFormCreateUser,
+  deleteUserUI,
+} from "./UI/UI.js";
 
 //Validations
 import {
@@ -68,12 +73,12 @@ $(document).ready(function () {
     let email = $("#email-user-bo").val();
     let username = $("#name-user-bo").val();
     let password = $("#password-user-bo").val();
-    console.log(rol, email, username, password);
     registerUser(username, email, password, rol);
   });
 
-  /* 2.- UI  */
+  /* DELETE USER */
 
+  /* 2.- UI  */
   $(".btn-nav").click(function () {
     let rel = $(this).attr("rel");
     console.log(rel);
