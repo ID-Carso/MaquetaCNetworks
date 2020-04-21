@@ -1,18 +1,45 @@
 import { previewPage } from "./preview/prev.js";
 import { showContentNav } from "./nav/nav.js";
-import { ShowHidePassword } from "./form/form.js";
-import { validateEmail } from "./form/form.js";
-import { validateNewPassword } from "./form/form.js";
-import { validateKeyUpEmail } from "./form/form.js";
-import { validatePassword } from "./form/form.js";
+
+//UI
+import {
+  showPageUsersBO,
+  showUserBO,
+  showFormCreateUser,
+  deleteUserUI,
+} from "./UI/UI.js";
+
+//Validations
+import {
+  validateNewPassword,
+  validateKeyUpEmail,
+  validatePassword,
+  validateEmail,
+  ShowHidePassword,
+} from "./form/form.js";
+
 // import { validateUser } from "./form/form.js";
 // import { validateToken } from "./form/form.js";
 
 /* Service User */
-
-import { signIn, signOut } from "./services/user.js";
+import {
+  signIn,
+  signOut,
+  registerUser,
+  getAllUsersBO,
+  getAllUserFront,
+} from "./services/user.js";
 
 $(document).ready(function () {
+  /* GET ALL USERS FRONT */
+  getAllUserFront();
+
+  /* GET ALL USERS BACKOFFICE */
+  getAllUsersBO();
+
+  //GET USER BACKOFFICE
+  showUserBO();
+
   /* LOGIN */
   $("#button-login").click(function () {
     let inputEmail = $(".input-email");
@@ -40,6 +67,30 @@ $(document).ready(function () {
     signOut();
   });
 
+  /*REGISTER NEW USER*/
+  $(".register-user-button").click(function () {
+    let rol = $(".btn-rol-select").attr("id_rol");
+    let email = $("#email-user-bo").val();
+    let username = $("#name-user-bo").val();
+    let password = $("#password-user-bo").val();
+    registerUser(username, email, password, rol);
+  });
+
+  /* DELETE USER */
+
+  /* 2.- UI  */
+  $(".btn-nav").click(function () {
+    let rel = $(this).attr("rel");
+    console.log(rel);
+  });
+
+  /* Show the form to create a new user */
+  showFormCreateUser();
+
+  $(".admin-users-section").click(function () {
+    showPageUsersBO();
+  });
+
   /* Previsualizar contenido en diferentes tamaños */
   const prevImage = $(".a-prev-image");
 
@@ -60,6 +111,8 @@ $(document).ready(function () {
     showContentNav(adminContent, $(this), adminNavItem, activeClass);
   });
   /* End Navigation*/
+  /* END UI */
+
   /*login*/
   const inputPassword1 = $("#signup-password");
   const caracteresMin1 = $(".caracteres-min");

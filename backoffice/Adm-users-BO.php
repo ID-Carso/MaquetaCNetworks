@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="./js/main.js" type="module"></script>
 
 <head>
-  <script src="./js/admin.js" defer></script>
+
 </head>
 
 <body>
@@ -10,11 +11,11 @@
     <!--div para el cambio-->
     <div id="Adm-users-BO">
       <div class="col-xl-10 position-btn-alta">
-        <button class="btn-alta mb-4" id="btnAlta" onClick="muestraAlta()">Agregar nuevo usuario</button>
+        <button class="btn-alta mb-4" id="btnAlta">Agregar nuevo usuario</button>
       </div>
       <div class="sombras2">
         <!--titulos de la tabla-->
-        <div class="grid-users text-progra ">
+        <div class="grid-users text-progra users-backoffice-table">
           <header>
             <div class="text-title ">Usuario</div>
           </header>
@@ -26,58 +27,6 @@
           </aside>
           <!--fin-->
           <!--Contenido de la tabla-->
-          <div>Fernando Montes de Oca</div>
-          <div>Usuario</div>
-          <div>
-            <!--Acciones-->
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus  images" id="visual" onClick="verusuarios()"></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editarusuarios()"></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()"></input>
-          </div>
-          <div>Fernando Montes de Oca</div>
-          <div>Administrador</div>
-          <div>
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus images" id="visual" onClick="verusuarios()"></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editarusuarios()"></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()"></input>
-          </div>
-          <div>Fernando Montes de Oca</div>
-          <div>Usuario</div>
-          <div>
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus images" id="visual" onClick="verusuarios()"></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editarusuarios()"></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()" onClick="editarusuarios()"></input>
-          </div>
-          <div>Fernando Montes de Oca</div>
-          <div>Usuario</div>
-          <div>
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus images" id="visual" onClick="verusuarios()"></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editarusuarios()"></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()"></input>
-          </div>
-          <div>Fernando Montes de Oca</div>
-          <div>Usuario</div>
-          <div>
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus images" id="visual" onClick="verusuarios()"></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editarusuarios()"></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()"></input>
-
-          </div>
-          <div>Fernando Montes de Oca</div>
-          <div>Usuario</div>
-          <div>
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus images" id="visual" onClick="verusuarios()"></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editarusuarios()"></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()"></input>
-          </div>
-          <div>Fernando Montes de Oca</div>
-          <div>Usuario</div>
-          <div>
-            <input type="image" src="./images/ver-acti.svg" alt="" class="ml-3 btn-focus images" id="visual" onClick="verusuarios()"></input>
-            <input type="image" src="./images/edit-ac.svg" alt="" class="ml-3 btn-focus images" onClick="editarusuarios()"></input>
-            <input type="image" src="./images/eliminar-acti.svg" alt="" class="ml-3 btn-focus images" onClick="abrirBorrar()"></input>
-
-          </div>
 
         </div>
 
@@ -102,7 +51,7 @@
 </body>
 
 <!--modal borrar-->
-<div class="modal show " id="abrirBorrar" role="dialog">
+<div class="modal show modal-delete-user" id="abrirBorrar" role="dialog">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content align-item-center centro  modal-defi1 ">
       <div class="modal-body ">
@@ -112,7 +61,7 @@
       </div>
       <div class="pb-4 align-item-center centro">
         <button type="button" class=" btn-no" id="modal-button" data-dismiss="modal">No</button>
-        <button type="button" class="btn-si" id="modal-button" data-dismiss="modal">Si</button>
+        <button type="button" class="btn-si modal-delete-button-confirm" id="modal-button">Si</button>
 
       </div>
     </div>

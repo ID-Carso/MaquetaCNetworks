@@ -3,7 +3,7 @@ session_start();
 
 
 if (!isset($_SESSION["session"])) {
-  header('Location: http://localhost:4000/backoffice/login.php');
+  header('Location: login.php');
 }
 ?>
 
@@ -19,7 +19,7 @@ if (!isset($_SESSION["session"])) {
   include
     'styles.php';
   ?>
-  <script src="./js/admin.js" defer></script>
+
 
 </head>
 
@@ -37,15 +37,29 @@ if (!isset($_SESSION["session"])) {
     <nav class='navbar navbar-expand-sm mx-auto ' style="display:flex; justify-content:space-around; margin-top:-10px">
       <ul class='navbar-nav'>
         <li class='nav-item'>
-          <button class=' buttonall btn-nav btn-nav-select ml-xl-4 pr-4 pl-4  ' type='button' id="btn-nav" rel='Admin-home-BO' onClick="muestra1()">Administrar sitio</button>
+          <button class='buttonall btn-nav btn-nav-select ml-xl-4 pr-4 pl-4  ' type='button' id="btn-nav" rel='Admin-home-BO' onClick="muestra1()">Administrar sitio</button>
         </li>
-        <li class='nav-item'>
-          <button class='  buttonall btn-nav ml-xl-4 pr-2 pl-2 ' type='button' id="btn-nav" rel='Adm-users-BO' onClick="muestra2()">Administrar usuario BO</button>
-        </li>
-        <li class='nav-item'>
-          <button class='  buttonall btn-nav ml-xl-4 pr-1 pl-1 ' type='button' id="btn-nav" rel='Admin-users-Front' onClick="muestra3()">Administrar usuarios Front</button>
-
-        </li>
+        <?php
+        if ($_SESSION['rol_id'] == 1) {
+          echo "        
+            <li class='nav-item'>
+              <button class='admin-users-section  buttonall btn-nav ml-xl-4 pr-2 pl-2 ' type='button' id='btn-nav' rel='Adm-users-BO'>Administrar usuario BO</button>
+            </li>
+            <li class='nav-item'>
+              <button class='  buttonall btn-nav ml-xl-4 pr-1 pl-1 ' type='button' id='btn-nav' rel='Admin-users-Front' onClick='muestra3()'>Administrar usuarios Front</button>
+            </li>
+            ";
+        } else {
+          echo "        
+          <li class='nav-item'>
+            <button class='disabled-option buttonall btn-nav ml-xl-4 pr-2 pl-2 ' type='button' id='btn-nav'>Administrar usuario BO</button>
+          </li>
+          <li class='nav-item'>
+            <button class='disabled-option buttonall btn-nav ml-xl-4 pr-1 pl-1 ' type='button' id='btn-nav'>Administrar usuarios Front</button>
+          </li>
+          ";
+        }
+        ?>
       </ul>
 
     </nav>
@@ -55,10 +69,7 @@ if (!isset($_SESSION["session"])) {
       <!--Div para el cambio-->
       <?php include 'admin-home.php' ?>
       <!--Carga de div's-->
-
-
     </div>
-
   </main>
 
 </body>
