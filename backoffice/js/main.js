@@ -4,6 +4,7 @@ import { showContentNav } from "./nav/nav.js";
 //UI
 import { showPageUsersBO, showUserBO, showFormCreateUser } from "./UI/UI.js";
 
+//Validations
 import {
   validateNewPassword,
   validateKeyUpEmail,
@@ -21,10 +22,13 @@ import {
   signOut,
   registerUser,
   getAllUsersBO,
-  getUser,
+  getAllUserFront,
 } from "./services/user.js";
 
 $(document).ready(function () {
+  /* GET ALL USERS FRONT */
+  getAllUserFront();
+
   /* GET ALL USERS BACKOFFICE */
   getAllUsersBO();
 
@@ -69,6 +73,11 @@ $(document).ready(function () {
   });
 
   /* 2.- UI  */
+
+  $(".btn-nav").click(function () {
+    let rel = $(this).attr("rel");
+    console.log(rel);
+  });
 
   /* Show the form to create a new user */
   showFormCreateUser();

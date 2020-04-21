@@ -1,4 +1,4 @@
-import { registerUser, getUser } from "../services/user.js";
+import { registerUser, getUser, getUserToUpdate } from "../services/user.js";
 
 /*
 We use this method when you click on close icon in some view of 
@@ -48,16 +48,17 @@ function changeImagesRolPermissions() {
   });
 }
 
-function showFormEditUserBO() {
+/*function showFormEditUserBO() {
   $(".edit-user-icon").click(function () {
     $("#editar").replaceWith();
     $("#cambio").load("Editusers.php", function () {
+      alert("iojpojpoj");
       changeActiveRolGreenButton();
       closeViewAdminBO();
       changeImagesRolPermissions();
     });
   });
-}
+}*/
 
 function changeActiveRolGreenButton() {
   let buttonsRol = $(".btn-rol-edit");
@@ -85,6 +86,13 @@ function showUserBO() {
   $(".view-user-icon").click(function () {
     let id = $(this).parent().attr("_id");
     getUser(id);
+  });
+}
+
+function showUserToUpdate() {
+  $(".edit-user-icon").click(function () {
+    let id = $(this).parent().attr("_id");
+    getUserToUpdate(id);
   });
 }
 
@@ -168,7 +176,7 @@ function showPageUsersBO() {
   $("#cambio").load("Adm-users-BO.php", function () {
     showUserBO();
     showFormCreateUser();
-    showFormEditUserBO();
+    showUserToUpdate();
     showDescriptions();
   });
 }
@@ -217,10 +225,25 @@ function changeNameRol(id) {
   return rol;
 }
 
+function changeAdminContent(rel) {
+  switch (rel) {
+    case "Admin-home-BO":
+      $("#Admin-home-BO").replaceWith();
+      $("#cambio").load("admin-home.php");
+      break;
+
+    default:
+      break;
+  }
+}
+
 export {
   showPageUsersBO,
   showUserBO,
   showFormCreateUser,
   closeViewAdminBO,
   changeNameRol,
+  changeActiveRolGreenButton,
+  changeImagesRolPermissions,
+  cambiaracti,
 };

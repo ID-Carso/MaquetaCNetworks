@@ -89,6 +89,20 @@ class User
         echo ($response);
     }
 
+    function updateDataUser($data)
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/admin_user/editAdmin");
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json', 'Accept: application/json'));
+
+        $response = curl_exec($ch);
+        curl_close($ch);
+        echo ($response);
+    }
+
     function getAllUsersBO()
     {
         $ch = curl_init();
@@ -106,9 +120,20 @@ class User
         curl_setopt($ch, CURLOPT_URL, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/admin_user/" . $id);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $response = curl_exec($ch);
-        $result = json_decode($response, true);
         curl_close($ch);
         return $response;
+    }
+
+    function getAllUsersFront()
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, 'http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $response = curl_exec($ch);
+        $result = json_decode($response, true);
+        echo ($result["id"]);
+        curl_close($ch);
+        return $result;
     }
 }
 
@@ -153,14 +178,25 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
 
         case 'updateDataUser':
 
-            $data = array("id" => $_POST['id'], "gender" => $_POST['gender'], "birthday" => $_POST['date'], "country" => $_POST['country']);
+            $data = array("id_root" => $_SESSION["id"], "id_admin_user" => $_POST['id_admin_user'], "name" => $_POST['name'], "email" => $_POST['email'], "password" => $_POST['password'], "password_confirm" => $_POST['password_confirm']);
             $dataJson = json_encode($data);
+            var_dump($dataJson);
             $user = User::getUserInstance();
             echo ($user->updateDataUser($dataJson));
             break;
 
         case 'getUser':
 
+            $user = User::getUserInstance();
+            echo ($user->getUser($_POST["id"]));
+            break;
+
+        case 'getAllUsersFront':
+            $user = User::getUserInstance();
+            $result = $user->getAllUsersBo();
+            break;
+
+        case 'getUserToUpdate':
             $user = User::getUserInstance();
             echo ($user->getUser($_POST["id"]));
             break;

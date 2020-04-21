@@ -24,24 +24,24 @@ session_start();
           <div class=" title-edit "><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
         </div>
         <div class="col-xl-11 mx-auto  ">
-          <input class="insert-data Correo-electrnico pt-2" type="text " value="" placeholder=" Nombre del usuario">
+          <input id="edit-input-username" class="insert-data Correo-electrnico pt-2" type="text " value="" placeholder="Nombre del usuario">
 
           </input>
-          <input class="insert-data  Correo-electrnico pt-2 " type="text " value="" placeholder=" Correo "></input>
+          <input id="edit-input-email" class="insert-data  Correo-electrnico pt-2 " type="text " value="" placeholder=" Correo "></input>
 
           <div class="pt-0 mt-1">
-            <input class="insert-data Correo-electrnico pt-2 " type="password" id="login-password" name="login-password" placeholder=" Asignar nueva contraseña" autocomplete="off" />
+            <input id="edit-input-password" class="insert-data Correo-electrnico pt-2 " type="password" id="login-password" name="login-password" placeholder=" Asignar nueva contraseña" autocomplete="off" />
             <!---  <img src="../images/registro/eye-none.svg" class="icon-eye" />-->
-            <input class="insert-data Correo-electrnico pt-2 " type="password" id="login-password" name="login-password" placeholder=" Confirmar nueva contraseña" autocomplete="off" />
+            <input id="edit-input-repassword" class="insert-data Correo-electrnico pt-2 " type="password" id="login-password" name="login-password" placeholder=" Confirmar nueva contraseña" autocomplete="off" />
             <!--<img src="../images/registro/eye-none.svg" class="icon-eye3" />-->
           </div>
           <div class=" justify-content-center mx-auto">
             <p class="p-4 mb-4 mt-4  border-rol">Rol
               <div class="alineacion buttons-rol-container">
-                <button type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit enviamos ml-5 btn-rol-select-edit" id_button="1" rel='User-Raiz'>Usuario Raíz </button>
-                <button type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit py-xl-2 ml-1 enviamos" rel='User-Edit' id_button="3">Usuario Editor</button>
-                <button type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit py-xl-2 ml-2 enviamos2" rel='User-Apro' id_button="2">Usuario Aprobador</button>
-                <button type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit py-xl-2  ml-2 enviamos2" rel='User-Visua' id_button="4">Usuario Visualizador</button>
+                <button id="button-root" type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit enviamos ml-5" id_button="1" id_rol="1" rel='User-Raiz'>Usuario Raíz </button>
+                <button id="button-editor" type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit py-xl-2 ml-1 enviamos" rel='User-Edit' id_button="2" id_rol="3">Usuario Editor</button>
+                <button id="button-aprobador" type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit py-xl-2 ml-2 enviamos2" rel='User-Apro' id_button="3" id_rol="2">Usuario Aprobador</button>
+                <button id="button-visualizador" type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit py-xl-2  ml-2 enviamos2" rel='User-Visua' id_button="4" id_rol="4">Usuario Visualizador</button>
               </div>
             </p>
           </div>
@@ -152,7 +152,7 @@ session_start();
 
           <div class="col-xl-12 align-item-center pb-5 centro space">
             <button type="button" class=" btn-cancelar mt-3  mr-4"> Cancelar </button>
-            <button type="button" class="btn-guardar mt-3" onClick="Mostrarsave()">Guardar</button>
+            <button type="button" class="btn-guardar save-button-edit mt-3">Guardar</button>
 
           </div>
       </form>

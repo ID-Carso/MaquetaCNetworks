@@ -1,4 +1,10 @@
-import { closeViewAdminBO, changeNameRol } from "../UI/UI.js";
+import {
+  closeViewAdminBO,
+  changeNameRol,
+  changeActiveRolGreenButton,
+  changeImagesRolPermissions,
+  cambiaracti,
+} from "../UI/UI.js";
 function validateTokenPassword(tokenPassword) {
   $.ajax({
     type: "GET",
@@ -117,38 +123,6 @@ function signOut() {
   });
 }
 
-function updateDataUser(id, gender, date, country) {
-  let dataUser = {
-    function: "updateDataUser",
-    id: id,
-    gender: gender,
-    date: date,
-    country: country,
-  };
-
-  console.log(dataUser);
-  $.ajax({
-    type: "POST",
-    data: dataUser,
-    url: "../../adapters/user.php",
-    success: function (result) {
-      let json = JSON.parse(result);
-      console.log(json);
-      let gender = localStorage.setItem("gender", json.data.gender);
-      let date = json.data.birthday.split("-");
-      let day = localStorage.setItem("day", date[2]);
-      let month = localStorage.setItem("month", date[1]);
-      let year = localStorage.setItem("year", date[0]);
-      let birthday = localStorage.setItem("date", json.data.birthday);
-      let country = localStorage.setItem("country", json.data.country.name);
-      let src = localStorage.setItem("src", json.data.country.image);
-      let modal = $("#mensaje");
-      modal.modal("show");
-      $(".login-country").prop("src", json.data.country.image);
-    },
-  });
-}
-
 function registerUser(name, email, password, rol) {
   let user = {
     function: "registerUser",
@@ -212,6 +186,107 @@ function getUser(id) {
     },
   });
 }
+function getAllUserFront() {
+  let data = {
+    function: "getAllUsersFront",
+  };
+
+  $.ajax({
+    type: "POST",
+    data: data,
+    url: "./adapters/user.php",
+    success: function (result) {},
+  });
+}
+
+function updateDataUser(id, name, email, password, repassword, rolId) {
+  let dataUser = {
+    function: "updateDataUser",
+    id_admin_user: id,
+    name: name,
+    email: email,
+    password: password,
+    password_confirm: repassword,
+    rol_id: rolId,
+  };
+
+  console.log(dataUser);
+  $.ajax({
+    type: "POST",
+    data: dataUser,
+    url: "./adapters/user.php",
+    success: function (result) {
+      console.log(result);
+    },
+  });
+}
+
+function getUserToUpdate(id) {
+  console.log(id);
+  let data = {
+    function: "getUserToUpdate",
+    id: id,
+  };
+  $.ajax({
+    type: "POST",
+    data: data,
+    url: "./adapters/user.php",
+    success: function (result) {
+      console.log(result);
+      let json = JSON.parse(result);
+      if (json.code == 200) {
+        $("#editar").replaceWith();
+        $("#cambio").load("Editusers.php", function () {
+          $("#edit-input-username").val(json.data.name);
+          $("#edit-input-email").val(json.data.email);
+          switch (json.data.rol.id) {
+            case 1:
+              $("#button-root").addClass("btn-rol-select-edit");
+              cambiaracti("1");
+              break;
+            case 2:
+              $("#button-aprobador").addClass("btn-rol-select-edit");
+              cambiaracti("3");
+              break;
+            case 3:
+              $("#button-editor").addClass("btn-rol-select-edit");
+              cambiaracti("2");
+              break;
+            case 4:
+              $("#button-visualizador").addClass("btn-rol-select-edit");
+              cambiaracti("4");
+              break;
+            default:
+              break;
+          }
+
+          /* GET THE VALUES OF THE FORM TO UPDATE A BACKOFFICE USER */
+          $(".save-button-edit").click(function () {
+            let name = $("#edit-input-username").val();
+            let email = $("#edit-input-email").val();
+            let password = $("#edit-input-password").val();
+            let repassword = $("#edit-input-repassword").val();
+            let rolId = $(".btn-rol-select-edit").attr("id_rol");
+            updateDataUser(
+              json.data.id,
+              name,
+              email,
+              password,
+              repassword,
+              rolId
+            );
+          });
+
+          changeActiveRolGreenButton();
+          closeViewAdminBO();
+          changeImagesRolPermissions();
+        });
+      }
+    },
+  });
+}
+
+function deleteUser() {}
 
 export {
   sendUserEmail,
@@ -223,4 +298,6 @@ export {
   registerUser,
   getAllUsersBO,
   getUser,
+  getAllUserFront,
+  getUserToUpdate,
 };

@@ -37,7 +37,7 @@ if (!isset($_SESSION["session"])) {
     <nav class='navbar navbar-expand-sm mx-auto ' style="display:flex; justify-content:space-around; margin-top:-10px">
       <ul class='navbar-nav'>
         <li class='nav-item'>
-          <button class=' buttonall btn-nav btn-nav-select ml-xl-4 pr-4 pl-4  ' type='button' id="btn-nav" rel='Admin-home-BO' onClick="muestra1()">Administrar sitio</button>
+          <button class='buttonall btn-nav btn-nav-select ml-xl-4 pr-4 pl-4  ' type='button' id="btn-nav" rel='Admin-home-BO' onClick="muestra1()">Administrar sitio</button>
         </li>
         <?php
         if ($_SESSION['rol_id'] == 1) {
