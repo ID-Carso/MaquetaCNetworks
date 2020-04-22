@@ -7,6 +7,7 @@ import {
   showUserBO,
   showFormCreateUser,
   deleteUserUI,
+  showPageUsersFront,
 } from "./UI/UI.js";
 
 //Validations
@@ -89,6 +90,11 @@ $(document).ready(function () {
 
   $(".admin-users-section").click(function () {
     showPageUsersBO();
+  });
+
+  /* SHOW VIEW USERS FRONT */
+  $(".admin-users-front-section").click(function () {
+    showPageUsersFront();
   });
 
   /* Previsualizar contenido en diferentes tamaños */

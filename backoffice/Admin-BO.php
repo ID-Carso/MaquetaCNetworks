@@ -46,7 +46,7 @@ if (!isset($_SESSION["session"])) {
               <button class='admin-users-section  buttonall btn-nav ml-xl-4 pr-2 pl-2 ' type='button' id='btn-nav' rel='Adm-users-BO'>Administrar usuario BO</button>
             </li>
             <li class='nav-item'>
-              <button class='  buttonall btn-nav ml-xl-4 pr-1 pl-1 ' type='button' id='btn-nav' rel='Admin-users-Front' onClick='muestra3()'>Administrar usuarios Front</button>
+              <button class='admin-users-front-section  buttonall btn-nav ml-xl-4 pr-1 pl-1 ' type='button' id='btn-nav' rel='Admin-users-Front'>Administrar usuarios Front</button>
             </li>
             ";
         } else {

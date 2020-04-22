@@ -4,6 +4,9 @@ import {
   getUserToUpdate,
   deleteUserBO,
   getAllUsersBO,
+  getUserFront,
+  deleteUserFront,
+  getUserFrontToUpdate,
 } from "../services/user.js";
 
 /*
@@ -16,6 +19,12 @@ function closeViewAdminBO() {
   });
 }
 
+function closeViewFront() {
+  $(".closeViewFront").click(function () {
+    showPageUsersFront();
+  });
+}
+
 function cambiaracti(roles) {
   switch (roles) {
     case "1":
@@ -23,14 +32,15 @@ function cambiaracti(roles) {
       $("#User-Edit").attr("hidden", true);
       $("#User-Apro").attr("hidden", true);
       $("#User-Visua").attr("hidden", true);
-
       break;
+
     case "2":
       $("#User-Raiz").attr("hidden", true);
       $("#User-Edit").attr("hidden", false);
       $("#User-Apro").attr("hidden", true);
       $("#User-Visua").attr("hidden", true);
       break;
+
     case "3":
       $("#User-Raiz").attr("hidden", true);
       $("#User-Edit").attr("hidden", true);
@@ -78,7 +88,6 @@ function changeActiveRolGreenButton() {
 
 function createClickButtonRegisterUser() {
   $(".register-user-button").click(function () {
-    console.log("pojpoj");
     let rol = $(".btn-rol-select").attr("id_rol");
     let email = $("#email-user-bo").val();
     let username = $("#name-user-bo").val();
@@ -102,9 +111,22 @@ function showUserToUpdate() {
   });
 }
 
+function showUserFrontToUpdate() {
+  $(".edit-user-front").click(function () {
+    let id = $(this).parent().attr("_id");
+    getUserFrontToUpdate(id);
+  });
+}
+
 function deleteUserUI(id) {
   $(".modal-delete-button-confirm").click(function () {
     deleteUserBO(id);
+  });
+}
+
+function deleteUserFrontUI(id) {
+  $(".modal-delete-front-confirm").click(function () {
+    deleteUserFront(id);
   });
 }
 
@@ -113,6 +135,14 @@ function showModalDeleteUserBO() {
     let id = $(this).parent().attr("_id");
     $(".modal-delete-user").modal("show");
     deleteUserUI(id);
+  });
+}
+
+function showModalDeleteUserFront() {
+  $(".delete-user-front-icon").click(function () {
+    let id = $(this).parent().attr("_id");
+    $(".modal-delete-user-front").modal("show");
+    deleteUserFrontUI(id);
   });
 }
 
@@ -258,9 +288,160 @@ function changeAdminContent(rel) {
   }
 }
 
+function showUserFront() {
+  $(".show-user-front-icon").click(function () {
+    let id = $(this).parent().attr("_id");
+    getUserFront(id);
+  });
+}
+
+function showPageUsersFront() {
+  $("#Admin-users-Front").replaceWith();
+  $("#cambio").load("Admin-users-front.php", function () {
+    showUserFront();
+    showModalDeleteUserFront();
+    showUserFrontToUpdate();
+  });
+}
+
+function getNameCountry(id) {
+  let countryName = "";
+  let countryImage = "";
+  switch (id) {
+    case 1:
+      countryName = "EUA";
+      countryImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/paises/usa.svg";
+      break;
+    case 2:
+      countryName = "Argentina";
+      countryImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/paises/argentina.svg";
+      break;
+    case 3:
+      countryName = "Brasil";
+      countryImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/paises/brazil.svg";
+      break;
+    case 4:
+      countryName = "Chile";
+      countryImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/paises/chile.svg";
+      break;
+    case 5:
+      countryName = "Colombia";
+      countryImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/paises/colombia.svg";
+      break;
+    case 6:
+      countryName = "Costa Rica";
+      countryImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/paises/costa-rica.svg";
+      break;
+    case 7:
+      countryName = "Ecuador";
+      countryImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/paises/ecuador.svg";
+      break;
+    case 8:
+      countryName = "El Salvador";
+      countryImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/paises/el-salvador.svg";
+      break;
+    case 9:
+      countryName = "Guatemala";
+      countryImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/paises/guatemala.svg";
+      break;
+    case 10:
+      countryName = "Honduras";
+      countryImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/paises/honduras.svg";
+      break;
+    case 11:
+      countryName = "Nicaragua";
+      countryImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/paises/nicaragua.svg";
+      break;
+
+    case 12:
+      countryName = "Panamá";
+      countryImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/paises/panama.svg";
+      break;
+
+    case 13:
+      countryName = "Paraguay";
+      countryImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/paises/paraguay.svg";
+      break;
+    case 14:
+      countryName = "Perú";
+      countryImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/paises/peru.svg";
+      break;
+    case 15:
+      countryName = "Puerto Rico";
+      countryImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/paises/puerto-rico.svg";
+      break;
+    case 16:
+      countryName = "República Dominicana";
+      countryImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/paises/dominican-republic.svg";
+      break;
+    case 17:
+      countryName = "Paraguay";
+      countryImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/paises/paraguay.svg";
+      break;
+    default:
+      countryName = "";
+      countryImage = "";
+      break;
+  }
+
+  let country = {
+    countryName: countryName,
+    countryImage: countryImage,
+  };
+
+  return country;
+}
+
+function getNameGender(g) {
+  let genderName = "";
+  let genderImage = "";
+
+  switch (g) {
+    case "M":
+      genderName = "Masculino";
+      genderImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/datos-adicionales/masculino-activo.svg";
+      break;
+    case "F":
+      genderName = "Fémenino";
+      genderImage =
+        "http://www.claronetworks.openofficedospuntocero.info/images/datos-adicionales/femenino-activo.svg";
+      break;
+    default:
+      genderName = "";
+      genderImage = "";
+      break;
+  }
+
+  let gender = {
+    genderName: genderName,
+    genderImage: genderImage,
+  };
+
+  return gender;
+}
+
 export {
   showPageUsersBO,
   showUserBO,
+  showUserFront,
   showFormCreateUser,
   closeViewAdminBO,
   changeNameRol,
@@ -270,4 +451,9 @@ export {
   deleteUserUI,
   showUserToUpdate,
   showModalDeleteUserBO,
+  showPageUsersFront,
+  closeViewFront,
+  getNameCountry,
+  getNameGender,
+  showModalDeleteUserFront,
 };

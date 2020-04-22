@@ -135,10 +135,33 @@ class User
         return $result;
     }
 
+    function getUserFront($id)
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/" . $id);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $response = curl_exec($ch);
+        curl_close($ch);
+        return $response;
+    }
+
     function deleteUserBO($data)
     {
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/admin_user/down");
+        curl_setopt($ch, CURLOPT_POST, TRUE);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json', 'Accept: application/json'));
+        $response = curl_exec($ch);
+        curl_close($ch);
+        return $response;
+    }
+
+    function deleteUserFront($data)
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/admin_user/deleteUser");
         curl_setopt($ch, CURLOPT_POST, TRUE);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -195,9 +218,13 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             break;
 
         case 'getUser':
-
             $user = User::getUserInstance();
             echo ($user->getUser($_POST["id"]));
+            break;
+
+        case 'getUserFront':
+            $user = User::getUserInstance();
+            echo ($user->getUserFront($_POST["id"]));
             break;
 
         case 'getAllUsersFront':
@@ -210,11 +237,23 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             echo ($user->getUser($_POST["id"]));
             break;
 
+        case 'getUserFrontToUpdate':
+            $user = User::getUserInstance();
+            echo ($user->getUserFront($_POST["id"]));
+            break;
+
         case 'deleteUserBO':
             $user = User::getUserInstance();
             $data = array("id_root" => $_SESSION["id"], "id_admin_user" => $_POST["id_admin_user"]);
             $dataJson = json_encode($data);
             echo ($user->deleteUserBO($dataJson));
+            break;
+
+        case 'deleteUserFront':
+            $user = User::getUserInstance();
+            $data = array("id_admin" => $_SESSION["id"], "id_user" => $_POST["id_user"]);
+            $dataJson = json_encode($data);
+            echo ($user->deleteUserFront($dataJson));
             break;
     }
 }

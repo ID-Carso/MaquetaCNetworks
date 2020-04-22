@@ -36,9 +36,9 @@ $users = $result["data"];
           echo "
           <div class='pd-5 name-user-front'>" . $user["name"] . "</div>
           <div class='justify-content-center' _id=" . $user["id"] . ">
-            <input type='image' src='./images/ojito-acti.svg' class='ml-3 btn-focus images' onClick='verfront()'></input>
-            <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images' onClick='editfront()'></input>
-            <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus images' onClick='abrirBorrar()'></input>
+            <input type='image' src='./images/ojito-acti.svg' class='show-user-front-icon ml-3 btn-focus images'></input>
+            <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images edit-user-front'></input>
+            <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus delete-user-front-icon images'></input>
           </div>
           ";
         }
@@ -63,17 +63,17 @@ $users = $result["data"];
 </body>
 
 <!--modal borrar-->
-<div class="modal show " id="abrirBorrar" role="dialog">
+<div class="modal modal-delete-user-front show " id="abrirBorrar" role="dialog">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content centro modal-defi2">
       <div class="modal-body  ">
         <img src="./images/advertencia.svg" alt="" class=""><br>
         <span class="modal-text">¿Desea eliminar este usuario?</span>
-        <p class="modal-text1">Karina Henandez Ramírez</p>
+        <p class="modal-text1 modal-delete-username-front"></p>
       </div>
       <div class="pb-4 align-item-center centro">
         <button type="button" class=" btn-no" id="modal-button" data-dismiss="modal">No</button>
-        <button type="button" class="btn-si" id="modal-button" data-dismiss="modal">Si</button>
+        <button type="button" class="btn-si modal-delete-front-confirm" id="modal-button">Si</button>
 
       </div>
     </div>

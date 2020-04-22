@@ -166,7 +166,7 @@ session_start();
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content modal-regis-listo ">
           <div class="modal-body ">
-            <span class="modal-regis-text modal-edit-username"></span>
+            <span class="a-text-medium  modal-regis-text modal-edit-username"></span>
             <p class="modal-regis-text1 pt-4">Se ha registrado con los siguientes privilegios:</p>
           </div>
           <div class=" pb-4 align-item-center centro text-rol modal-edit-privileges-container">

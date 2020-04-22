@@ -79,24 +79,13 @@ function muestra1() {
   $("#cambio").load("admin-home.php");
 }
 
-function muestra3() {
-  $("#Admin-users-Front").replaceWith();
-  $("#cambio").load("Admin-users-front.php");
-}
-
 function verusuarios() {
   $("#usuarios").replaceWith();
   $("#cambio").load("VisualUser.php");
 }
 function editarusuarios() {}
-function verfront() {
-  $("#visual-front").replaceWith();
-  $("#cambio").load("Visual-front.php");
-}
-function editfront() {
-  $("#edit-front").replaceWith();
-  $("#cambio").load("Edit-front.php");
-}
+function verfront() {}
+function editfront() {}
 function cerrarequis() {
   $("#segunda").replaceWith();
   $("#cambio").load("Adm-users-BO.php");

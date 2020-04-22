@@ -1,14 +1,19 @@
 import {
   closeViewAdminBO,
+  closeViewFront,
   changeNameRol,
   changeActiveRolGreenButton,
   changeImagesRolPermissions,
   cambiaracti,
   showUserBO,
   showUserToUpdate,
-  deleteUserUI,
   showModalDeleteUserBO,
+  getNameCountry,
+  getNameGender,
+  showModalDeleteUserFront,
+  showUserFront,
 } from "../UI/UI.js";
+
 function validateTokenPassword(tokenPassword) {
   $.ajax({
     type: "GET",
@@ -140,6 +145,7 @@ function registerUser(name, email, password, rol) {
     type: "POST",
     data: user,
     url: "./adapters/user.php",
+
     success: function (result) {
       console.log(result);
       let json = JSON.parse(result);
@@ -445,7 +451,6 @@ function updateDataUser(id, name, email, password, repassword, rolId) {
 }
 
 function getUserToUpdate(id) {
-  console.log(id);
   let data = {
     function: "getUserToUpdate",
     id: id,
@@ -509,6 +514,41 @@ function getUserToUpdate(id) {
   });
 }
 
+function getUserFrontToUpdate(id) {
+  let data = {
+    function: "getUserFrontToUpdate",
+    id: id,
+  };
+  $.ajax({
+    type: "POST",
+    data: data,
+    url: "./adapters/user.php",
+    success: function (result) {
+      let json = JSON.parse(result);
+      console.log(json);
+      if (json.code == 200) {
+        $("#edit-front").replaceWith();
+        $("#cambio").load("Edit-front.php", function () {
+          $("#edit-front-input-username").val(json.data.name);
+          $("#edit-front-input-email").val(json.data.email);
+          switch (json.data.gender) {
+            case "M":
+              $("#mujer").prop("checked", false);
+              $("#hombre").prop("checked", true);
+              break;
+            case "F":
+              $("#mujer").prop("checked", true);
+              $("#hombre").prop("checked", false);
+              break;
+            default:
+              break;
+          }
+        });
+      }
+    },
+  });
+}
+
 function deleteUserBO(id) {
   let data = {
     function: "deleteUserBO",
@@ -525,7 +565,6 @@ function deleteUserBO(id) {
         localStorage.setItem("usersBO", JSON.stringify(json.data));
         let users = JSON.parse(localStorage.getItem("usersBO"));
         let userBO = "";
-        console.log(users);
         users.forEach((user) => {
           let rol = changeNameRol(user.rol_id);
 
@@ -561,6 +600,94 @@ function deleteUserBO(id) {
   });
 }
 
+function deleteUserFront(id) {
+  console.log(id);
+  let data = {
+    function: "deleteUserFront",
+    id_admin: id,
+  };
+
+  $.ajax({
+    type: "POST",
+    data: data,
+    url: "./adapters/user.php",
+    success: function (result) {
+      console.log(result);
+      let json = JSON.parse(result);
+      if (json.code == 200) {
+        localStorage.setItem("usersFront", JSON.stringify(json.data));
+        let users = JSON.parse(localStorage.getItem("usersFront"));
+        let userBO = "";
+        console.log(users);
+        users.forEach((user) => {
+          userBO += `
+          <div class="pd-5">${user.name}</div>
+          <div class='justify-content-center' _id="${user.id}">
+            <!--Acciones-->
+            <input type='image' src='./images/ver-acti.svg' class='ml-3 btn-focus view-user-icon images' id='visual'></input>
+            <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images edit-user-icon'></input>
+            <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus images delete-userbo-icon'></input>
+          </div>
+          `;
+        });
+        $(".users-front-table").html(`          
+        <header>
+          <div class="text-title">Usuario</div>
+        </header>
+        <section>
+          <div class="text-title">Acciones</div>
+        </section>
+        ${userBO}
+        `);
+        $(".modal-delete-user-front").modal("hide");
+        showModalDeleteUserFront();
+        showUserFront();
+        //showUserToUpdate();
+      }
+    },
+  });
+}
+
+function getUserFront(id) {
+  let data = {
+    function: "getUserFront",
+    id: id,
+  };
+
+  $.ajax({
+    type: "POST",
+    data: data,
+    url: "./adapters/user.php",
+    success: function (result) {
+      let json = JSON.parse(result);
+      console.log(json);
+      if (json.code == 200) {
+        $("#visual-front").replaceWith();
+        $("#cambio").load("Visual-front.php", function () {
+          closeViewFront();
+          $(".username-front").text(json.data.name);
+          $(".email-front").text(json.data.email);
+          let country = getNameCountry(json.data.country_id);
+          let countryName = country.countryName;
+          let countryImage = country.countryImage;
+          $(".section-pais").append(`
+          <label class=" pl-5 pais"> <img src="${countryImage}" class="Icon_paises " /><span class="padding-pais user-front-country">${countryName}</span> </label>
+          `);
+          $(".user-front-birthday").text(json.data.birthday);
+
+          let gender = getNameGender(json.data.gender);
+          let genderName = gender.genderName;
+          let genderImage = gender.genderImage;
+          $(".section-sexo").append(`
+          <label for="mujer" id="mujerestado" class="mujer-estilo1 pl-4">
+          <img id="women" src="${genderImage}" /> ${genderName}</label>
+          `);
+        });
+      }
+    },
+  });
+}
+
 export {
   sendUserEmail,
   validateTokenPassword,
@@ -574,4 +701,7 @@ export {
   getAllUserFront,
   getUserToUpdate,
   deleteUserBO,
+  getUserFront,
+  deleteUserFront,
+  getUserFrontToUpdate,
 };
