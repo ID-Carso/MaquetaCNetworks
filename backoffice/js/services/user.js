@@ -543,6 +543,9 @@ function getUserFrontToUpdate(id) {
             default:
               break;
           }
+          $(".SeleccionDiaLista").text();
+          $(".SeleccionMesLista").text();
+          $(".SeleccionAñoLista").text();
         });
       }
     },
