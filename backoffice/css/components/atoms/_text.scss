@@ -1,3 +1,5 @@
+@import "color"; 
+@import "typography";
 .a-text-return{
     font-family: $MontserratSemiBold;
     font-size: 18px;
@@ -325,7 +327,7 @@ font-stretch: normal;
     align-items: center;
   }
   .a-flex-caption {
-    font-family: $MontseratSemiBold;
+    font-family: $MontserratSemiBold;
     font-size: 22px;
     color: $darkyellow;
   }
