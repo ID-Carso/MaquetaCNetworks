@@ -543,9 +543,20 @@ function getUserFrontToUpdate(id) {
             default:
               break;
           }
-          $(".SeleccionDiaLista").text();
+
+          /* BIRTHDAY USER FRONT*/
+          let userBirthday = json.data.birthday.split("-");
+          let year = userBirthday[0];
+          let month = userBirthday[1];
+          let day = userBirthday[2];
+          $(".SeleccionDiaLista").text(day);
           $(".SeleccionMesLista").text();
-          $(".SeleccionAñoLista").text();
+          $(".SeleccionAñoLista").text(year);
+
+          /* COUNTRY */
+          let country = getNameCountry(json.data.country_id);
+          let countryName = country.countryName;
+          $(".SeleccionPaisLista").text(countryName);
         });
       }
     },
