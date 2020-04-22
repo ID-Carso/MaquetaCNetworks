@@ -1,0 +1,728 @@
+@import "../atoms/color";
+@import "../atoms/typography";
+@import "../atoms/text";
+
+.o-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 246px);
+  grid-auto-rows: 34px;
+  grid-template-areas: "my-header  my-section ";
+}
+
+.grid > div {
+  width: 100%;
+  height: 100%;
+  max-width: 492px;
+  align-items: center;
+  border: 1px solid $beige;
+  background-color: $white;
+  display: flex;
+}
+header {
+  grid-area: my-header;
+  background-color: $darkred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 0px 2px 1px $beige;
+}
+section {
+  grid-area: my-section;
+  background-color: $darkred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 0px 2px 1px $beige;
+}
+
+.o-sombras1 {
+    margin: auto;
+    width: 100%;
+    max-width: 492px;
+    box-shadow: 3px 5px 10px 6px rgba(0, 0, 0, 0.14);
+  }
+  .o-sombras2 {
+    margin: auto;
+    width: 100%;
+    max-width: 672px;
+    box-shadow: 3px 5px 10px 6px rgba(0, 0, 0, 0.14);
+  }
+ 
+.o-fondo-BO {
+    background: url("../images/fondo-region.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden !important;
+  }
+  .o-login-BO {
+    height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .o-login-form-bo {
+    width: 400px;
+    height: 570px;
+    display: flex;
+    background-color:$white;
+    margin-right: 45%;
+    margin-left: 31%;
+    border-radius: 1em;
+  }
+  
+.o-contenido {
+    position: absolute;
+    left: 150px;
+    right: 33%;
+  }
+  .o-grid-users {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-rows: 34px;
+    grid-template-areas: "my-header my-section my-aside";
+  }
+  
+  .o-grid-users > div {
+    align-items: center;
+    width: 100%;
+    max-width: 603px;
+    border: 1px solid $beige;
+    background-color:$white;
+    display: flex;
+  }
+  header {
+    grid-area: my-header;
+    background-color: $darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    box-shadow: 1px 0px 2px 1px $beige;
+  }
+  section {
+    grid-area: my-section;
+    background-color: $darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    width: 100%;
+    box-shadow: 1px 0px 2px 1px $beige;
+  }
+  aside {
+    grid-area: my-aside;
+    background-color: $darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    box-shadow: 1px 0px 2px 1px $beige;
+  }
+  .o_body {
+    font-size: 20px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  .o-line {
+    width: 100%;
+    height: 1px;
+    margin: auto;
+    background-color:$lightteal;
+  }
+  .o-check {
+    width: 17px;
+    height: 16px;
+    border: solid 2px $teal;
+  }
+  .o-separacion:after {
+    content: " | ";
+    padding: 0 10px;
+  }
+  .o-signo {
+    line-height: 1;
+  }
+  .signo:before {
+    content: " + ";
+    color:$white;
+    font-size: 40px;
+    font-family: $MontserratSemiBold;
+    margin-right: 200px;
+  }
+  
+input[type="radio"]:checked + .si-estilo1 {
+    background-color: $darkinput;
+    color: $white;
+    border: none;
+  }
+  input[type="radio"]:checked + .no-estilo1 {
+    background-color: $darkinput;
+    color:$white;
+    border: none;
+  }
+  .o-radio-claro {
+    display: block;
+    margin-left: 8%;
+    margin-bottom: -16%;
+  }
+  .o-radio-lan {
+    display: block;
+    margin-left: 18%;
+    margin-bottom: -16%;
+  }
+  .o-selec-radio {
+    display: block;
+    margin: auto;
+  }
+  .o-contenedor-tabla {
+    display: table;
+    overflow-x: scroll;
+    width: 4673px;
+    height: 63px;
+    white-space: nowrap;
+    margin-top: 11%;
+    line-height: 4;
+    //a-text-public
+  }
+  .o-.contenedor {
+    display: table;
+    overflow-x: scroll;
+    width: 5420px;
+    height: 63px;
+    white-space: nowrap; 
+    //a-textpublic
+  }
+  .contenedor-fila {
+    display: table-row;
+    height: 63px;
+    background-color: $white;
+  }
+  
+.title-table {
+    opacity: 0.27;
+    background-color: $dark2;
+  }
+  .contenedor-columna {
+    display: table-cell;
+    border: 1px solid $lightpink;
+  }
+  .sp:before {
+    content: " | ";
+    padding: 0 10px;
+  }
+  
+input[type="radio"]:checked + .hombre-estilo {
+    background: $lemongreen;
+    color: $white;
+    border: none;
+  }
+  
+#select-Pais {
+    width: 207px;
+    height: 38px;
+    border-radius: 25px;
+    border: solid 1px $morelightgray;
+    background-color: $white;
+    margin-bottom: -4px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: left;
+  }
+  #select-Pais .SeleccionPaisLista {
+    padding: 6px 10px;
+    width: 100%;
+    height: 40px;
+    top: 3%;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+.select-Pais:hover {
+    overflow: visible;
+  }
+  
+  #select-Pais .SeleccionPaisLista:after {
+    content: url(./../../../images/datos-adicionales/flechita.svg);
+    height: 1px;
+    background: $white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: -8%;
+    margin-left: 100%;
+  }
+  
+  .ListaDesplegablePaises {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-y: scroll;
+    position: absolute;
+    height: 40px;
+    top: 85%;
+    left: 0;
+    list-style: none;
+    background-color: $white;
+    border-radius: 12px;
+    margin-top: 5%;
+    border: solid 1px $morelightgray;
+    z-index: 2;
+  }
+  
+  .ListaDesplegablePaises .option {
+    padding: 5px 10px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  
+  .ListaDesplegablePaises .option:hover {
+    color: $gray;
+    background: #eaeaea;
+    border-radius: 12px;
+  }
+  
+  #selectPais:checked ~ #select-Pais {
+    overflow: visible;
+  }
+  
+  #selectPais:checked ~ #select-Pais .ListaDesplegablePaises {
+    height: 158px;
+  }
+  
+  .cuadro-dia {
+    width: 100%;
+    height: 50px;
+    margin: none;
+    margin-top: -19px;
+  }
+  
+  .cuadro-fecha {
+    height: 54px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -8px;
+  }
+  
+  #select-Dia {
+    width: 94%;
+    height: 33px;
+    border: solid 1px $morelightgray;
+    background-color: $white;
+    margin-top: 21px;
+    margin-left: 3px;
+    padding-bottom: -135px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  //a-text-selec
+  }
+  
+  #select-Dia .SeleccionDiaLista {
+    padding: 5px 16px 10px 7px;
+    position: absolute;
+    height: 40px;
+    top: 3%;
+  }
+  
+  #select-Dia .SeleccionDiaLista:after {
+    content: url(./../../../images/datos-adicionales/flechita.svg);
+    position: absolute;
+    width: 11.4px;
+    height: 8px;
+    background: $white;
+    top: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 10%;
+    margin-top: 17%;
+  }
+  
+  .ListaDesplegableDias {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    overflow-y: scroll;
+    top: 40px;
+    left: 0;
+    list-style: none;
+    background-color: $white;
+    border-radius: 12px;
+    margin-top: 5%;
+    border: solid 1px $morelightgray;
+    z-index: 2;
+  }
+  
+  .ListaDesplegableDias .Dias {
+    padding: 5px 10px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  
+  .ListaDesplegableDias .Dias:hover {
+    color: $gray;
+    background: #eaeaea;
+    border-radius: 12px;
+  }
+  
+  #selectDay:checked ~ #select-Dia {
+    overflow: visible;
+  }
+  
+  #selectDay:checked ~ #select-Dia .ListaDesplegableDias {
+    height: 200px;
+  }
+  
+  /*Lista desplegable de meses*/
+  #select-Mes {
+    width: 94%;
+    height: 33px;
+    border: solid 1px $morelightgray;
+    background-color: $white;
+    margin-top: 21px;
+    margin-left: 4px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    //a-text-selec
+  }
+  
+  #select-Mes .SeleccionMesLista {
+    padding: 2px 10px 10px 4px;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 10%;
+    left: 0;
+    margin: 0;
+  }
+  
+  #select-Mes .SeleccionMesLista:after {
+    content: url(./../../../images/datos-adicionales/flechita.svg);
+    position: absolute;
+    width: 11.4px;
+    height: 8px;
+    background:$white;
+    top: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 4%;
+    margin-top: 12%;
+  }
+  
+  .ListaDesplegableMeses {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    list-style: none;
+    background-color: $white;
+    border-radius: 12px;
+    margin-top: 5%;
+    border: solid 1px $morelightgray;
+    z-index: 2;
+  }
+  
+  .ListaDesplegableMeses .Meses {
+    padding: 5px 10px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  
+  .ListaDesplegableMeses .Meses:hover {
+    color: $gray;
+    background: #eaeaea;
+    border-radius: 12px;
+  }
+  
+  #selectMonth:checked ~ #select-Mes {
+    overflow: visible;
+  }
+  
+  #selectMonth:checked ~ #select-Mes .ListaDesplegableMeses {
+    height: 200px;
+  }
+
+  #select-Año {
+    width: 94%;
+    height: 33px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 21px;
+    margin-left: 4px;
+    position: relative;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(151, 151, 151);
+    border-image: initial;
+    overflow: hidden;
+    //a-text-selec
+  }
+  
+  #select-Año .SeleccionAñoLista {
+    padding: 2px 10px 10px 4px;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 10%;
+    left: 0;
+    margin: 0;
+  }
+  
+  #select-Año .SeleccionAñoLista:after {
+    content: url(./../../../images/datos-adicionales/flechita.svg);
+    position: absolute;
+    width: 11.4px;
+    height: 8px;
+    background: $white;
+    top: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: -1%;
+    margin-top: 12%;
+  }
+  
+  .ListaDesplegableAños {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    list-style: none;
+    background-color: $white;
+    border-radius: 12px;
+    margin-top: 5%;
+    border: solid 1px $morelightgray;
+    z-index: 2;
+  }
+  
+  .ListaDesplegableAños .Años {
+    padding: 5px 10px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  
+  .ListaDesplegableAños .Años:hover {
+    color: $gray;
+    background: #eaeaea;
+    border-radius: 12px;
+  }
+  
+  #selectYear:checked ~ #select-Año {
+    overflow: visible;
+  }
+  
+  #selectYear:checked ~ #select-Año .ListaDesplegableAños {
+    height: 200px;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="radio"] {
+    display: none;
+  }
+  .indication:hover .overlay-edition {
+    opacity: 3;
+  }
+  
+select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 130px;
+    color: $white;
+  }
+  
+  select:focus {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  
+  .conte-rol::after {
+    content: "\025be";
+    padding-top: 7px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color:$lemongreen;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    pointer-events: none;
+  }
+  
+.fondo {
+    background: transparent;
+  }
+  .fondolog-reco {
+    background: $white;
+  }
+  
+.error {
+    display: none;
+  }
+  
+.modal-defi {
+    position: fixed;
+    top: 32%;
+    left: 23%;
+    z-index: 1050;
+  }
+  .centrados {
+    padding-left: 69px;
+    margin-top: 33px;
+  }
+  .modal-defi1 {
+    max-width: 701px;
+    margin-left: 7%;
+  }
+  .modal-defi2 {
+    max-width: 683px;
+    margin-left: 7%;
+  }
+  .modal-open .modal {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .modal-regis-listo {
+    max-width: 645px;
+    border-radius: 2px;
+    background-color: $white;
+    padding: 29px;
+    margin-left: 9%;
+  }
+  .form-button-outline {
+    width: 100%;
+    max-width: 315px;
+    height: 48px;
+    border-radius: 21.5px;
+    outline: none !important;
+    background-color:$white;
+    font-family: $MontserratSemiBold;
+    color:$colormodal;
+    font-size: 14px;
+    border: solid 1px $skyblue;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  
+.contra:hover {
+    color: #11707d;
+  }
+  .tamaño2 {
+    height: 64px;
+    margin: auto;
+    position: relative;
+  }
+  .tamaño {
+    width: 673px;
+  }
+  .tamaño-alta {
+    width: 636px;
+    height: 431px;
+  }
+  .tamaño-alta1 {
+    width: 636px;
+    height: 39px;
+  }
+  
+.invalid-email {
+    color: red !important;
+  }
+  
+  .valid-email {
+    color: green !important;
+  }
+  .listo {
+    display: none;
+  }
+  .mod {
+    position: fixed;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+.btn-rol-all:hover {
+  opacity: 0.4;
+}
+.btn-rol-select:hover {
+  opacity: 0.4;
+}
+.border-rol {
+  border: 2px solid $morelightgray !important;
+}
+option:checked + .roles {
+    background: $lemongreen;
+    color:$white;
+    border: none;
+  }
+  .bg-color {
+    background-color: #fcfcfc;
+  }
