@@ -1,39 +1,13 @@
-@import "./components/base/typography";
-@import "./components/base/reset";
-@import "./components/atoms/spacings";
-@import "./components/atoms/texts";
-@import "./components/atoms/buttons";
-@import "./components/atoms/boxes";
-@import "./components/atoms/img";
-@import "./components/atoms/separator";
-@import "./components/atoms/inputs";
-@import "./components/atoms/video";
-@import "./components/atoms/list-item";
-@import "./components/atoms/links";
-@import "./components/atoms/dropdown";
-@import "./components/atoms/label";
-@import "./components/atoms/tooltip";
-@import "./components/molecules/posters";
-@import "./components/molecules/see-more";
-@import "./components/molecules/nav";
-@import "./components/molecules/lists";
-@import "./components/molecules/titles-section";
-@import "./components/molecules/cards";
-@import "./components/molecules/sliders";
-@import "./components/molecules/dropdown";
-@import "./components/organisms/container";
-@import "./components/organisms/sections";
-@import "./components/organisms/header";
-@import "./components/organisms/menu";
-@import "./components/organisms/footer";
-@import "./components/organisms/form";
+@import "../components/atoms/typography";
+@import "../components/atoms/text";
+@import "../components/atoms/button";
+@import "../components/atoms/color";
+@import "../components/molecules/images";
+@import "../components/molecules/positions";
+@import "../components/organisms/parts";
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /*Base*/
-
-  /*1.- ATOMS*/
-  /*============================*/
-  /*1.1 - General - Átomos*/
+  
   .menu-responsive {
     width: 25px;
     position: inherit;
@@ -41,41 +15,33 @@
     top: 0%;
     transform: inherit;
   }
-
   .menu-responsive-tablet {
     width: 25px;
   }
-
   .logo {
     width: 85px;
     display: initial;
     margin-left: 20px;
   }
-
   .border-right {
     border-right: 1px solid $bordergray !important;
     padding-right: 5px;
   }
-
   .login-item {
     width: 36px;
   }
-
   .header-slider .slick-list {
     padding: 0px 0px 0px 0px !important;
   }
-
   .poster-title-margin {
     margin: 0px;
   }
-
   .a-sports-text-poster,
   .a-poster-text-white,
   .a-poster-text-black {
     padding: 10px;
     font-size: $fontSizeSub;
   }
-
   .a-subtitle {
     text-align: left;
     font-size: 16px;
@@ -4781,7 +4747,6 @@
   .advertising-subtitle {
     font-size: 25px;
     color: #00caf5;
- 
   }
 
   .advertising-text {
