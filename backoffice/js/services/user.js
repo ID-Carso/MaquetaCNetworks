@@ -332,7 +332,34 @@ function getAllUserFront() {
     type: "POST",
     data: data,
     url: "./adapters/user.php",
-    success: function (result) {},
+    success: function (result) {
+      let json = JSON.parse(result);
+      if (json.code == 200) {
+        let userFront = "";
+        localStorage.setItem("usersFront", JSON.stringify(json.data));
+        let users = JSON.parse(localStorage.getItem("usersFront"));
+        users.forEach((user) => {
+          userFront += `
+          <div class="pd-5 name-user-front">${user.name}</div>
+          <div class='justify-content-center' _id="${user.id}">
+            <input type='image' src='./images/ojito-acti.svg' class='show-user-front-icon ml-3 btn-focus images'></input>
+            <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images edit-user-front'></input>
+            <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus delete-user-front-icon images'></input>
+          </div>
+          `;
+        });
+        console.log(userFront);
+        $(".users-front-table").html(`
+        <header>
+          <div class="text-title">Usuario</div>
+        </header>
+        <section>
+          <div class="text-title">Acciones</div>
+        </section>
+        ${userFront}
+        `);
+      }
+    },
   });
 }
 
@@ -557,8 +584,73 @@ function getUserFrontToUpdate(id) {
           let country = getNameCountry(json.data.country_id);
           let countryName = country.countryName;
           $(".SeleccionPaisLista").text(countryName);
+
+          /* SEND DATA OF USER */
+          $(".btn-save-data-front").click(function () {
+            let id = json.data.id;
+            let name = $("#edit-front-input-username").val();
+            let email = $("#edit-front-input-email").val();
+            let password = $("#edit-user-front-password").val();
+            let rePassword = $("#edit-user-front-repassword").val();
+
+            let day = $(".SeleccionDiaLista").text();
+            let month = $(".SeleccionMesLista").text();
+            let year = $(".SeleccionAñoLista").text();
+            let date = year + "-" + month + "-" + day;
+            let genderMale = $("#hombre");
+            let genderFemale = $("#mujer");
+            var gender;
+            if (genderMale.is(":checked")) {
+              gender = "M";
+            } else if (genderFemale.is(":checked")) {
+              gender = "F";
+            }
+
+            let country = $(".SeleccionPaisLista").text();
+            updateDataUserFront(
+              id,
+              name,
+              email,
+              gender,
+              date,
+              country,
+              password,
+              rePassword
+            );
+          });
         });
       }
+    },
+  });
+}
+
+function updateDataUserFront(
+  id,
+  name,
+  email,
+  gender,
+  date,
+  country,
+  password,
+  passwordConfirm
+) {
+  let data = {
+    id_user: id,
+    name: name,
+    email: email,
+    gender: gender,
+    birthday: date,
+    country: country,
+    password: password,
+    password_confirm: passwordConfirm,
+  };
+
+  $.ajax({
+    type: "POST",
+    data: data,
+    url: "./adapters/user.php",
+    success: function (result) {
+      console.log(result);
     },
   });
 }

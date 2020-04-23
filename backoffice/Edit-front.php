@@ -20,13 +20,12 @@
             <form>
               <input id="edit-front-input-username" class="insert-data  " type="text " value="" placeholder="" disabled></input>
               <input id="edit-front-input-email" class="insert-data  input-email  pt-2 pb-2 " type="text " value="" placeholder="" disabled></input>
-              <input class="insert-data input-password" type="password" id="login-password" name="login-password" placeholder=" Contraseña" autocomplete="off" />
-              <!--<img src="../images/registro/eye-none.svg" class="icon-eye3" />-->
+              <input class="insert-data input-password" type="password" id="edit-user-front-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
 
               <div class="position-relative">
-                <input class="insert-data input-password" type="password" id="login-password" name="login-password" placeholder=" Confirmar contraseña" autocomplete="off" />
-                <!--<img src="../images/registro/eye-none.svg" class="icon-eye3" />-->
+                <input class="insert-data input-password" type="password" id="edit-user-front-repassword" name="login-password" placeholder=" Confirmar contraseña" autocomplete="off" />
               </div>
+
               <div class=" navbar navbar-expand-sm  mx-auto mt-2 ">
                 <div class="col-xl-4 margin-sex">
                   <p class="margin-front">Sexo</p>
@@ -548,7 +547,7 @@
                 <button type="button" class=" btn-cancelar  ml-xl-2 ">
                   Cancelar
                 </button>
-                <button type="button" class="btn-guardar   ml-xl-2 ">
+                <button type="button" class="btn-guardar btn-save-data-front   ml-xl-2 ">
                   Guardar
                 </button>
               </div>

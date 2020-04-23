@@ -1,11 +1,3 @@
-<?php
-include './adapters/user.php';
-$user = User::getUserInstance();
-$result = $user->getAllUsersFront();
-$users = $result["data"];
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,30 +15,13 @@ $users = $result["data"];
     <div class="sombras1 ">
       <div class="grid text-progra users-front-table">
         <!--Titulos de la tabla-->
-        <header>
-          <div class="text-title">Usuario</div>
-        </header>
-        <section>
-          <div class="text-title">Acciones</div>
-        </section>
         <!--Fin-->
         <!--Contenido-->
-        <?php
-        foreach ($users as $user) {
-          echo "
-          <div class='pd-5 name-user-front'>" . $user["name"] . "</div>
-          <div class='justify-content-center' _id=" . $user["id"] . ">
-            <input type='image' src='./images/ojito-acti.svg' class='show-user-front-icon ml-3 btn-focus images'></input>
-            <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images edit-user-front'></input>
-            <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus delete-user-front-icon images'></input>
-          </div>
-          ";
-        }
-        ?>
+
       </div>
     </div>
     <!--Para funcionalidad-->
-    <div class="col-xl-1">
+    <div class="col-xl-1 user-front-table">
       <div class="row descri1">
         <input type="image" src="./images/ver-muestra.svg" class="btn-focus ver tam"></input>
         <input type="image" src="./images/edita-muestra.svg" class="btn-focus edi tam"></input>
