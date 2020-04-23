@@ -7,6 +7,7 @@ import {
   getUserFront,
   deleteUserFront,
   getUserFrontToUpdate,
+  getAllUserFront,
 } from "../services/user.js";
 
 /*
@@ -92,7 +93,7 @@ function createClickButtonRegisterUser() {
     let email = $("#email-user-bo").val();
     let username = $("#name-user-bo").val();
     let password = $("#password-user-bo").val();
-    console.log(rol, email, username, password);
+
     registerUser(username, email, password, rol);
   });
 }
@@ -301,6 +302,7 @@ function showPageUsersFront() {
     showUserFront();
     showModalDeleteUserFront();
     showUserFrontToUpdate();
+    getAllUserFront();
   });
 }
 
@@ -456,4 +458,5 @@ export {
   getNameCountry,
   getNameGender,
   showModalDeleteUserFront,
+  showUserFrontToUpdate,
 };

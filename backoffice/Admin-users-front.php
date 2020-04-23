@@ -14,9 +14,6 @@
     <!--Div para cambio-->
     <div class="sombras1 ">
       <div class="grid text-progra users-front-table">
-        <!--Titulos de la tabla-->
-        <!--Fin-->
-        <!--Contenido-->
 
       </div>
     </div>

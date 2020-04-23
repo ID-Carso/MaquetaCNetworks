@@ -12,6 +12,7 @@ import {
   getNameGender,
   showModalDeleteUserFront,
   showUserFront,
+  showUserFrontToUpdate,
 } from "../UI/UI.js";
 
 function validateTokenPassword(tokenPassword) {
@@ -310,7 +311,7 @@ function getUser(id) {
     url: "./adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
-      console.log(json);
+
       if (json.code == 200) {
         $("#cambio").load("VisualUser.php", function () {
           $(".show-username").text(json.data.name);
@@ -337,10 +338,12 @@ function getAllUserFront() {
       if (json.code == 200) {
         let userFront = "";
         localStorage.setItem("usersFront", JSON.stringify(json.data));
-        let users = JSON.parse(localStorage.getItem("usersFront"));
+        //let users = JSON.parse(localStorage.getItem("usersFront"));
+        console.log(json.data);
+        let users = json.data;
         users.forEach((user) => {
           userFront += `
-          <div class="pd-5 name-user-front">${user.name}</div>
+          <div class="pd-5">${user.name}</div>
           <div class='justify-content-center' _id="${user.id}">
             <input type='image' src='./images/ojito-acti.svg' class='show-user-front-icon ml-3 btn-focus images'></input>
             <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images edit-user-front'></input>
@@ -348,16 +351,19 @@ function getAllUserFront() {
           </div>
           `;
         });
-        console.log(userFront);
+
         $(".users-front-table").html(`
         <header>
-          <div class="text-title">Usuario</div>
+        <div class="text-title">Usuario</div>
         </header>
         <section>
           <div class="text-title">Acciones</div>
         </section>
         ${userFront}
         `);
+        showUserFront();
+        showModalDeleteUserFront();
+        showUserFrontToUpdate();
       }
     },
   });
@@ -378,6 +384,7 @@ function updateDataUser(id, name, email, password, repassword, rolId) {
     data: dataUser,
     url: "./adapters/user.php",
     success: function (result) {
+      console.log(result);
       let json = JSON.parse(result);
       if (json.code == 200) {
         $(".modal-edit-username").text(json.data.name);
@@ -546,13 +553,14 @@ function getUserFrontToUpdate(id) {
     function: "getUserFrontToUpdate",
     id: id,
   };
+
+  console.log(data);
   $.ajax({
     type: "POST",
     data: data,
     url: "./adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
-      console.log(json);
       if (json.code == 200) {
         $("#edit-front").replaceWith();
         $("#cambio").load("Edit-front.php", function () {
@@ -766,7 +774,7 @@ function getUserFront(id) {
     url: "./adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
-      console.log(json);
+      console.log(result);
       if (json.code == 200) {
         $("#visual-front").replaceWith();
         $("#cambio").load("Visual-front.php", function () {

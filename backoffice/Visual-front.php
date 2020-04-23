@@ -10,7 +10,7 @@
     <div id="visual-front">
         <div class="col-xl-6 mx-auto texto-general  ">
             <div class="container shadow tamaño ">
-                <img src="./images/equis.svg" alt="" class="equis1 closeViewFront" onClick="closeViewFront()">
+                <img src="./images/equis.svg" alt="" class="equis1 closeViewFront">
                 <div class="bg-white ">
                     <div class=" ml-5 pt-5"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
                     <div class=" col-xl-11 mx-auto mt-2 pb-4 ">
