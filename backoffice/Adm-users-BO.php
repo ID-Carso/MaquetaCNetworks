@@ -16,7 +16,7 @@
       <div class="sombras2">
         <!--titulos de la tabla-->
         <div class="grid-users text-progra users-backoffice-table">
-          <header>
+          <!-- <header>
             <div class="text-title ">Usuario</div>
           </header>
           <section>
@@ -24,7 +24,7 @@
           </section>
           <aside>
             <div class="text-title ">Acciones</div>
-          </aside>
+          </aside>-->
           <!--fin-->
           <!--Contenido de la tabla-->
 

@@ -13,7 +13,7 @@
     <!--Div para cambio-->
     <div class="col-xl-6 mx-auto ">
       <div class="container shadow texto-general tamaño ">
-        <img src="./images/equis.svg" alt="" class="equis1" onClick="muestra3()">
+        <img src="./images/equis.svg" alt="" class="equis1 closeViewFront">
         <div class="bg-white ">
           <div class=" ml-3 pt-5 pl-2"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
           <div class=" col-xl-12 mx-auto mt-xl-1 ">
@@ -560,6 +560,22 @@
       </div>
     </div>
   </div>
+  < <!--MODAL EDITAR-->
+    <div class="modal modal-edit-user-front show " id="abrirBorrar" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content centro modal-defi2">
+          <div class="modal-body  ">
+            <img src="./images/advertencia.svg" alt="" class=""><br>
+            <span class="modal-text">Edición Exitosa</span>
+            <p class="modal-text1 modal-delete-username-front"></p>
+          </div>
+          <div class="pb-4 align-item-center centro">
+            <button type="button" class="btn-si" data-dismiss="modal" id="modal-button">OK</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>

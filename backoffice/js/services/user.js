@@ -336,13 +336,13 @@ function getAllUserFront() {
     success: function (result) {
       let json = JSON.parse(result);
       if (json.code == 200) {
-        let userFront = "";
         localStorage.setItem("usersFront", JSON.stringify(json.data));
         //let users = JSON.parse(localStorage.getItem("usersFront"));
         console.log(json.data);
         let users = json.data;
+        let userF = "";
         users.forEach((user) => {
-          userFront += `
+          userF += `
           <div class="pd-5">${user.name}</div>
           <div class='justify-content-center' _id="${user.id}">
             <input type='image' src='./images/ojito-acti.svg' class='show-user-front-icon ml-3 btn-focus images'></input>
@@ -359,7 +359,7 @@ function getAllUserFront() {
         <section>
           <div class="text-title">Acciones</div>
         </section>
-        ${userFront}
+        ${userF}
         `);
         showUserFront();
         showModalDeleteUserFront();
@@ -554,7 +554,6 @@ function getUserFrontToUpdate(id) {
     id: id,
   };
 
-  console.log(data);
   $.ajax({
     type: "POST",
     data: data,
@@ -580,13 +579,15 @@ function getUserFrontToUpdate(id) {
           }
 
           /* BIRTHDAY USER FRONT*/
-          let userBirthday = json.data.birthday.split("-");
-          let year = userBirthday[0];
-          let month = userBirthday[1];
-          let day = userBirthday[2];
-          $(".SeleccionDiaLista").text(day);
-          $(".SeleccionMesLista").text();
-          $(".SeleccionAñoLista").text(year);
+          if (json.data.birthday) {
+            let userBirthday = json.data.birthday.split("-");
+            let year = userBirthday[0];
+            let month = userBirthday[1];
+            let day = userBirthday[2];
+            $(".SeleccionDiaLista").text(day);
+            $(".SeleccionMesLista").text(month);
+            $(".SeleccionAñoLista").text(year);
+          }
 
           /* COUNTRY */
           let country = getNameCountry(json.data.country_id);
@@ -626,6 +627,7 @@ function getUserFrontToUpdate(id) {
               rePassword
             );
           });
+          closeViewFront();
         });
       }
     },
@@ -643,6 +645,7 @@ function updateDataUserFront(
   passwordConfirm
 ) {
   let data = {
+    function: "updateDataUserFront",
     id_user: id,
     name: name,
     email: email,
@@ -659,6 +662,10 @@ function updateDataUserFront(
     url: "./adapters/user.php",
     success: function (result) {
       console.log(result);
+      let json = JSON.parse(result);
+      if (json.code == 200) {
+        $(".modal-edit-user-front").modal("show");
+      }
     },
   });
 }
@@ -675,6 +682,7 @@ function deleteUserBO(id) {
     url: "./adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
+
       if (json.code == 200) {
         localStorage.setItem("usersBO", JSON.stringify(json.data));
         let users = JSON.parse(localStorage.getItem("usersBO"));
@@ -718,7 +726,7 @@ function deleteUserFront(id) {
   console.log(id);
   let data = {
     function: "deleteUserFront",
-    id_admin: id,
+    id_user: id,
   };
 
   $.ajax({
@@ -726,21 +734,20 @@ function deleteUserFront(id) {
     data: data,
     url: "./adapters/user.php",
     success: function (result) {
-      console.log(result);
       let json = JSON.parse(result);
+      console.log(json);
       if (json.code == 200) {
         localStorage.setItem("usersFront", JSON.stringify(json.data));
         let users = JSON.parse(localStorage.getItem("usersFront"));
         let userBO = "";
-        console.log(users);
         users.forEach((user) => {
           userBO += `
           <div class="pd-5">${user.name}</div>
           <div class='justify-content-center' _id="${user.id}">
             <!--Acciones-->
-            <input type='image' src='./images/ver-acti.svg' class='ml-3 btn-focus view-user-icon images' id='visual'></input>
-            <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images edit-user-icon'></input>
-            <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus images delete-userbo-icon'></input>
+            <input type='image' src='./images/ver-acti.svg' class='ml-3 btn-focus show-user-front-icon images' id='visual'></input>
+            <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images edit-user-front'></input>
+            <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus images delete-user-front-icon'></input>
           </div>
           `;
         });
@@ -756,7 +763,7 @@ function deleteUserFront(id) {
         $(".modal-delete-user-front").modal("hide");
         showModalDeleteUserFront();
         showUserFront();
-        //showUserToUpdate();
+        showUserFrontToUpdate();
       }
     },
   });
@@ -773,8 +780,8 @@ function getUserFront(id) {
     data: data,
     url: "./adapters/user.php",
     success: function (result) {
-      let json = JSON.parse(result);
       console.log(result);
+      let json = JSON.parse(result);
       if (json.code == 200) {
         $("#visual-front").replaceWith();
         $("#cambio").load("Visual-front.php", function () {

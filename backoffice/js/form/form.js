@@ -29,18 +29,24 @@ function validateEmail(inputEmail, messageError) {
   }
 }
 
-function validateKeyUpEmail(inputEmail, filter, imageError, emailWarning) {
+function validateKeyUpEmail(
+  inputEmail,
+  filter,
+  imageError = null,
+  emailWarning
+) {
   let email = inputEmail.val();
+  console.log(filter.test(email));
   if (!filter.test(email)) {
     emailWarning.css("color", "red");
-    imageError.css("display", "inline-block");
-    imageError.attr("src", "../images/registro/alerta.svg");
+    /*imageError.css("display", "inline-block");
+    imageError.attr("src", "../images/registro/alerta.svg");*/
   } else if (filter.test(email)) {
     emailWarning.css("color", "green");
-    imageError.css("display", "inline-block");
-    imageError.attr("src", "../images/registro/listo.svg");
+    /*imageError.css("display", "inline-block");
+    imageError.attr("src", "../images/registro/listo.svg");*/
   } else if (inputCorreo.val().length == 0) {
-    ImagenError.css("display", "none");
+    //ImagenError.css("display", "none");
     emailWarning.css("color", "#666262");
   }
 }
@@ -75,6 +81,10 @@ function validateNewPassword(inputPassword, inputPasswordConfirm) {
   } else {
     return true;
   }
+}
+
+function validateKeyUpPassword(input, messageError) {
+  let password = inputPassword.val();
 }
 
 function validatePassword(inputPassword, messageError) {

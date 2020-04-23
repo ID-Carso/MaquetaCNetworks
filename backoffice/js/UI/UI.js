@@ -1,3 +1,4 @@
+//SERVICES
 import {
   registerUser,
   getUser,
@@ -9,6 +10,9 @@ import {
   getUserFrontToUpdate,
   getAllUserFront,
 } from "../services/user.js";
+
+//VALIDATIONS
+import { validateKeyUpEmail } from "../form/form.js";
 
 /*
 We use this method when you click on close icon in some view of 
@@ -241,6 +245,18 @@ function showFormCreateUser() {
       changeActiveBlackButton();
       changeImagesRolPermissions();
       closeViewAdminBO();
+
+      //VALIDATION KEYUP
+      let emailWarning = $("#error_email");
+      let inputEmail = $(".input-email");
+      let filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      $(".insert-data").keyup(function (e) {
+        if (e.target.classList.contains("input-email")) {
+          validateKeyUpEmail(inputEmail, filter, null, emailWarning);
+        } else if (e.target.classList.contains("input-password")) {
+        }
+        //
+      });
     });
   });
 }

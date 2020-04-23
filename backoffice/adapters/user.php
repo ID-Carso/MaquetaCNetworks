@@ -173,7 +173,7 @@ class User
     function updateDataUserFront($data)
     {
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/admin_user/editAdmin");
+        curl_setopt($ch, CURLOPT_URL, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/admin_user/editUser");
         curl_setopt($ch, CURLOPT_POST, TRUE);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -230,9 +230,11 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
 
         case 'updateDataUserFront':
             $data = array("id_admin" => $_SESSION["id"], "id_user" => $_POST['id_user'], "name" => $_POST['name'], "email" => $_POST['email'], "gender" => $_POST["gender"], "birthday" => $_POST["birthday"], "country" => $_POST["country"], "password" => $_POST['password'], "password_confirm" => $_POST['password_confirm']);
+
             $dataJson = json_encode($data);
+
             $user = User::getUserInstance();
-            echo ($user->updateDataUser($dataJson));
+            echo ($user->updateDataUserFront($dataJson));
             break;
 
         case 'getUser':

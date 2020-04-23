@@ -27,14 +27,14 @@ session_start();
     <div class="col-xl-6  shadow mx-auto tamaño-alta">
       <div class="col-xl-12 mx-auto p-3 ">
         <form>
-          <input class="insert-data Correo-electrnico pt-2 mb-2" id="name-user-bo" type="text" placeholder=" Nombre del usuario"></input>
-          <input class="insert-data  Correo-electrnico pt-2 " type="text" id="email-user-bo" placeholder=" Correo "></input>
+          <input class="insert-data input-username Correo-electrnico pt-2 mb-2" id="name-user-bo" type="text" placeholder=" Nombre del usuario"></input>
+          <input class="insert-data input-email Correo-electrnico pt-2 " type="text" id="email-user-bo" placeholder=" Correo "></input>
           <p class="correo-valido mt-1 mb-0 ml-2" id="error_email">
             Correo válido
             <img src="../images/registro/alerta.svg" class="error" />
           </p>
           <div class="pt-0 mt-0">
-            <input class="insert-data Correo-electrnico pt-2 mt-0 " type="password" id="password-user-bo" name="login-password" placeholder=" Contraseña" autocomplete="off" />
+            <input class="insert-data input-password Correo-electrnico pt-2 mt-0 " type="password" id="password-user-bo" name="login-password" placeholder=" Contraseña" autocomplete="off" />
             <!--<img src="../images/registro/eye-none.svg" class="icon-eye3" />-->
             <p class="caracteres-min mt-1 ml-2">
               8 caractéres mínimo
