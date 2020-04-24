@@ -907,7 +907,6 @@ function deleteUserBO(id) {
 }
 
 function deleteUserFront(id) {
-  console.log(id);
   let data = {
     function: "deleteUserFront",
     id_user: id,
@@ -917,9 +916,24 @@ function deleteUserFront(id) {
     type: "POST",
     data: data,
     url: "./adapters/user.php",
+    beforeSend: function () {
+      $("#Admin-users-Front")
+        .append(`<img src="./images/loader.gif" class="loader"/>`)
+        .css({
+          backgorund: "white",
+          opacity: "0.5",
+          pointerEvents: "none",
+        });
+    },
     success: function (result) {
       let json = JSON.parse(result);
       console.log(json);
+      $(".loader").remove();
+      $("#Admin-users-Front").css({
+        backgorund: "white",
+        opacity: "1",
+        pointerEvents: "all",
+      });
       if (json.code == 200) {
         localStorage.setItem("usersFront", JSON.stringify(json.data));
         let users = JSON.parse(localStorage.getItem("usersFront"));
