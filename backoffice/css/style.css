@@ -2175,6 +2175,14 @@
   margin-right: 5px;
 }
 
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .image-blue {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2356,7 +2364,6 @@
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  left: 4.1%;
 }
 
 .descri1 {

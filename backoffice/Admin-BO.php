@@ -20,7 +20,7 @@ if (!isset($_SESSION["session"])) {
     'styles.php';
   ?>
 
-  <link rel="stylesheet" href="./styles/other.css">
+
 
 
 </head>
