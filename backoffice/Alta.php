@@ -11,13 +11,11 @@ session_start();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="./js/main.js" type="module" defer></script>
-
-
   <title>Claro Networks</title>
 </head>
 
 <body>
-  <div id="general">
+  <div id="register-userbo-view">
     <!--Div para cambio-->
     <div class="col-xl-6 mx-auto title-altauser tamaño-alta1">
       <!--Inicio para tarjeta-->

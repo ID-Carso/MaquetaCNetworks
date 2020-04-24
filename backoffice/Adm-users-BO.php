@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="./js/main.js" type="module"></script>
+<!--<script src="./js/main.js" type="module"></script>-->
 
 <head>
 
@@ -16,24 +16,13 @@
       <div class="sombras2">
         <!--titulos de la tabla-->
         <div class="grid-users text-progra users-backoffice-table">
-          <!-- <header>
-            <div class="text-title ">Usuario</div>
-          </header>
-          <section>
-            <div class="text-title ">Rol</div>
-          </section>
-          <aside>
-            <div class="text-title ">Acciones</div>
-          </aside>-->
-          <!--fin-->
-          <!--Contenido de la tabla-->
 
         </div>
 
       </div>
 
       <!--Para funcionalidad-->
-      <div class="col-xl-1">
+      <!--<div class="col-xl-1">
         <div class="row descri4">
           <input type="image" src="./images/ver-muestra.svg" class="btn-focus ver tam "></input>
           <input type="image" src="./images/edita-muestra.svg" class="btn-focus edi tam"></input>
@@ -45,7 +34,7 @@
           <div class="borra"><img src="./images/recuadro1-hover.svg"><span class="text-borra">Borrar</span></div>
         </div>
 
-      </div>
+      </div>-->
     </div>
   </div>
 </body>

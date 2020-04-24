@@ -17,7 +17,7 @@ session_start();
 <body>
   <div id="general">
     <!--Div para cambio-->
-    <div class="col-xl-6  shadow mx-auto texto-general tamaño">
+    <div class="col-xl-6  shadow mx-auto texto-general tamaño edit-userbo-content">
       <img src="./images/equis.svg" alt="" class="equis1 closeViewBO">
       <form>
         <div class="col-xl-11 pt-5 pl-5">

@@ -18,7 +18,7 @@
       </div>
     </div>
     <!--Para funcionalidad-->
-    <div class="col-xl-1 user-front-table">
+    <!--<div class="col-xl-1 user-front-table">
       <div class="row descri1">
         <input type="image" src="./images/ver-muestra.svg" class="btn-focus ver tam"></input>
         <input type="image" src="./images/edita-muestra.svg" class="btn-focus edi tam"></input>
@@ -29,7 +29,7 @@
         <div class="edita1"><img src="./images/recuadro1-hover.svg"><span class="text-edita">Editar</span></div>
         <div class="borra1"><img src="./images/recuadro1-hover.svg"><span class="text-borra">Borrar</span></div>
       </div>
-    </div>
+    </div>-->
   </div>
 
 </body>

@@ -11,7 +11,7 @@
 <body class="scroll">
 
     <div id="usuarios">
-        <div class=" col-xl-6 mx-auto texto-general " id="visual">
+        <!--<div class=" col-xl-6 mx-auto texto-general " id="visual">
             <div class="container shadow tamaño ">
                 <img src="./images/equis.svg" alt="" class="equis1 closeViewBO">
                 <div class="w3-card-4 bg-white ">
@@ -39,7 +39,7 @@
 
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
 </body>
 

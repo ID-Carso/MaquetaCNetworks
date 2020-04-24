@@ -13,7 +13,17 @@ import {
   showModalDeleteUserFront,
   showUserFront,
   showUserFrontToUpdate,
+  showDescriptions,
+  showFormCreateUser,
 } from "../UI/UI.js";
+
+//VALIDATIONS
+import {
+  validateKeyUpEmail,
+  validateKeyUpPassword,
+  validateEmail,
+  validatePassword,
+} from "../form/form.js";
 
 function validateTokenPassword(tokenPassword) {
   $.ajax({
@@ -146,11 +156,16 @@ function registerUser(name, email, password, rol) {
     type: "POST",
     data: user,
     url: "./adapters/user.php",
-
+    beforeSend: function () {
+      $("#register-userbo-view").prepend(
+        `<img src="./images/loader.gif" class="loader"/>`
+      );
+    },
     success: function (result) {
       console.log(result);
       let json = JSON.parse(result);
       if (json.code == 200) {
+        //$(".loader").remove();
         $(".modal-register-username").text(json.data.name);
         let modalPrivileges = "";
         switch (json.data.rol_id) {
@@ -242,6 +257,8 @@ function registerUser(name, email, password, rol) {
         }
         $(".modal-privileges-container").html(modalPrivileges);
         $(".modal-newuser-bo").modal("show");
+      } else {
+        $(".loader").remove();
       }
     },
   });
@@ -257,6 +274,11 @@ function getAllUsersBO() {
     type: "POST",
     data: dataUser,
     url: "./adapters/user.php",
+    beforeSend: function () {
+      $("#Adm-users-BO").html(
+        `<img src="./images/loader.gif" class="loader"/>`
+      );
+    },
     success: function (result) {
       let json = JSON.parse(result);
       if (json.code == 200) {
@@ -278,22 +300,43 @@ function getAllUsersBO() {
           </div>
           `;
         });
-        $(".users-backoffice-table").html(`          
-        <header>
-        <div class="text-title ">Usuario</div>
-        </header>
-        <section>
-          <div class="text-title ">Rol</div>
-        </section>
-        <aside>
-          <div class="text-title ">Acciones</div>
-        </aside>
-        ${userBO}
-        `);
+        $("#Adm-users-BO").html(`  
+        <div class="col-xl-10 position-btn-alta">
+          <button class="btn-alta mb-4" id="btnAlta">Agregar nuevo usuario</button>
+        </div>
+        <div class="sombras2">
+          <div class="grid-users text-progra users-backoffice-table">        
+            <header>
+            <div class="text-title ">Usuario</div>
+            </header>
+            <section>
+              <div class="text-title ">Rol</div>
+            </section>
+            <aside>
+              <div class="text-title ">Acciones</div>
+            </aside>
+            ${userBO}
+          </div>
+        </div>
+        <div class="col-xl-1">
+        <div class="row descri4">
+          <input type="image" src="./images/ver-muestra.svg" class="btn-focus ver tam "></input>
+          <input type="image" src="./images/edita-muestra.svg" class="btn-focus edi tam"></input>
+          <input type="image" src="./images/borrar-muestra.svg" class="btn-focus borrar tam"></input>
+        </div>
+        <div class="descri2">
+          <div class="veri"><img src="./images/recuadro1-hover.svg"><span class="text-veri">Visualizar</span></div>
+          <div class="edita"><img src="./images/recuadro1-hover.svg"><span class="text-edita">Editar</span></div>
+          <div class="borra"><img src="./images/recuadro1-hover.svg"><span class="text-borra">Borrar</span></div>
+        </div>
 
+      </div>
+        `);
+        showDescriptions();
         showModalDeleteUserBO();
         showUserBO();
         showUserToUpdate();
+        showFormCreateUser();
       }
     },
   });
@@ -309,21 +352,67 @@ function getUser(id) {
     type: "POST",
     data: data,
     url: "./adapters/user.php",
+    beforeSend: function () {
+      $("#Adm-users-BO")
+        .append(`<img src="./images/loader.gif" class="loader"/>`)
+        .css({
+          backgorund: "white",
+          opacity: "0.5",
+          pointerEvents: "none",
+        });
+    },
     success: function (result) {
       let json = JSON.parse(result);
-
+      console.log(json);
       if (json.code == 200) {
         $("#cambio").load("VisualUser.php", function () {
-          $(".show-username").text(json.data.name);
+          let rol = changeNameRol(json.data.rol.id);
+          $("#usuarios").html(`
+          <div class=" col-xl-6 mx-auto texto-general " id="visual">
+            <div class="container shadow tamaño ">
+                <img src="./images/equis.svg" alt="" class="equis1 closeViewBO">
+                <div class="w3-card-4 bg-white ">
+                    <div class="w3-container ml-3 pt-5 pl-4"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
+                    <div class=" col-xl-12 mx-auto mt-xl-3 mb-xl-2 pl-5 pr-5 ">
+                        <form>
+                            <div>
+                                <p class="insert-data pb-2 pt-2 show-username">${json.data.name}</p>
+                            </div>
+                            <div>
+                                <p class="insert-data  input-email  mt-4 pt-2 pb-2 show-email">
+                                  ${json.data.email}
+                                </p>
+                            </div></input>
+                            <div>
+                                <p class="insert-data input-password mt-4 pt-2 pb-2" type="password" id="login-password" name="login-password" autocomplete="off">***********</p>
+                            </div>
+
+                            </input>
+
+                            <p class="mt-4 ml-2">Rol de usuario</p>
+                            <button type="button" class=" btn-succes mb-4 show-rol" id="login-button">
+                              ${rol}
+                            </button>
+                        </form>
+                        <br>
+                    </div>
+
+                </div>
+            </div>
+          </div>
+          `);
+          /*$(".show-username").text(json.data.name);
           $(".show-email").text(json.data.email);
           let rol = changeNameRol(json.data.rol.id);
-          $(".show-rol").text(rol);
+          $(".show-rol").text(rol);*/
           closeViewAdminBO();
         });
       }
     },
   });
 }
+
+/* GET ALL FRONT USERS */
 function getAllUserFront() {
   let data = {
     function: "getAllUsersFront",
@@ -333,12 +422,16 @@ function getAllUserFront() {
     type: "POST",
     data: data,
     url: "./adapters/user.php",
+    beforeSend: function () {
+      $("#Admin-users-Front").html(
+        `<img src="./images/loader.gif" class="loader"/>`
+      );
+    },
     success: function (result) {
       let json = JSON.parse(result);
       if (json.code == 200) {
         localStorage.setItem("usersFront", JSON.stringify(json.data));
-        //let users = JSON.parse(localStorage.getItem("usersFront"));
-        console.log(json.data);
+
         let users = json.data;
         let userF = "";
         users.forEach((user) => {
@@ -352,14 +445,31 @@ function getAllUserFront() {
           `;
         });
 
-        $(".users-front-table").html(`
-        <header>
-        <div class="text-title">Usuario</div>
-        </header>
-        <section>
-          <div class="text-title">Acciones</div>
-        </section>
-        ${userF}
+        $("#Admin-users-Front").html(`
+        <div class="sombras1 ">
+          <div class="grid text-progra users-front-table">
+            <header>
+              <div class="text-title">Usuario</div>
+            </header>
+            <section>
+              <div class="text-title">Acciones</div>
+            </section>
+            ${userF}
+          </div>
+          
+        </div>
+        <div class="col-xl-1 user-front-table">
+          <div class="row descri1">
+            <input type="image" src="./images/ver-muestra.svg" class="btn-focus ver tam"></input>
+            <input type="image" src="./images/edita-muestra.svg" class="btn-focus edi tam"></input>
+            <input type="image" src="./images/borrar-muestra.svg" class="btn-focus borrar tam"></input>
+          </div>
+          <div class="descri3">
+            <div class="veri1"><img src="./images/recuadro1-hover.svg"><span class="text-veri">Visualizar</span></div>
+            <div class="edita1"><img src="./images/recuadro1-hover.svg"><span class="text-edita">Editar</span></div>
+            <div class="borra1"><img src="./images/recuadro1-hover.svg"><span class="text-borra">Borrar</span></div>
+          </div>
+        </div>
         `);
         showUserFront();
         showModalDeleteUserFront();
@@ -383,9 +493,24 @@ function updateDataUser(id, name, email, password, repassword, rolId) {
     type: "POST",
     data: dataUser,
     url: "./adapters/user.php",
+    beforeSend: function () {
+      $(".edit-userbo-content")
+        .append(`<img src="./images/loader.gif" class="loader"/>`)
+        .css({
+          backgorund: "white",
+          opacity: "0.5",
+          pointerEvents: "none",
+        });
+    },
     success: function (result) {
       console.log(result);
       let json = JSON.parse(result);
+      $(".loader").remove();
+      $(".edit-userbo-content").css({
+        backgorund: "white",
+        opacity: "1",
+        pointerEvents: "all",
+      });
       if (json.code == 200) {
         $(".modal-edit-username").text(json.data.name);
         let modalPrivileges = "";
@@ -493,6 +618,15 @@ function getUserToUpdate(id) {
     type: "POST",
     data: data,
     url: "./adapters/user.php",
+    beforeSend: function () {
+      $("#Adm-users-BO")
+        .append(`<img src="./images/loader.gif" class="loader"/>`)
+        .css({
+          backgorund: "white",
+          opacity: "0.5",
+          pointerEvents: "none",
+        });
+    },
     success: function (result) {
       console.log(result);
       let json = JSON.parse(result);
@@ -558,8 +692,18 @@ function getUserFrontToUpdate(id) {
     type: "POST",
     data: data,
     url: "./adapters/user.php",
+    beforeSend: function () {
+      $("#Admin-users-Front")
+        .append(`<img src="./images/loader.gif" class="loader"/>`)
+        .css({
+          backgorund: "white",
+          opacity: "0.5",
+          pointerEvents: "none",
+        });
+    },
     success: function (result) {
       let json = JSON.parse(result);
+
       if (json.code == 200) {
         $("#edit-front").replaceWith();
         $("#cambio").load("Edit-front.php", function () {
@@ -594,18 +738,29 @@ function getUserFrontToUpdate(id) {
           let countryName = country.countryName;
           $(".SeleccionPaisLista").text(countryName);
 
-          /* SEND DATA OF USER */
+          /* SEND DATA'S FRONT USER */
           $(".btn-save-data-front").click(function () {
             let id = json.data.id;
             let name = $("#edit-front-input-username").val();
             let email = $("#edit-front-input-email").val();
-            let password = $("#edit-user-front-password").val();
-            let rePassword = $("#edit-user-front-repassword").val();
 
+            /* PASSWORD TO SEND*/
+            let password = $("#edit-user-front-password").val();
+            if (password == "") {
+              password = 0;
+            }
+            let rePassword = $("#edit-user-front-repassword").val();
+            if (rePassword == "") {
+              rePassword = 0;
+            }
             let day = $(".SeleccionDiaLista").text();
             let month = $(".SeleccionMesLista").text();
             let year = $(".SeleccionAñoLista").text();
             let date = year + "-" + month + "-" + day;
+            if (day == "Día" || month == "Mes" || year == "Año") {
+              date = 0;
+            }
+
             let genderMale = $("#hombre");
             let genderFemale = $("#mujer");
             var gender;
@@ -655,14 +810,29 @@ function updateDataUserFront(
     password: password,
     password_confirm: passwordConfirm,
   };
-
+  console.log(data);
   $.ajax({
     type: "POST",
     data: data,
     url: "./adapters/user.php",
+    beforeSend: function () {
+      $(".edit-userfront-content")
+        .append(`<img src="./images/loader.gif" class="loader"/>`)
+        .css({
+          backgorund: "white",
+          opacity: "0.5",
+          pointerEvents: "none",
+        });
+    },
     success: function (result) {
-      console.log(result);
       let json = JSON.parse(result);
+      console.log(json);
+      $(".loader").remove();
+      $(".edit-userfront-content").css({
+        backgorund: "white",
+        opacity: "1",
+        pointerEvents: "all",
+      });
       if (json.code == 200) {
         $(".modal-edit-user-front").modal("show");
       }
@@ -680,9 +850,23 @@ function deleteUserBO(id) {
     type: "POST",
     data: data,
     url: "./adapters/user.php",
+    beforeSend: function () {
+      $("#Adm-users-BO")
+        .append(`<img src="./images/loader.gif" class="loader"/>`)
+        .css({
+          backgorund: "white",
+          opacity: "0.5",
+          pointerEvents: "none",
+        });
+    },
     success: function (result) {
       let json = JSON.parse(result);
-
+      $(".loader").remove();
+      $("#Adm-users-BO").css({
+        backgorund: "white",
+        opacity: "1",
+        pointerEvents: "all",
+      });
       if (json.code == 200) {
         localStorage.setItem("usersBO", JSON.stringify(json.data));
         let users = JSON.parse(localStorage.getItem("usersBO"));
@@ -779,6 +963,15 @@ function getUserFront(id) {
     type: "POST",
     data: data,
     url: "./adapters/user.php",
+    beforeSend: function () {
+      $("#Admin-users-Front")
+        .append(`<img src="./images/loader.gif" class="loader"/>`)
+        .css({
+          backgorund: "white",
+          opacity: "0.5",
+          pointerEvents: "none",
+        });
+    },
     success: function (result) {
       console.log(result);
       let json = JSON.parse(result);

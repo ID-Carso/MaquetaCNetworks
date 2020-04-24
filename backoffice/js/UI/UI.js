@@ -12,7 +12,12 @@ import {
 } from "../services/user.js";
 
 //VALIDATIONS
-import { validateKeyUpEmail } from "../form/form.js";
+import {
+  validateKeyUpEmail,
+  validateKeyUpPassword,
+  validateEmail,
+  validatePassword,
+} from "../form/form.js";
 
 /*
 We use this method when you click on close icon in some view of 
@@ -99,6 +104,8 @@ function createClickButtonRegisterUser() {
     let password = $("#password-user-bo").val();
 
     registerUser(username, email, password, rol);
+    validateEmail($(".input-email"), $(".correo-valido"));
+    validatePassword($(".input-password"), $(".caracteres-min"));
   });
 }
 
@@ -252,10 +259,10 @@ function showFormCreateUser() {
       let filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
       $(".insert-data").keyup(function (e) {
         if (e.target.classList.contains("input-email")) {
-          validateKeyUpEmail(inputEmail, filter, null, emailWarning);
+          validateKeyUpEmail($(".input-email"), filter, null, emailWarning);
         } else if (e.target.classList.contains("input-password")) {
+          validateKeyUpPassword($(".input-password"), $(".caracteres-min "));
         }
-        //
       });
     });
   });
@@ -475,4 +482,5 @@ export {
   getNameGender,
   showModalDeleteUserFront,
   showUserFrontToUpdate,
+  showDescriptions,
 };

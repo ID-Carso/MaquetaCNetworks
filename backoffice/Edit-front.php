@@ -11,7 +11,7 @@
 <body class="scroll">
   <div id="edit-front">
     <!--Div para cambio-->
-    <div class="col-xl-6 mx-auto ">
+    <div class="col-xl-6 mx-auto edit-userfront-content">
       <div class="container shadow texto-general tamaño ">
         <img src="./images/equis.svg" alt="" class="equis1 closeViewFront">
         <div class="bg-white ">

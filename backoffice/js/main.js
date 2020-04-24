@@ -22,7 +22,8 @@ import {
 // import { validateUser } from "./form/form.js";
 // import { validateToken } from "./form/form.js";
 
-/* Service User */
+/* Service User
+ */
 import {
   signIn,
   signOut,

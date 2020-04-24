@@ -15,12 +15,12 @@ function validateEmail(inputEmail, messageError) {
 
   if (email.length == 0) {
     messageError
-      .addClass("invalid-email d-block")
+      .css("color", "red")
       .text("Debes ingresar un correo electrónico");
     return false;
   } else if (!filter.test(email)) {
     messageError
-      .addClass("invalid-email d-block")
+      .css("color", "red")
       .text("El correo electrónico no tiene un formato válido");
     console.log("error");
     return false;
@@ -38,11 +38,13 @@ function validateKeyUpEmail(
   let email = inputEmail.val();
   console.log(filter.test(email));
   if (!filter.test(email)) {
-    emailWarning.css("color", "red");
+    inputEmail.css("border-bottom", "1px solid red");
+    emailWarning.text("Correo válido").css("color", "red");
     /*imageError.css("display", "inline-block");
     imageError.attr("src", "../images/registro/alerta.svg");*/
   } else if (filter.test(email)) {
-    emailWarning.css("color", "green");
+    inputEmail.css("border-bottom", "1px solid green");
+    emailWarning.text("Correo válido").css("color", "green");
     /*imageError.css("display", "inline-block");
     imageError.attr("src", "../images/registro/listo.svg");*/
   } else if (inputCorreo.val().length == 0) {
@@ -84,20 +86,27 @@ function validateNewPassword(inputPassword, inputPasswordConfirm) {
 }
 
 function validateKeyUpPassword(input, messageError) {
-  let password = inputPassword.val();
+  let password = input.val();
+  let numCharacters = password.length;
+
+  if (numCharacters < 8) {
+    input.css("border-bottom", "solid 1px red");
+    messageError.css("color", "red");
+  } else {
+    input.css("border-bottom", "solid 1px green");
+    messageError.css("color", "green");
+  }
 }
 
 function validatePassword(inputPassword, messageError) {
   let password = inputPassword.val();
   if (password === "") {
-    messageError
-      .addClass("invalid-email")
-      .text("Debes ingresar una contraseña");
+    messageError.css("color", "red").text("Debes ingresar una contraseña");
     inputPassword.addClass("input-border-red");
     return false;
   } else if (password.length < 8) {
     messageError
-      .addClass("invalid-email")
+      .css("color", "red")
       .text("La contraseña debe tener al menos 8 caractéres");
     inputPassword.addClass("input-border-red");
     return false;
@@ -150,4 +159,5 @@ export {
   validatePassword,
   validateUser,
   validateToken,
+  validateKeyUpPassword,
 };
