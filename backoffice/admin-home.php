@@ -11,7 +11,7 @@
 <div id="Admin-home-BO" > <!--Div de cambio-->
     <div class="sombras1 ">  
       <!--Titulos de la tabla-->              
-        <div class="grid text-progra">          
+        <div class="grid texto-general">          
             <header>
           <div class="text-title">Sección</div>
            </header>

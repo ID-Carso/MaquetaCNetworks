@@ -25,23 +25,23 @@ session_start();
     <div class="col-xl-6  shadow mx-auto tamaño-alta">
       <div class="col-xl-12 mx-auto p-3 ">
         <form>
-          <input class="insert-data input-username Correo-electrnico pt-2 mb-2" id="name-user-bo" type="text" placeholder=" Nombre del usuario"></input>
-          <input class="insert-data input-email Correo-electrnico pt-2 " type="text" id="email-user-bo" placeholder=" Correo "></input>
+          <input class="insert-data input-username texto-general pt-2 mb-2" id="name-user-bo" type="text" placeholder=" Nombre del usuario"></input>
+          <input class="insert-data input-email texto-general pt-2 " type="text" id="email-user-bo" placeholder=" Correo "></input>
           <p class="correo-valido mt-1 mb-0 ml-2" id="error_email">
             Correo válido
-            <img src="../images/registro/alerta.svg" class="error" />
+            <img src="./images/registro/alerta.svg" class="error" />
           </p>
           <div class="pt-0 mt-0">
-            <input class="insert-data input-password Correo-electrnico pt-2 mt-0 " type="password" id="password-user-bo" name="login-password" placeholder=" Contraseña" autocomplete="off" />
+            <input class="insert-data input-password texto-general pt-2 mt-0 " type="password" id="password-user-bo" name="login-password" placeholder=" Contraseña" autocomplete="off" />
             <!--<img src="../images/registro/eye-none.svg" class="icon-eye3" />-->
             <p class="caracteres-min mt-1 ml-2">
               8 caractéres mínimo
-              <img src="../images/registro/listo.svg" class="listo" />
+              <img src="./images/registro/listo.svg" class="listo" />
             </p>
           </div>
           <div class=" justify-content-center mx-auto ">
             <!--Sección de roles-->
-            <p class="p-4 mb-4 mt-4  border-rol Correo-electrnico ">Rol
+            <p class="p-4 mb-4 mt-4  border-rol texto-general ">Rol
               <!--recuadro rol-->
               <div class="alineacion">
                 <button type="button" class="button-rol bt-rol-register btn-rol-all  btn-rol px-xl-0 enviamos ml-5 btn-rol-select" rel='User-Raiz' id_rol="1" id_button="1">Usuario Raíz</button>
@@ -157,7 +157,7 @@ session_start();
       </div>
     </div>
     <div class="col-xl-8 position-btn-regis  mx-auto ">
-      <button type="button" class="btn-regis register-user-button">REGISTRAR</button>
+      <button type="button" class="btn-regis text-public register-user-button">REGISTRAR</button>
     </div>
 
     <!--modal regis-->
@@ -172,7 +172,7 @@ session_start();
 
           </div>
           <div class="text-center">
-            <button type="button" class="btn-aceptar mt-4" id="modal-button" data-dismiss="modal">ACEPTAR</button>
+            <button type="button" class="btn-aceptar text-entendido mt-4" id="modal-button" data-dismiss="modal">ACEPTAR</button>
           </div>
         </div>
       </div>

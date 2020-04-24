@@ -13,7 +13,7 @@
   <div id="Admin-users-Front">
     <!--Div para cambio-->
     <div class="sombras1 ">
-      <div class="grid text-progra users-front-table">
+      <div class="grid texto-general users-front-table">
 
       </div>
     </div>
@@ -41,11 +41,11 @@
       <div class="modal-body  ">
         <img src="./images/advertencia.svg" alt="" class=""><br>
         <span class="modal-text">¿Desea eliminar este usuario?</span>
-        <p class="modal-text1 modal-delete-username-front"></p>
+        <p class="text-modal-text1 modal-delete-username-front"></p>
       </div>
       <div class="pb-4 align-item-center centro">
-        <button type="button" class=" btn-no" id="modal-button" data-dismiss="modal">No</button>
-        <button type="button" class="btn-si modal-delete-front-confirm" id="modal-button">Si</button>
+        <button type="button" class=" btn-no text-no" id="modal-button" data-dismiss="modal">No</button>
+        <button type="button" class="btn-si text-si modal-delete-front-confirm" id="modal-button">Si</button>
 
       </div>
     </div>

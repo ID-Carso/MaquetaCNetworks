@@ -11,11 +11,11 @@
     <!--div para el cambio-->
     <div id="Adm-users-BO">
       <div class="col-xl-10 position-btn-alta">
-        <button class="btn-alta mb-4" id="btnAlta">Agregar nuevo usuario</button>
+        <button class="btn-alta text-public mb-4" id="btnAlta">Agregar nuevo usuario</button>
       </div>
       <div class="sombras2">
         <!--titulos de la tabla-->
-        <div class="grid-users text-progra users-backoffice-table">
+        <div class="grid-users texto-general users-backoffice-table">
 
         </div>
 
@@ -46,11 +46,11 @@
       <div class="modal-body ">
         <img src="./images/advertencia.svg" alt="" class="mb-3">
         <p class="modal-text">¿Desea eliminar este usuario?</p>
-        <p class="modal-text1">Fernando Montes de Oca</p>
+        <p class="text-modal-text1">Fernando Montes de Oca</p>
       </div>
       <div class="pb-4 align-item-center centro">
-        <button type="button" class=" btn-no" id="modal-button" data-dismiss="modal">No</button>
-        <button type="button" class="btn-si modal-delete-button-confirm" id="modal-button">Si</button>
+        <button type="button" class=" btn-no text-no" id="modal-button" data-dismiss="modal">No</button>
+        <button type="button" class="btn-si text-si modal-delete-button-confirm" id="modal-button">Si</button>
 
       </div>
     </div>

@@ -13,101 +13,101 @@
     <!--Div para cambio-->
     <div class="col-xl-6 mx-auto edit-userfront-content">
       <div class="container shadow texto-general tamaño ">
-        <img src="./images/equis.svg" alt="" class="equis1 closeViewFront">
+        <img src="./images/equis.svg" alt="" class="equis2 closeViewFront">
         <div class="bg-white ">
           <div class=" ml-3 pt-5 pl-2"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
           <div class=" col-xl-12 mx-auto mt-xl-1 ">
             <form>
-              <input id="edit-front-input-username" class="insert-data  " type="text " value="" placeholder="" disabled></input>
-              <input id="edit-front-input-email" class="insert-data  input-email  pt-2 pb-2 " type="text " value="" placeholder="" disabled></input>
-              <input class="insert-data input-password" type="password" id="edit-user-front-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
+              <input id="edit-front-input-username" class="insert-data texto-general " type="text " value="" placeholder="" disabled></input>
+              <input id="edit-front-input-email" class="insert-data texto-general input-email  pt-2 pb-2 " type="text " value="" placeholder="" disabled></input>
+              <input class="insert-data input-password texto-general" type="password" id="edit-user-front-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
 
               <div class="position-relative">
                 <input class="insert-data input-password" type="password" id="edit-user-front-repassword" name="login-password" placeholder=" Confirmar contraseña" autocomplete="off" />
               </div>
 
               <div class=" navbar navbar-expand-sm  mx-auto mt-2 ">
-                <div class="col-xl-4 margin-sex">
-                  <p class="margin-front">Sexo</p>
+                <div class="col-xl-4 margin-sex1">
+                  <p class="margin-front texto-general">Sexo</p>
                   <form action="" name="formilariosexo" id="formulariosexo" class="formulario">
                     <div class="sexo">
                       <input type="radio" name="sexo" id="mujer" checked />
                       <label for="mujer" id="mujerestado" class="mujer-estilo">
-                        <img id="women" src="../images/datos-adicionales/femenino-activo.svg" class="women" />
+                        <img id="women" src="./images/datos-adicionales/femenino-activo.svg" class="women text-sexo" />
                         Femenino</label>
                       <input type="radio" name="sexo" id="hombre" />
-                      <label for="hombre" id="hombreestado" class="hombre-estilo">
+                      <label for="hombre" id="hombreestado" class="hombre-estilo text-sexo">
                         Masculino
-                        <img id="men" src="../images/datos-adicionales/masculino-inactivo.svg" class="men" /></label>
+                        <img id="men" src="./images/datos-adicionales/masculino-inactivo.svg" class="men" /></label>
                     </div>
                   </form>
                 </div>
 
                 <div class="col-xl-4" id="drop-paises">
-                  <p class="margin-front">País de residencia</p>
+                  <p class="margin-front texto-general">País de residencia</p>
 
-                  <input type="checkbox" id="selectPais" />
+                  <input type="checkbox" id="selectPais" class="texto-general"/>
                   <label for="selectPais" id="select-Pais">
                     <p class="SeleccionPaisLista">
                       <img src="" class="Icon_paises" />Selecciona tu país
                     </p>
                     <ul class="ListaDesplegablePaises">
                       <li class="option" id-select="select-Pais" value="USA">
-                        <img src="../images/paises/usa.svg" class="Icon_paises" />USA
+                        <img src="./images/paises/usa.svg" class="Icon_paises" />USA
                       </li>
                       <li class="option" id-select="select-Pais" value="Argentina">
-                        <img src="../images/paises/argentina.svg" class="Icon_paises" />Argentina
+                        <img src="./images/paises/argentina.svg" class="Icon_paises" />Argentina
                       </li>
                       <li class="option" id-select="select-Pais" value="Brazil">
-                        <img src="../images/paises/brazil.svg" class="Icon_paises" />Brazil
+                        <img src="./images/paises/brazil.svg" class="Icon_paises" />Brazil
                       </li>
                       <li class="option" id-select="select-Pais" value="Chile">
-                        <img src="../images/paises/chile.svg" class="Icon_paises" />Chile
+                        <img src="./images/paises/chile.svg" class="Icon_paises" />Chile
                       </li>
                       <li class="option" id-select="select-Pais" value="Colombia">
-                        <img src="../images/paises/colombia.svg" class="Icon_paises" />Colombia
+                        <img src="./images/paises/colombia.svg" class="Icon_paises" />Colombia
                       </li>
                       <li class="option" id-select="select-Pais" value="Costa Rica">
-                        <img src="../images/paises/costa-rica.svg" class="Icon_paises" />Costa Rica
+                        <img src="./images/paises/costa-rica.svg" class="Icon_paises" />Costa Rica
                       </li>
                       <li class="option" id-select="select-Pais" value="Ecuador">
-                        <img src="../images/paises/ecuador.svg" class="Icon_paises" />Ecuador
+                        <img src="./images/paises/ecuador.svg" class="Icon_paises" />Ecuador
                       </li>
                       <li class="option" id-select="select-Pais" value="El salvador">
-                        <img src="../images/paises/el-salvador.svg" class="Icon_paises" />El Salvador
+                        <img src="./images/paises/el-salvador.svg" class="Icon_paises" />El Salvador
                       </li>
                       <li class="option" id-select="select-Pais" value="Guatemala">
-                        <img src="../images/paises/guatemala.svg" class="Icon_paises" />Guatemala
+                        <img src="./images/paises/guatemala.svg" class="Icon_paises" />Guatemala
                       </li>
                       <li class="option" id-select="select-Pais" value="Honduras">
-                        <img src="../images/paises/honduras.svg" class="Icon_paises" />Honduras
+                        <img src="./images/paises/honduras.svg" class="Icon_paises" />Honduras
                       </li>
                       <li class="option" id-select="select-Pais" value="Nicaragua">
-                        <img src="../images/paises/nicaragua.svg" class="Icon_paises" />Nicaragua
+                        <img src="./images/paises/nicaragua.svg" class="Icon_paises" />Nicaragua
                       </li>
                       <li class="option" id-select="select-Pais" value="Panamá">
-                        <img src="../images/paises/panama.svg" class="Icon_paises" />Panamá
+                        <img src="./images/paises/panama.svg" class="Icon_paises" />Panamá
                       </li>
                       <li class="option" id-select="select-Pais" value="Paraguay">
-                        <img src="../images/paises/paraguay.svg" class="Icon_paises" />Paraguay
+                        <img src="./images/paises/paraguay.svg" class="Icon_paises" />Paraguay
                       </li>
                       <li class="option" id-select="select-Pais" value="Perú">
-                        <img src="../images/paises/peru.svg" class="Icon_paises" />Perú
+                        <img src="./images/paises/peru.svg" class="Icon_paises" />Perú
                       </li>
                       <li class="option" id-select="select-Pais" value="Puerto Rico">
-                        <img src="../images/paises/puerto-rico.svg" class="Icon_paises" />Puerto Rico
+                        <img src="./images/paises/puerto-rico.svg" class="Icon_paises" />Puerto Rico
                       </li>
                       <li class="option" id-select="select-Pais" value="Dominican Republic">
-                        <img src="../images/paises/dominican-republic.svg" class="Icon_paises" />Dominican Republic
+                        <img src="./images/paises/dominican-republic.svg" class="Icon_paises" />Dominican Republic
                       </li>
                       <li class="option" id-select="select-Pais" value="Uruguay">
-                        <img src="../images/paises/uruguay.svg" class="Icon_paises" />Uruguay
+                        <img src="./images/paises/uruguay.svg" class="Icon_paises" />Uruguay
                       </li>
                     </ul>
                   </label>
                 </div>
 
-                <div class="col-xl-4 fecha-margi">
+                <div class="col-xl-4 fecha-margi texto-general">
                   <p class="margin-fecha">Fecha de nacimiento</p>
                   <div class="cuadro-fecha">
                     <div class="cuadro-dia">
@@ -116,8 +116,8 @@
                       <label for="selectDay" id="select-Dia">
 
 
-                        <p class="SeleccionDiaLista">Día</p>
-                        <ul class="ListaDesplegableDias">
+                        <p class="SeleccionDiaLista texto-general">Día</p>
+                        <ul class="ListaDesplegableDias texto-general">
                           <li class="Dias" id-select="select-Dia" value="01">
                             01
                           </li>
@@ -215,9 +215,9 @@
                       </label>
                     </div>
                     <div class="cuadro-dia">
-                      <input type="checkbox" id="selectMonth" />
+                      <input type="checkbox" id="selectMonth" class="texto-general" />
                       <label for="selectMonth" id="select-Mes">
-                        <p class="SeleccionMesLista">Mes</p>
+                        <p class="SeleccionMesLista texto-general">Mes</p>
                         <ul class="ListaDesplegableMeses">
                           <li class="Meses" id-select="select-Mes" value="Ene">
                             Ene
@@ -259,9 +259,9 @@
                       </label>
                     </div>
                     <div class="cuadro-dia">
-                      <input type="checkbox" id="selectYear" />
+                      <input type="checkbox" id="selectYear" class="texto-general" />
                       <label for="selectYear" id="select-Año">
-                        <p class="SeleccionAñoLista">Año</p>
+                        <p class="SeleccionAñoLista texto-general">Año</p>
                         <ul class="ListaDesplegableAños">
                           <li class="Años" id-select="select-Año" value="2019">
                             2019
@@ -567,10 +567,10 @@
           <div class="modal-body  ">
             <img src="./images/advertencia.svg" alt="" class=""><br>
             <span class="modal-text">Edición Exitosa</span>
-            <p class="modal-text1 modal-delete-username-front"></p>
+            <p class="text-modal-text1 modal-delete-username-front"></p>
           </div>
           <div class="pb-4 align-item-center centro">
-            <button type="button" class="btn-si" data-dismiss="modal" id="modal-button">OK</button>
+            <button type="button" class="btn-si text-si" data-dismiss="modal" id="modal-button">OK</button>
 
           </div>
         </div>

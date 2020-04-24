@@ -1,0 +1,124 @@
+.image-blue {
+    display: flex;
+    position: absolute;
+    top: 200px;
+    left: 0px;
+  }
+  .image-email-login {
+    position: absolute;
+    right: 1%;
+    left: 350px;
+    -webkit-transform: translate(0, -90%); /*aqui es pr imagenes svg*/
+    transform: translate(0, -10%);
+    z-index: 1;
+  }
+  
+.image-pink {
+    position: absolute;
+    top: 400px;
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    left: 0;
+  }
+  .image-blue-login {
+    position: relative;
+    border-radius: 15px;
+    top: 0px;
+    -webkit-transform: translate(0, -100%); /*aqui es pr imagenes svg*/
+    transform: translate(0, -0%);
+    right: 15px;
+  }
+  .logo {
+    position: absolute;
+    left: 200px;
+    right: 33%;
+    top: 0px;
+    -webkit-transform: translate(0, -100%); /*aqui es pr imagenes svg*/
+    transform: translate(0, 50%);
+  }
+  .image-email {
+    position: absolute;
+    right: 1%;
+    left: 270%;
+    transform: translate(0, 2000%);
+    z-index: 1;
+  }
+  .icon-eye {
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    opacity: 0.3;
+    -webkit-transform: translate(0px, -50%);
+    transform: translate(0px, -50%); 
+    width: 35px;
+  }
+  .icon-eye3 {
+    position: absolute;
+    opacity: 0.3;
+    right: 12px;
+    top: 150px;
+    width: 35px;
+  }
+  .image-ta {
+    width: 113px;
+    height: 63px;
+    background-color: $zambesi;
+  }
+  
+.equis {
+    width: 39px;
+    position: absolute;
+    right: 0%;
+    top: 0;
+    -webkit-transform: translate(-30%, -30%);
+    transform: translate(50%, -43%);
+    cursor: pointer;
+    z-index: 2;
+  }
+  .equis1 {
+    width: 39px;
+    position: absolute;
+    right: -32px;
+    top: 0;
+    -webkit-transform: translate(-30%, -30%);
+    /* transform: translate(-150%, -45%); */
+    cursor: pointer;
+    z-index: 2;
+  }
+  .equis2 {
+    width: 39px;
+    position: absolute;
+    top: 0;
+    /* -webkit-transform: translate(-400%, -30%); */
+    transform: translate(1640%, -45%);
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .images {
+    width: 23px;
+    height: 23px;
+  }
+  
+.tam {
+    width: 31px;
+    height: 33px;
+  }
+  .tamaño-apro {
+    width: 30px;
+    height: 28px;
+    margin-right: 16px;
+  }
+  .tamaño-recha {
+    width: 30px;
+    height: 30px;
+  }
+  .tamaño-admi {
+    height: 28px;
+  }
+  .text-right {
+    margin-right: 9px;
+  }
+  .tamaño-edi {
+    width: 24px;
+  }

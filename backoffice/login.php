@@ -22,14 +22,14 @@ session_start();
   <hr class="bg-light mb-1 pt-0 ml-3 mr-3 mt-2 " />
   <div class="login-container ">
     <div class="login-form no-gutters mb-4">
-      <div class="col-sm-12 no-gutters col-md-6  no-gutters col-lg-4  col-xl-3 shadow1 fondolog mb-4">
-        <img src="../images/registro/group-10.svg" class="ubicacion5" />
+      <div class="col-sm-12 no-gutters col-md-6  no-gutters col-lg-4  col-xl-3 shadow1 fondolog-reco mb-4">
+        <img src="./images/registro/group-10.svg" class="ubicacion5" />
 
         <div class="row ma-no no-gutters">
           <div class="col-sm-12 col-md-12 col-lg-12 no-gutters ">
-            <img src="../images/registro/group-3.svg" class="form-image-blue" />
+            <img src="./images/registro/group-3.svg" class="form-image-blue" />
             <a href="home.php">
-              <img src="../images/home/claro-logo.svg" class="ubicacion1" /></a>
+              <img src="./images/home/claro-logo.svg" class="ubicacion1" /></a>
 
           </div>
         </div>
@@ -39,12 +39,12 @@ session_start();
             <div class="row ma-no centro">
               <div class="col-sm-12 no-gap">
                 <div class="tamaño2">
-                  <input class="insert-data input-email" type="text" placeholder="Correo electrónico" id="login-email" />
+                  <input class="insert-data input-email correo" type="text" placeholder="Correo electrónico" id="login-email" />
 
-                  <img src="../images/registro/group-12.svg" class="ubicacion3" />
+                  <img src="./images/registro/group-12.svg" class="ubicacion3" />
                   <p class="correo-valido" id="error_email">
                     Correo válido
-                    <img src="../images/registro/alerta.svg" class="error" />
+                    <img src="./images/registro/alerta.svg" class="error" />
                   </p>
                 </div>
               </div>
@@ -54,8 +54,8 @@ session_start();
               <div class=" col-sm-12 no-gap">
                 <div class="tamaño2 centro">
                   <div class="position-relative">
-                    <input class="insert-data input-password" type="password" id="login-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
-                    <img src="../images/registro/eye-none.svg" class="icon-eye" />
+                    <input class="insert-data input-password correo" type="password" id="login-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
+                    <img src="./images/registro/eye-none.svg" class="icon-eye" />
                   </div>
                   <p class="caracteres-min">
                     8 caractéres mínimo
@@ -75,13 +75,13 @@ session_start();
             <div class="centro">
 
               <!-- <a href="Admin-BO.php"> -->
-              <button type="button" class="btn-ingresar-reco" id="button-login">
+              <button type="button" class="btn-ingresar-reco text-public" id="button-login">
                 INGRESAR
               </button>
               <!-- </a> -->
               <p class="nodatos">
                 Aún no has ingresado datos
-                <img src="../images/registro/alerta.svg" />
+                <img src="./images/registro/alerta.svg" />
               </p>
 
             </div>

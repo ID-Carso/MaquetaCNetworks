@@ -13,7 +13,7 @@
     <div id="usuarios">
         <!--<div class=" col-xl-6 mx-auto texto-general " id="visual">
             <div class="container shadow tamaño ">
-                <img src="./images/equis.svg" alt="" class="equis1 closeViewBO">
+                <img src="./images/equis.svg" alt="" class="equis2 closeViewBO">
                 <div class="w3-card-4 bg-white ">
                     <div class="w3-container ml-3 pt-5 pl-4"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
                     <div class=" col-xl-12 mx-auto mt-xl-3 mb-xl-2 pl-5 pr-5 ">
@@ -31,7 +31,7 @@
                             </input>
 
                             <p class="mt-4 ml-2">Rol de usuario</p>
-                            <button type="button" class=" btn-succes mb-4 show-rol" id="login-button">
+                            <button type="button" class=" btn-succes text-sucess mb-4 show-rol" id="login-button">
                             </button>
                         </form>
                         <br>

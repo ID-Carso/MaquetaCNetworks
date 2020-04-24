@@ -5,6 +5,7 @@
   <?php  include 'scripts.php';
         include 'styles.php';
     ?>
+    <title>Claro Networks</title>
   <script  src="./js/admin.js?t=<?php echo time(); ?>" type="text/javascript">  </script>
 </head>
 
@@ -19,14 +20,14 @@
   <div class="login-container  ">
     <div class="login-form no-gutters mb-4">
       <div class="col-sm-12 no-gutters col-md-6 no-gutters col-lg-4  col-xl-3 shadow1 fondolog-reco mb-4">
-        <img src="../images/registro/group-10.svg" class="ubicacion5" />
-        <img src="../images/registro/group-12.svg" class="ubicacion3-1" />
+        <img src="./images/registro/group-10.svg" class="ubicacion5" />
+        <img src="./images/registro/group-12.svg" class="ubicacion3-1" />
 
         <div class="row ma-no no-gutters">
           <div class="col-sm-12 col-md-12 col-lg-12 no-gutters ">
-            <img src="../images/registro/group-3.svg" class="form-image-blue" />
+            <img src="./images/registro/group-3.svg" class="form-image-blue" />
             <a href="login.php">
-              <img src="../images/registro/group-24.svg" class="ubicacion1" /></a>
+              <img src="./images/registro/group-24.svg" class="ubicacion1" /></a>
             
           </div>
         </div>
@@ -54,7 +55,7 @@
 
             <div class="row ma-no centro btn-margin">
              
-                <button type="button" class="btn-ingresar-reco1 "  id="reset-email" onClick="abrirModal()"> 
+                <button type="button" class="btn-ingresar-reco1  text-public"  id="reset-email" onClick="abrirModal()"> 
                   RECUPERAR
                 </button>
               
@@ -75,7 +76,7 @@
             <p>Si no ves el correo en tu bandeja de entrada, <br>revisa otros lugares, donde  podría estar,<br> como tus carpetas de correo <br> no deseado, sociales u otras.</p>
         </div>
         <div class="align-item-center centro ">
-        <button type="button" class="btn-entendido" id="modal-button" data-dismiss="modal">ENTENDIDO</button>
+        <button type="button" class="btn-entendido text-entendido" id="modal-button" data-dismiss="modal">ENTENDIDO</button>
         </div>
     </div> 
   </div>

@@ -2,10 +2,10 @@ function ShowHidePassword(iconPassword) {
   let password = iconPassword.previousElementSibling;
   if (password.type == "password") {
     password.type = "text";
-    iconPassword.setAttribute("src", "../images/registro/eye-none.svg");
+    iconPassword.setAttribute("src", "./images/registro/eye-none.svg");
   } else {
     password.type = "password";
-    iconPassword.setAttribute("src", "../images/registro/eye.svg");
+    iconPassword.setAttribute("src", "./images/registro/eye.svg");
   }
 }
 
@@ -120,7 +120,7 @@ function validateUser(inputUser, messageError) {
   if (user.length == 0) {
     let message = `
     <img
-    src="../images/registro/alerta.svg">
+    src="./images/registro/alerta.svg">
     Debes ingresar un nombre
     `;
     messageError.addClass("invalid-email").html(message);

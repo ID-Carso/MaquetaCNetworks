@@ -15,14 +15,14 @@
       <?
       include 'Menu.php';
       ?>
-    <div class=" float-left ml-5 ali" >
-        <label class="btn-cargar mr-4"id="file" onClick="Verarchi()"> Cargar archivos</label>  
+    <div class=" float-left ml-5  mt-4 mb5 ali" >
+        <label class="btn-cargar centro pt-2 mb5 mr-4"id="file" onClick="Verarchi()"><span class="text-crea">Cargar archivos</span></label>  
     </div>
-    <div class="ml-2 ">
+    <div class="ml-3 p1 ">
     <div class=" slidershow ali1">
         <ul class="slider">
         <li class="caption">
-      <p class="separacion"> OCTUBRE</p>
+      <p class="separacion flex-caption"> OCTUBRE</p>
     </li>
     <li class="caption">
       <p>NOVIEMBRE</p>
@@ -36,13 +36,13 @@
         </div>
         
     </div>
-    <div class=" slidershow ali1 m-slider">
-        <ul class="slider">
+    <div class=" slidershow2 ali1 m-slider">
+        <ul class="slider2">
         <li class="caption1 " style="display:block">
-      <p class="separacion">MARTES 5</p>
+      <p class="separacion flex-caption">MARTES 5</p>
     </li>
     <li class="caption">
-      <p>NOVIEMBRE</p>
+      <p></p>
     </li>
         </ul>
         <div class="left">
@@ -58,77 +58,77 @@
    <div id="rempla">
     <div  id="tb1"class="contenedor-tabla  ml-5">
     <div class="contenedor-fila">
-        <div class="contenedor-columna title-table">
-            <span> Entrada</span>
+        <div class="contenedor-columna centro title-table">
+            <span class="text-public"> Entrada</span>
          </div>
-        <div class="contenedor-columna title-table">
-             <span>Estado</span>
+        <div class="contenedor-columna centro title-table">
+             <span class="text-public">Estado</span>
         </div>
-        <div class="contenedor-columna title-table">
-            <span>Alerta</span>
+        <div class="contenedor-columna centro title-table">
+            <span class="text-public">Alerta</span>
         </div>
-        <div class="contenedor-columna title-table">
-            <span> Seleccionar</span>
+        <div class="contenedor-columna  centro title-table">
+            <span class="text-public"> Seleccionar</span>
          </div>
-        <div class="contenedor-columna title-table">
-             <span>Program Title Original</span>
+        <div class="contenedor-columna centro title-table">
+             <span class="text-public">Program Title Original</span>
         </div>
-        <div class="contenedor-columna title-table">
-            <span>Programar publicación</span>
+        <div class="contenedor-columna  centro title-table">
+            <span class="text-public">Programar publicación</span>
         </div>
-        <div class="contenedor-columna title-table">
-            <span>Periodicidad</span>
+        <div class="contenedor-columna  centro title-table">
+            <span class="text-public">Periodicidad</span>
          </div>
-        <div class="contenedor-columna title-table">
-             <span>Establecer en Home</span>
+        <div class="contenedor-columna  centro title-table">
+             <span class="text-public">Establecer en Home</span>
         </div>
-        <div class="contenedor-columna title-table">
-            <span>Establecer en landing</span>
+        <div class="contenedor-columna centro title-table">
+            <span class="text-public">Establecer en landing</span>
         </div>
-        <div class="contenedor-columna title-table">
-            <span> Imagenes</span>
+        <div class="contenedor-columna centro title-table">
+            <span class="text-public"> Imagenes</span>
          </div>
-         <div class="contenedor-columna title-table">
-             <span>Schedule Item Date Time</span>
+         <div class="contenedor-columna centro title-table">
+             <span class="text-public">Schedule Item Date Time</span>
         </div>
-        <div class="contenedor-columna title-table">
-             <span>Schedule Item Long Date</span>
+        <div class="contenedor-columna centro title-table">
+             <span class="text-public">Schedule Item Long Date</span>
         </div>
-        <div class="contenedor-columna title-table">
-        <span>Schedule Item Long Time< (GMT)</span>
+        <div class="contenedor-columna centro title-table">
+        <span class="text-public">Schedule Item Long Time< (GMT)</span>
         </div>
-        <div class="contenedor-columna title-table">
-             <span>Estimated Schedule Item Duration</span>
+        <div class="contenedor-columna centro title-table">
+             <span class="text-public">Estimated Schedule Item Duration</span>
         </div>
-        <div class="contenedor-columna title-table">
-            <span>Program Year Produced</span>
+        <div class="contenedor-columna  centro title-table">
+            <span class="text-public">Program Year Produced</span>
         </div>
-        <div class="contenedor-columna title-table">
-            <span>Program Genre List</span>
+        <div class="contenedor-columna centro title-table">
+            <span class="text-public">Program Genre List</span>
          </div>
-        <div class="contenedor-columna title-table">
-             <span>Program Title Alternate </span>
+        <div class="contenedor-columna centro title-table">
+             <span class="text-public">Program Title Alternate </span>
         </div>
-        <div class="contenedor-columna title-table">
-        <span>Program Episode Season</span>
+        <div class="contenedor-columna  centro title-table">
+        <span class="text-public">Program Episode Season</span>
         </div>
-        <div class="contenedor-columna title-table">
-        <span>Program Episode Number</span>
+        <div class="contenedor-columna  centro title-table">
+        <span class="text-public">Program Episode Number</span>
         </div>
-        <div class="contenedor-columna title-table">
-             <span>Synopsis</span>
+        <div class="contenedor-columna centro title-table">
+             <span class="text-public">Synopsis</span>
         </div>
-        <div class="contenedor-columna title-table">
-            <span>Schedule Item Rating Code</span>
+        <div class="contenedor-columna centro title-table">
+            <span class="text-public">Schedule Item Rating Code</span>
         </div>
-        <div class="contenedor-columna title-table">
-            <span>Scheduled Version SUBBED (1=Yes/0=No)</span>
+        <div class="contenedor-columna  centro title-table">
+            <span class="text-public">Scheduled Version SUBBED (1=Yes/0=No)</span>
          </div>
-        <div class="contenedor-columna title-table">
-             <span>Scheduled Version DUBBED (1=Yes/0=No)</span>
+        <div class="contenedor-columna centro title-table">
+             <span class="text-public">Scheduled Version DUBBED (1=Yes/0=No)</span>
         </div>
-        <div class="contenedor-columna title-table">
-        <span>Audio 5.1 available
+        <div class="contenedor-columna  centro title-table">
+        <span class="text-public">Audio 5.1 available
 (1=Yes/0=No)</span>
         </div>        
     </div>
@@ -161,7 +161,7 @@
 </div>
 <div class="contenedor ml-5">
     <div class="contenedor-columna">
-        <div id="agregar" class="btn-crear mt-2 ml-2"><span class="signo"><p class="text-crea">Crear nueva entrada</p></span></div>
+        <div id="agregar" class="btn-crear centro mt-2 ml-2"><span class="signo"><p class="text-crea pd-10">Crear nueva entrada</p></span></div>
     </div>
 </div>
 </div>

@@ -302,10 +302,10 @@ function getAllUsersBO() {
         });
         $("#Adm-users-BO").html(`  
         <div class="col-xl-10 position-btn-alta">
-          <button class="btn-alta mb-4" id="btnAlta">Agregar nuevo usuario</button>
+          <button class="btn-alta text-public mb-4" id="btnAlta">Agregar nuevo usuario</button>
         </div>
         <div class="sombras2">
-          <div class="grid-users text-progra users-backoffice-table">        
+          <div class="grid-users texto-general users-backoffice-table">        
             <header>
             <div class="text-title ">Usuario</div>
             </header>
@@ -318,7 +318,7 @@ function getAllUsersBO() {
             ${userBO}
           </div>
         </div>
-        <div class="col-xl-1">
+        
         <div class="row descri4">
           <input type="image" src="./images/ver-muestra.svg" class="btn-focus ver tam "></input>
           <input type="image" src="./images/edita-muestra.svg" class="btn-focus edi tam"></input>
@@ -330,7 +330,7 @@ function getAllUsersBO() {
           <div class="borra"><img src="./images/recuadro1-hover.svg"><span class="text-borra">Borrar</span></div>
         </div>
 
-      </div>
+      
         `);
         showDescriptions();
         showModalDeleteUserBO();
@@ -370,7 +370,7 @@ function getUser(id) {
           $("#usuarios").html(`
           <div class=" col-xl-6 mx-auto texto-general " id="visual">
             <div class="container shadow tamaño ">
-                <img src="./images/equis.svg" alt="" class="equis1 closeViewBO">
+                <img src="./images/equis.svg" alt="" class="equis2 closeViewBO">
                 <div class="w3-card-4 bg-white ">
                     <div class="w3-container ml-3 pt-5 pl-4"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
                     <div class=" col-xl-12 mx-auto mt-xl-3 mb-xl-2 pl-5 pr-5 ">
@@ -447,7 +447,7 @@ function getAllUserFront() {
 
         $("#Admin-users-Front").html(`
         <div class="sombras1 ">
-          <div class="grid text-progra users-front-table">
+          <div class="grid texto-general users-front-table">
             <header>
               <div class="text-title">Usuario</div>
             </header>
@@ -1007,7 +1007,7 @@ function getUserFront(id) {
           let genderName = gender.genderName;
           let genderImage = gender.genderImage;
           $(".section-sexo").append(`
-          <label for="mujer" id="mujerestado" class="mujer-estilo1 pl-4">
+          <label for="mujer" id="mujerestado" class="mujer-estilo1 textp-general pl-4">
           <img id="women" src="${genderImage}" /> ${genderName}</label>
           `);
         });
