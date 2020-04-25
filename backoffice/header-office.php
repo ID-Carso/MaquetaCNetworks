@@ -8,7 +8,7 @@ function showHeader($nameButton, $variation, $nameUser, $rol)
         case 1:
 
             echo "<div class='col-sm-12 no-gutters col-md-6  no-gutters col-lg-12  col-xl-12'>
-            <img src='./images/registro/group-10.svg'class='image-pink' /></div>
+            <img src='./images/registro/group-10.svg'class='image-pink-fondo' /></div>
             <div class='col-sm-4 col-md-4 col-lg-4 no-gutters'>
                 <img src='./images/blue.svg'class='image-blue'/>
                 <img src='./images/registro/group-12.svg' class='image-email'/>

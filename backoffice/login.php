@@ -9,7 +9,7 @@ session_start();
 
 <head>
   <?php include 'styles.php';
-  include './views/partials/head.php'
+include 'scripts.php';
   ?>
 </head>
 
@@ -59,7 +59,7 @@ session_start();
                   </div>
                   <p class="caracteres-min">
                     8 caractéres mínimo
-                    <img src="../images/registro/listo.svg" class="listo" />
+                    <img src="./images/registro/listo.svg" class="listo" />
 
                   </p>
 

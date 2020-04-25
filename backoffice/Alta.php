@@ -172,7 +172,7 @@ session_start();
 
           </div>
           <div class="text-center">
-            <button type="button" class="btn-aceptar text-entendido mt-4" id="modal-button" data-dismiss="modal">ACEPTAR</button>
+            <button type="button" class="btn-aceptar  mt-4" id="modal-button" data-dismiss="modal">ACEPTAR</button>
           </div>
         </div>
       </div>

@@ -1380,6 +1380,7 @@
   width: 150px;
   height: 40px;
   background-color: #0097a9;
+  border: 1px solid #0097a9;
   outline: none !important;
   outline-width: 0 !important;
   box-shadow: none;
@@ -2210,6 +2211,14 @@
   left: 0;
 }
 
+.image-pink-fondo {
+  position: absolute;
+  top: 400px;
+  -webkit-transform: translate(0, -100%);
+  transform: translate(0, 500%);
+  left: 0;
+}
+
 .image-blue-login {
   position: relative;
   border-radius: 15px;
@@ -2354,7 +2363,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
-  margin-left: 1%;
   background-color: #56c7d5;
 }
 
@@ -2375,9 +2383,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
-  top: 26px;
-  margin-left: 1px;
+  position: fixed;
+  top: 169px;
   background-color: #56c7d5;
 }
 

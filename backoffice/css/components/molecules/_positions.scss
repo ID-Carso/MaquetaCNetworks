@@ -12,7 +12,6 @@
   display: flex;
   flex-direction: column;
   position: fixed;
-  margin-left: 1%;
   background-color: $morelightblue;
 }
 .descri2 {
@@ -24,9 +23,8 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 26px;
-  margin-left: 1px;
+  position: fixed;
+  top: 169px;
   background-color: $morelightblue;
 }
 .descri3 {
