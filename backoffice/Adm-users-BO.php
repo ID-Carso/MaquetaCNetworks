@@ -3,7 +3,10 @@
 <!--<script src="./js/main.js" type="module"></script>-->
 
 <head>
-
+<?php
+    include 'scripts.php';
+   include 'styles.php';
+   ?>
 </head>
 
 <body>
@@ -18,11 +21,7 @@
         <div class="grid-users texto-general users-backoffice-table">
 
         </div>
-
-      </div>
-
-      <!--Para funcionalidad-->
-      <!--<div class="col-xl-1">
+        <div class="col-xl-1">
         <div class="row descri4">
           <input type="image" src="./images/ver-muestra.svg" class="btn-focus ver tam "></input>
           <input type="image" src="./images/edita-muestra.svg" class="btn-focus edi tam"></input>
@@ -34,7 +33,11 @@
           <div class="borra"><img src="./images/recuadro1-hover.svg"><span class="text-borra">Borrar</span></div>
         </div>
 
-      </div>-->
+      </div>
+      </div>
+
+      <!--Para funcionalidad-->
+      
     </div>
   </div>
 </body>

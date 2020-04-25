@@ -12,12 +12,20 @@
   display: flex;
   flex-direction: column;
   position: fixed;
+  top: 12%;
+  left: 1%;
+
   background-color: $morelightblue;
 }
 .descri2 {
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: fixed;
+  top: 12%;
+  left: 49px;
+
 }
 .descri1 {
   margin: auto;
@@ -357,7 +365,7 @@ ul {
 .veri {
   display: none;
   position: absolute;
-  top: -172px;
+ // top: -172px;
 }
 .veri1 {
   display: none;
