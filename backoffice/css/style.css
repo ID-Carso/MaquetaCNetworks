@@ -2363,6 +2363,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
+  top: 12%;
+  left: 1%;
   background-color: #56c7d5;
 }
 
@@ -2372,6 +2374,8 @@
   display: -ms-flexbox;
   display: flex;
   position: fixed;
+  top: 12%;
+  left: 49px;
 }
 
 .descri1 {
@@ -2774,7 +2778,6 @@ ul {
 .veri {
   display: none;
   position: absolute;
-  top: -172px;
 }
 
 .veri1 {
