@@ -296,7 +296,7 @@ function getAllUsersBO() {
             <!--Acciones-->
             <input type='image' src='./images/ver-acti.svg' class='ml-3 btn-focus view-user-icon images' id='visual'></input>
             <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images edit-user-icon'></input>
-            <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus images delete-userbo-icon'></input>
+            <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus images delete-userbo-icon' _username="${user.name}"></input>
           </div>
           `;
         });
@@ -440,7 +440,7 @@ function getAllUserFront() {
           <div class='justify-content-center' _id="${user.id}">
             <input type='image' src='./images/ojito-acti.svg' class='show-user-front-icon ml-3 btn-focus images'></input>
             <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images edit-user-front'></input>
-            <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus delete-user-front-icon images'></input>
+            <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus delete-user-front-icon images' _username="${user.name}"></input>
           </div>
           `;
         });
@@ -474,6 +474,7 @@ function getAllUserFront() {
         showUserFront();
         showModalDeleteUserFront();
         showUserFrontToUpdate();
+        showDescriptions();
       }
     },
   });
@@ -875,13 +876,13 @@ function deleteUserBO(id) {
           let rol = changeNameRol(user.rol_id);
 
           userBO += `
-          <div class="pd-5">${user.name}</div>
+          <div class="pd-5 username-bo">${user.name}</div>
           <div class="pd-10">${rol}</div>
           <div class='justify-content-center' _id="${user.id}">
             <!--Acciones-->
             <input type='image' src='./images/ver-acti.svg' class='ml-3 btn-focus view-user-icon images' id='visual'></input>
             <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images edit-user-icon'></input>
-            <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus images delete-userbo-icon'></input>
+            <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus images delete-userbo-icon' _username="${usern.name}" ></input>
           </div>
           `;
         });
@@ -945,7 +946,7 @@ function deleteUserFront(id) {
             <!--Acciones-->
             <input type='image' src='./images/ver-acti.svg' class='ml-3 btn-focus show-user-front-icon images' id='visual'></input>
             <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images edit-user-front'></input>
-            <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus images delete-user-front-icon'></input>
+            <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus images delete-user-front-icon' _username="${user.name}"></input>
           </div>
           `;
         });

@@ -39,8 +39,8 @@
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content centro modal-defi2">
       <div class="modal-body  ">
-        <img src="./images/advertencia.svg" alt="" class=""><br>
-        <span class="modal-text">¿Desea eliminar este usuario?</span>
+        <img src="./images/advertencia.svg" alt="" class="mb-3">
+        <p class="modal-text">¿Desea eliminar este usuario?</p>
         <p class="text-modal-text1 modal-delete-username-front"></p>
       </div>
       <div class="pb-4 align-item-center centro">

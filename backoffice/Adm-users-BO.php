@@ -46,7 +46,7 @@
       <div class="modal-body ">
         <img src="./images/advertencia.svg" alt="" class="mb-3">
         <p class="modal-text">¿Desea eliminar este usuario?</p>
-        <p class="text-modal-text1">Fernando Montes de Oca</p>
+        <p class="text-modal-text1 modal-delete-username-bo"></p>
       </div>
       <div class="pb-4 align-item-center centro">
         <button type="button" class=" btn-no text-no" id="modal-button" data-dismiss="modal">No</button>

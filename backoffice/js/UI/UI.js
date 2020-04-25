@@ -145,6 +145,8 @@ function deleteUserFrontUI(id) {
 function showModalDeleteUserBO() {
   $(".delete-userbo-icon").click(function () {
     let id = $(this).parent().attr("_id");
+    let username = $(this).attr("_username");
+    $(".modal-delete-username-bo").text(username);
     $(".modal-delete-user").modal("show");
     deleteUserUI(id);
   });
@@ -153,6 +155,8 @@ function showModalDeleteUserBO() {
 function showModalDeleteUserFront() {
   $(".delete-user-front-icon").click(function () {
     let id = $(this).parent().attr("_id");
+    let username = $(this).attr("_username");
+    $(".modal-delete-username-front").text(username);
     $(".modal-delete-user-front").modal("show");
     deleteUserFrontUI(id);
   });
@@ -326,6 +330,7 @@ function showPageUsersFront() {
     showModalDeleteUserFront();
     showUserFrontToUpdate();
     getAllUserFront();
+    showDescriptions();
   });
 }
 
