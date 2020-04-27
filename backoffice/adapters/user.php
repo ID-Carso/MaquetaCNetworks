@@ -102,10 +102,10 @@ class User
         echo ($response);
     }
 
-    function getAllUsersBO()
+    function getAllUsersBO($id)
     {
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, 'http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/admin_user');
+        curl_setopt($ch, CURLOPT_URL, 'http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/admin_user/all/' . $id);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $response = curl_exec($ch);
 
@@ -217,7 +217,7 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
 
         case 'getAllUsersBO':
             $user = User::getUserInstance();
-            echo ($user->getAllUsersBO());
+            echo ($user->getAllUsersBO($_SESSION["id"]));
             break;
 
 
