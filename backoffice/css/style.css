@@ -4435,8 +4435,8 @@ option:checked + .roles {
 }
 
 .insert-data:focus {
-  color: #2e90ff;
-  border-bottom: solid 2px #2e90ff;
+  color: #14bef2;
+  border-bottom: solid 2px #14bef2;
   font-family: "Montserrat-Bold";
 }
 

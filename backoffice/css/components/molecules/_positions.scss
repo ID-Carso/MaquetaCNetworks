@@ -1,15 +1,15 @@
-.description{
+.description {
   position: absolute;
   top: 40%;
-  transform: translateY(100%)
+  transform: translateY(100%);
 }
-.posi{
+.posi {
   background: $morelightblue;
   width: 32px;
   height: 33px;
   position: relative;
 }
-.describe{
+.describe {
   display: none;
   position: absolute;
   top: 0;
@@ -17,9 +17,9 @@
   -webkit-transform: translateX(100%);
   transform: translateX(26%);
 }
-.posi:hover > .describe{
+.posi:hover > .describe {
   display: block;
-} 
+}
 .textcentro {
   text-align: justify;
 }
@@ -54,7 +54,6 @@ input[type="radio"]:checked + .mujer-estilo1 {
 .Icon_paises {
   vertical-align: middle;
   margin-right: 10px;
-
 }
 .section-pais {
   margin-top: -6px;
@@ -468,11 +467,11 @@ ul {
   position: absolute;
   margin-top: 5%;
 }
-.posilan{
+.posilan {
   margin-bottom: -17%;
-    margin-left: 12%;
+  margin-left: 12%;
 }
-.posi1{
+.posi1 {
   margin-bottom: -19%;
   margin-left: 3%;
 }

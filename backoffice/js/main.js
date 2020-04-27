@@ -16,6 +16,7 @@ import {
   validateKeyUpEmail,
   validatePassword,
   validateEmail,
+  validateKeyUpPassword,
   ShowHidePassword,
 } from "./form/form.js";
 
@@ -148,6 +149,11 @@ $(document).ready(function () {
     validateKeyUpEmail(inputCorreo, filter, imagenError, correoValido);
   });
 
+  /* VALIDATE LOGIN PASSWORD */
+  $(".input-password").keyup(function () {
+    validateKeyUpPassword($(this), $(".caracteres-min"));
+  });
+
   /* Validar email para reestablecer contraseña*/
 
   const inputReEmail = $("#re-password-email");
@@ -185,6 +191,7 @@ $(document).ready(function () {
     }
   }
 });
+
 /**para la seleccion de paises */
 $(document).on("click", function (e) {
   let container = $("#drop-paises, .cuadro-fecha");
