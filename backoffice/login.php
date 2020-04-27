@@ -6,6 +6,7 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="en">
+<link rel="preload" href="./images/loader.gif" as="image">
 
 <head>
   <?php include 'styles.php';

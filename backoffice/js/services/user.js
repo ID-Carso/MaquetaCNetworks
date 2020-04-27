@@ -109,6 +109,15 @@ function signIn(email, password) {
     type: "POST",
     data: dataUser,
     url: "./adapters/user.php",
+    beforeSend: function () {
+      const loader = `
+      <div class="loader-container">
+        <img src="./images/loader.gif" class="loader" alt="">
+      </div>
+      `;
+      let formContainer = $(".fondolog-reco");
+      formContainer.prepend(loader);
+    },
     success: function (result) {
       console.log(result);
       let json = JSON.parse(result);
@@ -157,15 +166,24 @@ function registerUser(name, email, password, rol) {
     data: user,
     url: "./adapters/user.php",
     beforeSend: function () {
-      $("#register-userbo-view").prepend(
-        `<img src="./images/loader.gif" class="loader"/>`
-      );
+      $(".register-user-content")
+        .prepend(`<img src="./images/loader.gif" class="loader"/>`)
+        .css({
+          backgorund: "white",
+          opacity: "0.5",
+          pointerEvents: "none",
+        });
     },
     success: function (result) {
       console.log(result);
       let json = JSON.parse(result);
       if (json.code == 200) {
-        //$(".loader").remove();
+        $(".register-user-content").css({
+          backgorund: "white",
+          opacity: "1",
+          pointerEvents: "all",
+        });
+        $(".loader").remove();
         $(".modal-register-username").text(json.data.name);
         let modalPrivileges = "";
         switch (json.data.rol_id) {

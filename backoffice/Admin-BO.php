@@ -14,6 +14,7 @@ if (!isset($_SESSION["session"])) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preload" href="./images/loader.gif" as="image">
   <?php
   include 'scripts.php';
   include
