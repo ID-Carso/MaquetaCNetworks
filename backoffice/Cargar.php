@@ -22,22 +22,22 @@
         <div class="contenedor-columna centro title-table">
             <span class="text-public"> Entrada</span>
          </div>
-        <div class="contenedor-columna  centro title-table">
+        <div class="contenedor-columna centro title-table">
              <span class="text-public">Estado</span>
         </div>
-        <div class="contenedor-columna  centro title-table">
+        <div class="contenedor-columna centro title-table">
             <span class="text-public">Alerta</span>
         </div>
-        <div class="contenedor-columna centro title-table">
+        <div class="contenedor-columna  centro title-table">
             <span class="text-public"> Seleccionar</span>
          </div>
-        <div class="contenedor-columna centro  title-table">
+        <div class="contenedor-columna centro title-table">
              <span class="text-public">Program Title Original</span>
         </div>
-        <div class="contenedor-columna centro title-table">
+        <div class="contenedor-columna  centro title-table">
             <span class="text-public">Programar publicación</span>
         </div>
-        <div class="contenedor-columna centro title-table">
+        <div class="contenedor-columna  centro title-table">
             <span class="text-public">Periodicidad</span>
          </div>
         <div class="contenedor-columna  centro title-table">
@@ -49,19 +49,22 @@
         <div class="contenedor-columna centro title-table">
             <span class="text-public"> Imagenes</span>
          </div>
-        <div class="contenedor-columna  centro title-table">
+         <div class="contenedor-columna centro title-table">
+             <span class="text-public">Schedule Item Date Time</span>
+        </div>
+        <div class="contenedor-columna centro title-table">
              <span class="text-public">Schedule Item Long Date</span>
         </div>
-        <div class="contenedor-columna  centro title-table">
+        <div class="contenedor-columna centro title-table">
         <span class="text-public">Schedule Item Long Time< (GMT)</span>
         </div>
         <div class="contenedor-columna centro title-table">
              <span class="text-public">Estimated Schedule Item Duration</span>
         </div>
-        <div class="contenedor-columna centro title-table">
+        <div class="contenedor-columna  centro title-table">
             <span class="text-public">Program Year Produced</span>
         </div>
-        <div class="contenedor-columna  centro title-table">
+        <div class="contenedor-columna centro title-table">
             <span class="text-public">Program Genre List</span>
          </div>
         <div class="contenedor-columna centro title-table">
@@ -70,22 +73,22 @@
         <div class="contenedor-columna  centro title-table">
         <span class="text-public">Program Episode Season</span>
         </div>
-        <div class="contenedor-columna centro title-table">
+        <div class="contenedor-columna  centro title-table">
         <span class="text-public">Program Episode Number</span>
         </div>
-        <div class="contenedor-columna  centro title-table">
+        <div class="contenedor-columna centro title-table">
              <span class="text-public">Synopsis</span>
         </div>
         <div class="contenedor-columna centro title-table">
             <span class="text-public">Schedule Item Rating Code</span>
         </div>
-        <div class="contenedor-columna centro title-table">
+        <div class="contenedor-columna  centro title-table">
             <span class="text-public">Scheduled Version SUBBED (1=Yes/0=No)</span>
          </div>
         <div class="contenedor-columna centro title-table">
              <span class="text-public">Scheduled Version DUBBED (1=Yes/0=No)</span>
         </div>
-        <div class="contenedor-columna centro title-table">
+        <div class="contenedor-columna  centro title-table">
         <span class="text-public">Audio 5.1 available
 (1=Yes/0=No)</span>
         </div>        
@@ -95,7 +98,7 @@
         <div class="contenedor-columna centro"></div>
         <div class="contenedor-columna centro"></div>
         <div class="contenedor-columna centro">
-            <input type="radio" name="select" id="selecciona">
+            <input type="radio" name="select" id="selecciona" style="display: inline-block;">
         </div>
         <div class="contenedor-columna centro">
             <label class="program-original">Terminator</label>
@@ -103,10 +106,10 @@
         <div class="contenedor-columna centro">
         <div class="yes-no">
                     <input type="radio" name="yes-no" id="si" checked />
-                    <label for="si" id="siestado" class="si-estilo text-si">
+                    <label for="si" id="siestado" class="si-estilo">
                       Sí</label>
                     <input type="radio" name="yes-no" id="no" />
-                    <label for="no" id="noestado" class="no-estilo text-no">
+                    <label for="no" id="noestado" class="no-estilo">
                       No</label>
                   </div>
 
@@ -116,34 +119,34 @@
         </div>
         <div class="contenedor-columna centro">
         <div class="periodicidad">
-                    <input type="radio" name="si-no" id="si" checked />
-                    <label for="si" id="siestado" class="si-estilo1">
+                    <input type="radio" name="si-no" id="yes" checked />
+                    <label for="yes" id="siestado" class="si-estilo1">
                       Sí</label>
-                    <input type="radio" name="si-no" id="no" />
-                    <label for="no" id="noestado" class="no-estilo1">
+                    <input type="radio" name="si-no" id="nop" />
+                    <label for="nop" id="noestado" class="no-estilo1">
                       No</label>
                   </div> 
         </div>
         <div class="contenedor-columna centro">
             <div>
-                <input type="radio" name="establecer" checked>
+            <input type="radio" name="establecer"  style=" display:inline-block;">
 
             </div>
-            <div class="d-flex mt-2 vigencia">
-                <label class="vige-tex">Vigencia en home</label>
+            <div class="vigencia">          
+                <label class="text-public">Vigencia en home</label>
             </div>
         </div>
         <div class="contenedor-columna centro">
             <div>
-            <input type="radio" name="establecer" checked>
+            <input type="radio" name="establecer"  style=" display:block;" class="posilan"checked>
             <label class="text-lan">No te pierdas</label>
             </div>
             <div>
-            <input type="radio" name="establecer" checked>
+            <input type="radio" name="establecer"style="display:block;" class="posi1" checked>
             <label class="text-lan">Sólo por canal claro</label>
             </div>
-            <div class="d-flex mt-1 vige-land">
-            <label class="vige-text">Vigencia en landing</label>
+            <div class="vige-lan">
+            <label class="text-public">Vigencia en landing</label>
             </div>
         </div>
         <div class="contenedor-columna centro">

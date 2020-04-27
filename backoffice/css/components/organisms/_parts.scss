@@ -161,17 +161,7 @@ section {
     font-family: $MontserratSemiBold;
     margin-right: 200px;
   }
-  
-input[type="radio"]:checked + .si-estilo1 {
-    background-color: $darkinput;
-    color: $white;
-    border: none;
-  }
-  input[type="radio"]:checked + .no-estilo1 {
-    background-color: $darkinput;
-    color:$white;
-    border: none;
-  }
+ 
   .radio-claro {
     display: block;
     margin-left: 8%;
@@ -189,7 +179,7 @@ input[type="radio"]:checked + .si-estilo1 {
   .contenedor-tabla {
     display: table;
     overflow-x: scroll;
-    width: 7673px;
+    width: 500%;
     height: 63px;
     white-space: nowrap;
     margin-top: 11%;
@@ -199,7 +189,7 @@ input[type="radio"]:checked + .si-estilo1 {
   .contenedor {
     display: table;
     overflow-x: scroll;
-    width: 7673px;
+    width: 500%;
     height: 63px;
     white-space: nowrap; 
     //a-textpublic

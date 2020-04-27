@@ -3,10 +3,7 @@
 <!--<script src="./js/main.js" type="module"></script>-->
 
 <head>
-  <?php
-  include 'scripts.php';
-  include 'styles.php';
-  ?>
+ 
 </head>
 
 <body>
@@ -18,10 +15,10 @@
       </div>
       <div class="sombras2">
         <!--titulos de la tabla-->
-        <div class="grid-users texto-general users-backoffice-table">
+        <div class="grid-users mb-4 texto-general users-backoffice-table">
 
-        </div>
-        <div class="col-xl-1">
+      <!--  </div>
+      
           <div class="row descri4">
             <input type="image" src="./images/ver-muestra.svg" class="btn-focus ver tam "></input>
             <input type="image" src="./images/edita-muestra.svg" class="btn-focus edi tam"></input>
@@ -33,7 +30,7 @@
             <div class="borra"><img src="./images/recuadro1-hover.svg"><span class="text-borra">Borrar</span></div>
           </div>
 
-        </div>
+        </div>-->
       </div>
 
       <!--Para funcionalidad-->

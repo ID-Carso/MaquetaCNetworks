@@ -608,36 +608,47 @@
 .si-estilo {
   width: 52px;
   height: 43px;
-  background-color: $skyblue;
+  border-right: $skyblue;
+  background-color: $white;
   font-family: $MontserratSemiBold;
   font-size: 16px;
   line-height: 2.5;
   color: $dark1;
   text-align: center;
   outline: none !important;
+  border-radius: 21px 0 0 21px;
+  border: 1px solid $dark1;
 }
 .no-estilo {
   width: 52px;
   height: 43px;
   color: $dark1;
   line-height: 2.5;
+  border-left: $skyblue;
   background-color: $white;
   font-family: $MontserratSemiBold;
   font-size: 16px;
   text-align: center;
   outline: none !important;
+  border-radius: 0 21px 21px 0;
+  border:1px solid $dark1;
 }
 .fechas {
   width: 167px;
   height: 34px;
   border-radius: 17px;
   background-color: $colorfecha;
+  margin: auto;
+  margin-top: 18px;
 }
 .periodicidad {
   width: 105px;
   height: 43px;
   border-radius: 21.5px;
   border: solid 1px $morelightgray;
+  display: flex;
+  margin: auto;
+  line-height: 2.5;
 }
 .si-estilo1 {
   width: 52px;
@@ -647,27 +658,35 @@
   font-size: 16px;
   text-align: center;
   color: $dark1;
+  border-radius: 21px 0 0 21px;
+  border: 1px solid $dark1;
 }
 .no-estilo1 {
   width: 51px;
   height: 43px;
-  background-color: $darkinput;
+  background-color: $white;
   font-family: $MontserratSemiBold;
   font-size: 16px;
   text-align: center;
-  color: $white;
+  color: $dark1;
+  border-radius: 0 21px 21px 0;
+  border:1px solid $dark1;
 }
 .vigencia {
   width: 145px;
   height: 70px;
   border-radius: 8px;
   background-color: $skyblue;
+ margin: auto;
 }
 .vige-lan {
-  width: 173px;
-  height: 57px;
+  width: 166px;
+  height: 70px;
   border-radius: 8px;
-  background-color: $skyblue;
+  background-color: #2e90ff;
+  margin: auto;
+  margin-top: -23px;
+  margin-bottom: 12px;
 }
 .hombre-estilo {
   width: 119%;

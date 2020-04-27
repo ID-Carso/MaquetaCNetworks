@@ -187,6 +187,7 @@ $(document).ready(function () {
     }
   });
   //fin
+ 
 
   //slider, c/flecha
   $(".slider li").hide();

@@ -7,6 +7,15 @@
   color: $white;
   line-height: 2.5;
 }
+.text-semi-white{
+  font-family: $MontserratSemiBold;
+  font-size: 18px;
+  color: $white;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
 .text-grilla {
   color: $white;
   font-family: $MontserratSemiBold;
@@ -280,9 +289,9 @@
   //titulo-light
 }
 .text-sucess {
-  font-family: $MontserratRegular;
+  font-family: $MontserratMedium;
   color: $white;
-  font-size: 17px;
+  font-size: 15px;
 }
 .text-light {
   font-family: $MontserratLight;
@@ -384,14 +393,7 @@
   margin-left: 12px;
 }
 
-.vige-text {
-  font-family: $MontserratSemiBold;
-  font-size: 18px;
-  color: $white;
-  text-align: center;
-  line-height: 3;
-  margin-left: 4px;
-}
+
 .text-lan {
   font-family: $MontserratBold;
   font-size: 16px;
@@ -465,7 +467,7 @@
   font-size: 17px;
 }
 .textcerrar {
-  font-family: $MontserratMediumLight;
+  font-family: $MontserratMedium;
   color: $white;
   font-size: 14px;
 }

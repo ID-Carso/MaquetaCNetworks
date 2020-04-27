@@ -84,18 +84,24 @@
         </div>
              
         </div>  
-          <!--Para funcionalidad-->     
-   <div class="col-xl-1">
-              <div class="row descri">
-            <input type="image"  src="./images/historial-muestra.svg" class="btn-focus histo" ></input>
-            <input type="image" src="./images/editar-muestra.svg"  class="btn-focus editar "></input>
-            <input type="image" src="./images/noti-muestra.svg"  class="btn-focus notify"></input>                      
-          </div>
-          <div class="descri2">
-          <div class="histori"><img src="./images/recuadro1-hover.svg"><span class="text-histo">Historial</span></div> 
-           <div class="edit"><img src="./images/recuadro1-hover.svg"><span class="text-edit">Editar</span></div> 
-           <div class="noti"><img src="./images/recuadro1-hover.svg"><span class="text-noti">Notificaciones</span></div> 
-          </div>
-  </div>
+          <!--Para funcionalidad-->    
+          <div>
+          <ul class="description">
+          <li class="posi">
+          <input type="image"  src="./images/historial-muestra.svg" class="btn-focus " ></input>
+          <div class="describe"><img src="./images/recuadro1-hover.svg"><span class="text-histo">Historial</span></div>
+          </li>
+          <li class="posi">
+          <input type="image" src="./images/editar-muestra.svg"  class="btn-focus  "></input>
+          <div class="describe"><img src="./images/recuadro1-hover.svg"><span class="text-edit">Editar</span></div>
+          </li>
+          <li class="posi">
+          <input type="image" src="./images/noti-muestra.svg"  class="btn-focus "></input>        
+          <div class="describe"><img src="./images/recuadro1-hover.svg"><span class="text-borra">Borrar</span></div>
+          </li>
+          </ul>         
+           
+          </div> 
+
   </body>
 </html>

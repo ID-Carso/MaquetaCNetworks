@@ -1,58 +1,25 @@
-.descri {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
+.description{
   position: absolute;
-  top: -210px;
-  margin-left: 1px;
-  background-color: $morelightblue;
+  top: 40%;
+  transform: translateY(100%)
 }
-.descri4 {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
+.posi{
+  background: $morelightblue;
+  width: 32px;
+  height: 33px;
+  position: relative;
+}
+.describe{
+  display: none;
   position: absolute;
-  top: -172px;
-  margin-left: 1px;
-  /*margin: auto;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 12%;
-  left: 1%;*/
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(100%);
+  transform: translateX(26%);
 }
-.descri2 {
-  margin: auto;
-  display: flex;
-  position: absolute;
-  /*margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  top: 12%;
-  left: 46px;*/
-}
-.descri1 {
-  /* margin: auto;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 169px;*/
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 26px;
-  margin-left: 1px;
-  background-color: $morelightblue;
-}
-.descri3 {
-  margin: auto;
-  display: flex;
-  position: absolute;
-  top: 169px;
-}
+.posi:hover > .describe{
+  display: block;
+} 
 .textcentro {
   text-align: justify;
 }
@@ -87,7 +54,7 @@ input[type="radio"]:checked + .mujer-estilo1 {
 .Icon_paises {
   vertical-align: middle;
   margin-right: 10px;
-  float: left;
+
 }
 .section-pais {
   margin-top: -6px;
@@ -160,17 +127,27 @@ input[type="radio"]:checked + .mujer-estilo1 {
 .ma-le {
   left: 12%;
 }
-input[type="radio"]:checked + .no-estilo {
-  background-color: $skyblue;
-  color: $white;
-  border: none;
-}
 input[type="radio"]:checked + .si-estilo {
   background-color: $skyblue;
   color: $white;
   border: none;
 }
+input[type="radio"]:checked + .no-estilo {
+  background-color: $skyblue;
+  color: $white;
+  border: none;
+}
 
+input[type="radio"]:checked + .si-estilo1 {
+  background-color: $darkinput;
+  color: $white;
+  border: none;
+}
+input[type="radio"]:checked + .no-estilo1 {
+  background-color: $darkinput;
+  color: $white;
+  border: none;
+}
 .ml-btn {
   margin-left: 66%;
 }
@@ -320,7 +297,6 @@ ul {
 }
 .ubicacion3 {
   position: absolute;
-  right: 3%;
   top: 30%;
   z-index: 1;
 }
@@ -491,4 +467,12 @@ ul {
 .p1 {
   position: absolute;
   margin-top: 5%;
+}
+.posilan{
+  margin-bottom: -17%;
+    margin-left: 12%;
+}
+.posi1{
+  margin-bottom: -19%;
+  margin-left: 3%;
 }

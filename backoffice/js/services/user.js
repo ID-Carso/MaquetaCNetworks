@@ -319,20 +319,24 @@ function getAllUsersBO() {
           </div>
         </div>
         
-        <div class="col-xl-1">
-          <div class="row descri4">
-            <input type="image" src="./images/ver-muestra.svg" class="btn-focus ver tam "></input>
-            <input type="image" src="./images/edita-muestra.svg" class="btn-focus edi tam"></input>
-            <input type="image" src="./images/borrar-muestra.svg" class="btn-focus borrar tam"></input>
+        
+          <div>
+          <ul class="description">
+          <li class="posi">
+          <input type="image" src="./images/ver-muestra.svg" class="btn-focus  tam "></input>
+          <div class="describe"><img src="./images/recuadro1-hover.svg"><span class="text-veri">Visualizar</span></div>
+          </li>
+          <li class="posi">
+          <input type="image" src="./images/edita-muestra.svg" class="btn-focus  tam"></input>
+          <div class="describe"><img src="./images/recuadro1-hover.svg"><span class="text-edita">Editar</span></div>
+          </li>
+          <li class="posi">
+          <input type="image" src="./images/borrar-muestra.svg" class="btn-focus  tam"></input>         
+          <div class="describe"><img src="./images/recuadro1-hover.svg"><span class="text-borra">Borrar</span></div>
+          </li>
+          </ul>         
+           
           </div>
-          <div class="descri2">
-            <div class="veri"><img src="./images/recuadro1-hover.svg"><span class="text-veri">Visualizar</span></div>
-            <div class="edita"><img src="./images/recuadro1-hover.svg"><span class="text-edita">Editar</span></div>
-            <div class="borra"><img src="./images/recuadro1-hover.svg"><span class="text-borra">Borrar</span></div>
-          </div>
-
-        </div>
-
       
         `);
         showDescriptions();
@@ -393,7 +397,7 @@ function getUser(id) {
                             </input>
 
                             <p class="mt-4 ml-2">Rol de usuario</p>
-                            <button type="button" class=" btn-succes mb-4 show-rol" id="login-button">
+                            <button type="button" class=" btn-succes text-sucess mb-4 show-rol" id="login-button">
                               ${rol}
                             </button>
                         </form>
@@ -462,16 +466,25 @@ function getAllUserFront() {
           
         </div>
         <div class="col-xl-1 user-front-table">
-          <div class="row descri1">
-            <input type="image" src="./images/ver-muestra.svg" class="btn-focus ver tam"></input>
-            <input type="image" src="./images/edita-muestra.svg" class="btn-focus edi tam"></input>
-            <input type="image" src="./images/borrar-muestra.svg" class="btn-focus borrar tam"></input>
-          </div>
-          <div class="descri3">
-            <div class="veri1"><img src="./images/recuadro1-hover.svg"><span class="text-veri">Visualizar</span></div>
-            <div class="edita1"><img src="./images/recuadro1-hover.svg"><span class="text-edita">Editar</span></div>
-            <div class="borra1"><img src="./images/recuadro1-hover.svg"><span class="text-borra">Borrar</span></div>
-          </div>
+         
+        <div>
+        <ul class="description">
+        <li class="posi">
+        <input type="image" src="./images/ver-muestra.svg" class="btn-focus  tam "></input>
+        <div class="describe"><img src="./images/recuadro1-hover.svg"><span class="text-veri">Visualizar</span></div>
+        </li>
+        <li class="posi">
+        <input type="image" src="./images/edita-muestra.svg" class="btn-focus  tam"></input>
+        <div class="describe"><img src="./images/recuadro1-hover.svg"><span class="text-edita">Editar</span></div>
+        </li>
+        <li class="posi">
+        <input type="image" src="./images/borrar-muestra.svg" class="btn-focus  tam"></input>         
+        <div class="describe"><img src="./images/recuadro1-hover.svg"><span class="text-borra">Borrar</span></div>
+        </li>
+        </ul>         
+         
+        </div>
+       
         </div>
         `);
         showUserFront();

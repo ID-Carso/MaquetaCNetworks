@@ -47,7 +47,7 @@ session_start();
                 <button type="button" class="button-rol bt-rol-register btn-rol-all  btn-rol px-xl-0 enviamos ml-5 btn-rol-select" rel='User-Raiz' id_rol="1" id_button="1">Usuario Raíz</button>
                 <button type="button" id_rol="3" class="button-rol bt-rol-register btn-rol-all btn-rol px-xl-1 enviamos" rel='User-Edit' id_button="2">Usuario Editor</button>
                 <button type="button" id_rol="2" class="button-rol bt-rol-register btn-rol-all btn-rol px-xl-0 enviamos" rel='User-Apro' id_button="3">Usuario Aprobador</button>
-                <button type="button" id_rol="4" class="button-rol bt-rol-register btn-rol-all btn-rol px-xl-0 enviamos2" rel='User-Visua' id_button="4">Usuario Visualizador</button>
+                <button type="button" id_rol="4" class="button-rol bt-rol-register btn-rol-all btn-rol px-xl-0 enviamos" rel='User-Visua' id_button="4">Usuario Visualizador</button>
               </div>
             </p>
           </div>
@@ -172,7 +172,7 @@ session_start();
 
           </div>
           <div class="text-center">
-            <button type="button" class="btn-aceptar  mt-4" id="modal-button" data-dismiss="modal">ACEPTAR</button>
+            <button type="button" class="btn-aceptar text-semi-white  mt-4" id="modal-button" data-dismiss="modal">ACEPTAR</button>
           </div>
         </div>
       </div>
