@@ -19,10 +19,6 @@ if (!isset($_SESSION["session"])) {
   include
     'styles.php';
   ?>
-
-
-
-
 </head>
 
 <body class="scroll">

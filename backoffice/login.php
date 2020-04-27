@@ -9,7 +9,7 @@ session_start();
 
 <head>
   <?php include 'styles.php';
-include 'scripts.php';
+  include 'scripts.php';
   ?>
 </head>
 
@@ -79,10 +79,6 @@ include 'scripts.php';
                 INGRESAR
               </button>
               <!-- </a> -->
-              <p class="nodatos">
-                Aún no has ingresado datos
-                <img src="./images/registro/alerta.svg" />
-              </p>
 
             </div>
           </form>

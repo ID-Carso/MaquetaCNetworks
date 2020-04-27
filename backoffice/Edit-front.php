@@ -46,7 +46,7 @@
                 <div class="col-xl-4" id="drop-paises">
                   <p class="margin-front texto-general">País de residencia</p>
 
-                  <input type="checkbox" id="selectPais" class="texto-general"/>
+                  <input type="checkbox" id="selectPais" class="texto-general" />
                   <label for="selectPais" id="select-Pais">
                     <p class="SeleccionPaisLista">
                       <img src="" class="Icon_paises" />Selecciona tu país
@@ -561,7 +561,7 @@
     </div>
   </div>
   < <!--MODAL EDITAR-->
-    <div class="modal modal-edit-user-front show " id="abrirBorrar" role="dialog">
+    <div class="modal modal-edit-user-front show" id="abrirBorrar" role="dialog">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content centro modal-defi2">
           <div class="modal-body  ">

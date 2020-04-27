@@ -2,35 +2,45 @@
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
-  src: url(../fonts/Montserrat-Light/Montserrat-Light.woff) format("woff"), url(../fonts/Montserrat-Light/Montserrat-Light.ttf) format("ttf"), url(../fonts/Montserrat-Light/Montserrat-Light.svg) format("svg");
+  src: url(../fonts/Montserrat-Light/Montserrat-Light.woff) format("woff"),
+    url(../fonts/Montserrat-Light/Montserrat-Light.ttf) format("ttf"),
+    url(../fonts/Montserrat-Light/Montserrat-Light.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Regular";
   src: url(../fonts/Montserrat-Regular/Montserrat-Regular.eot);
-  src: url(../fonts/Montserrat-Regular/Montserrat-Regular.woff) format("woff"), url(../fonts/Montserrat-Regular/Montserrat-Regular.ttf) format("truetype"), url(../fonts/Montserrat-Regular/Montserrat-Regular.svg) format("svg");
+  src: url(../fonts/Montserrat-Regular/Montserrat-Regular.woff) format("woff"),
+    url(../fonts/Montserrat-Regular/Montserrat-Regular.ttf) format("truetype"),
+    url(../fonts/Montserrat-Regular/Montserrat-Regular.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-SemiBold";
   src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.eot);
-  src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff) format("woff"), url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf) format("truetype"), url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.svg) format("svg");
+  src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff) format("woff"),
+    url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf) format("truetype"),
+    url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Bold";
   src: url(../fonts/Montserrat-Bold/Montserrat-Bold.eot);
-  src: url(../fonts/Montserrat-Bold/Montserrat-Bold.woff) format("woff"), url(../fonts/Montserrat-Bold/Montserrat-Bold.ttf) format("truetype"), url(../fonts/Montserrat-Bold/Montserrat-Bold.svg) format("svg");
+  src: url(../fonts/Montserrat-Bold/Montserrat-Bold.woff) format("woff"),
+    url(../fonts/Montserrat-Bold/Montserrat-Bold.ttf) format("truetype"),
+    url(../fonts/Montserrat-Bold/Montserrat-Bold.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Black";
   src: url(../fonts/Montserrat-Black/Montserrat-Black.eot);
-  src: url(../fonts/Montserrat-Black/Montserrat-Black.woff) format("woff"), url(../fonts/Montserrat-Black/Montserrat-Black.ttf) format("truetype"), url(../fonts/Montserrat-Black/Montserrat-Black.svg) format("svg");
+  src: url(../fonts/Montserrat-Black/Montserrat-Black.woff) format("woff"),
+    url(../fonts/Montserrat-Black/Montserrat-Black.ttf) format("truetype"),
+    url(../fonts/Montserrat-Black/Montserrat-Black.svg) format("svg");
   font-display: block;
 }
 
@@ -47,35 +57,45 @@
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
-  src: url(../fonts/Montserrat-Light/Montserrat-Light.woff) format("woff"), url(../fonts/Montserrat-Light/Montserrat-Light.ttf) format("ttf"), url(../fonts/Montserrat-Light/Montserrat-Light.svg) format("svg");
+  src: url(../fonts/Montserrat-Light/Montserrat-Light.woff) format("woff"),
+    url(../fonts/Montserrat-Light/Montserrat-Light.ttf) format("ttf"),
+    url(../fonts/Montserrat-Light/Montserrat-Light.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Regular";
   src: url(../fonts/Montserrat-Regular/Montserrat-Regular.eot);
-  src: url(../fonts/Montserrat-Regular/Montserrat-Regular.woff) format("woff"), url(../fonts/Montserrat-Regular/Montserrat-Regular.ttf) format("truetype"), url(../fonts/Montserrat-Regular/Montserrat-Regular.svg) format("svg");
+  src: url(../fonts/Montserrat-Regular/Montserrat-Regular.woff) format("woff"),
+    url(../fonts/Montserrat-Regular/Montserrat-Regular.ttf) format("truetype"),
+    url(../fonts/Montserrat-Regular/Montserrat-Regular.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-SemiBold";
   src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.eot);
-  src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff) format("woff"), url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf) format("truetype"), url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.svg) format("svg");
+  src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff) format("woff"),
+    url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf) format("truetype"),
+    url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Bold";
   src: url(../fonts/Montserrat-Bold/Montserrat-Bold.eot);
-  src: url(../fonts/Montserrat-Bold/Montserrat-Bold.woff) format("woff"), url(../fonts/Montserrat-Bold/Montserrat-Bold.ttf) format("truetype"), url(../fonts/Montserrat-Bold/Montserrat-Bold.svg) format("svg");
+  src: url(../fonts/Montserrat-Bold/Montserrat-Bold.woff) format("woff"),
+    url(../fonts/Montserrat-Bold/Montserrat-Bold.ttf) format("truetype"),
+    url(../fonts/Montserrat-Bold/Montserrat-Bold.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Black";
   src: url(../fonts/Montserrat-Black/Montserrat-Black.eot);
-  src: url(../fonts/Montserrat-Black/Montserrat-Black.woff) format("woff"), url(../fonts/Montserrat-Black/Montserrat-Black.ttf) format("truetype"), url(../fonts/Montserrat-Black/Montserrat-Black.svg) format("svg");
+  src: url(../fonts/Montserrat-Black/Montserrat-Black.woff) format("woff"),
+    url(../fonts/Montserrat-Black/Montserrat-Black.ttf) format("truetype"),
+    url(../fonts/Montserrat-Black/Montserrat-Black.svg) format("svg");
   font-display: block;
 }
 
@@ -197,16 +217,16 @@
   height: 34px;
   text-align: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .text-base {
@@ -477,8 +497,8 @@
   font-size: 23px;
   color: #2e2c2c;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .text-titulo-rojo {
@@ -486,8 +506,8 @@
   font-size: 23px;
   color: #af272f;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .flex-caption {
@@ -690,35 +710,45 @@
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
-  src: url(../fonts/Montserrat-Light/Montserrat-Light.woff) format("woff"), url(../fonts/Montserrat-Light/Montserrat-Light.ttf) format("ttf"), url(../fonts/Montserrat-Light/Montserrat-Light.svg) format("svg");
+  src: url(../fonts/Montserrat-Light/Montserrat-Light.woff) format("woff"),
+    url(../fonts/Montserrat-Light/Montserrat-Light.ttf) format("ttf"),
+    url(../fonts/Montserrat-Light/Montserrat-Light.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Regular";
   src: url(../fonts/Montserrat-Regular/Montserrat-Regular.eot);
-  src: url(../fonts/Montserrat-Regular/Montserrat-Regular.woff) format("woff"), url(../fonts/Montserrat-Regular/Montserrat-Regular.ttf) format("truetype"), url(../fonts/Montserrat-Regular/Montserrat-Regular.svg) format("svg");
+  src: url(../fonts/Montserrat-Regular/Montserrat-Regular.woff) format("woff"),
+    url(../fonts/Montserrat-Regular/Montserrat-Regular.ttf) format("truetype"),
+    url(../fonts/Montserrat-Regular/Montserrat-Regular.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-SemiBold";
   src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.eot);
-  src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff) format("woff"), url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf) format("truetype"), url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.svg) format("svg");
+  src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff) format("woff"),
+    url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf) format("truetype"),
+    url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Bold";
   src: url(../fonts/Montserrat-Bold/Montserrat-Bold.eot);
-  src: url(../fonts/Montserrat-Bold/Montserrat-Bold.woff) format("woff"), url(../fonts/Montserrat-Bold/Montserrat-Bold.ttf) format("truetype"), url(../fonts/Montserrat-Bold/Montserrat-Bold.svg) format("svg");
+  src: url(../fonts/Montserrat-Bold/Montserrat-Bold.woff) format("woff"),
+    url(../fonts/Montserrat-Bold/Montserrat-Bold.ttf) format("truetype"),
+    url(../fonts/Montserrat-Bold/Montserrat-Bold.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Black";
   src: url(../fonts/Montserrat-Black/Montserrat-Black.eot);
-  src: url(../fonts/Montserrat-Black/Montserrat-Black.woff) format("woff"), url(../fonts/Montserrat-Black/Montserrat-Black.ttf) format("truetype"), url(../fonts/Montserrat-Black/Montserrat-Black.svg) format("svg");
+  src: url(../fonts/Montserrat-Black/Montserrat-Black.woff) format("woff"),
+    url(../fonts/Montserrat-Black/Montserrat-Black.ttf) format("truetype"),
+    url(../fonts/Montserrat-Black/Montserrat-Black.svg) format("svg");
   font-display: block;
 }
 
@@ -840,16 +870,16 @@
   height: 34px;
   text-align: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .text-base {
@@ -1120,8 +1150,8 @@
   font-size: 23px;
   color: #2e2c2c;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .text-titulo-rojo {
@@ -1129,8 +1159,8 @@
   font-size: 23px;
   color: #af272f;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .flex-caption {
@@ -1333,35 +1363,45 @@
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
-  src: url(../fonts/Montserrat-Light/Montserrat-Light.woff) format("woff"), url(../fonts/Montserrat-Light/Montserrat-Light.ttf) format("ttf"), url(../fonts/Montserrat-Light/Montserrat-Light.svg) format("svg");
+  src: url(../fonts/Montserrat-Light/Montserrat-Light.woff) format("woff"),
+    url(../fonts/Montserrat-Light/Montserrat-Light.ttf) format("ttf"),
+    url(../fonts/Montserrat-Light/Montserrat-Light.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Regular";
   src: url(../fonts/Montserrat-Regular/Montserrat-Regular.eot);
-  src: url(../fonts/Montserrat-Regular/Montserrat-Regular.woff) format("woff"), url(../fonts/Montserrat-Regular/Montserrat-Regular.ttf) format("truetype"), url(../fonts/Montserrat-Regular/Montserrat-Regular.svg) format("svg");
+  src: url(../fonts/Montserrat-Regular/Montserrat-Regular.woff) format("woff"),
+    url(../fonts/Montserrat-Regular/Montserrat-Regular.ttf) format("truetype"),
+    url(../fonts/Montserrat-Regular/Montserrat-Regular.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-SemiBold";
   src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.eot);
-  src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff) format("woff"), url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf) format("truetype"), url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.svg) format("svg");
+  src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff) format("woff"),
+    url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf) format("truetype"),
+    url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Bold";
   src: url(../fonts/Montserrat-Bold/Montserrat-Bold.eot);
-  src: url(../fonts/Montserrat-Bold/Montserrat-Bold.woff) format("woff"), url(../fonts/Montserrat-Bold/Montserrat-Bold.ttf) format("truetype"), url(../fonts/Montserrat-Bold/Montserrat-Bold.svg) format("svg");
+  src: url(../fonts/Montserrat-Bold/Montserrat-Bold.woff) format("woff"),
+    url(../fonts/Montserrat-Bold/Montserrat-Bold.ttf) format("truetype"),
+    url(../fonts/Montserrat-Bold/Montserrat-Bold.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Black";
   src: url(../fonts/Montserrat-Black/Montserrat-Black.eot);
-  src: url(../fonts/Montserrat-Black/Montserrat-Black.woff) format("woff"), url(../fonts/Montserrat-Black/Montserrat-Black.ttf) format("truetype"), url(../fonts/Montserrat-Black/Montserrat-Black.svg) format("svg");
+  src: url(../fonts/Montserrat-Black/Montserrat-Black.woff) format("woff"),
+    url(../fonts/Montserrat-Black/Montserrat-Black.ttf) format("truetype"),
+    url(../fonts/Montserrat-Black/Montserrat-Black.svg) format("svg");
   font-display: block;
 }
 
@@ -1398,11 +1438,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transform: translate(0px, -90%);
   transform: translate(0px, -90%);
   left: 50px;
@@ -1514,7 +1554,7 @@
 }
 
 .btn-ingresar-reco {
-  width: 260px;
+  width: 100%;
   height: 48px;
   border-radius: 21.5px;
   background-color: #069cb0;
@@ -1595,11 +1635,11 @@
   font-size: 18.8px;
   border-radius: 25px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transform: translate(0px, -50%);
   transform: translate(0px, -5%);
   outline: none !important;
@@ -1635,11 +1675,11 @@
   line-height: 13px;
   border-radius: 13px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #ffffff;
   color: black;
   outline: none !important;
@@ -1657,11 +1697,11 @@
   line-height: 13px;
   border-radius: 13px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #ffffff;
   color: black;
   outline: none !important;
@@ -1680,11 +1720,11 @@
   line-height: 13px;
   border-radius: 13px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #2e2c2c;
   color: #ffffff;
   outline: none !important;
@@ -1702,11 +1742,11 @@
   height: 36px;
   border-radius: 13px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #ffffff;
   color: black;
   outline: none !important;
@@ -1722,11 +1762,11 @@
   line-height: 13px;
   border-radius: 13px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: white;
   color: black;
   outline: none !important;
@@ -1746,11 +1786,11 @@
   line-height: 13px;
   border-radius: 13px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #03ad50;
   color: #ffffff;
   outline: none !important;
@@ -1860,11 +1900,11 @@
   border-radius: 13px;
   border: solid 1px #979797;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 13px;
   background: #ffffff;
   outline: none !important;
@@ -1886,11 +1926,11 @@
   border-radius: 13px;
   border: solid 1px #979797;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: white;
   outline: none !important;
   outline-width: 0 !important;
@@ -1944,11 +1984,11 @@
   background-color: #0097a9;
   border: 1px solid #0097a9;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   outline: none !important;
   outline-width: 0 !important;
   box-shadow: none;
@@ -1970,11 +2010,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transform: translate(0px, -50%);
   transform: translate(0px, -5%);
   left: 0px;
@@ -1995,8 +2035,8 @@
   border-radius: 13px;
   text-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2015,11 +2055,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transform: translate(0px, -50%);
   transform: translate(0px, -40%);
   left: 10px;
@@ -2181,7 +2221,7 @@
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .image-blue {
@@ -2244,7 +2284,7 @@
   right: 1%;
   left: 270%;
   -webkit-transform: translate(0, 2000%);
-          transform: translate(0, 2000%);
+  transform: translate(0, 2000%);
   z-index: 1;
 }
 
@@ -2278,7 +2318,7 @@
   right: 0%;
   top: 0;
   -webkit-transform: translate(-30%, -30%);
-  transform: translate(50%, -43%);
+  transform: translate(30%, -30%);
   cursor: pointer;
   z-index: 2;
 }
@@ -2289,7 +2329,7 @@
   right: -32px;
   top: 0;
   -webkit-transform: translate(-30%, -30%);
-  /* transform: translate(-150%, -45%); */
+  transform: translate(-30%, -30%);
   cursor: pointer;
   z-index: 2;
 }
@@ -2298,9 +2338,8 @@
   width: 39px;
   position: absolute;
   top: 0;
-  /* -webkit-transform: translate(-400%, -30%); */
   -webkit-transform: translate(1640%, -45%);
-          transform: translate(1640%, -45%);
+  transform: translate(1640%, -45%);
   cursor: pointer;
   z-index: 2;
 }
@@ -2345,8 +2384,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   position: absolute;
   top: -210px;
   margin-left: 1px;
@@ -2360,12 +2399,17 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  top: -172px;
+  margin-left: 1px;
+  /*margin: auto;
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 12%;
-  left: 1%;
-  background-color: #56c7d5;
+  left: 1%;*/
 }
 
 .descri2 {
@@ -2373,22 +2417,33 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  /*margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
   top: 12%;
-  left: 49px;
+  left: 46px;*/
 }
 
 .descri1 {
+  /* margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 169px;*/
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: fixed;
-  top: 169px;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  top: 26px;
+  margin-left: 1px;
   background-color: #56c7d5;
 }
 
@@ -2639,11 +2694,11 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transform: translate(0px, -50%);
   transform: translate(0px, -5%);
   left: 0px;
@@ -2776,8 +2831,13 @@ ul {
 }
 
 .veri {
+  /*display: none;
+  position: absolute;
+  top: -172px;*/
   display: none;
   position: absolute;
+  left: 30px;
+  top: -172px;
 }
 
 .veri1 {
@@ -2788,9 +2848,13 @@ ul {
 }
 
 .edita {
+  /*display: none;
+  position: absolute;
+  top: 32px;*/
   display: none;
   position: absolute;
-  top: 32px;
+  left: 30px;
+  top: -137px;
 }
 
 .edita1 {
@@ -2801,9 +2865,13 @@ ul {
 }
 
 .borra {
+  /*display: none;
+  position: absolute;
+  top: 66px;*/
   display: none;
   position: absolute;
-  top: 66px;
+  left: 30px;
+  top: -106px;
 }
 
 .borra1 {
@@ -2831,11 +2899,11 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   position: relative;
   margin-top: -82px;
 }
@@ -2908,35 +2976,45 @@ ul {
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
-  src: url(../fonts/Montserrat-Light/Montserrat-Light.woff) format("woff"), url(../fonts/Montserrat-Light/Montserrat-Light.ttf) format("ttf"), url(../fonts/Montserrat-Light/Montserrat-Light.svg) format("svg");
+  src: url(../fonts/Montserrat-Light/Montserrat-Light.woff) format("woff"),
+    url(../fonts/Montserrat-Light/Montserrat-Light.ttf) format("ttf"),
+    url(../fonts/Montserrat-Light/Montserrat-Light.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Regular";
   src: url(../fonts/Montserrat-Regular/Montserrat-Regular.eot);
-  src: url(../fonts/Montserrat-Regular/Montserrat-Regular.woff) format("woff"), url(../fonts/Montserrat-Regular/Montserrat-Regular.ttf) format("truetype"), url(../fonts/Montserrat-Regular/Montserrat-Regular.svg) format("svg");
+  src: url(../fonts/Montserrat-Regular/Montserrat-Regular.woff) format("woff"),
+    url(../fonts/Montserrat-Regular/Montserrat-Regular.ttf) format("truetype"),
+    url(../fonts/Montserrat-Regular/Montserrat-Regular.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-SemiBold";
   src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.eot);
-  src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff) format("woff"), url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf) format("truetype"), url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.svg) format("svg");
+  src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff) format("woff"),
+    url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf) format("truetype"),
+    url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Bold";
   src: url(../fonts/Montserrat-Bold/Montserrat-Bold.eot);
-  src: url(../fonts/Montserrat-Bold/Montserrat-Bold.woff) format("woff"), url(../fonts/Montserrat-Bold/Montserrat-Bold.ttf) format("truetype"), url(../fonts/Montserrat-Bold/Montserrat-Bold.svg) format("svg");
+  src: url(../fonts/Montserrat-Bold/Montserrat-Bold.woff) format("woff"),
+    url(../fonts/Montserrat-Bold/Montserrat-Bold.ttf) format("truetype"),
+    url(../fonts/Montserrat-Bold/Montserrat-Bold.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Black";
   src: url(../fonts/Montserrat-Black/Montserrat-Black.eot);
-  src: url(../fonts/Montserrat-Black/Montserrat-Black.woff) format("woff"), url(../fonts/Montserrat-Black/Montserrat-Black.ttf) format("truetype"), url(../fonts/Montserrat-Black/Montserrat-Black.svg) format("svg");
+  src: url(../fonts/Montserrat-Black/Montserrat-Black.woff) format("woff"),
+    url(../fonts/Montserrat-Black/Montserrat-Black.ttf) format("truetype"),
+    url(../fonts/Montserrat-Black/Montserrat-Black.svg) format("svg");
   font-display: block;
 }
 
@@ -2953,35 +3031,45 @@ ul {
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
-  src: url(../fonts/Montserrat-Light/Montserrat-Light.woff) format("woff"), url(../fonts/Montserrat-Light/Montserrat-Light.ttf) format("ttf"), url(../fonts/Montserrat-Light/Montserrat-Light.svg) format("svg");
+  src: url(../fonts/Montserrat-Light/Montserrat-Light.woff) format("woff"),
+    url(../fonts/Montserrat-Light/Montserrat-Light.ttf) format("ttf"),
+    url(../fonts/Montserrat-Light/Montserrat-Light.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Regular";
   src: url(../fonts/Montserrat-Regular/Montserrat-Regular.eot);
-  src: url(../fonts/Montserrat-Regular/Montserrat-Regular.woff) format("woff"), url(../fonts/Montserrat-Regular/Montserrat-Regular.ttf) format("truetype"), url(../fonts/Montserrat-Regular/Montserrat-Regular.svg) format("svg");
+  src: url(../fonts/Montserrat-Regular/Montserrat-Regular.woff) format("woff"),
+    url(../fonts/Montserrat-Regular/Montserrat-Regular.ttf) format("truetype"),
+    url(../fonts/Montserrat-Regular/Montserrat-Regular.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-SemiBold";
   src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.eot);
-  src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff) format("woff"), url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf) format("truetype"), url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.svg) format("svg");
+  src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff) format("woff"),
+    url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf) format("truetype"),
+    url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Bold";
   src: url(../fonts/Montserrat-Bold/Montserrat-Bold.eot);
-  src: url(../fonts/Montserrat-Bold/Montserrat-Bold.woff) format("woff"), url(../fonts/Montserrat-Bold/Montserrat-Bold.ttf) format("truetype"), url(../fonts/Montserrat-Bold/Montserrat-Bold.svg) format("svg");
+  src: url(../fonts/Montserrat-Bold/Montserrat-Bold.woff) format("woff"),
+    url(../fonts/Montserrat-Bold/Montserrat-Bold.ttf) format("truetype"),
+    url(../fonts/Montserrat-Bold/Montserrat-Bold.svg) format("svg");
   font-display: block;
 }
 
 @font-face {
   font-family: "Montserrat-Black";
   src: url(../fonts/Montserrat-Black/Montserrat-Black.eot);
-  src: url(../fonts/Montserrat-Black/Montserrat-Black.woff) format("woff"), url(../fonts/Montserrat-Black/Montserrat-Black.ttf) format("truetype"), url(../fonts/Montserrat-Black/Montserrat-Black.svg) format("svg");
+  src: url(../fonts/Montserrat-Black/Montserrat-Black.woff) format("woff"),
+    url(../fonts/Montserrat-Black/Montserrat-Black.ttf) format("truetype"),
+    url(../fonts/Montserrat-Black/Montserrat-Black.svg) format("svg");
   font-display: block;
 }
 
@@ -3103,16 +3191,16 @@ ul {
   height: 34px;
   text-align: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .text-base {
@@ -3383,8 +3471,8 @@ ul {
   font-size: 23px;
   color: #2e2c2c;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .text-titulo-rojo {
@@ -3392,8 +3480,8 @@ ul {
   font-size: 23px;
   color: #af272f;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .flex-caption {
@@ -3596,10 +3684,10 @@ ul {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (246px)[2];
-      grid-template-columns: repeat(2, 246px);
+  -ms-grid-columns: (246px) [2];
+  grid-template-columns: repeat(2, 246px);
   grid-auto-rows: 34px;
-      grid-template-areas: "my-header  my-section ";
+  grid-template-areas: "my-header  my-section ";
 }
 
 .grid > div {
@@ -3607,8 +3695,8 @@ ul {
   height: 100%;
   max-width: 492px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: 1px solid #d8d8d8;
   background-color: #ffffff;
   display: -webkit-box;
@@ -3625,13 +3713,13 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-shadow: 1px 0px 2px 1px #d8d8d8;
-          box-shadow: 1px 0px 2px 1px #d8d8d8;
+  box-shadow: 1px 0px 2px 1px #d8d8d8;
 }
 
 section {
@@ -3643,13 +3731,13 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-shadow: 1px 0px 2px 1px #d8d8d8;
-          box-shadow: 1px 0px 2px 1px #d8d8d8;
+  box-shadow: 1px 0px 2px 1px #d8d8d8;
 }
 
 .sombras1 {
@@ -3657,7 +3745,7 @@ section {
   width: 100%;
   max-width: 492px;
   -webkit-box-shadow: 3px 5px 10px 6px rgba(0, 0, 0, 0.14);
-          box-shadow: 3px 5px 10px 6px rgba(0, 0, 0, 0.14);
+  box-shadow: 3px 5px 10px 6px rgba(0, 0, 0, 0.14);
 }
 
 .sombras2 {
@@ -3665,7 +3753,7 @@ section {
   width: 100%;
   max-width: 672px;
   -webkit-box-shadow: 3px 5px 10px 6px rgba(0, 0, 0, 0.14);
-          box-shadow: 3px 5px 10px 6px rgba(0, 0, 0, 0.14);
+  box-shadow: 3px 5px 10px 6px rgba(0, 0, 0, 0.14);
 }
 
 .fondo-BO {
@@ -3712,16 +3800,16 @@ section {
 .grid-users {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[3];
-      grid-template-columns: repeat(3, auto);
+  -ms-grid-columns: (auto) [3];
+  grid-template-columns: repeat(3, auto);
   grid-auto-rows: 34px;
-      grid-template-areas: "my-header my-section my-aside";
+  grid-template-areas: "my-header my-section my-aside";
 }
 
 .grid-users > div {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   max-width: 603px;
   border: 1px solid #d8d8d8;
@@ -3740,14 +3828,14 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #ffffff;
   -webkit-box-shadow: 1px 0px 2px 1px #d8d8d8;
-          box-shadow: 1px 0px 2px 1px #d8d8d8;
+  box-shadow: 1px 0px 2px 1px #d8d8d8;
 }
 
 section {
@@ -3759,15 +3847,15 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #ffffff;
   width: 100%;
   -webkit-box-shadow: 1px 0px 2px 1px #d8d8d8;
-          box-shadow: 1px 0px 2px 1px #d8d8d8;
+  box-shadow: 1px 0px 2px 1px #d8d8d8;
 }
 
 aside {
@@ -3779,14 +3867,14 @@ aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #ffffff;
   -webkit-box-shadow: 1px 0px 2px 1px #d8d8d8;
-          box-shadow: 1px 0px 2px 1px #d8d8d8;
+  box-shadow: 1px 0px 2px 1px #d8d8d8;
 }
 
 .body {
@@ -4172,7 +4260,7 @@ input[type="radio"]:checked + .hombre-estilo {
   border-style: solid;
   border-color: #979797;
   -o-border-image: initial;
-     border-image: initial;
+  border-image: initial;
   overflow: hidden;
 }
 
@@ -4395,11 +4483,11 @@ select:focus {
   width: 100px;
   display: none;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   display: none;
 }
 
@@ -4426,8 +4514,8 @@ option:checked + .roles {
 }
 
 .insert-data:focus {
-  color: #2e90ff;
-  border-bottom: solid 2px #2e90ff;
+  color: #14bef2;
+  border-bottom: solid 2px #14bef2;
   font-family: "Montserrat-Bold";
 }
 

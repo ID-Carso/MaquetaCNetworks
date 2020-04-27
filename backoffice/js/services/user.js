@@ -319,15 +319,18 @@ function getAllUsersBO() {
           </div>
         </div>
         
-        <div class="row descri4">
-          <input type="image" src="./images/ver-muestra.svg" class="btn-focus ver tam "></input>
-          <input type="image" src="./images/edita-muestra.svg" class="btn-focus edi tam"></input>
-          <input type="image" src="./images/borrar-muestra.svg" class="btn-focus borrar tam"></input>
-        </div>
-        <div class="descri2">
-          <div class="veri"><img src="./images/recuadro1-hover.svg"><span class="text-veri">Visualizar</span></div>
-          <div class="edita"><img src="./images/recuadro1-hover.svg"><span class="text-edita">Editar</span></div>
-          <div class="borra"><img src="./images/recuadro1-hover.svg"><span class="text-borra">Borrar</span></div>
+        <div class="col-xl-1">
+          <div class="row descri4">
+            <input type="image" src="./images/ver-muestra.svg" class="btn-focus ver tam "></input>
+            <input type="image" src="./images/edita-muestra.svg" class="btn-focus edi tam"></input>
+            <input type="image" src="./images/borrar-muestra.svg" class="btn-focus borrar tam"></input>
+          </div>
+          <div class="descri2">
+            <div class="veri"><img src="./images/recuadro1-hover.svg"><span class="text-veri">Visualizar</span></div>
+            <div class="edita"><img src="./images/recuadro1-hover.svg"><span class="text-edita">Editar</span></div>
+            <div class="borra"><img src="./images/recuadro1-hover.svg"><span class="text-borra">Borrar</span></div>
+          </div>
+
         </div>
 
       
@@ -882,7 +885,7 @@ function deleteUserBO(id) {
             <!--Acciones-->
             <input type='image' src='./images/ver-acti.svg' class='ml-3 btn-focus view-user-icon images' id='visual'></input>
             <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images edit-user-icon'></input>
-            <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus images delete-userbo-icon' _username="${usern.name}" ></input>
+            <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus images delete-userbo-icon' _username="${user.name}" ></input>
           </div>
           `;
         });

@@ -11,28 +11,40 @@
   margin: auto;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: -172px;
+  margin-left: 1px;
+  /*margin: auto;
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 12%;
-  left: 1%;
-
-  background-color: $morelightblue;
+  left: 1%;*/
 }
 .descri2 {
   margin: auto;
+  display: flex;
+  position: absolute;
+  /*margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: fixed;
   top: 12%;
-  left: 49px;
-
+  left: 46px;*/
 }
 .descri1 {
-  margin: auto;
+  /* margin: auto;
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 169px;
+  top: 169px;*/
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 26px;
+  margin-left: 1px;
   background-color: $morelightblue;
 }
 .descri3 {
@@ -363,9 +375,13 @@ ul {
 }
 
 .veri {
+  /*display: none;
+  position: absolute;
+  top: -172px;*/
   display: none;
   position: absolute;
- // top: -172px;
+  left: 30px;
+  top: -172px;
 }
 .veri1 {
   display: none;
@@ -375,9 +391,13 @@ ul {
 }
 
 .edita {
+  /*display: none;
+  position: absolute;
+  top: 32px;*/
   display: none;
   position: absolute;
-  top: 32px;
+  left: 30px;
+  top: -137px;
 }
 .edita1 {
   display: none;
@@ -387,9 +407,13 @@ ul {
 }
 
 .borra {
+  /*display: none;
+  position: absolute;
+  top: 66px;*/
   display: none;
   position: absolute;
-  top: 66px;
+  left: 30px;
+  top: -106px;
 }
 .borra1 {
   display: none;
