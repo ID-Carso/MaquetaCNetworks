@@ -713,3 +713,27 @@
   margin-top: -14px;
   margin-right: 5px;
 }
+.a-btn-general{
+  width: 205px;
+  height: 46px;
+  border-radius: 7px;
+  line-height: 2;
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.a-btn-teal{
+  background-color: $teal;
+  border: 1px solid $teal;
+}
+.a-btn-grey{
+background-color: $pinkish-grey;
+border: 1px solid $pinkish-grey;
+}
+.a-btn-check{
+  width: 38px;
+  height: 38px;
+  border: solid 3px $silver;
+}

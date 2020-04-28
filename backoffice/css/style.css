@@ -688,6 +688,42 @@
   letter-spacing: normal;
 }
 
+.a-prev-title {
+  font-size: 16px;
+}
+
+.a-text-title {
+  font-size: 29px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.a-text-title-table {
+  width: 484px;
+  height: 29px;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.a-text-green-apro {
+  color: #009245;
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+}
+
+.a-text-grey {
+  font-family: "Montserrat-Medium";
+  color: #adabab;
+  font-size: 14px;
+}
+
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
@@ -1330,6 +1366,42 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
+}
+
+.a-prev-title {
+  font-size: 16px;
+}
+
+.a-text-title {
+  font-size: 29px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.a-text-title-table {
+  width: 484px;
+  height: 29px;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.a-text-green-apro {
+  color: #009245;
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+}
+
+.a-text-grey {
+  font-family: "Montserrat-Medium";
+  color: #adabab;
+  font-size: 14px;
 }
 
 @font-face {
@@ -2199,6 +2271,34 @@
   margin-right: 5px;
 }
 
+.a-btn-general {
+  width: 205px;
+  height: 46px;
+  border-radius: 7px;
+  line-height: 2;
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.a-btn-teal {
+  background-color: #0097a9;
+  border: 1px solid #0097a9;
+}
+
+.a-btn-grey {
+  background-color: #d1d0d0;
+  border: 1px solid #d1d0d0;
+}
+
+.a-btn-check {
+  width: 38px;
+  height: 38px;
+  border: solid 3px #d5d7d7;
+}
+
 .loader {
   position: fixed;
   top: 50%;
@@ -2925,6 +3025,30 @@ ul {
   margin-left: 3%;
 }
 
+.prev {
+  margin-left: -133px;
+  margin-top: -40px;
+}
+
+.ali-prev {
+  margin-top: -9%;
+}
+
+.mt12 {
+  margin-right: 7%;
+  margin-top: 12%;
+}
+
+.ctable {
+  -webkit-transform: translateX(-16%);
+          transform: translateX(-16%);
+}
+
+.cytable {
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
+}
+
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
@@ -3612,6 +3736,42 @@ ul {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
+}
+
+.a-prev-title {
+  font-size: 16px;
+}
+
+.a-text-title {
+  font-size: 29px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.a-text-title-table {
+  width: 484px;
+  height: 29px;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.a-text-green-apro {
+  color: #009245;
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+}
+
+.a-text-grey {
+  font-family: "Montserrat-Medium";
+  color: #adabab;
+  font-size: 14px;
 }
 
 .grid {
@@ -4442,6 +4602,16 @@ option:checked + .roles {
 
 .input-border-red {
   border-bottom: 2px solid #ff0007;
+}
+
+.titletable {
+  width: 925px;
+  height: 79px;
+  background-color: #af272f;
+}
+
+.content-table {
+  display: table;
 }
 
 .loader-container {

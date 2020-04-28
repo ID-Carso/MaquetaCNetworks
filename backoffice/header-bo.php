@@ -10,7 +10,7 @@ function showHeader($nameButton, $variation)
             echo "
         <div class='bg-color'>
             <span class='d-flex align-items-center justify-content-between  py-xl-2'>
-                <span class='ml-5'>  <a href='Admin-BO.php'/a> <img src='../images/registro/group-24.svg'> </span>
+                <span class='ml-5'>  <a href='Admin-BO.php'/a> <img src='./images/registro/group-24.svg'> </span>
                
                 <span class='text-light1 mr-5'>Administrador de contenido</span>          
         </span>
@@ -22,7 +22,7 @@ function showHeader($nameButton, $variation)
             </div>
             <div class='mr-5'>
            
-           <a href='login.php'> <button class='btn-return-sitio'>Regresar a Administrar sitio</button></a>
+           <a href='login.php'> <button class='btn-return-sitio text-return'>Regresar a Administrar sitio</button></a>
             </div>
         </div>
         ";
