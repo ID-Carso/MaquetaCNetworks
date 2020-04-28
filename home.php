@@ -178,8 +178,9 @@
                     <a href="claro-canal.php" class="home-title-link">
                         <img src="./images/home/tv-1.svg" class="claro-image-header">
                     </a>
-                    <h2 class="a-subtitle">
-                        LO MEJOR EN SERIES Y <br><span>PELÍCULAS INTERNACIONALES</span>
+                    <h2 class="a-subtitle a-claro-home-subtitle">
+                        <!--LO MEJOR EN SERIES Y <br><span>PELÍCULAS INTERNACIONALES</span>-->
+
                     </h2>
                 </div>
                 <div class="text-center">
@@ -197,9 +198,10 @@
                         <a href="claro-canal.php" class="home-title-link">
                             <img src="./images/home/tv-1.svg" class="claro-image-header">
                         </a>
-                        <h2 class="a-subtitle">
-                            LO MEJOR EN SERIES Y <span class="a-claro-channel-subtitle-bold">PELÍCULAS
-                                INTERNACIONALES</span>
+                        <h2 class="a-subtitle a-claro-home-subtitle">
+                            <!--LO MEJOR EN SERIES Y <span class="a-claro-channel-subtitle-bold">PELÍCULAS
+                                INTERNACIONALES</span>-->
+
                         </h2>
                     </div>
                     <div class="m-see-more">
@@ -226,7 +228,7 @@
                     </div>
                     <div>
                         <p class="horario-text text-dark">
-                            Horario sujetos a cambios
+                            Horarios sujetos a cambios
                         </p>
                     </div>
                 </div>
@@ -239,9 +241,8 @@
                         <a href="claro-canal.php" class="home-title-link">
                             <img src="./images/home/tv-1.svg" class="claro-image-header">
                         </a>
-                        <h2 class="a-subtitle">
-                            LO MEJOR EN SERIES Y <span>PELÍCULAS
-                                INTERNACIONALES</span>
+                        <h2 class="a-subtitle a-claro-home-subtitle">
+
                         </h2>
                     </div>
                     <div class="m-see-more">
@@ -256,7 +257,7 @@
                     </div>
                     <div>
                         <p class="horario-text text-dark">
-                            Horario sujetos a cambios
+                            Horarios sujetos a cambios
                         </p>
                     </div>
                 </div>
@@ -272,12 +273,13 @@
                     <a href="concert-channel.php" class="home-title-link">
                         <img src="./images/home/concert-home-img.svg" class="concerthome-image-header">
                     </a>
-                    <h2 class="a-concert-channel-subtitle">
-                        CONCIERTOS, ENTREVISTAS<br><span>Y MUCHO MÁS</span>
+                    <h2 class="a-concert-channel-subtitle a-concert-home-subtitle">
+                        <!--CONCIERTOS, ENTREVISTAS<br><span>Y MUCHO MÁS</span>-->
+
                     </h2>
                 </div>
                 <div class="text-center">
-                    <a href="concert-channel.php"><button class="btn-pink">VER +</button></a>
+                    <a href="concert-channel.php"><button class="btn-pink button-concert-home"></button></a>
                 </div>
                 <div class="section-slider concert-home-slider">
                 </div>
@@ -291,11 +293,11 @@
                         <a href="concert-channel.php" class="home-title-link">
                             <img src="./images/home/concert-home-img.svg" class="concerthome-image-header">
                         </a>
-                        <p class="a-concert-subtitle concert-first-subtitle">Conciertos</p>
-                        <p class="a-concert-subtitle concert-second-subtitle">Entrevistas y mucho más</p>
+                        <p class="a-concert-subtitle concert-first-subtitle a-concert-home-subtitle"></p>
+                        <!--<p class="a-concert-subtitle concert-second-subtitle">Entrevistas y mucho más</p>-->
                     </div>
                     <div class="m-see-more">
-                        <a href="concert-channel.php"><button class="btn-pink">VER +</button></a>
+                        <a href="concert-channel.php"><button class="btn-pink button-concert-home"></button></a>
                     </div>
                 </div>
                 <div class="home-concert-videos-container">
@@ -309,7 +311,7 @@
                     </div>
                     <div>
                         <p class="horario-text text-white">
-                            Horario sujetos a cambios
+                            Horarios sujetos a cambios
                         </p>
                     </div>
                 </div>
@@ -323,11 +325,11 @@
                         <a href="concert-channel.php" class="home-title-link">
                             <img class="concerthome-image-header" src="./images/home/concert-home-img.svg" alt="">
                         </a>
-                        <h2 class="text-white a-subtitle">Conciertos, entrevistas y mucho más</h2>
+                        <h2 class="text-white a-subtitle a-concert-home-subtitle"></h2>
                     </div>
                     <div class="m-see-more">
-                        <a href="concert-channel.php"><button class="btn-pink">
-                                <span>VER +</span>
+                        <a href="concert-channel.php"><button class="btn-pink button-concert-home">
+                                <span></span>
                             </button></a>
                     </div>
                 </div>
@@ -339,7 +341,7 @@
                     </div>
                     <div>
                         <p class="horario-text text-white">
-                            Horario sujetos a cambios
+                            Horarios sujetos a cambios
                         </p>
                     </div>
                 </div>
@@ -356,12 +358,13 @@
                         <img src="./images/home/tv-3.svg" class="cinemahome-image-header">
                     </a>
 
-                    <h2 class="a-claro-cinema-subtitle">
-                        Las mejores <span>Películas Mexicanas</span>
+                    <h2 class="a-claro-cinema-subtitle  a-cinema-home-subtitle">
+                        <!--Las mejores <span>Películas Mexicanas</span>-->
+                        <!--LOS ÍDOLOS QUE MÉXICO<br><span>LE DIO AL CINE</span>-->
                     </h2>
                 </div>
                 <div class="text-center">
-                    <a href="claro-cinema.php"><button class="btn-red">VER +</button></a>
+                    <a href="claro-cinema.php"><button class="btn-red button-cinema-home">VER +</button></a>
                 </div>
                 <div class="section-slider cinema-home-slider">
                 </div>
@@ -375,12 +378,12 @@
                         <a href="claro-cinema.php" class="home-title-link">
                             <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
                         </a>
-                        <h2 class="a-subtitle">
-                            Las mejores <span>Películas Mexicanas</span>
+                        <h2 class="a-subtitle a-cinema-home-subtitle">
+                            LOS ÍDOLOS QUE MÉXICO<span>LE DIO AL CINE</span>
                         </h2>
                     </div>
                     <div class="m-see-more">
-                        <a href="claro-cinema.php"><button class="btn-red">VER +</button></a>
+                        <a href="claro-cinema.php"><button class="btn-red  button-cinema-home">VER +</button></a>
                     </div>
                 </div>
                 <div class="d-flex no-gutters">
@@ -409,7 +412,7 @@
                     </div>
                     <div>
                         <p class="horario-text text-dark">
-                            Horario sujetos a cambios
+                            Horarios sujetos a cambios
                         </p>
                     </div>
                 </div>
@@ -423,12 +426,12 @@
                         <a href="claro-cinema.php" class="home-title-link">
                             <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
                         </a>
-                        <h2 class="a-subtitle">
-                            Las mejores <span>Películas Mexicanas</span>
+                        <h2 class="a-subtitle a-cinema-home-subtitle">
+                            <!--LOS ÍDOLOS QUE MÉXICO<span>LE DIO AL CINE</span>-->
                         </h2>
                     </div>
                     <div class="m-see-more">
-                        <a href="claro-cinema.php"><button class="btn-red">VER +</button></a>
+                        <a href="claro-cinema.php"><button class="btn-red button-cinema-home">VER +</button></a>
                     </div>
                 </div>
                 <div class="row no-gutters">
@@ -454,7 +457,7 @@
                     </div>
                     <div>
                         <p class="horario-text text-dark">
-                            Horario sujetos a cambios
+                            Horarios sujetos a cambios
                         </p>
                     </div>
                 </div>

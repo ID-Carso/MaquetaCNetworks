@@ -126,10 +126,18 @@ export default class Section {
     $(".sports-nav-image").attr("src", json.data.block_2_channel5_icon);
     /* End Header */
 
-    /*Canal Claro Home */
+    /*CLARO CANAL HOME */
+
+    /* TITLE */
     $(".a-claro-channel-title").text(json.data.block_3_title);
+
+    /* SUBTITLE */
+    $(".a-claro-home-subtitle").text(json.data.block_3_subtitle);
+
+    /* BUTTON */
     $(".btn-canal-claro-home").text(json.data.block_3_button1);
-    /* Slider Canal Claro Home */
+
+    /* SLIDER */
     let favoritesClaroCanalSynopsis = JSON.parse(
       localStorage.getItem("favoritesCanalClaro")
     );
@@ -218,7 +226,15 @@ export default class Section {
     /* End slider Canal Claro */
     /* End Canal Claro - Home*/
 
-    /* Concert Channel - Home*/
+    /* CONCERT CHANNEL HOME*/
+
+    /* SUBTITLE*/
+    $(".a-concert-home-subtitle").text(json.data.block_4_subtitle);
+
+    /* BUTTON */
+    $(".button-concert-home").text(json.data.block_4_button1);
+
+    /* SLIDER */
     let block4Image = [
       json.data.block_4_image1,
       json.data.block_4_image2,
@@ -265,9 +281,17 @@ export default class Section {
 
     $(".concert-home-slider").append(concertHomeVideosMobile);
 
-    /* End Concert Channel - Home*/
+    /* HOME CLARO CINEMA SECTION*/
 
-    /* Claro Cinema - Home*/
+    /* TITLE */
+
+    /* SUBTITLE*/
+    $(".a-cinema-home-subtitle").text(json.data.block_5_subtitle);
+
+    /* BUTTON */
+    $(".button-cinema-home").text(json.data.block_5_button1);
+
+    /* SLIDER*/
     let block5Image = [
       json.data.block_5_image1,
       json.data.block_5_image2,
@@ -400,8 +424,6 @@ export default class Section {
         },
       ],
     });
-
-    /* End Claro Cinema - Home*/
 
     /* Nuestra Visión - Home*/
 
