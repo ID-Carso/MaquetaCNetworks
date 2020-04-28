@@ -1115,8 +1115,8 @@ $(document).ready(function () {
   var sessionSrc = localStorage.getItem("src");
   var loginCountry = $(".login-country");
   //!sessionSrc && window.location.pathname !== "/v1.2/"
-  if (!sessionSrc && window.location.pathname !== "/") {
-    location.href = "/";
+  if (!sessionSrc && window.location.pathname !== "/v1.2/") {
+    location.href = "/v1.2/";
   } else {
     loginCountry.attr("src", sessionSrc);
   }

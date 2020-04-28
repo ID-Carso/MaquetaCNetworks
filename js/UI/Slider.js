@@ -312,7 +312,7 @@ export default class Slider {
         imageBannerPC:
           "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/pc/CANAL-CLARO-01-A.jpg",
         imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/pc/CANAL-CLARO-01-B.jpg",
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/tablet/CANAL-CLARO-01-B.jpg",
       },
       {
         imageBannerPC:
@@ -438,7 +438,10 @@ export default class Slider {
       dots: true,
       centerMode: false,
       arrows: false,
+      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
     });
+
     $(window).resize(function () {
       if (headerSlider.hasClass("slick-initialized")) {
         headerSlider.slick("unslick");
@@ -506,6 +509,8 @@ export default class Slider {
         dots: true,
         centerMode: false,
         arrows: false,
+        prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
+        nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
       });
     });
   }
