@@ -374,6 +374,11 @@ export default class Slider {
     let bannerClaroCanal = $("#banner-claro-canal");
     let bannerClaroCinema = $("#banner-claro-cinema");
     let bannerConcertChannel = $("#banner-concert-channel");
+    let headerSlider = $(".header-slider");
+    //$(".header-slider").slick("unslick");
+    if (headerSlider.hasClass("slick-initialized")) {
+      headerSlider.unslick();
+    }
     if (screen.width < 768) {
       $(".claro-image-banner-1").attr("src", "");
       $(".concert-image-banner-1").attr("src", "");
@@ -401,6 +406,9 @@ export default class Slider {
       bannerClaroCinema.html(slideBannerClaroCinema);
       bannerConcertChannel.html(slideBannerConcertChannel);
     } else if (screen.width >= 1200) {
+      if (headerSlider.hasClass("slick-initialized")) {
+        headerSlider.unslick();
+      }
       imagesBannerClaroCanal.forEach(function (image) {
         slideBanner += `        
         <div class="header-slide">
@@ -423,12 +431,24 @@ export default class Slider {
       bannerClaroCinema.html(slideBannerClaroCinema);
       bannerConcertChannel.html(slideBannerConcertChannel);
     }
+    $(".header-slider").not(".slick-initialized").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      dots: true,
+      centerMode: false,
+      arrows: false,
+    });
     $(window).resize(function () {
+      if (headerSlider.hasClass("slick-initialized")) {
+        headerSlider.slick("unslick");
+      }
       if (screen.width < 768) {
         $(".claro-image-banner-1").attr("src", "");
         $(".concert-image-banner-1").attr("src", "");
         $(".cinema-image-banner-1").attr("src", "");
       } else if (screen.width >= 768 && screen.width < 1200) {
+        slideBanner = "";
         imagesBannerClaroCanal.forEach(function (image) {
           slideBanner += `        
           <div class="header-slide">
@@ -436,12 +456,14 @@ export default class Slider {
           </div>`;
         });
         imagesBannerClaroCinema.forEach(function (image) {
+          slideBannerClaroCinema = "";
           slideBannerClaroCinema += `        
           <div class="header-slide">
             <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10">
           </div>`;
         });
         imagesBannerConcertChannel.forEach(function (image) {
+          slideBannerConcertChannel = "";
           slideBannerConcertChannel += `        
           <div class="header-slide">
             <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10">
@@ -450,7 +472,9 @@ export default class Slider {
         bannerClaroCanal.html(slideBanner);
         bannerClaroCinema.html(slideBannerClaroCinema);
         bannerConcertChannel.html(slideBannerConcertChannel);
+        $(".headr-slider").slick();
       } else if (screen.width >= 1200) {
+        slideBanner = "";
         imagesBannerClaroCanal.forEach(function (image) {
           slideBanner += `        
           <div class="header-slide">
@@ -458,12 +482,14 @@ export default class Slider {
           </div>`;
         });
         imagesBannerClaroCinema.forEach(function (image) {
+          slideBannerClaroCinema = "";
           slideBannerClaroCinema += `        
           <div class="header-slide">
             <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
           </div>`;
         });
         imagesBannerConcertChannel.forEach(function (image) {
+          slideBannerConcertChannel = "";
           slideBannerConcertChannel += `        
           <div class="header-slide">
             <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
@@ -473,6 +499,14 @@ export default class Slider {
         bannerClaroCinema.html(slideBannerClaroCinema);
         bannerConcertChannel.html(slideBannerConcertChannel);
       }
+      $(".header-slider").not(".slick-initialized").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+        centerMode: false,
+        arrows: false,
+      });
     });
   }
 }
