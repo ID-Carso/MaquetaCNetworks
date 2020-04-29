@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-  <?php include 'scripts.php';
+  <?php
+  include 'scripts.php';
   include 'styles.php';
   ?>
   <title>Claro Networks</title>
