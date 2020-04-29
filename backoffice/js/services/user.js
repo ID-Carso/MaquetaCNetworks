@@ -1051,6 +1051,36 @@ function getUserFront(id) {
   });
 }
 
+function sendEmailResetPassword(input) {
+  let email = input.val();
+
+  let data = {
+    function: "sendEmailResetPassword",
+    email: email,
+  };
+
+  $.ajax({
+    data: data,
+    url: "./adapters/user.php",
+    type: "POST",
+    beforeSend: function () {
+      const loader = `
+      <div class="loader-container">
+        <img src="./images/loader.gif" class="loader" alt="">
+      </div>
+      `;
+      let formContainer = $(".fondolog-reco");
+      formContainer.prepend(loader);
+    },
+    success: function (result) {
+      let json = JSON.parse(result);
+      if (json.code == 200) {
+        $("#modal-send-email").modal("show");
+      }
+    },
+  });
+}
+
 export {
   sendUserEmail,
   validateTokenPassword,
@@ -1067,4 +1097,5 @@ export {
   getUserFront,
   deleteUserFront,
   getUserFrontToUpdate,
+  sendEmailResetPassword,
 };

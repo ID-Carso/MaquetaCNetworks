@@ -182,6 +182,19 @@ class User
         curl_close($ch);
         echo ($response);
     }
+
+    function sendEmailResetPassword($data)
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/admin_user/reset_send");
+        curl_setopt($ch, CURLOPT_POST, TRUE);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json', 'Accept: application/json'));
+        $response = curl_exec($ch);
+        curl_close($ch);
+        echo ($response);
+    }
 }
 
 if (isset($_POST['function']) && !empty($_POST['function'])) {
@@ -274,6 +287,13 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             $data = array("id_admin" => $_SESSION["id"], "id_user" => $_POST["id_user"]);
             $dataJson = json_encode($data);
             echo ($user->deleteUserFront($dataJson));
+            break;
+
+        case 'sendEmailResetPassword':
+            $user = User::getUserInstance();
+            $data = array("email" => $_POST["email"]);
+            $dataJson = json_encode($data);
+            echo ($user->sendEmailResetPassword($dataJson));
             break;
     }
 }

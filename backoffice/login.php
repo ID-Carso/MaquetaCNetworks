@@ -76,17 +76,17 @@ session_start();
             <div class="centro">
 
               <!-- <a href="Admin-BO.php"> -->
-              <button type="button" class="btn-ingresar-reco text-public" id="button-login">
+              <button type="button" class="btn-ingresar-reco text-public mt-5" id="button-login">
                 INGRESAR
               </button>
               <!-- </a> -->
 
             </div>
           </form>
-          <br />
+
           <div class="centro">
-            <div class="pb-4">
-              <a href="Recopassword.php">
+            <div class="mt-5 mb-5">
+              <a href="Recopassword.php" class="d-block mb-5">
                 <p class="contra">¿Olvidaste la contraseña?</p>
               </a>
               <hr class="line btn-margin" />

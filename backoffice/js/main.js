@@ -31,6 +31,7 @@ import {
   registerUser,
   getAllUsersBO,
   getAllUserFront,
+  sendEmailResetPassword,
 } from "./services/user.js";
 
 $(document).ready(function () {
@@ -156,12 +157,11 @@ $(document).ready(function () {
 
   /* Validar email para reestablecer contraseña*/
 
-  const inputReEmail = $("#re-password-email");
+  const inputReEmail = $(".input-email");
   const messageError = $(".correo-valido");
   $("#reset-email").click(function () {
     if (validateEmail(inputReEmail, messageError)) {
-      sendUserEmail(inputReEmail);
-      return true;
+      sendEmailResetPassword(inputReEmail);
     } else {
       return false;
     }

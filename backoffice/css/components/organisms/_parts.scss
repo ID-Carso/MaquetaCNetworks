@@ -716,19 +716,15 @@ option:checked + .roles {
 .bg-color {
   background-color: #fcfcfc;
 }
-.insert-data:focus {
-  color: $blueInput;
-  border-bottom: solid 2px $blueInput;
-  font-family: $MontserratBold;
-}
+
 .input-border-red {
   border-bottom: 2px solid #ff0007;
 }
-.titletable{
+.titletable {
   width: 925px;
   height: 79px;
   background-color: $darkred;
 }
-.content-table{
+.content-table {
   display: table;
 }

@@ -169,7 +169,7 @@
 }
 
 .correo-valido {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-SemiBold";
   font-size: 14px;
   font-weight: 700;
   font-weight: normal;
@@ -178,13 +178,13 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #545252;
+  color: #666262;
   text-align: left;
   margin-top: 3%;
 }
 
 .caracteres-min {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-SemiBold";
   font-size: 14px;
   font-weight: 700;
   font-weight: normal;
@@ -193,7 +193,7 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #545252;
+  color: #666262;
   text-align: left;
   margin-top: 3%;
 }
@@ -675,17 +675,6 @@
 .a-text-black-semibold {
   color: #161515;
   font-family: "Montserrat-SemiBold";
-}
-
-.correo {
-  font-family: "Montserrat-Bold";
-  font-size: 14px;
-  color: #2e2c2c;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
 }
 
 .a-prev-title {
@@ -849,7 +838,7 @@
 }
 
 .correo-valido {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-SemiBold";
   font-size: 14px;
   font-weight: 700;
   font-weight: normal;
@@ -858,13 +847,13 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #545252;
+  color: #666262;
   text-align: left;
   margin-top: 3%;
 }
 
 .caracteres-min {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-SemiBold";
   font-size: 14px;
   font-weight: 700;
   font-weight: normal;
@@ -873,7 +862,7 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #545252;
+  color: #666262;
   text-align: left;
   margin-top: 3%;
 }
@@ -1355,17 +1344,6 @@
 .a-text-black-semibold {
   color: #161515;
   font-family: "Montserrat-SemiBold";
-}
-
-.correo {
-  font-family: "Montserrat-Bold";
-  font-size: 14px;
-  color: #2e2c2c;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
 }
 
 .a-prev-title {
@@ -1601,7 +1579,6 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   margin: auto;
-  margin-top: 38px;
   border: 1px solid #069cb0;
 }
 
@@ -2307,6 +2284,86 @@
           transform: translate(-50%, -50%);
 }
 
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
+  src: url(../fonts/Montserrat-Light/Montserrat-Light.woff) format("woff"), url(../fonts/Montserrat-Light/Montserrat-Light.ttf) format("ttf"), url(../fonts/Montserrat-Light/Montserrat-Light.svg) format("svg");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(../fonts/Montserrat-Regular/Montserrat-Regular.eot);
+  src: url(../fonts/Montserrat-Regular/Montserrat-Regular.woff) format("woff"), url(../fonts/Montserrat-Regular/Montserrat-Regular.ttf) format("truetype"), url(../fonts/Montserrat-Regular/Montserrat-Regular.svg) format("svg");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.eot);
+  src: url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff) format("woff"), url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf) format("truetype"), url(../fonts/Montserrat-SemiBold/Montserrat-SemiBold.svg) format("svg");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(../fonts/Montserrat-Bold/Montserrat-Bold.eot);
+  src: url(../fonts/Montserrat-Bold/Montserrat-Bold.woff) format("woff"), url(../fonts/Montserrat-Bold/Montserrat-Bold.ttf) format("truetype"), url(../fonts/Montserrat-Bold/Montserrat-Bold.svg) format("svg");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url(../fonts/Montserrat-Black/Montserrat-Black.eot);
+  src: url(../fonts/Montserrat-Black/Montserrat-Black.woff) format("woff"), url(../fonts/Montserrat-Black/Montserrat-Black.ttf) format("truetype"), url(../fonts/Montserrat-Black/Montserrat-Black.svg) format("svg");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Montserrat-Medium-Light";
+  src: url(../fonts/Montserrat-Medium-light/Montserrat-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url(../fonts/Montserrat-Medium/Montserrat-Medium.ttf);
+}
+
+.insert-data {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-clip: padding-box;
+  width: 100%;
+  height: 44px;
+  background-color: #ffffff;
+  padding: 1px;
+  border: none;
+  border-radius: 0px;
+  border-bottom: solid 1px #a1a0a0;
+  font-weight: bold;
+  outline: none !important;
+}
+
+.insert-data:focus {
+  color: #14bef2;
+  border-bottom: solid 2px #14bef2;
+  font-family: "Montserrat-Bold";
+}
+
+.correo {
+  font-family: "Montserrat-SemiBold";
+  font-size: 14px;
+  color: #666262;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
 .image-blue {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2490,24 +2547,6 @@
 
 .textcentro {
   text-align: justify;
-}
-
-.insert-data {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-clip: padding-box;
-  width: 100%;
-  height: 44px;
-  background-color: #ffffff;
-  padding: 1px;
-  border: none;
-  border-radius: 0px;
-  border-bottom: solid 1px #a1a0a0;
-  font-weight: bold;
-  outline: none !important;
 }
 
 input[type="radio"]:checked + .mujer-estilo {
@@ -3219,7 +3258,7 @@ ul {
 }
 
 .correo-valido {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-SemiBold";
   font-size: 14px;
   font-weight: 700;
   font-weight: normal;
@@ -3228,13 +3267,13 @@ ul {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #545252;
+  color: #666262;
   text-align: left;
   margin-top: 3%;
 }
 
 .caracteres-min {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-SemiBold";
   font-size: 14px;
   font-weight: 700;
   font-weight: normal;
@@ -3243,7 +3282,7 @@ ul {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #545252;
+  color: #666262;
   text-align: left;
   margin-top: 3%;
 }
@@ -3725,17 +3764,6 @@ ul {
 .a-text-black-semibold {
   color: #161515;
   font-family: "Montserrat-SemiBold";
-}
-
-.correo {
-  font-family: "Montserrat-Bold";
-  font-size: 14px;
-  color: #2e2c2c;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
 }
 
 .a-prev-title {
@@ -4592,12 +4620,6 @@ option:checked + .roles {
 
 .bg-color {
   background-color: #fcfcfc;
-}
-
-.insert-data:focus {
-  color: #14bef2;
-  border-bottom: solid 2px #14bef2;
-  font-family: "Montserrat-Bold";
 }
 
 .input-border-red {

@@ -23,23 +23,6 @@
 .textcentro {
   text-align: justify;
 }
-.insert-data {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-clip: padding-box;
-  width: 100%;
-  height: 44px;
-  background-color: $white;
-  padding: 1px;
-  border: none;
-  border-radius: 0px;
-  border-bottom: solid 1px $morelight;
-  font-weight: bold;
-  outline: none !important;
-}
 
 input[type="radio"]:checked + .mujer-estilo {
   background: $lemongreen;
@@ -475,20 +458,20 @@ ul {
   margin-bottom: -19%;
   margin-left: 3%;
 }
-.prev{
+.prev {
   margin-left: -133px;
-    margin-top: -40px;
+  margin-top: -40px;
 }
-.ali-prev{
+.ali-prev {
   margin-top: -9%;
 }
-.mt12{
+.mt12 {
   margin-right: 7%;
   margin-top: 12%;
 }
-.ctable{
+.ctable {
   transform: translateX(-16%);
 }
-.cytable{
+.cytable {
   transform: translateY(40%);
 }

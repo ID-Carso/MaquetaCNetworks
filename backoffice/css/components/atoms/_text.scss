@@ -7,7 +7,7 @@
   color: $white;
   line-height: 2.5;
 }
-.text-semi-white{
+.text-semi-white {
   font-family: $MontserratSemiBold;
   font-size: 18px;
   color: $white;
@@ -72,7 +72,7 @@
   margin-top: 5%;
 }
 .correo-valido {
-  font-family: $MontserratRegular;
+  font-family: $MontserratSemiBold;
   font-size: 14px;
   font-weight: 700;
   font-weight: normal;
@@ -81,13 +81,13 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: $lightdark;
+  color: $lightbrown;
   text-align: left;
   margin-top: 3%;
   //caracteres-min
 }
 .caracteres-min {
-  font-family: $MontserratRegular;
+  font-family: $MontserratSemiBold;
   font-size: 14px;
   font-weight: 700;
   font-weight: normal;
@@ -96,7 +96,7 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: $lightdark;
+  color: $lightbrown;
   text-align: left;
   margin-top: 3%;
   //caracteres-min
@@ -393,7 +393,6 @@
   margin-left: 12px;
 }
 
-
 .text-lan {
   font-family: $MontserratBold;
   font-size: 16px;
@@ -524,20 +523,11 @@
   color: $black;
   font-family: $MontserratSemiBold;
 }
-.correo {
-  font-family: $MontserratBold;
-  font-size: 14px;
-  color: $dark;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-}
-.a-prev-title{
+
+.a-prev-title {
   font-size: 16px;
 }
-.a-text-title{
+.a-text-title {
   font-size: 29px;
   font-weight: normal;
   font-stretch: normal;
@@ -545,7 +535,7 @@
   line-height: normal;
   letter-spacing: normal;
 }
-.a-text-title-table{
+.a-text-title-table {
   width: 484px;
   height: 29px;
   font-size: 24px;
@@ -555,13 +545,13 @@
   line-height: normal;
   letter-spacing: normal;
 }
-.a-text-green-apro{
-  color:$kelley-green;
+.a-text-green-apro {
+  color: $kelley-green;
   font-family: $MontserratBold;
   font-size: 24px;
 }
-.a-text-grey{
+.a-text-grey {
   font-family: $MontserratMedium;
-  color:$greyish;
+  color: $greyish;
   font-size: 14px;
 }

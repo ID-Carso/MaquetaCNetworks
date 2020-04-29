@@ -144,10 +144,11 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   margin: auto;
-  margin-top: 38px;
+
   border: 1px solid $waterblue;
   //a-text-public
 }
+
 .btn-no {
   width: 138px;
   height: 43px;
@@ -631,7 +632,7 @@
   text-align: center;
   outline: none !important;
   border-radius: 0 21px 21px 0;
-  border:1px solid $dark1;
+  border: 1px solid $dark1;
 }
 .fechas {
   width: 167px;
@@ -670,14 +671,14 @@
   text-align: center;
   color: $dark1;
   border-radius: 0 21px 21px 0;
-  border:1px solid $dark1;
+  border: 1px solid $dark1;
 }
 .vigencia {
   width: 145px;
   height: 70px;
   border-radius: 8px;
   background-color: $skyblue;
- margin: auto;
+  margin: auto;
 }
 .vige-lan {
   width: 166px;
@@ -713,7 +714,7 @@
   margin-top: -14px;
   margin-right: 5px;
 }
-.a-btn-general{
+.a-btn-general {
   width: 205px;
   height: 46px;
   border-radius: 7px;
@@ -724,15 +725,15 @@
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
 }
-.a-btn-teal{
+.a-btn-teal {
   background-color: $teal;
   border: 1px solid $teal;
 }
-.a-btn-grey{
-background-color: $pinkish-grey;
-border: 1px solid $pinkish-grey;
+.a-btn-grey {
+  background-color: $pinkish-grey;
+  border: 1px solid $pinkish-grey;
 }
-.a-btn-check{
+.a-btn-check {
   width: 38px;
   height: 38px;
   border: solid 3px $silver;
