@@ -1,5 +1,5 @@
-@import "typography";
-@import "color";
+@import "../base/typography";
+@import "../base/color";
 
 .insert-data {
   -webkit-box-shadow: none;
@@ -34,4 +34,24 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
+}
+input[ type ="radio" ]:checked + .a-btn-check:before{
+  content: "\02713";
+  font-size: 30px;
+  color:$kelley-green;
+}
+
+input[type="radio"]:checked + .hombre-estilo {
+  background: $lemongreen;
+  color: $white;
+  border: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="radio"] {
+  display: none;
+}
+.input-border-red {
+  border-bottom: 2px solid #ff0007;
 }

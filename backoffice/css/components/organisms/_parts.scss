@@ -1,5 +1,5 @@
-@import "../atoms/color";
-@import "../atoms/typography";
+@import "../base/color";
+@import "../base/typography";
 @import "../atoms/text";
 
 .grid {
@@ -48,36 +48,7 @@ section {
   box-shadow: 3px 5px 10px 6px rgba(0, 0, 0, 0.14);
 }
 
-.fondo-BO {
-  background: url("../images/fondo-region.jpg");
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow-y: hidden !important;
-}
-.login-BO {
-  height: 90vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-.login-form-bo {
-  width: 400px;
-  height: 570px;
-  display: flex;
-  background-color: $white;
-  margin-right: 45%;
-  margin-left: 31%;
-  border-radius: 1em;
-}
+
 
 .contenido {
   position: absolute;
@@ -200,24 +171,17 @@ aside {
   background-color: $white;
 }
 
-.title-table {
-  opacity: 0.27;
-  background-color: $dark2;
-}
+
 .contenedor-columna {
   display: table-cell;
   border: 1px solid $lightpink;
+  vertical-align: middle;
 }
 .sp:before {
   content: " | ";
   padding: 0 10px;
 }
 
-input[type="radio"]:checked + .hombre-estilo {
-  background: $lemongreen;
-  color: $white;
-  border: none;
-}
 
 #select-Pais {
   width: 207px;
@@ -560,12 +524,7 @@ input[type="radio"]:checked + .hombre-estilo {
 #selectYear:checked ~ #select-Año .ListaDesplegableAños {
   height: 200px;
 }
-input[type="checkbox"] {
-  display: none;
-}
-input[type="radio"] {
-  display: none;
-}
+
 .indication:hover .overlay-edition {
   opacity: 3;
 }
@@ -717,14 +676,8 @@ option:checked + .roles {
   background-color: #fcfcfc;
 }
 
-.input-border-red {
-  border-bottom: 2px solid #ff0007;
-}
-.titletable {
-  width: 925px;
-  height: 79px;
-  background-color: $darkred;
-}
+
+
 .content-table {
   display: table;
 }

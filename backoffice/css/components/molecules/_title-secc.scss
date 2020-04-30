@@ -1,0 +1,33 @@
+@import "../base/color";
+@import "../base/typography";
+@import "../atoms/text";
+.title-alta {
+    font-family: $MontserratRegular;
+    background-color: $darkred;
+    color: $white;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  .title-altauser {
+    font-family: $MontserratBold;
+    background-color: $darkred;
+    color: $white;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  .titletable {
+    width: 925px;
+    height: 79px;
+    background-color: $darkred;
+  }
+  .title-table {
+    opacity: 0.27;
+    background-color: $dark2;
+  }

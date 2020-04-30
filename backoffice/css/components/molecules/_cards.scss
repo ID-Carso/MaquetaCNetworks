@@ -1,0 +1,23 @@
+
+.login-BO {
+    height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .login-form-bo {
+    width: 400px;
+    height: 570px;
+    display: flex;
+    background-color: $white;
+    margin-right: 45%;
+    margin-left: 31%;
+    border-radius: 1em;
+  }

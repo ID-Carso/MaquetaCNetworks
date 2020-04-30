@@ -12,11 +12,11 @@
 </head>
 <body>
     <main>
-      <?
-      include 'Menu.php';
-      ?>
-    <div class=" float-left ml-5  mt-4 mb5 ali" >
-        <label class="btn-cargar centro pt-2 mb5 mr-4"id="file" onClick="Verarchi()"><span class="text-crea">Cargar archivos</span></label>  
+    <?php
+    include 'Menu.php';
+    ?>
+    <div class=" float-left ml-5  mt-4 mb-5 ali" >
+        <label class="btn-cargar centro pt-2 mb-4 mr-4"id="file" onClick="Verarchi()"><span class="text-crea">Cargar archivos</span></label>  
     </div>
     <div class="ml-3 p1 ">
     <div class=" slidershow ali1">
@@ -161,7 +161,7 @@
 </div>
 <div class="contenedor ml-5">
     <div class="contenedor-columna">
-        <div id="agregar" class="btn-crear centro mt-2 ml-2"><span class="signo"><p class="text-crea pd-10">Crear nueva entrada</p></span></div>
+        <div id="agregar" class="btn-crear centro  ml-2"><span class="signo"><p class="text-crea pd-10">Crear nueva entrada</p></span></div>
     </div>
 </div>
 </div>

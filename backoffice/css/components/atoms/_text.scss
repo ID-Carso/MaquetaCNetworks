@@ -1,5 +1,5 @@
-@import "color";
-@import "typography";
+@import "../base/color";
+@import "../base/typography";
 
 .text-return {
   font-family: $MontserratSemiBold;
@@ -194,27 +194,6 @@
   font-family: $MontserratSemiBold;
   font-size: 13px;
   color: $white;
-}
-.title-alta {
-  font-family: $MontserratRegular;
-  background-color: $darkred;
-  color: $white;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-}
-.title-altauser {
-  font-family: $MontserratBold;
-  background-color: $darkred;
-  color: $white;
-  font-size: 16px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
 }
 .texto-general {
   font-family: $MontserratRegular;
@@ -554,4 +533,13 @@
   font-family: $MontserratMedium;
   color: $greyish;
   font-size: 14px;
+}
+.a-text-prev{
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.01px;
+  text-align: center;
 }

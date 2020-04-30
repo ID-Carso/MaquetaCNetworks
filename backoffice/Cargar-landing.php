@@ -30,7 +30,7 @@
     </div>
    <div class="mx-auto  mt-5 shadow content-table">
 <div class="contenedor-fila">
-<div class="contenedor-columna  mt-5 centro pt-4 titletable"><span class="a-text-white-bold a-text-title-table ">CANALES CON CAMBIOS GUARDADOS</span></div>
+<div class="contenedor-columna  mt-5 centro  titletable"><span class="a-text-white-bold a-text-title-table ">CANALES CON CAMBIOS GUARDADOS</span></div>
 </div>
 <div class="contenedor-fila">
     <div class="contenedor-columna">
