@@ -713,6 +713,18 @@
   font-size: 14px;
 }
 
+.registro {
+  font-family: "Montserrat-SemiBold";
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #717272;
+  margin-bottom: 0;
+}
+
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
@@ -1380,6 +1392,18 @@
   font-family: "Montserrat-Medium";
   color: #adabab;
   font-size: 14px;
+}
+
+.registro {
+  font-family: "Montserrat-SemiBold";
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #717272;
+  margin-bottom: 0;
 }
 
 @font-face {
@@ -3800,6 +3824,18 @@ ul {
   font-family: "Montserrat-Medium";
   color: #adabab;
   font-size: 14px;
+}
+
+.registro {
+  font-family: "Montserrat-SemiBold";
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #717272;
+  margin-bottom: 0;
 }
 
 .grid {

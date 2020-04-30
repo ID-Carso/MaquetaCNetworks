@@ -9,11 +9,11 @@
     <?php include './views/partials/head.php' ?>
 </head>
 
-<body class="fondo">
+<body class="fondo-BO">
     <div class="login-container">
         <div class="login-form no-gutters">
 
-            <div class="col-sm-12  col-md-6 no-gutters col-lg-4  col-xl-3 shadow1 fondolog">
+            <div class="col-sm-12  col-md-6 no-gutters col-lg-4  col-xl-3 shadow1 fondolog-reco">
                 <img src="images/registro/group-10.svg" class="ubicacion5" />
                 <img src="images/registro/group-12.svg" class="ubicacion3" />
 
@@ -27,14 +27,14 @@
                 </div>
                 <div class="col-10 col-sm-8 col-md-9 col-lg-10 col-xl-10 mx-auto">
                     <div>
-                        <h1 class="registro pt-4 pb-5">Restablece tu contraseña</h1>
+                        <h1 class="registro pt-4 mb-5">Restablece tu contraseña</h1>
                     </div>
                     <form method="POST">
                         <div class="row ma-no centro">
                             <div class="col-sm-12 no-gap">
                                 <div>
                                     <div class="position-relative">
-                                        <input class="insert-data" type="password" placeholder="Escribe tu contraseña nueva *" id="new-password" />
+                                        <input class="insert-data correo"" type=" password" placeholder="Escribe tu contraseña nueva *" id="new-password" />
                                         <img src="images/registro/eye-none.svg" class="icon-eye" />
                                     </div>
                                     <p class="correo-valido" id="error-password-confirm"> 8 caractéres mínimo
@@ -45,22 +45,18 @@
                                         <img src="images/registro/alerta.svg" class="error" />
                                     </p>
                                 </div>
-                                <div class="mb-5">
+                                <div>
                                     <div class="position-relative">
-                                        <input class="insert-data" type="password" placeholder="Escribe tu contraseña de nuevo" id="new-confirm-password" />
+                                        <input class="insert-data correo"" type=" password" placeholder="Escribe tu contraseña de nuevo" id="new-confirm-password" />
                                         <img src="images/registro/eye-none.svg" class="icon-eye" />
                                     </div>
-
-
-
-                                    </p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row ma-no centro">
                             <div class="col-sm-12 signup-button-container">
-                                <button type="button" class="form-button-primary new-password-button mt-5" id="send-password-button">
+                                <button type="button" class="btn-ingresar-reco text-public mt-5 mb-5" id="send-password-button">
                                     ENVIAR
                                 </button>
 

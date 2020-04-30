@@ -1073,8 +1073,10 @@ function sendEmailResetPassword(input) {
       formContainer.prepend(loader);
     },
     success: function (result) {
+      console.log(result);
       let json = JSON.parse(result);
-      if (json.code == 200) {
+      $(".loader-container").remove();
+      if (json.code == 201) {
         $("#modal-send-email").modal("show");
       }
     },
