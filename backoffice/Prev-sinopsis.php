@@ -17,88 +17,92 @@
     ?>
     <div id="prev-sinopsis">
         <div class="float-left ml-5">
-            <div> <label class="a-btn-check"></label><span class=" ml-4 a-text-grey">Guardar cambios</span>
-                  <label class="ml-5 a-btn-check"></label><span class=" ml-4 a-text-grey">No guardar cambios</span>
+            <div><input type="radio"  id="1" value=""/> <label for="1" class="a-btn-check"></label><span class=" ml-4 a-text-grey">Guardar cambios</span>
+                 <input type="radio" id="2" value=""/> <label for="2" class="ml-5 a-btn-check"></label><span class=" ml-4 a-text-grey">No guardar cambios</span>
             </div>
         </div>
         <div class="ctable">  
         <div class="mx-auto shadow mt-5 cytable content-table"> 
             <div class="contenedor-fila">
                   <div class="contenedor-columna centro  titletable">
-                     <span class="text-public">Programa</span>
+                     <span class="a-text-white-regular a-text-prev">Programa</span>
                  </div>
                  <div class="contenedor-columna centro  titletable">
-                     <span class="text-public">Canal</span>
+                     <span class="a-text-white-regular a-text-prev">Canal</span>
                  </div>
                  <div class="contenedor-columna centro  titletable">
-                     <span class="text-public">Acciones</span>
+                     <span class="a-text-white-regular a-text-prev">Acciones</span>
                  </div>
                  <div class="contenedor-columna centro  titletable">
-                     <span class="text-public">Revisión</span>
+                     <span class="a-text-white-regular a-text-prev">Revisión</span>
                  </div>
             </div>
             <div class="contenedor-fila">
                 <div class="contenedor-columna">
-                    <span class="texto-general pd-5">Mad Men</span>
+                    <span class="modal-text pd-5">Mad Men</span>
                 </div>
                 <div class="contenedor-columna">
-                    <span class="texto-general pd-5">Canal Claro</span>
+                    <span class="modal-text pd-5">Canal Claro</span>
                 </div>
                 <div class=" centro contenedor-columna">
                 <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
                 </div>
                 <div class=" centro contenedor-columna">
-                <label class="a-btn-check"></label>
+                    <input type="radio" id="3" checked/>
+                <label for="3" class="a-btn-check"></label>
                 </div>
             </div>
             <div class="contenedor-fila">
                 <div class="contenedor-columna">
-                    <span class="texto-general pd-5">Mad Men</span>
+                    <span class="modal-text pd-5">Mad Men</span>
                 </div>
                 <div class="contenedor-columna">
-                    <span class="texto-general pd-5">Canal Claro</span>
+                    <span class="modal-text pd-5">Canal Claro</span>
                 </div>
                 <div class=" centro contenedor-columna">
                 <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
                 </div>
                 <div class=" centro contenedor-columna">
-                <label class="a-btn-check"></label>
+                <input type="radio" id="4" checked/>
+                <label for="4" class="a-btn-check"></label>
                 </div>
             </div>
             <div class="contenedor-fila">
                 <div class="contenedor-columna">
-                    <span class="texto-general pd-5">Mad Men</span>
+                    <span class="modal-text pd-5">Mad Men</span>
                 </div>
                 <div class="contenedor-columna">
-                    <span class="texto-general pd-5">Canal Claro</span>
+                    <span class="modal-text pd-5">Canal Claro</span>
                 </div>
                 <div class=" centro contenedor-columna">
                 <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
                 </div>
                 <div class=" centro contenedor-columna">
-                <label class="a-btn-check"></label>
+                <input type="radio" id="5" checked/>
+                <label for="5" class="a-btn-check"></label>
                 </div>
             </div>
             <div class="contenedor-fila">
                 <div class="contenedor-columna">
-                    <span class="texto-general pd-5">Mad Men</span>
+                    <span class="modal-text pd-5">Mad Men</span>
                 </div>
                 <div class="contenedor-columna">
-                    <span class="texto-general pd-5">Canal Claro</span>
+                    <span class="modal-text pd-5">Canal Claro</span>
                 </div>
                 <div class=" centro contenedor-columna">
                 <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
                 </div>
                 <div class=" centro contenedor-columna">
+                <input type="radio"  checked/>
                 <label class="a-btn-check"></label>
                 </div>
             </div>
             <div class="contenedor-fila">
                 <div class="contenedor-columna">
-                    <span class="texto-general pd-5">Mad Men</span>
+                    <span class="modal-text pd-5">Mad Men</span>
                 </div>
                 <div class="contenedor-columna">
-                    <span class="texto-general pd-5">Canal Claro</span>
+                    <span class="modal-text pd-5">Canal Claro</span>
                 </div>
                 <div class=" centro contenedor-columna">
                 <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>

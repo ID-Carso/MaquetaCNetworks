@@ -1,11 +1,12 @@
-@import "components/atoms/typography";
+@import "components/base/typography";
 @import "components/atoms/text";
 @import "components/atoms/button";
-@import "components/atoms/color";
+@import "components/base/color";
 @import "components/atoms/img";
 @import "components/atoms/input";
-@import "components/molecules/images";
-@import "components/molecules/positions";
+@import "components/base/config";
+@import "components/molecules/cards";
+@import "components/molecules/nav";
 @import "components/organisms/parts";
 @import "components/organisms/container";
 
