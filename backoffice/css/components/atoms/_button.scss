@@ -33,7 +33,12 @@
   border-radius: 13px;
   border: solid 1px $morelightgray;
   background-color: $dark;
-
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  
   //a-text-return
 }
 .btn-grilla {
@@ -366,6 +371,25 @@
   -webkit-box-shadow: none;
   transition: all 0.3s;
 }
+
+.form-button-outline {
+  width: 100%;
+  max-width: 315px;
+  height: 48px;
+  border-radius: 21.5px;
+  outline: none !important;
+  background-color: $white;
+  font-family: $MontserratSemiBold;
+  color: $colormodal;
+  font-size: 14px;
+  border: solid 1px $skyblue;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
 .btn-zona {
   width: 248px;
   height: 49px;
@@ -386,6 +410,7 @@
   height: 45px;
   border-radius: 7px;
   background-color: $selecred;
+  border:1 px solid $selecred;
   outline: none !important;
   outline-width: 0 !important;
   box-shadow: none;
@@ -741,5 +766,21 @@
   vertical-align: middle;
   overflow: hidden;
   cursor: pointer;
+}
+.conte-rol {
+  position: relative;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transform: translate(0px, -50%);
+  transform: translate(0px, -5%);
+  left: 0px;
+  font-size: 18.8px;
+  border-radius: 30px;
+  background: $lemongreen;
+  color: $white;
+  overflow: hidden;
 }
 

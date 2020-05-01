@@ -55,3 +55,60 @@ input[type="radio"] {
 .input-border-red {
   border-bottom: 2px solid #ff0007;
 }
+.check {
+  width: 17px;
+  height: 16px;
+  border: solid 2px $teal;
+}
+.radio-claro {
+  display: block;
+  margin-left: 8%;
+  margin-bottom: -16%;
+}
+.radio-lan {
+  display: block;
+  margin-left: 18%;
+  margin-bottom: -16%;
+}
+.selec-radio {
+  display: block;
+  margin: auto;
+}
+option:checked + .roles {
+  background: $lemongreen;
+  color: $white;
+  border: none;
+}
+
+input[type="radio"]:checked + .mujer-estilo {
+  background: $lemongreen;
+  color: $white;
+  border: none;
+}
+input[type="radio"]:checked + .mujer-estilo1 {
+  background: $lemongreen;
+  color: $white;
+  border: none;
+}
+
+input[type="radio"]:checked + .si-estilo {
+  background-color: $skyblue;
+  color: $white;
+  border: none;
+}
+input[type="radio"]:checked + .no-estilo {
+  background-color: $skyblue;
+  color: $white;
+  border: none;
+}
+
+input[type="radio"]:checked + .si-estilo1 {
+  background-color: $darkinput;
+  color: $white;
+  border: none;
+}
+input[type="radio"]:checked + .no-estilo1 {
+  background-color: $darkinput;
+  color: $white;
+  border: none;
+}

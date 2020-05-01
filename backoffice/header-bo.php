@@ -22,7 +22,7 @@ function showHeader($nameButton, $variation)
             </div>
             <div class='mr-5'>
            
-           <a href='login.php'> <button class='btn-return-sitio text-return'>Regresar a Administrar sitio</button></a>
+           <a href='login.php'> <button class='mt-4 btn-return-sitio text-return'>Regresar a Administrar sitio</button></a>
             </div>
         </div>
         ";

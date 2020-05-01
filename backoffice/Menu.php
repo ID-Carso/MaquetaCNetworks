@@ -22,10 +22,10 @@
         <span class="text-titulo">PROGRAMACIÓN GENERAL <br> DEL </span>
         <span class="text-titulo-rojo">1ERO DE OCTUBRE-1ERO DE NOVIEMBRE</span>
         </div>
-        <div class=" mr-5 float-right position-zona">
+        <div class=" mr-5 mb-2 float-right position-zona">
         <label class="btn-zona zona">Zona horaria  <img src="./images/paises/chile.svg" class="Icon_paises1" /></label> 
         </div>
-        <nav class="navbar-expand-sm  mt-2 position-nav">
+        <nav class=" col-xl-12 navbar-expand-sm mb-3 mt-2 position-nav">
         <ul class="navbar-nav">
       <li class="nav-item ">
         <button class="btn-menu-select menu">Canal Claro</button>  
@@ -47,7 +47,7 @@
          </li>
     </ul>
 </nav>
-      <div class="mt-3 ml-5"> <span class="zona">Última edición :</span>
+      <div class="mt-4 ml-5"> <span class="zona">Última edición :</span>
       <label class=" text-menu-selec separacion"> septiembre 17 2019 </label>
       <label class="text-menu-selec">18:33:25</label>
     </div>

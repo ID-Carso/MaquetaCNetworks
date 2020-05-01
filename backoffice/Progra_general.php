@@ -15,7 +15,7 @@
     <?php
     include 'Menu.php';
     ?>
-    <div class=" float-left ml-5  mt-4 mb-5 ali" >
+    <div class=" float-left ml-5 mt-3 mb-5 ali" >
         <label class="btn-cargar centro pt-2 mb-4 mr-4"id="file" onClick="Verarchi()"><span class="text-crea">Cargar archivos</span></label>  
     </div>
     <div class="ml-3 p1 ">
@@ -159,7 +159,7 @@
         <div class="contenedor-columna"></div>
     </div>
 </div>
-<div class="contenedor ml-5">
+<div class="contenedor mb-5 ml-5">
     <div class="contenedor-columna">
         <div id="agregar" class="btn-crear centro  ml-2"><span class="signo"><p class="text-crea pd-10">Crear nueva entrada</p></span></div>
     </div>

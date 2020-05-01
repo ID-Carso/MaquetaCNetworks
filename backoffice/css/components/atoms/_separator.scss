@@ -1,0 +1,13 @@
+
+@import "../base/color";
+.line {
+    width: 100%;
+    height: 1px;
+    margin: auto;
+    background-color: $lightteal;
+  }
+  
+  .separacion:after {
+    content: " | ";
+    padding: 0 10px;
+  }
