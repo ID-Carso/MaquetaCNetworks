@@ -11,55 +11,53 @@ $sizeProgramming: 16px;
 $fontlg: 20px;
 $fontpaises: 16px;
 
-  .posi:hover > .describe {
-    display: block;
-  }
-  .textcentro {
-    text-align: justify;
-  }
-  
-  .slideshow {
-    position: relative;
-  }
-  .slider .caption {
-    position: absolute;
-  }
-  
-  .scroll {
-    overflow: scroll;
-  }
-  .indication .badge {
-    position: absolute;
-    top: 64%;
-    left: 76%;
-    padding: 5px 10px;
-    border-radius: 50%;
-    background-color: red;
-    color: white;
-  }
-  .title-reco {
-    width: 453px;
-    height: 49px;
-    font-size: 34.8px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #666963;
-  }
-  .title-second {
-    width: 500px;
-    height: 29px;
-    font-size: 23.8px;
-    color: $title;
-  }
-  
-  .shadow1 {
-    -webkit-box-shadow: 3px 3px 5px 6px $violet;
-    box-shadow: 3px 3px 5px 6px $violet;
-    border-radius: 15px;
-    margin-top: 4%;
-  }
-  
-  
+.posi:hover > .describe {
+  display: block;
+}
+.textcentro {
+  text-align: justify;
+}
+
+.slideshow {
+  position: relative;
+}
+.slider .caption {
+  position: absolute;
+}
+
+.scroll {
+  overflow: scroll;
+}
+.indication .badge {
+  position: absolute;
+  top: 64%;
+  left: 76%;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+.title-reco {
+  width: 453px;
+  height: 49px;
+  font-size: 34.8px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666963;
+}
+.title-second {
+  width: 500px;
+  height: 29px;
+  font-size: 23.8px;
+  color: $title;
+}
+
+.shadow1 {
+  -webkit-box-shadow: 3px 3px 5px 6px $violet;
+  box-shadow: 3px 3px 5px 6px $violet;
+  border-radius: 15px;
+  //margin-top: 4%;
+}

@@ -44,6 +44,27 @@
   src: url(../fonts/Montserrat-Medium/Montserrat-Medium.ttf);
 }
 
+/* TEXT BASE */
+.a-text-bold-cool {
+  color: #4ca1b1;
+  font-family: "Montserrat-Bold";
+}
+
+.a-text-bold-brownish {
+  color: #696363;
+  font-family: "Montserrat-Bold";
+}
+
+.a-text-regular-brownish {
+  color: #696363;
+  font-family: "Montserrat-Regular";
+}
+
+/* END TEXT BASE*/
+.card-text {
+  font-size: 21px;
+}
+
 .text-return {
   font-family: "Montserrat-SemiBold";
   font-size: 18px;
@@ -2049,13 +2070,6 @@ input[type="radio"]:checked + .no-estilo1 {
   margin-top: 33px;
 }
 
-.description {
-  position: absolute;
-  top: 40%;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-}
-
 .posi {
   background: #56c7d5;
   width: 32px;
@@ -2492,6 +2506,27 @@ input[type="radio"]:checked + .no-estilo1 {
 @font-face {
   font-family: "Montserrat-Medium";
   src: url(../fonts/Montserrat-Medium/Montserrat-Medium.ttf);
+}
+
+/* TEXT BASE */
+.a-text-bold-cool {
+  color: #4ca1b1;
+  font-family: "Montserrat-Bold";
+}
+
+.a-text-bold-brownish {
+  color: #696363;
+  font-family: "Montserrat-Bold";
+}
+
+.a-text-regular-brownish {
+  color: #696363;
+  font-family: "Montserrat-Regular";
+}
+
+/* END TEXT BASE*/
+.card-text {
+  font-size: 21px;
 }
 
 .text-return {
@@ -3222,7 +3257,6 @@ input[type="radio"]:checked + .no-estilo1 {
   -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
   box-shadow: 3px 3px 5px 6px #5c1864;
   border-radius: 15px;
-  margin-top: 4%;
 }
 
 @font-face {
@@ -3410,6 +3444,13 @@ ul {
   list-style: none;
 }
 
+.description {
+  position: fixed;
+  top: 40%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
 #select-Pais .SeleccionPaisLista {
   padding: 6px 10px;
   width: 100%;
@@ -3438,8 +3479,11 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: -8%;
-  margin-left: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(-90%, -50%);
+          transform: translate(-90%, -50%);
 }
 
 #select-Pais {
@@ -3829,6 +3873,10 @@ ul {
   -ms-flex-pack: center;
   justify-content: center;
   height: auto;
+}
+
+.newpassword-container {
+  height: 100vh;
 }
 
 @font-face {

@@ -1,6 +1,28 @@
 @import "../base/color";
 @import "../base/typography";
 
+/* TEXT BASE */
+.a-text-bold-cool {
+  color: $coolBlue;
+  font-family: $MontserratBold;
+}
+
+.a-text-bold-brownish {
+  color: $repassgray;
+  font-family: $MontserratBold;
+}
+
+.a-text-regular-brownish {
+  color: $repassgray;
+  font-family: $MontserratRegular;
+}
+
+/* END TEXT BASE*/
+
+.card-text {
+  font-size: 21px;
+}
+
 .text-return {
   font-family: $MontserratSemiBold;
   font-size: 18px;

@@ -1,356 +1,349 @@
-
-
 .cuadro-dia {
-    width: 100%;
-    height: 50px;
-    margin: none;
-    margin-top: -19px;
-  }
-  
-  .cuadro-fecha {
-    height: 54px;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: -8px;
-  }
+  width: 100%;
+  height: 50px;
+  margin: none;
+  margin-top: -19px;
+}
 
-  .centrados {
-    padding-left: 69px;
-    margin-top: 33px;
-  }
-  
-.description {
-    position: absolute;
-    top: 40%;
-    transform: translateY(100%);
-  }
-  .posi {
-    background: $morelightblue;
-    width: 32px;
-    height: 33px;
-    position: relative;
-  }
-  .describe {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-transform: translateX(100%);
-    transform: translateX(26%);
-  }
-  
-  .section-pais {
-    margin-top: -6px;
-    margin-left: -29px;
-  }
-  .margin-t-pais {
-    margin-top: 10px;
-  }
-  .margin-fecha1 {
-    margin-left: 54px;
-  }
-  .padding-pais {
-    padding-top: 7px;
-  }
-  .padding-fecha {
-    padding-top: 7px;
-    padding-left: 13px;
-  }
-  .margin-pais {
-    margin-left: -14px;
-  }
-  .sexo {
-    height: 48px;
-    border-radius: 22px;
-    border: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 218px;
-    margin-left: -40px;
-    margin-top: -10px;
-  }
-  .margin-fecha {
-    margin-bottom: 3px;
-  }
-  .women {
-    width: 25px;
-    height: 25px;
-    margin-left: -48%;
-  }
-  .position-zona {
-    display: flex;
-    margin-top: -38px;
-  }
-  .position-nav {
-    display: inline-block;
-    margin: auto;
-    transform: translate(2%, 27%)
-  }
-  .position-title {
-    margin-bottom: 31px;
-    margin-top: -35px;
-  }
-  .men {
-    width: 22px;
-    height: 19px;
-    margin-left: 70%;
-    margin-top: -41%;
-  }
-  .ali {
-    margin-top: -3%;
-  }
-  .ali1 {
-    margin-top: 8%;
-  }
-  .Icon_paises1 {
-    vertical-align: middle;
-    margin-right: 10px;
-  }
-  .ma-le {
-    left: 12%;
-  }
-  
-  .ml-btn {
-    margin-left: 66%;
-  }
-  
-  .m-slider {
-    margin-left: 170px;
-  }
-  
-  .pd-5 {
-    padding-left: 5%;
-  }
-  .pd-10 {
-    padding-left: 10%;
-  }
-  
-  .left .right {
-    position: absolute;
-  }
-  .fecha-margi {
-    margin-left: 35px;
-    margin-bottom: -14px;
-  }
-  
-  .signup-button-container {
-    padding-bottom: 10px;
-  }
-  .ubicacion5 {
-    position: absolute;
-    top: 90%;
-    -webkit-transform: translate(0, -100%);
-    transform: translate(0, -100%);
-    left: 0;
-  }
-  .form-image-blue {
-    border-radius: 15px;
-    left: 0;
-    top: 0;
-  }
-  .ubicacion1 {
-    position: absolute;
-    left: 41%;
-    top: 36%;
-  }
-  .ubicacion3 {
-    position: absolute;
-    top: 30%;
-    z-index: 1;
-  }
-  .ubicacion3-1 {
-    position: absolute;
-    right: 3%;
-    top: 36%;
-    z-index: 1;
-  }
-  
-  .section-sexo {
-    margin-left: -21px;
-  }
-  .margin-r {
-    margin-right: 12px;
-  }
-  .ma-no {
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-  }
-  
-  .margin-top-por {
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
-  .centro {
-    text-align: center;
-  }
-  
-  .space-admi {
-    margin-left: 89px;
-  }
-  .histori {
-    display: none;
-    position: absolute;
-    left: 27px;
-    top: -210px;
-  }
-  
-  .edit {
-    display: none;
-    position: absolute;
-    left: 27px;
-    top: -177px;
-  }
-  
-  .noti {
-    display: none;
-    position: absolute;
-    left: 27px;
-    top: -144px;
-  }
-  
-  .veri {
-    /*display: none;
+.cuadro-fecha {
+  height: 54px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -8px;
+}
+
+.centrados {
+  padding-left: 69px;
+  margin-top: 33px;
+}
+
+.posi {
+  background: $morelightblue;
+  width: 32px;
+  height: 33px;
+  position: relative;
+}
+.describe {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(100%);
+  transform: translateX(26%);
+}
+
+.section-pais {
+  margin-top: -6px;
+  margin-left: -29px;
+}
+.margin-t-pais {
+  margin-top: 10px;
+}
+.margin-fecha1 {
+  margin-left: 54px;
+}
+.padding-pais {
+  padding-top: 7px;
+}
+.padding-fecha {
+  padding-top: 7px;
+  padding-left: 13px;
+}
+.margin-pais {
+  margin-left: -14px;
+}
+.sexo {
+  height: 48px;
+  border-radius: 22px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 218px;
+  margin-left: -40px;
+  margin-top: -10px;
+}
+.margin-fecha {
+  margin-bottom: 3px;
+}
+.women {
+  width: 25px;
+  height: 25px;
+  margin-left: -48%;
+}
+.position-zona {
+  display: flex;
+  margin-top: -38px;
+}
+.position-nav {
+  display: inline-block;
+  margin: auto;
+  transform: translate(2%, 27%);
+}
+.position-title {
+  margin-bottom: 31px;
+  margin-top: -35px;
+}
+.men {
+  width: 22px;
+  height: 19px;
+  margin-left: 70%;
+  margin-top: -41%;
+}
+.ali {
+  margin-top: -3%;
+}
+.ali1 {
+  margin-top: 8%;
+}
+.Icon_paises1 {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.ma-le {
+  left: 12%;
+}
+
+.ml-btn {
+  margin-left: 66%;
+}
+
+.m-slider {
+  margin-left: 170px;
+}
+
+.pd-5 {
+  padding-left: 5%;
+}
+.pd-10 {
+  padding-left: 10%;
+}
+
+.left .right {
+  position: absolute;
+}
+.fecha-margi {
+  margin-left: 35px;
+  margin-bottom: -14px;
+}
+
+.signup-button-container {
+  padding-bottom: 10px;
+}
+.ubicacion5 {
+  position: absolute;
+  top: 90%;
+  -webkit-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+  left: 0;
+}
+.form-image-blue {
+  border-radius: 15px;
+  left: 0;
+  top: 0;
+}
+.ubicacion1 {
+  position: absolute;
+  left: 41%;
+  top: 36%;
+}
+.ubicacion3 {
+  position: absolute;
+  top: 30%;
+  z-index: 1;
+}
+.ubicacion3-1 {
+  position: absolute;
+  right: 3%;
+  top: 36%;
+  z-index: 1;
+}
+
+.section-sexo {
+  margin-left: -21px;
+}
+.margin-r {
+  margin-right: 12px;
+}
+.ma-no {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.margin-top-por {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.centro {
+  text-align: center;
+}
+
+.space-admi {
+  margin-left: 89px;
+}
+.histori {
+  display: none;
+  position: absolute;
+  left: 27px;
+  top: -210px;
+}
+
+.edit {
+  display: none;
+  position: absolute;
+  left: 27px;
+  top: -177px;
+}
+
+.noti {
+  display: none;
+  position: absolute;
+  left: 27px;
+  top: -144px;
+}
+
+.veri {
+  /*display: none;
     position: absolute;
     top: -172px;*/
-    display: none;
-    position: absolute;
-    left: 30px;
-    top: -172px;
-  }
-  .veri1 {
-    display: none;
-    position: absolute;
-    left: 30px;
-    top: -143px;
-  }
-  
-  .edita {
-    /*display: none;
+  display: none;
+  position: absolute;
+  left: 30px;
+  top: -172px;
+}
+.veri1 {
+  display: none;
+  position: absolute;
+  left: 30px;
+  top: -143px;
+}
+
+.edita {
+  /*display: none;
     position: absolute;
     top: 32px;*/
-    display: none;
-    position: absolute;
-    left: 30px;
-    top: -137px;
-  }
-  .edita1 {
-    display: none;
-    position: absolute;
-    left: 30px;
-    top: -109px;
-  }
-  
-  .borra {
-    /*display: none;
+  display: none;
+  position: absolute;
+  left: 30px;
+  top: -137px;
+}
+.edita1 {
+  display: none;
+  position: absolute;
+  left: 30px;
+  top: -109px;
+}
+
+.borra {
+  /*display: none;
     position: absolute;
     top: 66px;*/
-    display: none;
-    position: absolute;
-    left: 30px;
-    top: -106px;
-  }
-  .borra1 {
-    display: none;
-    position: absolute;
-    left: 30px;
-    top: -77px;
-  }
-  
-  .position-btn-alta {
-    margin: auto;
-    width: 100%;
-    max-width: 650px;
-  }
-  .position-btn-regis {
-    margin: auto;
-    width: 100%;
-    max-width: 1004px;
-  }
-  .alineacion {
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    position: relative;
-    margin-top: -82px;
-  }
-  .centrar {
-    left: 15px;
-  }
-  
-  .space {
-    margin-bottom: 45px;
-  }
-  .margin-front {
-    margin-bottom: 5px;
-  }
-  .margin-sex1 {
-    margin-left: -9px;
-  }
-  .modal-privilege-icon {
-    width: 53px;
-  }
-  
-  .pad-bott {
-    padding-bottom: 40px;
-  }
-  
-  .mt-xl-6 {
-    margin-top: 96px;
-  }
-  .mb-xl-6 {
-    margin-bottom: 96px;
-  }
-  .mr-xl-6 {
-    margin-right: 96px;
-  }
-  .ml-xl-6 {
-    margin-left: 96px;
-  }
-  .pt-xl-6 {
-    padding-top: 96px;
-  }
-  .pr-xl-6 {
-    padding-right: 96px;
-  }
-  .pl-xl-6 {
-    padding-left: 96px;
-  }
-  .pb-xl-6 {
-    padding-bottom: 96px;
-  }
-  .mb5 {
-    margin-bottom: 5%;
-  }
-  .p1 {
-    position: absolute;
-    margin-top: 10%;
-  }
-  .posilan {
-    margin-bottom: -14%;
-      margin-top: 12%;
-      margin-left: 16%;
-  }
-  .posi1 {
-    margin-bottom: -14%;
-    margin-left: 3%;
-  }
-  .prev {
-    margin-left: -133px;
-    margin-top: -40px;
-  }
-  .ali-prev {
-    margin-top: -9%;
-  }
-  .mt12 {
-    margin-top: 12%;
-  }
-  .ctable {
-    transform: translateX(-16%);
-  }
-  .cytable {
-    transform: translateY(40%);
-  }
+  display: none;
+  position: absolute;
+  left: 30px;
+  top: -106px;
+}
+.borra1 {
+  display: none;
+  position: absolute;
+  left: 30px;
+  top: -77px;
+}
+
+.position-btn-alta {
+  margin: auto;
+  width: 100%;
+  max-width: 650px;
+}
+.position-btn-regis {
+  margin: auto;
+  width: 100%;
+  max-width: 1004px;
+}
+.alineacion {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  margin-top: -82px;
+}
+.centrar {
+  left: 15px;
+}
+
+.space {
+  margin-bottom: 45px;
+}
+.margin-front {
+  margin-bottom: 5px;
+}
+.margin-sex1 {
+  margin-left: -9px;
+}
+.modal-privilege-icon {
+  width: 53px;
+}
+
+.pad-bott {
+  padding-bottom: 40px;
+}
+
+.mt-xl-6 {
+  margin-top: 96px;
+}
+.mb-xl-6 {
+  margin-bottom: 96px;
+}
+.mr-xl-6 {
+  margin-right: 96px;
+}
+.ml-xl-6 {
+  margin-left: 96px;
+}
+.pt-xl-6 {
+  padding-top: 96px;
+}
+.pr-xl-6 {
+  padding-right: 96px;
+}
+.pl-xl-6 {
+  padding-left: 96px;
+}
+.pb-xl-6 {
+  padding-bottom: 96px;
+}
+.mb5 {
+  margin-bottom: 5%;
+}
+.p1 {
+  position: absolute;
+  margin-top: 10%;
+}
+.posilan {
+  margin-bottom: -14%;
+  margin-top: 12%;
+  margin-left: 16%;
+}
+.posi1 {
+  margin-bottom: -14%;
+  margin-left: 3%;
+}
+.prev {
+  margin-left: -133px;
+  margin-top: -40px;
+}
+.ali-prev {
+  margin-top: -9%;
+}
+.mt12 {
+  margin-top: 12%;
+}
+.ctable {
+  transform: translateX(-16%);
+}
+.cytable {
+  transform: translateY(40%);
+}

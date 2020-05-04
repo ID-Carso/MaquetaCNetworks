@@ -36,12 +36,12 @@ session_start();
             <!--<img src="../images/registro/eye-none.svg" class="icon-eye3" />-->
           </div>
           <div class=" justify-content-center mx-auto">
-            <p class="p-4 mb-4 mt-4  border-rol texto-general">Rol
+            <p class="pt-4 pb-4 pl-2 pr-2  mb-4 mt-4  border-rol texto-general">Rol
               <div class="alineacion buttons-rol-container">
                 <button id="button-root" type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit enviamos ml-5" id_button="1" id_rol="1" rel='User-Raiz'>Usuario Raíz </button>
                 <button id="button-editor" type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit py-xl-2 ml-1 enviamos" rel='User-Edit' id_button="2" id_rol="3">Usuario Editor</button>
-                <button id="button-aprobador" type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit py-xl-2 ml-2 enviamos" rel='User-Apro' id_button="3" id_rol="2">Usuario Aprobador</button>
-                <button id="button-visualizador" type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit py-xl-2  ml-2 enviamos" rel='User-Visua' id_button="4" id_rol="4">Usuario Visualizador</button>
+                <button id="button-aprobador" type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit py-xl-2 ml-1 enviamos" rel='User-Apro' id_button="3" id_rol="2">Usuario Aprobador</button>
+                <button id="button-visualizador" type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit py-xl-2  ml-1 mr-2 enviamos" rel='User-Visua' id_button="4" id_rol="4">Usuario Visualizador</button>
               </div>
             </p>
           </div>
