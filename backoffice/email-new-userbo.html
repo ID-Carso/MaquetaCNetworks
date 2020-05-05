@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .logo {
+        width: 70px;
+        margin-bottom: 28px;
+      }
+
+      .image-permission {
+        width: 45px;
+      }
+      .email-container {
+        padding: 28px;
+      }
+
+      .email-text {
+        color: #4b4b4b;
+        font-size: 14px;
+      }
+
+      p,
+      span {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .email-text-cool {
+        color: #4ca1b1;
+      }
+
+      .email-text-bold {
+        font-weight: bold;
+      }
+
+      .mb-3 {
+        margin-bottom: 16px;
+      }
+
+      .permission-content {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+      .permission-container {
+        width: 48%;
+        float: left;
+        height: 79px;
+        background: #fcfdfe;
+        margin-bottom: 25px;
+        box-shadow: 1px 1px 1px -1px rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        max-width: 383px;
+      }
+
+      .clearfix {
+        clear: both;
+      }
+
+      .w-50 {
+        width: 50%;
+      }
+
+      .manage-user-icon,
+      .view-changes-icon {
+        width: 45px;
+      }
+
+      .edit-users-icon {
+        width: 39px;
+      }
+
+      .reject-changes-icon {
+        width: 38px;
+      }
+
+      .approve-changes-icon,
+      .commentary-icon {
+        width: 40px;
+      }
+
+      .ml-3 {
+        margin-left: 16px;
+      }
+
+      .ml-2 {
+        margin-left: 8px;
+      }
+
+      .permission-text {
+        width: 60%;
+        margin-left: 5%;
+      }
+
+      .icon {
+        width: 35%;
+      }
+
+      .mr-2-p {
+        margin-right: 2%;
+      }
+
+      .ml-2-p {
+        margin-left: 2%;
+      }
+
+      .mt-2-p {
+        margin-top: 2%;
+      }
+
+      .mb-2-p {
+        margin-bottom: 2%;
+      }
+
+      .button-text {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 8px;
+      }
+
+      .button-cool {
+        border-radius: 15px;
+        border: 1px solid #4ca1b1;
+        background: #4ca1b1;
+      }
+
+      @media screen and (min-width: 768px) {
+        .email-container {
+          padding: 0px;
+          width: 60%;
+          margin: auto;
+        }
+
+        .logo {
+          width: 100px;
+          margin-bottom: 28px;
+          margin-top: 28px;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        .email-container {
+          padding: 0px;
+          width: 50%;
+          margin: auto;
+        }
+
+        .logo {
+          width: 130px;
+          margin-bottom: 28px;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        .email-container {
+          padding: 0px;
+          width: 85%;
+          margin: auto;
+          max-width: 1100px;
+        }
+
+        .mb-xl-5 {
+          margin-bottom: 48px;
+        }
+
+        .mr-2-xl-p {
+          margin-right: 2%;
+        }
+
+        .ml-2-xl-p {
+          margin-left: 2%;
+        }
+        .permission-container {
+          width: 30%;
+          float: left;
+          height: 79px;
+          background: #fcfdfe;
+          margin-bottom: 25px;
+          box-shadow: 1px 1px 1px -1px rgba(0, 0, 0, 0.5);
+          padding: 50px;
+          display: flex;
+          align-items: center;
+          max-width: 383px;
+        }
+
+        .ml-0-xl-p {
+          margin-left: 0;
+        }
+
+        .email-text {
+          font-size: 21px;
+        }
+
+        .manage-user-icon,
+        .view-changes-icon {
+          width: 85px;
+        }
+
+        .edit-users-icon {
+          width: 74px;
+        }
+
+        .reject-changes-icon {
+          width: 71px;
+        }
+
+        .approve-changes-icon,
+        .commentary-icon {
+          width: 77px;
+        }
+
+        .button-text {
+          font-size: 26px;
+          border-radius: 30px;
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="text-center">
+        <img
+          src="http://www.claronetworks.openofficedospuntocero.info/API_images/claro-logo.png"
+          alt=""
+          class="logo"
+        />
+      </div>
+      <p class="text-center mb-3 email-text email-text-bold">
+        Hola, <span class="email-text-cool">Ada Palazuelos</span>
+      </p>
+      <p class="text-center mb-3 email-text">
+        ¡<span class="email-text-cool email-text-bold">Claro Networks</span> te
+        da la bienvenida!
+      </p>
+      <p class="text-center mb-3 email-text">
+        Se generó tu cuenta como un
+        <span class="email-text-cool">Super Usuario, </span>por lo que podrás
+        desempeñar las siguientes funciones:
+      </p>
+      <div class="permissions">
+        <div class="permission-container mr-2-p">
+          <div class="permission-content">
+            <div class="icon">
+              <img
+                src="http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/admi-naranja.svg"
+                alt=""
+                class="manage-user-icon"
+              />
+            </div>
+            <p class="text-center email-text permission-text">
+              Administrar usuarios
+            </p>
+          </div>
+        </div>
+        <div class="permission-container ml-2-p mr-2-xl-p">
+          <div class="permission-content">
+            <div class="icon">
+              <img
+                src="http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/edit-naranja.svg"
+                alt=""
+                class="edit-users-icon"
+              />
+            </div>
+            <p class="text-center email-text permission-text">Editar</p>
+          </div>
+        </div>
+
+        <div class="permission-container mr-2-p ml-2-xl-p">
+          <div class="permission-content">
+            <div class="icon">
+              <img
+                src="http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/ojo-naranja.svg"
+                alt=""
+                class="view-changes-icon"
+              />
+            </div>
+            <p class="text-center email-text permission-text">
+              Visualizar cambios
+            </p>
+          </div>
+        </div>
+        <div class="permission-container ml-2-p mr-2-xl-p ml-0-xl-p">
+          <div class="permission-content">
+            <div class="icon">
+              <img
+                src="http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/recha-naranja.svg"
+                alt=""
+                class="reject-changes-icon"
+              />
+            </div>
+            <p class="text-center email-text permission-text">
+              Rechazar cambios
+            </p>
+          </div>
+        </div>
+
+        <div class="permission-container mr-2-p ml-2-xl-p">
+          <div class="permission-content">
+            <div class="icon">
+              <img
+                src="http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/apro-naran.svg"
+                alt=""
+                class="approve-changes-icon"
+              />
+            </div>
+            <p class="text-center email-text permission-text">
+              Aprobar cambios
+            </p>
+          </div>
+        </div>
+        <div class="permission-container ml-2-p">
+          <div class="permission-content">
+            <div class="icon">
+              <img
+                src="http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/coment-naranja.svg"
+                alt=""
+                class="commentary-icon"
+              />
+            </div>
+
+            <p class="text-center email-text permission-text">
+              Hacer comentarios
+            </p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <p class="email-text mb-3">
+          Podrás iniciar sesión con tu correo:<br /><span
+            class="email-text-bold email-text-cool"
+            >juan@gmail.com</span
+          >
+        </p>
+        <p class="email-text mb-3">
+          Tu contraseña es:<br /><span class="email-text-bold email-text-cool"
+            >12345678</span
+          >
+        </p>
+        <p class="email-text text-center">Un saludo,</p>
+        <p class="email-text text-center mb-3">
+          El equipo de
+          <span class="email-text-bold email-text-cool">Claro Networks</span>
+        </p>
+        <div class="text-center mb-3">
+          <button class="button-text button-cool">¡COMENZAR!</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
