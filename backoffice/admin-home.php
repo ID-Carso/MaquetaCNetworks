@@ -9,7 +9,7 @@
 <body>
 
 <div id="Admin-home-BO" > <!--Div de cambio-->
-    <div class="sombras1 ">  
+    <div class="sombras1 trans10 ">  
       <!--Titulos de la tabla-->              
         <div class="grid texto-general">          
             <header>

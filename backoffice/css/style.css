@@ -1457,7 +1457,7 @@
 }
 
 .mujer-estilo {
-  width: 100%;
+  width: 59%;
   height: 35px;
   border-radius: 22px 0 0 21.5px;
   border: solid 1px #666464;
@@ -1465,11 +1465,22 @@
   cursor: pointer;
   overflow: hidden;
   padding-top: 6px;
-  padding-left: 42px;
   background: #ffffff;
   outline: none !important;
   display: inline-block;
   margin-top: 9px;
+}
+
+.sexo {
+  height: 48px;
+  border-radius: 22px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 190px;
+  margin-left: -20px;
+  margin-top: -10px;
 }
 
 .mujer-estilo1 {
@@ -1604,14 +1615,14 @@
 }
 
 .hombre-estilo {
-  width: 119%;
+  width: 60%;
   height: 35px;
   border-radius: 0 22px 22px 0;
   border: solid 1px #666464;
   border-left: #03ad50;
   cursor: pointer;
   overflow: hidden;
-  padding-top: 7px;
+  padding-top: 8px;
   margin-top: 9px;
   background: #ffffff;
   outline: none !important;
@@ -1720,7 +1731,7 @@
 
 .image-pink-fondo {
   position: absolute;
-  top: 400px;
+  top: 200px;
   -webkit-transform: translate(0, -100%);
   transform: translate(0, 500%);
   left: 0;
@@ -1798,6 +1809,7 @@
   transform: translate(30%, -30%);
   cursor: pointer;
   z-index: 2;
+  border-radius: 21px;
 }
 
 .equis1 {
@@ -1809,6 +1821,7 @@
   transform: translate(-30%, -30%);
   cursor: pointer;
   z-index: 2;
+  border-radius: 21px;
 }
 
 .equis2 {
@@ -1819,6 +1832,7 @@
           transform: translate(1640%, -45%);
   cursor: pointer;
   z-index: 2;
+  border-radius: 21px;
 }
 
 .images {
@@ -1826,32 +1840,18 @@
   height: 23px;
 }
 
+.img-tam {
+  width: 30px;
+  height: 30px;
+}
+
 .tam {
   width: 31px;
   height: 33px;
 }
 
-.tamaño-apro {
-  width: 30px;
-  height: 28px;
-  margin-right: 16px;
-}
-
-.tamaño-recha {
-  width: 30px;
-  height: 30px;
-}
-
-.tamaño-admi {
-  height: 28px;
-}
-
 .text-right {
   margin-right: 9px;
-}
-
-.tamaño-edi {
-  width: 24px;
 }
 
 .Icon_paises {
@@ -2112,18 +2112,6 @@ input[type="radio"]:checked + .no-estilo1 {
   margin-left: -14px;
 }
 
-.sexo {
-  height: 48px;
-  border-radius: 22px;
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 218px;
-  margin-left: -40px;
-  margin-top: -10px;
-}
-
 .margin-fecha {
   margin-bottom: 3px;
 }
@@ -2131,7 +2119,7 @@ input[type="radio"]:checked + .no-estilo1 {
 .women {
   width: 25px;
   height: 25px;
-  margin-left: -48%;
+  margin-left: -9%;
 }
 
 .position-zona {
@@ -2156,8 +2144,12 @@ input[type="radio"]:checked + .no-estilo1 {
 .men {
   width: 22px;
   height: 19px;
-  margin-left: 70%;
+  margin-left: 75%;
   margin-top: -41%;
+}
+
+.ml3 {
+  margin-left: -3%;
 }
 
 .ali {
@@ -2243,10 +2235,6 @@ input[type="radio"]:checked + .no-estilo1 {
   margin-left: -21px;
 }
 
-.margin-r {
-  margin-right: 12px;
-}
-
 .ma-no {
   margin-right: 0px !important;
   margin-left: 0px !important;
@@ -2259,10 +2247,6 @@ input[type="radio"]:checked + .no-estilo1 {
 
 .centro {
   text-align: center;
-}
-
-.space-admi {
-  margin-left: 89px;
 }
 
 .histori {
@@ -2340,7 +2324,12 @@ input[type="radio"]:checked + .no-estilo1 {
 .position-btn-alta {
   margin: auto;
   width: 100%;
-  max-width: 650px;
+  max-width: 683px;
+}
+
+.trans10 {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 .position-btn-regis {
@@ -2377,7 +2366,7 @@ input[type="radio"]:checked + .no-estilo1 {
 }
 
 .margin-sex1 {
-  margin-left: -9px;
+  margin-left: -8px;
 }
 
 .modal-privilege-icon {
@@ -2461,6 +2450,10 @@ input[type="radio"]:checked + .no-estilo1 {
 .cytable {
   -webkit-transform: translateY(40%);
           transform: translateY(40%);
+}
+
+.ml-12 {
+  margin-left: 12%;
 }
 
 @font-face {
@@ -3353,11 +3346,11 @@ input[type="radio"]:checked + .no-estilo1 {
 }
 
 .modal-regis-listo {
-  max-width: 645px;
+  max-width: 656px;
   border-radius: 2px;
   background-color: #ffffff;
   padding: 29px;
-  margin-left: 9%;
+  margin-left: 11%;
 }
 
 .mod {
@@ -4107,7 +4100,7 @@ header {
 .sombras2 {
   margin: auto;
   width: 100%;
-  max-width: 672px;
+  max-width: 671px;
   -webkit-box-shadow: 3px 5px 10px 6px rgba(0, 0, 0, 0.14);
           box-shadow: 3px 5px 10px 6px rgba(0, 0, 0, 0.14);
 }

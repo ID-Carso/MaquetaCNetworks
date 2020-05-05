@@ -194,7 +194,7 @@ function registerUser(name, email, password, rol) {
               <div class="d-flex align-items-center col-6">
                 <img src="./images/ojo-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Visualizar cambios</span>
               </div>
-              <div class="d-flex align-items-center col-6">
+              <div class="d-flex align-items-center ml-6 col-6">
                 <img src="./images/edit-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Editar</span>
               </div>
             </div>
@@ -202,7 +202,7 @@ function registerUser(name, email, password, rol) {
               <div class="d-flex align-items-center col-6">
                 <img src="./images/recha-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Recahzar cambios</span>
               </div>
-              <div class="d-flex align-items-center col-6">
+              <div class="d-flex align-items-center ml-6 col-6">
                 <img src="./images/admi-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Administrar usuario</span>
               </div>
             </div>
@@ -210,7 +210,7 @@ function registerUser(name, email, password, rol) {
               <div class="d-flex align-items-center col-6">
                 <img src="./images/apro-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Aprobar cambios</span>
               </div>
-              <div class="d-flex align-items-center col-6">
+              <div class="d-flex align-items-center ml-6 col-6">
                 <img src="./images/coment-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Hacer comentarios</span>
               </div>
             </div>
@@ -223,7 +223,7 @@ function registerUser(name, email, password, rol) {
             <div class="d-flex align-items-center col-6">
               <img src="./images/ojo-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Visualizar cambios</span>
             </div>
-            <div class="d-flex align-items-center col-6">
+            <div class="d-flex align-items-center ml-6 col-6">
               <img src="./images/edit-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Editar</span>
             </div>
           </div>
@@ -231,7 +231,7 @@ function registerUser(name, email, password, rol) {
             <div class="d-flex align-items-center col-6">
               <img src="./images/apro-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Aprobar cambios</span>
             </div>
-            <div class="d-flex align-items-center col-6">
+            <div class="d-flex align-items-center ml-6 col-6">
               <img src="./images/coment-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Hacer comentarios</span>
             </div>
           </div>
@@ -249,7 +249,7 @@ function registerUser(name, email, password, rol) {
             <div class="d-flex align-items-center col-6">
               <img src="./images/ojo-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Visualizar cambios</span>
             </div>
-            <div class="d-flex align-items-center col-6">
+            <div class="d-flex align-items-center ml-12 col-6">
               <img src="./images/edit-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Editar</span>
             </div>
           </div>
@@ -312,7 +312,7 @@ function getAllUsersBO() {
           <div class="pd-10">${rol}</div>
           <div class='justify-content-center' _id="${user.id}">
             <!--Acciones-->
-            <input type='image' src='./images/ver-acti.svg' class='ml-3 btn-focus view-user-icon images' id='visual'></input>
+            <input type='image' src='./images/ver-acti.svg' class=' btn-focus view-user-icon images' id='visual'></input>
             <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images edit-user-icon'></input>
             <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus images delete-userbo-icon' _username="${user.name}"></input>
           </div>
@@ -322,7 +322,7 @@ function getAllUsersBO() {
         <div class="col-xl-10 position-btn-alta">
           <button class="btn-alta text-public mb-4" id="btnAlta">Agregar nuevo usuario</button>
         </div>
-        <div class="sombras2">
+        <div class="sombras2 trans10 mb-5">
           <div class="grid-users texto-general users-backoffice-table">        
             <header>
             <div class="text-title ">Usuario</div>
@@ -393,9 +393,9 @@ function getUser(id) {
         $("#cambio").load("VisualUser.php", function () {
           let rol = changeNameRol(json.data.rol.id);
           $("#usuarios").html(`
-          <div class=" col-xl-6 mx-auto texto-general " id="visual">
+          <div class=" col-xl-7 trans10 mx-auto texto-general " id="visual">
             <div class="container shadow tamaño ">
-                <img src="./images/equis.svg" alt="" class="equis2 closeViewBO">
+                <img src="./images/equis.svg" alt="" class="equis2 shadow closeViewBO">
                 <div class="w3-card-4 bg-white ">
                     <div class="w3-container ml-3 pt-5 pl-4"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
                     <div class=" col-xl-12 mx-auto mt-xl-3 mb-xl-2 pl-5 pr-5 ">
@@ -463,7 +463,7 @@ function getAllUserFront() {
           userF += `
           <div class="pd-5">${user.name}</div>
           <div class='justify-content-center' _id="${user.id}">
-            <input type='image' src='./images/ojito-acti.svg' class='show-user-front-icon ml-3 btn-focus images'></input>
+            <input type='image' src='./images/ojito-acti.svg' class='show-user-front-icon  btn-focus images'></input>
             <input type='image' src='./images/edit-ac.svg' class='ml-3 btn-focus images edit-user-front'></input>
             <input type='image' src='./images/eliminar-acti.svg' class='ml-3 btn-focus delete-user-front-icon images' _username="${user.name}"></input>
           </div>
@@ -471,7 +471,7 @@ function getAllUserFront() {
         });
 
         $("#Admin-users-Front").html(`
-        <div class="sombras1 ">
+        <div class="sombras1 trans10 mb-5 ">
           <div class="grid texto-general users-front-table">
             <header>
               <div class="text-title">Usuario</div>

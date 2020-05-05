@@ -12,8 +12,8 @@
 <body>
   <div id="Admin-users-Front">
     <!--Div para cambio-->
-    <div class="sombras1 ">
-      <div class="grid mb-4 texto-general users-front-table">
+    <div class="sombras1 trans10 mb-5">
+      <div class="grid  texto-general users-front-table">
 
       </div>
     </div>

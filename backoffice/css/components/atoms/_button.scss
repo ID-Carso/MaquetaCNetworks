@@ -581,7 +581,7 @@
   left: 10px;
 }
 .mujer-estilo {
-  width: 100%;
+  width: 59%;
   height: 35px;
   border-radius: 22px 0 0 21.5px;
   border: solid 1px $gray;
@@ -589,12 +589,22 @@
   cursor: pointer;
   overflow: hidden;
   padding-top: 6px;
-  padding-left: 42px;
   background: $white;
   outline: none !important;
   display: inline-block;
   margin-top: 9px;
   //a-text-sexo
+}
+.sexo {
+  height: 48px;
+  border-radius: 22px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 190px;
+  margin-left: -20px;
+  margin-top: -10px;
 }
 .mujer-estilo1 {
   width: 100%;
@@ -715,14 +725,14 @@
   margin-bottom: 12px;
 }
 .hombre-estilo {
-  width: 119%;
+  width: 60%;
   height: 35px;
   border-radius: 0 22px 22px 0;
   border: solid 1px $gray;
   border-left: $lemongreen;
   cursor: pointer;
   overflow: hidden;
-  padding-top: 7px;
+  padding-top: 8px;
   margin-top: 9px;
   background: $white;
   outline: none !important;

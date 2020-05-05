@@ -28,7 +28,7 @@
 }
 .image-pink-fondo {
   position: absolute;
-  top: 400px;
+  top: 200px; 
   -webkit-transform: translate(0, -100%);
   transform: translate(0, 500%);
   left: 0;
@@ -96,6 +96,8 @@
   transform: translate(30%, -30%);
   cursor: pointer;
   z-index: 2;
+  border-radius: 21px;
+
 }
 .equis1 {
   width: 39px;
@@ -106,6 +108,7 @@
   transform: translate(-30%, -30%);
   cursor: pointer;
   z-index: 2;
+  border-radius: 21px;
 }
 .equis2 {
   width: 39px;
@@ -114,35 +117,27 @@
   transform: translate(1640%, -45%);
   cursor: pointer;
   z-index: 2;
+  border-radius: 21px;
 }
 
 .images {
   width: 23px;
   height: 23px;
 }
-
+.img-tam{
+  width: 30px;
+  height: 30px;
+}
 .tam {
   width: 31px;
   height: 33px;
 }
-.tamaño-apro {
-  width: 30px;
-  height: 28px;
-  margin-right: 16px;
-}
-.tamaño-recha {
-  width: 30px;
-  height: 30px;
-}
-.tamaño-admi {
-  height: 28px;
-}
+
+
 .text-right {
   margin-right: 9px;
 }
-.tamaño-edi {
-  width: 24px;
-}
+
 .Icon_paises {
   vertical-align: middle;
   margin-right: 10px;
