@@ -54,24 +54,14 @@
 .margin-pais {
   margin-left: -14px;
 }
-.sexo {
-  height: 48px;
-  border-radius: 22px;
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 218px;
-  margin-left: -40px;
-  margin-top: -10px;
-}
+
 .margin-fecha {
   margin-bottom: 3px;
 }
 .women {
   width: 25px;
   height: 25px;
-  margin-left: -48%;
+  margin-left: -9%;
 }
 .position-zona {
   display: flex;
@@ -89,8 +79,11 @@
 .men {
   width: 22px;
   height: 19px;
-  margin-left: 70%;
+  margin-left: 75%;
   margin-top: -41%;
+}
+.ml3{
+  margin-left: -3%;
 }
 .ali {
   margin-top: -3%;
@@ -164,9 +157,7 @@
 .section-sexo {
   margin-left: -21px;
 }
-.margin-r {
-  margin-right: 12px;
-}
+
 .ma-no {
   margin-right: 0px !important;
   margin-left: 0px !important;
@@ -180,9 +171,7 @@
   text-align: center;
 }
 
-.space-admi {
-  margin-left: 89px;
-}
+
 .histori {
   display: none;
   position: absolute;
@@ -255,7 +244,10 @@
 .position-btn-alta {
   margin: auto;
   width: 100%;
-  max-width: 650px;
+  max-width: 683px;
+}
+.trans10{
+  transform: translateX(10px);
 }
 .position-btn-regis {
   margin: auto;
@@ -281,7 +273,7 @@
   margin-bottom: 5px;
 }
 .margin-sex1 {
-  margin-left: -9px;
+  margin-left: -8px;
 }
 .modal-privilege-icon {
   width: 53px;
@@ -346,4 +338,7 @@
 }
 .cytable {
   transform: translateY(40%);
+}
+.ml-12{
+  margin-left: 12%;
 }

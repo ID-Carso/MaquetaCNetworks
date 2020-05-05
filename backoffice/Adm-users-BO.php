@@ -13,9 +13,9 @@
       <div class="col-xl-10 position-btn-alta">
         <button class="btn-alta text-public mb-4" id="btnAlta">Agregar nuevo usuario</button>
       </div>
-      <div class="sombras2">
+      <div class="sombras2 trans10 mb-5">
         <!--titulos de la tabla-->
-        <div class="grid-users mb-4 texto-general users-backoffice-table">
+        <div class="grid-users  texto-general users-backoffice-table">
 
       <!--  </div>
       

@@ -18,12 +18,12 @@ session_start();
   <div id="register-userbo-view">
     <!--Div para cambio-->
     <div class="register-user-content">
-      <div class="col-xl-6 mx-auto title-altauser tamaño-alta1 ">
+      <div class="col-xl-6 trans10 mx-auto title-altauser tamaño-alta1 ">
         <!--Inicio para tarjeta-->
-        <img src="./images/equis.svg" alt="" class="equis closeViewBO" />
+        <img src="./images/equis.svg" alt="" class="equis shadow closeViewBO" />
         <div class="pr-4 pl-4 pt-2 pb-2"><strong> DATOS DEL USUARIO</strong></div>
       </div>
-      <div class="col-xl-6  shadow mx-auto tamaño-alta">
+      <div class="col-xl-6 trans10 shadow mx-auto tamaño-alta">
         <div class="col-xl-12 mx-auto p-3 ">
           <form>
             <input class="insert-data input-username texto-general pt-2 mb-2" id="name-user-bo" type="text" placeholder=" Nombre del usuario"></input>
@@ -54,100 +54,100 @@ session_start();
             </div>
             <div class="mt-5 text-rol" id="User-Raiz">
               <div class="d-flex m-2 justify-content-between">
-                <div>
-                  <img src="./images/ojo-naranja.svg" alt="" class="margin-r"><span> Visualizar cambios </span>
+                <div class="col-xl-4">
+                  <img src="./images/ojo-naranja.svg" alt="" class="img-tam"><span> Visualizar cambios </span>
                 </div>
-                <div>
-                  <img src="./images/recha-naranja.svg" alt="" class="margin-r"> <span>Rechazar cambios </span>
+                <div class="col-xl-4">
+                  <img src="./images/recha-naranja.svg" alt="" class="img-tam"> <span> Rechazar cambios </span>
                 </div>
-                <div>
-                  <img src="./images/apro-naranja.svg" alt="" class="margin-r"> <span>Aprobar cambios</span>
+                <div class="col-xl-4">
+                  <img src="./images/apro-naranja.svg" alt="" class="img-tam"> <span> Aprobar cambios</span>
                 </div>
               </div>
               <div class="d-flex m-2  justify-content-between">
-                <div>
-                  <img src="./images/edit-naranja.svg" alt="" class="margin-r"> <span>Editar</span>
+                <div class="col-xl-4">
+                  <img src="./images/edit-naranja.svg" alt="" class="img-tam"> <span> Editar</span>
                 </div>
-                <div>
-                  <img src="./images/admi-naranja.svg" alt="" class="space-admi margin-r"> <span>Administrar usuario</span>
+                <div class="col-xl-4">
+                  <img src="./images/admi-naranja.svg" alt="" class="img-tam"> <span> Administrar usuario</span>
                 </div>
-                <div>
-                  <img src="./images/coment-naranja.svg" alt="" class="margin-r"> <span>Hacer comentarios</span>
+                <div class="col-xl-4">
+                  <img src="./images/coment-naranja.svg" alt="" class="img-tam"> <span> Hacer comentarios</span>
                 </div>
               </div>
 
             </div>
             <div class=" mt-5 text-rol" id="User-Edit" hidden="true">
               <div class="d-flex m-2  justify-content-between">
-                <div>
-                  <img src="./images/ojo-naranja.svg" alt="" class="margin-r"><span>Visualizar cambios </span>
+                <div class="col-xl-4">
+                  <img src="./images/ojo-naranja.svg" alt="" class="img-tam"><span> Visualizar cambios </span>
                 </div>
-                <div>
-                  <img src="./images/recha-inac.svg" alt="" class="tamaño-recha margin-r "><span class="text-rol-inac">Rechazar cambios </span>
+                <div class="col-xl-4">
+                  <img src="./images/recha-inac.svg" alt="" class="img-tam "><span class="text-rol-inac"> Rechazar cambios </span>
                 </div>
-                <div>
-                  <img src="./images/apro-inac.svg" alt="" class="tamaño-apro  margin-r"><span class="text-rol-inac">Aprobar cambios</span>
+                <div class="col-xl-4">
+                  <img src="./images/apro-inac.svg" alt="" class="img-tam"><span class="text-rol-inac"> Aprobar cambios</span>
                 </div>
               </div>
               <div class="d-flex m-2  justify-content-between">
-                <div>
-                  <img src="./images/edit-naranja.svg" alt="" class="margin-r"> <span>Editar</span>
+                <div class="col-xl-4">
+                  <img src="./images/edit-naranja.svg" alt="" class="img-tam"> <span> Editar</span>
                 </div>
-                <div>
-                  <img src="./images/gris-admi.svg" alt="" class="tamaño-admi space-admi margin-r"><span class="text-rol-inac">Administrar usuario</span>
+                <div class="col-xl-4">
+                  <img src="./images/gris-admi.svg" alt="" class="img-tam"><span class="text-rol-inac"> Administrar usuario</span>
                 </div>
-                <div>
-                  <img src="./images/coment-naranja.svg" alt="" class="margin-r"> <span>Hacer comentarios</span>
+                <div class="col-xl-4">
+                  <img src="./images/coment-naranja.svg" alt="" class="img-tam"> <span> Hacer comentarios</span>
                 </div>
               </div>
 
             </div>
             <div class="mt-5 text-rol" id="User-Apro" hidden="true">
               <div class="d-flex m-2 justify-content-between">
-                <div>
-                  <img src="./images/ojo-naranja.svg" alt="" class="margin-r"><span> Visualizar cambios </span>
+                <div class="col-xl-4">
+                  <img src="./images/ojo-naranja.svg" alt="" class="img-tam"><span> Visualizar cambios </span>
                 </div>
-                <div>
-                  <img src="./images/recha-naranja.svg" alt="" class="margin-r"> <span>Rechazar cambios </span>
+                <div class="col-xl-4">
+                  <img src="./images/recha-naranja.svg" alt="" class="img-tam"> <span> Rechazar cambios </span>
                 </div>
-                <div>
-                  <img src="./images/apro-naranja.svg" alt="" class="margin-r"> <span>Aprobar cambios</span>
+                <div class="col-xl-4"> 
+                  <img src="./images/apro-naranja.svg" alt="" class="img-tam"> <span> Aprobar cambios</span>
                 </div>
               </div>
               <div class="d-flex m-2  justify-content-between">
-                <div>
-                  <img src="./images/edit-naranja.svg" alt="" class="margin-r"> <span>Editar</span>
+                <div class="col-xl-4">
+                  <img src="./images/edit-naranja.svg" alt="" class="img-tam"> <span> Editar</span>
                 </div>
-                <div>
-                  <img src="./images/gris-admi.svg" alt="" class="tamaño-admi space-admi margin-r"><span class="text-rol-inac">Administrar usuario</span>
+                <div class="col-xl-4">
+                  <img src="./images/gris-admi.svg" alt="" class="img-tam"><span class="text-rol-inac"> Administrar usuario</span>
                 </div>
-                <div>
-                  <img src="./images/coment-naranja.svg" alt="" class="margin-r"> <span>Hacer comentarios</span>
+                <div class="col-xl-4">
+                  <img src="./images/coment-naranja.svg" alt="" class="img-tam"> <span> Hacer comentarios</span>
                 </div>
               </div>
 
             </div>
             <div class=" mt-5 text-rol" id="User-Visua" hidden="true">
               <div class="d-flex m-2   justify-content-between">
-                <div>
-                  <img src="./images/ojo-naranja.svg" alt="" class="margin-r"><span>Visualizar cambios </span>
+                <div class="col-xl-4">
+                  <img src="./images/ojo-naranja.svg" alt="" class="img-tam"><span> Visualizar cambios </span>
                 </div>
-                <div>
-                  <img src="./images/recha-inac.svg" alt="" class="tamaño-recha margin-r"><span class="text-rol-inac">Rechazar cambios </span>
+                <div class="col-xl-4">
+                  <img src="./images/recha-inac.svg" alt="" class="img-tam"><span class="text-rol-inac"> Rechazar cambios </span>
                 </div>
-                <div>
-                  <img src="./images/apro-inac.svg" alt="" class="tamaño-apro margin-r"><span class="text-rol-inac">Aprobar cambios</span>
+                <div class="col-xl-4">
+                  <img src="./images/apro-inac.svg" alt="" class="img-tam"><span class="text-rol-inac"> Aprobar cambios</span>
                 </div>
               </div>
               <div class="d-flex m-2 justify-content-between">
-                <div>
-                  <img src="./images/lapiz-inac.svg" alt="" class="tamaño-edi margin-r"> <span class="text-rol-inac">Editar</span>
+                <div class="col-xl-4">
+                  <img src="./images/lapiz-inac.svg" alt="" class="img-tam"> <span class="text-rol-inac"> Editar</span>
                 </div>
-                <div>
-                  <img src="./images/gris-admi.svg" alt="" class="tamaño-admi  margin-r space-admi"><span class="text-rol-inac">Administrar usuario</span>
+                <div class="col-xl-4">
+                  <img src="./images/gris-admi.svg" alt="" class="img-tam"><span class="text-rol-inac"> Administrar usuario</span>
                 </div>
-                <div>
-                  <img src="./images/coment-naranja.svg" alt="" class="margin-r"> <span>Hacer comentarios</span>
+                <div class="col-xl-4">
+                  <img src="./images/coment-naranja.svg" alt="" class="img-tam"> <span> Hacer comentarios</span>
                 </div>
               </div>
 
@@ -173,7 +173,7 @@ session_start();
 
           </div>
           <div class="text-center">
-            <button type="button" class="btn-aceptar text-semi-white  mt-4" id="modal-button" data-dismiss="modal">ACEPTAR</button>
+            <button type="button" class="btn-guardar mt-4" id="modal-button" data-dismiss="modal">ACEPTAR</button>
           </div>
         </div>
       </div>

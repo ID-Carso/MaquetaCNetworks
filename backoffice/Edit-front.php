@@ -11,9 +11,9 @@
 <body class="scroll">
   <div id="edit-front">
     <!--Div para cambio-->
-    <div class="col-xl-6 mx-auto edit-userfront-content">
+    <div class="col-xl-7 trans10 mx-auto edit-userfront-content">
       <div class="container shadow texto-general tamaño ">
-        <img src="./images/equis.svg" alt="" class="equis2 closeViewFront">
+        <img src="./images/equis.svg" alt="" class="equis2 shadow closeViewFront">
         <div class="bg-white ">
           <div class=" ml-3 pt-5 pl-2"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
           <div class=" col-xl-12 mx-auto mt-xl-1 ">
@@ -27,7 +27,7 @@
               </div>
 
               <div class=" navbar navbar-expand-sm  mx-auto mt-2 ">
-                <div class="col-xl-4 margin-sex1">
+                <div class="col-xl-4 margin-sex1 ">
                   <p class="margin-front texto-general">Sexo</p>
                   <form action="" name="formilariosexo" id="formulariosexo" class="formulario">
                     <div class="sexo">
@@ -47,7 +47,7 @@
                   <p class="margin-front texto-general">País de residencia</p>
 
                   <input type="checkbox" id="selectPais" class="texto-general" />
-                  <label for="selectPais" id="select-Pais">
+                  <label for="selectPais" id="select-Pais" class="ml3">
                     <p class="SeleccionPaisLista">
                       <img src="" class="Icon_paises" />Selecciona tu país
                     </p>
