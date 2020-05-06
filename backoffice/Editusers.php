@@ -17,7 +17,7 @@ session_start();
 <body>
   <div id="general">
     <!--Div para cambio-->
-    <div class="col-xl-6 trans10 shadow mx-auto texto-general tamaño edit-userbo-content">
+    <div class="col-xl-6 trans10 shadow mx-auto texto-general tamaño edit-userbo-content position-relative">
       <img src="./images/equis.svg" alt="" class="equis1 shadow closeViewBO">
       <form>
         <div class="col-xl-11 pt-5 pl-5">
@@ -27,7 +27,7 @@ session_start();
           <input id="edit-input-username" class="insert-data texto-general pt-2" type="text " value="" placeholder="Nombre del usuario">
 
           </input>
-          <input id="edit-input-email" class="insert-data input-email texto-general pt-2 " type="text " value="" placeholder=" Correo "></input>
+          <input id="edit-input-email" class="insert-data input-email texto-general" type="text " value="" placeholder=" Correo "></input>
           <div class="d-flex align-items-center mt-2">
             <p class="correo-valido mt-0 mb-0">
               Correo válido
@@ -36,7 +36,7 @@ session_start();
           </div>
 
           <div class="pt-0 mt-1">
-            <input id="edit-input-password " class="insert-data texto-general input-password pt-2 " type="password" id="login-password" name="login-password" placeholder=" Asignar nueva contraseña" autocomplete="off" />
+            <input id="edit-input-password " class="insert-data texto-general input-password" type="password" id="login-password" name="login-password" placeholder=" Asignar nueva contraseña" autocomplete="off" />
             <div class="d-flex align-items-center">
               <p class="caracteres-min mt-1 mb-0">
                 8 caractéres mínimo
@@ -188,7 +188,7 @@ session_start();
 
         </div>
         <div class="text-center">
-          <button type="button" class="btn-aceptar text-semi-white mt-4" id="modal-button" data-dismiss="modal">ACEPTAR</button>
+          <button type="button" class="btn-si text-si mt-4" id="modal-button" data-dismiss="modal">ACEPTAR</button>
         </div>
       </div>
     </div>

@@ -21,7 +21,13 @@
               <input id="edit-front-input-username" class="insert-data texto-general " type="text " value="" placeholder="" disabled></input>
               <input id="edit-front-input-email" class="insert-data texto-general input-email  pt-2 pb-2 " type="text " value="" placeholder="" disabled></input>
               <input class="insert-data input-password texto-general" type="password" id="edit-user-front-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
+              <div class="d-flex align-items-center">
+                <p class="caracteres-min mt-1 mb-0">
+                  8 caractéres mínimo
+                </p>
 
+                <img src="http://www.claronetworks.openofficedospuntocero.info/images/registro/listo.svg" class="listo ml-2 mt-1" />
+              </div>
               <div class="position-relative">
                 <input class="insert-data input-password" type="password" id="edit-user-front-repassword" name="login-password" placeholder=" Confirmar contraseña" autocomplete="off" />
               </div>

@@ -679,6 +679,7 @@ function getUserToUpdate(id) {
       if (json.code == 200) {
         $("#editar").replaceWith();
         $("#cambio").load("Editusers.php", function () {
+          //VALIDATE PASSWORD
           $(".input-password").keyup(function () {
             validateKeyUpPassword($(this), $(".caracteres-min"));
           });
@@ -757,6 +758,12 @@ function getUserFrontToUpdate(id) {
       if (json.code == 200) {
         $("#edit-front").replaceWith();
         $("#cambio").load("Edit-front.php", function () {
+          //VALIDATE PASSWORD
+          //VALIDATE PASSWORD
+          $(".input-password").keyup(function () {
+            validateKeyUpPassword($(this), $(".caracteres-min"));
+          });
+
           $("#edit-front-input-username").val(json.data.name);
           $("#edit-front-input-email").val(json.data.email);
           switch (json.data.gender) {
