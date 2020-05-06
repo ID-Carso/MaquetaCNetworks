@@ -120,11 +120,13 @@ function signIn(email, password) {
     },
     success: function (result) {
       console.log(result);
+
       let json = JSON.parse(result);
       if (json.code == 200) {
         location.href = "Admin-BO.php";
-      } else {
-        $(".data-incorrect")
+      } else if (json.code == 404) {
+        $(".loader-container").remove();
+        $(".warning-login")
           .text(
             "Tu correo o contraseña no coinciden. Por favor, verifica de nuevo"
           )
@@ -758,7 +760,6 @@ function getUserFrontToUpdate(id) {
       if (json.code == 200) {
         $("#edit-front").replaceWith();
         $("#cambio").load("Edit-front.php", function () {
-          //VALIDATE PASSWORD
           //VALIDATE PASSWORD
           $(".input-password").keyup(function () {
             validateKeyUpPassword($(this), $(".caracteres-min"));

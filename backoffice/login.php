@@ -37,7 +37,7 @@ session_start();
         <br />
         <div class="col-10 col-sm-8 col-md-8 col-lg-9 col-xl-9 mx-auto">
           <form method="POST">
-            <div class="row ma-no centro">
+            <div class="row ma-no centro no-gutters">
               <div class="col-sm-12 no-gap">
                 <div class="tamaño2">
                   <input class="insert-data input-email correo" type="text" placeholder="Correo electrónico" id="login-email" />
@@ -53,8 +53,8 @@ session_start();
               </div>
             </div>
             <br />
-            <div class="row ma-no centro">
-              <div class=" col-sm-12 no-gap">
+            <div class="row ma-no centro no-gutters">
+              <div class=" col-sm-12 no-gap ">
                 <div class="tamaño2 centro">
                   <div class="position-relative">
                     <input class="insert-data input-password correo" type="password" id="login-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
@@ -74,11 +74,12 @@ session_start();
             <input type="checkbox" value="1" class=" mr-1 reco-chek" style="display:block">
 <p class="pb-1">  Recordar contraseña</p>
             </div>-->
+            <p class="warning-login a-text-semibold-lightbrown mt-3"></p>
 
             <div class="centro">
 
               <!-- <a href="Admin-BO.php"> -->
-              <button type="button" class="btn-ingresar-reco text-public mt-5" id="button-login">
+              <button type="button" class="btn-ingresar-reco text-public mt-3" id="button-login">
                 INGRESAR
               </button>
               <!-- </a> -->

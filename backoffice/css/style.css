@@ -60,6 +60,11 @@
   font-family: "Montserrat-Regular";
 }
 
+.a-text-semibold-lightbrown {
+  font-family: "Montserrat-SemiBold";
+  color: #666262;
+}
+
 /* END TEXT BASE*/
 .card-text {
   font-size: 21px;
@@ -737,6 +742,10 @@
   top: 25%;
   left: 0%;
   text-align: center;
+}
+
+.warning-email {
+  font-size: 14px;
 }
 
 @font-face {
@@ -2518,6 +2527,11 @@ input[type="radio"]:checked + .no-estilo1 {
   font-family: "Montserrat-Regular";
 }
 
+.a-text-semibold-lightbrown {
+  font-family: "Montserrat-SemiBold";
+  color: #666262;
+}
+
 /* END TEXT BASE*/
 .card-text {
   font-size: 21px;
@@ -3195,6 +3209,10 @@ input[type="radio"]:checked + .no-estilo1 {
   top: 25%;
   left: 0%;
   text-align: center;
+}
+
+.warning-email {
+  font-size: 14px;
 }
 
 /*Tamaño de textos */

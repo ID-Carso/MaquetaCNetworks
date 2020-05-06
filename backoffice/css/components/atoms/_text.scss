@@ -16,6 +16,10 @@
   color: $repassgray;
   font-family: $MontserratRegular;
 }
+.a-text-semibold-lightbrown {
+  font-family: $MontserratSemiBold;
+  color: $lightbrown;
+}
 
 /* END TEXT BASE*/
 
@@ -624,4 +628,8 @@
   top: 25%;
   left: 0%;
   text-align: center;
+}
+
+.warning-email {
+  font-size: 14px;
 }
