@@ -1703,6 +1703,11 @@
   overflow: hidden;
 }
 
+.disabled-option {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .loader {
   position: absolute;
   top: 50%;

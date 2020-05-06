@@ -29,9 +29,8 @@ session_start();
             <input class="insert-data input-username texto-general pt-2 mb-2" id="name-user-bo" type="text" placeholder=" Nombre del usuario"></input>
             <input class="insert-data input-email texto-general pt-2 " type="text" id="email-user-bo" placeholder=" Correo "></input>
             <div class="d-flex align-items-center mt-2">
-              <p class="correo-valido mt-0 mb-0 ml-2" id="error_email">
+              <p class="correo-valido mt-0 mb-0" id="error_email">
                 Correo válido
-
               </p>
               <img src="http://www.claronetworks.openofficedospuntocero.info/images/registro/alerta.svg" class="error ml-2" />
             </div>
