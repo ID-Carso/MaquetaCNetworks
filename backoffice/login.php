@@ -69,14 +69,7 @@ var_dump($_SESSION['login']);
                 </div>
               </div>
             </div>
-
-            <!--  <div class="col-xl-12 row ma-no centro margin-top-por contra pt-3 pb-2" >
-            <input type="checkbox" value="1" class=" mr-1 reco-chek" style="display:block">
-<p class="pb-1">  Recordar contraseña</p>
-            </div>-->
-
             <div class="centro">
-
               <!-- <a href="Admin-BO.php"> -->
               <button type="button" class="btn-ingresar-reco" id="button-login">
                 INGRESAR

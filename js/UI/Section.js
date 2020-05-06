@@ -313,7 +313,7 @@ export default class Section {
                       </div>
                       <div class="thumbnail-body" _id="${block5Image[i].chapter_id}">
                           <div class="thumbnail-large">
-                              <img src="${block5Image[i].image_horizontal}" alt="">
+                              <img src="${block5Image[i].image_vertical}" alt="">
                           </div>
                       </div>
                     
@@ -330,7 +330,7 @@ export default class Section {
                       </div>
                       <div class="thumbnail-body" _id="${block5Image[i].chapter_id}">
                           <div class="thumbnail-large">
-                              <img src="${block5Image[i].image_horizontal}" alt="">
+                              <img src="${block5Image[i].image_vertical}" alt="">
                           </div>
                       </div>
                   </div>
