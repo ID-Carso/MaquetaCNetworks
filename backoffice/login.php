@@ -64,14 +64,12 @@ session_start();
                     <p class="caracteres-min mt-1 mb-0">
                       8 caractéres mínimo
                     </p>
-
                     <img src="http://www.claronetworks.openofficedospuntocero.info/images/registro/listo.svg" class="listo ml-2 mt-1" />
                   </div>
 
                 </div>
               </div>
             </div>
-
             <!--  <div class="col-xl-12 row ma-no centro margin-top-por contra pt-3 pb-2" >
             <input type="checkbox" value="1" class=" mr-1 reco-chek" style="display:block">
 <p class="pb-1">  Recordar contraseña</p>
@@ -94,7 +92,6 @@ session_start();
                 <p class="contra">¿Olvidaste la contraseña?</p>
               </a>
               <hr class="line btn-margin" />
-
             </div>
           </div>
         </div>
