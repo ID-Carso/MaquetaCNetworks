@@ -46,11 +46,13 @@
             <div class="row ma-no centro pt-3">
               <div class="col-sm-12 no-gap">
                 <div class="tamaño2">
-                  <input class="input-email insert-data correo-valido" type="email" placeholder="Correo electrónico" id="re-password-email" />
-                  <p class=" correo-valido" id="error_email">
-                    Correo válido
-                    <img src="../images/registro/alerta.svg" class="error" />
-                  </p>
+                  <input class="input-email insert-data correo" type="email" placeholder="Correo electrónico" id="re-password-email" />
+                  <div class="d-flex align-items-center mt-2">
+                    <p class="correo-valido mt-0 mb-0">
+                      Correo válido
+                    </p>
+                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/registro/alerta.svg" class="error ml-2" />
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,8 +1,10 @@
 <?php
 
-function showHeader($nameButton, $variation, $nameUser, $rol)
+function showHeader($nameButton, $variation, $nameUser, $rolId)
 
 {
+
+
 
     switch ($variation) {
         case 1:
@@ -23,7 +25,7 @@ function showHeader($nameButton, $variation, $nameUser, $rol)
         <div id='user_information' class='o-user-info-container d-flex align-items-center justify-content-between pt-xl-1 '>               
             <div class='ml-5'>
                 <span class='a-text-black-bold a-name-user'>" . $nameUser . "</span><br>
-                <span class='text-light1 '>" . $rol . "</span>
+                <span class='text-light1 '>" . changeNameRol($rolId) . "</span>
             </div>
             <div class='mr-5'>
            
@@ -51,7 +53,7 @@ function showHeader($nameButton, $variation, $nameUser, $rol)
                 
                             <div>
                                 <span class='a-text-black-bold a-name-user'>" . $nameUser . "</span><br>
-                                <span class='a-role-text a-text-black-light'>" . $rol . "</span>
+                                <span class='a-role-text a-text-black-light'>" . changeNameRol($rolId) . "</span>
                             </div>
 
                             <div>
@@ -76,4 +78,29 @@ function showHeader($nameButton, $variation, $nameUser, $rol)
                     </div>
                 </div>";
     }
+}
+
+function changeNameRol($rolId)
+{
+    switch ($rolId) {
+        case '1':
+            $rol = "Super Usuario";
+            break;
+        case '2':
+            $rol = "Aprobador";
+            break;
+        case '1':
+            $rol = "Editor";
+            break;
+        case '1':
+            $rol = "Visualizador";
+            break;
+
+
+        default:
+            $rol = "Undefined";
+            break;
+    }
+
+    return $rol;
 }

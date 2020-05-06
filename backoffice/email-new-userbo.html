@@ -11,6 +11,15 @@
         box-sizing: border-box;
       }
 
+      .manage-user-icon,
+      .view-changes-icon,
+      .edit-users-icon,
+      .reject-changes-icon,
+      .approve-changes-icon,
+      .commentary-icon {
+        width: 100%;
+      }
+
       .text-center {
         text-align: center;
       }
@@ -29,7 +38,7 @@
 
       .email-text {
         color: #4b4b4b;
-        font-size: 14px;
+        font-size: 12px;
       }
 
       p,
@@ -73,24 +82,6 @@
 
       .w-50 {
         width: 50%;
-      }
-
-      .manage-user-icon,
-      .view-changes-icon {
-        width: 45px;
-      }
-
-      .edit-users-icon {
-        width: 39px;
-      }
-
-      .reject-changes-icon {
-        width: 38px;
-      }
-
-      .approve-changes-icon,
-      .commentary-icon {
-        width: 40px;
       }
 
       .ml-3 {
@@ -140,11 +131,20 @@
         background: #4ca1b1;
       }
 
+      .email-back {
+        background-image: url(http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/email/email-background-mobile.png);
+        background-size: cover;
+      }
+
       @media screen and (min-width: 768px) {
         .email-container {
           padding: 0px;
           width: 60%;
           margin: auto;
+        }
+
+        .email-text {
+          font-size: 16px;
         }
 
         .logo {
@@ -164,6 +164,28 @@
         .logo {
           width: 130px;
           margin-bottom: 28px;
+        }
+
+        .email-text {
+          font-size: 16px;
+        }
+
+        .manage-user-icon,
+        .view-changes-icon {
+          width: 45px;
+        }
+
+        .edit-users-icon {
+          width: 39px;
+        }
+
+        .reject-changes-icon {
+          width: 38px;
+        }
+
+        .approve-changes-icon,
+        .commentary-icon {
+          width: 40px;
         }
       }
 
@@ -230,135 +252,142 @@
           border-radius: 30px;
           padding: 15px;
         }
+
+        .email-back {
+          background-image: url(http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/email/email-background.png);
+          background-size: cover;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="email-container">
-      <div class="text-center">
-        <img
-          src="http://www.claronetworks.openofficedospuntocero.info/API_images/claro-logo.png"
-          alt=""
-          class="logo"
-        />
-      </div>
-      <p class="text-center mb-3 email-text email-text-bold">
-        Hola, <span class="email-text-cool">Ada Palazuelos</span>
-      </p>
-      <p class="text-center mb-3 email-text">
-        ¡<span class="email-text-cool email-text-bold">Claro Networks</span> te
-        da la bienvenida!
-      </p>
-      <p class="text-center mb-3 email-text">
-        Se generó tu cuenta como un
-        <span class="email-text-cool">Super Usuario, </span>por lo que podrás
-        desempeñar las siguientes funciones:
-      </p>
-      <div class="permissions">
-        <div class="permission-container mr-2-p">
-          <div class="permission-content">
-            <div class="icon">
-              <img
-                src="http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/admi-naranja.svg"
-                alt=""
-                class="manage-user-icon"
-              />
-            </div>
-            <p class="text-center email-text permission-text">
-              Administrar usuarios
-            </p>
-          </div>
+    <div class="email-back">
+      <div class="email-container">
+        <div class="text-center">
+          <img
+            src="http://www.claronetworks.openofficedospuntocero.info/API_images/claro-logo.png"
+            alt=""
+            class="logo"
+          />
         </div>
-        <div class="permission-container ml-2-p mr-2-xl-p">
-          <div class="permission-content">
-            <div class="icon">
-              <img
-                src="http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/edit-naranja.svg"
-                alt=""
-                class="edit-users-icon"
-              />
-            </div>
-            <p class="text-center email-text permission-text">Editar</p>
-          </div>
-        </div>
-
-        <div class="permission-container mr-2-p ml-2-xl-p">
-          <div class="permission-content">
-            <div class="icon">
-              <img
-                src="http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/ojo-naranja.svg"
-                alt=""
-                class="view-changes-icon"
-              />
-            </div>
-            <p class="text-center email-text permission-text">
-              Visualizar cambios
-            </p>
-          </div>
-        </div>
-        <div class="permission-container ml-2-p mr-2-xl-p ml-0-xl-p">
-          <div class="permission-content">
-            <div class="icon">
-              <img
-                src="http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/recha-naranja.svg"
-                alt=""
-                class="reject-changes-icon"
-              />
-            </div>
-            <p class="text-center email-text permission-text">
-              Rechazar cambios
-            </p>
-          </div>
-        </div>
-
-        <div class="permission-container mr-2-p ml-2-xl-p">
-          <div class="permission-content">
-            <div class="icon">
-              <img
-                src="http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/apro-naran.svg"
-                alt=""
-                class="approve-changes-icon"
-              />
-            </div>
-            <p class="text-center email-text permission-text">
-              Aprobar cambios
-            </p>
-          </div>
-        </div>
-        <div class="permission-container ml-2-p">
-          <div class="permission-content">
-            <div class="icon">
-              <img
-                src="http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/coment-naranja.svg"
-                alt=""
-                class="commentary-icon"
-              />
-            </div>
-
-            <p class="text-center email-text permission-text">
-              Hacer comentarios
-            </p>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-        <p class="email-text mb-3">
-          Podrás iniciar sesión con tu correo:<br /><span
-            class="email-text-bold email-text-cool"
-            >juan@gmail.com</span
-          >
+        <p class="text-center mb-3 email-text email-text-bold">
+          Hola, <span class="email-text-cool">Ada Palazuelos</span>
         </p>
-        <p class="email-text mb-3">
-          Tu contraseña es:<br /><span class="email-text-bold email-text-cool"
-            >12345678</span
-          >
+        <p class="text-center mb-3 email-text">
+          ¡<span class="email-text-cool email-text-bold">Claro Networks</span>
+          te da la bienvenida!
         </p>
-        <p class="email-text text-center">Un saludo,</p>
-        <p class="email-text text-center mb-3">
-          El equipo de
-          <span class="email-text-bold email-text-cool">Claro Networks</span>
+        <p class="text-center mb-3 email-text">
+          Se generó tu cuenta como un
+          <span class="email-text-cool">Super Usuario, </span>por lo que podrás
+          desempeñar las siguientes funciones:
         </p>
-        <div class="text-center mb-3">
-          <button class="button-text button-cool">¡COMENZAR!</button>
+        <div class="permissions">
+          <div class="permission-container mr-2-p">
+            <div class="permission-content">
+              <div class="icon">
+                <img
+                  src="http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/email/admi-naranja.png"
+                  alt=""
+                  class="manage-user-icon"
+                />
+              </div>
+              <p class="text-center email-text permission-text">
+                Administrar usuarios
+              </p>
+            </div>
+          </div>
+          <div class="permission-container ml-2-p mr-2-xl-p">
+            <div class="permission-content">
+              <div class="icon">
+                <img
+                  src="http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/email/edit-naranja.png"
+                  alt=""
+                  class="edit-users-icon"
+                />
+              </div>
+              <p class="text-center email-text permission-text">Editar</p>
+            </div>
+          </div>
+
+          <div class="permission-container mr-2-p ml-2-xl-p">
+            <div class="permission-content">
+              <div class="icon">
+                <img
+                  src="http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/email/ojo-naranja.png"
+                  alt=""
+                  class="view-changes-icon"
+                />
+              </div>
+              <p class="text-center email-text permission-text">
+                Visualizar cambios
+              </p>
+            </div>
+          </div>
+          <div class="permission-container ml-2-p mr-2-xl-p ml-0-xl-p">
+            <div class="permission-content">
+              <div class="icon">
+                <img
+                  src="http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/email/recha-naranja.png"
+                  alt=""
+                  class="reject-changes-icon"
+                />
+              </div>
+              <p class="text-center email-text permission-text">
+                Rechazar cambios
+              </p>
+            </div>
+          </div>
+
+          <div class="permission-container mr-2-p ml-2-xl-p">
+            <div class="permission-content">
+              <div class="icon">
+                <img
+                  src="http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/email/apro-naran.png"
+                  alt=""
+                  class="approve-changes-icon"
+                />
+              </div>
+              <p class="text-center email-text permission-text">
+                Aprobar cambios
+              </p>
+            </div>
+          </div>
+          <div class="permission-container ml-2-p">
+            <div class="permission-content">
+              <div class="icon">
+                <img
+                  src="http://www.claronetworks.openofficedospuntocero.info/v1.2/backoffice/images/email/coment-naranja.png"
+                  alt=""
+                  class="commentary-icon"
+                />
+              </div>
+
+              <p class="text-center email-text permission-text">
+                Hacer comentarios
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <p class="email-text mb-3">
+            Podrás iniciar sesión con tu correo:<br /><span
+              class="email-text-bold email-text-cool"
+              >juan@gmail.com</span
+            >
+          </p>
+          <p class="email-text mb-3">
+            Tu contraseña es:<br /><span class="email-text-bold email-text-cool"
+              >12345678</span
+            >
+          </p>
+          <p class="email-text text-center">Un saludo,</p>
+          <p class="email-text text-center mb-3">
+            El equipo de
+            <span class="email-text-bold email-text-cool">Claro Networks</span>
+          </p>
+          <div class="text-center mb-3">
+            <button class="button-text button-cool">¡COMENZAR!</button>
+          </div>
         </div>
       </div>
     </div>

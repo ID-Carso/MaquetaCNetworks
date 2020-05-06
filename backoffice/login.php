@@ -43,10 +43,12 @@ session_start();
                   <input class="insert-data input-email correo" type="text" placeholder="Correo electrónico" id="login-email" />
 
                   <img src="./images/registro/group-12.svg" class="ubicacion3" />
-                  <p class="correo-valido" id="error_email">
-                    Correo válido
-                    <img src="./images/registro/alerta.svg" class="error" />
-                  </p>
+                  <div class="d-flex align-items-center mt-2">
+                    <p class="correo-valido mt-0 mb-0">
+                      Correo válido
+                    </p>
+                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/registro/alerta.svg" class="error ml-2" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -58,11 +60,13 @@ session_start();
                     <input class="insert-data input-password correo" type="password" id="login-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
                     <img src="./images/registro/eye-none.svg" class="icon-eye" />
                   </div>
-                  <p class="caracteres-min">
-                    8 caractéres mínimo
-                    <img src="./images/registro/listo.svg" class="listo" />
+                  <div class="d-flex align-items-center">
+                    <p class="caracteres-min mt-1 mb-0">
+                      8 caractéres mínimo
+                    </p>
 
-                  </p>
+                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/registro/listo.svg" class="listo ml-2 mt-1" />
+                  </div>
 
                 </div>
               </div>

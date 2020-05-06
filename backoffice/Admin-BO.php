@@ -30,7 +30,7 @@ if (!isset($_SESSION["session"])) {
     $nameButton = "Cerrar sesión";
     // $nameSection = "Home";
     include 'header-office.php';
-    showHeader($nameButton, 1, $_SESSION["name_user"], $_SESSION["rol"]);
+    showHeader($nameButton, 1, $_SESSION["name_user"], $_SESSION["rol_id"]);
     ?>
     <!--Botones de navegación-->
     <nav class='navbar navbar-expand-sm mx-auto ' style="display:flex; justify-content:space-around; margin-top:-10px">

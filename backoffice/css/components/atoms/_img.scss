@@ -1,5 +1,5 @@
 .loader {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -28,7 +28,7 @@
 }
 .image-pink-fondo {
   position: absolute;
-  top: 200px; 
+  top: 200px;
   -webkit-transform: translate(0, -100%);
   transform: translate(0, 500%);
   left: 0;
@@ -97,7 +97,6 @@
   cursor: pointer;
   z-index: 2;
   border-radius: 21px;
-
 }
 .equis1 {
   width: 39px;
@@ -124,7 +123,7 @@
   width: 23px;
   height: 23px;
 }
-.img-tam{
+.img-tam {
   width: 30px;
   height: 30px;
 }
@@ -132,7 +131,6 @@
   width: 31px;
   height: 33px;
 }
-
 
 .text-right {
   margin-right: 9px;

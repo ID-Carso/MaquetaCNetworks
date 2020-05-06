@@ -152,12 +152,11 @@ function signOut() {
   });
 }
 
-function registerUser(name, email, password, rol) {
+function registerUser(name, email, rol) {
   let user = {
     function: "registerUser",
     name: name,
     email: email,
-    password: password,
     rol: rol,
   };
 
@@ -267,15 +266,24 @@ function registerUser(name, email, password, rol) {
               <div class="d-flex align-items-center col-6">
                 <img src="./images/ojo-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Visualizar cambios</span>
               </div>
+              <div class="d-flex align-items-center col-6">
+                <img src="./images/coment-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Hacer comentarios</span>
+              </div>
             </div>
               `;
             break;
           default:
             break;
         }
+        console.log(modalPrivileges);
         $(".modal-privileges-container").html(modalPrivileges);
         $(".modal-newuser-bo").modal("show");
       } else {
+        $(".register-user-content").css({
+          backgorund: "white",
+          opacity: "1",
+          pointerEvents: "all",
+        });
         $(".loader").remove();
       }
     },
@@ -530,7 +538,7 @@ function updateDataUser(id, name, email, password, repassword, rolId) {
     url: "./adapters/user.php",
     beforeSend: function () {
       $(".edit-userbo-content")
-        .append(`<img src="./images/loader.gif" class="loader"/>`)
+        .prepend(`<img src="./images/loader.gif" class="loader"/>`)
         .css({
           backgorund: "white",
           opacity: "0.5",
@@ -549,7 +557,7 @@ function updateDataUser(id, name, email, password, repassword, rolId) {
       if (json.code == 200) {
         $(".modal-edit-username").text(json.data.name);
         let modalPrivileges = "";
-        console.log(typeof json.data.rol_id);
+
         switch (json.data.rol_id) {
           case 1:
             //ROOT
@@ -631,6 +639,9 @@ function updateDataUser(id, name, email, password, repassword, rolId) {
               <div class="d-flex align-items-center col-6">
                 <img src="./images/ojo-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Visualizar cambios</span>
               </div>
+              <div class="d-flex align-items-center col-6">
+                <img src="./images/coment-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Hacer comentarios</span>
+              </div>
             </div>
               `;
             break;
@@ -668,6 +679,10 @@ function getUserToUpdate(id) {
       if (json.code == 200) {
         $("#editar").replaceWith();
         $("#cambio").load("Editusers.php", function () {
+          $(".input-password").keyup(function () {
+            validateKeyUpPassword($(this), $(".caracteres-min"));
+          });
+
           $("#edit-input-username").val(json.data.name);
           $("#edit-input-email").val(json.data.email);
           switch (json.data.rol.id) {

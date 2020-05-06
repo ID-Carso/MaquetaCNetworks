@@ -73,9 +73,9 @@ class User
         echo "200";
     }
 
-    function registerUser($name, $email, $password, $rol, $adminId)
+    function registerUser($name, $email, $rol, $adminId)
     {
-        $dataUser = array("name" => $name, "email" => $email, "password" => $password, "rol_id" => $rol, "admin_user_id" => $adminId);
+        $dataUser = array("name" => $name, "email" => $email, "rol_id" => $rol, "admin_user_id" => $adminId);
         $dataUserJson = json_encode($dataUser);
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/admin_user");
@@ -221,11 +221,10 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
         case 'registerUser':
             $name = $_POST['name'];
             $email = $_POST['email'];
-            $password = $_POST['password'];
             $rol = $_POST['rol'];
             $adminId = $_SESSION['id'];
             $users = User::getUserInstance();
-            echo ($users->registerUser($name, $email, $password, $rol, $adminId));
+            echo ($users->registerUser($name, $email, $rol, $adminId));
             break;
 
         case 'getAllUsersBO':

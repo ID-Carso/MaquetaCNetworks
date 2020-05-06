@@ -28,18 +28,22 @@ session_start();
           <form>
             <input class="insert-data input-username texto-general pt-2 mb-2" id="name-user-bo" type="text" placeholder=" Nombre del usuario"></input>
             <input class="insert-data input-email texto-general pt-2 " type="text" id="email-user-bo" placeholder=" Correo "></input>
-            <p class="correo-valido mt-1 mb-0 ml-2" id="error_email">
-              Correo válido
-              <img src="./images/registro/alerta.svg" class="error" />
-            </p>
-            <div class="pt-0 mt-0">
+            <div class="d-flex align-items-center mt-2">
+              <p class="correo-valido mt-0 mb-0 ml-2" id="error_email">
+                Correo válido
+
+              </p>
+              <img src="http://www.claronetworks.openofficedospuntocero.info/images/registro/alerta.svg" class="error ml-2" />
+            </div>
+
+
+            <!--<div class="pt-0 mt-0">
               <input class="insert-data input-password texto-general pt-2 mt-0 " type="password" id="password-user-bo" name="login-password" placeholder=" Contraseña" autocomplete="off" />
-              <!--<img src="../images/registro/eye-none.svg" class="icon-eye3" />-->
               <p class="caracteres-min mt-1 ml-2">
                 8 caractéres mínimo
                 <img src="./images/registro/listo.svg" class="listo" />
               </p>
-            </div>
+            </div>-->
             <div class=" justify-content-center mx-auto ">
               <!--Sección de roles-->
               <p class="p-4 mb-4 mt-4  border-rol texto-general ">Rol
@@ -110,7 +114,7 @@ session_start();
                 <div class="col-xl-4">
                   <img src="./images/recha-naranja.svg" alt="" class="img-tam"> <span> Rechazar cambios </span>
                 </div>
-                <div class="col-xl-4"> 
+                <div class="col-xl-4">
                   <img src="./images/apro-naranja.svg" alt="" class="img-tam"> <span> Aprobar cambios</span>
                 </div>
               </div>

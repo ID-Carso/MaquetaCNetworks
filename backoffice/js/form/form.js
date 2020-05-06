@@ -22,7 +22,7 @@ function validateEmail(inputEmail, messageError) {
     messageError
       .css("color", "red")
       .text("El correo electrónico no tiene un formato válido");
-    console.log("error");
+
     return false;
   } else {
     return true;
@@ -36,17 +36,24 @@ function validateKeyUpEmail(
   emailWarning
 ) {
   let email = inputEmail.val();
-  console.log(filter.test(email));
+
   if (!filter.test(email)) {
     inputEmail.css("border-bottom", "1px solid red");
     emailWarning.text("Correo válido").css("color", "red");
-    /*imageError.css("display", "inline-block");
-    imageError.attr("src", "../images/registro/alerta.svg");*/
+
+    $(".error").css("display", "block");
+    $(".error").attr(
+      "src",
+      "http://www.claronetworks.openofficedospuntocero.info/images/registro/alerta.svg"
+    );
   } else if (filter.test(email)) {
     inputEmail.css("border-bottom", "1px solid green");
     emailWarning.text("Correo válido").css("color", "green");
-    /*imageError.css("display", "inline-block");
-    imageError.attr("src", "../images/registro/listo.svg");*/
+    $(".error").css("display", "block");
+    $(".error").attr(
+      "src",
+      "http://www.claronetworks.openofficedospuntocero.info/images/registro/listo.svg"
+    );
   } else if (inputCorreo.val().length == 0) {
     //ImagenError.css("display", "none");
     emailWarning.css("color", "#666262");
@@ -77,7 +84,6 @@ function validateNewPassword(inputPassword, inputPasswordConfirm) {
     warningPasswordConfirm
       .addClass("invalid-email")
       .text("Las contraseñas deben de coincidir");
-    console.log("Sigo aquí");
 
     return false;
   } else {
@@ -88,13 +94,23 @@ function validateNewPassword(inputPassword, inputPasswordConfirm) {
 function validateKeyUpPassword(input, messageError) {
   let password = input.val();
   let numCharacters = password.length;
-
+  let listo = $(".listo");
   if (numCharacters < 8) {
     input.css("border-bottom", "solid 1px red");
     messageError.css("color", "red");
+    listo.css("display", "block");
+    listo.attr(
+      "src",
+      "http://www.claronetworks.openofficedospuntocero.info/images/registro/alerta.svg"
+    );
   } else {
     input.css("border-bottom", "solid 1px green");
     messageError.css("color", "green");
+    listo.css("display", "block");
+    listo.attr(
+      "src",
+      "http://www.claronetworks.openofficedospuntocero.info/images/registro/listo.svg"
+    );
   }
 }
 
@@ -131,7 +147,6 @@ function validateUser(inputUser, messageError) {
 }
 
 function validateToken(token) {
-  console.log(token);
   $.ajax({
     type: "POST",
     data: token,

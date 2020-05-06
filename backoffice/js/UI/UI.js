@@ -101,11 +101,11 @@ function createClickButtonRegisterUser() {
     let rol = $(".btn-rol-select").attr("id_rol");
     let email = $("#email-user-bo").val();
     let username = $("#name-user-bo").val();
-    let password = $("#password-user-bo").val();
+    //let password = $("#password-user-bo").val();
 
-    registerUser(username, email, password, rol);
+    registerUser(username, email, rol);
     validateEmail($(".input-email"), $(".correo-valido"));
-    validatePassword($(".input-password"), $(".caracteres-min"));
+    //validatePassword($(".input-password"), $(".caracteres-min"));
   });
 }
 
@@ -286,7 +286,7 @@ function changeNameRol(id) {
   let rol = "";
   switch (id) {
     case 1:
-      rol = "Administrador";
+      rol = "Super Usuario";
       break;
     case 2:
       rol = "Aprobador";
