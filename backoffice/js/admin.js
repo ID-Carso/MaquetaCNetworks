@@ -218,7 +218,7 @@ function textoFecha(fecha){
 }
 
 var fecha = new Date();  //Declaramos el objeto fecha actual
-document.write(textoFecha(fecha)); //Imprimir llamando a la función textoFecha()
+ //Imprimir llamando a la función textoFecha()
 
 $("#dia").carousel({wrap:false});
  $("#dia").carousel("pause");
