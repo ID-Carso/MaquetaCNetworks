@@ -133,7 +133,7 @@
 
         <h1 class="a-next-claro-title">próxima semana</h1>
         <h2 class="a-next-claro-subtitle">
-          Ve un <span>adelanto</span> de la programación de DFGHDFHG
+          Ve un <span>adelanto</span> de la programación
         </h2>
 
         <div class="week-claro-video-container">
