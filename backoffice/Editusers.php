@@ -21,10 +21,11 @@ session_start();
       <img src="./images/equis.svg" alt="" class="equis1 shadow closeViewBO">
       <form>
         <div class="col-xl-11 pt-5 pl-5">
-          <div class=" title-edit "><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
+
         </div>
         <div class="col-xl-11 mx-auto  ">
-          <input id="edit-input-username" class="insert-data texto-general pt-2" type="text " value="" placeholder="Nombre del usuario">
+          <div class="title-edit"><strong class="title-veruser a-text-bold-brownish"> DATOS DEL USUARIO</strong></div>
+          <input id="edit-input-username" class="insert-data texto-general" type="text " value="" placeholder="Nombre del usuario">
 
           </input>
           <input id="edit-input-email" class="insert-data input-email texto-general" type="text " value="" placeholder=" Correo "></input>
