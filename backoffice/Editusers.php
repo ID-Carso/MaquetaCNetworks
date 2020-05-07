@@ -178,17 +178,15 @@ session_start();
   <div class="modal show modal-edit-user" id="abrirsave" role="dialog">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content modal-regis-listo ">
-        <div class="modal-body ">
+        <div class="modal-body  ">
           <span class="a-text-medium  modal-regis-text modal-edit-username"></span>
-          <p class="modal-regis-text1 pt-4">Se ha registrado con los siguientes privilegios:</p>
-        </div>
-        <div class=" pb-4 align-item-center centro text-rol modal-edit-privileges-container">
+          <p class="modal-regis-text1 pt-4 mb-4">Se ha registrado con los siguientes privilegios:</p>
+          <div class="text-rol modal-body-edit-userbo">
 
-
-
+          </div>
         </div>
         <div class="text-center">
-          <button type="button" class="btn-si text-si mt-4" id="modal-button" data-dismiss="modal">ACEPTAR</button>
+          <button type="button" class="btn-si text-si" id="modal-button" data-dismiss="modal">ACEPTAR</button>
         </div>
       </div>
     </div>

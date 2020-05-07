@@ -187,7 +187,6 @@ $(document).ready(function () {
     }
   });
   //fin
- 
 
   //slider, c/flecha
   $(".slider li").hide();
@@ -203,31 +202,50 @@ function agregar() {
     ' <div class="contenedor-fila"><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div><div class="contenedor-columna"></div></div> ';
   $("#tb1").append(fila);
 }
-function textoFecha(fecha){
+function textoFecha(fecha) {
   let numDiaSem = fecha.getDay(); //getDay() devuelve el dia de la semana.(0-6).
-//Array para los nombres de los días    
-  let diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
-  let diaLetras = diasSemana[fecha.getDay()];   //El día de la semana en letras. getDay() devuelve el dia de la semana.(0-6).
-//Otro Array para los nombres de los meses    
- let  meses = new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
-  let mesLetras = meses[fecha.getMonth()];  //El mes en letras
- let  diaMes = (fecha.getDate());   //getDate() devuelve el dia(1-31).
- let  dianumero= diaLetras +" "+ diaMes;
-       $("#fecha1").text(dianumero);
-  
+  //Array para los nombres de los días
+  let diasSemana = new Array(
+    "Domingo",
+    "Lunes",
+    "Martes",
+    "Miércoles",
+    "Jueves",
+    "Viernes",
+    "Sábado"
+  );
+  let diaLetras = diasSemana[fecha.getDay()]; //El día de la semana en letras. getDay() devuelve el dia de la semana.(0-6).
+  //Otro Array para los nombres de los meses
+  let meses = new Array(
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Mayo",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre"
+  );
+  let mesLetras = meses[fecha.getMonth()]; //El mes en letras
+  let diaMes = fecha.getDate(); //getDate() devuelve el dia(1-31).
+  let dianumero = diaLetras + " " + diaMes;
+  $("#fecha1").text(dianumero);
 }
 
-var fecha = new Date();  //Declaramos el objeto fecha actual
-document.write(textoFecha(fecha)); //Imprimir llamando a la función textoFecha()
+var fecha = new Date(); //Declaramos el objeto fecha actual
+//document.write(textoFecha(fecha)); //Imprimir llamando a la función textoFecha()
 
-$("#dia").carousel({wrap:false});
- $("#dia").carousel("pause");
-     
-   // Enable Carousel Controls
-   $(".carousel-control-prev").click(function(){
-     $("#dia").carousel("prev");
-   
-   });
-   $(".carousel-control-next").click(function(){
-     $("#dia").carousel("next");
-    });
+$("#dia").carousel({ wrap: false });
+$("#dia").carousel("pause");
+
+// Enable Carousel Controls
+$(".carousel-control-prev").click(function () {
+  $("#dia").carousel("prev");
+});
+$(".carousel-control-next").click(function () {
+  $("#dia").carousel("next");
+});

@@ -168,12 +168,9 @@ session_start();
     <div class=" modal show modal-newuser-bo" id=" abrirListo" role="dialog">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content modal-regis-listo ">
-          <div class="modal-body ">
-            <span class="modal-regis-text modal-register-username"></span>
+          <div class="modal-body modal-body-register-userbo">
+            <span class="modal-regis-text  modal-register-username"></span>
             <p class="modal-regis-text1 mb-4 pt-4">Se ha registrado con los siguientes privilegios:</p>
-          </div>
-          <div class="mb-4 align-item-center text-rol modal-privileges-container">
-
           </div>
           <div class=" mb-4 text-center">
             <button type="button" class="btn-guardar" id="modal-button" data-dismiss="modal">ACEPTAR</button>

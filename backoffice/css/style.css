@@ -586,7 +586,7 @@
 }
 
 .modal-register-text {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .a-text-black-bold {
@@ -1467,7 +1467,7 @@
 
 .mujer-estilo {
   width: 59%;
-  height: 35px;
+  height: 41px;
   border-radius: 22px 0 0 21.5px;
   border: solid 1px #666464;
   border-right: #03ad50;
@@ -1625,13 +1625,13 @@
 
 .hombre-estilo {
   width: 60%;
-  height: 35px;
+  height: 41px;
   border-radius: 0 22px 22px 0;
   border: solid 1px #666464;
   border-left: #03ad50;
   cursor: pointer;
   overflow: hidden;
-  padding-top: 8px;
+  padding-top: 10px;
   margin-top: 9px;
   background: #ffffff;
   outline: none !important;
@@ -1881,6 +1881,10 @@
   opacity: 0.3;
   -webkit-transform: translate(0px, -40%);
   transform: translate(0px, -10%);
+}
+
+.modal-privilege-icon {
+  width: 40px;
 }
 
 @font-face {
@@ -2133,8 +2137,9 @@ input[type="radio"]:checked + .no-estilo1 {
 
 .women {
   width: 25px;
-  height: 25px;
+  height: 20px;
   margin-left: -9%;
+  padding-left: 11px;
 }
 
 .position-zona {
@@ -2147,8 +2152,6 @@ input[type="radio"]:checked + .no-estilo1 {
 .position-nav {
   display: inline-block;
   margin: auto;
-  -webkit-transform: translate(2%, 27%);
-          transform: translate(2%, 27%);
 }
 
 .position-title {
@@ -2384,10 +2387,6 @@ input[type="radio"]:checked + .no-estilo1 {
   margin-left: -8px;
 }
 
-.modal-privilege-icon {
-  width: 53px;
-}
-
 .pad-bott {
   padding-bottom: 40px;
 }
@@ -2469,6 +2468,12 @@ input[type="radio"]:checked + .no-estilo1 {
 
 .ml-12 {
   margin-left: 12%;
+}
+
+.calendario {
+  margin-left: 26%;
+  position: absolute;
+  margin-top: 11%;
 }
 
 @font-face {
@@ -3058,7 +3063,7 @@ input[type="radio"]:checked + .no-estilo1 {
 }
 
 .modal-register-text {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .a-text-black-bold {
@@ -4172,7 +4177,8 @@ aside {
 
 .sp:before {
   content: " | ";
-  padding: 0 10px;
+  margin-left: 4px;
+  font-size: 24px;
 }
 
 .indication:hover .overlay-edition {
