@@ -588,10 +588,10 @@
   border-right: $lemongreen;
   cursor: pointer;
   overflow: hidden;
-
+display: flex;
+align-items: center;
   background: $white;
   outline: none !important;
-  display: inline-block;
   margin-top: 9px;
   //a-text-sexo
 }
@@ -732,11 +732,12 @@
   border-left: $lemongreen;
   cursor: pointer;
   overflow: hidden;
-  padding-top: 10px;
+ display: flex;
+ align-items: center;
   margin-top: 9px;
   background: $white;
   outline: none !important;
-  display: inline-block;
+
   //a-text-sexo
 }
 
