@@ -117,6 +117,23 @@ function verhisto() {
 }
 
 $(document).ready(function () {
+  //Otro Array para los nombres de los meses
+  let meses = new Array(
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Mayo",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre"
+  );
+  let mesLetras = meses[fecha.getMonth()]; //El mes en letras
+  $(".progra-month").text(mesLetras);
   //resaltar boton de localidad-actual
   $(".buttonall").click(function () {
     $("button[id=btn-nav]").removeClass("btn-nav-select");
@@ -215,29 +232,14 @@ function textoFecha(fecha) {
     "Sábado"
   );
   let diaLetras = diasSemana[fecha.getDay()]; //El día de la semana en letras. getDay() devuelve el dia de la semana.(0-6).
-  //Otro Array para los nombres de los meses
-  let meses = new Array(
-    "Enero",
-    "Febrero",
-    "Marzo",
-    "Abril",
-    "Mayo",
-    "Junio",
-    "Julio",
-    "Agosto",
-    "Septiembre",
-    "Octubre",
-    "Noviembre",
-    "Diciembre"
-  );
-  let mesLetras = meses[fecha.getMonth()]; //El mes en letras
+
   let diaMes = fecha.getDate(); //getDate() devuelve el dia(1-31).
   let dianumero = diaLetras + " " + diaMes;
   $("#fecha1").text(dianumero);
 }
 
 var fecha = new Date(); //Declaramos el objeto fecha actual
-//document.write(textoFecha(fecha)); //Imprimir llamando a la función textoFecha()
+//Imprimir llamando a la función textoFecha()
 
 $("#dia").carousel({ wrap: false });
 $("#dia").carousel("pause");

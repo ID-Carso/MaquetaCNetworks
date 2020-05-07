@@ -38,12 +38,12 @@
                   <form action="" name="formilariosexo" id="formulariosexo" class="formulario">
                     <div class="sexo">
                       <input type="radio" name="sexo" id="mujer" checked />
-                      <label for="mujer" id="mujerestado" class="mujer-estilo">
+                      <label for="mujer" id="mujerestado" class="mujer-estilo d-flex align-items-center">
                         <img id="women" src="./images/datos-adicionales/femenino-activo.svg" class="women text-sexo" />
-                        Femenino</label>
+                        <span>Femenino</span></label>
                       <input type="radio" name="sexo" id="hombre" />
                       <label for="hombre" id="hombreestado" class="hombre-estilo text-sexo">
-                        Masculino
+                        <span>Masculino</span>
                         <img id="men" src="./images/datos-adicionales/masculino-inactivo.svg" class="men" /></label>
                     </div>
                   </form>
