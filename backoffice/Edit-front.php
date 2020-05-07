@@ -20,9 +20,9 @@
             <form>
               <input id="edit-front-input-username" class="insert-data texto-general mb-4 " type="text " value="" placeholder="" disabled></input>
               <input id="edit-front-input-email" class="insert-data texto-general input-email mb-4  " type="text " value="" placeholder="" disabled></input>
-              <input class="insert-data input-password texto-general" type="password" id="edit-user-front-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
+              <input class="insert-data input-password a-text-medium-brownish texto-general" type="password" id="edit-user-front-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
               <div class="d-flex align-items-center mb-2">
-                <p class="caracteres-min mt-1 mb-0">
+                <p class="a-text-medium-orange mt-1 mb-0" id="caracteres-min">
                   8 caractéres mínimo
                 </p>
 

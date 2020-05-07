@@ -16,9 +16,25 @@
   color: $repassgray;
   font-family: $MontserratRegular;
 }
+
+.a-text-medium-brownish {
+  font-family: $MontserratMedium;
+  color: $repassgray;
+}
+
 .a-text-semibold-lightbrown {
   font-family: $MontserratSemiBold;
   color: $lightbrown;
+}
+
+.a-text-regular-black {
+  font-family: $MontserratRegular;
+  color: black;
+}
+
+.a-text-medium-orange {
+  color: $pastelOrange;
+  font-family: $MontserratMedium;
 }
 
 /* END TEXT BASE*/
@@ -476,15 +492,7 @@
   font-size: 14px;
 }
 .title-veruser {
-  font-family: $MontserratBold;
-  background-color: $white;
-  color: $dark;
   font-size: 21px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
 }
 
 .modal-register-text {

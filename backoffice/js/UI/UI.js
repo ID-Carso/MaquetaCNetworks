@@ -104,7 +104,7 @@ function createClickButtonRegisterUser() {
     //let password = $("#password-user-bo").val();
 
     registerUser(username, email, rol);
-    validateEmail($(".input-email"), $(".correo-valido"));
+    validateEmail($(".input-email"), $(".warning-email-text"));
     //validatePassword($(".input-password"), $(".caracteres-min"));
   });
 }

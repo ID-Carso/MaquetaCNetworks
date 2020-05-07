@@ -20,37 +20,36 @@ session_start();
     <div class="col-xl-6 trans10 shadow mx-auto texto-general tamaño edit-userbo-content position-relative">
       <img src="./images/equis.svg" alt="" class="equis1 shadow closeViewBO">
       <form>
-        <div class="col-xl-11 pt-5 pl-5">
-
-        </div>
-        <div class="col-xl-11 mx-auto  ">
-          <div class="title-edit"><strong class="title-veruser a-text-bold-brownish"> DATOS DEL USUARIO</strong></div>
-          <input id="edit-input-username" class="insert-data texto-general" type="text " value="" placeholder="Nombre del usuario">
+        <div class="col-xl-11 mx-auto">
+          <div class="title-edit mb-2 pt-5">
+            <strong class="title-veruser a-text-bold-brownish "> DATOS DEL USUARIO</strong>
+          </div>
+          <input id="edit-input-username " class="insert-data a-text-medium-brownish mb-2" type="text " value="" placeholder="Nombre">
 
           </input>
-          <input id="edit-input-email" class="insert-data input-email texto-general" type="text " value="" placeholder=" Correo "></input>
-          <div class="d-flex align-items-center mt-2">
-            <p class="correo-valido mt-0 mb-0">
+          <input id="edit-input-email" class="insert-data input-email a-text-medium-brownish" type="text " value="" placeholder="Correo "></input>
+          <div class="d-flex align-items-center mt-2 mb-2">
+            <p class="a-text-medium-orange mt-0 mb-0 warning-email-text">
               Correo válido
             </p>
             <img src="http://www.claronetworks.openofficedospuntocero.info/images/registro/alerta.svg" class="error ml-2" />
           </div>
 
           <div class="pt-0 mt-1">
-            <input id="edit-input-password " class="insert-data texto-general input-password" type="password" id="login-password" name="login-password" placeholder=" Asignar nueva contraseña" autocomplete="off" />
-            <div class="d-flex align-items-center">
-              <p class="caracteres-min mt-1 mb-0">
+            <input id="edit-input-password " class="insert-data a-text-medium-brownish input-password" type="password" id="login-password" name="login-password" placeholder="Asignar nueva contraseña" autocomplete="off" />
+            <div class="d-flex align-items-center mb-2">
+              <p class="a-text-medium-orange mt-1 mb-0 warning-password-text">
                 8 caractéres mínimo
               </p>
 
               <img src="http://www.claronetworks.openofficedospuntocero.info/images/registro/listo.svg" class="listo ml-2 mt-1" />
             </div>
             <!---  <img src="../images/registro/eye-none.svg" class="icon-eye" />-->
-            <input id="edit-input-repassword" class="insert-data texto-general pt-2 " type="password" id="login-password" name="login-password" placeholder=" Confirmar nueva contraseña" autocomplete="off" />
+            <input id="edit-input-repassword" class="insert-data a-text-medium-brownish pt-2 mb-4" type="password" id="login-password" name="login-password" placeholder="Confirmar nueva contraseña" autocomplete="off" />
             <!--<img src="../images/registro/eye-none.svg" class="icon-eye3" />-->
           </div>
           <div class=" justify-content-center mx-auto">
-            <p class="pt-4 pb-4 pl-2 pr-2  mb-4 mt-4  border-rol texto-general">Rol
+            <p class="pt-4 pb-4 pl-2 pr-2  mb-4 mt-4  a-text-medium-brownish"><span>Rol</span>
               <div class="alineacion buttons-rol-container">
                 <button id="button-root" type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit enviamos ml-5" id_button="1" id_rol="1" rel='User-Raiz'>Usuario Raíz </button>
                 <button id="button-editor" type="button" class="btn-rol-all-edit btn-rol-all button-rol btn-rol-edit py-xl-2 ml-1 enviamos" rel='User-Edit' id_button="2" id_rol="3">Usuario Editor</button>
