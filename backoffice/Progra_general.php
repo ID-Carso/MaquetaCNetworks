@@ -36,25 +36,32 @@
         </div>
         
     </div>
-    <div class=" slidershow2 ali1 m-slider">
-        <ul class="slider2">
-        <li class="caption1 " style="display:block">
-      <p class="separacion flex-caption">MARTES 5</p>
-    </li>
-    <li class="caption">
-      <p></p>
-    </li>
-        </ul>
-        <div class="left">
-          <!--  <span><img src="./images/chevron-left-solid.svg" alt="" style="widht:1%"></span>-->
-        </div>
-        <div class="right">
-          <!--  <span><img src="./images/chevron-left-solid.svg" alt="" style="widht:1%"></span> -->
-        </div>
-        
-    </div>
-    </div>
+    <!--begin-->
+    <div id="dias" class="carousel slide ali1 m-slider">
   
+<!-- The slideshow -->
+<div class="carousel-inner">
+  <div class="carousel-item active">
+  <p class="separacion flex-caption" id="fecha1"></p>
+  </div>
+  <div class="carousel-item">
+  <p class="separacion flex-caption" > jueves 7</p>
+  </div>
+  
+</div>
+
+<!-- Left and right controls -->
+<a class="carousel-control-prev" href="#dias">
+  <span class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#dias">
+  <span class="carousel-control-next-icon"></span>
+</a>
+</div>
+</div>
+
+    <!--end-->
+    
    <div id="rempla">
     <div  id="tb1"class="contenedor-tabla  ml-5">
     <div class="contenedor-fila">

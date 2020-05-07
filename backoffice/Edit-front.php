@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Claro Networks</title>
   <script src="./js/admin.js" defer></script>
+  <?php include 'scripts.php';
+  include 'styles.php';
+  ?>
 </head>
 
 <body class="scroll">
@@ -15,24 +18,24 @@
       <div class="container shadow texto-general tamaño ">
         <img src="./images/equis.svg" alt="" class="equis2 shadow closeViewFront">
         <div class="bg-white ">
-          <div class=" ml-3 pt-5 pl-2"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
+          <div class=" ml-3 pt-5 "><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
           <div class=" col-xl-12 mx-auto mt-xl-1 ">
             <form>
-              <input id="edit-front-input-username" class="insert-data texto-general " type="text " value="" placeholder="" disabled></input>
-              <input id="edit-front-input-email" class="insert-data texto-general input-email  pt-2 pb-2 " type="text " value="" placeholder="" disabled></input>
+              <input id="edit-front-input-username" class="insert-data texto-general mb-4 " type="text " value="" placeholder="" disabled></input>
+              <input id="edit-front-input-email" class="insert-data texto-general input-email mb-4  " type="text " value="" placeholder="" disabled></input>
               <input class="insert-data input-password texto-general" type="password" id="edit-user-front-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center mb-2">
                 <p class="caracteres-min mt-1 mb-0">
                   8 caractéres mínimo
                 </p>
 
                 <img src="http://www.claronetworks.openofficedospuntocero.info/images/registro/listo.svg" class="listo ml-2 mt-1" />
               </div>
-              <div class="position-relative">
+              <div class="position-relative mb-4">
                 <input class="insert-data input-password" type="password" id="edit-user-front-repassword" name="login-password" placeholder=" Confirmar contraseña" autocomplete="off" />
               </div>
 
-              <div class=" navbar navbar-expand-sm  mx-auto mt-2 ">
+              <div class=" navbar navbar-expand-sm mb-4 mx-auto mt-2 ">
                 <div class="col-xl-4 margin-sex1 ">
                   <p class="margin-front texto-general">Sexo</p>
                   <form action="" name="formilariosexo" id="formulariosexo" class="formulario">
@@ -549,11 +552,11 @@
                 </div>
               </div>
 
-              <div class="navbar navbar-expand-sm justify-content-center mx-auto texto ml-xl-2 pb-4 ">
-                <button type="button" class=" btn-cancelar  ml-xl-2 ">
+              <div class="navbar navbar-expand-sm justify-content-center mx-auto texto ml-xl-2 pb-3 ">
+                <button type="button" class=" btn-cancelar mb-4  ml-xl-2 ">
                   Cancelar
                 </button>
-                <button type="button" class="btn-guardar btn-save-data-front   ml-xl-2 ">
+                <button type="button" class="btn-guardar mb-4 btn-save-data-front   ml-xl-2 ">
                   Guardar
                 </button>
               </div>

@@ -13,7 +13,7 @@
             <div class="container shadow tamaño ">
                 <img src="./images/equis.svg" alt="" class="equis2  shadow closeViewFront">
                 <div class="bg-white ">
-                    <div class=" ml-5 pt-5"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
+                    <div class="ml-3 pl-4 pt-5"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
                     <div class=" col-xl-11 mx-auto mt-2 pb-4 ">
 
                         <div>

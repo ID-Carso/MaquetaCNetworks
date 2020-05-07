@@ -191,27 +191,27 @@ function registerUser(name, email, rol) {
           case "1":
             //ROOT
             modalPrivileges = `
-            <div class="d-flex align-items-center pb-3 justify-content-between no-gutters">
+            <div class="d-flex align-items-center pb-3 justify-content-around no-gutters">
               <div class="d-flex align-items-center col-6">
                 <img src="./images/ojo-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Visualizar cambios</span>
               </div>
-              <div class="d-flex align-items-center ml-6 col-6">
+              <div class="d-flex align-items-center col-7">
                 <img src="./images/edit-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Editar</span>
               </div>
             </div>
-            <div class="d-flex align-items-center pb-3 justify-content-between no-gutters">
+            <div class="d-flex align-items-center pb-3 justify-content-around no-gutters">
               <div class="d-flex align-items-center col-6">
                 <img src="./images/recha-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Recahzar cambios</span>
               </div>
-              <div class="d-flex align-items-center ml-6 col-6">
+              <div class="d-flex align-items-center  col-7">
                 <img src="./images/admi-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Administrar usuario</span>
               </div>
             </div>
-            <div class="d-flex align-items-center justify-content-between pb-3 no-gutters">
+            <div class="d-flex align-items-center justify-content-around pb-3 no-gutters">
               <div class="d-flex align-items-center col-6">
                 <img src="./images/apro-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Aprobar cambios</span>
               </div>
-              <div class="d-flex align-items-center ml-6 col-6">
+              <div class="d-flex align-items-center col-7">
                 <img src="./images/coment-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Hacer comentarios</span>
               </div>
             </div>
@@ -220,23 +220,23 @@ function registerUser(name, email, rol) {
           case "2":
             //APROBADOR
             modalPrivileges = `
-            <div class="d-flex align-items-center pb-3 justify-content-between no-gutters">
+            <div class="d-flex align-items-center pb-3 justify-content-around no-gutters">
             <div class="d-flex align-items-center col-6">
               <img src="./images/ojo-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Visualizar cambios</span>
             </div>
-            <div class="d-flex align-items-center ml-6 col-6">
+            <div class="d-flex align-items-center  col-7">
               <img src="./images/edit-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Editar</span>
             </div>
           </div>
-          <div class="d-flex align-items-center justify-content-between pb-3 no-gutters">
+          <div class="d-flex align-items-center justify-content-around pb-3 no-gutters">
             <div class="d-flex align-items-center col-6">
               <img src="./images/apro-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Aprobar cambios</span>
             </div>
-            <div class="d-flex align-items-center ml-6 col-6">
+            <div class="d-flex align-items-center col-7">
               <img src="./images/coment-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Hacer comentarios</span>
             </div>
           </div>
-          <div class="d-flex align-items-center pb-3 justify-content-between no-gutters">
+          <div class="d-flex align-items-center pb-3 justify-content-around no-gutters">
             <div class="d-flex align-items-center col-6">
               <img src="./images/recha-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Recahzar cambios</span>
             </div>
@@ -246,15 +246,15 @@ function registerUser(name, email, rol) {
           case "3":
             //EDITOR
             modalPrivileges = `
-            <div class="d-flex align-items-center pb-3 justify-content-between no-gutters">
+            <div class="d-flex align-items-center pb-3 justify-content-around no-gutters">
             <div class="d-flex align-items-center col-6">
               <img src="./images/ojo-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Visualizar cambios</span>
             </div>
-            <div class="d-flex align-items-center ml-12 col-6">
+            <div class="d-flex align-items-center  col-7">
               <img src="./images/edit-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Editar</span>
             </div>
           </div>
-          <div class="d-flex align-items-center justify-content-between pb-3 no-gutters">
+          <div class="d-flex align-items-center justify-content-around pb-3 no-gutters">
             <div class="d-flex align-items-center col-6">
               <img src="./images/coment-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Hacer comentarios</span>
             </div>
@@ -264,11 +264,11 @@ function registerUser(name, email, rol) {
           case "4":
             //VISUALIZADOR
             modalPrivileges = `
-            <div class="d-flex align-items-center pb-3 justify-content-between no-gutters">
+            <div class="d-flex align-items-center pb-3 justify-content-around no-gutters">
               <div class="d-flex align-items-center col-6">
                 <img src="./images/ojo-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Visualizar cambios</span>
               </div>
-              <div class="d-flex align-items-center col-6">
+              <div class="d-flex align-items-center col-7">
                 <img src="./images/coment-naranja.svg" alt="" class="modal-privilege-icon pl-3 mr-3"><span class="modal-register-text">Hacer comentarios</span>
               </div>
             </div>
@@ -407,7 +407,7 @@ function getUser(id) {
             <div class="container shadow tamaño ">
                 <img src="./images/equis.svg" alt="" class="equis2 shadow closeViewBO">
                 <div class="w3-card-4 bg-white ">
-                    <div class="w3-container ml-3 pt-5 pl-4"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
+                    <div class="col-xl-12 pl-5 pt-5"><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
                     <div class=" col-xl-12 mx-auto mt-xl-3 mb-xl-2 pl-5 pr-5 ">
                         <form>
                             <div>
