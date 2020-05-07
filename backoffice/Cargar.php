@@ -94,8 +94,12 @@
         </div>        
     </div>
     <div class="contenedor-fila">
-        <div class="contenedor-columna centro"></div>
-        <div class="contenedor-columna centro"></div>
+        <div class="contenedor-columna centro">
+        <img src="./images/bin.svg"  class="mx-auto"alt="">
+        </div>
+        <div class="contenedor-columna centro">
+        <img src="./images/pendientes.svg" class="mx-auto" alt="">
+        </div>
         <div class="contenedor-columna centro"></div>
         <div class="contenedor-columna centro">
             <input type="radio" name="select" id="selecciona" style="display: inline-block;">

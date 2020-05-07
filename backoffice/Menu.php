@@ -26,7 +26,7 @@
         <label class="btn-zona zona">Zona horaria  <img src="./images/paises/chile.svg" class="Icon_paises1" /></label> 
         </div>
         <nav class=" col-xl-12 navbar-expand-sm mb-3 mt-2 position-nav">
-        <ul class="navbar-nav">
+        <ul class="d-flex justify-content-center navbar-nav">
       <li class="nav-item ">
         <button class="btn-menu-select menu">Canal Claro</button>  
         </li>
@@ -54,7 +54,7 @@
     <div class="float-right mr-5 ali">
         <span class="zona">Por :</span><label class="text-menu-selec separacion">Antonio López Pérez </label> <label class="text-menu-selec">Usuario editor</label>
     </div>
-    <div class=" float-right mt-2 ml-btn  mr-5 ">
+    <div class="d-flex float-right mt-2 ml-btn  mr-5 ">
     <label class="btn-grilla  pt-2 text-grilla mr-3">Grilla</label> 
         <label class="btn-landing  pt-2 text-landing ">Landing</label>
     </div>

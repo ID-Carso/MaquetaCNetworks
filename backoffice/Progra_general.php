@@ -16,7 +16,7 @@
     include 'Menu.php';
     ?>
     <div class=" float-left ml-5 mt-3 mb-5 ali" >
-        <label class="btn-cargar centro pt-2 mb-4 mr-4"id="file" onClick="Verarchi()"><span class="text-crea">Cargar archivos</span></label>  
+        <label class="btn-cargar centro pt-2 mb-4 mr-4"id="file" onClick="Verarchi()"><span class="text-crea"><img src="./images/clip.svg" alt="" class="ml-1 mr-1">Cargar archivos</span></label>  
     </div>
     <div class="ml-3 p1 ">
     <div class=" slidershow ali1">
@@ -59,7 +59,9 @@
 </a>
 </div>
 </div>
-
+<div class=" d-flex ml-3 calendario ">
+  <img src="./images/calendario.svg"class="" alt="">
+    </div>
     <!--end-->
     
    <div id="rempla">
