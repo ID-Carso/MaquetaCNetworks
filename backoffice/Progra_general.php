@@ -17,8 +17,8 @@
         <?php
         include 'Menu.php';
         ?>
-        <div class=" float-left ml-5 mt-3 mb-5 ali">
-            <label class="btn-cargar centro pt-2 mb-4 mr-4" id="file" onClick="Verarchi()"><span class="text-crea"><img src="./images/clip.svg" alt="" class="ml-1 mr-1">Cargar archivos</span></label>
+        <div class=" float-left ml-5  mb-5 ">
+            <label class="btn-cargar centro pt-2 mr-4" id="file" onClick="Verarchi()"><span class="text-crea"><img src="./images/clip.svg" alt="" class="ml-1 mr-1">Cargar archivos</span></label>
         </div>
         <div class="ml-3 p1 ">
             <div class=" slidershow ali1">
@@ -44,7 +44,7 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <p class="separacion flex-caption" id="fecha1"></p>
+                        <p class="separacion flex-caption day" ></p>
                     </div>
                     <div class="carousel-item">
                         <p class="separacion flex-caption"> jueves 7</p>
@@ -61,7 +61,7 @@
                 </a>
             </div>
         </div>
-        <div class=" d-flex ml-3 calendario ">
+        <div class=" d-flex calendario ">
             <img src="./images/calendario.svg" class="" alt="">
         </div>
         <!--end-->

@@ -45,6 +45,9 @@
   width: 181px;
   height: 46px;
   border-radius: 7px;
+  align-items: center;
+    display: flex;
+    justify-content: center;
   background-color: $teal;
   outline: none !important;
   outline-width: 0 !important;
@@ -63,6 +66,9 @@
 .btn-landing {
   width: 181px;
   height: 46px;
+  align-items: center;
+    display: flex;
+    justify-content: center;
   border-radius: 7px;
   background-color: $white;
   outline: none !important;

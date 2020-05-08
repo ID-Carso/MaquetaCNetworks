@@ -60,23 +60,24 @@
 }
 
 .position-zona {
-  display: flex;
-  margin-top: -38px;
+  margin-bottom: 35px;
+  transform: translateY(-55px);
 }
 .position-nav {
-  display: inline-block;
   margin: auto;
+  margin-bottom: -15px;
+  transform: translateY(-55px);
 }
 .position-title {
-  margin-bottom: 31px;
-  margin-top: -35px;
-}
+  margin-bottom: 51px;
+  margin-top: -31px;
+} 
 
 .ml3 {
   margin-left: -3%;
 }
 .ali {
-  margin-top: -3%;
+  margin-top: -2%;
 }
 .ali1 {
   margin-top: 8%;
@@ -298,7 +299,7 @@
 }
 .p1 {
   position: absolute;
-  margin-top: 10%;
+  margin-top: 8%;
 }
 .posilan {
   margin-bottom: -14%;
@@ -328,8 +329,4 @@
 .ml-12 {
   margin-left: 12%;
 }
-.calendario {
-  margin-left: 26%;
-  position: absolute;
-  margin-top: 11%;
-}
+

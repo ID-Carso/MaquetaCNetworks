@@ -730,7 +730,6 @@
 }
 
 .title-table {
-  opacity: 0.27;
   background-color: #434242;
 }
 
@@ -852,6 +851,15 @@
   width: 181px;
   height: 46px;
   border-radius: 7px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #0097a9;
   outline: none !important;
   outline-width: 0 !important;
@@ -869,6 +877,15 @@
 .btn-landing {
   width: 181px;
   height: 46px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 7px;
   background-color: #ffffff;
   outline: none !important;
@@ -1915,6 +1932,12 @@
   padding-left: 7px;
 }
 
+.calendario {
+  margin-left: 18%;
+  position: absolute;
+  margin-top: 8.5%;
+}
+
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
@@ -2164,20 +2187,21 @@ input[type="radio"]:checked + .no-estilo1 {
 }
 
 .position-zona {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: -38px;
+  margin-bottom: 35px;
+  -webkit-transform: translateY(-55px);
+          transform: translateY(-55px);
 }
 
 .position-nav {
-  display: inline-block;
   margin: auto;
+  margin-bottom: -15px;
+  -webkit-transform: translateY(-55px);
+          transform: translateY(-55px);
 }
 
 .position-title {
-  margin-bottom: 31px;
-  margin-top: -35px;
+  margin-bottom: 51px;
+  margin-top: -31px;
 }
 
 .ml3 {
@@ -2185,7 +2209,7 @@ input[type="radio"]:checked + .no-estilo1 {
 }
 
 .ali {
-  margin-top: -3%;
+  margin-top: -2%;
 }
 
 .ali1 {
@@ -2443,7 +2467,7 @@ input[type="radio"]:checked + .no-estilo1 {
 
 .p1 {
   position: absolute;
-  margin-top: 10%;
+  margin-top: 8%;
 }
 
 .posilan {
@@ -2482,12 +2506,6 @@ input[type="radio"]:checked + .no-estilo1 {
 
 .ml-12 {
   margin-left: 12%;
-}
-
-.calendario {
-  margin-left: 26%;
-  position: absolute;
-  margin-top: 11%;
 }
 
 @font-face {
@@ -3221,7 +3239,6 @@ input[type="radio"]:checked + .no-estilo1 {
 }
 
 .title-table {
-  opacity: 0.27;
   background-color: #434242;
 }
 
@@ -3847,7 +3864,7 @@ ul {
   width: 500%;
   height: 63px;
   white-space: nowrap;
-  margin-top: 17%;
+  margin-top: 13.5%;
   line-height: 4;
 }
 
