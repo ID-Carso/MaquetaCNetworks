@@ -416,7 +416,7 @@
   height: 45px;
   border-radius: 7px;
   background-color: $selecred;
-  border: 1 px solid $selecred;
+  border: 1px solid $selecred;
   outline: none !important;
   outline-width: 0 !important;
   box-shadow: none;
@@ -448,6 +448,7 @@
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
+  pointer-events: none;
   //.a-text-menu-select
 }
 .btn-nav {

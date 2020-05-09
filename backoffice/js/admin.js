@@ -237,13 +237,13 @@ function agregar() {
 }
 var fecha = new Date(); //Declaramos el objeto fecha actual
 
-$("#dia").carousel({ wrap: false });
-$("#dia").carousel("pause");
+$("#option").carousel({ wrap: false });
+$("#option").carousel("pause");
 
 // Enable Carousel Controls
-$(".carousel-control-prev").click(function () {
-  $("#dia").carousel("prev");
+$(".arrow-right").click(function () {
+  $("#option").carousel("prev");
 });
-$(".carousel-control-next").click(function () {
-  $("#dia").carousel("next");
+$(".arrow-left").click(function () {
+  $("#option").carousel("next");
 });

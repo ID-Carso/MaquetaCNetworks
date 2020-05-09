@@ -23,7 +23,7 @@
         <span class="text-titulo-rojo">1ERO DE OCTUBRE-1ERO DE NOVIEMBRE</span>
         </div>
         <div class=" mr-5 d-flex float-right position-zona">
-        <label class="btn-zona zona">Zona horaria  <img src="./images/paises/chile.svg" class="Icon_paises1" /></label> 
+        <button class="btn-zona zona">Zona horaria  <img src="./images/paises/chile.svg" class="Icon_paises1" /></button> 
         </div>
         <nav class="d-flex col-xl-12 navbar-expand-sm justify-content-center position-nav">
         <ul class="d-flex justify-content-center navbar-nav">
@@ -55,8 +55,8 @@
         <span class="zona">Por :</span><label class="text-menu-selec separacion"><span> Antonio López Pérez</span> </label> <label class="text-menu-selec">Usuario editor</label>
     </div>
     <div class="d-flex float-right mt-2 ml-btn  mr-5 ">
-    <label class="btn-grilla  text-grilla mr-3"><span>Grilla</span></label> 
-        <label class="btn-landing  text-landing "><span>Landing</span></label>
+    <button class="btn-grilla  text-grilla mr-3"><span>Grilla</span></button> 
+        <button class="btn-landing  text-landing "><span>Landing</span></button>
     </div>
     </main>
 </body>
