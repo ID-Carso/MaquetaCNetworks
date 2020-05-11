@@ -17,25 +17,23 @@
         <?php
         include 'Menu.php';
         ?>
-        <div class=" float-left ml-5  mb-5 ">
-            <button class="btn-cargar centro pt-2 mr-4" id="file" onClick="Verarchi()"><span class="text-crea"><img src="./images/clip.svg" alt="" class="ml-1 mr-1">Cargar archivos</span></button>
+        <div class=" float-left ml-5  mb-5 mt-4 ">
+            <button class="btn-cargar centro mr-4" id="file" onClick="Verarchi()"><span class="text-crea"><img src="./images/clip.svg" alt="" class="ml-1 mr-1">Cargar archivos</span></button>
         </div>
-        <div class="ml-3 p1 ">
-            <div class=" slidershow ali1">
-                <ul class="slider">
-                    <li class="caption">
-                        <p class="separacion flex-caption progra-month"></p>
-                    </li>
-                    <li class="caption">
-                        <p>NOVIEMBRE</p>
-                    </li>
-                </ul>
-                <div class="left">
-                    <!--  <span><img src="./images/chevron-left-solid.svg" alt="" style="widht:1%"></span>-->
+        <div class=" d-flex ml-5 pl-2 p1 ">
+            <div id="meses" class="carousel slide ali1" >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p class=" separacion1 flex-caption ml-5 progra-month"></p>   
+                     </div>
+                   
                 </div>
-                <div class="right">
-                    <!--  <span><img src="./images/chevron-left-solid.svg" alt="" style="widht:1%"></span> -->
-                </div>
+                <a class="carousel-control-prev" href="#meses">
+                <img src="./images/arrow-light.svg" alt="" class="mr-4 arrow-r180 arrow-left">
+                </a>
+                <a class="carousel-control-next" href="#meses">
+                <img src="./images/arrow-dark.svg" alt="" class="pr-5 arrow-right">
+                </a>
 
             </div>
             <!--begin-->
@@ -44,20 +42,16 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <p class="separacion flex-caption day" ></p>
+                        <p class="separacion1 flex-caption ml-4 day" ></p>
                     </div>
-                    <div class="carousel-item">
-                        <p class="separacion flex-caption"> jueves 7</p>
-                    </div>
-
                 </div>
 
                 <!-- Left and right controls -->
                 <a class="carousel-control-prev" href="#dias">
-                    <span class="carousel-control-prev-icon"></span>
+                <img src="./images/arrow-light.svg" alt="" class=" mr-5 pl-3 arrow-r180 arrow-left">
                 </a>
                 <a class="carousel-control-next" href="#dias">
-                    <span class="carousel-control-next-icon"></span>
+                <img src="./images/arrow-dark.svg" alt="" class="mr-5 arrow-right">
                 </a>
             </div>
         </div>
