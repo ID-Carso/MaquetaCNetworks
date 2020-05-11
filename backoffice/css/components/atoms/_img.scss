@@ -189,7 +189,18 @@
   width: 87px;
 }
 .calendario {
-  margin-left: 18%;
+  margin-left: 29%;
   position: absolute;
-  margin-top: 8.5%;
+  margin-top: 9.5%;
+}
+.arrow-180 {
+  transform: rotate(181deg);
+  margin-top: -64%;
+}
+.arrow-top {
+  margin-top: -24%;
+}
+
+.arrow-r180 {
+  transform: rotate(181deg);
 }

@@ -76,6 +76,11 @@
   font-family: "Montserrat-Bold";
 }
 
+.a-text-regular-brownishtwo {
+  color: #655f5f;
+  font-family: "Montserrat-Regular";
+}
+
 .a-text-regular-brownish {
   color: #696363;
   font-family: "Montserrat-Regular";
@@ -1992,9 +1997,24 @@
 }
 
 .calendario {
-  margin-left: 18%;
+  margin-left: 29%;
   position: absolute;
-  margin-top: 8.5%;
+  margin-top: 9.5%;
+}
+
+.arrow-180 {
+  -webkit-transform: rotate(181deg);
+          transform: rotate(181deg);
+  margin-top: -64%;
+}
+
+.arrow-top {
+  margin-top: -24%;
+}
+
+.arrow-r180 {
+  -webkit-transform: rotate(181deg);
+          transform: rotate(181deg);
 }
 
 @font-face {
@@ -2178,6 +2198,11 @@ input[type="radio"]:checked + .no-estilo1 {
   padding: 0 10px;
 }
 
+.separacion1:after {
+  content: " | ";
+  padding-left: 70px;
+}
+
 .cuadro-dia {
   width: 100%;
   height: 50px;
@@ -2289,7 +2314,7 @@ input[type="radio"]:checked + .no-estilo1 {
 }
 
 .m-slider {
-  margin-left: 170px;
+  margin-left: 50px;
 }
 
 .pd-5 {
@@ -2564,16 +2589,6 @@ input[type="radio"]:checked + .no-estilo1 {
   margin-left: 12%;
 }
 
-.arrow-180 {
-  -webkit-transform: rotate(181deg);
-          transform: rotate(181deg);
-  margin-top: -64%;
-}
-
-.arrow-top {
-  margin-top: -24%;
-}
-
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
@@ -2649,6 +2664,11 @@ input[type="radio"]:checked + .no-estilo1 {
 .a-text-bold-brownish {
   color: #696363;
   font-family: "Montserrat-Bold";
+}
+
+.a-text-regular-brownishtwo {
+  color: #655f5f;
+  font-family: "Montserrat-Regular";
 }
 
 .a-text-regular-brownish {
