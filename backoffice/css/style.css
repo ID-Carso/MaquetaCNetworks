@@ -1929,6 +1929,24 @@
   width: 27px;
 }
 
+.visualize-icon,
+.edit-icon {
+  width: 27px;
+}
+
+.reject-icon,
+.aprove-orange-icon {
+  width: 24px;
+}
+
+.manage-user-icon {
+  width: 28px;
+}
+
+.commentary-icon {
+  width: 25px;
+}
+
 .tam {
   width: 31px;
   height: 33px;
@@ -3496,7 +3514,7 @@ input[type="radio"]:checked + .no-estilo1 {
   border-radius: 2px;
   background-color: #ffffff;
   padding: 29px;
-  margin-left: 11%;
+  margin: auto;
 }
 
 .mod {

@@ -73,7 +73,6 @@ session_start();
                         <span>Visualizar<br> cambios </span>
                       </div>
                     </div>
-
                   </div>
 
                   <div class="col-xl-4 d-flex align-items-center">
@@ -85,8 +84,8 @@ session_start();
                         <span>Hacer<br> comentarios</span>
                       </div>
                     </div>
-
                   </div>
+
                   <div class="col-xl-4 d-flex align-items-center">
                     <div class="no-gutters d-flex w-100">
                       <div class="col-6 d-flex align-items-center justify-content-center">

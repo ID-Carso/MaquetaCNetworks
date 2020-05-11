@@ -47,10 +47,10 @@ session_start();
               <div class="d-flex align-items-center w-100">
                 <span class="mr-2">Rol</span>
                 <div class="alineacion buttons-rol-container">
-                  <button id="button-visualizador" type="button" class="btn-rol-select a-text-medium-brownish button-rol bt-rol-register btn-rol-all btn-rol ml-2 enviamos" rel='User-Visua' id_button="4" id_rol="4">Usuario<br> Visualizador</button>
-                  <button id="button-editor" type="button" class="a-text-medium-brownish button-rol bt-rol-register btn-rol-all btn-rol ml-2 enviamos" rel='User-Edit' id_button="2" id_rol="3">Usuario<br> Editor</button>
-                  <button id="button-aprobador" type="button" class="a-text-medium-brownish button-rol bt-rol-register btn-rol-all btn-rol  ml-2 enviamos" rel='User-Apro' id_button="3" id_rol="2">Usuario<br> Aprobador</button>
-                  <button id="button-root" type="button" class="a-text-medium-brownish btn-rol button-rol enviamos ml-2" id_button="1" id_rol="1" rel='User-Raiz'>Usuario<br> Raíz </button>
+                  <button id="button-visualizador" type="button" class="btn-rol-select a-text-medium-brownish button-rol btn-rol ml-2" rel='User-Visua' id_button="4" id_rol="4">Usuario<br> Visualizador</button>
+                  <button id="button-editor" type="button" class="a-text-medium-brownish button-rol btn-rol ml-2" rel='User-Edit' id_button=" 2" id_rol="3">Usuario<br> Editor</button>
+                  <button id="button-aprobador" type="button" class="a-text-medium-brownish button-rol btn-rol  ml-2" rel='User-Apro' id_button="3" id_rol="2">Usuario<br> Aprobador</button>
+                  <button id="button-root" type="button" class="a-text-medium-brownish btn-rol button-rol ml-2" id_button="1" id_rol="1" rel='User-Raiz'>Usuario<br> Raíz </button>
                 </div>
               </div>
 
@@ -370,13 +370,16 @@ session_start();
     <!--modal regis-->
     <div class=" modal show modal-newuser-bo" id=" abrirListo" role="dialog">
       <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content modal-regis-listo ">
-          <div class="modal-body modal-body-register-userbo">
-            <span class="modal-regis-text  modal-register-username"></span>
-            <p class="modal-regis-text1 mb-4 pt-4">Se ha registrado con los siguientes privilegios:</p>
+        <div class="modal-content modal-regis-listo p-5">
+          <div class="modal-body modal-body-register-userbo p-0">
+            <h3 class="h3 a-text-bold-brownish modal-register-username mb-0 pb-4"></h3>
+            <p class="a-text-medium-brownish mb-4">Ha sido registrado como <span class="a-text-bold-brownish user-rol"></span> ahora puede:</p>
+            <div class="modal-user-privileges">
+
+            </div>
           </div>
           <div class=" mb-4 text-center">
-            <button type="button" class="btn-guardar" id="modal-button" data-dismiss="modal">ACEPTAR</button>
+            <button type="button" class="a-button-pill-teal-primary a-button-pill-fixed" id="modal-button" data-dismiss="modal"><span class="a-text-bold-white">ACEPTAR</span></button>
           </div>
         </div>
       </div>
@@ -385,5 +388,6 @@ session_start();
   </div>
 
 </body>
+
 
 </html>
