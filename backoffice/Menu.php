@@ -22,10 +22,10 @@
         <span class="text-titulo">PROGRAMACIÓN GENERAL <br> DEL </span>
         <span class="text-titulo-rojo">1ERO DE OCTUBRE-1ERO DE NOVIEMBRE</span>
         </div>
-        <div class=" mr-5 mb-2 float-right position-zona">
-        <label class="btn-zona zona">Zona horaria  <img src="./images/paises/chile.svg" class="Icon_paises1" /></label> 
+        <div class=" mr-5 d-flex float-right position-zona">
+        <button class="btn-zona zona">Zona horaria  <img src="./images/paises/chile.svg" class="Icon_paises1" /></button> 
         </div>
-        <nav class=" col-xl-12 navbar-expand-sm mb-3 mt-2 position-nav">
+        <nav class="d-flex col-xl-12 navbar-expand-sm justify-content-center position-nav">
         <ul class="d-flex justify-content-center navbar-nav">
       <li class="nav-item ">
         <button class="btn-menu-select menu">Canal Claro</button>  
@@ -47,16 +47,16 @@
          </li>
     </ul>
 </nav>
-      <div class="mt-4 ml-5"> <span class="zona">Última edición :</span>
+      <div class=" ml-5"> <span class="zona">Última edición :</span>
       <label class=" text-menu-selec separacion"> septiembre 17 2019 </label>
       <label class="text-menu-selec">18:33:25</label>
     </div>
-    <div class="float-right mr-5 ali">
-        <span class="zona">Por :</span><label class="text-menu-selec separacion">Antonio López Pérez </label> <label class="text-menu-selec">Usuario editor</label>
+    <div class="float-right mb-2 mr-5 ali">
+        <span class="zona">Por :</span><label class="text-menu-selec separacion"><span> Antonio López Pérez</span> </label> <label class="text-menu-selec">Usuario editor</label>
     </div>
     <div class="d-flex float-right mt-2 ml-btn  mr-5 ">
-    <label class="btn-grilla  pt-2 text-grilla mr-3">Grilla</label> 
-        <label class="btn-landing  pt-2 text-landing ">Landing</label>
+    <button class="btn-grilla  text-grilla mr-3"><span>Grilla</span></button> 
+        <button class="btn-landing  text-landing "><span>Landing</span></button>
     </div>
     </main>
 </body>

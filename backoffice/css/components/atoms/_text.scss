@@ -7,7 +7,7 @@
   font-size: 24px;
 }
 
-.text-base {
+.text-normal {
   font-size: 16px;
 }
 
@@ -336,6 +336,10 @@
   text-align: center;
   //titulo-light
 }
+.txtmenu {
+  width: 178px;
+  height: 45px;
+}
 .text-sucess {
   font-family: $MontserratMedium;
   color: $white;
@@ -644,7 +648,6 @@
   background-color: $darkred;
 }
 .title-table {
-  opacity: 0.27;
   background-color: $dark2;
 }
 

@@ -17,7 +17,7 @@
     <main>
       
    <div id="carga">
-    <div  id="tb1"class="contenedor-tabla  ml-5">
+    <div  id="tb1"class="contenedor-tabla  ml-5 pr-5">
     <div class="contenedor-fila">
         <div class="contenedor-columna centro title-table">
             <span class="text-public"> Entrada</span>
@@ -98,7 +98,8 @@
         <img src="./images/bin.svg"  class="mx-auto"alt="">
         </div>
         <div class="contenedor-columna centro">
-        <img src="./images/pendientes.svg" class="mx-auto" alt="">
+        <img src="./images/pendientes.svg" class="mx-auto" alt=""><br>
+        <span class="program-original"> Pendiente de revisión </span>
         </div>
         <div class="contenedor-columna centro"></div>
         <div class="contenedor-columna centro">
@@ -229,7 +230,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         </div>
     </div>
 </div>
-<div class="contenedor mb-5 ml-5">
+<div class="contenedor mb-5 ml-5 pr-5">
 <div class="contenedor-columna centro">
         <div id="agregar" class="btn-crear centro ml-2"><span class="signo"><p class="text-crea pd-10">Crear nueva entrada</p></span></div>
     </div>

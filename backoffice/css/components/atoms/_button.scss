@@ -88,6 +88,9 @@
   width: 181px;
   height: 46px;
   border-radius: 7px;
+  align-items: center;
+    display: flex;
+    justify-content: center;
   background-color: $teal;
   outline: none !important;
   outline-width: 0 !important;
@@ -106,6 +109,9 @@
 .btn-landing {
   width: 181px;
   height: 46px;
+  align-items: center;
+    display: flex;
+    justify-content: center;
   border-radius: 7px;
   background-color: $white;
   outline: none !important;
@@ -434,7 +440,7 @@
   height: 45px;
   border-radius: 7px;
   background-color: $selecred;
-  border: 1 px solid $selecred;
+  border: 1px solid $selecred;
   outline: none !important;
   outline-width: 0 !important;
   box-shadow: none;
@@ -466,6 +472,7 @@
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
+  pointer-events: none;
   //.a-text-menu-select
 }
 .btn-nav {
