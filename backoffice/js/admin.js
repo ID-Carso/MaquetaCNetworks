@@ -142,6 +142,7 @@ $(document).ready(function () {
     $(this).addClass("btn-nav-select");
   });
   $(".btn-rol-all").click(function () {
+    console.log("pojpoj");
     $("button[id=btn-rol]").removeClass("btn-rol-select");
     $(this).addClass("btn-rol");
     $("button[id=btn-rol]").removeClass("btn-rol");

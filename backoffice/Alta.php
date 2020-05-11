@@ -21,15 +21,15 @@ session_start();
       <div class="col-xl-6 trans10 mx-auto title-altauser tamaño-alta1 ">
         <!--Inicio para tarjeta-->
         <img src="./images/equis.svg" alt="" class="equis shadow closeViewBO" />
-        <div class="pr-4 pl-4 pt-2 pb-2"><strong> DATOS DEL USUARIO</strong></div>
+        <div class="pr-4 pl-4 pt-2 pb-2"><strong class=""> DATOS DEL USUARIO</strong></div>
       </div>
       <div class="col-xl-6 trans10 shadow mx-auto tamaño-alta">
-        <div class="col-xl-12 mx-auto p-3 ">
+        <div class="col-xl-12 mx-auto px-3 pt-3">
           <form>
-            <input class="insert-data input-username texto-general pt-2 mb-2" id="name-user-bo" type="text" placeholder=" Nombre del usuario"></input>
-            <input class="insert-data input-email texto-general pt-2 " type="text" id="email-user-bo" placeholder=" Correo "></input>
+            <input class="insert-data input-username a-text-medium-brownish pt-2 mb-2" id="name-user-bo" type="text" placeholder="Nombre del usuario"></input>
+            <input class="insert-data input-email a-text-medium-brownish pt-2 " type="text" id="email-user-bo" placeholder="Correo"></input>
             <div class="d-flex align-items-center mt-2">
-              <p class="correo-valido mt-0 mb-0" id="error_email">
+              <p class="a-text-medium-orange mt-0 mb-0" id="error_email">
                 Correo válido
               </p>
               <img src="http://www.claronetworks.openofficedospuntocero.info/images/registro/alerta.svg" class="error ml-2" />
@@ -43,117 +43,320 @@ session_start();
                 <img src="./images/registro/listo.svg" class="listo" />
               </p>
             </div>-->
-            <div class=" justify-content-center mx-auto ">
-              <!--Sección de roles-->
-              <p class="p-4 mb-4 mt-4  border-rol texto-general ">Rol
-                <!--recuadro rol-->
-                <div class="alineacion">
-                  <button type="button" class="button-rol bt-rol-register btn-rol-all  btn-rol px-xl-0 enviamos ml-5 btn-rol-select" rel='User-Raiz' id_rol="1" id_button="1">Usuario Raíz</button>
-                  <button type="button" id_rol="3" class="button-rol bt-rol-register btn-rol-all btn-rol px-xl-1 enviamos" rel='User-Edit' id_button="2">Usuario Editor</button>
-                  <button type="button" id_rol="2" class="button-rol bt-rol-register btn-rol-all btn-rol px-xl-0 enviamos" rel='User-Apro' id_button="3">Usuario Aprobador</button>
-                  <button type="button" id_rol="4" class="button-rol bt-rol-register btn-rol-all btn-rol px-xl-0 enviamos" rel='User-Visua' id_button="4">Usuario Visualizador</button>
-                </div>
-              </p>
-            </div>
-            <div class="mt-5 text-rol" id="User-Raiz">
-              <div class="d-flex m-2 justify-content-between">
-                <div class="col-xl-4">
-                  <img src="./images/ojo-naranja.svg" alt="" class="img-tam"><span> Visualizar cambios </span>
-                </div>
-                <div class="col-xl-4">
-                  <img src="./images/recha-naranja.svg" alt="" class="img-tam"> <span> Rechazar cambios </span>
-                </div>
-                <div class="col-xl-4">
-                  <img src="./images/apro-naranja.svg" alt="" class="img-tam"> <span> Aprobar cambios</span>
-                </div>
-              </div>
-              <div class="d-flex m-2  justify-content-between">
-                <div class="col-xl-4">
-                  <img src="./images/edit-naranja.svg" alt="" class="img-tam"> <span> Editar</span>
-                </div>
-                <div class="col-xl-4">
-                  <img src="./images/admi-naranja.svg" alt="" class="img-tam"> <span> Administrar usuario</span>
-                </div>
-                <div class="col-xl-4">
-                  <img src="./images/coment-naranja.svg" alt="" class="img-tam"> <span> Hacer comentarios</span>
+            <div class="pl-2 pr-2 mt-4 pb-4 a-text-medium-brownish d-flex flex-column mx-auto">
+              <div class="d-flex align-items-center w-100">
+                <span class="mr-2">Rol</span>
+                <div class="alineacion buttons-rol-container">
+                  <button id="button-visualizador" type="button" class="btn-rol-select a-text-medium-brownish button-rol bt-rol-register btn-rol-all btn-rol ml-2 enviamos" rel='User-Visua' id_button="4" id_rol="4">Usuario<br> Visualizador</button>
+                  <button id="button-editor" type="button" class="a-text-medium-brownish button-rol bt-rol-register btn-rol-all btn-rol ml-2 enviamos" rel='User-Edit' id_button="2" id_rol="3">Usuario<br> Editor</button>
+                  <button id="button-aprobador" type="button" class="a-text-medium-brownish button-rol bt-rol-register btn-rol-all btn-rol  ml-2 enviamos" rel='User-Apro' id_button="3" id_rol="2">Usuario<br> Aprobador</button>
+                  <button id="button-root" type="button" class="a-text-medium-brownish btn-rol button-rol enviamos ml-2" id_button="1" id_rol="1" rel='User-Raiz'>Usuario<br> Raíz </button>
                 </div>
               </div>
 
-            </div>
-            <div class=" mt-5 text-rol" id="User-Edit" hidden="true">
-              <div class="d-flex m-2  justify-content-between">
-                <div class="col-xl-4">
-                  <img src="./images/ojo-naranja.svg" alt="" class="img-tam"><span> Visualizar cambios </span>
-                </div>
-                <div class="col-xl-4">
-                  <img src="./images/recha-inac.svg" alt="" class="img-tam "><span class="text-rol-inac"> Rechazar cambios </span>
-                </div>
-                <div class="col-xl-4">
-                  <img src="./images/apro-inac.svg" alt="" class="img-tam"><span class="text-rol-inac"> Aprobar cambios</span>
-                </div>
-              </div>
-              <div class="d-flex m-2  justify-content-between">
-                <div class="col-xl-4">
-                  <img src="./images/edit-naranja.svg" alt="" class="img-tam"> <span> Editar</span>
-                </div>
-                <div class="col-xl-4">
-                  <img src="./images/gris-admi.svg" alt="" class="img-tam"><span class="text-rol-inac"> Administrar usuario</span>
-                </div>
-                <div class="col-xl-4">
-                  <img src="./images/coment-naranja.svg" alt="" class="img-tam"> <span> Hacer comentarios</span>
+              <div class="no-gutters">
+                <!--RAÍZ-->
+                <div class="text-rol col-11 mx-auto mt-4" id="User-Raiz" hidden="true">
+                  <div class="d-flex mb-3 justify-content-between">
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/ojo-naranja.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span>Visualizar<br> cambios </span>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/coment-naranja.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span>Hacer<br> comentarios</span>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/edit-naranja.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span>Editar</span>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/recha-naranja.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span>Rechazar<br> cambios</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex align-items-center w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/apro-naranja.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span>Aprobar<br> cambios</span>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex align-items-center w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/admi-naranja.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span> Administrar<br> usuarios</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-            </div>
-            <div class="mt-5 text-rol" id="User-Apro" hidden="true">
-              <div class="d-flex m-2 justify-content-between">
-                <div class="col-xl-4">
-                  <img src="./images/ojo-naranja.svg" alt="" class="img-tam"><span> Visualizar cambios </span>
-                </div>
-                <div class="col-xl-4">
-                  <img src="./images/recha-naranja.svg" alt="" class="img-tam"> <span> Rechazar cambios </span>
-                </div>
-                <div class="col-xl-4">
-                  <img src="./images/apro-naranja.svg" alt="" class="img-tam"> <span> Aprobar cambios</span>
-                </div>
-              </div>
-              <div class="d-flex m-2  justify-content-between">
-                <div class="col-xl-4">
-                  <img src="./images/edit-naranja.svg" alt="" class="img-tam"> <span> Editar</span>
-                </div>
-                <div class="col-xl-4">
-                  <img src="./images/gris-admi.svg" alt="" class="img-tam"><span class="text-rol-inac"> Administrar usuario</span>
-                </div>
-                <div class="col-xl-4">
-                  <img src="./images/coment-naranja.svg" alt="" class="img-tam"> <span> Hacer comentarios</span>
+              <!--APROBADOR-->
+              <div class="no-gutters">
+                <div class="text-rol col-11 mx-auto mt-4" id="User-Apro" hidden="true">
+                  <div class="d-flex mb-3 justify-content-between">
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/ojo-naranja.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span class="text-rol">Visualizar<br> cambios </span>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/coment-naranja.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span class="text-rol">Hacer<br> comentarios</span>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/edit-naranja.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span class="text-rol">Editar</span>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/recha-naranja.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span class="text-rol">Rechazar<br> cambios</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex align-items-center w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/apro-naranja.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span class="text-rol">Aprobar<br> cambios</span>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex align-items-center w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/gris-admi.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span class="text-rol-inac">Administrar<br> usuarios</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-            </div>
-            <div class=" mt-5 text-rol" id="User-Visua" hidden="true">
-              <div class="d-flex m-2   justify-content-between">
-                <div class="col-xl-4">
-                  <img src="./images/ojo-naranja.svg" alt="" class="img-tam"><span> Visualizar cambios </span>
-                </div>
-                <div class="col-xl-4">
-                  <img src="./images/recha-inac.svg" alt="" class="img-tam"><span class="text-rol-inac"> Rechazar cambios </span>
-                </div>
-                <div class="col-xl-4">
-                  <img src="./images/apro-inac.svg" alt="" class="img-tam"><span class="text-rol-inac"> Aprobar cambios</span>
-                </div>
-              </div>
-              <div class="d-flex m-2 justify-content-between">
-                <div class="col-xl-4">
-                  <img src="./images/lapiz-inac.svg" alt="" class="img-tam"> <span class="text-rol-inac"> Editar</span>
-                </div>
-                <div class="col-xl-4">
-                  <img src="./images/gris-admi.svg" alt="" class="img-tam"><span class="text-rol-inac"> Administrar usuario</span>
-                </div>
-                <div class="col-xl-4">
-                  <img src="./images/coment-naranja.svg" alt="" class="img-tam"> <span> Hacer comentarios</span>
+              <!--EDITOR-->
+              <div class="no-gutters">
+                <div class="text-rol col-11 mx-auto mt-4" id="User-Edit" hidden="true">
+                  <div class="d-flex mb-3 justify-content-between">
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/ojo-naranja.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span class="text-rol">Visualizar<br> cambios </span>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/coment-naranja.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span class="text-rol">Hacer<br> comentarios</span>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/edit-naranja.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span class="text-rol">Editar</span>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/recha-inac.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span class="text-rol-inac">Rechazar<br> cambios</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex align-items-center w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/apro-inac.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span class="text-rol-inac">Aprobar<br> cambios</span>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex align-items-center w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/gris-admi.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span class="text-rol-inac">Administrar<br> usuarios</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
+              <!--VISUALIZADOR-->
+              <div class="no-gutters">
+                <div class="text-rol col-11 mx-auto mt-4" id="User-Visua">
+                  <div class="d-flex mb-3 justify-content-between">
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/ojo-naranja.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span class="text-rol">Visualizar<br> cambios </span>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/coment-naranja.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span class="text-rol">Hacer<br> comentarios</span>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/lapiz-inac.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span class="text-rol-inac">Editar</span>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/recha-inac.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span class="text-rol-inac">Rechazar<br> cambios</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex align-items-center w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/apro-inac.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span class="text-rol-inac">Aprobar<br> cambios</span>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-xl-4 d-flex align-items-center">
+                      <div class="no-gutters d-flex align-items-center w-100">
+                        <div class="col-6 text-center">
+                          <img src="./images/gris-admi.svg" alt="" class="img-tam">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                          <span class="text-rol-inac">Administrar<br> usuarios</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </form>

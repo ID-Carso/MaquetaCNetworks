@@ -2,9 +2,31 @@
 @import "../base/typography";
 
 /* TEXT BASE */
+
+.h3 {
+  font-size: 24px;
+}
+
+.text-base {
+  font-size: 16px;
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+.text-smaller {
+  font-size: 12px;
+}
+
 .a-text-bold-cool {
   color: $coolBlue;
   font-family: $MontserratBold;
+}
+
+.a-text-bold-white {
+  font-family: $MontserratBold;
+  color: $white;
 }
 
 .a-text-bold-brownish {
@@ -35,6 +57,11 @@
 .a-text-medium-orange {
   color: $pastelOrange;
   font-family: $MontserratMedium;
+}
+
+.a-text-bold-teal {
+  color: $teal;
+  font-family: $MontserratBold;
 }
 
 /* END TEXT BASE*/

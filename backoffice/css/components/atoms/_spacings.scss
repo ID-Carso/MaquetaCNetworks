@@ -244,12 +244,11 @@
   max-width: 1004px;
 }
 .alineacion {
+  width: 100%;
   margin: auto;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   position: relative;
-  margin-top: -82px;
 }
 .centrar {
   left: 15px;

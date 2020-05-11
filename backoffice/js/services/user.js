@@ -706,19 +706,19 @@ function getUserToUpdate(id) {
           $("#edit-input-email").val(json.data.email);
           switch (json.data.rol.id) {
             case 1:
-              $("#button-root").addClass("btn-rol-select-edit");
+              $("#button-root").addClass("btn-rol-select");
               cambiaracti("1");
               break;
             case 2:
-              $("#button-aprobador").addClass("btn-rol-select-edit");
+              $("#button-aprobador").addClass("btn-rol-select");
               cambiaracti("3");
               break;
             case 3:
-              $("#button-editor").addClass("btn-rol-select-edit");
+              $("#button-editor").addClass("btn-rol-select");
               cambiaracti("2");
               break;
             case 4:
-              $("#button-visualizador").addClass("btn-rol-select-edit");
+              $("#button-visualizador").addClass("btn-rol-select");
               cambiaracti("4");
               break;
             default:
@@ -731,7 +731,7 @@ function getUserToUpdate(id) {
             let email = $("#edit-input-email").val();
             let password = $("#edit-input-password").val();
             let repassword = $("#edit-input-repassword").val();
-            let rolId = $(".btn-rol-select-edit").attr("id_rol");
+            let rolId = $(".btn-rol-select").attr("id_rol");
             updateDataUser(
               json.data.id,
               name,

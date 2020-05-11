@@ -12,15 +12,15 @@
   <div id="edit-front">
     <!--Div para cambio-->
     <div class="col-xl-7 trans10 mx-auto edit-userfront-content">
-      <div class="container shadow texto-general tamaño ">
+      <div class="container shadow tamaño ">
         <img src="./images/equis.svg" alt="" class="equis2 shadow closeViewFront">
         <div class="bg-white ">
-          <div class=" ml-3 pt-5 "><strong class="title-veruser"> DATOS DEL USUARIO</strong></div>
+          <div class=" ml-3 pt-5 "><strong class="title-veruser a-text-bold-brownish"> DATOS DEL USUARIO</strong></div>
           <div class=" col-xl-12 mx-auto mt-xl-1 ">
             <form>
-              <input id="edit-front-input-username" class="insert-data texto-general mb-4 " type="text " value="" placeholder="" disabled></input>
-              <input id="edit-front-input-email" class="insert-data texto-general input-email mb-4  " type="text " value="" placeholder="" disabled></input>
-              <input class="insert-data input-password a-text-medium-brownish texto-general" type="password" id="edit-user-front-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
+              <input id="edit-front-input-username" class="insert-data a-text-medium-brownish mb-4 " type="text " value="" placeholder="" disabled></input>
+              <input id="edit-front-input-email" class="insert-data a-text-medium-brownish input-email mb-4  " type="text " value="" placeholder="" disabled></input>
+              <input class="insert-data input-password a-text-medium-brownish" type="password" id="edit-user-front-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
               <div class="d-flex align-items-center mb-2">
                 <p class="a-text-medium-orange mt-1 mb-0" id="caracteres-min">
                   8 caractéres mínimo
@@ -29,20 +29,20 @@
                 <img src="http://www.claronetworks.openofficedospuntocero.info/images/registro/listo.svg" class="listo ml-2 mt-1" />
               </div>
               <div class="position-relative mb-4">
-                <input class="insert-data input-password" type="password" id="edit-user-front-repassword" name="login-password" placeholder=" Confirmar contraseña" autocomplete="off" />
+                <input class="insert-data input-password a-text-medium-brownish" type="password" id="edit-user-front-repassword" name="login-password" placeholder="Confirmar contraseña" autocomplete="off" />
               </div>
 
               <div class=" navbar navbar-expand-sm mb-4 mx-auto mt-2 ">
                 <div class="col-xl-4 margin-sex1 ">
-                  <p class="margin-front texto-general">Sexo</p>
+                  <p class="margin-front text-small a-text-medium-brownish">Sexo</p>
                   <form action="" name="formilariosexo" id="formulariosexo" class="formulario">
-                    <div class="sexo">
+                    <div class="sexo text-small a-text-medium-brownish">
                       <input type="radio" name="sexo" id="mujer" checked />
                       <label for="mujer" id="mujerestado" class="mujer-estilo d-flex align-items-center">
-                        <img id="women" src="./images/datos-adicionales/femenino-activo.svg" class="women text-sexo" />
-                        <span>Femenino</span></label>
+                        <img id="women" src="./images/datos-adicionales/femenino-activo.svg" class="women " />
+                        <span class="">Femenino</span></label>
                       <input type="radio" name="sexo" id="hombre" />
-                      <label for="hombre" id="hombreestado" class="hombre-estilo text-sexo">
+                      <label for="hombre" id="hombreestado" class="hombre-estilo">
                         <span>Masculino</span>
                         <img id="men" src="./images/datos-adicionales/masculino-inactivo.svg" class="men" /></label>
                     </div>
@@ -50,19 +50,19 @@
                 </div>
 
                 <div class="col-xl-4" id="drop-paises">
-                  <p class="margin-front texto-general">País de residencia</p>
+                  <p class="margin-front text-small a-text-medium-brownish">País de residencia</p>
 
                   <input type="checkbox" id="selectPais" class="texto-general" />
                   <label for="selectPais" id="select-Pais" class="ml3">
-                    <p class="SeleccionPaisLista">
+                    <p class="SeleccionPaisLista text-small a-text-medium-brownish">
                       <img src="" class="Icon_paises" />Selecciona tu país
                     </p>
-                    <ul class="ListaDesplegablePaises">
-                      <li class="option" id-select="select-Pais" value="USA">
+                    <ul class="ListaDesplegablePaises text-small a-text-medium-brownish">
+                      <li class="option" id-select="select-Pais " value="USA">
                         <img src="./images/paises/usa.svg" class="Icon_paises" />USA
                       </li>
                       <li class="option" id-select="select-Pais" value="Argentina">
-                        <img src="./images/paises/argentina.svg" class="Icon_paises" />Argentina
+                        <img src="./images/paises/argentina.svg" class="Icon_paises" /><span>Argentina</span>
                       </li>
                       <li class="option" id-select="select-Pais" value="Brazil">
                         <img src="./images/paises/brazil.svg" class="Icon_paises" />Brazil
@@ -113,7 +113,7 @@
                   </label>
                 </div>
 
-                <div class="col-xl-4 fecha-margi texto-general">
+                <div class="col-xl-4 fecha-margi text-small a-text-medium-brownish">
                   <p class="margin-fecha">Fecha de nacimiento</p>
                   <div class="cuadro-fecha">
                     <div class="cuadro-dia">
@@ -122,8 +122,8 @@
                       <label for="selectDay" id="select-Dia">
 
 
-                        <p class="SeleccionDiaLista texto-general">Día</p>
-                        <ul class="ListaDesplegableDias texto-general">
+                        <p class="SeleccionDiaLista">Día</p>
+                        <ul class="ListaDesplegableDias">
                           <li class="Dias" id-select="select-Dia" value="01">
                             01
                           </li>
@@ -221,9 +221,9 @@
                       </label>
                     </div>
                     <div class="cuadro-dia">
-                      <input type="checkbox" id="selectMonth" class="texto-general" />
+                      <input type="checkbox" id="selectMonth" class="" />
                       <label for="selectMonth" id="select-Mes">
-                        <p class="SeleccionMesLista texto-general">Mes</p>
+                        <p class="SeleccionMesLista">Mes</p>
                         <ul class="ListaDesplegableMeses">
                           <li class="Meses" id-select="select-Mes" value="Ene">
                             Ene
@@ -265,9 +265,9 @@
                       </label>
                     </div>
                     <div class="cuadro-dia">
-                      <input type="checkbox" id="selectYear" class="texto-general" />
+                      <input type="checkbox" id="selectYear" class="" />
                       <label for="selectYear" id="select-Año">
-                        <p class="SeleccionAñoLista texto-general">Año</p>
+                        <p class="SeleccionAñoLista">Año</p>
                         <ul class="ListaDesplegableAños">
                           <li class="Años" id-select="select-Año" value="2019">
                             2019
@@ -550,12 +550,8 @@
               </div>
 
               <div class="navbar navbar-expand-sm justify-content-center mx-auto texto ml-xl-2 pb-3 ">
-                <button type="button" class=" btn-cancelar mb-4  ml-xl-2 ">
-                  Cancelar
-                </button>
-                <button type="button" class="btn-guardar mb-4 btn-save-data-front   ml-xl-2 ">
-                  Guardar
-                </button>
+                <button type="button" class="a-button-pill-teal-outline a-button-pill-padding  a-text-bold-teal mr-4">CANCELAR</button>
+                <button type="button" class="a-button-pill-teal-primary a-button-pill-padding  btn-save-data-front a-text-bold-white">GUARDAR</button>
               </div>
               <div>
 
@@ -569,14 +565,14 @@
   < <!--MODAL EDITAR-->
     <div class="modal modal-edit-user-front show" id="abrirBorrar" role="dialog">
       <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content centro modal-defi2">
-          <div class="modal-body  ">
-            <img src="./images/advertencia.svg" alt="" class=""><br>
-            <span class="modal-text">Edición Exitosa</span>
-            <p class="text-modal-text1 modal-delete-username-front"></p>
+        <div class="modal-content centro modal-edit-usersfront-content">
+          <div class="modal-body">
+            <img src="./images/aprove-icon.png" alt="" class="mb-3 aprove-icon mt-5">
+            <h3 class="a-text-bold-brownish h3 mb-3">Edición Exitosa</h3>
+            <p class="a-text-medium-brownish modal-delete-username-front">Los datos se han actualizado correctamente</p>
           </div>
-          <div class="pb-4 align-item-center centro">
-            <button type="button" class="btn-si text-si" data-dismiss="modal" id="modal-button">OK</button>
+          <div class="pb-4 align-item-center centro pb-5">
+            <button type="button" class="a-button-pill-teal-primary a-button-pill-fixed" data-dismiss="modal" id="modal-button"><span class="a-text-bold-white">OK</span></button>
 
           </div>
         </div>

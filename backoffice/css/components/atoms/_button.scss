@@ -1,6 +1,49 @@
 @import "text";
 @import "../base/typography";
 @import "../base/color";
+
+/* BOTONES REUTILIZABLES */
+
+.a-button-pill-teal-outline {
+  border: 2px solid $teal;
+
+  border-radius: 30px;
+  outline: none;
+  background: $white;
+}
+
+.a-button-pill-teal-outline:focus {
+  border: 2px solid $teal;
+
+  border-radius: 30px;
+  outline: none;
+}
+
+.a-button-pill-teal-primary {
+  background: $teal;
+  border: 2px solid $teal;
+  border-radius: 30px;
+  outline: none;
+}
+
+.a-button-pill-teal-primary:focus {
+  background: $teal;
+  border: 2px solid $teal;
+  border-radius: 30px;
+  outline: none;
+}
+
+.a-button-pill-padding {
+  padding: 15px 17px;
+}
+
+.a-button-pill-fixed {
+  width: 127px;
+  height: 51px;
+}
+
+/*END BOTONES REUTILIZABLES*/
+
 .btn-cerrar {
   border-radius: 13px;
   width: 150px;
@@ -241,55 +284,36 @@
   //a.-text-public
 }
 .btn-rol {
-  width: 116px;
-  height: 43px;
-  line-height: 13px;
-  border-radius: 13px;
-  justify-content: center;
-  align-items: center;
-  background-color: $white;
-  color: black;
-  outline: none !important;
-  outline-width: 0 !important;
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
+  width: 100%;
+  border-radius: 15px;
   transition: all 0.3s;
+  box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.5);
+  background: $white;
+  border: 1px solid $white;
+  outline: none;
 }
 .btn-rol-all {
-  width: 116px;
-  height: 43px;
-  line-height: 13px;
-  border-radius: 13px;
-  justify-content: center;
-  align-items: center;
-  background-color: $white;
-  color: black;
-  outline: none !important;
-  outline-width: 0 !important;
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
+  width: 100%;
+  border-radius: 15px;
   transition: all 0.3s;
-  border: 1px solid black;
+  box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.5);
+  background: $white;
 }
-.btn-rol-select {
-  width: 116px;
-  height: 43px;
-  line-height: 13px;
-  border-radius: 13px;
-  justify-content: center;
-  align-items: center;
-  background-color: $dark;
+
+.btn-rol:focus {
+  background: $warmGrey;
   color: $white;
-  outline: none !important;
-  outline-width: 0 !important;
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  transition: all 0.3s;
-  border: 1px solid $dark;
+  border: 1px solid $warmGrey;
+  outline: none;
 }
+
+.btn-rol-select {
+  background: $warmGrey;
+  color: $white !important;
+  border: 1px solid $warmGrey;
+  outline: none;
+}
+
 .btn-rol-edit {
   width: 100px;
   height: 36px;
@@ -588,8 +612,8 @@
   border-right: $lemongreen;
   cursor: pointer;
   overflow: hidden;
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
   background: $white;
   outline: none !important;
   margin-top: 9px;
@@ -732,8 +756,8 @@ align-items: center;
   border-left: $lemongreen;
   cursor: pointer;
   overflow: hidden;
- display: flex;
- align-items: center;
+  display: flex;
+  align-items: center;
   margin-top: 9px;
   background: $white;
   outline: none !important;

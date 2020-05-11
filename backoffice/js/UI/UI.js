@@ -69,7 +69,8 @@ function cambiaracti(roles) {
 function changeImagesRolPermissions() {
   $(".button-rol").click(function () {
     let idButton = $(this).attr("id_button");
-    console.log(idButton);
+    $(".button-rol").removeClass("btn-rol-select");
+    $(this).addClass("btn-rol-select");
     cambiaracti(idButton);
   });
 }
@@ -87,12 +88,12 @@ function changeImagesRolPermissions() {
 }*/
 
 function changeActiveRolGreenButton() {
-  let buttonsRol = $(".btn-rol-edit");
+  let buttonsRol = $(".btn-rol");
   $(".btn-rol-all-edit").click(function () {
-    buttonsRol.removeClass("btn-rol-select-edit");
-    $(this).addClass("btn-rol-edit");
-    buttonsRol.removeClass("btn-rol-edit");
-    $(this).addClass("btn-rol-select-edit");
+    buttonsRol.removeClass("btn-rol-select");
+    $(this).addClass("btn-rol");
+    buttonsRol.removeClass("btn-rol");
+    $(this).addClass("btn-rol-select");
   });
 }
 
