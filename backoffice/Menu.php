@@ -27,22 +27,22 @@
         </div>
         <nav class="d-flex col-xl-12 navbar-expand-sm justify-content-center position-nav">
         <ul class="d-flex justify-content-center navbar-nav">
-      <li class="nav-item ">
+      <li class="nav-item br-r ">
         <button class="btn-menu-select menu">Canal Claro</button>  
         </li>
-        <li class="nav-item sp">
+        <li class="nav-item br-r">
         <button class="btn-menu-all text-menu-selec">Concert Channel</button>  
         </li>
-      <li class="nav-item sp">
+      <li class="nav-item br-r">
           <button class="btn-menu-all text-menu-selec">Claro Cinema</button>
           </li>
-      <li class="nav-item sp">
-          <button class="btn-menu-inac text-menu-selec">Nuesta Visión</button>
+      <li class="nav-item br-r">
+          <button class="btn-menu-inac text-menu-selec">Nuesta Visión*</button>
           </li>
-      <li class="nav-item sp ">
-          <button class="btn-menu-inac text-menu-selec">Claro Sport</button>
+      <li class="nav-item br-r ">
+          <button class="btn-menu-inac text-menu-selec">Claro Sport*</button>
           </li>
-      <li class="nav-item sp">
+      <li class="nav-item ">
           <button class="btn-menu-all text-menu-selec"> Home</button>
          </li>
     </ul>
@@ -54,7 +54,7 @@
     <div class="float-right mb-2 mr-5 ali">
         <span class="zona">Por :</span><label class="text-menu-selec separacion"><span> Antonio López Pérez</span> </label> <label class="text-menu-selec">Usuario editor</label>
     </div>
-    <div class="d-flex float-right mt-2 ml-btn  mr-5 ">
+    <div class="d-flex float-right mt-2 ml-btn mb-5  mr-5 ">
     <button class="btn-grilla  text-grilla mr-3"><span>Grilla</span></button> 
         <button class="btn-landing  text-landing "><span>Landing</span></button>
     </div>

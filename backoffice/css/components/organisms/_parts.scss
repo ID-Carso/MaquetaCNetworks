@@ -34,15 +34,13 @@ aside {
   letter-spacing: normal;
   text-align: center;
 }
-.signo {
-  line-height: 1;
-}
+
 .signo:before {
   content: " + ";
   color: $white;
   font-size: 40px;
   font-family: $MontserratSemiBold;
-  margin-right: 200px;
+  padding-right: 3%;
 }
 
 

@@ -232,7 +232,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 <div class="contenedor mb-5 ml-5 pr-5">
 <div class="contenedor-columna centro">
-        <div id="agregar" class="btn-crear centro ml-2"><span class="signo"><p class="text-crea pd-10">Crear nueva entrada</p></span></div>
+<div id="agregar" class="d-flex align-items-center btn-crear signo justify-content-center  ml-2">
+                            <span class="text-crea">Crear nueva entrada</span>
+                        </div>
+                </div>
     </div>
 </div>
 </div>
