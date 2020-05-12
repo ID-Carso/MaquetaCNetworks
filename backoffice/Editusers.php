@@ -29,7 +29,7 @@ session_start();
           </input>
           <input id="edit-input-email" class="insert-data input-email a-text-medium-brownish" type="text " value="" placeholder="Correo "></input>
           <div class="d-flex align-items-center mt-2 mb-2">
-            <p class="a-text-medium-orange mt-0 mb-0 warning-email-text">
+            <p class="a-text-medium-orange mt-0 mb-0 warning-email-text" id="error_email">
               Correo válido
             </p>
             <img src="http://www.claronetworks.openofficedospuntocero.info/images/registro/alerta.svg" class="error ml-2" />

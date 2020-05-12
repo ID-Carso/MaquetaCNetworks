@@ -87,7 +87,7 @@ $(document).ready(function () {
   $("#button-login").click(function () {
     let inputEmail = $(".input-email");
     let inputPassword = $(".input-password");
-    let messageError = $("#error_email");
+    let messageError = $(".warning-email-text");
     let messagePasswordError = $(".caracteres-min");
 
     if (

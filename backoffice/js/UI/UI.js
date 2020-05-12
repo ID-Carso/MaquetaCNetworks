@@ -340,7 +340,7 @@ function getNameCountry(id) {
   let countryImage = "";
   switch (id) {
     case 1:
-      countryName = "EUA";
+      countryName = "USA";
       countryImage =
         "http://www.claronetworks.openofficedospuntocero.info/images/paises/usa.svg";
       break;
@@ -350,7 +350,7 @@ function getNameCountry(id) {
         "http://www.claronetworks.openofficedospuntocero.info/images/paises/argentina.svg";
       break;
     case 3:
-      countryName = "Brasil";
+      countryName = "Brazil";
       countryImage =
         "http://www.claronetworks.openofficedospuntocero.info/images/paises/brazil.svg";
       break;

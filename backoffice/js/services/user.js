@@ -748,9 +748,18 @@ function getUserToUpdate(id) {
       if (json.code == 200) {
         $("#editar").replaceWith();
         $("#cambio").load("Editusers.php", function () {
+          //VALIDATE EMAIL
+          const inputCorreo = $(".input-email");
+          inputCorreo.keyup(function () {
+            const correoValido = $(".warning-email-text");
+            const imagenError = $(".error");
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            validateKeyUpEmail(inputCorreo, filter, imagenError, correoValido);
+          });
+
           //VALIDATE PASSWORD
           $(".input-password").keyup(function () {
-            validateKeyUpPassword($(this), $(".caracteres-min"));
+            validateKeyUpPassword($(this), $(".warning-password-text"));
           });
 
           $("#edit-input-username").val(json.data.name);
@@ -823,7 +832,7 @@ function getUserFrontToUpdate(id) {
     },
     success: function (result) {
       let json = JSON.parse(result);
-
+      console.log(json);
       if (json.code == 200) {
         $("#edit-front").replaceWith();
         $("#cambio").load("Edit-front.php", function () {
@@ -831,6 +840,29 @@ function getUserFrontToUpdate(id) {
           $(".Dias").click(function () {
             var value = $(this).attr("value");
             var select = $(this).attr("id-select");
+            $("#" + select + " > p").text(value);
+          });
+
+          //ELEGIR MES
+          $(".Meses").click(function () {
+            var value = $(this).attr("value");
+            var select = $(this).attr("id-select");
+
+            //ELEGIR AÑO
+            $("#" + select + " > p").text(value);
+          });
+          $(".Años").click(function () {
+            var value = $(this).attr("value");
+            var select = $(this).attr("id-select");
+
+            $("#" + select + " > p").text(value);
+          });
+
+          //CHOSE COUNTRY
+          $(".option").click(function () {
+            var value = $(this).attr("value");
+            var select = $(this).attr("id-select");
+
             $("#" + select + " > p").text(value);
           });
 
