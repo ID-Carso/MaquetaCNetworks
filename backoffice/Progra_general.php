@@ -5,11 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Claro Networks</title>
-    <?php
-    include 'scripts.php';
-    include 'styles.php';
-    ?>
-    <script src="./js/admin.js" defer></script>
+    
 </head>
 
 <body>
@@ -17,47 +13,25 @@
         <?php
         include 'Menu.php';
         ?>
-        <div class=" float-left ml-5  mb-5 mt-4 ">
+        <div class="  ml-5  mb-5  ">
             <button class="btn-cargar centro mr-4" id="file" onClick="Verarchi()"><span class="text-crea"><img src="./images/clip.svg" alt="" class="ml-1 mr-1">Cargar archivos</span></button>
         </div>
-        <div class=" d-flex ml-5 pl-2 p1 ">
-            <div id="meses" class="carousel slide ali1" >
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <p class=" separacion1 flex-caption ml-5 progra-month"></p>   
-                     </div>
-                   
-                </div>
-                <a class="carousel-control-prev" href="#meses">
-                <img src="./images/arrow-light.svg" alt="" class="mr-4 arrow-r180 arrow-left">
-                </a>
-                <a class="carousel-control-next" href="#meses">
-                <img src="./images/arrow-dark.svg" alt="" class="pr-5 arrow-right">
-                </a>
+        <div class=" d-flex ml-5 pl-2 ">
+            <div id="meses" class="d-flex align-items-center mb-3 br-r " >
+                <img src="./images/arrow-light.svg" alt="" class=" mr-4 arrow-r180 arrow-left">          
+                        <p class=" flex-caption mb-0 progra-month"></p>   
+                <img src="./images/arrow-dark.svg" alt="" class=" ml-4 arrow-right">
 
             </div>
-            <!--begin-->
-            <div id="dias" class="carousel slide ali1 m-slider">
+            <div id="dias" class="d-flex align-items-center mb-3 br-r " >
+                <img src="./images/arrow-light.svg" alt="" class=" mr-4 arrow-r180 arrow-left">          
+                        <p class=" flex-caption mb-0 day"></p>   
+                <img src="./images/arrow-dark.svg" alt="" class=" ml-4 arrow-right">
 
-                <!-- The slideshow -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <p class="separacion1 flex-caption ml-4 day" ></p>
-                    </div>
-                </div>
+            </div>            
+            <img src="./images/calendario.svg" class="ml-2 mb-3" alt="">
+        </div>
 
-                <!-- Left and right controls -->
-                <a class="carousel-control-prev" href="#dias">
-                <img src="./images/arrow-light.svg" alt="" class=" mr-5 pl-3 arrow-r180 arrow-left">
-                </a>
-                <a class="carousel-control-next" href="#dias">
-                <img src="./images/arrow-dark.svg" alt="" class="mr-5 arrow-right">
-                </a>
-            </div>
-        </div>
-        <div class=" d-flex calendario ">
-            <img src="./images/calendario.svg" class="" alt="">
-        </div>
         <!--end-->
 
         <div id="rempla">
@@ -164,9 +138,9 @@
             </div>
             <div class="contenedor mb-5 ml-5 pr-5">
                 <div class="contenedor-columna">
-                    <div id="agregar" class="btn-crear centro  ml-2"><span class="signo">
-                            <p class="text-crea pd-10">Crear nueva entrada</p>
-                        </span></div>
+                    <div id="agregar" class="d-flex align-items-center btn-crear signo justify-content-center  ml-2">
+                            <span class="text-crea">Crear nueva entrada</span>
+                        </div>
                 </div>
             </div>
         </div>
