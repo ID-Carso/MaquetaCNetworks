@@ -827,6 +827,13 @@ function getUserFrontToUpdate(id) {
       if (json.code == 200) {
         $("#edit-front").replaceWith();
         $("#cambio").load("Edit-front.php", function () {
+          //ELEGIR DÍA
+          $(".Dias").click(function () {
+            var value = $(this).attr("value");
+            var select = $(this).attr("id-select");
+            $("#" + select + " > p").text(value);
+          });
+
           //VALIDATE PASSWORD
           $(".input-password").keyup(function () {
             validateKeyUpPassword($(this), $(".caracteres-min"));

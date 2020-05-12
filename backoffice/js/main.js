@@ -35,6 +35,45 @@ import {
 } from "./services/user.js";
 
 $(document).ready(function () {
+  $(".option").click(function () {
+    var value = $(this).attr("value");
+    var select = $(this).attr("id-select");
+
+    $("#" + select + " > p").text(value);
+  });
+  $(".Dias").click(function () {
+    var value = $(this).attr("value");
+    var select = $(this).attr("id-select");
+    console.log($(this));
+    $("#" + select + " > p").text(value);
+  });
+  $(".Meses").click(function () {
+    var value = $(this).attr("value");
+    var select = $(this).attr("id-select");
+
+    $("#" + select + " > p").text(value);
+  });
+  $(".Años").click(function () {
+    var value = $(this).attr("value");
+    var select = $(this).attr("id-select");
+
+    $("#" + select + " > p").text(value);
+  });
+
+  $("#mujer").click(function () {
+    if ($('input[id="mujer"]').is(":checked")) {
+      $("#women").attr("src", "images/datos-adicionales/femenino-activo.svg");
+      $("#men").attr("src", "images/datos-adicionales/masculino-inactivo.svg");
+    }
+  });
+
+  $("#hombre").click(function () {
+    if ($('input[id="hombre"]').is(":checked")) {
+      $("#women").attr("src", "images/datos-adicionales/femenino-inactivo.svg");
+      $("#men").attr("src", "images/datos-adicionales/masculino-activo.svg");
+    }
+  });
+
   /* GET ALL USERS FRONT */
   getAllUserFront();
 
