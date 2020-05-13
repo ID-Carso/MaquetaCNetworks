@@ -523,7 +523,7 @@ export default class Section {
       },
       {
         chapter_id: 2,
-        program_title: "FIT 4 LIFE",
+        program_title: "FIT FOR LIFE",
         image:
           "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/06-FIT4LIFE.jpg",
       },
