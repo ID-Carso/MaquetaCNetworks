@@ -89,8 +89,8 @@
   height: 46px;
   border-radius: 7px;
   align-items: center;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
   background-color: $teal;
   outline: none !important;
   outline-width: 0 !important;
@@ -110,8 +110,8 @@
   width: 181px;
   height: 46px;
   align-items: center;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
   border-radius: 7px;
   background-color: $white;
   outline: none !important;
@@ -622,7 +622,6 @@
   align-items: center;
   background: $white;
   outline: none !important;
-  margin-top: 9px;
   //a-text-sexo
 }
 .sexo {
@@ -632,9 +631,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 190px;
-  margin-left: -20px;
-  margin-top: -10px;
+  width: 100%;
 }
 .mujer-estilo1 {
   width: 100%;
@@ -764,10 +761,8 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-  margin-top: 9px;
   background: $white;
   outline: none !important;
-
   //a-text-sexo
 }
 

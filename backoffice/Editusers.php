@@ -35,7 +35,7 @@ session_start();
             <img src="http://www.claronetworks.openofficedospuntocero.info/images/registro/alerta.svg" class="error ml-2" />
           </div>
 
-          <div class="pt-0 mt-1">
+          <!--<div class="pt-0 mt-1">
             <input id="edit-input-password" class="insert-data a-text-medium-brownish input-password" type="password" id="login-password" name="login-password" placeholder="Asignar nueva contraseña" autocomplete="off" />
             <div class="d-flex align-items-center mb-2">
               <p class="a-text-medium-orange mt-1 mb-0 warning-password-text">
@@ -44,11 +44,11 @@ session_start();
 
               <img src="http://www.claronetworks.openofficedospuntocero.info/images/registro/listo.svg" class="listo ml-2 mt-1" />
             </div>
-            <!---  <img src="../images/registro/eye-none.svg" class="icon-eye" />-->
+         
             <input id="edit-input-repassword" class="insert-data a-text-medium-brownish pt-2 mb-4" type="password" id="login-password" name="login-password" placeholder="Confirmar nueva contraseña" autocomplete="off" />
-            <!--<img src="../images/registro/eye-none.svg" class="icon-eye3" />-->
-          </div>
-          <div class="pl-2 pr-2  mb-2 a-text-medium-brownish d-flex flex-column mx-auto">
+            
+          </div>-->
+          <div class="mt-4 mb-2 a-text-medium-brownish d-flex flex-column mx-auto">
 
             <div class="d-flex align-items-center w-100">
               <span class="mr-2">Rol</span>

@@ -176,7 +176,6 @@ function registerUser(name, email, rol) {
         });
     },
     success: function (result) {
-      console.log(result);
       let json = JSON.parse(result);
       if (json.code == 200) {
         $(".register-user-content").css({
@@ -339,13 +338,23 @@ function registerUser(name, email, rol) {
 
         $(".modal-user-privileges").html(modalPrivileges);
         $(".modal-newuser-bo").modal("show");
-      } else {
+      } else if (json.code == 422) {
         $(".register-user-content").css({
           backgorund: "white",
           opacity: "1",
           pointerEvents: "all",
         });
         $(".loader").remove();
+        if (json.data.email) {
+          console.log("422 email");
+          $("#error_email")
+            .text("El email ya ha sido registrado")
+            .css("color", "red");
+          $(".error").attr(
+            "src",
+            "http://www.claronetworks.openofficedospuntocero.info/images/registro/alerta.svg"
+          );
+        }
       }
     },
   });
@@ -622,96 +631,142 @@ function updateDataUser(id, name, email, password, repassword, rolId) {
         switch (json.data.rol_id) {
           case 1:
             //ROOT
+            $(".user-rol").text("Súper Usuario,");
             modalPrivileges = `
-        
-            <div class="d-flex align-items-center pb-3 justify-content-between no-gutters">
-              <div class="d-flex align-items-center col-6">
-                <img src="./images/ojo-naranja.svg" alt="" class="modal-privilege-icon  mr-3"><span class="modal-register-text">Visualizar<br>cambios</span>
+            <div class="text-rol mb-4">
+            <div class="d-flex align-items-center pb-3 no-gutters">
+              <div class="col-xl-4 d-flex align-items-center">
+                <div class="no-gutters d-flex align-items-center w-100">           
+                    <img src="./images/ojo-naranja.svg" alt="" class="visualize-icon mr-3">
+                    <span>Visualizar<br> cambios </span>
+                </div>
               </div>
-              <div class="d-flex align-items-center col-6">
-                <img src="./images/edit-naranja.svg" alt="" class="modal-privilege-icon ml-3 mr-3"><span class="modal-register-text">Editar</span>
+              <div class="col-xl-4 d-flex align-items-center">
+                <div class="no-gutters d-flex w-100">           
+                    <img src="./images/coment-naranja.svg" alt="" class="commentary-icon mr-3">
+                    <span>Hacer<br> comentarios</span>  
+                </div>
               </div>
-            </div>
-            <div class="d-flex align-items-center pb-3 justify-content-between no-gutters">
-              <div class="d-flex align-items-center col-6">
-                <img src="./images/recha-naranja.svg" alt="" class="modal-privilege-icon  mr-3"><span class="modal-register-text">Recahzar<br> cambios</span>
-              </div>
-              <div class="d-flex align-items-center col-6">
-                <img src="./images/admi-naranja.svg" alt="" class="modal-privilege-icon ml-3 mr-3"><span class="modal-register-text">Administrar<br> usuario</span>
-              </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-between pb-3 no-gutters">
-              <div class="d-flex align-items-center col-6">
-                <img src="./images/apro-naranja.svg" alt="" class="modal-privilege-icon mr-3"><span class="modal-register-text">Aprobar<br> cambios</span>
-              </div>
-              <div class="d-flex align-items-center col-6">
-                <img src="./images/coment-naranja.svg" alt="" class="modal-privilege-icon ml-3 mr-3"><span class="modal-register-text">Hacer<br> comentarios</span>
+              <div class="col-xl-4 d-flex align-items-center">
+                <div class="no-gutters d-flex align-items-center w-100">
+                    <img src="./images/edit-naranja.svg" alt="" class="edit-icon mr-3">
+                    <span>Editar</span>
+                </div>
               </div>
             </div>
-        
+            <div class="d-flex align-items-center pb-3  no-gutters">
+              <div class="col-xl-4 d-flex align-items-center">
+                <div class="no-gutters d-flex w-100">
+                    <img src="./images/recha-naranja.svg" alt="" class="reject-icon mr-3">
+                    <span>Rechazar<br> cambios</span>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-center">
+                <div class="no-gutters d-flex align-items-center w-100">
+                    <img src="./images/apro-naranja.svg" alt="" class="aprove-orange-icon mr-3">
+                    <span>Aprobar<br> cambios</span>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-center">
+                <div class="no-gutters d-flex align-items-center w-100">
+                    <img src="./images/admi-naranja.svg" alt="" class="manage-user-icon mr-3">
+                    <span> Administrar<br> usuarios</span>
+                </div>
+              </div>
+            </div>
+          </div>
             `;
             break;
           case 2:
             //APROBADOR
+            $(".user-rol").text("Usuario Aprobador,");
             modalPrivileges = `
-            
-            <div class="d-flex align-items-center pb-3 justify-content-between no-gutters">
-            <div class="d-flex align-items-center col-6">
-              <img src="./images/ojo-naranja.svg" alt="" class="modal-privilege-icon mr-3"><span class="modal-register-text">Visualizar<br> cambios</span>
+            <div class="text-rol mb-4">
+            <div class="d-flex align-items-center pb-3 no-gutters">
+              <div class="col-xl-4 d-flex align-items-center">
+                <div class="no-gutters d-flex align-items-center w-100">
+                  <img src="./images/ojo-naranja.svg" alt="" class="visualize-icon mr-3">
+                  <span>Visualizar<br> cambios </span>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-center">
+                <div class="no-gutters d-flex w-100">
+                  <img src="./images/coment-naranja.svg" alt="" class="commentary-icon mr-3">
+                  <span>Hacer<br> comentarios</span>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-center">
+                <div class="no-gutters d-flex align-items-center w-100">
+                  <img src="./images/edit-naranja.svg" alt="" class="edit-icon mr-3">
+                  <span>Editar</span>
+                </div>
+              </div>
             </div>
-            <div class="d-flex align-items-center col-6">
-              <img src="./images/edit-naranja.svg" alt="" class="modal-privilege-icon ml-3 mr-3"><span class="modal-register-text">Editar</span>
+            <div class="d-flex align-items-center pb-3  no-gutters">
+              <div class="col-xl-4 d-flex align-items-center">
+                <div class="no-gutters d-flex w-100">
+                  <img src="./images/recha-naranja.svg" alt="" class="reject-icon mr-3">
+                  <span>Rechazar<br> cambios</span>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-center">
+                <div class="no-gutters d-flex align-items-center w-100">
+                  <img src="./images/apro-naranja.svg" alt="" class="aprove-orange-icon mr-3">
+                  <span>Aprobar<br> cambios</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="d-flex align-items-center justify-content-between pb-3 no-gutters">
-            <div class="d-flex align-items-center col-6">
-              <img src="./images/apro-naranja.svg" alt="" class="modal-privilege-icon  mr-3"><span class="modal-register-text">Aprobar<br> cambios</span>
-            </div>
-            <div class="d-flex align-items-center col-6">
-              <img src="./images/coment-naranja.svg" alt="" class="modal-privilege-icon ml-3 mr-3"><span class="modal-register-text">Hacer<br> comentarios</span>
-            </div>
-          </div>
-          <div class="d-flex align-items-center pb-3 justify-content-between no-gutters">
-            <div class="d-flex align-items-center col-6">
-              <img src="./images/recha-naranja.svg" alt="" class="modal-privilege-icon mr-3"><span class="modal-register-text">Recahzar <br>cambios</span>
-            </div>
-          </div>
-    
               `;
             break;
           case 3:
             //EDITOR
+            $(".user-rol").text("Usuario Editor,");
             modalPrivileges = `
-           
-            <div class="d-flex align-items-center pb-3 justify-content-between no-gutters">
-            <div class="d-flex align-items-center col-6">
-              <img src="./images/ojo-naranja.svg" alt="" class="modal-privilege-icon mr-3"><span class="modal-register-text">Visualizar<br> cambios</span>
-            </div>
-            <div class="d-flex align-items-center col-6">
-              <img src="./images/edit-naranja.svg" alt="" class="modal-privilege-icon ml-3 mr-3"><span class="modal-register-text">Editar</span>
+            <div class="text-rol mb-4">
+            <div class="d-flex align-items-center pb-3 no-gutters">
+              <div class="col-xl-4 d-flex align-items-center">
+                <div class="no-gutters d-flex align-items-center w-100">
+                  <img src="./images/ojo-naranja.svg" alt="" class="visualize-icon mr-3">
+                  <span>Visualizar<br> cambios </span>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-center">
+                <div class="no-gutters d-flex w-100">
+                  <img src="./images/coment-naranja.svg" alt="" class="commentary-icon mr-3">
+                  <span>Hacer<br> comentarios</span>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-center">
+                <div class="no-gutters d-flex align-items-center w-100">
+                  <img src="./images/edit-naranja.svg" alt="" class="edit-icon mr-3">
+                  <span>Editar</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="d-flex align-items-center justify-content-between pb-3 no-gutters">
-            <div class="d-flex align-items-center col-6">
-              <img src="./images/coment-naranja.svg" alt="" class="modal-privilege-icon mr-3"><span class="modal-register-text">Hacer<br> comentarios</span>
-            </div>
-          </div>
-     
               `;
             break;
           case 4:
             //VISUALIZADOR
+            $(".user-rol").text("Usuario Visualizador,");
             modalPrivileges = `
-          
-            <div class="d-flex align-items-center pb-4 justify-content-between no-gutters">
-              <div class="d-flex align-items-center col-6">
-                <img src="./images/ojo-naranja.svg" alt="" class="modal-privilege-icon mr-3"><span class="modal-register-text">Visualizar<br> cambios</span>
+            <div class="text-rol mb-4">
+            <div class="d-flex justify-content-center align-items-center no-gutters">
+              <div class="d-flex align-items-center mr-3">
+                <div class="no-gutters d-flex align-items-center w-100">
+                  <img src="./images/ojo-naranja.svg" alt="" class="visualize-icon mr-3">
+                  <span>Visualizar<br> cambios </span>
+                </div>
               </div>
-              <div class="d-flex align-items-center col-6">
-                <img src="./images/coment-naranja.svg" alt="" class="modal-privilege-icon ml-3 mr-3"><span class="modal-register-text">Hacer<br> comentarios</span>
+              <div class="d-flex align-items-center ml-3">
+                <div class="no-gutters d-flex w-100">
+                  <img src="./images/coment-naranja.svg" alt="" class="commentary-icon mr-3">
+                  <span>Hacer<br> comentarios</span>
+                </div>
               </div>
             </div>
-          
+          </div>
               `;
             break;
           default:
@@ -749,6 +804,7 @@ function getUserToUpdate(id) {
         $("#editar").replaceWith();
         $("#cambio").load("Editusers.php", function () {
           //VALIDATE EMAIL
+
           const inputCorreo = $(".input-email");
           inputCorreo.keyup(function () {
             const correoValido = $(".warning-email-text");
@@ -758,6 +814,7 @@ function getUserToUpdate(id) {
           });
 
           //VALIDATE PASSWORD
+
           $(".input-password").keyup(function () {
             validateKeyUpPassword($(this), $(".warning-password-text"));
           });

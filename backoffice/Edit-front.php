@@ -32,7 +32,7 @@
                 <input class="insert-data input-password a-text-medium-brownish" type="password" id="edit-user-front-repassword" name="login-password" placeholder="Confirmar contraseña" autocomplete="off" />
               </div>
 
-              <div class=" navbar navbar-expand-sm mb-4 mx-auto mt-2 ">
+              <div class="d-flex align-items-center mb-4 mx-auto mt-2 ">
                 <div class="col-xl-4 margin-sex1 ">
                   <p class="margin-front text-small a-text-medium-brownish">Sexo</p>
                   <form action="" name="formilariosexo" id="formulariosexo" class="formulario">

@@ -417,7 +417,7 @@ function getNameCountry(id) {
         "http://www.claronetworks.openofficedospuntocero.info/images/paises/puerto-rico.svg";
       break;
     case 16:
-      countryName = "República Dominicana";
+      countryName = "Dominican Republic";
       countryImage =
         "http://www.claronetworks.openofficedospuntocero.info/images/paises/dominican-republic.svg";
       break;
