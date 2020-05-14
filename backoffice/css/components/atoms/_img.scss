@@ -204,3 +204,18 @@
 .arrow-r180 {
   transform: rotate(181deg);
 }
+
+.arrow-progra {
+  width: 40px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.arrow-progra:hover {
+  opacity: 1;
+}
+
+.arrow-progra-right {
+  transform: rotate(180deg);
+}

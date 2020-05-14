@@ -76,6 +76,11 @@
   font-family: "Montserrat-Bold";
 }
 
+.a-text-regular-blacktwo {
+  color: #2c2b2b;
+  font-family: "Montserrat-Regular";
+}
+
 .a-text-regular-brownishtwo {
   color: #655f5f;
   font-family: "Montserrat-Regular";
@@ -2011,6 +2016,23 @@
           transform: rotate(181deg);
 }
 
+.arrow-progra {
+  width: 40px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.arrow-progra:hover {
+  opacity: 1;
+}
+
+.arrow-progra-right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
@@ -2663,6 +2685,11 @@ input[type="radio"]:checked + .no-estilo1 {
 .a-text-bold-brownish {
   color: #696363;
   font-family: "Montserrat-Bold";
+}
+
+.a-text-regular-blacktwo {
+  color: #2c2b2b;
+  font-family: "Montserrat-Regular";
 }
 
 .a-text-regular-brownishtwo {
@@ -3951,6 +3978,28 @@ ul {
 
 #selectYear:checked ~ #select-Año .ListaDesplegableAños {
   height: 200px;
+}
+
+.navbar-progra-item-border {
+  border-right: 2px solid #979797;
+}
+
+.navbar-progra-item:nth-child(0) {
+  background: lightblue;
+}
+
+.navbar-progra-item-container {
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.navbar-progra-active .navbar-progra-item-container {
+  border-radius: 7px;
+  background: #da291c;
+}
+
+.navbar-progra-active p {
+  color: #ffffff !important;
 }
 
 .modal-edit-usersfront-content {

@@ -41,18 +41,23 @@ $(document).ready(function () {
 
     $("#" + select + " > p").text(value);
   });
+
+  //CHOOSE DAY
   $(".Dias").click(function () {
     var value = $(this).attr("value");
     var select = $(this).attr("id-select");
     console.log($(this));
     $("#" + select + " > p").text(value);
   });
+  //CHOOSE MONTH
   $(".Meses").click(function () {
     var value = $(this).attr("value");
     var select = $(this).attr("id-select");
 
     $("#" + select + " > p").text(value);
   });
+
+  //CHOOSE YEAR
   $(".Años").click(function () {
     var value = $(this).attr("value");
     var select = $(this).attr("id-select");
@@ -73,6 +78,107 @@ $(document).ready(function () {
       $("#men").attr("src", "images/datos-adicionales/masculino-activo.svg");
     }
   });
+
+  //NAVBAR PROGRAMACIÓN GENERAL
+  $(".navbar-progra-item").click(function () {
+    $(".navbar-progra-item").removeClass("navbar-progra-active");
+    $(this).addClass("navbar-progra-active");
+    if ($(this).hasClass("navbar-canal-claro")) {
+      $(".text").text("canal claro");
+    } else if ($(this).hasClass("navbar-sinopsis")) {
+      $(".text").text("sinopsis");
+    } else if ($(this).hasClass("navbar-programacion")) {
+      $(".text").text("programacion");
+    } else if ($(this).hasClass("navbar-home")) {
+      $(".text").text("home");
+    }
+    if ($(this).attr("navbar-index") == 1) {
+      $(".arrow-progra-left").css({
+        pointerEvents: "none",
+        opacity: "0.5",
+      });
+      $(".arrow-progra-right").css({
+        pointerEvents: "all",
+        opacity: "1",
+      });
+    } else if (
+      $(this).attr("navbar-index") > 1 &&
+      $(this).attr("navbar-index") < 4
+    ) {
+      $(".arrow-progra-left").css({
+        pointerEvents: "all",
+        opacity: "1",
+      });
+
+      $(".arrow-progra-right").css({
+        pointerEvents: "all",
+        opacity: "1",
+      });
+    } else {
+      $(".arrow-progra-right").css({
+        pointerEvents: "none",
+        opacity: "0.5",
+      });
+      $(".arrow-progra-left").css({
+        pointerEvents: "all",
+        opacity: "1",
+      });
+    }
+  });
+
+  $(".arrow-progra").click(function () {
+    let currentNavbarItem = $(".navbar-progra-active");
+    $(".navbar-progra-item").removeClass("navbar-progra-active");
+
+    if ($(this).hasClass("arrow-progra-left")) {
+      currentNavbarItem.prev().addClass("navbar-progra-active");
+      if (currentNavbarItem.prev().hasClass("navbar-canal-claro")) {
+        $(".text").text("canal claro");
+        console.log("canal-claro");
+      } else if (currentNavbarItem.prev().hasClass("navbar-sinopsis")) {
+        $(".text").text("sinopsis");
+      } else if (currentNavbarItem.prev().hasClass("navbar-programacion")) {
+        $(".text").text("programacion");
+      } else if (currentNavbarItem.prev().hasClass("navbar-home")) {
+        $(".text").text("home");
+      }
+      if ($(".navbar-progra-active").attr("navbar-index") == 1) {
+        $(".arrow-progra-left").css({
+          pointerEvents: "none",
+          opacity: "0.5",
+        });
+      } else if ($(".navbar-progra-active").attr("navbar-index") < 4) {
+        $(".arrow-progra-right").css({
+          pointerEvents: "all",
+          opacity: "1",
+        });
+      }
+    } else {
+      currentNavbarItem.next().addClass("navbar-progra-active");
+      if (currentNavbarItem.next().hasClass("navbar-canal-claro")) {
+        console.log("canal-claro");
+        $(".text").text("canal claro");
+      } else if (currentNavbarItem.next().hasClass("navbar-sinopsis")) {
+        $(".text").text("sinopsis");
+      } else if (currentNavbarItem.next().hasClass("navbar-programacion")) {
+        $(".text").text("programacion");
+      } else if (currentNavbarItem.next().hasClass("navbar-home")) {
+        $(".text").text("home");
+      }
+      if ($(".navbar-progra-active").attr("navbar-index") == 4) {
+        $(".arrow-progra-right").css({
+          pointerEvents: "none",
+          opacity: "0.5",
+        });
+      } else if ($(".navbar-progra-active").attr("navbar-index") > 1) {
+        $(".arrow-progra-left").css({
+          pointerEvents: "all",
+          opacity: "1",
+        });
+      }
+    }
+  });
+  //END NAVBAR PROGRAMACIÓN GENERAL
 
   /* GET ALL USERS FRONT */
   getAllUserFront();
