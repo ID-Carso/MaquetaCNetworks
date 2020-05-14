@@ -216,3 +216,11 @@
   position: absolute;
   transform: translate(120%, -60%);
 }
+.subimage{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid $morelightgray;
+  border-radius: 1em;
+  transform: translate(-5px, -21px);
+}

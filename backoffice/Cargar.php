@@ -168,86 +168,86 @@
         </div>
         <div class="contenedor-columna centro">
             <div class="schedule-date">
-                <label >7/1/2019 11:00:00</label>
+                <label class="a-text-regular-brownishtwo text-small">7/1/2019 11:00:00</label>
                 <img src="./images/pencil.svg" alt=""class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >1-Jul-19</label>
+                <label class="a-text-regular-brownishtwo text-small" >1-Jul-19</label>
                 <img src="./images/pencil.svg" alt=""class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >11:00:00 AM</label>
+                <label class="a-text-regular-brownishtwo text-small" >11:00:00 AM</label>
                 <img src="./images/pencil.svg" alt=""class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >12:07:19 AM</label>
+                <label class="a-text-regular-brownishtwo text-small" >12:07:19 AM</label>
                 <img src="./images/pencil.svg" alt=""class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >1982</label>
+                <label class="a-text-regular-brownishtwo text-small" >1982</label>
                 <img src="./images/pencil.svg" alt=""class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >Animación, Cultura, Series</label>
+                <label class="a-text-regular-brownishtwo text-small">Animación, Cultura, Series</label>
                 <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >Cantinflas y sus amigos: James Watt</label>
+                <label class="a-text-regular-brownishtwo text-small">Cantinflas y sus amigos: James Watt</label>
                 <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >3</label>
+                <label class="a-text-regular-brownishtwo text-small" >3</label>
                 <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >28</label>
+                <label class="a-text-regular-brownishtwo text-small">28</label>
                 <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro ">
         <div class="schedule-date">
-                <label >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                <label class="a-text-regular-brownishtwo text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut labore et dolore magna aliqua.  </label>
                 <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >PG-13</label>
+                <label class="a-text-regular-brownishtwo text-small" >PG-13</label>
                 <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >0</label>
+                <label class="a-text-regular-brownishtwo text-small" >0</label>
                 <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >0</label>
+                <label class="a-text-regular-brownishtwo text-small" >0</label>
                 <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >0</label>
+                <label class="a-text-regular-brownishtwo text-small" >0</label>
                 <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>

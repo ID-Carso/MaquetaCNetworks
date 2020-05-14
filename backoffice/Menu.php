@@ -28,7 +28,8 @@
         <nav class="d-flex col-xl-12 navbar-expand-sm justify-content-center position-nav">
         <ul class="d-flex justify-content-center navbar-nav">
       <li class="nav-item br-r ">
-        <button class="btn-menu-select menu">Canal Claro</button>  
+        <button class="btn-menu-select menu">Canal Claro</button>
+        <img src="./images/paises/chile.svg" alt="" class="subimage">
         </li>
         <li class="nav-item br-r">
         <button class="btn-menu-all text-menu-selec">Concert Channel</button>  
@@ -47,12 +48,12 @@
          </li>
     </ul>
 </nav>
-      <div class=" ml-5"> <span class="zona">Última edición :</span>
-      <label class=" text-menu-selec separacion"> septiembre 17 2019 </label>
+      <div class=" ml-5"> <span class="zona">Última edición : </span>
+      <label class=" text-menu-selec separacion"> Septiembre 17 2019 </label>
       <label class="text-menu-selec">18:33:25</label>
     </div>
     <div class="float-right mb-2 mr-5 ali">
-        <span class="zona">Por :</span><label class="text-menu-selec separacion"><span> Antonio López Pérez</span> </label> <label class="text-menu-selec">Usuario editor</label>
+        <span class="zona">Por : </span><label class="text-menu-selec separacion"><span> Antonio López Pérez</span> </label> <label class="text-menu-selec">Usuario editor</label>
     </div>
     <div class="d-flex float-right mt-2 ml-btn mb-5  mr-5 ">
     <button class="btn-grilla  text-grilla mr-3"><span>Grilla</span></button> 

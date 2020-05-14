@@ -14,41 +14,44 @@
     <main>
     <?php
     include 'Menu.php';
+    include 'submenu.php';   
     ?>
     <div id="prev-sinopsis">
         <div class="float-left ml-5">
-            <div><input type="radio"  id="1" value=""/> <label for="1" class="a-btn-check"></label><span class=" ml-4 a-text-grey">Guardar cambios</span>
-                 <input type="radio" id="2" value=""/> <label for="2" class="ml-5 a-btn-check"></label><span class=" ml-4 a-text-grey">No guardar cambios</span>
+            <div><input type="radio"  id="1" value=""/> <label for="1" class="a-btn-check"></label><span class=" ml-2 a-text-grey">Guardar cambios</span>
+                 <input type="radio" id="2" value=""/> <label for="2" class="ml-5 a-btn-check"></label><span class=" ml-2 a-text-grey">No guardar cambios</span>
             </div>
         </div>
-        <div class="ctable">  
-        <div class="mx-auto shadow mt-5 cytable content-table"> 
+        <div class="clearfix"></div>
+        
+    
+        <div class="mx-auto shadow mt-5  mb-5 content-table"> 
             <div class="contenedor-fila">
-                  <div class="contenedor-columna centro  titletable">
+                  <div class="contenedor-columna centro program titletable">
                      <span class="a-text-white-regular a-text-prev">Programa</span>
                  </div>
-                 <div class="contenedor-columna centro  titletable">
+                 <div class="contenedor-columna centro channel titletable">
                      <span class="a-text-white-regular a-text-prev">Canal</span>
                  </div>
-                 <div class="contenedor-columna centro  titletable">
+                 <div class="contenedor-columna centro action titletable">
                      <span class="a-text-white-regular a-text-prev">Acciones</span>
                  </div>
-                 <div class="contenedor-columna centro  titletable">
+                 <div class="contenedor-columna centro action  titletable">
                      <span class="a-text-white-regular a-text-prev">Revisión</span>
                  </div>
             </div>
             <div class="contenedor-fila">
                 <div class="contenedor-columna">
-                    <span class="modal-text pd-5">Mad Men</span>
+                    <span class="a-text-medium-black text-small pd-5">Mad Men</span>
                 </div>
                 <div class="contenedor-columna">
-                    <span class="modal-text pd-5">Canal Claro</span>
+                    <span class="a-text-medium-black text-small pd-5">Canal Claro</span>
                 </div>
-                <div class=" centro contenedor-columna">
+                <div class="contenedor-columna centro">
                 <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
                 </div>
-                <div class=" centro contenedor-columna">
-                <label class=" checksquare">
+                <div class="contenedor-columna centro ">
+                <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
             <input type="checkbox">
             <span class="checkmark1"></span>
             </label>
@@ -56,16 +59,16 @@
             </div>
             <div class="contenedor-fila">
                 <div class="contenedor-columna">
-                    <span class="modal-text pd-5">Mad Men</span>
+                    <span class="a-text-medium-black text-small pd-5">Mad Men</span>
                 </div>
                 <div class="contenedor-columna">
-                    <span class="modal-text pd-5">Canal Claro</span>
+                    <span class="a-text-medium-black text-small pd-5">Canal Claro</span>
                 </div>
-                <div class=" centro contenedor-columna">
+                <div class="contenedor-columna centro">
                 <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
                 </div>
-                <div class=" centro contenedor-columna">
-                <label class=" checksquare">
+                <div class="contenedor-columna centro ">
+                <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
             <input type="checkbox">
             <span class="checkmark1"></span>
             </label>
@@ -73,16 +76,16 @@
             </div>
             <div class="contenedor-fila">
                 <div class="contenedor-columna">
-                    <span class="modal-text pd-5">Mad Men</span>
+                    <span class="a-text-medium-black text-small pd-5">Mad Men</span>
                 </div>
                 <div class="contenedor-columna">
-                    <span class="modal-text pd-5">Canal Claro</span>
+                    <span class="a-text-medium-black text-small pd-5">Canal Claro</span>
                 </div>
-                <div class=" centro contenedor-columna">
+                <div class="contenedor-columna centro ">
                 <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
                 </div>
-                <div class=" centro contenedor-columna">
-                <label class=" checksquare">
+                <div class="contenedor-columna centro">
+                <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
             <input type="checkbox">
             <span class="checkmark1"></span>
             </label>
@@ -90,16 +93,16 @@
             </div>
             <div class="contenedor-fila">
                 <div class="contenedor-columna">
-                    <span class="modal-text pd-5">Mad Men</span>
+                    <span class="a-text-medium-black text-small pd-5">Mad Men</span>
                 </div>
                 <div class="contenedor-columna">
-                    <span class="modal-text pd-5">Canal Claro</span>
+                    <span class="a-text-medium-black text-small pd-5">Canal Claro</span>
                 </div>
-                <div class=" centro contenedor-columna">
+                <div class="contenedor-columna centro">
                 <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
                 </div>
-                <div class=" centro contenedor-columna">
-                <label class="  checksquare">
+                <div class="contenedor-columna centro">
+                <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
             <input type="checkbox">
             <span class="checkmark1"></span>
             </label>
@@ -107,23 +110,23 @@
             </div>
             <div class="contenedor-fila">
                 <div class="contenedor-columna">
-                    <span class="modal-text pd-5">Mad Men</span>
+                    <span class="a-text-medium-black text-small pd-5">Mad Men</span>
                 </div>
                 <div class="contenedor-columna">
-                    <span class="modal-text pd-5">Canal Claro</span>
+                    <span class="a-text-medium-black text-small pd-5">Canal Claro</span>
                 </div>
-                <div class=" centro contenedor-columna">
+                <div class="contenedor-columna centro">
                 <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
                 </div>
-                <div class=" centro contenedor-columna">
-                <label class="  checksquare">
+                <div class="contenedor-columna centro">
+                <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
             <input type="checkbox">
             <span class="checkmark1"></span>
             </label>
                 </div>
             </div>
         </div>
-        </div>
+        
     </div>
     </main>
 </body>

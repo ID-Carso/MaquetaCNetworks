@@ -27,10 +27,10 @@
     </div>
     <div class="clearfix"></div>
     <div class="centro mt-3">
-    <p class="a-text-black-regular h3 mb-5">Toda la información del Canal Claro fue guardada y pueden ser enviada a aprobación </p>
+    <p class="a-text-black-regular h3 mb-5">No toda la información del Canal Claro fue guardada y para ser enviada <br> a aprobación debes revisar nuevamente y guardar todos los cambios. </p>
     </div>
    
-   <div class="mx-auto  mt-3 shadow mb-5 content-table">
+   <div class="mx-auto  mt-3 shadow  mb-5 content-table">
 <div class="contenedor-fila">
 <div class="contenedor-columna  mt-5 centro cl titletable"><span class="a-text-white-bold a-text-title-table ">CANALES CON CAMBIOS GUARDADOS</span></div>
 </div>
@@ -49,16 +49,17 @@
         <div class=" d-flex centro m-5 justify-content-around">
             <div class="d-flex align-items-center col-4"> 
             <img src="./images/good.svg" alt="">
-            <span class="a-text-green-apro ml-2">Sinópsis</span>
+            <span class="a-text-green-apro ml-2 ">Sinópsis</span>
             </div>
             <div class="d-flex align-items-center col-4">
-            <img src="./images/good.svg" alt="">
-            <span class="a-text-green-apro ml-2 ">Home</span>
+            <img src="./images/bad.svg" alt="">
+            <span class="a-text-orange-apro ml-2">Home</span>
             </div>
         </div>  
         <div class="centro mb-5">
-             <label class="a-btn-general pt-2 mr-5 a-btn-teal text-sucess" value="">Mandar a aprobación</label>
-             <label  class="a-btn-general  pt-2 a-btn-grey a-text-grey" value="">Revisar nuevamente</label>
+             <button class="a-btn-general  mr-2 a-btn-grey text-grey" value="">Mandar a aprobación</button>
+             <button  class="a-btn-general    mr-2 a-btn-teal text-sucess" value="">Revisar nuevamente</button>
+             <button  class="a-btn-general  a-btn-orange text-sucess" value="">Hacer comentarios</button>
         </div>          
 
     </div>

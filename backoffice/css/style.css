@@ -101,6 +101,11 @@
   color: black;
 }
 
+.a-text-medium-black {
+  font-family: "Montserrat-Regular";
+  color: #161515;
+}
+
 .a-text-medium-orange {
   color: #fd945e;
   font-family: "Montserrat-Medium";
@@ -703,6 +708,12 @@
 
 .a-text-green-apro {
   color: #009245;
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+}
+
+.a-text-orange-apro {
+  color: #ff8200;
   font-family: "Montserrat-Bold";
   font-size: 24px;
 }
@@ -1739,6 +1750,11 @@
   border: 1px solid #d1d0d0;
 }
 
+.a-btn-orange {
+  background-color: #ff8200;
+  border: 1px solid #ff8200;
+}
+
 .a-btn-check {
   width: 38px;
   height: 38px;
@@ -2027,6 +2043,16 @@
   position: absolute;
   -webkit-transform: translate(120%, -60%);
           transform: translate(120%, -60%);
+}
+
+.subimage {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #979797;
+  border-radius: 1em;
+  -webkit-transform: translate(-5px, -21px);
+          transform: translate(-5px, -21px);
 }
 
 @font-face {
@@ -2325,7 +2351,7 @@ input[type="radio"]:checked + .no-estilo1 {
 .br-r {
   border-right: 2px solid #d8d8d8;
   margin-right: 10px;
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
 .cuadro-dia {
@@ -2691,22 +2717,8 @@ input[type="radio"]:checked + .no-estilo1 {
   margin-top: -40px;
 }
 
-.ali-prev {
-  margin-top: -9%;
-}
-
 .mt12 {
   margin-top: 12%;
-}
-
-.ctable {
-  -webkit-transform: translateX(-16%);
-          transform: translateX(-16%);
-}
-
-.cytable {
-  -webkit-transform: translateY(40%);
-          transform: translateY(40%);
 }
 
 .ml-12 {
@@ -2821,6 +2833,11 @@ input[type="radio"]:checked + .no-estilo1 {
 .a-text-regular-black {
   font-family: "Montserrat-Regular";
   color: black;
+}
+
+.a-text-medium-black {
+  font-family: "Montserrat-Regular";
+  color: #161515;
 }
 
 .a-text-medium-orange {
@@ -3425,6 +3442,12 @@ input[type="radio"]:checked + .no-estilo1 {
 
 .a-text-green-apro {
   color: #009245;
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+}
+
+.a-text-orange-apro {
+  color: #ff8200;
   font-family: "Montserrat-Bold";
   font-size: 24px;
 }
@@ -4189,6 +4212,22 @@ ul {
 
 .newpassword-container {
   height: 100vh;
+}
+
+.program {
+  width: 485px;
+}
+
+.channel {
+  width: 255px;
+}
+
+.action {
+  width: 201px;
+}
+
+.cl {
+  width: 925px;
 }
 
 @font-face {
