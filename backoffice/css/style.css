@@ -106,6 +106,11 @@
   color: black;
 }
 
+.a-text-medium-black {
+  font-family: "Montserrat-Regular";
+  color: #161515;
+}
+
 .a-text-medium-orange {
   color: #fd945e;
   font-family: "Montserrat-Medium";
@@ -708,6 +713,12 @@
 
 .a-text-green-apro {
   color: #009245;
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+}
+
+.a-text-orange-apro {
+  color: #ff8200;
   font-family: "Montserrat-Bold";
   font-size: 24px;
 }
@@ -1744,6 +1755,11 @@
   border: 1px solid #d1d0d0;
 }
 
+.a-btn-orange {
+  background-color: #ff8200;
+  border: 1px solid #ff8200;
+}
+
 .a-btn-check {
   width: 38px;
   height: 38px;
@@ -2033,6 +2049,34 @@
           transform: rotate(180deg);
 }
 
+.pencil {
+  position: absolute;
+  -webkit-transform: translateY(-39%);
+          transform: translateY(-39%);
+}
+
+.pencil1 {
+  position: absolute;
+  -webkit-transform: translate(200%, -14%);
+          transform: translate(200%, -14%);
+}
+
+.pencil2 {
+  position: absolute;
+  -webkit-transform: translate(120%, -60%);
+          transform: translate(120%, -60%);
+}
+
+.subimage {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #979797;
+  border-radius: 1em;
+  -webkit-transform: translate(-5px, -21px);
+          transform: translate(-5px, -21px);
+}
+
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
@@ -2202,6 +2246,113 @@ input[type="radio"]:checked + .no-estilo1 {
   border: none;
 }
 
+.checkradio {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkradio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 1em;
+  border: 3px solid grey;
+  background-color: white;
+}
+
+.checkradio input:checked ~ .checkmark {
+  background-color: white;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkradio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkradio .checkmark:after {
+  left: 16%;
+  top: 16%;
+  width: 13px;
+  height: 13px;
+  background-color: #6a6666;
+  border-radius: 1em;
+}
+
+.checksquare {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checksquare input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 38px;
+  width: 38px;
+  border: 3px solid #adafae;
+  background-color: white;
+}
+
+.checksquare input:checked ~ .checkmark1 {
+  background-color: white;
+}
+
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checksquare input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+.checksquare .checkmark1:after {
+  left: 12px;
+  top: 0px;
+  width: 12px;
+  height: 26px;
+  border: solid #009245;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 .line {
   width: 100%;
   height: 1px;
@@ -2222,7 +2373,7 @@ input[type="radio"]:checked + .no-estilo1 {
 .br-r {
   border-right: 2px solid #d8d8d8;
   margin-right: 10px;
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
 .cuadro-dia {
@@ -2588,26 +2739,20 @@ input[type="radio"]:checked + .no-estilo1 {
   margin-top: -40px;
 }
 
-.ali-prev {
-  margin-top: -9%;
-}
-
 .mt12 {
   margin-top: 12%;
 }
 
-.ctable {
-  -webkit-transform: translateX(-16%);
-          transform: translateX(-16%);
-}
-
-.cytable {
-  -webkit-transform: translateY(40%);
-          transform: translateY(40%);
-}
-
 .ml-12 {
   margin-left: 12%;
+}
+
+.mtop-8 {
+  margin-top: -8%;
+}
+
+.ml20 {
+  margin-left: -20%;
 }
 
 @font-face {
@@ -2715,6 +2860,11 @@ input[type="radio"]:checked + .no-estilo1 {
 .a-text-regular-black {
   font-family: "Montserrat-Regular";
   color: black;
+}
+
+.a-text-medium-black {
+  font-family: "Montserrat-Regular";
+  color: #161515;
 }
 
 .a-text-medium-orange {
@@ -3319,6 +3469,12 @@ input[type="radio"]:checked + .no-estilo1 {
 
 .a-text-green-apro {
   color: #009245;
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+}
+
+.a-text-orange-apro {
+  color: #ff8200;
   font-family: "Montserrat-Bold";
   font-size: 24px;
 }
@@ -4053,6 +4209,7 @@ ul {
   display: table-cell;
   border: 1px solid #d3d3d3;
   vertical-align: middle;
+  width: 146px;
 }
 
 .fondo {
@@ -4104,6 +4261,22 @@ ul {
 
 .newpassword-container {
   height: 100vh;
+}
+
+.program {
+  width: 485px;
+}
+
+.channel {
+  width: 255px;
+}
+
+.action {
+  width: 201px;
+}
+
+.cl {
+  width: 925px;
 }
 
 @font-face {

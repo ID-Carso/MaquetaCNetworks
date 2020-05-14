@@ -63,6 +63,10 @@
   font-family: $MontserratRegular;
   color: black;
 }
+.a-text-medium-black{
+  font-family: $MontserratRegular;
+  color:$black;
+}
 
 .a-text-medium-orange {
   color: $pastelOrange;
@@ -73,6 +77,7 @@
   color: $teal;
   font-family: $MontserratBold;
 }
+
 
 /* END TEXT BASE*/
 
@@ -600,6 +605,11 @@
 }
 .a-text-green-apro {
   color: $kelley-green;
+  font-family: $MontserratBold;
+  font-size: 24px;
+}
+.a-text-orange-apro {
+  color: $orange;
   font-family: $MontserratBold;
   font-size: 24px;
 }

@@ -219,3 +219,23 @@
 .arrow-progra-right {
   transform: rotate(180deg);
 }
+.pencil {
+  position: absolute;
+  transform: translateY(-39%);
+}
+.pencil1 {
+  position: absolute;
+  transform: translate(200%, -14%);
+}
+.pencil2 {
+  position: absolute;
+  transform: translate(120%, -60%);
+}
+.subimage {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid $morelightgray;
+  border-radius: 1em;
+  transform: translate(-5px, -21px);
+}

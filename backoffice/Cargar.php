@@ -103,10 +103,14 @@
         </div>
         <div class="contenedor-columna centro"></div>
         <div class="contenedor-columna centro">
-            <input type="radio" name="select" id="selecciona" style="display: inline-block;">
+            <label class="d-inline-block mr-4 checkradio">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
         </div>
         <div class="contenedor-columna centro">
             <label class="program-original">Terminator</label>
+            <img src="./images/pencil.svg" alt="" class=""class="pencil">
         </div>
         <div class="contenedor-columna centro">
         <div class="yes-no">
@@ -117,10 +121,12 @@
                     <label for="no" id="noestado" class="no-estilo">
                       No</label>
                   </div>
+                  <img src="./images/pencil.svg" alt=""class="pencil1">
 
-                  <div class=" d-flex fechas mt-2">
-<label class="date" type=date>7/1/2019</label> <label class="date" type="time">11:00:00</label>
+                  <div class=" d-flex fechas ">
+                     <label class="date" type=date>7/1/2019</label> <label class="date" type="time">11:00:00</label>
                   </div>
+                 
         </div>
         <div class="contenedor-columna centro">
         <div class="periodicidad">
@@ -133,99 +139,116 @@
                   </div> 
         </div>
         <div class="contenedor-columna centro">
-            <div>
-            <input type="radio" name="establecer"  style=" display:inline-block;">
-
-            </div>
+        <label class="d-inline-block checkradio mr-4 mb-5">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
             <div class="vigencia">          
                 <label class="text-public">Vigencia en home</label>
+                <img src="./images/pencil.svg" alt=""class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
-            <div>
-            <input type="radio" name="establecer"  style=" display:block;" class="posilan"checked>
-            <label class="text-lan">No te pierdas</label>
-            </div>
-            <div>
-            <input type="radio" name="establecer"style="display:block;" class="posi1" checked>
-            <label class="text-lan">Sólo por canal claro</label>
-            </div>
+        <div class="checkradio d-flex mt-3 ml-4"><span class="text-lan ml-5 mtop-8"> No te pierdas</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+</div>
+            <div class="checkradio d-flex ml-4"><span class="text-lan ml-5 mtop-8 mb-4"> Solo por canal claro</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+</div>
             <div class="vige-lan">
             <label class="text-public">Vigencia en landing</label>
             </div>
         </div>
         <div class="contenedor-columna centro">
-            <div class="image-ta"></div>
+            <div class="image-ta">
+            <img src="./images/pencil.svg" alt=""class="pencil2">
+            </div>
         </div>
         <div class="contenedor-columna centro">
             <div class="schedule-date">
-                <label >7/1/2019 11:00:00</label>
+                <label class="a-text-regular-brownishtwo text-small">7/1/2019 11:00:00</label>
+                <img src="./images/pencil.svg" alt=""class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >1-Jul-19</label>
+                <label class="a-text-regular-brownishtwo text-small" >1-Jul-19</label>
+                <img src="./images/pencil.svg" alt=""class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >11:00:00 AM</label>
+                <label class="a-text-regular-brownishtwo text-small" >11:00:00 AM</label>
+                <img src="./images/pencil.svg" alt=""class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >12:07:19 AM</label>
+                <label class="a-text-regular-brownishtwo text-small" >12:07:19 AM</label>
+                <img src="./images/pencil.svg" alt=""class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >1982</label>
+                <label class="a-text-regular-brownishtwo text-small" >1982</label>
+                <img src="./images/pencil.svg" alt=""class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >Animación, Cultura, Series</label>
+                <label class="a-text-regular-brownishtwo text-small">Animación, Cultura, Series</label>
+                <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >Cantinflas y sus amigos: James Watt</label>
+                <label class="a-text-regular-brownishtwo text-small">Cantinflas y sus amigos: James Watt</label>
+                <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >3</label>
+                <label class="a-text-regular-brownishtwo text-small" >3</label>
+                <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >28</label>
+                <label class="a-text-regular-brownishtwo text-small">28</label>
+                <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro ">
         <div class="schedule-date">
-                <label >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </label>
+                <label class="a-text-regular-brownishtwo text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut labore et dolore magna aliqua.  </label>
+                <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >PG-13</label>
+                <label class="a-text-regular-brownishtwo text-small" >PG-13</label>
+                <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >0</label>
+                <label class="a-text-regular-brownishtwo text-small" >0</label>
+                <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >0</label>
+                <label class="a-text-regular-brownishtwo text-small" >0</label>
+                <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
         <div class="schedule-date">
-                <label >0</label>
+                <label class="a-text-regular-brownishtwo text-small" >0</label>
+                <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>
     </div>
