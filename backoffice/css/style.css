@@ -2011,6 +2011,24 @@
           transform: rotate(181deg);
 }
 
+.pencil {
+  position: absolute;
+  -webkit-transform: translateY(-39%);
+          transform: translateY(-39%);
+}
+
+.pencil1 {
+  position: absolute;
+  -webkit-transform: translate(200%, -14%);
+          transform: translate(200%, -14%);
+}
+
+.pencil2 {
+  position: absolute;
+  -webkit-transform: translate(120%, -60%);
+          transform: translate(120%, -60%);
+}
+
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
@@ -2178,6 +2196,113 @@ input[type="radio"]:checked + .no-estilo1 {
   background-color: #4c4b4b;
   color: #ffffff;
   border: none;
+}
+
+.checkradio {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkradio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 1em;
+  border: 3px solid grey;
+  background-color: white;
+}
+
+.checkradio input:checked ~ .checkmark {
+  background-color: white;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkradio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkradio .checkmark:after {
+  left: 16%;
+  top: 16%;
+  width: 13px;
+  height: 13px;
+  background-color: #6a6666;
+  border-radius: 1em;
+}
+
+.checksquare {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checksquare input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 38px;
+  width: 38px;
+  border: 3px solid #adafae;
+  background-color: white;
+}
+
+.checksquare input:checked ~ .checkmark1 {
+  background-color: white;
+}
+
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checksquare input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+.checksquare .checkmark1:after {
+  left: 12px;
+  top: 0px;
+  width: 12px;
+  height: 26px;
+  border: solid #009245;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .line {
@@ -2586,6 +2711,14 @@ input[type="radio"]:checked + .no-estilo1 {
 
 .ml-12 {
   margin-left: 12%;
+}
+
+.mtop-8 {
+  margin-top: -8%;
+}
+
+.ml20 {
+  margin-left: -20%;
 }
 
 @font-face {
@@ -4004,6 +4137,7 @@ ul {
   display: table-cell;
   border: 1px solid #d3d3d3;
   vertical-align: middle;
+  width: 146px;
 }
 
 .fondo {

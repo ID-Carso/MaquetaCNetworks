@@ -48,8 +48,10 @@
                 <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
                 </div>
                 <div class=" centro contenedor-columna">
-                    <input type="radio" id="3" checked/>
-                <label for="3" class="a-btn-check"></label>
+                <label class=" checksquare">
+            <input type="checkbox">
+            <span class="checkmark1"></span>
+            </label>
                 </div>
             </div>
             <div class="contenedor-fila">
@@ -63,8 +65,10 @@
                 <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
                 </div>
                 <div class=" centro contenedor-columna">
-                <input type="radio" id="4" checked/>
-                <label for="4" class="a-btn-check"></label>
+                <label class=" checksquare">
+            <input type="checkbox">
+            <span class="checkmark1"></span>
+            </label>
                 </div>
             </div>
             <div class="contenedor-fila">
@@ -78,8 +82,10 @@
                 <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
                 </div>
                 <div class=" centro contenedor-columna">
-                <input type="radio" id="5" checked/>
-                <label for="5" class="a-btn-check"></label>
+                <label class=" checksquare">
+            <input type="checkbox">
+            <span class="checkmark1"></span>
+            </label>
                 </div>
             </div>
             <div class="contenedor-fila">
@@ -93,8 +99,10 @@
                 <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
                 </div>
                 <div class=" centro contenedor-columna">
-                <input type="radio"  checked/>
-                <label class="a-btn-check"></label>
+                <label class="  checksquare">
+            <input type="checkbox">
+            <span class="checkmark1"></span>
+            </label>
                 </div>
             </div>
             <div class="contenedor-fila">
@@ -108,7 +116,10 @@
                 <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
                 </div>
                 <div class=" centro contenedor-columna">
-                <label class="a-btn-check"></label>
+                <label class="  checksquare">
+            <input type="checkbox">
+            <span class="checkmark1"></span>
+            </label>
                 </div>
             </div>
         </div>
