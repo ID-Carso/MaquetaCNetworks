@@ -24,6 +24,32 @@
   color: $fontColor;
 }
 
+.h3 {
+  font-size: 24px;
+}
+
+.text-normal {
+  font-size: 16px;
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+.text-smaller {
+  font-size: 12px;
+}
+
+.a-text-bold-greyish {
+  color: $greyishBrownTwo;
+  font-family: $montserratBold;
+}
+
+.a-text-medium-greyish {
+  color: $greyishBrownTwo;
+  font-family: $montserratMedium;
+}
+
 .a-our-vision-title {
   @include title-section($pinkColor, $titleSection);
 }

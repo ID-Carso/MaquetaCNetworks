@@ -206,6 +206,22 @@ h6 {
   padding: 6px;
 }
 
+.h3 {
+  font-size: 24px;
+}
+
+.text-normal {
+  font-size: 16px;
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+.text-smaller {
+  font-size: 12px;
+}
+
 .a-our-vision-title {
   font-size: 24px;
   color: #eb0d6c;
@@ -5215,7 +5231,7 @@ input[type="radio"]:checked + .mujer-estilo {
 }
 
 .aboutus-container {
-  background-image: url(../images/home/bg-canal-claro.jpg);
+  background-image: url(../images/aboutus/aboutus-background.png);
   background-size: cover;
 }
 

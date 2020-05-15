@@ -135,8 +135,8 @@
           </h2>
         </div>
         <div class="imperdibles-video-container">
-          <video class="promo-video" autoplay muted controls>
-            <source src="./video/claro-cinema-promo.mp4" type="video/mp4">
+          <video class="promo-video" autoplay muted controls loop>
+            <source src="http://www.claronetworks.openofficedospuntocero.info/video/claro-cinema-promo.mp4" type="video/mp4">
           </video>
         </div>
 

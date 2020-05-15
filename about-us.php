@@ -22,15 +22,12 @@ include './views/partials/head.php';
             <?php
             include './views/partials/menu-desktop-black.php';
             ?>
-            <img src=" ./images/registro/group-3.svg" alt="" class="image-circle-blue">
-            <img src="./images/registro/group-37.svg" alt="" class="image-points-blue">
-            <img src="./images/registro/group-12.svg" alt="" class="image-circle-pink">
             <div class="aboutus-content">
                 <div class="aboutus-titles-container">
                     <h2 class="text-monblack aboutus-title1 text-teal-blue">QUIENES</h2>
                     <h2 class="text-monblack aboutus-title2">SOMOS</h2>
                 </div>
-                <div class="mb-4">
+                <!--<div class="mb-4">
                     <div class="aboutus-subtitle-container">
                         <p class="text-bold text-teal-blue aboutus-subtitle mb-0">
                             Claro Networks
@@ -105,7 +102,7 @@ include './views/partials/head.php';
                             Ser un fanático de los deportes es un trabajo de veinticuatro horas. En Claro Sports lo entendemos a la perfección. Con gran profesionalismo en el análisis, las narraciones y capacidad de transmisión llevamos a tu televisión los eventos más importantes de un sinnúmero de disciplinas deportivas. Somos el broadcaster oficial de los Juegos Olímpicos desde Río 2016, en donde creamos una experiencia única para el telespectador con transmisiones multipantallas y en cualquier dispositivo. Experiencia que se repetirá en las justas olímpicas de Tokio, París y Los Ángeles.
                         </p>
                     </div>
-                </div>
+                </div>-->
 
             </div>
         </div>
