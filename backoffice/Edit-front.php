@@ -546,6 +546,7 @@
                       </label>
                     </div>
                   </div>
+                  <p class="mb-0 a-text-medium-black" id="error_birthday">Error</p>
                 </div>
               </div>
 

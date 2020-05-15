@@ -346,7 +346,6 @@ function registerUser(name, email, rol) {
         });
         $(".loader").remove();
         if (json.data.email) {
-          console.log("422 email");
           $("#error_email")
             .text("El email ya ha sido registrado")
             .css("color", "red");
@@ -774,6 +773,16 @@ function updateDataUser(id, name, email, password, repassword, rolId) {
         }
         $(".modal-body-edit-userbo").html(modalPrivileges);
         $(".modal-edit-user").modal("show");
+      } else if (json.code == 422) {
+        if (json.data.email) {
+          $("#error_email")
+            .text("El email ya ha sido registrado")
+            .css("color", "red");
+          $(".error").attr(
+            "src",
+            "http://www.claronetworks.openofficedospuntocero.info/images/registro/alerta.svg"
+          );
+        }
       }
     },
   });
@@ -979,7 +988,10 @@ function getUserFrontToUpdate(id) {
             let year = $(".SeleccionAñoLista").text();
             let date = year + "-" + month + "-" + day;
             if (day == "Día" || month == "Mes" || year == "Año") {
-              date = 0;
+              $(".error_birthday")
+                .text("La fecha debe estar completa")
+                .css("color", "red");
+              return false;
             }
 
             let genderMale = $("#hombre");

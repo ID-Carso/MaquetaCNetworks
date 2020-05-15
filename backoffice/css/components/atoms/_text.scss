@@ -54,6 +54,16 @@
   color: $repassgray;
 }
 
+.a-text-medium-black {
+  font-family: $MontserratRegular;
+  color: $black;
+}
+
+.a-text-medium-orange {
+  color: $pastelOrange;
+  font-family: $MontserratMedium;
+}
+
 .a-text-semibold-lightbrown {
   font-family: $MontserratSemiBold;
   color: $lightbrown;
@@ -63,21 +73,11 @@
   font-family: $MontserratRegular;
   color: black;
 }
-.a-text-medium-black{
-  font-family: $MontserratRegular;
-  color:$black;
-}
-
-.a-text-medium-orange {
-  color: $pastelOrange;
-  font-family: $MontserratMedium;
-}
 
 .a-text-bold-teal {
   color: $teal;
   font-family: $MontserratBold;
 }
-
 
 /* END TEXT BASE*/
 
@@ -689,4 +689,9 @@
 
 .warning-email {
   font-size: 14px;
+}
+
+#error_birthday {
+  position: absolute;
+  bottom: -15%;
 }

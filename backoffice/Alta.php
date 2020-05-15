@@ -360,11 +360,15 @@ session_start();
             </div>
 
           </form>
+          <div class="pb-4 text-center">
+            <button type="button" class="register-user-button a-button-pill-teal-primary a-button-pill-padding a-text-bold-white">REGISTRAR</button>
+          </div>
 
         </div>
       </div>
       <div class="col-xl-8 position-btn-regis  mx-auto ">
-        <button type="button" class="btn-regis text-public register-user-button">REGISTRAR</button>
+
+        <!--<button type="button" class="btn-regis text-public register-user-button">REGISTRAR</button>-->
       </div>
     </div>
     <!--modal regis-->

@@ -96,16 +96,6 @@
   color: #696363;
 }
 
-.a-text-semibold-lightbrown {
-  font-family: "Montserrat-SemiBold";
-  color: #666262;
-}
-
-.a-text-regular-black {
-  font-family: "Montserrat-Regular";
-  color: black;
-}
-
 .a-text-medium-black {
   font-family: "Montserrat-Regular";
   color: #161515;
@@ -114,6 +104,16 @@
 .a-text-medium-orange {
   color: #fd945e;
   font-family: "Montserrat-Medium";
+}
+
+.a-text-semibold-lightbrown {
+  font-family: "Montserrat-SemiBold";
+  color: #666262;
+}
+
+.a-text-regular-black {
+  font-family: "Montserrat-Regular";
+  color: black;
 }
 
 .a-text-bold-teal {
@@ -803,6 +803,11 @@
 
 .warning-email {
   font-size: 14px;
+}
+
+#error_birthday {
+  position: absolute;
+  bottom: -15%;
 }
 
 @font-face {
@@ -2852,16 +2857,6 @@ input[type="radio"]:checked + .no-estilo1 {
   color: #696363;
 }
 
-.a-text-semibold-lightbrown {
-  font-family: "Montserrat-SemiBold";
-  color: #666262;
-}
-
-.a-text-regular-black {
-  font-family: "Montserrat-Regular";
-  color: black;
-}
-
 .a-text-medium-black {
   font-family: "Montserrat-Regular";
   color: #161515;
@@ -2870,6 +2865,16 @@ input[type="radio"]:checked + .no-estilo1 {
 .a-text-medium-orange {
   color: #fd945e;
   font-family: "Montserrat-Medium";
+}
+
+.a-text-semibold-lightbrown {
+  font-family: "Montserrat-SemiBold";
+  color: #666262;
+}
+
+.a-text-regular-black {
+  font-family: "Montserrat-Regular";
+  color: black;
 }
 
 .a-text-bold-teal {
@@ -3559,6 +3564,11 @@ input[type="radio"]:checked + .no-estilo1 {
 
 .warning-email {
   font-size: 14px;
+}
+
+#error_birthday {
+  position: absolute;
+  bottom: -15%;
 }
 
 /*Tamaño de textos */
