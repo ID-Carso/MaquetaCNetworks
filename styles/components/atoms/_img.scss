@@ -34,7 +34,7 @@
 }
 
 .fondo-index {
-  background: url(../../../images/paises/haryypotter.png);
+  background: url(../../../images/General/claro-networks-portada.jpg);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -81,7 +81,7 @@
   }
 
   .shadow1 {
-    box-shadow: 3px 3px 5px 6px #5c1864;
+    //box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 15px;
   }
 }
@@ -97,9 +97,7 @@
   }
 
   .shadow1 {
-    -moz-box-shadow: 3px 3px 5px 6px #5c1864;
-    -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
-    box-shadow: 3px 3px 5px 6px #5c1864;
+    //box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 15px;
   }
 }
@@ -115,11 +113,9 @@
   }
 
   .shadow1 {
-    -moz-box-shadow: 3px 3px 5px 6px #5c1864;
-    -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
-    box-shadow: 3px 3px 5px 6px #5c1864;
+    //box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 15px;
-    margin-top: 4%;
+    // margin-top: 4%;
   }
 }
 

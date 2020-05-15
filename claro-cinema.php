@@ -135,15 +135,9 @@
           </h2>
         </div>
         <div class="imperdibles-video-container">
-          <div class="poster">
-            <div class="poster-body">
-              <div class="showtime-container justify-content-end">
-                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-              </div>
-              <div class="thumbnail">
-              </div>
-            </div>
-          </div>
+          <video class="promo-video" autoplay muted controls>
+            <source src="./video/claro-cinema-promo.mp4" type="video/mp4">
+          </video>
         </div>
 
       </section>

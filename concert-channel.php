@@ -110,7 +110,10 @@
                 <h2 class="concert-subtitle">ve un <span>adelanto</span> de la programación</h2>
             </div>
             <div class="week-videos-container">
-                <div class="poster">
+                <video class="promo-video" autoplay muted controls>
+                    <source src="./video/concert-channel-promo.mp4" type="video/mp4">
+                </video>
+                <!--<div class="poster">
                     <div class="poster-body">
                         <div class="showtime-container justify-content-end">
                             <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
@@ -118,7 +121,7 @@
                         <div class="thumbnail">
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
 
         </section>

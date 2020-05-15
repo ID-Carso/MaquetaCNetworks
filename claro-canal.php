@@ -137,7 +137,10 @@
         </h2>
 
         <div class="week-claro-video-container">
-          <div class="poster">
+          <video class="promo-video" autoplay muted controls>
+            <source src="./video/canal-claro-promo.mp4" type="video/mp4">
+          </video>
+          <!--<div class="poster">
             <div class="next-week-thumb">
               <div class="a-next-week-rectangle">
                 <div class="poster-title-margin rectangle-content">
@@ -147,7 +150,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>-->
         </div>
 
 

@@ -178,7 +178,7 @@ function getPrograms(date, country) {
                           </div>
                           <div class="a-claro-rectangle thumbnail-info-title">
                               <div class="poster-title-margin">
-                                  <p class="a-poster-text-white">${program.program_title}</p>
+                                  <p class="a-poster-text-white">${program.chapter_title}</p>
                               </div>
                           </div>
                         </div>
@@ -196,7 +196,7 @@ function getPrograms(date, country) {
                           </div>
                           <div class="a-claro-rectangle thumbnail-info-title">
                               <div class="poster-title-margin">
-                                  <p class="a-poster-text-white">${program.program_title}</p>
+                                  <p class="a-poster-text-white">${program.chapter_title}</p>
                               </div>
                           </div>
                     </div>
@@ -220,7 +220,7 @@ function getPrograms(date, country) {
                           </div>
                           <div class="a-claro-rectangle thumbnail-info-title">
                               <div class="poster-title-margin">
-                                  <p class="a-poster-text-white">${program.program_title}</p>
+                                  <p class="a-poster-text-white">${program.chapter_title}</p>
                               </div>
                           </div>
                      </div>
@@ -243,7 +243,7 @@ function getPrograms(date, country) {
                           </div>
                           <div class="a-claro-rectangle thumbnail-info-title">
                               <div class="poster-title-margin">
-                                  <p class="a-poster-text-white">${program.program_title}</p>
+                                  <p class="a-poster-text-white">${program.chapter_title}</p>
                               </div>
                           </div>
                         </div>
@@ -260,7 +260,7 @@ function getPrograms(date, country) {
         if (arrayCanalClaro.includes(program.chapter_id)) {
           programCanalClaro = `
             <div class="schedule-container">
-            <p class="schedule-title">${program.program_title}</p>
+            <p class="schedule-title">${program.chapter_title}</p>
             <div class="schedule-item-body">
                 <div class="schedule-poster">
                     <div class="poster">
@@ -295,7 +295,7 @@ function getPrograms(date, country) {
         } else {
           programCanalClaro = `
             <div class="schedule-container">
-            <p class="schedule-title">${program.program_title}</p>
+            <p class="schedule-title">${program.chapter_title}</p>
             <div class="schedule-item-body">
                 <div class="schedule-poster">
                    <div class="poster">
@@ -347,7 +347,7 @@ function getPrograms(date, country) {
                       </div>
                       <div class="a-concert-rectangle thumbnail-info-title">
                           <div class="poster-title-margin">
-                              <p class="a-poster-text-white">${program.program_title}</p>
+                              <p class="a-poster-text-white">${program.chapter_title}</p>
                           </div>
                       </div>
                   </div>
@@ -365,7 +365,7 @@ function getPrograms(date, country) {
                     </div>
                     <div class="a-concert-rectangle thumbnail-info-title">
                         <div class="poster-title-margin">
-                            <p class="a-poster-text-white">${program.program_title}</p>
+                            <p class="a-poster-text-white">${program.chapter_title}</p>
                         </div>
                     </div>
                 </div>
@@ -389,7 +389,7 @@ function getPrograms(date, country) {
                         </div>
                         <div class="a-concert-rectangle thumbnail-info-title">
                             <div class="poster-title-margin">
-                                <p class="a-poster-text-white">${program.program_title}</p>
+                                <p class="a-poster-text-white">${program.chapter_title}</p>
                             </div>
                         </div>
                     </div>
@@ -411,7 +411,7 @@ function getPrograms(date, country) {
                     </div>
                     <div class="a-concert-rectangle thumbnail-info-title">
                         <div class="poster-title-margin">
-                            <p class="a-poster-text-white">${program.program_title}</p>
+                            <p class="a-poster-text-white">${program.chapter_title}</p>
                         </div>
                     </div>
                </div>
@@ -426,7 +426,7 @@ function getPrograms(date, country) {
         if (arrayConcertChannel.includes(program.chapter_id)) {
           programConcertChannel = `
             <div class="schedule-container">
-            <p class="schedule-title">${program.program_title}</p>
+            <p class="schedule-title">${program.chapter_title}</p>
             <div class="schedule-item-body">
                 <div class="schedule-poster">
                     <div class="poster">
@@ -461,7 +461,7 @@ function getPrograms(date, country) {
         } else {
           programConcertChannel = `
             <div class="schedule-container">
-            <p class="schedule-title">${program.program_title}</p>
+            <p class="schedule-title">${program.chapter_title}</p>
             <div class="schedule-item-body">
                 <div class="schedule-poster">
                     <div class="poster">
@@ -515,7 +515,7 @@ function getPrograms(date, country) {
                           </div>
                           <div class="a-cinema-rectangle thumbnail-info-title">
                               <div class="poster-title-margin">
-                                  <p class="a-poster-text-white">${program.program_title}</p>
+                                  <p class="a-poster-text-white">${program.chapter_title}</p>
                               </div>
                           </div>
                         </div>
@@ -535,7 +535,7 @@ function getPrograms(date, country) {
                           </div>
                           <div class="a-cinema-rectangle thumbnail-info-title">
                               <div class="poster-title-margin">
-                                  <p class="a-poster-text-white">${program.program_title}</p>
+                                  <p class="a-poster-text-white">${program.chapter_title}</p>
                               </div>
                           </div>
                         </div>
@@ -548,7 +548,7 @@ function getPrograms(date, country) {
           if (arrayClaroCinema.includes(program.chapter_id)) {
             programClaroCinema = `
             <div class="schedule-container">
-            <p class="schedule-title">${program.program_title}</p>
+            <p class="schedule-title">${program.chapter_title}</p>
             <div class="schedule-item-body">
                 <div class="schedule-poster">
                     <div class="poster">
@@ -595,7 +595,7 @@ function getPrograms(date, country) {
                           </div>
                           <div class="a-cinema-rectangle thumbnail-info-title">
                               <div class="poster-title-margin">
-                                  <p class="a-poster-text-white">${program.program_title}</p>
+                                  <p class="a-poster-text-white">${program.chapter_title}</p>
                               </div>
                           </div>
                     </div>
@@ -610,7 +610,7 @@ function getPrograms(date, country) {
         if (arrayClaroCinema.includes(program.chapter_id)) {
           programClaroCinema = `
             <div class="schedule-container">
-                <p class="schedule-title">${program.program_title}</p>
+                <p class="schedule-title">${program.chapter_title}</p>
             <div class="schedule-item-body">
                 <div class="schedule-poster">
                         <div class="thumbnail-prog" _id="${program.chapter_id}">
@@ -644,7 +644,7 @@ function getPrograms(date, country) {
         } else {
           programClaroCinema = `
           <div class="schedule-container">
-          <p class="schedule-title">${program.program_title}</p>
+          <p class="schedule-title">${program.chapter_title}</p>
           <div class="schedule-item-body">
               <div class="schedule-poster">
                   <div class="poster">
@@ -934,7 +934,7 @@ function getPrograms(date, country) {
                     </div>
                     <div class="a-vision-rectangle thumbnail-info-title">
                         <div class="poster-title-margin">
-                            <p class="a-poster-text-white">${program.program_title}</p>
+                            <p class="a-poster-text-white">${program.chapter_title}</p>
                         </div>
                     </div>
                 </a>
@@ -957,7 +957,7 @@ function getPrograms(date, country) {
                     </div>
                     <div class="a-vision-rectanglethumbnail-info-title">
                         <div class="poster-title-margin">
-                            <p class="a-poster-text-white">${program.program_title}</p>
+                            <p class="a-poster-text-white">${program.chapter_title}</p>
                         </div>
                     </div>
                 </a>

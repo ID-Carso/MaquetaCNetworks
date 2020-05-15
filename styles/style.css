@@ -2136,7 +2136,7 @@ h6 {
 }
 
 .fondo-index {
-  background: url(../../../images/paises/haryypotter.png);
+  background: url(../../../images/General/claro-networks-portada.jpg);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -2180,8 +2180,6 @@ h6 {
     margin-bottom: 20px;
   }
   .shadow1 {
-    -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
-            box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 15px;
   }
 }
@@ -2195,8 +2193,6 @@ h6 {
     margin-bottom: 20px;
   }
   .shadow1 {
-    -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
-    box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 15px;
   }
 }
@@ -2210,10 +2206,7 @@ h6 {
     margin-bottom: 22px;
   }
   .shadow1 {
-    -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
-    box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 15px;
-    margin-top: 4%;
   }
 }
 
@@ -3182,6 +3175,10 @@ input::-webkit-credentials-auto-fill-button {
   z-index: 1;
   overflow: hidden;
   max-width: 1000px;
+}
+
+.promo-video {
+  width: 100%;
 }
 
 .claro-item,
@@ -5764,7 +5761,7 @@ input[type="radio"]:checked + .mujer-estilo {
     margin: 0 10px;
   }
   .fondo {
-    background: url(../../../images/paises/haryypotter.png);
+    background: url(../../../images/General/claro-networks-portada.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -6972,7 +6969,7 @@ input[type="radio"]:checked + .mujer-estilo {
     font-size: 12px !important;
   }
   .fondo {
-    background: url(../../../images/paises/haryypotter.png);
+    background: url(../../../images/General/claro-networks-portada.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -8244,7 +8241,7 @@ input[type="radio"]:checked + .mujer-estilo {
     margin: 0 3px;
   }
   .fondo {
-    background: url(../../../images/paises/haryypotter.png);
+    background: url(../../../images/General/claro-networks-portada.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -9544,7 +9541,7 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-right: 9px !important;
   }
   .fondo {
-    background: url(../../../images/paises/haryypotter.png);
+    background: url(../../../images/General/claro-networks-portada.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
