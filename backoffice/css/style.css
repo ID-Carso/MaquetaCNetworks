@@ -1028,6 +1028,7 @@
   height: 47px;
   border-radius: 14px;
   background-color: #0097a9;
+  cursor: pointer;
 }
 
 .btn-ingresar-reco1 {
@@ -1366,7 +1367,8 @@
   width: 178px;
   height: 45px;
   border-radius: 7px;
-  background-color: #a8a8a8;
+  background-color: #d5d7d7;
+  border: 1px solid #d5d7d7;
   outline: none !important;
   outline-width: 0 !important;
   box-shadow: none;
@@ -1767,7 +1769,7 @@
   text-align: center;
   vertical-align: middle;
   overflow: hidden;
-  cursor: pointer;
+  pointer-events: none;
 }
 
 .conte-rol {
@@ -2077,6 +2079,10 @@
           transform: translate(-5px, -21px);
 }
 
+.edi {
+  width: 32px;
+}
+
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
@@ -2248,7 +2254,7 @@ input[type="radio"]:checked + .no-estilo1 {
 
 .checkradio {
   display: block;
-  position: relative;
+  position: absolute;
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;
@@ -2371,7 +2377,7 @@ input[type="radio"]:checked + .no-estilo1 {
 }
 
 .br-r {
-  border-right: 2px solid #d8d8d8;
+  border-right: 3px solid #d8d8d8;
   margin-right: 10px;
   padding-right: 15px;
 }
@@ -2753,6 +2759,10 @@ input[type="radio"]:checked + .no-estilo1 {
 
 .ml20 {
   margin-left: -20%;
+}
+
+.mg6 {
+  margin-left: 6%;
 }
 
 @font-face {
@@ -4264,15 +4274,11 @@ ul {
 }
 
 .program {
-  width: 485px;
+  width: 40%;
 }
 
 .channel {
-  width: 255px;
-}
-
-.action {
-  width: 201px;
+  width: 20%;
 }
 
 .cl {

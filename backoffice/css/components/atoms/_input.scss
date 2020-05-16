@@ -114,7 +114,7 @@ input[type="radio"]:checked + .no-estilo1 {
 }
 .checkradio {
   display: block;
-  position: relative;
+  position: absolute;
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;

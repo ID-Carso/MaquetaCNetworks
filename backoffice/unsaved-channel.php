@@ -26,7 +26,7 @@
                     <p class="a-text-black-semibold a-prev-title prev">PREVISUALIZAR</p>
     </div>
     <div class="clearfix"></div>
-    <div class="centro mt-3">
+    <div class="centro ">
     <p class="a-text-black-regular h3 mb-5">No toda la información del Canal Claro fue guardada y para ser enviada <br> a aprobación debes revisar nuevamente y guardar todos los cambios. </p>
     </div>
    
@@ -57,7 +57,7 @@
             </div>
         </div>  
         <div class="centro mb-5">
-             <button class="a-btn-general  mr-2 a-btn-grey text-grey" value="">Mandar a aprobación</button>
+             <button class="a-btn-general  mr-2 a-btn-grey a-text-grey" value="">Mandar a aprobación</button>
              <button  class="a-btn-general    mr-2 a-btn-teal text-sucess" value="">Revisar nuevamente</button>
              <button  class="a-btn-general  a-btn-orange text-sucess" value="">Hacer comentarios</button>
         </div>          

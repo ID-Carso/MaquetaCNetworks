@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Claro Networks</title>
-    
+    <script src="./js/admin.js" defer></script>
 </head>
 
 <body>
     <main>
-        <?php
-        include 'Menu.php';
-        ?>
+       
+        <div id="grilla">
         <div class="  ml-5  mb-5  ">
-            <button class="btn-cargar centro mr-4" id="file" onClick="Verarchi()"><span class="text-crea"><img src="./images/clip.svg" alt="" class="ml-1 mr-1">Cargar archivos</span></button>
+            <button class="btn-cargar " id="file" onClick="Verarchi()"><span class=" d-flex align-items-center text-crea"><img src="./images/clip.svg" alt="" class=" mr-2">Cargar archivos</span></button>
         </div>
         <div class=" d-flex ml-5 pl-2 ">
             <div id="meses" class="d-flex align-items-center mb-3 br-r " >
@@ -143,6 +142,7 @@
                         </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
 </body>

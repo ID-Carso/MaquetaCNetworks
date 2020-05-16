@@ -18,8 +18,8 @@
     ?>
     <div id="prev-sinopsis">
         <div class="float-left ml-5">
-            <div><input type="radio"  id="1" value=""/> <label for="1" class="a-btn-check"></label><span class=" ml-2 a-text-grey">Guardar cambios</span>
-                 <input type="radio" id="2" value=""/> <label for="2" class="ml-5 a-btn-check"></label><span class=" ml-2 a-text-grey">No guardar cambios</span>
+            <div><input type="radio"  id="1" value="" disabled/> <label for="1" class="a-btn-check" ></label><span class=" ml-2 a-text-grey">Guardar cambios</span>
+                 <input type="radio" id="2" value="" disabled/> <label for="2" class="ml-5 a-btn-check" ></label><span class=" ml-2 a-text-grey">No guardar cambios</span>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -33,22 +33,22 @@
                  <div class="contenedor-columna centro channel titletable">
                      <span class="a-text-white-regular a-text-prev">Canal</span>
                  </div>
-                 <div class="contenedor-columna centro action titletable">
+                 <div class="contenedor-columna centro channel titletable">
                      <span class="a-text-white-regular a-text-prev">Acciones</span>
                  </div>
-                 <div class="contenedor-columna centro action  titletable">
+                 <div class="contenedor-columna centro channel  titletable">
                      <span class="a-text-white-regular a-text-prev">Revisión</span>
                  </div>
             </div>
             <div class="contenedor-fila">
                 <div class="contenedor-columna">
-                    <span class="a-text-medium-black text-small pd-5">Mad Men</span>
-                </div>
-                <div class="contenedor-columna">
-                    <span class="a-text-medium-black text-small pd-5">Canal Claro</span>
+                    <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
                 </div>
                 <div class="contenedor-columna centro">
-                <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
+                    <span class="a-text-medium-black text-normal ">Canal Claro</span>
+                </div>
+                <div class="contenedor-columna centro">
+                <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi " ></input>
                 </div>
                 <div class="contenedor-columna centro ">
                 <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
@@ -59,13 +59,13 @@
             </div>
             <div class="contenedor-fila">
                 <div class="contenedor-columna">
-                    <span class="a-text-medium-black text-small pd-5">Mad Men</span>
-                </div>
-                <div class="contenedor-columna">
-                    <span class="a-text-medium-black text-small pd-5">Canal Claro</span>
+                    <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
                 </div>
                 <div class="contenedor-columna centro">
-                <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
+                    <span class="a-text-medium-black  text-normal ">Canal Claro</span>
+                </div>
+                <div class="contenedor-columna centro">
+                <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi " ></input>
                 </div>
                 <div class="contenedor-columna centro ">
                 <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
@@ -76,13 +76,13 @@
             </div>
             <div class="contenedor-fila">
                 <div class="contenedor-columna">
-                    <span class="a-text-medium-black text-small pd-5">Mad Men</span>
-                </div>
-                <div class="contenedor-columna">
-                    <span class="a-text-medium-black text-small pd-5">Canal Claro</span>
+                    <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
                 </div>
                 <div class="contenedor-columna centro ">
-                <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
+                    <span class="a-text-medium-black text-normal ">Canal Claro</span>
+                </div>
+                <div class="contenedor-columna centro ">
+                <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi" ></input>
                 </div>
                 <div class="contenedor-columna centro">
                 <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
@@ -93,13 +93,13 @@
             </div>
             <div class="contenedor-fila">
                 <div class="contenedor-columna">
-                    <span class="a-text-medium-black text-small pd-5">Mad Men</span>
+                    <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
                 </div>
-                <div class="contenedor-columna">
-                    <span class="a-text-medium-black text-small pd-5">Canal Claro</span>
+                <div class="contenedor-columna centro ">
+                    <span class="a-text-medium-black text-normal ">Canal Claro</span>
                 </div>
                 <div class="contenedor-columna centro">
-                <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
+                <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi" ></input>
                 </div>
                 <div class="contenedor-columna centro">
                 <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
@@ -110,13 +110,13 @@
             </div>
             <div class="contenedor-fila">
                 <div class="contenedor-columna">
-                    <span class="a-text-medium-black text-small pd-5">Mad Men</span>
+                    <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
                 </div>
-                <div class="contenedor-columna">
-                    <span class="a-text-medium-black text-small pd-5">Canal Claro</span>
+                <div class="contenedor-columna centro ">
+                    <span class="a-text-medium-black text-normal ">Canal Claro</span>
                 </div>
                 <div class="contenedor-columna centro">
-                <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus " ></input>
+                <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi" ></input>
                 </div>
                 <div class="contenedor-columna centro">
                 <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">

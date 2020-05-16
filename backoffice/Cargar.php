@@ -103,7 +103,7 @@
         </div>
         <div class="contenedor-columna centro"></div>
         <div class="contenedor-columna centro">
-            <label class="d-inline-block mr-4 checkradio">
+            <label class="mg6 checkradio">
             <input type="checkbox">
             <span class="checkmark"></span>
             </label>
@@ -139,23 +139,27 @@
                   </div> 
         </div>
         <div class="contenedor-columna centro">
-        <label class="d-inline-block checkradio mr-4 mb-5">
+        <label class="mg6 checkradio  mb-5">
             <input type="checkbox">
             <span class="checkmark"></span>
             </label>
-            <div class="vigencia">          
+            <div class="vigencia mt-5">          
                 <label class="text-public">Vigencia en home</label>
                 <img src="./images/pencil.svg" alt=""class="pencil">
             </div>
         </div>
         <div class="contenedor-columna centro">
-        <div class="checkradio d-flex mt-3 ml-4"><span class="text-lan ml-5 mtop-8"> No te pierdas</span>
+        <div class=" d-flex mt-3 ml-4"><span class="text-lan ml-5 mtop-8"> No te pierdas</span>
+        <label class="checkradio">
             <input type="checkbox">
             <span class="checkmark"></span>
+            </label>
 </div>
-            <div class="checkradio d-flex ml-4"><span class="text-lan ml-5 mtop-8 mb-4"> Solo por canal claro</span>
+            <div class="d-flex ml-4"><span class="text-lan ml-5 mtop-8 mb-4"> Solo por canal claro</span>
+            <label class="checkradio">
             <input type="checkbox">
             <span class="checkmark"></span>
+            </label>
 </div>
             <div class="vige-lan">
             <label class="text-public">Vigencia en landing</label>
