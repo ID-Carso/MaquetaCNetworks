@@ -34,6 +34,13 @@
   font-display: block;
 }
 
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url(../../../fonts/Montserrat-Medium/Montserrat-Medium.eot);
+  src: url(../../../fonts/Montserrat-Medium/Montserrat-Medium.woff2) format("woff2"), url(../../../fonts/Montserrat-Medium/Montserrat-Medium.woff) format("woff"), url(../../../fonts/Montserrat-Medium/Montserrat-Medium.ttf) format("truetype"), url(../../../fonts/Montserrat-Medium/Montserrat-Medium.svg) format("svg");
+  font-display: block;
+}
+
 /*html,
 body {
   height: 100%;
@@ -220,6 +227,21 @@ h6 {
 
 .text-smaller {
   font-size: 12px;
+}
+
+.a-text-bold-greyish {
+  color: #4a4a4a;
+  font-family: "Montserrat-Bold";
+}
+
+.a-text-bold-tealblue {
+  color: #0097a9;
+  font-family: "Montserrat-Bold";
+}
+
+.a-text-medium-greyish {
+  color: #4a4a4a;
+  font-family: "Montserrat-Medium";
 }
 
 .a-our-vision-title {
@@ -2152,7 +2174,7 @@ h6 {
 }
 
 .fondo-index {
-  background: url(../../../images/General/claro-networks-portada.jpg);
+  background: url(http://www.claronetworks.openofficedospuntocero.info/images/General/claro-networks-portada.jpg);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -2812,6 +2834,30 @@ h6 {
 
 .social-item {
   padding: 0 15px;
+}
+
+.aboutus-card-claro-networks-image {
+  width: 162px;
+}
+
+.aboutus-card-canal-claro-image {
+  width: 182px;
+}
+
+.aboutus-card-claro-cinema-image {
+  width: 115px;
+}
+
+.aboutus-card-concert-channel-image {
+  width: 127px;
+}
+
+.aboutus-card-nuestra-vision-image {
+  width: 114px;
+}
+
+.aboutus-card-claro-sports-image {
+  width: 158px;
 }
 
 .hr1 {
@@ -4483,6 +4529,17 @@ input[type="radio"]:checked + .mujer-estilo {
   cursor: pointer;
 }
 
+.aboutus-card {
+  background: #ffffff;
+  border-radius: 30px;
+  -webkit-box-shadow: 10px 10px 19px -7px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 19px -7px rgba(0, 0, 0, 0.5);
+}
+
+.aboutus-card-header {
+  border-bottom: 2px solid #e93f33;
+}
+
 #next-week-slider {
   padding-bottom: 58px;
   margin-bottom: 32px;
@@ -5231,12 +5288,12 @@ input[type="radio"]:checked + .mujer-estilo {
 }
 
 .aboutus-container {
-  background-image: url(../images/aboutus/aboutus-background.png);
-  background-size: cover;
+  background-image: url(../images/aboutus/aboutus-background-mobile.png);
+  background-size: 100%;
 }
 
 .aboutus-content {
-  padding: 140px 36px 0px 36px;
+  padding-top: 70px;
 }
 
 .aboutus-titles-container {
@@ -5777,7 +5834,7 @@ input[type="radio"]:checked + .mujer-estilo {
     margin: 0 10px;
   }
   .fondo {
-    background: url(../../../images/General/claro-networks-portada.jpg);
+    background: url(http://www.claronetworks.openofficedospuntocero.info/images/General/claro-networks-portada.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -6326,8 +6383,17 @@ input[type="radio"]:checked + .mujer-estilo {
   /*End Programación - Moleculas*/
   /*============================*/
   /*============================*/
-  /*2.6 - Sinópsis - Moleculas*/
-  /*End Sinópsis - Moleculas*/
+  /*2.6 - About Us - Moleculas*/
+  .aboutus-card {
+    width: 48%;
+  }
+  .aboutus-card:nth-child(2n + 1) {
+    margin-right: 2%;
+  }
+  .aboutus-card:nth-child(2n + 0) {
+    margin-left: 2%;
+  }
+  /*End About Us - Moleculas*/
   /*============================*/
   /*3.- ORGANISMS*/
   /*============================*/
@@ -6985,7 +7051,7 @@ input[type="radio"]:checked + .mujer-estilo {
     font-size: 12px !important;
   }
   .fondo {
-    background: url(../../../images/General/claro-networks-portada.jpg);
+    background: url(http://www.claronetworks.openofficedospuntocero.info/images/General/claro-networks-portada.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -7592,6 +7658,19 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   /*End Programación - Moelculas*/
   /*-----------------------------*/
+  /*============================*/
+  /*2.6 - About Us - Moleculas*/
+  .aboutus-card {
+    width: 48%;
+  }
+  .aboutus-card:nth-child(2n + 1) {
+    margin-right: 2%;
+  }
+  .aboutus-card:nth-child(2n + 0) {
+    margin-left: 2%;
+  }
+  /*End About Us - Moleculas*/
+  /*============================*/
   /*3.- ORGANISMS*/
   /*-----------------------------*/
   /*3.1 - Generales - Organismos*/
@@ -8257,7 +8336,7 @@ input[type="radio"]:checked + .mujer-estilo {
     margin: 0 3px;
   }
   .fondo {
-    background: url(../../../images/General/claro-networks-portada.jpg);
+    background: url(http://www.claronetworks.openofficedospuntocero.info/images/General/claro-networks-portada.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -8807,6 +8886,36 @@ input[type="radio"]:checked + .mujer-estilo {
   }
   /*End Programación - Moleculas*/
   /*-----------------------------*/
+  /*============================*/
+  /*2.6 - About Us - Moleculas*/
+  .aboutus-card {
+    width: 30%;
+  }
+  .aboutus-card-body {
+    height: 60%;
+  }
+  .aboutus-card-footer {
+    height: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aboutus-card:nth-child(1),
+  .aboutus-card:nth-child(2) {
+    margin-right: 3.333%;
+  }
+  .aboutus-card:nth-child(4),
+  .aboutus-card:nth-child(5) {
+    margin-right: 3.333%;
+  }
+  /*End About Us - Moleculas*/
+  /*============================*/
   /*3.- ORGANISMS*/
   /*-----------------------------*/
   /*3.1 - General- Organismos*/
@@ -9557,7 +9666,7 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-right: 9px !important;
   }
   .fondo {
-    background: url(../../../images/General/claro-networks-portada.jpg);
+    background: url(http://www.claronetworks.openofficedospuntocero.info/images/General/claro-networks-portada.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -10054,6 +10163,36 @@ input[type="radio"]:checked + .mujer-estilo {
   }*/
   /*End Programación - Moleculas*/
   /*-----------------------------*/
+  /*============================*/
+  /*2.7 - About Us - Moleculas*/
+  .aboutus-card {
+    width: 30%;
+  }
+  .aboutus-card-body {
+    height: 60%;
+  }
+  .aboutus-card-footer {
+    height: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aboutus-card:nth-child(1),
+  .aboutus-card:nth-child(2) {
+    margin-right: 3.333%;
+  }
+  .aboutus-card:nth-child(4),
+  .aboutus-card:nth-child(5) {
+    margin-right: 3.333%;
+  }
+  /*End About Us - Moleculas*/
+  /*============================*/
   /*3.- ORGANISMS*/
   /*-----------------------------*/
   /*3.1 - General - Organismos*/

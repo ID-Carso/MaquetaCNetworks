@@ -52,3 +52,15 @@
     url(../../../fonts/Montserrat-Black/Montserrat-Black.svg) format("svg");
   font-display: block;
 }
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url(../../../fonts/Montserrat-Medium/Montserrat-Medium.eot);
+  src: url(../../../fonts/Montserrat-Medium/Montserrat-Medium.woff2)
+      format("woff2"),
+    url(../../../fonts/Montserrat-Medium/Montserrat-Medium.woff) format("woff"),
+    url(../../../fonts/Montserrat-Medium/Montserrat-Medium.ttf)
+      format("truetype"),
+    url(../../../fonts/Montserrat-Medium/Montserrat-Medium.svg) format("svg");
+  font-display: block;
+}

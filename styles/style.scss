@@ -158,7 +158,7 @@
   }
 
   .fondo {
-    background: url(../../../images/General/claro-networks-portada.jpg);
+    background: url(http://www.claronetworks.openofficedospuntocero.info/images/General/claro-networks-portada.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -828,9 +828,19 @@
   /*============================*/
 
   /*============================*/
-  /*2.6 - Sinópsis - Moleculas*/
+  /*2.6 - About Us - Moleculas*/
+  .aboutus-card {
+    width: 48%;
+  }
 
-  /*End Sinópsis - Moleculas*/
+  .aboutus-card:nth-child(2n + 1) {
+    margin-right: 2%;
+  }
+
+  .aboutus-card:nth-child(2n + 0) {
+    margin-left: 2%;
+  }
+  /*End About Us - Moleculas*/
   /*============================*/
 
   /*3.- ORGANISMS*/
@@ -1633,7 +1643,7 @@
   }
 
   .fondo {
-    background: url(../../../images/General/claro-networks-portada.jpg);
+    background: url(http://www.claronetworks.openofficedospuntocero.info/images/General/claro-networks-portada.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -2378,6 +2388,22 @@
 
   /*End Programación - Moelculas*/
   /*-----------------------------*/
+
+  /*============================*/
+  /*2.6 - About Us - Moleculas*/
+  .aboutus-card {
+    width: 48%;
+  }
+
+  .aboutus-card:nth-child(2n + 1) {
+    margin-right: 2%;
+  }
+
+  .aboutus-card:nth-child(2n + 0) {
+    margin-left: 2%;
+  }
+  /*End About Us - Moleculas*/
+  /*============================*/
 
   /*3.- ORGANISMS*/
   /*-----------------------------*/
@@ -3185,7 +3211,7 @@
   }
 
   .fondo {
-    background: url(../../../images/General/claro-networks-portada.jpg);
+    background: url(http://www.claronetworks.openofficedospuntocero.info/images/General/claro-networks-portada.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -3905,6 +3931,35 @@
 
   /*End Programación - Moleculas*/
   /*-----------------------------*/
+
+  /*============================*/
+  /*2.6 - About Us - Moleculas*/
+  .aboutus-card {
+    width: 30%;
+  }
+
+  .aboutus-card-body {
+    height: 60%;
+  }
+
+  .aboutus-card-footer {
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutus-card:nth-child(1),
+  .aboutus-card:nth-child(2) {
+    margin-right: 3.333%;
+  }
+  .aboutus-card:nth-child(4),
+  .aboutus-card:nth-child(5) {
+    margin-right: 3.333%;
+  }
+
+  /*End About Us - Moleculas*/
+  /*============================*/
 
   /*3.- ORGANISMS*/
 
@@ -4805,7 +4860,7 @@
   }
 
   .fondo {
-    background: url(../../../images/General/claro-networks-portada.jpg);
+    background: url(http://www.claronetworks.openofficedospuntocero.info/images/General/claro-networks-portada.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -5440,6 +5495,35 @@
 
   /*End Programación - Moleculas*/
   /*-----------------------------*/
+
+  /*============================*/
+  /*2.7 - About Us - Moleculas*/
+  .aboutus-card {
+    width: 30%;
+  }
+
+  .aboutus-card-body {
+    height: 60%;
+  }
+
+  .aboutus-card-footer {
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutus-card:nth-child(1),
+  .aboutus-card:nth-child(2) {
+    margin-right: 3.333%;
+  }
+  .aboutus-card:nth-child(4),
+  .aboutus-card:nth-child(5) {
+    margin-right: 3.333%;
+  }
+
+  /*End About Us - Moleculas*/
+  /*============================*/
 
   /*3.- ORGANISMS*/
 
