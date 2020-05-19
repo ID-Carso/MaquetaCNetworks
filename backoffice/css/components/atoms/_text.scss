@@ -53,12 +53,22 @@
   font-family: $MontserratMedium;
   color: $repassgray;
 }
-
+.a-text-medium-dark2 {
+  font-family: $MontserratMedium;
+  color: $dark2;
+}
 .a-text-semibold-lightbrown {
   font-family: $MontserratSemiBold;
   color: $lightbrown;
 }
-
+.a-text-semibold-warm-grey-three{
+  font-family: $MontserratSemiBold;
+  color: $warm-grey-three;
+}
+.a-text-semibold-white{
+  font-family: $MontserratSemiBold;
+  color: $white;
+}
 .a-text-regular-black {
   font-family: $MontserratRegular;
   color: black;

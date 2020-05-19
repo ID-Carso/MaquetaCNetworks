@@ -12,10 +12,7 @@
 </head>
 <body>
     <main>
-    <?php
-    include 'Menu.php';
-    include 'submenu.php';   
-    ?>
+   
     <div id="prev-sinopsis">
         <div class="float-left ml-5">
             <div><input type="radio"  id="1" value="" disabled/> <label for="1" class="a-btn-check" ></label><span class=" ml-2 a-text-grey">Guardar cambios</span>

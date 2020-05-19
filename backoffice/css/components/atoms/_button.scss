@@ -831,3 +831,12 @@
   opacity: 0.5;
   pointer-events: none;
 }
+.btn-apro-sin{
+  width: 302px;
+  height: 57px;
+  border-radius: 13px;
+  border: 1px solid $warm-grey-three;
+}
+.active-apro{
+  background: $dark;
+}

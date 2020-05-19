@@ -96,9 +96,24 @@
   color: #696363;
 }
 
+.a-text-medium-dark2 {
+  font-family: "Montserrat-Medium";
+  color: #434242;
+}
+
 .a-text-semibold-lightbrown {
   font-family: "Montserrat-SemiBold";
   color: #666262;
+}
+
+.a-text-semibold-warm-grey-three {
+  font-family: "Montserrat-SemiBold";
+  color: #808080;
+}
+
+.a-text-semibold-white {
+  font-family: "Montserrat-SemiBold";
+  color: #ffffff;
 }
 
 .a-text-regular-black {
@@ -1800,6 +1815,17 @@
   pointer-events: none;
 }
 
+.btn-apro-sin {
+  width: 302px;
+  height: 57px;
+  border-radius: 13px;
+  border: 1px solid #808080;
+}
+
+.active-apro {
+  background: #2e2c2c;
+}
+
 .loader {
   position: absolute;
   top: 50%;
@@ -2382,6 +2408,11 @@ input[type="radio"]:checked + .no-estilo1 {
   padding-right: 15px;
 }
 
+.bb-r {
+  border-bottom: 3px solid #d8d8d8;
+  margin-bottom: 10px;
+}
+
 .cuadro-dia {
   width: 100%;
   height: 50px;
@@ -2862,9 +2893,24 @@ input[type="radio"]:checked + .no-estilo1 {
   color: #696363;
 }
 
+.a-text-medium-dark2 {
+  font-family: "Montserrat-Medium";
+  color: #434242;
+}
+
 .a-text-semibold-lightbrown {
   font-family: "Montserrat-SemiBold";
   color: #666262;
+}
+
+.a-text-semibold-warm-grey-three {
+  font-family: "Montserrat-SemiBold";
+  color: #808080;
+}
+
+.a-text-semibold-white {
+  font-family: "Montserrat-SemiBold";
+  color: #ffffff;
 }
 
 .a-text-regular-black {
@@ -4283,6 +4329,12 @@ ul {
 
 .cl {
   width: 925px;
+}
+
+.modaltam {
+  width: 1485px;
+  height: 971px;
+  background-color: #ffffff;
 }
 
 @font-face {

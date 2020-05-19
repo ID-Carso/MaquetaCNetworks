@@ -24,17 +24,17 @@
           </li> 
       <li class="nav-item  br-r">
          
-        <label class=" d-flex align-items-center justify-content-center btn-menu-select menu">CANAL CLARO</label>  
+        <label class=" d-flex align-items-center justify-content-center btn-menu-select menu sub-nav">CANAL CLARO</label>  
         </li>
         <li class="  nav-item br-r">
-        <label class=" d-flex align-items-center justify-content-center txtmenu text-menu-selec ">SINÓPSIS</label>  
+        <label class=" d-flex align-items-center justify-content-center txtmenu text-menu-selec sub-nav" onClick="viewsinopsis()">SINÓPSIS</label>  
         </li>
       <li class="nav-item br-r">
-          <label class=" d-flex align-items-center justify-content-center txtmenu text-menu-selec">PROGRAMACIÓN</label>
+          <label class=" d-flex align-items-center justify-content-center txtmenu text-menu-selec sub-nav">PROGRAMACIÓN</label>
           </li>
       
       <li class=" nav-item br-r">
-          <label class=" d-flex align-items-center justify-content-center txtmenu text-menu-selec"> HOME</label>
+          <label class=" d-flex align-items-center justify-content-center txtmenu text-menu-selec sub-nav"> HOME</label>
          </li>
          <li class="nav-item d-flex align-items-center  mr-3">
          <img src="./images/arrow-dark.svg" alt="" class=" arrow-right">
@@ -43,8 +43,7 @@
     
 </nav>
     </div>
-
-    
+    <div id="changeview"></div>
     </main>
     
 </body>

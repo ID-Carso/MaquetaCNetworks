@@ -102,6 +102,13 @@ function grilla() {
   $("#grilla").replaceWith();
   $("#bodymenu").load("Progra_general.php");
 }
+function program(){
+  $(location).attr('href', "Menu.php");
+}
+function viewsinopsis(){
+  $("#prev-sinopsis").replaceWith();
+  $("#changeview").load("Prev-sinopsis.php");
+}
 //fin
 //modales
 function abrirModal() {
@@ -172,27 +179,42 @@ $(document).ready(function () {
     $("button[id=btn-rol]").removeClass("btn-rol");
     $(this).addClass("btn-rol-select");
   });
-  $(".btn-grilla").click(function () {
-    $("button[id=btn-grilla]").removeClass("btn-landing");
-    $("button[id=btn-grilla]").removeClass("text-landing");
-    $(this).addClass("btn-grilla");
-    $(this).addClass("text-grilla");
-    $("button[id=btn-landing]").addClass("btn-landing");
-    $("button[id=btn-landing]").addClass("text-landing");
-    $("button[id=btn-landing]").removeClass("btn-grilla");
-    $("button[id=btn-landing]").removeClass("text-grilla");  
+  $("button[id=btn-landing]").click(function () {
+    if($(this).hasClass("btn-landing") & $(this).hasClass("text-landing")){
+      $(this).removeClass("btn-landing").addClass("btn-grilla");
+      $(this).removeClass("text-landing").addClass("text-grilla");
+      $("button[id=btn-grilla]").addClass("btn-landing").removeClass("btn-grilla");
+      $("button[id=btn-grilla]").addClass("text-landing").removeClass("text-grilla");
+    }
   });
-  $(".btn-landing").click(function () {
-    $("button[id=btn-landing]").removeClass("btn-landing");
-    $("button[id=btn-landing]").removeClass("text-landing");
-    $(this).addClass("btn-grilla");
-    $(this).addClass("text-grilla");
-    $("button[id=btn-grilla]").addClass("btn-landing");
-    $("button[id=btn-grilla]").addClass("text-landing");
-    $("button[id=btn-grilla]").removeClass("btn-grilla");
-    $("button[id=btn-grilla]").removeClass("text-grilla");
-    
+  $("button[id=btn-grilla]").click(function () {
+    if($(this).hasClass("btn-grilla") & $(this).hasClass("text-grilla")){
+      $(this).addClass("btn-landing").removeClass("btn-grilla");
+      $(this).addClass("text-landing").removeClass("text-grilla");
+      $("button[id=btn-landing]").addClass("btn-grilla").removeClass("btn-landing");
+      $("button[id=btn-landing]").addClass("text-grilla").removeClass("text-landing");
+    }else if($(this).hasClass("btn-landing") & $(this).hasClass("text-landing")){
+      $(this).addClass("btn-grilla").removeClass("btn-landing");
+      $(this).addClass("text-grilla").removeClass("text-landing");
+      $("button[id=btn-landing]").addClass("btn-landing").removeClass("btn-grilla");
+      $("button[id=btn-landing]").addClass("text-landing").removeClass("text-grilla");
+    }
   });
+  const allSlides = $(".bn-nav");
+  $(".bn-nav").click(function(){
+    allSlides.addClass("btn-menu-all").removeClass("btn-menu-select");
+    allSlides.addClass("text-menu-selec").removeClass("menu");
+    $(this).addClass("btn-menu-select").removeClass("btn-menu-all");
+    $(this).addClass("menu").removeClass("text-menu-selec");
+  });
+  const allnav = $(".sub-nav");
+  $(".sub-nav").click(function(){
+    allnav.addClass("txtmenu").removeClass("btn-menu-select");
+    allnav.addClass("text-menu-selec").removeClass("menu");
+    $(this).addClass("btn-menu-select").removeClass("txtmenu");
+    $(this).addClass("menu").removeClass("text-menu-selec");
+  });
+ 
   
 
   //fin
