@@ -239,24 +239,27 @@ function showDescriptions() {
 }
 
 function createNavbarProgramacionGeneral() {
-  $(".navbar-progra-item").click(function () {
-    $(".navbar-progra-item").removeClass("navbar-progra-active");
+  let navbarPrograItems = $(".navbar-progra-item");
+  let arrowLeft = $(".arrow-progra-left");
+  let arrowRight = $(".arrow-progra-right");
+  navbarPrograItems.click(function () {
+    navbarPrograItems.removeClass("navbar-progra-active");
     $(this).addClass("navbar-progra-active");
     if ($(this).hasClass("navbar-canal-claro")) {
-      $(".text").text("canal claro");
+      changeContentProgramacionGeneral($(this).attr("rel"));
     } else if ($(this).hasClass("navbar-sinopsis")) {
-      $(".text").text("sinopsis");
+      changeContentProgramacionGeneral($(this).attr("rel"));
     } else if ($(this).hasClass("navbar-programacion")) {
-      $(".text").text("programacion");
+      changeContentProgramacionGeneral($(this).attr("rel"));
     } else if ($(this).hasClass("navbar-home")) {
-      $(".text").text("home");
+      changeContentProgramacionGeneral($(this).attr("rel"));
     }
     if ($(this).attr("navbar-index") == 1) {
-      $(".arrow-progra-left").css({
+      arrowLeft.css({
         pointerEvents: "none",
         opacity: "0.5",
       });
-      $(".arrow-progra-right").css({
+      arrowRight.css({
         pointerEvents: "all",
         opacity: "1",
       });
@@ -264,21 +267,21 @@ function createNavbarProgramacionGeneral() {
       $(this).attr("navbar-index") > 1 &&
       $(this).attr("navbar-index") < 4
     ) {
-      $(".arrow-progra-left").css({
+      arrowLeft.css({
         pointerEvents: "all",
         opacity: "1",
       });
 
-      $(".arrow-progra-right").css({
+      arrowRight.css({
         pointerEvents: "all",
         opacity: "1",
       });
     } else {
-      $(".arrow-progra-right").css({
+      arrowRight.css({
         pointerEvents: "none",
         opacity: "0.5",
       });
-      $(".arrow-progra-left").css({
+      arrowLeft.css({
         pointerEvents: "all",
         opacity: "1",
       });
@@ -287,12 +290,12 @@ function createNavbarProgramacionGeneral() {
 
   $(".arrow-progra").click(function () {
     let currentNavbarItem = $(".navbar-progra-active");
-    $(".navbar-progra-item").removeClass("navbar-progra-active");
+    navbarPrograItems.removeClass("navbar-progra-active");
 
     if ($(this).hasClass("arrow-progra-left")) {
       currentNavbarItem.prev().addClass("navbar-progra-active");
-      //changeContentProgramacionGeneral(currentNavbarItem.prev().attr("rel"));
-      if (currentNavbarItem.prev().hasClass("navbar-canal-claro")) {
+      changeContentProgramacionGeneral(currentNavbarItem.prev().attr("rel"));
+      /*if (currentNavbarItem.prev().hasClass("navbar-canal-claro")) {
         changeContentProgramacionGeneral(currentNavbarItem.prev().attr("rel"));
       } else if (currentNavbarItem.prev().hasClass("navbar-sinopsis")) {
         changeContentProgramacionGeneral(currentNavbarItem.prev().attr("rel"));
@@ -300,36 +303,37 @@ function createNavbarProgramacionGeneral() {
         changeContentProgramacionGeneral(currentNavbarItem.prev().attr("rel"));
       } else if (currentNavbarItem.prev().hasClass("navbar-home")) {
         changeContentProgramacionGeneral(currentNavbarItem.prev().attr("rel"));
-      }
+      }*/
       if ($(".navbar-progra-active").attr("navbar-index") == 1) {
-        $(".arrow-progra-left").css({
+        arrowLeft.css({
           pointerEvents: "none",
           opacity: "0.5",
         });
       } else if ($(".navbar-progra-active").attr("navbar-index") < 4) {
-        $(".arrow-progra-right").css({
+        arrowRight.css({
           pointerEvents: "all",
           opacity: "1",
         });
       }
     } else {
       currentNavbarItem.next().addClass("navbar-progra-active");
-      if (currentNavbarItem.next().hasClass("navbar-canal-claro")) {
-        $(".text").text("canal claro");
+      changeContentProgramacionGeneral(currentNavbarItem.next().attr("rel"));
+      /*if (currentNavbarItem.next().hasClass("navbar-canal-claro")) {
+        changeContentProgramacionGeneral(currentNavbarItem.next().attr("rel"));
       } else if (currentNavbarItem.next().hasClass("navbar-sinopsis")) {
-        $(".text").text("sinopsis");
+        changeContentProgramacionGeneral(currentNavbarItem.next().attr("rel"));
       } else if (currentNavbarItem.next().hasClass("navbar-programacion")) {
-        $(".text").text("programacion");
+        changeContentProgramacionGeneral(currentNavbarItem.next().attr("rel"));
       } else if (currentNavbarItem.next().hasClass("navbar-home")) {
-        $(".text").text("home");
-      }
+        changeContentProgramacionGeneral(currentNavbarItem.next().attr("rel"));
+      }*/
       if ($(".navbar-progra-active").attr("navbar-index") == 4) {
-        $(".arrow-progra-right").css({
+        arrowRight.css({
           pointerEvents: "none",
           opacity: "0.5",
         });
       } else if ($(".navbar-progra-active").attr("navbar-index") > 1) {
-        $(".arrow-progra-left").css({
+        arrowLeft.css({
           pointerEvents: "all",
           opacity: "1",
         });
@@ -338,21 +342,430 @@ function createNavbarProgramacionGeneral() {
   });
 }
 function changeContentProgramacionGeneral(nameSection) {
+  let divPrev = $("#prev-programacion-general");
   switch (nameSection) {
     case "navbar-prev-canal-claro":
-      $("#prev-programacion-general").load("./views/prevs/canal-claro.php");
+      console.log("claro-canal");
+      divPrev.html("");
+      divPrev.html(`<div class="mx-auto shadow mt-5  mb-5 content-table"> 
+      <div class="contenedor-fila">
+            <div class="contenedor-columna centro program titletable">
+               <span class="a-text-white-regular a-text-prev">Programa</span>
+           </div>
+           <div class="contenedor-columna centro channel titletable">
+               <span class="a-text-white-regular a-text-prev">Canal</span>
+           </div>
+           <div class="contenedor-columna centro channel titletable">
+               <span class="a-text-white-regular a-text-prev">Acciones</span>
+           </div>
+           <div class="contenedor-columna centro channel  titletable">
+               <span class="a-text-white-regular a-text-prev">Revisión</span>
+           </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro">
+              <span class="a-text-medium-black text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi " ></input>
+          </div>
+          <div class="contenedor-columna centro ">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro">
+              <span class="a-text-medium-black  text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi " ></input>
+          </div>
+          <div class="contenedor-columna centro ">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro ">
+              <span class="a-text-medium-black text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro ">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi" ></input>
+          </div>
+          <div class="contenedor-columna centro">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro ">
+              <span class="a-text-medium-black text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi" ></input>
+          </div>
+          <div class="contenedor-columna centro">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro ">
+              <span class="a-text-medium-black text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi" ></input>
+          </div>
+          <div class="contenedor-columna centro">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+  </div>`);
       break;
 
     case "navbar-prev-sinopsis":
-      $("#prev-programacion-general").load("Prev-sinopsis.php");
+      console.log("sinopsis");
+      divPrev.html("");
+      divPrev.html(`<div class="mx-auto shadow mt-5  mb-5 content-table"> 
+      <div class="contenedor-fila">
+            <div class="contenedor-columna centro program titletable">
+               <span class="a-text-white-regular a-text-prev">Programa</span>
+           </div>
+           <div class="contenedor-columna centro channel titletable">
+               <span class="a-text-white-regular a-text-prev">Canal</span>
+           </div>
+           <div class="contenedor-columna centro channel titletable">
+               <span class="a-text-white-regular a-text-prev">Acciones</span>
+           </div>
+           <div class="contenedor-columna centro channel  titletable">
+               <span class="a-text-white-regular a-text-prev">Revisión</span>
+           </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro">
+              <span class="a-text-medium-black text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi " ></input>
+          </div>
+          <div class="contenedor-columna centro ">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro">
+              <span class="a-text-medium-black  text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi " ></input>
+          </div>
+          <div class="contenedor-columna centro ">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro ">
+              <span class="a-text-medium-black text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro ">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi" ></input>
+          </div>
+          <div class="contenedor-columna centro">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro ">
+              <span class="a-text-medium-black text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi" ></input>
+          </div>
+          <div class="contenedor-columna centro">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro ">
+              <span class="a-text-medium-black text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi" ></input>
+          </div>
+          <div class="contenedor-columna centro">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+  </div>`);
       break;
 
-    case "navbar-prev-program":
-      $("#prev-programacion-general").load("./views/prevs/programacion.php");
+    case "navbar-prev-programacion":
+      console.log("programación");
+      divPrev.html("");
+      divPrev.html(`<div class="mx-auto shadow mt-5  mb-5 content-table"> 
+      <div class="contenedor-fila">
+            <div class="contenedor-columna centro program titletable">
+               <span class="a-text-white-regular a-text-prev">Programa</span>
+           </div>
+           <div class="contenedor-columna centro channel titletable">
+               <span class="a-text-white-regular a-text-prev">Canal</span>
+           </div>
+           <div class="contenedor-columna centro channel titletable">
+               <span class="a-text-white-regular a-text-prev">Acciones</span>
+           </div>
+           <div class="contenedor-columna centro channel  titletable">
+               <span class="a-text-white-regular a-text-prev">Revisión</span>
+           </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro">
+              <span class="a-text-medium-black text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi " ></input>
+          </div>
+          <div class="contenedor-columna centro ">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro">
+              <span class="a-text-medium-black  text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi " ></input>
+          </div>
+          <div class="contenedor-columna centro ">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro ">
+              <span class="a-text-medium-black text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro ">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi" ></input>
+          </div>
+          <div class="contenedor-columna centro">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro ">
+              <span class="a-text-medium-black text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi" ></input>
+          </div>
+          <div class="contenedor-columna centro">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro ">
+              <span class="a-text-medium-black text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi" ></input>
+          </div>
+          <div class="contenedor-columna centro">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+  </div>`);
       break;
 
     case "navbar-prev-home":
-      $("#prev-programacion-general").load("./views/prevs/home.php");
+      console.log("home");
+      divPrev.html("");
+      divPrev.html(`<div class="mx-auto shadow mt-5  mb-5 content-table"> 
+      <div class="contenedor-fila">
+            <div class="contenedor-columna centro program titletable">
+               <span class="a-text-white-regular a-text-prev">Programa</span>
+           </div>
+           <div class="contenedor-columna centro channel titletable">
+               <span class="a-text-white-regular a-text-prev">Canal</span>
+           </div>
+           <div class="contenedor-columna centro channel titletable">
+               <span class="a-text-white-regular a-text-prev">Acciones</span>
+           </div>
+           <div class="contenedor-columna centro channel  titletable">
+               <span class="a-text-white-regular a-text-prev">Revisión</span>
+           </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro">
+              <span class="a-text-medium-black text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi " ></input>
+          </div>
+          <div class="contenedor-columna centro ">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro">
+              <span class="a-text-medium-black  text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi " ></input>
+          </div>
+          <div class="contenedor-columna centro ">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro ">
+              <span class="a-text-medium-black text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro ">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi" ></input>
+          </div>
+          <div class="contenedor-columna centro">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro ">
+              <span class="a-text-medium-black text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi" ></input>
+          </div>
+          <div class="contenedor-columna centro">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+      <div class="contenedor-fila">
+          <div class="contenedor-columna">
+              <span class="a-text-medium-black text-normal pd-5">Mad Men</span>
+          </div>
+          <div class="contenedor-columna centro ">
+              <span class="a-text-medium-black text-normal ">Canal Claro</span>
+          </div>
+          <div class="contenedor-columna centro">
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi" ></input>
+          </div>
+          <div class="contenedor-columna centro">
+          <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
+      <input type="checkbox">
+      <span class="checkmark1"></span>
+      </label>
+          </div>
+      </div>
+  </div>`);
       break;
 
     default:

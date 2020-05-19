@@ -94,6 +94,14 @@ function Verarchi() {
   $("#carga").replaceWith();
   $("#rempla").load("Cargar.php");
 }
+function landing() {
+  $("#menu").replaceWith();
+  $("#bodymenu").load("submenu.php");
+}
+function grilla() {
+  $("#grilla").replaceWith();
+  $("#bodymenu").load("Progra_general.php");
+}
 //fin
 //modales
 function abrirModal() {
@@ -119,31 +127,31 @@ function verhisto() {
 $(document).ready(function () {
   //Otro Array para los nombres de los meses
   let meses = new Array(
-    "Enero",
-    "Febrero",
-    "Marzo",
-    "Abril",
-    "Mayo",
-    "Junio",
-    "Julio",
-    "Agosto",
-    "Septiembre",
-    "Octubre",
-    "Noviembre",
-    "Diciembre"
+    "ENERO",
+    "FEBRERO",
+    "MARZO",
+    "ABRIL",
+    "MAYO",
+    "JUNIO",
+    "JULIO",
+    "AGOSTO",
+    "SEPTIEMBRE",
+    "OCTUBRE",
+    "NOVIEMBRE",
+    "DICIEMBRE"
   );
   let mesLetras = meses[fecha.getMonth()]; //El mes en letras
   $(".progra-month").text(mesLetras);
   let numDiaSem = fecha.getDay(); //getDay() devuelve el dia de la semana.(0-6).
   //Array para los nombres de los días
   let diasSemana = new Array(
-    "Domingo",
-    "Lunes",
-    "Martes",
-    "Miércoles",
-    "Jueves",
-    "Viernes",
-    "Sábado"
+    "DOMINGO",
+    "LUNES",
+    "MARTES",
+    "MIÉRCOLES",
+    "JUEVES",
+    "VIERNES",
+    "SÁBADO"
   );
   let diaLetras = diasSemana[fecha.getDay()]; //El día de la semana en letras. getDay() devuelve el dia de la semana.(0-6).
 
@@ -164,6 +172,28 @@ $(document).ready(function () {
     $("button[id=btn-rol]").removeClass("btn-rol");
     $(this).addClass("btn-rol-select");
   });
+  $(".btn-grilla").click(function () {
+    $("button[id=btn-grilla]").removeClass("btn-landing");
+    $("button[id=btn-grilla]").removeClass("text-landing");
+    $(this).addClass("btn-grilla");
+    $(this).addClass("text-grilla");
+    $("button[id=btn-landing]").addClass("btn-landing");
+    $("button[id=btn-landing]").addClass("text-landing");
+    $("button[id=btn-landing]").removeClass("btn-grilla");
+    $("button[id=btn-landing]").removeClass("text-grilla");  
+  });
+  $(".btn-landing").click(function () {
+    $("button[id=btn-landing]").removeClass("btn-landing");
+    $("button[id=btn-landing]").removeClass("text-landing");
+    $(this).addClass("btn-grilla");
+    $(this).addClass("text-grilla");
+    $("button[id=btn-grilla]").addClass("btn-landing");
+    $("button[id=btn-grilla]").addClass("text-landing");
+    $("button[id=btn-grilla]").removeClass("btn-grilla");
+    $("button[id=btn-grilla]").removeClass("text-grilla");
+    
+  });
+  
 
   //fin
   //descripción de acciones

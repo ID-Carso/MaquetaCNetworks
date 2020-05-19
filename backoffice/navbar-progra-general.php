@@ -42,7 +42,7 @@
         </div>
 
 
-        <div class="navbar-progra-item navbar-home" navbar-index="4" rel="navnar-prev-home">
+        <div class="navbar-progra-item navbar-home" navbar-index="4" rel="navbar-prev-home">
             <div class="navbar-progra-item-container ml-3 mr-3">
                 <p class="a-text-regular-blacktwo py-2 px-3 mb-0">HOME</p>
             </div>
