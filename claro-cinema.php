@@ -162,11 +162,12 @@
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
+                  <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/01-NUESTROS-BUENOS-VECINOS.jpg" alt="">
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
                     <p class="a-poster-text-white">
-                      ¿QUÉ TE HA DADO ESA MUJER?
+                      NUESTROS BUENOS VECINOS
                     </p>
                   </div>
                 </div>
@@ -179,11 +180,12 @@
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
+                  <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/02-EL-PASAJERO-.jpg" alt="">
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
                     <p class="a-poster-text-white">
-                      ¿QUÉ TE HA DADO ESA MUJER?
+                      EL PASAJERO DIEZ MIL
                     </p>
                   </div>
                 </div>
@@ -196,11 +198,12 @@
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
+                  <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/03-QUE-BRAVAS-SON.jpg" alt="">
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
                     <p class="a-poster-text-white">
-                      ¿QUÉ TE HA DADO ESA MUJER?
+                      QUE BRAVAS SON
                     </p>
                   </div>
                 </div>
@@ -213,62 +216,12 @@
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
+                  <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/04-QUE-HACER-MIS-HIJOS.jpg" alt="">
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
                     <p class="a-poster-text-white">
-                      ¿QUÉ TE HA DADO ESA MUJER?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="poster">
-              <div class="poster-body">
-                <div class="showtime-container justify-content-between">
-                  <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                </div>
-                <div class="thumbnail">
-                </div>
-                <div class="a-cinema-rectangle">
-                  <div class="poster-title-margin">
-                    <p class="a-poster-text-white">
-                      ¿QUÉ TE HA DADO ESA MUJER?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="poster">
-              <div class="poster-body">
-                <div class="showtime-container justify-content-between">
-                  <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                </div>
-                <div class="thumbnail">
-                </div>
-                <div class="a-cinema-rectangle">
-                  <div class="poster-title-margin">
-                    <p class="a-poster-text-white">
-                      ¿QUÉ TE HA DADO ESA MUJER?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="poster">
-              <div class="poster-body">
-                <div class="showtime-container justify-content-between">
-                  <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                </div>
-                <div class="thumbnail">
-                </div>
-                <div class="a-cinema-rectangle">
-                  <div class="poster-title-margin">
-                    <p class="a-poster-text-white">
-                      ¿QUÉ TE HA DADO ESA MUJER?
+                      QUÉ HACER CON MIS HIJOS
                     </p>
                   </div>
                 </div>
@@ -297,11 +250,12 @@
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
+                  <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/05-DOS-PALOMAS.jpg" alt="">
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
                     <p class="a-poster-text-white">
-                      ¿QUÉ TE HA DADO ESA MUJER?
+                      DOS PALOMAS
                     </p>
                   </div>
                 </div>
@@ -314,11 +268,12 @@
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
+                  <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/06-EROTICA.jpg" alt="">
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
                     <p class="a-poster-text-white">
-                      ¿QUÉ TE HA DADO ESA MUJER?
+                      ERÓTICA
                     </p>
                   </div>
                 </div>
@@ -331,28 +286,12 @@
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
+                  <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/07-CON-TODOS.jpg" alt="">
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
                     <p class="a-poster-text-white">
-                      ¿QUÉ TE HA DADO ESA MUJER?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="poster">
-              <div class="poster-body">
-                <div class="showtime-container justify-content-between">
-                  <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                </div>
-                <div class=" thumbnail">
-                </div>
-                <div class="a-cinema-rectangle">
-                  <div class="poster-title-margin">
-                    <p class="a-poster-text-white">
-                      ¿QUÉ TE HA DADO ESA MUJER?
+                      CON TODOS MENOS CONMIGO
                     </p>
                   </div>
                 </div>
@@ -365,28 +304,12 @@
                   <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                 </div>
                 <div class="thumbnail">
+                  <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/08-YO-EL-MUJERIEGO.jpg" alt="">
                 </div>
                 <div class="a-cinema-rectangle">
                   <div class="poster-title-margin">
                     <p class="a-poster-text-white">
-                      ¿QUÉ TE HA DADO ESA MUJER?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="poster">
-              <div class="poster-body">
-                <div class="showtime-container justify-content-between">
-                  <p class="a-programming-text">14:30 - 16:30</p>
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                </div>
-                <div class="thumbnail">
-                </div>
-                <div class="a-cinema-rectangle">
-                  <div class="poster-title-margin">
-                    <p class="a-poster-text-white">
-                      ¿QUÉ TE HA DADO ESA MUJER?
+                      YO EL MUJERIEGO
                     </p>
                   </div>
                 </div>

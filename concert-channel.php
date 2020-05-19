@@ -140,11 +140,12 @@
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
                             <div class="thumbnail">
+                                <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/01-LIVE-FROM-ABBEY.jpg" alt="">
                             </div>
                             <div class="a-concert-rectangle">
                                 <div class="poster-title-margin">
                                     <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                        LIVE FROM ABBEY ROAD
                                     </p>
                                 </div>
                             </div>
@@ -157,11 +158,12 @@
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
                             <div class="thumbnail">
+                                <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/02-QUEEN.jpg" alt="">
                             </div>
                             <div class="a-concert-rectangle">
                                 <div class="poster-title-margin">
                                     <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                        QUEEN
                                     </p>
                                 </div>
                             </div>
@@ -174,11 +176,12 @@
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
                             <div class="thumbnail">
+                                <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/07-SEPULTURA.jpg" alt="">
                             </div>
                             <div class="a-concert-rectangle">
                                 <div class="poster-title-margin">
                                     <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                        SEPULTURA
                                     </p>
                                 </div>
                             </div>
@@ -191,45 +194,12 @@
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
                             <div class="thumbnail">
+                                <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/05-DOORS.jpg" alt="">
                             </div>
                             <div class="a-concert-rectangle">
                                 <div class="poster-title-margin">
                                     <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container justify-content-between">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-                            <div class="thumbnail">
-                            </div>
-                            <div class="a-concert-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container justify-content-between">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-                            <div class="thumbnail">
-                            </div>
-                            <div class="a-concert-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                        THE DOORS
                                     </p>
                                 </div>
                             </div>
@@ -253,11 +223,12 @@
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
                             <div class="thumbnail">
+                                <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/04-RED-HOT-CHILI.jpg" alt="">
                             </div>
                             <div class="a-concert-rectangle">
                                 <div class="poster-title-margin">
                                     <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                        RED HOT CHILI PEPPERS
                                     </p>
                                 </div>
                             </div>
@@ -270,11 +241,12 @@
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
                             <div class="thumbnail">
+                                <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/08-BILLIE-EILISH.jpg" alt="">
                             </div>
                             <div class="a-concert-rectangle">
                                 <div class="poster-title-margin">
                                     <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                        BILLIE EILISH
                                     </p>
                                 </div>
                             </div>
@@ -287,11 +259,12 @@
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
                             <div class="thumbnail">
+                                <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/06-RIANNA.jpg" alt="">
                             </div>
                             <div class="a-concert-rectangle">
                                 <div class="poster-title-margin">
                                     <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                        RIHANNA
                                     </p>
                                 </div>
                             </div>
@@ -304,62 +277,12 @@
                                 <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                             </div>
                             <div class="thumbnail">
+                                <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/03-BEYONCE.jpg" alt="">
                             </div>
                             <div class="a-concert-rectangle">
                                 <div class="poster-title-margin">
                                     <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container justify-content-between">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-                            <div class="thumbnail">
-                            </div>
-                            <div class="a-concert-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container justify-content-between">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-                            <div class="thumbnail">
-                            </div>
-                            <div class="a-concert-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container justify-content-between">
-                                <p class="a-programming-text">14:30 - 16:30</p>
-                                <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                            </div>
-                            <div class="thumbnail">
-                            </div>
-                            <div class="a-concert-rectangle">
-                                <div class="poster-title-margin">
-                                    <p class="a-poster-text-white">
-                                        ¿QUÉ TE HA DADO ESA MUJER?
+                                        BEYONCÉ
                                     </p>
                                 </div>
                             </div>
