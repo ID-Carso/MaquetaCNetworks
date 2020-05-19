@@ -36,6 +36,12 @@ import {
 } from "./services/user.js";
 
 $(document).ready(function () {
+  //CHANGE TO LANDING
+  $("#btn-landing").click(function () {
+    landing();
+    console.log("pojpoj");
+  });
+
   $(".option").click(function () {
     var value = $(this).attr("value");
     var select = $(this).attr("id-select");

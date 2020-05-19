@@ -21,7 +21,6 @@
                 this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
                 this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
 
-
             }
         });
     </script>
@@ -34,7 +33,7 @@
         $nameSection = "home";
         include 'header-office.php';
 
-        showHeader($nameButton, $nameSection, 2);
+        //showHeader($nameButton, $nameSection, 2);
         ?>
         <div class="col-11 mx-auto mb-5 mt-5">
 

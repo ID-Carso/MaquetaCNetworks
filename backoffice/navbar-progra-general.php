@@ -52,6 +52,9 @@
         <img src="./images/arrow-gray.svg" alt="flecha" class="arrow-progra arrow-progra-right">
         <!--<span class="p-3 arrow arrow-right">><span>-->
     </div>
+    <div>
+
+    </div>
     <div id="prev-programacion-general">
 
     </div>
