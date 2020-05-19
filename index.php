@@ -9,7 +9,7 @@
 <body class="fondo-index">
 	<div>
 		<div class="logo-container">
-			<img src="images/paises/claro-networks-logo.svg" class="paises-image">
+			<img src="./images/logos/claro-networks-white.svg" class="paises-image">
 		</div>
 		<div class="container paises-container">
 			<div class="paises col-md-12 fondopaises ">
