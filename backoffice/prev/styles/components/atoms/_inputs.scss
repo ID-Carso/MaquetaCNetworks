@@ -1,0 +1,294 @@
+@import "../base/colors";
+@import "../base/config";
+
+.insert-data {
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-clip: padding-box;
+  width: 100%;
+  height: 44px;
+  background-color: $textWhite;
+  padding: 1px;
+  font-family: $montserratSemiBold;
+  color: $pureBlack;
+  font-size: $fontSizeTv;
+  border: none;
+  border-radius: 0px;
+  border-bottom: solid 1px $bordergray;
+  font-weight: bold;
+  outline: none !important;
+}
+
+.insert-data:focus {
+  color: $bluetxt;
+  border-bottom: solid 2px $bluetxt;
+  font-family: $montserratRegular;
+}
+
+label {
+  display: flex;
+  font-family: $montserratRegular;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #9fa0a0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  cursor: pointer;
+}
+
+label:before {
+  content: "";
+  background: transparent;
+  border: 2px solid $subtitleTV;
+  border-radius: 5px;
+
+  height: 20px;
+  width: 20px;
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "✓";
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $textWhite;
+  background: $subtitleTV;
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "✓";
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: $textWhite;
+  background: $subtitleTV;
+}
+
+.tamaño {
+  width: 288px;
+  height: 44px;
+  margin: auto;
+  position: relative;
+  margin-top: 2%;
+}
+
+.tamaño2 {
+  height: 64px;
+  margin: auto;
+  position: relative;
+}
+
+.tamaño3 {
+  width: 307px;
+  height: 41px;
+  margin: auto;
+  position: relative;
+}
+
+.pa-img {
+  padding-bottom: 40px;
+}
+
+.modal-estilo {
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: none !important;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch::before {
+  display: none;
+}
+
+.switch-alert {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch-alert::before {
+  display: none;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+#switch-minutes-before {
+  background-color: #2196f3;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* The slider alert */
+.slideralert {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slideralert:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slideralert {
+  background-color: #03ad50;
+}
+
+input:focus + .slideralert {
+  box-shadow: 0 0 1px #03ad50;
+}
+
+input:checked + .slideralert:before {
+  -webkit-transform: translateX(19px);
+  -ms-transform: translateX(19px);
+  transform: translateX(19px);
+}
+
+/* Rounded sliders alert */
+.slideralert.roundalert {
+  border-radius: 34px;
+}
+
+.slideralert.roundalert:before {
+  border-radius: 50%;
+}
+
+.date-data {
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-clip: padding-box;
+  width: 17%;
+  height: 44px;
+  background-color: $textWhite;
+  padding: 1px;
+  font-family: $montserratRegular;
+  color: $pureBlack;
+  font-size: $fontSizeTv;
+  border: none;
+  border-radius: 0px;
+  border-bottom: solid 1px $bordergray;
+  font-weight: bold;
+  outline: none !important;
+  text-align: center;
+}
+
+.date-data:focus {
+  color: $bluetxt;
+  border-bottom: solid 2px $bluetxt;
+  font-family: $montserratRegular;
+}
+
+.cuadro-dia {
+  width: 100%;
+  height: 50px;
+  margin: none;
+}
+
+.cuadro-fecha {
+  height: 64px;
+  margin: auto;
+  display: flex;
+}
+
+input::-webkit-contacts-auto-fill-button,
+input::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+
+.input-border-red {
+  border-bottom: 2px solid rgb(255, 0, 7);
+}

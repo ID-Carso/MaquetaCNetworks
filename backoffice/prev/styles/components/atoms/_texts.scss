@@ -1,0 +1,1442 @@
+@import "../base/colors";
+@import "../base/config";
+
+%title-basic {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+%poster-title-basic {
+  font-family: $montserratSemiBold;
+  padding: 6px;
+}
+
+@mixin title-section($colorText, $fontSize, $fontFamily: $montserratBlack) {
+  @extend %title-basic;
+  font-size: $fontSize;
+  color: $colorText;
+  font-family: $fontFamily;
+}
+
+@mixin poster-text($fontColor, $fontSize) {
+  @extend %poster-title-basic;
+  font-size: $fontSize;
+  color: $fontColor;
+}
+
+.h3 {
+  font-size: 24px;
+}
+
+.text-normal {
+  font-size: 16px;
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+.text-smaller {
+  font-size: 12px;
+}
+
+.a-text-bold-greyish {
+  color: $greyishBrownTwo;
+  font-family: $montserratBold;
+}
+
+.a-text-bold-tealblue {
+  color: $cinemaRectangle;
+  font-family: $montserratBold;
+}
+
+.a-text-medium-greyish {
+  color: $greyishBrownTwo;
+  font-family: $montserratMedium;
+}
+
+.a-our-vision-title {
+  @include title-section($pinkColor, $titleSection);
+}
+
+.a-sports-text-poster {
+  @include poster-text($pureBlack, $posterTitleResponsive);
+  margin: 0;
+}
+
+.a-programming-text {
+  color: $textWhite;
+  font-family: $montserratSemiBold;
+  font-size: $sizeProgramming;
+  margin: 10px;
+}
+
+.a-claro-channel-title {
+  @include title-section($blackColor, $titleSection);
+  padding-top: 27px;
+  padding-bottom: 5px;
+}
+
+.a-concert-channel-title {
+  @include title-section($colorWhite, $titleSection);
+  padding-top: 27px;
+  padding-bottom: 5px;
+}
+
+.a-concert-channel-subtitle {
+  @include title-section(
+    $colorWhite,
+    $posterTitleResponsive,
+    $fontFamily: $montserratSemiBold
+  );
+  padding-bottom: 14px;
+}
+
+.a-concert-channel-subtitle span {
+  font-family: $montserratRegular;
+}
+
+.a-claro-channel-subtitle-bold {
+  @include title-section($blackColor, $posterTitleResponsive);
+  padding-bottom: 14px;
+}
+
+.a-subtitle {
+  @include title-section(
+    $blackColor,
+    $posterTitleResponsive,
+    $montserratRegular
+  );
+  padding-bottom: 14px;
+}
+
+.a-subtitle span {
+  font-family: $montserratSemiBold;
+}
+
+.a-claro-cinema-title {
+  @include title-section($cinemaTitle, $titleSection);
+  padding-bottom: $titlesPadding;
+  padding-top: 27px;
+}
+
+.a-claro-cinema-title span {
+  color: $cinemaRectangle;
+}
+
+.a-subtitle-bold {
+  font-family: $montserratSemiBold;
+  font-size: $posterTitleResponsive;
+  padding-bottom: $titlesPadding;
+}
+
+.a-poster-text-white {
+  @include poster-text($textWhite, $posterTitleResponsive);
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.a-poster-text-black {
+  @include poster-text($pureBlack, $posterTitleResponsive);
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.advertising-title {
+  @include title-section($pinkColor, $displayTextOne);
+}
+
+.advertising-subtitle {
+  @include title-section($blueSky, $displayTextTwo);
+}
+
+.advertising-text {
+  text-align: justify;
+  margin: 0;
+  line-height: normal;
+  font-size: 14px;
+}
+
+.a-our-vision-title {
+  @include title-section($pinkColor, $titleSection);
+  padding-bottom: $titlesPadding;
+}
+
+.a-claro-sports-title {
+  @include title-section($cinemaTitleColor, $titleSection);
+  padding-bottom: $titlesPadding;
+}
+
+.a-claro-sports-title span {
+  color: $blackColor;
+}
+
+.a-claro-channel-subtitle,
+.a-claro-cinema-subtitle,
+.a-our-vision-subtitle,
+.a-claro-sports-subtitle {
+  @include title-section(
+    $blackColor,
+    $posterTitleResponsive,
+    $montserratRegular
+  );
+  padding-bottom: 14px;
+}
+
+.a-our-vision-subtitle span,
+.a-claro-cinema-subtitle span,
+.a-claro-channel-subtitle span,
+.a-claro-sports-subtitle span {
+  font-family: $montserratSemiBold;
+}
+
+.poster-title-sport {
+  @include title-section($cinemaTitleColor, $titleSection);
+}
+
+.poster-title-sport span {
+  color: $blackColor;
+}
+
+.footer-title {
+  @include title-section($purpleColor, $titleSection);
+}
+
+.footer-title-claro {
+  @include title-section($claroRectangle, $titleSection);
+}
+
+.name_paises {
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: $montserratLight;
+  font-size: $fontpaises;
+  color: $lightgray;
+  cursor: pointer;
+}
+
+.pie_paises {
+  font-family: $montserratRegular;
+  font-size: $sizeProgramming;
+  text-align: center;
+  color: $gray;
+}
+
+.select_paises {
+  height: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: $montserratSemiBold;
+  font-size: $fontSizeTv;
+  text-align: center;
+  color: $gray;
+  text-align: center;
+  margin: 12px auto 40px auto;
+}
+
+.header-h1 {
+  font-size: $headerFontSize;
+  color: $textWhite;
+  display: none;
+}
+
+.header-span {
+  color: $subtitleTV;
+}
+
+.header-point {
+  color: $redBtn;
+}
+
+.title-tv {
+  font-size: $fontlg;
+  font-family: $montserratBlack;
+  text-align: center;
+}
+
+.dropdown-p {
+  margin: 0 !important;
+  font-family: $montserratLight;
+  color: $textWhite;
+}
+
+.active-sidebar-item::before {
+  content: "";
+  background: #ffa700;
+  width: 12px;
+  display: inline-block;
+  height: 12px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.text-footer-basic {
+  color: $greyFooter;
+  font-size: $sizeProgramming;
+}
+
+.text-footer-regular {
+  margin-bottom: 9px;
+}
+
+.text-footer-bold {
+  color: $greyFooter;
+  font-family: $montserratSemiBold;
+  margin-bottom: 22px;
+}
+
+.other-text-regular,
+.text-footer-regular {
+  font-family: $montserratRegular;
+}
+
+.other-text-regular,
+.text-footer-bold {
+  text-align: center;
+  font-size: 10px;
+}
+
+.text-footer-regular {
+  text-align: center;
+  font-size: 14px;
+}
+
+.synopsis-content .text-footer-regular {
+  color: $greyFooter;
+}
+
+.synopsis-content .advertising-text {
+  color: $colorWhite;
+}
+
+.other-text-regular,
+.o-footer-section .aviso-priv-blue {
+  margin-bottom: 41px;
+}
+
+.terms-conditions-mobile .aviso-priv-blue {
+  font-size: 12px;
+}
+
+.terms-conditions-desktop .aviso-priv-blue:nth-child(1) {
+  margin-right: 50px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1920px) {
+  .select_paises {
+    font-size: $fontlg;
+    margin: px auto 74px auto;
+  }
+
+  .pie_paises {
+    font-size: $fontSize;
+  }
+
+  .name_paises {
+    font-size: $fontSizeTitle;
+  }
+}
+
+.contra {
+  font-family: $montserratSemiBold;
+  font-size: $fontpaises;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $password;
+  margin-top: 5%;
+}
+
+.nocuenta {
+  font-family: $montserratSemiBold;
+  font-size: $fontpaises;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $textgray;
+  padding-bottom: 18px;
+}
+
+.poster-horario {
+  font-family: $montserratSemiBold;
+  color: $textWhite;
+  font-size: $fontpaises;
+  margin: 0;
+  position: absolute;
+  left: 4%;
+  top: 4%;
+}
+
+.registro {
+  font-family: $montserratSemiBold;
+  font-size: $titleSection;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $textgray;
+  margin-bottom: 0;
+}
+
+.contra:hover {
+  color: $rollovertxt;
+}
+
+.enviamos {
+  font-family: $montserratRegular;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $txtmodal;
+}
+
+.confirma {
+  font-family: $montserratBold;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $txtmodal;
+}
+
+.txtcontenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hola {
+  font-family: $montserratBlack;
+  font-size: 25px;
+  font-weight: 900;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $subtitleTV;
+  text-transform: uppercase;
+}
+
+.usuario {
+  font-family: $montserratBlack;
+  font-size: 25px;
+  font-weight: 900;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $pureBlack;
+}
+
+.mensaje {
+  font-family: $montserratRegular;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $textgray;
+}
+
+.aviso-priv {
+  font-family: $montserratRegular;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $txtaviso;
+}
+
+.aviso-priv-blue {
+  font-family: $montserratRegular;
+  font-size: 14px;
+  font-weight: 700;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $txtblue;
+}
+
+.caracteres-min {
+  font-family: $montserratSemiBold;
+  font-size: 14px;
+  font-weight: 700;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $txtcontramin;
+  text-align: left;
+  margin-top: 3%;
+}
+
+.correo-valido {
+  font-family: $montserratSemiBold;
+  font-size: 14px;
+  font-weight: 700;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $txtcontramin;
+  text-align: left;
+  margin-top: 3%;
+}
+
+.invalid-email {
+  color: red !important;
+}
+
+.valid-email {
+  color: green !important;
+}
+
+.horario-text {
+  font-size: 14px;
+  font-family: $montserratSemiBold;
+  text-transform: uppercase;
+}
+
+.navbar-item {
+  margin-bottom: 0;
+  font-family: $montserratSemiBold;
+  font-size: 14px;
+  text-decoration: none;
+  margin-right: 20px;
+  color: $navbarItemColor;
+}
+
+.our-channels {
+  display: none;
+  background: $ourChannelColor;
+  margin: 70px 0px 30px 0px;
+}
+
+.our-channels-title {
+  @include title-section($colorWhite, $titleSection);
+  padding: 18px 0;
+}
+
+/*Claro Canal*/
+.a-header-card-text {
+  font-family: $montserratLight;
+}
+
+.a-header-card-text,
+.a-header-card-title,
+.a-header-card-subtitle {
+  font-size: 10px;
+  color: $pureBlack;
+}
+
+.a-header-card-title {
+  text-transform: uppercase;
+  font-family: $montserratBold;
+}
+
+.a-header-card-subtitle {
+  text-transform: uppercase;
+  font-family: $montserratSemiBold;
+}
+
+.a-today-claro-title {
+  padding: 20px 0px;
+}
+
+.a-today-claro-title,
+.a-today-cinema-title {
+  @include title-section($blackColor, $fontSizeTitle);
+  text-transform: uppercase;
+}
+
+.a-today-cinema-title {
+  padding-top: 14px;
+  padding-bottom: 15px;
+}
+
+.a-today-claro-title span,
+.a-today-cinema-title span {
+  color: $claroRectangle;
+}
+
+.a-next-claro-title,
+.a-dontLose-claro-title,
+.a-next-claro-subtitle,
+.a-dontLose-claro-subtitle {
+  text-transform: uppercase;
+}
+
+.a-next-claro-title,
+.a-dontLose-claro-title {
+  padding: 14px 0px 6px 0px;
+}
+
+.a-next-claro-subtitle,
+.a-dontLose-claro-subtitle {
+  padding-bottom: 20px;
+}
+
+.a-next-claro-title {
+  @include title-section($colorWhite, $fontSizeTitle);
+}
+
+.a-next-claro-subtitle {
+  @include title-section($colorWhite, $posterTitleResponsive, $montserratLight);
+}
+
+.a-dontLose-claro-subtitle {
+  @include title-section($colorWhite, $posterTitleResponsive, $montserratLight);
+}
+
+.a-dontLose-claro-subtitle span,
+.a-next-claro-subtitle span {
+  font-family: $montserratSemiBold;
+}
+
+.a-dontLose-claro-title {
+  @include title-section($colorWhite, $fontSizeTitle);
+}
+
+.bold {
+  width: 210px;
+  font-family: $montserratBold;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #373737;
+}
+
+.regular {
+  width: 210px;
+  font-family: $montserratRegular;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #717272;
+}
+
+.bold1 {
+  width: 288px;
+  font-family: $montserratBold;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #373737;
+}
+
+.regular1 {
+  width: 288px;
+  font-family: $montserratRegular;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #717272;
+}
+
+/*End Claro Canal*/
+
+/*Concert channel*/
+
+.today-concert-title {
+  @include title-section($colorWhite, $fontSizeTitle);
+  padding: 20px 0px;
+}
+
+.today-concert-title span {
+  color: $concertColorTitle;
+}
+
+.concert-title {
+  @include title-section($concertColorTitle, $fontSizeTitle);
+  padding-bottom: 6px;
+}
+
+.concert-subtitle {
+  @include title-section($colorWhite, $posterTitleResponsive, $montserratLight);
+  padding-bottom: 20px;
+}
+
+.concert-subtitle span {
+  font-family: $montserratSemiBold;
+}
+
+.concert-container .advertising-text {
+  color: white;
+}
+
+.concert-container .footer-title {
+  color: white;
+  text-align: center;
+}
+
+.concert-container .text-footer-regular {
+  color: #838484;
+}
+
+/*Claro cinema*/
+.a-cinema-title {
+  @include title-section($colorWhite, $fontSizeTitle);
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.a-cinema-title span {
+  color: $cinemaColorTitle;
+}
+
+.a-cinema-subtitle {
+  @include title-section($colorWhite, $posterTitleResponsive, $montserratLight);
+  padding-bottom: 7px;
+}
+
+.a-cinema-subtitle span {
+  font-family: $montserratSemiBold;
+}
+
+.header-title-section {
+  background: black;
+}
+
+/*end claro cinema*/
+
+.nodatos {
+  display: none;
+  font-family: $montserratRegular;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ff0007;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.nocorreo {
+  display: none;
+  text-align: left;
+  font-family: $montserratRegular;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ff0007;
+}
+
+.day-text,
+.day-number {
+  color: $pureBlack;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.day-text {
+  font-family: $montserratLight;
+  font-size: 13px;
+  padding-bottom: 4px;
+}
+
+.day-number {
+  font-size: 18px;
+  font-family: $montserratSemiBold;
+}
+
+.claro-active {
+  .day-text,
+  .day-number {
+    color: white;
+  }
+}
+
+.concert-active {
+  .day-text,
+  .day-number {
+    color: white;
+  }
+}
+
+.cinema-active {
+  .day-text,
+  .day-number {
+    color: white;
+  }
+}
+
+.vision-active {
+  .day-text,
+  .day-number {
+    color: white;
+  }
+}
+
+.sports-active {
+  .day-text,
+  .day-number {
+    color: white;
+  }
+}
+
+.schedule {
+  color: $scheduleHourColor;
+}
+
+.rating,
+.rating-alert {
+  color: $scheduleDayColor;
+}
+
+.schedule-days,
+.rating-alert {
+  font-family: $montserratSemiBold;
+}
+
+.schedule-days {
+  color: $pureBlack;
+  font-size: 14px;
+}
+
+.rating-alert {
+  color: $month;
+  font-size: 13px;
+  padding-right: 10px;
+}
+
+.myList-details-container {
+  .schedule {
+    color: $month;
+  }
+}
+
+.myList-details-container {
+  .rating {
+    font-size: 14px;
+  }
+}
+
+.schedule,
+.rating {
+  font-family: $montserratSemiBold;
+}
+
+.schedule {
+  font-size: 12px;
+}
+
+.rating {
+  font-size: 10px;
+}
+
+.schedule-add-text {
+  margin-bottom: 0;
+}
+
+.rating,
+.rating-alert,
+.schedule,
+.schedule-days {
+  margin-bottom: 0px;
+}
+
+.schedule-title {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-family: $montserratBlack;
+}
+
+.month {
+  margin-bottom: 26px;
+  font-family: $montserratSemiBold;
+  font-size: 14px;
+  color: $month;
+  text-transform: uppercase;
+}
+
+.titulo-seleccion-pais {
+  font-family: $montserratSemiBold;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+  text-align: initial;
+  margin-bottom: 0px;
+  margin-top: 35px;
+}
+
+.titulo-seleccion-fecha {
+  font-family: $montserratSemiBold;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+  text-align: initial;
+  margin-bottom: 14px;
+  margin-top: 62px;
+}
+
+.titulo-seleccion-sexo {
+  font-family: $montserratSemiBold;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+  text-align: initial;
+  margin-bottom: 14px;
+}
+
+.synopsis-section-title {
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  font-family: $montserratBlack;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.synopsis-schedule-text {
+  padding-right: 6px;
+}
+
+.synopsis-title {
+  font-size: 16px;
+  font-family: $montserratLight;
+  color: white;
+  text-align: center;
+  padding-bottom: 17px;
+  text-align: center;
+}
+
+.synopsis-text {
+  color: white;
+  font-size: 14px;
+  font-family: $montserratRegular;
+  margin-bottom: 1rem;
+}
+
+.synopsis-schedule-title {
+  margin-bottom: 36px !important;
+  color: white;
+  text-align: center;
+  font-family: $montserratBlack;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.synopsis-content .footer-title {
+  color: $btnBackRed;
+}
+
+.dropdownCountry-text {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.dropdownCountry-schedule {
+  font-size: 16px;
+  color: $dropdownCountrySchedule;
+  text-align: center;
+}
+
+.dropdownCountry-arrow::after {
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  content: "";
+  height: 8px;
+  pointer-events: none;
+  transform-origin: 66% 66%;
+  transform: rotate(45deg);
+  transition: all 0.15s ease-in-out;
+  width: 8px;
+  margin-bottom: 3px;
+}
+
+.dropdownCountry-icon {
+  transform: rotate(0deg);
+  transition: all 0.5s ease;
+  margin-bottom: 0;
+}
+
+.arrow-up {
+  transform: rotate(-180deg);
+}
+
+.texto-alert {
+  font-family: $montserratRegular;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+  text-align: initial;
+  margin-bottom: 0;
+}
+
+.alert-text {
+  font-size: 19px;
+}
+
+.span-alert-right {
+  position: absolute;
+  left: 100%;
+}
+
+.span-alert-left {
+  position: absolute;
+  right: 100%;
+}
+
+.titulos-configuraciones {
+  font-family: $montserratSemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #717272;
+  margin-top: calc(10% + 63px);
+  margin-bottom: 10%;
+}
+
+.texto-config {
+  font-family: $montserratRegular;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+  text-align: initial;
+  margin-bottom: 0;
+}
+
+.texto-usuario-miperfil {
+  font-family: $montserratRegular;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+}
+
+.texto-sub-avatar {
+  font-family: $montserratRegular;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+}
+
+.texto-categorias {
+  font-family: $montserratSemiBold;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #666262;
+  text-align: initial;
+}
+
+.recordar-title {
+  color: $cinemaTitleGreen !important;
+}
+
+.programacion-main-title {
+  padding: 30px 0;
+  font-family: $montserratBlack;
+  color: $claroRectangle;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.schedule-description {
+  display: none;
+  font-family: $montserratRegular;
+  margin-bottom: 0;
+  color: $scheduleDayColor;
+  font-size: 16px;
+}
+
+.marca-header .navbar-item {
+  color: $pureBlack;
+}
+
+.titulo-terminos-aviso {
+  display: block;
+  height: 44px;
+  margin: 0px auto 0;
+  text-align: left;
+  margin-top: 60px;
+  width: 768px;
+  clear: both;
+  background-color: #fff;
+}
+
+.cuerpo-terminos-aviso {
+  margin: 0px auto 0;
+  display: table;
+  text-align: left;
+  width: 768px;
+  background-color: #fff;
+}
+
+.my-list-title {
+  font-family: $montserratLight;
+  text-align: center;
+  color: #717272;
+  font-size: 24px;
+  margin-bottom: 0;
+  padding-bottom: 37px;
+}
+
+.name-category {
+  font-size: 14px;
+  font-family: $montserratSemiBold;
+  color: #1cc4e1;
+  text-transform: uppercase;
+}
+
+.claro-list-title,
+.cinema-list-title {
+  color: #262626;
+}
+
+.concert-list-title {
+  color: $concertRectangle;
+}
+
+.cinema-list-title span {
+  color: $cinemaTitleGreen;
+}
+
+.list-title-section {
+  font-family: "Montserrat-Black";
+  font-size: 16px;
+  text-align: center;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+.re-password-title {
+  color: $txtmodal;
+  font-size: $titleSection;
+  font-family: $montserratSemiBold;
+  text-align: center;
+}
+
+.re-password-text {
+  font-family: $montserratRegular;
+  text-align: center;
+  color: $txtmodal;
+  font-size: $displayTextTwo;
+}
+
+.email-found-text {
+  color: $txtmodal;
+  font-size: $displayTextTwo;
+  font-family: $montserratSemiBold;
+  text-align: center;
+}
+
+.data-found-container {
+  .email-found-text::nth-child(1) {
+    margin-bottom: 32px;
+  }
+}
+
+.success-title {
+  text-align: center;
+  font-family: $montserratBlack;
+  color: $pureBlack;
+  font-size: 25px;
+}
+
+.success-text {
+  font-family: $montserratBold;
+  color: $txtmodal;
+  font-size: $displayTextTwo;
+}
+
+.re-password-text span {
+  font-family: $montserratBold;
+}
+
+.now-live-text {
+  position: absolute;
+  z-index: 1;
+  padding: 2px 30px;
+  background: red;
+}
+
+.name-user {
+  font-family: $montserratSemiBold;
+  color: $colorWhite;
+  font-size: 18px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.tooltip-text {
+  font-family: $montserratLight;
+  color: $pureBlack;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.a-text-black {
+  font-family: $montserratSemiBold;
+  color: $pureBlack;
+}
+
+.a-text-black-regular {
+  font-family: $montserratRegular;
+  color: $pureBlack;
+}
+
+.a-text-white-bold {
+  font-family: $montserratBold;
+  color: $colorWhite;
+}
+
+.a-text-white-semibold {
+  font-family: $montserratSemiBold;
+  color: $colorWhite;
+}
+
+.a-text-white-monblack {
+  font-family: $montserratBlack;
+  color: $colorWhite;
+}
+
+.a-text-warm-grey-bold {
+  font-family: $montserratBold;
+  color: $warmGray;
+}
+
+.a-text-warm-grey-regular {
+  font-family: $montserratRegular;
+  color: $warmGray;
+}
+
+.text-regular {
+  font-family: $montserratRegular;
+}
+
+.text-bold {
+  font-family: $montserratBold;
+}
+
+.text-light {
+  font-family: $montserratLight;
+}
+
+.text-monblack {
+  font-family: $montserratBlack;
+}
+
+.text-semibold {
+  font-family: $montserratSemiBold;
+}
+
+.text-teal-blue {
+  color: $cinemaRectangle;
+}
+
+.alert-user-text {
+  color: $txtcontramin;
+  font-family: 14px;
+  margin-bottom: 0;
+}
+
+.a-correo-title {
+  font-size: 27px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.a-password-link {
+  color: $subtitleTV;
+}
+
+.nouser {
+  font-family: $montserratRegular;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ff0007;
+  margin-top: 3%;
+}
+
+.login-text {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.no-favorites-title {
+  font-size: 16px;
+}
+
+.no-favorites-subtitle {
+  font-size: 15px;
+}
+
+.modal-favorites-text {
+  font-size: 16px;
+  color: $black;
+}
+
+.option-config:first-child {
+  padding: 0 20px 20px 20px;
+}
+
+.option-config {
+  padding: 20px;
+}
+
+.modal-program-title {
+  font-size: 17px;
+  color: $cinemaRectangle;
+  padding-bottom: 8px;
+}
+
+.modal-program-text {
+  font-size: 14px;
+  color: $txtcontramin;
+}
+
+.aboutus-title1 {
+  font-size: 49px;
+}
+
+.aboutus-title2 {
+  font-size: 68px;
+}
+
+.aboutus-subtitle {
+  font-size: 20px;
+}
+
+.aboutus-text {
+  padding-bottom: 20px;
+}
+
+.navbar-item-black {
+  font-size: 16px;
+  color: $navbarItemColor;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.home-list-links-footer .text-landing-footer,
+.cclaro-list-links-footer .text-landing-footer,
+.programing-list-links-footer .text-landing-footer {
+  color: $navbarItemColor;
+}
+
+.cconcert-list-links-footer {
+  .text-landing-footer {
+    color: $colorWhite;
+  }
+}
+
+.ccinema-list-links-footer {
+  .text-landing-footer {
+    color: $pureBlack;
+  }
+}
+
+.text-landing-footer {
+  text-align: center;
+  margin-bottom: 3px;
+  font-size: 9px;
+}
+
+.no-synopsis-title {
+  padding-bottom: 15px;
+}
+
+.no-synopsis-title span {
+  color: $sunflowerYellow;
+}
+
+.title-aviso {
+  margin: 30px 0;
+  font-size: 24px;
+  color: $textgray;
+}

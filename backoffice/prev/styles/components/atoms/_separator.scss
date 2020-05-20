@@ -1,0 +1,42 @@
+.hr1 {
+  display: none;
+}
+
+.border-right {
+  border: none !important;
+}
+
+.aviso-border {
+  border-bottom: 1px solid $borderAvisoColor;
+  margin-bottom: 22px;
+}
+
+.footer-border-right {
+  border-right: 1px solid $borderAvisoColor;
+}
+
+.sidebar-border-bottom {
+  border-bottom: solid 1px $dropdowncolor;
+}
+
+.sidebar-border-top {
+  border-top: solid 1px $dropdowncolor;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hr1 {
+    display: block;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hr1 {
+    display: block;
+  }
+}
+
+.log {
+  width: 90%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border: solid 1px $subtitleTV;
+}

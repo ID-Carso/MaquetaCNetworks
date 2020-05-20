@@ -1,0 +1,129 @@
+@import "../molecules/posters";
+@import "../base/colors";
+
+%section-basic {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin section($background: null) {
+  @extend %section-basic;
+  background-color: $background;
+}
+
+.o-concert-section {
+  @include section();
+  background-image: url("../images/home/bg-concert-channel.jpg");
+  background-size: cover;
+}
+
+.concert-channel-tablet {
+  display: none;
+}
+
+.concert-channel-desktop {
+  display: none;
+}
+.o-tv-section {
+  @include section();
+}
+
+.o-cinema-section {
+  position: relative;
+  background-image: url(../../../images/home/circle-yellow.png);
+  background-size: 86%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 80px;
+}
+
+.cinema-claro-tablet {
+  display: none;
+}
+
+.cinema-claro-desktop {
+  display: none;
+}
+
+.o-vision-section {
+  @include section();
+  position: relative;
+}
+
+.nuestra-vision-tablet {
+  display: none;
+}
+
+.nuestra-vision-desktop {
+  display: none;
+}
+
+.o-claro-section {
+  @include section();
+  background-image: url("../images/home/bg-canal-claro.jpg");
+  background-size: cover;
+}
+
+.claro-canal-tablet {
+  display: none;
+}
+
+.claro-canal-desktop {
+  display: none;
+}
+
+.o-sports-section {
+  @include section();
+}
+
+.claro-sports-tablet {
+  display: none;
+}
+
+.claro-sports-desktop {
+  display: none;
+}
+
+.o-footer-section {
+  @include section();
+}
+
+.o-advertising-section {
+  margin: 0px auto 0px auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  max-width: 600px;
+}
+
+.advertising-section-tablet {
+  display: none;
+}
+
+.advertising-section-desktop {
+  display: none;
+}
+
+/*Canal Claro*/
+
+.next-week-claro {
+  background: $claroRectangle;
+  margin-bottom: 30px;
+}
+
+.dont-lose-claro {
+  background: $dontLoseSection;
+  margin-bottom: 60px;
+}
+
+.concert-container {
+  background: #1f2887;
+}
+
+.claro-cinema-content {
+  background: #f5dd15;
+}
+
+.synopsis-content {
+  background: $pureBlack;
+}

@@ -1,0 +1,64 @@
+/*html,
+body {
+  height: 100%;
+}*/
+
+.html {
+  position: initial;
+  overflow: inherit;
+}
+
+body {
+  position: initial;
+  overflow: hidden auto;
+  width: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.bx-wrapper {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  margin-bottom: 50px !important;
+  max-width: 500px !important;
+  width: 100% !important;
+
+  margin: 0px auto !important;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #d8d8d8 !important;
+  text-indent: -9999px;
+  display: block;
+  width: 5px !important;
+  height: 5px !important;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #7d7979 !important;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0rem !important;
+  font-weight: 500;
+  line-height: 1.2;
+}

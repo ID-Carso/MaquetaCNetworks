@@ -1,0 +1,103 @@
+@import "../base/colors";
+@import "../base/config";
+
+%rectangle-basic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  text-transform: uppercase;
+}
+
+@mixin poster-rectangle($background) {
+  @extend %rectangle-basic;
+  background: $background;
+}
+
+.a-cinema-rectangle {
+  @include poster-rectangle($cinemaRectangle);
+}
+
+.a-sports-rectangle {
+  @include poster-rectangle($rectangleYellow);
+}
+
+.a-concert-rectangle {
+  @include poster-rectangle($concertRectangle);
+}
+
+.thumbnail-info-image {
+  display: none;
+  float: left;
+  width: 15%;
+}
+
+.thumbnail-info-title {
+  width: 100%;
+}
+
+.a-claro-rectangle {
+  @include poster-rectangle($claroRectangle);
+}
+
+.a-vision-rectangle {
+  @include poster-rectangle($pinkColor);
+}
+
+.a-sports-rectangle {
+  @include poster-rectangle($rectangleYellow);
+}
+.no-gutters {
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+  position: relative;
+}
+
+.transmission-panel {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  opacity: 0.65;
+  background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+}
+
+.transmission-add {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  right: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Canal claro*/
+.a-next-week-rectangle {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 00px);
+  background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0));
+  height: 84px;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.rectangle-content {
+  width: 100%;
+  text-align: center;
+}
+
+.showtime-container {
+  position: absolute;
+  height: 68px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0)
+  );
+  width: 100%;
+}

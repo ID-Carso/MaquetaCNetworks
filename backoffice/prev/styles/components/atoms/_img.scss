@@ -1,0 +1,722 @@
+@import "../base/config";
+@import "../base/colors";
+
+.poster-image {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  height: 420px;
+}
+
+.paises-image {
+  width: 0%;
+  max-width: 125px;
+  min-width: 60px;
+  max-height: 75px;
+  min-height: 36px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Icon_paises {
+  margin-right: 14px;
+  vertical-align: middle;
+}
+
+.espacio {
+  margin-bottom: 20px;
+}
+
+.fondo {
+  background: transparent;
+}
+
+.fondo-index {
+  background: url(http://www.claronetworks.openofficedospuntocero.info/images/General/claro-networks-portada.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fondopaises {
+  background-color: $ligth;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 30px;
+  border-radius: 8px;
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+.poster-add {
+  display: block;
+  margin: auto;
+  width: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .paises-image {
+    width: 16%;
+    padding-top: 24px;
+    margin-bottom: 38px;
+  }
+
+  .pie_paises {
+    margin-top: 23px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .paises-image {
+    width: 10%;
+  }
+
+  .pie_paises {
+    margin-top: 23px;
+    margin-bottom: 20px;
+  }
+
+  .shadow1 {
+    //box-shadow: 3px 3px 5px 6px #5c1864;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .paises-image {
+    width: 10%;
+  }
+
+  .pie_paises {
+    margin-top: 24px;
+    margin-bottom: 20px;
+  }
+
+  .shadow1 {
+    //box-shadow: 3px 3px 5px 6px #5c1864;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  .paises-image {
+    width: 12%;
+  }
+
+  .pie_paises {
+    margin-top: 25px;
+    margin-bottom: 22px;
+  }
+
+  .shadow1 {
+    //box-shadow: 3px 3px 5px 6px #5c1864;
+    border-radius: 15px;
+    // margin-top: 4%;
+  }
+}
+
+.logo {
+  width: 74px;
+}
+
+.menu-responsive {
+  width: $navItemWidth;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+/*.login-item {
+  width: $navItemWidth;
+}*/
+
+.showtime-clock {
+  width: 20px;
+  filter: invert(1);
+  margin: auto;
+}
+
+.a-cinema-rectangle .showtime-clock {
+  filter: invert(0);
+}
+
+.a-sports-rectangle .showtime-clock {
+  filter: invert(0);
+}
+
+.poster-image-left {
+  height: $posterImageLeft;
+}
+
+.poster-image-right {
+  height: $posterImageRight;
+}
+
+.poster-image-small {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  height: $posterSmallImage;
+}
+
+.advertising-image {
+  width: 80%;
+  display: block;
+  margin: 30px auto;
+}
+
+.social-icon {
+  width: 45px;
+  // margin-right: 27px;
+}
+
+.logo-footer {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.footer-img {
+  width: 80%;
+  max-width: 50px;
+}
+
+.small-footer-img {
+  width: 100%;
+  height: 60px;
+  max-width: 80px;
+}
+
+.ubicacion {
+  position: absolute;
+  top: 44%;
+  right: 10%;
+}
+
+.ubicacion1 {
+  position: absolute;
+  left: 41%;
+  top: 36%;
+}
+
+.ubicacion2 {
+  position: absolute;
+  bottom: 12%;
+}
+
+.ubicacion3 {
+  position: absolute;
+  right: 3%;
+  top: 30%;
+  z-index: 1;
+}
+
+.ubicacion4 {
+  position: absolute;
+  right: 6%;
+  top: 31%;
+  opacity: 0.3;
+}
+
+.ubicacion5 {
+  position: absolute;
+  top: 100%;
+  transform: translate(0, -100%);
+  left: 0;
+}
+
+.ubicacion6 {
+  position: absolute;
+  bottom: 8%;
+}
+
+/*Colores de prueba para posters*/
+
+.poster-grey {
+  background: #959292;
+}
+
+.pink-color {
+  background: #e289af;
+}
+
+.cinema-poster-color {
+  background: #83e3e8;
+}
+
+.concert-poster-color {
+  background: #5e98ec;
+}
+
+.claro-poster-color {
+  background: #e66159;
+}
+
+.sport-poster-color {
+  background: #f3ea6d;
+}
+
+.fondolog {
+  background: $textWhite;
+  height: 100vh;
+}
+
+.ubicacion4:hover {
+  opacity: 1;
+}
+
+.logo-sidebar {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.listo {
+  display: none;
+}
+
+.error {
+  display: none;
+}
+
+/*Canal Claro*/
+
+.claro-thumbnail {
+  background: #797979;
+  overflow: hidden;
+  padding-bottom: 41%;
+  position: relative;
+  width: 100%;
+}
+
+.claro-thumbnail img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+.next-week-thumb {
+  background: #797979;
+  overflow: hidden;
+  padding-bottom: 65%;
+  position: relative;
+  width: 100%;
+}
+
+/*Concert channel*/
+
+.thumbnail {
+  background: #797979;
+  overflow: hidden;
+  padding-bottom: 47%;
+  position: relative;
+  width: 100%;
+}
+
+.thumbnail-large {
+  background: #797979;
+  overflow: hidden;
+  padding-bottom: 162%;
+  position: relative;
+  width: 100%;
+}
+
+.thumbnail-prog {
+  background: #797979;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-bottom: 63%;
+}
+
+.thumbnail img,
+.thumbnail-large img,
+.thumbnail-prog img {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+.schedule-add-icon {
+  margin-left: 5px;
+}
+
+.arrow-prev,
+.arrow-tv-prev {
+  width: 32px;
+  left: 6px;
+}
+
+.arrow-next,
+.arrow-tv-next {
+  width: 32px;
+  right: 5px;
+}
+
+.arrow-tv-next,
+.arrow-tv-prev {
+  top: 25%;
+}
+
+.arrow-next,
+.arrow-prev {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.arrow-next,
+.arrow-prev,
+.arrow-tv-next,
+.arrow-tv-prev {
+  opacity: 0.6;
+  transition: 1s ease;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.arrow-prev:hover,
+.arrow-next:hover,
+.arrow-tv-next:hover,
+.arrow-tv-prev:hover {
+  opacity: 1;
+}
+
+.men {
+  width: 25px;
+  height: 25px;
+  margin-left: 4%;
+}
+
+.women {
+  width: 25px;
+  height: 25px;
+  margin-left: -43%;
+}
+
+.synopsis-image {
+  width: 100%;
+}
+
+.header-curve {
+  display: block;
+  position: absolute;
+  bottom: -14%;
+  width: 101%;
+  left: 0;
+  z-index: 1;
+}
+
+.avatar-usuario {
+  margin-bottom: 15px;
+}
+
+.flechalink-alertas {
+  margin-left: 220px;
+}
+
+.flechalink-avatar {
+  margin-left: 145px;
+}
+
+.flechalink-datos {
+  margin-left: 125px;
+}
+
+.flechalink-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0px, -50%);
+}
+
+.ubicacionpuntos {
+  position: absolute;
+  top: 95%;
+  left: 95%;
+  transform: translate(-100%, -100%);
+}
+
+.lista-avatar {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 9%;
+  max-width: calc(100vw - 35px);
+  margin: 0 auto 9% auto;
+}
+
+.categorias-flecha {
+  margin-left: 11px;
+  margin-bottom: 3px;
+}
+
+.claro-nav-image,
+.nav-image {
+  height: 50px;
+}
+
+.nav-image {
+  width: 60%;
+  cursor: pointer;
+}
+
+.claro-nav-image {
+  width: 100%;
+  cursor: pointer;
+}
+
+.synopsis-image:nth-child(2),
+.synopsis-image:nth-child(3) {
+  display: none;
+}
+
+.synopsis-main-image {
+  margin-bottom: 25px;
+}
+
+.synopsis-image {
+  width: 100%;
+}
+
+.nuestra-vision-image {
+  position: absolute;
+  max-width: 500px;
+  top: 18%;
+  right: 0;
+  width: 30%;
+}
+
+.background-home {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.form-image-blue {
+  border-radius: 15px;
+  left: 0;
+  top: 0;
+}
+
+.tache_button {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.image-list-blue {
+  width: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.image-list-points {
+  position: absolute;
+  top: 11%;
+  right: 5%;
+  z-index: 1;
+}
+
+.icon-eye {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  opacity: 0.3;
+  transform: translate(0px, -50%);
+  width: 35px;
+}
+
+.sidebar-image-user {
+  width: 70px;
+}
+
+.icon-user {
+  cursor: pointer;
+}
+
+.logo-mail {
+  width: 100%;
+  max-width: 150px;
+}
+
+.image-user {
+  width: 70px;
+  height: 70px;
+}
+
+.image-user img {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+
+  width: 100%;
+  border-radius: 35px;
+}
+
+.no-favorites-img {
+  width: 115px;
+}
+
+.arrow-back {
+  display: none;
+  width: 70px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-30%, -30%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.alert-image {
+  width: 100%;
+  max-width: 102px;
+}
+
+.close-notification {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  transform: (translate(40%, -40%));
+}
+
+.loader-img {
+  width: 100%;
+  max-width: 70px;
+}
+
+.heart-gray {
+  fill: none;
+}
+
+.heart-gray-filled {
+  fill: #7a7777;
+}
+
+.close-modal {
+  width: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(15%, -30%);
+}
+
+.synopsis-heart {
+  width: 40px;
+}
+
+.modal-image-program {
+  width: 100%;
+  max-width: 90px;
+}
+
+.image-circle-blue {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.image-points-blue {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}
+
+.image-circle-pink {
+  position: absolute;
+  right: 10%;
+  top: 15%;
+}
+
+.claro-image-header {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.concerthome-image-header {
+  width: 56px;
+  margin: 16px 0px 10px 0px;
+}
+
+.cinemahome-image-header {
+  margin-top: 27px;
+  margin-bottom: 10px;
+  width: 56px;
+}
+
+.nvhome-image-header {
+  width: 56px;
+  margin-bottom: 10px;
+}
+
+.sportshome-image-header {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.adv-image-text {
+  width: 90%;
+}
+
+.helmet-image {
+  width: 100%;
+  max-width: 150px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.lading-header-image-claro {
+  width: 100%;
+  max-width: 120px;
+}
+
+.lading-header-image-cinema,
+.lading-header-image-concert {
+  width: 100%;
+  max-width: 56px;
+}
+
+.social-item {
+  padding: 0 15px;
+}
+
+.aboutus-card-claro-networks-image {
+  width: 162px;
+}
+.aboutus-card-canal-claro-image {
+  width: 182px;
+}
+
+.aboutus-card-claro-cinema-image {
+  width: 115px;
+}
+
+.aboutus-card-concert-channel-image {
+  width: 127px;
+}
+
+.aboutus-card-nuestra-vision-image {
+  width: 114px;
+}
+
+.aboutus-card-claro-sports-image {
+  width: 158px;
+}
+.pencil {
+  transform: translate(1710%, -90%);
+}

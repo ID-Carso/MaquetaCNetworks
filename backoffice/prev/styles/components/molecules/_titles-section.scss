@@ -1,0 +1,22 @@
+@import "../base/config";
+
+.header-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  height: 100%;
+  text-align: center;
+  font-family: $montserratBlack;
+}
+
+.home-header-mobile {
+  .header-details {
+    position: absolute;
+    top: 50%;
+    height: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+}

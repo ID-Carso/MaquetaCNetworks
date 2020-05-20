@@ -1,0 +1,39 @@
+.switch-alert {
+  margin-bottom: 0;
+}
+
+.quince-estilo {
+  width: 50%;
+  height: 44px;
+  font-size: 16px;
+  font-family: $montserratRegular;
+  color: #666464;
+  border-radius: 22px 0 0 21.5px;
+  border: solid 1px #666464;
+  border-right: #03ad50;
+  cursor: pointer;
+  overflow: hidden;
+  padding-top: 13px;
+  padding-left: 0px;
+  background: #fff;
+  outline: none !important;
+  display: inline-block;
+}
+
+.treinta-estilo {
+  width: 50%;
+  height: 44px;
+  font-size: 16px;
+  font-family: $montserratRegular;
+  color: #666464;
+  border-radius: 0 22px 22px 0;
+  border: solid 1px #666464;
+  border-left: #03ad50;
+  cursor: pointer;
+  overflow: hidden;
+  padding-top: 13px;
+  padding-left: 0px;
+  background: #fff;
+  outline: none !important;
+  display: inline-block;
+}

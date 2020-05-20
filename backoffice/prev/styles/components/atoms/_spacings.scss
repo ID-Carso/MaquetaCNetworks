@@ -1,0 +1,93 @@
+@import "../base/config";
+
+.columnGap {
+  padding-right: $columnGap !important;
+  padding-left: $columnGap !important;
+}
+
+.poster-pad-b {
+  padding-bottom: $posterPadBottom;
+}
+
+.poster-pad-t {
+  padding-top: $posterPadTop;
+}
+
+.poster-pad-l {
+  padding-left: $posterPadLeft !important;
+}
+
+.poster-pad-r {
+  padding-right: $posterPadRight !important;
+}
+
+.poster-margin-r {
+  margin-right: $posterMargin;
+}
+
+.poster-margin-l {
+  margin-left: $posterMargin;
+}
+
+.paisescentrar {
+  padding-left: 120px;
+}
+
+.nav-item-margin {
+  margin-right: 15px;
+}
+
+.margin-bottom-slider {
+  margin-bottom: 50px;
+}
+
+.adv-headline-mb {
+  margin-bottom: 13px;
+}
+
+.padding-bottom-footer {
+  padding-bottom: 13px;
+}
+
+.no-gap {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.poster-title-margin {
+  margin: 8px 0px 8px 16px;
+  overflow: hidden;
+}
+.margin-top-por {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.margin-ahora-tv {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+.ma-no {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.margin-bottom-75 {
+  margin-bottom: 75px;
+}
+
+.margin-bottom-60 {
+  margin-bottom: 60px;
+}
+
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
+.margin-left-11 {
+  margin-left: 11px;
+}
+
+.espacio-bottom {
+  margin-bottom: 0px;
+}

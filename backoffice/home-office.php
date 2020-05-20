@@ -28,13 +28,7 @@
 
 <body>
     <main>
-        <?php
-        $nameButton = "Historial home";
-        $nameSection = "home";
-        include 'header-office.php';
-
-        //showHeader($nameButton, $nameSection, 2);
-        ?>
+      
         <div class="col-11 mx-auto mb-5 mt-5">
 
             <div class="d-flex justify-content-between align-items-end">

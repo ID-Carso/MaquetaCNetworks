@@ -1,0 +1,65 @@
+@import "../base/colors";
+
+.menu {
+  background: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  transition: all 0.5s ease 0s;
+}
+
+.menu-tablet {
+  display: none;
+}
+
+.nav-content {
+  margin: 16px;
+  position: relative;
+}
+
+.claro-navbar-black {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 9px 9px 9px 250px !important;
+  margin-left: -250px;
+  border-radius: 20px;
+}
+
+.avatar-header {
+  .claro-navbar {
+    position: inherit;
+  }
+}
+
+.claro-navbar {
+  display: none;
+  margin-top: 25px;
+  z-index: 3;
+  position: absolute;
+  padding: 9px 0px;
+}
+
+.marca-header .claro-navbar {
+  position: initial;
+}
+
+.perfil-header {
+  .claro-navbar {
+    position: initial;
+  }
+}
+
+.navbar-white {
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  transition: all 0.5s ease 0s;
+}
+
+.navbar-tablet-white {
+  display: none;
+}
+
+.navbar-desktop-white {
+  display: none;
+}

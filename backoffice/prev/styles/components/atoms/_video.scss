@@ -1,0 +1,32 @@
+.home-video {
+  /*position: fixed;
+  right: 0;
+  top: 0;
+  width: 720px;*/
+  /*position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;*/
+  right: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.circle-video {
+  display: none;
+  width: 65%;
+  margin: auto;
+  clip-path: circle(50% at 80% 21%);
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  z-index: 1;
+  overflow: hidden;
+  max-width: 1000px;
+}
+
+.promo-video {
+  width: 100%;
+}

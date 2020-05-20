@@ -1,0 +1,112 @@
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  //height: 205px;
+  overflow: hidden;
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: -60%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.parallax-header::after {
+  background-image: url(../../../images/home/american-horror.jpeg);
+  background-size: cover;
+}
+
+.claro-canal-header .header {
+  position: relative;
+  background: transparent;
+  height: auto;
+}
+
+/*.claro-canal-header .header::after,
+.claro-cinema-header .header::after {
+  content: "";
+
+  width: 100%;
+  height: 30px;
+  border-radius: 26% 69% 0% 10% / 23% 100% 0% 0%;
+  position: absolute;
+  top: 87%;
+}*/
+
+.claro-cinema-header .header::after {
+  background: #f5dd15;
+}
+
+.concert-channel-header .header {
+  background: transparent;
+  height: auto;
+}
+
+.claro-cinema-header .header {
+  position: relative;
+  background: #2dcaab;
+  height: auto;
+}
+
+.marca-header .header {
+  height: 63px;
+  background: transparent;
+}
+
+.home-header {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container-header {
+  padding: 0 10%;
+}
+
+.aviso-header {
+  width: 84%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.perfil-header {
+  .menu-perfil {
+    position: static;
+    padding: 1px;
+  }
+}
+
+.sidebar-header {
+  display: flex;
+  padding-top: 48px;
+  align-items: center;
+  padding-bottom: 48px;
+  width: 80%;
+  margin: auto;
+}
+
+.landing-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.home-header-mobile {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.home-header {
+  display: none;
+}

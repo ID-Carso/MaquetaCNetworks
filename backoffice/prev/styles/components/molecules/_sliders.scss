@@ -1,0 +1,352 @@
+#next-week-slider {
+  padding-bottom: 58px;
+  margin-bottom: 32px;
+}
+
+.concert-slider {
+  padding-bottom: 50px;
+}
+
+.concert-container .slick-dotted.slick-slider {
+  margin-bottom: 0px !important;
+}
+
+.slick-slider {
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.header-slider {
+  width: 100%;
+  padding-bottom: 0px;
+}
+
+.slick-slider {
+  .slick-dots li button:before {
+    font-size: 8px;
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 40px;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    left: 0;
+    /* top: 50%; */
+  }
+
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+}
+
+.concert-home-slider {
+  .slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "•";
+    width: 20px;
+    height: 20px;
+    font-family: "slick";
+    font-size: 8px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    opacity: 0.25;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: white;
+    opacity: 0.75;
+  }
+}
+
+.concert-channel-tablet {
+  .slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "•";
+    width: 20px;
+    height: 20px;
+    font-family: "slick";
+    font-size: 8px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    opacity: 0.25;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: white;
+    opacity: 0.75;
+  }
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0px !important;
+}
+
+.concert-home-slider {
+  padding-bottom: 63px;
+}
+
+.slick-track {
+  margin-bottom: 16px !important;
+  height: 100%;
+}
+
+.dontLose-claro-slider {
+  margin-bottom: 100px;
+}
+
+.dontLose-claro-slider .slick-dots li.slick-active button:before,
+#next-week-slider .slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 1;
+}
+
+.dontLose-claro-slider .slick-dots li button:before,
+#next-week-slider .slick-dots li button:before {
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+}
+
+.concert-header-slider {
+  .slick-track {
+    margin-bottom: 0px !important;
+    height: 100%;
+  }
+
+  .slick-list {
+    padding: 0px !important;
+  }
+
+  .slick-dots {
+    bottom: 90px;
+  }
+}
+
+.header-slide {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex !important;
+  height: auto;
+  padding-bottom: 64%;
+  background: #ababab;
+}
+
+.header-slide img {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+.concert-header-slider {
+  .slick-dots li.slick-active button:before {
+    color: white;
+    opacity: 0.75;
+  }
+
+  .slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "•";
+    width: 20px;
+    height: 20px;
+    font-family: "slick";
+    font-size: 6px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    opacity: 0.25;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.concert-container .slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 0.75;
+}
+
+.concert-container .slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 8px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cinema-slider {
+  padding-bottom: 50px;
+  margin-bottom: 0px !important;
+}
+
+.slick-initialized .slick-slide {
+  margin: 0 6px;
+}
+
+.calendar .slick-slider .slick-list {
+  padding: 0px !important;
+}
+
+.calendar .slick-initialized .slick-slide {
+  margin: 0 2px;
+}
+
+.calendar {
+  .slick-slider {
+    padding-bottom: 0;
+    margin-bottom: 52px !important;
+  }
+
+  .slick-slider .slick-dots {
+    bottom: -26px;
+  }
+}
+
+/*.programacion-slider {
+  .slick-slide {
+    width: 1.32% !important;
+    margin: 0 2px;
+  }
+
+  .slick-track {
+    width: 1000% !important;
+  }
+
+  .slick-list {
+    padding: 0px !important;
+  }
+}*/
+
+.dontLose-slider-tablet {
+  display: none;
+}
+
+.concert-header-slider {
+  .slick-slide {
+    margin: 0;
+  }
+}
+
+.claro-header-slider {
+  .slick-track {
+    margin-bottom: 0px !important;
+    height: 100%;
+  }
+
+  .slick-list {
+    padding: 0px !important;
+  }
+
+  .slick-dots {
+    bottom: 40px;
+  }
+
+  .slick-slide {
+    margin: 0 !important;
+  }
+}
+
+.claro-slide img {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+.claro-slide {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex !important;
+  height: auto;
+  padding-bottom: 51%;
+}
+
+.claro-header-slider .slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 1;
+}
+
+.claro-header-slider .slick-dots li button:before {
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+}
+
+.claro-canal-header {
+  .slick-slider {
+    padding-bottom: 0;
+  }
+}
+
+.section-slider .slick-list,
+.imperdibles-slider .slick-list,
+.tv-slider .slick-list {
+  padding: 0px 55px 0px 0px !important;
+}
+
+.imperdibles-slider .concert-channel-header {
+  .slick-slider {
+    width: 100%;
+    padding-bottom: 0px;
+  }
+
+  .slick-dots {
+    bottom: 40px;
+  }
+}
+
+.header-slider {
+  .slick-list {
+    padding: 0px !important;
+  }
+
+  .slick-slide {
+    margin: 0px !important;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: white;
+    opacity: 0.75;
+  }
+
+  .slick-dots li button:before {
+    color: white;
+    opacity: 0.25;
+  }
+
+  .slick-track {
+    margin-bottom: 0px !important;
+  }
+}

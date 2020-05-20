@@ -1,0 +1,348 @@
+@import "../base/colors";
+@import "../base/config";
+
+/* Estructura Básica de los botones */
+%button-basic {
+  color: $textWhite;
+  padding: $paddingBtn;
+  border-radius: $borderRadiusBtn;
+  border: none;
+  outline: none !important;
+  font-size: 14px;
+  font-family: $montserratSemiBold;
+}
+
+@mixin more-button($background) {
+  @extend %button-basic;
+  background: $background;
+}
+
+.btn-red {
+  @include more-button($redBtn);
+}
+
+.btn-blue {
+  @include more-button($blueSky);
+}
+
+.btn-pink {
+  @include more-button($pinkBtn);
+}
+
+.btn-purple {
+  @include more-button($purpleColor);
+}
+
+.btn-red,
+.btn-pink {
+  margin-bottom: 18px;
+}
+
+.invisible-button {
+  opacity: 0.4;
+  position: fixed;
+  left: 0%;
+  top: 0;
+  bottom: 0;
+  width: 0px;
+  z-index: 20;
+  cursor: pointer;
+  background: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  outline: none !important;
+}
+
+.centro {
+  text-align: center;
+}
+
+.login-button:hover {
+  background-color: $rollover;
+  border: solid 1px $rollover;
+}
+
+.singup-button:hover {
+  background-color: $rollover;
+  color: $textWhite;
+  border: solid 1px $rollover;
+}
+
+.schedule-add {
+  font-size: 10px;
+  background: $colorWhite;
+  font-family: $montserratSemiBold;
+  text-transform: uppercase;
+  color: $scheduleButton;
+  border-radius: 50px;
+  border: 2px solid $scheduleButton;
+  padding: 5px 11px;
+  display: flex;
+  align-items: center;
+}
+
+.schedule-add span {
+  margin-left: 20px;
+}
+
+.save-button {
+  width: 288px;
+  height: 44px;
+  border-radius: 21.5px;
+  outline: none !important;
+  background-color: $textWhite;
+  font-family: $montserratSemiBold;
+  color: $textgray;
+  font-size: $fontSizeTv;
+  border: solid 1px $subtitleTV;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-top: 56px;
+}
+
+.save-button:hover {
+  background-color: $rollover;
+  color: $textWhite;
+  border: solid 1px $rollover;
+  z-index: 1;
+}
+
+.sexo {
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  display: flex;
+}
+
+.synopsis-button {
+  border-radius: 20px;
+  border: 2px solid white;
+  font-family: $montserratSemiBold;
+  font-size: 14px;
+  padding: 7px 17px;
+  text-transform: uppercase;
+  background: transparent;
+  color: white;
+}
+
+.synopsis-button:focus {
+  outline: none;
+}
+
+.synopsis-button img {
+  width: 15px;
+  filter: invert(1);
+}
+
+.synopsis-add-text {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-right: 40px;
+}
+
+.synopsis-add-text::after {
+  content: "+";
+  font-family: $montserratSemiBold;
+  color: white;
+  font-size: 27px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0;
+}
+
+.tiempo {
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  display: flex;
+}
+
+.close-button {
+  width: 100%;
+  height: 44px;
+  border-radius: 21.5px;
+  outline: none !important;
+  background-color: $textWhite;
+  font-family: $montserratSemiBold;
+  color: $textgray;
+  font-size: $fontSizeTv;
+  border: solid 1px $subtitleTV;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-top: 25%;
+}
+
+.close-button:hover {
+  background-color: $rollover;
+  color: $textWhite;
+  border: solid 1px $rollover;
+}
+
+.acept-button {
+  width: 288px;
+  height: 44px;
+  border-radius: 21.5px;
+  background-color: $subtitleTV;
+  font-family: $montserratSemiBold;
+  color: $textWhite;
+  font-size: $fontSizeTv;
+  border: none;
+  outline: none !important;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.acept-button:hover {
+  background-color: $rollover;
+  border: solid 1px $rollover;
+}
+
+.schedule-remove {
+  font-size: 14px;
+  background: $colorWhite;
+  font-family: $montserratSemiBold;
+  text-transform: uppercase;
+  color: $scheduleButton;
+  border-radius: 50px;
+  border: 2px solid $scheduleButton;
+  padding: 7px 17px 7px 17px;
+}
+
+.schedule-remove span {
+  margin-left: 20px;
+}
+
+.poster-button {
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  width: 50px;
+  height: 50px;
+  transition: all 0.5s ease;
+}
+
+.poster-button:hover,
+.poster-button:focus {
+  background: rgba(0, 0, 0, 1);
+  outline: none;
+}
+
+.re-password-button {
+  margin-top: 100px;
+}
+
+.form-button-primary {
+  width: 100%;
+  max-width: 367px;
+  height: 44px;
+  border-radius: 21.5px;
+  background-color: $subtitleTV;
+  font-family: $montserratSemiBold;
+  color: $textWhite;
+  font-size: $fontSizeTv;
+  border: none;
+  outline: none !important;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.form-button-outline {
+  width: 100%;
+  max-width: 367px;
+  height: 44px;
+  border-radius: 21.5px;
+  outline: none !important;
+  background-color: $textWhite;
+  font-family: $montserratSemiBold;
+  color: $textgray;
+  font-size: $fontSizeTv;
+  border: solid 1px $subtitleTV;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.button-none {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.button-none:focus {
+  outline: none;
+}
+
+.modal-button-primary {
+  width: 100%;
+  max-width: 367px;
+  border-radius: 35px;
+  background-color: $subtitleTV;
+  font-family: $montserratRegular;
+  color: $textWhite;
+  font-size: 14px;
+  border: solid 2px $subtitleTV;
+  outline: none !important;
+}
+
+.modal-button-outline {
+  width: 100%;
+  max-width: 367px;
+  border-radius: 35px;
+  outline: none !important;
+  background-color: #ffffff;
+  font-family: $montserratRegular;
+  color: #717272;
+  font-size: 14px;
+  border: solid 2px $subtitleTV;
+}
+
+#alert-button {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.btn-magenta {
+  background: $btnBackPink;
+  border: $btnBackPink;
+}
+
+.btn-teal-blue {
+  background: $cinemaRectangle;
+  border: $cinemaRectangle;
+}
+
+.btn-tomato {
+  background: $tomatoColor;
+  border: $tomatoColor;
+}
+
+.btn-tomato:focus,
+.btn-teal-blue:focus,
+.btn-magenta:focus {
+  outline: none;
+}
+
+.btn-concert-channel,
+.btn-claro-cinema,
+.btn-claro-canal {
+  border-radius: 25px;
+  padding: 8px 12px;
+  outline: none;
+}
