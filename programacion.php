@@ -84,14 +84,7 @@
             <?php
             include './views/partials/menu-desktop-black.php'
             ?>
-            <div class="header-slider">
-                <div class="header-slide">
-                    <img src="./images/concert-channel/header-image.jpeg" class="rellax" data-rellax="10">
-                </div>
-                <div class="header-slide">
-                    <img src="./images/header/glastonbury.jpeg" class="rellax" data-rellax="10">
-                </div>
-                <div class="header-slide"></div>
+            <div class="header-slider" id="banner-programming">
             </div>
         </div>
     </header>
