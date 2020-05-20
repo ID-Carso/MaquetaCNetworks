@@ -112,7 +112,7 @@ function getPrograms(date, country) {
   $.ajax({
     type: "POST",
     data: dataProgram,
-    url: "../../adapters/program.php",
+    url: "./adapters/program.php",
     success: function (result) {
       let json = JSON.parse(result);
       console.log(json);
@@ -170,6 +170,7 @@ function getPrograms(date, country) {
           if (arrayCanalClaro.includes(program.chapter_id)) {
             programCanalClaro = `
                 <div class="poster">
+                
                   <div class="poster-body">
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                       <div class="thumbnail-body" _id="${program.chapter_id}">
@@ -1166,7 +1167,7 @@ function showSynopsis(id) {
   $.ajax({
     type: "POST",
     data: dataUser,
-    url: "../../adapters/program.php",
+    url: "./adapters/program.php",
     success: function (result) {
       let json = JSON.parse(result);
       console.log(json);

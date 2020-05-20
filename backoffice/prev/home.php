@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
+    <script src="./slick-master/slick/slick.min.js" defer></script>
     <?php include './views/partials/head.php' ?>
+
 </head>
 
 <body>
