@@ -97,23 +97,37 @@
     </header>
     <div class="pro-container">
         <main class="programacion">
+            <div class="d-flex justify-content-center col-12">
+        <div class=" p-3 border-top border-left border-right border-bottom position-relative">
+                             <img src="../images/pencil.svg" alt="" class="pencil">
             <p class="programacion-main-title">Programación</p>
+            </div>
+            </div>
             <div class="o-tv-section programming-container">
                 <div class="row no-gutters">
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
                             <li rel="claro-canal-programing" class="active-navItem nav-li">
+                            <div class=" border-top border-left border-right border-bottom position-relative">
+                             <img src="../images/pencil.svg" alt="" class="pencil">
                                 <img class="claro-nav-image" src="./images/home/tv-1.svg" alt="" />
+                            </div>
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
                             <li rel="concert-channel-programing" class="nav-li">
+                            <div class=" border-top border-left border-right border-bottom position-relative">
+                             <img src="../images/pencil.svg" alt="" class="pencil">
                                 <img class="nav-image" src="./images/home/tv-2.svg" alt="" />
+                            </div>
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
                             <li rel="claro-cinema-programing" class="nav-li">
+                            <div class=" border-top border-left border-right border-bottom position-relative">
+                             <img src="../images/pencil.svg" alt="" class="pencil">
                                 <img class="nav-image" src="./images/home/tv-3.svg" alt="" />
+                            </div>
                             </li>
                         </div>
 

@@ -718,5 +718,8 @@
   width: 158px;
 }
 .pencil {
-  transform: translate(1710%, -90%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
 }
