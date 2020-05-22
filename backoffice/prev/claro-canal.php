@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <?php include './views/partials/head.php' ?>
+  <?php include './prev/views/partials/head.php' ?>
 </head>
 
 <body>
@@ -147,10 +147,10 @@
     <section class="next-week-claro">
       <div class="next-week-container">
 
-      <div class=" p-3 col-4 border-top border-left border-right border-bottom position-relative">
+      <div class=" p-3 col-5 border-top border-left border-right border-bottom position-relative">
           <img src="../images/pencil.svg" alt="" class="pencil ">
         <h1 class="a-next-claro-title">próxima semana</h1></div>
-        <div class="p-3 col-4 border-top border-left border-right border-bottom position-relative">
+        <div class="p-3 col-5 border-top border-left border-right border-bottom position-relative">
           <img src="../images/pencil.svg" alt="" class="pencil">
         <h2 class="a-next-claro-subtitle">
           Ve un <span>adelanto</span> de la programación
@@ -180,7 +180,7 @@
     </section>
     <section class="dont-lose-claro">
       <div class="dont-lose-container">
-      <div class=" p-3 col-4 border-top border-left border-right border-bottom position-relative">
+      <div class=" p-3 col-5 border-top border-left border-right border-bottom position-relative">
           <img src="../images/pencil.svg" alt="" class="pencil">
         <h1 class="a-dontLose-claro-title">TIENES QUE VERLO</h1></div>
         <div class=" p-3 col-4 border-top border-left border-right border-bottom position-relative">
@@ -193,10 +193,10 @@
           <div class="section-slider" id="dontLose-claro-slider">
           </div>
           <div>
-          <div class="col-5 border-top border-left border-right border-bottom position-relative">
+          <div class="col-6 border-top border-left border-right border-bottom position-relative">
           <img src="../images/pencil.svg" alt="" class="pencil">
             <h1 class="a-dontLose-claro-title">Contenido exclusivo</h1></div>
-            <div class="col-6 pt-3 border-top border-left border-right border-bottom position-relative">
+            <div class="col-7 pt-3 border-top border-left border-right border-bottom position-relative">
           <img src="../images/pencil.svg" alt="" class="pencil">
             <h2 class="a-dontLose-claro-subtitle">
               <!-- ve un <span>adelanto</span> de la programación -->

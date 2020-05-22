@@ -438,7 +438,7 @@ export default class Slider {
       dots: true,
       centerMode: false,
       arrows: false,
-      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+      prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
       nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
     });
 

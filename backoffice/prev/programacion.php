@@ -100,7 +100,7 @@
             <div class="d-flex justify-content-center col-12">
         <div class=" p-3 border-top border-left border-right border-bottom position-relative">
                              <img src="../images/pencil.svg" alt="" class="pencil">
-            <p class="programacion-main-title">Programación</p>
+            <p class="programacion-main-title pb-0">Programación</p>
             </div>
             </div>
             <div class="o-tv-section programming-container">

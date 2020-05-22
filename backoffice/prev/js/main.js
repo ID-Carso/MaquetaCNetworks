@@ -149,6 +149,7 @@ $(document).ready(function () {
             <div class="poster">
              <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
+                
                      <img src="./images/home/carrusel-ahora-en-vivo/${favorite.image}" alt="">
                 </div>
                 <div class="a-claro-rectangle">
@@ -1115,11 +1116,11 @@ $(document).ready(function () {
   var sessionSrc = localStorage.getItem("src");
   var loginCountry = $(".login-country");
   //!sessionSrc && window.location.pathname !== "/v1.2/"
-  if (!sessionSrc && window.location.pathname !== "/v1.2/") {
+  /*if (!sessionSrc && window.location.pathname !== "/v1.2/") {
     location.href = "/v1.2/";
   } else {
     loginCountry.attr("src", sessionSrc);
-  }
+  }*/
 
   $(".tooltip-logout").click(function () {
     signOut();

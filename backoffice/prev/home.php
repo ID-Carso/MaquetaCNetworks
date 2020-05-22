@@ -119,9 +119,9 @@
 
                 <div class="header-details header-detail-margin col-md-6">
                     <h1 class="header-h1">
-                    <div class=" border-top border-left border-right border-bottom position-relative">
+                    <div class="p-3 border-top border-left border-right border-bottom position-relative"style="width: 120%;">
                              <img src="../images/pencil.svg" alt="" class="pencil">
-                        <span class="header-span">Descubre<br>Claro</div> <div class=" border-top border-left border-right border-bottom position-relative">
+                        <span class="header-span">Descubre<br>Claro</div> <div class=" border-top border-left border-right border-bottom position-relative"style="width: 130%;">
                              <img src="../images/pencil.svg" alt="" class="pencil"></span>Networks</div>
                     </h1>
                 </div>
@@ -137,18 +137,26 @@
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
                             <li rel="claro-canal" class="active-navItem nav-li">
-                                
+                            <div class=" position-relative">
+                             <img src="../images/pencil.svg" alt="" class="pencil">
                                 <img class="claro-nav-image" src="" alt="" />
+                            </div>
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
                             <li rel="concert-channel" class="nav-li">
+                            <div class=" position-relative">
+                             <img src="../images/pencil.svg" alt="" class="pencil">
                                 <img class="nav-image concert-nav-image" src="" alt="" />
+                            </div>
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
                             <li rel="claro-cinema" class="nav-li">
+                            <div class=" position-relative">
+                             <img src="../images/pencil.svg" alt="" class="pencil">
                                 <img class="nav-image cinema-nav-image" src="" alt="" />
+                            </div>
                             </li>
                         </div>
 
@@ -199,7 +207,7 @@
                 </div>
                 <div class="text-center">
                     <a href="claro-canal.php"> 
-                    <div class=" border-top border-left border-right border-bottom position-relative">
+                    <div class="p-3 border-top border-left border-right border-bottom position-relative">
                              <img src="../images/pencil.svg" alt="" class="pencil">
                         <button class="btn-red btn-canal-claro-home">VER +</button>
                     </div>
@@ -228,7 +236,7 @@
                     </div>
                     <div class="m-see-more">
                         <a href="claro-canal.php">
-                        <div class=" border-top border-left border-right border-bottom position-relative">
+                        <div class="p-3 border-top border-left border-right border-bottom position-relative">
                              <img src="../images/pencil.svg" alt="" class="pencil">
                             <button class="btn-red btn-canal-claro-home">VER +</button>
                         </div>
@@ -283,7 +291,7 @@
                     </div>
                     <div class="m-see-more">
                         <a href="claro-canal.php"> 
-                        <div class=" border-top border-left border-right border-bottom position-relative">
+                        <div class="p-3 border-top border-left border-right border-bottom position-relative">
                              <img src="../images/pencil.svg" alt="" class="pencil">
                             <button class="btn-red btn-canal-claro-home"></button>
                         </div>
@@ -367,7 +375,7 @@
                 <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
                         <a href="concert-channel.php" class="home-title-link">
-                        <div class=" border-top border-left border-right border-bottom position-relative">
+                        <div class="col-5 border-top border-left border-right border-bottom position-relative">
                              <img src="../images/pencil.svg" alt="" class="pencil">
                             <img class="concerthome-image-header" src="./images/home/concert-home-img.svg" alt="">  
                         </div>
@@ -379,7 +387,7 @@
                     </div>
                     <div class="m-see-more">
                         <a href="concert-channel.php">
-                        <div class=" border-top border-left border-right border-bottom position-relative">
+                        <div class="p-3 border-top border-left border-right border-bottom position-relative">
                              <img src="../images/pencil.svg" alt="" class="pencil">
                             <button class="btn-pink button-concert-home">
                                 <span></span>
@@ -482,7 +490,7 @@
                 <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
                     <div class="m-home-titles">
                         <a href="claro-cinema.php" class="home-title-link">
-                        <div class=" border-top border-left border-right border-bottom position-relative">
+                        <div class="col-5 border-top border-left border-right border-bottom position-relative">
                              <img src="../images/pencil.svg" alt="" class="pencil">
                             <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
                         </div>
@@ -496,7 +504,7 @@
                     </div>
                     <div class="m-see-more">
                         <a href="claro-cinema.php">
-                        <div class=" border-top border-left border-right border-bottom position-relative">
+                        <div class="p-3 border-top border-left border-right border-bottom position-relative">
                              <img src="../images/pencil.svg" alt="" class="pencil">
                             <button class="btn-red button-cinema-home">VER +</button>
                         </div>
