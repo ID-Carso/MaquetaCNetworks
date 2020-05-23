@@ -112,14 +112,14 @@ export default class Section {
       arrows: false,
     });
 
-    let titleHeader = `<span class="header-span">  <div class="p-3 border-top border-left border-right border-bottom position-relative"style="width: 120%;">
-    <img src="../images/pencil.svg" alt="" class="pencil">${json.data.block_1_title}</div> </span>   <div class="p-3 border-top border-left border-right border-bottom position-relative"style="width: 130%;">
+    let titleHeader = `<span class="header-span">  <div class="p-3 border-t border-l border-r border-b position-relative mb-2"style="width: 120%;">
+    <img src="../images/pencil.svg" alt="" class="pencil">${json.data.block_1_title}</div> </span>   <div class="p-3 border-t border-l border-r border-b position-relative"style="width: 130%;">
     <img src="../images/pencil.svg" alt="" class="pencil">${json.data.block_1_subtitle}</div>`;
     $(".header-h1").html(titleHeader);
 
     $(".source-video").attr("src", json.data.block_1_video_name);
-    let titleTv = `<div class="d-flex justify-content-center"><div class="p-3 border-top border-left border-right border-bottom position-relative">
-    <img src="../images/pencil.svg" alt="" class="pencil">${json.data.block_2_title1} </div>   <div class="p-3 border-top border-left border-right border-bottom position-relative">
+    let titleTv = `<div class="d-flex justify-content-center"><div class="p-3 border-t border-l border-r border-b position-relative">
+    <img src="../images/pencil.svg" alt="" class="pencil">${json.data.block_2_title1} </div>   <div class="p-3 border-t border-l border-r border-b position-relative">
     <img src="../images/pencil.svg" alt="" class="pencil"><span class="header-span">${json.data.block_2_title2}</span></div><span class="header-point d-flex aling-items-center">•</span></div>`;
     $(".title-tv").html(titleTv);
 
@@ -193,9 +193,9 @@ export default class Section {
     for (let i = 0; i < blockImage3Length; i++) {
       if (arrayFavoritesId.includes(block3Image[i].chapter_id)) {
         programLarge += `
-        <div class=" p-3 border-top border-left border-right border-bottom position-relative">          
+        <div class=" p-3 border-t border-l border-r border-b position-relative">          
         <div class="poster">
-        <button class="d-flex align-items-center justify-content-center pencil-black a-text-white-monblack pl-4"> Editar <img src="../images/pencil.svg" alt="" class="ml-2"style="width:26px"></button>
+        <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="../images/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
         <div class="poster-body">
             <div class="showtime-container justify-content-end">
          
@@ -212,9 +212,9 @@ export default class Section {
         `;
       } else {
         programLarge += `
-        <div class=" p-3 border-top border-left border-right border-bottom position-relative">          
+        <div class=" p-3 border-t border-l border-r border-b position-relative">          
         <div class="poster">
-        <button class="d-flex align-items-center justify-content-center pencil-black a-text-white-monblack pl-4"> Editar <img src="../images/pencil.svg" alt="" class="ml-2"style="width:26px"></button>
+        <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="../images/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
         <div class="poster-body">
             <div class="showtime-container justify-content-end">
                 <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
@@ -258,9 +258,9 @@ export default class Section {
     for (let i = 0; i < blockImage4Length; i++) {
       if (arrayFavoritesId.includes(block4Image[i].chapter_id)) {
         concertHomeVideosMobile += `
-        <div class=" p-3 border-top border-left border-right border-bottom position-relative">          
+        <div class=" p-3 border-t border-l border-r border-b position-relative">          
             <div class="poster">
-            <button class="d-flex align-items-center justify-content-center pencil-black a-text-white-monblack pl-4"> Editar <img src="../images/pencil.svg" alt="" class="ml-2"style="width:26px"></button>
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="../images/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
                 <div class="poster-body">
                     <div class="showtime-container justify-content-end">
                         <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
@@ -276,9 +276,9 @@ export default class Section {
             `;
       } else {
         concertHomeVideosMobile += `
-        <div class=" p-3 border-top border-left border-right border-bottom position-relative">          
+        <div class=" p-3 border-t border-l border-r border-b position-relative">          
             <div class="poster">
-            <button class="d-flex align-items-center justify-content-center pencil-black a-text-white-monblack pl-4"> Editar <img src="../images/pencil.svg" alt="" class="ml-2"style="width:26px"></button>
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="../images/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
                 <div class="poster-body">
                      <div class="showtime-container justify-content-end">
                         <button type="button" class="poster-button add-favorites" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
@@ -321,9 +321,9 @@ export default class Section {
     for (let i = 0; i < blockImage5Length; i++) {
       if (arrayFavoritesId.includes(block5Image[i].chapter_id)) {
         cinemaHomeVideosMobile += `
-        <div class=" p-3 border-top border-left border-right border-bottom position-relative">          
+        <div class=" p-3 border-t border-l border-r border-b position-relative">          
               <div class="poster">
-              <button class="d-flex align-items-center justify-content-center pencil-black a-text-white-monblack pl-4"> Editar <img src="../images/pencil.svg" alt="" class="ml-2"style="width:26px"></button>
+              <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="../images/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
                   <div class="poster-body">
                       <div class="showtime-container justify-content-end">
                         
@@ -341,9 +341,9 @@ export default class Section {
               `;
       } else {
         cinemaHomeVideosMobile += `
-        <div class=" p-3 border-top border-left border-right border-bottom position-relative">          
+        <div class=" p-3 border-t border-l border-r border-b position-relative">          
               <div class="poster">
-              <button class="d-flex align-items-center justify-content-center pencil-black a-text-white-monblack pl-4"> Editar <img src="../images/pencil.svg" alt="" class="ml-2"style="width:26px"></button>
+              <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="../images/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
                   <div class="poster-body">
                       <div class="showtime-container justify-content-end">
                  
@@ -568,9 +568,9 @@ export default class Section {
 
     programsTienesQueVerlo.forEach((program) => {
       programTiensQueVerlo += `
-      <div class=" p-3 border-top border-left border-right border-bottom position-relative">   
+      <div class=" p-3 border-t border-l border-r border-b position-relative">   
       <div class="poster" >
-      <button class="d-flex align-items-center justify-content-center pencil-black a-text-white-monblack pl-4"> Editar <img src="../images/pencil.svg" alt="" class="ml-2"style="width:26px"></button>
+      <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="../images/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
         <div class="poster-body">
             <div class="thumbnail-body" _id="${program.chapter_id}">
                 <div class="thumbnail">
@@ -590,10 +590,10 @@ export default class Section {
 
     programsExlusiveContent.forEach((program) => {
       programExlusiveContent += `
-      <div class=" p-3 border-top border-left border-right border-bottom position-relative">   
+      <div class=" p-3 border-t border-l border-r border-b position-relative">   
       <div class="poster" >
         <div class="poster-body">
-        <button class="d-flex align-items-center justify-content-center pencil-black a-text-white-monblack pl-4"> Editar <img src="../images/pencil.svg" alt="" class="ml-2"style="width:26px"></button>
+        <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="../images/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
             <div class="thumbnail-body" _id="${program.chapter_id}">
                 <div class="thumbnail">
                     <img src="${program.image}" alt="">

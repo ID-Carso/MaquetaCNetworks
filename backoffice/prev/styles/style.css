@@ -1486,6 +1486,12 @@ h6 {
   color: #000000;
 }
 
+.a-text-regular-white {
+  font-family: "Montserrat-Regular";
+  color: #ffffff;
+  font-size: 14px;
+}
+
 .a-text-black-regular {
   font-family: "Montserrat-Regular";
   color: #000000;
@@ -2032,6 +2038,7 @@ h6 {
   background-color: #252424;
   border-radius: 13px;
   border: 1px solid #252424;
+  cursor: pointer;
 }
 
 /*Tamaño de textos - responsive*/
@@ -2878,6 +2885,8 @@ h6 {
   right: 0;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
+  cursor: pointer;
+  z-index: 5;
 }
 
 .hr1 {
@@ -2922,6 +2931,22 @@ h6 {
   margin-bottom: 30px;
   margin-top: 30px;
   border: solid 1px #069cb0;
+}
+
+.border-t {
+  border-top: 3px solid #817e7e;
+}
+
+.border-b {
+  border-bottom: 3px solid #817e7e;
+}
+
+.border-r {
+  border-right: 3px solid #817e7e;
+}
+
+.border-l {
+  border-left: 3px solid #817e7e;
 }
 
 /*Tamaño de textos - responsive*/

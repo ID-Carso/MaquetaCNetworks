@@ -91,7 +91,7 @@
     <div class="pro-container">
         <main class="programacion">
             <div class="d-flex justify-content-center col-12">
-                <div class=" p-3 border-top border-left border-right border-bottom position-relative">
+                <div class=" p-3 border-t border-l border-r border-b position-relative">
                     <img src="../images/pencil.svg" alt="" class="pencil">
                     <p class="programacion-main-title pb-0">Programación</p>
                 </div>
@@ -101,7 +101,7 @@
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
                             <li rel="claro-canal-programing" class="active-navItem nav-li">
-                                <div class=" border-top border-left border-right border-bottom position-relative">
+                                <div class=" border-t border-l border-r border-b position-relative">
                                     <img src="../images/pencil.svg" alt="" class="pencil">
                                     <img class="claro-nav-image" src="./images/home/tv-1.svg" alt="" />
                                 </div>
@@ -109,7 +109,7 @@
                         </div>
                         <div class="col-md text-center no-gap border-right">
                             <li rel="concert-channel-programing" class="nav-li">
-                                <div class=" border-top border-left border-right border-bottom position-relative">
+                                <div class=" border-t border-l border-r border-b position-relative">
                                     <img src="../images/pencil.svg" alt="" class="pencil">
                                     <img class="nav-image" src="./images/home/tv-2.svg" alt="" />
                                 </div>
@@ -117,7 +117,7 @@
                         </div>
                         <div class="col-md text-center no-gap">
                             <li rel="claro-cinema-programing" class="nav-li">
-                                <div class=" border-top border-left border-right border-bottom position-relative">
+                                <div class=" border-t border-l border-r border-b position-relative">
                                     <img src="../images/pencil.svg" alt="" class="pencil">
                                     <img class="nav-image" src="./images/home/tv-3.svg" alt="" />
                                 </div>
