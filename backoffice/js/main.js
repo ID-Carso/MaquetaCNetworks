@@ -39,7 +39,6 @@ $(document).ready(function () {
   //CHANGE TO LANDING
   $("#btn-landing").click(function () {
     landing();
-    console.log("pojpoj");
   });
 
   $(".option").click(function () {

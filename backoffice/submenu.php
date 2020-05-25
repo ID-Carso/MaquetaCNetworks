@@ -17,7 +17,7 @@
             }
         });
     </script>
-       <script type="text/javascript">
+    <script type="text/javascript">
         new easyXDM.Socket({
             remote: "./prev/programacion.php",
             container: "navbar-prev-programacion",
@@ -28,7 +28,7 @@
             }
         });
     </script>
-     <script type="text/javascript">
+    <script type="text/javascript">
         new easyXDM.Socket({
             remote: "./prev/home.php",
             container: "navbar-prev-home",
@@ -75,7 +75,7 @@
                     </div>
 
 
-                    <div class="navbar-progra-item navbar-progra-item-border  navbar-programacion" navbar-index="3" rel="navbar-prev-programacion">
+                    <div class="navbar-progra-item navbar-progra-item-border navbar-programacion" navbar-index="3" rel="navbar-prev-programacion">
                         <div class="navbar-progra-item-container ml-3 mr-3">
                             <p class="a-text-regular-blacktwo py-2 px-3 mb-0">PROGRAMACIÓN</p>
                         </div>
@@ -96,11 +96,11 @@
 
             </nav>
             <div class="d-flex justify-content-center">
-            <div class="navbar-progra-content navbar-prev-canal-claro " id="navbar-prev-canal-claro">
-                <p>Canal Claro</p>
+                <div class="navbar-progra-content navbar-prev-canal-claro " id="navbar-prev-canal-claro">
+                    <p>Canal Claro</p>
+                </div>
             </div>
-            </div>
-            <div class="navbar-progra-content" id="navbar-prev-sinopsis">
+            <div class="navbar-progra-content navbar-prev-sinopsis" id="navbar-prev-sinopsis">
                 <div id="prev-sinopsis">
                     <div class="float-left ml-5">
                         <div><input type="radio" id="1" value="" disabled /> <label for="1" class="a-btn-check"></label><span class=" ml-2 a-text-grey">Guardar cambios</span>
@@ -213,16 +213,16 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center">
-            <div class="navbar-progra-content" id="navbar-prev-programacion">
-                <p>Programación</p>
-             
-            </div>
+                <div class="navbar-progra-content navbar-prev-programacion" id="navbar-prev-programacion">
+                    <p>Programación</p>
+
+                </div>
             </div>
             <div class="d-flex justify-content-center">
-            <div class="navbar-progra-content" id="navbar-prev-home">
-           
-                <p>Home</p>
-            </div>
+                <div class="navbar-progra-content navbar-prev-home" id="navbar-prev-home">
+
+                    <p>Home</p>
+                </div>
             </div>
 
         </div>
