@@ -23,8 +23,8 @@
             container: "navbar-prev-programacion",
             onMessage: function(message, origin) {
                 console.log(message);
-                this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
-                this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
+                this.container.getElementsByTagName("iframe1")[0].setAttribute("scrolling", "no");
+                this.container.getElementsByTagName("iframe1")[0].style.height = message + "px";
             }
         });
     </script>
@@ -34,8 +34,8 @@
             container: "navbar-prev-home",
             onMessage: function(message, origin) {
                 console.log(message);
-                this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
-                this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
+                this.container.getElementsByTagName("iframe2")[0].setAttribute("scrolling", "no");
+                this.container.getElementsByTagName("iframe2")[0].style.height = message + "px";
             }
         });
     </script>
@@ -95,7 +95,7 @@
                 </div>
 
             </nav>
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center box-shadow">
             <div class="navbar-progra-content navbar-prev-canal-claro " id="navbar-prev-canal-claro">
                 <p>Canal Claro</p>
             </div>
