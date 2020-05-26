@@ -6,39 +6,6 @@
     include 'scripts.php';
     include  'styles.php';
     ?>
-    <script type="text/javascript">
-        new easyXDM.Socket({
-            remote: "./prev/claro-canal.php",
-            container: "navbar-prev-canal-claro",
-            onMessage: function(message, origin) {
-
-                this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
-                this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
-            }
-        });
-    </script>
-    <script type="text/javascript">
-        new easyXDM.Socket({
-            remote: "./prev/programacion.php",
-            container: "navbar-prev-programacion",
-            onMessage: function(message, origin) {
-
-                this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
-                this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
-            }
-        });
-    </script>
-    <script type="text/javascript">
-        new easyXDM.Socket({
-            remote: "./prev/home.php",
-            container: "navbar-prev-home",
-            onMessage: function(message, origin) {
-
-                this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
-                this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
-            }
-        });
-    </script>
 </head>
 
 <body>
@@ -94,12 +61,12 @@
                 </div>
 
             </nav>
-            <div class="d-flex justify-content-center box-shadow">
+            <center>
                 <div class="navbar-progra-content navbar-prev-canal-claro " id="navbar-prev-canal-claro">
                     <p>Canal Claro</p>
                 </div>
-            </div>
-            <div class="navbar-progra-content navbar-prev-sinopsis" id="navbar-prev-sinopsis">
+            </center>
+            <div class="navbar-progra-content" id="navbar-prev-sinopsis">
                 <div id="prev-sinopsis">
                     <div class="float-left ml-5">
                         <div><input type="radio" id="1" value="" disabled /> <label for="1" class="a-btn-check"></label><span class=" ml-2 a-text-grey">Guardar cambios</span>
@@ -221,7 +188,6 @@
                     <p>Home</p>
                 </div>
             </div>
-
         </div>
 
     </main>
