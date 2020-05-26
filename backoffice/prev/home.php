@@ -620,7 +620,7 @@
     </main>
     <script type="text/javascript" src="../js/lib/easyXDM.min.js"></script>
   <script>
-    var socket = new easyXDM.Socket({
+    var socket= new easyXDM.Socket({
       onReady: function() {
         socket.postMessage(document.body.offsetHeight)
       }
