@@ -257,7 +257,6 @@ function createNavbarProgramacionGeneral() {
     navbarPrograItems.removeClass("navbar-progra-active");
     $(this).addClass("navbar-progra-active");
     if ($(this).hasClass("navbar-canal-claro")) {
-      console.log($(this).attr("rel"));
       changeContentProgramacionGeneral($(this).attr("rel"));
     } else if ($(this).hasClass("navbar-sinopsis")) {
       changeContentProgramacionGeneral($(this).attr("rel"));
@@ -355,6 +354,7 @@ function createNavbarProgramacionGeneral() {
 }
 function changeContentProgramacionGeneral(nameSection) {
   $(".navbar-progra-content").hide();
+
   $("#" + nameSection).show();
 }
 

@@ -11,7 +11,7 @@
             remote: "./prev/claro-canal.php",
             container: "navbar-prev-canal-claro",
             onMessage: function(message, origin) {
-                console.log(message);
+
                 this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
                 this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
             }
@@ -22,7 +22,7 @@
             remote: "./prev/programacion.php",
             container: "navbar-prev-programacion",
             onMessage: function(message, origin) {
-                console.log(message);
+
                 this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
                 this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
             }
@@ -33,7 +33,7 @@
             remote: "./prev/home.php",
             container: "navbar-prev-home",
             onMessage: function(message, origin) {
-                console.log(message);
+
                 this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
                 this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
             }
@@ -64,7 +64,6 @@
                             <p class="py-2 px-3 mb-0 a-text-regular-blacktwo">CANAL CLARO</p>
 
                         </div>
-
                     </div>
 
                     <div class="navbar-progra-item navbar-progra-item-border  navbar-sinopsis" navbar-index="2" rel="navbar-prev-sinopsis">
@@ -75,7 +74,7 @@
                     </div>
 
 
-                    <div class="navbar-progra-item navbar-progra-item-border navbar-programacion" navbar-index="3" rel="navbar-prev-programacion">
+                    <div class="navbar-progra-item navbar-progra-item-border navbar-prev-programacion" navbar-index="3" rel="navbar-prev-programacion">
                         <div class="navbar-progra-item-container ml-3 mr-3">
                             <p class="a-text-regular-blacktwo py-2 px-3 mb-0">PROGRAMACIÓN</p>
                         </div>
@@ -83,7 +82,7 @@
                     </div>
 
 
-                    <div class="navbar-progra-item navbar-home" navbar-index="4" rel="navbar-prev-home">
+                    <div class="navbar-progra-item navbar-prev-home" navbar-index="4" rel="navbar-prev-home">
                         <div class="navbar-progra-item-container ml-3 mr-3">
                             <p class="a-text-regular-blacktwo py-2 px-3 mb-0">HOME</p>
                         </div>
@@ -95,7 +94,7 @@
                 </div>
 
             </nav>
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center box-shadow">
                 <div class="navbar-progra-content navbar-prev-canal-claro " id="navbar-prev-canal-claro">
                     <p>Canal Claro</p>
                 </div>
@@ -215,12 +214,10 @@
             <div class="d-flex justify-content-center">
                 <div class="navbar-progra-content navbar-prev-programacion" id="navbar-prev-programacion">
                     <p>Programación</p>
-
                 </div>
             </div>
             <div class="d-flex justify-content-center">
                 <div class="navbar-progra-content navbar-prev-home" id="navbar-prev-home">
-
                     <p>Home</p>
                 </div>
             </div>
