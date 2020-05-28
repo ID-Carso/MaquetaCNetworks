@@ -3,6 +3,7 @@
 
 <head>
     <?php include './views/partials/head.php' ?>
+    <script type="text/javascript" src="../js/lib/easyXDM.min.js"></script>
 </head>
 
 <body>
@@ -1002,11 +1003,15 @@
     <?php
     include './views/partials/modal-program.php'
     ?>
-     <script type="text/javascript" src="../js/lib/easyXDM.min.js"></script>
+   
   <script>
-    var socket = new easyXDM.Socket({
+     var socket = new easyXDM.Socket({
       onReady: function() {
-        socket.postMessage(document.body.offsetHeight)
+        
+        var hey=(document.documentElement.offsetHeight)+495+5;
+        console.log(hey);
+
+        socket.postMessage(hey)
       }
     });
   </script>
