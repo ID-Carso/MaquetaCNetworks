@@ -4,11 +4,11 @@
         <div class="row">
             <div class="col-12 m-auto">
                 <div class="adv-headline-mb">
-                     <div class="p-3 border-top border-left border-right border-bottom position-relative">
+                     <div class="p-3 border-t border-l border-r border-b position-relative">
                         <img src="../images/pencil.svg" alt="" class="pencil">
                          <h1 class="advertising-title ">Disfruta</h1>
                     </div>
-                    <div class="p-3 border-top border-left border-right border-bottom position-relative">
+                    <div class="p-3 border-t border-l border-r border-b position-relative">
                          <img src="../images/pencil.svg" alt="" class="pencil">
                        <h2 class="advertising-subtitle">La mejor programación</h2>
                     </div>
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="col-12 no-gutters">
-                  <div class="p-3 border-top border-left border-right border-bottom position-relative">
+                  <div class="p-3 border-t border-l border-r border-b position-relative">
                      <img src="../images/pencil.svg" alt="" class="pencil">
                       <img src="./images/home/herederos-ok.jpg" class="advertising-image" />
                 </div>
@@ -35,13 +35,13 @@
         <div class="col-lg-10 m-auto">
             <div class="row">
                 <div class="col-6 m-auto">
-                     <div class="p-3 border-top border-left border-right border-bottom position-relative">
+                     <div class="p-3 border-t border-l border-r border-b position-relative">
                          <img src="../images/pencil.svg" alt="" class="pencil">
                          <img src="./images/home/herederos-text.jpg" alt="" class="w-100">
                     </div>
                 </div>
                 <div class="col-6 no-gutters">
-                      <div class="p-3 border-top border-left border-right border-bottom position-relative">
+                      <div class="p-3 border-t border-l border-r border-b position-relative">
                           <img src="../images/pencil.svg" alt="" class="pencil">
                           <img src="./images/home/herederos-ok.jpg" class="advertising-image" />
                       </div>
@@ -55,7 +55,7 @@
         <div class="col-lg-12">
             <div class="row">
                 <div class="col-5 col-lg-6">
-                <div class=" p-3 border-top border-left border-right border-bottom position-relative">
+                <div class=" p-3 border-t border-l border-r border-b position-relative">
           <img src="../images/pencil.svg" alt="" class="pencil">
                     <img src="./images/home/herederos-text.jpg" alt="" class="w-100"></div>
                     <!--<div class="adv-headline-mb">
@@ -71,7 +71,7 @@
                     </div>-->
                 </div>
                 <div class="col-7 col-lg-6 no-gutters">
-                <div class="p-3 border-top border-left border-right border-bottom position-relative">
+                <div class="p-3 border-t border-l border-r border-b position-relative">
           <img src="../images/pencil.svg" alt="" class="pencil">
                     <img src="./images/home/herederos-ok.jpg" class="advertising-image" /></div>
                 </div>

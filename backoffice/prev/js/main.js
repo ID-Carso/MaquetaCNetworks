@@ -149,6 +149,7 @@ $(document).ready(function () {
             <div class="poster">
              <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
+                
                      <img src="./images/home/carrusel-ahora-en-vivo/${favorite.image}" alt="">
                 </div>
                 <div class="a-claro-rectangle">
@@ -1115,11 +1116,11 @@ $(document).ready(function () {
   var sessionSrc = localStorage.getItem("src");
   var loginCountry = $(".login-country");
   //!sessionSrc && window.location.pathname !== "/v1.2/"
-  if (!sessionSrc && window.location.pathname !== "/v1.2/") {
+  /*if (!sessionSrc && window.location.pathname !== "/v1.2/") {
     location.href = "/v1.2/";
   } else {
     loginCountry.attr("src", sessionSrc);
-  }
+  }*/
 
   $(".tooltip-logout").click(function () {
     signOut();
@@ -1300,8 +1301,8 @@ $(document).ready(function () {
       dots: true,
       centerMode: false,
       arrows: true,
-      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+      prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
+      nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
 
       responsive: [
         {
@@ -1338,9 +1339,9 @@ $(document).ready(function () {
             centerMode: false,
             arrows: true,
             prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+              '<img src="./images/sliders/prev.png" class="arrow-prev" />',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+              '<img src="./images/sliders/next.png" class="arrow-next" />',
           },
         },
 
@@ -1354,9 +1355,9 @@ $(document).ready(function () {
             centerMode: false,
             arrows: true,
             prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+              '<img src="./images/sliders/prev.png" class="arrow-prev" />',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+              '<img src="./images/sliders/next.png" class="arrow-next" />',
           },
         },
       ],
@@ -1369,8 +1370,8 @@ $(document).ready(function () {
     dots: true,
     centerMode: false,
     arrows: true,
-    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+    prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
+    nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
 
     responsive: [
       {
@@ -1407,9 +1408,9 @@ $(document).ready(function () {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="./images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="./images/sliders/next.png" class="arrow-next" />',
         },
       },
 
@@ -1423,9 +1424,9 @@ $(document).ready(function () {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="./images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="./images/sliders/next.png" class="arrow-next" />',
         },
       },
     ],
@@ -1467,8 +1468,8 @@ $(document).ready(function () {
     dots: true,
     centerMode: false,
     arrows: true,
-    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+    prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
+    nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
     responsive: [
       {
         breakpoint: 768,
@@ -1504,9 +1505,9 @@ $(document).ready(function () {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="./images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="./images/sliders/next.png" class="arrow-next" />',
         },
       },
       {
@@ -1519,9 +1520,9 @@ $(document).ready(function () {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="./images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="./images/sliders/next.png" class="arrow-next" />',
         },
       },
     ],
@@ -1817,8 +1818,8 @@ function createCinemaHomeSlider() {
     dots: true,
     centerMode: false,
     arrows: true,
-    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+    prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
+    nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
 
     responsive: [
       {
@@ -1855,9 +1856,9 @@ function createCinemaHomeSlider() {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="./images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="./images/sliders/next.png" class="arrow-next" />',
         },
       },
 
@@ -1871,9 +1872,9 @@ function createCinemaHomeSlider() {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="./images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="./images/sliders/next.png" class="arrow-next" />',
         },
       },
     ],
@@ -1906,9 +1907,9 @@ function createProgramacionSlider() {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="./images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="./images/sliders/next.png" class="arrow-next" />',
         },
       },
       {
@@ -1921,9 +1922,9 @@ function createProgramacionSlider() {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="./images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="./images/sliders/next.png" class="arrow-next" />',
         },
       },
       {
@@ -1936,9 +1937,9 @@ function createProgramacionSlider() {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="./images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="./images/sliders/next.png" class="arrow-next" />',
         },
       },
       {
@@ -1951,9 +1952,9 @@ function createProgramacionSlider() {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="./images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="./images/sliders/next.png" class="arrow-next" />',
         },
       },
     ],
@@ -1976,8 +1977,8 @@ function createTvSlider() {
     dots: true,
     centerMode: false,
     arrows: true,
-    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+    prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
+    nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
     responsive: [
       {
         breakpoint: 768,
@@ -2013,9 +2014,9 @@ function createTvSlider() {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="./images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="./images/sliders/next.png" class="arrow-next" />',
         },
       },
       {
@@ -2028,9 +2029,9 @@ function createTvSlider() {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="./images/sliders/prev.png" class="arrow-prev" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="./images/sliders/next.png" class="arrow-next" />',
         },
       },
     ],

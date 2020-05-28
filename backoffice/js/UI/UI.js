@@ -258,12 +258,51 @@ function createNavbarProgramacionGeneral() {
     $(this).addClass("navbar-progra-active");
     if ($(this).hasClass("navbar-canal-claro")) {
       changeContentProgramacionGeneral($(this).attr("rel"));
+      $(".navbar-prev-canal-claro").html("");
+      new easyXDM.Socket({
+        remote: "./prev/claro-canal.php",
+        container: "navbar-prev-canal-claro",
+        onMessage: function (message, origin) {
+          console.log(message);
+          this.container.getElementsByTagName("iframe")[0].style.height =
+            message + "px";
+          this.container
+            .getElementsByTagName("iframe")[0]
+            .setAttribute("scrolling", "no");
+        },
+      });
     } else if ($(this).hasClass("navbar-sinopsis")) {
       changeContentProgramacionGeneral($(this).attr("rel"));
     } else if ($(this).hasClass("navbar-programacion")) {
       changeContentProgramacionGeneral($(this).attr("rel"));
+      $(".navbar-prev-programacion").html("");
+      new easyXDM.Socket({
+        remote: "./prev/programacion.php",
+        container: "navbar-prev-programacion",
+        onMessage: function (message, origin) {
+          console.log(message);
+          this.container
+            .getElementsByTagName("iframe")[0]
+            .setAttribute("scrolling", "no");
+          this.container.getElementsByTagName("iframe")[0].style.height =
+            message + "px";
+        },
+      });
     } else if ($(this).hasClass("navbar-home")) {
       changeContentProgramacionGeneral($(this).attr("rel"));
+      $(".navbar-prev-home").html("");
+      new easyXDM.Socket({
+        remote: "./prev/home.php",
+        container: "navbar-prev-home",
+        onMessage: function (message, origin) {
+          console.log(message);
+          this.container
+            .getElementsByTagName("iframe")[0]
+            .setAttribute("scrolling", "no");
+          this.container.getElementsByTagName("iframe")[0].style.height =
+            message + "px";
+        },
+      });
     }
     if ($(this).attr("navbar-index") == 1) {
       arrowLeft.css({
@@ -306,15 +345,7 @@ function createNavbarProgramacionGeneral() {
     if ($(this).hasClass("arrow-progra-left")) {
       currentNavbarItem.prev().addClass("navbar-progra-active");
       changeContentProgramacionGeneral(currentNavbarItem.prev().attr("rel"));
-      /*if (currentNavbarItem.prev().hasClass("navbar-canal-claro")) {
-        changeContentProgramacionGeneral(currentNavbarItem.prev().attr("rel"));
-      } else if (currentNavbarItem.prev().hasClass("navbar-sinopsis")) {
-        changeContentProgramacionGeneral(currentNavbarItem.prev().attr("rel"));
-      } else if (currentNavbarItem.prev().hasClass("navbar-programacion")) {
-        changeContentProgramacionGeneral(currentNavbarItem.prev().attr("rel"));
-      } else if (currentNavbarItem.prev().hasClass("navbar-home")) {
-        changeContentProgramacionGeneral(currentNavbarItem.prev().attr("rel"));
-      }*/
+
       if ($(".navbar-progra-active").attr("navbar-index") == 1) {
         arrowLeft.css({
           pointerEvents: "none",
@@ -329,15 +360,7 @@ function createNavbarProgramacionGeneral() {
     } else {
       currentNavbarItem.next().addClass("navbar-progra-active");
       changeContentProgramacionGeneral(currentNavbarItem.next().attr("rel"));
-      /*if (currentNavbarItem.next().hasClass("navbar-canal-claro")) {
-        changeContentProgramacionGeneral(currentNavbarItem.next().attr("rel"));
-      } else if (currentNavbarItem.next().hasClass("navbar-sinopsis")) {
-        changeContentProgramacionGeneral(currentNavbarItem.next().attr("rel"));
-      } else if (currentNavbarItem.next().hasClass("navbar-programacion")) {
-        changeContentProgramacionGeneral(currentNavbarItem.next().attr("rel"));
-      } else if (currentNavbarItem.next().hasClass("navbar-home")) {
-        changeContentProgramacionGeneral(currentNavbarItem.next().attr("rel"));
-      }*/
+
       if ($(".navbar-progra-active").attr("navbar-index") == 4) {
         arrowRight.css({
           pointerEvents: "none",

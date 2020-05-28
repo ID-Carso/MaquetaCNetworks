@@ -20,7 +20,6 @@
                 console.log(message);
                 this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
                 this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
-
             }
         });
     </script>
@@ -28,7 +27,7 @@
 
 <body>
     <main>
-      
+
         <div class="col-11 mx-auto mb-5 mt-5">
 
             <div class="d-flex justify-content-between align-items-end">
