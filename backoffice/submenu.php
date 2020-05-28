@@ -12,15 +12,16 @@
     <main>
 
         <div id="menu">
-            <!--  <div class="float-right mr-5 margin-top-por">
-                    
-                    <div>
-                        <img src="./images/mobile.svg" class="a-prev-image ml-3 mr-3" alt="mobile" id="prev-mobile">
-                        <img src="./images/tablet.svg" class="a-prev-image" alt="tablet" id="prev-tablet">
-                        <img src="./images/pc.svg" class="a-prev-image ml-3" alt="pc" id="prev-desktop">
-                    </div>
-                    <p class="a-text-black-semibold a-prev-title prev">PREVISUALIZAR</p>
-    </div>-->
+            <div class="float-right mr-5 margin-top-por">
+
+                <div>
+                    <img src="./images/mobile.svg" class="a-prev-image ml-3 mr-3" alt="mobile" id="prev-mobile">
+                    <img src="./images/tablet.svg" class="a-prev-image" alt="tablet" id="prev-tablet">
+                    <img src="./images/pc.svg" class="a-prev-image ml-3" alt="pc" id="prev-desktop">
+                </div>
+                <p class="a-text-black-semibold a-prev-title prev">PREVISUALIZAR</p>
+            </div>
+            <div class="clearfix"></div>
             <nav class="d-flex col-xl-11 navbar-expand-sm justify-content-center mb-5" id="option">
                 <div class="navbar-progra d-flex align-items-center justify-content-center mt-5">
                     <img src="./images/arrow-gray.svg" alt="flecha" class="arrow-progra arrow-progra-left">
@@ -61,11 +62,25 @@
                 </div>
 
             </nav>
-            <center>
-                <div class="navbar-progra-content navbar-prev-canal-claro " id="navbar-prev-canal-claro">
+            <div class="centro">
+                <div class="navbar-progra-content navbar-prev-canal-claro mb-5" id="navbar-prev-canal-claro">
                     <p>Canal Claro</p>
+                    <script type="text/javascript" src="../js/lib/easyXDM.min.js"></script>
+                    <script>
+                        new easyXDM.Socket({
+                            remote: "./prev/claro-canal.php",
+                            container: "navbar-prev-canal-claro",
+                            onMessage: function(message, origin) {
+                                console.log(message);
+                                this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
+                                this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
+                                this.container.getElementsByTagName("iframe")[0].style.boxShadow = "rgba(0, 0, 0, 0.5) -1px -1px 17px 9px";
+
+                            }
+                        });
+                    </script>
                 </div>
-            </center>
+            </div>
             <div class="navbar-progra-content" id="navbar-prev-sinopsis">
                 <div id="prev-sinopsis">
                     <div class="float-left ml-5">
@@ -178,15 +193,29 @@
 
                 </div>
             </div>
-            <div class="d-flex justify-content-center">
+            <<<<<<< HEAD <div class="d-flex justify-content-center">
                 <div class="navbar-progra-content navbar-prev-programacion" id="navbar-prev-programacion">
                     <p>Programación</p>
                 </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="navbar-progra-content navbar-prev-home" id="navbar-prev-home">
+                <p>Home</p>
             </div>
-            <div class="d-flex justify-content-center">
-                <div class="navbar-progra-content navbar-prev-home" id="navbar-prev-home">
+            =======
+            <div class="centro ">
+                <div class="navbar-progra-content mb-5 " id="navbar-prev-programacion">
+                    <p>Programación</p>
+
+                </div>
+            </div>
+            <div class="centro ">
+                <div class="navbar-progra-content mb-5 " id="navbar-prev-home">
+
                     <p>Home</p>
                 </div>
+
+                >>>>>>> 69991f52143b6a0c431fa459d11db684ce97e1c4
             </div>
         </div>
 

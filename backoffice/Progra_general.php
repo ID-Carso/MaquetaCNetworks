@@ -7,15 +7,24 @@
     <title>Claro Networks</title>
     <script src="./js/admin.js" defer></script>
 </head>
+<style>
+#inp_programing{
+  display: none;
+}
 
+</style>
 <body>
     <main>
        
         <div id="grilla">
-        <div class="  ml-5  mb-5  ">
-            <button class="btn-cargar " id="file" onClick="Verarchi()"><span class=" d-flex align-items-center text-crea"><img src="./images/clip.svg" alt="" class=" mr-2">Cargar archivos</span></button>
+        <div class="  ml-5  mb12  ">
+            <input id="inp_programing" type="file" >
+            <label for="inp_programing" class="btn-cargar pl-2" style="display: flex; align-items:center;position: absolute;padding-left:.2rem"><span class="  text-crea"><img src="./images/clip.svg" alt="" class=" mr-2">Cargar archivos</span></label>
+            <!--
+            <button class="btn-cargar " id="file" ><span class=" d-flex align-items-center text-crea"><img src="./images/clip.svg" alt="" class=" mr-2">Cargar archivos</span></button>
+             -->
         </div>
-        <div class=" d-flex ml-5 pl-2 ">
+        <div class=" d-flex ml-5 pl-2 pt7 mb-3">
             <div id="meses" class="d-flex align-items-center mb-3 br-r " >
                 <img src="./images/arrow-light.svg" alt="" class=" mr-4 arrow-r180 arrow-left">          
                         <p class=" flex-caption mb-0 progra-month"></p>   
@@ -108,7 +117,7 @@
                             (1=Yes/0=No)</span>
                     </div>
                 </div>
-                <div class="contenedor-fila">
+                <div class="contenedor-fila" id="programacion">
                     <div class="contenedor-columna"></div>
                     <div class="contenedor-columna"></div>
                     <div class="contenedor-columna"></div>

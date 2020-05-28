@@ -154,13 +154,13 @@
             <input type="checkbox">
             <span class="checkmark"></span>
             </label>
-</div>
+        </div>
             <div class="d-flex ml-4"><span class="text-lan ml-5 mtop-8 mb-4"> Solo por canal claro</span>
             <label class="checkradio">
             <input type="checkbox">
             <span class="checkmark"></span>
             </label>
-</div>
+            </div>
             <div class="vige-lan">
             <label class="text-public">Vigencia en landing</label>
             </div>
@@ -227,7 +227,7 @@
         <div class="contenedor-columna centro ">
         <div class="schedule-date">
                 <label class="a-text-regular-brownishtwo text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut labore et dolore magna aliqua.  </label>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut labore et dolore magna aliqua.  </label>
                 <img src="./images/pencil.svg" alt="" class="pencil">
             </div>
         </div>

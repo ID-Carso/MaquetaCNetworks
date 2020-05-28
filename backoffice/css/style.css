@@ -2801,6 +2801,14 @@ input[type="radio"]:checked + .no-estilo1 {
   margin-left: 6%;
 }
 
+.mb12 {
+  margin-bottom: 10%;
+}
+
+.pt7 {
+  padding-top: 7%;
+}
+
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
@@ -3681,6 +3689,11 @@ input[type="radio"]:checked + .no-estilo1 {
   -webkit-box-shadow: 3px 3px 5px 6px #5c1864;
   box-shadow: 3px 3px 5px 6px #5c1864;
   border-radius: 15px;
+}
+
+.shadow {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) -1px -1px 17px 9px;
+          box-shadow: rgba(0, 0, 0, 0.5) -1px -1px 17px 9px;
 }
 
 @font-face {

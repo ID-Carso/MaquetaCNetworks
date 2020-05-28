@@ -258,18 +258,6 @@ function createNavbarProgramacionGeneral() {
     $(this).addClass("navbar-progra-active");
     if ($(this).hasClass("navbar-canal-claro")) {
       changeContentProgramacionGeneral($(this).attr("rel"));
-      new easyXDM.Socket({
-        remote: "./prev/claro-canal.php",
-        container: "navbar-prev-canal-claro",
-        onMessage: function (message, origin) {
-          console.log(message);
-          this.container.getElementsByTagName("iframe")[0].style.height =
-            message + "px";
-          this.container
-            .getElementsByTagName("iframe")[0]
-            .setAttribute("scrolling", "no");
-        },
-      });
     } else if ($(this).hasClass("navbar-sinopsis")) {
       changeContentProgramacionGeneral($(this).attr("rel"));
     } else if ($(this).hasClass("navbar-programacion")) {
@@ -284,6 +272,8 @@ function createNavbarProgramacionGeneral() {
             .setAttribute("scrolling", "no");
           this.container.getElementsByTagName("iframe")[0].style.height =
             message + "px";
+          this.container.getElementsByTagName("iframe")[0].style.boxShadow =
+            "rgba(0, 0, 0, 0.5) -1px -1px 17px 9px";
         },
       });
     } else if ($(this).hasClass("navbar-home")) {
@@ -293,11 +283,11 @@ function createNavbarProgramacionGeneral() {
         container: "navbar-prev-home",
         onMessage: function (message, origin) {
           console.log(message);
-          this.container
-            .getElementsByTagName("iframe")[0]
-            .setAttribute("scrolling", "no");
+          // this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
           this.container.getElementsByTagName("iframe")[0].style.height =
             message + "px";
+          this.container.getElementsByTagName("iframe")[0].style.boxShadow =
+            "rgba(0, 0, 0, 0.5) -1px -1px 17px 9px";
         },
       });
     }
