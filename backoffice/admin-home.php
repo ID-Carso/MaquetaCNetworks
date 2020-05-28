@@ -26,7 +26,7 @@
         <!--Contenido de la tabla-->
         <div class="pd-5">PROGRAMACIÓN GENERAL</div>
         <div class="justify-content-center">
-          <input type="image" src="./images/lapiz-acti.svg" alt="" class="ml-3 btn-focus" onClick="program()"></input>
+          <input type="image" src="./images/lapiz-acti.svg" alt="" class="ml-3 btn-focus" onClick="abrirprogram()"></input>
           <input type="image" src="./images/historial-inac.svg" alt="" class="ml-3 btn-focus"></input>
           <input type="image" src="./images/noti-inac.svg" alt="" class="ml-3 btn-focus"></input>
         </div>

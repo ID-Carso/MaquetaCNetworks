@@ -103,7 +103,7 @@ function grilla() {
   $("#bodymenu").load("Progra_general.php");
 }
 
-function program() {
+function abrirprogram() {
   $(location).attr("href", "Menu.php");
 }
 

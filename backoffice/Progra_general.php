@@ -17,14 +17,14 @@
     <main>
        
         <div id="grilla">
-        <div class="  ml-5  mb-5  ">
+        <div class="  ml-5  mb12  ">
             <input id="inp_programing" type="file" >
-            <label for="inp_programing" class="btn-cargar" style="display: flex; align-items:center;position: absolute;padding-left:.2rem"><span class="  text-crea"><img src="./images/clip.svg" alt="" class=" mr-2">Cargar archivos</span></label>
+            <label for="inp_programing" class="btn-cargar pl-2" style="display: flex; align-items:center;position: absolute;padding-left:.2rem"><span class="  text-crea"><img src="./images/clip.svg" alt="" class=" mr-2">Cargar archivos</span></label>
             <!--
             <button class="btn-cargar " id="file" ><span class=" d-flex align-items-center text-crea"><img src="./images/clip.svg" alt="" class=" mr-2">Cargar archivos</span></button>
              -->
         </div>
-        <div class=" d-flex ml-5 pl-2 ">
+        <div class=" d-flex ml-5 pl-2 pt7 mb-3">
             <div id="meses" class="d-flex align-items-center mb-3 br-r " >
                 <img src="./images/arrow-light.svg" alt="" class=" mr-4 arrow-r180 arrow-left">          
                         <p class=" flex-caption mb-0 progra-month"></p>   

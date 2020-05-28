@@ -2801,6 +2801,14 @@ input[type="radio"]:checked + .no-estilo1 {
   margin-left: 6%;
 }
 
+.mb12 {
+  margin-bottom: 10%;
+}
+
+.pt7 {
+  padding-top: 7%;
+}
+
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
