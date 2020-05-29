@@ -261,35 +261,10 @@ function createNavbarProgramacionGeneral() {
     } else if ($(this).hasClass("navbar-sinopsis")) {
       changeContentProgramacionGeneral($(this).attr("rel"));
     } else if ($(this).hasClass("navbar-programacion")) {
+      console.log("canal claro");
       changeContentProgramacionGeneral($(this).attr("rel"));
-      new easyXDM.Socket({
-        remote: "./prev/programacion.php",
-        container: "navbar-prev-programacion",
-        onMessage: function (message, origin) {
-          console.log(message);
-          this.container
-            .getElementsByTagName("iframe")[0]
-            .setAttribute("scrolling", "no");
-          this.container.getElementsByTagName("iframe")[0].style.height =
-            message + "px";
-          this.container.getElementsByTagName("iframe")[0].style.boxShadow =
-            "rgba(0, 0, 0, 0.5) -1px -1px 17px 9px";
-        },
-      });
     } else if ($(this).hasClass("navbar-home")) {
       changeContentProgramacionGeneral($(this).attr("rel"));
-      new easyXDM.Socket({
-        remote: "./prev/home.php",
-        container: "navbar-prev-home",
-        onMessage: function (message, origin) {
-          console.log(message);
-          // this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
-          this.container.getElementsByTagName("iframe")[0].style.height =
-            message + "px";
-          this.container.getElementsByTagName("iframe")[0].style.boxShadow =
-            "rgba(0, 0, 0, 0.5) -1px -1px 17px 9px";
-        },
-      });
     }
     if ($(this).attr("navbar-index") == 1) {
       arrowLeft.css({
@@ -380,7 +355,6 @@ function createNavbarProgramacionGeneral() {
 }
 function changeContentProgramacionGeneral(nameSection) {
   $(".navbar-progra-content").hide();
-  console.log("#" + nameSection);
   $("#" + nameSection).show();
 }
 
