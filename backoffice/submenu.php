@@ -5,7 +5,48 @@
     <?php
     include 'scripts.php';
     include  'styles.php';
+
     ?>
+    <script type="text/javascript" src="../js/lib/easyXDM.min.js"></script>
+    <script>
+        new easyXDM.Socket({
+            remote: "./prev/claro-canal.php",
+            container: "navbar-prev-canal-claro",
+            onMessage: function(message, origin) {
+                console.log(message);
+                this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
+                this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
+                this.container.getElementsByTagName("iframe")[0].style.boxShadow = "rgba(0, 0, 0, 0.5) -1px -1px 17px 9px";
+
+            }
+        });
+    </script>
+    <script>
+        new easyXDM.Socket({
+            remote: "./prev/programacion.php",
+            container: "navbar-prev-programacion",
+            onMessage: function(message, origin) {
+                console.log(message);
+                this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
+                this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
+                this.container.getElementsByTagName("iframe")[0].style.boxShadow = "rgba(0, 0, 0, 0.5) -1px -1px 17px 9px";
+
+            }
+        });
+    </script>
+    <script>
+        new easyXDM.Socket({
+            remote: "./prev/home.php",
+            container: "navbar-prev-home",
+            onMessage: function(message, origin) {
+                console.log(message);
+                this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
+                this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
+                this.container.getElementsByTagName("iframe")[0].style.boxShadow = "rgba(0, 0, 0, 0.5) -1px -1px 17px 9px";
+
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -65,23 +106,11 @@
             <div class="centro">
                 <div class="navbar-progra-content navbar-prev-canal-claro mb-5" id="navbar-prev-canal-claro">
                     <p>Canal Claro</p>
-                    <script type="text/javascript" src="../js/lib/easyXDM.min.js"></script>
-                    <script>
-                        new easyXDM.Socket({
-                            remote: "./prev/claro-canal.php",
-                            container: "navbar-prev-canal-claro",
-                            onMessage: function(message, origin) {
-                                console.log(message);
-                                this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
-                                this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
-                                this.container.getElementsByTagName("iframe")[0].style.boxShadow = "rgba(0, 0, 0, 0.5) -1px -1px 17px 9px";
 
-                            }
-                        });
-                    </script>
+
                 </div>
             </div>
-            <div class="navbar-progra-content" id="navbar-prev-sinopsis">
+            <div class="navbar-progra-content navbar-sinopsis" id="navbar-prev-sinopsis">
                 <div id="prev-sinopsis">
                     <div class="float-left ml-5">
                         <div><input type="radio" id="1" value="" disabled /> <label for="1" class="a-btn-check"></label><span class=" ml-2 a-text-grey">Guardar cambios</span>
@@ -195,7 +224,7 @@
             </div>
 
             <div class="centro ">
-                <div class="navbar-progra-content mb-5" id="navbar-prev-programacion">
+                <div class="navbar-progra-content mb-5 navbar-prev-programacion" id="navbar-prev-programacion">
                     <p>Programación</p>
 
                 </div>
@@ -204,6 +233,7 @@
                 <div class="navbar-progra-content mb-5" id="navbar-prev-home">
 
                     <p>Home</p>
+
                 </div>
 
 
