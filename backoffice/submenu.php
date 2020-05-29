@@ -34,7 +34,7 @@
                         </div>
                     </div>
 
-                    <div class="navbar-progra-item navbar-progra-item-border  navbar-sinopsis" navbar-index="2" rel="navbar-prev-sinopsis">
+                    <div class="navbar-progra-item navbar-progra-item-border navbar-sinopsis" navbar-index="2" rel="navbar-prev-sinopsis">
                         <div class="navbar-progra-item-container ml-3 mr-3">
                             <p class="a-text-regular-blacktwo py-2 px-3 mb-0">SINÓPSIS</p>
                         </div>
@@ -42,7 +42,7 @@
                     </div>
 
 
-                    <div class="navbar-progra-item navbar-progra-item-border navbar-prev-programacion" navbar-index="3" rel="navbar-prev-programacion">
+                    <div class="navbar-progra-item navbar-progra-item-border navbar-programacion navbar-prev-programacion" navbar-index="3" rel="navbar-prev-programacion">
                         <div class="navbar-progra-item-container ml-3 mr-3">
                             <p class="a-text-regular-blacktwo py-2 px-3 mb-0">PROGRAMACIÓN</p>
                         </div>
@@ -50,7 +50,7 @@
                     </div>
 
 
-                    <div class="navbar-progra-item navbar-prev-home" navbar-index="4" rel="navbar-prev-home">
+                    <div class="navbar-progra-item navbar-prev-home navbar-home" navbar-index="4" rel="navbar-prev-home">
                         <div class="navbar-progra-item-container ml-3 mr-3">
                             <p class="a-text-regular-blacktwo py-2 px-3 mb-0">HOME</p>
                         </div>
@@ -195,13 +195,13 @@
             </div>
 
             <div class="centro ">
-                <div class="navbar-progra-content mb-5 " id="navbar-prev-programacion">
+                <div class="navbar-progra-content mb-5" id="navbar-prev-programacion">
                     <p>Programación</p>
 
                 </div>
             </div>
             <div class="centro ">
-                <div class="navbar-progra-content mb-5 " id="navbar-prev-home">
+                <div class="navbar-progra-content mb-5" id="navbar-prev-home">
 
                     <p>Home</p>
                 </div>

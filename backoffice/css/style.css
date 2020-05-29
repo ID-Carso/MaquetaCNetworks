@@ -4360,6 +4360,10 @@ ul {
   background-color: #ffffff;
 }
 
+iframe {
+  width: 1200px;
+}
+
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
