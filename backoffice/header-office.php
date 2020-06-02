@@ -89,10 +89,10 @@ function changeNameRol($rolId)
         case '2':
             $rol = "Aprobador";
             break;
-        case '1':
+        case '3':
             $rol = "Editor";
             break;
-        case '1':
+        case '4':
             $rol = "Visualizador";
             break;
 

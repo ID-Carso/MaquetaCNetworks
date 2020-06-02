@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION["session"])) {
+    header('Location: login.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +25,7 @@
         $nameButton = "Regresar a Administrar sitio";
         // $nameSection = "Home";
         include 'header-bo.php';
-        showHeader($nameButton, 1);
+        showHeader($nameButton, 1, $_SESSION["name_user"], $_SESSION["rol_id"]);
         ?>
         <div class="justify-content-center centro mx-auto position-title">
             <span class="text-titulo">PROGRAMACIÓN GENERAL <br> DEL </span>

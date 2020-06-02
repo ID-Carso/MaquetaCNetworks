@@ -855,6 +855,9 @@ function getUserToUpdate(id) {
           $(".save-button-edit").click(function () {
             let name = $("#edit-input-username").val();
             let email = $("#edit-input-email").val();
+            if (email == json.data.email) {
+              email = "";
+            }
             let password = $("#edit-input-password").val();
             let repassword = $("#edit-input-repassword").val();
             let rolId = $(".btn-rol-select").attr("id_rol");
