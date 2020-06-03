@@ -159,7 +159,7 @@ $(document).ready(function () {
 
   prevImage.click(function () {
     let prevContainer = $("iframe");
-    previewPage($(this), prevContainer);
+    previewPage($(this));
   });
 
   /* Nav de administrador */

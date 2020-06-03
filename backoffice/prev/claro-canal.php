@@ -115,26 +115,26 @@
       <div class="today-container">
         <div class="row no-gutters landing-header">
           <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-            <div class="col-8 p-3 border-t border-l border-r border-b position-relative">
+            <div class="col-7 mx-auto p-2 border-t border-l border-r border-b position-relative mb-2 col-md-9 col-xl-10">
               <img src="../images/pencil.svg" alt="" class="pencil">
               <img src="./images/home/tv-1.svg" alt="" class="lading-header-image-claro"></div>
           </div>
           <div class="col-12 col-md-5 col-lg-5 col-xl-5">
             <div class="d-flex justify-content-center col-12 col-xl-12">
-              <div class="p-3 border-t border-l border-r border-b position-relative">
+              <div class="col-9 p-3 border-t border-l border-r border-b position-relative mb-2 col-md-12 border-t border-l border-r border-b position-relative">
                 <img src="../images/pencil.svg" alt="" class="pencil">
                 <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ">
+          <div class="col-12  col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ">
             <a href="programacion.php">
-              <div class="d-flex float-right clearfix">
-                <div class=" p-3 border-t border-l border-r border-b position-relative">
-                  <img src="../images/pencil.svg" alt="" class="pencil">
-                  <button class="btn-claro-canal a-text-white-semibold btn-tomato">VER PROGRAMACIÓN</button>
-                </div>
+
+              <div class=" p-3 mx-auto col-xl-8 col-8 col-md-11 border-t border-l border-r border-b position-relative">
+                <img src="../images/pencil.svg" alt="" class="pencil">
+                <button class="btn-claro-canal a-text-white-semibold btn-tomato">VER PROGRAMACIÓN</button>
               </div>
+
             </a>
           </div>
         </div>
@@ -147,13 +147,13 @@
     <section class="next-week-claro">
       <div class="next-week-container">
 
-        <div class=" p-3 col-5 border-t border-l border-r border-b position-relative mb-2">
+        <div class=" p-3 col-8 col-xl-6 mx-auto m-md-0 m-lg-0 m-xl-0 col-sm-7 border-t border-l border-r border-b position-relative mb-2">
           <img src="../images/pencil.svg" alt="" class="pencil ">
           <h1 class="a-next-claro-title">próxima semana</h1>
         </div>
-        <div class="p-3 col-5 border-t border-l border-r border-b position-relative mb-2">
+        <div class="p-3 col-8 col-md-7 mx-auto m-md-0 m-lg-0 m-xl-0 col-xl-6 border-t border-l border-r border-b position-relative mb-2">
           <img src="../images/pencil.svg" alt="" class="pencil">
-          <h2 class="a-next-claro-subtitle">
+          <h2 class="a-next-claro-subtitle mb-0">
             Ve un <span>adelanto</span> de la programación
           </h2>
         </div>
@@ -182,13 +182,13 @@
     </section>
     <section class="dont-lose-claro">
       <div class="dont-lose-container">
-        <div class=" p-3 col-5 border-t border-l border-r border-b position-relative mb-2">
+        <div class=" p-3 col-xl-6 col-md-6 col-8 mx-auto m-md-0 m-lg-0 m-xl-0 border-t border-l border-r border-b position-relative mb-2">
           <img src="../images/pencil.svg" alt="" class="pencil">
           <h1 class="a-dontLose-claro-title">TIENES QUE VERLO</h1>
         </div>
-        <div class=" p-3 col-4 border-t border-l border-r border-b position-relative mb-2">
+        <div class="mb-3 p-3 col-8 col-md-5 col-xl-6 mx-auto m-md-0 m-lg-0 m-xl-0 border-l border-r border-b position-relative mb-2">
           <img src="../images/pencil.svg" alt="" class="pencil">
-          <h2 class="a-dontLose-claro-subtitle">
+          <h2 class="a-dontLose-claro-subtitle pb-0">
             <!-- ve un <span>adelanto</span> de la programación -->
             ¡No te lo puedes perder!
           </h2>
@@ -197,11 +197,11 @@
           <div class="section-slider" id="dontLose-claro-slider">
           </div>
           <div>
-            <div class="col-6 border-t border-l border-r border-b position-relative mb-2">
+            <div class="col-6  col-9 col-md-8 col-xl-7 mx-auto m-md-0 m-lg-0 m-xl-0 border-t border-l border-r border-b position-relative mb-2">
               <img src="../images/pencil.svg" alt="" class="pencil">
               <h1 class="a-dontLose-claro-title">Contenido exclusivo</h1>
             </div>
-            <div class="col-7 pt-3 border-t border-l border-r border-b position-relative mb-2">
+            <div class="mx-auto m-md-0 m-lg-0 m-xl-0 col-9 col-md-9 col-xl-7 pt-3 border-l border-r border-t border-b position-relative mb-2">
               <img src="../images/pencil.svg" alt="" class="pencil">
               <h2 class="a-dontLose-claro-subtitle">
                 <!-- ve un <span>adelanto</span> de la programación -->
@@ -271,7 +271,7 @@
   <?php
   include 'footer.php'
   ?>
- 
+
 </body>
 <?php
 include './views/partials/modal-favorites.php'
@@ -281,16 +281,17 @@ include './views/partials/modal-favorites.php'
 <?php
 include './views/partials/modal-program.php'
 ?>
- <script type="text/javascript" src="../js/lib/easyXDM.min.js"></script>
-  <script>
-    var socket = new easyXDM.Socket({
-      onReady: function() {
-        
-        var hey=(document.documentElement.offsetHeight)+495+5;
-        console.log(hey);
+<script type="text/javascript" src="../js/lib/easyXDM.min.js"></script>
+<script>
+  var socket = new easyXDM.Socket({
+    onReady: function() {
 
-        socket.postMessage(hey)
-      }
-    });
-  </script>
+      var hey = 4300;
+      console.log(hey);
+
+      socket.postMessage(hey)
+    }
+  });
+</script>
+
 </html>

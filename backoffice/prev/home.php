@@ -87,12 +87,16 @@
         <header class="home-header">
 
             <div class="circle-video">
+            <div class="postion-relative">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="../images/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+
                 <video preload="yes" playsinline autoplay muted loop class="home-video">
-                    <div class=" border-t border-l border-r border-b position-relative">
+                
                         <img src="../images/pencil.svg" alt="" class="pencil">
                         <source src="./video/video.mp4" type="video/mp4" class="source-video" />
-                    </div>
+                       
                 </video>
+                </div>
             </div>
 
             <div class="header">
@@ -196,21 +200,24 @@
             <div class="claro-canal-mobile">
                 <div class="m-home-titles text-center">
                     <a href="claro-canal.php" class="home-title-link">
-                        <div class=" border-t border-l border-r border-b position-relative mb-2">
+                        <div class=" col-7 mx-auto col-xl-10 border-t border-l border-r border-b position-relative mb-2">
                             <img src="../images/pencil.svg" alt="" class="pencil">
                             <img src="./images/home/tv-1.svg" class="claro-image-header">
                         </div>
                     </a>
+                    <div class=" col-10 mx-auto p-3 border-t border-l border-r border-b position-relative mb-2">
+                    <img src="../images/pencil.svg" alt="" class="pencil">
                     <h2 class="a-subtitle a-claro-home-subtitle">
                         <!--LO MEJOR EN SERIES Y <br><span>PELÍCULAS INTERNACIONALES</span>-->
 
                     </h2>
+                    </div>
                 </div>
                 <div class="text-center">
                     <a href="claro-canal.php">
-                        <div class="p-3 border-t border-l border-r border-b position-relative">
+                        <div class=" col-5 mx-auto p-3 border-t border-l border-r border-b position-relative mb-2">
                             <img src="../images/pencil.svg" alt="" class="pencil">
-                            <button class="btn-red btn-canal-claro-home">VER +</button>
+                            <button class="btn-red btn-canal-claro-home mb-0">VER +</button>
                         </div>
                     </a>
                 </div>
@@ -229,15 +236,18 @@
                                 <img src="./images/home/tv-1.svg" class="claro-image-header">
                             </div>
                         </a>
+                        <div class=" col-10 mx-auto p-3 border-t border-l border-r border-b position-relative mb-2">
+                    <img src="../images/pencil.svg" alt="" class="pencil">
                         <h2 class="a-subtitle a-claro-home-subtitle">
                             <!--LO MEJOR EN SERIES Y <span class="a-claro-channel-subtitle-bold">PELÍCULAS
                                 INTERNACIONALES</span>-->
 
                         </h2>
+                        </div>
                     </div>
                     <div class="m-see-more">
                         <a href="claro-canal.php">
-                            <div class="p-3 bborder-t border-l border-r border-b position-relative">
+                            <div class="p-3 border-t border-l border-r border-b position-relative">
                                 <img src="../images/pencil.svg" alt="" class="pencil">
                                 <button class="btn-red btn-canal-claro-home">VER +</button>
                             </div>
@@ -324,21 +334,24 @@
             <div class="concert-channel-mobile">
                 <div class="m-home-titles text-center">
                     <a href="concert-channel.php" class="home-title-link">
-                        <div class="p-3 border-t border-l border-r border-b position-relative mb-2">
+                        <div class="col-5 mx-auto p-3 border-t border-l border-r border-b position-relative mb-2">
                             <img src="../images/pencil.svg" alt="" class="pencil">
                             <img src="./images/home/concert-home-img.svg" class="concerthome-image-header">
                         </div>
                     </a>
+                    <div class="col-7 mx-auto p-3 border-t border-l border-r border-b position-relative mb-2">
+                            <img src="../images/pencil.svg" alt="" class="pencil">
                     <h2 class="a-concert-channel-subtitle a-concert-home-subtitle">
                         <!--CONCIERTOS, ENTREVISTAS<br><span>Y MUCHO MÁS</span>-->
 
                     </h2>
+                    </div>
                 </div>
                 <div class="text-center">
                     <a href="concert-channel.php">
-                        <div class="p-3 border-t border-l border-r border-b position-relative ">
+                        <div class="p-3 col-5 mx-auto border-t border-l border-r border-b position-relative mb-2 ">
                             <img src="../images/pencil.svg" alt="" class="pencil">
-                            <button class="btn-pink button-concert-home"></button>
+                            <button class="btn-pink button-concert-home mb-0"></button>
                         </div>
                     </a>
 
@@ -353,19 +366,22 @@
                 <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
                         <a href="concert-channel.php" class="home-title-link">
-                            <div class="p-3 border-t border-l border-r border-b position-relative mb-2 mt-1">
+                            <div class="p-3 col-3 border-t border-l border-r border-b position-relative mb-2 mt-1">
                                 <img src="../images/pencil.svg" alt="" class="pencil">
                                 <img src="./images/home/concert-home-img.svg" class="concerthome-image-header">
                             </div>
                         </a>
+                        <div class="p-3 col-12 border-t border-l border-r border-b position-relative mb-2 mt-1">
+                                <img src="../images/pencil.svg" alt="" class="pencil">
                         <p class="a-concert-subtitle concert-first-subtitle a-concert-home-subtitle"></p>
                         <!--<p class="a-concert-subtitle concert-second-subtitle">Entrevistas y mucho más</p>-->
+                        </div>
                     </div>
                     <div class="m-see-more">
                         <a href="concert-channel.php">
                             <div class="p-3 border-t border-l border-r border-b position-relative">
                                 <img src="../images/pencil.svg" alt="" class="pencil">
-                                <button class="btn-pink button-concert-home"></button>
+                                <button class="btn-pink button-concert-home mb-0"></button>
                             </div>
                         </a>
                     </div>
@@ -442,22 +458,24 @@
             <div class="cinema-claro-mobile">
                 <div class="m-home-titles text-center">
                     <a href="claro-cinema.php" class="home-title-link">
-                        <div class="p-3 border-t border-l border-r border-b position-relative mb-2 mt-1">
+                        <div class=" col-5 mx-auto p-3 border-t border-l border-r border-b position-relative mb-2 mt-1">
                             <img src="../images/pencil.svg" alt="" class="pencil">
                             <img src="./images/home/tv-3.svg" class="cinemahome-image-header">
                         </div>
                     </a>
-
+                    <div class=" col-7 mx-auto p-3 border-t border-l border-r border-b position-relative mb-2 mt-1">
+                            <img src="../images/pencil.svg" alt="" class="pencil">
                     <h2 class="a-claro-cinema-subtitle  a-cinema-home-subtitle">
                         <!--Las mejores <span>Películas Mexicanas</span>-->
                         <!--LOS ÍDOLOS QUE MÉXICO<br><span>LE DIO AL CINE</span>-->
                     </h2>
+                    </div>
                 </div>
                 <div class="text-center">
                     <a href="claro-cinema.php">
-                        <div class="p-3 border-t border-l border-r border-b position-relative">
+                        <div class="p-3 col-5 mx-auto mb-2 border-t border-l border-r border-b position-relative">
                             <img src="../images/pencil.svg" alt="" class="pencil">
-                            <button class="btn-red button-cinema-home">VER +</button>
+                            <button class="btn-red button-cinema-home mb-0">VER +</button>
                         </div>
                     </a>
                 </div>
@@ -471,31 +489,33 @@
                 <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
                     <div class="m-home-titles">
                         <a href="claro-cinema.php" class="home-title-link">
-                            <div class="p-3 border-t border-l border-r border-b position-relative mb-2 mt-1">
+                            <div class="p-3 col-5 border-t border-l border-r border-b position-relative mb-2 mt-1">
                                 <img src="../images/pencil.svg" alt="" class="pencil">
                                 <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
                             </div>
                         </a>
+                         <div class="p-3 col-12 border-t border-l border-r border-b position-relative mb-2 mt-1">
+                                <img src="../images/pencil.svg" alt="" class="pencil">
                         <h2 class="a-subtitle a-cinema-home-subtitle">
                             LOS ÍDOLOS QUE MÉXICO<span>LE DIO AL CINE</span>
                         </h2>
+                        </div>
                     </div>
                     <div class="m-see-more">
                         <a href="claro-cinema.php">
                             <div class="p-3 border-t border-l border-r border-b position-relative">
                                 <img src="../images/pencil.svg" alt="" class="pencil">
-                                <button class="btn-red  button-cinema-home">VER +</button>
+                                <button class="btn-red  button-cinema-home mb-0">VER +</button>
                             </div>
                         </a>
                     </div>
                 </div>
                 <div class="d-flex no-gutters">
                     <div class="col-md-5 col-lg-4 d-flex align-items-center">
-                        <div class="p-3 border-t border-l border-r border-b position-relative">
-                            <img src="../images/pencil.svg" alt="" class="pencil">
+                  
                             <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
                         </div>
-                    </div>
+                    
                     <div class="col-md-7 col-lg-8">
                         <div class="cinema-home-slider">
                         </div>
@@ -625,7 +645,7 @@
         var socketHome = new easyXDM.Socket({
             onReady: function() {
 
-                var hey = document.documentElement.offsetHeight;
+                var hey = 4650;
                 console.log(hey);
 
                 socketHome.postMessage(hey)

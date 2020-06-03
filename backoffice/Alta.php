@@ -50,7 +50,7 @@ session_start();
                   <button id="button-visualizador" type="button" class="btn-rol-select a-text-medium-brownish button-rol btn-rol ml-2" rel='User-Visua' id_button="4" id_rol="4">Usuario<br> Visualizador</button>
                   <button id="button-editor" type="button" class="a-text-medium-brownish button-rol btn-rol ml-2" rel='User-Edit' id_button=" 2" id_rol="3">Usuario<br> Editor</button>
                   <button id="button-aprobador" type="button" class="a-text-medium-brownish button-rol btn-rol  ml-2" rel='User-Apro' id_button="3" id_rol="2">Usuario<br> Aprobador</button>
-                  <button id="button-root" type="button" class="a-text-medium-brownish btn-rol button-rol ml-2" id_button="1" id_rol="1" rel='User-Raiz'>Usuario<br> Raíz </button>
+                  <button id="button-root" type="button" class="a-text-medium-brownish btn-rol button-rol ml-2" id_button="1" id_rol="1" rel='User-Raiz'>Súper<br> Usuario </button>
                 </div>
               </div>
 
