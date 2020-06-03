@@ -1008,7 +1008,7 @@
      var socket = new easyXDM.Socket({
       onReady: function() {
         
-        var hey=(document.documentElement.offsetHeight)+495+5;
+        var hey=16250;
         console.log(hey);
 
         socket.postMessage(hey)
