@@ -129,12 +129,12 @@
           </div>
           <div class="col-12  col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ">
             <a href="programacion.php">
-              
-                <div class=" p-3 mx-auto col-xl-8 col-8 col-md-11 border-t border-l border-r border-b position-relative">
-                  <img src="../images/pencil.svg" alt="" class="pencil">
-                  <button class="btn-claro-canal a-text-white-semibold btn-tomato">VER PROGRAMACIÓN</button>
-                </div>
-              
+
+              <div class=" p-3 mx-auto col-xl-8 col-8 col-md-11 border-t border-l border-r border-b position-relative">
+                <img src="../images/pencil.svg" alt="" class="pencil">
+                <button class="btn-claro-canal a-text-white-semibold btn-tomato">VER PROGRAMACIÓN</button>
+              </div>
+
             </a>
           </div>
         </div>
@@ -147,13 +147,13 @@
     <section class="next-week-claro">
       <div class="next-week-container">
 
-        <div class=" p-3 col-8 col-xl-5 col-sm-7 border-t border-l border-r border-b position-relative mb-2">
+        <div class=" p-3 col-8 col-xl-6 mx-auto m-md-0 m-lg-0 m-xl-0 col-sm-7 border-t border-l border-r border-b position-relative mb-2">
           <img src="../images/pencil.svg" alt="" class="pencil ">
           <h1 class="a-next-claro-title">próxima semana</h1>
         </div>
-        <div class="p-3 col-8 col-md-7 col-xl-6 border-t border-l border-r border-b position-relative mb-2">
+        <div class="p-3 col-8 col-md-7 mx-auto m-md-0 m-lg-0 m-xl-0 col-xl-6 border-t border-l border-r border-b position-relative mb-2">
           <img src="../images/pencil.svg" alt="" class="pencil">
-          <h2 class="a-next-claro-subtitle">
+          <h2 class="a-next-claro-subtitle mb-0">
             Ve un <span>adelanto</span> de la programación
           </h2>
         </div>
@@ -182,13 +182,13 @@
     </section>
     <section class="dont-lose-claro">
       <div class="dont-lose-container">
-        <div class=" p-3 col-xl-6 col-md-6 col-8 border-t border-l border-r border-b position-relative mb-2">
+        <div class=" p-3 col-xl-6 col-md-6 col-8 mx-auto m-md-0 m-lg-0 m-xl-0 border-t border-l border-r border-b position-relative mb-2">
           <img src="../images/pencil.svg" alt="" class="pencil">
           <h1 class="a-dontLose-claro-title">TIENES QUE VERLO</h1>
         </div>
-        <div class=" p-3 col-8 col-md-5 col-xl-4 border-t border-l border-r border-b position-relative mb-2">
+        <div class="mb-3 p-3 col-8 col-md-5 col-xl-6 mx-auto m-md-0 m-lg-0 m-xl-0 border-l border-r border-b position-relative mb-2">
           <img src="../images/pencil.svg" alt="" class="pencil">
-          <h2 class="a-dontLose-claro-subtitle">
+          <h2 class="a-dontLose-claro-subtitle pb-0">
             <!-- ve un <span>adelanto</span> de la programación -->
             ¡No te lo puedes perder!
           </h2>
@@ -197,11 +197,11 @@
           <div class="section-slider" id="dontLose-claro-slider">
           </div>
           <div>
-            <div class="col-6  col-9 col-md-8 col-xl-7 border-t border-l border-r border-b position-relative mb-2">
+            <div class="col-6  col-9 col-md-8 col-xl-7 mx-auto m-md-0 m-lg-0 m-xl-0 border-t border-l border-r border-b position-relative mb-2">
               <img src="../images/pencil.svg" alt="" class="pencil">
               <h1 class="a-dontLose-claro-title">Contenido exclusivo</h1>
             </div>
-            <div class="col-9 col-md-9 col-xl-7 pt-3 border-t border-l border-r border-b position-relative mb-2">
+            <div class="mx-auto m-md-0 m-lg-0 m-xl-0 col-9 col-md-9 col-xl-7 pt-3 border-l border-r border-t border-b position-relative mb-2">
               <img src="../images/pencil.svg" alt="" class="pencil">
               <h2 class="a-dontLose-claro-subtitle">
                 <!-- ve un <span>adelanto</span> de la programación -->
@@ -271,7 +271,7 @@
   <?php
   include 'footer.php'
   ?>
- 
+
 </body>
 <?php
 include './views/partials/modal-favorites.php'
@@ -281,16 +281,17 @@ include './views/partials/modal-favorites.php'
 <?php
 include './views/partials/modal-program.php'
 ?>
- <script type="text/javascript" src="../js/lib/easyXDM.min.js"></script>
-  <script>
-    var socket = new easyXDM.Socket({
-      onReady: function() {
-        
-        var hey=4300;
-        console.log(hey);
+<script type="text/javascript" src="../js/lib/easyXDM.min.js"></script>
+<script>
+  var socket = new easyXDM.Socket({
+    onReady: function() {
 
-        socket.postMessage(hey)
-      }
-    });
-  </script>
+      var hey = 4300;
+      console.log(hey);
+
+      socket.postMessage(hey)
+    }
+  });
+</script>
+
 </html>
