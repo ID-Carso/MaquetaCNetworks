@@ -174,7 +174,7 @@ function getPrograms(date, country) {
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                       <div class="thumbnail-body" _id="${program.chapter_id}">
                           <div class="thumbnail">
-                              <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
+                              <img src="${program.image}" alt="">
                           </div>
                           <div class="a-claro-rectangle thumbnail-info-title">
                               <div class="poster-title-margin">
@@ -192,7 +192,7 @@ function getPrograms(date, country) {
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                       <div class="thumbnail-body" _id="${program.chapter_id}">
                           <div class="thumbnail">
-                              <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
+                              <img src="${program.image}" alt="">
                           </div>
                           <div class="a-claro-rectangle thumbnail-info-title">
                               <div class="poster-title-margin">
@@ -216,7 +216,7 @@ function getPrograms(date, country) {
 
                       <div class="thumbnail-body" _id="${program.chapter_id}">
                           <div class="thumbnail">
-                              <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
+                              <img src="${program.image}" alt="">
                           </div>
                           <div class="a-claro-rectangle thumbnail-info-title">
                               <div class="poster-title-margin">
@@ -239,7 +239,7 @@ function getPrograms(date, country) {
 
                       <div class="thumbnail-body" _id="${program.chapter_id}">
                           <div class="thumbnail">
-                              <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
+                              <img src="${program.image}" alt="">
                           </div>
                           <div class="a-claro-rectangle thumbnail-info-title">
                               <div class="poster-title-margin">
@@ -265,7 +265,7 @@ function getPrograms(date, country) {
                 <div class="schedule-poster">
                     <div class="poster">
                         <div class="thumbnail-prog" _id="${program.chapter_id}">
-                            <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
+                            <img src="${program.image}" alt="">
                         </div>
                     </div>
                 </div>
@@ -300,7 +300,7 @@ function getPrograms(date, country) {
                 <div class="schedule-poster">
                    <div class="poster">
                         <div class="thumbnail-prog" _id="${program.chapter_id}">
-                            <img src="./images/home/carrusel-ahora-en-vivo/${program.image}" alt="">
+                            <img src="${program.image}" alt="">
                         </div>
                     </div>
                 </div>
@@ -343,7 +343,7 @@ function getPrograms(date, country) {
                   <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                   <div class="thumbnail-body" _id="${program.chapter_id}">
                       <div class="thumbnail">
-                          <img src="./images/concert-channel/carrousel/${program.image}" alt="">
+                          <img src="${program.image}" alt="">
                       </div>
                       <div class="a-concert-rectangle thumbnail-info-title">
                           <div class="poster-title-margin">
@@ -361,7 +361,7 @@ function getPrograms(date, country) {
                 <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                 <div class="thumbnail-body" _id="${program.chapter_id}">
                     <div class="thumbnail">
-                        <img src="./images/concert-channel/carrousel/${program.image}" alt="">
+                        <img src="${program.image}" alt="">
                     </div>
                     <div class="a-concert-rectangle thumbnail-info-title">
                         <div class="poster-title-margin">
@@ -385,7 +385,7 @@ function getPrograms(date, country) {
 
                     <div class="thumbnail-body" _id="${program.chapter_id}">
                         <div class="thumbnail">
-                            <img src="./images/concert-channel/carrousel/${program.image}" alt="">
+                            <img src="${program.image}" alt="">
                         </div>
                         <div class="a-concert-rectangle thumbnail-info-title">
                             <div class="poster-title-margin">
@@ -407,7 +407,7 @@ function getPrograms(date, country) {
 
                 <div class="thumbnail-body" _id="${program.chapter_id}">
                     <div class="thumbnail">
-                        <img src="./images/concert-channel/carrousel/${program.image}" alt="">
+                        <img src="${program.image}" alt="">
                     </div>
                     <div class="a-concert-rectangle thumbnail-info-title">
                         <div class="poster-title-margin">
@@ -431,7 +431,7 @@ function getPrograms(date, country) {
                 <div class="schedule-poster">
                     <div class="poster">
                         <div class="thumbnail-prog" _id="${program.chapter_id}">
-                            <img src="./images/concert-channel/carrousel/${program.image}" alt="">
+                            <img src="${program.image}" alt="">
                         </div>
                     </div>
                 </div>
@@ -466,7 +466,7 @@ function getPrograms(date, country) {
                 <div class="schedule-poster">
                     <div class="poster">
                         <div class="thumbnail-prog" _id="${program.chapter_id}">
-                            <img src="./images/concert-channel/carrousel/${program.image}" alt="">
+                            <img src="${program.image}" alt="">
                         </div>
                     </div>
                 </div>
@@ -511,7 +511,7 @@ function getPrograms(date, country) {
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                       <div class="thumbnail-body" _id="${program.chapter_id}">
                           <div class="thumbnail">
-                              <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
+                              <img src="${program.image}" alt="">
                           </div>
                           <div class="a-cinema-rectangle thumbnail-info-title">
                               <div class="poster-title-margin">
@@ -531,7 +531,7 @@ function getPrograms(date, country) {
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                       <div class="thumbnail-body" _id="${program.chapter_id}">
                           <div class="thumbnail">
-                              <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
+                              <img src="${program.image}" alt="">
                           </div>
                           <div class="a-cinema-rectangle thumbnail-info-title">
                               <div class="poster-title-margin">
@@ -553,7 +553,7 @@ function getPrograms(date, country) {
                 <div class="schedule-poster">
                     <div class="poster">
                         <div class="thumbnail-prog" _id="${program.chapter_id}">
-                            <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
+                            <img src="${program.image}" alt="">
                         </div>
                     </div>
                 </div>
@@ -591,7 +591,7 @@ function getPrograms(date, country) {
 
                       <div class="thumbnail-body" _id="${program.chapter_id}">
                           <div class="thumbnail">
-                              <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
+                              <img src="${program.image}" alt="">
                           </div>
                           <div class="a-cinema-rectangle thumbnail-info-title">
                               <div class="poster-title-margin">
@@ -614,7 +614,7 @@ function getPrograms(date, country) {
             <div class="schedule-item-body">
                 <div class="schedule-poster">
                         <div class="thumbnail-prog" _id="${program.chapter_id}">
-                            <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
+                            <img src="${program.image}" alt="">
                         </div>
                     </div>
                 </div>
@@ -649,7 +649,7 @@ function getPrograms(date, country) {
               <div class="schedule-poster">
                   <div class="poster">
                       <div class="thumbnail-prog" _id="${program.chapter_id}">
-                          <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
+                          <img src="${program.image}" alt="">
                       </div>
                   </div>
               </div>
