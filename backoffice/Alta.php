@@ -21,7 +21,7 @@ session_start();
       <div class="col-xl-6 trans10 mx-auto title-altauser tamaño-alta1 ">
         <!--Inicio para tarjeta-->
         <img src="./images/equis.svg" alt="" class="equis shadow closeViewBO" />
-        <div class="pr-4 pl-4 pt-2 pb-2"><strong class=""> DATOS DEL USUARIO</strong></div>
+        <div class="pr-4 pl-4 pt-2 pb-2"><strong class=""> ALTA DE DATOS DE USUARIO</strong></div>
       </div>
       <div class="col-xl-6 trans10 shadow mx-auto tamaño-alta">
         <div class="col-xl-12 mx-auto px-3 pt-3">

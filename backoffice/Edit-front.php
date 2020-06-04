@@ -11,11 +11,15 @@
 <body class="scroll">
   <div id="edit-front">
     <!--Div para cambio-->
+    <div class="col-xl-12 trans10 mx-auto title-altauser tamaño-edi ">   
+        <div class="pr-4 pl-4 pt-2 pb-2"><strong class=""> EDITAR DATOS DE USUARIO DEL FRONT</strong></div>
+        <img src="./images/equis.svg" alt="" class="equis2 shadow closeViewFront">
+      </div>
     <div class="col-xl-7 trans10 mx-auto edit-userfront-content">
       <div class="container shadow tamaño ">
-        <img src="./images/equis.svg" alt="" class="equis2 shadow closeViewFront">
+        
         <div class="bg-white ">
-          <div class=" ml-3 pt-5 "><strong class="title-veruser a-text-bold-brownish"> DATOS DEL USUARIO</strong></div>
+        
           <div class=" col-xl-12 mx-auto mt-xl-1 ">
             <form>
               <input id="edit-front-input-username" class="insert-data a-text-medium-brownish mb-4 " type="text " value="" placeholder="" disabled></input>

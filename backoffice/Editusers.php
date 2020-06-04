@@ -17,13 +17,14 @@ session_start();
 <body>
   <div id="general">
     <!--Div para cambio-->
+    <div class="col-xl-12 trans10 mx-auto title-altauser tamaño-edi ">   
+        <div class="pr-4 pl-4 pt-2 pb-2"><strong class=""> EDITAR DATOS DE USUARIO</strong></div>
+    <img src="./images/equis.svg" alt="" class="equis1 shadow closeViewBO">
+      </div>
     <div class="col-xl-6 trans10 shadow mx-auto tamaño edit-userbo-content position-relative">
-      <img src="./images/equis.svg" alt="" class="equis1 shadow closeViewBO">
       <form class="no-gutters">
         <div class="col-xl-11 mx-auto">
-          <div class="title-edit mb-2 pt-5">
-            <strong class="title-veruser a-text-bold-brownish">DATOS DEL USUARIO</strong>
-          </div>
+          
           <input id="edit-input-username" class="insert-data a-text-medium-brownish mb-2" type="text " value="" placeholder="Nombre">
 
           </input>

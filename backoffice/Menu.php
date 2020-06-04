@@ -29,7 +29,7 @@ if (!isset($_SESSION["session"])) {
         ?>
         <div class="justify-content-center centro mx-auto position-title">
             <span class="text-titulo">PROGRAMACIÓN GENERAL <br> DEL </span>
-            <span class="text-titulo-rojo">1ERO DE OCTUBRE-1ERO DE NOVIEMBRE</span>
+            <span class="text-titulo-rojo">1ERO DE OCTUBRE - 1ERO DE NOVIEMBRE</span>
         </div>
         <div class=" mr-5 d-flex float-right position-zona">
             <button class="btn-zona zona">Zona horaria <img src="./images/paises/chile.svg" class="Icon_paises1" /></button>

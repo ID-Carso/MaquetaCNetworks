@@ -2106,8 +2106,8 @@
   height: 20px;
   border: 2px solid #979797;
   border-radius: 1em;
-  -webkit-transform: translate(-5px, -21px);
-          transform: translate(-5px, -21px);
+  -webkit-transform: translate(-10px, -14px);
+          transform: translate(-10px, -14px);
 }
 
 .edi {
