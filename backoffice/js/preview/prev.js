@@ -7,9 +7,7 @@ function previewPage(icon) {
   let prevMobileIcon = $("#prev-mobile");
   let prevTabletIcon = $("#prev-tablet");
   let prevDesktopIcon = $("#prev-desktop");
-  let h = pageContainer.css("height");
-  console.log("la altura" + h);
-
+  
   //MOBILE
   if (icon.is("#prev-mobile")) {
     prevMobileIcon.css("opacity", "1");
@@ -20,11 +18,7 @@ function previewPage(icon) {
     iframeHome.css("height", "4400px");
     iframeProgramacion.css("height", "8000px");
     iframeCanalClaro.css("height", "3600px");
-    /*if ((h = 4300)) {
-      pageContainer.css("max-height", "3450px");
-    } else if ((h = 16250)) {
-      pageContainer.css("max-height", "10600px");
-    }*/
+   
   }
   //TABLET
   else if (icon.is("#prev-tablet")) {
@@ -36,11 +30,7 @@ function previewPage(icon) {
     iframeHome.css("height", "5100px");
     iframeProgramacion.css("height", "12000px");
     iframeCanalClaro.css("height", "4300px");
-    /*if ((h = 4300)) {
-      pageContainer.css("max-height", "3980px");
-    } else if ((h = 16250)) {
-      pageContainer.css("max-height", "16000px");
-    }*/
+ 
   }
   //PC
   else {
@@ -52,11 +42,7 @@ function previewPage(icon) {
     iframeHome.css("height", "4900px");
     iframeProgramacion.css("height", "12000px");
     iframeCanalClaro.css("height", "4600px");
-    /*if ((h = 4300)) {
-      pageContainer.css("max-height", "4300px");
-    } else if ((h = 16250)) {
-      pageContainer.css("max-height", "16100px");
-    }*/
+   
   }
 }
 

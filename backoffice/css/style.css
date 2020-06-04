@@ -1569,7 +1569,7 @@
 }
 
 .mujer-estilo {
-  width: 60%;
+  width: 65%;
   height: 41px;
   border-radius: 22px 0 0 21.5px;
   border: solid 1px #666464;
@@ -1593,7 +1593,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 115%;
+  width: 127%;
 }
 
 .mujer-estilo1 {
@@ -1728,7 +1728,7 @@
 }
 
 .hombre-estilo {
-  width: 60%;
+  width: 65%;
   height: 41px;
   border-radius: 0 22px 22px 0;
   border: solid 1px #666464;
@@ -2030,14 +2030,12 @@
 .men {
   width: 18px;
   height: 19px;
-  margin-left: 2%;
+  margin-left: 4%;
 }
 
 .women {
   width: 25px;
   height: 20px;
-  margin-left: -5%;
-  padding-left: 7px;
 }
 
 .aprove-icon {

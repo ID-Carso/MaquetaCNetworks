@@ -9,7 +9,7 @@
 
 <body class="scroll">
     <div id="visual-front">
-    <div class="col-xl-12 trans10 mx-auto title-altauser tamaño-edi ">   
+    <div class="col-xl-7 trans10 mx-auto title-altauser tamaño-edi ">   
         <div class="pr-4 pl-4 pt-2 pb-2"><strong class=""> VISUALIZAR DATOS DE USUARIO DEL FRONT</strong></div>
         <img src="./images/equis.svg" alt="" class="equis2  shadow closeViewFront">
       </div>

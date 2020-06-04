@@ -470,7 +470,7 @@ function getUser(id) {
         $("#cambio").load("VisualUser.php", function () {
           let rol = changeNameRol(json.data.rol.id);
           $("#usuarios").html(`
-          <div class="col-xl-12 trans10 mx-auto title-altauser tamaño-edi ">   
+          <div class="col-xl-7 trans10 mx-auto title-altauser tamaño-edi ">   
         <div class="pr-4 pl-4 pt-2 pb-2"><strong class=""> VISUALIZAR DATOS DE USUARIO</strong></div>
         <img src="./images/equis.svg" alt="" class="equis2 shadow closeViewBO">
       </div>

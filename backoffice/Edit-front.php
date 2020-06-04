@@ -11,7 +11,7 @@
 <body class="scroll">
   <div id="edit-front">
     <!--Div para cambio-->
-    <div class="col-xl-12 trans10 mx-auto title-altauser tamaño-edi ">   
+    <div class="col-xl-7 trans10 mx-auto title-altauser tamaño-edi ">   
         <div class="pr-4 pl-4 pt-2 pb-2"><strong class=""> EDITAR DATOS DE USUARIO DEL FRONT</strong></div>
         <img src="./images/equis.svg" alt="" class="equis2 shadow closeViewFront">
       </div>
@@ -38,15 +38,15 @@
 
               <div class="d-flex align-items-center mb-4 mx-auto mt-2 ">
                 <div class="col-xl-4 margin-sex1 ">
-                  <p class="margin-front text-small a-text-medium-brownish">Sexo</p>
+                  <p class="margin-front text-small a-text-medium-brownish ml-3">Sexo</p>
                   <form action="" name="formilariosexo" id="formulariosexo" class="formulario">
                     <div class="sexo text-small a-text-medium-brownish">
                       <input type="radio" name="sexo" id="mujer" checked />
                       <label for="mujer" id="mujerestado" class="mujer-estilo d-flex align-items-center">
-                        <img id="women" src="./images/datos-adicionales/femenino-activo.svg" class="women " />
+                        <img id="women" src="./images/datos-adicionales/femenino-activo.svg" class="women ml-1 " />
                         <span class="">Femenino</span></label>
                       <input type="radio" name="sexo" id="hombre" />
-                      <label for="hombre" id="hombreestado" class="hombre-estilo">
+                      <label for="hombre" id="hombreestado" class="hombre-estilo pl-2">
                         <span>Masculino</span>
                         <img id="men" src="./images/datos-adicionales/masculino-inactivo.svg" class="men" /></label>
                     </div>
@@ -54,10 +54,10 @@
                 </div>
 
                 <div class="col-xl-4 ml-4" id="drop-paises">
-                  <p class="margin-front text-small a-text-medium-brownish">País de residencia</p>
+                  <p class="margin-front text-small a-text-medium-brownish ml-3">País de residencia</p>
 
                   <input type="checkbox" id="selectPais" class="texto-general" />
-                  <label for="selectPais" id="select-Pais" class="ml3">
+                  <label for="selectPais" id="select-Pais" class="ml-2">
                     <p class="SeleccionPaisLista text-small a-text-medium-brownish">
                       <img src="" class="Icon_paises" />Selecciona tu país
                     </p>
