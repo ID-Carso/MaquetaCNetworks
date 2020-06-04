@@ -53,7 +53,7 @@
                   </form>
                 </div>
 
-                <div class="col-xl-4" id="drop-paises">
+                <div class="col-xl-4 ml-4" id="drop-paises">
                   <p class="margin-front text-small a-text-medium-brownish">País de residencia</p>
 
                   <input type="checkbox" id="selectPais" class="texto-general" />
@@ -550,7 +550,7 @@
                       </label>
                     </div>
                   </div>
-                  <p class="mb-0 a-text-medium-black" id="error_birthday">Error</p>
+                 <!-- <p class="mb-0 a-text-medium-black" id="error_birthday">Error</p>-->
                 </div>
               </div>
 

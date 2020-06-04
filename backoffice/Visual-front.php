@@ -41,7 +41,7 @@
                             </div>
 
                             <div class="col-xl-4 section-pais texto-general">
-                                <p class="texto-general">País de recidencia </p>
+                                <p class="texto-general">País de residencia </p>
 
                             </div>
                             <div class="col-xl-5 margin-fecha1 texto-general">
