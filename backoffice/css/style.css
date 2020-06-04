@@ -3831,6 +3831,11 @@ input[type="radio"]:checked + .no-estilo1 {
   height: 39px;
 }
 
+.tamaño-edi {
+  width: 676px;
+  height: 39px;
+}
+
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../fonts/Montserrat-Light/Montserrat-Light.eot);
