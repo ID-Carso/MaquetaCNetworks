@@ -744,6 +744,18 @@
   font-size: 14px;
 }
 
+.a-text-green {
+  font-family: "Montserrat-Medium";
+  color: #15b643;
+  font-size: 14px;
+}
+
+.a-text-red {
+  font-family: "Montserrat-Medium";
+  color: #da291c;
+  font-size: 14px;
+}
+
 .registro {
   font-family: "Montserrat-SemiBold";
   font-size: 24px;
@@ -2363,7 +2375,21 @@ input[type="radio"]:checked + .no-estilo1 {
   background-color: white;
 }
 
+.checkmark2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 38px;
+  width: 38px;
+  border: 3px solid #adafae;
+  background-color: white;
+}
+
 .checksquare input:checked ~ .checkmark1 {
+  background-color: white;
+}
+
+.checksquare input:checked ~ .checkmark2 {
   background-color: white;
 }
 
@@ -2373,7 +2399,17 @@ input[type="radio"]:checked + .no-estilo1 {
   display: none;
 }
 
+.checkmark2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
 .checksquare input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+.checksquare input:checked ~ .checkmark2:after {
   display: block;
 }
 
@@ -2383,6 +2419,17 @@ input[type="radio"]:checked + .no-estilo1 {
   width: 12px;
   height: 26px;
   border: solid #009245;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checksquare .checkmark2:after {
+  left: 12px;
+  top: 0px;
+  width: 12px;
+  height: 26px;
+  border: solid #da291c;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -3552,6 +3599,18 @@ input[type="radio"]:checked + .no-estilo1 {
   font-size: 14px;
 }
 
+.a-text-green {
+  font-family: "Montserrat-Medium";
+  color: #15b643;
+  font-size: 14px;
+}
+
+.a-text-red {
+  font-family: "Montserrat-Medium";
+  color: #da291c;
+  font-size: 14px;
+}
+
 .registro {
   font-family: "Montserrat-SemiBold";
   font-size: 24px;
@@ -3692,6 +3751,14 @@ input[type="radio"]:checked + .no-estilo1 {
 .shadow {
   -webkit-box-shadow: rgba(0, 0, 0, 0.5) -1px -1px 17px 9px;
           box-shadow: rgba(0, 0, 0, 0.5) -1px -1px 17px 9px;
+}
+
+.border-green {
+  border: 3px solid #15b643;
+}
+
+.border-red {
+  border: 3px solid #da291c;
 }
 
 @font-face {

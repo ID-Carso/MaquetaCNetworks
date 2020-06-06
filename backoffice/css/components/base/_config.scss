@@ -64,3 +64,9 @@ $fontpaises: 16px;
 .shadow{
   box-shadow:rgba(0, 0, 0, 0.5) -1px -1px 17px 9px;
 }
+.border-green{
+  border: 3px solid $green;
+}
+.border-red{
+  border: 3px solid $selecred;
+} 

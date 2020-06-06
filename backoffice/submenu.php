@@ -105,7 +105,18 @@
             <div class="centro">
                 <div class="navbar-progra-content navbar-prev-canal-claro mb-5" id="navbar-prev-canal-claro">
                     <p>Canal Claro</p>
-
+                    <div class="float-left ml-5 mb-5 ">
+                <div> <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare" style="vertical-align: middle;">
+                            <input type="checkbox">
+                            <span class="checkmark1 border-green"></span>
+                        </label><span class=" ml-2 a-text-green mr-4">Guardar cambios</span>
+                        <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare" style="vertical-align: middle;">
+                            <input type="checkbox">
+                            <span class="checkmark2  border-red"></span>
+                        </label><span class=" ml-2 a-text-red">No guardar cambios</span>
+                </div>
+            </div>
+            <div class="clearfix"></div>
 
                 </div>
             </div>
@@ -225,6 +236,18 @@
             <div class="centro ">
                 <div class="navbar-progra-content mb-5 navbar-prev-programacion" id="navbar-prev-programacion">
                     <p>Programación</p>
+                    <div class="float-left ml-5 mb-5 ">
+                <div> <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare" style="vertical-align: middle;">
+                            <input type="checkbox">
+                            <span class="checkmark1 border-green"></span>
+                        </label><span class=" ml-2 a-text-green mr-4">Guardar cambios</span>
+                        <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare" style="vertical-align: middle;">
+                            <input type="checkbox">
+                            <span class="checkmark2  border-red"></span>
+                        </label><span class=" ml-2 a-text-red">No guardar cambios</span>
+                </div>
+            </div>
+            <div class="clearfix"></div>
 
                 </div>
             </div>
@@ -232,6 +255,18 @@
                 <div class="navbar-progra-content mb-5" id="navbar-prev-home">
 
                     <p>Home</p>
+                    <div class="float-left ml-5 mb-5 ">
+                <div> <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare" style="vertical-align: middle;">
+                            <input type="checkbox">
+                            <span class="checkmark1 border-green"></span>
+                        </label><span class=" ml-2 a-text-green mr-4">Guardar cambios</span>
+                        <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare" style="vertical-align: middle;">
+                            <input type="checkbox">
+                            <span class="checkmark2  border-red"></span>
+                        </label><span class=" ml-2 a-text-red">No guardar cambios</span>
+                </div>
+            </div>
+            <div class="clearfix"></div>
 
                 </div>
 
