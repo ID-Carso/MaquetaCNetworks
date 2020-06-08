@@ -23,6 +23,15 @@
       </div>
       <div class="d-flex justify-content-center"> 
              <label for=""class="text-small a-text-medium-dark2">Fecha Inicial</label>
+             <div> <label class="  checksquare" style="vertical-align: middle;">
+                            <input type="text">
+                            <span class="checkmark1 border-green"></span>
+                        </label>
+                        <label class=" checksquare" style="vertical-align: middle;">
+                            <input type="text">
+                            <span class="checkmark2  border-red"></span>
+</label>
+                </div>
             <label for="" class="text-small a-text-medium-dark2">Fecha Final</label>
       </div>
       <h4 class="h3 text-lan">HAZ UN COMENTARIO</h4>

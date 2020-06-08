@@ -1608,6 +1608,16 @@
   width: 127%;
 }
 
+.prev {
+  height: 48px;
+  border-radius: 22px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150%;
+}
+
 .mujer-estilo1 {
   width: 100%;
   width: 135px;
@@ -2640,7 +2650,7 @@ input[type="radio"]:checked + .no-estilo1 {
 }
 
 .margin-top-por {
-  margin-top: 2%;
+  margin-top: 4%;
   margin-bottom: 2%;
 }
 
@@ -2852,6 +2862,11 @@ input[type="radio"]:checked + .no-estilo1 {
 
 .pt7 {
   padding-top: 7%;
+}
+
+.location {
+  margin-left: -150%;
+  margin-bottom: -28%;
 }
 
 @font-face {

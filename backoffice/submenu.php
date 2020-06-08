@@ -5,9 +5,9 @@
     <?php
     include 'scripts.php';
     include  'styles.php';
-
     ?>
     <script type="text/javascript" src="../js/lib/easyXDM.min.js"></script>
+    <script src="./js/admin.js" defer></script>
     <script>
         new easyXDM.Socket({
             remote: "./prev/claro-canal.php",
@@ -53,14 +53,28 @@
     <main>
 
         <div id="menu">
-            <div class="float-right mr-5 margin-top-por">
+            <div class="float-right  margin-top-por">
 
-                <div>
+            <form action="" name="formilariosexo" id="formulariosexo" class="formulario">
+                    <div class="prev text-small a-text-medium-brownish location">
+                      <input type="radio" name="sexo" id="edit" checked />
+                      <label for="edit" id="editar" class="mujer-estilo d-flex align-items-center pl-4 pt-3">
+                        <p class="a-text-black-semibold a-prev-title">EDITAR</p></label>
+                      <input type="radio" name="sexo" id="prev" />
+                      <label for="prev" id="previsualiza" class="hombre-estilo pl-2 pt-3">
+                      <p class="a-text-black-semibold a-prev-title ">PREVISUALIZAR</p></label>
+                    </div>
+                  </form>
+                <div class="pt-2">
                     <img src="./images/mobile.svg" class="a-prev-image ml-3 mr-3" alt="mobile" id="prev-mobile">
                     <img src="./images/tablet.svg" class="a-prev-image" alt="tablet" id="prev-tablet">
                     <img src="./images/pc.svg" class="a-prev-image ml-3" alt="pc" id="prev-desktop">
                 </div>
-                <p class="a-text-black-semibold a-prev-title prev">PREVISUALIZAR</p>
+            
+                
+                 
+                
+              
             </div>
             <div class="clearfix"></div>
             <nav class="d-flex col-xl-11 navbar-expand-sm justify-content-center mb-5" id="option">
@@ -105,7 +119,7 @@
             <div class="centro">
                 <div class="navbar-progra-content navbar-prev-canal-claro mb-5" id="navbar-prev-canal-claro">
                     <p>Canal Claro</p>
-                    <div class="float-left ml-5 mb-5 ">
+                    <div class="float-left pl-3 mb-5 " style="margin-left: 7%;">
                 <div> <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare" style="vertical-align: middle;">
                             <input type="checkbox">
                             <span class="checkmark1 border-green"></span>
@@ -122,7 +136,7 @@
             </div>
             <div class="navbar-progra-content navbar-sinopsis" id="navbar-prev-sinopsis">
                 <div id="prev-sinopsis">
-                    <div class="float-left ml-5">
+                <div class="float-left pl-3 mb-5 " style="margin-left: 7%;">
                         <div><input type="radio" id="1" value="" disabled /> <label for="1" class="a-btn-check"></label><span class=" ml-2 a-text-grey">Guardar cambios</span>
                             <input type="radio" id="2" value="" disabled /> <label for="2" class="ml-5 a-btn-check"></label><span class=" ml-2 a-text-grey">No guardar cambios</span>
                         </div>
@@ -236,7 +250,7 @@
             <div class="centro ">
                 <div class="navbar-progra-content mb-5 navbar-prev-programacion" id="navbar-prev-programacion">
                     <p>Programación</p>
-                    <div class="float-left ml-5 mb-5 ">
+                    <div class="float-left pl-3 mb-5 " style="margin-left: 7%;">
                 <div> <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare" style="vertical-align: middle;">
                             <input type="checkbox">
                             <span class="checkmark1 border-green"></span>
@@ -255,7 +269,7 @@
                 <div class="navbar-progra-content mb-5" id="navbar-prev-home">
 
                     <p>Home</p>
-                    <div class="float-left ml-5 mb-5 ">
+                    <div class="float-left pl-3 mb-5 " style="margin-left: 7%;">
                 <div> <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare" style="vertical-align: middle;">
                             <input type="checkbox">
                             <span class="checkmark1 border-green"></span>

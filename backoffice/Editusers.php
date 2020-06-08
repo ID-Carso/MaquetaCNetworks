@@ -18,7 +18,7 @@ session_start();
   <div id="general">
     <!--Div para cambio-->
     <div class="col-xl-6 trans10 mx-auto title-altauser tamaño-edi ">   
-        <div class="pr-4 pl-4 pt-2 pb-2"><strong class=""> EDITAR DATOS DE USUARIO</strong></div>
+        <div class="pr-4 pl-4  pt-2 pb-2"><strong class=""> EDITAR DATOS DE USUARIO</strong></div>
     <img src="./images/equis.svg" alt="" class="equis1 shadow closeViewBO">
       </div>
     <div class="col-xl-6 trans10 shadow mx-auto tamaño edit-userbo-content position-relative">

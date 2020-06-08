@@ -12,7 +12,7 @@
   <div id="edit-front">
     <!--Div para cambio-->
     <div class="col-xl-7 trans10 mx-auto title-altauser tamaño-edi ">   
-        <div class="pr-4 pl-4 pt-2 pb-2"><strong class=""> EDITAR DATOS DE USUARIO DEL FRONT</strong></div>
+        <div class="pr-4 pl-3 pt-2 pb-2"><strong class=""> EDITAR DATOS DE USUARIO DEL FRONT</strong></div>
         <img src="./images/equis.svg" alt="" class="equis2 shadow closeViewFront">
       </div>
     <div class="col-xl-7 trans10 mx-auto edit-userfront-content">
