@@ -501,6 +501,7 @@ export default class Slider {
           <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
         </div>`;
       });
+
       bannerClaroCanal.html(slideBanner);
       bannerClaroCinema.html(slideBannerClaroCinema);
       bannerConcertChannel.html(slideBannerConcertChannel);
@@ -536,22 +537,22 @@ export default class Slider {
             <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10">
           </div>`;
         });
+        slideBannerClaroCinema = "";
         imagesBannerClaroCinema.forEach(function (image) {
-          slideBannerClaroCinema = "";
           slideBannerClaroCinema += `        
           <div class="header-slide">
             <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10">
           </div>`;
         });
+        slideBannerConcertChannel = "";
         imagesBannerConcertChannel.forEach(function (image) {
-          slideBannerConcertChannel = "";
           slideBannerConcertChannel += `        
           <div class="header-slide">
             <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10">
           </div>`;
         });
+        slideBannerProgramming = "";
         imagesBannerProgramming.forEach(function (image) {
-          slideBannerProgramming = "";
           slideBannerProgramming += `        
           <div class="header-slide">
             <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
@@ -571,21 +572,21 @@ export default class Slider {
             <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
           </div>`;
         });
+        slideBannerClaroCinema = "";
         imagesBannerClaroCinema.forEach(function (image) {
-          slideBannerClaroCinema = "";
           slideBannerClaroCinema += `        
           <div class="header-slide">
             <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
           </div>`;
         });
+        slideBannerConcertChannel = "";
         imagesBannerConcertChannel.forEach(function (image) {
-          slideBannerConcertChannel = "";
           slideBannerConcertChannel += `        
           <div class="header-slide">
             <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
           </div>`;
         });
-
+        slideBannerProgramming = "";
         imagesBannerProgramming.forEach(function (image) {
           slideBannerProgramming += `        
           <div class="header-slide">
