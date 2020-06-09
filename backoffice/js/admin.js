@@ -288,7 +288,7 @@ $(document).ready(function () {
   });
 
   //previsualizar-editar
-  
+
   $("#edit").click(function () {
     if ($('input[id="edit"]').is(":checked")) {
       $("#navbar-prev-canal-claro").html(` <script>
@@ -308,8 +308,8 @@ $(document).ready(function () {
   });
   $("#prev").click(function () {
     if ($('input[id="prev"]').is(":checked")) {
-    alert("cambio2");
-    $("#navbar-prev-canal-claro").html(` <script>
+      alert("cambio2");
+      $("#navbar-prev-canal-claro").html(` <script>
     new easyXDM.Socket({
         remote: "./prev/programacion.php",
         container: "navbar-prev-canal-claro",
@@ -318,7 +318,6 @@ $(document).ready(function () {
             this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
             this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
             this.container.getElementsByTagName("iframe")[0].style.boxShadow = "rgba(0, 0, 0, 0.5) -1px -1px 17px 9px";
-
         }
     });
 </script>`);
@@ -353,67 +352,64 @@ $(".arrow-right").click(function () {
 $(".arrow-left").click(function () {
   $("#option").carousel("next");
 });
- /**
-  * 
-  * METODOS PARA SUBIR PROGRAMACION
-  */
+/**
+ *
+ * METODOS PARA SUBIR PROGRAMACION
+ */
 
+/**
+ * Obtener el archivo subido
+ */
+
+$("#inp_programing").on("change", function () {
   /**
-   * Obtener el archivo subido
+   * JS hace dos cambios en el submit, por lo que se hacen dos llamados a esta funcion
+   * esto para no caursar poroblemas mayores se manda a null e value del form
+   * saldra un error de Jquery ignorar -> TypeError: "this.files[0] is undefined"
    */
+  try {
+    var file = this.files[0];
+    var filename = this.files[0].name;
 
-  $('#inp_programing').on('change', function(){
-    /**
-     * JS hace dos cambios en el submit, por lo que se hacen dos llamados a esta funcion
-     * esto para no caursar poroblemas mayores se manda a null e value del form 
-     * saldra un error de Jquery ignorar -> TypeError: "this.files[0] is undefined"
-     */
-    try {
-      var file=this.files[0];
-      var filename=this.files[0].name;
-      
-      if(filename != null){
-        var splName= filename.split('.');
-        var fileFormat =splName[splName.length -1];
-        if(fileFormat != 'xlsx' && fileFormat != 'xls'){
-          alert('formato invalido, por favor sube un excel');
-        }
-        else{
-          sendFilePHP(file);
-        }
-       
+    if (filename != null) {
+      var splName = filename.split(".");
+      var fileFormat = splName[splName.length - 1];
+      if (fileFormat != "xlsx" && fileFormat != "xls") {
+        alert("formato invalido, por favor sube un excel");
+      } else {
+        sendFilePHP(file);
       }
-    } catch (error) {
-      console.log(error);
     }
-    this.value=null;//aqui para evitar que se hagan registros dobles
+  } catch (error) {
+    console.log(error);
+  }
+  this.value = null; //aqui para evitar que se hagan registros dobles
+});
 
+/**
+ * Eviar archivo mediante ajax a un "controlador" php
+ */
+
+function sendFilePHP(file) {
+  console.log("enviando a php");
+  //creamos un dato de formulario para pasarlo en el ajax
+  let data = new FormData();
+  data.append("file", file);
+  //Realizamos el ajax
+  $.ajax({
+    type: "POST",
+    data: data,
+    processData: false, //esto es para poder pasar el archivo
+    contentType: false, //esto es para poder pasar el archivo
+    url: "./adapters/C_programing.php",
+    success: function (result) {
+      //var programas = JSON.parse(result);
+      console.log("php responde:");
+      //console.log(programas);
+
+      $("#programacion").replaceWith(result);
+    },
+  }).fail(function (e) {
+    console.log(e);
   });
-
-  /**
-   * Eviar archivo mediante ajax a un "controlador" php
-   */
-
-   function sendFilePHP(file){
-     console.log("enviando a php");
-    //creamos un dato de formulario para pasarlo en el ajax
-    let data = new FormData();
-    data.append('file',file);
-    //Realizamos el ajax
-    $.ajax({
-      type: "POST",
-      data: data,
-      processData: false,//esto es para poder pasar el archivo
-      contentType: false,//esto es para poder pasar el archivo
-      url: "./adapters/C_programing.php",
-      success: function (result) {
-        //var programas = JSON.parse(result);
-        console.log('php responde:');
-        //console.log(programas);
-       
-        $("#programacion").replaceWith(result);
-      },
-    }).fail(function(e) {
-      console.log( e );
-    });
-   }
+}
