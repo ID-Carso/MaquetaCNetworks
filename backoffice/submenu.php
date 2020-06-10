@@ -59,10 +59,10 @@
                     <div class="prev text-small a-text-medium-brownish location">
                       <input type="radio" name="sexo" id="edit" checked />
                       <label for="edit" id="editar" class="mujer-estilo d-flex align-items-center pl-4 pt-3">
-                        <p class="a-text-black-semibold a-prev-title">EDITAR</p></label>
+                        <p class=" a-prev-title">EDITAR</p></label>
                       <input type="radio" name="sexo" id="prev" />
                       <label for="prev" id="previsualiza" class="hombre-estilo pl-2 pt-3">
-                      <p class="a-text-black-semibold a-prev-title ">PREVISUALIZAR</p></label>
+                      <p class=" a-prev-title ">PREVISUALIZAR</p></label>
                     </div>
                   </form>
                 <div class="pt-2">
