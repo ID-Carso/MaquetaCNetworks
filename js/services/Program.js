@@ -304,7 +304,6 @@ function getPrograms(date, country) {
                         </div>
                     </div>
                 </div>
-
                 <div class="schedule-details">
                     <div class="schedule-details-header">
                         <div>
@@ -329,7 +328,6 @@ function getPrograms(date, country) {
         }
 
         claroCotentProgramacionGeneral.append(programCanalClaro);
-
         /* END PROGRAMACIÓN GENERAL - CANAL CLARO*/
       });
 
@@ -455,7 +453,6 @@ function getPrograms(date, country) {
                     </p>
                 </div>
             </div>
-
         </div>
             `;
         } else {
@@ -496,7 +493,6 @@ function getPrograms(date, country) {
         }
 
         concertContentProgramacionGeneral.append(programConcertChannel);
-
         /* END PROGRAMACIÓN GENERAL - CONCERT CHANNEL*/
       });
 
@@ -720,9 +716,7 @@ function getPrograms(date, country) {
               </div>
           </a>
       </div>
-
   </div>
-
   <div class="poster">
       <div class="poster-body">
           <div class="showtime-container justify-content-between">
@@ -760,7 +754,6 @@ function getPrograms(date, country) {
               </div>
           </a>
       </div>
-
   </div>
 
   <div class="poster">
@@ -799,7 +792,6 @@ function getPrograms(date, country) {
               </div>
           </a>
       </div>
-
   </div>
   <div class="poster">
       <div class="poster-body">
@@ -1138,7 +1130,6 @@ function getPrograms(date, country) {
               </div>
           </a>
       </div>
-
   </div>
       `;*/
       createTvSlider(nowSliderCanalClaro);
