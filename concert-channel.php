@@ -298,7 +298,7 @@
         <div class="">
             <div class="row no-gutters">
                 <div class="col-10 mx-auto">
-                    <h1 class="footer-title">¡sígue a <br>concert channel!</h1>
+                    <h1 class="footer-title">¡síguenos!</h1>
                 </div>
             </div>
             <div class="social-media">
