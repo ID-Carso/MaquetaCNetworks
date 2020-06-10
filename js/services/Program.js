@@ -99,12 +99,13 @@ function getPrograms(date, country) {
     date,
     country,
   };
-
+  //NORMAL
   let nowSliderCanalClaro = $(".today-claro-slider");
   let nowSliderConcertChannel = $(".today-concert-channel-slider");
   let nowSliderClaroCinema = $(".today-claro-cinema-slider");
   let nowSliderNuestraVision = $("#tv-vision-slider");
   let nowSliderClaroSports = $("#tv-sports-slider");
+
   let claroCotentProgramacionGeneral = $(".claro-content");
   let concertContentProgramacionGeneral = $(".concert-content");
   let cinemaContentProgramacionGeneral = $(".cinema-content");
@@ -915,9 +916,9 @@ function getPrograms(date, country) {
               </div>
           </a>
       </div>
-
   </div>
       `;
+
       /*programingNuestraVision.forEach((program, index) => {
         if (index == 0) {
           programNuestraVision = `
