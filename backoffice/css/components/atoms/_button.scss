@@ -802,6 +802,10 @@
   background-color: $teal;
   border: 1px solid $teal;
 }
+.a-btn-border-teal {
+  background-color: $white;
+  border: 1px solid $teal;
+}
 .a-btn-grey {
   background-color: $pinkish-grey;
   border: 1px solid $pinkish-grey;
@@ -848,4 +852,9 @@
 }
 .active-apro{
   background: $dark;
+}
+.a-btn-general-modal{
+  width: 233px;
+  height: 56px;
+  border-radius:3em ;
 }

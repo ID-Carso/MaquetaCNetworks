@@ -7,6 +7,7 @@
 </head>
 
 <body>
+    <div id="prev-sinopsis">
     <header class="synopsis-header">
         <div class="hamburguer-menu">
             <div class="text-center sidebar-header">
@@ -199,6 +200,7 @@
     <?php
     include './views/partials/modal-program.php'
     ?>
+    </div>
 </body>
 
 </html>

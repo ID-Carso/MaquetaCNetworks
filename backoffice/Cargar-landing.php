@@ -12,9 +12,7 @@
 </head>
 <body>
 <main>
-    <?php
-    include 'Menu.php';
-    ?>
+   
     <div id="carga-exitosa">
     <div class="float-right mr-5 mb-5">
                     
@@ -57,7 +55,7 @@
             </div>
         </div>  
         <div class="centro mb-5">
-             <label class="a-btn-general pt-2 mr-5 a-btn-teal text-sucess" value="">Mandar a aprobación</label>
+             <label class="a-btn-general pt-2 mr-5 a-btn-teal text-sucess" value="" id="viewapro">Mandar a aprobación</label>
              <label  class="a-btn-general  pt-2 a-btn-grey a-text-grey" value="">Revisar nuevamente</label>
         </div>          
 
@@ -68,4 +66,7 @@
     </div>
 </main>
 </body>
+<?php 
+include 'modal.php'
+?>
 </html>

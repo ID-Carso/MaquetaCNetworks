@@ -137,11 +137,17 @@
             <div class="navbar-progra-content navbar-sinopsis" id="navbar-prev-sinopsis">
                 <div id="prev-sinopsis">
                 <div class="float-left pl-3 mb-5 " style="margin-left: 7%;">
-                        <div><input type="radio" id="1" value="" disabled /> <label for="1" class="a-btn-check"></label><span class=" ml-2 a-text-grey">Guardar cambios</span>
-                            <input type="radio" id="2" value="" disabled /> <label for="2" class="ml-5 a-btn-check"></label><span class=" ml-2 a-text-grey">No guardar cambios</span>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
+                <div> <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare" style="vertical-align: middle;">
+                            <input type="checkbox" id="sino-save" >
+                            <span class="checkmark1 border-green"></span>
+                        </label><span class=" ml-2 a-text-green mr-4">Guardar cambios</span>
+                        <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare" style="vertical-align: middle;">
+                            <input type="checkbox" id="sinounsave" >
+                            <span class="checkmark2  border-red"></span>
+                        </label><span class=" ml-2 a-text-red">No guardar cambios</span>
+                </div>
+            </div>
+            <div class="clearfix"></div>
                     <div class="mx-auto shadow mt-5  mb-5 content-table">
                         <div class="contenedor-fila">
                             <div class="contenedor-columna centro program titletable">
@@ -165,7 +171,7 @@
                                 <span class="a-text-medium-black text-normal ">Canal Claro</span>
                             </div>
                             <div class="contenedor-columna centro">
-                                <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi "></input>
+                                <input type="image" src="./images/lapiz-acti.svg" alt="" class=" btn-focus edi" onClick="watchsinopsis()"></input>
                             </div>
                             <div class="contenedor-columna centro ">
                                 <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare">
@@ -271,7 +277,7 @@
                     <p>Home</p>
                     <div class="float-left pl-3 mb-5 " style="margin-left: 7%;">
                 <div> <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare" style="vertical-align: middle;">
-                            <input type="checkbox">
+                            <input type="checkbox" id="viewcarga">
                             <span class="checkmark1 border-green"></span>
                         </label><span class=" ml-2 a-text-green mr-4">Guardar cambios</span>
                         <label class=" d-inline-block mr-4 pl-4 mb-5 mt-3 checksquare" style="vertical-align: middle;">
@@ -289,7 +295,25 @@
         </div>
 
     </main>
+   
 
 </body>
+<div class="modal show modal-delete-user" id="savesino" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content align-item-center centro  modal-save">
+      <div class="modal-body ">
+      <img src="./images/bien.svg" alt="aprovado" class="m-3">
+      <h3 class="h3 a-text-medium-brownish mt-3 mb-3">Fueron guardados los cambios en la sinópsis de:</h3>    
+      <div class="d-flex justify-content-center mb-5">    
+             <label for=""class="h3 a-text-bold-brownish">Mad Men</label>             
+      </div>   
+      <div class="d-flex justify-content-center mb-5">
+      <button type="button" class="a-btn-border-teal  a-btn-general-modal text-no  mr-5 btn-focus" id="back-list"  data-dismiss="modal">VOLVER AL LISTADO</button>
 
+        <button type="button" class="a-btn-teal  a-btn-general-modal text-si  btn-focus" id="modal-button"  data-dismiss="modal">SIGUIENTE SINÓPSIS</button>
+
+      </div>
+    </div>
+  </div>
+</div>
 </html>

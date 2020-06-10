@@ -8,10 +8,10 @@
     include 'scripts.php';
    include 'styles.php';
    ?>
-  <script src="./js/admin.js" defer></script>
+ 
 </head>
 <body>
-<div class="modal show modal-delete-user" id="savechangecinema" role="dialog">
+<div class="modal show modal-delete-user" id="savechange" role="dialog">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content align-item-center centro  modaltam">
       <div class="modal-body ">
@@ -22,26 +22,35 @@
         <button class="btn-apro-sin active-apro "><span class="text-small a-text-semibold-white">Aprobar con vigencia</span></button>
       </div>
       <div class="d-flex justify-content-center"> 
+        <div>
              <label for=""class="text-small a-text-medium-dark2">Fecha Inicial</label>
-             <div> <label class="  checksquare" style="vertical-align: middle;">
-                            <input type="text">
-                            <span class="checkmark1 border-green"></span>
-                        </label>
-                        <label class=" checksquare" style="vertical-align: middle;">
-                            <input type="text">
-                            <span class="checkmark2  border-red"></span>
-</label>
+             <div>    
+                        <label class="prueba-check ml-3"><input type="text"></label>
+                        <label class="prueba-check ml-3"> <input type="text" ></label>
+                        <label class="prueba-check ml-3"> <input type="text"></label>
+                        <label class="prueba-check ml-3"> <input type="text"></label>
                 </div>
+         </div>
+         <div class="ml-5">
             <label for="" class="text-small a-text-medium-dark2">Fecha Final</label>
+            <div>    
+                        <label class="prueba-check ml-3"><input type="text"></label>
+                        <label class="prueba-check ml-3"> <input type="text" ></label>
+                        <label class="prueba-check ml-3"> <input type="text"></label>
+                        <label class="prueba-check ml-3"> <input type="text"></label>
+                </div>
+            </div>
       </div>
-      <h4 class="h3 text-lan">HAZ UN COMENTARIO</h4>
-      <div class="d-flex justify-content-center">z          
+      <h4 class="h3 col-xl-4 ml-4 mt-4 text-lan">HAZ UN COMENTARIO</h4>
+      <div class="col-xl-3">        
            <label for="textoptional"class="text-small a-text-regular-black">*Opcional</label>
-           <textarea name="" id="textoptional" cols="30" rows="10"></textarea>
+      </div>
+      <div class="col-xl-11  mt-2 ml-3 pl-5 mb-4">
+      <textarea name="" id="textoptional" cols="90" rows="5" style="border:2px solid gray;"></textarea>
       </div>
       </div>
-      <div class="d-flex justify-content-center">
-        <button type="button" class="btn-si text-si modal-delete-button-confirm" id="modal-button">Continuar</button>
+      <div class="d-flex justify-content-center mb-5">
+        <button type="button" class="btn-si text-si modal-delete-button-confirm" id="viewbackgrilla" data-dismiss="modal">Continuar</button>
 
       </div>
     </div>
