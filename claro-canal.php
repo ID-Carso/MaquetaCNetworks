@@ -137,7 +137,7 @@
         </h2>
 
         <div class="week-claro-video-container">
-          <video class="promo-video" autoplay muted controls loop>
+          <video class="promo-video" playsinline autoplay muted controls loop>
             <source src="http://www.claronetworks.openofficedospuntocero.info/video/canal-claro-promo.mp4" type="video/mp4">
           </video>
           <!--<div class="poster">

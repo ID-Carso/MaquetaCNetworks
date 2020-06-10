@@ -110,7 +110,7 @@
                 <h2 class="concert-subtitle">ve un <span>adelanto</span> de la programación</h2>
             </div>
             <div class="week-videos-container">
-                <video class="promo-video" autoplay muted controls loop>
+                <video class="promo-video" playsinline autoplay muted controls loop>
                     <source src="http://www.claronetworks.openofficedospuntocero.info/video/concert-channel-promo.mp4" type="video/mp4">
                 </video>
                 <!--<div class="poster">
