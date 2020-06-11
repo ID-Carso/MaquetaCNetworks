@@ -64,7 +64,7 @@ if (!isset($_SESSION["session"])) {
         </nav>
         <div id="general-programming">
             <?php
-            include "grilla-claro-canal.php";
+            include "./views/grillas/grilla-claro-canal.php";
             ?>
         </div>
 

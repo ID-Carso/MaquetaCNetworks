@@ -455,22 +455,28 @@ function showPageUsersFront() {
   });
 }
 
+function showGrilla() {
+  console.log("grilla");
+  $(".bodymenu").load("");
+}
+
 function showLandingSchedule(id) {
+  let generalSchedule = $("#general-programming");
   switch (id) {
     case "grilla-canal-claro-button":
-      $("#general-programming").load("grilla-claro-canal.php");
+      generalSchedule.load("./views/grillas/grilla-claro-canal.php");
       break;
 
     case "grilla-concert-channel-button":
-      $("#general-programming").load("grilla-concert-channel.php");
+      generalSchedule.load("./views/grillas/grilla-concert-channel.php");
       break;
 
     case "grilla-claro-cinema-button":
-      $("#general-programming").load("grilla-claro-cinema.php");
+      generalSchedule.load("./views/grillas/grilla-claro-cinema.php");
       break;
 
     case "grilla-home-button":
-      $("#general-programming").load("grilla-home.php");
+      generalSchedule.load("./views/grillas/grilla-home.php");
       break;
 
     default:

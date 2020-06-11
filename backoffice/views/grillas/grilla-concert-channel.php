@@ -11,7 +11,7 @@
         <button class="btn-grilla  text-grilla mr-3 " id="btn-grilla" onClick="grilla()"><span>Grilla</span></button>
         <button class="btn-landing  text-landing" id="btn-landing"><span>Landing</span></button>
     </div>
-    <div id="bodymenu">
+    <div id="bodymenu" class="bodymenu">
         <div id="grilla">
             <div class="  ml-5  mb12  ">
                 <input id="inp_programing" type="file">
