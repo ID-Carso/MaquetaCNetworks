@@ -9,6 +9,7 @@ import {
   deleteUserUI,
   showPageUsersFront,
   createNavbarProgramacionGeneral,
+  showLandingSchedule,
 } from "./UI/UI.js";
 
 //Validations
@@ -141,26 +142,7 @@ $(document).ready(function () {
   //Mostrar grilla de concert channel
   $(".bn-nav").click(function () {
     let id = $(this).attr("id");
-    switch (id) {
-      case "grilla-canal-claro-button":
-        $("#general-programming").load("grilla-claro-canal.php");
-        break;
-
-      case "grilla-concert-channel-button":
-        $("#general-programming").load("grilla-concert-channel.php");
-        break;
-
-      case "grilla-claro-cinema-button":
-        $("#general-programming").load("grilla-claro-cinema.php");
-        break;
-
-      case "grilla-home-button":
-        $("#general-programming").load("grilla-home.php");
-        break;
-
-      default:
-        break;
-    }
+    showLandingSchedule(id);
   });
 
   $(".btn-nav").click(function () {
