@@ -455,11 +455,6 @@ function showPageUsersFront() {
   });
 }
 
-function showGrilla() {
-  console.log("grilla");
-  $(".bodymenu").load("");
-}
-
 function showLandingSchedule(id) {
   let generalSchedule = $("#general-programming");
   switch (id) {
