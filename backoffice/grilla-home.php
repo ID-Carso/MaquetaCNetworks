@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claro Networks</title>
-    <script src="./js/admin.js" defer></script>
-</head>
-<style>
-    #inp_programing {
-        display: none;
-    }
-</style>
-
-<body>
-    <main>
-
+<div class="grilla-home">
+    <h1>Home</h1>
+    <div class=" ml-5"> <span class="zona">Última edición : </span>
+        <label class=" text-menu-selec separacion"> Septiembre 17 2019 </label>
+        <label class="text-menu-selec">18:33:25</label>
+    </div>
+    <div class="float-right mb-2 mr-5 ali">
+        <span class="zona">Por : </span><label class="text-menu-selec separacion"><span> Antonio López Pérez</span> </label> <label class="text-menu-selec">Usuario editor</label>
+    </div>
+    <div class="d-flex float-right mt-2 ml-btn mb-5  mr-5 ">
+        <button class="btn-grilla  text-grilla mr-3 " id="btn-grilla" onClick="grilla()"><span>Grilla</span></button>
+        <button class="btn-landing  text-landing" id="btn-landing"><span>Landing</span></button>
+    </div>
+    <div id="bodymenu">
         <div id="grilla">
             <div class="  ml-5  mb12  ">
                 <input id="inp_programing" type="file">
@@ -117,7 +113,7 @@
                                 (1=Yes/0=No)</span>
                         </div>
                     </div>
-                    <div class="contenedor-fila" id="programacion">
+                    <div class="contenedor-fila" id="programacion-concert-channel">
                         <div class="contenedor-columna"></div>
                         <div class="contenedor-columna"></div>
                         <div class="contenedor-columna"></div>
@@ -153,7 +149,5 @@
                 </div>
             </div>
         </div>
-    </main>
-</body>
-
-</html>
+    </div>
+</div>

@@ -115,15 +115,12 @@ $("#viewcarga").click(function () {
   alert("cambio3");
   $("#carga-exitosa").replaceWith();
   $("#menu").load("Cargar-landing.php");
-
 });
 $("#viewbackgrilla").click(function () {
   alert("cambio50000");
   $("#grilla").replaceWith();
   $("#carga-exitosa").load("Progra_general.php");
-
 });
-
 
 //fin
 //modales
@@ -342,19 +339,16 @@ $(document).ready(function () {
     if ($('input[id="sino-save"]').is(":checked")) {
       alert("cambio2");
       $("#savesino").modal("show");
-    
     }
   });
-  $("#back-list").click(function () {  
+  $("#back-list").click(function () {
     $("#prev-sinopsis").replaceWith();
-  $("#navbar-prev-sinopsis").load("submenu.php");
+    $("#navbar-prev-sinopsis").load("submenu.php");
   });
   $("#viewapro").click(function () {
-      alert("cambio3");
-      $("#savechange").modal("show");
-    
+    alert("cambio3");
+    $("#savechange").modal("show");
   });
- 
 
   //fin
 
@@ -436,7 +430,7 @@ function sendFilePHP(file) {
     url: "./adapters/C_programing.php",
     success: function (result) {
       //var programas = JSON.parse(result);
-      console.log("php responde:");
+      console.log("php responde:" + result);
       //console.log(programas);
 
       $("#programacion").replaceWith(result);

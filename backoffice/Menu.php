@@ -17,6 +17,11 @@ if (!isset($_SESSION["session"])) {
     include 'styles.php';
     ?>
     <script src="./js/admin.js" defer></script>
+    <style>
+        #inp_programing {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -37,14 +42,14 @@ if (!isset($_SESSION["session"])) {
         <nav class="d-flex col-xl-12 navbar-expand-sm justify-content-center position-nav">
             <ul class="d-flex justify-content-center navbar-nav">
                 <li class="nav-item br-r ">
-                    <button class=" btn-menu-select  menu bn-nav">Canal Claro</button>
+                    <button class="btn-menu-select  menu bn-nav" id="grilla-canal-claro-button">Canal Claro</button>
                     <img src="./images/paises/chile.svg" alt="" class="subimage">
                 </li>
                 <li class="nav-item br-r">
-                    <button class="btn-menu-all  text-menu-selec bn-nav ">Concert Channel</button>
+                    <button id="grilla-concert-channel-button" class="btn-menu-all  text-menu-selec bn-nav ">Concert Channel</button>
                 </li>
                 <li class="nav-item br-r">
-                    <button class="btn-menu-all   text-menu-selec bn-nav">Claro Cinema</button>
+                    <button id="grilla-claro-cinema-button" class="btn-menu-all   text-menu-selec bn-nav">Claro Cinema</button>
                 </li>
                 <li class="nav-item br-r">
                     <button class="btn-menu-inac  text-menu-selec">Nuesta Visión*</button>
@@ -53,26 +58,16 @@ if (!isset($_SESSION["session"])) {
                     <button class="btn-menu-inac text-menu-selec">Claro Sport*</button>
                 </li>
                 <li class="nav-item ">
-                    <button class="btn-menu-all  text-menu-selec bn-nav"> Home</button>
+                    <button id="grilla-home-button" class="btn-menu-all  text-menu-selec bn-nav"> Home</button>
                 </li>
             </ul>
         </nav>
-        <div class=" ml-5"> <span class="zona">Última edición : </span>
-            <label class=" text-menu-selec separacion"> Septiembre 17 2019 </label>
-            <label class="text-menu-selec">18:33:25</label>
-        </div>
-        <div class="float-right mb-2 mr-5 ali">
-            <span class="zona">Por : </span><label class="text-menu-selec separacion"><span> Antonio López Pérez</span> </label> <label class="text-menu-selec">Usuario editor</label>
-        </div>
-        <div class="d-flex float-right mt-2 ml-btn mb-5  mr-5 ">
-            <button class="btn-grilla  text-grilla mr-3 " id="btn-grilla" onClick="grilla()"><span>Grilla</span></button>
-            <button class="btn-landing  text-landing" id="btn-landing"><span>Landing</span></button>
-        </div>
-        <div id="bodymenu">
+        <div id="general-programming">
             <?php
-            include 'Progra_general.php';
+            include "grilla-claro-canal.php";
             ?>
         </div>
+
     </main>
 
 </body>
