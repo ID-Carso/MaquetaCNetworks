@@ -4,7 +4,7 @@ function validateTokenPassword(tokenPassword) {
     data: tokenPassword,
     url:
       "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_verify",
-    success: function(result) {
+    success: function (result) {
       if (result.data) {
         console.log(result.data);
         let user_id = $("#user_id");
@@ -16,7 +16,7 @@ function validateTokenPassword(tokenPassword) {
         location.href =
           "http://www.claronetworks.openofficedospuntocero.info/form-password.php";
       }
-    }
+    },
   });
 }
 
@@ -24,7 +24,7 @@ function showNotification() {
   let id = localStorage.getItem("id");
   let alert = $(".alert-user");
 
-  setInterval(function() {
+  setInterval(function () {
     let alert = $(".alert-user");
     let date = new Date();
     let day = date.getDate();
@@ -41,7 +41,7 @@ function showNotification() {
       function: "showNotificaction",
       id: id,
       currentTime: currentTime,
-      currentDate: currentDate
+      currentDate: currentDate,
     };
 
     if (minutes == 0 || minutes == 15 || minutes == 30 || minutes == 45) {
@@ -49,7 +49,7 @@ function showNotification() {
         type: "POST",
         data: dataUser,
         url: "../../adapters/user.php",
-        success: function(result) {
+        success: function (result) {
           let json = JSON.parse(result);
 
           if (json.code == 200) {
@@ -76,39 +76,39 @@ function showNotification() {
                 .css("transform", "translate(50%, 0%)")
                 .css("animation", "showAlertMobile 8s");
 
-              setTimeout(function() {
+              setTimeout(function () {
                 alert.css("animation", "none");
               }, 8000);
             } else if (screen.width > 767) {
               alert.css("animation", "showAlert 8s");
 
-              setTimeout(function() {
+              setTimeout(function () {
                 alert.css("animation", "none");
               }, 8000);
             }
 
-            $(window).resize(function() {
+            $(window).resize(function () {
               if (screen.width >= 320 && screen.width < 768) {
                 alert
                   .css("transform", "translate(50%, 0%)")
                   .css("animation", "showAlertMobile 8s");
 
-                setTimeout(function() {
+                setTimeout(function () {
                   alert.css("animation", "none");
                 }, 8000);
               } else if (screen.width > 767) {
                 alert.css("animation", "showAlert 8s");
-                setTimeout(function() {
+                setTimeout(function () {
                   alert.css("animation", "none");
                 }, 8000);
               }
             });
 
-            $(".close-notification").click(function() {
+            $(".close-notification").click(function () {
               alert.css("animation", "none");
             });
           }
-        }
+        },
       });
     }
   }, 8000);
@@ -123,13 +123,13 @@ function sendUserEmail(inputEmail) {
   let email = inputEmail.val();
 
   let emailUser = {
-    email: email
+    email: email,
   };
 
   $.ajax({
     type: "POST",
     data: emailUser,
-    beforeSend: function() {
+    beforeSend: function () {
       const loader = `
       <div class="loader">
         <img src="./images/General/loader.gif" class="loader-img" alt="">
@@ -140,11 +140,11 @@ function sendUserEmail(inputEmail) {
     },
     url:
       "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_send",
-    success: function(result) {
+    success: function (result) {
       if (result.data) {
         location.href = "./email-sent.php";
       }
-    }
+    },
   });
 }
 
@@ -159,13 +159,13 @@ function sendNewPassword(inputPassword, secondInputPassword) {
   let info_user = {
     token: token,
     password: newPassowrd,
-    confirm: confirmedNewPassowrd
+    confirm: confirmedNewPassowrd,
   };
 
   $.ajax({
     type: "POST",
     data: info_user,
-    beforeSend: function() {
+    beforeSend: function () {
       const loader = `
       <div class="loader">
         <img src="./images/General/loader.gif" class="loader-img" alt="">
@@ -176,12 +176,12 @@ function sendNewPassword(inputPassword, secondInputPassword) {
     },
     url:
       "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_password",
-    success: function(result) {
+    success: function (result) {
       console.log(result);
       if (result.code == 200) {
         location.href = "./success-password.php";
       }
-    }
+    },
   });
 }
 
@@ -189,14 +189,14 @@ function signIn(email, password) {
   let dataUser = {
     function: "signIn",
     email: email,
-    password: password
+    password: password,
   };
 
   $.ajax({
     type: "POST",
     data: dataUser,
     url: "../../adapters/user.php",
-    beforeSend: function() {
+    beforeSend: function () {
       const loader = `
       <div class="loader">
         <img src="./images/General/loader.gif" class="loader-img" alt="">
@@ -205,7 +205,7 @@ function signIn(email, password) {
       let formContainer = $(".formContainer");
       formContainer.prepend(loader);
     },
-    success: function(result) {
+    success: function (result) {
       let json = JSON.parse(result);
       console.log(json);
       if (json.data) {
@@ -231,7 +231,7 @@ function signIn(email, password) {
         localStorage.setItem("alertEmail", json.data.config.email);
         localStorage.setItem("alertWeb", json.data.config.web);
         let sections = json.data.favorites;
-        sections.forEach(section => {
+        sections.forEach((section) => {
           if (section.id_section == 1) {
             localStorage.setItem(
               "favoritesCanalClaro",
@@ -258,7 +258,7 @@ function signIn(email, password) {
           )
           .addClass("invalid-email");
       }
-    }
+    },
   });
 }
 
@@ -287,7 +287,7 @@ function updateDataUser(id, gender, date, country) {
     id: id,
     gender: gender,
     date: date,
-    country: country
+    country: country,
   };
 
   console.log(dataUser);
@@ -296,7 +296,7 @@ function updateDataUser(id, gender, date, country) {
     type: "POST",
     data: dataUser,
     url: "../../adapters/user.php",
-    success: function(result) {
+    success: function (result) {
       let json = JSON.parse(result);
       console.log(result);
       let gender = localStorage.setItem("gender", json.data.gender);
@@ -310,24 +310,24 @@ function updateDataUser(id, gender, date, country) {
       let modal = $("#mensaje");
       modal.modal("show");
       $(".login-country").prop("src", json.data.country.image);
-    }
+    },
   });
 }
 
 function sendEmail(id) {
   let dataUser = {
     function: "sendEmail",
-    id: id
+    id: id,
   };
 
   $.ajax({
     type: "POST",
     data: dataUser,
     url: "../../adapters/user.php",
-    success: function(result) {
+    success: function (result) {
       console.log(result);
       console.log("email enviado");
-    }
+    },
   });
 }
 
@@ -335,14 +335,14 @@ function selectAvatar(id, src, idAvatar) {
   let dataUser = {
     function: "selectAvatar",
     id: id,
-    avatar: src
+    avatar: src,
   };
 
   $.ajax({
     type: "POST",
     data: dataUser,
     url: "../../adapters/user.php",
-    success: function(result) {
+    success: function (result) {
       let json = JSON.parse(result);
       if (json.code == 200) {
         localStorage.setItem("idAvatar", idAvatar);
@@ -356,7 +356,7 @@ function selectAvatar(id, src, idAvatar) {
         let modal = $("#mensaje");
         modal.modal("show");
       }
-    }
+    },
   });
 }
 
@@ -370,14 +370,14 @@ function registerUser(inputName, inputEmail, inputPassword) {
     name: name,
     email: email,
     password: password,
-    version: "1.2"
+    version: "1.2",
   };
 
   $.ajax({
     type: "POST",
     data: user,
     url: "../../adapters/user.php",
-    beforeSend: function() {
+    beforeSend: function () {
       const loader = `
       <div class="loader">
         <img src="./images/General/loader.gif" class="loader-img" alt="">
@@ -386,7 +386,7 @@ function registerUser(inputName, inputEmail, inputPassword) {
       let formContainer = $(".formContainer");
       formContainer.prepend(loader);
     },
-    success: function(result) {
+    success: function (result) {
       let json = JSON.parse(result);
       console.log(json);
 
@@ -405,21 +405,21 @@ function registerUser(inputName, inputEmail, inputPassword) {
           loader.remove();
         }
       }
-    }
+    },
   });
 }
 
 function updateAlerts(configJson) {
   let dataUser = {
     function: "updateAlerts",
-    data: configJson
+    data: configJson,
   };
 
   $.ajax({
     type: "POST",
     data: dataUser,
     url: "../../adapters/user.php",
-    success: function(result) {
+    success: function (result) {
       let json = JSON.parse(result);
       console.log(json);
       if (json.code == 200) {
@@ -476,12 +476,12 @@ function updateAlerts(configJson) {
           }
         }*/
       }
-    }
+    },
   });
 }
 
 function addFavorites() {
-  $(".poster-button, .programing-button, .synopsis-add").click(function() {
+  $(".poster-button, .programing-button, .synopsis-add").click(function () {
     let session = localStorage.getItem("session");
     if (session != 1) {
       let modal = $(".modal-favorites");
@@ -503,14 +503,14 @@ function addFavorites() {
         let dataUser = {
           function: "addFavorites",
           user_id: id_user,
-          chapter_id: id_program
+          chapter_id: id_program,
         };
 
         $.ajax({
           type: "POST",
           data: dataUser,
           url: "../../adapters/user.php",
-          success: function(result) {
+          success: function (result) {
             let json = JSON.parse(result);
             console.log(json);
             if (json.code == 200) {
@@ -543,7 +543,7 @@ function addFavorites() {
               $(".modal-image-program").attr("src", json.data.last_added.image);
               $(".modal-program").modal("show");
 
-              sections.forEach(section => {
+              sections.forEach((section) => {
                 if (section.id_section == 1) {
                   localStorage.setItem(
                     "favoritesCanalClaro",
@@ -562,7 +562,7 @@ function addFavorites() {
                 }
               });
             }
-          }
+          },
         });
         return true;
       }
@@ -577,14 +577,14 @@ function removeFavorites(user_id, program_id, removeButton, itemList) {
   let dataUser = {
     function: "removeFavorites",
     user_id: user_id,
-    chapter_id: program_id
+    chapter_id: program_id,
   };
 
   $.ajax({
     type: "POST",
     data: dataUser,
     url: "../../adapters/user.php",
-    success: function(result) {
+    success: function (result) {
       let json = JSON.parse(result);
       console.log(json);
       let sections = json.data;
@@ -605,7 +605,7 @@ function removeFavorites(user_id, program_id, removeButton, itemList) {
       }
 
       if (sections !== null) {
-        sections.forEach(section => {
+        sections.forEach((section) => {
           if (section.id_section == 1) {
             localStorage.setItem(
               "favoritesCanalClaro",
@@ -665,7 +665,7 @@ function removeFavorites(user_id, program_id, removeButton, itemList) {
             `;
         listFavorites.append(myFavorites);
       }
-    }
+    },
   });
   return true;
 }
@@ -677,13 +677,13 @@ function updateAlertProgram(user_id, program_id, active) {
     dataUser = {
       function: "enableNotification",
       user_id: user_id,
-      chapter_id: program_id
+      chapter_id: program_id,
     };
   } else {
     dataUser = {
       function: "disableNotification",
       user_id: user_id,
-      chapter_id: program_id
+      chapter_id: program_id,
     };
   }
 
@@ -691,13 +691,13 @@ function updateAlertProgram(user_id, program_id, active) {
     type: "POST",
     data: dataUser,
     url: "../../adapters/user.php",
-    success: function(result) {
+    success: function (result) {
       let json = JSON.parse(result);
       console.log(json);
       if (json.code == 200) {
         let sections = json.data;
 
-        sections.forEach(section => {
+        sections.forEach((section) => {
           if (section.id_section == 1) {
             localStorage.setItem(
               "favoritesCanalClaro",
@@ -716,7 +716,7 @@ function updateAlertProgram(user_id, program_id, active) {
           }
         });
       }
-    }
+    },
   });
 }
 
@@ -734,5 +734,5 @@ export {
   removeFavorites,
   showNotification,
   hideNotification,
-  updateAlertProgram
+  updateAlertProgram,
 };

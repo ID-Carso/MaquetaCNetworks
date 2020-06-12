@@ -99,6 +99,7 @@ function getPrograms(date, country) {
     date,
     country,
   };
+
   //NORMAL
   let nowSliderCanalClaro = $(".today-claro-slider");
   let nowSliderConcertChannel = $(".today-concert-channel-slider");
