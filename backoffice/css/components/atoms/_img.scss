@@ -181,17 +181,12 @@
 .women {
   width: 25px;
   height: 20px;
- 
 }
 
 .aprove-icon {
   width: 87px;
 }
-.calendario {
-  margin-left: 29%;
-  position: absolute;
-  margin-top: 9.5%;
-}
+
 .arrow-180 {
   transform: rotate(181deg);
   margin-top: -64%;
@@ -238,6 +233,11 @@
   border-radius: 1em;
   transform: translate(-10px, -14px);
 }
-.edi{
+.edi {
   width: 32px;
+}
+
+.calendar {
+  cursor: pointer;
+  opacity: 0.7;
 }

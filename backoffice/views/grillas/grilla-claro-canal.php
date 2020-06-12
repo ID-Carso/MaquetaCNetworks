@@ -1,5 +1,4 @@
 <div class="grilla-claro-canal">
-    <h1>Claro canal</h1>
     <div class=" ml-5"> <span class="zona">Última edición : </span>
         <label class=" text-menu-selec separacion"> Septiembre 17 2019 </label>
         <label class="text-menu-selec">18:33:25</label>
