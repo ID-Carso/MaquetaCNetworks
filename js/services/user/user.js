@@ -537,7 +537,7 @@ function addFavorites() {
 
               let nameUser = localStorage.getItem("name");
               let nameProgram = `${json.data.last_added.program_title}`;
-              console.log(nameProgram);
+
               $("#modal-username-program").text(`${nameUser}:`);
               $("#modal-name-program").text(nameProgram);
               $(".modal-image-program").attr("src", json.data.last_added.image);
@@ -550,6 +550,7 @@ function addFavorites() {
                     JSON.stringify(section.programs)
                   );
                 } else if (section.id_section == 2) {
+                  console.log("Concert Channel");
                   localStorage.setItem(
                     "favoritesConcertChannel",
                     JSON.stringify(section.programs)
