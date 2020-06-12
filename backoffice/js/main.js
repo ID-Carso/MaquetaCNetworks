@@ -37,6 +37,67 @@ import {
 } from "./services/user.js";
 
 $(document).ready(function () {
+  //CONFIGURACIÓN DE DATEPICKER
+  const picker = datepicker("#date-schedule-landing", {
+    customMonths: [
+      "Enero",
+      "Febrero",
+      "Marzo",
+      "Abril",
+      "Mayo",
+      "Junio",
+      "Julio",
+      "Agosto",
+      "Septiembre",
+      "Octubre",
+      "Noviembre",
+      "Diciembre",
+    ],
+    customDays: ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"],
+    onSelect: (instance, date) => {
+      let nameDays = [
+        "DOMINGO",
+        "LUNES",
+        "MARTES",
+        "MIÉRCOLES",
+        "JUEVES",
+        "VIERNES",
+        "SÁBADO",
+      ];
+
+      let nameMonths = [
+        "ENERO",
+        "FEBRERO",
+        "MARZO",
+        "ABRIL",
+        "MAYO",
+        "JUNIO",
+        "JULIO",
+        "AGOSTO",
+        "SEPTIEMBRE",
+        "OCTUBRE",
+        "NOVIEMBRE",
+        "DICIEMBRE",
+      ];
+
+      let currentNamesDay = nameDays[date.getDay()];
+      let currentNamesMonth = nameMonths[picker.currentMonth];
+      console.log(currentNamesMonth);
+      let completeDay = `${currentNamesDay}  ${date.getDate()}`;
+      $("#schedule-day").text(completeDay);
+      $(".progra-month").text(currentNamesMonth);
+    },
+    minDate: new Date(),
+  });
+
+  //ELEGIR DÍA EN PROGRAMACIÓN GENERAL
+  $(".calendar").click(function (e) {
+    e.stopPropagation();
+    const isHidden = picker.calendarContainer.classList.contains("qs-hidden");
+    picker[isHidden ? "show" : "hide"]();
+    //console.log(picker.currentMonth);
+  });
+
   //CHANGE TO LANDING
   $("#btn-landing").click(function () {
     landing();

@@ -1,31 +1,32 @@
-<?php 
+<?php
 
 require  'vendor/autoload.php';
- use PhpOffice\PhpSpreadsheet\Spreadsheet;
- use PhpOffice\PhpSpreadsheet\IOFactory;
- use PhpOffice\PhpSpreadsheet\Shared\Date;
- 
- $new_file=$_FILES['file'];
 
- $ruta = $new_file['tmp_name'];
- $documento = IOFactory::load($ruta);
- # obtener conteo e iterar
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\PhpSpreadsheet\Shared\Date;
+
+$new_file = $_FILES['file'];
+
+$ruta = $new_file['tmp_name'];
+$documento = IOFactory::load($ruta);
+# obtener conteo e iterar
 $totalDeHojas = $documento->getSheetCount();
- #iterar por hojas
-$programas=[];
- for ($indiceHoja=0; $indiceHoja < $totalDeHojas; $indiceHoja++) { 
+#iterar por hojas
+$programas = [];
+for ($indiceHoja = 0; $indiceHoja < $totalDeHojas; $indiceHoja++) {
     $hojaActual = $documento->getSheet($indiceHoja);
     # Calcular el máximo valor de la fila 
     $numeroMayorDeFila = $hojaActual->getHighestRow(); // Numérico
     $letraMayorDeColumna = $hojaActual->getHighestColumn(); // Letra
     # Convertir la letra al número de columna correspondiente
     $numeroMayorDeColumna = \PhpOffice\PhpSpreadsheet\Cell\Coordinate::columnIndexFromString($letraMayorDeColumna);
-     # Iterar filas con ciclo for e índices
+    # Iterar filas con ciclo for e índices
     for ($indiceFila = 3; $indiceFila <= $numeroMayorDeFila; $indiceFila++) {
         # declaramos un arreglo que contendra los datos
-        $programa=[];
+        $programa = [];
         for ($indiceColumna = 1; $indiceColumna <= $numeroMayorDeColumna; $indiceColumna++) {
-            
+
             # Obtener celda por columna y fila
             $celda = $hojaActual->getCellByColumnAndRow($indiceColumna, $indiceFila);
             # Y ahora que tenemos una celda trabajamos con ella
@@ -51,7 +52,7 @@ $programas=[];
                     # code...
                     $objFecha = Date::excelToDateTimeObject($value);
                     $cadena_nuevo_formato =  date_format($objFecha, 'Y-m-d');;
-                
+
                     $programa['Vigencia_home'] = $cadena_nuevo_formato;
                     break;
                 case 6:
@@ -68,22 +69,22 @@ $programas=[];
                     # code...
                     $objFecha = Date::excelToDateTimeObject($value);
                     $cadena_nuevo_formato =  date_format($objFecha, 'Y-m-d H:i:s');;
-                
-                  
+
+
                     $programa['Schedule_Item_Date_Time'] = $cadena_nuevo_formato;
                     break;
                 case 9:
                     # code...
                     $objFecha = Date::excelToDateTimeObject($value);
                     $cadena_nuevo_formato =  date_format($objFecha, 'Y-m-d');;
-                
+
                     $programa['Schedule_Item_Long_Date'] = $cadena_nuevo_formato;
                     break;
                 case 10:
                     # code...
                     $objFecha = Date::excelToDateTimeObject($value);
                     $cadena_nuevo_formato =  date_format($objFecha, 'H:i:s');
-                
+
                     $programa['Schedule_Item_Long_Time'] = $cadena_nuevo_formato;
                     break;
                 case 11:
@@ -127,30 +128,28 @@ $programas=[];
                 case 20:
                     # code...
                     $programa['Scheduled_Version_DUBBED'] = $value;
-                    break;      
+                    break;
                 case 21:
                     # code...
                     $programa['Audio_5.1_avalieble'] = $value;
-                    break;                                        
+                    break;
                 default:
                     # code...
                     break;
             }
-            
         }
-        $programas[$indiceFila-3]=$programa;
+        $programas[$indiceFila - 3] = $programa;
     }
-    
- }
- //$programas=json_encode($programas);
- 
- $htmlProgrmacion="";
+}
+//$programas=json_encode($programas);
 
- for ($indexProgramas=0; $indexProgramas < count($programas); $indexProgramas++) { 
-     $htmlProgrmacion=$htmlProgrmacion.'
-     <div class="contenedor-fila" id="programa_'.$programas[$indexProgramas]['Program_title'].'">
-        <div class="contenedor-columna centro">
-        <img src="./images/bin.svg"  class="mx-auto"alt="">
+$htmlProgrmacion = "";
+
+for ($indexProgramas = 0; $indexProgramas < count($programas); $indexProgramas++) {
+    $htmlProgrmacion = $htmlProgrmacion . '
+     <div class="contenedor-fila" id="programa_' . $programas[$indexProgramas]['Program_title'] . '">
+        <div class="contenedor-columna centro" id="">
+            <img src="./images/bin.svg"  class="mx-auto"alt="">
         </div>
         <div class="contenedor-columna centro">
         <img src="./images/pendientes.svg" class="mx-auto" alt=""><br>
@@ -164,16 +163,16 @@ $programas=[];
             </label>
         </div>
         <div class="contenedor-columna centro">
-            <label class="program-original">'.$programas[$indexProgramas]['Program_title'].'</label>
+            <label class="program-original">' . $programas[$indexProgramas]['Program_title'] . '</label>
             <img src="./images/pencil.svg" alt="" class=""class="pencil">
         </div>
         <div class="contenedor-columna centro">
         <div class="yes-no">
-                    <input type="radio" name="yes-no" id="si" checked />
-                    <label for="si" id="siestado" class="si-estilo">
+                    <input type="radio" name="yes-no" id="si' . $indexProgramas . '" checked />
+                    <label for="si' . $indexProgramas . '" id="siestado" class="si-estilo">
                       Sí</label>
-                    <input type="radio" name="yes-no" id="no" />
-                    <label for="no" id="noestado" class="no-estilo">
+                    <input type="radio" name="yes-no" id="no' . $indexProgramas . '" />
+                    <label for="no' . $indexProgramas . '" id="noestado" class="no-estilo">
                       No</label>
                   </div>
                   <img src="./images/pencil.svg" alt=""class="pencil1">
@@ -312,8 +311,6 @@ $programas=[];
         </div>
     </div>
      ';
- }
+}
 
-echo($htmlProgrmacion);
-
-
+echo ($htmlProgrmacion);

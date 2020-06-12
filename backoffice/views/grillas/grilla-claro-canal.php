@@ -29,11 +29,17 @@
                 </div>
                 <div id="dias" class="d-flex align-items-center mb-3 br-r ">
                     <img src="./images/arrow-light.svg" alt="" class=" mr-4 arrow-r180 arrow-left">
-                    <p class=" flex-caption mb-0 day"></p>
+                    <p class=" flex-caption mb-0 day" id="schedule-day"></p>
                     <img src="./images/arrow-dark.svg" alt="" class=" ml-4 arrow-right">
 
                 </div>
-                <img src="./images/calendario.svg" class="ml-2 mb-3" alt="">
+                <div class="position-relative">
+                    <label for="date-schedule-landing">
+                        <img src="./images/calendario.svg" class="ml-2 mb-3 calendar" alt="">
+                    </label>
+                    <input type="text" name="" id="date-schedule-landing">
+                </div>
+
             </div>
 
             <!--end-->

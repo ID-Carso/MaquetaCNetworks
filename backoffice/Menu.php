@@ -12,10 +12,12 @@ if (!isset($_SESSION["session"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Claro Networks</title>
+    <script src="./js/lib/datepicker.min.js"></script>
     <?php
     include 'scripts.php';
     include 'styles.php';
     ?>
+    <link rel="stylesheet" href="./css/datepicker.min.css">
     <script src="./js/admin.js" defer></script>
     <style>
         #inp_programing {

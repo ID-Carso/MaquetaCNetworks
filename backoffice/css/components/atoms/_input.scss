@@ -35,10 +35,10 @@
   line-height: normal;
   letter-spacing: normal;
 }
-input[ type ="radio" ]:checked + .a-btn-check:before{
+input[type="radio"]:checked + .a-btn-check:before {
   content: "\02713";
   font-size: 30px;
-  color:$kelley-green;
+  color: $kelley-green;
 }
 
 input[type="radio"]:checked + .hombre-estilo {
@@ -136,8 +136,8 @@ input[type="radio"]:checked + .no-estilo1 {
   left: 0;
   height: 25px;
   width: 25px;
-  border-radius:1em;
-  border:3px solid grey;
+  border-radius: 1em;
+  border: 3px solid grey;
   background-color: white;
 }
 
@@ -156,12 +156,12 @@ input[type="radio"]:checked + .no-estilo1 {
 }
 
 .checkradio .checkmark:after {
-  left:16%;
-  top:16%;
+  left: 16%;
+  top: 16%;
   width: 13px;
   height: 13px;
   background-color: #6a6666;
- border-radius:1em;
+  border-radius: 1em;
 }
 
 .checksquare {
@@ -189,7 +189,7 @@ input[type="radio"]:checked + .no-estilo1 {
   left: 0;
   height: 38px;
   width: 38px;
-  border:3px solid  $silver-two;
+  border: 3px solid $silver-two;
   background-color: white;
 }
 
@@ -199,7 +199,7 @@ input[type="radio"]:checked + .no-estilo1 {
   left: 0;
   height: 38px;
   width: 38px;
-  border:3px solid  $silver-two;
+  border: 3px solid $silver-two;
   background-color: white;
 }
 .checksquare input:checked ~ .checkmark1 {
@@ -237,7 +237,7 @@ input[type="radio"]:checked + .no-estilo1 {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.checksquare .checkmark2:after{
+.checksquare .checkmark2:after {
   left: 12px;
   top: 0px;
   width: 12px;
@@ -248,13 +248,20 @@ input[type="radio"]:checked + .no-estilo1 {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.prueba-check{
+.prueba-check {
   width: 60px;
   height: 39px;
-  border:3px solid $lightgray;
+  border: 3px solid $lightgray;
 }
-.prueba-check input{
+.prueba-check input {
   width: 60px;
   height: 39px;
-  
+}
+
+#date-schedule-landing {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
