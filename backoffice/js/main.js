@@ -101,9 +101,7 @@ $(document).ready(function () {
   }
 
   //CHANGE TO LANDING
-  $("#btn-landing").click(function () {
-    landing();
-  });
+
 
   $(".option").click(function () {
     var value = $(this).attr("value");

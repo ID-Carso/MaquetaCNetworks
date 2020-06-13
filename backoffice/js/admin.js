@@ -98,6 +98,21 @@ function landing() {
   $("#menu").replaceWith();
   $("#bodymenu").load("submenu.php");
 }
+function viewlandingcinema(){
+  $("#menu").replaceWith();
+  $("#bodymenu").load("./views/submenus/submenu-claro-cinema.php");
+}
+
+function viewlandingconcert(){
+  $("#menu").replaceWith();
+  $("#bodymenu").load("./views/submenus/submenu-concert-channel.php");
+}
+
+function viewlandinghome(){
+  $("#menu").replaceWith();
+  $("#bodymenu").load("./views/submenus/submenu-home.php");
+}
+
 function grilla() {
   $("#grilla").replaceWith();
   $("#bodymenu").load("Progra_general.php");

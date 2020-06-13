@@ -1,3 +1,12 @@
+
+ <script src="./js/lib/datepicker.min.js"></script>
+ <?php
+    include '../../scripts.php';
+    include '../../styles.php';
+    ?>
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <script src="./js/admin.js" defer></script>
+
 <div class="grilla-concert-channel">
     <div class=" ml-5"> <span class="zona">Última edición : </span>
         <label class=" text-menu-selec separacion"> Septiembre 17 2019 </label>
@@ -8,7 +17,7 @@
     </div>
     <div class="d-flex float-right mt-2 ml-btn mb-5  mr-5 ">
         <button class="btn-grilla  text-grilla mr-3 " id="btn-grilla" onClick="grilla()"><span>Grilla</span></button>
-        <button class="btn-landing  text-landing" id="btn-landing"><span>Landing</span></button>
+        <button class="btn-landing  text-landing" id="btn-landing" onClick="viewlandingconcert()"><span>Landing</span></button>
     </div>
     <div id="bodymenu" class="bodymenu">
         <div id="grilla">
@@ -32,7 +41,12 @@
                     <img src="./images/arrow-dark.svg" alt="" class=" ml-4 arrow-right">
 
                 </div>
-                <img src="./images/calendario.svg" class="ml-2 mb-3" alt="">
+                <div class="position-relative">
+                    <label for="date-schedule-landing">
+                        <img src="./images/calendario.svg" class="ml-2 mb-3 calendar" alt="">
+                    </label>
+                    <input type="text" name="" id="date-schedule-landing">
+                </div>
             </div>
 
             <!--end-->
