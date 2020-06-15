@@ -397,7 +397,7 @@ function getAllUsersBO() {
         });
         $("#Adm-users-BO").html(`  
         <div class="col-xl-10 position-btn-alta">
-          <button class="btn-alta text-public mb-4" id="btnAlta">Agregar nuevo usuario</button>
+          <button class="btn-alta  d-flex align-items-center text-public mb-4" id="btnAlta">Agregar nuevo usuario</button>
         </div>
         <div class="sombras2 trans10 mb-5">
           <div class="grid-users texto-general users-backoffice-table">        

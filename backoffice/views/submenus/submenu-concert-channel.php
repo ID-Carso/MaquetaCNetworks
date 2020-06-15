@@ -82,7 +82,7 @@
                     <img src="./images/arrow-gray.svg" alt="flecha" class="arrow-progra arrow-progra-left">
                     <!--<span class="p-3 arrow arrow-left">
             < </span>-->
-                    <div class="navbar-progra-item navbar-progra-item-border navbar-progra-active navbar-concert-channel" navbar-index="1" rel="navbar-prev-concert-channel">
+                    <div class="navbar-progra-item navbar-progra-item-border navbar-progra-active navbar-canal-claro" navbar-index="1" rel="navbar-prev-concert-channel">
                         <div class="navbar-progra-item-container ml-3 mr-3">
                             <p class="py-2 px-3 mb-0 a-text-regular-blacktwo">CONCERT CHANNEL</p>
 

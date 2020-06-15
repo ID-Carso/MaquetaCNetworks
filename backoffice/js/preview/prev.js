@@ -4,6 +4,8 @@ function previewPage(icon) {
   let iframeCanalClaro = $("#navbar-prev-canal-claro iframe");
   let iframeProgramacion = $("#navbar-prev-programacion iframe");
   let iframeHome = $("#navbar-prev-home iframe");
+  let iframeConcertChannel = $("#navbar-prev-concert-channel iframe");
+  let iframeClaroCinema = $("#navbar-prev-claro-cinema iframe");
   let prevMobileIcon = $("#prev-mobile");
   let prevTabletIcon = $("#prev-tablet");
   let prevDesktopIcon = $("#prev-desktop");
@@ -18,7 +20,8 @@ function previewPage(icon) {
     iframeHome.css("height", "4400px");
     iframeProgramacion.css("height", "8000px");
     iframeCanalClaro.css("height", "3600px");
-   
+    iframeConcertChannel.css("height", "2790px");
+    iframeClaroCinema.css("height","2700px");
   }
   //TABLET
   else if (icon.is("#prev-tablet")) {
@@ -30,6 +33,9 @@ function previewPage(icon) {
     iframeHome.css("height", "5100px");
     iframeProgramacion.css("height", "12000px");
     iframeCanalClaro.css("height", "4300px");
+    iframeConcertChannel.css("height", "3800px");
+    iframeClaroCinema.css("height","3370px");
+
  
   }
   //PC
@@ -42,6 +48,9 @@ function previewPage(icon) {
     iframeHome.css("height", "4900px");
     iframeProgramacion.css("height", "12000px");
     iframeCanalClaro.css("height", "4600px");
+    iframeConcertChannel.css("height", "3700px");
+    iframeClaroCinema.css("height","3900px");
+
    
   }
 }
