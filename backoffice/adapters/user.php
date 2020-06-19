@@ -206,7 +206,7 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             if (is_string($_POST['email']) && is_string($_POST['password'])) {
                 $email = $_POST['email'];
                 $password = $_POST['password'];
-                $data = array("email" => $email, "password" => $password);
+                $data = array("email" => $email, "password" => sha1($password));
                 $dataJson = json_encode($data);
                 $user = User::getUserInstance();
                 echo ($user->signIn($dataJson));
