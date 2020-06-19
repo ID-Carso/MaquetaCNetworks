@@ -1,3 +1,8 @@
+<script src="./js/admin.js" defer></script>
+<script src="./js/lib/datepicker.min.js"></script>
+<script src="./js/main.js?t=<?php echo time(); ?>" type="module"></script>
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+
 <div class="grilla-claro-canal">
     <div class=" ml-5"> <span class="zona">Última edición : </span>
         <label class=" text-menu-selec separacion"> Septiembre 17 2019 </label>
