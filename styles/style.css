@@ -2904,6 +2904,22 @@ h6 {
   border: solid 1px #069cb0;
 }
 
+.border-t {
+  border-top: 3px solid #979797;
+}
+
+.border-b {
+  border-bottom: 3px solid #979797;
+}
+
+.border-r {
+  border-right: 3px solid #979797;
+}
+
+.border-l {
+  border-left: 3px solid #979797;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 .insert-data {
