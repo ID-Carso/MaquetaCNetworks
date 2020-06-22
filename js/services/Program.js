@@ -121,7 +121,6 @@ function getPrograms(date, country) {
       let programingCanalClaro = json.data[0].programing[0].programs;
       let programingConcertChannel = json.data[1].programing[0].programs;
       let programingClaroCinema = json.data[2].programing[0].programs;
-      let programingNuestraVision = json.data[3].programing[0].programs;
 
       let arrayCanalClaro = [];
       let favoritesClaroCanal = JSON.parse(
