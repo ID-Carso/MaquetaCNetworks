@@ -12,10 +12,10 @@
 
             </div>
             <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
-                <a href="home.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
+                <a href="" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
             </div>
             <div class="sidebar-content">
-                <a href="claro-canal.php" class="sidebar-link">
+                <a href="" class="sidebar-link">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Canal Claro</span>
                     </div>
@@ -34,7 +34,7 @@
               <p class="dropdown-p">ebñrkjg</p>
               <p class="dropdown-p">ebñrkjg</p>
             </div>-->
-                <a class="sidebar-link" href="claro-cinema.php">
+                <a class="sidebar-link" href="">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Claro Cinema</span>
                     </div>
@@ -44,13 +44,13 @@
               <p class="dropdown-p">ebñrkjg</p>
               <p class="dropdown-p">ebñrkjg</p>
             </div>-->
-                <a class="sidebar-link" href="https://nuestravision.tv" target="_blank">
+                <a class="sidebar-link" href="" target="_blank">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Nuestra
                             Visión</span>
                     </div>
                 </a>
-                <a class="sidebar-link" href="https://www.marca.com/claro-mx/" target="_blank">
+                <a class="sidebar-link" href="" target="_blank">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Claro
                             Sports</span>
@@ -95,7 +95,7 @@
                     <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
                 </div>
                 <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-right">
-                    <a href="programacion.php"><button class="btn-magenta a-text-white-semibold btn-concert-channel">VER PROGRAMACIÓN</button></a>
+                    <a href=""><button class="btn-magenta a-text-white-semibold btn-concert-channel">VER PROGRAMACIÓN</button></a>
                 </div>
             </div>
             <div class="today-concert-videos-container">
@@ -304,12 +304,12 @@
             <div class="social-media">
                 <div class="d-flex align-items-center justify-content-center">
                     <div class="social-item">
-                        <a href="https://www.facebook.com/concertchannel/" target="_blank">
+                        <a href="" target="_blank">
                             <img class="social-icon" src="./images/redes/facebook-icon-green.svg" alt="">
                         </a>
                     </div>
                     <div class="social-item">
-                        <a href="https://twitter.com/Concert_Channel" target="_blank">
+                        <a href="" target="_blank">
                             <img class="social-icon" src="./images/redes/twitter-icon-green.svg" alt="">
                         </a>
                     </div>
@@ -338,17 +338,17 @@
     ?>
 
 </body>
-<!--<script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
+<script type="text/javascript" src="../js/lib/easyXDM.min.js"></script>
 <script>
-    var socket = new easyXDM.Socket({
-        onReady: function() {
+  var socket = new easyXDM.Socket({
+    onReady: function() {
 
-            var hey = 3700;
-            console.log(hey);
+      var hey = 3700;
+      console.log(hey);
 
-            socket.postMessage(hey)
-        }
-    });
-</script>-->
+      socket.postMessage(hey)
+    }
+  });
+</script>
 
 </html>

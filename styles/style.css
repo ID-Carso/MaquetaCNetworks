@@ -239,6 +239,12 @@ h6 {
   font-family: "Montserrat-Bold";
 }
 
+.a-text-regular-white {
+  font-family: "Montserrat-Regular";
+  color: #ffffff;
+  font-size: 14px;
+}
+
 .a-text-medium-greyish {
   color: #4a4a4a;
   font-family: "Montserrat-Medium";
@@ -2022,6 +2028,19 @@ h6 {
   outline: none;
 }
 
+.pencil-black {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 30px;
+  background-color: #252424;
+  border-radius: 13px;
+  border: 1px solid #252424;
+  cursor: pointer;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 .a-cinema-rectangle, .a-sports-rectangle, .a-concert-rectangle, .a-claro-rectangle, .a-vision-rectangle {
@@ -2171,6 +2190,12 @@ h6 {
 
 .fondo {
   background: transparent;
+}
+
+.pencil {
+  position: absolute;
+  -webkit-transform: translateY(-39%);
+          transform: translateY(-39%);
 }
 
 .fondo-index {
@@ -3006,7 +3031,7 @@ input[type="checkbox"]:checked + label::before {
   font-size: 18px;
   text-align: center;
   vertical-align: middle;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #ffffff;
   background: #069cb0;
 }

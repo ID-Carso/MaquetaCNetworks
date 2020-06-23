@@ -15,7 +15,7 @@
       </div>
 
       <div class="sidebar-content">
-        <a href="home.php" class="sidebar-link">
+        <a href="" class="sidebar-link">
           <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
 
             <span class="dropdown-p">Inicio</span>
@@ -32,7 +32,7 @@
                 <p class="dropdown-p">ebñrkjg</p>
                 <p class="dropdown-p">ebñrkjg</p>
               </div>-->
-        <a class="sidebar-link" href="concert-channel.php">
+        <a class="sidebar-link" href="">
           <div class="sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Concert Channel</span>
           </div>
@@ -42,7 +42,7 @@
                 <p class="dropdown-p">ebñrkjg</p>
                 <p class="dropdown-p">ebñrkjg</p>
               </div>-->
-        <a class="sidebar-link" href="claro-cinema.php">
+        <a class="sidebar-link" href="">
           <div class="sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Claro Cinema</span>
           </div>
@@ -52,13 +52,13 @@
                 <p class="dropdown-p">ebñrkjg</p>
                 <p class="dropdown-p">ebñrkjg</p>
               </div>-->
-        <a class="sidebar-link" href="https://nuestravision.tv" target="_blank">
+        <a class="sidebar-link" href="" target="_blank">
           <div class="sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Nuestra
               Visión</span>
           </div>
         </a>
-        <a class="sidebar-link" href="https://www.marca.com/claro-mx/" target="_blank">
+        <a class="sidebar-link" href="" target="_blank">
           <div class=" sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Claro
               Sports</span>
@@ -118,22 +118,22 @@
         <div class="row no-gutters landing-header">
           <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
             <div class="col-7 mx-auto p-2 border-t border-l border-r border-b position-relative mb-2 col-md-9 col-xl-10">
-              <img src="../images/pencil.svg" alt="" class="pencil">
+              <img src="./images/General/pencil.svg" alt="" class="pencil">
               <img src="./images/home/tv-1.svg" alt="" class="lading-header-image-claro"></div>
           </div>
           <div class="col-12 col-md-5 col-lg-5 col-xl-5">
             <div class="d-flex justify-content-center col-12 col-xl-12">
               <div class="col-9 p-3 border-t border-l border-r border-b position-relative mb-2 col-md-12 border-t border-l border-r border-b position-relative">
-                <img src="../images/pencil.svg" alt="" class="pencil">
+                <img src="./images/General/pencil.svg" alt="" class="pencil">
                 <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
               </div>
             </div>
           </div>
           <div class="col-12  col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ">
-            <a href="programacion.php">
+            <a href="">
 
               <div class=" p-3 mx-auto col-xl-8 col-8 col-md-11 border-t border-l border-r border-b position-relative">
-                <img src="../images/pencil.svg" alt="" class="pencil">
+                <img src="./images/General/pencil.svg" alt="" class="pencil">
                 <button class="btn-claro-canal a-text-white-semibold btn-tomato">VER PROGRAMACIÓN</button>
               </div>
 
@@ -150,11 +150,11 @@
       <div class="next-week-container">
 
         <div class=" p-3 col-8 col-xl-6 mx-auto m-md-0 m-lg-0 m-xl-0 col-sm-7 border-t border-l border-r border-b position-relative mb-2">
-          <img src="../images/pencil.svg" alt="" class="pencil ">
+          <img src="./images/General/pencil.svg" alt="" class="pencil ">
           <h1 class="a-next-claro-title">próxima semana</h1>
         </div>
         <div class="p-3 col-8 col-md-7 mx-auto m-md-0 m-lg-0 m-xl-0 col-xl-6 border-t border-l border-r border-b position-relative mb-2">
-          <img src="../images/pencil.svg" alt="" class="pencil">
+          <img src="./images/General/pencil.svg" alt="" class="pencil">
           <h2 class="a-next-claro-subtitle mb-0">
             Ve un <span>adelanto</span> de la programación
           </h2>
@@ -162,7 +162,7 @@
 
         <div class="week-claro-video-container">
           <div class=" p-3 border-t border-l border-r border-b position-relative">
-            <img src="../images/pencil.svg" alt="" class="pencil">
+            <img src="./images/General/pencil.svg" alt="" class="pencil">
             <video class="promo-video" autoplay muted controls loop>
               <source src="http://www.claronetworks.openofficedospuntocero.info/video/canal-claro-promo.mp4" type="video/mp4">
             </video>
@@ -185,11 +185,11 @@
     <section class="dont-lose-claro">
       <div class="dont-lose-container">
         <div class=" p-3 col-xl-6 col-md-6 col-8 mx-auto m-md-0 m-lg-0 m-xl-0 border-t border-l border-r border-b position-relative mb-2">
-          <img src="../images/pencil.svg" alt="" class="pencil">
+          <img src="./images/General/pencil.svg" alt="" class="pencil">
           <h1 class="a-dontLose-claro-title">TIENES QUE VERLO</h1>
         </div>
         <div class="mb-3 p-3 col-8 col-md-5 col-xl-6 mx-auto m-md-0 m-lg-0 m-xl-0 border-l border-r border-b position-relative mb-2">
-          <img src="../images/pencil.svg" alt="" class="pencil">
+          <img src="./images/General/pencil.svg" alt="" class="pencil">
           <h2 class="a-dontLose-claro-subtitle pb-0">
             <!-- ve un <span>adelanto</span> de la programación -->
             ¡No te lo puedes perder!
@@ -200,11 +200,11 @@
           </div>
           <div>
             <div class="col-6  col-9 col-md-8 col-xl-7 mx-auto m-md-0 m-lg-0 m-xl-0 border-t border-l border-r border-b position-relative mb-2">
-              <img src="../images/pencil.svg" alt="" class="pencil">
+              <img src="./images/General/pencil.svg" alt="" class="pencil">
               <h1 class="a-dontLose-claro-title">Contenido exclusivo</h1>
             </div>
             <div class="mx-auto m-md-0 m-lg-0 m-xl-0 col-9 col-md-9 col-xl-7 pt-3 border-l border-r border-t border-b position-relative mb-2">
-              <img src="../images/pencil.svg" alt="" class="pencil">
+              <img src="./images/General/pencil.svg" alt="" class="pencil">
               <h2 class="a-dontLose-claro-subtitle">
                 <!-- ve un <span>adelanto</span> de la programación -->
                 Únete y disfruta nuestras producciones propias.
@@ -227,37 +227,37 @@
         <div class="col-12">
           <div class=" d-flex justify-content-center pt-5 ">
             <div class=" p-3 border-t border-l border-r border-b position-relative">
-              <img src="../images/pencil.svg" alt="" class="pencil">
+              <img src="./images/General/pencil.svg" alt="" class="pencil">
               <h1 class="footer-title-claro">¡síguenos!</h1>
             </div>
           </div>
         </div>
         <div class="social-media">
           <div class="col ">
-            <a href="https://www.facebook.com/CanalClaro/" target="_blank">
+            <a href="" target="_blank">
               <div class="p-3 border-t border-l border-r border-b position-relative">
-                <img src="../images/pencil.svg" alt="" class="pencil">
+                <img src="./images/General/pencil.svg" alt="" class="pencil">
                 <img class="social-icon" src="./images/redes/facebook-icon-red.svg" alt="" /></div>
             </a>
           </div>
           <div class="col">
-            <a href="https://www.instagram.com/canalclaro/?hl=es-la" target="_blank">
+            <a href="" target="_blank">
               <div class="p-3 border-t border-l border-r border-b position-relative">
-                <img src="../images/pencil.svg" alt="" class="pencil">
+                <img src="./images/General/pencil.svg" alt="" class="pencil">
                 <img class="social-icon" src="./images/redes/insta-icon-red.svg" alt="" /></div>
             </a>
           </div>
           <div class="col">
-            <a href="https://twitter.com/canalclaro" target="_blank">
+            <a href="" target="_blank">
               <div class="p-3 border-t border-l border-r border-b position-relative">
-                <img src="../images/pencil.svg" alt="" class="pencil">
+                <img src="./images/General/pencil.svg" alt="" class="pencil">
                 <img class="social-icon" src="./images/redes/twitter-icon-red.svg" alt="" /></div>
             </a>
           </div>
           <div class="col">
-            <a href="https://www.youtube.com/user/CanalClaroTV" target="_blank">
+            <a href="" target="_blank">
               <div class="p-3 border-t border-l border-r border-b position-relative">
-                <img src="../images/pencil.svg" alt="" class="pencil">
+                <img src="./images/General/pencil.svg" alt="" class="pencil">
                 <img class="social-icon" src="./images/redes/youtube-icon-red.svg" alt="" /></div>
             </a>
           </div>
@@ -283,7 +283,7 @@ include './views/partials/modal-favorites.php'
 <?php
 include './views/partials/modal-program.php'
 ?>
-<!--<script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
+<script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
 <script>
   var socket = new easyXDM.Socket({
     onReady: function() {
@@ -294,6 +294,6 @@ include './views/partials/modal-program.php'
       socket.postMessage(hey)
     }
   });
-</script>-->
+</script>
 
 </html>

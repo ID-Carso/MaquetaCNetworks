@@ -11,13 +11,13 @@
       <div class="text-center sidebar-header">
 
       </div>
-      <a href="home.php" class="sidebar-link">
+      <a href="" class="sidebar-link">
         <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
           <span class="dropdown-p">Inicio</span>
         </div>
       </a>
       <div class="sidebar-content">
-        <a href="claro-canal.php" class="sidebar-link">
+        <a href="" class="sidebar-link">
           <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
             <span class="dropdown-p">Canal Claro</span>
           </div>
@@ -28,7 +28,7 @@
                 <p class="dropdown-p">ebñrkjg</p>
                 <p class="dropdown-p">ebñrkjg</p>
               </div>-->
-        <a class="sidebar-link" href="concert-channel.php">
+        <a class="sidebar-link" href="">
           <div class="sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Concert Channel</span>
           </div>
@@ -46,13 +46,13 @@
                 <p class="dropdown-p">ebñrkjg</p>
                 <p class="dropdown-p">ebñrkjg</p>
               </div>-->
-        <a class="sidebar-link" href="https://nuestravision.tv" target="_blank">
+        <a class="sidebar-link" href="" target="_blank">
           <div class="sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Nuestra
               Visión</span>
           </div>
         </a>
-        <a class="sidebar-link" href="https://www.marca.com/claro-mx/" target="_blank">
+        <a class="sidebar-link" href="" target="_blank">
           <div class="sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Claro
               Sports</span>
@@ -109,13 +109,15 @@
       <section class="today-claro-cinema">
         <div class="row no-gutters landing-header">
           <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
+          <div class="col-7 mx-auto p-2 border-t border-l border-r border-b position-relative mb-2 col-md-9 col-xl-10">
+              <img src="./images/General/pencil.svg" alt="" class="pencil">
             <img src="./images/home/cinema-home-img.svg" alt="" class="lading-header-image-cinema">
           </div>
           <div class="col-12 col-md-5 col-lg-5 col-xl-5">
             <h1 class="a-today-cinema-title">hoy en <span>claro cinema</span></h1>
           </div>
           <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ">
-            <a href="programacion.php"><button class="btn-teal-blue a-text-white-semibold btn-claro-cinema">VER PROGRAMACIÓN</button>
+            <a href=""><button class="btn-teal-blue a-text-white-semibold btn-claro-cinema">VER PROGRAMACIÓN</button>
             </a>
           </div>
         </div>
@@ -346,7 +348,7 @@
   include './views/partials/modal-program.php'
   ?>
 </body>
-<!--<script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
+<script type="text/javascript" src="../js/lib/easyXDM.min.js"></script>
 <script>
   var socket = new easyXDM.Socket({
     onReady: function() {
@@ -357,6 +359,5 @@
       socket.postMessage(hey)
     }
   });
-</script>-->
-
+</script>
 </html>
