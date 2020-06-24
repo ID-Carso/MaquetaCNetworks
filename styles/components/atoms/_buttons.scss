@@ -346,3 +346,15 @@
   padding: 8px 12px;
   outline: none;
 }
+.pencil-black{
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 30px;
+  background-color: #252424;
+  border-radius: 13px;
+  border: 1px solid #252424;
+  cursor: pointer;
+} 

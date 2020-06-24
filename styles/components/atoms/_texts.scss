@@ -41,7 +41,7 @@
 }
 
 .a-text-bold-greyish {
-  color: $greyishBrownTwo;
+  color: $greyishBrownTwo; 
   font-family: $montserratBold;
 }
 
@@ -49,7 +49,11 @@
   color: $cinemaRectangle;
   font-family: $montserratBold;
 }
-
+.a-text-regular-white{
+  font-family: $montserratRegular;
+  color: $colorWhite;
+  font-size: 14px; 
+} 
 .a-text-medium-greyish {
   color: $greyishBrownTwo;
   font-family: $montserratMedium;

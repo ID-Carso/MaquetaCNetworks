@@ -32,6 +32,14 @@
 .fondo {
   background: transparent;
 }
+.pencil {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+  z-index: 5;
+}
 
 .fondo-index {
   background: url(http://www.claronetworks.openofficedospuntocero.info/images/General/claro-networks-portada.jpg);
