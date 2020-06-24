@@ -89,8 +89,11 @@
         <section class="today-concert-channel">
             <div class="row no-gutters landing-header">
                 <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-                    <img src="./images/home/concert-home-img.svg" alt="" class="lading-header-image-concert">
+                <div class="col-9 p-3 border-t border-l border-r border-b position-relative mb-2 col-md-5">
+                <img src="./images/General/pencil.svg" alt="" class="pencil"> 
+                <img src="./images/home/concert-home-img.svg" alt="" class="lading-header-image-concert">
                 </div>
+</div>
                 <div class="col-12 col-md-5 col-lg-5 col-xl-5">
                     <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
                 </div>
@@ -110,7 +113,10 @@
                 <h2 class="concert-subtitle">ve un <span>adelanto</span> de la programación</h2>
             </div>
             <div class="week-videos-container">
+            <div class=" p-3 border-t border-l border-r border-b position-relative">
+            <img src="./images/General/pencil.svg" alt="" class="pencil">
                 <video class="promo-video" autoplay muted controls loop>
+               
                     <source src="http://www.claronetworks.openofficedospuntocero.info/video/concert-channel-promo.mp4" type="video/mp4">
                 </video>
                 <!--<div class="poster">
@@ -123,6 +129,7 @@
                     </div>
                 </div>-->
             </div>
+</div>
 
         </section>
         <section class="concerts">
@@ -133,7 +140,10 @@
             </div>
             <div class="concerts-videos-container">
                 <div class="section-slider concert-slider">
-                    <div class="poster">
+                <div class=" p-3 border-t border-l border-r border-b position-relative">          
+            <div class="poster">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+           
                         <div class="poster-body">
                             <div class="showtime-container justify-content-end">
 
@@ -151,7 +161,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="poster">
+</div>
+<div class=" p-3 border-t border-l border-r border-b position-relative">          
+            <div class="poster">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+           
                         <div class="poster-body">
                             <div class="showtime-container justify-content-end">
 
@@ -169,7 +183,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="poster">
+</div>
+<div class=" p-3 border-t border-l border-r border-b position-relative">          
+            <div class="poster">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+           
                         <div class="poster-body">
                             <div class="showtime-container justify-content-end">
 
@@ -187,7 +205,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="poster">
+</div>
+<div class=" p-3 border-t border-l border-r border-b position-relative">          
+            <div class="poster">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+           
                         <div class="poster-body">
                             <div class="showtime-container justify-content-end">
 
@@ -205,6 +227,7 @@
                             </div>
                         </div>
                     </div>
+</div>
                 </div>
             </div>
 
@@ -216,7 +239,10 @@
             </div>
             <div class="interviews-videos-container">
                 <div class="section-slider concert-slider">
-                    <div class="poster">
+                <div class=" p-3 border-t border-l border-r border-b position-relative">          
+            <div class="poster">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+           
                         <div class="poster-body">
                             <div class="showtime-container justify-content-end">
 
@@ -234,7 +260,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="poster">
+</div>
+<div class=" p-3 border-t border-l border-r border-b position-relative">          
+            <div class="poster">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+           
                         <div class="poster-body">
                             <div class="showtime-container justify-content-end">
 
@@ -252,7 +282,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="poster">
+</div>
+<div class=" p-3 border-t border-l border-r border-b position-relative">          
+            <div class="poster">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+           
                         <div class="poster-body">
                             <div class="showtime-container justify-content-end">
 
@@ -270,7 +304,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="poster">
+</div>
+<div class=" p-3 border-t border-l border-r border-b position-relative">          
+            <div class="poster">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+           
                         <div class="poster-body">
                             <div class="showtime-container justify-content-end">
 
@@ -288,6 +326,7 @@
                             </div>
                         </div>
                     </div>
+</div>
                 </div>
             </div>
 

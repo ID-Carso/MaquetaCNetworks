@@ -88,11 +88,11 @@
 
             <div class="circle-video">
             <div class="postion-relative">
-            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="../images/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
 
                 <video preload="yes" playsinline autoplay muted loop class="home-video">
                 
-                        <img src="./images/General/pencil.svg" alt="" class="pencil">
+    
                         <source src="./video/video.mp4" type="video/mp4" class="source-video" />
                        
                 </video>

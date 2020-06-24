@@ -34,7 +34,11 @@
 }
 .pencil {
   position: absolute;
-  transform: translateY(-39%);
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+  z-index: 5;
 }
 
 .fondo-index {
