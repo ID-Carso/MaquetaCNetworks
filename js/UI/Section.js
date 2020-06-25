@@ -544,9 +544,32 @@ export default class Section {
     let programTiensQueVerlo = "";
     let programExlusiveContent = "";
 
+    /*
+      Almacenamos los programas en otras variables para dibujar los programas con bordes.
+      Esto  para la parevisualización en Backoffice de los landings
+    */
+    let programTienesQueVerloEdit = "";
+    let programExlusiveContentEdit = "";
     programsTienesQueVerlo.forEach((program) => {
       programTiensQueVerlo += `
       <div class="poster" >
+        <div class="poster-body">
+            <div class="thumbnail-body" _id="${program.chapter_id}">
+                <div class="thumbnail">
+                    <img src="${program.image}" alt="">
+                </div>
+                <div class="a-claro-rectangle thumbnail-info-title">
+                    <div class="poster-title-margin">
+                        <p class="a-poster-text-white">${program.genre}</p>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      `;
+      programTienesQueVerloEdit += `
+      <div class="poster p-3 border-l border-r border-b border-t position-relative">
+      <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
         <div class="poster-body">
             <div class="thumbnail-body" _id="${program.chapter_id}">
                 <div class="thumbnail">
@@ -580,8 +603,26 @@ export default class Section {
         </div>
       </div>
       `;
+      programExlusiveContentEdit += `
+      <div class="poster border-l p-3 border-r border-t border-b" >
+        <div class="poster-body">
+            <div class="thumbnail-body" _id="${program.chapter_id}">
+                <div class="thumbnail">
+                    <img src="${program.image}" alt="">
+                </div>
+                <div class="a-claro-rectangle thumbnail-info-title">
+                    <div class="poster-title-margin">
+                        <p class="a-poster-text-white">${program.program_title}</p>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      `;
     });
 
+    $("#dontLose-claro-sliderEdit").append(programTienesQueVerloEdit);
+    $("#exlusiveContentClaroSliderEdit").append(programExlusiveContentEdit);
     dontLoseSlider.append(programTiensQueVerlo);
     exlusiveContentSlider.append(programExlusiveContent);
     slider.createSectionSliderHome();

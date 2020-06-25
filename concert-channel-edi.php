@@ -7,9 +7,80 @@
 
 <body>
     <header class="concert-channel-header">
+        <div class="hamburguer-menu">
+            <div class="text-center sidebar-header">
+
+            </div>
+            <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
+                <a href="" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
+            </div>
+            <div class="sidebar-content">
+                <a href="" class="sidebar-link">
+                    <div class="sidebar-item sidebar-border-bottom">
+                        <span class="dropdown-p">Canal Claro</span>
+                    </div>
+                </a>
+                <!--<div class="dropdown-content">
+              <p class="dropdown-p">ebñrkjg</p>
+              <p class="dropdown-p">ebñrkjg</p>
+              <p class="dropdown-p">ebñrkjg</p>
+            </div>-->
+                <div class="sidebar-item sidebar-border-bottom">
+                    <span class="dropdown-p active-sidebar-item">Concert
+                        Channel</span>
+                </div>
+                <!--<div class="dropdown-content">
+              <p class="dropdown-p">ebñrkjg</p>
+              <p class="dropdown-p">ebñrkjg</p>
+              <p class="dropdown-p">ebñrkjg</p>
+            </div>-->
+                <a class="sidebar-link" href="">
+                    <div class="sidebar-item sidebar-border-bottom">
+                        <span class="dropdown-p">Claro Cinema</span>
+                    </div>
+                </a>
+                <!--<div class="dropdown-content">
+              <p class="dropdown-p">ebñrkjg</p>
+              <p class="dropdown-p">ebñrkjg</p>
+              <p class="dropdown-p">ebñrkjg</p>
+            </div>-->
+                <a class="sidebar-link" href="" target="_blank">
+                    <div class="sidebar-item sidebar-border-bottom">
+                        <span class="dropdown-p">Nuestra
+                            Visión</span>
+                    </div>
+                </a>
+                <a class="sidebar-link" href="" target="_blank">
+                    <div class="sidebar-item sidebar-border-bottom">
+                        <span class="dropdown-p">Claro
+                            Sports</span>
+                    </div>
+                </a>
+                <!--<a class="sidebar-link" href="programacion.php">
+                    <div class="sidebar-item sidebar-border-bottom">
+                        <span class="dropdown-p">Programación</span>
+                    </div>
+                </a>-->
+                <!--prueba sidebar-->
+            </div>
+            <button class="invisible-button"></button>
+        </div>
         <div class="header">
             <div class="alert-user">
             </div>
+            <!--Menú para móvil -->
+            <?php
+            include 'menu-mobile.php';
+            ?>
+            <!--End menú para móvil-->
+            <div class="menu-tablet-container">
+                <?php
+                include './views/partials/menu-tablet-white.php';
+                ?>
+            </div>
+            <?php
+            include './views/partials/menu-desktop-black.php'
+            ?>
             <div class="header-slider" id="banner-concert-channel">
             </div>
         </div>
@@ -18,13 +89,16 @@
         <section class="today-concert-channel">
             <div class="row no-gutters landing-header">
                 <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-                    <img src="./images/home/concert-home-img.svg" alt="" class="lading-header-image-concert">
+                <div class="col-9 p-3 border-t border-l border-r border-b position-relative mb-2 col-md-5">
+                <img src="./images/General/pencil.svg" alt="" class="pencil"> 
+                <img src="./images/home/concert-home-img.svg" alt="" class="lading-header-image-concert">
                 </div>
+</div>
                 <div class="col-12 col-md-5 col-lg-5 col-xl-5">
                     <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
                 </div>
                 <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-right">
-                    <button class="btn-magenta a-text-white-semibold btn-concert-channel">VER PROGRAMACIÓN</button>
+                    <a href=""><button class="btn-magenta a-text-white-semibold btn-concert-channel">VER PROGRAMACIÓN</button></a>
                 </div>
             </div>
             <div class="today-concert-videos-container">
@@ -39,7 +113,10 @@
                 <h2 class="concert-subtitle">ve un <span>adelanto</span> de la programación</h2>
             </div>
             <div class="week-videos-container">
-                <video class="promo-video" playsinline autoplay muted controls loop>
+            <div class=" p-3 border-t border-l border-r border-b position-relative">
+            <img src="./images/General/pencil.svg" alt="" class="pencil">
+                <video class="promo-video" autoplay muted controls loop>
+               
                     <source src="http://www.claronetworks.openofficedospuntocero.info/video/concert-channel-promo.mp4" type="video/mp4">
                 </video>
                 <!--<div class="poster">
@@ -52,6 +129,7 @@
                     </div>
                 </div>-->
             </div>
+</div>
 
         </section>
         <section class="concerts">
@@ -62,7 +140,10 @@
             </div>
             <div class="concerts-videos-container">
                 <div class="section-slider concert-slider">
-                    <div class="poster">
+                <div class=" p-3 border-t border-l border-r border-b position-relative">          
+            <div class="poster">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+           
                         <div class="poster-body">
                             <div class="showtime-container justify-content-end">
 
@@ -80,7 +161,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="poster">
+</div>
+<div class=" p-3 border-t border-l border-r border-b position-relative">          
+            <div class="poster">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+           
                         <div class="poster-body">
                             <div class="showtime-container justify-content-end">
 
@@ -98,7 +183,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="poster">
+</div>
+<div class=" p-3 border-t border-l border-r border-b position-relative">          
+            <div class="poster">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+           
                         <div class="poster-body">
                             <div class="showtime-container justify-content-end">
 
@@ -116,7 +205,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="poster">
+</div>
+<div class=" p-3 border-t border-l border-r border-b position-relative">          
+            <div class="poster">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+           
                         <div class="poster-body">
                             <div class="showtime-container justify-content-end">
 
@@ -134,6 +227,7 @@
                             </div>
                         </div>
                     </div>
+</div>
                 </div>
             </div>
 
@@ -145,7 +239,10 @@
             </div>
             <div class="interviews-videos-container">
                 <div class="section-slider concert-slider">
-                    <div class="poster">
+                <div class=" p-3 border-t border-l border-r border-b position-relative">          
+            <div class="poster">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+           
                         <div class="poster-body">
                             <div class="showtime-container justify-content-end">
 
@@ -163,7 +260,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="poster">
+</div>
+<div class=" p-3 border-t border-l border-r border-b position-relative">          
+            <div class="poster">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+           
                         <div class="poster-body">
                             <div class="showtime-container justify-content-end">
 
@@ -181,7 +282,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="poster">
+</div>
+<div class=" p-3 border-t border-l border-r border-b position-relative">          
+            <div class="poster">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+           
                         <div class="poster-body">
                             <div class="showtime-container justify-content-end">
 
@@ -199,7 +304,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="poster">
+</div>
+<div class=" p-3 border-t border-l border-r border-b position-relative">          
+            <div class="poster">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+           
                         <div class="poster-body">
                             <div class="showtime-container justify-content-end">
 
@@ -217,6 +326,7 @@
                             </div>
                         </div>
                     </div>
+</div>
                 </div>
             </div>
 
@@ -227,17 +337,20 @@
         <div class="">
             <div class="row no-gutters">
                 <div class="col-10 mx-auto">
-                    <h1 class="footer-title">¡síguenos!</h1>
+                    <h1 class="footer-title">¡sígue a <br>concert channel!</h1>
                 </div>
             </div>
             <div class="social-media">
                 <div class="d-flex align-items-center justify-content-center">
                     <div class="social-item">
-                        <img class="social-icon" src="./images/redes/facebook-icon-green.svg" alt="">
-
+                        <a href="" target="_blank">
+                            <img class="social-icon" src="./images/redes/facebook-icon-green.svg" alt="">
+                        </a>
                     </div>
                     <div class="social-item">
-                        <img class="social-icon" src="./images/redes/twitter-icon-green.svg" alt="">
+                        <a href="" target="_blank">
+                            <img class="social-icon" src="./images/redes/twitter-icon-green.svg" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -262,19 +375,19 @@
     <?php
     include './views/partials/modal-program.php'
     ?>
-    <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
-    <script>
-        var socket = new easyXDM.Socket({
-            onReady: function() {
-
-                var hey = 4300;
-                console.log(hey);
-
-                socket.postMessage(hey)
-            }
-        });
-    </script>
 
 </body>
+<script type="text/javascript" src="../js/lib/easyXDM.min.js"></script>
+<script>
+  var socket = new easyXDM.Socket({
+    onReady: function() {
+
+      var hey = 3700;
+      console.log(hey);
+
+      socket.postMessage(hey)
+    }
+  });
+</script>
 
 </html>
