@@ -7,7 +7,7 @@ function getMetaKeys() {
   $.ajax({
     type: "POST",
     data: data,
-    url: "../../adapters/section.php",
+    url: "./adapters/section.php",
     success: function(result) {
       let json = JSON.parse(result);
       let sectionUI = new Section();

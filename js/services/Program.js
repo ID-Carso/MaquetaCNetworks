@@ -107,6 +107,14 @@ function getPrograms(date, country) {
   let nowSliderNuestraVision = $("#tv-vision-slider");
   let nowSliderClaroSports = $("#tv-sports-slider");
 
+  //CON CUADROS PARA EDITAR
+  
+  let nowSliderCanalClaroprev = $(".today-claro-slider-prev");
+  let nowSliderConcertChannelprev = $(".today-concert-channel-slider-prev");
+  let nowSliderClaroCinemaprev = $(".today-claro-cinema-slider-prev");
+  let nowSliderNuestraVisionprev = $("#tv-vision-slider-prev");
+  let nowSliderClaroSportsprev = $("#tv-sports-slider-prev");
+
   let claroCotentProgramacionGeneral = $(".claro-content");
   let concertContentProgramacionGeneral = $(".concert-content");
   let cinemaContentProgramacionGeneral = $(".cinema-content");
@@ -114,7 +122,7 @@ function getPrograms(date, country) {
   $.ajax({
     type: "POST",
     data: dataProgram,
-    url: "../../adapters/program.php",
+    url: "./adapters/program.php",
     success: function (result) {
       let json = JSON.parse(result);
       console.log(json);
@@ -164,6 +172,13 @@ function getPrograms(date, country) {
       destroySlider(nowSliderClaroCinema);
       destroySlider(nowSliderNuestraVision);
       destroySlider(nowSliderClaroSports);
+
+      //DESTROYSLIDER DE EDIT
+      destroySlider(nowSliderCanalClaroprev);
+      destroySlider(nowSliderConcertChannelprev);
+      destroySlider(nowSliderClaroCinemaprev);
+      destroySlider(nowSliderNuestraVisionprev);
+      destroySlider(nowSliderClaroSportsprev);
 
       programingCanalClaro.forEach((program, index) => {
         let programCanalClaro;
@@ -332,6 +347,122 @@ function getPrograms(date, country) {
         /* END PROGRAMACIÓN GENERAL - CANAL CLARO*/
       });
 
+      //CUADROS DE EDITAR DE LANDING
+       //cuadros de editar
+       programingCanalClaro.forEach((program, index) => {
+        let programCanalClaro;
+        if (index == 0) {
+          if (arrayCanalClaro.includes(program.chapter_id)) {
+            programCanalClaro = `
+         <div class=" p-3 border-t border-l border-r border-b position-relative">          
+           <div class="poster">
+           <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+                  <div class="poster-body">
+                      <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                      <div class="thumbnail-body" _id="${program.chapter_id}">
+                          <div class="thumbnail">                       
+                              <img src="${program.image}" alt="">                             
+                          </div>
+                          <div class="a-claro-rectangle thumbnail-info-title">
+                              <div class="poster-title-margin">
+                                  <p class="a-poster-text-white">${program.chapter_title}</p>
+                              </div>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+        </div>
+                `;
+          } else {
+            programCanalClaro = `
+         
+            <div>
+              <div class=" p-3 border-t border-l border-r border-b position-relative">        
+                <div class="poster" >
+                <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+                  <div class="poster-body">
+                      <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                      <div class="thumbnail-body" _id="${program.chapter_id}">
+                          <div class="thumbnail">
+                       
+                              <img src="${program.image}" alt="">
+                             
+                          </div>
+                          <div class="a-claro-rectangle thumbnail-info-title">
+                              <div class="poster-title-margin">
+                                  <p class="a-poster-text-white">${program.chapter_title}</p>
+                              </div>
+                          </div>
+                    </div>
+                  </div>
+              </div>
+         </div>
+                `;
+          }
+        } else {
+          if (arrayCanalClaro.includes(program.chapter_id)) {
+            programCanalClaro = `
+            <div class=" p-3 border-t border-l border-r border-b position-relative">   
+                <div class="poster">
+                <button class="d-flex align-items-center justify-content-center pencil-black  a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+                  <div class="poster-body">
+                      <div class="showtime-container justify-content-between">
+                          <p class="a-programming-text">${program.time}</p>
+                          <button type="button" class="poster-button remove-program" _id="${program.chapter_id}"><img src="../images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
+                      </div>
+
+                      <div class="thumbnail-body" _id="${program.chapter_id}">
+                          <div class="thumbnail">
+                         
+                              <img src="${program.image}" alt="">
+                             
+                          </div>
+                          <div class="a-claro-rectangle thumbnail-info-title">
+                              <div class="poster-title-margin">
+                                  <p class="a-poster-text-white">${program.chapter_title}</p>
+                              </div>
+                          </div>
+                     </div>
+
+                  </div>
+              </div>
+              </div>
+                `;
+          } else {
+            programCanalClaro = `
+            <div class=" p-3 border-t border-l border-r border-b position-relative">   
+                <div class="poster" >
+                <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+
+                  <div class="poster-body">
+                      <div class="showtime-container justify-content-between">
+                          <p class="a-programming-text">${program.time}</p>
+                          <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="../images/posters/heart-outline.svg" alt="" class="poster-add"></button>
+                      </div>
+
+                      <div class="thumbnail-body" _id="${program.chapter_id}">
+                          <div class="thumbnail">
+                        
+                              <img src="${program.image}" alt="">
+                              
+                          </div>
+                          <div class="a-claro-rectangle thumbnail-info-title">
+                              <div class="poster-title-margin">
+                                  <p class="a-poster-text-white">${program.chapter_title}</p>
+                              </div>
+                          </div>
+                        </div>
+
+                  </div>
+              </div>
+              </div>
+                `;
+          }
+        }
+        nowSliderCanalClaroprev.append(programCanalClaro);
+      });
+      //END DE CUADROS
+
       let programConcertChannel;
       programingConcertChannel.forEach((program, index) => {
         if (index == 0) {
@@ -496,6 +627,132 @@ function getPrograms(date, country) {
         concertContentProgramacionGeneral.append(programConcertChannel);
         /* END PROGRAMACIÓN GENERAL - CONCERT CHANNEL*/
       });
+
+      //CUADROS PARA EDITAR CONCERT-CHANNEL
+      //cuadros de editar
+      programingConcertChannel.forEach((program, index) => {
+        let programConcertChannel;
+        if (index == 0) {
+          if (arrayConcertChannel.includes(program.chapter_id)) {
+            programConcertChannel = `
+            <div class=" p-3 border-t border-l border-r border-b position-relative">          
+
+              <div class="poster">
+              <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+
+              <div class="poster-body">
+              <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+
+                  <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                  <div class="thumbnail-body" _id="${program.chapter_id}">
+                      <div class="thumbnail">
+                     
+                          <img src="${program.image}" alt="">
+                          
+                      </div>
+                      <div class="a-concert-rectangle thumbnail-info-title">
+                          <div class="poster-title-margin">
+                              <p class="a-poster-text-white">${program.chapter_title}</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+              `;
+          } else {
+            programConcertChannel = `
+            <div class=" p-3 border-t border-l border-r border-b position-relative">          
+
+            <div class="poster">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+
+            <div class="poster-body">
+
+                <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                <div class="thumbnail-body" _id="${program.chapter_id}">
+                    <div class="thumbnail">
+                   
+                        <img src="${program.image}" alt="">
+                        
+                    </div>
+                    <div class="a-concert-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">${program.chapter_title}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+            `;
+          }
+        } else {
+          if (arrayConcertChannel.includes(program.chapter_id)) {
+            programConcertChannel = `
+            <div class=" p-3 border-t border-l border-r border-b position-relative">          
+
+                <div class="poster" >
+                <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+
+                <div class="poster-body">
+                    <div class="showtime-container justify-content-between">
+                        <p class="a-programming-text">${program.time}</p>
+                        <button type="button" class="poster-button remove-program" _id="${program.chapter_id}"><img src="./images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
+                    </div>
+
+                    <div class="thumbnail-body" _id="${program.chapter_id}">
+                        <div class="thumbnail">
+                      
+                            <img src="${program.image}" alt="">
+                            
+                        </div>
+                        <div class="a-concert-rectangle thumbnail-info-title">
+                            <div class="poster-title-margin">
+                                <p class="a-poster-text-white">${program.chapter_title}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+                `;
+          } else {
+            programConcertChannel = `
+            <div class=" p-3 border-t border-l border-r border-b position-relative">          
+
+            <div class="poster" >
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+
+            <div class="poster-body">
+                <div class="showtime-container justify-content-between">
+                    <p class="a-programming-text">${program.time}</p>
+                    <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
+                </div>
+
+                <div class="thumbnail-body" _id="${program.chapter_id}">
+                    <div class="thumbnail">
+                 
+                        <img src="${program.image}" alt="">
+                        
+                    </div>
+                    <div class="a-concert-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">${program.chapter_title}</p>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+        </div>
+            `;
+          }
+        }
+        nowSliderConcertChannelprev.append(programConcertChannel);
+
+        /* END PROGRAMACIÓN GENERAL - CONCERT CHANNEL cuadros de editar*/
+      });
+      //END DE CUADROS
 
       let programClaroCinema;
       programingClaroCinema.forEach((program, index) => {
@@ -665,6 +922,150 @@ function getPrograms(date, country) {
         cinemaContentProgramacionGeneral.append(programClaroCinema);
         /* END PROGRAMACIÓN GENERAL - CLARO CINEMA*/
       });
+      //CUADROS DE EDICION CLAROCINEMA
+      //cuadros para editar
+
+      programingClaroCinema.forEach((program, index) => {
+        let programClaroCinema;
+        if (index == 0) {
+          if (arrayClaroCinema.includes(program.chapter_id)) {
+            programClaroCinema = `
+            
+            <div class=" p-3 border-t border-l border-r border-b position-relative">          
+            <div class="poster-live">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+           
+                  <div class="poster-body">
+
+                      <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                      <div class="thumbnail-body" _id="${program.chapter_id}">
+                          <div class="thumbnail">
+                         
+                              <img src="${program.image}" alt="">
+                              
+                          </div>
+                          <div class="a-cinema-rectangle thumbnail-info-title">
+                              <div class="poster-title-margin">
+                                  <p class="a-poster-text-white">${program.chapter_title}</p>
+                              </div>
+                          </div>
+                        </div>
+
+                  </div>
+              </div>
+              </div>
+                `;
+          } else {
+            programClaroCinema = `
+            <div class=" p-3 border-t border-l border-r border-b position-relative">          
+            <div class="poster-live">
+            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+           
+                  <div class="poster-body">
+
+                      <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                      <div class="thumbnail-body" _id="${program.chapter_id}">
+                          <div class="thumbnail">
+                         
+                              <img src="${program.image}" alt="">
+                              
+                          </div>
+                          <div class="a-cinema-rectangle thumbnail-info-title">
+                              <div class="poster-title-margin">
+                                  <p class="a-poster-text-white">${program.chapter_title}</p>
+                              </div>
+                          </div>
+                        </div>
+
+                  </div>
+              </div>
+              </div>
+                `;
+          }
+        } else {
+          if (arrayClaroCinema.includes(program.chapter_id)) {
+            programClaroCinema = `
+            <div class="schedule-container">
+            <div class="col-9 p-3 border-t border-l border-r border-b position-relative mb-2">
+            <img src="../images/pencil.svg" alt="" class="pencil">
+            <p class="schedule-title mb-0">${program.chapter_title}</p>
+            </div>
+            <div class="schedule-item-body">
+                <div class="schedule-poster">
+                    <div class="poster">
+                        <div class="thumbnail-prog" _id="${program.chapter_id}">
+                            <img src="${program.image}" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="schedule-details">
+                    <div class="schedule-details-header">
+                        <div>
+                        <div class="p-2 border-t border-l border-r border-b position-relative mb-2">
+                        <img src="../images/pencil.svg" alt="" class="pencil">
+                            <p class="schedule">${program.time} hrs.</p>
+                            </div>
+                            <div class="p-2 border-t border-l border-r border-b position-relative mb-2">
+                            <img src="../images/pencil.svg" alt="" class="pencil">
+                            <p class="rating mb-0">Clasificación: A</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button title="Eliminar de mi lista" class="button-none remove-program programing-button" type="button" _id="${program.chapter_id}">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="48" height="44" viewBox="0 0 48 44">
+                                <path class="heart-gray-filled" fill="none" fill-rule="evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+                            </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-3 border-t border-l border-r border-b position-relative mb-2">
+                    <img src="../images/pencil.svg" alt="" class="pencil">
+                    <p class="schedule-description">
+                        ${program.sinopsis}
+                    </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+                `;
+          } else {
+            programClaroCinema = `
+            <div class=" p-3 border-t border-l border-r border-b position-relative mb-2">          
+
+                <div class="poster" >
+                <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+
+                  <div class="poster-body">
+                      <div class="showtime-container justify-content-between">
+                          <p class="a-programming-text">${program.time}</p>
+                          <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
+                      </div>
+
+                      <div class="thumbnail-body" _id="${program.chapter_id}">
+                          <div class="thumbnail">
+                        
+                              <img src="${program.image}" alt="">
+                              
+                          </div>
+                          <div class="a-cinema-rectangle thumbnail-info-title">
+                              <div class="poster-title-margin">
+                                  <p class="a-poster-text-white">${program.chapter_title}</p>
+                              </div>
+                          </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+                `;
+          }
+        }
+        nowSliderClaroCinemaprev.append(programClaroCinema);
+
+        /* END PROGRAMACIÓN GENERAL - CLARO CINEMA cuadros de editar*/
+      });
+      //END CUADROS DE EDICION
 
       let programNuestraVision = `
       <div class="poster">
@@ -1118,8 +1519,13 @@ function getPrograms(date, country) {
   </div>
       `;*/
       createTvSlider(nowSliderCanalClaro);
+      createTvSlider(nowSliderCanalClaroprev);
+
       createTvSlider(nowSliderConcertChannel);
+      createTvSlider(nowSliderConcertChannelprev);
+
       createTvSlider(nowSliderClaroCinema);
+      createTvSlider(nowSliderClaroCinemaprev);
       //createTvSlider(nowSliderNuestraVision);
       addFavorites();
       /* END SLIDER "AHORA EN VIVO CANAL CLARO*/
@@ -1142,7 +1548,7 @@ function showSynopsis(id) {
   $.ajax({
     type: "POST",
     data: dataUser,
-    url: "../../adapters/program.php",
+    url: "./adapters/program.php",
     success: function (result) {
       let json = JSON.parse(result);
       console.log(json);
