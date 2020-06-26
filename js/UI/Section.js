@@ -221,6 +221,55 @@ export default class Section {
       }
     }
     $(".claro-slider-home").append(programLarge);
+
+    //CUADROS DE EDITAR PARA HOME
+    let programLargeprev="";
+    for (let i = 0; i < blockImage3Length; i++) {
+      if (arrayFavoritesId.includes(block3Image[i].chapter_id)) {
+        programLargeprev += `
+        <div class=" p-3 border-t border-l border-r border-b position-relative">          
+
+        <div class="poster">
+        <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+
+        <div class="poster-body">
+            <div class="showtime-container justify-content-end">
+         
+                <button type="button" class="poster-button remove-program" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+            </div>
+              <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
+                <div class="thumbnail-large">
+                    <img src="${block3Image[i].image_vertical}" alt="">
+                </div>
+              </div>
+        </div>
+    </div> 
+    </div>
+        `;
+      } else {
+        programLargeprev += `
+        <div class=" p-3 border-t border-l border-r border-b position-relative">          
+
+              <div class="poster">
+              <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+
+        <div class="poster-body">
+            <div class="showtime-container justify-content-end">
+                <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+            </div>
+            <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
+                <div class="thumbnail-large">
+                    <img src="${block3Image[i].image_vertical}" alt="">
+                </div>
+            </div>
+        </div>
+    </div> 
+    </div>
+        `;
+      }
+    }
+    $(".claro-slider-home-prev").append(programLargeprev);
+    //END CUADROS
     let sliderHome = new Slider();
 
     /* End slider Canal Claro */
@@ -281,6 +330,56 @@ export default class Section {
 
     $(".concert-home-slider").append(concertHomeVideosMobile);
 
+    //CUADROS DE EDITAR PARA CONCERT-HOME
+    let concertHomeVideosMobileprev="";
+    for (let i = 0; i < blockImage4Length; i++) {
+      if (arrayFavoritesId.includes(block4Image[i].chapter_id)) {
+        concertHomeVideosMobileprev += `
+        <div class=" p-3 border-t border-l border-r border-b position-relative">          
+
+        <div class="poster">
+        <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+
+                <div class="poster-body">
+                    <div class="showtime-container justify-content-end">
+                        <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                    </div>
+                    <div class="thumbnail-body" _id="${block4Image[i].chapter_id}">
+                        <div class="thumbnail-large">
+                            <img src="${block4Image[i].image_vertical}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            `;
+      } else {
+        concertHomeVideosMobileprev += `
+        <div class=" p-3 border-t border-l border-r border-b position-relative">          
+
+        <div class="poster">
+        <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+
+                <div class="poster-body">
+                     <div class="showtime-container justify-content-end">
+                        <button type="button" class="poster-button add-favorites" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                      </div>
+                      <div class="thumbnail-body" _id="${block4Image[i].chapter_id}">
+                        <div class="thumbnail-large">
+                            <img src="${block4Image[i].image_vertical}" alt="">
+                        </div>
+                      </div>
+                </div>
+            </div>
+            </div>
+            `;
+      }
+    }
+
+    $(".concert-home-slider-prev").append(concertHomeVideosMobileprev);
+
+    //END CUADROS
+
     /* HOME CLARO CINEMA SECTION*/
 
     /* TITLE */
@@ -340,6 +439,59 @@ export default class Section {
     }
 
     $(".cinema-home-slider").append(cinemaHomeVideosMobile);
+
+    //CUADROS PARA EDITAR CINEMA
+    let cinemaHomeVideosMobileprev="";
+    for (let i = 0; i < blockImage5Length; i++) {
+      if (arrayFavoritesId.includes(block5Image[i].chapter_id)) {
+     cinemaHomeVideosMobileprev += `
+        <div class=" p-3 border-t border-l border-r border-b position-relative">          
+
+            <div class="poster">
+        <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+
+                  <div class="poster-body">
+                      <div class="showtime-container justify-content-end">
+                        
+                          <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                      </div>
+                      <div class="thumbnail-body" _id="${block5Image[i].chapter_id}">
+                          <div class="thumbnail-large">
+                              <img src="${block5Image[i].image_vertical}" alt="">
+                          </div>
+                      </div>
+                    
+                  </div>
+              </div>
+              </div>
+              `;
+      } else {
+        cinemaHomeVideosMobileprev += `
+        <div class=" p-3 border-t border-l border-r border-b position-relative">          
+
+        <div class="poster">
+        <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
+
+          
+                  <div class="poster-body">
+                      <div class="showtime-container justify-content-end">
+                 
+                          <button type="button" class="poster-button add-favorites" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                      </div>
+                      <div class="thumbnail-body" _id="${block5Image[i].chapter_id}">
+                          <div class="thumbnail-large">
+                              <img src="${block5Image[i].image_vertical}" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+              `;
+      }
+    }
+
+    $(".cinema-home-slider-prev").append(cinemaHomeVideosMobileprev);
+    //END DE CUADROS
     $(".cinema-home-slider").slick({
       slidesToShow: 5,
       slidesToScroll: 1,
