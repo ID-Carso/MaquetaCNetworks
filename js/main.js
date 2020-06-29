@@ -1530,23 +1530,26 @@ $(document).ready(function () {
   /*Programación General Canal Claro */
   let containerSlider = $("#claro-canal-programing");
   let slider = new Slider();
-  slider.createDaysSlider("claro", containerSlider);
+  slider.createDaysSlider(
+    "claro",
+    containerSlider,
+    $("#claro-canal-programing-edit")
+  );
 
   /*Programación Concert Channel */
   let containerSliderConcert = $("#concert-channel-programing");
-  slider.createDaysSlider("concert", containerSliderConcert);
-
+  slider.createDaysSlider(
+    "concert",
+    containerSliderConcert,
+    $("#concert-channel-programing-edit")
+  );
   /*Programación Claro Cinema */
   let containerSliderCinema = $("#claro-cinema-programing");
-  slider.createDaysSlider("cinema", containerSliderCinema);
-
-  /*Programación Nuestra Visión */
-  let containerSliderVision = $("#nuestra-vision-programing");
-  slider.createDaysSlider("vision", containerSliderVision);
-
-  /*Programación Claro Sports */
-  let containerSliderSports = $("#claro-sports-programing");
-  slider.createDaysSlider("sports", containerSliderSports);
+  slider.createDaysSlider(
+    "cinema",
+    containerSliderCinema,
+    $("#claro-cinema-programing-edit")
+  );
 
   createProgramacionSlider();
 

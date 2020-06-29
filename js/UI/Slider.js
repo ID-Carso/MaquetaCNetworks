@@ -177,7 +177,7 @@ export default class Slider {
     });
   }
 
-  createDaysSlider(landing, containerSlider) {
+  createDaysSlider(landing, containerSlider, containerSliderEdit) {
     /*Programación general*/
     let date = new Date();
     $(".month").html(getMonthAndYear(date.getMonth()));
@@ -200,13 +200,18 @@ export default class Slider {
 
     var totalDaysSlider = 0;
     var containerItemSlider = "";
+    var containerItemSliderEdit = ""; //Variable para editar en programación en backoffice
     var daysSlider = "";
+
     if (numberLastDays <= 15) {
       /* Número de días por poner en el slider, considerando los días
         restantes del mes actual y los del siguiente mes
       */
       totalDaysSlider = getDays(2) + (getDays(1) - getDay());
+
+      //Días del primer mes
       for (let i = getDay(); i <= getDays(1); i++) {
+        //Día actual
         if (i == getDay()) {
           daysSlider += `
             <li rel="${landing}-${i}-${getMonth(
@@ -223,7 +228,13 @@ export default class Slider {
             0
           )}" class="${landing}-content"></div>
         `;
+          containerItemSliderEdit += `
+        <div id="${landing}-${i}-${getMonth(
+            0
+          )}" class="${landing}-content-edit"></div>
+      `;
         } else {
+          //Días restantes
           daysSlider += `
         <li rel="${landing}-${i}-${getMonth(
             0
@@ -241,7 +252,7 @@ export default class Slider {
         `;
         }
       }
-
+      //Días del mes siguiente
       for (let i = 1; i <= getDays(2); i++) {
         daysSlider += `
       <li rel="${landing}-${i}-${getMonth(
@@ -254,17 +265,28 @@ export default class Slider {
       </li>      
   `;
         containerItemSlider += `
-  <div id="${landing}-${i}-${getMonth(1)}" class="${landing}-content"></div>
-  `;
+        <div id="${landing}-${i}-${getMonth(
+          1
+        )}" class="${landing}-content"></div>        
+        `;
+
+        containerItemSliderEdit += `
+        <div id="${landing}-${i}-${getMonth(
+          0
+        )}" class="${landing}-content-edit"></div>
+        `;
       }
 
       let programmingContainerSlider = $("#pro-" + landing + "-slider");
       programmingContainerSlider.append(daysSlider);
       containerSlider.append(containerItemSlider);
+      containerSliderEdit.append(containerItemSliderEdit);
     } else {
+      //En caso de que al mes le falten más de 15 días para terminar
       totalDaysSlider = currentMonthDays;
       for (let i = getDay(); i <= totalDaysSlider; i++) {
         if (i == getDay()) {
+          //Día actual activo
           daysSlider += `
             <li rel="${landing}-${i}-${getMonth(
             0
@@ -280,7 +302,13 @@ export default class Slider {
             0
           )}" class="${landing}-content"></div>
         `;
+          containerItemSliderEdit += `
+        <div id="${landing}-${i}-${getMonth(
+            0
+          )}" class="${landing}-content-edit"></div>
+        `;
         } else {
+          //Días siguientes
           daysSlider += `
         <li rel="${landing}-${i}-${getMonth(
             0
@@ -296,11 +324,17 @@ export default class Slider {
             0
           )}" class="${landing}-content"></div>
         `;
+          containerItemSliderEdit += `
+        <div id="${landing}-${i}-${getMonth(
+            0
+          )}" class="${landing}-content-edit"></div>
+        `;
         }
       }
       let programmingContainerSlider = $("#pro-" + landing + "-slider");
       programmingContainerSlider.html(daysSlider);
       containerSlider.append(containerItemSlider);
+      containerSliderEdit.append(containerItemSliderEdit);
     }
   }
 
