@@ -1560,7 +1560,7 @@ $(document).ready(function () {
   let hour = date.getHours();
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
-  let currentDate = "2020-2-8";
+  let currentDate = "2020-07-03";
   let currentTime = `${hour}:${minutes}`;
   getPrograms(currentDate, getNameCountry(sessionSrc));
   /*menu responsive*/

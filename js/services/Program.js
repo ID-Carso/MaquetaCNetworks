@@ -430,7 +430,7 @@ function getPrograms(date, country) {
         </div>
             `;
         }
-
+        console.log(programCanalClaro);
         claroCotentProgramacionGeneral.append(programCanalClaro);
         claroContentProgramacinGeneralEdit.append(programCanalClaroEdit);
         /* END PROGRAMACIÓN GENERAL - CANAL CLARO*/
