@@ -2131,3 +2131,26 @@ window.onresize = function () {
   clearTimeout(doit);
   doit = setTimeout(resizedw, 100);
 };
+
+
+//para slider de programacion en editable
+$(".program-image-slider").slick({
+
+  slidesToShow: 1,
+  dots: true,
+  initialSlide: 0,
+  infinite: false,
+  arrows: false,
+ 
+  customPaging: function(slider, i) {
+      var thumb = $(slider.$slides[i]).data();
+      return (
+
+          " <p class='a-text-bold-tealblue slider-pagination-item'> " +
+          (i + 1) +
+          "</p>´ "
+      );
+    
+  }
+});
+$('.program-image-slider .slick-dots').append(`<li class="slider-pagination-add "> </li>`);

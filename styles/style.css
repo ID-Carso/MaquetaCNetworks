@@ -229,6 +229,15 @@ h6 {
   font-size: 12px;
 }
 
+.a-text-black-brown-two {
+  font-family: "Montserrat-Black";
+  color: #262626;
+}
+
+.a-text-plus {
+  font-size: 30px;
+}
+
 .a-text-bold-greyish {
   color: #4a4a4a;
   font-family: "Montserrat-Bold";
@@ -2179,6 +2188,38 @@ h6 {
   margin-right: auto;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.add-photo {
+  z-index: 1;
+}
+
+.mb90 {
+  margin-bottom: 90px;
+}
+
+#images-logo .add-photo {
+  width: 96px;
+}
+
+#images-logo .thumbnail-image-program {
+  width: 100%;
+}
+
+.image-cover {
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.thumbnail-image-program {
+  border-radius: 7px;
+}
+
 .Icon_paises {
   margin-right: 14px;
   vertical-align: middle;
@@ -2949,6 +2990,10 @@ h6 {
   border-left: 3px solid #979797;
 }
 
+.bor {
+  border: dashed 4px #d5d7d7;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 .insert-data {
@@ -2969,6 +3014,12 @@ h6 {
   border-radius: 0px;
   border-bottom: solid 1px #a1a0a0;
   font-weight: bold;
+  outline: none !important;
+}
+
+.table-input {
+  border: none;
+  width: 120px;
   outline: none !important;
 }
 
@@ -4918,6 +4969,146 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .header-slider .slick-track {
   margin-bottom: 0px !important;
+}
+
+.program-image-slider {
+  width: 1000px !important;
+}
+
+.program-image-slider .slick-dots {
+  position: absolute;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  left: 0;
+  top: 70%;
+}
+
+.claro-navbar-black-edi {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 9px 9px 9px 250px !important;
+  margin-left: -25px;
+  border-radius: 20px;
+}
+
+.menu-desktop-edi {
+  position: absolute;
+  width: 100%;
+  padding: 55px 220px;
+  z-index: 2;
+}
+
+.program-image-slider .slick-slide {
+  height: 342px !important;
+}
+
+.program-image-slider .slick-slide div {
+  height: 100% !important;
+}
+
+.program-image-slider .slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 37px !important;
+  width: 37px !important;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.program-image-slider .slick-dots {
+  border-radius: 18px !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  text-align: center !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 20%;
+  max-width: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
+}
+
+.program-image-slider .slick-dots .slick-active::after {
+  content: "";
+  border-width: 6px;
+  border-style: solid;
+  border-color: #4a4a4a transparent transparent transparent;
+  position: absolute;
+  left: 32%;
+  bottom: -38%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.program-image-slider .slick-dots .slick-active::before {
+  content: "";
+  border-width: 6px;
+  border-style: solid;
+  border-color: #4a4a4a transparent transparent transparent;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, 100%);
+  transform: translate(-50%, -95%);
+}
+
+.program-image-slider .slick-dots .slick-active p {
+  color: #0097a9 !important;
+}
+
+.slider-pagination-item {
+  border: solid 3px #0097a9;
+  width: 39px;
+  height: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.program-image-slider .slick-dots li {
+  margin: 0 10px !important;
+}
+
+.slider-pagination-add {
+  width: 36.1px;
+  height: 36.1px;
+  border-radius: 2em;
+  background-color: #9b9b9b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider-pagination-add::before {
+  content: "+";
+  color: white;
+  font-size: 38px;
+  line-height: 0.8;
 }
 
 /*Tamaño de textos - responsive*/

@@ -20,6 +20,12 @@
   outline: none !important;
 }
 
+.table-input {
+  border: none;
+  width: 120px;
+  outline: none !important;
+}
+
 .insert-data:focus {
   color: $bluetxt;
   border-bottom: solid 2px $bluetxt;

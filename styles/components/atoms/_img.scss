@@ -19,6 +19,32 @@
   margin-left: auto;
   margin-right: auto;
 }
+.cursor-pointer {
+  cursor: pointer;
+}
+.add-photo {
+  z-index: 1;
+}
+.mb90{
+  margin-bottom: 90px;
+}
+#images-logo .add-photo {
+  width: 96px;
+}
+#images-logo .thumbnail-image-program{
+  width: 100%;
+}
+.image-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.thumbnail-image-program {
+  border-radius: 7px;
+}
+
 
 .Icon_paises {
   margin-right: 14px;
