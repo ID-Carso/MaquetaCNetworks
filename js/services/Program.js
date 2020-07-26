@@ -280,7 +280,7 @@ function getPrograms(date, country) {
           programCanalClaroEdit = `
           <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
           <img src="./images/General/pencil.svg" alt="" class="pencil">
-            <div class="schedule-container col-12 p-5 mx-auto">
+            <div class="schedule-container col-12 p-5 mx-auto mt-0">
             <p class="schedule-title a-text-plus a-text-black-brown-two">
                     
             TITULO
@@ -290,7 +290,7 @@ function getPrograms(date, country) {
                 <div class="schedule-poster">
                     <div class="poster">
                         <div class="thumbnail-prog" _id="">
-                        <img src="./images/General/image-synopsis-horizontal.png" class="thumbnail-image-program" />
+                        <img src="./images/General/image-synopsis-horizontal.png" class="thumbnail-image-program w-100" />
                         </div>
                     </div>
                 </div>
@@ -364,7 +364,7 @@ function getPrograms(date, country) {
           programCanalClaroEdit = `
           <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
           <img src="./images/General/pencil.svg" alt="" class="pencil">
-<div class="schedule-container col-12 p-5 mx-auto">
+<div class="schedule-container col-12 p-5 mx-auto mt-0">
   <p class="schedule-title  a-text-plus a-text-black-brown-two">
       
      TITULO
@@ -374,7 +374,7 @@ function getPrograms(date, country) {
   <div class="schedule-poster">
      <div class="poster">
           <div class="thumbnail-edit" _id="">
-          <img src="./images/General/image-synopsis-horizontal.png" class="thumbnail-image-program" />
+          <img src="./images/General/image-synopsis-horizontal.png" class="thumbnail-image-program w-100" />
           </div>
       </div>
   </div>
