@@ -1,6 +1,4 @@
-<head>
-    <?php include './views/partials/head.php' ?>
-</head>
+
 <footer>
 <div class="o-footer-section">
              <div class="row no-gutters terms-conditions-mobile">
