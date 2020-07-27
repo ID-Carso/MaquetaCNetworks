@@ -4445,6 +4445,25 @@ input[type="radio"]:checked + .mujer-estilo {
   display: none;
 }
 
+.claro-navbar-black-edi {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 9px 9px 9px 250px !important;
+  margin-left: -25px;
+  border-radius: 20px;
+}
+
+.menu-desktop-edi {
+  position: absolute;
+  width: 100%;
+  padding: 55px 131px;
+  z-index: 2;
+}
+
+.nav-content-edi {
+  margin: 0 35px 0 80px;
+  position: relative;
+}
+
 .tv-list {
   list-style: none;
   display: -webkit-box;
@@ -4985,20 +5004,6 @@ input[type="radio"]:checked + .mujer-estilo {
   width: 100%;
   left: 0;
   top: 70%;
-}
-
-.claro-navbar-black-edi {
-  background: rgba(255, 255, 255, 0.8);
-  padding: 9px 9px 9px 250px !important;
-  margin-left: -25px;
-  border-radius: 20px;
-}
-
-.menu-desktop-edi {
-  position: absolute;
-  width: 100%;
-  padding: 55px 220px;
-  z-index: 2;
 }
 
 .program-image-slider .slick-slide {

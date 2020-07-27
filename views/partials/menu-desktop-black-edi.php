@@ -1,5 +1,5 @@
 <nav class="menu-desktop-edi">
-    <div class="nav-content">
+    <div class="nav-content-edi">
         <div class="claro-logo">
 
             <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
