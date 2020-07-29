@@ -130,7 +130,7 @@
     </header>
     <div class="pro-container">
         <main class="programacion">
-            <p class="programacion-main-title pb-4">Programación</p>
+            <p class="programacion-main-title pt-0 pb-4">Programación</p>
             <div class="o-tv-section programming-container">
                 <div class="d-flex justify-content-center">
             <div class=" p-3 border-t border-l border-r border-b position-relative d-inline-block mx-auto">      
