@@ -82,32 +82,28 @@
                 ?>
             </div>
             <?php
-            include './views/partials/menu-desktop-black-edi.php'
-            ?>
-              
+            include './views/partials/menu-desktop-black.php'
+            ?>             
                 <!--dots-->
-                <div class="programming-slider-dots">
-
-                </div>
+               
                 
-            
-            <div class="program-image-slider mt-3 mx-auto" > <!--base-->
-          
-            <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:90%;">
+                <div class="program-image-slider  mx-auto" > <!--base-->  
+                     
+            <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
                         <input type="file" name="image_background_1" id="image_logo" class="input-image-program d-none">
                         <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
                        <!-- <span class="a-text-bold-warm text-plus mb90 shadow-contrast add-photo">472px X 295px</span>-->
                         <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
                         </label>
                     </div>
-                    <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:90%;">
+                    <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
                         <input type="file" name="image_background_1" id="image_logo" class="input-image-program d-none">
                         <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
                      <!--   <span class="a-text-bold-warm text-plus mb90 shadow-contrast add-photo">472px X 295px</span>-->
                         <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
                         </label>
                     </div>
-                    <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:90%;">
+                    <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
                         <input type="file" name="image_background_1" id="image_logo" class="input-image-program d-none">
                         <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
                      <!--   <span class="a-text-bold-warm text-plus  mb90 shadow-contrast add-photo">472px X 295px</span>-->
@@ -122,9 +118,15 @@
                         <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
                         </label>
                     </div>
-            
+                    
                   </div>
+                  <div class="d-flex">
+                <div class="programming-slider-dots space-do">  <div class="d-block spaceplus col-1">   <div class='  ml-2 cursor-pointer slider-pagination-add' >  </div> </div>   </div> 
+                
+                     
+                </div>
         </div>
+   
     </header>
     <div class="pro-container">
         <main class="programacion">

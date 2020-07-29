@@ -91,3 +91,13 @@
 .espacio-bottom {
   margin-bottom: 0px;
 }
+.space-do{
+  transform: translateY(1000px);
+    display: contents;
+}
+.spaceplus{
+  transform: translate(894px, -104px);
+    /* display: contents; */
+    z-index: 4;
+   
+}

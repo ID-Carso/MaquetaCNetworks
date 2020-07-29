@@ -363,7 +363,7 @@
   margin: 0;
   width: 100%;
   left: 0;
-  top: 70%;
+  top: 60%;
   z-index: 1;
 }
 
@@ -392,6 +392,7 @@
   display: flex;
   justify-content: center;
   padding: 15px;
+  padding-right: 50px;
   width: max-content;
   height: 20%;
   max-width: 100%;
@@ -441,12 +442,11 @@
   margin: 0 10px !important;
 }
 .slider-pagination-add {
-
   width: 40.1px;
   height: 40.1px;
 border-radius: 2em;
   background-color: $cinemaRectangle;
-
+  text-align: center;
   align-items: center;
   justify-content: center;
 }
@@ -456,4 +456,8 @@ border-radius: 2em;
   font-size: 38px;
     line-height: 0.8;
 }
- 
+ .selctteal{
+   color:white !important;
+   background-color: $cinemaRectangle;
+  
+ }

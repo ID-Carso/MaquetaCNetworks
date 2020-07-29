@@ -197,6 +197,19 @@ h6 {
   margin-bottom: 0px;
 }
 
+.space-do {
+  -webkit-transform: translateY(1000px);
+          transform: translateY(1000px);
+  display: contents;
+}
+
+.spaceplus {
+  -webkit-transform: translate(894px, -104px);
+          transform: translate(894px, -104px);
+  /* display: contents; */
+  z-index: 4;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 .a-our-vision-title, .a-claro-channel-title, .a-concert-channel-title, .a-concert-channel-subtitle, .a-claro-channel-subtitle-bold, .a-subtitle, .a-claro-cinema-title, .advertising-title, .advertising-subtitle, .a-claro-sports-title, .a-claro-channel-subtitle,
@@ -5003,7 +5016,7 @@ input[type="radio"]:checked + .mujer-estilo {
   margin: 0;
   width: 100%;
   left: 0;
-  top: 70%;
+  top: 60%;
   z-index: 1;
 }
 
@@ -5036,6 +5049,7 @@ input[type="radio"]:checked + .mujer-estilo {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 15px;
+  padding-right: 50px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -5100,6 +5114,7 @@ input[type="radio"]:checked + .mujer-estilo {
   height: 40.1px;
   border-radius: 2em;
   background-color: #0097a9;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -5113,6 +5128,11 @@ input[type="radio"]:checked + .mujer-estilo {
   color: white;
   font-size: 38px;
   line-height: 0.8;
+}
+
+.selctteal {
+  color: white !important;
+  background-color: #0097a9;
 }
 
 /*Tamaño de textos - responsive*/
