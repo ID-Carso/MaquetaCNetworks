@@ -280,50 +280,49 @@ function getPrograms(date, country) {
           programCanalClaroEdit = `
           <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
           <img src="./images/General/pencil.svg" alt="" class="pencil">
-            <div class="schedule-container col-12 p-5 mx-auto mt-0">
-            <p class="schedule-title a-text-plus a-text-black-brown-two">
-                    
-            TITULO
+<div class="schedule-container col-12 p-5 mx-auto mt-0">
+  <p class="schedule-title  a-text-plus a-text-black-brown-two">
+      
+  ${program.chapter_title}
+     
+  </p>
+<div class="schedule-item-body">
+  <div class="schedule-poster">
+     <div class="poster">
+          <div class="thumbnail-edit" _id="${program.chapter_id}">
+          <img src="${program.image}" alt="">
+          </div>
+      </div>
+  </div>
+  <div class="schedule-details">
+      <div class="schedule-details-header">
+          <div>
+              <p class="schedule a-text-black-brown-two">
+                  
+              ${program.time} hrs.
+                  
+              </p>
+              <p class="rating"> 
+                
+                      Clasificación: A
+                 
+              </p>
+          </div>
+          <div>
+          <button title="Agregar a mi lista" class="button-none add-favorites programing-button" type="button" _id="">
+          <svg  xmlns="http://www.w3.org/2000/svg" width="48" height="44" viewBox="0 0 48 44">
+              <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+          </svg>
+          </button>
+          </div>
+      </div>
+    
+      ${program.sinopsis}
+  </div>
+</div>
+</div>
+</div> `;
 
-            </p>
-            <div class="schedule-item-body">
-                <div class="schedule-poster">
-                    <div class="poster">
-                        <div class="thumbnail-prog" _id="">
-                        <img src="./images/General/image-synopsis-horizontal.png" class="thumbnail-image-program w-100" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="schedule-details">
-                    <div class="schedule-details-header">
-                        <div>
-                            <p class="schedule a-text-black-brown-two">
-                                
-                            00:00 - 00:00 
-                            </p>
-                            <p class="rating">Clasificación: A</p>
-                        </div>
-                        <div>
-                        <button title="Eliminar de mi lista" class="button-none remove-program programing-button" type="button" _id="${program.chapter_id}">
-                        <svg  xmlns="http://www.w3.org/2000/svg" width="48" height="44" viewBox="0 0 48 44">
-                            <path class="heart-gray-filled" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
-                        </svg>
-                        </button>
-                        </div>
-                    </div>
-                    <p class="schedule-description">
-                    
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
-                    
-                    </p>
-                </div>
-            </div>
-
-        </div>
-        </div>
-           `;
 
           programCanalClaro = `
             <div class="schedule-container">
@@ -367,14 +366,14 @@ function getPrograms(date, country) {
 <div class="schedule-container col-12 p-5 mx-auto mt-0">
   <p class="schedule-title  a-text-plus a-text-black-brown-two">
       
-     TITULO
+  ${program.chapter_title}
      
   </p>
 <div class="schedule-item-body">
   <div class="schedule-poster">
      <div class="poster">
-          <div class="thumbnail-edit" _id="">
-          <img src="./images/General/image-synopsis-horizontal.png" class="thumbnail-image-program w-100" />
+          <div class="thumbnail-edit" _id="${program.chapter_id}">
+          <img src="${program.image}" alt="">
           </div>
       </div>
   </div>
@@ -383,7 +382,7 @@ function getPrograms(date, country) {
           <div>
               <p class="schedule a-text-black-brown-two">
                   
-                      00:00 - 00:00 
+              ${program.time} hrs.
                   
               </p>
               <p class="rating"> 
@@ -401,9 +400,7 @@ function getPrograms(date, country) {
           </div>
       </div>
     
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
-      
+      ${program.sinopsis}
   </div>
 </div>
 </div>

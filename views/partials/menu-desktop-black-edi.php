@@ -13,7 +13,7 @@
 
         </div>
     </div>
-    <div class="claro-navbar mt-0 claro-navbar-black-edi">
+    <div class="claro-navbar mt-4 claro-navbar-black-edi">
         <div>
             <a href="" class="navbar-link text-decoration-none">
                 <p class="navbar-item-black text-semibold">Canal Claro</p>

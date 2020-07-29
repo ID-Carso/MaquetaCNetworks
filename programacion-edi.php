@@ -84,20 +84,33 @@
             <?php
             include './views/partials/menu-desktop-black-edi.php'
             ?>
-            <div class="program-image-slider mt-3 col-12 mx-auto" > <!--base-->
+              
+                <!--dots-->
+                <div class="programming-slider-dots">
+
+                </div>
+                
+            
+            <div class="program-image-slider mt-3 mx-auto" > <!--base-->
+          
             <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:90%;">
                         <input type="file" name="image_background_1" id="image_logo" class="input-image-program d-none">
                         <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
-                        <img src="./images/General/camara.svg" alt="add-photo"  class=" cursor-pointer add-photo"/>
-                        <span class="a-text-bold-warm text-plus mb90 shadow-contrast add-photo">472px X 295px</span>
+                       <!-- <span class="a-text-bold-warm text-plus mb90 shadow-contrast add-photo">472px X 295px</span>-->
                         <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
                         </label>
                     </div>
                     <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:90%;">
                         <input type="file" name="image_background_1" id="image_logo" class="input-image-program d-none">
                         <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
-                        <img src="./images/General/camara.svg" alt="add-photo"  class=" cursor-pointer add-photo"/>
-                        <span class="a-text-bold-warm text-plus mb90 shadow-contrast add-photo">472px X 295px</span>
+                     <!--   <span class="a-text-bold-warm text-plus mb90 shadow-contrast add-photo">472px X 295px</span>-->
+                        <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                        </label>
+                    </div>
+                    <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:90%;">
+                        <input type="file" name="image_background_1" id="image_logo" class="input-image-program d-none">
+                        <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
+                     <!--   <span class="a-text-bold-warm text-plus  mb90 shadow-contrast add-photo">472px X 295px</span>-->
                         <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
                         </label>
                     </div>
@@ -109,92 +122,58 @@
                         <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
                         </label>
                     </div>
-                    <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:90%;">
-                        <input type="file" name="image_background_1" id="image_logo" class="input-image-program d-none">
-                        <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
-                        <img src="./images/General/camara.svg" alt="add-photo"  class=" cursor-pointer add-photo"/>
-                        <span class="a-text-bold-warm text-plus  mb90 shadow-contrast add-photo">472px X 295px</span>
-                        <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
-                        </label>
-                    </div>
-                              </div>
+            
+                  </div>
         </div>
     </header>
     <div class="pro-container">
         <main class="programacion">
-            <p class="programacion-main-title">Programación</p>
+            <p class="programacion-main-title pb-4">Programación</p>
             <div class="o-tv-section programming-container">
                 <div class="d-flex justify-content-center">
             <div class=" p-3 border-t border-l border-r border-b position-relative d-inline-block mx-auto">      
             <img src="./images/General/pencil.svg" alt="" class="pencil">
                 <div class="row no-gutters col-12">
-                    <ul class="tv-list  " >
+                    <ul class="tv-list ">
                         <div class=" text-center no-gap  mr-2">
-                            <li class="active-navItem d-inline-block">
+                            <li class="active-navItem d-inline-block" style="width: 200px !important;">
                                <!-- <img class="claro-nav-image" src="./images/home/tv-1.svg" alt="" />-->
                                <div class="bor mx-auto position-relative thumbnail-image-program" id="images-logo">
                                 <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none"> <!--class to update image-->
-                                <label for="imagelogo" class="mb-0 cursor-pointer d-flex justify-content-center align-items-center h-100 flex-column">
-                                    <img src="./images/General/image-synopsis-horizontal.png" class="thumbnail-image-program"style="width:92%" />
-
+                                <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-3 justify-content-center align-items-center h-100 flex-column">
+                                <img class="claro-nav-image thumbnail-image-program" src="./images/home/tv-1.svg" alt="" />
                             <!--    <span class="a-text-bold-warm text-plus mt-5 mb-5 shadow-contrast">472px X 295px</span>-->
                                 </label>
                             </div>
                             </li>
                         </div>
                         <div class=" text-center no-gap border-r border-l">
-                            <li rel="concert-channel-programing" class="nav-li d-inline-block">
+                            <li rel="concert-channel-programing" class="nav-li d-inline-block" style="width: 200px !important;">
                               <!--  <img class="nav-image" src="./images/home/tv-2.svg" alt="" />-->
                               <div class="bor mx-auto position-relative thumbnail-image-program" id="images-logo">
                                 <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none"> <!--class to update image-->
-                                <label for="imagelogo" class="mb-0 cursor-pointer d-flex justify-content-center align-items-center h-100 flex-column">
-                                    <img src="./images/General/image-synopsis-horizontal.png" class="thumbnail-image-program" />
+                                <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-3 justify-content-center align-items-center h-100 flex-column">
+                                    <img class="nav-image thumbnail-image-program" src="./images/home/tv-2.svg" alt="" />
 
                            <!--    <span class="a-text-bold-warm text-plus mt-5 mb-5 shadow-contrast">472px X 295px</span>-->
                                 </label>
                             </div>
                             </li>
                         </div>
-                        <div class=" text-center no-gap border-r">
-                            <li rel="claro-cinema-programing" class="nav-li d-inline-block">
+                        <div class=" text-center no-gap ">
+                            <li rel="claro-cinema-programing" class="nav-li d-inline-block" style="width: 200px !important;">
                              <!--   <img class="nav-image" src="./images/home/tv-3.svg" alt="" />-->
                              <div class="bor mx-auto position-relative thumbnail-image-program" id="images-logo">
                                 <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none"> <!--class to update image-->
-                                <label for="imagelogo" class="mb-0 cursor-pointer d-flex justify-content-center align-items-center h-100 flex-column">
-                                    <img src="./images/General/image-synopsis-horizontal.png" class="thumbnail-image-program" />
-
+                                <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-3 justify-content-center align-items-center h-100 flex-column">
+                                    <img class=" nav-image thumbnail-image-program" src="./images/home/tv-3.svg" alt="" />
                          <!--      <span class="a-text-bold-warm text-plus mt-5 mb-5 shadow-contrast">472px X 295px</span>-->
                                 </label>
                             </div>
                             </li>
                         </div>
-                        <div class=" text-center no-gap border-r">
-                            <li rel="claro-cinema-programing" class="nav-li d-inline-block">
-                             <!--   <img class="nav-image" src="./images/home/tv-3.svg" alt="" />-->
-                             <div class="bor mx-auto position-relative thumbnail-image-program" id="images-logo">
-                                <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none"> <!--class to update image-->
-                                <label for="imagelogo" class="mb-0 cursor-pointer d-flex justify-content-center align-items-center h-100 flex-column">
-                                    <img src="./images/General/image-synopsis-horizontal.png" class="thumbnail-image-program" />
-
-                             <!--   <span class="a-text-bold-warm text-plus mt-5 mb-5 shadow-contrast">472px X 295px</span>-->
-                                </label>
-                            </div>
-                            </li>
-                        </div>
-                        <div class=" text-center no-gap">
-                            <li rel="claro-cinema-programing" class="nav-li d-inline-block">
-                             <!--   <img class="nav-image" src="./images/home/tv-3.svg" alt="" />-->
-                             <div class="bor mx-auto position-relative thumbnail-image-program" id="images-logo">
-                                <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none"> <!--class to update image-->
-                                <label for="imagelogo" class="mb-0 cursor-pointer d-flex justify-content-center align-items-center h-100 flex-column">
-                                    <img src="./images/General/image-synopsis-horizontal.png" class="thumbnail-image-program" />
-
-                            <!--    <span class="a-text-bold-warm text-plus mt-5 mb-5 shadow-contrast">472px X 295px</span>-->
-                                </label>
-                            </div>
-                            </li>
-                        </div>
-
+                       
+                       
 
                     </ul>
                 </div>

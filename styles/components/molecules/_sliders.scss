@@ -352,9 +352,9 @@
 }
 
 .program-image-slider {
-  width: 1000px !important;
+  width: 100% !important;
 }
-.program-image-slider  .slick-dots {
+.programming-slider-dots  .slick-dots {
   position: absolute;
   list-style: none;
   display: block;
@@ -364,9 +364,8 @@
   width: 100%;
   left: 0;
   top: 70%;
-  
+  z-index: 1;
 }
- 
 
 .program-image-slider .slick-slide {
   height: 342px !important;
@@ -376,7 +375,7 @@
   height: 100% !important;
 }
 
-.program-image-slider .slick-dots  li {
+.programming-slider-dots .slick-dots  li {
   position: relative;
   display: inline-block;
   height: 37px !important;
@@ -386,7 +385,7 @@
   cursor: pointer;
   
 }
-.program-image-slider .slick-dots{
+.programming-slider-dots .slick-dots{
   border-radius: 18px !important;
   background: rgba(255, 255, 255, 0.8) !important;
   text-align: center !important;
@@ -400,11 +399,11 @@
   left: 50%;
   transform: translatex(-50%);
 
-}
+} 
 
 
 
-.program-image-slider .slick-dots .slick-active::after {
+.programming-slider-dots .slick-dots .slick-active::after {
   content: "";
   border-width: 6px;
   border-style: solid;
@@ -414,7 +413,7 @@
   bottom: -38%;
   transform: rotate(180deg);
 }
-.program-image-slider .slick-dots .slick-active::before {
+.programming-slider-dots .slick-dots .slick-active::before {
   content: "";
   border-width: 6px;
   border-style: solid;
@@ -425,28 +424,29 @@
   -webkit-transform: translate(-50%, 100%);
   transform: translate(-50%, -95%);
 }
-.program-image-slider .slick-dots .slick-active p {
-  color: #0097a9 !important;
+.programming-slider-dots .slick-dots .slick-active p {
+  color:$cinemaRectangle ;
+  font-family: $montserratBlack;
 }
 
 .slider-pagination-item {
-  border: solid 3px #0097a9;
+  border: solid 3px $cinemaRectangle;
   width: 39px;
   height: 39px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.program-image-slider  .slick-dots li {
+.programming-slider-dots  .slick-dots li {
   margin: 0 10px !important;
 }
 .slider-pagination-add {
 
-  width: 36.1px;
-  height: 36.1px;
+  width: 40.1px;
+  height: 40.1px;
 border-radius: 2em;
-  background-color: $warmgrey;
-  display: flex;
+  background-color: $cinemaRectangle;
+
   align-items: center;
   justify-content: center;
 }
