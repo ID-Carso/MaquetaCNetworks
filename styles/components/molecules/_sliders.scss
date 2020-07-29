@@ -350,12 +350,16 @@
     margin-bottom: 0px !important;
   }
 }
-
+.programming-dots{
+  border-radius: 18px !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  top: 70%;
+}
 .program-image-slider {
   width: 100% !important;
 }
 .programming-slider-dots  .slick-dots {
-  position: absolute;
+  position: initial;
   list-style: none;
   display: block;
   text-align: center;
@@ -386,19 +390,18 @@
   
 }
 .programming-slider-dots .slick-dots{
-  border-radius: 18px !important;
-  background: rgba(255, 255, 255, 0.8) !important;
+  
   text-align: center !important;
   display: flex;
   justify-content: center;
   padding: 15px;
-  padding-right: 50px;
+  padding-right: 0px;
   width: max-content;
   height: 20%;
   max-width: 100%;
-  position: absolute;
-  left: 50%;
-  transform: translatex(-50%);
+  //position: absolute;
+  //left: 50%;
+  //transform: translatex(-50%);
 
 } 
 
@@ -441,22 +444,8 @@
 .programming-slider-dots  .slick-dots li {
   margin: 0 10px !important;
 }
-.slider-pagination-add {
-  width: 40.1px;
-  height: 40.1px;
-border-radius: 2em;
-  background-color: $cinemaRectangle;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-.slider-pagination-add::before{
-  content: "+";
-  color: white;
-  font-size: 38px;
-    line-height: 0.8;
-}
- .selctteal{
+
+ .selteal{
    color:white !important;
    background-color: $cinemaRectangle;
   

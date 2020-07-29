@@ -120,11 +120,13 @@
                     </div>
                     
                   </div>
-                  <div class="d-flex">
-                <div class="programming-slider-dots space-do">  <div class="d-block spaceplus col-1">   <div class='  ml-2 cursor-pointer slider-pagination-add' >  </div> </div>   </div> 
-                
-                     
-                </div>
+                  <div class="d-inline-block position-absolute programming-dots space-do">
+                <div class=" d-inline-block position-relative programming-slider-dots align-items-center">  
+                     </div> 
+                     <img src="./images/General/plus.svg" alt=""class="cursor-pointer slider-pagination-add mr-3"style="width:42px">  
+
+                    
+          </div>
         </div>
    
     </header>

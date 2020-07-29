@@ -2161,18 +2161,14 @@ $(".program-image-slider").slick({
 
 
 //para dar click
-$(".pag").click(function () {
-  if (
-      $(this).hasClass("slider-pagination-item") &
-      $(this).hasClass("a-text-bold-tealblue")
-    ) {
+const pagination = $(".pag");
+$(".pag").click(function () {  
+      pagination.removeClass("selteal");   
       $(this)
-          .addClass("selctteal");     
-  }
+      .addClass("selteal");
+  
 });
 
- 
-//end
 var slideIndex = 4;
 $(".slider-pagination-add").click(function () {
   //Cada vez que se haga click, el contador incrementa
