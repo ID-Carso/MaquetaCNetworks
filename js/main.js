@@ -2146,36 +2146,20 @@ $(".program-image-slider").slick({
   initialSlide: 0,
   infinite: false,
   arrows: false,
-
+ 
   customPaging: function(slider, i) {
       var thumb = $(slider.$slides[i]).data();
       return (
 
           " <p class='a-text-bold-tealblue slider-pagination-item pag '> " +
           (i + 1) +
-          "</p> "
+          "</p>´ "
       );
     
   }
 });
 
-var slideIndex = 4;
-$(".slider-pagination-add").click(function () {
-  //Cada vez que se haga click, el contador incrementa
-  slideIndex++;
-  //Agregamos un slide al slider de programación
-  $('.program-image-slider').slick('slickAdd',`<div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:90%;">
-  <input type="file" name="image_background${slideIndex}" id="image_logo${slideIndex}" class="input-image-program d-none">
-  <label for="image_logo${slideIndex}" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
-  <img src="./images/General/camara.svg" alt="add-photo"  class=" cursor-pointer add-photo"/>
-  <span class="a-text-bold-warm text-plus  mb90 shadow-contrast add-photo">472px X 295px</span>
-  <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
-  </label>
-</div>`);
- 
-    })
-    
-  
+
 //para dar click
 $(".pag").click(function () {
   if (
@@ -2185,8 +2169,27 @@ $(".pag").click(function () {
       $(this)
           .addClass("selctteal");     
   }
-
 });
 
  
 //end
+var slideIndex = 4;
+$(".slider-pagination-add").click(function () {
+  //Cada vez que se haga click, el contador incrementa
+  slideIndex++;
+  //Agregamos un slide al slider de programación
+  $('.program-image-slider').slick('slickAdd',`
+  <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:90%;">
+  <input type="file" name="image_background${slideIndex}" id="image_logo${slideIndex}" class="input-image-program d-none">
+  <label for="image_logo${slideIndex}" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
+  <img src="./images/General/camara.svg" alt="add-photo"  class=" cursor-pointer add-photo"/>
+  <span class="a-text-bold-warm text-plus  mb90 shadow-contrast add-photo">472px X 295px</span>
+  <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+  </label>
+</div>
+
+  `);
+ 
+    })
+    
+  
