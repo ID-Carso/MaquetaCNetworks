@@ -1555,12 +1555,24 @@ $(document).ready(function () {
 
   let date = new Date();
   let day = date.getDate();
-  let month = date.getMonth();
+  let month = date.getMonth() + 1;
   let year = date.getFullYear();
   let hour = date.getHours();
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
-  let currentDate = "2020-07-03";
+  //let currentDate = `${year}-${month}-${day}`;
+
+  if (day < 10) {
+    day = "0" + date.getDate();
+  }
+
+  if (month < 10) {
+    month = "0" + (date.getMonth() + 1);
+  }
+
+  console.log(month);
+
+  let currentDate = `${year}-${month}-${day}`;
   let currentTime = `${hour}:${minutes}`;
   getPrograms(currentDate, getNameCountry(sessionSrc));
   /*menu responsive*/
@@ -2138,6 +2150,7 @@ window.onresize = function () {
 $(".program-image-slider").slick({
   slidesToShow: 1,
   dots: true,
+  appendDots: $(".programming-slider-dots"),
   initialSlide: 0,
   infinite: false,
   arrows: false,
@@ -2145,12 +2158,37 @@ $(".program-image-slider").slick({
   customPaging: function (slider, i) {
     var thumb = $(slider.$slides[i]).data();
     return (
-      " <p class='a-text-bold-tealblue slider-pagination-item'> " +
+      " <p class='a-text-bold-tealblue slider-pagination-item pag '> " +
       (i + 1) +
       "</p>´ "
     );
   },
 });
-$(".program-image-slider .slick-dots").append(
-  `<li class="slider-pagination-add "> </li>`
-);
+
+//para dar click
+const pagination = $(".pag");
+$(".pag").click(function () {
+  pagination.removeClass("selteal");
+  $(this).addClass("selteal");
+});
+
+var slideIndex = 4;
+$(".slider-pagination-add").click(function () {
+  //Cada vez que se haga click, el contador incrementa
+  slideIndex++;
+  //Agregamos un slide al slider de programación
+  $(".program-image-slider").slick(
+    "slickAdd",
+    `
+  <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:90%;">
+  <input type="file" name="image_background${slideIndex}" id="image_logo${slideIndex}" class="input-image-program d-none">
+  <label for="image_logo${slideIndex}" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
+  <img src="./images/General/camara.svg" alt="add-photo"  class=" cursor-pointer add-photo"/>
+  <span class="a-text-bold-warm text-plus  mb90 shadow-contrast add-photo">472px X 295px</span>
+  <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+  </label>
+</div>
+
+  `
+  );
+});

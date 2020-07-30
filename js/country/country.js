@@ -1,5 +1,6 @@
 function getNameCountry(image) {
   let url = image.split("/");
+
   let imageCountry = url[url.length - 1];
   let nameCountry = "";
   switch (imageCountry) {
