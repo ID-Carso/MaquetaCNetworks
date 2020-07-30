@@ -91,30 +91,26 @@
                 <!--base-->
 
                 <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
-                    <input type="file" name="image_background_1" id="image_logo" class="input-image-program d-none">
+                  <!--  <input type="file" name="image_background_1" id="image_logo" class="input-image-program d-none">-->
                     <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
                         <!-- <span class="a-text-bold-warm text-plus mb90 shadow-contrast add-photo">472px X 295px</span>-->
                         <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
                     </label>
                 </div>
                 <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
-                    <input type="file" name="image_background_1" id="image_logo" class="input-image-program d-none">
                     <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
                         <!--   <span class="a-text-bold-warm text-plus mb90 shadow-contrast add-photo">472px X 295px</span>-->
                         <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
                     </label>
                 </div>
                 <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
-                    <input type="file" name="image_background_1" id="image_logo" class="input-image-program d-none">
                     <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
                         <!--   <span class="a-text-bold-warm text-plus  mb90 shadow-contrast add-photo">472px X 295px</span>-->
                         <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
                     </label>
                 </div>
-                <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:90%;">
-                    <input type="file" name="image_background_1" id="image_logo" class="input-image-program d-none">
+                <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
                     <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
-                        <img src="./images/General/camara.svg" alt="add-photo" class=" cursor-pointer add-photo" />
                         <span class="a-text-bold-warm text-plus  mb90 shadow-contrast add-photo">472px X 295px</span>
                         <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
                     </label>
@@ -144,7 +140,7 @@
                                     <li class="active-navItem d-inline-block" style="width: 200px !important;">
                                         <!-- <img class="claro-nav-image" src="./images/home/tv-1.svg" alt="" />-->
                                         <div class="bor mx-auto position-relative thumbnail-image-program" id="images-logo">
-                                            <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">
+                                           <!-- <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
                                             <!--class to update image-->
                                             <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-3 justify-content-center align-items-center h-100 flex-column">
                                                 <img class="claro-nav-image thumbnail-image-program" src="./images/home/tv-1.svg" alt="" />
@@ -157,7 +153,7 @@
                                     <li rel="concert-channel-programing" class="nav-li d-inline-block" style="width: 200px !important;">
                                         <!--  <img class="nav-image" src="./images/home/tv-2.svg" alt="" />-->
                                         <div class="bor mx-auto position-relative thumbnail-image-program" id="images-logo">
-                                            <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">
+                                          <!--  <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
                                             <!--class to update image-->
                                             <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-3 justify-content-center align-items-center h-100 flex-column">
                                                 <img class="nav-image thumbnail-image-program" src="./images/home/tv-2.svg" alt="" />
@@ -171,7 +167,7 @@
                                     <li rel="claro-cinema-programing" class="nav-li d-inline-block" style="width: 200px !important;">
                                         <!--   <img class="nav-image" src="./images/home/tv-3.svg" alt="" />-->
                                         <div class="bor mx-auto position-relative thumbnail-image-program" id="images-logo">
-                                            <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">
+                                          <!--  <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
                                             <!--class to update image-->
                                             <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-3 justify-content-center align-items-center h-100 flex-column">
                                                 <img class=" nav-image thumbnail-image-program" src="./images/home/tv-3.svg" alt="" />
