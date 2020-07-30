@@ -353,7 +353,7 @@
 .programming-dots{
   border-radius: 18px !important;
   background: rgba(255, 255, 255, 0.8) !important;
-  top: 70%;
+  top: 75%;
 }
 .program-image-slider {
   width: 100% !important;
@@ -372,13 +372,18 @@
 }
 
 .program-image-slider .slick-slide {
-  height: 342px !important;
+  height: 522.71px !important;
+}
+.slick-initialized .slick-slide{
+  margin: 0px !important;
 }
 
 .program-image-slider .slick-slide div {
   height: 100% !important;
+} 
+.program-image-slider .slick-track{
+  width: 6700px !important;
 }
-
 .programming-slider-dots .slick-dots  li {
   position: relative;
   display: inline-block;
