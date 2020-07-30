@@ -123,7 +123,7 @@
             <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
           </div>
           <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ">
-            <a href="programacion.php"><button class="btn-claro-canal a-text-white-semibold btn-tomato">VER PROGRAMACIÓN</button></a>
+            <button class="btn-claro-canal a-text-white-semibold btn-tomato" id="ver-programacion">VER PROGRAMACIÓN</button>
           </div>
         </div>
 
@@ -239,7 +239,16 @@ include './views/partials/modal-program.php'
       console.log(hey);
 
       socket.postMessage(hey)
+
     }
+  });
+
+  $("#ver-programacion").click(function() {
+    let info = {
+      id: 5,
+      type: "program"
+    }
+    socket.postMessage(info);
   });
 </script>
 
