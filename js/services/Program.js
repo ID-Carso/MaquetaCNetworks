@@ -108,7 +108,6 @@ function getPrograms(date, country) {
   let nowSliderClaroSports = $("#tv-sports-slider");
 
   //CON CUADROS PARA EDITAR
-
   let nowSliderCanalClaroprev = $(".today-claro-slider-prev");
   let nowSliderConcertChannelprev = $(".today-concert-channel-slider-prev");
   let nowSliderClaroCinemaprev = $(".today-claro-cinema-slider-prev");
@@ -180,7 +179,7 @@ function getPrograms(date, country) {
       destroySlider(nowSliderClaroCinemaprev);
       destroySlider(nowSliderNuestraVisionprev);
       destroySlider(nowSliderClaroSportsprev);
-
+      let programCanalClaroEdit = "";
       programingCanalClaro.forEach((program, index) => {
         let programCanalClaro;
         if (index == 0) {
@@ -274,10 +273,8 @@ function getPrograms(date, country) {
 
         /* PROGRAMACIÓN GENERAL*/
         /* CANAL CLARO*/
-
-        let programCanalClaroEdit = "";
         if (arrayCanalClaro.includes(program.chapter_id)) {
-          programCanalClaroEdit = `
+          programCanalClaroEdit += `
           <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
           <img src="./images/General/pencil.svg" alt="" class="pencil">
 <div class="schedule-container col-12 p-5 mx-auto mt-0">
@@ -323,7 +320,6 @@ function getPrograms(date, country) {
 </div>
 </div> `;
 
-
           programCanalClaro = `
             <div class="schedule-container">
             <p class="schedule-title">${program.chapter_title}</p>
@@ -360,11 +356,11 @@ function getPrograms(date, country) {
             `;
         } else {
           //VARIABLE PARA EDITAR DESDE PROGRAMACIÓN GENERAL EN BACKOFFICE
-          programCanalClaroEdit = `
+          programCanalClaroEdit += `
           <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
           <img src="./images/General/pencil.svg" alt="" class="pencil">
-<div class="schedule-container col-12 p-5 mx-auto mt-0">
-  <p class="schedule-title  a-text-plus a-text-black-brown-two">
+        <div class="schedule-container col-12 p-5 mx-auto mt-0">
+        <p class="schedule-title  a-text-plus a-text-black-brown-two"> 
       
   ${program.chapter_title}
      
@@ -439,11 +435,13 @@ function getPrograms(date, country) {
         </div>
             `;
         }
-        console.log(programCanalClaro);
+        console.log(typeof programCanalClaroEdit);
         claroCotentProgramacionGeneral.append(programCanalClaro);
-        claroContentProgramacinGeneralEdit.append(programCanalClaroEdit);
+
         /* END PROGRAMACIÓN GENERAL - CANAL CLARO*/
       });
+
+      claroContentProgramacinGeneralEdit.html(programCanalClaroEdit);
 
       //CUADROS DE EDITAR DE LANDING
       //cuadros de editar

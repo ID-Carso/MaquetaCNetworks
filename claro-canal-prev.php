@@ -32,7 +32,6 @@
                         <button class="btn-claro-canal a-text-white-semibold btn-tomato">VER PROGRAMACIÓN</button>
                     </div>
                 </div>
-
                 <div class="today-videos-container">
                     <div class="section-slider today-claro-slider">
                     </div>

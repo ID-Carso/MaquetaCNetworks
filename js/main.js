@@ -1570,8 +1570,6 @@ $(document).ready(function () {
     month = "0" + (date.getMonth() + 1);
   }
 
-  console.log(month);
-
   let currentDate = `${year}-${month}-${day}`;
   let currentTime = `${hour}:${minutes}`;
   getPrograms(currentDate, getNameCountry(sessionSrc));
@@ -2059,6 +2057,8 @@ function recreateClickCalendar() {
     $("ul.claro-calendar .claro-item").removeClass("claro-active");
     $(this).addClass("claro-active");
     $(".claro-content").hide();
+    //Editar
+    $(".claro-content-edit").hide();
     var activeNav = $(this).attr("rel");
     let stringLength = activeNav.length;
     let month = activeNav.charAt(stringLength - 1);
@@ -2066,6 +2066,10 @@ function recreateClickCalendar() {
     $(".month").text(`${getMonthAndYear(month)}`);
     $("#" + activeNav).fadeIn();
   });
+  //Programación editar
+  $(".claro-content-edit").hide();
+  $(".claro-content-edit:first").show();
+  //Normal
   $(".claro-content").hide();
   $(".claro-content:first").show();
   $(".concert-content").hide();
