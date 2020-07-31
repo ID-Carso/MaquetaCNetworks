@@ -276,7 +276,7 @@ function getPrograms(date, country) {
         if (arrayCanalClaro.includes(program.chapter_id)) {
           programCanalClaroEdit += `
           <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
-          <img src="./images/General/pencil.svg" alt="" class="pencil">
+          <img src="./images/General/pencil.svg" alt="" class="pencil edit-program-pencil" chapter_id="${program.chapter_id}">
 <div class="schedule-container col-12 p-5 mx-auto mt-0">
   <p class="schedule-title  a-text-plus a-text-black-brown-two">
       
@@ -358,7 +358,7 @@ function getPrograms(date, country) {
           //VARIABLE PARA EDITAR DESDE PROGRAMACIÓN GENERAL EN BACKOFFICE
           programCanalClaroEdit += `
           <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
-          <img src="./images/General/pencil.svg" alt="" class="pencil">
+          <img src="./images/General/pencil.svg" alt="" class="pencil edit-program-pencil" chapter_id="${program.chapter_id}">
         <div class="schedule-container col-12 p-5 mx-auto mt-0">
         <p class="schedule-title  a-text-plus a-text-black-brown-two"> 
       
@@ -435,7 +435,6 @@ function getPrograms(date, country) {
         </div>
             `;
         }
-        console.log(typeof programCanalClaroEdit);
         claroCotentProgramacionGeneral.append(programCanalClaro);
 
         /* END PROGRAMACIÓN GENERAL - CANAL CLARO*/

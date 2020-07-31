@@ -2174,10 +2174,8 @@ $(".slider-pagination-add").click(function () {
   $(".program-image-slider").slick(
     "slickAdd",
     `
-  <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:90%;">
-  <input type="file" name="image_background${slideIndex}" id="image_logo${slideIndex}" class="input-image-program d-none">
+  <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
   <label for="image_logo${slideIndex}" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
-  <img src="./images/General/camara.svg" alt="add-photo"  class=" cursor-pointer add-photo"/>
   <span class="a-text-bold-warm text-plus  mb90 shadow-contrast add-photo">472px X 295px</span>
   <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
   </label>
