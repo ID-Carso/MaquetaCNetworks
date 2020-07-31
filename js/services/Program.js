@@ -273,6 +273,14 @@ function getPrograms(date, country) {
 
         /* PROGRAMACIÓN GENERAL*/
         /* CANAL CLARO*/
+        //para calculo de caracteres en sinopsis de programación general-edit
+        let keyValue = $(".schedule-description1").text();
+        if (keyValue.length > 339) {
+          let text = keyValue.substr(0, 339);
+          $(".schedule-description1").text(text);
+        } else {
+          $(".schedule-description1").text(keyValue);
+        }
         if (arrayCanalClaro.includes(program.chapter_id)) {
           programCanalClaroEdit += `
           <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
@@ -313,8 +321,10 @@ function getPrograms(date, country) {
           </button>
           </div>
       </div>
-    
-      ${program.sinopsis}
+      <div>
+      <span class="schedule-description1" id="synopsis-edi">     ${program.sinopsis}    </span>
+      <a href= "http://back.claronetworks.openofficedospuntocero.info/backoffice/public/landing/edit-program"><span class="text-normal cursor-pointer a-text-bold-tealblue"> Ver más...</span></a>
+</div>
   </div>
 </div>
 </div>
@@ -395,8 +405,10 @@ function getPrograms(date, country) {
           </button>
           </div>
       </div>
-    
-      ${program.sinopsis}
+      <div>
+      <span class="schedule-description1" id="synopsis-edi">     ${program.sinopsis}    </span>
+      <a href= "http://back.claronetworks.openofficedospuntocero.info/backoffice/public/landing/edit-program"><span class="text-normal cursor-pointer a-text-bold-tealblue"> Ver más...</span></a>
+</div>
   </div>
 </div>
 </div>
