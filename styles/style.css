@@ -5005,6 +5005,7 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .program-image-slider {
   width: 100% !important;
+  height: 522.71px !important;
 }
 
 .programming-slider-dots .slick-dots {
@@ -5024,12 +5025,9 @@ input[type="radio"]:checked + .mujer-estilo {
   height: 522.71px !important;
   margin: 0px !important;
 }
+
 .program-image-slider .slick-slide div {
   height: 100% !important;
-}
-
-.program-image-slider .slick-track {
-  width: 6700px !important;
 }
 
 .programming-slider-dots .slick-dots li {

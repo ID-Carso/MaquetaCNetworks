@@ -111,7 +111,6 @@
                 </div>
                 <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
                     <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
-                        <span class="a-text-bold-warm text-plus  mb90 shadow-contrast add-photo">472px X 295px</span>
                         <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
                     </label>
                 </div>
@@ -284,7 +283,9 @@
                     chapterId: chapterId,
                     type: type
                 }
-                socketProgramacion.postMessage(data);
+                var json = JSON.stringify(data);
+                socketProgramacion.postMessage(json);
+
             })
             $('.programacion-header').on("click", ".slider-pagination-item", function() {
                 let type = "slider-pagination";
@@ -292,7 +293,8 @@
                     id: 0,
                     type: type
                 }
-                socketProgramacion.postMessage(data);
+                var json = JSON.stringify(data);
+                socketProgramacion.postMessage(json);
             })
         </script>
 </body>
