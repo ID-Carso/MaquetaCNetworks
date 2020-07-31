@@ -1442,15 +1442,6 @@ $(document).ready(function () {
     dots: true,
   });
 
-  /*var header_slider = $(".header-slider").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: false,
-    dots: true,
-    centerMode: false,
-    arrows: false,
-  });*/
-
   var claro_slider = $(".claro-header-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -1560,7 +1551,6 @@ $(document).ready(function () {
   let hour = date.getHours();
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
-  //let currentDate = `${year}-${month}-${day}`;
 
   if (day < 10) {
     day = "0" + date.getDate();
