@@ -2164,7 +2164,7 @@ $(".program-image-slider").slick({
     return (
       " <p class='a-text-bold-tealblue slider-pagination-item pag '> " +
       (i + 1) +
-      "</p>´ "
+      "</p> "
     );
   },
 });
