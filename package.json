@@ -1,0 +1,23 @@
+{
+  "name": "maquetacnetworks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./js/main.js",
+    "build": "parcel build ./js/main.js -d dist --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ID-Carso/MaquetaCNetworks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ID-Carso/MaquetaCNetworks/issues"
+  },
+  "homepage": "https://github.com/ID-Carso/MaquetaCNetworks#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}

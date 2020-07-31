@@ -25,4 +25,4 @@
 <script src="./slick-master/slick/slick.min.js" defer></script>
 <!--<script src=" ./js/jquery.browser.js" defer></script>-->
 <script src="./js/lib/rellax.min.js" defer></script>
-<script src="./js/main.js?t=<?php echo time(); ?>" type="module" defer></script>
+<script src="./dist/main.js?t=<?php echo time(); ?>" defer></script>
