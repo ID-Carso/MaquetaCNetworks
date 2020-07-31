@@ -5022,9 +5022,6 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .program-image-slider .slick-slide {
   height: 522.71px !important;
-}
-
-.slick-initialized .slick-slide {
   margin: 0px !important;
 }
 
