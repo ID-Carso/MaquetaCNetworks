@@ -132,7 +132,7 @@
             <div class="o-tv-section programming-container">
                 <div class="d-flex justify-content-center">
                     <div class=" p-3 border-t border-l border-r border-b position-relative d-inline-block mx-auto">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil">
+                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-menu">
                         <div class="row no-gutters col-12">
                             <ul class="tv-list ">
                                 <div class=" text-center no-gap  mr-2">
@@ -289,6 +289,24 @@
             })
             $('.programacion-header').on("click", ".slider-pagination-item", function() {
                 let type = "slider-pagination";
+                let data = {
+                    id: 0,
+                    type: type
+                }
+                var json = JSON.stringify(data);
+                socketProgramacion.postMessage(json);
+            })
+            $('.schedule-description1').on("click", ".schedule-description1", function() {
+                let type = "synopsis";
+                let data = {
+                    id: 0,
+                    type: type
+                }
+                var json = JSON.stringify(data);
+                socketProgramacion.postMessage(json);
+            })
+            $('.pencil-menu').on("click", ".pencil-menu", function() {
+                let type = "menu-logos";
                 let data = {
                     id: 0,
                     type: type
