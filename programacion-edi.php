@@ -3,6 +3,7 @@
 
 <head>
     <?php include './views/partials/head.php' ?>
+    <script src="./js/backoffice/main.js?t=<?php echo time(); ?>" defer></script>
 </head>
 
 <body>
