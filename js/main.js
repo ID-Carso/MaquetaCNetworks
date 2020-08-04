@@ -87,6 +87,7 @@ if (day && month && year) {
 }
 
 $(document).ready(function () {
+ 
   let dateUTC = new Date();
   console.log(dateUTC.getUTCHours());
 
@@ -2180,6 +2181,6 @@ $(".slider-pagination-add").click(function () {
   </label>
 </div>
 
-  `
+  `     
   );
 });

@@ -118,6 +118,8 @@ function getPrograms(date, country) {
   let claroContentProgramacinGeneralEdit = $(".claro-content-edit");
   let concertContentProgramacionGeneral = $(".concert-content");
   let cinemaContentProgramacionGeneral = $(".cinema-content");
+   
+  
 
   $.ajax({
     type: "POST",
@@ -272,16 +274,12 @@ function getPrograms(date, country) {
         nowSliderCanalClaro.append(programCanalClaro);
 
         /* PROGRAMACIÓN GENERAL*/
+      
         /* CANAL CLARO*/
-        //para calculo de caracteres en sinopsis de programación general-edit
-        let keyValue = $(".schedule-description1").text();
-        if (keyValue.length > 339) {
-          let text = keyValue.substr(0, 339);
-          $(".schedule-description1").text(text);
-        } else {
-          $(".schedule-description1").text(keyValue);
-        }
+       
         if (arrayCanalClaro.includes(program.chapter_id)) {
+             //para calculo de caracteres en sinopsis de programación general-edit
+   
           programCanalClaroEdit += `
           <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
           <img src="./images/General/pencil.svg" alt="" class="pencil edit-program-pencil" chapter_id="${program.chapter_id}">
@@ -322,8 +320,8 @@ function getPrograms(date, country) {
           </div>
       </div>
       <div>
-      <span class="schedule-description1" id="synopsis-edi">     ${program.sinopsis}    </span>
-      <a href= "http://back.claronetworks.openofficedospuntocero.info/backoffice/public/landing/edit-program"><span class="text-normal cursor-pointer a-text-bold-tealblue"> Ver más...</span></a>
+      <span class="schedule-description s1" id="synopsis-edi">     ${program.sinopsis}    </span>
+      <span class="text-normal cursor-pointer a-text-bold-tealblue"> Ver más...</span>
 </div>
   </div>
 </div>
@@ -406,8 +404,8 @@ function getPrograms(date, country) {
           </div>
       </div>
       <div>
-      <span class="schedule-description1" id="synopsis-edi">     ${program.sinopsis}    </span>
-      <a href= "http://back.claronetworks.openofficedospuntocero.info/backoffice/public/landing/edit-program"><span class="text-normal cursor-pointer a-text-bold-tealblue"> Ver más...</span></a>
+      <span class="schedule-description s1" id="synopsis-edi">     ${program.sinopsis}    </span>
+    <span class="text-normal cursor-pointer a-text-bold-tealblue"> Ver más...</span>
 </div>
   </div>
 </div>
@@ -456,6 +454,18 @@ function getPrograms(date, country) {
 
       //CUADROS DE EDITAR DE LANDING
       //cuadros de editar
+      let keyValue = $(".s1").text();
+    
+      console.log(keyValue);
+      if (keyValue.length > 339) {
+        let text = keyValue.substr(0, 339)+ ".";
+        $(".s1").text(text);
+        console.log("hola2");
+        console.log(text);
+      } else {
+        $(".s1").text(keyValue);
+        console.log(keyValue);
+      }
       programingCanalClaro.forEach((program, index) => {
         let programCanalClaro;
         if (index == 0) {
