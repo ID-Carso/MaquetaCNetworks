@@ -184,11 +184,11 @@
                     <div class=" p-3 border-t border-l border-r border-b position-relative d-inline-block mx-auto">
                         <img src="./images/General/pencil.svg" alt="" class="pencil pencil-menu">
                         <div class="row no-gutters col-12">
-                            <ul class="tv-list ">
+                            <ul class="d-flex list-progra ">
                                 <div class=" text-center no-gap  mr-2">
-                                    <li class="active-navItem d-inline-block" style="width: 200px !important;">
+                                    <li class="navbar-progra-item-container d-inline-block" style="width: 200px !important;">
                                         <!-- <img class="claro-nav-image" src="./images/home/tv-1.svg" alt="" />-->
-                                        <div class="bor mx-auto position-relative thumbnail-image-program" id="images-logo">
+                                        <div class=" mx-auto position-relative thumbnail-image-program" id="images-logo">
                                             <!-- <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
                                             <!--class to update image-->
                                             <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-3 justify-content-center align-items-center h-100 flex-column">
@@ -201,7 +201,7 @@
                                 <div class=" text-center no-gap border-r border-l">
                                     <li rel="concert-channel-programing" class="nav-li d-inline-block" style="width: 200px !important;">
                                         <!--  <img class="nav-image" src="./images/home/tv-2.svg" alt="" />-->
-                                        <div class="bor mx-auto position-relative thumbnail-image-program" id="images-logo">
+                                        <div class=" mx-auto position-relative thumbnail-image-program" id="images-logo">
                                             <!--  <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
                                             <!--class to update image-->
                                             <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-3 justify-content-center align-items-center h-100 flex-column">
@@ -215,7 +215,7 @@
                                 <div class=" text-center no-gap ">
                                     <li rel="claro-cinema-programing" class="nav-li d-inline-block" style="width: 200px !important;">
                                         <!--   <img class="nav-image" src="./images/home/tv-3.svg" alt="" />-->
-                                        <div class="bor mx-auto position-relative thumbnail-image-program" id="images-logo">
+                                        <div class=" mx-auto position-relative thumbnail-image-program" id="images-logo">
                                             <!--  <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
                                             <!--class to update image-->
                                             <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-3 justify-content-center align-items-center h-100 flex-column">

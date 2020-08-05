@@ -1700,6 +1700,11 @@ $(document).ready(function () {
   $(".tv-content").hide();
   $(".tv-content:first").show();
 
+  $("ul.list-progra li").click(function(){
+    $("ul.list-progra li").removeClass("navbar-progra-item-container");
+    $(this).addClass("navbar-progra-item-container");
+  });
+
   $("ul.tv-list li").click(function () {
     $("ul.tv-list li").removeClass("active-navItem");
     $(this).addClass("active-navItem");
