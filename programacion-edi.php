@@ -188,7 +188,7 @@
                                 <div class=" text-center no-gap  mr-2">
                                     <li class="navbar-progra-item-container d-inline-block" style="width: 200px !important;">
                                         <!-- <img class="claro-nav-image" src="./images/home/tv-1.svg" alt="" />-->
-                                        <div class=" mx-auto position-relative thumbnail-image-program" id="images-logo">
+                                        <div class=" mx-auto position-relative thumbnail-image-program p-2" id="images-logo">
                                             <!-- <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
                                             <!--class to update image-->
                                             <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-3 justify-content-center align-items-center h-100 flex-column">
