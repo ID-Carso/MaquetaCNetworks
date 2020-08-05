@@ -14,6 +14,11 @@ class Program
     {
         callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/program/sinopsis/" . $id, null);
     }
+
+    function getProgramsGMT($date)
+    {
+        callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/program/actual_programing/GMT&" . $date . "", null);
+    }
 }
 
 
@@ -35,6 +40,12 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             $id = $_POST['chapter_id'];
             $program = new Program();
             echo ($program->showSynopsis($id));
+            break;
+
+        case 'getProgramsGMT':
+            $date = $_POST['date'];
+            $program = new Program();
+            echo ($program->getProgramsGMT($date));
             break;
     }
 }

@@ -118,8 +118,6 @@ function getPrograms(date, country) {
   let claroContentProgramacinGeneralEdit = $(".claro-content-edit");
   let concertContentProgramacionGeneral = $(".concert-content");
   let cinemaContentProgramacionGeneral = $(".cinema-content");
-   
-  
 
   $.ajax({
     type: "POST",
@@ -127,7 +125,6 @@ function getPrograms(date, country) {
     url: "./adapters/program.php",
     success: function (result) {
       let json = JSON.parse(result);
-      console.log(json);
       /* SLIDER "AHORA EN VIVO CANAL CLARO*/
       let programingCanalClaro = json.data[0].programing[0].programs;
       let programingConcertChannel = json.data[1].programing[0].programs;
@@ -274,12 +271,12 @@ function getPrograms(date, country) {
         nowSliderCanalClaro.append(programCanalClaro);
 
         /* PROGRAMACIÓN GENERAL*/
-      
+
         /* CANAL CLARO*/
-       
+
         if (arrayCanalClaro.includes(program.chapter_id)) {
-             //para calculo de caracteres en sinopsis de programación general-edit
-   
+          //para calculo de caracteres en sinopsis de programación general-edit
+
           programCanalClaroEdit += `
           <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
           <img src="./images/General/pencil.svg" alt="" class="pencil edit-program-pencil" chapter_id="${program.chapter_id}">
@@ -450,21 +447,17 @@ function getPrograms(date, country) {
         /* END PROGRAMACIÓN GENERAL - CANAL CLARO*/
       });
 
-      claroContentProgramacinGeneralEdit.html(programCanalClaroEdit);
+      //claroContentProgramacinGeneralEdit.html(programCanalClaroEdit);
 
       //CUADROS DE EDITAR DE LANDING
       //cuadros de editar
       let keyValue = $(".s1").text();
-    
-      console.log(keyValue);
+
       if (keyValue.length > 339) {
-        let text = keyValue.substr(0, 339)+ ".";
+        let text = keyValue.substr(0, 339) + ".";
         $(".s1").text(text);
-        console.log("hola2");
-        console.log(text);
       } else {
         $(".s1").text(keyValue);
-        console.log(keyValue);
       }
       programingCanalClaro.forEach((program, index) => {
         let programCanalClaro;
@@ -1661,14 +1654,13 @@ function showSynopsis(id) {
     function: "showSynopsis",
     chapter_id: id,
   };
-  console.log(dataUser.chapter_id);
+
   $.ajax({
     type: "POST",
     data: dataUser,
     url: "./adapters/program.php",
     success: function (result) {
       let json = JSON.parse(result);
-      console.log(json);
       if (json.code == 200) {
         localStorage.setItem("synopsis", JSON.stringify(json.data));
         location.href = "./sinopsis.php";
