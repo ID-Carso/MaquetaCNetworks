@@ -1701,7 +1701,7 @@ $(document).ready(function () {
   $(".tv-content:first").show();
 
   $("ul.list-progra li").click(function(){
-    $("ul.list-progra li").removeClass("navbar-progra-item-container active-navItems navs-li ");
+    $("ul.list-progra li").removeClass("navbar-progra-item-container active-navItems  ");
     $(this).addClass("navbar-progra-item-container active-navItems navs-li ");
   });
 

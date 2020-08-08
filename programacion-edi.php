@@ -186,12 +186,12 @@
                         <div class="row no-gutters col-12">
                             <ul class="d-flex list-progra pl-0">
                                 <div class=" text-center no-gap  mr-2">
-                                    <li class="navbar-progra-item-container active-navItems  d-inline-block" style="width: 200px !important;">
+                                    <li class="navbar-progra-item-container active-navItems navs-li  d-inline-block" style="width: 200px !important;">
                                         <!-- <img class="claro-nav-image" src="./images/home/tv-1.svg" alt="" />-->
-                                        <div class=" mx-auto position-relative thumbnail-image-program p-2" id="images-logo">
+                                        <div class=" mx-auto position-relative thumbnail-image-program " id="images-logo">
                                             <!-- <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
                                             <!--class to update image-->
-                                            <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-3 justify-content-center align-items-center h-100 flex-column">
+                                            <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
                                                 <img class="claro-nav-image thumbnail-image-program" src="./images/home/tv-1.svg" alt="" />
                                                 <!--    <span class="a-text-bold-warm text-plus mt-5 mb-5 shadow-contrast">472px X 295px</span>-->
                                             </label>
@@ -199,12 +199,12 @@
                                     </li>
                                 </div>
                                 <div class=" text-center no-gap border-r border-l pr-2 pl-2">
-                                    <li rel="concert-channel-programing" class="nav-li d-inline-block" style="width: 200px !important;">
+                                    <li rel="concert-channel-programing" class="navs-li d-inline-block" style="width: 200px !important;">
                                         <!--  <img class="nav-image" src="./images/home/tv-2.svg" alt="" />-->
                                         <div class=" mx-auto position-relative thumbnail-image-program" id="images-logo">
                                             <!--  <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
                                             <!--class to update image-->
-                                            <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-3 justify-content-center align-items-center h-100 flex-column">
+                                            <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
                                                 <img class="nav-image thumbnail-image-program" src="./images/home/tv-2.svg" alt="" />
 
                                                 <!--    <span class="a-text-bold-warm text-plus mt-5 mb-5 shadow-contrast">472px X 295px</span>-->
@@ -213,12 +213,12 @@
                                     </li>
                                 </div>
                                 <div class=" text-center no-gap  ml-2">
-                                    <li rel="claro-cinema-programing" class="nav-li d-inline-block" style="width: 200px !important;">
+                                    <li rel="claro-cinema-programing" class="navs-li d-inline-block" style="width: 200px !important;">
                                         <!--   <img class="nav-image" src="./images/home/tv-3.svg" alt="" />-->
                                         <div class=" mx-auto position-relative thumbnail-image-program" id="images-logo">
                                             <!--  <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
                                             <!--class to update image-->
-                                            <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-3 justify-content-center align-items-center h-100 flex-column">
+                                            <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
                                                 <img class=" nav-image thumbnail-image-program" src="./images/home/tv-3.svg" alt="" />
                                                 <!--      <span class="a-text-bold-warm text-plus mt-5 mb-5 shadow-contrast">472px X 295px</span>-->
                                             </label>
