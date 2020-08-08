@@ -63,30 +63,30 @@
 .navbar-desktop-white {
   display: none;
 }
-.claro-navbar-black-edi{
+
+.claro-navbar-black-edi {
   background: rgba(255, 255, 255, 0.8);
   padding: 9px 9px 9px 181px !important;
   margin-left: -104px;
   border-radius: 20px;
 }
-.menu-desktop-edi{
+
+.menu-desktop-edi {
   position: absolute;
-    width: 100%;
-    padding: 55px 13px;
-    z-index: 2;
+  width: 100%;
+  padding: 55px 13px;
+  z-index: 2;
 }
-.nav-content-edi{
-    
+
+.nav-content-edi {
+
   margin: 0 35px 0 80px;
   position: relative;
 
-} 
+}
 
-  .navbar-progra-item-container {
-    border-radius: 20px;
-    background: $white;
-    box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.5);
-  } 
- 
-
-
+.navbar-progra-item-container {
+  border-radius: 20px;
+  background: white;
+  box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.5);
+}

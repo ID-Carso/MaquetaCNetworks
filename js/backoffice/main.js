@@ -30,6 +30,7 @@ $(document).ready(function () {
     data: data,
     url: "./adapters/program.php",
     success: function (result) {
+      console.log(result);
       let json = JSON.parse(result);
       //Contenedor para insertar todos los programas
       let claroCotentProgramacionGeneralEdit = $(".claro-content-edit");
