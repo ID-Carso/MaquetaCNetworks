@@ -1289,7 +1289,10 @@ $(document).ready(function () {
 
   createCinemaHomeSlider();
   /* Metakeys */
-  getMetaKeys();
+
+  let actual_landing=$('#actual_landing').val();
+  console.log("estas en: "+actual_landing);
+  getMetaKeys(actual_landing);
   /*End Metakeys */
 
   var section_slider = $(".section-slider")

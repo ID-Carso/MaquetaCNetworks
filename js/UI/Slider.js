@@ -402,7 +402,8 @@ export default class Slider {
       },
     ];
 
-    let imagesBannerProgramming = [
+    let imagesBannerProgramming = [];
+      /*
       {
         imageBannerPC:
           "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/canal-claro/pc/CANAL-CLARO-04-A.jpg",
@@ -458,7 +459,7 @@ export default class Slider {
           "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/concert-channel/tablet/CONCERT-06-B.jpg",
       },
     ];
-
+*/
     let slideBanner = "";
     let slideBannerClaroCinema = "";
     let slideBannerConcertChannel = "";

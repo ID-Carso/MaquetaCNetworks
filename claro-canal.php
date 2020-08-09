@@ -3,6 +3,8 @@
 
 <head>
   <?php include './views/partials/head.php' ?>
+  <input type="hidden" id="actual_landing" value="canal_claro">
+
 </head>
 
 <body>

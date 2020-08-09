@@ -81,6 +81,7 @@ export default class Section {
     });
   }
   renderHome(json) {
+
     console.log(json);
 
     /* Header Home*/
@@ -628,43 +629,49 @@ export default class Section {
     sliderHome.createSectionSliderHome();
   }
 
-  renderCanalClaro() {
+  renderCanalClaro(json) {
+    //obtenemos las iamgenes del carrusel 1
+    let data = json.data;
+    let carrusel1=[];
+    let counter=1;
+    while(true){
+      try {
+        if(data["block_4_carrusel_1_image"+counter]){
+          carrusel1[counter-1]=data["block_4_carrusel_1_image"+counter];
+          counter++;
+        }else{
+          break;
+          
+        }
+      } catch (error) {
+        break;
+       
+      }
+    }
+    //carrusel 2
+    let carrusel2=[];
+    let counter2=1;
+    while(true){
+      try {
+        if(data["block_4_carrusel_2_image"+counter2]){
+          carrusel2[counter2-1]=data["block_4_carrusel_2_image"+counter2];
+          counter2++;
+        }else{
+          break;
+          
+        }
+      } catch (error) {
+        break;
+       
+      }
+    }
     let slider = new Slider();
     let dontLoseSlider = $("#dontLose-claro-slider");
     let sectionSlider = $(".section-slider");
     let exlusiveContentSlider = $("#exlusiveContentClaroSlider");
     sectionSlider.slick("unslick");
 
-    let programsTienesQueVerlo = [
-      {
-        chapter_id: 1,
-        program_title: "JOBS",
-        genre: "Película",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/01-JOBS.jpg",
-      },
-      {
-        chapter_id: 2,
-        program_title: "DA VINCI",
-        genre: "Documental",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/02%20DAVINCI.jpg",
-      },
-      {
-        chapter_id: 3,
-        program_title: "EL DANDY",
-        genre: "Serie",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/03%20EL-DANDY.jpg",
-      },
-      {
-        chapter_id: 4,
-        program_title: "MARVEL",
-        genre: "Anime",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/04-MARVEL.jpg",
-      },
-    ];
+   
 
     let programsExlusiveContent = [
       {
@@ -702,13 +709,13 @@ export default class Section {
     */
     let programTienesQueVerloEdit = "";
     let programExlusiveContentEdit = "";
-    programsTienesQueVerlo.forEach((program) => {
+    carrusel1.forEach((program) => {
       programTiensQueVerlo += `
       <div class="poster" >
         <div class="poster-body">
             <div class="thumbnail-body" _id="${program.chapter_id}">
                 <div class="thumbnail">
-                    <img src="${program.image}" alt="">
+                    <img src="${program.image_horizontal}" alt="">
                 </div>
                 <div class="a-claro-rectangle thumbnail-info-title">
                     <div class="poster-title-margin">
@@ -725,7 +732,7 @@ export default class Section {
         <div class="poster-body">
             <div class="thumbnail-body" _id="${program.chapter_id}">
                 <div class="thumbnail">
-                    <img src="${program.image}" alt="">
+                    <img src="${program.image_horizontal}" alt="">
                 </div>
                 <div class="a-claro-rectangle thumbnail-info-title">
                     <div class="poster-title-margin">
@@ -738,17 +745,17 @@ export default class Section {
       `;
     });
 
-    programsExlusiveContent.forEach((program) => {
+    carrusel2.forEach((program) => {
       programExlusiveContent += `
       <div class="poster" >
         <div class="poster-body">
             <div class="thumbnail-body" _id="${program.chapter_id}">
                 <div class="thumbnail">
-                    <img src="${program.image}" alt="">
+                    <img src="${program.image_horizontal}" alt="">
                 </div>
                 <div class="a-claro-rectangle thumbnail-info-title">
                     <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.program_title}</p>
+                        <p class="a-poster-text-white">${program.title}</p>
                     </div>
                 </div>
           </div>
@@ -760,11 +767,11 @@ export default class Section {
         <div class="poster-body">
             <div class="thumbnail-body" _id="${program.chapter_id}">
                 <div class="thumbnail">
-                    <img src="${program.image}" alt="">
+                    <img src="${program.image_horizontal}" alt="">
                 </div>
                 <div class="a-claro-rectangle thumbnail-info-title">
                     <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.program_title}</p>
+                        <p class="a-poster-text-white">${program.title}</p>
                     </div>
                 </div>
           </div>
@@ -778,5 +785,242 @@ export default class Section {
     dontLoseSlider.append(programTiensQueVerlo);
     exlusiveContentSlider.append(programExlusiveContent);
     slider.createSectionSliderHome();
+  }
+  renderClaroCinema(json) {
+    //obtenemos las iamgenes del carrusel 1
+    let data = json.data;
+    let carrusel1=[];
+    let counter=1;
+    while(true){
+      try {
+        if(data["block_4_carrusel_1_image"+counter]){
+          carrusel1[counter-1]=data["block_4_carrusel_1_image"+counter];
+          counter++;
+        }else{
+          break;
+          
+        }
+      } catch (error) {
+        break;
+       
+      }
+    }
+    //carrusel 2
+    let carrusel2=[];
+    let counter2=1;
+    while(true){
+      try {
+        if(data["block_4_carrusel_2_image"+counter2]){
+          carrusel2[counter2-1]=data["block_4_carrusel_2_image"+counter2];
+          counter2++;
+        }else{
+          break;
+          
+        }
+      } catch (error) {
+        break;
+       
+      }
+    }
+    let slider = new Slider();
+    let claro_cinema_carrusel_1 = $("#claro_cinema_carrusel_1");
+    let sectionSlider = $(".section-slider");
+    let claro_cinema_carrusel_2 = $("#claro_cinema_carrusel_2");
+    sectionSlider.slick("unslick");
+
+   
+    let Strinfcarrusel1 = "";
+    let Strinfcarrusel2 = "";
+
+    /*
+      Almacenamos los programas en otras variables para dibujar los programas con bordes.
+      Esto  para la parevisualización en Backoffice de los landings
+    */
+   ;
+    carrusel1.forEach((program) => {
+      Strinfcarrusel1 += `
+      <div class="poster" >
+        <div class="poster-body">
+            <div class="thumbnail-body" _id="${program.chapter_id}">
+                <div class="thumbnail">
+                    <img src="${program.image_horizontal}" alt="">
+                </div>
+                <div class="a-cinema-rectangle thumbnail-info-title">
+                    <div class="poster-title-margin">
+                        <p class="a-poster-text-white">${program.genre}</p>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      `;
+      
+    });
+
+    carrusel2.forEach((program) => {
+      Strinfcarrusel2 += `
+      <div class="poster" >
+        <div class="poster-body">
+            <div class="thumbnail-body" _id="${program.chapter_id}">
+                <div class="thumbnail">
+                    <img src="${program.image_horizontal}" alt="">
+                </div>
+                <div class="a-cinema-rectangle thumbnail-info-title">
+                    <div class="poster-title-margin">
+                        <p class="a-poster-text-white">${program.title}</p>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      `;
+     
+    });
+
+    claro_cinema_carrusel_1.append(Strinfcarrusel1);
+    claro_cinema_carrusel_2.append(Strinfcarrusel2);
+    slider.createSectionSliderHome();
+  }
+  renderConcertChanel(json) {
+    //obtenemos las iamgenes del carrusel 1
+    let data = json.data;
+    let carrusel1=[];
+    let counter=1;
+    while(true){
+      try {
+        if(data["block_4_carrusel_1_image"+counter]){
+          carrusel1[counter-1]=data["block_4_carrusel_1_image"+counter];
+          counter++;
+        }else{
+          break;
+          
+        }
+      } catch (error) {
+        break;
+       
+      }
+    }
+    //carrusel 2
+    let carrusel2=[];
+    let counter2=1;
+    while(true){
+      try {
+        if(data["block_4_carrusel_2_image"+counter2]){
+          carrusel2[counter2-1]=data["block_4_carrusel_2_image"+counter2];
+          counter2++;
+        }else{
+          break;
+          
+        }
+      } catch (error) {
+        break;
+       
+      }
+    }
+    let slider = new Slider();
+    let concert_channel_carrusel_1 = $("#concert_channel_carrusel_1");
+    let sectionSlider = $(".section-slider");
+    let concert_channel_carrusel_2 = $("#concert_channel_carrusel_2");
+    sectionSlider.slick("unslick");
+
+   
+    let Strinfcarrusel1 = "";
+    let Strinfcarrusel2 = "";
+
+    /*
+      Almacenamos los programas en otras variables para dibujar los programas con bordes.
+      Esto  para la parevisualización en Backoffice de los landings
+    */
+   ;
+    carrusel1.forEach((program) => {
+      Strinfcarrusel1 += `
+      <div class="poster" >
+        <div class="poster-body">
+            <div class="thumbnail-body" _id="${program.chapter_id}">
+                <div class="thumbnail">
+                    <img src="${program.image_horizontal}" alt="">
+                </div>
+                <div class="a-concert-rectangle thumbnail-info-title">
+                    <div class="poster-title-margin">
+                        <p class="a-poster-text-white">${program.genre}</p>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      `;
+      
+    });
+
+    carrusel2.forEach((program) => {
+      Strinfcarrusel2 += `
+      <div class="poster" >
+        <div class="poster-body">
+            <div class="thumbnail-body" _id="${program.chapter_id}">
+                <div class="thumbnail">
+                    <img src="${program.image_horizontal}" alt="">
+                </div>
+                <div class="a-concert-rectangle thumbnail-info-title">
+                    <div class="poster-title-margin">
+                        <p class="a-poster-text-white">${program.title}</p>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      `;
+     
+    });
+    concert_channel_carrusel_1.append(Strinfcarrusel1);
+    concert_channel_carrusel_2.append(Strinfcarrusel2);
+    slider.createSectionSliderHome();
+  }
+  renderProgramation(json){
+    let data = json.data;
+    //cambiamos los iconos de los canales
+
+    $('#icon_canal_claro').attr('src',data.icon_canal_claro)
+    $('#icon_concert_channel').attr('src',data.icon_concert_channel)
+    $('#icon_claro_cinema').attr('src',data.icon_claro_cinema)
+    //agregamos el slider
+    let banner_images=[];
+    let counter=1;
+    while(true){
+      try {
+        if(data["image_slider_"+counter]){
+          banner_images[counter-1]=data["image_slider_"+counter];
+          counter++;
+        }else{
+          break;
+          
+        }
+      } catch (error) {
+        break;
+       
+      }
+    }
+    $("#banner-programming").slick("unslick");
+    
+
+    let imagesHeaderLength = banner_images.length;
+    let divImageHeader = "";
+    for (let i = 0; i < imagesHeaderLength; i++) {
+      divImageHeader += `
+      <div class="header-slide">
+        <img src="${banner_images[i]}" class="rellax" data-rellax="10">
+      </div>`;
+    }
+
+    $("#banner-programming").append(divImageHeader);
+    $("#banner-programming").not(".slick-initialized").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      dots: true,
+      centerMode: false,
+      arrows: false,
+      autoplay:true
+    });
+  
   }
 }

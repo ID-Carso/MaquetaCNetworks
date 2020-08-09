@@ -3,6 +3,8 @@
 
 <head>
     <?php include './views/partials/head.php' ?>
+  <input type="hidden" id="actual_landing" value="programation">
+
 </head>
 
 <body>
@@ -96,17 +98,17 @@
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
                             <li rel="claro-canal-programing" class="active-navItem nav-li">
-                                <img class="claro-nav-image" src="./images/home/tv-1.svg" alt="" />
+                                <img class="claro-nav-image" src="./images/home/tv-1.svg" alt="" id="icon_canal_claro"/>
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
                             <li rel="concert-channel-programing" class="nav-li">
-                                <img class="nav-image" src="./images/home/tv-2.svg" alt="" />
+                                <img class="nav-image" src="./images/home/tv-1.svg" alt=""id="icon_concert_channel" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
                             <li rel="claro-cinema-programing" class="nav-li">
-                                <img class="nav-image" src="./images/home/tv-3.svg" alt="" />
+                                <img class="nav-image" src="./images/home/tv-1.svg" alt="" id="icon_claro_cinema"/>
                             </li>
                         </div>
 
