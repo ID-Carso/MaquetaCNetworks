@@ -83,6 +83,26 @@
   margin: 0 35px 0 80px;
   position: relative;
 
+  .navbar-progra-item-container {
+    border-radius: 20px;
+    background: white;
+    box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  .navs-li {
+    filter: grayscale(100%);
+    opacity: 0.75;
+    transition: all 0.6s ease;
+    padding: 10px;
+  }
+
+  .active-navItems {
+    position: relative;
+    filter: none;
+    opacity: 1;
+  }
+
+
 }
 
 .navbar-progra-item-container {

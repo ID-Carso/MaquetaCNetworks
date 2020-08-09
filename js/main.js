@@ -1701,8 +1701,8 @@ $(document).ready(function () {
   $(".tv-content:first").show();
 
   $("ul.list-progra li").click(function(){
-    $("ul.list-progra li").removeClass("navbar-progra-item-container");
-    $(this).addClass("navbar-progra-item-container");
+    $("ul.list-progra li").removeClass("navbar-progra-item-container active-navItems  ");
+    $(this).addClass("navbar-progra-item-container active-navItems navs-li ");
   });
 
   $("ul.tv-list li").click(function () {
