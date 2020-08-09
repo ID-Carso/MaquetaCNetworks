@@ -82,7 +82,6 @@ export default class Section {
   }
   renderHome(json) {
 
-    console.log(json);
 
     /* Header Home*/
     $("#slider-header-home").slick("unslick");
@@ -128,6 +127,9 @@ export default class Section {
     /* End Header */
 
     /*CLARO CANAL HOME */
+    $(".claro-image-header").attr("src", json.data.block_2_channel1_icon);
+    $(".concerthome-image-header").attr("src", json.data.block_2_channel2_icon);
+    $(".cinemahome-image-header").attr("src", json.data.block_2_channel3_icon);
 
     /* TITLE */
     $(".a-claro-channel-title").text(json.data.block_3_title);
@@ -632,6 +634,9 @@ export default class Section {
   renderCanalClaro(json) {
     //obtenemos las iamgenes del carrusel 1
     let data = json.data;
+    //cambiamos el icono del landing
+    $('#icon_canal_claro').attr('src',data.block_2_icon_channel)
+
     let carrusel1=[];
     let counter=1;
     while(true){
@@ -789,6 +794,8 @@ export default class Section {
   renderClaroCinema(json) {
     //obtenemos las iamgenes del carrusel 1
     let data = json.data;
+    $('#icon_claro_cinema').attr('src',data.block_2_icon_channel)
+
     let carrusel1=[];
     let counter=1;
     while(true){
@@ -884,6 +891,8 @@ export default class Section {
   renderConcertChanel(json) {
     //obtenemos las iamgenes del carrusel 1
     let data = json.data;
+    $('#icon_concert_channel').attr('src',data.block_2_icon_channel)
+    
     let carrusel1=[];
     let counter=1;
     while(true){

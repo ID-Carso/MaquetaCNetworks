@@ -91,7 +91,7 @@
         <section class="today-concert-channel">
             <div class="row no-gutters landing-header">
                 <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-                    <img src="./images/home/concert-home-img.svg" alt="" class="lading-header-image-concert">
+                    <img src="./images/home/concert-home-img.svg" alt="" class="lading-header-image-concert" id="icon_concert_channel">
                 </div>
                 <div class="col-12 col-md-5 col-lg-5 col-xl-5">
                     <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>

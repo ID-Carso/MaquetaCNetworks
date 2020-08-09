@@ -114,7 +114,7 @@
       <div class="today-container">
         <div class="row no-gutters landing-header">
           <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-            <img src="./images/home/tv-1.svg" alt="" class="lading-header-image-claro">
+            <img src="" id="icon_canal_claro" alt="" class="lading-header-image-claro">
           </div>
           <div class="col-12 col-md-5 col-lg-5 col-xl-5">
             <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
