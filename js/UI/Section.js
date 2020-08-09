@@ -1023,4 +1023,56 @@ export default class Section {
     });
   
   }
+  renderProgramation_edi(json){
+    let data = json.data;
+    //cambiamos los iconos de los canales
+
+    $('#icon_canal_claro_edi').attr('src',data.icon_canal_claro)
+    $('#icon_concert_channel_edi').attr('src',data.icon_concert_channel)
+    $('#icon_claro_cinema_edi').attr('src',data.icon_claro_cinema)
+    //agregamos el slider
+    /**
+    let banner_images=[];
+    let counter=1;
+    while(true){
+      try {
+        if(data["image_slider_"+counter]){
+          banner_images[counter-1]=data["image_slider_"+counter];
+          counter++;
+        }else{
+          break;
+          
+        }
+      } catch (error) {
+        break;
+       
+      }
+    }
+    $("#banner-programming-edi").slick("unslick");
+    
+
+    let imagesHeaderLength = banner_images.length;
+    let divImageHeader = "";
+    for (let i = 0; i < imagesHeaderLength; i++) {
+      divImageHeader += `
+                <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
+                    <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
+                        <!--   <span class="a-text-bold-warm text-plus mb90 shadow-contrast add-photo">472px X 295px</span>-->
+                        <img src="${banner_images[i]}" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                    </label>
+                </div>`;
+    }
+
+    $("#banner-programming-edi").append(divImageHeader);
+    $("#banner-programming-edi").not(".slick-initialized").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      dots: true,
+      centerMode: false,
+      arrows: false,
+      autoplay:true
+    });
+   */
+  }
 }
