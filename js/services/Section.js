@@ -1,8 +1,9 @@
 import Section from "../UI/Section.js";
 
-function getMetaKeys() {
+function getMetaKeys(landing) {
   let data = {
-    function: "getMetakeys"
+    function: "getMetakeys",
+    landing:landing
   };
   $.ajax({
     type: "POST",
@@ -11,9 +12,29 @@ function getMetaKeys() {
     success: function(result) {
       let json = JSON.parse(result);
       let sectionUI = new Section();
+     console.log(json);
+     
+      switch (landing) {
+        case 'home':
+          sectionUI.renderHome(json);
+          break;
+        case 'canal_claro':
+          sectionUI.renderCanalClaro(json);
+          break;
+        case 'claro_cinema':
+          sectionUI.renderClaroCinema(json);
+          break;
+        case 'concert_channel':
+          sectionUI.renderConcertChanel(json);
+          break;
+       
+        case 'programation':
+          sectionUI.renderProgramation(json);
 
-      sectionUI.renderHome(json);
-      sectionUI.renderCanalClaro();
+          break;
+        default:
+          break;
+      }
     }
   });
 }

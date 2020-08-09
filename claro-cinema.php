@@ -3,6 +3,8 @@
 
 <head>
   <?php include './views/partials/head.php' ?>
+  <input type="hidden" id="actual_landing" value="claro_cinema">
+
 </head>
 
 <body class="claro-cinema-content">
@@ -154,79 +156,7 @@
           </div>
         </div>
         <div class="recordar-container-videos">
-          <div class="section-slider cinema-slider">
-            <div class="poster">
-              <div class="poster-body">
-                <div class="showtime-container justify-content-end">
-
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                </div>
-                <div class="thumbnail">
-                  <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/01-NUESTROS-BUENOS-VECINOS.jpg" alt="">
-                </div>
-                <div class="a-cinema-rectangle">
-                  <div class="poster-title-margin">
-                    <p class="a-poster-text-white">
-                      NUESTROS BUENOS VECINOS
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="poster">
-              <div class="poster-body">
-                <div class="showtime-container justify-content-end">
-
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                </div>
-                <div class="thumbnail">
-                  <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/02-EL-PASAJERO-.jpg" alt="">
-                </div>
-                <div class="a-cinema-rectangle">
-                  <div class="poster-title-margin">
-                    <p class="a-poster-text-white">
-                      EL PASAJERO DIEZ MIL
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="poster">
-              <div class="poster-body">
-                <div class="showtime-container justify-content-end">
-
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                </div>
-                <div class="thumbnail">
-                  <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/03-QUE-BRAVAS-SON.jpg" alt="">
-                </div>
-                <div class="a-cinema-rectangle">
-                  <div class="poster-title-margin">
-                    <p class="a-poster-text-white">
-                      QUE BRAVAS SON
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="poster">
-              <div class="poster-body">
-                <div class="showtime-container justify-content-end">
-
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                </div>
-                <div class="thumbnail">
-                  <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/04-QUE-HACER-MIS-HIJOS.jpg" alt="">
-                </div>
-                <div class="a-cinema-rectangle">
-                  <div class="poster-title-margin">
-                    <p class="a-poster-text-white">
-                      QUÉ HACER CON MIS HIJOS
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="section-slider cinema-slider" id="claro_cinema_carrusel_1">
           </div>
         </div>
 
@@ -242,79 +172,7 @@
           </div>
         </div>
         <div class="only-videos-container">
-          <div class="section-slider cinema-slider">
-            <div class="poster">
-              <div class="poster-body">
-                <div class="showtime-container justify-content-end">
-
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                </div>
-                <div class="thumbnail">
-                  <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/05-DOS-PALOMAS.jpg" alt="">
-                </div>
-                <div class="a-cinema-rectangle">
-                  <div class="poster-title-margin">
-                    <p class="a-poster-text-white">
-                      DOS PALOMAS
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="poster">
-              <div class="poster-body">
-                <div class="showtime-container justify-content-end">
-
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                </div>
-                <div class="thumbnail">
-                  <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/06-EROTICA.jpg" alt="">
-                </div>
-                <div class="a-cinema-rectangle">
-                  <div class="poster-title-margin">
-                    <p class="a-poster-text-white">
-                      ERÓTICA
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="poster">
-              <div class="poster-body">
-                <div class="showtime-container justify-content-end">
-
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                </div>
-                <div class="thumbnail">
-                  <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/07-CON-TODOS.jpg" alt="">
-                </div>
-                <div class="a-cinema-rectangle">
-                  <div class="poster-title-margin">
-                    <p class="a-poster-text-white">
-                      CON TODOS MENOS CONMIGO
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="poster">
-              <div class="poster-body">
-                <div class="showtime-container justify-content-end">
-
-                  <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                </div>
-                <div class="thumbnail">
-                  <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/08-YO-EL-MUJERIEGO.jpg" alt="">
-                </div>
-                <div class="a-cinema-rectangle">
-                  <div class="poster-title-margin">
-                    <p class="a-poster-text-white">
-                      YO EL MUJERIEGO
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="section-slider cinema-slider" id="claro_cinema_carrusel_2">
           </div>
         </div>
 

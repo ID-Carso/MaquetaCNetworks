@@ -4,22 +4,16 @@ include './callApi.php';
 
 class Section
 {
-    function getMetakeys()
+    function getMetakeys($landing)
     {
-        callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/section/home", null);
-    }
+        callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/section/".$landing, null);
+  }
 }
 
 if (isset($_POST['function']) && !empty($_POST['function'])) {
     $funcion = $_POST['function'];
-
-
-    switch ($funcion) {
-
-        case 'getMetakeys':
-
-            $section = new Section();
-            echo ($section->getMetakeys());
-            break;
-    }
+    $landing=$_POST['landing'];
+    $section = new Section();
+    echo ($section->getMetakeys($landing));
+    
 }

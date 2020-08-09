@@ -11,6 +11,7 @@
     include 'menu-mobile.php';
     ?>
     <!--End menú para móvil-->
+    <input type="hidden" id="actual_landing" value="home">
     <div class="hamburguer-menu">
         <div class="text-center sidebar-header">
         </div>
