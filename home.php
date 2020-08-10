@@ -99,7 +99,7 @@
                         <div class="claro-logo">
                             <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
 
-                            <img class="logo" src="./images/home/claro-logo.svg" alt="" />
+                            <img class="logo" src="./images/home/claro-logo.svg"  alt="" />
                         </div>
 
                         <div class="login">
@@ -177,7 +177,7 @@
             <div class="claro-canal-mobile">
                 <div class="m-home-titles text-center">
                     <a href="claro-canal.php" class="home-title-link">
-                        <img src="./images/home/tv-1.svg" class="claro-image-header">
+                        <img src="" class="claro-image-header" >
                     </a>
                     <h2 class="a-subtitle a-claro-home-subtitle">
                         <!--LO MEJOR EN SERIES Y <br><span>PELÍCULAS INTERNACIONALES</span>-->
