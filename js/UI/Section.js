@@ -176,14 +176,22 @@ export default class Section {
       }
     }
 
-    let block3Image = [
-      json.data.block_3_image1,
-      json.data.block_3_image2,
-      json.data.block_3_image3,
-      json.data.block_3_image4,
-      json.data.block_3_image5,
-    ];
-
+    let block3Image = [];
+    let counter=1;
+    while(true){
+      try {
+        if(json.data["block_3_image"+counter]){
+          block3Image[counter-1]=json.data["block_3_image"+counter];
+          counter++;
+        }else{
+          break;
+          
+        }
+      } catch (error) {
+        break;
+       
+      }
+    }
     $(".section-slider").slick("unslick");
     $(".cinema-home-slider").slick("unslick");
 
@@ -287,12 +295,22 @@ export default class Section {
     $(".button-concert-home").text(json.data.block_4_button1);
 
     /* SLIDER */
-    let block4Image = [
-      json.data.block_4_image1,
-      json.data.block_4_image2,
-      json.data.block_4_image3,
-      json.data.block_4_image4,
-    ];
+    let block4Image = [];
+     counter=1;
+    while(true){
+      try {
+        if(json.data["block_4_image"+counter]){
+          block4Image[counter-1]=json.data["block_4_image"+counter];
+          counter++;
+        }else{
+          break;
+          
+        }
+      } catch (error) {
+        break;
+       
+      }
+    }
 
     let blockImage4Length = block4Image.length;
     let concertHomeVideosMobile = "";
@@ -394,12 +412,22 @@ export default class Section {
     $(".button-cinema-home").text(json.data.block_5_button1);
 
     /* SLIDER*/
-    let block5Image = [
-      json.data.block_5_image1,
-      json.data.block_5_image2,
-      json.data.block_5_image3,
-      json.data.block_5_image4,
-    ];
+    let block5Image = [];
+    counter=1;
+    while(true){
+      try {
+        if(json.data["block_5_image"+counter]){
+          block5Image[counter-1]=json.data["block_5_image"+counter];
+          counter++;
+        }else{
+          break;
+          
+        }
+      } catch (error) {
+        break;
+       
+      }
+    }
 
     let blockImage5Length = block5Image.length;
     let cinemaHomeVideosMobile = "";
