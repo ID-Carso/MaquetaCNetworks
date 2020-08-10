@@ -30,8 +30,9 @@ $(document).ready(function () {
     data: data,
     url: "./adapters/program.php",
     success: function (result) {
-      console.log(result);
+
       let json = JSON.parse(result);
+      console.log(json);
       //Contenedor para insertar todos los programas
       let claroCotentProgramacionGeneralEdit = $(".claro-content-edit");
       //Programación de los diferentes landings
@@ -40,6 +41,10 @@ $(document).ready(function () {
       let programingClaroCinema = json.data[2].programing[0].programs;
       let programCanalClaroEdit = "";
       programingCanalClaro.forEach((program, index) => {
+        let synopsis = program.sinopsis;
+        if (program.sinopsis.length > 150) {
+          synopsis = program.sinopsis.substr(0, 150) + "...";
+        }
         programCanalClaroEdit += `
         <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
         <img src="./images/General/pencil.svg" alt="" class="pencil edit-program-pencil" chapter_id="${program.chapter_id}">
@@ -74,7 +79,7 @@ $(document).ready(function () {
                         </div>
                     </div>
                     <div>
-                        <span class="schedule-description s1" id="synopsis-edi">${program.sinopsis}</span>
+                        <span class="schedule-description s1" id="synopsis-edi">${synopsis}</span>
                         <span class="text-normal cursor-pointer a-text-bold-tealblue"> Ver más...</span>
                     </div>
                 </div>
@@ -88,15 +93,14 @@ $(document).ready(function () {
       claroCotentProgramacionGeneralEdit.html(programCanalClaroEdit);
 
       //Checamos la longitud de la sinospsis para poner el ver más
-      let keyValue = $(".s1").text();
+      /*       let keyValue = $(".s1").text();
 
-      if (keyValue.length > 150) {
-        console.log("200");
-        let text = keyValue.substr(0, 150) + "...";
-        $(".s1").text(text);
-      } else {
-        $(".s1").text(keyValue);
-      }
+            if (keyValue.length > 150) {
+              let text = keyValue.substr(0, 150) + "...";
+              $(".s1").text(text);
+            } else {
+              $(".s1").text(keyValue);
+            } */
     },
   });
 });

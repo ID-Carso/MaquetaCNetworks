@@ -32,6 +32,10 @@ function getMetaKeys(landing) {
           sectionUI.renderProgramation(json);
 
           break;
+        case 'programation_edi':
+          sectionUI.renderProgramation_edi(json);
+
+          break;
         default:
           break;
       }

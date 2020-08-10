@@ -6,6 +6,9 @@ class Section
 {
     function getMetakeys($landing)
     {
+        if($landing == "programation_edi"){
+            $landing = "programation";
+        }
         callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/section/".$landing, null);
   }
 }
