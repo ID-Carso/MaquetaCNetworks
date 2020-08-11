@@ -1675,12 +1675,12 @@ function showSynopsis(id) {
     });
 }
 
-function getProgramming(date, country) {
+function getProgramming(date) {
 
     let data = {
         function: "getProgramming",
         date,
-        country
+        country: "gmt"
     }
     $.ajax({
         type: "POST",
@@ -1694,8 +1694,8 @@ function getProgramming(date, country) {
             `);
         },
         success: function (result) {
-            console.log(result);
             let data = JSON.parse(result);
+            console.log(data);
             $('.loader-container').remove();
             if (data.code == 200) {
 
@@ -1710,6 +1710,7 @@ function getProgramming(date, country) {
                 let programConcertChannel = "";
                 let programConcertChannelEdit = "";
                 let programClaroCinema = "";
+                let programClaroCinemaEdit = "";
                 //Iteramos el arreglo de programas de canal claro
                 programmingCanalClaro.forEach(program => {
 
@@ -1971,12 +1972,16 @@ function getProgramming(date, country) {
                 </div> 
                     `;
                 });
+                console.log(programClaroCinema);
                 //Insertar programas para edición en backoffice
                 $('.claro-content-edit').html(programCanalClaroEdit);
                 //Insertar programas en página
                 $('.claro-content').html(programCanalClaro);
                 //Insertar programas en página
-                $('.claro-content').html(programCanalClaro);
+                $('.concert-content').html(programConcertChannel);
+                $('.concert-content-edit').html(programConcertChannelEdit);
+                $('.cinema-content').html(programClaroCinema);
+                $('.cinema-content-edit').html(programClaroCinemaEdit);
             }
         },
     })

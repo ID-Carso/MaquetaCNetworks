@@ -1739,8 +1739,14 @@ $(document).ready(function () {
   $(".tv-content:first").show();
 
   $("ul.list-progra li").click(function () {
+    $(".tv-content").hide();
+    var activeNav = $(this).attr("rel");
+    $("#" + activeNav).fadeIn();
     $("ul.list-progra li").removeClass("navbar-progra-item-container active-navItems  ");
     $(this).addClass("navbar-progra-item-container active-navItems navs-li ");
+    programacion_slider.slick("refresh");
+    recreateClickCalendar();
+    createClickThumbnails();
   });
 
   $("ul.tv-list li").click(function () {
@@ -2069,7 +2075,7 @@ function recreateClickCalendar() {
     let date = $(this).attr("date");
     let country = getNameCountry(localStorage.getItem("src"));
     //Petición ajax para traer la programación
-    getProgramming(date, country);
+    getProgramming(date);
 
 
     $("ul.claro-calendar .claro-item").removeClass("claro-active");
@@ -2096,7 +2102,7 @@ function recreateClickCalendar() {
     //peticiones
     let date = $(this).attr("date");
     let country = getNameCountry(localStorage.getItem("src"));
-    getProgramming(date, country);
+    getProgramming(date);
   });
 
 
@@ -2111,7 +2117,7 @@ function recreateClickCalendar() {
     $(".month").text(`${getMonthAndYear(month)}`);
     let date = $(this).attr("date");
     let country = getNameCountry(localStorage.getItem("src"));
-    getProgramming(date, country);
+    getProgramming(date);
   });
 
   $(".vision-content").hide();
