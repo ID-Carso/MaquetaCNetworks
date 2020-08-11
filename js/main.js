@@ -150,7 +150,7 @@ $(document).ready(function () {
             <div class="poster">
              <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                     <img src="./images/home/carrusel-ahora-en-vivo/${favorite.image}" alt="">
+                     <img src="${favorite.image}" alt="">
                 </div>
                 <div class="a-claro-rectangle">
                     <div class="poster-title-margin">
@@ -249,7 +249,7 @@ $(document).ready(function () {
             <div class="poster">
              <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="./images/home/carrusel-ahora-en-vivo/${favorite.image}" alt="">
+                    <img src="${favorite.image}" alt="">
                 </div>
                 <div class="a-claro-rectangle">
                     <div class="poster-title-margin">
