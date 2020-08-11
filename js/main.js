@@ -1,39 +1,92 @@
-import { gradientMenu, navbarWhite } from "./scroll/scroll.js";
-import { ShowHidePassword } from "./form/form.js";
-import { selectCountry } from "./session/session.js";
-import { validateEmail } from "./form/form.js";
-import { validateNewPassword } from "./form/form.js";
-import { validateKeyUpEmail } from "./form/form.js";
-import { validatePassword } from "./form/form.js";
-import { validateUser } from "./form/form.js";
-import { registerUser } from "./services/user/user.js";
-import { validateToken } from "./form/form.js";
+import {
+  gradientMenu,
+  navbarWhite
+} from "./scroll/scroll.js";
+import {
+  ShowHidePassword
+} from "./form/form.js";
+import {
+  selectCountry
+} from "./session/session.js";
+import {
+  validateEmail
+} from "./form/form.js";
+import {
+  validateNewPassword
+} from "./form/form.js";
+import {
+  validateKeyUpEmail
+} from "./form/form.js";
+import {
+  validatePassword
+} from "./form/form.js";
+import {
+  validateUser
+} from "./form/form.js";
+import {
+  registerUser
+} from "./services/user/user.js";
+import {
+  validateToken
+} from "./form/form.js";
 
 /* User */
-import { sendUserEmail } from "./services/user/user.js";
-import { sendNewPassword } from "./services/user/user.js";
-import { signIn } from "./services/user/user.js";
-import { signOut } from "./services/user/user.js";
-import { updateDataUser } from "./services/user/user.js";
-import { selectAvatar } from "./services/user/user.js";
-import { updateAlerts } from "./services/user/user.js";
-import { addFavorites } from "./services/user/user.js";
-import { removeFavorites } from "./services/user/user.js";
-import { showNotification } from "./services/user/user.js";
-import { updateAlertProgram } from "./services/user/user.js";
-import { getNameCountry } from "./country/country.js";
+import {
+  sendUserEmail
+} from "./services/user/user.js";
+import {
+  sendNewPassword
+} from "./services/user/user.js";
+import {
+  signIn
+} from "./services/user/user.js";
+import {
+  signOut
+} from "./services/user/user.js";
+import {
+  updateDataUser
+} from "./services/user/user.js";
+import {
+  selectAvatar
+} from "./services/user/user.js";
+import {
+  updateAlerts
+} from "./services/user/user.js";
+import {
+  addFavorites
+} from "./services/user/user.js";
+import {
+  removeFavorites
+} from "./services/user/user.js";
+import {
+  showNotification
+} from "./services/user/user.js";
+import {
+  updateAlertProgram
+} from "./services/user/user.js";
+import {
+  getNameCountry
+} from "./country/country.js";
 
 /* Program */
-import { getPrograms, createClickThumbnails } from "./services/Program.js";
+import {
+  getPrograms,
+  createClickThumbnails,
+  getProgramming
+} from "./services/Program.js";
 
 /* Date */
-import { getMonthAndYear } from "./date/date.js";
+import {
+  getMonthAndYear
+} from "./date/date.js";
 
 /* Slider */
 import Slider from "./UI/Slider.js";
 
 /* Section Metakeys*/
-import { getMetaKeys } from "./services/Section.js";
+import {
+  getMetaKeys
+} from "./services/Section.js";
 
 import Navbar from "./UI/Navbar.js";
 
@@ -87,7 +140,7 @@ if (day && month && year) {
 }
 
 $(document).ready(function () {
- 
+
   let dateUTC = new Date();
   console.log(dateUTC.getUTCHours());
 
@@ -846,7 +899,10 @@ $(document).ready(function () {
     if (alertsOff.is(":checked")) {
       let alertsLength = alerts.length;
       for (i = 0; i < alertsLength; i++) {
-        alerts[i].prop({ checked: false, disabled: true });
+        alerts[i].prop({
+          checked: false,
+          disabled: true
+        });
       }
     } else {
       let alertsLength = alerts.length;
@@ -1290,8 +1346,8 @@ $(document).ready(function () {
   createCinemaHomeSlider();
   /* Metakeys */
 
-  let actual_landing=$('#actual_landing').val();
-  console.log("estas en: "+actual_landing);
+  let actual_landing = $('#actual_landing').val();
+  console.log("estas en: " + actual_landing);
   getMetaKeys(actual_landing);
   /*End Metakeys */
 
@@ -1307,8 +1363,7 @@ $(document).ready(function () {
       prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
       nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
 
-      responsive: [
-        {
+      responsive: [{
           breakpoint: 768,
           settings: {
             slidesToShow: 1,
@@ -1341,10 +1396,8 @@ $(document).ready(function () {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
 
@@ -1357,10 +1410,8 @@ $(document).ready(function () {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
       ],
@@ -1376,8 +1427,7 @@ $(document).ready(function () {
     prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
     nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
 
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -1410,10 +1460,8 @@ $(document).ready(function () {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
 
@@ -1426,10 +1474,8 @@ $(document).ready(function () {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
     ],
@@ -1464,8 +1510,7 @@ $(document).ready(function () {
     arrows: true,
     prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
     nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -1498,10 +1543,8 @@ $(document).ready(function () {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
       {
@@ -1513,10 +1556,8 @@ $(document).ready(function () {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
     ],
@@ -1527,23 +1568,17 @@ $(document).ready(function () {
   let slider = new Slider();
   slider.createDaysSlider(
     "claro",
-    containerSlider,
-    $("#claro-canal-programing-edit")
   );
 
   /*Programación Concert Channel */
   let containerSliderConcert = $("#concert-channel-programing");
   slider.createDaysSlider(
     "concert",
-    containerSliderConcert,
-    $("#concert-channel-programing-edit")
   );
   /*Programación Claro Cinema */
   let containerSliderCinema = $("#claro-cinema-programing");
   slider.createDaysSlider(
     "cinema",
-    containerSliderCinema,
-    $("#claro-cinema-programing-edit")
   );
 
   createProgramacionSlider();
@@ -1703,7 +1738,7 @@ $(document).ready(function () {
   $(".tv-content").hide();
   $(".tv-content:first").show();
 
-  $("ul.list-progra li").click(function(){
+  $("ul.list-progra li").click(function () {
     $("ul.list-progra li").removeClass("navbar-progra-item-container active-navItems  ");
     $(this).addClass("navbar-progra-item-container active-navItems navs-li ");
   });
@@ -1757,12 +1792,7 @@ $(document).ready(function () {
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();
 
-    if (activeNav == "pro-concert-channel") {
-    } else if (activeNav == "pro-claro-canal") {
-    } else if (activeNav == "pro-claro-cinema") {
-    } else if (activeNav == "pro-nuestra-vision") {
-    } else if (activeNav == "pro-claro-sports") {
-    }
+    if (activeNav == "pro-concert-channel") {} else if (activeNav == "pro-claro-canal") {} else if (activeNav == "pro-claro-cinema") {} else if (activeNav == "pro-nuestra-vision") {} else if (activeNav == "pro-claro-sports") {}
   });
 
   var slides = document.querySelectorAll("#claro-canal .slick-slide");
@@ -1832,8 +1862,7 @@ function createCinemaHomeSlider() {
     prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
     nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
 
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -1866,10 +1895,8 @@ function createCinemaHomeSlider() {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
 
@@ -1882,10 +1909,8 @@ function createCinemaHomeSlider() {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
     ],
@@ -1895,8 +1920,7 @@ function createCinemaHomeSlider() {
 function createProgramacionSlider() {
   programacion_slider = $(".programacion-slider").slick({
     /**/
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 767,
         settings: {
           slidesToShow: 7,
@@ -1917,10 +1941,8 @@ function createProgramacionSlider() {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
       {
@@ -1932,10 +1954,8 @@ function createProgramacionSlider() {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
       {
@@ -1947,10 +1967,8 @@ function createProgramacionSlider() {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
       {
@@ -1962,10 +1980,8 @@ function createProgramacionSlider() {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
     ],
@@ -1992,8 +2008,7 @@ function createTvSlider() {
     arrows: true,
     prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
     nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -2026,10 +2041,8 @@ function createTvSlider() {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
       {
@@ -2041,10 +2054,8 @@ function createTvSlider() {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
     ],
@@ -2052,53 +2063,55 @@ function createTvSlider() {
 }
 
 function recreateClickCalendar() {
+
+  //Claro canal
   $("ul.claro-calendar .claro-item").click(function () {
+    let date = $(this).attr("date");
+    let country = getNameCountry(localStorage.getItem("src"));
+    //Petición ajax para traer la programación
+    getProgramming(date, country);
+
+
     $("ul.claro-calendar .claro-item").removeClass("claro-active");
     $(this).addClass("claro-active");
-    $(".claro-content").hide();
-    //Editar
-    $(".claro-content-edit").hide();
+
     var activeNav = $(this).attr("rel");
     let stringLength = activeNav.length;
     let month = activeNav.charAt(stringLength - 1);
-
+    //Mostrar contenido (Que es innecesario en estos momentos)
     $(".month").text(`${getMonthAndYear(month)}`);
-    $("#" + activeNav).fadeIn();
   });
-  //Programación editar
-  $(".claro-content-edit").hide();
-  $(".claro-content-edit:first").show();
-  //Normal
-  $(".claro-content").hide();
-  $(".claro-content:first").show();
-  $(".concert-content").hide();
-  $(".concert-content:first").show();
 
+
+
+  //Concert channel
   $("ul.concert-calendar .concert-item").click(function () {
     $("ul.concert-calendar .concert-item").removeClass("concert-active");
     $(this).addClass("concert-active");
-    $(".concert-content").hide();
     var activeNav = $(this).attr("rel");
-    $("#" + activeNav).fadeIn();
     let stringLength = activeNav.length;
     let month = activeNav.charAt(stringLength - 1);
-
     $(".month").text(`${getMonthAndYear(month)}`);
+
+    //peticiones
+    let date = $(this).attr("date");
+    let country = getNameCountry(localStorage.getItem("src"));
+    getProgramming(date, country);
   });
 
-  $(".cinema-content").hide();
-  $(".cinema-content:first").show();
 
   $("ul.cinema-calendar .cinema-item").click(function () {
     $("ul.cinema-calendar .cinema-item").removeClass("cinema-active");
     $(this).addClass("cinema-active");
-    $(".cinema-content").hide();
+
     var activeNav = $(this).attr("rel");
-    $("#" + activeNav).fadeIn();
     let stringLength = activeNav.length;
     let month = activeNav.charAt(stringLength - 1);
 
     $(".month").text(`${getMonthAndYear(month)}`);
+    let date = $(this).attr("date");
+    let country = getNameCountry(localStorage.getItem("src"));
+    getProgramming(date, country);
   });
 
   $(".vision-content").hide();
@@ -2189,6 +2202,6 @@ $(".slider-pagination-add").click(function () {
   </label>
 </div>
 
-  `     
+  `
   );
 });

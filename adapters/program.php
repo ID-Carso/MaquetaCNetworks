@@ -5,9 +5,17 @@ include './callApi.php';
 class Program
 {
 
+    private $baseUrl = "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/";
+
     function getPrograms($date, $country)
     {
         callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/program/actual_programing/" . $country . "&" . $date . "", null);
+    }
+
+    function getProgramming($date, $country)
+    {
+     
+        callAPI(null, $this->baseUrl . "program/actual_programing_programation/" . $country . "&" . $date . "", null);
     }
 
     function showSynopsis($id)
@@ -46,6 +54,13 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             $date = $_POST['date'];
             $program = new Program();
             echo ($program->getProgramsGMT($date));
+            break;
+
+        case 'getProgramming':
+            $date = $_POST['date'];
+            $country = $_POST['country'];
+            $program = new Program();
+            echo ($program->getProgramming($date, $country));
             break;
     }
 }

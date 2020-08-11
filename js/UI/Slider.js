@@ -161,7 +161,7 @@ export default class Slider {
     });
   }
 
-  createDaysSlider(landing, containerSlider, containerSliderEdit) {
+  createDaysSlider(landing) {
     /*Programación general*/
     let date = new Date();
     $(".month").html(getMonthAndYear(date.getMonth()));
@@ -172,8 +172,6 @@ export default class Slider {
     /* Número de mes actual*/
     let currentMonth = date.getMonth();
 
-    /* Mes Siguiente*/
-    let nextMonth = getDays(2);
 
     /* Número de los días restantes del mes actual */
     let numberLastDays = getDays(1) - getDay();
@@ -187,6 +185,21 @@ export default class Slider {
     var containerItemSliderEdit = ""; //Variable para editar en programación en backoffice
     var daysSlider = "";
 
+    let month = getMonth(1);
+    let nextMonth = getMonth(2);
+
+    if (nextMonth < 10) {
+      nextMonth = `0${getMonth(2)}`;
+    }
+    if (month < 10) {
+      month = `0${getMonth(1)}`;
+    }
+
+    let day = date.getDate();
+    if (day < 10) {
+      day = `0${getDate()}`;
+    }
+
     if (numberLastDays <= 15) {
       /* Número de días por poner en el slider, considerando los días
         restantes del mes actual y los del siguiente mes
@@ -197,127 +210,155 @@ export default class Slider {
       for (let i = getDay(); i <= getDays(1); i++) {
         //Día actual
         if (i == getDay()) {
-          daysSlider += `
+          if (i < 10) {
+            daysSlider += `
             <li rel="${landing}-${i}-${getMonth(
             0
-          )}" class="${landing}-item programing-item ${landing}-active">
+          )}" class="${landing}-item programing-item ${landing}-active" date="${date.getFullYear()}-${month}-0${i}">
               <div class="day">
                   <p class="day-text">${getDayName(currentMonth, i)}</p>
                   <p class="day-number">${i}</p>
               </div>
             </li>      
         `;
-          containerItemSlider += `
-        <div id="${landing}-${i}-${getMonth(
+          } else {
+            daysSlider += `
+            <li rel="${landing}-${i}-${getMonth(
             0
-          )}" class="${landing}-content"></div>
+          )}" class="${landing}-item programing-item ${landing}-active" date="${date.getFullYear()}-${month}-${i}">
+              <div class="day">
+                  <p class="day-text">${getDayName(currentMonth, i)}</p>
+                  <p class="day-number">${i}</p>
+              </div>
+            </li>      
         `;
-          containerItemSliderEdit += `
-        <div id="${landing}-${i}-${getMonth(
-            0
-          )}" class="${landing}-content-edit"></div>
-      `;
+          }
+
         } else {
-          //Días restantes
-          daysSlider += `
-        <li rel="${landing}-${i}-${getMonth(
-            0
-          )}" class="${landing}-item programing-item">
-          <div class="day">
-              <p class="day-text">${getDayName(currentMonth, i)}</p>
-              <p class="day-number">${i}</p>
-          </div>
-        </li>      
-        `;
-          containerItemSlider += `
-        <div id="${landing}-${i}-${getMonth(
-            0
-          )}" class="${landing}-content"></div>
-        `;
+          if (i < 10) {
+            //Días restantes
+            daysSlider += `
+          <li rel="${landing}-${i}-${getMonth(
+              0
+            )}" class="${landing}-item programing-item" date="${date.getFullYear()}-${month}-0${i}">
+            <div class="day">
+                <p class="day-text">${getDayName(currentMonth, i)}</p>
+                <p class="day-number">${i}</p>
+            </div>
+          </li>      
+          `;
+          } else {
+            //Días restantes
+            daysSlider += `
+          <li rel="${landing}-${i}-${getMonth(
+              0
+            )}" class="${landing}-item programing-item" date="${date.getFullYear()}-${month}-${i}">
+            <div class="day">
+                <p class="day-text">${getDayName(currentMonth, i)}</p>
+                <p class="day-number">${i}</p>
+            </div>
+          </li>      
+          `;
+          }
+
+
         }
       }
       //Días del mes siguiente
       for (let i = 1; i <= getDays(2); i++) {
-        daysSlider += `
-      <li rel="${landing}-${i}-${getMonth(
-          1
-        )}" class="${landing}-item programing-item">
-        <div class="day">
-            <p class="day-text">${getDayName(currentMonth + 1, i)}</p>
-            <p class="day-number">${i}</p>
-        </div>
-      </li>      
-  `;
-        containerItemSlider += `
-        <div id="${landing}-${i}-${getMonth(
-          1
-        )}" class="${landing}-content"></div>        
-        `;
+        if (i < 10) {
+          daysSlider += `
+          <li rel="${landing}-${i}-${getMonth(
+              1
+            )}" class="${landing}-item programing-item" date="${date.getFullYear()}-${nextMonth}-0${i}">
+            <div class="day">
+                <p class="day-text">${getDayName(currentMonth + 1, i)}</p>
+                <p class="day-number">${i}</p>
+            </div>
+          </li>      
+      `;
+        } else {
+          daysSlider += `
+          <li rel="${landing}-${i}-${getMonth(
+              1
+            )}" class="${landing}-item programing-item" date="${date.getFullYear()}-${nextMonth}-${i}">
+            <div class="day">
+                <p class="day-text">${getDayName(currentMonth + 1, i)}</p>
+                <p class="day-number">${i}</p>
+            </div>
+          </li>      
+      `;
+        }
 
-        containerItemSliderEdit += `
-        <div id="${landing}-${i}-${getMonth(
-          0
-        )}" class="${landing}-content-edit"></div>
-        `;
+
       }
       let programmingContainerSlider = $("#pro-" + landing + "-slider");
       programmingContainerSlider.append(daysSlider);
-      containerSlider.append(containerItemSlider);
-      containerSliderEdit.append(containerItemSliderEdit);
     } else {
       //En caso de que al mes le falten más de 15 días para terminar
       totalDaysSlider = currentMonthDays;
       for (let i = getDay(); i <= totalDaysSlider; i++) {
         if (i == getDay()) {
-          //Día actual activo
-          daysSlider += `
+          if (i < 10) {
+            //Día actual activo
+            daysSlider += `
             <li rel="${landing}-${i}-${getMonth(
             0
-          )}" class="${landing}-item programing-item ${landing}-active">
+          )}" class="${landing}-item programing-item ${landing}-active" date="${date.getFullYear()}-${month}-0${i}">
               <div class="day">
                   <p class="day-text">${getDayName(currentMonth, i)}</p>
                   <p class="day-number">${i}</p>
               </div>
             </li>      
         `;
-          containerItemSlider += `
-        <div id="${landing}-${i}-${getMonth(
-            0
-          )}" class="${landing}-content"></div>
-        `;
-          containerItemSliderEdit += `
-        <div id="${landing}-${i}-${getMonth(
-            0
-          )}" class="${landing}-content-edit"></div>
-        `;
+
+          } else {
+            //Día actual activo
+            daysSlider += `
+          <li rel="${landing}-${i}-${getMonth(
+          0
+        )}" class="${landing}-item programing-item ${landing}-active" date="${date.getFullYear()}-${month}-${i}">
+            <div class="day">
+                <p class="day-text">${getDayName(currentMonth, i)}</p>
+                <p class="day-number">${i}</p>
+            </div>
+          </li>      
+      `;
+
+          }
+
         } else {
-          //Días siguientes
-          daysSlider += `
+          if (i < 10) {
+            //Días siguientes
+            daysSlider += `
         <li rel="${landing}-${i}-${getMonth(
             0
-          )}" class="${landing}-item programing-item">
+          )}" class="${landing}-item programing-item" date="${date.getFullYear()}-${month}-0${i}">
           <div class="day">
               <p class="day-text">${getDayName(currentMonth, i)}</p>
               <p class="day-number">${i}</p>
           </div>
         </li>      
         `;
-          containerItemSlider += `
-        <div id="${landing}-${i}-${getMonth(
+          } else {
+            //Días siguientes
+            daysSlider += `
+        <li rel="${landing}-${i}-${getMonth(
             0
-          )}" class="${landing}-content"></div>
+          )}" class="${landing}-item programing-item" date="${date.getFullYear()}-${month}-${i}">
+          <div class="day">
+              <p class="day-text">${getDayName(currentMonth, i)}</p>
+              <p class="day-number">${i}</p>
+          </div>
+        </li>      
         `;
-          containerItemSliderEdit += `
-        <div id="${landing}-${i}-${getMonth(
-            0
-          )}" class="${landing}-content-edit"></div>
-        `;
+          }
+
         }
       }
       let programmingContainerSlider = $("#pro-" + landing + "-slider");
       programmingContainerSlider.html(daysSlider);
-      containerSlider.append(containerItemSlider);
-      containerSliderEdit.append(containerItemSliderEdit);
+
     }
   }
 

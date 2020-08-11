@@ -4,7 +4,7 @@
 <head>
     <?php include './views/partials/head.php' ?>
     <script src="./js/backoffice/main.js?t=<?php echo time(); ?>" defer></script>
-     <input type="hidden" id="actual_landing" value="programation_edi">
+    <input type="hidden" id="actual_landing" value="programation_edi">
 
 </head>
 
@@ -194,7 +194,7 @@
                                             <!-- <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
                                             <!--class to update image-->
                                             <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
-                                               <img class="claro-nav-image thumbnail-image-program" src="" alt="" id="icon_canal_claro_edi" />
+                                                <img class="claro-nav-image thumbnail-image-program" src="" alt="" id="icon_canal_claro_edi" />
                                                 <!--    <span class="a-text-bold-warm text-plus mt-5 mb-5 shadow-contrast">472px X 295px</span>-->
                                             </label>
                                         </div>
@@ -207,7 +207,7 @@
                                             <!--  <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
                                             <!--class to update image-->
                                             <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
-                                                 <img class="claro-nav-image thumbnail-image-program" src="" alt="" id="icon_concert_channel_edi" />
+                                                <img class="claro-nav-image thumbnail-image-program" src="" alt="" id="icon_concert_channel_edi" />
 
                                                 <!--    <span class="a-text-bold-warm text-plus mt-5 mb-5 shadow-contrast">472px X 295px</span>-->
                                             </label>
@@ -221,7 +221,7 @@
                                             <!--  <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
                                             <!--class to update image-->
                                             <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
-                                                 <img class="claro-nav-image thumbnail-image-program" src="" alt="" id="icon_claro_cinema_edi" />
+                                                <img class="claro-nav-image thumbnail-image-program" src="" alt="" id="icon_claro_cinema_edi" />
                                                 <!--      <span class="a-text-bold-warm text-plus mt-5 mb-5 shadow-contrast">472px X 295px</span>-->
                                             </label>
                                         </div>
@@ -254,6 +254,9 @@
 
                         </div>
                     </div>
+                    <!--Contenido de los días-->
+                    <div class="claro-content-edit">
+                    </div>
                 </div>
 
                 <div id="concert-channel-programing-edit" class="tv-content">
@@ -274,7 +277,9 @@
 
                         </div>
                     </div>
-
+                    <!--Contenido de los días-->
+                    <div class="claro-content-edit">
+                    </div>
                 </div>
                 <!--End Concert channel de "Ahora en tv"-->
                 <!--Claro cinema de "Ahora en tv"-->
