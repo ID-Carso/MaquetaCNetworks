@@ -1696,8 +1696,9 @@ function getProgramming(date, country) {
         success: function (result) {
             console.log(result);
             let data = JSON.parse(result);
-
+            $('.loader-container').remove();
             if (data.code == 200) {
+
                 //Programas de canal claro
                 let programmingCanalClaro = data.data[0].programing[0].programs;
                 //Programas de concert channel

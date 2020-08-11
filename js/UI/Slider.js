@@ -470,7 +470,6 @@ export default class Slider {
     let bannerClaroCanal = $("#banner-claro-canal");
     let bannerClaroCinema = $("#banner-claro-cinema");
     let bannerConcertChannel = $("#banner-concert-channel");
-    let bannerProgramming = $("#banner-programming");
     let headerSlider = $(".header-slider");
     //$(".header-slider").slick("unslick");
     if (headerSlider.hasClass("slick-initialized")) {
@@ -509,7 +508,7 @@ export default class Slider {
       bannerClaroCanal.html(slideBanner);
       bannerClaroCinema.html(slideBannerClaroCinema);
       bannerConcertChannel.html(slideBannerConcertChannel);
-      bannerProgramming.html(slideBannerProgramming);
+
     } else if (screen.width >= 1200) {
       if (headerSlider.hasClass("slick-initialized")) {
         headerSlider.unslick();
@@ -543,7 +542,7 @@ export default class Slider {
       bannerClaroCanal.html(slideBanner);
       bannerClaroCinema.html(slideBannerClaroCinema);
       bannerConcertChannel.html(slideBannerConcertChannel);
-      bannerProgramming.html(slideBannerProgramming);
+
     }
 
     $(".header-slider").not(".slick-initialized").slick({
@@ -600,7 +599,7 @@ export default class Slider {
         bannerClaroCanal.html(slideBanner);
         bannerClaroCinema.html(slideBannerClaroCinema);
         bannerConcertChannel.html(slideBannerConcertChannel);
-        bannerProgramming.html(slideBannerProgramming);
+
         $(".headr-slider").slick();
       } else if (screen.width >= 1200) {
         slideBanner = "";
@@ -634,7 +633,6 @@ export default class Slider {
         bannerClaroCanal.html(slideBanner);
         bannerClaroCinema.html(slideBannerClaroCinema);
         bannerConcertChannel.html(slideBannerConcertChannel);
-        bannerProgramming.html(slideBannerProgramming);
       }
       $(".header-slider").not(".slick-initialized").slick({
         slidesToShow: 1,
