@@ -366,7 +366,7 @@ $(document).ready(function () {
             <div class="poster">
               <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="./images/concert-channel/carrousel/${favorite.image}" alt="">
+                    <img src="${favorite.image}" alt="">
                 </div>
                 <div class="a-concert-rectangle">
                     <div class="poster-title-margin">
@@ -465,7 +465,7 @@ $(document).ready(function () {
             <div class="poster">
              <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="./images/concert-channel/carrousel/${favorite.image}" alt="">
+                    <img src="${favorite.image}" alt="">
                 </div>
                 <div class="a-concert-rectangle">
                     <div class="poster-title-margin">
@@ -581,7 +581,7 @@ $(document).ready(function () {
             <div class="poster">
               <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="./images/claro-cinema/carrousel/${favorite.image}" alt="">
+                    <img src="${favorite.image}" alt="">
                 </div>
                 <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
@@ -680,7 +680,7 @@ $(document).ready(function () {
             <div class="poster">
              <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="./images/claro-cinema/carrousel/${favorite.image}" alt="">
+                    <img src="${favorite.image}" alt="">
                 </div>
                 <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
