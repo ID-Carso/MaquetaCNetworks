@@ -141,7 +141,7 @@
 
             <div class="program-image-slider  mx-auto" id="banner-programming-edi">
             </div>
-            <div class="d-inline-block position-absolute programming-dots space-do">
+            <div class="d-flex position-absolute programming-dots space-do">
                 <div class=" d-inline-block position-relative programming-slider-dots align-items-center">
                 </div>
                 <img src="./images/General/plus.svg" alt="" class="cursor-pointer slider-pagination-add mr-3" style="width:42px">
@@ -164,7 +164,8 @@
                                         <div class=" mx-auto position-relative thumbnail-image-program " id="images-logo">
 
                                             <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
-                                                <img class="claro-nav-image thumbnail-image-program" src="" alt="" id="icon_canal_claro_edi" />
+                                     <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
+                                                         <img class="claro-nav-image thumbnail-image-program" src="" alt="" id="icon_canal_claro_edi" />
 
                                             </label>
                                         </div>
@@ -176,8 +177,7 @@
                                         <div class=" mx-auto position-relative thumbnail-image-program" id="images-logo">
                                             <!--  <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
                                             <!--class to update image-->
-                                            <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
-                                                <img class="claro-nav-image thumbnail-image-program" src="" alt="" id="icon_concert_channel_edi" />
+                                              <img class="claro-nav-image thumbnail-image-program" src="" alt="" id="icon_concert_channel_edi" />
 
                                                 <!--    <span class="a-text-bold-warm text-plus mt-5 mb-5 shadow-contrast">472px X 295px</span>-->
                                             </label>
