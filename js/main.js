@@ -2169,7 +2169,7 @@ window.onresize = function () {
 };
 
 //para slider de programacion en editable
-$(".program-image-slider").slick({
+/* $(".program-image-slider").slick({
   slidesToShow: 1,
   dots: true,
   appendDots: $(".programming-slider-dots"),
@@ -2185,7 +2185,7 @@ $(".program-image-slider").slick({
       "</p> "
     );
   },
-});
+}); */
 
 //para dar click
 const pagination = $(".pag");

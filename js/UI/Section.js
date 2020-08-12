@@ -4,8 +4,7 @@ export default class Section {
   createProgramacionSlider() {
     programacion_slider = $(".programacion-slider").slick({
       /**/
-      responsive: [
-        {
+      responsive: [{
           breakpoint: 767,
           settings: {
             slidesToShow: 7,
@@ -26,10 +25,8 @@ export default class Section {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
         {
@@ -41,10 +38,8 @@ export default class Section {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
         {
@@ -56,10 +51,8 @@ export default class Section {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
         {
@@ -71,10 +64,8 @@ export default class Section {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
       ],
@@ -177,19 +168,19 @@ export default class Section {
     }
 
     let block3Image = [];
-    let counter=1;
-    while(true){
+    let counter = 1;
+    while (true) {
       try {
-        if(json.data["block_3_image"+counter]){
-          block3Image[counter-1]=json.data["block_3_image"+counter];
+        if (json.data["block_3_image" + counter]) {
+          block3Image[counter - 1] = json.data["block_3_image" + counter];
           counter++;
-        }else{
+        } else {
           break;
-          
+
         }
       } catch (error) {
         break;
-       
+
       }
     }
     $(".section-slider").slick("unslick");
@@ -234,7 +225,7 @@ export default class Section {
     $(".claro-slider-home").append(programLarge);
 
     //CUADROS DE EDITAR PARA HOME
-    let programLargeprev="";
+    let programLargeprev = "";
     for (let i = 0; i < blockImage3Length; i++) {
       if (arrayFavoritesId.includes(block3Image[i].chapter_id)) {
         programLargeprev += `
@@ -296,19 +287,19 @@ export default class Section {
 
     /* SLIDER */
     let block4Image = [];
-     counter=1;
-    while(true){
+    counter = 1;
+    while (true) {
       try {
-        if(json.data["block_4_image"+counter]){
-          block4Image[counter-1]=json.data["block_4_image"+counter];
+        if (json.data["block_4_image" + counter]) {
+          block4Image[counter - 1] = json.data["block_4_image" + counter];
           counter++;
-        }else{
+        } else {
           break;
-          
+
         }
       } catch (error) {
         break;
-       
+
       }
     }
 
@@ -352,7 +343,7 @@ export default class Section {
     $(".concert-home-slider").append(concertHomeVideosMobile);
 
     //CUADROS DE EDITAR PARA CONCERT-HOME
-    let concertHomeVideosMobileprev="";
+    let concertHomeVideosMobileprev = "";
     for (let i = 0; i < blockImage4Length; i++) {
       if (arrayFavoritesId.includes(block4Image[i].chapter_id)) {
         concertHomeVideosMobileprev += `
@@ -413,19 +404,19 @@ export default class Section {
 
     /* SLIDER*/
     let block5Image = [];
-    counter=1;
-    while(true){
+    counter = 1;
+    while (true) {
       try {
-        if(json.data["block_5_image"+counter]){
-          block5Image[counter-1]=json.data["block_5_image"+counter];
+        if (json.data["block_5_image" + counter]) {
+          block5Image[counter - 1] = json.data["block_5_image" + counter];
           counter++;
-        }else{
+        } else {
           break;
-          
+
         }
       } catch (error) {
         break;
-       
+
       }
     }
 
@@ -472,10 +463,10 @@ export default class Section {
     $(".cinema-home-slider").append(cinemaHomeVideosMobile);
 
     //CUADROS PARA EDITAR CINEMA
-    let cinemaHomeVideosMobileprev="";
+    let cinemaHomeVideosMobileprev = "";
     for (let i = 0; i < blockImage5Length; i++) {
       if (arrayFavoritesId.includes(block5Image[i].chapter_id)) {
-     cinemaHomeVideosMobileprev += `
+        cinemaHomeVideosMobileprev += `
         <div class=" p-3 border-t border-l border-r border-b position-relative">          
 
             <div class="poster">
@@ -533,8 +524,7 @@ export default class Section {
       prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
       nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
 
-      responsive: [
-        {
+      responsive: [{
           breakpoint: 768,
           settings: {
             slidesToShow: 1,
@@ -567,10 +557,8 @@ export default class Section {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
 
@@ -583,10 +571,8 @@ export default class Section {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
 
@@ -599,10 +585,8 @@ export default class Section {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
       ],
@@ -663,39 +647,39 @@ export default class Section {
     //obtenemos las iamgenes del carrusel 1
     let data = json.data;
     //cambiamos el icono del landing
-    $('#icon_canal_claro').attr('src',data.block_2_icon_channel)
+    $('#icon_canal_claro').attr('src', data.block_2_icon_channel)
 
-    let carrusel1=[];
-    let counter=1;
-    while(true){
+    let carrusel1 = [];
+    let counter = 1;
+    while (true) {
       try {
-        if(data["block_4_carrusel_1_image"+counter]){
-          carrusel1[counter-1]=data["block_4_carrusel_1_image"+counter];
+        if (data["block_4_carrusel_1_image" + counter]) {
+          carrusel1[counter - 1] = data["block_4_carrusel_1_image" + counter];
           counter++;
-        }else{
+        } else {
           break;
-          
+
         }
       } catch (error) {
         break;
-       
+
       }
     }
     //carrusel 2
-    let carrusel2=[];
-    let counter2=1;
-    while(true){
+    let carrusel2 = [];
+    let counter2 = 1;
+    while (true) {
       try {
-        if(data["block_4_carrusel_2_image"+counter2]){
-          carrusel2[counter2-1]=data["block_4_carrusel_2_image"+counter2];
+        if (data["block_4_carrusel_2_image" + counter2]) {
+          carrusel2[counter2 - 1] = data["block_4_carrusel_2_image" + counter2];
           counter2++;
-        }else{
+        } else {
           break;
-          
+
         }
       } catch (error) {
         break;
-       
+
       }
     }
     let slider = new Slider();
@@ -704,32 +688,27 @@ export default class Section {
     let exlusiveContentSlider = $("#exlusiveContentClaroSlider");
     sectionSlider.slick("unslick");
 
-   
 
-    let programsExlusiveContent = [
-      {
+
+    let programsExlusiveContent = [{
         chapter_id: 1,
         program_title: "DRESS CODE",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/05-DRESS-CODE.jpg",
+        image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/05-DRESS-CODE.jpg",
       },
       {
         chapter_id: 2,
         program_title: "FIT FOR LIFE",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/06-FIT4LIFE.jpg",
+        image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/06-FIT4LIFE.jpg",
       },
       {
         chapter_id: 3,
         program_title: "CONEXIÓN CLARO",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/07-CONEXION.jpg",
+        image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/07-CONEXION.jpg",
       },
       {
         chapter_id: 4,
         program_title: "LA CAJA DE PANDORA",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/08-CAJA-DE-PANDORA.jpg",
+        image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/08-CAJA-DE-PANDORA.jpg",
       },
     ];
 
@@ -822,39 +801,39 @@ export default class Section {
   renderClaroCinema(json) {
     //obtenemos las iamgenes del carrusel 1
     let data = json.data;
-    $('#icon_claro_cinema').attr('src',data.block_2_icon_channel)
+    $('#icon_claro_cinema').attr('src', data.block_2_icon_channel)
 
-    let carrusel1=[];
-    let counter=1;
-    while(true){
+    let carrusel1 = [];
+    let counter = 1;
+    while (true) {
       try {
-        if(data["block_4_carrusel_1_image"+counter]){
-          carrusel1[counter-1]=data["block_4_carrusel_1_image"+counter];
+        if (data["block_4_carrusel_1_image" + counter]) {
+          carrusel1[counter - 1] = data["block_4_carrusel_1_image" + counter];
           counter++;
-        }else{
+        } else {
           break;
-          
+
         }
       } catch (error) {
         break;
-       
+
       }
     }
     //carrusel 2
-    let carrusel2=[];
-    let counter2=1;
-    while(true){
+    let carrusel2 = [];
+    let counter2 = 1;
+    while (true) {
       try {
-        if(data["block_4_carrusel_2_image"+counter2]){
-          carrusel2[counter2-1]=data["block_4_carrusel_2_image"+counter2];
+        if (data["block_4_carrusel_2_image" + counter2]) {
+          carrusel2[counter2 - 1] = data["block_4_carrusel_2_image" + counter2];
           counter2++;
-        }else{
+        } else {
           break;
-          
+
         }
       } catch (error) {
         break;
-       
+
       }
     }
     let slider = new Slider();
@@ -863,7 +842,7 @@ export default class Section {
     let claro_cinema_carrusel_2 = $("#claro_cinema_carrusel_2");
     sectionSlider.slick("unslick");
 
-   
+
     let Strinfcarrusel1 = "";
     let Strinfcarrusel2 = "";
 
@@ -871,7 +850,7 @@ export default class Section {
       Almacenamos los programas en otras variables para dibujar los programas con bordes.
       Esto  para la parevisualización en Backoffice de los landings
     */
-   ;
+    ;
     carrusel1.forEach((program) => {
       Strinfcarrusel1 += `
       <div class="poster" >
@@ -889,7 +868,7 @@ export default class Section {
         </div>
       </div>
       `;
-      
+
     });
 
     carrusel2.forEach((program) => {
@@ -909,7 +888,7 @@ export default class Section {
         </div>
       </div>
       `;
-     
+
     });
 
     claro_cinema_carrusel_1.append(Strinfcarrusel1);
@@ -919,39 +898,39 @@ export default class Section {
   renderConcertChanel(json) {
     //obtenemos las iamgenes del carrusel 1
     let data = json.data;
-    $('#icon_concert_channel').attr('src',data.block_2_icon_channel)
-    
-    let carrusel1=[];
-    let counter=1;
-    while(true){
+    $('#icon_concert_channel').attr('src', data.block_2_icon_channel)
+
+    let carrusel1 = [];
+    let counter = 1;
+    while (true) {
       try {
-        if(data["block_4_carrusel_1_image"+counter]){
-          carrusel1[counter-1]=data["block_4_carrusel_1_image"+counter];
+        if (data["block_4_carrusel_1_image" + counter]) {
+          carrusel1[counter - 1] = data["block_4_carrusel_1_image" + counter];
           counter++;
-        }else{
+        } else {
           break;
-          
+
         }
       } catch (error) {
         break;
-       
+
       }
     }
     //carrusel 2
-    let carrusel2=[];
-    let counter2=1;
-    while(true){
+    let carrusel2 = [];
+    let counter2 = 1;
+    while (true) {
       try {
-        if(data["block_4_carrusel_2_image"+counter2]){
-          carrusel2[counter2-1]=data["block_4_carrusel_2_image"+counter2];
+        if (data["block_4_carrusel_2_image" + counter2]) {
+          carrusel2[counter2 - 1] = data["block_4_carrusel_2_image" + counter2];
           counter2++;
-        }else{
+        } else {
           break;
-          
+
         }
       } catch (error) {
         break;
-       
+
       }
     }
     let slider = new Slider();
@@ -960,7 +939,7 @@ export default class Section {
     let concert_channel_carrusel_2 = $("#concert_channel_carrusel_2");
     sectionSlider.slick("unslick");
 
-   
+
     let Strinfcarrusel1 = "";
     let Strinfcarrusel2 = "";
 
@@ -968,7 +947,7 @@ export default class Section {
       Almacenamos los programas en otras variables para dibujar los programas con bordes.
       Esto  para la parevisualización en Backoffice de los landings
     */
-   ;
+    ;
     carrusel1.forEach((program) => {
       Strinfcarrusel1 += `
       <div class="poster" >
@@ -986,7 +965,7 @@ export default class Section {
         </div>
       </div>
       `;
-      
+
     });
 
     carrusel2.forEach((program) => {
@@ -1006,39 +985,37 @@ export default class Section {
         </div>
       </div>
       `;
-     
+
     });
     concert_channel_carrusel_1.append(Strinfcarrusel1);
     concert_channel_carrusel_2.append(Strinfcarrusel2);
     slider.createSectionSliderHome();
   }
-  renderProgramation(json){
+  renderProgramation(json) {
     let data = json.data;
     //cambiamos los iconos de los canales
 
-    $('#icon_canal_claro').attr('src',data.icon_canal_claro)
-    $('#icon_concert_channel').attr('src',data.icon_concert_channel)
-    $('#icon_claro_cinema').attr('src',data.icon_claro_cinema)
+    $('#icon_canal_claro').attr('src', data.icon_canal_claro)
+    $('#icon_concert_channel').attr('src', data.icon_concert_channel)
+    $('#icon_claro_cinema').attr('src', data.icon_claro_cinema)
     //agregamos el slider
-    let banner_images=[];
-    let counter=1;
-    while(true){
+    let banner_images = [];
+    let counter = 1;
+    while (true) {
       try {
-        if(data["image_slider_"+counter]){
-          banner_images[counter-1]=data["image_slider_"+counter];
+        if (data["image_slider_" + counter]) {
+          banner_images[counter - 1] = data["image_slider_" + counter];
           counter++;
-        }else{
+        } else {
           break;
-          
+
         }
       } catch (error) {
         break;
-       
+
       }
     }
     $("#banner-programming").slick("unslick");
-    
-
     let imagesHeaderLength = banner_images.length;
     let divImageHeader = "";
     for (let i = 0; i < imagesHeaderLength; i++) {
@@ -1047,7 +1024,6 @@ export default class Section {
         <img src="${banner_images[i]}" class="rellax" data-rellax="10">
       </div>`;
     }
-
     $("#banner-programming").append(divImageHeader);
     $("#banner-programming").not(".slick-initialized").slick({
       slidesToShow: 1,
@@ -1056,60 +1032,71 @@ export default class Section {
       dots: true,
       centerMode: false,
       arrows: false,
-      autoplay:true
+      autoplay: true
     });
-  
+
   }
-  renderProgramation_edi(json){
+  renderProgramation_edi(json) {
     let data = json.data;
     //cambiamos los iconos de los canales
 
-    $('#icon_canal_claro_edi').attr('src',data.icon_canal_claro)
-    $('#icon_concert_channel_edi').attr('src',data.icon_concert_channel)
-    $('#icon_claro_cinema_edi').attr('src',data.icon_claro_cinema)
+    $('#icon_canal_claro_edi').attr('src', data.icon_canal_claro)
+    $('#icon_concert_channel_edi').attr('src', data.icon_concert_channel)
+    $('#icon_claro_cinema_edi').attr('src', data.icon_claro_cinema)
+
     //agregamos el slider
-    /**
-    let banner_images=[];
-    let counter=1;
-    while(true){
+    let banner_images = [];
+    let counter = 1;
+    while (true) {
       try {
-        if(data["image_slider_"+counter]){
-          banner_images[counter-1]=data["image_slider_"+counter];
+        if (data["image_slider_" + counter]) {
+          banner_images[counter - 1] = data["image_slider_" + counter];
           counter++;
-        }else{
+        } else {
           break;
-          
+
         }
       } catch (error) {
         break;
-       
+
       }
     }
-    $("#banner-programming-edi").slick("unslick");
-    
-
+    //$("#banner-programming-edi").slick("unslick");
     let imagesHeaderLength = banner_images.length;
     let divImageHeader = "";
     for (let i = 0; i < imagesHeaderLength; i++) {
       divImageHeader += `
-                <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
-                    <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
-                        <!--   <span class="a-text-bold-warm text-plus mb90 shadow-contrast add-photo">472px X 295px</span>-->
-                        <img src="${banner_images[i]}" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
-                    </label>
-                </div>`;
+        <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
+            <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
+                <!--<span class="a-text-bold-warm text-plus mb90 shadow-contrast add-photo">472px X 295px</span>-->
+                <img src="${banner_images[i]}" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+            </label>
+        </div>`;
     }
+
 
     $("#banner-programming-edi").append(divImageHeader);
     $("#banner-programming-edi").not(".slick-initialized").slick({
       slidesToShow: 1,
-      slidesToScroll: 1,
-      infinite: false,
       dots: true,
-      centerMode: false,
+      appendDots: $(".programming-slider-dots"),
+      initialSlide: 0,
+      infinite: false,
       arrows: false,
-      autoplay:true
+      customPaging: function (slider, i) {
+        var thumb = $(slider.$slides[i]).data();
+        return (
+          "<p class='a-text-bold-tealblue slider-pagination-item pag'>" +
+          (i + 1) +
+          "</p> "
+        );
+      },
     });
-   */
+    //para dar click
+    const pagination = $(".pag");
+    $(".pag").click(function () {
+      pagination.removeClass("selteal");
+      $(this).addClass("selteal");
+    });
   }
 }
