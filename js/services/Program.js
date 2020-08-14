@@ -371,7 +371,7 @@ function getPrograms(date, country) {
   <div class="schedule-poster">
      <div class="poster">
           <div class="thumbnail-edit" _id="${program.chapter_id}">
-          <img src="${program.image}" alt="">
+          <img src="${program.image}" alt="" class="w-100">
           </div>
       </div>
   </div>
@@ -413,7 +413,7 @@ function getPrograms(date, country) {
                 <div class="schedule-poster">
                    <div class="poster">
                         <div class="thumbnail-prog" _id="${program.chapter_id}">
-                            <img src="${program.image}" alt="">
+                            <img src="${program.image}" alt="" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -668,7 +668,7 @@ function getPrograms(date, country) {
                 <div class="schedule-poster">
                     <div class="poster">
                         <div class="thumbnail-prog" _id="${program.chapter_id}">
-                            <img src="${program.image}" alt="">
+                            <img src="${program.image}" alt="" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -702,7 +702,7 @@ function getPrograms(date, country) {
                 <div class="schedule-poster">
                     <div class="poster">
                         <div class="thumbnail-prog" _id="${program.chapter_id}">
-                            <img src="${program.image}" alt="">
+                            <img src="${program.image}" alt="" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -962,7 +962,7 @@ function getPrograms(date, country) {
             <div class="schedule-item-body">
                 <div class="schedule-poster">
                         <div class="thumbnail-prog" _id="${program.chapter_id}">
-                            <img src="${program.image}" alt="">
+                            <img src="${program.image}" alt=" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -997,7 +997,7 @@ function getPrograms(date, country) {
               <div class="schedule-poster">
                   <div class="poster">
                       <div class="thumbnail-prog" _id="${program.chapter_id}">
-                          <img src="${program.image}" alt="">
+                          <img src="${program.image}" alt="" class="w-100">
                       </div>
                   </div>
               </div>
@@ -1403,228 +1403,7 @@ function getPrograms(date, country) {
   </div>
       `;
 
-            /*programingNuestraVision.forEach((program, index) => {
-              if (index == 0) {
-                programNuestraVision = `
-                <div class="poster" >
-                  <div class="poster-body">
-                      <div class="showtime-container">
-                          <p class="a-programming-text">${program.time}</p>
-                          <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
-                      </div>
-                      <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                      <a href="sinopsis.php" class="text-decoration-none">
-                          <div class="thumbnail">
-                              <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
-                          </div>
-                          <div class="a-vision-rectangle thumbnail-info-title">
-                              <div class="poster-title-margin">
-                                  <p class="a-poster-text-white">${program.chapter_title}</p>
-                              </div>
-                          </div>
-                      </a>
 
-                  </div>
-              </div>
-                `;
-              } else {
-                programNuestraVision = `
-                <div class="poster" >
-                  <div class="poster-body">
-                      <div class="showtime-container">
-                          <p class="a-programming-text">${program.time}</p>
-                          <button type="button" class="poster-button" _id="${program.chapter_id}"><img src="./images/home/plus.png" alt="" class="poster-add"></button>
-                      </div>
-
-                      <a href="sinopsis.php" class="text-decoration-none">
-                          <div class="thumbnail">
-                              <img src="./images/claro-cinema/carrousel/${program.image}" alt="">
-                          </div>
-                          <div class="a-vision-rectanglethumbnail-info-title">
-                              <div class="poster-title-margin">
-                                  <p class="a-poster-text-white">${program.chapter_title}</p>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-                `;
-              }
-              nowSliderNuestraVision.append(programNuestraVision);
-            });*/
-
-            /*let programClaroSports = `
-      <div class="poster">
-      <div class="poster-body">
-          <div class="showtime-container">
-              <p class="a-programming-text">14:30 - 16:30</p>
-              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-          </div>
-          <a href="sinopsis.php">
-              <div class="thumbnail">
-
-              </div>
-              <div class="a-sports-rectangle thumbnail-info-title">
-                  <div class="poster-title-margin">
-                      <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                  </div>
-              </div>
-          </a>
-      </div>
-
-  </div>
-
-  <div class="poster">
-      <div class="poster-body">
-          <div class="showtime-container">
-              <p class="a-programming-text">14:30 - 16:30</p>
-              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-          </div>
-          <a href="sinopsis.php">
-              <div class="thumbnail">
-              </div>
-              <div class="a-sports-rectangle thumbnail-info-title">
-                  <div class="poster-title-margin">
-                      <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                  </div>
-              </div>
-          </a>
-      </div>
-
-  </div>
-
-  <div class="poster">
-      <div class="poster-body">
-          <div class="showtime-container">
-              <p class="a-programming-text">14:30 - 16:30</p>
-              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-          </div>
-          <a href="sinopsis.php">
-              <div class="thumbnail">
-              </div>
-              <div class="a-sports-rectangle thumbnail-info-title">
-                  <div class="poster-title-margin">
-                      <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                  </div>
-              </div>
-          </a>
-      </div>
-
-  </div>
-
-  <div class="poster">
-      <div class="poster-body">
-          <div class="showtime-container">
-              <p class="a-programming-text">14:30 - 16:30</p>
-              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-          </div>
-          <a href="sinopsis.php">
-              <div class="thumbnail">
-              </div>
-              <div class="a-sports-rectangle thumbnail-info-title">
-                  <div class="poster-title-margin">
-                      <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                  </div>
-              </div>
-          </a>
-      </div>
-
-  </div>
-
-  <div class="poster">
-      <div class="poster-body">
-          <div class="showtime-container">
-              <p class="a-programming-text">14:30 - 16:30</p>
-              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-          </div>
-          <a href="sinopsis.php">
-              <div class="thumbnail">
-              </div>
-              <div class="a-sports-rectangle thumbnail-info-title">
-                  <div class="poster-title-margin">
-                      <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                  </div>
-              </div>
-          </a>
-      </div>
-
-  </div>
-
-  <div class="poster">
-      <div class="poster-body">
-          <div class="showtime-container">
-              <p class="a-programming-text">14:30 - 16:30</p>
-              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-          </div>
-          <a href="sinopsis.php">
-              <div class="thumbnail">
-              </div>
-              <div class="a-sports-rectangle thumbnail-info-title">
-                  <div class="poster-title-margin">
-                      <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                  </div>
-              </div>
-          </a>
-      </div>
-
-  </div>
-
-  <div class="poster">
-      <div class="poster-body">
-          <div class="showtime-container">
-              <p class="a-programming-text">14:30 - 16:30</p>
-              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-          </div>
-          <a href="sinopsis.php">
-              <div class="thumbnail">
-              </div>
-              <div class="a-sports-rectangle thumbnail-info-title">
-                  <div class="poster-title-margin">
-                      <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                  </div>
-              </div>
-          </a>
-      </div>
-
-  </div>
-
-  <div class="poster">
-      <div class="poster-body">
-          <div class="showtime-container">
-              <p class="a-programming-text">14:30 - 16:30</p>
-              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-          </div>
-          <a href="sinopsis.php">
-              <div class="thumbnail">
-              </div>
-              <div class="a-sports-rectangle thumbnail-info-title">
-                  <div class="poster-title-margin">
-                      <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                  </div>
-              </div>
-          </a>
-      </div>
-
-  </div>
-
-  <div class="poster">
-      <div class="poster-body">
-          <div class="showtime-container">
-              <p class="a-programming-text">14:30 - 16:30</p>
-              <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-          </div>
-          <a href="sinopsis.php">
-              <div class="thumbnail">
-              </div>
-              <div class="a-sports-rectangle thumbnail-info-title">
-                  <div class="poster-title-margin">
-                      <p class="a-poster-text-black">¿QUÉ TE HA DADO ESA MUJER?</p>
-                  </div>
-              </div>
-          </a>
-      </div>
-  </div>
-      `;*/
             createTvSlider(nowSliderCanalClaro);
             createTvSlider(nowSliderCanalClaroprev);
 
@@ -1685,6 +1464,7 @@ function getProgramming(date) {
     $.ajax({
         type: "POST",
         data: data,
+        cache: false,
         url: "./adapters/program.php",
         beforeSend: function () {
             $("body").append(`
@@ -1752,9 +1532,12 @@ function getProgramming(date) {
 
                     //Truncar el texto
                     let synopsis = program.sinopsis;
-                    if (program.sinopsis.length > 150) {
-                        synopsis = program.sinopsis.substr(0, 150) + "...";
-                    }
+                    /*                     if (program.sinopsis) {
+                                            if (program.sinopsis.length > 150) {
+                                                synopsis = program.sinopsis.substr(0, 150) + "...";
+                                            }
+                                        } */
+
                     //Programas para la pantalla de editar programación en backoffice
                     programCanalClaroEdit += `
                     <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
@@ -1767,7 +1550,7 @@ function getProgramming(date) {
                             <div class="schedule-poster">
                                 <div class="poster">
                                     <div class="thumbnail-edit" _id="${program.chapter_id}">
-                                        <img src="${program.image}" alt="">
+                                        <img src="${program.image}" alt="" class="w-100">
                                     </div>
                                 </div>
                             </div>
@@ -1838,9 +1621,11 @@ function getProgramming(date) {
 
                     //Truncar el texto
                     let synopsis = program.sinopsis;
-                    if (program.sinopsis.length > 150) {
-                        synopsis = program.sinopsis.substr(0, 150) + "...";
-                    }
+                    /*                     if (program.sinopsis) {
+                                            if (program.sinopsis.length > 150) {
+                                                synopsis = program.sinopsis.substr(0, 150) + "...";
+                                            }
+                                        } */
                     //Programas para la pantalla de editar programación en backoffice
                     programConcertChannelEdit += `
                     <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
@@ -1925,9 +1710,11 @@ function getProgramming(date) {
 
                     //Truncar el texto
                     let synopsis = program.sinopsis;
-                    if (program.sinopsis.length > 150) {
-                        synopsis = program.sinopsis.substr(0, 150) + "...";
-                    }
+                    /*                     if (program.sinopsis) {
+                                            if (program.sinopsis.length > 150) {
+                                                synopsis = program.sinopsis.substr(0, 150) + "...";
+                                            }
+                                        } */
                     //Programas para la pantalla de editar programación en backoffice
                     programClaroCinemaEdit += `
                     <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
@@ -1972,7 +1759,7 @@ function getProgramming(date) {
                 </div> 
                     `;
                 });
-                console.log(programClaroCinema);
+
                 //Insertar programas para edición en backoffice
                 $('.claro-content-edit').html(programCanalClaroEdit);
                 //Insertar programas en página

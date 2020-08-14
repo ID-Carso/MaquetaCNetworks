@@ -1034,8 +1034,8 @@ export default class Section {
       arrows: false,
       autoplay: true
     });
-
   }
+
   renderProgramation_edi(json) {
     let data = json.data;
     //cambiamos los iconos de los canales
@@ -1069,7 +1069,7 @@ export default class Section {
         <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
             <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
                 <!--<span class="a-text-bold-warm text-plus mb90 shadow-contrast add-photo">472px X 295px</span>-->
-                <img src="${banner_images[i]}" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                <img src="${banner_images[i]}?v=${new Date().getTime()}" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
             </label>
         </div>`;
     }
@@ -1086,7 +1086,7 @@ export default class Section {
       customPaging: function (slider, i) {
         var thumb = $(slider.$slides[i]).data();
         return (
-          "<p class='a-text-bold-tealblue slider-pagination-item pag'>" +
+          "<p class='a-text-bold-tealblue slider-pagination-item pag' slide_index=" + (i) + ">" +
           (i + 1) +
           "</p> "
         );

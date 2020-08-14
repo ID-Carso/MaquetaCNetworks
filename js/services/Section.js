@@ -3,17 +3,17 @@ import Section from "../UI/Section.js";
 function getMetaKeys(landing) {
   let data = {
     function: "getMetakeys",
-    landing:landing
+    landing: landing
   };
   $.ajax({
     type: "POST",
     data: data,
+    cache: false,
     url: "./adapters/section.php",
-    success: function(result) {
+    success: function (result) {
       let json = JSON.parse(result);
       let sectionUI = new Section();
-     console.log(json);
-     
+
       switch (landing) {
         case 'home':
           sectionUI.renderHome(json);
@@ -27,7 +27,7 @@ function getMetaKeys(landing) {
         case 'concert_channel':
           sectionUI.renderConcertChanel(json);
           break;
-       
+
         case 'programation':
           sectionUI.renderProgramation(json);
 
@@ -43,4 +43,6 @@ function getMetaKeys(landing) {
   });
 }
 
-export { getMetaKeys };
+export {
+  getMetaKeys
+};

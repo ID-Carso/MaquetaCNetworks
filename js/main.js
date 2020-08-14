@@ -2189,7 +2189,7 @@ window.onresize = function () {
 
 //para dar click
 const pagination = $(".pag");
-$(".pag").click(function () {
+pagination.click(function () {
   pagination.removeClass("selteal");
   $(this).addClass("selteal");
 });

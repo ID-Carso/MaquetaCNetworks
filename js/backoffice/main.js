@@ -1,54 +1,56 @@
 $(document).ready(function () {
-  let date = new Date();
-  let day = date.getDate();
-  let month = date.getMonth() + 1;
-  let year = date.getFullYear();
-  let hour = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
+    let date = new Date();
+    let day = date.getDate();
+    let month = date.getMonth() + 1;
+    let year = date.getFullYear();
+    let hour = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
 
-  //Si el número de día es menor a 10, le agregamos un cero para tener el formato DD
-  if (day < 10) {
-    day = "0" + date.getDate();
-  }
-  //Si el número del mes es menor a 10, le agregamos un cero para tener el formato MM
-  if (month < 10) {
-    month = "0" + (date.getMonth() + 1);
-  }
+    //Si el número de día es menor a 10, le agregamos un cero para tener el formato DD
+    if (day < 10) {
+        day = "0" + date.getDate();
+    }
+    //Si el número del mes es menor a 10, le agregamos un cero para tener el formato MM
+    if (month < 10) {
+        month = "0" + (date.getMonth() + 1);
+    }
 
-  //Fecha actual en formato YYYY-MM-DD
-  let currentDate = `${year}-${month}-${day}`;
-  //Hora actual en HH:MM
-  let currentTime = `${hour}:${minutes}`;
-  //Traer programas del día actual en GTM
-  let data = {
-    date: currentDate,
-    function: "getProgramsGMT",
-  };
-  $.ajax({
-    type: "POST",
-    data: data,
-    url: "./adapters/program.php",
-    success: function (result) {
+    //Fecha actual en formato YYYY-MM-DD
+    let currentDate = `${year}-${month}-${day}`;
+    //Hora actual en HH:MM
+    let currentTime = `${hour}:${minutes}`;
+    //Traer programas del día actual en GTM
+    let data = {
+        date: currentDate,
+        function: "getProgramsGMT",
+    };
+    $.ajax({
+        type: "POST",
+        data: data,
+        url: "./adapters/program.php",
+        success: function (result) {
 
-      let json = JSON.parse(result);
-      console.log(json);
-      //Contenedor para insertar todos los programas
-      let claroCotentProgramacionGeneralEdit = $(".claro-content-edit");
-      //Programación de los diferentes landings
-      let programingCanalClaro = json.data[0].programing[0].programs;
-      let programingConcertChannel = json.data[1].programing[0].programs;
-      let programingClaroCinema = json.data[2].programing[0].programs;
-      let programCanalClaroEdit = "";
-      let programConcertChannelEdit = "";
-      let programClaroCinemaEdit = "";
-      //Canal claro GMT
-      programingCanalClaro.forEach((program, index) => {
-        let synopsis = program.sinopsis;
-        if (program.sinopsis.length > 150) {
-          synopsis = program.sinopsis.substr(0, 150) + "...";
-        }
-        programCanalClaroEdit += `
+            let json = JSON.parse(result);
+            console.log(json);
+            //Contenedor para insertar todos los programas
+            let claroCotentProgramacionGeneralEdit = $(".claro-content-edit");
+            //Programación de los diferentes landings
+            let programingCanalClaro = json.data[0].programing[0].programs;
+            let programingConcertChannel = json.data[1].programing[0].programs;
+            let programingClaroCinema = json.data[2].programing[0].programs;
+            let programCanalClaroEdit = "";
+            let programConcertChannelEdit = "";
+            let programClaroCinemaEdit = "";
+            //Canal claro GMT
+            programingCanalClaro.forEach((program, index) => {
+                let synopsis = "";
+                if (program.sinopsis.length > 150) {
+                    synopsis = program.sinopsis.substr(0, 150) + "...";
+                } else {
+                    synopsis = program.sinopsis;
+                }
+                programCanalClaroEdit += `
         <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
         <img src="./images/General/pencil.svg" alt="" class="pencil edit-program-pencil" chapter_id="${program.chapter_id}">
         <div class="schedule-container col-12 p-5 mx-auto mt-0">
@@ -59,7 +61,7 @@ $(document).ready(function () {
                 <div class="schedule-poster">
                     <div class="poster">
                         <div class="thumbnail-edit" _id="${program.chapter_id}">
-                            <img src="${program.image}" alt="">
+                            <img src="${program.image}" alt="${program.chapter_title}" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -82,7 +84,7 @@ $(document).ready(function () {
                         </div>
                     </div>
                     <div>
-                        <span class="schedule-description s1" id="synopsis-edi">${synopsis}</span>
+                        <span class="schedule-description s1" id="synopsis-edi">${program.sinopsis.substr(0, 150) + "..."}</span>
                         <span class="text-normal cursor-pointer a-text-bold-tealblue"> Ver más...</span>
                     </div>
                 </div>
@@ -90,13 +92,15 @@ $(document).ready(function () {
         </div>
     </div> 
         `;
-      });
-      programingConcertChannel.forEach((program, index) => {
-        let synopsis = program.sinopsis;
-        if (program.sinopsis.length > 150) {
-          synopsis = program.sinopsis.substr(0, 150) + "...";
-        }
-        programConcertChannelEdit += `
+            });
+            programingConcertChannel.forEach((program, index) => {
+                let synopsis = "";
+                if (program.sinopsis.length > 150) {
+                    synopsis = program.sinopsis.substr(0, 150) + "...";
+                } else {
+                    synopsis = program.sinopsis;
+                }
+                programConcertChannelEdit += `
         <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
         <img src="./images/General/pencil.svg" alt="" class="pencil edit-program-pencil" chapter_id="${program.chapter_id}">
         <div class="schedule-container col-12 p-5 mx-auto mt-0">
@@ -107,7 +111,7 @@ $(document).ready(function () {
                 <div class="schedule-poster">
                     <div class="poster">
                         <div class="thumbnail-edit" _id="${program.chapter_id}">
-                            <img src="${program.image}" alt="">
+                            <img src="${program.image}" alt="${program.chapter_title}" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -130,7 +134,7 @@ $(document).ready(function () {
                         </div>
                     </div>
                     <div>
-                        <span class="schedule-description s1" id="synopsis-edi">${synopsis}</span>
+                        <span class="schedule-description s1" id="synopsis-edi">${program.sinopsis.substr(0, 150) + "..."}</span>
                         <span class="text-normal cursor-pointer a-text-bold-tealblue"> Ver más...</span>
                     </div>
                 </div>
@@ -138,13 +142,15 @@ $(document).ready(function () {
         </div>
     </div> 
         `;
-      });
-      programingClaroCinema.forEach((program, index) => {
-        let synopsis = program.sinopsis;
-        if (program.sinopsis.length > 150) {
-          synopsis = program.sinopsis.substr(0, 150) + "...";
-        }
-        programClaroCinemaEdit += `
+            });
+            programingClaroCinema.forEach((program, index) => {
+                let synopsis = ""
+                if (program.sinopsis.length > 150) {
+                    synopsis = program.sinopsis.substr(0, 150) + "...";
+                } else {
+                    synopsis = program.sinopsis;
+                }
+                programClaroCinemaEdit += `
         <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
         <img src="./images/General/pencil.svg" alt="" class="pencil edit-program-pencil" chapter_id="${program.chapter_id}">
         <div class="schedule-container col-12 p-5 mx-auto mt-0">
@@ -155,7 +161,7 @@ $(document).ready(function () {
                 <div class="schedule-poster">
                     <div class="poster">
                         <div class="thumbnail-edit" _id="${program.chapter_id}">
-                            <img src="${program.image}" alt="">
+                            <img src="${program.image}" alt=${program.chapter_title}" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -178,7 +184,7 @@ $(document).ready(function () {
                         </div>
                     </div>
                     <div>
-                        <span class="schedule-description s1" id="synopsis-edi">${synopsis}</span>
+                        <span class="schedule-description s1" id="synopsis-edi">${program.sinopsis.substr(0, 150) + "..."}</span>
                         <span class="text-normal cursor-pointer a-text-bold-tealblue"> Ver más...</span>
                     </div>
                 </div>
@@ -186,22 +192,13 @@ $(document).ready(function () {
         </div>
     </div> 
         `;
-      });
+            });
 
-      //Insertamos todos los programas
-      claroCotentProgramacionGeneralEdit.html(programCanalClaroEdit);
-      $('.concert-content-edit').html(programConcertChannelEdit);
-      $('.cinema-content-edit').html(programClaroCinemaEdit);
+            //Insertamos todos los programas
+            claroCotentProgramacionGeneralEdit.html(programCanalClaroEdit);
+            $('.concert-content-edit').html(programConcertChannelEdit);
+            $('.cinema-content-edit').html(programClaroCinemaEdit);
 
-      //Checamos la longitud de la sinospsis para poner el ver más
-      /*       let keyValue = $(".s1").text();
-
-            if (keyValue.length > 150) {
-              let text = keyValue.substr(0, 150) + "...";
-              $(".s1").text(text);
-            } else {
-              $(".s1").text(keyValue);
-            } */
-    },
-  });
+        },
+    });
 });

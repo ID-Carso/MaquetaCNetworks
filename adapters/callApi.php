@@ -21,7 +21,8 @@ function callAPI($method, $url, $data, $jsonDecode = null)
     curl_setopt($curl, CURLOPT_URL, $url);
     curl_setopt($curl, CURLOPT_HTTPHEADER, array(
         'Content-Type: application/json',
-        'Accept: application/json'
+        'Accept: application/json',
+        "Cache-Control: max-age=0"
     ));
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);

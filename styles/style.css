@@ -4526,6 +4526,19 @@ input[type="radio"]:checked + .mujer-estilo {
   padding: 10px;
 }
 
+.navs-li {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  opacity: 0.75;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.active-navItems {
+  -webkit-filter: none;
+          filter: none;
+}
+
 .active-navItem {
   position: relative;
   -webkit-filter: none;
