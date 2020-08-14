@@ -1738,7 +1738,7 @@ $(document).ready(function () {
   $(".tv-content").hide();
   $(".tv-content:first").show();
 
-  $("ul.list-progra li").click(function () {
+  /*$("ul.list-progra li").click(function () {
     $(".tv-content").hide();
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();
@@ -1747,7 +1747,7 @@ $(document).ready(function () {
     programacion_slider.slick("refresh");
     recreateClickCalendar();
     createClickThumbnails();
-  });
+  });*/
 
   $("ul.tv-list li").click(function () {
     $("ul.tv-list li").removeClass("active-navItem");

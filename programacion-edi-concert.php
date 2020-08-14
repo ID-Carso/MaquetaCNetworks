@@ -159,7 +159,7 @@
                         <div class="row no-gutters col-12">
                             <ul class="d-flex list-progra pl-0">
                                 <div class=" text-center no-gap  mr-2">
-                                    <li rel="claro-canal-programing-edit" class="navbar-progra-item-container active-navItems navs-li  d-inline-block" style="width: 200px !important;">
+                                    <li rel="claro-canal-programing-edit" class="navs-li  d-inline-block" style="width: 200px !important;">
 
                                         <div class=" mx-auto position-relative thumbnail-image-program " id="images-logo">
 
@@ -172,7 +172,7 @@
                                     </li>
                                 </div>
                                 <div class=" text-center no-gap border-r border-l pr-2 pl-2">
-                                    <li rel="concert-channel-programing-edit" class="navs-li d-inline-block" style="width: 200px !important;">
+                                    <li rel="concert-channel-programing-edit" class="navbar-progra-item-container active-navItems navs-li  d-inline-block" style="width: 200px !important;">
                                         <!--  <img class="nav-image" src="./images/home/tv-2.svg" alt="" />-->
                                         <div class=" mx-auto position-relative thumbnail-image-program" id="images-logo">
                                             <!--  <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
@@ -202,7 +202,8 @@
                     </div>
                 </div>
 
-                <div id="claro-canal-programing-edit" class="tv-content">
+
+                <div id="claro-canal-programing-edit" class="display-none" >
                     <div class="no-gutters" id="">
                         <div class="programacion-date-container">
                             <div class="no-gutters">
@@ -226,7 +227,7 @@
                     </div>
                 </div>
 
-                <div id="concert-channel-programing-edit" class="display-none">
+                <div id="concert-channel-programing-edit" class="display-block">
                     <div class="no-gutters">
                         <div class="programacion-date-container">
                             <div class="no-gutters">
@@ -249,7 +250,7 @@
                     </div>
                 </div>
 
-                <div id="claro-cinema-programing-edit" class="display-none">
+                <div id="claro-cinema-programing-edit" class="display-none" >
                     <div class="no-gutters">
                         <div class="programacion-date-container">
                             <div class="no-gutters">
