@@ -159,15 +159,15 @@
                         <div class="row no-gutters col-12">
                             <ul class="d-flex list-progra pl-0">
                                 <div class=" text-center no-gap  mr-2">
-                                    <li rel="claro-canal-programing-edit" class="navbar-progra-item-container active-navItems navs-li  d-inline-block" style="width: 200px !important;">
+                                    <li rel="claro-canal-programing-edit" class=" navs-li  d-inline-block" style="width: 200px !important;">
 
                                         <div class=" mx-auto position-relative thumbnail-image-program " id="images-logo">
 
                                             <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
-                                                <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
-                                                    <img class="claro-nav-image thumbnail-image-program" src="" alt="" id="icon_canal_claro_edi" />
+                                     <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
+                                                         <img class="claro-nav-image thumbnail-image-program" src="" alt="" id="icon_canal_claro_edi" />
 
-                                                </label>
+                                            </label>
                                         </div>
                                     </li>
                                 </div>
@@ -177,15 +177,15 @@
                                         <div class=" mx-auto position-relative thumbnail-image-program" id="images-logo">
                                             <!--  <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
                                             <!--class to update image-->
-                                            <img class="claro-nav-image thumbnail-image-program" src="" alt="" id="icon_concert_channel_edi" />
+                                              <img class="claro-nav-image thumbnail-image-program" src="" alt="" id="icon_concert_channel_edi" />
 
-                                            <!--    <span class="a-text-bold-warm text-plus mt-5 mb-5 shadow-contrast">472px X 295px</span>-->
+                                                <!--    <span class="a-text-bold-warm text-plus mt-5 mb-5 shadow-contrast">472px X 295px</span>-->
                                             </label>
                                         </div>
                                     </li>
                                 </div>
                                 <div class=" text-center no-gap  ml-2">
-                                    <li rel="claro-cinema-programing-edit" class="navs-li d-inline-block" style="width: 200px !important;">
+                                    <li rel="claro-cinema-programing-edit" class=" navbar-progra-item-container active-navItems navs-li d-inline-block" style="width: 200px !important;">
                                         <!--   <img class="nav-image" src="./images/home/tv-3.svg" alt="" />-->
                                         <div class=" mx-auto position-relative thumbnail-image-program" id="images-logo">
                                             <!--  <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
@@ -202,7 +202,8 @@
                     </div>
                 </div>
 
-                <div id="claro-canal-programing-edit" class="tv-content">
+
+                <div id="claro-canal-programing-edit" class="display-none" >
                     <div class="no-gutters" id="">
                         <div class="programacion-date-container">
                             <div class="no-gutters">
@@ -249,7 +250,7 @@
                     </div>
                 </div>
 
-                <div id="claro-cinema-programing-edit" class="display-none">
+                <div id="claro-cinema-programing-edit" class="display-block">
                     <div class="no-gutters">
                         <div class="programacion-date-container">
                             <div class="no-gutters">
@@ -316,12 +317,12 @@
             $('.programacion-header').on("click", ".slider-pagination-item", function() {
                 let type = "slider-pagination";
                 let data = {
-                    id_slide: $(this).attr("slide_index"),
+                    id: 0,
                     type: type
                 }
                 var json = JSON.stringify(data);
                 socketProgramacion.postMessage(json);
-            });
+            })
             $('.schedule-description1').on("click", ".schedule-description1", function() {
                 let type = "synopsis";
                 let data = {
