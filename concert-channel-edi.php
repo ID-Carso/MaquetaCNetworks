@@ -86,55 +86,42 @@
         </div>
     </header>
     <div class="concert-container">
-        <section class="today-concert-channel">
-            <div class="row no-gutters landing-header">
+        <section class="today-concert-channel pt-3">
+            <div class="row no-gutters mb-3 p-3 landing-header position-relative border-t border-l border-r border-b">
+                <img src="./images/General/pencil.svg" alt="" class="pencil">
                 <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-                    <div class="col-9 p-3 border-t border-l border-r border-b position-relative mb-2 col-md-5">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil">
-                        <img src="./images/home/concert-home-img.svg" alt="" class="lading-header-image-concert">
-                    </div>
-                </div>
-                <div class="col-12 col-md-5 col-lg-5 col-xl-5 ">
-                    <div class="position-relative border-t border-l border-r border-b">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil">
-                        <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
-                    </div>
+
+                    <img src="./images/home/concert-home-img.svg" alt="" class="lading-header-image-concert">
 
                 </div>
+                <div class="col-12 col-md-5 col-lg-5 col-xl-5 ">
+                    <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
+                </div>
                 <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-right">
-                    <div class="d-inline-block position-relative border-t border-l border-r border-b">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil">
-                        <a href="">
-                            <button class="m-3 btn-magenta a-text-white-semibold btn-concert-channel">VER
-                                PROGRAMACIÓN</button>
-                        </a>
-                    </div>
+
+                    <a href="">
+                        <button class="m-3 btn-magenta a-text-white-semibold btn-concert-channel">VER
+                            PROGRAMACIÓN</button>
+                    </a>
+
 
                 </div>
             </div>
-            <div class="today-concert-videos-container">
-                <div class="section-slider concert-slider-prev today-concert-channel-slider-prev">
+            <div class="today-concert-videos-container position-relative border-t border-l border-r border-b">
+                <img src="./images/General/pencil.svg" alt="" class="pencil">
+                <div class="section-slider p-3 concert-slider today-concert-channel-slider">
 
                 </div>
 
         </section>
         <section class="next-week-concert">
-            <div class="concert-container-header">
-                <div
-                    class="mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
-                    <img src="./images/General/pencil.svg" alt="" class="pencil">
-                    <h1 class="p-2 concert-title">próxima semana</h1>
-                </div>
-                <div class="d-block mb-3">
-                    <div
-                        class="position-relative d-xl-inline-block d-lg-inline-block d-md-inline-block d-block border-t border-l border-r border-b">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil">
-                        <h2 class="p-2 concert-subtitle">ve un
-                            <span>adelanto</span> de la
-                            programación</h2>
-                    </div>
-
-                </div>
+            <div
+                class="concert-container-header mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+                <img src="./images/General/pencil.svg" alt="" class="pencil">
+                <h1 class="p-2 concert-title">próxima semana</h1>
+                <h2 class="p-2 concert-subtitle">ve un
+                    <span>adelanto</span> de la
+                    programación</h2>
 
             </div>
             <div class="week-videos-container">
@@ -151,126 +138,95 @@
 
         </section>
         <section class="concerts">
-            <div class="concert-container-header">
-                <div
-                    class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
-                    <img src="./images/General/pencil.svg" alt="" class="pencil">
-                    <h1 class="concert-title">imprescindibles</h1>
-                </div>
-                <div class="d-block mb-3">
-                    <div
-                        class="position-relative d-xl-inline-block d-lg-inline-block d-md-inline-block d-block border-t border-l border-r border-b">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil">
-                        <h2 class="p-2 concert-subtitle">Los artistas que sonarán esta semana</h2>
-                    </div>
-                </div>
+            <div
+                class="concert-container-header p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+                <img src="./images/General/pencil.svg" alt="" class="pencil">
+                <h1 class="concert-title">imprescindibles</h1>
+                <img src="./images/General/pencil.svg" alt="" class="pencil">
+                <h2 class="p-2 concert-subtitle">Los artistas que sonarán esta semana</h2>
+
             </div>
-            <div class="concerts-videos-container">
+            <div class="concerts-videos-container position-relative border-t border-l border-r border-b p-3">
+                <img src="./images/General/pencil.svg" alt="" class="pencil">
                 <div class="section-slider concert-slider">
-                    <div class=" p-3 border-t border-l border-r border-b position-relative">
-                        <div class="poster">
-                            <button
-                                class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
-                                Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
-                                    style="width:15px"></button>
-
-                            <div class="poster-body">
-                                <div class="showtime-container justify-content-end">
-
-                                    <button type="button" class="poster-button"><img class="poster-add"
-                                            src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <div class="thumbnail">
-                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/01-LIVE-FROM-ABBEY.jpg"
-                                        alt="">
-                                </div>
-                                <div class="a-concert-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">
-                                            LIVE FROM ABBEY ROAD
-                                        </p>
-                                    </div>
+                    <div class="poster">
+                        <div class="poster-body">
+                            <div class="showtime-container justify-content-end">
+                                <button type="button" class="poster-button"><img class="poster-add"
+                                        src="./images/posters/heart-outline.svg" alt=""></button>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/01-LIVE-FROM-ABBEY.jpg"
+                                    alt="">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        LIVE FROM ABBEY ROAD
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class=" p-3 border-t border-l border-r border-b position-relative">
-                        <div class="poster">
-                            <button
-                                class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
-                                Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
-                                    style="width:15px"></button>
 
-                            <div class="poster-body">
-                                <div class="showtime-container justify-content-end">
 
-                                    <button type="button" class="poster-button"><img class="poster-add"
-                                            src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <div class="thumbnail">
-                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/02-QUEEN.jpg"
-                                        alt="">
-                                </div>
-                                <div class="a-concert-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">
-                                            QUEEN
-                                        </p>
-                                    </div>
+                    <div class="poster">
+
+                        <div class="poster-body">
+                            <div class="showtime-container justify-content-end">
+
+                                <button type="button" class="poster-button"><img class="poster-add"
+                                        src="./images/posters/heart-outline.svg" alt=""></button>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/02-QUEEN.jpg"
+                                    alt="">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        QUEEN
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class=" p-3 border-t border-l border-r border-b position-relative">
-                        <div class="poster">
-                            <button
-                                class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
-                                Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
-                                    style="width:15px"></button>
+                    <div class="poster">
+                        <div class="poster-body">
+                            <div class="showtime-container justify-content-end">
 
-                            <div class="poster-body">
-                                <div class="showtime-container justify-content-end">
-
-                                    <button type="button" class="poster-button"><img class="poster-add"
-                                            src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <div class="thumbnail">
-                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/07-SEPULTURA.jpg"
-                                        alt="">
-                                </div>
-                                <div class="a-concert-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">
-                                            SEPULTURA
-                                        </p>
-                                    </div>
+                                <button type="button" class="poster-button"><img class="poster-add"
+                                        src="./images/posters/heart-outline.svg" alt=""></button>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/07-SEPULTURA.jpg"
+                                    alt="">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        SEPULTURA
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class=" p-3 border-t border-l border-r border-b position-relative">
-                        <div class="poster">
-                            <button
-                                class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
-                                Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
-                                    style="width:15px"></button>
+                    <div class="poster">
+                        <div class="poster-body">
+                            <div class="showtime-container justify-content-end">
 
-                            <div class="poster-body">
-                                <div class="showtime-container justify-content-end">
-
-                                    <button type="button" class="poster-button"><img class="poster-add"
-                                            src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <div class="thumbnail">
-                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/05-DOORS.jpg"
-                                        alt="">
-                                </div>
-                                <div class="a-concert-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">
-                                            THE DOORS
-                                        </p>
-                                    </div>
+                                <button type="button" class="poster-button"><img class="poster-add"
+                                        src="./images/posters/heart-outline.svg" alt=""></button>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/05-DOORS.jpg"
+                                    alt="">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        THE DOORS
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -280,127 +236,93 @@
 
         </section>
         <section class="concert-interviews">
-            <div class="concert-container-header">
-                <div
-                    class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
-                    <img src="./images/General/pencil.svg" alt="" class="pencil">
-                    <h1 class="concert-title">Por si te lo perdiste</h1>
-                </div>
-                <div class="d-block mb-3">
-                    <div
-                        class="position-relative d-xl-inline-block d-lg-inline-block d-md-inline-block d-block border-t border-l border-r border-b">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil">
-                        <h2 class="p-2 concert-subtitle">Conoce algunas de nuestras leyendas</h2>
-                    </div>
-                </div>
-
+            <div class="concert-container-header p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b"">
+            <img src=" ./images/General/pencil.svg" alt="" class="pencil">
+                <h1 class="concert-title">Por si te lo perdiste</h1>
+                <img src="./images/General/pencil.svg" alt="" class="pencil">
+                <h2 class="p-2 concert-subtitle">Conoce algunas de nuestras leyendas</h2>
             </div>
-            <div class="interviews-videos-container">
+            <div class="interviews-videos-container position-relative border-t border-l border-r border-b p-3">
+                <img src=" ./images/General/pencil.svg" alt="" class="pencil">
                 <div class="section-slider concert-slider">
-                    <div class=" p-3 border-t border-l border-r border-b position-relative">
-                        <div class="poster">
-                            <button
-                                class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
-                                Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
-                                    style="width:15px"></button>
 
-                            <div class="poster-body">
-                                <div class="showtime-container justify-content-end">
-
-                                    <button type="button" class="poster-button"><img class="poster-add"
-                                            src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <div class="thumbnail">
-                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/04-RED-HOT-CHILI.jpg"
-                                        alt="">
-                                </div>
-                                <div class="a-concert-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">
-                                            RED HOT CHILI PEPPERS
-                                        </p>
-                                    </div>
+                    <div class="poster">
+                        <div class="poster-body">
+                            <div class="showtime-container justify-content-end">
+                                <button type="button" class="poster-button"><img class="poster-add"
+                                        src="./images/posters/heart-outline.svg" alt=""></button>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/04-RED-HOT-CHILI.jpg"
+                                    alt="">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        RED HOT CHILI PEPPERS
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class=" p-3 border-t border-l border-r border-b position-relative">
-                        <div class="poster">
-                            <button
-                                class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
-                                Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
-                                    style="width:15px"></button>
+                    <div class="poster">
+                        <div class="poster-body">
+                            <div class="showtime-container justify-content-end">
 
-                            <div class="poster-body">
-                                <div class="showtime-container justify-content-end">
-
-                                    <button type="button" class="poster-button"><img class="poster-add"
-                                            src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <div class="thumbnail">
-                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/08-BILLIE-EILISH.jpg"
-                                        alt="">
-                                </div>
-                                <div class="a-concert-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">
-                                            BILLIE EILISH
-                                        </p>
-                                    </div>
+                                <button type="button" class="poster-button"><img class="poster-add"
+                                        src="./images/posters/heart-outline.svg" alt=""></button>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/08-BILLIE-EILISH.jpg"
+                                    alt="">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        BILLIE EILISH
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class=" p-3 border-t border-l border-r border-b position-relative">
-                        <div class="poster">
-                            <button
-                                class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
-                                Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
-                                    style="width:15px"></button>
+                    <div class="poster">
+                        <div class="poster-body">
+                            <div class="showtime-container justify-content-end">
 
-                            <div class="poster-body">
-                                <div class="showtime-container justify-content-end">
-
-                                    <button type="button" class="poster-button"><img class="poster-add"
-                                            src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <div class="thumbnail">
-                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/06-RIANNA.jpg"
-                                        alt="">
-                                </div>
-                                <div class="a-concert-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">
-                                            RIHANNA
-                                        </p>
-                                    </div>
+                                <button type="button" class="poster-button"><img class="poster-add"
+                                        src="./images/posters/heart-outline.svg" alt=""></button>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/06-RIANNA.jpg"
+                                    alt="">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        RIHANNA
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class=" p-3 border-t border-l border-r border-b position-relative">
-                        <div class="poster">
-                            <button
-                                class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
-                                Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
-                                    style="width:15px"></button>
+                    <div class="poster">
 
-                            <div class="poster-body">
-                                <div class="showtime-container justify-content-end">
 
-                                    <button type="button" class="poster-button"><img class="poster-add"
-                                            src="./images/posters/heart-outline.svg" alt=""></button>
-                                </div>
-                                <div class="thumbnail">
-                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/03-BEYONCE.jpg"
-                                        alt="">
-                                </div>
-                                <div class="a-concert-rectangle">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">
-                                            BEYONCÉ
-                                        </p>
-                                    </div>
+                        <div class="poster-body">
+                            <div class="showtime-container justify-content-end">
+
+                                <button type="button" class="poster-button"><img class="poster-add"
+                                        src="./images/posters/heart-outline.svg" alt=""></button>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/03-BEYONCE.jpg"
+                                    alt="">
+                            </div>
+                            <div class="a-concert-rectangle">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">
+                                        BEYONCÉ
+                                    </p>
                                 </div>
                             </div>
                         </div>
