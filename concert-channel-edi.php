@@ -94,11 +94,22 @@
                         <img src="./images/home/concert-home-img.svg" alt="" class="lading-header-image-concert">
                     </div>
                 </div>
-                <div class="col-12 col-md-5 col-lg-5 col-xl-5">
-                    <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
+                <div class="col-12 col-md-5 col-lg-5 col-xl-5 ">
+                    <div class="position-relative border-t border-l border-r border-b">
+                        <img src="./images/General/pencil.svg" alt="" class="pencil">
+                        <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
+                    </div>
+
                 </div>
                 <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-right">
-                    <a href=""><button class="btn-magenta a-text-white-semibold btn-concert-channel">VER PROGRAMACIÓN</button></a>
+                    <div class="d-inline-block position-relative border-t border-l border-r border-b">
+                        <img src="./images/General/pencil.svg" alt="" class="pencil">
+                        <a href="">
+                            <button class="m-3 btn-magenta a-text-white-semibold btn-concert-channel">VER
+                                PROGRAMACIÓN</button>
+                        </a>
+                    </div>
+
                 </div>
             </div>
             <div class="today-concert-videos-container">
@@ -109,48 +120,69 @@
         </section>
         <section class="next-week-concert">
             <div class="concert-container-header">
-                <h1 class="concert-title">próxima semana</h1>
-                <h2 class="concert-subtitle">ve un <span>adelanto</span> de la programación</h2>
+                <div
+                    class="mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil">
+                    <h1 class="p-2 concert-title">próxima semana</h1>
+                </div>
+                <div class="d-block mb-3">
+                    <div
+                        class="position-relative d-xl-inline-block d-lg-inline-block d-md-inline-block d-block border-t border-l border-r border-b">
+                        <img src="./images/General/pencil.svg" alt="" class="pencil">
+                        <h2 class="p-2 concert-subtitle">ve un
+                            <span>adelanto</span> de la
+                            programación</h2>
+                    </div>
+
+                </div>
+
             </div>
             <div class="week-videos-container">
                 <div class=" p-3 border-t border-l border-r border-b position-relative">
                     <img src="./images/General/pencil.svg" alt="" class="pencil">
                     <video class="promo-video" autoplay muted controls loop>
 
-                        <source src="http://www.claronetworks.openofficedospuntocero.info/video/concert-channel-promo.mp4" type="video/mp4">
+                        <source
+                            src="http://www.claronetworks.openofficedospuntocero.info/video/concert-channel-promo.mp4"
+                            type="video/mp4">
                     </video>
-                    <!--<div class="poster">
-                    <div class="poster-body">
-                        <div class="showtime-container justify-content-end">
-                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                        </div>
-                        <div class="thumbnail">
-                        </div>
-                    </div>
-                </div>-->
                 </div>
             </div>
 
         </section>
         <section class="concerts">
             <div class="concert-container-header">
-
-                <h1 class="concert-title">imprescindibles</h1>
-                <h2 class="concert-subtitle">Los artistas que sonarán esta semana</h2>
+                <div
+                    class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil">
+                    <h1 class="concert-title">imprescindibles</h1>
+                </div>
+                <div class="d-block mb-3">
+                    <div
+                        class="position-relative d-xl-inline-block d-lg-inline-block d-md-inline-block d-block border-t border-l border-r border-b">
+                        <img src="./images/General/pencil.svg" alt="" class="pencil">
+                        <h2 class="p-2 concert-subtitle">Los artistas que sonarán esta semana</h2>
+                    </div>
+                </div>
             </div>
             <div class="concerts-videos-container">
                 <div class="section-slider concert-slider">
                     <div class=" p-3 border-t border-l border-r border-b position-relative">
                         <div class="poster">
-                            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
+                            <button
+                                class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
+                                Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
+                                    style="width:15px"></button>
 
                             <div class="poster-body">
                                 <div class="showtime-container justify-content-end">
 
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                                    <button type="button" class="poster-button"><img class="poster-add"
+                                            src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
                                 <div class="thumbnail">
-                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/01-LIVE-FROM-ABBEY.jpg" alt="">
+                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/01-LIVE-FROM-ABBEY.jpg"
+                                        alt="">
                                 </div>
                                 <div class="a-concert-rectangle">
                                     <div class="poster-title-margin">
@@ -164,15 +196,20 @@
                     </div>
                     <div class=" p-3 border-t border-l border-r border-b position-relative">
                         <div class="poster">
-                            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
+                            <button
+                                class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
+                                Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
+                                    style="width:15px"></button>
 
                             <div class="poster-body">
                                 <div class="showtime-container justify-content-end">
 
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                                    <button type="button" class="poster-button"><img class="poster-add"
+                                            src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
                                 <div class="thumbnail">
-                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/02-QUEEN.jpg" alt="">
+                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/02-QUEEN.jpg"
+                                        alt="">
                                 </div>
                                 <div class="a-concert-rectangle">
                                     <div class="poster-title-margin">
@@ -186,15 +223,20 @@
                     </div>
                     <div class=" p-3 border-t border-l border-r border-b position-relative">
                         <div class="poster">
-                            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
+                            <button
+                                class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
+                                Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
+                                    style="width:15px"></button>
 
                             <div class="poster-body">
                                 <div class="showtime-container justify-content-end">
 
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                                    <button type="button" class="poster-button"><img class="poster-add"
+                                            src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
                                 <div class="thumbnail">
-                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/07-SEPULTURA.jpg" alt="">
+                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/07-SEPULTURA.jpg"
+                                        alt="">
                                 </div>
                                 <div class="a-concert-rectangle">
                                     <div class="poster-title-margin">
@@ -208,15 +250,20 @@
                     </div>
                     <div class=" p-3 border-t border-l border-r border-b position-relative">
                         <div class="poster">
-                            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
+                            <button
+                                class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
+                                Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
+                                    style="width:15px"></button>
 
                             <div class="poster-body">
                                 <div class="showtime-container justify-content-end">
 
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                                    <button type="button" class="poster-button"><img class="poster-add"
+                                            src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
                                 <div class="thumbnail">
-                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/05-DOORS.jpg" alt="">
+                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/05-DOORS.jpg"
+                                        alt="">
                                 </div>
                                 <div class="a-concert-rectangle">
                                     <div class="poster-title-margin">
@@ -234,22 +281,38 @@
         </section>
         <section class="concert-interviews">
             <div class="concert-container-header">
-                <h1 class="concert-title">Por si te lo perdiste</h1>
-                <h2 class="concert-subtitle">Conoce algunas de nuestras leyendas</h2>
+                <div
+                    class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil">
+                    <h1 class="concert-title">Por si te lo perdiste</h1>
+                </div>
+                <div class="d-block mb-3">
+                    <div
+                        class="position-relative d-xl-inline-block d-lg-inline-block d-md-inline-block d-block border-t border-l border-r border-b">
+                        <img src="./images/General/pencil.svg" alt="" class="pencil">
+                        <h2 class="p-2 concert-subtitle">Conoce algunas de nuestras leyendas</h2>
+                    </div>
+                </div>
+
             </div>
             <div class="interviews-videos-container">
                 <div class="section-slider concert-slider">
                     <div class=" p-3 border-t border-l border-r border-b position-relative">
                         <div class="poster">
-                            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
+                            <button
+                                class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
+                                Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
+                                    style="width:15px"></button>
 
                             <div class="poster-body">
                                 <div class="showtime-container justify-content-end">
 
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                                    <button type="button" class="poster-button"><img class="poster-add"
+                                            src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
                                 <div class="thumbnail">
-                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/04-RED-HOT-CHILI.jpg" alt="">
+                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/04-RED-HOT-CHILI.jpg"
+                                        alt="">
                                 </div>
                                 <div class="a-concert-rectangle">
                                     <div class="poster-title-margin">
@@ -263,15 +326,20 @@
                     </div>
                     <div class=" p-3 border-t border-l border-r border-b position-relative">
                         <div class="poster">
-                            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
+                            <button
+                                class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
+                                Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
+                                    style="width:15px"></button>
 
                             <div class="poster-body">
                                 <div class="showtime-container justify-content-end">
 
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                                    <button type="button" class="poster-button"><img class="poster-add"
+                                            src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
                                 <div class="thumbnail">
-                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/08-BILLIE-EILISH.jpg" alt="">
+                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/08-BILLIE-EILISH.jpg"
+                                        alt="">
                                 </div>
                                 <div class="a-concert-rectangle">
                                     <div class="poster-title-margin">
@@ -285,15 +353,20 @@
                     </div>
                     <div class=" p-3 border-t border-l border-r border-b position-relative">
                         <div class="poster">
-                            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
+                            <button
+                                class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
+                                Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
+                                    style="width:15px"></button>
 
                             <div class="poster-body">
                                 <div class="showtime-container justify-content-end">
 
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                                    <button type="button" class="poster-button"><img class="poster-add"
+                                            src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
                                 <div class="thumbnail">
-                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/06-RIANNA.jpg" alt="">
+                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/06-RIANNA.jpg"
+                                        alt="">
                                 </div>
                                 <div class="a-concert-rectangle">
                                     <div class="poster-title-margin">
@@ -307,15 +380,20 @@
                     </div>
                     <div class=" p-3 border-t border-l border-r border-b position-relative">
                         <div class="poster">
-                            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
+                            <button
+                                class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
+                                Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
+                                    style="width:15px"></button>
 
                             <div class="poster-body">
                                 <div class="showtime-container justify-content-end">
 
-                                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                                    <button type="button" class="poster-button"><img class="poster-add"
+                                            src="./images/posters/heart-outline.svg" alt=""></button>
                                 </div>
                                 <div class="thumbnail">
-                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/03-BEYONCE.jpg" alt="">
+                                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/section-landing/03-BEYONCE.jpg"
+                                        alt="">
                                 </div>
                                 <div class="a-concert-rectangle">
                                     <div class="poster-title-margin">
@@ -380,7 +458,7 @@
 <script type="text/javascript" src="../js/lib/easyXDM.min.js"></script>
 <script>
     var socket = new easyXDM.Socket({
-        onReady: function() {
+        onReady: function () {
 
             var hey = 3700;
             console.log(hey);

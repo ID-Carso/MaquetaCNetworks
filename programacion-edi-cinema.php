@@ -163,8 +163,7 @@
                         <div class="row no-gutters col-12">
                             <ul class="d-flex list-progra pl-0">
                                 <div class=" text-center no-gap  mr-2">
-                                    <li rel="claro-canal-programing-edit"
-                                        class="active-navItems navs-li  d-inline-block"
+                                    <li rel="claro-canal-programing-edit" class="navs-li  d-inline-block"
                                         style="width: 200px !important;">
 
                                         <div class=" mx-auto position-relative thumbnail-image-program "
@@ -172,8 +171,8 @@
 
                                             <label for="imagelogo"
                                                 class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
-                                                <img class="claro-nav-image thumbnail-image-program" src="" alt=""
-                                                    id="icon_canal_claro_edi" />
+                                                <img class="claro-nav-image cursor-auto thumbnail-image-program" src=""
+                                                    alt="" id="icon_canal_claro_edi" />
 
                                             </label>
                                         </div>
@@ -189,8 +188,8 @@
                                             <!--class to update image-->
                                             <label for="imagelogo"
                                                 class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
-                                                <img class="claro-nav-image thumbnail-image-program" src="" alt=""
-                                                    id="icon_concert_channel_edi" />
+                                                <img class="claro-nav-image cursor-auto thumbnail-image-program" src=""
+                                                    alt="" id="icon_concert_channel_edi" />
 
                                                 <!--    <span class="a-text-bold-warm text-plus mt-5 mb-5 shadow-contrast">472px X 295px</span>-->
                                             </label>
@@ -199,7 +198,7 @@
                                 </div>
                                 <div class=" text-center no-gap  ml-2">
                                     <li rel="claro-cinema-programing-edit"
-                                        class="navbar-progra-item-container navs-li d-inline-block"
+                                        class="active-navItems navbar-progra-item-container navs-li d-inline-block"
                                         style="width: 200px !important;">
                                         <!--   <img class="nav-image" src="./images/home/tv-3.svg" alt="" />-->
                                         <div class=" mx-auto position-relative thumbnail-image-program"

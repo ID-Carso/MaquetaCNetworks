@@ -1,4 +1,5 @@
 @import "./components/base/typography";
+@import "./components/helpers/cursor";
 @import "./components/base/reset";
 @import "./components/atoms/spacings";
 @import "./components/atoms/texts";
@@ -29,6 +30,7 @@
 @import "./components/organisms/footer";
 @import "./components/organisms/form";
 @import "./components/atoms/loader";
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /*Base*/
 
@@ -558,12 +560,15 @@
       padding-top: 10%;
     }
   }
+
   .ubicacionpuntos {
     top: 95%;
   }
+
   .ubicacion5 {
     top: 85%;
   }
+
   /*End Mi perfil - Átomos*/
   /*============================*/
 
@@ -614,6 +619,7 @@
     width: 100%;
     max-width: 110px;
   }
+
   /*End Mi Lista - Átomos*/
   /*============================*/
 
@@ -628,6 +634,7 @@
   .about-us-text {
     font-size: 18px;
   }
+
   /*End About Us - Átomos*/
   /*============================*/
 
@@ -723,6 +730,7 @@
   .navbar-desktop-white {
     display: none;
   }
+
   .list-links-footer {
     margin: 40px 0;
   }
@@ -840,6 +848,7 @@
   .aboutus-card:nth-child(2n + 0) {
     margin-left: 2%;
   }
+
   /*End About Us - Moleculas*/
   /*============================*/
 
@@ -1318,6 +1327,7 @@
     height: auto;
     background: transparent;
   }
+
   /*End Claro Sports*/
   /*============================*/
 
@@ -1328,6 +1338,7 @@
     justify-content: center;
     height: auto;
   }
+
   /*End Form Sign*/
   /*============================*/
 
@@ -1337,6 +1348,7 @@
     padding-top: 79px;
     padding-bottom: 90px;
   }
+
   /*End Index*/
   /*============================*/
 
@@ -1369,6 +1381,7 @@
     padding-top: 4%;
     padding-bottom: 4%;
   }
+
   /*End Términos*/
   /*============================*/
 
@@ -1414,6 +1427,7 @@
       border-radius: 0px;
     }
   }
+
   /*End Mi Lista*/
   /*============================*/
 
@@ -1423,6 +1437,7 @@
     padding-top: 50px;
     padding-bottom: 44px;
   }
+
   /*End Alertas*/
   /*============================*/
 
@@ -1431,6 +1446,7 @@
   .options-conf-container {
     padding-bottom: 14%;
   }
+
   /*End Configuración*/
   /*============================*/
 
@@ -1439,6 +1455,7 @@
   .avatar-container {
     margin-bottom: 44px;
   }
+
   /*End Avatar*/
   /*============================*/
 
@@ -1447,6 +1464,7 @@
   .data-user-container {
     margin-bottom: 44px;
   }
+
   /*End Datos*/
   /*============================*/
 }
@@ -1708,6 +1726,7 @@
     width: 100%;
     max-width: 110px;
   }
+
   /*End Generales - átomos*/
   /*-----------------------------*/
 
@@ -1716,6 +1735,7 @@
   .concerthome-image-header {
     width: 110px;
   }
+
   .cinemahome-image-header {
     width: 100px;
   }
@@ -2095,6 +2115,7 @@
   .ubicacion5 {
     top: 85%;
   }
+
   /*End Mi perfil - Átomos*/
   /*============================*/
 
@@ -2188,6 +2209,7 @@
   .aboutus-text {
     font-size: 18px;
   }
+
   /*End About Us - Átomos*/
 
   /*============================*/
@@ -2290,6 +2312,7 @@
   .navbar-desktop-white {
     display: none;
   }
+
   /*End General - Moleculas*/
   /*-----------------------------*/
 
@@ -2402,6 +2425,7 @@
   .aboutus-card:nth-child(2n + 0) {
     margin-left: 2%;
   }
+
   /*End About Us - Moleculas*/
   /*============================*/
 
@@ -2540,6 +2564,7 @@
   .section-home-footer {
     padding-top: 30px;
   }
+
   .o-claro-section {
     background-image: url("../images/home/bg-canal-claro.jpg");
     background-size: cover;
@@ -2713,6 +2738,7 @@
   .imperdibles-video-container {
     margin: 45px 6% 45px 6%;
   }
+
   .cinema-slider {
     margin: 0 -6px;
   }
@@ -2792,6 +2818,7 @@
   .programming-container {
     margin-bottom: 30px;
   }
+
   /*End Programación - organismos*/
   /*-----------------------------*/
 
@@ -2882,6 +2909,7 @@
     height: auto;
     background: transparent;
   }
+
   /*End Claro Sports - Organismos */
   /*============================*/
 
@@ -2892,6 +2920,7 @@
     justify-content: center;
     height: auto;
   }
+
   /*End Form Signup*/
   /*============================*/
 
@@ -2901,6 +2930,7 @@
     padding-top: 72px;
     padding-bottom: 84px;
   }
+
   /*End Index*/
   /*============================*/
 
@@ -2927,6 +2957,7 @@
   .login-container {
     padding-top: 0%;
   }
+
   /*End Login*/
   /*============================*/
 
@@ -2936,6 +2967,7 @@
     padding-top: 4%;
     padding-bottom: 4%;
   }
+
   /*End Términos*/
   /*============================*/
 
@@ -2982,6 +3014,7 @@
     padding-top: 50px;
     padding-bottom: 44px;
   }
+
   /*End Alertas*/
   /*============================*/
 
@@ -2990,6 +3023,7 @@
   .options-conf-container {
     padding-bottom: 14%;
   }
+
   /*End Configuración*/
   /*============================*/
 
@@ -2998,6 +3032,7 @@
   .avatar-container {
     margin-bottom: 44px;
   }
+
   /*End Avatar*/
   /*============================*/
 
@@ -3006,6 +3041,7 @@
   .data-user-container {
     margin-bottom: 44px;
   }
+
   /*End Datos*/
   /*============================*/
 
@@ -3014,6 +3050,7 @@
   .aboutus-content {
     padding: 140px 36px 0px 36px;
   }
+
   /*End Datos*/
   /*============================*/
 }
@@ -3266,6 +3303,7 @@
     width: 100%;
     max-width: 110px;
   }
+
   /*End Generales - átomos*/
   /*-----------------------------*/
 
@@ -3419,6 +3457,7 @@
     display: block;
     width: 100%;
   }
+
   /*End Claro Cinema - átomos*/
   /*-----------------------------*/
   /*-----------------------------*/
@@ -3538,6 +3577,7 @@
     margin-top: 130px;
     margin-bottom: 70px;
   }
+
   /*End Sinópsis - átomos*/
   /*-----------------------------*/
 
@@ -3546,6 +3586,7 @@
   .fondolog {
     height: auto;
   }
+
   /*End Sinópsis - átomos*/
   /*-----------------------------*/
 
@@ -3565,6 +3606,7 @@
   .ubicacion5 {
     top: 85%;
   }
+
   /*End Mi perfil - Átomos*/
   /*============================*/
 
@@ -3942,6 +3984,7 @@
   .aboutus-card:nth-child(2) {
     margin-right: 3.333%;
   }
+
   .aboutus-card:nth-child(4),
   .aboutus-card:nth-child(5) {
     margin-right: 3.333%;
@@ -4067,6 +4110,7 @@
     margin: auto;
     max-width: 737px !important;
   }
+
   /*End General - Organismos*/
   /*-----------------------------*/
 
@@ -4222,6 +4266,7 @@
   .home-header-mobile {
     display: none;
   }
+
   /*End Home - Organismos*/
   /*-----------------------------*/
 
@@ -4484,6 +4529,7 @@
     height: auto;
     background: transparent;
   }
+
   /*End Claro Sports - Organismos */
   /*============================*/
 
@@ -4493,6 +4539,7 @@
     justify-content: center;
     height: auto;
   }
+
   /*End Form Sign*/
   /*============================*/
 
@@ -4501,6 +4548,7 @@
     padding-top: 72px;
     padding-bottom: 84px;
   }
+
   /*End Index*/
   /*============================*/
 
@@ -4518,6 +4566,7 @@
     margin-top: 4%;
     padding-bottom: 4%;
   }
+
   /*End Aviso de Privacidad*/
   /*============================*/
 
@@ -4527,6 +4576,7 @@
     padding-top: 4%;
     padding-bottom: 4%;
   }
+
   /*End Login*/
   /*============================*/
 
@@ -4536,6 +4586,7 @@
     padding-top: 4%;
     padding-bottom: 4%;
   }
+
   /*End Términos*/
   /*============================*/
 
@@ -4544,6 +4595,7 @@
   .perfil-container {
     padding-bottom: 50px;
   }
+
   /*End Mi perfil*/
   /*============================*/
 
@@ -4584,6 +4636,7 @@
   .myList-details-desktop {
     display: block;
   }
+
   /*End Mi Lista*/
   /*============================*/
 
@@ -4593,6 +4646,7 @@
     padding-top: 50px;
     padding-bottom: 44px;
   }
+
   /*End Alertas*/
   /*============================*/
 
@@ -4616,6 +4670,7 @@
   .options-conf-container {
     padding-bottom: 14%;
   }
+
   /*End Configuración*/
   /*============================*/
 
@@ -4624,6 +4679,7 @@
   .avatar-container {
     margin-bottom: 44px;
   }
+
   /*End Avatar*/
   /*============================*/
 
@@ -4632,6 +4688,7 @@
   .data-user-container {
     margin-bottom: 44px;
   }
+
   /*End Datos*/
   /*============================*/
 
@@ -4640,6 +4697,7 @@
   .aboutus-content {
     padding: 42px 100px 0px 100px;
   }
+
   /*End About Us*/
   /*============================*/
 }
@@ -4906,6 +4964,7 @@
     width: 100%;
     max-width: 110px;
   }
+
   /*End General - Átomos*/
   /*-----------------------------*/
 
@@ -5185,6 +5244,7 @@
     top: 4%;
     right: 7%;
   }
+
   .lista-content {
     .image-list-points {
       top: 20%;
@@ -5495,6 +5555,7 @@
   .aboutus-card:nth-child(2) {
     margin-right: 3.333%;
   }
+
   .aboutus-card:nth-child(4),
   .aboutus-card:nth-child(5) {
     margin-right: 3.333%;
@@ -6098,6 +6159,7 @@
     height: auto;
     background: transparent;
   }
+
   /*End Claro Sports - Organismos */
   /*============================*/
 
@@ -6107,6 +6169,7 @@
     justify-content: center;
     height: auto;
   }
+
   /*End Form Sign*/
   /*============================*/
 
@@ -6115,6 +6178,7 @@
     padding-top: 72px;
     padding-bottom: 84px;
   }
+
   /*End Index*/
   /*============================*/
 
@@ -6132,6 +6196,7 @@
     margin-top: 4%;
     padding-bottom: 4%;
   }
+
   /*End Aviso de Privacidad*/
   /*============================*/
 
@@ -6141,6 +6206,7 @@
     padding-top: 4%;
     padding-bottom: 4%;
   }
+
   /*End Login*/
   /*============================*/
 
@@ -6150,6 +6216,7 @@
     padding-top: 4%;
     padding-bottom: 4%;
   }
+
   /*End Términos*/
   /*============================*/
 
@@ -6158,6 +6225,7 @@
   .perfil-container {
     padding-bottom: 50px;
   }
+
   /*End Mi perfil*/
   /*============================*/
 
@@ -6196,6 +6264,7 @@
     width: 61%;
     padding: 0;
   }
+
   /*End Mi Lista*/
   /*============================*/
 
@@ -6205,6 +6274,7 @@
     padding-top: 50px;
     padding-bottom: 44px;
   }
+
   /*End Alertas*/
   /*============================*/
 
@@ -6228,6 +6298,7 @@
   .options-conf-container {
     padding-bottom: 14%;
   }
+
   /*End Configuración*/
   /*============================*/
 
@@ -6236,6 +6307,7 @@
   .avatar-container {
     margin-bottom: 44px;
   }
+
   /*End Avatar*/
   /*============================*/
 
@@ -6244,6 +6316,7 @@
   .data-user-container {
     margin-bottom: 44px;
   }
+
   /*End Datos*/
   /*============================*/
   /*============================*/
@@ -6251,6 +6324,7 @@
   .aboutus-content {
     padding: 42px 120px 0px 120px;
   }
+
   /*End Datos*/
   /*============================*/
 }
