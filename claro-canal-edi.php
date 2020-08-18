@@ -115,7 +115,8 @@
   <main class="today">
     <section class="today-canal-claro">
       <div class="today-container">
-        <div class="row no-gutters landing-header">
+        <div class="px-3 mb-3 row no-gutters landing-header position-relative border-t border-l border-r border-b">
+          <img src="./images/General/pencil.svg" alt="" class="pencil">
           <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
             <img src="./images/home/tv-1.svg" alt="" class="lading-header-image-claro">
           </div>
@@ -123,28 +124,33 @@
             <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
           </div>
           <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ">
-            <button class="btn-claro-canal a-text-white-semibold btn-tomato" id="ver-programacion">VER PROGRAMACIÓN</button>
+            <button class="btn-claro-canal a-text-white-semibold btn-tomato" id="ver-programacion">VER
+              PROGRAMACIÓN</button>
           </div>
         </div>
 
-        <div class="today-videos-container">
+        <div class="today-videos-container position-relative border-t border-l border-r border-b p-2">
+          <img src=" ./images/General/pencil.svg" alt="" class="pencil">
           <div class="section-slider today-claro-slider-prev">
           </div>
     </section>
 
     <section class="next-week-claro">
       <div class="next-week-container">
-        <h1 class="a-next-claro-title">próxima semana</h1>
-        <h2 class="a-next-claro-subtitle mb-0">
-          Ve un <span>adelanto</span> de la programación
-        </h2>
-
-
+        <div
+          class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+          <img src=" ./images/General/pencil.svg" alt="" class="pencil">
+          <h1 class="p-0 a-next-claro-title">próxima semana</h1>
+          <h2 class="a-next-claro-subtitle pb-0 mb-0">
+            Ve un <span>adelanto</span> de la programación
+          </h2>
+        </div>
         <div class="week-claro-video-container">
           <div class=" p-3 border-t border-l border-r border-b position-relative">
             <img src="./images/General/pencil.svg" alt="" class="pencil">
             <video class="promo-video" autoplay muted controls loop>
-              <source src="http://www.claronetworks.openofficedospuntocero.info/video/canal-claro-promo.mp4" type="video/mp4">
+              <source src="http://www.claronetworks.openofficedospuntocero.info/video/canal-claro-promo.mp4"
+                type="video/mp4">
             </video>
           </div>
         </div>
@@ -153,23 +159,37 @@
     </section>
     <section class="dont-lose-claro">
       <div class="dont-lose-container">
-        <h1 class="a-dontLose-claro-title">TIENES QUE VERLO</h1>
-        <h2 class="a-dontLose-claro-subtitle">
-          ¡No te lo puedes perder!
-        </h2>
+        <div
+          class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+          <img src=" ./images/General/pencil.svg" alt="" class="pencil">
+          <h1 class="p-0 a-dontLose-claro-title">TIENES QUE VERLO</h1>
+          <h2 class="p-0 a-dontLose-claro-subtitle">
+            ¡No te lo puedes perder!
+          </h2>
+        </div>
+
 
         <div class="dontLose-video-container">
-          <div class="section-slider" id="dontLose-claro-sliderEdit">
+          <div class="mb-3 position-relative border-t border-l border-r border-b p-2">
+            <img src=" ./images/General/pencil.svg" alt="" class="pencil">
+            <div class="section-slider" id="dontLose-claro-sliderEdit">
+            </div>
           </div>
-          <div>
-            <h1 class="a-dontLose-claro-title">Contenido exclusivo</h1>
 
-            <h2 class="a-dontLose-claro-subtitle">
+          <div
+            class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+
+            <h1 class="p-0 a-dontLose-claro-title">Contenido exclusivo</h1>
+            <h2 class="p-0 a-dontLose-claro-subtitle">
               Únete y disfruta nuestras producciones propias.
             </h2>
           </div>
-          <div class="section-slider dontLose-claro-slider" id="exlusiveContentClaroSliderEdit">
+          <div class="position-relative border-t border-l border-r border-b p-2">
+            <img src=" ./images/General/pencil.svg" alt="" class="pencil">
+            <div class="section-slider dontLose-claro-slider" id="exlusiveContentClaroSliderEdit">
+            </div>
           </div>
+
         </div>
       </div>
 
@@ -233,7 +253,7 @@ include './views/partials/modal-program.php'
 <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
 <script>
   var socket = new easyXDM.Socket({
-    onReady: function() {
+    onReady: function () {
 
       var hey = 4300;
       console.log(hey);
@@ -243,7 +263,7 @@ include './views/partials/modal-program.php'
     }
   });
 
-  $("#ver-programacion").click(function() {
+  $("#ver-programacion").click(function () {
     let info = {
       id: 5,
       type: "program"

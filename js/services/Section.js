@@ -11,7 +11,9 @@ function getMetaKeys(landing) {
     cache: false,
     url: "./adapters/section.php",
     success: function (result) {
+
       let json = JSON.parse(result);
+      console.log(json);
       let sectionUI = new Section();
 
       switch (landing) {
