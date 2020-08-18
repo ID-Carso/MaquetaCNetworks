@@ -110,6 +110,7 @@ export default class Section {
     let titleTv = `${json.data.block_2_title1} <span class="header-span">${json.data.block_2_title2}</span><span class="header-point">•</span>`;
     $(".title-tv").html(titleTv);
 
+
     $(".claro-nav-image").attr("src", json.data.block_2_channel1_icon);
     $(".concert-nav-image").attr("src", json.data.block_2_channel2_icon);
     $(".cinema-nav-image").attr("src", json.data.block_2_channel3_icon);
@@ -995,9 +996,9 @@ export default class Section {
     let data = json.data;
     //cambiamos los iconos de los canales
 
-    $('#icon_canal_claro').attr('src', data.icon_canal_claro)
-    $('#icon_concert_channel').attr('src', data.icon_concert_channel)
-    $('#icon_claro_cinema').attr('src', data.icon_claro_cinema)
+    $('#icon_canal_claro').attr('src', `${data.icon_canal_claro}?v=${new Date().getTime()}`);
+    $('#icon_concert_channel').attr('src', `${data.icon_concert_channel}?v=${new Date().getTime()}`)
+    $('#icon_claro_cinema').attr('src', `${data.icon_claro_cinema}?v=${new Date().getTime()}`)
     //agregamos el slider
     let banner_images = [];
     let counter = 1;
@@ -1040,9 +1041,9 @@ export default class Section {
     let data = json.data;
     //cambiamos los iconos de los canales
 
-    $('#icon_canal_claro_edi').attr('src', data.icon_canal_claro)
-    $('#icon_concert_channel_edi').attr('src', data.icon_concert_channel)
-    $('#icon_claro_cinema_edi').attr('src', data.icon_claro_cinema)
+    $('#icon_canal_claro_edi').attr('src', `${data.icon_canal_claro}?v=${new Date().getTime()}`);
+    $('#icon_concert_channel_edi').attr('src', `${data.icon_concert_channel}?v=${new Date().getTime()}`);
+    $('#icon_claro_cinema_edi').attr('src', `${data.icon_claro_cinema}?v=${new Date().getTime()}`);
 
     //agregamos el slider
     let banner_images = [];

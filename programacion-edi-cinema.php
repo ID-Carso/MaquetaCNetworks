@@ -162,6 +162,7 @@
                         <img src="./images/General/pencil.svg" alt="" class="pencil pencil-menu">
                         <div class="row no-gutters col-12">
                             <ul class="d-flex list-progra pl-0">
+                                <!--Logo canal claro-->
                                 <div class=" text-center no-gap  mr-2">
                                     <li rel="claro-canal-programing-edit" class="navs-li  d-inline-block"
                                         style="width: 200px !important;">
@@ -178,6 +179,7 @@
                                         </div>
                                     </li>
                                 </div>
+                                <!--Logo concert channel-->
                                 <div class=" text-center no-gap border-r border-l pr-2 pl-2">
                                     <li rel="concert-channel-programing-edit" class="navs-li d-inline-block"
                                         style="width: 200px !important;">
@@ -196,6 +198,7 @@
                                         </div>
                                     </li>
                                 </div>
+                                <!--Logo claro cinema-->
                                 <div class=" text-center no-gap  ml-2">
                                     <li rel="claro-cinema-programing-edit"
                                         class="active-navItems navbar-progra-item-container navs-li d-inline-block"

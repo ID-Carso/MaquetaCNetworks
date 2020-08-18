@@ -162,9 +162,9 @@
                         <img src="./images/General/pencil.svg" alt="" class="pencil pencil-menu">
                         <div class="row no-gutters col-12">
                             <ul class="d-flex list-progra pl-0">
+                                <!--Logo canal claro-->
                                 <div class=" text-center no-gap  mr-2">
-                                    <li rel="claro-canal-programing-edit"
-                                        class="navbar-progra-item-container active-navItems navs-li  d-inline-block"
+                                    <li rel="claro-canal-programing-edit" class="navs-li  d-inline-block"
                                         style="width: 200px !important;">
 
                                         <div class=" mx-auto position-relative thumbnail-image-program "
@@ -172,15 +172,14 @@
 
                                             <label for="imagelogo"
                                                 class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
-                                                <label for="imagelogo"
-                                                    class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
-                                                    <img class="claro-nav-image thumbnail-image-program" src="" alt=""
-                                                        id="icon_canal_claro_edi" />
+                                                <img class="claro-nav-image thumbnail-image-program" src="" alt=""
+                                                    id="icon_canal_claro_edi" />
 
-                                                </label>
+                                            </label>
                                         </div>
                                     </li>
                                 </div>
+                                <!--Logo concert channel-->
                                 <div class=" text-center no-gap border-r border-l pr-2 pl-2">
                                     <li rel="concert-channel-programing-edit" class="navs-li d-inline-block"
                                         style="width: 200px !important;">
@@ -189,27 +188,27 @@
                                             id="images-logo">
                                             <!--  <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
                                             <!--class to update image-->
-                                            <img class="claro-nav-image cursor-auto thumbnail-image-program" src=""
-                                                alt="" id="icon_concert_channel_edi" />
+                                            <label for="imagelogo"
+                                                class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
+                                                <img class="claro-nav-image cursor-auto thumbnail-image-program" src=""
+                                                    alt="" id="icon_concert_channel_edi" />
 
-                                            <!--    <span class="a-text-bold-warm text-plus mt-5 mb-5 shadow-contrast">472px X 295px</span>-->
+                                                <!--    <span class="a-text-bold-warm text-plus mt-5 mb-5 shadow-contrast">472px X 295px</span>-->
                                             </label>
                                         </div>
                                     </li>
                                 </div>
+                                <!--Logo claro cinema-->
                                 <div class=" text-center no-gap  ml-2">
-                                    <li rel="claro-cinema-programing-edit" class="navs-li d-inline-block"
+                                    <li rel="claro-cinema-programing-edit"
+                                        class="active-navItems navbar-progra-item-container navs-li d-inline-block"
                                         style="width: 200px !important;">
-                                        <!--   <img class="nav-image" src="./images/home/tv-3.svg" alt="" />-->
                                         <div class=" mx-auto position-relative thumbnail-image-program"
                                             id="images-logo">
-                                            <!--  <input type="file" name="image-to-logo" id="imagelogo" class="input-image-program d-none">-->
-                                            <!--class to update image-->
                                             <label for="imagelogo"
                                                 class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
-                                                <img class="claro-nav-image cursor-auto thumbnail-image-program" src=""
+                                                <img class="cursor-auto claro-nav-image thumbnail-image-program" src=""
                                                     alt="" id="icon_claro_cinema_edi" />
-                                                <!--      <span class="a-text-bold-warm text-plus mt-5 mb-5 shadow-contrast">472px X 295px</span>-->
                                             </label>
                                         </div>
                                     </li>
