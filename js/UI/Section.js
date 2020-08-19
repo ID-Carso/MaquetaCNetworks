@@ -793,8 +793,8 @@ export default class Section {
       `;
     });
 
-    $("#dontLose-claro-sliderEdit").append(programTienesQueVerloEdit);
-    $("#exlusiveContentClaroSliderEdit").append(programExlusiveContentEdit);
+    $("#dontLose-claro-sliderEdit").append(programTiensQueVerlo);
+    $("#exlusiveContentClaroSliderEdit").append(programExlusiveContent);
     dontLoseSlider.append(programTiensQueVerlo);
     exlusiveContentSlider.append(programExlusiveContent);
     slider.createSectionSliderHome();

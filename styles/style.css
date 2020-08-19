@@ -4513,7 +4513,8 @@ input[type="radio"]:checked + .mujer-estilo {
           box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
-.tv-list {
+.tv-list,
+.tv-list-programming {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6607,7 +6608,8 @@ input[type="radio"]:checked + .mujer-estilo {
   /*============================*/
   /*============================*/
   /*2.2 - Home - Moleculas*/
-  .tv-list {
+  .tv-list,
+  .tv-list-programming {
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6668,7 +6670,8 @@ input[type="radio"]:checked + .mujer-estilo {
       bottom: -20px !important;
     }
   }*/
-  .programacion .tv-list {
+  .programacion .tv-list,
+  .programacion .tv-list-programming {
     margin: 0px auto;
   }
   .programacion .programacion-slider {
@@ -7887,7 +7890,8 @@ input[type="radio"]:checked + .mujer-estilo {
   /*-----------------------------*/
   /*-----------------------------*/
   /*2.2 - Home - Moleculas*/
-  .tv-list {
+  .tv-list,
+  .tv-list-programming {
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7948,13 +7952,15 @@ input[type="radio"]:checked + .mujer-estilo {
   /*-----------------------------*/
   /*-----------------------------*/
   /*2.5 - Programación - Moleculas*/
-  .programacion .tv-list {
+  .programacion .tv-list,
+  .programacion .tv-list-programming {
     margin: 0px auto;
   }
   /*.programacion-slider .slick-slide {
     width: 0.858% !important;
   }*/
-  .programacion .tv-list {
+  .programacion .tv-list,
+  .programacion .tv-list-programming {
     max-width: 600px;
   }
   .schedule-details {
@@ -9057,7 +9063,8 @@ input[type="radio"]:checked + .mujer-estilo {
   .footer-companies-desktop {
     display: block;
   }
-  .tv-list {
+  .tv-list,
+  .tv-list-programming {
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10370,7 +10377,8 @@ input[type="radio"]:checked + .mujer-estilo {
     margin: 0px;
     position: relative;
   }
-  .tv-list {
+  .tv-list,
+  .tv-list-programming {
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10439,7 +10447,8 @@ input[type="radio"]:checked + .mujer-estilo {
     padding-left: 0;
     padding-right: 0;
   }
-  .programacion .tv-list {
+  .programacion .tv-list,
+  .programacion .tv-list-programming {
     max-width: 1200px;
     margin: 0 auto 35xpx auto;
   }

@@ -9,7 +9,7 @@ class Program
 
     function getPrograms($date, $country)
     {
-        callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/program/actual_programing/" . $country . "&" . $date . "", null);
+        callAPI(null, $this->baseUrl . "program/actual_programing/" . $country . "&" . $date . "", null);
     }
 
     function getProgramming($date, $country)
@@ -20,12 +20,12 @@ class Program
 
     function showSynopsis($id)
     {
-        callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/program/sinopsis/" . $id, null);
+        callAPI(null, $this->baseUrl . "program/sinopsis/" . $id, null);
     }
 
     function getProgramsGMT($date)
     {
-        callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/program/actual_programing/GMT&" . $date . "", null);
+        callAPI(null, $this->baseUrl . "program/actual_programing/GMT&" . $date . "", null);
     }
 }
 

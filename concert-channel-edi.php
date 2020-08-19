@@ -3,6 +3,8 @@
 
 <head>
     <?php include './views/partials/head.php' ?>
+    <script src="./js/backoffice/main.js?t=<?php echo time(); ?>" defer></script>
+    <input type="hidden" id="actual_landing" value="concert_channel">
 </head>
 
 <body>
@@ -88,7 +90,8 @@
     <div class="concert-container">
         <section class="today-concert-channel pt-3">
             <div class="row no-gutters mb-3 p-3 landing-header position-relative border-t border-l border-r border-b">
-                <img src="./images/General/pencil.svg" alt="" class="pencil">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-concert"
+                    type="header-landing-concert">
                 <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
 
                     <img src="./images/home/concert-home-img.svg" alt="" class="lading-header-image-concert">
@@ -98,21 +101,17 @@
                     <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
                 </div>
                 <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-right">
-
                     <a href="">
                         <button class="m-3 btn-magenta a-text-white-semibold btn-concert-channel">VER
                             PROGRAMACIÓN</button>
                     </a>
-
-
                 </div>
             </div>
             <div class="today-concert-videos-container position-relative border-t border-l border-r border-b">
-                <img src="./images/General/pencil.svg" alt="" class="pencil">
-                <div class="section-slider p-3 concert-slider today-concert-channel-slider">
-
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-concert"
+                    type="current-programming-concert">
+                <div class="section-slider p-3 concert-slider today-concert-slider-edit">
                 </div>
-
         </section>
         <section class="next-week-concert">
             <div
@@ -375,19 +374,23 @@
     <?php
     include './views/partials/modal-program.php'
     ?>
-
+    <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
+    <script>
+        var socketConcert = new easyXDM.Socket({
+            onReady: function () {
+                var hey = 3700;
+                socketConcert.postMessage(hey)
+            }
+        });
+        $(".concert-container").on("click", ".pencil-concert", function () {
+            let data = {
+                type: $(this).attr("type")
+            }
+            var json = JSON.stringify(data);
+            socketConcert.postMessage(json);
+        });
+    </script>
 </body>
-<script type="text/javascript" src="../js/lib/easyXDM.min.js"></script>
-<script>
-    var socket = new easyXDM.Socket({
-        onReady: function () {
 
-            var hey = 3700;
-            console.log(hey);
-
-            socket.postMessage(hey)
-        }
-    });
-</script>
 
 </html>

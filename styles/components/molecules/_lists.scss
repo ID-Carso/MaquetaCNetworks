@@ -1,6 +1,7 @@
 @import "../base/colors";
 
-.tv-list {
+.tv-list,
+.tv-list-programming {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -26,7 +27,7 @@
 }
 
 .active-navItems {
-  filter: none
+  filter: none;
 }
 
 .active-navItem {

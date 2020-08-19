@@ -1347,8 +1347,11 @@ $(document).ready(function () {
   /* Metakeys */
 
   let actual_landing = $('#actual_landing').val();
-  console.log("estas en: " + actual_landing);
-  getMetaKeys(actual_landing);
+  if (actual_landing) {
+    console.log("estas en: " + actual_landing);
+    getMetaKeys(actual_landing);
+  }
+
   /*End Metakeys */
 
   var section_slider = $(".section-slider")
@@ -1738,17 +1741,6 @@ $(document).ready(function () {
   $(".tv-content").hide();
   $(".tv-content:first").show();
 
-  /*$("ul.list-progra li").click(function () {
-    $(".tv-content").hide();
-    var activeNav = $(this).attr("rel");
-    $("#" + activeNav).fadeIn();
-    $("ul.list-progra li").removeClass("navbar-progra-item-container active-navItems  ");
-    $(this).addClass("navbar-progra-item-container active-navItems navs-li ");
-    programacion_slider.slick("refresh");
-    recreateClickCalendar();
-    createClickThumbnails();
-  });*/
-
   $("ul.tv-list li").click(function () {
     $("ul.tv-list li").removeClass("active-navItem");
     $(this).addClass("active-navItem");
@@ -1758,6 +1750,21 @@ $(document).ready(function () {
 
     tvSlider.slick("refresh");
 
+    programacion_slider.slick("refresh");
+    addFavorites();
+    recreateClickCalendar();
+    createClickThumbnails();
+  });
+
+
+  $("ul.tv-list-programming li").click(function () {
+    $("ul.tv-list-programming li").removeClass("active-navItem");
+    $(this).addClass("active-navItem");
+    $(".tv-content-programming").hide();
+    var activeNav = $(this).attr("rel");
+    $("#" + activeNav).fadeIn();
+
+    tvSlider.slick("refresh");
     programacion_slider.slick("refresh");
     addFavorites();
     recreateClickCalendar();
@@ -1831,26 +1838,6 @@ $(document).ready(function () {
       }
     });
   }
-
-  /*** Dropdown del menú ***/
-  /*const dropdown = document.getElementsByClassName("sidebar-dropdown");
-  console.log(dropdown);
-
-  var i;
-
-  for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
-      this.classList.toggle("dropdown-active");
-      var dropdownContent = this.nextElementSibling;
-      if (dropdownContent.style.display === "block") {
-        dropdownContent.style.animation = "hide-dropdown 0.5s";
-        dropdownContent.style.display = "none";
-      } else {
-        dropdownContent.style.display = "block";
-        dropdownContent.style.animation = "active-dropdown 0.5s";
-      }
-    });
-  }*/
 
   /*** Fin Dropdown del menú ***/
 

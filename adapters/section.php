@@ -4,12 +4,13 @@ include './callApi.php';
 
 class Section
 {
+    private $baseUrl = "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/";
     function getMetakeys($landing)
     {
         if($landing == "programation_edi"){
             $landing = "programation";
         }
-        callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/section/".$landing, null);
+        callAPI(null, $this->baseUrl . "section/".$landing, null);
   }
 }
 

@@ -3,7 +3,7 @@
 
 <head>
     <?php include './views/partials/head.php' ?>
-  <input type="hidden" id="actual_landing" value="concert_channel">
+    <input type="hidden" id="actual_landing" value="concert_channel">
 
 </head>
 
@@ -91,13 +91,15 @@
         <section class="today-concert-channel">
             <div class="row no-gutters landing-header">
                 <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-                    <img src="./images/home/concert-home-img.svg" alt="" class="lading-header-image-concert" id="icon_concert_channel">
+                    <img src="./images/home/concert-home-img.svg" alt="" class="lading-header-image-concert"
+                        id="icon_concert_channel">
                 </div>
                 <div class="col-12 col-md-5 col-lg-5 col-xl-5">
                     <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
                 </div>
                 <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-right">
-                    <a href="programacion.php"><button class="btn-magenta a-text-white-semibold btn-concert-channel">VER PROGRAMACIÓN</button></a>
+                    <a href="programacion-concert.php"><button
+                            class="btn-magenta a-text-white-semibold btn-concert-channel">VER PROGRAMACIÓN</button></a>
                 </div>
             </div>
             <div class="today-concert-videos-container">
@@ -113,7 +115,8 @@
             </div>
             <div class="week-videos-container">
                 <video class="promo-video" playsinline autoplay muted controls loop>
-                    <source src="http://www.claronetworks.openofficedospuntocero.info/video/concert-channel-promo.mp4" type="video/mp4">
+                    <source src="http://www.claronetworks.openofficedospuntocero.info/video/concert-channel-promo.mp4"
+                        type="video/mp4">
                 </video>
                 <!--<div class="poster">
                     <div class="poster-body">

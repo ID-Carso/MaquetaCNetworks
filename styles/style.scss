@@ -741,7 +741,8 @@
   /*============================*/
   /*2.2 - Home - Moleculas*/
 
-  .tv-list {
+  .tv-list,
+  .tv-list-programming {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -813,7 +814,8 @@
     }
   }*/
 
-  .programacion .tv-list {
+  .programacion .tv-list,
+  .programacion .tv-list-programming {
     margin: 0px auto;
   }
 
@@ -2318,7 +2320,8 @@
 
   /*-----------------------------*/
   /*2.2 - Home - Moleculas*/
-  .tv-list {
+  .tv-list,
+  .tv-list-programming {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -2389,7 +2392,8 @@
 
   /*-----------------------------*/
   /*2.5 - Programación - Moleculas*/
-  .programacion .tv-list {
+  .programacion .tv-list,
+  .programacion .tv-list-programming {
     margin: 0px auto;
   }
 
@@ -2397,7 +2401,8 @@
     width: 0.858% !important;
   }*/
 
-  .programacion .tv-list {
+  .programacion .tv-list,
+  .programacion .tv-list-programming {
     max-width: 600px;
   }
 
@@ -3801,7 +3806,8 @@
     display: block;
   }
 
-  .tv-list {
+  .tv-list,
+  .tv-list-programming {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -5434,7 +5440,8 @@
     position: relative;
   }
 
-  .tv-list {
+  .tv-list,
+  .tv-list-programming {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -5516,7 +5523,8 @@
       padding-right: 0;
     }
 
-    .tv-list {
+    .tv-list,
+    .tv-list-programming {
       max-width: 1200px;
       margin: 0 auto 35xpx auto;
     }

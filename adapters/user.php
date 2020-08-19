@@ -35,6 +35,8 @@ class Console
 
 class User
 {
+
+    private $baseUrl = "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/";
     private static $instance = NULL;
     private $name = NULL;
     private $password = NULL;
@@ -49,15 +51,10 @@ class User
         return self::$instance;
     }
 
-    function getAllUsers($json)
-    {
-        $url = "https://jsonplaceholder.typicode.com/posts/1";
-        callAPI("PUT", $url, $json);
-    }
 
     function signIn($data)
     {
-        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/login", $data);
+        callAPI("POST", $this->baseUrl . "user/login", $data);
     }
 
     function registerUser($name, $email, $password, $version)
@@ -65,7 +62,7 @@ class User
         $dataUser = array("name" => $name, "email" => $email, "password" => $password, "version" => $version);
         $dataUserJson = json_encode($dataUser);
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user");
+        curl_setopt($ch, CURLOPT_URL, $this->baseUrl. "user");
         curl_setopt($ch, CURLOPT_POST, TRUE);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $dataUserJson);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -78,48 +75,48 @@ class User
 
     function updateDataUser($data)
     {
-        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/update", $data);
+        callAPI("POST", $this->baseUrl . "user/update", $data);
     }
 
 
     function selectAvatar($src)
     {
-        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/update", $src);
+        callAPI("POST", $this->baseUrl . "user/update", $src);
     }
 
     function sendEmail($id)
     {
-        callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/mail/" . $id, null);
+        callAPI(null, $this->baseUrl. "user/mail/" . $id, null);
     }
 
     function updateAlerts($data)
     {
-        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/config_notification", $data);
+        callAPI("POST", $this->baseUrl . "user/config_notification", $data);
     }
 
     function addFavorites($data)
     {
-        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/add_favorites", $data);
+        callAPI("POST", $this->baseUrl . "user/add_favorites", $data);
     }
 
     function removeFavorites($data)
     {
-        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/remove_favorites", $data);
+        callAPI("POST", $this->baseUrl . "user/remove_favorites", $data);
     }
 
     function showNotification($id, $currentTime, $currentDate)
     {
-        callAPI(null, "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/notification/" . $id . "&" . $currentTime . "&" . $currentDate . "", null);
+        callAPI(null, $this->baseUrl. "notification/" . $id . "&" . $currentTime . "&" . $currentDate . "", null);
     }
 
     function enableNotification($data)
     {
-        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/activeNotification", $data);
+        callAPI("POST", $this->baseUrl . "user/activeNotification", $data);
     }
 
     function disableNotification($data)
     {
-        callAPI("POST", "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/deactiveNotification", $data);
+        callAPI("POST", $this->baseUrl . "user/deactiveNotification", $data);
     }
 }
 

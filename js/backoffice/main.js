@@ -25,6 +25,70 @@ $(document).ready(function () {
         date: currentDate,
         function: "getProgramsGMT",
     };
+
+    function createTvSlider(container) {
+        container.slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+            centerMode: false,
+            arrows: true,
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+            responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: false,
+                        autoplaySpeed: 2000,
+                        centerMode: true,
+                        infinite: true,
+                        arrows: false,
+                        dots: true,
+                    },
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true,
+                        centerMode: false,
+                        arrows: false,
+                    },
+                },
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true,
+                        centerMode: false,
+                        arrows: true,
+                        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+                        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+                    },
+                },
+                {
+                    breakpoint: 1900,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true,
+                        centerMode: false,
+                        arrows: true,
+                        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+                        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+                    },
+                },
+            ],
+        });
+    }
     $.ajax({
         type: "POST",
         data: data,
@@ -33,17 +97,67 @@ $(document).ready(function () {
 
             let json = JSON.parse(result);
             console.log(json);
+            let sliderCanalClarLanding = $('.today-claro-slider-edit');
+            let sliderConcertChannelLanding = $('.today-concert-slider-edit');
             //Contenedor para insertar todos los programas
             let claroCotentProgramacionGeneralEdit = $(".claro-content-edit");
             //Programación de los diferentes landings
             let programingCanalClaro = json.data[0].programing[0].programs;
             let programingConcertChannel = json.data[1].programing[0].programs;
             let programingClaroCinema = json.data[2].programing[0].programs;
+            let programLandingCanalClaro = "";
+            let programLandingConcertChannel = "";
             let programCanalClaroEdit = "";
             let programConcertChannelEdit = "";
             let programClaroCinemaEdit = "";
+
+            sliderCanalClarLanding.slick('unslick');
+            sliderConcertChannelLanding.slick('unslick');
             //Canal claro GMT
             programingCanalClaro.forEach((program, index) => {
+                //Landing de canal claro
+                if (index == 0) {
+                    programLandingCanalClaro += `
+                    <div class="poster">
+                        <div class="poster-body">
+                            <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                            <div class="thumbnail-body" _id="${program.chapter_id}">
+                                <div class="thumbnail">
+                                    <img src="${program.image}" alt="">
+                                </div>
+                                <div class="a-claro-rectangle thumbnail-info-title">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">${program.chapter_title}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                } else {
+                    programLandingCanalClaro += `
+                    <div class="poster">
+                        <div class="poster-body">
+                            <div class="showtime-container justify-content-between">
+                                <p class="a-programming-text">${program.time}</p>
+                                <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
+                            </div>
+
+                            <div class="thumbnail-body" _id="${program.chapter_id}">
+                                <div class="thumbnail">
+                                    <img src="${program.image}" alt="">
+                                </div>
+                                <div class="a-claro-rectangle thumbnail-info-title">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">${program.chapter_title}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `
+                }
+                //Programación general
                 let synopsis = "";
                 if (program.sinopsis.length > 150) {
                     synopsis = program.sinopsis.substr(0, 150) + "...";
@@ -94,6 +208,51 @@ $(document).ready(function () {
         `;
             });
             programingConcertChannel.forEach((program, index) => {
+                //Landing de concert channel
+                if (index == 0) {
+                    programLandingConcertChannel += `
+                    <div class="poster">
+                        <div class="poster-body">
+                            <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                            <div class="thumbnail-body" _id="${program.chapter_id}">
+                                <div class="thumbnail">
+                                    <img src="${program.image}" alt="">
+                                </div>
+                                <div class="a-concert-rectangle thumbnail-info-title">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">${program.chapter_title}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                } else {
+                    //Landing de concert channel
+                    programLandingConcertChannel += `
+                    <div class="poster" >
+                        <div class="poster-body">
+                            <div class="showtime-container justify-content-between">
+                                <p class="a-programming-text">${program.time}</p>
+                                <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
+                            </div>
+            
+                            <div class="thumbnail-body" _id="${program.chapter_id}">
+                                <div class="thumbnail">
+                                    <img src="${program.image}" alt="">
+                                </div>
+                                <div class="a-concert-rectangle thumbnail-info-title">
+                                    <div class="poster-title-margin">
+                                        <p class="a-poster-text-white">${program.chapter_title}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                }
+
+                //Programación concert channel
                 let synopsis = "";
                 if (program.sinopsis.length > 150) {
                     synopsis = program.sinopsis.substr(0, 150) + "...";
@@ -198,7 +357,10 @@ $(document).ready(function () {
             claroCotentProgramacionGeneralEdit.html(programCanalClaroEdit);
             $('.concert-content-edit').html(programConcertChannelEdit);
             $('.cinema-content-edit').html(programClaroCinemaEdit);
-
+            sliderCanalClarLanding.html(programLandingCanalClaro);
+            sliderConcertChannelLanding.html(programLandingConcertChannel);
+            createTvSlider(sliderCanalClarLanding);
+            createTvSlider(sliderConcertChannelLanding);
         },
     });
 });
