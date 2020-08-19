@@ -119,9 +119,9 @@ export default class Section {
     /* End Header */
 
     /*CLARO CANAL HOME */
-    $(".claro-image-header").attr("src", json.data.block_2_channel1_icon);
+    $(".claro-image-header").attr("src", json.data.block_3_icon_channel);
     $(".concerthome-image-header").attr("src", json.data.block_4_icon_channel);
-    $(".cinemahome-image-header").attr("src", json.data.block_2_channel3_icon);
+    $(".cinemahome-image-header").attr("src", json.data.block_5_icon_channel);
 
     /* TITLE */
     $(".a-claro-channel-title").text(json.data.block_3_title);
