@@ -57,7 +57,9 @@ function getNameCountry(image) {
       break;
 
     default:
-      break;
+      case "dominican-republic.svg":
+        nameCountry = "dominican-republic";
+        break;
   }
   return nameCountry;
 }
