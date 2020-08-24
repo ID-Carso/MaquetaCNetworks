@@ -2198,3 +2198,4 @@ $(".slider-pagination-add").click(function () {
   `
   );
 });
+
