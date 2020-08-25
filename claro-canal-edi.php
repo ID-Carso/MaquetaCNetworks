@@ -118,7 +118,11 @@
     <section class="today-canal-claro">
       <div class="today-container">
         <div class="px-3 mb-3 row no-gutters landing-header position-relative border-t border-l border-r border-b">
-          <img src="./images/General/pencil.svg" alt="" class="pencil" type="header-canal-claro">
+
+          <!-- <button id="claro-canal-edi"> -->
+          <img id="claro-canal-edi" src="./images/General/pencil.svg" alt="" class="pencil">
+          <!-- </button> -->
+
           <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
             <img src="./images/home/tv-1.svg" alt="" class="lading-header-image-claro">
           </div>
@@ -139,8 +143,7 @@
 
     <section class="next-week-claro">
       <div class="next-week-container">
-        <div
-          class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+        <div class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
           <img src=" ./images/General/pencil.svg" alt="" class="pencil">
           <h1 class="p-0 a-next-claro-title">próxima semana</h1>
           <h2 class="a-next-claro-subtitle pb-0 mb-0">
@@ -151,8 +154,7 @@
           <div class=" p-3 border-t border-l border-r border-b position-relative">
             <img src="./images/General/pencil.svg" alt="" class="pencil">
             <video class="promo-video" autoplay muted controls loop>
-              <source src="http://www.claronetworks.openofficedospuntocero.info/video/canal-claro-promo.mp4"
-                type="video/mp4">
+              <source src="http://www.claronetworks.openofficedospuntocero.info/video/canal-claro-promo.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -161,8 +163,7 @@
     </section>
     <section class="dont-lose-claro">
       <div class="dont-lose-container">
-        <div
-          class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+        <div class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
           <img src=" ./images/General/pencil.svg" alt="" class="pencil">
           <h1 class="p-0 a-dontLose-claro-title">TIENES QUE VERLO</h1>
           <h2 class="p-0 a-dontLose-claro-subtitle">
@@ -178,8 +179,7 @@
             </div>
           </div>
 
-          <div
-            class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+          <div class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
 
             <h1 class="p-0 a-dontLose-claro-title">Contenido exclusivo</h1>
             <h2 class="p-0 a-dontLose-claro-subtitle">
@@ -255,7 +255,7 @@ include './views/partials/modal-program.php'
 <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
 <script>
   var socket = new easyXDM.Socket({
-    onReady: function () {
+    onReady: function() {
 
       var hey = 4300;
       console.log(hey);
@@ -264,9 +264,11 @@ include './views/partials/modal-program.php'
 
     }
   });
-  $(".pencil").click(function () {
+
+  $("#ver-programacion").click(function() {
     let data = {
-      type: $(this).attr("type")
+      id: 5,
+      type: "program"
     }
     console.log(data);
     let jsonString = JSON.stringify(data);

@@ -1,5 +1,8 @@
 function selectCountry(country) {
   var countryFlag = country.children(".Icon_paises").attr("src");
+  if(countryFlag == ""){
+    countryFlag="images/paises/dominican-republic.svg"
+  }
   if (typeof Storage !== "undefined") {
     localStorage.setItem("src", countryFlag);
   } else {

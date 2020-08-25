@@ -17,21 +17,27 @@
 				<div class="row">
 					<!-- col 1 -->
 					<div class="col-sm-3 offset-3 col-md-4 offset-md-0 col-lg-4 offset-lg-1">
+						<!-- 
 						<a href="home.php">
 							<div class="name_paises espacio">
 								<img src="images/paises/usa.svg" class="Icon_paises">EUA
 							</div>
 						</a>
+						-->
 						<a href="home.php">
 							<div class="name_paises espacio">
 								<img src="images/paises/argentina.svg" class="Icon_paises">Argentina
 							</div>
 						</a>
+						<!-- 
+						
 						<a href="home.php">
 							<div class="name_paises espacio">
 								<img src="images/paises/brazil.svg" class="Icon_paises">Brasil
 							</div>
 						</a>
+						-->
+
 						<a href="home.php">
 							<div class="name_paises espacio">
 								<img src="images/paises/chile.svg" class="Icon_paises">Chile
@@ -47,10 +53,6 @@
 								<img src="images/paises/costa-rica.svg" class="Icon_paises">Costa Rica
 							</div>
 						</a>
-
-					</div>
-					<!-- col 2 -->
-					<div class="col-sm-3 offset-3 col-md-4 offset-md-0 col-lg-4 offset-lg-0">
 						<a href="home.php">
 							<div class="name_paises espacio">
 								<img src="images/paises/ecuador.svg" class="Icon_paises">Ecuador
@@ -61,6 +63,11 @@
 								<img src="images/paises/el-salvador.svg" class="Icon_paises"><span>El Salvador</span>
 							</div>
 						</a>
+					</div>
+					<!-- col 2 -->
+					<div class="col-sm-3 offset-3 col-md-4 offset-md-0 col-lg-4 offset-lg-0">
+						
+						
 						<a href="home.php">
 							<div class="name_paises espacio">
 								<img src="images/paises/guatemala.svg" class="Icon_paises"><span>Guatemala</span>
@@ -81,28 +88,33 @@
 								<img src="images/paises/panama.svg" class="Icon_paises">Panamá
 							</div>
 						</a>
-					</div>
-
-					<!-- col 3 -->
-					<div class="col-sm-3 offset-3 col-md-4 offset-md-0 col-lg-3 offset-lg-0">
-
 						<a href="home.php">
 							<div class="name_paises espacio">
 								<img src="images/paises/paraguay.svg" class="Icon_paises">Paraguay
 							</div>
 						</a>
-
 						<a href="home.php">
 							<div class="name_paises espacio">
 								<img src="images/paises/peru.svg" class="Icon_paises">Perú
 							</div>
 						</a>
+					</div>
+
+					<!-- col 3 -->
+					<div class="col-sm-3 offset-3 col-md-4 offset-md-0 col-lg-3 offset-lg-0">
+						<!-- 
 
 						<a href="home.php">
 							<div class="name_paises espacio">
 								<img src="images/paises/puerto-rico.svg" class="Icon_paises">Puerto Rico
 							</div>
 						</a>
+						<a href="home.php">
+							<div class="name_paises espacio">
+								<img src="images/paises/dominican-republic.svg" class="Icon_paises">República Dominicana
+							</div>
+						</a>
+						 -->
 						<a href="home.php">
 							<div class="name_paises espacio">
 								<div class="row">
@@ -115,12 +127,15 @@
 								</div>
 							</div>
 						</a>
+						<!-- 
 
 						<a href="home.php">
 							<div class="name_paises espacio">
 								<img src="images/paises/uruguay.svg" class="Icon_paises">Uruguay
 							</div>
 						</a>
+						 -->
+
 					</div>
 				</div>
 				<hr class="hr1">

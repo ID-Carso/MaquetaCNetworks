@@ -108,15 +108,15 @@
                 </div>
             </div>
             <div class="today-concert-videos-container position-relative border-t border-l border-r border-b">
-                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-concert"
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-concert pencil-slider"
                     type="current-programming-concert">
                 <div class="section-slider p-3 concert-slider today-concert-slider-edit">
                 </div>
         </section>
         <section class="next-week-concert">
             <div
-                class="concert-container-header mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
-                <img src="./images/General/pencil.svg" alt="" class="pencil">
+                class="concert-container-header mb-3  d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header" type="pencil-header">
                 <h1 class="p-2 concert-title">próxima semana</h1>
                 <h2 class="p-2 concert-subtitle">ve un
                     <span>adelanto</span> de la
@@ -125,7 +125,7 @@
             </div>
             <div class="week-videos-container">
                 <div class=" p-3 border-t border-l border-r border-b position-relative">
-                    <img src="./images/General/pencil.svg" alt="" class="pencil">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil" type="pencil-video">
                     <video class="promo-video" autoplay muted controls loop>
 
                         <source
@@ -138,15 +138,14 @@
         </section>
         <section class="concerts">
             <div
-                class="concert-container-header p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
-                <img src="./images/General/pencil.svg" alt="" class="pencil">
+                class="concert-container-header  p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
                 <h1 class="concert-title">imprescindibles</h1>
-                <img src="./images/General/pencil.svg" alt="" class="pencil">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header1" type="pencil-header1">
                 <h2 class="p-2 concert-subtitle">Los artistas que sonarán esta semana</h2>
 
             </div>
             <div class="concerts-videos-container position-relative border-t border-l border-r border-b p-3">
-                <img src="./images/General/pencil.svg" alt="" class="pencil">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel1" type="pencil-carrusel1">
                 <div class="section-slider concert-slider">
                     <div class="poster">
                         <div class="poster-body">
@@ -235,14 +234,14 @@
 
         </section>
         <section class="concert-interviews">
-            <div class="concert-container-header p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b"">
-            <img src=" ./images/General/pencil.svg" alt="" class="pencil">
+            <div class="concert-container-header  header2 p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+            <img src=" ./images/General/pencil.svg" alt="" class="pencil pencil-header2" type="header2">
                 <h1 class="concert-title">Por si te lo perdiste</h1>
-                <img src="./images/General/pencil.svg" alt="" class="pencil">
+              
                 <h2 class="p-2 concert-subtitle">Conoce algunas de nuestras leyendas</h2>
             </div>
             <div class="interviews-videos-container position-relative border-t border-l border-r border-b p-3">
-                <img src=" ./images/General/pencil.svg" alt="" class="pencil">
+                <img src=" ./images/General/pencil.svg" alt="" class="pencil pencil-carrusel2" type="pencil-carrusel2">
                 <div class="section-slider concert-slider">
 
                     <div class="poster">
@@ -382,13 +381,87 @@
                 socketConcert.postMessage(hey)
             }
         });
-        $(".concert-container").on("click", ".pencil-concert", function () {
-            let data = {
-                type: $(this).attr("type")
-            }
-            var json = JSON.stringify(data);
-            socketConcert.postMessage(json);
-        });
+         $(".concert-container").on("click", ".pencil-concert", function () {
+          
+          let data = {
+              type: $(this).attr("type")
+             
+          }
+          console.log(data);
+          var json = JSON.stringify(data);
+          socketConcert.postMessage(json);
+         
+      });
+      $(".today-concert-slider-edit").on("click", ".pencil-slider", function () {
+           
+           let data = {
+             type: $(this).attr("type")
+            
+         }
+         console.log(data);
+         var json = JSON.stringify(data);
+         socketConcert.postMessage(json);
+       });
+       $(".week-videos-container").on("click", ".pencil", function () {
+          
+           let data = {
+             type: $(this).attr("type")
+            
+         }
+         console.log(data);
+         var json = JSON.stringify(data);
+         socketConcert.postMessage(json);
+      });
+
+  
+      $(".concert-container-header").on("click", ".pencil-header", function () {
+       let data = {
+             type: $(this).attr("type")
+            
+         }
+         console.log(data);
+         var json = JSON.stringify(data);
+         socketConcert.postMessage(json);
+      });
+      $(".concert-container-header").on("click", ".pencil-header1", function () {
+       let data = {
+             type: $(this).attr("type")
+            
+         }
+         console.log(data);
+         var json = JSON.stringify(data);
+         socketConcert.postMessage(json);
+      });
+      $(".concert-container-header").on("click", ".pencil-header2", function () {
+       let data = {
+             type: $(this).attr("type")
+            
+         }
+         console.log(data);
+         var json = JSON.stringify(data);
+         socketConcert.postMessage(json);
+      });
+      $(".concerts-videos-container").on("click", ".pencil-carrusel1", function () {
+       let data = {
+             type: $(this).attr("type")
+            
+         }
+         console.log(data);
+         var json = JSON.stringify(data);
+         socketConcert.postMessage(json);
+      });
+      $(".interviews-videos-container").on("click", ".pencil-carrusel2", function () {
+          
+       let data = {
+             type: $(this).attr("type")
+            
+         }
+         console.log(data);
+         var json = JSON.stringify(data);
+         socketConcert.postMessage(json);
+      });
+   
+     
     </script>
 </body>
 

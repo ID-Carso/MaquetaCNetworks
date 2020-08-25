@@ -6,7 +6,6 @@
   "scripts": {
     "start": "parcel ./js/main.js",
     "build": "parcel build ./js/main.js -d dist --no-cache"
-    
   },
   "repository": {
     "type": "git",
