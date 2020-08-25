@@ -118,7 +118,9 @@
     <section class="today-canal-claro">
       <div class="today-container">
         <div class="px-3 mb-3 row no-gutters landing-header position-relative border-t border-l border-r border-b">
-          <img src="./images/General/pencil.svg" alt="" class="pencil">
+
+          <img id="claro-canal-edi-header" src="./images/General/pencil.svg" alt="" class="pencil">
+
           <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
             <img src="./images/home/tv-1.svg" alt="" class="lading-header-image-claro">
           </div>
@@ -132,16 +134,15 @@
         </div>
 
         <div class="today-videos-container position-relative border-t border-l border-r border-b p-2">
-          <img src=" ./images/General/pencil.svg" alt="" class="pencil">
+          <img id="claro-canal-edi-programacion"  src=" ./images/General/pencil.svg" alt="" class="pencil">
           <div class="section-slider today-claro-slider-edit">
           </div>
     </section>
 
     <section class="next-week-claro">
       <div class="next-week-container">
-        <div
-          class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
-          <img src=" ./images/General/pencil.svg" alt="" class="pencil">
+        <div class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+          <img id="claro-canal-edi-title" src=" ./images/General/pencil.svg" alt="" class="pencil">
           <h1 class="p-0 a-next-claro-title">próxima semana</h1>
           <h2 class="a-next-claro-subtitle pb-0 mb-0">
             Ve un <span>adelanto</span> de la programación
@@ -149,10 +150,9 @@
         </div>
         <div class="week-claro-video-container">
           <div class=" p-3 border-t border-l border-r border-b position-relative">
-            <img src="./images/General/pencil.svg" alt="" class="pencil">
+            <img id="claro-canal-edi-promo" src="./images/General/pencil.svg" alt="" class="pencil">
             <video class="promo-video" autoplay muted controls loop>
-              <source src="http://www.claronetworks.openofficedospuntocero.info/video/canal-claro-promo.mp4"
-                type="video/mp4">
+              <source src="http://www.claronetworks.openofficedospuntocero.info/video/canal-claro-promo.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -161,8 +161,7 @@
     </section>
     <section class="dont-lose-claro">
       <div class="dont-lose-container">
-        <div
-          class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+        <div class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
           <img src=" ./images/General/pencil.svg" alt="" class="pencil">
           <h1 class="p-0 a-dontLose-claro-title">TIENES QUE VERLO</h1>
           <h2 class="p-0 a-dontLose-claro-subtitle">
@@ -178,8 +177,7 @@
             </div>
           </div>
 
-          <div
-            class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+          <div class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
 
             <h1 class="p-0 a-dontLose-claro-title">Contenido exclusivo</h1>
             <h2 class="p-0 a-dontLose-claro-subtitle">
@@ -251,26 +249,86 @@ include './views/partials/modal-favorites.php'
 <?php
 include './views/partials/modal-program.php'
 ?>
+<!-- <script>
+  var socketProgramacion = new easyXDM.Socket({
+    onReady: function() {
 
-<script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
-<script>
-  var socket = new easyXDM.Socket({
-    onReady: function () {
-
-      var hey = 4300;
+      var hey = 11000;
       console.log(hey);
-
-      socket.postMessage(hey)
-
+      socketProgramacion.postMessage(hey)
     }
   });
 
-  $("#ver-programacion").click(function () {
+  $("#ver-programacion").click(function() {
     let info = {
       id: 5,
       type: "program"
     }
     socket.postMessage(info);
+  });
+
+  
+  $("#claro-canal-edi").click(function() {
+    let type = "claro-header";
+    console.log('Funciona');
+    let data = {
+      id: 0,
+      type: type
+    }
+    var json = JSON.stringify(data);
+    console.log(data);
+    socketProgramacion.postMessage(json);
+  });
+</script>
+<script type="text/javascript" src="./js/lib/easyXDM.min.js"></script> -->
+
+<script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
+<script>
+  var socketConcert = new easyXDM.Socket({
+    onReady: function() {
+      var hey = 11000;
+      socketConcert.postMessage(hey)
+    }
+  });
+
+  $("#claro-canal-edi-header").click(function() {
+    let type = "claro-header";
+    let data = {
+      type: type
+    }
+    var json = JSON.stringify(data);
+    console.log(data);
+    socketConcert.postMessage(json);
+  });
+
+  $("#claro-canal-edi-programacion").click(function() {
+    let type = "claro-programacion";
+    let data = {
+      type: type
+    }
+    var json = JSON.stringify(data);
+    console.log(data);
+    socketConcert.postMessage(json);
+  });
+
+  $("#claro-canal-edi-title").click(function() {
+    let type = "claro-title";
+    let data = {
+      type: type
+    }
+    var json = JSON.stringify(data);
+    console.log(data);
+    socketConcert.postMessage(json);
+  });
+
+  $("#claro-canal-edi-promo").click(function() {
+    let type = "claro-promo";
+    let data = {
+      type: type
+    }
+    var json = JSON.stringify(data);
+    console.log(data);
+    socketConcert.postMessage(json);
   });
 </script>
 
