@@ -6,7 +6,7 @@ $(document).ready(function () {
     let year = date.getFullYear();
     let hour = date.getHours();
     let minutes = date.getMinutes();
-    let seconds = date.getSeconds();
+    let seconds = date.getSeconds()
 
     //Si el número de día es menor a 10, le agregamos un cero para tener el formato DD
     if (day < 10) {
