@@ -118,7 +118,7 @@
     <section class="today-canal-claro">
       <div class="today-container">
         <div class="px-3 mb-3 row no-gutters landing-header position-relative border-t border-l border-r border-b">
-          <img src="./images/General/pencil.svg" alt="" class="pencil">
+          <img src="./images/General/pencil.svg" alt="" class="pencil" type="header-canal-claro">
           <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
             <img src="./images/home/tv-1.svg" alt="" class="lading-header-image-claro">
           </div>
@@ -264,13 +264,13 @@ include './views/partials/modal-program.php'
 
     }
   });
-
-  $("#ver-programacion").click(function () {
-    let info = {
-      id: 5,
-      type: "program"
+  $(".pencil").click(function () {
+    let data = {
+      type: $(this).attr("type")
     }
-    socket.postMessage(info);
+    console.log(data);
+    let jsonString = JSON.stringify(data);
+    socket.postMessage(jsonString);
   });
 </script>
 
