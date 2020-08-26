@@ -122,7 +122,7 @@
           <img id="claro-canal-edi-header" src="./images/General/pencil.svg" alt="" class="pencil">
 
           <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-            <img src="./images/home/tv-1.svg" alt="" class="lading-header-image-claro">
+            <img src="" id="icon_canal_claro" alt="" class="lading-header-image-claro">
           </div>
           <div class="col-12 col-md-5 col-lg-5 col-xl-5">
             <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
@@ -166,8 +166,8 @@
         <div
           class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
           <img src=" ./images/General/pencil.svg" alt="" class="pencil">
-          <h1 class="p-0 a-dontLose-claro-title">TIENES QUE VERLO</h1>
-          <h2 class="p-0 a-dontLose-claro-subtitle">
+          <h1 class="p-0 a-dontLose-claro-title" id="carrusel_1_title">TIENES QUE VERLO</h1>
+          <h2 class="p-0 a-dontLose-claro-subtitle" id="carrusel_1_subtitle">
             ¡No te lo puedes perder!
           </h2>
         </div>
@@ -183,8 +183,8 @@
           <div
             class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
 
-            <h1 class="p-0 a-dontLose-claro-title">Contenido exclusivo</h1>
-            <h2 class="p-0 a-dontLose-claro-subtitle">
+            <h1 class="p-0 a-dontLose-claro-title"id="carrusel_2_title">Contenido exclusivo</h1>
+            <h2 class="p-0 a-dontLose-claro-subtitle"id="carrusel_2_subtitle">
               Únete y disfruta nuestras producciones propias.
             </h2>
           </div>
