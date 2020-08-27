@@ -91,7 +91,7 @@
         <section class="today-concert-channel pt-3">
             <div class="row no-gutters mb-3 p-3 landing-header position-relative border-t border-l border-r border-b">
                 <img src="./images/General/pencil.svg" alt="" class="pencil pencil-concert"
-                    type="header-landing-concert" id="icon_concert_channel">>
+                    type="header-landing-concert" id="icon_concert_channel">
                 <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
 
                     <img src="./images/home/concert-home-img.svg" alt="" class="lading-header-image-concert">
