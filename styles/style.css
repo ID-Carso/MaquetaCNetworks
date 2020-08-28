@@ -4739,6 +4739,7 @@ input[type="radio"]:checked + .mujer-estilo {
 .header-slider {
   width: 100%;
   padding-bottom: 0px;
+
 }
 
 .slick-slider .slick-dots li button:before {
@@ -4844,6 +4845,9 @@ input[type="radio"]:checked + .mujer-estilo {
 .concert-header-slider .slick-track {
   margin-bottom: 0px !important;
   height: 100%;
+}
+ div .header-slider-cinem .slick-track{
+  margin-bottom: 0px !important;
 }
 
 .concert-header-slider .slick-list {

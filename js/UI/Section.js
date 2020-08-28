@@ -1132,11 +1132,16 @@ export default class Section {
         );
       },
     });
+   
     //para dar click
     const pagination = $(".pag");
     $(".pag").click(function () {
       pagination.removeClass("selteal");
       $(this).addClass("selteal");
     });
+   
+  
+   
   }
+
 }

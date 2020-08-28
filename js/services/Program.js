@@ -912,9 +912,8 @@ function getPrograms(date, country) {
                     if (arrayClaroCinema.includes(program.chapter_id)) {
                         programClaroCinema = `
             
-            <div class=" p-3 border-t border-l border-r border-b position-relative">          
+                  
             <div class="poster-live">
-            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
            
                   <div class="poster-body">
 
@@ -933,14 +932,12 @@ function getPrograms(date, country) {
                         </div>
 
                   </div>
-              </div>
+             
               </div>
                 `;
                     } else {
                         programClaroCinema = `
-            <div class=" p-3 border-t border-l border-r border-b position-relative">          
             <div class="poster-live">
-            <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
            
                   <div class="poster-body">
 
@@ -959,7 +956,7 @@ function getPrograms(date, country) {
                         </div>
 
                   </div>
-              </div>
+              
               </div>
                 `;
                     }
@@ -967,8 +964,7 @@ function getPrograms(date, country) {
                     if (arrayClaroCinema.includes(program.chapter_id)) {
                         programClaroCinema = `
             <div class="schedule-container">
-            <div class="col-9 p-3 border-t border-l border-r border-b position-relative mb-2">
-            <img src="../images/pencil.svg" alt="" class="pencil">
+           
             <p class="schedule-title mb-0">${program.chapter_title}</p>
             </div>
             <div class="schedule-item-body">
@@ -983,14 +979,12 @@ function getPrograms(date, country) {
                 <div class="schedule-details">
                     <div class="schedule-details-header">
                         <div>
-                        <div class="p-2 border-t border-l border-r border-b position-relative mb-2">
-                        <img src="../images/pencil.svg" alt="" class="pencil">
+                        
                             <p class="schedule">${program.time} hrs.</p>
-                            </div>
-                            <div class="p-2 border-t border-l border-r border-b position-relative mb-2">
-                            <img src="../images/pencil.svg" alt="" class="pencil">
+                           
+                            
                             <p class="rating mb-0">Clasificación: A</p>
-                            </div>
+                            
                         </div>
                         <div>
                             <button title="Eliminar de mi lista" class="button-none remove-program programing-button" type="button" _id="${program.chapter_id}">
@@ -1000,12 +994,11 @@ function getPrograms(date, country) {
                             </button>
                         </div>
                     </div>
-                    <div class="p-3 border-t border-l border-r border-b position-relative mb-2">
-                    <img src="../images/pencil.svg" alt="" class="pencil">
+                  
                     <p class="schedule-description">
                         ${program.sinopsis}
                     </p>
-                    </div>
+                    
                 </div>
             </div>
 
@@ -1013,11 +1006,8 @@ function getPrograms(date, country) {
                 `;
                     } else {
                         programClaroCinema = `
-            <div class=" p-3 border-t border-l border-r border-b position-relative mb-2">          
-
+            
                 <div class="poster" >
-                <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
-
                   <div class="poster-body">
                       <div class="showtime-container justify-content-between">
                           <p class="a-programming-text">${program.time}</p>
@@ -1037,7 +1027,7 @@ function getPrograms(date, country) {
                           </div>
                     </div>
                   </div>
-              </div>
+            
               </div>
                 `;
                     }

@@ -557,6 +557,31 @@ export default class Slider {
       autoplay: true,
       autoplaySpeed: 2000,
     });
+    //slider para el de cinema
+    $(".header-slider-cinem").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      dots: true,
+      appendDots: $(".programming-slider-dots"),
+      centerMode: false,
+      arrows: false,
+      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+      customPaging: function (slider, i) {
+        var thumb = $(slider.$slides[i]).data();
+        return (
+          "<p class='a-text-bold-tealblue slider-pagination-item pag ' slide_index=" + (i) + ">" +
+          (i + 1) +
+          "</p> "
+        );
+      },
+    });
+    const pagination = $(".pag");
+    $(".pag").click(function () {
+      pagination.removeClass("selteal");
+      $(this).addClass("selteal");
+    });
 
     $(window).resize(function () {
       if (headerSlider.hasClass("slick-initialized")) {
