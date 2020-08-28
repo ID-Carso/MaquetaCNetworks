@@ -83,8 +83,15 @@
             <?php
             include './views/partials/menu-desktop-black.php'
             ?>
-            <div class="header-slider" id="banner-concert-channel">
+            <div class="header-slider-cinem" id="banner-concert-channel">
             </div>
+            <div class="d-flex position-absolute programming-dots space-do" >
+                <div class=" d-inline-block position-relative programming-slider-dots align-items-center">
+                </div>
+                <img src="./images/General/plus.svg" alt="" class="cursor-pointer slider-pagination-add mr-3"
+                    style="width:42px">
+            </div>
+            
         </div>
     </header>
     <div class="concert-container">
@@ -298,7 +305,16 @@
          var json = JSON.stringify(data);
          socketConcert.postMessage(json);
       });
-   
+      $('.concert-channel-header').on("click", ".slider-pagination-item", function () {
+                let type = "slider-pagination";
+                let data = {
+                    
+                    type: type
+                }
+                console.log(data);
+                var json = JSON.stringify(data);
+                socketCinema.postMessage(json);
+            });
      
     </script>
 </body>

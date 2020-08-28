@@ -69,6 +69,7 @@
     </div>
 
     <div class="header">
+   
       <div class="alert-user">
       </div>
       <img src="./images/header/yellow-curve.png" alt="" class="header-curve">
@@ -99,10 +100,17 @@
             </div>
             <img src="./images/claro-canal/claro-canal-logo.svg" alt="" />
           </div>-->
-      <div class="header-slider" id="banner-claro-cinema">
-      </div>
+      <div class=" header-slider-cinem" id="banner-claro-cinema">
+            </div>
+            <div class="d-flex position-absolute programming-dots space-do" style="top:70%;">
+                <div class=" d-inline-block position-relative programming-slider-dots align-items-center">
+                </div>
+                <img src="./images/General/plus.svg" alt="" class="cursor-pointer slider-pagination-add mr-3"
+                    style="width:42px">
+            </div>
+   
     </div>
-
+   
   </header>
   <main>
     <div class="claro-cinema-container">
@@ -393,6 +401,7 @@
 </body>
 <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
 <script>
+
   var socketCinema = new easyXDM.Socket({
     onReady: function() {
 
@@ -481,6 +490,16 @@
          var json = JSON.stringify(data);
          socketCinema.postMessage(json);
       });
+      $('.claro-cinema-header').on("click", ".slider-pagination-item", function () {
+                let type = "slider-pagination";
+                let data = {
+                    
+                    type: type
+                }
+                console.log(data);
+                var json = JSON.stringify(data);
+                socketCinema.postMessage(json);
+            });
    
 </script>
 

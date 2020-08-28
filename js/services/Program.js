@@ -1008,7 +1008,6 @@ function getPrograms(date, country) {
                         programClaroCinema = `
             
                 <div class="poster" >
-
                   <div class="poster-body">
                       <div class="showtime-container justify-content-between">
                           <p class="a-programming-text">${program.time}</p>
