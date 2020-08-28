@@ -97,7 +97,8 @@
                 <div class="col-12 col-md-5 col-lg-5 col-xl-5">
                     <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-right" id="btn-concert-channel">
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-right"
+                    id="btn-concert-channel">
                     <a href="programacion-concert.php"><button
                             class="btn-magenta a-text-white-semibold btn-concert-channel">VER PROGRAMACIÓN</button></a>
                 </div>
@@ -110,31 +111,22 @@
         </section>
         <section class="next-week-concert">
             <div class="concert-container-header">
-                <h1 class="concert-title" id="a-next-concert-title">próxima semana</h1>
-                <h2 class="concert-subtitle" id="a-next-concert-subtitle">ve un <span>adelanto</span> de la programación</h2>
+                <h1 class="concert-title" id="a-next-concert-title"></h1>
+                <h2 class="concert-subtitle" id="a-next-concert-subtitle"></h2>
             </div>
             <div class="week-videos-container">
                 <video class="promo-video" playsinline autoplay muted controls loop>
                     <source src="http://www.claronetworks.openofficedospuntocero.info/video/concert-channel-promo.mp4"
                         type="video/mp4">
                 </video>
-                <!--<div class="poster">
-                    <div class="poster-body">
-                        <div class="showtime-container justify-content-end">
-                            <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                        </div>
-                        <div class="thumbnail">
-                        </div>
-                    </div>
-                </div>-->
             </div>
 
         </section>
         <section class="concerts">
             <div class="concert-container-header">
 
-                <h1 class="concert-title" id="carrusel_1_title">imprescindibles</h1>
-                <h2 class="concert-subtitle"id="carrusel_1_subtitle">Los artistas que sonarán esta semana</h2>
+                <h1 class="concert-title" id="carrusel_1_title"></h1>
+                <h2 class="concert-subtitle" id="carrusel_1_subtitle"></h2>
             </div>
             <div class="concerts-videos-container">
                 <div class="section-slider concert-slider" id="concert_channel_carrusel_1"></div>
@@ -143,8 +135,8 @@
         </section>
         <section class="concert-interviews">
             <div class="concert-container-header">
-                <h1 class="concert-title"id="carrusel_2_title">Por si te lo perdiste</h1>
-                <h2 class="concert-subtitle"id="carrusel_2_subtitle">Conoce algunas de nuestras leyendas</h2>
+                <h1 class="concert-title" id="carrusel_2_title"></h1>
+                <h2 class="concert-subtitle" id="carrusel_2_subtitle"></h2>
             </div>
             <div class="interviews-videos-container">
                 <div class="section-slider concert-slider" id="concert_channel_carrusel_2"></div>

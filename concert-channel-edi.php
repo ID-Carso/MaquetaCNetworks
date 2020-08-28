@@ -91,16 +91,17 @@
         <section class="today-concert-channel pt-3">
             <div class="row no-gutters mb-3 p-3 landing-header position-relative border-t border-l border-r border-b">
                 <img src="./images/General/pencil.svg" alt="" class="pencil pencil-concert"
-                    type="header-landing-concert" id="icon_concert_channel">>
+                    type="header-landing-concert">
                 <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-
-                    <img src="./images/home/concert-home-img.svg" alt="" class="lading-header-image-concert">
+                    <img src="./images/home/concert-home-img.svg" alt="" class="lading-header-image-concert"
+                        id="icon_concert_channel">
 
                 </div>
                 <div class="col-12 col-md-5 col-lg-5 col-xl-5 ">
                     <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-right" id="btn-concert-channel">
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-right"
+                    id="btn-concert-channel">
                     <a href="">
                         <button class="m-3 btn-magenta a-text-white-semibold btn-concert-channel">VER
                             PROGRAMACIÓN</button>
@@ -117,10 +118,8 @@
             <div
                 class="concert-container-header mb-3  d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
                 <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header" type="pencil-header">
-                <h1 class="p-2 concert-title" id="a-next-concert-title">próxima semana</h1>
-                <h2 class="p-2 concert-subtitle"id="a-next-concert-subtitle">ve un
-                    <span>adelanto</span> de la
-                    programación</h2>
+                <h1 class="p-2 concert-title" id="a-next-concert-title"></h1>
+                <h2 class="p-2 concert-subtitle" id="a-next-concert-subtitle"></h2>
 
             </div>
             <div class="week-videos-container">
@@ -139,25 +138,26 @@
         <section class="concerts">
             <div
                 class="concert-container-header  p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
-                <h1 class="concert-title"id="carrusel_1_title">imprescindibles</h1>
+                <h1 class="concert-title" id="carrusel_1_title"></h1>
                 <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header1" type="pencil-header1">
-                <h2 class="p-2 concert-subtitle"id="carrusel_1_subtitle">Los artistas que sonarán esta semana</h2>
+                <h2 class="p-2 concert-subtitle" id="carrusel_1_subtitle"></h2>
 
             </div>
             <div class="concerts-videos-container position-relative border-t border-l border-r border-b p-3">
                 <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel1" type="pencil-carrusel1">
                 <div class="concerts-videos-container">
-                <div class="section-slider concert-slider" id="concert_channel_carrusel_1"></div>
-            </div>
+                    <div class="section-slider concert-slider" id="concert_channel_carrusel_1"></div>
+                </div>
             </div>
 
         </section>
         <section class="concert-interviews">
-            <div class="concert-container-header  header2 p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
-            <img src=" ./images/General/pencil.svg" alt="" class="pencil pencil-header2" type="header2">
-                <h1 class="concert-title"id="carrusel_2_stitle">Por si te lo perdiste</h1>
-              
-                <h2 class="p-2 concert-subtitle"id="carrusel_2_subtitle">Conoce algunas de nuestras leyendas</h2>
+            <div
+                class="concert-container-header  header2 p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+                <img src=" ./images/General/pencil.svg" alt="" class="pencil pencil-header2" type="header2">
+                <h1 class="concert-title" id="carrusel_2_title"></h1>
+
+                <h2 class="p-2 concert-subtitle" id="carrusel_2_subtitle"></h2>
             </div>
             <div class="interviews-videos-container position-relative border-t border-l border-r border-b p-3">
                 <img src=" ./images/General/pencil.svg" alt="" class="pencil pencil-carrusel2" type="pencil-carrusel2">
@@ -219,87 +219,85 @@
                 socketConcert.postMessage(hey)
             }
         });
-         $(".concert-container").on("click", ".pencil-concert", function () {
-          
-          let data = {
-              type: $(this).attr("type")
-             
-          }
-          console.log(data);
-          var json = JSON.stringify(data);
-          socketConcert.postMessage(json);
-         
-      });
-      $(".today-concert-slider-edit").on("click", ".pencil-slider", function () {
-           
-           let data = {
-             type: $(this).attr("type")
-            
-         }
-         console.log(data);
-         var json = JSON.stringify(data);
-         socketConcert.postMessage(json);
-       });
-       $(".week-videos-container").on("click", ".pencil", function () {
-          
-           let data = {
-             type: $(this).attr("type")
-            
-         }
-         console.log(data);
-         var json = JSON.stringify(data);
-         socketConcert.postMessage(json);
-      });
+        $(".concert-container").on("click", ".pencil-concert", function () {
 
-  
-      $(".concert-container-header").on("click", ".pencil-header", function () {
-       let data = {
-             type: $(this).attr("type")
-            
-         }
-         console.log(data);
-         var json = JSON.stringify(data);
-         socketConcert.postMessage(json);
-      });
-      $(".concert-container-header").on("click", ".pencil-header1", function () {
-       let data = {
-             type: $(this).attr("type")
-            
-         }
-         console.log(data);
-         var json = JSON.stringify(data);
-         socketConcert.postMessage(json);
-      });
-      $(".concert-container-header").on("click", ".pencil-header2", function () {
-       let data = {
-             type: $(this).attr("type")
-            
-         }
-         console.log(data);
-         var json = JSON.stringify(data);
-         socketConcert.postMessage(json);
-      });
-      $(".concerts-videos-container").on("click", ".pencil-carrusel1", function () {
-       let data = {
-             type: $(this).attr("type")
-            
-         }
-         console.log(data);
-         var json = JSON.stringify(data);
-         socketConcert.postMessage(json);
-      });
-      $(".interviews-videos-container").on("click", ".pencil-carrusel2", function () {
-          
-       let data = {
-             type: $(this).attr("type")
-            
-         }
-         console.log(data);
-         var json = JSON.stringify(data);
-         socketConcert.postMessage(json);
-      });
-   
-     
+            let data = {
+                type: $(this).attr("type")
+
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketConcert.postMessage(json);
+
+        });
+        $(".today-concert-slider-edit").on("click", ".pencil-slider", function () {
+
+            let data = {
+                type: $(this).attr("type")
+
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketConcert.postMessage(json);
+        });
+        $(".week-videos-container").on("click", ".pencil", function () {
+
+            let data = {
+                type: $(this).attr("type")
+
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketConcert.postMessage(json);
+        });
+
+
+        $(".concert-container-header").on("click", ".pencil-header", function () {
+            let data = {
+                type: $(this).attr("type")
+
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketConcert.postMessage(json);
+        });
+        $(".concert-container-header").on("click", ".pencil-header1", function () {
+            let data = {
+                type: $(this).attr("type")
+
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketConcert.postMessage(json);
+        });
+        $(".concert-container-header").on("click", ".pencil-header2", function () {
+            let data = {
+                type: $(this).attr("type")
+
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketConcert.postMessage(json);
+        });
+        $(".concerts-videos-container").on("click", ".pencil-carrusel1", function () {
+            let data = {
+                type: $(this).attr("type")
+
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketConcert.postMessage(json);
+        });
+        $(".interviews-videos-container").on("click", ".pencil-carrusel2", function () {
+
+            let data = {
+                type: $(this).attr("type")
+
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketConcert.postMessage(json);
+        });
     </script>
 </body>
 

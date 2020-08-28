@@ -648,21 +648,21 @@ export default class Section {
     //obtenemos las iamgenes del carrusel 1
     let data = json.data;
     //cambiamos el icono del landing
-     //BLOQUE 2 Seccion de programacion
+    //BLOQUE 2 Seccion de programacion
     //cambiamos el icono del landing
     $('#icon_canal_claro').attr('src', data.block_2_icon_channel)
     //titulo del bloque 2
-    $('.a-today-claro-title').text( data.block_2_title_1)
-    $('.a-today-claro-title').append(' <span>'+data.block_2_title_2+'</span>')
+    $('.a-today-claro-title').text(data.block_2_title_1)
+    $('.a-today-claro-title').append(' <span>' + data.block_2_title_2 + '</span>')
     //cambiando url de programacion
-    $('#btn-claro-canal a').attr('href',data.block_2_button_url)
+    $('#btn-claro-canal a').attr('href', data.block_2_button_url)
     $('.btn-claro-canal').text(data.block_2_button_title)
 
     //BLOQUE 3 Seccion de video
-    $('.a-next-claro-title').text( data.block_3_title)
-    $('.a-next-claro-subtitle').text( data.block_3_subtitle)
+    $('.a-next-claro-title').text(data.block_3_title)
+    $('.a-next-claro-subtitle').text(data.block_3_subtitle)
     $(".promo-video")[0].load()
-    $('.promo-video source').attr( 'src',data.block_3_video_url)
+    $('.promo-video source').attr('src', data.block_3_video_url)
 
     //BLOQUE 4 carruseles
     $('#carrusel_1_title').text(data.block_4_carrusel_1_title)
@@ -923,17 +923,17 @@ export default class Section {
     //cambiamos el icono del landing
     $('#icon_concert_channel').attr('src', data.block_2_icon_channel)
     //titulo del bloque 2
-    $('.a-today-concert-title').text( data.block_2_title_1)
-    $('.a-today-concert-title').append(' <span>'+data.block_2_title_2+'</span>')
+    $('.today-concert-title').text(data.block_2_title_1)
+    $('.today-concert-title').append(' <span>' + data.block_2_title_2 + '</span>')
     //cambiando url de programacion
-    $('#btn-concert-channel a').attr('href',data.block_2_button_url)
+    $('#btn-concert-channel a').attr('href', data.block_2_button_url)
     $('.btn-concert-channel').text(data.block_2_button_title)
 
     //BLOQUE 3 Seccion de video
-    $('#a-next-concert-title').text( data.block_3_title)
-    $('#a-next-concert-subtitle').text( data.block_3_subtitle)
+    $('#a-next-concert-title').text(data.block_3_title)
+    $('#a-next-concert-subtitle').text(data.block_3_subtitle)
     $(".promo-video")[0].load()
-    $('.promo-video source').attr( 'src',data.block_3_video_url)
+    $('.promo-video source').attr('src', data.block_3_video_url)
 
     //BLOQUE 4 carruseles
     $('#carrusel_1_title').text(data.block_4_carrusel_1_title)
