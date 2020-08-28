@@ -119,7 +119,7 @@
           <div class="col-12 col-md-5 col-lg-5 col-xl-5">
             <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
           </div>
-          <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ">
+          <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ" id="btn-claro-canal">
             <a href="programacion.php"><button class="btn-claro-canal a-text-white-semibold btn-tomato">VER PROGRAMACIÓN</button></a>
           </div>
         </div>
@@ -161,8 +161,8 @@
     <section class="dont-lose-claro">
       <div class="dont-lose-container">
 
-        <h1 class="a-dontLose-claro-title">TIENES QUE VERLO</h1>
-        <h2 class="a-dontLose-claro-subtitle">
+        <h1 class="a-dontLose-claro-title" id="carrusel_1_title">TIENES QUE VERLO</h1>
+        <h2 class="a-dontLose-claro-subtitle" id="carrusel_1_subtitle">
           <!-- ve un <span>adelanto</span> de la programación -->
           ¡No te lo puedes perder!
         </h2>
@@ -170,8 +170,8 @@
           <div class="section-slider" id="dontLose-claro-slider">
           </div>
           <div>
-            <h1 class="a-dontLose-claro-title">Contenido exclusivo</h1>
-            <h2 class="a-dontLose-claro-subtitle">
+            <h1 class="a-dontLose-claro-title" id="carrusel_2_title">Contenido exclusivo</h1>
+            <h2 class="a-dontLose-claro-subtitle" id="carrusel_2_subtitle">
               <!-- ve un <span>adelanto</span> de la programación -->
               Únete y disfruta nuestras producciones propias.
             </h2>

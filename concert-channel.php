@@ -97,7 +97,7 @@
                 <div class="col-12 col-md-5 col-lg-5 col-xl-5">
                     <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-right">
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-right" id="btn-concert-channel">
                     <a href="programacion-concert.php"><button
                             class="btn-magenta a-text-white-semibold btn-concert-channel">VER PROGRAMACIÓN</button></a>
                 </div>
@@ -110,8 +110,8 @@
         </section>
         <section class="next-week-concert">
             <div class="concert-container-header">
-                <h1 class="concert-title">próxima semana</h1>
-                <h2 class="concert-subtitle">ve un <span>adelanto</span> de la programación</h2>
+                <h1 class="concert-title" id="a-next-concert-title">próxima semana</h1>
+                <h2 class="concert-subtitle" id="a-next-concert-subtitle">ve un <span>adelanto</span> de la programación</h2>
             </div>
             <div class="week-videos-container">
                 <video class="promo-video" playsinline autoplay muted controls loop>
@@ -133,8 +133,8 @@
         <section class="concerts">
             <div class="concert-container-header">
 
-                <h1 class="concert-title">imprescindibles</h1>
-                <h2 class="concert-subtitle">Los artistas que sonarán esta semana</h2>
+                <h1 class="concert-title" id="carrusel_1_title">imprescindibles</h1>
+                <h2 class="concert-subtitle"id="carrusel_1_subtitle">Los artistas que sonarán esta semana</h2>
             </div>
             <div class="concerts-videos-container">
                 <div class="section-slider concert-slider" id="concert_channel_carrusel_1"></div>
@@ -143,8 +143,8 @@
         </section>
         <section class="concert-interviews">
             <div class="concert-container-header">
-                <h1 class="concert-title">Por si te lo perdiste</h1>
-                <h2 class="concert-subtitle">Conoce algunas de nuestras leyendas</h2>
+                <h1 class="concert-title"id="carrusel_2_title">Por si te lo perdiste</h1>
+                <h2 class="concert-subtitle"id="carrusel_2_subtitle">Conoce algunas de nuestras leyendas</h2>
             </div>
             <div class="interviews-videos-container">
                 <div class="section-slider concert-slider" id="concert_channel_carrusel_2"></div>

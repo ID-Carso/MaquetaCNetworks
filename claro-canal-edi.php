@@ -122,7 +122,7 @@
           <img id="claro-canal-edi-header" src="./images/General/pencil.svg" alt="" class="pencil">
 
           <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-            <img src="./images/home/tv-1.svg" alt="" class="lading-header-image-claro">
+            <img src="" id="icon_canal_claro" alt="" class="lading-header-image-claro">
           </div>
           <div class="col-12 col-md-5 col-lg-5 col-xl-5">
             <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
@@ -165,9 +165,9 @@
       <div class="dont-lose-container">
         <div
           class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
-          <img src=" ./images/General/pencil.svg" alt="" class="pencil">
-          <h1 class="p-0 a-dontLose-claro-title">TIENES QUE VERLO</h1>
-          <h2 class="p-0 a-dontLose-claro-subtitle">
+          <img id="claro-canal-edi-carrusel-title" src=" ./images/General/pencil.svg" alt="" class="pencil">
+          <h1 class="p-0 a-dontLose-claro-title" id="carrusel_1_title">TIENES QUE VERLO</h1>
+          <h2 class="p-0 a-dontLose-claro-subtitle" id="carrusel_1_subtitle">
             ¡No te lo puedes perder!
           </h2>
         </div>
@@ -175,21 +175,21 @@
 
         <div class="dontLose-video-container">
           <div class="mb-3 position-relative border-t border-l border-r border-b p-2">
-            <img src=" ./images/General/pencil.svg" alt="" class="pencil">
+            <img id="claro-canal-edi-carrusel1" src=" ./images/General/pencil.svg" alt="" class="pencil">
             <div class="section-slider" id="dontLose-claro-sliderEdit">
             </div>
           </div>
 
           <div
             class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
-
-            <h1 class="p-0 a-dontLose-claro-title">Contenido exclusivo</h1>
-            <h2 class="p-0 a-dontLose-claro-subtitle">
+            <img id="claro-canal-edi-carrusel-title2" src=" ./images/General/pencil.svg" alt="" class="pencil">
+            <h1 class="p-0 a-dontLose-claro-title"id="carrusel_2_title">Contenido exclusivo</h1>
+            <h2 class="p-0 a-dontLose-claro-subtitle"id="carrusel_2_subtitle">
               Únete y disfruta nuestras producciones propias.
             </h2>
           </div>
           <div class="position-relative border-t border-l border-r border-b p-2">
-            <img src=" ./images/General/pencil.svg" alt="" class="pencil">
+            <img id="claro-canal-edi-carrusel2" src=" ./images/General/pencil.svg" alt="" class="pencil">
             <div class="section-slider dontLose-claro-slider" id="exlusiveContentClaroSliderEdit">
             </div>
           </div>
@@ -336,6 +336,42 @@ include './views/partials/modal-program.php'
     }
     var json = JSON.stringify(data);
     console.log(data);
+    socketConcert.postMessage(json);
+  });
+
+  $("#claro-canal-edi-carrusel-title").click(function () {
+    let type = "claro-carrusel-title";
+    let data = {
+      type: type
+    }
+    var json = JSON.stringify(data);
+    socketConcert.postMessage(json);
+  });
+
+  $("#claro-canal-edi-carrusel-title2").click(function () {
+    let type = "claro-carrusel-title2";
+    let data = {
+      type: type
+    }
+    var json = JSON.stringify(data);
+    socketConcert.postMessage(json);
+  });
+
+  $("#claro-canal-edi-carrusel1").click(function () {
+    let type = "claro-carrusel1";
+    let data = {
+      type: type
+    }
+    var json = JSON.stringify(data);
+    socketConcert.postMessage(json);
+  });
+
+  $("#claro-canal-edi-carrusel2").click(function () {
+    let type = "claro-carrusel2";
+    let data = {
+      type: type
+    }
+    var json = JSON.stringify(data);
     socketConcert.postMessage(json);
   });
 </script>
