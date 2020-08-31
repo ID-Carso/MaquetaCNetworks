@@ -1113,7 +1113,7 @@ export default class Section {
             </label>
         </div>`;
     }
-
+    
 
     $("#banner-programming-edi").append(divImageHeader);
     $("#banner-programming-edi").not(".slick-initialized").slick({
@@ -1139,7 +1139,7 @@ export default class Section {
       pagination.removeClass("selteal");
       $(this).addClass("selteal");
     });
-   
+ 
   
    
   }

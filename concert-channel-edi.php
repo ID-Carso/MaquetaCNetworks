@@ -64,9 +64,11 @@
                     </div>
                 </a>-->
                 <!--prueba sidebar-->
+                
             </div>
             <button class="invisible-button"></button>
         </div>
+        
         <div class="header">
             <div class="alert-user">
             </div>
@@ -83,8 +85,11 @@
             <?php
             include './views/partials/menu-desktop-black.php'
             ?>
-            <div class="header-slider-cinem" id="banner-concert-channel">
+       
+            <div class="header-slider-cinem mx-auto"  id="banner-concert-channel-edi">
+           
             </div>
+           
             <div class="d-flex position-absolute programming-dots space-do" >
                 <div class=" d-inline-block position-relative programming-slider-dots align-items-center">
                 </div>
@@ -93,6 +98,7 @@
             </div>
             
         </div>
+       
     </header>
     <div class="concert-container">
         <section class="today-concert-channel pt-3">
@@ -220,6 +226,7 @@
     ?>
     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
     <script>
+        
         var socketConcert = new easyXDM.Socket({
             onReady: function () {
                 var hey = 3700;
@@ -313,7 +320,7 @@
                 }
                 console.log(data);
                 var json = JSON.stringify(data);
-                socketCinema.postMessage(json);
+                socketConcert.postMessage(json);
             });
      
     </script>

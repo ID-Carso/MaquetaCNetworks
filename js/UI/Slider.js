@@ -7,6 +7,7 @@ import {
 } from "../date/date.js";
 
 export default class Slider {
+  
   deleteSlider(container) {
     container.slick("unslick");
   }
@@ -20,6 +21,7 @@ export default class Slider {
       centerMode: false,
       arrows: false,
     });
+    
   }
 
   createSectionSliderHome() {
@@ -463,6 +465,8 @@ export default class Slider {
       },
     ];
 */
+
+
     let slideBanner = "";
     let slideBannerClaroCinema = "";
     let slideBannerConcertChannel = "";
@@ -545,7 +549,7 @@ export default class Slider {
 
     }
 
-    $(".header-slider").not(".slick-initialized").slick({
+    $(".header-slider").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       infinite: false,
@@ -557,32 +561,75 @@ export default class Slider {
       autoplay: true,
       autoplaySpeed: 2000,
     });
-    //slider para el de cinema
-    $(".header-slider-cinem").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      infinite: false,
-      dots: true,
-      appendDots: $(".programming-slider-dots"),
-      centerMode: false,
-      arrows: false,
-      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-      customPaging: function (slider, i) {
-        var thumb = $(slider.$slides[i]).data();
-        return (
-          "<p class='a-text-bold-tealblue slider-pagination-item pag ' slide_index=" + (i) + ">" +
-          (i + 1) +
-          "</p> "
-        );
-      },
-    });
-    const pagination = $(".pag");
-    $(".pag").click(function () {
-      pagination.removeClass("selteal");
-      $(this).addClass("selteal");
-    });
+   
+//slider para el de cinema
+$("#banner-claro-cinema-edi").append(slideBannerClaroCinema);
+ $("#banner-claro-cinema-edi").not(".slick-initialized").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  infinite: false,
+  dots: true,
+  appendDots: $(".programming-slider-dots"),
+  centerMode: false,
+  arrows: false,
+  prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+  nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+  customPaging: function (slider, i) {
+    var thumb = $(slider.$slides[i]).data();
+    return (
+      "<p class='a-text-bold-tealblue slider-pagination-item pag ' slide_index=" + (i) + ">" +
+      (i + 1) +
+      "</p> "
+    );
+  },
+});
+ 
+ //slider concert
+$("#banner-concert-channel-edi").append(slideBannerConcertChannel);
+ $("#banner-concert-channel-edi").not(".slick-initialized").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  infinite: false,
+  dots: true,
+  appendDots: $(".programming-slider-dots"),
+  centerMode: false,
+  arrows: false,
+  prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+  nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+  customPaging: function (slider, i) {
+    var thumb = $(slider.$slides[i]).data();
+    return (
+      "<p class='a-text-bold-tealblue slider-pagination-item pag ' slide_index=" + (i) + ">" +
+      (i + 1) +
+      "</p> "
+    );
+  },
+});
+const paginationcinema = $(".pag");
+$(".pag").click(function () {
+  paginationcinema.removeClass("selteal");
+  $(this).addClass("selteal");
+});
+var slideIndexcinema = 3;
+$(".slider-pagination-add").click(function () {
+//Cada vez que se haga click, el contador incrementa
+slideIndexcinema++;
+//Agregamos un slide al slider de programación
+$(".header-slider-cinem").slick(
+"slickAdd",
+`
+<div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
+<label for="image_logo${slideIndexcinema}" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
+<img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+</label>
+</div>
 
+`
+);
+});
+
+
+    
     $(window).resize(function () {
       if (headerSlider.hasClass("slick-initialized")) {
         headerSlider.slick("unslick");
@@ -625,7 +672,7 @@ export default class Slider {
         bannerClaroCinema.html(slideBannerClaroCinema);
         bannerConcertChannel.html(slideBannerConcertChannel);
 
-        $(".headr-slider").slick();
+        $(".header-slider").slick();
       } else if (screen.width >= 1200) {
         slideBanner = "";
         imagesBannerClaroCanal.forEach(function (image) {
