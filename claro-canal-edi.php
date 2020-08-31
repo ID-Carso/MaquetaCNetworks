@@ -374,6 +374,15 @@ include './views/partials/modal-program.php'
     var json = JSON.stringify(data);
     socketConcert.postMessage(json);
   });
+
+  $("#ver-programacion").click(function () {
+    let type = "btn-redirect-header";
+    let data = {
+      type: type
+    }
+    var json = JSON.stringify(data);
+    socketConcert.postMessage(json);
+  });
 </script>
 
 </html>
