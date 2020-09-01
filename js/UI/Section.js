@@ -940,6 +940,7 @@ export default class Section {
     $('#carrusel_1_subtitle').text(data.block_4_carrusel_1_subtitle)
     $('#carrusel_2_title').text(data.block_4_carrusel_2_title)
     $('#carrusel_2_subtitle').text(data.block_4_carrusel_2_subtitle)
+    $('.pencil-carrusel1').attr("chapter_id", data.block_4_carrusel_1_image1.chapter_id);
     let carrusel1 = [];
     let counter = 1;
     while (true) {
@@ -1132,16 +1133,16 @@ export default class Section {
         );
       },
     });
-   
+
     //para dar click
     const pagination = $(".pag");
     $(".pag").click(function () {
       pagination.removeClass("selteal");
       $(this).addClass("selteal");
     });
-   
-  
-   
+
+
+
   }
 
 }

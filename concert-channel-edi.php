@@ -227,23 +227,16 @@
             }
         });
         $(".concert-container").on("click", ".pencil-concert", function () {
-
             let data = {
                 type: $(this).attr("type")
-
             }
-            console.log(data);
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
-
         });
         $(".today-concert-slider-edit").on("click", ".pencil-slider", function () {
-
             let data = {
                 type: $(this).attr("type")
-
             }
-            console.log(data);
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
         });
@@ -253,7 +246,6 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
         });
@@ -264,7 +256,6 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
         });
@@ -273,7 +264,6 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
         });
@@ -282,26 +272,22 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
         });
         $(".concerts-videos-container").on("click", ".pencil-carrusel1", function () {
             let data = {
-                type: $(this).attr("type")
-
+                type: $(this).attr("type"),
+                id: $(this).attr("chapter_id")
             }
-            console.log(data);
+
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
         });
         $(".interviews-videos-container").on("click", ".pencil-carrusel2", function () {
-
             let data = {
                 type: $(this).attr("type")
-
             }
-            console.log(data);
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
         });

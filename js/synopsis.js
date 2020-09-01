@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   let programSynopsis = JSON.parse(localStorage.getItem("synopsis"));
 
   let synopsisButtonFavorite = $(".synopsis-add");
@@ -13,7 +13,7 @@ $(document).ready(function() {
     localStorage.getItem("favoritesClaroCinema")
   );
   if (programSynopsis) {
-    console.log("Sinópsis");
+
     $(".synopsis-title").text(programSynopsis.title);
     synopsisButtonFavorite.attr("_id", programSynopsis.chapter_id);
     $(".synopsis-description").text(programSynopsis.sinopsis);
@@ -21,7 +21,6 @@ $(document).ready(function() {
     let dropdownCountryElement = "";
     let dropdownCountries = "";
     let programmingLength = Object.values(programSynopsis.programing).length;
-    console.log(programSynopsis.programing);
     for (let i = 0; i < programmingLength; i++) {
       let horario = Object.values(programSynopsis.programing)[i].horario;
       let country = Object.values(programSynopsis.programing)[i].paises;

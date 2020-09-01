@@ -99,7 +99,7 @@ let arrayUrl = url.split("?");
 let data = {
   token: arrayUrl[1],
 };
-console.log(data);
+
 if (arrayUrl[0] == url2) {
   validateToken(data);
 }
@@ -142,7 +142,7 @@ if (day && month && year) {
 $(document).ready(function () {
 
   let dateUTC = new Date();
-  console.log(dateUTC.getUTCHours());
+
 
   /* Banner*/
   let sliderBanner = new Slider();
@@ -1348,7 +1348,7 @@ $(document).ready(function () {
 
   let actual_landing = $('#actual_landing').val();
   if (actual_landing) {
-    console.log("estas en: " + actual_landing);
+
     getMetaKeys(actual_landing);
   }
 
@@ -1365,7 +1365,6 @@ $(document).ready(function () {
       arrows: true,
       prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
       nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-
       responsive: [{
           breakpoint: 768,
           settings: {
@@ -2198,4 +2197,3 @@ $(".slider-pagination-add").click(function () {
   `
   );
 });
-
