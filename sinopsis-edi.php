@@ -88,7 +88,7 @@
                               class=" cursor-pointer add-photo " />
                           <span class="a-text-bold-warm text-plus mt-3">1000px X 342px</span>
                           <img src="./images/General/image-synopsis-carrusel.jpg"
-                              class="w-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                              class="w-100 cursor-pointer image-cover prev-image-program h-100 thumbnail-image-program" />
                       </label>
                   </div>
                   <div class="bor thumbnail-image-program position-relative " style="height:470px">
@@ -154,15 +154,15 @@
 
             <div class="no-gutters">
                 <div class="col-11 col-md-12 col-lg-10 mx-auto">
-                    <h1 class="synopsis-section-title d-flex justify-content-center">sinopsis</h1>
+                    <h1 class="synopsis-section-title d-flex justify-content-center">sinópsis</h1>
 
                     <div class="synopsis-body-container no-gutters">
                         <div class="col-md-7 col-lg-6 mr-4 synopsis-main-image border-t border-l border-r border-b position-relative d-inline-block">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-menu">
+                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-main"type="synopsis-main-image">
                         <img src="./images/sinopsis/images.jpeg" alt="" class="w-100">
                         </div>
                         <div class="col-md-7 col-lg-6 mx-sm-auto mx-md-auto synopsis-description-container border-t border-l border-r border-b position-relative ">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-menu">
+                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-description" type="synopsis-description-container">
                             <div>
                                 <h1 class="synopsis-title"></h1>
                                 <p class="synopsis-text synopsis-description"></p>
@@ -191,14 +191,14 @@
                     <div class="no-gutters">
                         <div class="col-md-10 col-lg-12 mx-auto">
                             <div class="synopsis-images-container no-gutters border-t border-l border-r border-b position-relative p-3">
-                            <img src="./images/General/pencil.svg" alt="" class="pencil pencil-menu">
+                            <img src="./images/General/pencil.svg" alt="" class="pencil pencil-images" type="synopsis-images-container">
                             <img src="./images/sinopsis/images.jpeg" alt="" class="col-md-6 col-lg-4 synopsis-image">
                                 <img src="./images/sinopsis/images.jpeg" alt="" class="col-md-6 col-lg-4 synopsis-image">
                                 <img src="./images/sinopsis/images.jpeg" alt="" class="col-lg-4 synopsis-image">
                             </div>
                             <div class="">
                                 <div class="synopsis-details-container border-t border-l border-r border-b position-relative p-3">
-                                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-menu">
+                                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-details" type="synopsis-datails-container">
                                     <div class="synopsis-rating-container">
                                         <p class="synopsis-text synopsis-detail-text">Estados Unidos</p>
                                         <p class="synopsis-text synopsis-detail-text">2013</p>
@@ -644,5 +644,76 @@
     include './views/partials/modal-program.php'
     ?>
 </body>
+<script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
+<script>
+  
+  var socketSinopsis = new easyXDM.Socket({
+    onReady: function () {
+      var hey = 2500;
+      socketSinopsis.postMessage(hey)
+    }
+  });
+  $('.synopsis-header').on("click", ".slider-pagination-item", function () {
+                let type = "slider-pagination";
+                let data = {
+                    
+                    type: type
+                }
+                console.log(data);
+                var json = JSON.stringify(data);
+                socketSinopsis.postMessage(json);
+            });
+ 
+  $(".synopsis-main-image").on("click", ".pencil-main", function () {
+          
+          let data = {
+                type: $(this).attr("type")
+               
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketSinopsis.postMessage(json);
+         });
+         $(".synopsis-description-container").on("click", ".pencil-description", function () {
+          
+          let data = {
+                type: $(this).attr("type")
+               
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketSinopsis.postMessage(json);
+         });
+         $(".synopsis-images-container").on("click", ".pencil-images", function () {
+          
+          let data = {
+                type: $(this).attr("type")
+               
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketSinopsis.postMessage(json);
+         });
+         $(".synopsis-details-container").on("click", ".pencil-details", function () {
+          
+          let data = {
+                type: $(this).attr("type")
+               
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketSinopsis.postMessage(json);
+         });
+         $(".synopsis-details-container").on("click", ".pencil-details", function () {
+          
+          let data = {
+                type: $(this).attr("type")
+               
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketSinopsis.postMessage(json);
+         });
 
+</script>
 </html>

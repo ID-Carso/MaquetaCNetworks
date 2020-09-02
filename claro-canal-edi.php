@@ -302,7 +302,7 @@ include './views/partials/modal-program.php'
 <script>
   var socketClaro = new easyXDM.Socket({
     onReady: function () {
-      var hey = 3500;
+      var hey = 2500;
       socketClaro.postMessage(hey)
     }
   });
