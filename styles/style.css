@@ -4849,6 +4849,9 @@ input[type="radio"]:checked + .mujer-estilo {
  div .header-slider-cinem .slick-track{
   margin-bottom: 0px !important;
 }
+div #banner-concert-channel-edi .slick-track{
+  margin-bottom: 0px !important;
+}
 
 .concert-header-slider .slick-list {
   padding: 0px !important;

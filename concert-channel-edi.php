@@ -64,9 +64,11 @@
                     </div>
                 </a>-->
                 <!--prueba sidebar-->
+
             </div>
             <button class="invisible-button"></button>
         </div>
+
         <div class="header">
             <div class="alert-user">
             </div>
@@ -83,8 +85,11 @@
             <?php
             include './views/partials/menu-desktop-black.php'
             ?>
-            <div class="header-slider-cinem" id="banner-concert-channel">
+
+            <div class="header-slider-cinem mx-auto" id="banner-concert-channel-edi">
+
             </div>
+
             <div class="d-flex position-absolute programming-dots space-do">
                 <div class=" d-inline-block position-relative programming-slider-dots align-items-center">
                 </div>
@@ -93,6 +98,7 @@
             </div>
 
         </div>
+
     </header>
     <div class="concert-container">
         <section class="today-concert-channel pt-3">
@@ -251,11 +257,13 @@
         });
 
 
+
         $(".concert-container-header").on("click", ".pencil-header", function () {
             let data = {
                 type: $(this).attr("type")
 
             }
+            console.log(data);
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
         });
@@ -264,6 +272,7 @@
                 type: $(this).attr("type")
 
             }
+            console.log(data);
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
         });
@@ -272,22 +281,35 @@
                 type: $(this).attr("type")
 
             }
+            console.log(data);
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
         });
         $(".concerts-videos-container").on("click", ".pencil-carrusel1", function () {
             let data = {
-                type: $(this).attr("type"),
-                id: $(this).attr("chapter_id")
-            }
+                type: $(this).attr("type")
 
+            }
+            console.log(data);
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
         });
         $(".interviews-videos-container").on("click", ".pencil-carrusel2", function () {
             let data = {
                 type: $(this).attr("type")
+
             }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketConcert.postMessage(json);
+        });
+        $('.concert-channel-header').on("click", ".slider-pagination-item", function () {
+            let type = "slider-pagination";
+            let data = {
+
+                type: type
+            }
+            console.log(data);
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
         });

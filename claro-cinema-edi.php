@@ -100,7 +100,7 @@
             </div>
             <img src="./images/claro-canal/claro-canal-logo.svg" alt="" />
           </div>-->
-      <div class=" header-slider-cinem" id="banner-claro-cinema">
+      <div class=" header-slider-cinem" id="banner-claro-cinema-edi">
             </div>
             <div class="d-flex position-absolute programming-dots space-do" style="top:70%;">
                 <div class=" d-inline-block position-relative programming-slider-dots align-items-center">

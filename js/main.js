@@ -1586,20 +1586,13 @@ $(document).ready(function () {
   createProgramacionSlider();
 
   let date = new Date();
-  let day = date.getDate();
-  let month = date.getMonth() + 1;
+  let day = ("0" + date.getDate()).slice(-2);
+  let month = ("0" + (date.getMonth() + 1)).slice(-2);
   let year = date.getFullYear();
   let hour = date.getHours();
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
 
-  if (day < 10) {
-    day = "0" + date.getDate();
-  }
-
-  if (month < 10) {
-    month = "0" + (date.getMonth() + 1);
-  }
 
   let currentDate = `${year}-${month}-${day}`;
   let currentTime = `${hour}:${minutes}`;

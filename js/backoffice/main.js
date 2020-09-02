@@ -38,55 +38,55 @@ $(document).ready(function () {
             prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
             nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
             responsive: [{
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: false,
-                    autoplaySpeed: 2000,
-                    centerMode: true,
-                    infinite: true,
-                    arrows: false,
-                    dots: true,
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: false,
+                        autoplaySpeed: 2000,
+                        centerMode: true,
+                        infinite: true,
+                        arrows: false,
+                        dots: true,
+                    },
                 },
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true,
-                    centerMode: false,
-                    arrows: false,
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true,
+                        centerMode: false,
+                        arrows: false,
+                    },
                 },
-            },
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true,
-                    centerMode: false,
-                    arrows: true,
-                    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-                    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true,
+                        centerMode: false,
+                        arrows: true,
+                        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+                        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+                    },
                 },
-            },
-            {
-                breakpoint: 1900,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true,
-                    centerMode: false,
-                    arrows: true,
-                    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-                    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+                {
+                    breakpoint: 1900,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true,
+                        centerMode: false,
+                        arrows: true,
+                        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+                        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+                    },
                 },
-            },
             ],
         });
     }
@@ -355,6 +355,7 @@ $(document).ready(function () {
             });
 
             //Insertamos todos los programas
+
             claroCotentProgramacionGeneralEdit.html(programCanalClaroEdit);
             $('.concert-content-edit').html(programConcertChannelEdit);
             $('.cinema-content-edit').html(programClaroCinemaEdit);
