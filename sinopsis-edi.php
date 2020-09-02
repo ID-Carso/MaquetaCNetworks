@@ -225,29 +225,29 @@
                                     <img src="./images/General/gmt.svg" alt="gmt" class="mb-2">
                                 </div>
                                 <div class="contenedor-columna centro ">
-                                    <span class="a-text-white-semibold h3 mr-3">Hora</span>
-                                    <img src="./images/General/reloj.svg" alt="time" class="mb-2">>
+                                    <span class="a-text-white-semibold h3 ml-3">Hora</span>
+                                    <img src="./images/General/reloj.svg" alt="time" class="mb-2 ml-2">>
                                 </div>
                                 <div class="contenedor-columna centro ">
-                                    <span class="a-text-white-semibold h3">L</span>
+                                    <span class="a-text-white-semibold h3 ml-3">L</span>
                                 </div>
                                 <div class="contenedor-columna centro ">
-                                    <span class="a-text-white-semibold h3">M</span>
+                                    <span class="a-text-white-semibold h3 ml-3">M</span>
                                 </div>
                                 <div class="contenedor-columna centro ">
-                                    <span class="a-text-white-semibold  h3">M</span>
+                                    <span class="a-text-white-semibold  h3 ml-3">M</span>
                                 </div>
                                 <div class="contenedor-columna centro ">
-                                    <span class="a-text-white-semibold  h3">J</span>
+                                    <span class="a-text-white-semibold  h3 ml-3">J</span>
                                 </div>
                                 <div class="contenedor-columna centro ">
-                                    <span class="a-text-white-semibold  h3">V</span>
+                                    <span class="a-text-white-semibold  h3 ml-3">V</span>
                                 </div>
                                 <div class="contenedor-columna centro ">
-                                    <span class="a-text-white-semibold  h3">S</span>
+                                    <span class="a-text-white-semibold  h3 ml-3">S</span>
                                 </div>
                                 <div class="contenedor-columna centro ">
-                                    <span class="a-text-white-semibold  h3">D</span>
+                                    <span class="a-text-white-semibold  h3 ml-3">D</span>
                                 </div>
                             </div>
                             <div class="contenedor-fila mt-3">
@@ -649,7 +649,7 @@
   
   var socketSinopsis = new easyXDM.Socket({
     onReady: function () {
-      var hey = 2500;
+      var hey = 2700;
       socketSinopsis.postMessage(hey)
     }
   });
