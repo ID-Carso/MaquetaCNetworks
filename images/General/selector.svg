@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="34" viewBox="0 0 16 34">
+    <defs>
+        <radialGradient id="erm3t0tpka" cx="-28.646%" cy="38.923%" r="70.709%" fx="-28.646%" fy="38.923%" gradientTransform="matrix(.598 .08422 -.01421 .28019 -.11 .304)">
+            <stop offset="0%"/>
+            <stop offset="100%" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="u4v88kaskc" cx="34.762%" cy="38.551%" r="33.567%" fx="34.762%" fy="38.551%" gradientTransform="matrix(.68414 .67325 -.72935 .63151 .391 -.092)">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#0097A9"/>
+        </radialGradient>
+        <linearGradient id="ys6i778nrb" x1="43.259%" x2="59.7%" y1="45.137%" y2="48.255%">
+            <stop offset="0%" stop-color="#EEE"/>
+            <stop offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#erm3t0tpka)" d="M59.489 40.263c2.21-8.477-8.977-19.169-24.987-23.881-16.01-4.712-30.781-1.66-32.991 6.817-2.21 8.476 8.977 19.168 24.987 23.88 16.01 4.713 30.781 1.66 32.991-6.816z"/>
+        <path fill="url(#ys6i778nrb)" d="M8.207 9.675l1.177.607c.12.063.17.21.109.333L2.425 24.88c-.061.124-.211.175-.335.113-.001 0-.003 0-.004-.002L.91 24.383c-.122-.062-.17-.21-.11-.333L7.868 9.786c.061-.124.211-.175.335-.113.001 0 .003 0 .004.002z"/>
+        <ellipse cx="10" cy="6.5" fill="url(#u4v88kaskc)" rx="6" ry="6.5"/>
+    </g>
+</svg>

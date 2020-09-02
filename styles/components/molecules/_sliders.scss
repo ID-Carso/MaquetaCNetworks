@@ -365,6 +365,10 @@ div #banner-concert-channel-edi .slick-track{
   width: 100% !important;
   height: 522.71px !important;
 }
+.header-slider-sinopsis{
+  width: 100% !important;
+  height: 475px !important;
+}
 .programming-slider-dots .slick-dots {
   position: initial;
   list-style: none;
@@ -382,11 +386,18 @@ div #banner-concert-channel-edi .slick-track{
   height: 522.71px !important;
   margin: 0px !important;
 }
+.header-slider-sinopsis .slick-slide {
+  height: 475px !important;
+  margin: 0px !important;
 
+  .header-slider-sinopsis.slick-slide div {
+    height: 100% !important;
+  }
+}
 .program-image-slider .slick-slide div {
   height: 100% !important;
 }
-
+ 
 .programming-slider-dots .slick-dots li {
   position: relative;
   display: inline-block;
