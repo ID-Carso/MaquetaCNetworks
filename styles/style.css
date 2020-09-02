@@ -262,6 +262,11 @@ h6 {
   font-family: "Montserrat-Bold";
 }
 
+.a-text-bold-cool-grey {
+  color: #a7a8aa;
+  font-family: "Montserrat-Bold";
+}
+
 .a-text-bold-tealblue {
   color: #0097a9;
   font-family: "Montserrat-SemiBold";
@@ -4739,7 +4744,14 @@ input[type="radio"]:checked + .mujer-estilo {
 .header-slider {
   width: 100%;
   padding-bottom: 0px;
+}
 
+div .header-slider-cinem .slick-track {
+  margin-bottom: 0px !important;
+}
+
+div #banner-concert-channel-edi .slick-track {
+  margin-bottom: 0px !important;
 }
 
 .slick-slider .slick-dots li button:before {
@@ -4845,12 +4857,6 @@ input[type="radio"]:checked + .mujer-estilo {
 .concert-header-slider .slick-track {
   margin-bottom: 0px !important;
   height: 100%;
-}
- div .header-slider-cinem .slick-track{
-  margin-bottom: 0px !important;
-}
-div #banner-concert-channel-edi .slick-track{
-  margin-bottom: 0px !important;
 }
 
 .concert-header-slider .slick-list {
@@ -5063,12 +5069,17 @@ div #banner-concert-channel-edi .slick-track{
 .programming-dots {
   border-radius: 18px !important;
   background: rgba(255, 255, 255, 0.8) !important;
-  top: 75%;
+  top: 65%;
 }
 
 .program-image-slider {
   width: 100% !important;
   height: 522.71px !important;
+}
+
+.header-slider-sinopsis {
+  width: 100% !important;
+  height: 475px !important;
 }
 
 .programming-slider-dots .slick-dots {
@@ -5087,6 +5098,15 @@ div #banner-concert-channel-edi .slick-track{
 .program-image-slider .slick-slide {
   height: 522.71px !important;
   margin: 0px !important;
+}
+
+.header-slider-sinopsis .slick-slide {
+  height: 475px !important;
+  margin: 0px !important;
+}
+
+.header-slider-sinopsis .slick-slide .header-slider-sinopsis.slick-slide div {
+  height: 100% !important;
 }
 
 .program-image-slider .slick-slide div {
@@ -5641,6 +5661,64 @@ div #banner-concert-channel-edi .slick-track{
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 15px;
+}
+
+.content-table {
+  display: table;
+}
+
+.contenedor-fila {
+  display: table-row;
+}
+
+.contenedor-columna {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 4px;
+}
+
+.container-paises {
+  width: 201px;
+  height: 202px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 3px 0 #4e4e4f;
+          box-shadow: 1px 1px 3px 0 #4e4e4f;
+  background-color: #161616;
+}
+
+.container-hora {
+  width: 161px;
+  height: 93px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 3px 0 #4e4e4f;
+          box-shadow: 1px 1px 3px 0 #4e4e4f;
+  background-color: #161616;
+}
+
+.container-days {
+  width: 59px;
+  height: 93px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 3px 0 #4e4e4f;
+          box-shadow: 1px 1px 3px 0 #4e4e4f;
+  background-color: #161616;
+}
+
+.container-days-inac {
+  width: 59px;
+  height: 93px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 3px 0 #282828;
+          box-shadow: 1px 1px 3px 0 #282828;
+  background-color: #0c0c0c;
 }
 
 .schedule-poster {

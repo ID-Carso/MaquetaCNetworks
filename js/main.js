@@ -2147,8 +2147,8 @@ window.onresize = function () {
   doit = setTimeout(resizedw, 100);
 };
 
-//para slider de programacion en editable
-/* $(".program-image-slider").slick({
+//para slider de sinopsis en editable
+ $(".header-slider-sinopsis").slick({
   slidesToShow: 1,
   dots: true,
   appendDots: $(".programming-slider-dots"),
@@ -2159,12 +2159,12 @@ window.onresize = function () {
   customPaging: function (slider, i) {
     var thumb = $(slider.$slides[i]).data();
     return (
-      " <p class='a-text-bold-tealblue slider-pagination-item pag '> " +
+      " <p class='a-text-bold-tealblue slider-pagination-item pag mr-2 '> " +
       (i + 1) +
       "</p> "
     );
   },
-}); */
+}); 
 
 //para dar click
 const pagination = $(".pag");

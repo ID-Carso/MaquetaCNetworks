@@ -303,3 +303,47 @@
   justify-content: center;
   border-radius: 15px;
 }
+.content-table {
+  display: table;
+}
+.contenedor-fila {
+  display: table-row;
+}
+.contenedor-columna {
+  display: table-cell;
+ 
+  vertical-align: middle;
+  padding: 4px;
+}
+.container-paises{
+  width: 201px;
+  height: 202px;
+  object-fit: contain;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px 0 $charcoal-grey;
+  background-color:$black-four;
+}
+.container-hora{
+  width: 161px;
+  height: 93px;
+  object-fit: contain;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px 0 $charcoal-grey;
+  background-color:$black-four;
+}
+.container-days{
+  width: 59px;
+  height: 93px;
+  object-fit: contain;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px 0 $charcoal-grey;
+  background-color:$black-four;
+}
+.container-days-inac{
+  width: 59px;
+  height: 93px;
+  object-fit: contain;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px 0 $scheduleHourColor;
+  background-color: $black-five;
+}

@@ -108,9 +108,17 @@
           </div>
           <img src="./images/claro-canal/claro-canal-logo.svg" alt="" />
         </div>-->
-      <div class="header-slider" id="banner-claro-canal">
-
-      </div>
+        <div class="header-slider-cinem mx-auto"  id="banner-claro-canal-edi">
+           
+           </div>
+          
+           <div class="d-flex position-absolute programming-dots space-do" >
+               <div class=" d-inline-block position-relative programming-slider-dots align-items-center">
+               </div>
+               <img src="./images/General/plus.svg" alt="" class="cursor-pointer slider-pagination-add mr-3"
+                   style="width:42px">
+           </div>
+     
     </div>
 
   </header>
@@ -200,9 +208,9 @@
 
     </section>
     <?php
-    include 'advertising-section.php'
+   // include 'advertising-section.php'
     ?>
-    <div class="">
+   <!-- <div class="">
       <div class="row no-gutters">
         <div class="col-12">
           <div class=" d-flex justify-content-center pt-5 ">
@@ -234,14 +242,14 @@
         </div>
       </div>
     </div>
-    <div class="cclaro-list-links-footer">
+    <div class="cclaro-list-links-footer">-->
       <?php
-      include './views/partials/list-links-footer.php';
+   //   include './views/partials/list-links-footer.php';
       ?>
     </div>
   </main>
   <?php
-  include 'footer.php'
+  //include 'footer.php'
   ?>
 
 </body>
@@ -254,8 +262,13 @@ include './views/partials/modal-favorites.php'
 include './views/partials/modal-program.php'
 ?>
 
+<<<<<<< HEAD
 <!--<script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
 <script>
+=======
+
+<!--<script>
+>>>>>>> 9212b8b69ed3118cc2beb7c9851e0e3ef43ea8b2
   var socket = new easyXDM.Socket({
     onReady: function () {
 
@@ -292,10 +305,10 @@ include './views/partials/modal-program.php'
 
 <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
 <script>
-  var socketConcert = new easyXDM.Socket({
+  var socketClaro = new easyXDM.Socket({
     onReady: function () {
-      var hey = 11000;
-      socketConcert.postMessage(hey)
+      var hey = 2500;
+      socketClaro.postMessage(hey)
     }
   });
 
@@ -305,8 +318,8 @@ include './views/partials/modal-program.php'
       type: type
     }
     var json = JSON.stringify(data);
-    console.log(data);
-    socketConcert.postMessage(json);
+   
+    socketClaro.postMessage(json);
   });
 
   $("#claro-canal-edi-programacion").click(function () {
@@ -315,8 +328,8 @@ include './views/partials/modal-program.php'
       type: type
     }
     var json = JSON.stringify(data);
-    console.log(data);
-    socketConcert.postMessage(json);
+   
+    socketClaro.postMessage(json);
   });
 
   $("#claro-canal-edi-title").click(function () {
@@ -325,8 +338,8 @@ include './views/partials/modal-program.php'
       type: type
     }
     var json = JSON.stringify(data);
-    console.log(data);
-    socketConcert.postMessage(json);
+  
+    socketClaro.postMessage(json);
   });
 
   $("#claro-canal-edi-promo").click(function () {
@@ -335,8 +348,8 @@ include './views/partials/modal-program.php'
       type: type
     }
     var json = JSON.stringify(data);
-    console.log(data);
-    socketConcert.postMessage(json);
+  
+    socketClaro.postMessage(json);
   });
 
   $("#claro-canal-edi-carrusel-title").click(function () {
@@ -345,7 +358,7 @@ include './views/partials/modal-program.php'
       type: type
     }
     var json = JSON.stringify(data);
-    socketConcert.postMessage(json);
+    socketClaro.postMessage(json);
   });
 
   $("#claro-canal-edi-carrusel-title2").click(function () {
@@ -354,7 +367,7 @@ include './views/partials/modal-program.php'
       type: type
     }
     var json = JSON.stringify(data);
-    socketConcert.postMessage(json);
+    socketClaro.postMessage(json);
   });
 
   $("#claro-canal-edi-carrusel1").click(function () {
@@ -363,7 +376,7 @@ include './views/partials/modal-program.php'
       type: type
     }
     var json = JSON.stringify(data);
-    socketConcert.postMessage(json);
+    socketClaro.postMessage(json);
   });
 
   $("#claro-canal-edi-carrusel2").click(function () {
@@ -372,7 +385,7 @@ include './views/partials/modal-program.php'
       type: type
     }
     var json = JSON.stringify(data);
-    socketConcert.postMessage(json);
+    socketClaro.postMessage(json);
   });
 
   $("#ver-programacion").click(function () {
@@ -381,8 +394,18 @@ include './views/partials/modal-program.php'
       type: type
     }
     var json = JSON.stringify(data);
-    socketConcert.postMessage(json);
+    socketClaro.postMessage(json);
   });
+  $('.claro-canal-header').on("click", ".slider-pagination-item", function () {
+                let type = "slider-pagination";
+                let data = {
+                    
+                    type: type
+                }
+                console.log(data);
+                var json = JSON.stringify(data);
+                socketClaro.postMessage(json);
+            });
 </script>
 
 </html>
