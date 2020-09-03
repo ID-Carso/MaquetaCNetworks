@@ -476,9 +476,9 @@ export default class Slider {
     let bannerConcertChannel = $("#banner-concert-channel");
     let headerSlider = $(".header-slider");
     //$(".header-slider").slick("unslick");
-    if (headerSlider.hasClass("slick-initialized")) {
+   /* if (headerSlider.hasClass("slick-initialized")) {
       headerSlider.unslick();
-    }
+    }*/
     if (screen.width < 768) {
       $(".claro-image-banner-1").attr("src", "");
       $(".concert-image-banner-1").attr("src", "");
