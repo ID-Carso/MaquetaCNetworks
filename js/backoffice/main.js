@@ -1,173 +1,178 @@
 $(document).ready(function () {
+  let date = new Date();
+  let day = date.getDate();
+  let month = date.getMonth() + 1;
+  let year = date.getFullYear();
+  let hour = date.getHours();
+  let minutes = date.getMinutes();
+  let seconds = date.getSeconds();
 
-    let date = new Date();
-    let day = date.getDate();
-    let month = date.getMonth() + 1;
-    let year = date.getFullYear();
-    let hour = date.getHours();
-    let minutes = date.getMinutes();
-    let seconds = date.getSeconds()
+  //Si el número de día es menor a 10, le agregamos un cero para tener el formato DD
+  if (day < 10) {
+    day = "0" + date.getDate();
+  }
+  //Si el número del mes es menor a 10, le agregamos un cero para tener el formato MM
+  if (month < 10) {
+    month = "0" + (date.getMonth() + 1);
+  }
 
-    //Si el número de día es menor a 10, le agregamos un cero para tener el formato DD
-    if (day < 10) {
-        day = "0" + date.getDate();
-    }
-    //Si el número del mes es menor a 10, le agregamos un cero para tener el formato MM
-    if (month < 10) {
-        month = "0" + (date.getMonth() + 1);
-    }
+  //Fecha actual en formato YYYY-MM-DD
+  let currentDate = `${year}-${month}-${day}`;
+  //Hora actual en HH:MM
+  let currentTime = `${hour}:${minutes}`;
+  //Traer programas del día actual en GTM
+  let data = {
+    date: currentDate,
+    function: "getProgramsGMT",
+  };
 
-    //Fecha actual en formato YYYY-MM-DD
-    let currentDate = `${year}-${month}-${day}`;
-    //Hora actual en HH:MM
-    let currentTime = `${hour}:${minutes}`;
-    //Traer programas del día actual en GTM
-    let data = {
-        date: currentDate,
-        function: "getProgramsGMT",
-    };
-
-    function createTvSlider(container) {
-        container.slick({
-            slidesToShow: 5,
+  function createTvSlider(container) {
+    container.slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      infinite: true,
+      dots: true,
+      centerMode: false,
+      arrows: true,
+      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            centerMode: true,
+            infinite: true,
+            arrows: false,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+            centerMode: false,
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-            responsive: [{
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        autoplay: false,
-                        autoplaySpeed: 2000,
-                        centerMode: true,
-                        infinite: true,
-                        arrows: false,
-                        dots: true,
-                    },
-                },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true,
-                        centerMode: false,
-                        arrows: false,
-                    },
-                },
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true,
-                        centerMode: false,
-                        arrows: true,
-                        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-                        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-                    },
-                },
-                {
-                    breakpoint: 1900,
-                    settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true,
-                        centerMode: false,
-                        arrows: true,
-                        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-                        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-                    },
-                },
-            ],
-        });
-    }
-    $.ajax({
-        type: "POST",
-        data: data,
-        url: "./adapters/program.php",
-        success: function (result) {
+            prevArrow:
+              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow:
+              '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
+        },
+        {
+          breakpoint: 1900,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+            centerMode: false,
+            arrows: true,
+            prevArrow:
+              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow:
+              '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
+        },
+      ],
+    });
+  }
+  $.ajax({
+    type: "POST",
+    data: data,
+    url: "./adapters/program.php",
+    success: function (result) {
+      let json = JSON.parse(result);
+      console.log(json);
+      let sliderCanalClarLanding = $(".today-claro-slider-edit");
+      let sliderConcertChannelLanding = $(".today-concert-slider-edit");
+      //Contenedor para insertar todos los programas
+      let claroCotentProgramacionGeneralEdit = $(".claro-content-edit");
+      //Programación de los diferentes landings
+      let programingCanalClaro = json.data[0].programing[0].programs;
+      let programingConcertChannel = json.data[1].programing[0].programs;
+      let programingClaroCinema = json.data[2].programing[0].programs;
+      let programLandingCanalClaro = "";
+      let programLandingConcertChannel = "";
+      let programCanalClaroEdit = "";
+      let programConcertChannelEdit = "";
+      let programClaroCinemaEdit = "";
 
-            let json = JSON.parse(result);
-            console.log(json);
-            let sliderCanalClarLanding = $('.today-claro-slider-edit');
-            let sliderConcertChannelLanding = $('.today-concert-slider-edit');
-            //Contenedor para insertar todos los programas
-            let claroCotentProgramacionGeneralEdit = $(".claro-content-edit");
-            //Programación de los diferentes landings
-            let programingCanalClaro = json.data[0].programing[0].programs;
-            let programingConcertChannel = json.data[1].programing[0].programs;
-            let programingClaroCinema = json.data[2].programing[0].programs;
-            let programLandingCanalClaro = "";
-            let programLandingConcertChannel = "";
-            let programCanalClaroEdit = "";
-            let programConcertChannelEdit = "";
-            let programClaroCinemaEdit = "";
-
-            sliderCanalClarLanding.slick('unslick');
-            sliderConcertChannelLanding.slick('unslick');
-            //Canal claro GMT
-            programingCanalClaro.forEach((program, index) => {
-                //Landing de canal claro
-                if (index == 0) {
-                    programLandingCanalClaro += `
-                    <div class="poster">
-                        <div class="poster-body">
-                            <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                            <div class="thumbnail-body" _id="${program.chapter_id}">
-                                <div class="thumbnail">
-                                    <img src="${program.image}" alt="">
-                                </div>
-                                <div class="a-claro-rectangle thumbnail-info-title">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">${program.chapter_title}</p>
-                                    </div>
+      sliderCanalClarLanding.slick("unslick");
+      sliderConcertChannelLanding.slick("unslick");
+      //Canal claro GMT
+      programingCanalClaro.forEach((program, index) => {
+        //Landing de canal claro
+        if (index == 0) {
+          programLandingCanalClaro += `
+                <div class="poster">
+                    <div class="poster-body">
+                        <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                        <div class="thumbnail-body" _id="${program.chapter_id}">
+                            <div class="thumbnail">
+                                <img src="${program.image}" alt="">
+                            </div>
+                            <div class="a-claro-rectangle thumbnail-info-title">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">${program.chapter_title}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
                     `;
-                } else {
-                    programLandingCanalClaro += `
-                    <div class="poster">
-                        <div class="poster-body">
-                            <div class="showtime-container justify-content-between">
-                                <p class="a-programming-text">${program.time}</p>
-                                <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
-                            </div>
+        } else {
+          programLandingCanalClaro += `
+                <div class="poster">
+                    <div class="poster-body">
+                        <div class="showtime-container justify-content-between">
+                            <p class="a-programming-text">${program.time}</p>
+                            <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
+                        </div>
 
-                            <div class="thumbnail-body" _id="${program.chapter_id}">
-                                <div class="thumbnail">
-                                    <img src="${program.image}" alt="">
-                                </div>
-                                <div class="a-claro-rectangle thumbnail-info-title">
-                                    <div class="poster-title-margin">
-                                        <p class="a-poster-text-white">${program.chapter_title}</p>
-                                    </div>
+                        <div class="thumbnail-body" _id="${program.chapter_id}">
+                            <div class="thumbnail">
+                                <img src="${program.image}" alt="">
+                            </div>
+                            <div class="a-claro-rectangle thumbnail-info-title">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">${program.chapter_title}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    `
-                }
-                //Programación general
-                let synopsis = "";
-                if (program.sinopsis.length > 150) {
-                    synopsis = program.sinopsis.substr(0, 150) + "...";
-                } else {
-                    synopsis = program.sinopsis;
-                }
-                programCanalClaroEdit += `
+                </div>
+                    `;
+        }
+        //Programación general
+        let synopsis = "";
+        if (program.sinopsis.length > 150) {
+          synopsis = program.sinopsis.substr(0, 150) + "...";
+        } else {
+          synopsis = program.sinopsis;
+        }
+        programCanalClaroEdit += `
         <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
-        <img src="./images/General/pencil.svg" alt="" class="pencil edit-program-pencil" chapter_id="${program.chapter_id}">
+        <img src="./images/General/pencil.svg" alt="" class="pencil edit-program-pencil" chapter_id="${
+          program.chapter_id
+        }">
         <div class="schedule-container col-12 p-5 mx-auto mt-0">
             <p class="schedule-title  a-text-plus a-text-black-brown-two">
                 ${program.chapter_title}
@@ -176,7 +181,9 @@ $(document).ready(function () {
                 <div class="schedule-poster">
                     <div class="poster">
                         <div class="thumbnail-edit" _id="${program.chapter_id}">
-                            <img src="${program.image}" alt="${program.chapter_title}" class="w-100">
+                            <img src="${program.image}" alt="${
+          program.chapter_title
+        }" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -199,7 +206,9 @@ $(document).ready(function () {
                         </div>
                     </div>
                     <div>
-                        <span class="schedule-description s1" id="synopsis-edi">${program.sinopsis.substr(0, 150) + "..."}</span>
+                        <span class="schedule-description s1" id="synopsis-edi">${
+                          program.sinopsis.substr(0, 150) + "..."
+                        }</span>
                         <span class="text-normal cursor-pointer a-text-bold-tealblue"> Ver más...</span>
                     </div>
                 </div>
@@ -207,11 +216,11 @@ $(document).ready(function () {
         </div>
     </div> 
         `;
-            });
-            programingConcertChannel.forEach((program, index) => {
-                //Landing de concert channel
-                if (index == 0) {
-                    programLandingConcertChannel += `
+      });
+      programingConcertChannel.forEach((program, index) => {
+        //Landing de concert channel
+        if (index == 0) {
+          programLandingConcertChannel += `
                     <div class="poster">
                         <div class="poster-body">
                             <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
@@ -228,9 +237,9 @@ $(document).ready(function () {
                         </div>
                     </div>
                     `;
-                } else {
-                    //Landing de concert channel
-                    programLandingConcertChannel += `
+        } else {
+          //Landing de concert channel
+          programLandingConcertChannel += `
                     <div class="poster" >
                         <div class="poster-body">
                             <div class="showtime-container justify-content-between">
@@ -251,18 +260,20 @@ $(document).ready(function () {
                         </div>
                     </div>
                     `;
-                }
+        }
 
-                //Programación concert channel
-                let synopsis = "";
-                if (program.sinopsis.length > 150) {
-                    synopsis = program.sinopsis.substr(0, 150) + "...";
-                } else {
-                    synopsis = program.sinopsis;
-                }
-                programConcertChannelEdit += `
+        //Programación concert channel
+        let synopsis = "";
+        if (program.sinopsis.length > 150) {
+          synopsis = program.sinopsis.substr(0, 150) + "...";
+        } else {
+          synopsis = program.sinopsis;
+        }
+        programConcertChannelEdit += `
         <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
-        <img src="./images/General/pencil.svg" alt="" class="pencil edit-program-pencil" chapter_id="${program.chapter_id}">
+        <img src="./images/General/pencil.svg" alt="" class="pencil edit-program-pencil" chapter_id="${
+          program.chapter_id
+        }">
         <div class="schedule-container col-12 p-5 mx-auto mt-0">
             <p class="schedule-title  a-text-plus a-text-black-brown-two">
                 ${program.chapter_title}
@@ -271,7 +282,9 @@ $(document).ready(function () {
                 <div class="schedule-poster">
                     <div class="poster">
                         <div class="thumbnail-edit" _id="${program.chapter_id}">
-                            <img src="${program.image}" alt="${program.chapter_title}" class="w-100">
+                            <img src="${program.image}" alt="${
+          program.chapter_title
+        }" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -294,7 +307,9 @@ $(document).ready(function () {
                         </div>
                     </div>
                     <div>
-                        <span class="schedule-description s1" id="synopsis-edi">${program.sinopsis.substr(0, 150) + "..."}</span>
+                        <span class="schedule-description s1" id="synopsis-edi">${
+                          program.sinopsis.substr(0, 150) + "..."
+                        }</span>
                         <span class="text-normal cursor-pointer a-text-bold-tealblue"> Ver más...</span>
                     </div>
                 </div>
@@ -302,17 +317,19 @@ $(document).ready(function () {
         </div>
     </div> 
         `;
-            });
-            programingClaroCinema.forEach((program, index) => {
-                let synopsis = ""
-                if (program.sinopsis.length > 150) {
-                    synopsis = program.sinopsis.substr(0, 150) + "...";
-                } else {
-                    synopsis = program.sinopsis;
-                }
-                programClaroCinemaEdit += `
+      });
+      programingClaroCinema.forEach((program, index) => {
+        let synopsis = "";
+        if (program.sinopsis.length > 150) {
+          synopsis = program.sinopsis.substr(0, 150) + "...";
+        } else {
+          synopsis = program.sinopsis;
+        }
+        programClaroCinemaEdit += `
         <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
-        <img src="./images/General/pencil.svg" alt="" class="pencil edit-program-pencil" chapter_id="${program.chapter_id}">
+        <img src="./images/General/pencil.svg" alt="" class="pencil edit-program-pencil" chapter_id="${
+          program.chapter_id
+        }">
         <div class="schedule-container col-12 p-5 mx-auto mt-0">
             <p class="schedule-title  a-text-plus a-text-black-brown-two">
                 ${program.chapter_title}
@@ -321,7 +338,9 @@ $(document).ready(function () {
                 <div class="schedule-poster">
                     <div class="poster">
                         <div class="thumbnail-edit" _id="${program.chapter_id}">
-                            <img src="${program.image}" alt=${program.chapter_title}" class="w-100">
+                            <img src="${program.image}" alt=${
+          program.chapter_title
+        }" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -344,7 +363,9 @@ $(document).ready(function () {
                         </div>
                     </div>
                     <div>
-                        <span class="schedule-description s1" id="synopsis-edi">${program.sinopsis.substr(0, 150) + "..."}</span>
+                        <span class="schedule-description s1" id="synopsis-edi">${
+                          program.sinopsis.substr(0, 150) + "..."
+                        }</span>
                         <span class="text-normal cursor-pointer a-text-bold-tealblue"> Ver más...</span>
                     </div>
                 </div>
@@ -352,17 +373,16 @@ $(document).ready(function () {
         </div>
     </div> 
         `;
-            });
+      });
 
-            //Insertamos todos los programas
-
-            claroCotentProgramacionGeneralEdit.html(programCanalClaroEdit);
-            $('.concert-content-edit').html(programConcertChannelEdit);
-            $('.cinema-content-edit').html(programClaroCinemaEdit);
-            sliderCanalClarLanding.html(programLandingCanalClaro);
-            sliderConcertChannelLanding.html(programLandingConcertChannel);
-            createTvSlider(sliderCanalClarLanding);
-            createTvSlider(sliderConcertChannelLanding);
-        },
-    });
+      //Insertamos todos los programas
+      claroCotentProgramacionGeneralEdit.html(programCanalClaroEdit);
+      $(".concert-content-edit").html(programConcertChannelEdit);
+      $(".cinema-content-edit").html(programClaroCinemaEdit);
+      sliderCanalClarLanding.html(programLandingCanalClaro);
+      sliderConcertChannelLanding.html(programLandingConcertChannel);
+      createTvSlider(sliderCanalClarLanding);
+      createTvSlider(sliderConcertChannelLanding);
+    },
+  });
 });

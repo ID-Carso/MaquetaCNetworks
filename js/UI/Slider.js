@@ -491,12 +491,6 @@ export default class Slider {
         </div>`;
       });
 
-      imagesBannerClaroCanal.forEach(function (image) {
-        slideBanner += `        
-        <div class="header-slide">
-          <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10">
-        </div>`;
-      });
       imagesBannerClaroCinema.forEach(function (image) {
         slideBannerClaroCinema += `        
         <div class="header-slide">
@@ -509,7 +503,7 @@ export default class Slider {
           <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10">
         </div>`;
       });
-      bannerClaroCanal.html(slideBanner);
+      //bannerClaroCanal.html(slideBanner);
       bannerClaroCinema.html(slideBannerClaroCinema);
       bannerConcertChannel.html(slideBannerConcertChannel);
 
@@ -524,12 +518,7 @@ export default class Slider {
           <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
         </div>`;
       });
-      imagesBannerClaroCanal.forEach(function (image) {
-        slideBanner += `        
-        <div class="header-slide">
-          <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
-        </div>`;
-      });
+
       imagesBannerClaroCinema.forEach(function (image) {
         slideBannerClaroCinema += `        
         <div class="header-slide">
@@ -543,13 +532,26 @@ export default class Slider {
         </div>`;
       });
 
-      bannerClaroCanal.html(slideBanner);
+      //bannerClaroCanal.html(slideBanner);
       bannerClaroCinema.html(slideBannerClaroCinema);
       bannerConcertChannel.html(slideBannerConcertChannel);
 
     }
 
-    $(".header-slider").slick({
+    bannerClaroCinema.slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      dots: true,
+      centerMode: false,
+      arrows: false,
+      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+
+    bannerConcertChannel.slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       infinite: false,
@@ -562,27 +564,6 @@ export default class Slider {
       autoplaySpeed: 2000,
     });
     //slider claro-canal
-    $("#banner-claro-canal-edi").append(slideBanner);
-    $("#banner-claro-canal-edi").not(".slick-initialized").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      infinite: false,
-      dots: true,
-      appendDots: $(".programming-slider-dots"),
-      centerMode: false,
-      arrows: false,
-      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-      customPaging: function (slider, i) {
-        var thumb = $(slider.$slides[i]).data();
-        return (
-          "<p class='a-text-bold-tealblue slider-pagination-item pag ' slide_index=" + (i) + ">" +
-          (i + 1) +
-          "</p> "
-        );
-      },
-    });
-
 
     //slider para el de cinema
     $("#banner-claro-cinema-edi").append(slideBannerClaroCinema);
@@ -690,7 +671,7 @@ export default class Slider {
           </div>`;
         });
 
-        bannerClaroCanal.html(slideBanner);
+        //bannerClaroCanal.html(slideBanner);
         bannerClaroCinema.html(slideBannerClaroCinema);
         bannerConcertChannel.html(slideBannerConcertChannel);
 
@@ -724,19 +705,32 @@ export default class Slider {
             <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
           </div>`;
         });
-        bannerClaroCanal.html(slideBanner);
+        //bannerClaroCanal.html(slideBanner);
         bannerClaroCinema.html(slideBannerClaroCinema);
         bannerConcertChannel.html(slideBannerConcertChannel);
       }
-      $(".header-slider").not(".slick-initialized").slick({
+      bannerClaroCinema.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: false,
         dots: true,
         centerMode: false,
         arrows: false,
-        prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
-        nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
+        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+
+      bannerConcertChannel.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+        centerMode: false,
+        arrows: false,
+        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         autoplay: true,
         autoplaySpeed: 2000,
       });

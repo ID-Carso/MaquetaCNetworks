@@ -647,6 +647,86 @@ export default class Section {
   renderCanalClaro(json) {
     //obtenemos las iamgenes del carrusel 1
     let data = json.data;
+    //Banner
+    let slideBanner = "";
+    let counterCanalClaro = 1;
+
+    while (true) {
+      if (data[`block_1_image_slider_${counterCanalClaro}`]) {
+        slideBanner += `        
+        <div class="header-slide">
+          <img src="${data[`block_1_image_slider_${counterCanalClaro}`]}" class="rellax" data-rellax="10">
+        </div>`;
+        counterCanalClaro++
+      } else {
+        break;
+      }
+    }
+    let headerSlider = $(".header-slider");
+    $("#banner-claro-canal").append(slideBanner);
+    $("#banner-claro-canal").not(".slick-initialized").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      dots: true,
+      centerMode: false,
+      arrows: false,
+      prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
+      nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+    $("#banner-claro-canal-edi").append(slideBanner);
+    $("#banner-claro-canal-edi").not(".slick-initialized").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      dots: true,
+      appendDots: $(".programming-slider-dots"),
+      centerMode: false,
+      arrows: false,
+      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+      customPaging: function (slider, i) {
+        var thumb = $(slider.$slides[i]).data();
+        return (
+          "<p class='a-text-bold-tealblue slider-pagination-item pag ' slide_index=" + (i) + ">" +
+          (i + 1) +
+          "</p> "
+        );
+      },
+    });
+    //$("#banner-claro-canal").append(slideBanner);
+    try {
+      $(".header-slider").slick("unslick");
+      $(".header-slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+        centerMode: false,
+        arrows: false,
+        prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
+        nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    } catch (error) {
+      $(".header-slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+        centerMode: false,
+        arrows: false,
+        prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
+        nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    }
+
+
     //cambiamos el icono del landing
     //BLOQUE 2 Seccion de programacion
     //cambiamos el icono del landing
@@ -1049,11 +1129,9 @@ export default class Section {
           counter++;
         } else {
           break;
-
         }
       } catch (error) {
         break;
-
       }
     }
     $("#banner-programming").slick("unslick");

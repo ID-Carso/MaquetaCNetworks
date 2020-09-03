@@ -123,6 +123,7 @@ function getPrograms(date, country) {
         success: function (result) {
             let json = JSON.parse(result);
             /* SLIDER "AHORA EN VIVO CANAL CLARO*/
+
             let programingCanalClaro = json.data[0].programing[0].programs;
             let programingConcertChannel = json.data[1].programing[0].programs;
             let programingClaroCinema = json.data[2].programing[0].programs;
