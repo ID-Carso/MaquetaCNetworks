@@ -2164,7 +2164,7 @@ window.onresize = function () {
       "</p> "
     );
   },
-}); 
+});
 
 //para dar click
 const pagination = $(".pag");
