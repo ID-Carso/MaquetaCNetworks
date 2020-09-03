@@ -655,7 +655,7 @@ export default class Section {
       if (data[`block_1_image_slider_${counterCanalClaro}`]) {
         slideBanner += `        
         <div class="header-slide">
-          <img src="${data[`block_1_image_slider_${counterCanalClaro}`]}" class="rellax" data-rellax="10">
+          <img src="${data[`block_1_image_slider_${counterCanalClaro}`]}?v=${new Date().getTime()}" class="rellax" data-rellax="10">
         </div>`;
         counterCanalClaro++
       } else {
