@@ -71,6 +71,10 @@
   font-family: $montserratMedium;
 }
 
+.a-text-medium-white {
+  color: $colorWhite;
+  font-family: $montserratMedium;
+}
 .a-our-vision-title {
   @include title-section($pinkColor, $titleSection);
 }

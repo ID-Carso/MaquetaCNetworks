@@ -283,6 +283,11 @@ h6 {
   font-family: "Montserrat-Medium";
 }
 
+.a-text-medium-white {
+  color: #ffffff;
+  font-family: "Montserrat-Medium";
+}
+
 .a-our-vision-title {
   font-size: 24px;
   color: #eb0d6c;
