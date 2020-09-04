@@ -219,7 +219,7 @@
 
                     <div class="synopsis-schedule-container" id="dropdown-country">
                         <h1 class="synopsis-schedule-title mt-5 pb-2">Horario por regiones</h1>
-                        <div class="mx-auto shadow mt-3 col-10 p-0 mb-5 content-table pb-5">
+                        <div class="mx-auto shadow mt-3 col-10 p-0  content-table pb-5">
                             <div class="contenedor-fila">
                                 <div class="contenedor-columna centro ">
                                     <span class="a-text-white-semibold h3 mr-3">Países</span>
@@ -651,7 +651,7 @@
   
   var socketSinopsis = new easyXDM.Socket({
     onReady: function () {
-      var hey = 2700;
+      var hey = 2640;
       socketSinopsis.postMessage(hey)
     }
   });
