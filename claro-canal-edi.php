@@ -108,17 +108,16 @@
           </div>
           <img src="./images/claro-canal/claro-canal-logo.svg" alt="" />
         </div>-->
-        <div class="header-slider-cinem mx-auto"  id="banner-claro-canal-edi">
-           
-           </div>
-          
-           <div class="d-flex position-absolute programming-dots space-do" >
-               <div class=" d-inline-block position-relative programming-slider-dots align-items-center">
-               </div>
-               <img src="./images/General/plus.svg" alt="" class="cursor-pointer slider-pagination-add mr-3"
-                   style="width:42px">
-           </div>
-     
+      <div class="header-slider-cinem mx-auto" id="banner-claro-canal-edi">
+
+      </div>
+
+      <div class="d-flex position-absolute programming-dots space-do">
+        <div class=" d-inline-block position-relative programming-slider-dots align-items-center">
+        </div>
+        <img src="./images/General/plus.svg" alt="" class="cursor-pointer slider-pagination-add mr-3" style="width:42px">
+      </div>
+
     </div>
 
   </header>
@@ -149,8 +148,7 @@
 
     <section class="next-week-claro">
       <div class="next-week-container">
-        <div
-          class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+        <div class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
           <img id="claro-canal-edi-title" src=" ./images/General/pencil.svg" alt="" class="pencil">
           <h1 class="p-0 a-next-claro-title">próxima semana</h1>
           <h2 class="a-next-claro-subtitle pb-0 mb-0">
@@ -161,8 +159,7 @@
           <div class=" p-3 border-t border-l border-r border-b position-relative">
             <img id="claro-canal-edi-promo" src="./images/General/pencil.svg" alt="" class="pencil">
             <video class="promo-video" autoplay muted controls loop>
-              <source src="http://www.claronetworks.openofficedospuntocero.info/video/canal-claro-promo.mp4"
-                type="video/mp4">
+              <source src="http://www.claronetworks.openofficedospuntocero.info/video/canal-claro-promo.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -171,8 +168,7 @@
     </section>
     <section class="dont-lose-claro">
       <div class="dont-lose-container">
-        <div
-          class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+        <div class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
           <img id="claro-canal-edi-carrusel-title" src=" ./images/General/pencil.svg" alt="" class="pencil">
           <h1 class="p-0 a-dontLose-claro-title" id="carrusel_1_title">TIENES QUE VERLO</h1>
           <h2 class="p-0 a-dontLose-claro-subtitle" id="carrusel_1_subtitle">
@@ -188,11 +184,10 @@
             </div>
           </div>
 
-          <div
-            class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
+          <div class="p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
             <img id="claro-canal-edi-carrusel-title2" src=" ./images/General/pencil.svg" alt="" class="pencil">
-            <h1 class="p-0 a-dontLose-claro-title"id="carrusel_2_title">Contenido exclusivo</h1>
-            <h2 class="p-0 a-dontLose-claro-subtitle"id="carrusel_2_subtitle">
+            <h1 class="p-0 a-dontLose-claro-title" id="carrusel_2_title">Contenido exclusivo</h1>
+            <h2 class="p-0 a-dontLose-claro-subtitle" id="carrusel_2_subtitle">
               Únete y disfruta nuestras producciones propias.
             </h2>
           </div>
@@ -208,9 +203,9 @@
 
     </section>
     <?php
-   // include 'advertising-section.php'
+    // include 'advertising-section.php'
     ?>
-   <!-- <div class="">
+    <!-- <div class="">
       <div class="row no-gutters">
         <div class="col-12">
           <div class=" d-flex justify-content-center pt-5 ">
@@ -243,9 +238,9 @@
       </div>
     </div>
     <div class="cclaro-list-links-footer">-->
-      <?php
-   //   include './views/partials/list-links-footer.php';
-      ?>
+    <?php
+    //   include './views/partials/list-links-footer.php';
+    ?>
     </div>
   </main>
   <?php
@@ -262,13 +257,8 @@ include './views/partials/modal-favorites.php'
 include './views/partials/modal-program.php'
 ?>
 
-<<<<<<< HEAD
 <!--<script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
 <script>
-=======
-
-<!--<script>
->>>>>>> 9212b8b69ed3118cc2beb7c9851e0e3ef43ea8b2
   var socket = new easyXDM.Socket({
     onReady: function () {
 
@@ -306,53 +296,53 @@ include './views/partials/modal-program.php'
 <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
 <script>
   var socketClaro = new easyXDM.Socket({
-    onReady: function () {
+    onReady: function() {
       var hey = 2500;
       socketClaro.postMessage(hey)
     }
   });
 
-  $("#claro-canal-edi-header").click(function () {
+  $("#claro-canal-edi-header").click(function() {
     let type = "claro-header";
     let data = {
       type: type
     }
     var json = JSON.stringify(data);
-   
+
     socketClaro.postMessage(json);
   });
 
-  $("#claro-canal-edi-programacion").click(function () {
+  $("#claro-canal-edi-programacion").click(function() {
     let type = "claro-programacion";
     let data = {
       type: type
     }
     var json = JSON.stringify(data);
-   
+
     socketClaro.postMessage(json);
   });
 
-  $("#claro-canal-edi-title").click(function () {
+  $("#claro-canal-edi-title").click(function() {
     let type = "claro-title";
     let data = {
       type: type
     }
     var json = JSON.stringify(data);
-  
+
     socketClaro.postMessage(json);
   });
 
-  $("#claro-canal-edi-promo").click(function () {
+  $("#claro-canal-edi-promo").click(function() {
     let type = "claro-promo";
     let data = {
       type: type
     }
     var json = JSON.stringify(data);
-  
+
     socketClaro.postMessage(json);
   });
 
-  $("#claro-canal-edi-carrusel-title").click(function () {
+  $("#claro-canal-edi-carrusel-title").click(function() {
     let type = "claro-carrusel-title";
     let data = {
       type: type
@@ -361,7 +351,7 @@ include './views/partials/modal-program.php'
     socketClaro.postMessage(json);
   });
 
-  $("#claro-canal-edi-carrusel-title2").click(function () {
+  $("#claro-canal-edi-carrusel-title2").click(function() {
     let type = "claro-carrusel-title2";
     let data = {
       type: type
@@ -370,7 +360,7 @@ include './views/partials/modal-program.php'
     socketClaro.postMessage(json);
   });
 
-  $("#claro-canal-edi-carrusel1").click(function () {
+  $("#claro-canal-edi-carrusel1").click(function() {
     let type = "claro-carrusel1";
     let data = {
       type: type
@@ -379,7 +369,7 @@ include './views/partials/modal-program.php'
     socketClaro.postMessage(json);
   });
 
-  $("#claro-canal-edi-carrusel2").click(function () {
+  $("#claro-canal-edi-carrusel2").click(function() {
     let type = "claro-carrusel2";
     let data = {
       type: type
@@ -388,7 +378,7 @@ include './views/partials/modal-program.php'
     socketClaro.postMessage(json);
   });
 
-  $("#ver-programacion").click(function () {
+  $("#ver-programacion").click(function() {
     let type = "btn-redirect-header";
     let data = {
       type: type
@@ -396,16 +386,16 @@ include './views/partials/modal-program.php'
     var json = JSON.stringify(data);
     socketClaro.postMessage(json);
   });
-  $('.claro-canal-header').on("click", ".slider-pagination-item", function () {
-                let type = "slider-pagination";
-                let data = {
-                    
-                    type: type
-                }
-                console.log(data);
-                var json = JSON.stringify(data);
-                socketClaro.postMessage(json);
-            });
+  $('.claro-canal-header').on("click", ".slider-pagination-item", function() {
+    let type = "slider-pagination";
+    let data = {
+
+      type: type
+    }
+    console.log(data);
+    var json = JSON.stringify(data);
+    socketClaro.postMessage(json);
+  });
 </script>
 
 </html>

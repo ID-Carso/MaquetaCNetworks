@@ -142,7 +142,10 @@ if (day && month && year) {
 $(document).ready(function () {
 
   let dateUTC = new Date();
-
+  let actual_landing = $('#actual_landing').val();
+  if (actual_landing) {
+    getMetaKeys(actual_landing);
+  }
 
   /* Banner*/
   let sliderBanner = new Slider();
@@ -1346,11 +1349,7 @@ $(document).ready(function () {
   createCinemaHomeSlider();
   /* Metakeys */
 
-  let actual_landing = $('#actual_landing').val();
-  if (actual_landing) {
 
-    getMetaKeys(actual_landing);
-  }
 
   /*End Metakeys */
 
@@ -2148,7 +2147,7 @@ window.onresize = function () {
 };
 
 //para slider de sinopsis en editable
- $(".header-slider-sinopsis").slick({
+$(".header-slider-sinopsis").slick({
   slidesToShow: 1,
   dots: true,
   appendDots: $(".programming-slider-dots"),
