@@ -252,7 +252,7 @@
                                 </div>
                             </div>
                             <div class="contenedor-fila ">
-                                <div class="contenedor-columna " style="width: 201px;">
+                                <div class="contenedor-columna container-width-colum" >
                                     <div class="container-paises mb-3">
                                         <div class="pt-3">
                                         <img src="./images/paises/chile.svg" alt="chile" class="mb-2 ml-3">
@@ -270,7 +270,7 @@
 
                                     </div>
                                  </div>
-                                 <div class="contenedor-columna pl-4" style="width: 161px;">
+                                 <div class="contenedor-columna pl-4 container-width-time" >
                                      <div class="container-hora d-inline-block mb-3">
                                          <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
                                          <p class="a-text-white-bold text-normal centro ">12:00</p>
@@ -283,7 +283,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -291,7 +291,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -299,7 +299,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -307,7 +307,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -315,7 +315,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -323,7 +323,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                     <div class="container-days-inac mb-3">                                    
                                      </div>
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
@@ -332,7 +332,7 @@
                                     
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                          <div class="container-days-inac mb-3">                                    
                                         </div>
                                         <div class="container-days d-flex justify-content-center align-items-center mb-3">
@@ -342,7 +342,7 @@
                                  </div>
                             </div>
                             <div class="contenedor-fila ">
-                                <div class="contenedor-columna " style="width: 201px;">
+                                <div class="contenedor-columna  container-width-colum" >
                                     <div class="container-paises mb-3">
                                         <div class="pt-3 pb-2">
                                         <img src="./images/paises/colombia.svg" alt="colombia" class="mb-2 ml-3">
@@ -363,7 +363,7 @@
 
                                     </div>
                                  </div>
-                                 <div class="contenedor-columna pl-4" style="width: 161px;">
+                                 <div class="contenedor-columna pl-4 container-width-time" >
                                      <div class="container-hora d-inline-block mb-3">
                                          <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
                                          <p class="a-text-white-bold text-normal centro ">11:00</p>
@@ -376,7 +376,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -384,7 +384,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -392,7 +392,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -400,7 +400,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -408,7 +408,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -416,7 +416,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                     <div class="container-days-inac mb-3">                                    
                                      </div>
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3 ">
@@ -425,7 +425,7 @@
                                     
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                          <div class="container-days-inac mb-3">                                    
                                         </div>
                                         <div class="container-days d-flex justify-content-center align-items-center mb-3">
@@ -435,7 +435,7 @@
                                      </div>
                                 </div>
                                 <div class="contenedor-fila">
-                                <div class="contenedor-columna " style="width: 201px;">
+                                <div class="contenedor-columna container-width-colum" >
                                     <div class="container-paises mb-3">
                                         <div class="pt-2">
                                         <img src="./images/paises/el-salvador.svg" alt="el-salvador" class="mb-2 ml-3">
@@ -460,7 +460,7 @@
 
                                     </div>
                                  </div>
-                                 <div class="contenedor-columna pl-4" style="width: 161px;">
+                                 <div class="contenedor-columna pl-4 container-width-time" >
                                      <div class="container-hora d-inline-block mb-3">
                                          <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
                                          <p class="a-text-white-bold text-normal centro ">10:00</p>
@@ -473,7 +473,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -481,7 +481,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -489,7 +489,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -497,7 +497,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec">
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -505,7 +505,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec">
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -513,7 +513,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                     <div class="container-days-inac mb-3">                                    
                                      </div>
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
@@ -522,7 +522,7 @@
                                     
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                          <div class="container-days-inac mb-3">                                    
                                         </div>
                                         <div class="container-days d-flex justify-content-center align-items-center mb-3">
@@ -532,7 +532,7 @@
                                      </div>
                                 </div>
                                 <div class="contenedor-fila">
-                                <div class="contenedor-columna " style="width: 201px;">
+                                <div class="contenedor-columna container-width-colum" >
                                     <div class="container-paises mb-3">
                                         <div class="pt-3">
                                         <img src="./images/paises/argentina.svg" alt="argentina" class="mb-2 ml-3">
@@ -542,7 +542,7 @@
 
                                     </div>
                                  </div>
-                                 <div class="contenedor-columna pl-4" style="width: 161px;">
+                                 <div class="contenedor-columna pl-4 container-width-time" >
                                      <div class="container-hora d-inline-block mb-3">
                                          <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
                                          <p class="a-text-white-bold text-normal centro ">1:00</p>
@@ -555,7 +555,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -563,7 +563,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -571,7 +571,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -579,7 +579,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -587,7 +587,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                      <img src="./images/General/selector.svg" alt="selector" class="centro">
                                      </div>
@@ -595,7 +595,7 @@
                                      </div>
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                     <div class="container-days-inac mb-3">                                    
                                      </div>
                                      <div class="container-days d-flex justify-content-center align-items-center mb-3 ">
@@ -604,7 +604,7 @@
                                     
 
                                  </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                 <div class="contenedor-columna pl-4 container-width-selec" >
                                          <div class="container-days-inac mb-3">                                    
                                         </div>
                                         <div class="container-days d-flex justify-content-center align-items-center mb-3 ">
@@ -706,16 +706,7 @@
             var json = JSON.stringify(data);
             socketSinopsis.postMessage(json);
          });
-         $(".synopsis-details-container").on("click", ".pencil-details", function () {
-          
-          let data = {
-                type: $(this).attr("type")
-               
-            }
-            console.log(data);
-            var json = JSON.stringify(data);
-            socketSinopsis.postMessage(json);
-         });
+        
 
 </script>
 </html>

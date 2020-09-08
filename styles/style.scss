@@ -42,6 +42,40 @@
     width: 100%;
     max-width: 150px;
   }
+  .container-days{
+    width: 19px;
+    height: 59px;
+  
+    object-fit: contain;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 0 $charcoal-grey;
+    background-color:$black-four;
+  }
+  .container-days-inac{
+    width: 19px;
+    height: 59px;
+  
+    object-fit: contain;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 0 $scheduleHourColor;
+    background-color: $black-five;
+  }
+  .container-hora{ 
+    width: 68px;
+    height: 59px;  
+    object-fit: contain;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 0 $charcoal-grey;
+    background-color:$black-four;
+  }
+  .container-paises{
+    width: 78px;
+    height: 128px;
+    object-fit: contain;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 0 $charcoal-grey;
+    background-color:$black-four;
+  }
 
   .menu-responsive {
     width: 25px;
@@ -1478,9 +1512,44 @@
 
   /*1.1 - General - Átomos */
 
+  .container-width-colum{
+    width: 78px;
+    height: 128px;
+  }
+  .container-width-time{
+    width: 161px;
+  }
+  .container-width-selec{
+    width: 59px;
+  }
   .modal-image-program {
     width: 100%;
     max-width: 150px;
+  }
+ 
+  .container-days{
+    width: 48px;
+    height: 101px;
+    object-fit: contain;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 0 $charcoal-grey;
+    background-color:$black-four;
+  }
+  .container-days-inac{
+    width: 48px;
+    height: 101px;
+    object-fit: contain;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 0 $scheduleHourColor;
+    background-color: $black-five;
+  }
+  .container-hora{ 
+    width: 117px;
+  height: 102px;
+    object-fit: contain;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 0 $charcoal-grey;
+    background-color:$black-four;
   }
 
   .header-curve {
@@ -3064,10 +3133,51 @@
   /***  1.- ATOMS  ****/
 
   /*1.1.- Generales - átomos*/
-
+  .container-width-colum{
+    width: 201px;
+  }
+  .container-width-time{
+    width: 161px;
+  }
+  .container-width-selec{
+    width: 59px;
+  }
   .modal-image-program {
     width: 100%;
     max-width: 200px;
+  }
+  .container-paises{
+    width: 201px;
+    height: 202px;
+    object-fit: contain;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 0 $charcoal-grey;
+    background-color:$black-four;
+  }
+  
+  .container-hora{ 
+    width: 161px;
+    height: 93px;
+    object-fit: contain;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 0 $charcoal-grey;
+    background-color:$black-four;
+  }
+  .container-days{
+    width: 59px;
+    height: 93px;
+    object-fit: contain;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 0 $charcoal-grey;
+    background-color:$black-four;
+  }
+  .container-days-inac{
+    width: 59px;
+    height: 93px;
+    object-fit: contain;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 0 $scheduleHourColor;
+    background-color: $black-five;
   }
 
   .a-cinema-subtitle,
@@ -4713,12 +4823,52 @@
 
   /*-----------------------------*/
   /*1.1 General -  Átomos  */
-
+  .container-width-colum{
+    width: 201px;
+  }
+  .container-width-time{
+    width: 161px;
+  }
+  .container-width-selec{
+    width: 59px;
+  }
   .modal-image-program {
     width: 100%;
     max-width: 250px;
   }
-
+  .container-paises{
+    width: 201px;
+    height: 202px;
+    object-fit: contain;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 0 $charcoal-grey;
+    background-color:$black-four;
+  }
+  
+  .container-hora{ 
+    width: 161px;
+    height: 93px;
+    object-fit: contain;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 0 $charcoal-grey;
+    background-color:$black-four;
+  }
+  .container-days{
+    width: 59px;
+    height: 93px;
+    object-fit: contain;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 0 $charcoal-grey;
+    background-color:$black-four;
+  }
+  .container-days-inac{
+    width: 59px;
+    height: 93px;
+    object-fit: contain;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 0 $scheduleHourColor;
+    background-color: $black-five;
+  }
   .margin-ahora-tv {
     margin-bottom: 21px;
   }
