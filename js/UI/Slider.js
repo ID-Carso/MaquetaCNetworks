@@ -32,13 +32,10 @@ export default class Slider {
         dots: true,
         centerMode: false,
         arrows: true,
-        prevArrow:
-          '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-        nextArrow:
-          '<img src="../images/sliders/next.png" class="arrow-next" />',
+        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
 
-        responsive: [
-          {
+        responsive: [{
             breakpoint: 768,
             settings: {
               slidesToShow: 1,
@@ -71,10 +68,8 @@ export default class Slider {
               dots: true,
               centerMode: false,
               arrows: true,
-              prevArrow:
-                '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-              nextArrow:
-                '<img src="../images/sliders/next.png" class="arrow-next" />',
+              prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+              nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
             },
           },
 
@@ -87,10 +82,8 @@ export default class Slider {
               dots: true,
               centerMode: false,
               arrows: true,
-              prevArrow:
-                '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-              nextArrow:
-                '<img src="../images/sliders/next.png" class="arrow-next" />',
+              prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+              nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
             },
           },
         ],
@@ -100,8 +93,7 @@ export default class Slider {
   createProgramacionSlider(container) {
     container.slick({
       /**/
-      responsive: [
-        {
+      responsive: [{
           breakpoint: 767,
           settings: {
             slidesToShow: 7,
@@ -122,10 +114,8 @@ export default class Slider {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
         {
@@ -137,10 +127,8 @@ export default class Slider {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
         {
@@ -152,10 +140,8 @@ export default class Slider {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
         {
@@ -167,10 +153,8 @@ export default class Slider {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
       ],
@@ -370,140 +354,26 @@ export default class Slider {
   showImageBanner() {
     /* Banner Landing Canal Claro */
 
-    const imagesBannerClaroCanal = [
-      {
-        imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/pc/CANAL-CLARO-01-A.jpg",
-        imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/tablet/CANAL-CLARO-01-B.jpg",
+    const imagesBannerClaroCinema = [{
+        imageBannerPC: "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-01-A.jpg",
+        imageBannerTablet: "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-01-B.jpg",
       },
       {
-        imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/pc/CANAL-CLARO-02-A.jpg",
-        imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/tablet/CANAL-CLARO-02-B.jpg",
+        imageBannerPC: "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-02-A.jpg",
+        imageBannerTablet: "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/tablet/C-CINEMA-02-B.jpg",
       },
       {
-        imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/pc/CANAL-CLARO-03-A.jpg",
-        imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/claro-canal/banner/tablet/CANAL-CLARO-03-B.jpg",
+        imageBannerPC: "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-03-A.jpg",
+        imageBannerTablet: "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/tablet/C-CINEMA-03-B.jpg",
       },
     ];
-    const imagesBannerClaroCinema = [
-      {
-        imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-01-A.jpg",
-        imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-01-B.jpg",
-      },
-      {
-        imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-02-A.jpg",
-        imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/tablet/C-CINEMA-02-B.jpg",
-      },
-      {
-        imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-03-A.jpg",
-        imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/tablet/C-CINEMA-03-B.jpg",
-      },
-    ];
-    const imagesBannerConcertChannel = [
-      {
-        imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/banner/pc/CONCERT-01-A.jpg",
-        imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/banner/tablet/CONCERT-01-B.jpg",
-      },
-      {
-        imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/banner/pc/CONCERT-02-A.jpg",
-        imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/banner/tablet/CONCERT-02-B.jpg",
-      },
-      {
-        imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/banner/pc/CONCERT-03-A.jpg",
-        imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/concert-channel/banner/tablet/CONCERT-03-B.jpg",
-      },
-    ];
+
 
     let imagesBannerProgramming = [];
-    /*
-      {
-        imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/canal-claro/pc/CANAL-CLARO-04-A.jpg",
-        imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/canal-claro/tablet/CANAL-CLARO-04-B.jpg",
-      },
-      {
-        imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/canal-claro/pc/CANAL-CLARO-05-A.jpg",
-        imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/canal-claro/tablet/CANAL-CLARO-05-B.jpg",
-      },
-      {
-        imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/canal-claro/pc/CANAL-CLARO-06-A.jpg",
-        imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/canal-claro/tablet/CANAL-CLARO-06-B.jpg",
-      },
-      {
-        imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/claro-cinema/pc/C-CINEMA-04-A.jpg",
-        imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/claro-cinema/pc/C-CINEMA-04-B.jpg",
-      },
-      {
-        imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/claro-cinema/pc/C-CINEMA-05-A.jpg",
-        imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/claro-cinema/tablet/C-CINEMA-05-B.jpg",
-      },
-      {
-        imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/claro-cinema/pc/C-CINEMA-06-A.jpg",
-        imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/claro-cinema/tablet/C-CINEMA-06-B.jpg",
-      },
-      {
-        imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/concert-channel/pc/CONCERT-04-A.jpg",
-        imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/concert-channel/tablet/CONCERT-04-A.jpg",
-      },
-      {
-        imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/concert-channel/pc/CONCERT-05-A.jpg",
-        imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/concert-channel/tablet/CONCERT-05-B.jpg",
-      },
-      {
-        imageBannerPC:
-          "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/concert-channel/pc/CONCERT-06-A.jpg",
-        imageBannerTablet:
-          "http://www.claronetworks.openofficedospuntocero.info/images/programacion/banner/concert-channel/tablet/CONCERT-06-B.jpg",
-      },
-    ];
-*/
 
-    let slideBanner = "";
     let slideBannerClaroCinema = "";
-    let slideBannerConcertChannel = "";
-    let slideBannerProgramming = "";
-    let bannerClaroCanal = $("#banner-claro-canal");
     let bannerClaroCinema = $("#banner-claro-cinema");
-    let bannerConcertChannel = $("#banner-concert-channel");
-    let headerSlider = $(".header-slider");
-    /*     if (bannerClaroCinema.hasClass("slick-initialized")) {
-      bannerClaroCinema.unslick();
-    }
-    if (bannerConcertChannel.hasClass("slick-initialized")) {
-      bannerConcertChannel.unslick();
-    } */
+
     if (screen.width < 768) {
       $(".claro-image-banner-1").attr("src", "");
       $(".concert-image-banner-1").attr("src", "");
@@ -522,15 +392,10 @@ export default class Slider {
           <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10">
         </div>`;
       });
-      imagesBannerConcertChannel.forEach(function (image) {
-        slideBannerConcertChannel += `        
-        <div class="header-slide">
-          <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10">
-        </div>`;
-      });
+
       //bannerClaroCanal.html(slideBanner);
       bannerClaroCinema.html(slideBannerClaroCinema);
-      bannerConcertChannel.html(slideBannerConcertChannel);
+
     } else if (screen.width >= 1200) {
       imagesBannerProgramming.forEach(function (image) {
         slideBannerProgramming += `        
@@ -545,16 +410,11 @@ export default class Slider {
           <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
         </div>`;
       });
-      imagesBannerConcertChannel.forEach(function (image) {
-        slideBannerConcertChannel += `        
-        <div class="header-slide">
-          <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
-        </div>`;
-      });
+
 
       //bannerClaroCanal.html(slideBanner);
       bannerClaroCinema.html(slideBannerClaroCinema);
-      bannerConcertChannel.html(slideBannerConcertChannel);
+
     }
 
     bannerClaroCinema.slick({
@@ -570,18 +430,7 @@ export default class Slider {
       autoplaySpeed: 2000,
     });
 
-    bannerConcertChannel.slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      infinite: false,
-      dots: true,
-      centerMode: false,
-      arrows: false,
-      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-      autoplay: true,
-      autoplaySpeed: 2000,
-    });
+
     //slider claro-canal
 
     //slider para el de cinema
@@ -596,10 +445,8 @@ export default class Slider {
         appendDots: $(".programming-slider-dots"),
         centerMode: false,
         arrows: false,
-        prevArrow:
-          '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-        nextArrow:
-          '<img src="../images/sliders/next.png" class="arrow-next" />',
+        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         customPaging: function (slider, i) {
           var thumb = $(slider.$slides[i]).data();
           return (
@@ -612,33 +459,7 @@ export default class Slider {
         },
       });
 
-    //slider concert
-    $("#banner-concert-channel-edi").append(slideBannerConcertChannel);
-    $("#banner-concert-channel-edi")
-      .not(".slick-initialized")
-      .slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: true,
-        appendDots: $(".programming-slider-dots"),
-        centerMode: false,
-        arrows: false,
-        prevArrow:
-          '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-        nextArrow:
-          '<img src="../images/sliders/next.png" class="arrow-next" />',
-        customPaging: function (slider, i) {
-          var thumb = $(slider.$slides[i]).data();
-          return (
-            "<p class='a-text-bold-tealblue slider-pagination-item pag ' slide_index=" +
-            i +
-            ">" +
-            (i + 1) +
-            "</p> "
-          );
-        },
-      });
+
     const paginationcinema = $(".pag");
     $(".pag").click(function () {
       paginationcinema.removeClass("selteal");
