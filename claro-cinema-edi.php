@@ -3,6 +3,8 @@
 
 <head>
   <?php include './views/partials/head.php' ?>
+  <script src="./js/backoffice/main.js?t=<?php echo time(); ?>" defer></script>
+  <input type="hidden" id="actual_landing" value="claro_cinema">
 </head>
 
 <body class="claro-cinema-content">
@@ -119,13 +121,13 @@
                 <img src="./images/General/pencil.svg" alt="" class="pencil pencil-cinema"
                     type="header-landing-cinema" id="icon_cinema">
           <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-            <img src="./images/home/cinema-home-img.svg" alt="" class="lading-header-image-cinema">
+            <img src="" alt="" id="icon_claro_cinema" class="lading-header-image-cinema">
           </div>
           <div class="col-12 col-md-5 col-lg-5 col-xl-5">
             <h1 class="a-today-cinema-title pt-4">hoy en <span>claro cinema</span></h1>
           </div>
-          <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ pt-4">
-            <a href="programacion.php"><button class="btn-teal-blue a-text-white-semibold btn-claro-cinema">VER PROGRAMACIÓN</button>
+          <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ pt-4" id="btn-claro-cinema">
+            <a href="#"><button class="btn-teal-blue a-text-white-semibold btn-claro-cinema"></button>
             </a>
           </div>
         </div>
@@ -144,8 +146,8 @@
         <div class="d-inline-block position-relative border-t border-l border-r border-b">
                 <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-title"
                     type="title-cinema">
-          <h1 class="a-cinema-title">las <span>imperdibles</span></h1>
-          <h2 class="a-cinema-subtitle">
+          <h1 class="a-cinema-title" id="a-cinema-title">las <span>imperdibles</span></h1>
+          <h2 class="a-cinema-subtitle" id="a-cinema-subtitle">
             ve un <span>adelanto</span> de la programación
           </h2>
           </div>
@@ -164,10 +166,10 @@
           <div class="d-inline-block position-relative border-t border-l border-r border-b">
                 <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-carrusel1"
                     type="title-carrusel1">
-            <h1 class="a-cinema-title ">
+            <h1 class="a-cinema-title" id="carrusel_1_title">
               recordar es volver <span class="recordar-title">a vivir</span>
             </h1>
-            <h2 class="a-cinema-subtitle">
+            <h2 class="a-cinema-subtitle" id="carrusel_1_subtitle">
               <!-- ve un <span>adelanto</span> de la programación -->
               ¿Cómo ligaban antes del Tinder? Revive una época fascinante
             </h2>
@@ -269,8 +271,8 @@
           <div class="d-inline-block position-relative border-t border-l border-r border-b p-3">
                 <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-carrusel2"
                     type="title-carrusel2">
-            <h1 class="a-cinema-title"> sexy <span>románticas</span></h1>
-            <h2 class="a-cinema-subtitle">
+            <h1 class="a-cinema-title" id="carrusel_2_title"> sexy <span>románticas</span></h1>
+            <h2 class="a-cinema-subtitle" id="carrusel_2_subtitle">
               <!-- ve un <span>adelanto</span> de la programación -->
               Películas para subir la temperatura
             </h2>

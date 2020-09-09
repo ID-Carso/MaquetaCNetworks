@@ -5,69 +5,69 @@ export default class Section {
     programacion_slider = $(".programacion-slider").slick({
       /**/
       responsive: [{
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 7,
-            slidesToScroll: 7,
-            autoplay: false,
-            centerMode: false,
-            infinite: true,
-            arrows: false,
-            dots: true,
-          },
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 7,
+          slidesToScroll: 7,
+          autoplay: false,
+          centerMode: false,
+          infinite: true,
+          arrows: false,
+          dots: true,
         },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 8,
-            slidesToScroll: 8,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-          },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 8,
+          slidesToScroll: 8,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 11,
-            slidesToScroll: 11,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-          },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 11,
+          slidesToScroll: 11,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
-        {
-          breakpoint: 1900,
-          settings: {
-            slidesToShow: 11,
-            slidesToScroll: 11,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-          },
+      },
+      {
+        breakpoint: 1900,
+        settings: {
+          slidesToShow: 11,
+          slidesToScroll: 11,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
-        {
-          breakpoint: 10000,
-          settings: {
-            slidesToShow: 17,
-            slidesToScroll: 17,
-            infinite: false,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-          },
+      },
+      {
+        breakpoint: 10000,
+        settings: {
+          slidesToShow: 17,
+          slidesToScroll: 17,
+          infinite: false,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
+      },
       ],
     });
   }
@@ -526,70 +526,70 @@ export default class Section {
       nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
 
       responsive: [{
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: false,
-            autoplaySpeed: 2000,
-            centerMode: false,
-            infinite: true,
-            arrows: false,
-            dots: true,
-          },
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          centerMode: false,
+          infinite: true,
+          arrows: false,
+          dots: true,
         },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true,
-            centerMode: true,
-            arrows: false,
-          },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: true,
+          arrows: false,
         },
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-          },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
+      },
 
-        {
-          breakpoint: 1900,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-          },
+      {
+        breakpoint: 1900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
+      },
 
-        {
-          breakpoint: 10000,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-          },
+      {
+        breakpoint: 10000,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
+      },
       ],
     });
 
@@ -737,13 +737,12 @@ export default class Section {
     //cambiando url de programacion
     $('#btn-claro-canal a').attr('href', data.block_2_button_url)
     $('.btn-claro-canal').text(data.block_2_button_title)
-
     //BLOQUE 3 Seccion de video
     $('.a-next-claro-title').text(data.block_3_title)
     $('.a-next-claro-subtitle').text(data.block_3_subtitle)
+    // VIDEO
     $(".promo-video")[0].load()
     $('.promo-video source').attr('src', data.block_3_video_url)
-
     //BLOQUE 4 carruseles
     $('#carrusel_1_title').text(data.block_4_carrusel_1_title)
     $('#carrusel_1_subtitle').text(data.block_4_carrusel_1_subtitle)
@@ -792,25 +791,25 @@ export default class Section {
 
 
     let programsExlusiveContent = [{
-        chapter_id: 1,
-        program_title: "DRESS CODE",
-        image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/05-DRESS-CODE.jpg",
-      },
-      {
-        chapter_id: 2,
-        program_title: "FIT FOR LIFE",
-        image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/06-FIT4LIFE.jpg",
-      },
-      {
-        chapter_id: 3,
-        program_title: "CONEXIÓN CLARO",
-        image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/07-CONEXION.jpg",
-      },
-      {
-        chapter_id: 4,
-        program_title: "LA CAJA DE PANDORA",
-        image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/08-CAJA-DE-PANDORA.jpg",
-      },
+      chapter_id: 1,
+      program_title: "DRESS CODE",
+      image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/05-DRESS-CODE.jpg",
+    },
+    {
+      chapter_id: 2,
+      program_title: "FIT FOR LIFE",
+      image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/06-FIT4LIFE.jpg",
+    },
+    {
+      chapter_id: 3,
+      program_title: "CONEXIÓN CLARO",
+      image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/07-CONEXION.jpg",
+    },
+    {
+      chapter_id: 4,
+      program_title: "LA CAJA DE PANDORA",
+      image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/08-CAJA-DE-PANDORA.jpg",
+    },
     ];
 
     let programTiensQueVerlo = "";
@@ -902,7 +901,34 @@ export default class Section {
   renderClaroCinema(json) {
     //obtenemos las iamgenes del carrusel 1
     let data = json.data;
+    debugger
+
+    //BLOQUE 2 Seccion de programacion
+    //cambiamos el icono del landing
     $('#icon_claro_cinema').attr('src', data.block_2_icon_channel)
+    //titulo del bloque 2
+    $('.a-today-cinema-title').text(data.block_2_title_1)
+    $('.a-today-cinema-title').append(' <span>' + data.block_2_title_2 + '</span>')
+    //cambiando url de programacion
+    $('#btn-claro-cinema a').attr('href', data.block_2_button_url)
+    $('.btn-claro-cinema').text(data.block_2_button_title)
+
+    //BLOQUE 3 Seccion de video
+    $('#a-cinema-title').text(data.block_3_title_1)
+    $('#a-cinema-title').append(' <span>' + data.block_3_title_2 + '</span>')
+    $('#a-cinema-subtitle').text(data.block_3_subtitle)
+
+    $(".promo-video")[0].load()
+    $('.promo-video source').attr('src', data.block_3_video_url)
+
+    //BLOQUE 4 carruseles
+    $('#carrusel_1_title').text(data.block_4_carrusel_1_title_1)
+    $('#carrusel_1_title').append(' <span class="recordar-title">' + data.block_4_carrusel_1_title_2 + '</span>')
+    $('#carrusel_1_subtitle').text(data.block_4_carrusel_1_subtitle)
+
+    $('#carrusel_2_title').text(data.block_4_carrusel_2_title_1)
+    $('#carrusel_2_title').append(' <span class="recordar-title">' + data.block_4_carrusel_2_title_2 + '</span>')
+    $('#carrusel_2_subtitle').text(data.block_4_carrusel_2_subtitle)
 
     let carrusel1 = [];
     let counter = 1;
@@ -946,12 +972,10 @@ export default class Section {
 
     let Strinfcarrusel1 = "";
     let Strinfcarrusel2 = "";
-
     /*
       Almacenamos los programas en otras variables para dibujar los programas con bordes.
       Esto  para la parevisualización en Backoffice de los landings
     */
-    ;
     carrusel1.forEach((program) => {
       Strinfcarrusel1 += `
       <div class="poster" >
