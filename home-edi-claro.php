@@ -119,7 +119,7 @@
             </div>
             <div class="d-flex justify-content-center mx-auto ">
                 <div class=" d-inline-block   align-items-center mb-5">
-                <p class='a-text-bold-tealblue slider-pagination-item-home pag mr-2 '>1 </p>
+                <p class='a-text-bold-tealblue slider-pagination-item-home pag mr-2 cursor-pointer'>1 </p>
                 </div>
             </div>
         </header>
@@ -151,7 +151,7 @@
                 </div>
                 <div class="tv-videos-container">
                     <div id="claro-canal" class="tv-content  border-t border-l border-r border-b position-relative p-2">
-                    <img src="./images/General/pencil.svg" alt="" class="pencil">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-main" type="home-claro-carrousel-main">
            
                         <div class="tv-slider today-claro-slider " id="tv-claro-slider"style="margin-bottom: 0px !important;">
                      
@@ -196,7 +196,7 @@
                 <div class="text-center">
                     <a href=""> <button class="btn-red btn-canal-claro-home">VER +</button></a>
                 </div>
-                <div class="position-relative border-t border-l border-r border-b">
+                <div class="position-relative border-t border-l border-r border-b p-3">
                 <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider" type="claro-home-slider">
                 <div class="section-slider claro-slider-home-prev">   
                 </div>
@@ -223,7 +223,7 @@
                     </div>
                 </div>
                 <div class="canal-videos-container">
-                <div class="position-relative border-t border-l border-r border-b">
+                <div class="position-relative border-t border-l border-r border-b p-4 ">
                 <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider" type="claro-home-slider">
                 <div class="section-slider claro-slider-home-prev">   
                 </div>
@@ -253,7 +253,7 @@
             <!--End Sección Canal Claro tablet-->
             <!--Sección canal claro desktop-->
             <div class="claro-canal-desktop">
-                <div class="d-flex justify-content-between align-items-center home-section-header claro-section-header  position-relative border-t border-l border-r border-b mb-3">
+                <div class="d-flex justify-content-between align-items-center home-section-header claro-section-header p-3 position-relative border-t border-l border-r border-b mb-3">
                 <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home" type="claro-home-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
@@ -267,7 +267,7 @@
                         <a href=""> <button class="btn-red btn-canal-claro-home"></button></a>
                     </div>
                 </div>
-                <div class="position-relative border-t border-l border-r border-b">
+                <div class="position-relative border-t border-l border-r border-b p-4">
                 <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider" type="claro-home-slider">
                 <div class="section-slider claro-slider-home-prev">   
                 </div>
@@ -516,6 +516,7 @@
     </main>
     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
     <script>
+          
         var socketHome = new easyXDM.Socket({
             onReady: function() {
 
@@ -535,6 +536,15 @@
             var json = JSON.stringify(data);
             socketHome.postMessage(json);
         });
+        $(".tv-content").on("click", ".pencil-carrusel-main", function () {
+            let data = {
+                type: $(this).attr("type")
+
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketHome.postMessage(json);
+        });
         $(".home-section-header").on("click", ".pencil-header-home", function () {
             let data = {
                 type: $(this).attr("type")
@@ -544,7 +554,7 @@
             var json = JSON.stringify(data);
             socketHome.postMessage(json);
         });
-        $(".claro-slider-home-prev").on("click", ".pencil-home-slider", function () {
+        $(".pencil-home-slider").click(function () {
             let data = {
                 type: $(this).attr("type")
 
@@ -553,6 +563,7 @@
             var json = JSON.stringify(data);
             socketHome.postMessage(json);
         });
+       
     </script>
 </body>
 

@@ -45,6 +45,10 @@
   cursor: auto !important;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 /*html,
 body {
   height: 100%;
