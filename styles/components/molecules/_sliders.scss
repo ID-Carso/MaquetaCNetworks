@@ -443,7 +443,8 @@ div #banner-concert-channel-edi .slick-track{
   transform: translate(-50%, -95%);
 }
 .programming-slider-dots .slick-dots .slick-active p {
-  color: $cinemaRectangle;
+  // color: $cinemaRectangle;
+  color: #fff;
   font-family: $montserratBlack;
 }
 

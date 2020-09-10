@@ -7,6 +7,13 @@
   <input type="hidden" id="actual_landing" value="claro_cinema">
 </head>
 
+<style>
+  .slick-active{
+    background: #0097a9;
+    color: #fff !important;
+  }
+</style>
+
 <body class="claro-cinema-content">
   <header class="claro-cinema-header">
     <div class="hamburguer-menu">
@@ -71,7 +78,7 @@
     </div>
 
     <div class="header">
-   
+
       <div class="alert-user">
       </div>
       <img src="./images/header/yellow-curve.png" alt="" class="header-curve">
@@ -102,24 +109,22 @@
             </div>
             <img src="./images/claro-canal/claro-canal-logo.svg" alt="" />
           </div>-->
-      <div class=" header-slider-cinem" id="banner-claro-cinema-edi">
-            </div>
-            <div class="d-flex position-absolute programming-dots space-do" style="top:70%;">
-                <div class=" d-inline-block position-relative programming-slider-dots align-items-center">
-                </div>
-                <img src="./images/General/plus.svg" alt="" class="cursor-pointer slider-pagination-add mr-3"
-                    style="width:42px">
-            </div>
-   
+      <div class=" header-slider-cinem banner-claro-canal" id="banner-claro-cinema-edi">
+      </div>
+      <div class="d-flex position-absolute programming-dots space-do" style="top:70%;">
+        <div class=" d-inline-block position-relative programming-slider-dots align-items-center">
+        </div>
+        <img src="./images/General/plus.svg" alt="" class="cursor-pointer slider-pagination-add mr-3" style="width:42px">
+      </div>
+
     </div>
-   
+
   </header>
   <main>
     <div class="claro-cinema-container">
       <section class="today-claro-cinema">
         <div class="row no-gutters landing-header position-relative border-t border-l border-r border-b mb-4 p-4">
-                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-cinema"
-                    type="header-landing-cinema" id="icon_cinema">
+          <img src="./images/General/pencil.svg" alt="" class="pencil pencil-cinema" type="header-landing-cinema" id="icon_cinema">
           <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
             <img src="" alt="" id="icon_claro_cinema" class="lading-header-image-cinema">
           </div>
@@ -134,8 +139,7 @@
 
         <div class="no-gutters">
           <div class="today-cinema-videos-container position-relative border-t border-l border-r border-b p-3">
-                <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-slider"
-                    type="current-programming-cinema">
+            <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-slider" type="current-programming-cinema">
             <div class="section-slider cinema-slider today-claro-cinema-slider-prev">
             </div>
           </div>
@@ -143,13 +147,12 @@
       </section>
       <section class="imperdibles">
         <div class="header-title-section">
-        <div class="d-inline-block position-relative border-t border-l border-r border-b">
-                <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-title"
-                    type="title-cinema">
-          <h1 class="a-cinema-title" id="a-cinema-title">las <span>imperdibles</span></h1>
-          <h2 class="a-cinema-subtitle" id="a-cinema-subtitle">
-            ve un <span>adelanto</span> de la programación
-          </h2>
+          <div class="d-inline-block position-relative border-t border-l border-r border-b">
+            <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-title" type="title-cinema">
+            <h1 class="a-cinema-title" id="a-cinema-title">las <span>imperdibles</span></h1>
+            <h2 class="a-cinema-subtitle" id="a-cinema-subtitle">
+              ve un <span>adelanto</span> de la programación
+            </h2>
           </div>
         </div>
         <div class="imperdibles-video-container">
@@ -164,8 +167,7 @@
       <section class="recordar">
         <div class="header-title-section">
           <div class="d-inline-block position-relative border-t border-l border-r border-b">
-                <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-carrusel1"
-                    type="title-carrusel1">
+            <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-carrusel1" type="title-carrusel1">
             <h1 class="a-cinema-title" id="carrusel_1_title">
               recordar es volver <span class="recordar-title">a vivir</span>
             </h1>
@@ -176,10 +178,9 @@
           </div>
         </div>
         <div class="recordar-container-videos">
-         <div class="d-finline-block p-3 position-relative border-t border-l border-r border-b">
-                <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-carrousel1"
-                    type="carrusel1">
-          <div class="section-slider cinema-slider">
+          <div class="d-finline-block p-3 position-relative border-t border-l border-r border-b">
+            <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-carrousel1" type="carrusel1">
+            <div class="section-slider cinema-slider">
               <div class="poster">
 
                 <div class="poster-body">
@@ -198,8 +199,8 @@
                     </div>
                   </div>
                 </div>
-              
-            </div>
+
+              </div>
 
               <div class="poster">
 
@@ -219,8 +220,8 @@
                     </div>
                   </div>
                 </div>
-             
-            </div>
+
+              </div>
               <div class="poster">
                 <div class="poster-body">
                   <div class="showtime-container justify-content-end">
@@ -238,9 +239,9 @@
                     </div>
                   </div>
                 </div>
-             
-            </div>
-           
+
+              </div>
+
               <div class="poster">
 
                 <div class="poster-body">
@@ -260,8 +261,8 @@
                   </div>
                 </div>
               </div>
-           
-          </div>
+
+            </div>
           </div>
         </div>
 
@@ -269,8 +270,7 @@
       <section class="only-claro-cinema">
         <div class="header-title-section">
           <div class="d-inline-block position-relative border-t border-l border-r border-b p-3">
-                <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-carrusel2"
-                    type="title-carrusel2">
+            <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-carrusel2" type="title-carrusel2">
             <h1 class="a-cinema-title" id="carrusel_2_title"> sexy <span>románticas</span></h1>
             <h2 class="a-cinema-subtitle" id="carrusel_2_subtitle">
               <!-- ve un <span>adelanto</span> de la programación -->
@@ -279,12 +279,11 @@
           </div>
         </div>
         <div class="only-videos-container">
-        <div class="d-finline-block p-3 position-relative border-t border-l border-r border-b">
-                <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-carrousel2"
-                    type="carrusel2">
+          <div class="d-finline-block p-3 position-relative border-t border-l border-r border-b">
+            <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-carrousel2" type="carrusel2">
 
-          <div class="section-slider cinema-slider">
-            
+            <div class="section-slider cinema-slider">
+
               <div class="poster">
                 <div class="poster-body">
                   <div class="showtime-container justify-content-end">
@@ -302,9 +301,9 @@
                     </div>
                   </div>
                 </div>
-            
-            </div>
-            
+
+              </div>
+
               <div class="poster">
 
                 <div class="poster-body">
@@ -323,9 +322,9 @@
                     </div>
                   </div>
                 </div>
-            
-            </div>
-           
+
+              </div>
+
 
               <div class="poster">
 
@@ -345,9 +344,9 @@
                     </div>
                   </div>
                 </div>
-            
-            </div>
-          
+
+              </div>
+
 
               <div class="poster">
 
@@ -368,25 +367,25 @@
                   </div>
                 </div>
               </div>
-           
-          </div>
+
+            </div>
           </div>
         </div>
 
       </section>
       <section>
         <?php
-      //  include 'advertising-section-edi.php';
+        //  include 'advertising-section-edi.php';
         ?>
         <div class="ccinema-list-links-footer">
           <?php
-         // include './views/partials/list-links-footer.php';
+          // include './views/partials/list-links-footer.php';
           ?>
         </div>
       </section>
       <footer>
         <?php
-       // include 'footer.php';
+        // include 'footer.php';
         ?>
       </footer>
     </div>
@@ -403,7 +402,6 @@
 </body>
 <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
 <script>
-
   var socketCinema = new easyXDM.Socket({
     onReady: function() {
 
@@ -413,96 +411,95 @@
       socketCinema.postMessage(hey)
     }
   });
-  $(".today-claro-cinema").on("click", ".pencil-cinema", function () {
-          
-          let data = {
-              type: $(this).attr("type")
-             
-          }
-          console.log(data);
-          var json = JSON.stringify(data);
-          socketCinema.postMessage(json);
-         
-      });
-      $(".today-cinema-videos-container").on("click", ".pencil-slider", function () {
-           
-           let data = {
-             type: $(this).attr("type")
-            
-         }
-         console.log(data);
-         var json = JSON.stringify(data);
-         socketCinema.postMessage(json);
-       });
-       $(".imperdibles").on("click", ".pencil-title", function () {
-          
-           let data = {
-             type: $(this).attr("type")
-            
-         }
-         console.log(data);
-         var json = JSON.stringify(data);
-         socketCinema.postMessage(json);
-      });
+  $(".today-claro-cinema").on("click", ".pencil-cinema", function() {
 
-  
-      $(".imperdibles-video-container").on("click", ".pencil-promo", function () {
-       let data = {
-             type: $(this).attr("type")
-            
-         }
-         console.log(data);
-         var json = JSON.stringify(data);
-         socketCinema.postMessage(json);
-      });
-      $(".recordar").on("click", ".pencil-carrusel1", function () {
-       let data = {
-             type: $(this).attr("type")
-            
-         }
-         console.log(data);
-         var json = JSON.stringify(data);
-         socketCinema.postMessage(json);
-      });
-      $(".recordar-container-videos").on("click", ".pencil-carrousel1", function () {
-       let data = {
-             type: $(this).attr("type")
-            
-         }
-         console.log(data);
-         var json = JSON.stringify(data);
-         socketCinema.postMessage(json);
-      });
-      $(".only-claro-cinema").on("click", ".pencil-carrusel2", function () {
-       let data = {
-             type: $(this).attr("type")
-            
-         }
-         console.log(data);
-         var json = JSON.stringify(data);
-         socketCinema.postMessage(json);
-      });
-      $(".only-videos-container").on("click", ".pencil-carrousel2", function () {
-          
-       let data = {
-             type: $(this).attr("type")
-            
-         }
-         console.log(data);
-         var json = JSON.stringify(data);
-         socketCinema.postMessage(json);
-      });
-      $('.claro-cinema-header').on("click", ".slider-pagination-item", function () {
-                let type = "slider-pagination";
-                let data = {
-                    
-                    type: type
-                }
-                console.log(data);
-                var json = JSON.stringify(data);
-                socketCinema.postMessage(json);
-            });
-   
+    let data = {
+      type: $(this).attr("type")
+
+    }
+    console.log(data);
+    var json = JSON.stringify(data);
+    socketCinema.postMessage(json);
+
+  });
+  $(".today-cinema-videos-container").on("click", ".pencil-slider", function() {
+
+    let data = {
+      type: $(this).attr("type")
+
+    }
+    console.log(data);
+    var json = JSON.stringify(data);
+    socketCinema.postMessage(json);
+  });
+  $(".imperdibles").on("click", ".pencil-title", function() {
+
+    let data = {
+      type: $(this).attr("type")
+
+    }
+    console.log(data);
+    var json = JSON.stringify(data);
+    socketCinema.postMessage(json);
+  });
+
+
+  $(".imperdibles-video-container").on("click", ".pencil-promo", function() {
+    let data = {
+      type: $(this).attr("type")
+
+    }
+    console.log(data);
+    var json = JSON.stringify(data);
+    socketCinema.postMessage(json);
+  });
+  $(".recordar").on("click", ".pencil-carrusel1", function() {
+    let data = {
+      type: $(this).attr("type")
+
+    }
+    console.log(data);
+    var json = JSON.stringify(data);
+    socketCinema.postMessage(json);
+  });
+  $(".recordar-container-videos").on("click", ".pencil-carrousel1", function() {
+    let data = {
+      type: $(this).attr("type")
+
+    }
+    console.log(data);
+    var json = JSON.stringify(data);
+    socketCinema.postMessage(json);
+  });
+  $(".only-claro-cinema").on("click", ".pencil-carrusel2", function() {
+    let data = {
+      type: $(this).attr("type")
+
+    }
+    console.log(data);
+    var json = JSON.stringify(data);
+    socketCinema.postMessage(json);
+  });
+  $(".only-videos-container").on("click", ".pencil-carrousel2", function() {
+
+    let data = {
+      type: $(this).attr("type")
+
+    }
+    console.log(data);
+    var json = JSON.stringify(data);
+    socketCinema.postMessage(json);
+  });
+  $('.claro-cinema-header').on("click", ".slider-pagination-item", function() {
+    let type = "slider-pagination";
+    let data = {
+
+      type: type
+    }
+    console.log(data);
+    var json = JSON.stringify(data);
+    socketCinema.postMessage(json);
+  });
 </script>
 
 </html>
