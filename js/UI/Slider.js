@@ -584,33 +584,7 @@ export default class Slider {
     });
     //slider claro-canal
 
-    //slider para el de cinema
-    $("#banner-claro-cinema-edi").append(slideBannerClaroCinema);
-    $("#banner-claro-cinema-edi")
-      .not(".slick-initialized")
-      .slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: true,
-        appendDots: $(".programming-slider-dots"),
-        centerMode: false,
-        arrows: false,
-        prevArrow:
-          '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-        nextArrow:
-          '<img src="../images/sliders/next.png" class="arrow-next" />',
-        customPaging: function (slider, i) {
-          var thumb = $(slider.$slides[i]).data();
-          return (
-            "<p class='a-text-bold-tealblue slider-pagination-item pag ' slide_index=" +
-            i +
-            ">" +
-            (i + 1) +
-            "</p> "
-          );
-        },
-      });
+    // slider para el de cinema
 
     //slider concert
     $("#banner-concert-channel-edi").append(slideBannerConcertChannel);
