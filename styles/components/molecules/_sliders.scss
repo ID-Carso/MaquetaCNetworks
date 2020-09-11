@@ -19,14 +19,17 @@
 .header-slider {
   width: 100%;
   padding-bottom: 0px;
-  
+
 }
-div .header-slider-cinem .slick-track{
+
+div .header-slider-cinem .slick-track {
   margin-bottom: 0px !important;
 }
-div #banner-concert-channel-edi .slick-track{
+
+div #banner-concert-channel-edi .slick-track {
   margin-bottom: 0px !important;
 }
+
 .slick-slider {
   .slick-dots li button:before {
     font-size: 8px;
@@ -356,19 +359,27 @@ div #banner-concert-channel-edi .slick-track{
     margin-bottom: 0px !important;
   }
 }
+
 .programming-dots {
   border-radius: 18px !important;
   background: rgba(255, 255, 255, 0.8) !important;
   top: 65%;
 }
+
 .program-image-slider {
   width: 100% !important;
   height: 522.71px !important;
 }
-.header-slider-sinopsis{
+
+.header-slider-sinopsis {
   width: 100% !important;
   height: 475px !important;
+
+  div {
+    height: 100%;
+  }
 }
+
 .programming-slider-dots .slick-dots {
   position: initial;
   list-style: none;
@@ -386,6 +397,7 @@ div #banner-concert-channel-edi .slick-track{
   height: 522.71px !important;
   margin: 0px !important;
 }
+
 .header-slider-sinopsis .slick-slide {
   height: 475px !important;
   margin: 0px !important;
@@ -394,10 +406,11 @@ div #banner-concert-channel-edi .slick-track{
     height: 100% !important;
   }
 }
+
 .program-image-slider .slick-slide div {
   height: 100% !important;
 }
- 
+
 .programming-slider-dots .slick-dots li {
   position: relative;
   display: inline-block;
@@ -407,6 +420,7 @@ div #banner-concert-channel-edi .slick-track{
   padding: 0;
   cursor: pointer;
 }
+
 .programming-slider-dots .slick-dots {
   text-align: center !important;
   display: flex;
@@ -431,6 +445,7 @@ div #banner-concert-channel-edi .slick-track{
   bottom: -38%;
   transform: rotate(180deg);
 }
+
 .programming-slider-dots .slick-dots .slick-active::before {
   content: "";
   border-width: 6px;
@@ -442,6 +457,7 @@ div #banner-concert-channel-edi .slick-track{
   -webkit-transform: translate(-50%, 100%);
   transform: translate(-50%, -95%);
 }
+
 .programming-slider-dots .slick-dots .slick-active p {
   color: $cinemaRectangle;
   font-family: $montserratBlack;
@@ -455,6 +471,7 @@ div #banner-concert-channel-edi .slick-track{
   align-items: center;
   justify-content: center;
 }
+
 .programming-slider-dots .slick-dots li {
   margin: 0 10px !important;
 }

@@ -5087,6 +5087,10 @@ div #banner-concert-channel-edi .slick-track {
   height: 475px !important;
 }
 
+.header-slider-sinopsis div {
+  height: 100%;
+}
+
 .programming-slider-dots .slick-dots {
   position: initial;
   list-style: none;

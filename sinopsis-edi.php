@@ -76,63 +76,64 @@
                 include './views/partials/menu-tablet-white.php';
                 ?>
             </div>
-            
-      <?php
-      include './views/partials/menu-desktop-black.php'
-      ?>
-         <div class="header-slider-sinopsis  mx-auto" id="">
+
+            <?php
+            include './views/partials/menu-desktop-black.php'
+            ?>
+            <div class="header-slider-sinopsis  mx-auto" id="">
                 <div class="bor thumbnail-image-program position-relative " style="height:470px">
-                      <input type="file"  id="image_programming_1" class="input-image-program d-none image_programming " data-index="1">
-                      <label for="image_programming_1"
-                          class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
-                          <img src="./images/General/camara.svg" alt="add-photo"
-                              class=" cursor-pointer add-photo " />
-                          <span class="a-text-bold-warm text-plus mt-3">1000px X 342px</span>
-                          <img src="./images/General/image-synopsis-carrusel.jpg"
-                              class="w-100 cursor-pointer image-cover prev-image-program h-100 thumbnail-image-program" />
-                      </label>
-                  </div>
-                  <div class="bor thumbnail-image-program position-relative " style="height:470px">
-                      <input type="file"  id="image_programming_2" class="input-image-program d-none image_programming " data-index="1">
-                      <label for="image_programming_2"
-                          class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
-                          <img src="./images/General/camara.svg" alt="add-photo"
-                              class=" cursor-pointer add-photo " />
-                          <span class="a-text-bold-warm text-plus mt-3">1000px X 342px</span>
-                          <img src="./images/General/image-synopsis-carrusel.jpg"
-                              class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
-                      </label>
-                  </div>
-                  <div class="bor thumbnail-image-program position-relative " style="height:470px">
-                      <input type="file" name="image_programming[]" id="image_programming_3" class="input-image-program d-none image_programming " data-index="1">
-                      <label for="image_programming_3"
-                          class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
-                          <img src="./images/General/camara.svg" alt="add-photo"
-                              class=" cursor-pointer add-photo " />
-                          <span class="a-text-bold-warm text-plus mt-3">1000px X 342px</span>
-                          <img src="./images/General/image-synopsis-carrusel.jpg"
-                              class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
-                      </label>
-                  </div>
-                  <div class="bor thumbnail-image-program position-relative " style="height:470px">
-                      <input type="file" name="image_programming[]" id="image_programming_3" class="input-image-program d-none image_programming " data-index="1">
-                      <label for="image_programming_3"
-                          class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
-                          <img src="./images/General/camara.svg" alt="add-photo"
-                              class=" cursor-pointer add-photo " />
-                          <span class="a-text-bold-warm text-plus mt-3">1000px X 342px</span>
-                          <img src="./images/General/image-synopsis-carrusel.jpg"
-                              class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
-                      </label>
-                  </div>
+                    <input type="file" id="image_programming_1" class="input-image-program d-none image_programming "
+                        data-index="1">
+                    <label for="image_programming_1"
+                        class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
+                        <img src="./images/General/camara.svg" alt="add-photo" class=" cursor-pointer add-photo " />
+                        <span class="a-text-bold-warm text-plus mt-3">1000px X 342px</span>
+                        <!---->
+                        <img src="./images/General/image-synopsis-carrusel.jpg"
+                            class="w-100 cursor-pointer image-cover prev-image-program h-100 thumbnail-image-program" />
+                    </label>
+                </div>
+                <div class="bor thumbnail-image-program position-relative " style="height:470px">
+                    <input type="file" id="image_programming_2" class="input-image-program d-none image_programming "
+                        data-index="1">
+                    <label for="image_programming_2"
+                        class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
+                        <img src="./images/General/camara.svg" alt="add-photo" class=" cursor-pointer add-photo " />
+                        <span class="a-text-bold-warm text-plus mt-3">1920px X 657px</span>
+                        <img src="./images/General/image-synopsis-carrusel.jpg"
+                            class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                    </label>
+                </div>
+                <div class="bor thumbnail-image-program position-relative " style="height:470px">
+                    <input type="file" name="image_programming[]" id="image_programming_3"
+                        class="input-image-program d-none image_programming " data-index="1">
+                    <label for="image_programming_3"
+                        class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
+                        <img src="./images/General/camara.svg" alt="add-photo" class=" cursor-pointer add-photo " />
+                        <span class="a-text-bold-warm text-plus mt-3">1000px X 342px</span>
+                        <img src="./images/General/image-synopsis-carrusel.jpg"
+                            class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                    </label>
+                </div>
+                <div class="bor thumbnail-image-program position-relative " style="height:470px">
+                    <input type="file" name="image_programming[]" id="image_programming_3"
+                        class="input-image-program d-none image_programming " data-index="1">
+                    <label for="image_programming_3"
+                        class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
+                        <img src="./images/General/camara.svg" alt="add-photo" class=" cursor-pointer add-photo " />
+                        <span class="a-text-bold-warm text-plus mt-3">1000px X 342px</span>
+                        <img src="./images/General/image-synopsis-carrusel.jpg"
+                            class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                    </label>
+                </div>
             </div>
             <div class="d-flex position-absolute programming-dots space-do">
                 <div class=" d-inline-block position-relative programming-slider-dots align-items-center">
                 </div>
-               
+
             </div>
-            </div>
-        
+        </div>
+
     </header>
     <main>
         <div class="synopsis-content">
@@ -145,7 +146,8 @@
                         <a href="sinopsis.php#dropdown-country"> <button class="synopsis-button">
                                 <div class="d-flex align-items-center">
 
-                                    <p class="synopsis-schedule-text mb-0">Horarios</p><img src="./images/home/clock.svg" alt="">
+                                    <p class="synopsis-schedule-text mb-0">Horarios</p><img
+                                        src="./images/home/clock.svg" alt="">
 
                                 </div>
                             </button></a>
@@ -158,15 +160,22 @@
                     <h1 class="synopsis-section-title d-flex justify-content-center ml-5">sinopsis</h1>
 
                     <div class="synopsis-body-container no-gutters">
-                        <div class="col-md-7 col-lg-6 mr-2  mb-0 synopsis-main-image border-t border-l border-r border-b position-relative d-inline-block">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-main"type="synopsis-main-image">
-                        <img src="./images/sinopsis/images.jpeg" alt="" class="w-100">
+                        <div
+                            class="col-md-7 col-lg-6 mr-2  mb-0 synopsis-main-image border-t border-l border-r border-b position-relative d-inline-block">
+                            <img src="./images/General/pencil.svg" alt="" class="pencil pencil-main"
+                                type="synopsis-main-image">
+                            <!--Imagen principal de sinopsis-->
+                            <img src="" alt="" class="p-3 w-100 image-synopsis-edi">
                         </div>
-                        <div class="col-md-7 col-lg-6 mx-sm-auto mx-md-auto synopsis-description-container border-t border-l border-r border-b position-relative ">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-description" type="synopsis-description-container">
+                        <div
+                            class="col-md-7 col-lg-6 mx-sm-auto mx-md-auto synopsis-description-container border-t border-l border-r border-b position-relative ">
+                            <img src="./images/General/pencil.svg" alt="" class="pencil pencil-description"
+                                type="synopsis-description-container">
                             <div>
-                                <h1 class="a-text-white-monblack h3 d-flex justify-content-center mt-3"> TÍTULO</h1>
-                                <p class="a-text-medium-white text-normal synopsis-description pl-3">Texto</p>
+                                <h1
+                                    class="a-text-white-monblack synopsis-title-edi h3 d-flex justify-content-center mt-3">
+                                </h1>
+                                <p class="a-text-medium-white text-normal synopsis-description-edi pl-3">Texto</p>
                             </div>
 
                             <div class="no-gutters">
@@ -177,37 +186,47 @@
                                     </button>
                                     <a href="sinopsis.php#dropdown-country"><button class="synopsis-button">
                                             <div class="d-flex align-items-center">
-                                                <p class="synopsis-schedule-text mb-0">Horarios</p><img src="./images/home/clock.svg" alt="">
+                                                <p class="synopsis-schedule-text mb-0">Horarios</p><img
+                                                    src="./images/home/clock.svg" alt="">
                                             </div>
                                         </button></a>
                                 </div>
 
                             </div>
-
-
                         </div>
 
 
                     </div>
                     <div class="no-gutters">
                         <div class="col-md-10 col-lg-12 mx-auto">
-                            <div class="synopsis-images-container no-gutters border-t border-l border-r border-b position-relative p-3">
-                            <img src="./images/General/pencil.svg" alt="" class="pencil pencil-images" type="synopsis-images-container">
-                            <img src="./images/sinopsis/images.jpeg" alt="" class="col-md-6 col-lg-4 synopsis-image">
-                                <img src="./images/sinopsis/images.jpeg" alt="" class="col-md-6 col-lg-4 synopsis-image">
-                                <img src="./images/sinopsis/images.jpeg" alt="" class="col-lg-4 synopsis-image">
+                            <div
+                                class="synopsis-images-container no-gutters border-t border-l border-r border-b position-relative p-3">
+
+                                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-images"
+                                    type="synopsis-images-container">
+
+                                <!--Image synopsis frame 1-->
+                                <img src="" alt=""
+                                    class="mr-0 pr-3 synopsis-image-1-edi col-md-6 col-lg-4 synopsis-image">
+                                <!--Image synopsis frame 2-->
+                                <img src="" alt="" class="pr-3 synopsis-image-2-edi col-md-6 col-lg-4 synopsis-image">
+                                <!--Image synopsis frame 3-->
+                                <img src="" alt="" class="pr-3 col-lg-4 synopsis-image synopsis-image-3-edi">
                             </div>
                             <div class="">
-                                <div class="synopsis-details-container border-t border-l border-r border-b position-relative p-3">
-                                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-details" type="synopsis-datails-container">
+                                <div
+                                    class="synopsis-details-container border-t border-l border-r border-b position-relative p-3">
+                                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-details"
+                                        type="synopsis-datails-container">
                                     <div class="synopsis-rating-container">
-                                        <p class="synopsis-text synopsis-detail-text">Estados Unidos</p>
-                                        <p class="synopsis-text synopsis-detail-text">2013</p>
-                                        <p class="synopsis-text synopsis-detail-text">Clasificación C</p>
+                                        <p class="synopsis-text synopsis-detail-text synopsis-country-edi">Estados
+                                            Unidos</p>
+                                        <p class="synopsis-text synopsis-year-edi synopsis-detail-text"></p>
+                                        <p class="synopsis-text synopsis-detail-text synopsis-rating-edi"></p>
                                     </div>
                                     <div class="synopsis-seasons-container">
-                                        <p class="synopsis-text synopsis-detail-text">4 Temporadas</p>
-                                        <p class="synopsis-text synopsis-detail-text">60 Minutos</p>
+                                        <p class="synopsis-text synopsis-detail-text synopsis-seasons-edi"></p>
+                                        <p class="synopsis-text synopsis-detail-text synopsis-duration-edi"></p>
                                     </div>
                                 </div>
                             </div>
@@ -227,7 +246,7 @@
                                 </div>
                                 <div class="contenedor-columna centro ">
                                     <span class="a-text-white-semibold h3 ml-3">Hora</span>
-                                    <img src="./images/General/reloj.svg" alt="time" class="mb-2 ml-2">>
+                                    <img src="./images/General/reloj.svg" alt="time" class="mb-2 ml-2">
                                 </div>
                                 <div class="contenedor-columna centro ">
                                     <span class="a-text-white-semibold h3 ml-3">L</span>
@@ -255,370 +274,375 @@
                                 <div class="contenedor-columna " style="width: 201px;">
                                     <div class="container-paises mb-3">
                                         <div class="pt-3">
-                                        <img src="./images/paises/chile.svg" alt="chile" class="mb-2 ml-3">
-                                        <span class="a-text-white-semibold text-normal ml-3"> Chile</span>                          
+                                            <img src="./images/paises/chile.svg" alt="chile" class="mb-2 ml-3">
+                                            <span class="a-text-white-semibold text-normal ml-3"> Chile</span>
                                         </div>
                                         <div class="pt-3">
-                                        <img src="./images/paises/paraguay.svg" alt="paraguay" class="mb-2 ml-3">
-                                        <span class="a-text-white-semibold text-normal ml-3"> Paraguay</span>                                       
+                                            <img src="./images/paises/paraguay.svg" alt="paraguay" class="mb-2 ml-3">
+                                            <span class="a-text-white-semibold text-normal ml-3"> Paraguay</span>
                                         </div>
                                         <div class="pt-3">
-                                        <img src="./images/paises/dominican-republic.svg" alt="dominican-republic" class="mt-2 ml-3">
-                                        <span class="a-text-white-semibold text-normal ml-3">República <br/><span class="a-text-white-semibold text-normal ml-5 pl-3">Dominicana</span>  </span>   
-                                        
+                                            <img src="./images/paises/dominican-republic.svg" alt="dominican-republic"
+                                                class="mt-2 ml-3">
+                                            <span class="a-text-white-semibold text-normal ml-3">República <br /><span
+                                                    class="a-text-white-semibold text-normal ml-5 pl-3">Dominicana</span>
+                                            </span>
+
                                         </div>
 
                                     </div>
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style="width: 161px;">
-                                     <div class="container-hora d-inline-block mb-3">
-                                         <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
-                                         <p class="a-text-white-bold text-normal centro ">12:00</p>
+                                </div>
+                                <div class="contenedor-columna pl-4" style="width: 161px;">
+                                    <div class="container-hora d-inline-block mb-3">
+                                        <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
+                                        <p class="a-text-white-bold text-normal centro ">12:00</p>
 
-                                     </div>
-                                     <div class="container-hora d-inline-block mb-3">
-                                         <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
-                                         <p class="a-text-white-bold text-normal centro ">12:30</p>
+                                    </div>
+                                    <div class="container-hora d-inline-block mb-3">
+                                        <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
+                                        <p class="a-text-white-bold text-normal centro ">12:30</p>
 
-                                     </div>
+                                    </div>
 
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                    <div class="container-days-inac mb-3">                                    
-                                     </div>
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                    
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                         <div class="container-days-inac mb-3">                                    
-                                        </div>
-                                        <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
                                         <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                        </div>
-                                    
-                                 </div>
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+
+                                </div>
                             </div>
                             <div class="contenedor-fila ">
                                 <div class="contenedor-columna " style="width: 201px;">
                                     <div class="container-paises mb-3">
                                         <div class="pt-3 pb-2">
-                                        <img src="./images/paises/colombia.svg" alt="colombia" class="mb-2 ml-3">
-                                        <span class="a-text-white-semibold text-normal ml-3"> Colombia</span>  
+                                            <img src="./images/paises/colombia.svg" alt="colombia" class="mb-2 ml-3">
+                                            <span class="a-text-white-semibold text-normal ml-3"> Colombia</span>
                                         </div>
                                         <div class="pb-2">
-                                        <img src="./images/paises/peru.svg" alt="peru" class="mb-2 ml-3">
-                                        <span class="a-text-white-semibold text-normal ml-3"> Perú</span>                    
+                                            <img src="./images/paises/peru.svg" alt="peru" class="mb-2 ml-3">
+                                            <span class="a-text-white-semibold text-normal ml-3"> Perú</span>
                                         </div>
                                         <div class="pb-2">
-                                        <img src="./images/paises/panama.svg" alt="panama" class="mb-2 ml-3">
-                                        <span class="a-text-white-semibold text-normal ml-3"> Panamá</span> 
+                                            <img src="./images/paises/panama.svg" alt="panama" class="mb-2 ml-3">
+                                            <span class="a-text-white-semibold text-normal ml-3"> Panamá</span>
                                         </div>
                                         <div class="pb-2">
-                                        <img src="./images/paises/ecuador.svg" alt="ecuador" class="mb-2 ml-3">
-                                        <span class="a-text-white-semibold text-normal ml-3"> Ecuador</span>                   
+                                            <img src="./images/paises/ecuador.svg" alt="ecuador" class="mb-2 ml-3">
+                                            <span class="a-text-white-semibold text-normal ml-3"> Ecuador</span>
                                         </div>
 
                                     </div>
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style="width: 161px;">
-                                     <div class="container-hora d-inline-block mb-3">
-                                         <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
-                                         <p class="a-text-white-bold text-normal centro ">11:00</p>
-
-                                     </div>
-                                     <div class="container-hora d-inline-block mb-3">
-                                         <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
-                                         <p class="a-text-white-bold text-normal centro ">11:30</p>
-
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                    <div class="container-days-inac mb-3">                                    
-                                     </div>
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3 ">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                    
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                         <div class="container-days-inac mb-3">                                    
-                                        </div>
-                                        <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                        </div>
-                                    
-                                     </div>
                                 </div>
-                                <div class="contenedor-fila">
+                                <div class="contenedor-columna pl-4" style="width: 161px;">
+                                    <div class="container-hora d-inline-block mb-3">
+                                        <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
+                                        <p class="a-text-white-bold text-normal centro ">11:00</p>
+
+                                    </div>
+                                    <div class="container-hora d-inline-block mb-3">
+                                        <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
+                                        <p class="a-text-white-bold text-normal centro ">11:30</p>
+
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3 ">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="contenedor-fila">
                                 <div class="contenedor-columna " style="width: 201px;">
                                     <div class="container-paises mb-3">
                                         <div class="pt-2">
-                                        <img src="./images/paises/el-salvador.svg" alt="el-salvador" class="mb-2 ml-3">
-                                        <span class="a-text-white-semibold text-normal ml-3"> El Salvador</span> 
+                                            <img src="./images/paises/el-salvador.svg" alt="el-salvador"
+                                                class="mb-2 ml-3">
+                                            <span class="a-text-white-semibold text-normal ml-3"> El Salvador</span>
                                         </div>
                                         <div class="">
-                                        <img src="./images/paises/honduras.svg" alt="honduras" class="mb-2 ml-3">
-                                        <span class="a-text-white-semibold text-normal ml-3"> Honduras</span>
+                                            <img src="./images/paises/honduras.svg" alt="honduras" class="mb-2 ml-3">
+                                            <span class="a-text-white-semibold text-normal ml-3"> Honduras</span>
                                         </div>
                                         <div class="">
-                                        <img src="./images/paises/nicaragua.svg" alt="nicaragua" class="mb-2 ml-3">
-                                        <span class="a-text-white-semibold text-normal ml-3"> Nicaruagua</span>
+                                            <img src="./images/paises/nicaragua.svg" alt="nicaragua" class="mb-2 ml-3">
+                                            <span class="a-text-white-semibold text-normal ml-3"> Nicaruagua</span>
                                         </div>
                                         <div class="">
-                                        <img src="./images/paises/guatemala.svg" alt="guatemala" class="mb-2 ml-3">
-                                        <span class="a-text-white-semibold text-normal ml-3"> Guatemala</span>   
+                                            <img src="./images/paises/guatemala.svg" alt="guatemala" class="mb-2 ml-3">
+                                            <span class="a-text-white-semibold text-normal ml-3"> Guatemala</span>
                                         </div>
                                         <div class="pb-3">
-                                        <img src="./images/paises/costa-rica.svg" alt="costa-rica" class="mb-2 ml-3">
-                                        <span class="a-text-white-semibold text-normal ml-3"> Costa Rica</span>
+                                            <img src="./images/paises/costa-rica.svg" alt="costa-rica"
+                                                class="mb-2 ml-3">
+                                            <span class="a-text-white-semibold text-normal ml-3"> Costa Rica</span>
                                         </div>
 
                                     </div>
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style="width: 161px;">
-                                     <div class="container-hora d-inline-block mb-3">
-                                         <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
-                                         <p class="a-text-white-bold text-normal centro ">10:00</p>
-
-                                     </div>
-                                     <div class="container-hora d-inline-block mb-3">
-                                         <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
-                                         <p class="a-text-white-bold text-normal centro ">10:30</p>
-
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                    <div class="container-days-inac mb-3">                                    
-                                     </div>
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                    
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                         <div class="container-days-inac mb-3">                                    
-                                        </div>
-                                        <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                        </div>
-                                    
-                                     </div>
                                 </div>
-                                <div class="contenedor-fila">
+                                <div class="contenedor-columna pl-4" style="width: 161px;">
+                                    <div class="container-hora d-inline-block mb-3">
+                                        <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
+                                        <p class="a-text-white-bold text-normal centro ">10:00</p>
+
+                                    </div>
+                                    <div class="container-hora d-inline-block mb-3">
+                                        <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
+                                        <p class="a-text-white-bold text-normal centro ">10:30</p>
+
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="contenedor-fila">
                                 <div class="contenedor-columna " style="width: 201px;">
                                     <div class="container-paises mb-3">
                                         <div class="pt-3">
-                                        <img src="./images/paises/argentina.svg" alt="argentina" class="mb-2 ml-3">
-                                        <span class="a-text-white-semibold text-normal ml-3"> Argentina</span> 
+                                            <img src="./images/paises/argentina.svg" alt="argentina" class="mb-2 ml-3">
+                                            <span class="a-text-white-semibold text-normal ml-3"> Argentina</span>
                                         </div>
-                                        
+
 
                                     </div>
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style="width: 161px;">
-                                     <div class="container-hora d-inline-block mb-3">
-                                         <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
-                                         <p class="a-text-white-bold text-normal centro ">1:00</p>
-
-                                     </div>
-                                     <div class="container-hora d-inline-block mb-3">
-                                         <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
-                                         <p class="a-text-white-bold text-normal centro ">1:30</p>
-
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                     <div class="container-days-inac mb-3">                                    
-                                     </div>
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                    <div class="container-days-inac mb-3">                                    
-                                     </div>
-                                     <div class="container-days d-flex justify-content-center align-items-center mb-3 ">
-                                     <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                     </div>
-                                    
-
-                                 </div>
-                                 <div class="contenedor-columna pl-4" style=" width: 59px;">
-                                         <div class="container-days-inac mb-3">                                    
-                                        </div>
-                                        <div class="container-days d-flex justify-content-center align-items-center mb-3 ">
-                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
-                                        </div>
-                                    
-                                     </div>
                                 </div>
+                                <div class="contenedor-columna pl-4" style="width: 161px;">
+                                    <div class="container-hora d-inline-block mb-3">
+                                        <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
+                                        <p class="a-text-white-bold text-normal centro ">1:00</p>
+
+                                    </div>
+                                    <div class="container-hora d-inline-block mb-3">
+                                        <p class="text-normal a-text-bold-cool-grey m-0  mt-3 centro">Inicio</p>
+                                        <p class="a-text-white-bold text-normal centro ">1:30</p>
+
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3 ">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+
+
+                                </div>
+                                <div class="contenedor-columna pl-4" style=" width: 59px;">
+                                    <div class="container-days-inac mb-3">
+                                    </div>
+                                    <div class="container-days d-flex justify-content-center align-items-center mb-3 ">
+                                        <img src="./images/General/selector.svg" alt="selector" class="centro">
+                                    </div>
+
+                                </div>
+                            </div>
 
 
 
                         </div>
                     </div>
-                   <!-- <div class="no-gutters">
+                    <!-- <div class="no-gutters">
 
                         <div class="col-11 mx-auto dropdownCountry">
                         </div>
@@ -632,11 +656,11 @@
             ?>
             <div class="cconcert-list-links-footer">
                 <?php
-              //  include './views/partials/list-links-footer.php';
+                //  include './views/partials/list-links-footer.php';
                 ?>
             </div>
             <?php
-           // include 'footer.php'
+            // include 'footer.php'
             ?>
         </div>
         </div>
@@ -648,74 +672,176 @@
 </body>
 <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
 <script>
-  
-  var socketSinopsis = new easyXDM.Socket({
-    onReady: function () {
-      var hey = 2640;
-      socketSinopsis.postMessage(hey)
-    }
-  });
-  $('.synopsis-header').on("click", ".slider-pagination-item", function () {
-                let type = "slider-pagination";
-                let data = {
-                    
-                    type: type
-                }
-                console.log(data);
-                var json = JSON.stringify(data);
-                socketSinopsis.postMessage(json);
-            });
- 
-  $(".synopsis-main-image").on("click", ".pencil-main", function () {
-          
-          let data = {
-                type: $(this).attr("type")
-               
-            }
-            console.log(data);
-            var json = JSON.stringify(data);
-            socketSinopsis.postMessage(json);
-         });
-         $(".synopsis-description-container").on("click", ".pencil-description", function () {
-          
-          let data = {
-                type: $(this).attr("type")
-               
-            }
-            console.log(data);
-            var json = JSON.stringify(data);
-            socketSinopsis.postMessage(json);
-         });
-         $(".synopsis-images-container").on("click", ".pencil-images", function () {
-          
-          let data = {
-                type: $(this).attr("type")
-               
-            }
-            console.log(data);
-            var json = JSON.stringify(data);
-            socketSinopsis.postMessage(json);
-         });
-         $(".synopsis-details-container").on("click", ".pencil-details", function () {
-          
-          let data = {
-                type: $(this).attr("type")
-               
-            }
-            console.log(data);
-            var json = JSON.stringify(data);
-            socketSinopsis.postMessage(json);
-         });
-         $(".synopsis-details-container").on("click", ".pencil-details", function () {
-          
-          let data = {
-                type: $(this).attr("type")
-               
-            }
-            console.log(data);
-            var json = JSON.stringify(data);
-            socketSinopsis.postMessage(json);
-         });
+    var socketSinopsis = new easyXDM.Socket({
+        onReady: function () {
+            var hey = 2640;
+            socketSinopsis.postMessage(hey)
+        },
+        onMessage: function (message, origin) {
+            if (typeof message == "object") {
+                message.then((data) => {
+                    if (data.code == 200) {
 
+                        let imageSynopsis = data.data.image_synopsis ||
+                            "http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/synopsis/image-synopsis-horizontal.png";
+                        let imageSynopsis1 = data.data.image_synopsis_frame_1 ||
+                            "http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/synopsis/image-synopsis-horizontal.png"
+                        let imageSynopsis2 = data.data.image_synopsis_frame_2 ||
+                            "http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/synopsis/image-synopsis-horizontal.png"
+                        let imageSynopsis3 = data.data.image_synopsis_frame_3 ||
+                            "http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/synopsis/image-synopsis-horizontal.png"
+
+                        $('.synopsis-description-edi').text(data.data.sinopsis)
+                        $('.synopsis-title-edi').text(data.data.title)
+                        $('.synopsis-rating-edi').text(`Clasificación ${data.data.rating}`)
+                        $('.synopsis-duration-edi').text(data.data.duration)
+                        $('.synopsis-seasons-edi').text(`${data.data.seasons} Temporadas`)
+                        $('.synopsis-year-edi').text(data.data.year)
+                        $('.image-synopsis-edi').attr("src", imageSynopsis);
+                        $('.synopsis-image-1-edi').attr("src", imageSynopsis1);
+                        $('.synopsis-image-2-edi').attr("src", imageSynopsis2);
+                        $('.synopsis-image-3-edi').attr("src", imageSynopsis3);
+                        $('.pencil').attr("chapter_id", data.data.chapter_id)
+                        //$('.synopsis-country-edi').text()
+                        let index = 1;
+                        let slide = "";
+                        let image = ""
+                        while (true) {
+                            if (data.data[`image_background_${index}`] !== undefined) {
+                                image = data.data[`image_background_${index}`]
+                                if (data.data[`image_background_${index}`] == null) {
+                                    image = "./images/General/image-synopsis-carrusel.jpg"
+                                }
+                                console.log(image);
+                                slide += `
+                                        <div class="bor thumbnail-image-program position-relative h-100">
+                                            <input type="file" id="image_banner_synopsis_${index}"
+                                            class="input-image-program d-none input-banner-synopsis" data-index="1">
+                                            <label for="image_banner_synopsis_${index}"
+                                            class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
+                                            <img src="./images/General/camara.svg" alt="add-photo"
+                                            class=" cursor-pointer add-photo " />
+                                            <span class="a-text-bold-warm text-plus mt-3 banner-text pl-4 pr-4 pt-2 pb-2">1920px X 657px</span>
+                                            <img src="${image}"
+                                            class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                                            </label>
+                                        </div>
+                                        `
+                                index++
+
+                            } else {
+                                break;
+                            }
+                        }
+                        $(".header-slider-sinopsis").html(slide);
+                        try {
+                            $(".header-slider-sinopsis").slick("unslickk")
+                            $(".header-slider-sinopsis").slick({
+                                slidesToShow: 1,
+                                dots: true,
+                                appendDots: $(".programming-slider-dots"),
+                                initialSlide: 0,
+                                infinite: false,
+                                arrows: false,
+
+                                customPaging: function (slider, i) {
+                                    var thumb = $(slider.$slides[i]).data();
+                                    return (
+                                        " <p class='a-text-bold-tealblue slider-pagination-item pag mr-2 '> " +
+                                        (i + 1) +
+                                        "</p> "
+                                    );
+                                },
+                            });
+                        } catch (error) {
+                            $(".header-slider-sinopsis").slick({
+                                slidesToShow: 1,
+                                dots: true,
+                                appendDots: $(".programming-slider-dots"),
+                                initialSlide: 0,
+                                infinite: false,
+                                arrows: false,
+
+                                customPaging: function (slider, i) {
+                                    var thumb = $(slider.$slides[i]).data();
+                                    return (
+                                        " <p class='a-text-bold-tealblue slider-pagination-item pag mr-2 '> " +
+                                        (i + 1) +
+                                        "</p> "
+                                    );
+                                },
+                            });
+                        }
+                    }
+                })
+            }
+        }
+    });
+    $('.synopsis-header').on("click", ".slider-pagination-item", function () {
+        let type = "slider-pagination";
+        let data = {
+
+            type: type,
+            id: $(".pencil").attr("chapter_id")
+        }
+
+        var json = JSON.stringify(data);
+        socketSinopsis.postMessage(json);
+    });
+
+    $(".synopsis-main-image").on("click", ".pencil-main", function () {
+
+        let data = {
+            type: $(this).attr("type"),
+            id: $(".pencil").attr("chapter_id")
+
+        }
+
+        var json = JSON.stringify(data);
+        socketSinopsis.postMessage(json);
+    });
+    $(".synopsis-description-container").on("click", ".pencil-description", function () {
+
+        let data = {
+            type: $(this).attr("type"),
+            id: $(".pencil").attr("chapter_id")
+        }
+
+        var json = JSON.stringify(data);
+        socketSinopsis.postMessage(json);
+    });
+    $(".synopsis-images-container").on("click", ".pencil-images", function () {
+
+        let data = {
+            type: $(this).attr("type"),
+            id: $(".pencil").attr("chapter_id")
+        }
+
+        var json = JSON.stringify(data);
+        socketSinopsis.postMessage(json);
+    });
+    $(".synopsis-details-container").on("click", ".pencil-details", function () {
+
+        let data = {
+            type: $(this).attr("type"),
+            id: $(".pencil").attr("chapter_id")
+
+        }
+
+        var json = JSON.stringify(data);
+        socketSinopsis.postMessage(json);
+    });
+    $(".synopsis-details-container").on("click", ".pencil-details", function () {
+
+        let data = {
+            type: $(this).attr("type"),
+            id: $(".pencil").attr("chapter_id")
+
+        }
+
+        var json = JSON.stringify(data);
+        socketSinopsis.postMessage(json);
+    });
 </script>
+
 </html>
