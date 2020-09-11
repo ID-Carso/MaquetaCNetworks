@@ -5174,8 +5174,8 @@ div #banner-concert-channel-edi .slick-track {
 }
 
 .programming-slider-dots .slick-dots .slick-active p {
-  /* color: #0097a9; */
-  color: #ffffff;
+  color: #0097a9;
+  /* color: #ffffff; */
   font-family: "Montserrat-Black";
 }
 

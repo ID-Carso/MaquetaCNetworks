@@ -7,13 +7,6 @@
   <input type="hidden" id="actual_landing" value="claro_cinema">
 </head>
 
-<style>
-  .slick-active{
-    background: #0097a9;
-    color: #fff !important;
-  }
-</style>
-
 <body class="claro-cinema-content">
   <header class="claro-cinema-header">
     <div class="hamburguer-menu">

@@ -933,7 +933,7 @@ export default class Section {
         customPaging: function (slider, i) {
           var thumb = $(slider.$slides[i]).data();
           return (
-            "<p class='a-text-bold-tealblue slider-pagination-item' slide_index=" +
+            "<p class='a-text-bold-tealblue slider-pagination-item activando-ando' slide_index=" +
             i +
             ">" +
             (i + 1) +
