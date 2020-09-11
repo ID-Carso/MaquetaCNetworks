@@ -4480,8 +4480,8 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .claro-navbar-black-edi {
   background: rgba(255, 255, 255, 0.8);
-  padding: 9px 9px 9px 181px !important;
-  margin-left: -104px;
+  padding: 9px 9px 9px 250px !important;
+  margin-left: -250px;
   border-radius: 20px;
 }
 
@@ -4493,7 +4493,7 @@ input[type="radio"]:checked + .mujer-estilo {
 }
 
 .nav-content-edi {
-  margin: 0 35px 0 80px;
+  margin: 0 150px 0 0;
   position: relative;
 }
 

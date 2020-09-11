@@ -108,10 +108,10 @@
                     </div>
                 </nav>
                 <?php
-                include './views/partials/menu-desktop-black.php'
+                include './views/partials/menu-desktop-black-edi.php'
                 ?>
 
-                <div class="header-details header-detail-margin col-md-6">
+                <div class="header-details header-detail-margin col-md-6" style="margin-top: 242px;">
                     <h1 class="header-h1">
                         <span class="header-span">Descubre<br>Claro<br></span>Networks
                     </h1>
@@ -119,7 +119,7 @@
             </div>
             <div class="d-flex justify-content-center mx-auto ">
                 <div class=" d-inline-block   align-items-center mb-5">
-                <p class='a-text-bold-tealblue slider-pagination-item-home pag mr-2 cursor-pointer'>1 </p>
+                <p class='a-text-bold-tealblue slider-pagination-item-home mr-2 cursor-pointer'>1 </p>
                 </div>
             </div>
         </header>
