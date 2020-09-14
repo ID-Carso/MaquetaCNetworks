@@ -315,6 +315,15 @@
   vertical-align: middle;
   padding: 4px;
 }
+.container-width-colum{
+  width: 201px;
+}
+.container-width-time{
+  width: 161px;
+}
+.container-width-selec{
+  width: 59px;
+}
 .container-paises{
   width: 201px;
   height: 202px;
@@ -323,7 +332,8 @@
   box-shadow: 1px 1px 3px 0 $charcoal-grey;
   background-color:$black-four;
 }
-.container-hora{
+
+.container-hora{ 
   width: 161px;
   height: 93px;
   object-fit: contain;

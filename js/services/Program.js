@@ -462,9 +462,7 @@ function getPrograms(date, country) {
                 if (index == 0) {
                     if (arrayCanalClaro.includes(program.chapter_id)) {
                         programCanalClaro = `
-         <div class=" p-3 border-t border-l border-r border-b position-relative">          
            <div class="poster">
-           <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
                   <div class="poster-body">
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                       <div class="thumbnail-body" _id="${program.chapter_id}">
@@ -479,15 +477,13 @@ function getPrograms(date, country) {
                         </div>
                   </div>
               </div>
-        </div>
+        
                 `;
                     } else {
                         programCanalClaro = `
          
             <div>
-              <div class=" p-3 border-t border-l border-r border-b position-relative">        
                 <div class="poster" >
-                <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
                   <div class="poster-body">
                       <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                       <div class="thumbnail-body" _id="${program.chapter_id}">
@@ -504,16 +500,16 @@ function getPrograms(date, country) {
                     </div>
                   </div>
               </div>
-         </div>
+       
                 `;
                     }
                 } else {
                     if (arrayCanalClaro.includes(program.chapter_id)) {
                         programCanalClaro = `
-            <div class=" p-3 border-t border-l border-r border-b position-relative">   
+    
                 <div class="poster">
-                <button class="d-flex align-items-center justify-content-center pencil-black  a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
-                  <div class="poster-body">
+
+                <div class="poster-body">
                       <div class="showtime-container justify-content-between">
                           <p class="a-programming-text">${program.time}</p>
                           <button type="button" class="poster-button remove-program" _id="${program.chapter_id}"><img src="../images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
@@ -534,13 +530,12 @@ function getPrograms(date, country) {
 
                   </div>
               </div>
-              </div>
+              
                 `;
                     } else {
                         programCanalClaro = `
-            <div class=" p-3 border-t border-l border-r border-b position-relative">   
+              
                 <div class="poster" >
-                <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
 
                   <div class="poster-body">
                       <div class="showtime-container justify-content-between">
@@ -563,7 +558,7 @@ function getPrograms(date, country) {
 
                   </div>
               </div>
-              </div>
+             
                 `;
                     }
                 }

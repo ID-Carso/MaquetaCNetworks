@@ -3,7 +3,7 @@
 
 <head>
     <?php include './views/partials/head.php' ?>
-    <script src="./js/synopsis.js?t=<?php echo time(); ?>"></script>
+
 </head>
 
 <body>
@@ -271,7 +271,7 @@
                                 </div>
                             </div>
                             <div class="contenedor-fila ">
-                                <div class="contenedor-columna " style="width: 201px;">
+                                <div class="contenedor-columna container-width-colum">
                                     <div class="container-paises mb-3">
                                         <div class="pt-3">
                                             <img src="./images/paises/chile.svg" alt="chile" class="mb-2 ml-3">
@@ -364,7 +364,7 @@
                                 </div>
                             </div>
                             <div class="contenedor-fila ">
-                                <div class="contenedor-columna " style="width: 201px;">
+                                <div class="contenedor-columna  container-width-colum">
                                     <div class="container-paises mb-3">
                                         <div class="pt-3 pb-2">
                                             <img src="./images/paises/colombia.svg" alt="colombia" class="mb-2 ml-3">
@@ -678,42 +678,42 @@
             socketSinopsis.postMessage(hey)
         },
         onMessage: function (message, origin) {
-            if (typeof message == "object") {
-                message.then((data) => {
-                    if (data.code == 200) {
+            console.log("message", typeof message);
+            let data = JSON.parse(message);
+            if (data.code == 200) {
 
-                        let imageSynopsis = data.data.image_synopsis ||
-                            "http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/synopsis/image-synopsis-horizontal.png";
-                        let imageSynopsis1 = data.data.image_synopsis_frame_1 ||
-                            "http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/synopsis/image-synopsis-horizontal.png"
-                        let imageSynopsis2 = data.data.image_synopsis_frame_2 ||
-                            "http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/synopsis/image-synopsis-horizontal.png"
-                        let imageSynopsis3 = data.data.image_synopsis_frame_3 ||
-                            "http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/synopsis/image-synopsis-horizontal.png"
+                let imageSynopsis = data.data.image_synopsis ||
+                    "http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/synopsis/image-synopsis-horizontal.png";
+                let imageSynopsis1 = data.data.image_synopsis_frame_1 ||
+                    "http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/synopsis/image-synopsis-horizontal.png"
+                let imageSynopsis2 = data.data.image_synopsis_frame_2 ||
+                    "http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/synopsis/image-synopsis-horizontal.png"
+                let imageSynopsis3 = data.data.image_synopsis_frame_3 ||
+                    "http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/synopsis/image-synopsis-horizontal.png"
 
-                        $('.synopsis-description-edi').text(data.data.sinopsis)
-                        $('.synopsis-title-edi').text(data.data.title)
-                        $('.synopsis-rating-edi').text(`Clasificación ${data.data.rating}`)
-                        $('.synopsis-duration-edi').text(data.data.duration)
-                        $('.synopsis-seasons-edi').text(`${data.data.seasons} Temporadas`)
-                        $('.synopsis-year-edi').text(data.data.year)
-                        $('.image-synopsis-edi').attr("src", imageSynopsis);
-                        $('.synopsis-image-1-edi').attr("src", imageSynopsis1);
-                        $('.synopsis-image-2-edi').attr("src", imageSynopsis2);
-                        $('.synopsis-image-3-edi').attr("src", imageSynopsis3);
-                        $('.pencil').attr("chapter_id", data.data.chapter_id)
-                        //$('.synopsis-country-edi').text()
-                        let index = 1;
-                        let slide = "";
-                        let image = ""
-                        while (true) {
-                            if (data.data[`image_background_${index}`] !== undefined) {
-                                image = data.data[`image_background_${index}`]
-                                if (data.data[`image_background_${index}`] == null) {
-                                    image = "./images/General/image-synopsis-carrusel.jpg"
-                                }
-                                console.log(image);
-                                slide += `
+                $('.synopsis-description-edi').text(data.data.sinopsis)
+                $('.synopsis-title-edi').text(data.data.title)
+                $('.synopsis-rating-edi').text(`Clasificación ${data.data.rating}`)
+                $('.synopsis-duration-edi').text(data.data.duration)
+                $('.synopsis-seasons-edi').text(`${data.data.seasons} Temporadas`)
+                $('.synopsis-year-edi').text(data.data.year)
+                $('.image-synopsis-edi').attr("src", imageSynopsis);
+                $('.synopsis-image-1-edi').attr("src", imageSynopsis1);
+                $('.synopsis-image-2-edi').attr("src", imageSynopsis2);
+                $('.synopsis-image-3-edi').attr("src", imageSynopsis3);
+                $('.pencil').attr("chapter_id", data.data.chapter_id)
+                //$('.synopsis-country-edi').text()
+                let index = 1;
+                let slide = "";
+                let image = ""
+                while (true) {
+                    if (data.data[`image_background_${index}`] !== undefined) {
+                        image = data.data[`image_background_${index}`]
+                        if (data.data[`image_background_${index}`] == null) {
+                            image = "./images/General/image-synopsis-carrusel.jpg"
+                        }
+                        console.log(image);
+                        slide += `
                                         <div class="bor thumbnail-image-program position-relative h-100">
                                             <input type="file" id="image_banner_synopsis_${index}"
                                             class="input-image-program d-none input-banner-synopsis" data-index="1">
@@ -727,54 +727,54 @@
                                             </label>
                                         </div>
                                         `
-                                index++
+                        index++
 
-                            } else {
-                                break;
-                            }
-                        }
-                        $(".header-slider-sinopsis").html(slide);
-                        try {
-                            $(".header-slider-sinopsis").slick("unslickk")
-                            $(".header-slider-sinopsis").slick({
-                                slidesToShow: 1,
-                                dots: true,
-                                appendDots: $(".programming-slider-dots"),
-                                initialSlide: 0,
-                                infinite: false,
-                                arrows: false,
-
-                                customPaging: function (slider, i) {
-                                    var thumb = $(slider.$slides[i]).data();
-                                    return (
-                                        " <p class='a-text-bold-tealblue slider-pagination-item pag mr-2 '> " +
-                                        (i + 1) +
-                                        "</p> "
-                                    );
-                                },
-                            });
-                        } catch (error) {
-                            $(".header-slider-sinopsis").slick({
-                                slidesToShow: 1,
-                                dots: true,
-                                appendDots: $(".programming-slider-dots"),
-                                initialSlide: 0,
-                                infinite: false,
-                                arrows: false,
-
-                                customPaging: function (slider, i) {
-                                    var thumb = $(slider.$slides[i]).data();
-                                    return (
-                                        " <p class='a-text-bold-tealblue slider-pagination-item pag mr-2 '> " +
-                                        (i + 1) +
-                                        "</p> "
-                                    );
-                                },
-                            });
-                        }
+                    } else {
+                        break;
                     }
-                })
+                }
+                $(".header-slider-sinopsis").html(slide);
+                try {
+                    $(".header-slider-sinopsis").slick("unslickk")
+                    $(".header-slider-sinopsis").slick({
+                        slidesToShow: 1,
+                        dots: true,
+                        appendDots: $(".programming-slider-dots"),
+                        initialSlide: 0,
+                        infinite: false,
+                        arrows: false,
+
+                        customPaging: function (slider, i) {
+                            var thumb = $(slider.$slides[i]).data();
+                            return (
+                                " <p class='a-text-bold-tealblue slider-pagination-item pag mr-2 '> " +
+                                (i + 1) +
+                                "</p> "
+                            );
+                        },
+                    });
+                } catch (error) {
+                    $(".header-slider-sinopsis").slick({
+                        slidesToShow: 1,
+                        dots: true,
+                        appendDots: $(".programming-slider-dots"),
+                        initialSlide: 0,
+                        infinite: false,
+                        arrows: false,
+
+                        customPaging: function (slider, i) {
+                            var thumb = $(slider.$slides[i]).data();
+                            return (
+                                " <p class='a-text-bold-tealblue slider-pagination-item pag mr-2 '> " +
+                                (i + 1) +
+                                "</p> "
+                            );
+                        },
+                    });
+                }
             }
+
+
         }
     });
     $('.synopsis-header').on("click", ".slider-pagination-item", function () {

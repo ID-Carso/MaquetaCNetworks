@@ -45,6 +45,10 @@
   cursor: auto !important;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 /*html,
 body {
   height: 100%;
@@ -5193,6 +5197,42 @@ div #banner-concert-channel-edi .slick-track {
           justify-content: center;
 }
 
+.slider-pagination-item-home {
+  border: solid 3px #0097a9;
+  width: 39px;
+  height: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider-pagination-item-home::after {
+  content: "";
+  border-width: 6px;
+  border-style: solid;
+  border-color: #4a4a4a transparent transparent transparent;
+  position: absolute;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  bottom: 50px;
+}
+
+.slider-pagination-item-home::before {
+  content: "";
+  border-width: 6px;
+  border-style: solid;
+  border-color: #4a4a4a transparent transparent transparent;
+  position: absolute;
+  -webkit-transform: translate(0px, -26px);
+          transform: translate(0px, -26px);
+}
+
 .programming-slider-dots .slick-dots li {
   margin: 0 10px !important;
 }
@@ -5200,6 +5240,30 @@ div #banner-concert-channel-edi .slick-track {
 .selteal {
   color: white !important;
   background-color: #0097a9;
+}
+
+.programming-slider-dots::after {
+  content: "";
+  border-width: 6px;
+  border-style: solid;
+  border-color: #4a4a4a transparent transparent transparent;
+  position: absolute;
+  left: 32%;
+  bottom: -38%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.programming-slider-dots::before {
+  content: "";
+  border-width: 6px;
+  border-style: solid;
+  border-color: #4a4a4a transparent transparent transparent;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, 100%);
+  transform: translate(-50%, -95%);
 }
 
 /*Tamaño de textos - responsive*/
@@ -5686,6 +5750,18 @@ div #banner-concert-channel-edi .slick-track {
   padding: 4px;
 }
 
+.container-width-colum {
+  width: 201px;
+}
+
+.container-width-time {
+  width: 161px;
+}
+
+.container-width-selec {
+  width: 59px;
+}
+
 .container-paises {
   width: 201px;
   height: 202px;
@@ -6143,6 +6219,46 @@ div #banner-concert-channel-edi .slick-track {
   .modal-image-program {
     width: 100%;
     max-width: 150px;
+  }
+  .container-days {
+    width: 19px;
+    height: 59px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 3px 0 #4e4e4f;
+            box-shadow: 1px 1px 3px 0 #4e4e4f;
+    background-color: #161616;
+  }
+  .container-days-inac {
+    width: 19px;
+    height: 59px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 3px 0 #282828;
+            box-shadow: 1px 1px 3px 0 #282828;
+    background-color: #0c0c0c;
+  }
+  .container-hora {
+    width: 68px;
+    height: 59px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 3px 0 #4e4e4f;
+            box-shadow: 1px 1px 3px 0 #4e4e4f;
+    background-color: #161616;
+  }
+  .container-paises {
+    width: 78px;
+    height: 128px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 3px 0 #4e4e4f;
+            box-shadow: 1px 1px 3px 0 #4e4e4f;
+    background-color: #161616;
   }
   .menu-responsive {
     width: 25px;
@@ -7312,9 +7428,49 @@ div #banner-concert-channel-edi .slick-track {
   /*Base*/
   /***  ATOMS  ****/
   /*1.1 - General - Átomos */
+  .container-width-colum {
+    width: 78px;
+    height: 128px;
+  }
+  .container-width-time {
+    width: 161px;
+  }
+  .container-width-selec {
+    width: 59px;
+  }
   .modal-image-program {
     width: 100%;
     max-width: 150px;
+  }
+  .container-days {
+    width: 48px;
+    height: 101px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 3px 0 #4e4e4f;
+            box-shadow: 1px 1px 3px 0 #4e4e4f;
+    background-color: #161616;
+  }
+  .container-days-inac {
+    width: 48px;
+    height: 101px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 3px 0 #282828;
+            box-shadow: 1px 1px 3px 0 #282828;
+    background-color: #0c0c0c;
+  }
+  .container-hora {
+    width: 117px;
+    height: 102px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 3px 0 #4e4e4f;
+            box-shadow: 1px 1px 3px 0 #4e4e4f;
+    background-color: #161616;
   }
   .header-curve {
     bottom: -19%;
@@ -8593,9 +8749,58 @@ div #banner-concert-channel-edi .slick-track {
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
   /***  1.- ATOMS  ****/
   /*1.1.- Generales - átomos*/
+  .container-width-colum {
+    width: 201px;
+  }
+  .container-width-time {
+    width: 161px;
+  }
+  .container-width-selec {
+    width: 59px;
+  }
   .modal-image-program {
     width: 100%;
     max-width: 200px;
+  }
+  .container-paises {
+    width: 201px;
+    height: 202px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 3px 0 #4e4e4f;
+            box-shadow: 1px 1px 3px 0 #4e4e4f;
+    background-color: #161616;
+  }
+  .container-hora {
+    width: 161px;
+    height: 93px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 3px 0 #4e4e4f;
+            box-shadow: 1px 1px 3px 0 #4e4e4f;
+    background-color: #161616;
+  }
+  .container-days {
+    width: 59px;
+    height: 93px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 3px 0 #4e4e4f;
+            box-shadow: 1px 1px 3px 0 #4e4e4f;
+    background-color: #161616;
+  }
+  .container-days-inac {
+    width: 59px;
+    height: 93px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 3px 0 #282828;
+            box-shadow: 1px 1px 3px 0 #282828;
+    background-color: #0c0c0c;
   }
   .a-cinema-subtitle,
   .concert-subtitle {
@@ -9906,9 +10111,58 @@ div #banner-concert-channel-edi .slick-track {
   /***  1.- ATOMS  ****/
   /*-----------------------------*/
   /*1.1 General -  Átomos  */
+  .container-width-colum {
+    width: 201px;
+  }
+  .container-width-time {
+    width: 161px;
+  }
+  .container-width-selec {
+    width: 59px;
+  }
   .modal-image-program {
     width: 100%;
     max-width: 250px;
+  }
+  .container-paises {
+    width: 201px;
+    height: 202px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 3px 0 #4e4e4f;
+            box-shadow: 1px 1px 3px 0 #4e4e4f;
+    background-color: #161616;
+  }
+  .container-hora {
+    width: 161px;
+    height: 93px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 3px 0 #4e4e4f;
+            box-shadow: 1px 1px 3px 0 #4e4e4f;
+    background-color: #161616;
+  }
+  .container-days {
+    width: 59px;
+    height: 93px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 3px 0 #4e4e4f;
+            box-shadow: 1px 1px 3px 0 #4e4e4f;
+    background-color: #161616;
+  }
+  .container-days-inac {
+    width: 59px;
+    height: 93px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 3px 0 #282828;
+            box-shadow: 1px 1px 3px 0 #282828;
+    background-color: #0c0c0c;
   }
   .margin-ahora-tv {
     margin-bottom: 21px;

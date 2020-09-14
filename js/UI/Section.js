@@ -73,7 +73,6 @@ export default class Section {
   }
   renderHome(json) {
     /* Header Home*/
-
     let imagesHeader = [
       json.data.block_1_image_background_1,
       json.data.block_1_image_background_2,
@@ -237,10 +236,9 @@ export default class Section {
     for (let i = 0; i < blockImage3Length; i++) {
       if (arrayFavoritesId.includes(block3Image[i].chapter_id)) {
         programLargeprev += `
-        <div class=" p-3 border-t border-l border-r border-b position-relative">          
+               
 
         <div class="poster">
-        <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
 
         <div class="poster-body">
             <div class="showtime-container justify-content-end">
@@ -254,14 +252,13 @@ export default class Section {
               </div>
         </div>
     </div> 
-    </div>
+  
         `;
       } else {
         programLargeprev += `
-        <div class=" p-3 border-t border-l border-r border-b position-relative">          
+               
 
               <div class="poster">
-              <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"style="width:15px"></button>
 
         <div class="poster-body">
             <div class="showtime-container justify-content-end">
@@ -274,7 +271,7 @@ export default class Section {
             </div>
         </div>
     </div> 
-    </div>
+    
         `;
       }
     }
@@ -745,15 +742,14 @@ export default class Section {
       " <span>" + data.block_2_title_2 + "</span>"
     );
     //cambiando url de programacion
-    $("#btn-claro-canal a").attr("href", data.block_2_button_url);
-    $(".btn-claro-canal").text(data.block_2_button_title);
-
+    $('#btn-claro-canal a').attr('href', data.block_2_button_url)
+    $('.btn-claro-canal').text(data.block_2_button_title)
     //BLOQUE 3 Seccion de video
-    $(".a-next-claro-title").text(data.block_3_title);
-    $(".a-next-claro-subtitle").text(data.block_3_subtitle);
-    $(".promo-video")[0].load();
-    $(".promo-video source").attr("src", data.block_3_video_url);
-
+    $('.a-next-claro-title').text(data.block_3_title)
+    $('.a-next-claro-subtitle').text(data.block_3_subtitle)
+    // VIDEO
+    $(".promo-video")[0].load()
+    $('.promo-video source').attr('src', data.block_3_video_url)
     //BLOQUE 4 carruseles
     $("#carrusel_1_title").text(data.block_4_carrusel_1_title);
     $("#carrusel_1_subtitle").text(data.block_4_carrusel_1_subtitle);
@@ -906,7 +902,73 @@ export default class Section {
   renderClaroCinema(json) {
     //obtenemos las iamgenes del carrusel 1
     let data = json.data;
-    $("#icon_claro_cinema").attr("src", data.block_2_icon_channel);
+    //Banner
+    let slideBannerClaroCinema = "";
+    let counterCinema = 1;
+
+    while (true) {
+      if (data[`block_1_image_slider_${counterCinema}`]) {
+        slideBannerClaroCinema += `        
+     <div class="header-slide">
+       <img src="${data[`block_1_image_slider_${counterCinema}`]}?v=${new Date().getTime()}" class="rellax" data-rellax="10">
+     </div>`;
+        counterCinema++
+      } else {
+        break;
+      }
+    }
+
+    $("#banner-claro-cinema-edi").append(slideBannerClaroCinema);
+    $("#banner-claro-cinema-edi")
+      .not(".slick-initialized")
+      .slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+        appendDots: $(".programming-slider-dots"),
+        centerMode: false,
+        arrows: false,
+        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+        customPaging: function (slider, i) {
+          var thumb = $(slider.$slides[i]).data();
+          return (
+            "<p class='a-text-bold-tealblue slider-pagination-item activando-ando' slide_index=" +
+            i +
+            ">" +
+            (i + 1) +
+            "</p> "
+          );
+        },
+      });
+
+    //BLOQUE 2 Seccion de programacion
+    //cambiamos el icono del landing
+    $('#icon_claro_cinema').attr('src', data.block_2_icon_channel)
+    //titulo del bloque 2
+    $('.a-today-cinema-title').text(data.block_2_title_1)
+    $('.a-today-cinema-title').append(' <span>' + data.block_2_title_2 + '</span>')
+    //cambiando url de programacion
+    $('#btn-claro-cinema a').attr('href', data.block_2_button_url)
+    $('.btn-claro-cinema').text(data.block_2_button_title)
+
+    //BLOQUE 3 Seccion de video
+    $('#a-cinema-title').text(data.block_3_title_1)
+    $('#a-cinema-title').append(' <span>' + data.block_3_title_2 + '</span>')
+    $('#a-cinema-subtitle').text(data.block_3_subtitle)
+
+    $(".promo-video")[0].load()
+    $('.promo-video source').attr('src', data.block_3_video_url)
+
+    //BLOQUE 4 carruseles
+    $('#carrusel_1_title').text(data.block_4_carrusel_1_title_1)
+    $('#carrusel_1_title').append(' <span class="recordar-title">' + data.block_4_carrusel_1_title_2 + '</span>')
+    $('#carrusel_1_subtitle').text(data.block_4_carrusel_1_subtitle)
+
+    $('#carrusel_2_title').text(data.block_4_carrusel_2_title_1)
+    $('#carrusel_2_title').append(' <span class="recordar-title">' + data.block_4_carrusel_2_title_2 + '</span>')
+    $('#carrusel_2_subtitle').text(data.block_4_carrusel_2_subtitle)
 
     let carrusel1 = [];
     let counter = 1;
@@ -945,7 +1007,6 @@ export default class Section {
 
     let Strinfcarrusel1 = "";
     let Strinfcarrusel2 = "";
-
     /*
       Almacenamos los programas en otras variables para dibujar los programas con bordes.
       Esto  para la parevisualización en Backoffice de los landings
