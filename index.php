@@ -66,8 +66,8 @@
 					</div>
 					<!-- col 2 -->
 					<div class="col-sm-3 offset-3 col-md-4 offset-md-0 col-lg-4 offset-lg-0">
-						
-						
+
+
 						<a href="home.php">
 							<div class="name_paises espacio">
 								<img src="images/paises/guatemala.svg" class="Icon_paises"><span>Guatemala</span>
@@ -118,11 +118,25 @@
 						<a href="home.php">
 							<div class="name_paises espacio">
 								<div class="row">
-									<div class="col align-middle" style="display: flex; width: 20%; max-width: 29px; min-width: 29px;padding: 0;  margin-left: 16px;">
+									<div class="col align-middle"
+										style="display: flex; width: 20%; max-width: 29px; min-width: 29px;padding: 0;  margin-left: 16px;">
 										<img src="images/paises/dominican-republic.svg" class="Icon_paises"></div>
 
 									<div class="col" style="width: 50%; margin: 0 20px 0 14px; padding: 0;">
 										República Dominicana
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="https://nuestravision.tv">
+							<div class="name_paises espacio">
+								<div class="row">
+									<div class="col align-middle"
+										style="display: flex; width: 20%; max-width: 29px; min-width: 29px;padding: 0;  margin-left: 16px;">
+										<img src="images/paises/usa.svg" class="Icon_paises"></div>
+
+									<div class="col" style="width: 50%; margin: 0 20px 0 14px; padding: 0;">
+										EUA
 									</div>
 								</div>
 							</div>

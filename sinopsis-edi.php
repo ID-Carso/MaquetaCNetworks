@@ -735,7 +735,7 @@
                 }
                 $(".header-slider-sinopsis").html(slide);
                 try {
-                    $(".header-slider-sinopsis").slick("unslickk")
+                    $(".header-slider-sinopsis").slick("unslick")
                     $(".header-slider-sinopsis").slick({
                         slidesToShow: 1,
                         dots: true,
