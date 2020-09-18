@@ -5122,6 +5122,24 @@ div #banner-concert-channel-edi .slick-track {
   height: 100% !important;
 }
 
+#banner-synopsis-slider .slick-slide {
+  height: 475px !important;
+  margin: 0px !important;
+}
+
+#banner-synopsis-slider .slick-slide div {
+  height: 100% !important;
+}
+
+.header-slider-sinopsis .slick-slide {
+  height: 450px !important;
+  margin: 0px !important;
+}
+
+.header-slider-sinopsis .slick-slide .header-slider-sinopsis.slick-slide div {
+  height: 100% !important;
+}
+
 .program-image-slider .slick-slide div {
   height: 100% !important;
 }

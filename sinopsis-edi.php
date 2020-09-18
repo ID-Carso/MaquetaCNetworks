@@ -82,48 +82,36 @@
             ?>
             <div class="header-slider-sinopsis  mx-auto" id="">
                 <div class="bor thumbnail-image-program position-relative " style="height:470px">
-                    <input type="file" id="image_programming_1" class="input-image-program d-none image_programming "
-                        data-index="1">
-                    <label for="image_programming_1"
-                        class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
+                    <input type="file" id="image_programming_1" class="input-image-program d-none image_programming " data-index="1">
+                    <label for="image_programming_1" class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
                         <img src="./images/General/camara.svg" alt="add-photo" class=" cursor-pointer add-photo " />
                         <span class="a-text-bold-warm text-plus mt-3">1000px X 342px</span>
                         <!---->
-                        <img src="./images/General/image-synopsis-carrusel.jpg"
-                            class="w-100 cursor-pointer image-cover prev-image-program h-100 thumbnail-image-program" />
+                        <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 cursor-pointer image-cover prev-image-program h-100 thumbnail-image-program" />
                     </label>
                 </div>
                 <div class="bor thumbnail-image-program position-relative " style="height:470px">
-                    <input type="file" id="image_programming_2" class="input-image-program d-none image_programming "
-                        data-index="1">
-                    <label for="image_programming_2"
-                        class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
+                    <input type="file" id="image_programming_2" class="input-image-program d-none image_programming " data-index="1">
+                    <label for="image_programming_2" class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
                         <img src="./images/General/camara.svg" alt="add-photo" class=" cursor-pointer add-photo " />
                         <span class="a-text-bold-warm text-plus mt-3">1920px X 657px</span>
-                        <img src="./images/General/image-synopsis-carrusel.jpg"
-                            class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                        <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
                     </label>
                 </div>
                 <div class="bor thumbnail-image-program position-relative " style="height:470px">
-                    <input type="file" name="image_programming[]" id="image_programming_3"
-                        class="input-image-program d-none image_programming " data-index="1">
-                    <label for="image_programming_3"
-                        class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
+                    <input type="file" name="image_programming[]" id="image_programming_3" class="input-image-program d-none image_programming " data-index="1">
+                    <label for="image_programming_3" class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
                         <img src="./images/General/camara.svg" alt="add-photo" class=" cursor-pointer add-photo " />
                         <span class="a-text-bold-warm text-plus mt-3">1000px X 342px</span>
-                        <img src="./images/General/image-synopsis-carrusel.jpg"
-                            class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                        <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
                     </label>
                 </div>
                 <div class="bor thumbnail-image-program position-relative " style="height:470px">
-                    <input type="file" name="image_programming[]" id="image_programming_3"
-                        class="input-image-program d-none image_programming " data-index="1">
-                    <label for="image_programming_3"
-                        class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
+                    <input type="file" name="image_programming[]" id="image_programming_3" class="input-image-program d-none image_programming " data-index="1">
+                    <label for="image_programming_3" class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
                         <img src="./images/General/camara.svg" alt="add-photo" class=" cursor-pointer add-photo " />
                         <span class="a-text-bold-warm text-plus mt-3">1000px X 342px</span>
-                        <img src="./images/General/image-synopsis-carrusel.jpg"
-                            class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                        <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
                     </label>
                 </div>
             </div>
@@ -146,8 +134,7 @@
                         <a href="sinopsis.php#dropdown-country"> <button class="synopsis-button">
                                 <div class="d-flex align-items-center">
 
-                                    <p class="synopsis-schedule-text mb-0">Horarios</p><img
-                                        src="./images/home/clock.svg" alt="">
+                                    <p class="synopsis-schedule-text mb-0">Horarios</p><img src="./images/home/clock.svg" alt="">
 
                                 </div>
                             </button></a>
@@ -160,20 +147,15 @@
                     <h1 class="synopsis-section-title d-flex justify-content-center ml-5">sinopsis</h1>
 
                     <div class="synopsis-body-container no-gutters">
-                        <div
-                            class="col-md-7 col-lg-6 mr-2  mb-0 synopsis-main-image border-t border-l border-r border-b position-relative d-inline-block">
-                            <img src="./images/General/pencil.svg" alt="" class="pencil pencil-main"
-                                type="synopsis-main-image">
+                        <div class="col-md-7 col-lg-6 mr-2  mb-0 synopsis-main-image border-t border-l border-r border-b position-relative d-inline-block">
+                            <img src="./images/General/pencil.svg" alt="" class="pencil pencil-main" type="synopsis-main-image">
                             <!--Imagen principal de sinopsis-->
                             <img src="" alt="" class="p-3 w-100 image-synopsis-edi">
                         </div>
-                        <div
-                            class="col-md-7 col-lg-6 mx-sm-auto mx-md-auto synopsis-description-container border-t border-l border-r border-b position-relative ">
-                            <img src="./images/General/pencil.svg" alt="" class="pencil pencil-description"
-                                type="synopsis-description-container">
+                        <div class="col-md-7 col-lg-6 mx-sm-auto mx-md-auto synopsis-description-container border-t border-l border-r border-b position-relative ">
+                            <img src="./images/General/pencil.svg" alt="" class="pencil pencil-description" type="synopsis-description-container">
                             <div>
-                                <h1
-                                    class="a-text-white-monblack synopsis-title-edi h3 d-flex justify-content-center mt-3">
+                                <h1 class="a-text-white-monblack synopsis-title-edi h3 d-flex justify-content-center mt-3">
                                 </h1>
                                 <p class="a-text-medium-white text-normal synopsis-description-edi pl-3">Texto</p>
                             </div>
@@ -186,8 +168,7 @@
                                     </button>
                                     <a href="sinopsis.php#dropdown-country"><button class="synopsis-button">
                                             <div class="d-flex align-items-center">
-                                                <p class="synopsis-schedule-text mb-0">Horarios</p><img
-                                                    src="./images/home/clock.svg" alt="">
+                                                <p class="synopsis-schedule-text mb-0">Horarios</p><img src="./images/home/clock.svg" alt="">
                                             </div>
                                         </button></a>
                                 </div>
@@ -199,25 +180,20 @@
                     </div>
                     <div class="no-gutters">
                         <div class="col-md-10 col-lg-12 mx-auto">
-                            <div
-                                class="synopsis-images-container no-gutters border-t border-l border-r border-b position-relative p-3">
+                            <div class="synopsis-images-container no-gutters border-t border-l border-r border-b position-relative p-3">
 
-                                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-images"
-                                    type="synopsis-images-container">
+                                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-images" type="synopsis-images-container">
 
                                 <!--Image synopsis frame 1-->
-                                <img src="" alt=""
-                                    class="mr-0 pr-3 synopsis-image-1-edi col-md-6 col-lg-4 synopsis-image">
+                                <img src="" alt="" class="mr-0 pr-3 synopsis-image-1-edi col-md-6 col-lg-4 synopsis-image">
                                 <!--Image synopsis frame 2-->
                                 <img src="" alt="" class="pr-3 synopsis-image-2-edi col-md-6 col-lg-4 synopsis-image">
                                 <!--Image synopsis frame 3-->
                                 <img src="" alt="" class="pr-3 col-lg-4 synopsis-image synopsis-image-3-edi">
                             </div>
                             <div class="">
-                                <div
-                                    class="synopsis-details-container border-t border-l border-r border-b position-relative p-3">
-                                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-details"
-                                        type="synopsis-datails-container">
+                                <div class="synopsis-details-container border-t border-l border-r border-b position-relative p-3">
+                                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-details" type="synopsis-datails-container">
                                     <div class="synopsis-rating-container">
                                         <p class="synopsis-text synopsis-detail-text synopsis-country-edi">Estados
                                             Unidos</p>
@@ -282,10 +258,8 @@
                                             <span class="a-text-white-semibold text-normal ml-3"> Paraguay</span>
                                         </div>
                                         <div class="pt-3">
-                                            <img src="./images/paises/dominican-republic.svg" alt="dominican-republic"
-                                                class="mt-2 ml-3">
-                                            <span class="a-text-white-semibold text-normal ml-3">República <br /><span
-                                                    class="a-text-white-semibold text-normal ml-5 pl-3">Dominicana</span>
+                                            <img src="./images/paises/dominican-republic.svg" alt="dominican-republic" class="mt-2 ml-3">
+                                            <span class="a-text-white-semibold text-normal ml-3">República <br /><span class="a-text-white-semibold text-normal ml-5 pl-3">Dominicana</span>
                                             </span>
 
                                         </div>
@@ -460,8 +434,7 @@
                                 <div class="contenedor-columna " style="width: 201px;">
                                     <div class="container-paises mb-3">
                                         <div class="pt-2">
-                                            <img src="./images/paises/el-salvador.svg" alt="el-salvador"
-                                                class="mb-2 ml-3">
+                                            <img src="./images/paises/el-salvador.svg" alt="el-salvador" class="mb-2 ml-3">
                                             <span class="a-text-white-semibold text-normal ml-3"> El Salvador</span>
                                         </div>
                                         <div class="">
@@ -477,8 +450,7 @@
                                             <span class="a-text-white-semibold text-normal ml-3"> Guatemala</span>
                                         </div>
                                         <div class="pb-3">
-                                            <img src="./images/paises/costa-rica.svg" alt="costa-rica"
-                                                class="mb-2 ml-3">
+                                            <img src="./images/paises/costa-rica.svg" alt="costa-rica" class="mb-2 ml-3">
                                             <span class="a-text-white-semibold text-normal ml-3"> Costa Rica</span>
                                         </div>
 
@@ -673,11 +645,11 @@
 <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
 <script>
     var socketSinopsis = new easyXDM.Socket({
-        onReady: function () {
+        onReady: function() {
             var hey = 2640;
             socketSinopsis.postMessage(hey)
         },
-        onMessage: function (message, origin) {
+        onMessage: function(message, origin) {
             console.log("message", typeof message);
             let data = JSON.parse(message);
             if (data.code == 200) {
@@ -744,7 +716,7 @@
                         infinite: false,
                         arrows: false,
 
-                        customPaging: function (slider, i) {
+                        customPaging: function(slider, i) {
                             var thumb = $(slider.$slides[i]).data();
                             return (
                                 " <p class='a-text-bold-tealblue slider-pagination-item pag mr-2 '> " +
@@ -762,7 +734,7 @@
                         infinite: false,
                         arrows: false,
 
-                        customPaging: function (slider, i) {
+                        customPaging: function(slider, i) {
                             var thumb = $(slider.$slides[i]).data();
                             return (
                                 " <p class='a-text-bold-tealblue slider-pagination-item pag mr-2 '> " +
@@ -777,7 +749,7 @@
 
         }
     });
-    $('.synopsis-header').on("click", ".slider-pagination-item", function () {
+    $('.synopsis-header').on("click", ".slider-pagination-item", function() {
         let type = "slider-pagination";
         let data = {
 
@@ -789,7 +761,7 @@
         socketSinopsis.postMessage(json);
     });
 
-    $(".synopsis-main-image").on("click", ".pencil-main", function () {
+    $(".synopsis-main-image").on("click", ".pencil-main", function() {
 
         let data = {
             type: $(this).attr("type"),
@@ -800,7 +772,7 @@
         var json = JSON.stringify(data);
         socketSinopsis.postMessage(json);
     });
-    $(".synopsis-description-container").on("click", ".pencil-description", function () {
+    $(".synopsis-description-container").on("click", ".pencil-description", function() {
 
         let data = {
             type: $(this).attr("type"),
@@ -810,7 +782,7 @@
         var json = JSON.stringify(data);
         socketSinopsis.postMessage(json);
     });
-    $(".synopsis-images-container").on("click", ".pencil-images", function () {
+    $(".synopsis-images-container").on("click", ".pencil-images", function() {
 
         let data = {
             type: $(this).attr("type"),
@@ -820,7 +792,7 @@
         var json = JSON.stringify(data);
         socketSinopsis.postMessage(json);
     });
-    $(".synopsis-details-container").on("click", ".pencil-details", function () {
+    $(".synopsis-details-container").on("click", ".pencil-details", function() {
 
         let data = {
             type: $(this).attr("type"),
@@ -831,7 +803,7 @@
         var json = JSON.stringify(data);
         socketSinopsis.postMessage(json);
     });
-    $(".synopsis-details-container").on("click", ".pencil-details", function () {
+    $(".synopsis-details-container").on("click", ".pencil-details", function() {
 
         let data = {
             type: $(this).attr("type"),

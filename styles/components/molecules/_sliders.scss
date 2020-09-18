@@ -406,6 +406,27 @@ div #banner-concert-channel-edi .slick-track {
   }
 }
 
+#banner-synopsis-slider {
+  .slick-slide {
+    height: 450px !important;
+    margin: 0px !important;
+
+    div {
+      height: 100% !important;
+    }
+  }
+}
+
+.header-slider-sinopsis .slick-slide {
+  height: 475px !important;
+  margin: 0px !important;
+
+  .header-slider-sinopsis.slick-slide div {
+    height: 100% !important;
+  }
+}
+
+
 .program-image-slider .slick-slide div {
   height: 100% !important;
 }
@@ -471,6 +492,7 @@ div #banner-concert-channel-edi .slick-track {
   align-items: center;
   justify-content: center;
 }
+
 .slider-pagination-item-home {
   border: solid 3px $cinemaRectangle;
   width: 39px;
@@ -489,6 +511,7 @@ div #banner-concert-channel-edi .slick-track {
   transform: rotate(180deg);
   bottom: 50px;
 }
+
 .slider-pagination-item-home::before {
   content: "";
   border-width: 6px;
@@ -497,6 +520,7 @@ div #banner-concert-channel-edi .slick-track {
   position: absolute;
   transform: translate(0px, -26px);
 }
+
 .programming-slider-dots .slick-dots li {
   margin: 0 10px !important;
 }
@@ -505,6 +529,7 @@ div #banner-concert-channel-edi .slick-track {
   color: white !important;
   background-color: $cinemaRectangle;
 }
+
 .programming-slider-dots::after {
   content: "";
   border-width: 6px;
@@ -515,6 +540,7 @@ div #banner-concert-channel-edi .slick-track {
   bottom: -38%;
   transform: rotate(180deg);
 }
+
 .programming-slider-dots::before {
   content: "";
   border-width: 6px;
