@@ -115,7 +115,10 @@ export default class Section {
     let titleHeader = `<span class="header-span">${json.data.block_1_title} </span>${json.data.block_1_subtitle}`;
     $(".header-h1").html(titleHeader);
 
-    $(".source-video").attr("src", json.data.block_1_video_name);
+
+    /*VIDEO*/
+    $(".home-video")[0].load();
+    $(".home-video").attr("src", json.data.block_1_video_name);
     let titleTv = `${json.data.block_2_title1} <span class="header-span">${json.data.block_2_title2}</span><span class="header-point">•</span>`;
     $(".title-tv").html(titleTv);
 
@@ -136,7 +139,7 @@ export default class Section {
 
     /* SUBTITLE */
     $(".a-claro-home-subtitle").text(json.data.block_3_subtitle);
-
+   
     /* BUTTON */
     $(".btn-canal-claro-home").text(json.data.block_3_button1);
 
