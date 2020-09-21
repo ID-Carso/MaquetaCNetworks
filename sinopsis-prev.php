@@ -6,6 +6,15 @@
 
 </head>
 <style>
+    .dropdown-country-container {
+        padding: 48px 0;
+        height: 257px;
+        object-fit: contain;
+        border-radius: 3px;
+        box-shadow: 2px 1px 7px 0 #353435;
+        background: #161616;
+    }
+
     .region-country-container-active {
         box-shadow: 0 0 3px 1px #0097a9, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5) !important;
         background-color: #00353b !important;
@@ -33,9 +42,37 @@
     .times-container {
 
         border-radius: 15px;
-        box-shadow: 0 0 24px 1px #0097a9, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+        /*box-shadow: 0 0 24px 1px #0097a9, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);*/
+        box-shadow: inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
         background-color: #161616;
     }
+
+    .region-times-slider .slick-current {
+        box-shadow: 0 0 24px 1px #0097a9, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+        border-radius: 15px;
+    }
+
+    .region-times-slider .slick-next {
+        right: 0;
+    }
+
+    .region-times-slider .slick-prev {
+        left: 0;
+    }
+
+    .region-times-slider .slick-track {
+        margin-top: 48px;
+    }
+
+    .time-slider-dots-container .slick-dots {
+        display: inline;
+        padding: 16px;
+        border-radius: 4px;
+        box-shadow: inset 2px 2px 5px 0 rgba(161, 161, 161, 0.5);
+        background-color: #222121;
+    }
+
+
 
     .time-begin-text {
         font-size: 21px;
@@ -45,6 +82,54 @@
     .time-begin-number {
         font-size: 21px;
         color: white;
+    }
+
+    .time-title {
+        font-size: 24px;
+        color: white;
+    }
+
+    .time-slider-dots-container .slick-dots {
+        position: static;
+        bottom: 0px;
+    }
+
+    .time-slider-dots-container .slick-dots li {
+        height: auto;
+        width: 58px;
+        margin: 0 2px;
+    }
+
+    .time-slider-dots-container .day-pagination {
+        font-family: "Montserrat-SemiBold";
+        color: #ffffff;
+        font-size: 24px;
+        width: 58px;
+        text-align: center;
+        margin: 0px 2px;
+    }
+
+    .pagination-item {
+        width: 100%;
+        height: 15px;
+        background-color: #d8d8d8;
+    }
+
+    .time-slider-dots-container li.slick-active .pagination-item {
+        background-color: #0097a9;
+    }
+
+    .time-slider-dots-container .time-slider-prev {
+        bottom: 0;
+        left: 28%;
+        transform: initial;
+    }
+
+    .time-slider-dots-container .time-slider-next {
+        bottom: 0;
+        /* left: 28%; */
+        transform: initial;
+        right: 28%;
     }
 </style>
 
@@ -137,7 +222,8 @@
                         </button>
                         <a href="sinopsis.php#dropdown-country"> <button class="synopsis-button">
                                 <div class="d-flex align-items-center">
-                                    <p class="synopsis-schedule-text mb-0">Horarios</p><img src="./images/home/clock.svg" alt="">
+                                    <p class="synopsis-schedule-text mb-0">Horarios</p><img
+                                        src="./images/home/clock.svg" alt="">
                                 </div>
                             </button></a>
                     </div>
@@ -164,7 +250,8 @@
                                     </button>
                                     <a href="sinopsis.php#dropdown-country"><button class="synopsis-button">
                                             <div class="d-flex align-items-center">
-                                                <p class="synopsis-schedule-text mb-0">Horarios</p><img src="./images/home/clock.svg" alt="">
+                                                <p class="synopsis-schedule-text mb-0">Horarios</p><img
+                                                    src="./images/home/clock.svg" alt="">
                                             </div>
                                         </button>
                                     </a>
@@ -202,104 +289,117 @@
                     <div class="synopsis-schedule-container" id="dropdown-country">
                         <h1 class="synopsis-schedule-title">Horario por regiones</h1>
                     </div>
-                    <div class="no-gutters">
-                        <div class="col-12 d-flex justify-content-between dropdownCountry">
-                            <div class="d-flex justify-content-between">
-                                <!--1 países-->
-                                <div class="region-country-container-active p-4 d-flex justify-content-center">
-                                    <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
-                                </div>
-                                <!--3 países-->
-                                <div class="region-country-container p-4 d-flex justify-content-between">
-                                    <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
-                                    <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
-                                    <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
-                                </div>
-                                <!--4 países-->
-                                <div class="no-gutters region-country-container d-flex justify-content-center p-4 align-items-center flex-wrap">
 
-                                    <div class="col-6 text-center">
-                                        <img src="
-                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
-                                    </div>
-                                    <div class="col-6 text-center">
-                                        <img src="
-                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
-                                    </div>
-                                    <div class="col-6 text-center">
-                                        <img src="
-                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
-                                    </div>
-                                    <div class="col-6 text-center">
-                                        <img src="
-                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
-                                    </div>
-                                </div>
-                                <!--5 países-->
-                                <div class="region-country-container d-flex align-items-center flex-wrap">
-                                    <div class="col-4 text-center">
-                                        <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
-                                    </div>
-                                    <div class="col-4 text-center">
-                                        <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
-                                    </div>
-                                    <div class="col-4 text-center">
-                                        <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
-                                    </div>
-                                    <div class="col-4 text-center">
-                                        <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
-                                    </div>
-                                    <div class="col-4 text-center">
-                                        <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
-                                    </div>
-
-                                </div>
-
+                </div>
+                <div class="dropdown-country-container">
+                    <div class="d-flex justify-content-between dropdownCountry mx-auto">
+                        <div class="d-flex justify-content-between">
+                            <!--1 países-->
+                            <div class="region-country-container-active p-4 d-flex justify-content-center">
+                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
+                                    alt="">
                             </div>
+                            <!--3 países-->
+                            <div class="region-country-container p-4 d-flex justify-content-between">
+                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
+                                    alt="">
+                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
+                                    alt="">
+                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
+                                    alt="">
+                            </div>
+                            <!--4 países-->
+                            <div
+                                class="no-gutters region-country-container d-flex justify-content-center p-4 align-items-center flex-wrap">
 
+                                <div class="col-6 text-center">
+                                    <img src="
+                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
+                                        alt="">
+                                </div>
+                                <div class="col-6 text-center">
+                                    <img src="
+                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
+                                        alt="">
+                                </div>
+                                <div class="col-6 text-center">
+                                    <img src="
+                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
+                                        alt="">
+                                </div>
+                                <div class="col-6 text-center">
+                                    <img src="
+                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <!--5 países-->
+                            <div class="region-country-container d-flex align-items-center flex-wrap">
+                                <div class="col-4 text-center">
+                                    <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
+                                        alt="">
+                                </div>
+                                <div class="col-4 text-center">
+                                    <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
+                                        alt="">
+                                </div>
+                                <div class="col-4 text-center">
+                                    <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
+                                        alt="">
+                                </div>
+                                <div class="col-4 text-center">
+                                    <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
+                                        alt="">
+                                </div>
+                                <div class="col-4 text-center">
+                                    <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
+                                        alt="">
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <div class="time-slider-container">
+                    <div class="region-times-container" id="region_1">
+                        <div class="d-flex times-container">
+                            <div class="col-6">
+                                <h2 class="text-center py-3">AM</h2>
+                                <div class="time-container py-4 text-center mb-3">
+                                    <span class="time-begin-text">Inicio: </span>
+                                    <spa class="time-begin-number">04:00</spa>
+                                </div>
+                                <div class="time-container py-4 text-center mb-3">
+                                    <span class="time-begin-text">Inicio: </span>
+                                    <spa class="time-begin-number">04:00</spa>
+                                </div>
+                                <div class="time-container py-4 text-center mb-3">
+                                    <span class="time-begin-text">Inicio: </span>
+                                    <spa class="time-begin-number">04:00</spa>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <h2 class="text-center py-3">PM</h2>
+                                <div class="time-container py-4 text-center mb-3">
+                                    <span class="time-begin-text">Inicio: </span>
+                                    <spa class="time-begin-number">04:00</spa>
+                                </div>
+                                <div class="time-container py-4 text-center mb-3">
+                                    <span class="time-begin-text">Inicio: </span>
+                                    <spa class="time-begin-number">04:00</spa>
+                                </div>
+                                <div class="time-container py-4 text-center mb-3">
+                                    <span class="time-begin-text">Inicio: </span>
+                                    <spa class="time-begin-number">04:00</spa>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="region-times-container" id="region_2">
+                        <p>Region 2</p>
                     </div>
                 </div>
                 <!--Containers-->
-                <div class="region-times-container" id="region_1">
-                    <p>Region 1</p>
-                    <div class="d-flex times-container">
-                        <div class="col-6">
-                            <h2 class="text-center py-3">AM</h2>
-                            <div class="time-container py-4 text-center mb-3">
-                                <span class="time-begin-text">Inicio: </span>
-                                <spa class="time-begin-number">04:00</spa>
-                            </div>
-                            <div class="time-container py-4 text-center mb-3">
-                                <span class="time-begin-text">Inicio: </span>
-                                <spa class="time-begin-number">04:00</spa>
-                            </div>
-                            <div class="time-container py-4 text-center mb-3">
-                                <span class="time-begin-text">Inicio: </span>
-                                <spa class="time-begin-number">04:00</spa>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <h2 class="text-center py-3">PM</h2>
-                            <div class="time-container py-4 text-center mb-3">
-                                <span class="time-begin-text">Inicio: </span>
-                                <spa class="time-begin-number">04:00</spa>
-                            </div>
-                            <div class="time-container py-4 text-center mb-3">
-                                <span class="time-begin-text">Inicio: </span>
-                                <spa class="time-begin-number">04:00</spa>
-                            </div>
-                            <div class="time-container py-4 text-center mb-3">
-                                <span class="time-begin-text">Inicio: </span>
-                                <spa class="time-begin-number">04:00</spa>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="region-times-container" id="region_2">
-                    <p>Region 2</p>
-                </div>
 
                 <?php
                 include 'advertising-section.php'
@@ -352,294 +452,195 @@
 
         let times = {
             "region_1": [
-                []
+                [{
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": [
+                            "21:00"
+                        ]
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": [
+                            "18:30"
+                        ]
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    }
+                ]
             ],
             "region_2": [
-                [
-                    [],
-                    [
-                        "20:00"
-                    ],
-                    [],
-                    [],
-                    [],
-                    [
-                        "17:30"
-                    ],
-                    []
+                [{
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": [
+                            "20:00"
+                        ]
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": [
+                            "17:30"
+                        ]
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    }
                 ]
             ],
             "region_3": [
-                [
-                    [],
-                    [
-                        "19:00"
-                    ],
-                    [],
-                    [],
-                    [],
-                    [
-                        "16:30"
-                    ],
-                    []
+                [{
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": [
+                            "19:00"
+                        ]
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": [
+                            "16:30"
+                        ]
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    }
                 ]
             ],
             "region_4": [
-                [
-                    [],
-                    [
-                        "0:00"
-                    ],
-                    [],
-                    [],
-                    [],
-                    [
-                        "21:30"
-                    ],
-                    []
+                [{
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [
+                            "0:00"
+                        ],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": [
+                            "21:30"
+                        ]
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    }
                 ]
             ],
             "region_5": [
-                [
-                    [],
-                    [
-                        "17:00"
-                    ],
-                    [],
-                    [],
-                    [],
-                    [
-                        "14:30"
-                    ],
-                    []
+                [{
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": [
+                            "17:00"
+                        ]
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    },
+                    {
+                        "AM": [],
+                        "PM": [
+                            "14:30"
+                        ]
+                    },
+                    {
+                        "AM": [],
+                        "PM": []
+                    }
                 ]
             ]
         }
-        let sliderContainer = "";
-        let dayContainer = "";
-        let timeContainer = "";
-        //Región
-        let index = 1;
-        for (const time in times) {
-            let timeRegions = times[time][0];
 
-            if (times[time][0].length == 0) {
-                continue;
-            }
-            sliderContainer = `
-            <div class="region-times-container" id="${time}">
-                    <p>Region ${index}</p>
-            </div>
-            `
-            index++;
 
-            let timesRegion = times[time][0];
-            timesRegion.forEach(timesDay => {
-                dayContainer = `
-                
-                `;
-                timesDay.forEach(element => {
 
-                })
-            });
 
-        }
 
-        //Países de regiones
-        let countryRegion = "";
-        //imagen del pais
-        let imageCountry = ""
-        //iteramos el objeto
-        for (const property in c) {
-            //Obtenemos el número de países
-            let numberCountries = c[property].length;
-            //Iteramos los países
-            for (let index = 0; index < numberCountries; index++) {
-                /*
-                Verificamos de nuevo el número de países, esto para dar cierto formato
-                a la imagen dependiento cuántos países haya en la región
-                */
-                switch (numberCountries) {
-                    case 1:
-                        imageCountry += ` 
-                        <img src="${c[property][index]}" alt="">
-                        `
-                        break;
-                    case 2:
 
-                        imageCountry += ` 
-                        <img src="${c[property][index]}" alt="">
-                        `
-                        break;
-                    case 3:
-
-                        imageCountry += ` 
-                        <img src="${c[property][index]}" alt="">
-                        `
-
-                        break;
-
-                    case 4:
-                        imageCountry += `
-                        <div class="col-6 text-center">
-                            <img src="${c[property][index]}" alt="">
-                        </div>
-                        `
-                        break;
-                    case 5:
-
-                        imageCountry += `
-                        <div class="col-4 text-center">
-                            <img src="${c[property][index]}" alt="">
-                        </div>
-                        `
-
-                        break;
-                    case 6:
-                        imageCountry += `
-                        <div class="col-4 text-center">
-                            <img src="${c[property][index]}" alt="">
-                        </div>
-                        `
-                        break;
-                    default:
-                        break;
-
-                }
-
-            }
-            //Sí es la región uno, entonces se tendrá la clase de region-country-container-active
-            if (property == "region_1") {
-                //Verificamos aquí los países para dar formato al contenedor de las imágenes, 
-                //dependiento del número de páises que se encuentre
-                switch (numberCountries) {
-                    case 1:
-                        countryRegion += `
-                    <div class="region-country-container-active region-country-container p-4 d-flex justify-content-center" rel="${property}">
-                        ${imageCountry}
-                    </div>
-                    `
-                        break;
-                    case 2:
-                        countryRegion += `
-                    <div class="region-country-container-active region-country-container p-4 d-flex justify-content-between" rel="${property}">
-                        ${imageCountry}
-                    </div>
-                    `
-                        break;
-                    case 3:
-                        countryRegion += `
-                    <div class="region-country-container-active region-country-container p-4 d-flex justify-content-between" rel="${property}">
-                        ${imageCountry}
-                    </div>
-                    `
-                        break;
-                    case 4:
-
-                        countryRegion += `
-                    <div class="no-gutters region-country-container-active region-country-container d-flex justify-content-center p-4 align-items-center flex-wrap" rel="${property}">
-                        ${imageCountry}
-                    </div>
-                    `
-                        break;
-                    case 5:
-                        countryRegion += `
-                    <div class="region-country-container-active region-country-container d-flex align-items-center flex-wrap" rel="${property}">
-                        ${imageCountry}
-                    </div>
-                    `
-                        break;
-                    case 6:
-                        countryRegion += `
-                    <div class="region-country-container-active region-country-container d-flex align-items-center flex-wrap" rel="${property}">
-                        ${imageCountry}
-                    </div>
-                    `
-                        break;
-
-                    default:
-                        break;
-                }
-            } else {
-                //Verificamos aquí los países para dar formato al contenedor de las imágenes, 
-                //dependiento del número de páises que se tenga
-                switch (numberCountries) {
-                    case 1:
-                        countryRegion += `
-                    <div class="region-country-container p-4 d-flex justify-content-center" rel="${property}">
-                        ${imageCountry}
-                    </div>
-                    `
-                        break;
-                    case 2:
-                        countryRegion += `
-                    <div class="region-country-container p-4 d-flex justify-content-between" rel="${property}">
-                        ${imageCountry}
-                    </div>
-                    `
-                        break;
-                    case 3:
-                        countryRegion += `
-                    <div class="region-country-container p-4 d-flex justify-content-between" rel="${property}">
-                        ${imageCountry}
-                    </div>
-                    `
-                        break;
-                    case 4:
-
-                        countryRegion += `
-                    <div class="no-gutters region-country-container d-flex justify-content-center p-4 align-items-center flex-wrap" rel="${property}">
-                        ${imageCountry}
-                    </div>
-                    `
-                        break;
-                    case 5:
-                        countryRegion += `
-                    <div class="region-country-container d-flex align-items-center flex-wrap" rel="${property}">
-                        ${imageCountry}
-                    </div>
-                    `
-                        break;
-                    case 6:
-                        countryRegion += `
-                    <div class="region-country-container d-flex align-items-center flex-wrap" rel="${property}">
-                        ${imageCountry}
-                    </div>
-                    `
-                        break;
-
-                    default:
-                        break;
-                }
-            }
-            //Asignamos vacío para limpiar la variable de las imágenes
-            imageCountry = "";
-        }
-        //Insertamos los contenedores de los países de cada región
-        let regionTimesContainer = $('.region-times-container');
-        regionTimesContainer.hide();
-        $('.region-times-container:first').show();
-        $('.dropdownCountry').html(countryRegion)
-        let regionCountryContainer = $('.region-country-container');
-        regionCountryContainer.click(function() {
-            regionCountryContainer.removeClass("region-country-container-active");
-            $(this).addClass("region-country-container-active")
-            let rel = $(this).attr("rel");
-            regionTimesContainer.hide();
-            $('#' + rel).show();
-        })
-        //Horarios de cada día
-        for (const key in times) {
-
-        }
 
         var socketSinopsis = new easyXDM.Socket({
-            onReady: function() {
+            onReady: function () {
                 var hey = 2640;
                 socketSinopsis.postMessage(hey)
             },
-            onMessage: function(message, origin) {
-                console.log("message", typeof message);
+            onMessage: function (message, origin) {
+
                 let data = JSON.parse(message);
                 if (data.code == 200) {
 
@@ -663,7 +664,6 @@
                     $('.synopsis-image-2-prev').attr("src", imageSynopsis2);
                     $('.synopsis-image-3-prev').attr("src", imageSynopsis3);
 
-                    //$('.synopsis-country-edi').text()
                     let index = 1;
                     let slide = "";
                     let image = ""
@@ -694,6 +694,7 @@
                             break;
                         }
                     }
+                    //Slider de sinopsis
                     $("#banner-synopsis-slider").html(slide);
                     try {
                         $("#banner-synopsis-slider").slick("unslick");
@@ -717,9 +718,356 @@
                             autoplay: true,
                         });
                     }
+                    //Paises
+                    let sliderContainer = "";
+                    let countriesImages = data.data.time_regions.regions.countries;
+                    //Países de regiones
+                    let countryRegion = "";
+                    //imagen del pais
+                    let imageCountry = ""
+                    //iteramos el objeto
+                    for (const property in countriesImages) {
+                        //Obtenemos el número de países
+                        let numberCountries = c[property].length;
+                        //Iteramos los países
+                        for (let index = 0; index < numberCountries; index++) {
+                            /*
+                            Verificamos de nuevo el número de países, esto para dar cierto formato
+                            a la imagen dependiento cuántos países haya en la región
+                            */
+                            switch (numberCountries) {
+                                case 1:
+                                    imageCountry += ` 
+                        <img src="${c[property][index]}" alt="">
+                        `
+                                    break;
+                                case 2:
+
+                                    imageCountry += ` 
+                        <img src="${c[property][index]}" alt="">
+                        `
+                                    break;
+                                case 3:
+
+                                    imageCountry += ` 
+                        <img src="${c[property][index]}" alt="">
+                        `
+
+                                    break;
+
+                                case 4:
+                                    imageCountry += `
+                        <div class="col-6 text-center">
+                            <img src="${c[property][index]}" alt="">
+                        </div>
+                        `
+                                    break;
+                                case 5:
+                                    imageCountry += `
+                        <div class="col-4 text-center">
+                            <img src="${c[property][index]}" alt="">
+                        </div>
+                        `
+                                    break;
+                                case 6:
+                                    imageCountry += `
+                        <div class="col-4 text-center">
+                            <img src="${c[property][index]}" alt="">
+                        </div>
+                        `
+                                    break;
+                                default:
+                                    break;
+
+                            }
+
+                        }
+                        //Sí es la región uno, entonces se tendrá la clase de region-country-container-active
+                        if (property == "region_1") {
+                            //Verificamos aquí los países para dar formato al contenedor de las imágenes, 
+                            //dependiento del número de páises que se encuentre
+                            switch (numberCountries) {
+                                case 1:
+                                    countryRegion += `
+                                    <div class="region-country-container-active region-country-container p-4 d-flex justify-content-center" rel="${property}">
+                                        ${imageCountry}
+                                    </div>
+                                    `
+                                    break;
+                                case 2:
+                                    countryRegion += `
+                                    <div class="region-country-container-active region-country-container p-4 d-flex justify-content-between" rel="${property}">
+                                        ${imageCountry}
+                                    </div>
+                                    `
+                                    break;
+                                case 3:
+                                    countryRegion += `
+                                    <div class="region-country-container-active region-country-container p-4 d-flex justify-content-between" rel="${property}">
+                                        ${imageCountry}
+                                    </div>
+                                    `
+                                    break;
+                                case 4:
+
+                                    countryRegion += `
+                                    <div class="no-gutters region-country-container-active region-country-container d-flex justify-content-center p-4 align-items-center flex-wrap" rel="${property}">
+                                        ${imageCountry}
+                                    </div>
+                                    `
+                                    break;
+                                case 5:
+                                    countryRegion += `
+                                    <div class="region-country-container-active region-country-container d-flex align-items-center flex-wrap" rel="${property}">
+                                        ${imageCountry}
+                                    </div>
+                                    `
+                                    break;
+                                case 6:
+                                    countryRegion += `
+                                    <div class="region-country-container-active region-country-container d-flex align-items-center flex-wrap" rel="${property}">
+                                        ${imageCountry}
+                                    </div>
+                                    `
+                                    break;
+
+                                default:
+                                    break;
+                            }
+                        } else {
+                            //Verificamos aquí los países para dar formato al contenedor de las imágenes, 
+                            //dependiento del número de páises que se tenga
+                            switch (numberCountries) {
+                                case 1:
+                                    countryRegion += `
+                                    <div class="region-country-container p-4 d-flex justify-content-center" rel="${property}">
+                                        ${imageCountry}
+                                    </div>
+                                    `
+                                    break;
+                                case 2:
+                                    countryRegion += `
+                                    <div class="region-country-container p-4 d-flex justify-content-between" rel="${property}">
+                                        ${imageCountry}
+                                    </div>
+                                    `
+                                    break;
+                                case 3:
+                                    countryRegion += `
+                                    <div class="region-country-container p-4 d-flex justify-content-between" rel="${property}">
+                                        ${imageCountry}
+                                    </div>
+                                    `
+                                    break;
+                                case 4:
+
+                                    countryRegion += `
+                                    <div class="no-gutters region-country-container d-flex justify-content-center p-4 align-items-center flex-wrap" rel="${property}">
+                                        ${imageCountry}
+                                    </div>
+                                    `
+                                    break;
+                                case 5:
+                                    countryRegion += `
+                                    <div class="region-country-container d-flex align-items-center flex-wrap" rel="${property}">
+                                        ${imageCountry}
+                                    </div>
+                                    `
+                                    break;
+                                case 6:
+                                    countryRegion += `
+                                <div class="region-country-container d-flex align-items-center flex-wrap" rel="${property}">
+                                    ${imageCountry}
+                                </div>
+                                `
+                                    break;
+
+                                default:
+                                    break;
+                            }
+                        }
+                        //Asignamos vacío para limpiar la variable de las imágenes
+                        imageCountry = "";
+                    }
+
+
+
+                    let times = data.data.time_regions.regions.times;
+                    //Broadcast schedule
+
+                    let dayContainer = "";
+                    let timeContainer = "";
+                    let timeAm = "";
+                    let timePm = "";
+                    //Región
+                    for (const time in times) {
+                        let timeRegions = times[time];
+
+                        if (times[time][0].length == 0) {
+                            continue;
+                        }
+
+                        let numberDays = timeRegions.length
+
+                        for (let index = 0; index < numberDays; index++) {
+                            //Regiones
+                            timeRegions[index].forEach(element => {
+
+                                //Horarios en AM
+                                let am = element.AM;
+                                //Horarios en PM
+                                let pm = element.PM
+
+                                am.forEach(time => {
+                                    timeAm += `
+                                    <div class="time-container py-4 text-center mb-4">
+                                        <span class="time-begin-text">Inicio: </span>
+                                        <span class="time-begin-number">${time}</span>
+                                    </div>
+                                    `
+                                    console.log(time);
+                                })
+                                pm.forEach(time => {
+                                    timePm += `
+                                    <div class="time-container py-4 text-center mb-3">
+                                        <span class="time-begin-text">Inicio: </span>
+                                        <span class="time-begin-number">${time}</span>
+                                    </div>
+                                    `
+                                })
+
+                                dayContainer += `
+                                <div class="times-container">
+                                    <div class="d-flex">
+                                        <div class="col-6 text-center">
+                                            <h2 class="time-title py-3">AM</h2>
+                                            ${timeAm}
+                                        </div>
+                                        <div class="col-6 text-center">
+                                            <h2 class="time-title py-3">PM</h2>
+                                            ${timePm}
+                                        </div>
+                                    </div>    
+                                </div>
+                                `;
+
+                                timeAm = "";
+                                timePm = "";
+                            });
+                        }
+                        sliderContainer += `
+                        <div class="region-times-container" id="${time}">
+                            <div class="mt-5 time-slider-dots-container position-relative mb-3 text-center">
+                                
+                                <div class="d-flex justify-content-center mb-5">
+                                    <p class="day-pagination">L</p>
+                                    <p class="day-pagination">M</p>
+                                    <p class="day-pagination">M</p>
+                                    <p class="day-pagination">J</p>
+                                    <p class="day-pagination">V</p>
+                                    <p class="day-pagination">S</p>
+                                    <p class="day-pagination">D</p>
+                                </div>
+                            </div>
+                            <div class="time-slider">
+                                <div class="region-times-slider">
+                                    ${dayContainer}
+                                </div>   
+                            </div>
+
+                        </div>
+                        `
+                        dayContainer = "";
+                    }
+
+                    $('.time-slider-container').html(sliderContainer);
+
+                    $('.region-times-slider').each(function () {
+
+                        $(this).not(".slick-initialized").slick({
+                            infinite: true,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            dots: true,
+                            appendDots: $(this).parent().prev(),
+                            appendArrows: $(this).parent().prev().children(".slick-dots"),
+                            centerMode: true,
+                            arrows: true,
+                            centerPadding: "200px",
+                            prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
+                            nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                            customPaging: function (slider, i) {
+                                var thumb = $(slider.$slides[i]).data('thumb');
+                                return `
+                                <div class="pagination-items-container">
+                                    <div class="pagination-item"></div>
+                                </div>
+                                `;
+                            }
+                        });
+                    })
+                    //Insertamos los contenedores de los países de cada región
+                    let regionTimesContainer = $('.region-times-container');
+                    regionTimesContainer.hide();
+                    $('.region-times-container:first').show();
+                    $('.dropdownCountry').html(countryRegion)
+                    let regionCountryContainer = $('.region-country-container');
+                    regionCountryContainer.click(function () {
+                        regionCountryContainer.removeClass("region-country-container-active");
+                        $(this).addClass("region-country-container-active")
+                        let rel = $(this).attr("rel");
+                        console.log(rel);
+                        regionTimesContainer.hide();
+                        $('#' + rel).show();
+                        try {
+                            $(".region-times-slider").slick("unslick");
+                            $('.region-times-slider').each(function () {
+                                $(this).not(".slick-initialized").slick({
+                                    infinite: true,
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                    dots: true,
+                                    appendDots: $(this).parent().prev(),
+                                    centerMode: true,
+                                    arrows: false,
+                                    centerPadding: "200px",
+                                    customPaging: function (slider, i) {
+                                        var thumb = $(slider.$slides[i]).data(
+                                            'thumb');
+                                        return `
+                                        <div class="pagination-items-container">
+                                            <div class="pagination-item"></div>
+                                        </div>
+                                        `;
+                                    }
+                                });
+                            })
+                        } catch (error) {
+                            $('.region-times-slider').each(function () {
+                                $(this).not(".slick-initialized").slick({
+                                    infinite: true,
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                    dots: true,
+                                    appendDots: $(this).parent().prev(),
+                                    centerMode: true,
+                                    arrows: false,
+                                    centerPadding: "200px",
+                                    customPaging: function (slider, i) {
+                                        var thumb = $(slider.$slides[i]).data(
+                                            'thumb');
+                                        return `
+                                        <div class="pagination-items-container">
+                                            <div class="pagination-item"></div>
+                                        </div>
+                                        `;
+                                    }
+                                });
+                            })
+                        }
+                    })
+
                 }
-
-
             }
         });
     </script>

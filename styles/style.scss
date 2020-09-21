@@ -42,39 +42,43 @@
     width: 100%;
     max-width: 150px;
   }
-  .container-days{
+
+  .container-days {
     width: 19px;
     height: 59px;
-  
+
     object-fit: contain;
     border-radius: 3px;
     box-shadow: 1px 1px 3px 0 $charcoal-grey;
-    background-color:$black-four;
+    background-color: $black-four;
   }
-  .container-days-inac{
+
+  .container-days-inac {
     width: 19px;
     height: 59px;
-  
+
     object-fit: contain;
     border-radius: 3px;
     box-shadow: 1px 1px 3px 0 $scheduleHourColor;
     background-color: $black-five;
   }
-  .container-hora{ 
+
+  .container-hora {
     width: 68px;
-    height: 59px;  
+    height: 59px;
     object-fit: contain;
     border-radius: 3px;
     box-shadow: 1px 1px 3px 0 $charcoal-grey;
-    background-color:$black-four;
+    background-color: $black-four;
   }
-  .container-paises{
+
+  .container-paises {
     width: 78px;
     height: 128px;
     object-fit: contain;
     border-radius: 3px;
     box-shadow: 1px 1px 3px 0 $charcoal-grey;
-    background-color:$black-four;
+    background-color: $black-four;
   }
 
   .menu-responsive {
@@ -1512,30 +1516,34 @@
 
   /*1.1 - General - Átomos */
 
-  .container-width-colum{
+  .container-width-colum {
     width: 78px;
     height: 128px;
   }
-  .container-width-time{
+
+  .container-width-time {
     width: 161px;
   }
-  .container-width-selec{
+
+  .container-width-selec {
     width: 59px;
   }
+
   .modal-image-program {
     width: 100%;
     max-width: 150px;
   }
- 
-  .container-days{
+
+  .container-days {
     width: 48px;
     height: 101px;
     object-fit: contain;
     border-radius: 3px;
     box-shadow: 1px 1px 3px 0 $charcoal-grey;
-    background-color:$black-four;
+    background-color: $black-four;
   }
-  .container-days-inac{
+
+  .container-days-inac {
     width: 48px;
     height: 101px;
     object-fit: contain;
@@ -1543,13 +1551,14 @@
     box-shadow: 1px 1px 3px 0 $scheduleHourColor;
     background-color: $black-five;
   }
-  .container-hora{ 
+
+  .container-hora {
     width: 117px;
-  height: 102px;
+    height: 102px;
     object-fit: contain;
     border-radius: 3px;
     box-shadow: 1px 1px 3px 0 $charcoal-grey;
-    background-color:$black-four;
+    background-color: $black-four;
   }
 
   .header-curve {
@@ -3133,45 +3142,51 @@
   /***  1.- ATOMS  ****/
 
   /*1.1.- Generales - átomos*/
-  .container-width-colum{
+  .container-width-colum {
     width: 201px;
   }
-  .container-width-time{
+
+  .container-width-time {
     width: 161px;
   }
-  .container-width-selec{
+
+  .container-width-selec {
     width: 59px;
   }
+
   .modal-image-program {
     width: 100%;
     max-width: 200px;
   }
-  .container-paises{
+
+  .container-paises {
     width: 201px;
     height: 202px;
     object-fit: contain;
     border-radius: 3px;
     box-shadow: 1px 1px 3px 0 $charcoal-grey;
-    background-color:$black-four;
+    background-color: $black-four;
   }
-  
-  .container-hora{ 
+
+  .container-hora {
     width: 161px;
     height: 93px;
     object-fit: contain;
     border-radius: 3px;
     box-shadow: 1px 1px 3px 0 $charcoal-grey;
-    background-color:$black-four;
+    background-color: $black-four;
   }
-  .container-days{
+
+  .container-days {
     width: 59px;
     height: 93px;
     object-fit: contain;
     border-radius: 3px;
     box-shadow: 1px 1px 3px 0 $charcoal-grey;
-    background-color:$black-four;
+    background-color: $black-four;
   }
-  .container-days-inac{
+
+  .container-days-inac {
     width: 59px;
     height: 93px;
     object-fit: contain;
@@ -3207,9 +3222,23 @@
     bottom: -35px;
   }
 
-  .slick-slider .slick-list {
-    padding: 0px 0px 0px 0px !important;
+  .section-slider {
+    .slick-list {
+      padding: 0px 0px 0px 0px !important;
+    }
   }
+
+  .tv-slider {
+    .slick-list {
+      padding: 0px 0px 0px 0px !important;
+    }
+  }
+
+
+
+  /*   .slick-slider .slick-list {
+    padding: 0px 0px 0px 0px !important;
+  } */
 
   .poster-title-margin {
     margin: 10px;
@@ -4823,45 +4852,51 @@
 
   /*-----------------------------*/
   /*1.1 General -  Átomos  */
-  .container-width-colum{
+  .container-width-colum {
     width: 201px;
   }
-  .container-width-time{
+
+  .container-width-time {
     width: 161px;
   }
-  .container-width-selec{
+
+  .container-width-selec {
     width: 59px;
   }
+
   .modal-image-program {
     width: 100%;
     max-width: 250px;
   }
-  .container-paises{
+
+  .container-paises {
     width: 201px;
     height: 202px;
     object-fit: contain;
     border-radius: 3px;
     box-shadow: 1px 1px 3px 0 $charcoal-grey;
-    background-color:$black-four;
+    background-color: $black-four;
   }
-  
-  .container-hora{ 
+
+  .container-hora {
     width: 161px;
     height: 93px;
     object-fit: contain;
     border-radius: 3px;
     box-shadow: 1px 1px 3px 0 $charcoal-grey;
-    background-color:$black-four;
+    background-color: $black-four;
   }
-  .container-days{
+
+  .container-days {
     width: 59px;
     height: 93px;
     object-fit: contain;
     border-radius: 3px;
     box-shadow: 1px 1px 3px 0 $charcoal-grey;
-    background-color:$black-four;
+    background-color: $black-four;
   }
-  .container-days-inac{
+
+  .container-days-inac {
     width: 59px;
     height: 93px;
     object-fit: contain;
@@ -4869,6 +4904,7 @@
     box-shadow: 1px 1px 3px 0 $scheduleHourColor;
     background-color: $black-five;
   }
+
   .margin-ahora-tv {
     margin-bottom: 21px;
   }
