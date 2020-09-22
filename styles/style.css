@@ -5359,37 +5359,15 @@ div #banner-concert-channel-edi .slick-track {
           transform: translate(0px, -26px);
 }
 
-.programming-slider-dots .slick-dots li {
+.slider-pagination-item-home::before .programming-slider-dots .slick-dots li {
   margin: 0 10px !important;
 }
 
-.selteal {
+.slider-pagination-item-home::before .selteal {
   color: white !important;
   background-color: #0097a9;
 }
 
-/* .programming-slider-dots::after {
-  content: "";
-  border-width: 6px;
-  border-style: solid;
-  border-color: $greyishBrownTwo transparent transparent transparent;
-  position: absolute;
-  left: 32%;
-  bottom: -38%;
-  transform: rotate(180deg);
-}
-
-.programming-slider-dots::before {
-  content: "";
-  border-width: 6px;
-  border-style: solid;
-  border-color: $greyishBrownTwo transparent transparent transparent;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  -webkit-transform: translate(-50%, 100%);
-  transform: translate(-50%, -95%);
-}*/
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 .dropdownCountry {
