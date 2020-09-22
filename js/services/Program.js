@@ -4,6 +4,7 @@ import {
 
 function createClickThumbnails() {
     $(".thumbnail-body, .poster-live, .thumbnail-prog").click(function () {
+        console.log("Sinopsus");
         let thumbnailId = $(this).attr("_id");
         let posterLiveId = $(this).attr("_id");
         let listItemButton = $(this).find(".button-none").attr("_id");
@@ -96,6 +97,7 @@ function getPrograms(date, country) {
         date,
         country,
     };
+    console.log(dataProgram)
 
     //NORMAL
     let nowSliderCanalClaro = $(".today-claro-slider");
@@ -121,6 +123,7 @@ function getPrograms(date, country) {
         data: dataProgram,
         url: "./adapters/program.php",
         success: function (result) {
+
             let json = JSON.parse(result);
             /* SLIDER "AHORA EN VIVO CANAL CLARO*/
 

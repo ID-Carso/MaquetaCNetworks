@@ -303,57 +303,102 @@
   justify-content: center;
   border-radius: 15px;
 }
+
 .content-table {
   display: table;
 }
+
 .contenedor-fila {
   display: table-row;
 }
+
 .contenedor-columna {
   display: table-cell;
- 
+
   vertical-align: middle;
   padding: 4px;
 }
-.container-width-colum{
+
+.container-width-colum {
   width: 201px;
 }
-.container-width-time{
+
+.container-width-time {
   width: 161px;
 }
-.container-width-selec{
+
+.container-width-selec {
   width: 59px;
 }
-.container-paises{
+
+.container-paises {
   width: 201px;
   height: 202px;
   object-fit: contain;
   border-radius: 3px;
   box-shadow: 1px 1px 3px 0 $charcoal-grey;
-  background-color:$black-four;
+  background-color: $black-four;
 }
 
-.container-hora{ 
+.container-hora {
   width: 161px;
   height: 93px;
   object-fit: contain;
   border-radius: 3px;
   box-shadow: 1px 1px 3px 0 $charcoal-grey;
-  background-color:$black-four;
+  background-color: $black-four;
 }
-.container-days{
+
+.container-days {
   width: 59px;
   height: 93px;
   object-fit: contain;
   border-radius: 3px;
   box-shadow: 1px 1px 3px 0 $charcoal-grey;
-  background-color:$black-four;
+  background-color: $black-four;
 }
-.container-days-inac{
+
+.container-days-inac {
   width: 59px;
   height: 93px;
   object-fit: contain;
   border-radius: 3px;
   box-shadow: 1px 1px 3px 0 $scheduleHourColor;
   background-color: $black-five;
+}
+
+.times-container {
+
+  border-radius: 15px;
+  /*box-shadow: 0 0 24px 1px #0097a9, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);*/
+  box-shadow: inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+  background-color: #161616;
+}
+
+.time-container {
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 #000000, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+  background-color: #0f0e0e;
+}
+
+.region-country-container-active {
+  box-shadow: 0 0 3px 1px #0097a9, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5) !important;
+  background-color: #00353b !important;
+}
+
+.region-country-container {
+  width: 193px;
+  height: 160px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px 0 #000000, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+  background-color: #0f0e0e;
+}
+
+.dropdown-country-container {
+  padding: 48px 0;
+  height: 257px;
+  object-fit: contain;
+  border-radius: 3px;
+  box-shadow: 2px 1px 7px 0 #353435;
+  background: #161616;
 }

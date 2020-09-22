@@ -5,133 +5,6 @@
     <?php include './views/partials/head.php' ?>
 
 </head>
-<style>
-    .dropdown-country-container {
-        padding: 48px 0;
-        height: 257px;
-        object-fit: contain;
-        border-radius: 3px;
-        box-shadow: 2px 1px 7px 0 #353435;
-        background: #161616;
-    }
-
-    .region-country-container-active {
-        box-shadow: 0 0 3px 1px #0097a9, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5) !important;
-        background-color: #00353b !important;
-    }
-
-    .region-country-container {
-        width: 193px;
-        height: 160px;
-        border-radius: 15px;
-        box-shadow: 0 2px 4px 0 #000000, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
-        background-color: #0f0e0e;
-    }
-
-    .region-country-container img,
-    .region-country-container-active img {
-        width: 38px;
-    }
-
-    .time-container {
-        border-radius: 3px;
-        box-shadow: 0 2px 4px 0 #000000, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
-        background-color: #0f0e0e;
-    }
-
-    .times-container {
-
-        border-radius: 15px;
-        /*box-shadow: 0 0 24px 1px #0097a9, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);*/
-        box-shadow: inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
-        background-color: #161616;
-    }
-
-    .region-times-slider .slick-current {
-        box-shadow: 0 0 24px 1px #0097a9, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
-        border-radius: 15px;
-    }
-
-    .region-times-slider .slick-next {
-        right: 0;
-    }
-
-    .region-times-slider .slick-prev {
-        left: 0;
-    }
-
-    .region-times-slider .slick-track {
-        margin-top: 48px;
-    }
-
-    .time-slider-dots-container .slick-dots {
-        display: inline;
-        padding: 16px;
-        border-radius: 4px;
-        box-shadow: inset 2px 2px 5px 0 rgba(161, 161, 161, 0.5);
-        background-color: #222121;
-    }
-
-
-
-    .time-begin-text {
-        font-size: 21px;
-        color: #a7a8aa;
-    }
-
-    .time-begin-number {
-        font-size: 21px;
-        color: white;
-    }
-
-    .time-title {
-        font-size: 24px;
-        color: white;
-    }
-
-    .time-slider-dots-container .slick-dots {
-        position: static;
-        bottom: 0px;
-    }
-
-    .time-slider-dots-container .slick-dots li {
-        height: auto;
-        width: 58px;
-        margin: 0 2px;
-    }
-
-    .time-slider-dots-container .day-pagination {
-        font-family: "Montserrat-SemiBold";
-        color: #ffffff;
-        font-size: 24px;
-        width: 58px;
-        text-align: center;
-        margin: 0px 2px;
-    }
-
-    .pagination-item {
-        width: 100%;
-        height: 15px;
-        background-color: #d8d8d8;
-    }
-
-    .time-slider-dots-container li.slick-active .pagination-item {
-        background-color: #0097a9;
-    }
-
-    .time-slider-dots-container .time-slider-prev {
-        bottom: 0;
-        left: 28%;
-        transform: initial;
-    }
-
-    .time-slider-dots-container .time-slider-next {
-        bottom: 0;
-        /* left: 28%; */
-        transform: initial;
-        right: 28%;
-    }
-</style>
 
 <body>
     <header class="synopsis-header">
@@ -629,11 +502,6 @@
         }
 
 
-
-
-
-
-
         var socketSinopsis = new easyXDM.Socket({
             onReady: function () {
                 var hey = 2640;
@@ -728,7 +596,7 @@
                     //iteramos el objeto
                     for (const property in countriesImages) {
                         //Obtenemos el número de países
-                        let numberCountries = c[property].length;
+                        let numberCountries = countriesImages[property].length;
                         //Iteramos los países
                         for (let index = 0; index < numberCountries; index++) {
                             /*
@@ -738,19 +606,19 @@
                             switch (numberCountries) {
                                 case 1:
                                     imageCountry += ` 
-                        <img src="${c[property][index]}" alt="">
+                        <img src="${countriesImages[property][index]}" alt="">
                         `
                                     break;
                                 case 2:
 
                                     imageCountry += ` 
-                        <img src="${c[property][index]}" alt="">
+                        <img src="${countriesImages[property][index]}" alt="">
                         `
                                     break;
                                 case 3:
 
                                     imageCountry += ` 
-                        <img src="${c[property][index]}" alt="">
+                        <img src="${countriesImages[property][index]}" alt="">
                         `
 
                                     break;
@@ -758,21 +626,21 @@
                                 case 4:
                                     imageCountry += `
                         <div class="col-6 text-center">
-                            <img src="${c[property][index]}" alt="">
+                            <img src="${countriesImages[property][index]}" alt="">
                         </div>
                         `
                                     break;
                                 case 5:
                                     imageCountry += `
                         <div class="col-4 text-center">
-                            <img src="${c[property][index]}" alt="">
+                            <img src="${countriesImages[property][index]}" alt="">
                         </div>
                         `
                                     break;
                                 case 6:
                                     imageCountry += `
                         <div class="col-4 text-center">
-                            <img src="${c[property][index]}" alt="">
+                            <img src="${countriesImages[property][index]}" alt="">
                         </div>
                         `
                                     break;
@@ -890,11 +758,8 @@
                         imageCountry = "";
                     }
 
-
-
                     let times = data.data.time_regions.regions.times;
                     //Broadcast schedule
-
                     let dayContainer = "";
                     let timeContainer = "";
                     let timeAm = "";
@@ -1005,6 +870,7 @@
                                 `;
                             }
                         });
+                        console.log($(this).parent().prev().children(".slick-dots"));
                     })
                     //Insertamos los contenedores de los países de cada región
                     let regionTimesContainer = $('.region-times-container');

@@ -36,8 +36,7 @@ $(document).ready(function () {
       arrows: true,
       prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
       nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-      responsive: [
-        {
+      responsive: [{
           breakpoint: 768,
           settings: {
             slidesToShow: 1,
@@ -70,10 +69,8 @@ $(document).ready(function () {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
         {
@@ -85,10 +82,8 @@ $(document).ready(function () {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
       ],
@@ -99,6 +94,7 @@ $(document).ready(function () {
     data: data,
     url: "./adapters/program.php",
     success: function (result) {
+      createClickThumbnails();
       let json = JSON.parse(result);
       console.log(json);
       let sliderCanalClarLanding = $(".today-claro-slider-edit");
@@ -385,4 +381,55 @@ $(document).ready(function () {
       createTvSlider(sliderConcertChannelLanding);
     },
   });
+
+  function createClickThumbnails() {
+    $(".thumbnail-body, .poster-live, .thumbnail-prog").click(function () {
+      console.log("Sinopsus");
+      let thumbnailId = $(this).attr("_id");
+      let posterLiveId = $(this).attr("_id");
+      let listItemButton = $(this).find(".button-none").attr("_id");
+
+      let thumbnailProgId = $(this).attr("_id");
+
+      if (thumbnailId) {
+        showSynopsis(thumbnailId);
+      } else if (posterLiveId) {
+        showSynopsis(posterLiveId);
+      } else if (listItemButton) {
+        showSynopsis(listItemButton);
+      } else {
+        showSynopsis(thumbnailProgId);
+      }
+    });
+  }
+
+  //Traer sinopsis
+  function showSynopsis(id) {
+    let dataUser = {
+      function: "showSynopsis",
+      chapter_id: id,
+    };
+
+    $.ajax({
+      type: "POST",
+      data: dataUser,
+      url: "./adapters/program.php",
+      success: function (result) {
+        let json = JSON.parse(result);
+        if (json.code == 200) {
+          localStorage.setItem("synopsis", JSON.stringify(json.data));
+          location.href = "./sinopsis.php";
+        } else {
+          let noSynopsis = `
+            <div class="no-synopsis-container text-center">
+                <img src="./images/sinopsis/helmet.png" alt="" class="helmet-image">
+                <h3 class="no-synopsis-title a-text-white-monblack">SINÓPSIS EN <span>CONSTRUCCIÓN</span></h3>
+                <p class="no-synopsis-text a-text-white-semibold">La sinópsis de este programa no está disponible aún</p>
+            </div>
+          `;
+          $(".synopsis-content").addClass("col-12").html(noSynopsis);
+        }
+      },
+    });
+  }
 });

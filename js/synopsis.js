@@ -17,61 +17,61 @@ $(document).ready(function () {
     $(".synopsis-title").text(programSynopsis.title);
     synopsisButtonFavorite.attr("_id", programSynopsis.chapter_id);
     $(".synopsis-description").text(programSynopsis.sinopsis);
-    let dropdownElement = "";
-    let dropdownCountryElement = "";
-    let dropdownCountries = "";
-    let programmingLength = Object.values(programSynopsis.programing).length;
-    for (let i = 0; i < programmingLength; i++) {
-      let horario = Object.values(programSynopsis.programing)[i].horario;
-      let country = Object.values(programSynopsis.programing)[i].paises;
-      dropdownCountryElement = "";
-      for (let elemento in country) {
-        if (elemento == 0) {
-          dropdownElement = `                         
-            <div class="dropdownCountry-content d-flex  align-items-center pb-2 mb-3 no-gutters">
-              <div class="col-2">
-                  <img src="http://www.claronetworks.openofficedospuntocero.info/images/paises/${
-                    country[elemento]
-                  }" alt="">
+    /*     let dropdownElement = "";
+        let dropdownCountryElement = "";
+        let dropdownCountries = "";
+        let programmingLength = Object.values(programSynopsis.programing).length;
+        for (let i = 0; i < programmingLength; i++) {
+          let horario = Object.values(programSynopsis.programing)[i].horario;
+          let country = Object.values(programSynopsis.programing)[i].paises;
+          dropdownCountryElement = "";
+          for (let elemento in country) {
+            if (elemento == 0) {
+              dropdownElement = `                         
+                <div class="dropdownCountry-content d-flex  align-items-center pb-2 mb-3 no-gutters">
+                  <div class="col-2">
+                      <img src="http://www.claronetworks.openofficedospuntocero.info/images/paises/${
+                        country[elemento]
+                      }" alt="">
+                  </div>
+        
+                  <div class="col-5">
+                      <p class="dropdownCountry-text">${showNameCountries(
+                        country[elemento]
+                      )}</p>
+                  </div>
+                  <div class="col-4">
+                      <p class="dropdownCountry-text dropdownCountry-schedule">${horario} hrs</p>
+                  </div>
+                  <div class="col-1 text-center dropdownCountry-icon">
+                      <span class="dropdownCountry-arrow"></span>
+                  </div>
+                </div>`;
+            } else {
+              dropdownCountryElement += `
+                <div class="dropdownCountries-content no-gutters">
+                  <div class="col-2">
+                      <img src="http://www.claronetworks.openofficedospuntocero.info/images/paises/${
+                        country[elemento]
+                      }" alt="">
+                  </div>
+                  <div class="col-5">
+                      <p class="dropdownCountry-text">${showNameCountries(
+                        country[elemento]
+                      )}</p>
+                  </div>
+                  </div>
+                `;
+            }
+            dropdownCountries = `
+              <div class="dropdownCountries pb-3 mb-3">
+              ${dropdownCountryElement}
               </div>
-    
-              <div class="col-5">
-                  <p class="dropdownCountry-text">${showNameCountries(
-                    country[elemento]
-                  )}</p>
-              </div>
-              <div class="col-4">
-                  <p class="dropdownCountry-text dropdownCountry-schedule">${horario} hrs</p>
-              </div>
-              <div class="col-1 text-center dropdownCountry-icon">
-                  <span class="dropdownCountry-arrow"></span>
-              </div>
-            </div>`;
-        } else {
-          dropdownCountryElement += `
-            <div class="dropdownCountries-content no-gutters">
-              <div class="col-2">
-                  <img src="http://www.claronetworks.openofficedospuntocero.info/images/paises/${
-                    country[elemento]
-                  }" alt="">
-              </div>
-              <div class="col-5">
-                  <p class="dropdownCountry-text">${showNameCountries(
-                    country[elemento]
-                  )}</p>
-              </div>
-              </div>
-            `;
-        }
-        dropdownCountries = `
-          <div class="dropdownCountries pb-3 mb-3">
-          ${dropdownCountryElement}
-          </div>
-          `;
-      }
+              `;
+          }
 
-      $(".dropdownCountry").append(`${dropdownElement}${dropdownCountries}`);
-    }
+          $(".dropdownCountry").append(`${dropdownElement}${dropdownCountries}`);
+        } */
   }
 
   let synopsisIdChapter = $(".synopsis-add").attr("_id");

@@ -39,21 +39,23 @@
 .text-smaller {
   font-size: 12px;
 }
+
 .a-text-black-brown-two {
   font-family: $montserratBlack;
-  color:$blackColor;
+  color: $blackColor;
 }
-.a-text-plus{
+
+.a-text-plus {
   font-size: 30px;
 }
 
 .a-text-bold-greyish {
-  color: $greyishBrownTwo; 
+  color: $greyishBrownTwo;
   font-family: $montserratBold;
 }
 
-.a-text-bold-cool-grey{
-  color:$cool-grey; 
+.a-text-bold-cool-grey {
+  color: $cool-grey;
   font-family: $montserratBold;
 }
 
@@ -61,11 +63,13 @@
   color: $cinemaRectangle;
   font-family: $montserratSemiBold;
 }
-.a-text-regular-white{
+
+.a-text-regular-white {
   font-family: $montserratRegular;
   color: $colorWhite;
-  font-size: 14px; 
-} 
+  font-size: 14px;
+}
+
 .a-text-medium-greyish {
   color: $greyishBrownTwo;
   font-family: $montserratMedium;
@@ -75,6 +79,7 @@
   color: $colorWhite;
   font-family: $montserratMedium;
 }
+
 .a-our-vision-title {
   @include title-section($pinkColor, $titleSection);
 }
@@ -104,11 +109,9 @@
 }
 
 .a-concert-channel-subtitle {
-  @include title-section(
-    $colorWhite,
+  @include title-section($colorWhite,
     $posterTitleResponsive,
-    $fontFamily: $montserratSemiBold
-  );
+    $fontFamily: $montserratSemiBold);
   padding-bottom: 14px;
 }
 
@@ -122,11 +125,9 @@
 }
 
 .a-subtitle {
-  @include title-section(
-    $blackColor,
+  @include title-section($blackColor,
     $posterTitleResponsive,
-    $montserratRegular
-  );
+    $montserratRegular);
   padding-bottom: 14px;
 }
 
@@ -199,11 +200,9 @@
 .a-claro-cinema-subtitle,
 .a-our-vision-subtitle,
 .a-claro-sports-subtitle {
-  @include title-section(
-    $blackColor,
+  @include title-section($blackColor,
     $posterTitleResponsive,
-    $montserratRegular
-  );
+    $montserratRegular);
   padding-bottom: 14px;
 }
 
@@ -818,6 +817,7 @@
 }
 
 .claro-active {
+
   .day-text,
   .day-number {
     color: white;
@@ -825,6 +825,7 @@
 }
 
 .concert-active {
+
   .day-text,
   .day-number {
     color: white;
@@ -832,6 +833,7 @@
 }
 
 .cinema-active {
+
   .day-text,
   .day-number {
     color: white;
@@ -839,6 +841,7 @@
 }
 
 .vision-active {
+
   .day-text,
   .day-number {
     color: white;
@@ -846,6 +849,7 @@
 }
 
 .sports-active {
+
   .day-text,
   .day-number {
     color: white;
@@ -1459,4 +1463,20 @@
   margin: 30px 0;
   font-size: 24px;
   color: $textgray;
+}
+
+
+.time-begin-text {
+  font-size: 21px;
+  color: #a7a8aa;
+}
+
+.time-begin-number {
+  font-size: 21px;
+  color: white;
+}
+
+.time-title {
+  font-size: 24px;
+  color: white;
 }
