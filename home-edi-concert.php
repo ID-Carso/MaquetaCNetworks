@@ -549,6 +549,16 @@
                 socketHome.postMessage(hey)
             }
         });
+        $(".home-header").on("click", ".slider-pagination-item-home", function () {
+            let type = "slider-pagination";
+            let data = {
+
+                type: type
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketHome.postMessage(json);
+        });
         $(".pencil").click(function () {
             let data = {
                 type: $(this).attr("type")
