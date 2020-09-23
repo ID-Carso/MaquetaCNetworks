@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel ./js/main.js",
-    "build": "parcel build ./js/main.js -d dist --no-cache"
+    "build": "parcel build ./js/main.js -d dist --no-cache",
+    "watch": "npm-watch"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,17 @@
   },
   "homepage": "https://github.com/ID-Carso/MaquetaCNetworks#readme",
   "dependencies": {
+    "npm-watch": "^0.7.0",
     "parcel-bundler": "^1.12.4"
   },
   "devDependencies": {
     "sass": "^1.26.10"
+  },
+
+  "watch": {
+    "build": {
+      "patterns": ["src"],
+      "extensions": "js,jsx"
+    }
   }
 }

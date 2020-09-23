@@ -92,10 +92,13 @@ function destroySlider(container) {
 
 function getPrograms(date, country) {
     let dataProgram = {
-        function: "getPrograms",
+        // function: "getPrograms",
+        function: "getProgramsGMT",
         date,
         country,
     };
+
+    console.log(country, date);
 
     //NORMAL
     let nowSliderCanalClaro = $(".today-claro-slider");
