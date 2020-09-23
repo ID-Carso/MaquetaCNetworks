@@ -122,6 +122,7 @@ export default class Section {
     let titleTv = `${json.data.block_2_title1} <span class="header-span">${json.data.block_2_title2}</span><span class="header-point">•</span>`;
     $(".title-tv").html(titleTv);
 
+    console.log('si esta legando');
     $(".claro-nav-image").attr("src", json.data.block_2_channel1_icon);
     $(".concert-nav-image").attr("src", json.data.block_2_channel2_icon);
     $(".cinema-nav-image").attr("src", json.data.block_2_channel3_icon);
