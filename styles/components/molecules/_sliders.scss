@@ -23,20 +23,22 @@
 
 div .header-slider-cinem .slick-track {
   margin-bottom: 0px !important;
-  
-}
- #banner-claro-canal-edi .slick-slide{
-margin:0px !important;
-}
-#banner-concert-channel-edi .slick-slide{
-  margin:0px !important;
-  }
 
-  #banner-claro-cinema-edi .slick-slide{
-    margin:0px !important;
-    }
+}
 
-div #banner-concert-channel-edi .slick-track{
+#banner-claro-canal-edi .slick-slide {
+  margin: 0px !important;
+}
+
+#banner-concert-channel-edi .slick-slide {
+  margin: 0px !important;
+}
+
+#banner-claro-cinema-edi .slick-slide {
+  margin: 0px !important;
+}
+
+div #banner-concert-channel-edi .slick-track {
   margin-bottom: 0px !important;
 }
 
@@ -330,9 +332,16 @@ div #banner-concert-channel-edi .slick-track{
 }
 
 .section-slider .slick-list,
+//.slick-slider,
 .imperdibles-slider .slick-list,
 .tv-slider .slick-list {
   padding: 0px 55px 0px 0px !important;
+}
+
+.region-times-slider {
+  .slick-slide {
+    margin: 0 48px;
+  }
 }
 
 .imperdibles-slider .concert-channel-header {
@@ -522,7 +531,7 @@ div #banner-concert-channel-edi .slick-track{
   border-color: $greyishBrownTwo transparent transparent transparent;
   position: absolute;
   transform: rotate(180deg);
- bottom: 50px;
+  bottom: 50px;
 }
 
 .slider-pagination-item-home::before {
@@ -532,35 +541,13 @@ div #banner-concert-channel-edi .slick-track{
   border-color: $greyishBrownTwo transparent transparent transparent;
   position: absolute;
   transform: translate(0px, -26px);
-}
 
-.programming-slider-dots .slick-dots li {
-  margin: 0 10px !important;
-}
+  .programming-slider-dots .slick-dots li {
+    margin: 0 10px !important;
+  }
 
-.selteal {
-  color: white !important;
-  background-color: $cinemaRectangle;
+  .selteal {
+    color: white !important;
+    background-color: $cinemaRectangle;
+  }
 }
-/* .programming-slider-dots::after {
-  content: "";
-  border-width: 6px;
-  border-style: solid;
-  border-color: $greyishBrownTwo transparent transparent transparent;
-  position: absolute;
-  left: 32%;
-  bottom: -38%;
-  transform: rotate(180deg);
-}
-
-.programming-slider-dots::before {
-  content: "";
-  border-width: 6px;
-  border-style: solid;
-  border-color: $greyishBrownTwo transparent transparent transparent;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  -webkit-transform: translate(-50%, 100%);
-  transform: translate(-50%, -95%);
-}*/

@@ -133,3 +133,72 @@
 .programing-item {
   cursor: pointer;
 }
+
+.time-slider-dots-container .slick-dots {
+  display: inline;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: inset 2px 2px 5px 0 rgba(161, 161, 161, 0.5);
+  background-color: #222121;
+}
+
+.time-slider-dots-container .slick-dots {
+  position: static;
+  bottom: 0px;
+}
+
+.time-slider-dots-container .slick-dots li {
+  height: auto;
+  width: 58px;
+  margin: 0 2px;
+}
+
+.pagination-item {
+  width: 100%;
+  height: 15px;
+  background-color: #d8d8d8;
+}
+
+.time-slider-dots-container .time-slider-prev {
+  bottom: 0;
+  left: 28%;
+  transform: initial;
+}
+
+.time-slider-dots-container .time-slider-next {
+  bottom: 0;
+  /* left: 28%; */
+  transform: initial;
+  right: 28%;
+}
+
+
+.time-slider-dots-container li.slick-active .pagination-item {
+  background-color: #0097a9;
+}
+
+.region-times-slider .slick-current {
+  box-shadow: 0 0 24px 1px #0097a9, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+  border-radius: 15px;
+}
+
+.region-times-slider .slick-next {
+  right: 0;
+}
+
+.region-times-slider .slick-prev {
+  left: 0;
+}
+
+.region-times-slider .slick-track {
+  margin-top: 48px;
+}
+
+.time-slider-dots-container .day-pagination {
+  font-family: "Montserrat-SemiBold";
+  color: #ffffff;
+  font-size: 24px;
+  width: 58px;
+  text-align: center;
+  margin: 0px 2px;
+}

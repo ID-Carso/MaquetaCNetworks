@@ -1711,6 +1711,21 @@ h6 {
   color: #717272;
 }
 
+.time-begin-text {
+  font-size: 21px;
+  color: #a7a8aa;
+}
+
+.time-begin-number {
+  font-size: 21px;
+  color: white;
+}
+
+.time-title {
+  font-size: 24px;
+  color: white;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
@@ -2961,6 +2976,11 @@ h6 {
 
 .aboutus-card-claro-sports-image {
   width: 158px;
+}
+
+.region-country-container img,
+.region-country-container-active img {
+  width: 38px;
 }
 
 .hr1 {
@@ -4684,6 +4704,78 @@ input[type="radio"]:checked + .mujer-estilo {
   cursor: pointer;
 }
 
+.time-slider-dots-container .slick-dots {
+  display: inline;
+  padding: 16px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 2px 2px 5px 0 rgba(161, 161, 161, 0.5);
+          box-shadow: inset 2px 2px 5px 0 rgba(161, 161, 161, 0.5);
+  background-color: #222121;
+}
+
+.time-slider-dots-container .slick-dots {
+  position: static;
+  bottom: 0px;
+}
+
+.time-slider-dots-container .slick-dots li {
+  height: auto;
+  width: 58px;
+  margin: 0 2px;
+}
+
+.pagination-item {
+  width: 100%;
+  height: 15px;
+  background-color: #d8d8d8;
+}
+
+.time-slider-dots-container .time-slider-prev {
+  bottom: 0;
+  left: 28%;
+  -webkit-transform: initial;
+          transform: initial;
+}
+
+.time-slider-dots-container .time-slider-next {
+  bottom: 0;
+  /* left: 28%; */
+  -webkit-transform: initial;
+          transform: initial;
+  right: 28%;
+}
+
+.time-slider-dots-container li.slick-active .pagination-item {
+  background-color: #0097a9;
+}
+
+.region-times-slider .slick-current {
+  -webkit-box-shadow: 0 0 24px 1px #0097a9, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+          box-shadow: 0 0 24px 1px #0097a9, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+  border-radius: 15px;
+}
+
+.region-times-slider .slick-next {
+  right: 0;
+}
+
+.region-times-slider .slick-prev {
+  left: 0;
+}
+
+.region-times-slider .slick-track {
+  margin-top: 48px;
+}
+
+.time-slider-dots-container .day-pagination {
+  font-family: "Montserrat-SemiBold";
+  color: #ffffff;
+  font-size: 24px;
+  width: 58px;
+  text-align: center;
+  margin: 0px 2px;
+}
+
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 .header-details {
@@ -5056,6 +5148,10 @@ div #banner-concert-channel-edi .slick-track {
   padding: 0px 55px 0px 0px !important;
 }
 
+.region-times-slider .slick-slide {
+  margin: 0 48px;
+}
+
 .imperdibles-slider .concert-channel-header .slick-slider {
   width: 100%;
   padding-bottom: 0px;
@@ -5263,42 +5359,19 @@ div #banner-concert-channel-edi .slick-track {
           transform: translate(0px, -26px);
 }
 
-.programming-slider-dots .slick-dots li {
+.slider-pagination-item-home::before .programming-slider-dots .slick-dots li {
   margin: 0 10px !important;
 }
 
-.selteal {
+.slider-pagination-item-home::before .selteal {
   color: white !important;
   background-color: #0097a9;
 }
 
-/* .programming-slider-dots::after {
-  content: "";
-  border-width: 6px;
-  border-style: solid;
-  border-color: $greyishBrownTwo transparent transparent transparent;
-  position: absolute;
-  left: 32%;
-  bottom: -38%;
-  transform: rotate(180deg);
-}
-
-.programming-slider-dots::before {
-  content: "";
-  border-width: 6px;
-  border-style: solid;
-  border-color: $greyishBrownTwo transparent transparent transparent;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  -webkit-transform: translate(-50%, 100%);
-  transform: translate(-50%, -95%);
-}*/
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 .dropdownCountry {
-  max-width: 500px;
-  margin-bottom: 90px;
+  max-width: 1100px;
 }
 
 .dropdownCountry-content,
@@ -5832,6 +5905,47 @@ div #banner-concert-channel-edi .slick-track {
   -webkit-box-shadow: 1px 1px 3px 0 #282828;
           box-shadow: 1px 1px 3px 0 #282828;
   background-color: #0c0c0c;
+}
+
+.times-container {
+  border-radius: 15px;
+  /*box-shadow: 0 0 24px 1px #0097a9, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);*/
+  -webkit-box-shadow: inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+          box-shadow: inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+  background-color: #161616;
+}
+
+.time-container {
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 4px 0 #000000, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+          box-shadow: 0 2px 4px 0 #000000, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+  background-color: #0f0e0e;
+}
+
+.region-country-container-active {
+  -webkit-box-shadow: 0 0 3px 1px #0097a9, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5) !important;
+          box-shadow: 0 0 3px 1px #0097a9, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5) !important;
+  background-color: #00353b !important;
+}
+
+.region-country-container {
+  width: 193px;
+  height: 160px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 2px 4px 0 #000000, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+          box-shadow: 0 2px 4px 0 #000000, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+  background-color: #0f0e0e;
+}
+
+.dropdown-country-container {
+  padding: 48px 0;
+  height: 257px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 1px 7px 0 #353435;
+          box-shadow: 2px 1px 7px 0 #353435;
+  background: #161616;
 }
 
 .schedule-poster {
@@ -8852,9 +8966,15 @@ div #banner-concert-channel-edi .slick-track {
   .slick-slider .slick-dots {
     bottom: -35px;
   }
-  .slick-slider .slick-list {
+  .section-slider .slick-list {
     padding: 0px 0px 0px 0px !important;
   }
+  .tv-slider .slick-list {
+    padding: 0px 0px 0px 0px !important;
+  }
+  /*   .slick-slider .slick-list {
+    padding: 0px 0px 0px 0px !important;
+  } */
   .poster-title-margin {
     margin: 10px;
   }
