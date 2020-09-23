@@ -166,111 +166,9 @@
                 </div>
                 <div class="dropdown-country-container">
                     <div class="d-flex justify-content-between dropdownCountry mx-auto">
-                        <div class="d-flex justify-content-between">
-                            <!--1 países-->
-                            <div class="region-country-container-active p-4 d-flex justify-content-center">
-                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                    alt="">
-                            </div>
-                            <!--3 países-->
-                            <div class="region-country-container p-4 d-flex justify-content-between">
-                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                    alt="">
-                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                    alt="">
-                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                    alt="">
-                            </div>
-                            <!--4 países-->
-                            <div
-                                class="no-gutters region-country-container d-flex justify-content-center p-4 align-items-center flex-wrap">
-
-                                <div class="col-6 text-center">
-                                    <img src="
-                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                        alt="">
-                                </div>
-                                <div class="col-6 text-center">
-                                    <img src="
-                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                        alt="">
-                                </div>
-                                <div class="col-6 text-center">
-                                    <img src="
-                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                        alt="">
-                                </div>
-                                <div class="col-6 text-center">
-                                    <img src="
-                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                        alt="">
-                                </div>
-                            </div>
-                            <!--5 países-->
-                            <div class="region-country-container d-flex align-items-center flex-wrap">
-                                <div class="col-4 text-center">
-                                    <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                        alt="">
-                                </div>
-                                <div class="col-4 text-center">
-                                    <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                        alt="">
-                                </div>
-                                <div class="col-4 text-center">
-                                    <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                        alt="">
-                                </div>
-                                <div class="col-4 text-center">
-                                    <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                        alt="">
-                                </div>
-                                <div class="col-4 text-center">
-                                    <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                        alt="">
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="time-slider-container">
-                    <div class="region-times-container" id="region_1">
-                        <div class="d-flex times-container">
-                            <div class="col-6">
-                                <h2 class="text-center py-3">AM</h2>
-                                <div class="time-container py-4 text-center mb-3">
-                                    <span class="time-begin-text">Inicio: </span>
-                                    <spa class="time-begin-number">04:00</spa>
-                                </div>
-                                <div class="time-container py-4 text-center mb-3">
-                                    <span class="time-begin-text">Inicio: </span>
-                                    <spa class="time-begin-number">04:00</spa>
-                                </div>
-                                <div class="time-container py-4 text-center mb-3">
-                                    <span class="time-begin-text">Inicio: </span>
-                                    <spa class="time-begin-number">04:00</spa>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <h2 class="text-center py-3">PM</h2>
-                                <div class="time-container py-4 text-center mb-3">
-                                    <span class="time-begin-text">Inicio: </span>
-                                    <spa class="time-begin-number">04:00</spa>
-                                </div>
-                                <div class="time-container py-4 text-center mb-3">
-                                    <span class="time-begin-text">Inicio: </span>
-                                    <spa class="time-begin-number">04:00</spa>
-                                </div>
-                                <div class="time-container py-4 text-center mb-3">
-                                    <span class="time-begin-text">Inicio: </span>
-                                    <spa class="time-begin-number">04:00</spa>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="region-times-container" id="region_2">
-                        <p>Region 2</p>
-                    </div>
                 </div>
                 <!--Containers-->
 
@@ -295,213 +193,6 @@
     ?>
     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
     <script>
-        let c = {
-            "region_1": [
-                "http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg",
-                "http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/brazil.svg",
-                "http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/chile.svg"
-            ],
-            "region_2": [
-                "http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/paraguay.svg",
-                "http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/dominican-republic.svg"
-            ],
-            "region_3": [
-                "http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/colombia.svg",
-                "http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/peru.svg",
-                "http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/panama.svg",
-                "http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/ecuador.svg"
-            ],
-            "region_4": [
-                "http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/el-salvador.svg",
-                "http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/honduras.svg",
-                "http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/nicaragua.svg",
-                "http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/guatemala.svg",
-                "http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/costa-rica.svg"
-            ],
-            "region_5": [
-                "http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/usa.svg"
-            ]
-        }
-
-        let times = {
-            "region_1": [
-                [{
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": [
-                            "21:00"
-                        ]
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": [
-                            "18:30"
-                        ]
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    }
-                ]
-            ],
-            "region_2": [
-                [{
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": [
-                            "20:00"
-                        ]
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": [
-                            "17:30"
-                        ]
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    }
-                ]
-            ],
-            "region_3": [
-                [{
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": [
-                            "19:00"
-                        ]
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": [
-                            "16:30"
-                        ]
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    }
-                ]
-            ],
-            "region_4": [
-                [{
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [
-                            "0:00"
-                        ],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": [
-                            "21:30"
-                        ]
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    }
-                ]
-            ],
-            "region_5": [
-                [{
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": [
-                            "17:00"
-                        ]
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    },
-                    {
-                        "AM": [],
-                        "PM": [
-                            "14:30"
-                        ]
-                    },
-                    {
-                        "AM": [],
-                        "PM": []
-                    }
-                ]
-            ]
-        }
-
-
         var socketSinopsis = new easyXDM.Socket({
             onReady: function () {
                 var hey = 2640;
@@ -761,7 +452,6 @@
                     let times = data.data.time_regions.regions.times;
                     //Broadcast schedule
                     let dayContainer = "";
-                    let timeContainer = "";
                     let timeAm = "";
                     let timePm = "";
                     //Región
@@ -821,8 +511,8 @@
                             });
                         }
                         sliderContainer += `
-                        <div class="region-times-container" id="${time}">
-                            <div class="mt-5 time-slider-dots-container position-relative mb-3 text-center">
+                        <div class="region-times-container text-center" id="${time}">
+                            <div class="mt-5 time-slider-dots-container d-inline-block position-relative mb-3 text-center">
                                 
                                 <div class="d-flex justify-content-center mb-5">
                                     <p class="day-pagination">L</p>
@@ -896,6 +586,7 @@
                                     appendDots: $(this).parent().prev(),
                                     centerMode: true,
                                     arrows: false,
+                                    appendArrows: $(this).parent().prev(),
                                     centerPadding: "200px",
                                     customPaging: function (slider, i) {
                                         var thumb = $(slider.$slides[i]).data(

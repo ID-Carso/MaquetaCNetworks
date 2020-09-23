@@ -77,9 +77,9 @@
                 ?>
             </div>
             <?php
-            include './views/partials/menu-desktop-white.php'
+            include './views/partials/menu-desktop-black.php'
             ?>
-            <div class="header-slider">
+            <div class="header-slider slider-sinopsis">
                 <div class="header-slide">
                     <!--<img src="./images/concert-channel/header-image.jpeg" alt="">-->
                 </div>
@@ -101,7 +101,8 @@
                         <a href="sinopsis.php#dropdown-country"> <button class="synopsis-button">
                                 <div class="d-flex align-items-center">
 
-                                    <p class="synopsis-schedule-text mb-0">Horarios</p><img src="./images/home/clock.svg" alt="">
+                                    <p class="synopsis-schedule-text mb-0">Horarios</p><img
+                                        src="./images/home/clock.svg" alt="">
 
                                 </div>
                             </button></a>
@@ -115,7 +116,7 @@
 
                     <div class="synopsis-body-container no-gutters">
                         <div class="col-md-7 col-lg-6 mx-auto synopsis-main-image">
-                            <img src="./images/sinopsis/images.jpeg" alt="" class="w-100">
+                            <img src="" alt="" class="w-100 synopsis-chapter-image">
                         </div>
                         <div class="col-md-7 col-lg-6 mx-sm-auto mx-md-auto synopsis-description-container">
                             <div>
@@ -131,7 +132,8 @@
                                     </button>
                                     <a href="sinopsis.php#dropdown-country"><button class="synopsis-button">
                                             <div class="d-flex align-items-center">
-                                                <p class="synopsis-schedule-text mb-0">Horarios</p><img src="./images/home/clock.svg" alt="">
+                                                <p class="synopsis-schedule-text mb-0">Horarios</p><img
+                                                    src="./images/home/clock.svg" alt="">
                                             </div>
                                         </button></a>
                                 </div>
@@ -146,20 +148,20 @@
                     <div class="no-gutters">
                         <div class="col-md-10 col-lg-12 mx-auto">
                             <div class="synopsis-images-container no-gutters">
-                                <img src="./images/sinopsis/images.jpeg" alt="" class="col-md-6 col-lg-4 synopsis-image">
-                                <img src="./images/sinopsis/images.jpeg" alt="" class="col-md-6 col-lg-4 synopsis-image">
-                                <img src="./images/sinopsis/images.jpeg" alt="" class="col-lg-4 synopsis-image">
+                                <img src="" alt="" class="col-md-6 col-lg-4 synopsis-image synopsis-chapter-image-1">
+                                <img src="" alt="" class="col-md-6 col-lg-4 synopsis-image synopsis-chapter-image-2">
+                                <img src="" alt="" class="col-lg-4 synopsis-image synopsis-chapter-image-3">
                             </div>
                             <div class="">
                                 <div class="synopsis-details-container">
                                     <div class="synopsis-rating-container">
-                                        <p class="synopsis-text synopsis-detail-text">Estados Unidos</p>
-                                        <p class="synopsis-text synopsis-detail-text">2013</p>
-                                        <p class="synopsis-text synopsis-detail-text">Clasificación C</p>
+                                        <p class="synopsis-text synopsis-detail-text synopsis-country"></p>
+                                        <p class="synopsis-text synopsis-detail-text synopsis-year"></p>
+                                        <p class="synopsis-text synopsis-detail-text synopsis-rating"></p>
                                     </div>
                                     <div class="synopsis-seasons-container">
-                                        <p class="synopsis-text synopsis-detail-text">4 Temporadas</p>
-                                        <p class="synopsis-text synopsis-detail-text">60 Minutos</p>
+                                        <p class="synopsis-text synopsis-detail-text synopsis-seasons"></p>
+                                        <p class="synopsis-text synopsis-detail-text synopsis-duration"></p>
                                     </div>
                                 </div>
                             </div>
@@ -172,12 +174,14 @@
                     <div class="synopsis-schedule-container" id="dropdown-country">
                         <h1 class="synopsis-schedule-title">Horario por regiones</h1>
                     </div>
-                    <div class="no-gutters">
 
-                        <div class="col-11 mx-auto dropdownCountry">
-                        </div>
+
+                </div>
+                <div class="dropdown-country-container">
+                    <div class="d-flex justify-content-between dropdownCountry mx-auto">
                     </div>
-
+                </div>
+                <div class="time-slider-container mb-5">
                 </div>
             </div>
 

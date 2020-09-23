@@ -1569,8 +1569,16 @@
     width: 36px;
   }
 
-  .slick-slider .slick-list {
-    padding: 0px 0px 0px 0px !important;
+  .section-slider {
+    .slick-list {
+      padding: 0px 0px 0px 0px !important;
+    }
+  }
+
+  .tv-slider {
+    .slick-list {
+      padding: 0px 0px 0px 0px !important;
+    }
   }
 
   .poster-title-margin {

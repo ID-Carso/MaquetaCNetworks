@@ -338,11 +338,7 @@ div #banner-concert-channel-edi .slick-track {
   padding: 0px 55px 0px 0px !important;
 }
 
-.region-times-slider {
-  .slick-slide {
-    margin: 0 48px;
-  }
-}
+
 
 .imperdibles-slider .concert-channel-header {
   .slick-slider {
@@ -549,5 +545,90 @@ div #banner-concert-channel-edi .slick-track {
   .selteal {
     color: white !important;
     background-color: $cinemaRectangle;
+  }
+}
+
+
+.dropdownCountry {
+  .slick-list {
+    padding-right: 24px;
+    margin-left: 24px;
+  }
+
+  .slick-slide {
+    .img {
+      margin: auto;
+    }
+  }
+}
+
+.region-times-slider {
+  .slick-slide {
+    margin: 0 8px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .region-times-slider {
+    .slick-slide {
+      margin: 0 24px;
+    }
+  }
+
+  .dropdownCountry {
+    .slick-list {
+      padding-right: 48px;
+      margin-left: 48px;
+    }
+
+    .slick-slide {
+      margin: 0 12px;
+
+      .img {
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .region-times-slider {
+    .slick-slide {
+      margin: 0 24px;
+    }
+  }
+
+  .dropdownCountry {
+    .slick-list {
+      padding-right: 0;
+      margin-right: 48px;
+      margin-left: 48px;
+    }
+
+    .slick-slide {
+      margin: 0 12px;
+
+      .img {
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1899px) {
+  .region-times-slider {
+    .slick-slide {
+      margin: 0 48px;
+    }
+  }
+
+
+}
+
+@media only screen and (min-width: 1900px) {
+  .region-times-slider {
+    .slick-slide {
+      margin: 0 48px;
+    }
   }
 }

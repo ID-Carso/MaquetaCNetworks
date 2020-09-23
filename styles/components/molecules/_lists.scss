@@ -149,7 +149,7 @@
 
 .time-slider-dots-container .slick-dots li {
   height: auto;
-  width: 58px;
+  width: 35px;
   margin: 0 2px;
 }
 
@@ -161,15 +161,18 @@
 
 .time-slider-dots-container .time-slider-prev {
   bottom: 0;
-  left: 28%;
-  transform: initial;
+  left: 0;
+  transform: translate(-150%, 20%) rotate(180deg);
+  position: absolute;
+  cursor: pointer;
 }
 
 .time-slider-dots-container .time-slider-next {
   bottom: 0;
-  /* left: 28%; */
-  transform: initial;
-  right: 28%;
+  right: 0;
+  transform: translate(150%, 20%);
+  position: absolute;
+  cursor: pointer;
 }
 
 
@@ -198,7 +201,94 @@
   font-family: "Montserrat-SemiBold";
   color: #ffffff;
   font-size: 24px;
-  width: 58px;
+  width: 35px;
   text-align: center;
   margin: 0px 2px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .time-slider-dots-container {
+    .slick-dots li {
+      height: auto;
+      width: 58px;
+      margin: 0 2px;
+    }
+  }
+
+  .time-slider-dots-container {
+    .day-pagination {
+      font-family: "Montserrat-SemiBold";
+      color: #ffffff;
+      font-size: 24px;
+      width: 58px;
+      text-align: center;
+      margin: 0px 2px;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+  .time-slider-dots-container {
+    .day-pagination {
+      font-family: "Montserrat-SemiBold";
+      color: #ffffff;
+      font-size: 24px;
+      width: 58px;
+      text-align: center;
+      margin: 0px 2px;
+    }
+  }
+
+  .time-slider-dots-container {
+    .slick-dots li {
+      height: auto;
+      width: 58px;
+      margin: 0 2px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1899px) {
+  .time-slider-dots-container {
+    .slick-dots li {
+      height: auto;
+      width: 58px;
+      margin: 0 2px;
+    }
+
+  }
+
+  .time-slider-dots-container {
+    .day-pagination {
+      font-family: "Montserrat-SemiBold";
+      color: #ffffff;
+      font-size: 24px;
+      width: 58px;
+      text-align: center;
+      margin: 0px 2px;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1900px) {
+  .time-slider-dots-container {
+    .slick-dots li {
+      height: auto;
+      width: 58px;
+      margin: 0 2px;
+    }
+  }
+
+  .time-slider-dots-container {
+    .day-pagination {
+      font-family: "Montserrat-SemiBold";
+      color: #ffffff;
+      font-size: 24px;
+      width: 58px;
+      text-align: center;
+      margin: 0px 2px;
+    }
+  }
 }

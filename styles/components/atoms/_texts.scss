@@ -1467,16 +1467,59 @@
 
 
 .time-begin-text {
-  font-size: 21px;
+  font-family: $montserratBold;
+  font-size: 14px;
   color: #a7a8aa;
 }
 
 .time-begin-number {
-  font-size: 21px;
+  font-family: $montserratBold;
+  font-size: 14px;
   color: white;
 }
 
 .time-title {
+  font-family: $montserratBold;
   font-size: 24px;
   color: white;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .time-begin-number {
+    font-size: 21px;
+  }
+
+  .time-begin-text {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .time-begin-number {
+    font-size: 21px;
+  }
+
+  .time-begin-text {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1899px) {
+  .time-begin-number {
+    font-size: 21px;
+  }
+
+  .time-begin-text {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .time-begin-number {
+    font-size: 21px;
+  }
+
+  .time-begin-text {
+    font-size: 21px;
+  }
 }
