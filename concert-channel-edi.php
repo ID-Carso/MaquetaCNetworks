@@ -181,9 +181,9 @@
 
         </section>
         <?php
-        include 'advertising-section.php'
+       // include 'advertising-section.php'
         ?>
-        <div class="">
+      <!--  <div class="">
             <div class="row no-gutters">
                 <div class="col-10 mx-auto">
                     <h1 class="footer-title">¡sígue a <br>concert channel!</h1>
@@ -206,16 +206,16 @@
         </div>
         <div class="cconcert-list-links-footer">
             <?php
-            include './views/partials/list-links-footer.php';
+           // include './views/partials/list-links-footer.php';
             ?>
         </div>
         <footer>
             <?php
-            include 'footer.php'
+           // include 'footer.php'
             ?>
         </footer>
 
-    </div>
+    </div>-->
     <?php
     include './views/partials/modal-favorites.php'
     ?>
@@ -228,7 +228,7 @@
     <script>
         var socketConcert = new easyXDM.Socket({
             onReady: function () {
-                var hey = 3700;
+                var hey = 2180;
                 socketConcert.postMessage(hey)
             }
         });

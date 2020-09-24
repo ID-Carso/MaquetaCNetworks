@@ -1712,18 +1712,57 @@ h6 {
 }
 
 .time-begin-text {
-  font-size: 21px;
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
   color: #a7a8aa;
 }
 
 .time-begin-number {
-  font-size: 21px;
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
   color: white;
 }
 
 .time-title {
+  font-family: "Montserrat-Bold";
   font-size: 24px;
   color: white;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .time-begin-number {
+    font-size: 21px;
+  }
+  .time-begin-text {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .time-begin-number {
+    font-size: 21px;
+  }
+  .time-begin-text {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1899px) {
+  .time-begin-number {
+    font-size: 21px;
+  }
+  .time-begin-text {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .time-begin-number {
+    font-size: 21px;
+  }
+  .time-begin-text {
+    font-size: 21px;
+  }
 }
 
 /*Tamaño de textos - responsive*/
@@ -2980,7 +3019,40 @@ h6 {
 
 .region-country-container img,
 .region-country-container-active img {
-  width: 38px;
+  width: 25px;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .region-country-container img,
+  .region-country-container-active img {
+    width: 38px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .region-country-container img,
+  .region-country-container-active img {
+    width: 38px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1899px) {
+  .region-country-container img,
+  .region-country-container-active img {
+    width: 38px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .region-country-container img,
+  .region-country-container-active img {
+    width: 38px;
+    margin: auto;
+  }
 }
 
 .hr1 {
@@ -4720,7 +4792,7 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .time-slider-dots-container .slick-dots li {
   height: auto;
-  width: 58px;
+  width: 35px;
   margin: 0 2px;
 }
 
@@ -4732,17 +4804,20 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .time-slider-dots-container .time-slider-prev {
   bottom: 0;
-  left: 28%;
-  -webkit-transform: initial;
-          transform: initial;
+  left: 0;
+  -webkit-transform: translate(-150%, 20%) rotate(180deg);
+          transform: translate(-150%, 20%) rotate(180deg);
+  position: absolute;
+  cursor: pointer;
 }
 
 .time-slider-dots-container .time-slider-next {
   bottom: 0;
-  /* left: 28%; */
-  -webkit-transform: initial;
-          transform: initial;
-  right: 28%;
+  right: 0;
+  -webkit-transform: translate(150%, 20%);
+          transform: translate(150%, 20%);
+  position: absolute;
+  cursor: pointer;
 }
 
 .time-slider-dots-container li.slick-active .pagination-item {
@@ -4771,9 +4846,73 @@ input[type="radio"]:checked + .mujer-estilo {
   font-family: "Montserrat-SemiBold";
   color: #ffffff;
   font-size: 24px;
-  width: 58px;
+  width: 35px;
   text-align: center;
   margin: 0px 2px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .time-slider-dots-container .slick-dots li {
+    height: auto;
+    width: 58px;
+    margin: 0 2px;
+  }
+  .time-slider-dots-container .day-pagination {
+    font-family: "Montserrat-SemiBold";
+    color: #ffffff;
+    font-size: 24px;
+    width: 58px;
+    text-align: center;
+    margin: 0px 2px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .time-slider-dots-container .day-pagination {
+    font-family: "Montserrat-SemiBold";
+    color: #ffffff;
+    font-size: 24px;
+    width: 58px;
+    text-align: center;
+    margin: 0px 2px;
+  }
+  .time-slider-dots-container .slick-dots li {
+    height: auto;
+    width: 58px;
+    margin: 0 2px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1899px) {
+  .time-slider-dots-container .slick-dots li {
+    height: auto;
+    width: 58px;
+    margin: 0 2px;
+  }
+  .time-slider-dots-container .day-pagination {
+    font-family: "Montserrat-SemiBold";
+    color: #ffffff;
+    font-size: 24px;
+    width: 58px;
+    text-align: center;
+    margin: 0px 2px;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .time-slider-dots-container .slick-dots li {
+    height: auto;
+    width: 58px;
+    margin: 0 2px;
+  }
+  .time-slider-dots-container .day-pagination {
+    font-family: "Montserrat-SemiBold";
+    color: #ffffff;
+    font-size: 24px;
+    width: 58px;
+    text-align: center;
+    margin: 0px 2px;
+  }
 }
 
 /*Tamaño de textos - responsive*/
@@ -5148,10 +5287,6 @@ div #banner-concert-channel-edi .slick-track {
   padding: 0px 55px 0px 0px !important;
 }
 
-.region-times-slider .slick-slide {
-  margin: 0 48px;
-}
-
 .imperdibles-slider .concert-channel-header .slick-slider {
   width: 100%;
   padding-bottom: 0px;
@@ -5366,6 +5501,64 @@ div #banner-concert-channel-edi .slick-track {
 .slider-pagination-item-home::before .selteal {
   color: white !important;
   background-color: #0097a9;
+}
+
+.dropdownCountry .slick-list {
+  padding-right: 24px;
+  margin-left: 24px;
+}
+
+.dropdownCountry .slick-slide .img {
+  margin: auto;
+}
+
+.region-times-slider .slick-slide {
+  margin: 0 8px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .region-times-slider .slick-slide {
+    margin: 0 24px;
+  }
+  .dropdownCountry .slick-list {
+    padding-right: 48px;
+    margin-left: 48px;
+  }
+  .dropdownCountry .slick-slide {
+    margin: 0 12px;
+  }
+  .dropdownCountry .slick-slide .img {
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .region-times-slider .slick-slide {
+    margin: 0 24px;
+  }
+  .dropdownCountry .slick-list {
+    padding-right: 0;
+    margin-right: 48px;
+    margin-left: 48px;
+  }
+  .dropdownCountry .slick-slide {
+    margin: 0 12px;
+  }
+  .dropdownCountry .slick-slide .img {
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1899px) {
+  .region-times-slider .slick-slide {
+    margin: 0 48px;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .region-times-slider .slick-slide {
+    margin: 0 48px;
+  }
 }
 
 /*Tamaño de textos - responsive*/
@@ -5913,6 +6106,7 @@ div #banner-concert-channel-edi .slick-track {
   -webkit-box-shadow: inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
           box-shadow: inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
   background-color: #161616;
+  height: 287px;
 }
 
 .time-container {
@@ -5928,15 +6122,6 @@ div #banner-concert-channel-edi .slick-track {
   background-color: #00353b !important;
 }
 
-.region-country-container {
-  width: 193px;
-  height: 160px;
-  border-radius: 15px;
-  -webkit-box-shadow: 0 2px 4px 0 #000000, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
-          box-shadow: 0 2px 4px 0 #000000, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
-  background-color: #0f0e0e;
-}
-
 .dropdown-country-container {
   padding: 48px 0;
   height: 257px;
@@ -5946,6 +6131,48 @@ div #banner-concert-channel-edi .slick-track {
   -webkit-box-shadow: 2px 1px 7px 0 #353435;
           box-shadow: 2px 1px 7px 0 #353435;
   background: #161616;
+}
+
+.region-country-container {
+  width: 193px;
+  height: 145px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 2px 4px 0 #000000, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+          box-shadow: 0 2px 4px 0 #000000, inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+  background-color: #0f0e0e;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .region-country-container {
+    height: 160px;
+  }
+  .times-container {
+    height: 863px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .region-country-container {
+    height: 160px;
+  }
+  .times-container {
+    height: 518px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1899px) {
+  .region-country-container {
+    height: 160px;
+  }
+  .times-container {
+    height: 518px;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .region-country-container {
+    height: 160px;
+  }
 }
 
 .schedule-poster {
@@ -7620,7 +7847,10 @@ div #banner-concert-channel-edi .slick-track {
   .login-item {
     width: 36px;
   }
-  .slick-slider .slick-list {
+  .section-slider .slick-list {
+    padding: 0px 0px 0px 0px !important;
+  }
+  .tv-slider .slick-list {
     padding: 0px 0px 0px 0px !important;
   }
   .poster-title-margin {
