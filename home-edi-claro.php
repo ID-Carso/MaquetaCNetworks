@@ -99,7 +99,7 @@
                         <div class="claro-logo">
                             <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
 
-                            <img class="logo" src="./images/home/claro-logo.svg"  alt="" />
+                            <img class="logo" src="./images/home/claro-logo.svg" alt="" />
                         </div>
 
                         <div class="login">
@@ -119,7 +119,7 @@
             </div>
             <div class="d-flex justify-content-center mx-auto ">
                 <div class=" d-inline-block   align-items-center mb-5">
-                <p class='a-text-bold-tealblue slider-pagination-item-home mr-2 cursor-pointer'>1 </p>
+                    <p class='a-text-bold-tealblue slider-pagination-item-home mr-2 cursor-pointer'>1 </p>
                 </div>
             </div>
         </header>
@@ -149,28 +149,13 @@
 
                     </ul>
                 </div>
+                <!-- CARRUSEL DE PROGRAMACION CANAL CLARO -->
                 <div class="tv-videos-container">
                     <div id="claro-canal" class="tv-content  border-t border-l border-r border-b position-relative p-2">
-                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-main" type="home-claro-carrousel-main">
-           
-                        <div class="tv-slider today-claro-slider " id="tv-claro-slider"style="margin-bottom: 0px !important;">
-                     
-                           
+                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-main" type="home-claro-carrousel-main">
+                        <div class="tv-slider today-claro-slider " id="tv-claro-slider" style="margin-bottom: 0px !important;"></div>
                     </div>
-                    <!--Concert channel de "Ahora en tv"-->
-                    <div id="concert-channel" class="tv-content">
-                        <div class="tv-slider today-concert-channel-slider" id="tv-concert-slider">
-                        </div>
-                    </div>
-                    <!--End Concert channel de "Ahora en tv"-->
-                    <!--Claro cinema de "Ahora en tv"-->
-                    <div id="claro-cinema" class="tv-content">
-                        <div class="tv-slider today-claro-cinema-slider" id="tv-cinema-slider">
-                        </div>
-                    </div>
-
                 </div>
-            </div>
 
             </div>
         </section>
@@ -184,9 +169,9 @@
             <!--Sección Canal Claro mobile-->
             <div class="claro-canal-mobile">
                 <div class="m-home-titles text-center  position-relative border-t border-l border-r border-b mb-3">
-                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home" type="claro-home-header">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home" type="claro-home-header">
                     <a href="" class="home-title-link">
-                        <img src="" class="claro-image-header" >
+                        <img src="" class="claro-image-header">
                     </a>
                     <h2 class="a-subtitle a-claro-home-subtitle">
                         <!--LO MEJOR EN SERIES Y <br><span>PELÍCULAS INTERNACIONALES</span>-->
@@ -197,9 +182,9 @@
                     <a href=""> <button class="btn-red btn-canal-claro-home">VER +</button></a>
                 </div>
                 <div class="position-relative border-t border-l border-r border-b p-3">
-                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider" type="claro-home-slider">
-                <div class="section-slider claro-slider-home-prev">   
-                </div>
+                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider" type="claro-home-slider">
+                    <div class="section-slider claro-slider-home-prev">
+                    </div>
                 </div>
 
             </div>
@@ -207,7 +192,7 @@
             <!--Sección Canal Claro tablet-->
             <div class="claro-canal-tablet">
                 <div class="d-flex justify-content-between align-items-center home-section-header claro-section-header position-relative border-t border-l border-r border-b mb-3">
-                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home" type="claro-home-header">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home" type="claro-home-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img src="./images/home/tv-1.svg" class="claro-image-header">
@@ -223,11 +208,11 @@
                     </div>
                 </div>
                 <div class="canal-videos-container">
-                <div class="position-relative border-t border-l border-r border-b p-4 ">
-                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider" type="claro-home-slider">
-                <div class="section-slider claro-slider-home-prev">   
-                </div>
-                </div>
+                    <div class="position-relative border-t border-l border-r border-b p-4 ">
+                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider" type="claro-home-slider">
+                        <div class="section-slider claro-slider-home-prev">
+                        </div>
+                    </div>
                     <!--<div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
                         <div>
                             <img class="concert-footer-img" src="./images/home/tv-1.svg" alt="">
@@ -254,7 +239,7 @@
             <!--Sección canal claro desktop-->
             <div class="claro-canal-desktop">
                 <div class="d-flex justify-content-between align-items-center home-section-header claro-section-header p-3 position-relative border-t border-l border-r border-b mb-3">
-                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home" type="claro-home-header">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home" type="claro-home-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img src="./images/home/tv-1.svg" class="claro-image-header">
@@ -268,9 +253,9 @@
                     </div>
                 </div>
                 <div class="position-relative border-t border-l border-r border-b p-4">
-                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider" type="claro-home-slider">
-                <div class="section-slider claro-slider-home-prev">   
-                </div>
+                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider" type="claro-home-slider">
+                    <div class="section-slider claro-slider-home-prev">
+                    </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
                     <div>
@@ -489,11 +474,11 @@
 
         <!--Sección de anuncio-->
         <?php
-       // include 'advertising-section.php'
+        // include 'advertising-section.php'
         ?>
         <div class="home-list-links-footer">
             <?php
-           // include './views/partials/list-links-footer.php';
+            // include './views/partials/list-links-footer.php';
             ?>
         </div>
 
@@ -501,7 +486,7 @@
 
         <!--Fin sección de anuncio-->
         <?php
-      //  include 'footer.php'
+        //  include 'footer.php'
         ?>
 
         <!-- Modal -->
@@ -516,7 +501,6 @@
     </main>
     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
     <script>
-          
         var socketHome = new easyXDM.Socket({
             onReady: function() {
 
@@ -526,7 +510,7 @@
                 socketHome.postMessage(hey)
             }
         });
-        $(".home-header").on("click", ".slider-pagination-item-home", function () {
+        $(".home-header").on("click", ".slider-pagination-item-home", function() {
             let type = "slider-pagination";
             let data = {
 
@@ -536,7 +520,7 @@
             var json = JSON.stringify(data);
             socketHome.postMessage(json);
         });
-        $(".tv-content").on("click", ".pencil-carrusel-main", function () {
+        $(".tv-content").on("click", ".pencil-carrusel-main", function() {
             let data = {
                 type: $(this).attr("type")
 
@@ -545,7 +529,7 @@
             var json = JSON.stringify(data);
             socketHome.postMessage(json);
         });
-        $(".home-section-header").on("click", ".pencil-header-home", function () {
+        $(".home-section-header").on("click", ".pencil-header-home", function() {
             let data = {
                 type: $(this).attr("type")
 
@@ -554,7 +538,7 @@
             var json = JSON.stringify(data);
             socketHome.postMessage(json);
         });
-        $(".pencil-home-slider").click(function () {
+        $(".pencil-home-slider").click(function() {
             let data = {
                 type: $(this).attr("type")
 
@@ -563,7 +547,6 @@
             var json = JSON.stringify(data);
             socketHome.postMessage(json);
         });
-       
     </script>
 </body>
 

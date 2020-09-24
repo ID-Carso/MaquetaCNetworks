@@ -142,23 +142,11 @@
                         </div>
                     </ul>
                 </div>
+                <!-- CARRUSEL DE PROGRAMACION CLARO CINEMA  -->
                 <div class="tv-videos-container">
-                    <div id="claro-canal" class="tv-content">
-     
-                        <!-- <div class="tv-slider today-claro-slider " id="tv-claro-slider"style="margin-bottom: 0px !important;"> -->
-                        <div class="tv-slider today-claro-slider" id="tv-claro-slider" style="margin-bottom: 0px !important;">
-                        </div>
-                        <!--Concert channel de "Ahora en tv"-->
-                        <div id="concert-channel" class="tv-content">
-                            <div class="tv-slider today-concert-channel-slider" id="tv-concert-slider">
-                            </div>
-                        </div>
-                        <!--End Concert channel de "Ahora en tv"-->
-                        <!--Claro cinema de "Ahora en tv"-->
-                        <div id="claro-cinema" class="tv-content">
-                            <div class="tv-slider today-claro-cinema-slider" id="tv-cinema-slider">
-                            </div>
-                        </div>
+                    <div id="claro-cinema" class="tv-content  border-t border-l border-r border-b position-relative p-2">
+                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-main" type="home-claro-carrousel-main">
+                        <div class="tv-slider today-claro-cinema-slider" id="tv-cinema-slider" style="margin-bottom: 0px !important;"></div>
                     </div>
                 </div>
             </div>
@@ -361,8 +349,7 @@
             <!--Cinema claro versión mobile-->
             <div class="cinema-claro-mobile">
                 <div class="m-home-titles text-center border-t border-l border-r border-b position-relative p-2">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-main"
-                            type="home-claro-carrousel-main">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-main" type="home-claro-carrousel-main">
 
                     <a href="" class="home-title-link">
                         <img src="./images/home/tv-3.svg" class="cinemahome-image-header">
@@ -377,18 +364,15 @@
                     <a href=""><button class="btn-red button-cinema-home">VER +</button></a>
                 </div>
                 <div class="section-slider cinema-home-slider  border-t border-l border-r border-b position-relative p-2">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-home-cinema"
-                            type="cinema-home-slider">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-home-cinema" type="cinema-home-slider">
                 </div>
             </div>
             <!--End Cinema Claro mobile-->
             <!--Cinema claro tablet-->
             <div class="cinema-claro-tablet">
 
-                <div
-                    class="d-flex justify-content-between align-items-center home-section-header cinema-section-header  border-t border-l border-r border-b position-relative p-2">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home"
-                            type="cinema-home-header">
+                <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header  border-t border-l border-r border-b position-relative p-2">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home" type="cinema-home-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
@@ -406,8 +390,7 @@
                         <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
                     </div>
                     <div class="col-md-7 col-lg-8  border-t border-l border-r border-b position-relative p-2">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-home-cinema"
-                            type="cinema-home-slider">
+                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-home-cinema" type="cinema-home-slider">
                         <div class="cinema-home-slider">
                         </div>
                     </div>
@@ -423,8 +406,7 @@
                         </div>
                     </div>
                 </div>-->
-                <div
-                    class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
+                <div class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
 
                     </div>
@@ -439,10 +421,8 @@
             <!--Cinema claro desktop-->
             <div class="cinema-claro-desktop">
                 <!--<div class="black-line"></div>-->
-                <div
-                    class="d-flex justify-content-between align-items-center home-section-header cinema-section-header  border-t border-l border-r border-b position-relative p-2 mt-2 mb-2">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home"
-                            type="cinema-home-header">
+                <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header  border-t border-l border-r border-b position-relative p-2 mt-2 mb-2">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home" type="cinema-home-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
@@ -460,8 +440,7 @@
                         <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
                     </div>
                     <div class="col-md-8 col-xl-9  border-t border-l border-r border-b position-relative p-2">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-home-cinema"
-                            type="cinema-home-slider">
+                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-home-cinema" type="cinema-home-slider">
                         <div class="cinema-home-slider">
                         </div>
                     </div>
@@ -474,8 +453,7 @@
                     <div class="col-md-8 col-xl-6 cinema-home-videos-container">
                     </div>
                 </div>-->
-                <div
-                    class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
+                <div class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
 
                     </div>
