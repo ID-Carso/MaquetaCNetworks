@@ -1732,6 +1732,7 @@ $(document).ready(function () {
   $(".tv-content").hide();
   $(".tv-content:first").show();
 
+  /*
   $("ul.tv-list li").click(function () {
     $("ul.tv-list li").removeClass("active-navItem");
     $(this).addClass("active-navItem");
@@ -1746,6 +1747,7 @@ $(document).ready(function () {
     recreateClickCalendar();
     createClickThumbnails();
   });
+  */
 
 
   $("ul.tv-list-programming li").click(function () {

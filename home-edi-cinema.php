@@ -126,7 +126,7 @@
                 <div class="row no-gutters">
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="claro-canal" class="active-navItem nav-li">
+                            <li rel="claro-canal" class="nav-li">
                                 <img class="claro-nav-image" src="" alt="" />
                             </li>
                         </div>
@@ -136,7 +136,7 @@
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
-                            <li rel="claro-cinema" class="nav-li">
+                            <li rel="claro-cinema" class="nav-li active-navItem">
                                 <img class="nav-image cinema-nav-image" src="" alt="" />
                             </li>
                         </div>

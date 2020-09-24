@@ -137,12 +137,12 @@
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="concert-channel" class="nav-li">
+                            <li class="nav-li">
                                 <img class="nav-image concert-nav-image" src="" alt="" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
-                            <li rel="claro-cinema" class="nav-li">
+                            <li class="nav-li">
                                 <img class="nav-image cinema-nav-image" src="" alt="" />
                             </li>
                         </div>
