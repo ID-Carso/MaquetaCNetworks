@@ -1,5 +1,5 @@
 <div class="no-gutters">
-    <div class="col-11 mx-auto list-links-footer">
+    <div class="col-11 mx-auto list-links-footer mb-5">
         <div class="row no-gutters">
             <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
                 <a href="about-us.php" class="link-landing-footer">

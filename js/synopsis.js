@@ -37,7 +37,6 @@ $(document).ready(function () {
         <div class="header-slide">
             <img src="${image}"
             class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
-           
         </div>
                 `
         index++
@@ -336,23 +335,23 @@ $(document).ready(function () {
           });
 
           dayContainer += `
-                                <div class="times-container">
-                                    <div class="row h-100 p-2 p-sm-2 p-md-3 p-lg-3 p-xl-3">
-                                        <div class="col-12 d-block d-sm-block d-md-block d-lg-none d-xl-none">
-                                          ${timeAm}
-                                          ${timePm}
-                                        </div>
-                                        <div class="col-6 d-none d-sm-none d-md-none d-lg-block d-xl-block  text-center">
-                                            <h2 class="d-none d-sm-none d-md-none d-lg-block d-xl-block  time-title py-3">AM</h2>
-                                            ${timeAm}
-                                        </div>
-                                        <div class="col-6 d-none d-sm-none d-md-none d-lg-block d-xl-block text-center">
-                                            <h2 class="d-none d-sm-none d-md-none d-lg-block d-xl-block time-title py-3">PM</h2>
-                                            ${timePm}
-                                        </div>
-                                    </div>    
-                                </div>
-                                `;
+            <div class="times-container">
+                <div class="row h-100 p-2 p-sm-2 p-md-3 p-lg-3 p-xl-3">
+                    <div class="col-12 d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                      ${timeAm}
+                      ${timePm}
+                    </div>
+                    <div class="col-6 d-none d-sm-none d-md-none d-lg-block d-xl-block text-center">
+                        <h2 class="d-none d-sm-none d-md-none d-lg-block d-xl-block  time-title py-3">AM</h2>
+                        ${timeAm}
+                    </div>
+                    <div class="col-6 d-none d-sm-none d-md-none d-lg-block d-xl-block text-center">
+                        <h2 class="d-none d-sm-none d-md-none d-lg-block d-xl-block time-title py-3">PM</h2>
+                        ${timePm}
+                    </div>
+                </div>    
+            </div>
+            `;
 
           timeAm = "";
           timePm = "";

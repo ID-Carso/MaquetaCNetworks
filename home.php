@@ -99,11 +99,12 @@
                         <div class="claro-logo">
                             <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
 
-                            <img class="logo" src="./images/home/claro-logo.svg"  alt="" />
+                            <img class="logo" src="./images/home/claro-logo.svg" alt="" />
                         </div>
 
                         <div class="login">
-                            <a href="index.php" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
+                            <a href="index.php" class="login-item"><img class="login-country" alt=""
+                                    src="images/paises/ecuador.svg"></a>
                         </div>
                     </div>
                 </nav>
@@ -177,7 +178,7 @@
             <div class="claro-canal-mobile">
                 <div class="m-home-titles text-center">
                     <a href="claro-canal.php" class="home-title-link">
-                        <img src="" class="claro-image-header" >
+                        <img src="" class="claro-image-header">
                     </a>
                     <h2 class="a-subtitle a-claro-home-subtitle">
                         <!--LO MEJOR EN SERIES Y <br><span>PELÍCULAS INTERNACIONALES</span>-->
@@ -289,7 +290,8 @@
             <!--End Versión mobile-->
             <!--Versión para tablet-->
             <div class="concert-channel-tablet">
-                <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
+                <div
+                    class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
                         <a href="concert-channel.php" class="home-title-link">
                             <img src="./images/home/concert-home-img.svg" class="concerthome-image-header">
@@ -306,7 +308,8 @@
                     </div>
                 </div>
 
-                <div class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
+                <div
+                    class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
                     <div>
 
                     </div>
@@ -321,7 +324,8 @@
             <!--End Versión tablet-->
             <!--Concert channel desktop-->
             <div class="concert-channel-desktop">
-                <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
+                <div
+                    class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
                         <a href="concert-channel.php" class="home-title-link">
                             <img class="concerthome-image-header" src="./images/home/concert-home-img.svg" alt="">
@@ -336,7 +340,8 @@
                 </div>
                 <div class="section-slider concert-home-slider">
                 </div>
-                <div class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
+                <div
+                    class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
                     <div>
 
                     </div>
@@ -374,7 +379,8 @@
             <!--Cinema claro tablet-->
             <div class="cinema-claro-tablet">
 
-                <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
+                <div
+                    class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
                     <div class="m-home-titles">
                         <a href="claro-cinema.php" class="home-title-link">
                             <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
@@ -407,7 +413,8 @@
                         </div>
                     </div>
                 </div>-->
-                <div class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
+                <div
+                    class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
 
                     </div>
@@ -422,7 +429,8 @@
             <!--Cinema claro desktop-->
             <div class="cinema-claro-desktop">
                 <!--<div class="black-line"></div>-->
-                <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
+                <div
+                    class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
                     <div class="m-home-titles">
                         <a href="claro-cinema.php" class="home-title-link">
                             <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
@@ -452,12 +460,13 @@
                     <div class="col-md-8 col-xl-6 cinema-home-videos-container">
                     </div>
                 </div>-->
-                <div class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
+                <div
+                    class="pb-xl-0 d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
 
                     </div>
                     <div>
-                        <p class="horario-text text-dark">
+                        <p class="horario-text text-dark mb-0">
                             Horarios sujetos a cambios
                         </p>
                     </div>

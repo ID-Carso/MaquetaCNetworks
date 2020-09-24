@@ -174,7 +174,7 @@
             </h2>
           </div>
         </div>
-        <div class="only-videos-container">
+        <div class="only-videos-container my-xl-5">
           <div class="section-slider cinema-slider" id="claro_cinema_carrusel_2">
           </div>
         </div>

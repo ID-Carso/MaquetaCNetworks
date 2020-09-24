@@ -1,14 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <?php include './views/partials/head.php' ?>
-  <input type="hidden" id="actual_landing" value="claro_cinema">
+    <?php include './views/partials/head.php' ?>
+    <input type="hidden" id="actual_landing" value="claro_cinema">
 
 </head>
+
 <body class="concert-container">
 
-<div class=" border-t border-l border-r border-b position-relative m-5 ml-5 mr-5">
-                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-main" type="home-claro-carrousel-main">
+    <div class=" border-t border-l border-r border-b position-relative m-5 ml-5 mr-5">
+        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-main" type="footer-concert-channel">
 
-<?php
+        <?php
         include 'advertising-section.php'
         ?>
         <div class="">
@@ -42,6 +46,22 @@
             include 'footer.php'
             ?>
         </footer>
-</div>
-
+    </div>
+    <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
+    <script>
+        var socketFooterConcertChannel = new easyXDM.Socket({
+            onReady: function () {
+                socketFooterConcertChannel.postMessage(1092)
+            }
+        });
+        $(".pencil").click(function () {
+            let data = {
+                type: $(this).attr("type")
+            }
+            var json = JSON.stringify(data);
+            socketFooterConcertChannel.postMessage(json);
+        });
+    </script>
 </body>
+
+</html>

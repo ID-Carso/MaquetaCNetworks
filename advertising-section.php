@@ -1,4 +1,4 @@
-<div class="o-advertising-section">
+<div class="o-advertising-section mt-xl-5">
     <!--Sección de anuncion para mobile-->
     <div class="advertising-section-mobile">
         <div class="row">
@@ -37,7 +37,7 @@
     </div>
     <!--End Sección de anuncio para tablet-->
     <!--Sección de anuncio para desktop-->
-    <div class="advertising-section-desktop">
+    <div class="advertising-section-desktop mb-5">
         <div class="col-lg-12">
             <div class="row">
                 <div class="col-5 col-lg-6">
