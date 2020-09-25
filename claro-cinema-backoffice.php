@@ -117,7 +117,8 @@
                         <h1 class="a-today-cinema-title">hoy en <span>claro cinema</span></h1>
                     </div>
                     <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ">
-                        <a href="programacion.php"><button class="btn-teal-blue a-text-white-semibold btn-claro-cinema">VER PROGRAMACIÓN</button>
+                        <a href="programacion.php"><button
+                                class="btn-teal-blue a-text-white-semibold btn-claro-cinema">VER PROGRAMACIÓN</button>
                         </a>
                     </div>
                 </div>
@@ -140,7 +141,9 @@
                     <div class=" p-3 border-t border-l border-r border-b position-relative">
                         <img src="./images/General/pencil.svg" alt="" class="pencil">
                         <video class="promo-video" autoplay muted controls loop>
-                            <source src="http://www.claronetworks.openofficedospuntocero.info/video/claro-cinema-promo.mp4" type="video/mp4">
+                            <source
+                                src="http://www.claronetworks.openofficedospuntocero.info/video/claro-cinema-promo.mp4"
+                                type="video/mp4">
                         </video>
                     </div>
 
@@ -161,15 +164,20 @@
                     <div class="section-slider cinema-slider">
                         <div class=" p-3 border-t border-l border-r border-b position-relative">
                             <div class="poster">
-                                <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
+                                <button
+                                    class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
+                                    Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
+                                        style="width:15px"></button>
 
                                 <div class="poster-body">
                                     <div class="showtime-container justify-content-end">
 
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                                        <button type="button" class="poster-button"><img class="poster-add"
+                                                src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
                                     <div class="thumbnail">
-                                        <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/01-NUESTROS-BUENOS-VECINOS.jpg" alt="">
+                                        <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/01-NUESTROS-BUENOS-VECINOS.jpg"
+                                            alt="">
                                     </div>
                                     <div class="a-cinema-rectangle">
                                         <div class="poster-title-margin">
@@ -184,15 +192,20 @@
 
                         <div class=" p-3 border-t border-l border-r border-b position-relative">
                             <div class="poster">
-                                <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
+                                <button
+                                    class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
+                                    Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
+                                        style="width:15px"></button>
 
                                 <div class="poster-body">
                                     <div class="showtime-container justify-content-end">
 
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                                        <button type="button" class="poster-button"><img class="poster-add"
+                                                src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
                                     <div class="thumbnail">
-                                        <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/02-EL-PASAJERO-.jpg" alt="">
+                                        <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/02-EL-PASAJERO-.jpg"
+                                            alt="">
                                     </div>
                                     <div class="a-cinema-rectangle">
                                         <div class="poster-title-margin">
@@ -206,14 +219,19 @@
                         </div>
                         <div class=" p-3 border-t border-l border-r border-b position-relative">
                             <div class="poster">
-                                <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
+                                <button
+                                    class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
+                                    Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
+                                        style="width:15px"></button>
                                 <div class="poster-body">
                                     <div class="showtime-container justify-content-end">
 
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                                        <button type="button" class="poster-button"><img class="poster-add"
+                                                src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
                                     <div class="thumbnail">
-                                        <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/03-QUE-BRAVAS-SON.jpg" alt="">
+                                        <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/03-QUE-BRAVAS-SON.jpg"
+                                            alt="">
                                     </div>
                                     <div class="a-cinema-rectangle">
                                         <div class="poster-title-margin">
@@ -227,15 +245,20 @@
                         </div>
                         <div class=" p-3 border-t border-l border-r border-b position-relative">
                             <div class="poster">
-                                <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
+                                <button
+                                    class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
+                                    Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
+                                        style="width:15px"></button>
 
                                 <div class="poster-body">
                                     <div class="showtime-container justify-content-end">
 
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                                        <button type="button" class="poster-button"><img class="poster-add"
+                                                src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
                                     <div class="thumbnail">
-                                        <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/04-QUE-HACER-MIS-HIJOS.jpg" alt="">
+                                        <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/04-QUE-HACER-MIS-HIJOS.jpg"
+                                            alt="">
                                     </div>
                                     <div class="a-cinema-rectangle">
                                         <div class="poster-title-margin">
@@ -261,18 +284,23 @@
                         </h2>
                     </div>
                 </div>
-                <div class="only-videos-container">
+                <div class="only-videos-container mb-xl-5">
                     <div class="section-slider cinema-slider">
                         <div class=" p-3 border-t border-l border-r border-b position-relative">
                             <div class="poster">
-                                <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
+                                <button
+                                    class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
+                                    Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
+                                        style="width:15px"></button>
                                 <div class="poster-body">
                                     <div class="showtime-container justify-content-end">
 
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                                        <button type="button" class="poster-button"><img class="poster-add"
+                                                src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
                                     <div class="thumbnail">
-                                        <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/05-DOS-PALOMAS.jpg" alt="">
+                                        <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/05-DOS-PALOMAS.jpg"
+                                            alt="">
                                     </div>
                                     <div class="a-cinema-rectangle">
                                         <div class="poster-title-margin">
@@ -286,15 +314,20 @@
                         </div>
                         <div class=" p-3 border-t border-l border-r border-b position-relative">
                             <div class="poster">
-                                <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
+                                <button
+                                    class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
+                                    Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
+                                        style="width:15px"></button>
 
                                 <div class="poster-body">
                                     <div class="showtime-container justify-content-end">
 
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                                        <button type="button" class="poster-button"><img class="poster-add"
+                                                src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
                                     <div class="thumbnail">
-                                        <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/06-EROTICA.jpg" alt="">
+                                        <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/06-EROTICA.jpg"
+                                            alt="">
                                     </div>
                                     <div class="a-cinema-rectangle">
                                         <div class="poster-title-margin">
@@ -309,15 +342,20 @@
                         <div class=" p-3 border-t border-l border-r border-b position-relative">
 
                             <div class="poster">
-                                <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
+                                <button
+                                    class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
+                                    Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
+                                        style="width:15px"></button>
 
                                 <div class="poster-body">
                                     <div class="showtime-container justify-content-end">
 
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                                        <button type="button" class="poster-button"><img class="poster-add"
+                                                src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
                                     <div class="thumbnail">
-                                        <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/07-CON-TODOS.jpg" alt="">
+                                        <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/07-CON-TODOS.jpg"
+                                            alt="">
                                     </div>
                                     <div class="a-cinema-rectangle">
                                         <div class="poster-title-margin">
@@ -332,15 +370,20 @@
                         <div class=" p-3 border-t border-l border-r border-b position-relative">
 
                             <div class="poster">
-                                <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
+                                <button
+                                    class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
+                                    Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
+                                        style="width:15px"></button>
 
                                 <div class="poster-body">
                                     <div class="showtime-container justify-content-end">
 
-                                        <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                                        <button type="button" class="poster-button"><img class="poster-add"
+                                                src="./images/posters/heart-outline.svg" alt=""></button>
                                     </div>
                                     <div class="thumbnail">
-                                        <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/08-YO-EL-MUJERIEGO.jpg" alt="">
+                                        <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/08-YO-EL-MUJERIEGO.jpg"
+                                            alt="">
                                     </div>
                                     <div class="a-cinema-rectangle">
                                         <div class="poster-title-margin">
@@ -386,7 +429,7 @@
 <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
 <script>
     var socket = new easyXDM.Socket({
-        onReady: function() {
+        onReady: function () {
             socket.postMessage(document.body.scrollHeight)
         }
     });
