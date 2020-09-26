@@ -2,9 +2,7 @@
 <html lang="en">
 
 <head>
-
     <?php include './views/partials/head.php' ?>
-
 </head>
 
 <body>
@@ -13,6 +11,7 @@
     include 'menu-mobile.php';
     ?>
     <!--End menú para móvil-->
+    <input type="hidden" id="actual_landing" value="home">
     <div class="hamburguer-menu">
         <div class="text-center sidebar-header">
         </div>
@@ -32,7 +31,7 @@
           <p class="dropdown-p">ebñrkjg</p>
           <p class="dropdown-p">ebñrkjg</p>
         </div>-->
-            <a class="sidebar-link" href="concert-channel.php">
+            <a class="sidebar-link" href="">
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Concert
                         Channel</span>
@@ -87,15 +86,9 @@
         <header class="home-header">
 
             <div class="circle-video">
-                <div class="postion-relative">
-
-                    <video preload="yes" playsinline autoplay muted loop class="home-video">
-
-
-                        <source src="./video/video.mp4" type="video/mp4" class="source-video" />
-
-                    </video>
-                </div>
+                <video preload="yes" playsinline autoplay muted loop class="home-video">
+                    <source src="./video/video.mp4" type="video/mp4" class="source-video" />
+                </video>
             </div>
 
             <div class="header">
@@ -105,9 +98,9 @@
                     <div class="nav-content">
                         <div class="claro-logo">
                             <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
-                           
-                            </div>
-                        </div> 
+
+                            <img class="logo" src="./images/home/claro-logo.svg"  alt="" />
+                        </div>
 
                         <div class="login">
                             <a href="" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
@@ -115,71 +108,65 @@
                     </div>
                 </nav>
                 <?php
-                include './views/partials/menu-desktop-black.php'
+                include './views/partials/menu-desktop-black-edi.php'
                 ?>
 
-                <div class="header-details header-detail-margin col-md-6">
+                <div class="header-details header-detail-margin col-md-6" style="margin-top: 242px;">
                     <h1 class="header-h1">
-
-                        <span class="header-span">Descubre<br>Claro
-                        </span>Networks
+                        <span class="header-span">Descubre<br>Claro<br></span>Networks
                     </h1>
                 </div>
             </div>
             <div class="d-flex justify-content-center mx-auto ">
                 <div class=" d-inline-block   align-items-center mb-5">
-                <p class='a-text-bold-tealblue slider-pagination-item-home pag mr-2 '>1 </p>
+                <p class='a-text-bold-tealblue slider-pagination-item-home mr-2 cursor-pointer'>1 </p>
                 </div>
             </div>
         </header>
         <section class="o-tv-section margin-ahora-tv">
             <h2 class="title-tv"></h2>
-           
         </section>
         <section>
             <div class="o-tv-section mb-5 pb-5">
 
-                <div class="row no-gutters">
-                    <ul class="tv-list col-md-11">
-                        <div class="col-md text-center no-gap border-right">
-                            <li rel="claro-canal" class="active-navItem nav-li">
-
-                                <img class="claro-nav-image" src="" alt="" />
-
+                <div class="row no-gutters border-t border-l border-r border-b position-relative p-3 mb-3 mx-auto col-8">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-logos-home" type="home-logos">
+                    <ul class="tv-list col-md-11 mb-0">
+                        <div class="col-md text-center no-gap border-right d-flex justify-content-center">
+                            <li rel="claro-canal" class="active-navItems navs-li navbar-progra-item-container thumbnail-image-program p-2"      style="width: 200px !important;">
+                                <img class="claro-nav-image claro-nav-image thumbnail-image-program" src="" alt="" id="icon_canal_claro_edi"/>
                             </li>
                         </div>
-                        <div class="col-md text-center no-gap border-right">
-                            <li rel="concert-channel" class="nav-li">
-
-                                <img class="nav-image concert-nav-image" src="" alt="" />
-
+                        <div class="col-md text-center no-gap border-right d-flex justify-content-center">
+                            <li rel="concert-channel" class="navs-li p-2"  style="width: 200px !important;">
+                                <img class="nav-image concert-nav-image claro-nav-image thumbnail-image-program" src="" alt="" id="icon_concert_channel_edi"/>
                             </li>
                         </div>
-                        <div class="col-md text-center no-gap">
-                            <li rel="claro-cinema" class="nav-li">
-
-                                <img class="nav-image cinema-nav-image" src="" alt="" />
-
+                        <div class="col-md text-center no-gap d-flex justify-content-center">
+                            <li rel="claro-cinema" class="navs-li p-2"  style="width: 200px !important;">
+                                <img class="nav-image cinema-nav-image claro-nav-image thumbnail-image-program" src="" alt=""  id="icon_claro_cinema_edi"/>
                             </li>
                         </div>
 
                     </ul>
                 </div>
                 <div class="tv-videos-container">
-                    <div id="claro-canal" class="tv-content">
-                        <div class="tv-slider today-claro-slider-prev" id="tv-claro-slider" style="margin-bottom: 0px !important;">
-                        </div>
+                    <div id="claro-canal" class="tv-content  border-t border-l border-r border-b position-relative p-2">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-main" type="home-carrousel-main">
+           
+                        <div class="tv-slider today-claro-slider " id="tv-claro-slider"style="margin-bottom: 0px !important;">
+                     
                            
                     </div>
                     <!--Concert channel de "Ahora en tv"-->
                     <div id="concert-channel" class="tv-content">
-                        <div class="tv-slider today-concert-channel-slider-prev" id="tv-concert-slider">
+                        <div class="tv-slider today-concert-channel-slider" id="tv-concert-slider">
                         </div>
                     </div>
                     <!--End Concert channel de "Ahora en tv"-->
                     <!--Claro cinema de "Ahora en tv"-->
                     <div id="claro-cinema" class="tv-content">
-                        <div class="tv-slider today-claro-cinema-slider-prev" id="tv-cinema-slider">
+                        <div class="tv-slider today-claro-cinema-slider" id="tv-cinema-slider">
                         </div>
                     </div>
 
@@ -197,66 +184,51 @@
         <div class="o-claro-section">
             <!--Sección Canal Claro mobile-->
             <div class="claro-canal-mobile">
-                <div class="m-home-titles text-center">
+                <div class="m-home-titles text-center  position-relative border-t border-l border-r border-b mb-3">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home-claro" type="claro-home-header">
                     <a href="" class="home-title-link">
-                        <div class=" border-t border-l border-r border-b position-relative mb-2">
-                            <img src="./images/General/pencil.svg" alt="" class="pencil">
-                            <img src="./images/home/tv-1.svg" class="claro-image-header">
-                        </div>
+                        <img src="" class="claro-image-header" >
                     </a>
-                    <div class=" col-10 mx-auto ">
-                       
-                        <h2 class="a-subtitle a-claro-home-subtitle">
-                            <!--LO MEJOR EN SERIES Y <br><span>PELÍCULAS INTERNACIONALES</span>-->
+                    <h2 class="a-subtitle a-claro-home-subtitle">
+                        <!--LO MEJOR EN SERIES Y <br><span>PELÍCULAS INTERNACIONALES</span>-->
 
-                        </h2>
-                    </div>
+                    </h2>
                 </div>
                 <div class="text-center">
-                    <a href="">
-
-                        <button class="btn-red btn-canal-claro-home mb-0">VER +</button>
-
-                    </a>
+                    <a href=""> <button class="btn-red btn-canal-claro-home">VER +</button></a>
                 </div>
-                <div class="position-relative border-t border-l border-r border-b mb-3">
-                <img src="./images/General/pencil.svg" alt="" class="pencil">
-                <div class="section-slider claro-slider-home-prev">
+                <div class="position-relative border-t border-l border-r border-b p-3">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider-claro" type="claro-home-slider">
+                <div class="section-slider claro-slider-home-prev">   
                 </div>
                 </div>
-               
 
             </div>
             <!--End Sección Canal Claro mobile-->
             <!--Sección Canal Claro tablet-->
             <div class="claro-canal-tablet">
-                <div class="d-flex justify-content-between align-items-center home-section-header claro-section-header">
+                <div class="d-flex justify-content-between align-items-center home-section-header claro-section-header position-relative border-t border-l border-r border-b mb-3">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home-claro" type="claro-home-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
-
                             <img src="./images/home/tv-1.svg" class="claro-image-header">
-
                         </a>
-
                         <h2 class="a-subtitle a-claro-home-subtitle">
                             <!--LO MEJOR EN SERIES Y <span class="a-claro-channel-subtitle-bold">PELÍCULAS
                                 INTERNACIONALES</span>-->
 
                         </h2>
-
                     </div>
                     <div class="m-see-more">
-                        <a href="">
-                            <button class="btn-red btn-canal-claro-home">VER +</button>
-                        </a>
+                        <a href=""><button class="btn-red btn-canal-claro-home">VER +</button></a>
                     </div>
                 </div>
                 <div class="canal-videos-container">
-                <div class="position-relative border-t border-l border-r border-b mb-3">
-                <img src="./images/General/pencil.svg" alt="" class="pencil">
-                    <div class="section-slider claro-slider-home-prev">
-                    </div>
-</div>
+                <div class="position-relative border-t border-l border-r border-b p-4 ">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider-claror" type="claro-home-slider">
+                <div class="section-slider claro-slider-home-prev">   
+                </div>
+                </div>
                     <!--<div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
                         <div>
                             <img class="concert-footer-img" src="./images/home/tv-1.svg" alt="">
@@ -276,15 +248,14 @@
                         <p class="horario-text text-dark">
                             Horarios sujetos a cambios
                         </p>
-
                     </div>
                 </div>
             </div>
             <!--End Sección Canal Claro tablet-->
             <!--Sección canal claro desktop-->
             <div class="claro-canal-desktop">
-                <div class="d-flex justify-content-between align-items-center home-section-header claro-section-header position-relative border-t border-l border-r border-b mb-3">
-                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home" type="claro-home-header">
+                <div class="d-flex justify-content-between align-items-center home-section-header claro-section-header p-3 position-relative border-t border-l border-r border-b mb-3">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home-claro" type="claro-home-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img src="./images/home/tv-1.svg" class="claro-image-header">
@@ -294,18 +265,14 @@
                         </h2>
                     </div>
                     <div class="m-see-more">
-                        <a href="">
-                            <button class="btn-red btn-canal-claro-home"></button>
-
-                        </a>
+                        <a href=""> <button class="btn-red btn-canal-claro-home"></button></a>
                     </div>
                 </div>
-                <div class="position-relative border-t border-l border-r border-b">
-                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider" type="claro-home-slider">
+                <div class="position-relative border-t border-l border-r border-b p-4">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider-claro" type="claro-home-slider">
                 <div class="section-slider claro-slider-home-prev">   
                 </div>
                 </div>
-               
                 <div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
                     <div>
 
@@ -314,7 +281,6 @@
                         <p class="horario-text text-dark">
                             Horarios sujetos a cambios
                         </p>
-
                     </div>
                 </div>
             </div>
@@ -324,32 +290,33 @@
         <!--Sección de Concert Channel-->
         <div class="o-concert-section">
             <!--Versión para mobile-->
-            <div class="concert-channel-mobile">
-                <div class="m-home-titles text-center">
+            <div class="concert-channel-mobile pt-3">
+                <div class="m-home-titles text-center position-relative border-t border-l border-r border-b mb-3 p-3">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home-channel" type="channel-home-header">
                     <a href="" class="home-title-link">
                         <img src="./images/home/concert-home-img.svg" class="concerthome-image-header">
-
                     </a>
                     <h2 class="a-concert-channel-subtitle a-concert-home-subtitle">
                         <!--CONCIERTOS, ENTREVISTAS<br><span>Y MUCHO MÁS</span>-->
 
                     </h2>
-
                 </div>
                 <div class="text-center">
-                    <a href="">
-                        <button class="btn-pink button-concert-home mb-0"></button>
-                    </a>
-
+                    <a href=""><button class="btn-pink button-concert-home"></button></a>
                 </div>
-                <div class="section-slider concert-home-slider-prev">
+                <div class="position-relative border-t border-l border-r border-b p-4">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider-channel" type="channel-home-slider">
+                <div class="section-slider concert-home-slider ">
                 </div>
+            </div>
+                
             </div>
 
             <!--End Versión mobile-->
             <!--Versión para tablet-->
-            <div class="concert-channel-tablet">
-                <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
+            <div class="concert-channel-tablet pt-3">
+                <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header position-relative border-t border-l border-r border-b mb-3 p-3">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home-channel" type="channel-home-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img src="./images/home/concert-home-img.svg" class="concerthome-image-header">
@@ -358,14 +325,17 @@
                         <!--<p class="a-concert-subtitle concert-second-subtitle">Entrevistas y mucho más</p>-->
                     </div>
                     <div class="m-see-more">
-                        <a href="">
-                            <button class="btn-pink button-concert-home mb-0"></button>
-                        </a>
+                        <a href=""><button class="btn-pink button-concert-home"></button></a>
                     </div>
                 </div>
+                <div class="position-relative border-t border-l border-r border-b p-4">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider-channel" type="channel-home-slider">
+
+                
                 <div class="home-concert-videos-container">
-                    <div class="section-slider concert-home-slider-prev">
+                    <div class="section-slider concert-home-slider">
                     </div>
+                </div>
                 </div>
 
                 <div class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
@@ -382,8 +352,9 @@
 
             <!--End Versión tablet-->
             <!--Concert channel desktop-->
-            <div class="concert-channel-desktop">
-                <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
+            <div class="concert-channel-desktop pt-3">
+                <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header position-relative border-t border-l border-r border-b mb-3 p-3">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home-channel" type="channel-home-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img class="concerthome-image-header" src="./images/home/concert-home-img.svg" alt="">
@@ -391,15 +362,17 @@
                         <h2 class="text-white a-subtitle a-concert-home-subtitle"></h2>
                     </div>
                     <div class="m-see-more">
-                        <a href="">
-                            <button class="btn-pink button-concert-home">
+                        <a href=""><button class="btn-pink button-concert-home">
                                 <span></span>
-                            </button>
-                        </a>
+                            </button></a>
                     </div>
                 </div>
-                <div class="section-slider concert-home-slider-prev">
+                <div class="position-relative border-t border-l border-r border-b p-4">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider-channel" type="channel-home-slider">
+                <div class="section-slider concert-home-slider">
                 </div>
+                </div>
+                
                 <div class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
                     <div>
 
@@ -417,30 +390,34 @@
         <!--Sección de Cinema Claro-->
         <div class="o-cinema-section">
             <!--Cinema claro versión mobile-->
-            <div class="cinema-claro-mobile">
-                <div class="m-home-titles text-center">
+            <div class="cinema-claro-mobile pt-3">
+                <div class="m-home-titles text-center position-relative border-t border-l border-r border-b mb-3 p-3">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home-cinema" type="cinema-home-header">
                     <a href="" class="home-title-link">
                         <img src="./images/home/tv-3.svg" class="cinemahome-image-header">
-
                     </a>
+
                     <h2 class="a-claro-cinema-subtitle  a-cinema-home-subtitle">
                         <!--Las mejores <span>Películas Mexicanas</span>-->
                         <!--LOS ÍDOLOS QUE MÉXICO<br><span>LE DIO AL CINE</span>-->
                     </h2>
                 </div>
                 <div class="text-center">
-                    <a href="">
-                        <button class="btn-red button-cinema-home mb-0">VER +</button>
-                    </a>
+                    <a href=""><button class="btn-red button-cinema-home">VER +</button></a>
                 </div>
-                <div class="section-slider cinema-home-slider-prev">
+                <div class="position-relative border-t border-l border-r border-b p-4">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider-cinema" type="cinema-home-slider">
+                <div class="section-slider cinema-home-slider">
                 </div>
+                </div>
+               
             </div>
             <!--End Cinema Claro mobile-->
             <!--Cinema claro tablet-->
-            <div class="cinema-claro-tablet">
+            <div class="cinema-claro-tablet pt-3">
 
-                <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
+                <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header position-relative border-t border-l border-r border-b mb-3 p-3">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home-cinema" type="cinema-home-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
@@ -450,20 +427,21 @@
                         </h2>
                     </div>
                     <div class="m-see-more">
-                        <a href="">
-                            <button class="btn-red  button-cinema-home mb-0">VER +</button>
-                        </a>
+                        <a href=""><button class="btn-red  button-cinema-home">VER +</button></a>
                     </div>
                 </div>
                 <div class="d-flex no-gutters">
                     <div class="col-md-5 col-lg-4 d-flex align-items-center">
-
                         <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
                     </div>
-
-                    <div class="col-md-7 col-lg-9">
-                        <div class=" section-slider cinema-home-slider-prev">
+                    <div class="col-md-7 col-lg-8">
+                    <div class="position-relative border-t border-l border-r border-b p-4">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider-cinema" type="cinema-home-slider">
+                <div class="cinema-home-slider">
                         </div>
+
+                        </div>
+                        
                     </div>
                 </div>
                 <!--<div class="row no-gutters">
@@ -490,9 +468,10 @@
             </div>
             <!--End cinema claro tablet-->
             <!--Cinema claro desktop-->
-            <div class="cinema-claro-desktop">
+            <div class="cinema-claro-desktop pt-3">
                 <!--<div class="black-line"></div>-->
-                <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
+                <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header position-relative border-t border-l border-r border-b mb-3 p-3">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home-cinema" type="cinema-home-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
@@ -502,21 +481,21 @@
                         </h2>
                     </div>
                     <div class="m-see-more">
-                        <a href="">
-                            <button class="btn-red button-cinema-home">VER +</button>
-                        </a>
+                        <a href=""><button class="btn-red button-cinema-home">VER +</button></a>
                     </div>
                 </div>
                 <div class="row no-gutters">
                     <div class="col-md-4 col-xl-3">
-                        <div class=" border-t border-l border-r border-b position-relative">
-                            <img src="./images/General/pencil.svg" alt="" class="pencil">
-                            <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
-                        </div>
+                        <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
                     </div>
                     <div class="col-md-8 col-xl-9">
-                        <div class=" section-slider cinema-home-slider-prev">
+                    <div class="position-relative border-t border-l border-r border-b p-4">
+                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider-cinema" type="cinema-home-slider">
+                <div class="cinema-home-slider">
                         </div>
+
+                        </div>
+                       
                     </div>
                 </div>
 
@@ -544,11 +523,11 @@
 
         <!--Sección de anuncio-->
         <?php
-        include 'advertising-section.php'
+       // include 'advertising-section.php'
         ?>
         <div class="home-list-links-footer">
             <?php
-            include './views/partials/list-links-footer.php';
+           // include './views/partials/list-links-footer.php';
             ?>
         </div>
 
@@ -556,7 +535,7 @@
 
         <!--Fin sección de anuncio-->
         <?php
-        include 'footer.php'
+      //  include 'footer.php'
         ?>
 
         <!-- Modal -->
@@ -568,17 +547,17 @@
         <?php
         include './views/partials/modal-program.php'
         ?>
-
     </main>
     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
     <script>
-        var socketHome = new easyXDM.Socket({
+          
+        var socketHomeprincipal = new easyXDM.Socket({
             onReady: function() {
 
-                var hey = 4650;
+                var hey = 2700;
                 console.log(hey);
 
-                socketHome.postMessage(hey)
+                socketHomeprincipal.postMessage(hey)
             }
         });
         $(".home-header").on("click", ".slider-pagination-item-home", function () {
@@ -589,26 +568,91 @@
             }
             console.log(data);
             var json = JSON.stringify(data);
-            socketHome.postMessage(json);
+            socketHomeprincipal.postMessage(json);
         });
-        $(".home-section-header").on("click", ".pencil-header-home", function () {
+        $(".o-tv-section").on("click", ".pencil-logos-home", function () {
             let data = {
                 type: $(this).attr("type")
 
             }
             console.log(data);
             var json = JSON.stringify(data);
-            socketHome.postMessage(json);
+            socketHomeprincipal.postMessage(json);
         });
-        $(".claro-slider-home-prev").on("click", ".pencil-home-slider", function () {
+        $(".tv-videos-container").on("click", ".pencil-carrusel-main", function () {
             let data = {
                 type: $(this).attr("type")
 
             }
             console.log(data);
             var json = JSON.stringify(data);
-            socketHome.postMessage(json);
+            socketHomeprincipal.postMessage(json);
         });
+         
+
+         $(".o-claro-section").on("click", ".pencil-header-home-claro", function () {
+            let data = {
+                type: $(this).attr("type")
+
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketHomeprincipal.postMessage(json);
+        });
+
+        $(".o-claro-section").on("click", ".pencil-home-slider-claro", function () {
+            let data = {
+                type: $(this).attr("type")
+
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketHomeprincipal.postMessage(json);
+        });
+
+        $(".o-concert-section").on("click", ".pencil-header-home-channel", function () {
+            let data = {
+                type: $(this).attr("type")
+
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketHomeprincipal.postMessage(json);
+        });
+
+        $(".o-concert-section").on("click", ".pencil-home-slider-channel", function () {
+            let data = {
+                type: $(this).attr("type")
+
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketHomeprincipal.postMessage(json);
+        });
+
+        $(".o-cinema-section").on("click", ".pencil-header-home-cinema", function () {
+            let data = {
+                type: $(this).attr("type")
+
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketHomeprincipal.postMessage(json);
+        });
+
+        $(".o-cinema-section").on("click", ".pencil-home-slider-cinema", function () {
+            let data = {
+                type: $(this).attr("type")
+
+            }
+            console.log(data);
+            var json = JSON.stringify(data);
+            socketHomeprincipal.postMessage(json);
+        });
+
+    
+       
+       
     </script>
 </body>
 

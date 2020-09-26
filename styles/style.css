@@ -5392,7 +5392,7 @@ div #banner-concert-channel-edi .slick-track {
   display: inline-block;
   height: 37px !important;
   width: 37px !important;
-  margin: 0;
+  margin: 0 5px;
   padding: 0;
   cursor: pointer;
 }
