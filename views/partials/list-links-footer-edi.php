@@ -3,7 +3,7 @@
     <div class="col-11 mx-auto list-links-footer">
         <div class="row no-gutters">
             <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-              <input type="text" id="quienessomos" class=" text-landing-footer text-semibold table-input" style="border:none;" value="¿Quiénes somos?">
+              <input type="text" id="quienessomos" class=" text-landing-footer text-semibold table-input" style="border:none;" value="¿Quiénes somos?" >
                 
            
             </div>

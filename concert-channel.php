@@ -149,19 +149,19 @@
         <div class="">
             <div class="row no-gutters">
                 <div class="col-10 mx-auto">
-                    <h1 class="footer-title">¡síguenos!</h1>
+                    <h1 class="footer-title" id="redes_concert_channel_title">¡síguenos!</h1>
                 </div>
             </div>
             <div class="social-media">
                 <div class="d-flex align-items-center justify-content-center">
                     <div class="social-item">
-                        <a href="https://www.facebook.com/concertchannel/" target="_blank">
-                            <img class="social-icon" src="./images/redes/facebook-icon-green.svg" alt="">
+                        <a href="https://www.facebook.com/concertchannel/" target="_blank" id="facebook_concert_channel_url">
+                            <img class="social-icon" src="./images/redes/facebook-icon-green.svg" alt="" id="facebook_concert_channel_icon">
                         </a>
                     </div>
                     <div class="social-item">
-                        <a href="https://twitter.com/Concert_Channel" target="_blank">
-                            <img class="social-icon" src="./images/redes/twitter-icon-green.svg" alt="">
+                        <a href="https://twitter.com/Concert_Channel" target="_blank"id="twitter_concert_channel_url">
+                            <img class="social-icon" src="./images/redes/twitter-icon-green.svg" alt="" id="twitter_concert_channel_icon">
                         </a>
                     </div>
                 </div>

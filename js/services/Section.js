@@ -35,11 +35,20 @@ function getMetaKeys(landing) {
           break;
         case 'programation_edi':
           sectionUI.renderProgramation_edi(json);
-
+        
           break;
+        case 'footer_canal_claro':
+          landing = "canal_claro"
+          break;
+          case 'footer_canal_claro':
+            landing = "concert_channel"
+            break;
+          
         default:
           break;
       }
+      sectionUI.getFooter(landing);
+
     }
   });
 }
