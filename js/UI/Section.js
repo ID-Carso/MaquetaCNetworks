@@ -1374,6 +1374,8 @@ export default class Section {
     });
   }
   getFooter(landing){
+    console.log('active un debugger pero pura de esta me da');
+    debugger
     let data = {
       function: "getMetakeys",
       landing: 'footer'
@@ -1402,6 +1404,11 @@ export default class Section {
               break;
 
             case 'concert_channel':
+              renderFooterConcertChannel(json);
+
+              break;
+
+            case 'claro_network':
               renderFooterConcertChannel(json);
 
               break;

@@ -43,6 +43,9 @@ function getMetaKeys(landing) {
          case 'footer_concert_channel':
             landing = "concert_channel"
             break;
+         case 'footer_claro_network':
+            landing = "claro_network"
+            break;
         case 'about':
           landing = "canal_claro"
 

@@ -3,11 +3,11 @@
 
 <head>
     <?php include './views/partials/head.php' ?>
+    <input type="hidden" id="actual_landing" value="footer_claro_network">
 
 </head>
 
 <body>
-
 
     <main class="today">
         <div class=" border-t border-l border-r border-b position-relative m-5 ml-5 mr-5">
