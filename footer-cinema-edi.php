@@ -3,7 +3,7 @@
 
 <head>
   <?php include './views/partials/head.php' ?>
-  <input type="hidden" id="actual_landing" value="claro_cinema">
+  <input type="hidden" id="actual_landing" value="footer_claro_cinema">
 
 </head>
 

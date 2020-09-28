@@ -98,7 +98,8 @@
                         </div>
 
                         <div class="login">
-                            <a href="" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
+                            <a href="" class="login-item"><img class="login-country" alt=""
+                                    src="images/paises/ecuador.svg"></a>
                         </div>
                     </div>
                 </nav>
@@ -132,38 +133,25 @@
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="concert-channel" class="nav-li">
+                            <li class="nav-li">
                                 <img class="nav-image concert-nav-image" src="" alt="" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
-                            <li rel="claro-cinema" class="nav-li">
+                            <li class="nav-li">
                                 <img class="nav-image cinema-nav-image" src="" alt="" />
                             </li>
                         </div>
 
                     </ul>
                 </div>
+                <!-- CARRUSEL DE PROGRAMACION CANAL CLARO -->
                 <div class="tv-videos-container">
                     <div id="claro-canal" class="tv-content  border-t border-l border-r border-b position-relative p-2">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-main" type="home-claro-carrousel-main">
-
-                        <div class="tv-slider today-claro-slider " id="tv-claro-slider" style="margin-bottom: 0px !important;">
-
-
-                        </div>
-                        <!--Concert channel de "Ahora en tv"-->
-                        <div id="concert-channel" class="tv-content">
-                            <div class="tv-slider today-concert-channel-slider" id="tv-concert-slider">
-                            </div>
-                        </div>
-                        <!--End Concert channel de "Ahora en tv"-->
-                        <!--Claro cinema de "Ahora en tv"-->
-                        <div id="claro-cinema" class="tv-content">
-                            <div class="tv-slider today-claro-cinema-slider" id="tv-cinema-slider">
-                            </div>
-                        </div>
-
+                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-main"
+                            type="home-claro-carrousel-main">
+                        <div class="tv-slider today-claro-slider " id="tv-claro-slider"
+                            style="margin-bottom: 0px !important;"></div>
                     </div>
                 </div>
 
@@ -179,7 +167,8 @@
             <!--Sección Canal Claro mobile-->
             <div class="claro-canal-mobile">
                 <div class="m-home-titles text-center  position-relative border-t border-l border-r border-b mb-3">
-                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home" type="claro-home-header">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home"
+                        type="claro-home-header">
                     <a href="" class="home-title-link">
                         <img src="" class="claro-image-header">
                     </a>
@@ -192,7 +181,8 @@
                     <a href=""> <button class="btn-red btn-canal-claro-home">VER +</button></a>
                 </div>
                 <div class="position-relative border-t border-l border-r border-b p-3">
-                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider" type="claro-home-slider">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider"
+                        type="claro-home-slider">
                     <div class="section-slider claro-slider-home-prev">
                     </div>
                 </div>
@@ -201,8 +191,10 @@
             <!--End Sección Canal Claro mobile-->
             <!--Sección Canal Claro tablet-->
             <div class="claro-canal-tablet">
-                <div class="d-flex justify-content-between align-items-center home-section-header claro-section-header position-relative border-t border-l border-r border-b mb-3">
-                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home" type="claro-home-header">
+                <div
+                    class="d-flex justify-content-between align-items-center home-section-header claro-section-header position-relative border-t border-l border-r border-b mb-3">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home"
+                        type="claro-home-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img src="./images/home/tv-1.svg" class="claro-image-header">
@@ -219,7 +211,8 @@
                 </div>
                 <div class="canal-videos-container">
                     <div class="position-relative border-t border-l border-r border-b p-4 ">
-                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider" type="claro-home-slider">
+                        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider"
+                            type="claro-home-slider">
                         <div class="section-slider claro-slider-home-prev">
                         </div>
                     </div>
@@ -248,8 +241,10 @@
             <!--End Sección Canal Claro tablet-->
             <!--Sección canal claro desktop-->
             <div class="claro-canal-desktop">
-                <div class="d-flex justify-content-between align-items-center home-section-header claro-section-header p-3 position-relative border-t border-l border-r border-b mb-3">
-                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home" type="claro-home-header">
+                <div
+                    class="d-flex justify-content-between align-items-center home-section-header claro-section-header p-3 position-relative border-t border-l border-r border-b mb-3">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header-home"
+                        type="claro-home-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img src="./images/home/tv-1.svg" class="claro-image-header">
@@ -263,7 +258,8 @@
                     </div>
                 </div>
                 <div class="position-relative border-t border-l border-r border-b p-4">
-                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider" type="claro-home-slider">
+                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-home-slider"
+                        type="claro-home-slider">
                     <div class="section-slider claro-slider-home-prev">
                     </div>
                 </div>
@@ -304,7 +300,8 @@
             <!--End Versión mobile-->
             <!--Versión para tablet-->
             <div class="concert-channel-tablet">
-                <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
+                <div
+                    class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img src="./images/home/concert-home-img.svg" class="concerthome-image-header">
@@ -321,7 +318,8 @@
                     </div>
                 </div>
 
-                <div class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
+                <div
+                    class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
                     <div>
 
                     </div>
@@ -336,7 +334,8 @@
             <!--End Versión tablet-->
             <!--Concert channel desktop-->
             <div class="concert-channel-desktop">
-                <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
+                <div
+                    class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img class="concerthome-image-header" src="./images/home/concert-home-img.svg" alt="">
@@ -351,7 +350,8 @@
                 </div>
                 <div class="section-slider concert-home-slider">
                 </div>
-                <div class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
+                <div
+                    class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
                     <div>
 
                     </div>
@@ -389,7 +389,8 @@
             <!--Cinema claro tablet-->
             <div class="cinema-claro-tablet">
 
-                <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
+                <div
+                    class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
@@ -422,7 +423,8 @@
                         </div>
                     </div>
                 </div>-->
-                <div class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
+                <div
+                    class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
 
                     </div>
@@ -437,7 +439,8 @@
             <!--Cinema claro desktop-->
             <div class="cinema-claro-desktop">
                 <!--<div class="black-line"></div>-->
-                <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
+                <div
+                    class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
@@ -467,7 +470,8 @@
                     <div class="col-md-8 col-xl-6 cinema-home-videos-container">
                     </div>
                 </div>-->
-                <div class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
+                <div
+                    class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
 
                     </div>
@@ -512,7 +516,7 @@
     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
     <script>
         var socketHome = new easyXDM.Socket({
-            onReady: function() {
+            onReady: function () {
 
                 var hey = 2700;
                 console.log(hey);
@@ -520,7 +524,7 @@
                 socketHome.postMessage(hey)
             }
         });
-        $(".home-header").on("click", ".slider-pagination-item-home", function() {
+        $(".home-header").on("click", ".slider-pagination-item-home", function () {
             let type = "slider-pagination";
             let data = {
 
@@ -530,7 +534,7 @@
             var json = JSON.stringify(data);
             socketHome.postMessage(json);
         });
-        $(".tv-content").on("click", ".pencil-carrusel-main", function() {
+        $(".tv-content").on("click", ".pencil-carrusel-main", function () {
             let data = {
                 type: $(this).attr("type")
 
@@ -539,7 +543,7 @@
             var json = JSON.stringify(data);
             socketHome.postMessage(json);
         });
-        $(".home-section-header").on("click", ".pencil-header-home", function() {
+        $(".home-section-header").on("click", ".pencil-header-home", function () {
             let data = {
                 type: $(this).attr("type")
 
@@ -548,7 +552,7 @@
             var json = JSON.stringify(data);
             socketHome.postMessage(json);
         });
-        $(".pencil-home-slider").click(function() {
+        $(".pencil-home-slider").click(function () {
             let data = {
                 type: $(this).attr("type")
 

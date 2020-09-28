@@ -3,7 +3,7 @@
     <div class="advertising-section-mobile">
         <div class="row">
             <div class="col-12 m-auto">
-                <img src="./images/home/herederos-text.jpg" alt="" class="w-100">
+                <img src="./images/home/herederos-text.jpg" alt="" class="w-100" id="footer_image_left_mob">
                 <!--<div class="adv-headline-mb">
                     <h1 class="advertising-title ">Disfruta</h1>
                     <h2 class="advertising-subtitle">La mejor programación</h2>
@@ -17,7 +17,7 @@
                 </div>-->
             </div>
             <div class="col-12 no-gutters">
-                <img src="./images/home/herederos-ok.jpg" class="advertising-image" />
+                <img src="./images/home/herederos-ok.jpg" class="advertising-image" id="footer_image_right_mob" />
             </div>
         </div>
     </div>
@@ -27,10 +27,10 @@
         <div class="col-lg-10 m-auto">
             <div class="row">
                 <div class="col-6 m-auto">
-                    <img src="./images/home/herederos-text.jpg" alt="" class="w-100">
+                    <img src="./images/home/herederos-text.jpg" alt="" class="w-100" id="footer_image_left_tablet">
                 </div>
                 <div class="col-6 no-gutters">
-                    <img src="./images/home/herederos-ok.jpg" class="advertising-image" />
+                    <img src="./images/home/herederos-ok.jpg" class="advertising-image" id="footer_image_right_tablet"/>
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
         <div class="col-lg-12">
             <div class="row">
                 <div class="col-5 col-lg-6">
-                    <img src="./images/home/herederos-text.jpg" alt="" class="w-100">
+                    <img src="./images/home/herederos-text.jpg" alt="" class="w-100" id="footer_image_left_desk">
                     <!--<div class="adv-headline-mb">
                         <h1 class="advertising-title ">Disfruta</h1>
                         <h2 class="advertising-subtitle">La mejor programación</h2>
@@ -55,7 +55,7 @@
                     </div>-->
                 </div>
                 <div class="col-7 col-lg-6 no-gutters">
-                    <img src="./images/home/herederos-ok.jpg" class="advertising-image" />
+                    <img src="./images/home/herederos-ok.jpg" class="advertising-image" id="footer_image_right_desk" />
                 </div>
             </div>
         </div>

@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <?php include './views/partials/head.php' ?>
 
@@ -24,6 +27,7 @@
   include 'footer.php'
   ?>
         </div>
+
     </main>
     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
     <script>
