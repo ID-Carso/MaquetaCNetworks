@@ -372,7 +372,7 @@
 <script>
     var socketSinopsis = new easyXDM.Socket({
         onReady: function () {
-            var hey = 2640;
+            var hey = 2565;
             socketSinopsis.postMessage(hey)
         },
         onMessage: function (message, origin) {
