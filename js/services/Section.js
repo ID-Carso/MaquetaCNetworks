@@ -40,10 +40,16 @@ function getMetaKeys(landing) {
         case 'footer_canal_claro':
           landing = "canal_claro"
           break;
-          case 'footer_canal_claro':
+         case 'footer_concert_channel':
             landing = "concert_channel"
             break;
-          
+        case 'about':
+          landing = "canal_claro"
+
+          sectionUI.renderAbout(json);
+
+          break;
+       
         default:
           break;
       }

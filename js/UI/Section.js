@@ -1420,7 +1420,15 @@ export default class Section {
       }
     });
   }
-  
+  renderAbout(json){
+  let data = json.data;
+  $('#terms_title').text(data.terms_title);
+  $('#terms_text').text(data.terms_text);
+
+  $('#about_title').text(data.about_title);
+  $('#about_text').text(data.about_text);
+  console.log("temrinos pintados");
+  }
 }
 function renderFooter(json){
   let data = json.data;
