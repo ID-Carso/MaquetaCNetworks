@@ -154,7 +154,7 @@
                     <div id="concert-channel" class="tv-content  border-t border-l border-r border-b position-relative p-2">
                         <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-main" type="home-claro-carrousel-main">
                         <!-- <div class="tv-slider today-concert-channel-slider" id="tv-concert-slider" style="margin-bottom: 0px !important;"></div> -->
-                        <div class="tv-slider today-claro-slider" id="tv-concert-slider" style="margin-bottom: 0px !important;"></div>
+                        <div class="tv-slider today-concert-channel-slider" id="tv-concert-slider" style="margin-bottom: 0px !important;"></div>
                     </div>
                 </div>
 

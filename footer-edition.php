@@ -3,29 +3,28 @@
 
 <head>
     <?php include './views/partials/head.php' ?>
+    <input type="hidden" id="actual_landing" value="footer_claro_network">
 
 </head>
 
 <body>
 
-    <input type="hidden" id="actual_landing" value="footer_home">
     <main class="today">
         <div class=" border-t border-l border-r border-b position-relative m-5 ml-5 mr-5">
-            <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-main"
-                type="footer-claro-networks">
+            <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-main" type="footer-claro-networks">
             <?php
-    include 'advertising-section.php'
-    ?>
+            include 'advertising-section.php'
+            ?>
 
             <div class="cclaro-list-links-footer">
                 <?php
-      include './views/partials/list-links-footer.php';
-      ?>
+                include './views/partials/list-links-footer.php';
+                ?>
             </div>
 
             <?php
-  include 'footer.php'
-  ?>
+            include 'footer.php'
+            ?>
         </div>
 
 
@@ -33,11 +32,11 @@
     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
     <script>
         var socketFooterNetworks = new easyXDM.Socket({
-            onReady: function () {
+            onReady: function() {
                 //socketFooterNetworks.postMessage(document.body.scrollHeight)
                 socketFooterNetworks.postMessage(1000)
             },
-            onMessage: function (message, origin) {
+            onMessage: function(message, origin) {
                 let json = JSON.parse(message);
 
                 //Right image
@@ -70,7 +69,7 @@
                 $('#menu_2_opcion_7_icon').attr("src", json.data.menu_2_opcion_7_icon)
             }
         });
-        $(".pencil").click(function () {
+        $(".pencil").click(function() {
             let data = {
                 type: $(this).attr("type")
             }

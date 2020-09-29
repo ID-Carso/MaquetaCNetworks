@@ -580,6 +580,7 @@
             socketHomeprincipal.postMessage(json);
         });
         $(".tv-videos-container").on("click", ".pencil-carrusel-main", function () {
+           
             let data = {
                 type: $(this).attr("type")
 
