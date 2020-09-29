@@ -93,8 +93,8 @@ function destroySlider(container) {
 
 function getPrograms(date, country) {
     let dataProgram = {
-        // function: "getPrograms",
-        function: "getProgramsGMT",
+        function: "getPrograms",
+        //function: "getProgramsGMT",
         date,
         country,
     };

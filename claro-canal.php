@@ -119,8 +119,10 @@
           <div class="col-12 col-md-5 col-lg-5 col-xl-5">
             <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
           </div>
-          <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ" id="btn-claro-canal">
-            <a href="programacion.php"><button class="btn-claro-canal a-text-white-semibold btn-tomato">VER PROGRAMACIÓN</button></a>
+          <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ"
+            id="btn-claro-canal">
+            <a href="programacion.php"><button class="btn-claro-canal a-text-white-semibold btn-tomato">VER
+                PROGRAMACIÓN</button></a>
           </div>
         </div>
 
@@ -140,7 +142,8 @@
 
         <div class="week-claro-video-container">
           <video class="promo-video" playsinline autoplay muted controls loop>
-            <source src="http://www.claronetworks.openofficedospuntocero.info/video/canal-claro-promo.mp4" type="video/mp4">
+            <source src="http://www.claronetworks.openofficedospuntocero.info/video/canal-claro-promo.mp4"
+              type="video/mp4">
           </video>
           <!--<div class="poster">
             <div class="next-week-thumb">
@@ -190,27 +193,27 @@
     <div class="">
       <div class="row no-gutters">
         <div class="col-12">
-          <h1 class="footer-title-claro" id="redes_canal_claro_title">¡síguenos!</h1>
+          <h1 class="footer-title-claro">¡síguenos!</h1>
         </div>
         <div class="social-media">
           <div class="col ">
-            <a href="https://www.facebook.com/CanalClaro/" target="_blank" id="facebook_canal_claro_url">
-              <img class="social-icon" src="./images/redes/facebook-icon-red.svg" alt="" id="facebook_canal_claro_icon"/>
+            <a href="https://www.facebook.com/CanalClaro/" target="_blank">
+              <img class="social-icon" src="./images/redes/facebook-icon-red.svg" alt="" />
             </a>
           </div>
           <div class="col">
-            <a href="https://www.instagram.com/canalclaro/?hl=es-la" target="_blank" id="instagram_canal_claro_url">
-              <img class="social-icon" src="./images/redes/insta-icon-red.svg" alt="" id="instagram_canal_claro_icon"/>
+            <a href="https://www.instagram.com/canalclaro/?hl=es-la" target="_blank">
+              <img class="social-icon" src="./images/redes/insta-icon-red.svg" alt="" />
             </a>
           </div>
           <div class="col">
-            <a href="https://twitter.com/canalclaro" target="_blank"id="twitter_canal_claro_url">
-              <img class="social-icon" src="./images/redes/twitter-icon-red.svg" alt="" id="twitter_canal_claro_icon"/>
+            <a href="https://twitter.com/canalclaro" target="_blank">
+              <img class="social-icon" src="./images/redes/twitter-icon-red.svg" alt="" />
             </a>
           </div>
           <div class="col">
-            <a href="https://www.youtube.com/user/CanalClaroTV" target="_blank"id="youtube_canal_claro_url">
-              <img class="social-icon" src="./images/redes/youtube-icon-red.svg" alt="" id="youtube_canal_claro_icon"/>
+            <a href="https://www.youtube.com/user/CanalClaroTV" target="_blank">
+              <img class="social-icon" src="./images/redes/youtube-icon-red.svg" alt="" />
             </a>
           </div>
         </div>
@@ -236,15 +239,16 @@ include './views/partials/modal-program.php'
 ?>
 
 <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
-    <script>
-        var socket = new easyXDM.Socket({
-            onReady: function () {
+<script>
+  var socket = new easyXDM.Socket({
+    onReady: function () {
 
-                var hey = 3500;
-                console.log(hey);
+      var hey = 3500;
+      console.log(hey);
 
-                socket.postMessage(hey)
-            }
-        });
-    </script>
+      socket.postMessage(hey)
+    }
+  });
+</script>
+
 </html>
