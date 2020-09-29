@@ -86,16 +86,18 @@
 									<img src="images/paises/nicaragua.svg" class="Icon_paises">Nicaragua
 								</div>
 							</a>
-							<a href="home.php">
+							<button class="button-none" type="submit">
+								<input type="hidden" name="country" value="panama">
 								<div class="name_paises espacio">
 									<img src="images/paises/panama.svg" class="Icon_paises">Panamá
 								</div>
-							</a>
-							<a href="home.php">
+							</button>
+							<button class="button-none" type="submit">
+								<input type="hidden" name="country" value="paraguay">
 								<div class="name_paises espacio">
 									<img src="images/paises/paraguay.svg" class="Icon_paises">Paraguay
 								</div>
-							</a>
+							</button>
 							<button class="button-none" type="submit">
 								<input type="hidden" name="country" value="peru">
 								<div class="name_paises espacio">
