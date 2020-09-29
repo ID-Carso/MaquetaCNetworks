@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+if($_SESSION["country"] != 1){
+    header('Location: index.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -94,7 +104,8 @@
                 </div>
 
                 <div class="login">
-                    <a href="index.php" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
+                    <a href="index.php" class="login-item"><img class="login-country" alt=""
+                            src="images/paises/ecuador.svg"></a>
                 </div>
             </div>
         </nav>

@@ -2,8 +2,7 @@ function validateTokenPassword(tokenPassword) {
   $.ajax({
     type: "GET",
     data: tokenPassword,
-    url:
-      "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_verify",
+    url: "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_verify",
     success: function (result) {
       if (result.data) {
         console.log(result.data);
@@ -138,8 +137,7 @@ function sendUserEmail(inputEmail) {
       let formContainer = $(".formContainer");
       formContainer.prepend(loader);
     },
-    url:
-      "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_send",
+    url: "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_send",
     success: function (result) {
       if (result.data) {
         location.href = "./email-sent.php";
@@ -174,8 +172,7 @@ function sendNewPassword(inputPassword, secondInputPassword) {
       let formContainer = $(".formContainer");
       formContainer.prepend(loader);
     },
-    url:
-      "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_password",
+    url: "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_password",
     success: function (result) {
       console.log(result);
       if (result.code == 200) {
