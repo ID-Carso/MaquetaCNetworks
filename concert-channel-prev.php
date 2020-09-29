@@ -81,8 +81,8 @@
                 ?>
             </div>
             <?php
-            include './views/partials/menu-desktop-black.php'
-            ?>
+      include './views/partials/menu-desktop-black-edi.php'
+      ?>
             <div class="header-slider" id="banner-concert-channel">
             </div>
         </div>
@@ -104,7 +104,7 @@
                 </div>
             </div>
             <div class="today-concert-videos-container">
-                <div class="section-slider concert-slider today-concert-channel-slider">
+                <div class="section-slider concert-slider today-concert-channel-slider-prev">
 
                 </div>
 

@@ -89,7 +89,7 @@
             </div>
 
             <?php
-      include './views/partials/menu-desktop-black.php'
+      include './views/partials/menu-desktop-black-edi.php'
       ?>
 
             <!--<div class="header-details header-detail-margin col-md-6">
@@ -127,7 +127,7 @@
                 </div>
 
                 <div class="today-videos-container">
-                    <div class="section-slider today-claro-slider">
+                    <div class="section-slider today-claro-slider-prev">
                     </div>
         </section>
 

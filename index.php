@@ -26,79 +26,92 @@
 							</div>
 						</a>
 						-->
-							<a href="home.php">
+							<button class="button-none d-block" type="submit">
+								<input type="hidden" name="country" value="argentina">
 								<div class="name_paises espacio">
 									<img src="images/paises/argentina.svg" class="Icon_paises">Argentina
 								</div>
-							</a>
-							<!-- 
-						
-						<a href="home.php">
-							<div class="name_paises espacio">
-								<img src="images/paises/brazil.svg" class="Icon_paises">Brasil
-							</div>
-						</a>
-						-->
+							</button>
 
-							<a href="home.php">
+
+							<button class="button-none d-block" type="submit">
+								<input type="hidden" name="country" value="chile">
 								<div class="name_paises espacio">
 									<img src="images/paises/chile.svg" class="Icon_paises">Chile
 								</div>
-							</a>
-							<a href="home.php">
+							</button>
+							<button class="button-none d-block" type="submit">
+								<input type="hidden" name="country" value="colombia">
 								<div class="name_paises espacio">
 									<img src="images/paises/colombia.svg" class="Icon_paises">Colombia
 								</div>
-							</a>
-							<a href="home.php">
+							</button>
+
+							<button class="button-none d-block" type="submit">
+								<input type="hidden" name="country" value="costarica">
 								<div class="name_paises espacio">
 									<img src="images/paises/costa-rica.svg" class="Icon_paises">Costa Rica
 								</div>
-							</a>
-							<a href="home.php">
+							</button>
+
+							<button class="button-none d-block" type="submit">
+								<input type="hidden" name="country" value="ecuador">
 								<div class="name_paises espacio">
 									<img src="images/paises/ecuador.svg" class="Icon_paises">Ecuador
 								</div>
-							</a>
-							<a href="home.php">
+							</button>
+
+							<button class="button-none d-block" type="submit">
+								<input type="hidden" name="country" value="elsalvador">
+
 								<div class="name_paises espacio">
 									<img src="images/paises/el-salvador.svg" class="Icon_paises"><span>El
 										Salvador</span>
 								</div>
-							</a>
+
+							</button>
 						</div>
 						<!-- col 2 -->
 						<div class="col-sm-3 offset-3 col-md-4 offset-md-0 col-lg-4 offset-lg-0">
 
-
-							<a href="home.php">
-								<div class="name_paises espacio">
-									<img src="images/paises/guatemala.svg" class="Icon_paises"><span>Guatemala</span>
-								</div>
-							</a>
-							<a href="home.php">
-								<div class="name_paises espacio">
-									<img src="images/paises/honduras.svg" class="Icon_paises"><span>Honduras</span>
-								</div>
-							</a>
-							<a href="home.php">
-								<div class="name_paises espacio">
-									<img src="images/paises/nicaragua.svg" class="Icon_paises">Nicaragua
-								</div>
-							</a>
-							<button class="button-none" type="submit">
+							<button class="button-none d-block" type="submit">
+								<input type="hidden" name="country" value="guatemala">
+								<a href="home.php">
+									<div class="name_paises espacio">
+										<img src="images/paises/guatemala.svg"
+											class="Icon_paises"><span>Guatemala</span>
+									</div>
+								</a>
+							</button>
+							<button class="button-none d-block" type="submit">
+								<input type="hidden" name="country" value="honduras">
+								<a href="home.php">
+									<div class="name_paises espacio">
+										<img src="images/paises/honduras.svg" class="Icon_paises"><span>Honduras</span>
+									</div>
+								</a>
+							</button>
+							<button class="button-none d-block" type="submit">
+								<input type="hidden" name="country" value="nicaragua">
+								<a href="home.php">
+									<div class="name_paises espacio">
+										<img src="images/paises/nicaragua.svg" class="Icon_paises">Nicaragua
+									</div>
+								</a>
+							</button>
+							<button class="button-none d-block" type="submit">
 								<input type="hidden" name="country" value="panama">
 								<div class="name_paises espacio">
 									<img src="images/paises/panama.svg" class="Icon_paises">Panamá
 								</div>
 							</button>
-							<button class="button-none" type="submit">
+							<button class="button-none d-block" type="submit">
 								<input type="hidden" name="country" value="paraguay">
 								<div class="name_paises espacio">
 									<img src="images/paises/paraguay.svg" class="Icon_paises">Paraguay
 								</div>
 							</button>
-							<button class="button-none" type="submit">
+							<button class="button-none d-block" type="submit">
 								<input type="hidden" name="country" value="peru">
 								<div class="name_paises espacio">
 									<img src="images/paises/peru.svg" class="Icon_paises">Perú
@@ -108,20 +121,8 @@
 
 						<!-- col 3 -->
 						<div class="col-sm-3 offset-3 col-md-4 offset-md-0 col-lg-3 offset-lg-0">
-							<!-- 
-
-						<a href="home.php">
-							<div class="name_paises espacio">
-								<img src="images/paises/puerto-rico.svg" class="Icon_paises">Puerto Rico
-							</div>
-						</a>
-						<a href="home.php">
-							<div class="name_paises espacio">
-								<img src="images/paises/dominican-republic.svg" class="Icon_paises">República Dominicana
-							</div>
-						</a>
-						 -->
-							<a href="home.php">
+							<button class="button-none d-block" type="submit">
+								<input type="hidden" name="country" value="rd">
 								<div class="name_paises espacio">
 									<div class="row">
 										<div class="col align-middle"
@@ -133,7 +134,7 @@
 										</div>
 									</div>
 								</div>
-							</a>
+							</button>
 							<a href="https://nuestravision.tv">
 								<div class="name_paises espacio">
 									<div class="row">
