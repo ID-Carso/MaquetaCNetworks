@@ -1099,7 +1099,7 @@ export default class Section {
                   </div>
             </div>
           </div>
-        </div>
+        </div> 
         `;
       } else {
         Strinfcarrusel2 += `

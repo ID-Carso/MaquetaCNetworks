@@ -31,7 +31,7 @@
     <script>
         var socketFooterNetworks = new easyXDM.Socket({
             onReady: function () {
-                socketFooterNetworks.postMessage(document.body.scrollHeight)
+                socketFooterNetworks.postMessage(850)
             },
 
         });

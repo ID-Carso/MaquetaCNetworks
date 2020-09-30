@@ -144,9 +144,9 @@
 
         </section>
         <?php
-        include 'advertising-section.php'
+       // include 'advertising-section.php'
         ?>
-        <div class="">
+       <!-- <div class="">
             <div class="row no-gutters">
                 <div class="col-10 mx-auto">
                     <h1 class="footer-title" id="redes_concert_channel_title">¡síguenos!</h1>
@@ -172,14 +172,14 @@
         </div>
         <div class="cconcert-list-links-footer">
             <?php
-            include './views/partials/list-links-footer.php';
+          //  include './views/partials/list-links-footer.php';
             ?>
         </div>
         <footer>
             <?php
-            include 'footer.php'
+          //  include 'footer.php'
             ?>
-        </footer>
+        </footer>-->
 
     </div>
     <?php
@@ -192,10 +192,13 @@
     ?>
     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
     <script>
-        var socketConcert = new easyXDM.Socket({
-            onReady: function () {
+        var socket = new easyXDM.Socket({
+            onReady: function() {
+
                 var hey = 2180;
-                socketConcert.postMessage(hey)
+                console.log(hey);
+
+                socket.postMessage(hey)
             }
         });
     </script>
