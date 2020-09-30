@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+if($_SESSION["country"] != 1){
+    header('Location: index.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,7 +68,8 @@
   </header>
   <div style="padding-top: 3%">
     <div class="login-form">
-      <div class="col-sm-12 no-gutters col-md-6 col-lg-4 col-xl-4 shadow1 fondolog position-relative card-white data-user-container">
+      <div
+        class="col-sm-12 no-gutters col-md-6 col-lg-4 col-xl-4 shadow1 fondolog position-relative card-white data-user-container">
         <img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back">
         <img src="images/registro/group-10.svg" class="ubicacion5" />
 
@@ -592,32 +603,32 @@
                       <img src="images/paises/uruguay.svg" class="Icon_paises" />Uruguay
                     </li>
                     <script>
-                      $(".option").click(function() {
+                      $(".option").click(function () {
                         var value = $(this).attr("value");
                         var select = $(this).attr("id-select");
 
                         $("#" + select + " > p").text(value);
                       });
-                      $(".Dias").click(function() {
+                      $(".Dias").click(function () {
                         var value = $(this).attr("value");
                         var select = $(this).attr("id-select");
 
                         $("#" + select + " > p").text(value);
                       });
-                      $(".Meses").click(function() {
+                      $(".Meses").click(function () {
                         var value = $(this).attr("value");
                         var select = $(this).attr("id-select");
 
                         $("#" + select + " > p").text(value);
                       });
-                      $(".Años").click(function() {
+                      $(".Años").click(function () {
                         var value = $(this).attr("value");
                         var select = $(this).attr("id-select");
 
                         $("#" + select + " > p").text(value);
                       });
 
-                      $("#mujer").click(function() {
+                      $("#mujer").click(function () {
                         if ($('input[id="mujer"]').is(":checked")) {
                           $("#women").attr(
                             "src",
@@ -630,7 +641,7 @@
                         }
                       });
 
-                      $("#hombre").click(function() {
+                      $("#hombre").click(function () {
                         if ($('input[id="hombre"]').is(":checked")) {
                           $("#women").attr(
                             "src",
@@ -668,7 +679,8 @@
     </div>
 
   </div>
-  <div class="modal fade " id="mensaje" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade " id="mensaje" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content modal-estilo">
 

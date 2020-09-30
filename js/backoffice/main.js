@@ -98,7 +98,10 @@ $(document).ready(function () {
       let json = JSON.parse(result);
       console.log(json);
       let sliderCanalClarLanding = $(".today-claro-slider-edit");
+      let sliderCanalClarLandingPrev = $(".today-claro-slider-prev");
       let sliderConcertChannelLanding = $(".today-concert-slider-edit");
+      let sliderConcertChannelLandingPrev = $(".today-concert-channel-slider-prev");
+      let sliderClaroCinemaLandingPrev = $(".oday-claro-cinema-slider-prev");
       //Contenedor para insertar todos los programas
       let claroCotentProgramacionGeneralEdit = $(".claro-content-edit");
       //Programación de los diferentes landings
@@ -107,12 +110,16 @@ $(document).ready(function () {
       let programingClaroCinema = json.data[2].programing[0].programs;
       let programLandingCanalClaro = "";
       let programLandingConcertChannel = "";
+      let programLandingClaroCinema = "";
       let programCanalClaroEdit = "";
       let programConcertChannelEdit = "";
       let programClaroCinemaEdit = "";
 
       sliderCanalClarLanding.slick("unslick");
+      sliderCanalClarLandingPrev.slick("unslick");
       sliderConcertChannelLanding.slick("unslick");
+      sliderConcertChannelLandingPrev.slick("unslick");
+      sliderClaroCinemaLandingPrev.slick("unslick");
       //Canal claro GMT
       programingCanalClaro.forEach((program, index) => {
         //Landing de canal claro
@@ -315,6 +322,49 @@ $(document).ready(function () {
         `;
       });
       programingClaroCinema.forEach((program, index) => {
+        if (index == 0) {
+          programLandingClaroCinema += `
+                <div class="poster">
+                    <div class="poster-body">
+                        <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
+                        <div class="thumbnail-body" _id="${program.chapter_id}">
+                            <div class="thumbnail">
+                                <img src="${program.image}" alt="">
+                            </div>
+                            <div class="a-cinema-rectangle thumbnail-info-title">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">${program.chapter_title}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    `;
+        } else {
+          programLandingClaroCinema += `
+                <div class="poster">
+                    <div class="poster-body">
+                        <div class="showtime-container justify-content-between">
+                            <p class="a-programming-text">${program.time}</p>
+                            <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
+                        </div>
+
+                        <div class="thumbnail-body" _id="${program.chapter_id}">
+                            <div class="thumbnail">
+                                <img src="${program.image}" alt="">
+                            </div>
+                            <div class="a-cinema-rectangle thumbnail-info-title">
+                                <div class="poster-title-margin">
+                                    <p class="a-poster-text-white">${program.chapter_title}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    `;
+        }
+
+
         let synopsis = "";
         if (program.sinopsis.length > 150) {
           synopsis = program.sinopsis.substr(0, 150) + "...";
@@ -376,9 +426,15 @@ $(document).ready(function () {
       $(".concert-content-edit").html(programConcertChannelEdit);
       $(".cinema-content-edit").html(programClaroCinemaEdit);
       sliderCanalClarLanding.html(programLandingCanalClaro);
+      sliderCanalClarLandingPrev.html(programLandingCanalClaro);
       sliderConcertChannelLanding.html(programLandingConcertChannel);
+      sliderConcertChannelLandingPrev.html(programLandingConcertChannel);
+      sliderClaroCinemaLandingPrev.html(programLandingClaroCinema);
       createTvSlider(sliderCanalClarLanding);
       createTvSlider(sliderConcertChannelLanding);
+      createTvSlider(sliderCanalClarLandingPrev);
+      createTvSlider(sliderConcertChannelLandingPrev);
+      createTvSlider(sliderClaroCinemaLandingPrev);
     },
   });
 

@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+if($_SESSION["country"] != 1){
+    header('Location: index.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,11 +42,13 @@
                 </div>
 
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a target="_blank" class="sidebar-link" href="https://www.nuestravision.com.mx/"><span class="dropdown-p">Nuestra
+                    <a target="_blank" class="sidebar-link" href="https://www.nuestravision.com.mx/"><span
+                            class="dropdown-p">Nuestra
                             Visión</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a target="_blank" class="sidebar-link" href="https://www.marca.com/claro-mx/"><span class="dropdown-p">Claro
+                    <a target="_blank" class="sidebar-link" href="https://www.marca.com/claro-mx/"><span
+                            class="dropdown-p">Claro
                             Sports</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
@@ -74,7 +86,7 @@
             <div class="row ma-no">
                 <div class="col-sm-12 no-gap">
                     <div class="tamaño-aviso-terminos ">
-                    <p id="terms_text"> </p>
+                        <p id="terms_text"> </p>
                     </div>
                 </div>
             </div>

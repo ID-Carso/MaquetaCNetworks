@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+if($_SESSION["country"] != 1){
+    header('Location: index.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,11 +41,13 @@
                 </div>
 
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a target="_blank" class="sidebar-link" href="https://nuestravision.tv"><span class="dropdown-p">Nuestra
+                    <a target="_blank" class="sidebar-link" href="https://nuestravision.tv"><span
+                            class="dropdown-p">Nuestra
                             Visión</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a target="_blank" class="sidebar-link" href="https://www.marca.com/claro-mx/"><span class="dropdown-p">Claro
+                    <a target="_blank" class="sidebar-link" href="https://www.marca.com/claro-mx/"><span
+                            class="dropdown-p">Claro
                             Sports</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
@@ -110,7 +122,8 @@
     <div class="lista-content">
 
         <img src="images/registro/group-37.svg" class="image-list-points">
-        <div class="mi-lista-container col-sm-12 no-gutters col-md-12 no-gutters col-lg-12 mx-auto col-xl-9 shadow1 fondolog">
+        <div
+            class="mi-lista-container col-sm-12 no-gutters col-md-12 no-gutters col-lg-12 mx-auto col-xl-9 shadow1 fondolog">
 
             <div class=" row ma-no centro">
                 <div class="col-sm-12 no-gap">
@@ -122,7 +135,8 @@
             <div class="row ma-no centro">
                 <div class="col-11 mx-auto no-gap border-config d-flex justify-content-between">
                     <div class="centro ">
-                        <p class="texto-categorias">CATEGORÍAS <img class="categorias-flecha" src="images/mi-lista/flecha-categorias.svg" alt=""> </p>
+                        <p class="texto-categorias">CATEGORÍAS <img class="categorias-flecha"
+                                src="images/mi-lista/flecha-categorias.svg" alt=""> </p>
                     </div>
                     <div>
                         <p class="name-category">todos</p>

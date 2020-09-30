@@ -43,7 +43,8 @@
             </div>
             <div class="col">
               <a href="https://www.youtube.com/user/CanalClaroTV" target="_blank" id="youtube_canal_claro_url">
-                <img class=" -icon" src="./images/redes/youtube-icon-red.svg" alt="" id="youtube_canal_claro_icon" />
+                <img class="social-icon" src="./images/redes/youtube-icon-red.svg" alt=""
+                  id="youtube_canal_claro_icon" />
               </a>
             </div>
           </div>
@@ -63,7 +64,45 @@
   <script>
     var socketFooterCanalClaro = new easyXDM.Socket({
       onReady: function () {
-        socketFooterCanalClaro.postMessage(1092)
+        socketFooterCanalClaro.postMessage(1192)
+      },
+      onMessage: function (message, origin) {
+        let json = JSON.parse(message);
+
+        //Right image
+        $('#footer_image_right_mob').attr("src", json.data.image_right)
+        $('#footer_image_right_tablet').attr("src", json.data.image_right)
+        $('#footer_image_right_desk').attr("src", json.data.image_right)
+        $('#footer_image_left_desk').attr("src", json.data.image_left)
+        $('#footer_image_left_tablet').attr("src", json.data.image_left)
+        $('#footer_image_left_mob').attr("src", json.data.image_left)
+
+
+        $('#facebook_canal_claro_icon').attr("src", json.data.facebook_canal_claro_icon)
+        $('#instagram_canal_claro_icon').attr("src", json.data.instagram_canal_claro_icon)
+        $('#twitter_canal_claro_icon').attr("src", json.data.twitter_canal_claro_icon)
+        $('#youtube_canal_claro_icon').attr("src", json.data.youtube_canal_claro_icon)
+
+        $('#f-title1').text(json.data.menu_1_opcion_1_title);
+        $('#f-title2').text(json.data.menu_1_opcion_2_title);
+        $('#f-title3').text(json.data.menu_1_opcion_3_title);
+        $('#f-title4').text(json.data.menu_1_opcion_4_title);
+        $('#f-title5').text(json.data.menu_1_opcion_5_title);
+        $('#f-title6').text(json.data.menu_1_opcion_6_title);
+
+        $('#about_icon').attr("src", json.data.about_icon);
+        $('#about_legend').text(json.data.about_legend);
+
+        $('.about_link_1_title').text(json.data.about_link_1_title)
+        $('.about_link_2_title').text(json.data.about_link_2_title)
+
+        $('#menu_2_opcion_1_icon').attr("src", json.data.menu_2_opcion_1_icon)
+        $('#menu_2_opcion_2_icon').attr("src", json.data.menu_2_opcion_2_icon)
+        $('#menu_2_opcion_3_icon').attr("src", json.data.menu_2_opcion_3_icon)
+        $('#menu_2_opcion_4_icon').attr("src", json.data.menu_2_opcion_4_icon)
+        $('#menu_2_opcion_5_icon').attr("src", json.data.menu_2_opcion_5_icon)
+        $('#menu_2_opcion_6_icon').attr("src", json.data.menu_2_opcion_6_icon)
+        $('#menu_2_opcion_7_icon').attr("src", json.data.menu_2_opcion_7_icon)
       }
     });
     $(".pencil").click(function () {

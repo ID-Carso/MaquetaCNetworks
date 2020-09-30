@@ -12,7 +12,6 @@ function getMetaKeys(landing) {
     url: "./adapters/section.php",
     success: function (result) {
       let json = JSON.parse(result);
-      console.log(json);
       let sectionUI = new Section();
 
       switch (landing) {
@@ -35,21 +34,21 @@ function getMetaKeys(landing) {
           break;
         case 'programation_edi':
           sectionUI.renderProgramation_edi(json);
-        
+
           break;
         case 'footer_canal_claro':
           landing = "canal_claro"
           break;
-         case 'footer_concert_channel':
-            landing = "concert_channel"
-            break;
+        case 'footer_concert_channel':
+          landing = "concert_channel"
+          break;
         case 'about':
           landing = "canal_claro"
 
           sectionUI.renderAbout(json);
 
           break;
-       
+
         default:
           break;
       }

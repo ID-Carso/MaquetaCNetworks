@@ -1,16 +1,33 @@
+<?php
+
+session_start();
+
+if($_POST['country']){
+    $_SESSION["country"] = 1;
+}
+
+
+if($_SESSION["country"] != 1){
+    header('Location: index.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177830191-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177830191-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-177830191-2');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-177830191-2');
+    </script>
 
     <?php include './views/partials/head.php' ?>
 </head>
