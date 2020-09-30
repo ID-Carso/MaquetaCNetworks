@@ -49,6 +49,14 @@
   cursor: pointer;
 }
 
+.cursor-none {
+  cursor: none;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
 /*html,
 body {
   height: 100%;
@@ -4945,10 +4953,6 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .card-white {
   max-width: 450px !important;
-}
-
-.poster {
-  cursor: pointer;
 }
 
 .aboutus-card {
