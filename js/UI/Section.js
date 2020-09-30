@@ -200,36 +200,72 @@ export default class Section {
     let programLarge = "";
     for (let i = 0; i < blockImage3Length; i++) {
       if (arrayFavoritesId.includes(block3Image[i].chapter_id)) {
-        programLarge += `
-        <div class="poster">
-        <div class="poster-body">
-            <div class="showtime-container justify-content-end">
-         
-                <button type="button" class="poster-button remove-program" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
-            </div>
-              <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
-                <div class="thumbnail-large">
-                    <img src="${block3Image[i].image_vertical}" alt="">
+        if (block3Image[i].landing_synopsis === 0) {
+          programLarge += `
+          <div class="poster cursor-auto">
+            <div class="poster-body">
+                <div class="showtime-container justify-content-end">
+                    <button type="button" class="poster-button remove-program" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
                 </div>
-              </div>
-        </div>
-    </div> 
-        `;
+                  <div>
+                    <div class="thumbnail-large">
+                        <img src="${block3Image[i].image_vertical}" alt="">
+                    </div>
+                  </div>
+            </div>
+          </div> 
+            `;
+        } else {
+          programLarge += `
+          <div class="poster cursor-pointer">
+            <div class="poster-body">
+                <div class="showtime-container justify-content-end">
+            
+                    <button type="button" class="poster-button remove-program" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                </div>
+                  <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
+                    <div class="thumbnail-large">
+                        <img src="${block3Image[i].image_vertical}" alt="">
+                    </div>
+                  </div>
+            </div>
+          </div> 
+            `;
+        }
+
       } else {
-        programLarge += `
-        <div class="poster">
-        <div class="poster-body">
-            <div class="showtime-container justify-content-end">
-                <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-            </div>
-            <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
-                <div class="thumbnail-large">
-                    <img src="${block3Image[i].image_vertical}" alt="">
-                </div>
-            </div>
-        </div>
-    </div> 
-        `;
+        if (block3Image[i].landing_synopsis === 0) {
+          programLarge += `
+          <div class="poster cursor-auto">
+              <div class="poster-body">
+                  <div class="showtime-container justify-content-end">
+                      <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                  </div>
+                  <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
+                      <div class="thumbnail-large">
+                          <img src="${block3Image[i].image_vertical}" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div> 
+              `;
+        } else {
+          programLarge += `
+          <div class="poster">
+              <div class="poster-body">
+                  <div class="showtime-container justify-content-end">
+                      <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                  </div>
+                  <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
+                      <div class="thumbnail-large">
+                          <img src="${block3Image[i].image_vertical}" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div> 
+              `;
+        }
+
       }
     }
     $(".claro-slider-home").append(programLarge);
@@ -314,35 +350,72 @@ export default class Section {
 
     for (let i = 0; i < blockImage4Length; i++) {
       if (arrayFavoritesId.includes(block4Image[i].chapter_id)) {
-        concertHomeVideosMobile += `
-            <div class="poster">
-                <div class="poster-body">
-                    <div class="showtime-container justify-content-end">
-                        <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+        if (block4Image[i].landing_synopsis == 0) {
+          concertHomeVideosMobile += `
+          <div class="poster cursor-auto">
+              <div class="poster-body">
+                  <div class="showtime-container justify-content-end">
+                      <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                  </div>
+                  <div>
+                      <div class="thumbnail-large">
+                          <img src="${block4Image[i].image_vertical}" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          `;
+        } else {
+          concertHomeVideosMobile += `
+          <div class="poster cursor-pointer">
+              <div class="poster-body">
+                  <div class="showtime-container justify-content-end">
+                      <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                  </div>
+                  <div class="thumbnail-body" _id="${block4Image[i].chapter_id}">
+                      <div class="thumbnail-large">
+                          <img src="${block4Image[i].image_vertical}" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          `;
+        }
+
+      } else {
+        if (block4Image[i].landing_synopsis == 0) {
+          concertHomeVideosMobile += `
+          <div class="poster cursor-auto">
+              <div class="poster-body">
+                   <div class="showtime-container justify-content-end">
+                      <button type="button" class="poster-button add-favorites" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                    </div>
+                    <div>
+                      <div class="thumbnail-large">
+                          <img src="${block4Image[i].image_vertical}" alt="">
+                      </div>
+                    </div>
+              </div>
+          </div>
+          `;
+        } else {
+          concertHomeVideosMobile += `
+          <div class="poster cursor-pointer">
+              <div class="poster-body">
+                   <div class="showtime-container justify-content-end">
+                      <button type="button" class="poster-button add-favorites" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                     </div>
                     <div class="thumbnail-body" _id="${block4Image[i].chapter_id}">
-                        <div class="thumbnail-large">
-                            <img src="${block4Image[i].image_vertical}" alt="">
-                        </div>
+                      <div class="thumbnail-large">
+                          <img src="${block4Image[i].image_vertical}" alt="">
+                      </div>
                     </div>
-                </div>
-            </div>
-            `;
-      } else {
-        concertHomeVideosMobile += `
-            <div class="poster">
-                <div class="poster-body">
-                     <div class="showtime-container justify-content-end">
-                        <button type="button" class="poster-button add-favorites" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                      </div>
-                      <div class="thumbnail-body" _id="${block4Image[i].chapter_id}">
-                        <div class="thumbnail-large">
-                            <img src="${block4Image[i].image_vertical}" alt="">
-                        </div>
-                      </div>
-                </div>
-            </div>
-            `;
+              </div>
+          </div>
+          `;
+        }
+
+
       }
     }
 
@@ -429,38 +502,77 @@ export default class Section {
 
     for (let i = 0; i < blockImage5Length; i++) {
       if (arrayFavoritesId.includes(block5Image[i].chapter_id)) {
-        cinemaHomeVideosMobile += `
-              <div class="poster">
-                  <div class="poster-body">
-                      <div class="showtime-container justify-content-end">
-                        
-                          <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
-                      </div>
-                      <div class="thumbnail-body" _id="${block5Image[i].chapter_id}">
-                          <div class="thumbnail-large">
-                              <img src="${block5Image[i].image_vertical}" alt="">
-                          </div>
-                      </div>
+        if (block5Image[i].landing_synopsis === 0) {
+          cinemaHomeVideosMobile += `
+          <div class="poster cursor-auto">
+              <div class="poster-body">
+                  <div class="showtime-container justify-content-end">
                     
+                      <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
                   </div>
+                  <div>
+                      <div class="thumbnail-large">
+                          <img src="${block5Image[i].image_vertical}" alt="">
+                      </div>
+                  </div>
+                
               </div>
-              `;
+          </div>
+          `;
+        } else {
+          cinemaHomeVideosMobile += `
+          <div class="poster cursor-pointer">
+              <div class="poster-body">
+                  <div class="showtime-container justify-content-end">
+                    
+                      <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                  </div>
+                  <div class="thumbnail-body" _id="${block5Image[i].chapter_id}">
+                      <div class="thumbnail-large">
+                          <img src="${block5Image[i].image_vertical}" alt="">
+                      </div>
+                  </div>
+                
+              </div>
+          </div>
+          `;
+        }
+
       } else {
-        cinemaHomeVideosMobile += `
-              <div class="poster">
-                  <div class="poster-body">
-                      <div class="showtime-container justify-content-end">
-                 
-                          <button type="button" class="poster-button add-favorites" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                      </div>
-                      <div class="thumbnail-body" _id="${block5Image[i].chapter_id}">
-                          <div class="thumbnail-large">
-                              <img src="${block5Image[i].image_vertical}" alt="">
-                          </div>
+        if (block5Image[i].landing_synopsis === 0) {
+          cinemaHomeVideosMobile += `
+          <div class="poster cursor-auto">
+              <div class="poster-body">
+                  <div class="showtime-container justify-content-end">
+             
+                      <button type="button" class="poster-button add-favorites" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                  </div>
+                  <div>
+                      <div class="thumbnail-large">
+                          <img src="${block5Image[i].image_vertical}" alt="">
                       </div>
                   </div>
               </div>
-              `;
+          </div>
+          `;
+        } else {
+          cinemaHomeVideosMobile += `
+          <div class="poster cursor-pointer">
+              <div class="poster-body">
+                  <div class="showtime-container justify-content-end">
+             
+                      <button type="button" class="poster-button add-favorites" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                  </div>
+                  <div>
+                      <div class="thumbnail-large">
+                          <img src="${block5Image[i].image_vertical}" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          `;
+        }
+
       }
     }
 
