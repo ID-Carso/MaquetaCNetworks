@@ -5,69 +5,69 @@ export default class Section {
     programacion_slider = $(".programacion-slider").slick({
       /**/
       responsive: [{
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 7,
-          slidesToScroll: 7,
-          autoplay: false,
-          centerMode: false,
-          infinite: true,
-          arrows: false,
-          dots: true,
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 7,
+            slidesToScroll: 7,
+            autoplay: false,
+            centerMode: false,
+            infinite: true,
+            arrows: false,
+            dots: true,
+          },
         },
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 8,
-          slidesToScroll: 8,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 8,
+            slidesToScroll: 8,
+            infinite: true,
+            dots: true,
+            centerMode: false,
+            arrows: true,
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
         },
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 11,
-          slidesToScroll: 11,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 11,
+            slidesToScroll: 11,
+            infinite: true,
+            dots: true,
+            centerMode: false,
+            arrows: true,
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
         },
-      },
-      {
-        breakpoint: 1900,
-        settings: {
-          slidesToShow: 11,
-          slidesToScroll: 11,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+        {
+          breakpoint: 1900,
+          settings: {
+            slidesToShow: 11,
+            slidesToScroll: 11,
+            infinite: true,
+            dots: true,
+            centerMode: false,
+            arrows: true,
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
         },
-      },
-      {
-        breakpoint: 10000,
-        settings: {
-          slidesToShow: 17,
-          slidesToScroll: 17,
-          infinite: false,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+        {
+          breakpoint: 10000,
+          settings: {
+            slidesToShow: 17,
+            slidesToScroll: 17,
+            infinite: false,
+            dots: true,
+            centerMode: false,
+            arrows: true,
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
         },
-      },
       ],
     });
   }
@@ -200,36 +200,72 @@ export default class Section {
     let programLarge = "";
     for (let i = 0; i < blockImage3Length; i++) {
       if (arrayFavoritesId.includes(block3Image[i].chapter_id)) {
-        programLarge += `
-        <div class="poster">
-        <div class="poster-body">
-            <div class="showtime-container justify-content-end">
-         
-                <button type="button" class="poster-button remove-program" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
-            </div>
-              <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
-                <div class="thumbnail-large">
-                    <img src="${block3Image[i].image_vertical}" alt="">
+        if (block3Image[i].landing_synopsis === 0) {
+          programLarge += `
+          <div class="poster cursor-auto">
+            <div class="poster-body">
+                <div class="showtime-container justify-content-end">
+                    <button type="button" class="poster-button remove-program" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
                 </div>
-              </div>
-        </div>
-    </div> 
-        `;
+                  <div>
+                    <div class="thumbnail-large">
+                        <img src="${block3Image[i].image_vertical}" alt="">
+                    </div>
+                  </div>
+            </div>
+          </div> 
+            `;
+        } else {
+          programLarge += `
+          <div class="poster cursor-pointer">
+            <div class="poster-body">
+                <div class="showtime-container justify-content-end">
+            
+                    <button type="button" class="poster-button remove-program" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                </div>
+                  <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
+                    <div class="thumbnail-large">
+                        <img src="${block3Image[i].image_vertical}" alt="">
+                    </div>
+                  </div>
+            </div>
+          </div> 
+            `;
+        }
+
       } else {
-        programLarge += `
-        <div class="poster">
-        <div class="poster-body">
-            <div class="showtime-container justify-content-end">
-                <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-            </div>
-            <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
-                <div class="thumbnail-large">
-                    <img src="${block3Image[i].image_vertical}" alt="">
-                </div>
-            </div>
-        </div>
-    </div> 
-        `;
+        if (block3Image[i].landing_synopsis === 0) {
+          programLarge += `
+          <div class="poster cursor-auto">
+              <div class="poster-body">
+                  <div class="showtime-container justify-content-end">
+                      <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                  </div>
+                  <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
+                      <div class="thumbnail-large">
+                          <img src="${block3Image[i].image_vertical}" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div> 
+              `;
+        } else {
+          programLarge += `
+          <div class="poster">
+              <div class="poster-body">
+                  <div class="showtime-container justify-content-end">
+                      <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                  </div>
+                  <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
+                      <div class="thumbnail-large">
+                          <img src="${block3Image[i].image_vertical}" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div> 
+              `;
+        }
+
       }
     }
     $(".claro-slider-home").append(programLarge);
@@ -314,35 +350,72 @@ export default class Section {
 
     for (let i = 0; i < blockImage4Length; i++) {
       if (arrayFavoritesId.includes(block4Image[i].chapter_id)) {
-        concertHomeVideosMobile += `
-            <div class="poster">
-                <div class="poster-body">
-                    <div class="showtime-container justify-content-end">
-                        <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+        if (block4Image[i].landing_synopsis == 0) {
+          concertHomeVideosMobile += `
+          <div class="poster cursor-auto">
+              <div class="poster-body">
+                  <div class="showtime-container justify-content-end">
+                      <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                  </div>
+                  <div>
+                      <div class="thumbnail-large">
+                          <img src="${block4Image[i].image_vertical}" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          `;
+        } else {
+          concertHomeVideosMobile += `
+          <div class="poster cursor-pointer">
+              <div class="poster-body">
+                  <div class="showtime-container justify-content-end">
+                      <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                  </div>
+                  <div class="thumbnail-body" _id="${block4Image[i].chapter_id}">
+                      <div class="thumbnail-large">
+                          <img src="${block4Image[i].image_vertical}" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          `;
+        }
+
+      } else {
+        if (block4Image[i].landing_synopsis == 0) {
+          concertHomeVideosMobile += `
+          <div class="poster cursor-auto">
+              <div class="poster-body">
+                   <div class="showtime-container justify-content-end">
+                      <button type="button" class="poster-button add-favorites" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                    </div>
+                    <div>
+                      <div class="thumbnail-large">
+                          <img src="${block4Image[i].image_vertical}" alt="">
+                      </div>
+                    </div>
+              </div>
+          </div>
+          `;
+        } else {
+          concertHomeVideosMobile += `
+          <div class="poster cursor-pointer">
+              <div class="poster-body">
+                   <div class="showtime-container justify-content-end">
+                      <button type="button" class="poster-button add-favorites" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
                     </div>
                     <div class="thumbnail-body" _id="${block4Image[i].chapter_id}">
-                        <div class="thumbnail-large">
-                            <img src="${block4Image[i].image_vertical}" alt="">
-                        </div>
+                      <div class="thumbnail-large">
+                          <img src="${block4Image[i].image_vertical}" alt="">
+                      </div>
                     </div>
-                </div>
-            </div>
-            `;
-      } else {
-        concertHomeVideosMobile += `
-            <div class="poster">
-                <div class="poster-body">
-                     <div class="showtime-container justify-content-end">
-                        <button type="button" class="poster-button add-favorites" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                      </div>
-                      <div class="thumbnail-body" _id="${block4Image[i].chapter_id}">
-                        <div class="thumbnail-large">
-                            <img src="${block4Image[i].image_vertical}" alt="">
-                        </div>
-                      </div>
-                </div>
-            </div>
-            `;
+              </div>
+          </div>
+          `;
+        }
+
+
       }
     }
 
@@ -429,38 +502,77 @@ export default class Section {
 
     for (let i = 0; i < blockImage5Length; i++) {
       if (arrayFavoritesId.includes(block5Image[i].chapter_id)) {
-        cinemaHomeVideosMobile += `
-              <div class="poster">
-                  <div class="poster-body">
-                      <div class="showtime-container justify-content-end">
-                        
-                          <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
-                      </div>
-                      <div class="thumbnail-body" _id="${block5Image[i].chapter_id}">
-                          <div class="thumbnail-large">
-                              <img src="${block5Image[i].image_vertical}" alt="">
-                          </div>
-                      </div>
+        if (block5Image[i].landing_synopsis === 0) {
+          cinemaHomeVideosMobile += `
+          <div class="poster cursor-auto">
+              <div class="poster-body">
+                  <div class="showtime-container justify-content-end">
                     
+                      <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
                   </div>
+                  <div>
+                      <div class="thumbnail-large">
+                          <img src="${block5Image[i].image_vertical}" alt="">
+                      </div>
+                  </div>
+                
               </div>
-              `;
+          </div>
+          `;
+        } else {
+          cinemaHomeVideosMobile += `
+          <div class="poster cursor-pointer">
+              <div class="poster-body">
+                  <div class="showtime-container justify-content-end">
+                    
+                      <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                  </div>
+                  <div class="thumbnail-body" _id="${block5Image[i].chapter_id}">
+                      <div class="thumbnail-large">
+                          <img src="${block5Image[i].image_vertical}" alt="">
+                      </div>
+                  </div>
+                
+              </div>
+          </div>
+          `;
+        }
+
       } else {
-        cinemaHomeVideosMobile += `
-              <div class="poster">
-                  <div class="poster-body">
-                      <div class="showtime-container justify-content-end">
-                 
-                          <button type="button" class="poster-button add-favorites" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
-                      </div>
-                      <div class="thumbnail-body" _id="${block5Image[i].chapter_id}">
-                          <div class="thumbnail-large">
-                              <img src="${block5Image[i].image_vertical}" alt="">
-                          </div>
+        if (block5Image[i].landing_synopsis === 0) {
+          cinemaHomeVideosMobile += `
+          <div class="poster cursor-auto">
+              <div class="poster-body">
+                  <div class="showtime-container justify-content-end">
+             
+                      <button type="button" class="poster-button add-favorites" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                  </div>
+                  <div>
+                      <div class="thumbnail-large">
+                          <img src="${block5Image[i].image_vertical}" alt="">
                       </div>
                   </div>
               </div>
-              `;
+          </div>
+          `;
+        } else {
+          cinemaHomeVideosMobile += `
+          <div class="poster cursor-pointer">
+              <div class="poster-body">
+                  <div class="showtime-container justify-content-end">
+             
+                      <button type="button" class="poster-button add-favorites" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                  </div>
+                  <div>
+                      <div class="thumbnail-large">
+                          <img src="${block5Image[i].image_vertical}" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          `;
+        }
+
       }
     }
 
@@ -529,70 +641,70 @@ export default class Section {
       nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
 
       responsive: [{
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: false,
-          autoplaySpeed: 2000,
-          centerMode: false,
-          infinite: true,
-          arrows: false,
-          dots: true,
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            centerMode: false,
+            infinite: true,
+            arrows: false,
+            dots: true,
+          },
         },
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerMode: true,
-          arrows: false,
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+            centerMode: true,
+            arrows: false,
+          },
         },
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+            centerMode: false,
+            arrows: true,
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
         },
-      },
 
-      {
-        breakpoint: 1900,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+        {
+          breakpoint: 1900,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+            centerMode: false,
+            arrows: true,
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
         },
-      },
 
-      {
-        breakpoint: 10000,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+        {
+          breakpoint: 10000,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+            centerMode: false,
+            arrows: true,
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+          },
         },
-      },
       ],
     });
 
@@ -794,25 +906,25 @@ export default class Section {
     sectionSlider.slick("unslick");
 
     let programsExlusiveContent = [{
-      chapter_id: 1,
-      program_title: "DRESS CODE",
-      image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/05-DRESS-CODE.jpg",
-    },
-    {
-      chapter_id: 2,
-      program_title: "FIT FOR LIFE",
-      image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/06-FIT4LIFE.jpg",
-    },
-    {
-      chapter_id: 3,
-      program_title: "CONEXIÓN CLARO",
-      image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/07-CONEXION.jpg",
-    },
-    {
-      chapter_id: 4,
-      program_title: "LA CAJA DE PANDORA",
-      image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/08-CAJA-DE-PANDORA.jpg",
-    },
+        chapter_id: 1,
+        program_title: "DRESS CODE",
+        image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/05-DRESS-CODE.jpg",
+      },
+      {
+        chapter_id: 2,
+        program_title: "FIT FOR LIFE",
+        image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/06-FIT4LIFE.jpg",
+      },
+      {
+        chapter_id: 3,
+        program_title: "CONEXIÓN CLARO",
+        image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/07-CONEXION.jpg",
+      },
+      {
+        chapter_id: 4,
+        program_title: "LA CAJA DE PANDORA",
+        image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/08-CAJA-DE-PANDORA.jpg",
+      },
     ];
 
     let programTiensQueVerlo = "";
@@ -1517,13 +1629,6 @@ export default class Section {
           console.log('footer encontrado');
           console.log(json);
           renderFooter(json);
-
-          switch (landing) {
-
-            case 'home':
-            case 'programation':
-          renderFooter(json);
-
           switch (landing) {
             case "home":
             case "programation":
@@ -1556,12 +1661,7 @@ export default class Section {
         }
 
       }
-          }
-          return json;
-        } else {
-          console.log("No se puede obtener el footer");
-        }
-      },
+
     });
   }
   renderAbout(json) {
@@ -1572,7 +1672,7 @@ export default class Section {
     // SCROLL DE TERMINOS Y CONDICIONES
     $('#terms_text').height($('#terms_text').prop('scrollHeight'));
 
-    $( window ).resize(function() {
+    $(window).resize(function () {
       $('#terms_text').height('auto');
       $('#terms_text').height($('#terms_text').prop('scrollHeight'));
     });
@@ -1583,111 +1683,7 @@ export default class Section {
     console.log("temrinos pintados");
   }
 }
-function renderFooter(json) {
-  let data = json.data;
-  //Imagenes del footer
-  $('#footer_image_left_mob').attr('src', data.image_left)
-  $('#footer_image_left_desk').attr('src', data.image_left)
-  $('#footer_image_left_tablet').attr('src', data.image_left)
 
-  $('#footer_image_right_mob').attr('src', data.image_right)
-  $('#footer_image_right_desk').attr('src', data.image_right)
-  $('#footer_image_right_tablet').attr('src', data.image_right)
-
-  //menu 1
-  $('#f-link1').attr('href', data.menu_1_opcion_1_url)
-  $('#f-title1').text(data.menu_1_opcion_1_title)
-
-  $('#f-link2').attr('href', data.menu_1_opcion_2_url)
-  $('#f-title2').text(data.menu_1_opcion_2_title)
-
-  $('#f-link3').attr('href', data.menu_1_opcion_3_url)
-  $('#f-title3').text(data.menu_1_opcion_3_title)
-
-  $('#f-link4').attr('href', data.menu_1_opcion_4_url)
-  $('#f-title4').text(data.menu_1_opcion_4_title)
-
-  $('#f-link5').attr('href', data.menu_1_opcion_5_url)
-  $('#f-title5').text(data.menu_1_opcion_5_title)
-
-  $('#f-link6').attr('href', data.menu_1_opcion_6_url)
-  $('#f-title6').text(data.menu_1_opcion_6_title)
-
-  //seccion de aviso de privacidad desk
-  $('#about_icon').attr('src', data.about_icon)
-  $('#about_legend').text(data.about_legend)
-
-  $('#about_link_1_url').attr('href', data.about_link_1_url)
-  $('#about_link_1_title').text(data.about_link_1_title)
-
-  $('#about_link_2_url').attr('href', data.about_link_2_url)
-  $('#about_link_2_title').text(data.about_link_2_title)
-
-  //seccion de aviso de privacidad  mob
-  $('#about_icon_mob').attr('src', data.about_icon)
-  $('#about_legend_mob').text(data.about_legend)
-
-  $('#about_link_1_url_mob').attr('href', data.about_link_1_url)
-  $('#about_link_1_title_mob').text(data.about_link_1_title)
-
-  $('#about_link_2_url_mob').attr('href', data.about_link_2_url)
-  $('#about_link_2_title_mob').text(data.about_link_2_title)
-  //menu 2 desk
-
-  $("#menu_2_opcion_1_url").attr('href', data.menu_2_opcion_1_url)
-  $("#menu_2_opcion_1_icon").attr('src', data.menu_2_opcion_1_icon)
-
-  $("#menu_2_opcion_2_url").attr('href', data.menu_2_opcion_2_url)
-  $("#menu_2_opcion_2_icon").attr('src', data.menu_2_opcion_2_icon)
-
-  $("#menu_2_opcion_3_url").attr('href', data.menu_2_opcion_3_url)
-  $("#menu_2_opcion_3_icon").attr('src', data.menu_2_opcion_3_icon)
-
-  $("#menu_2_opcion_4_url").attr('href', data.menu_2_opcion_4_url)
-  $("#menu_2_opcion_4_icon").attr('src', data.menu_2_opcion_4_icon)
-
-  $("#menu_2_opcion_5_url").attr('href', data.menu_2_opcion_5_url)
-  $("#menu_2_opcion_5_icon").attr('src', data.menu_2_opcion_5_icon)
-
-  $("#menu_2_opcion_6_url").attr('href', data.menu_2_opcion_6_url)
-  $("#menu_2_opcion_6_icon").attr('src', data.menu_2_opcion_6_icon)
-
-  $("#menu_2_opcion_7_url").attr('href', data.menu_2_opcion_7_url)
-  $("#menu_2_opcion_7_icon").attr('src', data.menu_2_opcion_7_icon)
-
-  //menu 2 mob
-
-  $("#menu_2_opcion_1_url_mob").attr('href', data.menu_2_opcion_1_url)
-  $("#menu_2_opcion_1_icon_mob").attr('src', data.menu_2_opcion_1_icon)
-
-  $("#menu_2_opcion_2_url_mob").attr('href', data.menu_2_opcion_2_url)
-  $("#menu_2_opcion_2_icon_mob").attr('src', data.menu_2_opcion_2_icon)
-
-  $("#menu_2_opcion_3_url_mob").attr('href', data.menu_2_opcion_3_url)
-  $("#menu_2_opcion_3_icon_mob").attr('src', data.menu_2_opcion_3_icon)
-
-  $("#menu_2_opcion_4_url_mob").attr('href', data.menu_2_opcion_4_url)
-  $("#menu_2_opcion_4_icon_mob").attr('src', data.menu_2_opcion_4_icon)
-
-  $("#menu_2_opcion_5_url_mob").attr('href', data.menu_2_opcion_5_url)
-  $("#menu_2_opcion_5_icon_mob").attr('src', data.menu_2_opcion_5_icon)
-
-  $("#menu_2_opcion_6_url_mob").attr('href', data.menu_2_opcion_6_url)
-  $("#menu_2_opcion_6_icon_mob").attr('src', data.menu_2_opcion_6_icon)
-
-  $("#menu_2_opcion_7_url_mob").attr('href', data.menu_2_opcion_7_url)
-  $("#menu_2_opcion_7_icon_mob").attr('src', data.menu_2_opcion_7_icon)
-  $("#menu_2_opcion_8_url_mob").attr('href', data.menu_2_opcion_1_url)
-  $("#menu_2_opcion_8_icon_mob").attr('src', data.menu_2_opcion_1_icon)
-
-
-    $("#terms_title").text(data.terms_title);
-    $("#terms_text").text(data.terms_text);
-
-    $("#about_title").text(data.about_title);
-    $("#about_text").text(data.about_text);
-  }
-}
 
 function renderFooter(json) {
   let data = json.data;
