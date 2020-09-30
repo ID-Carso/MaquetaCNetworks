@@ -4,8 +4,7 @@ export default class Section {
   createProgramacionSlider() {
     programacion_slider = $(".programacion-slider").slick({
       /**/
-      responsive: [
-        {
+      responsive: [{
           breakpoint: 767,
           settings: {
             slidesToShow: 7,
@@ -26,10 +25,8 @@ export default class Section {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
         {
@@ -41,10 +38,8 @@ export default class Section {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
         {
@@ -56,10 +51,8 @@ export default class Section {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
         {
@@ -71,10 +64,8 @@ export default class Section {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
       ],
@@ -537,8 +528,7 @@ export default class Section {
       prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
       nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
 
-      responsive: [
-        {
+      responsive: [{
           breakpoint: 768,
           settings: {
             slidesToShow: 1,
@@ -571,10 +561,8 @@ export default class Section {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
 
@@ -587,10 +575,8 @@ export default class Section {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
 
@@ -603,10 +589,8 @@ export default class Section {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
       ],
@@ -708,10 +692,8 @@ export default class Section {
         appendDots: $(".programming-slider-dots"),
         centerMode: false,
         arrows: false,
-        prevArrow:
-          '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-        nextArrow:
-          '<img src="../images/sliders/next.png" class="arrow-next" />',
+        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         customPaging: function (slider, i) {
           var thumb = $(slider.$slides[i]).data();
           return (
@@ -812,33 +794,6 @@ export default class Section {
     let exlusiveContentSlider = $("#exlusiveContentClaroSlider");
     sectionSlider.slick("unslick");
 
-    let programsExlusiveContent = [
-      {
-        chapter_id: 1,
-        program_title: "DRESS CODE",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/05-DRESS-CODE.jpg",
-      },
-      {
-        chapter_id: 2,
-        program_title: "FIT FOR LIFE",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/06-FIT4LIFE.jpg",
-      },
-      {
-        chapter_id: 3,
-        program_title: "CONEXIÓN CLARO",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/07-CONEXION.jpg",
-      },
-      {
-        chapter_id: 4,
-        program_title: "LA CAJA DE PANDORA",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/08-CAJA-DE-PANDORA.jpg",
-      },
-    ];
-
     let programTiensQueVerlo = "";
     let programExlusiveContent = "";
 
@@ -849,22 +804,42 @@ export default class Section {
     let programTienesQueVerloEdit = "";
     let programExlusiveContentEdit = "";
     carrusel1.forEach((program) => {
-      programTiensQueVerlo += `
-      <div class="poster" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-claro-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.genre}</p>
-                    </div>
-                </div>
+      if (program.landing_synopsis === 0) {
+        programTiensQueVerlo += `
+        <div class="poster cursors-auto" >
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-claro-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.genre}</p>
+                      </div>
+                  </div>
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      } else {
+        programTiensQueVerlo += `
+        <div class="poster cursor-pointer">
+          <div class="poster-body">
+              <div class="thumbnail-body" _id="${program.chapter_id}">
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-claro-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.genre}</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
       programTienesQueVerloEdit += `
       <div class="poster p-3 border-l border-r border-b border-t position-relative">
       <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
@@ -885,22 +860,42 @@ export default class Section {
     });
 
     carrusel2.forEach((program) => {
-      programExlusiveContent += `
-      <div class="poster" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-claro-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.title}</p>
-                    </div>
-                </div>
+      if (program.landing_synopsis === 0) {
+        programExlusiveContent += `
+        <div class="poster cursor-auto">
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-claro-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.title}</p>
+                      </div>
+                  </div>
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      } else {
+        programExlusiveContent += `
+        <div class="poster cursor-pointer">
+          <div class="poster-body">
+              <div class="thumbnail-body" _id="${program.chapter_id}">
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-claro-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.title}</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
       programExlusiveContentEdit += `
       <div class="poster border-l p-3 border-r border-t border-b" >
         <div class="poster-body">
@@ -957,10 +952,8 @@ export default class Section {
         appendDots: $(".programming-slider-dots"),
         centerMode: false,
         arrows: false,
-        prevArrow:
-          '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-        nextArrow:
-          '<img src="../images/sliders/next.png" class="arrow-next" />',
+        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         customPaging: function (slider, i) {
           var thumb = $(slider.$slides[i]).data();
           return (
@@ -997,16 +990,16 @@ export default class Section {
     $("#carrusel_1_title").text(data.block_4_carrusel_1_title_1);
     $("#carrusel_1_title").append(
       ' <span class="recordar-title">' +
-        data.block_4_carrusel_1_title_2 +
-        "</span>"
+      data.block_4_carrusel_1_title_2 +
+      "</span>"
     );
     $("#carrusel_1_subtitle").text(data.block_4_carrusel_1_subtitle);
 
     $("#carrusel_2_title").text(data.block_4_carrusel_2_title_1);
     $("#carrusel_2_title").append(
       ' <span class="recordar-title">' +
-        data.block_4_carrusel_2_title_2 +
-        "</span>"
+      data.block_4_carrusel_2_title_2 +
+      "</span>"
     );
     $("#carrusel_2_subtitle").text(data.block_4_carrusel_2_subtitle);
 
@@ -1052,41 +1045,81 @@ export default class Section {
       Esto  para la parevisualización en Backoffice de los landings
     */
     carrusel1.forEach((program) => {
-      Strinfcarrusel1 += `
-      <div class="poster" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-cinema-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.genre}</p>
-                    </div>
-                </div>
+      if (program.landing_synopsis === 0) {
+        Strinfcarrusel1 += `
+        <div class="poster cursor-auto">
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.genre}</p>
+                      </div>
+                  </div>
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      } else {
+        Strinfcarrusel1 += `
+        <div class="poster cursor-pointer">
+          <div class="poster-body">
+              <div class="thumbnail-body" _id="${program.chapter_id}">
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.genre}</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
     });
 
     carrusel2.forEach((program) => {
-      Strinfcarrusel2 += `
-      <div class="poster" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-cinema-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.title}</p>
-                    </div>
-                </div>
+      if (program.landing_synopsis === 0) {
+        Strinfcarrusel2 += `
+        <div class="poster cursor-auto">
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.title}</p>
+                      </div>
+                  </div>
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      } else {
+        Strinfcarrusel2 += `
+        <div class="poster cursor-pointer" >
+          <div class="poster-body">
+              <div class="thumbnail-body" _id="${program.chapter_id}">
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.title}</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
     });
 
     claro_cinema_carrusel_1.append(Strinfcarrusel1);
@@ -1223,41 +1256,82 @@ export default class Section {
       Esto  para la parevisualización en Backoffice de los landings
     */
     carrusel1.forEach((program) => {
-      Strinfcarrusel1 += `
-      <div class="poster" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-concert-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.genre}</p>
-                    </div>
-                </div>
+      //Verificamos si el programa puede verse en el landig de sinopsis
+      if (program.landing_synopsis === 0) {
+        Strinfcarrusel1 += `
+        <div class="poster cursor-auto" >
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-concert-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.genre}</p>
+                      </div>
+                  </div>
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      } else {
+        Strinfcarrusel1 += `
+        <div class="poster cursor-pointer" >
+          <div class="poster-body">
+              <div class="thumbnail-body" _id="${program.chapter_id}">
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-concert-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.genre}</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
     });
 
     carrusel2.forEach((program) => {
-      Strinfcarrusel2 += `
-      <div class="poster" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-concert-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.title}</p>
-                    </div>
-                </div>
+      if (program.landing_synopsis === 0) {
+        Strinfcarrusel2 += `
+        <div class="poster cursor-auto" >
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-concert-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.title}</p>
+                      </div>
+                  </div>
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      } else {
+        Strinfcarrusel2 += `
+        <div class="poster cursor-pointer" >
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-concert-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.title}</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
     });
     concert_channel_carrusel_1.html(Strinfcarrusel1);
     concert_channel_carrusel_2.html(Strinfcarrusel2);
