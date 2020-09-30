@@ -530,6 +530,14 @@ if($_SESSION["country"] != 1){
         include './views/partials/modal-program.php'
         ?>
     </main>
+    <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
+    <script>
+        var socketHomeGrilla = new easyXDM.Socket({
+            onReady: function () {
+                socketHomeGrilla.postMessage(4300)
+            },
+        });
+    </script>
 </body>
 
 </html>
