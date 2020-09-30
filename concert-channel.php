@@ -187,6 +187,18 @@
     <?php
     include './views/partials/modal-program.php'
     ?>
+     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
+    <script>
+        var socket = new easyXDM.Socket({
+            onReady: function() {
+
+                var hey = 2180;
+                console.log(hey);
+
+                socket.postMessage(hey)
+            }
+        });
+    </script>
 
 </body>
 

@@ -222,9 +222,9 @@
 
         </section>
         <?php
-        include 'advertising-section.php'
+       // include 'advertising-section.php'
         ?>
-        <div class="">
+       <!-- <div class="">
             <div class="row no-gutters">
                 <div class="col-10 mx-auto">
                     <h1 class="footer-title">¡síguenos!</h1>
@@ -244,14 +244,14 @@
         </div>
         <div class="cconcert-list-links-footer">
             <?php
-            include './views/partials/list-links-footer.php';
+          //  include './views/partials/list-links-footer.php';
             ?>
         </div>
         <footer>
             <?php
-            include 'footer.php'
+          //  include 'footer.php'
             ?>
-        </footer>
+        </footer>-->
 
     </div>
     <?php
@@ -267,7 +267,7 @@
         var socket = new easyXDM.Socket({
             onReady: function() {
 
-                var hey = 4300;
+                var hey = 2180;
                 console.log(hey);
 
                 socket.postMessage(hey)
