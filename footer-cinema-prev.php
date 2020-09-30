@@ -7,7 +7,7 @@
 
 </head>
 
-<body class="claro-cinema-content">
+<body class="claro-cinema-content pt-5">
 
 
 
@@ -31,7 +31,7 @@
     <script>
         var socketFooterClaroCinema = new easyXDM.Socket({
             onReady: function () {
-                socketFooterClaroCinema.postMessage(1092)
+                socketFooterClaroCinema.postMessage(850)
             },
 
         });

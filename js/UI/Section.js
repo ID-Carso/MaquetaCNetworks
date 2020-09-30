@@ -770,8 +770,7 @@ export default class Section {
       if (data[`block_1_image_slider_${counterCanalClaro}`]) {
         slideBanner += `        
         <div class="header-slide">
-          <img src="${
-            data[`block_1_image_slider_${counterCanalClaro}`]
+          <img src="${data[`block_1_image_slider_${counterCanalClaro}`]
           }?v=${new Date().getTime()}" class="rellax" data-rellax="10">
         </div>`;
         counterCanalClaro++;
@@ -905,6 +904,28 @@ export default class Section {
     let sectionSlider = $(".section-slider");
     let exlusiveContentSlider = $("#exlusiveContentClaroSlider");
     sectionSlider.slick("unslick");
+
+    let programsExlusiveContent = [{
+        chapter_id: 1,
+        program_title: "DRESS CODE",
+        image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/05-DRESS-CODE.jpg",
+      },
+      {
+        chapter_id: 2,
+        program_title: "FIT FOR LIFE",
+        image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/06-FIT4LIFE.jpg",
+      },
+      {
+        chapter_id: 3,
+        program_title: "CONEXIÓN CLARO",
+        image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/07-CONEXION.jpg",
+      },
+      {
+        chapter_id: 4,
+        program_title: "LA CAJA DE PANDORA",
+        image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/08-CAJA-DE-PANDORA.jpg",
+      },
+    ];
 
     let programTiensQueVerlo = "";
     let programExlusiveContent = "";
@@ -1247,8 +1268,7 @@ export default class Section {
       if (data[`block_1_image_slider_${counterConcertChannel}`]) {
         slideBanner += `        
         <div class="header-slide">
-          <img src="${
-            data[`block_1_image_slider_${counterConcertChannel}`]
+          <img src="${data[`block_1_image_slider_${counterConcertChannel}`]
           }?v=${new Date().getTime()}" class="rellax" data-rellax="10">
         </div>`;
         counterConcertChannel++;
@@ -1554,9 +1574,8 @@ export default class Section {
         <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
             <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
                 <!--<span class="a-text-bold-warm text-plus mb90 shadow-contrast add-photo">472px X 295px</span>-->
-                <img src="${
-                  banner_images[i]
-                }?v=${new Date().getTime()}" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                <img src="${banner_images[i]
+        }?v=${new Date().getTime()}" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
             </label>
         </div>`;
     }
@@ -1591,6 +1610,8 @@ export default class Section {
     });
   }
   getFooter(landing) {
+    console.log('active un debugger pero pura de esta me da');
+    debugger
     console.log("active un debugger pero pura de esta me da");
     debugger;
     let data = {
@@ -1605,8 +1626,9 @@ export default class Section {
       success: function (result) {
         let json = JSON.parse(result);
         if (json.code == 200) {
+          console.log('footer encontrado');
+          console.log(json);
           renderFooter(json);
-
           switch (landing) {
             case "home":
             case "programation":
@@ -1629,23 +1651,39 @@ export default class Section {
 
             case "claro_cinema":
               break;
+
           }
           return json;
+
         } else {
-          console.log("No se puede obtener el footer");
+          console.log('No se puede obtener el footer');
+
         }
-      },
+
+      }
+
     });
   }
   renderAbout(json) {
     let data = json.data;
-    $("#terms_title").text(data.terms_title);
-    $("#terms_text").text(data.terms_text);
+    $('#terms_title').text(data.terms_title);
+    $('#terms_text').text(data.terms_text);
 
-    $("#about_title").text(data.about_title);
-    $("#about_text").text(data.about_text);
+    // SCROLL DE TERMINOS Y CONDICIONES
+    $('#terms_text').height($('#terms_text').prop('scrollHeight'));
+
+    $(window).resize(function () {
+      $('#terms_text').height('auto');
+      $('#terms_text').height($('#terms_text').prop('scrollHeight'));
+    });
+    // SCROLL DE TERMINOS Y CONDICIONES
+
+    $('#about_title').text(data.about_title);
+    $('#about_text').text(data.about_text);
+    console.log("temrinos pintados");
   }
 }
+
 
 function renderFooter(json) {
   let data = json.data;
@@ -1751,6 +1789,17 @@ function renderFooterCanalClaro(json) {
   $("#redes_canal_claro_title").text(data.redes_canal_claro_title);
 
   //redes
+  $('#facebook_canal_claro_url').attr('href', data.facebook_canal_claro_url);
+  $('#facebook_canal_claro_icon').attr('src', data.facebook_canal_claro_icon);
+
+  $('#instagram_canal_claro_url').attr('href', data.instagram_canal_claro_url);
+  $('#instagram_canal_claro_icon').attr('src', data.instagram_canal_claro_icon);
+
+  $('#twitter_canal_claro_url').attr('href', data.twitter_canal_claro_url);
+  $('#twitter_canal_claro_icon').attr('src', data.twitter_canal_claro_icon);
+
+  $('#youtube_canal_claro_url').attr('href', data.youtube_canal_claro_url);
+  $('#youtube_canal_claro_icon').attr('src', data.youtube_canal_claro_icon);
   $("#facebook_canal_claro_url").attr("href", data.facebook_canal_claro_url);
   $("#facebook_canal_claro_icon").attr("src", data.facebook_canal_claro_icon);
 
@@ -1770,6 +1819,12 @@ function renderFooterConcertChannel(json) {
   $("#redes_concert_channel_title").text(data.redes_concert_channel_title);
 
   //redes
+  $('#facebook_concert_channel_url').attr('href', data.facebook_concert_channel_url);
+  $('#facebook_concert_channel_icon').attr('src', data.facebook_concert_channel_icon);
+
+  $('#twitter_concert_channel_url').attr('href', data.twitter_concert_channel_url);
+  $('#twitter_concert_channel_icon').attr('src', data.twitter_concert_channel_icon);
+
   $("#facebook_concert_channel_url").attr(
     "href",
     data.facebook_concert_channel_url

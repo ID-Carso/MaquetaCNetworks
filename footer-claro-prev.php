@@ -11,7 +11,7 @@
 <body>
 
 
-    <main class="today">
+    <main class="today pt-5">
 
         <?php
     include 'advertising-section.php'
