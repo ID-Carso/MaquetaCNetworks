@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+if($_SESSION["country"] != 1){
+    header('Location: index.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -206,6 +216,19 @@
   <?php
   include './views/partials/modal-program.php'
   ?>
+   <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
+    <script>
+        var socket = new easyXDM.Socket({
+            onReady: function() {
+
+                var hey = 2950;
+                console.log(hey);
+
+                socket.postMessage(hey)
+            }
+        });
+    </script>
 </body>
 
 </html>
+

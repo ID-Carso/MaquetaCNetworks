@@ -115,14 +115,13 @@ export default class Section {
     let titleHeader = `<span class="header-span">${json.data.block_1_title} </span>${json.data.block_1_subtitle}`;
     $(".header-h1").html(titleHeader);
 
-
     /*VIDEO*/
     $(".home-video")[0].load();
     $(".home-video").attr("src", json.data.block_1_video_name);
     let titleTv = `${json.data.block_2_title1} <span class="header-span">${json.data.block_2_title2}</span><span class="header-point">•</span>`;
     $(".title-tv").html(titleTv);
 
-    console.log('si esta legando');
+    console.log("si esta legando");
     $(".claro-nav-image").attr("src", json.data.block_2_channel1_icon);
     $(".concert-nav-image").attr("src", json.data.block_2_channel2_icon);
     $(".cinema-nav-image").attr("src", json.data.block_2_channel3_icon);
@@ -745,14 +744,14 @@ export default class Section {
       " <span>" + data.block_2_title_2 + "</span>"
     );
     //cambiando url de programacion
-    $('#btn-claro-canal a').attr('href', data.block_2_button_url)
-    $('.btn-claro-canal').text(data.block_2_button_title)
+    $("#btn-claro-canal a").attr("href", data.block_2_button_url);
+    $(".btn-claro-canal").text(data.block_2_button_title);
     //BLOQUE 3 Seccion de video
-    $('.a-next-claro-title').text(data.block_3_title)
-    $('.a-next-claro-subtitle').text(data.block_3_subtitle)
+    $(".a-next-claro-title").text(data.block_3_title);
+    $(".a-next-claro-subtitle").text(data.block_3_subtitle);
     // VIDEO
-    $(".promo-video")[0].load()
-    $('.promo-video source').attr('src', data.block_3_video_url)
+    $(".promo-video")[0].load();
+    $(".promo-video source").attr("src", data.block_3_video_url);
     //BLOQUE 4 carruseles
     $("#carrusel_1_title").text(data.block_4_carrusel_1_title);
     $("#carrusel_1_subtitle").text(data.block_4_carrusel_1_subtitle);
@@ -826,22 +825,42 @@ export default class Section {
     let programTienesQueVerloEdit = "";
     let programExlusiveContentEdit = "";
     carrusel1.forEach((program) => {
-      programTiensQueVerlo += `
-      <div class="poster" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-claro-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.genre}</p>
-                    </div>
-                </div>
+      if (program.landing_synopsis === 0) {
+        programTiensQueVerlo += `
+        <div class="poster cursors-auto" >
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-claro-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.genre}</p>
+                      </div>
+                  </div>
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      } else {
+        programTiensQueVerlo += `
+        <div class="poster cursor-pointer">
+          <div class="poster-body">
+              <div class="thumbnail-body" _id="${program.chapter_id}">
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-claro-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.genre}</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
       programTienesQueVerloEdit += `
       <div class="poster p-3 border-l border-r border-b border-t position-relative">
       <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
@@ -862,22 +881,42 @@ export default class Section {
     });
 
     carrusel2.forEach((program) => {
-      programExlusiveContent += `
-      <div class="poster" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-claro-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.title}</p>
-                    </div>
-                </div>
+      if (program.landing_synopsis === 0) {
+        programExlusiveContent += `
+        <div class="poster cursor-auto">
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-claro-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.title}</p>
+                      </div>
+                  </div>
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      } else {
+        programExlusiveContent += `
+        <div class="poster cursor-pointer">
+          <div class="poster-body">
+              <div class="thumbnail-body" _id="${program.chapter_id}">
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-claro-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.title}</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
       programExlusiveContentEdit += `
       <div class="poster border-l p-3 border-r border-t border-b" >
         <div class="poster-body">
@@ -913,9 +952,11 @@ export default class Section {
       if (data[`block_1_image_slider_${counterCinema}`]) {
         slideBannerClaroCinema += `        
      <div class="header-slide">
-       <img src="${data[`block_1_image_slider_${counterCinema}`]}?v=${new Date().getTime()}" class="rellax" data-rellax="10">
+       <img src="${
+         data[`block_1_image_slider_${counterCinema}`]
+       }?v=${new Date().getTime()}" class="rellax" data-rellax="10">
      </div>`;
-        counterCinema++
+        counterCinema++;
       } else {
         break;
       }
@@ -948,30 +989,40 @@ export default class Section {
 
     //BLOQUE 2 Seccion de programacion
     //cambiamos el icono del landing
-    $('#icon_claro_cinema').attr('src', data.block_2_icon_channel)
+    $("#icon_claro_cinema").attr("src", data.block_2_icon_channel);
     //titulo del bloque 2
-    $('.a-today-cinema-title').text(data.block_2_title_1)
-    $('.a-today-cinema-title').append(' <span>' + data.block_2_title_2 + '</span>')
+    $(".a-today-cinema-title").text(data.block_2_title_1);
+    $(".a-today-cinema-title").append(
+      " <span>" + data.block_2_title_2 + "</span>"
+    );
     //cambiando url de programacion
-    $('#btn-claro-cinema a').attr('href', data.block_2_button_url)
-    $('.btn-claro-cinema').text(data.block_2_button_title)
+    $("#btn-claro-cinema a").attr("href", data.block_2_button_url);
+    $(".btn-claro-cinema").text(data.block_2_button_title);
 
     //BLOQUE 3 Seccion de video
-    $('#a-cinema-title').text(data.block_3_title_1)
-    $('#a-cinema-title').append(' <span>' + data.block_3_title_2 + '</span>')
-    $('#a-cinema-subtitle').text(data.block_3_subtitle)
+    $("#a-cinema-title").text(data.block_3_title_1);
+    $("#a-cinema-title").append(" <span>" + data.block_3_title_2 + "</span>");
+    $("#a-cinema-subtitle").text(data.block_3_subtitle);
 
-    $(".promo-video")[0].load()
-    $('.promo-video source').attr('src', data.block_3_video_url)
+    $(".promo-video")[0].load();
+    $(".promo-video source").attr("src", data.block_3_video_url);
 
     //BLOQUE 4 carruseles
-    $('#carrusel_1_title').text(data.block_4_carrusel_1_title_1)
-    $('#carrusel_1_title').append(' <span class="recordar-title">' + data.block_4_carrusel_1_title_2 + '</span>')
-    $('#carrusel_1_subtitle').text(data.block_4_carrusel_1_subtitle)
+    $("#carrusel_1_title").text(data.block_4_carrusel_1_title_1);
+    $("#carrusel_1_title").append(
+      ' <span class="recordar-title">' +
+      data.block_4_carrusel_1_title_2 +
+      "</span>"
+    );
+    $("#carrusel_1_subtitle").text(data.block_4_carrusel_1_subtitle);
 
-    $('#carrusel_2_title').text(data.block_4_carrusel_2_title_1)
-    $('#carrusel_2_title').append(' <span class="recordar-title">' + data.block_4_carrusel_2_title_2 + '</span>')
-    $('#carrusel_2_subtitle').text(data.block_4_carrusel_2_subtitle)
+    $("#carrusel_2_title").text(data.block_4_carrusel_2_title_1);
+    $("#carrusel_2_title").append(
+      ' <span class="recordar-title">' +
+      data.block_4_carrusel_2_title_2 +
+      "</span>"
+    );
+    $("#carrusel_2_subtitle").text(data.block_4_carrusel_2_subtitle);
 
     let carrusel1 = [];
     let counter = 1;
@@ -1015,41 +1066,81 @@ export default class Section {
       Esto  para la parevisualización en Backoffice de los landings
     */
     carrusel1.forEach((program) => {
-      Strinfcarrusel1 += `
-      <div class="poster" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-cinema-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.genre}</p>
-                    </div>
-                </div>
+      if (program.landing_synopsis === 0) {
+        Strinfcarrusel1 += `
+        <div class="poster cursor-auto">
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.genre}</p>
+                      </div>
+                  </div>
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      } else {
+        Strinfcarrusel1 += `
+        <div class="poster cursor-pointer">
+          <div class="poster-body">
+              <div class="thumbnail-body" _id="${program.chapter_id}">
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.genre}</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
     });
 
     carrusel2.forEach((program) => {
-      Strinfcarrusel2 += `
-      <div class="poster" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-cinema-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.title}</p>
-                    </div>
-                </div>
+      if (program.landing_synopsis === 0) {
+        Strinfcarrusel2 += `
+        <div class="poster cursor-auto">
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.title}</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div> 
+        `;
+      } else {
+        Strinfcarrusel2 += `
+        <div class="poster cursor-pointer" >
+          <div class="poster-body">
+              <div class="thumbnail-body" _id="${program.chapter_id}">
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.title}</p>
+                      </div>
+                  </div>
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      }
+
     });
 
     claro_cinema_carrusel_1.append(Strinfcarrusel1);
@@ -1057,7 +1148,6 @@ export default class Section {
     slider.createSectionSliderHome();
   }
   renderConcertChanel(json) {
-
     //obtenemos las iamgenes del carrusel 1
     let data = json.data;
     let slideBanner = "";
@@ -1077,47 +1167,43 @@ export default class Section {
 
     let bannerConcertChannel = $("#banner-concert-channel");
     bannerConcertChannel.append(slideBanner);
-    bannerConcertChannel
-      .not(".slick-initialized")
-      .slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: true,
-        centerMode: false,
-        arrows: false,
-        prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
-        nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
-        autoplay: true,
-        autoplaySpeed: 2000,
-      });
+    bannerConcertChannel.not(".slick-initialized").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      dots: true,
+      centerMode: false,
+      arrows: false,
+      prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
+      nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
     let bannerConcertChannelEdi = $("#banner-concert-channel-edi");
 
     //Edición de banner de concert channel
     bannerConcertChannelEdi.append(slideBanner);
-    bannerConcertChannelEdi
-      .not(".slick-initialized")
-      .slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: true,
-        appendDots: $(".programming-slider-dots"),
-        centerMode: false,
-        arrows: false,
-        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-        customPaging: function (slider, i) {
-          var thumb = $(slider.$slides[i]).data();
-          return (
-            "<p class='a-text-bold-tealblue slider-pagination-item pag ' slide_index=" +
-            i +
-            ">" +
-            (i + 1) +
-            "</p> "
-          );
-        },
-      });
+    bannerConcertChannelEdi.not(".slick-initialized").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      dots: true,
+      appendDots: $(".programming-slider-dots"),
+      centerMode: false,
+      arrows: false,
+      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+      customPaging: function (slider, i) {
+        var thumb = $(slider.$slides[i]).data();
+        return (
+          "<p class='a-text-bold-tealblue slider-pagination-item pag ' slide_index=" +
+          i +
+          ">" +
+          (i + 1) +
+          "</p> "
+        );
+      },
+    });
     let headerSlider = $(".header-slider");
 
     //BLOQUE 2 Seccion de programacion
@@ -1190,41 +1276,82 @@ export default class Section {
       Esto  para la parevisualización en Backoffice de los landings
     */
     carrusel1.forEach((program) => {
-      Strinfcarrusel1 += `
-      <div class="poster" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-concert-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.genre}</p>
-                    </div>
-                </div>
+      //Verificamos si el programa puede verse en el landig de sinopsis
+      if (program.landing_synopsis === 0) {
+        Strinfcarrusel1 += `
+        <div class="poster cursor-auto" >
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-concert-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.genre}</p>
+                      </div>
+                  </div>
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      } else {
+        Strinfcarrusel1 += `
+        <div class="poster cursor-pointer" >
+          <div class="poster-body">
+              <div class="thumbnail-body" _id="${program.chapter_id}">
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-concert-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.genre}</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
     });
 
     carrusel2.forEach((program) => {
-      Strinfcarrusel2 += `
-      <div class="poster" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-concert-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.title}</p>
-                    </div>
-                </div>
+      if (program.landing_synopsis === 0) {
+        Strinfcarrusel2 += `
+        <div class="poster cursor-auto" >
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-concert-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.title}</p>
+                      </div>
+                  </div>
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      } else {
+        Strinfcarrusel2 += `
+        <div class="poster cursor-pointer" >
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-concert-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.title}</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
     });
     concert_channel_carrusel_1.html(Strinfcarrusel1);
     concert_channel_carrusel_2.html(Strinfcarrusel2);
@@ -1373,9 +1500,11 @@ export default class Section {
   getFooter(landing) {
     console.log('active un debugger pero pura de esta me da');
     debugger
+    console.log("active un debugger pero pura de esta me da");
+    debugger;
     let data = {
       function: "getMetakeys",
-      landing: 'footer'
+      landing: "footer",
     };
     $.ajax({
       type: "POST",
@@ -1393,24 +1522,29 @@ export default class Section {
 
             case 'home':
             case 'programation':
+          renderFooter(json);
+
+          switch (landing) {
+            case "home":
+            case "programation":
             default:
               break;
 
-            case 'canal_claro':
+            case "canal_claro":
               renderFooterCanalClaro(json);
               break;
 
-            case 'concert_channel':
+            case "concert_channel":
               renderFooterConcertChannel(json);
 
               break;
 
-            case 'claro_network':
+            case "claro_network":
               renderFooterConcertChannel(json);
 
               break;
 
-            case 'claro_cinema':
+            case "claro_cinema":
               break;
 
           }
@@ -1422,6 +1556,12 @@ export default class Section {
         }
 
       }
+          }
+          return json;
+        } else {
+          console.log("No se puede obtener el footer");
+        }
+      },
     });
   }
   renderAbout(json) {
@@ -1541,13 +1681,116 @@ function renderFooter(json) {
   $("#menu_2_opcion_8_icon_mob").attr('src', data.menu_2_opcion_1_icon)
 
 
+    $("#terms_title").text(data.terms_title);
+    $("#terms_text").text(data.terms_text);
 
-
+    $("#about_title").text(data.about_title);
+    $("#about_text").text(data.about_text);
+  }
 }
+
+function renderFooter(json) {
+  let data = json.data;
+  //Imagenes del footer
+  $("#footer_image_left_mob").attr("src", data.image_left);
+  $("#footer_image_left_desk").attr("src", data.image_left);
+  $("#footer_image_left_tablet").attr("src", data.image_left);
+
+  $("#footer_image_right_mob").attr("src", data.image_right);
+  $("#footer_image_right_desk").attr("src", data.image_right);
+  $("#footer_image_right_tablet").attr("src", data.image_right);
+
+  //menu 1
+  $("#f-link1").attr("href", data.menu_1_opcion_1_url);
+  $("#f-title1").text(data.menu_1_opcion_1_title);
+
+  $("#f-link2").attr("href", data.menu_1_opcion_2_url);
+  $("#f-title2").text(data.menu_1_opcion_2_title);
+
+  $("#f-link3").attr("href", data.menu_1_opcion_3_url);
+  $("#f-title3").text(data.menu_1_opcion_3_title);
+
+  $("#f-link4").attr("href", data.menu_1_opcion_4_url);
+  $("#f-title4").text(data.menu_1_opcion_4_title);
+
+  $("#f-link5").attr("href", data.menu_1_opcion_5_url);
+  $("#f-title5").text(data.menu_1_opcion_5_title);
+
+  $("#f-link6").attr("href", data.menu_1_opcion_6_url);
+  $("#f-title6").text(data.menu_1_opcion_6_title);
+
+  //seccion de aviso de privacidad desk
+  $("#about_icon").attr("src", data.about_icon);
+  $("#about_legend").text(data.about_legend);
+
+  $("#about_link_1_url").attr("href", data.about_link_1_url);
+  $(".about_link_1_title").text(data.about_link_1_title);
+
+  $("#about_link_2_url").attr("href", data.about_link_2_url);
+  $(".about_link_2_title").text(data.about_link_2_title);
+
+  //seccion de aviso de privacidad  mob
+  $("#about_icon_mob").attr("src", data.about_icon);
+  $("#about_legend_mob").text(data.about_legend);
+
+  $("#about_link_1_url_mob").attr("href", data.about_link_1_url);
+  $("#about_link_1_title_mob").text(data.about_link_1_title);
+
+  $("#about_link_2_url_mob").attr("href", data.about_link_2_url);
+  $("#about_link_2_title_mob").text(data.about_link_2_title);
+  //menu 2 desk
+
+  $("#menu_2_opcion_1_url").attr("href", data.menu_2_opcion_1_url);
+  $("#menu_2_opcion_1_icon").attr("src", data.menu_2_opcion_1_icon);
+
+  $("#menu_2_opcion_2_url").attr("href", data.menu_2_opcion_2_url);
+  $("#menu_2_opcion_2_icon").attr("src", data.menu_2_opcion_2_icon);
+
+  $("#menu_2_opcion_3_url").attr("href", data.menu_2_opcion_3_url);
+  $("#menu_2_opcion_3_icon").attr("src", data.menu_2_opcion_3_icon);
+
+  $("#menu_2_opcion_4_url").attr("href", data.menu_2_opcion_4_url);
+  $("#menu_2_opcion_4_icon").attr("src", data.menu_2_opcion_4_icon);
+
+  $("#menu_2_opcion_5_url").attr("href", data.menu_2_opcion_5_url);
+  $("#menu_2_opcion_5_icon").attr("src", data.menu_2_opcion_5_icon);
+
+  $("#menu_2_opcion_6_url").attr("href", data.menu_2_opcion_6_url);
+  $("#menu_2_opcion_6_icon").attr("src", data.menu_2_opcion_6_icon);
+
+  $("#menu_2_opcion_7_url").attr("href", data.menu_2_opcion_7_url);
+  $("#menu_2_opcion_7_icon").attr("src", data.menu_2_opcion_7_icon);
+
+  //menu 2 mob
+
+  $("#menu_2_opcion_1_url_mob").attr("href", data.menu_2_opcion_1_url);
+  $("#menu_2_opcion_1_icon_mob").attr("src", data.menu_2_opcion_1_icon);
+
+  $("#menu_2_opcion_2_url_mob").attr("href", data.menu_2_opcion_2_url);
+  $("#menu_2_opcion_2_icon_mob").attr("src", data.menu_2_opcion_2_icon);
+
+  $("#menu_2_opcion_3_url_mob").attr("href", data.menu_2_opcion_3_url);
+  $("#menu_2_opcion_3_icon_mob").attr("src", data.menu_2_opcion_3_icon);
+
+  $("#menu_2_opcion_4_url_mob").attr("href", data.menu_2_opcion_4_url);
+  $("#menu_2_opcion_4_icon_mob").attr("src", data.menu_2_opcion_4_icon);
+
+  $("#menu_2_opcion_5_url_mob").attr("href", data.menu_2_opcion_5_url);
+  $("#menu_2_opcion_5_icon_mob").attr("src", data.menu_2_opcion_5_icon);
+
+  $("#menu_2_opcion_6_url_mob").attr("href", data.menu_2_opcion_6_url);
+  $("#menu_2_opcion_6_icon_mob").attr("src", data.menu_2_opcion_6_icon);
+
+  $("#menu_2_opcion_7_url_mob").attr("href", data.menu_2_opcion_7_url);
+  $("#menu_2_opcion_7_icon_mob").attr("src", data.menu_2_opcion_7_icon);
+  $("#menu_2_opcion_8_url_mob").attr("href", data.menu_2_opcion_1_url);
+  $("#menu_2_opcion_8_icon_mob").attr("src", data.menu_2_opcion_1_icon);
+}
+
 function renderFooterCanalClaro(json) {
   let data = json.data;
 
-  $('#redes_canal_claro_title').text(data.redes_canal_claro_title);
+  $("#redes_canal_claro_title").text(data.redes_canal_claro_title);
 
   //redes
   $('#facebook_canal_claro_url').attr('href', data.facebook_canal_claro_url);
@@ -1561,12 +1804,23 @@ function renderFooterCanalClaro(json) {
 
   $('#youtube_canal_claro_url').attr('href', data.youtube_canal_claro_url);
   $('#youtube_canal_claro_icon').attr('src', data.youtube_canal_claro_icon);
+  $("#facebook_canal_claro_url").attr("href", data.facebook_canal_claro_url);
+  $("#facebook_canal_claro_icon").attr("src", data.facebook_canal_claro_icon);
 
+  $("#instagram_canal_claro_url").attr("href", data.instagram_canal_claro_url);
+  $("#instagram_canal_claro_icon").attr("src", data.instagram_canal_claro_icon);
+
+  $("#twitter_canal_claro_url").attr("href", data.twitter_canal_claro_url);
+  $("#twitter_canal_claro_icon").attr("src", data.twitter_canal_claro_icon);
+
+  $("#youtube_canal_claro_url").attr("href", data.youtube_canal_claro_url);
+  $("#youtube_canal_claro_icon").attr("src", data.youtube_canal_claro_icon);
 }
+
 function renderFooterConcertChannel(json) {
   let data = json.data;
 
-  $('#redes_concert_channel_title').text(data.redes_concert_channel_title);
+  $("#redes_concert_channel_title").text(data.redes_concert_channel_title);
 
   //redes
   $('#facebook_concert_channel_url').attr('href', data.facebook_concert_channel_url);
@@ -1575,4 +1829,21 @@ function renderFooterConcertChannel(json) {
   $('#twitter_concert_channel_url').attr('href', data.twitter_concert_channel_url);
   $('#twitter_concert_channel_icon').attr('src', data.twitter_concert_channel_icon);
 
+  $("#facebook_concert_channel_url").attr(
+    "href",
+    data.facebook_concert_channel_url
+  );
+  $("#facebook_concert_channel_icon").attr(
+    "src",
+    data.facebook_concert_channel_icon
+  );
+
+  $("#twitter_concert_channel_url").attr(
+    "href",
+    data.twitter_concert_channel_url
+  );
+  $("#twitter_concert_channel_icon").attr(
+    "src",
+    data.twitter_concert_channel_icon
+  );
 }

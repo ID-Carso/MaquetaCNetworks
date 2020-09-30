@@ -100,7 +100,7 @@
         </div>
 
     </header>
-    <div class="concert-container">
+    <div class="concert-container pb-5">
         <section class="today-concert-channel pt-3">
             <div class="row no-gutters mb-3 p-3 landing-header position-relative border-t border-l border-r border-b">
                 <img src="./images/General/pencil.svg" alt="" class="pencil pencil-concert"
