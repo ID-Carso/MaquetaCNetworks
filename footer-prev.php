@@ -9,7 +9,7 @@
 <body>
 
     <input type="hidden" id="actual_landing" value="footer_home">
-    <main class="today">
+    <main class="today pt-5">
         <?php
     include 'advertising-section.php'
     ?>
@@ -31,7 +31,7 @@
     <script>
         var socketFooterNetworks = new easyXDM.Socket({
             onReady: function () {
-                socketFooterNetworks.postMessage(850)
+                socketFooterNetworks.postMessage(1070)
             },
 
         });

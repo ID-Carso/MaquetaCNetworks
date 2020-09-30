@@ -6,7 +6,7 @@
     <input type="hidden" id="actual_landing" value="footer_concert_channel">
 </head>
 
-<body class="concert-container">
+<body class="concert-container pt-5">
 
 
     <?php
@@ -51,7 +51,7 @@
     <script>
         var socketFooterConcertChannel = new easyXDM.Socket({
             onReady: function () {
-                socketFooterConcertChannel.postMessage(1092)
+                socketFooterConcertChannel.postMessage(1050)
             },
         });
     </script>

@@ -1,4 +1,4 @@
-<div class="o-advertising-section mt-xl-5">
+<div class="o-advertising-section mt-xl-5 pt-5">
     <!--Sección de anuncion para mobile-->
     <div class="advertising-section-mobile">
         <div class="row">
