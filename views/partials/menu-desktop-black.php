@@ -46,3 +46,7 @@
     </div>-->
     </div>
 </nav>
+
+<?php include './views/partials/menu-desktop-black.php' ?>
+                    <?php include './views/partials/menu-tablet-black.php' ?>
+                    <?php include './views/partials/menu-mobile-black.php' ?>

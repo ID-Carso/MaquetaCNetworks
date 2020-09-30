@@ -41,12 +41,50 @@
   font-display: block;
 }
 
+.bg-bubble {
+  background: url(/MaquetaCNetworks/images/bg-bubble.png);
+}
+
+.container-terminos {
+  max-width: 1580px !important;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-shadow: rgba(0, 0, 0, 0.3) -1px -1px 17px 5px;
+  background: #fff;
+}
+
+.terms_text {
+  font-family: "Montserrat-SemiBold";
+  width: 100%;
+  display: block;
+  resize: none !important;
+  border: none;
+  background: #fff;
+  overflow: hidden;
+  color: #4a4a4a;
+}
+
+.container-terminos h4{
+  font-family: "Montserrat-Medium";
+  text-align: center;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
 .cursor-auto {
   cursor: auto !important;
 }
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.cursor-none {
+  cursor: none;
+}
+
+.pointer-events-none {
+  pointer-events: none;
 }
 
 /*html,
@@ -4945,10 +4983,6 @@ input[type="radio"]:checked + .mujer-estilo {
 
 .card-white {
   max-width: 450px !important;
-}
-
-.poster {
-  cursor: pointer;
 }
 
 .aboutus-card {

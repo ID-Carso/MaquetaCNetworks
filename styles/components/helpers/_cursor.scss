@@ -1,6 +1,15 @@
 .cursor-auto {
     cursor: auto !important;
 }
-.cursor-pointer{
-cursor: pointer;
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-none {
+    cursor: none;
+}
+
+.pointer-events-none {
+    pointer-events: none;
 }

@@ -4,79 +4,70 @@ export default class Section {
   createProgramacionSlider() {
     programacion_slider = $(".programacion-slider").slick({
       /**/
-      responsive: [
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 7,
-            slidesToScroll: 7,
-            autoplay: false,
-            centerMode: false,
-            infinite: true,
-            arrows: false,
-            dots: true,
-          },
+      responsive: [{
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 7,
+          slidesToScroll: 7,
+          autoplay: false,
+          centerMode: false,
+          infinite: true,
+          arrows: false,
+          dots: true,
         },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 8,
-            slidesToScroll: 8,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
-          },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 8,
+          slidesToScroll: 8,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 11,
-            slidesToScroll: 11,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
-          },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 11,
+          slidesToScroll: 11,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
-        {
-          breakpoint: 1900,
-          settings: {
-            slidesToShow: 11,
-            slidesToScroll: 11,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
-          },
+      },
+      {
+        breakpoint: 1900,
+        settings: {
+          slidesToShow: 11,
+          slidesToScroll: 11,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
-        {
-          breakpoint: 10000,
-          settings: {
-            slidesToShow: 17,
-            slidesToScroll: 17,
-            infinite: false,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
-          },
+      },
+      {
+        breakpoint: 10000,
+        settings: {
+          slidesToShow: 17,
+          slidesToScroll: 17,
+          infinite: false,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
+      },
       ],
     });
   }
@@ -537,78 +528,71 @@ export default class Section {
       prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
       nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
 
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: false,
-            autoplaySpeed: 2000,
-            centerMode: false,
-            infinite: true,
-            arrows: false,
-            dots: true,
-          },
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          centerMode: false,
+          infinite: true,
+          arrows: false,
+          dots: true,
         },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true,
-            centerMode: true,
-            arrows: false,
-          },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: true,
+          arrows: false,
         },
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
-          },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
+      },
 
-        {
-          breakpoint: 1900,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
-          },
+      {
+        breakpoint: 1900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
+      },
 
-        {
-          breakpoint: 10000,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
-          },
+      {
+        breakpoint: 10000,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
+      },
       ],
     });
 
@@ -674,8 +658,7 @@ export default class Section {
       if (data[`block_1_image_slider_${counterCanalClaro}`]) {
         slideBanner += `        
         <div class="header-slide">
-          <img src="${
-            data[`block_1_image_slider_${counterCanalClaro}`]
+          <img src="${data[`block_1_image_slider_${counterCanalClaro}`]
           }?v=${new Date().getTime()}" class="rellax" data-rellax="10">
         </div>`;
         counterCanalClaro++;
@@ -708,10 +691,8 @@ export default class Section {
         appendDots: $(".programming-slider-dots"),
         centerMode: false,
         arrows: false,
-        prevArrow:
-          '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-        nextArrow:
-          '<img src="../images/sliders/next.png" class="arrow-next" />',
+        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         customPaging: function (slider, i) {
           var thumb = $(slider.$slides[i]).data();
           return (
@@ -812,31 +793,26 @@ export default class Section {
     let exlusiveContentSlider = $("#exlusiveContentClaroSlider");
     sectionSlider.slick("unslick");
 
-    let programsExlusiveContent = [
-      {
-        chapter_id: 1,
-        program_title: "DRESS CODE",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/05-DRESS-CODE.jpg",
-      },
-      {
-        chapter_id: 2,
-        program_title: "FIT FOR LIFE",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/06-FIT4LIFE.jpg",
-      },
-      {
-        chapter_id: 3,
-        program_title: "CONEXIÓN CLARO",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/07-CONEXION.jpg",
-      },
-      {
-        chapter_id: 4,
-        program_title: "LA CAJA DE PANDORA",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/08-CAJA-DE-PANDORA.jpg",
-      },
+    let programsExlusiveContent = [{
+      chapter_id: 1,
+      program_title: "DRESS CODE",
+      image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/05-DRESS-CODE.jpg",
+    },
+    {
+      chapter_id: 2,
+      program_title: "FIT FOR LIFE",
+      image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/06-FIT4LIFE.jpg",
+    },
+    {
+      chapter_id: 3,
+      program_title: "CONEXIÓN CLARO",
+      image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/07-CONEXION.jpg",
+    },
+    {
+      chapter_id: 4,
+      program_title: "LA CAJA DE PANDORA",
+      image: "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/08-CAJA-DE-PANDORA.jpg",
+    },
     ];
 
     let programTiensQueVerlo = "";
@@ -849,22 +825,42 @@ export default class Section {
     let programTienesQueVerloEdit = "";
     let programExlusiveContentEdit = "";
     carrusel1.forEach((program) => {
-      programTiensQueVerlo += `
-      <div class="poster" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-claro-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.genre}</p>
-                    </div>
-                </div>
+      if (program.landing_synopsis === 0) {
+        programTiensQueVerlo += `
+        <div class="poster cursors-auto" >
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-claro-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.genre}</p>
+                      </div>
+                  </div>
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      } else {
+        programTiensQueVerlo += `
+        <div class="poster cursor-pointer">
+          <div class="poster-body">
+              <div class="thumbnail-body" _id="${program.chapter_id}">
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-claro-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.genre}</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
       programTienesQueVerloEdit += `
       <div class="poster p-3 border-l border-r border-b border-t position-relative">
       <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
@@ -885,22 +881,42 @@ export default class Section {
     });
 
     carrusel2.forEach((program) => {
-      programExlusiveContent += `
-      <div class="poster" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-claro-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.title}</p>
-                    </div>
-                </div>
+      if (program.landing_synopsis === 0) {
+        programExlusiveContent += `
+        <div class="poster cursor-auto">
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-claro-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.title}</p>
+                      </div>
+                  </div>
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      } else {
+        programExlusiveContent += `
+        <div class="poster cursor-pointer">
+          <div class="poster-body">
+              <div class="thumbnail-body" _id="${program.chapter_id}">
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-claro-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.title}</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
       programExlusiveContentEdit += `
       <div class="poster border-l p-3 border-r border-t border-b" >
         <div class="poster-body">
@@ -957,10 +973,8 @@ export default class Section {
         appendDots: $(".programming-slider-dots"),
         centerMode: false,
         arrows: false,
-        prevArrow:
-          '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-        nextArrow:
-          '<img src="../images/sliders/next.png" class="arrow-next" />',
+        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
         customPaging: function (slider, i) {
           var thumb = $(slider.$slides[i]).data();
           return (
@@ -997,16 +1011,16 @@ export default class Section {
     $("#carrusel_1_title").text(data.block_4_carrusel_1_title_1);
     $("#carrusel_1_title").append(
       ' <span class="recordar-title">' +
-        data.block_4_carrusel_1_title_2 +
-        "</span>"
+      data.block_4_carrusel_1_title_2 +
+      "</span>"
     );
     $("#carrusel_1_subtitle").text(data.block_4_carrusel_1_subtitle);
 
     $("#carrusel_2_title").text(data.block_4_carrusel_2_title_1);
     $("#carrusel_2_title").append(
       ' <span class="recordar-title">' +
-        data.block_4_carrusel_2_title_2 +
-        "</span>"
+      data.block_4_carrusel_2_title_2 +
+      "</span>"
     );
     $("#carrusel_2_subtitle").text(data.block_4_carrusel_2_subtitle);
 
@@ -1052,41 +1066,81 @@ export default class Section {
       Esto  para la parevisualización en Backoffice de los landings
     */
     carrusel1.forEach((program) => {
-      Strinfcarrusel1 += `
-      <div class="poster" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-cinema-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.genre}</p>
-                    </div>
-                </div>
+      if (program.landing_synopsis === 0) {
+        Strinfcarrusel1 += `
+        <div class="poster cursor-auto">
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.genre}</p>
+                      </div>
+                  </div>
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      } else {
+        Strinfcarrusel1 += `
+        <div class="poster cursor-pointer">
+          <div class="poster-body">
+              <div class="thumbnail-body" _id="${program.chapter_id}">
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.genre}</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
     });
 
     carrusel2.forEach((program) => {
-      Strinfcarrusel2 += `
-      <div class="poster" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-cinema-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.title}</p>
-                    </div>
-                </div>
+      if (program.landing_synopsis === 0) {
+        Strinfcarrusel2 += `
+        <div class="poster cursor-auto">
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.title}</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div> 
+        `;
+      } else {
+        Strinfcarrusel2 += `
+        <div class="poster cursor-pointer" >
+          <div class="poster-body">
+              <div class="thumbnail-body" _id="${program.chapter_id}">
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.title}</p>
+                      </div>
+                  </div>
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      }
+
     });
 
     claro_cinema_carrusel_1.append(Strinfcarrusel1);
@@ -1102,8 +1156,7 @@ export default class Section {
       if (data[`block_1_image_slider_${counterConcertChannel}`]) {
         slideBanner += `        
         <div class="header-slide">
-          <img src="${
-            data[`block_1_image_slider_${counterConcertChannel}`]
+          <img src="${data[`block_1_image_slider_${counterConcertChannel}`]
           }?v=${new Date().getTime()}" class="rellax" data-rellax="10">
         </div>`;
         counterConcertChannel++;
@@ -1223,41 +1276,82 @@ export default class Section {
       Esto  para la parevisualización en Backoffice de los landings
     */
     carrusel1.forEach((program) => {
-      Strinfcarrusel1 += `
-      <div class="poster" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-concert-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.genre}</p>
-                    </div>
-                </div>
+      //Verificamos si el programa puede verse en el landig de sinopsis
+      if (program.landing_synopsis === 0) {
+        Strinfcarrusel1 += `
+        <div class="poster cursor-auto" >
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-concert-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.genre}</p>
+                      </div>
+                  </div>
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      } else {
+        Strinfcarrusel1 += `
+        <div class="poster cursor-pointer" >
+          <div class="poster-body">
+              <div class="thumbnail-body" _id="${program.chapter_id}">
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-concert-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.genre}</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
     });
 
     carrusel2.forEach((program) => {
-      Strinfcarrusel2 += `
-      <div class="poster" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-concert-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.title}</p>
-                    </div>
-                </div>
+      if (program.landing_synopsis === 0) {
+        Strinfcarrusel2 += `
+        <div class="poster cursor-auto" >
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-concert-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.title}</p>
+                      </div>
+                  </div>
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      } else {
+        Strinfcarrusel2 += `
+        <div class="poster cursor-pointer" >
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="${program.image_horizontal}" alt="">
+                  </div>
+                  <div class="a-concert-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white">${program.title}</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
     });
     concert_channel_carrusel_1.html(Strinfcarrusel1);
     concert_channel_carrusel_2.html(Strinfcarrusel2);
@@ -1368,9 +1462,8 @@ export default class Section {
         <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
             <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
                 <!--<span class="a-text-bold-warm text-plus mb90 shadow-contrast add-photo">472px X 295px</span>-->
-                <img src="${
-                  banner_images[i]
-                }?v=${new Date().getTime()}" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                <img src="${banner_images[i]
+        }?v=${new Date().getTime()}" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
             </label>
         </div>`;
     }
@@ -1405,6 +1498,8 @@ export default class Section {
     });
   }
   getFooter(landing) {
+    console.log('active un debugger pero pura de esta me da');
+    debugger
     console.log("active un debugger pero pura de esta me da");
     debugger;
     let data = {
@@ -1419,6 +1514,14 @@ export default class Section {
       success: function (result) {
         let json = JSON.parse(result);
         if (json.code == 200) {
+          console.log('footer encontrado');
+          console.log(json);
+          renderFooter(json);
+
+          switch (landing) {
+
+            case 'home':
+            case 'programation':
           renderFooter(json);
 
           switch (landing) {
@@ -1443,6 +1546,16 @@ export default class Section {
 
             case "claro_cinema":
               break;
+
+          }
+          return json;
+
+        } else {
+          console.log('No se puede obtener el footer');
+
+        }
+
+      }
           }
           return json;
         } else {
@@ -1453,6 +1566,121 @@ export default class Section {
   }
   renderAbout(json) {
     let data = json.data;
+    $('#terms_title').text(data.terms_title);
+    $('#terms_text').text(data.terms_text);
+
+    // SCROLL DE TERMINOS Y CONDICIONES
+    $('#terms_text').height($('#terms_text').prop('scrollHeight'));
+
+    $( window ).resize(function() {
+      $('#terms_text').height('auto');
+      $('#terms_text').height($('#terms_text').prop('scrollHeight'));
+    });
+    // SCROLL DE TERMINOS Y CONDICIONES
+
+    $('#about_title').text(data.about_title);
+    $('#about_text').text(data.about_text);
+    console.log("temrinos pintados");
+  }
+}
+function renderFooter(json) {
+  let data = json.data;
+  //Imagenes del footer
+  $('#footer_image_left_mob').attr('src', data.image_left)
+  $('#footer_image_left_desk').attr('src', data.image_left)
+  $('#footer_image_left_tablet').attr('src', data.image_left)
+
+  $('#footer_image_right_mob').attr('src', data.image_right)
+  $('#footer_image_right_desk').attr('src', data.image_right)
+  $('#footer_image_right_tablet').attr('src', data.image_right)
+
+  //menu 1
+  $('#f-link1').attr('href', data.menu_1_opcion_1_url)
+  $('#f-title1').text(data.menu_1_opcion_1_title)
+
+  $('#f-link2').attr('href', data.menu_1_opcion_2_url)
+  $('#f-title2').text(data.menu_1_opcion_2_title)
+
+  $('#f-link3').attr('href', data.menu_1_opcion_3_url)
+  $('#f-title3').text(data.menu_1_opcion_3_title)
+
+  $('#f-link4').attr('href', data.menu_1_opcion_4_url)
+  $('#f-title4').text(data.menu_1_opcion_4_title)
+
+  $('#f-link5').attr('href', data.menu_1_opcion_5_url)
+  $('#f-title5').text(data.menu_1_opcion_5_title)
+
+  $('#f-link6').attr('href', data.menu_1_opcion_6_url)
+  $('#f-title6').text(data.menu_1_opcion_6_title)
+
+  //seccion de aviso de privacidad desk
+  $('#about_icon').attr('src', data.about_icon)
+  $('#about_legend').text(data.about_legend)
+
+  $('#about_link_1_url').attr('href', data.about_link_1_url)
+  $('#about_link_1_title').text(data.about_link_1_title)
+
+  $('#about_link_2_url').attr('href', data.about_link_2_url)
+  $('#about_link_2_title').text(data.about_link_2_title)
+
+  //seccion de aviso de privacidad  mob
+  $('#about_icon_mob').attr('src', data.about_icon)
+  $('#about_legend_mob').text(data.about_legend)
+
+  $('#about_link_1_url_mob').attr('href', data.about_link_1_url)
+  $('#about_link_1_title_mob').text(data.about_link_1_title)
+
+  $('#about_link_2_url_mob').attr('href', data.about_link_2_url)
+  $('#about_link_2_title_mob').text(data.about_link_2_title)
+  //menu 2 desk
+
+  $("#menu_2_opcion_1_url").attr('href', data.menu_2_opcion_1_url)
+  $("#menu_2_opcion_1_icon").attr('src', data.menu_2_opcion_1_icon)
+
+  $("#menu_2_opcion_2_url").attr('href', data.menu_2_opcion_2_url)
+  $("#menu_2_opcion_2_icon").attr('src', data.menu_2_opcion_2_icon)
+
+  $("#menu_2_opcion_3_url").attr('href', data.menu_2_opcion_3_url)
+  $("#menu_2_opcion_3_icon").attr('src', data.menu_2_opcion_3_icon)
+
+  $("#menu_2_opcion_4_url").attr('href', data.menu_2_opcion_4_url)
+  $("#menu_2_opcion_4_icon").attr('src', data.menu_2_opcion_4_icon)
+
+  $("#menu_2_opcion_5_url").attr('href', data.menu_2_opcion_5_url)
+  $("#menu_2_opcion_5_icon").attr('src', data.menu_2_opcion_5_icon)
+
+  $("#menu_2_opcion_6_url").attr('href', data.menu_2_opcion_6_url)
+  $("#menu_2_opcion_6_icon").attr('src', data.menu_2_opcion_6_icon)
+
+  $("#menu_2_opcion_7_url").attr('href', data.menu_2_opcion_7_url)
+  $("#menu_2_opcion_7_icon").attr('src', data.menu_2_opcion_7_icon)
+
+  //menu 2 mob
+
+  $("#menu_2_opcion_1_url_mob").attr('href', data.menu_2_opcion_1_url)
+  $("#menu_2_opcion_1_icon_mob").attr('src', data.menu_2_opcion_1_icon)
+
+  $("#menu_2_opcion_2_url_mob").attr('href', data.menu_2_opcion_2_url)
+  $("#menu_2_opcion_2_icon_mob").attr('src', data.menu_2_opcion_2_icon)
+
+  $("#menu_2_opcion_3_url_mob").attr('href', data.menu_2_opcion_3_url)
+  $("#menu_2_opcion_3_icon_mob").attr('src', data.menu_2_opcion_3_icon)
+
+  $("#menu_2_opcion_4_url_mob").attr('href', data.menu_2_opcion_4_url)
+  $("#menu_2_opcion_4_icon_mob").attr('src', data.menu_2_opcion_4_icon)
+
+  $("#menu_2_opcion_5_url_mob").attr('href', data.menu_2_opcion_5_url)
+  $("#menu_2_opcion_5_icon_mob").attr('src', data.menu_2_opcion_5_icon)
+
+  $("#menu_2_opcion_6_url_mob").attr('href', data.menu_2_opcion_6_url)
+  $("#menu_2_opcion_6_icon_mob").attr('src', data.menu_2_opcion_6_icon)
+
+  $("#menu_2_opcion_7_url_mob").attr('href', data.menu_2_opcion_7_url)
+  $("#menu_2_opcion_7_icon_mob").attr('src', data.menu_2_opcion_7_icon)
+  $("#menu_2_opcion_8_url_mob").attr('href', data.menu_2_opcion_1_url)
+  $("#menu_2_opcion_8_icon_mob").attr('src', data.menu_2_opcion_1_icon)
+
+
     $("#terms_title").text(data.terms_title);
     $("#terms_text").text(data.terms_text);
 
@@ -1565,6 +1793,17 @@ function renderFooterCanalClaro(json) {
   $("#redes_canal_claro_title").text(data.redes_canal_claro_title);
 
   //redes
+  $('#facebook_canal_claro_url').attr('href', data.facebook_canal_claro_url);
+  $('#facebook_canal_claro_icon').attr('src', data.facebook_canal_claro_icon);
+
+  $('#instagram_canal_claro_url').attr('href', data.instagram_canal_claro_url);
+  $('#instagram_canal_claro_icon').attr('src', data.instagram_canal_claro_icon);
+
+  $('#twitter_canal_claro_url').attr('href', data.twitter_canal_claro_url);
+  $('#twitter_canal_claro_icon').attr('src', data.twitter_canal_claro_icon);
+
+  $('#youtube_canal_claro_url').attr('href', data.youtube_canal_claro_url);
+  $('#youtube_canal_claro_icon').attr('src', data.youtube_canal_claro_icon);
   $("#facebook_canal_claro_url").attr("href", data.facebook_canal_claro_url);
   $("#facebook_canal_claro_icon").attr("src", data.facebook_canal_claro_icon);
 
@@ -1584,6 +1823,12 @@ function renderFooterConcertChannel(json) {
   $("#redes_concert_channel_title").text(data.redes_concert_channel_title);
 
   //redes
+  $('#facebook_concert_channel_url').attr('href', data.facebook_concert_channel_url);
+  $('#facebook_concert_channel_icon').attr('src', data.facebook_concert_channel_icon);
+
+  $('#twitter_concert_channel_url').attr('href', data.twitter_concert_channel_url);
+  $('#twitter_concert_channel_icon').attr('src', data.twitter_concert_channel_icon);
+
   $("#facebook_concert_channel_url").attr(
     "href",
     data.facebook_concert_channel_url
