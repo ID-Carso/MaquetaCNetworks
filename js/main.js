@@ -141,6 +141,8 @@ if (day && month && year) {
 
 $(document).ready(function () {
 
+
+
   let dateUTC = new Date();
   let actual_landing = $('#actual_landing').val();
   if (actual_landing) {
@@ -1564,25 +1566,25 @@ $(document).ready(function () {
     ],
   });
 
-  /*Programación General Canal Claro */
-  let containerSlider = $("#claro-canal-programing");
-  let slider = new Slider();
-  slider.createDaysSlider(
-    "claro",
-  );
+  /*   //Programación General Canal Claro
+    let containerSlider = $("#claro-canal-programing");
 
-  /*Programación Concert Channel */
-  let containerSliderConcert = $("#concert-channel-programing");
-  slider.createDaysSlider(
-    "concert",
-  );
-  /*Programación Claro Cinema */
-  let containerSliderCinema = $("#claro-cinema-programing");
-  slider.createDaysSlider(
-    "cinema",
-  );
+    slider.createDaysSlider(
+      "claro",
+    );
 
-  createProgramacionSlider();
+    //Programación Concert Channel
+    let containerSliderConcert = $("#concert-channel-programing");
+    slider.createDaysSlider(
+      "concert",
+    );
+    //Programación Claro Cinema
+    let containerSliderCinema = $("#claro-cinema-programing");
+    slider.createDaysSlider(
+      "cinema",
+    ); */
+
+
 
   let date = new Date();
   let day = ("0" + date.getDate()).slice(-2);
@@ -1742,7 +1744,7 @@ $(document).ready(function () {
 
     tvSlider.slick("refresh");
 
-    programacion_slider.slick("refresh");
+    programacionSlider.slick("refresh");
     addFavorites();
     recreateClickCalendar();
     createClickThumbnails();
@@ -1904,76 +1906,6 @@ function createCinemaHomeSlider() {
   });
 }
 
-function createProgramacionSlider() {
-  programacion_slider = $(".programacion-slider").slick({
-    /**/
-    responsive: [{
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 7,
-          slidesToScroll: 7,
-          autoplay: false,
-          centerMode: false,
-          infinite: true,
-          arrows: false,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 8,
-          slidesToScroll: 8,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-        },
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 11,
-          slidesToScroll: 11,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-        },
-      },
-      {
-        breakpoint: 1900,
-        settings: {
-          slidesToShow: 11,
-          slidesToScroll: 11,
-          infinite: true,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-        },
-      },
-      {
-        breakpoint: 10000,
-        settings: {
-          slidesToShow: 17,
-          slidesToScroll: 17,
-          infinite: false,
-          dots: true,
-          centerMode: false,
-          arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-        },
-      },
-    ],
-  });
-}
 
 //Modificar el anchor de la url
 
@@ -2054,36 +1986,27 @@ function recreateClickCalendar() {
   //Claro canal
   $("ul.claro-calendar .claro-item").click(function () {
     let date = $(this).attr("date");
-    let country = getNameCountry(localStorage.getItem("src"));
     //Petición ajax para traer la programación
     getProgramming(date);
 
 
     $("ul.claro-calendar .claro-item").removeClass("claro-active");
     $(this).addClass("claro-active");
-
-    var activeNav = $(this).attr("rel");
-    let stringLength = activeNav.length;
-    let month = activeNav.charAt(stringLength - 1);
     //Mostrar contenido (Que es innecesario en estos momentos)
-    $(".month").text(`${getMonthAndYear(month)}`);
   });
 
 
 
   //Concert channel
   $("ul.concert-calendar .concert-item").click(function () {
-    $("ul.concert-calendar .concert-item").removeClass("concert-active");
-    $(this).addClass("concert-active");
-    var activeNav = $(this).attr("rel");
-    let stringLength = activeNav.length;
-    let month = activeNav.charAt(stringLength - 1);
-    $(".month").text(`${getMonthAndYear(month)}`);
-
+    console.log("Concert channel item")
     //peticiones
     let date = $(this).attr("date");
     let country = getNameCountry(localStorage.getItem("src"));
     getProgramming(date);
+    $("ul.concert-calendar .concert-item").removeClass("concert-active");
+    $(this).addClass("concert-active");
+
   });
 
 
@@ -2091,44 +2014,10 @@ function recreateClickCalendar() {
     $("ul.cinema-calendar .cinema-item").removeClass("cinema-active");
     $(this).addClass("cinema-active");
 
-    var activeNav = $(this).attr("rel");
-    let stringLength = activeNav.length;
-    let month = activeNav.charAt(stringLength - 1);
 
-    $(".month").text(`${getMonthAndYear(month)}`);
     let date = $(this).attr("date");
     let country = getNameCountry(localStorage.getItem("src"));
     getProgramming(date);
-  });
-
-  $(".vision-content").hide();
-  $(".vision-content:first").show();
-
-  $("ul.vision-calendar .vision-item").click(function () {
-    $("ul.vision-calendar .vision-item").removeClass("vision-active");
-    $(this).addClass("vision-active");
-    $(".vision-content").hide();
-    var activeNav = $(this).attr("rel");
-    $("#" + activeNav).fadeIn();
-    let stringLength = activeNav.length;
-    let month = activeNav.charAt(stringLength - 1);
-
-    $(".month").text(`${getMonthAndYear(month)}`);
-  });
-
-  $(".sports-content").hide();
-  $(".sports-content:first").show();
-
-  $("ul.sports-calendar .sports-item").click(function () {
-    $("ul.sports-calendar .sports-item").removeClass("sports-active");
-    $(this).addClass("sports-active");
-    $(".sports-content").hide();
-    var activeNav = $(this).attr("rel");
-    $("#" + activeNav).fadeIn();
-    let stringLength = activeNav.length;
-    let month = activeNav.charAt(stringLength - 1);
-
-    $(".month").text(`${getMonthAndYear(month)}`);
   });
 }
 

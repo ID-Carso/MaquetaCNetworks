@@ -1,76 +1,7 @@
 import Slider from "./Slider.js";
 
 export default class Section {
-  createProgramacionSlider() {
-    programacion_slider = $(".programacion-slider").slick({
-      /**/
-      responsive: [{
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 7,
-            slidesToScroll: 7,
-            autoplay: false,
-            centerMode: false,
-            infinite: true,
-            arrows: false,
-            dots: true,
-          },
-        },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 8,
-            slidesToScroll: 8,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-          },
-        },
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 11,
-            slidesToScroll: 11,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-          },
-        },
-        {
-          breakpoint: 1900,
-          settings: {
-            slidesToShow: 11,
-            slidesToScroll: 11,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-          },
-        },
-        {
-          breakpoint: 10000,
-          settings: {
-            slidesToShow: 17,
-            slidesToScroll: 17,
-            infinite: false,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-          },
-        },
-      ],
-    });
-  }
+
   renderHome(json) {
     /* Header Home*/
     let imagesHeader = [

@@ -53,34 +53,18 @@ if($_SESSION["country"] != 1){
                     <span class="dropdown-p">Canal Claro</span>
                 </div>
             </a>
-            <!--<div class="dropdown-content">
-          <p class="dropdown-p">ebñrkjg</p>
-          <p class="dropdown-p">ebñrkjg</p>
-          <p class="dropdown-p">ebñrkjg</p>
-        </div>-->
             <a class="sidebar-link" href="concert-channel.php">
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Concert
                         Channel</span>
                 </div>
             </a>
-            <!--<div class="dropdown-content">
-          <p class="dropdown-p">ebñrkjg</p>
-          <p class="dropdown-p">ebñrkjg</p>
-          <p class="dropdown-p">ebñrkjg</p>
-        </div>-->
             <a class="sidebar-link" href="claro-cinema.php">
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Claro Cinema</span>
                 </div>
 
             </a>
-
-            <!--<div class="dropdown-content">
-          <p class="dropdown-p">ebñrkjg</p>
-          <p class="dropdown-p">ebñrkjg</p>
-          <p class="dropdown-p">ebñrkjg</p>
-        </div>-->
             <a class="sidebar-link" href="https://nuestravision.tv">
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Nuestra
@@ -107,19 +91,15 @@ if($_SESSION["country"] != 1){
                 </h1>
             </div>
             <div class="header-slider" id="slider-header-home">
-
             </div>
         </header>
         <header class="home-header">
-
             <div class="circle-video">
                 <video preload="yes" playsinline autoplay muted loop class="home-video">
                     <source src="./video/video.mp4" type="video/mp4" class="source-video" />
                 </video>
             </div>
-
             <div class="header">
-
                 <img src="./images/home/american-horror.jpeg" class="background-home rellax" data-rellax="10">
                 <nav class="menu-tablet">
                     <div class="nav-content">
