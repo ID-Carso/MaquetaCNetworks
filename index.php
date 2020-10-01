@@ -129,7 +129,8 @@
 											style="display: flex; width: 20%; max-width: 29px; min-width: 29px;padding: 0;  margin-left: 16px;">
 											<img src="images/paises/dominican-republic.svg" class="Icon_paises"></div>
 
-										<div class="col" style="width: 50%; margin: 0 20px 0 14px; padding: 0;">
+										<div class="col text-left"
+											style="width: 50%; margin: 0 20px 0 14px; padding: 0;">
 											República Dominicana
 										</div>
 									</div>
