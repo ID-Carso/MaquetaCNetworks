@@ -161,7 +161,81 @@ export default class Slider {
     });
   }
 
+  newCalendar(date, landing) {
+
+    let d = date.split("-")
+    //Nuevo calendario
+    let currentDate = new Date();
+    let lastDate = new Date(parseInt(d[0]), parseInt(d[1]) - 1, parseInt(d[2]));
+
+    let currentDay = currentDate.getUTCDate();
+    let lastDay = lastDate.getUTCDate();
+
+    let currentMonth = currentDate.getUTCMonth() + 1;
+    let lastMonth = lastDate.getUTCMonth() + 1;
+
+    let currentYear = currentDate.getUTCFullYear();
+    let lastYear = lastDate.getUTCFullYear();
+
+    let daysSlider = "";
+
+
+    for (let year = currentYear; year <= lastYear; year++) {
+
+      for (let month = currentMonth; month <= lastMonth; month++) {
+        let days;
+        if (month === currentMonth) {
+          days = currentDay;
+        } else {
+          days = 1;
+        }
+        let numberDays = new Date(year, month, 0).getDate();
+
+        for (let day = days; day < numberDays; day++) {
+          //
+          if (day === currentDay) {
+            daysSlider += `
+            <li  class="${landing}-item programing-item ${landing}-active" date="${year}-${month}-${day}">
+              <div class="day">
+                  <p class="day-text">${getDayName(month, day)}</p>
+                  <p class="day-number">${day}</p>
+              </div>
+            </li>`;
+          } else {
+            if (day > lastDay && month === lastMonth) {
+              daysSlider += `
+              <li class="${landing}-item programing-item">
+                <div class="day">
+                    <p class="day-text-desactivated">${getDayName(month, day)}</p>
+                    <p class="day-number-desactivated">${day}</p>
+                </div>
+              </li>`;
+            } else {
+              daysSlider += `
+              <li class="${landing}-item programing-item" date="${year}-${month}-${day}">
+                <div class="day">
+                    <p class="day-text">${getDayName(month, day)}</p>
+                    <p class="day-number">${day}</p>
+                </div>
+              </li>`;
+            }
+
+          }
+
+          //Días que estarán bloqueados al superar fecha límite de programación
+
+
+        }
+      }
+    }
+
+    let programmingContainerSlider = $("#pro-" + landing + "-slider");
+    programmingContainerSlider.append(daysSlider);
+
+  }
+
   createDaysSlider(landing) {
+
     /*Programación general*/
     let date = new Date();
     $(".month").html(getMonthAndYear(date.getMonth()));
@@ -222,7 +296,7 @@ export default class Slider {
         `;
           } else {
             daysSlider += `
-            <li rel="${landing}-${i}-${getMonth(
+            <li  rel="${landing}-${i}-${getMonth(
               0
             )}" class="${landing}-item programing-item ${landing}-active" date="${date.getFullYear()}-${month}-${i}">
               <div class="day">

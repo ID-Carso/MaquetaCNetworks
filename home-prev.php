@@ -22,14 +22,16 @@
                 </h1>
             </div>
             <div class="header-slider" id="slider-header-home">
-
             </div>
         </header>
         <header class="home-header">
 
             <div class="circle-video">
                 <div class="postion-relative">
-                    <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
+                    <button
+                        class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2">
+                        Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2"
+                            style="width:15px"></button>
 
                     <video preload="yes" playsinline autoplay muted loop class="home-video">
 
@@ -64,7 +66,8 @@
 
                 <div class="header-details header-detail-margin col-md-6">
                     <h1 class="header-h1">
-                        <div class="p-3 border-t border-l border-r border-b position-relative mb-2" style="width: 120%;">
+                        <div class="p-3 border-t border-l border-r border-b position-relative mb-2"
+                            style="width: 120%;">
                             <img src="./images/General/pencil.svg" alt="" class="pencil">
                             <span class="header-span">Descubre<br>Claro</div>
                         <div class=" border-t border-l border-r border-b position-relative" style="width: 130%;">
@@ -174,13 +177,9 @@
                             <img src="./images/General/pencil.svg" alt="" class="pencil">
                             <img src="./images/home/tv-1.svg" class="claro-image-header">
                         </div>
-
                         <div class=" col-10 mx-auto p-3 border-t border-l border-r border-b position-relative mb-2">
                             <img src="./images/General/pencil.svg" alt="" class="pencil">
                             <h2 class="a-subtitle a-claro-home-subtitle">
-                                <!--LO MEJOR EN SERIES Y <span class="a-claro-channel-subtitle-bold">PELÍCULAS
-                                INTERNACIONALES</span>-->
-
                             </h2>
                         </div>
                     </div>
@@ -196,16 +195,6 @@
                 <div class="canal-videos-container">
                     <div class="section-slider claro-slider-home">
                     </div>
-                    <!--<div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
-                        <div>
-                            <img class="concert-footer-img" src="./images/home/tv-1.svg" alt="">
-                        </div>
-                        <div>
-                            <p class="horario-text text-dark">
-                                Horario sujetos a cambios
-                            </p>
-                        </div>
-                    </div>-->
                 </div>
                 <div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
                     <div>
@@ -302,7 +291,8 @@
             <!--End Versión mobile-->
             <!--Versión para tablet-->
             <div class="concert-channel-tablet">
-                <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
+                <div
+                    class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
 
                         <div class="p-3 col-3 border-t border-l border-r border-b position-relative mb-2 mt-1">
@@ -330,7 +320,8 @@
                     </div>
                 </div>
 
-                <div class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
+                <div
+                    class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
                     <div>
 
                     </div>
@@ -348,7 +339,8 @@
             <!--End Versión tablet-->
             <!--Concert channel desktop-->
             <div class="concert-channel-desktop">
-                <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
+                <div
+                    class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
 
                         <div class="col-5 border-t border-l border-r border-b position-relative mb-2 mt-1">
@@ -374,7 +366,8 @@
                 </div>
                 <div class="section-slider concert-home-slider">
                 </div>
-                <div class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
+                <div
+                    class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
                     <div>
 
                     </div>
@@ -425,7 +418,8 @@
             <!--Cinema claro tablet-->
             <div class="cinema-claro-tablet">
 
-                <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
+                <div
+                    class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
                     <div class="m-home-titles">
 
                         <div class="p-3 col-5 border-t border-l border-r border-b position-relative mb-2 mt-1">
@@ -460,18 +454,8 @@
                         </div>
                     </div>
                 </div>
-                <!--<div class="row no-gutters">
-                    <div class="col-5">
-                        <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
-                    </div>
-                    <div class="col-7">
-                        <div class="home-cinema-videos-container">
-                            <div class="cinema-home-slider">
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-                <div class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
+                <div
+                    class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
 
                     </div>
@@ -489,7 +473,8 @@
             <!--Cinema claro desktop-->
             <div class="cinema-claro-desktop">
                 <!--<div class="black-line"></div>-->
-                <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
+                <div
+                    class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
                     <div class="m-home-titles">
 
                         <div class="col-5 border-t border-l border-r border-b position-relative mb-2 mt-1">
@@ -523,15 +508,8 @@
                         </div>
                     </div>
                 </div>
-
-                <!--<div class="row no-gutters">
-                    <div class="col-md-4 col-xl-6">
-                        <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
-                    </div>
-                    <div class="col-md-8 col-xl-6 cinema-home-videos-container">
-                    </div>
-                </div>-->
-                <div class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
+                <div
+                    class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
 
                     </div>
@@ -580,7 +558,7 @@
     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
     <script>
         var socketHome = new easyXDM.Socket({
-            onReady: function() {
+            onReady: function () {
 
                 var hey = 4650;
                 console.log(hey);

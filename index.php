@@ -12,7 +12,6 @@
 			<img src="./images/logos/claro-networks-white.svg" class="paises-image">
 		</div>
 		<form action="./home.php" method="POST">
-
 			<div class="container paises-container">
 				<div class="paises col-md-12 fondopaises ">
 					<p class="select_paises">Selecciona tu país</p>
