@@ -94,11 +94,11 @@ if($_SESSION["country"] != 1){
         </div>
     </header>
 
-    <div class="container-fluid my-xl-4">
+    <div class="container-fluid my-xl-5">
         <div class="row">
             <div class="col-12 col-md-11 mx-auto my-md-5 my-4">
 
-                <div class="container-terminos mx-auto px-md-5 px-4 position-relative">
+                <div class="container-terminos mt-xl-5  mx-auto px-md-5 px-4 position-relative">
                     <img src="./images/General/close-back.png" class="pencil back-close" type="back-close" width="40px">
                     <!-- TITULO -->
                     <h4 id="about_title"></h4>
