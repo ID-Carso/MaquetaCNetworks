@@ -3494,7 +3494,8 @@ input::-webkit-credentials-auto-fill-button {
 .concert-item,
 .cinema-item,
 .vision-item,
-.sports-item {
+.sports-item,
+.item-no-available {
   padding: 10px 0;
 }
 

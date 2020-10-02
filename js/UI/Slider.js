@@ -204,7 +204,7 @@ export default class Slider {
           } else {
             if (day > lastDay && month === lastMonth) {
               daysSlider += `
-              <li class="${landing}-item programing-item">
+              <li class="cursor-auto pointer-events-none  item-no-available">
                 <div class="day">
                     <p class="day-text-desactivated">${getDayName(month, day)}</p>
                     <p class="day-number-desactivated">${day}</p>
