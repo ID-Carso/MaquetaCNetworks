@@ -53,7 +53,7 @@ if($_SESSION["country"] != 1){
             </div>
             <div class="row">
                 <!-- MENU -->
-                <div class="col-12 m-xl-5 pr-xl-5 mt-4">
+                <div class="col-12 pr-xl-5 mt-4">
                     <nav class="mx-xl-4 mt-xl-0 pr-xl-5">
                         <div class="navbar mr-xl-4">
                             <div>
@@ -94,7 +94,7 @@ if($_SESSION["country"] != 1){
         </div>
     </header>
 
-    <div class="container-fluid my-xl-4">
+    <div class="container-fluid my-xl-5">
         <div class="row">
             <div class="col-12 col-md-11 mx-auto my-md-5 my-4">
 
@@ -108,7 +108,7 @@ if($_SESSION["country"] != 1){
                     <div class="container-fluid mt-5">
                         <div class="row">
                             <div class="col-12 text-center">
-                                <button style="width: 200px;border: solid 2px #069cb0;color: #069cb0;" type="button" class="back-close form-button-outline">CERRAR</button>
+                                <button style="width: 200px;border: solid 2px #069cb0;color: #069cb0;border-radius: 20px;height: 54px;font-size: 18px;" type="button" class="back-close form-button-outline">CERRAR</button>
                             </div>
                         </div>
                     </div>
