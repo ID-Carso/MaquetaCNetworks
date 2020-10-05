@@ -1,7 +1,5 @@
 
 
-
-?>
 <nav class="menu-desktop-edi">
     <div class="nav-content-edi">
         <div class="claro-logo">

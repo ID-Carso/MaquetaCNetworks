@@ -103,10 +103,7 @@ let data = {
 if (arrayUrl[0] == url2) {
   validateToken(data);
 }
-//if (typeof  localStorage.getItem("src") == "undefined") {
-  //console.log("si");
-  //localStorage.setItem("src", "images/paises/gmt-icon.svg");
-//}
+
 
 let country = localStorage.getItem("country");
 let gender = localStorage.getItem("gender");
@@ -1190,9 +1187,19 @@ $(document).ready(function () {
   $(".terms-conditions-button, .arrow-back").click(function () {
     window.history.back();
   });
+
   var sessionSrc = localStorage.getItem("src");
   var loginCountry = $(".login-country");
   loginCountry.attr("src", sessionSrc);
+
+  if ("src" in localStorage) {
+    console.log("si");
+   
+}else{
+  console.log("no");
+  localStorage.setItem("src", "images/paises/gmt-icon.svg");
+}
+  
  
  
    
