@@ -146,8 +146,8 @@
                         <a href="sinopsis.php#dropdown-country"> <button class="synopsis-button">
                                 <div class="d-flex align-items-center">
 
-                                    <p class="synopsis-schedule-text mb-0">Horarios</p><img
-                                        src="./images/home/clock.svg" alt="">
+                                    <p class="synopsis-schedule-text mb-0">Añadir</p><img
+                                        src="./images/posters/heart-outline.svg" alt="">
 
                                 </div>
                             </button></a>
@@ -186,8 +186,8 @@
                                     </button>
                                     <a href="sinopsis.php#dropdown-country"><button class="synopsis-button">
                                             <div class="d-flex align-items-center">
-                                                <p class="synopsis-schedule-text mb-0">Horarios</p><img
-                                                    src="./images/home/clock.svg" alt="">
+                                                <p class="synopsis-schedule-text mb-0">Añadir</p><img
+                                                    src="./images/home/heart.svg" alt="">
                                             </div>
                                         </button></a>
                                 </div>
@@ -219,14 +219,25 @@
                                     <img src="./images/General/pencil.svg" alt="" class="pencil pencil-details"
                                         type="synopsis-datails-container">
                                     <div class="synopsis-rating-container">
-                                        <p class="synopsis-text synopsis-detail-text synopsis-country-edi">Estados
-                                            Unidos</p>
-                                        <p class="synopsis-text synopsis-year-edi synopsis-detail-text"></p>
-                                        <p class="synopsis-text synopsis-detail-text synopsis-rating-edi"></p>
+                                        <div class="d-flex align-items-center mr-5">
+                                            <span class="a-text-Regular-White text-normal mr-2">Duración: </span>
+                                            <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-duration-edi ml-0 mb-0"></p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <span class="a-text-Regular-White text-normal mr-2">Año: </span>
+                                            <p class=" a-text-white-monblack text-normal synopsis-year-edi synopsis-detail-text ml-0 mb-0"></p>  
+                                        </div>                                  
                                     </div>
                                     <div class="synopsis-seasons-container">
-                                        <p class="synopsis-text synopsis-detail-text synopsis-seasons-edi"></p>
-                                        <p class="synopsis-text synopsis-detail-text synopsis-duration-edi"></p>
+                                        <div class="d-flex align-items-center">
+                                            <span class="a-text-Regular-White text-normal mr-2">Temporadas: </span>
+                                            <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-seasons-edi ml-0 mb-0"></p> 
+                                        </div>
+                                        <div class="d-flex align-items-center ml-5">
+                                            <span class="a-text-Regular-White text-normal mr-2">Clasificación: </span>                 
+                                            <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-rating-edi ml-0 mb-0"></p>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -391,9 +402,9 @@
 
                 $('.synopsis-description-edi').text(data.data.sinopsis)
                 $('.synopsis-title-edi').text(data.data.title)
-                $('.synopsis-rating-edi').text(`Clasificación ${data.data.rating}`)
+                $('.synopsis-rating-edi').text(data.data.rating)
                 $('.synopsis-duration-edi').text(data.data.duration)
-                $('.synopsis-seasons-edi').text(`${data.data.seasons} Temporadas`)
+                $('.synopsis-seasons-edi').text(data.data.seasons)
                 $('.synopsis-year-edi').text(data.data.year)
                 $('.image-synopsis-edi').attr("src", imageSynopsis);
                 $('.synopsis-image-1-edi').attr("src", imageSynopsis1);

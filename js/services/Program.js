@@ -93,8 +93,8 @@ function destroySlider(container) {
 
 function getPrograms(date, country) {
     let dataProgram = {
-        function: "getPrograms",
-        //function: "getProgramsGMT",
+       // function: "getPrograms",
+       function: "getProgramsGMT",
         date,
         country,
     };
@@ -1561,6 +1561,9 @@ function getProgramming(date) {
         date,
         country: "gmt"
     }
+     //NORMAL
+     
+
     $.ajax({
         type: "POST",
         data: data,
@@ -1591,6 +1594,8 @@ function getProgramming(date) {
                 let programConcertChannelEdit = "";
                 let programClaroCinema = "";
                 let programClaroCinemaEdit = "";
+
+               
                 //Iteramos el arreglo de programas de canal claro
                 programmingCanalClaro.forEach(program => {
 
@@ -1869,6 +1874,8 @@ function getProgramming(date) {
                 $('.concert-content-edit').html(programConcertChannelEdit);
                 $('.cinema-content').html(programClaroCinema);
                 $('.cinema-content-edit').html(programClaroCinemaEdit);
+               
+              
             }
         },
     })
