@@ -20,7 +20,8 @@ if($_SESSION["country"] != 1){
     gtag('js', new Date());
 
     gtag('config', 'UA-179528937-1');
-    </script>
+</script>
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-5S7NP6G"></script>
 
     <?php include './views/partials/head.php' ?>
     <input type="hidden" id="actual_landing" value="programation">
