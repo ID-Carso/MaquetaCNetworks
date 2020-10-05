@@ -820,6 +820,28 @@
   font-family: $montserratSemiBold;
 }
 
+
+.day-text-desactivated,
+.day-number-desactivated {
+  color: #D5D7D7;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.day-text-desactivated {
+  font-family: $montserratLight;
+  font-size: 13px;
+  padding-bottom: 4px;
+}
+
+.day-number-desactivated {
+  font-size: 18px;
+  font-family: $montserratSemiBold;
+}
+
+
+
+
 .claro-active {
 
   .day-text,

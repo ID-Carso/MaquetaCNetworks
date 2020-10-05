@@ -1,28 +1,7 @@
-<?php
-
-session_start();
-
-if($_SESSION["country"] != 1){
-    header('Location: index.php');
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
- <!-- Global site tag (gtag.js) - Google Analytics -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-179528937-1');
-</script>
-<script src="https://www.googleoptimize.com/optimize.js?id=OPT-5S7NP6G"></script>
-
     <?php include './views/partials/head.php' ?>
     <input type="hidden" id="actual_landing" value="programation">
 
@@ -118,12 +97,12 @@ if($_SESSION["country"] != 1){
                 <div class="row no-gutters">
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="claro-canal-programing" class="active-navItem nav-li">
+                            <li rel="claro-canal-programing" class="nav-li">
                                 <img class="claro-nav-image" src="" alt="" id="icon_canal_claro" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="concert-channel-programing" class="nav-li">
+                            <li rel="concert-channel-programing" class="active-navItem nav-li">
                                 <img class="nav-image" src="" alt="" id="icon_concert_channel" />
                             </li>
                         </div>
@@ -137,7 +116,7 @@ if($_SESSION["country"] != 1){
                     </ul>
                 </div>
 
-                <div id="claro-canal-programing" class="tv-content">
+                <div id="claro-canal-programing" class="tv-content d-none">
                     <div class="no-gutters" id="container-slider-claro">
                         <div class="programacion-date-container">
                             <div class="no-gutters">
@@ -182,7 +161,7 @@ if($_SESSION["country"] != 1){
                 </div>
                 <!--End Concert channel de "Ahora en tv"-->
                 <!--Claro cinema de "Ahora en tv"-->
-                <div id="claro-cinema-programing" class="tv-content">
+                <div id="claro-cinema-programing" class="tv-content d-none">
                     <div class="no-gutters">
                         <div class="programacion-date-container">
                             <div class="no-gutters">

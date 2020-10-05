@@ -2,6 +2,95 @@ import {
     addFavorites
 } from "./user/user.js";
 
+/* Slider */
+import Slider from "../UI/Slider.js";
+
+function recreateClickCalendar() {
+
+    //Claro canal
+    $("ul.claro-calendar .claro-item").click(function () {
+        let date = $(this).attr("date");
+        //Petición ajax para traer la programación
+        getProgramming(date);
+
+        $("ul.claro-calendar .claro-item").removeClass("claro-active");
+        $(this).addClass("claro-active");
+
+        //Mostrar contenido (Que es innecesario en estos momentos)
+    });
+}
+
+function createProgramacionSlider() {
+    let programacion_slider = $(".programacion-slider").not('.slick-initialized').slick({
+        /**/
+        responsive: [{
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 7,
+                    slidesToScroll: 7,
+                    autoplay: false,
+                    centerMode: false,
+                    infinite: true,
+                    arrows: false,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 8,
+                    slidesToScroll: 8,
+                    infinite: true,
+                    dots: true,
+                    centerMode: false,
+                    arrows: true,
+                    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+                    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+                },
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 11,
+                    slidesToScroll: 11,
+                    infinite: true,
+                    dots: true,
+                    centerMode: false,
+                    arrows: true,
+                    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+                    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+                },
+            },
+            {
+                breakpoint: 1900,
+                settings: {
+                    slidesToShow: 11,
+                    slidesToScroll: 11,
+                    infinite: true,
+                    dots: true,
+                    centerMode: false,
+                    arrows: true,
+                    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+                    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+                },
+            },
+            {
+                breakpoint: 10000,
+                settings: {
+                    slidesToShow: 17,
+                    slidesToScroll: 17,
+                    infinite: false,
+                    dots: true,
+                    centerMode: false,
+                    arrows: true,
+                    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+                    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+                },
+            },
+        ],
+    });
+}
+
 function createClickThumbnails() {
     $(".thumbnail-body, .poster-live, .thumbnail-prog").click(function () {
         console.log("Sinopsus");
@@ -123,7 +212,6 @@ function getPrograms(date, country) {
         data: dataProgram,
         url: "./adapters/program.php",
         success: function (result) {
-
             let json = JSON.parse(result);
             /* SLIDER "AHORA EN VIVO CANAL CLARO*/
 
@@ -180,6 +268,7 @@ function getPrograms(date, country) {
             destroySlider(nowSliderNuestraVisionprev);
             destroySlider(nowSliderClaroSportsprev);
             let programCanalClaroEdit = "";
+            //CANAL CLARO
             programingCanalClaro.forEach((program, index) => {
                 let programCanalClaro;
                 //Verificamos que es el primer programa para poner el título "AHORA EN VIVO"
@@ -224,7 +313,6 @@ function getPrograms(date, country) {
                             </div>
                             `;
                         }
-
                     } else {
                         //El programa no se encuentre en los favoritos del usuario
                         if (program.landing_synopsis === 0) {
@@ -264,7 +352,6 @@ function getPrograms(date, country) {
                             </div>
                         `;
                         }
-
                     }
                 } else {
                     //Los demás programas que NO se encuentran AHORA EN VIVO
@@ -316,7 +403,6 @@ function getPrograms(date, country) {
                             </div>
                         `;
                         }
-
                     } else {
                         //El programa no se encuentra en la lista de favoritos del usuario
                         if (program.landing_synopsis === 0) {
@@ -341,7 +427,6 @@ function getPrograms(date, country) {
                             </div>
                         `;
                         }
-
                     }
                 }
                 nowSliderCanalClaro.append(programCanalClaro);
@@ -464,7 +549,6 @@ function getPrograms(date, country) {
                         </div>
                         `;
                     }
-
                 } else {
                     //VARIABLE PARA EDITAR DESDE PROGRAMACIÓN GENERAL EN BACKOFFICE
                     programCanalClaroEdit += `
@@ -581,7 +665,6 @@ function getPrograms(date, country) {
                     </div>
                         `;
                     }
-
                 }
                 claroCotentProgramacionGeneral.append(programCanalClaro);
 
@@ -642,7 +725,6 @@ function getPrograms(date, country) {
                             </div>
                         `;
                         }
-
                     } else {
                         if (program.landing_synopsis === 0) {
                             programCanalClaro = `
@@ -682,7 +764,6 @@ function getPrograms(date, country) {
                             </div>
                                 `;
                         }
-
                     }
                 } else {
                     if (arrayCanalClaro.includes(program.chapter_id)) {
@@ -788,7 +869,6 @@ function getPrograms(date, country) {
                             </div>
                             `;
                         }
-
                     } else {
                         if (program.landing_synopsis === 0) {
                             programConcertChannel = `
@@ -827,7 +907,6 @@ function getPrograms(date, country) {
                             </div>
                             `;
                         }
-
                     }
                 } else {
                     if (arrayConcertChannel.includes(program.chapter_id)) {
@@ -876,7 +955,6 @@ function getPrograms(date, country) {
                             </div>
                             `;
                         }
-
                     } else {
                         if (program.landing_synopsis === 0) {
                             programConcertChannel = `
@@ -923,7 +1001,6 @@ function getPrograms(date, country) {
                             </div>
                             `;
                         }
-
                     }
                 }
                 nowSliderConcertChannel.append(programConcertChannel);
@@ -999,7 +1076,6 @@ function getPrograms(date, country) {
                         </div>
                         `;
                     }
-
                 } else {
                     if (program.landing_synopsis === 0) {
                         programConcertChannel = `
@@ -1036,7 +1112,6 @@ function getPrograms(date, country) {
                         </div>
                         `;
                     }
-
                 }
 
                 concertContentProgramacionGeneral.append(programConcertChannel);
@@ -1087,7 +1162,7 @@ function getPrograms(date, country) {
                     } else {
                         if (program.landing_synopsis === 0) {
                             programClaroCinema = `
-                            <div class="poster-live cursor-pointer">
+                            <div class="poster-live cursor-auto">
                                 <div class="poster-body">
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <div>
@@ -1105,7 +1180,7 @@ function getPrograms(date, country) {
                             `;
                         } else {
                             programClaroCinema = `
-                            <div class="poster-live cursor-auto">
+                            <div class="poster-live cursor-pointer">
                                 <div class="poster-body">
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <div class="thumbnail-body" _id="${program.chapter_id}">
@@ -1122,7 +1197,6 @@ function getPrograms(date, country) {
                             </div>
                             `;
                         }
-
                     }
                 } else {
                     if (arrayClaroCinema.includes(program.chapter_id)) {
@@ -1149,7 +1223,7 @@ function getPrograms(date, country) {
                             `;
                         } else {
                             programClaroCinema = `
-                            <div class="poster" >
+                            <div class="poster cursor-pointer">
                                 <div class="poster-body">
                                     <div class="showtime-container justify-content-between">
                                         <p class="a-programming-text">${program.time}</p>
@@ -1169,11 +1243,10 @@ function getPrograms(date, country) {
                             </div>
                             `;
                         }
-
                     } else {
                         if (program.landing_synopsis == 0) {
                             programClaroCinema = `
-                            <div class="poster cursor-auto >
+                            <div class="poster cursor-auto" >
                                 <div class="poster-body">
                                     <div class="showtime-container justify-content-between">
                                         <p class="a-programming-text">${program.time}</p>
@@ -1216,7 +1289,6 @@ function getPrograms(date, country) {
                             </div>
                         `;
                         }
-
                     }
                 }
                 nowSliderClaroCinema.append(programClaroCinema);
@@ -1362,7 +1434,6 @@ function getPrograms(date, country) {
                         </div>
                             `;
                     }
-
                 }
 
                 cinemaContentProgramacionGeneral.append(programClaroCinema);
@@ -1503,7 +1574,6 @@ function getPrograms(date, country) {
             });
             //END CUADROS DE EDICION
 
-
             createTvSlider(nowSliderCanalClaro);
             createTvSlider(nowSliderCanalClaroprev);
 
@@ -1520,9 +1590,25 @@ function getPrograms(date, country) {
 
             /* END PROGRMACIÓN GENERAL*/
             createClickThumbnails();
+
+            let slider = new Slider();
+            let lastDateCanalClaro = json.data[0].last_day
+            slider.newCalendar(lastDateCanalClaro, "claro");
+            let lastDateConcertChannel = json.data[1].last_day
+            slider.newCalendar(lastDateConcertChannel, "concert");
+            let lastDateClaroCinema = json.data[2].last_day;
+            slider.newCalendar(lastDateClaroCinema, "cinema");
+            try {
+                $("programacion-slider").slick("unslick");
+                createProgramacionSlider();
+
+            } catch (error) {
+
+                createProgramacionSlider();
+            }
+            recreateClickCalendar()
         },
     });
-
 }
 
 function showSynopsis(id) {
@@ -1555,15 +1641,11 @@ function showSynopsis(id) {
 }
 
 function getProgramming(date) {
-
     let data = {
         function: "getProgramming",
         date,
-        country: "gmt"
-    }
-     //NORMAL
-     
-
+        country: "gmt",
+    };
     $.ajax({
         type: "POST",
         data: data,
@@ -1579,9 +1661,8 @@ function getProgramming(date) {
         success: function (result) {
             let data = JSON.parse(result);
             console.log(data);
-            $('.loader-container').remove();
+            $(".loader-container").remove();
             if (data.code == 200) {
-
                 //Programas de canal claro
                 let programmingCanalClaro = data.data[0].programing[0].programs;
                 //Programas de concert channel
@@ -1597,8 +1678,7 @@ function getProgramming(date) {
 
                
                 //Iteramos el arreglo de programas de canal claro
-                programmingCanalClaro.forEach(program => {
-
+                programmingCanalClaro.forEach((program) => {
                     programCanalClaro += `
                     <div class="schedule-container">
                     <p class="schedule-title">${program.chapter_title}</p>
@@ -1638,10 +1718,10 @@ function getProgramming(date) {
                     //Truncar el texto
                     let synopsis = program.sinopsis;
                     /*                     if (program.sinopsis) {
-                                            if (program.sinopsis.length > 150) {
-                                                synopsis = program.sinopsis.substr(0, 150) + "...";
-                                            }
-                                        } */
+                                                      if (program.sinopsis.length > 150) {
+                                                          synopsis = program.sinopsis.substr(0, 150) + "...";
+                                                      }
+                                                  } */
 
                     //Programas para la pantalla de editar programación en backoffice
                     programCanalClaroEdit += `
@@ -1687,7 +1767,7 @@ function getProgramming(date) {
                 </div> 
                     `;
                 });
-                programmingConcertChannel.forEach(program => {
+                programmingConcertChannel.forEach((program) => {
                     programConcertChannel += `
                     <div class="schedule-container">
                     <p class="schedule-title">${program.chapter_title}</p>
@@ -1727,10 +1807,10 @@ function getProgramming(date) {
                     //Truncar el texto
                     let synopsis = program.sinopsis;
                     /*                     if (program.sinopsis) {
-                                            if (program.sinopsis.length > 150) {
-                                                synopsis = program.sinopsis.substr(0, 150) + "...";
-                                            }
-                                        } */
+                                                      if (program.sinopsis.length > 150) {
+                                                          synopsis = program.sinopsis.substr(0, 150) + "...";
+                                                      }
+                                                  } */
                     //Programas para la pantalla de editar programación en backoffice
                     programConcertChannelEdit += `
                     <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
@@ -1775,8 +1855,7 @@ function getProgramming(date) {
                 </div> 
                     `;
                 });
-                programmingClaroCinema.forEach(program => {
-
+                programmingClaroCinema.forEach((program) => {
                     programClaroCinema += `
                     <div class="schedule-container">
                     <p class="schedule-title">${program.chapter_title}</p>
@@ -1816,10 +1895,10 @@ function getProgramming(date) {
                     //Truncar el texto
                     let synopsis = program.sinopsis;
                     /*                     if (program.sinopsis) {
-                                            if (program.sinopsis.length > 150) {
-                                                synopsis = program.sinopsis.substr(0, 150) + "...";
-                                            }
-                                        } */
+                                                      if (program.sinopsis.length > 150) {
+                                                          synopsis = program.sinopsis.substr(0, 150) + "...";
+                                                      }
+                                                  } */
                     //Programas para la pantalla de editar programación en backoffice
                     programClaroCinemaEdit += `
                     <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
@@ -1866,19 +1945,17 @@ function getProgramming(date) {
                 });
 
                 //Insertar programas para edición en backoffice
-                $('.claro-content-edit').html(programCanalClaroEdit);
+                $(".claro-content-edit").html(programCanalClaroEdit);
                 //Insertar programas en página
-                $('.claro-content').html(programCanalClaro);
+                $(".claro-content").html(programCanalClaro);
                 //Insertar programas en página
-                $('.concert-content').html(programConcertChannel);
-                $('.concert-content-edit').html(programConcertChannelEdit);
-                $('.cinema-content').html(programClaroCinema);
-                $('.cinema-content-edit').html(programClaroCinemaEdit);
-               
-              
+                $(".concert-content").html(programConcertChannel);
+                $(".concert-content-edit").html(programConcertChannelEdit);
+                $(".cinema-content").html(programClaroCinema);
+                $(".cinema-content-edit").html(programClaroCinemaEdit);
             }
         },
-    })
+    });
 }
 
 export {

@@ -16,18 +16,15 @@ if($_SESSION["country"] != 1){
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177830191-2"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-177830191-2');
-    </script>
+    gtag('config', 'UA-179528937-1');
+</script>
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-5S7NP6G"></script>
 
     <?php include './views/partials/head.php' ?>
 </head>
@@ -53,34 +50,18 @@ if($_SESSION["country"] != 1){
                     <span class="dropdown-p">Canal Claro</span>
                 </div>
             </a>
-            <!--<div class="dropdown-content">
-          <p class="dropdown-p">ebñrkjg</p>
-          <p class="dropdown-p">ebñrkjg</p>
-          <p class="dropdown-p">ebñrkjg</p>
-        </div>-->
             <a class="sidebar-link" href="concert-channel.php">
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Concert
                         Channel</span>
                 </div>
             </a>
-            <!--<div class="dropdown-content">
-          <p class="dropdown-p">ebñrkjg</p>
-          <p class="dropdown-p">ebñrkjg</p>
-          <p class="dropdown-p">ebñrkjg</p>
-        </div>-->
             <a class="sidebar-link" href="claro-cinema.php">
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Claro Cinema</span>
                 </div>
 
             </a>
-
-            <!--<div class="dropdown-content">
-          <p class="dropdown-p">ebñrkjg</p>
-          <p class="dropdown-p">ebñrkjg</p>
-          <p class="dropdown-p">ebñrkjg</p>
-        </div>-->
             <a class="sidebar-link" href="https://nuestravision.tv">
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Nuestra
@@ -107,19 +88,15 @@ if($_SESSION["country"] != 1){
                 </h1>
             </div>
             <div class="header-slider" id="slider-header-home">
-
             </div>
         </header>
         <header class="home-header">
-
             <div class="circle-video">
                 <video preload="yes" playsinline autoplay muted loop class="home-video">
                     <source src="./video/video.mp4" type="video/mp4" class="source-video" />
                 </video>
             </div>
-
             <div class="header">
-
                 <img src="./images/home/american-horror.jpeg" class="background-home rellax" data-rellax="10">
                 <nav class="menu-tablet">
                     <div class="nav-content">

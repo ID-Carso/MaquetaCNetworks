@@ -41,6 +41,33 @@
   font-display: block;
 }
 
+.bg-bubble{
+  background: url(../../images/bg-bubble.png);
+}
+
+.container-terminos{
+  width: 100%;
+  border: none;
+  box-shadow: 0 4px 20px 10px rgba(0, 0, 0, 0.30);
+  padding: 40px 0;
+  background: #fff;
+}
+
+.container-terminos h4 {
+  text-align: center;
+  color: #4a4a4a;
+  font-family: "Montserrat-Medium";
+}
+
+.container-terminos textarea{
+  width: 100%;
+  border: none;
+  color: #4a4a4a;
+  background: #fff;
+  resize: none;
+  font-family: "Montserrat-Medium";
+}
+
 .cursor-auto {
   cursor: auto !important;
 }
@@ -1090,6 +1117,24 @@ h6 {
 }
 
 .day-number {
+  font-size: 18px;
+  font-family: "Montserrat-SemiBold";
+}
+
+.day-text-desactivated,
+.day-number-desactivated {
+  color: #D5D7D7;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.day-text-desactivated {
+  font-family: "Montserrat-Light";
+  font-size: 13px;
+  padding-bottom: 4px;
+}
+
+.day-number-desactivated {
   font-size: 18px;
   font-family: "Montserrat-SemiBold";
 }
@@ -3481,7 +3526,8 @@ input::-webkit-credentials-auto-fill-button {
 .concert-item,
 .cinema-item,
 .vision-item,
-.sports-item {
+.sports-item,
+.item-no-available {
   padding: 10px 0;
 }
 

@@ -3,6 +3,15 @@
 <html lang="en">
 
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-179528937-1');
+</script>
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-5S7NP6G"></script>
 	<?php include './views/partials/head.php' ?>
 </head>
 
@@ -12,7 +21,6 @@
 			<img src="./images/logos/claro-networks-white.svg" class="paises-image">
 		</div>
 		<form action="./home.php" method="POST">
-
 			<div class="container paises-container">
 				<div class="paises col-md-12 fondopaises ">
 					<p class="select_paises">Selecciona tu país</p>
@@ -129,7 +137,8 @@
 											style="display: flex; width: 20%; max-width: 29px; min-width: 29px;padding: 0;  margin-left: 16px;">
 											<img src="images/paises/dominican-republic.svg" class="Icon_paises"></div>
 
-										<div class="col" style="width: 50%; margin: 0 20px 0 14px; padding: 0;">
+										<div class="col text-left"
+											style="width: 50%; margin: 0 20px 0 14px; padding: 0;">
 											República Dominicana
 										</div>
 									</div>
