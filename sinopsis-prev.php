@@ -95,8 +95,8 @@
                         </button>
                         <a href="sinopsis.php#dropdown-country"> <button class="synopsis-button">
                                 <div class="d-flex align-items-center">
-                                    <p class="synopsis-schedule-text mb-0">Horarios</p><img
-                                        src="./images/home/clock.svg" alt="">
+                                    <p class="synopsis-schedule-text mb-0">Añadir</p><img
+                                        src="./images/home/heart.svg" alt="">
                                 </div>
                             </button></a>
                     </div>
@@ -123,8 +123,8 @@
                                     </button>
                                     <a href="sinopsis.php#dropdown-country"><button class="synopsis-button">
                                             <div class="d-flex align-items-center">
-                                                <p class="synopsis-schedule-text mb-0">Horarios</p><img
-                                                    src="./images/home/clock.svg" alt="">
+                                                <p class="synopsis-schedule-text mb-0">Añadir</p><img
+                                                    src="./images/home/heart.svg" alt="">
                                             </div>
                                         </button>
                                     </a>
@@ -141,17 +141,26 @@
                             </div>
                             <div class="">
                                 <div class="synopsis-details-container">
-                                    <div class="synopsis-rating-container">
-                                        <p class="synopsis-text synopsis-detail-text">Estados Unidos</p>
-                                        <p class="synopsis-text synopsis-detail-text synopsis-year-prev">2013</p>
-                                        <p class="synopsis-text synopsis-detail-text synopsis-rating-prev">Clasificación
-                                            C</p>
+                                <div class="synopsis-rating-container">
+                                        <div class="d-flex align-items-center mr-5">
+                                            <span class="a-text-Regular-White text-normal mr-2">Duración: </span>
+                                            <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-duration-edi ml-0 mb-0"></p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <span class="a-text-Regular-White text-normal mr-2">Año: </span>
+                                            <p class=" a-text-white-monblack text-normal synopsis-year-edi synopsis-detail-text ml-0 mb-0"></p>  
+                                        </div>                                  
                                     </div>
                                     <div class="synopsis-seasons-container">
-                                        <p class="synopsis-text synopsis-detail-text synopsis-seasons-prev'">4
-                                            Temporadas</p>
-                                        <p class="synopsis-text synopsis-detail-text synopsis-duration-prev">60 Minutos
-                                        </p>
+                                        <div class="d-flex align-items-center">
+                                            <span class="a-text-Regular-White text-normal mr-2">Temporadas: </span>
+                                            <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-seasons-edi ml-0 mb-0"></p> 
+                                        </div>
+                                        <div class="d-flex align-items-center ml-5">
+                                            <span class="a-text-Regular-White text-normal mr-2">Clasificación: </span>                 
+                                            <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-rating-edi ml-0 mb-0"></p>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>

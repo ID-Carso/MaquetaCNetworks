@@ -55,10 +55,13 @@ function getNameCountry(image) {
     case "uruguay.svg":
       nameCountry = "uruguay";
       break;
+      case "gmt-icon.svg":
+        nameCountry = "gmt";
+        break;
 
     default:
-      case "dominican-republic.svg":
-        nameCountry = "dominican-republic";
+      case "gmt-icon.svg":
+        nameCountry = "gmt";
         break;
   }
   return nameCountry;

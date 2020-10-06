@@ -11,6 +11,7 @@
   padding: 6px;
 }
 
+
 @mixin title-section($colorText, $fontSize, $fontFamily: $montserratBlack) {
   @extend %title-basic;
   font-size: $fontSize;
@@ -69,7 +70,10 @@
   color: $colorWhite;
   font-size: 14px;
 }
-
+.a-text-Regular-White {
+  font-family: $montserratRegular;
+  color: $colorWhite;
+} 
 .a-text-medium-greyish {
   color: $greyishBrownTwo;
   font-family: $montserratMedium;
@@ -1325,7 +1329,6 @@
   font-family: $montserratBlack;
   color: $colorWhite;
 }
-
 .a-text-warm-grey-bold {
   font-family: $montserratBold;
   color: $warmGray;

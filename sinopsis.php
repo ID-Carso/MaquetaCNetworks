@@ -12,6 +12,16 @@ if($_SESSION["country"] != 1){
 <html lang="en">
 
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-179528937-1');
+</script>
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-5S7NP6G"></script>
+
     <?php include './views/partials/head.php' ?>
     <script src="./js/synopsis.js?t=<?php echo time(); ?>"></script>
 </head>
@@ -111,8 +121,8 @@ if($_SESSION["country"] != 1){
                         <a href="sinopsis.php#dropdown-country"> <button class="synopsis-button">
                                 <div class="d-flex align-items-center">
 
-                                    <p class="synopsis-schedule-text mb-0">Horarios</p><img
-                                        src="./images/home/clock.svg" alt="">
+                                    <p class="synopsis-schedule-text mb-0">Añadir</p><img
+                                        src="./images/home/heart.svg" alt="">
 
                                 </div>
                             </button></a>
@@ -163,17 +173,27 @@ if($_SESSION["country"] != 1){
                                 <img src="" alt="" class="col-lg-4 synopsis-image synopsis-chapter-image-3">
                             </div>
                             <div class="">
-                                <div class="synopsis-details-container">
-                                    <div class="synopsis-rating-container">
-                                        <p class="synopsis-text synopsis-detail-text synopsis-country"></p>
-                                        <p class="synopsis-text synopsis-detail-text synopsis-year"></p>
-                                        <p class="synopsis-text synopsis-detail-text synopsis-rating"></p>
+                            <div class="synopsis-rating-container">
+                                        <div class="d-flex align-items-center mr-5">
+                                            <span class="a-text-Regular-White text-normal mr-2">Duración: </span>
+                                            <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-duration-edi ml-0 mb-0"></p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <span class="a-text-Regular-White text-normal mr-2">Año: </span>
+                                            <p class=" a-text-white-monblack text-normal synopsis-year-edi synopsis-detail-text ml-0 mb-0"></p>  
+                                        </div>                                  
                                     </div>
                                     <div class="synopsis-seasons-container">
-                                        <p class="synopsis-text synopsis-detail-text synopsis-seasons"></p>
-                                        <p class="synopsis-text synopsis-detail-text synopsis-duration"></p>
+                                        <div class="d-flex align-items-center">
+                                            <span class="a-text-Regular-White text-normal mr-2">Temporadas: </span>
+                                            <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-seasons-edi ml-0 mb-0"></p> 
+                                        </div>
+                                        <div class="d-flex align-items-center ml-5">
+                                            <span class="a-text-Regular-White text-normal mr-2">Clasificación: </span>                 
+                                            <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-rating-edi ml-0 mb-0"></p>
+                                        </div>
+                                        
                                     </div>
-                                </div>
                             </div>
                         </div>
                     </div>

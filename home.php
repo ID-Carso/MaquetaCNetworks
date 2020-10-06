@@ -16,18 +16,15 @@ if($_SESSION["country"] != 1){
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177830191-2"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-177830191-2');
-    </script>
+    gtag('config', 'UA-179528937-1');
+</script>
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-5S7NP6G"></script>
 
     <?php include './views/partials/head.php' ?>
 </head>

@@ -104,7 +104,7 @@
                     </div>
                 </nav>
                 <?php
-                include './views/partials/menu-desktop-black-edi.php'
+                include './views/partials/menu-desktop-black-edi1.php'
                 ?>
 
                 <div class="header-details header-detail-margin col-md-6" style="margin-top: 242px;">
