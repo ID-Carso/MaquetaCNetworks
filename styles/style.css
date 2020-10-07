@@ -41,33 +41,6 @@
   font-display: block;
 }
 
-.bg-bubble{
-  background: url(../../images/bg-bubble.png);
-}
-
-.container-terminos{
-  width: 100%;
-  border: none;
-  box-shadow: 0 4px 20px 10px rgba(0, 0, 0, 0.30);
-  padding: 40px 0;
-  background: #fff;
-}
-
-.container-terminos h4 {
-  text-align: center;
-  color: #4a4a4a;
-  font-family: "Montserrat-Medium";
-}
-
-.container-terminos textarea{
-  width: 100%;
-  border: none;
-  color: #4a4a4a;
-  background: #fff;
-  resize: none;
-  font-family: "Montserrat-Medium";
-}
-
 .cursor-auto {
   cursor: auto !important;
 }
@@ -6339,6 +6312,34 @@ div #banner-concert-channel-edi .slick-track {
 
 .synopsis-content {
   background: #000000;
+}
+
+.bg-bubble {
+  background: url(../../images/bg-bubble.png);
+}
+
+.container-terminos {
+  width: 100%;
+  border: none;
+  -webkit-box-shadow: 0 4px 20px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 20px 10px rgba(0, 0, 0, 0.3);
+  padding: 40px 0;
+  background: #fff;
+}
+
+.container-terminos h4 {
+  text-align: center;
+  color: #4a4a4a;
+  font-family: "Montserrat-Medium";
+}
+
+.container-terminos textarea {
+  width: 100%;
+  border: none;
+  color: #4a4a4a;
+  background: #fff;
+  resize: none;
+  font-family: "Montserrat-Medium";
 }
 
 .wrapper {
