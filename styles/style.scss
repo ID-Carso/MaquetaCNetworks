@@ -29,6 +29,7 @@
 @import "./components/organisms/menu";
 @import "./components/organisms/footer";
 @import "./components/organisms/form";
+@import "./components/pages/synopsis";
 @import "./components/atoms/loader";
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3241,8 +3242,6 @@
       padding: 0px 0px 0px 0px !important;
     }
   }
-
-
 
   /*   .slick-slider .slick-list {
     padding: 0px 0px 0px 0px !important;

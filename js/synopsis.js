@@ -335,51 +335,67 @@ $(document).ready(function () {
 
             for (let index = 0; index < numberDays; index++) {
               //Regiones
-              timeRegions[index].forEach((element) => {
+              timeRegions[index].forEach((element, index) => {
                 //Horarios en AM
                 let am = element.AM;
                 //Horarios en PM
                 let pm = element.PM;
-
-                am.forEach((time) => {
-                  timeAm += `
-                                          <div class="time-container py-2 py-sm-2 py-md-3 py-lg-3 py-xl-4 text-center mb-2 mb-sm-2 mb-lg-3 mb-xl-4">
-                                              <span class="time-begin-text">Inicio: </span>
-                                              <span class="time-begin-number">${time}</span>
-                                          </div>
-                                          `;
-                  console.log(time);
-                });
-                pm.forEach((time) => {
-                  timePm += `
-                                          <div class="time-container py-2 py-sm-2 py-md-3 py-lg-3 py-xl-4 text-center mb-2 mb-sm-2 mb-lg-3 mb-xl-4">
-                                              <span class="time-begin-text">Inicio: </span>
-                                              <span class="time-begin-number">${time}</span>
-                                          </div>
-                                          `;
-                });
-
-                dayContainer += `
+                if (am.length == 0 && pm.length == 0) {
+                  dayContainer += `
                   <div class="times-container">
-                      <div class="row h-100 p-2 p-sm-2 p-md-3 p-lg-3 p-xl-3">
-                          <div class="col-12 d-block d-sm-block d-md-block d-lg-none d-xl-none">
-                            ${timeAm}
-                            ${timePm}
+                    <div class="row h-100 p-2 p-sm-2 p-md-3 p-lg-3 p-xl-3">
+                        <div class="col-12">
+                          <div class="no-schedule-container">
+                            <div>
+                              <img class="no-schedule-image" src="./images/sinopsis/no-synopsis.png" />
+                              <p class="no-schedule-text mt-5 a-text-bold-cool-grey text-center">No hay programación para este día</p>
+                            </div>
                           </div>
-                          <div class="col-6 d-none d-sm-none d-md-none d-lg-block d-xl-block text-center">
-                              <h2 class="d-none d-sm-none d-md-none d-lg-block d-xl-block  time-title py-3">AM</h2>
-                              ${timeAm}
-                          </div>
-                          <div class="col-6 d-none d-sm-none d-md-none d-lg-block d-xl-block text-center">
-                              <h2 class="d-none d-sm-none d-md-none d-lg-block d-xl-block time-title py-3">PM</h2>
-                              ${timePm}
-                          </div>
-                      </div>    
+                        </div>
+                    </div>    
                   </div>
                   `;
+                } else {
+                  console.log("Dentro2");
+                  am.forEach((time) => {
+                    timeAm += `
+                                            <div class="time-container py-2 py-sm-2 py-md-3 py-lg-3 py-xl-4 text-center mb-2 mb-sm-2 mb-lg-3 mb-xl-4">
+                                                <span class="time-begin-text">Inicio: </span>
+                                                <span class="time-begin-number">${time}</span>
+                                            </div>
+                                            `;
+                  });
+                  pm.forEach((time) => {
+                    timePm += `
+                                            <div class="time-container py-2 py-sm-2 py-md-3 py-lg-3 py-xl-4 text-center mb-2 mb-sm-2 mb-lg-3 mb-xl-4">
+                                                <span class="time-begin-text">Inicio: </span>
+                                                <span class="time-begin-number">${time}</span>
+                                            </div>
+                                            `;
+                  });
 
-                timeAm = "";
-                timePm = "";
+                  dayContainer += `
+                    <div class="times-container">
+                        <div class="row h-100 p-2 p-sm-2 p-md-3 p-lg-3 p-xl-3">
+                            <div class="col-12 d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                              ${timeAm}
+                              ${timePm}
+                            </div>
+                            <div class="col-6 d-none d-sm-none d-md-none d-lg-block d-xl-block text-center">
+                                <h2 class="d-none d-sm-none d-md-none d-lg-block d-xl-block  time-title py-3">AM</h2>
+                                ${timeAm}
+                            </div>
+                            <div class="col-6 d-none d-sm-none d-md-none d-lg-block d-xl-block text-center">
+                                <h2 class="d-none d-sm-none d-md-none d-lg-block d-xl-block time-title py-3">PM</h2>
+                                ${timePm}
+                            </div>
+                        </div>    
+                    </div>
+                    `;
+
+                  timeAm = "";
+                  timePm = "";
+                }
               });
             }
             sliderContainer += `
@@ -541,7 +557,7 @@ $(document).ready(function () {
             );
             $(this).addClass("region-country-container-active");
             let rel = $(this).attr("rel");
-            console.log(rel);
+
             regionTimesContainer.hide();
             $("#" + rel).show();
             try {

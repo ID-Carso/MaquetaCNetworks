@@ -1,0 +1,38 @@
+.no-schedule-container {
+  padding: 16px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 var(--black-three),
+    inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+  background-color: #0f0e0e;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.no-schedule-text {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .no-schedule-text {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .no-schedule-text {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1899px) {
+  .no-schedule-text {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .no-schedule-text {
+    font-size: 21px;
+  }
+}
