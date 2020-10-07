@@ -195,8 +195,8 @@ function destroySlider(container) {
 
 function getPrograms(date, country) {
   let dataProgram = {
-    // function: "getPrograms",
-    function: "getProgramsGMT",
+    function: "getPrograms",
+    // function: "getProgramsGMT",
     date,
     country,
   };
@@ -1039,6 +1039,8 @@ function getPrograms(date, country) {
           }
         }
         nowSliderConcertChannel.append(programConcertChannel);
+
+        nowSliderConcertChannelprev.append(programConcertChannel);
 
         /* PROGRAMACIÓN GENERAL - CONCERT CHANNEL*/
         if (arrayConcertChannel.includes(program.chapter_id)) {

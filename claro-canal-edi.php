@@ -3,7 +3,6 @@
 
 <head>
   <?php include './views/partials/head.php' ?>
-  <script src="./js/backoffice/main.js?t=<?php echo time(); ?>" defer></script>
   <input type="hidden" id="actual_landing" value="canal_claro">
 </head>
 
@@ -143,9 +142,9 @@
 
         <div class="today-videos-container position-relative border-t border-l border-r border-b p-2">
           <img id="claro-canal-edi-programacion" src=" ./images/General/pencil.svg" alt="" class="pencil">
-          <div class="section-slider today-claro-slider-edit">
+          <div class="section-slider today-claro-slider-prev">
           </div>
-    </section>
+    </section> 
 
     <section class="next-week-claro">
       <div class="next-week-container">

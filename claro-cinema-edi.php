@@ -3,7 +3,7 @@
 
 <head>
   <?php include './views/partials/head.php' ?>
-  <script src="./js/backoffice/main.js?t=<?php echo time(); ?>" defer></script>
+
   <input type="hidden" id="actual_landing" value="claro_cinema">
 </head>
 

@@ -107,6 +107,7 @@
                 <div class="section-slider concert-slider today-concert-channel-slider-prev">
 
                 </div>
+</div>
 
         </section>
         <section class="next-week-concert">

@@ -98,8 +98,8 @@
                         </div>
 
                         <div class="login">
-                            <a href="" class="login-item"><img class="login-country" alt=""
-                                    src="images/paises/ecuador.svg"></a>
+                        <a href="index.php" class="login-item"><img  src="images/paises/gmt-icon.svg" alt=""
+                                    width="32px"></a>
                         </div>
                     </div>
                 </nav>
