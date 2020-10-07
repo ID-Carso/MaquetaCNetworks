@@ -312,7 +312,7 @@ function getPrograms(date, country) {
                             <div class="poster">
                                 <div class="poster-body">
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                                    <div class="thumbnail-body" _id="${program.chapter_id}">
+                                    <a  href="./sinopsis.php?id=${program.chapter_id}">
                                         <div class="thumbnail">
                                             <img src="${program.image}" alt="">
                                         </div>
@@ -321,7 +321,7 @@ function getPrograms(date, country) {
                                                 <p class="a-poster-text-white">${program.chapter_title}</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                             `;
@@ -351,7 +351,7 @@ function getPrograms(date, country) {
                             <div class="poster cursor-pointer">
                                 <div class="poster-body">
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                                    <div class="thumbnail-body" _id="${program.chapter_id}" >
+                                    <a  href="./sinopsis.php?id=${program.chapter_id}">
                                         <div class="thumbnail">
                                             <img src="${program.image}" alt="">
                                         </div>
@@ -360,7 +360,7 @@ function getPrograms(date, country) {
                                                 <p class="a-poster-text-white">${program.chapter_title}</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         `;
@@ -402,30 +402,6 @@ function getPrograms(date, country) {
                                         <button type="button" class="poster-button remove-program" _id="${program.chapter_id}"><img src="./images/posters/heart-icon-white.svg" alt="" class="poster-add"></button>
                                     </div>
     
-                                    <div class="thumbnail-body" _id="${program.chapter_id}">
-                                        <div class="thumbnail">
-                                            <img src="${program.image}" alt="">
-                                        </div>
-                                        <div class="a-claro-rectangle thumbnail-info-title">
-                                            <div class="poster-title-margin">
-                                                <p class="a-poster-text-white">${program.chapter_title}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-            }
-          } else {
-            //El programa no se encuentra en la lista de favoritos del usuario
-            if (program.landing_synopsis === 0) {
-              programCanalClaro = `
-                            <div class="poster cursor-auto" >
-                                <div class="poster-body">
-                                    <div class="showtime-container justify-content-between">
-                                        <p class="a-programming-text">${program.time}</p>
-                                        <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
-                                    </div>
                                     <a  href="./sinopsis.php?id=${program.chapter_id}">
                                         <div class="thumbnail">
                                             <img src="${program.image}" alt="">
@@ -439,7 +415,10 @@ function getPrograms(date, country) {
                                 </div>
                             </div>
                         `;
-            } else {
+            }
+          } else {
+            //El programa no se encuentra en la lista de favoritos del usuario
+            if (program.landing_synopsis === 0) {
               programCanalClaro = `
                             <div class="poster cursor-auto" >
                                 <div class="poster-body">
@@ -456,7 +435,29 @@ function getPrograms(date, country) {
                                                 <p class="a-poster-text-white">${program.chapter_title}</p>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+            } else {
+              programCanalClaro = `
+                            <div class="poster cursor-auto" >
+                                <div class="poster-body">
+                                    <div class="showtime-container justify-content-between">
+                                        <p class="a-programming-text">${program.time}</p>
+                                        <button type="button" class="poster-button add-favorites" _id="${program.chapter_id}"><img src="./images/posters/heart-outline.svg" alt="" class="poster-add"></button>
+                                    </div>
+                                    <a  href="./sinopsis.php?id=${program.chapter_id}">
+                                    
+                                        <div class="thumbnail">
+                                            <img src="${program.image}" alt="">
                                         </div>
+                                        <div class="a-claro-rectangle thumbnail-info-title">
+                                            <div class="poster-title-margin">
+                                                <p class="a-poster-text-white">${program.chapter_title}</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         `;
@@ -555,9 +556,9 @@ function getPrograms(date, country) {
                             <div class="schedule-item-body">
                                 <div class="schedule-poster">
                                     <div class="poster cursor-pointer">
-                                        <div class="thumbnail-prog" _id="${program.chapter_id}">
+                                        <a  href="./sinopsis.php?id=${program.chapter_id}">
                                             <img src="${program.image}" alt="">
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
     
@@ -672,9 +673,9 @@ function getPrograms(date, country) {
                         <div class="schedule-item-body">
                             <div class="schedule-poster">
                                <div class="poster cursor-pointer">
-                                    <div class="thumbnail-prog" _id="${program.chapter_id}">
+                                    <a  href="./sinopsis.php?id=${program.chapter_id}">
                                         <img src="${program.image}" alt="" class="w-100">
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="schedule-details">
@@ -745,7 +746,7 @@ function getPrograms(date, country) {
                             <div class="poster cursor-pointer">
                                 <div class="poster-body">
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                                    <div class="thumbnail-body" _id="${program.chapter_id}">
+                                    <a  href="./sinopsis.php?id=${program.chapter_id}">
                                         <div class="thumbnail">                       
                                             <img src="${program.image}" alt="">                             
                                         </div>
@@ -754,7 +755,7 @@ function getPrograms(date, country) {
                                                 <p class="a-poster-text-white">${program.chapter_title}</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         `;
@@ -784,7 +785,7 @@ function getPrograms(date, country) {
                             <div class="poster cursor-pointer" >
                                 <div class="poster-body">
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
-                                    <div class="thumbnail-body" _id="${program.chapter_id}">
+                                    <a  href="./sinopsis.php?id=${program.chapter_id}">
                                         <div class="thumbnail">
                                             <img src="${program.image}" alt="">
                                         </div>
@@ -793,7 +794,7 @@ function getPrograms(date, country) {
                                                 <p class="a-poster-text-white">${program.chapter_title}</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                                 `;
