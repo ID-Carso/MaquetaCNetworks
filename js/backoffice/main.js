@@ -97,11 +97,11 @@ $(document).ready(function () {
       createClickThumbnails();
       let json = JSON.parse(result);
       console.log(json);
-      let sliderCanalClarLanding = $(".today-claro-slider-edit");
+      let sliderCanalClarLandingedi= $(".today-claro-slider-edi");
       let sliderCanalClarLandingPrev = $(".today-claro-slider-prev");
       let sliderConcertChannelLanding = $(".today-concert-slider-edit");
       let sliderConcertChannelLandingPrev = $(".today-concert-channel-slider-prev");
-      let sliderClaroCinemaLandingPrev = $(".oday-claro-cinema-slider-prev");
+      let sliderClaroCinemaLandingPrev = $(".today-claro-cinema-slider-prev");
       //Contenedor para insertar todos los programas
       let claroCotentProgramacionGeneralEdit = $(".claro-content-edit");
       //Programación de los diferentes landings
@@ -115,7 +115,7 @@ $(document).ready(function () {
       let programConcertChannelEdit = "";
       let programClaroCinemaEdit = "";
 
-      sliderCanalClarLanding.slick("unslick");
+      sliderCanalClarLandingedi.slick("unslick");
       sliderCanalClarLandingPrev.slick("unslick");
       sliderConcertChannelLanding.slick("unslick");
       sliderConcertChannelLandingPrev.slick("unslick");
@@ -425,12 +425,12 @@ $(document).ready(function () {
       claroCotentProgramacionGeneralEdit.html(programCanalClaroEdit);
       $(".concert-content-edit").html(programConcertChannelEdit);
       $(".cinema-content-edit").html(programClaroCinemaEdit);
-      sliderCanalClarLanding.html(programLandingCanalClaro);
+      sliderCanalClarLandingedi.html(programLandingCanalClaro);
       sliderCanalClarLandingPrev.html(programLandingCanalClaro);
       sliderConcertChannelLanding.html(programLandingConcertChannel);
       sliderConcertChannelLandingPrev.html(programLandingConcertChannel);
       sliderClaroCinemaLandingPrev.html(programLandingClaroCinema);
-      createTvSlider(sliderCanalClarLanding);
+      createTvSlider(sliderCanalClarLandingedi);
       createTvSlider(sliderConcertChannelLanding);
       createTvSlider(sliderCanalClarLandingPrev);
       createTvSlider(sliderConcertChannelLandingPrev);

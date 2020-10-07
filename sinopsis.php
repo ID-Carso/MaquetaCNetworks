@@ -12,16 +12,6 @@ if($_SESSION["country"] != 1){
 <html lang="en">
 
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-179528937-1');
-</script>
-<script src="https://www.googleoptimize.com/optimize.js?id=OPT-5S7NP6G"></script>
-
     <?php include './views/partials/head.php' ?>
     <script src="./js/synopsis.js?t=<?php echo time(); ?>"></script>
 </head>
@@ -122,7 +112,7 @@ if($_SESSION["country"] != 1){
                                 <div class="d-flex align-items-center">
 
                                     <p class="synopsis-schedule-text mb-0">Añadir</p><img
-                                        src="./images/home/heart.svg" alt="">
+                                        src="./images/home/triangle-2-copy-4.svg" alt="">
 
                                 </div>
                             </button></a>

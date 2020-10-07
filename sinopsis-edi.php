@@ -146,8 +146,9 @@
                         <a href="sinopsis.php#dropdown-country"> <button class="synopsis-button">
                                 <div class="d-flex align-items-center">
 
-                                    <p class="synopsis-schedule-text mb-0">Añadir</p><img
-                                        src="./images/posters/heart-outline.svg" alt="">
+                                    <p class="synopsis-schedule-text mb-0">Añadir</p>
+                                    <img src="./images/home/triangle-2-copy-4.svg" alt="" class="synopsis-heart">
+
 
                                 </div>
                             </button></a>
@@ -186,8 +187,9 @@
                                     </button>
                                     <a href="sinopsis.php#dropdown-country"><button class="synopsis-button">
                                             <div class="d-flex align-items-center">
-                                                <p class="synopsis-schedule-text mb-0">Añadir</p><img
-                                                    src="./images/home/heart.svg" alt="">
+                                                <p class="synopsis-schedule-text mb-0">Añadir</p>
+                                                <img src="./images/home/triangle-2-copy-4.svg" alt="" class="synopsis-heart">
+
                                             </div>
                                         </button></a>
                                 </div>

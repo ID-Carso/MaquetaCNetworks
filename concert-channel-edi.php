@@ -3,7 +3,6 @@
 
 <head>
     <?php include './views/partials/head.php' ?>
-    <script src="./js/backoffice/main.js?t=<?php echo time(); ?>" defer></script>
     <input type="hidden" id="actual_landing" value="concert_channel">
 </head>
 
@@ -124,8 +123,9 @@
             <div class="today-concert-videos-container position-relative border-t border-l border-r border-b">
                 <img src="./images/General/pencil.svg" alt="" class="pencil pencil-concert pencil-slider"
                     type="current-programming-concert">
-                <div class="section-slider p-3 concert-slider today-concert-slider-edit">
+                <div class="section-slider p-3 today-concert-channel-slider-prev">
                 </div>
+</div>
         </section>
         <section class="next-week-concert">
             <div
