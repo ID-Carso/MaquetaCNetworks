@@ -3,15 +3,35 @@
 <html lang="en">
 
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-179528937-1');
-</script>
-<script src="https://www.googleoptimize.com/optimize.js?id=OPT-5S7NP6G"></script>
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-179528937-1');
+	</script>
+	<!-- Hotjar Tracking Code for http://www.claronetworks.openofficedospuntocero.in -->
+	<script>
+		(function(h, o, t, j, a, r) {
+			h.hj = h.hj || function() {
+				(h.hj.q = h.hj.q || []).push(arguments)
+			};
+			h._hjSettings = {
+				hjid: 2029506,
+				hjsv: 6
+			};
+			a = o.getElementsByTagName('head')[0];
+			r = o.createElement('script');
+			r.async = 1;
+			r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+	</script>
+	<script src="https://www.googleoptimize.com/optimize.js?id=OPT-5S7NP6G"></script>
 	<?php include './views/partials/head.php' ?>
 </head>
 
@@ -86,8 +106,7 @@
 								<input type="hidden" name="country" value="guatemala">
 								<a href="home.php">
 									<div class="name_paises espacio">
-										<img src="images/paises/guatemala.svg"
-											class="Icon_paises"><span>Guatemala</span>
+										<img src="images/paises/guatemala.svg" class="Icon_paises"><span>Guatemala</span>
 									</div>
 								</a>
 							</button>
@@ -133,12 +152,10 @@
 								<input type="hidden" name="country" value="rd">
 								<div class="name_paises espacio">
 									<div class="row">
-										<div class="col align-middle"
-											style="display: flex; width: 20%; max-width: 29px; min-width: 29px;padding: 0;  margin-left: 16px;">
+										<div class="col align-middle" style="display: flex; width: 20%; max-width: 29px; min-width: 29px;padding: 0;  margin-left: 16px;">
 											<img src="images/paises/dominican-republic.svg" class="Icon_paises"></div>
 
-										<div class="col text-left"
-											style="width: 50%; margin: 0 20px 0 14px; padding: 0;">
+										<div class="col text-left" style="width: 50%; margin: 0 20px 0 14px; padding: 0;">
 											República Dominicana
 										</div>
 									</div>
@@ -147,8 +164,7 @@
 							<a href="https://nuestravision.tv">
 								<div class="name_paises espacio">
 									<div class="row">
-										<div class="col align-middle"
-											style="display: flex; width: 20%; max-width: 29px; min-width: 29px;padding: 0;  margin-left: 16px;">
+										<div class="col align-middle" style="display: flex; width: 20%; max-width: 29px; min-width: 29px;padding: 0;  margin-left: 16px;">
 											<img src="images/paises/usa.svg" class="Icon_paises"></div>
 
 										<div class="col" style="width: 50%; margin: 0 20px 0 14px; padding: 0;">

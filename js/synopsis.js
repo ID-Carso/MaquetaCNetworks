@@ -1,4 +1,23 @@
 $(document).ready(function () {
+  let parameter = location.search.substring(1).split("=");
+  let id = parameter[1];
+  let dataProgram = {
+    function: "showSynopsis",
+    chapter_id: id,
+  };
+
+  $.ajax({
+    type: "POST",
+    data: dataProgram,
+    url: "./adapters/program.php",
+    success: function (result) {
+      let json = JSON.parse(result);
+      if (json.code == 200) {
+        console.log(json.data);
+      }
+    },
+  });
+
   let programSynopsis = JSON.parse(localStorage.getItem("synopsis"));
 
   let synopsisButtonFavorite = $(".synopsis-add");
@@ -16,21 +35,29 @@ $(document).ready(function () {
     $(".synopsis-title").text(programSynopsis.title);
     synopsisButtonFavorite.attr("_id", programSynopsis.chapter_id);
     $(".synopsis-description").text(programSynopsis.sinopsis);
-    $('.synopsis-chapter-image').attr("src", programSynopsis.image_synopsis);
-    $('.synopsis-chapter-image-1').attr("src", programSynopsis.image_synopsis_frame_1);
-    $('.synopsis-chapter-image-2').attr("src", programSynopsis.image_synopsis_frame_2);
-    $('.synopsis-chapter-image-3').attr("src", programSynopsis.image_synopsis_frame_3);
-
+    $(".synopsis-chapter-image").attr("src", programSynopsis.image_synopsis);
+    $(".synopsis-chapter-image-1").attr(
+      "src",
+      programSynopsis.image_synopsis_frame_1
+    );
+    $(".synopsis-chapter-image-2").attr(
+      "src",
+      programSynopsis.image_synopsis_frame_2
+    );
+    $(".synopsis-chapter-image-3").attr(
+      "src",
+      programSynopsis.image_synopsis_frame_3
+    );
 
     //Slider header
     let index = 1;
     let slide = "";
-    let image = ""
+    let image = "";
     while (true) {
       if (programSynopsis[`image_background_${index}`] !== undefined) {
-        image = programSynopsis[`image_background_${index}`]
+        image = programSynopsis[`image_background_${index}`];
         if (programSynopsis[`image_background_${index}`] == null) {
-          image = "./images/General/image-synopsis-carrusel.jpg"
+          image = "./images/General/image-synopsis-carrusel.jpg";
         }
 
         slide += `
@@ -38,13 +65,13 @@ $(document).ready(function () {
             <img src="${image}"
             class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
         </div>
-                `
-        index++
+                `;
+        index++;
       } else {
         break;
       }
     }
-    let sliderSynopsis = $('.slider-sinopsis')
+    let sliderSynopsis = $(".slider-sinopsis");
     sliderSynopsis.html(slide);
     sliderSynopsis.slick({
       slidesToShow: 1,
@@ -56,17 +83,16 @@ $(document).ready(function () {
 
     //year
     let year = programSynopsis.year;
-    $('.synopsis-year').text(year);
+    $(".synopsis-year").text(year);
     ///Rating
     let rating = programSynopsis.rating;
-    $('.synopsis-rating').text(rating);
+    $(".synopsis-rating").text(rating);
     //Seasons
     let seasons = programSynopsis.seasons;
-    $('.synopsis-seasons').text(`${seasons} Temporadas`);
+    $(".synopsis-seasons").text(`${seasons} Temporadas`);
     //Duration
     let duration = programSynopsis.duration;
-    $('.synopsis-duration').text(duration);
-
+    $(".synopsis-duration").text(duration);
 
     //Paises
     let sliderContainer = "";
@@ -238,7 +264,8 @@ $(document).ready(function () {
     //Slider para países
     $(".dropdownCountry").slick({
       settings: "unslick",
-      responsive: [{
+      responsive: [
+        {
           breakpoint: 321,
           settings: {
             slidesToShow: 2,
@@ -388,7 +415,8 @@ $(document).ready(function () {
       $(this)
         .not(".slick-initialized")
         .slick({
-          responsive: [{
+          responsive: [
+            {
               breakpoint: 321,
               settings: {
                 slidesToShow: 1,
@@ -486,8 +514,10 @@ $(document).ready(function () {
                 centerMode: true,
                 arrows: true,
                 centerPadding: "200px",
-                prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
-                nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                prevArrow:
+                  '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
+                nextArrow:
+                  '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
                 customPaging: function (slider, i) {
                   return `
                 <div class="pagination-items-container">
@@ -519,7 +549,8 @@ $(document).ready(function () {
           $(this)
             .not(".slick-initialized")
             .slick({
-              responsive: [{
+              responsive: [
+                {
                   breakpoint: 321,
                   settings: {
                     slidesToShow: 1,
@@ -617,8 +648,10 @@ $(document).ready(function () {
                     centerMode: true,
                     arrows: true,
                     centerPadding: "200px",
-                    prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
-                    nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                    prevArrow:
+                      '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
+                    nextArrow:
+                      '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
                     customPaging: function (slider, i) {
                       return `
                     <div class="pagination-items-container">
@@ -636,7 +669,8 @@ $(document).ready(function () {
           $(this)
             .not(".slick-initialized")
             .slick({
-              responsive: [{
+              responsive: [
+                {
                   breakpoint: 321,
                   settings: {
                     slidesToShow: 1,
@@ -734,8 +768,10 @@ $(document).ready(function () {
                     centerMode: true,
                     arrows: true,
                     centerPadding: "200px",
-                    prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
-                    nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                    prevArrow:
+                      '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
+                    nextArrow:
+                      '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
                     customPaging: function (slider, i) {
                       return `
                     <div class="pagination-items-container">
