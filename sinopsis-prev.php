@@ -143,26 +143,26 @@
                             </div>
                             <div class="">
                                 <div class="synopsis-details-container">
-                                <div class="synopsis-rating-container">
+                                    <div class="synopsis-rating-container">
                                         <div class="d-flex align-items-center mr-5">
                                             <span class="a-text-Regular-White text-normal mr-2">Duración: </span>
                                             <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-duration-edi ml-0 mb-0"></p>
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <span class="a-text-Regular-White text-normal mr-2">Año: </span>
-                                            <p class=" a-text-white-monblack text-normal synopsis-year-edi synopsis-detail-text ml-0 mb-0"></p>  
-                                        </div>                                  
+                                            <p class=" a-text-white-monblack text-normal synopsis-year-edi synopsis-detail-text ml-0 mb-0"></p>
+                                        </div>
                                     </div>
                                     <div class="synopsis-seasons-container">
                                         <div class="d-flex align-items-center">
                                             <span class="a-text-Regular-White text-normal mr-2">Temporadas: </span>
-                                            <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-seasons-edi ml-0 mb-0"></p> 
+                                            <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-seasons-edi ml-0 mb-0"></p>
                                         </div>
                                         <div class="d-flex align-items-center ml-5">
-                                            <span class="a-text-Regular-White text-normal mr-2">Clasificación: </span>                 
+                                            <span class="a-text-Regular-White text-normal mr-2">Clasificación: </span>
                                             <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-rating-edi ml-0 mb-0"></p>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -205,11 +205,11 @@
     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
     <script>
         var socketSinopsis = new easyXDM.Socket({
-            onReady: function () {
+            onReady: function() {
                 var hey = 2565;
                 socketSinopsis.postMessage(hey)
             },
-            onMessage: function (message, origin) {
+            onMessage: function(message, origin) {
 
                 let data = JSON.parse(message);
                 if (data.code == 200) {
@@ -483,46 +483,61 @@
                                 let am = element.AM;
                                 //Horarios en PM
                                 let pm = element.PM
-
-                                am.forEach(time => {
-                                    timeAm += `
-                                    <div class="time-container py-4 text-center mb-4">
-                                        <span class="time-begin-text">Inicio: </span>
-                                        <span class="time-begin-number">${time}</span>
+                                if (am.length == 0 && pm.length == 0) {
+                                    dayContainer += `
+                                    <div class="times-container">
+                                        <div class="row h-100 p-2 p-sm-2 p-md-3 p-lg-3 p-xl-3">
+                                            <div class="col-12">
+                                            <div class="no-schedule-container">
+                                                <div>
+                                                <img class="no-schedule-image" src="./images/sinopsis/no-synopsis.png" />
+                                                <p class="no-schedule-text mt-5 a-text-bold-cool-grey text-center">No hay programación para este día</p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>    
                                     </div>
-                                    `
-                                    console.log(time);
-                                })
-                                pm.forEach(time => {
-                                    timePm += `
-                                    <div class="time-container py-4 text-center mb-3">
-                                        <span class="time-begin-text">Inicio: </span>
-                                        <span class="time-begin-number">${time}</span>
-                                    </div>
-                                    `
-                                })
+                                    `;
+                                } else {
+                                    am.forEach((time) => {
+                                        timeAm += `
+                                            <div class="time-container py-2 py-sm-2 py-md-3 py-lg-3 py-xl-4 text-center mb-2 mb-sm-2 mb-lg-3 mb-xl-4">
+                                                <span class="time-begin-text">Inicio: </span>
+                                                <span class="time-begin-number">${time}</span>
+                                            </div>
+                                            `;
+                                    });
+                                    pm.forEach((time) => {
+                                        timePm += `
+                                            <div class="time-container py-2 py-sm-2 py-md-3 py-lg-3 py-xl-4 text-center mb-2 mb-sm-2 mb-lg-3 mb-xl-4">
+                                                <span class="time-begin-text">Inicio: </span>
+                                                <span class="time-begin-number">${time}</span>
+                                            </div>
+                                            `;
+                                    });
 
-                                dayContainer += `
-                                <div class="times-container">
-                                    <div class="row h-100 p-2 p-sm-2 p-md-3 p-lg-3 p-xl-3">
-                                        <div class="col-12 d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                                    dayContainer += `
+                                    <div class="times-container">
+                                        <div class="row h-100 p-2 p-sm-2 p-md-3 p-lg-3 p-xl-3">
+                                            <div class="col-12 d-block d-sm-block d-md-block d-lg-none d-xl-none">
                                             ${timeAm}
                                             ${timePm}
-                                        </div>
-                                        <div class="col-6 d-none d-sm-none d-md-none d-lg-block d-xl-block text-center">
-                                            <h2 class="time-title py-3">AM</h2>
-                                            ${timeAm}
-                                        </div>
-                                        <div class="col-6 d-none d-sm-none d-md-none d-lg-block d-xl-block text-center">
-                                            <h2 class="time-title py-3">PM</h2>
-                                            ${timePm}
-                                        </div>
-                                    </div>    
-                                </div>
-                                `;
+                                            </div>
+                                            <div class="col-6 d-none d-sm-none d-md-none d-lg-block d-xl-block text-center">
+                                                <h2 class="d-none d-sm-none d-md-none d-lg-block d-xl-block  time-title py-3">AM</h2>
+                                                ${timeAm}
+                                            </div>
+                                            <div class="col-6 d-none d-sm-none d-md-none d-lg-block d-xl-block text-center">
+                                                <h2 class="d-none d-sm-none d-md-none d-lg-block d-xl-block time-title py-3">PM</h2>
+                                                ${timePm}
+                                            </div>
+                                        </div>    
+                                    </div>
+                    `;
 
-                                timeAm = "";
-                                timePm = "";
+                                    timeAm = "";
+                                    timePm = "";
+                                }
                             });
                         }
                         sliderContainer += `
@@ -552,129 +567,129 @@
 
                     $('.time-slider-container').html(sliderContainer);
                     let currentDay = parseInt(data.data.time_regions.actual_day) - 1;
-                    $(".region-times-slider").each(function () {
-                    $(this)
-                        .not(".slick-initialized")
-                        .slick({
-                            responsive: [{
-                                    breakpoint: 321,
-                                    settings: {
-                                        slidesToShow: 1,
-                                        initialSlide: currentDay,
-                                        slidesToScroll: 1,
-                                        centerPadding: "30px",
-                                        centerMode: true,
-                                        infinite: true,
-                                        arrows: false,
-                                        dots: true,
-                                        appendDots: $(this).parent().prev(),
-                                        appendArrows: $(this).parent().prev().find("ul"),
-                                        customPaging: function (slider, i) {
-                                            return `
+                    $(".region-times-slider").each(function() {
+                        $(this)
+                            .not(".slick-initialized")
+                            .slick({
+                                responsive: [{
+                                        breakpoint: 321,
+                                        settings: {
+                                            slidesToShow: 1,
+                                            initialSlide: currentDay,
+                                            slidesToScroll: 1,
+                                            centerPadding: "30px",
+                                            centerMode: true,
+                                            infinite: true,
+                                            arrows: false,
+                                            dots: true,
+                                            appendDots: $(this).parent().prev(),
+                                            appendArrows: $(this).parent().prev().find("ul"),
+                                            customPaging: function(slider, i) {
+                                                return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
                                             </div>
                                             `;
+                                            },
                                         },
                                     },
-                                },
-                                {
-                                    breakpoint: 768,
-                                    settings: {
-                                        slidesToShow: 1,
-                                        initialSlide: currentDay,
-                                        slidesToScroll: 1,
-                                        centerMode: true,
-                                        centerPadding: "30px",
-                                        infinite: true,
-                                        arrows: false,
-                                        dots: true,
-                                        appendDots: $(this).parent().prev(),
-                                        customPaging: function (slider, i) {
-                                            return `
+                                    {
+                                        breakpoint: 768,
+                                        settings: {
+                                            slidesToShow: 1,
+                                            initialSlide: currentDay,
+                                            slidesToScroll: 1,
+                                            centerMode: true,
+                                            centerPadding: "30px",
+                                            infinite: true,
+                                            arrows: false,
+                                            dots: true,
+                                            appendDots: $(this).parent().prev(),
+                                            customPaging: function(slider, i) {
+                                                return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
                                             </div>
                                             `;
+                                            },
                                         },
                                     },
-                                },
-                                {
-                                    breakpoint: 992,
-                                    settings: {
-                                        infinite: true,
-                                        initialSlide: currentDay,
-                                        slidesToShow: 1,
-                                        slidesToScroll: 1,
-                                        dots: true,
-                                        appendDots: $(this).parent().prev(),
-                                        centerMode: true,
-                                        arrows: false,
-                                        centerPadding: "120px",
-                                        customPaging: function (slider, i) {
-                                            return `
+                                    {
+                                        breakpoint: 992,
+                                        settings: {
+                                            infinite: true,
+                                            initialSlide: currentDay,
+                                            slidesToShow: 1,
+                                            slidesToScroll: 1,
+                                            dots: true,
+                                            appendDots: $(this).parent().prev(),
+                                            centerMode: true,
+                                            arrows: false,
+                                            centerPadding: "120px",
+                                            customPaging: function(slider, i) {
+                                                return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
                                             </div>
                                             `;
+                                            },
                                         },
                                     },
-                                },
-                                {
-                                    breakpoint: 1200,
-                                    settings: {
-                                        infinite: true,
-                                        slidesToShow: 1,
-                                        initialSlide: currentDay,
-                                        slidesToScroll: 1,
-                                        dots: true,
-                                        appendDots: $(this).parent().prev(),
-                                        centerMode: true,
-                                        arrows: false,
-                                        centerPadding: "120px",
-                                        customPaging: function (slider, i) {
-                                            return `
+                                    {
+                                        breakpoint: 1200,
+                                        settings: {
+                                            infinite: true,
+                                            slidesToShow: 1,
+                                            initialSlide: currentDay,
+                                            slidesToScroll: 1,
+                                            dots: true,
+                                            appendDots: $(this).parent().prev(),
+                                            centerMode: true,
+                                            arrows: false,
+                                            centerPadding: "120px",
+                                            customPaging: function(slider, i) {
+                                                return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
                                             </div>
                                             `;
+                                            },
                                         },
                                     },
-                                },
-                                {
-                                    breakpoint: 9999,
-                                    settings: {
-                                        infinite: true,
-                                        slidesToShow: 1,
-                                        initialSlide: currentDay,
-                                        slidesToScroll: 1,
-                                        dots: true,
-                                        appendDots: $(this).parent().prev(),
-                                        appendArrows: $(this).parent().prev(),
-                                        centerMode: true,
-                                        arrows: true,
-                                        centerPadding: "200px",
-                                        prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
-                                        nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
-                                        customPaging: function (slider, i) {
-                                            return `
+                                    {
+                                        breakpoint: 9999,
+                                        settings: {
+                                            infinite: true,
+                                            slidesToShow: 1,
+                                            initialSlide: currentDay,
+                                            slidesToScroll: 1,
+                                            dots: true,
+                                            appendDots: $(this).parent().prev(),
+                                            appendArrows: $(this).parent().prev(),
+                                            centerMode: true,
+                                            arrows: true,
+                                            centerPadding: "200px",
+                                            prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
+                                            nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                                            customPaging: function(slider, i) {
+                                                return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
                                             </div>
                                             `;
+                                            },
                                         },
                                     },
-                                },
-                            ],
-                        });
-                });
+                                ],
+                            });
+                    });
                     //Insertamos los contenedores de los países de cada región
                     let regionTimesContainer = $('.region-times-container');
                     regionTimesContainer.hide();
                     $('.region-times-container:first').show();
                     $('.dropdownCountry').html(countryRegion)
                     let regionCountryContainer = $('.region-country-container');
-                    regionCountryContainer.click(function () {
+                    regionCountryContainer.click(function() {
                         regionCountryContainer.removeClass("region-country-container-active");
                         $(this).addClass("region-country-container-active")
                         let rel = $(this).attr("rel");
@@ -683,239 +698,239 @@
                         $('#' + rel).show();
                         try {
                             $(".region-times-slider").slick("unslick");
-                            $(".region-times-slider").each(function () {
-                    $(this)
-                        .not(".slick-initialized")
-                        .slick({
-                            responsive: [{
-                                    breakpoint: 321,
-                                    settings: {
-                                        slidesToShow: 1,
-                                        initialSlide: currentDay,
-                                        slidesToScroll: 1,
-                                        centerPadding: "30px",
-                                        centerMode: true,
-                                        infinite: true,
-                                        arrows: false,
-                                        dots: true,
-                                        appendDots: $(this).parent().prev(),
-                                        appendArrows: $(this).parent().prev().find("ul"),
-                                        customPaging: function (slider, i) {
-                                            return `
+                            $(".region-times-slider").each(function() {
+                                $(this)
+                                    .not(".slick-initialized")
+                                    .slick({
+                                        responsive: [{
+                                                breakpoint: 321,
+                                                settings: {
+                                                    slidesToShow: 1,
+                                                    initialSlide: currentDay,
+                                                    slidesToScroll: 1,
+                                                    centerPadding: "30px",
+                                                    centerMode: true,
+                                                    infinite: true,
+                                                    arrows: false,
+                                                    dots: true,
+                                                    appendDots: $(this).parent().prev(),
+                                                    appendArrows: $(this).parent().prev().find("ul"),
+                                                    customPaging: function(slider, i) {
+                                                        return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
                                             </div>
                                             `;
-                                        },
-                                    },
-                                },
-                                {
-                                    breakpoint: 768,
-                                    settings: {
-                                        slidesToShow: 1,
-                                        initialSlide: currentDay,
-                                        slidesToScroll: 1,
-                                        centerMode: true,
-                                        centerPadding: "30px",
-                                        infinite: true,
-                                        arrows: false,
-                                        dots: true,
-                                        appendDots: $(this).parent().prev(),
-                                        customPaging: function (slider, i) {
-                                            return `
+                                                    },
+                                                },
+                                            },
+                                            {
+                                                breakpoint: 768,
+                                                settings: {
+                                                    slidesToShow: 1,
+                                                    initialSlide: currentDay,
+                                                    slidesToScroll: 1,
+                                                    centerMode: true,
+                                                    centerPadding: "30px",
+                                                    infinite: true,
+                                                    arrows: false,
+                                                    dots: true,
+                                                    appendDots: $(this).parent().prev(),
+                                                    customPaging: function(slider, i) {
+                                                        return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
                                             </div>
                                             `;
-                                        },
-                                    },
-                                },
-                                {
-                                    breakpoint: 992,
-                                    settings: {
-                                        infinite: true,
-                                        initialSlide: currentDay,
-                                        slidesToShow: 1,
-                                        slidesToScroll: 1,
-                                        dots: true,
-                                        appendDots: $(this).parent().prev(),
-                                        centerMode: true,
-                                        arrows: false,
-                                        centerPadding: "120px",
-                                        customPaging: function (slider, i) {
-                                            return `
+                                                    },
+                                                },
+                                            },
+                                            {
+                                                breakpoint: 992,
+                                                settings: {
+                                                    infinite: true,
+                                                    initialSlide: currentDay,
+                                                    slidesToShow: 1,
+                                                    slidesToScroll: 1,
+                                                    dots: true,
+                                                    appendDots: $(this).parent().prev(),
+                                                    centerMode: true,
+                                                    arrows: false,
+                                                    centerPadding: "120px",
+                                                    customPaging: function(slider, i) {
+                                                        return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
                                             </div>
                                             `;
-                                        },
-                                    },
-                                },
-                                {
-                                    breakpoint: 1200,
-                                    settings: {
-                                        infinite: true,
-                                        slidesToShow: 1,
-                                        initialSlide: currentDay,
-                                        slidesToScroll: 1,
-                                        dots: true,
-                                        appendDots: $(this).parent().prev(),
-                                        centerMode: true,
-                                        arrows: false,
-                                        centerPadding: "120px",
-                                        customPaging: function (slider, i) {
-                                            return `
+                                                    },
+                                                },
+                                            },
+                                            {
+                                                breakpoint: 1200,
+                                                settings: {
+                                                    infinite: true,
+                                                    slidesToShow: 1,
+                                                    initialSlide: currentDay,
+                                                    slidesToScroll: 1,
+                                                    dots: true,
+                                                    appendDots: $(this).parent().prev(),
+                                                    centerMode: true,
+                                                    arrows: false,
+                                                    centerPadding: "120px",
+                                                    customPaging: function(slider, i) {
+                                                        return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
                                             </div>
                                             `;
-                                        },
-                                    },
-                                },
-                                {
-                                    breakpoint: 9999,
-                                    settings: {
-                                        infinite: true,
-                                        slidesToShow: 1,
-                                        initialSlide: currentDay,
-                                        slidesToScroll: 1,
-                                        dots: true,
-                                        appendDots: $(this).parent().prev(),
-                                        appendArrows: $(this).parent().prev(),
-                                        centerMode: true,
-                                        arrows: true,
-                                        centerPadding: "200px",
-                                        prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
-                                        nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
-                                        customPaging: function (slider, i) {
-                                            return `
+                                                    },
+                                                },
+                                            },
+                                            {
+                                                breakpoint: 9999,
+                                                settings: {
+                                                    infinite: true,
+                                                    slidesToShow: 1,
+                                                    initialSlide: currentDay,
+                                                    slidesToScroll: 1,
+                                                    dots: true,
+                                                    appendDots: $(this).parent().prev(),
+                                                    appendArrows: $(this).parent().prev(),
+                                                    centerMode: true,
+                                                    arrows: true,
+                                                    centerPadding: "200px",
+                                                    prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
+                                                    nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                                                    customPaging: function(slider, i) {
+                                                        return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
                                             </div>
                                             `;
-                                        },
-                                    },
-                                },
-                            ],
-                        });
-                });
+                                                    },
+                                                },
+                                            },
+                                        ],
+                                    });
+                            });
                         } catch (error) {
-                            $(".region-times-slider").each(function () {
-                    $(this)
-                        .not(".slick-initialized")
-                        .slick({
-                            responsive: [{
-                                    breakpoint: 321,
-                                    settings: {
-                                        slidesToShow: 1,
-                                        initialSlide: currentDay,
-                                        slidesToScroll: 1,
-                                        centerPadding: "30px",
-                                        centerMode: true,
-                                        infinite: true,
-                                        arrows: false,
-                                        dots: true,
-                                        appendDots: $(this).parent().prev(),
-                                        appendArrows: $(this).parent().prev().find("ul"),
-                                        customPaging: function (slider, i) {
-                                            return `
+                            $(".region-times-slider").each(function() {
+                                $(this)
+                                    .not(".slick-initialized")
+                                    .slick({
+                                        responsive: [{
+                                                breakpoint: 321,
+                                                settings: {
+                                                    slidesToShow: 1,
+                                                    initialSlide: currentDay,
+                                                    slidesToScroll: 1,
+                                                    centerPadding: "30px",
+                                                    centerMode: true,
+                                                    infinite: true,
+                                                    arrows: false,
+                                                    dots: true,
+                                                    appendDots: $(this).parent().prev(),
+                                                    appendArrows: $(this).parent().prev().find("ul"),
+                                                    customPaging: function(slider, i) {
+                                                        return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
                                             </div>
                                             `;
-                                        },
-                                    },
-                                },
-                                {
-                                    breakpoint: 768,
-                                    settings: {
-                                        slidesToShow: 1,
-                                        initialSlide: currentDay,
-                                        slidesToScroll: 1,
-                                        centerMode: true,
-                                        centerPadding: "30px",
-                                        infinite: true,
-                                        arrows: false,
-                                        dots: true,
-                                        appendDots: $(this).parent().prev(),
-                                        customPaging: function (slider, i) {
-                                            return `
+                                                    },
+                                                },
+                                            },
+                                            {
+                                                breakpoint: 768,
+                                                settings: {
+                                                    slidesToShow: 1,
+                                                    initialSlide: currentDay,
+                                                    slidesToScroll: 1,
+                                                    centerMode: true,
+                                                    centerPadding: "30px",
+                                                    infinite: true,
+                                                    arrows: false,
+                                                    dots: true,
+                                                    appendDots: $(this).parent().prev(),
+                                                    customPaging: function(slider, i) {
+                                                        return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
                                             </div>
                                             `;
-                                        },
-                                    },
-                                },
-                                {
-                                    breakpoint: 992,
-                                    settings: {
-                                        infinite: true,
-                                        initialSlide: currentDay,
-                                        slidesToShow: 1,
-                                        slidesToScroll: 1,
-                                        dots: true,
-                                        appendDots: $(this).parent().prev(),
-                                        centerMode: true,
-                                        arrows: false,
-                                        centerPadding: "120px",
-                                        customPaging: function (slider, i) {
-                                            return `
+                                                    },
+                                                },
+                                            },
+                                            {
+                                                breakpoint: 992,
+                                                settings: {
+                                                    infinite: true,
+                                                    initialSlide: currentDay,
+                                                    slidesToShow: 1,
+                                                    slidesToScroll: 1,
+                                                    dots: true,
+                                                    appendDots: $(this).parent().prev(),
+                                                    centerMode: true,
+                                                    arrows: false,
+                                                    centerPadding: "120px",
+                                                    customPaging: function(slider, i) {
+                                                        return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
                                             </div>
                                             `;
-                                        },
-                                    },
-                                },
-                                {
-                                    breakpoint: 1200,
-                                    settings: {
-                                        infinite: true,
-                                        slidesToShow: 1,
-                                        initialSlide: currentDay,
-                                        slidesToScroll: 1,
-                                        dots: true,
-                                        appendDots: $(this).parent().prev(),
-                                        centerMode: true,
-                                        arrows: false,
-                                        centerPadding: "120px",
-                                        customPaging: function (slider, i) {
-                                            return `
+                                                    },
+                                                },
+                                            },
+                                            {
+                                                breakpoint: 1200,
+                                                settings: {
+                                                    infinite: true,
+                                                    slidesToShow: 1,
+                                                    initialSlide: currentDay,
+                                                    slidesToScroll: 1,
+                                                    dots: true,
+                                                    appendDots: $(this).parent().prev(),
+                                                    centerMode: true,
+                                                    arrows: false,
+                                                    centerPadding: "120px",
+                                                    customPaging: function(slider, i) {
+                                                        return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
                                             </div>
                                             `;
-                                        },
-                                    },
-                                },
-                                {
-                                    breakpoint: 9999,
-                                    settings: {
-                                        infinite: true,
-                                        slidesToShow: 1,
-                                        initialSlide: currentDay,
-                                        slidesToScroll: 1,
-                                        dots: true,
-                                        appendDots: $(this).parent().prev(),
-                                        appendArrows: $(this).parent().prev(),
-                                        centerMode: true,
-                                        arrows: true,
-                                        centerPadding: "200px",
-                                        prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
-                                        nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
-                                        customPaging: function (slider, i) {
-                                            return `
+                                                    },
+                                                },
+                                            },
+                                            {
+                                                breakpoint: 9999,
+                                                settings: {
+                                                    infinite: true,
+                                                    slidesToShow: 1,
+                                                    initialSlide: currentDay,
+                                                    slidesToScroll: 1,
+                                                    dots: true,
+                                                    appendDots: $(this).parent().prev(),
+                                                    appendArrows: $(this).parent().prev(),
+                                                    centerMode: true,
+                                                    arrows: true,
+                                                    centerPadding: "200px",
+                                                    prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
+                                                    nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                                                    customPaging: function(slider, i) {
+                                                        return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
                                             </div>
                                             `;
-                                        },
-                                    },
-                                },
-                            ],
-                        });
-                });  
+                                                    },
+                                                },
+                                            },
+                                        ],
+                                    });
+                            });
                         }
                     })
 

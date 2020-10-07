@@ -356,7 +356,6 @@ $(document).ready(function () {
                   </div>
                   `;
                 } else {
-                  console.log("Dentro2");
                   am.forEach((time) => {
                     timeAm += `
                                             <div class="time-container py-2 py-sm-2 py-md-3 py-lg-3 py-xl-4 text-center mb-2 mb-sm-2 mb-lg-3 mb-xl-4">
