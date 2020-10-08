@@ -14,6 +14,10 @@ if($_SESSION["country"] != 1){
 <head>
     <?php include './views/partials/head.php' ?>
     <input type="hidden" id="actual_landing" value="about">
+
+    <script>
+        (function() {$('body').addClass('invisible'); setTimeout(function(){$('body').removeClass('invisible')}, 1000);})();
+    </script>
 </head>
 
 <body class="bg-bubble">
@@ -54,21 +58,26 @@ if($_SESSION["country"] != 1){
             <div class="row">
                 <!-- MENU -->
                 <div class="col-12 pr-xl-5 mt-4">
-                    <nav class="mx-xl-4 mt-xl-0 pr-xl-5">
+                    <nav class="mx-xl-4 mt-xl-0">
                         <div class="navbar mr-xl-4">
                             <div>
                                 <!-- munu tablet -->
                                 <img class="menu-responsive-tablet d-none d-md-inline-block d-xl-none" src="./images/home/menu-responsive-black.svg" alt="" />
                                 <!-- logo -->
-                                <img class="logo logo-black d-none d-md-inline-block" src="./images/home/claro-logo.svg" alt="" />
+                                <a href="home.php">
+                                    <img class="logo logo-black d-none d-md-inline-block" src="./images/home/claro-logo.svg" alt="" />
+                                </a>
                             </div>
                             <!-- logo movile -->
-                            <img class="d-md-none" src="./images/home/claro-logo.svg" alt="" style="width: 120px;" />
-                            <p class="invisible d-md-none">0</p>
+                            <a href="home.php">
+                                <img class="d-md-none" src="./images/home/claro-logo.svg" alt="" style="width: 120px;" />
+                            </a>
                             <!-- user desktop -->
                             <div class="d-none d-xl-block user-options"></div>
                             <!-- munu movile -->
-                            <img class="menu-responsive d-block d-md-none" src="./images/home/menu-responsive-black.svg" alt="" />
+                            <a href="home.php">
+                                <img class="menu-responsive d-block d-md-none" src="./images/home/menu-responsive-black.svg" alt="" />
+                            </a>
                         </div>
                         <!-- SUBMENU -->
                         <div class="claro-navbar-black claro-navbar">
@@ -118,10 +127,17 @@ if($_SESSION["country"] != 1){
     </div>
 
     <script>
+        $(".back-close").click(function() {
+            window.history.back();
+        });
+    </script>
+    
+
+    <!-- <script>
         $('.back-close').click(function(){
             window.location = "footer-edition.php";
         })
-    </script>
+    </script> -->
     
 
 </body>
