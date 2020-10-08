@@ -1603,6 +1603,9 @@ $(document).ready(function () {
   let date = new Date();
   let day = ("0" + date.getDate()).slice(-2);
   let month = ("0" + (date.getMonth() + 1)).slice(-2);
+  let mes = date.getMonth();
+  $(".month").text(getMonthAndYear(mes));
+  console.log(mes);
   let year = date.getFullYear();
   let hour = date.getHours();
   let minutes = date.getMinutes();
@@ -1750,8 +1753,8 @@ $(document).ready(function () {
 
 
   $("ul.tv-list li").click(function () {
-    $("ul.tv-list li").removeClass("active-navItem");
-    $(this).addClass("active-navItem");
+    $("ul.tv-list li").removeClass("active-navItem navbar-progra-item-container");
+    $(this).addClass("active-navItem  navbar-progra-item-container");
     $(".tv-content").hide();
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();

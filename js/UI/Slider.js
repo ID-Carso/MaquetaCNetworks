@@ -238,7 +238,8 @@ export default class Slider {
 
     /*Programación general*/
     let date = new Date();
-    $(".month").html(getMonthAndYear(date.getMonth()));
+    $(".month").text(getMonthAndYear(date.getMonth()));
+ 
 
     /* Número de días del mes actual */
     let currentMonthDays = getDays(1);
