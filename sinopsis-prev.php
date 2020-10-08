@@ -78,7 +78,7 @@
             </div>
 
             <?php
-            include './views/partials/menu-desktop-black.php'
+            include './views/partials/menu-desktop-black-edi.php'
             ?>
             <!--Banner-->
             <div class="header-slider" id="banner-synopsis-slider">
@@ -87,23 +87,6 @@
     </header>
     <main>
         <div class="synopsis-content">
-            <div class="no-gutters">
-                <div class="col-11 col-lg-10 mx-auto">
-                    <div class="synopsis-buttons-mobile-container">
-                        <button class="button-none synopsis-add add-favorites">
-                            <img src="./images/posters/heart-outline.svg" alt="" class="synopsis-heart">
-                        </button>
-                        <a href="sinopsis.php#dropdown-country"> <button class="synopsis-button">
-                                <div class="d-flex align-items-center">
-                                    <p class="synopsis-schedule-text mb-0">Añadir</p>
-                                    <img src="./images/home/triangle-2-copy-4.svg" alt="" class="synopsis-heart">
-
-                                </div>
-                            </button></a>
-                    </div>
-                </div>
-            </div>
-
             <div class="no-gutters">
                 <div class="col-11 col-md-12 col-lg-10 mx-auto">
                     <h1 class="synopsis-section-title">sinopsis</h1>
@@ -114,22 +97,16 @@
                         </div>
                         <div class="col-md-7 col-lg-6 mx-sm-auto mx-md-auto synopsis-description-container">
                             <div>
-                                <h1 class="text-center synopsis-title synopsis-title-prev"></h1>
+                                <h1 class="text-center text-uppercase synopsis-title synopsis-title-prev"></h1>
                                 <p class="synopsis-text synopsis-description-prev"></p>
                             </div>
-                            <div class="no-gutters">
-                                <div class="synopsis-buttons-tablet-container col-md-10 col-xl-12">
-                                    <button class="button-none synopsis-add add-favorites">
+
+                            <div class="no-gutters mb-4 mb-sm-4 mb-md-0 md-lg-0 mb-xl-0">
+                                <div class="synopsis-buttons-tablet-container justify-content-end col-md-12 col-xl-12">
+                                    <button class="ml-auto d-flex align-items-center synopsis-button synopsis-add add-favorites">
+                                        <p class="synopsis-schedule-text mb-0">añadir</p>
                                         <img src="" alt="" class="synopsis-heart">
                                     </button>
-                                    <a href="sinopsis.php#dropdown-country"><button class="synopsis-button">
-                                            <div class="d-flex align-items-center">
-                                                <p class="synopsis-schedule-text mb-0">Añadir</p>
-                                                <img src="./images/home/triangle-2-copy-4.svg" alt="" class="synopsis-heart">
-
-                                            </div>
-                                        </button>
-                                    </a>
                                 </div>
                             </div>
                         </div>

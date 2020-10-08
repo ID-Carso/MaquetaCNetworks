@@ -2,7 +2,7 @@
 
 session_start();
 
-if($_SESSION["country"] != 1){
+if ($_SESSION["country"] != 1) {
     header('Location: index.php');
 }
 
@@ -103,49 +103,26 @@ if($_SESSION["country"] != 1){
     <main>
         <div class="synopsis-content">
             <div class="no-gutters">
-                <div class="col-11 col-lg-10 mx-auto">
-                    <div class="synopsis-buttons-mobile-container">
-                        <button class="button-none synopsis-add add-favorites">
-                            <img src="./images/posters/heart-outline.svg" alt="" class="synopsis-heart">
-                        </button>
-                        <a href="sinopsis.php#dropdown-country"> <button class="synopsis-button">
-                                <div class="d-flex align-items-center">
-
-                                    <p class="synopsis-schedule-text mb-0">Añadir</p><img
-                                        src="./images/home/triangle-2-copy-4.svg" alt="">
-
-                                </div>
-                            </button></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="no-gutters">
-                <div class="col-11 col-md-12 col-lg-10 mx-auto">
+                <div class="col-11 col-md-12 col-lg-10 col-xl-9 mx-auto">
                     <h1 class="synopsis-section-title">sinopsis</h1>
 
                     <div class="synopsis-body-container no-gutters">
-                        <div class="col-md-7 col-lg-6 mx-auto synopsis-main-image">
+                        <div class="col-md-10 col-lg-6 mx-auto mx-sm-auto mx-md-auto mr-lg-3 mr-xl-3 synopsis-main-image">
                             <img src="" alt="" class="w-100 synopsis-chapter-image">
                         </div>
-                        <div class="col-md-7 col-lg-6 mx-sm-auto mx-md-auto synopsis-description-container">
+                        <div class="col-md-10 col-lg-6 mx-sm-auto mx-md-auto synopsis-description-container d-flex flex-column justify-content-between">
                             <div>
-                                <h1 class="synopsis-title"></h1>
-                                <p class="synopsis-text synopsis-description"></p>
+                                <h1 class="text-center text-uppercase synopsis-title"></h1>
+                                <p class="synopsis-text synopsis-description mb-4 mb-sm-4 mb-md-0 md-lg-0 mb-xl-0"></p>
                             </div>
 
-                            <div class="no-gutters">
+                            <div class="no-gutters mb-4 mb-sm-4 mb-md-0 md-lg-0 mb-xl-0">
 
-                                <div class="synopsis-buttons-tablet-container col-md-10 col-xl-12">
-                                    <button class="button-none synopsis-add add-favorites">
+                                <div class="synopsis-buttons-tablet-container justify-content-end col-md-12 col-xl-12">
+                                    <button class="ml-auto d-flex align-items-center synopsis-button synopsis-add add-favorites">
+                                        <p class="synopsis-schedule-text mb-0">añadir</p>
                                         <img src="" alt="" class="synopsis-heart">
                                     </button>
-                                    <a href="sinopsis.php#dropdown-country"><button class="synopsis-button">
-                                            <div class="d-flex align-items-center">
-                                                <p class="synopsis-schedule-text mb-0">Horarios</p><img
-                                                    src="./images/home/clock.svg" alt="">
-                                            </div>
-                                        </button></a>
                                 </div>
 
                             </div>
@@ -162,28 +139,27 @@ if($_SESSION["country"] != 1){
                                 <img src="" alt="" class="col-md-6 col-lg-4 synopsis-image synopsis-chapter-image-2">
                                 <img src="" alt="" class="col-lg-4 synopsis-image synopsis-chapter-image-3">
                             </div>
-                            <div class="">
-                            <div class="synopsis-rating-container">
-                                        <div class="d-flex align-items-center mr-5">
-                                            <span class="a-text-Regular-White text-normal mr-2">Duración: </span>
-                                            <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-duration-edi ml-0 mb-0"></p>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <span class="a-text-Regular-White text-normal mr-2">Año: </span>
-                                            <p class=" a-text-white-monblack text-normal synopsis-year-edi synopsis-detail-text ml-0 mb-0"></p>  
-                                        </div>                                  
-                                    </div>
-                                    <div class="synopsis-seasons-container">
-                                        <div class="d-flex align-items-center">
-                                            <span class="a-text-Regular-White text-normal mr-2">Temporadas: </span>
-                                            <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-seasons-edi ml-0 mb-0"></p> 
-                                        </div>
-                                        <div class="d-flex align-items-center ml-5">
-                                            <span class="a-text-Regular-White text-normal mr-2">Clasificación: </span>                 
-                                            <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-rating-edi ml-0 mb-0"></p>
-                                        </div>
-                                        
-                                    </div>
+                            <div class="d-flex justify-content-between mt-4 mb-5">
+                                <div class="d-flex align-items-center">
+                                    <span class="a-text-Regular-White text-normal mr-2">Duración: </span>
+                                    <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-duration-edi ml-0 mb-0"></p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="a-text-Regular-White text-normal mr-2">Año: </span>
+                                    <p class=" a-text-white-monblack text-normal synopsis-year-edi synopsis-detail-text ml-0 mb-0"></p>
+                                </div>
+
+
+                                <div class="d-flex align-items-center">
+                                    <span class="a-text-Regular-White text-normal mr-2">Temporadas: </span>
+                                    <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-seasons-edi ml-0 mb-0"></p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="a-text-Regular-White text-normal mr-2">Clasificación: </span>
+                                    <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-rating-edi ml-0 mb-0"></p>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>

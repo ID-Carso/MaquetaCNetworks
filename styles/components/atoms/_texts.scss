@@ -11,7 +11,6 @@
   padding: 6px;
 }
 
-
 @mixin title-section($colorText, $fontSize, $fontFamily: $montserratBlack) {
   @extend %title-basic;
   font-size: $fontSize;
@@ -73,7 +72,7 @@
 .a-text-Regular-White {
   font-family: $montserratRegular;
   color: $colorWhite;
-} 
+}
 .a-text-medium-greyish {
   color: $greyishBrownTwo;
   font-family: $montserratMedium;
@@ -113,9 +112,11 @@
 }
 
 .a-concert-channel-subtitle {
-  @include title-section($colorWhite,
+  @include title-section(
+    $colorWhite,
     $posterTitleResponsive,
-    $fontFamily: $montserratSemiBold);
+    $fontFamily: $montserratSemiBold
+  );
   padding-bottom: 14px;
 }
 
@@ -129,9 +130,11 @@
 }
 
 .a-subtitle {
-  @include title-section($blackColor,
+  @include title-section(
+    $blackColor,
     $posterTitleResponsive,
-    $montserratRegular);
+    $montserratRegular
+  );
   padding-bottom: 14px;
 }
 
@@ -204,9 +207,11 @@
 .a-claro-cinema-subtitle,
 .a-our-vision-subtitle,
 .a-claro-sports-subtitle {
-  @include title-section($blackColor,
+  @include title-section(
+    $blackColor,
     $posterTitleResponsive,
-    $montserratRegular);
+    $montserratRegular
+  );
   padding-bottom: 14px;
 }
 
@@ -820,10 +825,9 @@
   font-family: $montserratSemiBold;
 }
 
-
 .day-text-desactivated,
 .day-number-desactivated {
-  color: #D5D7D7;
+  color: #d5d7d7;
   margin-bottom: 0;
   text-align: center;
 }
@@ -839,11 +843,7 @@
   font-family: $montserratSemiBold;
 }
 
-
-
-
 .claro-active {
-
   .day-text,
   .day-number {
     color: white;
@@ -851,7 +851,6 @@
 }
 
 .concert-active {
-
   .day-text,
   .day-number {
     color: white;
@@ -859,7 +858,6 @@
 }
 
 .cinema-active {
-
   .day-text,
   .day-number {
     color: white;
@@ -867,7 +865,6 @@
 }
 
 .vision-active {
-
   .day-text,
   .day-number {
     color: white;
@@ -875,7 +872,6 @@
 }
 
 .sports-active {
-
   .day-text,
   .day-number {
     color: white;
@@ -1013,7 +1009,7 @@
 
 .synopsis-title {
   font-size: 16px;
-  font-family: $montserratLight;
+  font-family: $montserratBlack;
   color: white;
   text-align: center;
   padding-bottom: 17px;
@@ -1028,7 +1024,7 @@
 }
 
 .synopsis-schedule-title {
-  margin-bottom: 36px !important;
+  margin-bottom: 25px !important;
   color: white;
   text-align: center;
   font-family: $montserratBlack;
@@ -1490,7 +1486,6 @@
   color: $textgray;
 }
 
-
 .time-begin-text {
   font-family: $montserratBold;
   font-size: 14px;
@@ -1516,6 +1511,10 @@
 
   .time-begin-text {
     font-size: 21px;
+  }
+
+  .synopsis-title {
+    font-size: 24px;
   }
 }
 

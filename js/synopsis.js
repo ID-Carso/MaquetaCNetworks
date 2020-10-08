@@ -516,6 +516,32 @@ $(document).ready(function () {
                     },
                   },
                   {
+                    breakpoint: 1900,
+                    settings: {
+                      infinite: true,
+                      slidesToShow: 1,
+                      initialSlide: currentDay,
+                      slidesToScroll: 1,
+                      dots: true,
+                      appendDots: $(this).parent().prev(),
+                      appendArrows: $(this).parent().prev(),
+                      centerMode: true,
+                      arrows: true,
+                      centerPadding: "300px",
+                      prevArrow:
+                        '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
+                      nextArrow:
+                        '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                      customPaging: function (slider, i) {
+                        return `
+                      <div class="pagination-items-container">
+                          <div class="pagination-item"></div>
+                      </div>
+                      `;
+                      },
+                    },
+                  },
+                  {
                     breakpoint: 9999,
                     settings: {
                       infinite: true,
@@ -527,7 +553,7 @@ $(document).ready(function () {
                       appendArrows: $(this).parent().prev(),
                       centerMode: true,
                       arrows: true,
-                      centerPadding: "200px",
+                      centerPadding: "600px",
                       prevArrow:
                         '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
                       nextArrow:
@@ -652,6 +678,32 @@ $(document).ready(function () {
                         },
                       },
                       {
+                        breakpoint: 1900,
+                        settings: {
+                          infinite: true,
+                          slidesToShow: 1,
+                          initialSlide: currentDay,
+                          slidesToScroll: 1,
+                          dots: true,
+                          appendDots: $(this).parent().prev(),
+                          appendArrows: $(this).parent().prev(),
+                          centerMode: true,
+                          arrows: true,
+                          centerPadding: "300px",
+                          prevArrow:
+                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
+                          nextArrow:
+                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                          customPaging: function (slider, i) {
+                            return `
+                          <div class="pagination-items-container">
+                              <div class="pagination-item"></div>
+                          </div>
+                          `;
+                          },
+                        },
+                      },
+                      {
                         breakpoint: 9999,
                         settings: {
                           infinite: true,
@@ -663,7 +715,7 @@ $(document).ready(function () {
                           appendArrows: $(this).parent().prev(),
                           centerMode: true,
                           arrows: true,
-                          centerPadding: "200px",
+                          centerPadding: "600px",
                           prevArrow:
                             '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
                           nextArrow:
@@ -772,6 +824,32 @@ $(document).ready(function () {
                         },
                       },
                       {
+                        breakpoint: 1900,
+                        settings: {
+                          infinite: true,
+                          slidesToShow: 1,
+                          initialSlide: currentDay,
+                          slidesToScroll: 1,
+                          dots: true,
+                          appendDots: $(this).parent().prev(),
+                          appendArrows: $(this).parent().prev(),
+                          centerMode: true,
+                          arrows: true,
+                          centerPadding: "300px",
+                          prevArrow:
+                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
+                          nextArrow:
+                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                          customPaging: function (slider, i) {
+                            return `
+                          <div class="pagination-items-container">
+                              <div class="pagination-item"></div>
+                          </div>
+                          `;
+                          },
+                        },
+                      },
+                      {
                         breakpoint: 9999,
                         settings: {
                           infinite: true,
@@ -783,7 +861,7 @@ $(document).ready(function () {
                           appendArrows: $(this).parent().prev(),
                           centerMode: true,
                           arrows: true,
-                          centerPadding: "200px",
+                          centerPadding: "600px",
                           prevArrow:
                             '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
                           nextArrow:

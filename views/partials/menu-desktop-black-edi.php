@@ -1,7 +1,5 @@
-
-
-<nav class="menu-desktop-edi">
-    <div class="nav-content-edi">
+<nav class="menu-desktop">
+    <div class="nav-content">
         <div class="claro-logo">
 
             <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
@@ -11,12 +9,10 @@
             </a>
         </div>
         <div class="options">
-        <div class="login">
-                            <a href="login.php" class="login-item mr-2"><img src="./images/home/user-login.svg"
-                                    alt=""></a>
-                            <a href="index.php" class="login-item"><img class="" src="images/paises/gmt-icon.svg" alt=""
-                                    width="32px"></a>
-                        </div>
+            <div class="login">
+                <a href="login.php" class="login-item mr-2"><img src="./images/home/user-login.svg" alt=""></a>
+                <a href="index.php" class="login-item"><img class="" src="images/paises/gmt-icon.svg" alt="" width="32px"></a>
+            </div>
 
         </div>
     </div>

@@ -1096,7 +1096,7 @@ h6 {
 
 .day-text-desactivated,
 .day-number-desactivated {
-  color: #D5D7D7;
+  color: #d5d7d7;
   margin-bottom: 0;
   text-align: center;
 }
@@ -1264,7 +1264,7 @@ h6 {
 
 .synopsis-title {
   font-size: 16px;
-  font-family: "Montserrat-Light";
+  font-family: "Montserrat-Black";
   color: white;
   text-align: center;
   padding-bottom: 17px;
@@ -1279,7 +1279,7 @@ h6 {
 }
 
 .synopsis-schedule-title {
-  margin-bottom: 36px !important;
+  margin-bottom: 25px !important;
   color: white;
   text-align: center;
   font-family: "Montserrat-Black";
@@ -1767,6 +1767,9 @@ h6 {
   .time-begin-text {
     font-size: 21px;
   }
+  .synopsis-title {
+    font-size: 24px;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1934,8 +1937,6 @@ h6 {
 
 .synopsis-button img {
   width: 15px;
-  -webkit-filter: invert(1);
-          filter: invert(1);
 }
 
 .synopsis-add-text {
@@ -2945,10 +2946,6 @@ h6 {
           transform: translate(15%, -30%);
 }
 
-.synopsis-heart {
-  width: 40px;
-}
-
 .modal-image-program {
   width: 100%;
   max-width: 90px;
@@ -3074,6 +3071,9 @@ h6 {
     width: 38px;
     margin: auto;
   }
+  .synopsis-main-image {
+    margin-bottom: 0px;
+  }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
@@ -3082,6 +3082,9 @@ h6 {
     width: 38px;
     margin: auto;
   }
+  .synopsis-main-image {
+    margin-bottom: 0px;
+  }
 }
 
 @media only screen and (min-width: 1900px) {
@@ -3089,6 +3092,9 @@ h6 {
   .region-country-container-active img {
     width: 38px;
     margin: auto;
+  }
+  .synopsis-main-image {
+    margin-bottom: 0px;
   }
 }
 
@@ -5763,23 +5769,6 @@ div #banner-concert-channel-edi .slick-track {
   padding-right: 5%;
 }
 
-.synopsis-buttons-mobile-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 50px;
-}
-
-.synopsis-buttons-tablet-container {
-  display: none;
-}
-
 .synopsis-body-container {
   display: initial;
 }
@@ -6205,6 +6194,9 @@ div #banner-concert-channel-edi .slick-track {
 @media only screen and (min-width: 1900px) {
   .region-country-container {
     height: 160px;
+  }
+  .times-container {
+    height: 518px;
   }
 }
 
@@ -7112,14 +7104,13 @@ div #banner-concert-channel-edi .slick-track {
     margin-bottom: 0;
   }
   .synopsis-schedule-title {
-    font-size: 30px;
-  }
-  .synopsis-schedule-title {
+    font-size: 24px;
     margin-bottom: 95px !important;
   }
   .synopsis-section-title {
-    font-size: 30px;
-    padding: 50px 0;
+    font-size: 24px;
+    padding-top: 24px;
+    padding-bottom: 16px;
   }
   .no-synopsis-title {
     font-size: 40px;
@@ -8043,7 +8034,7 @@ div #banner-concert-channel-edi .slick-track {
     color: white;
     text-transform: uppercase;
     font-family: "Montserrat-Black";
-    padding: 65px 0;
+    padding: 35px 0;
   }
   .a-today-claro-title,
   .a-today-cinema-title,
@@ -8412,8 +8403,8 @@ div #banner-concert-channel-edi .slick-track {
   /*-----------------------------*/
   /*1.7 - Sinópsis - Átomos */
   .synopsis-title {
-    font-size: 30px;
-    font-family: "Montserrat-SemiBold";
+    font-size: 24px;
+    font-family: "Montserrat-Black";
     padding-bottom: 25px;
     text-align: left;
   }
@@ -8421,9 +8412,6 @@ div #banner-concert-channel-edi .slick-track {
     color: white;
     font-size: 16px;
     margin-bottom: 0;
-  }
-  .synopsis-add {
-    margin-right: 40px;
   }
   .synopsis-image:nth-child(1),
   .synopsis-image:nth-child(2) {
@@ -8438,7 +8426,6 @@ div #banner-concert-channel-edi .slick-track {
   }
   .synopsis-schedule-title {
     font-size: 30px;
-    padding-bottom: 65px;
     margin-bottom: 0;
   }
   .no-synopsis-title {
@@ -8983,7 +8970,7 @@ div #banner-concert-channel-edi .slick-track {
     height: auto;
   }
   .synopsis-body-container {
-    margin-bottom: 110px;
+    margin-bottom: 48px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9650,18 +9637,14 @@ div #banner-concert-channel-edi .slick-track {
   /*-----------------------------*/
   /*1.7 - Sinópsis - átomos*/
   .synopsis-section-title {
-    padding: 80px 0;
-    margin-left: 10%;
-    text-align: left;
-    font-size: 30px;
+    padding: 48px 0;
+    text-align: center;
+    font-size: 36px;
   }
   .synopsis-title {
-    font-size: 20px;
+    font-size: 24px;
     text-transform: uppercase;
     text-align: left;
-  }
-  .synopsis-add {
-    margin-right: 40px;
   }
   .synopsis-image:nth-child(2),
   .synopsis-image:nth-child(3) {
@@ -9681,9 +9664,7 @@ div #banner-concert-channel-edi .slick-track {
     margin-left: 0;
   }
   .synopsis-schedule-title {
-    font-size: 30px;
-    padding-bottom: 65px;
-    margin-bottom: 0 !important;
+    font-size: 36px;
   }
   .no-synopsis-title {
     font-size: 55px;
@@ -10668,9 +10649,9 @@ div #banner-concert-channel-edi .slick-track {
   .login-item {
     width: 36px;
   }
-  .slick-slider .slick-list {
+  /*.slick-slider .slick-list {
     padding: 0px 0px 0px 0px !important;
-  }
+  }*/
   .a-cinema-rectangle,
   .a-sports-rectangle,
   .a-concert-rectangle,
@@ -11002,11 +10983,14 @@ div #banner-concert-channel-edi .slick-track {
   /*-----------------------------*/
   /*1.7 Sinópsis -  Átomos  */
   .synopsis-section-title {
-    font-size: 60px;
-    padding: 85px 0;
+    font-size: 36px;
+    padding: 48px 0;
   }
-  .synopsis-add {
-    margin-right: 40px;
+  .synopsis-title {
+    font-size: 24px;
+  }
+  .synopsis-text {
+    font-size: 18px;
   }
   .synopsis-image:nth-child(2),
   .synopsis-image:nth-child(3) {
@@ -11026,8 +11010,7 @@ div #banner-concert-channel-edi .slick-track {
     margin-right: 13px;
   }
   .synopsis-schedule-title {
-    font-size: 60px;
-    margin: 120px 0 !important;
+    font-size: 36px;
   }
   .no-synopsis-title {
     font-size: 60px;

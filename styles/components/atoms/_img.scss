@@ -657,10 +657,6 @@
   transform: translate(15%, -30%);
 }
 
-.synopsis-heart {
-  width: 40px;
-}
-
 .modal-image-program {
   width: 100%;
   max-width: 90px;
@@ -786,6 +782,10 @@
     width: 38px;
     margin: auto;
   }
+
+  .synopsis-main-image {
+    margin-bottom: 0px;
+  }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
@@ -794,6 +794,9 @@
     width: 38px;
     margin: auto;
   }
+  .synopsis-main-image {
+    margin-bottom: 0px;
+  }
 }
 
 @media only screen and (min-width: 1900px) {
@@ -801,5 +804,9 @@
   .region-country-container-active img {
     width: 38px;
     margin: auto;
+  }
+
+  .synopsis-main-image {
+    margin-bottom: 0px;
   }
 }
