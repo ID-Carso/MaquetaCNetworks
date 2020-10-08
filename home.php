@@ -2,12 +2,12 @@
 
 session_start();
 
-if($_POST['country']){
+if ($_POST['country']) {
     $_SESSION["country"] = 1;
 }
 
 
-if($_SESSION["country"] != 1){
+if ($_SESSION["country"] != 1) {
     header('Location: index.php');
 }
 
@@ -16,15 +16,19 @@ if($_SESSION["country"] != 1){
 <html lang="en">
 
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'UA-179528937-1');
-</script>
-<script src="https://www.googleoptimize.com/optimize.js?id=OPT-5S7NP6G"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-179528937-1');
+    </script>
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-5S7NP6G"></script>
 
     <?php include './views/partials/head.php' ?>
 </head>
@@ -107,8 +111,7 @@ if($_SESSION["country"] != 1){
                         </div>
 
                         <div class="login">
-                            <a href="index.php" class="login-item"><img class="login-country" alt=""
-                                    src="images/paises/ecuador.svg"></a>
+                            <a href="index.php" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
                         </div>
                     </div>
                 </nav>
@@ -294,8 +297,7 @@ if($_SESSION["country"] != 1){
             <!--End Versión mobile-->
             <!--Versión para tablet-->
             <div class="concert-channel-tablet">
-                <div
-                    class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
+                <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
                         <a href="concert-channel.php" class="home-title-link">
                             <img src="./images/home/concert-home-img.svg" class="concerthome-image-header">
@@ -312,8 +314,7 @@ if($_SESSION["country"] != 1){
                     </div>
                 </div>
 
-                <div
-                    class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
+                <div class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
                     <div>
 
                     </div>
@@ -328,8 +329,7 @@ if($_SESSION["country"] != 1){
             <!--End Versión tablet-->
             <!--Concert channel desktop-->
             <div class="concert-channel-desktop">
-                <div
-                    class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
+                <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
                         <a href="concert-channel.php" class="home-title-link">
                             <img class="concerthome-image-header" src="./images/home/concert-home-img.svg" alt="">
@@ -344,8 +344,7 @@ if($_SESSION["country"] != 1){
                 </div>
                 <div class="section-slider concert-home-slider">
                 </div>
-                <div
-                    class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
+                <div class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
                     <div>
 
                     </div>
@@ -383,8 +382,7 @@ if($_SESSION["country"] != 1){
             <!--Cinema claro tablet-->
             <div class="cinema-claro-tablet">
 
-                <div
-                    class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
+                <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
                     <div class="m-home-titles">
                         <a href="claro-cinema.php" class="home-title-link">
                             <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
@@ -417,8 +415,7 @@ if($_SESSION["country"] != 1){
                         </div>
                     </div>
                 </div>-->
-                <div
-                    class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
+                <div class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
 
                     </div>
@@ -433,8 +430,7 @@ if($_SESSION["country"] != 1){
             <!--Cinema claro desktop-->
             <div class="cinema-claro-desktop">
                 <!--<div class="black-line"></div>-->
-                <div
-                    class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
+                <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
                     <div class="m-home-titles">
                         <a href="claro-cinema.php" class="home-title-link">
                             <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
@@ -464,8 +460,7 @@ if($_SESSION["country"] != 1){
                     <div class="col-md-8 col-xl-6 cinema-home-videos-container">
                     </div>
                 </div>-->
-                <div
-                    class="pb-xl-0 d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
+                <div class="pb-xl-0 d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
 
                     </div>
@@ -510,7 +505,7 @@ if($_SESSION["country"] != 1){
     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
     <script>
         var socketHomeGrilla = new easyXDM.Socket({
-            onReady: function () {
+            onReady: function() {
                 socketHomeGrilla.postMessage(4300)
             },
         });

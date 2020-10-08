@@ -129,6 +129,7 @@
                 <div class="today-videos-container">
                     <div class="section-slider today-claro-slider-prev">
                     </div>
+</div>
         </section>
 
         <section class="next-week-claro">

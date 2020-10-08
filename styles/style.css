@@ -3054,6 +3054,12 @@ h6 {
   margin: auto;
 }
 
+.no-schedule-image {
+  width: 100%;
+  max-width: 569px;
+  margin: auto;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .region-country-container img,
   .region-country-container-active img {
@@ -6614,6 +6620,52 @@ div #banner-concert-channel-edi .slick-track {
 .login-form {
   width: 100%;
   height: 100%;
+}
+
+.no-schedule-container {
+  padding: 16px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 4px 0 var(--black-three), inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+          box-shadow: 0 2px 4px 0 var(--black-three), inset 0 1px 3px 0 rgba(101, 100, 100, 0.5);
+  background-color: #0f0e0e;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.no-schedule-text {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .no-schedule-text {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .no-schedule-text {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1899px) {
+  .no-schedule-text {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .no-schedule-text {
+    font-size: 21px;
+  }
 }
 
 .loader {

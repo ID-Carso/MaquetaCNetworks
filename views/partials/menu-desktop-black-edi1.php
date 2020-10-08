@@ -1,14 +1,4 @@
-<?php
 
-session_start();
-
-if($_POST['country']){
-    $_SESSION["country"] == "gmt";
-}
-
-
-
-?>
 <nav class="menu-desktop-edi" style="position: relative; padding: 0;">
     <div class="nav-content-edi">
         <div class="claro-logo">

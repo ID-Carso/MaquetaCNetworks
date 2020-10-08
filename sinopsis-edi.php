@@ -82,48 +82,36 @@
             ?>
             <div class="header-slider-sinopsis  mx-auto" id="">
                 <div class="bor thumbnail-image-program position-relative " style="height:470px">
-                    <input type="file" id="image_programming_1" class="input-image-program d-none image_programming "
-                        data-index="1">
-                    <label for="image_programming_1"
-                        class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
+                    <input type="file" id="image_programming_1" class="input-image-program d-none image_programming " data-index="1">
+                    <label for="image_programming_1" class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
                         <img src="./images/General/camara.svg" alt="add-photo" class=" cursor-pointer add-photo " />
                         <span class="a-text-bold-warm text-plus mt-3">1000px X 342px</span>
                         <!---->
-                        <img src="./images/General/image-synopsis-carrusel.jpg"
-                            class="w-100 cursor-pointer image-cover prev-image-program h-100 thumbnail-image-program" />
+                        <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 cursor-pointer image-cover prev-image-program h-100 thumbnail-image-program" />
                     </label>
                 </div>
                 <div class="bor thumbnail-image-program position-relative " style="height:470px">
-                    <input type="file" id="image_programming_2" class="input-image-program d-none image_programming "
-                        data-index="1">
-                    <label for="image_programming_2"
-                        class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
+                    <input type="file" id="image_programming_2" class="input-image-program d-none image_programming " data-index="1">
+                    <label for="image_programming_2" class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
                         <img src="./images/General/camara.svg" alt="add-photo" class=" cursor-pointer add-photo " />
                         <span class="a-text-bold-warm text-plus mt-3">1920px X 657px</span>
-                        <img src="./images/General/image-synopsis-carrusel.jpg"
-                            class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                        <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
                     </label>
                 </div>
                 <div class="bor thumbnail-image-program position-relative " style="height:470px">
-                    <input type="file" name="image_programming[]" id="image_programming_3"
-                        class="input-image-program d-none image_programming " data-index="1">
-                    <label for="image_programming_3"
-                        class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
+                    <input type="file" name="image_programming[]" id="image_programming_3" class="input-image-program d-none image_programming " data-index="1">
+                    <label for="image_programming_3" class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
                         <img src="./images/General/camara.svg" alt="add-photo" class=" cursor-pointer add-photo " />
                         <span class="a-text-bold-warm text-plus mt-3">1000px X 342px</span>
-                        <img src="./images/General/image-synopsis-carrusel.jpg"
-                            class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                        <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
                     </label>
                 </div>
                 <div class="bor thumbnail-image-program position-relative " style="height:470px">
-                    <input type="file" name="image_programming[]" id="image_programming_3"
-                        class="input-image-program d-none image_programming " data-index="1">
-                    <label for="image_programming_3"
-                        class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
+                    <input type="file" name="image_programming[]" id="image_programming_3" class="input-image-program d-none image_programming " data-index="1">
+                    <label for="image_programming_3" class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
                         <img src="./images/General/camara.svg" alt="add-photo" class=" cursor-pointer add-photo " />
                         <span class="a-text-bold-warm text-plus mt-3">1000px X 342px</span>
-                        <img src="./images/General/image-synopsis-carrusel.jpg"
-                            class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                        <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
                     </label>
                 </div>
             </div>
@@ -146,8 +134,9 @@
                         <a href="sinopsis.php#dropdown-country"> <button class="synopsis-button">
                                 <div class="d-flex align-items-center">
 
-                                    <p class="synopsis-schedule-text mb-0">Añadir</p><img
-                                        src="./images/posters/heart-outline.svg" alt="">
+                                    <p class="synopsis-schedule-text mb-0">Añadir</p>
+                                    <img src="./images/home/triangle-2-copy-4.svg" alt="" class="synopsis-heart">
+
 
                                 </div>
                             </button></a>
@@ -160,20 +149,15 @@
                     <h1 class="synopsis-section-title d-flex justify-content-center ml-5">sinopsis</h1>
 
                     <div class="synopsis-body-container no-gutters">
-                        <div
-                            class="col-md-7 col-lg-6 mr-2  mb-0 synopsis-main-image border-t border-l border-r border-b position-relative d-inline-block">
-                            <img src="./images/General/pencil.svg" alt="" class="pencil pencil-main"
-                                type="synopsis-main-image">
+                        <div class="col-md-7 col-lg-6 mr-2  mb-0 synopsis-main-image border-t border-l border-r border-b position-relative d-inline-block">
+                            <img src="./images/General/pencil.svg" alt="" class="pencil pencil-main" type="synopsis-main-image">
                             <!--Imagen principal de sinopsis-->
                             <img src="" alt="" class="p-3 w-100 image-synopsis-edi">
                         </div>
-                        <div
-                            class="col-md-7 col-lg-6 mx-sm-auto mx-md-auto synopsis-description-container border-t border-l border-r border-b position-relative ">
-                            <img src="./images/General/pencil.svg" alt="" class="pencil pencil-description"
-                                type="synopsis-description-container">
+                        <div class="col-md-7 col-lg-6 mx-sm-auto mx-md-auto synopsis-description-container border-t border-l border-r border-b position-relative ">
+                            <img src="./images/General/pencil.svg" alt="" class="pencil pencil-description" type="synopsis-description-container">
                             <div>
-                                <h1
-                                    class="a-text-white-monblack synopsis-title-edi h3 d-flex justify-content-center mt-3">
+                                <h1 class="a-text-white-monblack synopsis-title-edi h3 d-flex justify-content-center mt-3">
                                 </h1>
                                 <p class="a-text-medium-white text-normal synopsis-description-edi pl-3">Texto</p>
                             </div>
@@ -186,8 +170,9 @@
                                     </button>
                                     <a href="sinopsis.php#dropdown-country"><button class="synopsis-button">
                                             <div class="d-flex align-items-center">
-                                                <p class="synopsis-schedule-text mb-0">Añadir</p><img
-                                                    src="./images/home/heart.svg" alt="">
+                                                <p class="synopsis-schedule-text mb-0">Añadir</p>
+                                                <img src="./images/home/triangle-2-copy-4.svg" alt="" class="synopsis-heart">
+
                                             </div>
                                         </button></a>
                                 </div>
@@ -199,25 +184,20 @@
                     </div>
                     <div class="no-gutters">
                         <div class="col-md-10 col-lg-12 mx-auto">
-                            <div
-                                class="synopsis-images-container no-gutters border-t border-l border-r border-b position-relative p-3">
+                            <div class="synopsis-images-container no-gutters border-t border-l border-r border-b position-relative p-3">
 
-                                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-images"
-                                    type="synopsis-images-container">
+                                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-images" type="synopsis-images-container">
 
                                 <!--Image synopsis frame 1-->
-                                <img src="" alt=""
-                                    class="mr-0 pr-3 synopsis-image-1-edi col-md-6 col-lg-4 synopsis-image">
+                                <img src="" alt="" class="mr-0 pr-3 synopsis-image-1-edi col-md-6 col-lg-4 synopsis-image">
                                 <!--Image synopsis frame 2-->
                                 <img src="" alt="" class="pr-3 synopsis-image-2-edi col-md-6 col-lg-4 synopsis-image">
                                 <!--Image synopsis frame 3-->
                                 <img src="" alt="" class="pr-3 col-lg-4 synopsis-image synopsis-image-3-edi">
                             </div>
                             <div class="">
-                                <div
-                                    class="synopsis-details-container border-t border-l border-r border-b position-relative p-3">
-                                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-details"
-                                        type="synopsis-datails-container">
+                                <div class="synopsis-details-container border-t border-l border-r border-b position-relative p-3">
+                                    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-details" type="synopsis-datails-container">
                                     <div class="synopsis-rating-container">
                                         <div class="d-flex align-items-center mr-5">
                                             <span class="a-text-Regular-White text-normal mr-2">Duración: </span>
@@ -225,19 +205,19 @@
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <span class="a-text-Regular-White text-normal mr-2">Año: </span>
-                                            <p class=" a-text-white-monblack text-normal synopsis-year-edi synopsis-detail-text ml-0 mb-0"></p>  
-                                        </div>                                  
+                                            <p class=" a-text-white-monblack text-normal synopsis-year-edi synopsis-detail-text ml-0 mb-0"></p>
+                                        </div>
                                     </div>
                                     <div class="synopsis-seasons-container">
                                         <div class="d-flex align-items-center">
                                             <span class="a-text-Regular-White text-normal mr-2">Temporadas: </span>
-                                            <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-seasons-edi ml-0 mb-0"></p> 
+                                            <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-seasons-edi ml-0 mb-0"></p>
                                         </div>
                                         <div class="d-flex align-items-center ml-5">
-                                            <span class="a-text-Regular-White text-normal mr-2">Clasificación: </span>                 
+                                            <span class="a-text-Regular-White text-normal mr-2">Clasificación: </span>
                                             <p class="a-text-white-monblack text-normal synopsis-detail-text synopsis-rating-edi ml-0 mb-0"></p>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -257,64 +237,50 @@
                     <div class="d-flex justify-content-between">
                         <!--1 países-->
                         <div class="region-country-container-active p-4 d-flex justify-content-center">
-                            <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                alt="">
+                            <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
                         </div>
                         <!--3 países-->
                         <div class="region-country-container p-4 d-flex justify-content-between">
-                            <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                alt="">
-                            <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                alt="">
-                            <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                alt="">
+                            <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
+                            <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
+                            <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
                         </div>
                         <!--4 países-->
-                        <div
-                            class="no-gutters region-country-container d-flex justify-content-center p-4 align-items-center flex-wrap">
+                        <div class="no-gutters region-country-container d-flex justify-content-center p-4 align-items-center flex-wrap">
 
                             <div class="col-6 text-center">
                                 <img src="
-                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                    alt="">
+                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
                             </div>
                             <div class="col-6 text-center">
                                 <img src="
-                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                    alt="">
+                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
                             </div>
                             <div class="col-6 text-center">
                                 <img src="
-                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                    alt="">
+                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
                             </div>
                             <div class="col-6 text-center">
                                 <img src="
-                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                    alt="">
+                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
                             </div>
                         </div>
                         <!--5 países-->
                         <div class="region-country-container d-flex align-items-center flex-wrap">
                             <div class="col-4 text-center">
-                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                    alt="">
+                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
                             </div>
                             <div class="col-4 text-center">
-                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                    alt="">
+                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
                             </div>
                             <div class="col-4 text-center">
-                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                    alt="">
+                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
                             </div>
                             <div class="col-4 text-center">
-                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                    alt="">
+                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
                             </div>
                             <div class="col-4 text-center">
-                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg"
-                                    alt="">
+                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="">
                             </div>
                         </div>
                     </div>
@@ -382,11 +348,11 @@
 <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
 <script>
     var socketSinopsis = new easyXDM.Socket({
-        onReady: function () {
+        onReady: function() {
             var hey = 2565;
             socketSinopsis.postMessage(hey)
         },
-        onMessage: function (message, origin) {
+        onMessage: function(message, origin) {
             console.log("message", typeof message);
             let data = JSON.parse(message);
             if (data.code == 200) {
@@ -453,7 +419,7 @@
                         infinite: false,
                         arrows: false,
 
-                        customPaging: function (slider, i) {
+                        customPaging: function(slider, i) {
                             var thumb = $(slider.$slides[i]).data();
                             return (
                                 " <p class='a-text-bold-tealblue slider-pagination-item pag mr-2 '> " +
@@ -471,7 +437,7 @@
                         infinite: false,
                         arrows: false,
 
-                        customPaging: function (slider, i) {
+                        customPaging: function(slider, i) {
                             var thumb = $(slider.$slides[i]).data();
                             return (
                                 " <p class='a-text-bold-tealblue slider-pagination-item pag mr-2 '> " +
@@ -678,46 +644,61 @@
                             //Horarios en PM
                             let pm = element.PM
 
-                            am.forEach(time => {
-                                timeAm += `
-                                    <div class="time-container py-4 text-center mb-4">
-                                        <span class="time-begin-text">Inicio: </span>
-                                        <span class="time-begin-number">${time}</span>
-                                    </div>
-                                    `
-                                console.log(time);
-                            })
-                            pm.forEach(time => {
-                                timePm += `
-                                    <div class="time-container py-4 text-center mb-3">
-                                        <span class="time-begin-text">Inicio: </span>
-                                        <span class="time-begin-number">${time}</span>
-                                    </div>
-                                    `
-                            })
+                            if (am.length == 0 && pm.length == 0) {
+                                dayContainer += `
+                  <div class="times-container">
+                    <div class="row h-100 p-2 p-sm-2 p-md-3 p-lg-3 p-xl-3">
+                        <div class="col-12">
+                          <div class="no-schedule-container">
+                            <div>
+                              <img class="no-schedule-image" src="./images/sinopsis/no-synopsis.png" />
+                              <p class="no-schedule-text mt-5 a-text-bold-cool-grey text-center">No hay programación para este día</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>    
+                  </div>
+                  `;
+                            } else {
+                                am.forEach((time) => {
+                                    timeAm += `
+                                            <div class="time-container py-2 py-sm-2 py-md-3 py-lg-3 py-xl-4 text-center mb-2 mb-sm-2 mb-lg-3 mb-xl-4">
+                                                <span class="time-begin-text">Inicio: </span>
+                                                <span class="time-begin-number">${time}</span>
+                                            </div>
+                                            `;
+                                });
+                                pm.forEach((time) => {
+                                    timePm += `
+                                            <div class="time-container py-2 py-sm-2 py-md-3 py-lg-3 py-xl-4 text-center mb-2 mb-sm-2 mb-lg-3 mb-xl-4">
+                                                <span class="time-begin-text">Inicio: </span>
+                                                <span class="time-begin-number">${time}</span>
+                                            </div>
+                                            `;
+                                });
 
-                            dayContainer += `
-                                <div class="times-container">
-                             
-                                    <div class="row h-100 p-2 p-sm-2 p-md-3 p-lg-3 p-xl-3">
-                                        <div class="col-12 d-block d-sm-block d-md-block d-lg-none d-xl-none">
-                                            ${timeAm}
-                                            ${timePm}
-                                        </div>
-                                        <div class="col-6 d-none d-sm-none d-md-none d-lg-block d-xl-block text-center">
-                                            <h2 class="time-title py-3">AM</h2>
-                                            ${timeAm}
-                                        </div>
-                                        <div class="col-6 d-none d-sm-none d-md-none d-lg-block d-xl-block text-center">
-                                            <h2 class="time-title py-3">PM</h2>
-                                            ${timePm}
-                                        </div>
-                                    </div>   
-                                </div>
-                                `;
+                                dayContainer += `
+                    <div class="times-container">
+                        <div class="row h-100 p-2 p-sm-2 p-md-3 p-lg-3 p-xl-3">
+                            <div class="col-12 d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                              ${timeAm}
+                              ${timePm}
+                            </div>
+                            <div class="col-6 d-none d-sm-none d-md-none d-lg-block d-xl-block text-center">
+                                <h2 class="d-none d-sm-none d-md-none d-lg-block d-xl-block  time-title py-3">AM</h2>
+                                ${timeAm}
+                            </div>
+                            <div class="col-6 d-none d-sm-none d-md-none d-lg-block d-xl-block text-center">
+                                <h2 class="d-none d-sm-none d-md-none d-lg-block d-xl-block time-title py-3">PM</h2>
+                                ${timePm}
+                            </div>
+                        </div>    
+                    </div>
+                    `;
 
-                            timeAm = "";
-                            timePm = "";
+                                timeAm = "";
+                                timePm = "";
+                            }
                         });
                     }
                     sliderContainer += `
@@ -747,7 +728,7 @@
 
                 $('.time-slider-container').html(sliderContainer);
                 let currentDay = parseInt(data.data.time_regions.actual_day) - 1;
-                $(".region-times-slider").each(function () {
+                $(".region-times-slider").each(function() {
                     $(this)
                         .not(".slick-initialized")
                         .slick({
@@ -764,7 +745,7 @@
                                         dots: true,
                                         appendDots: $(this).parent().prev(),
                                         appendArrows: $(this).parent().prev().find("ul"),
-                                        customPaging: function (slider, i) {
+                                        customPaging: function(slider, i) {
                                             return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
@@ -785,7 +766,7 @@
                                         arrows: false,
                                         dots: true,
                                         appendDots: $(this).parent().prev(),
-                                        customPaging: function (slider, i) {
+                                        customPaging: function(slider, i) {
                                             return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
@@ -806,7 +787,7 @@
                                         centerMode: true,
                                         arrows: false,
                                         centerPadding: "120px",
-                                        customPaging: function (slider, i) {
+                                        customPaging: function(slider, i) {
                                             return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
@@ -827,7 +808,7 @@
                                         centerMode: true,
                                         arrows: false,
                                         centerPadding: "120px",
-                                        customPaging: function (slider, i) {
+                                        customPaging: function(slider, i) {
                                             return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
@@ -851,7 +832,7 @@
                                         centerPadding: "200px",
                                         prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
                                         nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
-                                        customPaging: function (slider, i) {
+                                        customPaging: function(slider, i) {
                                             return `
                                             <div class="pagination-items-container">
                                                 <div class="pagination-item"></div>
@@ -869,7 +850,7 @@
                 $('.region-times-container:first').show();
                 $('.dropdownCountry').html(countryRegion)
                 let regionCountryContainer = $('.region-country-container');
-                regionCountryContainer.click(function () {
+                regionCountryContainer.click(function() {
                     regionCountryContainer.removeClass("region-country-container-active");
                     $(this).addClass("region-country-container-active")
                     let rel = $(this).attr("rel");
@@ -877,7 +858,7 @@
                     $('#' + rel).show();
                     try {
                         $(".region-times-slider").slick("unslick");
-                        $(".region-times-slider").each(function () {
+                        $(".region-times-slider").each(function() {
                             $(this)
                                 .not(".slick-initialized")
                                 .slick({
@@ -895,7 +876,7 @@
                                                 appendDots: $(this).parent().prev(),
                                                 appendArrows: $(this).parent()
                                                     .prev().find("ul"),
-                                                customPaging: function (slider, i) {
+                                                customPaging: function(slider, i) {
                                                     return `
                                                     <div class="pagination-items-container">
                                                         <div class="pagination-item"></div>
@@ -916,7 +897,7 @@
                                                 arrows: false,
                                                 dots: true,
                                                 appendDots: $(this).parent().prev(),
-                                                customPaging: function (slider, i) {
+                                                customPaging: function(slider, i) {
                                                     return `
                                                     <div class="pagination-items-container">
                                                         <div class="pagination-item"></div>
@@ -937,7 +918,7 @@
                                                 centerMode: true,
                                                 arrows: false,
                                                 centerPadding: "120px",
-                                                customPaging: function (slider, i) {
+                                                customPaging: function(slider, i) {
                                                     return `
                                                     <div class="pagination-items-container">
                                                         <div class="pagination-item"></div>
@@ -958,7 +939,7 @@
                                                 centerMode: true,
                                                 arrows: false,
                                                 centerPadding: "120px",
-                                                customPaging: function (slider, i) {
+                                                customPaging: function(slider, i) {
                                                     return `
                                                     <div class="pagination-items-container">
                                                         <div class="pagination-item"></div>
@@ -983,7 +964,7 @@
                                                 centerPadding: "200px",
                                                 prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
                                                 nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
-                                                customPaging: function (slider, i) {
+                                                customPaging: function(slider, i) {
                                                     return `
                                                     <div class="pagination-items-container">
                                                         <div class="pagination-item"></div>
@@ -996,7 +977,7 @@
                                 });
                         });
                     } catch (error) {
-                        $(".region-times-slider").each(function () {
+                        $(".region-times-slider").each(function() {
                             $(this)
                                 .not(".slick-initialized")
                                 .slick({
@@ -1014,7 +995,7 @@
                                                 appendDots: $(this).parent().prev(),
                                                 appendArrows: $(this).parent()
                                                     .prev().find("ul"),
-                                                customPaging: function (slider, i) {
+                                                customPaging: function(slider, i) {
                                                     return `
                                                     <div class="pagination-items-container">
                                                         <div class="pagination-item"></div>
@@ -1035,7 +1016,7 @@
                                                 arrows: false,
                                                 dots: true,
                                                 appendDots: $(this).parent().prev(),
-                                                customPaging: function (slider, i) {
+                                                customPaging: function(slider, i) {
                                                     return `
                                                     <div class="pagination-items-container">
                                                         <div class="pagination-item"></div>
@@ -1056,7 +1037,7 @@
                                                 centerMode: true,
                                                 arrows: false,
                                                 centerPadding: "120px",
-                                                customPaging: function (slider, i) {
+                                                customPaging: function(slider, i) {
                                                     return `
                                                     <div class="pagination-items-container">
                                                         <div class="pagination-item"></div>
@@ -1077,7 +1058,7 @@
                                                 centerMode: true,
                                                 arrows: false,
                                                 centerPadding: "120px",
-                                                customPaging: function (slider, i) {
+                                                customPaging: function(slider, i) {
                                                     return `
                                                     <div class="pagination-items-container">
                                                         <div class="pagination-item"></div>
@@ -1102,7 +1083,7 @@
                                                 centerPadding: "200px",
                                                 prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
                                                 nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
-                                                customPaging: function (slider, i) {
+                                                customPaging: function(slider, i) {
                                                     return `
                                                     <div class="pagination-items-container">
                                                         <div class="pagination-item"></div>
@@ -1121,7 +1102,7 @@
 
         }
     });
-    $('.synopsis-header').on("click", ".slider-pagination-item", function () {
+    $('.synopsis-header').on("click", ".slider-pagination-item", function() {
         let type = "slider-pagination";
         let data = {
 
@@ -1133,7 +1114,7 @@
         socketSinopsis.postMessage(json);
     });
 
-    $(".synopsis-main-image").on("click", ".pencil-main", function () {
+    $(".synopsis-main-image").on("click", ".pencil-main", function() {
 
         let data = {
             type: $(this).attr("type"),
@@ -1144,7 +1125,7 @@
         var json = JSON.stringify(data);
         socketSinopsis.postMessage(json);
     });
-    $(".synopsis-description-container").on("click", ".pencil-description", function () {
+    $(".synopsis-description-container").on("click", ".pencil-description", function() {
 
         let data = {
             type: $(this).attr("type"),
@@ -1154,7 +1135,7 @@
         var json = JSON.stringify(data);
         socketSinopsis.postMessage(json);
     });
-    $(".synopsis-images-container").on("click", ".pencil-images", function () {
+    $(".synopsis-images-container").on("click", ".pencil-images", function() {
 
         let data = {
             type: $(this).attr("type"),
@@ -1164,7 +1145,7 @@
         var json = JSON.stringify(data);
         socketSinopsis.postMessage(json);
     });
-    $(".synopsis-details-container").on("click", ".pencil-details", function () {
+    $(".synopsis-details-container").on("click", ".pencil-details", function() {
 
         let data = {
             type: $(this).attr("type"),
@@ -1175,7 +1156,7 @@
         var json = JSON.stringify(data);
         socketSinopsis.postMessage(json);
     });
-    $(".synopsis-details-container").on("click", ".pencil-details", function () {
+    $(".synopsis-details-container").on("click", ".pencil-details", function() {
 
         let data = {
             type: $(this).attr("type"),
