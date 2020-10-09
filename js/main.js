@@ -150,9 +150,9 @@ $(document).ready(function () {
     getMetaKeys(actual_landing);
   }
 
-  /* Banner*/
+  /* Banner
   let sliderBanner = new Slider();
-  sliderBanner.showImageBanner();
+  sliderBanner.showImageBanner();*/
   /* End Banner */
 
   /* Navbar */
