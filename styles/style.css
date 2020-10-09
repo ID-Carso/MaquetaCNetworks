@@ -2395,6 +2395,13 @@ h6 {
   .pie_paises {
     margin-top: 23px;
   }
+  .heart-phone {
+    -webkit-transform: translateX(130%);
+            transform: translateX(130%);
+  }
+  .heart-image {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -2407,6 +2414,13 @@ h6 {
   }
   .shadow1 {
     border-radius: 15px;
+  }
+  .heart-phone {
+    -webkit-transform: translateX(130%);
+            transform: translateX(130%);
+  }
+  .heart-image {
+    width: 50%;
   }
 }
 
@@ -3066,6 +3080,13 @@ h6 {
     width: 38px;
     margin: auto;
   }
+  .heart-phone {
+    -webkit-transform: translateX(130%);
+            transform: translateX(130%);
+  }
+  .heart-image {
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3073,6 +3094,13 @@ h6 {
   .region-country-container-active img {
     width: 38px;
     margin: auto;
+  }
+  .heart-phone {
+    -webkit-transform: translateX(130%);
+            transform: translateX(130%);
+  }
+  .heart-image {
+    width: 50%;
   }
 }
 
@@ -4700,6 +4728,10 @@ input[type="radio"]:checked + .mujer-estilo {
   -webkit-filter: none;
           filter: none;
   opacity: 1;
+  border-radius: 20px;
+  background: white;
+  -webkit-box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
 .login {
