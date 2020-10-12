@@ -13,7 +13,7 @@ $(document).ready(function () {
     success: function (result) {
       let json = JSON.parse(result);
       if (json.code == 200) {
-        let programSynopsis = JSON.parse(localStorage.getItem("synopsis"));
+        let programSynopsis = json.data;
 
         let synopsisButtonFavorite = $(".synopsis-add");
 

@@ -17,6 +17,7 @@ if ($_SESSION["country"] != 1) {
 </head>
 
 <body>
+    <input type="hidden" id="actual_landing" value="sinopsis">
     <header class="synopsis-header">
         <div class="hamburguer-menu">
             <div class="text-center sidebar-header">

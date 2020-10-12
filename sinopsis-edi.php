@@ -149,7 +149,7 @@
                                 <div class="synopsis-buttons-tablet-container justify-content-end col-md-12 col-xl-12">
                                     <button class="ml-auto d-flex align-items-center synopsis-button synopsis-add add-favorites">
                                         <p class="synopsis-schedule-text mb-0">añadir</p>
-                                        <img src="" alt="" class="synopsis-heart">
+                                        <img src="./images/posters/heart-outline.svg" alt="" class="synopsis-heart">
                                     </button>
                                 </div>
 
