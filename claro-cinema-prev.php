@@ -76,18 +76,18 @@
             <img src="./images/header/yellow-curve.png" alt="" class="header-curve">
             <!--Menú para móvil -->
             <?php
-      include 'menu-mobile.php';
-      ?>
+            include 'menu-mobile.php';
+            ?>
             <!--End menú para móvil-->
             <div class="menu-tablet-container">
                 <?php
-        include './views/partials/menu-tablet-white.php';
-        ?>
+                include './views/partials/menu-tablet-white.php';
+                ?>
             </div>
             <div>
                 <?php
-      include './views/partials/menu-desktop-black.php'
-      ?>
+                include './views/partials/menu-desktop-black.php'
+                ?>
             </div>
 
             <!--<div class="header-details header-detail-margin col-md-6">
@@ -111,15 +111,13 @@
             <section class="today-claro-cinema">
                 <div class="row no-gutters landing-header">
                     <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-                        <img src="./images/home/cinema-home-img.svg" alt="" class="lading-header-image-cinema"
-                            id="icon_claro_cinema">
+                        <img src="./images/home/cinema-home-img.svg" alt="" class="lading-header-image-cinema" id="icon_claro_cinema">
                     </div>
                     <div class="col-12 col-md-5 col-lg-5 col-xl-5">
                         <h1 class="a-today-cinema-title">hoy en <span>claro cinema</span></h1>
                     </div>
                     <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ">
-                        <a href="programacion-cinema.php"><button
-                                class="btn-teal-blue a-text-white-semibold btn-claro-cinema">VER
+                        <a href="programacion-cinema.php"><button class="btn-teal-blue a-text-white-semibold btn-claro-cinema">VER
                                 PROGRAMACIÓN</button>
                         </a>
                     </div>
@@ -141,8 +139,7 @@
                 </div>
                 <div class="imperdibles-video-container">
                     <video class="promo-video" playsinline autoplay muted controls loop>
-                        <source src="http://www.claronetworks.openofficedospuntocero.info/video/claro-cinema-promo.mp4"
-                            type="video/mp4">
+                        <source src="http://www.claronetworks.openofficedospuntocero.info/video/claro-cinema-promo.mp4" type="video/mp4">
                     </video>
                 </div>
 
@@ -183,30 +180,42 @@
             </section>
             <section>
                 <?php
-        include 'advertising-section.php';
-        ?>
+                include 'advertising-section.php';
+                ?>
                 <div class="ccinema-list-links-footer">
                     <?php
-          include './views/partials/list-links-footer.php';
-          ?>
+                    include './views/partials/list-links-footer.php';
+                    ?>
                 </div>
             </section>
             <footer>
                 <?php
-        include 'footer.php';
-        ?>
+                include 'footer.php';
+                ?>
             </footer>
         </div>
 
     </main>
     <?php
-  include './views/partials/modal-favorites.php'
-  ?>
+    include './views/partials/modal-favorites.php'
+    ?>
 
     <!--Modal de programa al añadir a favoritos-->
     <?php
-  include './views/partials/modal-program.php'
-  ?>
+    include './views/partials/modal-program.php'
+    ?>
 </body>
+<script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
+<script>
+    var socket = new easyXDM.Socket({
+        onReady: function() {
+
+            var hey = 2950;
+            console.log(hey);
+
+            socket.postMessage(hey)
+        }
+    });
+</script>
 
 </html>

@@ -24,32 +24,17 @@
                         <span class="dropdown-p">Canal Claro</span>
                     </div>
                 </a>
-                <!--<div class="dropdown-content">
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-            </div>-->
                 <a class="sidebar-link" href="concert-channel.php">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Concert
                             Channel</span>
                 </a>
             </div>
-            <!--<div class="dropdown-content">
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-            </div>-->
             <a class="sidebar-link" href="claro-cinema.php">
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Claro Cinema</span>
                 </div>
             </a>
-            <!--<div class="dropdown-content">
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-            </div>-->
             <a class="sidebar-link" href="https://nuestravision.tv">
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Nuestra
@@ -62,10 +47,6 @@
                         Sports</span>
                 </div>
             </a>
-            <!--<div class="sidebar-item sidebar-border-bottom">
-                <span class="dropdown-p active-sidebar-item">Programación</span>
-            </div>-->
-            <!--prueba sidebar-->
         </div>
         <button class="invisible-button"></button>
         </div>
@@ -84,7 +65,7 @@
                 ?>
             </div>
             <?php
-            include './views/partials/menu-desktop-black.php'
+            include './views/partials/menu-desktop-black-edi.php'
             ?>
             <div class="header-slider" id="banner-programming">
             </div>
@@ -208,7 +189,7 @@
     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
     <script>
         var socket = new easyXDM.Socket({
-            onReady: function () {
+            onReady: function() {
 
                 var hey = 4300;
                 console.log(hey);

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -86,13 +85,12 @@
                         </div>
 
                         <div class="login">
-                        <a href="index.php" class="login-item"><img  src="images/paises/gmt-icon.svg" alt=""
-                                    width="32px"></a>
+                            <a href="index.php" class="login-item"><img src="images/paises/gmt-icon.svg" alt="" width="32px"></a>
                         </div>
                     </div>
                 </nav>
                 <?php
-                include './views/partials/menu-desktop-black.php'
+                include './views/partials/menu-desktop-black-edi.php'
                 ?>
 
                 <div class="header-details header-detail-margin col-md-6">
@@ -273,8 +271,7 @@
             <!--End Versión mobile-->
             <!--Versión para tablet-->
             <div class="concert-channel-tablet">
-                <div
-                    class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
+                <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img src="./images/home/concert-home-img.svg" class="concerthome-image-header">
@@ -291,8 +288,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
+                <div class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
                     <div>
 
                     </div>
@@ -307,8 +303,7 @@
             <!--End Versión tablet-->
             <!--Concert channel desktop-->
             <div class="concert-channel-desktop">
-                <div
-                    class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
+                <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img class="concerthome-image-header" src="./images/home/concert-home-img.svg" alt="">
@@ -323,8 +318,7 @@
                 </div>
                 <div class="section-slider concert-home-slider">
                 </div>
-                <div
-                    class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
+                <div class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
                     <div>
 
                     </div>
@@ -362,8 +356,7 @@
             <!--Cinema claro tablet-->
             <div class="cinema-claro-tablet">
 
-                <div
-                    class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
+                <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
@@ -396,8 +389,7 @@
                         </div>
                     </div>
                 </div>-->
-                <div
-                    class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
+                <div class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
 
                     </div>
@@ -412,8 +404,7 @@
             <!--Cinema claro desktop-->
             <div class="cinema-claro-desktop">
                 <!--<div class="black-line"></div>-->
-                <div
-                    class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
+                <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
@@ -443,8 +434,7 @@
                     <div class="col-md-8 col-xl-6 cinema-home-videos-container">
                     </div>
                 </div>-->
-                <div
-                    class="pb-xl-0 d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
+                <div class="pb-xl-0 d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
 
                     </div>
@@ -489,7 +479,7 @@
     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
     <script>
         var socketHomeGrilla = new easyXDM.Socket({
-            onReady: function () {
+            onReady: function() {
                 socketHomeGrilla.postMessage(4300)
             },
         });

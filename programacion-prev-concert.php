@@ -84,7 +84,7 @@
                 ?>
             </div>
             <?php
-            include './views/partials/menu-desktop-black.php'
+            include './views/partials/menu-desktop-black-edi.php'
             ?>
             <div class="header-slider" id="banner-programming">
             </div>
@@ -208,7 +208,7 @@
     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
     <script>
         var socket = new easyXDM.Socket({
-            onReady: function () {
+            onReady: function() {
 
                 var hey = 4300;
                 console.log(hey);
