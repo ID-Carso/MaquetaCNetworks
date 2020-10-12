@@ -209,10 +209,7 @@
 <script>
     var socket = new easyXDM.Socket({
         onReady: function() {
-
             var hey = 2950;
-            console.log(hey);
-
             socket.postMessage(hey)
         }
     });
