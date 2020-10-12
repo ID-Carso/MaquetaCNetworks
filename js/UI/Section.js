@@ -1091,6 +1091,20 @@ export default class Section {
       }
     }
 
+    $("#banner-claro-cinema").append(slideBannerClaroCinema);
+      $("#banner-claro-cinema").not(".slick-initialized").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+        centerMode: false,
+        arrows: false,
+        prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
+        nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+      
     $("#banner-claro-cinema-edi").append(slideBannerClaroCinema);
     $("#banner-claro-cinema-edi")
       .not(".slick-initialized")
@@ -1118,6 +1132,36 @@ export default class Section {
         },
       });
 
+      
+
+      try {
+        $(".header-slider").slick("unslick");
+        $(".header-slider").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: true,
+          centerMode: false,
+          arrows: false,
+          prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
+      } catch (error) {
+        $(".header-slider").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: true,
+          centerMode: false,
+          arrows: false,
+          prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
+      }
     //BLOQUE 2 Seccion de programacion
     //cambiamos el icono del landing
     $("#icon_claro_cinema").attr("src", data.block_2_icon_channel);

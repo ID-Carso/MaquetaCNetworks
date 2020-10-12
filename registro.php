@@ -142,9 +142,9 @@ if($_SESSION["country"] != 1){
                                                                 <span class="mensaje">quieras conectarte con</span>
                                                                 <span class="mensaje">nosotros.</span>
                                                                 <br>
-                                                                <span class="enviamos">Te hemos enviado un correo
+                                                                <span class="enviamos">Te hemos enviado un correo para
                                                                 </span>
-                                                                <span class="confirma">confirma tu registro.</span>
+                                                                <span class="confirma">confirmar tu registro.</span>
                                                                 <br>
                                                                 <span class="mensaje">¡Revísalo, confirma y</span>
                                                                 <span class="mensaje">comenzamos! </span>

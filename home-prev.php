@@ -111,17 +111,17 @@
                 <div class="row no-gutters">
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="claro-canal" class="active-navItem nav-li">
+                            <li rel="claro-canal" class="active-navItem nav-li mr-3 p-3">
                                 <img class="claro-nav-image" src="" alt="" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="concert-channel" class="nav-li">
+                            <li rel="concert-channel" class="nav-li mr-3 p-3 ml-3 ">
                                 <img class="nav-image concert-nav-image" src="" alt="" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
-                            <li rel="claro-cinema" class="nav-li">
+                            <li rel="claro-cinema" class="nav-li mr-3 p-3">
                                 <img class="nav-image cinema-nav-image" src="" alt="" />
                             </li>
                         </div>
