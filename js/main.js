@@ -1559,6 +1559,7 @@ $(document).ready(function () {
   let currentDate = `${year}-${month}-${day}`;
   let currentTime = `${hour}:${minutes}`;
   getPrograms(currentDate, getNameCountry(sessionSrc));
+  getProgramming(currentDate, 0);
   /*menu responsive*/
   const invisible_button = document.querySelector(".invisible-button");
   const tache_button = document.querySelector(".tache_button");
@@ -1957,7 +1958,7 @@ function recreateClickCalendar() {
   $("ul.claro-calendar .claro-item").click(function () {
     let date = $(this).attr("date");
     //Petición ajax para traer la programación
-    getProgramming(date);
+    getProgramming(date, 1);
 
     $("ul.claro-calendar .claro-item").removeClass("claro-active");
     $(this).addClass("claro-active");
@@ -1966,11 +1967,10 @@ function recreateClickCalendar() {
 
   //Concert channel
   $("ul.concert-calendar .concert-item").click(function () {
-    console.log("Concert channel item");
     //peticiones
     let date = $(this).attr("date");
-  
-    getProgramming(date);
+    let country = getNameCountry(localStorage.getItem("src"));
+    getProgramming(date, 1);
     $("ul.concert-calendar .concert-item").removeClass("concert-active");
     $(this).addClass("concert-active");
   });
@@ -1980,8 +1980,8 @@ function recreateClickCalendar() {
     $(this).addClass("cinema-active");
 
     let date = $(this).attr("date");
-
-    getProgramming(date);
+    let country = getNameCountry(localStorage.getItem("src"));
+    getProgramming(date, 1);
   });
 }
 
