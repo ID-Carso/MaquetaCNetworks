@@ -1692,20 +1692,19 @@ $(document).ready(function () {
   const proClaroSlider = $("#pro-claro-slider");
   const tvSlider = $(".tv-slider");
 
-  $(".tv-content").hide();
-  $(".tv-content:first").show();
+ 
 
   $("ul.tv-list li").click(function () {
     $("ul.tv-list li").removeClass(
-      "active-navItem navbar-progra-item-container"
+      "active-navItem "
     );
-    $(this).addClass("active-navItem  navbar-progra-item-container");
+    $(this).addClass("active-navItem ");
     $(".tv-content").hide();
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();
 
     tvSlider.slick("refresh");
-
+    programacionSlider.slick("refresh");
     addFavorites();
     recreateClickCalendar();
     createClickThumbnails();
@@ -1970,7 +1969,7 @@ function recreateClickCalendar() {
     console.log("Concert channel item");
     //peticiones
     let date = $(this).attr("date");
-    let country = getNameCountry(localStorage.getItem("src"));
+  
     getProgramming(date);
     $("ul.concert-calendar .concert-item").removeClass("concert-active");
     $(this).addClass("concert-active");
@@ -1981,7 +1980,7 @@ function recreateClickCalendar() {
     $(this).addClass("cinema-active");
 
     let date = $(this).attr("date");
-    let country = getNameCountry(localStorage.getItem("src"));
+
     getProgramming(date);
   });
 }

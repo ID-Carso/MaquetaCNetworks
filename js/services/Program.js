@@ -19,7 +19,6 @@ function recreateClickCalendar() {
 
 function createProgramacionSlider() {
   let programacion_slider = $(".programacion-slider")
-    .not(".slick-initialized")
     .slick({
       /**/
       responsive: [
@@ -97,6 +96,7 @@ function createProgramacionSlider() {
         },
       ],
     });
+    console.log("ets en el metodo de program")
 }
 
 function createClickThumbnails() {
@@ -1670,7 +1670,7 @@ function getPrograms(date, country) {
       let lastDateClaroCinema = json.data[2].last_day;
       slider.newCalendar(lastDateClaroCinema, "cinema");
       try {
-        $("programacion-slider").slick("unslick");
+        $(".programacion-slider").slick("unslick");
         createProgramacionSlider();
       } catch (error) {
         createProgramacionSlider();
