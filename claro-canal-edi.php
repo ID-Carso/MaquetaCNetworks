@@ -6,7 +6,7 @@
   <input type="hidden" id="actual_landing" value="canal_claro">
 </head>
 
-<body>
+<body style="overflow: hidden;">
 
 
   <header class="claro-canal-header">
