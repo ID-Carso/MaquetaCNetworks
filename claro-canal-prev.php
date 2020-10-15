@@ -23,33 +23,17 @@
                 <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
                     <span class="dropdown-p active-sidebar-item">Canal Claro</span>
                 </div>
-
-
-                <!--<div class="dropdown-content">
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-              </div>-->
                 <a class="sidebar-link" href="concert-channel.php">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Concert Channel</span>
                     </div>
                 </a>
-                <!--<div class="dropdown-content">
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-              </div>-->
                 <a class="sidebar-link" href="claro-cinema.php">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Claro Cinema</span>
                     </div>
                 </a>
-                <!--<div class="dropdown-content">
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-              </div>-->
+
                 <a class="sidebar-link" href="https://nuestravision.tv" target="_blank">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Nuestra
@@ -62,12 +46,6 @@
                             Sports</span>
                     </div>
                 </a>
-                <!--<a class="sidebar-link" href="programacion.php">
-          <div class="sidebar-item sidebar-border-bottom">
-            <span class="dropdown-p">Programación</span>
-          </div>
-        </a>-->
-                <!--prueba sidebar-->
             </div>
             <button class="invisible-button"></button>
         </div>
@@ -79,30 +57,18 @@
 
             <!--Menú para móvil -->
             <?php
-      include 'menu-mobile.php';
-      ?>
+            include 'menu-mobile.php';
+            ?>
             <!--End menú para móvil-->
             <div class="menu-tablet-container">
                 <?php
-        include './views/partials/menu-tablet-white.php';
-        ?>
+                include './views/partials/menu-tablet-white.php';
+                ?>
             </div>
 
             <?php
-      include './views/partials/menu-desktop-black.php'
-      ?>
-
-            <!--<div class="header-details header-detail-margin col-md-6">
-          <div class="m-header-card">
-            <p class="a-header-card-title">Series</p>
-            <p class="a-header-card-title">Mad Men</p>
-            <p class="a-header-card-subtitle">Estreno<br />Lunes 15</p>
-            <p class="a-header-card-text">
-              Lunes a Jueves<br />21:00 GRS. | Col.
-            </p>
-          </div>
-          <img src="./images/claro-canal/claro-canal-logo.svg" alt="" />
-        </div>-->
+            include './views/partials/menu-desktop-black-edi.php'
+            ?>
             <div class="header-slider" id="banner-claro-canal">
 
             </div>
@@ -119,8 +85,7 @@
                     <div class="col-12 col-md-5 col-lg-5 col-xl-5">
                         <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ"
-                        id="btn-claro-canal">
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ" id="btn-claro-canal">
                         <a href="programacion.php"><button class="btn-claro-canal a-text-white-semibold btn-tomato">VER
                                 PROGRAMACIÓN</button></a>
                     </div>
@@ -129,7 +94,7 @@
                 <div class="today-videos-container">
                     <div class="section-slider today-claro-slider-prev">
                     </div>
-</div>
+                </div>
         </section>
 
         <section class="next-week-claro">
@@ -143,8 +108,7 @@
 
                 <div class="week-claro-video-container">
                     <video class="promo-video" playsinline autoplay muted controls loop>
-                        <source src="http://www.claronetworks.openofficedospuntocero.info/video/canal-claro-promo.mp4"
-                            type="video/mp4">
+                        <source src="http://www.claronetworks.openofficedospuntocero.info/video/canal-claro-promo.mp4" type="video/mp4">
                     </video>
                     <!--<div class="poster">
             <div class="next-week-thumb">
@@ -189,8 +153,8 @@
 
         </section>
         <?php
-    include 'advertising-section.php'
-    ?>
+        include 'advertising-section.php'
+        ?>
         <div class="">
             <div class="row no-gutters">
                 <div class="col-12">
@@ -222,13 +186,13 @@
         </div>
         <div class="cclaro-list-links-footer">
             <?php
-      include './views/partials/list-links-footer.php';
-      ?>
+            include './views/partials/list-links-footer.php';
+            ?>
         </div>
     </main>
     <?php
-  include 'footer.php'
-  ?>
+    include 'footer.php'
+    ?>
 </body>
 <?php
 include './views/partials/modal-favorites.php'
@@ -242,7 +206,7 @@ include './views/partials/modal-program.php'
 <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
 <script>
     var socket = new easyXDM.Socket({
-        onReady: function () {
+        onReady: function() {
 
             var hey = 3500;
             console.log(hey);

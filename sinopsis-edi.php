@@ -78,7 +78,7 @@
             </div>
 
             <?php
-            include './views/partials/menu-desktop-black.php'
+            include './views/partials/menu-desktop-black-edi.php'
             ?>
             <div class="header-slider-sinopsis  mx-auto" id="">
                 <div class="bor thumbnail-image-program position-relative " style="height:470px">
@@ -126,25 +126,6 @@
     <main>
         <div class="synopsis-content">
             <div class="no-gutters">
-                <div class="col-11 col-lg-10 mx-auto">
-                    <div class="synopsis-buttons-mobile-container">
-                        <button class="button-none synopsis-add add-favorites">
-                            <img src="./images/posters/heart-outline.svg" alt="" class="synopsis-heart">
-                        </button>
-                        <a href="sinopsis.php#dropdown-country"> <button class="synopsis-button">
-                                <div class="d-flex align-items-center">
-
-                                    <p class="synopsis-schedule-text mb-0">Añadir</p>
-                                    <img src="./images/home/triangle-2-copy-4.svg" alt="" class="synopsis-heart">
-
-
-                                </div>
-                            </button></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="no-gutters">
                 <div class="col-11 col-md-12 col-lg-10 mx-auto">
                     <h1 class="synopsis-section-title d-flex justify-content-center ml-5">sinopsis</h1>
 
@@ -162,19 +143,14 @@
                                 <p class="a-text-medium-white text-normal synopsis-description-edi pl-3">Texto</p>
                             </div>
 
-                            <div class="no-gutters">
 
-                                <div class="synopsis-buttons-tablet-container pb-3 pr-3 col-md-10 col-xl-12">
-                                    <button class="button-none synopsis-add add-favorites">
-                                        <img src="" alt="" class="synopsis-heart">
+                            <div class="no-gutters mb-4 mb-sm-4 mb-md-0 md-lg-0 mb-xl-0">
+
+                                <div class="synopsis-buttons-tablet-container justify-content-end col-md-12 col-xl-12">
+                                    <button class="ml-auto d-flex align-items-center synopsis-button synopsis-add add-favorites">
+                                        <p class="synopsis-schedule-text mb-0">añadir</p>
+                                        <img src="./images/posters/heart-outline.svg" alt="" class="synopsis-heart">
                                     </button>
-                                    <a href="sinopsis.php#dropdown-country"><button class="synopsis-button">
-                                            <div class="d-flex align-items-center">
-                                                <p class="synopsis-schedule-text mb-0">Añadir</p>
-                                                <img src="./images/home/triangle-2-copy-4.svg" alt="" class="synopsis-heart">
-
-                                            </div>
-                                        </button></a>
                                 </div>
 
                             </div>

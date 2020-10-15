@@ -109,6 +109,14 @@
   .pie_paises {
     margin-top: 23px;
   }
+  .heart-phone {
+    transform: translateX(100%);
+    right: 0;
+    width: fit-content;
+  }
+  .heart-image {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -124,6 +132,14 @@
   .shadow1 {
     //box-shadow: 3px 3px 5px 6px #5c1864;
     border-radius: 15px;
+  }
+  .heart-phone {
+    transform: translateX(100%);
+    right: 0;
+    width: fit-content;
+  }
+  .heart-image {
+    width: 50%;
   }
 }
 
@@ -657,10 +673,6 @@
   transform: translate(15%, -30%);
 }
 
-.synopsis-heart {
-  width: 40px;
-}
-
 .modal-image-program {
   width: 100%;
   max-width: 90px;
@@ -778,6 +790,14 @@
     width: 38px;
     margin: auto;
   }
+  .heart-phone {
+    transform: translateX(100%);
+    right: 0;
+    width: fit-content;
+  }
+  .heart-image {
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -785,6 +805,18 @@
   .region-country-container-active img {
     width: 38px;
     margin: auto;
+  }
+
+  .synopsis-main-image {
+    margin-bottom: 0px;
+  }
+  .heart-phone {
+    transform: translateX(100%);
+    right: 0;
+    width: fit-content;
+  }
+  .heart-image {
+    width: 50%;
   }
 }
 
@@ -794,6 +826,9 @@
     width: 38px;
     margin: auto;
   }
+  .synopsis-main-image {
+    margin-bottom: 0px;
+  }
 }
 
 @media only screen and (min-width: 1900px) {
@@ -801,5 +836,9 @@
   .region-country-container-active img {
     width: 38px;
     margin: auto;
+  }
+
+  .synopsis-main-image {
+    margin-bottom: 0px;
   }
 }

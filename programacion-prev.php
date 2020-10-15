@@ -24,32 +24,17 @@
                         <span class="dropdown-p">Canal Claro</span>
                     </div>
                 </a>
-                <!--<div class="dropdown-content">
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-            </div>-->
                 <a class="sidebar-link" href="concert-channel.php">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Concert
                             Channel</span>
                 </a>
             </div>
-            <!--<div class="dropdown-content">
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-            </div>-->
             <a class="sidebar-link" href="claro-cinema.php">
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Claro Cinema</span>
                 </div>
             </a>
-            <!--<div class="dropdown-content">
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-            </div>-->
             <a class="sidebar-link" href="https://nuestravision.tv">
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Nuestra
@@ -62,10 +47,6 @@
                         Sports</span>
                 </div>
             </a>
-            <!--<div class="sidebar-item sidebar-border-bottom">
-                <span class="dropdown-p active-sidebar-item">Programación</span>
-            </div>-->
-            <!--prueba sidebar-->
         </div>
         <button class="invisible-button"></button>
         </div>
@@ -84,7 +65,7 @@
                 ?>
             </div>
             <?php
-            include './views/partials/menu-desktop-black.php'
+            include './views/partials/menu-desktop-black-edi.php'
             ?>
             <div class="header-slider" id="banner-programming">
             </div>
@@ -97,17 +78,17 @@
                 <div class="row no-gutters">
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="claro-canal-programing" class="active-navItem nav-li">
+                            <li rel="claro-canal-programing" class="navbar-progra-item-container active-navItem nav-li mr-3 p-3">
                                 <img class="claro-nav-image" src="" alt="" id="icon_canal_claro" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="concert-channel-programing" class="nav-li">
+                            <li rel="concert-channel-programing" class="nav-li  pointer-events-none cursor-none">
                                 <img class="nav-image" src="" alt="" id="icon_concert_channel" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
-                            <li rel="claro-cinema-programing" class="nav-li">
+                            <li rel="claro-cinema-programing" class="nav-li  pointer-events-none cursor-none">
                                 <img class="nav-image" src="" alt="" id="icon_claro_cinema" />
                             </li>
                         </div>
@@ -208,7 +189,7 @@
     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
     <script>
         var socket = new easyXDM.Socket({
-            onReady: function () {
+            onReady: function() {
 
                 var hey = 4300;
                 console.log(hey);

@@ -2,8 +2,8 @@
 
 session_start();
 
-if($_SESSION["country"] != 1){
-    header('Location: index.php');
+if ($_SESSION["country"] != 1) {
+  header('Location: index.php');
 }
 
 ?>
@@ -12,15 +12,18 @@ if($_SESSION["country"] != 1){
 <html lang="en">
 
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
-    <script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-179528937-1');
-</script>
-<script src="https://www.googleoptimize.com/optimize.js?id=OPT-5S7NP6G"></script>
+  </script>
+  <script src="https://www.googleoptimize.com/optimize.js?id=OPT-5S7NP6G"></script>
 
   <?php include './views/partials/head.php' ?>
   <input type="hidden" id="actual_landing" value="claro_cinema">
@@ -131,8 +134,7 @@ if($_SESSION["country"] != 1){
       <section class="today-claro-cinema">
         <div class="row no-gutters landing-header">
           <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-            <img src="./images/home/cinema-home-img.svg" alt="" class="lading-header-image-cinema"
-              id="icon_claro_cinema">
+            <img src="./images/home/cinema-home-img.svg" alt="" class="lading-header-image-cinema" id="icon_claro_cinema">
           </div>
           <div class="col-12 col-md-5 col-lg-5 col-xl-5">
             <h1 class="a-today-cinema-title">hoy en <span>claro cinema</span></h1>
@@ -160,8 +162,7 @@ if($_SESSION["country"] != 1){
         </div>
         <div class="imperdibles-video-container">
           <video class="promo-video" playsinline autoplay muted controls loop>
-            <source src="http://www.claronetworks.openofficedospuntocero.info/video/claro-cinema-promo.mp4"
-              type="video/mp4">
+            <source src="http://www.claronetworks.openofficedospuntocero.info/video/claro-cinema-promo.mp4" type="video/mp4">
           </video>
         </div>
 
@@ -226,19 +227,7 @@ if($_SESSION["country"] != 1){
   <?php
   include './views/partials/modal-program.php'
   ?>
-   <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
-    <script>
-        var socket = new easyXDM.Socket({
-            onReady: function() {
 
-                var hey = 2950;
-                console.log(hey);
-
-                socket.postMessage(hey)
-            }
-        });
-    </script>
 </body>
 
 </html>
-

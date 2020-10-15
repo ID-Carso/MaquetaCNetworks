@@ -135,7 +135,6 @@
 
 .synopsis-button img {
   width: 15px;
-  filter: invert(1);
 }
 
 .synopsis-add-text {
@@ -346,7 +345,8 @@
   padding: 8px 12px;
   outline: none;
 }
-.pencil-black{
+
+.pencil-black {
   position: absolute;
   z-index: 5;
   top: 0;
@@ -357,4 +357,4 @@
   border-radius: 13px;
   border: 1px solid #252424;
   cursor: pointer;
-} 
+}

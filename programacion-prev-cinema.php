@@ -84,7 +84,7 @@
                 ?>
             </div>
             <?php
-             include './views/partials/menu-desktop-black-edi.php'
+            include './views/partials/menu-desktop-black-edi.php'
             ?>
             <div class="header-slider" id="banner-programming">
             </div>
@@ -97,17 +97,17 @@
                 <div class="row no-gutters">
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="claro-canal-programing" class="nav-li">
+                            <li rel="claro-canal-programing" class=" nav-li pointer-events-none cursor-none">
                                 <img class="claro-nav-image" src="" alt="" id="icon_canal_claro" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="concert-channel-programing" class="nav-li">
+                            <li rel="concert-channel-programing" class="nav-li pointer-events-none cursor-none">
                                 <img class="nav-image" src="" alt="" id="icon_concert_channel" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
-                            <li rel="claro-cinema-programing" class="active-navItem nav-li">
+                            <li rel="claro-cinema-programing" class="navbar-progra-item-container active-navItem nav-li ml-3 p-3">
                                 <img class="nav-image" src="" alt="" id="icon_claro_cinema" />
                             </li>
                         </div>
@@ -116,7 +116,7 @@
                     </ul>
                 </div>
 
-                <div id="claro-canal-programing" class="tv-content d-none">
+                <div id="claro-canal-programing" class="tv-content">
                     <div class="no-gutters" id="container-slider-claro">
                         <div class="programacion-date-container">
                             <div class="no-gutters">
@@ -139,7 +139,7 @@
                     <div class="claro-content"></div>
                 </div>
 
-                <div id="concert-channel-programing" class="tv-content d-none">
+                <div id="concert-channel-programing" class="tv-content">
                     <div class="no-gutters">
                         <div class="programacion-date-container">
                             <div class="no-gutters">
@@ -208,7 +208,7 @@
     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
     <script>
         var socket = new easyXDM.Socket({
-            onReady: function () {
+            onReady: function() {
 
                 var hey = 4300;
                 console.log(hey);

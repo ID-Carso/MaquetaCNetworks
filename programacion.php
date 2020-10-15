@@ -118,17 +118,17 @@ if($_SESSION["country"] != 1){
                 <div class="row no-gutters">
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="claro-canal-programing" class="active-navItem nav-li">
+                            <li rel="claro-canal-programing" class=" active-navItem nav-li mr-3 p-3">
                                 <img class="claro-nav-image" src="" alt="" id="icon_canal_claro" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="concert-channel-programing" class="nav-li">
+                            <li rel="concert-channel-programing" class="nav-li ml-3 mr-3 p-3">
                                 <img class="nav-image" src="" alt="" id="icon_concert_channel" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
-                            <li rel="claro-cinema-programing" class="nav-li">
+                            <li rel="claro-cinema-programing" class="nav-li ml-3 p-3">
                                 <img class="nav-image" src="" alt="" id="icon_claro_cinema" />
                             </li>
                         </div>
@@ -160,7 +160,7 @@ if($_SESSION["country"] != 1){
                     <div class="claro-content"></div>
                 </div>
 
-                <div id="concert-channel-programing" class="tv-content">
+                <div id="concert-channel-programing" class="tv-content" >
                     <div class="no-gutters">
                         <div class="programacion-date-container">
                             <div class="no-gutters">

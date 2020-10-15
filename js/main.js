@@ -1,92 +1,43 @@
-import {
-  gradientMenu,
-  navbarWhite
-} from "./scroll/scroll.js";
-import {
-  ShowHidePassword
-} from "./form/form.js";
-import {
-  selectCountry
-} from "./session/session.js";
-import {
-  validateEmail
-} from "./form/form.js";
-import {
-  validateNewPassword
-} from "./form/form.js";
-import {
-  validateKeyUpEmail
-} from "./form/form.js";
-import {
-  validatePassword
-} from "./form/form.js";
-import {
-  validateUser
-} from "./form/form.js";
-import {
-  registerUser
-} from "./services/user/user.js";
-import {
-  validateToken
-} from "./form/form.js";
+import { gradientMenu, navbarWhite } from "./scroll/scroll.js";
+import { ShowHidePassword } from "./form/form.js";
+import { selectCountry } from "./session/session.js";
+import { validateEmail } from "./form/form.js";
+import { validateNewPassword } from "./form/form.js";
+import { validateKeyUpEmail } from "./form/form.js";
+import { validatePassword } from "./form/form.js";
+import { validateUser } from "./form/form.js";
+import { registerUser } from "./services/user/user.js";
+import { validateToken } from "./form/form.js";
 
 /* User */
-import {
-  sendUserEmail
-} from "./services/user/user.js";
-import {
-  sendNewPassword
-} from "./services/user/user.js";
-import {
-  signIn
-} from "./services/user/user.js";
-import {
-  signOut
-} from "./services/user/user.js";
-import {
-  updateDataUser
-} from "./services/user/user.js";
-import {
-  selectAvatar
-} from "./services/user/user.js";
-import {
-  updateAlerts
-} from "./services/user/user.js";
-import {
-  addFavorites
-} from "./services/user/user.js";
-import {
-  removeFavorites
-} from "./services/user/user.js";
-import {
-  showNotification
-} from "./services/user/user.js";
-import {
-  updateAlertProgram
-} from "./services/user/user.js";
-import {
-  getNameCountry
-} from "./country/country.js";
+import { sendUserEmail } from "./services/user/user.js";
+import { sendNewPassword } from "./services/user/user.js";
+import { signIn } from "./services/user/user.js";
+import { signOut } from "./services/user/user.js";
+import { updateDataUser } from "./services/user/user.js";
+import { selectAvatar } from "./services/user/user.js";
+import { updateAlerts } from "./services/user/user.js";
+import { addFavorites } from "./services/user/user.js";
+import { removeFavorites } from "./services/user/user.js";
+import { showNotification } from "./services/user/user.js";
+import { updateAlertProgram } from "./services/user/user.js";
+import { getNameCountry } from "./country/country.js";
 
 /* Program */
 import {
   getPrograms,
   createClickThumbnails,
-  getProgramming
+  getProgramming,
 } from "./services/Program.js";
 
 /* Date */
-import {
-  getMonthAndYear
-} from "./date/date.js";
+import { getMonthAndYear } from "./date/date.js";
 
 /* Slider */
 import Slider from "./UI/Slider.js";
 
 /* Section Metakeys*/
-import {
-  getMetaKeys
-} from "./services/Section.js";
+import { getMetaKeys } from "./services/Section.js";
 
 import Navbar from "./UI/Navbar.js";
 
@@ -103,7 +54,6 @@ let data = {
 if (arrayUrl[0] == url2) {
   validateToken(data);
 }
-
 
 let country = localStorage.getItem("country");
 let gender = localStorage.getItem("gender");
@@ -141,18 +91,15 @@ if (day && month && year) {
 }
 
 $(document).ready(function () {
-
-
-
   let dateUTC = new Date();
-  let actual_landing = $('#actual_landing').val();
+  let actual_landing = $("#actual_landing").val();
   if (actual_landing) {
     getMetaKeys(actual_landing);
   }
 
-  /* Banner*/
+  /* Banner
   let sliderBanner = new Slider();
-  sliderBanner.showImageBanner();
+  sliderBanner.showImageBanner();*/
   /* End Banner */
 
   /* Navbar */
@@ -907,7 +854,7 @@ $(document).ready(function () {
       for (i = 0; i < alertsLength; i++) {
         alerts[i].prop({
           checked: false,
-          disabled: true
+          disabled: true,
         });
       }
     } else {
@@ -1173,12 +1120,7 @@ $(document).ready(function () {
 
     userOptions.html(menuBase);
     sidebarHeader.html(menuBaseMobile);
-  
-   
-
-    
   }
-  
 
   $(".tooltip-logout").click(function () {
     signOut();
@@ -1194,18 +1136,10 @@ $(document).ready(function () {
 
   if ("src" in localStorage) {
     console.log("si");
-   
-}else{
-  console.log("no");
-  localStorage.setItem("src", "images/paises/gmt-icon.svg");
-}
-  
- 
- 
-   
-  
- 
-
+  } else {
+    console.log("no");
+    localStorage.setItem("src", "images/paises/gmt-icon.svg");
+  }
 
   /* Hacer aparecer el tooltip */
 
@@ -1365,8 +1299,6 @@ $(document).ready(function () {
   createCinemaHomeSlider();
   /* Metakeys */
 
-
-
   /*End Metakeys */
 
   var section_slider = $(".section-slider")
@@ -1380,7 +1312,8 @@ $(document).ready(function () {
       arrows: true,
       prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
       nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-      responsive: [{
+      responsive: [
+        {
           breakpoint: 768,
           settings: {
             slidesToShow: 1,
@@ -1413,8 +1346,10 @@ $(document).ready(function () {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow:
+              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow:
+              '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
 
@@ -1427,8 +1362,10 @@ $(document).ready(function () {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow:
+              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            nextArrow:
+              '<img src="../images/sliders/next.png" class="arrow-next" />',
           },
         },
       ],
@@ -1444,7 +1381,8 @@ $(document).ready(function () {
     prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
     nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
 
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -1477,8 +1415,10 @@ $(document).ready(function () {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
 
@@ -1491,8 +1431,10 @@ $(document).ready(function () {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
     ],
@@ -1527,7 +1469,8 @@ $(document).ready(function () {
     arrows: true,
     prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
     nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -1560,8 +1503,10 @@ $(document).ready(function () {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
       {
@@ -1573,8 +1518,10 @@ $(document).ready(function () {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
     ],
@@ -1598,20 +1545,21 @@ $(document).ready(function () {
       "cinema",
     ); */
 
-
-
   let date = new Date();
   let day = ("0" + date.getDate()).slice(-2);
   let month = ("0" + (date.getMonth() + 1)).slice(-2);
+  let mes = date.getMonth();
+  $(".month").text(getMonthAndYear(mes));
+  console.log(mes);
   let year = date.getFullYear();
   let hour = date.getHours();
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
 
-
   let currentDate = `${year}-${month}-${day}`;
   let currentTime = `${hour}:${minutes}`;
   getPrograms(currentDate, getNameCountry(sessionSrc));
+  getProgramming(currentDate, 0);
   /*menu responsive*/
   const invisible_button = document.querySelector(".invisible-button");
   const tache_button = document.querySelector(".tache_button");
@@ -1745,29 +1693,25 @@ $(document).ready(function () {
   const proClaroSlider = $("#pro-claro-slider");
   const tvSlider = $(".tv-slider");
 
-  $(".tv-content").hide();
-  $(".tv-content:first").show();
-
+ 
 
   $("ul.tv-list li").click(function () {
-    $("ul.tv-list li").removeClass("active-navItem");
-    $(this).addClass("active-navItem");
+    $("ul.tv-list li").removeClass(
+      "active-navItem "
+    );
+    $(this).addClass("active-navItem ");
     $(".tv-content").hide();
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();
 
     tvSlider.slick("refresh");
-
     programacionSlider.slick("refresh");
     addFavorites();
     recreateClickCalendar();
     createClickThumbnails();
   });
 
-
-
   $("ul.tv-list-programming li").click(function () {
-
     $("ul.tv-list-programming li").removeClass("active-navItem");
     $(this).addClass("active-navItem");
     $(".tv-content-programming").hide();
@@ -1775,7 +1719,7 @@ $(document).ready(function () {
     $("#" + activeNav).fadeIn();
 
     tvSlider.slick("refresh");
-    programacion_slider.slick("refresh");
+    programacionSlider.slick("refresh");
     addFavorites();
     recreateClickCalendar();
     createClickThumbnails();
@@ -1815,7 +1759,12 @@ $(document).ready(function () {
     var activeNav = $(this).attr("rel");
     $("#" + activeNav).fadeIn();
 
-    if (activeNav == "pro-concert-channel") {} else if (activeNav == "pro-claro-canal") {} else if (activeNav == "pro-claro-cinema") {} else if (activeNav == "pro-nuestra-vision") {} else if (activeNav == "pro-claro-sports") {}
+    if (activeNav == "pro-concert-channel") {
+    } else if (activeNav == "pro-claro-canal") {
+    } else if (activeNav == "pro-claro-cinema") {
+    } else if (activeNav == "pro-nuestra-vision") {
+    } else if (activeNav == "pro-claro-sports") {
+    }
   });
 
   var slides = document.querySelectorAll("#claro-canal .slick-slide");
@@ -1865,7 +1814,8 @@ function createCinemaHomeSlider() {
     prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
     nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
 
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -1898,8 +1848,10 @@ function createCinemaHomeSlider() {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
 
@@ -1912,14 +1864,15 @@ function createCinemaHomeSlider() {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
     ],
   });
 }
-
 
 //Modificar el anchor de la url
 
@@ -1941,7 +1894,8 @@ function createTvSlider() {
     arrows: true,
     prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
     nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
@@ -1974,8 +1928,10 @@ function createTvSlider() {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
       {
@@ -1987,8 +1943,10 @@ function createTvSlider() {
           dots: true,
           centerMode: false,
           arrows: true,
-          prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" />',
         },
       },
     ],
@@ -1996,42 +1954,34 @@ function createTvSlider() {
 }
 
 function recreateClickCalendar() {
-
   //Claro canal
   $("ul.claro-calendar .claro-item").click(function () {
     let date = $(this).attr("date");
     //Petición ajax para traer la programación
-    getProgramming(date);
-
+    getProgramming(date, 1);
 
     $("ul.claro-calendar .claro-item").removeClass("claro-active");
     $(this).addClass("claro-active");
     //Mostrar contenido (Que es innecesario en estos momentos)
   });
 
-
-
   //Concert channel
   $("ul.concert-calendar .concert-item").click(function () {
-    console.log("Concert channel item")
     //peticiones
     let date = $(this).attr("date");
     let country = getNameCountry(localStorage.getItem("src"));
-    getProgramming(date);
+    getProgramming(date, 1);
     $("ul.concert-calendar .concert-item").removeClass("concert-active");
     $(this).addClass("concert-active");
-
   });
-
 
   $("ul.cinema-calendar .cinema-item").click(function () {
     $("ul.cinema-calendar .cinema-item").removeClass("cinema-active");
     $(this).addClass("cinema-active");
 
-
     let date = $(this).attr("date");
     let country = getNameCountry(localStorage.getItem("src"));
-    getProgramming(date);
+    getProgramming(date, 1);
   });
 }
 
@@ -2053,7 +2003,6 @@ window.onresize = function () {
 };
 
 //para slider de sinopsis en editable
-
 
 //para dar click
 const pagination = $(".pag");

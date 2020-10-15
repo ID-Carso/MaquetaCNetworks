@@ -34,17 +34,9 @@
   position: relative;
   filter: none;
   opacity: 1;
-}
-
-.active-navItem::after {
-  content: "";
-  border-width: 8px;
-  border-style: solid;
-  border-color: #ff0007 transparent transparent transparent;
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  transform: translate(-50%, 100%);
+  border-radius: 20px;
+  background: white; 
+  box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
 .login {

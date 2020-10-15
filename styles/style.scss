@@ -552,16 +552,14 @@
   }
 
   .synopsis-schedule-title {
-    font-size: 30px;
-  }
-
-  .synopsis-schedule-title {
+    font-size: 24px;
     margin-bottom: 95px !important;
   }
 
   .synopsis-section-title {
-    font-size: 30px;
-    padding: 50px 0;
+    font-size: 24px;
+    padding-top: 24px;
+    padding-bottom: 16px;
   }
 
   .no-synopsis-title {
@@ -1683,7 +1681,7 @@
     color: white;
     text-transform: uppercase;
     font-family: $montserratBlack;
-    padding: 65px 0;
+    padding: 35px 0;
   }
 
   .a-today-claro-title,
@@ -2126,8 +2124,8 @@
   /*1.7 - Sinópsis - Átomos */
 
   .synopsis-title {
-    font-size: 30px;
-    font-family: $montserratSemiBold;
+    font-size: 24px;
+    font-family: $montserratBlack;
     padding-bottom: 25px;
     text-align: left;
   }
@@ -2136,10 +2134,6 @@
     color: white;
     font-size: 16px;
     margin-bottom: 0;
-  }
-
-  .synopsis-add {
-    margin-right: 40px;
   }
 
   .synopsis-image:nth-child(1),
@@ -2158,7 +2152,6 @@
 
   .synopsis-schedule-title {
     font-size: 30px;
-    padding-bottom: 65px;
     margin-bottom: 0;
   }
 
@@ -2850,7 +2843,7 @@
   }
 
   .synopsis-body-container {
-    margin-bottom: 110px;
+    margin-bottom: 48px;
     display: flex;
   }
 
@@ -3376,13 +3369,13 @@
     }
   }
 
-  .a-cinema-rectangle,
+  /*   .a-cinema-rectangle,
   .a-sports-rectangle,
   .a-concert-rectangle,
   .a-claro-rectangle,
   .a-vision-rectangle {
     height: 52px;
-  }
+  } */
 
   .nav-image,
   .claro-nav-image {
@@ -3665,20 +3658,15 @@
   /*-----------------------------*/
   /*1.7 - Sinópsis - átomos*/
   .synopsis-section-title {
-    padding: 80px 0;
-    margin-left: 10%;
-    text-align: left;
-    font-size: 30px;
+    padding: 48px 0;
+    text-align: center;
+    font-size: 36px;
   }
 
   .synopsis-title {
-    font-size: 20px;
+    font-size: 24px;
     text-transform: uppercase;
     text-align: left;
-  }
-
-  .synopsis-add {
-    margin-right: 40px;
   }
 
   .synopsis-image:nth-child(2),
@@ -3708,9 +3696,7 @@
   }
 
   .synopsis-schedule-title {
-    font-size: 30px;
-    padding-bottom: 65px;
-    margin-bottom: 0 !important;
+    font-size: 36px;
   }
 
   .no-synopsis-title {
@@ -4935,17 +4921,17 @@
     width: 36px;
   }
 
-  .slick-slider .slick-list {
+  /*.slick-slider .slick-list {
     padding: 0px 0px 0px 0px !important;
-  }
+  }*/
 
-  .a-cinema-rectangle,
+  /*   .a-cinema-rectangle,
   .a-sports-rectangle,
   .a-concert-rectangle,
   .a-claro-rectangle,
   .a-vision-rectangle {
     height: 52px;
-  }
+  } */
 
   .a-sports-text-poster,
   .a-poster-text-white,
@@ -5355,12 +5341,14 @@
   /*-----------------------------*/
   /*1.7 Sinópsis -  Átomos  */
   .synopsis-section-title {
-    font-size: 60px;
-    padding: 85px 0;
+    font-size: 36px;
+    padding: 48px 0;
   }
-
-  .synopsis-add {
-    margin-right: 40px;
+  .synopsis-title {
+    font-size: 24px;
+  }
+  .synopsis-text {
+    font-size: 18px;
   }
 
   .synopsis-image:nth-child(2),
@@ -5386,8 +5374,8 @@
   }
 
   .synopsis-schedule-title {
-    font-size: 60px;
-    margin: 120px 0 !important;
+    font-size: 36px;
+    //margin: 120px 0 !important;
   }
 
   .no-synopsis-title {
