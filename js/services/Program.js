@@ -1709,7 +1709,7 @@ function getProgramming(date, withLoader) {
   let data = {
     function: "getProgramming",
     date,
-    country: "gmt",
+   country: "gmt",
   };
   $.ajax({
     type: "POST",
@@ -1990,7 +1990,7 @@ function getProgramming(date, withLoader) {
         //Insertar programas para edición en backoffice
         $(".claro-content-edit").html(programCanalClaroEdit);
         //Insertar programas en página
-        $(".claro-content").html(programCanalClaro);
+       // $(".claro-content").html(programCanalClaro);
         //Insertar programas en página
         $(".concert-content").html(programConcertChannel);
         $(".concert-content-edit").html(programConcertChannelEdit);

@@ -1693,7 +1693,7 @@ $(document).ready(function () {
   const proClaroSlider = $("#pro-claro-slider");
   const tvSlider = $(".tv-slider");
 
- 
+  $(".contnt-hide").hide();
 
   $("ul.tv-list li").click(function () {
     $("ul.tv-list li").removeClass(
