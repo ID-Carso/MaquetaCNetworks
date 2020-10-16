@@ -16,13 +16,12 @@ if ($_SESSION["country"] != 1) {
     <input type="hidden" id="actual_landing" value="about">
 
     <script>
-        (function() {$('body').addClass('invisible'); setTimeout(function(){$('body').removeClass('invisible')}, 1000);})();
+        (function() {$('body').addClass('invisible'); setTimeout(function(){$('body').removeClass('invisible'); $('body').addClass('bg-bubble')}, 1000);})();
     </script>
 </head>
 
 <body class="bg-bubble">
 
-    <!-- <body class="bg-dark"> -->
     <header>
         <div class="container-fluid">
             <!-- RESPONSIVE -->
