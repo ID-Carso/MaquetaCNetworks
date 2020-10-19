@@ -2397,8 +2397,12 @@ h6 {
     margin-top: 23px;
   }
   .heart-phone {
-    -webkit-transform: translateX(130%);
-            transform: translateX(130%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    right: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .heart-image {
     width: 50%;
@@ -2417,8 +2421,12 @@ h6 {
     border-radius: 15px;
   }
   .heart-phone {
-    -webkit-transform: translateX(130%);
-            transform: translateX(130%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    right: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .heart-image {
     width: 50%;
@@ -3085,8 +3093,12 @@ h6 {
     margin: auto;
   }
   .heart-phone {
-    -webkit-transform: translateX(130%);
-            transform: translateX(130%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    right: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .heart-image {
     width: 50%;
@@ -3103,8 +3115,12 @@ h6 {
     margin-bottom: 0px;
   }
   .heart-phone {
-    -webkit-transform: translateX(130%);
-            transform: translateX(130%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    right: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .heart-image {
     width: 50%;

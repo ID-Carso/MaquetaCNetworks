@@ -120,7 +120,7 @@
                     <div class="claro-content"></div>
                 </div>
 
-                <div id="concert-channel-programing" class="tv-content">
+                <div id="concert-channel-programing" class="tv-content contnt-hide">
                     <div class="no-gutters">
                         <div class="programacion-date-container">
                             <div class="no-gutters">
@@ -142,7 +142,7 @@
                 </div>
                 <!--End Concert channel de "Ahora en tv"-->
                 <!--Claro cinema de "Ahora en tv"-->
-                <div id="claro-cinema-programing" class="tv-content">
+                <div id="claro-cinema-programing" class="tv-content contnt-hide">
                     <div class="no-gutters">
                         <div class="programacion-date-container">
                             <div class="no-gutters">

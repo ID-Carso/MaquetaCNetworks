@@ -19,7 +19,6 @@ function recreateClickCalendar() {
 
 function createProgramacionSlider() {
   let programacion_slider = $(".programacion-slider")
-    .not(".slick-initialized")
     .slick({
       /**/
       responsive: [
@@ -97,6 +96,7 @@ function createProgramacionSlider() {
         },
       ],
     });
+    console.log("ets en el metodo de program")
 }
 
 function createClickThumbnails() {
@@ -1666,7 +1666,7 @@ function getPrograms(date, country) {
       let lastDateClaroCinema = json.data[2].last_day;
       slider.newCalendar(lastDateClaroCinema, "cinema");
       try {
-        $("programacion-slider").slick("unslick");
+        $(".programacion-slider").slick("unslick");
         createProgramacionSlider();
       } catch (error) {
         createProgramacionSlider();
@@ -1709,7 +1709,7 @@ function getProgramming(date, withLoader) {
   let data = {
     function: "getProgramming",
     date,
-    country: "gmt",
+   country: "gmt",
   };
   $.ajax({
     type: "POST",
@@ -1990,7 +1990,7 @@ function getProgramming(date, withLoader) {
         //Insertar programas para edición en backoffice
         $(".claro-content-edit").html(programCanalClaroEdit);
         //Insertar programas en página
-        $(".claro-content").html(programCanalClaro);
+       // $(".claro-content").html(programCanalClaro);
         //Insertar programas en página
         $(".concert-content").html(programConcertChannel);
         $(".concert-content-edit").html(programConcertChannelEdit);
