@@ -25,29 +25,17 @@
                     </div>
 
                 </a>
-                <!--<div class="dropdown-content">
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-              </div>-->
+            
                 <a class="sidebar-link" href="concert-channel.php">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Concert Channel</span>
                     </div>
                 </a>
-                <!--<div class="dropdown-content">
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-              </div>-->
+          
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p active-sidebar-item">Claro Cinema</span>
                 </div>
-                <!--<div class="dropdown-content">
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-              </div>-->
+             
                 <a class="sidebar-link" href="https://nuestravision.tv" target="_blank">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Nuestra
@@ -60,11 +48,7 @@
                             Sports</span>
                     </div>
                 </a>
-                <!--<a class="sidebar-link" href="programacion.php">
-          <div class="sidebar-item sidebar-border-bottom">
-            <span class="dropdown-p">Programación</span>
-          </div>
-        </a>-->
+               
                 <!--prueba sidebar-->
             </div>
             <button class="invisible-button"></button>
@@ -73,7 +57,7 @@
         <div class="header">
             <div class="alert-user">
             </div>
-            <img src="./images/header/yellow-curve.png" alt="" class="header-curve">
+            <img src="./images/header/yellow-curve.png" alt="imagen-header" class="header-curve"/>
             <!--Menú para móvil -->
             <?php
             include 'menu-mobile.php';
@@ -90,17 +74,6 @@
                 ?>
             </div>
 
-            <!--<div class="header-details header-detail-margin col-md-6">
-            <div class="m-header-card">
-              <p class="a-header-card-title">Series</p>
-              <p class="a-header-card-title">Mad Men</p>
-              <p class="a-header-card-subtitle">Estreno<br />Lunes 15</p>
-              <p class="a-header-card-text">
-                Lunes a Jueves<br />21:00 GRS. | Col.
-              </p>
-            </div>
-            <img src="./images/claro-canal/claro-canal-logo.svg" alt="" />
-          </div>-->
             <div class="header-slider" id="banner-claro-cinema">
             </div>
         </div>
@@ -111,7 +84,7 @@
             <section class="today-claro-cinema">
                 <div class="row no-gutters landing-header">
                     <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-                        <img src="./images/home/cinema-home-img.svg" alt="" class="lading-header-image-cinema" id="icon_claro_cinema">
+                        <img src="./images/home/cinema-home-img.svg" alt="logo-claro-cinema" class="lading-header-image-cinema" id="icon_claro_cinema"/>
                     </div>
                     <div class="col-12 col-md-5 col-lg-5 col-xl-5">
                         <h1 class="a-today-cinema-title">hoy en <span>claro cinema</span></h1>

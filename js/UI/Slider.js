@@ -32,8 +32,8 @@ export default class Slider {
         dots: true,
         centerMode: false,
         arrows: true,
-        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
 
         responsive: [{
             breakpoint: 768,
@@ -68,8 +68,8 @@ export default class Slider {
               dots: true,
               centerMode: false,
               arrows: true,
-              prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-              nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+              prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
+              nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
             },
           },
 
@@ -82,8 +82,8 @@ export default class Slider {
               dots: true,
               centerMode: false,
               arrows: true,
-              prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-              nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+              prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
+              nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
             },
           },
         ],
@@ -114,8 +114,8 @@ export default class Slider {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
           },
         },
         {
@@ -127,8 +127,8 @@ export default class Slider {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
           },
         },
         {
@@ -140,8 +140,8 @@ export default class Slider {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
           },
         },
         {
@@ -153,8 +153,8 @@ export default class Slider {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
+            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
           },
         },
       ],
@@ -457,14 +457,14 @@ export default class Slider {
       imagesBannerProgramming.forEach(function (image) {
         slideBannerProgramming += `        
         <div class="header-slide">
-          <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
+          <img src="${image.imageBannerPC}" class="rellax" data-rellax="10" alt="banner-de-pc-${image.imageBannerPC}"/>
         </div>`;
       });
 
       imagesBannerClaroCinema.forEach(function (image) {
         slideBannerClaroCinema += `        
         <div class="header-slide">
-          <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10">
+          <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10" alt="banner-de-tablet-${image.imageBannerTablet}"/>
         </div>`;
       });
 
@@ -475,14 +475,14 @@ export default class Slider {
       imagesBannerProgramming.forEach(function (image) {
         slideBannerProgramming += `        
         <div class="header-slide">
-          <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
+          <img src="${image.imageBannerPC}" class="rellax" data-rellax="10" alt="banner-de-pc-${image.imageBannerPC}"/>
         </div>`;
       });
 
       imagesBannerClaroCinema.forEach(function (image) {
         slideBannerClaroCinema += `        
         <div class="header-slide">
-          <img src="${image.imageBannerPC}" class="rellax" data-rellax="10">
+          <img src="${image.imageBannerPC}" class="rellax" data-rellax="10" alt="banner-de-pc-${image.imageBannerPC}"/>
         </div>`;
       });
 
@@ -499,8 +499,8 @@ export default class Slider {
       dots: true,
       centerMode: false,
       arrows: false,
-      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
+      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
       autoplay: true,
       autoplaySpeed: 2000,
     });
@@ -526,7 +526,7 @@ export default class Slider {
         `
 <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
 <label for="image_logo${slideIndexcinema}" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
-<img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+<img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" alt="imagen-default"/>
 </label>
 </div>
 

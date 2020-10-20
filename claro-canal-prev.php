@@ -53,7 +53,7 @@
         <div class="header">
             <div class="alert-user">
             </div>
-            <img src="./images/header/curva.svg" alt="" class="header-curve">
+            <img src="./images/header/curva.svg" alt="imagen-header" class="header-curve"/>
 
             <!--Menú para móvil -->
             <?php
@@ -80,7 +80,7 @@
             <div class="today-container">
                 <div class="row no-gutters landing-header">
                     <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-                        <img src="" id="icon_canal_claro" alt="" class="lading-header-image-claro">
+                        <img src="" id="icon_canal_claro" alt="logo-canal-claro" class="lading-header-image-claro"/>
                     </div>
                     <div class="col-12 col-md-5 col-lg-5 col-xl-5">
                         <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
@@ -110,17 +110,7 @@
                     <video class="promo-video" playsinline autoplay muted controls loop>
                         <source src="http://www.claronetworks.openofficedospuntocero.info/video/canal-claro-promo.mp4" type="video/mp4">
                     </video>
-                    <!--<div class="poster">
-            <div class="next-week-thumb">
-              <div class="a-next-week-rectangle">
-                <div class="poster-title-margin rectangle-content">
-                  <p class="a-poster-text-white">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>-->
+               
                 </div>
 
 
@@ -163,22 +153,22 @@
                 <div class="social-media">
                     <div class="col ">
                         <a href="https://www.facebook.com/CanalClaro/" target="_blank">
-                            <img class="social-icon" src="./images/redes/facebook-icon-red.svg" alt="" />
+                            <img class="social-icon" src="./images/redes/facebook-icon-red.svg" alt="icono-facebook" />
                         </a>
                     </div>
                     <div class="col">
                         <a href="https://www.instagram.com/canalclaro/?hl=es-la" target="_blank">
-                            <img class="social-icon" src="./images/redes/insta-icon-red.svg" alt="" />
+                            <img class="social-icon" src="./images/redes/insta-icon-red.svg" alt="icono-instagram" />
                         </a>
                     </div>
                     <div class="col">
                         <a href="https://twitter.com/canalclaro" target="_blank">
-                            <img class="social-icon" src="./images/redes/twitter-icon-red.svg" alt="" />
+                            <img class="social-icon" src="./images/redes/twitter-icon-red.svg" alt="icono-twitter" />
                         </a>
                     </div>
                     <div class="col">
                         <a href="https://www.youtube.com/user/CanalClaroTV" target="_blank">
-                            <img class="social-icon" src="./images/redes/youtube-icon-red.svg" alt="" />
+                            <img class="social-icon" src="./images/redes/youtube-icon-red.svg" alt="icono-youtube" />
                         </a>
                     </div>
                 </div>

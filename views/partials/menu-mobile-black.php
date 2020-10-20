@@ -32,16 +32,16 @@
 <nav class="navbar-white navbar-mobile-white">
     <div class="nav-content">
         <div class="claro-logo">
-            <img class="menu-responsive" src="./images/home/menu-responsive-black.svg" alt="" />
+            <img class="menu-responsive" src="./images/home/menu-responsive-black.svg" alt="menu-para-mobil" />
             <div class="d-flex justify-content-center">
                 <a href="home.php">
-                    <img class="logo" src="../images/home/claro-logo.svg" alt="" />
+                    <img class="logo" src="../images/home/claro-logo.svg" alt="logo-de-claro-networks" />
                 </a>
             </div>
         </div>
 
         <div class="login">
-            <a href="index.php" class="login-item"><img src="${countryFlag}" class="login-country" alt="" /></a>
+            <a href="index.php" class="login-item"><img src="${countryFlag}" class="login-country" alt="bandera-region-por-pais" /></a>
         </div>
     </div>
 </nav>

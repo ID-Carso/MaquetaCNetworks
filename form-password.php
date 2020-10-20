@@ -12,15 +12,15 @@
     <div class="login-form no-gutters">
 
       <div class="col-sm-12  col-md-6 no-gutters col-lg-4  col-xl-3 shadow1 fondolog">
-        <img src="images/registro/group-10.svg" class="ubicacion5" />
-        <img src="images/registro/group-12.svg" class="ubicacion3" />
+        <img src="images/registro/group-10.svg" class="ubicacion5" alt="vector-rosa"/>
+        <img src="images/registro/group-12.svg" class="ubicacion3" alt="vector-rosa"/>
 
         <div class="row ma-no no-gutters">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <img src="images/registro/group-3.svg" class="form-image-blue" />
+            <img src="images/registro/group-3.svg" class="form-image-blue" alt="vector-azul"/>
             <a href="home.php">
-              <img src="./images/home/claro-logo.svg" class="ubicacion1" /></a>
-            <img src="images/registro/group-37.svg" class="ubicacion" />
+              <img src="./images/home/claro-logo.svg" class="ubicacion1" alt="icono-claro-networks" /></a>
+            <img src="images/registro/group-37.svg" class="ubicacion" alt="vector-rosa"/>
           </div>
         </div>
         <div class="col-10 col-sm-8 col-md-9 col-lg-10 col-xl-10 mx-auto">
@@ -33,20 +33,20 @@
                 <div>
                   <div class="position-relative">
                     <input class="insert-data" type="password" placeholder="Escribe tu contraseña nueva *" id="new-password" />
-                    <img src="images/registro/eye-none.svg" class="icon-eye" />
+                    <img src="images/registro/eye-none.svg" class="icon-eye" alt="icono-ver-contraseña" />
                   </div>
                   <p class="correo-valido" id="error-password-confirm"> 8 caractéres mínimo
-                    <img src="images/registro/alerta.svg" class="error" />
+                    <img src="images/registro/alerta.svg" class="error" alt="icono-alerta-correo" />
                   </p>
 
                   <p class="correo-valido" id="error-new-password">
-                    <img src="images/registro/alerta.svg" class="error" />
+                    <img src="images/registro/alerta.svg" class="error" alt="icono-alerta-correo" />
                   </p>
                 </div>
                 <div class="mb-5">
                   <div class="position-relative">
                     <input class="insert-data" type="password" placeholder="Escribe tu contraseña de nuevo" id="new-confirm-password" />
-                    <img src="images/registro/eye-none.svg" class="icon-eye" />
+                    <img src="images/registro/eye-none.svg" class="icon-eye" alt="icono-ver-contraseña"/>
                   </div>
 
 

@@ -97,16 +97,6 @@ $(document).ready(function () {
     getMetaKeys(actual_landing);
   }
 
-  /* Banner
-  let sliderBanner = new Slider();
-  sliderBanner.showImageBanner();*/
-  /* End Banner */
-
-  /* Navbar */
-
-  /*let navbarWhiteInstance = new Navbar();
-  navbarWhiteInstance.renderMenuWhite();*/
-  /* End Navbar */
 
   /* Sinópsis*/
 
@@ -134,7 +124,7 @@ $(document).ready(function () {
   ) {
     myFavorites = `
     <div class="text-center mt-4">
-      <img src="./images/mi-lista/favorites.svg" alt="" class="no-favorites-img">
+      <img src="./images/mi-lista/favorites.svg" alt="agregar-a-favoritos" class="no-favorites-img">
     </div>
     <div class="no-gutters mt-4">
       <div class="col-12">
@@ -156,7 +146,7 @@ $(document).ready(function () {
             <div class="poster">
              <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                     <img src="${favorite.image}" alt="">
+                     <img src="${favorite.image}" alt="imagen-de-${favorite.program_title}">
                 </div>
                 <div class="a-claro-rectangle">
                     <div class="poster-title-margin">
@@ -172,7 +162,7 @@ $(document).ready(function () {
                         <p class="rating">Clasificación: A</p>
                     </div>
                     <div>
-                        <button  class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="./images/mi-lista/heart.svg">
+                        <button  class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="./images/mi-lista/heart.svg" alt="agregar-a-favoritos">
                         </button>
                     </div>
                 </div>
@@ -203,7 +193,7 @@ $(document).ready(function () {
       
                 <div class="d-flex  align-items-end flex-column justify-content-between">
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos">
                         </button>
                     </div>
                     <div class="d-flex align-items-center justify-content-end">
@@ -227,7 +217,7 @@ $(document).ready(function () {
                     </div>
                     <div>
                         <div class="text-right mb-3">
-                            <button title="Eliminar de mi lista" class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg">
+                            <button title="Eliminar de mi lista" class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos">
                             </button>
                         </div>
                         <div class="d-flex align-items-center justify-content-end">
@@ -255,7 +245,7 @@ $(document).ready(function () {
             <div class="poster">
              <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="${favorite.image}" alt="">
+                    <img src="${favorite.image}" alt="image-de-${favorite.program_title}">
                 </div>
                 <div class="a-claro-rectangle">
                     <div class="poster-title-margin">
@@ -271,7 +261,7 @@ $(document).ready(function () {
                         <p class="rating">Clasificación: A</p>
                     </div>
                     <div>
-                        <button  class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="./images/mi-lista/heart.svg">
+                        <button  class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="./images/mi-lista/heart.svg" alt="agregar-a-favoritos">
                         </button>
                     </div>
                 </div>
@@ -302,7 +292,7 @@ $(document).ready(function () {
       
                 <div class="d-flex  align-items-end flex-column justify-content-between">
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos">
                         </button>
                     </div>
                     <div class="d-flex align-items-center justify-content-end">
@@ -326,7 +316,7 @@ $(document).ready(function () {
                     </div>
                     <div>
                         <div class="text-right mb-3">
-                            <button title="Eliminar de mi lista" class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg">
+                            <button title="Eliminar de mi lista" class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
                             </button>
                         </div>
                         <div class="d-flex align-items-center justify-content-end">
@@ -372,7 +362,7 @@ $(document).ready(function () {
             <div class="poster">
               <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="./images/concert-channel/carrousel/${favorite.image}" alt="">
+                    <img src="./images/concert-channel/carrousel/${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
                 </div>
                 <div class="a-concert-rectangle">
                     <div class="poster-title-margin">
@@ -388,7 +378,7 @@ $(document).ready(function () {
                         <p class="rating">Clasificación: A</p>
                     </div>
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
                         </button>
                     </div>
                 </div>
@@ -419,7 +409,7 @@ $(document).ready(function () {
       
                 <div class="d-flex  align-items-end flex-column justify-content-between">
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
                         </button>
                     </div>
                     <div class="d-flex align-items-center justify-content-end">
@@ -443,7 +433,7 @@ $(document).ready(function () {
                     </div>
                     <div>
                         <div class="text-right mb-3">
-                            <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg">
+                            <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
                             </button>
                         </div>
                         <div class="d-flex align-items-center justify-content-end">
@@ -471,7 +461,7 @@ $(document).ready(function () {
             <div class="poster">
              <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="./images/concert-channel/carrousel/${favorite.image}" alt="">
+                    <img src="./images/concert-channel/carrousel/${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
                 </div>
                 <div class="a-concert-rectangle">
                     <div class="poster-title-margin">
@@ -487,7 +477,7 @@ $(document).ready(function () {
                         <p class="rating">Clasificación: A</p>
                     </div>
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
                         </button>
                     </div>
                 </div>
@@ -518,7 +508,7 @@ $(document).ready(function () {
       
                 <div class="d-flex  align-items-end flex-column justify-content-between">
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
                         </button>
                     </div>
                     <div class="d-flex align-items-center justify-content-end">
@@ -542,7 +532,7 @@ $(document).ready(function () {
                     </div>
                     <div>
                         <div class="text-right mb-3">
-                            <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg">
+                            <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
                             </button>
                         </div>
                         <div class="d-flex align-items-center justify-content-end">
@@ -587,7 +577,7 @@ $(document).ready(function () {
             <div class="poster">
               <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="./images/claro-cinema/carrousel/${favorite.image}" alt="">
+                    <img src="./images/claro-cinema/carrousel/${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
                 </div>
                 <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
@@ -603,7 +593,7 @@ $(document).ready(function () {
                         <p class="rating">Clasificación: A</p>
                     </div>
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
                         </button>
                     </div>
                 </div>
@@ -634,7 +624,7 @@ $(document).ready(function () {
       
                 <div class="d-flex align-items-end flex-column justify-content-between">
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
                         </button>
                     </div>
                     <div class="d-flex align-items-center justify-content-end">
@@ -658,7 +648,7 @@ $(document).ready(function () {
                     </div>
                     <div>
                         <div class="text-right mb-3">
-                            <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="./images/mi-lista/heart.svg">
+                            <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="./images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
                             </button>
                         </div>
                         <div class="d-flex align-items-center justify-content-end">
@@ -686,7 +676,7 @@ $(document).ready(function () {
             <div class="poster">
              <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="./images/claro-cinema/carrousel/${favorite.image}" alt="">
+                    <img src="./images/claro-cinema/carrousel/${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
                 </div>
                 <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
@@ -702,7 +692,7 @@ $(document).ready(function () {
                         <p class="rating">Clasificación: A</p>
                     </div>
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
                         </button>
                     </div>
                 </div>
@@ -733,7 +723,7 @@ $(document).ready(function () {
       
                 <div class="d-flex align-items-end flex-column justify-content-between">
                     <div>
-                        <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg">
+                        <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
                         </button>
                     </div>
                     <div class="d-flex align-items-center justify-content-end">
@@ -757,7 +747,7 @@ $(document).ready(function () {
                     </div>
                     <div>
                         <div class="text-right mb-3">
-                            <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="./images/mi-lista/heart.svg">
+                            <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="./images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
                             </button>
                         </div>
                         <div class="d-flex align-items-center justify-content-end">
@@ -1058,7 +1048,7 @@ $(document).ready(function () {
     let userOptions = $(".user-options");
     let sidebarHeader = $(".sidebar-header");
     let userName = localStorage.getItem("name");
-    let avatar = `<img src="${localStorage.getItem("avatar")}" />`;
+    let avatar = `<img src="${localStorage.getItem("avatar")}" alt="imagen-de-avatar" />`;
 
     let menuMobile = `            
       <div class="d-flex align-items-center">
@@ -1069,8 +1059,8 @@ $(document).ready(function () {
         <div class="d-flex flex-column justify-contet-between">
             <p class="a-text-white-bold login-text">${userName}</p>
             <div>
-                <a href="mi-lista.php"><img class="mr-3 options-item" src="./images/menu/mi-lista-icon.png" alt="" /></a>
-                <a href="configuracion.php"><img class="options-item" src="./images/menu/configuracion-icon.png" alt="" /></a>
+                <a href="mi-lista.php"><img class="mr-3 options-item" src="./images/menu/mi-lista-icon.png" alt="lista-de-programas-favoritos" /></a>
+                <a href="configuracion.php"><img class="options-item" src="./images/menu/configuracion-icon.png" alt="configuracion-en-la-cuenta" /></a>
             </div>
         </div>
       </div>`;
@@ -1079,7 +1069,7 @@ $(document).ready(function () {
       <div class="icon-user position-relative mr-3">
         <div class="tooltip-logout">
           <div class="d-flex">
-            <img src="./images/menu/logout.svg" />
+            <img src="./images/menu/logout.svg" alt="cerrar-sesion" />
             <p class="tooltip-text ml-3">Cerrar Sesión</p>
           </div>
         </div>
@@ -1091,9 +1081,9 @@ $(document).ready(function () {
       </div>
 
       <p class="name-user mr-3">${userName}</p>
-      <a href="mi-lista.php"><img class="mr-3 options-item" src="./images/menu/mi-lista-icon.png" alt="" /></a>
-      <a href="configuracion.php"><img class="mr-3 options-item" src="./images/menu/configuracion-icon.png" alt="" /></a>
-      <a href="index.php" class="login-item options-item"><img class="login-country" src="" alt="" /></a>
+      <a href="mi-lista.php"><img class="mr-3 options-item" src="./images/menu/mi-lista-icon.png" alt="agregar-a-favoritos" /></a>
+      <a href="configuracion.php"><img class="mr-3 options-item" src="./images/menu/configuracion-icon.png" alt="configuracion-de-la-cuenta" /></a>
+      <a href="index.php" class="login-item options-item"><img class="login-country" src="" alt="seleccion-de-pais" /></a>
       </div>
       `;
     sidebarContent.append(sidebarItem);
@@ -1102,15 +1092,15 @@ $(document).ready(function () {
   } else {
     let menuBase = `    
     <div class="login">
-      <a href="login.php" class="login-item mr-2"><img src="./images/home/user-login.svg" alt="" /></a>
-      <a href="index.php" class="login-item"><img class="login-country" src="" alt="" /></a>
+      <a href="login.php" class="login-item mr-2"><img src="./images/home/user-login.svg" alt="imagen-de-login" /></a>
+      <a href="index.php" class="login-item"><img class="login-country" src="" alt="seleccion-del-pais" /></a>
     </div>`;
     let userOptions = $(".user-options");
     let sidebarHeader = $(".sidebar-header");
     let menuBaseMobile = `            
     <div class="d-flex align-items-center">
       <div class="image-user mr-3">
-          <a href="login.php"><img src="./images/menu/icon-white-user.svg" alt=""></a>
+          <a href="login.php"><img src="./images/menu/icon-white-user.svg" alt="imagen-usuario"/></a>
       </div>
 
       <div>
@@ -1310,8 +1300,8 @@ $(document).ready(function () {
       dots: true,
       centerMode: false,
       arrows: true,
-      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
       responsive: [
         {
           breakpoint: 768,
@@ -1347,9 +1337,9 @@ $(document).ready(function () {
             centerMode: false,
             arrows: true,
             prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+              '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+              '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
           },
         },
 
@@ -1363,9 +1353,9 @@ $(document).ready(function () {
             centerMode: false,
             arrows: true,
             prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+              '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+              '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
           },
         },
       ],
@@ -1378,8 +1368,8 @@ $(document).ready(function () {
     dots: true,
     centerMode: false,
     arrows: true,
-    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
 
     responsive: [
       {
@@ -1416,9 +1406,9 @@ $(document).ready(function () {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
         },
       },
 
@@ -1432,9 +1422,9 @@ $(document).ready(function () {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
         },
       },
     ],
@@ -1467,8 +1457,8 @@ $(document).ready(function () {
     dots: true,
     centerMode: false,
     arrows: true,
-    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
     responsive: [
       {
         breakpoint: 768,
@@ -1504,9 +1494,9 @@ $(document).ready(function () {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
         },
       },
       {
@@ -1519,31 +1509,14 @@ $(document).ready(function () {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
         },
       },
     ],
   });
 
-  /*   //Programación General Canal Claro
-    let containerSlider = $("#claro-canal-programing");
-
-    slider.createDaysSlider(
-      "claro",
-    );
-
-    //Programación Concert Channel
-    let containerSliderConcert = $("#concert-channel-programing");
-    slider.createDaysSlider(
-      "concert",
-    );
-    //Programación Claro Cinema
-    let containerSliderCinema = $("#claro-cinema-programing");
-    slider.createDaysSlider(
-      "cinema",
-    ); */
 
   let date = new Date();
   let day = ("0" + date.getDate()).slice(-2);
@@ -1811,8 +1784,8 @@ function createCinemaHomeSlider() {
     dots: true,
     centerMode: false,
     arrows: true,
-    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
 
     responsive: [
       {
@@ -1849,9 +1822,9 @@ function createCinemaHomeSlider() {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
         },
       },
 
@@ -1865,9 +1838,9 @@ function createCinemaHomeSlider() {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
         },
       },
     ],
@@ -1892,8 +1865,8 @@ function createTvSlider() {
     dots: true,
     centerMode: false,
     arrows: true,
-    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
     responsive: [
       {
         breakpoint: 768,
@@ -1929,9 +1902,9 @@ function createTvSlider() {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
         },
       },
       {
@@ -1944,9 +1917,9 @@ function createTvSlider() {
           centerMode: false,
           arrows: true,
           prevArrow:
-            '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+            '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
           nextArrow:
-            '<img src="../images/sliders/next.png" class="arrow-next" />',
+            '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
         },
       },
     ],
@@ -2021,7 +1994,7 @@ $(".slider-pagination-add").click(function () {
     `
   <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
   <label for="image_logo${slideIndex}" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
-  <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+  <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" alt="imagen-default-sinopsis" />
   </label>
 </div>
 

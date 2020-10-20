@@ -61,7 +61,7 @@ $(document).ready(function () {
               slide += `
               <div class="header-slide">
                   <img src="${image}"
-                  class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                  class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" alt="imagenes-de-sinopsis" />
               </div>
                       `;
               index++;
@@ -112,17 +112,17 @@ $(document).ready(function () {
               switch (numberCountries) {
                 case 1:
                   imageCountry += ` 
-                              <img src="${countriesImages[property][index]}" alt="">
+                              <img src="${countriesImages[property][index]}" alt="paises-por-region"/>
                               `;
                   break;
                 case 2:
                   imageCountry += ` 
-                              <img src="${countriesImages[property][index]}" alt="">
+                              <img src="${countriesImages[property][index]}" alt="paises-por-region"/>
                               `;
                   break;
                 case 3:
                   imageCountry += ` 
-                              <img src="${countriesImages[property][index]}" alt="">
+                              <img src="${countriesImages[property][index]}" alt="paises-por-region"/>
                               `;
 
                   break;
@@ -130,21 +130,21 @@ $(document).ready(function () {
                 case 4:
                   imageCountry += `
                               <div class="col-6 text-center">
-                                  <img src="${countriesImages[property][index]}" alt="">
+                                  <img src="${countriesImages[property][index]}" alt="paises-por-region"/>
                               </div>
                               `;
                   break;
                 case 5:
                   imageCountry += `
                               <div class="col-4 text-center">
-                                  <img src="${countriesImages[property][index]}" alt="">
+                                  <img src="${countriesImages[property][index]}" alt="paises-por-region"/>
                               </div>
                               `;
                   break;
                 case 6:
                   imageCountry += `
                               <div class="col-4 text-center">
-                                  <img src="${countriesImages[property][index]}" alt="">
+                                  <img src="${countriesImages[property][index]}" alt="paises-por-region"/>
                               </div>
                               `;
                   break;
@@ -347,7 +347,7 @@ $(document).ready(function () {
                         <div class="col-12">
                           <div class="no-schedule-container">
                             <div>
-                              <img class="no-schedule-image" src="./images/sinopsis/no-synopsis.png" />
+                              <img class="no-schedule-image" src="./images/sinopsis/no-synopsis.png" alt="imagen-por-default-sin-programacion" />
                               <p class="no-schedule-text mt-5 a-text-bold-cool-grey text-center">No hay programación para este día</p>
                             </div>
                           </div>
@@ -529,9 +529,9 @@ $(document).ready(function () {
                       arrows: true,
                       centerPadding: "300px",
                       prevArrow:
-                        '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
+                        '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white" alt="flecha-izquierda"/>',
                       nextArrow:
-                        '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                        '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white" alt="flecha-derecha"/>',
                       customPaging: function (slider, i) {
                         return `
                       <div class="pagination-items-container">
@@ -555,9 +555,9 @@ $(document).ready(function () {
                       arrows: true,
                       centerPadding: "600px",
                       prevArrow:
-                        '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
+                        '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white" alt="flecha-izquierda"/>',
                       nextArrow:
-                        '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                        '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white" alt="flecha-derecha"/>',
                       customPaging: function (slider, i) {
                         return `
                       <div class="pagination-items-container">
@@ -691,9 +691,9 @@ $(document).ready(function () {
                           arrows: true,
                           centerPadding: "300px",
                           prevArrow:
-                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
+                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white" alt="flecha-izquierda"/>',
                           nextArrow:
-                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white" alt="flecha-derecha"/>',
                           customPaging: function (slider, i) {
                             return `
                           <div class="pagination-items-container">
@@ -717,9 +717,9 @@ $(document).ready(function () {
                           arrows: true,
                           centerPadding: "600px",
                           prevArrow:
-                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
+                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white" alt="flecha-izquierda"/>',
                           nextArrow:
-                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white" alt="flecha-derecha"/>',
                           customPaging: function (slider, i) {
                             return `
                           <div class="pagination-items-container">
@@ -837,9 +837,9 @@ $(document).ready(function () {
                           arrows: true,
                           centerPadding: "300px",
                           prevArrow:
-                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
+                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white" alt="flecha-izquierda"/>',
                           nextArrow:
-                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white" alt="flecha-derecha"/>',
                           customPaging: function (slider, i) {
                             return `
                           <div class="pagination-items-container">
@@ -863,9 +863,9 @@ $(document).ready(function () {
                           arrows: true,
                           centerPadding: "600px",
                           prevArrow:
-                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
+                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white" alt="flecha-izquierda"/>',
                           nextArrow:
-                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                            '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white" alt="flecha-derecha"/>',
                           customPaging: function (slider, i) {
                             return `
                           <div class="pagination-items-container">

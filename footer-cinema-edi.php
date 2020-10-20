@@ -9,7 +9,7 @@
 
 <body class="claro-cinema-content">
   <div class=" border-t border-l border-r border-b position-relative m-5 ml-5 mr-5">
-    <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-main" type="footer-claro-cinema">
+    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-carrusel-main" type="footer-claro-cinema"/>
 
     <section>
       <?php

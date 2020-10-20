@@ -62,21 +62,21 @@ if($_SESSION["country"] != 1){
                         <div class="navbar mr-xl-4">
                             <div>
                                 <!-- munu tablet -->
-                                <img class="menu-responsive-tablet d-none d-md-inline-block d-xl-none" src="./images/home/menu-responsive-black.svg" alt="" />
+                                <img class="menu-responsive-tablet d-none d-md-inline-block d-xl-none" src="./images/home/menu-responsive-black.svg" alt="menu-hamburgesa-tablet" />
                                 <!-- logo -->
                                 <a href="home.php">
-                                    <img class="logo logo-black d-none d-md-inline-block" src="./images/home/claro-logo.svg" alt="" />
+                                    <img class="logo logo-black d-none d-md-inline-block" src="./images/home/claro-logo.svg" alt="logo-claro-networks" />
                                 </a>
                             </div>
                             <!-- logo movile -->
                             <a href="home.php">
-                                <img class="d-md-none" src="./images/home/claro-logo.svg" alt="" style="width: 120px;" />
+                                <img class="d-md-none" src="./images/home/claro-logo.svg" alt="" style="width: 120px;" alt="logo-claro-networks-mobile" />
                             </a>
                             <!-- user desktop -->
                             <div class="d-none d-xl-block user-options"></div>
                             <!-- munu movile -->
                             <a href="home.php">
-                                <img class="menu-responsive d-block d-md-none" src="./images/home/menu-responsive-black.svg" alt="" />
+                                <img class="menu-responsive d-block d-md-none" src="./images/home/menu-responsive-black.svg" alt="menu-hamburguesa-mobile" />
                             </a>
                         </div>
                         <!-- SUBMENU -->
@@ -108,7 +108,7 @@ if($_SESSION["country"] != 1){
             <div class="col-12 col-md-11 mx-auto my-md-5 my-4">
 
                 <div class="container-terminos mt-xl-5  mx-auto px-md-5 px-4 position-relative">
-                    <img src="./images/General/close-back.png" class="pencil back-close" type="back-close" width="40px">
+                    <img src="./images/General/close-back.png" class="pencil back-close" type="back-close" width="40px" alt="icono-cerar"/>
                     <!-- TITULO -->
                     <h4 id="about_title"></h4>
                     <!-- TEXTO -->

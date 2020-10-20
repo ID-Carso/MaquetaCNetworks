@@ -70,8 +70,8 @@ if($_SESSION["country"] != 1){
     <div class="login-form">
       <div
         class="col-sm-12 no-gutters col-md-6 col-lg-4 col-xl-4 shadow1 fondolog position-relative card-white data-user-container">
-        <img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back">
-        <img src="images/registro/group-10.svg" class="ubicacion5" />
+        <img src="./images/config/arrow-back-icon.svg" alt="flecha-para-regresar" class="arrow-back"/>
+        <img src="images/registro/group-10.svg" class="ubicacion5" alt="vector-rosa" />
 
         <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
           <div class="row ma-no centro">
@@ -89,12 +89,12 @@ if($_SESSION["country"] != 1){
                   <div class="sexo">
                     <input type="radio" name="sexo" id="mujer" checked />
                     <label for="mujer" id="mujerestado" class="mujer-estilo">
-                      <img id="women" src="images/datos-adicionales/femenino-activo.svg" class="women" />
+                      <img id="women" src="images/datos-adicionales/femenino-activo.svg" class="women" alt="simbolo-femenino" />
                       Femenino</label>
                     <input type="radio" name="sexo" id="hombre" />
                     <label for="hombre" id="hombreestado" class="hombre-estilo">
                       Masculino
-                      <img id="men" src="images/datos-adicionales/masculino-inactivo.svg" class="men" /></label>
+                      <img id="men" src="images/datos-adicionales/masculino-inactivo.svg" class="men" alt="simbolo-masculino"/></label>
                   </div>
                 </form>
               </div>
@@ -552,55 +552,55 @@ if($_SESSION["country"] != 1){
                   </p>
                   <ul class="ListaDesplegablePaises">
                     <li class="option" id-select="select-Pais" value="USA">
-                      <img src="images/paises/usa.svg" class="Icon_paises" />USA
+                      <img src="images/paises/usa.svg" class="Icon_paises" alt="bandera-usa"/>USA
                     </li>
                     <li class="option" id-select="select-Pais" value="Argentina">
-                      <img src="images/paises/argentina.svg" class="Icon_paises" />Argentina
+                      <img src="images/paises/argentina.svg" class="Icon_paises" alt="bandera-argentina"/>Argentina
                     </li>
                     <li class="option" id-select="select-Pais" value="Brazil">
-                      <img src="images/paises/brazil.svg" class="Icon_paises" />Brazil
+                      <img src="images/paises/brazil.svg" class="Icon_paises" alt="bandera-brazil"/>Brazil
                     </li>
                     <li class="option" id-select="select-Pais" value="Chile">
-                      <img src="images/paises/chile.svg" class="Icon_paises" />Chile
+                      <img src="images/paises/chile.svg" class="Icon_paises" alt="bandera-chile"/>Chile
                     </li>
                     <li class="option" id-select="select-Pais" value="Colombia">
-                      <img src="images/paises/colombia.svg" class="Icon_paises" />Colombia
+                      <img src="images/paises/colombia.svg" class="Icon_paises" alt="bandera-colombia"/>Colombia
                     </li>
                     <li class="option" id-select="select-Pais" value="Costa Rica">
-                      <img src="images/paises/costa-rica.svg" class="Icon_paises" />Costa Rica
+                      <img src="images/paises/costa-rica.svg" class="Icon_paises" alt="bandera-costa-rica"/>Costa Rica
                     </li>
                     <li class="option" id-select="select-Pais" value="Ecuador">
-                      <img src="images/paises/ecuador.svg" class="Icon_paises" />Ecuador
+                      <img src="images/paises/ecuador.svg" class="Icon_paises" alt="bandera-ecuador"/>Ecuador
                     </li>
                     <li class="option" id-select="select-Pais" value="El salvador">
-                      <img src="images/paises/el-salvador.svg" class="Icon_paises" />El Salvador
+                      <img src="images/paises/el-salvador.svg" class="Icon_paises" alt="bandera-el-salvador"/>El Salvador
                     </li>
                     <li class="option" id-select="select-Pais" value="Guatemala">
-                      <img src="images/paises/guatemala.svg" class="Icon_paises" />Guatemala
+                      <img src="images/paises/guatemala.svg" class="Icon_paises" alt="bandera-guatemala"/>Guatemala
                     </li>
                     <li class="option" id-select="select-Pais" value="Honduras">
-                      <img src="images/paises/honduras.svg" class="Icon_paises" />Honduras
+                      <img src="images/paises/honduras.svg" class="Icon_paises" alt="bandera-honduras"/>Honduras
                     </li>
                     <li class="option" id-select="select-Pais" value="Nicaragua">
-                      <img src="images/paises/nicaragua.svg" class="Icon_paises" />Nicaragua
+                      <img src="images/paises/nicaragua.svg" class="Icon_paises" alt="bandera-nicaragua"/>Nicaragua
                     </li>
                     <li class="option" id-select="select-Pais" value="Panamá">
-                      <img src="images/paises/panama.svg" class="Icon_paises" />Panamá
+                      <img src="images/paises/panama.svg" class="Icon_paises" alt="bandera-panama"/>Panamá
                     </li>
                     <li class="option" id-select="select-Pais" value="Paraguay">
-                      <img src="images/paises/paraguay.svg" class="Icon_paises" />Paraguay
+                      <img src="images/paises/paraguay.svg" class="Icon_paises" alt="bandera-paraguay"/>Paraguay
                     </li>
                     <li class="option" id-select="select-Pais" value="Perú">
-                      <img src="images/paises/peru.svg" class="Icon_paises" />Perú
+                      <img src="images/paises/peru.svg" class="Icon_paises" alt="bandera-peru" />Perú
                     </li>
                     <li class="option" id-select="select-Pais" value="Puerto Rico">
-                      <img src="images/paises/puerto-rico.svg" class="Icon_paises" />Puerto Rico
+                      <img src="images/paises/puerto-rico.svg" class="Icon_paises" alt="bandera-puerto-rico"/>Puerto Rico
                     </li>
                     <li class="option" id-select="select-Pais" value="Dominican Republic">
-                      <img src="images/paises/dominican-republic.svg" class="Icon_paises" />Dominican Republic
+                      <img src="images/paises/dominican-republic.svg" class="Icon_paises" alt="bandera-republica-dominicana"/>Dominican Republic
                     </li>
                     <li class="option" id-select="select-Pais" value="Uruguay">
-                      <img src="images/paises/uruguay.svg" class="Icon_paises" />Uruguay
+                      <img src="images/paises/uruguay.svg" class="Icon_paises" alt="bandera-uruguay" />Uruguay
                     </li>
                     <script>
                       $(".option").click(function () {
@@ -686,7 +686,7 @@ if($_SESSION["country"] != 1){
 
 
         <div class="modal-body txtcontenido">
-          <img src="./images/datos-adicionales/success.svg" />
+          <img src="./images/datos-adicionales/success.svg" alt="icono-de-verificacion-exitosa"/>
           <span class="mensaje">Datos adicionales guardados exitosamente</span>
         </div>
         <div class="modal-footer" style="border-top:none !important; justify-content: center;">

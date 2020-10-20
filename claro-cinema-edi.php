@@ -25,29 +25,17 @@
           </div>
 
         </a>
-        <!--<div class="dropdown-content">
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-              </div>-->
+  
         <a class="sidebar-link" href="">
           <div class="sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Concert Channel</span>
           </div>
         </a>
-        <!--<div class="dropdown-content">
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-              </div>-->
+   
         <div class="sidebar-item sidebar-border-bottom">
           <span class="dropdown-p active-sidebar-item">Claro Cinema</span>
         </div>
-        <!--<div class="dropdown-content">
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-              </div>-->
+ 
         <a class="sidebar-link" href="" target="_blank">
           <div class="sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Nuestra
@@ -60,11 +48,7 @@
               Sports</span>
           </div>
         </a>
-        <!--<a class="sidebar-link" href="programacion.php">
-          <div class="sidebar-item sidebar-border-bottom">
-            <span class="dropdown-p">Programación</span>
-          </div>
-        </a>-->
+       
         <!--prueba sidebar-->
       </div>
       <button class="invisible-button"></button>
@@ -74,7 +58,7 @@
 
       <div class="alert-user">
       </div>
-      <img src="./images/header/yellow-curve.png" alt="" class="header-curve">
+      <img src="./images/header/yellow-curve.png" alt="imagen-header" class="header-curve">
       <!--Menú para móvil -->
       <?php
       include 'menu-mobile.php';
@@ -91,23 +75,13 @@
         ?>
       </div>
 
-      <!--<div class="header-details header-detail-margin col-md-6">
-            <div class="m-header-card">
-              <p class="a-header-card-title">Series</p>
-              <p class="a-header-card-title">Mad Men</p>
-              <p class="a-header-card-subtitle">Estreno<br />Lunes 15</p>
-              <p class="a-header-card-text">
-                Lunes a Jueves<br />21:00 GRS. | Col.
-              </p>
-            </div>
-            <img src="./images/claro-canal/claro-canal-logo.svg" alt="" />
-          </div>-->
+    
       <div class=" header-slider-cinem banner-claro-canal" id="banner-claro-cinema-edi">
       </div>
       <div class="d-flex position-absolute programming-dots space-do" style="top:70%;">
         <div class=" d-inline-block position-relative programming-slider-dots align-items-center">
         </div>
-        <img src="./images/General/plus.svg" alt="" class="cursor-pointer slider-pagination-add mr-3" style="width:42px">
+        <img src="./images/General/plus.svg" alt="icono-para-agregar" class="cursor-pointer slider-pagination-add mr-3" style="width:42px"/>
       </div>
 
     </div>
@@ -117,9 +91,9 @@
     <div class="claro-cinema-container">
       <section class="today-claro-cinema">
         <div class="row no-gutters landing-header position-relative border-t border-l border-r border-b mb-4 p-4">
-          <img src="./images/General/pencil.svg" alt="" class="pencil pencil-cinema" type="header-landing-cinema" id="icon_cinema">
+          <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-cinema" type="header-landing-cinema" id="icon_cinema"/>
           <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-            <img src="" alt="" id="icon_claro_cinema" class="lading-header-image-cinema">
+            <img src="" alt="logo-claro-cinema" id="icon_claro_cinema" class="lading-header-image-cinema"/>
           </div>
           <div class="col-12 col-md-5 col-lg-5 col-xl-5">
             <h1 class="a-today-cinema-title pt-4">hoy en <span>claro cinema</span></h1>
@@ -132,7 +106,7 @@
 
         <div class="no-gutters">
           <div class="today-cinema-videos-container position-relative border-t border-l border-r border-b p-3">
-            <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-slider" type="current-programming-cinema">
+            <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil  pencil-slider" type="current-programming-cinema"/>
             <div class="section-slider cinema-slider today-claro-cinema-slider-prev">
             </div>
           </div>
@@ -141,7 +115,7 @@
       <section class="imperdibles">
         <div class="header-title-section">
           <div class="d-inline-block position-relative border-t border-l border-r border-b">
-            <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-title" type="title-cinema">
+            <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil  pencil-title" type="title-cinema"/>
             <h1 class="a-cinema-title" id="a-cinema-title">las <span>imperdibles</span></h1>
             <h2 class="a-cinema-subtitle" id="a-cinema-subtitle">
               ve un <span>adelanto</span> de la programación
@@ -150,7 +124,7 @@
         </div>
         <div class="imperdibles-video-container">
           <div class=" p-3 border-t border-l border-r border-b position-relative">
-            <img src="./images/General/pencil.svg" alt="" class="pencil pencil-promo" type="promo-cinema">
+            <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-promo" type="promo-cinema"/>
             <video class="promo-video" autoplay muted controls loop>
               <source src="http://www.claronetworks.openofficedospuntocero.info/video/claro-cinema-promo.mp4" type="video/mp4">
             </video>
@@ -160,7 +134,7 @@
       <section class="recordar">
         <div class="header-title-section">
           <div class="d-inline-block position-relative border-t border-l border-r border-b">
-            <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-carrusel1" type="title-carrusel1">
+            <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil  pencil-carrusel1" type="title-carrusel1"/>
             <h1 class="a-cinema-title" id="carrusel_1_title">
               recordar es volver <span class="recordar-title">a vivir</span>
             </h1>
@@ -172,17 +146,17 @@
         </div>
         <div class="recordar-container-videos">
           <div class="d-finline-block p-3 position-relative border-t border-l border-r border-b">
-            <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-carrousel1" type="carrusel1">
+            <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil  pencil-carrousel1" type="carrusel1"/>
             <div class="section-slider cinema-slider">
               <div class="poster">
 
                 <div class="poster-body">
                   <div class="showtime-container justify-content-end">
 
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos"/></button>
                   </div>
                   <div class="thumbnail">
-                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/01-NUESTROS-BUENOS-VECINOS.jpg" alt="">
+                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/01-NUESTROS-BUENOS-VECINOS.jpg" alt="imagen-de-01-NUESTROS-BUENOS-VECINOS.jpg"/>
                   </div>
                   <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
@@ -200,10 +174,10 @@
                 <div class="poster-body">
                   <div class="showtime-container justify-content-end">
 
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos"/></button>
                   </div>
                   <div class="thumbnail">
-                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/02-EL-PASAJERO-.jpg" alt="">
+                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/02-EL-PASAJERO-.jpg" alt="imagen-de-02-EL-PASAJERO-.jpg"/>
                   </div>
                   <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
@@ -219,10 +193,10 @@
                 <div class="poster-body">
                   <div class="showtime-container justify-content-end">
 
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos"/></button>
                   </div>
                   <div class="thumbnail">
-                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/03-QUE-BRAVAS-SON.jpg" alt="">
+                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/03-QUE-BRAVAS-SON.jpg" alt="imagen-de-03-QUE-BRAVAS-SON.jpg"/>
                   </div>
                   <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
@@ -240,10 +214,10 @@
                 <div class="poster-body">
                   <div class="showtime-container justify-content-end">
 
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos"/></button>
                   </div>
                   <div class="thumbnail">
-                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/04-QUE-HACER-MIS-HIJOS.jpg" alt="">
+                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/04-QUE-HACER-MIS-HIJOS.jpg" alt="imagen-de-04-QUE-HACER-MIS-HIJOS.jpg"/>
                   </div>
                   <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
@@ -263,7 +237,7 @@
       <section class="only-claro-cinema">
         <div class="header-title-section">
           <div class="d-inline-block position-relative border-t border-l border-r border-b p-3">
-            <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-carrusel2" type="title-carrusel2">
+            <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil  pencil-carrusel2" type="title-carrusel2"/>
             <h1 class="a-cinema-title" id="carrusel_2_title"> sexy <span>románticas</span></h1>
             <h2 class="a-cinema-subtitle" id="carrusel_2_subtitle">
               <!-- ve un <span>adelanto</span> de la programación -->
@@ -273,7 +247,7 @@
         </div>
         <div class="only-videos-container">
           <div class="d-finline-block p-3 position-relative border-t border-l border-r border-b">
-            <img src="./images/General/pencil.svg" alt="" class="pencil  pencil-carrousel2" type="carrusel2">
+            <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil  pencil-carrousel2" type="carrusel2"/>
 
             <div class="section-slider cinema-slider">
 
@@ -281,10 +255,10 @@
                 <div class="poster-body">
                   <div class="showtime-container justify-content-end">
 
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos"/></button>
                   </div>
                   <div class="thumbnail">
-                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/05-DOS-PALOMAS.jpg" alt="">
+                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/05-DOS-PALOMAS.jpg" alt="imagen-de-05-DOS-PALOMAS.jpg"/>
                   </div>
                   <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
@@ -302,10 +276,10 @@
                 <div class="poster-body">
                   <div class="showtime-container justify-content-end">
 
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos"/></button>
                   </div>
                   <div class="thumbnail">
-                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/06-EROTICA.jpg" alt="">
+                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/06-EROTICA.jpg" alt="imagen-de-06-EROTICA.jpg"/>
                   </div>
                   <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
@@ -324,10 +298,10 @@
                 <div class="poster-body">
                   <div class="showtime-container justify-content-end">
 
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos"/></button>
                   </div>
                   <div class="thumbnail">
-                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/07-CON-TODOS.jpg" alt="">
+                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/07-CON-TODOS.jpg" alt="imagen-de-07-CON-TODOS.jpg"/>
                   </div>
                   <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
@@ -346,10 +320,10 @@
                 <div class="poster-body">
                   <div class="showtime-container justify-content-end">
 
-                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                    <button type="button" class="poster-button"><img class="poster-add" src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos"/></button>
                   </div>
                   <div class="thumbnail">
-                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/08-YO-EL-MUJERIEGO.jpg" alt="">
+                    <img src="http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/section-landing/08-YO-EL-MUJERIEGO.jpg" alt="imagen-de-08-YO-EL-MUJERIEGO.jpg"/>
                   </div>
                   <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">

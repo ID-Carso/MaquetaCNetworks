@@ -24,27 +24,27 @@
                 <div class="social-media">
                     <div class="col ">
                         <a href="https://www.facebook.com/CanalClaro/" target="_blank" id="facebook_canal_claro_url">
-                            <img class="social-icon" src="./images/redes/facebook-icon-red.svg" alt=""
+                            <img class="social-icon" src="./images/redes/facebook-icon-red.svg" alt="icono-facebook"
                                 id="facebook_canal_claro_icon" />
                         </a>
                     </div>
                     <div class="col">
                         <a href="https://www.instagram.com/canalclaro/?hl=es-la" target="_blank"
                             id="instagram_canal_claro_url">
-                            <img class="social-icon" src="./images/redes/insta-icon-red.svg" alt=""
+                            <img class="social-icon" src="./images/redes/insta-icon-red.svg" alt="icono-instagram"
                                 id="instagram_canal_claro_icon" />
                         </a>
                     </div>
                     <div class="col">
                         <a href="https://twitter.com/canalclaro" target="_blank" id="twitter_canal_claro_url">
-                            <img class="social-icon" src="./images/redes/twitter-icon-red.svg" alt=""
+                            <img class="social-icon" src="./images/redes/twitter-icon-red.svg" alt="icono-twitter"
                                 id="twitter_canal_claro_icon" />
                         </a>
                     </div>
                     <div class="col">
                         <a href="https://www.youtube.com/user/CanalClaroTV" target="_blank"
                             id="youtube_canal_claro_url">
-                            <img class="social-icon" src="./images/redes/youtube-icon-red.svg" alt=""
+                            <img class="social-icon" src="./images/redes/youtube-icon-red.svg" alt="icono-youtube"
                                 id="youtube_canal_claro_icon" />
                         </a>
                     </div>

@@ -3,21 +3,11 @@
     <div class="advertising-section-mobile">
         <div class="row">
             <div class="col-12 m-auto">
-                <img src="./images/home/herederos-text.jpg" alt="" class="w-100" id="footer_image_left_mob">
-                <!--<div class="adv-headline-mb">
-                    <h1 class="advertising-title ">Disfruta</h1>
-                    <h2 class="advertising-subtitle">La mejor programación</h2>
-                </div>
-                <div>
-                    <p class="advertising-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tellus
-                        tellus, rutrum sit aamet purus in, interdum auctor nunc. Nulla
-                        facilisis mauris vel elit finibus, sit amet ornare massa suscipit.
-                    </p>
-                </div>-->
+                <img src="./images/home/herederos-text.jpg" alt="seccion-texto-de-anuncio-para-mobile" class="w-100" id="footer_image_left_mob"/>
+              
             </div>
             <div class="col-12 no-gutters">
-                <img src="./images/home/herederos-ok.jpg" class="advertising-image" id="footer_image_right_mob" />
+                <img src="./images/home/herederos-ok.jpg" class="advertising-image" id="footer_image_right_mob" alt="seccion-imagen-de-anuncio-para-mobile" />
             </div>
         </div>
     </div>
@@ -27,10 +17,10 @@
         <div class="col-lg-10 m-auto">
             <div class="row">
                 <div class="col-6 m-auto">
-                    <img src="./images/home/herederos-text.jpg" alt="" class="w-100" id="footer_image_left_tablet">
+                    <img src="./images/home/herederos-text.jpg" alt="seccion-texto-de-anuncio-para-tablet" class="w-100" id="footer_image_left_tablet"/>
                 </div>
                 <div class="col-6 no-gutters">
-                    <img src="./images/home/herederos-ok.jpg" class="advertising-image" id="footer_image_right_tablet"/>
+                    <img src="./images/home/herederos-ok.jpg" class="advertising-image" id="footer_image_right_tablet" alt="seccion-imagen-de-anuncio-para-tablet"/>
                 </div>
             </div>
         </div>
@@ -41,21 +31,11 @@
         <div class="col-lg-12">
             <div class="row">
                 <div class="col-5 col-lg-6">
-                    <img src="./images/home/herederos-text.jpg" alt="" class="w-100" id="footer_image_left_desk">
-                    <!--<div class="adv-headline-mb">
-                        <h1 class="advertising-title ">Disfruta</h1>
-                        <h2 class="advertising-subtitle">La mejor programación</h2>
-                    </div>
-                    <div>
-                        <p class="advertising-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tellus
-                            tellus, rutrum sit aamet purus in, interdum auctor nunc. Nulla
-                            facilisis mauris vel elit finibus, sit amet ornare massa suscipit.
-                        </p>
-                    </div>-->
+                    <img src="./images/home/herederos-text.jpg" alt="seccion-texto-de-anuncio-para-desktop" class="w-100" id="footer_image_left_desk"/>
+                   
                 </div>
                 <div class="col-7 col-lg-6 no-gutters">
-                    <img src="./images/home/herederos-ok.jpg" class="advertising-image" id="footer_image_right_desk" />
+                    <img src="./images/home/herederos-ok.jpg" class="advertising-image" id="footer_image_right_desk" alt="seccion-imagen-de-anuncio-para-desktop" />
                 </div>
             </div>
         </div>

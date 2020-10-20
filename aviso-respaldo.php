@@ -26,7 +26,7 @@
 
     <div class="aviso-container">
         <div class="col-sm-12 no-gutters col-md-10 no-gutters col-lg-10 col-xl-10 shadow1 fondolog">
-            <img src="images/registro/group-10.svg" class="ubicacion5" />
+            <img src="images/registro/group-10.svg" class="ubicacion5" alt="vector-rosa" />
             <br /><br /><br />
             <div class="row ma-no centro">
                 <div class="col-sm-12 no-gap">

@@ -2,10 +2,10 @@
     <div class="nav-content">
         <div class="claro-logo">
 
-            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
+            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="menu-tablet" />
 
             <a href="home.php">
-                <img class="logo logo-black" src="./images/home/claro-logo.svg" alt="" />
+                <img class="logo logo-black" src="./images/home/claro-logo.svg" alt="logo-claro-networks" />
             </a>
         </div>
 

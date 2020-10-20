@@ -21,30 +21,18 @@
                         <span class="dropdown-p">Canal Claro</span>
                     </div>
                 </a>
-                <!--<div class="dropdown-content">
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-            </div>-->
+              
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p active-sidebar-item">Concert
                         Channel</span>
                 </div>
-                <!--<div class="dropdown-content">
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-            </div>-->
+              
                 <a class="sidebar-link" href="">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Claro Cinema</span>
                     </div>
                 </a>
-                <!--<div class="dropdown-content">
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-            </div>-->
+             
                 <a class="sidebar-link" href="" target="_blank">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Nuestra
@@ -57,11 +45,7 @@
                             Sports</span>
                     </div>
                 </a>
-                <!--<a class="sidebar-link" href="programacion.php">
-                    <div class="sidebar-item sidebar-border-bottom">
-                        <span class="dropdown-p">Programación</span>
-                    </div>
-                </a>-->
+               
                 <!--prueba sidebar-->
 
             </div>
@@ -92,8 +76,8 @@
             <div class="d-flex position-absolute programming-dots space-do">
                 <div class=" d-inline-block position-relative programming-slider-dots align-items-center">
                 </div>
-                <img src="./images/General/plus.svg" alt="" class="cursor-pointer slider-pagination-add mr-3"
-                    style="width:42px">
+                <img src="./images/General/plus.svg" alt="icono-agregar" class="cursor-pointer slider-pagination-add mr-3"
+                    style="width:42px"/>
             </div>
 
         </div>
@@ -102,11 +86,11 @@
     <div class="concert-container pb-5">
         <section class="today-concert-channel pt-3">
             <div class="row no-gutters mb-3 p-3 landing-header position-relative border-t border-l border-r border-b">
-                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-concert"
-                    type="header-landing-concert">
+                <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-concert"
+                    type="header-landing-concert"/>
                 <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-                    <img src="./images/home/concert-home-img.svg" alt="" class="lading-header-image-concert"
-                        id="icon_concert_channel">
+                    <img src="./images/home/concert-home-img.svg" alt="logo-concert-channel" class="lading-header-image-concert"
+                        id="icon_concert_channel"/>
 
                 </div>
                 <div class="col-12 col-md-5 col-lg-5 col-xl-5 ">
@@ -121,8 +105,8 @@
                 </div>
             </div>
             <div class="today-concert-videos-container position-relative border-t border-l border-r border-b">
-                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-concert pencil-slider"
-                    type="current-programming-concert">
+                <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-concert pencil-slider"
+                    type="current-programming-concert"/>
                 <div class="section-slider p-3 today-concert-channel-slider-prev">
                 </div>
 </div>
@@ -130,14 +114,14 @@
         <section class="next-week-concert">
             <div
                 class="concert-container-header mb-3  d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
-                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header" type="pencil-header">
+                <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-header" type="pencil-header"/>
                 <h1 class="p-2 concert-title" id="a-next-concert-title"></h1>
                 <h2 class="p-2 concert-subtitle" id="a-next-concert-subtitle"></h2>
 
             </div>
             <div class="week-videos-container">
                 <div class=" p-3 border-t border-l border-r border-b position-relative">
-                    <img src="./images/General/pencil.svg" alt="" class="pencil" type="pencil-video">
+                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil" type="pencil-video"/>
                     <video class="promo-video" autoplay muted controls loop>
 
                         <source
@@ -152,12 +136,12 @@
             <div
                 class="concert-container-header  p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
                 <h1 class="concert-title" id="carrusel_1_title"></h1>
-                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-header1" type="pencil-header1">
+                <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-header1" type="pencil-header1"/>
                 <h2 class="p-2 concert-subtitle" id="carrusel_1_subtitle"></h2>
 
             </div>
             <div class="concerts-videos-container position-relative border-t border-l border-r border-b p-3">
-                <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel1" type="pencil-carrusel1">
+                <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-carrusel1" type="pencil-carrusel1"/>
                 <div class="concerts-videos-container">
                     <div class="section-slider concert-slider" id="concert_channel_carrusel_1"></div>
                 </div>
@@ -167,55 +151,20 @@
         <section class="concert-interviews">
             <div
                 class="concert-container-header  header2 p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
-                <img src=" ./images/General/pencil.svg" alt="" class="pencil pencil-header2" type="header2">
+                <img src=" ./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-header2" type="header2"/>
                 <h1 class="concert-title" id="carrusel_2_title"></h1>
 
                 <h2 class="p-2 concert-subtitle" id="carrusel_2_subtitle"></h2>
             </div>
             <div class="interviews-videos-container position-relative border-t border-l border-r border-b p-3">
-                <img src=" ./images/General/pencil.svg" alt="" class="pencil pencil-carrusel2" type="pencil-carrusel2">
+                <img src=" ./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-carrusel2" type="pencil-carrusel2"/>
                 <div class="interviews-videos-container">
                     <div class="section-slider concert-slider" id="concert_channel_carrusel_2"></div>
                 </div>
             </div>
 
         </section>
-        <?php
-       // include 'advertising-section.php'
-        ?>
-      <!--  <div class="">
-            <div class="row no-gutters">
-                <div class="col-10 mx-auto">
-                    <h1 class="footer-title">¡sígue a <br>concert channel!</h1>
-                </div>
-            </div>
-            <div class="social-media">
-                <div class="d-flex align-items-center justify-content-center">
-                    <div class="social-item">
-                        <a href="" target="_blank">
-                            <img class="social-icon" src="./images/redes/facebook-icon-green.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="social-item">
-                        <a href="" target="_blank">
-                            <img class="social-icon" src="./images/redes/twitter-icon-green.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="cconcert-list-links-footer">
-            <?php
-           // include './views/partials/list-links-footer.php';
-            ?>
-        </div>
-        <footer>
-            <?php
-           // include 'footer.php'
-            ?>
-        </footer>
-
-    </div>-->
+      
     <?php
     include './views/partials/modal-favorites.php'
     ?>

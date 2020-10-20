@@ -57,7 +57,7 @@
 							<button class="button-none d-block" type="submit">
 								<input type="hidden" name="country" value="argentina">
 								<div class="name_paises espacio">
-									<img src="images/paises/argentina.svg" class="Icon_paises">Argentina
+									<img src="images/paises/argentina.svg" class="Icon_paises" alt="bandera-argentina" title="home-bandera-argentina" />Argentina
 								</div>
 							</button>
 
@@ -65,27 +65,27 @@
 							<button class="button-none d-block" type="submit">
 								<input type="hidden" name="country" value="chile">
 								<div class="name_paises espacio">
-									<img src="images/paises/chile.svg" class="Icon_paises">Chile
+									<img src="images/paises/chile.svg" class="Icon_paises"  alt="bandera-chile" title="home-bandera-chile" />Chile
 								</div>
 							</button>
 							<button class="button-none d-block" type="submit">
 								<input type="hidden" name="country" value="colombia">
 								<div class="name_paises espacio">
-									<img src="images/paises/colombia.svg" class="Icon_paises">Colombia
+									<img src="images/paises/colombia.svg" class="Icon_paises" alt="bandera-colombia" title="home-bandera-colombia" />Colombia
 								</div>
 							</button>
 
 							<button class="button-none d-block" type="submit">
 								<input type="hidden" name="country" value="costarica">
 								<div class="name_paises espacio">
-									<img src="images/paises/costa-rica.svg" class="Icon_paises">Costa Rica
+									<img src="images/paises/costa-rica.svg" class="Icon_paises" alt="bandera-costa-rica" title="home-bandera-costa-rica" />Costa Rica
 								</div>
 							</button>
 
 							<button class="button-none d-block" type="submit">
 								<input type="hidden" name="country" value="ecuador">
 								<div class="name_paises espacio">
-									<img src="images/paises/ecuador.svg" class="Icon_paises">Ecuador
+									<img src="images/paises/ecuador.svg" class="Icon_paises" alt="bandera-ecuador" title="home-bandera-ecuador" />Ecuador
 								</div>
 							</button>
 
@@ -93,7 +93,7 @@
 								<input type="hidden" name="country" value="elsalvador">
 
 								<div class="name_paises espacio">
-									<img src="images/paises/el-salvador.svg" class="Icon_paises"><span>El
+									<img src="images/paises/el-salvador.svg" class="Icon_paises" alt="bandera-el-salvador" title="home-bandera-el-salvador" /><span>El
 										Salvador</span>
 								</div>
 
@@ -106,7 +106,7 @@
 								<input type="hidden" name="country" value="guatemala">
 								<a href="home.php">
 									<div class="name_paises espacio">
-										<img src="images/paises/guatemala.svg" class="Icon_paises"><span>Guatemala</span>
+										<img src="images/paises/guatemala.svg" class="Icon_paises" alt="bandera-guatemala" title="home-bandera-guatemala" /><span>Guatemala</span>
 									</div>
 								</a>
 							</button>
@@ -114,7 +114,7 @@
 								<input type="hidden" name="country" value="honduras">
 								<a href="home.php">
 									<div class="name_paises espacio">
-										<img src="images/paises/honduras.svg" class="Icon_paises"><span>Honduras</span>
+										<img src="images/paises/honduras.svg" class="Icon_paises" alt="bandera-honduras" title="home-bandera-honduras" /><span>Honduras</span>
 									</div>
 								</a>
 							</button>
@@ -122,26 +122,26 @@
 								<input type="hidden" name="country" value="nicaragua">
 								<a href="home.php">
 									<div class="name_paises espacio">
-										<img src="images/paises/nicaragua.svg" class="Icon_paises">Nicaragua
+										<img src="images/paises/nicaragua.svg" class="Icon_paises" alt="bandera-nicaragua" title="home-bandera-nicaragua" />Nicaragua
 									</div>
 								</a>
 							</button>
 							<button class="button-none d-block" type="submit">
 								<input type="hidden" name="country" value="panama">
 								<div class="name_paises espacio">
-									<img src="images/paises/panama.svg" class="Icon_paises">Panamá
+									<img src="images/paises/panama.svg" class="Icon_paises" alt="bandera-panama" title="home-bandera-panama" />Panamá
 								</div>
 							</button>
 							<button class="button-none d-block" type="submit">
 								<input type="hidden" name="country" value="paraguay">
 								<div class="name_paises espacio">
-									<img src="images/paises/paraguay.svg" class="Icon_paises">Paraguay
+									<img src="images/paises/paraguay.svg" class="Icon_paises" alt="bandera-paraguay" title="home-bandera-paraguay" />Paraguay
 								</div>
 							</button>
 							<button class="button-none d-block" type="submit">
 								<input type="hidden" name="country" value="peru">
 								<div class="name_paises espacio">
-									<img src="images/paises/peru.svg" class="Icon_paises">Perú
+									<img src="images/paises/peru.svg" class="Icon_paises" alt="bandera-peru" title="home-bandera-peru" />Perú
 								</div>
 							</button>
 						</div>
@@ -153,7 +153,7 @@
 								<div class="name_paises espacio">
 									<div class="row">
 										<div class="col align-middle" style="display: flex; width: 20%; max-width: 29px; min-width: 29px;padding: 0;  margin-left: 16px;">
-											<img src="images/paises/dominican-republic.svg" class="Icon_paises"></div>
+											<img src="images/paises/dominican-republic.svg" class="Icon_paises" alt="bandera-republica-dominicana" title="home-bandera-republica-dominicana" /></div>
 
 										<div class="col text-left" style="width: 50%; margin: 0 20px 0 14px; padding: 0;">
 											República Dominicana
@@ -165,7 +165,7 @@
 								<div class="name_paises espacio">
 									<div class="row">
 										<div class="col align-middle" style="display: flex; width: 20%; max-width: 29px; min-width: 29px;padding: 0;  margin-left: 16px;">
-											<img src="images/paises/usa.svg" class="Icon_paises"></div>
+											<img src="images/paises/usa.svg" class="Icon_paises" alt="bandera-usa" title="home-bandera-usa" /></div>
 
 										<div class="col" style="width: 50%; margin: 0 20px 0 14px; padding: 0;">
 											EUA
@@ -173,14 +173,7 @@
 									</div>
 								</div>
 							</a>
-							<!-- 
-
-						<a href="home.php">
-							<div class="name_paises espacio">
-								<img src="images/paises/uruguay.svg" class="Icon_paises">Uruguay
-							</div>
-						</a>
-						 -->
+						
 
 						</div>
 					</div>

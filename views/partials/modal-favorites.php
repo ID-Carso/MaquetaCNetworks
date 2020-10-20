@@ -2,7 +2,7 @@
 
     <div class="modal-dialog modal-dialog-favorites modal-dialog-centered position-relative" role="document">
         <div class="modal-content modal-favorites-content">
-            <img src="./images/notifications/close-notification.svg" alt="" class="close-modal" data-dismiss="modal">
+            <img src="./images/notifications/close-notification.svg" alt="icono-cerrar" class="close-modal" data-dismiss="modal"/>
             <div class="modal-body modal-favorites-text">
                 <p class="text-bold mb-0">¡Hola! Para agregar a favoritos, debes
                     iniciar sesión o registrarte.</p>

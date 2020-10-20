@@ -38,9 +38,9 @@ if($_SESSION["country"] != 1){
   <div class="configuracion-container py-md-5 py-lg-5 py-xl-5">
 
     <div class="col-sm-12 no-gutters col-md-6 mx-auto no-gutters col-lg-4 col-xl-3 shadow1 fondolog card-white">
-      <img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back">
-      <img src="images/registro/group-10.svg" class="ubicacion5" />
-      <img src="images/config/puntos.svg" class="ubicacionpuntos" />
+      <img src="./images/config/arrow-back-icon.svg" alt="flecha-para-regresar" class="arrow-back"/>
+      <img src="images/registro/group-10.svg" class="ubicacion5" alt="vector-rosa" />
+      <img src="images/config/puntos.svg" class="ubicacionpuntos" alt="vector-azul"/>
       <div class="row ma-no centro">
         <div class="col-sm-12 no-gap">
           <div class="centro">
@@ -53,7 +53,7 @@ if($_SESSION["country"] != 1){
           <a href="alertas.php">
             <p class="texto-config">
               Alertas
-              <img class="flechalink-icon" src="images/config/flecha.svg" />
+              <img class="flechalink-icon" src="images/config/flecha.svg" alt="flecha"/>
             </p>
           </a>
         </div>
@@ -61,7 +61,7 @@ if($_SESSION["country"] != 1){
           <a href="avatar.php">
             <p class="texto-config">
               Cambiar avatar
-              <img class="flechalink-icon" src="images/config/flecha.svg" />
+              <img class="flechalink-icon" src="images/config/flecha.svg" alt="flecha"/>
             </p>
           </a>
         </div>
@@ -69,7 +69,7 @@ if($_SESSION["country"] != 1){
           <a href="datos.php">
             <p class="texto-config">
               Datos adicionales
-              <img class="flechalink-icon" src="images/config/flecha.svg" />
+              <img class="flechalink-icon" src="images/config/flecha.svg" alt="flecha" />
             </p>
           </a>
         </div>

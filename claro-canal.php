@@ -43,33 +43,18 @@ if($_SESSION["country"] != 1){
         <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
           <span class="dropdown-p active-sidebar-item">Canal Claro</span>
         </div>
-
-
-        <!--<div class="dropdown-content">
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-              </div>-->
         <a class="sidebar-link" href="concert-channel.php">
           <div class="sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Concert Channel</span>
           </div>
         </a>
-        <!--<div class="dropdown-content">
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-              </div>-->
+      
         <a class="sidebar-link" href="claro-cinema.php">
           <div class="sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Claro Cinema</span>
           </div>
         </a>
-        <!--<div class="dropdown-content">
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-                <p class="dropdown-p">ebñrkjg</p>
-              </div>-->
+      
         <a class="sidebar-link" href="https://nuestravision.tv" target="_blank">
           <div class="sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Nuestra
@@ -82,12 +67,7 @@ if($_SESSION["country"] != 1){
               Sports</span>
           </div>
         </a>
-        <!--<a class="sidebar-link" href="programacion.php">
-          <div class="sidebar-item sidebar-border-bottom">
-            <span class="dropdown-p">Programación</span>
-          </div>
-        </a>-->
-        <!--prueba sidebar-->
+     
       </div>
       <button class="invisible-button"></button>
     </div>
@@ -95,7 +75,7 @@ if($_SESSION["country"] != 1){
     <div class="header">
       <div class="alert-user">
       </div>
-      <img src="./images/header/curva.svg" alt="" class="header-curve">
+      <img src="./images/header/curva.svg" alt="imagen-header" class="header-curve"/>
 
       <!--Menú para móvil -->
       <?php
@@ -111,18 +91,6 @@ if($_SESSION["country"] != 1){
       <?php
       include './views/partials/menu-desktop-black.php'
       ?>
-
-      <!--<div class="header-details header-detail-margin col-md-6">
-          <div class="m-header-card">
-            <p class="a-header-card-title">Series</p>
-            <p class="a-header-card-title">Mad Men</p>
-            <p class="a-header-card-subtitle">Estreno<br />Lunes 15</p>
-            <p class="a-header-card-text">
-              Lunes a Jueves<br />21:00 GRS. | Col.
-            </p>
-          </div>
-          <img src="./images/claro-canal/claro-canal-logo.svg" alt="" />
-        </div>-->
       <div class="header-slider" id="banner-claro-canal">
 
       </div>
@@ -134,7 +102,7 @@ if($_SESSION["country"] != 1){
       <div class="today-container">
         <div class="row no-gutters landing-header">
           <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-            <img src="" id="icon_canal_claro" alt="" class="lading-header-image-claro">
+            <img src="" id="icon_canal_claro" alt="icono-canal-claro" class="lading-header-image-claro"/>
           </div>
           <div class="col-12 col-md-5 col-lg-5 col-xl-5">
             <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
@@ -165,17 +133,7 @@ if($_SESSION["country"] != 1){
             <source src="http://www.claronetworks.openofficedospuntocero.info/video/canal-claro-promo.mp4"
               type="video/mp4">
           </video>
-          <!--<div class="poster">
-            <div class="next-week-thumb">
-              <div class="a-next-week-rectangle">
-                <div class="poster-title-margin rectangle-content">
-                  <p class="a-poster-text-white">
-                    ¿QUÉ TE HA DADO ESA MUJER?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>-->
+       
         </div>
 
 
@@ -218,22 +176,22 @@ if($_SESSION["country"] != 1){
         <div class="social-media">
           <div class="col ">
             <a href="https://www.facebook.com/CanalClaro/" target="_blank">
-              <img class="social-icon" src="./images/redes/facebook-icon-red.svg" alt="" />
+              <img class="social-icon" src="./images/redes/facebook-icon-red.svg" alt="icono-facebook" />
             </a>
           </div>
           <div class="col">
             <a href="https://www.instagram.com/canalclaro/?hl=es-la" target="_blank">
-              <img class="social-icon" src="./images/redes/insta-icon-red.svg" alt="" />
+              <img class="social-icon" src="./images/redes/insta-icon-red.svg" alt="icono-insta" />
             </a>
           </div>
           <div class="col">
             <a href="https://twitter.com/canalclaro" target="_blank">
-              <img class="social-icon" src="./images/redes/twitter-icon-red.svg" alt="" />
+              <img class="social-icon" src="./images/redes/twitter-icon-red.svg" alt="icono-twitter" />
             </a>
           </div>
           <div class="col">
             <a href="https://www.youtube.com/user/CanalClaroTV" target="_blank">
-              <img class="social-icon" src="./images/redes/youtube-icon-red.svg" alt="" />
+              <img class="social-icon" src="./images/redes/youtube-icon-red.svg" alt="icono-youtube" />
             </a>
           </div>
         </div>

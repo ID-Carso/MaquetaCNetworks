@@ -2,16 +2,16 @@
     <div class="nav-content">
         <div class="claro-logo">
 
-            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
+            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="menu-para-tablet" />
 
             <a href="home.php">
-                <img class="logo logo-black" src="./images/home/claro-logo.svg" alt="" />
+                <img class="logo logo-black" src="./images/home/claro-logo.svg" alt="logo-de-claro-networks" />
             </a>
         </div>
         <div class="options">
             <div class="login">
-                <a href="login.php" class="login-item mr-2"><img src="./images/home/user-login.svg" alt=""></a>
-                <a href="index.php" class="login-item"><img class="" src="images/paises/gmt-icon.svg" alt="" width="32px"></a>
+                <a href="login.php" class="login-item mr-2"><img src="./images/home/user-login.svg" alt="icono-de-user"/></a>
+                <a href="index.php" class="login-item"><img class="" src="images/paises/gmt-icon.svg" alt="icono-horario-gmt" width="32px"/></a>
             </div>
 
         </div>

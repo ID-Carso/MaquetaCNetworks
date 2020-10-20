@@ -11,14 +11,14 @@
     <div class="login-container">
         <div class="login-form no-gutters">
             <div class="col-sm-12  col-md-6 no-gutters col-lg-4  col-xl-3 shadow1 fondolog">
-                <img src="images/registro/group-10.svg" class="ubicacion5" />
-                <img src="images/registro/group-12.svg" class="ubicacion3" />
+                <img src="images/registro/group-10.svg" class="ubicacion5" alt="vector-rosa" />
+                <img src="images/registro/group-12.svg" class="ubicacion3" alt="vector-rosa" />
                 <div class="row ma-no no-gutters">
                     <div class="col-sm-12 col-md-12 col-lg-12">
-                        <img src="images/registro/group-3.svg" class="form-image-blue" />
+                        <img src="images/registro/group-3.svg" class="form-image-blue" alt="vector-azul" />
                         <a href="home.php">
-                            <img src="images/registro/group-24.svg" class="ubicacion1" /></a>
-                        <img src="images/registro/group-37.svg" class="ubicacion" />
+                            <img src="images/registro/group-24.svg" class="ubicacion1" alt="vector-rosa" /></a>
+                        <img src="images/registro/group-37.svg" class="ubicacion" alt="vector-azul" />
                     </div>
                 </div>
                 <div class="col-10 col-sm-8 col-md-8 col-lg-9 col-xl-9 mx-auto">

@@ -13,7 +13,7 @@ function validateTokenPassword(tokenPassword) {
         let name = localStorage.setItem("name", result.data.name);
         user_id.attr("value", result.data.user_id);
         location.href =
-          "http://www.claronetworks.openofficedospuntocero.info/form-password.php";
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/form-password.php";
       }
     },
   });
@@ -35,7 +35,7 @@ function sendUserEmail(inputEmail) {
       console.log("succes", result);
       if (result.data) {
         location.href =
-          "http://www.claronetworks.openofficedospuntocero.info/email-sent.php";
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/email-sent.php";
       }
     },
   });
@@ -65,7 +65,7 @@ function sendNewPassword(inputPassword, secondInputPassword) {
       if (result.code == 200) {
         console.log("succes", result);
         location.href =
-          "http://www.claronetworks.openofficedospuntocero.info/success-password.php";
+          "http://www.claronetworks.openofficedospuntocero.info/v1.2/success-password.php";
       }
     },
   });
@@ -113,7 +113,7 @@ function signIn(email, password) {
 
 function signOut() {
   location.reload();
-  location.href = "/home.php";
+  location.href = "./home.php";
   localStorage.removeItem("date");
   localStorage.removeItem("day");
   localStorage.removeItem("month");

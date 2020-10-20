@@ -5,16 +5,16 @@ export default class Navbar {
         <nav class="navbar-white">
             <div class="nav-content">
                 <div class="claro-logo">
-                    <img class="menu-responsive" src="../images/aboutus/hamburger-about-us.svg" alt="" />
+                    <img class="menu-responsive" src="../images/aboutus/hamburger-about-us.svg" alt="menu-de-hamburguesa" />
                     <div class="d-flex justify-content-center">
                         <a href="home.php">
-                            <img class="logo" src="../images/home/claro-logo.svg" alt="" />
+                            <img class="logo" src="../images/home/claro-logo.svg" alt="logo-claro-networks" />
                         </a>
                     </div>
                 </div>
         
                 <div class="login">
-                    <a href="index.php" class="login-item"><img class="login-country" alt="" /></a>
+                    <a href="index.php" class="login-item"><img class="login-country" alt="bandera-pais-por-region" /></a>
                 </div>
             </div>
         </nav>
@@ -23,15 +23,15 @@ export default class Navbar {
     <nav class="navbar-white">
         <div class="nav-content">
             <div class="nav-logo">
-                <img class="menu-responsive-tablet" src="../images/aboutus/hamburger-about-us.svg" alt="" />
+                <img class="menu-responsive-tablet" src="../images/aboutus/hamburger-about-us.svg" alt="menu-de-hamburgesa" />
                 <a href="home.php">
-                    <img class="logo" src="../images/home/claro-logo.svg" alt="" />
+                    <img class="logo" src="../images/home/claro-logo.svg" alt="logo-claro-networks" />
                 </a>
 
             </div>
 
             <div class="nav-country-image">
-                <a href="index.php" class="login-item"><img src="" class="login-country" alt="" /></a>
+                <a href="index.php" class="login-item"><img src="" class="login-country" alt="bandera-pais-por-region" /></a>
             </div>
         </div>
     </nav>
@@ -42,7 +42,7 @@ export default class Navbar {
     <div class="nav-content">
         <div class="claro-logo">
 
-            <a href="home.php"><img class="logo" src="./images/home/claro-logo.svg" alt="" /></a>
+            <a href="home.php"><img class="logo" src="./images/home/claro-logo.svg" alt="logo-claro-networks" /></a>
         </div>
 
         <div class="user-options">
@@ -98,16 +98,16 @@ export default class Navbar {
         <nav class="navbar-white">
             <div class="nav-content">
                 <div class="claro-logo">
-                    <img class="menu-responsive" src="../images/aboutus/hamburger-about-us.svg" alt="" />
+                    <img class="menu-responsive" src="../images/aboutus/hamburger-about-us.svg" alt="menu-de-hamburguesa" />
                     <div class="d-flex justify-content-center">
                         <a href="home.php">
-                            <img class="logo" src="../images/home/claro-logo.svg" alt="" />
+                            <img class="logo" src="../images/home/claro-logo.svg" alt="logo-claro-networks" />
                         </a>
                     </div>
                 </div>
         
                 <div class="login">
-                    <a href="index.php" class="login-item"><img src="${countryFlag}" class="login-country" alt="" /></a>
+                    <a href="index.php" class="login-item"><img src="${countryFlag}" class="login-country" alt="bandera-pais-por-region" /></a>
                 </div>
             </div>
         </nav>
@@ -116,15 +116,15 @@ export default class Navbar {
         <nav class="navbar-white">
             <div class="nav-content">
                 <div class="nav-logo">
-                    <img class="menu-responsive-tablet" src="../images/aboutus/hamburger-about-us.svg" alt="" />
+                    <img class="menu-responsive-tablet" src="../images/aboutus/hamburger-about-us.svg" alt="menu-de-hamburguesa" />
                     <a href="home.php">
-                        <img class="logo" src="../images/home/claro-logo.svg" alt="" />
+                        <img class="logo" src="../images/home/claro-logo.svg" alt="logo-claro-networks" />
                     </a>
     
                 </div>
     
                 <div class="nav-country-image">
-                    <a href="index.php" class="login-item"><img src="${countryFlag}" class="login-country" alt="" /></a>
+                    <a href="index.php" class="login-item"><img src="${countryFlag}" class="login-country" alt="bandera-pais-por-region" /></a>
                 </div>
             </div>
         </nav>
@@ -134,7 +134,7 @@ export default class Navbar {
       <div class="nav-content">
           <div class="claro-logo">
   
-              <a href="home.php"><img class="logo" src="./images/home/claro-logo.svg" alt="" /></a>
+              <a href="home.php"><img class="logo" src="./images/home/claro-logo.svg" alt="logo-claro-networks" /></a>
           </div>
   
           <div class="user-options">

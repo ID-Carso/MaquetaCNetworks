@@ -158,13 +158,13 @@ if ($_SESSION["country"] != 1) {
                         </div>
                     </div>
                     <!--Concert channel de "Ahora en tv"-->
-                    <div id="concert-channel" class="tv-content">
+                    <div id="concert-channel" class="tv-content contnt-hide">
                         <div class="tv-slider today-concert-channel-slider" id="tv-concert-slider">
                         </div>
                     </div>
                     <!--End Concert channel de "Ahora en tv"-->
                     <!--Claro cinema de "Ahora en tv"-->
-                    <div id="claro-cinema" class="tv-content">
+                    <div id="claro-cinema" class="tv-content contnt-hide">
                         <div class="tv-slider today-claro-cinema-slider" id="tv-cinema-slider">
                         </div>
                     </div>
@@ -220,16 +220,7 @@ if ($_SESSION["country"] != 1) {
                 <div class="canal-videos-container">
                     <div class="section-slider claro-slider-home">
                     </div>
-                    <!--<div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
-                        <div>
-                            <img class="concert-footer-img" src="./images/home/tv-1.svg" alt="">
-                        </div>
-                        <div>
-                            <p class="horario-text text-dark">
-                                Horario sujetos a cambios
-                            </p>
-                        </div>
-                    </div>-->
+                   
                 </div>
                 <div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
                     <div>
@@ -404,17 +395,7 @@ if ($_SESSION["country"] != 1) {
                         </div>
                     </div>
                 </div>
-                <!--<div class="row no-gutters">
-                    <div class="col-5">
-                        <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
-                    </div>
-                    <div class="col-7">
-                        <div class="home-cinema-videos-container">
-                            <div class="cinema-home-slider">
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
+               
                 <div class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
 
@@ -453,13 +434,7 @@ if ($_SESSION["country"] != 1) {
                     </div>
                 </div>
 
-                <!--<div class="row no-gutters">
-                    <div class="col-md-4 col-xl-6">
-                        <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
-                    </div>
-                    <div class="col-md-8 col-xl-6 cinema-home-videos-container">
-                    </div>
-                </div>-->
+               
                 <div class="pb-xl-0 d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
 

@@ -36,9 +36,9 @@ if($_SESSION["country"] != 1){
         <div class="alertas-container no-gutters">
                 <div
                         class="col-sm-12 mx-auto no-gutters col-md-6 no-gutters col-lg-4 col-xl-4 card-white shadow1 fondolog position-relative">
-                        <img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back">
-                        <img src="images/registro/group-10.svg" class="ubicacion5" />
-                        <img src="images/config/puntos.svg" class="ubicacionpuntos">
+                        <img src="./images/config/arrow-back-icon.svg" alt="flecha-para-regresar" class="arrow-back"/>
+                        <img src="images/registro/group-10.svg" class="ubicacion5" alt="vector-rosa"/>
+                        <img src="images/config/puntos.svg" class="ubicacionpuntos" alt="vector-azul"/>
 
                         <div class="col-10 col-sm-8 col-md-10 col-lg-10 col-xl-10 mx-auto">
                                 <div class="row ma-no centro">
@@ -187,7 +187,7 @@ if($_SESSION["country"] != 1){
 
 
                                 <div class="modal-body txtcontenido">
-                                        <img src="./images/datos-adicionales/success.svg" />
+                                        <img src="./images/datos-adicionales/success.svg" alt="alerta-exitosa"/>
                                         <span class="mensaje">Alertas guardadas
                                                 exitosamente</span>
                                 </div>

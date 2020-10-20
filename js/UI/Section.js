@@ -27,9 +27,9 @@ export default class Section {
             centerMode: false,
             arrows: true,
             prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+              '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+              '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
           },
         },
         {
@@ -42,9 +42,9 @@ export default class Section {
             centerMode: false,
             arrows: true,
             prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+              '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+              '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
           },
         },
         {
@@ -57,9 +57,9 @@ export default class Section {
             centerMode: false,
             arrows: true,
             prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+              '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+              '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
           },
         },
         {
@@ -72,9 +72,9 @@ export default class Section {
             centerMode: false,
             arrows: true,
             prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+              '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+              '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
           },
         },
       ],
@@ -95,7 +95,7 @@ export default class Section {
     for (let i = 0; i < imagesHeaderLength; i++) {
       divImageHeader += `
       <div class="header-slide">
-        <img src="${imagesHeader[i]}" class="rellax" data-rellax="10">
+        <img src="${imagesHeader[i]}" class="rellax" data-rellax="10" alt="imagenes-del-header-en-home"/>
       </div>`;
     }
 
@@ -129,8 +129,6 @@ export default class Section {
     $(".home-video").attr("src", json.data.block_1_video_name);
     let titleTv = `${json.data.block_2_title1} <span class="header-span">${json.data.block_2_title2}</span><span class="header-point">•</span>`;
     $(".title-tv").html(titleTv);
-
-    console.log("si esta legando");
     $(".claro-nav-image").attr("src", json.data.block_2_channel1_icon);
     $(".concert-nav-image").attr("src", json.data.block_2_channel2_icon);
     $(".cinema-nav-image").attr("src", json.data.block_2_channel3_icon);
@@ -218,7 +216,7 @@ export default class Section {
                 </div>
                   <div>
                     <div class="thumbnail-large">
-                        <img src="${block3Image[i].image_vertical}" alt="">
+                        <img src="${block3Image[i].image_vertical}" alt="imagen-de-${block3Image[i].image_vertical}"/>
                     </div>
                   </div>
             </div>
@@ -230,11 +228,11 @@ export default class Section {
             <div class="poster-body">
                 <div class="showtime-container justify-content-end">
             
-                    <button type="button" class="poster-button remove-program" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                    <button type="button" class="poster-button remove-program" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt="agregar-a-favoritos"/></button>
                 </div>
                   <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
                     <div class="thumbnail-large">
-                        <img src="${block3Image[i].image_vertical}" alt="">
+                        <img src="${block3Image[i].image_vertical}" alt="imagen-de-${block3Image[i].image_vertical}"/>
                     </div>
                   </div>
             </div>
@@ -247,11 +245,11 @@ export default class Section {
           <div class="poster cursor-auto">
               <div class="poster-body">
                   <div class="showtime-container justify-content-end">
-                      <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                      <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos"/></button>
                   </div>
                   <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
                       <div class="thumbnail-large">
-                          <img src="${block3Image[i].image_vertical}" alt="">
+                          <img src="${block3Image[i].image_vertical}" alt="imagen-de-${block3Image[i].image_vertical}"/>
                       </div>
                   </div>
               </div>
@@ -262,11 +260,11 @@ export default class Section {
           <div class="poster">
               <div class="poster-body">
                   <div class="showtime-container justify-content-end">
-                      <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                      <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos"/></button>
                   </div>
                   <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
                       <div class="thumbnail-large">
-                          <img src="${block3Image[i].image_vertical}" alt="">
+                          <img src="${block3Image[i].image_vertical}" alt="imagen-de-${block3Image[i].image_vertical}">
                       </div>
                   </div>
               </div>
@@ -289,11 +287,11 @@ export default class Section {
         <div class="poster-body">
             <div class="showtime-container justify-content-end">
          
-                <button type="button" class="poster-button remove-program" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                <button type="button" class="poster-button remove-program" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt="agregar-a-favoritos"/></button>
             </div>
               <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
                 <div class="thumbnail-large">
-                    <img src="${block3Image[i].image_vertical}" alt="">
+                    <img src="${block3Image[i].image_vertical}" alt="imagen-de-${block3Image[i].image_vertical}"/>
                 </div>
               </div>
         </div>
@@ -308,11 +306,11 @@ export default class Section {
 
         <div class="poster-body">
             <div class="showtime-container justify-content-end">
-                <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos"></button>
             </div>
             <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
                 <div class="thumbnail-large">
-                    <img src="${block3Image[i].image_vertical}" alt="">
+                    <img src="${block3Image[i].image_vertical}" alt="imagen-de-${block3Image[i].image_vertical}"/>
                 </div>
             </div>
         </div>
@@ -362,11 +360,11 @@ export default class Section {
           <div class="poster cursor-auto">
               <div class="poster-body">
                   <div class="showtime-container justify-content-end">
-                      <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                      <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt="agregar-a-favoritos"/></button>
                   </div>
                   <div>
                       <div class="thumbnail-large">
-                          <img src="${block4Image[i].image_vertical}" alt="">
+                          <img src="${block4Image[i].image_vertical}" alt="imagen-de-${block4Image[i].image_vertical}"/>
                       </div>
                   </div>
               </div>
@@ -377,11 +375,11 @@ export default class Section {
           <div class="poster cursor-pointer">
               <div class="poster-body">
                   <div class="showtime-container justify-content-end">
-                      <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                      <button type="button" class="poster-button remove-program" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt="agregar-a-favoritos"></button>
                   </div>
                   <div class="thumbnail-body" _id="${block4Image[i].chapter_id}">
                       <div class="thumbnail-large">
-                          <img src="${block4Image[i].image_vertical}" alt="">
+                          <img src="${block4Image[i].image_vertical}" alt="imagen-de-${block4Image[i].image_vertical}"/>
                       </div>
                   </div>
               </div>
@@ -394,11 +392,11 @@ export default class Section {
           <div class="poster cursor-auto">
               <div class="poster-body">
                    <div class="showtime-container justify-content-end">
-                      <button type="button" class="poster-button add-favorites" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                      <button type="button" class="poster-button add-favorites" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos"></button>
                     </div>
                     <div>
                       <div class="thumbnail-large">
-                          <img src="${block4Image[i].image_vertical}" alt="">
+                          <img src="${block4Image[i].image_vertical}" alt="imagen-de-${block4Image[i].image_vertical}">
                       </div>
                     </div>
               </div>
@@ -409,11 +407,11 @@ export default class Section {
           <div class="poster cursor-pointer">
               <div class="poster-body">
                    <div class="showtime-container justify-content-end">
-                      <button type="button" class="poster-button add-favorites" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                      <button type="button" class="poster-button add-favorites" _id="${block4Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos"></button>
                     </div>
                     <div class="thumbnail-body" _id="${block4Image[i].chapter_id}">
                       <div class="thumbnail-large">
-                          <img src="${block4Image[i].image_vertical}" alt="">
+                          <img src="${block4Image[i].image_vertical}" alt="imagen-de-${block4Image[i].image_vertical}">
                       </div>
                     </div>
               </div>
@@ -425,7 +423,7 @@ export default class Section {
 
     $(".concert-home-slider").append(concertHomeVideosMobile);
 
-    //CUADROS DE EDITAR PARA CONCERT-HOME
+  /*  //CUADROS DE EDITAR PARA CONCERT-HOME
     let concertHomeVideosMobileprev = "";
     for (let i = 0; i < blockImage4Length; i++) {
       if (arrayFavoritesId.includes(block4Image[i].chapter_id)) {
@@ -471,7 +469,7 @@ export default class Section {
       }
     }
 
-    $(".concert-home-slider-prev").append(concertHomeVideosMobileprev);
+    $(".concert-home-slider-prev").append(concertHomeVideosMobileprev);*/
 
     //END CUADROS
 
@@ -512,11 +510,11 @@ export default class Section {
               <div class="poster-body">
                   <div class="showtime-container justify-content-end">
                     
-                      <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                      <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt="agregar-a-favoritos"/></button>
                   </div>
                   <div>
                       <div class="thumbnail-large">
-                          <img src="${block5Image[i].image_vertical}" alt="">
+                          <img src="${block5Image[i].image_vertical}" alt="imagen-de-${block5Image[i].image_vertical}"/>
                       </div>
                   </div>
                 
@@ -529,11 +527,11 @@ export default class Section {
               <div class="poster-body">
                   <div class="showtime-container justify-content-end">
                     
-                      <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt=""></button>
+                      <button type="button" class="poster-button remove-program" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt="agregar-a-favoritos"/></button>
                   </div>
                   <div class="thumbnail-body" _id="${block5Image[i].chapter_id}">
                       <div class="thumbnail-large">
-                          <img src="${block5Image[i].image_vertical}" alt="">
+                          <img src="${block5Image[i].image_vertical}" alt="imagen-de-${block5Image[i].image_vertical}"/>
                       </div>
                   </div>
                 
@@ -548,11 +546,11 @@ export default class Section {
               <div class="poster-body">
                   <div class="showtime-container justify-content-end">
              
-                      <button type="button" class="poster-button add-favorites" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                      <button type="button" class="poster-button add-favorites" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos"/></button>
                   </div>
                   <div>
                       <div class="thumbnail-large">
-                          <img src="${block5Image[i].image_vertical}" alt="">
+                          <img src="${block5Image[i].image_vertical}" alt="imagen-de-${block5Image[i].image_vertical}"/>
                       </div>
                   </div>
               </div>
@@ -564,11 +562,11 @@ export default class Section {
               <div class="poster-body">
                   <div class="showtime-container justify-content-end">
              
-                      <button type="button" class="poster-button add-favorites" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt=""></button>
+                      <button type="button" class="poster-button add-favorites" _id="${block5Image[i].chapter_id}"><img class="poster-add" src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos"></button>
                   </div>
                   <div>
                       <div class="thumbnail-large">
-                          <img src="${block5Image[i].image_vertical}" alt="">
+                          <img src="${block5Image[i].image_vertical}" alt="imagen-de-${block5Image[i].image_vertical}"/>
                       </div>
                   </div>
               </div>
@@ -580,7 +578,7 @@ export default class Section {
 
     $(".cinema-home-slider").append(cinemaHomeVideosMobile);
 
-    //CUADROS PARA EDITAR CINEMA
+   /* //CUADROS PARA EDITAR CINEMA
     let cinemaHomeVideosMobileprev = "";
     for (let i = 0; i < blockImage5Length; i++) {
       if (arrayFavoritesId.includes(block5Image[i].chapter_id)) {
@@ -630,7 +628,7 @@ export default class Section {
       }
     }
 
-    $(".cinema-home-slider-prev").append(cinemaHomeVideosMobileprev);
+    $(".cinema-home-slider-prev").append(cinemaHomeVideosMobileprev);*/
     //END DE CUADROS
     $(".cinema-home-slider").slick({
       slidesToShow: 5,
@@ -639,8 +637,8 @@ export default class Section {
       dots: true,
       centerMode: false,
       arrows: true,
-      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
 
       responsive: [
         {
@@ -677,9 +675,9 @@ export default class Section {
             centerMode: false,
             arrows: true,
             prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+              '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+              '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
           },
         },
 
@@ -693,9 +691,9 @@ export default class Section {
             centerMode: false,
             arrows: true,
             prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+              '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+              '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
           },
         },
 
@@ -709,9 +707,9 @@ export default class Section {
             centerMode: false,
             arrows: true,
             prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+              '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
             nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" />',
+              '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
           },
         },
       ],
@@ -797,8 +795,8 @@ export default class Section {
       dots: true,
       centerMode: false,
       arrows: false,
-      prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
-      nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
+      prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
+      nextArrow: '<img src="./images/sliders/next.png" class="arrow-next"  alt="flecha-derecha" />',
       autoplay: true,
       autoplaySpeed: 2000,
     });
@@ -814,9 +812,9 @@ export default class Section {
         centerMode: false,
         arrows: false,
         prevArrow:
-          '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
         nextArrow:
-          '<img src="../images/sliders/next.png" class="arrow-next" />',
+          '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
         customPaging: function (slider, i) {
           var thumb = $(slider.$slides[i]).data();
           return (
@@ -838,8 +836,8 @@ export default class Section {
         dots: true,
         centerMode: false,
         arrows: false,
-        prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
-        nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
+        prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+        nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
         autoplay: true,
         autoplaySpeed: 2000,
       });
@@ -851,8 +849,8 @@ export default class Section {
         dots: true,
         centerMode: false,
         arrows: false,
-        prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
-        nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
+        prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+        nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
         autoplay: true,
         autoplaySpeed: 2000,
       });
@@ -960,7 +958,7 @@ export default class Section {
           <div class="poster-body">
               <div>
                   <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="">
+                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
                   </div>
                   <div class="a-claro-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
@@ -977,7 +975,7 @@ export default class Section {
           <div class="poster-body">
               <div class="thumbnail-body" _id="${program.chapter_id}">
                   <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="">
+                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
                   </div>
                   <div class="a-claro-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
@@ -990,7 +988,7 @@ export default class Section {
         `;
       }
 
-      programTienesQueVerloEdit += `
+     /* programTienesQueVerloEdit += `
       <div class="poster p-3 border-l border-r border-b border-t position-relative">
       <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
         <div class="poster-body">
@@ -1006,7 +1004,7 @@ export default class Section {
           </div>
         </div>
       </div>
-      `;
+      `;*/
     });
 
     carrusel2.forEach((program) => {
@@ -1016,7 +1014,7 @@ export default class Section {
           <div class="poster-body">
               <div>
                   <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="">
+                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
                   </div>
                   <div class="a-claro-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
@@ -1033,7 +1031,7 @@ export default class Section {
           <div class="poster-body">
               <div class="thumbnail-body" _id="${program.chapter_id}">
                   <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="">
+                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
                   </div>
                   <div class="a-claro-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
@@ -1046,7 +1044,7 @@ export default class Section {
         `;
       }
 
-      programExlusiveContentEdit += `
+    /*  programExlusiveContentEdit += `
       <div class="poster border-l p-3 border-r border-t border-b" >
         <div class="poster-body">
             <div class="thumbnail-body" _id="${program.chapter_id}">
@@ -1061,7 +1059,7 @@ export default class Section {
           </div>
         </div>
       </div>
-      `;
+      `;*/
     });
 
     $("#dontLose-claro-sliderEdit").append(programTiensQueVerlo);
@@ -1099,8 +1097,8 @@ export default class Section {
         dots: true,
         centerMode: false,
         arrows: false,
-        prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
-        nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
+        prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
+        nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
         autoplay: true,
         autoplaySpeed: 2000,
       });
@@ -1117,9 +1115,9 @@ export default class Section {
         centerMode: false,
         arrows: false,
         prevArrow:
-          '<img src="../images/sliders/prev.png" class="arrow-prev" />',
+          '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
         nextArrow:
-          '<img src="../images/sliders/next.png" class="arrow-next" />',
+          '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
         customPaging: function (slider, i) {
           var thumb = $(slider.$slides[i]).data();
           return (
@@ -1143,8 +1141,8 @@ export default class Section {
           dots: true,
           centerMode: false,
           arrows: false,
-          prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
+          prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+          nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
           autoplay: true,
           autoplaySpeed: 2000,
         });
@@ -1156,8 +1154,8 @@ export default class Section {
           dots: true,
           centerMode: false,
           arrows: false,
-          prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
-          nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
+          prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
+          nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
           autoplay: true,
           autoplaySpeed: 2000,
         });
@@ -1247,7 +1245,7 @@ export default class Section {
           <div class="poster-body">
               <div>
                   <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="">
+                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
                   </div>
                   <div class="a-cinema-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
@@ -1264,7 +1262,7 @@ export default class Section {
           <div class="poster-body">
               <div class="thumbnail-body" _id="${program.chapter_id}">
                   <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="">
+                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
                   </div>
                   <div class="a-cinema-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
@@ -1285,7 +1283,7 @@ export default class Section {
           <div class="poster-body">
               <div>
                   <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="">
+                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
                   </div>
                   <div class="a-cinema-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
@@ -1302,7 +1300,7 @@ export default class Section {
           <div class="poster-body">
               <div class="thumbnail-body" _id="${program.chapter_id}">
                   <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="">
+                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
                   </div>
                   <div class="a-cinema-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
@@ -1348,8 +1346,8 @@ export default class Section {
       dots: true,
       centerMode: false,
       arrows: false,
-      prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" />',
-      nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" />',
+      prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+      nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
       autoplay: true,
       autoplaySpeed: 2000,
     });
@@ -1365,8 +1363,8 @@ export default class Section {
       appendDots: $(".programming-slider-dots"),
       centerMode: false,
       arrows: false,
-      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" />',
-      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" />',
+      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
       customPaging: function (slider, i) {
         var thumb = $(slider.$slides[i]).data();
         return (
@@ -1457,7 +1455,7 @@ export default class Section {
           <div class="poster-body">
               <div>
                   <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="">
+                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
                   </div>
                   <div class="a-concert-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
@@ -1474,7 +1472,7 @@ export default class Section {
           <div class="poster-body">
               <div class="thumbnail-body" _id="${program.chapter_id}">
                   <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="">
+                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
                   </div>
                   <div class="a-concert-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
@@ -1495,7 +1493,7 @@ export default class Section {
           <div class="poster-body">
               <div>
                   <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="">
+                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
                   </div>
                   <div class="a-concert-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
@@ -1512,7 +1510,7 @@ export default class Section {
           <div class="poster-body">
               <div>
                   <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="">
+                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
                   </div>
                   <div class="a-concert-rectangle thumbnail-info-title">
                       <div class="poster-title-margin">
@@ -1566,7 +1564,7 @@ export default class Section {
     for (let i = 0; i < imagesHeaderLength; i++) {
       divImageHeader += `
       <div class="header-slide">
-        <img src="${banner_images[i]}" class="rellax" data-rellax="10">
+        <img src="${banner_images[i]}" class="rellax" data-rellax="10" alt="banner-${banner_images[i]}"/>
       </div>`;
     }
     $("#banner-programming").append(divImageHeader);
@@ -1636,7 +1634,9 @@ export default class Section {
                 <!--<span class="a-text-bold-warm text-plus mb90 shadow-contrast add-photo">472px X 295px</span>-->
                 <img src="${
                   banner_images[i]
-                }?v=${new Date().getTime()}" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                }?v=${new Date().getTime()}" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" alt="banner-de-programacion-${
+                  banner_images[i]
+                }" />
             </label>
         </div>`;
     }
@@ -1730,8 +1730,7 @@ export default class Section {
       $(".terms_text").height("auto");
       $(".terms_text").height($(".terms_text").prop("scrollHeight"));
     });
-    // SCROLL DE TERMINOS Y CONDICIONES
-    console.log("temrinos pintados");
+  
   }
 }
 

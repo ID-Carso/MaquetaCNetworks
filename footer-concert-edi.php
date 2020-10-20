@@ -9,7 +9,7 @@
 <body class="concert-container">
 
     <div class=" border-t border-l border-r border-b position-relative m-5 ml-5 mr-5">
-        <img src="./images/General/pencil.svg" alt="" class="pencil pencil-carrusel-main" type="footer-concert-channel">
+        <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-carrusel-main" type="footer-concert-channel"/>
 
         <?php
         include 'advertising-section.php'
@@ -25,14 +25,14 @@
                     <div class="social-item">
                         <a href="https://www.facebook.com/concertchannel/" target="_blank"
                             id="facebook_concert_channel_url">
-                            <img class="social-icon" src="./images/redes/facebook-icon-green.svg" alt=""
-                                id="facebook_concert_channel_icon">
+                            <img class="social-icon" src="./images/redes/facebook-icon-green.svg" alt="icono-facebook"
+                                id="facebook_concert_channel_icon"/>
                         </a>
                     </div>
                     <div class="social-item">
                         <a href="https://twitter.com/Concert_Channel" target="_blank" id="twitter_concert_channel_url">
-                            <img class="social-icon" src="./images/redes/twitter-icon-green.svg" alt=""
-                                id="twitter_concert_channel_icon">
+                            <img class="social-icon" src="./images/redes/twitter-icon-green.svg" alt="icono-twitter"
+                                id="twitter_concert_channel_icon"/>
                         </a>
                     </div>
                 </div>

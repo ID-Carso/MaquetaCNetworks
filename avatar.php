@@ -35,8 +35,8 @@ if($_SESSION["country"] != 1){
   <div style="padding-top: 3%">
     <div
       class="col-sm-12 no-gutters col-md-8 mx-auto no-gutters col-lg-4 col-xl-3 shadow1 fondolog position-relative card-white avatar-container">
-      <img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back">
-      <img src="images/registro/group-10.svg" class="ubicacion5" />
+      <img src="./images/config/arrow-back-icon.svg" alt="flecha-para-regresar" class="arrow-back"/>
+      <img src="images/registro/group-10.svg" class="ubicacion5" alt="vector-rosa"/>
 
       <div class="row ma-no centro">
         <div class="col-sm-12 no-gap">
@@ -59,41 +59,41 @@ if($_SESSION["country"] != 1){
             <ul class="lista-avatar  ">
               <div class="col-md text-center no-gap">
                 <li rel="claro-canal" class="active-navAvatar avatar-item">
-                  <img _id="1" src="./images/avatar/avatar-blue1.svg" />
+                  <img _id="1" src="./images/avatar/avatar-blue1.svg" alt="avatar-azul-claro" title="avatar-azul-claro" />
                 </li>
                 <br />
                 <li rel="claro-canal" class="avatar-item">
-                  <img _id="2" src="./images/avatar/avatar-gray.svg" />
+                  <img _id="2" src="./images/avatar/avatar-gray.svg" alt="avatar-gris" title="avatar-gris"/>
                 </li>
                 <br />
                 <li rel="claro-canal" class="avatar-item">
-                  <img _id="3" src="./images/avatar/avatar-blue3.svg" />
+                  <img _id="3" src="./images/avatar/avatar-blue3.svg" alt="avatar-azul" title="avatar-azul" />
                 </li>
               </div>
               <div class="col-md text-center no-gap">
                 <li class="avatar-item">
-                  <img _id="4" src="./images/avatar/avatar-yellow.svg" />
+                  <img _id="4" src="./images/avatar/avatar-yellow.svg" alt="avatar-amarillo" title="avatar-amarillo"/>
                 </li>
                 <br />
                 <li class="avatar-item">
-                  <img _id="5" src="./images/avatar/avatar-blue2.svg" />
+                  <img _id="5" src="./images/avatar/avatar-blue2.svg"alt="avatar-azul-marino" title="avatar-azul-marino" />
                 </li>
                 <br />
                 <li class="avatar-item">
-                  <img _id="6" src="./images/avatar/avatar-gray2.svg" />
+                  <img _id="6" src="./images/avatar/avatar-gray2.svg" alt="avatar-gris-tenue" title="avatar-gris-tenue"/>
                 </li>
               </div>
               <div class=" col-md text-center no-gap">
                 <li class="avatar-item">
-                  <img _id="7" src="./images/avatar/avatar-purple.svg" />
+                  <img _id="7" src="./images/avatar/avatar-purple.svg" alt="avatar-morado" title="avatar-morado"/>
                 </li>
                 <br />
                 <li class="avatar-item">
-                  <img _id="8" src="./images/avatar/avatar-red.svg" />
+                  <img _id="8" src="./images/avatar/avatar-red.svg" alt="avatar-rojo" title="avatar-rojo"/>
                 </li>
                 <br />
                 <li class="avatar-item">
-                  <img _id="9" src="./images/avatar/avatar-black.svg" />
+                  <img _id="9" src="./images/avatar/avatar-black.svg" alt="avatar-negro" title="avatar-negro" />
                 </li>
               </div>
             </ul>
@@ -119,7 +119,7 @@ if($_SESSION["country"] != 1){
 
 
         <div class="modal-body txtcontenido">
-          <img src="./images/datos-adicionales/success.svg" />
+          <img src="./images/datos-adicionales/success.svg" alt="cambio-exitoso" />
           <span class="mensaje">Nuevo avatar guardado exitosamente</span>
         </div>
         <div class="modal-footer" style="border-top:none !important; justify-content: center;">

@@ -23,14 +23,14 @@
                 <div class="social-item">
                     <a href="https://www.facebook.com/concertchannel/" target="_blank"
                         id="facebook_concert_channel_url">
-                        <img class="social-icon" src="./images/redes/facebook-icon-green.svg" alt=""
-                            id="facebook_concert_channel_icon">
+                        <img class="social-icon" src="./images/redes/facebook-icon-green.svg" alt="icono-facebook"
+                            id="facebook_concert_channel_icon"/>
                     </a>
                 </div>
                 <div class="social-item">
                     <a href="https://twitter.com/Concert_Channel" target="_blank" id="twitter_concert_channel_url">
-                        <img class="social-icon" src="./images/redes/twitter-icon-green.svg" alt=""
-                            id="twitter_concert_channel_icon">
+                        <img class="social-icon" src="./images/redes/twitter-icon-green.svg" alt="icono-twitter"
+                            id="twitter_concert_channel_icon"/>
                     </a>
                 </div>
             </div>

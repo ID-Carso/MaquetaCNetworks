@@ -69,7 +69,7 @@ function validateNewPassword(inputPassword, inputPasswordConfirm) {
     warningPasswordConfirm
       .addClass("invalid-email")
       .text("Las contraseñas deben de coincidir");
-    console.log("Sigo aquí");
+    
 
     return false;
   } else {
@@ -111,16 +111,7 @@ function validateUser(inputUser, messageError) {
   }
 }
 
-/*$.ajax({
-  type: "POST",
-  data: user,
-  dataType: "JSON",
 
-  url: "../../adapters/user.php",
-  success: function(result) {
-    console.log(result);
-  }
-});*/
 
 function validateToken(token) {
   console.log(token);

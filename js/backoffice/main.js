@@ -409,9 +409,9 @@ $(document).ready(function () {
       });
 
       //Insertamos todos los programas
-      claroCotentProgramacionGeneralEdit.html(programCanalClaroEdit);
+     // claroCotentProgramacionGeneralEdit.html(programCanalClaroEdit);
       $(".concert-content-edit").html(programConcertChannelEdit);
-      $(".cinema-content-edit").html(programClaroCinemaEdit);
+//$(".cinema-content-edit").html(programClaroCinemaEdit);
       sliderCanalClarLandingedi.html(programLandingCanalClaro);
       sliderCanalClarLandingPrev.html(programLandingCanalClaro);
       sliderConcertChannelLanding.html(programLandingConcertChannel);

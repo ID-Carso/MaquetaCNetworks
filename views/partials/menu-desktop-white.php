@@ -2,7 +2,7 @@
     <div class="nav-content">
         <div class="claro-logo">
 
-            <a href="home.php"><img class="logo" src="./images/logos/claro-networks-white.svg" alt="" /></a>
+            <a href="home.php"><img class="logo" src="./images/logos/claro-networks-white.svg" alt="logo-claro-networks" /></a>
         </div>
 
         <div class="user-options">

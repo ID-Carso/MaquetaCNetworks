@@ -22,30 +22,18 @@
                         <span class="dropdown-p">Canal Claro</span>
                     </div>
                 </a>
-                <!--<div class="dropdown-content">
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-            </div>-->
+               
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p active-sidebar-item">Concert
                         Channel</span>
                 </div>
-                <!--<div class="dropdown-content">
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-            </div>-->
+               
                 <a class="sidebar-link" href="claro-cinema.php">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Claro Cinema</span>
                     </div>
                 </a>
-                <!--<div class="dropdown-content">
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-            </div>-->
+              
                 <a class="sidebar-link" href="https://nuestravision.tv" target="_blank">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Nuestra
@@ -58,11 +46,7 @@
                             Sports</span>
                     </div>
                 </a>
-                <!--<a class="sidebar-link" href="programacion.php">
-                    <div class="sidebar-item sidebar-border-bottom">
-                        <span class="dropdown-p">Programación</span>
-                    </div>
-                </a>-->
+             
                 <!--prueba sidebar-->
             </div>
             <button class="invisible-button"></button>
@@ -91,8 +75,8 @@
         <section class="today-concert-channel">
             <div class="row no-gutters landing-header">
                 <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-                    <img src="./images/home/concert-home-img.svg" alt="" class="lading-header-image-concert"
-                        id="icon_concert_channel">
+                    <img src="./images/home/concert-home-img.svg" alt="logo-concert-channel" class="lading-header-image-concert"
+                        id="icon_concert_channel"/>
                 </div>
                 <div class="col-12 col-md-5 col-lg-5 col-xl-5">
                     <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
@@ -144,44 +128,7 @@
             </div>
 
         </section>
-        <?php
-       // include 'advertising-section.php'
-        ?>
-       <!-- <div class="">
-            <div class="row no-gutters">
-                <div class="col-10 mx-auto">
-                    <h1 class="footer-title" id="redes_concert_channel_title">¡síguenos!</h1>
-                </div>
-            </div>
-            <div class="social-media">
-                <div class="d-flex align-items-center justify-content-center">
-                    <div class="social-item">
-                        <a href="https://www.facebook.com/concertchannel/" target="_blank"
-                            id="facebook_concert_channel_url">
-                            <img class="social-icon" src="./images/redes/facebook-icon-green.svg" alt=""
-                                id="facebook_concert_channel_icon">
-                        </a>
-                    </div>
-                    <div class="social-item">
-                        <a href="https://twitter.com/Concert_Channel" target="_blank" id="twitter_concert_channel_url">
-                            <img class="social-icon" src="./images/redes/twitter-icon-green.svg" alt=""
-                                id="twitter_concert_channel_icon">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="cconcert-list-links-footer">
-            <?php
-          //  include './views/partials/list-links-footer.php';
-            ?>
-        </div>
-        <footer>
-            <?php
-          //  include 'footer.php'
-            ?>
-        </footer>-->
-
+       
     </div>
     <?php
     include './views/partials/modal-favorites.php'

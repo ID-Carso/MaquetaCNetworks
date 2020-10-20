@@ -75,17 +75,17 @@
                 </video>
             </div>
             <div class="header">
-                <img src="./images/home/american-horror.jpeg" class="background-home rellax" data-rellax="10">
+                <img src="./images/home/american-horror.jpeg" class="background-home rellax" data-rellax="10" alt="imagen-header"/>
                 <nav class="menu-tablet">
                     <div class="nav-content">
                         <div class="claro-logo">
-                            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
+                            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="imagen-header-tablet" />
 
-                            <img class="logo" src="./images/home/claro-logo.svg" alt="" />
+                            <img class="logo" src="./images/home/claro-logo.svg" alt="logo-claro-networks" />
                         </div>
 
                         <div class="login">
-                            <a href="index.php" class="login-item"><img src="images/paises/gmt-icon.svg" alt="" width="32px"></a>
+                            <a href="index.php" class="login-item"><img src="images/paises/gmt-icon.svg" alt="banderas-paises-por-region" width="32px"/></a>
                         </div>
                     </div>
                 </nav>
@@ -110,17 +110,17 @@
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
                             <li rel="claro-canal" class="active-navItem nav-li mr-3 p-3">
-                                <img class="claro-nav-image" src="" alt="" />
+                                <img class="claro-nav-image" src="" alt="logo-claro-canal" title="programacion-claro-canal" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
                             <li rel="concert-channel" class="nav-li mr-3 p-3 ml-3 ">
-                                <img class="nav-image concert-nav-image" src="" alt="" />
+                                <img class="nav-image concert-nav-image" src="" alt="logo-concert-channel" title="programacion-concert-channel"/>
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
                             <li rel="claro-cinema" class="nav-li mr-3 p-3">
-                                <img class="nav-image cinema-nav-image" src="" alt="" />
+                                <img class="nav-image cinema-nav-image" src="" alt="logo-claro-cinema" title="programacion-claro-cinema"/>
                             </li>
                         </div>
 
@@ -159,7 +159,7 @@
             <div class="claro-canal-mobile">
                 <div class="m-home-titles text-center">
                     <a href="" class="home-title-link">
-                        <img src="" class="claro-image-header">
+                        <img src="" class="claro-image-header" alt="logo-canal-claro"/>
                     </a>
                     <h2 class="a-subtitle a-claro-home-subtitle">
                         <!--LO MEJOR EN SERIES Y <br><span>PELÍCULAS INTERNACIONALES</span>-->
@@ -179,7 +179,7 @@
                 <div class="d-flex justify-content-between align-items-center home-section-header claro-section-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
-                            <img src="./images/home/tv-1.svg" class="claro-image-header">
+                            <img src="./images/home/tv-1.svg" class="claro-image-header" alt="logo-canal-claro"/>
                         </a>
                         <h2 class="a-subtitle a-claro-home-subtitle">
                             <!--LO MEJOR EN SERIES Y <span class="a-claro-channel-subtitle-bold">PELÍCULAS
@@ -194,16 +194,7 @@
                 <div class="canal-videos-container">
                     <div class="section-slider claro-slider-home">
                     </div>
-                    <!--<div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
-                        <div>
-                            <img class="concert-footer-img" src="./images/home/tv-1.svg" alt="">
-                        </div>
-                        <div>
-                            <p class="horario-text text-dark">
-                                Horario sujetos a cambios
-                            </p>
-                        </div>
-                    </div>-->
+                   
                 </div>
                 <div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
                     <div>
@@ -222,7 +213,7 @@
                 <div class="d-flex justify-content-between align-items-center home-section-header claro-section-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
-                            <img src="./images/home/tv-1.svg" class="claro-image-header">
+                            <img src="./images/home/tv-1.svg" class="claro-image-header" alt="logo-canal-claro"/>
                         </a>
                         <h2 class="a-subtitle a-claro-home-subtitle">
 
@@ -254,7 +245,7 @@
             <div class="concert-channel-mobile">
                 <div class="m-home-titles text-center">
                     <a href="" class="home-title-link">
-                        <img src="./images/home/concert-home-img.svg" class="concerthome-image-header">
+                        <img src="./images/home/concert-home-img.svg" class="concerthome-image-header" alt="logo-concert-channel" />
                     </a>
                     <h2 class="a-concert-channel-subtitle a-concert-home-subtitle">
                         <!--CONCIERTOS, ENTREVISTAS<br><span>Y MUCHO MÁS</span>-->
@@ -274,7 +265,7 @@
                 <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
-                            <img src="./images/home/concert-home-img.svg" class="concerthome-image-header">
+                            <img src="./images/home/concert-home-img.svg" class="concerthome-image-header" alt="logo-concert-channel">
                         </a>
                         <p class="a-concert-subtitle concert-first-subtitle a-concert-home-subtitle"></p>
                         <!--<p class="a-concert-subtitle concert-second-subtitle">Entrevistas y mucho más</p>-->
@@ -306,7 +297,7 @@
                 <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
-                            <img class="concerthome-image-header" src="./images/home/concert-home-img.svg" alt="">
+                            <img class="concerthome-image-header" src="./images/home/concert-home-img.svg" alt="logo-concert-channel"/>
                         </a>
                         <h2 class="text-white a-subtitle a-concert-home-subtitle"></h2>
                     </div>
@@ -338,7 +329,7 @@
             <div class="cinema-claro-mobile">
                 <div class="m-home-titles text-center">
                     <a href="" class="home-title-link">
-                        <img src="./images/home/tv-3.svg" class="cinemahome-image-header">
+                        <img src="./images/home/tv-3.svg" class="cinemahome-image-header" alt="logo-claro-cinema"/>
                     </a>
 
                     <h2 class="a-claro-cinema-subtitle  a-cinema-home-subtitle">
@@ -359,7 +350,7 @@
                 <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
-                            <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
+                            <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="logo-claro-cinema"/>
                         </a>
                         <h2 class="a-subtitle a-cinema-home-subtitle">
                             LOS ÍDOLOS QUE MÉXICO<span>LE DIO AL CINE</span>
@@ -371,24 +362,14 @@
                 </div>
                 <div class="d-flex no-gutters">
                     <div class="col-md-5 col-lg-4 d-flex align-items-center">
-                        <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
+                        <img src="./images/home/claro-cinema-background.png" alt="fondo-claro-cinema" class="cinema-image"/>
                     </div>
                     <div class="col-md-7 col-lg-8">
                         <div class="cinema-home-slider">
                         </div>
                     </div>
                 </div>
-                <!--<div class="row no-gutters">
-                    <div class="col-5">
-                        <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
-                    </div>
-                    <div class="col-7">
-                        <div class="home-cinema-videos-container">
-                            <div class="cinema-home-slider">
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
+    
                 <div class="d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
 
@@ -407,7 +388,7 @@
                 <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
-                            <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="">
+                            <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="logo-claro-cinema"/>
                         </a>
                         <h2 class="a-subtitle a-cinema-home-subtitle">
                             <!--LOS ÍDOLOS QUE MÉXICO<span>LE DIO AL CINE</span>-->
@@ -419,7 +400,7 @@
                 </div>
                 <div class="row no-gutters">
                     <div class="col-md-4 col-xl-3">
-                        <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
+                        <img src="./images/home/claro-cinema-background.png" alt="fondo-claro-cinema" class="cinema-image"/>
                     </div>
                     <div class="col-md-8 col-xl-9">
                         <div class="cinema-home-slider">
@@ -427,13 +408,6 @@
                     </div>
                 </div>
 
-                <!--<div class="row no-gutters">
-                    <div class="col-md-4 col-xl-6">
-                        <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
-                    </div>
-                    <div class="col-md-8 col-xl-6 cinema-home-videos-container">
-                    </div>
-                </div>-->
                 <div class="pb-xl-0 d-flex align-items-center justify-content-between section-home-footer cinema-section-footer">
                     <div>
 
