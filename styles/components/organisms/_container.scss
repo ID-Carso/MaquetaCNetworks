@@ -394,6 +394,10 @@
   background-color: #0f0e0e;
 }
 
+.footer-image-container {
+  height: 35px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .region-country-container {
     height: 160px;
@@ -401,6 +405,10 @@
 
   .times-container {
     height: 863px;
+  }
+
+  .footer-image-container {
+    height: 55px;
   }
 }
 
@@ -412,6 +420,10 @@
   .times-container {
     height: 518px;
   }
+
+  .footer-image-container {
+    height: 55px;
+  }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
@@ -422,6 +434,10 @@
   .times-container {
     height: 518px;
   }
+
+  .footer-image-container {
+    height: 55px;
+  }
 }
 
 @media only screen and (min-width: 1900px) {
@@ -431,5 +447,9 @@
 
   .times-container {
     height: 518px;
+  }
+
+  .footer-image-container {
+    height: 55px;
   }
 }

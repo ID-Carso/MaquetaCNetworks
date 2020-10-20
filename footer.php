@@ -25,16 +25,16 @@
                  <div class="footer-companies col-12">
                      <div class="d-flex padding-bottom-footer">
                          <div class="col">
-                             <a href="https://fast-mag.com/" target="_blank" id="menu_2_opcion_1_url_mob"><img id="menu_2_opcion_1_icon_mob" class="d-block m-auto footer-img" src="./images/home/fast-icon.svg" alt="icono-fast"/></a>
+                             <a href="https://fast-mag.com/" target="_blank" id="menu_2_opcion_1_url_mob"><img id="menu_2_opcion_1_icon_mob" class="d-block m-auto small-footer-img" src="./images/home/fast-icon.svg" alt="icono-fast"/></a>
                          </div>
                          <div class="col">
-                             <a href="https://www.claromusica.com/" target="_blank" id="menu_2_opcion_2_url_mob"><img id="menu_2_opcion_2_icon_mob" class="d-block m-auto footer-img" src="./images/home/claro-musica-icon.svg" alt="icono-claro-musica"/></a>
+                             <a href="https://www.claromusica.com/" target="_blank" id="menu_2_opcion_2_url_mob"><img id="menu_2_opcion_2_icon_mob" class="d-block m-auto small-footer-img" src="./images/home/claro-musica-icon.svg" alt="icono-claro-musica"/></a>
                          </div>
                          <div class="col">
-                             <a href="https://www.clarovideo.com/" target="_blank" id="menu_2_opcion_3_url_mob"><img id="menu_2_opcion_3_icon_mob" class="d-block m-auto footer-img" src="./images/home/claro-video-icon.svg" alt="icono-claro-video"/></a>
+                             <a href="https://www.clarovideo.com/" target="_blank" id="menu_2_opcion_3_url_mob"><img id="menu_2_opcion_3_icon_mob" class="d-block m-auto small-footer-img" src="./images/home/claro-video-icon.svg" alt="icono-claro-video"/></a>
                          </div>
                          <div class="col">
-                             <a href="https://www.claromusica.com/" target="_blank" id="menu_2_opcion_4_url_mob"><img id="menu_2_opcion_4_icon_mob" class="d-block m-auto footer-img" src="./images/home/claro-musica-icon.svg" alt="icono-claro-musica"/></a>
+                             <a href="https://www.claromusica.com/" target="_blank" id="menu_2_opcion_4_url_mob"><img id="menu_2_opcion_4_icon_mob" class="d-block m-auto small-footer-img" src="./images/home/claro-musica-icon.svg" alt="icono-claro-musica"/></a>
                          </div>
                      </div>
                      <div class="d-flex padding-bottom-footer">
@@ -88,14 +88,14 @@
                              <a href="https://www.sanborns.com.mx/" target="_blank" id="menu_2_opcion_1_url"><img id="menu_2_opcion_1_icon" class="d-block m-auto small-footer-img" src="./images/home/sanborns-icon.svg" alt="icono-samborns" /></a>
                          </div>
                          <div class="col footer-border-right">
-                             <a href="https://www.claromusica.com/" target="_blank" id="menu_2_opcion_2_url"><img id="menu_2_opcion_2_icon" class="d-block m-auto footer-img" src="./images/home/claro-musica-icon.svg" alt="icono-claro-musica" /></a>
+                             <a href="https://www.claromusica.com/" target="_blank" id="menu_2_opcion_2_url"><img id="menu_2_opcion_2_icon" class="d-block m-auto small-footer-img" src="./images/home/claro-musica-icon.svg" alt="icono-claro-musica" /></a>
                          </div>
                          <div class="col footer-border-right">
-                             <a href="https://www.clarovideo.com/" target="_blank" id="menu_2_opcion_3_url"><img id="menu_2_opcion_3_icon" img class="d-block m-auto footer-img" src="./images/home/claro-video-icon.svg" alt="icono-claro-video" /></a>
+                             <a href="https://www.clarovideo.com/" target="_blank" id="menu_2_opcion_3_url"><img id="menu_2_opcion_3_icon" img class="d-block m-auto small-footer-img" src="./images/home/claro-video-icon.svg" alt="icono-claro-video" /></a>
                          </div>
 
                          <div class="col footer-border-right">
-                             <a href="https://fast-mag.com/" target="_blank" id="menu_2_opcion_4_url"><img id="menu_2_opcion_4_icon" class="d-block m-auto footer-img" src="./images/home/fast-icon.svg" alt="icono-fast" /></a>
+                             <a href="https://fast-mag.com/" target="_blank" id="menu_2_opcion_4_url"><img id="menu_2_opcion_4_icon" class="d-block m-auto small-footer-img" src="./images/home/fast-icon.svg" alt="icono-fast" /></a>
                          </div>
                          <div class="col footer-border-right">
                              <a href="http://www.museosoumaya.org/" target="_blank" id="menu_2_opcion_5_url"><img id="menu_2_opcion_5_icon" class="d-block m-auto small-footer-img" src="./images/home/soumaya-icon.svg" alt="icono-soumaya" /></a>
