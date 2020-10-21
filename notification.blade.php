@@ -113,10 +113,10 @@
     <div class="correo-container">
 
         <div class="p-5">
-            <img src="http://www.claronetworks.openofficedospuntocero.info/API_images/group-3.png" class="form-image-blue">
+            <img src="http://www.claronetworks.openofficedospuntocero.info/API_images/group-3.png" class="form-image-blue" alt="vector-rosa"/>
             
             <div class="logo-container">
-                <img src="http://www.claronetworks.openofficedospuntocero.info/API_images/claro-logo.png" class="logo-mail">
+                <img src="http://www.claronetworks.openofficedospuntocero.info/API_images/claro-logo.png" class="logo-mail" alt="logo-claro-networks"/>
             </div>
             <div class="pb-4">
             <p class="a-correo-title text-blue"><span class="a-text-black">¡Hola, </span> {{$info['name']}}!</p>

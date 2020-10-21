@@ -80,14 +80,14 @@ if($_SESSION["country"] != 1){
             <nav class="menu-perfil">
                 <div class="nav-content">
                     <div class="claro-logo">
-                        <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="" />
+                        <img class="menu-responsive" src="./images/home/responsive-menu.svg" alt="menu-hamburguesa" />
 
-                        <img class="logo" src="./images/alertas/claro-networks.svg" alt="" />
+                        <img class="logo" src="./images/alertas/claro-networks.svg" alt="logo-claro-networks" />
                     </div>
 
                     <div class="login">
-                        <a href="home.php" class="login-item"><img src="./images/alertas/btn-home.svg" alt="" /></a>
-                        <a href="index.php" class="login-item"><img class="login-country" src="" alt="" /></a>
+                        <a href="home.php" class="login-item"><img src="./images/alertas/btn-home.svg" alt="icono-alerta" /></a>
+                        <a href="index.php" class="login-item"><img class="login-country" src="" alt="bandera-pais-por-region" /></a>
                     </div>
                 </div>
             </nav>
@@ -96,15 +96,15 @@ if($_SESSION["country"] != 1){
         <nav class="menu-tablet">
             <div class="nav-content">
                 <div class="claro-logo">
-                    <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
+                    <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="menu-hamburguesa" />
 
                     <a href="home.php">
-                        <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
+                        <img class="logo" src="./images/home/claro-networks-black.svg" alt="logo-claro-networks" />
                     </a>
                 </div>
 
                 <div class="login">
-                    <a href="index.php" class="login-item"><img class="login-country" alt=""
+                    <a href="index.php" class="login-item"><img class="login-country" alt="logo-claro-networks"
                             src="images/paises/ecuador.svg"></a>
                 </div>
             </div>
@@ -117,13 +117,13 @@ if($_SESSION["country"] != 1){
 
     <div class="perfil-container">
         <div class="col-sm-12 no-gutters col-md-6 mx-auto no-gutters col-lg-4 col-xl-3 shadow1 fondolog">
-            <img src="images/registro/group-10.svg" class="ubicacion5" />
-            <img src="images/config/puntos.svg" class="ubicacionpuntos">
+            <img src="images/registro/group-10.svg" class="ubicacion5" alt="vector-rosa" />
+            <img src="images/config/puntos.svg" class="ubicacionpuntos" alt="vector-rosa"/>
 
             <div class="row ma-no centro">
                 <div class="col-sm-12 no-gap">
                     <div class="centro">
-                        <img class="avatar-usuario" src="images/avatar/avatar-blue.svg">
+                        <img class="avatar-usuario" src="images/avatar/avatar-blue.svg" alt="icono-avatar-azul"/>
 
                         <p class="texto-usuario-miperfil"> Eduardo </p>
                     </div>
@@ -135,7 +135,7 @@ if($_SESSION["country"] != 1){
                         <div class="centro ">
                             <a href="mi-lista.php"> <label class="border-config">
                                     <p class="texto-config"> Mi lista </p>
-                                    <img class="flechalink-icon" src="images/config/flecha.svg" />
+                                    <img class="flechalink-icon" src="images/config/flecha.svg" alt="icono-flecha" />
                                 </label>
                             </a>
                         </div>
@@ -146,7 +146,7 @@ if($_SESSION["country"] != 1){
                         <div class="centro ">
                             <a href="configuracion.php"> <label class="border-config">
                                     <p class="texto-config"> Configuración </p>
-                                    <img class="flechalink-icon" src="images/config/flecha.svg" />
+                                    <img class="flechalink-icon" src="images/config/flecha.svg" alt="icono-flecha" />
                                 </label>
                             </a>
                         </div>

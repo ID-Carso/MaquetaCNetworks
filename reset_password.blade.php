@@ -110,9 +110,9 @@
     <div class="correo-container position-relative">
 
         <div class="p-5">
-            <img src="http://www.claronetworks.openofficedospuntocero.info/API_images/group-3.png" class="form-image-blue position-absolute">
+            <img src="http://www.claronetworks.openofficedospuntocero.info/API_images/group-3.png" class="form-image-blue position-absolute" alt="vector-azul"/>
             <div class="text-center mb-5">
-                <img src="http://www.claronetworks.openofficedospuntocero.info/API_images/claro-logo.png" class="logo-mail">
+                <img src="http://www.claronetworks.openofficedospuntocero.info/API_images/claro-logo.png" class="logo-mail" alt="logo-claro-networks"/>
             </div>
             <div class="pb-4">
                 <p class="a-correo-title text-blue"><span class="a-text-black ">¡Hola, </span>{{$info['name']}}!</p>
@@ -133,7 +133,7 @@
                 borrar este mensaje y seguir disfrutando de tus canales favoritos</p>
             <p class="a-text-black-regular">Un saludo,</p>
             <p class="a-text-black-regular">El equipo de Claro Networks</p>
-            <img src="http://www.claronetworks.openofficedospuntocero.info/API_images/group-10.png" class="ubicacion5">
+            <img src="http://www.claronetworks.openofficedospuntocero.info/API_images/group-10.png" class="ubicacion5" alt="vector-rosa"/>
 
         </div>
 

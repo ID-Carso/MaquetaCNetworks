@@ -96,15 +96,15 @@
       <nav class="menu-tablet">
         <div class="nav-content">
           <div class="claro-logo">
-            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
+            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="menu-hamburguesa-tablet" />
 
             <a class="home.php">
-              <img class="logo" src="./images/home/claro-networks-black.svg" alt="" />
+              <img class="logo" src="./images/home/claro-networks-black.svg" alt="logo-claro-networks" />
             </a>
           </div>
 
           <div class="login">
-            <a href="index.php" class="login-item"><img class="login-country" alt="" src="images/paises/ecuador.svg"></a>
+            <a href="index.php" class="login-item"><img class="login-country" alt="bandera-paises-por-region" src="images/paises/ecuador.svg"/></a>
           </div>
         </div>
       </nav>
@@ -112,10 +112,10 @@
         <div class="nav-content">
           <div class="claro-logo">
 
-            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
+            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="menu-hamburguesa-tablet" />
 
             <a href="home.php">
-              <img class="logo" src="./images/home/claro-logo.svg" alt="" />
+              <img class="logo" src="./images/home/claro-logo.svg" alt="logo-claro-networks" />
             </a>
           </div>
 

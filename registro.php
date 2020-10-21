@@ -24,14 +24,14 @@ if($_SESSION["country"] != 1){
                 <div class="login-form no-gutters">
                         <div
                                 class="col-sm-12 no-gutters col-md-6 no-gutters col-lg-4 col-xl-3 shadow1 fondolog formContainer">
-                                <img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back">
-                                <img src="images/registro/group-10.svg" class="ubicacion6">
+                                <img src="./images/config/arrow-back-icon.svg" alt="flecha-regresar" class="arrow-back"/>
+                                <img src="images/registro/group-10.svg" class="ubicacion6" alt="vector-rosa"/>
                                 <div class="row ma-no no-gutters">
                                         <div class="col-sm-12 col-md-12 col-lg-12">
-                                                <img src="images/registro/group-3.svg" class="form-image-blue">
+                                                <img src="images/registro/group-3.svg" class="form-image-blue" alt="vector-azul"/>
                                                 <a href="home.php"> <img src="./images/home/claro-logo.svg"
-                                                                class="ubicacion1" /></a>
-                                                <img src="images/registro/group-37.svg" class="ubicacion">
+                                                                class="ubicacion1" alt="logo-claro-networks" /></a>
+                                                <img src="images/registro/group-37.svg" class="ubicacion" alt="vector-rosa">
                                         </div>
                                 </div>
                                 <div class="col-9 col-sm-10 col-md-8 col-lg-10 col-xl-9 mx-auto">
@@ -64,7 +64,7 @@ if($_SESSION["country"] != 1){
                                                                         <p class="correo-valido" id="error_email">
                                                                                 Correo válido
                                                                                 <img src="images/registro/alerta.svg"
-                                                                                        class="error" />
+                                                                                        class="error" alt="icono-alerta"/>
                                                                         </p>
 
                                                                 </div>
@@ -81,13 +81,13 @@ if($_SESSION["country"] != 1){
                                                                                         name="signup-password"
                                                                                         placeholder="Contraseña">
                                                                                 <img src="images/registro/eye-none.svg"
-                                                                                        class="ubicacion4 icon-eye" />
+                                                                                        class="ubicacion4 icon-eye" alt="icono-ver-contraseña" />
                                                                         </div>
 
 
                                                                         <p class="caracteres-min">8 caractéres mínimo
                                                                                 <img src="images/registro/listo.svg"
-                                                                                        class="listo">
+                                                                                        class="listo" alt="icono-listo"/>
                                                                         </p>
 
                                                                 </div>
@@ -95,7 +95,7 @@ if($_SESSION["country"] != 1){
                                                 </div>
 
                                                 <p class="nodatos"> Aún no has ingresado datos <img
-                                                                src="images/registro/alerta.svg">
+                                                                src="images/registro/alerta.svg" alt="icono-alerta"/>
                                                 </p>
                                                 <p class="data-incorrect"></p>
 

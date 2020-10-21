@@ -32,32 +32,20 @@ if ($_SESSION["country"] != 1) {
                         <span class="dropdown-p">Canal Claro</span>
                     </div>
                 </a>
-                <!--<div class="dropdown-content">
-                      <p class="dropdown-p">ebñrkjg</p>
-                      <p class="dropdown-p">ebñrkjg</p>
-                      <p class="dropdown-p">ebñrkjg</p>
-                    </div>-->
+               
                 <a class="sidebar-link" href="concert-channel.php">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Concert
                             Channel</span>
                     </div>
                 </a>
-                <!--<div class="dropdown-content">
-                      <p class="dropdown-p">ebñrkjg</p>
-                      <p class="dropdown-p">ebñrkjg</p>
-                      <p class="dropdown-p">ebñrkjg</p>
-                    </div>-->
+              
                 <a class="sidebar-link" href="claro-cinema.php">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Claro Cinema</span>
                     </div>
                 </a>
-                <!--<div class="dropdown-content">
-                      <p class="dropdown-p">ebñrkjg</p>
-                      <p class="dropdown-p">ebñrkjg</p>
-                      <p class="dropdown-p">ebñrkjg</p>
-                    </div>-->
+              
                 <a target="_blank" class="sidebar-link" href="https://nuestravision.tv">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Nuestra
@@ -92,10 +80,8 @@ if ($_SESSION["country"] != 1) {
             ?>
             <div class="header-slider slider-sinopsis">
                 <div class="header-slide">
-                    <!--<img src="./images/concert-channel/header-image.jpeg" alt="">-->
                 </div>
                 <div class="header-slide">
-                    <!--<img src="./images/header/glastonbury.jpeg" alt="">-->
                 </div>
                 <div class="header-slide"></div>
             </div>
@@ -109,7 +95,7 @@ if ($_SESSION["country"] != 1) {
 
                     <div class="synopsis-body-container no-gutters">
                         <div class="col-md-10 col-lg-6 mx-auto mx-sm-auto mx-md-auto mr-lg-3 mr-xl-3 synopsis-main-image">
-                            <img src="" alt="" class="w-100 synopsis-chapter-image">
+                            <img src="" alt="imagen-principal-sinopsis" class="w-100 synopsis-chapter-image"/>
                         </div>
                         <div class="col-md-10 col-lg-6 mx-sm-auto mx-md-auto synopsis-description-container d-flex flex-column justify-content-between">
                             <div>
@@ -122,7 +108,7 @@ if ($_SESSION["country"] != 1) {
                                 <div class="synopsis-buttons-tablet-container justify-content-end col-md-12 col-xl-12">
                                     <button class="ml-auto d-flex align-items-center synopsis-button synopsis-add add-favorites">
                                         <p class="synopsis-schedule-text mb-0">añadir</p>
-                                        <img src="" alt="" class="synopsis-heart">
+                                        <img src="" alt="agregar-a-favoritos" class="synopsis-heart"/>
                                     </button>
                                 </div>
 
@@ -136,9 +122,9 @@ if ($_SESSION["country"] != 1) {
                     <div class="no-gutters">
                         <div class="col-md-10 col-lg-12 mx-auto">
                             <div class="synopsis-images-container no-gutters">
-                                <img src="" alt="" class="col-md-6 col-lg-4 synopsis-image synopsis-chapter-image-1">
-                                <img src="" alt="" class="col-md-6 col-lg-4 synopsis-image synopsis-chapter-image-2">
-                                <img src="" alt="" class="col-lg-4 synopsis-image synopsis-chapter-image-3">
+                                <img src="" alt="imagen-1-sinopsis" class="col-md-6 col-lg-4 synopsis-image synopsis-chapter-image-1"/>
+                                <img src="" alt="imagen-2-sinopsis" class="col-md-6 col-lg-4 synopsis-image synopsis-chapter-image-2"/>
+                                <img src="" alt="imagen-3-sinopsis" class="col-lg-4 synopsis-image synopsis-chapter-image-3"/>
                             </div>
                             <div class="d-flex justify-content-between mt-4 mb-5">
                                 <div class="d-flex align-items-center">

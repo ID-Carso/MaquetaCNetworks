@@ -11,14 +11,14 @@
   <div class="login-container">
     <div class="login-form no-gutters">
       <div class="col-sm-12 no-gutters col-md-6  no-gutters col-lg-4  col-xl-3 shadow1 fondolog formContainer">
-        <img src="./images/config/arrow-back-icon.svg" alt="" class="arrow-back">
-        <img src="images/registro/group-10.svg" class="ubicacion5" />
+        <img src="./images/config/arrow-back-icon.svg" alt="flecha-para-regresar" class="arrow-back">
+        <img src="images/registro/group-10.svg" class="ubicacion5" alt="vector-rosa" />
         <div class="row ma-no no-gutters">
           <div class="col-sm-12 col-md-12 col-lg-12 no-gutters ">
-            <img src="images/registro/group-3.svg" class="form-image-blue" />
+            <img src="images/registro/group-3.svg" class="form-image-blue" alt="vector-azul" />
             <a href="home.php">
-              <img src="./images/home/claro-logo.svg" class="ubicacion1" /></a>
-            <img src="images/registro/group-37.svg" class="ubicacion" />
+              <img src="./images/home/claro-logo.svg" class="ubicacion1" alt="logo-claro-networks" /></a>
+            <img src="images/registro/group-37.svg" class="ubicacion" alt="vector-rosa" />
           </div>
         </div>
         <br />
@@ -29,10 +29,10 @@
                 <div class="tamaño2">
                   <input class="insert-data input-email" type="text" placeholder="Correo electrónico" id="login-email" />
 
-                  <img src="images/registro/group-12.svg" class="ubicacion3" />
+                  <img src="images/registro/group-12.svg" class="ubicacion3" alt="vector-rosa" />
                   <p class="correo-valido" id="error_email">
                     Correo válido
-                    <img src="images/registro/alerta.svg" class="error" />
+                    <img src="images/registro/alerta.svg" class="error" alt="icono-de-alerta" />
                   </p>
                 </div>
               </div>
@@ -43,11 +43,11 @@
                 <div class="tamaño2 centro">
                   <div class="position-relative">
                     <input class="insert-data input-password" type="password" id="login-password" name="login-password" placeholder="Contraseña" autocomplete="off" />
-                    <img src="images/registro/eye-none.svg" class="icon-eye" />
+                    <img src="images/registro/eye-none.svg" class="icon-eye" alt="icono-ver-contraseña" />
                   </div>
                   <p class="caracteres-min">
                     8 caractéres mínimo
-                    <img src="images/registro/listo.svg" class="listo" />
+                    <img src="images/registro/listo.svg" class="listo" alt="icono-listo"/>
                   </p>
 
 
@@ -71,7 +71,7 @@
                 </button>
                 <p class="nodatos">
                   Aún no has ingresado datos
-                  <img src="images/registro/alerta.svg" />
+                  <img src="images/registro/alerta.svg" alt="icono-alerta" />
                 </p>
               </div>
             </div>

@@ -2,10 +2,10 @@
   <div class="nav-content">
     <div class="claro-logo">
 
-      <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="" />
+      <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="menu-hamburguesa-tablet" />
 
       <a href="home.php">
-        <img class="logo" src="./images/logos/claro-networks-white.svg" alt="" />
+        <img class="logo" src="./images/logos/claro-networks-white.svg" alt="logo-claro-networks" />
       </a>
     </div>
 
@@ -39,10 +39,6 @@
         <p class="navbar-item">Claro Sports</p>
       </a>
     </div>
-    <!-- <div>
-      <a href="programacion.php" class="navbar-link text-decoration-none">
-        <p class="navbar-item">Programación</p>
-      </a>
-    </div>-->
+   
   </div>
 </nav>

@@ -61,7 +61,7 @@
 
     <div class="terminos-container">
         <div class="col-sm-12 no-gutters col-md-8 no-gutters col-lg-10 col-xl-10 shadow1 fondolog mx-auto">
-            <img src="images/registro/group-10.svg" class="ubicacion5" />
+            <img src="images/registro/group-10.svg" alt="vector-rosa" class="ubicacion5" />
             <br /><br /><br />
             <div class="row ma-no centro">
                 <div class="col-sm-12 no-gap">

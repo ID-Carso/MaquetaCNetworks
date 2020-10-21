@@ -21,32 +21,20 @@
                         <span class="dropdown-p">Canal Claro</span>
                     </div>
                 </a>
-                <!--<div class="dropdown-content">
-                      <p class="dropdown-p">ebñrkjg</p>
-                      <p class="dropdown-p">ebñrkjg</p>
-                      <p class="dropdown-p">ebñrkjg</p>
-                    </div>-->
+              
                 <a class="sidebar-link" href="concert-channel.php">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Concert
                             Channel</span>
                     </div>
                 </a>
-                <!--<div class="dropdown-content">
-                      <p class="dropdown-p">ebñrkjg</p>
-                      <p class="dropdown-p">ebñrkjg</p>
-                      <p class="dropdown-p">ebñrkjg</p>
-                    </div>-->
+               
                 <a class="sidebar-link" href="claro-cinema.php">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Claro Cinema</span>
                     </div>
                 </a>
-                <!--<div class="dropdown-content">
-                      <p class="dropdown-p">ebñrkjg</p>
-                      <p class="dropdown-p">ebñrkjg</p>
-                      <p class="dropdown-p">ebñrkjg</p>
-                    </div>-->
+               
                 <a target="_blank" class="sidebar-link" href="https://nuestravision.tv">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Nuestra
@@ -93,7 +81,7 @@
 
                     <div class="synopsis-body-container no-gutters">
                         <div class="col-md-7 col-lg-6 mx-auto synopsis-main-image">
-                            <img class="image-synopsis-prev pb-3 pl-3 pr-3 w-100" src="" alt="">
+                            <img class="image-synopsis-prev pb-3 pl-3 pr-3 w-100" src="" alt="imagen-principal-sinopsis"/>
                         </div>
                         <div class="col-md-7 col-lg-6 mx-sm-auto mx-md-auto synopsis-description-container">
                             <div>
@@ -105,7 +93,7 @@
                                 <div class="synopsis-buttons-tablet-container justify-content-end col-md-12 col-xl-12">
                                     <button class="ml-auto d-flex align-items-center synopsis-button synopsis-add add-favorites">
                                         <p class="synopsis-schedule-text mb-0">añadir</p>
-                                        <img src="./images/posters/heart-outline.svg" alt="" class="synopsis-heart">
+                                        <img src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos" class="synopsis-heart"/>
                                     </button>
                                 </div>
                             </div>
@@ -114,9 +102,9 @@
                     <div class="no-gutters">
                         <div class="col-md-10 col-lg-12 mx-auto">
                             <div class="synopsis-images-container no-gutters">
-                                <img src="" alt="" class="col-md-6 col-lg-4 synopsis-image synopsis-image-1-prev">
-                                <img src="" alt="" class="col-md-6 col-lg-4 synopsis-image synopsis-image-2-prev">
-                                <img src="" alt="" class="col-lg-4 synopsis-image synopsis-image-3-prev">
+                                <img src="" alt="imagen-1-sinopsis" class="col-md-6 col-lg-4 synopsis-image synopsis-image-1-prev"/>
+                                <img src="" alt="imagen-2-sinopsis" class="col-md-6 col-lg-4 synopsis-image synopsis-image-2-prev"/>
+                                <img src="" alt="imagen-3-sinopsis" class="col-lg-4 synopsis-image synopsis-image-3-prev"/>
                             </div>
                             <div class="">
                                 <div class="synopsis-details-container">
@@ -231,7 +219,7 @@
                                             class=" cursor-pointer add-photo " />
                                             <span class="a-text-bold-warm text-plus mt-3 banner-text pl-4 pr-4 pt-2 pb-2">1920px X 657px</span>
                                             <img src="${image}"
-                                            class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" />
+                                            class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" alt="imagen-sinopsis" />
                                             </label>
                                         </div>
                                         `
@@ -285,19 +273,19 @@
                             switch (numberCountries) {
                                 case 1:
                                     imageCountry += ` 
-                        <img src="${countriesImages[property][index]}" alt="">
+                        <img src="${countriesImages[property][index]}" alt="bandera-paises-por-region"/>
                         `
                                     break;
                                 case 2:
 
                                     imageCountry += ` 
-                        <img src="${countriesImages[property][index]}" alt="">
+                        <img src="${countriesImages[property][index]}" alt="bandera-paises-por-region"/>
                         `
                                     break;
                                 case 3:
 
                                     imageCountry += ` 
-                        <img src="${countriesImages[property][index]}" alt="">
+                        <img src="${countriesImages[property][index]}" alt="bandera-paises-por-region"/>
                         `
 
                                     break;
@@ -305,21 +293,21 @@
                                 case 4:
                                     imageCountry += `
                         <div class="col-6 text-center">
-                            <img src="${countriesImages[property][index]}" alt="">
+                            <img src="${countriesImages[property][index]}" alt="bandera-paises-por-region"/>
                         </div>
                         `
                                     break;
                                 case 5:
                                     imageCountry += `
                         <div class="col-4 text-center">
-                            <img src="${countriesImages[property][index]}" alt="">
+                            <img src="${countriesImages[property][index]}" alt="bandera-paises-por-region"/>
                         </div>
                         `
                                     break;
                                 case 6:
                                     imageCountry += `
                         <div class="col-4 text-center">
-                            <img src="${countriesImages[property][index]}" alt="">
+                            <img src="${countriesImages[property][index]}" alt="bandera-paises-por-region"/>
                         </div>
                         `
                                     break;
@@ -467,7 +455,7 @@
                                             <div class="col-12">
                                             <div class="no-schedule-container">
                                                 <div>
-                                                <img class="no-schedule-image" src="./images/sinopsis/no-synopsis.png" />
+                                                <img class="no-schedule-image" src="./images/sinopsis/no-synopsis.png" alt="imagen-por-default"/>
                                                 <p class="no-schedule-text mt-5 a-text-bold-cool-grey text-center">No hay programación para este día</p>
                                                 </div>
                                             </div>
@@ -646,8 +634,8 @@
                                             centerMode: true,
                                             arrows: true,
                                             centerPadding: "200px",
-                                            prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
-                                            nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                                            prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white" alt="flecha-izquierda"/>',
+                                            nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white" alt="flecha-derecha"/>',
                                             customPaging: function(slider, i) {
                                                 return `
                                             <div class="pagination-items-container">
@@ -777,8 +765,8 @@
                                                     centerMode: true,
                                                     arrows: true,
                                                     centerPadding: "200px",
-                                                    prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
-                                                    nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                                                    prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white" alt="flecha-izquierda"/>',
+                                                    nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white" alt="flecha-derecha"/>',
                                                     customPaging: function(slider, i) {
                                                         return `
                                             <div class="pagination-items-container">
@@ -894,8 +882,8 @@
                                                     centerMode: true,
                                                     arrows: true,
                                                     centerPadding: "200px",
-                                                    prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white"/>',
-                                                    nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white"/>',
+                                                    prevArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-prev arrow-white" alt="flecha-izquierda"/>',
+                                                    nextArrow: '<img src="./images/sinopsis/arrow-white.svg" class="time-slider-next arrow-white" alt="flecha-derecha"/>',
                                                     customPaging: function(slider, i) {
                                                         return `
                                             <div class="pagination-items-container">

@@ -98,7 +98,7 @@ if($_SESSION["country"] != 1){
                     </a>
                 </div>
                 <div class="sidebar-item ">
-                    <img class="tache_button" src="images/mi-lista/cerrar-categorias.svg">
+                    <img class="tache_button" src="images/mi-lista/cerrar-categorias.svg" alt="icono-cerrar">
                 </div>
             </div>
 
@@ -118,10 +118,10 @@ if($_SESSION["country"] != 1){
     </header>
     <div class="alert-user">
     </div>
-    <img src="images/registro/group-3.svg" class="image-list-blue">
+    <img src="images/registro/group-3.svg" class="image-list-blue" alt="vector-azul"/>
     <div class="lista-content">
 
-        <img src="images/registro/group-37.svg" class="image-list-points">
+        <img src="images/registro/group-37.svg" class="image-list-points" alt="vector-azul"/>
         <div
             class="mi-lista-container col-sm-12 no-gutters col-md-12 no-gutters col-lg-12 mx-auto col-xl-9 shadow1 fondolog">
 
@@ -136,7 +136,7 @@ if($_SESSION["country"] != 1){
                 <div class="col-11 mx-auto no-gap border-config d-flex justify-content-between">
                     <div class="centro ">
                         <p class="texto-categorias">CATEGORÍAS <img class="categorias-flecha"
-                                src="images/mi-lista/flecha-categorias.svg" alt=""> </p>
+                                src="images/mi-lista/flecha-categorias.svg" alt="icono-flecha"/> </p>
                     </div>
                     <div>
                         <p class="name-category">todos</p>

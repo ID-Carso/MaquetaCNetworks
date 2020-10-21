@@ -79,17 +79,17 @@
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
                             <li rel="claro-canal-programing" class="navbar-progra-item-container active-navItem nav-li mr-3 p-3">
-                                <img class="claro-nav-image" src="" alt="" id="icon_canal_claro" />
+                                <img class="claro-nav-image" src="" alt="logo-claro-canal" id="icon_canal_claro" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
                             <li rel="concert-channel-programing" class="nav-li  pointer-events-none cursor-none">
-                                <img class="nav-image" src="" alt="" id="icon_concert_channel" />
+                                <img class="nav-image" src="" alt="logo-concert-channel" id="icon_concert_channel" />
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
                             <li rel="claro-cinema-programing" class="nav-li  pointer-events-none cursor-none">
-                                <img class="nav-image" src="" alt="" id="icon_claro_cinema" />
+                                <img class="nav-image" src="" alt="logo-claro-cinema" id="icon_claro_cinema" />
                             </li>
                         </div>
 
