@@ -480,7 +480,7 @@ function getPrograms(date, country) {
                             <p class="schedule-title  a-text-plus a-text-black-brown-two">
                                 ${program.chapter_title}
                             </p>
-                            <div class="schedule-item-body">
+                            <div class="schedule-item-body d-flex justify-content-between">
                                 <div class="schedule-poster">
                                     <div class="poster">
                                         <div class="thumbnail-edit" _id="${program.chapter_id}">
@@ -488,7 +488,7 @@ function getPrograms(date, country) {
                                     </div>
                                 </div>
                             </div>
-                            <div class="schedule-details">
+                            <div class="schedule-details col pl-0">
                                 <div class="schedule-details-header">
                                     <div>
                                         <p class="schedule a-text-black-brown-two">
@@ -554,7 +554,7 @@ function getPrograms(date, country) {
             programCanalClaro = `
                         <div class="schedule-container">
                             <p class="schedule-title">${program.chapter_title}</p>
-                            <div class="schedule-item-body">
+                            <div class="schedule-item-body  d-flex justify-content-between">
                                 <div class="schedule-poster">
                                     <div class="poster cursor-pointer">
                                         <a  href="./sinopsis.php?id=${program.chapter_id}">
@@ -563,7 +563,7 @@ function getPrograms(date, country) {
                                     </div>
                                 </div>
     
-                                <div class="schedule-details">
+                                <div class="schedule-details col pl-0">
                                     <div class="schedule-details-header">
                                         <div>
                                             <p class="schedule">${program.time} hrs.</p>
@@ -594,7 +594,7 @@ function getPrograms(date, country) {
                         <p class="schedule-title  a-text-plus a-text-black-brown-two">
                         ${program.chapter_title}
                         </p>
-                        <div class="schedule-item-body">
+                        <div class="schedule-item-body d-flex justify-content-between">
                         <div class="schedule-poster">
                             <div class="poster">
                             <div class="thumbnail-edit" _id="${program.chapter_id}">
@@ -602,7 +602,7 @@ function getPrograms(date, country) {
                             </div>
                             </div>
                         </div>
-                        <div class="schedule-details">
+                        <div class="schedule-details col pl-0">
                             <div class="schedule-details-header">
                             <div>
                                 <p class="schedule a-text-black-brown-two">
@@ -638,7 +638,7 @@ function getPrograms(date, country) {
             programCanalClaro = `
                         <div class="schedule-container">
                         <p class="schedule-title">${program.chapter_title}</p>
-                        <div class="schedule-item-body">
+                        <div class="schedule-item-body d-flex justify-content-between">
                             <div class="schedule-poster">
                                <div class="poster cursor-auto">
                                     <div  _id="${program.chapter_id}">
@@ -646,7 +646,7 @@ function getPrograms(date, country) {
                                     </div>
                                 </div>
                             </div>
-                            <div class="schedule-details">
+                            <div class="schedule-details col pl-0">
                                 <div class="schedule-details-header">
                                     <div>
                                         <p class="schedule">${program.time} hrs.</p>
@@ -671,7 +671,7 @@ function getPrograms(date, country) {
             programCanalClaro = `
                         <div class="schedule-container">
                         <p class="schedule-title">${program.chapter_title}</p>
-                        <div class="schedule-item-body">
+                        <div class="schedule-item-body d-flex justify-content-between">
                             <div class="schedule-poster">
                                <div class="poster cursor-pointer">
                                     <a  href="./sinopsis.php?id=${program.chapter_id}">
@@ -679,7 +679,7 @@ function getPrograms(date, country) {
                                     </a>
                                 </div>
                             </div>
-                            <div class="schedule-details">
+                            <div class="schedule-details col pl-0">
                                 <div class="schedule-details-header">
                                     <div>
                                         <p class="schedule">${program.time} hrs.</p>
@@ -1045,7 +1045,7 @@ function getPrograms(date, country) {
             programConcertChannel = `
                         <div class="schedule-container">
                             <p class="schedule-title">${program.chapter_title}</p>
-                            <div class="schedule-item-body">
+                            <div class="schedule-item-body d-flex justify-content-between">
                                 <div class="schedule-poster">
                                     <div class="poster cursor-auto">
                                         <div _id="${program.chapter_id}">
@@ -1054,7 +1054,7 @@ function getPrograms(date, country) {
                                     </div>
                                 </div>
     
-                                <div class="schedule-details">
+                                <div class="schedule-details col pl-0">
                                     <div class="schedule-details-header">
                                         <div>
                                             <p class="schedule">${program.time} hrs.</p>
@@ -1079,7 +1079,7 @@ function getPrograms(date, country) {
             programConcertChannel = `
                         <div class="schedule-container">
                             <p class="schedule-title">${program.chapter_title}</p>
-                            <div class="schedule-item-body">
+                            <div class="schedule-item-body d-flex justify-content-between">
                                 <div class="schedule-poster">
                                     <div class="poster cursor-pointer">
                                         <a  href="./sinopsis.php?id=${program.chapter_id}">
@@ -1088,7 +1088,7 @@ function getPrograms(date, country) {
                                     </div>
                                 </div>
     
-                                <div class="schedule-details">
+                                <div class="schedule-details col pl-0">
                                     <div class="schedule-details-header">
                                         <div>
                                             <p class="schedule">${program.time} hrs.</p>
@@ -1115,7 +1115,7 @@ function getPrograms(date, country) {
             programConcertChannel = `
                         <div class="schedule-container">
                             <p class="schedule-title">${program.chapter_title}</p>
-                            <div class="schedule-item-body">
+                            <div class="schedule-item-body d-flex justify-content-between">
                                 <div class="schedule-poster">
                                     <div class="poster cursor-auto">
                                         <div _id="${program.chapter_id}">
@@ -1124,7 +1124,7 @@ function getPrograms(date, country) {
                                     </div>
                                 </div>
     
-                                <div class="schedule-details">
+                                <div class="schedule-details col pl-0">
                                     <div class="schedule-details-header">
                                         <div>
                                             <p class="schedule">${program.time} hrs.</p>
@@ -1149,7 +1149,7 @@ function getPrograms(date, country) {
             programConcertChannel = `
                 <div class="schedule-container">
                     <p class="schedule-title">${program.chapter_title}</p>
-                    <div class="schedule-item-body">
+                    <div class="schedule-item-body d-flex justify-content-between">
                         <div class="schedule-poster">
                             <div class="poster cursor-auto">
                                 <a  href="./sinopsis.php?id=${program.chapter_id}">
@@ -1158,7 +1158,7 @@ function getPrograms(date, country) {
                             </div>
                         </div>
 
-                        <div class="schedule-details">
+                        <div class="schedule-details col pl-0">
                             <div class="schedule-details-header">
                                 <div>
                                     <p class="schedule">${program.time} hrs.</p>
@@ -1367,7 +1367,7 @@ function getPrograms(date, country) {
             programClaroCinema = `
                         <div class="schedule-container">
                             <p class="schedule-title">${program.chapter_title}</p>
-                            <div class="schedule-item-body">
+                            <div class="schedule-item-body d-flex justify-content-between">
                                 <div class="schedule-poster">
                                     <div class="poster cursor-auto">
                                         <a>
@@ -1376,7 +1376,7 @@ function getPrograms(date, country) {
                                     </div>
                                 </div>
 
-                                <div class="schedule-details">
+                                <div class="schedule-details col pl-0">
                                     <div class="schedule-details-header">
                                         <div>
                                             <p class="schedule">${program.time} hrs.</p>
@@ -1401,7 +1401,7 @@ function getPrograms(date, country) {
             programClaroCinema = `
                         <div class="schedule-container">
                             <p class="schedule-title">${program.chapter_title}</p>
-                            <div class="schedule-item-body">
+                            <div class="schedule-item-body d-flex justify-content-between">
                                 <div class="schedule-poster">
                                     <div class="poster cursor-pointer">
                                         <a  href="./sinopsis.php?id=${program.chapter_id}">
@@ -1410,7 +1410,7 @@ function getPrograms(date, country) {
                                     </div>
                                 </div>
 
-                                <div class="schedule-details">
+                                <div class="schedule-details col pl-0">
                                     <div class="schedule-details-header">
                                         <div>
                                             <p class="schedule">${program.time} hrs.</p>
@@ -1437,7 +1437,7 @@ function getPrograms(date, country) {
             programClaroCinema = `
                         <div class="schedule-container">
                             <p class="schedule-title">${program.chapter_title}</p>
-                            <div class="schedule-item-body">
+                            <div class="schedule-item-body d-flex justify-content-between">
                                 <div class="schedule-poster">
                                     <div class="poster cursoru-auto">
                                         <div>
@@ -1446,7 +1446,7 @@ function getPrograms(date, country) {
                                     </div>
                                 </div>
     
-                                <div class="schedule-details">
+                                <div class="schedule-details col pl-0">
                                     <div class="schedule-details-header">
                                         <div>
                                             <p class="schedule">${program.time} hrs.</p>
@@ -1471,7 +1471,7 @@ function getPrograms(date, country) {
             programClaroCinema = `
                         <div class="schedule-container">
                             <p class="schedule-title">${program.chapter_title}</p>
-                            <div class="schedule-item-body">
+                            <div class="schedule-item-body d-flex justify-content-between">
                                 <div class="schedule-poster">
                                     <div class="poster cursor-pointer">
                                         <a  href="./sinopsis.php?id=${program.chapter_id}">
@@ -1480,7 +1480,7 @@ function getPrograms(date, country) {
                                     </div>
                                 </div>
     
-                                <div class="schedule-details">
+                                <div class="schedule-details col pl-0">
                                     <div class="schedule-details-header">
                                         <div>
                                             <p class="schedule">${program.time} hrs.</p>

@@ -110,8 +110,7 @@
     margin-top: 23px;
   }
   .heart-phone {
-    transform: translateX(100%);
-    right: 0;
+    align-self: flex-end;
     width: fit-content;
   }
   .heart-image {
@@ -134,8 +133,7 @@
     border-radius: 15px;
   }
   .heart-phone {
-    transform: translateX(100%);
-    right: 0;
+    align-self: flex-end;
     width: fit-content;
   }
   .heart-image {
@@ -796,8 +794,7 @@
     margin: auto;
   }
   .heart-phone {
-    transform: translateX(100%);
-    right: 0;
+    align-self: flex-end;
     width: fit-content;
   }
   .heart-image {
@@ -816,8 +813,7 @@
     margin-bottom: 0px;
   }
   .heart-phone {
-    transform: translateX(100%);
-    right: 0;
+    align-self: flex-end;
     width: fit-content;
   }
   .heart-image {
