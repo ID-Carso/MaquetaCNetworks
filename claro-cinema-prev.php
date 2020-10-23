@@ -57,7 +57,7 @@
         <div class="header">
             <div class="alert-user">
             </div>
-            <img src="./images/header/yellow-curve.png" alt="imagen-header" class="header-curve"/>
+            <img src="./images/header/yellow-curve.png" alt="header" class="header-curve"/>
             <!--Menú para móvil -->
             <?php
             include 'menu-mobile.php';

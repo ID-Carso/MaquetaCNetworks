@@ -12,6 +12,10 @@ if ($_SESSION["country"] != 1) {
 <html lang="en">
 
 <head>
+      	<!--metadato de indexación-->
+
+<link rel=”canonical” href=”http://www.claronetworks.openofficedospuntocero.info/v1.2/claro-cinema.php”/>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -27,7 +31,18 @@ if ($_SESSION["country"] != 1) {
 
   <?php include './views/partials/head.php' ?>
   <input type="hidden" id="actual_landing" value="claro_cinema">
-
+ <!--Parte de Rich Snippets-->
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "author": "Claro Networks",
+  "contentRating": "Mature",
+  "image": "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/home/cinema-home-img.svg",
+  "name": "Claro Cinema",
+  "description": "Entérate de nuestra programación y las distintas opciones que Claro TV tiene para ti."
+}
+</script>
 </head>
 
 <body class="claro-cinema-content">
@@ -80,7 +95,7 @@ if ($_SESSION["country"] != 1) {
     <div class="header">
       <div class="alert-user">
       </div>
-      <img src="./images/header/yellow-curve.png" alt="imagen-header" class="header-curve"/>
+      <img src="./images/header/yellow-curve.png" alt="header" class="header-curve"/>
       <!--Menú para móvil -->
       <?php
       include 'menu-mobile.php';

@@ -12,6 +12,9 @@ if($_SESSION["country"] != 1){
 <html lang="en">
 
 <head>
+        	<!--metadato de indexación-->
+            <a href=”http://www.claronetworks.openofficedospuntocero.info/v1.2/programacion.php“ rel=”nofollow”>
+
  <!-- Global site tag (gtag.js) - Google Analytics -->
  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
     <script>

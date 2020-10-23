@@ -4709,6 +4709,19 @@ input[type="radio"]:checked + .mujer-estilo {
           box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
+.menu-inicial {
+  background: #000000;
+  position: relative;
+  height: 70px;
+}
+
+.menu-content {
+  position: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .tv-list,
 .tv-list-programming {
   list-style: none;
@@ -10088,7 +10101,7 @@ div #banner-concert-channel-edi .slick-track {
   }
   .logo {
     margin-left: 0;
-    width: 160px;
+    width: 100px;
   }
   .a-claro-cinema-title,
   .a-our-vision-title,
@@ -11406,7 +11419,7 @@ div #banner-concert-channel-edi .slick-track {
   }
   .logo {
     margin-left: 0;
-    width: 160px;
+    width: 100px;
   }
   .footer-companies-desktop {
     padding: 60px 0;

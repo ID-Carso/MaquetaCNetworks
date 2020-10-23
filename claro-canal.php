@@ -12,6 +12,9 @@ if($_SESSION["country"] != 1){
 <html lang="en">
 
 <head>
+      	<!--metadato de indexación-->
+<link rel=”canonical” href=”http://www.claronetworks.openofficedospuntocero.info/v1.2/claro-canal.php”/>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -24,6 +27,19 @@ if($_SESSION["country"] != 1){
 
   <?php include './views/partials/head.php' ?>
   <input type="hidden" id="actual_landing" value="canal_claro">
+ <!--Parte de Rich Snippets-->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "author": "Claro Networks",
+  "contentRating": "Everyone",
+  "image": "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/home/tv-1.svg",
+  "name": "Claro Canal",
+  "description": "Entérate de nuestra programación y las distintas opciones que Claro TV tiene para ti.",
+  "dateModified": 2020
+}
+</script>
 
 </head>
 
@@ -75,7 +91,7 @@ if($_SESSION["country"] != 1){
     <div class="header">
       <div class="alert-user">
       </div>
-      <img src="./images/header/curva.svg" alt="imagen-header" class="header-curve"/>
+      <img src="./images/header/curva.svg" alt="header" class="header-curve"/>
 
       <!--Menú para móvil -->
       <?php
@@ -89,7 +105,7 @@ if($_SESSION["country"] != 1){
       </div>
 
       <?php
-      include './views/partials/menu-desktop-black.php'
+      include './views/partials/menu-canal.php'
       ?>
       <div class="header-slider" id="banner-claro-canal">
 

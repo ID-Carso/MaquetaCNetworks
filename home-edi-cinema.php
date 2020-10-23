@@ -77,11 +77,11 @@
                 </video>
             </div>
             <div class="header">
-                <img src="./images/home/american-horror.jpeg" class="background-home rellax" data-rellax="10" alt="imagen-fondo-para-header"/>
+                <img src="./images/home/american-horror.jpeg" class="background-home rellax" data-rellax="10" alt="fondo-para-header"/>
                 <nav class="menu-tablet">
                     <div class="nav-content">
                         <div class="claro-logo">
-                            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="imagen-de-fondo-para-header-tablet" />
+                            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="fondo-para-header-tablet" />
 
                             <img class="logo" src="./images/home/claro-logo.svg" alt="logo-claro-networks" />
                         </div>
@@ -133,7 +133,7 @@
                 <!-- CARRUSEL DE PROGRAMACION CLARO CINEMA  -->
                 <div class="tv-videos-container">
                     <div id="claro-cinema" class="tv-content  border-t border-l border-r border-b position-relative p-2">
-                        <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-carrusel-main" type="home-claro-carrousel-main"/>
+                        <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-carrusel-main" type="home-claro-carrousel-main"/>
                         <div class="tv-slider today-claro-cinema-slider" id="tv-cinema-slider" style="margin-bottom: 0px !important;"></div>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
             <div class="claro-canal-mobile">
                 <div class="m-home-titles text-center">
                     <a href="" class="home-title-link">
-                        <img src="" class="claro-image-header" alt="imagen-header-claro" >
+                        <img src="" class="claro-image-header" alt="header-claro" >
                     </a>
                     <h2 class="a-subtitle a-claro-home-subtitle"></h2>
                 </div>
@@ -322,7 +322,7 @@
             <!--Cinema claro versión mobile-->
             <div class="cinema-claro-mobile">
                 <div class="m-home-titles text-center border-t border-l border-r border-b position-relative p-2">
-                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-carrusel-main" type="home-claro-carrousel-main"/>
+                    <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-carrusel-main" type="home-claro-carrousel-main"/>
 
                     <a href="" class="home-title-link">
                         <img src="./images/home/tv-3.svg" class="cinemahome-image-header" alt="logo-claro-cinema"/>
@@ -337,7 +337,7 @@
                     <a href=""><button class="btn-red button-cinema-home">VER +</button></a>
                 </div>
                 <div class="section-slider cinema-home-slider  border-t border-l border-r border-b position-relative p-2">
-                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-carrusel-home-cinema" type="cinema-home-slider"/>
+                    <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-carrusel-home-cinema" type="cinema-home-slider"/>
                 </div>
             </div>
             <!--End Cinema Claro mobile-->
@@ -345,7 +345,7 @@
             <div class="cinema-claro-tablet">
 
                 <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header  border-t border-l border-r border-b position-relative p-2">
-                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-header-home" type="cinema-home-header"/>
+                    <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-header-home" type="cinema-home-header"/>
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="logo-claro-cinema">
@@ -363,7 +363,7 @@
                         <img src="./images/home/claro-cinema-background.png" alt="fondo-de-seccion-de-claro-cinema" class="cinema-image"/>
                     </div>
                     <div class="col-md-7 col-lg-8  border-t border-l border-r border-b position-relative p-2">
-                        <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-carrusel-home-cinema" type="cinema-home-slider"/>
+                        <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-carrusel-home-cinema" type="cinema-home-slider"/>
                         <div class="cinema-home-slider">
                         </div>
                     </div>
@@ -385,7 +385,7 @@
             <div class="cinema-claro-desktop">
                 <!--<div class="black-line"></div>-->
                 <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header  border-t border-l border-r border-b position-relative p-2 mt-2 mb-2">
-                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-header-home" type="cinema-home-header"/>
+                    <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-header-home" type="cinema-home-header"/>
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="logo-claro-cinema"/>
@@ -403,7 +403,7 @@
                         <img src="./images/home/claro-cinema-background.png" alt="fondo-de-claro-cinema" class="cinema-image"/>
                     </div>
                     <div class="col-md-8 col-xl-9  border-t border-l border-r border-b position-relative p-2">
-                        <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-carrusel-home-cinema" type="cinema-home-slider"/>
+                        <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-carrusel-home-cinema" type="cinema-home-slider"/>
                         <div class="cinema-home-slider">
                         </div>
                     </div>

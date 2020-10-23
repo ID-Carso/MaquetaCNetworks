@@ -86,7 +86,7 @@
     <div class="concert-container pb-5">
         <section class="today-concert-channel pt-3">
             <div class="row no-gutters mb-3 p-3 landing-header position-relative border-t border-l border-r border-b">
-                <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-concert"
+                <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-concert"
                     type="header-landing-concert"/>
                 <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
                     <img src="./images/home/concert-home-img.svg" alt="logo-concert-channel" class="lading-header-image-concert"
@@ -105,7 +105,7 @@
                 </div>
             </div>
             <div class="today-concert-videos-container position-relative border-t border-l border-r border-b">
-                <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-concert pencil-slider"
+                <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-concert pencil-slider"
                     type="current-programming-concert"/>
                 <div class="section-slider p-3 today-concert-channel-slider-prev">
                 </div>
@@ -114,14 +114,14 @@
         <section class="next-week-concert">
             <div
                 class="concert-container-header mb-3  d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
-                <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-header" type="pencil-header"/>
+                <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-header" type="pencil-header"/>
                 <h1 class="p-2 concert-title" id="a-next-concert-title"></h1>
                 <h2 class="p-2 concert-subtitle" id="a-next-concert-subtitle"></h2>
 
             </div>
             <div class="week-videos-container">
                 <div class=" p-3 border-t border-l border-r border-b position-relative">
-                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil" type="pencil-video"/>
+                    <img src="./images/General/pencil.svg" alt=" " class="pencil" type="pencil-video"/>
                     <video class="promo-video" autoplay muted controls loop>
 
                         <source
@@ -136,12 +136,12 @@
             <div
                 class="concert-container-header  p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
                 <h1 class="concert-title" id="carrusel_1_title"></h1>
-                <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-header1" type="pencil-header1"/>
+                <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-header1" type="pencil-header1"/>
                 <h2 class="p-2 concert-subtitle" id="carrusel_1_subtitle"></h2>
 
             </div>
             <div class="concerts-videos-container position-relative border-t border-l border-r border-b p-3">
-                <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-carrusel1" type="pencil-carrusel1"/>
+                <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-carrusel1" type="pencil-carrusel1"/>
                 <div class="concerts-videos-container">
                     <div class="section-slider concert-slider" id="concert_channel_carrusel_1"></div>
                 </div>
@@ -151,13 +151,13 @@
         <section class="concert-interviews">
             <div
                 class="concert-container-header  header2 p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
-                <img src=" ./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-header2" type="header2"/>
+                <img src=" ./images/General/pencil.svg" alt=" " class="pencil pencil-header2" type="header2"/>
                 <h1 class="concert-title" id="carrusel_2_title"></h1>
 
                 <h2 class="p-2 concert-subtitle" id="carrusel_2_subtitle"></h2>
             </div>
             <div class="interviews-videos-container position-relative border-t border-l border-r border-b p-3">
-                <img src=" ./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-carrusel2" type="pencil-carrusel2"/>
+                <img src=" ./images/General/pencil.svg" alt=" " class="pencil pencil-carrusel2" type="pencil-carrusel2"/>
                 <div class="interviews-videos-container">
                     <div class="section-slider concert-slider" id="concert_channel_carrusel_2"></div>
                 </div>

@@ -13,6 +13,10 @@ if($_SESSION["country"] != 1){
 <html lang="en">
 
 <head>
+    	<!--metadato de indexación-->
+
+<link rel=”canonical” href=”http://www.claronetworks.openofficedospuntocero.info/v1.2/concert-channel.php”/>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -25,6 +29,18 @@ if($_SESSION["country"] != 1){
 
     <?php include './views/partials/head.php' ?>
     <input type="hidden" id="actual_landing" value="concert_channel">
+    <!--Parte de Rich Snippets-->
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "author": "Claro Networks",
+  "contentRating": "Everyone",
+  "image": "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/home/concert-home-img.svg",
+  "name": "Concert Channel",
+  "description": "Un canal de música transmitido por el sistema Claro, donde encontrarás los mejores conciertos."
+}
+</script>
 
 </head>
 

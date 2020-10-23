@@ -16,6 +16,9 @@ if ($_SESSION["country"] != 1) {
 <html lang="en">
 
 <head>
+      	<!--metadato de indexación-->
+          <meta name="robots" content="follow"/>
+<link rel=”canonical” href=”http://www.claronetworks.openofficedospuntocero.info/v1.2/home.php”/>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
     <script>
@@ -101,7 +104,7 @@ if ($_SESSION["country"] != 1) {
                 </video>
             </div>
             <div class="header">
-                <img src="./images/home/american-horror.jpeg" alt="imagen-header-mobile" class="background-home rellax" data-rellax="10" />
+                <img src="./images/home/american-horror.jpeg" alt="header-mobile" class="background-home rellax" data-rellax="10" />
                 <nav class="menu-tablet">
                     <div class="nav-content">
                         <div class="claro-logo">

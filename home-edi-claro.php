@@ -79,11 +79,11 @@
 
             <div class="header">
 
-                <img src="./images/home/american-horror.jpeg" class="background-home rellax" data-rellax="10" alt="imagen-para-header"/>
+                <img src="./images/home/american-horror.jpeg" class="background-home rellax" data-rellax="10" alt="header"/>
                 <nav class="menu-tablet">
                     <div class="nav-content">
                         <div class="claro-logo">
-                            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="imagen-para-header-tablet" />
+                            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="header-tablet" />
 
                             <img class="logo" src="./images/home/claro-logo.svg" alt="logo-claro-networks" />
                         </div>
@@ -139,7 +139,7 @@
                 <!-- CARRUSEL DE PROGRAMACION CANAL CLARO -->
                 <div class="tv-videos-container">
                     <div id="claro-canal" class="tv-content  border-t border-l border-r border-b position-relative p-2">
-                        <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-carrusel-main"
+                        <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-carrusel-main"
                             type="home-claro-carrousel-main"/>
                         <div class="tv-slider today-claro-slider " id="tv-claro-slider"
                             style="margin-bottom: 0px !important;"></div>
@@ -158,7 +158,7 @@
             <!--Sección Canal Claro mobile-->
             <div class="claro-canal-mobile">
                 <div class="m-home-titles text-center  position-relative border-t border-l border-r border-b mb-3">
-                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-header-home"
+                    <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-header-home"
                         type="claro-home-header"/>
                     <a href="" class="home-title-link">
                         <img src="" class="claro-image-header" alt="logo-claro-canal"/>
@@ -172,7 +172,7 @@
                     <a href=""> <button class="btn-red btn-canal-claro-home">VER +</button></a>
                 </div>
                 <div class="position-relative border-t border-l border-r border-b p-3">
-                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-home-slider"
+                    <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-home-slider"
                         type="claro-home-slider"/>
                     <div class="section-slider claro-slider-home-prev">
                     </div>
@@ -184,7 +184,7 @@
             <div class="claro-canal-tablet">
                 <div
                     class="d-flex justify-content-between align-items-center home-section-header claro-section-header position-relative border-t border-l border-r border-b mb-3">
-                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-header-home"
+                    <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-header-home"
                         type="claro-home-header"/>
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
@@ -201,7 +201,7 @@
                 </div>
                 <div class="canal-videos-container">
                     <div class="position-relative border-t border-l border-r border-b p-4 ">
-                        <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-home-slider"
+                        <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-home-slider"
                             type="claro-home-slider"/>
                         <div class="section-slider claro-slider-home-prev">
                         </div>
@@ -224,7 +224,7 @@
             <div class="claro-canal-desktop">
                 <div
                     class="d-flex justify-content-between align-items-center home-section-header claro-section-header p-3 position-relative border-t border-l border-r border-b mb-3">
-                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-header-home"
+                    <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-header-home"
                         type="claro-home-header"/>
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
@@ -239,7 +239,7 @@
                     </div>
                 </div>
                 <div class="position-relative border-t border-l border-r border-b p-4">
-                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-home-slider"
+                    <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-home-slider"
                         type="claro-home-slider"/>
                     <div class="section-slider claro-slider-home-prev">
                     </div>

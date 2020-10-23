@@ -81,11 +81,11 @@
 
             <div class="header">
 
-                <img src="./images/home/american-horror.jpeg" class="background-home rellax" data-rellax="10" alt="imagen-header"/>
+                <img src="./images/home/american-horror.jpeg" class="background-home rellax" data-rellax="10" alt="header-desktop"/>
                 <nav class="menu-tablet">
                     <div class="nav-content">
                         <div class="claro-logo">
-                            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="imagen-header-para-tablet" />
+                            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="header-para-tablet" />
 
                             <img class="logo" src="./images/home/claro-logo.svg" alt="logo-claro-networks" />
                         </div>
@@ -140,7 +140,7 @@
                 <!-- CARRUSEL DE PROGRAMACION CONCERT CHANNEL -->
                 <div class="tv-videos-container">
                     <div id="concert-channel" class="tv-content  border-t border-l border-r border-b position-relative p-2">
-                        <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-carrusel-main" type="home-claro-carrousel-main"/>
+                        <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-carrusel-main" type="home-claro-carrousel-main"/>
                         <!-- <div class="tv-slider today-concert-channel-slider" id="tv-concert-slider" style="margin-bottom: 0px !important;"></div> -->
                         <div class="tv-slider today-concert-channel-slider" id="tv-concert-slider" style="margin-bottom: 0px !important;"></div>
                     </div>
@@ -245,7 +245,7 @@
             <!--Versión para mobile-->
             <div class="concert-channel-mobile">
                 <div class="position-relative border-l border-t border-b border-r">
-                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-home-slider" type="concert-home-header"/>
+                    <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-home-slider" type="concert-home-header"/>
                     <div class="m-home-titles text-center">
                         <a href="" class="home-title-link">
                             <img src="./images/home/concert-home-img.svg" alt="logo-concert-channel" class="concerthome-image-header"/>
@@ -258,7 +258,7 @@
                     </div>
                 </div>
                 <div class="position-relative border-l border-t border-b border-r">
-                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-home-slider" type="concert-home-slider"/>
+                    <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-home-slider" type="concert-home-slider"/>
                     <div class="section-slider concert-home-slider">
                     </div>
                 </div>
@@ -269,7 +269,7 @@
             <!--Versión para tablet-->
             <div class="concert-channel-tablet">
                 <div class="d-flex position-relative border-l border-t border-b border-r justify-content-between align-items-center home-section-header concert-section-header">
-                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-home-slider" type="concert-home-header"/>
+                    <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-home-slider" type="concert-home-header"/>
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img src="./images/home/concert-home-img.svg" alt="logo-concert-channel" class="concerthome-image-header"/>
@@ -283,7 +283,7 @@
                 </div>
                 <div class="home-concert-videos-container">
                     <div class="border-l border-t border-b border-r position-relative">
-                        <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-home-slider" type="concert-home-slider"/>
+                        <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-home-slider" type="concert-home-slider"/>
                         <div class="section-slider concert-home-slider">
                         </div>
                     </div>
@@ -306,7 +306,7 @@
             <!--Concert channel desktop-->
             <div class="concert-channel-desktop pt-4">
                 <div class="p-2 d-flex position-relative justify-content-between border-l border-t border-b border-r align-items-center home-section-header concert-section-header mb-4">
-                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-header-home" type="concert-home-header" />
+                    <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-header-home" type="concert-home-header" />
                     <div class="m-home-titles">
                         <a href="" class="home-title-link">
                             <img class="concerthome-image-header" src="./images/home/concert-home-img.svg" alt="logo-concert-channel"/>
@@ -320,7 +320,7 @@
                     </div>
                 </div>
                 <div class="position-relative border-l border-r border-t border-b p-3">
-                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-home-slider" type="concert-home-slider"/>
+                    <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-home-slider" type="concert-home-slider"/>
                     <div class="section-slider concert-home-slider">
                     </div>
                 </div>

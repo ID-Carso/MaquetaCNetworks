@@ -119,12 +119,12 @@
 
                     <div class="synopsis-body-container no-gutters">
                         <div class="col-md-7 col-lg-6 mr-2  mb-0 synopsis-main-image border-t border-l border-r border-b position-relative d-inline-block">
-                            <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-main" type="synopsis-main-image"/>
+                            <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-main" type="synopsis-main-image"/>
                             <!--Imagen principal de sinopsis-->
                             <img src="" alt="imagen-principal-sinopsis" class="p-3 w-100 image-synopsis-edi"/>
                         </div>
                         <div class="col-md-7 col-lg-6 mx-sm-auto mx-md-auto synopsis-description-container border-t border-l border-r border-b position-relative ">
-                            <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-description" type="synopsis-description-container"/>
+                            <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-description" type="synopsis-description-container"/>
                             <div>
                                 <h1 class="a-text-white-monblack synopsis-title-edi h3 d-flex justify-content-center mt-3">
                                 </h1>
@@ -161,7 +161,7 @@
                             </div>
                             <div class="">
                                 <div class="synopsis-details-container border-t border-l border-r border-b position-relative p-3">
-                                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-details" type="synopsis-datails-container"/>
+                                    <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-details" type="synopsis-datails-container"/>
                                     <div class="synopsis-rating-container">
                                         <div class="d-flex align-items-center mr-5">
                                             <span class="a-text-Regular-White text-normal mr-2">Duración: </span>

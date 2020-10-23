@@ -141,7 +141,7 @@
             <div class="o-tv-section programming-container">
                 <div class="d-flex justify-content-center">
                     <div class=" p-3 border-t border-l border-r border-b position-relative d-inline-block mx-auto">
-                        <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil pencil-menu"/>
+                        <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-menu"/>
                         <div class="row no-gutters col-12">
                             <ul class="d-flex list-progra pl-0">
                                 <!--Logo canal claro-->

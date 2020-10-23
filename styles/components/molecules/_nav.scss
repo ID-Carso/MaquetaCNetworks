@@ -110,3 +110,15 @@
   box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.5);
   
 }
+
+.menu-inicial{
+  background: $pureBlack;
+  position: relative;
+  height: 70px;
+
+}
+
+.menu-content{
+  position: inherit;
+  display: flex;
+}

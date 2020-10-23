@@ -297,7 +297,7 @@ function getPrograms(date, country) {
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <div class="" _id="${program.chapter_id}" style="pointer-events: none">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="-programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -315,7 +315,7 @@ function getPrograms(date, country) {
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <a  href="./sinopsis.php?id=${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -336,7 +336,7 @@ function getPrograms(date, country) {
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <div _id="${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -354,7 +354,7 @@ function getPrograms(date, country) {
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <a  href="./sinopsis.php?id=${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -383,7 +383,7 @@ function getPrograms(date, country) {
     
                                     <div _id="${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -405,7 +405,7 @@ function getPrograms(date, country) {
     
                                     <a  href="./sinopsis.php?id=${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-de-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -429,7 +429,7 @@ function getPrograms(date, country) {
                                     </div>
                                     <div _id="${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -451,7 +451,7 @@ function getPrograms(date, country) {
                                     <a  href="./sinopsis.php?id=${program.chapter_id}">
                                     
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -475,7 +475,7 @@ function getPrograms(date, country) {
           //para calculo de caracteres en sinopsis de programación general-edit
           programCanalClaroEdit += `
                     <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
-                        <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil edit-program-pencil" chapter_id="${program.chapter_id}"/>
+                        <img src="./images/General/pencil.svg" alt=" " class="pencil edit-program-pencil" chapter_id="${program.chapter_id}"/>
                         <div class="schedule-container col-12 p-5 mx-auto mt-0">
                             <p class="schedule-title  a-text-plus a-text-black-brown-two">
                                 ${program.chapter_title}
@@ -484,7 +484,7 @@ function getPrograms(date, country) {
                                 <div class="schedule-poster">
                                     <div class="poster">
                                         <div class="thumbnail-edit" _id="${program.chapter_id}">
-                                        <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                        <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                     </div>
                                 </div>
                             </div>
@@ -524,7 +524,7 @@ function getPrograms(date, country) {
                                     <div class="schedule-poster">
                                         <div class="poster cursor-auto">
                                             <div _id="${program.chapter_id}">
-                                                <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                                <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                             </div>
                                         </div>
                                     </div>
@@ -558,7 +558,7 @@ function getPrograms(date, country) {
                                 <div class="schedule-poster">
                                     <div class="poster cursor-pointer">
                                         <a  href="./sinopsis.php?id=${program.chapter_id}">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </a>
                                     </div>
                                 </div>
@@ -589,7 +589,7 @@ function getPrograms(date, country) {
           //VARIABLE PARA EDITAR DESDE PROGRAMACIÓN GENERAL EN BACKOFFICE
           programCanalClaroEdit += `
                     <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
-                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil edit-program-pencil" chapter_id="${program.chapter_id}"/>
+                    <img src="./images/General/pencil.svg" alt=" " class="pencil edit-program-pencil" chapter_id="${program.chapter_id}"/>
                     <div class="schedule-container col-12 p-5 mx-auto mt-0">
                         <p class="schedule-title  a-text-plus a-text-black-brown-two">
                         ${program.chapter_title}
@@ -598,7 +598,7 @@ function getPrograms(date, country) {
                         <div class="schedule-poster">
                             <div class="poster">
                             <div class="thumbnail-edit" _id="${program.chapter_id}">
-                                <img src="${program.image}" alt="imagen-del-programa- ${program.chapter_title}" class="w-100"/>
+                                <img src="${program.image}" alt="programa- ${program.chapter_title}" class="w-100"/>
                             </div>
                             </div>
                         </div>
@@ -642,7 +642,7 @@ function getPrograms(date, country) {
                             <div class="schedule-poster">
                                <div class="poster cursor-auto">
                                     <div  _id="${program.chapter_id}">
-                                        <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}" class="w-100"/>
+                                        <img src="${program.image}" alt="programa-${program.chapter_title}" class="w-100"/>
                                     </div>
                                 </div>
                             </div>
@@ -675,7 +675,7 @@ function getPrograms(date, country) {
                             <div class="schedule-poster">
                                <div class="poster cursor-pointer">
                                     <a  href="./sinopsis.php?id=${program.chapter_id}">
-                                        <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}" class="w-100"/>
+                                        <img src="${program.image}" alt="programa-${program.chapter_title}" class="w-100"/>
                                     </a>
                                 </div>
                             </div>
@@ -727,7 +727,7 @@ function getPrograms(date, country) {
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <div _id="${program.chapter_id}">
                                         <div class="thumbnail">                       
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>                             
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>                             
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -745,7 +745,7 @@ function getPrograms(date, country) {
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <a  href="./sinopsis.php?id=${program.chapter_id}">
                                         <div class="thumbnail">                       
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>                             
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>                             
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -766,7 +766,7 @@ function getPrograms(date, country) {
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <div _id="${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -784,7 +784,7 @@ function getPrograms(date, country) {
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <a  href="./sinopsis.php?id=${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-claro-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -812,7 +812,7 @@ function getPrograms(date, country) {
                       <div class="thumbnail-body" _id="${program.chapter_id}">
                           <div class="thumbnail">
                          
-                              <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                              <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                              
                           </div>
                           <div class="a-claro-rectangle thumbnail-info-title">
@@ -840,7 +840,7 @@ function getPrograms(date, country) {
                       <div class="thumbnail-body" _id="${program.chapter_id}">
                           <div class="thumbnail">
                         
-                              <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                              <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                               
                           </div>
                           <div class="a-claro-rectangle thumbnail-info-title">
@@ -871,7 +871,7 @@ function getPrograms(date, country) {
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <div _id="${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-concert-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -889,7 +889,7 @@ function getPrograms(date, country) {
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <a  href="./sinopsis.php?id=${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-concert-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -909,7 +909,7 @@ function getPrograms(date, country) {
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <div _id="${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-concert-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -927,7 +927,7 @@ function getPrograms(date, country) {
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <a  href="./sinopsis.php?id=${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-concert-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -953,7 +953,7 @@ function getPrograms(date, country) {
     
                                     <div _id="${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-concert-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -975,7 +975,7 @@ function getPrograms(date, country) {
     
                                     <a  href="./sinopsis.php?id=${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-concert-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -999,7 +999,7 @@ function getPrograms(date, country) {
     
                                     <div _id="${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-concert-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -1021,7 +1021,7 @@ function getPrograms(date, country) {
     
                                     <a  href="./sinopsis.php?id=${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-concert-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -1049,7 +1049,7 @@ function getPrograms(date, country) {
                                 <div class="schedule-poster">
                                     <div class="poster cursor-auto">
                                         <div _id="${program.chapter_id}">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}" class="w-100"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}" class="w-100"/>
                                         </div>
                                     </div>
                                 </div>
@@ -1083,7 +1083,7 @@ function getPrograms(date, country) {
                                 <div class="schedule-poster">
                                     <div class="poster cursor-pointer">
                                         <a  href="./sinopsis.php?id=${program.chapter_id}">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}" class="w-100"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}" class="w-100"/>
                                         </a>
                                     </div>
                                 </div>
@@ -1119,7 +1119,7 @@ function getPrograms(date, country) {
                                 <div class="schedule-poster">
                                     <div class="poster cursor-auto">
                                         <div _id="${program.chapter_id}">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}" class="w-100"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}" class="w-100"/>
                                         </div>
                                     </div>
                                 </div>
@@ -1153,7 +1153,7 @@ function getPrograms(date, country) {
                         <div class="schedule-poster">
                             <div class="poster cursor-auto">
                                 <a  href="./sinopsis.php?id=${program.chapter_id}">
-                                    <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}" class="w-100"/>
+                                    <img src="${program.image}" alt="programa-${program.chapter_title}" class="w-100"/>
                                 </a>
                             </div>
                         </div>
@@ -1197,7 +1197,7 @@ function getPrograms(date, country) {
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <div>
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -1215,7 +1215,7 @@ function getPrograms(date, country) {
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <div class="thumbnail-body" _id="${program.chapter_id}">
                                         <a  href="./sinopsis.php?id=${program.chapter_id}">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </a>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -1235,7 +1235,7 @@ function getPrograms(date, country) {
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <div>
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -1253,7 +1253,7 @@ function getPrograms(date, country) {
                                     <p class="a-programming-text now-live-text">AHORA EN VIVO</p>
                                     <a  href="./sinopsis.php?id=${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -1278,7 +1278,7 @@ function getPrograms(date, country) {
                                     </div>
                                     <div>
                                         <div class="thumbnail">
-                                            <img src="${program.image}"  alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-cinenam-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -1299,7 +1299,7 @@ function getPrograms(date, country) {
                                     </div>
                                     <a  href="./sinopsis.php?id=${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}"  alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-cinenam-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -1323,7 +1323,7 @@ function getPrograms(date, country) {
     
                                     <div>
                                         <div class="thumbnail">
-                                            <img src="${program.image}"  alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -1345,7 +1345,7 @@ function getPrograms(date, country) {
     
                                     <a  href="./sinopsis.php?id=${program.chapter_id}">
                                         <div class="thumbnail">
-                                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                                         </div>
                                         <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
@@ -1371,7 +1371,7 @@ function getPrograms(date, country) {
                                 <div class="schedule-poster">
                                     <div class="poster cursor-auto">
                                         <a>
-                                            <img src="${program.image}"  class="w-100"  alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}"  class="w-100"  alt="programa-${program.chapter_title}"/>
                                         </div>
                                     </div>
                                 </div>
@@ -1405,7 +1405,7 @@ function getPrograms(date, country) {
                                 <div class="schedule-poster">
                                     <div class="poster cursor-pointer">
                                         <a  href="./sinopsis.php?id=${program.chapter_id}">
-                                            <img src="${program.image}"  class="w-100"  alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}"  class="w-100"  alt="programa-${program.chapter_title}"/>
                                         </a>
                                     </div>
                                 </div>
@@ -1441,7 +1441,7 @@ function getPrograms(date, country) {
                                 <div class="schedule-poster">
                                     <div class="poster cursoru-auto">
                                         <div>
-                                            <img src="${program.image}"  class="w-100" alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}"  class="w-100" alt="programa-${program.chapter_title}"/>
                                         </div>
                                     </div>
                                 </div>
@@ -1475,7 +1475,7 @@ function getPrograms(date, country) {
                                 <div class="schedule-poster">
                                     <div class="poster cursor-pointer">
                                         <a  href="./sinopsis.php?id=${program.chapter_id}">
-                                            <img src="${program.image}" class="w-100"  alt="imagen-del-programa-${program.chapter_title}"/>
+                                            <img src="${program.image}" class="w-100"  alt="programa-${program.chapter_title}"/>
                                         </a>
                                     </div>
                                 </div>
@@ -1525,7 +1525,7 @@ function getPrograms(date, country) {
                       <div class="thumbnail-body" _id="${program.chapter_id}">
                           <div class="thumbnail">
                          
-                              <img src="${program.image}"  alt="imagen-del-programa-${program.chapter_title}"/>
+                              <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
                               
                           </div>
                           <div class="a-cinema-rectangle thumbnail-info-title">
@@ -1549,7 +1549,7 @@ function getPrograms(date, country) {
                       <div class="thumbnail-body" _id="${program.chapter_id}">
                           <div class="thumbnail">
                          
-                              <img src="${program.image}"  alt="imagen-del-programa-${program.chapter_title}"/>
+                              <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
                               
                           </div>
                           <div class="a-cinema-rectangle thumbnail-info-title">
@@ -1575,7 +1575,7 @@ function getPrograms(date, country) {
                 <div class="schedule-poster">
                     <div class="poster">
                         <div class="thumbnail-prog" _id="${program.chapter_id}">
-                            <img src="${program.image}"  alt="imagen-del-programa-${program.chapter_title}"/>
+                            <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
                         </div>
                     </div>
                 </div>
@@ -1621,7 +1621,7 @@ function getPrograms(date, country) {
                       <div class="thumbnail-body" _id="${program.chapter_id}">
                           <div class="thumbnail">
                         
-                              <img src="${program.image}"  alt="imagen-del-programa-${program.chapter_title}"/>
+                              <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
                               
                           </div>
                           <div class="a-cinema-rectangle thumbnail-info-title">
@@ -1755,7 +1755,7 @@ function getProgramming(date, withLoader) {
                     <div class="schedule-poster">
                         <div class="poster">
                             <div class="thumbnail-prog" _id="${program.chapter_id}">
-                                <img src="${program.image}"  alt="imagen-del-programa-${program.chapter_title}"/>
+                                <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
                             </div>
                         </div>
                     </div>
@@ -1791,7 +1791,7 @@ function getProgramming(date, withLoader) {
                 <div class="schedule-poster">
                     <div class="poster">
                         <a  href="./sinopsis.php?id=${program.chapter_id}">
-                            <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                         </div>
                     </div>
                 </div>
@@ -1834,7 +1834,7 @@ function getProgramming(date, withLoader) {
                             <div class="schedule-poster">
                                 <div class="poster">
                                     <div class="thumbnail-edit" _id="${program.chapter_id}">
-                                        <img src="${program.image}"  class="w-100"  alt="imagen-del-programa-${program.chapter_title}"/>
+                                        <img src="${program.image}"  class="w-100"  alt="programa-${program.chapter_title}"/>
                                     </div>
                                 </div>
                             </div>
@@ -1876,7 +1876,7 @@ function getProgramming(date, withLoader) {
                     <div class="schedule-poster">
                         <div class="poster">
                             <div class="thumbnail-prog" _id="${program.chapter_id}">
-                                <img src="${program.image}"  alt="imagen-del-programa-${program.chapter_title}"/>
+                                <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
                             </div>
                         </div>
                     </div>
@@ -1912,7 +1912,7 @@ function getProgramming(date, withLoader) {
                     <div class="schedule-poster">
                         <div class="poster">
                             <a  href="./sinopsis.php?id=${program.chapter_id}">
-                                <img src="${program.image}" alt="imagen-del-programa-${program.chapter_title}"/>
+                                <img src="${program.image}" alt="programa-${program.chapter_title}"/>
                             </div>
                         </div>
                     </div>
@@ -1947,7 +1947,7 @@ function getProgramming(date, withLoader) {
           //Programas para la pantalla de editar programación en backoffice
           programClaroCinemaEdit += `
                     <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
-                    <img src="./images/General/pencil.svg" alt="editar-contenido" class="pencil edit-program-pencil" chapter_id="${program.chapter_id}">
+                    <img src="./images/General/pencil.svg" alt=" " class="pencil edit-program-pencil" chapter_id="${program.chapter_id}">
                     <div class="schedule-container col-12 p-5 mx-auto mt-0">
                         <p class="schedule-title  a-text-plus a-text-black-brown-two">
                             ${program.chapter_title}
@@ -1956,7 +1956,7 @@ function getProgramming(date, withLoader) {
                             <div class="schedule-poster">
                                 <div class="poster">
                                     <div class="thumbnail-edit" _id="${program.chapter_id}">
-                                        <img src="${program.image}"  alt="imagen-del-programa-${program.chapter_title}"/>
+                                        <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
                                     </div>
                                 </div>
                             </div>

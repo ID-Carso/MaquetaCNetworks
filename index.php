@@ -3,6 +3,10 @@
 <html lang="en">
 
 <head>
+<!--metadato de indexación-->
+<meta name="robots" content="index"/> 
+<link rel=”canonical” href=”http://www.claronetworks.openofficedospuntocero.info/v1.2/index.php”/>
+
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -33,6 +37,19 @@
 	</script>
 	<script src="https://www.googleoptimize.com/optimize.js?id=OPT-5S7NP6G"></script>
 	<?php include './views/partials/head.php' ?>
+
+	<title>Claro Networks</title>
+	 <!--Parte de -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "http://www.claronetworks.openofficedospuntocero.info/v1.2/index.php",
+      "logo": "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/logo/claro-networks-white.svg"
+    }
+	</script>
+	
+	/>
 </head>
 
 <body class="fondo-index">

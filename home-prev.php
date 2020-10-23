@@ -75,11 +75,11 @@
                 </video>
             </div>
             <div class="header">
-                <img src="./images/home/american-horror.jpeg" class="background-home rellax" data-rellax="10" alt="imagen-header"/>
+                <img src="./images/home/american-horror.jpeg" class="background-home rellax" data-rellax="10" alt="header-desktop"/>
                 <nav class="menu-tablet">
                     <div class="nav-content">
                         <div class="claro-logo">
-                            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="imagen-header-tablet" />
+                            <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="header-tablet" />
 
                             <img class="logo" src="./images/home/claro-logo.svg" alt="logo-claro-networks" />
                         </div>
