@@ -457,14 +457,14 @@ export default class Slider {
       imagesBannerProgramming.forEach(function (image) {
         slideBannerProgramming += `        
         <div class="header-slide">
-          <img src="${image.imageBannerPC}" class="rellax" data-rellax="10" alt="banner-de-pc-${image.imageBannerPC}"/>
+          <img src="${image.imageBannerPC}" class="rellax" data-rellax="10" alt="banner-de-pc-claro-cinema"/>
         </div>`;
       });
 
       imagesBannerClaroCinema.forEach(function (image) {
         slideBannerClaroCinema += `        
         <div class="header-slide">
-          <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10" alt="banner-de-tablet-${image.imageBannerTablet}"/>
+          <img src="${image.imageBannerTablet}" class="rellax" data-rellax="10" alt="banner-de-tablet-claro-cinema"/>
         </div>`;
       });
 
@@ -475,14 +475,14 @@ export default class Slider {
       imagesBannerProgramming.forEach(function (image) {
         slideBannerProgramming += `        
         <div class="header-slide">
-          <img src="${image.imageBannerPC}" class="rellax" data-rellax="10" alt="banner-de-pc-${image.imageBannerPC}"/>
+          <img src="${image.imageBannerPC}" class="rellax" data-rellax="10" alt="banner-de-pc-claro-cinema"/>
         </div>`;
       });
 
       imagesBannerClaroCinema.forEach(function (image) {
         slideBannerClaroCinema += `        
         <div class="header-slide">
-          <img src="${image.imageBannerPC}" class="rellax" data-rellax="10" alt="banner-de-pc-${image.imageBannerPC}"/>
+          <img src="${image.imageBannerPC}" class="rellax" data-rellax="10" alt="banner-de-pc-claro-cinema"/>
         </div>`;
       });
 

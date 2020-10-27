@@ -1046,6 +1046,7 @@ $(document).ready(function () {
       <span class="dropdown-p" >Cerrar sesión</span>
     </div>`;
     let userOptions = $(".user-options");
+    let usernewmenu = $(".user-menu-new");
     let sidebarHeader = $(".sidebar-header");
     let userName = localStorage.getItem("name");
     let avatar = `<img src="${localStorage.getItem("avatar")}" alt="imagen-de-avatar" />`;
@@ -1086,9 +1087,32 @@ $(document).ready(function () {
       <a href="index.php" class="login-item options-item"><img class="login-country" src="" alt="seleccion-de-pais" /></a>
       </div>
       `;
+      let menuIngresoNew = `
+      <div class="menu-ingreso pt-4 pr-5">
+      <div class="icon-user position-relative mr-3">
+        <div class="tooltip-logout">
+          <div class="d-flex">
+            <img src="./images/menu/logout.svg" alt="cerrar-sesion" />
+            <p class="tooltip-text ml-3">Cerrar Sesión</p>
+          </div>
+        </div>
+        <div class="image-user-container">
+          <div class="image-user">
+          ${avatar}
+          </div>
+        </div>
+      </div>
+
+      <p class="name-user mr-3">${userName}</p>
+      <a href="mi-lista.php"><img class="mr-3 options-item" src="./images/menu/mi-lista-icon.png" alt="agregar-a-favoritos" /></a>
+      <a href="configuracion.php"><img class="mr-3 options-item" src="./images/menu/configuracion-icon.png" alt="configuracion-de-la-cuenta" /></a>
+      <a href="index.php" class="login-item options-item"><img class="login-country" src="" alt="seleccion-de-pais" /></a>
+      </div>
+      `;   
     sidebarContent.append(sidebarItem);
     sidebarHeader.html(menuMobile);
     userOptions.html(menuIngreso);
+    usernewmenu.html(menuIngresoNew);
   } else {
     let menuBase = `    
     <div class="login">

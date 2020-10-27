@@ -40,7 +40,7 @@ if ($_SESSION["country"] != 1) {
   "contentRating": "Mature",
   "image": "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/home/cinema-home-img.svg",
   "name": "Claro Cinema",
-  "description": "Entérate de nuestra programación y las distintas opciones que Claro TV tiene para ti."
+  "description": "México es un país fantástico, encantador, lleno de historias, leyendas, ocurrencias, y sucesos peculiares. Obviamente, su cine tenía que reflejar todo esto y más. En Claro Cinema te encontrarás con íconos que marcaron época: la trilogía de Ismael Rodríguez, el inigualable lenguaje de René Cardona; las inolvidables actuaciones de Pedro Infante, María Félix, Miroslava, entre otros; la peculiar galantería de Mauricio Garcés o la, todavía mayor, de Alfonso Zayas. Con una mirada única a las películas que hicieron época, descubrirás que el cine mexicano está más vivo que nunca."
 }
 </script>
 </head>
@@ -108,7 +108,9 @@ if ($_SESSION["country"] != 1) {
       </div>
       <div>
         <?php
-        include './views/partials/menu-desktop-black.php'
+        //menu nuevo y anterior
+        include './views/partials/menu-desktop-black.php';
+            include './views/partials/menu-canal.php';
         ?>
       </div>
 

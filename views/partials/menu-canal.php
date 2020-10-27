@@ -1,5 +1,5 @@
-<nav class="menu-inicial d-flex align-content-center align-items-center">
-    <div class="d-flex ">
+<nav class="menu-inicial d-flex justify-content-between align-content-center align-items-center">
+    <div class="d-flex align-items-center">
         <div class="claro-logo d-flex pl-5 ml-4">
 
             <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="menu-tablet" />
@@ -41,12 +41,13 @@
             </a>
             </div>-->
         </div>
+       
 
     </div>
    
-   <!-- <div class="d-flex align-items-center ">
+    <div class="d-flex align-items-center pr-5 user-menu-new">
       <a href="login.php" class="login-item mr-2"><img src="./images/home/user-login.svg" alt="imagen-de-login" /></a>
       <a href="index.php" class="login-item"><img class="login-country" src="" alt="seleccion-del-pais" /></a>
-    </div>-->
+    </div>
     
 </nav>

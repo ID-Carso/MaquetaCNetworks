@@ -36,7 +36,7 @@ if($_SESSION["country"] != 1){
   "contentRating": "Everyone",
   "image": "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/home/tv-1.svg",
   "name": "Claro Canal",
-  "description": "Entérate de nuestra programación y las distintas opciones que Claro TV tiene para ti.",
+  "description": "Entretenimiento por donde lo veas. En Canal Claro tenemos programación hecha para que disfruten desde los más pequeños hasta los más grandes. Las series que te hacen emocionarte, las películas con historias que te atraparán, los ánimes y los héroes que compartirán sus aventuras contigo. Y producciones propias que te informarán, te invitarán a ponerte en forma y te mostrarán todo lo que no conocías sobre las celebridades. Encender tu televisor a cualquier hora es garantía de entretenimiento con Canal Claro.",
   "dateModified": 2020
 }
 </script>
@@ -105,7 +105,9 @@ if($_SESSION["country"] != 1){
       </div>
 
       <?php
-      include './views/partials/menu-canal.php'
+      //para el menu nuevo y el anterior
+       include './views/partials/menu-desktop-black.php';
+       include './views/partials/menu-canal.php';
       ?>
       <div class="header-slider" id="banner-claro-canal">
 

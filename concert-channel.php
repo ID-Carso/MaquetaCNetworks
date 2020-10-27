@@ -38,7 +38,7 @@ if($_SESSION["country"] != 1){
   "contentRating": "Everyone",
   "image": "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/home/concert-home-img.svg",
   "name": "Concert Channel",
-  "description": "Un canal de música transmitido por el sistema Claro, donde encontrarás los mejores conciertos."
+  "description": "La música es el idioma universal, los conciertos se convierten en una hermandad de fanáticos, y Concert Channel te lleva a la primera fila de los mejores. En este canal podrás encontrar ejecuciones virtuosas, eventos emblemáticos, festivales que no te puedes perder e incluso, podrás descubrir a tus nuevos ídolos. Súbele el volumen a la música para disfrutar los eventos como si estuvieras en vivo."
 }
 </script>
 
@@ -102,7 +102,9 @@ if($_SESSION["country"] != 1){
                 ?>
             </div>
             <?php
-            include './views/partials/menu-desktop-black.php'
+            //menu nuevo y el anterior
+            include './views/partials/menu-desktop-black.php';
+            include './views/partials/menu-canal.php';
             ?>
             <div class="header-slider" id="banner-concert-channel">
             </div>

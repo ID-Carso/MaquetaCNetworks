@@ -45,7 +45,8 @@
       "@context": "https://schema.org",
       "@type": "Organization",
       "url": "http://www.claronetworks.openofficedospuntocero.info/v1.2/index.php",
-      "logo": "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/logo/claro-networks-white.svg"
+      "logo": "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/logo/claro-networks-white.svg",
+	  "description": "Claro Networks es la unidad de negocio de América Móvil, (la empresa de telecomunicaciones más grande del mundo), que produce, opera y transmite canales de televisión de paga para América Latina y TV abierta para el mercado hispano de los Estados Unidos de América. Se compone de cinco canales especializados y segmentados para llevar contenidos relevantes y entretenidos para toda la familia."
     }
 	</script>
 	

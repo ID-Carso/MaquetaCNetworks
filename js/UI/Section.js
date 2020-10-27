@@ -779,7 +779,7 @@ export default class Section {
         <div class="header-slide">
           <img src="${
             data[`block_1_image_slider_${counterCanalClaro}`]
-          }?v=${new Date().getTime()}" class="rellax" data-rellax="10">
+          }?v=${new Date().getTime()}" class="rellax" data-rellax="10" alt="banner-sliders-claro-canal">
         </div>`;
         counterCanalClaro++;
       } else {
@@ -1081,7 +1081,7 @@ export default class Section {
      <div class="header-slide">
        <img src="${
          data[`block_1_image_slider_${counterCinema}`]
-       }?v=${new Date().getTime()}" class="rellax" data-rellax="10">
+       }?v=${new Date().getTime()}" class="rellax" data-rellax="10" alt="banner-slider-cinema">
      </div>`;
         counterCinema++;
       } else {
@@ -1329,7 +1329,7 @@ export default class Section {
         <div class="header-slide">
           <img src="${
             data[`block_1_image_slider_${counterConcertChannel}`]
-          }?v=${new Date().getTime()}" class="rellax" data-rellax="10">
+          }?v=${new Date().getTime()}" class="rellax" data-rellax="10" alt="banner-slider-concert-channel">
         </div>`;
         counterConcertChannel++;
       } else {
@@ -1564,7 +1564,7 @@ export default class Section {
     for (let i = 0; i < imagesHeaderLength; i++) {
       divImageHeader += `
       <div class="header-slide">
-        <img src="${banner_images[i]}" class="rellax" data-rellax="10" alt="banner-${banner_images[i]}"/>
+        <img src="${banner_images[i]}" class="rellax" data-rellax="10" alt="banners"/>
       </div>`;
     }
     $("#banner-programming").append(divImageHeader);

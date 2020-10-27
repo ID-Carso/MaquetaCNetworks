@@ -94,7 +94,8 @@ if($_SESSION["country"] != 1){
                 ?>
             </div>
             <?php
-            include './views/partials/menu-desktop-black.php'
+            include './views/partials/menu-desktop-black.php';
+            include './views/partials/menu-canal.php';
             ?>
             <div class="header-slider" id="banner-programming">
             </div>

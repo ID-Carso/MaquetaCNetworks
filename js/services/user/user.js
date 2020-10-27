@@ -192,7 +192,7 @@ function signIn(email, password) {
   $.ajax({
     type: "POST",
     data: dataUser,
-    url: "../../adapters/user.php",
+    url: "adapters/user.php",
     beforeSend: function () {
       const loader = `
       <div class="loader">
