@@ -123,7 +123,7 @@ if($_SESSION["country"] != 1){
                 <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-right"
                     id="btn-concert-channel">
                     <a href="programacion-concert.php"><button
-                            class="btn-magenta a-text-white-semibold btn-concert-channel">VER PROGRAMACIÓN</button></a>
+                            class="btn-magenta a-text-white-semibold btn-concert-channel" >VER PROGRAMACIÓN</button></a>
                 </div>
             </div>
             <div class="today-concert-videos-container">

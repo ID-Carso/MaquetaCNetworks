@@ -70,7 +70,9 @@
                 ?>
             </div>
             <?php
-            include './views/partials/menu-desktop-black.php'
+            //menu nuevo y el anterior
+            include './views/partials/menu-desktop-black.php';
+            include './views/partials/menu-canal.php';
             ?>
             <div class="header-slider" id="banner-programming">
             </div>

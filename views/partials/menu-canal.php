@@ -9,7 +9,7 @@
             </a>
         </div>
    
-        <div class="menu-content d-flex pl-5 ml-4 justify-content-center align-items-center ">
+        <div class="menu-content d-flex pl-2 ml-4 justify-content-center align-items-center ">
             <div>
                 <a href="claro-canal.php" class="navbar-link text-decoration-none">
                     <p class="mr-5  mb-0 a-text-white-bold text-normal">Canal Claro</p>
