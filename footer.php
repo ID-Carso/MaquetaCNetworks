@@ -65,12 +65,12 @@
                          </p>
                          <div class="d-flex">
                              <div>
-                                 <a href="#" id="about_link_1_ur">
+                                 <a href="terminos.php" id="about_link_1_ur">
                                      <p class="aviso-priv-blue about_link_1_title"></p>
                                  </a>
                              </div>
                              <div>
-                                 <a href="#" id="about_link_2_url">
+                                 <a href="aviso.php" id="about_link_2_url">
                                      <p class="aviso-priv-blue about_link_2_title"></p>
                                  </a>
                              </div>

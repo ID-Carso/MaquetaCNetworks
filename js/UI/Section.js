@@ -1768,20 +1768,20 @@ function renderFooter(json) {
   $("#about_icon").attr("src", data.about_icon);
   $("#about_legend").text(data.about_legend);
 
-  $("#about_link_1_url").attr("href", data.about_link_1_url);
+  // $("#about_link_1_url").attr("href", data.about_link_1_url);
   $(".about_link_1_title").text(data.about_link_1_title);
 
-  $("#about_link_2_url").attr("href", data.about_link_2_url);
+  // $("#about_link_2_url").attr("href", data.about_link_2_url);
   $(".about_link_2_title").text(data.about_link_2_title);
 
   //seccion de aviso de privacidad  mob
   $("#about_icon_mob").attr("src", data.about_icon);
   $("#about_legend_mob").text(data.about_legend);
 
-  $("#about_link_1_url_mob").attr("href", data.about_link_1_url);
+  // $("#about_link_1_url_mob").attr("href", data.about_link_1_url);
   $("#about_link_1_title_mob").text(data.about_link_1_title);
 
-  $("#about_link_2_url_mob").attr("href", data.about_link_2_url);
+  // $("#about_link_2_url_mob").attr("href", data.about_link_2_url);
   $("#about_link_2_title_mob").text(data.about_link_2_title);
   //menu 2 desk
 
