@@ -361,7 +361,7 @@ $(document).ready(function () {
             <div class="poster">
               <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="./images/concert-channel/carrousel/${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
+                    <img src="${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
                 </div>
                 <div class="a-concert-rectangle">
                     <div class="poster-title-margin">
@@ -460,7 +460,7 @@ $(document).ready(function () {
             <div class="poster">
              <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="./images/concert-channel/carrousel/${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
+                    <img src="${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
                 </div>
                 <div class="a-concert-rectangle">
                     <div class="poster-title-margin">
@@ -501,7 +501,7 @@ $(document).ready(function () {
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
                         <p class="schedule">${favorite.time}</p>
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                 </div>
       
@@ -576,7 +576,7 @@ $(document).ready(function () {
             <div class="poster">
               <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="./images/claro-cinema/carrousel/${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
+                    <img src="${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
                 </div>
                 <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
@@ -589,7 +589,7 @@ $(document).ready(function () {
                 <div class="d-flex info-schedule justify-content-between no-gutters">
       
                     <div class="col-6">
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                     <div>
                         <button class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
@@ -617,7 +617,7 @@ $(document).ready(function () {
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
                         <p class="schedule">${favorite.time}</p>
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                 </div>
       
@@ -639,7 +639,7 @@ $(document).ready(function () {
             <div class="myList-details-container myList-details-desktop">
                 <div class="d-flex justify-content-between">
                     <div>
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
@@ -675,7 +675,7 @@ $(document).ready(function () {
             <div class="poster">
              <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="./images/claro-cinema/carrousel/${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
+                    <img src="${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
                 </div>
                 <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
@@ -688,7 +688,7 @@ $(document).ready(function () {
                 <div class="d-flex info-schedule justify-content-between no-gutters">
       
                     <div class="col-6">
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                     <div>
                         <button class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
@@ -716,7 +716,7 @@ $(document).ready(function () {
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
                         <p class="schedule">${favorite.time}</p>
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                 </div>
       
@@ -738,7 +738,7 @@ $(document).ready(function () {
             <div class="myList-details-container myList-details-desktop">
                 <div class="d-flex justify-content-between">
                     <div>
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
