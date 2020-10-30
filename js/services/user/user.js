@@ -2,7 +2,8 @@ function validateTokenPassword(tokenPassword) {
   $.ajax({
     type: "GET",
     data: tokenPassword,
-    url: "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_verify",
+    url:
+      "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_verify",
     success: function (result) {
       if (result.data) {
         console.log(result.data);
@@ -137,7 +138,8 @@ function sendUserEmail(inputEmail) {
       let formContainer = $(".formContainer");
       formContainer.prepend(loader);
     },
-    url: "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_send",
+    url:
+      "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_send",
     success: function (result) {
       if (result.data) {
         location.href = "./email-sent.php";
@@ -172,7 +174,8 @@ function sendNewPassword(inputPassword, secondInputPassword) {
       let formContainer = $(".formContainer");
       formContainer.prepend(loader);
     },
-    url: "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_password",
+    url:
+      "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_password",
     success: function (result) {
       console.log(result);
       if (result.code == 200) {
@@ -207,7 +210,7 @@ function signIn(email, password) {
       console.log(json);
       if (json.data) {
         location.href = "./home.php";
-console.log("direc v1.2");
+        console.log("direc v1.2");
         localStorage.setItem("session", 1);
 
         localStorage.setItem("id", json.data.id);
@@ -572,7 +575,6 @@ function addFavorites() {
 }
 
 function removeFavorites(user_id, program_id, removeButton, itemList) {
-  console.log(user_id, program_id);
   let heartIcon = removeButton.children(".poster-add");
   let heartIconGray = removeButton.find("path");
   let dataUser = {
@@ -584,6 +586,7 @@ function removeFavorites(user_id, program_id, removeButton, itemList) {
   $.ajax({
     type: "POST",
     data: dataUser,
+    cache: false,
     url: "../../adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
