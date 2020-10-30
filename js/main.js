@@ -97,7 +97,6 @@ $(document).ready(function () {
     getMetaKeys(actual_landing);
   }
 
-
   /* Sinópsis*/
 
   createClickThumbnails();
@@ -159,7 +158,7 @@ $(document).ready(function () {
                 <div class="d-flex info-schedule justify-content-between no-gutters">
       
                     <div class="col-6">
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                     <div>
                         <button  class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="./images/mi-lista/heart.svg" alt="agregar-a-favoritos">
@@ -169,7 +168,7 @@ $(document).ready(function () {
                 <div class="no-gutters d-flex  align-items-center justify-content-between">
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
-                        <p class="schedule">10:00 - 10:30</p>
+                        <p class="schedule">${favorite.time}</p>
       
                     </div>
                     <div class="col-6 d-flex align-items-center justify-content-end">
@@ -186,8 +185,8 @@ $(document).ready(function () {
                 <div>
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
-                        <p class="schedule">10:00 - 10:30</p>
-                        <p class="rating">Clasificación: A</p>
+                        <p class="schedule">${favorite.time}</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                 </div>
       
@@ -209,11 +208,11 @@ $(document).ready(function () {
             <div class="myList-details-container myList-details-desktop">
                 <div class="d-flex justify-content-between">
                     <div>
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
-                        <p class="schedule">10:00 - 10:30</p>
+                        <p class="schedule">${favorite.time}</p>
                     </div>
                     <div>
                         <div class="text-right mb-3">
@@ -258,7 +257,7 @@ $(document).ready(function () {
                 <div class="d-flex info-schedule justify-content-between no-gutters">
       
                     <div class="col-6">
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                     <div>
                         <button  class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="./images/mi-lista/heart.svg" alt="agregar-a-favoritos">
@@ -268,7 +267,7 @@ $(document).ready(function () {
                 <div class="no-gutters d-flex  align-items-center justify-content-between">
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
-                        <p class="schedule">10:00 - 10:30</p>
+                        <p class="schedule">${favorite.time}</p>
       
                     </div>
                     <div class="col-6 d-flex align-items-center justify-content-end">
@@ -285,8 +284,8 @@ $(document).ready(function () {
                 <div>
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
-                        <p class="schedule">10:00 - 10:30</p>
-                        <p class="rating">Clasificación: A</p>
+                        <p class="schedule">${favorite.time}</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                 </div>
       
@@ -308,11 +307,11 @@ $(document).ready(function () {
             <div class="myList-details-container myList-details-desktop">
                 <div class="d-flex justify-content-between">
                     <div>
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
-                        <p class="schedule">10:00 - 10:30</p>
+                        <p class="schedule">${favorite.time}</p>
                     </div>
                     <div>
                         <div class="text-right mb-3">
@@ -375,7 +374,7 @@ $(document).ready(function () {
                 <div class="d-flex info-schedule justify-content-between no-gutters">
       
                     <div class="col-6">
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                     <div>
                         <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
@@ -385,7 +384,7 @@ $(document).ready(function () {
                 <div class="no-gutters d-flex  align-items-center justify-content-between">
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
-                        <p class="schedule">10:00 - 10:30</p>
+                        <p class="schedule">${favorite.time}</p>
       
                     </div>
                     <div class="col-6 d-flex align-items-center justify-content-end">
@@ -402,8 +401,8 @@ $(document).ready(function () {
                 <div>
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
-                        <p class="schedule">10:00 - 10:30</p>
-                        <p class="rating">Clasificación: A</p>
+                        <p class="schedule">${favorite.time}</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                 </div>
       
@@ -425,11 +424,11 @@ $(document).ready(function () {
             <div class="myList-details-container myList-details-desktop">
                 <div class="d-flex justify-content-between">
                     <div>
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
-                        <p class="schedule">10:00 - 10:30</p>
+                        <p class="schedule">${favorite.time}</p>
                     </div>
                     <div>
                         <div class="text-right mb-3">
@@ -474,7 +473,7 @@ $(document).ready(function () {
                 <div class="d-flex info-schedule justify-content-between no-gutters">
       
                     <div class="col-6">
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                     <div>
                         <button class="button-none remove-program" _id="${favorite.chapter_id}"  type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
@@ -484,7 +483,7 @@ $(document).ready(function () {
                 <div class="no-gutters d-flex  align-items-center justify-content-between">
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
-                        <p class="schedule">10:00 - 10:30</p>
+                        <p class="schedule">${favorite.time}</p>
       
                     </div>
                     <div class="col-6 d-flex align-items-center justify-content-end">
@@ -501,7 +500,7 @@ $(document).ready(function () {
                 <div>
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
-                        <p class="schedule">10:00 - 10:30</p>
+                        <p class="schedule">${favorite.time}</p>
                         <p class="rating">Clasificación: A</p>
                     </div>
                 </div>
@@ -524,11 +523,11 @@ $(document).ready(function () {
             <div class="myList-details-container myList-details-desktop">
                 <div class="d-flex justify-content-between">
                     <div>
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
-                        <p class="schedule">10:00 - 10:30</p>
+                        <p class="schedule">${favorite.time}</p>
                     </div>
                     <div>
                         <div class="text-right mb-3">
@@ -600,7 +599,7 @@ $(document).ready(function () {
                 <div class="no-gutters d-flex  align-items-center justify-content-between">
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
-                        <p class="schedule">10:00 - 10:30</p>
+                        <p class="schedule">${favorite.time}</p>
       
                     </div>
                     <div class="col-6 d-flex align-items-center justify-content-end">
@@ -617,7 +616,7 @@ $(document).ready(function () {
                 <div>
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
-                        <p class="schedule">10:00 - 10:30</p>
+                        <p class="schedule">${favorite.time}</p>
                         <p class="rating">Clasificación: A</p>
                     </div>
                 </div>
@@ -644,7 +643,7 @@ $(document).ready(function () {
                     </div>
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
-                        <p class="schedule">10:00 - 10:30</p>
+                        <p class="schedule">${favorite.time}</p>
                     </div>
                     <div>
                         <div class="text-right mb-3">
@@ -699,7 +698,7 @@ $(document).ready(function () {
                 <div class="no-gutters d-flex  align-items-center justify-content-between">
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
-                        <p class="schedule">10:00 - 10:30</p>
+                        <p class="schedule">${favorite.time}</p>
       
                     </div>
                     <div class="col-6 d-flex align-items-center justify-content-end">
@@ -716,7 +715,7 @@ $(document).ready(function () {
                 <div>
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
-                        <p class="schedule">10:00 - 10:30</p>
+                        <p class="schedule">${favorite.time}</p>
                         <p class="rating">Clasificación: A</p>
                     </div>
                 </div>
@@ -743,7 +742,7 @@ $(document).ready(function () {
                     </div>
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
-                        <p class="schedule">10:00 - 10:30</p>
+                        <p class="schedule">${favorite.time}</p>
                     </div>
                     <div>
                         <div class="text-right mb-3">
@@ -1049,7 +1048,9 @@ $(document).ready(function () {
     let usernewmenu = $(".user-menu-new");
     let sidebarHeader = $(".sidebar-header");
     let userName = localStorage.getItem("name");
-    let avatar = `<img src="${localStorage.getItem("avatar")}" alt="imagen-de-avatar" />`;
+    let avatar = `<img src="${localStorage.getItem(
+      "avatar"
+    )}" alt="imagen-de-avatar" />`;
 
     let menuMobile = `            
       <div class="d-flex align-items-center">
@@ -1087,7 +1088,7 @@ $(document).ready(function () {
       <a href="index.php" class="login-item options-item"><img class="login-country" src="" alt="seleccion-de-pais" /></a>
       </div>
       `;
-      let menuIngresoNew = `
+    let menuIngresoNew = `
       <div class="menu-ingreso pt-4 pr-5">
       <div class="icon-user position-relative mr-3">
         <div class="tooltip-logout">
@@ -1108,7 +1109,7 @@ $(document).ready(function () {
       <a href="configuracion.php"><img class="mr-3 options-item" src="./images/menu/configuracion-icon.png" alt="configuracion-de-la-cuenta" /></a>
       <a href="index.php" class="login-item options-item"><img class="login-country" src="" alt="seleccion-de-pais" /></a>
       </div>
-      `;   
+      `;
     sidebarContent.append(sidebarItem);
     sidebarHeader.html(menuMobile);
     userOptions.html(menuIngreso);
@@ -1324,8 +1325,10 @@ $(document).ready(function () {
       dots: true,
       centerMode: false,
       arrows: true,
-      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
+      prevArrow:
+        '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+      nextArrow:
+        '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
       responsive: [
         {
           breakpoint: 768,
@@ -1392,8 +1395,10 @@ $(document).ready(function () {
     dots: true,
     centerMode: false,
     arrows: true,
-    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
+    prevArrow:
+      '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+    nextArrow:
+      '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
 
     responsive: [
       {
@@ -1481,8 +1486,10 @@ $(document).ready(function () {
     dots: true,
     centerMode: false,
     arrows: true,
-    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
+    prevArrow:
+      '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+    nextArrow:
+      '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
     responsive: [
       {
         breakpoint: 768,
@@ -1540,7 +1547,6 @@ $(document).ready(function () {
       },
     ],
   });
-
 
   let date = new Date();
   let day = ("0" + date.getDate()).slice(-2);
@@ -1693,9 +1699,7 @@ $(document).ready(function () {
   $(".contnt-hide").hide();
 
   $("ul.tv-list li").click(function () {
-    $("ul.tv-list li").removeClass(
-      "active-navItem "
-    );
+    $("ul.tv-list li").removeClass("active-navItem ");
     $(this).addClass("active-navItem ");
     $(".tv-content").hide();
     var activeNav = $(this).attr("rel");
@@ -1808,8 +1812,10 @@ function createCinemaHomeSlider() {
     dots: true,
     centerMode: false,
     arrows: true,
-    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
+    prevArrow:
+      '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+    nextArrow:
+      '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
 
     responsive: [
       {
@@ -1889,8 +1895,10 @@ function createTvSlider() {
     dots: true,
     centerMode: false,
     arrows: true,
-    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
+    prevArrow:
+      '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+    nextArrow:
+      '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
     responsive: [
       {
         breakpoint: 768,

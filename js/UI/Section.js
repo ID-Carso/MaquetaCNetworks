@@ -230,11 +230,11 @@ export default class Section {
             
                     <button type="button" class="poster-button remove-program" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-icon-white.svg" alt="agregar-a-favoritos"/></button>
                 </div>
-                  <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
+                  <a  href="./sinopsis.php?id=${program.chapter_id}">
                     <div class="thumbnail-large">
                         <img src="${block3Image[i].image_vertical}" alt="imagen-de-${block3Image[i].image_vertical}"/>
                     </div>
-                  </div>
+                  </a>
             </div>
           </div> 
             `;
@@ -247,7 +247,7 @@ export default class Section {
                   <div class="showtime-container justify-content-end">
                       <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos"/></button>
                   </div>
-                  <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
+                  <div>
                       <div class="thumbnail-large">
                           <img src="${block3Image[i].image_vertical}" alt="imagen-de-${block3Image[i].image_vertical}"/>
                       </div>
@@ -262,11 +262,11 @@ export default class Section {
                   <div class="showtime-container justify-content-end">
                       <button type="button" class="poster-button add-favorites" _id=${block3Image[i].chapter_id}><img class="poster-add" src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos"/></button>
                   </div>
-                  <div class="thumbnail-body" _id=${block3Image[i].chapter_id}">
+                  <a  href="./sinopsis.php?id=${program.chapter_id}">
                       <div class="thumbnail-large">
                           <img src="${block3Image[i].image_vertical}" alt="imagen-de-${block3Image[i].image_vertical}">
                       </div>
-                  </div>
+                  </a>
               </div>
           </div> 
               `;
@@ -423,7 +423,7 @@ export default class Section {
 
     $(".concert-home-slider").append(concertHomeVideosMobile);
 
-  /*  //CUADROS DE EDITAR PARA CONCERT-HOME
+    /*  //CUADROS DE EDITAR PARA CONCERT-HOME
     let concertHomeVideosMobileprev = "";
     for (let i = 0; i < blockImage4Length; i++) {
       if (arrayFavoritesId.includes(block4Image[i].chapter_id)) {
@@ -578,7 +578,7 @@ export default class Section {
 
     $(".cinema-home-slider").append(cinemaHomeVideosMobile);
 
-   /* //CUADROS PARA EDITAR CINEMA
+    /* //CUADROS PARA EDITAR CINEMA
     let cinemaHomeVideosMobileprev = "";
     for (let i = 0; i < blockImage5Length; i++) {
       if (arrayFavoritesId.includes(block5Image[i].chapter_id)) {
@@ -637,8 +637,10 @@ export default class Section {
       dots: true,
       centerMode: false,
       arrows: true,
-      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
+      prevArrow:
+        '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+      nextArrow:
+        '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
 
       responsive: [
         {
@@ -795,8 +797,10 @@ export default class Section {
       dots: true,
       centerMode: false,
       arrows: false,
-      prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
-      nextArrow: '<img src="./images/sliders/next.png" class="arrow-next"  alt="flecha-derecha" />',
+      prevArrow:
+        '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
+      nextArrow:
+        '<img src="./images/sliders/next.png" class="arrow-next"  alt="flecha-derecha" />',
       autoplay: true,
       autoplaySpeed: 2000,
     });
@@ -836,8 +840,10 @@ export default class Section {
         dots: true,
         centerMode: false,
         arrows: false,
-        prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-        nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
+        prevArrow:
+          '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+        nextArrow:
+          '<img src="./images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
         autoplay: true,
         autoplaySpeed: 2000,
       });
@@ -849,8 +855,10 @@ export default class Section {
         dots: true,
         centerMode: false,
         arrows: false,
-        prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-        nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
+        prevArrow:
+          '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+        nextArrow:
+          '<img src="./images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
         autoplay: true,
         autoplaySpeed: 2000,
       });
@@ -988,7 +996,7 @@ export default class Section {
         `;
       }
 
-     /* programTienesQueVerloEdit += `
+      /* programTienesQueVerloEdit += `
       <div class="poster p-3 border-l border-r border-b border-t position-relative">
       <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
         <div class="poster-body">
@@ -1044,7 +1052,7 @@ export default class Section {
         `;
       }
 
-    /*  programExlusiveContentEdit += `
+      /*  programExlusiveContentEdit += `
       <div class="poster border-l p-3 border-r border-t border-b" >
         <div class="poster-body">
             <div class="thumbnail-body" _id="${program.chapter_id}">
@@ -1090,19 +1098,21 @@ export default class Section {
     }
 
     $("#banner-claro-cinema").append(slideBannerClaroCinema);
-      $("#banner-claro-cinema").not(".slick-initialized").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: true,
-        centerMode: false,
-        arrows: false,
-        prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
-        nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
-        autoplay: true,
-        autoplaySpeed: 2000,
-      });
-      
+    $("#banner-claro-cinema").not(".slick-initialized").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      dots: true,
+      centerMode: false,
+      arrows: false,
+      prevArrow:
+        '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
+      nextArrow:
+        '<img src="./images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+
     $("#banner-claro-cinema-edi").append(slideBannerClaroCinema);
     $("#banner-claro-cinema-edi")
       .not(".slick-initialized")
@@ -1130,36 +1140,38 @@ export default class Section {
         },
       });
 
-      
-
-      try {
-        $(".header-slider").slick("unslick");
-        $(".header-slider").slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: false,
-          dots: true,
-          centerMode: false,
-          arrows: false,
-          prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-          nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
-          autoplay: true,
-          autoplaySpeed: 2000,
-        });
-      } catch (error) {
-        $(".header-slider").slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: false,
-          dots: true,
-          centerMode: false,
-          arrows: false,
-          prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
-          nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
-          autoplay: true,
-          autoplaySpeed: 2000,
-        });
-      }
+    try {
+      $(".header-slider").slick("unslick");
+      $(".header-slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+        centerMode: false,
+        arrows: false,
+        prevArrow:
+          '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+        nextArrow:
+          '<img src="./images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    } catch (error) {
+      $(".header-slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+        centerMode: false,
+        arrows: false,
+        prevArrow:
+          '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
+        nextArrow:
+          '<img src="./images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    }
     //BLOQUE 2 Seccion de programacion
     //cambiamos el icono del landing
     $("#icon_claro_cinema").attr("src", data.block_2_icon_channel);
@@ -1347,8 +1359,10 @@ export default class Section {
       dots: true,
       centerMode: false,
       arrows: false,
-      prevArrow: '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-      nextArrow: '<img src="./images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
+      prevArrow:
+        '<img src="./images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+      nextArrow:
+        '<img src="./images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
       autoplay: true,
       autoplaySpeed: 2000,
     });
@@ -1641,8 +1655,8 @@ export default class Section {
                 <img src="${
                   banner_images[i]
                 }?v=${new Date().getTime()}" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" alt="banner-de-programacion-${
-                  banner_images[i]
-                }" />
+        banner_images[i]
+      }" />
             </label>
         </div>`;
     }
@@ -1739,7 +1753,6 @@ export default class Section {
       $(".terms_text").height("auto");
       $(".terms_text").height($(".terms_text").prop("scrollHeight"));
     });
-  
   }
 }
 
@@ -1777,20 +1790,20 @@ function renderFooter(json) {
   $("#about_icon").attr("src", data.about_icon);
   $("#about_legend").text(data.about_legend);
 
-  $("#about_link_1_url").attr("href", data.about_link_1_url);
+  // $("#about_link_1_url").attr("href", data.about_link_1_url);
   $(".about_link_1_title").text(data.about_link_1_title);
 
-  $("#about_link_2_url").attr("href", data.about_link_2_url);
+  // $("#about_link_2_url").attr("href", data.about_link_2_url);
   $(".about_link_2_title").text(data.about_link_2_title);
 
   //seccion de aviso de privacidad  mob
   $("#about_icon_mob").attr("src", data.about_icon);
   $("#about_legend_mob").text(data.about_legend);
 
-  $("#about_link_1_url_mob").attr("href", data.about_link_1_url);
+  // $("#about_link_1_url_mob").attr("href", data.about_link_1_url);
   $("#about_link_1_title_mob").text(data.about_link_1_title);
 
-  $("#about_link_2_url_mob").attr("href", data.about_link_2_url);
+  // $("#about_link_2_url_mob").attr("href", data.about_link_2_url);
   $("#about_link_2_title_mob").text(data.about_link_2_title);
   //menu 2 desk
 
