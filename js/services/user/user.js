@@ -273,10 +273,10 @@ function signOut() {
   localStorage.removeItem("name");
   localStorage.removeItem("birthday");
   localStorage.removeItem("year");
-  localStorage.removeItem("src");
   localStorage.removeItem("favoritesCanalClaro");
   localStorage.removeItem("favoritesConcertChannel");
   localStorage.removeItem("favoritesClaroCinema");
+ 
 }
 
 function updateDataUser(id, gender, date, country) {

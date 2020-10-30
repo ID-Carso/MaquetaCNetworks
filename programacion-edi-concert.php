@@ -142,7 +142,7 @@
             <!--dots-->
 
 
-            <div class="program-image-slider  mx-auto" id="banner-programming-edi">
+            <div class="program-image-slider  mx-auto totales" id="banner-programming-edi">
             </div>
             <div class="d-flex position-absolute programming-dots space-do">
                 <div class=" d-inline-block position-relative programming-slider-dots align-items-center">
@@ -285,7 +285,7 @@
 
                 </div>
         </main>
-        
+     
         <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
         <script>
             var socketProgramacion = new easyXDM.Socket({
@@ -307,10 +307,14 @@
             })
             $('.programacion-header').on("click", ".slider-pagination-item", function () {
                 let type = "slider-pagination";
+              // let total = parseInt($(".totales").text());
                 let data = {
-                    id: 0,
-                    type: type
+                    id_slide: $(this).attr("slide_index"),
+                    totales: $(".totales").val(),
+                     type: type
+                    
                 }
+               console.log(data);
                 var json = JSON.stringify(data);
                 socketProgramacion.postMessage(json);
             })

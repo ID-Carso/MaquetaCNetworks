@@ -2013,15 +2013,16 @@ $(".slider-pagination-add").click(function () {
   //Cada vez que se haga click, el contador incrementa
   slideIndex++;
   //Agregamos un slide al slider de programación
-  $(".program-image-slider").slick(
+ $("#banner-programming-edi").slick(
     "slickAdd",
-    `
+    `<div>
   <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
-  <label for="image_logo${slideIndex}" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
+  <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
   <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" alt="imagen-default-sinopsis" />
   </label>
 </div>
-
+</div>
   `
   );
+ 
 });

@@ -126,6 +126,7 @@ function signOut() {
   localStorage.removeItem("birthday");
   localStorage.removeItem("year");
   localStorage.removeItem("src");
+  localStorage.setItem("src", "images/paises/gmt-icon.svg")
 }
 
 function updateDataUser(id, gender, date, country) {
