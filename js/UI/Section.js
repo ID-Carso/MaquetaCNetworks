@@ -1238,93 +1238,138 @@ export default class Section {
         break;
       }
     }
+
+    //Verificamos si se tienen programas en la base de datos para los carruseles
+    let Strinfcarrusel1 = "";
+    let Strinfcarrusel2 = "";
+    if (carrusel1.length === 0) {
+      for (let index = 0; index < 5; index++) {
+        Strinfcarrusel1 += `
+        <div class="poster cursor-auto">
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/default/cinema-horizontal-slider.jpg" alt="imagen-de-claro-cinema"/>
+                  </div>
+                  <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white"></p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+    } else {
+      carrusel1.forEach((program) => {
+        if (program.landing_synopsis === 0) {
+          Strinfcarrusel1 += `
+          <div class="poster cursor-auto">
+            <div class="poster-body">
+                <div>
+                    <div class="thumbnail">
+                        <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
+                    </div>
+                    <div class="a-cinema-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">${program.genre}</p>
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          `;
+        } else {
+          Strinfcarrusel1 += `
+          <div class="poster cursor-pointer">
+            <div class="poster-body">
+                <div class="thumbnail-body" _id="${program.chapter_id}">
+                    <div class="thumbnail">
+                        <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
+                    </div>
+                    <div class="a-cinema-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">${program.genre}</p>
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          `;
+        }
+      });
+    }
+
+    if (carrusel2.length === 0) {
+      for (let index = 0; index < 5; index++) {
+        Strinfcarrusel2 += `
+        <div class="poster cursor-auto">
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/default/cinema-horizontal-slider.jpg" alt="imagen-de-claro-cinema"/>
+                  </div>
+                  <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white"></p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+    } else {
+      carrusel2.forEach((program) => {
+        if (program.landing_synopsis === 0) {
+          Strinfcarrusel2 += `
+          <div class="poster cursor-auto">
+            <div class="poster-body">
+                <div>
+                    <div class="thumbnail">
+                        <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
+                    </div>
+                    <div class="a-cinema-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">${program.title}</p>
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div> 
+          `;
+        } else {
+          Strinfcarrusel2 += `
+          <div class="poster cursor-pointer" >
+            <div class="poster-body">
+                <div class="thumbnail-body" _id="${program.chapter_id}">
+                    <div class="thumbnail">
+                        <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
+                    </div>
+                    <div class="a-cinema-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">${program.title}</p>
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          `;
+        }
+      });
+    }
+
     let slider = new Slider();
     let claro_cinema_carrusel_1 = $("#claro_cinema_carrusel_1");
     let sectionSlider = $(".section-slider");
     let claro_cinema_carrusel_2 = $("#claro_cinema_carrusel_2");
     sectionSlider.slick("unslick");
 
-    let Strinfcarrusel1 = "";
-    let Strinfcarrusel2 = "";
     /*
       Almacenamos los programas en otras variables para dibujar los programas con bordes.
       Esto  para la parevisualización en Backoffice de los landings
     */
-    carrusel1.forEach((program) => {
-      if (program.landing_synopsis === 0) {
-        Strinfcarrusel1 += `
-        <div class="poster cursor-auto">
-          <div class="poster-body">
-              <div>
-                  <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
-                  </div>
-                  <div class="a-cinema-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                          <p class="a-poster-text-white">${program.genre}</p>
-                      </div>
-                  </div>
-            </div>
-          </div>
-        </div>
-        `;
-      } else {
-        Strinfcarrusel1 += `
-        <div class="poster cursor-pointer">
-          <div class="poster-body">
-              <div class="thumbnail-body" _id="${program.chapter_id}">
-                  <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
-                  </div>
-                  <div class="a-cinema-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                          <p class="a-poster-text-white">${program.genre}</p>
-                      </div>
-                  </div>
-            </div>
-          </div>
-        </div>
-        `;
-      }
-    });
-
-    carrusel2.forEach((program) => {
-      if (program.landing_synopsis === 0) {
-        Strinfcarrusel2 += `
-        <div class="poster cursor-auto">
-          <div class="poster-body">
-              <div>
-                  <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
-                  </div>
-                  <div class="a-cinema-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                          <p class="a-poster-text-white">${program.title}</p>
-                      </div>
-                  </div>
-            </div>
-          </div>
-        </div> 
-        `;
-      } else {
-        Strinfcarrusel2 += `
-        <div class="poster cursor-pointer" >
-          <div class="poster-body">
-              <div class="thumbnail-body" _id="${program.chapter_id}">
-                  <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
-                  </div>
-                  <div class="a-cinema-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                          <p class="a-poster-text-white">${program.title}</p>
-                      </div>
-                  </div>
-            </div>
-          </div>
-        </div>
-        `;
-      }
-    });
 
     claro_cinema_carrusel_1.append(Strinfcarrusel1);
     claro_cinema_carrusel_2.append(Strinfcarrusel2);

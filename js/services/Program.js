@@ -18,85 +18,83 @@ function recreateClickCalendar() {
 }
 
 function createProgramacionSlider() {
-  let programacion_slider = $(".programacion-slider")
-    .slick({
-      /**/
-      responsive: [
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 7,
-            slidesToScroll: 7,
-            autoplay: false,
-            centerMode: false,
-            infinite: true,
-            arrows: false,
-            dots: true,
-          },
+  let programacion_slider = $(".programacion-slider").slick({
+    /**/
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 7,
+          slidesToScroll: 7,
+          autoplay: false,
+          centerMode: false,
+          infinite: true,
+          arrows: false,
+          dots: true,
         },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 8,
-            slidesToScroll: 8,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
-          },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 8,
+          slidesToScroll: 8,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
         },
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 11,
-            slidesToScroll: 11,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
-          },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 11,
+          slidesToScroll: 11,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
         },
-        {
-          breakpoint: 1900,
-          settings: {
-            slidesToShow: 11,
-            slidesToScroll: 11,
-            infinite: true,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
-          },
+      },
+      {
+        breakpoint: 1900,
+        settings: {
+          slidesToShow: 11,
+          slidesToScroll: 11,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
         },
-        {
-          breakpoint: 10000,
-          settings: {
-            slidesToShow: 17,
-            slidesToScroll: 17,
-            infinite: false,
-            dots: true,
-            centerMode: false,
-            arrows: true,
-            prevArrow:
-              '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-            nextArrow:
-              '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
-          },
+      },
+      {
+        breakpoint: 10000,
+        settings: {
+          slidesToShow: 17,
+          slidesToScroll: 17,
+          infinite: false,
+          dots: true,
+          centerMode: false,
+          arrows: true,
+          prevArrow:
+            '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+          nextArrow:
+            '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
         },
-      ],
-    });
-   
+      },
+    ],
+  });
 }
 
 function createClickThumbnails() {
@@ -128,8 +126,10 @@ function createTvSlider(container) {
     dots: true,
     centerMode: false,
     arrows: true,
-    prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-    nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
+    prevArrow:
+      '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+    nextArrow:
+      '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
     responsive: [
       {
         breakpoint: 768,
@@ -194,7 +194,6 @@ function destroySlider(container) {
 }
 
 function getPrograms(date, country) {
-   
   let dataProgram = {
     function: "getPrograms",
     // function: "getProgramsGMT",
@@ -1280,7 +1279,7 @@ function getPrograms(date, country) {
                                         <div class="thumbnail">
                                             <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
                                         </div>
-                                        <div class="a-cinenam-rectangle thumbnail-info-title">
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
                                                 <p class="a-poster-text-white">${program.chapter_title}</p>
                                             </div>
@@ -1301,7 +1300,7 @@ function getPrograms(date, country) {
                                         <div class="thumbnail">
                                             <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
                                         </div>
-                                        <div class="a-cinenam-rectangle thumbnail-info-title">
+                                        <div class="a-cinema-rectangle thumbnail-info-title">
                                             <div class="poster-title-margin">
                                                 <p class="a-poster-text-white">${program.chapter_title}</p>
                                             </div>
@@ -1511,7 +1510,7 @@ function getPrograms(date, country) {
       //cuadros para editar
 
       programingClaroCinema.forEach((program, index) => {
-      //  let programClaroCinema;
+        //  let programClaroCinema;
         if (index == 0) {
           if (arrayClaroCinema.includes(program.chapter_id)) {
             programClaroCinema = `
@@ -1707,11 +1706,11 @@ function showSynopsis(id) {
 }
 
 function getProgramming(date, withLoader) {
-    console.log("programming");
+  console.log("programming");
   let data = {
     function: "getProgramming",
     date,
-   country: "gmt",
+    country: "gmt",
   };
   $.ajax({
     type: "POST",
@@ -1992,11 +1991,11 @@ function getProgramming(date, withLoader) {
         //Insertar programas para edición en backoffice
         $(".claro-content-edit").html(programCanalClaroEdit);
         //Insertar programas en página
-       // $(".claro-content").html(programCanalClaro);
+        // $(".claro-content").html(programCanalClaro);
         //Insertar programas en página
         $(".concert-content").html(programConcertChannel);
         $(".concert-content-edit").html(programConcertChannelEdit);
-       // $(".cinema-content").html(programClaroCinema);
+        // $(".cinema-content").html(programClaroCinema);
         $(".cinema-content-edit").html(programClaroCinemaEdit);
       }
     },
