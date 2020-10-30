@@ -85,18 +85,24 @@
                 <div class="row no-gutters">
                     <ul class="tv-list-programming col-md-11">
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="claro-canal-programing" class="nav-li">
-                                <img class="claro-nav-image" src="" alt="logo-claro-canal" id="icon_canal_claro" />
+                            <li rel="claro-canal-programing" class="nav-li  d-flex justify-content-center mr-3" >
+                               <div class=" h-image-prog d-flex align-items-center justify-content-center">
+                                <img class="claro-nav-image " src="" alt="logo-claro-canal" id="icon_canal_claro" />
+                            </div>
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="concert-channel-programing" class="nav-li">
-                                <img class="nav-image" src="" alt="logo-concert-channel" id="icon_concert_channel" />
+                            <li rel="concert-channel-programing" class="nav-li  d-flex justify-content-center mr-3 ml-3" >
+                               <div class=" h-image-prog d-flex align-items-center justify-content-center">
+                                <img class="nav-image " src="" alt="logo-concert-channel" id="icon_concert_channel" />
+                            </div>
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
-                            <li rel="claro-cinema-programing" class="active-navItem nav-li">
-                                <img class="nav-image" src="" alt="logo-claro-cienma" id="icon_claro_cinema" />
+                            <li rel="claro-cinema-programing" class="active-navItem nav-li ml-3 d-flex justify-content-center" >
+                               <div class=" h-image-prog d-flex align-items-center justify-content-center">
+                                <img class="nav-image " src="" alt="logo-claro-cienma" id="icon_claro_cinema" />
+                            </div>
                             </li>
                         </div>
 

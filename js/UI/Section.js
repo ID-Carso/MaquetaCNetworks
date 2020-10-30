@@ -1183,6 +1183,7 @@ export default class Section {
     //cambiando url de programacion
     $("#btn-claro-cinema a").attr("href", data.block_2_button_url);
     $(".btn-claro-cinema").text(data.block_2_button_title);
+   
 
     //BLOQUE 3 Seccion de video
     $("#a-cinema-title").text(data.block_3_title_1);
@@ -1422,19 +1423,22 @@ export default class Section {
       appendDots: $(".programming-slider-dots"),
       centerMode: false,
       arrows: false,
-      prevArrow:
-        '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-      nextArrow:
-        '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
+      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
+     
       customPaging: function (slider, i) {
-        var thumb = $(slider.$slides[i]).data();
+        
+
+        var thumb = $(slider.$slides[i]).data(); 
+   
         return (
-          "<p class='a-text-bold-tealblue slider-pagination-item pag ' slide_index=" +
+          "<p class='a-text-bold-tealblue slider-pagination-item pag  ' slide_index=" +
           i +
           ">" +
           (i + 1) +
-          "</p> "
+          "</p> " 
         );
+       
       },
     });
     let headerSlider = $(".header-slider");
@@ -1761,13 +1765,16 @@ export default class Section {
         arrows: false,
         customPaging: function (slider, i) {
           var thumb = $(slider.$slides[i]).data();
+          var totales = $(".totales");
+          totales.val(slider.slideCount);
           return (
-            "<p class='a-text-bold-tealblue slider-pagination-item pag' slide_index=" +
+            "<p class='a-text-bold-tealblue slider-pagination-item pag ' slide_index=" +
             i +
             ">" +
-            (i + 1) +
+            (i + 1) + 
             "</p> "
           );
+          
         },
       });
 

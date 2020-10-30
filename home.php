@@ -138,18 +138,24 @@ if ($_SESSION["country"] != 1) {
                 <div class="row no-gutters">
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="claro-canal" class=" active-navItem nav-li mr-3 p-3">
-                                <img class="claro-nav-image" src="" alt="logo-claro-canal" title="programacion-canal-claro"/>
+                            <li rel="claro-canal" class=" active-navItem nav-li mr-3 p-3 d-flex justify-content-center" >
+                               <div class=" h-image-prog d-flex align-items-center justify-content-center">
+                               <img class="claro-nav-image " src="" alt="logo-claro-canal" title="programacion-canal-claro"/>
+                               </div>
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="concert-channel" class="nav-li mr-3 ml-3 p-3">
-                                <img class="nav-image concert-nav-image" src="" alt="logo-concert-channel" title="programacion-concert-channel" />
+                            <li rel="concert-channel" class="nav-li mr-3 ml-3 p-3 d-flex justify-content-center">
+                               <div class="h-image-prog d-flex align-items-center justify-content-center">
+                               <img class="nav-image concert-nav-image " src="" alt="logo-concert-channel" title="programacion-concert-channel" />
+                               </div>
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
-                            <li rel="claro-cinema" class="nav-li ml-3 p-3">
-                                <img class="nav-image cinema-nav-image" src="" alt="logo-claro-cinema" title="programacion-claro-cinema" />
+                            <li rel="claro-cinema" class="nav-li ml-3 p-3 d-flex justify-content-centerr">
+                              <div class="h-image-prog d-flex align-items-center justify-content-center">
+                              <img class="nav-image cinema-nav-image " src="" alt="logo-claro-cinema" title="programacion-claro-cinema" />
+                              </div>
                             </li>
                         </div>
 
@@ -187,9 +193,11 @@ if ($_SESSION["country"] != 1) {
             <!--Sección Canal Claro mobile-->
             <div class="claro-canal-mobile">
                 <div class="m-home-titles text-center">
+                <div class="h-image d-flex align-items-center justify-content-center">
                     <a href="claro-canal.php" class="home-title-link">
-                        <img src="" class="claro-image-header" alt="logo-claro-canal"/>
+                        <img src="" class="claro-image-header object-cover" alt="logo-claro-canal"/>
                     </a>
+                </div>
                     <h2 class="a-subtitle a-claro-home-subtitle">
                         <!--LO MEJOR EN SERIES Y <br><span>PELÍCULAS INTERNACIONALES</span>-->
 
@@ -207,9 +215,11 @@ if ($_SESSION["country"] != 1) {
             <div class="claro-canal-tablet">
                 <div class="d-flex justify-content-between align-items-center home-section-header claro-section-header">
                     <div class="m-home-titles">
+                   <div class="h-image d-flex align-items-center justify-content-center">
                         <a href="claro-canal.php" class="home-title-link">
-                            <img src="./images/home/tv-1.svg" class="claro-image-header" alt="logo-canal-claro"/>
+                            <img src="./images/home/tv-1.svg" class="claro-image-header object-cover" alt="logo-canal-claro"/>
                         </a>
+                     </div> 
                         <h2 class="a-subtitle a-claro-home-subtitle">
                             <!--LO MEJOR EN SERIES Y <span class="a-claro-channel-subtitle-bold">PELÍCULAS
                                 INTERNACIONALES</span>-->
@@ -241,10 +251,12 @@ if ($_SESSION["country"] != 1) {
             <div class="claro-canal-desktop">
                 <div class="d-flex justify-content-between align-items-center home-section-header claro-section-header">
                     <div class="m-home-titles">
+                    <div class="h-image d-flex align-items-center justify-content-center">
                         <a href="claro-canal.php" class="home-title-link">
-                            <img src="./images/home/tv-1.svg" class="claro-image-header" alt="logo-claro-canal"/>
+                            <img src="./images/home/tv-1.svg" class="claro-image-header object-cover" alt="logo-claro-canal"/>
                         </a>
-                        <h2 class="a-subtitle a-claro-home-subtitle">
+                        </div>
+                        <h2 class="a-subtitle a-claro-home-subtitle pt-2">
 
                         </h2>
                     </div>
@@ -273,9 +285,11 @@ if ($_SESSION["country"] != 1) {
             <!--Versión para mobile-->
             <div class="concert-channel-mobile">
                 <div class="m-home-titles text-center">
+                    <div class="h-image d-flex align-items-center justify-content-center">
                     <a href="concert-channel.php" class="home-title-link">
-                        <img src="./images/home/concert-home-img.svg" class="concerthome-image-header" alt="logo-concert-channel"/>
+                        <img src="./images/home/concert-home-img.svg" class="concerthome-image-header object-cover" alt="logo-concert-channel"/>
                     </a>
+                 </div>
                     <h2 class="a-concert-channel-subtitle a-concert-home-subtitle">
                         <!--CONCIERTOS, ENTREVISTAS<br><span>Y MUCHO MÁS</span>-->
 
@@ -293,9 +307,11 @@ if ($_SESSION["country"] != 1) {
             <div class="concert-channel-tablet">
                 <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
-                        <a href="concert-channel.php" class="home-title-link">
-                            <img src="./images/home/concert-home-img.svg" class="concerthome-image-header" alt="logo-concert-channel-tablet"/>
-                        </a>
+                        <div class="h-image d-flex align-items-center ">
+                            <a href="concert-channel.php" class="home-title-link">
+                                <img src="./images/home/concert-home-img.svg" class="concerthome-image-header object-cover" alt="logo-concert-channel-tablet"/>
+                            </a>
+                          </div>
                         <p class="a-concert-subtitle concert-first-subtitle a-concert-home-subtitle"></p>
                         <!--<p class="a-concert-subtitle concert-second-subtitle">Entrevistas y mucho más</p>-->
                     </div>
@@ -325,10 +341,12 @@ if ($_SESSION["country"] != 1) {
             <div class="concert-channel-desktop">
                 <div class="d-flex justify-content-between align-items-center home-section-header concert-section-header">
                     <div class="m-home-titles">
+                    <div class="h-image d-flex align-items-center ">
                         <a href="concert-channel.php" class="home-title-link">
-                            <img class="concerthome-image-header" src="./images/home/concert-home-img.svg" alt="logo-concert-channel"/>
+                            <img class="concerthome-image-header object-cover" src="./images/home/concert-home-img.svg" alt="logo-concert-channel"/>
                         </a>
-                        <h2 class="text-white a-subtitle a-concert-home-subtitle"></h2>
+                    </div>
+                        <h2 class="text-white a-subtitle a-concert-home-subtitle pt-2"></h2>
                     </div>
                     <div class="m-see-more">
                         <a href="concert-channel.php"><button class="btn-pink button-concert-home">
@@ -357,9 +375,11 @@ if ($_SESSION["country"] != 1) {
             <!--Cinema claro versión mobile-->
             <div class="cinema-claro-mobile">
                 <div class="m-home-titles text-center">
-                    <a href="claro-cinema.php" class="home-title-link">
-                        <img src="./images/home/tv-3.svg" class="cinemahome-image-header" alt="logo-claro-cinema"/>
-                    </a>
+                    <div class="h-image d-flex align-items-center justify-content-center"> 
+                        <a href="claro-cinema.php" class="home-title-link">
+                            <img src="./images/home/tv-3.svg" class="cinemahome-image-header object-cover" alt="logo-claro-cinema"/>
+                        </a>
+                        </div>
 
                     <h2 class="a-claro-cinema-subtitle  a-cinema-home-subtitle">
                         <!--Las mejores <span>Películas Mexicanas</span>-->
@@ -378,9 +398,11 @@ if ($_SESSION["country"] != 1) {
 
                 <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
                     <div class="m-home-titles">
-                        <a href="claro-cinema.php" class="home-title-link">
-                            <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="logo-claro-cinema"/>
-                        </a>
+                        <div class="h-image d-flex align-items-center ">   
+                            <a href="claro-cinema.php" class="home-title-link">
+                                <img class="cinemahome-image-header object-cover" src="./images/home/cinema-home-img.svg" alt="logo-claro-cinema"/>
+                            </a>
+                     </div>
                         <h2 class="a-subtitle a-cinema-home-subtitle">
                             LOS ÍDOLOS QUE MÉXICO<span>LE DIO AL CINE</span>
                         </h2>
@@ -416,10 +438,12 @@ if ($_SESSION["country"] != 1) {
                 <!--<div class="black-line"></div>-->
                 <div class="d-flex justify-content-between align-items-center home-section-header cinema-section-header">
                     <div class="m-home-titles">
+                    <div class="h-image d-flex align-items-center ">
                         <a href="claro-cinema.php" class="home-title-link">
-                            <img class="cinemahome-image-header" src="./images/home/cinema-home-img.svg" alt="logo-claro-cinema"/>
+                            <img class="cinemahome-image-header object-cover" src="./images/home/cinema-home-img.svg" alt="logo-claro-cinema"/>
                         </a>
-                        <h2 class="a-subtitle a-cinema-home-subtitle">
+                    </div>
+                        <h2 class="a-subtitle a-cinema-home-subtitle pt-2">
                             <!--LOS ÍDOLOS QUE MÉXICO<span>LE DIO AL CINE</span>-->
                         </h2>
                     </div>

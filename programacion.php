@@ -108,18 +108,24 @@ if($_SESSION["country"] != 1){
                 <div class="row no-gutters">
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="claro-canal-programing" class=" active-navItem nav-li mr-3 p-3">
-                                <img class="claro-nav-image" src="" alt="logo-claro-canal" title="programacion-claro-canal" id="icon_canal_claro" />
+                            <li rel="claro-canal-programing" class=" active-navItem nav-li mr-3 p-3  d-flex justify-content-center" >
+                               <div class=" h-image-prog d-flex align-items-center justify-content-center">
+                                <img class="claro-nav-image " src="" alt="logo-claro-canal" title="programacion-claro-canal" id="icon_canal_claro" />
+                                </div>
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="concert-channel-programing" class="nav-li ml-3 mr-3 p-3">
-                                <img class="nav-image" src="" alt="logo-concert-channel" title="programacion-concert-channel" id="icon_concert_channel" />
+                            <li rel="concert-channel-programing" class="nav-li ml-3 mr-3 p-3   d-flex justify-content-center" >
+                               <div class=" h-image-prog d-flex align-items-center justify-content-center">
+                                    <img class="nav-image" src="" alt="logo-concert-channel" title="programacion-concert-channel" id="icon_concert_channel" />
+                                </div>
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
-                            <li rel="claro-cinema-programing" class="nav-li ml-3 p-3">
-                                <img class="nav-image" src="" alt="logo-claro-cinema" title="programacion-claro-cinema" id="icon_claro_cinema" />
+                            <li rel="claro-cinema-programing" class="nav-li ml-3 p-3  d-flex justify-content-center" >
+                               <div class=" h-image-prog d-flex align-items-center justify-content-center">
+                                 <img class="nav-image" src="" alt="logo-claro-cinema" title="programacion-claro-cinema" id="icon_claro_cinema" />
+                               </div>
                             </li>
                         </div>
 

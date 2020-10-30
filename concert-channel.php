@@ -114,8 +114,10 @@ if($_SESSION["country"] != 1){
         <section class="today-concert-channel">
             <div class="row no-gutters landing-header">
                 <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-                    <img src="./images/home/concert-home-img.svg" alt="logo-concert-channel" class="lading-header-image-concert"
+                <div class="h-image d-flex align-items-center">
+                    <img src="./images/home/concert-home-img.svg" alt="logo-concert-channel" class="lading-header-image-concert object-cover"
                         id="icon_concert_channel"/>
+                </div>   
                 </div>
                 <div class="col-12 col-md-5 col-lg-5 col-xl-5">
                     <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>

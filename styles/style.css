@@ -2294,6 +2294,11 @@ h6 {
   height: 420px;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .paises-image {
   width: 0%;
   max-width: 125px;
@@ -2406,6 +2411,19 @@ h6 {
   .heart-image {
     width: 50%;
   }
+  .h-image {
+    height: 100px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .h-image-prog {
+    height: 50px;
+    width: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -2429,6 +2447,13 @@ h6 {
   .heart-image {
     width: 50%;
   }
+  .h-image {
+    height: 80px;
+  }
+  .h-image-prog {
+    height: 80px;
+    width: 160px;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
@@ -2442,11 +2467,22 @@ h6 {
   .shadow1 {
     border-radius: 15px;
   }
+  .h-image {
+    height: 100px;
+  }
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
   .paises-image {
     width: 12%;
+  }
+  .h-image {
+    height: 150px;
+    width: 340px;
+  }
+  .h-image-prog {
+    height: 90px;
+    width: 250px;
   }
   .pie_paises {
     margin-top: 25px;
@@ -3100,6 +3136,10 @@ h6 {
   .heart-image {
     width: 50%;
   }
+  .h-image {
+    height: 110px;
+    width: 260px;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3121,6 +3161,9 @@ h6 {
   .heart-image {
     width: 50%;
   }
+  .h-image {
+    height: 150px;
+  }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1899px) {
@@ -3132,6 +3175,9 @@ h6 {
   .synopsis-main-image {
     margin-bottom: 0px;
   }
+  .h-image {
+    height: 150px;
+  }
 }
 
 @media only screen and (min-width: 1900px) {
@@ -3142,6 +3188,9 @@ h6 {
   }
   .synopsis-main-image {
     margin-bottom: 0px;
+  }
+  .h-image {
+    height: 150px;
   }
 }
 
