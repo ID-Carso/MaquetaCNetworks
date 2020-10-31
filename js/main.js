@@ -361,7 +361,7 @@ $(document).ready(function () {
             <div class="poster">
               <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="./images/concert-channel/carrousel/${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
+                    <img src="${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
                 </div>
                 <div class="a-concert-rectangle">
                     <div class="poster-title-margin">
@@ -460,7 +460,7 @@ $(document).ready(function () {
             <div class="poster">
              <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="./images/concert-channel/carrousel/${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
+                    <img src="${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
                 </div>
                 <div class="a-concert-rectangle">
                     <div class="poster-title-margin">
@@ -501,7 +501,7 @@ $(document).ready(function () {
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
                         <p class="schedule">${favorite.time}</p>
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                 </div>
       
@@ -576,7 +576,7 @@ $(document).ready(function () {
             <div class="poster">
               <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="./images/claro-cinema/carrousel/${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
+                    <img src="${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
                 </div>
                 <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
@@ -589,7 +589,7 @@ $(document).ready(function () {
                 <div class="d-flex info-schedule justify-content-between no-gutters">
       
                     <div class="col-6">
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                     <div>
                         <button class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
@@ -617,7 +617,7 @@ $(document).ready(function () {
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
                         <p class="schedule">${favorite.time}</p>
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                 </div>
       
@@ -639,7 +639,7 @@ $(document).ready(function () {
             <div class="myList-details-container myList-details-desktop">
                 <div class="d-flex justify-content-between">
                     <div>
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
@@ -675,7 +675,7 @@ $(document).ready(function () {
             <div class="poster">
              <div class="thumbnail-body" _id="${favorite.chapter_id}">
                 <div class="thumbnail">
-                    <img src="./images/claro-cinema/carrousel/${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
+                    <img src="${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
                 </div>
                 <div class="a-cinema-rectangle">
                     <div class="poster-title-margin">
@@ -688,7 +688,7 @@ $(document).ready(function () {
                 <div class="d-flex info-schedule justify-content-between no-gutters">
       
                     <div class="col-6">
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                     <div>
                         <button class="button-none remove-program" _id="${favorite.chapter_id}" type="button"><img src="images/mi-lista/heart.svg" alt="agregar-a-favoritos"/>
@@ -716,7 +716,7 @@ $(document).ready(function () {
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
                         <p class="schedule">${favorite.time}</p>
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                 </div>
       
@@ -738,7 +738,7 @@ $(document).ready(function () {
             <div class="myList-details-container myList-details-desktop">
                 <div class="d-flex justify-content-between">
                     <div>
-                        <p class="rating">Clasificación: A</p>
+                        <p class="rating">Clasificación: ${favorite.rating}</p>
                     </div>
                     <div>
                         <p class="schedule-days">Lunes a Viernes</p>
@@ -1554,15 +1554,15 @@ $(document).ready(function () {
   let mes = date.getMonth();
   $(".month").text(getMonthAndYear(mes));
   console.log(mes);
-  let year = date.getFullYear();
-  let hour = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
+  let year = date.getUTCFullYear();
+  let hour = date.getUTCHours();
+  let minutes = date.getUTCMinutes();
+  let seconds = date.getUTCSeconds();
 
   let currentDate = `${year}-${month}-${day}`;
   let currentTime = `${hour}:${minutes}`;
   getPrograms(currentDate, getNameCountry(sessionSrc));
-  getProgramming(currentDate, 0);
+  getProgramming(currentDate, 0, getNameCountry(sessionSrc));
   /*menu responsive*/
   const invisible_button = document.querySelector(".invisible-button");
   const tache_button = document.querySelector(".tache_button");
@@ -1963,7 +1963,11 @@ function recreateClickCalendar() {
   $("ul.claro-calendar .claro-item").click(function () {
     let date = $(this).attr("date");
     //Petición ajax para traer la programación
-    getProgramming(date, 1);
+    let month = parseInt(date.split("-")[1]);
+    $(".month").text(`${getMonthAndYear(month - 1)}`);
+    let sessionSrc = localStorage.getItem("src");
+    let country = getNameCountry(sessionSrc);
+    getProgramming(date, 1, country);
 
     $("ul.claro-calendar .claro-item").removeClass("claro-active");
     $(this).addClass("claro-active");
@@ -1974,8 +1978,11 @@ function recreateClickCalendar() {
   $("ul.concert-calendar .concert-item").click(function () {
     //peticiones
     let date = $(this).attr("date");
-    let country = getNameCountry(localStorage.getItem("src"));
-    getProgramming(date, 1);
+    let month = parseInt(date.split("-")[1]);
+    $(".month").text(`${getMonthAndYear(month - 1)}`);
+    let sessionSrc = localStorage.getItem("src");
+    let country = getNameCountry(sessionSrc);
+    getProgramming(date, 1, country);
     $("ul.concert-calendar .concert-item").removeClass("concert-active");
     $(this).addClass("concert-active");
   });
@@ -1985,8 +1992,11 @@ function recreateClickCalendar() {
     $(this).addClass("cinema-active");
 
     let date = $(this).attr("date");
-    let country = getNameCountry(localStorage.getItem("src"));
-    getProgramming(date, 1);
+    let month = parseInt(date.split("-")[1]);
+    $(".month").text(`${getMonthAndYear(month - 1)}`);
+    let sessionSrc = localStorage.getItem("src");
+    let country = getNameCountry(sessionSrc);
+    getProgramming(date, 1, country);
   });
 }
 
@@ -2021,7 +2031,7 @@ $(".slider-pagination-add").click(function () {
   //Cada vez que se haga click, el contador incrementa
   slideIndex++;
   //Agregamos un slide al slider de programación
- $("#banner-programming-edi").slick(
+  $("#banner-programming-edi").slick(
     "slickAdd",
     `<div>
   <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
@@ -2032,5 +2042,4 @@ $(".slider-pagination-add").click(function () {
 </div>
   `
   );
- 
 });

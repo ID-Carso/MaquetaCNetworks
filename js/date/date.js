@@ -13,7 +13,7 @@ function getMonthAndYear(month) {
     "SEPTIEMBRE",
     "OCTUBRE",
     "NOVIEMBRE",
-    "DICIEMBRE"
+    "DICIEMBRE",
   ];
 
   return `${months[month]} ${year}`;
@@ -27,7 +27,11 @@ function getMonth(idMonth) {
 
 function getDays(month) {
   let date = new Date();
-  return new Date(date.getUTCFullYear(), date.getUTCMonth() + month, 0).getUTCDate();
+  return new Date(
+    date.getUTCFullYear(),
+    date.getUTCMonth() + month,
+    0
+  ).getUTCDate();
 }
 
 function getDay() {
@@ -37,7 +41,7 @@ function getDay() {
 
 function getDayName(month, day) {
   let date = new Date();
-  let currentDay = new Date(date.getUTCFullYear(), month - 1, day).getUTCDay();
+  let currentDay = new Date(date.getUTCFullYear(), month, day).getUTCDay();
 
   let days = ["DOM", "LUN", "MAR", "MIER", "JUE", "VIE", "SAB"];
 
@@ -49,11 +53,4 @@ function getYear() {
   return date.getUTCFullYear();
 }
 
-export {
-  getMonthAndYear,
-  getDays,
-  getDay,
-  getDayName,
-  getMonth,
-  getYear
-};
+export { getMonthAndYear, getDays, getDay, getDayName, getMonth, getYear };

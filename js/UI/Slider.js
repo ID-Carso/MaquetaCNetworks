@@ -32,10 +32,13 @@ export default class Slider {
         dots: true,
         centerMode: false,
         arrows: true,
-        prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-        nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
+        prevArrow:
+          '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+        nextArrow:
+          '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
 
-        responsive: [{
+        responsive: [
+          {
             breakpoint: 768,
             settings: {
               slidesToShow: 1,
@@ -68,8 +71,10 @@ export default class Slider {
               dots: true,
               centerMode: false,
               arrows: true,
-              prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
-              nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
+              prevArrow:
+                '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
+              nextArrow:
+                '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
             },
           },
 
@@ -82,8 +87,10 @@ export default class Slider {
               dots: true,
               centerMode: false,
               arrows: true,
-              prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
-              nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
+              prevArrow:
+                '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
+              nextArrow:
+                '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
             },
           },
         ],
@@ -93,7 +100,8 @@ export default class Slider {
   createProgramacionSlider(container) {
     container.slick({
       /**/
-      responsive: [{
+      responsive: [
+        {
           breakpoint: 767,
           settings: {
             slidesToShow: 7,
@@ -114,8 +122,10 @@ export default class Slider {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
+            prevArrow:
+              '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+            nextArrow:
+              '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
           },
         },
         {
@@ -127,8 +137,10 @@ export default class Slider {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
+            prevArrow:
+              '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+            nextArrow:
+              '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
           },
         },
         {
@@ -140,8 +152,10 @@ export default class Slider {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
+            prevArrow:
+              '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
+            nextArrow:
+              '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
           },
         },
         {
@@ -153,8 +167,10 @@ export default class Slider {
             dots: true,
             centerMode: false,
             arrows: true,
-            prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
-            nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
+            prevArrow:
+              '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
+            nextArrow:
+              '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
           },
         },
       ],
@@ -162,8 +178,7 @@ export default class Slider {
   }
 
   newCalendar(date, landing) {
-
-    let d = date.split("-")
+    let d = date.split("-");
     //Nuevo calendario
     let currentDate = new Date();
     let lastDate = new Date(parseInt(d[0]), parseInt(d[1]) - 1, parseInt(d[2]));
@@ -171,17 +186,16 @@ export default class Slider {
     let currentDay = currentDate.getUTCDate();
     let lastDay = lastDate.getUTCDate();
 
-    let currentMonth = currentDate.getUTCMonth() + 1;
-    let lastMonth = lastDate.getUTCMonth() + 1;
+    let currentMonth = currentDate.getUTCMonth();
+    console.log(currentMonth);
+    let lastMonth = lastDate.getUTCMonth();
 
     let currentYear = currentDate.getUTCFullYear();
     let lastYear = lastDate.getUTCFullYear();
 
     let daysSlider = "";
 
-
     for (let year = currentYear; year <= lastYear; year++) {
-
       for (let month = currentMonth; month <= lastMonth; month++) {
         let days;
         if (month === currentMonth) {
@@ -189,13 +203,15 @@ export default class Slider {
         } else {
           days = 1;
         }
-        let numberDays = new Date(year, month, 0).getDate();
 
-        for (let day = days; day < numberDays; day++) {
-          //
+        let numberDays = new Date(year, month - 1, 0).getDate();
+
+        for (let day = days; day <= numberDays; day++) {
           if (day === currentDay) {
             daysSlider += `
-            <li  class="${landing}-item programing-item ${landing}-active" date="${year}-${month}-${day}">
+            <li  class="${landing}-item programing-item ${landing}-active" date="${year}-${
+              month + 1
+            }-${day}">
               <div class="day">
                   <p class="day-text">${getDayName(month, day)}</p>
                   <p class="day-number">${day}</p>
@@ -206,40 +222,39 @@ export default class Slider {
               daysSlider += `
               <li class="cursor-auto pointer-events-none  item-no-available">
                 <div class="day">
-                    <p class="day-text-desactivated">${getDayName(month, day)}</p>
+                    <p class="day-text-desactivated">${getDayName(
+                      month,
+                      day
+                    )}</p>
                     <p class="day-number-desactivated">${day}</p>
                 </div>
               </li>`;
             } else {
               daysSlider += `
-              <li class="${landing}-item programing-item" date="${year}-${month}-${day}">
+              <li class="${landing}-item programing-item" date="${year}-${
+                month + 1
+              }-${day}">
                 <div class="day">
                     <p class="day-text">${getDayName(month, day)}</p>
                     <p class="day-number">${day}</p>
                 </div>
               </li>`;
             }
-
           }
 
           //Días que estarán bloqueados al superar fecha límite de programación
-
-
         }
       }
     }
 
     let programmingContainerSlider = $("#pro-" + landing + "-slider");
     programmingContainerSlider.append(daysSlider);
-
   }
 
   createDaysSlider(landing) {
-
     /*Programación general*/
     let date = new Date();
     $(".month").text(getMonthAndYear(date.getMonth()));
- 
 
     /* Número de días del mes actual */
     let currentMonthDays = getDays(1);
@@ -429,20 +444,26 @@ export default class Slider {
   showImageBanner() {
     /* Banner Landing Canal Claro */
 
-    const imagesBannerClaroCinema = [{
-        imageBannerPC: "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-01-A.jpg",
-        imageBannerTablet: "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-01-B.jpg",
+    const imagesBannerClaroCinema = [
+      {
+        imageBannerPC:
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-01-A.jpg",
+        imageBannerTablet:
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-01-B.jpg",
       },
       {
-        imageBannerPC: "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-02-A.jpg",
-        imageBannerTablet: "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/tablet/C-CINEMA-02-B.jpg",
+        imageBannerPC:
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-02-A.jpg",
+        imageBannerTablet:
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/tablet/C-CINEMA-02-B.jpg",
       },
       {
-        imageBannerPC: "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-03-A.jpg",
-        imageBannerTablet: "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/tablet/C-CINEMA-03-B.jpg",
+        imageBannerPC:
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/pc/C-CINEMA-03-A.jpg",
+        imageBannerTablet:
+          "http://www.claronetworks.openofficedospuntocero.info/images/claro-cinema/banner/tablet/C-CINEMA-03-B.jpg",
       },
     ];
-
 
     let imagesBannerProgramming = [];
 
@@ -470,7 +491,6 @@ export default class Slider {
 
       //bannerClaroCanal.html(slideBanner);
       bannerClaroCinema.html(slideBannerClaroCinema);
-
     } else if (screen.width >= 1200) {
       imagesBannerProgramming.forEach(function (image) {
         slideBannerProgramming += `        
@@ -486,10 +506,8 @@ export default class Slider {
         </div>`;
       });
 
-
       //bannerClaroCanal.html(slideBanner);
       bannerClaroCinema.html(slideBannerClaroCinema);
-
     }
 
     bannerClaroCinema.slick({
@@ -499,17 +517,17 @@ export default class Slider {
       dots: true,
       centerMode: false,
       arrows: false,
-      prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
-      nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
+      prevArrow:
+        '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda" />',
+      nextArrow:
+        '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha" />',
       autoplay: true,
       autoplaySpeed: 2000,
     });
 
-
     //slider claro-canal
 
     // slider para el de cinema
-
 
     const paginationcinema = $(".pag");
     $(".pag").click(function () {
