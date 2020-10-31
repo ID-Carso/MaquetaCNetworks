@@ -54,6 +54,7 @@ class User
 
     function signIn($data)
     {
+
         callAPI("POST", $this->baseUrl . "user/login", $data);
     }
 
@@ -62,7 +63,7 @@ class User
         $dataUser = array("name" => $name, "email" => $email, "password" => $password, "version" => $version);
         $dataUserJson = json_encode($dataUser);
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $this->baseUrl. "user");
+        curl_setopt($ch, CURLOPT_URL, $this->baseUrl . "user");
         curl_setopt($ch, CURLOPT_POST, TRUE);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $dataUserJson);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -86,7 +87,7 @@ class User
 
     function sendEmail($id)
     {
-        callAPI(null, $this->baseUrl. "user/mail/" . $id, null);
+        callAPI(null, $this->baseUrl . "user/mail/" . $id, null);
     }
 
     function updateAlerts($data)
@@ -106,7 +107,7 @@ class User
 
     function showNotification($id, $currentTime, $currentDate)
     {
-        callAPI(null, $this->baseUrl. "notification/" . $id . "&" . $currentTime . "&" . $currentDate . "", null);
+        callAPI(null, $this->baseUrl . "notification/" . $id . "&" . $currentTime . "&" . $currentDate . "", null);
     }
 
     function enableNotification($data)
@@ -117,6 +118,16 @@ class User
     function disableNotification($data)
     {
         callAPI("POST", $this->baseUrl . "user/deactiveNotification", $data);
+    }
+
+    function getFavorites($id)
+    {
+        callAPI(null, $this->baseUrl . "user/myfavorites/" . $id, null);
+    }
+
+    function filterPrograms($genre)
+    {
+        callAPI(null, $this->baseUrl . "user/myfavorites/" . $genre, null);
     }
 }
 
@@ -230,6 +241,17 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             $dataJson = json_encode($data);
             $user = User::getUserInstance();
             echo ($user->disableNotification($dataJson));
+            break;
+
+        case "getFavorites":
+            $id = $_POST["id"];
+            $user = User::getUserInstance();
+            echo ($user->getFavorites($id));
+            break;
+        case "filterPrograms":
+            $genre = $_POST["genre"];
+            $user = User::getUserInstance();
+            echo ($user->filterPrograms($genre));
             break;
     }
 }

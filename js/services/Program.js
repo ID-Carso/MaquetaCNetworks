@@ -1727,7 +1727,7 @@ function getProgramming(date, withLoader, country) {
       if (withLoader === 1) {
         $("body").append(`
             <div class="loader-container">
-                <img src="./images/general/loader.gif" alt="gif-de-carga" class="loader-icon"/>
+                <img src="./images/General/loader.gif" alt="gif-de-carga" class="loader-icon"/>
             </div>
         `);
       }

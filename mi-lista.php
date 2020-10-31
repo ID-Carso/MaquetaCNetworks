@@ -2,7 +2,7 @@
 
 session_start();
 
-if($_SESSION["country"] != 1){
+if ($_SESSION["country"] != 1) {
     header('Location: index.php');
 }
 
@@ -14,6 +14,7 @@ if($_SESSION["country"] != 1){
 <head>
     <?php include './views/partials/head.php' ?>
     <?php include './views/partials/session.php' ?>
+    <script src="./js/favorites.js"></script>
 </head>
 
 <body>
@@ -41,13 +42,11 @@ if($_SESSION["country"] != 1){
                 </div>
 
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a target="_blank" class="sidebar-link" href="https://nuestravision.tv"><span
-                            class="dropdown-p">Nuestra
+                    <a target="_blank" class="sidebar-link" href="https://nuestravision.tv"><span class="dropdown-p">Nuestra
                             Visión</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
-                    <a target="_blank" class="sidebar-link" href="https://www.marca.com/claro-mx/"><span
-                            class="dropdown-p">Claro
+                    <a target="_blank" class="sidebar-link" href="https://www.marca.com/claro-mx/"><span class="dropdown-p">Claro
                             Sports</span></a>
                 </div>
                 <div class="sidebar-item sidebar-border-bottom">
@@ -59,45 +58,28 @@ if($_SESSION["country"] != 1){
 
         <div class="categorias-menu">
             <div class="sidebar-content">
-                <div class="sidebar-item  ">
-                    <a href="" class="sidebar-link">
-                        <p class="dropdown-p">TODOS</p>
-                    </a>
+                <div class="sidebar-item">
+                    <p class="dropdown-p">TODOS</p>
                 </div>
                 <div class="sidebar-item">
-                    <a href="" class="sidebar-link">
-                        <p class="dropdown-p">PELÍCULAS</p>
-                    </a>
+                    <p class="dropdown-p">PELÍCULAS</p>
                 </div>
-
-                <div class="sidebar-item ">
-                    <a class="sidebar-link" href="">
-                        <p class="dropdown-p">SERIES</p>
-                    </a>
+                <div class="sidebar-item">
+                    <p class="dropdown-p">SERIES</p>
                 </div>
-
-                <div class="sidebar-item ">
-                    <a class="sidebar-link" href="">
-                        <p class="dropdown-p">DOCUMENTALES</p>
-                    </a>
+                <div class="sidebar-item">
+                    <p class="dropdown-p">DOCUMENTALES</p>
                 </div>
-
-                <div class="sidebar-item ">
-                    <a class="sidebar-link" href="">
-                        <p class="dropdown-p">CONCIERTOS</p>
-                    </a>
+                <div class="sidebar-item">
+                    <p class="dropdown-p">CONCIERTOS</p>
                 </div>
-                <div class="sidebar-item ">
-                    <a class="sidebar-link" href="">
-                        <p class="dropdown-p">PROGRAMAS</p>
-                    </a>
+                <div class="sidebar-item">
+                    <p class="dropdown-p">PROGRAMAS</p>
                 </div>
-                <div class="sidebar-item ">
-                    <a class="sidebar-link" href="">
-                        <p class="dropdown-p">DEPORTES</p>
-                    </a>
+                <div class="sidebar-item">
+                    <p class="dropdown-p">DEPORTES</p>
                 </div>
-                <div class="sidebar-item ">
+                <div class="sidebar-item">
                     <img class="tache_button" src="images/mi-lista/cerrar-categorias.svg" alt="icono-cerrar">
                 </div>
             </div>
@@ -118,12 +100,11 @@ if($_SESSION["country"] != 1){
     </header>
     <div class="alert-user">
     </div>
-    <img src="images/registro/group-3.svg" class="image-list-blue" alt="vector-azul"/>
+    <img src="images/registro/group-3.svg" class="image-list-blue" alt="vector-azul" />
     <div class="lista-content">
 
-        <img src="images/registro/group-37.svg" class="image-list-points" alt="vector-azul"/>
-        <div
-            class="mi-lista-container col-sm-12 no-gutters col-md-12 no-gutters col-lg-12 mx-auto col-xl-9 shadow1 fondolog">
+        <img src="images/registro/group-37.svg" class="image-list-points" alt="vector-azul" />
+        <div class="mi-lista-container col-sm-12 no-gutters col-md-12 no-gutters col-lg-12 mx-auto col-xl-9 shadow1 fondolog">
 
             <div class=" row ma-no centro">
                 <div class="col-sm-12 no-gap">
@@ -135,8 +116,7 @@ if($_SESSION["country"] != 1){
             <div class="row ma-no centro">
                 <div class="col-11 mx-auto no-gap border-config d-flex justify-content-between">
                     <div class="centro ">
-                        <p class="texto-categorias">CATEGORÍAS <img class="categorias-flecha"
-                                src="images/mi-lista/flecha-categorias.svg" alt="icono-flecha"/> </p>
+                        <p class="texto-categorias">CATEGORÍAS <img class="categorias-flecha" src="images/mi-lista/flecha-categorias.svg" alt="icono-flecha" /> </p>
                     </div>
                     <div>
                         <p class="name-category">todos</p>

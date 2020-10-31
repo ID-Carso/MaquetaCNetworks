@@ -279,7 +279,6 @@ function signOut() {
   localStorage.removeItem("favoritesCanalClaro");
   localStorage.removeItem("favoritesConcertChannel");
   localStorage.removeItem("favoritesClaroCinema");
- 
 }
 
 function updateDataUser(id, gender, date, country) {
