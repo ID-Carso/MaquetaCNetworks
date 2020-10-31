@@ -4,14 +4,18 @@ import { addFavorites } from "./user/user.js";
 import Slider from "../UI/Slider.js";
 import { getMonthAndYear } from "../date/date.js";
 
+import { getNameCountry } from "../country/country.js";
+
 function recreateClickCalendar() {
   //Claro canal
   $("ul.claro-calendar .claro-item").click(function () {
     let date = $(this).attr("date");
     let month = parseInt(date.split("-")[1]);
+    var sessionSrc = localStorage.getItem("src");
+    let country = getNameCountry(sessionSrc);
     $(".month").text(`${getMonthAndYear(month - 1)}`);
     //Petición ajax para traer la programación
-    getProgramming(date, 1);
+    getProgramming(date, 1, country);
 
     $("ul.claro-calendar .claro-item").removeClass("claro-active");
     $(this).addClass("claro-active");
@@ -539,7 +543,7 @@ function getPrograms(date, country) {
                                             </div>
                                             <div>
                                                 <button title="Eliminar de mi lista" class="button-none remove-program programing-button" type="button" _id="${program.chapter_id}">
-                                                    <svg  xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
+                                                    <svg class="heart-gray-filled"  xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
                                                         <path class="heart-gray-filled" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
                                                     </svg>
                                                 </button>
@@ -573,7 +577,7 @@ function getPrograms(date, country) {
                                         </div>
                                         <div class="heart-phone">
                                             <button title="Eliminar de mi lista" class="button-none remove-program programing-button" type="button" _id="${program.chapter_id}">
-                                                <svg class="heart-image" alt="agregar-a-favoritos" xmlns="http://www.w3.org/2000/svg" width="48" height="44" viewBox="0 0 48 44">
+                                                <svg class="heart-gray-filled" alt="Eliminar de lista" xmlns="http://www.w3.org/2000/svg" width="48" height="44" viewBox="0 0 48 44">
                                                     <path class="heart-gray-filled" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
                                                 </svg>
                                             </button>
@@ -1708,7 +1712,7 @@ function showSynopsis(id) {
   });
 }
 
-function getProgramming(date, withLoader) {
+function getProgramming(date, withLoader, country) {
   let data = {
     function: "getProgramming",
     date,
@@ -1730,9 +1734,44 @@ function getProgramming(date, withLoader) {
     },
     success: function (result) {
       let data = JSON.parse(result);
-      console.log(data);
       $(".loader-container").remove();
       if (data.code == 200) {
+        let arrayCanalClaro = [];
+        let favoritesClaroCanal = JSON.parse(
+          localStorage.getItem("favoritesCanalClaro")
+        );
+        if (localStorage.getItem("favoritesCanalClaro")) {
+          let favoritesCanalClaroLength = favoritesClaroCanal.length;
+          for (let i = 0; i < favoritesCanalClaroLength; i++) {
+            let favoriteId = favoritesClaroCanal[i].chapter_id;
+            arrayCanalClaro.push(favoriteId);
+          }
+        }
+
+        let arrayConcertChannel = [];
+        let favoritesConcertChannel = JSON.parse(
+          localStorage.getItem("favoritesConcertChannel")
+        );
+        if (localStorage.getItem("favoritesConcertChannel")) {
+          let favoritesConcertChannelLength = favoritesConcertChannel.length;
+          for (let i = 0; i < favoritesConcertChannelLength; i++) {
+            let favoriteId = favoritesConcertChannel[i].chapter_id;
+            arrayConcertChannel.push(favoriteId);
+          }
+        }
+
+        let arrayClaroCinema = [];
+        let favoritesClaroCinema = JSON.parse(
+          localStorage.getItem("favoritesClaroCinema")
+        );
+        if (localStorage.getItem("favoritesClaroCinema")) {
+          let favoritesClaroCinemaLength = favoritesClaroCinema.length;
+          for (let i = 0; i < favoritesClaroCinemaLength; i++) {
+            let favoriteId = favoritesClaroCinema[i].chapter_id;
+            arrayClaroCinema.push(favoriteId);
+          }
+        }
+
         //Programas de canal claro
         let programmingCanalClaro = data.data[0].programing[0].programs;
         //Programas de concert channel
@@ -1748,78 +1787,154 @@ function getProgramming(date, withLoader) {
 
         //Iteramos el arreglo de programas de canal claro
         programmingCanalClaro.forEach((program) => {
-          if (program.landing_synopsis === 0) {
-            programCanalClaro += `
-                <div class="schedule-container">
-                <p class="schedule-title">${program.chapter_title}</p>
-                <div class="schedule-item-body">
-                    <div class="schedule-poster">
-                        <div class="poster">
-                            <div class="thumbnail-prog" _id="${program.chapter_id}">
-                                <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
+          if (arrayCanalClaro.includes(program.chapter_id)) {
+            if (program.landing_synopsis === 0) {
+              programCanalClaro += `
+                        <div class="schedule-container">
+                        <p class="schedule-title">${program.chapter_title}</p>
+                        <div class="schedule-item-body">
+                            <div class="schedule-poster">
+                                <div class="poster">
+                                    <div class="thumbnail-prog" _id="${program.chapter_id}">
+                                        <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="schedule-details">
+                                <div class="schedule-details-header">
+                                    <div>
+                                        <p class="schedule">${program.time} hrs.</p>
+                                        <p class="rating">Clasificación: A</p>
+                                    </div>
+                                    <div>
+                                    <button title="Eliminar de mi lista" class="button-none remove-program programing-button" type="button" _id="${program.chapter_id}">
+                                    <svg class="heart-gray-filled" xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
+                                        <path class="heart-gray-filled" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+                                    </svg>
+                                    </button>
+                                    </div>
+                                </div>
+                                <p class="schedule-description">
+                                    ${program.sinopsis}
+                                </p>
                             </div>
                         </div>
+        
                     </div>
-    
-                    <div class="schedule-details">
-                        <div class="schedule-details-header">
-                            <div>
-                                <p class="schedule">${program.time} hrs.</p>
-                                <p class="rating">Clasificación: A</p>
-                            </div>
-                            <div>
-                            <button title="Eliminar de mi lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
-                            <svg  xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
-                                <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
-                            </svg>
-                            </button>
+                 
+                        `;
+            } else {
+              programCanalClaro += `
+                    <div class="schedule-container">
+                    <p class="schedule-title">${program.chapter_title}</p>
+                    <div class="schedule-item-body">
+                        <div class="schedule-poster">
+                            <div class="poster">
+                                <a  href="./sinopsis.php?id=${program.chapter_id}">
+                                    <img src="${program.image}" alt="programa-${program.chapter_title}"/>
+                                </div>
                             </div>
                         </div>
-                        <p class="schedule-description">
-                            ${program.sinopsis}
-                        </p>
+        
+                        <div class="schedule-details">
+                            <div class="schedule-details-header">
+                                <div>
+                                    <p class="schedule">${program.time} hrs.</p>
+                                    <p class="rating">Clasificación: A</p>
+                                </div>
+                                <div>
+                                <button title="Eliminar de mi lista" class="button-none remove-program programing-button" type="button" _id="${program.chapter_id}">
+                                <svg  xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
+                                    <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+                                </svg>
+                                </button>
+                                </div>
+                            </div>
+                            <p class="schedule-description">
+                                ${program.sinopsis}
+                            </p>
+                        </div>
                     </div>
+        
                 </div>
-
-            </div>
-         
-                `;
+             
+                    `;
+            }
           } else {
-            programCanalClaro += `
-            <div class="schedule-container">
-            <p class="schedule-title">${program.chapter_title}</p>
-            <div class="schedule-item-body">
-                <div class="schedule-poster">
-                    <div class="poster">
-                        <a  href="./sinopsis.php?id=${program.chapter_id}">
-                            <img src="${program.image}" alt="programa-${program.chapter_title}"/>
+            if (program.landing_synopsis === 0) {
+              programCanalClaro += `
+                        <div class="schedule-container">
+                        <p class="schedule-title">${program.chapter_title}</p>
+                        <div class="schedule-item-body">
+                            <div class="schedule-poster">
+                                <div class="poster">
+                                    <div class="thumbnail-prog" _id="${program.chapter_id}">
+                                        <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="schedule-details">
+                                <div class="schedule-details-header">
+                                    <div>
+                                        <p class="schedule">${program.time} hrs.</p>
+                                        <p class="rating">Clasificación: A</p>
+                                    </div>
+                                    <div>
+                                    <button title="Añadir a lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
+                                    <svg class="heart-gray" xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
+                                        <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+                                    </svg>
+                                    </button>
+                                    </div>
+                                </div>
+                                <p class="schedule-description">
+                                    ${program.sinopsis}
+                                </p>
+                            </div>
+                        </div>
+        
+                    </div>
+                 
+                        `;
+            } else {
+              programCanalClaro += `
+                    <div class="schedule-container">
+                    <p class="schedule-title">${program.chapter_title}</p>
+                    <div class="schedule-item-body">
+                        <div class="schedule-poster">
+                            <div class="poster">
+                                <a  href="./sinopsis.php?id=${program.chapter_id}">
+                                    <img src="${program.image}" alt="programa-${program.chapter_title}"/>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="schedule-details">
+                            <div class="schedule-details-header">
+                                <div>
+                                    <p class="schedule">${program.time} hrs.</p>
+                                    <p class="rating">Clasificación: A</p>
+                                </div>
+                                <div>
+                                <button title="Eliminar de mi lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
+                                <svg class="heart-gray" xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
+                                    <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+                                </svg>
+                                </button>
+                                </div>
+                            </div>
+                            <p class="schedule-description">
+                                ${program.sinopsis}
+                            </p>
                         </div>
                     </div>
+        
                 </div>
-
-                <div class="schedule-details">
-                    <div class="schedule-details-header">
-                        <div>
-                            <p class="schedule">${program.time} hrs.</p>
-                            <p class="rating">Clasificación: A</p>
-                        </div>
-                        <div>
-                        <button title="Eliminar de mi lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
-                        <svg  xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
-                            <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
-                        </svg>
-                        </button>
-                        </div>
-                    </div>
-                    <p class="schedule-description">
-                        ${program.sinopsis}
-                    </p>
-                </div>
-            </div>
-
-        </div>
-     
-            `;
+             
+                    `;
+            }
           }
 
           let synopsis = program.sinopsis;
@@ -1869,78 +1984,154 @@ function getProgramming(date, withLoader) {
         });
 
         programmingConcertChannel.forEach((program) => {
-          if (program.landing_synopsis === 0) {
-            programConcertChannel += `
-                  <div class="schedule-container">
-                  <p class="schedule-title">${program.chapter_title}</p>
-                  <div class="schedule-item-body">
-                      <div class="schedule-poster">
-                          <div class="poster">
-                              <div class="thumbnail-prog" _id="${program.chapter_id}">
-                                  <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
+          if (arrayConcertChannel.includes(program.chapter_id)) {
+            if (program.landing_synopsis === 0) {
+              programConcertChannel += `
+                          <div class="schedule-container">
+                          <p class="schedule-title">${program.chapter_title}</p>
+                          <div class="schedule-item-body">
+                              <div class="schedule-poster">
+                                  <div class="poster">
+                                      <div class="thumbnail-prog" _id="${program.chapter_id}">
+                                          <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
+                                      </div>
+                                  </div>
+                              </div>
+              
+                              <div class="schedule-details">
+                                  <div class="schedule-details-header">
+                                      <div>
+                                          <p class="schedule">${program.time} hrs.</p>
+                                          <p class="rating">Clasificación: A</p>
+                                      </div>
+                                      <div>
+                                      <button title="Eliminar de mi lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
+                                      <svg class="heart-gray-filled" xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
+                                          <path class="heart-gray-filled" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+                                      </svg>
+                                      </button>
+                                      </div>
+                                  </div>
+                                  <p class="schedule-description">
+                                      ${program.sinopsis}
+                                  </p>
                               </div>
                           </div>
+          
                       </div>
-      
-                      <div class="schedule-details">
-                          <div class="schedule-details-header">
-                              <div>
-                                  <p class="schedule">${program.time} hrs.</p>
-                                  <p class="rating">Clasificación: A</p>
-                              </div>
-                              <div>
-                              <button title="Eliminar de mi lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
-                              <svg  xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
-                                  <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
-                              </svg>
-                              </button>
+                   
+                          `;
+            } else {
+              programConcertChannel += `
+                      <div class="schedule-container">
+                      <p class="schedule-title">${program.chapter_title}</p>
+                      <div class="schedule-item-body">
+                          <div class="schedule-poster">
+                              <div class="poster">
+                                  <a  href="./sinopsis.php?id=${program.chapter_id}">
+                                      <img src="${program.image}" alt="programa-${program.chapter_title}"/>
+                                  </div>
                               </div>
                           </div>
-                          <p class="schedule-description">
-                              ${program.sinopsis}
-                          </p>
+          
+                          <div class="schedule-details">
+                              <div class="schedule-details-header">
+                                  <div>
+                                      <p class="schedule">${program.time} hrs.</p>
+                                      <p class="rating">Clasificación: A</p>
+                                  </div>
+                                  <div>
+                                  <button title="Eliminar de mi lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
+                                  <svg class="heart-gray-filled" xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
+                                      <path class="heart-gray-filled" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+                                  </svg>
+                                  </button>
+                                  </div>
+                              </div>
+                              <p class="schedule-description">
+                                  ${program.sinopsis}
+                              </p>
+                          </div>
                       </div>
+          
                   </div>
-  
-              </div>
-           
-                  `;
+               
+                      `;
+            }
           } else {
-            programConcertChannel += `
-              <div class="schedule-container">
-              <p class="schedule-title">${program.chapter_title}</p>
-              <div class="schedule-item-body">
-                  <div class="schedule-poster">
-                      <div class="poster">
-                          <a  href="./sinopsis.php?id=${program.chapter_id}">
-                              <img src="${program.image}" alt="programa-${program.chapter_title}"/>
+            if (program.landing_synopsis === 0) {
+              programConcertChannel += `
+                          <div class="schedule-container">
+                          <p class="schedule-title">${program.chapter_title}</p>
+                          <div class="schedule-item-body">
+                              <div class="schedule-poster">
+                                  <div class="poster">
+                                      <div class="thumbnail-prog" _id="${program.chapter_id}">
+                                          <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
+                                      </div>
+                                  </div>
+                              </div>
+              
+                              <div class="schedule-details">
+                                  <div class="schedule-details-header">
+                                      <div>
+                                          <p class="schedule">${program.time} hrs.</p>
+                                          <p class="rating">Clasificación: A</p>
+                                      </div>
+                                      <div>
+                                      <button title="Eliminar de mi lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
+                                      <svg  xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
+                                          <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+                                      </svg>
+                                      </button>
+                                      </div>
+                                  </div>
+                                  <p class="schedule-description">
+                                      ${program.sinopsis}
+                                  </p>
+                              </div>
+                          </div>
+          
+                      </div>
+                   
+                          `;
+            } else {
+              programConcertChannel += `
+                      <div class="schedule-container">
+                      <p class="schedule-title">${program.chapter_title}</p>
+                      <div class="schedule-item-body">
+                          <div class="schedule-poster">
+                              <div class="poster">
+                                  <a  href="./sinopsis.php?id=${program.chapter_id}">
+                                      <img src="${program.image}" alt="programa-${program.chapter_title}"/>
+                                  </div>
+                              </div>
+                          </div>
+          
+                          <div class="schedule-details">
+                              <div class="schedule-details-header">
+                                  <div>
+                                      <p class="schedule">${program.time} hrs.</p>
+                                      <p class="rating">Clasificación: A</p>
+                                  </div>
+                                  <div>
+                                  <button title="Eliminar de mi lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
+                                  <svg  xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
+                                      <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+                                  </svg>
+                                  </button>
+                                  </div>
+                              </div>
+                              <p class="schedule-description">
+                                  ${program.sinopsis}
+                              </p>
                           </div>
                       </div>
+          
                   </div>
-  
-                  <div class="schedule-details">
-                      <div class="schedule-details-header">
-                          <div>
-                              <p class="schedule">${program.time} hrs.</p>
-                              <p class="rating">Clasificación: A</p>
-                          </div>
-                          <div>
-                          <button title="Eliminar de mi lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
-                          <svg  xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
-                              <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
-                          </svg>
-                          </button>
-                          </div>
-                      </div>
-                      <p class="schedule-description">
-                          ${program.sinopsis}
-                      </p>
-                  </div>
-              </div>
-  
-          </div>
-       
-              `;
+               
+                      `;
+            }
           }
 
           let synopsis = program.sinopsis;
@@ -1990,78 +2181,154 @@ function getProgramming(date, withLoader) {
         });
 
         programmingClaroCinema.forEach((program) => {
-          if (program.landing_synopsis === 0) {
-            programClaroCinema += `
-                <div class="schedule-container">
-                <p class="schedule-title">${program.chapter_title}</p>
-                <div class="schedule-item-body">
-                    <div class="schedule-poster">
-                        <div class="poster">
-                            <div class="thumbnail-prog" _id="${program.chapter_id}">
-                                <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
+          if (arrayClaroCinema.includes(program.chapter_id)) {
+            if (program.landing_synopsis === 0) {
+              programClaroCinema += `
+                        <div class="schedule-container">
+                        <p class="schedule-title">${program.chapter_title}</p>
+                        <div class="schedule-item-body">
+                            <div class="schedule-poster">
+                                <div class="poster">
+                                    <div class="thumbnail-prog" _id="${program.chapter_id}">
+                                        <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="schedule-details">
+                                <div class="schedule-details-header">
+                                    <div>
+                                        <p class="schedule">${program.time} hrs.</p>
+                                        <p class="rating">Clasificación: A</p>
+                                    </div>
+                                    <div>
+                                    <button title="Eliminar de mi lista" class="button-none remove-program programing-button" type="button" _id="${program.chapter_id}">
+                                    <svg class="heart-gray-filled" alt="agregar-a-favoritos" xmlns="http://www.w3.org/2000/svg" width="48" height="44" viewBox="0 0 48 44">
+                                        <path class="heart-gray-filled" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+                                    </svg>
+                                    </button>
+                                    </div>
+                                </div>
+                                <p class="schedule-description">
+                                    ${program.sinopsis}
+                                </p>
                             </div>
                         </div>
+        
                     </div>
-    
-                    <div class="schedule-details">
-                        <div class="schedule-details-header">
-                            <div>
-                                <p class="schedule">${program.time} hrs.</p>
-                                <p class="rating">Clasificación: A</p>
+                 
+                        `;
+            } else {
+              programClaroCinema += `
+                        <div class="schedule-container">
+                        <p class="schedule-title">${program.chapter_title}</p>
+                        <div class="schedule-item-body">
+                            <div class="schedule-poster">
+                                <div class="poster">
+                                    <a  href="./sinopsis.php?id=${program.chapter_id}">
+                                        <img src="${program.image}" alt="programa-${program.chapter_title}"/>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                            <button title="Eliminar de mi lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
-                            <svg  alt="agregar-a-favoritos" xmlns="http://www.w3.org/2000/svg" width="48" height="44" viewBox="0 0 48 44">
-                                <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
-                            </svg>
-                            </button>
+            
+                            <div class="schedule-details">
+                                <div class="schedule-details-header">
+                                    <div>
+                                        <p class="schedule">${program.time} hrs.</p>
+                                        <p class="rating">Clasificación: A</p>
+                                    </div>
+                                    <div>
+                                    <button title="Eliminar de mi lista" class="button-none remove-program programing-button" type="button" _id="${program.chapter_id}">
+                                    <svg class="heart-gray-filled" xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
+                                        <path class="heart-gray-filled" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+                                    </svg>
+                                    </button>
+                                    </div>
+                                </div>
+                                <p class="schedule-description">
+                                    ${program.sinopsis}
+                                </p>
                             </div>
                         </div>
-                        <p class="schedule-description">
-                            ${program.sinopsis}
-                        </p>
+        
                     </div>
-                </div>
-
-            </div>
-         
-                `;
+                 
+                        `;
+            }
           } else {
-            programClaroCinema += `
-                <div class="schedule-container">
-                <p class="schedule-title">${program.chapter_title}</p>
-                <div class="schedule-item-body">
-                    <div class="schedule-poster">
-                        <div class="poster">
-                            <a  href="./sinopsis.php?id=${program.chapter_id}">
-                                <img src="${program.image}" alt="programa-${program.chapter_title}"/>
+            if (program.landing_synopsis === 0) {
+              programClaroCinema += `
+                        <div class="schedule-container">
+                        <p class="schedule-title">${program.chapter_title}</p>
+                        <div class="schedule-item-body">
+                            <div class="schedule-poster">
+                                <div class="poster">
+                                    <div class="thumbnail-prog" _id="${program.chapter_id}">
+                                        <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="schedule-details">
+                                <div class="schedule-details-header">
+                                    <div>
+                                        <p class="schedule">${program.time} hrs.</p>
+                                        <p class="rating">Clasificación: A</p>
+                                    </div>
+                                    <div>
+                                    <button title="Eliminar de mi lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
+                                    <svg  alt="agregar-a-favoritos" xmlns="http://www.w3.org/2000/svg" width="48" height="44" viewBox="0 0 48 44">
+                                        <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+                                    </svg>
+                                    </button>
+                                    </div>
+                                </div>
+                                <p class="schedule-description">
+                                    ${program.sinopsis}
+                                </p>
                             </div>
                         </div>
+        
                     </div>
-    
-                    <div class="schedule-details">
-                        <div class="schedule-details-header">
-                            <div>
-                                <p class="schedule">${program.time} hrs.</p>
-                                <p class="rating">Clasificación: A</p>
+                 
+                        `;
+            } else {
+              programClaroCinema += `
+                        <div class="schedule-container">
+                        <p class="schedule-title">${program.chapter_title}</p>
+                        <div class="schedule-item-body">
+                            <div class="schedule-poster">
+                                <div class="poster">
+                                    <a  href="./sinopsis.php?id=${program.chapter_id}">
+                                        <img src="${program.image}" alt="programa-${program.chapter_title}"/>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                            <button title="Eliminar de mi lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
-                            <svg  xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
-                                <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
-                            </svg>
-                            </button>
+            
+                            <div class="schedule-details">
+                                <div class="schedule-details-header">
+                                    <div>
+                                        <p class="schedule">${program.time} hrs.</p>
+                                        <p class="rating">Clasificación: A</p>
+                                    </div>
+                                    <div>
+                                    <button title="Eliminar de mi lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
+                                        <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+                                    </svg>
+                                    </button>
+                                    </div>
+                                </div>
+                                <p class="schedule-description">
+                                    ${program.sinopsis}
+                                </p>
                             </div>
                         </div>
-                        <p class="schedule-description">
-                            ${program.sinopsis}
-                        </p>
+        
                     </div>
-                </div>
-
-            </div>
-         
-                `;
+                 
+                        `;
+            }
           }
 
           //Truncar el texto

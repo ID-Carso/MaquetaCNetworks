@@ -1562,7 +1562,7 @@ $(document).ready(function () {
   let currentDate = `${year}-${month}-${day}`;
   let currentTime = `${hour}:${minutes}`;
   getPrograms(currentDate, getNameCountry(sessionSrc));
-  getProgramming(currentDate, 0);
+  getProgramming(currentDate, 0, getNameCountry(sessionSrc));
   /*menu responsive*/
   const invisible_button = document.querySelector(".invisible-button");
   const tache_button = document.querySelector(".tache_button");
@@ -1965,7 +1965,9 @@ function recreateClickCalendar() {
     //Petición ajax para traer la programación
     let month = parseInt(date.split("-")[1]);
     $(".month").text(`${getMonthAndYear(month - 1)}`);
-    getProgramming(date, 1);
+    let sessionSrc = localStorage.getItem("src");
+    let country = getNameCountry(sessionSrc);
+    getProgramming(date, 1, country);
 
     $("ul.claro-calendar .claro-item").removeClass("claro-active");
     $(this).addClass("claro-active");
@@ -1978,7 +1980,9 @@ function recreateClickCalendar() {
     let date = $(this).attr("date");
     let month = parseInt(date.split("-")[1]);
     $(".month").text(`${getMonthAndYear(month - 1)}`);
-    getProgramming(date, 1);
+    let sessionSrc = localStorage.getItem("src");
+    let country = getNameCountry(sessionSrc);
+    getProgramming(date, 1, country);
     $("ul.concert-calendar .concert-item").removeClass("concert-active");
     $(this).addClass("concert-active");
   });
@@ -1990,7 +1994,9 @@ function recreateClickCalendar() {
     let date = $(this).attr("date");
     let month = parseInt(date.split("-")[1]);
     $(".month").text(`${getMonthAndYear(month - 1)}`);
-    getProgramming(date, 1);
+    let sessionSrc = localStorage.getItem("src");
+    let country = getNameCountry(sessionSrc);
+    getProgramming(date, 1, country);
   });
 }
 
