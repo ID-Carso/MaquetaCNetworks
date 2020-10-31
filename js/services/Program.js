@@ -2,11 +2,14 @@ import { addFavorites } from "./user/user.js";
 
 /* Slider */
 import Slider from "../UI/Slider.js";
+import { getMonthAndYear } from "../date/date.js";
 
 function recreateClickCalendar() {
   //Claro canal
   $("ul.claro-calendar .claro-item").click(function () {
     let date = $(this).attr("date");
+    let month = parseInt(date.split("-")[1]);
+    $(".month").text(`${getMonthAndYear(month - 1)}`);
     //Petición ajax para traer la programación
     getProgramming(date, 1);
 
@@ -534,7 +537,7 @@ function getPrograms(date, country) {
                                                 <p class="schedule">${program.time} hrs.</p>
                                                 <p class="rating">Clasificación: A</p>
                                             </div>
-                                            <div style=" transform: translateX(150%);">
+                                            <div>
                                                 <button title="Eliminar de mi lista" class="button-none remove-program programing-button" type="button" _id="${program.chapter_id}">
                                                     <svg  xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
                                                         <path class="heart-gray-filled" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
@@ -1706,7 +1709,6 @@ function showSynopsis(id) {
 }
 
 function getProgramming(date, withLoader) {
-  console.log("programming");
   let data = {
     function: "getProgramming",
     date,
@@ -1866,6 +1868,127 @@ function getProgramming(date, withLoader) {
                     `;
         });
 
+        programmingConcertChannel.forEach((program) => {
+          if (program.landing_synopsis === 0) {
+            programConcertChannel += `
+                  <div class="schedule-container">
+                  <p class="schedule-title">${program.chapter_title}</p>
+                  <div class="schedule-item-body">
+                      <div class="schedule-poster">
+                          <div class="poster">
+                              <div class="thumbnail-prog" _id="${program.chapter_id}">
+                                  <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
+                              </div>
+                          </div>
+                      </div>
+      
+                      <div class="schedule-details">
+                          <div class="schedule-details-header">
+                              <div>
+                                  <p class="schedule">${program.time} hrs.</p>
+                                  <p class="rating">Clasificación: A</p>
+                              </div>
+                              <div>
+                              <button title="Eliminar de mi lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
+                              <svg  xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
+                                  <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+                              </svg>
+                              </button>
+                              </div>
+                          </div>
+                          <p class="schedule-description">
+                              ${program.sinopsis}
+                          </p>
+                      </div>
+                  </div>
+  
+              </div>
+           
+                  `;
+          } else {
+            programConcertChannel += `
+              <div class="schedule-container">
+              <p class="schedule-title">${program.chapter_title}</p>
+              <div class="schedule-item-body">
+                  <div class="schedule-poster">
+                      <div class="poster">
+                          <a  href="./sinopsis.php?id=${program.chapter_id}">
+                              <img src="${program.image}" alt="programa-${program.chapter_title}"/>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="schedule-details">
+                      <div class="schedule-details-header">
+                          <div>
+                              <p class="schedule">${program.time} hrs.</p>
+                              <p class="rating">Clasificación: A</p>
+                          </div>
+                          <div>
+                          <button title="Eliminar de mi lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
+                          <svg  xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
+                              <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+                          </svg>
+                          </button>
+                          </div>
+                      </div>
+                      <p class="schedule-description">
+                          ${program.sinopsis}
+                      </p>
+                  </div>
+              </div>
+  
+          </div>
+       
+              `;
+          }
+
+          let synopsis = program.sinopsis;
+
+          programConcertChannelEdit += `
+                      <div class="p-3 border-t border-r border-l border-b position-relative mb-3">
+                      <img src="./images/General/pencil.svg" alt="edit-contenido" class="pencil edit-program-pencil" chapter_id="${program.chapter_id}">
+                      <div class="schedule-container col-12 p-5 mx-auto mt-0">
+                          <p class="schedule-title  a-text-plus a-text-black-brown-two">
+                              ${program.chapter_title}
+                          </p>
+                          <div class="schedule-item-body">
+                              <div class="schedule-poster">
+                                  <div class="poster">
+                                      <div class="thumbnail-edit" _id="${program.chapter_id}">
+                                          <img src="${program.image}"  class="w-100"  alt="programa-${program.chapter_title}"/>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="schedule-details">
+                                  <div class="schedule-details-header">
+                                      <div>
+                                          <p class="schedule a-text-black-brown-two">
+                                              ${program.time} hrs.
+                                          </p>
+                                          <p class="rating">
+                                              Clasificación: A
+                                          </p>
+                                      </div>
+                                      <div>
+                                          <button title="Agregar a mi lista" class="button-none add-favorites programing-button" type="button" _id="">
+                                              <svg xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
+                                                  <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z" />
+                                              </svg>
+                                          </button>
+                                      </div>
+                                  </div>
+                                  <div>
+                                      <span class="schedule-description s1" id="synopsis-edi">${synopsis}</span>
+                                      <span class="text-normal cursor-pointer a-text-bold-tealblue"> Ver más...</span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div> 
+                      `;
+        });
+
         programmingClaroCinema.forEach((program) => {
           if (program.landing_synopsis === 0) {
             programClaroCinema += `
@@ -1991,11 +2114,11 @@ function getProgramming(date, withLoader) {
         //Insertar programas para edición en backoffice
         $(".claro-content-edit").html(programCanalClaroEdit);
         //Insertar programas en página
-        // $(".claro-content").html(programCanalClaro);
+        $(".claro-content").html(programCanalClaro);
         //Insertar programas en página
         $(".concert-content").html(programConcertChannel);
         $(".concert-content-edit").html(programConcertChannelEdit);
-        // $(".cinema-content").html(programClaroCinema);
+        $(".cinema-content").html(programClaroCinema);
         $(".cinema-content-edit").html(programClaroCinemaEdit);
       }
     },

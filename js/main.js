@@ -1554,10 +1554,10 @@ $(document).ready(function () {
   let mes = date.getMonth();
   $(".month").text(getMonthAndYear(mes));
   console.log(mes);
-  let year = date.getFullYear();
-  let hour = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
+  let year = date.getUTCFullYear();
+  let hour = date.getUTCHours();
+  let minutes = date.getUTCMinutes();
+  let seconds = date.getUTCSeconds();
 
   let currentDate = `${year}-${month}-${day}`;
   let currentTime = `${hour}:${minutes}`;
@@ -1963,6 +1963,8 @@ function recreateClickCalendar() {
   $("ul.claro-calendar .claro-item").click(function () {
     let date = $(this).attr("date");
     //Petición ajax para traer la programación
+    let month = parseInt(date.split("-")[1]);
+    $(".month").text(`${getMonthAndYear(month - 1)}`);
     getProgramming(date, 1);
 
     $("ul.claro-calendar .claro-item").removeClass("claro-active");
@@ -1974,7 +1976,8 @@ function recreateClickCalendar() {
   $("ul.concert-calendar .concert-item").click(function () {
     //peticiones
     let date = $(this).attr("date");
-    let country = getNameCountry(localStorage.getItem("src"));
+    let month = parseInt(date.split("-")[1]);
+    $(".month").text(`${getMonthAndYear(month - 1)}`);
     getProgramming(date, 1);
     $("ul.concert-calendar .concert-item").removeClass("concert-active");
     $(this).addClass("concert-active");
@@ -1985,7 +1988,8 @@ function recreateClickCalendar() {
     $(this).addClass("cinema-active");
 
     let date = $(this).attr("date");
-    let country = getNameCountry(localStorage.getItem("src"));
+    let month = parseInt(date.split("-")[1]);
+    $(".month").text(`${getMonthAndYear(month - 1)}`);
     getProgramming(date, 1);
   });
 }
@@ -2021,7 +2025,7 @@ $(".slider-pagination-add").click(function () {
   //Cada vez que se haga click, el contador incrementa
   slideIndex++;
   //Agregamos un slide al slider de programación
- $("#banner-programming-edi").slick(
+  $("#banner-programming-edi").slick(
     "slickAdd",
     `<div>
   <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
@@ -2032,5 +2036,4 @@ $(".slider-pagination-add").click(function () {
 </div>
   `
   );
- 
 });
