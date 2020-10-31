@@ -2,6 +2,21 @@
 <html lang="en">
 
 <head>
+
+      	<!--metadato de indexación-->
+          <a href=”http://www.claronetworks.openofficedospuntocero.info/v1.2/programacion.php“ rel=”nofollow”>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
+   <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-179528937-1');
+</script>
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-5S7NP6G"></script>
+
     <?php include './views/partials/head.php' ?>
     <input type="hidden" id="actual_landing" value="programation">
 
@@ -85,21 +100,21 @@
                 <div class="row no-gutters">
                     <ul class="tv-list-programming col-md-11">
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="claro-canal-programing" class="nav-li  d-flex justify-content-center mr-3" >
+                            <li rel="claro-canal-programing" class="nav-li   justify-content-center mr-3" >
                                <div class=" h-image-prog d-flex align-items-center justify-content-center">
                                 <img class="claro-nav-image " src="" alt="logo-claro-canal" id="icon_canal_claro" />
                             </div>
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
-                            <li rel="concert-channel-programing" class="nav-li  d-flex justify-content-center mr-3 ml-3" >
+                            <li rel="concert-channel-programing" class="nav-li  justify-content-center mr-3 ml-3" >
                                <div class=" h-image-prog d-flex align-items-center justify-content-center">
                                 <img class="nav-image " src="" alt="logo-concert-channel" id="icon_concert_channel" />
                             </div>
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
-                            <li rel="claro-cinema-programing" class="active-navItem nav-li ml-3 d-flex justify-content-center" >
+                            <li rel="claro-cinema-programing" class="active-navItem nav-li ml-3  justify-content-center" >
                                <div class=" h-image-prog d-flex align-items-center justify-content-center">
                                 <img class="nav-image " src="" alt="logo-claro-cienma" id="icon_claro_cinema" />
                             </div>
