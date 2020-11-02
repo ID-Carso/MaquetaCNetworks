@@ -212,7 +212,7 @@ function signIn(email, password) {
         location.href = "./home.php";
         console.log("direc v1.2");
         localStorage.setItem("session", 1);
-
+        localStorage.setItem("genres", JSON.stringify(json.data.genres));
         localStorage.setItem("id", json.data.id);
         localStorage.setItem("name", json.data.name);
         localStorage.setItem("avatar", json.data.avatar);

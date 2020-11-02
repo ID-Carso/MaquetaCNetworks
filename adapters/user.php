@@ -38,9 +38,6 @@ class User
 
     private $baseUrl = "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/";
     private static $instance = NULL;
-    private $name = NULL;
-    private $password = NULL;
-    private $email = NULL;
 
 
     public static function getUserInstance()
@@ -125,9 +122,9 @@ class User
         callAPI(null, $this->baseUrl . "user/myfavorites/" . $id, null);
     }
 
-    function filterPrograms($genre)
+    function filterPrograms($id, $genre)
     {
-        callAPI(null, $this->baseUrl . "user/myfavorites/" . $genre, null);
+        callAPI(null, $this->baseUrl . "user/favoritesList/" . $id . "$" . $genre, null);
     }
 }
 
@@ -250,6 +247,7 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             break;
         case "filterPrograms":
             $genre = $_POST["genre"];
+            $id = $_POST["id"];
             $user = User::getUserInstance();
             echo ($user->filterPrograms($genre));
             break;
