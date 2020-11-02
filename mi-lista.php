@@ -57,31 +57,11 @@ if ($_SESSION["country"] != 1) {
         </div>
 
         <div class="categorias-menu">
-            <div class="sidebar-content">
-                <div class="sidebar-item">
+            <div class="sidebar-content" id="genre-menu-content">
+                <div class="sidebar-item" genre="all">
                     <p class="dropdown-p">TODOS</p>
                 </div>
-                <div class="sidebar-item">
-                    <p class="dropdown-p">PELÍCULAS</p>
-                </div>
-                <div class="sidebar-item">
-                    <p class="dropdown-p">SERIES</p>
-                </div>
-                <div class="sidebar-item">
-                    <p class="dropdown-p">DOCUMENTALES</p>
-                </div>
-                <div class="sidebar-item">
-                    <p class="dropdown-p">CONCIERTOS</p>
-                </div>
-                <div class="sidebar-item">
-                    <p class="dropdown-p">PROGRAMAS</p>
-                </div>
-                <div class="sidebar-item">
-                    <p class="dropdown-p">DEPORTES</p>
-                </div>
-                <div class="sidebar-item">
-                    <img class="tache_button" src="images/mi-lista/cerrar-categorias.svg" alt="icono-cerrar">
-                </div>
+
             </div>
 
         </div>

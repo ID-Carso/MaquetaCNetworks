@@ -117,14 +117,10 @@ class User
         callAPI("POST", $this->baseUrl . "user/deactiveNotification", $data);
     }
 
-    function getFavorites($id)
-    {
-        callAPI(null, $this->baseUrl . "user/myfavorites/" . $id, null);
-    }
 
     function filterPrograms($id, $genre)
     {
-        callAPI(null, $this->baseUrl . "user/favoritesList/" . $id . "$" . $genre, null);
+        callAPI(null, $this->baseUrl . "user/favoritesList/" . $id . "&" . $genre, null);
     }
 }
 
@@ -246,10 +242,10 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             echo ($user->getFavorites($id));
             break;
         case "filterPrograms":
-            $genre = $_POST["genre"];
+            $genre = $_POST["option"];
             $id = $_POST["id"];
             $user = User::getUserInstance();
-            echo ($user->filterPrograms($genre));
+            echo ($user->filterPrograms($id, $genre));
             break;
     }
 }
