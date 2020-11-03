@@ -79,7 +79,7 @@ function filterPrograms(option, id) {
           if(json.data.favorites == 0) {
             let programsempty = `
           <div class="claro-list section-list-container">
-                <h1 class="claro-list-title list-title-section">No tiene programas aún guardados con ese género </h1>
+                <h1 class="claro-list-title list-title-section">Sin programas guardados </h1>
                 
           </div>        
           `;
