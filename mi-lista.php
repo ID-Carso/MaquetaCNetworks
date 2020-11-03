@@ -56,8 +56,8 @@ if ($_SESSION["country"] != 1) {
             <button class="invisible-button"></button>
         </div>
 
-        <div class="categorias-menu">
-            <div class="sidebar-content" id="genre-menu-content">
+        <div class="categorias-menu" style="overflow-y: scroll;">
+            <div class="sidebar-content cursor-pointer " id="genre-menu-content">
                 <div class="sidebar-item" genre="all">
                     <p class="dropdown-p">TODOS</p>
                 </div>
