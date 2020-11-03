@@ -15,6 +15,9 @@ $(document).ready(function () {
   }
   $("#genre-menu-content").append(`
     ${genreItem}
+    <div class="sidebar-item " genre="all">
+                    <p class="dropdown-p">Todos</p>
+                </div>
     <div class="sidebar-item">
       <img class="tache_button" src="images/mi-lista/cerrar-categorias.svg" alt="icono-cerrar">
     </div>
@@ -94,7 +97,7 @@ function filterPrograms(option, id) {
                   <div class="thumbnail">
                       <img src="${json.data.favorites[program].image}" alt="image-de-${json.data.favorites[program].program_title}">
                   </div>
-                  <div class="a-claro-rectangle">
+                  <div class="a-cinema-rectangle">
                       <div class="poster-title-margin">
                           <p class="a-poster-text-white">${json.data.favorites[program].program_title}</p>
                       </div>
@@ -187,11 +190,11 @@ function filterPrograms(option, id) {
               `;
             
         
-          let programsClaroCinema = `
-          <div class="claro-list section-list-container">
-                <h1 class="claro-list-title list-title-section">Claro Cinema</h1>
+              let programsClaroCinema = `
+              <div class="cinema-list section-list-container">
+                <h1 class="cinema-list-title list-title-section">Claro <span>Cinema</span></h1>
                   ${programsClaroCinemaList}
-          </div>        
+              </div>       
           `;
           $("#claro-cinema-favorites").append(programsClaroCinema);
               break;
@@ -204,7 +207,7 @@ function filterPrograms(option, id) {
                     <div class="thumbnail">
                         <img src="${json.data.favorites[program].image}" alt="image-de-${json.data.favorites[program].program_title}">
                     </div>
-                    <div class="a-claro-rectangle">
+                    <div class="a-concert-rectangle">
                         <div class="poster-title-margin">
                             <p class="a-poster-text-white">${json.data.favorites[program].program_title}</p>
                         </div>
@@ -297,11 +300,11 @@ function filterPrograms(option, id) {
                 `;
               
           
-            let programsConcertChannel = `
-            <div class="claro-list section-list-container">
-                  <h1 class="claro-list-title list-title-section">Concert Channel</h1>
-                    ${programsConcertChannelList}
-            </div>        
+                let programsConcertChannel = `
+                <div class="concert-list section-list-container">
+                  <h1 class="concert-list-title list-title-section">Concert Channel</h1>
+                  ${programsConcertChannelList}
+                </div>       
             `;
             $("#concert-channel-favorites").append(programsConcertChannel);
           
