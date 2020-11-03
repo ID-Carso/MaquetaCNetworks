@@ -27,7 +27,12 @@
 .h3 {
   font-size: 24px;
 }
-
+.size21{
+  font-size: 21px;
+}
+.h1 {
+  font-size: 36px;
+}
 .text-normal {
   font-size: 16px;
 }
@@ -1324,6 +1329,10 @@
 .a-text-white-monblack {
   font-family: $montserratBlack;
   color: $colorWhite;
+}
+.a-text-black-monblack {
+  font-family: $montserratBlack;
+  color: $black;
 }
 .a-text-warm-grey-bold {
   font-family: $montserratBold;

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="178" height="178" viewBox="0 0 178 178">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-423 -185) translate(423 185)">
+                    <circle cx="89" cy="89" r="89" fill="#0097A9"/>
+                    <circle cx="43" cy="88" r="2" fill="#FFF"/>
+                    <circle cx="135" cy="89" r="2" fill="#FFF" transform="matrix(-1 0 0 1 270 0)"/>
+                    <circle cx="49" cy="85" r="2" fill="#FFF"/>
+                    <circle cx="129" cy="86" r="2" fill="#FFF" transform="matrix(-1 0 0 1 258 0)"/>
+                    <circle cx="49" cy="92" r="2" fill="#FFF"/>
+                    <circle cx="129" cy="93" r="2" fill="#FFF" transform="matrix(-1 0 0 1 258 0)"/>
+                    <path fill="#000" d="M68.056 89c2.921-3.034 7.786-5.21 11.06-6.133 3.273-.923 16.581-1.101 21.016 0 3.091.767 8.442 2.958 12.123 6.133 3.682 3.175 5.606 6.923 6.263 10.073.657 3.15-.808 8.49-2.022 10.42-1.215 1.932-3.6 3.742-6.684 4.507-3.085.765-35.627.234-37.58 0-1.952-.234-5.163-1.2-7.197-4.506-2.035-3.307-1.806-8.298-1.264-11.37.542-3.074 1.364-6.09 4.285-9.124z"/>
+                    <path fill="#DA291C" stroke="#000" stroke-width="2" d="M91.91 109.909c.872-3.41 5.339-4.836 9.264-4.836 3.925 0 8.186 1.367 8.97 4.836.784 3.47 1.933 10.114-1.495 14.147-3.429 4.033-10.484 3.967-14.478 0-3.994-3.967-3.133-10.738-2.26-14.147z"/>
+                    <rect width="3" height="17" x="59" y="53" fill="#000" rx="1.5" transform="rotate(-43 60.5 61.5)"/>
+                    <rect width="3" height="17" x="118.394" y="53" fill="#000" rx="1.5" transform="rotate(-43 119.894 61.5)"/>
+                    <rect width="3" height="17" x="59" y="53" fill="#000" rx="1.5" transform="rotate(43 60.5 61.5)"/>
+                    <rect width="3" height="17" x="118.394" y="53" fill="#000" rx="1.5" transform="rotate(43 119.894 61.5)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

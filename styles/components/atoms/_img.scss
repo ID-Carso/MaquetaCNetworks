@@ -21,7 +21,16 @@
   margin-left: auto;
   margin-right: auto;
 }
+.background-error{
+  background-image: url(../images/General/fondo.jpg);
+ // background: url(http://www.claronetworks.openofficedospuntocero.info/images/General/claro-networks-portada.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+
+}
 .cursor-pointer {
   cursor: pointer;
 }
