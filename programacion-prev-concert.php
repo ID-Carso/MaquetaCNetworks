@@ -24,20 +24,20 @@
                         <span class="dropdown-p">Canal Claro</span>
                     </div>
                 </a>
-            
+
                 <a class="sidebar-link" href="concert-channel.php">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Concert
                             Channel</span>
                 </a>
             </div>
-           
+
             <a class="sidebar-link" href="claro-cinema.php">
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Claro Cinema</span>
                 </div>
             </a>
-          
+
             <a class="sidebar-link" href="https://nuestravision.tv">
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Nuestra
@@ -50,7 +50,7 @@
                         Sports</span>
                 </div>
             </a>
-           
+
             <!--prueba sidebar-->
         </div>
         <button class="invisible-button"></button>
@@ -112,7 +112,7 @@
                             </div>
 
                             <div class="no-gutters">
-                                <ul class="claro-calendar col-md-10 mx-auto">
+                                <ul class="claro-calendar-backoffie col-md-10 mx-auto">
                                     <div class="programacion-slider pro-claro-slider" id="pro-claro-slider">
 
                                     </div>
@@ -122,7 +122,7 @@
                         </div>
                     </div>
                     <!--Programas de canal claro-->
-                    <div class="claro-content"></div>
+                    <div class="claro-content-prev"></div>
                 </div>
 
                 <div id="concert-channel-programing" class="tv-content ">
@@ -135,7 +135,7 @@
                             </div>
 
                             <div class="no-gutters">
-                                <ul class="concert-calendar col-md-10 mx-auto">
+                                <ul class="concert-calendar-backoffice col-md-10 mx-auto">
                                     <div class="programacion-slider" id="pro-concert-slider">
                                     </div>
                                 </ul>
@@ -143,7 +143,7 @@
 
                         </div>
                     </div>
-                    <div class="concert-content"></div>
+                    <div class="concert-content-prev"></div>
                 </div>
                 <!--End Concert channel de "Ahora en tv"-->
                 <!--Claro cinema de "Ahora en tv"-->
@@ -157,7 +157,7 @@
                             </div>
 
                             <div class="no-gutters">
-                                <ul class="cinema-calendar col-md-10 mx-auto">
+                                <ul class="cinema-calendar-backoffice col-md-10 mx-auto">
                                     <div class="programacion-slider" id="pro-cinema-slider">
 
                                 </ul>
@@ -165,7 +165,7 @@
 
                         </div>
                     </div>
-                    <div class="cinema-content"></div>
+                    <div class="cinema-content-prev"></div>
                 </div>
 
         </main>

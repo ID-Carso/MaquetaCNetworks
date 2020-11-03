@@ -187,7 +187,6 @@ export default class Slider {
     let lastDay = lastDate.getUTCDate();
 
     let currentMonth = currentDate.getUTCMonth();
-    console.log(currentMonth);
     let lastMonth = lastDate.getUTCMonth();
 
     let currentYear = currentDate.getUTCFullYear();
