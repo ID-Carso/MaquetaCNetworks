@@ -1773,10 +1773,19 @@ function showSynopsis(id) {
 }
 
 function getProgramming(date, withLoader, country) {
+  let day = parseInt(date.split("-")[2]);
+  let currentDate = new Date();
+  let currentDay = currentDate.getUTCDate();
+  let isCurrentDay = 0;
+  if (day === currentDay) {
+    isCurrentDay = 1;
+  }
+
   let data = {
     function: "getProgramming",
     date,
     country: country,
+    isCurrentDay: isCurrentDay,
   };
   $.ajax({
     type: "POST",
@@ -2446,10 +2455,18 @@ function getProgramming(date, withLoader, country) {
 }
 
 function getProgrammingGMT(date, withLoader) {
+  let day = parseInt(date.split("-")[2]);
+  let currentDate = new Date();
+  let currentDay = currentDate.getUTCDate();
+  let isCurrentDay = 0;
+  if (day === currentDay) {
+    isCurrentDay = 1;
+  }
   let data = {
     function: "getProgramming",
     date,
     country: "gmt",
+    isCurrentDay: isCurrentDay,
   };
   $.ajax({
     type: "POST",
