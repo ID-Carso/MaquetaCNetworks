@@ -12,10 +12,10 @@ class Program
         callAPI(null, $this->baseUrl . "program/actual_programing/" . $country . "&" . $date . "", null);
     }
 
-    function getProgramming($date, $country)
+    function getProgramming($date, $country, $isCurrentDay)
     {
-     
-        callAPI(null, $this->baseUrl . "program/actual_programing_programation/" . $country . "&" . $date . "", null);
+
+        callAPI(null, $this->baseUrl . "program/actual_programing_programation/" . $country . "&" . $date . "&" . $isCurrentDay, null);
     }
 
     function showSynopsis($id)
@@ -59,8 +59,9 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
         case 'getProgramming':
             $date = $_POST['date'];
             $country = $_POST['country'];
+            $isCurrentDay = $_POST["isCurrentDay"];
             $program = new Program();
-            echo ($program->getProgramming($date, $country));
+            echo ($program->getProgramming($date, $country, $isCurrentDay));
             break;
     }
 }
