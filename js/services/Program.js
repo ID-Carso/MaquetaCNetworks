@@ -167,7 +167,6 @@ function createProgramacionSlider() {
 
 function createClickThumbnails() {
   $(".thumbnail-body, .poster-live, .thumbnail-prog").click(function () {
-    console.log("Sinopsus");
     let thumbnailId = $(this).attr("_id");
     let posterLiveId = $(this).attr("_id");
     let listItemButton = $(this).find(".button-none").attr("_id");
@@ -2441,6 +2440,7 @@ function getProgramming(date, withLoader, country) {
         $(".concert-content").html(programConcertChannel);
         $(".cinema-content").html(programClaroCinema);
       }
+      addFavorites();
     },
   });
 }

@@ -811,7 +811,12 @@ $(document).ready(function () {
     let day = $(".SeleccionDiaLista").text();
     let month = $(".SeleccionMesLista").text();
     let year = $(".SeleccionAñoLista").text();
-    let date = year + "-" + month + "-" + day;
+    let date = "";
+    if (day === "Día" || month === "Mes" || year === "Año") {
+      date = "";
+    } else {
+      date = year + "-" + month + "-" + day;
+    }
     let genderMale = $("#hombre");
     let genderFemale = $("#mujer");
     var gender;
