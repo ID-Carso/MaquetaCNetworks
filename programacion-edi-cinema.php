@@ -25,20 +25,20 @@
                         <span class="dropdown-p">Canal Claro</span>
                     </div>
                 </a>
-              
+
                 <a class="sidebar-link" href="">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Concert
                             Channel</span>
                 </a>
             </div>
-         
+
             <a class="sidebar-link" href="">
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Claro Cinema</span>
                 </div>
             </a>
-          
+
             <a class="sidebar-link" href="">
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Nuestra
@@ -51,7 +51,7 @@
                         Sports</span>
                 </div>
             </a>
-          
+
             <!--prueba sidebar-->
         </div>
         <button class="invisible-button"></button>
@@ -84,10 +84,8 @@
 
                     <div class="options">
                         <div class="login">
-                            <a href="login.php" class="login-item mr-2"><img src="./images/home/user-login.svg"
-                                    alt="icono-usuario"/></a>
-                            <a href="index.php" class="login-item"><img src="images/paises/gmt-icon.svg" alt="icono-gmt"
-                                    width="32px"/></a>
+                            <a href="login.php" class="login-item mr-2"><img src="./images/home/user-login.svg" alt="icono-usuario" /></a>
+                            <a href="index.php" class="login-item"><img src="images/paises/gmt-icon.svg" alt="icono-gmt" width="32px" /></a>
                         </div>
                     </div>
                 </div>
@@ -113,12 +111,11 @@
                         </a>
                     </div>
                     <div>
-                        <a href="https://www.marca.com/claro-mx/" target="_blank"
-                            class="navbar-link text-decoration-none">
+                        <a href="https://www.marca.com/claro-mx/" target="_blank" class="navbar-link text-decoration-none">
                             <p class="navbar-item-black text-semibold">Claro Sports</p>
                         </a>
                     </div>
-                 
+
                 </div>
             </nav>
             <!--dots-->
@@ -129,8 +126,7 @@
             <div class="d-flex position-absolute programming-dots space-do">
                 <div class=" d-inline-block position-relative programming-slider-dots align-items-center">
                 </div>
-                <img src="./images/General/plus.svg" alt="icono-agregar" class="cursor-pointer slider-pagination-add mr-3"
-                    style="width:42px"/>
+                <img src="./images/General/plus.svg" alt="icono-agregar" class="cursor-pointer slider-pagination-add mr-3" style="width:42px" />
             </div>
         </div>
 
@@ -141,21 +137,17 @@
             <div class="o-tv-section programming-container">
                 <div class="d-flex justify-content-center">
                     <div class=" p-3 border-t border-l border-r border-b position-relative d-inline-block mx-auto">
-                        <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-menu"/>
+                        <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-menu" />
                         <div class="row no-gutters col-12">
                             <ul class="d-flex list-progra pl-0">
                                 <!--Logo canal claro-->
                                 <div class=" text-center no-gap  mr-2">
-                                    <li rel="claro-canal-programing-edit" class="navs-li  d-inline-block"
-                                        style="width: 200px !important;">
+                                    <li rel="claro-canal-programing-edit" class="navs-li  d-inline-block" style="width: 200px !important;">
 
-                                        <div class=" mx-auto position-relative thumbnail-image-program "
-                                            id="images-logo">
+                                        <div class=" mx-auto position-relative thumbnail-image-program " id="images-logo">
 
-                                            <label for="imagelogo"
-                                                class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
-                                                <img class="claro-nav-image cursor-auto thumbnail-image-program" src=""
-                                                    alt="logo-claro-canal" id="icon_canal_claro_edi" />
+                                            <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
+                                                <img class="claro-nav-image cursor-auto thumbnail-image-program" src="" alt="logo-claro-canal" id="icon_canal_claro_edi" />
 
                                             </label>
                                         </div>
@@ -163,15 +155,11 @@
                                 </div>
                                 <!--Logo concert channel-->
                                 <div class=" text-center no-gap border-r border-l pr-2 pl-2">
-                                    <li rel="concert-channel-programing-edit" class="navs-li d-inline-block"
-                                        style="width: 200px !important;">
-                                        <div class=" mx-auto position-relative thumbnail-image-program"
-                                            id="images-logo">
+                                    <li rel="concert-channel-programing-edit" class="navs-li d-inline-block" style="width: 200px !important;">
+                                        <div class=" mx-auto position-relative thumbnail-image-program" id="images-logo">
                                             <!--class to update image-->
-                                            <label for="imagelogo"
-                                                class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
-                                                <img class="claro-nav-image cursor-auto thumbnail-image-program" src=""
-                                                    alt="logo-concert-channel" id="icon_concert_channel_edi" />
+                                            <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
+                                                <img class="claro-nav-image cursor-auto thumbnail-image-program" src="" alt="logo-concert-channel" id="icon_concert_channel_edi" />
 
                                             </label>
                                         </div>
@@ -179,16 +167,11 @@
                                 </div>
                                 <!--Logo claro cinema-->
                                 <div class=" text-center no-gap  ml-2">
-                                    <li rel="claro-cinema-programing-edit"
-                                        class="active-navItems navbar-progra-item-container navs-li d-inline-block"
-                                        style="width: 200px !important;">
-                                        <div class=" mx-auto position-relative thumbnail-image-program"
-                                            id="images-logo">
+                                    <li rel="claro-cinema-programing-edit" class="active-navItems navbar-progra-item-container navs-li d-inline-block" style="width: 200px !important;">
+                                        <div class=" mx-auto position-relative thumbnail-image-program" id="images-logo">
                                             <!--class to update image-->
-                                            <label for="imagelogo"
-                                                class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
-                                                <img class="claro-nav-image thumbnail-image-program" src="" alt="logo-claro-cinema"
-                                                    id="icon_claro_cinema_edi" />
+                                            <label for="imagelogo" class="mb-0 cursor-pointer d-flex p-2 m-3 justify-content-center align-items-center h-100 flex-column">
+                                                <img class="claro-nav-image thumbnail-image-program" src="" alt="logo-claro-cinema" id="icon_claro_cinema_edi" />
                                             </label>
                                         </div>
                                     </li>
@@ -209,7 +192,7 @@
                             </div>
 
                             <div class="no-gutters">
-                                <ul class="claro-calendar col-md-10 mx-auto">
+                                <ul class="claro-calendar-backoffice col-md-10 mx-auto">
                                     <div class="programacion-slider pro-claro-slider" id="pro-claro-slider">
 
                                     </div>
@@ -233,7 +216,7 @@
                             </div>
 
                             <div class="no-gutters">
-                                <ul class="concert-calendar col-md-10 mx-auto">
+                                <ul class="concert-calendar-backoffice col-md-10 mx-auto">
                                     <div class="programacion-slider" id="pro-concert-slider">
                                     </div>
                                 </ul>
@@ -256,7 +239,7 @@
                             </div>
 
                             <div class="no-gutters">
-                                <ul class="cinema-calendar col-md-10 mx-auto">
+                                <ul class="cinema-calendar-backoffice col-md-10 mx-auto">
                                     <div class="programacion-slider" id="pro-cinema-slider">
 
                                 </ul>
@@ -270,16 +253,16 @@
 
                 </div>
         </main>
-        
+
         <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
         <script>
             var socketProgramacion = new easyXDM.Socket({
-                onReady: function () {
+                onReady: function() {
                     var hey = 11000;
                     socketProgramacion.postMessage(hey)
                 }
             });
-            $('.pro-container').on("click", ".edit-program-pencil", function () {
+            $('.pro-container').on("click", ".edit-program-pencil", function() {
                 let chapterId = $(this).attr("chapter_id");
                 let type = "program"
                 let data = {
@@ -290,7 +273,7 @@
                 socketProgramacion.postMessage(json);
 
             })
-            $('.programacion-header').on("click", ".slider-pagination-item", function () {
+            $('.programacion-header').on("click", ".slider-pagination-item", function() {
                 let type = "slider-pagination";
                 let data = {
                     id: 0,
@@ -299,7 +282,7 @@
                 var json = JSON.stringify(data);
                 socketProgramacion.postMessage(json);
             })
-            $('.schedule-description1').on("click", ".schedule-description1", function () {
+            $('.schedule-description1').on("click", ".schedule-description1", function() {
                 let type = "synopsis";
                 let data = {
                     id: 0,
@@ -308,7 +291,7 @@
                 var json = JSON.stringify(data);
                 socketProgramacion.postMessage(json);
             })
-            $('.pencil-menu').click(function () {
+            $('.pencil-menu').click(function() {
                 let type = "menu-logos";
                 let data = {
                     id: 0,

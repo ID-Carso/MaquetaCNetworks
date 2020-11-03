@@ -28,6 +28,7 @@ import {
   getPrograms,
   createClickThumbnails,
   getProgramming,
+  getProgrammingGMT,
 } from "./services/Program.js";
 
 /* Date */
@@ -143,7 +144,7 @@ $(document).ready(function () {
             programsCanalClaroList += `
             <div class="list-item-container" >
             <div class="poster">
-             <div class="thumbnail-body" _id="${favorite.chapter_id}">
+             <div>
                 <div class="thumbnail">
                      <img src="${favorite.image}" alt="imagen-de-${favorite.program_title}">
                 </div>
@@ -242,7 +243,7 @@ $(document).ready(function () {
             programsCanalClaroList += `
             <div class="list-item-container" >
             <div class="poster">
-             <div class="thumbnail-body" _id="${favorite.chapter_id}">
+             <div>
                 <div class="thumbnail">
                     <img src="${favorite.image}" alt="image-de-${favorite.program_title}">
                 </div>
@@ -359,7 +360,7 @@ $(document).ready(function () {
             programsConcertChannelList += `
             <div class="list-item-container" >
             <div class="poster">
-              <div class="thumbnail-body" _id="${favorite.chapter_id}">
+              <div>
                 <div class="thumbnail">
                     <img src="${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
                 </div>
@@ -458,7 +459,7 @@ $(document).ready(function () {
             programsConcertChannelList += `
             <div class="list-item-container" >
             <div class="poster">
-             <div class="thumbnail-body" _id="${favorite.chapter_id}">
+             <div>
                 <div class="thumbnail">
                     <img src="${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
                 </div>
@@ -574,7 +575,7 @@ $(document).ready(function () {
             programsClaroCinemaList += `
             <div class="list-item-container">
             <div class="poster">
-              <div class="thumbnail-body" _id="${favorite.chapter_id}">
+              <div>
                 <div class="thumbnail">
                     <img src="${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
                 </div>
@@ -673,7 +674,7 @@ $(document).ready(function () {
             programsClaroCinemaList += `
             <div class="list-item-container">
             <div class="poster">
-             <div class="thumbnail-body" _id="${favorite.chapter_id}">
+             <div>
                 <div class="thumbnail">
                     <img src="${favorite.image}" alt="imagen-de-${favorite.program_title}"/>
                 </div>
@@ -810,7 +811,12 @@ $(document).ready(function () {
     let day = $(".SeleccionDiaLista").text();
     let month = $(".SeleccionMesLista").text();
     let year = $(".SeleccionAñoLista").text();
-    let date = year + "-" + month + "-" + day;
+    let date = "";
+    if (day === "Día" || month === "Mes" || year === "Año") {
+      date = "";
+    } else {
+      date = year + "-" + month + "-" + day;
+    }
     let genderMale = $("#hombre");
     let genderFemale = $("#mujer");
     var gender;
@@ -1563,6 +1569,7 @@ $(document).ready(function () {
   let currentTime = `${hour}:${minutes}`;
   getPrograms(currentDate, getNameCountry(sessionSrc));
   getProgramming(currentDate, 0, getNameCountry(sessionSrc));
+  getProgrammingGMT(currentDate, 0, "gmt");
   /*menu responsive*/
   const invisible_button = document.querySelector(".invisible-button");
   const tache_button = document.querySelector(".tache_button");
@@ -1974,6 +1981,43 @@ function recreateClickCalendar() {
     $("ul.claro-calendar .claro-item").removeClass("claro-active");
     $(this).addClass("claro-active");
     //Mostrar contenido (Que es innecesario en estos momentos)
+  });
+
+  $("ul.claro-calendar-backoffice .claro-item").click(function () {
+    let date = $(this).attr("date");
+    //Petición ajax para traer la programación
+    let month = parseInt(date.split("-")[1]);
+    $(".month").text(`${getMonthAndYear(month - 1)}`);
+    getProgrammingGMT(date, 1, "gmt");
+
+    $("ul.claro-calendar-backoffice .claro-item").removeClass("claro-active");
+    $(this).addClass("claro-active");
+    //Mostrar contenido (Que es innecesario en estos momentos)
+  });
+
+  //Concert channel
+  $("ul.concert-calendar-backoffice .concert-item").click(function () {
+    //peticiones
+    let date = $(this).attr("date");
+    let month = parseInt(date.split("-")[1]);
+    $(".month").text(`${getMonthAndYear(month - 1)}`);
+    getProgrammingGMT(date, 1, "gmt");
+    $("ul.concert-calendar-backoffice .concert-item").removeClass(
+      "concert-active"
+    );
+    $(this).addClass("concert-active");
+  });
+
+  $("ul.cinema-calendar-backoffice .cinema-item").click(function () {
+    $("ul.cinema-calendar-backoffice .cinema-item").removeClass(
+      "cinema-active"
+    );
+    $(this).addClass("cinema-active");
+
+    let date = $(this).attr("date");
+    let month = parseInt(date.split("-")[1]);
+    $(".month").text(`${getMonthAndYear(month - 1)}`);
+    getProgrammingGMT(date, 1, "gmt");
   });
 
   //Concert channel
