@@ -1116,7 +1116,7 @@ $(document).ready(function () {
       <a href="index.php" class="login-item options-item"><img class="login-country" src="" alt="seleccion-de-pais" /></a>
       </div>
       `;
-    sidebarContent.append(sidebarItem);
+    //sidebarContent.append(sidebarItem);
     sidebarHeader.html(menuMobile);
     userOptions.html(menuIngreso);
     usernewmenu.html(menuIngresoNew);
@@ -1573,7 +1573,7 @@ $(document).ready(function () {
   /*menu responsive*/
   const invisible_button = document.querySelector(".invisible-button");
   const tache_button = document.querySelector(".tache_button");
-  
+
   const menu = document.querySelector(".menu-responsive");
   const menu_categorias = document.querySelector(".categorias-flecha");
   const hamburguer = document.querySelector(".hamburguer-menu");
@@ -1688,7 +1688,6 @@ $(document).ready(function () {
       sidebar_content.style.overflow = "hidden";
       sidebar_content.style.height = "0%";
     });
-    
   }
 
   const video_home = document.querySelector(".circle-video");
