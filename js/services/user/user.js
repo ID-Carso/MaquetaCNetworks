@@ -195,7 +195,7 @@ function signIn(email, password) {
   $.ajax({
     type: "POST",
     data: dataUser,
-    url: "adapters/user.php",
+    url: "./adapters/user.php",
     beforeSend: function () {
       const loader = `
       <div class="loader">
@@ -207,7 +207,7 @@ function signIn(email, password) {
     },
     success: function (result) {
       let json = JSON.parse(result);
-      console.log(json);
+
       if (json.data) {
         location.href = "./home.php";
         console.log("direc v1.2");
@@ -377,7 +377,7 @@ function registerUser(inputName, inputEmail, inputPassword) {
   $.ajax({
     type: "POST",
     data: user,
-    url: "../../adapters/user.php",
+    url: "./adapters/user.php",
     beforeSend: function () {
       const loader = `
       <div class="loader">
@@ -388,9 +388,8 @@ function registerUser(inputName, inputEmail, inputPassword) {
       formContainer.prepend(loader);
     },
     success: function (result) {
+      console.log(result);
       let json = JSON.parse(result);
-      console.log(json);
-      console.log("2 :");
 
       let loader = $(".loader");
 
