@@ -122,6 +122,11 @@ class User
     {
         callAPI(null, $this->baseUrl . "user/favoritesList/" . $id . "&" . $genre, null);
     }
+
+    function sendNewPassword($data)
+    {
+        callAPI("POST", $this->baseUrl . "user/reset_password", $data);
+    }
 }
 
 
@@ -147,7 +152,7 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
         case 'signIn':
             if (is_string($_POST['email']) && is_string($_POST['password'])) {
                 $email = $_POST['email'];
-                $password = $_POST['password'];
+                $password = md5($_POST['password']);
                 $data = array("email" => $email, "password" => $password);
                 $dataJson = json_encode($data);
                 $user = User::getUserInstance();
@@ -159,7 +164,7 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             if (is_string($_POST['name']) && is_string($_POST['email']) && is_string($_POST['password'])) {
                 $name = $_POST['name'];
                 $email = $_POST['email'];
-                $password = $_POST['password'];
+                $password = md5($_POST['password']);
                 $version = $_POST['version'];
                 $users = User::getUserInstance();
                 echo ($users->registerUser($name, $email, $password, $version));
@@ -246,6 +251,15 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             $id = $_POST["id"];
             $user = User::getUserInstance();
             echo ($user->filterPrograms($id, $genre));
+            break;
+        case "sendNewPassword":
+            $token = $_POST["token"];
+            $password = md5($_POST["password"]);
+            $confirm = md5($_POST["confirm"]);
+            $user = User::getUserInstance();
+            $data = array("token" => $token, "password" => $password, "confirm" => $confirm);
+            $dataJson = json_encode($data);
+            return $user->sendNewPassword($token, $password, $confirm);
             break;
     }
 }

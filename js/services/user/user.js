@@ -160,6 +160,7 @@ function sendNewPassword(inputPassword, secondInputPassword) {
     token: token,
     password: newPassowrd,
     confirm: confirmedNewPassowrd,
+    function: "sendNewPassword",
   };
 
   $.ajax({
@@ -174,10 +175,8 @@ function sendNewPassword(inputPassword, secondInputPassword) {
       let formContainer = $(".formContainer");
       formContainer.prepend(loader);
     },
-    url:
-      "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_password",
+    url: "adapters/user.php",
     success: function (result) {
-      console.log(result);
       if (result.code == 200) {
         location.href = "./success-password.php";
       }
