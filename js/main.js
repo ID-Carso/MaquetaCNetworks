@@ -1202,7 +1202,7 @@ $(document).ready(function () {
     }
   });
 
-  const inputPassword = $("#login-password");
+  const inputPassword = $(".input-password");
   const caracteresMin = $(".caracteres-min");
   const listo = $(".listo");
   inputPassword.keyup(function () {

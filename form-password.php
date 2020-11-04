@@ -32,7 +32,7 @@
               <div class="col-sm-12 no-gap">
                 <div>
                   <div class="position-relative">
-                    <input class="insert-data input-password" id="login-password" type="password" placeholder="Escribe tu contraseña nueva *" id="new-password" />
+                    <input class="insert-data input-password" type="password" placeholder="Escribe tu contraseña nueva *" id="new-password" />
                     <img src="images/registro/eye-none.svg" class="icon-eye" alt="icono-ver-contraseña" />
                   </div>
                   <p class="correo-valido caracteres-min" id="error-password-confirm"> 8 caractéres mínimo
