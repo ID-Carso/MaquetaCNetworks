@@ -259,7 +259,7 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             $user = User::getUserInstance();
             $data = array("token" => $token, "password" => $password, "confirm" => $confirm);
             $dataJson = json_encode($data);
-            return $user->sendNewPassword($token, $password, $confirm);
+            return $user->sendNewPassword($dataJson);
             break;
     }
 }

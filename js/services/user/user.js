@@ -177,7 +177,8 @@ function sendNewPassword(inputPassword, secondInputPassword) {
     },
     url: "adapters/user.php",
     success: function (result) {
-      if (result.code == 200) {
+      let json = JSON.parse(result);
+      if (json.code == 200) {
         location.href = "./success-password.php";
       }
     },
