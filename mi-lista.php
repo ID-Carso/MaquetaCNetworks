@@ -14,7 +14,7 @@ if ($_SESSION["country"] != 1) {
 <head>
     <?php include './views/partials/head.php' ?>
     <?php include './views/partials/session.php' ?>
-    <script src="./js/favorites.js"></script>
+    <script src="./js/favorites.js" type="module"></script>
 </head>
 
 <body>
@@ -58,7 +58,7 @@ if ($_SESSION["country"] != 1) {
 
         <div class="categorias-menu" style="overflow-y: scroll;">
             <div class="sidebar-content cursor-pointer " id="genre-menu-content">
-            
+
 
             </div>
 
