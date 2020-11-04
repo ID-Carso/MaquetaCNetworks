@@ -51,7 +51,7 @@
     <div class="centro t-90">          
             <img src="images/General/personaje.svg" alt="personaje-error">
                 <h1 class="a-text-black-monblack h1 m-4"> ¡OH NO! </h1>
-                <p class=" a-text-bold-greyish size21"> Lo sentimos, algo salió mal…. </br>Esta URL es una página antigua o un error tipográfico. Revisa la ortografía o regresa.</p>
+                <p class=" a-text-bold-greyish size21"> Lo sentimos, algo salió mal…. </br>   Por favor, inténtalo más tarde.</p>
                 
      </div>
 </body>

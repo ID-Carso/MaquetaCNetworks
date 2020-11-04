@@ -105,6 +105,7 @@ if ($_SESSION["country"] != 1) {
 
             <div class="no-gutters">
                 <div class="col-11 mx-auto">
+                
                     <div id="claro-canal-favorites">
                     </div>
                     <div id="concert-channel-favorites">

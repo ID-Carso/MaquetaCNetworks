@@ -85,12 +85,13 @@ function filterPrograms(option, id) {
           `;
           $("#claro-canal-favorites").append(programsempty);
           }  
-          for(program in json.data.favorites){ 
-                    
-          switch (json.data.favorites[program].channel) {
-            case "Claro Cinema":
-              console.log("cienma");
-              let   programsClaroCinemaList = `
+          if (json.data.favorites != null) {
+            if (json.data.favorites.length != 0) {
+              let programsCanalClaroList = "";
+              json.data.favorites.forEach((favorite) => {
+                if (json.data.favorites[favorite].channel == "Claro Cinema") {
+                  programsCanalClaroList += `
+    
               <div class="list-item-container" >
               <div class="poster">
                <div class="thumbnail-body" _id="${json.data.favorites[program].chapter_id}">
@@ -190,6 +191,9 @@ function filterPrograms(option, id) {
               `;
             
         
+                    }
+                });
+
               let programsClaroCinema = `
               <div class="cinema-list section-list-container">
                 <h1 class="cinema-list-title list-title-section">Claro <span>Cinema</span></h1>
@@ -197,10 +201,14 @@ function filterPrograms(option, id) {
               </div>       
           `;
           $("#claro-cinema-favorites").append(programsClaroCinema);
-              break;
-              case "Concert Channel":
+            }
+            if (json.data.favorites != null) {
+                if (json.data.favorites.length != 0) {
+                  let programsConcertChannelList = "";
+                  json.data.favorites.forEach((favorite) => {
+                    if (json.data.favorites[favorite].channel == "Concert Channel") {
                 console.log("concert");
-                let   programsConcertChannelList = `
+              programsConcertChannelList = `
                 <div class="list-item-container" >
                 <div class="poster">
                  <div class="thumbnail-body" _id="${json.data.favorites[program].chapter_id}">
@@ -300,6 +308,9 @@ function filterPrograms(option, id) {
                 `;
               
           
+                     }
+                    });
+
                 let programsConcertChannel = `
                 <div class="concert-list section-list-container">
                   <h1 class="concert-list-title list-title-section">Concert Channel</h1>
@@ -308,10 +319,14 @@ function filterPrograms(option, id) {
             `;
             $("#concert-channel-favorites").append(programsConcertChannel);
           
-                break;
-                case "Canal Claro":
+                }
+                if (json.data.favorites != null) {
+                    if (json.data.favorites.length != 0) {
+                      let  programsCanalClaroList = "";
+                      json.data.favorites.forEach((favorite) => {
+                        if (json.data.favorites[favorite].channel == "Canal Claro") { 
                   console.log("claro");
-              let   programsCanalClaroList = `
+               programsCanalClaroList = `
                   <div class="list-item-container" >
                   <div class="poster">
                    <div class="thumbnail-body" _id="${json.data.favorites[program].chapter_id}">
@@ -411,21 +426,26 @@ function filterPrograms(option, id) {
                   `;
                 
             
-              let programsCanalClaro = `
-              <div class="claro-list section-list-container">
-                    <h1 class="claro-list-title list-title-section">Claro Canal</h1>
-                      ${programsCanalClaroList}
-              </div>        
-              `;
-              $("#claro-canal-favorites").append(programsCanalClaro);
             
-                  break;
-          }
-        }
+            
+                          }
+                          
+                        });
+                        let programsCanalClaro = `
+                        <div class="claro-list section-list-container">
+                              <h1 class="claro-list-title list-title-section">Claro Canal</h1>
+                                ${programsCanalClaroList}
+                        </div>        
+                        `;
+                        $("#claro-canal-favorites").append(programsCanalClaro);
+                        }
+          
         
+                 }
+            } 
         }
-        
-
-    },
-  });
+    }
+    
+        },
+    });
 }
