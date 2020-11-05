@@ -1825,7 +1825,9 @@ export default class Section {
           }
           return json;
         } else {
-          console.log("No se puede obtener el footer");
+         
+            location.href = "./error-404.php";
+          
         }
       },
     });

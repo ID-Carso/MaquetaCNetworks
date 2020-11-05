@@ -72,6 +72,11 @@ function filterPrograms(option, id) {
       // console.log(result);
       let json = JSON.parse(result);
       let program = 0;
+      if (json.code == 404) {
+        location.href = "./error-404.php";
+      } if (json.code == 500) {
+        location.href = "./error-500.php";
+      }
       if (json.code == 200) {
         console.log(json);
         if (json.data.favorites == 0) {
@@ -186,13 +191,7 @@ function filterPrograms(option, id) {
           </div>
               `;
 
-              let programsClaroCinema = `
-              <div class="cinema-list section-list-container">
-                <h1 class="cinema-list-title list-title-section">Claro <span>Cinema</span></h1>
-                  ${programsClaroCinemaList}
-              </div>       
-          `;
-              $("#claro-cinema-favorites").append(programsClaroCinema);
+             
               break;
             case "Concert Channel":
               console.log("concert");
@@ -295,14 +294,7 @@ function filterPrograms(option, id) {
             </div>
                 `;
 
-              let programsConcertChannel = `
-                <div class="concert-list section-list-container">
-                  <h1 class="concert-list-title list-title-section">Concert Channel</h1>
-                  ${programsConcertChannelList}
-                </div>       
-            `;
-              $("#concert-channel-favorites").append(programsConcertChannel);
-
+            
               break;
             case "Canal Claro":
               console.log("claro");
@@ -405,18 +397,35 @@ function filterPrograms(option, id) {
               </div>
                   `;
 
-              let programsCanalClaro = `
-              <div class="claro-list section-list-container">
-                    <h1 class="claro-list-title list-title-section">Claro Canal</h1>
-                      ${programsCanalClaroList}
-              </div>        
-              `;
-              $("#claro-canal-favorites").append(programsCanalClaro);
+             
 
               break;
           }
         }
+        let programsClaroCinema = `
+        <div class="cinema-list section-list-container">
+          <h1 class="cinema-list-title list-title-section">Claro <span>Cinema</span></h1>
+            ${programsClaroCinemaList}
+        </div>       
+    `;
+        $("#claro-cinema-favorites").append(programsClaroCinema);
         let removeButtonProgram = $(".remove-program");
+        let programsCanalClaro = `
+        <div class="claro-list section-list-container">
+              <h1 class="claro-list-title list-title-section">Claro Canal</h1>
+                ${programsCanalClaroList}
+        </div>        
+        `;
+        $("#claro-canal-favorites").append(programsCanalClaro);
+
+        let programsConcertChannel = `
+        <div class="concert-list section-list-container">
+          <h1 class="concert-list-title list-title-section">Concert Channel</h1>
+          ${programsConcertChannelList}
+        </div>       
+    `;
+      $("#concert-channel-favorites").append(programsConcertChannel);
+
 
         removeButtonProgram.click(function (e) {
           let id = localStorage.getItem("id");

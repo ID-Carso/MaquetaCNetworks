@@ -53,7 +53,9 @@ function getMetaKeys(landing) {
           break;
       }
       sectionUI.getFooter(landing);
-
+      if (json.code == 404) {
+        location.href = "./error-404.php";
+      }
     }
   });
 }

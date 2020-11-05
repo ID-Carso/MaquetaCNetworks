@@ -170,7 +170,7 @@ function sendEmail(id) {
   $.ajax({
     type: "POST",
     data: dataUser,
-    url: "../../adapters/user.php",
+    url: "adapters/user.php",
     success: function (result) {
       console.log(result);
       console.log("email enviado");
@@ -190,7 +190,7 @@ function selectAvatar(id, src) {
   $.ajax({
     type: "POST",
     data: dataUser,
-    url: "../../adapters/user.php",
+    url: "adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
       console.log(dataUser);
@@ -221,7 +221,7 @@ function registerUser(inputName, inputEmail, inputPassword) {
   $.ajax({
     type: "POST",
     data: user,
-    url: "../../adapters/user.php",
+    url: "adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
       let modal = $("#mensaje");
@@ -241,7 +241,7 @@ function updateAlerts(configJson) {
   $.ajax({
     type: "POST",
     data: dataUser,
-    url: "../../adapters/user.php",
+    url: "adapters/user.php",
     success: function (result) {
       console.log(result);
       let modal = $("#mensaje");

@@ -101,6 +101,9 @@ $(document).ready(function () {
     success: function (result) {
       createClickThumbnails();
       let json = JSON.parse(result);
+      if (json.code == 404) {
+        location.href = "./error-404.php";
+      }
       console.log(json);
       let sliderCanalClarLandingedi = $(".today-claro-slider-edi");
       let sliderCanalClarLandingPrev = $(".today-claro-slider-prev");
@@ -471,7 +474,7 @@ $(document).ready(function () {
             </div>
           `;
           $(".synopsis-content").addClass("col-12").html(noSynopsis);
-        }
+        } 
       },
     });
   }

@@ -980,6 +980,11 @@ $(document).ready(function () {
           }
           return nameCountry;
         }
+      
+      if (json.code == 404) {
+        location.href = "./error-404.php";
+      }
+
       }
     },
   });

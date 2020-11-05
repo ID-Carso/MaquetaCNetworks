@@ -121,6 +121,10 @@ function validateToken(token) {
     url:
       "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/verify",
     success: function (result) {
+      let json = JSON.parse(result);
+      if (json.code == 404) {
+        location.href = "./error-404.php";
+      }
       console.log("succes", result);
       if (result.data != null) {
         localStorage.setItem("session", 1);

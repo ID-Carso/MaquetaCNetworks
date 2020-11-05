@@ -35,13 +35,12 @@
                     <input class="insert-data input-password" type="password" placeholder="Escribe tu contraseña nueva *" id="new-password" />
                     <img src="images/registro/eye-none.svg" class="icon-eye" alt="icono-ver-contraseña" />
                   </div>
-                  <p class="correo-valido caracteres-min" id="error-password-confirm"> 8 caractéres mínimo
-                    <img src="images/registro/alerta.svg" class="error" alt="icono-alerta-correo" />
+                
+                  <p class="caracteres-min" id="error-password-confirm"> 8 caractéres mínimo
+                  <img src="images/registro/listo.svg" class="listo" alt="icono-listo"/>
                   </p>
 
-                  <p class="correo-valido" id="error-new-password">
-                    <img src="images/registro/alerta.svg" class="error" alt="icono-alerta-correo" />
-                  </p>
+                  
                 </div>
                 <div class="mb-5">
                   <div class="position-relative">
@@ -49,6 +48,9 @@
                     <img src="images/registro/eye-none.svg" class="icon-eye" alt="icono-ver-contraseña" />
                   </div>
 
+                  <p class="caracteres-min" id="error-password-confirm"> 8 caractéres mínimo
+                  <img src="images/registro/listo.svg" class="listo" alt="icono-listo"/>
+                  </p>
 
 
                   </p>
