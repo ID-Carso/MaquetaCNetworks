@@ -24,6 +24,10 @@
 .btn-blue {
   @include more-button($blueSky);
 }
+.btn-teal {
+  @include more-button($subtitleTV);
+}
+
 
 .btn-pink {
   @include more-button($pinkBtn);

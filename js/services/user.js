@@ -34,6 +34,7 @@ function sendUserEmail(inputEmail) {
     success: function (result) {
       console.log("succes", result);
       if (result.data) {
+        console.log("aquí esta con v2");
         location.href =
           "http://www.claronetworks.openofficedospuntocero.info/v1.2/email-sent.php";
       }

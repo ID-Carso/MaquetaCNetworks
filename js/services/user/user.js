@@ -48,7 +48,7 @@ function showNotification() {
       $.ajax({
         type: "POST",
         data: dataUser,
-        url: "../../adapters/user.php",
+        url: "./adapters/user.php",
         success: function (result) {
           let json = JSON.parse(result);
 
@@ -124,6 +124,8 @@ function sendUserEmail(inputEmail) {
 
   let emailUser = {
     email: email,
+    function: "sendUserEmail",
+   
   };
 
   $.ajax({
@@ -142,6 +144,7 @@ function sendUserEmail(inputEmail) {
       "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_send",
     success: function (result) {
       if (result.data) {
+        console.log("solo es ./");
         location.href = "./email-sent.php";
       }
     },
@@ -175,11 +178,11 @@ function sendNewPassword(inputPassword, secondInputPassword) {
       let formContainer = $(".formContainer");
       formContainer.prepend(loader);
     },
-    url: "adapters/user.php",
+    url: "./adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
       if (json.code == 200) {
-        location.href = "/success-password.php";
+        location.href = "./success-password.php";
       }
     },
   });
@@ -295,7 +298,7 @@ function updateDataUser(id, gender, date, country) {
   $.ajax({
     type: "POST",
     data: dataUser,
-    url: "adapters/user.php",
+    url: "./adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
       console.log(result);
@@ -323,7 +326,7 @@ function sendEmail(id) {
   $.ajax({
     type: "POST",
     data: dataUser,
-    url: "adapters/user.php",
+    url: "./adapters/user.php",
     success: function (result) {
       console.log(result);
       console.log("email enviado");
@@ -342,7 +345,7 @@ function selectAvatar(id, src, idAvatar) {
   $.ajax({
     type: "POST",
     data: dataUser,
-    url: "adapters/user.php",
+    url: "./adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
       if (json.code == 200) {
@@ -419,7 +422,7 @@ function updateAlerts(configJson) {
   $.ajax({
     type: "POST",
     data: dataUser,
-    url: "adapters/user.php",
+    url: "./adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
       console.log(json);
@@ -510,7 +513,7 @@ function addFavorites() {
         $.ajax({
           type: "POST",
           data: dataUser,
-          url: "adapters/user.php",
+          url: "./adapters/user.php",
           success: function (result) {
             let json = JSON.parse(result);
             console.log(json);
@@ -585,7 +588,7 @@ function removeFavorites(user_id, program_id, removeButton, itemList) {
     type: "POST",
     data: dataUser,
     cache: false,
-    url: "adapters/user.php",
+    url: "./adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
       console.log(json);
@@ -692,7 +695,7 @@ function updateAlertProgram(user_id, program_id, active) {
   $.ajax({
     type: "POST",
     data: dataUser,
-    url: "adapters/user.php",
+    url: "./adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
       console.log(json);

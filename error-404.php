@@ -48,11 +48,15 @@
   
 </head>
 <body class="background-error">
-    <div class="centro t-90">          
+    <div class="centro t-50">          
             <img src="images/General/personaje.svg" alt="personaje-error">
                 <h1 class="a-text-black-monblack h1 m-4"> ¡OH NO! </h1>
-                <p class=" a-text-bold-greyish size21"> Lo sentimos, algo salió mal…. </br>Esta URL es una página antigua o un error tipográfico. Revisa la ortografía o regresa.</p>
-                
+                <p class=" a-text-bold-greyish size21"> Lo sentimos… </br>No se encontró la página.</p>
+                <a href="home.php">
+                <button  class="btn-teal ">
+                 REGRESAR AL HOME
+                </button>
+              </a>
      </div>
 </body>
 </html>

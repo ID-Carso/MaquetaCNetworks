@@ -124,7 +124,7 @@
             </p>
 
                 <div class="m-btn">
-                    <a href="http://www.claronetworks.openofficedospuntocero.info/verifyPassword.html?{{$info['token']}}"><button class="form-button-primary a-text-white-bold">Reestablecer Contraseña</button></a>
+                    <a href="http://www.claronetworks.openofficedospuntocero.info/v1.2/verifyPassword.html?{{$info['token']}}"><button class="form-button-primary a-text-white-bold">Reestablecer Contraseña</button></a>
                 </div>
             <p class="a-text-black-regular">Tu nombre de usuario es: <span class="a-text-black">{{$info['name']}}</span></p>
             

@@ -65,6 +65,11 @@ function validateNewPassword(inputPassword, inputPasswordConfirm) {
       .addClass("invalid-email")
       .text("Debes ingresar de nuevo la contraseña");
     return false;
+  }else if (passwordConfirm.length < 8) {
+    warningPassword
+      .addClass("invalid-email")
+      .text("La contraseña debe tener mínimo 8 caracteres");
+    return false;
   } else if (password !== passwordConfirm) {
     warningPasswordConfirm
       .addClass("invalid-email")

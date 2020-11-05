@@ -1217,6 +1217,21 @@ $(document).ready(function () {
       listo.css("display", "inline-block");
     }
   });
+  const inputPassword2 = $(".input-password2");
+  const caracteresMin2 = $(".caracteres-min2");
+  const listo2 = $(".listo2");
+  inputPassword2.keyup(function () {
+    if (inputPassword2.val().length < 8 && inputPassword2.val().length >= 1) {
+      caracteresMin2.css("color", "red");
+      listo2.css("display", "none");
+    } else if (inputPassword2.val().length == 0) {
+      caracteresMin2.css("color", "#666262");
+      listo2.css("display", "none");
+    } else {
+      caracteresMin2.css("color", "green");
+      listo2.css("display", "inline-block");
+    }
+  });
   /*login*/
   const inputPassword1 = $("#signup-password");
   const caracteresMin1 = $(".caracteres-min");
@@ -1262,7 +1277,7 @@ $(document).ready(function () {
   const inputNewPassword = $("#new-password");
   const inputConfirmPassword = $("#new-confirm-password");
   const newPasswordButton = $("#send-password-button");
-
+ 
   newPasswordButton.click(function () {
     if (validateNewPassword(inputNewPassword, inputConfirmPassword)) {
       sendNewPassword(inputNewPassword, inputConfirmPassword);

@@ -228,9 +228,9 @@ h6 {
           transform: translatex(-50%);
 }
 
-.t-90 {
-  -webkit-transform: translateY(90%);
-          transform: translateY(90%);
+.t-50 {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 /*Tamaño de textos - responsive*/
@@ -786,6 +786,21 @@ h6 {
 }
 
 .caracteres-min {
+  font-family: "Montserrat-SemiBold";
+  font-size: 14px;
+  font-weight: 700;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #666262;
+  text-align: left;
+  margin-top: 3%;
+}
+
+.caracteres-min2 {
   font-family: "Montserrat-SemiBold";
   font-size: 14px;
   font-weight: 700;
@@ -1820,7 +1835,7 @@ h6 {
 /*Tamaño de textos - responsive*/
 /*Tipografías*/
 /* Estructura Básica de los botones */
-.btn-red, .btn-blue, .btn-pink, .btn-purple {
+.btn-red, .btn-blue, .btn-teal, .btn-pink, .btn-purple {
   color: #ffffff;
   padding: 10px 38px;
   border-radius: 50px;
@@ -1836,6 +1851,10 @@ h6 {
 
 .btn-blue {
   background: #00caf5;
+}
+
+.btn-teal {
+  background: #069cb0;
 }
 
 .btn-pink {
@@ -2685,6 +2704,10 @@ h6 {
 }
 
 .listo {
+  display: none;
+}
+
+.listo2 {
   display: none;
 }
 
@@ -6687,10 +6710,7 @@ div #banner-concert-channel-edi .slick-track {
 
 .categorias-menu .sidebar-content {
   position: absolute;
-  top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .tache_button {

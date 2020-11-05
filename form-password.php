@@ -43,13 +43,14 @@
                   
                 </div>
                 <div class="mb-5">
+                  
                   <div class="position-relative">
-                    <input class="insert-data" type="password" placeholder="Escribe tu contraseña de nuevo" id="new-confirm-password" />
+                    <input class="insert-data input-password2" type="password" placeholder="Escribe tu contraseña de nuevo" id="new-confirm-password" />
                     <img src="images/registro/eye-none.svg" class="icon-eye" alt="icono-ver-contraseña" />
                   </div>
 
-                  <p class="caracteres-min" id="error-password-confirm"> 8 caractéres mínimo
-                  <img src="images/registro/listo.svg" class="listo" alt="icono-listo"/>
+                  <p class="caracteres-min2 " id="error-password-confirm"> 8 caractéres mínimo
+                  <img src="images/registro/listo.svg" class="listo2" alt="icono-listo"/>
                   </p>
 
 
