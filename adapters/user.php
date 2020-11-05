@@ -173,7 +173,6 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             }
             break;
         case 'updateDataUser':
-
             $data = array("id" => $_POST['id'], "gender" => $_POST['gender'], "birthday" => $_POST['date'], "country" => $_POST['country']);
             $dataJson = json_encode($data);
             $user = User::getUserInstance();
@@ -188,7 +187,6 @@ if (isset($_POST['function']) && !empty($_POST['function'])) {
             break;
 
         case 'sendEmail':
-
             $data = $_POST['id'];
             echo ($data);
             $user = User::getUserInstance();
