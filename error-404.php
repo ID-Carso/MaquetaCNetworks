@@ -1,6 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <title>Claro Networks</title>
 <meta charset="UTF-8" />
 <meta http-equiv="Expires" content="0">
@@ -44,8 +46,7 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 <meta name="google-site-verification" content="Fhzfm3i0rGPZNXIejbXFimUjzvPf-2SihzP6jhtuaPs" />
-   
-  
+
 </head>
 <body class="background-error">
     <div class="centro t-50">          

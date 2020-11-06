@@ -6711,6 +6711,8 @@ div #banner-concert-channel-edi .slick-track {
 .categorias-menu .sidebar-content {
   position: absolute;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .tache_button {

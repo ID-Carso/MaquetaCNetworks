@@ -17,7 +17,7 @@ $(document).ready(function () {
     <div class="sidebar-item " genre="all">
                     <p class="dropdown-p">Todos</p>
                 </div>
-    <div class="sidebar-item">
+    <div class="sidebar-item" genre="all">
       <img class="tache_button" src="images/mi-lista/cerrar-categorias.svg" alt="icono-cerrar">
     </div>
   `);
@@ -454,6 +454,7 @@ function filterPrograms(option, id) {
             updateAlertProgram(user_id, program_id, alert);
           }
         });
+       
       }
     },
   });

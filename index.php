@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
 
 <head>
+
 <!--metadato de indexación-->
 <meta name="robots" content="index"/> 
 <link rel=”canonical” href=”http://www.claronetworks.openofficedospuntocero.info/v1.2/index.php”/>
@@ -50,7 +52,7 @@
     }
 	</script>
 	
-	/>
+	
 </head>
 
 <body class="fondo-index">
