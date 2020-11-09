@@ -779,8 +779,7 @@ export default class Section {
       if (data[`block_1_image_slider_${counterCanalClaro}`]) {
         slideBanner += `        
         <div class="header-slide">
-          <img src="${
-            data[`block_1_image_slider_${counterCanalClaro}`]
+          <img src="${data[`block_1_image_slider_${counterCanalClaro}`]
           }?v=${new Date().getTime()}" class="rellax" data-rellax="10" alt="banner-sliders-claro-canal">
         </div>`;
         counterCanalClaro++;
@@ -917,164 +916,300 @@ export default class Section {
         break;
       }
     }
+
+    let Strinfcarrusel1 = "";
+    let Strinfcarrusel2 = "";
+
+    if (carrusel1.length === 0) {
+      for (let index = 0; index < 5; index++) {
+        Strinfcarrusel1 += `
+        <div class="poster cursor-auto" >
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/default/claro-horizontal-slider.jpg" alt="imagen-landing-concert-channel"/>
+                  </div>
+                  <div class="a-claro-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+    } else {
+      $(".pencil-carrusel1").attr(
+        "chapter_id",
+        data.block_4_carrusel_1_image1.chapter_id
+      );
+      carrusel1.forEach((program, index) => {
+        //Verificamos si el programa puede verse en el landig de sinopsis
+        if (program.landing_synopsis === 0) {
+          Strinfcarrusel1 += `
+          <div class="poster cursor-auto" >
+            <div class="poster-body">
+                <div>
+                    <div class="thumbnail">
+                        <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
+                    </div>
+                    <div class="a-claro-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">${program.genre}</p>
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          `;
+        } else {
+          Strinfcarrusel1 += `
+          <div class="poster cursor-pointer" >
+            <div class="poster-body">
+                <div class="thumbnail-body" _id="${program.chapter_id}">
+                    <div class="thumbnail">
+                        <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
+                    </div>
+                    <div class="a-claro-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">${program.genre}</p>
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          `;
+        }
+      });
+    }
+
+    if (carrusel2.length === 0) {
+      for (let index = 0; index < 5; index++) {
+        Strinfcarrusel2 += `
+        <div class="poster cursor-auto" >
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/default/claro-horizontal-slider.jpg" alt="imagen-landing-concert-channel"/>
+                  </div>
+                  <div class="a-claro-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+    } else {
+      $(".pencil-carrusel1").attr(
+        "chapter_id",
+        data.block_4_carrusel_2_image1.chapter_id
+      );
+      carrusel2.forEach((program, index) => {
+        //Verificamos si el programa puede verse en el landig de sinopsis
+        if (program.landing_synopsis === 0) {
+          Strinfcarrusel2 += `
+          <div class="poster cursor-auto" >
+            <div class="poster-body">
+                <div>
+                    <div class="thumbnail">
+                        <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
+                    </div>
+                    <div class="a-claro-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">${program.genre}</p>
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          `;
+        } else {
+          Strinfcarrusel2 += `
+          <div class="poster cursor-pointer" >
+            <div class="poster-body">
+                <div class="thumbnail-body" _id="${program.chapter_id}">
+                    <div class="thumbnail">
+                        <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
+                    </div>
+                    <div class="a-claro-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">${program.genre}</p>
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          `;
+        }
+      });
+    }
+
     let slider = new Slider();
     let dontLoseSlider = $("#dontLose-claro-slider");
     let sectionSlider = $(".section-slider");
     let exlusiveContentSlider = $("#exlusiveContentClaroSlider");
     sectionSlider.slick("unslick");
 
-    let programsExlusiveContent = [
-      {
-        chapter_id: 1,
-        program_title: "DRESS CODE",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/05-DRESS-CODE.jpg",
-      },
-      {
-        chapter_id: 2,
-        program_title: "FIT FOR LIFE",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/06-FIT4LIFE.jpg",
-      },
-      {
-        chapter_id: 3,
-        program_title: "CONEXIÓN CLARO",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/07-CONEXION.jpg",
-      },
-      {
-        chapter_id: 4,
-        program_title: "LA CAJA DE PANDORA",
-        image:
-          "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/08-CAJA-DE-PANDORA.jpg",
-      },
-    ];
-
-    let programTiensQueVerlo = "";
-    let programExlusiveContent = "";
-
-    /*
-      Almacenamos los programas en otras variables para dibujar los programas con bordes.
-      Esto  para la parevisualización en Backoffice de los landings
-    */
-    let programTienesQueVerloEdit = "";
-    let programExlusiveContentEdit = "";
-    carrusel1.forEach((program) => {
-      if (program.landing_synopsis === 0) {
-        programTiensQueVerlo += `
-        <div class="poster cursors-auto" >
-          <div class="poster-body">
-              <div>
-                  <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
-                  </div>
-                  <div class="a-claro-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                          <p class="a-poster-text-white">${program.genre}</p>
-                      </div>
-                  </div>
-            </div>
-          </div>
-        </div>
-        `;
-      } else {
-        programTiensQueVerlo += `
-        <div class="poster cursor-pointer">
-          <div class="poster-body">
-              <div class="thumbnail-body" _id="${program.chapter_id}">
-                  <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
-                  </div>
-                  <div class="a-claro-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                          <p class="a-poster-text-white">${program.genre}</p>
-                      </div>
-                  </div>
-            </div>
-          </div>
-        </div>
-        `;
-      }
-
-      /* programTienesQueVerloEdit += `
-      <div class="poster p-3 border-l border-r border-b border-t position-relative">
-      <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-claro-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.genre}</p>
-                    </div>
-                </div>
-          </div>
-        </div>
-      </div>
-      `;*/
-    });
-
-    carrusel2.forEach((program) => {
-      if (program.landing_synopsis === 0) {
-        programExlusiveContent += `
-        <div class="poster cursor-auto">
-          <div class="poster-body">
-              <div>
-                  <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
-                  </div>
-                  <div class="a-claro-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                          <p class="a-poster-text-white">${program.title}</p>
-                      </div>
-                  </div>
-            </div>
-          </div>
-        </div>
-        `;
-      } else {
-        programExlusiveContent += `
-        <div class="poster cursor-pointer">
-          <div class="poster-body">
-              <div class="thumbnail-body" _id="${program.chapter_id}">
-                  <div class="thumbnail">
-                      <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
-                  </div>
-                  <div class="a-claro-rectangle thumbnail-info-title">
-                      <div class="poster-title-margin">
-                          <p class="a-poster-text-white">${program.title}</p>
-                      </div>
-                  </div>
-            </div>
-          </div>
-        </div>
-        `;
-      }
-
-      /*  programExlusiveContentEdit += `
-      <div class="poster border-l p-3 border-r border-t border-b" >
-        <div class="poster-body">
-            <div class="thumbnail-body" _id="${program.chapter_id}">
-                <div class="thumbnail">
-                    <img src="${program.image_horizontal}" alt="">
-                </div>
-                <div class="a-claro-rectangle thumbnail-info-title">
-                    <div class="poster-title-margin">
-                        <p class="a-poster-text-white">${program.title}</p>
-                    </div>
-                </div>
-          </div>
-        </div>
-      </div>
-      `;*/
-    });
-
-    $("#dontLose-claro-sliderEdit").append(programTiensQueVerlo);
-    $("#exlusiveContentClaroSliderEdit").append(programExlusiveContent);
-    dontLoseSlider.append(programTiensQueVerlo);
-    exlusiveContentSlider.append(programExlusiveContent);
+    dontLoseSlider.html(Strinfcarrusel1);
+    exlusiveContentSlider.html(Strinfcarrusel2);
     slider.createSectionSliderHome();
+
+    // let programsExlusiveContent = [
+    //   {
+    //     chapter_id: 1,
+    //     program_title: "DRESS CODE",
+    //     image:
+    //       "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/05-DRESS-CODE.jpg",
+    //   },
+    //   {
+    //     chapter_id: 2,
+    //     program_title: "FIT FOR LIFE",
+    //     image:
+    //       "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/06-FIT4LIFE.jpg",
+    //   },
+    //   {
+    //     chapter_id: 3,
+    //     program_title: "CONEXIÓN CLARO",
+    //     image:
+    //       "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/07-CONEXION.jpg",
+    //   },
+    //   {
+    //     chapter_id: 4,
+    //     program_title: "LA CAJA DE PANDORA",
+    //     image:
+    //       "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/08-CAJA-DE-PANDORA.jpg",
+    //   },
+    // ];
+
+    // let programTiensQueVerlo = "";
+    // let programExlusiveContent = "";
+
+    // /*
+    //   Almacenamos los programas en otras variables para dibujar los programas con bordes.
+    //   Esto  para la parevisualización en Backoffice de los landings
+    // */
+    // let programTienesQueVerloEdit = "";
+    // let programExlusiveContentEdit = "";
+    // carrusel1.forEach((program) => {
+    //   if (program.landing_synopsis === 0) {
+    //     programTiensQueVerlo += `
+    //     <div class="poster cursors-auto" >
+    //       <div class="poster-body">
+    //           <div>
+    //               <div class="thumbnail">
+    //                   <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
+    //               </div>
+    //               <div class="a-claro-rectangle thumbnail-info-title">
+    //                   <div class="poster-title-margin">
+    //                       <p class="a-poster-text-white">${program.genre}</p>
+    //                   </div>
+    //               </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //     `;
+    //   } else {
+    //     programTiensQueVerlo += `
+    //     <div class="poster cursor-pointer">
+    //       <div class="poster-body">
+    //           <div class="thumbnail-body" _id="${program.chapter_id}">
+    //               <div class="thumbnail">
+    //                   <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
+    //               </div>
+    //               <div class="a-claro-rectangle thumbnail-info-title">
+    //                   <div class="poster-title-margin">
+    //                       <p class="a-poster-text-white">${program.genre}</p>
+    //                   </div>
+    //               </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //     `;
+    //   }
+
+    //   /* programTienesQueVerloEdit += `
+    //   <div class="poster p-3 border-l border-r border-b border-t position-relative">
+    //   <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
+    //     <div class="poster-body">
+    //         <div class="thumbnail-body" _id="${program.chapter_id}">
+    //             <div class="thumbnail">
+    //                 <img src="${program.image_horizontal}" alt="">
+    //             </div>
+    //             <div class="a-claro-rectangle thumbnail-info-title">
+    //                 <div class="poster-title-margin">
+    //                     <p class="a-poster-text-white">${program.genre}</p>
+    //                 </div>
+    //             </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    //   `;*/
+    // });
+
+    // carrusel2.forEach((program) => {
+    //   if (program.landing_synopsis === 0) {
+    //     programExlusiveContent += `
+    //     <div class="poster cursor-auto">
+    //       <div class="poster-body">
+    //           <div>
+    //               <div class="thumbnail">
+    //                   <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
+    //               </div>
+    //               <div class="a-claro-rectangle thumbnail-info-title">
+    //                   <div class="poster-title-margin">
+    //                       <p class="a-poster-text-white">${program.title}</p>
+    //                   </div>
+    //               </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //     `;
+    //   } else {
+    //     programExlusiveContent += `
+    //     <div class="poster cursor-pointer">
+    //       <div class="poster-body">
+    //           <div class="thumbnail-body" _id="${program.chapter_id}">
+    //               <div class="thumbnail">
+    //                   <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
+    //               </div>
+    //               <div class="a-claro-rectangle thumbnail-info-title">
+    //                   <div class="poster-title-margin">
+    //                       <p class="a-poster-text-white">${program.title}</p>
+    //                   </div>
+    //               </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //     `;
+    //   }
+
+    //   /*  programExlusiveContentEdit += `
+    //   <div class="poster border-l p-3 border-r border-t border-b" >
+    //     <div class="poster-body">
+    //         <div class="thumbnail-body" _id="${program.chapter_id}">
+    //             <div class="thumbnail">
+    //                 <img src="${program.image_horizontal}" alt="">
+    //             </div>
+    //             <div class="a-claro-rectangle thumbnail-info-title">
+    //                 <div class="poster-title-margin">
+    //                     <p class="a-poster-text-white">${program.title}</p>
+    //                 </div>
+    //             </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    //   `;*/
+    // });
+
+    // $("#dontLose-claro-sliderEdit").append(programTiensQueVerlo);
+    // $("#exlusiveContentClaroSliderEdit").append(programExlusiveContent);
+    // dontLoseSlider.append(programTiensQueVerlo);
+    // exlusiveContentSlider.append(programExlusiveContent);
+    // slider.createSectionSliderHome();
   }
   renderClaroCinema(json) {
     //obtenemos las iamgenes del carrusel 1
@@ -1087,9 +1222,8 @@ export default class Section {
       if (data[`block_1_image_slider_${counterCinema}`]) {
         slideBannerClaroCinema += `        
      <div class="header-slide">
-       <img src="${
-         data[`block_1_image_slider_${counterCinema}`]
-       }?v=${new Date().getTime()}" class="rellax" data-rellax="10" alt="banner-slider-cinema">
+       <img src="${data[`block_1_image_slider_${counterCinema}`]
+          }?v=${new Date().getTime()}" class="rellax" data-rellax="10" alt="banner-slider-cinema">
      </div>`;
         counterCinema++;
       } else {
@@ -1183,7 +1317,7 @@ export default class Section {
     //cambiando url de programacion
     $("#btn-claro-cinema a").attr("href", data.block_2_button_url);
     $(".btn-claro-cinema").text(data.block_2_button_title);
-   
+
 
     //BLOQUE 3 Seccion de video
     $("#a-cinema-title").text(data.block_3_title_1);
@@ -1197,16 +1331,16 @@ export default class Section {
     $("#carrusel_1_title").text(data.block_4_carrusel_1_title_1);
     $("#carrusel_1_title").append(
       ' <span class="recordar-title">' +
-        data.block_4_carrusel_1_title_2 +
-        "</span>"
+      data.block_4_carrusel_1_title_2 +
+      "</span>"
     );
     $("#carrusel_1_subtitle").text(data.block_4_carrusel_1_subtitle);
 
     $("#carrusel_2_title").text(data.block_4_carrusel_2_title_1);
     $("#carrusel_2_title").append(
       ' <span class="recordar-title">' +
-        data.block_4_carrusel_2_title_2 +
-        "</span>"
+      data.block_4_carrusel_2_title_2 +
+      "</span>"
     );
     $("#carrusel_2_subtitle").text(data.block_4_carrusel_2_subtitle);
 
@@ -1385,8 +1519,7 @@ export default class Section {
       if (data[`block_1_image_slider_${counterConcertChannel}`]) {
         slideBanner += `        
         <div class="header-slide">
-          <img src="${
-            data[`block_1_image_slider_${counterConcertChannel}`]
+          <img src="${data[`block_1_image_slider_${counterConcertChannel}`]
           }?v=${new Date().getTime()}" class="rellax" data-rellax="10" alt="banner-slider-concert-channel">
         </div>`;
         counterConcertChannel++;
@@ -1425,20 +1558,20 @@ export default class Section {
       arrows: false,
       prevArrow: '<img src="../images/sliders/prev.png" class="arrow-prev" alt="flecha-izquierda"/>',
       nextArrow: '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
-     
-      customPaging: function (slider, i) {
-        
 
-        var thumb = $(slider.$slides[i]).data(); 
-   
+      customPaging: function (slider, i) {
+
+
+        var thumb = $(slider.$slides[i]).data();
+
         return (
           "<p class='a-text-bold-tealblue slider-pagination-item pag  ' slide_index=" +
           i +
           ">" +
           (i + 1) +
-          "</p> " 
+          "</p> "
         );
-       
+
       },
     });
     let headerSlider = $(".header-slider");
@@ -1744,11 +1877,9 @@ export default class Section {
         <div class="bor thumbnail-image-program position-relative h-100 mx-auto" style="width:100%;">
             <label for="image_logo" class="h-100 mb-0 d-flex justify-content-center align-items-center flex-column">
                 <!--<span class="a-text-bold-warm text-plus mb90 shadow-contrast add-photo">472px X 295px</span>-->
-                <img src="${
-                  banner_images[i]
-                }?v=${new Date().getTime()}" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" alt="banner-de-programacion-${
-        banner_images[i]
-      }" />
+                <img src="${banner_images[i]
+        }?v=${new Date().getTime()}" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" alt="banner-de-programacion-${banner_images[i]
+        }" />
             </label>
         </div>`;
     }
@@ -1771,10 +1902,10 @@ export default class Section {
             "<p class='a-text-bold-tealblue slider-pagination-item pag ' slide_index=" +
             i +
             ">" +
-            (i + 1) + 
+            (i + 1) +
             "</p> "
           );
-          
+
         },
       });
 
@@ -1825,9 +1956,9 @@ export default class Section {
           }
           return json;
         } else {
-         
-            location.href = "./error-404.php";
-          
+
+          location.href = "./error-404.php";
+
         }
       },
     });

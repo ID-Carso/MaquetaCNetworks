@@ -6,7 +6,8 @@
   <input type="hidden" id="actual_landing" value="canal_claro">
 </head>
 
-<body style="overflow: hidden;">
+<!-- <body style="overflow: hidden;"> -->
+<body>
 
 
   <header class="claro-canal-header">
@@ -153,7 +154,8 @@
         <div class="dontLose-video-container">
           <div class="mb-3 position-relative border-t border-l border-r border-b p-2">
             <img id="claro-canal-edi-carrusel1" src=" ./images/General/pencil.svg" alt=" " class="pencil"/>
-            <div class="section-slider" id="dontLose-claro-sliderEdit">
+            <div class="section-slider" id="dontLose-claro-slider">
+            <!-- <div class="section-slider" id="dontLose-claro-sliderEdit"> -->
             </div>
           </div>
 
@@ -167,7 +169,8 @@
           </div>
           <div class="position-relative border-t border-l border-r border-b p-2">
             <img id="claro-canal-edi-carrusel2" src=" ./images/General/pencil.svg" alt=" " class="pencil"/>
-            <div class="section-slider dontLose-claro-slider" id="exlusiveContentClaroSliderEdit">
+            <div class="section-slider dontLose-claro-slider" id="exlusiveContentClaroSlider">
+            <!-- <div class="section-slider dontLose-claro-slider" id="exlusiveContentClaroSliderEdit"> -->
             </div>
           </div>
 
