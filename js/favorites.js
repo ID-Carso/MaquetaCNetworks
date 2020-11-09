@@ -1,7 +1,7 @@
 import { removeFavorites, updateAlertProgram } from "./services/user/user.js";
 $(document).ready(function () {
   let id = localStorage.getItem("id");
-
+ 
   //Renderizar programas
   let genres = JSON.parse(localStorage.getItem("genres"));
   let genreItem = "";
@@ -22,8 +22,9 @@ $(document).ready(function () {
     </div>
   `);
   //Filtrar programas
+ 
   $(".sidebar-item").click(function () {
-    let option = $(this).attr("genre");
+        let option = $(this).attr("genre");
     filterPrograms(option, id);
     console.log(option);
     $(".name-category").text(option);
@@ -55,6 +56,8 @@ $(document).ready(function () {
     sidebar_content.style.overflow = "hidden";
     sidebar_content.style.height = "0%";
   });
+ 
+    
 });
 
 function filterPrograms(option, id) {
@@ -68,7 +71,15 @@ function filterPrograms(option, id) {
     type: "POST",
     data: data,
     url: "./adapters/user.php",
+    beforeSend: function () {
+       
+          $("body").append(`<div class="loader">
+          <img src="./images/General/loader.gif" class="loader-img" alt="">
+        </div>`);
+        
+      },
     success: function (result) {
+        $(".loader").remove();
       // console.log(result);
       let json = JSON.parse(result);
       let program = 0;

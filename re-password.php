@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <link rel="preload" href="./images/general/loader.gif" as="image">
+  <link rel="preload" href="./images/General/loader.gif" as="image">
   <?php include './views/partials/head.php' ?>
 </head>
 

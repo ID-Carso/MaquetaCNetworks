@@ -1,3 +1,4 @@
+
 function validateTokenPassword(tokenPassword) {
   $.ajax({
     type: "GET",
@@ -19,7 +20,24 @@ function validateTokenPassword(tokenPassword) {
     },
   });
 }
-
+function getMonth(month) {
+  let months = [
+    "Ene",
+    "Feb",
+    "Mzo",
+    "Abr",
+    "May",
+    "Jun",
+    "Jul",
+    "Ago",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dic",
+  ];
+  let mall = months[month-1];
+ return mall;
+}
 function showNotification() {
   let id = localStorage.getItem("id");
   let alert = $(".alert-user");
@@ -144,7 +162,7 @@ function sendUserEmail(inputEmail) {
       "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_send",
     success: function (result) {
       if (result.data) {
-        console.log("solo es ./");
+     
         location.href = "./email-sent.php";
       }
     },
@@ -219,13 +237,17 @@ function signIn(email, password) {
         localStorage.setItem("id", json.data.id);
         localStorage.setItem("name", json.data.name);
         localStorage.setItem("avatar", json.data.avatar);
-        localStorage.setItem("gender", json.data.avatar);
-        localStorage.setItem("birthday", json.data.avatar);
+        localStorage.setItem("gender", json.data.gender);
+        localStorage.setItem("birthday", json.data.birthday);
         localStorage.setItem("src", json.data.country.image);
+     
         if (json.data.birthday) {
           let date = json.data.birthday.split("-");
           localStorage.setItem("day", date[2]);
-          localStorage.setItem("month", date[1]);
+          let mes = date[1].split("0");         
+           let mesfin = mes[mes.length - 1];
+           let m =  getMonth(mesfin);
+          localStorage.setItem("month", m);
           localStorage.setItem("year", date[0]);
         }
 
@@ -272,6 +294,7 @@ function signOut() {
   localStorage.removeItem("day");
   localStorage.removeItem("month");
   localStorage.removeItem("gender");
+  localStorage.removeItem("genres");
   localStorage.removeItem("session");
   localStorage.removeItem("avatar");
   localStorage.removeItem("id");
@@ -301,11 +324,11 @@ function updateDataUser(id, gender, date, country) {
     url: "./adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
-      console.log(result);
+      console.log(json);
       let gender = localStorage.setItem("gender", json.data.gender);
       let date = json.data.birthday.split("-");
       let day = localStorage.setItem("day", date[2]);
-      let month = localStorage.setItem("month", date[1]);
+      let month = localStorage.setItem("month",date[1]);
       let year = localStorage.setItem("year", date[0]);
       let birthday = localStorage.setItem("date", json.data.birthday);
       let country = localStorage.setItem("country", json.data.country.name);
@@ -440,45 +463,7 @@ function updateAlerts(configJson) {
           json.data.minutes
         );
 
-        /*let inputAlertMinutes = $("#alert-minutes-before");
-        let inputAlertBeginning = $("#alert-start");
-        let inputAlertWeb = $("#alert-web");
-        let inputAlertEmail = $("#alert-email");
-        let inputAlertsOff = $("#alerts-off");
-
-        if (
-          json.data.minutes == 0 &&
-          json.data.beginning == 0 &&
-          json.data.web == 0 &&
-          json.data.email == 0
-        ) {
-          inputAlertsOff.prop("checked", true);
-        } else {
-          inputAlertsOff.prop("checked", false);
-          if (json.data.minutes == 30) {
-            inputAlertMinutes.prop("checked", true);
-          } else {
-            inputAlertMinutes.prop("checked", false);
-          }
-
-          if (json.data.beginning == 1) {
-            inputAlertBeginning.prop("checked", true);
-          } else {
-            inputAlertBeginning.prop("checked", false);
-          }
-
-          if (json.data.web == 1) {
-            inputAlertWeb.prop("checked", true);
-          } else {
-            inputAlertWeb.prop("checked", false);
-          }
-
-          if (json.data.email == 1) {
-            inputAlertEmail.prop("checked", true);
-          } else {
-            inputAlertEmail.prop("checked", false);
-          }
-        }*/
+       
       }
     },
   });
