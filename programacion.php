@@ -233,7 +233,7 @@ if($_SESSION["country"] != 1){
             onReady: function () {
 
                 var hey = 4300;
-                console.log(hey);
+             
 
                 socket.postMessage(hey)
             }

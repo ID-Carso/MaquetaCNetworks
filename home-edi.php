@@ -517,7 +517,7 @@
             onReady: function() {
 
                 var hey = 2700;
-                console.log(hey);
+               
 
                 socketHomeprincipal.postMessage(hey)
             }
@@ -528,7 +528,7 @@
 
                 type: type
             }
-            console.log(data);
+          
             var json = JSON.stringify(data);
             socketHomeprincipal.postMessage(json);
         });
@@ -537,7 +537,7 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
+           
             var json = JSON.stringify(data);
             socketHomeprincipal.postMessage(json);
         });
@@ -547,7 +547,7 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
+           
             var json = JSON.stringify(data);
             socketHomeprincipal.postMessage(json);
         });
@@ -558,7 +558,7 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
+            
             var json = JSON.stringify(data);
             socketHomeprincipal.postMessage(json);
         });
@@ -568,7 +568,7 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
+           
             var json = JSON.stringify(data);
             socketHomeprincipal.postMessage(json);
         });
@@ -578,7 +578,7 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
+            
             var json = JSON.stringify(data);
             socketHomeprincipal.postMessage(json);
         });
@@ -588,7 +588,7 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
+         
             var json = JSON.stringify(data);
             socketHomeprincipal.postMessage(json);
         });
@@ -598,7 +598,7 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
+            
             var json = JSON.stringify(data);
             socketHomeprincipal.postMessage(json);
         });
@@ -608,7 +608,7 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
+          
             var json = JSON.stringify(data);
             socketHomeprincipal.postMessage(json);
         });

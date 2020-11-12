@@ -8,7 +8,7 @@ function validateTokenPassword(tokenPassword) {
       "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_verify",
     success: function (result) {
       if (result.data) {
-        console.log(result.data);
+       
         let user_id = $("#user_id");
         localStorage.setItem("session", 1);
         localStorage.setItem("id", result.data.id);
@@ -232,7 +232,7 @@ function signIn(email, password) {
 
       if (json.data) {
         location.href = "./home.php";
-        console.log("direc v1.2");
+    
         localStorage.setItem("session", 1);
         localStorage.setItem("genres", JSON.stringify(json.data.genres));
         localStorage.setItem("id", json.data.id);
@@ -320,7 +320,7 @@ function updateDataUser(id, gender, date, country) {
     country: country,
   };
 
-  console.log(dataUser);
+
 
   $.ajax({
     type: "POST",
@@ -328,7 +328,7 @@ function updateDataUser(id, gender, date, country) {
     url: "./adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
-      console.log(json);
+     
       let gender = localStorage.setItem("gender", json.data.gender);
       let date = json.data.birthday.split("-");
       let day = localStorage.setItem("day", date[2]);
@@ -355,9 +355,7 @@ function sendEmail(id) {
     data: dataUser,
     url: "./adapters/user.php",
     success: function (result) {
-      console.log(result);
-      console.log("email enviado");
-      console.log("1 :");
+    
     },
   });
 }
@@ -377,7 +375,7 @@ function selectAvatar(id, src, idAvatar) {
       let json = JSON.parse(result);
       if (json.code == 200) {
         localStorage.setItem("idAvatar", idAvatar);
-        console.log(json);
+       
         localStorage.setItem("avatar", json.data.avatar);
         $(".image-user-container").html(`
         <div class="image-user">
@@ -418,7 +416,7 @@ function registerUser(inputName, inputEmail, inputPassword) {
       formContainer.prepend(loader);
     },
     success: function (result) {
-      console.log(result);
+      
       let json = JSON.parse(result);
 
       let loader = $(".loader");
@@ -452,7 +450,7 @@ function updateAlerts(configJson) {
     url: "./adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
-      console.log(json);
+    
       if (json.code == 200) {
         let modal = $("#mensaje");
         modal.modal("show");
@@ -505,7 +503,7 @@ function addFavorites() {
           url: "./adapters/user.php",
           success: function (result) {
             let json = JSON.parse(result);
-            console.log(json);
+           
             if (json.code == 200) {
               let sections = json.data["fav_list"];
 
@@ -543,7 +541,7 @@ function addFavorites() {
                     JSON.stringify(section.programs)
                   );
                 } else if (section.id_section == 2) {
-                  console.log("Concert Channel");
+                
                   localStorage.setItem(
                     "favoritesConcertChannel",
                     JSON.stringify(section.programs)
@@ -580,7 +578,7 @@ function removeFavorites(user_id, program_id, removeButton, itemList) {
     url: "./adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
-      console.log(json);
+     
       let sections = json.data;
       if (itemList) {
         itemList.remove();
@@ -687,7 +685,7 @@ function updateAlertProgram(user_id, program_id, active) {
     url: "./adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
-      console.log(json);
+    
       if (json.code == 200) {
         let sections = json.data;
 

@@ -812,7 +812,7 @@ $(document).ready(function () {
     let month = $(".SeleccionMesLista").text();
     let year = $(".SeleccionAñoLista").text();
     let country = $(".SeleccionPaisLista").text();
-    console.log(country );
+   
     let date = "";
     if (day === "Día" || month === "Mes" || year === "Año") {
       date = "";
@@ -835,7 +835,7 @@ $(document).ready(function () {
     if(country === ""){
       country ="";
       $("#select-Pais").after(`<span class="errores text-normal cam1">Este campo es requerido *</span>`);
-      console.log("oki");
+     
     }else{
       $(".cam1").remove();
     }
@@ -1172,9 +1172,9 @@ $(document).ready(function () {
   loginCountry.attr("src", sessionSrc);
 
   if ("src" in localStorage) {
-    console.log("si");
+   
   } else {
-    console.log("no");
+  
     localStorage.setItem("src", "images/paises/gmt-icon.svg");
   }
 
@@ -1590,7 +1590,7 @@ $(document).ready(function () {
   let month = ("0" + (date.getMonth() + 1)).slice(-2);
   let mes = date.getMonth();
   $(".month").text(getMonthAndYear(mes));
-  console.log(mes);
+  
   let year = date.getUTCFullYear();
   let hour = date.getUTCHours();
   let minutes = date.getUTCMinutes();

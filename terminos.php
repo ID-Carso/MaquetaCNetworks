@@ -131,26 +131,7 @@ if ($_SESSION["country"] != 1) {
         });
     </script>
 
-    <!-- <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
-    <script>
-        var socketClaro = new easyXDM.Socket({
-            onReady: function() {
-                var hey = 3000;
-                socketClaro.postMessage(hey)
-            }
-        });
-
-        $(".back-close").click(function() {
-            let type = "close";
-            let data = {
-                type: type
-            }
-            var json = JSON.stringify(data);
-
-            socketClaro.postMessage(json);
-            console.log(json);
-        });
-    </script> -->
+  
 
 </body>
 

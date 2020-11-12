@@ -294,7 +294,7 @@ include './views/partials/modal-program.php'
 
       type: type
     }
-    console.log(data);
+  
     var json = JSON.stringify(data);
     socketClaro.postMessage(json);
   });

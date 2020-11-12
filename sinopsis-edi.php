@@ -309,7 +309,7 @@
             socketSinopsis.postMessage(hey)
         },
         onMessage: function(message, origin) {
-            console.log("message", typeof message);
+           
             let data = JSON.parse(message);
             if (data.code == 200) {
 

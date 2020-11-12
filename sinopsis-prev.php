@@ -208,7 +208,7 @@
                             if (data.data[`image_background_${index}`] == null) {
                                 image = "./images/General/image-synopsis-carrusel.jpg"
                             }
-                            console.log(image);
+                            
                             slide += `
                                         <div class="bor thumbnail-image-program position-relative h-100">
                                             <input type="file" id="image_banner_synopsis_${index}"
@@ -658,7 +658,7 @@
                         regionCountryContainer.removeClass("region-country-container-active");
                         $(this).addClass("region-country-container-active")
                         let rel = $(this).attr("rel");
-                        console.log(rel);
+                       
                         regionTimesContainer.hide();
                         $('#' + rel).show();
                         try {

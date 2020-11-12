@@ -212,7 +212,7 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
+           
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
         });
@@ -221,7 +221,7 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
+           
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
         });
@@ -230,7 +230,7 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
+           
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
         });
@@ -239,7 +239,7 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
+          
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
         });
@@ -248,7 +248,7 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
+            
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
         });
@@ -258,7 +258,7 @@
 
                 type: type
             }
-            console.log(data);
+           
             var json = JSON.stringify(data);
             socketConcert.postMessage(json);
         });

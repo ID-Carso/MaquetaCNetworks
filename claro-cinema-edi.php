@@ -373,9 +373,7 @@
     onReady: function() {
 
       var hey = 2950;
-      console.log(hey);
-
-      socketCinema.postMessage(hey)
+   socketCinema.postMessage(hey)
     }
   });
   $(".today-claro-cinema").on("click", ".pencil-cinema", function() {
@@ -384,7 +382,7 @@
       type: $(this).attr("type")
 
     }
-    console.log(data);
+    
     var json = JSON.stringify(data);
     socketCinema.postMessage(json);
 
@@ -395,7 +393,7 @@
       type: $(this).attr("type")
 
     }
-    console.log(data);
+   
     var json = JSON.stringify(data);
     socketCinema.postMessage(json);
   });
@@ -405,7 +403,7 @@
       type: $(this).attr("type")
 
     }
-    console.log(data);
+    
     var json = JSON.stringify(data);
     socketCinema.postMessage(json);
   });
@@ -416,7 +414,7 @@
       type: $(this).attr("type")
 
     }
-    console.log(data);
+ 
     var json = JSON.stringify(data);
     socketCinema.postMessage(json);
   });
@@ -425,7 +423,7 @@
       type: $(this).attr("type")
 
     }
-    console.log(data);
+  
     var json = JSON.stringify(data);
     socketCinema.postMessage(json);
   });
@@ -434,7 +432,7 @@
       type: $(this).attr("type")
 
     }
-    console.log(data);
+    
     var json = JSON.stringify(data);
     socketCinema.postMessage(json);
   });
@@ -443,7 +441,7 @@
       type: $(this).attr("type")
 
     }
-    console.log(data);
+    
     var json = JSON.stringify(data);
     socketCinema.postMessage(json);
   });
@@ -453,7 +451,7 @@
       type: $(this).attr("type")
 
     }
-    console.log(data);
+    
     var json = JSON.stringify(data);
     socketCinema.postMessage(json);
   });
@@ -463,7 +461,7 @@
 
       type: type
     }
-    console.log(data);
+ 
     var json = JSON.stringify(data);
     socketCinema.postMessage(json);
   });

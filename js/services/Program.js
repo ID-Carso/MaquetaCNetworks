@@ -2054,7 +2054,7 @@ function getProgrammingGMT(date, withLoader) {
     },
     success: function (result) {
       let data = JSON.parse(result);
-      console.log(data);
+     
       $(".loader-container").remove();
       if (data.code == 200) {
         let arrayCanalClaro = [];

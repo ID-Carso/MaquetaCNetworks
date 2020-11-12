@@ -297,7 +297,7 @@
                     type: type
 
                 }
-                console.log(data);
+                
                 var json = JSON.stringify(data);
                 socketProgramacion.postMessage(json);
             })

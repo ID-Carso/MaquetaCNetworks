@@ -9,7 +9,7 @@
       remote: "marca.php",
       container: "marca-container",
       onMessage: function(message, origin) {
-        console.log(message);
+      
         this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
         this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
 

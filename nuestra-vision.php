@@ -9,7 +9,7 @@
       remote: "vision.php",
       container: "vision-container",
       onMessage: function(message, origin) {
-        console.log(message);
+        
         this.container.getElementsByTagName("iframe")[0].setAttribute("scrolling", "no");
         this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
 

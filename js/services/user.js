@@ -1,12 +1,12 @@
 function validateTokenPassword(tokenPassword) {
-  console.log("llega");
+ 
   $.ajax({
     type: "GET",
     data: tokenPassword,
     url:
       "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_verify",
     success: function (result) {
-      console.log("succes", result);
+      
       if (result.data) {
         let user_id = $("#user_id");
         let session = localStorage.setItem("session", 1);
@@ -33,9 +33,9 @@ function sendUserEmail(inputEmail) {
     url:
       "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_send",
     success: function (result) {
-      console.log("succes", result);
+     
       if (result.data) {
-        console.log("aquí esta con v2");
+      
         location.href =
           "http://www.claronetworks.openofficedospuntocero.info/v1.2/email-sent.php";
       }
@@ -63,9 +63,9 @@ function sendNewPassword(inputPassword, secondInputPassword) {
     url:
       "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/reset_password",
     success: function (result) {
-      console.log("succes", result);
+    
       if (result.code == 200) {
-        console.log("succes", result);
+       
         location.href =
           "http://www.claronetworks.openofficedospuntocero.info/v1.2/success-password.php";
       }
@@ -85,23 +85,14 @@ function signIn(email, password) {
     data: dataUser,
     url: "http://localhost:4000/backoffice/adapters/user.php",
     success: function (result) {
-      console.log(result);
+    
       location.href = "Admin-BO.php";
       let json = JSON.parse(result);
 
       if (json.data) {
         location.href = "Admin-BO.php";
         let date = result.data.birthday.split("-");
-        // localStorage.setItem("day", date[2]);
-        // localStorage.setItem("month", date[1]);
-        // localStorage.setItem("year", date[0]);
-        // localStorage.setItem("session", 1);
-        // localStorage.setItem("id", result.data.id);
-        // localStorage.setItem("name", result.data.name);
-        // localStorage.setItem("avatar", result.data.avatar);
-        // localStorage.setItem("gender", result.data.avatar);
-        // localStorage.setItem("birthday", result.data.avatar);
-        // localStorage.setItem("src", result.data.country.image);
+       
       } else {
         $(".data-incorrect")
           .text(
@@ -140,14 +131,14 @@ function updateDataUser(id, gender, date, country) {
     country: country,
   };
 
-  console.log(dataUser);
+ 
   $.ajax({
     type: "POST",
     data: dataUser,
     url: "../../adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
-      console.log(json);
+     
       let gender = localStorage.setItem("gender", json.data.gender);
       let date = json.data.birthday.split("-");
       let day = localStorage.setItem("day", date[2]);
@@ -174,8 +165,7 @@ function sendEmail(id) {
     data: dataUser,
     url: "adapters/user.php",
     success: function (result) {
-      console.log(result);
-      console.log("email enviado");
+    
     },
   });
 }
@@ -187,7 +177,7 @@ function selectAvatar(id, src) {
     avatar: src,
   };
 
-  console.log(src);
+
 
   $.ajax({
     type: "POST",
@@ -195,7 +185,7 @@ function selectAvatar(id, src) {
     url: "adapters/user.php",
     success: function (result) {
       let json = JSON.parse(result);
-      console.log(dataUser);
+      
       localStorage.setItem("avatar", json.data.avatar);
       $("#image-user-container").html(`
       <div class="image-user">
@@ -227,7 +217,7 @@ function registerUser(inputName, inputEmail, inputPassword) {
     success: function (result) {
       let json = JSON.parse(result);
       let modal = $("#mensaje");
-      console.log(json.data.id);
+     
       modal.modal("show");
       sendEmail(json.data.id);
     },
@@ -245,7 +235,7 @@ function updateAlerts(configJson) {
     data: dataUser,
     url: "adapters/user.php",
     success: function (result) {
-      console.log(result);
+      
       let modal = $("#mensaje");
       modal.modal("show");
     },

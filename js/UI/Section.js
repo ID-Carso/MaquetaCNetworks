@@ -1929,7 +1929,7 @@ export default class Section {
       success: function (result) {
         let json = JSON.parse(result);
         if (json.code == 200) {
-          console.log("footer encontrado");
+     
           renderFooter(json);
           switch (landing) {
             case "home":

@@ -457,7 +457,7 @@
             onReady: function() {
 
                 var hey = 2700;
-                console.log(hey);
+            
 
                 socketHome.postMessage(hey)
             }
@@ -468,7 +468,7 @@
 
                 type: type
             }
-            console.log(data);
+           
             var json = JSON.stringify(data);
             socketHome.postMessage(json);
         });
@@ -477,7 +477,7 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
+            
             var json = JSON.stringify(data);
             socketHome.postMessage(json);
         });
@@ -486,7 +486,7 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
+           
             var json = JSON.stringify(data);
             socketHome.postMessage(json);
         });
@@ -495,7 +495,7 @@
                 type: $(this).attr("type")
 
             }
-            console.log(data);
+          
             var json = JSON.stringify(data);
             socketHome.postMessage(json);
         });

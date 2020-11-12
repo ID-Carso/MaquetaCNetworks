@@ -225,7 +225,7 @@
             onReady: function() {
 
                 var hey = 4300;
-                console.log(hey);
+          
 
                 socket.postMessage(hey)
             }

@@ -26,7 +26,6 @@ $(document).ready(function () {
   $(".sidebar-item").click(function () {
         let option = $(this).attr("genre");
     filterPrograms(option, id);
-    console.log(option);
     $(".name-category").text(option);
     $("#claro-canal-favorites").html("");
     $("#concert-channel-favorites").html("");
@@ -80,7 +79,7 @@ function filterPrograms(option, id) {
       },
     success: function (result) {
         $(".loader").remove();
-      // console.log(result);
+     
       let json = JSON.parse(result);
       let program = 0;
       let programsClaroCinemaList ="";
@@ -92,7 +91,7 @@ function filterPrograms(option, id) {
         location.href = "./error-500.php";
       }
       if (json.code == 200) {
-        console.log(json);
+       
         if (json.data.favorites == 0) {
           let programsempty = `
           <div class="claro-list section-list-container">
@@ -111,7 +110,7 @@ function filterPrograms(option, id) {
         for (program in json.data.favorites) {
           switch (json.data.favorites[program].channel) {
             case "Claro Cinema":
-              console.log("cienma");
+          
                programsClaroCinemaList += `
               <div class="list-item-container" >
               <div class="poster">
@@ -214,7 +213,7 @@ function filterPrograms(option, id) {
              
               break;
             case "Concert Channel":
-              console.log("concert");
+              
               programsConcertChannelList += `
                 <div class="list-item-container" >
                 <div class="poster">
@@ -317,7 +316,7 @@ function filterPrograms(option, id) {
             
               break;
             case "Canal Claro":
-              console.log("claro");
+         
               programsCanalClaroList += `
                   <div class="list-item-container" >
                   <div class="poster">

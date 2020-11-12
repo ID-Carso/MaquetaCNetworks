@@ -22,7 +22,7 @@ function validateEmail(inputEmail, messageError) {
     messageError
       .addClass("invalid-email d-block")
       .text("El correo electrónico no tiene un formato válido");
-    console.log("error");
+    
     return false;
   } else {
     return true;
@@ -119,7 +119,7 @@ function validateUser(inputUser, messageError) {
 
 
 function validateToken(token) {
-  console.log(token);
+  
   $.ajax({
     type: "POST",
     data: token,
@@ -139,7 +139,7 @@ function validateToken(token) {
           nameUser.html(name);
         }
       }else{
-        console.log("algo salio mal");
+      
       }
 
      
