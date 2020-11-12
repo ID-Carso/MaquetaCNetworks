@@ -1,4 +1,5 @@
 function validateTokenPassword(tokenPassword) {
+  console.log("llega");
   $.ajax({
     type: "GET",
     data: tokenPassword,
@@ -260,5 +261,5 @@ export {
   updateDataUser,
   selectAvatar,
   registerUser,
-  updateAlerts,
+  updateAlerts
 };

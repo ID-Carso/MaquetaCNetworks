@@ -126,20 +126,23 @@ function validateToken(token) {
     url:
       "http://www.claronetworks.openofficedospuntocero.info/Claro_Networks_API/public/user/verify",
     success: function (result) {
-      let json = JSON.parse(result);
-      if (json.code == 404) {
-        location.href = "./error-404.php";
+      
+      if (result.code == 200) {
+      
+        if (result.data != null) {
+          localStorage.setItem("session", 1);
+          localStorage.setItem("id", result.data[0].id);
+          localStorage.setItem("name", result.data[0].name);
+          localStorage.setItem("avatar", result.data[0].avatar);
+          let name = result.data[0].name;
+          let nameUser = $("#cuenta-confirmada-name-user");
+          nameUser.html(name);
+        }
+      }else{
+        console.log("algo salio mal");
       }
-      console.log("succes", result);
-      if (result.data != null) {
-        localStorage.setItem("session", 1);
-        localStorage.setItem("id", result.data[0].id);
-        localStorage.setItem("name", result.data[0].name);
-        localStorage.setItem("avatar", result.data[0].avatar);
-        let name = result.data[0].name;
-        let nameUser = $("#cuenta-confirmada-name-user");
-        nameUser.html(name);
-      }
+
+     
     },
   });
 }
@@ -151,5 +154,5 @@ export {
   validateKeyUpEmail,
   validatePassword,
   validateUser,
-  validateToken,
+  validateToken
 };

@@ -43,7 +43,7 @@ include './views/partials/head.php';
                             <div class="aboutus-card-header mb-3">
                                 <h4 class="text-normal a-text-bold-tealblue pb-3">Claro Networks</h4>
                             </div>
-                            <div class="aboutus-card-body mb-5">
+                            <div class="aboutus-card-body mb-4 pb-5">
                                 <p class="a-text-medium-greyish ">
                                     Claro Networks es la unidad de negocio de América Móvil, (la empresa de
                                     telecomunicaciones más grande del mundo), que produce, opera y transmite canales de
@@ -61,7 +61,7 @@ include './views/partials/head.php';
                             <div class="aboutus-card-header mb-3">
                                 <h4 class="text-normal a-text-bold-tealblue pb-3">Canal Claro</h4>
                             </div>
-                            <div class="aboutus-card-body mb-5">
+                            <div class="aboutus-card-body mb-4 pb-5">
                                 <p class="a-text-medium-greyish ">
                                     Entretenimiento por donde lo veas. En Canal Claro tenemos programación hecha para
                                     que disfruten desde los más pequeños hasta los más grandes. Las series que te hacen
@@ -80,7 +80,7 @@ include './views/partials/head.php';
                             <div class="aboutus-card-header mb-3">
                                 <h4 class="text-normal a-text-bold-tealblue pb-3">Claro Cinema</h4>
                             </div>
-                            <div class="aboutus-card-body mb-5">
+                            <div class="aboutus-card-body mb-4 pb-5">
                                 <p class="a-text-medium-greyish ">
                                     México es un país fantástico, encantador, lleno de historias, leyendas, ocurrencias,
                                     y sucesos peculiares. Obviamente, su cine tenía que reflejar todo esto y más. En
@@ -100,7 +100,7 @@ include './views/partials/head.php';
                             <div class="aboutus-card-header mb-3">
                                 <h4 class="text-normal a-text-bold-tealblue pb-3">Concert Channel</h4>
                             </div>
-                            <div class="aboutus-card-body mb-5">
+                            <div class="aboutus-card-body mb-4 pb-5">
                                 <p class="a-text-medium-greyish ">
                                     La música es el idioma universal, los conciertos se convierten en una hermandad de
                                     fanáticos, y Concert Channel te lleva a la primera fila de los mejores. En este
@@ -118,7 +118,7 @@ include './views/partials/head.php';
                             <div class="aboutus-card-header mb-3">
                                 <h4 class="text-normal a-text-bold-tealblue pb-3">Nuestra Visión</h4>
                             </div>
-                            <div class="aboutus-card-body mb-5">
+                            <div class="aboutus-card-body mb-4 pb-5">
                                 <p class="a-text-medium-greyish ">
                                     Nuestra Visión es el canal hecho para los mexicanos que están del otro lado de la
                                     frontera. Con una cobertura que día con día llega a más telehogares, Nuestra Visión
@@ -137,7 +137,7 @@ include './views/partials/head.php';
                             <div class="aboutus-card-header mb-3">
                                 <h4 class="text-normal a-text-bold-tealblue pb-3">Claro Sports</h4>
                             </div>
-                            <div class="aboutus-card-body mb-5">
+                            <div class="aboutus-card-body mb-4 pb-5">
                                 <p class="a-text-medium-greyish ">
                                     Ser un fanático de los deportes es un trabajo de veinticuatro horas. En Claro Sports
                                     lo entendemos a la perfección. Con gran profesionalismo en el análisis, las

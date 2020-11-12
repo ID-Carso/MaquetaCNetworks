@@ -28,7 +28,7 @@ import {
   getPrograms,
   createClickThumbnails,
   getProgramming,
-  getProgrammingGMT,
+  getProgrammingGMT
 } from "./services/Program.js";
 
 /* Date */
@@ -56,7 +56,7 @@ if (arrayUrl[0] == url2) {
   validateToken(data);
 }
 
-let country = localStorage.getItem("country");
+let country = localStorage.getItem("pais");
 let gender = localStorage.getItem("gender");
 
 if (country) {
@@ -811,11 +811,17 @@ $(document).ready(function () {
     let day = $(".SeleccionDiaLista").text();
     let month = $(".SeleccionMesLista").text();
     let year = $(".SeleccionAñoLista").text();
+    let country = $(".SeleccionPaisLista").text();
+    console.log(country );
     let date = "";
     if (day === "Día" || month === "Mes" || year === "Año") {
       date = "";
+      $(".cuadro-fecha").after(`<span class="errores text-normal cam2">Estos campos son requeridos *</span>`);
+
     } else {
       date = year + "-" + month + "-" + day;
+      $(".cam2").remove();
+  
     }
     let genderMale = $("#hombre");
     let genderFemale = $("#mujer");
@@ -826,8 +832,15 @@ $(document).ready(function () {
       gender = "F";
     }
     let id = parseInt(localStorage.getItem("id"));
-    let country = $(".SeleccionPaisLista").text();
+    if(country === ""){
+      country ="";
+      $("#select-Pais").after(`<span class="errores text-normal cam1">Este campo es requerido *</span>`);
+      console.log("oki");
+    }else{
+      $(".cam1").remove();
+    }
     updateDataUser(id, gender, date, country);
+    
   });
 
   $("#avatar-button").click(function () {
@@ -1146,7 +1159,10 @@ $(document).ready(function () {
   $(".tooltip-logout").click(function () {
     signOut();
   });
-
+  $(".logout").click(function () {
+    signOut();
+  });
+ 
   $(".terms-conditions-button, .arrow-back").click(function () {
     window.history.back();
   });
@@ -1584,7 +1600,7 @@ $(document).ready(function () {
   let currentTime = `${hour}:${minutes}`;
   getPrograms(currentDate, getNameCountry(sessionSrc));
   getProgramming(currentDate, 0, getNameCountry(sessionSrc));
-  getProgrammingGMT(currentDate, 0, "gmt");
+  getProgrammingGMT(currentDate, 0,);
   /*menu responsive*/
   const invisible_button = document.querySelector(".invisible-button");
   const tache_button = document.querySelector(".tache_button");
@@ -1933,7 +1949,7 @@ function createTvSlider() {
           centerMode: true,
           infinite: true,
           arrows: false,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -1942,7 +1958,7 @@ function createTvSlider() {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
           centerMode: false,
           arrows: false,
         },
@@ -2002,7 +2018,7 @@ function recreateClickCalendar() {
     //Petición ajax para traer la programación
     let month = parseInt(date.split("-")[1]);
     $(".month").text(`${getMonthAndYear(month - 1)}`);
-    getProgrammingGMT(date, 1, "gmt");
+    getProgrammingGMT(date, 1);
 
     $("ul.claro-calendar-backoffice .claro-item").removeClass("claro-active");
     $(this).addClass("claro-active");
@@ -2015,7 +2031,7 @@ function recreateClickCalendar() {
     let date = $(this).attr("date");
     let month = parseInt(date.split("-")[1]);
     $(".month").text(`${getMonthAndYear(month - 1)}`);
-    getProgrammingGMT(date, 1, "gmt");
+    getProgrammingGMT(date, 1);
     $("ul.concert-calendar-backoffice .concert-item").removeClass(
       "concert-active"
     );
@@ -2031,7 +2047,7 @@ function recreateClickCalendar() {
     let date = $(this).attr("date");
     let month = parseInt(date.split("-")[1]);
     $(".month").text(`${getMonthAndYear(month - 1)}`);
-    getProgrammingGMT(date, 1, "gmt");
+    getProgrammingGMT(date, 1);
   });
 
   //Concert channel

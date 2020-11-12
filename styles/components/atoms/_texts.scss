@@ -23,7 +23,9 @@
   font-size: $fontSize;
   color: $fontColor;
 }
-
+.capital{
+  text-transform: capitalize;
+}
 .h3 {
   font-size: 24px;
 }
@@ -573,7 +575,10 @@
 .invalid-email {
   color: red !important;
 }
-
+.errores{
+  font-family: $montserratLight;
+  color: red !important;
+}
 .valid-email {
   color: green !important;
 }
@@ -1491,7 +1496,7 @@
 .text-landing-footer {
   text-align: center;
   margin-bottom: 3px;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .no-synopsis-title {

@@ -199,7 +199,7 @@ include './views/partials/modal-program.php'
         onReady: function() {
 
             var hey = 3500;
-            console.log(hey);
+         
 
             socket.postMessage(hey)
         }

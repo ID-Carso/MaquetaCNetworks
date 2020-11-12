@@ -23,7 +23,7 @@
                      </div>
                  </div>
                  <div class="footer-companies col-12">
-                     <div class="d-flex padding-bottom-footer">
+                     <div class="d-flex padding-bottom-footer pb-5">
                          <div class="col">
                              <a href="https://fast-mag.com/" target="_blank" id="menu_2_opcion_1_url_mob"><img id="menu_2_opcion_1_icon_mob" class="d-block m-auto small-footer-img" src="./images/home/fast-icon.svg" alt="icono-fast"/></a>
                          </div>
@@ -37,7 +37,7 @@
                              <a href="https://www.claromusica.com/" target="_blank" id="menu_2_opcion_4_url_mob"><img id="menu_2_opcion_4_icon_mob" class="d-block m-auto small-footer-img" src="./images/home/claro-musica-icon.svg" alt="icono-claro-musica"/></a>
                          </div>
                      </div>
-                     <div class="d-flex padding-bottom-footer">
+                     <div class="d-flex padding-bottom-footer ">
                          <div class="col">
                              <a href="https://www.sanborns.com.mx/" target="_blank" id="menu_2_opcion_5_url_mob"><img id="menu_2_opcion_5_icon_mob" class="d-block m-auto small-footer-img" src="./images/home/sanborns-icon.svg" alt="icono-samborns"/></a>
                          </div>

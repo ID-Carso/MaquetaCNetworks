@@ -81,6 +81,12 @@ if ($_SESSION["country"] != 1) {
                         Sports</span>
                 </div>
             </a>
+            <a class="sidebar-link"  target="_blank">
+                    <div class="sidebar-item sidebar-border-bottom ">
+                        <span class="dropdown-p logout">Cerrar Sesión</span>
+                    </div>
+                </a>
+               
             <!--prueba sidebar-->
         </div>
         <button class="invisible-button"></button>
@@ -139,21 +145,21 @@ if ($_SESSION["country"] != 1) {
                     <ul class="tv-list col-md-11">
                         <div class="col-md text-center no-gap border-right">
                             <li rel="claro-canal" class=" active-navItem nav-li mr-3 p-3  justify-content-center" >
-                               <div class=" h-image-prog d-flex align-items-center justify-content-center">
+                               <div class=" h-image-prog d-flex align-items-center justify-content-center mx-auto">
                                <img class="claro-nav-image " src="" alt="logo-claro-canal" title="programacion-canal-claro"/>
                                </div>
                             </li>
                         </div>
                         <div class="col-md text-center no-gap border-right">
                             <li rel="concert-channel" class="nav-li mr-3 ml-3 p-3 justify-content-center">
-                               <div class="h-image-prog d-flex align-items-center justify-content-center">
+                               <div class="h-image-prog d-flex align-items-center justify-content-center mx-auto">
                                <img class="nav-image concert-nav-image " src="" alt="logo-concert-channel" title="programacion-concert-channel" />
                                </div>
                             </li>
                         </div>
                         <div class="col-md text-center no-gap">
                             <li rel="claro-cinema" class="nav-li ml-3 p-3  justify-content-center">
-                              <div class="h-image-prog d-flex align-items-center justify-content-center">
+                              <div class="h-image-prog d-flex align-items-center justify-content-center mx-auto">
                               <img class="nav-image cinema-nav-image " src="" alt="logo-claro-cinema" title="programacion-claro-cinema" />
                               </div>
                             </li>

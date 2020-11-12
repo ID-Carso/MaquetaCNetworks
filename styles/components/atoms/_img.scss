@@ -116,7 +116,12 @@
     padding-top: 24px;
     margin-bottom: 38px;
   }
-
+  .img-phone{
+    height: 100%;
+      object-fit: cover;
+      position: relative;
+      width: 100%;
+  }
   .pie_paises {
     margin-top: 23px;
   }
@@ -833,6 +838,7 @@
     width: 38px;
     margin: auto;
   }
+  
   .heart-phone {
     align-self: flex-end;
     width: fit-content;

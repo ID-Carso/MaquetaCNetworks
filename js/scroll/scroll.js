@@ -26,9 +26,9 @@ function navbarWhite(navbar, elementTarget) {
         navbar.style.background = "transparent";
         navbar.style.position = "absolute";
       } else if (posicionScroll > 0 && posicionScroll <= 100) {
-        navbar.style.background = "transparent";
+        navbar.style.background = "white";
         navbar.style.position = "fixed";
-      } else if (posicionScroll >= 101) {
+      } else if (posicionScroll >= 100) {
         navbar.style.background = "white";
         navbar.style.position = "fixed";
       }

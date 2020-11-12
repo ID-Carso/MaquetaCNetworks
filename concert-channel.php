@@ -44,7 +44,7 @@ if($_SESSION["country"] != 1){
 
 </head>
 
-<body>
+<body class="concert-container">
     <header class="concert-channel-header">
         <div class="hamburguer-menu">
             <div class="text-center sidebar-header">
@@ -83,6 +83,11 @@ if($_SESSION["country"] != 1){
                             Sports</span>
                     </div>
                 </a>
+                <a class="sidebar-link"  target="_blank">
+                    <div class="sidebar-item sidebar-border-bottom ">
+                        <span class="dropdown-p logout">Cerrar Sesión</span>
+                    </div>
+                </a>
                
                 <!--prueba sidebar-->
             </div>
@@ -110,7 +115,7 @@ if($_SESSION["country"] != 1){
             </div>
         </div>
     </header>
-    <div class="concert-container">
+    <div class="">
         <section class="today-concert-channel">
             <div class="row no-gutters landing-header">
                 <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">

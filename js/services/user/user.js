@@ -1,4 +1,5 @@
 
+import { getNameCountry } from "../../country/country.js";
 function validateTokenPassword(tokenPassword) {
   $.ajax({
     type: "GET",
@@ -240,7 +241,8 @@ function signIn(email, password) {
         localStorage.setItem("gender", json.data.gender);
         localStorage.setItem("birthday", json.data.birthday);
         localStorage.setItem("src", json.data.country.image);
-     
+       let pais = getNameCountry(json.data.country.image);
+       localStorage.setItem("pais", pais);
         if (json.data.birthday) {
           let date = json.data.birthday.split("-");
           localStorage.setItem("day", date[2]);
@@ -302,9 +304,11 @@ function signOut() {
   localStorage.removeItem("name");
   localStorage.removeItem("birthday");
   localStorage.removeItem("year");
+  localStorage.removeItem("pais");
   localStorage.removeItem("favoritesCanalClaro");
   localStorage.removeItem("favoritesConcertChannel");
   localStorage.removeItem("favoritesClaroCinema");
+  
 }
 
 function updateDataUser(id, gender, date, country) {
@@ -724,5 +728,5 @@ export {
   removeFavorites,
   showNotification,
   hideNotification,
-  updateAlertProgram,
+  updateAlertProgram
 };

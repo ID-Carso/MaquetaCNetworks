@@ -57,6 +57,10 @@
   pointer-events: none;
 }
 
+.overflow-y {
+  overflow-y: scroll;
+}
+
 /*html,
 body {
   height: 100%;
@@ -247,6 +251,10 @@ h6 {
 .a-sports-text-poster, .a-poster-text-white, .a-poster-text-black {
   font-family: "Montserrat-SemiBold";
   padding: 6px;
+}
+
+.capital {
+  text-transform: capitalize;
 }
 
 .h3 {
@@ -831,6 +839,11 @@ h6 {
 }
 
 .invalid-email {
+  color: red !important;
+}
+
+.errores {
+  font-family: "Montserrat-Light";
   color: red !important;
 }
 
@@ -1758,7 +1771,7 @@ h6 {
 .text-landing-footer {
   text-align: center;
   margin-bottom: 3px;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .no-synopsis-title {
@@ -2442,6 +2455,13 @@ h6 {
     width: 16%;
     padding-top: 24px;
     margin-bottom: 38px;
+  }
+  .img-phone {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+    width: 100%;
   }
   .pie_paises {
     margin-top: 23px;
@@ -5279,10 +5299,6 @@ div #banner-concert-channel-edi .slick-track {
   height: 100%;
 }
 
-.dontLose-claro-slider {
-  margin-bottom: 100px;
-}
-
 .dontLose-claro-slider .slick-dots li.slick-active button:before,
 #next-week-slider .slick-dots li.slick-active button:before {
   color: white;
@@ -5865,6 +5881,7 @@ div #banner-concert-channel-edi .slick-track {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -8546,7 +8563,7 @@ div #banner-concert-channel-edi .slick-track {
     margin-bottom: 50px;
   }
   .schedule-poster {
-    width: 42%;
+    width: 295px;
     margin-right: 5%;
   }
   .schedule-description {
@@ -9780,7 +9797,7 @@ div #banner-concert-channel-edi .slick-track {
     margin-bottom: 50px;
   }
   .schedule-poster {
-    width: 42%;
+    width: 295px;
     margin-right: 5%;
   }
   .schedule {
@@ -10743,6 +10760,14 @@ div #banner-concert-channel-edi .slick-track {
   /*1.1 General -  Átomos  */
   .container-width-colum {
     width: 201px;
+  }
+  .menu-lista {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .container-width-time {
     width: 161px;
@@ -11803,7 +11828,7 @@ div #banner-concert-channel-edi .slick-track {
     padding-right: 15%;
   }
   .schedule-poster {
-    width: 42%;
+    width: 295px;
     margin-right: 5%;
   }
   .schedule-item-body {

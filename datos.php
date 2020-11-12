@@ -15,57 +15,67 @@ if($_SESSION["country"] != 1){
 
   <?php include './views/partials/head.php' ?>
   <?php include './views/partials/session.php' ?>
-  <script>
-    let country = localStorage.getItem("country");
-    let gender = localStorage.getItem("gender");
-
-    if (country) {
-      $('.SeleccionPaisLista').text(country);
-    }
-
-    if (gender) {
-      let iconFemale = $('#women');
-      let iconMale = $('#men');
-      let genderMale = $('#hombre');
-      let genderFemale = $('#mujer');
-      if (gender == "F") {
-        genderFemale.attr("checked", true);
-        genderMale.attr("checked", false);
-        iconMale.attr("src", "images/datos-adicionales/masculino-inactivo.svg");
-        iconFemale.attr("src", "images/datos-adicionales/femenino-activo.svg");
-      } else {
-        genderFemale.attr("checked", false);
-        genderMale.attr("checked", true);
-        iconMale.attr("src", "images/datos-adicionales/masculino-activo.svg");
-        iconFemale.attr("src", "images/datos-adicionales/femenino-inactivo.svg");
-      }
-    }
-  </script>
   <script src="js/chosen.jquery.js"></script>
   <script src="js/ImageSelect.jquery.js"></script>
 </head>
 
 <body class="fondo">
-  <div class="alert-user">
-  </div>
-  <header class="datos-header">
-    <?php include('./views/partials/hamburguer-menu.php') ?>
+<header class="lista-header">
+        <div class="hamburguer-menu">
+            <div class="text-center sidebar-header">
+            </div>
+            <div class="sidebar-content">
+                <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
+                    <a href="home.php" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
+                </div>
+                <div class="sidebar-item sidebar-border-bottom">
+                    <a href="claro-canal.php" class="sidebar-link"><span class="dropdown-p">Canal
+                            Claro</span></a>
+                </div>
 
-    <div>
-      <?php
-      include './views/partials/menu-mobile-white.php';
-      ?>
+                <div class="sidebar-item sidebar-border-bottom">
+                    <a class="sidebar-link" href="concert-channel.php"><span class="dropdown-p">Concert
+                            Channel</span></a>
+                </div>
 
+                <div class="sidebar-item sidebar-border-bottom">
+                    <a class="sidebar-link" href="claro-cinema.php"><span class="dropdown-p">Claro
+                            Cinema</span></a>
+                </div>
 
-      <?php
-      include './views/partials/menu-tablet-white.php';
-      ?>
+                <div class="sidebar-item sidebar-border-bottom">
+                    <a target="_blank" class="sidebar-link" href="https://nuestravision.tv"><span class="dropdown-p">Nuestra
+                            Visión</span></a>
+                </div>
+                <div class="sidebar-item sidebar-border-bottom">
+                    <a target="_blank" class="sidebar-link" href="https://www.marca.com/claro-mx/"><span class="dropdown-p">Claro
+                            Sports</span></a>
+                </div>
+                <a class="sidebar-link"  target="_blank">
+                    <div class="sidebar-item sidebar-border-bottom ">
+                        <span class="dropdown-p logout">Cerrar Sesión</span>
+                    </div>
+                </a>
+               
+            </div>
+            <button class="invisible-button"></button>
+        </div>
 
-      <?php
-      include 'menu-desktop.php';
-      ?>
+        
 
-  </header>
+        <?php
+        include './views/partials/menu-mobile-white.php';
+        ?>
+
+        <?php
+        include './views/partials/menu-tablet-black.php';
+        ?>
+        <?php
+        include './views/partials/menu-desktop-black.php'
+        ?>
+    </header>
+    <div class="alert-user">
+    </div>
   <div style="padding-top: 3%">
     <div class="login-form">
       <div
@@ -547,7 +557,7 @@ if($_SESSION["country"] != 1){
                 <input type="checkbox" id="selectPais" />
 
                 <label for="selectPais" id="select-Pais">
-                  <p class="SeleccionPaisLista">
+                  <p class="SeleccionPaisLista capital" id="SeleccionPaisListas">
                     <img src="" />Selecciona tu país
                   </p>
                   <ul class="ListaDesplegablePaises">
@@ -658,6 +668,7 @@ if($_SESSION["country"] != 1){
                     </script>
                   </ul>
                 </label>
+               
               </div>
             </div>
           </div>

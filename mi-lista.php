@@ -52,11 +52,17 @@ if ($_SESSION["country"] != 1) {
                 <div class="sidebar-item sidebar-border-bottom">
                     <a class="sidebar-link" href="programacion.php"><span class="dropdown-p">Programación</span></a>
                 </div>
+                <a class="sidebar-link"  target="_blank">
+                    <div class="sidebar-item sidebar-border-bottom ">
+                        <span class="dropdown-p logout">Cerrar Sesión</span>
+                    </div>
+                </a>
+               
             </div>
             <button class="invisible-button"></button>
         </div>
 
-        <div class="categorias-menu" style="overflow-y: scroll;">
+        <div class="categorias-menu menu-lista overflow-y">
             <div class="sidebar-content cursor-pointer " id="genre-menu-content">
 
 

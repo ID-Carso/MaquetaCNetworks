@@ -86,7 +86,12 @@ if ($_SESSION["country"] != 1) {
               Sports</span>
           </div>
         </a>
-     
+        <a class="sidebar-link"  target="_blank">
+                    <div class="sidebar-item sidebar-border-bottom ">
+                        <span class="dropdown-p logout">Cerrar Sesión</span>
+                    </div>
+                </a>
+               
         <!--prueba sidebar-->
       </div>
       <button class="invisible-button"></button>
