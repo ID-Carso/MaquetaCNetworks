@@ -23,7 +23,7 @@ $(document).ready(function () {
   //Traer programas del día actual en GTM
   let data = {
     date: currentDate,
-    function: "getProgramsGMT",
+    function: "getProgrammingGMT",
   };
 
   function createTvSlider(container) {

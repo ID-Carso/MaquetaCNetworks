@@ -1167,16 +1167,16 @@ $(document).ready(function () {
     window.history.back();
   });
 
-  var sessionSrc = localStorage.getItem("src");
-  var loginCountry = $(".login-country");
-  loginCountry.attr("src", sessionSrc);
-
   if ("src" in localStorage) {
    
   } else {
   
     localStorage.setItem("src", "images/paises/gmt-icon.svg");
   }
+
+  var sessionSrc = localStorage.getItem("src");
+  var loginCountry = $(".login-country");
+  loginCountry.attr("src", sessionSrc);
 
   /* Hacer aparecer el tooltip */
 
@@ -1600,7 +1600,8 @@ $(document).ready(function () {
   let currentTime = `${hour}:${minutes}`;
   getPrograms(currentDate, getNameCountry(sessionSrc));
   getProgramming(currentDate, 0, getNameCountry(sessionSrc));
-  getProgrammingGMT(currentDate, 0,);
+  getProgrammingGMT(currentDate, 0, "gmt");
+  
   /*menu responsive*/
   const invisible_button = document.querySelector(".invisible-button");
   const tache_button = document.querySelector(".tache_button");
@@ -2018,7 +2019,7 @@ function recreateClickCalendar() {
     //Petición ajax para traer la programación
     let month = parseInt(date.split("-")[1]);
     $(".month").text(`${getMonthAndYear(month - 1)}`);
-    getProgrammingGMT(date, 1);
+    getProgrammingGMT(date, 1, "gmt");
 
     $("ul.claro-calendar-backoffice .claro-item").removeClass("claro-active");
     $(this).addClass("claro-active");
@@ -2031,7 +2032,7 @@ function recreateClickCalendar() {
     let date = $(this).attr("date");
     let month = parseInt(date.split("-")[1]);
     $(".month").text(`${getMonthAndYear(month - 1)}`);
-    getProgrammingGMT(date, 1);
+    getProgrammingGMT(date, 1, "gmt");
     $("ul.concert-calendar-backoffice .concert-item").removeClass(
       "concert-active"
     );
@@ -2047,7 +2048,7 @@ function recreateClickCalendar() {
     let date = $(this).attr("date");
     let month = parseInt(date.split("-")[1]);
     $(".month").text(`${getMonthAndYear(month - 1)}`);
-    getProgrammingGMT(date, 1);
+    getProgrammingGMT(date, 1, "gmt");
   });
 
   //Concert channel

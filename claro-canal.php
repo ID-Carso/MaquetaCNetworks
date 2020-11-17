@@ -173,9 +173,9 @@ if($_SESSION["country"] != 1){
           ¡No te lo puedes perder!
         </h2>
         <div class="dontLose-video-container">
-          <div class="section-slider" id="dontLose-claro-slider">
+          <div class="section-slider dontLose-claro-slider" id="dontLose-claro-slider"> <!--add class "dontLose-claro-slider"-->
           </div>
-          <div>
+          <div class="mt-5">
             <h1 class="a-dontLose-claro-title" id="carrusel_2_title">Contenido exclusivo</h1>
             <h2 class="a-dontLose-claro-subtitle" id="carrusel_2_subtitle">
               <!-- ve un <span>adelanto</span> de la programación -->

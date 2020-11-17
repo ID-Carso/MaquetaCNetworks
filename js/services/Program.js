@@ -27,7 +27,7 @@ function recreateClickCalendar() {
     //Petición ajax para traer la programación
     let month = parseInt(date.split("-")[1]);
     $(".month").text(`${getMonthAndYear(month - 1)}`);
-    getProgrammingGMT(date, 1);
+    getProgrammingGMT(date, 1, "gmt");
 
     $("ul.claro-calendar-backoffice .claro-item").removeClass("claro-active");
     $(this).addClass("claro-active");
@@ -40,7 +40,7 @@ function recreateClickCalendar() {
     let date = $(this).attr("date");
     let month = parseInt(date.split("-")[1]);
     $(".month").text(`${getMonthAndYear(month - 1)}`);
-    getProgrammingGMT(date, 1);
+    getProgrammingGMT(date, 1, "gmt");
     $("ul.concert-calendar-backoffice .concert-item").removeClass(
       "concert-active"
     );
@@ -56,7 +56,7 @@ function recreateClickCalendar() {
     let date = $(this).attr("date");
     let month = parseInt(date.split("-")[1]);
     $(".month").text(`${getMonthAndYear(month - 1)}`);
-    getProgrammingGMT(date, 1);
+    getProgrammingGMT(date, 1, "gmt");
   });
 
   //Concert channel
@@ -265,7 +265,7 @@ function getPrograms(date, country) {
     function: "getPrograms",
     // function: "getProgramsGMT",
     date,
-    country,
+    country
   };
 
   //NORMAL
@@ -1347,6 +1347,7 @@ function getProgramming(date, withLoader, country) {
   let currentDate = new Date();
   let currentDay = currentDate.getUTCDate();
   let isCurrentDay = 0;
+ 
   if (day === currentDay) {
     isCurrentDay = 1;
   }
@@ -2024,19 +2025,20 @@ function getProgramming(date, withLoader, country) {
   });
 }
 
-function getProgrammingGMT(date, withLoader) {
+function getProgrammingGMT(date, withLoader,country) {
   let day = parseInt(date.split("-")[2]);
   let currentDate = new Date();
   let currentDay = currentDate.getUTCDate();
   let isCurrentDay = 0;
+
   if (day === currentDay) {
     isCurrentDay = 1;
   }
   let data = {
-    function: "getProgrammingGMT",
+    function: "getProgramming",
     date,
     country: "gmt",
-    isCurrentDay: isCurrentDay,
+    isCurrentDay: isCurrentDay
   };
   $.ajax({
     type: "POST",
@@ -2054,7 +2056,6 @@ function getProgrammingGMT(date, withLoader) {
     },
     success: function (result) {
       let data = JSON.parse(result);
-     
       $(".loader-container").remove();
       if (data.code == 200) {
         let arrayCanalClaro = [];
@@ -2350,11 +2351,11 @@ function getProgrammingGMT(date, withLoader) {
         });
 
         //Insertar programas para edición en backoffice
-        $(".claro-content-edit").html(programCanalClaroEdit);
+        $(".claro-content-edit").html(programCanalClaro);
         $(".claro-content-prev").html(programCanalClaro);
-        $(".concert-content-edit").html(programConcertChannelEdit);
+        $(".concert-content-edit").html(programConcertChannel);
         $(".concert-content-prev").html(programConcertChannel);
-        $(".cinema-content-edit").html(programClaroCinemaEdit);
+        $(".cinema-content-edit").html(programClaroCinema);
         $(".cinema-content-prev").html(programClaroCinema);
       }
     },

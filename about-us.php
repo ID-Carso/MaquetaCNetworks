@@ -35,7 +35,7 @@ include './views/partials/head.php';
             <div class="aboutus-content no-gutters">
                 <div class="col-11 col-xl-12 mx-auto">
                     <div class="text-center mb-3 mt-3 mt-xl-4 mb-xl-4">
-                        <h3 class="h3 a-text-bold-greyish aboutus-title">QUIENES <span
+                        <h3 class="h3 a-text-bold-greyish aboutus-title">QUIÉNES <span
                                 class="a-text-medium-greyish">SOMOS</span></h3>
                     </div>
                     <div class="d-md-flex flex-wrap">
