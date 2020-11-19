@@ -13,46 +13,45 @@
     <!--End menú para móvil-->
     <input type="hidden" id="actual_landing" value="home">
     <div class="hamburguer-menu">
-        <div class="text-center sidebar-header">
+        <div class="text-center sidebar-header pointer-events-none">
         </div>
         <div class="sidebar-content">
-            <a href="" class="sidebar-link">
+          
                 <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
                     <span class="dropdown-p">Inicio</span>
                 </div>
-            </a>
-            <a href="" class="sidebar-link">
+            
+            
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Canal Claro</span>
                 </div>
-            </a>
+            
         
-            <a class="sidebar-link" href="">
+      
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Concert
                         Channel</span>
                 </div>
-            </a>
+          
            
-            <a class="sidebar-link" href="">
+         
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Claro Cinema</span>
                 </div>
 
-            </a>
-
-            <a class="sidebar-link" href="">
+           
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Nuestra
                         Visión</span>
                 </div>
-            </a>
-            <a target="_blank" class="sidebar-link" href="">
+          
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Claro
                         Sports</span>
                 </div>
-            </a>
+                <div class="sidebar-item sidebar-border-bottom ">
+                        <span class="dropdown-p ">Cerrar Sesión</span>
+                    </div>
             <!--prueba sidebar-->
         </div>
         <button class="invisible-button"></button>
@@ -119,18 +118,18 @@
 
                 <div class="row no-gutters border-t border-l border-r border-b position-relative p-3 mb-3 mx-auto col-8">
                     <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-logos-home" type="home-logos"/>
-                    <ul class="tv-list col-md-11 mb-0">
-                        <div class="col-md text-center no-gap border-right d-flex justify-content-center">
+                    <ul class="tv-list col-md-12 mb-0">
+                        <div class="col-md text-center no-gap border-right d-flex justify-content-center pr-3">
                             <li rel="claro-canal" class="active-navItems navs-li navbar-progra-item-container thumbnail-image-program p-2"      style="width: 200px !important;">
                                 <img class="claro-nav-image claro-nav-image thumbnail-image-program" src="" alt="logo-canal-claro" title="programacion-de-canal-claro" id="icon_canal_claro_edi"/>
                             </li>
                         </div>
-                        <div class="col-md text-center no-gap border-right d-flex justify-content-center">
+                        <div class="col-md text-center no-gap border-right d-flex justify-content-center pr-3 pl-3">
                             <li rel="concert-channel" class="navs-li p-2"  style="width: 200px !important;">
                                 <img class="nav-image concert-nav-image claro-nav-image thumbnail-image-program" src="" alt="logo-concert-channel" title="programacion-de-concert-channel" id="icon_concert_channel_edi"/>
                             </li>
                         </div>
-                        <div class="col-md text-center no-gap d-flex justify-content-center">
+                        <div class="col-md text-center no-gap d-flex justify-content-center pl-3">
                             <li rel="claro-cinema" class="navs-li p-2"  style="width: 200px !important;">
                                 <img class="nav-image cinema-nav-image claro-nav-image thumbnail-image-program" src="" alt="logo-claro-cinema" title="programacion-de-claro-cinema"  id="icon_claro_cinema_edi"/>
                             </li>
@@ -147,13 +146,13 @@
                            
                     </div>
                     <!--Concert channel de "Ahora en tv"-->
-                    <div id="concert-channel" class="tv-content">
+                    <div id="concert-channel" class="tv-content contnt-hide">
                         <div class="tv-slider today-concert-channel-slider" id="tv-concert-slider">
                         </div>
                     </div>
                     <!--End Concert channel de "Ahora en tv"-->
                     <!--Claro cinema de "Ahora en tv"-->
-                    <div id="claro-cinema" class="tv-content">
+                    <div id="claro-cinema" class="tv-content contnt-hide">
                         <div class="tv-slider today-claro-cinema-slider" id="tv-cinema-slider">
                         </div>
                     </div>

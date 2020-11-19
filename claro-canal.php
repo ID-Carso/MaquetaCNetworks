@@ -123,13 +123,13 @@ if($_SESSION["country"] != 1){
   <main class="today">
     <section class="today-canal-claro">
       <div class="today-container">
-        <div class="row no-gutters landing-header">
+        <div class="row no-gutters landing-header d-flex justify-content-between pr-rem">
           <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-            <div class="h-image d-flex align-items-center">
+            <div class=" pl-2 h-image d-flex align-items-center spaciphone">
             <img src="" id="icon_canal_claro" alt="icono-canal-claro" class="lading-header-image-claro object-cover"/>
           </div>
           </div>
-          <div class="col-12 col-md-5 col-lg-5 col-xl-5">
+          <div class="col-12 col-md-5 col-lg-5 col-xl-5 pl-rem">
             <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
           </div>
           <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ"

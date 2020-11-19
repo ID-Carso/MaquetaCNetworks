@@ -919,6 +919,7 @@ export default class Section {
 
     let Strinfcarrusel1 = "";
     let Strinfcarrusel2 = "";
+    let i = 0;
 
     if (carrusel1.length === 0) {
       for (let index = 0; index < 5; index++) {
@@ -981,7 +982,29 @@ export default class Section {
           </div>
           `;
         }
+        i++;
+        console.log(i);
       });
+      for (let o=i; o<= 5;o++) {
+        
+        Strinfcarrusel1 += `
+        <div class="poster cursor-auto" >
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/default/claro-horizontal-slider.jpg" alt="imagen-landing-concert-channel"/>
+                  </div>
+                  <div class="a-claro-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+        
+    } 
     }
 
     if (carrusel2.length === 0) {
@@ -1045,6 +1068,7 @@ export default class Section {
           </div>
           `;
         }
+
       });
     }
 
@@ -1377,7 +1401,7 @@ export default class Section {
     //Verificamos si se tienen programas en la base de datos para los carruseles
     let Strinfcarrusel1 = "";
     let Strinfcarrusel2 = "";
-    if (carrusel1.length === 0) {
+    if (carrusel1.length === 0 || carrusel1.length < 5) {
       for (let index = 0; index < 5; index++) {
         Strinfcarrusel1 += `
         <div class="poster cursor-auto">

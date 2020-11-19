@@ -292,7 +292,9 @@ function getPrograms(date, country) {
     data: dataProgram,
     url: "./adapters/program.php",
     success: function (result) {
+     
       let json = JSON.parse(result);
+     
       /* SLIDER "AHORA EN VIVO CANAL CLARO*/
 
       let programingCanalClaro = json.data[0].programing[0].programs;
@@ -1373,7 +1375,10 @@ function getProgramming(date, withLoader, country) {
       }
     },
     success: function (result) {
+       
+       
       let data = JSON.parse(result);
+
       $(".loader-container").remove();
       if (data.code == 200) {
         let arrayCanalClaro = [];
@@ -2055,6 +2060,7 @@ function getProgrammingGMT(date, withLoader,country) {
       }
     },
     success: function (result) {
+       
       let data = JSON.parse(result);
       $(".loader-container").remove();
       if (data.code == 200) {
@@ -2117,7 +2123,7 @@ function getProgrammingGMT(date, withLoader,country) {
               <div class="schedule-poster">
                   <div class="poster">
                       <div class="" _id="${program.chapter_id}">
-                          <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
+                          <img src="${program.image}" class="img-phone" alt="programa-${program.chapter_title}"/>
                       </div>
                   </div>
               </div>
@@ -2128,9 +2134,9 @@ function getProgrammingGMT(date, withLoader,country) {
                           <p class="schedule">${program.time} hrs.</p>
                           <p class="rating">Clasificación: A</p>
                       </div>
-                      <div>
+                      <div class="heart-phone">
                       <button title="Añadir a lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
-                      <svg class="heart-gray" xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
+                      <svg class="heart-gray heart-image" xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
                           <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
                       </svg>
                       </button>
@@ -2197,7 +2203,7 @@ function getProgrammingGMT(date, withLoader,country) {
               <div class="schedule-poster">
                   <div class="poster">
                       <div class="" _id="${program.chapter_id}">
-                          <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
+                          <img src="${program.image}" class="img-phone" alt="programa-${program.chapter_title}"/>
                       </div>
                   </div>
               </div>
@@ -2208,10 +2214,10 @@ function getProgrammingGMT(date, withLoader,country) {
                           <p class="schedule">${program.time} hrs.</p>
                           <p class="rating">Clasificación: A</p>
                       </div>
-                      <div>
+                      <div class="heart-phone">
                       <button title="Añadir a lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
-                      <svg class="heart-gray" xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
-                          <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
+                      <svg class="heart-gray heart-image" xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
+                          <path class="heart-gray " fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
                       </svg>
                       </button>
                       </div>
@@ -2279,7 +2285,7 @@ function getProgrammingGMT(date, withLoader,country) {
               <div class="schedule-poster">
                   <div class="poster">
                       <div class="" _id="${program.chapter_id}">
-                          <img src="${program.image}"  alt="programa-${program.chapter_title}"/>
+                          <img src="${program.image}" class="img-phone"  alt="programa-${program.chapter_title}"/>
                       </div>
                   </div>
               </div>
@@ -2290,9 +2296,9 @@ function getProgrammingGMT(date, withLoader,country) {
                           <p class="schedule">${program.time} hrs.</p>
                           <p class="rating">Clasificación: A</p>
                       </div>
-                      <div>
+                      <div class="heart-phone">
                       <button title="Añadir a lista" class="button-none add-favorites programing-button" type="button" _id="${program.chapter_id}">
-                      <svg class="heart-gray" xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
+                      <svg class="heart-gray heart-image" xmlns="http://www.w3.org/2000/svg" alt="agregar-a-favoritos" width="48" height="44" viewBox="0 0 48 44">
                           <path class="heart-gray" fill="none" fill-rule=" evenodd" stroke="#7A7777" stroke-width="3" d="M33.709 2c-2.54 0-4.866.82-6.914 2.438-1.033.817-1.97 1.816-2.795 2.983-.825-1.166-1.762-2.166-2.795-2.983C19.157 2.821 16.83 2 14.29 2c-3.397 0-6.523 1.39-8.8 3.915C3.24 8.409 2 11.818 2 15.512c0 3.802 1.387 7.283 4.364 10.954 2.663 3.284 6.491 6.617 10.924 10.477 1.514 1.318 2.886 2.198 4.667 3.79C22.426 41.152 23.374 42 24 42c.626 0 1.574-.847 2.044-1.267 1.782-1.592 3.155-2.472 4.669-3.791 4.432-3.86 8.26-7.192 10.923-10.477C44.614 22.795 46 19.315 46 15.511c0-3.693-1.24-7.102-3.49-9.596C40.231 3.39 37.105 2 33.708 2z"/>
                       </svg>
                       </button>
@@ -2351,11 +2357,11 @@ function getProgrammingGMT(date, withLoader,country) {
         });
 
         //Insertar programas para edición en backoffice
-        $(".claro-content-edit").html(programCanalClaro);
+        $(".claro-content-edit").html(programCanalClaroEdit);
         $(".claro-content-prev").html(programCanalClaro);
-        $(".concert-content-edit").html(programConcertChannel);
+        $(".concert-content-edit").html(programConcertChannelEdit);
         $(".concert-content-prev").html(programConcertChannel);
-        $(".cinema-content-edit").html(programClaroCinema);
+        $(".cinema-content-edit").html(programClaroCinemaEdit);
         $(".cinema-content-prev").html(programClaroCinema);
       }
     },

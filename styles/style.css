@@ -2482,6 +2482,9 @@ h6 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .spaciphone {
+    height: 40px !important;
+  }
   .h-image-prog {
     height: 50px;
     width: 50px;
@@ -2519,6 +2522,18 @@ h6 {
     height: 80px;
     width: 160px;
   }
+  .pr-cen-cinema {
+    padding-right: 1.5rem !important;
+  }
+  .pr-rem {
+    padding-right: 2rem !important;
+  }
+  .pl-rem {
+    padding-left: 3rem !important;
+  }
+  .pr-cen {
+    padding-right: 53px !important;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
@@ -2534,6 +2549,9 @@ h6 {
   }
   .h-image {
     height: 100px;
+  }
+  .pr-rem-concert {
+    padding-right: .5rem !important;
   }
 }
 
@@ -2552,6 +2570,12 @@ h6 {
   .pie_paises {
     margin-top: 25px;
     margin-bottom: 22px;
+  }
+  .pl-rem-concert {
+    padding-left: 1.5rem !important;
+  }
+  .pl-rem-cinema {
+    padding-left: 1.5rem !important;
   }
   .shadow1 {
     border-radius: 15px;
@@ -3247,6 +3271,15 @@ h6 {
   .h-image {
     height: 150px;
   }
+  .pl-rem {
+    padding-left: 6rem  !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  div .pl-rem {
+    padding-left: 3rem !important;
+  }
 }
 
 @media only screen and (min-width: 1900px) {
@@ -3260,6 +3293,15 @@ h6 {
   }
   .h-image {
     height: 150px;
+  }
+  .pl-rem {
+    padding-left: 8rem !important;
+  }
+  .pl-rem-cinema {
+    padding-left: 4.5rem !important;
+  }
+  .pl-rem-concert {
+    padding-left: 1.5rem !important;
   }
 }
 
@@ -5526,7 +5568,7 @@ div #banner-concert-channel-edi .slick-track {
 .programming-dots {
   border-radius: 18px !important;
   background: rgba(255, 255, 255, 0.8) !important;
-  top: 65%;
+  top: 75%;
 }
 
 .program-image-slider {

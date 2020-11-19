@@ -128,13 +128,13 @@ if ($_SESSION["country"] != 1) {
   <main>
     <div class="claro-cinema-container">
       <section class="today-claro-cinema">
-        <div class="row no-gutters landing-header">
-          <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
-          <div class="h-image d-flex align-items-center">
+        <div class="row no-gutters landing-header d-flex justify-content-between  pr-cen-cinema">
+          <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left pt-2 pb-2">
+          <div class="pl-2 h-image d-flex align-items-center spaciphone">
              <img src="./images/home/cinema-home-img.svg" alt="logo-claro-cinema" class="lading-header-image-cinema object-cover" id="icon_claro_cinema"/>
           </div>
           </div>
-          <div class="col-12 col-md-5 col-lg-5 col-xl-5">
+          <div class="col-12 col-md-5 col-lg-5 col-xl-5 pl-rem-cinema">
             <h1 class="a-today-cinema-title">hoy en <span>claro cinema</span></h1>
           </div>
           <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ">

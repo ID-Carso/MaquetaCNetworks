@@ -15,43 +15,41 @@
     <!--End menú para móvil-->
     <input type="hidden" id="actual_landing" value="home">
     <div class="hamburguer-menu">
-        <div class="text-center sidebar-header">
+        <div class="text-center sidebar-header pointer-events-none ">
         </div>
         <div class="sidebar-content">
-            <a href="" class="sidebar-link">
+        
                 <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
                     <span class="dropdown-p">Inicio</span>
                 </div>
-            </a>
-            <a href="" class="sidebar-link">
+         
+            
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Canal Claro</span>
                 </div>
-            </a>
-            <a class="sidebar-link" href="">
+          
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Concert
                         Channel</span>
                 </div>
-            </a>
-            <a class="sidebar-link" href="">
+           
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Claro Cinema</span>
                 </div>
 
-            </a>
-            <a class="sidebar-link" href="">
+          
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Nuestra
                         Visión</span>
                 </div>
-            </a>
-            <a target="_blank" class="sidebar-link" href="">
+          
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Claro
                         Sports</span>
                 </div>
-            </a>
+                <div class="sidebar-item sidebar-border-bottom ">
+                        <span class="dropdown-p logout pointer-events-none">Cerrar Sesión</span>
+                    </div>
             <!--prueba sidebar-->
         </div>
         <button class="invisible-button"></button>
@@ -132,13 +130,13 @@
                         </div>
                     </div>
                     <!--Concert channel de "Ahora en tv"-->
-                    <div id="concert-channel" class="tv-content">
+                    <div id="concert-channel" class="tv-content contnt-hide">
                         <div class="tv-slider today-concert-channel-slider" id="tv-concert-slider">
                         </div>
                     </div>
                     <!--End Concert channel de "Ahora en tv"-->
                     <!--Claro cinema de "Ahora en tv"-->
-                    <div id="claro-cinema" class="tv-content">
+                    <div id="claro-cinema" class="tv-content contnt-hide">
                         <div class="tv-slider today-claro-cinema-slider" id="tv-cinema-slider">
                         </div>
                     </div>

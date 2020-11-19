@@ -9,43 +9,46 @@
 <body>
     <header class="concert-channel-header">
         <div class="hamburguer-menu">
-            <div class="text-center sidebar-header">
+            <div class="text-center sidebar-header pointer-events-none ">
 
             </div>
             <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
-                <a href="" class="sidebar-link"><span class="dropdown-p">Inicio</span></a>
+              
+                    <span class="dropdown-p">Inicio</span>
             </div>
             <div class="sidebar-content">
-                <a href="" class="sidebar-link">
+           
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Canal Claro</span>
                     </div>
-                </a>
+              
               
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p active-sidebar-item">Concert
                         Channel</span>
                 </div>
               
-                <a class="sidebar-link" href="">
+               
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Claro Cinema</span>
                     </div>
-                </a>
+          
              
-                <a class="sidebar-link" href="" target="_blank">
+             
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Nuestra
                             Visión</span>
                     </div>
-                </a>
-                <a class="sidebar-link" href="" target="_blank">
+                
+               
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Claro
                             Sports</span>
                     </div>
-                </a>
                
+                <div class="sidebar-item sidebar-border-bottom ">
+                        <span class="dropdown-p ">Cerrar Sesión</span>
+                    </div>
                 <!--prueba sidebar-->
 
             </div>
@@ -85,15 +88,15 @@
     </header>
     <div class="concert-container pb-5">
         <section class="today-concert-channel pt-3">
-            <div class="row no-gutters mb-3 p-3 landing-header position-relative border-t border-l border-r border-b">
+            <div class="row no-gutters mb-3 p-3 landing-header position-relative border-t border-l border-r border-b d-flex justify-content-between pr-cen">
                 <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-concert"
                     type="header-landing-concert"/>
-                <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left pt-3 pb-3">
                     <img src="./images/home/concert-home-img.svg" alt="logo-concert-channel" class="lading-header-image-concert"
                         id="icon_concert_channel"/>
 
                 </div>
-                <div class="col-12 col-md-5 col-lg-5 col-xl-5 ">
+                <div class="col-12 col-md-5 col-lg-5 col-xl-5 pr-rem-concert pl-rem-concert">
                     <h1 class="today-concert-title">hoy en <span>concert channel</span></h1>
                 </div>
                 <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-right"

@@ -10,42 +10,46 @@
 <body>
     <header class="claro-canal-header">
         <div class="hamburguer-menu">
-            <div class="text-center sidebar-header">
+            <div class="text-center sidebar-header pointer-events-none ">
 
             </div>
 
             <div class="sidebar-content">
-                <a href="home.php" class="sidebar-link">
+                
                     <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
                         <span class="dropdown-p">Inicio</span>
                     </div>
-                </a>
+               
                 <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
                     <span class="dropdown-p active-sidebar-item">Canal Claro</span>
                 </div>
-                <a class="sidebar-link" href="concert-channel.php">
+               
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Concert Channel</span>
                     </div>
-                </a>
-                <a class="sidebar-link" href="claro-cinema.php">
+                
+           
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Claro Cinema</span>
                     </div>
-                </a>
+              
 
-                <a class="sidebar-link" href="https://nuestravision.tv" target="_blank">
+               
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Nuestra
                             Visión</span>
                     </div>
-                </a>
-                <a class="sidebar-link" href="https://www.marca.com/claro-mx/" target="_blank">
+             
+               
                     <div class=" sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Claro
                             Sports</span>
                     </div>
-                </a>
+                
+                    
+                    <div class="sidebar-item sidebar-border-bottom ">
+                        <span class="dropdown-p logout pointer-events-none">Cerrar Sesión</span>
+                    </div>
             </div>
             <button class="invisible-button"></button>
         </div>
@@ -78,11 +82,11 @@
     <main class="today">
         <section class="today-canal-claro">
             <div class="today-container">
-                <div class="row no-gutters landing-header">
+                <div class="row no-gutters landing-header d-flex justify-content-between pr-rem">
                     <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
                         <img src="" id="icon_canal_claro" alt="logo-canal-claro" class="lading-header-image-claro"/>
                     </div>
-                    <div class="col-12 col-md-5 col-lg-5 col-xl-5">
+                    <div class="col-12 col-md-5 col-lg-5 col-xl-5 pl-rem">
                         <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
                     </div>
                     <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ" id="btn-claro-canal">

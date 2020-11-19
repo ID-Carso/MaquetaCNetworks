@@ -11,62 +11,43 @@
 <body>
     <header class="programacion-header">
         <div class="hamburguer-menu">
-            <div class="text-center sidebar-header">
+            <div class="text-center sidebar-header pointer-events-none">
 
             </div>
-            <a href="" class="sidebar-link">
+           
                 <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
                     <span class="dropdown-p">Inicio</span>
                 </div>
-            </a>
+           
             <div class="sidebar-content">
-                <a href="" class="sidebar-link">
+               
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Canal Claro</span>
                     </div>
-                </a>
-                <!--<div class="dropdown-content">
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-            </div>-->
-                <a class="sidebar-link" href="">
+               
+              
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Concert
                             Channel</span>
-                </a>
+               
             </div>
-            <!--<div class="dropdown-content">
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-            </div>-->
-            <a class="sidebar-link" href="">
+            
+          
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Claro Cinema</span>
                 </div>
-            </a>
-            <!--<div class="dropdown-content">
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-              <p class="dropdown-p">ebñrkjg</p>
-            </div>-->
-            <a class="sidebar-link" href="">
+           
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Nuestra
                         Visión</span>
                 </div>
-            </a>
-            <a target="_blank" class="sidebar-link" href="">
+           
                 <div class="sidebar-item sidebar-border-bottom">
                     <span class="dropdown-p">Claro
                         Sports</span>
                 </div>
-            </a>
-            <!--<div class="sidebar-item sidebar-border-bottom">
-                <span class="dropdown-p active-sidebar-item">Programación</span>
-            </div>-->
-            <!--prueba sidebar-->
+        
+           
         </div>
         <button class="invisible-button"></button>
         </div>

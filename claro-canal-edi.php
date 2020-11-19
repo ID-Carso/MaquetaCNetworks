@@ -12,47 +12,51 @@
 
   <header class="claro-canal-header">
     <div class="hamburguer-menu">
-      <div class="text-center sidebar-header">
+      <div class="text-center sidebar-header pointer-events-none ">
 
       </div>
 
       <div class="sidebar-content">
-        <a href="" class="sidebar-link">
+        
           <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
 
             <span class="dropdown-p">Inicio</span>
 
           </div>
-        </a>
+        
         <div class="sidebar-item sidebar-border-bottom sidebar-border-top">
           <span class="dropdown-p active-sidebar-item">Canal Claro</span>
         </div>
 
-        <a class="sidebar-link" href="">
+        <
           <div class="sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Concert Channel</span>
           </div>
-        </a>
+       
  
-        <a class="sidebar-link" href="">
+        
           <div class="sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Claro Cinema</span>
           </div>
-        </a>
+      
    
-        <a class="sidebar-link" href="" target="_blank">
+       
           <div class="sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Nuestra
               Visión</span>
           </div>
-        </a>
-        <a class="sidebar-link" href="" target="_blank">
+        
+      
           <div class=" sidebar-item sidebar-border-bottom">
             <span class="dropdown-p">Claro
               Sports</span>
           </div>
-        </a>
-  
+      
+       
+                    <div class="sidebar-item sidebar-border-bottom ">
+                        <span class="dropdown-p ">Cerrar Sesión</span>
+                    </div>
+              
       </div>
       <button class="invisible-button"></button>
     </div>
@@ -82,7 +86,7 @@
 
       </div>
 
-      <div class="d-flex position-absolute programming-dots space-do">
+      <div class="d-flex position-absolute programming-dots space-do" style="top: 60% !important;">
         <div class=" d-inline-block position-relative programming-slider-dots align-items-center">
         </div>
         <img src="./images/General/plus.svg" alt="icono-de-agregar" class="cursor-pointer slider-pagination-add mr-3"
@@ -95,14 +99,14 @@
   <main class="today">
     <section class="today-canal-claro">
       <div class="today-container">
-        <div class="px-3 mb-3 row no-gutters landing-header position-relative border-t border-l border-r border-b">
+        <div class="px-3 mb-3 row no-gutters landing-header position-relative border-t border-l border-r border-b d-flex justify-content-between pr-rem">
 
           <img id="claro-canal-edi-header" src="./images/General/pencil.svg" alt=" " class="pencil"/>
 
           <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
             <img src="" id="icon_canal_claro" alt="logo-canal-claro" class="lading-header-image-claro"/>
           </div>
-          <div class="col-12 col-md-5 col-lg-5 col-xl-5">
+          <div class="col-12 col-md-5 col-lg-5 col-xl-5 pl-rem">
             <h1 class="a-today-claro-title">hoy en <span>canal claro</span></h1>
           </div>
           <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ">
