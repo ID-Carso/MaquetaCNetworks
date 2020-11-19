@@ -282,11 +282,6 @@ function getPrograms(date, country) {
   let nowSliderNuestraVisionprev = $("#tv-vision-slider-prev");
   let nowSliderClaroSportsprev = $("#tv-sports-slider-prev");
 
-  let claroCotentProgramacionGeneral = $(".claro-content");
-  let claroContentProgramacinGeneralEdit = $(".claro-content-edit");
-  let concertContentProgramacionGeneral = $(".concert-content");
-  let cinemaContentProgramacionGeneral = $(".cinema-content");
-
   $.ajax({
     type: "POST",
     data: dataProgram,
@@ -1374,11 +1369,8 @@ function getProgramming(date, withLoader, country) {
         `);
       }
     },
-    success: function (result) {
-       
-       
+    success: function (result) {      
       let data = JSON.parse(result);
-
       $(".loader-container").remove();
       if (data.code == 200) {
         let arrayCanalClaro = [];
@@ -2062,6 +2054,7 @@ function getProgrammingGMT(date, withLoader,country) {
     success: function (result) {
        
       let data = JSON.parse(result);
+     
       $(".loader-container").remove();
       if (data.code == 200) {
         let arrayCanalClaro = [];

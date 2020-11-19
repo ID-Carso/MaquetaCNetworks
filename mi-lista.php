@@ -100,7 +100,7 @@ if ($_SESSION["country"] != 1) {
             <div class="row ma-no centro">
                 <div class="col-11 mx-auto no-gap border-config d-flex justify-content-between">
                     <div class="centro ">
-                        <p class="texto-categorias">CATEGORÍAS <img class="categorias-flecha" src="images/mi-lista/flecha-categorias.svg" alt="icono-flecha" /> </p>
+                        <p class="texto-categorias cursor-pointer">CATEGORÍAS <img class="categorias-flecha" src="images/mi-lista/flecha-categorias.svg" alt="icono-flecha" /> </p>
                     </div>
                     <div>
                         <p class="name-category">todos</p>

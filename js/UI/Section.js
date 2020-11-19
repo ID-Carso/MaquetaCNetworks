@@ -919,7 +919,8 @@ export default class Section {
 
     let Strinfcarrusel1 = "";
     let Strinfcarrusel2 = "";
-    let i = 0;
+    let iteracioncarrusel = 0;
+    let iteracioncarrusel2 = 0;
 
     if (carrusel1.length === 0) {
       for (let index = 0; index < 5; index++) {
@@ -982,10 +983,11 @@ export default class Section {
           </div>
           `;
         }
-        i++;
-        console.log(i);
+        iteracioncarrusel++;
+       
       });
-      for (let o=i; o<= 5;o++) {
+      //Agrega las imagenes por default que faltan; si es que, las que subieron son menos de 5
+      for (let index=iteracioncarrusel; index<= 4;index++) {
         
         Strinfcarrusel1 += `
         <div class="poster cursor-auto" >
@@ -1068,8 +1070,28 @@ export default class Section {
           </div>
           `;
         }
-
+        iteracioncarrusel2++;
       });
+      for (let index=iteracioncarrusel2; index<= 4;index++) {
+        
+        Strinfcarrusel2 += `
+        <div class="poster cursor-auto" >
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/default/claro-horizontal-slider.jpg" alt="imagen-landing-concert-channel"/>
+                  </div>
+                  <div class="a-claro-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+        
+    } 
     }
 
     let slider = new Slider();
@@ -1082,158 +1104,6 @@ export default class Section {
     exlusiveContentSlider.html(Strinfcarrusel2);
     slider.createSectionSliderHome();
 
-    // let programsExlusiveContent = [
-    //   {
-    //     chapter_id: 1,
-    //     program_title: "DRESS CODE",
-    //     image:
-    //       "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/05-DRESS-CODE.jpg",
-    //   },
-    //   {
-    //     chapter_id: 2,
-    //     program_title: "FIT FOR LIFE",
-    //     image:
-    //       "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/06-FIT4LIFE.jpg",
-    //   },
-    //   {
-    //     chapter_id: 3,
-    //     program_title: "CONEXIÓN CLARO",
-    //     image:
-    //       "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/07-CONEXION.jpg",
-    //   },
-    //   {
-    //     chapter_id: 4,
-    //     program_title: "LA CAJA DE PANDORA",
-    //     image:
-    //       "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/claro-canal/images-horizontal/08-CAJA-DE-PANDORA.jpg",
-    //   },
-    // ];
-
-    // let programTiensQueVerlo = "";
-    // let programExlusiveContent = "";
-
-    // /*
-    //   Almacenamos los programas en otras variables para dibujar los programas con bordes.
-    //   Esto  para la parevisualización en Backoffice de los landings
-    // */
-    // let programTienesQueVerloEdit = "";
-    // let programExlusiveContentEdit = "";
-    // carrusel1.forEach((program) => {
-    //   if (program.landing_synopsis === 0) {
-    //     programTiensQueVerlo += `
-    //     <div class="poster cursors-auto" >
-    //       <div class="poster-body">
-    //           <div>
-    //               <div class="thumbnail">
-    //                   <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
-    //               </div>
-    //               <div class="a-claro-rectangle thumbnail-info-title">
-    //                   <div class="poster-title-margin">
-    //                       <p class="a-poster-text-white">${program.genre}</p>
-    //                   </div>
-    //               </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //     `;
-    //   } else {
-    //     programTiensQueVerlo += `
-    //     <div class="poster cursor-pointer">
-    //       <div class="poster-body">
-    //           <div class="thumbnail-body" _id="${program.chapter_id}">
-    //               <div class="thumbnail">
-    //                   <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
-    //               </div>
-    //               <div class="a-claro-rectangle thumbnail-info-title">
-    //                   <div class="poster-title-margin">
-    //                       <p class="a-poster-text-white">${program.genre}</p>
-    //                   </div>
-    //               </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //     `;
-    //   }
-
-    //   /* programTienesQueVerloEdit += `
-    //   <div class="poster p-3 border-l border-r border-b border-t position-relative">
-    //   <button class="d-flex align-items-center justify-content-center pencil-black a-text-regular-white pl-2"> Editar <img src="./images/General/edit-white.svg" alt="" class="ml-2" style="width:15px"></button>
-    //     <div class="poster-body">
-    //         <div class="thumbnail-body" _id="${program.chapter_id}">
-    //             <div class="thumbnail">
-    //                 <img src="${program.image_horizontal}" alt="">
-    //             </div>
-    //             <div class="a-claro-rectangle thumbnail-info-title">
-    //                 <div class="poster-title-margin">
-    //                     <p class="a-poster-text-white">${program.genre}</p>
-    //                 </div>
-    //             </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    //   `;*/
-    // });
-
-    // carrusel2.forEach((program) => {
-    //   if (program.landing_synopsis === 0) {
-    //     programExlusiveContent += `
-    //     <div class="poster cursor-auto">
-    //       <div class="poster-body">
-    //           <div>
-    //               <div class="thumbnail">
-    //                   <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
-    //               </div>
-    //               <div class="a-claro-rectangle thumbnail-info-title">
-    //                   <div class="poster-title-margin">
-    //                       <p class="a-poster-text-white">${program.title}</p>
-    //                   </div>
-    //               </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //     `;
-    //   } else {
-    //     programExlusiveContent += `
-    //     <div class="poster cursor-pointer">
-    //       <div class="poster-body">
-    //           <div class="thumbnail-body" _id="${program.chapter_id}">
-    //               <div class="thumbnail">
-    //                   <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
-    //               </div>
-    //               <div class="a-claro-rectangle thumbnail-info-title">
-    //                   <div class="poster-title-margin">
-    //                       <p class="a-poster-text-white">${program.title}</p>
-    //                   </div>
-    //               </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //     `;
-    //   }
-
-    //   /*  programExlusiveContentEdit += `
-    //   <div class="poster border-l p-3 border-r border-t border-b" >
-    //     <div class="poster-body">
-    //         <div class="thumbnail-body" _id="${program.chapter_id}">
-    //             <div class="thumbnail">
-    //                 <img src="${program.image_horizontal}" alt="">
-    //             </div>
-    //             <div class="a-claro-rectangle thumbnail-info-title">
-    //                 <div class="poster-title-margin">
-    //                     <p class="a-poster-text-white">${program.title}</p>
-    //                 </div>
-    //             </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    //   `;*/
-    // });
-
-    // $("#dontLose-claro-sliderEdit").append(programTiensQueVerlo);
-    // $("#exlusiveContentClaroSliderEdit").append(programExlusiveContent);
-    // dontLoseSlider.append(programTiensQueVerlo);
-    // exlusiveContentSlider.append(programExlusiveContent);
-    // slider.createSectionSliderHome();
   }
   renderClaroCinema(json) {
     //obtenemos las iamgenes del carrusel 1
@@ -1401,7 +1271,9 @@ export default class Section {
     //Verificamos si se tienen programas en la base de datos para los carruseles
     let Strinfcarrusel1 = "";
     let Strinfcarrusel2 = "";
-    if (carrusel1.length === 0 || carrusel1.length < 5) {
+    let iteracioncarrusel = 0;
+    let iteracioncarrusel2 = 0;
+    if (carrusel1.length === 0 ) {
       for (let index = 0; index < 5; index++) {
         Strinfcarrusel1 += `
         <div class="poster cursor-auto">
@@ -1457,7 +1329,27 @@ export default class Section {
           </div>
           `;
         }
+        iteracioncarrusel++;       
       });
+      for (let index=iteracioncarrusel; index<= 4;index++) {
+        Strinfcarrusel1 += `
+        <div class="poster cursor-auto">
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/default/cinema-horizontal-slider.jpg" alt="imagen-de-claro-cinema"/>
+                  </div>
+                  <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white"></p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+        
+    } 
     }
 
     if (carrusel2.length === 0) {
@@ -1516,7 +1408,27 @@ export default class Section {
           </div>
           `;
         }
+         iteracioncarrusel2++;
       });
+      for (let index=iteracioncarrusel2; index<= 4;index++) {
+        Strinfcarrusel2 += `
+        <div class="poster cursor-auto">
+          <div class="poster-body">
+              <div>
+                  <div class="thumbnail">
+                      <img src="http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/default/cinema-horizontal-slider.jpg" alt="imagen-de-claro-cinema"/>
+                  </div>
+                  <div class="a-cinema-rectangle thumbnail-info-title">
+                      <div class="poster-title-margin">
+                          <p class="a-poster-text-white"></p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        `;
+        
+    } 
     }
 
     let slider = new Slider();
@@ -1656,6 +1568,8 @@ export default class Section {
 
     let Strinfcarrusel1 = "";
     let Strinfcarrusel2 = "";
+    let iteracioncarrusel = 0;
+    let iteracioncarrusel2 = 0;
 
     if (carrusel1.length === 0) {
       for (let index = 0; index < 5; index++) {
@@ -1718,7 +1632,28 @@ export default class Section {
           </div>
           `;
         }
+       iteracioncarrusel ++;
+       
       });
+      for (let index=iteracioncarrusel; index<= 4;index++) {
+        Strinfcarrusel1 += `
+          <div class="poster cursor-auto" >
+            <div class="poster-body">
+                <div>
+                    <div class="thumbnail">
+                        <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
+                    </div>
+                    <div class="a-concert-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">${program.genre}</p>
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          `;
+        
+    } 
     }
 
     //Verificamos si hay programas en el carrusel 2 de concert channel
@@ -1778,7 +1713,28 @@ export default class Section {
           </div>
           `;
         }
+
+       iteracioncarrusel2 ++;
       });
+      for (let index=iteracioncarrusel2; index<= 4;index++) {
+        Strinfcarrusel2 += `
+          <div class="poster cursor-auto" >
+            <div class="poster-body">
+                <div>
+                    <div class="thumbnail">
+                        <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
+                    </div>
+                    <div class="a-concert-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            <p class="a-poster-text-white">${program.genre}</p>
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          `;
+        
+    } 
     }
 
     let slider = new Slider();

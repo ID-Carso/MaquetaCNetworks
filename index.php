@@ -57,7 +57,7 @@
 
 <body class="fondo-index">
 	<div>
-		<div class="logo-container">
+		<div class="logo-container pt-5 pb-5">
 			<img src="./images/logos/claro-networks-white.svg" class="paises-image">
 		</div>
 		<form action="./home.php" method="POST">
