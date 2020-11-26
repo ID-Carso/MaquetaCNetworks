@@ -137,7 +137,7 @@
                     </ul>
                 </div>
                 <!-- CARRUSEL DE PROGRAMACION CANAL CLARO -->
-                <div class="tv-videos-container">
+                <div class="tv-videos-container slick-none">
                     <div id="claro-canal" class="tv-content  border-t border-l border-r border-b position-relative p-2">
                         <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-carrusel-main"
                             type="home-claro-carrousel-main"/>

@@ -86,7 +86,7 @@ function recreateClickCalendar() {
 }
 
 function createProgramacionSlider() {
-  let programacion_slider = $(".programacion-slider").slick({
+  $(".programacion-slider").slick({
     /**/
     responsive: [
       {
@@ -1294,11 +1294,20 @@ function getPrograms(date, country) {
 
       let slider = new Slider();
       let lastDateCanalClaro = json.data[0].last_day;
+    console.log(lastDateCanalClaro, "claro");
+   // slider.createDaysSlider("claro",lastDateCanalClaro);
       slider.newCalendar(lastDateCanalClaro, "claro");
       let lastDateConcertChannel = json.data[1].last_day;
+      console.log(lastDateConcertChannel ,"concert");
+     // slider.createDaysSlider("concert",lastDateConcertChannel);
       slider.newCalendar(lastDateConcertChannel, "concert");
       let lastDateClaroCinema = json.data[2].last_day;
+      console.log(lastDateClaroCinema,"cinema");
+     // slider.createDaysSlider("cinema",lastDateClaroCinema);
       slider.newCalendar(lastDateClaroCinema, "cinema");
+      
+      
+   
       try {
         $(".programacion-slider").slick("unslick");
         createProgramacionSlider();

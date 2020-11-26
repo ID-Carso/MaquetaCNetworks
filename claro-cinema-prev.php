@@ -82,7 +82,7 @@
     </header>
     <main>
         <div class="claro-cinema-container">
-            <section class="today-claro-cinema">
+            <section class="today-claro-cinema slick-none">
                 <div class="row no-gutters landing-header d-flex justify-content-between  pr-cen-cinema">
                     <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
                         <img src="./images/home/cinema-home-img.svg" alt="logo-claro-cinema" class="lading-header-image-cinema" id="icon_claro_cinema"/>

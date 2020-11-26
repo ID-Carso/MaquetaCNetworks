@@ -6,7 +6,7 @@
   <input type="hidden" id="actual_landing" value="canal_claro">
 </head>
 
-<body style="overflow: hidden;">
+<body >
 <!-- <body> -->
 
 
@@ -98,7 +98,7 @@
   </header>
   <main class="today">
     <section class="today-canal-claro">
-      <div class="today-container">
+      <div class="today-container slick-none">
         <div class="px-3 mb-3 row no-gutters landing-header position-relative border-t border-l border-r border-b d-flex justify-content-between pr-rem">
 
           <img id="claro-canal-edi-header" src="./images/General/pencil.svg" alt=" " class="pencil"/>

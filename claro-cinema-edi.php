@@ -91,7 +91,7 @@
   </header>
   <main>
     <div class="claro-cinema-container">
-      <section class="today-claro-cinema">
+      <section class="today-claro-cinema slick-none">
         <div class="row no-gutters landing-header position-relative border-t border-l border-r border-b mb-4 p-4 d-flex justify-content-between  pr-cen-cinema">
           <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-cinema" type="header-landing-cinema" id="icon_cinema"/>
           <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left spaciphone pl-2" >

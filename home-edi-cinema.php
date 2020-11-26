@@ -131,7 +131,7 @@
                     </ul>
                 </div>
                 <!-- CARRUSEL DE PROGRAMACION CLARO CINEMA  -->
-                <div class="tv-videos-container">
+                <div class="tv-videos-container slick-none">
                     <div id="claro-cinema" class="tv-content  border-t border-l border-r border-b position-relative p-2">
                         <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-carrusel-main" type="home-claro-carrousel-main"/>
                         <div class="tv-slider today-claro-cinema-slider" id="tv-cinema-slider" style="margin-bottom: 0px !important;"></div>

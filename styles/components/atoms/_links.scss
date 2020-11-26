@@ -14,3 +14,15 @@
 .link-landing-footer {
   text-decoration: none;
 }
+.slick-none .slick-slider .slick-dots {
+  position: absolute;
+  bottom: 40px;
+  list-style: none;
+  display: none !important;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  left: 0;
+  /* top: 50%; */
+}

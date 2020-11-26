@@ -87,7 +87,7 @@
 
     </header>
     <div class="concert-container pb-5">
-        <section class="today-concert-channel pt-3">
+        <section class="today-concert-channel pt-3 slick-none">
             <div class="row no-gutters mb-3 p-3 landing-header position-relative border-t border-l border-r border-b d-flex justify-content-between pr-cen">
                 <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-concert"
                     type="header-landing-concert"/>

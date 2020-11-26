@@ -71,7 +71,7 @@
         </div>
     </header>
     <div class="concert-container">
-        <section class="today-concert-channel">
+        <section class="today-concert-channel slick-none">
             <div class="row no-gutters landing-header d-flex justify-content-between pr-cen">
                 <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left pt-3 pb-3">
                     <img src="./images/home/concert-home-img.svg" alt="logo-concert-channel" class="lading-header-image-concert"

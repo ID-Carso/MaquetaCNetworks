@@ -7,14 +7,14 @@
     <?php include './views/partials/head.php' ?>
 </head>
 
-<body>
+<body class="pointer-events-none">
     <!--Menú para móvil -->
     <?php
     include 'menu-mobile.php';
     ?>
     <!--End menú para móvil-->
     <input type="hidden" id="actual_landing" value="home">
-    <div class="hamburguer-menu">
+    <div class="hamburguer-menu pointer-events-none">
         <div class="text-center sidebar-header pointer-events-none ">
         </div>
         <div class="sidebar-content">
@@ -57,7 +57,7 @@
     <main>
         <div class="alert-user">
         </div>
-        <header class="home-header-mobile">
+        <header class="home-header-mobile pointer-events-none">
             <div class="header-details header-detail-margin">
                 <h1 class="header-h1">
                     <span class="header-span"></span>
@@ -72,7 +72,7 @@
                     <source src="./video/video.mp4" type="video/mp4" class="source-video" />
                 </video>
             </div>
-            <div class="header">
+            <div class="header pointer-events-none">
                 <img src="./images/home/american-horror.jpeg" class="background-home rellax" data-rellax="10" alt="header-desktop"/>
                 <nav class="menu-tablet">
                     <div class="nav-content">
@@ -125,18 +125,18 @@
                     </ul>
                 </div>
                 <div class="tv-videos-container">
-                    <div id="claro-canal" class="tv-content">
-                        <div class="tv-slider today-claro-slider" id="tv-claro-slider">
+                    <div id="claro-canal" class="tv-content slick-none">
+                        <div class="tv-slider today-claro-slider " id="tv-claro-slider">
                         </div>
                     </div>
                     <!--Concert channel de "Ahora en tv"-->
-                    <div id="concert-channel" class="tv-content contnt-hide">
-                        <div class="tv-slider today-concert-channel-slider" id="tv-concert-slider">
+                    <div id="concert-channel" class="tv-content  slick-none contnt-hide">
+                        <div class="tv-slider today-concert-channel-slider " id="tv-concert-slider">
                         </div>
                     </div>
                     <!--End Concert channel de "Ahora en tv"-->
                     <!--Claro cinema de "Ahora en tv"-->
-                    <div id="claro-cinema" class="tv-content contnt-hide">
+                    <div id="claro-cinema" class="tv-content slick-none contnt-hide">
                         <div class="tv-slider today-claro-cinema-slider" id="tv-cinema-slider">
                         </div>
                     </div>

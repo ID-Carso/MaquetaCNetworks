@@ -3,14 +3,14 @@
 
 <head>
     <?php include './views/partials/head.php' ?>
-    <script src="./js/backoffice/main.js?t=<?php echo time(); ?>" defer></script>
+  
     <input type="hidden" id="actual_landing" value="programation_edi">
 
 </head>
 
 <body>
     <header class="programacion-header">
-        <div class="hamburguer-menu">
+        <div class="hamburguer-menu pointer-events-none">
             <div class="text-center sidebar-header pointer-events-none">
 
             </div>
@@ -55,7 +55,7 @@
         <button class="invisible-button"></button>
         </div>
 
-        <div class="header">
+        <div class="header ">
             <div class="alert-user">
             </div>
             <!--Menú para móvil -->
@@ -75,43 +75,43 @@
 
                         <img class="menu-responsive-tablet" src="./images/home/menu-responsive-black.svg" alt="menu-hamburguesa-tablet" />
 
-                        <a href="home.php">
+                     
                             <img class="logo logo-black" src="./images/home/claro-logo.svg" alt="logo-claro-networks" />
-                        </a>
+                        
                     </div>
 
                     <div class="options">
                         <div class="login">
-                            <a href="login.php" class="login-item mr-2"><img src="./images/home/user-login.svg" alt="icono-usuario" /></a>
-                            <a href="index.php" class="login-item"><img src="images/paises/gmt-icon.svg" alt="icono-gmt" width="32px" /></a>
+                            <span class="login-item mr-2"><img src="./images/home/user-login.svg" alt="icono-usuario" /></span>
+                            <span class="login-item"><img src="images/paises/gmt-icon.svg" alt="icono-gmt" width="32px" /></span>
                         </div>
                     </div>
                 </div>
                 <div class="claro-navbar claro-navbar-black">
                     <div>
-                        <a href="claro-canal.php" class="navbar-link text-decoration-none">
+                        <span class="navbar-link text-decoration-none">
                             <p class="navbar-item-black text-semibold">Canal Claro</p>
-                        </a>
+                        </span>
                     </div>
                     <div>
-                        <a href="concert-channel.php" class="navbar-link text-decoration-none">
+                        <span class="navbar-link text-decoration-none">
                             <p class="navbar-item-black text-semibold">Concert Channel</p>
-                        </a>
+                        </span>
                     </div>
                     <div>
-                        <a href="claro-cinema.php" class="navbar-link text-decoration-none">
+                        <span class="navbar-link text-decoration-none">
                             <p class="navbar-item-black text-semibold">Claro Cinema</p>
-                        </a>
+                        </span>
                     </div>
                     <div>
-                        <a target="_blank" href="https://nuestravision.tv" class="navbar-link text-decoration-none">
+                        <span class="navbar-link text-decoration-none">
                             <p class="navbar-item-black text-semibold">Nuestra Visión</p>
-                        </a>
+                        </span>
                     </div>
                     <div>
-                        <a href="https://www.marca.com/claro-mx/" target="_blank" class="navbar-link text-decoration-none">
+                        <span class="navbar-link text-decoration-none">
                             <p class="navbar-item-black text-semibold">Claro Sports</p>
-                        </a>
+                        </span>
                     </div>
 
                 </div>
@@ -119,7 +119,7 @@
             <!--dots-->
 
 
-            <div class="program-image-slider  mx-auto" id="banner-programming-edi">
+            <div class="program-image-slider  mx-auto totales" id="banner-programming-edi">
             </div>
             <div class="d-flex position-absolute programming-dots space-do">
                 <div class=" d-inline-block position-relative programming-slider-dots align-items-center">
@@ -272,6 +272,7 @@
             $('.programacion-header').on("click", ".slider-pagination-item", function() {
                 let type = "slider-pagination";
                 let data = {
+                    totales: $(".totales").val(),
                     id_slide: $(this).attr("slide_index"),
                     type: type
                 }

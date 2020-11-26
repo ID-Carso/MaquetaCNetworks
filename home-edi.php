@@ -137,7 +137,7 @@
 
                     </ul>
                 </div>
-                <div class="tv-videos-container">
+                <div class="tv-videos-container slick-none">
                     <div id="claro-canal" class="tv-content  border-t border-l border-r border-b position-relative p-2">
                     <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-carrusel-main" type="home-carrousel-main"/>
            
@@ -146,13 +146,13 @@
                            
                     </div>
                     <!--Concert channel de "Ahora en tv"-->
-                    <div id="concert-channel" class="tv-content contnt-hide">
+                    <div id="concert-channel" class="tv-content contnt-hide slick-none">
                         <div class="tv-slider today-concert-channel-slider" id="tv-concert-slider">
                         </div>
                     </div>
                     <!--End Concert channel de "Ahora en tv"-->
                     <!--Claro cinema de "Ahora en tv"-->
-                    <div id="claro-cinema" class="tv-content contnt-hide">
+                    <div id="claro-cinema" class="tv-content contnt-hide slick-none">
                         <div class="tv-slider today-claro-cinema-slider" id="tv-cinema-slider">
                         </div>
                     </div>

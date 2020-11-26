@@ -81,7 +81,7 @@
     </header>
     <main class="today">
         <section class="today-canal-claro">
-            <div class="today-container">
+            <div class="today-container slick-none">
                 <div class="row no-gutters landing-header d-flex justify-content-between pr-rem">
                     <div class="col-12 col-md-3 col-lg-3 col-xl-3 text-center text-md-left text-lg-left text-xl-left">
                         <img src="" id="icon_canal_claro" alt="logo-canal-claro" class="lading-header-image-claro"/>

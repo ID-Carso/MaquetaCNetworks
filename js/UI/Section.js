@@ -1637,20 +1637,20 @@ export default class Section {
       });
       for (let index=iteracioncarrusel; index<= 4;index++) {
         Strinfcarrusel1 += `
-          <div class="poster cursor-auto" >
-            <div class="poster-body">
-                <div>
-                    <div class="thumbnail">
-                        <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
+        <div class="poster cursor-auto" >
+        <div class="poster-body">
+            <div>
+                <div class="thumbnail">
+                    <img src="http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/default/concert-horizontal-slider.jpg" alt="imagen-landing-concert-channel"/>
+                </div>
+                <div class="a-concert-rectangle thumbnail-info-title">
+                    <div class="poster-title-margin">
+                        
                     </div>
-                    <div class="a-concert-rectangle thumbnail-info-title">
-                        <div class="poster-title-margin">
-                            <p class="a-poster-text-white">${program.genre}</p>
-                        </div>
-                    </div>
-              </div>
-            </div>
+                </div>
           </div>
+        </div>
+      </div>
           `;
         
     } 
@@ -1718,20 +1718,20 @@ export default class Section {
       });
       for (let index=iteracioncarrusel2; index<= 4;index++) {
         Strinfcarrusel2 += `
-          <div class="poster cursor-auto" >
-            <div class="poster-body">
-                <div>
-                    <div class="thumbnail">
-                        <img src="${program.image_horizontal}" alt="imagen-de-${program.image_horizontal}"/>
+        <div class="poster cursor-auto" >
+        <div class="poster-body">
+            <div>
+                <div class="thumbnail">
+                    <img src="http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/default/concert-horizontal-slider.jpg" alt="imagen-landing-concert-channel"/>
+                </div>
+                <div class="a-concert-rectangle thumbnail-info-title">
+                    <div class="poster-title-margin">
+                        
                     </div>
-                    <div class="a-concert-rectangle thumbnail-info-title">
-                        <div class="poster-title-margin">
-                            <p class="a-poster-text-white">${program.genre}</p>
-                        </div>
-                    </div>
-              </div>
-            </div>
+                </div>
           </div>
+        </div>
+      </div>
           `;
         
     } 

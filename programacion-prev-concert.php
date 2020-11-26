@@ -9,7 +9,7 @@
 
 <body>
     <header class="programacion-header">
-        <div class="hamburguer-menu">
+        <div class="hamburguer-menu pointer-events-none">
             <div class="text-center sidebar-header pointer-events-none ">
 
             </div>
@@ -55,7 +55,7 @@
         <button class="invisible-button"></button>
         </div>
 
-        <div class="header">
+        <div class="header pointer-events-none">
             <div class="alert-user">
             </div>
             <!--Menú para móvil -->
