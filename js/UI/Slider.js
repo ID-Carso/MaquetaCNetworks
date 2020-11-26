@@ -241,44 +241,43 @@ export default class Slider {
               </li>`;
             } 
           }
+console.log(day);
+console.log(numberDays);
+console.log(month, "mes actual");
+console.log(lastMonth, "mes de la fecha");
 
           //Días que estarán bloqueados al superar fecha límite de programación
-        } /// 
-        console.log(day, "dias");
-        if(day > numberDays && landing === "concert"){
-        
-          numberDays = new Date(year, month + 1, 0).getDate();
-console.log("entra");
-for ( day = 1; day <= numberDays; day++) {
-   
-    if (day < lastDay && month === lastMonth) {
-      console.log(month, "mess");
-      daysSlider += `
-      <li class="cursor-auto pointer-events-none  item-no-available">
-        <div class="day">
-            <p class="day-text-desactivated">${getDayName(
-              month,
-              day
-            )}</p>
-            <p class="day-number-desactivated">${day}</p>
-        </div>
-      </li>`;
-    } else {
-      daysSlider += `
-      <li class="${landing}-item programing-item" date="${year}-${
-        month + 1
-      }-${day}">
-        <div class="day">
-            <p class="day-text">${getDayName(month, day)}</p>
-            <p class="day-number">${day}</p>
-        </div>
-      </li>`;
-    } 
+        } if(day > numberDays){
+          for ( day = 1; day <= numberDays; day++) {
+           
+              if (day < lastDay && month === lastMonth) {
+                daysSlider += `
+                <li class="cursor-auto pointer-events-none  item-no-available">
+                  <div class="day">
+                      <p class="day-text-desactivated">${getDayName(
+                        month,
+                        day
+                      )}</p>
+                      <p class="day-number-desactivated">${day}</p>
+                  </div>
+                </li>`;
+              } else {
+                daysSlider += `
+                <li class="${landing}-item programing-item" date="${year}-${
+                  month + 1
+                }-${day}">
+                  <div class="day">
+                      <p class="day-text">${getDayName(month, day)}</p>
+                      <p class="day-number">${day}</p>
+                  </div>
+                </li>`;
+              } 
+            
   
-
-  //Días que estarán bloqueados al superar fecha límite de programación
-}
+            //Días que estarán bloqueados al superar fecha límite de programación
+          }
         }
+        
       }
     }
 

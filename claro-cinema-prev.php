@@ -7,7 +7,7 @@
 
 </head>
 
-<body class="claro-cinema-content">
+<body class="claro-cinema-content pointer-events-none">
     <header class="claro-cinema-header">
         <div class="hamburguer-menu">
             <div class="text-center sidebar-header pointer-events-none ">

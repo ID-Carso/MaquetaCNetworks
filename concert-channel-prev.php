@@ -7,7 +7,7 @@
 
 </head>
 
-<body>
+<body class="pointer-events-none concert-container">
     <header class="concert-channel-header">
         <div class="hamburguer-menu">
             <div class="text-center sidebar-header pointer-events-none ">

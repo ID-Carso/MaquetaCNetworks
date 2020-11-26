@@ -134,7 +134,7 @@
                 <div class="tv-videos-container slick-none">
                     <div id="claro-cinema" class="tv-content  border-t border-l border-r border-b position-relative p-2">
                         <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-carrusel-main" type="home-claro-carrousel-main"/>
-                        <div class="tv-slider today-claro-cinema-slider" id="tv-cinema-slider" style="margin-bottom: 0px !important;"></div>
+                        <div class="tv-slider today-claro-cinema-slider pointer-events-none" id="tv-cinema-slider" style="margin-bottom: 0px !important;"></div>
                     </div>
                 </div>
             </div>
@@ -158,7 +158,7 @@
                     <a href=""> <button class="btn-red btn-canal-claro-home">VER +</button></a>
                 </div>
                 <div class="">
-                    <div class="section-slider claro-slider-home-prev">
+                    <div class="section-slider claro-slider-home-prev pointer-events-none">
                     </div>
                 </div>
 
@@ -183,7 +183,7 @@
                 </div>
                 <div class="canal-videos-container">
                     <div class="">
-                        <div class="section-slider claro-slider-home-prev">
+                        <div class="section-slider claro-slider-home-prev pointer-events-none">
                         </div>
                     </div>
                    
@@ -216,7 +216,7 @@
                     </div>
                 </div>
                 <div class="">
-                    <div class="section-slider claro-slider-home-prev">
+                    <div class="section-slider claro-slider-home-prev pointer-events-none">
                     </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
@@ -249,7 +249,7 @@
                 <div class="text-center">
                     <a href=""><button class="btn-pink button-concert-home"></button></a>
                 </div>
-                <div class="section-slider concert-home-slider">
+                <div class="section-slider concert-home-slider pointer-events-none">
                 </div>
             </div>
 
@@ -269,7 +269,7 @@
                     </div>
                 </div>
                 <div class="home-concert-videos-container">
-                    <div class="section-slider concert-home-slider">
+                    <div class="section-slider concert-home-slider pointer-events-none">
                     </div>
                 </div>
 
@@ -301,7 +301,7 @@
                             </button></a>
                     </div>
                 </div>
-                <div class="section-slider concert-home-slider">
+                <div class="section-slider concert-home-slider pointer-events-none">
                 </div>
                 <div class="d-flex align-items-center justify-content-between section-home-footer concert-section-footer">
                     <div>
@@ -336,7 +336,7 @@
                 <div class="text-center">
                     <a href=""><button class="btn-red button-cinema-home">VER +</button></a>
                 </div>
-                <div class="section-slider cinema-home-slider  border-t border-l border-r border-b position-relative p-2">
+                <div class="section-slider cinema-home-slider  border-t border-l border-r border-b position-relative p-2"> <!--check-->
                     <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-carrusel-home-cinema" type="cinema-home-slider"/>
                 </div>
             </div>
@@ -364,7 +364,7 @@
                     </div>
                     <div class="col-md-7 col-lg-8  border-t border-l border-r border-b position-relative p-2">
                         <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-carrusel-home-cinema" type="cinema-home-slider"/>
-                        <div class="cinema-home-slider">
+                        <div class="cinema-home-slider pointer-events-none">
                         </div>
                     </div>
                 </div>
@@ -404,7 +404,7 @@
                     </div>
                     <div class="col-md-8 col-xl-9  border-t border-l border-r border-b position-relative p-2">
                         <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-carrusel-home-cinema" type="cinema-home-slider"/>
-                        <div class="cinema-home-slider">
+                        <div class="cinema-home-slider pointer-events-none">
                         </div>
                     </div>
                 </div>

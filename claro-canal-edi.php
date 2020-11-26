@@ -117,7 +117,7 @@
 
         <div class="today-videos-container position-relative border-t border-l border-r border-b p-2">
           <img id="claro-canal-edi-programacion" src=" ./images/General/pencil.svg" alt=" " class="pencil"/>
-          <div class="section-slider today-claro-slider-prev">
+          <div class="section-slider today-claro-slider-prev pointer-events-none">
           </div>
     </section> 
 

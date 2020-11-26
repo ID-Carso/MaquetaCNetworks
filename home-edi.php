@@ -141,7 +141,7 @@
                     <div id="claro-canal" class="tv-content  border-t border-l border-r border-b position-relative p-2">
                     <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-carrusel-main" type="home-carrousel-main"/>
            
-                        <div class="tv-slider today-claro-slider " id="tv-claro-slider"style="margin-bottom: 0px !important;">
+                        <div class="tv-slider today-claro-slider pointer-events-none " id="tv-claro-slider"style="margin-bottom: 0px !important;">
                      
                            
                     </div>

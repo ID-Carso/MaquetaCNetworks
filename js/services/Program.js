@@ -1380,6 +1380,7 @@ function getProgramming(date, withLoader, country) {
     },
     success: function (result) {      
       let data = JSON.parse(result);
+    
       $(".loader-container").remove();
       if (data.code == 200) {
         let arrayCanalClaro = [];

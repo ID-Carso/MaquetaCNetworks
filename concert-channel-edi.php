@@ -110,7 +110,7 @@
             <div class="today-concert-videos-container position-relative border-t border-l border-r border-b">
                 <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-concert pencil-slider"
                     type="current-programming-concert"/>
-                <div class="section-slider p-3 today-concert-channel-slider-prev">
+                <div class="section-slider p-3 today-concert-channel-slider-prev pointer-events-none">
                 </div>
 </div>
         </section>

@@ -142,7 +142,7 @@
                     <div id="concert-channel" class="tv-content  border-t border-l border-r border-b position-relative p-2">
                         <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-carrusel-main" type="home-claro-carrousel-main"/>
                         <!-- <div class="tv-slider today-concert-channel-slider" id="tv-concert-slider" style="margin-bottom: 0px !important;"></div> -->
-                        <div class="tv-slider today-concert-channel-slider" id="tv-concert-slider" style="margin-bottom: 0px !important;"></div>
+                        <div class="tv-slider today-concert-channel-slider pointer-events-none" id="tv-concert-slider" style="margin-bottom: 0px !important;"></div>
                     </div>
                 </div>
 
@@ -169,7 +169,7 @@
                 <div class="text-center">
                     <a href=""> <button class="btn-red btn-canal-claro-home">VER +</button></a>
                 </div>
-                <div class="section-slider claro-slider-home-prev">
+                <div class="section-slider claro-slider-home-prev pointer-events-none">
                 </div>
             </div>
             <!--End Sección Canal Claro mobile-->
@@ -191,7 +191,7 @@
                 </div>
                 <div class="canal-videos-container">
 
-                    <div class="section-slider claro-slider-home-prev">
+                    <div class="section-slider claro-slider-home-prev pointer-events-none">
                     </div>
 
                 </div>
@@ -223,7 +223,7 @@
                     </div>
                 </div>
 
-                <div class="section-slider claro-slider-home-prev">
+                <div class="section-slider claro-slider-home-prev pointer-events-none">
                 </div>
 
                 <div class="d-flex align-items-center justify-content-between section-home-footer claro-section-footer">
@@ -259,7 +259,7 @@
                 </div>
                 <div class="position-relative border-l border-t border-b border-r">
                     <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-home-slider" type="concert-home-slider"/>
-                    <div class="section-slider concert-home-slider">
+                    <div class="section-slider concert-home-slider pointer-events-none">
                     </div>
                 </div>
 
@@ -284,7 +284,7 @@
                 <div class="home-concert-videos-container">
                     <div class="border-l border-t border-b border-r position-relative">
                         <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-home-slider" type="concert-home-slider"/>
-                        <div class="section-slider concert-home-slider">
+                        <div class="section-slider concert-home-slider pointer-events-none">
                         </div>
                     </div>
 
@@ -321,7 +321,7 @@
                 </div>
                 <div class="position-relative border-l border-r border-t border-b p-3">
                     <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-home-slider" type="concert-home-slider"/>
-                    <div class="section-slider concert-home-slider">
+                    <div class="section-slider concert-home-slider pointer-events-none">
                     </div>
                 </div>
 
@@ -356,7 +356,7 @@
                 <div class="text-center">
                     <a href=""><button class="btn-red button-cinema-home">VER +</button></a>
                 </div>
-                <div class="section-slider cinema-home-slider">
+                <div class="section-slider cinema-home-slider pointer-events-none">
                 </div>
             </div>
             <!--End Cinema Claro mobile-->
@@ -381,7 +381,7 @@
                         <img src="./images/home/claro-cinema-background.png" alt="" class="cinema-image">
                     </div>
                     <div class="col-md-7 col-lg-8">
-                        <div class="cinema-home-slider">
+                        <div class="cinema-home-slider pointer-events-none">
                         </div>
                     </div>
                 </div>
@@ -419,7 +419,7 @@
                         <img src="./images/home/claro-cinema-background.png" alt="fondo-claro-cinema" class="cinema-image"/>
                     </div>
                     <div class="col-md-8 col-xl-9">
-                        <div class="cinema-home-slider">
+                        <div class="cinema-home-slider pointer-events-none">
                         </div>
                     </div>
                 </div>

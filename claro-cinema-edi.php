@@ -134,7 +134,7 @@
 
       </section>
       <section class="recordar">
-        <div class="header-title-section">
+      <!--  <div class="header-title-section">
           <div class="d-inline-block position-relative border-t border-l border-r border-b">
             <img src="./images/General/pencil.svg" alt=" " class="pencil  pencil-carrusel1" type="title-carrusel1"/>
             <h1 class="a-cinema-title" id="carrusel_1_title">
@@ -142,7 +142,7 @@
             </h1>
             <h2 class="a-cinema-subtitle" id="carrusel_1_subtitle">
               <!-- ve un <span>adelanto</span> de la programación -->
-              ¿Cómo ligaban antes del Tinder? Revive una época fascinante
+            <!--  ¿Cómo ligaban antes del Tinder? Revive una época fascinante
             </h2>
           </div>
         </div>
@@ -234,16 +234,36 @@
             </div>
           </div>
         </div>
+-->
+<div class="header-title-section">
+<div class="d-inline-block position-relative border-t border-l border-r border-b">
+            <img src="./images/General/pencil.svg" alt=" " class="pencil  pencil-carrusel1" type="title-carrusel1"/>
+            <h1 class="a-cinema-title" id="carrusel_1_title">
+              recordar es volver <span class="recordar-title">a vivir</span>
+            </h1>
+            <h2 class="a-cinema-subtitle" id="carrusel_1_subtitle">
+              <!-- ve un <span>adelanto</span> de la programación -->
+              ¿Cómo ligaban antes del Tinder? Revive una época fascinante
+            </h2>
+          </div>
+        </div>
+        <div class="recordar-container-videos">
+        <div class="d-finline-block p-3 position-relative border-t border-l border-r border-b">
+            <img src="./images/General/pencil.svg" alt=" " class="pencil  pencil-carrousel1" type="carrusel1"/>
+          <div class="section-slider cinema-slider" id="claro_cinema_carrusel_1">
+          </div>
+          </div>
+        </div>
 
       </section>
       <section class="only-claro-cinema">
-        <div class="header-title-section">
+       <!-- <div class="header-title-section">
           <div class="d-inline-block position-relative border-t border-l border-r border-b p-3">
             <img src="./images/General/pencil.svg" alt=" " class="pencil  pencil-carrusel2" type="title-carrusel2"/>
             <h1 class="a-cinema-title" id="carrusel_2_title"> sexy <span>románticas</span></h1>
             <h2 class="a-cinema-subtitle" id="carrusel_2_subtitle">
               <!-- ve un <span>adelanto</span> de la programación -->
-              Películas para subir la temperatura
+           <!--   Películas para subir la temperatura
             </h2>
           </div>
         </div>
@@ -340,7 +360,24 @@
             </div>
           </div>
         </div>
-
+-->
+<div class="header-title-section">
+          <div class="d-inline-block position-relative border-t border-l border-r border-b p-3">
+            <img src="./images/General/pencil.svg" alt=" " class="pencil  pencil-carrusel2" type="title-carrusel2"/>
+            <h1 class="a-cinema-title"  id="carrusel_2_title"> sexy <span>románticas</span></h1>
+            <h2 class="a-cinema-subtitle" id="carrusel_2_subtitle">
+              <!-- ve un <span>adelanto</span> de la programación -->
+              Películas para subir la temperatura
+            </h2>
+          </div>
+        </div>
+        <div class="only-videos-container mb-xl-5">
+        <div class="d-finline-block p-3 position-relative border-t border-l border-r border-b">
+            <img src="./images/General/pencil.svg" alt=" " class="pencil  pencil-carrousel2" type="carrusel2"/>
+          <div class="section-slider cinema-slider" id="claro_cinema_carrusel_2">
+          </div>
+          </div>
+        </div>
       </section>
       <section>
         <?php
