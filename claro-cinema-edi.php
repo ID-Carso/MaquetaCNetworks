@@ -78,7 +78,7 @@
       </div>
 
     
-      <div class=" header-slider-cinem banner-claro-canal" id="banner-claro-cinema-edi">
+      <div class=" header-slider-cinem banner-claro-canal totales" id="banner-claro-cinema-edi">
       </div>
       <div class="d-flex position-absolute programming-dots space-do" style="top:65%;">
         <div class=" d-inline-block position-relative programming-slider-dots align-items-center">
@@ -101,20 +101,20 @@
             <h1 class="a-today-cinema-title pt-4">hoy en <span>claro cinema</span></h1>
           </div>
           <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center text-md-right text-lg-right text-xl-righ pt-4" id="btn-claro-cinema">
-            <a href="#"><button class="btn-teal-blue a-text-white-semibold btn-claro-cinema"></button>
-            </a>
+            <button class="btn-teal-blue a-text-white-semibold btn-claro-cinema"></button>
+           
           </div>
         </div>
 
         <div class="no-gutters">
           <div class="today-cinema-videos-container position-relative border-t border-l border-r border-b p-3">
             <img src="./images/General/pencil.svg" alt=" " class="pencil  pencil-slider" type="current-programming-cinema"/>
-            <div class="section-slider cinema-slider today-claro-cinema-slider-prev">
+            <div class="section-slider cinema-slider today-claro-cinema-slider-prev pointer-events-none">
             </div>
           </div>
         </div>
       </section>
-      <section class="imperdibles">
+      <section class="imperdibles slick-none">
         <div class="header-title-section">
           <div class="d-inline-block position-relative border-t border-l border-r border-b">
             <img src="./images/General/pencil.svg" alt=" " class="pencil  pencil-title" type="title-cinema"/>
@@ -133,7 +133,7 @@
           </div>
 
       </section>
-      <section class="recordar">
+      <section class="recordar slick-none">
       <!--  <div class="header-title-section">
           <div class="d-inline-block position-relative border-t border-l border-r border-b">
             <img src="./images/General/pencil.svg" alt=" " class="pencil  pencil-carrusel1" type="title-carrusel1"/>
@@ -256,7 +256,7 @@
         </div>
 
       </section>
-      <section class="only-claro-cinema">
+      <section class="only-claro-cinema slick-none">
        <!-- <div class="header-title-section">
           <div class="d-inline-block position-relative border-t border-l border-r border-b p-3">
             <img src="./images/General/pencil.svg" alt=" " class="pencil  pencil-carrusel2" type="title-carrusel2"/>
@@ -497,7 +497,8 @@
   $('.claro-cinema-header').on("click", ".slider-pagination-item", function() {
     let type = "slider-pagination";
     let data = {
-
+      totales: $(".totales").val(),
+      id_slide: $(this).attr("slide_index"),
       type: type
     }
  

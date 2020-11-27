@@ -154,7 +154,7 @@
             </h1>
         </div>
         <!--Sección de Canal Claro-->
-        <div class="o-claro-section">
+        <div class="o-claro-section slick-none">
             <!--Sección Canal Claro mobile-->
             <div class="claro-canal-mobile">
                 <div class="m-home-titles text-center mb-3">
@@ -241,7 +241,7 @@
         </div>
         <!--Fin sección de Canal Claro-->
         <!--Sección de Concert Channel-->
-        <div class="o-concert-section">
+        <div class="o-concert-section slick-none">
             <!--Versión para mobile-->
             <div class="concert-channel-mobile">
                 <div class="position-relative border-l border-t border-b border-r">
@@ -340,7 +340,7 @@
         </div>
         <!--Fin sección de Concert Channel-->
         <!--Sección de Cinema Claro-->
-        <div class="o-cinema-section">
+        <div class="o-cinema-section slick-none">
             <!--Cinema claro versión mobile-->
             <div class="cinema-claro-mobile">
                 <div class="m-home-titles text-center">

@@ -82,7 +82,7 @@
       include './views/partials/menu-desktop-black-edi.php'
       ?>
 
-      <div class="header-slider-cinem mx-auto" id="banner-claro-canal-edi">
+      <div class="header-slider-cinem mx-auto  totales" id="banner-claro-canal-edi">
 
       </div>
 
@@ -155,10 +155,10 @@
         </div>
 
 
-        <div class="dontLose-video-container">
+        <div class="dontLose-video-container slick-none">
           <div class="mb-3 position-relative border-t border-l border-r border-b p-2">
             <img id="claro-canal-edi-carrusel1" src=" ./images/General/pencil.svg" alt=" " class="pencil"/>
-            <div class="section-slider" id="dontLose-claro-slider">
+            <div class="section-slider " id="dontLose-claro-slider">
             <!-- <div class="section-slider" id="dontLose-claro-sliderEdit"> -->
             </div>
           </div>
@@ -173,7 +173,7 @@
           </div>
           <div class="position-relative border-t border-l border-r border-b p-2">
             <img id="claro-canal-edi-carrusel2" src=" ./images/General/pencil.svg" alt=" " class="pencil"/>
-            <div class="section-slider dontLose-claro-slider" id="exlusiveContentClaroSlider">
+            <div class="section-slider dontLose-claro-slider " id="exlusiveContentClaroSlider">
             <!-- <div class="section-slider dontLose-claro-slider" id="exlusiveContentClaroSliderEdit"> -->
             </div>
           </div>
@@ -211,6 +211,7 @@ include './views/partials/modal-program.php'
   $("#claro-canal-edi-header").click(function () {
     let type = "claro-header";
     let data = {
+     
       type: type
     }
     var json = JSON.stringify(data);
@@ -295,10 +296,10 @@ include './views/partials/modal-program.php'
   $('.claro-canal-header').on("click", ".slider-pagination-item", function () {
     let type = "slider-pagination";
     let data = {
-
+      totales: $(".totales").val(),
+      id_slide: $(this).attr("slide_index"),
       type: type
     }
-  
     var json = JSON.stringify(data);
     socketClaro.postMessage(json);
   });

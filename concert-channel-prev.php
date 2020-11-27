@@ -106,7 +106,7 @@
             </div>
 
         </section>
-        <section class="concerts">
+        <section class="concerts slick-none">
             <div class="concert-container-header">
 
                 <h1 class="concert-title" id="carrusel_1_title"></h1>
@@ -117,7 +117,7 @@
             </div>
 
         </section>
-        <section class="concert-interviews">
+        <section class="concert-interviews slick-none">
             <div class="concert-container-header">
                 <h1 class="concert-title" id="carrusel_2_title"></h1>
                 <h2 class="concert-subtitle" id="carrusel_2_subtitle"></h2>

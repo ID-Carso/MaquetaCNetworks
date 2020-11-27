@@ -820,8 +820,10 @@ export default class Section {
           '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
         customPaging: function (slider, i) {
           var thumb = $(slider.$slides[i]).data();
+          var totales = $(".totales");
+          totales.val(slider.slideCount);
           return (
-            "<p class='a-text-bold-tealblue slider-pagination-item pag ' slide_index=" +
+            "<p class='a-text-bold-tealblue slider-pagination-item pag 'slide_index=" +
             i +
             ">" +
             (i + 1) +
@@ -1157,6 +1159,8 @@ export default class Section {
         nextArrow:
           '<img src="../images/sliders/next.png" class="arrow-next" alt="flecha-derecha"/>',
         customPaging: function (slider, i) {
+          var totales = $(".totales");
+          totales.val(slider.slideCount);
           var thumb = $(slider.$slides[i]).data();
           return (
             "<p class='a-text-bold-tealblue slider-pagination-item activando-ando' slide_index=" +
@@ -1497,7 +1501,8 @@ export default class Section {
 
       customPaging: function (slider, i) {
 
-
+        var totales = $(".totales");
+        totales.val(slider.slideCount);
         var thumb = $(slider.$slides[i]).data();
 
         return (

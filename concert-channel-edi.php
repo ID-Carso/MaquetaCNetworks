@@ -72,7 +72,7 @@
             include './views/partials/menu-desktop-black-edi.php'
             ?>
 
-            <div class="header-slider-cinem mx-auto" id="banner-concert-channel-edi">
+            <div class="header-slider-cinem mx-auto totales" id="banner-concert-channel-edi">
 
             </div>
 
@@ -135,7 +135,7 @@
             </div>
 
         </section>
-        <section class="concerts">
+        <section class="concerts slick-none">
             <div
                 class="concert-container-header  p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
                 <h1 class="concert-title" id="carrusel_1_title"></h1>
@@ -151,7 +151,7 @@
             </div>
 
         </section>
-        <section class="concert-interviews">
+        <section class="concert-interviews slick-none">
             <div
                 class="concert-container-header  header2 p-2 mb-3 d-xl-inline-block d-lg-inline-block d-md-inline-block d-block position-relative border-t border-l border-r border-b">
                 <img src=" ./images/General/pencil.svg" alt=" " class="pencil pencil-header2" type="header2"/>
@@ -178,6 +178,7 @@
     ?>
     <script type="text/javascript" src="./js/lib/easyXDM.min.js"></script>
     <script>
+    
         var socketConcert = new easyXDM.Socket({
             onReady: function () {
                 var hey = 2180;
@@ -258,13 +259,16 @@
         $('.concert-channel-header').on("click", ".slider-pagination-item", function () {
             let type = "slider-pagination";
             let data = {
-
+                totales: $(".totales").val(),
+                 id_slide: $(this).attr("slide_index"),
                 type: type
             }
            
             var json = JSON.stringify(data);
+          
             socketConcert.postMessage(json);
         });
+       
     </script>
 </body>
 

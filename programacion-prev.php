@@ -111,7 +111,7 @@
 
                             <div class="no-gutters">
                                 <ul class="claro-calendar-backoffice col-md-10 mx-auto">
-                                    <div class="programacion-slider pro-claro-slider" id="pro-claro-slider">
+                                    <div class="programacion-slider pro-claro-slider " id="pro-claro-slider">
 
                                     </div>
                                 </ul>
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                     <!--Programas de canal claro-->
-                    <div class="claro-content-prev"></div>
+                    <div class="claro-content-prev pointer-events-none"></div>
                 </div>
 
                 <div id="concert-channel-programing" class="tv-content contnt-hide">
@@ -141,7 +141,7 @@
 
                         </div>
                     </div>
-                    <div class="concert-content-prev"></div>
+                    <div class="concert-content-prev pointer-events-none"></div>
                 </div>
                 <!--End Concert channel de "Ahora en tv"-->
                 <!--Claro cinema de "Ahora en tv"-->
@@ -163,25 +163,28 @@
 
                         </div>
                     </div>
-                    <div class="cinema-content-prev"></div>
+                    <div class="cinema-content-prev pointer-events-none"></div>
                 </div>
 
         </main>
+        <div class="pointer-events-none">
         <?php
         include 'advertising-section.php'
         ?>
-
+</div>
 
     </div>
-    <div class="programing-list-links-footer">
+    <div class="programing-list-links-footer pointer-events-none">
         <?php
         include './views/partials/list-links-footer.php';
         ?>
 
     </div>
+    <div class="pointer-events-none">
     <?php
     include 'footer.php'
     ?>
+    </div>
     <?php
     include './views/partials/modal-favorites.php'
     ?>

@@ -187,7 +187,7 @@ export default class Slider {
     let lastDay = lastDate.getUTCDate();
 
     let currentMonth = currentDate.getUTCMonth();
-    console.log(currentMonth, "currentMonth");
+   
     let lastMonth = lastDate.getUTCMonth();
 
     let currentYear = currentDate.getUTCFullYear();
@@ -241,10 +241,7 @@ export default class Slider {
               </li>`;
             } 
           }
-console.log(day);
-console.log(numberDays);
-console.log(month, "mes actual");
-console.log(lastMonth, "mes de la fecha");
+
 
           //Días que estarán bloqueados al superar fecha límite de programación
         } if(day > numberDays){

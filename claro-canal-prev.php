@@ -120,7 +120,7 @@
 
             </div>
         </section>
-        <section class="dont-lose-claro">
+        <section class="dont-lose-claro slick-none">
             <div class="dont-lose-container">
 
                 <h1 class="a-dontLose-claro-title" id="carrusel_1_title">TIENES QUE VERLO</h1>
