@@ -244,7 +244,7 @@ export default class Slider {
 
 
           //Días que estarán bloqueados al superar fecha límite de programación
-        } if(day > numberDays){
+        } if(day > numberDays && lastMonth >= month){
           for ( day = 1; day <= numberDays; day++) {
            
               if (day < lastDay && month === lastMonth) {

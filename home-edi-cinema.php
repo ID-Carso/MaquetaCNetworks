@@ -113,12 +113,12 @@
             <div class="o-tv-section mb-5 pb-5">
                 <div class="row no-gutters">
                     <ul class="tv-list col-md-11">
-                        <div class="col-md text-center no-gap border-right">
+                        <div class="col-md text-center no-gap border-right pointer-events-none">
                             <li rel="claro-canal" class="nav-li">
                                 <img class="claro-nav-image" src="" alt="logo-canal-claro" />
                             </li>
                         </div>
-                        <div class="col-md text-center no-gap border-right">
+                        <div class="col-md text-center no-gap border-right pointer-events-none">
                             <li rel="concert-channel" class="nav-li">
                                 <img class="nav-image concert-nav-image" src="" alt="logo-concert-channel" />
                             </li>

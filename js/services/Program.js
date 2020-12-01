@@ -348,6 +348,29 @@ function getPrograms(date, country) {
       //CANAL CLARO
       programingCanalClaro.forEach((program, index) => {
         let programCanalClaro;
+        if (program.length <= 0) {
+            for (let index = 0; index < 5; index++) {
+                programCanalClaro += `
+              <div class="poster cursor-auto" >
+                <div class="poster-body">
+                    <div>
+                        <div class="thumbnail">
+                            <img src="http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/default/claro-horizontal-slider.jpg" alt="imagen-landing-concert-channel"/>
+                        </div>
+                        <div class="a-claro-rectangle thumbnail-info-title">
+                            <div class="poster-title-margin">
+                                
+                            </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              `;
+            }
+          }else{
+
+          
+    
         //Verificamos que es el primer programa para poner el título "AHORA EN VIVO"
         if (index == 0) {
           //Verficamos si está en el arreglo de programas en favoritos
@@ -528,6 +551,27 @@ function getPrograms(date, country) {
             }
           }
         }
+    }//Se agregarán imagenes por default,cuando exista menos de 1 programa, para ese día (la programación se haya terminado)
+    if (programingCanalClaro.length <= 1) {
+        for (let index = 0; index < 5; index++) {
+            programCanalClaro += `
+          <div class="poster cursor-auto" >
+            <div class="poster-body">
+                <div>
+                    <div class="thumbnail">
+                        <img src="http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/default/claro-horizontal-slider.jpg" alt="imagen-landing-concert-channel"/>
+                    </div>
+                    <div class="a-claro-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          `;
+        }
+      }
         nowSliderCanalClaro.append(programCanalClaro);
 
         /* PROGRAMACIÓN GENERAL*/
@@ -779,12 +823,35 @@ function getPrograms(date, country) {
                 `;
           }
         }
+            //Se agregarán imagenes por default,cuando exista menos de 1 programa, para ese día (la programación se haya terminado)
+            if (programingCanalClaro.length <= 1) {
+                for (let index = 0; index < 5; index++) {
+                    programCanalClaro += `
+                  <div class="poster cursor-auto" >
+                    <div class="poster-body">
+                        <div>
+                            <div class="thumbnail">
+                                <img src="http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/default/claro-horizontal-slider.jpg" alt="imagen-landing-concert-channel"/>
+                            </div>
+                            <div class="a-claro-rectangle thumbnail-info-title">
+                                <div class="poster-title-margin">
+                                    
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                  `;
+                }
+              }
         nowSliderCanalClaroprev.append(programCanalClaro);
       });
       //END DE CUADROS
 
       let programConcertChannel;
       programingConcertChannel.forEach((program, index) => {
+        console.log(programingConcertChannel.length, "program");
+       
         if (index == 0) {
           if (arrayConcertChannel.includes(program.chapter_id)) {
             if (program.landing_synopsis === 0) {
@@ -957,9 +1024,32 @@ function getPrograms(date, country) {
                             `;
             }
           }
+        
+    }
+    //Se agregarán imagenes por default,cuando exista menos de 1 programa, para ese día (la programación se haya terminado)
+    if (programingConcertChannel.length <= 1) {
+        for (let index = 0; index < 5; index++) {
+            programConcertChannel += `
+          <div class="poster cursor-auto" >
+            <div class="poster-body">
+                <div>
+                    <div class="thumbnail">
+                        <img src="http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/default/concert-horizontal-slider.jpg" alt="imagen-landing-concert-channel"/>
+                    </div>
+                    <div class="a-concert-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          `;
         }
+      }
         nowSliderConcertChannel.append(programConcertChannel);
         nowSliderConcertChannelprev.append(programConcertChannel);
+
         /* END PROGRAMACIÓN GENERAL - CONCERT CHANNEL*/
       });
 
@@ -1136,6 +1226,27 @@ function getPrograms(date, country) {
             }
           }
         }
+            //Se agregarán imagenes por default,cuando exista menos de 1 programa, para ese día (la programación se haya terminado)
+        if (programingClaroCinema.length <= 1) {
+            for (let index = 0; index < 5; index++) {
+                programClaroCinema += `
+              <div class="poster cursor-auto" >
+                <div class="poster-body">
+                    <div>
+                        <div class="thumbnail">
+                            <img src="http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/default/cinema-horizontal-slider.jpg" alt="imagen-landing-concert-channel"/>
+                        </div>
+                        <div class="a-cinema-rectangle thumbnail-info-title">
+                            <div class="poster-title-margin">
+                                
+                            </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              `;
+            }
+          }
         nowSliderClaroCinema.append(programClaroCinema);
 
         /* END PROGRAMACIÓN GENERAL - CLARO CINEMA*/

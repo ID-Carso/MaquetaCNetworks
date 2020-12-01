@@ -124,12 +124,12 @@
                                 <img class="claro-nav-image claro-nav-image thumbnail-image-program" src="" alt="logo-canal-claro" title="programacion-de-canal-claro" id="icon_canal_claro_edi"/>
                             </li>
                         </div>
-                        <div class="col-md text-center no-gap border-right d-flex justify-content-center pr-3 pl-3">
+                        <div class="col-md text-center no-gap border-right d-flex justify-content-center pr-3 pl-3 pointer-events-none">
                             <li rel="concert-channel" class="navs-li p-2"  style="width: 200px !important;">
                                 <img class="nav-image concert-nav-image claro-nav-image thumbnail-image-program" src="" alt="logo-concert-channel" title="programacion-de-concert-channel" id="icon_concert_channel_edi"/>
                             </li>
                         </div>
-                        <div class="col-md text-center no-gap d-flex justify-content-center pl-3">
+                        <div class="col-md text-center no-gap d-flex justify-content-center pl-3 pointer-events-none">
                             <li rel="claro-cinema" class="navs-li p-2"  style="width: 200px !important;">
                                 <img class="nav-image cinema-nav-image claro-nav-image thumbnail-image-program" src="" alt="logo-claro-cinema" title="programacion-de-claro-cinema"  id="icon_claro_cinema_edi"/>
                             </li>

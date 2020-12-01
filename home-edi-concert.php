@@ -119,7 +119,7 @@
 
                 <div class="row no-gutters">
                     <ul class="tv-list col-md-11">
-                        <div class="col-md text-center no-gap border-right">
+                        <div class="col-md text-center no-gap border-right pointer-events-none">
                             <li rel="claro-canal" class="nav-li">
                                 <img class="claro-nav-image" src="" alt="logo-claro-canal" title="programacion-claro-canal"/>
                             </li>
@@ -129,7 +129,7 @@
                                 <img class="nav-image concert-nav-image" src="" alt="logo-concert-channel" title="programacion-concert-channel" />
                             </li>
                         </div>
-                        <div class="col-md text-center no-gap">
+                        <div class="col-md text-center no-gap pointer-events-none">
                             <li rel="claro-cinema" class="nav-li">
                                 <img class="nav-image cinema-nav-image" src="" alt="logo-claro-cinema" title="programacion-claro-cinema" />
                             </li>

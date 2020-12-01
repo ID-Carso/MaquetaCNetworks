@@ -123,12 +123,12 @@
                                 <img class="claro-nav-image" src="" alt="logo-claro-canal" />
                             </li>
                         </div>
-                        <div class="col-md text-center no-gap border-right">
+                        <div class="col-md text-center no-gap border-right pointer-events-none">
                             <li class="nav-li">
                                 <img class="nav-image concert-nav-image" src="" alt="logo-concert-channel" />
                             </li>
                         </div>
-                        <div class="col-md text-center no-gap">
+                        <div class="col-md text-center no-gap pointer-events-none">
                             <li class="nav-li">
                                 <img class="nav-image cinema-nav-image" src="" alt="logo-claro-cinema" />
                             </li>
