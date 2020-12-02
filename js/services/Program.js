@@ -287,7 +287,7 @@ function getPrograms(date, country) {
     data: dataProgram,
     url: "./adapters/program.php",
     success: function (result) {
-     
+        let slider = new Slider();
       let json = JSON.parse(result);
      
       /* SLIDER "AHORA EN VIVO CANAL CLARO*/
@@ -346,8 +346,34 @@ function getPrograms(date, country) {
       destroySlider(nowSliderClaroSportsprev);
       let programCanalClaroEdit = "";
       //CANAL CLARO
+      let programCanalClaro;
+        //Si no hay ninguna programación ya disponible
+        if (programingCanalClaro.length === 0) {       
+            for (let index = 0; index < 5; index++) {              
+                programCanalClaro += `
+              <div class="poster cursor-auto" >
+                <div class="poster-body">
+                    <div>
+                        <div class="thumbnail">
+                            <img src="http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/default/claro-horizontal-slider.jpg" alt="imagen-landing-concert-channel"/>
+                        </div>
+                        <div class="a-claro-rectangle thumbnail-info-title">
+                            <div class="poster-title-margin">
+                                
+                            </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              `;
+              
+            }
+            //Estos se pintará sólo si no hay programación ya para ese canal
+            nowSliderCanalClaro.append(programCanalClaro);
+             nowSliderCanalClaroprev.append(programCanalClaro);
+          }
       programingCanalClaro.forEach((program, index) => {
-        let programCanalClaro;
+      
         if (program.length <= 0) {
             for (let index = 0; index < 5; index++) {
                 programCanalClaro += `
@@ -571,6 +597,9 @@ function getPrograms(date, country) {
           </div>
           `;
         }
+        slider.createDaysSlider("claro");
+        $(".claro-content").append(`<div>                <h1 class="claro-list-title list-title-section">Por el momento no hay programación </h1>
+        </div>`);
       }
         nowSliderCanalClaro.append(programCanalClaro);
 
@@ -849,8 +878,40 @@ function getPrograms(date, country) {
       //END DE CUADROS
 
       let programConcertChannel;
+  
+      //Si no hay ninguna programación ya disponible
+      if (programingConcertChannel.length === 0) {
+        
+        for (let index = 0; index < 5; index++) { 
+          
+            programConcertChannel += `
+          <div class="poster cursor-auto" >
+            <div class="poster-body">
+                <div>
+                    <div class="thumbnail">
+                        <img src="http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/default/concert-horizontal-slider.jpg" alt="imagen-landing-concert-channel"/>
+                    </div>
+                    <div class="a-concert-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          `;
+          
+        }
+      
+          slider.createDaysSlider("concert");
+          $(".concert-content").append(`<div>                <h1 class="claro-list-title list-title-section">Por el momento no hay programación </h1>
+          </div>`);
+          
+        //Estos se pintará sólo si no hay programación ya para ese canal
+        nowSliderConcertChannel.append(programConcertChannel);
+         nowSliderConcertChannelprev.append(programConcertChannel);
+      }
       programingConcertChannel.forEach((program, index) => {
-        console.log(programingConcertChannel.length, "program");
        
         if (index == 0) {
           if (arrayConcertChannel.includes(program.chapter_id)) {
@@ -1026,8 +1087,8 @@ function getPrograms(date, country) {
           }
         
     }
-    //Se agregarán imagenes por default,cuando exista menos de 1 programa, para ese día (la programación se haya terminado)
-    if (programingConcertChannel.length <= 1) {
+    //Se agregarán imagenes por default,cuando exista menos de 5 programas, para ese día (la programación se haya terminado)
+    if (programingConcertChannel.length < 5) {
         for (let index = 0; index < 5; index++) {
             programConcertChannel += `
           <div class="poster cursor-auto" >
@@ -1054,6 +1115,37 @@ function getPrograms(date, country) {
       });
 
       let programClaroCinema;
+      if (programingClaroCinema.length === 0) {
+        
+        for (let index = 0; index < 5; index++) { 
+          
+            programClaroCinema += `
+          <div class="poster cursor-auto" >
+            <div class="poster-body">
+                <div>
+                    <div class="thumbnail">
+                        <img src="http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/default/cinema-horizontal-slider.jpg" alt="imagen-landing-concert-channel"/>
+                    </div>
+                    <div class="a-cinema-rectangle thumbnail-info-title">
+                        <div class="poster-title-margin">
+                            
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          `;
+          
+        }
+      
+          slider.createDaysSlider("cinema");
+          $(".cinema-content").append(`<div>                <h1 class="claro-list-title list-title-section">Por el momento no hay programación </h1>
+          </div>`);
+          
+        //Estos se pintará sólo si no hay programación ya para ese canal
+        nowSliderClaroCinema.append(programClaroCinema);
+         nowSliderClaroCinemaprev.append(programClaroCinema);
+      }
       programingClaroCinema.forEach((program, index) => {
         if (index == 0) {
           if (arrayClaroCinema.includes(program.chapter_id)) {
@@ -1403,17 +1495,17 @@ function getPrograms(date, country) {
       /* END PROGRMACIÓN GENERAL*/
       createClickThumbnails();
 
-      let slider = new Slider();
+     
       let lastDateCanalClaro = json.data[0].last_day;
-    console.log(lastDateCanalClaro, "claro");
+  
    // slider.createDaysSlider("claro",lastDateCanalClaro);
       slider.newCalendar(lastDateCanalClaro, "claro");
       let lastDateConcertChannel = json.data[1].last_day;
-      console.log(lastDateConcertChannel ,"concert");
+   
      // slider.createDaysSlider("concert",lastDateConcertChannel);
       slider.newCalendar(lastDateConcertChannel, "concert");
       let lastDateClaroCinema = json.data[2].last_day;
-      console.log(lastDateClaroCinema,"cinema");
+    
      // slider.createDaysSlider("cinema",lastDateClaroCinema);
       slider.newCalendar(lastDateClaroCinema, "cinema");
       
