@@ -347,8 +347,10 @@ function getPrograms(date, country) {
       let programCanalClaroEdit = "";
       //CANAL CLARO
       let programCanalClaro;
+       
         //Si no hay ninguna programación ya disponible
-        if (programingCanalClaro.length === 0) {       
+        if (programingCanalClaro.length === 0) {    
+          
             for (let index = 0; index < 5; index++) {              
                 programCanalClaro += `
               <div class="poster cursor-auto" >
@@ -368,6 +370,9 @@ function getPrograms(date, country) {
               `;
               
             }
+            slider.createDaysSlider("claro");
+            $(".claro-content").after(`<div>                <h1 class="claro-list-title list-title-section">Por el momento no hay programación </h1>
+            </div>`);
             //Estos se pintará sólo si no hay programación ya para ese canal
             nowSliderCanalClaro.append(programCanalClaro);
              nowSliderCanalClaroprev.append(programCanalClaro);
@@ -597,10 +602,9 @@ function getPrograms(date, country) {
           </div>
           `;
         }
-        slider.createDaysSlider("claro");
-        $(".claro-content").append(`<div>                <h1 class="claro-list-title list-title-section">Por el momento no hay programación </h1>
-        </div>`);
+       
       }
+     
         nowSliderCanalClaro.append(programCanalClaro);
 
         /* PROGRAMACIÓN GENERAL*/
@@ -904,7 +908,7 @@ function getPrograms(date, country) {
         }
       
           slider.createDaysSlider("concert");
-          $(".concert-content").append(`<div>                <h1 class="claro-list-title list-title-section">Por el momento no hay programación </h1>
+          $(".concert-content").after(`<div>                <h1 class="claro-list-title list-title-section">Por el momento no hay programación </h1>
           </div>`);
           
         //Estos se pintará sólo si no hay programación ya para ese canal
@@ -1139,7 +1143,7 @@ function getPrograms(date, country) {
         }
       
           slider.createDaysSlider("cinema");
-          $(".cinema-content").append(`<div>                <h1 class="claro-list-title list-title-section">Por el momento no hay programación </h1>
+          $(".cinema-content").after(`<div>                <h1 class="claro-list-title list-title-section">Por el momento no hay programación </h1>
           </div>`);
           
         //Estos se pintará sólo si no hay programación ya para ese canal
@@ -1583,7 +1587,7 @@ function getProgramming(date, withLoader, country) {
     },
     success: function (result) {      
       let data = JSON.parse(result);
-    
+  
       $(".loader-container").remove();
       if (data.code == 200) {
         let arrayCanalClaro = [];

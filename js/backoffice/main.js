@@ -104,7 +104,7 @@ $(document).ready(function () {
       if (json.code == 404) {
         location.href = "./error-404.php";
       }
-      console.log(json);
+     
       let sliderCanalClarLandingedi = $(".today-claro-slider-edi");
       let sliderCanalClarLandingPrev = $(".today-claro-slider-prev");
       let sliderConcertChannelLanding = $(".today-concert-slider-edit");
@@ -430,7 +430,7 @@ $(document).ready(function () {
 
   function createClickThumbnails() {
     $(".thumbnail-body, .poster-live, .thumbnail-prog").click(function () {
-      console.log("Sinopsus");
+     
       let thumbnailId = $(this).attr("_id");
       let posterLiveId = $(this).attr("_id");
       let listItemButton = $(this).find(".button-none").attr("_id");
