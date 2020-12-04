@@ -21,20 +21,20 @@
                         <span class="dropdown-p">Canal Claro</span>
                     </div>
                 </a>
-                
+
                 <a class="sidebar-link" href="concert-channel.php">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Concert
                             Channel</span>
                     </div>
                 </a>
-                
+
                 <a class="sidebar-link" href="claro-cinema.php">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Claro Cinema</span>
                     </div>
                 </a>
-                
+
                 <a target="_blank" class="sidebar-link" href="https://nuestravision.tv">
                     <div class="sidebar-item sidebar-border-bottom">
                         <span class="dropdown-p">Nuestra
@@ -75,7 +75,7 @@
                         <img src="./images/General/camara.svg" alt="add-photo" class=" cursor-pointer add-photo " />
                         <span class="a-text-bold-warm text-plus mt-3">1000px X 342px</span>
                         <!---->
-                        <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 cursor-pointer image-cover prev-image-program h-100 thumbnail-image-program" alt="imagen-por-default"/>
+                        <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 cursor-pointer image-cover prev-image-program h-100 thumbnail-image-program" alt="imagen-por-default" />
                     </label>
                 </div>
                 <div class="bor thumbnail-image-program position-relative " style="height:470px">
@@ -83,7 +83,7 @@
                     <label for="image_programming_2" class="h-100 mb-0 d-flex justify-content-center  align-items-center flex-column   load-programming-carousel">
                         <img src="./images/General/camara.svg" alt="add-photo" class=" cursor-pointer add-photo " />
                         <span class="a-text-bold-warm text-plus mt-3">1920px X 657px</span>
-                        <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" alt="imagen-por-default"/>
+                        <img src="./images/General/image-synopsis-carrusel.jpg" class="w-100 h-100 cursor-pointer image-cover prev-image-program thumbnail-image-program" alt="imagen-por-default" />
                     </label>
                 </div>
                 <div class="bor thumbnail-image-program position-relative " style="height:470px">
@@ -119,12 +119,12 @@
 
                     <div class="synopsis-body-container no-gutters">
                         <div class="col-md-7 col-lg-6 mr-2  mb-0 synopsis-main-image border-t border-l border-r border-b position-relative d-inline-block">
-                            <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-main" type="synopsis-main-image"/>
+                            <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-main" type="synopsis-main-image" />
                             <!--Imagen principal de sinopsis-->
-                            <img src="" alt="imagen-principal-sinopsis" class="p-3 w-100 image-synopsis-edi"/>
+                            <img src="" alt="imagen-principal-sinopsis" class="p-3 w-100 image-synopsis-edi" />
                         </div>
                         <div class="col-md-7 col-lg-6 mx-sm-auto mx-md-auto synopsis-description-container border-t border-l border-r border-b position-relative ">
-                            <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-description" type="synopsis-description-container"/>
+                            <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-description" type="synopsis-description-container" />
                             <div>
                                 <h1 class="a-text-white-monblack synopsis-title-edi h3 d-flex justify-content-center mt-3">
                                 </h1>
@@ -137,7 +137,7 @@
                                 <div class="synopsis-buttons-tablet-container justify-content-end col-md-12 col-xl-12">
                                     <button class="ml-auto d-flex align-items-center synopsis-button synopsis-add add-favorites">
                                         <p class="synopsis-schedule-text mb-0">añadir</p>
-                                        <img src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos" class="synopsis-heart"/>
+                                        <img src="./images/posters/heart-outline.svg" alt="agregar-a-favoritos" class="synopsis-heart" />
                                     </button>
                                 </div>
 
@@ -153,15 +153,15 @@
                                 <img src="./images/General/pencil.svg" alt="" class="pencil pencil-images" type="synopsis-images-container">
 
                                 <!--Image synopsis frame 1-->
-                                <img src="" alt="imagen-1-sinopsis" class="mr-0 pr-3 synopsis-image-1-edi col-md-6 col-lg-4 synopsis-image"/>
+                                <img src="" alt="imagen-1-sinopsis" class="mr-0 pr-3 synopsis-image-1-edi col-md-6 col-lg-4 synopsis-image" />
                                 <!--Image synopsis frame 2-->
-                                <img src="" alt="imagen-2-sinopsis" class="pr-3 synopsis-image-2-edi col-md-6 col-lg-4 synopsis-image"/>
+                                <img src="" alt="imagen-2-sinopsis" class="pr-3 synopsis-image-2-edi col-md-6 col-lg-4 synopsis-image" />
                                 <!--Image synopsis frame 3-->
-                                <img src="" alt="imagen-3-sinopsis" class="pr-3 col-lg-4 synopsis-image synopsis-image-3-edi"/>
+                                <img src="" alt="imagen-3-sinopsis" class="pr-3 col-lg-4 synopsis-image synopsis-image-3-edi" />
                             </div>
                             <div class="">
                                 <div class="synopsis-details-container border-t border-l border-r border-b position-relative p-3">
-                                    <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-details" type="synopsis-datails-container"/>
+                                    <img src="./images/General/pencil.svg" alt=" " class="pencil pencil-details" type="synopsis-datails-container" />
                                     <div class="synopsis-rating-container">
                                         <div class="d-flex align-items-center mr-5">
                                             <span class="a-text-Regular-White text-normal mr-2">Duración: </span>
@@ -201,50 +201,50 @@
                     <div class="d-flex justify-content-between">
                         <!--1 países-->
                         <div class="region-country-container-active p-4 d-flex justify-content-center">
-                            <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region"/>
+                            <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region" />
                         </div>
                         <!--3 países-->
                         <div class="region-country-container p-4 d-flex justify-content-between">
-                            <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region"/>
-                            <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region"/>
-                            <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region"/>
+                            <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region" />
+                            <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region" />
+                            <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region" />
                         </div>
                         <!--4 países-->
                         <div class="no-gutters region-country-container d-flex justify-content-center p-4 align-items-center flex-wrap">
 
                             <div class="col-6 text-center">
                                 <img src="
-                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region"/>
+                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region" />
                             </div>
                             <div class="col-6 text-center">
                                 <img src="
-                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region"/>
+                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region" />
                             </div>
                             <div class="col-6 text-center">
                                 <img src="
-                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region"/>
+                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region" />
                             </div>
                             <div class="col-6 text-center">
                                 <img src="
-                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region"/>
+                                        http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region" />
                             </div>
                         </div>
                         <!--5 países-->
                         <div class="region-country-container d-flex align-items-center flex-wrap">
                             <div class="col-4 text-center">
-                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region"/>
+                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region" />
                             </div>
                             <div class="col-4 text-center">
-                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region"/>
+                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region" />
                             </div>
                             <div class="col-4 text-center">
-                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region"/>
+                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region" />
                             </div>
                             <div class="col-4 text-center">
-                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region"/>
+                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region" />
                             </div>
                             <div class="col-4 text-center">
-                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region"/>
+                                <img src="http:\/\/www.claronetworks.openofficedospuntocero.info\/images\/paises\/argentina.svg" alt="bandera-pais-por-region" />
                             </div>
                         </div>
                     </div>
@@ -290,10 +290,10 @@
                     <p>Region 2</p>
                 </div>
             </div>
-           
+
             <div class="cconcert-list-links-footer">
-           
-        </div>
+
+            </div>
 
     </main>
     <!--Modal de programa al añadir a favoritos-->
@@ -309,7 +309,7 @@
             socketSinopsis.postMessage(hey)
         },
         onMessage: function(message, origin) {
-           
+
             let data = JSON.parse(message);
             if (data.code == 200) {
 
@@ -323,7 +323,8 @@
                     "http://back.claronetworks.openofficedospuntocero.info/backoffice/public/images/synopsis/image-synopsis-horizontal.png"
 
                 $('.synopsis-description-edi').text(data.data.sinopsis)
-                $('.synopsis-title-edi').text(data.data.title)
+                // $('.synopsis-title-edi').text(data.data.title)
+                $('.synopsis-title-edi').text(data.data.subtitle)
                 $('.synopsis-rating-edi').text(data.data.rating)
                 $('.synopsis-duration-edi').text(data.data.duration)
                 $('.synopsis-seasons-edi').text(data.data.seasons)
