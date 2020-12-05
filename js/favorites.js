@@ -25,8 +25,12 @@ $(document).ready(function () {
  
   $(".sidebar-item").click(function () {
         let option = $(this).attr("genre");
+       
     filterPrograms(option, id);
     $(".name-category").text(option);
+    if(option=="all"){
+        $(".name-category").text("TODOS");
+    }
     $("#claro-canal-favorites").html("");
     $("#concert-channel-favorites").html("");
     $("#claro-cinema-favorites").html("");
