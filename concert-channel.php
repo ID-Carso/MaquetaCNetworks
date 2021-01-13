@@ -13,9 +13,10 @@ if($_SESSION["country"] != 1){
 <html lang="en">
 
 <head>
-    	<!--metadato de indexación-->
+<link rel=canonical href="http://www.claronetworks.openofficedospuntocero.info/v1.2/concert-channel.php" />
+        <meta name="description" content="Concert Channel te lleva a la primera fila de los mejores. En este canal podrás encontrar ejecuciones virtuosas, eventos emblemáticos, festivales que no te puedes perder e incluso, podrás descubrir a tus nuevos ídolos."/>
 
-<link rel=”canonical” href=”http://www.claronetworks.openofficedospuntocero.info/v1.2/concert-channel.php”/>
+
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
     <script>
@@ -141,8 +142,8 @@ if($_SESSION["country"] != 1){
         </section>
         <section class="next-week-concert">
             <div class="concert-container-header">
-                <h1 class="concert-title" id="a-next-concert-title"></h1>
-                <h2 class="concert-subtitle" id="a-next-concert-subtitle"></h2>
+                <h2 class="concert-title" id="a-next-concert-title"></h2>
+                <h3 class="concert-subtitle" id="a-next-concert-subtitle"></h3>
             </div>
             <div class="week-videos-container">
                 <video class="promo-video" playsinline autoplay muted controls loop>
@@ -155,8 +156,8 @@ if($_SESSION["country"] != 1){
         <section class="concerts">
             <div class="concert-container-header">
 
-                <h1 class="concert-title" id="carrusel_1_title"></h1>
-                <h2 class="concert-subtitle" id="carrusel_1_subtitle"></h2>
+                <h2 class="concert-title" id="carrusel_1_title"></h2>
+                <h3 class="concert-subtitle" id="carrusel_1_subtitle"></h3>
             </div>
             <div class="concerts-videos-container">
                 <div class="section-slider concert-slider" id="concert_channel_carrusel_1"></div>
@@ -165,8 +166,8 @@ if($_SESSION["country"] != 1){
         </section>
         <section class="concert-interviews">
             <div class="concert-container-header">
-                <h1 class="concert-title" id="carrusel_2_title"></h1>
-                <h2 class="concert-subtitle" id="carrusel_2_subtitle"></h2>
+                <h2 class="concert-title" id="carrusel_2_title"></h2>
+                <h3 class="concert-subtitle" id="carrusel_2_subtitle"></h3>
             </div>
             <div class="interviews-videos-container">
                 <div class="section-slider concert-slider" id="concert_channel_carrusel_2"></div>
@@ -179,7 +180,7 @@ if($_SESSION["country"] != 1){
         <div class="">
             <div class="row no-gutters">
                 <div class="col-10 mx-auto">
-                    <h1 class="footer-title" id="redes_concert_channel_title">¡síguenos!</h1>
+                    <h5 class="footer-title" id="redes_concert_channel_title">¡síguenos!</h5>
                 </div>
             </div>
             <div class="social-media">

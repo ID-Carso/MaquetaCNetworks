@@ -4,10 +4,19 @@
 <html lang="en">
 
 <head>
-
+<link rel=”canonical” href=”http://www.claronetworks.openofficedospuntocero.info/v1.2/index.php”/>
+ <!--Parte de -->
+ <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "http://www.claronetworks.openofficedospuntocero.info/v1.2/index.php",
+      "logo": "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/logo/claro-networks-white.svg",
+	  "description": "Claro Networks es la unidad de negocio de América Móvil, (la empresa de telecomunicaciones más grande del mundo), que produce, opera y transmite canales de televisión de paga para América Latina y TV abierta para el mercado hispano de los Estados Unidos de América. Se compone de cinco canales especializados y segmentados para llevar contenidos relevantes y entretenidos para toda la familia."
+    }
+	</script>
 <!--metadato de indexación-->
 <meta name="robots" content="index"/> 
-<link rel=”canonical” href=”http://www.claronetworks.openofficedospuntocero.info/v1.2/index.php”/>
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
 	<script>
@@ -41,16 +50,7 @@
 	<?php include './views/partials/head.php' ?>
 
 	<title>Claro Networks</title>
-	 <!--Parte de -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "url": "http://www.claronetworks.openofficedospuntocero.info/v1.2/index.php",
-      "logo": "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/logo/claro-networks-white.svg",
-	  "description": "Claro Networks es la unidad de negocio de América Móvil, (la empresa de telecomunicaciones más grande del mundo), que produce, opera y transmite canales de televisión de paga para América Latina y TV abierta para el mercado hispano de los Estados Unidos de América. Se compone de cinco canales especializados y segmentados para llevar contenidos relevantes y entretenidos para toda la familia."
-    }
-	</script>
+	
 	
 	
 </head>

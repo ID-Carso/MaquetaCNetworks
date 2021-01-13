@@ -16,9 +16,23 @@ if ($_SESSION["country"] != 1) {
 <html lang="en">
 
 <head>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "http://www.claronetworks.openofficedospuntocero.info/v1.2/index.php",
+      "logo": "http://www.claronetworks.openofficedospuntocero.info/v1.2/images/logo/claro-networks-white.svg",
+	  "description": "Claro Networks es la unidad de negocio de América Móvil, (la empresa de telecomunicaciones más grande del mundo), que produce, opera y transmite canales de televisión de paga para América Latina y TV abierta para el mercado hispano de los Estados Unidos de América. Se compone de cinco canales especializados y segmentados para llevar contenidos relevantes y entretenidos para toda la familia."
+    }
+	</script>
+<link rel=canonical href="http://www.claronetworks.openofficedospuntocero.info/v1.2/home.php" />
       	<!--metadato de indexación-->
           <meta name="robots" content="follow"/>
-<link rel=”canonical” href=”http://www.claronetworks.openofficedospuntocero.info/v1.2/home.php”/>
+          <meta name="description" content="Claro Networks, se compone de cinco canales (Claro Canal, Concert Channel, Claro Cinema, Nuestra Visión y Claro Sports) especializados y segmentados para llevar contenidos relevantes y entretenidos para toda la familia."
+/>
+
+ <!--Parte de -->
+
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
     <script>
@@ -96,8 +110,8 @@ if ($_SESSION["country"] != 1) {
         </div>
         <header class="home-header-mobile">
             <div class="header-details header-detail-margin">
-                <h1 class="header-h1">
-                    <span class="header-span"></span>
+                <h1 class=" text-uppercase header-h1">
+                    <span class="text-uppercase header-span"></span>
                 </h1>
             </div>
             <div class="header-slider" id="slider-header-home">
@@ -129,9 +143,9 @@ if ($_SESSION["country"] != 1) {
                 ?>
 
                 <div class="header-details header-detail-margin col-md-6">
-                    <h1 class="header-h1">
-                        <span class="header-span">Descubre<br>Claro<br></span>Networks
-                    </h1>
+                    <h2 class=" text-uppercase header-h1 ">
+                        <span class=" text-uppercase header-span">Descubre<br>Claro<br></span>Networks
+                    </h2>
                 </div>
             </div>
         </header>
@@ -190,9 +204,9 @@ if ($_SESSION["country"] != 1) {
             </div>
         </section>
         <div class="our-channels">
-            <h1 class="our-channels-title">
+            <h3 class="our-channels-title">
                 Nuestros Canales
-            </h1>
+            </h3>
         </div>
         <!--Sección de Canal Claro-->
         <div class="o-claro-section">

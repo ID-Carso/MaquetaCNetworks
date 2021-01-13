@@ -13,8 +13,8 @@ if($_SESSION["country"] != 1){
 
 <head>
       	<!--metadato de indexación-->
-<link rel=”canonical” href=”http://www.claronetworks.openofficedospuntocero.info/v1.2/claro-canal.php”/>
-
+        <link rel=canonical href="http://www.claronetworks.openofficedospuntocero.info/v1.2/claro-canal.php" />
+        <meta name="description" content="En Canal Claro tenemos programación hecha para que disfruten desde los más pequeños hasta los más grandes.  Y producciones propias que te informarán, te invitarán a ponerte en forma y te mostrarán todo lo que no conocías sobre las celebridades."/>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -148,10 +148,10 @@ if($_SESSION["country"] != 1){
       <div class="next-week-container">
 
 
-        <h1 class="a-next-claro-title">próxima semana</h1>
-        <h2 class="a-next-claro-subtitle">
+        <h2 class="a-next-claro-title">próxima semana</h2>
+        <h3 class="a-next-claro-subtitle">
           Ve un <span>adelanto</span> de la programación
-        </h2>
+        </h3>
 
         <div class="week-claro-video-container">
           <video class="promo-video" playsinline autoplay muted controls loop>
@@ -167,20 +167,20 @@ if($_SESSION["country"] != 1){
     <section class="dont-lose-claro">
       <div class="dont-lose-container">
 
-        <h1 class="a-dontLose-claro-title" id="carrusel_1_title">TIENES QUE VERLO</h1>
-        <h2 class="a-dontLose-claro-subtitle" id="carrusel_1_subtitle">
+        <h2 class="a-dontLose-claro-title" id="carrusel_1_title">TIENES QUE VERLO</h2>
+        <h3 class="a-dontLose-claro-subtitle" id="carrusel_1_subtitle">
           <!-- ve un <span>adelanto</span> de la programación -->
           ¡No te lo puedes perder!
-        </h2>
+        </h3>
         <div class="dontLose-video-container">
           <div class="section-slider dontLose-claro-slider" id="dontLose-claro-slider"> <!--add class "dontLose-claro-slider"-->
           </div>
           <div class="mt-5">
-            <h1 class="a-dontLose-claro-title" id="carrusel_2_title">Contenido exclusivo</h1>
-            <h2 class="a-dontLose-claro-subtitle" id="carrusel_2_subtitle">
+            <h2 class="a-dontLose-claro-title" id="carrusel_2_title">Contenido exclusivo</h2>
+            <h3 class="a-dontLose-claro-subtitle" id="carrusel_2_subtitle">
               <!-- ve un <span>adelanto</span> de la programación -->
               Únete y disfruta nuestras producciones propias.
-            </h2>
+            </h3>
 
             <div class="section-slider dontLose-claro-slider" id="exlusiveContentClaroSlider">
             </div>
@@ -196,7 +196,7 @@ if($_SESSION["country"] != 1){
     <div class="">
       <div class="row no-gutters">
         <div class="col-12">
-          <h1 class="footer-title-claro">¡síguenos!</h1>
+          <h5 class="footer-title-claro">¡síguenos!</h5>
         </div>
         <div class="social-media">
           <div class="col ">

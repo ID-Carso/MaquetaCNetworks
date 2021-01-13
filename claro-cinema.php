@@ -14,7 +14,8 @@ if ($_SESSION["country"] != 1) {
 <head>
       	<!--metadato de indexación-->
 
-<link rel=”canonical” href=”http://www.claronetworks.openofficedospuntocero.info/v1.2/claro-cinema.php”/>
+        <link rel=canonical href="http://www.claronetworks.openofficedospuntocero.info/v1.2/claro-cinema.php" />
+        <meta name="description" content="En Claro Cinema te encontrarás con íconos que marcaron época: la trilogía de Ismael Rodríguez, el inigualable lenguaje de René Cardona; las inolvidables actuaciones de Pedro Infante, María Félix, Miroslava, entre otros, descubrirás que el cine mexicano está más vivo que nunca."/>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179528937-1"></script>
   <script>
@@ -153,10 +154,10 @@ if ($_SESSION["country"] != 1) {
       </section>
       <section class="imperdibles">
         <div class="header-title-section">
-          <h1 class="a-cinema-title">las <span>imperdibles</span></h1>
-          <h2 class="a-cinema-subtitle">
+          <h2 class="a-cinema-title">las <span>imperdibles</span></h2>
+          <h3 class="a-cinema-subtitle">
             ve un <span>adelanto</span> de la programación
-          </h2>
+          </h3>
         </div>
         <div class="imperdibles-video-container">
           <video class="promo-video" playsinline autoplay muted controls loop>
@@ -168,13 +169,13 @@ if ($_SESSION["country"] != 1) {
       <section class="recordar">
         <div class="header-title-section">
           <div class="">
-            <h1 class="a-cinema-title ">
+            <h2 class="a-cinema-title ">
               recordar es volver <span class="recordar-title">a vivir</span>
-            </h1>
-            <h2 class="a-cinema-subtitle">
+            </h2>
+            <h3 class="a-cinema-subtitle">
               <!-- ve un <span>adelanto</span> de la programación -->
               ¿Cómo ligaban antes del Tinder? Revive una época fascinante
-            </h2>
+            </h3>
           </div>
         </div>
         <div class="recordar-container-videos">
@@ -186,11 +187,11 @@ if ($_SESSION["country"] != 1) {
       <section class="only-claro-cinema">
         <div class="header-title-section">
           <div>
-            <h1 class="a-cinema-title"> sexy <span>románticas</span></h1>
-            <h2 class="a-cinema-subtitle">
+            <h2 class="a-cinema-title"> sexy <span>románticas</span></h2>
+            <h3 class="a-cinema-subtitle">
               <!-- ve un <span>adelanto</span> de la programación -->
               Películas para subir la temperatura
-            </h2>
+            </h3>
           </div>
         </div>
         <div class="only-videos-container mb-xl-5">
